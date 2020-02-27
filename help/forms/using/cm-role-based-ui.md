@@ -1,0 +1,68 @@
+---
+title: NE PAS PUBLIER l’interface utilisateur basée sur un rôle dans Correspondence Management
+seo-title: NE PAS PUBLIER l’interface utilisateur basée sur un rôle dans Correspondence Management
+description: 'null'
+seo-description: 'null'
+page-status-flag: de-activated
+uuid: 60808852-f63f-4c0a-badb-b0af93c995a8
+contentOwner: gtalwar
+products: SG_EXPERIENCEMANAGER/6.3/FORMS
+discoiquuid: 342f111e-f15a-4f9a-8993-f90760363c02
+translation-type: tm+mt
+source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+
+---
+
+
+# NE PAS PUBLIER l’interface utilisateur basée sur un rôle dans Correspondence Management {#do-not-publish-role-based-user-interface-in-correspondence-management}
+
+Dans AEM, l’administrateur peut fournir un accès basé sur les rôles à différents groupes d’utilisateurs qui effectuent diverses actions sur différentes ressources. Par exemple, la fonctionnalité de création ou de modification des dictionnaires de données peut être disponible uniquement pour les utilisateurs d’un groupe d’utilisateurs spécifique, tandis que les autres utilisateurs peuvent uniquement afficher et utiliser les dictionnaires de données.
+
+L’interface AEM affiche les options, telles que la création ou la modification d’un type de ressource, en fonction du niveau d’accès d’un utilisateur. Par exemple, si un utilisateur n’est pas autorisé à créer un dictionnaire de données, l’option permettant de créer un dictionnaire de données n’apparaît pas dans l’interface utilisateur.
+
+Bien que CRX vous permette de configurer les droits d’accès pour les comptes d’utilisateurs et de groupes, cet article traite des droits d’accès basés sur les rôles ou les groupes d’utilisateurs.
+
+Pour plus d’informations sur les groupes, les autorisations, les listes de contrôle d’accès et la gestion des utilisateurs et des groupes, voir Administration [utilisateur et sécurité](/help/sites-administering/security.md).
+
+## Gestion des autorisations {#managing-permissions}
+
+1. Assurez-vous que l’utilisateur pour lequel vous souhaitez gérer les autorisations est ajouté au groupe d’utilisateurs approprié.
+
+   Par exemple, l’utilisateur John Doe est ajouté aux groupes `agents` et `cm-creditcard`. Pour plus d’informations, voir Ajout d’utilisateurs ou de groupes à un groupe. For more information, see [Managing Users and User Groups](/help/communities/users.md).
+
+   ![]()
+
+1. Créez les dossiers en fonction des autorisations souhaitées.
+
+   Si, par exemple, une entreprise possède des divisions du prêt immobilier, de la carte de crédit et de l’assurance, elle peut créer des dossiers nommés `HomeMortgage`et `CreditCard,``Insurance` conserver les actifs concernés et donner accès sélectivement aux agents pour les actifs propres à son service uniquement.
+
+1. Pour accéder à la sécurité AEM WCM, effectuez l’une des opérations suivantes :
+
+   1. Dans l’écran de bienvenue ou à différents emplacements d’AEM, cliquez sur l’icône de sécurité :
+
+   1. Accédez directement à `https://[server]:[port]/useradmin`. Assurez-vous de vous connecter à AEM en tant qu’administrateur.
+
+      ![]()
+   L’arborescence de gauche répertorie tous les utilisateurs et groupes actuellement dans le système. Vous pouvez sélectionner les colonnes que vous souhaitez afficher, trier le contenu des colonnes et même modifier l’ordre dans lequel les colonnes sont affichées en faisant glisser l’en-tête de colonne vers la nouvelle position souhaitée.
+
+   Les onglets permettent d’accéder à diverses configurations :
+
+1. Dans l’arborescence de gauche, double-appuyez sur le nom du groupe concerné, puis sélectionnez l’onglet Autorisations.
+
+   Pour localiser le nom du groupe, vous pouvez saisir son nom dans l’espace prévu à cet effet.
+
+1. Dans l’onglet Droits, accédez au chemin auquel vous souhaitez ajouter des autorisations. Les dossiers Correspondence Management se trouvent sous le `content/apps/cm/` dossier.
+
+   Dans la colonne Membre, cochez la case correspondant aux membres qui doivent disposer d’autorisations au niveau de ce chemin d’accès. Décochez la case correspondant aux membres dont vous souhaitez supprimer les autorisations. Un triangle rouge apparaît dans la cellule à laquelle vous avez apporté des modifications.
+
+   ![useradmin-creditcard](assets/useradmin-creditcard.png)
+
+   >[!NOTE]
+   >
+   >Les autorisations spécifiées dans un dossier remplacent les autorisations spécifiées dans ses sous-dossiers.
+
+1. Appuyez sur Enregistrer.
+1. Texte de l’étape
+1. Texte de l’étape
+1. Texte de l’étape
+
