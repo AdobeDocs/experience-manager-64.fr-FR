@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 3c59ec8f-b72f-48dd-bac8-9817005ae210
 translation-type: tm+mt
-source-git-commit: f9a147ee60d3088bb9245258146323d52c747642
+source-git-commit: 77997d6d8744cf1498add91a0aa2dab4e29f8e3d
 
 ---
 
@@ -40,7 +40,7 @@ Si les critères ne sont pas remplis, un déploiement TarMK actif/en mode atten
 
 ### Déploiement minimal de MongoDB pour AEM {#minimal-mongodb-deployment-for-aem}
 
-Voici un déploiement minimal pour AEM sur MongoDB. Par souci de simplicité, l’arrêt SSL et les composants proxy HTTP ont été généralisés. Le déploiement se compose d’un seul jeu de réplicas MongoBD, dont un principal et deux secondaires.
+Voici un déploiement minimal pour AEM sur MongoDB. Par souci de simplicité, l’arrêt SSL et les composants proxy HTTP ont été généralisés. Il se compose d’un jeu de réplicas MongoDB unique, avec un principal et deux secondaires.
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
 
