@@ -3,7 +3,7 @@ title: Utilisation de ressources Adobe Stock dans AEM Assets
 description: Vous pouvez rechercher, récupérer, acquérir sous licence et gérer les ressources Adobe Stock dans AEM. Traitez les ressources sous licence comme n’importe quelle autre ressource AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ff098a599f1c5230ce12a9c5cdbd1b118030a5f8
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -52,7 +52,9 @@ Grâce à cette fonctionnalité, les entreprises peuvent permettre à leurs util
 
 Une fois qu’une ressource Adobe Stock est sous licence dans AEM, elle peut être utilisée et gérée comme une ressource standard. Dans AEM, les utilisateurs peuvent rechercher et prévisualiser les ressources ; copier et publier les fichiers ; partager les ressources sur Brand Portal ; accéder aux ressources et les utiliser via l&#39;application de bureau AEM ; etc.
 
-![Recherchez des ressources Adobe Stock et filtrez les résultats de votre espace](assets/adobe-stock-search-results-workspace.png)de travail AEM *Figure : Rechercher des ressources Adobe Stock et filtrer les résultats de votre espace de travail AEM*
+![Recherche de ressources Adobe Stock et filtrage des résultats à partir de l’espace de travail d’AEM](assets/adobe-stock-search-results-workspace.png)
+
+*Figure : Rechercher des ressources Adobe Stock et filtrer les résultats de votre espace de travail AEM*
 
 **A.** Recherchez des fichiers similaires aux fichiers dont l’ID Adobe Stock est fourni. **B.** Recherchez les fichiers correspondant à votre sélection de forme ou d’orientation. **C.** Recherchez l’un des types de ressource pris en charge. **D.** Ouvrez ou réduisez le volet Filtres. **E.** Mettez sous licence et enregistrez la ressource sélectionnée dans AEM. **F.** Enregistrez le fichier dans AEM avec le filigrane. **G.** Explorez sur le site web d’Adobe Stock des fichiers similaires à la ressource sélectionnée. **H.** Affichez les fichiers sélectionnés sur le site web Adobe Stock. **I.** Nombre de fichiers sélectionnés à partir des résultats de la recherche. **J.** Basculez entre le mode Carte et le mode Liste.
 
@@ -70,7 +72,9 @@ Alternatively, start typing `Location: Adobe Stock` in the search bar to select 
 >
 >Les ressources recherchées à partir d’Adobe Stock s’affichent simplement dans AEM. Les ressources Adobe Stock sont récupérées et stockées dans le référentiel AEM uniquement après qu’un utilisateur [enregistre une ressource](aem-assets-adobe-stock.md#saveassets) ou [accorde une licence à un fichier](aem-assets-adobe-stock.md#licenseassets). Les ressources déjà stockées dans AEM sont affichées et mises en surbrillance pour simplifier leur référencement et leur accès. Ces fichiers sont également enregistrés avec des métadonnées supplémentaires pour indiquer la source en tant qu’Adobe Stock.
 
-![Filtres de recherche dans AEM et ressources Adobe Stock mises en surbrillance dans les résultats](assets/aem-search-filters2.jpg)de recherche *Figure : Filtres de recherche dans AEM et ressources Adobe Stock mises en surbrillance dans les résultats de recherche*
+![Filtres de recherche dans AEM et ressources Adobe Stock mises en évidence dans les résultats de recherche](assets/aem-search-filters2.jpg)
+
+*Figure : Filtres de recherche dans AEM et ressources Adobe Stock mises en surbrillance dans les résultats de recherche*
 
 ### Enregistrement et affichage des ressources requises {#saveassets}
 
@@ -86,7 +90,9 @@ La prochaine fois que vous rechercherez des ressources, les ressources enregistr
 
 Les utilisateurs peuvent acquérir des ressources Adobe Stock sous licence en utilisant le quota de leur abonnement Adobe Stock pour entreprise. Lorsque vous acquérez une ressource sous licence, elle est enregistrée sans filigrane, et elle peut être recherchée et utilisée dans AEM Assets.
 
-![Boîte de dialogue permettant d’activer la licence et d’enregistrer des ressources Adobe Stock dans AEM Assets](assets/aem-stock_licenseandsave.jpg)*Figure : Boîte de dialogue permettant d’activer la licence et d’enregistrer des ressources Adobe Stock dans les ressources AEM*
+![Boîte de dialogue permettant d’acquérir sous licence et d’enregistrer des ressources Adobe Stock dans AEM Assets](assets/aem-stock_licenseandsave.jpg)
+
+*Figure : Boîte de dialogue permettant d’activer la licence et d’enregistrer des ressources Adobe Stock dans les ressources AEM*
 
 ### Accès aux propriétés de ressources et de métadonnées {#access-metadata-and-asset-properties}
 
@@ -96,7 +102,7 @@ Les utilisateurs peuvent afficher les propriétés de toutes les ressources, ave
 
 ![Affichage des métadonnées et des références de licence des ressources enregistrées, et accès à ces éléments](assets/metadata_properties.jpg)
 
-**** Figure : *Affichage et accès aux métadonnées et aux références de licence des fichiers enregistrés*
+*Figure : Affichage et accès aux métadonnées et aux références de licence des fichiers enregistrés*
 
 ## Limitations connues {#known-limitations}
 
