@@ -3,7 +3,7 @@ title: Métadonnées en cascade
 description: Cet article décrit comment définir des métadonnées en cascade pour des ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -106,9 +106,8 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    ![Métadonnées en cascade pour une ressource vidéo](assets/video_asset.png)
 
-   **** Figure : Métadonnées *en cascade pour une ressource vidéo*
+   *Figure : Métadonnées en cascade pour une ressource vidéo*
 
    ![Métadonnées en cascade pour une ressource de document](assets/doc_type_fields.png)
 
-   **** Figure : Métadonnées *en cascade pour le fichier de document*
-
+   *Figure : Métadonnées en cascade pour le fichier de document*
