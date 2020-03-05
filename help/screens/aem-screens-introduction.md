@@ -10,7 +10,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/SCREENS
 discoiquuid: 920e9702-82f7-4495-a84e-22a1c8b0d559
 translation-type: tm+mt
-source-git-commit: 5f613cbae9dccbc277287e5e58c8f0648c4f3bed
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -43,11 +43,7 @@ Pour créer une démonstration d’un projet Screens et publier votre contenu da
 
 ## Démarrage d’un nouveau projet AEM Screens {#starting-a-new-aem-screens-project}
 
-Le démarrage d’une nouvelle expérience de signalisation numérique implique de coordonner différents rôles avant qu’elle ne puisse être utilisée. Les rôles ci-dessous servent de point de départ pour créer un nouveau projet Screens.
-
-* [Créateur](authoring-screens.md)
-* [Développeur](developing-screens.md)
-* [Administrateur système/Technicien](administering-screens.md)
+Le démarrage d’une nouvelle expérience de signalisation numérique implique de coordonner différents rôles avant qu’elle ne puisse être utilisée.
 
 Les illustrations ci-dessous définissent les intervenants et leur rôle dans le cadre d’AEM Screens.
 
