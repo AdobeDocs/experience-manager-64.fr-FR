@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Assets User Guide
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
 
 ---
 
@@ -96,7 +96,7 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [Métadonnées XMP](xmp.md)
    + [Considérations relatives au réseau de ressources](assets-network-considerations.md)
    + [AEM Assets par rapport à AEM MediaLibrary](medialibrary.md)
-   + [Utilisation de PDF rasterizer](aem-pdf-rasterizer.md)
+   + [Utilisation de l’outil de pixellisation PDF](aem-pdf-rasterizer.md)
    + [Configuration des restrictions de transfert de fichier](configuring-asset-upload-restrictions.md)
    + [Meilleures pratiques d’intégration d’AEM et de Creative Cloud](aem-cc-integration-best-practices.md)
    + [Intégration d’AEM Assets au serveur InDesign](indesign.md)
@@ -119,7 +119,8 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
    + [Gestion des balises intelligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Configuration de l’intégration d’AEM Assets à Brand Portal](brand-portal-configuring-integration.md)
+   + [Configuration des ressources AEM avec le portail de marque](configure-aem-assets-with-brand-portal.md)
+   + [Publication de ressources sur Brand Portal](brand-portal-publish-assets.md)
    + [Publication de collections sur Brand Portal](brand-portal-publish-collection.md)
    + [Publication de dossiers sur Brand Portal](brand-portal-publish-folder.md)
 + Fragments de contenu {#fragments}
@@ -172,7 +173,7 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [À propos de l’utilisation des scènes dans AEM 3D](about-the-use-of-stages-in-aem-3d.md)
    + [Configuration d’une étape standard avec Autodesk Maya et Mental Ray](setting-up-stage-with-ad-mr.md)
    + [Utilisation du composant Sites 3D](using-the-3d-sites-component.md)
-   + [Intégration d’AEM 3D à Autodesk Maya](integrate-maya-with-3d.md)
+   + [Intégration d’AEM 3D avec Autodesk Maya](integrate-maya-with-3d.md)
    + [Utilisation de scènes IBL](working-with-ibl-stages.md)
    + [Intégration d’AEM 3D avec Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
    + [Configuration d’une étape IBL avec Autodesk Maya et Mental Ray](setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray.md)
