@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -106,16 +106,12 @@ Les options disponibles dans ces panneaux sont décrites ci-dessous.
    <td>Cette console permet de créer, de gérer et de traiter vos <a href="/help/forms/using/introduction-aem-forms.md">formulaires et documents</a>&gt;.</td> 
   </tr>
   <tr>
-   <td>Personnalisation </td> 
+   <td>Personnalisation  </td> 
    <td>Cette console propose un <a href="/help/sites-authoring/personalization.md">ensemble d’outils de création de contenu ciblé et de présentation d’expériences personnalisées</a>.</td> 
   </tr>
   <tr>
    <td>Projets</td> 
    <td>La <a href="/help/sites-authoring/touch-ui-managing-projects.md">console Projets permet d’accéder directement aux projets</a>, qui sont des tableaux de bord virtuels. Utilisez-les pour composer une équipe, puis pour donner à cette équipe un accès aux ressources, aux workflows et aux tâches, afin que tous les membres de l’équipe puissent travailler sur un objectif commun. <br /> </td> 
-  </tr>
-  <tr>
-   <td>Screens</td> 
-   <td>La console <a href="/help/screens/authoring-screens.md">Screens</a> permet de gérer tous les écrans proposés aux clients, quel que soit leur taille ou leur emplacement.</td> 
   </tr>
   <tr>
    <td>Sites</td> 
@@ -320,13 +316,13 @@ La sélection d’une ressource en particulier dépend de la combinaison du mode
    <td>Mode Carte<br /> </td> 
    <td>
     <ul> 
-     <li><br /> Bureau : Pointez sur, puis utilisez l’action rapide de la coche.</li> 
+     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li> 
      <li>Appareil mobile :<br /> maintenez la carte enfoncée</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li><br /> Bureau :Cliquez sur la carte</li> 
-     <li><br /> Périphérique mobile :Appuyez sur la carte</li> 
+     <li>Desktop:<br /> Click the card</li> 
+     <li>Mobile device:<br /> Tap the card</li> 
     </ul> </td> 
   </tr>
   <tr>
