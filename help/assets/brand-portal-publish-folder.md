@@ -3,14 +3,14 @@ title: Publication de dossiers sur Brand Portal
 description: Découvrez comment publier des dossiers ou en annuler la publication sur Brand Portal.
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
 
 ---
 
 
 # Publication de dossiers sur Brand Portal {#publish-folders-to-brand-portal}
 
-En tant qu’administrateur d’Adobe Experience Manager (AEM) Assets, vous pouvez publier des ressources et des dossiers sur l’instance AEM Assets Brand Portal (ou planifier le workflow de planification à une date/heure ultérieure) pour votre organisation. Cependant, vous devez d’abord intégrer AEM Assets à Brand Portal. For details, see [Configure AEM Assets integration with Brand Portal](brand-portal-configuring-integration.md).
+En tant qu’administrateur d’Adobe Experience Manager (AEM) Assets, vous pouvez publier des ressources et des dossiers sur l’instance AEM Assets Brand Portal (ou planifier le workflow de planification à une date/heure ultérieure) pour votre organisation. Cependant, vous devez d’abord intégrer AEM Assets à Brand Portal. For details, see [Configure AEM Assets with Brand Portal](configure-aem-assets-with-brand-portal.md).
 
 Une fois que vous avez publié un fichier ou un dossier, il est accessible aux utilisateurs dans le portail de marque.
 
@@ -86,4 +86,4 @@ Vous avez la possibilité d’annuler rapidement la publication de dossiers sur 
 
 >[!NOTE]
 >
->La procédure de publication/annulation de publication d’un fichier depuis/vers le portail de marque est similaire à la procédure correspondante pour un dossier.
+>La procédure de publication/annulation de la publication d’un fichier depuis/vers le portail de marque est similaire à la procédure correspondante pour un dossier.
