@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 
 ---
 
@@ -72,7 +72,7 @@ source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
 
          * UGC n’est jamais répliqué
          * UGC uniquement visible sur l’instance ou la grappe AEM dans laquelle il a été saisi
-      * Par défaut, JSRP
+      * Par défaut, il s’agit de JSRP
    Pour la fonction **[d’activation](overview.md#enablement-community)**
 
    * [Installation et configuration de FFmpeg](ffmpeg.md)
@@ -91,7 +91,7 @@ AEM 6.4 Communities GA fournit un package Communities. Pour en savoir plus sur l
 
 ### Mises à jour d’AEM 6.4 {#aem-updates}
 
-À partir d’AEM 6.3, les mises à jour apportées aux communautés sont fournies dans le cadre des Fix Packs et Service Packs cumulatifs AEM.
+À partir d’AEM 6.3, les mises à jour apportées aux communautés sont fournies dans le cadre des Fix Packs et Service Packs cumulatifs d’AEM.
 
 Pour les dernières mises à jour d’AEM 6.4, veillez à vérifier les packs de correctifs cumulés et les Service Packs [Adobe Experience Manager 6.4](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
 
@@ -110,7 +110,7 @@ Le connecteur MySQL doit être obtenu et installé séparément.
 
 Les étapes nécessaires sont les suivantes :
 
-1. Téléchargez l’archive ZIP depuis [https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/j/)
+1. Téléchargez l’archive ZIP à partir de [https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/j/)
 
    * La version doit être >= 5.1.38
 
@@ -132,7 +132,7 @@ Les étapes nécessaires sont les suivantes :
 
 1. Répétez les étapes 3 et 4 sur toutes les instances d’auteur et de publication.
 
-Pour plus d&#39;informations sur l&#39;installation des lots, consultez la page Console [](../../help/sites-deploying/configuring-web-console.md#bundles) Web.
+Pour plus d&#39;informations sur l&#39;installation des lots, consultez la page Console [](/help/sites-deploying/web-console.md#bundles) Web.
 
 #### Exemple : Bundle MySQL Connector installé {#example-installed-mysql-connector-bundle}
 
@@ -155,7 +155,7 @@ Pour une nouvelle installation du moteur SCORM, le package contenant [SCORM 2017
 ### Pour installer un pack SCORM pour la première fois
 
 1. Installez le package **[cq-social-scorm-package, version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).**
-1. Téléchargez **`/libs/social/config/scorm/database_scormengine_data.sql`** depuis l’instance cq et exécutez-la dans mysql server pour créer un schéma scormEngineDB mis à niveau.
+1. Téléchargez **`/libs/social/config/scorm/database_scormengine_data.sql`** à partir de l’instance cq et exécutez-la dans mysql server pour créer un schéma scormEngineDB mis à niveau.
 1. Ajoutez `/content/communities/scorm/RecordResults` dans la propriété Chemins exclus du filtre CSRF depuis `https://<hostname>;:<port>/system/console/configMgr` les éditeurs.
 
 Les installations SCORM existantes peuvent être mises à niveau vers [**cq-social-scorm-package, version 2.2.2 **](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)(qui utilise[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), si le contenu du cours créé nécessite SCORM 2017.1.
@@ -185,7 +185,7 @@ Au fur et à mesure de l’installation, toute activité d’activation est gén
 
 Si vous le souhaitez, le niveau du journal peut être défini sur WARN pour le `RusticiSoftware.*` package.
 
-Pour utiliser les journaux, voir [Utilisation des enregistrements d’audit et des fichiers](../../help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)journaux.
+Pour utiliser des journaux, voir [Utilisation des enregistrements d’audit et des fichiers](../../help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)journaux.
 
 ### MLS AEM Advanced {#aem-advanced-mls}
 
@@ -206,7 +206,7 @@ Pour plus d’informations sur l’installation et les détails, consultez Confi
 
 Les liens vers les packages de cette page ne nécessitent aucune instance en cours d’exécution d’AEM, car ils sont destinés au partage de packages sur `adobeaemcloud.com`. Bien que les packs puissent être consultés, le `Install`bouton permet d’installer les packs sur un site hébergé par Adobe. Si vous prévoyez d’effectuer l’installation sur une instance AEM locale, la sélection `Install`entraînera une erreur.
 
-**Installation sur une instance locale AEM**
+**Installation sur une instance locale d’AEM**
 
 Pour installer les packages visibles dans `adobeaemcloud.com` une instance locale AEM, vous devez d’abord télécharger le package sur un disque local :
 
@@ -223,7 +223,7 @@ Pour plus d’informations, consultez [Comment utiliser des packages](../../help
 
 ## Déploiements recommandés {#recommended-deployments}
 
-Dans les communautés AEM, un magasin commun est utilisé pour stocker le contenu généré par l’utilisateur (UGC) et est souvent appelé fournisseur de ressources de [stockage (SRP)](working-with-srp.md). Le déploiement recommandé consiste à choisir une option SRP pour la boutique commune.
+Dans les communautés AEM, un magasin commun est utilisé pour stocker le contenu généré par l’utilisateur (UGC) et est souvent appelé fournisseur de ressources de [stockage (SRP)](working-with-srp.md). Le déploiement recommandé se concentre sur le choix d’une option SRP pour la boutique commune.
 
 Le magasin commun prend en charge la modération de l’UGC et l’analyse de cette dernière dans l’environnement de publication, tout en éliminant la nécessité de [réplication](sync.md) de l’UGC.
 
@@ -269,7 +269,7 @@ Pour l’éditeur principal, assurez-vous que la configuration [de l’agent de]
 
 Pour qu’un autre utilisateur dispose des autorisations appropriées, il doit être ajouté en tant que membre du groupe `administrators` d’utilisateurs (également membre de `Communities Administrators`).
 
-Deux agents de réplication dans l’environnement d’auteur doivent configurer correctement la configuration du transport.
+Il existe deux agents de réplication dans l’environnement d’auteur qui doivent configurer correctement la configuration du transport.
 
 * Accès à la console de réplication sur l’auteur
 
@@ -298,7 +298,7 @@ Les images suivantes montrent les résultats de la modification du port de 4503 
 
 ### Service Tunnel sur l’auteur {#tunnel-service-on-author}
 
-Lorsque vous utilisez l’environnement d’auteur pour [créer des sites](sites-console.md), [modifier des propriétés](sites-console.md#modifying-site-properties) du site ou [gérer des membres](members.md)de la communauté, il est nécessaire d’accéder aux membres (utilisateurs) enregistrés dans l’environnement de publication et non aux utilisateurs enregistrés dans l’environnement d’auteur.
+Lorsque vous utilisez l’environnement d’auteur pour [créer des sites](sites-console.md), [modifier des propriétés](sites-console.md#modifying-site-properties) du site ou [gérer des membres](members.md)de la communauté, il est nécessaire d’accéder aux membres (utilisateurs) enregistrés dans l’environnement de publication, et non aux utilisateurs enregistrés dans l’environnement d’auteur.
 
 Le service tunnel fournit cet accès à l’aide de l’agent de réplication sur l’auteur.
 
@@ -323,7 +323,7 @@ Pour activer le service de tunnel:
 
 ### Répliquer la clé Crypto {#replicate-the-crypto-key}
 
-Deux fonctionnalités des communautés AEM exigent que toutes les instances de serveur AEM utilisent les mêmes clés de chiffrement. Il s’agit d’ [Analytics](analytics.md) et [ASRP](asrp.md).
+Deux fonctionnalités des communautés AEM exigent que toutes les instances de serveur AEM utilisent les mêmes clés de chiffrement. Il s’agit [d’Analytics](analytics.md) et [d’ASRP](asrp.md).
 
 Depuis AEM 6.3, le matériel clé est stocké dans le système de fichiers et ne figure plus dans le référentiel.
 
@@ -363,7 +363,7 @@ Pour copier les éléments clés de l’auteur vers toutes les autres instances,
 
 #### Réplication du référentiel {#repository-replication}
 
-Le fait que le matériel clé soit stocké dans le référentiel, comme c’était le cas pour AEM 6.2 et versions antérieures, peut être conservé en spécifiant la propriété système suivante au premier démarrage de chaque instance AEM (qui crée le référentiel initial) :
+Le fait que le matériel clé soit stocké dans le référentiel, comme c’était le cas pour AEM 6.2 et les versions antérieures, peut être conservé en spécifiant la propriété système suivante au premier démarrage de chaque instance AEM (qui crée le référentiel initial) :
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
@@ -377,7 +377,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * accédez à [https://&lt;serveur>:&lt;port>/crx/de](http://localhost:4502/crx/de)
 * select `/etc/key`
-* ouvrir `Replication` , panneau
+* ouvrir `Replication` l’onglet
 * select `Replicate`
 
 * [actualisation du lot Granite Crypto](#refresh-the-granite-crypto-bundle)
@@ -424,7 +424,7 @@ En particulier, veillez à utiliser le nom de serveur correct, et non `localhost
 
 ### Répartiteur {#dispatcher}
 
-Si vous utilisez un répartiteur, voir :
+Si vous utilisez un répartiteur, reportez-vous à la section :
 
 * Documentation du [répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) AEM
 * [Installation de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
