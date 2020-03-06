@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 3037d1e5c9f97778c55ee2734ded3c9ef668df4d
+source-git-commit: 9f6da11b6fd5630dd2a81d1745f7f157ffb2bf34
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 3037d1e5c9f97778c55ee2734ded3c9ef668df4d
 | Version | 6.4.8.0 |
 | Type | Version du Service Pack |
 | Date | 5 mars 2020 |
-| URL de téléchargement | AEM 6.4.8.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0) |
+| URL de téléchargement | AEM 6.4.8.0 sur [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), [Software Distribution (bêta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Fonctionnalités présentes dans AEM 6.4.8.0 {#what-s-included-in-aem}
 
@@ -51,6 +51,9 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 ### Sites {#sites}
 
+* Lorsqu’une URL d’une page de sites AEM contient un symbole deux points ou un symbole de pourcentage, le navigateur sous-jacent cesse de répondre et les cycles du processeur affichent un pic (NPR-32368, NPR-31917).
+* Lorsqu’une page de sites AEM est ouverte pour modification et qu’un composant est copié, l’action de collage reste indisponible pour certains espaces réservés (NPR-32328).
+* Le processus de demande d’activation n’inclut pas les ressources référencées (NPR-32304).
 * Lors de la création d’un plan directeur, si le nombre d’enregistrements est supérieur à 80, seuls les 80 premiers enregistrements sont affichés. Le plan directeur affiche des lignes vierges pour le reste des enregistrements (NPR-32058).
 * Les utilisateurs sont autorisés à enregistrer un fragment de contenu sans fournir d’informations dans les champs obligatoires (NPR-31988).
 * La navigation automatique ne fonctionne pas pour le chemin configuré dans un composant de fragment d’expérience principale (NPR-31921).
@@ -58,7 +61,6 @@ Les principaux points forts de cette version du Service Pack incluent les élé
    `Error: No common ancestor found, cannot continue` (NPR-31916).
 * Lorsque le contenu est déplacé dans le même dossier, l’option de déplacement de page est désactivée (NPR-31841).
 * Ajout de la prise en charge de la division des phrases en japonais à l’aide de la méthode BUNSETSU et de la rupture des lignes à la position appropriée (NPR-31836).
-* Lorsque des URL se terminant par `/_jcr_content/.html` ou `/jcr:content/.html` sont accessibles, les pics du processeur et AEM cessent de répondre (NPR-31755).
 * Lorsque vous modifiez un hyperlien dans l’éditeur de texte enrichi (RTE), le nouveau chemin sélectionné n’est pas enregistré (NPR-31659).
 * Lorsque vous supprimez un composant à plusieurs champs et annulez la suppression, le composant est restauré mais les données ne sont pas restaurées (NPR-31617).
 
@@ -109,10 +111,6 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 ### Traduction {#translation-6480}
 
 * La création de projets de traduction pour plusieurs langues génère le projet uniquement pour certaines langues au lieu de toutes et une erreur (le résolveur de ressources est déjà fermé) est observée dans le journal (NPR-32212).
-
-### Editeur de modèles WCM {#wcm-template-editor-6480}
-
-* Les pics du processeur et Experience Manager ne répondent plus lorsque des URL se terminant par `/_jcr_content/.html` ou `/jcr:content/.html` sont accessibles (CQ-4280770).
 
 ### WCM-MSM {#wcm-msm-6480}
 
