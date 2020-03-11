@@ -3,14 +3,14 @@ title: Prise en charge de Camera Raw
 description: Découvrez comment activer la prise en charge de Camera Raw dans Adobe Experience Manager Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
 
 # Prise en charge du traitement des images à l’aide de Camera Raw {#camera-raw-support}
 
-Vous pouvez activer la prise en charge de Camera Raw pour traiter les formats de fichiers bruts, tels que CR2, NEF et RAF, et effectuer le rendu des images au format JPEG. Cette fonctionnalité est prise en charge dans les ressources Adobe Experience Manager à l’aide du package [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw disponible via le partage de package.
+Vous pouvez activer la prise en charge de Camera Raw pour traiter les formats de fichiers bruts, tels que CR2, NEF et RAF, et effectuer le rendu des images au format JPEG. Cette fonctionnalité est prise en charge dans les ressources d’Adobe Experience Manager à l’aide du package [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw disponible via le partage de package.
 
 >[!NOTE]
 >
@@ -28,11 +28,11 @@ Pour activer la prise en charge de Camera Raw dans Adobe Experience Manager Asse
 
    * **[!UICONTROL Miniatures]**: `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL Types MIME ignorés]**: `skip:image/dng, skip:image/x-raw-(.*)`
-   ![chlimage](assets/chlimage_1-334.png)
+   ![limage](assets/chlimage_1-334.png)
 
-1. Dans l’onglet Image **** Web activée, dans le champ Liste **[!UICONTROL des]** sauts, spécifiez `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
+1. Dans l’onglet Image **** Web activée, dans le champ **[!UICONTROL Ignorer le]** de `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`, spécifiez.
 
-   ![chlimage](assets/chlimage_1-335.png)
+   ![limage](assets/chlimage_1-335.png)
 
 1. From the side panel, add the **[!UICONTROL Camera Raw/DNG Handler]** step below the **[!UICONTROL Thumbnail creation]** step.
 
@@ -57,11 +57,11 @@ Vous pouvez désormais importer des fichiers Camera Raw dans AEM Assets. After y
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
-*Figure : Options dans le volet latéral.*
+*Figure : Options du volet latéral*
 
 ![chlimage_1-338](assets/chlimage_1-338.png)
 
-*Figure : Utilisez cette option pour apporter des modifications légères à vos images.*
+*Figure : Utiliser cette option pour apporter des modifications légères à vos images*
 
 Après avoir enregistré les modifications apportées à une image Camera Raw, un nouveau rendu `AdjustedPreview.jpg` est généré pour cette image. Pour les types d’images autres que Camera Raw, les modifications sont répercutées dans tous les rendus.
 
