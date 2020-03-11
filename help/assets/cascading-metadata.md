@@ -3,7 +3,7 @@ title: Métadonnées en cascade
 description: Cet article décrit comment définir des métadonnées en cascade pour des ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -67,7 +67,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. (Facultatif) Ajoutez les autres champs requis ; par exemple, le format, le codec et la durée de la ressource de type vidéo.
 
-   De la même façon, ajoutez des champs dépendants pour les autres types de ressources. Par exemple, ajoutez le nombre de pages et l’auteur des champs pour les ressources du document, telles que les fichiers PDF et Word.
+   De la même façon, ajoutez des champs dépendants pour les autres types de ressources. Par exemple, ajoutez le nombre de pages et l’auteur des champs pour les ressources , telles que les fichiers PDF et Word.
 
    ![video_bound_fields](assets/video_dependent_fields.png)
 
@@ -110,4 +110,4 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    ![Métadonnées en cascade pour une ressource de document](assets/doc_type_fields.png)
 
-   *Figure : Métadonnées en cascade pour le fichier de document*
+   *Figure : Métadonnées en cascade pour  fichier*
