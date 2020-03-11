@@ -1,17 +1,9 @@
 ---
 title: Configuration des modules externes d’éditeur de texte enrichi
-seo-title: Configuration des modules externes d’éditeur de texte enrichi
 description: Apprenez à configurer les modules externes d’éditeur de texte enrichi d’AEM afin d’activer différentes fonctionnalités.
-seo-description: Apprenez à configurer les modules externes d’éditeur de texte enrichi d’AEM afin d’activer différentes fonctionnalités.
-uuid: d6a029fb-e431-4f12-9002-7d794e4beb0d
-contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: e0328f9c-26c6-4c40-8594-3190c38cebd8
-noindex: true
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -121,7 +113,7 @@ Les trois icônes ci-dessous peuvent être mises à la disposition des auteurs d
 
 Pour configurer l’éditeur de texte enrichi pour qu’il affiche les icônes requises, procédez comme suit.
 
-1. Accédez au composant ; par exemple :
+1. Accédez à votre composant ; par exemple :
 
    `/apps/<myProject>/components/text`
 
@@ -151,7 +143,7 @@ Cette configuration permet trois scénarios d’utilisation, à savoir :
 
 The paste-as-Microsoft-Word (`paste-wordhtml`) mode can be further configured so that you can explicitly define which styles are allowed when pasting in AEM from another program, such as Microsoft Word.
 
-Par exemple, si seuls les formats et les listes en gras doivent être autorisés lors du collage dans AEM, vous pouvez filtrer les autres formats. Il s’agit du filtrage du collage configurable, qui peut être effectué pour les deux types de fichier :
+Par exemple, si seuls les formats en gras et les  de doivent être autorisés lors du collage dans AEM, vous pouvez filtrer les autres formats. Il s’agit du filtrage du collage configurable, qui peut être effectué pour les deux types de fichier :
 
 * [Texte](#pastemodes)
 * [Liens](#linkstyles)
@@ -222,8 +214,8 @@ Pour configurer les formats autorisés pour coller du texte dans AEM à partir d
    <td>nt:unstructured</td> 
    <td><p>Définit le comportement lors du collage de listes.<br /> </p> <p>Doit comporter la propriété <code>allow</code> (de type <code>Boolean</code>) pour définir s’il est autorisé de coller des listes.</p> <p>If <code>allow</code> is set to <code>false</code>, you must specify the property <code>ignoreMode</code> (type <code>String</code>) to define how to handle any list content pasted. Valid values for <code>ignoreMode</code> are:</p> 
     <ul> 
-     <li><code>remove</code>: Supprime le contenu de la liste.</li> 
-     <li><code>paragraph</code>: Transforme les éléments de liste en paragraphes.</li> 
+     <li><code>remove</code>: Supprime le contenu .</li> 
+     <li><code>paragraph</code>: Transforme  éléments en paragraphes.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -351,7 +343,7 @@ Si une balise block, par exemple une balise &lt;hr>, ne peut pas être affectée
 
 Lorsque le module externe Formats des paragraphes est activé pour la première fois, aucun format de paragraphe n’est disponible par défaut. La liste contextuelle est vide. Pour fournir des formats de paragraphes aux auteurs, procédez comme suit :
 
-* Activez la liste déroulante Format.
+* Activez le déroulant Format.
 * Spécifiez les balises block qui peuvent être sélectionnées dans la liste déroulante.
 
 Pour les configurations ultérieures, par exemple, afin d’ajouter davantage de formats, suivez uniquement la partie correspondante des instructions.
@@ -559,14 +551,14 @@ Répétez les étapes ci-dessus pour chaque style requis.
 
 Dans certains cas, vous pouvez créer des tableaux de données sans texte visuel dans un en-tête de colonne en supposant que l’objectif de l’en-tête est induit par la relation visuelle de la colonne avec d’autres colonnes. Dans ce cas, il est nécessaire d’indiquer un texte masqué à l’intérieur de la cellule d’en-tête pour permettre aux lecteurs d’écran et aux autres dispositifs d’assistance d’aider les utilisateurs, indépendamment de leur validité, à comprendre l’objectif de la colonne.
 
-Pour améliorer l’accessibilité dans de telles situations, l’éditeur de texte enrichi prend en charge les cellules d’en-tête masquées. De plus, il fournit des paramètres de configuration associés aux en-têtes masqués dans les tableaux. Ces paramètres vous permettent d’appliquer des styles CSS aux en-têtes masqués dans les modes de modification et d’aperçu. Pour aider les créateurs à identifier les en-têtes masqués en mode modification, incluez les paramètres ci-dessous dans votre code :
+Pour améliorer l’accessibilité dans de telles situations, l’éditeur de texte enrichi prend en charge les cellules d’en-tête masquées. De plus, il fournit des paramètres de configuration associés aux en-têtes masqués dans les tableaux. Ces paramètres vous permettent d’appliquer des styles CSS aux en-têtes masqués dans les modes de modification et de . Pour aider les créateurs à identifier les en-têtes masqués en mode modification, incluez les paramètres ci-dessous dans votre code :
 
 * `hiddenHeaderEditingCSS`: Indique le nom de la classe CSS appliquée à la cellule d’en-tête masqué, lorsque RTE est modifié.
 * `hiddenHeaderEditingStyle`: Spécifie une chaîne Style appliquée à la cellule d’en-tête masqué lors de la modification de RTE.
 
 Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe CSS prévaut sur la chaîne Style et peut remplacer les modifications apportées à la configuration en raison de la chaîne Style.
 
-Pour aider les auteurs à appliquer des CSS aux en-têtes masqués en mode d’aperçu, vous pouvez inclure les paramètres suivants dans votre code :
+Pour aider les auteurs à appliquer des CSS aux en-têtes masqués en mode , vous pouvez inclure les paramètres suivants dans votre code :
 
 * `hiddenHeaderClassName` : spécifie le nom de la classe CSS appliquée à la cellule d’en-tête masqué en mode aperçu.
 * `hiddenHeaderStyle` : spécifie une chaîne Style appliquée à la cellule d’en-tête masqué en mode aperçu.
@@ -727,7 +719,7 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
          * **Type** `String`)
          * **Valeurs** :
 
-            * `auto`: signifie qu’une cible automatique est choisie
+            * `auto`: signifie qu’une  automatique est choisie
 
                (spécifié par la `targetExternal` propriété pour les liens externes ou `targetInternal` pour les liens internes).
 
@@ -737,7 +729,7 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
 
          * **Nom** `targetInternal`
          * **Type** `String`
-         * **Valeur** de la cible pour les liens internes (à utiliser uniquement lorsque le &quot;mode&quot; est `auto`)
+         * **Valeur** du  pour les liens internes (à utiliser uniquement lorsque le &quot;mode&quot; est `auto`)
       * Cible des liens externes :
 
          * **Nom** `targetExternal`
