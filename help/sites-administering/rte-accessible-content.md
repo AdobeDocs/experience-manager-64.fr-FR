@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -24,12 +24,8 @@ AEM prend en charge à la fois :
 
 >[!NOTE]
 >
->Voir également:
->
->* Notre [guide rapide à propos de WCAG 2.0](/help/managing/qg-wcag.md) pour en savoir plus
+>* [Guide rapide relatif à WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Création d’un contenu accessible (conformité WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
->
-
 
 
 Les auteurs de contenu peuvent utiliser les fonctions de l’éditeur de texte enrichi afin de fournir des informations d’accessibilité lors de l’ajout de contenu à une page. Cela peut impliquer l’ajout d’informations structurelles via des en-têtes et des éléments de paragraphe.
@@ -196,7 +192,7 @@ Dans le composant **Table**, vous devez définir ou supprimer explicitement l’
    }
    ```
 
-1. Save your changes using **Save All …**
+1. Save your changes using **Save All**
 
 >[!NOTE]
 >
@@ -206,5 +202,4 @@ Dans le composant **Table**, vous devez définir ou supprimer explicitement l’
 >
 >* The `itemId` property for each corresponding field is set to the name of the appropriate DOM attribute (`TablePropertiesDialog`).
 >* Que l’attribut est défini et/ou supprimé sur l’élément DOM de manière explicite (`Table`).
-
 
