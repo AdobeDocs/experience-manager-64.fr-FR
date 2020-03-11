@@ -3,7 +3,7 @@ title: Gestion des droits numériques dans AEM Assets
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -12,11 +12,13 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
 Les actifs numériques sont souvent associés à une licence qui prévoit les conditions et la durée de leur utilisation. Les ressources Adobe Experience Manager (AEM) étant entièrement intégrées à la plate-forme AEM, vous pouvez gérer efficacement les informations d’expiration et les états des ressources. Vous pouvez également associer des informations de licence à des ressources.
 
+<!-- TBD see if adding more UICONTROL tags is needed -->
+
 ## Expiration de ressources {#asset-expiration}
 
 L’expiration de ressources est un moyen efficace de faire respecter les exigences en matière de licence pour les ressources. Elle garantit que la ressource qui est publiée ne l’est plus lorsqu’elle arrive à expiration, ce qui évite tout risque de violation de licence. Un utilisateur sans droits d’administration ne peut pas modifier, copier, déplacer, publier ni télécharger une ressource arrivée à expiration.
 
-Vous pouvez afficher l’état d’expiration d’un fichier dans la console Ressources en mode Carte et Liste.
+Vous pouvez l’état d’expiration d’un fichier dans la console Ressources dans le  de la carte et du.
 
 **Mode Carte**
 
@@ -28,7 +30,7 @@ Lorsqu’une ressource arrive à expiration, un indicateur le signale sur la car
 
 For expired assets, the **[!UICONTROL Status]** column displays the **[!UICONTROL Expired]** banner.
 
-![expired_flag_list](assets/expired_flag_list.png)
+![expired_flag_](assets/expired_flag_list.png)
 
 Vous pouvez consulter l’état d’expiration d’une ressource dans la chronologie. Sélectionnez la ressource et choisissez Chronologie dans le menu de navigation globale.
 
