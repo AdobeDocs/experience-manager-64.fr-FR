@@ -1,14 +1,14 @@
 ---
-title: Recherche de ressources dans AEM
+title: 'Recherche de ressources dans AEM '
 description: Découvrez comment rechercher les ressources souhaitées dans AEM à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
 
-# Recherche de ressources dans AEM {#search-assets-in-aem}
+# Recherche de ressources dans AEM  {#search-assets-in-aem}
 
 Découvrez comment rechercher les ressources souhaitées dans AEM à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 
@@ -27,14 +27,16 @@ Vous pouvez effectuer une recherche selon les options suivantes (prédicats) :
 * Style
 * Statistiques
 
-You can customize the Filters panel and add/remove search predicates using [search facets](search-facets.md). Pour afficher le panneau Filtres, procédez comme suit :
+<!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
+
+Vous pouvez personnaliser le panneau Filtres et ajouter/supprimer des prédicats de recherche à l’aide des [facettes de recherche](search-facets.md). Pour afficher le panneau Filtres, procédez comme suit :
 
 1. In the Assets user interface, tap/click ![search_icon](assets/search_icon.png) from the toolbar to display the Omnisearch box.
 1. Saisissez le terme à rechercher et appuyez ensuite sur Entrée. Vous pouvez également appuyer sur la touche Entrée, sans saisir aucun terme à rechercher. Ne saisissez aucun espace avant le terme, sans quoi la recherche ne fonctionnera pas.
 
 1. Appuyez/cliquez sur l’icône de navigation globale. Le panneau Filtres s’affiche.
 
-   ![filters_panel-1](assets/filters_panel-1.png)
+   ![_panel-1](assets/filters_panel-1.png)
 
    Selon le type d’éléments que vous recherchez, le nombre de correspondances est indiqué en haut des résultats de la recherche.
 
