@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: e269c0cf002f4b2db5454c315d35f4101b652540
 
 ---
 
@@ -39,7 +39,9 @@ Pour démarrer rapidement :
 
 1. [Téléchargez les images maître pour plusieurs vues.](#uploading-assets-in-image-sets)
 
-   Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2000 pixels dans leur dimension la plus grande. AEM Assets prend en charge de nombreux formats de fichier image mais les formats sans perte TIFF, PNG et EPS sont recommandés.
+   Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images ont une dimension de 2 000 pixels minimum pour un zoom optimal. Contenu multimédia dynamique peut générer des images jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
+
+   AEM Assets prend en charge de nombreux formats de fichier image mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
 1. [Créez une visionneuse d’images.](#creating-image-sets)
 
@@ -49,7 +51,7 @@ Pour démarrer rapidement :
 
    Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
-   **Important** —Les visionneuses par lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation des fichiers et ne sont disponibles qu’en mode Contenu multimédia dynamique - Scene7.
+   **Important** — Les visionneuses par lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation des fichiers et ne sont disponibles qu’en mode Contenu multimédia dynamique - Scene7.
 
    See [Preparing Image Set assets for upload and Uploading your files](#uploading-assets-in-image-sets).
 
@@ -78,7 +80,7 @@ Pour démarrer rapidement :
 
    Voir [Liaison d’une visionneuse d’images à une page web](linking-urls-to-yourwebapplication.md) et [Intégration de la vidéo ou de la visionneuse d’images](embed-code.md).
 
-To edit Image Sets, see [editing Image Sets.](#editing-image-sets) En outre, vous pouvez afficher et modifier les propriétés [de la visionneuse d’](managing-assets-touch-ui.md#editing-properties)images.
+To edit Image Sets, see [editing Image Sets.](#editing-image-sets) En outre, vous pouvez  et modifier les propriétés [de la visionneuse d’](managing-assets-touch-ui.md#editing-properties)images.
 
 Si vous rencontrez des problèmes lors de la création des visionneuses, reportez-vous à Images et visionneuses dans la section [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md#images-and-sets).
 
@@ -169,9 +171,9 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
 Vous pouvez créer des visionneuses d’images dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
-**Important** —Les visionneuses de lots sont créées par le système [de production d’] images IPS dans le cadre de l’assimilation de fichiers. Elles sont disponibles uniquement en mode Contenu multimédia dynamique - Scene7.)
+**Important** — Les visionneuses de lots sont créées par le système [de production d’] images IPS dans le cadre de l’assimilation de fichiers. Elles sont disponibles uniquement en mode Contenu multimédia dynamique - Scene7.)
 
-However, sets created using batch set presets, do *not* appear in the user interface. Vous pouvez visualiser ces jeux de trois manières différentes. (Ces méthodes sont disponibles même si vous avez créé les visionneuses d’images dans l’interface utilisateur.)
+However, sets created using batch set presets, do *not* appear in the user interface. Vous pouvez  ces ensembles de trois manières différentes. (Ces méthodes sont disponibles même si vous avez créé les visionneuses d’images dans l’interface utilisateur.)
 
 * Lors de l’ouverture des propriétés d’une ressource individuelle. Les propriétés indiquent les jeux dont la ressource sélectionnée fait partie (sous **[!UICONTROL Membre des visionneuses]**). Appuyez sur le nom de la visionneuse pour afficher la totalité de la visionneuse.
 
