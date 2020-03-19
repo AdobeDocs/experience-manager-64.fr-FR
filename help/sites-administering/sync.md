@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 793305a07cc23e5e551871362e8898ee7bafc0c2
 
 ---
 
@@ -305,7 +305,7 @@ S’il existe des données personnalisées à synchroniser sur plusieurs instanc
 
 * **Types de nœuds**
 
-   Liste des types de noeud qui seront synchronisés. Tout type de nœud autre que sling:Folder doit être répertorié ici (sling:folder est traité séparément).
+   Il s’agit du  des types de noeud qui seront synchronisés. Tout type de nœud autre que sling:Folder doit être répertorié ici (sling:folder est traité séparément).
 
     Liste par défaut des types de nœuds à synchroniser :
 
@@ -315,7 +315,7 @@ S’il existe des données personnalisées à synchroniser sur plusieurs instanc
 
 * **Propriétés ignorables**
 
-   Il s’agit de la liste des propriétés qui seront ignorées si un changement est détecté. Les modifications apportées à ces propriétés peuvent être synchronisées comme effet secondaire d’autres modifications (la synchronisation ayant toujours lieu au niveau du nœud), mais les modifications apportées à ces propriétés ne déclenchent pas en elles-mêmes de synchronisation.
+   Il s’agit du  des propriétés qui sera ignoré si un changement est détecté. Les modifications apportées à ces propriétés peuvent être synchronisées comme effet secondaire d’autres modifications (la synchronisation ayant toujours lieu au niveau du nœud), mais les modifications apportées à ces propriétés ne déclenchent pas en elles-mêmes de synchronisation.
 
     Propriété par défaut à ignorer :
 
@@ -350,7 +350,7 @@ Si l’identifiant Sling est identique pour plusieurs instances de modification 
 
 Pour vérifier que toutes les valeurs d’identifiant Sling diffèrent, sur chaque instance de publication :
 
-1. browse to [https://*host:port*/system/console/status-slingsettings](http://localhost:4503/system/console/status-slingsettings)
+1. naviguer vers `http://<host>:<port>/system/console/status-slingsettings`
 1. vérifiez la valeur de l’**identifiant Sling**
 
 ![chlimage_1-395](assets/chlimage_1-395.png)
@@ -370,7 +370,7 @@ Si l’identifiant Sling d’une instance de publication correspond à l’ident
 
          `use windows explorer and search for *sling.id.file*`
 
-1. démarrage de l’instance de publication
+1. de l’instance de publication
 
    * au démarrage, un nouvel identifiant Sling lui est affecté
 
@@ -387,7 +387,7 @@ Pour que les mises à jour soient correctement synchronisées, il est nécessair
 
    * par exemple, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* localisez la `Apache Sling Distribution Packaging - Vault Package Builder Factor`
+* localisez la variable `Apache Sling Distribution Packaging - Vault Package Builder Factor`
 
    * `Builder name: socialpubsync-vlt`
 
@@ -524,9 +524,9 @@ L’utilisateur autorisé doit avoir explicitement les autorisations et la restr
 
 | **path** | **jcr:all** | **rep:glob** |
 |---|---|---|
-| /home | X | &amp;ast;/activités/&amp;ast; |
-| /home/users | X | &amp;ast;/activités/&amp;ast; |
-| /home/groups | X | &amp;ast;/activités/&amp;ast; |
+| /home | X | &amp;ast;/ /&amp;ast; |
+| /home/users | X | &amp;ast;/ /&amp;ast; |
+| /home/groups | X | &amp;ast;/ /&amp;ast; |
 
 As a member of the `administrators` group, the authorized user should have the following privileges on all publish instances :
 
@@ -568,7 +568,7 @@ To configure or enable user sync, go to step 1: [Apache Sling Distribution Agent
 
 Lorsqu’une instance de publication n’est plus disponible, elle ne doit pas être supprimée si elle doit être de nouveau en ligne à l’avenir. Les modifications sont mises en file d’attente pour l’éditeur et, une fois l’instance de nouveau en ligne, elles sont traitées.
 
-Si l’instance de publication n’est jamais remise en ligne, si elle est hors ligne de manière permanente, elle doit être supprimée car l’accumulation de files d’attente entraînera une utilisation notable de l’espace disque dans l’environnement de création.
+Si l’instance de publication n’est jamais remise en ligne, si elle est hors ligne de manière permanente, elle doit être supprimée, car l’accumulation de files d’attente entraînera une utilisation notable de l’espace disque dans le de l’auteur  .
 
 Lorsqu’un éditeur est en panne, le journal de création comporte des exceptions similaires à :
 
