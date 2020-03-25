@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: a8e5786731c24dc4c0122dbc75e59a6c3be82cf7
+source-git-commit: 8a612282df46f5f54ebe73c4b297eba6515ea35d
 
 ---
 
@@ -58,7 +58,7 @@ Avant de commencer à configurer ou à coder réellement votre composant, vous d
 Avant toute considération sérieuse sur le développement de composants, vous devez savoir quelle IU vos auteurs vont utiliser :
 
 * **Interface utilisateur optimisée pour les écrans tactiles**
-   [Interface](/help/sites-developing/touch-ui-concepts.md) utilisateur standard introduite dans AEM 5.6.0 en tant qu’aperçu et étendue dans la version 6.x. Il repose sur l’expérience utilisateur unifiée d’Adobe Marketing Cloud, en utilisant les technologies sous-jacentes de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral et de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#granite-ui)Granite.
+   [Interface](/help/sites-developing/touch-ui-concepts.md) utilisateur standard introduite dans AEM 5.6.0 en tant que  de et étendue dans la version 6.x. Il repose sur l’expérience utilisateur unifiée d’Adobe Marketing Cloud, en utilisant les technologies sous-jacentes de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral et de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#granite-ui)Granite.
 
 * **IU classique** Interface utilisateur basée sur la technologie ExtJS introduite avec CQ 5.1.
 
@@ -173,7 +173,7 @@ La définition d’un composant peut être décomposée comme suit :
 
    * Ressources:
 
-      Elles définissent les éléments statiques utilisés par le composant.
+      Elles définissent les  de utilisées par le composant.
 
    * Scripts:
    Sont utilisées pour implémenter le comportement de l’instance résultante du composant.
@@ -561,7 +561,7 @@ Les composants d’AEM sont soumis à trois hiérarchies différentes :
    * boîtes de dialogue
    * descriptions (y compris les images miniatures, les icônes, etc.)
 
-* **Hiérarchie du conteneur**
+* **Hiérarchie**
 
    Il est utilisé pour renseigner les paramètres de configuration du composant enfant et est le plus souvent utilisé dans un scénario parsys.
 
@@ -586,7 +586,7 @@ Le comportement de modification d’un composant est configuré en ajoutant un n
 * [ Propriétés `cq:editConfig` des](#configuring-with-cq-editconfig-properties)noeuds :
 
    * `cq:actions` ( `String array`) : définit les actions qui peuvent être exécutées sur le composant.
-   * `cq:layout` ( `String`) :: définit le mode de modification du composant dans l’interface utilisateur classique.
+   * `cq:layout` ( `String`) : : définit le mode de modification du composant dans l’interface utilisateur classique.
    * `cq:dialogMode` ( `String`) : définit le mode d’ouverture de la boîte de dialogue du composant dans l’interface utilisateur classique
 
       * Dans l’IU tactile, les boîtes de dialogue flottent toujours en mode bureau et s’ouvrent automatiquement en mode plein écran sur mobile.
@@ -597,11 +597,11 @@ Le comportement de modification d’un composant est configuré en ajoutant un n
 
 * [ noeuds `cq:editConfig`](#configuring-with-cq-editconfig-child-nodes)enfants :
 
-   * `cq:dropTargets` (type de noeud `nt:unstructured`) : définit une liste de cibles de dépôt qui peuvent accepter un dépôt à partir d’un fichier de l’outil de recherche de contenu.
+   * `cq:dropTargets` (type de noeud `nt:unstructured`) : définit un de de dépôt qui peut accepter un dépôt à partir d’un fichier de l’outil de recherche de contenu
 
       * Les cibles de dépôt multiples sont uniquement disponibles dans l’IU classique.
       * Dans l’IU tactile, une seule cible est autorisée.
-   * `cq:actionConfigs` (type de noeud `nt:unstructured`) : définit une liste des nouvelles actions ajoutées à la liste cq:actions.
+   * `cq:actionConfigs` (type de noeud `nt:unstructured`) : définit un  de nouvelles actions qui sont ajoutées au cq:actions .
    * `cq:formParameters` (type de noeud `nt:unstructured`) : définit des paramètres supplémentaires qui sont ajoutés au formulaire de boîte de dialogue.
    * `cq:inplaceEditing` (type de noeud `cq:InplaceEditingConfig`) : définit une configuration de modification statique pour le composant.
    * `cq:listeners` (type de noeud `cq:EditListenersConfig`) : définit ce qui se produit avant ou après une action sur le composant.
@@ -657,13 +657,17 @@ The `cq:actions` property ( `String array`) defines one or several actions that 
    <td><code>edit</code></td> 
    <td>Ajoute un bouton pour modifier le composant.</td> 
   </tr> 
+    <tr>
+    <td><code>editannotate</code></td>
+    <td>Ajoute un bouton pour modifier le composant et autoriser les <a href="/help/sites-authoring/annotations.md">annotations</a>.</td>
+   </tr>
   <tr> 
    <td><code>delete</code></td> 
    <td>Ajoute un bouton pour supprimer le composant</td> 
   </tr> 
   <tr> 
    <td><code>insert</code></td> 
-   <td>Ajoute un bouton pour insérer un nouveau composant avant le composant actif.</td> 
+   <td>Ajoute un bouton permettant d’insérer un nouveau composant avant le composant actif.</td> 
   </tr> 
   <tr> 
    <td><code>copymove</code></td> 
@@ -741,7 +745,7 @@ Le composant peut être lié à une boîte de dialogue de modification. The `cq:
   </tr> 
   <tr> 
    <td><code>floating</code></td> 
-   <td>La boîte de dialogue flotte.<br /> </td> 
+   <td>La boîte de dialogue est flottante.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>inline</code></td> 
@@ -810,7 +814,7 @@ La propriété `<*drag and drop prefix*>` est définie par la propriété Java :
 `com.day.cq.wcm.api.components.DropTarget.CSS_CLASS_PREFIX`.
 
 Par exemple, le nom de la classe est défini comme suit dans le JSP du composant Télécharger.\
-( `/libs/foundation/components/download/download.jsp`), où `file` est le nom du noeud de la cible de dépôt dans la configuration de modification du composant Télécharger :
+( `/libs/foundation/components/download/download.jsp`), où `file` est le nom du noeud du de dépôt dans la configuration de modification du composant Télécharger :
 
 `String ddClassName = DropTarget.CSS_CLASS_PREFIX + "file";`
 
@@ -828,7 +832,7 @@ Le nœud de type `cq:DropTargetConfig` doit posséder les propriétés suivantes
   </tr> 
   <tr> 
    <td><code>groups</code></td> 
-   <td>Tableau de groupes cibles de dépôt. Chaque groupe doit correspondre au type de groupe défini dans l’extension du Content Finder et associé aux ressources.</td> 
+   <td>Tableau de  de dépôt. Chaque groupe doit correspondre au type de groupe défini dans l’extension du Content Finder et associé aux ressources.</td> 
   </tr> 
   <tr> 
    <td><code>propertyName</code></td> 
@@ -971,7 +975,7 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
   </tr> 
   <tr> 
    <td><code>beforechildinsert</code></td> 
-   <td>Le gestionnaire est déclenché avant que le composant ne soit inséré dans un autre composant (conteneurs uniquement).</td> 
+   <td>Le gestionnaire est déclenché avant que le composant ne soit inséré dans un autre composant (uniquement).</td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -1001,7 +1005,7 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
   </tr> 
   <tr> 
    <td><code>afterchildinsert</code></td> 
-   <td>Le gestionnaire est déclenché une fois que le composant est inséré dans un autre composant (conteneurs uniquement).</td> 
+   <td>Le gestionnaire est déclenché une fois que le composant est inséré dans un autre composant (uniquement).</td> 
    <td> </td> 
   </tr> 
  </tbody> 
