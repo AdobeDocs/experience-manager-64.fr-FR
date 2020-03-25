@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: c74b951194fd2fd723056679784ac2186f37a3e2
 
 ---
 
@@ -63,6 +63,9 @@ Pour appeler un service AEM Forms par programmation à l’aide de l’API Java
 
 * Le service AEM Forms à appeler. Une application client peut appeler un ou plusieurs services.
 * Le mode dans lequel vous voulez appeler un service AEM Forms. Vous pouvez employer le mode EJB ou SOAP. (Voir [Réglage des propriétés de la connexion](invoking-aem-forms-using-java.md#setting-connection-properties).)
+
+>[!NOTE] (Clé en main uniquement) du serveur AEM Forms avec la commande `standalone.bat -b <Server IP> -c lc_turnkey.xml` pour spécifier une adresse IP de serveur pour EJB
+
 * Le serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
 ### Fichiers JAR spécifiques au service {#service-specific-jar-files}
