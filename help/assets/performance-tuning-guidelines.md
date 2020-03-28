@@ -3,7 +3,7 @@ title: Guide de réglage des performances des ressources
 description: Traite principalement de la configuration d’AEM, ainsi que des modifications du matériel, des logiciels et des composants réseau pour supprimer les goulets d’étranglement et optimiser la performance d’AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
 
 ---
 
@@ -16,7 +16,7 @@ En outre, l’identification et le respect de certaines instructions en termes d
 
 De faibles performances d’AEM Assets peuvent avoir une incidence sur l’expérience utilisateur en termes de performances interactives, de traitement des ressources, de vitesse de téléchargement et d’autres éléments.
 
-En fait, l&#39;optimisation des performances est une tâche fondamentale que vous effectuez avant d&#39;établir des mesures cibles pour n&#39;importe quel projet.
+En fait, l&#39;optimisation des performances est un fondamental que vous effectuez avant d&#39;établir des mesures  pour n&#39;importe quel projet.
 
 Voici quelques éléments principaux essentiels pour lesquels vous devez identifier et corriger les problèmes de performances avant que ceux-ci aient un impact sur les utilisateurs.
 
@@ -26,7 +26,7 @@ Bien qu’AEM soit pris en charge sur plusieurs plateformes, Adobe a trouvé la 
 
 ### Dossier temp {#temp-folder}
 
-Pour améliorer les délais de chargement actif, utilisez un stockage haute performance pour le répertoire temporaire Java. Sous Linux et Windows, un lecteur de RAM ou un SSD peut être utilisé. Dans les environnements cloud, un type de stockage à grande vitesse équivalent peut être utilisé. For example in Amazon EC2, an [ephemeral drive](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temp folder.
+Pour améliorer les délais de chargement actif, utilisez un stockage haute performance pour le répertoire temporaire Java. Sous Linux et Windows, un lecteur de RAM ou un SSD peut être utilisé. Dans les  basés sur le cloud, un type de  haute vitesse équivalent peut être utilisé. For example in Amazon EC2, an [ephemeral drive](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temp folder.
 
 En supposant que le serveur dispose de suffisamment de mémoire, configurez un disque RAM. Sous Linux, exécutez les commandes suivantes pour créer un lecteur de RAM de 8 Go :
 
@@ -39,7 +39,7 @@ mkfs -q /dev/ram1 800000
 
 Sous le système d’exploitation Windows, vous devez utiliser un pilote tiers pour créer un disque RAM ou pour simplement utiliser le stockage haute performance tel qu’un SSD.
 
-Une fois que le volume temporaire haute performance est prêt, définissez le paramètre JVM -Djava.io.tmpdir. Par exemple, vous pouvez ajouter le paramètre JVM ci-dessous à la variable CQ_JVM_OPTS dans le script bin/start d’AEM :
+Une fois que le volume temporaire haute performance est prêt, définissez le paramètre JVM -Djava.io.tmpdir. Par exemple, vous pouvez ajouter le paramètre JVM ci-dessous à la variable CQ_JVM_OPTS dans le script bin/d’AEM :
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
@@ -156,7 +156,7 @@ Configurer une file d’attente à la moitié des processeurs disponibles est un
 
 ### Déchargement {#offloading}
 
-Pour un volume élevé de flux de travail ou de flux de travail gourmands en ressources, tels que le transcodage vidéo, vous pouvez décharger les flux de travaux de mise à jour de gestion des actifs numériques vers une deuxième instance d’auteur. Un problème récurrent avec le déchargement est que tout chargement enregistré via le déchargement du traitement des workflows est compensé par le coût de la réplication du contenu dans les deux sens entre les instances.
+Pour un volume élevé de  ou de  gourmands en ressources, tels que le transcodage vidéo, vous pouvez décharger DAM Update Asset sur une deuxième instance d’auteur. Un problème récurrent avec le déchargement est que tout chargement enregistré via le déchargement du traitement des workflows est compensé par le coût de la réplication du contenu dans les deux sens entre les instances.
 
 À partir des versions 6.2 d’AEM avec un pack de fonctionnalités pour AEM 6.1, vous pouvez procéder au déchargement avec une réplication moins binaire. Dans ce modèle, les instances d’auteur partagent un entrepôt de données commun et envoient uniquement les métadonnées dans les deux sens via une réplication différée. Bien que cette technique fonctionne bien avec un entrepôt de données basé sur les fichiers partagé, certains problèmes peuvent survenir avec un entrepôt de données S3. Étant donné que les threads d’écriture en arrière-plan peuvent provoquer une certaine latence, il est possible qu’une ressource ne puisse avoir été écrite dans l’entrepôt de données avant le lancement de la tâche.
 
@@ -242,11 +242,14 @@ To disable Page Extraction:
 1. Click **[!UICONTROL OK]**
 1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents **workflow model 
 
---># Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
+-->
 
-Pendant le chargement des ressources, le workflow d’AEM crée une ressource distincte pour chaque page des documents PDF et Office. Chacune de ces pages est une ressource en elle-même, qui consomme de l’espace disque supplémentaire, et requiert la création de versions et un traitement de workflow supplémentaire. Si des pages distinctes ne sont pas nécessaires, désactivez l’extraction de pages et la génération de sous-ressources.
+<!--
+# Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
 
-Pour désactiver la génération de sous-ressources, procédez comme suit :
+During asset uploads, AEM's workflow creates a separate asset for each page in PDF and Office documents. Each of these pages is an asset by itself, which consumes additional disk space, requires versioning and additional workflow processing. If you do not require separate pages, disable Sub Asset Generation and Page Extraction.
+
+To disable Sub Asset generation, do the following:
 
 1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
@@ -254,19 +257,18 @@ Pour désactiver la génération de sous-ressources, procédez comme suit :
 1. Double click the **[!UICONTROL DAM Update Asset]** workflow model
 1. Delete **[!UICONTROL Process Sub Asset]** step from **[!UICONTROL DAM Update Asset]** workflow model.
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Click on **[!UICONTROL Save]**
 
-Pour désactiver l’extraction de pages :
+To disable Page Extraction:
 
 1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
 1. Select the **[!UICONTROL Launchers]** tab
-1. Select a launcher that launches **[!UICONTROL DAM Parse Word Documents]** workflow model
-1. Cliquez sur **[!UICONTROL Modifier]**
-1. Sélectionnez **[!UICONTROL Désactiver]**
-1. Cliquez sur **[!UICONTROL OK]**
-1. Répétez les étapes 3 à 6 pour les autres éléments de lanceur qui utilisent **DAM Parse Word Documents **modèle de processus
-
+1. Select a launcher that launches **[!UICONTROL DAM Parse Word Documents]** workflow model.
+1. Click **[!UICONTROL Edit]**
+1. Select **[!UICONTROL Disable]**
+1. Click **[!UICONTROL OK]**
+1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents** workflow model.
 -->
 
 ### Écriture différée XMP {#xmp-writeback}
@@ -345,12 +347,11 @@ Mettez à jour les configurations d’index pour améliorer la durée de réinde
 
    type=&quot;String&quot;
 
-1. On the /oak:index/ntBaseLucene node, set the property *reindex=true*
+1. On the /oak:index/ntBaseLucene node, set the property `reindex=true`
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**
 1. Surveillez error.log pour savoir quand l’indexation est terminée :
 
-   
-Réindexation terminée pour les index : [/oak:index/ntBaseLucene]
+   Réindexation terminée pour les index : [/oak:index/ntBaseLucene]
 
 1. Vous pouvez également constater que l’indexation est effectuée en actualisant le nœud /oak:index/ntBaseLucene dans CRXDe, étant donné que la propriété reindex retourne à la valeur false
 1. Once indexing is completed then go back to CRXDe and set the **[!UICONTROL type]** property to disabled on these two indexes
@@ -404,17 +405,17 @@ Afin de réduire au maximum la latence et d’obtenir un débit élevé grâce �
 
 ## Liste de contrôle des performances d’AEM Assets  {#aem-assets-performance-checklist}
 
-* Autoriser HTTPS à contourner tous les renifleurs de trafic HTTP d’entreprise
-* Utiliser une connexion câblée pour le chargement de ressources volumineuses
-* Déploiement sur Java 8.
-* Définition de paramètres JVM optimaux
-* Configurer un entrepôt de données de système de fichiers ou un entrepôt de données S3
-* Activer les workflows transitoires
-* Régler les files d’attente de Granite pour limiter les tâches concurrentes
-* Configurer ImageMagick pour limiter la consommation de ressources
-* Supprimer les étapes inutiles du workflow Ressource de mise à jour de gestion des actifs numériques
-* Configurer la purge des workflows et versions
-* Optimiser la configuration de l’index de Lucene dans les versions antérieures à la version 6.2
+* Autoriser HTTPS à contourner tous les renifleurs de trafic HTTP d’entreprise.
+* Utiliser une connexion câblée pour le chargement de ressources volumineuses.
+* Définition de paramètres JVM optimaux.
+* Configurer un entrepôt de données de système de fichiers ou un entrepôt de données S3.
+* Désactivez la génération de sous-ressources. S’il est activé, le processus d’AEM crée un fichier distinct pour chaque page d’un fichier de plusieurs pages. Chacune de ces pages est une ressource individuelle qui consomme de l’espace disque supplémentaire, nécessite un contrôle de version et un traitement de flux de travail supplémentaire. Si vous n’avez pas besoin de pages distinctes, désactivez la génération de sous-ressources et les de  de pages   le.
+* Activer les workflows transitoires.
+* Régler les files d’attente de Granite pour limiter les tâches concurrentes.
+* Configurer ImageMagick pour limiter la consommation de ressources.
+* Supprimer les étapes inutiles du workflow Ressource de mise à jour de gestion des actifs numériques.
+* Configurer la purge des workflows et versions.
+* Optimisez la configuration de l’index Lucene.
 * Optimisez les index avec les derniers Service Pack et correctifs. Vérifiez auprès du support Adobe toutes les optimisations d’index supplémentaires qui pourraient être disponibles.
 * Use `guessTotal` to optimize query performance.
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
