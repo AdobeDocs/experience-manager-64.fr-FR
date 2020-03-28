@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 31efe07cd66963559ff207bcd5492bf97076f875
+source-git-commit: 7d0c2e63d6ea7942cf442d61bdab8e31dd2c3e47
 
 ---
 
@@ -25,8 +25,8 @@ Smart Imaging bénéficie également de l’amélioration des performances grâc
 
 Les exemples de ressources d’image suivants illustrent l’optimisation Smart Imaging ajoutée :
 
-| Image<br>(URL) | Miniature | Taille<br> (JPEG) | Taille (WebP)<br> (avec ***Smart Imaging***) | % de réduction |
-|---|:---:|:---:|:---:|:---:|:---:|
+| Image<br>(URL) | Miniature | Taille<br> (JPEG) | Taille (WebP)<br> (avec Smart Imaging) | % de réduction |
+|---|---|---|---|---|
 | [Image 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture1](assets-dm/picture1.png) | 73.75 Ko | 45.92 Ko | 38% |
 | [Image 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture2](assets-dm/picture2.png) | 191 Ko | 70.66 Ko | 63% |
 | [Image 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture3](assets-dm/picture3.png) | 96.64 Ko | 39.44 Ko | 59% |
