@@ -8,7 +8,7 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 68ab70332a16a9a043f0db0ede75049b85188750
 
 ---
 
@@ -39,7 +39,7 @@ ECMAScript est un langage de script. Il est utilisé pour les scripts et les app
 
    1. Développez le nœud du script, cliquez avec le bouton droit de la souris sur **[!UICONTROL jcr:content]**, puis cliquez sur **[!UICONTROL Mixins]**.
    1. Ajoutez la propriété `mix:title` dans la boîte de dialogue Modifier les mixins et cliquez sur **OK**.
-   1. Ajoutez la propriété suivante au noeud jcr:content du script :
+   1. Ajouter la propriété suivante au noeud jcr:content du script :
 
       | Nom | Type | Valeur |
       |--- |--- |--- |
@@ -155,8 +155,8 @@ Vous avez besoin des fichiers jar [SDK client AEM Forms](https://helpx.adobe.co
        <dependencies>
            <dependency>
                <groupId>com.adobe.aemfd</groupId>
-               <artifactId>aemfd-client-sdk-test</artifactId>
-               <version>4.0.70</version>
+               <artifactId>aemfd-client-sdk</artifactId>
+               <version>5.1.100</version>
            </dependency>
            <dependency>
                <groupId>com.adobe.granite</groupId>
