@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 6684e78caf43b49660de3c1a90e2cccd9a204420
+source-git-commit: a80f5bd7be1de577a46c8aae880d6713e2d50f30
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 6684e78caf43b49660de3c1a90e2cccd9a204420
 |---|---|
 | Version | 6.4.8.0 |
 | Type | Version du Service Pack |
-| Date  | 5 mars 2020 |
+| Date | 5 mars 2020 |
 | URL de téléchargement | AEM 6.4.8.0 sur [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), [Software Distribution (bêta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Fonctionnalités présentes dans AEM 6.4.8.0 {#what-s-included-in-aem}
@@ -47,6 +47,8 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * AEM Assets est désormais configuré avec le portail de marque via les E/S Adobe.
 
+* Mise à jour de la version jQuery intégrée dans ContextHub vers la version 3.4.1.
+
 ## Liste des modifications     {#list-of-changes}
 
 ### Sites {#sites}
@@ -64,7 +66,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Lorsque vous modifiez un hyperlien dans l’éditeur de texte enrichi (RTE), le nouveau chemin sélectionné n’est pas enregistré (NPR-31659).
 * Lorsque vous supprimez un composant à plusieurs champs et annulez la suppression, le composant est restauré mais les données ne sont pas restaurées (NPR-31617).
 
-### Assets {#assets}
+### Ressources {#assets}
 
 * Un dossier sans nom est créé dans SPS (Scene7 Publishing System) lors du déplacement d’un fichier d’un dossier vers un autre dans Experience Manager avec la configuration de Dynamic Media Scene7 (NPR-32440).
 
@@ -175,7 +177,7 @@ Voici quelques-uns des points saillants d’AEM 6.4.7.0 :
 * La taille du lot et le délai d’expiration de l’étape de flux de travail pour le retraitement et le transfert par lot peuvent désormais être configurés à partir de l’interface utilisateur dans Contenu multimédia dynamique.
 * La valeur `pdfBrochure` a été définie sur false dans la configuration cloud de Scene7, pour enregistrer de la mémoire dans IPS.
 
-##### Assets {#assets-6470}
+##### Ressources {#assets-6470}
 
 **Améliorations des produits**
 
@@ -232,7 +234,7 @@ Si vous utilisez le package `com.day.cq.dam.handler.standard.msoffice` dans votr
 
 * Une exception de point nul est observée lors de l’exécution du processus de retraitement de Scene7 sur un dossier contenant des ressources non-DM (CQ-4279555).
 
-* Le changement de nom des ressources dans AEM ne parvient pas à se synchroniser avec la scène 7, lorsqu’une ressource avec un nom de  existe déjà dans Scene7 (CQ-4276763).
+* Le changement de nom des ressources dans AEM ne parvient pas à se synchroniser avec la scène 7, lorsqu’une ressource avec un  de nom existe déjà dans Scene7 (CQ-4276763).
 
 * Le fichier zip envoyé par courrier électronique pour le téléchargement de fichier ne parvient pas à se décompresser lorsqu’un utilisateur disposant d’autorisations de lecture tente de l’ouvrir (CQ-4277925).
 
@@ -332,7 +334,7 @@ Si vous utilisez le package `com.day.cq.dam.handler.standard.msoffice` dans votr
 
 * L’application des droits ReaderExtension au format PDF génère un message d’erreur (NPR-30930).
 
-**Processus**
+**Workflow**
 
 * Le processus OSGi échoue en raison d’une utilisation à 100 % du processeur (NPR-31234).
 
@@ -360,7 +362,7 @@ Voici quelques-uns des points saillants d’AEM 6.4.6.0 :
 * Ajout de la prise en charge du suivi des états de l’interface utilisateur dynamique dans le suivi des  de dans l’API de base.
 * Ajout de la prise en charge du rendu au composant principal d’image.
 
-**Assets**
+**Ressources**
 
 * Asset share link of a folder with space and `&` character in the name displays blank gray cards for some assets. NPR-29934 : correctif pour CQ-4270187
 * Le processus de gestion des actifs numériques se bloque lors de la création de ressources MP4 pour AEM. NPR-30031 : correctif pour CQ-4271352
@@ -441,7 +443,7 @@ Voici quelques-uns des points saillants d’AEM 6.4.6.0 :
 
 **IU-Consoles**
 
-* Création de scripts intersites (XSS) sur les propriétés de la page Sites dans l’onglet Miniature. NPR-30048 : correctif pour Granite-26200
+* Création de scripts intersites (XSS) sur les propriétés de la page Sites sur l’onglet Miniature. NPR-30048 : correctif pour Granite-26200
 
 **UI-Foundation**
 
@@ -513,7 +515,7 @@ Voici quelques-uns des points saillants d’AEM 6.4.5.0 :
 * Désactivation du composant `AssetDownloadServlet` OSGi par défaut sur les instances de publication AEM. For more information, see [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 * Activation de la prise en charge du Gestionnaire de sites multiples pour les ressources. For more information, see [Reuse assets using MSM for Assets](/help/assets/reuse-assets-using-msm.md).
 
-**Assets**
+**Ressources**
 
 * Les fichiers dont le nom de fichier contient une apostrophe ne sont pas synchronisés avec Contenu multimédia dynamique. NPR-29538 : correctif pour CQ-4270592
 * Mise à jour de l&#39;interface DAM DMGGateway pour la prise en charge multipartie S3. NPR-29740 : correctif pour CQ-4226303
@@ -646,7 +648,7 @@ Voici quelques-uns des points saillants d’AEM 6.4.5.0 :
 * La ponctuation dans le nom provoque des problèmes avec le bouton de publication. NPR-29573 : correctif pour CQ-4269317
 * Impossible de créer une copie de langue de ressource via le panneau de référence. Correctif pour CQ-4269535
 
-**Processus**
+**Workflow**
 
 * La mise à niveau de 6.4.2 vers 6.4.4 rompt le champ du sélecteur de calendrier du participant à la boîte de dialogue. NPR-29727 : correctif pour CQ-4270423
 
@@ -720,7 +722,7 @@ Les principaux points forts d&#39;AEM Forms 6.4.5.0 sont les suivants :
 
 **Packs de fonctionnalités inclus**
 
-**Assets**
+**Ressources**
 
 * Activation de la prise en charge du Gestionnaire de sites multiples pour les ressources. For more information, see [Reuse assets using MSM for Assets](/help/assets/reuse-assets-using-msm.md). NPR-26450 : correctif pour CQ-4259922
 
@@ -756,7 +758,7 @@ Voici quelques-uns des points saillants d’AEM 6.4.4.0 :
 * Ajout d’une vérification afin d’ignorer les valeurs vides pour les champs multiples d’entrée de nombre dans les clientlibs du fragment de contenu.
 * Prise en charge de Microsoft Translator Text API v3 activée.
 
-**Assets**
+**Ressources**
 
 * Migration de l’intégration ACP et stock vers AEM 6.4.4.0 NPR-27632
 * Publier ultérieurement un dossier de ressources vide avec des sous-dossiers fait disparaître les sous-dossiers. NPR-27558 : correctif pour CQ-4254701
@@ -918,7 +920,7 @@ Voici quelques-uns des points saillants d’AEM 6.4.4.0 :
 * Sauvegardez les correctifs de scripts intersites (XSS) dans les visionneuses DAM. NPR-28106 : correctif pour CQ-4253215
 * Impossible d&#39;ajouter des pages au projet de traduction par les administrateurs de projet, car le lien permettant d&#39;ajouter de nouvelles pages au projet de traduction n&#39;est pas visible. Correctif pour CQ-4266334
 
-**Processus**
+**Workflow**
 
 * Lorsque nous ouvrons la boîte de dialogue complète de la tâche dans la notification de flux de travail qui comporte un champ Balise , un clic sur une coche lui ajoute une propriété Balise. NPR-28304 : correctif pour CQ-4261321
 * Le bouton Activer/désactiver la sélection d’utilisateurs dans la boîte de dialogue Réaffecter  ne fonctionne pas. NPR-28963 : correctif pour CQ-4264206
@@ -1036,7 +1038,7 @@ Voici quelques-uns des points saillants d’AEM 6.4.3.0 :
 * Amélioration de la gestion des éléments d’espace réservé ( de carte et  de ) lors de la sélection.
 * Ajout de la prise en charge de l’authentification IMS d’Adobe et de la console d’administration pour les services gérés.
 
-**Assets**
+**Ressources**
 
 * Le flux de travaux de mise à jour des actifs de gestion des actifs numériques n’extrait pas les références des fichiers INDD si l’option Découple IDS est activée. NPR-26243; Correctif pour CQ-4250933
 * Le message de réussite ne s’affiche pas lorsque des ressources sont publiées avec l’éditeur en bloc Ressources. NPR-26252; Correctif pour CQ-4251688.
@@ -1299,7 +1301,7 @@ Voici quelques-uns des points saillants d’AEM 6.4.2.0 :
 * Mise à jour de GCC vers la dernière version.
 * Déplacez SAML vers une nouvelle synchronisation IDP externe.
 
-**Assets**
+**Ressources**
 
 * La génération de sous-ensembles pour le fichier pptx ne contient aucune image ni miniature. NPR-24286 : correctif pour CQ-4217986
 * migrateAllAssets : Ajouter prise en charge du traitement par lot et amélioration de la méthode AEM qui ajoute l’UUID aux anciens actifs. NPR-24861 : correctif pour CQ-4242863 et CQ-4247874
@@ -1446,7 +1448,7 @@ Voici quelques-uns des points saillants d’AEM 6.4.2.0 :
 * Les groupes ne fonctionnent pas dans la ressource du site d&#39;activation. Correctif pour CQ-4252975
 * Les chemins d’apprentissage prérequis ne sont pas conservés dans Activation. Correctif pour CQ-4252948
 
-**Processus**
+**Workflow**
 
 * L’interface utilisateur du lanceur de processus n’affiche pas les 41 configurations de lanceur antérieures et déclenche une erreur JavaScript dans la console. NPR-25028 : correctif pour CQ-4247604
 * La modification d’un flux de travaux hérité sans modifier son lanceur entraîne la création de plusieurs  sur n’importe quel flux de travaux qui contient une étape Activer la page/ressource. NPR-25870 : correctif pour CQ-4250896
@@ -1646,7 +1648,7 @@ Les principaux points forts d&#39;AEM Forms 6.4.2.0 sont les suivants :
 
 **Packs de fonctionnalités inclus**
 
-**Assets**
+**Ressources**
 
 * Ajout de [l’intégration à Adobe Stock](/help/assets/aem-assets-adobe-stock.md) afin que les utilisateurs puissent rechercher, , enregistrer et activer la licence des ressources Adobe Stock directement à partir de l’interface utilisateur d’AEM. Pour plus d’informations, voir [Utilisation de ressources Adobe Stock avec des ressources]AEM (https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html). NPR-15779 : correctif pour CQ-30857
 * Ajout de la prise en charge des métaschémies conditionnelles dynamiques. For more information, see [Cascading Metadata](/help/assets/cascading-metadata.md). NPR-25189 : correctif pour CQ-4237413
@@ -1693,7 +1695,7 @@ AEM 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici les principales caractér
 * Ajout de la prise en charge ARIA de validation par courrier électronique.
 * Prise en charge proactive pour les correctifs de platform.clientlibs.
 
-**Assets**
+**Ressources**
 
 * La valeur de la liste déroulante en cascade s’affiche vide lors de la réouverture de la page des propriétés de la ressource. NPR-23042 : correctif pour CQ-4238761
 * Les liens partagés sur la page mylinkshare et les liens vers la page ne sont pas disponibles pour l’utilisateur non-administrateur NPR-23044 : Correctif pour CQ-4239004
@@ -1782,7 +1784,7 @@ AEM 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici les principales caractér
 * La valeur par défaut ne s’affiche pas sur le bouton de tri dans le composant de forum. NPR-23882 : correctif pour CQ-4243375
 * Problèmes liés aux  de messages des sites communautaires vers des groupes. NPR-23935
 
-**Processus**
+**Workflow**
 
 * Le service Day CQ Workflow Email Notification Service déclenche un e-mail par noeud Mongo pour les notifications WorkflowCompleted et WorkflowAborted. NPR-22515 : correctif pour CQ-4238172
 * L’exécution du processus de mise à jour de la gestion des actifs numériques renvoie une exception NullPointerException. NPR-23010 : correctif pour Granite-21096
@@ -2055,7 +2057,7 @@ Les principaux aspects pour AEM Forms sont les suivants :
 
 **Packs de fonctionnalités inclus**
 
-**Assets**
+**Ressources**
 
 * Ajout de la fonctionnalité Balises intelligentes améliorées. Pour plus d’informations, voir Balises [intelligentes](https://helpx.adobe.com/experience-manager/6-4/assets/using/enhanced-smart-tags.html)améliorées. NPR-21951 : correctif pour CQ-4234883
 * Présentation des références AEM Assets dans InDesign. For more information, see [AEM Assets References in InDesign](/help/assets/managing-linked-subassets.md). NPR-23386
@@ -2139,7 +2141,7 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 To determine the certified platform for running with this release of AEM Sites and Assets, see [Technical Requirements](../sites-deploying/technical-requirements.md).
 
->[!Note]
+>[!NNote]
 >On successful installation of the package, an >informational message appears indicating that the content >package has installed successfully,  such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
 ### Mise à jour des visionneuses de médias dynamiques (5.10.1) {#update-dynamic-media-viewers}
@@ -2218,7 +2220,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées ou dés
 
 | Zone | Fonctionnalité | Remplacement | Version |
 |---|---|---|---|
-| Assets | Gérer l’action de balise pour les sous-ensembles | Aucun remplacement. | AEM 6.4.2.0 |
+| Ressources | Gérer l’action de balise pour les sous-ensembles | Aucun remplacement. | AEM 6.4.2.0 |
 | Intégration des Ressources et d’Adobe Creative Cloud | [Le partage](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/creative-cloud.html) de dossiers AEM vers Creative Cloud a été introduit dans AEM 6.2 afin de permettre aux utilisateurs créatifs d’accéder aux ressources d’AEM. Adobe Asset Link, nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apportera pas d’améliorations supplémentaires à la fonctionnalité de partage de dossiers. Bien que la fonctionnalité soit incluse dans AEM, les clients sont (il est vivement conseillé d’utiliser le remplacement). | Adobe Asset Link ou application de bureau. Pour plus d’informations, reportez-vous à l’article [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
 
 ### Problèmes connus {#known-issues}
