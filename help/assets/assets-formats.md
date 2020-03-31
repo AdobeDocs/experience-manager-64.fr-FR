@@ -3,7 +3,7 @@ title: Formats de fichier pris en charge dans AEM Assets
 description: des formats de fichier et des types MIME pris en charge par les ressources AEM et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 75d2bdc6cda9a608d622e31769abfa36e847e3a3
+source-git-commit: 171186251e675094e716931b64c77e7897c03ca7
 
 ---
 
@@ -20,7 +20,7 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 |:---:|---|
 | ✓ | Pris en charge |
 | * | Prise en charge avec des fonctionnalités de composant additionnel |
-| - | Non applicable |
+| − | Non applicable |
 
 ## Formats d’image pixellisée {#supported-raster-image-formats}
 
@@ -37,12 +37,12 @@ Les formats d’image pixellisée pris en charge pour les fonctionnalités de ge
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **‡** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-**¹** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
+**‡** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
 Les formats d’image pixellisée pris en charge pour les fonctionnalités de média dynamique sont les suivants :
 
@@ -57,12 +57,12 @@ Les formats d’image pixellisée pris en charge pour les fonctionnalités de m�
 | PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD **¹** | ✓ |  |  |  |  |
+| PSD **‡** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
-**¹** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
+**‡** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
 Outre les informations ci-dessus, tenez compte des points suivants :
 
@@ -96,7 +96,7 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 La bibliothèque Adobe Camera Raw permet à AEM Assets d’importer des images brutes. Voir Prise en charge [de](camera-raw.md)Camera Raw.
 
-## Format de {#supported-document-formats}
+## Formats de document {#supported-document-formats}
 
 Les formats de  pris en charge pour les fonctionnalités de gestion des ressources sont les suivants :
 
@@ -156,16 +156,16 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
 | Format | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniature | Transcodage FFMPEG |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | * |
-| MIDI | ✓ | ✓ |  | - | * |
-| 3GP | ✓ | ✓ |  | - | * |
-| MP3 | ✓ | ✓ | ✓ | - | * |
-| MPG | ✓ | ✓ |  | - | * |
-| OGA | ✓ | ✓ |  | - | * |
-| OGG | ✓ | ✓ |  | - | * |
-| RA | ✓ | ✓ |  | - | * |
-| WAV | ✓ | ✓ |  | - | * |
-| WMA | ✓ | ✓ |  | - | * |
+| AAC | ✓ | ✓ |  | − | * |
+| MIDI | ✓ | ✓ |  | − | * |
+| 3GP | ✓ | ✓ |  | − | * |
+| MP3 | ✓ | ✓ | ✓ | − | * |
+| MPG | ✓ | ✓ |  | − | * |
+| OGA | ✓ | ✓ |  | − | * |
+| OGG | ✓ | ✓ |  | − | * |
+| RA | ✓ | ✓ |  | − | * |
+| WAV | ✓ | ✓ |  | − | * |
+| WMA | ✓ | ✓ |  | − | * |
 | DVI | ✓ | ✓ |  | * | * |
 | FLV | ✓ | ✓ |  | * | * |
 | M4V | ✓ | ✓ |  | * | * |
@@ -200,30 +200,30 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
 Les formats d’archives pris en charge et l’applicabilité des flux de travail DAM courants sont traités dans le tableau suivant.
 
-| Format | Stockage | Création de versions | Processus | Publication | Contrôle d’accès | Livraison Dynamic Media |
+| Format | Stockage | Création de versions | Workflow | Publication | Contrôle d’accès | Livraison Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| ZIP **²** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ZIP **†** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**²** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle. `Deflate64`Les archives ZIP créées à l’aide de l’algorithme sont prises en charge de manière limitée dans AEM. Les opérations d’archivage et de désarchivage ne sont pas prises en charge. Cependant, les opérations comme le chargement, la consultation et le téléchargement sont prises en charge.
+**†** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle. `Deflate64`Les archives ZIP créées à l’aide de l’algorithme sont prises en charge de manière limitée dans AEM. Les opérations d’archivage et de désarchivage ne sont pas prises en charge. Cependant, les opérations comme le chargement, la consultation et le téléchargement sont prises en charge.
 
 ## Autres formats pris en charge {#other-supported-formats}
 
 Le tableau ci-dessous décrit l’applicabilité des processus de gestion des actifs numériques courants pour d’autres formats de fichier.
 
-| Format | Stockage | Création de versions | Processus | Publication | Contrôle d’accès | Livraison Dynamic Media |
+| Format | Stockage | Création de versions | Workflow | Publication | Contrôle d’accès | Livraison Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **³** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (lorsque configuré avec son propre domaine de diffusion) |  |  |  |  |  | ✓ |
 
-**³** Les autres formats sont pris en charge dans DAM pour  la , le contrôle de version, l’ACL, le flux de travail, la publication et la gestion des métadonnées.
+**#** Les autres formats sont pris en charge dans DAM pour  la , le contrôle de version, l’ACL, le flux de travail, la publication et la gestion des métadonnées.
 
 ## Types MIME pris en charge {#supported-mime-types}
 
