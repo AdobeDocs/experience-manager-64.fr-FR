@@ -10,21 +10,21 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 1ce49a86e954f48a7cd213558da93861794cfd33
+source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
 
 ---
 
 
 # Fonctionnalités obsolètes et supprimées {#deprecated-and-removed-features}
 
-Adobe évalue constamment les fonctionnalités du produit afin de réinventer ou de remplacer au fil du temps des fonctionnalités plus anciennes par des solutions de remplacement plus modernes afin d’améliorer la valeur globale du client, toujours en tenant compte de la compatibilité ascendante.
+Adobe étudie constamment les fonctionnalités du produit de façon à les réinventer au fil du temps ou à remplacer les fonctions plus anciennes par des variantes plus modernes, pour améliorer la valeur client globale, le tout en faisant toujours attention à la compatibilité ascendante.
 
 Pour communiquer la suppression/le remplacement imminent de fonctionnalités d’AEM, les règles suivantes s’appliquent :
 
 1. L’annonce de la suppression arrive en premier. Lorsqu’elles sont obsolètes, les fonctionnalités sont toujours disponibles, mais elles ne seront plus développées.
 1. La suppression des fonctionnalités obsolètes se produit au plus tôt dans la version majeure suivante. La date de suppression sera annoncée.
 
-Ce processus donne aux clients au moins un cycle de publication afin d’adapter leur implémentation à une nouvelle version ou produit de remplacement d’une fonctionnalité obsolète, avant que la suppression ne soit effective.
+Ce processus donne aux clients au moins un cycle de version afin d’adapter leur implémentation à une nouvelle version ou produit de remplacement d’une fonctionnalité obsolète, avant que la suppression ne soit effective.
 
 ## Fonctionnalités obsolètes {#deprecated-features}
 
@@ -96,7 +96,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
   </tr>
   <tr>
    <td>Directeur du portail</td> 
-   <td><p>Portal Director est un ensemble de fonctionnalités qui permet l’hébergement de contenu AEM via Portlet sur des serveurs tiers.</p> <p>Adobe n’envisage pas d’apporter d’autres améliorations à la fonctionnalité de Portal Dirtector à l’emplacement indiqué ci-dessous. AEM 6.4 inclut Portal Director et les clients qui effectuent une mise à niveau depuis des versions antérieures peuvent continuer à l’utiliser en l’état. Notez que Portal Direct reste entièrement pris en charge lors de la désapprobation.</p> 
+   <td><p>Portal Director est un ensemble de fonctionnalités qui permet l’hébergement de contenu AEM via Portlet sur des serveurs tiers.</p> <p>Adobe n’envisage pas d’apporter d’autres améliorations à la fonctionnalité de Portal Dirtector sous l’emplacement indiqué ci-dessous. AEM 6.4 inclut Portal Director et les clients qui effectuent une mise à niveau depuis des versions antérieures peuvent continuer à l’utiliser en l’état. Notez que Portal Direct reste entièrement pris en charge lors de la désapprobation.</p> 
     <ul> 
      <li>/libs/portal/Director</li> 
     </ul> </td> 
@@ -113,7 +113,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
    <td> </td> 
   </tr>
   <tr>
-   <td>Assets</td> 
+   <td>Ressources</td> 
    <td><p>Le déchargement des ressources a été abandonné à partir d’AEM 6.4.</p> </td> 
    <td> </td> 
   </tr>
@@ -122,7 +122,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 
 ## Fonctionnalités supprimées {#removed-features}
 
-Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM 6.4. Ces fonctionnalités ont été signalées comme étant obsolètes dans les versions antérieures.
+Cette section les fonctionnalités et fonctionnalités qui ont été supprimées d’AEM 6.4. Les versions antérieures indiquaient que ces fonctionnalités étaient obsolètes.
 
 <table> 
  <tbody>
@@ -132,8 +132,8 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
    <td><strong>Remplacement</strong></td> 
   </tr>
   <tr>
-   <td>Carte d’activités Analytics</td> 
-   <td>Version de Carte d’activités incluse dans AEM.</td> 
+   <td>Carte des  Analytics </td> 
+   <td>Version du  de mappage de  incluse dans AEM.</td> 
    <td>En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.<br><br>Le module externe <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">ActivityMap fourni par Adobe Analytics</a> doit maintenant être utilisé.</td> 
   </tr>
   <tr>
@@ -167,7 +167,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
    <td>Obsolète depuis la version 6.0. Utilisez la nouvelle gestion des tâches qui est combinée avec l’interface utilisateur de workflow.</td> 
   </tr>
   <tr>
-   <td>Processus</td> 
+   <td>Workflow</td> 
    <td>L’interface utilisateur de notification utilisée entre les versions 5.6 et 6.2 <br />(/libs/cq/workflow/content/notifications.html)</td> 
    <td>Boîte de réception de workflow /aem/inbox</td> 
   </tr>
@@ -185,6 +185,41 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
    <td>Forms</td> 
    <td>La prise en charge des images dans des fragments de documents a été supprimée. </td> 
    <td>Les communications interactives permettent d’utiliser des images directement dans les canaux web et d’impression.<br /> </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+   <td> Mise à niveau hors du lieu </td> 
+   <td>La prise en charge de la mise à niveau hors site n'est pas disponible <br/> </td> 
+  </tr>
+  <tr>
+   <td>Forms</td> 
+   <td> Sidegrade pour les migrations TarMK vers DocumentMK </td> 
+   <td> Vous pouvez exporter les données à partir d’un système plus ancien, puis les importer dans un nouveau système de configuration. Pour obtenir des instructions détaillées, reportez-vous à la documentation de mise à niveau d’AEM Forms sur JEE. <br/> </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+ <td>Programme d’installation AEM Forms sur JEE 32 bits non disponible.</td> 
+   <td>Adobe a arrêté d’envoyer le programme d’installation 32 bits d’AEM Forms sur JEE. Vous pouvez continuer à utiliser le programme d’installation 64 bits pour installer AEM Forms sur JEE. </td>  
+  </tr>
+    <tr>
+    <td>Forms</td> 
+    <td>Suppression de la prise en charge de l’utilisation des images DAM dans le composant de fragment .</td> 
+    <td> Vous pouvez utiliser le composant Image et Graphique dans le  d’impression de la communication interactive. Si vous utilisez le composant de  de fragments de adaptatif  dans les formulaires adaptatifs, il cesse de fonctionner après la mise à niveau vers AEM Forms 6.4. </td>  
+  </tr>
+  <tr>
+   <td>Forms</td> 
+   <td> Suppression de la fonction  de adaptatif</td> 
+   <td> Vous pouvez utiliser la fonction de communications interactives pour créer des communications imprimées et basées sur le Web. <br/> </td> 
+  </tr>
+    <tr>
+    <td>Forms</td> 
+    <td>Suppression des  spécifiques d’AEM Forms sur JEE.</td> 
+    <td>Le AEM Forms sur JEE est remplacé par le AEM (/aem/start.html). </td>  
+  </tr>
+   <tr>
+   <td>Forms</td> 
+   <td>Suppression de la prise en charge de Captcha par défaut</td> 
+   <td>Utilisez le service reCAPTCHA de Google.</td> 
   </tr>
   <tr>
    <td>Communities</td> 
