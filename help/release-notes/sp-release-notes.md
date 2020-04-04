@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: a80f5bd7be1de577a46c8aae880d6713e2d50f30
+source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
 
 ---
 
@@ -234,7 +234,7 @@ Si vous utilisez le package `com.day.cq.dam.handler.standard.msoffice` dans votr
 
 * Une exception de point nul est observée lors de l’exécution du processus de retraitement de Scene7 sur un dossier contenant des ressources non-DM (CQ-4279555).
 
-* Le changement de nom des ressources dans AEM ne parvient pas à se synchroniser avec la scène 7, lorsqu’une ressource avec un  de nom existe déjà dans Scene7 (CQ-4276763).
+* Le changement de nom des ressources dans AEM ne parvient pas à se synchroniser avec la scène 7, lorsqu’une ressource avec un nom de  existe déjà dans Scene7 (CQ-4276763).
 
 * Le fichier zip envoyé par courrier électronique pour le téléchargement de fichier ne parvient pas à se décompresser lorsqu’un utilisateur disposant d’autorisations de lecture tente de l’ouvrir (CQ-4277925).
 
@@ -443,7 +443,7 @@ Voici quelques-uns des points saillants d’AEM 6.4.6.0 :
 
 **IU-Consoles**
 
-* Création de scripts intersites (XSS) sur les propriétés de la page Sites sur l’onglet Miniature. NPR-30048 : correctif pour Granite-26200
+* Création de scripts intersites (XSS) sur les propriétés de la page Sites dans l’onglet Miniature. NPR-30048 : correctif pour Granite-26200
 
 **UI-Foundation**
 
@@ -1694,6 +1694,7 @@ AEM 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici les principales caractér
 * Ajout de la prise en charge ARIA pour Print et PrintDialog.
 * Ajout de la prise en charge ARIA de validation par courrier électronique.
 * Prise en charge proactive pour les correctifs de platform.clientlibs.
+* Prévention de l’exécution automatique des scripts lorsqu’il n’y a pas d’entrée dans le dataType explicite.
 
 **Ressources**
 
