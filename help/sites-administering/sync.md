@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: 793305a07cc23e5e551871362e8898ee7bafc0c2
+source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 
 ---
 
@@ -73,7 +73,7 @@ Vous trouverez ci-dessous les étapes nécessaires pour activer la synchronisati
 
 1. Vérifiez que le code le plus récent a été installé :
 
-* [Mise à jour de la plateforme AEM](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
+* [Mise à jour de la plateforme AEM](https://helpx.adobe.com/fr/experience-manager/kb/aem62-available-hotfixes.html)
 * [Mises à jour d’AEM Communities](/help/communities/deploy-communities.md#latest-releases)
 
 ### 1. Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory}
@@ -514,7 +514,7 @@ Si les éléments suivants sont visibles dans le journal :
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-Then verify that the section [2. Créer un utilisateur]autorisé(/content/docs/en/aem/6-1/administer/security/security/sync.md#2). créer un utilisateur autorisé) a été correctement suivi.
+Then verify that the section [2. Create Authorized User](#createauthuser) was properly followed.
 
 Cette section décrit la création d’un utilisateur autorisé, qui existe sur toutes les instances de publication, et son identification dans la configuration OSGi « Fournisseur secret » en mode de création. Par défaut, l’utilisateur est `admin`.
 
