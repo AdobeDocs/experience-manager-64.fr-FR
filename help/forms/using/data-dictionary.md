@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 48ea1c456e6f43fb5b348aa65f2380ee0b72a3f1
 
 ---
 
@@ -36,7 +36,7 @@ En règle générale, les utilisateurs professionnels n’ont pas besoin de conn
 
 ## Condition requise {#prerequisite}
 
-Install the [Compatibility Package](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html) to view the **Data Dictionaries** option on the **Forms** page.
+Install the [Compatibility Package](https://helpx.adobe.com/fr/in/experience-manager/6-4/forms/using/compatibility-package.html) to view the **Data Dictionaries** option on the **Forms** page.
 
 ## Création d’un dictionnaire de données {#createdatadictionary}
 
@@ -50,12 +50,12 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
 1. Tap **Create Data Dictionary**.
 1. Dans l’écran de propriétés, ajoutez ce qui suit :
 
-   * **** Titre : (Facultatif) Entrez le titre du dictionnaire de données. Le titre ne doit pas être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Des lettres et d’autres parties du document sont envoyées avec leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource. Les dictionnaires de données sont référencés avec leurs noms et non pas avec leurs titres.
+   * **Titre :** (Facultatif) Entrez le titre du dictionnaire de données. Le titre ne doit pas être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Des lettres et d’autres parties du document sont envoyées avec leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource. Les dictionnaires de données sont référencés avec leurs noms et non pas avec leurs titres.
    * **Nom** : le nom unique du dictionnaire de données. Dans le champ Nom, vous pouvez entrer uniquement les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre et les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
 
    * **Description**: (Facultatif) Description du dictionnaire de données.
-   * **** Balises : (Facultatif) Pour créer une balise personnalisée, entrez une valeur dans le champ de texte et appuyez sur Entrée. Vous pouvez afficher la balise sous le champ de texte des balises. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont également créées.
-   * **Propriétés**&#x200B;étendues : (Facultatif) Appuyez sur **Ajouter un champ** pour spécifier des attributs de métadonnées pour votre dictionnaire de données. Dans la colonne Nom de la propriété, saisissez un nom de propriété unique. Dans la colonne Valeur, saisissez une valeur à associer à la propriété.
+   * **Balises :** (Facultatif) Pour créer une balise personnalisée, entrez une valeur dans le champ de texte et appuyez sur Entrée. Vous pouvez afficher la balise sous le champ de texte des balises. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont également créées.
+   * **Propriétés**&#x200B;étendues : (Facultatif) Appuyez sur Champ **** Ajouter pour spécifier des attributs de métadonnées pour votre dictionnaire de données. Dans la colonne Nom de la propriété, saisissez un nom de propriété unique. Dans la colonne Valeur, saisissez une valeur à associer à la propriété.
    ![Propriétés du dictionnaire de données spécifiées en allemand](do-not-localize/1_ddproperties.png)
 
 1. (Optional) To upload an XSD schema definition for your data dictionary, under the Data Dictionary Structure pane, tap **Upload XML Schema**. Browse to XSD file, select it, and tap **Open**. Un dictionnaire de données est créé en fonction du schéma XML chargé. Vous devez modifier les noms d’affichage et les descriptions des éléments du dictionnaire de données. Pour ce faire, sélectionnez les nom des éléments en cliquant dessus et modifiez leur description, leur nom d’affichage, ou d’autres détails dans les champs du panneau de droite.
@@ -66,7 +66,7 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
    >
    >Vous pouvez ignorer le chargement du fichier de schéma et créer votre dictionnaire de données à partir de zéro dans l’interface utilisateur. Pour ce faire, ignorez cette étape et poursuivez en effectuant les étapes suivantes.
 
-1. Appuyez sur **Suivant**.
+1. Appuyez sur **Next** (Suivant).
 1. Dans l’écran Ajouter des propriétés, ajoutez des éléments au dictionnaire de données. Vous pouvez également ajouter ou supprimer des éléments et modifier leurs détails si vous avez chargé un schéma pour obtenir une structure de base du dictionnaire de données.
 
    Vous pouvez cliquer sur les trois points du côté droit d’un élément et ajouter un élément à la structure du dictionnaire de données.
@@ -104,7 +104,7 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
    >Une suppression d’un élément composite ou de collection avec des nœuds enfant supprime également les nœuds enfant.
 
 1. (Facultatif) Sélectionnez un élément dans le volet Structure du dictionnaire de données et dans le volet Liste des champs et des variables. Modifiez ou ajoutez n’importe quels attributs requis associés à l’élément.
-1. Appuyez sur **Enregistrer**.
+1. Appuyez sur **Save** (Enregistrer).
 
 ### Créer des copies d’un ou de plusieurs dictionnaires de données {#create-copies-of-one-or-more-data-dictionary}
 
@@ -194,7 +194,7 @@ Au cours de la modification ou de l’affichage d’un dictionnaire de données,
 
    Vous pouvez ajouter ces données de test à l’aide du dictionnaire de données (sélectionnez le dictionnaire de données et appuyez sur Télécharger les données de test et téléchargez ce fichier xml).
 
-   Par la suite, lorsque vous prévisualisez une lettre normalement (et non de manière personnalisée), ces données XML sont utilisées dans la lettre. Vous pouvez également cliquer sur Personnalisé et télécharger ce fichier XML.
+   Par la suite, lorsque vous une lettre normalement (et non personnalisée), ces données XML sont utilisées dans la lettre. Vous pouvez également cliquer sur Personnalisé et télécharger ce fichier XML.
 
 ## Exemples {#samples}
 
@@ -297,12 +297,12 @@ Le tableau suivant récapitule les attributs communs liés à un DDE :
   </tr> 
   <tr> 
    <td>Clé</td> 
-   <td>Booléen  </td> 
+   <td>Booléen</td> 
    <td>Champ de valeur booléenne pour indiquer si un DDE est un élément clé.</td> 
   </tr> 
   <tr> 
    <td>Calculé</td> 
-   <td>Booléen  </td> 
+   <td>Booléen</td> 
    <td>Champ de valeur booléenne pour indiquer si un DDE est calculé. Une valeur de DDE calculée est une fonction d’autres valeurs de DDE. Par défaut, les expressions du langage  (Expression Language) JSP sont prises en charge.</td> 
   </tr> 
   <tr> 
@@ -322,7 +322,7 @@ Le tableau suivant récapitule les attributs communs liés à un DDE :
   </tr> 
   <tr> 
    <td>Requis</td> 
-   <td>Booléen  </td> 
+   <td>Booléen</td> 
    <td>Le drapeau indique que la source des données d’instance correspondant au dictionnaire de données doit contenir la valeur de ce DDE spécifique.</td> 
   </tr> 
   <tr> 
@@ -424,19 +424,15 @@ Lorsque vous souhaitez envoyer la même lettre dans différentes langues à vos 
 1. Tap **OK** in the alert. Correspondence Management télécharge un fichier zip sur votre ordinateur sous le nom DataDictionary-&lt;NomDuNom>.zip.
 1. Le fichier .zip contient un fichier .properties. Ce fichier définit le dictionnaire de données téléchargé. Le contenu du fichier de propriétés est semblable au contenu suivant :
 
-   # Wed 20 mai 16:06:23 BST 2015
-
+   ```
+   #Wed May 20 16:06:23 BST 2015
    DataDictionary.EmployeeDD.description=
-
    DataDictionary.EmployeeDD.displayName=EmployeeDataDictionary
-
    DataDictionaryElement.name.description=
-
    DataDictionaryElement.name.displayName=name
-
    DataDictionaryElement.person.description=
-
-   DataDictionaryElement.personne.displayName=personne
+   DataDictionaryElement.person.displayName=person
+   ```
 
    La structure du fichier de propriétés définit une ligne chacune pour la description et le nom d’affichage pour le dictionnaire de données et chaque élément du dictionnaire de données dans le dictionnaire de données. En outre, le fichier de propriétés définit une ligne pour une valeur d’énumération définie pour chaque élément du dictionnaire de données. Comme avec un dictionnaire de données, le fichier de propriétés correspondant peut avoir plusieurs définitions d’éléments de dictionnaire de données. En outre, le fichier peut contenir des définitions pour un ou plusieurs ensembles de valeur d’énumération.
 
