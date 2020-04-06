@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
 
 ---
 
@@ -21,7 +21,7 @@ La fonction de notation et de badges des communautés AEM permet d’identifier 
 
 Les détails de la configuration de la fonctionnalité sont décrits dans la section
 
-* [Score et badges des communautés](implementing-scoring.md)
+* [Scores et badges des communautés](implementing-scoring.md)
 
 Cette page contient des informations techniques supplémentaires :
 
@@ -73,7 +73,7 @@ Toute modification de ce comportement doit être apportée dans un script person
 
 ## Journal de débogage pour le score et le badge {#debug-log-for-scoring-and-badging}
 
-Pour faciliter le débogage du score et du badge, vous pouvez configurer un fichier journal personnalisé. Le contenu de ce fichier journal peut alors être fourni au service clientèle en cas de problème avec la fonctionnalité.
+Pour faciliter le débogage du score et du badge, il est possible de configurer un fichier journal personnalisé. Le contenu de ce fichier journal peut alors être fourni au service clientèle en cas de problème avec la fonctionnalité.
 
 Pour obtenir des instructions détaillées, consultez [Création d’un fichier](../../help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file)journal personnalisé.
 
@@ -83,7 +83,7 @@ Pour configurer rapidement un fichier journal en ligne :
 
    * http://localhost:4502/system/console/slinglog
 
-1. Sélectionner **[!UICONTROL Ajouter un nouveau journal]**
+1. Sélectionner **[!UICONTROL Ajouter nouvelle journalisation]**
 
    1. Sélectionner `DEBUG` pour le niveau **[!UICONTROL journal]**
    1. Entrez un nom pour le fichier **** journal, par exemple
@@ -116,13 +116,13 @@ Pour afficher les entrées de journal :
 
 ## UGC pour le score et le badge {#ugc-for-scoring-and-badging}
 
-Il est possible d’afficher l’UGC en ce qui concerne la notation et la notation lorsque le SRP choisi est JSRP ou MSRP, mais pas ASRP. (Si vous ne connaissez pas ces termes, consultez Présentation [du fournisseur de ressources de stockage](working-with-srp.md) et de [stockage de contenu de la](srp.md)communauté.)
+Il est possible de de l&#39;UGC en ce qui concerne la notation et la notation lorsque le SRP choisi est soit JSRP, soit MSRP, mais pas ASRP. (Si vous ne connaissez pas ces termes, reportez-vous à la section Présentation [du fournisseur de ressources de  de](working-with-srp.md) la  de la  de la [Communauté](srp.md)et.)
 
 Les descriptions d’accès aux données de score et de badge utilisent JSRP, car l’UGC est facilement accessible à l’aide de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
-**JSRP sur l&#39;auteur**: l’expérimentation dans l’environnement d’auteur entraîne l’affichage de l’UGC uniquement à partir de l’environnement d’auteur.
+**JSRP sur l&#39;auteur**: expérimenter dans l&#39;auteur  le donne un UGC qui n&#39;est visible que de l&#39;auteur  le.
 
-**JSRP sur publication**: de même, si vous effectuez des tests sur l’environnement de publication, il sera nécessaire d’accéder à CRXDE Lite avec des droits d’administrateur sur une instance de publication. Si l’instance de publication s’exécute en mode [de](../../help/sites-administering/production-ready.md) production (mode d’exécution nosamplecontent), il sera nécessaire d’ [activer CRXDE Lite](../../help/sites-administering/enabling-crxde-lite.md).
+**JSRP lors de la publication**: de même, si vous testez sur le  de publication , il sera nécessaire d’accéder à CRXDE Lite avec des droits d’administrateur sur une instance de publication. Si l’instance de publication s’exécute en mode [de](../../help/sites-administering/production-ready.md) production (mode d’exécution nosamplecontent), il sera nécessaire d’ [activer CRXDE Lite](../../help/sites-administering/enabling-crxde-lite.md).
 
 L’emplacement de base de l’UGC sur JSRP est `/content/usergenerated/asi/jcr/`.
 
@@ -133,7 +133,7 @@ Les API suivantes peuvent être utilisées :
 * [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
 * [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
 
-Les derniers Javadocs pour les [versions](deploy-communities.md#LatestReleases) installées sont accessibles aux développeurs à partir du référentiel Adobe. Voir [Utilisation de Maven pour les communautés : Javadocs](maven.md#javadocs).
+Les derniers Javadocs pour les [versions](deploy-communities.md#LatestReleases) installées sont disponibles pour les développeurs à partir du référentiel Adobe. Voir [Utilisation de Maven pour les communautés : Javadocs](maven.md#javadocs).
 
 **L’emplacement et le format de l’UGC dans le référentiel peuvent être modifiés sans avertissement**.
 
@@ -147,16 +147,18 @@ Les captures d’écran des données du référentiel proviennent de la configur
    * Localisation du noeud de la page du forum
 
       * `/content/sites/engage/en/forum/jcr:content`
-   * Ajout de propriétés de notation et de badge
+   * Ajouter des propriétés d’évaluation et de mise en badge
 
-      * scoreRules = [/etc/community/score/rule/commentaires-score,/etc/community/score/règles/forums-score]
-      * badgingRules =[/etc/community/badging/rule/commentaires-score,/etc/community/badging/rule/forums-score]
+      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,
+/etc/community/scoring/rules/forums-scoring]`
+      * `badgingRules =[/etc/community/badging/rules/comments-scoring,
+/etc/community/badging/rules/forums-scoring]`
    * Localisation du noeud du composant de forum
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
          ( `sling:resourceType = social/forum/components/hbs/forum`)
-   * Ajouter une propriété pour afficher les badges
+   * Ajouter propriété d’affichage des badges
 
       * `allowBadges = true`
    * Un utilisateur se connecte, crée un sujet de forum et reçoit un badge de bronze
@@ -171,7 +173,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
    * Localisation du noeud de la page du forum
 
       * `/content/community-components/en/forum/jcr:content`
-   * Ajout de propriétés de notation et de badge
+   * Ajouter des propriétés d’évaluation et de mise en badge
 
       * 
          ```
@@ -189,7 +191,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
       * `/content/community-components/en/forum/jcr:content/content/forum`
 
          ( `sling:resourceType = social/forum/components/hbs/forum`)
-   * Ajouter une propriété pour afficher les badges
+   * Ajouter propriété d’affichage des badges
 
       * `allowBadges = true`
    * Un utilisateur se connecte, crée un sujet de forum et reçoit un badge de bronze
@@ -253,9 +255,9 @@ Il est préférable d’utiliser les [API](#scoring-and-badging-apis) .
 
 * /content/usergenerate/asi/jcr
 
-Suivi du chemin d’accès au profil de l’utilisateur, se terminant par un dossier de badges, tel que
+Suivi du chemin d’accès au  du de l’utilisateur, qui se termine par un dossier de badges, tel que
 
-* /home/users/community/w271OOup2Z4DjnOQrviv/profile/badges
+* /home/users/community/w271OOup2Z4DjnOQrviv//badges
 
 #### Badge décerné {#awarded-badge}
 
@@ -267,7 +269,7 @@ Suivi du chemin d’accès au profil de l’utilisateur, se terminant par un dos
 
 ## Informations supplémentaires {#additional-information}
 
-Pour afficher une liste triée de membres en fonction des points :
+Pour afficher un  trié de membres en fonction des points :
 
 * [Fonction](functions.md#leaderboard-function) du tableau de bord pour l’inclusion dans un site communautaire ou un modèle de groupe.
 * [Composant](enabling-leaderboard.md)de classement, composant incitatif de la fonction de classement, pour la création de pages.
