@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
+source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
 | Version | 6.4.8.0 |
 | Type | Version du Service Pack |
 | Date | 5 mars 2020 |
-| URL de téléchargement | AEM 6.4.8.0 sur [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), [Software Distribution (bêta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| URL de téléchargement | AEM 6.4.8.0 sur [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/AEM-6.4.8.0-Service-Pack), [Software Distribution (bêta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Fonctionnalités présentes dans AEM 6.4.8.0 {#what-s-included-in-aem}
 
@@ -443,7 +443,7 @@ Voici quelques-uns des points saillants d’AEM 6.4.6.0 :
 
 **IU-Consoles**
 
-* Création de scripts intersites (XSS) sur les propriétés de la page Sites dans l’onglet Miniature. NPR-30048 : correctif pour Granite-26200
+* Création de scripts intersites (XSS) sur les propriétés de la page Sites sur l’onglet Miniature. NPR-30048 : correctif pour Granite-26200
 
 **UI-Foundation**
 
@@ -942,7 +942,7 @@ Les principaux points forts d&#39;AEM Forms 6.4.4.0 sont les suivants :
 * Lorsque le formulaire adaptatif Wan est créé avec un modèle vierge, les clients ne peuvent pas envoyer de panneaux enfants au panneau racine du formulaire. NPR-28758 : correctif pour CQ-4264157
 * Lorsque la valeur du composant de champ de date année est 9999, le script de validation échoue. NPR-28580 : correctif pour CQ-4262620
 * Lorsqu’un formulaire adaptatif est créé avec un modèle vide, les clients ne peuvent pas envoyer de panneaux enfants au panneau racine du formulaire. NPR-28758 : correctif pour CQ-4264157
-* Impossible de définir la valeur entre les champs de fragments chargés différés d&#39;un formulaire adaptatif. NPR-27758 : correctif pour CQ-4259703
+* Impossible de définir la valeur entre les champs des fragments chargés différés d&#39;un formulaire adaptatif. NPR-27758 : correctif pour CQ-4259703
 * Le formulaire adaptatif n’utilise pas l’éditeur de texte enrichi, mais charge ses bibliothèques.  NPR-27759 : correctif pour CQ-4259193
 * La redirection vers l’URL ne fonctionne pas pour les formulaires adaptatifs incorporés dans une page de sites AEM. NPR-27620 : correctif pour CQ-4239287
 * Impossible de définir la valeur entre les champs de fragments chargés différés d&#39;un formulaire adaptatif. NPR-28320 : correctif pour CQ-4262345
@@ -1660,7 +1660,7 @@ Les principaux points forts d&#39;AEM Forms 6.4.2.0 sont les suivants :
 * Permet de modifier un fragment de contenu sans autorisation de suppression. Pour plus d’informations, voir [Personnalisation et extension des fragments](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/customizing-content-fragments.html#AssetPermissions)de contenu. NPR-25793 : correctif pour CQ-4248750
 * Ajout de la capacité d’annoter les fragments de contenu. For more information, see [Variations-Authoring Fragments](https://helpx.adobe.com/experience-manager/6-4/assets/using/content-fragments-variations.html#AnnotatingaContentFragment). NPR-25188 : correctif pour CQ-4235336
 * Versioning : Comparaison des fragments de contenu côte à côte. Pour plus d’informations, voir [Gestion des fragments](https://helpx.adobe.com/experience-manager/6-4/assets/using/content-fragments-managing.html#ComparingFragmentVersions)de contenu. NPR-25187 : correctif pour CQ-4237412
-* Améliorations de l’éditeur d’images reportées à AEM 6.4.2.0. Pour plus d’informations, voir Editeur [d’](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/image-editor.html)images. NPR-24467
+* Améliorations de l’éditeur d’images reportées à AEM 6.4.2.0. Pour plus d’informations, voir Editeur [d’](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/image-editor.html)images. NPR-24467
 
 **Unités OSGI et packages de contenu inclus**
 
@@ -1694,7 +1694,7 @@ AEM 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici les principales caractér
 * Ajout de la prise en charge ARIA pour Print et PrintDialog.
 * Ajout de la prise en charge ARIA de validation par courrier électronique.
 * Prise en charge proactive pour les correctifs de platform.clientlibs.
-* Prévention de l’exécution automatique des scripts lorsqu’il n’y a pas d’entrée dans le dataType explicite.
+* Prévention de l’exécution automatique des scripts lorsqu’il n’y a aucune entrée dans le type de données explicite (résout CVE-2015-9251).
 
 **Ressources**
 
@@ -2065,7 +2065,7 @@ Les principaux aspects pour AEM Forms sont les suivants :
 
 **Sites**
 
-* (Création de page) Améliorations de l’éditeur d’images. For more information, see [Image Editor](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/image-editor.html). NPR-24267 : correctif pour CQ-4245502
+* (Création de page) Améliorations de l’éditeur d’images. For more information, see [Image Editor](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/image-editor.html). NPR-24267 : correctif pour CQ-4245502
 
 **bundles OSGI et packages de contenu inclus**
 
@@ -2166,7 +2166,7 @@ qui copiera les nouveaux paramètres prédéfinis de la visionneuse à l’empla
 >AEM 6.4.8.0 inclut une nouvelle version du [package de compatibilité d’AEM Forms](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/AEM-FORMS-6.4.7.0-COMPAT). Si vous utilisez une ancienne version du package de compatibilité d’AEM Forms et que vous mettez à jour vers AEM 6.4.8.0, installez la dernière version du package de compatibilité d’AEM Forms après l’installation du package de Ajouter de formulaires.
 
 1. Vérifiez que vous avez installé le Service Pack AEM.
-1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
+1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html#InstallAEMFormsaddonpackage).
 
 ### Installation du programme d’installation d’AEM Forms JEE {#install-aem-forms-jee-installer}
@@ -2264,7 +2264,7 @@ Liste des packages de contenu inclus dans AEM 6.4.8.0
 
 * [Notes de mise à jour d’AEM 6.4](../release-notes/release-notes.md)
 * [Page de produits AEM ](https://www.adobe.com/solutions/web-experience-management.html)
-* [Documentation d’AEM 6.4](https://helpx.adobe.com/support/experience-manager/6-4.html)
+* [Documentation d’AEM 6.4](https://helpx.adobe.com/fr/support/experience-manager/6-4.html)
 * Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
 ### Sites restreints {#restricted-sites-new}
