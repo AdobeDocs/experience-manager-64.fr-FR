@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
+source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
 
 ---
 
@@ -96,7 +96,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
   </tr>
   <tr>
    <td>Directeur du portail</td> 
-   <td><p>Portal Director est un ensemble de fonctionnalités qui permet l’hébergement de contenu AEM via Portlet sur des serveurs tiers.</p> <p>Adobe n’envisage pas d’apporter d’autres améliorations à la fonctionnalité de Portal Dirtector sous l’emplacement indiqué ci-dessous. AEM 6.4 inclut Portal Director et les clients qui effectuent une mise à niveau depuis des versions antérieures peuvent continuer à l’utiliser en l’état. Notez que Portal Direct reste entièrement pris en charge lors de la désapprobation.</p> 
+   <td><p>Portal Director est un ensemble de fonctionnalités qui permet l’hébergement de contenu AEM via Portlet sur des serveurs tiers.</p> <p>Adobe n’envisage pas d’apporter d’autres améliorations à la fonction Portal Director à l’emplacement indiqué ci-dessous. AEM 6.4 inclut Portal Director et les clients qui effectuent une mise à niveau depuis des versions antérieures peuvent continuer à l’utiliser en l’état. Notez que Portal Direct reste entièrement pris en charge lors de la désapprobation.</p> 
     <ul> 
      <li>/libs/portal/Director</li> 
     </ul> </td> 
@@ -110,7 +110,14 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
   <tr>
    <td>Forms</td> 
    <td><p>La prise en charge du service de passerelle de migration centrale d’Adobe n’est plus fournie, car le produit Adobe Central n’est plus pris en charge.</p> </td> 
-   <td> </td> 
+   <td>Aucun remplacement. </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+   <td><p>Utilisation obsolète de JSONObject dans les  et OperationOptions. Les API suivantes sont obsolètes :
+   <ul><li>setArguments(arguments JSONObject)</li><li>JSONObject getArguments()</li><li>OperationOptions(String operationId, arguments JSONObject</li><li>JSONObject getArguments()</li><li>void setArguments(JSONObject arguments)</li></ul>
+   </p> </td> 
+   <td>Utilisation de l’API IValueMap </td> 
   </tr>
   <tr>
    <td>Ressources</td> 
@@ -209,12 +216,17 @@ Cette section les fonctionnalités et fonctionnalités qui ont été supprimées
   <tr>
    <td>Forms</td> 
    <td> Suppression de la fonction  de adaptatif</td> 
-   <td> Vous pouvez utiliser la fonction de communications interactives pour créer des communications imprimées et basées sur le Web. <br/> </td> 
+   <td> Vous pouvez utiliser la fonction de communications interactives pour créer des communications imprimées et basées sur le Web. Si vous utilisez des  adaptatifs, installez le package de compatibilité pour continuer à utiliser le adaptatif existant<br/> </td> 
   </tr>
     <tr>
     <td>Forms</td> 
     <td>Suppression des  spécifiques d’AEM Forms sur JEE.</td> 
     <td>Le AEM Forms sur JEE est remplacé par le AEM (/aem/start.html). </td>  
+  </tr>
+   <tr>
+   <td>Forms</td> 
+   <td>Suppression de la prise en charge de Captcha par défaut</td> 
+   <td>Utilisez le service reCAPTCHA de Google.</td> 
   </tr>
    <tr>
    <td>Forms</td> 
