@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
+source-git-commit: b46378657b8a173986a669beaa56468886b23266
 
 ---
 
@@ -99,6 +99,8 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Les menus **déroulants** et suite de **de** sont masqués une fois que la **source** de l’est sélectionnée lors de la configuration d’Adobe Analytics dans les services cloud Experience Manager (NPR-31729).
 
 *  propriétés Adobe Campaign ne sont pas nettoyées lorsque la copie linguistique d’un bulletin d’information lié à un  est effectuée, tandis que le nettoyage se produit lorsqu’un bulletin d’information lié à un est copié ou collé (NPR-32540).
+
+* ReportSuitesServlet est vulnérable à SSRF (NPR-32161).
 
 ### Sling {#sling-6480}
 
@@ -945,7 +947,7 @@ Les principaux points forts d&#39;AEM Forms 6.4.4.0 sont les suivants :
 * Impossible de définir la valeur entre les champs des fragments chargés différés d&#39;un formulaire adaptatif. NPR-27758 : correctif pour CQ-4259703
 * Le formulaire adaptatif n’utilise pas l’éditeur de texte enrichi, mais charge ses bibliothèques.  NPR-27759 : correctif pour CQ-4259193
 * La redirection vers l’URL ne fonctionne pas pour les formulaires adaptatifs incorporés dans une page de sites AEM. NPR-27620 : correctif pour CQ-4239287
-* Impossible de définir la valeur entre les champs de fragments chargés différés d&#39;un formulaire adaptatif. NPR-28320 : correctif pour CQ-4262345
+* Impossible de définir la valeur entre les champs des fragments chargés différés d&#39;un formulaire adaptatif. NPR-28320 : correctif pour CQ-4262345
 * Le formulaire adaptatif n’utilise pas l’éditeur de texte enrichi, mais charge ses bibliothèques.  NPR-28001 : correctif pour CQ-4259703, CQ-4259193
 * La signature tactile ne fonctionne pas pour l’application AEM Forms s’exécutant sur Apple iOS 12.1. NPR-28497 : Correctif pour CQ-4261765
 * Action d’envoi à l’aide des problèmes de création Classic de processus des formulaires dans la version 6.4. Correctif pour CQ-4252740
