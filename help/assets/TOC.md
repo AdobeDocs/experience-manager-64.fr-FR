@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Assets User Guide
+user-guide-title: Guide de l’utilisateur d’AEM 6.4 Assets
 translation-type: tm+mt
-source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
+source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 
 ---
 
@@ -17,14 +17,14 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
 + [Améliorations de l’expérience utilisateur](ux-improvements.md)
 + [Meilleures pratiques pour les ressources](best-practices-for-assets.md)
 + Utilisation des ressources AEM {#using}
-   + [Expérience de la page d’accueil AEM Assets](assets-home-page.md)
-   + [Recherche de ressources dans AEM](search-assets.md)
+   + [Expérience  AEM Assets](assets-home-page.md)
+   + [Recherche de ressources dans AEM   ](search-assets.md)
    + [Recherche en texte intégral GQL](gql-search.md)
    + [Ressources multilingues](multilingual-assets.md)
-   + [Utilisation de ressources Adobe Stock dans AEM Assets](aem-assets-adobe-stock.md)
+   + [Utilisation de ressources Adobe Stock dans AEM Assets](aem-assets-adobe-stock.md)
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
    + [Flux d’activité dans la chronologie](activity-stream.md)
-   + [Application de workflows aux ressources](assets-workflow.md)
+   + [Traiter les ressources](assets-workflow.md)
    + [Ajout de zones cliquables](image-maps.md)
    + [Réutilisation de fichiers à l’aide de MSM](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
@@ -69,7 +69,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [Utilisation des sélecteurs](working-with-selectors.md)
 + Etendre les ressources {#extending}
    + [Personnalisation et extension de ressources](extending-assets.md)
-   + [Traitement des fichiers à l’aide des gestionnaires de médias et des processus](media-handlers.md)
+   + [Traitement des fichiers à l’aide des gestionnaires de médias et des  de](media-handlers.md)
    + [Extension de la Recherche des ressources](searchx.md)
    + [Installation et configuration d’ImageMagick pour une utilisation avec AEM Assets](best-practices-for-imagemagick.md)
    + [Intégration de ressources avec le Flux d’activités](extending-activity-stream.md)
@@ -80,25 +80,25 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [Formats pris en charge par Assets](assets-formats.md)
    + [Facettes de recherche](search-facets.md)
    + [Gestion des métadonnées pour les fichiers](metadata.md)
-   + [Écriture XMP différée pour les rendus](xmp-writeback.md)
+   + [Écriture différée XMP sur les rendus](xmp-writeback.md)
    + [Partage des liens des ressources](link-sharing.md)
    + [Rapports de ressources](asset-reports.md)
    + [Balises intelligentes améliorées](enhanced-smart-tags.md)
-   + [Profils de traitement des métadonnées, images et vidéos](processing-profiles.md)
+   + [Profils de traitement des métadonnées, des images et des vidéos](processing-profiles.md)
    + [Métadonnées en cascade](cascading-metadata.md)
    + [Création et configuration des pages de l’éditeur de ressources](assets-finder-editor.md)
    + [Guide de dimensionnement des ressources](assets-sizing-guide.md)
    + [Référence des schémas de métadonnées](meta-ref.md)
    + [Meilleures pratiques pour une traduction efficace des ressources](best-practices-for-translating-assets-efficiently.md)
    + [Guide de réglage des performances des ressources](performance-tuning-guidelines.md)
-   + [Comment modifier ou ajouter des métadonnées](meta-edit.md)
+   + [Modification ou ajout de métadonnées](meta-edit.md)
    + [Guide de migration des ressources](assets-migration-guide.md)
    + [Métadonnées XMP](xmp.md)
-   + [Considérations relatives au réseau de ressources](assets-network-considerations.md)
+   + [Considérations sur le réseau d’Assets](assets-network-considerations.md)
    + [AEM Assets par rapport à AEM MediaLibrary](medialibrary.md)
    + [Utilisation de l’outil de pixellisation PDF](aem-pdf-rasterizer.md)
    + [Configuration des restrictions de transfert de fichier](configuring-asset-upload-restrictions.md)
-   + [Meilleures pratiques d’intégration d’AEM et de Creative Cloud](aem-cc-integration-best-practices.md)
+   + [Bonnes pratiques d’intégration d’AEM et de Creative Cloud](aem-cc-integration-best-practices.md)
    + [Intégration d’AEM Assets au serveur InDesign](indesign.md)
    + [Profils de métadonnées](metadata-profiles.md)
    + [Gestion des droits numériques dans AEM Assets](drm.md)
@@ -110,16 +110,16 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [Détection du type MIME des ressources à l’aide d’Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Bibliothèque de transcodage des images](imaging-transcoding-library.md)
    + [Prise en charge des métadonnées IPTC](iptc-support.md)
-   + [Schémas des métadonnées](metadata-schemas.md)
+   + [Schémas de métadonnées   ](metadata-schemas.md)
    + [Fonction multiclient pour les collections, les fragments de code et les modèles de fragments de code](multi-tenancy.md)
-   + [Application d’un filigrane](watermarking.md)
+   + [Application d’un filigrane  ](watermarking.md)
    + [Importation et exportation de métadonnées en masse](metadata-import-export.md)
    + [Modèles de ressources](asset-templates.md)
    + [Meilleures pratiques de partage de dossiers entre AEM et Creative Cloud](aem-cc-folder-sharing-best-practices.md)
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
    + [Gestion des balises intelligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Configuration des ressources AEM avec le portail de marque](configure-aem-assets-with-brand-portal.md)
+   + [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Publication de ressources sur Brand Portal](brand-portal-publish-assets.md)
    + [Publication de collections sur Brand Portal](brand-portal-publish-collection.md)
    + [Publication de dossiers sur Brand Portal](brand-portal-publish-folder.md)
@@ -140,7 +140,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [Gestion des collections](managing-collections-touch-ui.md)
    + [Archivage et extraction de fichiers dans Ressources](check-out-and-submit-assets.md)
    + [Configuration du balisage de fichier à l’aide de Smart Content Service](config-smart-tagging.md)
-   + [Activation de la détection des doublons](duplicate-detection.md)
+   + [Activation de la détection des](duplicate-detection.md)
    + [Tri optimisé des ressources dans AEM](enhance-sort.md)
    + [Organisation des ressources numériques](organize-assets.md)
    + [Gestion des fichiers vidéo](managing-video-assets.md)
@@ -154,7 +154,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [Application de services cloud de traduction à des dossiers](transition-cloud-services.md)
    + [Utilisation du dispositif de suivi de page et du code intégré sur les pages web](touch-ui-using-page-tracker.md)
    + [Gestion de ressources composites](managing-linked-subassets.md)
-   + [Ressources mises en relation](related-assets.md)
+   + [Ressources liées](related-assets.md)
    + [Informations sur les ressources](touch-ui-asset-insights.md)
    + [Recherche de ressources vidéo](search-video-assets.md)
    + [Partage de dossiers privés](private-folder.md)
