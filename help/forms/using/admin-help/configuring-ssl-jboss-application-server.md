@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: 52a649efbb44a54a05de1a474eb9b923717d151c
+source-git-commit: 479b0192f8a9f1a4f30f712222a20bf20ac73f27
 
 ---
 
