@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
+source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
 
 ---
 
@@ -144,7 +144,7 @@ Cette section les fonctionnalités et fonctionnalités qui ont été supprimées
    <td>En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.<br><br>Le module externe <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">ActivityMap fourni par Adobe Analytics</a> doit maintenant être utilisé.</td> 
   </tr>
   <tr>
-   <td>Composants</td> 
+   <td>Composants-Formulaires</td> 
    <td>Captcha de formulaire <br />(foundation/components/form/captcha)</td> 
    <td>Utilisez le composant ReCaptcha de Google à la place.</td> 
   </tr>
@@ -185,11 +185,6 @@ Cette section les fonctionnalités et fonctionnalités qui ont été supprimées
   </tr>
   <tr>
    <td>Forms</td> 
-   <td>La prise en charge du service AEM Captcha par défaut dans les formulaires adaptatifs a été supprimée. </td> 
-   <td>Utilisez ReCaptcha de Google à la place.</td> 
-  </tr>
-  <tr>
-   <td>Forms</td> 
    <td>La prise en charge des images dans des fragments de documents a été supprimée. </td> 
    <td>Les communications interactives permettent d’utiliser des images directement dans les canaux web et d’impression.<br /> </td> 
   </tr>
@@ -222,11 +217,6 @@ Cette section les fonctionnalités et fonctionnalités qui ont été supprimées
     <td>Forms</td> 
     <td>Suppression des  spécifiques d’AEM Forms sur JEE.</td> 
     <td>Le AEM Forms sur JEE est remplacé par le AEM (/aem/start.html). </td>  
-  </tr>
-   <tr>
-   <td>Forms</td> 
-   <td>Suppression de la prise en charge de Captcha par défaut</td> 
-   <td>Utilisez le service reCAPTCHA de Google.</td> 
   </tr>
    <tr>
    <td>Forms</td> 
