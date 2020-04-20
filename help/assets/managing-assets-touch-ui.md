@@ -4,7 +4,7 @@ description: Découvrez les différentes tâches de gestion et de modification d
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
 
 ---
 
@@ -315,8 +315,6 @@ La fonctionnalité présente certaines limites :
 
 ## Aperçu des ressources {#previewing-assets}
 
-Voir aussi [Aperçu des ressources de média dynamique.](previewing-assets.md)
-
 **Prévisualisation d’une ressource**:
 
 1. Dans l’interface utilisateur Ressources, accédez à l’emplacement de la ressource que vous souhaitez .
@@ -331,6 +329,12 @@ Voir aussi [Aperçu des ressources de média dynamique.](previewing-assets.md)
    Appuyez sur le bouton **[!UICONTROL Réinitialiser]** pour réinitialiser la vue à sa taille d’origine.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
+
+>[!MORELIKETHIS]
+>
+>* [de fichiers](/help/assets/previewing-assets.md)de médias dynamiques.
+>* [Affichage des sous-ressources](managing-linked-subassets.md#viewing-subassets).
+
 
 ## Modification des propriétés {#editing-properties}
 
