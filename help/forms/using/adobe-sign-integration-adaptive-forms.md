@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: abdcde27b33f290a4288b09c39bffb0d4f1918a1
 
 ---
 
@@ -28,9 +28,9 @@ Pour utiliser Adobe Sign avec AEM Forms, configurez Adobe Sign dans les services
 
 Vous avez besoin de ce qui suit pour intégrer Adobe Sign à AEM Forms :
 
-* Un compte de développeur [Adobe Sign actif](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
+* Un compte de développeur [Adobe Sign actif](https://acrobat.adobe.com/fr/fr/why-adobe/developer-form.html).
 * Un serveur AEM Forms [SSL](/help/sites-administering/ssl-by-default.md).
-* Une [application API Adobe Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/create_app.md).
+* Une [application API Adobe Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Informations d’identification (ID client et secret client) de l’application API Adobe Sign.
 
 ## Configurer Adobe Sign avec AEM Forms {#configure-adobe-sign-with-aem-forms}
@@ -82,7 +82,7 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
 
    Appuyez sur **[!UICONTROL Créer]** pour créer la configuration Adobe Sign.
 
-1. Ouvrez la console web AEM. L’URL est `https://[server]:[port]/system/console/configMgr`
+1. Ouvrez la console web AEM. The URL is `https://[server]:[port]/system/console/configMgr`
 1. Ouvrez le **[!UICONTROL service de configuration commun aux formulaires]**.
 1. Dans le champ **[!UICONTROL Autoriser]**, sélectionnez **** Tous les utilisateurs : tous les utilisateurs, anonymes ou connectés, peuvent afficher un aperçu des pièces jointes, vérifier et signer des formulaires, puis cliquez sur **[!UICONTROL Enregistrer]**. L’instance d’auteur est configurée pour utiliser Adobe Sign.
 1. Sur l’instance [Publication](/help/sites-deploying/deploy.md), connectez-vous et ouvrez l’URL suivante :
@@ -103,6 +103,6 @@ Un formulaire adaptatif Adobe Sign est envoyé uniquement après que tous les si
 
    `https://[localhost]:[port]/system/console/configMgr`
 
-1. Recherchez et ouvrez l’option **[!UICONTROL Service de configuration Adobe Sign]**. Spécifiez une [expression cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) dans le champ **[!UICONTROL Expression du planificateur de mise à jour de l’état]** et cliquez sur **[!UICONTROL Enregistrer]**. Par exemple, pour exécuter le service de configuration tous les jours à 00:00, spécifiez `0 0 0 1/1 * ? *` dans le champ Expression **[!UICONTROL du planificateur de mise à jour]** d’état.
+1. Recherchez et ouvrez l’option **[!UICONTROL Service de configuration Adobe Sign]**. Spécifiez une [expression cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) dans le champ **[!UICONTROL Expression du planificateur de mise à jour de l’état]** et cliquez sur **[!UICONTROL Enregistrer]**. Par exemple, pour exécuter le service de configuration tous les jours à 00:00, spécifiez `0 0 0 1/1 * ? *` dans le champ du de mise à jour de l’ **[!UICONTROL état]** .
 
 L’intervalle par défaut pour synchroniser l’état d’Adobe Sign est désormais modifié.
