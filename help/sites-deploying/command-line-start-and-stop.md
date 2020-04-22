@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Le script `start` est disponible dans le répertoire *&lt;cq-installation>/bin*. Des versions sont fournies pour Unix et Windows. Le script démarre l’instance installée dans le répertoire *&lt;cq-installation>*.
 
-Les deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour démarrer et configurer l’instance AEM.
+Ces deux versions prennent en charge un de  variables de  qui peuvent être utilisées pour et régler l’instance AEM.
 
 <table> 
  <tbody> 
@@ -122,4 +122,3 @@ Si vous souhaitez uniquement préconfigurer le référentiel (sans le déplacer)
 * créer `bootstrap.properties` et définir `repository.config`
 
 Vous devez effectuer ces opérations avant de démarrer l’installation actuelle.
-
