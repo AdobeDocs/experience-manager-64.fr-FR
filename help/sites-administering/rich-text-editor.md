@@ -3,7 +3,7 @@ title: Configuration de l’éditeur de texte enrichi
 description: Apprenez à configurer l’éditeur de texte enrichi d’AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
 
 ---
 
@@ -12,9 +12,7 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 L’éditeur de texte enrichi met à la disposition des auteurs de nombreuses fonctionnalités pour modifier leur contenu textuel. Les icônes, les boîtes de dialogue de sélection, la barre d’outils et les menus sont fournis pour une expérience WYSIWYG de la modification de texte.
 
-L’éditeur de texte enrichi peut être configuré pour activer, désactiver et étendre les fonctions disponibles dans les composants de création. Pour savoir comment utiliser les fonctions d’éditeur de texte enrichi pour la création, voir [Utilisation de l’éditeur de texte enrichi pour la création](/help/sites-authoring/rich-text-editor.md).
-
-Le workflow suivant illustre l’ordre dans lequel les tâches de configuration de l’éditeur de texte enrichi doivent être exécutées.
+Pour savoir comment utiliser les fonctions d’éditeur de texte enrichi pour la création, voir [Utilisation de l’éditeur de texte enrichi pour la création](/help/sites-authoring/rich-text-editor.md). L’éditeur de texte enrichi peut être configuré pour activer, désactiver et étendre les fonctions disponibles dans les composants de création. Le flux de travail suivant illustre l’ordre recommandé d’exécution du de configuration RTE dans Experience Manager.
 
 ![Workflow type de configuration de l’éditeur de texte enrichi](assets/rte_workflow_v1.png)
 
@@ -44,45 +42,12 @@ L’IU tactile est l’IU standard d’AEM. Adobe introduced Touch UI with [resp
 
 Les auteurs peuvent créer et modifier du contenu textuel dans AEM en utilisant les différents modes des composants. Les options de la barre d’outils pour la création et la mise en forme du contenu, et l’expérience utilisateur des composants compatibles avec l’éditeur de texte enrichi dans différents modes de modification, varient en fonction des configurations d’éditeur de texte enrichi.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Mode de modification</th> 
-   <th>Zone de modification</th> 
-   <th>Fonctions dont l’activation est recommandée<br /> </th> 
-   <th>IU tactile</th> 
-   <th>IU classique</th> 
-  </tr> 
-  <tr> 
-   <td>En ligne</td> 
-   <td>Modification en ligne pour des modifications rapides et mineures ; mettez en forme sans ouvrir une zone de dialogue</td> 
-   <td>Fonctions minimales d’éditeur de texte enrichi</td> 
-   <td>O</td> 
-   <td>O</td> 
-  </tr> 
-  <tr> 
-   <td>Éditeur de texte enrichi en plein écran</td> 
-   <td>Couvre la page entière<br /> </td> 
-   <td>Toutes les fonctions requises d’éditeur de texte enrichi<br /> </td> 
-   <td>O</td> 
-   <td>N<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Boîte de dialogue</td> 
-   <td>Boîte de dialogue située en haut du contenu de page sans couvrir la page entière</td> 
-   <td>Toutes les fonctions requises d’éditeur de texte enrichi dans l’IU classique ; activez les fonctions judicieusement dans l’IU tactile<br /> </td> 
-   <td>O</td> 
-   <td>O</td> 
-  </tr> 
-  <tr> 
-   <td>Boîte de dialogue plein écran<br /> </td> 
-   <td>Identique au mode plein écran ; contient des champs de la boîte de dialogue à côté de l’éditeur de texte enrichi<br /> </td> 
-   <td>Toutes les fonctions requises d’éditeur de texte enrichi</td> 
-   <td>O</td> 
-   <td>N</td> 
-  </tr> 
- </tbody> 
-</table>
+| Mode de modification | Zone de modification | Fonctions dont l’activation est recommandée | IU tactile | IU classique |
+|--- |--- |--- |--- |--- |
+| En ligne | Modification en ligne pour des modifications rapides et mineures ; mettez en forme sans ouvrir une zone de dialogue | Fonctions minimales d’éditeur de texte enrichi | O | O |
+| Éditeur de texte enrichi en plein écran | Couvre la page entière | Toutes les fonctions requises d’éditeur de texte enrichi | O | N |
+| Boîte de dialogue | Boîte de dialogue située en haut du contenu de page sans couvrir la page entière | Toutes les fonctions requises d’éditeur de texte enrichi dans l’IU classique ; activez les fonctions judicieusement dans l’IU tactile | O | O |
+| Boîte de dialogue plein écran | Identique au mode plein écran ; contient des champs de la boîte de dialogue à côté de l’éditeur de texte enrichi | Toutes les fonctions requises d’éditeur de texte enrichi | O | N |
 
 >[!NOTE]
 >
@@ -139,90 +104,23 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 * Les valeurs admises pour la propriété `features`.
 * Une description de la fonctionnalité fournie par le module externe.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p>ID du module externe<br /><br /> </p> </td> 
-   <td><p>Fonctionnalités<br /><br /> </p> </td> 
-   <td><p>Description<br /> <br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>edit</p> </td> 
-   <td><p>cut<br /> copy<br /> paste-default<br /> paste-plaintext<br /> paste-wordhtml</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">Couper, copier et les trois modes de collage</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin">findreplace</a></p> </td> 
-   <td><p>find<br /> replace</p> </td> 
-   <td><p>Rechercher et remplacer.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin">format</a></p> </td> 
-   <td><p>bold<br /> italic<br /> underline</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">Mise en forme textuelle de base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin">image</a></p> </td> 
-   <td><p>image</p> </td> 
-   <td><p>Définissez certaines propriétés d’image telles que l’alignement et le texte de remplacement. Le déplacement d’images, par glisser-déposer, à partir de l’outil de recherche de contenu est possible (prise en charge de base) sans ce module externe.</p> <p><em>Remarque</em> : Le comportement de création peut varier selon le navigateur. Par exemple, Mozilla Firefox offre des fonctionnalités de redimensionnement, contrairement à Google Chrome.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin">keys</a></p> </td> 
-   <td><p> </p> </td> 
-   <td><p>Pour définir cette valeur, voir <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize" target="_blank">taille de tabulation</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin">justify</a></p> </td> 
-   <td><p>justifyleft<br /> justifycenter<br /> justifyright</p> </td> 
-   <td><p>Alignement de paragraphe.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin">links</a></p> </td> 
-   <td><p>modifylink<br /> unlink<br /> anchor</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles" target="_blank">Liens hypertextes et ancres</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin">lists</a></p> </td> 
-   <td><p>ordered<br /> unordered<br /> indent<br /> outdent</p> </td> 
-   <td><p>This plug-in controls both <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin" target="_blank">indentation and lists</a>; including nested lists.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin">misctools</a></p> </td> 
-   <td><p>specialchars<br /> sourceedit</p> </td> 
-   <td>Miscellaneous tools allow authors to enter <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar" target="_blank">special characters</a> or edit the HTML source. Also, you can add a whole <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar" target="_blank">range of special characters</a> if you want to define your own list.</td> 
-  </tr> 
-  <tr> 
-   <td><p>Paraformat</p> </td> 
-   <td><p>paraformat</p> </td> 
-   <td>Les formats de paragraphe de défaut sont : Paragraphe, En-tête 1, En-tête 2 et En-tête 3 (&lt;p&gt;, &lt;h1&gt;, &lt;h2&gt; et &lt;h3&gt;). Vous pouvez <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats" target="_blank">ajouter davantage de formats de paragraphe</a> ou prolonger la liste.</td> 
-  </tr> 
-  <tr> 
-   <td><p>spellcheck</p> </td> 
-   <td><p>checktext</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict" target="_blank">Vérificateur orthographique sensible à la langue</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>styles</p> </td> 
-   <td><p>styles</p> </td> 
-   <td>Prise en charge du style à l’aide d’une classe CSS. <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="-blank">Ajouter nouveaux styles</a> de texte si vous souhaitez ajouter (ou étendre) votre propre plage de styles à utiliser avec du texte.</td> 
-  </tr> 
-  <tr> 
-   <td><p>subsuperscript</p> </td> 
-   <td><p>subscript<br /> superscript</p> </td> 
-   <td><p>Extensions aux formats de base, ajout de sous-scripts et de super-scripts.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>table</p> </td> 
-   <td><p>table<br /> removetable<br /> insertrow<br /> removerow<br /> insertcolumn<br /> removecolumn<br /> cellprops<br /> mergecells<br /> splitcell<br /> selectrow<br /> selectcolumns</p> </td> 
-   <td>See <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles" target="_blank">configure table styles</a>, if you want to add your own styles for either entire tables or individual cells.</td> 
-  </tr> 
-  <tr> 
-   <td><p>undo</p> </td> 
-   <td><p>undo<br /> redo</p> </td> 
-   <td>History size of <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory" target="_blank">undo and redo</a> operations.</td> 
-  </tr> 
- </tbody> 
-</table>
+| ID du module externe | features | Description |
+|--- |--- |--- |
+| edit | cut copy paste-default paste-plaintext paste-wordhtml | [Couper, copier et les trois modes de collage](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
+| [findreplace](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | find replace | Rechercher et remplacer. |
+| [format](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | bold italic underline | [Mise en forme textuelle de base](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
+| [image](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | image | Prise en charge des images de base (faites glisser le curseur depuis le contenu ou l’outil de recherche de contenu). Selon le navigateur, la prise en charge présente différents comportements pour les auteurs |
+| [keys](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Pour définir cette valeur, voir [taille de tabulation](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
+| [justify](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifyleft justifycenter justifyright | Alignement de paragraphe. |
+| [links](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink unlink anchor | [Liens hypertextes et ancres](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
+| [lists](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | ordered unordered indent outdent | This plug-in controls both [indentation and lists](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); including nested lists. |
+| [misctools](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | Miscellaneous tools allow authors to enter [special characters](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) or edit the HTML source. Also, you can add a whole [range of special characters](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) if you want to define your own list. |
+| Paraformat | paraformat | The default paragraph formats are Paragraph, Heading 1, Heading 2, and Heading 3 (`<p>`, `<h1>`, `<h2>`, and `<h3>`). Vous pouvez [ajouter davantage de formats de paragraphe](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) ou prolonger la liste. |
+| spellcheck | checktext | [Vérificateur orthographique sensible à la langue](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict). |
+| styles | styles | Prise en charge du style à l’aide d’une classe CSS. [Ajouter nouveaux styles](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) de texte si vous souhaitez ajouter (ou étendre) votre propre plage de styles à utiliser avec du texte. |
+| subsuperscript | subscript superscript | Extensions aux formats de base, ajout de sous-scripts et de super-scripts. |
+| table | table removetable insertrow removerow insertcolumn removecolumn cellprops mergecells splitcell selectrow selectcolumns | See [configure table styles](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles), if you want to add your own styles for either entire tables or individual cells. |
+| undo | undo redo | History size of [undo and redo](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory) operations. |
 
 >[!NOTE]
 >
@@ -244,12 +142,8 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 >Do not name the node under `cq:inplaceEditing` as `config`. On `cq:inplaceEditing` node, define the following properties:
 >
 >* **Nom**: `configPath`
-   >
-   >
-* **Type**: `String`
-   >
-   >
-* **Valeur** : chemin du nœud qui contient la configuration proprement dite.
+>* **Type**: `String`
+>* **Valeur** : chemin du nœud qui contient la configuration proprement dite.
 >
 >
 Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte enrichi (RTE). Otherwise, the RTE configurations take effect for only the administrators and not for the users in the group `content-author`.
@@ -273,7 +167,6 @@ Lorsque l’éditeur de texte enrichi est utilisé dans la boîte de dialogue op
 Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features afin d’activer ou de désactiver une ou plusieurs fonctions de chaque module externe.
 
 Pour consulter des configurations détaillées des modules externes de l’éditeur de texte enrichi, voir [Activation et configuration des modules externes de l’éditeur de texte enrichi](/help/sites-administering/configure-rich-text-editor-plug-ins.md).
-
 
 Téléchargez cet exemple de configuration pour comprendre comment configurer l’éditeur de texte enrichi. Dans ce module, toutes les fonctionnalités sont activées.
 
@@ -423,8 +316,8 @@ En particulier, pour connaître les modules externes et les options associées d
 * Le composant [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) contient un champ de formulaire permettant de modifier les informations de texte stylisé (texte enrichi) : Pour connaître tous les paramètres disponibles pour le formulaire de texte enrichi, voir les options de configuration.
 * Le composant RichText fournit un large éventail de fonctionnalités en utilisant les modules externes répertoriés sous [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Pour chaque module externe :
 
-   * voir les fonctions pour plus d’informations sur les fonctionnalités qui peuvent être activées (ou désactivées) ;
-   * voir les options de configuration afin de connaître tous les paramètres disponibles pour la configuration détaillée du module externe approprié.
+   * Voir les Fonctionnalités pour en savoir plus sur les fonctionnalités qui peuvent être activées (ou désactivées).
+   * Voir Options de configuration pour tous les paramètres disponibles pour une configuration détaillée du module externe approprié.
 
 * Vous trouverez également plus d’informations sur les règles HTML pour les liens.
 
@@ -434,9 +327,9 @@ Les options ci-dessus peuvent être utilisées pour étendre et personnaliser vo
 
 La fonctionnalité AEM RTE présente les limites suivantes :
 
-* Les fonctionnalités de l’éditeur de texte enrichi sont prises en charge seulement dans les boîtes de dialogue des composants d’AEM. L’éditeur de texte enrichi n’est pas pris en charge sur les assistants ou les formulaires de base comme [Propriétés de la page](../sites-developing/page-properties-views.md) et [Génération de modèles automatique](../sites-authoring/scaffolding.md) sur l’IU tactile.
+* Les fonctionnalités de l’éditeur de texte enrichi sont prises en charge seulement dans les boîtes de dialogue des composants d’AEM. L’éditeur de texte enrichi n’est pas pris en charge sur les assistants ou les formulaires de base comme [Propriétés de la page](/help/sites-developing/page-properties-views.md) et [Génération de modèles automatique](/help/sites-authoring/scaffolding.md) sur l’IU tactile.
 
-* AEM ne fonctionne pas sur les [dispositifs hybrides](../release-notes/known-issues.md).
+* AEM ne fonctionne pas sur les [dispositifs hybrides](/help/release-notes/known-issues.md).
 
 * Do not name the RTE configuration node `config`. Otherwise, the RTE configuration takes effect for only the administrators and not for the users in the group `content-author`.
 
