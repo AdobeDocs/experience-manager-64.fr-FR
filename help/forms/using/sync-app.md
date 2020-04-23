@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -46,4 +46,3 @@ Tap the Synchronize button ![sync-app](assets/sync-app.png) at the lower-right c
 * Les fonctions syncSubmittedTask() et syncSavedTask() effectuent des opérations sur des tâches individuelles.
 * L’appel de la fonction processOfflineSubmittedSavedTasks() est lancé par le composant de la liste des tâches après que l’utilisateur a sélectionné la synchronisation de l’état hors connexion avec le serveur ou la synchronisation automatique par le thread en arrière-plan.
 
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
