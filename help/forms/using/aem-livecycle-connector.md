@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
@@ -28,7 +28,7 @@ AEM LiveCycle Connector fait partie du [package de module complémentaire AEM Fo
 
 Bien que les propriétés soient explicites, les plus importantes sont les suivantes :
 
-* **URL du serveur** : indique l’URL du serveur LiveCycle. Si vous souhaitez que LiveCycle et AEM communiquent via https, démarrez AEM avec la JVM suivante.
+* **URL du serveur** : indique l’URL du serveur LiveCycle. Si vous souhaitez que LiveCycle et AEM communiquent via https, AEM à la JVM suivante
 
    ```
    argument 
@@ -478,5 +478,3 @@ Les services suivants sont disponibles :
   <version>11.0.0</version>
 </dependency>
 ```
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
