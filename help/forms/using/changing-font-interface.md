@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 487e3966-443a-408e-b5af-899fcba6fca6
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -74,8 +74,6 @@ Par exemple, pour remplacer la police du texte de la barre de navigation supéri
 
 1. Relancez l’espace de travail et effacez le cache du navigateur pour que les modifications soient visibles.
 
-![](assets/change_font_before.png) change_font_before **** Figure : Barre de navigation *supérieure avant la personnalisation des polices*
+![change_font_before](assets/change_font_before.png)**Figure :** Barre de navigation *supérieure avant la personnalisation des polices*
 
-![](assets/change_font_after.png) change_font_after **** Figure : Barre de navigation *supérieure après la personnalisation de la police du premier onglet*
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
+![change_font_after](assets/change_font_after.png)**Figure :** Barre de navigation *supérieure après la personnalisation de la police du premier onglet*
