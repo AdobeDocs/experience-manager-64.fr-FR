@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: ccc59dd5-c0cf-415a-b71a-5bc0cf452ede
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -30,5 +30,3 @@ AEM Forms Designer comprend plusieurs options de texte vocal qui peuvent être 
 ![accessibilité](assets/accessibility.png)
 
 Lorsque plusieurs options (infobulles, texte de lecteur d’écran et légende, par exemple) sont disponibles sur une commande de formulaire, le lecteur d’écran n’utilise qu’une seule de ces propriétés. L’ordre par défaut est le suivant : texte de lecteur d’écran personnalisé, infobulles, légende et nom. Vous pouvez remplacer cet ordre par défaut à l’aide de l’option **Précédence** du lecteur d’écran dans la palette Accessibilité.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
