@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -26,7 +26,7 @@ Tenez compte des cas d’utilisation suivants lorsque vous souhaitez changer l�
 
 Pour mettre à jour l’URL de la documentation en ligne, suivez la [Procédure générique de personnalisation](/help/forms/using/generic-steps-html-workspace-customization.md), puis les étapes suivantes.
 
-1. Copiez le `userinfo.html` fichier de `/libs/ws/js/runtime/templates` vers `/apps/ws/js/runtime/templates`.
+1. Copy the `userinfo.html` file from `/libs/ws/js/runtime/templates` to `/apps/ws/js/runtime/templates`.
 1. Remplacer :
 
    ```
@@ -49,5 +49,3 @@ Pour mettre à jour l’URL de la documentation en ligne, suivez la [Procédure 
 
    1. Ouvrez /apps/ws/js/registry.js pour le modifier.
    1. Search and replace `text!/lc/libs/ws/js/runtime/templates/userinfo.html` with `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
