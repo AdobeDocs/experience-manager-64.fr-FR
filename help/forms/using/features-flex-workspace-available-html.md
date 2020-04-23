@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,4 +27,3 @@ L’espace de travail AEM Forms est le nouvel espace de travail. Les caractéris
 * La définition d’un conteneur d’approbation ou personnalisé pour une tâche d’utilisateur n’est pas respectée dans l’espace de travail AEM Forms.
 * Une option de recherche de modèles est disponible dans l’onglet Suivi mais pas dans l’onglet Tâches.
 
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
