@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: e135fa01-fede-4285-b4dd-2d23acbb4d26
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -30,8 +30,6 @@ L’onglet Aperçu HTML est ajouté au mode de création pour permettre aux conc
 
 ### Signature à main levée {#scribble-signature}
 
-L’objectif clé des formulaires HTML5 est les périphériques tactiles. Par conséquent, une nouvelle commande de signature tactile est ajoutée à AEM Form Designer. Vous pouvez cliquer ou faire glisser le contrôle de signature tactile sur votre modèle de formulaire et le configurer. Il est rendu sous forme de champ de saisie tactile dans le rendu HTML5 et peut être utilisé pour apposer une signature tactile sur les périphériques tactiles. Sur les ordinateurs de bureau, elle peut être utilisée comme un champ de saisie tactile à l’aide de la commande de souris. For more information on how to use this feature, see [XFA Scribble Field](/help/forms/using/scribble-signature.md).
+L’objectif clé des formulaires HTML5 est les périphériques tactiles. Par conséquent, une nouvelle commande de signature tactile est ajoutée à AEM Form Designer. Vous pouvez cliquer ou faire glisser et déposer le contrôle de signature tactile sur votre modèle de formulaire et le configurer. Il est rendu sous forme de champ de saisie tactile dans le rendu HTML5 et peut être utilisé pour apposer une signature tactile sur les périphériques tactiles. Sur les ordinateurs de bureau, elle peut être utilisée comme un champ de saisie tactile à l’aide de la commande de souris. For more information on how to use this feature, see [XFA Scribble Field](/help/forms/using/scribble-signature.md).
 
 ![4](assets/4.png)
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
