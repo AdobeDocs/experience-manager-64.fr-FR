@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -61,7 +61,7 @@ Ce javascript est différent de celui des formulaires PDF décris ci-dessus, mai
 
 >[!NOTE]
 >
->Il n’est pas recommandé de modifier le contenu de la vue NewHTMLTaskForm.
+>Il n’est pas recommandé de modifier le contenu du  NewHTMLTaskForm.
 
 ## Guides et formulaires Flex {#flex-forms-and-guides}
 
@@ -85,7 +85,7 @@ Les applications tierces sont rendues à l’aide de la vue ExtAppTaskForm.
 
 AEM Forms workspace listens on `window.global.postMessage([Message],[Payload])`
 
-[]`SubmitMessage``CancelMessage`Le message`ErrorMessage` peut être une chaîne spécifiée comme||| `actionEnabledMessage`dans le `runtimeMap`. Les applications tierces doivent utiliser cette interface pour avertir l’espace de travail AEM Forms selon les besoins. L’utilisation de cette interface est obligatoire, car l’espace de travail AEM Forms doit savoir que lorsque la tâche est envoyée, afin qu’elle puisse nettoyer la fenêtre de la tâche.
+[Le message] peut être une chaîne spécifiée comme `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`dans le `runtimeMap`. Les applications tierces doivent utiliser cette interface pour avertir l’espace de travail AEM Forms selon les besoins. L’utilisation de cette interface est obligatoire, car l’espace de travail AEM Forms doit savoir que lorsque le est envoyé, il peut nettoyer la fenêtre de  de.
 
 **Communication entre l’espace de travail AEM Forms et l’application tierce**
 
@@ -95,5 +95,3 @@ For example, a Flex application can define `ExternalInterface.addCallback('getMe
 
 Pour plus d’informations sur l’interaction d’applications tierces, notamment Correspondence Management, voir [Intégration de Correspondence Management dans l’espace de travail AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md).
 
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
