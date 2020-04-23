@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -23,7 +23,7 @@ Vous pouvez configurer l’utilitaire de journalisation pour créer des journaux
 
 Effectuez les étapes suivantes pour configurer les journaux côté serveur :
 
-1. Aller à `https://[server]:[port]/system/console/configMgr`. Locate and open the *Apace Sling logging logger configuration* option. Une boîte de dialogue s’affiche:
+1. Accédez à `https://[server]:[port]/system/console/configMgr`. Locate and open the *Apace Sling logging logger configuration* option. Une boîte de dialogue s’affiche:
 
    ![ Boîte de dialogue des options de configuration des journaux de journalisation](assets/logconfig.png)
 
@@ -206,4 +206,3 @@ Pour modifier l’emplacement et le nom du fichier journal :
 
 1. Change the **Logger** to **HTMLFormsPerfLogger** and click **Save**.
 
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
