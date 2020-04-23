@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -72,5 +72,3 @@ Pour générer un code minimisé pour les modifications sémantiques, effectuez 
 >[!NOTE]
 >
 >la minimisation a des effets sur la mise à niveau.
-
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
