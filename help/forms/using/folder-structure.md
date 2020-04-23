@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,7 +27,7 @@ Les actifs de tous les composants sont placés dans la structure de dossiers dé
 
 **models** contient des modèles Backbone.
 
-**views** Contient des vues Backbone.
+**** de contient le Backbone .
 
 **templates** Contient uniquement les modèles HTML pour les composants.
 
@@ -37,4 +37,3 @@ Les actifs de tous les composants sont placés dans la structure de dossiers dé
 
 **util** contient des utilitaires génériques utilisables par plusieurs composants.
 
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
