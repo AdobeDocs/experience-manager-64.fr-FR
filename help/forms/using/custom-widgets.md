@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 Vous pouvez ajouter des widgets personnalisés aux formulaires pour périphériques mobiles. Vous pouvez étendre les widgets jQuery existants ou développer vos propres widgets personnalisés. XFA engine uses various widgets, see [Appearance framework for adaptive and HTML5 forms](/help/forms/using/introduction-widgets.md) for detailed information.
 
-![](assets/custom-widgets.jpg) Exemple de widget **personnalisé par défaut** Figure : *Exemple de widget par défaut et personnalisé*
+![Exemple de widget](assets/custom-widgets.jpg)personnalisé par défaut **Figure :** *Exemple de widget par défaut et personnalisé*
 
 ## Intégration de widgets personnalisés dans des formulaires HTML5 {#integrating-custom-widgets-with-html-forms}
 
@@ -43,7 +43,7 @@ Les formulaires HTML5 fournissent une implémentation de la structure de widgets
   </tr> 
   <tr> 
    <td>getEventMap</td> 
-   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> {<br /> flou : XFA_EXIT_EVENT,<br /> }<br /> Cet exemple montre que le flou est un événement HTML et que XFA_EXIT_EVENT est un événement XFA correspondant. </td> 
+   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> {<br /> flou : XFA_EXIT__,<br /> }<br /> Cet exemple montre que le flou est un  HTML et que XFA_EXIT_ est le XFA correspondant. </td> 
   </tr> 
   <tr> 
    <td>getOptionsMap</td> 
@@ -93,12 +93,10 @@ La configuration du widget est fournie sous la forme d’un objet JSON (ensemble
 ..\
 }*
 
-où &quot;identifier&quot; est un sélecteur CSS jQuery qui représente un champ particulier, un ensemble de champs d’un type particulier ou tous les champs. La liste suivante répertorie la valeur de l’identifiant dans différents cas :
+où &quot;identifier&quot; est un sélecteur CSS jQuery qui représente un champ particulier, un ensemble de champs d’un type particulier ou tous les champs. Le suivant  la valeur de l’identifiant dans différents cas :
 
 | Type d’identificateur | formulaire | Description |
 |---|---|---|
 | Champ particulier avec le nom fieldname | Identificateur : « div.fieldname » | Toutes les zones appelées « fieldname » sont générées à l’aide du widget. |
 | Tous les champs de type &quot;type&quot; (où type est NumericField, DateField, etc.) : | Identificateur : « div.type » | Pour Timefield et DateTimeField, le type est textfield, car ces champs ne sont pas pris en charge. |
 | Tous les champs | Identificateur : &quot;div.field&quot; |  |
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
