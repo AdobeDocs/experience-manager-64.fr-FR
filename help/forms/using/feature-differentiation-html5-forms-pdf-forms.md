@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 273096d0-b0e1-4519-8af6-11b3414cc172
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -81,4 +81,3 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
 
 Suivez les bonnes pratiques pour activer un modèle de formulaire pour les rendus HTML5 et vous assurer que le comportement et l’aspect des formulaires HTML5 et des fichiers PDF XFA sont cohérents. Vous pouvez consulter la liste détaillée des recommandations à la page [Recommandations de conception d’un formulaire HTML5.](/help/forms/using/best-practices-for-html5-forms.md)
 
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
