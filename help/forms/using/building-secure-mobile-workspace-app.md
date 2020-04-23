@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
 translation-type: tm+mt
-source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -33,11 +33,9 @@ Vous devez archiver le projet Xcode pour l’application AEM Forms afin de gén�
 1. Ouvrez une session sur l’ordinateur Mac sur lequel Xcode et le SDK iOS sont installés et configurés.
 1. Ouvrez le projet `AEM Forms.xcodeproj` dans Xcode.
 1. Cliquez sur **[!UICONTROL AEM Forms]**, sous **[!UICONTROL TARGETS]**, sélectionnez **[!UICONTROL AEM Forms]**. Select the **[!UICONTROL Build Settings]** tab, locate the **[!UICONTROL Code Signing Entitlement]** section and in the Entitlements dropdown, select the **[!UICONTROL LC Enterprise]** option.
-1. Trouvez et ouvrez le fichier `LC Enterprise.entitlements` dans Xcode pour le modifier. Sous les droits **XCode, **ajoutez la même paire clé-valeur que celle présente dans votre profil de mise en service.
+1. Trouvez et ouvrez le fichier `LC Enterprise.entitlements` dans Xcode pour le modifier. Sous les droits **XCode, **ajoutez la même paire clé-valeur que dans votre  de mise en service.
 1. Sous l’onglet **[!UICONTROL Paramètres de génération]**, cliquez sur **[!UICONTROL Tous]**, puis sur **[!UICONTROL Combiné]**.
 1. Dans la liste des **[!UICONTROL Paramètres]**, développez **[!UICONTROL Signature de code]**. 
 1. Pour **[!UICONTROL Identité de signature de code]**, sélectionnez la signature appropriée. Vérifiez que la même signature est sélectionnée pour **[!UICONTROL Débogage]**, **[!UICONTROL Version finale]** et **[!UICONTROL N’importe quel SDK iOS]**.
 1. Under **[!UICONTROL PROJECT]**, select **[!UICONTROL AEM Forms]** and ensure that the appropriate signature is selected for **[!UICONTROL Code Signing Identity]**, **[!UICONTROL Debug]**, **[!UICONTROL Release]** and **[!UICONTROL Any iOS SDK]**.
 1. Générer et distribuer une application AEM Forms. Pour obtenir des instructions détaillées sur la génération et la distribution d’une application AEM Forms, consultez [Générer le programme d’installation de l’application AEM Forms](/help/forms/using/setup-xcode-project-build-installer.md#main-pars-text-12).
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
