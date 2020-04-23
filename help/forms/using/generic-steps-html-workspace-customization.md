@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -77,17 +77,16 @@ Voici la procédure générique à suivre pour personnaliser Workspace HTML :
    1. Create a folder named `js`at `/apps/ws`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
    1. Create a folder named `libs`at `/apps/ws/js`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
    1. Create a folder named `jqueryui`at `/apps/ws/js/libs`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
-   1. Copiez `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` vers `/apps/ws/js/libs/jqueryui`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
+   1. Copiez `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` dans `/apps/ws/js/libs/jqueryui`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
 1. Procédez comme suit pour des personnalisations HTML :
 
    1. Sous `/apps/ws/js`, créez un dossier nommé `runtime`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
    1. Sous `/apps/ws/js/runtime`, créez un dossier nommé `templates`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
-   1. Copiez `/libs/ws/js/main.js` vers `/apps/ws/js/main.js`.
+   1. Copiez `/libs/ws/js/main.js` dans `/apps/ws/js/main.js`.
    1. Copy /libs/ws/js/registry.js to `/apps/ws/js/registry.js`.
 
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**, effacez le cache et actualisez l’espace de travail AEM Forms.
 
    Accédez à l’URL `https://[server]:[port]/lc/ws` et connectez-vous avec les informations d’identification d’administrateur/de mot de passe. Le navigateur redirige vers `https://[server]:[port]/lc/apps/ws/index.html`.
 
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
