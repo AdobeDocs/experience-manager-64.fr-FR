@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -43,5 +43,3 @@ Les pièces jointes au niveau du formulaire ne sont pas prises en charge dans le
 
 1. Pour ouvrir un formulaire, appuyez sur celui-ci dans l’écran d’accueil.
 1. Vous pouvez mettre à jour les champs du formulaire, ajouter des pièces jointes, enregistrer en tant que brouillon et soumettre le formulaire.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
