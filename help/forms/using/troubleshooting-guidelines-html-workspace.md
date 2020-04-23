@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: dca22290646025c5e0309162e3cfae857311c9ea
 
 ---
 
@@ -25,7 +25,7 @@ Après l’installation du correctif, ouvrez l’espace de travail AEM Forms. If
 
 Lors de l’installation du package, si vous rencontrez une erreur `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, procédez comme suit :
 
-1. Connectez-vous à CRX DE Lite. L’URL par défaut est `https://[localhost]:[port]/lc/crx/de/index.jsp`
+1. Connectez-vous à CRX DE Lite. The default url is `https://[localhost]:[port]/lc/crx/de/index.jsp`
 1. Supprimez le noeud suivant :
 
    `/home/groups/P/PERM_WORKSPACE_USER`
@@ -155,7 +155,7 @@ Les scripts et les styles peuvent être débogués dans différents navigateurs.
 
 * **Débogage dans IE**: Pour déboguer l’espace de travail AEM Forms dans IE, voir : [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
 
-* **Débogage dans Chrome**: Pour ouvrir le débogueur dans Chrome, utilisez le raccourci : Ctrl+Maj+I.Pour plus d’informations, voir : [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Débogage dans Chrome**: Pour ouvrir le débogueur dans Chrome, utilisez le raccourci : Ctrl+Maj+I. Pour plus d’informations, voir : [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
 * **Débogage dans Firefox** : plusieurs modules complémentaires sont disponibles pour déboguer des scripts et des styles dans Firefox. For example, Firebug is one such debugging utility ([https://getfirebug.com](https://getfirebug.com)).
 
@@ -192,5 +192,3 @@ Les scripts et les styles peuvent être débogués dans différents navigateurs.
 1. Lorsqu’ils sont rendus dans l’espace de travail AEM Forms, les formulaires HTML, avec les propriétés de processus dans leur conception, affichent un bouton d’envoi dans le formulaire.
 
    Lors de la conception de formulaires, lorsque vous utilisez les propriétés de processus, un bouton d’envoi est ajouté dans le formulaire. Lors du rendu au format PDF dans l’espace de travail AEM Forms, le bouton d’envoi n’est pas visible pour l’utilisateur final. Toutefois, en cas de rendu en tant que formulaire HTML dans l’espace de travail AEM Forms, ce bouton est visible pour l’utilisateur final. Cliquer sur ce bouton d’envoi à l’intérieur du formulaire ne lance aucune action. Cliquer sur le bouton d’envoi au bas de l’espace de travail AEM Forms, en dehors du formulaire, termine la tâche.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
