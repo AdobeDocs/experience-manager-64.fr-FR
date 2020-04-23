@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9b78e2b-af7d-49d7-b37f-c96ec732015e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
@@ -24,7 +24,7 @@ This tutorial is a step in the [Create your first Interactive Communication](/he
 Les fragments de document sont des composants réutilisables d’une correspondance utilisés pour composer une communication interactive. Les fragments de document sont composés des types suivants :
 
 * Texte : un actif de texte est un élément de contenu constitué d’un ou de plusieurs paragraphes de texte. Un paragraphe peut être statique ou dynamique.
-* Liste : groupe de fragments de document, y compris du texte, des listes, des conditions et des images.
+*  -  est un groupe de fragments de, y compris du texte, desconditions, des conditions et des images.
 * Condition : les conditions vous permettent de définir le contenu à inclure dans la communication interactive en fonction des données reçues du modèle de données de formulaire.
 
 This tutorial walks you through the steps to create multiple text document fragments based on the anatomy provided in [Plan the Interactive Communication](/help/forms/using/planning-interactive-communications.md) section. À la fin de ce didacticiel, vous serez capable de :
@@ -33,7 +33,7 @@ This tutorial walks you through the steps to create multiple text document fragm
 * Créer des variables
 * Créer et appliquer des règles
 
-![text_document_fragments](assets/text_document_fragments.gif)
+![text___fragments](assets/text_document_fragments.gif)
 
 Voici la liste des fragments de document créés dans ce didacticiel :
 
@@ -52,7 +52,7 @@ Use **FDM_Create_First_IC**, as described in the [Create form data model](/help/
 
 Le fragment de document contenant des informations de facturation comprend les champs suivants :
 
-| Champ | Source de données |
+| Field (Champ) | Source de données |
 |---|---|
 | N° de facture | Interface utilisateur de l’agent |
 | Période de facturation | Interface utilisateur de l’agent |
@@ -61,7 +61,7 @@ Le fragment de document contenant des informations de facturation comprend les c
 
 Exécutez les étapes suivantes pour créer des variables pour les champs avec l’interface utilisateur de l’agent en tant que source de données, créer du texte statique et utiliser des éléments de modèle de données de formulaire dans le fragment de document :
 
-1. Sélectionnez **Formulaires** >**Fragments de document**.
+1. Sélectionnez **[!UICONTROL Formulaires]** >**[!UICONTROL Fragments de document]**.
 
 1. Sélectionnez **Créer** > **Texte**.
 1. Saisissez les informations suivantes :
@@ -69,14 +69,14 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
    1. Saisissez **bill_details_first_ic** comme nom dans le champ **Titre**. Le titre se génère automatiquement dans le champ **Nom**.
    1. Sélectionnez un **modèle de données de formulaire** dans la section **Modèle de données**.
    1. Sélectionnez **FDM_Create_First_IC** comme modèle de données de formulaire et appuyez sur **Sélectionner**.
-   1. Appuyez sur **Suivant**.
+   1. Appuyez sur **Next** (Suivant).
 
 1. Sélectionnez l’onglet **Variables** dans le volet gauche, puis appuyez sur **Créer**.
 1. Dans la section **Créer une variable** :
 
    1. Saisissez **Invoicenumber** comme nom de la variable.
    1. Sélectionnez **Chaîne** comme type.
-   1. Appuyez sur **Créer**.
+   1. Appuyez sur **Create** (Créer). 
    ![variable_create_string](assets/variable_create_string.png)
 
    Répétez les étapes 4 et 5 pour créer les variables suivantes :
@@ -107,7 +107,7 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
 Le fragment de document contenant des informations personnalisées comprend les champs suivants :
 
-| Champ | Source de données |
+| Field (Champ) | Source de données |
 |---|---|
 | Nom du client | Modèle de données de formulaire |
 | Adresse | Modèle de données de formulaire |
@@ -120,21 +120,21 @@ Le fragment de document contenant des informations personnalisées comprend les 
 
 Exécutez les étapes suivantes pour créer des variables pour les champs avec l’interface utilisateur de l’agent en tant que source de données, créer du texte statique et utiliser des éléments de modèle de données de formulaire dans le fragment de document :
 
-1. Sélectionnez **Formulaires** >**Fragments de document**.
+1. Sélectionnez **[!UICONTROL Formulaires]** >**[!UICONTROL Fragments de document]**.
 1. Sélectionnez **Créer** > **Texte**.
 1. Saisissez les informations suivantes :
 
    1. Enter **customer_details_first_ic** as the name in the **Title** field. Le titre se génère automatiquement dans le champ **Nom**.
    1. Sélectionnez un **modèle de données de formulaire** dans la section **Modèle de données**.
    1. Sélectionnez **FDM_Create_First_IC** comme modèle de données de formulaire et appuyez sur **Sélectionner**.
-   1. Appuyez sur **Suivant**.
+   1. Appuyez sur **Next** (Suivant).
 
 1. Sélectionnez l’onglet **Variables** dans le volet gauche, puis appuyez sur **Créer**.
 1. Dans la section **Créer une variable** :
 
    1. Enter **Placesupply** as the name of the variable.
    1. Sélectionnez **Chaîne** comme type.
-   1. Appuyez sur **Créer**.
+   1. Appuyez sur **Create** (Créer). 
    Répétez les étapes 4 et 5 pour créer les variables suivantes :
 
    * Statecode : type de numéro
@@ -166,9 +166,9 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
 ## Étape 3 : Créer le fragment de document texte de récapitulatif de facturation {#step-create-bill-summary-text-document-fragment}
 
-Le fragment de document Résumé de la facture comprend les champs suivants :
+Le fragment de Résumé de facture comprend les champs suivants :
 
-| Champ | Source de données |
+| Field (Champ) | Source de données |
 |---|---|
 | Solde précédent | Interface utilisateur de l’agent |
 | Paiements | Interface utilisateur de l’agent |
@@ -179,21 +179,21 @@ Le fragment de document Résumé de la facture comprend les champs suivants :
 
 Exécutez les étapes suivantes pour créer des variables pour les champs avec l’interface utilisateur de l’agent en tant que source de données, créer du texte statique et utiliser des éléments de modèle de données de formulaire dans le fragment de document :
 
-1. Sélectionnez **Formulaires** >**Fragments de document**.
+1. Sélectionnez **[!UICONTROL Formulaires]** >**[!UICONTROL Fragments de document]**.
 1. Sélectionnez **Créer** > **Texte**.
 1. Saisissez les informations suivantes :
 
    1. Enter **bill_summary_first_ic** as the name in the **Title** field. Le titre se génère automatiquement dans le champ **Nom**.
    1. Sélectionnez un **modèle de données de formulaire** dans la section **Modèle de données**.
    1. Sélectionnez **FDM_Create_First_IC** comme modèle de données de formulaire et appuyez sur **Sélectionner**.
-   1. Appuyez sur **Suivant**.
+   1. Appuyez sur **Next** (Suivant).
 
 1. Sélectionnez l’onglet **Variables** dans le volet gauche, puis appuyez sur **Créer**.
 1. Dans la section **Créer une variable** :
 
    1. Enter **Previousbalance** as the name of the variable.
    1. Select **Number** as type.
-   1. Appuyez sur **Créer**.
+   1. Appuyez sur **Create** (Créer). 
    Répétez les étapes 4 et 5 pour créer les variables suivantes :
 
    * Payments : type de numéro
@@ -226,9 +226,9 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
 ## Étape 4 : Créer le fragment de document texte de récapitulatif des frais {#step-create-summary-of-charges-text-document-fragment}
 
-Le fragment de document Résumé des frais inclut les champs suivants :
+Le fragment Résumé des frais  inclut les champs suivants :
 
-| Champ | Source de données |
+| Field (Champ) | Source de données |
 |---|---|
 | Frais d’appel | Modèle de données de formulaire |
 | Frais de conférence téléphonique | Modèle de données de formulaire |
@@ -242,14 +242,14 @@ Le fragment de document Résumé des frais inclut les champs suivants :
 
 Exécutez les étapes suivantes pour créer du texte statique et utiliser des éléments de modèle de données de formulaire dans le fragment de document :
 
-1. Sélectionnez **Formulaires** >**Fragments de document**.
+1. Sélectionnez **[!UICONTROL Formulaires]** >**[!UICONTROL Fragments de document]**.
 1. Sélectionnez **Créer** > **Texte**.
 1. Saisissez les informations suivantes :
 
    1. Enter **summary_charges_first_ic **as the name in the **Title** field. Le titre se génère automatiquement dans le champ Nom.
    1. Sélectionnez un **modèle de données de formulaire** dans la section **Modèle de données**.
    1. Sélectionnez **FDM_Create_First_IC** comme modèle de données de formulaire et appuyez sur **Sélectionner**.
-   1. Appuyez sur **Suivant**.
+   1. Appuyez sur **Next** (Suivant).
 
 1. Créez du texte statique pour les champs suivants à l’aide du volet de droite :
 
