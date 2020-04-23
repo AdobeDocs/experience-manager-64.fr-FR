@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -73,7 +73,7 @@ To display the `description` property of the process instance in the process ins
 1. Procédez comme suit :
 
    1. Copiez /libs/ws/js/runtime/templates/processinstance.html dans /apps/ws/js/runtime/templates/, s’il n’existe pas. Cliquez sur **Enregistrer tout**.
-   1. Ajoutez la description du processus div avec class = &#39;processDescription&#39; inprocessinstance.html.
+   1. Ajouter description du processus div avec class = &#39;processDescription&#39; inprocessinstance.html.
 
    ```
    <div class="processDescription" title="<%= description%>"><%= description%></div>
@@ -94,5 +94,3 @@ To display the `description` property of the process instance in the process ins
        padding : 2px;
    }
    ```
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
