@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f2bde2e8-da95-48ac-a652-85ead87f2cd3
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -23,7 +23,7 @@ Par exemple, considérons Correspondence Management comme exemple de candidat po
 
 ## Création d’actifs de Correspondence Management {#create-correspondence-management-assets}
 
-Commencez par créer un exemple de modèle Correspondence Management rendu dans l’espace de travail AEM Forms. For more details, see [Create a letter template](/help/forms/using/create-letter.md).
+en créant un exemple de modèle Correspondence Management qui est rendu dans l’espace de travail AEM Forms. For more details, see [Create a letter template](/help/forms/using/create-letter.md).
 
 Accédez au modèle Correspondence Management à son URL pour vérifier si le rendu du modèle Correspondence Management est réussi. L’URL a un modèle semblable à celui de `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
@@ -114,4 +114,3 @@ Procédez comme suit pour créer une tâche pour le rendu et l’envoi d’une l
    >
    >Le bouton d’envoi n’est pas activé tant que toutes les variables requises dans la lettre ne sont renseignées.
 
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
