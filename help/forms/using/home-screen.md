@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e4636b25-20a4-4326-82fb-f22f735e43c0
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -25,7 +25,7 @@ Par défaut, l’écran d’accueil affiche tous les formulaires, y compris les 
 La figure suivante est annotée avec les légendes des principaux composants de l’écran d’accueil.
 ![Ecran](assets/home-screen-1.png)d’accueil[de l’application FormsCliquez pour agrandir](assets/home-screen-1-1.png)
 
-1. **Bouton** Menu : Appuyez sur le bouton **Menu **pour accéder aux tâches, formulaires, boîte d’envoi et paramètres. Si votre application AEM Forms est connectée à un serveur AEM Forms JEE, vous pouvez voir l’option Tâches. L’option de tâches stocke également les brouillons créés à partir des tâches dans un processus. Pour les serveurs AEM Forms OSGi, l’option Tâches est masquée. La boîte d’envoi stocke les formulaires enregistrés et les brouillons avant sa synchronisation avec le serveur. All saved forms and drafts in the Outbox are uploaded to the AEM Forms server when the app is [synchronized with the server](/help/forms/using/sync-app.md). Pour plus d’informations sur les paramètres, voir [Mise à jour des paramètres généraux](/help/forms/using/update-general-settings.md).
+1. **Bouton** Menu : Appuyez sur le bouton **Menu **pour accéder aux , formulaires, boîte d’envoi et paramètres. Si votre application AEM Forms est connectée à un serveur AEM Forms JEE, vous pouvez voir l’option Tâches. L’option de tâches stocke également les brouillons créés à partir des tâches dans un processus. Pour les serveurs AEM Forms OSGi, l’option Tâches est masquée. La boîte d’envoi stocke les formulaires enregistrés et les brouillons avant sa synchronisation avec le serveur. All saved forms and drafts in the Outbox are uploaded to the AEM Forms server when the app is [synchronized with the server](/help/forms/using/sync-app.md). Pour plus d’informations sur les paramètres, voir [Mise à jour des paramètres généraux](/help/forms/using/update-general-settings.md).
 1. **Tâche ou formulaire** : Appuyez sur la tâche ou le formulaire répertorier afin de pouvoir travailler dessus.
 1. **Points de suspension horizontaux** : Indique si les actions sont disponibles pour le formulaire. Tapez sur les points de suspension pour afficher les actions et la description fournie par l’auteur. The **Delete Draft** and **Complete** option is visible when you tap the ellipsis.
 1. **Icône Synchronisation** : appuyez sur l’icône d’actualisation pour synchroniser votre application avec le serveur AEM Forms.
@@ -40,4 +40,3 @@ Toute modification apportée au paramètre d’écran d’accueil de l’applica
 
 Toutefois, la modification apportée à Workspace HTML s’applique à l’ensemble des utilisateurs de l’application AEM Forms connectés au serveur AEM Forms.
 
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
