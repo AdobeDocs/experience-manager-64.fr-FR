@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -43,7 +43,7 @@ Vous pouvez définir les colonnes qui s’affichent dans les résultats de reche
 
 Sur la page Suivi, vous pouvez sélectionner un processus et afficher ses détails. Vous pouvez effectuer une recherche portant sur les processus en fonction de divers paramètres pour afficher les détails de la tâche. Vous pouvez également afficher l’onglet Etat pour les processus qui présentent plusieurs utilisateurs recevant des tâches en parallèle où les outils pour la révision de documents sont activés.
 
-**** État : L’état des tâches d’un processus est affiché dans la colonne &quot;Action sélectionnée&quot; lorsque vous cliquez sur une tâche. Toutefois, l’état du processus n’est pas disponible.
+**État :** L’état du dans un processus s’affiche dans la colonne &quot;Action sélectionnée&quot; lorsque vous cliquez sur un  de. Toutefois, l’état du processus n’est pas disponible.
 
 1. Sélectionnez l’instance du processus dans la liste des résultats de la recherche, pour afficher les détails des tâches qui font partie de l’instance du processus.
 1. Pour afficher plus d’informations sur une tâche, effectuez une ou plusieurs des actions suivantes :
@@ -52,4 +52,3 @@ Sur la page Suivi, vous pouvez sélectionner un processus et afficher ses détai
    * Pour afficher les détails de l’affectation de la tâche, cliquez sur l’onglet Affectation.
    * Pour afficher le formulaire associé, cliquez sur le bouton de formulaire.
 
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
