@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -46,7 +46,7 @@ Pour personnaliser les images utilisées dans les actions d’itinéraire, suive
 
 1. Créez un menu déroulant d’actions de liste de tâches, voir [Création du code de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3). Vous devez utiliser le paquet de développement.
 
-1. Copiez `/libs/ws/js/runtime/templates/task.html` vers `/apps/ws/js/runtime/templates/task.html`.
+1. Copiez `/libs/ws/js/runtime/templates/task.html` dans `/apps/ws/js/runtime/templates/task.html`.
 
 1. If the name of the CSS style is same as the route action name coming from the server, modify the following code in `/apps/ws/js/runtime/templates/task.html`:
 
@@ -116,7 +116,7 @@ To
 
 ## Menu déroulant de l’action de tâche Détails de la tâche {#task-details-task-action-popup}
 
-1. Copiez `/libs/ws/js/runtime/templates/taskdetails.html` vers `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. Copiez `/libs/ws/js/runtime/templates/taskdetails.html` dans `/apps/ws/js/runtime/templates/taskdetails.html`.
 
 1. If the name of the CSS style is same as the route action name coming from the server, modify the following code in `/apps/ws/js/runtime/templates/taskdetails.html`:
 
@@ -172,4 +172,3 @@ To
 1. Remplacez le texte par le texte suivant :\
    `"text!/lc/apps/ws/js/runtime/templates/taskdetails.html"`
 
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
