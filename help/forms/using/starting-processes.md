@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -128,4 +128,3 @@ Vous pouvez ajouter tout processus à votre catégorie Favoris. Lorsque vous dé
 
 Pour marquer un processus en tant que favori, sélectionnez la tâche dans sa catégorie, puis cliquez sur l’étoile au contour creux. L’étoile devient dorée. Pour annuler le marquage d’un processus en tant que favori, cliquez de nouveau sur l’étoile dorée.
 
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
