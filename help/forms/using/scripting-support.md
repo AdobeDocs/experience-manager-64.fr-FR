@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -1213,7 +1213,7 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
    1. Ppmt()
    1. Pv()
    1. Rate()
-   1. Term()
+   1. Terme()
 
 1. **Fonctions logiques**
 
@@ -1351,5 +1351,3 @@ Les événements XFA côté client suivants sont pris en charge :
 >[!NOTE]
 >
 >Les formulaires HTML5 sont rendus côté client (navigateur). Il est recommandé d’utiliser des scripts **validate** et **calculate** côté client au lieu des scripts côté serveur.
-
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
