@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -132,7 +132,7 @@ La structure de l’apparence appelle certaines fonctions du widget qui sont imp
   </tr>
   <tr>
    <td>click:function()</td> 
-   <td>Place l’accent sur le champ et appelle XFA_CLICK_EVENT.</td> 
+   <td>Place l’accent sur le champ et appelle XFA_CLICK_.</td> 
   </tr>
   <tr>
    <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: string </em>representing the error<br /> <em>errorType: string (“warning”/”error”)</em></p> <p><strong>Remarque</strong> : applicable uniquement aux formulaires HTML5.</p> </td> 
@@ -213,7 +213,7 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
   </tr>
   <tr>
    <td><p>addItem:<em> function(itemValues)<br /> itemValues : objet contenant la valeur affichée et d’enregistrement <br /> {sDisplayVal : &lt;displayValue&gt;, sSaveVal : &lt;save Value&gt;}</em></p> </td> 
-   <td>Ajoute un élément à la liste.</td> 
+   <td>Ajoute un élément au .</td> 
   </tr>
   <tr>
    <td>deleteItem<em> : function(nIndex)<br /> nIndex : index de l’élément à supprimer de la liste<br /> </em><br /> <br /> </td> 
@@ -268,4 +268,3 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
 | zero | Texte localisé pour le nombre 0. |
 | clearText | Texte localisé pour le bouton Effacer. |
 
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
