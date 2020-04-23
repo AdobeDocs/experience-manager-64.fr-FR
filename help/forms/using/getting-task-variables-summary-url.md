@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -84,4 +84,3 @@ Dans l’espace de travail AEM Forms, lorsque vous ouvrez une tâche, l’URL de
 
 Il est possible de modifier la mise en page du résumé sans modifier le processus. Le rendu HTML affiche le résumé correctement.
 
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
