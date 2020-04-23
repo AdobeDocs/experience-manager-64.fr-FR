@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -31,7 +31,7 @@ To initiate a process from the AEM Forms app, you need to have a startpoint of t
 1. Pour afficher les points de départ disponibles dans l’application AEM Forms, accédez à l’écran [Accueil](/help/forms/using/home-screen.md).
 1. On the **[!UICONTROL Home]** screen, by default, the **[!UICONTROL All Forms]** list is displayed.
 
-   Le point de départ est associé à un formulaire. Appuyez sur le formulaire associé au point de départ dans la liste pour l’ouvrir.
+   Le point de départ est associé à un formulaire. Appuyez sur le formulaire associé au point de départ dans le  pour l’ouvrir.
 
    Le formulaire associé au point de départ s’ouvre.
 
@@ -46,5 +46,3 @@ Si l’application est hors ligne, le formulaire et ses données sont enregistr�
 Si l’application est en ligne, la tâche est synchronisée avec le serveur AEM Forms et assignée à l’utilisateur spécifié dans le processus.
 
 Pour effectuer la tâche présente dans la liste des tâches, consultez la section [Ouverture d’une tâche](/help/forms/using/open-task.md).
-
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
