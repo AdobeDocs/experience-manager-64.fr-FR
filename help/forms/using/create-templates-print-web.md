@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
@@ -46,9 +46,9 @@ Créez et gérez un modèle pour le canal d’impression de la communication int
 Based on the [use case](/help/forms/using/create-your-first-interactive-communication.md) and [anatomy](/help/forms/using/planning-interactive-communications.md), create the following subforms in the XDP template:
 
 * Informations de facturation : comprend un fragment de document
-* Détails du client : Inclut un fragment de document
-* Résumé du projet de loi : Inclut un fragment de document
-* Résumé : Inclut un fragment de document (sous-formulaire Frais) et un graphique (sous-formulaire Graphiques)
+* Détails du client : Inclut un fragment 
+* Résumé du projet de loi : Inclut un fragment 
+* Résumé : Inclut un fragment  (sous-formulaire Frais) et un graphique (sous-formulaire Graphiques)
 * Appels ciblés : Inclut un tableau (fragment de mise en page)
 * Payer maintenant : Inclut une image
 * Services à valeur ajoutée : Inclut une image
@@ -109,8 +109,8 @@ Exécutez les étapes suivantes pour créer un modèle XDP pour le canal d’imp
 
 Une fois que vous avez créé un modèle XDP à l’aide de Forms Designer, vous devez le télécharger sur le serveur AEM Forms pour qu’il soit disponible lors de la création de la communication interactive.
 
-1. Sélectionnez **Formulaires** > **Formulaires et documents**.
-1. Appuyez sur **Créer**>**Chargement de fichier**.
+1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
+1. Appuyez sur **Create** (Créer) > **File Upload** (Téléchargement de fichier). 
 
    Navigate and select the **create_first_ic_print_template** template (XDP) and tap **Open** to import the XDP template to the AEM Forms server.
 
@@ -152,7 +152,7 @@ Pour créer un fragment de mise en page pour le canal d’impression de la commu
 
    1. Navigate to the location to save the file and specify the name as **table_lf**.
    1. Sélectionnez **.xdp** dans la liste déroulante **Type**.
-   1. Appuyez sur **Enregistrer**.
+   1. Appuyez sur **Save** (Enregistrer).
    Une fois que vous avez créé un modèle XDP pour le fragment de mise en page à l’aide de Forms Designer, vous devez le [télécharger](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) sur le serveur AEM Forms pour qu’il soit disponible lors de la création des fragments de mise en page.
 
 ## Créer un modèle pour le canal web {#create-template-for-web-channel}
@@ -183,9 +183,9 @@ Exécutez les étapes suivantes pour créer un dossier pour les modèles modifia
 Based on the [use case](/help/forms/using/create-your-first-interactive-communication.md) and [anatomy](/help/forms/using/planning-interactive-communications.md), create the following panels in the Web template:
 
 * Informations de facturation : comprend un fragment de document
-* Détails du client : Inclut un fragment de document
-* Résumé du projet de loi : Inclut un fragment de document
-* Résumé des frais : Comprend un fragment de document et un graphique (mise en page à deux colonnes)
+* Détails du client : Inclut un fragment 
+* Résumé du projet de loi : Inclut un fragment 
+* Résumé des frais : Comprend un fragment  et un graphique (mise en page à deux colonnes)
 * Appels ciblés : Inclut un tableau
 * Pay Now: Includes a **Pay Now** button and an image
 * Value Added Services: Includes an image and a **Subscribe** button.
@@ -197,7 +197,7 @@ Toutes les entités telles que des fragments de document, des graphiques, des ta
 Exécutez les étapes suivantes pour créer un modèle pour le canal web dans le dossier **Create_First_IC_templates** :
 
 1. Navigate to the appropriate template folder by selecting **Tools** > **Templates** > **Create_First_IC_templates** folder.
-1. Appuyez sur **Créer**.
+1. Appuyez sur **Create** (Créer). 
 1. On the **Pick a Template Type** configuration wizard, select **Interactive Communication - Web Channel** and tap **Next**.
 1. On the **Template Details** configuration wizard, specify **Create_First_IC_Web_Template** as the template title. Spécifiez une description facultative et appuyez sur **Créer**.
 
