@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 184b5c7f-a704-4b8c-b1ec-f4d6616a1afc
 translation-type: tm+mt
-source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
@@ -68,7 +68,7 @@ L’option **Notes** vous permet d’ajouter des annotations à main levée et d
 1. Dans l’interface utilisateur de Notes qui est lancée, saisissez des annotations à main levée.
 
    ![Interface de saisie tactile](assets/scribble-ui.png)
-   **** Figure : *Griffonnage*
+   **Figure :** *Griffonnage*
 
    Vous pouvez utiliser les options suivantes dans l’interface de saisie tactile :
 
@@ -85,5 +85,3 @@ Les pièces jointes pour les formulaires mobiles synchronisés avec les serveurs
 Les pièces jointes au niveau du formulaire ne sont pas prises en charge pour les formulaires adaptatifs chargés dans l’application d’un serveur AEM Forms OSGi. Pour joindre des images ou des notes de texte, autorisez les pièces jointes au niveau des champs dans le formulaire au moment de sa création. Faites glisser et déposez le composant de pièce jointe du fichier depuis le navigateur des composants sur le champ.
 
 Dans le cas de formulaires adaptatifs, vous pouvez afficher les fichiers joints dans le document d’enregistrement (DoR). Consultez [Générer un document d’enregistrement pour les formulaires adaptatifs non basés sur XFA](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
