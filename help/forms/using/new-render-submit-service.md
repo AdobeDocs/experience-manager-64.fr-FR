@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 58f95138-5439-4540-a8dc-193b4cb42203
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -138,7 +138,7 @@ Voici certaines questions fréquentes sur les profils d’action :
 
 Et, les processus d’envoi équivalents.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Quels profils d’action seront disponibles en standard ?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Quel d&#39;action sera disponible en standard ?**
 
 Pour des formulaires XDP:
 
@@ -152,7 +152,7 @@ Rien. Le profil d’action par défaut est choisi automatiquement, et le mode de
 
 L’utilisateur doit sélectionner le bouton radio HTML pour le profil par défaut.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Y aura-t-il un impact de mise à niveau sur la modification du comportement du profil d&#39;action par défaut ?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Y aura-t-il un impact de mise à niveau sur la modification du comportement du d&#39;actions par défaut  comportement ?**
 
 Oui ; étant donné que le rendu précédent et les services d’envoi associés au profil d’action par défaut étaient différents, ils sont gérés en tant que personnalisations des formulaires existants. On clicking **[!UICONTROL Restore Defaults]**, the default render and submit services are set instead.
 
@@ -160,5 +160,3 @@ Si vous aviez modifié les services liés aux formulaires PDF de rendu/d’envoi
 
 #Que doit faire le concepteur de processus pour que le formulaire puisse être rendu au format HTML sur un périphérique et au format PDF sur un bureau ?\
 #Que doit faire le concepteur de processus pour que le formulaire puisse être rendu au format HTML sur un périphérique et au format PDF sur un bureau ?
-
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
