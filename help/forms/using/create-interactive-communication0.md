@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 39262cb1-1447-469a-9c01-886f66eeec74
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
@@ -37,24 +37,24 @@ Ce didacticiel vous guide pas à pas dans la création de communications interac
 
 Voici la liste des ressources qui ont déjà été créées dans ce didacticiel et qui sont nécessaires à la création de la communication interactive pour le canal d’impression :
 
-**** Imprimer le modèle : [create_first_ic_print_template](/help/forms/using/create-templates-print-web.md)
+**Imprimer le modèle :** [create_first_ic_print_template](/help/forms/using/create-templates-print-web.md)
 
-**** Modèle de données de formulaire : [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
+**Modèle de données de formulaire :** [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
 
-**** Fragments de document : [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](/help/forms/using/create-document-fragments.md)
+**Fragments  :** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](/help/forms/using/create-document-fragments.md)
 
 **Fragments de mise en page :** [table_lf](/help/forms/using/create-templates-print-web.md)
 
 **Images :** PayNow et ValueAddedServices
 
-1. Connectez-vous à l’instance d’auteur AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
+1. Connectez-vous à l’instance d’auteur AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
 1. Spécifiez **create_first_ic** dans les champs **Titre** et **Nom**. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
 1. In the **Channels** wizard:
 
    1. Specify **create_first_ic_print_template** as the Print template and tap **Select**. Ensure that the **Use Print as Master for Web Channel** checkbox is not selected.
    1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
-   1. Appuyez sur **Créer**.
+   1. Appuyez sur **Create** (Créer). 
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
 1. Appuyez sur **Modifier** pour ouvrir la communication interactive dans le volet droit.
@@ -99,22 +99,22 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
 
 Voici la liste des ressources qui ont déjà été créées dans ce didacticiel et qui sont nécessaires à la création de la communication interactive pour le canal web :
 
-**** Modèle Web : [Create_First_IC_Web_Template](/help/forms/using/create-templates-print-web.md)
+**Modèle Web :** [Create_First_IC_Web_Template](/help/forms/using/create-templates-print-web.md)
 
-**** Modèle de données de formulaire : [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
+**Modèle de données de formulaire :** [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
 
-**** Fragments de document : [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](/help/forms/using/create-document-fragments.md)
+**Fragments  :** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](/help/forms/using/create-document-fragments.md)
 
-**** Images : PayNowWeb et ValueAddedServicesWeb
+**Images :** PayNowWeb et ValueAddedServicesWeb
 
-1. Connectez-vous à l’instance d’auteur AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
+1. Connectez-vous à l’instance d’auteur AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
 1. Spécifiez **create_first_ic** dans les champs **Titre** et **Nom**. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
 1. In the **Channels** wizard:
 
    1. Specify **create_first_ic_print_template** as the Print template and tap **Select**. Ensure that the **Use Print as Master for Web Channel** checkbox is not selected.
    1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
-   1. Appuyez sur **Créer**.
+   1. Appuyez sur **Create** (Créer). 
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
 1. Appuyez sur **Modifier** pour ouvrir la communication interactive dans le volet droit.
@@ -186,7 +186,7 @@ Vous pouvez également créer une communication interactive en activant la synch
 
 Exécutez les étapes suivantes pour dériver le contenu du canal web à l’aide du canal d’impression :
 
-1. Connectez-vous à l’instance d’auteur AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
+1. Connectez-vous à l’instance d’auteur AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
 1. Spécifiez **create_first_ic** dans les champs **Titre** et **Nom**. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
 1. In the **Channels** wizard:
@@ -194,7 +194,7 @@ Exécutez les étapes suivantes pour dériver le contenu du canal web à l’aid
    1. Specify **create_first_ic_print_template** as the Print template and tap **Select**.
    1. Select the **Use Print as Master for Web Channel** checkbox.
    1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
-   1. Appuyez sur **Créer**.
+   1. Appuyez sur **Create** (Créer). 
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
 1. Appuyez sur **Modifier** pour ouvrir la communication interactive dans le volet droit.
@@ -206,7 +206,7 @@ Exécutez les étapes suivantes pour dériver le contenu du canal web à l’aid
 
    Hover over the relevant target area in the web channel and select ![cancelinheritance](assets/cancelinheritance.png) (Cancel Inheritance) and then in the **Cancel Inheritance** dialog, tap **Yes**.
 
-   ![cancel_legacy_web_channel](assets/cancel_inheritance_web_channel.png)
+   ![cancel_legacy_web_](assets/cancel_inheritance_web_channel.png)
 
    Si vous avez annulé l’héritage d’un composant, vous pouvez le réactiver. To re-enable inheritance, hover over the boundary of the relevant target area, which includes the component, and tap ![reenableinheritance](assets/reenableinheritance.png).
 
