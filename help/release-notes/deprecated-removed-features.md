@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
+source-git-commit: 45849a1a22f99d149369cd91781de4de0260c8e3
 
 ---
 
@@ -21,14 +21,14 @@ Adobe étudie constamment les fonctionnalités du produit de façon à les réin
 
 Pour communiquer la suppression/le remplacement imminent de fonctionnalités d’AEM, les règles suivantes s’appliquent :
 
-1. L’annonce de la suppression arrive en premier. Lorsqu’elles sont obsolètes, les fonctionnalités sont toujours disponibles, mais elles ne seront plus développées.
+1. L’annonce de la suppression arrive en premier. Bien qu&#39;abandonnées, les capacités sont toujours disponibles, mais elles ne seront pas améliorées.
 1. La suppression des fonctionnalités obsolètes se produit au plus tôt dans la version majeure suivante. La date de suppression sera annoncée.
 
 Ce processus donne aux clients au moins un cycle de version afin d’adapter leur implémentation à une nouvelle version ou produit de remplacement d’une fonctionnalité obsolète, avant que la suppression ne soit effective.
 
 ## Fonctionnalités obsolètes {#deprecated-features}
 
-Cette section répertorie les fonctionnalités qui ont été signalées comme obsolètes dans AEM 6.4. En général, les fonctionnalités qui seront supprimées dans une prochaine version sont d’abord annoncées comme obsolètes, et une alternative est fournie.
+Le tableau ci-dessous  les fonctionnalités et fonctionnalités qui ont été marquées comme obsolètes avec AEM 6.4. En règle générale, les fonctionnalités qui doivent être supprimées dans une version ultérieure sont définies comme obsolètes en premier, avec une alternative fournie.
 
 Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionnalité dans leur déploiement actuel et de prévoir la modification de leur mise en œuvre de façon à utiliser l’alternative proposée.
 
@@ -120,6 +120,11 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
    <td>Utilisation de l’API IValueMap </td> 
   </tr>
   <tr>
+   <td>Forms</td> 
+   <td><p>Service Central Migration Bridge obsolète</p> </td> 
+   <td> Aucun remplacement. </td> 
+  </tr>
+  <tr>
    <td>Ressources</td> 
    <td><p>Le déchargement des ressources a été abandonné à partir d’AEM 6.4.</p> </td> 
    <td> </td> 
@@ -129,7 +134,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 
 ## Fonctionnalités supprimées {#removed-features}
 
-Cette section les fonctionnalités et fonctionnalités qui ont été supprimées d’AEM 6.4. Les versions antérieures indiquaient que ces fonctionnalités étaient obsolètes.
+Le tableau ci-dessous  les fonctionnalités et fonctionnalités qui ont été supprimées d’AEM 6.4. Les versions précédentes présentaient ces fonctionnalités comme étant obsolètes.
 
 <table> 
  <tbody>
@@ -215,13 +220,18 @@ Cette section les fonctionnalités et fonctionnalités qui ont été supprimées
   </tr>
     <tr>
     <td>Forms</td> 
-    <td>Suppression des  spécifiques d’AEM Forms sur JEE.</td> 
+    <td>Suppression des  spécifiques à AEM Forms sur JEE.</td> 
     <td>Le AEM Forms sur JEE est remplacé par le AEM (/aem/start.html). </td>  
   </tr>
    <tr>
    <td>Forms</td> 
    <td>Suppression de la prise en charge de Captcha par défaut</td> 
    <td>Utilisez le service reCAPTCHA de Google.</td> 
+  </tr>
+  <tr>
+   <td>Forms</td> 
+   <td>Suppression de la prise en charge des champs Flash dans AEM Designer. AEM Designer ne permet pas de modifier les champs Flash utilisés dans un formulaire.</td> 
+   <td>Vous pouvez utiliser AEM Designer publié pour une version précédente pour modifier de tels formulaires.</td> 
   </tr>
   <tr>
    <td>Communities</td> 
@@ -233,7 +243,8 @@ Cette section les fonctionnalités et fonctionnalités qui ont été supprimées
 
 ## Annonce préalable à la prochaine version {#pre-announcement-for-next-release}
 
-Cette section vise à annoncer les modifications à venir dans la prochaine version, qui ne sont pas obsolètes, mais qui auront une incidence sur les clients. Elles sont fournies à des fins de planification.
+
+Le tableau ci-dessous présente un  de modifications pour les versions ultérieures, qui ne sont pas obsolètes, mais peuvent avoir un impact sur les clients. Elles sont fournies à des fins de planification.
 
 <table> 
  <tbody>
