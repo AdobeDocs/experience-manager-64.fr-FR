@@ -3,7 +3,7 @@ title: Guide de réglage des performances des ressources
 description: Traite principalement de la configuration d’AEM, ainsi que des modifications du matériel, des logiciels et des composants réseau pour supprimer les goulets d’étranglement et optimiser la performance d’AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
+source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
 
 ---
 
@@ -71,7 +71,7 @@ Lors du chargement d’un grand nombre de ressources vers Adobe Experience Man
 
 Configurez la taille du cache mis en mémoire tampon dans la console web OSGi. À l’emplacement `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`, définissez la propriété `cq.dam.image.cache.max.memory` en octets. Par exemple, 1073741824 représente 1 Go (1 024 x 1 024 x 1 024 = 1 Go).
 
-À compter d’AEM 6.1 SP1, si vous utilisez un nœud `sling:osgiConfig` pour configurer cette propriété, veillez à définir le type de données sur Long. Pour plus de détails, voir [CQBufferedImageCache utilise le tas pendant le téléchargement des ressources](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
+À compter d’AEM 6.1 SP1, si vous utilisez un nœud `sling:osgiConfig` pour configurer cette propriété, veillez à définir le type de données sur Long. Pour plus de détails, voir [CQBufferedImageCache utilise le tas pendant le téléchargement des ressources](https://helpx.adobe.com/fr/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
 
 ### Entrepôts de données partagés    {#shared-data-stores}
 
@@ -209,11 +209,9 @@ En outre, définissez le chemin du dossier temporaire d’ImageMagick dans le fi
 
 >[!NOTE]
 >
->Les fichiers policy.xml et configure.xml de ImageMagick se trouvent sous /usr/lib64/ImageMagick-&amp;ast;/config/ au lieu de /etc/ImageMagick/. Reportez-vous à la [documentation ImageMagick](https://www.imagemagick.org/script/resources.php) pour plus d’informations sur les emplacements des fichiers de configuration.
+>The ImageMagick `policy.xml` and `configure.xml` files may be found under `/usr/lib64/ImageMagick-*/config/` instead of `/etc/ImageMagick/`. See [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for details on the configuration file locations.
 
->[!NOTE]
->
->Si vous utilisez AEM sur Adobe Managed Services (AMS), contactez le support technique d’Adobe si vous envisagez de traiter un grand nombre de fichiers PSD ou PSB volumineux.
+Si vous utilisez AEM sur Adobe Managed Services (AMS), contactez le service à la clientèle d’Adobe si vous prévoyez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Experience Manager peut ne pas traiter les fichiers PSB haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 <!-- 
 
@@ -279,7 +277,7 @@ L’écriture différée XMP met à jour les ressources d’origine chaque fois 
 * Une version de la ressource est créée
 * Ressource de mise à jour de gestion des actifs numériques est exécuté par rapport à la ressource
 
-Les résultats répertoriés consomment une grande quantité de ressources. Par conséquent, Adobe recommande la [désactivation de l’écriture différée XMP](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html), si cela n’est pas obligatoire.
+Les résultats répertoriés consomment une grande quantité de ressources. Par conséquent, Adobe recommande la [désactivation de l’écriture différée XMP](https://helpx.adobe.com/fr/experience-manager/kb/disable-xmp-writeback.html), si cela n’est pas obligatoire.
 
 L’importation d’une grande quantité de métadonnées peut entraîner une activité d’écriture différée XMP gourmande en ressources si l’indicateur d’exécution de workflow est vérifié. Planifiez une importation de ce type quand le serveur est peu utilisé afin que les performances d’autres utilisateurs ne soient pas affectées.
 
@@ -299,7 +297,7 @@ Lors de la réplication des ressources vers un grand nombre d’instances de pub
 
 ## Recherche des index    {#search-indexes}
 
-Veillez à mettre en œuvre les derniers Service Packs et les correctifs liés aux performances étant donné qu’ils contiennent souvent des mises à jour des index du système. Voir [Conseils de réglage des performances | 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) pour connaître certaines optimisations d’index qui peuvent être appliquées en fonction de votre version d’AEM.
+Veillez à mettre en œuvre les derniers Service Packs et les correctifs liés aux performances étant donné qu’ils contiennent souvent des mises à jour des index du système. Voir [Conseils de réglage des performances | 6.x](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html) pour connaître certaines optimisations d’index qui peuvent être appliquées en fonction de votre version d’AEM.
 
 Créez des index personnalisés pour les demandes que vous exécutez régulièrement. Pour plus d’informations, consultez la [méthodologie pour l’analyse des requêtes lentes](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) et la [création d’index personnalisés](/help/sites-deploying/queries-and-indexing.md). Pour des informations complémentaires au sujet des meilleures pratiques de requête et d’index, consultez les [Meilleures pratiques pour les requêtes et l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
