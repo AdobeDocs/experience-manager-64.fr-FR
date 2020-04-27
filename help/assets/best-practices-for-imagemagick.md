@@ -3,7 +3,7 @@ title: Installation et configuration d’ImageMagick pour une utilisation avec A
 description: Découvrez le logiciel ImageMagick, comment l’installer, configurer l’étape de processus de ligne de commande et l’utiliser pour modifier, composer et générer des miniatures à partir d’images.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
 
 ---
 
@@ -18,7 +18,7 @@ Pour traiter des fichiers volumineux à l’aide d’ImageMagick, veuillez tenir
 
 >[!NOTE]
 >
->Si vous utilisez AEM sur Adobe Managed Services (AMS), contactez le support technique d’Adobe si vous envisagez de traiter un grand nombre de fichiers PSD ou PSB volumineux.
+>Si vous utilisez AEM sur Adobe Managed Services (AMS), contactez le service à la clientèle d’Adobe si vous prévoyez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Experience Manager peut ne pas traiter les fichiers PSB haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 ## Installation d’ImageMagick {#installing-imagemagick}
 
