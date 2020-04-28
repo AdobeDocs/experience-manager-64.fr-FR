@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: 9b1b0bd53d6c9e0c2c2857ef34b3409fff8485d2
 
 ---
 
@@ -27,7 +27,11 @@ Un auteur peut être confronté aux limites fonctionnelles suivantes lors de l�
 
 When [editing a page](/help/sites-authoring/editing-content.md), links are not active.
 
-* [Passez en mode **Aperçu**](/help/sites-authoring/editing-content.md#preview-mode) pour naviguer à l’aide des liens de votre contenu.
+* [Passez en mode ****](/help/sites-authoring/editing-content.md#preview-mode) pour naviguer à l’aide des liens de votre contenu.
+
+### Pages de structure {#structure-pages}
+
+Impossible de nommer les pages `structure`. Les pages nommées `structure` ne peuvent pas être modifiées dans l’éditeur de page.
 
 ## Limitations CSS {#css-limitations}
 
