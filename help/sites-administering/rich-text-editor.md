@@ -3,7 +3,7 @@ title: Configuration de l’éditeur de texte enrichi
 description: Apprenez à configurer l’éditeur de texte enrichi d’AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+source-git-commit: 7849a3e2d9d8241382652fb1c8e6e302ffd853e0
 
 ---
 
@@ -161,6 +161,15 @@ Configurez les propriétés suivantes qui s’appliquent uniquement au mode de m
 * `rte-start` : déclenchez cet événement sur l’élément `contenteditable-div` d’éditeur de texte enrichi lorsque vous commencez la modification avec l’éditeur de texte enrichi. Cette option ne fonctionne que si `customStart` a été défini sur true.
 
 Lorsque l’éditeur de texte enrichi est utilisé dans la boîte de dialogue optimisée pour les écrans tactiles, la définition de la propriété `useFixedInlineToolbar` sur true est obligatoire pour éviter des problèmes.
+
+## Personnalisation de la modification en place {#customizing-in-place-editing}
+
+Vous pouvez définir sur quel sélecteur HTML le de l’éditeur de texte  en configurant les propriétés suivantes :
+
+* **`editElementQuery`** - Définie le `cq:InplaceEditingConfig`, cette propriété est utilisée pour spécifier un sélecteur de l’élément HTML sur lequel la modification en ligne du composant de texte sera lancée. Si ce n’est pas le cas, la modification en ligne est directement lancée sur le composant HTML de texte.
+* **`textPropertyName`** - Définie le `cq:InplaceEditingConfig`, cette propriété est utilisée pour spécifier le nom de la propriété qui sera enregistrée sur le noeud de contenu où la valeur HTML du composant de texte sera conservée après la modification en ligne.
+
+La propriété correspondante pour le mode de dialogue est `name`.
 
 ## Activation des fonctionnalités d’éditeur de texte enrichi en activant des modules externes {#enable-rte-functionalities-by-activating-plug-ins}
 
