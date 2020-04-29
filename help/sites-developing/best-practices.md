@@ -1,6 +1,6 @@
 ---
-title: Meilleures pratiques
-seo-title: Meilleures pratiques
+title: Bonnes pratiques
+seo-title: Bonnes pratiques
 description: Les équipes d’ingénierie et de conseil Adobe ont développé un ensemble complet de bonnes pratiques pour les développeurs AEM
 seo-description: Les équipes d’ingénierie et de conseil Adobe ont développé un ensemble complet de bonnes pratiques pour les développeurs AEM
 uuid: f962c31f-8140-482f-b189-16376e23bfed
@@ -10,12 +10,12 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
-source-git-commit: 82e065a7faefe6d91f23e2b54dd045fd240fafbb
+source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
 
 ---
 
 
-# Meilleures pratiques{#best-practices}
+# Bonnes pratiques{#best-practices}
 
 ## Bonnes pratiques pour les développeurs - Prise en main {#best-practices-for-developers-getting-started}
 
@@ -30,6 +30,7 @@ Avant de commencer votre projet de développement AEM, passez en revue ces bonne
 * [Les pièges du codage](/help/sites-developing/code-pitfalls.md)
 * [Interaction JCR](/help/sites-developing/jcr-integration.md)
 * [Bundles OSGi](/help/sites-developing/osgi-bundles.md)
+* [Bonnes pratiques de l’API Java](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Informations supplémentaires sur les bonnes pratiques {#additional-best-practices-information}
 
@@ -69,7 +70,7 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
    <td>Explique comment étendre la création de pages pour l’IU tactile.</td> 
   </tr>
   <tr>
-   <td>Workflows</td> 
+   <td>Workflows   </td> 
    <td><a href="/help/sites-developing/workflows-best-practices.md">Développement et extension des workflows</a></td> 
    <td><p>Les processus vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM) et peuvent représenter une grande partie du traitement effectué dans un environnement AEM. Il est donc vivement recommandé de planifier soigneusement les implémentations de vos processus.</p> </td> 
   </tr>
@@ -93,7 +94,7 @@ HTML Template Language (HTL) est un nouveau système de modèle HTML, introduit 
 
 |  |  |  |
 |---|---|---|
-| Présentation de HTL | [Présentation et syntaxe HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) | Ce document définit HTL et décrit la procédure de passage à HTL, un exemple de projet, la syntaxe, les expressions et les instructions HTL |
+| Présentation de HTL | [Présentation et syntaxe HTL](https://helpx.adobe.com/fr/experience-manager/htl/user-guide.html) | Ce document définit HTL et décrit la procédure de passage à HTL, un exemple de projet, la syntaxe, les expressions et les instructions HTL |
 | Utilisation de l’API en Java | [Use-API Java HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | L’Use-API Java du langage de modèle HTML (HTL) permet à un fichier de HTL d’accéder aux méthodes d’assistance dans une classe Java. |
 
 >[!NOTE]
