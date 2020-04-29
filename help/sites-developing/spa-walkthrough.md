@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 77b42490-15db-41d5-9757-17009f1c1efd
 translation-type: tm+mt
-source-git-commit: e514734f2bfdb9d793b64e554856cbe202ea561f
+source-git-commit: a77bdac97c81bed6fcfc4235bebf764be10bad72
 
 ---
 
@@ -19,13 +19,13 @@ source-git-commit: e514734f2bfdb9d793b64e554856cbe202ea561f
 
 Les applications d’une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
 
-L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une application d’application d’une seule page pour la création et montre comment elle est liée à l’éditeur d’applications d’une seule page.
+L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une application d’application d’une seule page pour la création et explique en quoi elle est liée à l’éditeur d’applications d’une seule page.
 
 >[!NOTE]
 >
 >La fonctionnalité Editeur d’application monopage (SPA) nécessite le Service Pack 2 ou version ultérieure d’AEM 6.4.
 >
->L’éditeur d’application d’une seule page est la solution recommandée pour les projets nécessitant un rendu côté client basé sur la structure d’application d’une seule page (par exemple, Réagir ou Angulaire).
+>L’éditeur d’application d’une seule page est la solution recommandée pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, Réagir ou Angulaire).
 
 ## Présentation {#introduction}
 
@@ -33,22 +33,22 @@ L’éditeur de SPA constitue une solution complète pour la prise en charge des
 
 Cet article présente les concepts de base des applications monopages (SPA) avant de guider le lecteur dans une présentation de l’éditeur d’applications monopages (SPA) à l’aide d’une simple application d’applications monopages (SPA) pour démontrer l’édition de contenu de base. Il détaille ensuite la construction de la page et la manière dont l’application SPA se rapporte à l’éditeur SPA AEM et interagit avec lui.
 
-L’objectif de cette introduction et de cette présentation est de montrer à un développeur AEM pourquoi les applications monopages sont pertinentes, comment elles fonctionnent généralement, comment une application monopage est gérée par l’éditeur d’applications monopages AEM et en quoi elle diffère d’une application AEM standard.
+L’objectif de cette introduction et de cette présentation est de montrer à un développeur AEM pourquoi les applications monopages sont pertinentes, comment elles fonctionnent généralement, comment une application monopage est gérée par l’éditeur d’applications monopages AEM et en quoi elles sont différentes d’une application AEM standard.
 
-La présentation repose sur la fonctionnalité standard d’AEM et l’exemple d’application du journal We.Retail. Les conditions suivantes doivent être remplies :
+La présentation repose sur la fonctionnalité standard d’AEM et l’exemple d’application de We.Retail. Les conditions suivantes doivent être remplies :
 
 * [AEM version 6.4 avec Service Pack 2 ou version ultérieure](/help/release-notes/sp-release-notes.md)
-* [Installez l&#39;exemple d&#39;application We.Retail Journal disponible sur GitHub ici.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+* [Installez l&#39;exemple d&#39;application de We.Retail disponible sur GitHub ici.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 
 >[!CAUTION]
 >
->Ce document utilise l’application [Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail à des fins de démonstration uniquement. Il ne doit être utilisé pour aucun travail de projet.
+>Ce utilise l’application [de](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retailà des fins de démonstration uniquement. Il ne doit être utilisé pour aucun travail de projet.
 >
 >Tous les projets d’application d’une seule page doivent être basés sur l’archétype [Maven pour le kit](https://github.com/adobe/aem-spa-project-archetype)de démarrage SPA.
 
 ### Qu&#39;est-ce qu&#39;un SPA ? {#what-is-a-spa}
 
-Une application d’une seule page (SPA) diffère d’une page conventionnelle en ce qu’elle est rendue côté client et qu’elle est principalement pilotée par JavaScript, en utilisant les appels Ajax pour charger les données et mettre à jour dynamiquement la page. La plupart ou l’ensemble du contenu est récupéré une fois au chargement d’une seule page avec des ressources supplémentaires chargées de manière asynchrone, selon les besoins, en fonction de l’interaction de l’utilisateur avec la page.
+Une application d’une seule page (SPA) diffère d’une page conventionnelle en ce qu’elle est rendue côté client et qu’elle est principalement pilotée par Javascript, en utilisant les appels Ajax pour charger les données et mettre à jour dynamiquement la page. La plupart ou l’ensemble du contenu est récupéré une fois au chargement d’une seule page avec des ressources supplémentaires chargées de manière asynchrone, selon les besoins, en fonction de l’interaction de l’utilisateur avec la page.
 
 Cela réduit le besoin d’actualisation des pages et offre à l’utilisateur une expérience fluide, rapide et qui ressemble davantage à une expérience d’application native.
 
@@ -56,36 +56,36 @@ L’éditeur d’applications monopages AEM permet aux développeurs frontaux de
 
 ### Pourquoi un SPA ? {#why-a-spa}
 
-En étant plus rapide, fluide et plus semblable à une application native, une application d’une seule page devient une expérience très attrayante non seulement pour le visiteur de la page Web, mais aussi pour les marketeurs et les développeurs en raison de la nature du fonctionnement des applications d’une seule page.
+En étant plus rapide, fluide et ressemblant davantage à une application native, une application SPA devient une expérience très attrayante non seulement pour le de la page Web, mais aussi pour les marketeurs et les développeurs en raison de la nature du fonctionnement des applications SPA.
 
 ![screen_shot_2018-08-20at135550](assets/screen_shot_2018-08-20at135550.png)
 
 **Visiteurs**
 
-* Les visiteurs souhaitent des expériences de type natif lorsqu’ils interagissent avec le contenu.
+* Les souhaitent des expériences de type natif lorsqu’ils interagissent avec le contenu.
 * Il existe des données claires indiquant que plus une page est rapide, plus une conversion est probable.
 
 **Marqueurs**
 
-* Les marketeurs souhaitent proposer des expériences riches, de type natif, pour inciter les visiteurs à s’engager pleinement dans le contenu.
+* Les marketeurs veulent  des expériences riches et originales de type pour inciter les à s&#39;engager pleinement dans le contenu.
 * La personnalisation peut rendre ces expériences encore plus attrayantes.
 
 **Développeurs**
 
-* Les développeurs veulent une séparation nette entre le contenu et la présentation.
+* Les développeurs veulent une séparation nette des préoccupations entre le contenu et la présentation.
 * Une séparation nette rend le système plus extensible et permet un développement frontal indépendant.
 
-### Comment fonctionne un spa ? {#how-does-a-spa-work}
+### Comment fonctionne un SPA ? {#how-does-a-spa-work}
 
 L’idée principale d’une application d’une seule page est que les appels et la dépendance sur un serveur sont réduits afin de minimiser les retards causés par les appels au serveur, de sorte que l’application d’une seule page d’une application native puisse répondre.
 
-Dans une page Web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque le visiteur passe à une autre page, le serveur est appelé pour les ressources supplémentaires. Des appels supplémentaires peuvent être nécessaires lorsque le visiteur interagit avec des éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de retard car la page doit répondre aux demandes du visiteur.
+Dans une page Web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque le passe à une autre page, le serveur est appelé pour les ressources supplémentaires. Des appels supplémentaires peuvent être nécessaires lorsque le interagit avec les éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de retard car la page doit rattraper les demandes de  du.
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
-Pour une expérience plus fluide, qui approche ce qu’un visiteur attend des applications mobiles natives, une application d’une seule page (SPA) charge toutes les données nécessaires pour le visiteur au premier chargement. Bien que cela puisse prendre un peu plus de temps au départ, cela élimine ensuite la nécessité d’appels serveur supplémentaires.
+Pour une expérience plus fluide, qui approche ce qu’un attend des applications mobiles natives, une application d’application d’application d’application d’application d’application (SPA) charge toutes les données nécessaires pour le au premier chargement. Bien que cela puisse prendre un peu plus de temps au départ, cela élimine ensuite la nécessité d’appels serveur supplémentaires.
 
-En effectuant le rendu côté client, l’élément de page réagit plus rapidement et les interactions du visiteur avec la page sont immédiates. Toute donnée supplémentaire qui peut être nécessaire est appelée de manière asynchrone pour optimiser la vitesse de la page.
+En effectuant le rendu côté client, l’élément de page réagit plus rapidement et les interactions avec la page par le sont immédiates. Toute donnée supplémentaire qui peut être nécessaire est appelée de manière asynchrone pour optimiser la vitesse de la page.
 
 >[!NOTE]
 >
@@ -99,15 +99,15 @@ Lorsqu’une application d’une seule page est créée pour tirer parti de l’
 
 >[!NOTE]
 >
->La présentation repose sur la fonctionnalité standard d’AEM et l’exemple d’application du journal We.Retail. Les conditions suivantes doivent être remplies :
+>La présentation repose sur la fonctionnalité standard d’AEM et l’exemple d’application de We.Retail. Les conditions suivantes doivent être remplies :
 >
 >* [AEM version 6.4 avec Service Pack 2](/help/release-notes/sp-release-notes.md)
->* [Installez l&#39;exemple d&#39;application We.Retail Journal disponible sur GitHub ici.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+>* [Installez l&#39;exemple d&#39;application de We.Retail disponible sur GitHub ici.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 >
 
 
 
-1. Modifiez l’application We.Retail Journal dans AEM.
+1. Modifiez l’application de  Web.Retail dans AEM.
 
    `http://localhost:4502/editor.html/content/we-retail-journal/react.html`
 
@@ -120,6 +120,9 @@ Lorsqu’une application d’une seule page est créée pour tirer parti de l’
 1. Modifiez le contenu normalement dans AEM et notez que les modifications sont conservées.
 
    ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
+
+   >[!NOTE]
+   >Pour plus d’informations sur l’éditeur de texte en place et les applications monopages, consultez la Présentation [de l’éditeur d’](spa-overview.md#requirements-limitations) application d’une seule page.
 
 1. Utilisez l’explorateur de ressources pour faire glisser une nouvelle image dans un composant d’image.
 
@@ -135,15 +138,15 @@ D’autres outils de création, tels que le glisser-déposer de composants suppl
 >
 >L’éditeur d’applications monopages ne modifie pas le DOM de l’application. L&#39;APS lui-même est responsable du DOM.
 >
->Pour voir comment cela fonctionne, passez à la section suivante de cet article Applications [SPA et de l’éditeur](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor)d’applications SPA AEM.
+>Pour voir comment cela fonctionne, passez à la section suivante de cet article Applications [d’application d’une seule page et à l’éditeur](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor)d’application d’une seule page.
 
-## Applications SPA et éditeur d’applications SPA AEM {#spa-apps-and-the-aem-spa-editor}
+## Applications SPA et éditeur d’application d’une seule page {#spa-apps-and-the-aem-spa-editor}
 
 L’expérience d’une application d’une seule page permet de mieux comprendre le comportement d’une application SAP avec l’éditeur d’une application d’une seule page dans AEM.
 
 ### Utilisation d’une application SPA {#using-an-spa-application}
 
-1. Chargez l’application Journal We.Retail sur le serveur de publication ou utilisez l’option **[!UICONTROL Afficher comme publié]** dans le menu Informations **sur la** page de l’éditeur de page.
+1. Chargez l’application  Web.Retail sur le serveur de publication ou en utilisant l’option **[!UICONTROL Publié]** dans le menu Informations **sur la** page de l’éditeur de page.
 
    `/content/we-retail-journal/react.html`
 
@@ -155,13 +158,13 @@ L’expérience d’une application d’une seule page permet de mieux comprendr
 
    ![screen_shot_2018-06-08at102815](assets/screen_shot_2018-06-08at102815.png)
 
-1. Ouvrez les outils de développement intégrés de votre navigateur et surveillez l’activité réseau lorsque vous naviguez dans les pages enfants.
+1. Ouvrez les outils de développement intégrés de votre navigateur et surveillez les réseau   lorsque vous parcourez les pages enfants.
 
    ![screen_shot_2018-06-08at103922](assets/screen_shot_2018-06-08at103922.png)
 
    Le trafic est très faible lorsque vous passez d’une page à l’autre dans l’application. La page n’est pas rechargée et seules les nouvelles images sont demandées.
 
-   L’application d’une seule page gère le contenu et le routage entièrement côté client.
+   L’application d’une seule page gère le contenu et les  entièrement côté client.
 
 Si la page n’est pas rechargée lors de la navigation dans les pages enfants, comment est-elle chargée ?
 
@@ -169,13 +172,13 @@ La section suivante, [Chargement d’une application](/help/sites-developing/spa
 
 ### Chargement d’une application SPA {#loading-an-spa-application}
 
-1. Si ce n’est pas déjà fait, chargez l’application We.Retail Journal sur le serveur de publication ou utilisez l’option **[!UICONTROL Afficher comme publié]** dans le menu Informations **sur la** page de l’éditeur de page.
+1. Si ce n’est pas déjà fait, chargez l’application de We.Retail sur le serveur de publication ou utilisez l’option **[!UICONTROL as Published]** du menu Informations **sur la** page dans l’éditeur de page.
 
    `/content/we-retail-journal/react.html`
 
    ![screen_shot_2018-06-07at144736](assets/screen_shot_2018-06-07at144736.png)
 
-1. Utilisez l’outil intégré de votre navigateur pour afficher la source de la page.
+1. Utilisez l’outil intégré de votre navigateur pour  la source de la page.
 1. Notez que le contenu de la source est extrêmement limité.
 
    ```
@@ -224,19 +227,19 @@ La section suivante, [Chargement d’une application](/help/sites-developing/spa
 
    L’éditeur d’applications monopages AEM tire parti d’ [AEM Content Services](/help/assets/content-fragments.md) pour diffuser l’intégralité du contenu de la page sous forme de modèle JSON.
 
-   En implémentant des interfaces spécifiques, les modèles Sling fournissent les informations nécessaires à l’application d’une seule page. La diffusion des données JSON est déléguée vers le bas à chaque composant (de la page au paragraphe, au composant, etc.).
+   En implémentant des interfaces spécifiques, les modèles Sling fournissent les informations nécessaires à l’application d’une seule page. Le  des données JSON est délégué vers le bas à chaque composant (de la page, au paragraphe, au composant, etc.).
 
    Chaque composant choisit ce qu’il expose et la manière dont il est rendu (côté serveur avec HTL ou côté client avec React). Bien sûr, cet article se concentre sur le rendu côté client avec React.
 
 1. Le modèle peut également regrouper les pages afin qu’elles soient chargées de manière synchrone, ce qui réduit le nombre de rechargements de page nécessaires.
 
-   Dans l&#39;exemple du journal We.Retail, les pages `home`, `blog`et `aboutus` sont chargées de manière synchrone, puisque les visiteurs visitent généralement toutes ces pages. Toutefois, la `weather` page est chargée de manière asynchrone, car les visiteurs sont moins susceptibles de la visiter.
+   Dans l&#39;exemple de We.Retail, les pages `home`, `blog`et `aboutus` sont chargées de manière synchrone, car les visitent généralement toutes ces pages. Toutefois, la `weather` page est chargée de manière asynchrone, car les sont moins susceptibles de la consulter.
 
    Ce comportement n’est pas obligatoire et est entièrement définissable.
 
    ![screen_shot_2018-06-07at153945](assets/screen_shot_2018-06-07at153945.png)
 
-1. Pour afficher cette différence de comportement, rechargez la page et effacez l&#39;activité réseau de l&#39;inspecteur. Accédez au blog et aux pages qui nous concernent dans le menu de la page et voyez qu&#39;aucune activité réseau n&#39;est signalée.
+1. Pour  cette différence de comportement, rechargez la page et effacez l&#39; réseau de l&#39;inspecteur. Accédez au blog et aux pages qui nous concernent dans le menu de la page et voyez qu&#39;il n&#39;y a aucun réseau  signalé.
 
    Accédez à la page météo et voyez que l’ `weather.model.json` appel est asynchrone.
 
@@ -244,17 +247,17 @@ La section suivante, [Chargement d’une application](/help/sites-developing/spa
 
 ### Interaction avec l’éditeur d’applications monopages {#interaction-with-the-spa-editor}
 
-En utilisant l’exemple d’application Web.Retail Journal, il est clair comment l’application se comporte et est chargée une fois publiée, en exploitant les services de contenu pour la diffusion de contenu JSON et le chargement asynchrone des ressources.
+En utilisant l’exemple d’application de We.Retail, il est clair comment l’application se comporte et est chargée lorsqu’elle est publiée, en exploitant les services de contenu pour le de contenu JSON  ainsi que le chargement asynchrone des ressources.
 
 De plus, pour l’auteur du contenu, la création de contenu à l’aide d’un éditeur d’application d’une seule page est transparente dans AEM.
 
 Dans la section suivante, nous allons explorer le contrat qui permet à l’éditeur d’application d’une seule page d’établir des relations entre les composants de l’application d’une seule page et les composants d’AEM et d’obtenir cette expérience de modification transparente.
 
-1. Chargez l’application We.Retail Journal dans l’éditeur et passez en mode **Aperçu** .
+1. Chargez l’application de We.Retail dans l’éditeur et passez en mode de **** .
 
    `http://localhost:4502/editor.html/content/we-retail-journal/react.html`
 
-1. A l’aide des outils de développement intégrés de votre navigateur, inspectez le contenu de la page. A l’aide de l’outil de sélection, sélectionnez un composant modifiable sur la page et affichez les détails de l’élément.
+1. A l’aide des outils de développement intégrés de votre navigateur, inspectez le contenu de la page. A l’aide de l’outil de sélection, sélectionnez un composant modifiable sur la page et les détails de l’élément.
 
    Notez que le composant possède un nouvel attribut de données `data-cq-data-path`.
 
