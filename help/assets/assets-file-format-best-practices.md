@@ -3,7 +3,7 @@ title: Meilleures pratiques relatives au format de fichier des ressources
 description: Meilleures pratiques relatives à la prise en charge des fichiers dans AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
 
 ---
 
@@ -43,7 +43,7 @@ Adobe vous recommande d’utiliser le serveur Adobe InDesign pour extraire des 
 
 Dynamic Media génère et diffuse plusieurs variations de contenu riche en temps réel via son réseau mondial, extensible et optimisé pour garantir de bonnes performances. Il diffuse des expériences d’affichage interactif et simplifie le processus de gestion des campagnes numériques. Pour en savoir plus sur l’activation de Dynamic Media, voir [Configuration de Dynamic Media](config-dynamic.md).
 
-Actuellement, Dynamic Media peut prendre en charge jusqu’à 20 Go de contenu vidéo par fichier.
+Actuellement, Dynamic Media peut prendre en charge jusqu’à 15 Go de contenu vidéo par fichier.
 
 ## Bibliothèque ImageMagick {#imagemagick-library}
 
