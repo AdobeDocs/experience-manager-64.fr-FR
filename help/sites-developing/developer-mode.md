@@ -10,7 +10,7 @@ topic-tags: components
 content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 translation-type: tm+mt
-source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
 
 ---
 
@@ -35,15 +35,8 @@ Ils aident les développeurs à :
 >
 >* est uniquement disponible dans l’IU compatible avec les écrans tactiles (lors de la modification des pages) ;
 >* n’est pas disponible sur les périphériques mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
-   >
-   >  
-* ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
-   >
-   >
-* nécessite les permissions/privilèges appropriés :
-   >
-   >  
-* L’accès au mode Développeur est attribué aux utilisateurs disposant d’un accès en écriture sur `/apps`.
+   >   * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
+>* N’est disponible que pour les utilisateurs membres du `administrators` groupe.
 
 
 >[!CAUTION]
@@ -74,7 +67,7 @@ Le mode Développeur est mis en œuvre sous la forme d’un panneau latéral dan
 
 Le panneau est divisé en deux onglets :
 
-* **[Composants](/help/sites-developing/developer-mode.md#components)**: affiche une arborescence de composants, similaire à l’arborescence[de](/help/sites-authoring/author-environment-tools.md#content-tree)contenu pour les auteurs
+* **[Composants](/help/sites-developing/developer-mode.md#components)**: affiche une arborescence de composants, similaire à l&#39;arborescence[de](/help/sites-authoring/author-environment-tools.md#content-tree)contenu pour les auteurs.
 
 * **[Erreurs](/help/sites-developing/developer-mode.md#errors)** : lorsque des problèmes se produisent, les détails sont affichés pour chaque composant.
 
@@ -142,6 +135,6 @@ L’entrée du composant dans l’arborescence de l’onglet Composants sera ég
 
 >[!CAUTION]
 >
->Dans AEM 6.2, les fonctionnalités de test du mode Développeur ont été réimplémentées en tant qu’application Outils autonome.
+>Dans AEM 6.2, les fonctionnalités de test du mode développeur ont été réimplémentées en tant qu’application Outils autonome.
 >
 >For full details see [Testing Your UI](/help/sites-developing/hobbes.md).
