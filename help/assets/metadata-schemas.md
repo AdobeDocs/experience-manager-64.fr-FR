@@ -3,10 +3,10 @@ title: Schémas de métadonnées
 description: 'Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: baecd478801154048e8be7fc27a3fbd7d8a72f6d
+source-git-commit: b774b23028f642436b9a17f94da61f8e40bdae9a
 workflow-type: tm+mt
-source-wordcount: '2524'
-ht-degree: 81%
+source-wordcount: '2511'
+ht-degree: 80%
 
 ---
 
@@ -31,38 +31,22 @@ Vous pouvez utiliser l’éditeur de formulaires de schéma de métadonnées pou
 
    Pour modifier le type MIME d’une ressource, utilisez un formulaire de schéma de métadonnées personnalisé ou modifiez un formulaire existant. Voir [Modification d’un formulaire de schéma de métadonnées](metadata-schemas.md#editing-metadata-schema-forms) pour plus d’informations. Si vous modifiez le schéma de métadonnées d’un certain type MIME, la disposition de la page des propriétés des ressources de ce type MIME et tous les sous-types de ressources sont modifiés. For example, modifying a `jpeg` schema under `default/image` only modifies the metadata layout (asset properties) for assets with MIME type `IMAGE/JPEG`. Si vous modifiez le schéma par défaut, les modifications changent toutefois la disposition des métadonnées pour tous les types de ressources.
 
-1. Pour afficher une liste de formulaires/modèles, cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils > Ressources > Schémas de métadonnées]**.
+## Formulaires de schéma de métadonnées {#default-metadata-schema-forms}
 
-   ![chlimage_1-37](assets/chlimage_1-173.png)
-
-## Formulaires de Schéma de métadonnées disponibles par défaut {#available-metadata-schema-templates}
+Pour vue d’une liste de formulaires/modèles, dans l’ [!DNL Experience Manager] interface, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Schémas **[!UICONTROL de]** métadonnées.
 
 [!DNL Experience Manager] fournit les modèles de formulaire de Schéma de métadonnées suivants :
 
-### default {#default-template}
-
-The [!UICONTROL default] is the base metadata schema form for assets. Les formulaires enfants suivants héritent des propriétés du formulaire par défaut :
-
-* **image** est le formulaire de schéma pour les ressources de type MIME &quot;image&quot;. Par exemple, `image/jpeg`, `image/png`, etc. Le formulaire « image » possède les modèles de formulaire enfant suivants :
-   * **jpeg** est le formulaire de schéma pour les ressources avec un sous-type `jpeg`.
-
-   * **tiff** est le formulaire de schéma pour les ressources avec un sous-type `tiff`.
-
-* **application** est le formulaire de schéma pour les ressources de type MIME `application`. Par exemple, `application/pdf`, `application/zip`, etc. **pdf** est le formulaire de schéma pour les ressources avec un sous-type `pdf`.
-
-* **video** est le formulaire de schéma pour les ressources de type MIME `video`, par exemple `video/avi`, `video/mp4`etc.
-
-### collection {#collection-template}
-
-La [!UICONTROL collection] est le formulaire de schéma des collections.
-
-### contentfragment {#contentfragment-template}
-
-Le [!UICONTROL fragment] de contenu est le formulaire de schéma pour les fragments de contenu.
-
-### formulaires {#forms-template}
-
-The [!UICONTROL forms] schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md).
+| Modèles |  | Description |
+|---|---|---|
+| [!UICONTROL default] |  | schéma de métadonnées de base pour les ressources. |
+|  | The following child forms inherit the properties of the [!UICONTROL default] form: |  |
+|  | <ul><li> [!UICONTROL image]</li></ul> | Schéma de formulaire pour les fichiers de type MIME &quot;image&quot;, par exemple image/jpeg, image/png, etc. <br> Le formulaire [!UICONTROL image] comporte les modèles de formulaire enfant suivants : <ul><li> [!UICONTROL jpeg]: Schéma de formulaire pour les ressources avec un sous-type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schéma de formulaire pour les ressources avec un [!UICONTROL tiff]de sous-type.</li></ul> |
+|  | <ul><li> [!UICONTROL l’application ;]</li></ul> | Schéma de formulaire pour les ressources de type MIME &quot;application&quot;, par exemple application/ pdf, application/ zip, etc. <br>[!UICONTROL pdf]: Formulaire de Schéma pour les ressources avec un sous-type pdf. |
+|  | <ul><li>[!UICONTROL vidéo]</li></ul> | Schéma de formulaire pour les ressources de type MIME &quot;video&quot;, telles que video/avi, video/mp4, etc. |
+| [!UICONTROL collection] |  | Schéma de formulaire pour les collections. |
+| [!UICONTROL contentfragment] |  | Schéma de formulaire pour les fragments de contenu. |
+| [!UICONTROL forms] |  | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 >[!NOTE]
 >
