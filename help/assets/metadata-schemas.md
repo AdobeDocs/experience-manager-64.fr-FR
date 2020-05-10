@@ -3,7 +3,10 @@ title: Schémas de métadonnées
 description: 'Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9674b07fa8ddaee1d77f5a171ca00745e7545d0b
+source-git-commit: baecd478801154048e8be7fc27a3fbd7d8a72f6d
+workflow-type: tm+mt
+source-wordcount: '2524'
+ht-degree: 81%
 
 ---
 
@@ -32,22 +35,34 @@ Vous pouvez utiliser l’éditeur de formulaires de schéma de métadonnées pou
 
    ![chlimage_1-37](assets/chlimage_1-173.png)
 
-   AEM fournit les modèles prêts à l’emploi suivants :
-   * **default** : le formulaire de schéma de métadonnées de base pour les ressources.
+## Formulaires de Schéma de métadonnées disponibles par défaut {#available-metadata-schema-templates}
 
-      Les formulaires enfants suivants héritent des propriétés du formulaire par défaut :
+[!DNL Experience Manager] fournit les modèles de formulaire de Schéma de métadonnées suivants :
 
-      1. **image**: Formulaire de  pour les fichiers de type MIME &quot;image&quot;, par exemple `image/jpeg`, `image/png`, etc.
+### default {#default-template}
 
-         Le formulaire « image » possède les modèles de formulaire enfant suivants :
-         * **jpeg**: Formulaire  pour les ressources avec sous-type `jpeg`.
-         * **tiff** : formulaire de schéma pour les ressources avec le sous-type `tiff`.
-      1. **application** : formulaire de schéma pour les ressources avec le type MIME `application`, par exemple `application/pdf`, `application/zip`, etc.
-         * **pdf** : formulaire de schéma pour les ressources avec le sous-type `pdf`.
-      1. **video** : formulaire de schéma pour les ressources avec le type MIME `video`, par exemple `video/avi`, `video/mp4`, etc.
-   * **collection** : formulaire de schéma pour les collections.
-   * **contentfragment** : formulaire de schéma pour les fragments de contenu.
-   * **formulaires**: Ce formulaire  concerne [Adobe Experience Manager Forms](/help/forms/home.md).
+The [!UICONTROL default] is the base metadata schema form for assets. Les formulaires enfants suivants héritent des propriétés du formulaire par défaut :
+
+* **image** est le formulaire de schéma pour les ressources de type MIME &quot;image&quot;. Par exemple, `image/jpeg`, `image/png`, etc. Le formulaire « image » possède les modèles de formulaire enfant suivants :
+   * **jpeg** est le formulaire de schéma pour les ressources avec un sous-type `jpeg`.
+
+   * **tiff** est le formulaire de schéma pour les ressources avec un sous-type `tiff`.
+
+* **application** est le formulaire de schéma pour les ressources de type MIME `application`. Par exemple, `application/pdf`, `application/zip`, etc. **pdf** est le formulaire de schéma pour les ressources avec un sous-type `pdf`.
+
+* **video** est le formulaire de schéma pour les ressources de type MIME `video`, par exemple `video/avi`, `video/mp4`etc.
+
+### collection {#collection-template}
+
+La [!UICONTROL collection] est le formulaire de schéma des collections.
+
+### contentfragment {#contentfragment-template}
+
+Le [!UICONTROL fragment] de contenu est le formulaire de schéma pour les fragments de contenu.
+
+### formulaires {#forms-template}
+
+The [!UICONTROL forms] schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md).
 
 >[!NOTE]
 >
@@ -59,7 +74,7 @@ Vous pouvez utiliser l’éditeur de formulaires de schéma de métadonnées pou
 
    >[!NOTE]
    >
-   >Les modèles non modifiés affichent une icône de verrou avant eux. Si vous personnalisez l’un des modèles, l’icône de verrouillage précédant le modèle disparaît.
+   >Les modèles non modifiés affichent une icône de verrouillage avant eux. Si vous personnalisez l’un des modèles, l’icône de verrouillage précédant le modèle disparaît.
 
 1. In the dialog, enter the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
 
@@ -139,7 +154,7 @@ Pour garantir que le composant s’affiche correctement dans le formulaire de sc
 
 **Classe** : classe d’objets à laquelle la propriété est associée.
 
-**Icône** Supprimer Cliquez sur cette icône pour supprimer un composant du formulaire .
+**Icône** Supprimer Cliquez sur cette icône pour supprimer un composant du schéma de formulaire.
 
 >[!NOTE]
 >
@@ -149,7 +164,7 @@ Si vous sélectionnez l’option **[!UICONTROL Obligatoire]**, vous pouvez reche
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
-Si vous ajoutez le composant Métadonnées contextuelles à un onglet de n’importe quel formulaire de , le composant s’affiche sous la forme d’un dans la page de propriétés des ressources auxquelles le  spécifique est appliqué. La liste inclut tous les autres onglets, à l’exception de celui auquel vous avez appliqué le composant Métadonnées contextuelles. Actuellement, cette fonctionnalité fournit des fonctions de base pour contrôler l’affichage des métadonnées en fonction du contexte.
+Si vous ajoutez le composant Métadonnées contextuelles à un onglet d’un formulaire de schéma, le composant s’affiche en tant que liste dans la page de propriétés des actifs auxquels le schéma spécifique est appliqué. La liste inclut tous les autres onglets, à l’exception de celui auquel vous avez appliqué le composant Métadonnées contextuelles. Actuellement, cette fonctionnalité fournit des fonctions de base pour contrôler l’affichage des métadonnées en fonction du contexte.
 
 ![chlimage_1-179](assets/chlimage_1-179.png)
 
@@ -179,7 +194,7 @@ Pour supprimer un formulaire, sélectionnez-le puis cliquez sur l’icône **[!U
 
 >[!NOTE]
 >
->Une fois que vous avez supprimé les modifications personnalisées apportées à un formulaire par défaut, l’icône de verrouillage apparaît de nouveau dans l’interface du de métadonnées pour indiquer que le formulaire est revenu à son état par défaut.
+>Une fois que vous avez supprimé les modifications personnalisées apportées à un formulaire par défaut, l’icône de verrouillage réapparaît dans l’interface du Schéma de métadonnées pour indiquer que le formulaire est revenu à son état par défaut.
 
 >[!NOTE]
 >
@@ -222,7 +237,7 @@ AEM Assets associe les types MIME et les formulaires de schéma suivants :
 
 ## Octroi de l’accès aux schémas de métadonnées {#granting-access-to-metadata-schemas}
 
-La fonction de  de métadonnées n’est disponible que pour les administrateurs. Toutefois, les administrateurs peuvent fournir un accès aux utilisateurs non administrateurs en leur fournissant des autorisations **[!UICONTROL Créer]**, **[!UICONTROL Modifier]** et **[!UICONTROL Supprimer]** sur le `/conf` dossier.
+La fonction de schéma des métadonnées est disponible uniquement pour les administrateurs. Toutefois, les administrateurs peuvent fournir un accès aux utilisateurs non administrateurs en leur fournissant les autorisations **[!UICONTROL Créer]**, **[!UICONTROL Modifier]** et **[!UICONTROL Supprimer]** sur le `/conf` dossier.
 
 ## Application de métadonnées spécifiques au dossier {#applying-folder-specific-metadata}
 
@@ -279,7 +294,7 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 
    ![chlimage_1-190](assets/chlimage_1-190.png)
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées.]** Pour appliquer les métadonnées personnalisées à un dossier, sélectionnez le formulaire et cliquez/appuyez sur **[!UICONTROL Appliquer au(x)]** dossier(s) dans la barre d’outils.
+1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées.]** Pour appliquer les métadonnées personnalisées à un dossier, sélectionnez le formulaire et cliquez/appuyez sur **[!UICONTROL Appliquer aux dossiers]** dans la barre d’outils.
 
 1. Accédez au dossier et chargez des ressources présentant des données manquantes pour le champ obligatoire que vous avez ajouté au formulaire personnalisé. Le mode Carte des ressources affiche un message pour les métadonnées manquantes dans le champ obligatoire.
 
