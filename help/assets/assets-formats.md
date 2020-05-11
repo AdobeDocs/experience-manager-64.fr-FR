@@ -3,7 +3,10 @@ title: Formats de fichier pris en charge dans AEM Assets
 description: Liste des formats de fichier et des types MIME pris en charge par AEM Assets et des fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d4539e538c299f3b2a076ef4fa60f7013621394e
+source-git-commit: 1f93b2b0c8b1a4e55a67c11937b9c5ce4076ee2a
+workflow-type: tm+mt
+source-wordcount: '1878'
+ht-degree: 69%
 
 ---
 
@@ -78,6 +81,8 @@ Outre les informations ci-dessus, tenez compte des points suivants :
 
 La liste suivante décrit les sous-types de formats de fichier image pixellisée qui *ne sont pas* pris en charge dans Contenu multimédia dynamique.
 
+Voir aussi [Détection de formats de fichier non pris en charge pour le contenu multimédia](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)dynamique.
+
 * Fichiers PNG dont la taille de bloc IDAT est supérieure à 100 Mo.
 * Fichiers PSB.
 * Les fichiers PSD avec un espace colorimétrique autre que CMJN, RVB, Niveaux de gris ou Bitmap ne sont pas pris en charge. Les espaces colorimétriques DuoTone, Lab et Indexé ne sont pas pris en charge.
@@ -109,7 +114,7 @@ La bibliothèque Adobe Camera Raw permet à AEM Assets d’importer des images 
 
 ## Formats de document {#supported-document-formats}
 
-Les formats de Document pris en charge pour les fonctionnalités de gestion des ressources sont les suivants :
+Les formats de documents pris en charge pour les fonctionnalités de gestion des ressources sont les suivants:
 
 | Format | Stockage | Metadata<br> management | Fulltext<br> extraction | Metadata<br> extraction | Thumbnail<br> generation | Subasset<br> extraction | Metadata<br> writeback |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
