@@ -3,21 +3,21 @@ title: Schémas de métadonnées
 description: 'Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b774b23028f642436b9a17f94da61f8e40bdae9a
+source-git-commit: 1a6c2e9603ae8cb5017abd9bec9fe0c3fdf62dea
 workflow-type: tm+mt
-source-wordcount: '2511'
-ht-degree: 80%
+source-wordcount: '2527'
+ht-degree: 78%
 
 ---
 
 
 # Schémas de métadonnées    {#metadata-schemas}
 
-Dans Adobe Experience Manager (AEM) Assets, le schéma de métadonnées définit la disposition de la page des propriétés et les propriétés de métadonnées qui s’affichent pour les ressources qui utilisent ce schéma spécifique. Les propriétés de métadonnées incluent le titre, la description, les types MIME, les balises, etc.
+In [!DNL Experience Manager Assets], a metadata schema defines the layout of the properties page and the metadata properties displayed for assets that use the particular schema. Les propriétés de métadonnées incluent le titre, la description, les types MIME, les balises, etc.
 
-Vous pouvez utiliser l’éditeur de formulaires de schéma de métadonnées pour modifier des schémas existants ou ajouter des schémas de métadonnées personnalisés.
+Vous pouvez utiliser l’éditeur de formulaires de schéma de métadonnées pour modifier des schémas existants ou ajouter des schémas de métadonnées personnalisés. Pour vue et modifier la page de propriétés d’un fichier, procédez comme suit :
 
-1. To view the properties page for an asset, click or tap the **[!UICONTROL View Properties]** from **[!UICONTROL Quick Actions]** on the asset tile in Card view.
+1. Cliquez ou appuyez sur les Propriétés **[!UICONTROL de la]** Vue dans les actions rapides de la mosaïque de ressources dans la vue de cartes.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
@@ -25,7 +25,7 @@ Vous pouvez utiliser l’éditeur de formulaires de schéma de métadonnées pou
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. Modifiez les propriétés de métadonnées modifiables sous les différents onglets.
+1. Vous pouvez modifier les propriétés de métadonnées modifiables sous les onglets disponibles. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
