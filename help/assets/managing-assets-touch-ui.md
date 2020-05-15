@@ -1,19 +1,22 @@
 ---
-title: Gestion des ressources numériques à l’aide des ressources AEM
+title: Gérer vos ressources numériques à l’aide d’AEM Assets
 description: Découvrez les différentes tâches de gestion et de modification des ressources que vous pouvez réaliser à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+workflow-type: tm+mt
+source-wordcount: '9812'
+ht-degree: 68%
 
 ---
 
 
-# Gestion des ressources numériques {#managing-assets-with-the-touch-optimized-ui}
+# Gérer vos ressources numériques {#managing-assets-with-the-touch-optimized-ui}
 
 Découvrez les différentes tâches de gestion et de modification des ressources que vous pouvez réaliser à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’AEM Assets.
 
-Cet article explique comment gérer et modifier des ressources à l’aide de l’interface utilisateur optimisée pour les ressources d’Adobe Experience Manager (AEM). For an elementary knowledge about the user interface, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
+Cet article décrit comment gérer et modifier des ressources à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’Adobe Experience Manager (AEM) Assets. For an elementary knowledge about the user interface, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
 
 ## Création de dossiers {#create-folders}
 
@@ -22,7 +25,7 @@ Lorsque vous organisez une collection de ressources, comme toutes les images `Na
 >[!NOTE]
 >
 >* Sharing an Assets folder of the type `sling:OrderedFolder` is not supported when sharing to Marketing Cloud. Si vous souhaitez partager un dossier, ne sélectionnez pas Ordonné lors de la création du dossier.
->* Experience Manager n’autorise pas l’utilisation de `subassets` mot comme nom d’un dossier. Il s’agit d’un mot-clé réservé au noeud qui contient des sous-ressources pour les ressources composées.
+>* Experience Manager n’autorise pas l’utilisation du mot `subassets` comme nom de dossier. Il s’agit d’un mot-clé réservé au nœud qui contient des sous-ressources pour les ressources composites..
 
 
 1. Dans le dossier Ressources numériques, accédez à l’emplacement où vous souhaitez créer un dossier.
@@ -84,7 +87,7 @@ Avant de télécharger un fichier, assurez-vous qu’il est dans un format [](as
 
    Si vous transférez une ressource portant le même nom qu’une ressource déjà disponible à l’emplacement où vous transférez la ressource, un message d’avertissement s’affiche.
 
-   Vous pouvez choisir de remplacer une ressource existante, de créer une autre version ou de garder les deux en renommant la nouvelle ressource téléchargée. Si vous remplacez une ressource existante, les métadonnées de la ressource, ainsi que les modifications et l’historique antérieurs (annotations, recadrages, etc.) sont supprimées. Si vous choisissez de conserver les deux fichiers, le nouveau fichier est renommé.
+   Vous pouvez choisir de remplacer une ressource existante, de créer une autre version ou de garder les deux en renommant la nouvelle ressource téléchargée. Si vous remplacez une ressource existante, les métadonnées de la ressource ainsi que les modifications et l’historique antérieurs (par exemple, les annotations, les rotations, etc.) sont supprimées. Si vous choisissez de conserver les deux fichiers, le nouveau fichier est renommé.
 
    ![chlimage_1-7](assets/chlimage_1-7.png)
 
@@ -104,7 +107,7 @@ Avant de télécharger un fichier, assurez-vous qu’il est dans un format [](as
 
    Tap **[!UICONTROL Keep]** to retain the duplicate asset in AEM Assets. Tap  **[!UICONTROL Delete]** to delete the duplicate asset you uploaded.
 
-   AEM Assets vous empêche de transférer des ressources dont le nom de fichier contient des caractères interdits. Si vous tentez de télécharger un fichier qui comprend des caractères interdits, AEM Assets affiche un message d’avertissement concernant la présence de caractères interdits dans le nom de fichier et interrompt le téléchargement jusqu’à ce que vous supprimiez ces caractères ou téléchargiez avec un nom autorisé.
+   AEM Assets vous empêche de transférer des ressources dont le nom de fichier contient des caractères interdits. Si vous tentez de télécharger un fichier qui comprend des caractères non autorisés, AEM Assets affiche un message d’avertissement concernant la présence de caractères interdits dans le nom de fichier et interrompt le téléchargement jusqu’à ce que vous supprimiez ces caractères ou téléchargez avec un nom autorisé.
 
    To suit specific file naming conventions for your organization, the **[!UICONTROL Upload Assets]** dialog box lets you specify long names for the files that you upload.
 
@@ -115,7 +118,7 @@ Avant de télécharger un fichier, assurez-vous qu’il est dans un format [](as
    * Le nom du dossier de ressources ne doit pas contenir  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
    In addition, the Assets interface displays the most recent asset that you upload or the folder you create first in all the views (**[!UICONTROL Card view]**, **[!UICONTROL List view]**, and **[!UICONTROL Column view]**).
 
-   Souvent, lors du chargement simultané de fichiers volumineux ou de plusieurs fichiers, les indicateurs visuels vous permettent d’évaluer la progression. The **[!UICONTROL Upload Progress]** dialog box displays the count of successfully uploaded files and the files that failed to upload.
+   Souvent, lors du transfert simultané de fichiers volumineux ou de plusieurs fichiers, les indicateurs visuels vous permettent d’évaluer la progression. The **[!UICONTROL Upload Progress]** dialog box displays the count of successfully uploaded files and the files that failed to upload.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -123,7 +126,7 @@ Avant de télécharger un fichier, assurez-vous qu’il est dans un format [](as
 
 ### Transferts en série {#serial-uploads}
 
-Le téléchargement en masse de nombreux actifs consomme des ressources système importantes, ce qui peut avoir un impact négatif sur les performances de votre déploiement AEM. Les goulets d’étranglement potentiels peuvent être votre connexion Internet, les opérations de lecture-écriture sur le disque, les limitations du navigateur Web quant au nombre de requêtes POST lors du transfert simultané de ressources. L’opération de transfert en masse peut échouer ou se terminer prématurément. Autrement dit, AEM Assets peut ignorer certains fichiers lors de l’assimilation, voire n’assimiler aucun fichier.
+Le téléchargement de nombreux actifs en vrac consomme d’importantes ressources système, ce qui peut avoir un impact négatif sur les performances de votre déploiement AEM. Les goulets d’étranglement potentiels peuvent être votre connexion Internet, les opérations de lecture-écriture sur le disque, les limitations du navigateur Web quant au nombre de requêtes POST lors du transfert simultané de ressources. L’opération de transfert en masse peut échouer ou se terminer prématurément. Autrement dit, AEM Assets peut ignorer certains fichiers lors de l’assimilation, voire n’assimiler aucun fichier.
 
 Pour remédier à cette situation, AEM Assets assimile une ressource à la fois (chargement en série) au cours d’une opération de chargement en masse, plutôt que d’assimiler toutes les ressources simultanément.
 
@@ -131,7 +134,7 @@ Le chargement en série de ressources est activé par défaut. To disable the fe
 
 ### Upload assets using FTP {#uploading-assets-using-ftp}
 
-Contenu multimédia dynamique permet le transfert par lots de fichiers par le biais du serveur FTP. Si vous avez l’intention de télécharger des ressources de très grande taille (> 1 Go), ou des dossiers ou des sous-dossiers entiers, utilisez la méthode FTP. Vous pouvez même configurer le transfert FTP pour qu’il s’effectue de manière récurrente.
+Contenu multimédia dynamique permet le téléchargement par lots de fichiers par le biais du serveur FTP. Si vous avez l’intention de télécharger des ressources de très grande taille (> 1 Go), ou des dossiers ou des sous-dossiers entiers, utilisez la méthode FTP. Vous pouvez même configurer le transfert FTP pour qu’il s’effectue de manière récurrente.
 
 >[!NOTE]
 >
@@ -139,7 +142,7 @@ Contenu multimédia dynamique permet le transfert par lots de fichiers par le bi
 
 >[!NOTE]
 >
->Pour télécharger des fichiers par FTP dans Contenu multimédia dynamique - Mode Scene7 - Installez Feature Pack (FP) 18912 sur l’auteur d’AEM. Contactez l’assistance technique Adobe pour obtenir l’accès à FP-18912 et terminer la configuration de votre compte FTP. Voir la section [Installation du pack de fonctionnalités 18912 pour la migration des ressources en bloc](/help/assets/bulk-ingest-migrate.md).
+>Pour télécharger des fichiers par FTP dans Contenu multimédia dynamique - Mode Scene7 : installez Feature Pack (FP) 18912 sur l’auteur d’AEM. Contactez l’assistance technique Adobe pour obtenir l’accès à FP-18912 et terminer la configuration de votre compte FTP. Voir la section [Installation du pack de fonctionnalités 18912 pour la migration des ressources en bloc](/help/assets/bulk-ingest-migrate.md).
 Si vous utilisez le protocole FTP pour télécharger des ressources, les paramètres de téléchargement spécifiés dans AEM sont ignorés. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
 
 **Pour télécharger des ressources via FTP, procédez comme suit :**
@@ -155,7 +158,7 @@ Si vous utilisez le protocole FTP pour télécharger des ressources, les paramè
 
    >[!NOTE]
    >
-   >Lorsque vous téléchargez des fichiers par FTP, les options de tâche de téléchargement que vous définissez dans Dynamic Media Classic (Scene7) prennent le pas sur les paramètres de traitement des fichiers définis dans AEM.
+   >Lorsque vous téléchargez des fichiers par FTP, les options de tâche de téléchargement que vous définissez dans Dynamic Media Classic (Scene7) prévalent sur les paramètres de traitement des fichiers définis dans AEM.
 
 1. In the lower-right corner of the **[!UICONTROL Upload Job Options]** dialog box, tap **[!UICONTROL Save]**.
 1. In the lower-right corner of the **[!UICONTROL Upload]** page, tap **[!UICONTROL Submit Upload]**.
@@ -175,7 +178,7 @@ Si vous utilisez le protocole FTP pour télécharger des ressources, les paramè
 | Options de tâche |  | Tap/ click **[!UICONTROL Job Options]** to open the [!UICONTROL Upload Job Options] dialog box and choose options that affect the entire upload job. Ces options sont identiques pour tous les types de fichiers.<br>Vous pouvez choisir les options par défaut pour télécharger les fichiers en commençant sur la page Paramètres généraux de l’application. Pour ouvrir cette page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application.]**. Tap the **[!UICONTROL Default Upload Options]** button to open the [!UICONTROL Upload Job Options] dialog box. |
 |  | Quand | Sélectionnez Unique ou Périodique. Pour définir une tâche périodique, sélectionnez une option de répétition (Quotidien, Hebdomadaire, Mensuel ou Personnalisé) afin d’indiquer la fréquence souhaitée pour la tâche de transfert FTP. Indiquez ensuite les options de planification suivant vos besoins. |
 |  | Inclure les sous-dossiers | Téléchargez tous les sous-dossiers du dossier que vous avez l’intention de télécharger. Les noms du dossier et des sous-dossiers transférés sont saisis automatiquement dans AEM Assets. |
-|  | Options de recadrage | Pour recadrer manuellement une image par ses côtés, sélectionnez le menu Recadrer, puis choisissez Manuel. Indiquez ensuite le nombre de pixels à recadrer d’un seul côté ou de chaque côté de l’image. La proportion de l’image qui est rognée dépend du paramètre ppp (pixels par pouce) défini dans le fichier d’image. Par exemple, si l’image affiche 150 ppp et que vous saisissez 75 dans les zones de texte Haut, Droite, Bas et Gauche, un demi-pouce est rogné de chaque côté.<br> Pour supprimer automatiquement d’une image les pixels représentant des espaces blancs, sélectionnez le menu Recadrer, cliquez sur Manuel, puis saisissez les mesures en pixels dans les champs Haut, Droite, Bas et Gauche pour recadrer au niveau des bords. Vous pouvez également sélectionner Rognage dans le menu Recadrer et choisir les options suivantes :<br> **Rogner en fonction de** <ul><li>**Couleur** - Choisissez l&#39;option Couleur. Sélectionnez ensuite le menu Coin, puis choisissez l’angle de l’image présentant la couleur qui correspond le mieux à l’espace blanc à rogner.</li><li>**** Transparence : sélectionnez l’option Transparence.<br> **Tolérance** - Faites glisser le curseur pour définir une tolérance de 0 à 1.Pour le rognage en fonction de la couleur, indiquez 0 pour rogner les pixels uniquement s’ils correspondent exactement à la couleur que vous avez sélectionnée dans l’angle de l’image. Les valeurs qui se rapprochent de 1 autorisent une plus grande différence de couleurs.<br>Pour l’option de rognage en fonction de la transparence, indiquez 0 pour rogner les pixels seulement s’ils sont transparents. Les valeurs plus proches de 1 permettent une plus grande transparence.</li></ul><br>Notez que ces options de recadrage sont non destructives. |
+|  | Options de recadrage | Pour recadrer manuellement une image par ses côtés, sélectionnez le menu Recadrer, puis choisissez Manuel. Indiquez ensuite le nombre de pixels à recadrer d’un seul côté ou de chaque côté de l’image. La proportion de l’image qui est rognée dépend du paramètre ppp (pixels par pouce) défini dans le fichier d’image. Par exemple, si l’image affiche 150 ppp et que vous saisissez 75 dans les zones de texte Haut, Droite, Bas et Gauche, un demi-pouce est rogné de chaque côté.<br> Pour supprimer automatiquement d’une image les pixels représentant des espaces blancs, sélectionnez le menu Recadrer, cliquez sur Manuel, puis saisissez les mesures en pixels dans les champs Haut, Droite, Bas et Gauche pour recadrer au niveau des bords. Vous pouvez également sélectionner Rognage dans le menu Recadrer et choisir les options suivantes :<br> **Rogner en fonction de** <ul><li>**Couleur** - Choisissez l&#39;option Couleur. Sélectionnez ensuite le menu Coin, puis choisissez l’angle de l’image présentant la couleur qui correspond le mieux à l’espace blanc à rogner.</li><li>**** Transparence : sélectionnez l’option Transparence.<br> **Tolérance** : faites glisser le curseur pour définir une tolérance comprise entre 0 et 1. Pour effectuer un rognage en fonction de la couleur, indiquez 0 pour rogner les pixels uniquement s’ils correspondent exactement à la couleur sélectionnée dans l’angle de l’image. Les valeurs qui se rapprochent de 1 autorisent une plus grande différence de couleurs.<br>Pour l’option de rognage en fonction de la transparence, indiquez 0 pour rogner les pixels seulement s’ils sont transparents. Les valeurs plus proches de 1 permettent une plus grande transparence.</li></ul><br>Notez que ces options de recadrage sont non destructives. |
 |  | Options de profils de couleurs | Sélectionnez une conversion de couleurs lorsque vous créez des fichiers optimisés utilisés pour la livraison :<ul><li>Conservation des couleurs par défaut : conserve les couleurs des images sources lorsque les images comportent des informations d’espace colorimétrique ; il n’y a aucune conversion des couleurs. Actuellement, le profil colorimétrique approprié est déjà intégré dans pratiquement toutes les images. Cependant, si une image source CMJN ne contient pas de profil colorimétrique intégré, les couleurs sont converties dans l’espace colorimétrique sRVB (Rouge Vert Bleu standard). sRVB est l’espace colorimétrique recommandé pour l’affichage d’images sur des pages web.</li><li>Conserver l’espace colorimétrique original : conserve les couleurs d’origine sans conversion des couleurs au niveau du point. Pour les images sans profil colorimétrique incorporé, toute conversion des couleurs s’effectue à l’aide des profils colorimétriques par défaut configurés dans les Paramètres de publication. Les profils de couleurs peuvent ne pas correspondre aux couleurs des fichiers créés avec cette option. Par conséquent, vous êtes invité à utiliser l’option de conservation des couleurs par défaut.</li><li>Personnaliser de > en<br> Permet d’accéder aux menus pour sélectionner un espace colorimétrique source (Convertir de) et un espace colorimétrique cible (Convertir en). Cette option avancée remplace toutes les informations de couleur incorporées dans le fichier source. Sélectionnez cette option uniquement lorsque toutes les images que vous envoyez contiennent des données de profil de couleurs incorrectes ou manquantes.</li></ul> |
 |  | Options d’édition d’images | Vous pouvez conserver les masques d’écrêtage dans les images et choisir un profil de couleurs.<br> Voir [Définition des options d’édition d’image lors du téléchargement](#setting-image-editing-options-at-upload). |
 |  | Options Postscript | Vous pouvez pixelliser les fichiers PostScript®, recadrer les fichiers, conserver les arrière-plans transparents et choisir une résolution ainsi qu’un espace colorimétrique.<br> Voir [Définition des options de téléchargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
@@ -202,7 +205,7 @@ When uploading image files, including AI, EPS, and PSD files, you can take the f
 | Masquage flou |  | Permet d’affiner l’effet du filtre d’accentuation sur l’image sous-échantillonnée finale, en contrôlant l’intensité et le rayon de l’effet (mesuré en pixels), et un seuil de contraste qui est ignoré.<br> Cet effet utilise les mêmes options que le filtre de masquage flou de Photoshop. Contrairement à ce que suggère le nom, le masquage flou est un filtre d’accentuation. Sous Masquage flou, définissez les options de votre choix. Les options de paramètre sont décrites dans ce qui suit : |
 |  | Quantité | Contrôle le degré de contraste appliqué aux pixels de contour.<br> Considérez cela comme l’intensité de l’effet. La principale différence entre les valeurs de quantité du masquage flou dans Dynamic Media et les valeurs de quantité dans Adobe Photoshop réside dans le fait que la plage de quantité dans Photoshop est comprise entre 1 % et 500 %. En revanche, dans Dynamic Media, la plage de valeurs est comprise entre 0,0 et 5,0. Une valeur de 5,0 équivaut environ à 500 % dans Photoshop ; une valeur de 0,9 équivaut à 90 %, etc. |
 |  | Rayon | Contrôle le rayon de l’effet. La plage de valeurs est comprise entre 0 et 250.<br> L’effet est exécuté sur tous les pixels d’une image et s’étend depuis tous les pixels dans toutes les directions. Le rayon est mesuré en pixels. Par exemple, pour obtenir un effet d’accentuation comparable dans des images de 2 000 x 2 000 pixels et de 500 x 500 pixels, définissez une valeur de rayon de deux pixels pour l’image de 2 000 x 2 000 pixels et d’un pixel pour l’image de 500 x 500 pixels. Utilisez une valeur plus élevée pour une image avec plus de pixels. |
-|  | Seuil | Le seuil est une plage de contraste qui est ignorée lorsque le filtre de masquage flou est appliqué. Cela est important, de sorte qu’aucun « bruit » ne soit introduit dans une image lorsque ce filtre est utilisé. La plage de valeurs est comprise entre 0 et 255, ce qui correspond au nombre de degrés de luminosité dans une image en niveaux de gris. 0 = noir, 128 = 50 % gris et 255 = blanc.<br> Par exemple, une valeur de seuil de 12 ignore les légères variations de la luminosité de la peau pour éviter d’ajouter du bruit, mais ajoute tout de même un contraste de bord aux zones contrastées, comme celles où les cils rencontrent la peau.<br> Par exemple, si vous avez une photo du visage d’une personne, le masquage flou affecte les parties contrastées de l’image, comme l’endroit où se rencontrent les cils et la peau pour créer une zone de contraste évidente et la peau lisse elle-même. Même la peau la plus lisse affiche des variations subtiles de ses valeurs de luminosité. Si vous n’utilisez aucune valeur de seuil, le filtre accentue ces changements subtils dans les pixels de la peau. Un effet de bruit indésirable est alors créé lorsque le contraste sur les cils est augmenté, ce qui améliore la netteté.<br> Pour éviter ce problème, utilisez une valeur de seuil qui indique au filtre d’ignorer les pixels qui ne modifient pas considérablement le contraste, comme la peau lisse.<br> Dans l’image de fermeture éclair présentée plus haut, remarquez la texture en regard des fermetures. Le bruit d’une image est exposé, car les valeurs de seuil étaient trop faibles pour supprimer le bruit. |
+|  | Seuil | Le seuil est une plage de contraste qui est ignorée lorsque le filtre de masquage flou est appliqué. Cela est important, de sorte qu’aucun « bruit » ne soit introduit dans une image lorsque ce filtre est utilisé. La plage de valeurs est comprise entre 0 et 255, ce qui correspond au nombre de degrés de luminosité dans une image en niveaux de gris. 0 = noir, 128 = 50 % gris et 255 = blanc.<br> Par exemple, une valeur de seuil de 12 ignore les légères variations de luminosité de la peau pour éviter d’ajouter du bruit, tout en ajoutant un contraste sur les bords dans les zones contrastées telles que les zones où les cils rencontrent la peau.<br> Par exemple, si vous avez une photo du visage d’une personne, le masquage flou affecte les parties contrastées de l’image, comme l’endroit où les cils et la peau se rencontrent pour créer une zone de contraste évidente et la peau lisse elle-même. Même la peau la plus lisse affiche des variations subtiles de ses valeurs de luminosité. Si vous n’utilisez aucune valeur de seuil, le filtre accentue ces changements subtils dans les pixels de la peau. Un effet de bruit indésirable est alors créé lorsque le contraste sur les cils est augmenté, ce qui améliore la netteté.<br> Pour éviter ce problème, utilisez une valeur de seuil qui indique au filtre d’ignorer les pixels qui ne modifient pas considérablement le contraste, comme la peau lisse.<br> Dans l’image de fermeture éclair présentée plus haut, remarquez la texture en regard des fermetures. Le bruit d’une image est exposé, car les valeurs de seuil étaient trop faibles pour supprimer le bruit. |
 |  | Monochrome | Sélectionnez cette option pour appliquer le masquage flou sur la luminosité de l’image (intensité).<br> Désélectionnez-la pour appliquer le masquage flou séparément sur chaque composante de couleur. |
 | Masquer l’arrière-plan. |  | Supprime automatiquement l’arrière-plan d’une image lorsque vous la téléchargez. Cette technique est utile pour attirer l’attention sur un objet précis et pour le faire ressortir dans un arrière-plan chargé. Sélectionnez cette option pour activer la fonction Masquage de l’arrière-plan et les sous-options suivantes : |
 |  | Coin | Requis.<br> Coin de l’image servant à définir la couleur d’arrière-plan à masquer.<br> Vous pouvez choisir parmi **Supérieur gauche**, **Bas et gauche**, **Supérieur droit** ou **Bas et droite**. |
@@ -277,11 +280,11 @@ Vous pouvez transcoder un fichier vidéo en sélectionnant une option parmi dive
 
 | Option | Sous-option | Description |
 |---|---|---|
-| Vidéo adaptative |  | Un paramètre prédéfini de codage unique qui fonctionne avec n’importe quel format pour créer des vidéos pour les  mobiles, les tablettes et les ordinateurs de bureau. Les vidéos source transférées qui sont codées à l’aide de ce paramètre prédéfini sont définies avec une hauteur fixe. Toutefois, la largeur est automatiquement mise à l’échelle pour conserver les proportions de la vidéo. <br>Il est recommandé d’utiliser le codage de vidéo adaptative. |
+| Vidéo adaptative |  | Un paramètre prédéfini de codage unique qui fonctionne avec n’importe quelle proportion pour créer des vidéos pour diffusion sur mobile, tablette et ordinateur de bureau. Les vidéos source transférées qui sont codées à l’aide de ce paramètre prédéfini sont définies avec une hauteur fixe. Toutefois, la largeur est automatiquement mise à l’échelle pour conserver les proportions de la vidéo. <br>Il est recommandé d’utiliser le codage de vidéo adaptative. |
 | Paramètres prédéfinis de codage uniques | Trier les paramètres prédéfinis de codage | Sélectionnez Nom ou Taille pour trier les paramètres prédéfinis de codage répertoriés sous Bureau, Mobile et Tablette par nom ou par taille de résolution. |
-|  | Poste de travail | Créez un fichier MP4 pour diffuser une expérience vidéo en flux continu ou progressive sur les ordinateurs de bureau.Sélectionnez un ou plusieurs formats avec la taille de résolution et le débit de données  que vous souhaitez. |
-|  | Mobile | Créez un fichier MP4 pour les  sur les périphériques mobiles iPhone ou Android.Sélectionnez un ou plusieurs formats avec la taille de résolution et le débit de données  de votre choix. |
-|  | Tablette | Créez un fichier MP4 pour les  de sur les tablettes iPad ou Android.Sélectionnez un ou plusieurs formats avec la taille de résolution et le débit de données  de de votre choix. |
+|  | Poste de travail | Créez un fichier MP4 pour diffuser une expérience vidéo progressive ou en flux continu sur des ordinateurs de bureau.Sélectionnez un ou plusieurs formats avec la taille de résolution et le débit de données de cible désirés. |
+|  | Mobile | Créez un fichier MP4 pour la diffusion sur les appareils mobiles iPhone ou Android.Sélectionnez un ou plusieurs formats avec la taille de résolution et le débit de données de cible désirés. |
+|  | Tablette | Créez un fichier MP4 pour la diffusion sur les tablettes iPad ou Android.Sélectionnez un ou plusieurs proportions avec la taille de résolution et le débit de données de cible désirés. |
 
 #### Set Batch Set Presets at upload {#setting-batch-set-presets-at-upload}
 
@@ -303,7 +306,7 @@ Sélectionnez une archive ZIP à la fois, cliquez sur **[!UICONTROL Extraire l�
 
 Une fois l’extraction terminée, AEM vous avertit dans la zone de notification. Lorsqu’AEM extrait le fichier ZIP, vous pouvez reprendre votre travail sans interrompre l’extraction.
 
-![Notification de  ZIP](assets/zip_extract_notification.png)
+![Notification de l&#39;extraction ZIP](assets/zip_extract_notification.png)
 
 La fonctionnalité présente certaines limites :
 
@@ -317,7 +320,7 @@ La fonctionnalité présente certaines limites :
 
 **Prévisualisation d’une ressource**:
 
-1. Dans l’interface utilisateur Ressources, accédez à l’emplacement de la ressource que vous souhaitez .
+1. Dans l’interface utilisateur Ressources, accédez à l’emplacement de la ressource que vous souhaitez prévisualisation.
 1. Appuyez sur la ressource concernée pour l’ouvrir.
 
 1. En mode Aperçu, les options de zoom sont disponibles pour les [types d’images pris en charge](assets-formats.md#supported-raster-image-formats) (avec modification interactive).
@@ -332,7 +335,7 @@ La fonctionnalité présente certaines limites :
 
 >[!MORELIKETHIS]
 >
->* [de fichiers](/help/assets/previewing-assets.md)de médias dynamiques.
+>* [Prévisualisation des ressources](/help/assets/previewing-assets.md)de médias dynamiques.
 >* [Affichage des sous-ressources](managing-linked-subassets.md#viewing-subassets).
 
 
@@ -350,17 +353,17 @@ La fonctionnalité présente certaines limites :
 
 1. Pour planifier une date/heure spécifique pour l’activation de la ressource, utilisez le sélecteur de date situé en regard du champ **[!UICONTROL Heure d’activation]**.
 
-   ![Définissez le délai d’activation pour que les ressources soient disponibles pendant une période fixe entre le moment d’activation et de désactivation.](assets/chlimage_1-12.png)
+   ![Définir à l’heure pour que les ressources soient disponibles pendant une période fixe entre l’heure d’activation et de désactivation.](assets/chlimage_1-12.png)
 
 1. To deactivate the asset after a particular duration, choose the deactivation date and time from the date picker beside the **[!UICONTROL Off Time]** field.
 
    La date de désactivation doit être postérieure à la date d’activation de la ressource. Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web Assets ou via l’API HTTP.
 
-   ![Heure d’activation pour que les ressources cessent leur disponibilité après une certaine période](assets/chlimage_1-13.png)
+   ![Interruption de la durée de disponibilité des ressources après une certaine période](assets/chlimage_1-13.png)
 
 1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. To add a custom tag, type the name of the tag in the box and press **[!UICONTROL Enter]**. La nouvelle balise est enregistrée dans AEM.
 
-   YouTube exige que les balises soient publiées et qu’un lien vers YouTube soit créé (si un lien approprié est trouvé).
+   YouTube requiert la publication de balises et la présence d’un lien vers YouTube (si un lien approprié est trouvé).
 To create tags, you require write permission for `/content/cq:tags/default` in the CRX repository.
 
 1. To provide a rating to the asset, tap the **[!UICONTROL Advanced]** tab and then tap the star at the appropriate position to assign the desired rating.
@@ -379,7 +382,7 @@ To create tags, you require write permission for `/content/cq:tags/default` in t
    Pour plus d’informations, reportez-vous à la section [Informations sur les ressources](touch-ui-asset-insights.md).
 
 1. Appuyez sur **[!UICONTROL Save &amp; Close]** (Enregistrer et fermer). 
-1. Accédez à l’IU Assets. Les propriétés de métadonnées modifiées, y compris le titre, la description, les évaluations, etc., sont affichées sur la carte de ressources dans le  de carte et sous les colonnes appropriées dans le  de.
+1. Accédez à l’IU Assets. Les propriétés de métadonnées modifiées, y compris le titre, la description, les évaluations, etc., sont affichées sur la carte de ressources dans la vue de carte et sous les colonnes appropriées dans la vue de liste.
 
 ## Copie de ressources {#copying-assets}
 
@@ -387,7 +390,7 @@ Lorsque vous copiez une ressource ou un dossier, l’intégralité de la ressour
 
 Quelques attributs uniques à une copie spécifique d’une ressource ne sont pas reportés. Voici quelques exemples :
 
-* ID du fichier, date et heure de création, versions et historique des versions. Some of these properties are indicated by the properties `jcr:uuid`, `jcr:created`, and `cq:name`.
+* ID de la ressource, date et heure de création, versions et historique des versions. Certaines de ces propriétés sont indiquées par les propriétés `jcr:uuid`, `jcr:created` et `cq:name`.
 
 * L’heure de création et les chemins référencés sont uniques pour chaque ressource et chaque rendu.
 
@@ -459,11 +462,11 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 1. Vous pouvez ajouter ou supprimer des rendus correspondant à une ressource, à l’exception de celle d’origine. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez ajouter ou supprimer des rendus.
 
-1. Appuyez sur le fichier pour ouvrir sa page de ressources.
+1. Appuyez sur la ressource pour ouvrir sa page de ressources.
 
    ![chlimage_1-15](assets/chlimage_1-15.png)
 
-1. Appuyez sur l’icône Navigation **** globale, puis sélectionnez **[!UICONTROL Rendus]** dans le .
+1. Appuyez sur l’icône **[!UICONTROL Navigation]** globale et sélectionnez **[!UICONTROL Rendus]** dans la liste.
 
    ![renditions_menu](assets/renditions_menu.png)
 
@@ -479,11 +482,11 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    **Suppression d’un rendu**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap the **[!UICONTROL Delete Rendition]** icon from the [toolbar](/help/sites-authoring/basic-handling.md).
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap the **[!UICONTROL Delete Rendition]** icon from the [toolbar](/help/sites-authoring/basic-handling.md). Les rendus ne peuvent pas être supprimés en bloc une fois le traitement des ressources terminé. Pour les fichiers individuels, vous pouvez supprimer des rendus manuellement de l’interface utilisateur. Pour plusieurs ressources, vous pouvez personnaliser Experience Manager pour supprimer des rendus spécifiques ou supprimer les ressources et télécharger à nouveau les ressources supprimées.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
-   **Chargement d’un nouveau rendu**
+   **Téléchargement d’un nouveau rendu**
 
    Navigate to the asset details page for the asset, and tap the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
@@ -519,7 +522,7 @@ Pour pouvoir supprimer une ressource, vous devez disposer des autorisations appr
 
 **Pour supprimer des fichiers**:
 
-1. Accédez à l’emplacement des fichiers à supprimer.
+1. Accédez à l&#39;emplacement des fichiers à supprimer.
 
 1. Select the asset, and tap the **[!UICONTROL Delete]** icon from the toolbar.
 
@@ -544,7 +547,7 @@ Voir [Téléchargement de ressources à partir d’AEM](download-assets-from-aem
 
 ## Publication des ressources {#publishing-assets}
 
-Si vous publiez une ressource qui est en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Attendez que le traitement soit terminé, puis publiez ou republiez le fichier une fois le traitement terminé.
+Si vous publiez une ressource qui est en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Attendez que le traitement soit terminé, puis publiez ou republiez la ressource une fois le traitement terminé.
 
 Si le dossier que vous souhaitez publier comprend un sous-dossier vide, ce dernier n’est pas publié.
 
@@ -555,7 +558,7 @@ Pour obtenir des informations spécifiques à Dynamic Media, voir [Publication 
 1. Accédez à l’emplacement des ressources/du dossier que vous souhaitez publier
 
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap the **[!UICONTROL Quick Publish]** icon from the toolbar.
-1. Si la ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’Assistant. Seules les références qui sont soit non publiées, soit modifiées depuis leur dernière publication, s’affichent. Choisissez les références que vous souhaitez publier.
+1. Si la ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’Assistant. Seules les références non publiées ou modifiées depuis leur dernière publication ou non publiées s’affichent. Choisissez les références que vous souhaitez publier.
 
    ![chlimage_1-21](assets/chlimage_1-21.png)
 
@@ -567,7 +570,7 @@ Lors de l’annulation de la publication d’une ressource complexe, annulez uni
 
 **Pour annuler la publication de fichiers**:
 
-1. Accédez à l’emplacement du fichier ou du dossier de fichiers que vous souhaitez supprimer du de publication  (annuler la publication).
+1. Accédez à l’emplacement du fichier ou du dossier de fichiers à supprimer de l’environnement de publication (annuler la publication).
 
 1. Select the asset or folder to unpublish, and tap the **[!UICONTROL Manage Publication]** icon from the toolbar.
 
@@ -587,7 +590,7 @@ Lors de l’annulation de la publication d’une ressource complexe, annulez uni
 
 ## Create a Closed User Group {#closed-user-group}
 
-Un CUG (Groupe d’utilisateurs fermé) est utilisé pour limiter l’accès à des dossiers de ressources spécifiques publiés à partir d’AEM. Si vous créez un groupe d’utilisateurs fermé pour un fichier, l’accès au dossier (y compris aux ressources du dossier et à ses sous-dossiers) est limité aux membres ou aux groupes attribués. Pour accéder au dossier, ils doivent se connecter à l’aide de leurs informations d’identification de sécurité.
+Un CUG (groupe d’utilisateurs fermé) est utilisé pour limiter l’accès à des dossiers de ressources spécifiques publiés à partir d’AEM. Si vous créez un groupe d’utilisateurs fermé pour un fichier, l’accès au dossier (y compris aux ressources du dossier et à ses sous-dossiers) est limité aux membres ou aux groupes attribués. Pour accéder au dossier, ils doivent se connecter à l’aide de leurs informations d’identification de sécurité.
 
 Le format CUG est un moyen supplémentaire de restreindre l’accès à vos ressources. Vous pouvez également configurer une page de connexion pour le dossier.
 
@@ -607,13 +610,13 @@ Le format CUG est un moyen supplémentaire de restreindre l’accès à vos ress
 1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
 1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’AEM vous a authentifié.
 
-## Recherche de ressources    {#searching-assets}
+## Recherche de ressources  {#searching-assets}
 
 Les recherches de base sont décrites dans la section [Rechercher et filtrer. ](/help/sites-authoring/search.md#search-and-filter) Use the **[!UICONTROL Search]** panel to search for assets, tags, and metadata. Vous pouvez rechercher des parties d’une chaîne en utilisant le caractère générique astérisque. In addition, you can customize the **[!UICONTROL Search]** panel using [Search facets](search-facets.md).
 
-![_panel](assets/filters_panel.png)
+![filtres_panel](assets/filters_panel.png)
 
-Pour les fichiers récemment téléchargés, leurs métadonnées (y compris les titres, balises, etc.) ne sont pas immédiatement disponibles dans le des suggestions qui s’affichent lorsque vous saisissez du texte dans la zone Omnisearch.
+Pour les fichiers récemment téléchargés, leurs métadonnées (y compris les titres, balises, etc.) ne sont pas immédiatement disponibles dans la liste des suggestions qui s’affichent lorsque vous tapez dans la zone Omnisearch.
 
 C’est parce qu’AEM Assets attend jusqu’à l’expiration d’un délai d’attente (par défaut, 1 heure) avant d’effectuer une tâche en arrière-plan afin d’indexer les métadonnées pour toutes les ressources transférées/mises à jour dernièrement et de les ajouter à la liste de suggestions.
 
@@ -624,9 +627,9 @@ Les icônes d’action rapide sont disponibles pour une ressource à la fois. Se
 * Appareils tactiles : appuyez longuement. Par exemple, sur un iPad, vous pouvez appuyer longuement sur une ressource pour afficher les actions rapides.
 * Appareils non tactiles : survolez avec le pointeur. Par exemple, sur un poste de travail, la barre d’actions rapides s’affiche si vous survolez la miniature de la ressource avec le pointeur de la souris.
 
-### Accès et sélection de fichiers {#navigating-and-selecting-assets}
+### Naviguer jusqu’aux fichiers et les sélectionner {#navigating-and-selecting-assets}
 
-You can view, navigate through, and select assets with any of the available views (card, column, list) using the **[!UICONTROL Select]** icon. **[!UICONTROL Sélectionnez]** apparaît comme une action rapide dans le  de carte.
+You can view, navigate through, and select assets with any of the available views (card, column, list) using the **[!UICONTROL Select]** icon. **[!UICONTROL Sélectionnez]** apparaît comme une action rapide dans la vue de cartes.
 
 ![select_quick_action](assets/select_quick_action.png)
 
@@ -662,7 +665,7 @@ Vous pouvez également ajouter des zones cliquables à l’aide de l’éditeur 
 1. Pour ouvrir une ressource en mode d’édition, effectuez l’une des opérations suivantes :
 
    * Select the asset and then click the **[!UICONTROL Edit]** icon in the toolbar.
-   * Appuyez sur l’option **[!UICONTROL Modifier]** qui s’affiche sur un fichier dans le  de carte.
+   * Appuyez sur l’option **[!UICONTROL Modifier]** qui s’affiche sur un fichier dans la vue de carte.
    * In the asset page, tap the **[!UICONTROL Edit]** icon in the toolbar.
    ![edit_icon](assets/edit_icon.png)
 
@@ -675,7 +678,7 @@ Vous pouvez également ajouter des zones cliquables à l’aide de l’éditeur 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
 1. Sélectionnez la zone à recadrer, puis redimensionnez ou repositionnez-la sur l’image.
-1. Utilisez l’option **[!UICONTROL Terminer]** dans le coin supérieur droit pour recadrer l’image. Appuyez sur **[!UICONTROL Terminer]** pour déclencher la régénération des rendus.
+1. Utilisez l’option **[!UICONTROL Terminer]** dans le coin supérieur droit pour recadrer l’image. Appuyer sur **[!UICONTROL Terminer]** déclenche également la régénération des rendus.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -701,12 +704,12 @@ The **[!UICONTROL Timeline]** lets you view various events for a selected item, 
 
 Dans la [console Collections](managing-collections-touch-ui.md#navigating-the-collections-console), la liste **[!UICONTROL Tout afficher]** contient des options permettant de n’afficher que les commentaires et les workflows. De plus, la frise chronologique ne s’affiche que pour les collections de niveau supérieur répertoriées dans la console. Elle ne s’affiche pas si vous accédez à l’intérieur des collections.
 
-**[!UICONTROL La chronologie]** contient plusieurs [options spécifiques aux fragments](content-fragments-managing.md#timeline-for-content-fragments)de contenu ; cette fonctionnalité nécessite [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) ou version ultérieure.
+**[!UICONTROL Le journal]** contient plusieurs [options spécifiques aux fragments](content-fragments-managing.md#timeline-for-content-fragments)de contenu ; cette fonctionnalité nécessite [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) ou version ultérieure.
 
 **Pour utiliser la chronologie**:
 
 1. Ouvrez la page Ressource de la ressource ou sélectionnez cette dernière dans l’IU Assets.
-1. Appuyez sur l’icône Navigation **** globale, puis sélectionnez **Chronologie]** dans le .
+1. Appuyez sur l’icône **[!UICONTROL Navigation]** globale, puis sélectionnez **Chronologie]** dans la liste.
 
    ![chronologie](assets/timeline.png)
 
@@ -726,7 +729,7 @@ Vous pouvez ajouter plusieurs annotations avant de les enregistrer.
 
 Vous pouvez ajouter des annotations aux fichiers vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, voir [Gestion de ressources vidéo](managing-video-assets.md).
 
-Vous pouvez également ajouter des annotations à une collection. Toutefois, si une collection contient des collections enfants, vous pouvez ajouter des annotations ou des commentaires à la collection parente uniquement. The **[!UICONTROL Annotate]** option is not available for child collections.
+Vous pouvez également ajouter des annotations à une collection. Cependant, si une collection contient des collections enfants, vous pouvez ajouter des annotations ou des commentaires à la collection parente uniquement. The **[!UICONTROL Annotate]** option is not available for child collections.
 
 **Pour ajouter des annotations**:
 
@@ -734,18 +737,18 @@ Vous pouvez également ajouter des annotations à une collection. Toutefois, si 
 1. Tap the **[!UICONTROL Annotate]** icon from one of the following:
 
    * [Actions rapides](managing-assets-touch-ui.md#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource    ou avoir accédé à la page de la ressource
+   * Dans la barre d’outils, après avoir sélectionné la ressource  ou avoir accédé à la page de la ressource
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-1. Pour signaler une annotation à un utilisateur, indiquez l’adresse électronique de l’utilisateur et ajoutez le commentaire. Par exemple, pour avertir Aaron McDonald d’une annotation, saisissez @aa. Des conseils à l’usage des utilisateurs correspondant s’affichent dans une liste. Sélectionnez l&#39;adresse électronique d&#39;Aaron dans le  pour l&#39;étiqueter avec le commentaire. De même, vous pouvez marquer d’autres utilisateurs à n’importe quel emplacement de l’annotation, avant ou après celle-ci.
+1. Pour signaler une annotation à un utilisateur, indiquez l’adresse électronique de l’utilisateur et ajoutez le commentaire. Par exemple, pour avertir Aaron McDonald d&#39;une annotation, saisissez @aa. Des conseils à l’usage des utilisateurs correspondant s’affichent dans une liste. Sélectionnez l&#39;adresse électronique d&#39;Aaron dans la liste pour l&#39;étiqueter avec le commentaire. De même, vous pouvez marquer d’autres utilisateurs à n’importe quel emplacement de l’annotation, avant ou après celle-ci.
 
    >[!NOTE]
    >
-   >For a non-administrator user, suggestions appear only if the user has Read permissions at `/home` in CRXDE.
+   >Si l’utilisateur ne dispose pas des droits d’administration, les suggestions s’affichent uniquement s’il dispose de droits de lecture sur `/home` dans CRXDE.
 
    ![chlimage_1-31](assets/chlimage_1-31.png)
 
@@ -768,7 +771,7 @@ Vous pouvez également ajouter des annotations à une collection. Toutefois, si 
 
 1. Pour afficher les annotations enregistrées pour une ressource, accédez à l’emplacement de la ressource et ouvrez la page de la ressource.
 
-1. Appuyez sur l’icône Navigation **** globale et appuyez sur **[!UICONTROL Chronologie]** depuis le .
+1. Appuyez sur l’icône **[!UICONTROL Navigation]** globale, puis sur **[!UICONTROL Chronologie]** depuis la liste.
 
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
@@ -814,9 +817,9 @@ To print the annotations and review status, tap the **[!UICONTROL Print]** icon 
 
    ![chlimage_1-41](assets/chlimage_1-41.png)
 
-   Vous pouvez choisir d’autres paramètres en fonction de l’emplacement où vous souhaitez que les annotations ou l’état apparaissent dans le PDF imprimé. If you want the annotations or status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
+   Vous pouvez choisir d’autres paramètres en fonction de l’emplacement où les annotations ou l’état doivent apparaître dans le PDF imprimé. If you want the annotations or status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
-1. Appuyez sur **[!UICONTROL Imprimer]**. Selon l’option choisie à l’étape 2, le fichier PDF généré affiche les annotations ou l’état à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et l’état de révision à l’aide du paramètre **[!UICONTROL Haut et gauche]**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
+1. Appuyez sur **[!UICONTROL Imprimer]**. Selon l’option que vous sélectionnez à l’étape 2, le fichier PDF généré affiche les annotations ou l’état à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et l’état de révision à l’aide du paramètre **[!UICONTROL Haut et gauche]**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -851,7 +854,7 @@ Si un fichier comprend des annotations en langues étrangères (en particulier e
 
 1. Redémarrez l’instance AEM.
 
-Voici un exemple de configuration d’AEM pour imprimer des annotations en CJK (chinois, japonais et coréen) :
+Voici un exemple de configuration d’AEM pour l’impression d’annotations dans CJK (chinois, japonais et coréen) :
 
 1. Téléchargez les polices Google Noto CJK à partir des liens ci-dessous et enregistrez-les dans le répertoire des polices configuré dans le service Font Manager.
 
@@ -870,7 +873,7 @@ Voici quelques scénarios de création de versions :
 
 * Vous modifiez une image dans une autre application et la téléchargez vers AEM Assets. Une version de l’image est créée afin que votre image d’origine ne soit pas remplacée.
 * Vous modifiez les métadonnées d’une ressource.
-* Vous utilisez l’application de bureau AEM pour extraire une ressource existante et enregistrer vos changements. Une nouvelle version est créée chaque fois que le fichier est enregistré.
+* Vous utilisez l’application de bureau AEM pour extraire une ressource existante et enregistrer vos changements. Une nouvelle version est créée chaque fois que la ressource est enregistrée.
 
 Vous pouvez également activer le contrôle de version automatique à l’aide d’un workflow. Lorsque vous créez une version d’une ressource, les métadonnées et les rendus sont enregistrés avec la version. Les rendus sont d’autres affichages d’une même image (un rendu PNG d’un fichier JPEG téléchargé, par exemple).
 
@@ -880,7 +883,7 @@ La création de versions permet d’effectuer les opérations suivantes :
 * afficher la révision actuelle d’une ressource ;
 * restaurer une version précédente de la ressource.
 
-**Pour créer une version** des fichiers :
+**Pour créer une version** des ressources :
 
 1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez créer une version, puis cliquez dessus pour ouvrir sa page de ressources.
 
@@ -916,9 +919,9 @@ La création de versions permet d’effectuer les opérations suivantes :
 
 1. To generate a preview for the version, click **[!UICONTROL Preview Version]**.
 1. Pour afficher cette version dans l’interface utilisateur d’Assets, sélectionnez **[!UICONTROL Revenir à cette version]**.
-1. Pour comparer entre deux versions, accédez à la page des ressources du fichier et cliquez sur la version à comparer à la version actuelle.
+1. Pour comparer entre deux versions, accédez à la page des ressources de la ressource et cliquez sur la version à comparer à la version actuelle.
 
-   ![Sélectionnez une version précédente du fichier à comparer à la version actuelle.](assets/select_version_tocompare.png)
+   ![Sélectionner une version précédente de la ressource à comparer à la version actuelle](assets/select_version_tocompare.png)
 
 1. Dans la chronologie, sélectionnez la version à comparer, puis faites glisser le curseur vers la gauche pour superposer cette version sur la version actuelle à comparer.
 
