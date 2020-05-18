@@ -3,7 +3,10 @@ title: Guide de réglage des performances des ressources
 description: Traite principalement de la configuration d’AEM, ainsi que des modifications du matériel, des logiciels et des composants réseau pour supprimer les goulets d’étranglement et optimiser la performance d’AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '3201'
+ht-degree: 85%
 
 ---
 
@@ -30,7 +33,7 @@ Afin de réduire les délais de chargement des ressources, utilisez un stockage 
 
 En supposant que le serveur dispose de suffisamment de mémoire, configurez un disque RAM. Sous Linux, exécutez les commandes suivantes pour créer un disque RAM de 8 Go :
 
-```
+```shell
 mkfs -q /dev/ram1 800000
  mkdir -p /mnt/aem-tmp
  mount /dev/ram1 /mnt/aem-tmp
@@ -81,7 +84,7 @@ La mise en œuvre d’un entrepôt de données basé sur les fichiers, partagé 
 
 La configuration de l’entrepôt de données S3 suivante (`org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) a permis à Adobe d’extraire 12,8 To d’objets BLOB (Binary Large Objects) d’un entrepôt de données basé sur les fichiers existant dans un entrepôt de données S3 vers un site client :
 
-```
+```conf
 accessKey=<snip>
  secretKey=<snip>
  s3Bucket=<snip>
@@ -125,7 +128,7 @@ Dans la mesure du possible, définissez le workflow Ressource de mise à jour de
 
 1. Open `http://localhost:4502/miscadmin` on the AEM instance you want to configure.
 
-1. Dans l’arborescence de navigation, développez **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]** > **[!UICONTROL dam]**.
+1. Dans l’arborescence de navigation, développez **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]** > **[!UICONTROL dam]**.
 1. Double-cliquez sur **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**.
 1. Depuis le panneau d’outils flottant, basculez vers l’onglet **[!UICONTROL Page]**, puis cliquez sur **[!UICONTROL Propriétés de la page]**.
 1. Sélectionnez **[!UICONTROL Processus transitoire]**, puis cliquez sur **[!UICONTROL OK]**.
@@ -156,7 +159,7 @@ Configurer une file d’attente à la moitié des processeurs disponibles est un
 
 ### Déchargement {#offloading}
 
-Pour un volume élevé de  ou de  gourmands en ressources, tels que le transcodage vidéo, vous pouvez décharger DAM Update Asset sur une deuxième instance d’auteur. Un problème récurrent avec le déchargement est que tout chargement enregistré via le déchargement du traitement des workflows est compensé par le coût de la réplication du contenu dans les deux sens entre les instances.
+Pour un volume élevé de workflows ou de workflows gourmands en ressources, tels que le transcodage vidéo, vous pouvez décharger les workflows de mise à jour des actifs de gestion des actifs numériques vers une deuxième instance d’auteur. Un problème récurrent avec le déchargement est que tout chargement enregistré via le déchargement du traitement des workflows est compensé par le coût de la réplication du contenu dans les deux sens entre les instances.
 
 À partir des versions 6.2 d’AEM avec un pack de fonctionnalités pour AEM 6.1, vous pouvez procéder au déchargement avec une réplication moins binaire. Dans ce modèle, les instances d’auteur partagent un entrepôt de données commun et envoient uniquement les métadonnées dans les deux sens via une réplication différée. Bien que cette technique fonctionne bien avec un entrepôt de données basé sur les fichiers partagé, certains problèmes peuvent survenir avec un entrepôt de données S3. Étant donné que les threads d’écriture en arrière-plan peuvent provoquer une certaine latence, il est possible qu’une ressource ne puisse avoir été écrite dans l’entrepôt de données avant le lancement de la tâche.
 
@@ -180,7 +183,7 @@ Les clients utilisent des images de tailles et de formats différents sur leur s
 
 De nombreux clients de sites mettent en œuvre un servlet d’image qui redimensionne ou recadre les images lorsque cela est nécessaire, ce qui a pour effet d’appliquer une charge supplémentaire à l’instance de publication. Toutefois, tant que ces images peuvent être mises en cache, le défi peut être plus facilement relevé.
 
-Une autre méthode consiste à utiliser la technologie Scene7 pour transférer entièrement la manipulation de l’image. De plus, vous pouvez déployer le portail de marque qui prend en charge non seulement les responsabilités de génération de rendu de l’infrastructure AEM, mais également l’ensemble du niveau de publication.
+Une autre méthode consiste à utiliser la technologie Scene7 pour transférer entièrement la manipulation de l’image. En outre, vous pouvez déployer le portail de marque qui prend en charge non seulement les responsabilités de génération de rendu de l’infrastructure AEM, mais également l’ensemble du niveau de publication.
 
 #### ImageMagick {#imagemagick}
 
@@ -211,7 +214,7 @@ En outre, définissez le chemin du dossier temporaire d’ImageMagick dans le fi
 >
 >The ImageMagick `policy.xml` and `configure.xml` files may be found under `/usr/lib64/ImageMagick-*/config/` instead of `/etc/ImageMagick/`. See [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for details on the configuration file locations.
 
-Si vous utilisez AEM sur Adobe Managed Services (AMS), contactez le service à la clientèle d’Adobe si vous prévoyez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Experience Manager peut ne pas traiter les fichiers PSB haute résolution de plus de 3 000 x 2 3 000 pixels.
+Si vous utilisez AEM sur Adobe Managed Services (AMS), contactez le service à la clientèle d’Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Experience Manager ne peut pas traiter de fichiers PSB haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 <!-- 
 
@@ -407,13 +410,13 @@ Afin de réduire au maximum la latence et d’obtenir un débit élevé grâce �
 * Utiliser une connexion câblée pour le chargement de ressources volumineuses.
 * Définition de paramètres JVM optimaux.
 * Configurer un entrepôt de données de système de fichiers ou un entrepôt de données S3.
-* Désactivez la génération de sous-ressources. S’il est activé, le processus d’AEM crée un fichier distinct pour chaque page d’un fichier de plusieurs pages. Chacune de ces pages est une ressource individuelle qui consomme de l’espace disque supplémentaire, nécessite un contrôle de version et un traitement de flux de travail supplémentaire. Si vous n’avez pas besoin de pages distinctes, désactivez la génération de sous-ressources et les de  de pages   le.
+* Désactivez la génération de sous-ressources. S’il est activé, le processus d’AEM crée une ressource distincte pour chaque page d’une ressource de plusieurs pages. Chacune de ces pages est une ressource individuelle qui consomme de l&#39;espace disque supplémentaire, nécessite un contrôle de version et un traitement supplémentaire du flux de travail. Si vous n’avez pas besoin de pages distinctes, désactivez la génération de sous-ressources et les activités d’extraction de page.
 * Activer les workflows transitoires.
 * Régler les files d’attente de workflows Granite pour limiter les tâches concurrentes.
 * Configurer ImageMagick pour limiter la consommation de ressources.
 * Supprimer les étapes inutiles du workflow Ressource de mise à jour de gestion des actifs numériques.
 * Configurer la purge des workflows et versions.
-* Optimisez la configuration de l’index Lucene.
+* Optimiser la configuration de l&#39;index Lucene.
 * Optimisez les index avec les derniers Service Pack et correctifs. Vérifiez auprès du support Adobe toutes les optimisations d’index supplémentaires qui pourraient être disponibles.
 * Use `guessTotal` to optimize query performance.
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
