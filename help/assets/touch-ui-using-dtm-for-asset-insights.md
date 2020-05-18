@@ -3,7 +3,10 @@ title: Activation des statistiques sur les ressources via DTM
 description: Découvrez comment utiliser la gestion dynamique des balises Adobe pour activer les statistiques sur les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 57%
 
 ---
 
@@ -25,7 +28,7 @@ Effectuez les étapes suivantes pour activer les statistiques sur les ressources
 1. Création/ouverture d’une propriété web existante
 
    * Select the **[!UICONTROL Web Properties]** tab, and then tap/click **[!UICONTROL Add Property]**.
-   * Update the fields as appropriate, and tap/click **[!UICONTROL Create Property]** (see [documentation](https://helpx.adobe.com/experience-manager/using/dtm.html)).
+   * Update the fields as appropriate, and tap/click **[!UICONTROL Create Property]** (see [documentation](https://helpx.adobe.com/fr/experience-manager/using/dtm.html)).
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
 1. In the **[!UICONTROL Rules]** tab, select **[!UICONTROL Page Load Rules]** from the navigation pane and tap/click **[!UICONTROL Create New Rule]**.
@@ -64,7 +67,7 @@ Effectuez les étapes suivantes pour activer les statistiques sur les ressources
 
 1. Collez le code suivant dans la fenêtre :
 
-   ```
+   ```java
    var sObj;
    
    if (arguments.length > 0) {
