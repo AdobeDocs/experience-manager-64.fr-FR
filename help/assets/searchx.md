@@ -3,18 +3,21 @@ title: Extension de la recherche de ressources
 description: Découvrez comment étendre la recherche dans AEM Assets au-delà des recherches prêtes à l’emploi de ressources par chaînes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 92%
 
 ---
 
 
 # Extension de la recherche de ressources {#extending-assets-search}
 
-Vous pouvez étendre les fonctionnalités de recherche des ressources d’Adobe Experience Manager (AEM). AEM Assets propose des recherches prêtes à l’emploi de ressources par chaînes.
+Vous pouvez étendre la recherche dans Adobe Experience Manager (AEM) Assets. AEM Assets propose des recherches prêtes à l’emploi de ressources par chaînes.
 
-La recherche est effectuée par le biais de l’interface QueryBuilder, de sorte qu’elle puisse être personnalisée avec plusieurs prédicats. You can overlay the default set of predicates in the following directory: `/apps/dam/content/search/searchpanel/facets`.
+La recherche est effectuée par le biais de l’interface QueryBuilder, de sorte qu’elle puisse être personnalisée avec plusieurs prédicats. Vous pouvez remplacer l’ensemble des prédicats par défaut dans le répertoire suivant : `/apps/dam/content/search/searchpanel/facets`.
 
-Vous pouvez également ajouter d’autres onglets au panneau d’administration AEM Assets.
+Vous pouvez également ajouter des onglets supplémentaires au panneau d’administration d’AEM Assets.
 
 >[!CAUTION]
 >
@@ -22,7 +25,7 @@ Vous pouvez également ajouter d’autres onglets au panneau d’administration 
 
 ## Remplacement {#overlaying}
 
-To overlay the preconfigured predicates, copy the `facets` node from `/libs/dam/content/search/searchpanel` to `/apps/dam/content/search/searchpanel/` or specify another `facetURL` property in the searchpanel configuration (the default is to `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+Pour remplacer les prédicats préconfigurés, copiez le nœud `facets` du répertoire `/libs/dam/content/search/searchpanel` dans le répertoire `/apps/dam/content/search/searchpanel/` ou spécifiez une autre propriété `facetURL` dans la configuration du panneau de recherche (la valeur par défaut est `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
 ![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
 
@@ -33,9 +36,9 @@ To overlay the preconfigured predicates, copy the `facets` node from `/libs/dam/
 
 ## Ajout d’onglets {#adding-tabs}
 
-Vous pouvez ajouter d’autres onglets de recherche en les configurant dans l’administrateur des ressources AEM. Pour créer des onglets supplémentaires, procédez comme suit :
+Vous pouvez ajouter des onglets de recherche supplémentaires en les configurant dans le panneau d’administration d’AEM Assets. Pour créer des onglets supplémentaires, procédez comme suit :
 
-1. Create the folder structure `/apps/wcm/core/content/damadmin/tabs,`if it does not already exist, and copy the `tabs` node from `/libs/wcm/core/content/damadmin` and paste it.
+1. Créez la structure de dossiers `/apps/wcm/core/content/damadmin/tabs,`si elle n’existe pas encore, puis copiez le nœud `tabs` dans le répertoire `/libs/wcm/core/content/damadmin` et collez-le.
 1. Créez et configurez le second onglet, le cas échéant.
 
    >[!NOTE]
@@ -44,7 +47,7 @@ Vous pouvez ajouter d’autres onglets de recherche en les configurant dans l’
 
 ## Création de prédicats personnalisés {#creating-custom-predicates}
 
-AEM Assets est fourni avec un ensemble de prédicats prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+AEM Assets est fourni avec un ensemble de prédicats prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
 En plus d’utiliser des prédicats préexistants, les développeurs AEM peuvent créer leur propres prédicats à l’aide de l’[API Query Builder](/help/sites-developing/querybuilder-api.md).
 
@@ -52,11 +55,11 @@ La création de prédicats personnalisés nécessite des connaissances de base s
 
 La pratique recommandée consiste à copier un prédicat existant, puis à le modifier. Sample predicates are located in `/libs/cq/search/components/predicates`.
 
-### Exemple : création d’un prédicat de propriété simple {#example-build-a-simple-property-predicate}
+### Exemple : création d’un prédicat de propriété simple   {#example-build-a-simple-property-predicate}
 
 Pour créer un prédicat de propriété, procédez comme suit :
 
-1. Create a component folder in your projects directory, for example `/apps/geometrixx/components/titlepredicate`.
+1. Créez un dossier de composant dans votre répertoire de projets, par exemple `/apps/geometrixx/components/titlepredicate`.
 1. Ajoutez `content.xml`:
 
    ```xml
@@ -139,7 +142,7 @@ Pour créer un prédicat de propriété, procédez comme suit :
    </script>
    ```
 
-1. Pour rendre le composant disponible, vous devez pouvoir le modifier. To make a component editable, in CRXDE, add a node `cq:editConfig` of primary type `cq:EditConfig`. Pour pouvoir supprimer des paragraphes, ajoutez une propriété `cq:actions` à plusieurs valeurs avec une seule valeur de **DELETE**.
+1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. To make a component editable, in CRXDE, add a node `cq:editConfig` of primary type `cq:EditConfig`. Pour pouvoir supprimer des paragraphes, ajoutez une propriété `cq:actions` à plusieurs valeurs avec une seule valeur de **DELETE**.
 1. Accédez à votre navigateur puis, sur votre exemple de page (par exemple `press.html`), basculez en mode de conception et activez votre nouveau composant pour le système de paragraphes de prédicats (par exemple **left**).
 
 1. En mode d’**édition**, le nouveau composant est désormais disponible dans le sidekick (accessible dans le groupe **Recherche**). Insérez le composant dans la colonne **Prédicats** et saisissez un mot de recherche, par exemple **Diamant**, puis cliquez sur la loupe pour lancer la recherche.
@@ -152,7 +155,7 @@ Pour créer un prédicat de propriété, procédez comme suit :
 
 Pour créer un prédicat de groupe, procédez comme suit :
 
-1. Create a component folder in your projects directory, for example `/apps/geometrixx/components/picspredicate`.
+1. Créez un dossier de composant dans votre répertoire de projets, par exemple `/apps/geometrixx/components/picspredicate`.
 1. Ajoutez `content.xml`:
 
    ```xml
@@ -169,7 +172,7 @@ Pour créer un prédicat de groupe, procédez comme suit :
 
 1. Ajoutez `titlepredicate.jsp`:
 
-   ```xml
+   ```java
    <%--
    
      Sample group predicate component
@@ -246,7 +249,7 @@ Pour créer un prédicat de groupe, procédez comme suit :
        });
    ```
 
-1. Pour rendre le composant disponible, vous devez pouvoir le modifier. To make a component editable, in CRXDE, add a node `cq:editConfig` of primary type `cq:EditConfig`. Pour pouvoir supprimer des paragraphes, ajoutez une propriété `cq:actions` à plusieurs valeurs avec une seule valeur de `DELETE`.
+1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. To make a component editable, in CRXDE, add a node `cq:editConfig` of primary type `cq:EditConfig`. Afin de pouvoir supprimer des paragraphes, ajoutez une propriété à valeurs multiples `cq:actions` avec une valeur unique de `DELETE`.
 1. Accédez à votre navigateur puis, sur votre exemple de page (par exemple `press.html`), basculez en mode de conception et activez votre nouveau composant pour le système de paragraphes de prédicats (par exemple **left**).
 1. En mode d’**édition**, le nouveau composant est désormais disponible dans le sidekick (accessible dans le groupe **Recherche**). Insérez le composant dans la colonne **Prédicats**.
 
@@ -254,18 +257,18 @@ Pour créer un prédicat de groupe, procédez comme suit :
 
 Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigurés.
 
-### FulltextPredicate {#fulltextpredicate}
+### FulltextPredicate   {#fulltextpredicate}
 
 | Propriétés | Type | Description |
 |---|---|---|
-| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `fulltext` |
-| searchCallback | Fonction | Rappel pour déclencher une recherche sur un événement `keyup`. La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch` |
+| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `fulltext` |
+| searchCallback | Fonction | Callback for triggering search on event `keyup`. La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
 | Propriétés | Type | Description |
 |---|---|---|
-| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `property` |
+| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `property` |
 | propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:title` |
 | defaultValue | Chaîne | Valeur par défaut préremplie. |
 
@@ -273,16 +276,16 @@ Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigur�
 
 | Propriétés | Type | Description |
 |---|---|---|
-| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `path` |
+| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `path` |
 | rootPath | Chaîne | Chemin racine du prédicat. La valeur par défaut est `/content/dam` |
 | pathFieldPredicateName | Chaîne | La valeur par défaut est `folder` |
-| showFlatOption | Booléen   | Indicateur pour afficher la case à cocher `search in subfolders`. La valeur par défaut est « true ». |
+| showFlatOption | Booléen | Indicateur pour afficher la case à cocher `search in subfolders`. La valeur par défaut est « true ». |
 
 ### DatePredicate {#datepredicate}
 
 | Propriétés | Type | Description |
 |---|---|---|
-| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
+| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
 | propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:content/jcr:lastModified` |
 | defaultValue | Chaîne | Valeur par défaut préremplie |
 
@@ -291,12 +294,12 @@ Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigur�
 | Propriétés | Type | Description |
 |---|---|---|
 | titre | Chaîne | Ajoute un titre supérieur supplémentaire |
-| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
+| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
 | propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:content/metadata/cq:tags` |
-| effondrement | Chaîne | Réduire le niveau. La valeur par défaut est `level1` |
-| triggerSearch | Booléen   | Indicateur de déclenchement de la recherche lors de la vérification. La valeur par défaut est false. |
+| collapse | Chaîne | Réduire par niveau. La valeur par défaut est `level1` |
+| triggerSearch | Booléen | Indicateur de déclenchement de la recherche lors de la vérification. Par défaut : « false » |
 | searchCallback | Fonction | Rappel pour déclencher la recherche. La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch` |
-| searchTimeoutTime | Nombre | Délai d’expiration avant le déclenchement de searchCallback. Valeur par défaut : 800 ms |
+| searchTimeoutTime | Nombre | Délai d’expiration avant le déclenchement de searchCallback. Valeur par défaut : 800 ms |
 
 ## Personnalisation des résultats de la recherche {#customizing-search-results}
 
