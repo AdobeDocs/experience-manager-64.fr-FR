@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
+source-git-commit: 4d5cc3a785be782e79a53d18cb9bb5beba60f61d
+workflow-type: tm+mt
+source-wordcount: '1827'
+ht-degree: 77%
 
 ---
 
@@ -50,7 +53,7 @@ Une fois que vous serez familiarisé avec ces principes fondamentaux, vous pourr
 * [Articles sur la procédure de configuration](/help/sites-deploying/ht-deploy.md)
 * [Console web](/help/sites-deploying/web-console.md)
 * [Réplication de dépannage](/help/sites-deploying/troubleshoot-rep.md)
-* [Meilleures pratiques](/help/sites-deploying/best-practices.md)
+* [Bonnes pratiques](/help/sites-deploying/best-practices.md)
 * [Déploiement des communautés](/help/communities/deploy-communities.md)
 * [Introduction à la plateforme AEM](/help/sites-deploying/platform.md)
 * [Instructions de performance](/help/sites-deploying/performance-guidelines.md)
@@ -66,7 +69,7 @@ Adobe Experience Manager est un système client-serveur web qui permet de créer
 
 Au niveau infrastructure, AEM fournit les éléments suivants :
 
-* **Web Application Server**: AEM peut être déployé en mode autonome (il comprend un serveur Web Jetty intégré) ou en tant qu’application Web au sein d’un serveur d’applications tiers (WebLogic, WebSphere, etc.).
+* **Application web Server**: AEM peut être déployé en mode autonome (il comprend un serveur Web Jetty intégré) ou en tant qu’application Web au sein d’un serveur d’applications tiers (WebLogic, WebSphere, etc.).
 * **Infrastructure d’application web** : AEM intègre l’infrastructure d’application web Sling qui simplifie l’écriture d’applications web REST orientées contenu.
 * **Référentiel de contenu** : AEM comprend un référentiel de contenu Java (JCR). Il s’agit d’un type de base de données hiérarchique destiné aux données semi-structurées et non structurées. Le référentiel stocke le contenu affiché aux utilisateurs et l’ensemble du code, des modèles et des données internes utilisés par l’application.
 
@@ -115,7 +118,7 @@ AEM Managed Services est une solution complète pour la gestion de l’expérien
 
 Avec AEM Managed Services, les clients peuvent bénéficier des avantages suivants :
 
-**Un délai de mise sur le marché plus rapide :** avec l’infrastructure cloud flexible d’Adobe Managed Services, les entreprises peuvent rapidement planifier, lancer et optimiser des expériences numériques réussies. Adobe gère l’architecture de cloud sans nécessiter de capital, de matériel ou de logiciel supplémentaires. Les ingénieurs de réussite clients d’Adobe vous aident à gérer l’architecture AEM, à configurer et à personnaliser la connexion aux applications dorsales et les meilleures pratiques de mise en service.
+**Un délai de mise sur le marché plus rapide :** avec l’infrastructure cloud flexible d’Adobe Managed Services, les entreprises peuvent rapidement planifier, lancer et optimiser des expériences numériques réussies. Adobe gère l’architecture de cloud sans nécessiter de capital, de matériel ou de logiciels supplémentaires, et les ingénieurs de réussite d’Adobe aident à l’architecture d’AEM, à la mise en service et à la personnalisation de la connexion aux applications dorsales et aux meilleures pratiques de mise en service.
 
 **Meilleures performances :** fournit des expériences numériques fiables pour votre entreprise avec quatre options de disponibilité du service : 99,5 %, 99,9 %, 99,95 % et 99,99 %. De plus, il permet des modèles de sauvegarde automatique et de reprise après sinistre multimode pour garantir la fiabilité et la gestion des situations d&#39;urgence.
 
@@ -125,7 +128,7 @@ Avec AEM Managed Services, les clients peuvent bénéficier des avantages suivan
 
 **Cloud Manager :** composant de l’offre Managed Services d’Adobe Experience Manager, Cloud Manager est un portail en libre-service qui permet aux entreprises de gérer elles-mêmes Adobe Experience Manager dans le cloud. Il inclut un pipeline d’intégration et de distribution continues (CI/CD) qui permet aux équipes informatiques et aux partenaires d’implémentation d’accélérer la livraison de personnalisations ou de mises à jour sans compromettre les performances ou la sécurité. Cloud Manager est uniquement disponible pour les clients d’Adobe Managed Service.
 
-Pour en savoir plus sur Cloud Manager et ses ressources, consultez le [**Guide de l’utilisateur Cloud Manager **](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
+To learn more about Cloud Manager and its resources, please refer to [**Cloud Manager User Guide **](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
 
 ## Prise en main {#getting-started}
 
@@ -139,13 +142,13 @@ On the client-side, AEM works with all modern browsers (**Microsoft Edge**, **In
 
 ### Obtention du logiciel {#getting-the-software}
 
-Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website **](https://licensing.adobe.com/). Business partners can request download access from[**spphelp@adobe.com**](mailto:spphelp@adobe.com).
+Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website **](https://licensing.adobe.com/). Business partners can request download access from[**spphelp@adobe.com **](mailto:spphelp@adobe.com).
 
 Le package logiciel AEM est disponible sous deux formes :
 
-* **** cq-quickstart-6.4.0.jar : Fichier *jar* exécutable autonome qui comprend tout ce dont vous avez besoin pour être opérationnel.
+* **cq-quickstart-6.4.0.jar :** Un fichier *jar* exécutable autonome qui comprend tout ce qui est nécessaire pour être opérationnel.
 
-* **** cq-quickstart-6.4.0.war : Fichier *war* à déployer sur un serveur d’applications tiers.
+* **cq-quickstart-6.4.0.war :** Fichier *war* à déployer sur un serveur d’applications tiers.
 
 In the following section we describe the **standalone installation**. Pour plus d’informations sur l’installation d’AEM au sein d’un serveur d’applications, voir [Installation sur un serveur d’applications](/help/sites-deploying/application-server-install.md).
 
@@ -155,7 +158,7 @@ In the following section we describe the **standalone installation**. Pour plus 
 
    UNIX install location: **/opt/aem**
 
-   Emplacement d’installation de Windows : **`C:\Program Files\aem`**
+   Emplacement d&#39;installation de Windows : **`C:\Program Files\aem`**
 
    Il est aussi courant d’installer les exemples d’instance dans un dossier sur le bureau. Dans tous les cas, cet emplacement est défini de manière générique en tant que  :
 
@@ -274,9 +277,9 @@ Vous pouvez également arrêter et démarrer AEM à partir d’une ligne de comm
 
 Ce dossier contient les scripts shell bash Unix :
 
-* **`start`**: Démarre l’instance
-* `stop`: Arrête l’instance
-* **`status`**: Indique l’état de l’instance.
+* **`start`**: Début de l’instance
+* `stop`: Arrête l&#39;instance
+* **`status`**: Signale l&#39;état de l&#39;instance
 * **`quickstart`**: utilisé pour configurer les informations de démarrage, si nécessaire.
 
 Il existe également des fichiers **`bat`** équivalents pour Windows. Pour plus d’informations, voir :
@@ -291,7 +294,7 @@ AEM démarre et redirige automatiquement le navigateur web vers la page adéquat
 
 Une fois connecté, vous avez accès à AEM. Pour plus d’informations en fonction de votre rôle, reportez-vous aux sections suivantes :
 
-* [Création](/help/sites-authoring/home.md)
+* [Création  ](/help/sites-authoring/home.md)
 * [Administration](/help/sites-administering/home.md)
 * [Développement](/help/sites-developing/home.md)
 * [Gestion](/help/managing/best-practices.md)
@@ -312,7 +315,7 @@ La section ci-dessus doit vous permettre de bien comprendre les principes fondam
 * [Articles sur la procédure de configuration](/help/sites-deploying/ht-deploy.md)
 * [Console web](/help/sites-deploying/web-console.md)
 * [Réplication de dépannage](/help/sites-deploying/troubleshoot-rep.md)
-* [Meilleures pratiques](/help/sites-deploying/best-practices.md)
+* [Bonnes pratiques](/help/sites-deploying/best-practices.md)
 * [Déploiement des communautés](/help/communities/deploy-communities.md)
 * [Introduction à la plateforme AEM](/help/sites-deploying/platform.md)
 * [Instructions de performance](/help/sites-deploying/performance-guidelines.md)
