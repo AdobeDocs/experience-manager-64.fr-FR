@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
+source-git-commit: fbf38e7e41ef33bca5867c7b6eb1f6806ca70a08
 workflow-type: tm+mt
 source-wordcount: '2865'
 ht-degree: 53%
@@ -47,7 +47,6 @@ L’ajout d’un composant Contenu multimédia dynamique à une page équivaut �
 1. Faites glisser un composant Contenu multimédia dynamique que vous souhaitez utiliser sur la page à l’emplacement de votre choix.
 1. Placez le pointeur de la souris directement sur le composant. Lorsque le composant est entouré d’une zone bleue, appuyez une fois pour afficher la barre d’outils du composant. Appuyez sur l’icône **** Configuration (clé à molette).
 1. [Modifiez les composants](#dynamic-media-components) selon vos besoins et cochez la case pour enregistrer les modifications.
-1. 
 
 ### Enabling Dynamic Media components {#enabling-dynamic-media-components}
 
