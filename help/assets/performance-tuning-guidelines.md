@@ -3,9 +3,9 @@ title: Guide de réglage des performances des ressources
 description: Traite principalement de la configuration d’AEM, ainsi que des modifications du matériel, des logiciels et des composants réseau pour supprimer les goulets d’étranglement et optimiser la performance d’AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '3201'
+source-wordcount: '3202'
 ht-degree: 85%
 
 ---
@@ -417,6 +417,6 @@ Afin de réduire au maximum la latence et d’obtenir un débit élevé grâce �
 * Supprimer les étapes inutiles du workflow Ressource de mise à jour de gestion des actifs numériques.
 * Configurer la purge des workflows et versions.
 * Optimiser la configuration de l&#39;index Lucene.
-* Optimisez les index avec les derniers Service Pack et correctifs. Vérifiez auprès du support Adobe toutes les optimisations d’index supplémentaires qui pourraient être disponibles.
+* Optimisez les index avec les derniers Service Pack et correctifs. Contactez le service à la clientèle d’Adobe pour connaître les optimisations d’index supplémentaires éventuellement disponibles.
 * Use `guessTotal` to optimize query performance.
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
