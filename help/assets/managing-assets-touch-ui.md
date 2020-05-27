@@ -4,10 +4,10 @@ description: Découvrez les différentes tâches de gestion et de modification d
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '9812'
-ht-degree: 68%
+source-wordcount: '9813'
+ht-degree: 67%
 
 ---
 
@@ -142,7 +142,7 @@ Contenu multimédia dynamique permet le téléchargement par lots de fichiers pa
 
 >[!NOTE]
 >
->Pour télécharger des fichiers par FTP dans Contenu multimédia dynamique - Mode Scene7 : installez Feature Pack (FP) 18912 sur l’auteur d’AEM. Contactez l’assistance technique Adobe pour obtenir l’accès à FP-18912 et terminer la configuration de votre compte FTP. Voir la section [Installation du pack de fonctionnalités 18912 pour la migration des ressources en bloc](/help/assets/bulk-ingest-migrate.md).
+>Pour télécharger des fichiers par FTP dans Contenu multimédia dynamique - Mode Scene7 : installez Feature Pack (FP) 18912 sur l’auteur d’AEM. Contactez le service à la clientèle d’Adobe pour accéder au FP-18912 et terminer la configuration de votre compte FTP. Voir la section [Installation du pack de fonctionnalités 18912 pour la migration des ressources en bloc](/help/assets/bulk-ingest-migrate.md).
 Si vous utilisez le protocole FTP pour télécharger des ressources, les paramètres de téléchargement spécifiés dans AEM sont ignorés. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
 
 **Pour télécharger des ressources via FTP, procédez comme suit :**
@@ -819,7 +819,7 @@ To print the annotations and review status, tap the **[!UICONTROL Print]** icon 
 
    Vous pouvez choisir d’autres paramètres en fonction de l’emplacement où les annotations ou l’état doivent apparaître dans le PDF imprimé. If you want the annotations or status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
-1. Appuyez sur **[!UICONTROL Imprimer]**. Selon l’option que vous sélectionnez à l’étape 2, le fichier PDF généré affiche les annotations ou l’état à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et l’état de révision à l’aide du paramètre **[!UICONTROL Haut et gauche]**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
+1. Tap **[!UICONTROL Print]**. Selon l’option que vous sélectionnez à l’étape 2, le fichier PDF généré affiche les annotations ou l’état à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et l’état de révision à l’aide du paramètre **[!UICONTROL Haut et gauche]**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
