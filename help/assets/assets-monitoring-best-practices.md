@@ -3,7 +3,10 @@ title: Meilleures pratiques en matière de surveillance des ressources
 description: Meilleures pratiques pour surveiller l’environnement et la performance de votre instance AEM après son déploiement.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+workflow-type: tm+mt
+source-wordcount: '1765'
+ht-degree: 88%
 
 ---
 
@@ -29,7 +32,7 @@ Typiquement, la surveillance des ressources AEM peut être effectuée de deux fa
 
 La surveillance en temps réel est conseillée lors de la phase de test des performances de votre développement ou en cas de charges élevées afin de comprendre les caractéristiques de performance de votre environnement. Typiquement, différents outils peuvent être utilisés pour la surveillance en temps réel. Voici quelques recommandations :
 
-* [Visual VM](https://visualvm.github.io/): Visual VM vous permet d’afficher des informations détaillées sur la machine virtuelle Java, y compris l’utilisation du processeur et de la mémoire Java. En outre, il vous permet de tester et d’évaluer le code exécuté sur une instance.
+* [Visual VM](https://visualvm.github.io/): Visual VM vous permet de vue des informations détaillées sur la machine virtuelle Java, y compris l&#39;utilisation du processeur et de la mémoire Java. En outre, il vous permet de tester et d’évaluer le code exécuté sur une instance.
 * [Top](http://man7.org/linux/man-pages/man1/top.1.html) : Top est une commande Linux ouvrant un tableau de bord qui affiche des statistiques d’utilisation, notamment sur le processeur, la mémoire et les E/S. Vous obtenez ainsi une vue d’ensemble de ce qui se produit sur une instance.
 * [Htop](https://hisham.hm/htop/) : Htop est un utilitaire qui permet de visualiser les processus de manière interactive. Il permet de disposer d’informations détaillées sur l’utilisation du processeur et de la mémoire en plus des informations fournies par Top. Htop can be installed on most Linux systems using `yum install htop` or `apt-get install htop`.
 
@@ -82,7 +85,7 @@ Souvent, il faut une valeur de référence pour que la surveillance des statisti
 
 Comme toutes les piles d’application basées sur Java, AEM dépend des ressources qui lui sont fournies via la machine virtuelle Java sous-jacente. Vous pouvez suivre l’état de ces ressources via les MXBeans de plateforme présentés par JVM. Pour plus d’informations sur les MXBeans, reportez-vous à la section [Utilisation du serveur MBean de plateforme et des MXBeans de plateforme](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
 
-Voici quelques paramètres de ligne de base que vous pouvez surveiller pour JVM :
+Voici quelques paramètres de base que vous pouvez surveiller pour la JVM :
 
 Mémoire
 
@@ -117,7 +120,7 @@ Agents de réplication
 
 * Définition de l’alarme : une file d’attente est bloquée dans le système, indiquant que la cible de réplication n’est pas active ou qu’elle est hors d’atteinte. Très souvent, les problèmes d’infrastructure ou de réseau provoquent la mise en attente d’un nombre excessif d’entrées, ce qui peut affecter les performances du système.
 
-**Remarque**:Pour les paramètres MBean et URL, remplacez `<AGENT_NAME>` par le nom de l&#39;agent de réplication à surveiller.
+**Remarque**: Pour les paramètres MBean et URL, remplacez `<AGENT_NAME>` par le nom de l&#39;agent de réplication à surveiller.
 
 Décompte du nombre de sessions
 
@@ -187,11 +190,9 @@ Si vous rencontrez des problèmes lors du processus de surveillance, voici quelq
 
 * Si vous utilisez TarMK, exécutez souvent la compression Tar. For more details, see [Maintaining the Repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 * Vérifiez `OutOfMemoryError` les journaux. Pour plus d’informations, reportez-vous à la section [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
-
 * Consultez les journaux pour vérifier les références aux requêtes non indexées, ou aux parcours d’arborescence ou d’index. Ils signalent les requêtes non indexées ou indexées de façon inappropriée. For For best practices on optimizing query and indexing performance, see [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilisez la console d’administration des workflow pour vérifier que vos workflow se comportent comme prévu. Si possible, regroupez plusieurs workflow en un seul.
 * Revoyez la surveillance en temps réel et recherchez toute congestion supplémentaire ou recherchez les processus fortement consommateurs de certaines ressources spécifiques.
 * Vérifiez les points de sortie du réseau client et les points d’entrée au réseau de l’instance AEM, Dispatcher compris. Ce sont souvent des zones de congestion. Pour plus d’informations, reportez-vous à la section [Considérations relatives aux ressources réseau](assets-network-considerations.md).
-* Augmentez la capacité de votre serveur AEM. Il est possible que la capacité de votre instance AEM ne soit pas adaptée. L’équipe d’assistance Adobe peut vous aider à déterminer si votre serveur est sous-dimensionné.
+* Augmentez la capacité de votre serveur AEM. Il est possible que la capacité de votre instance AEM ne soit pas adaptée. Le service à la clientèle d’Adobe peut vous aider à déterminer si votre serveur est sous-dimensionné.
 * Consultez les fichiers `access.log` et `error.log` pour trouver les entrées situées autour du moment où le problème est survenu. Recherchez des indices susceptibles d’indiquer la présence d’anomalies au niveau du code personnalisé. Ajoutez-les à la liste d’événements à surveiller.
-
