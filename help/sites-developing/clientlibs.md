@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 translation-type: tm+mt
-source-git-commit: 263e66f6a24a68e1fd64e1b35bf4830f4cba3a44
+source-git-commit: 50d57997496e6809361277f7025f3858857e14af
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 60%
@@ -134,7 +134,7 @@ In previous versions, client library folders were located below `/etc/clientlibs
 
 >[!NOTE]
 >
->Les ressources statiques situées sous le dossier de bibliothèque client doivent se trouver dans un dossier appelé *ressources*. Si vous ne disposez pas des ressources statiques, telles que les images, sous les *ressources* de dossier, elles ne peuvent pas être référencées sur une instance de publication. En voici un exemple : http://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
+>Les ressources statiques situées sous le dossier de bibliothèque client doivent se trouver dans un dossier appelé *ressources*. Si vous ne disposez pas des ressources statiques, telles que les images, sous les *ressources* de dossier, elles ne peuvent pas être référencées sur une instance de publication. En voici un exemple : http://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
 
 >[!NOTE]
 >
