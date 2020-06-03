@@ -4,7 +4,7 @@ description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.4 
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 04002fdd004e11ec7a4a950dac6565fec109e55d
+source-git-commit: 2aa3037b63f745d158eb87c5156808237277990d
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 25%
@@ -237,7 +237,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées ou dés
 
 ## Problèmes connus {#known-issues}
 
-* La mise à jour de [!DNL chrome] la version 83 pose un problème lors de la création de packs. Utilisez d’autres navigateurs disponibles, tels que [!DNL Internet Explorer] et [!DNL Edge], ou d’autres options d’installation de package standard d’AEM pour résoudre le problème.
+* La mise à jour de [!DNL chrome] la version 83 pose un problème lors de la création de packs. Utilisez d’autres navigateurs disponibles, tels que [!DNL Internet Explorer] et [!DNL Firefox], ou d’autres options d’installation de package standard d’AEM pour résoudre le problème.
 
 * Impossible d&#39;envoyer un courrier électronique au serveur SMTP distant à l&#39;aide de l&#39;expéditeur de courrier par défaut d&#39;AEM, car il permet uniquement la communication à l&#39;aide de TLS v1.2. Supprimez le lot `javax.mail:mail:1.5.0-b01` de `system/console` et actualisez les lots pour résoudre le problème.
 
