@@ -3,24 +3,27 @@ title: Prise en charge de Camera Raw
 description: Découvrez comment activer la prise en charge de Camera Raw dans Adobe Experience Manager Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 37%
 
 ---
 
 
 # Prise en charge du traitement des images à l’aide de Camera Raw {#camera-raw-support}
 
-Vous pouvez activer la prise en charge de Camera Raw pour traiter les formats de fichiers bruts, tels que CR2, NEF et RAF, et effectuer le rendu des images au format JPEG. Cette fonctionnalité est prise en charge dans les ressources d’Adobe Experience Manager à l’aide du package [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw disponible via le partage de package.
+Vous pouvez activer la prise en charge de Camera Raw pour traiter les formats de fichiers bruts, tels que CR2, NEF et RAF, et effectuer le rendu des images au format JPEG. Cette fonctionnalité est prise en charge dans les ressources Adobe Experience Manager à l’aide du package [Camera Raw disponible via le partage de packages ou à partir de la distribution](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) de [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)logiciels.
 
 >[!NOTE]
 >
 >La fonctionnalité ne prend en charge que les rendus JPEG. Il est pris en charge sous Windows 64 bits, Mac OS et RHEL 7.x.
 
-Pour activer la prise en charge de Camera Raw dans Adobe Experience Manager Assets, procédez comme suit :
+Pour activer la prise en charge de Camera Raw dans les ressources Adobe Experience Manager, procédez comme suit :
 
-1. Download the [Camera Raw package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from the Package Share.
+1. Téléchargez le package [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw à partir du partage de package ou de la distribution [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)logiciels.
 
-1. Accès `https://[aem_server]:[port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
+1. Accédez à l’adresse `https://[aem_server]:[port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
 
 1. Open the **[!UICONTROL Process Thumbnails]** step.
 
@@ -28,9 +31,10 @@ Pour activer la prise en charge de Camera Raw dans Adobe Experience Manager Asse
 
    * **[!UICONTROL Miniatures]**: `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL Types MIME ignorés]**: `skip:image/dng, skip:image/x-raw-(.*)`
+
    ![limage](assets/chlimage_1-334.png)
 
-1. Dans l’onglet Image **** Web activée, dans le champ **[!UICONTROL Ignorer le]** de `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`, spécifiez.
+1. Dans l’onglet Image **** Web activée, dans le champ **[!UICONTROL Ignorer la Liste]** , spécifiez `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
    ![limage](assets/chlimage_1-335.png)
 
@@ -38,13 +42,14 @@ Pour activer la prise en charge de Camera Raw dans Adobe Experience Manager Asse
 
 1. In the **[!UICONTROL Camera Raw/DNG Handler]** step, add the following configuration in the **[!UICONTROL Arguments]** tab:
 
-   * **[!UICONTROL Types]** Mime : `image/dng` et `image/x-raw-(.*)`
+   * **[!UICONTROL Types]** MIME : `image/dng` et `image/x-raw-(.*)`
    * **[!UICONTROL Commande]**:
 
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
+
    ![chlimage_1-336](assets/chlimage_1-336.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
@@ -57,11 +62,11 @@ Vous pouvez désormais importer des fichiers Camera Raw dans AEM Assets. After y
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
-*Figure : Options du volet latéral*
+*Figure : Options dans le volet latéral*
 
 ![chlimage_1-338](assets/chlimage_1-338.png)
 
-*Figure : Utiliser cette option pour apporter des modifications légères à vos images*
+*Figure : Utilisez cette option pour apporter des modifications légères à vos images*
 
 Après avoir enregistré les modifications apportées à une image Camera Raw, un nouveau rendu `AdjustedPreview.jpg` est généré pour cette image. Pour les types d’images autres que Camera Raw, les modifications sont répercutées dans tous les rendus.
 
