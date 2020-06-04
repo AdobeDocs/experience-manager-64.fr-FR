@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 13e8cbef-698f-4e69-9f8c-f9bee82e9fd1
 translation-type: tm+mt
-source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+workflow-type: tm+mt
+source-wordcount: '481'
+ht-degree: 46%
 
 ---
 
@@ -25,11 +28,11 @@ L’outil de comparaison des pages permet à un utilisateur de comparer la page 
 
 ## Détails de l&#39;opération {#operation-details}
 
-Lors de la comparaison de versions d’une page, la version précédente que l’utilisateur souhaite comparer est recréée par AEM en arrière-plan afin de faciliter la comparaison. Cela est nécessaire pour pouvoir rendre le contenu [pour une comparaison](/help/sites-authoring/page-diff.md#presentation-of-differences)côte à côte.
+Lors de la comparaison de versions d’une page, la version précédente que l’utilisateur souhaite comparer est recréée par AEM en arrière-plan afin de faciliter la comparaison. Ceci est nécessaire pour pouvoir générer le contenu [pour une comparaison](/help/sites-authoring/page-diff.md#presentation-of-differences)côte à côte.
 
-Cette opération de récréation est effectuée par AEM en interne et est transparente pour l’utilisateur et ne nécessite aucune intervention. Cependant, un administrateur qui consulte le référentiel, par exemple dans CRX DE Lite, verrait ces versions recréées dans la structure de contenu.
+Cette opération de récréation est effectuée par AEM en interne et est transparente pour l’utilisateur et ne nécessite aucune intervention. Cependant, un administrateur qui consulte le référentiel par exemple dans CRX DE Lite voit ces versions recréées dans la structure de contenu.
 
-Selon le niveau du correctif AEM, le comportement est différent et peut nécessiter certaines autorisations pour fonctionner correctement.
+Selon le niveau de correctif AEM, le comportement est différent et peut nécessiter certaines autorisations pour fonctionner correctement.
 
 ### Avant AEM 6.4.3 {#prior-to-aem}
 
@@ -37,11 +40,11 @@ Lors de la comparaison du contenu, l’arborescence entière jusqu’à la page 
 
 `/content/versionhistory/<userId>/<site structure>`
 
-En effet, lorsque vous utilisez le mécanisme de différenciation des pages, AEM recrée la version précédente de la page afin d’utiliser la fonctionnalité, l’utilisateur doit disposer de certaines autorisations JCR.
+En effet, lorsque vous utilisez le mécanisme de différences de page, AEM recrée la version précédente de la page, afin d’utiliser la fonction, l’utilisateur doit disposer de certaines autorisations JCR.
 
 >[!CAUTION]
 >
->Pour utiliser la fonction de différences de page, l’utilisateur doit disposer de l’autorisation** Modifier/Créer/Supprimer** sur le noeud `/content/versionhistory`.
+>Pour utiliser la fonction de différenciation des pages, l’utilisateur doit disposer de l’autorisation **Modifier/Créer/Supprimer** sur le noeud `/content/versionhistory`.
 
 ### A compter de la version 6.4.3 d’AEM {#as-of-aem}
 
@@ -49,7 +52,7 @@ Lors de la comparaison du contenu, l’arborescence entière jusqu’à la page 
 
 `/tmp/versionhistory/`
 
-Ce contenu est créé par un utilisateur du service avec des autorisations limitant la visibilité pour l’utilisateur actuel. Pour cette raison, aucune autorisation spéciale n’est requise.
+Ce contenu est créé par un utilisateur de service avec des autorisations limitant la visibilité pour l’utilisateur actuel. Pour cette raison, aucune autorisation spéciale n’est requise.
 
 Une tâche de nettoyage s’exécute automatiquement pour nettoyer ce contenu temporaire.
 
@@ -71,6 +74,6 @@ Cependant, il subsiste un certain nombre de restrictions qui doivent être prise
 * Étant donné que la comparaison s’effectue du côté client et s’exécute au chargement de la page, les réglages apportés au DOM après l’exécution de ce service de comparaison ne sont pas pris en compte. Cela peut avoir une incidence sur éléments suivants :
 
    * Composants qui utilisent AJAX pour intégrer du contenu
-   * Applications sur une seule page (SPA)
+   * des applications sur une seule page ;
    * Composants basés sur JavaScript qui manipulent le DOM lors d’une interaction de l’utilisateur
 
