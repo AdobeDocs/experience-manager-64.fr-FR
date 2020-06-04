@@ -1,9 +1,12 @@
 ---
 title: Utiliser le pixelliseur PDF
-description: Générez des vignettes et des rendus de haute qualité à l’aide de la bibliothèque Adobe PDF Rasterizer.
+description: Générez des miniatures et des rendus de haute qualité à l’aide de la bibliothèque Adobe PDF Rasterizer.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '763'
+ht-degree: 60%
 
 ---
 
@@ -14,23 +17,23 @@ Parfois, lorsque vous téléchargez des fichiers PDF ou AI de grande taille et 
 
 Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit :
 
-* Fichiers AI ou PDF lourds et gourmands en contenu.
-* Les fichiers AI ou PDF avec des miniatures ne sont pas générés de manière dynamique.
+* Fichiers AI ou PDF lourds et encombrants.
+* Fichiers AI ou PDF avec des miniatures non générés en standard.
 * Fichiers AI contenant des couleurs PMS (Pantone Matching System).
 
 Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d’une plus grande qualité par rapport à la sortie native et fournissent donc une expérience d’affichage homogène sur tous les périphériques. La bibliothèque PDF Rasterizer d’Adobe ne prend en charge aucune conversion d’espace colorimétrique. Elle génère toujours une sortie RVB indépendamment de l’espace colorimétrique du fichier source.
 
-1. Installez le module PDF Rasterizer sur votre instance AEM à partir de [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Install the PDF Rasterizer package on your AEM instance from [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) or [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
    >La bibliothèque PDF Rasterizer est disponible sous Windows et Linux uniquement.
 
-1. Accédez à la console de flux de travaux AEM Assets à partir de `https://[AEM_server]:[port]/workflow`.
+1. Accédez à la console de processus AEM Assets à partir de `https://[AEM_server]:[port]/workflow`.
 1. Open the **[!UICONTROL DAM Update Asset]** workflow page.
 1. Configurez les éléments suivants pour ignorer la génération de miniatures et de rendus Web par défaut pour les fichiers PDF et AI :
 
-   * Ouvrez l’étape **[!UICONTROL Processus]** des miniatures, puis ajoutez `application/pdf` ou `application/postscript` dans le champ Ignorer les types **** MIME.
+   * Ouvrez l’étape Processus **** des miniatures, puis ajoutez `application/pdf` ou `application/postscript` dans le champ **[!UICONTROL Ignorer les types]** MIME.
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
    * In the **[!UICONTROL Web Enabled Image]** tab, add `application/pdf` or `application/postscript` under **[!UICONTROL Skip List]** depending upon your requirements.
