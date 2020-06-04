@@ -1,8 +1,8 @@
 ---
-title: Outil de comparaison des pages
-seo-title: Outil de comparaison des pages
-description: L’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences
-seo-description: L’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences
+title: 'Outil de comparaison des pages  '
+seo-title: 'Outil de comparaison des pages  '
+description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences
+seo-description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences
 uuid: cf029ed8-606e-4f12-ac8e-5ea9ebd70b1b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,22 +10,25 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 96%
 
 ---
 
 
-# Outil de comparaison des pages{#page-diff}
+# Outil de comparaison des pages  {#page-diff}
 
 ## Présentation {#introduction}
 
 La création de contenu est un processus itératif. Pour être efficace lorsque vous créez du contenu, vous devez pouvoir voir ce qui a changé d’une version à l’autre. Afficher les versions en alternance est une méthode inefficace avec un fort risque d’erreur. Pour comparer deux pages, il est plus facile pour un auteur d’avoir côte à côte la page en cours et une version antérieure.
 
-De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
+De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences
 
 >[!CAUTION]
 >
->The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>Si vous exécutez une version antérieure à AEM 6.4.3, l’utilisateur doit disposer de l’autorisation **Modifier/Créer/Supprimer** sur le noeud `/content/versionhistory` pour pouvoir utiliser la fonctionnalité.
 >
 >Consultez la section consacrée à l’[outil de comparaison des pages](/help/sites-developing/pagediff.md#operation-details) pour plus d’informations sur cette fonction.
 
@@ -33,14 +36,14 @@ De fait, l’outil de comparaison des pages permet d’afficher côte à côte d
 
 L’outil de comparaison côte à côte permet de comparer les éléments suivants :
 
-* [Versions](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - Version précédente d’une page avec son état actuel
-* [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy avec son plan directeur
-* [Lancements](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Lancer avec sa source
-* [Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) de langue - Une page avant et après (re)traduction
+* [Versions](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) : la version actuelle d’une page et sa version antérieure.
+* [](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copies : une Live Copy et son plan directeur
+* [Lancements](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) : un lancement et sa source
+* [](/help/sites-administering/tc-manage.md#comparing-language-copies)Copies de langue : une page avant et après (re)traduction
 
 Reportez-vous aux rubriques correspondantes pour connaître la procédure de comparaison pour ces différents éléments.
 
-### Présentation des différences {#presentation-of-differences}
+### Présentation des différences   {#presentation-of-differences}
 
 La présentation des différences reste la même, quel que soit le contenu à comparer.
 
@@ -67,13 +70,13 @@ Notez que la couleur bleue est utilisée à la fois pour les modifications et le
 **Modifications HTML**
 
 * Vert foncé : HTML ajouté
-* Rouge - Code HTML supprimé
+* Rouge : HTML supprimé
 
 >[!NOTE]
 >
 >Lorsque vous comparez des copies de langue, la mise en surbrillance est désactivée. En effet, dans la mesure où la traduction modifie tout le contenu, la mise en surbrillance ne présente aucun intérêt.
 
-### Affichage en mode plein écran {#fullscreen-and-exiting}
+### Affichage en mode plein écran   {#fullscreen-and-exiting}
 
 Si vous souhaitez vous concentrer sur un contenu spécifique, vous pouvez cliquer sur l’icône du mode plein écran pour l’un ou l’autre des deux « côtés » de votre comparaison. Cela vous permet d’afficher la version en plein écran dans la fenêtre du navigateur.
 
@@ -95,7 +98,7 @@ Dans certaines situations, l’outil de comparaison des pages peut ne pas détec
 
 * C’est le cas lorsque vous comparez des versions et des lancements. La fonctionnalité ne prend pas en compte les composants dynamiques comme les chemins de navigation, les menus, les listes de produits ou les logos (des composants qui dépendent de la structure du site pour le rendu du contenu).
 * Pour les versions, l’outil de comparaison ne recrée pas la règle de contrôle d’accès ni les relations Live Copy.
-* Si des modifications sont apportées à une image, telles que la modification des attributs alt, title ou src, elles sont surlignées en bleu comme modifiées. Cependant, dans certains cas, l’image a une représentation Base64 de l’attribut src et, même si les deux images sont identiques, elles sont marquées par la différence en raison des différents attributs src.
+* Ainsi, les modifications effectuées sur une image, comme la modification des attributs alt, title ou src, sont indiquées en bleu. Cependant, dans certains cas, l’image a une représentation Base64 de l’attribut src et même si les deux images semblent identiques, elles sont indiquées comme différentes en raison de leur attribut src.
 * L’outil de comparaison ne peut pas détecter la rotation de l’image.
 * Si une page est déplacée, vous ne pouvez plus effectuer de comparaison avec les versions antérieures au déplacement.
 
@@ -103,7 +106,7 @@ Dans certaines situations, l’outil de comparaison des pages peut ne pas détec
 
 >[!NOTE]
 >
->Les versions ne peuvent pas être comparées entre elles. Seule la version actuelle peut être comparée aux autres versions de la page. La version dont les modifications sont mises en surbrillance est toujours la version en cours.
+>Les versions ne peuvent pas être comparées entre elles. Seule la version en cours peut être comparée aux autres versions de la page. La version dont les modifications sont mises en surbrillance est toujours la version en cours.
 
 >[!NOTE]
 >
