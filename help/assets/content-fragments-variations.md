@@ -10,7 +10,10 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 translation-type: tm+mt
-source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '1845'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragments de contenu nécessitent l’application d’ [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](../release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application d’ [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](../release-notes/sp-release-notes.md).
 
 Les [variations](content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonction importante des fragments de contenu, car elles permettent de créer et de modifier des copies du contenu maître pour une utilisation sur des canaux spécifiques et/ou dans des cas spécifiques.
 
@@ -33,7 +36,7 @@ Vous pouvez effectuer diverses autres actions selon le type de données que vous
 * [Insertion de ressources visuelles dans votre fragment](#inserting-assets-into-your-fragment) (images)
 * Sélection entre [Texte enrichi](#rich-text), [Texte brut](#plain-text) et [Texte (Markdown)](#markdown) pour la modification
 
-* [Transfert du contenu](#uploading-content)
+* [Chargement du contenu](#uploading-content)
 
 * [Affichage des statistiques clés](#viewing-key-statistics) (à propos du texte sur plusieurs lignes)
 * [Création d’un résumé de texte](#summarizing-text)
@@ -42,7 +45,7 @@ Vous pouvez effectuer diverses autres actions selon le type de données que vous
 
 >[!CAUTION]
 >
->Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront répercutées sur les pages référencées.
+>Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront également répercutées sur les pages référencées.
 
 ## Création de contenu {#authoring-your-content}
 
@@ -53,7 +56,7 @@ Lorsque vous ouvrez votre fragment de contenu pour le modifier, l’onglet **Var
 
    * sélectionner le [format](#formats) ;
    * voir davantage d’options de modification (pour le format [Texte enrichi](#rich-text)) ;
-   * accéder à un éventail d’[actions.](#actions)
+   * accéder à un éventail d’[actions](#actions).
 
 Par exemple :
 
@@ -80,16 +83,16 @@ L’éditeur plein écran fournit :
 * l’accès à diverses [actions](#actions) ;
 * selon le [format](#formats), des options de mise en forme supplémentaires ([texte enrichi](#rich-text)).
 
-### Actions {#actions}
+### Actions   {#actions}
 
 Les actions suivantes sont également disponibles (pour tous les [formats](#formats)) lorsque l’éditeur plein écran (c’est-à-dire pour le texte sur plusieurs lignes) est ouvert :
 
 * Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text](#plain-text), [Markdown](#markdown))
 * [Affichage des statistiques de texte](#viewing-key-statistics)
-* [Téléchargement du contenu](#uploading-content)
-* [Synchronisation avec le maître](#synchronizing-with-master) (lors de la modification d’une variation)
+* [Chargement du contenu](#uploading-content)
+* [Synchronisation avec le gabarit](#synchronizing-with-master) (lors de la modification d’une variation)
 * [Création d’un résumé de texte](#summarizing-text)
-* [Annotez](content-fragments-variations.md#annotating-a-content-fragment) votre texte
+* [Annotation de](content-fragments-variations.md#annotating-a-content-fragment) votre texte
 
 * [Insertion de ressources visuelles dans votre fragment](#inserting-assets-into-your-fragment) (images)
 
@@ -119,9 +122,9 @@ L’édition de texte enrichi vous permet les mises en forme suivantes :
 
    * Coller le texte/à partir de Word
    * Insérer un tableau
-   * Style de paragraphe : paragraphe et en-tête 1/2/3 
+   * Style de paragraphe : paragraphe et en-tête 1/2/3
    * [Insérer des ressources visuelles](#inserting-assets-into-your-fragment)
-   * Recherche
+   * Rechercher
    * Rechercher/remplacer
    * Vérificateur d’orthographe
    * [Annotations](content-fragments-variations.md#annotating-a-content-fragment)
@@ -136,7 +139,7 @@ Le texte brut permet de saisir du contenu de manière rapide, sans formatage ni 
 >
 >Si vous sélectionnez **Texte brut**, vous risquez de perdre le formatage, les annotations et/ou les fichiers que vous avez insérés dans du **texte enrichi** ou dans **Markdown**.
 
-### Texte (Markdown){#markdown}
+### Texte (Markdown) {#markdown}
 
 >[!NOTE]
 >
@@ -150,7 +153,7 @@ Cela vous permet de mettre en forme le texte à l’aide de Markdown. Vous pouve
 * Images
 * Blocs de citations
 * Listes
-* Accentuation
+* Accent
 * Blocs de code
 * Échappements par barre oblique inverse
 
@@ -158,17 +161,17 @@ Vous pouvez également ouvrir l’éditeur plein écran pour accomplir d’autre
 
 >[!CAUTION]
 >
->Si vous basculez entre le **texte enrichi** et **Markdown**, vous risquez de subir des effets inattendus avec les guillemets de bloc et les blocs de code, car ces deux formats peuvent avoir des différences dans la manière dont ils sont traités.
+>Si vous basculez entre **Texte enrichi** et **Texte (Markdown)**, des effets inattendus peuvent apparaître avec les Blocs de citations et Blocs de code, dans la mesure où le traitement de ces deux formats peut être différent.
 
 ### Affichage des statistiques clés {#viewing-key-statistics}
 
-Lorsque l’éditeur en mode plein écran est ouvert, l’action **Statistiques du texte** affiche diverses informations sur le texte. Par exemple :
+Lorsque l’éditeur plein écran est ouvert, l’action **Statistiques de texte** affiche différentes informations au sujet du texte. Par exemple :
 
 ![cfx-6420-22](assets/cfx-6420-22.png)
 
-### Téléchargement de contenu {#uploading-content}
+### Chargement de contenu {#uploading-content}
 
-Pour simplifier le processus de création de fragments de contenu, vous pouvez transférer du texte préparé dans un éditeur externe et l’ajouter directement au fragment. 
+Pour simplifier le processus de création de fragments de contenu, vous pouvez transférer du texte préparé dans un éditeur externe et l’ajouter directement au fragment.
 
 ### Résumé de texte {#summarizing-text}
 
@@ -176,13 +179,13 @@ Le résumé de texte est conçu pour aider les utilisateurs à réduire la longu
 
 >[!NOTE]
 >
->On a more technical level the system keeps the sentences which it rates as providing the *best ratio of information density and uniqueness* according to specific algorithms.
+>À un niveau plus technique, le système conserve les phrases qu’il évalue comme ayant le *meilleur rapport de densité et d’unicité des informations* selon des algorithmes spécifiques.
 
 >[!CAUTION]
 >
 >Le fragment de contenu doit posséder un dossier de langue valide en tant qu’ancêtre ; celui-ci permet de déterminer le modèle de langue à utiliser.
 >
->For example, `en/` as in the following path:
+>Par exemple, `en/` comme dans le chemin d’accès suivant :
 >
 >`/content/dam/my-brand/en/path-down/my-content-fragment`
 
@@ -190,12 +193,12 @@ Le résumé de texte est conçu pour aider les utilisateurs à réduire la longu
 >
 >L’anglais est disponible par défaut.
 >
->D’autres langues sont disponibles en tant que modules de modèle de langues dans Package Share :
+>D’autres langues sont disponibles sous forme de modules de langue à partir du partage de package ou de la distribution de logiciels :
 >
->* [Français (fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Allemand (de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italien (it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Espagnol (es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Français (fr) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr) ou [Français (fr) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Allemand (de) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de) ou [allemand (de) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italien (it) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it) ou [Italien (it) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Espagnol (es) du Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es) ou [Espagnol (es) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
@@ -215,7 +218,7 @@ Le résumé de texte est conçu pour aider les utilisateurs à réduire la longu
    * Cliquez sur n’importe quelle phrase qui ne figure pas en surbrillance pour l’éliminer.
    ![cfm-6420-23](assets/cfm-6420-23.png)
 
-1. Select **[!UICONTROL Summarize]** to confirm the changes.
+1. Sélectionnez **[!UICONTROL Résumer]** pour confirmer les modifications.
 
 ### Annotation d’un fragment de contenu {#annotating-a-content-fragment}
 
@@ -229,11 +232,11 @@ Pour annoter un fragment :
 
 1. Une boîte de dialogue s’ouvre. Vous pouvez y saisir votre annotation.
 
-1. Fermez l’éditeur plein écran et **[!UICONTROL enregistrez]** le fragment.
+1. Fermez l’éditeur plein écran et enregistrez le fragment à l’aide de l’option **[!UICONTROL Enregistrer]**.
 
 ### Affichage, modification et suppression d’annotations {#viewing-editing-deleting-annotations}
 
-Les annotations :
+Annotations:
 
 * Sont mise en surbrillance sur le texte, en mode plein écran et en mode normal de l’éditeur. Les détails complets d’une annotation peuvent être affichés, modifiés et/ou supprimés en cliquant sur le texte mis en surbrillance, ce qui rouvre la boîte de dialogue.
 
@@ -241,7 +244,7 @@ Les annotations :
    >
    >Un sélecteur en liste déroulante est fourni si plusieurs annotations ont été appliquées à une partie du texte.
 
-* Lorsque vous supprimez tout le texte auquel l’annotation a été appliquée, l’annotation est également supprimée.
+* Lorsque vous supprimez tout le texte auquel l’annotation a été appliquée, cette dernière est également supprimée.
 
 * Peuvent être répertoriées et supprimées en sélectionnant l’onglet **[!UICONTROL Annotations]** dans l’éditeur de fragments.
 
@@ -251,7 +254,7 @@ Les annotations :
 
 ### Insertion de ressources dans votre fragment {#inserting-assets-into-your-fragment}
 
-To ease the process of authoring content fragments you can add [Assets](managing-assets-touch-ui.md) (images) directly to the fragment.
+Pour simplifier le processus de création de fragments de contenu, vous pouvez ajouter directement des [Ressources](managing-assets-touch-ui.md) (images) au fragment.
 
 Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mise en forme ; la mise en forme peut être effectuée lorsque le [fragment est utilisé/référencé sur une page](/help/sites-authoring/content-fragments.md).
 
@@ -265,7 +268,7 @@ Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mi
 >
 >Il existe différentes méthodes pour ajouter des [images](content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
-1. Positionnez le curseur à l’endroit où vous souhaitez ajouter l’image.
+1. Placez le curseur à l’endroit où vous souhaitez ajouter l’image.
 1. Utilisez l’icône **[!UICONTROL Insérer une ressource]** pour ouvrir la boîte de dialogue de recherche.
 
    ![cf-insertasset-icon](assets/cf-insertasset-icon.png)
@@ -283,10 +286,10 @@ Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mi
    >Si, après l’ajout d’un fichier, vous modifiez le format en :
    >
    >* **Texte brut** : le fichier sera complètement perdu du fragment.
-   >* **Texte (Markdown)** : la ressource n’est pas visible, mais elle est toujours présente lorsque vous revenez au paramètre **Texte enrichi**.
+   >* **Markdown** : le fichier ne sera pas visible, mais il sera toujours présent lorsque vous reviendrez au **texte enrichi**.
 
 
-## Gestion des variations {#managing-variations}
+## Gestion des variations   {#managing-variations}
 
 ### Création d’une variation {#creating-a-variation}
 
@@ -295,16 +298,16 @@ Les variations permettent de faire varier le contenu **Maître** en fonction de 
 Pour créer une variation, procédez comme suit :
 
 1. Ouvrez votre fragment et assurez-vous que le panneau latéral est visible.
-1. Select **[!UICONTROL Variations]** from the icon bar in the side panel.
+1. Sélectionnez **[!UICONTROL Variations]** dans la barre d’icônes du panneau latéral.
 1. Sélectionnez **[!UICONTROL Créer une variation]**.
 1. Une boîte de dialogue s’ouvre. Spécifiez le **[!UICONTROL titre]** et la **[!UICONTROL description]** correspondant à la nouvelle variante.
-1. Sélectionnez **[!UICONTROL Ajouter]** ; le fragment **[!UICONTROL principal]** sera copié vers la nouvelle variation, désormais disponible pour [modification](#editing-a-variation).
+1. Sélectionnez **[!UICONTROL Ajouter]** et le **[!UICONTROL Gabarit]**[ du fragment sera copié dans la nouvelle variation, qui est maintenant ouverte pour modification](#editing-a-variation).
 
    >[!NOTE]
    >
    >Lors de la création d’une variation, c’est toujours le **Maître** qui est copié et non pas la variation ouverte.
 
-### Modification d’une variation {#editing-a-variation}
+### Modification d’une variation   {#editing-a-variation}
 
 Vous pouvez apporter des modifications au contenu de la variation après avoir :
 
@@ -317,11 +320,11 @@ Vous pouvez apporter des modifications au contenu de la variation après avoir 
 
 Pour renommer une variation existante :
 
-1. Open your fragment and select **[!UICONTROL Variations]** from the side panel.
+1. Ouvrez votre fragment et sélectionnez **[!UICONTROL Variations]** dans le panneau latéral.
 1. Sélectionnez la variation requise.
-1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Actions]** drop down.
+1. Sélectionnez **[!UICONTROL Renommer]** dans le menu déroulant **[!UICONTROL Actions]**.
 
-1. Entrez le nouveau **[!UICONTROL titre]** et/ou la **[!UICONTROL description]** dans la boîte de dialogue qui s’affiche.
+1. Saisissez le nouveau **[!UICONTROL Titre]** et/ou la nouvelle **[!UICONTROL Description]** dans la boîte de dialogue qui s’affiche.
 
 1. Confirmez l’action **[!UICONTROL Renommer]**.
 
@@ -329,23 +332,23 @@ Pour renommer une variation existante :
 >
 >Cette opération concerne uniquement le **Titre** de la variation.
 
-### Suppression d’une variation {#deleting-a-variation}
+### Suppression d’une variation   {#deleting-a-variation}
 
 Pour supprimer une variation existante :
 
-1. Open your fragment and select **[!UICONTROL Variations]** from the side panel.
+1. Ouvrez votre fragment et sélectionnez **[!UICONTROL Variations]** dans le panneau latéral.
 1. Sélectionnez la variation requise.
-1. Select **[!UICONTROL Delete]** from the **[!UICONTROL Actions]** drop down.
+1. Sélectionnez **[!UICONTROL Supprimer]** dans le menu déroulant **[!UICONTROL Actions]**.
 
 1. Confirmez l’action **[!UICONTROL Supprimer]** dans la boîte de dialogue.
 
 >[!NOTE]
 >
->You cannot delete **Master**.
+>Vous ne pouvez pas supprimer le **Maître**.
 
-### Synchronisation avec le Maître {#synchronizing-with-master}
+### Synchronisation avec le gabarit {#synchronizing-with-master}
 
-Le **Maître** fait partie intégrante d’un fragment de contenu et, par définition, il contient la copie maître du contenu, tandis que les variantes contiennent les versions individuelles et personnalisées de ce contenu. Lorsque le Maître est mis à jour, il est possible que ces modifications soient également liées aux variations et qu’elles doivent, par conséquent, être appliquées à celles-ci.
+Le **Maître** fait partie intégrante d’un fragment de contenu et, par définition, il contient la copie maître du contenu, tandis que les variations contiennent les versions individuelles et personnalisées de ce contenu. Lorsque le Maître est mis à jour, il est possible que ces modifications soient également liées aux variations et qu’elles doivent, par conséquent, être appliquées à celles-ci.
 
 Lors de la modification d’une variation, vous pouvez accéder à l’action de synchronisation de l’élément actuel de la variation avec le maître. Vous pouvez ainsi copier automatiquement les modifications apportées au Maître sur la variation requise.
 
@@ -355,19 +358,19 @@ Lors de la modification d’une variation, vous pouvez accéder à l’action de
 >
 >Seul l’élément actuel de la variation est synchronisé.
 >
->La synchronisation fonctionne uniquement sur le type de données **texte multiligne**.
+>La synchronisation fonctionne uniquement sur le type de données **Plusieurs lignes de texte**.
 >
->Le transfert *d’une variation au **gabarit ***n’est pas disponible en tant qu’option.
+>Le transfert des modifications n’est pas proposé *entre une variation et le **Maître ***.
 
 1. Ouvrez votre fragment de contenu dans l’éditeur de fragments. Assurez-vous que le **Maître** a été modifié.
 2. Sélectionnez une variation spécifique, puis l’action de synchronisation appropriée à partir soit :
 
-   * the **Actions** drop down selector - **Sync current element with master**
+   * du menu déroulant du sélecteur **Actions** – **Synchroniser l’élément actif avec le gabarit** ;
    * de la barre d’outils de l’éditeur plein écran – **Synchroniser avec le gabarit**.
 
 3. Le Maître et la variation seront affichés côte à côte :
 
-   * le contenu ajouté figure en vert  (ajouté à la variation) ;
+   * le contenu ajouté figure en vert   (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
