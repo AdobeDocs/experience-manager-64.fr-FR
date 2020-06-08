@@ -10,7 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 0e3c64b43ceba3b8ebee134872123f5c5d03affa
+source-git-commit: 377922cc2ccf40a02467b17910a8750420202b61
+workflow-type: tm+mt
+source-wordcount: '2247'
+ht-degree: 73%
 
 ---
 
@@ -41,7 +44,7 @@ L’utilisation de Maven pour créer votre projet AEM présente plusieurs avanta
 
 Auparavant, les développeurs devaient gérer un nombre relativement élevé de dépendances individuelles par rapport aux différentes bibliothèques AEM. Chaque fois qu’une nouvelle API était utilisée, une ou plusieurs dépendances individuelles devaient être ajoutées au projet. Sur un seul projet, l’introduction du fichier UberJar a entraîné la suppression de 30 dépendances distinctes.
 
-### Comment puis-je utiliser UberJar ? {#how-to-i-use-the-uberjar}
+### How do I use the UberJar? {#how-do-i-use-the-uberjar}
 
 If you are using Apache Maven as a build system (which is the case for most AEM Java projects), you will need to add one or two elements to your *pom.xml* file. The first is a *dependency* element adding the actual dependency to your project:
 
@@ -82,7 +85,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrir le projet aem-uberjar-demo sur GitHub](https://github.com/justinedelson/aem-uberjar-demo)
+* [Ouvrez le projet aem-uberjar-demo sur GitHub](https://github.com/justinedelson/aem-uberjar-demo)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/justinedelson/aem-uberjar-demo/archive/6.2-unobfuscated.zip).
 
 >[!NOTE]
