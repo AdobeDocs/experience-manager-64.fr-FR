@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 48f7e9ca8038ab0217af251be31b4b0e98f75912
+source-git-commit: 05595377d4a5f24e4f311e5c34f10e6dc964d35e
 workflow-type: tm+mt
 source-wordcount: '5552'
-ht-degree: 70%
+ht-degree: 73%
 
 ---
 
@@ -66,7 +66,7 @@ Pour toutes les mises à niveau, avec ou sans le module de compatibilité, vous 
 
 ## (Optional) Installing feature pack 18912 for bulk asset migration {#installing-feature-pack}
 
-Feature Pack 18912 vous permet soit d’assimiler des fichiers en vrac par FTP, soit de migrer des fichiers de Contenu multimédia dynamique - mode hybride ou Contenu multimédia dynamique vers le mode Contenu multimédia dynamique - Scene7 sur AEM. Il est disponible auprès des Services professionnels d’Adobe.
+Feature Pack 18912 vous permet soit d’assimiler des fichiers en vrac par FTP, soit de migrer des fichiers de Contenu multimédia dynamique - mode hybride ou Contenu multimédia dynamique vers le mode Contenu multimédia dynamique - Scene7 sur AEM. Il est disponible auprès de Adobe Professional Services.
 
 Pour plus d’informations, voir [Installation de Feature Pack 18912 pour la migration](bulk-ingest-migrate.md) de ressources en vrac.
 
@@ -107,7 +107,7 @@ Pour configurer les services Dynamic Media Cloud :
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
-1. Pour afficher l’aperçu du contenu Dynamic Media en toute sécurité avant qu’il ne soit modifié, vous aurez besoin de placer en liste blanche l’instance d’auteur AEM à connecter à Dynamic Media :
+1. Pour prévisualisation en toute sécurité du contenu Contenu multimédia dynamique avant sa publication, vous devez autoriser l’instance d’auteur AEM à se connecter à Contenu multimédia dynamique :
 
    * Connectez-vous à votre compte Dynamic Media Classic : [http://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html). Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
    * On the navigation bar near the top right of the page, tap **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
@@ -472,15 +472,15 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
 Pour que le mode Contenu multimédia dynamique - Scene7 fonctionne correctement, Adobe recommande les conseils de réglage fin des performances et de l’évolutivité de synchronisation suivants :
 
 * Mise à jour des paramètres de tâche prédéfinis pour le traitement de différents formats de fichier.
-* Mise à jour des threads de travail de file d’attente du processus Granite prédéfini (ressources vidéo).
-* Mise à jour des threads de travail en file d’attente du flux de travail transitoire Granite prédéfini (images et ressources non vidéo).
-* Mise à jour du nombre maximal de connexions de téléchargement vers le serveur Dynamic Media Classic.
+* Mise à jour des threads de traitement de file d’attente de workflows Granite prédéfinis (ressources vidéo).
+* Mise à jour des threads de traitement de file d’attente de workflows Granite prédéfinis (images et ressources non vidéo).
+* Mise à jour du nombre maximal de connexions de chargement au serveur Dynamic Media Classic.
 
 #### Mise à jour des paramètres de tâche prédéfinis pour le traitement de différents formats de fichier
 
-Vous pouvez régler les paramètres de tâche pour accélérer le traitement des fichiers lors du téléchargement. Par exemple, si vous téléchargez des fichiers PSD mais que vous ne souhaitez pas les traiter en tant que modèles, vous pouvez définir l’extraction du calque sur false (désactivé). Dans ce cas, le paramètre de tâche affiné apparaîtra comme `process=None&createTemplate=false`.
+Vous pouvez régler les paramètres de tâche pour accélérer le traitement des fichiers lors du chargement. Par exemple, si vous téléchargez des fichiers PSD, mais que vous ne souhaitez pas les traiter en tant que modèles, vous pouvez définir l’extraction du calque sur false (désactivé). Dans ce cas, le paramètre de tâche affiné apparaîtra sous la forme `process=None&createTemplate=false`.
 
-Adobe recommande d’utiliser les paramètres de tâche &quot;affinés&quot; suivants pour les fichiers PDF, Postscript et PSD :
+Adobe recommande d’utiliser les paramètres de tâche « affiné » suivants pour les fichiers PDF, Postscript et PSD :
 
 | Type de fichier | Paramètres de tâche recommandés |
 | ---| ---|
@@ -488,7 +488,7 @@ Adobe recommande d’utiliser les paramètres de tâche &quot;affinés&quot; sui
 | Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-Pour mettre à jour l’un de ces paramètres, suivez les étapes de la section [Activation de la prise en charge](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)des paramètres de tâche de téléchargement des fichiers/fichiers dynamiques de type MIME Classic.
+Pour mettre à jour l’un de ces paramètres, procédez comme indiqué dans la [Activation de la prise en charge du paramètre de tâche de chargement Assets/Dynamic Media Classic basé sur le type MIME](#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
 #### Mise à jour de la file d’attente de workflows transitoires Granite {#updating-the-granite-transient-workflow-queue}
 
