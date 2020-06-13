@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: dcf60604-c401-4c74-95c7-e7d4457fdfe5
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '1043'
+ht-degree: 93%
 
 ---
 
@@ -135,9 +138,9 @@ Vous pouvez utiliser le **service AEMFD Barcoded Forms** dans la console AEM pou
 
 Le service Barcoded Forms fournit les deux API suivantes :
 
-* **[decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)** : Décode tous les codes à barres disponibles dans un document PDF ou une image tiff d’entrée. Elle renvoie un autre document XML contenant des données extraites à partir de tous les codes à barres disponibles dans le document ou l’image d’entrée.
+* **[decode](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)** : Décode tous les codes à barres disponibles dans un document PDF ou une image tiff d’entrée. Elle renvoie un autre document XML contenant des données extraites à partir de tous les codes à barres disponibles dans le document ou l’image d’entrée.
 
-* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)** : convertissez des données décodées en données XML à l’aide de l’API de décodage. Ces données XML peuvent être fusionnées avec un formulaire XFA. Elle renvoie une liste des documents XML, un pour chaque code à barres.
+* **[extractToXML](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)** : convertissez des données décodées en données XML à l’aide de l’API de décodage. Ces données XML peuvent être fusionnées avec un formulaire XFA. Elle renvoie une liste des documents XML, un pour chaque code à barres.
 
 ### Utilisation du service BCF avec un JSP ou des servlets {#using-bcf-service-with-a-jsp-or-servlets}
 
