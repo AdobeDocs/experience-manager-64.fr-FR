@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 51%
 
 ---
 
@@ -44,7 +47,7 @@ Pour personnaliser les images utilisées dans les actions d’itinéraire, suive
 
 ## Menu déroulant de l’action de tâche Liste de tâches {#task-list-task-action-popup}
 
-1. Créez un menu déroulant d’actions de liste de tâches, voir [Création du code de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3). Vous devez utiliser le paquet de développement.
+1. Créez un menu déroulant d’actions de liste de tâches, voir [Création du code de l’espace de travail AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). Vous devez utiliser le paquet de développement.
 
 1. Copiez `/libs/ws/js/runtime/templates/task.html` dans `/apps/ws/js/runtime/templates/task.html`.
 
