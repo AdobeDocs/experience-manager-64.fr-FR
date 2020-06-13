@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '9242'
+ht-degree: 64%
 
 ---
 
@@ -24,7 +27,7 @@ Installez les sites de référence comme décrit dans [Installation et configur
 
 We.Finance est une organisation de premier plan dans le domaine des services financiers qui offre des solutions financières complètes et personnalisées pour répondre aux exigences de différents profils clients. Elle propose des cartes de crédit, des prêts immobiliers et des services d’assurance habitation.
 
-Leur but est de toucher les clients existants et potentiels sur leur appareil préféré, d&#39;expliquer les avantages de leurs services et de les aider à s&#39;inscrire à leurs services. En outre, elle cherche à lancer davantage de produits financiers tels que les cartes ajoutées que les clients peuvent trouver intéressants.
+Leur objectif est d&#39;atteindre les clients existants et potentiels sur leur périphérique préféré, d&#39;expliquer les avantages de leurs services et de les aider à s&#39;inscrire à leurs services. En outre, elle cherche à lancer davantage de produits financiers tels que les cartes ajoutées que les clients peuvent trouver intéressants.
 
 Poursuivez la lecture de cet article pour obtenir des informations détaillées sur les cas d’utilisation de We.Finance et comprendre comment AEM Forms aide les organisations financières à atteindre leurs objectifs. Les procédures pas à pas suivantes sont abordées :
 
@@ -76,7 +79,7 @@ Sur la page Informations personnelles, Sarah fournit son numéro de sécurité s
 
 ![login-ssn](assets/login-ssn.png)
 
-Sarah est déjà cliente de We.Finance. Elle se connecte avec ses identifiants de compte We.Finance et ses données personnelles sont automatiquement renseignées dans le formulaire. Sarah continue à remplir le formulaire de demande et c’est là qu’un rappel s’affiche pour une réunion à laquelle elle doit assister. She clicks **[!UICONTROL Save my progress]** on the application form. Toutes les informations que Sarah a remplies jusqu’à présent sont enregistrées et une boîte de dialogue apparaît pour confirmer si elle souhaite recevoir un courrier électronique avec un lien vers son brouillon afin de le terminer plus tard.
+Sarah est déjà cliente de We.Finance. Elle se connecte avec ses identifiants de compte We.Finance et ses données personnelles sont automatiquement renseignées dans le formulaire. Sarah continue à remplir le formulaire de demande et c’est à ce moment qu’un rappel apparaît pour une réunion à laquelle elle doit assister. She clicks **[!UICONTROL Save my progress]** on the application form. Toutes les informations que Sarah a remplies jusqu’à présent sont enregistrées et une boîte de dialogue apparaît pour confirmer si elle souhaite recevoir un courrier électronique avec un lien vers son brouillon afin de le terminer plus tard.
 
 Sarah clique sur **[!UICONTROL Envoyer un courrier]**. Elle reçoit un courrier électronique avec un lien pour reprendre sa demande de carte de crédit.
 
@@ -98,7 +101,7 @@ Le bouton **[!UICONTROL Demander maintenant]** redirige Sarah vers la demande de
 Voici quelques fonctionnalités clés que vous pouvez consulter dans le formulaire adaptatif :
 
 * Il est basé sur un schéma XSD.
-* Il a été créé avec le thème A We.Finance pour le style et le modèle We.Finance pour la mise en page. En outre, il utilise une mise en page sans titre de panneau dans la mise en forme de l’en-tête de formulaire pour la navigation mobile. Il présente une mise en page mobile progressive lorsqu’il est ouvert depuis un appareil mobile. Vous pouvez consulter le modèle à l’adresse `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` et le thème à l’adresse `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`.
+* Il a été créé avec le thème A We.Finance pour le style et le modèle We.Finance pour la mise en page. En outre, il utilise une mise en page sans titre de panneau dans la mise en forme de l’en-tête de formulaire pour la navigation mobile. Il présente une mise en page mobile progressive lorsqu’il est ouvert depuis un appareil mobile. Vous pouvez consulter le modèle à la page `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` et le thème à la page `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`.
 * Il inclut des règles de formulaire adaptatif pour appeler les services de modèle de données de formulaire afin de préremplir les détails de l’utilisateur connecté. Il appelle également les services pour préremplir les informations selon le numéro de sécurité sociale ou l’adresse électronique fournie dans le formulaire. You can review the Form Data Models and their services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * Il utilise divers composants de formulaire adaptatif pour collecter les entrées et s’adapter aux réponses des utilisateurs. Il emploie également des composants tels que Courrier électronique qui prennent en charge les types d’entrée HTML5.
 * Il utilise le composant Étape de signature pour afficher le formulaire rempli et permet la signature électronique dans le formulaire.
@@ -133,11 +136,11 @@ Vous pouvez consulter le modèle We.Finance à l’adresse :
 
 Sarah revient plus tard et trouve un courrier électronique de la part de We.Finance. Elle clique sur le bouton **[!UICONTROL Reprendre]** dans le courrier électronique qui la redirige vers le brouillon de sa demande de carte de crédit. Les informations qu’elle a renseignées plus tôt sont préremplies. Elle remplit la suite du formulaire de demande, signe la demande et l’envoie.
 
-![resume-1](assets/resume-1.png)
+![CV-1](assets/resume-1.png)
 
 Elle peut également accéder au brouillon de sa demande sous **[!UICONTROL Mes formulaires]** sur la page d’accueil de We.Finance.
 
-![portal-brouillons](assets/portal-drafts.png)
+![versions préliminaires de portail](assets/portal-drafts.png)
 
 #### Fonctionnement {#how-it-works-1}
 
@@ -161,13 +164,13 @@ AEM Forms sur OSGi fournit des processus centrés sur des formulaires qui vous 
 
 L’image suivante illustre le processus AEM qui traite la demande de carte de crédit et génère une sortie PDF à partir de la demande.
 
-![workflow](assets/workflow.png)
+![flux de travail](assets/workflow.png)
 
 #### Démonstration {#see-it-yourself-2}
 
-Vous pouvez accéder à la boîte de réception AEM pour le site Web we.finance à l’adresse https://&lt;*hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html. Sur la page, appuyez sur **[!UICONTROL Se connecter]**, cochez la case **[!UICONTROL Se connecter en tant que représentant]** , connectez-vous à la boîte de réception AEM en utilisant `grios/password` comme nom d’utilisateur/mot de passe pour Gloria Rios, puis approuvez la demande de carte de crédit. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
+Vous pouvez accéder à la boîte de réception AEM pour le site we.finance à l’adresse https://&lt;*hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html. Sur la page, appuyez sur **[!UICONTROL Se connecter]**, cochez la case **[!UICONTROL Se connecter en tant que représentant]** , connectez-vous à la boîte de réception AEM en utilisant `grios/password` comme nom d’utilisateur/mot de passe pour Gloria Rios et approuvez la demande de carte de crédit. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
 
-![inbox-1](assets/inbox-1.png)
+![boîte de réception-1](assets/inbox-1.png)
 
 Lorsque vous approuvez la demande, Sarah reçoit un courrier électronique avec le kit de bienvenue.
 
@@ -175,15 +178,15 @@ Lorsque vous approuvez la demande, Sarah reçoit un courrier électronique avec 
 
 Lorsque la demande de carte de crédit de Sarah est approuvée, elle reçoit un courrier électronique contenant un lien vers le kit de bienvenue. Elle ouvre le kit de bienvenue, qui inclut les détails du compte de sa carte de crédit. Le kit de bienvenue affiche également des offres promotionnelles personnalisées pour Sarah. Lorsqu’elle parcourt la page, elle découvre que le kit de bienvenue contient un formulaire incorporé de demande de carte ajoutée. Sarah remplit rapidement les détails requis du kit de bienvenue et demande la carte ajoutée. Une boîte de dialogue de confirmation pour la demande de carte ajoutée s’affiche.
 
-![welcome-kit-for-sara](assets/welcome-kit-for-sara.png)
+![kit de bienvenue-pour-sara](assets/welcome-kit-for-sara.png)
 
 Le kit de bienvenue est personnalisé pour Sarah et affiche des informations la concernant. Il fournit une option pour télécharger une version PDF du kit de bienvenue.
 
-![carte des avantages du platine](assets/benefits-of-platinum-card.png)
+![carte avantages-de-platine](assets/benefits-of-platinum-card.png)
 
 Le kit de bienvenue comprend un autre formulaire de demande que Sarah peut remplir et envoyer pour demander une carte ajoutée depuis le kit de bienvenue, sans avoir à accéder au portail de We.Finance.
 
-![apply-addon-card](assets/apply-addon-card.png)
+![application-addon-card](assets/apply-addon-card.png)
 
 #### Fonctionnement {#how-it-works-3}
 
@@ -197,7 +200,7 @@ Click the **[!UICONTROL Resume]** button in the email that you received in the p
 
 Vous pouvez également voir le kit de bienvenue à l’adresse suivante :
 
-https://&lt;*hôte*>:&lt;*port*>/content/aemforms-refsite/doclink.html?document=/content/forms/af/we-finance/credit-card/creditcardwelcomekit&amp;customerId=197&amp;channel=web
+https://&lt;*hôte*>:&lt;*port*>/content/aemforms-refsite/doclink.html?document=/content/forms/af/we-finance/credit-card/creditcardwelcomekit&amp;customerId=197&amp;canal=web
 
 Vous pouvez y accéder dans les instances d’auteur et de publication.
 
@@ -207,7 +210,7 @@ Comme Sarah commence à utiliser la carte de crédit, elle reçoit ensuite un au
 
 ![instruction-courrier électronique](assets/statement-email.png)
 
-Sarah clique sur Afficher le relevé dans le courrier électronique pour afficher le relevé de carte de crédit. Le relevé est une communication interactive. Il a des versions Web et d’impression (PDF). L’instruction s’intègre au modèle de données de formulaires pour récupérer des données, propres au client, de la base de données. Le relevé interactif est constitué de plusieurs éléments :
+Sarah clique sur Afficher le relevé dans le courrier électronique pour afficher le relevé de carte de crédit. Le relevé est une communication interactive. Il a des versions Web et Impression (PDF). L’instruction s’intègre au modèle de données de formulaires pour récupérer des données, propres au client, de la base de données. Le relevé interactif est constitué de plusieurs éléments :
 
 * Récapitulatif du relevé
 * Rapport détaillé des dépenses
@@ -219,25 +222,25 @@ Sarah clique sur Afficher le relevé dans le courrier électronique pour affiche
 
 Sarah n’a pas besoin d’accéder au portail ni de rechercher dans ses courriels la version PDF du relevé de carte de crédit pour l’archivage hors ligne. Elle clique simplement sur Télécharger le relevé pour télécharger une version PDF du relevé.
 
-L’instruction détaillée est présentée dans un tableau dynamique. Le relevé offre également la possibilité de payer une partie ou la totalité du montant dû à partir du relevé.
+L&#39;énoncé détaillé est présenté dans un tableau dynamique. Le relevé permet également de payer une partie ou la totalité du montant dû à partir du relevé.
 
 ![Relevé détaillé](assets/statement-details.png)
 
-Sarah planifie le paiement à partir du relevé. Sarah peut également utiliser l’option Flexi Pay pour diviser le paiement en parts égales.
+Sarah planifie le paiement à partir du relevé. Sarah peut également utiliser l’option de paiement Flexi pour diviser le paiement en parts égales.
 
 #### Fonctionnement {#how-it-works-4}
 
-Le relevé de carte de crédit est une communication interactive. Le tableau détaillé des dépenses dans le relevé est un tableau dynamique. Le graphique pour l&#39;analyse des dépenses est un composant de graphique qui lit le tableau des dépenses et génère le graphique circulaire.
+Le relevé de carte de crédit est une communication interactive. Le tableau détaillé des dépenses dans le relevé est un tableau dynamique. Le graphique de l&#39;analyse des dépenses est un composant de graphique qui lit le tableau des dépenses et génère le graphique circulaire.
 
 #### Démonstration {#see-it-yourself-4}
 
 Vous pouvez tester le relevé de carte de crédit interactif à l’adresse URL suivante :
 
-https://&lt;*hostname*>:&lt;*port*>/content/aemforms-refsite/doclink.html?document=/content/forms/af/we-finance/credit-card/credit-card-statement&amp;customerId=197&amp;channel=web
+https://&lt;*nom d’hôte*>:&lt;*port*>/content/aemforms-refsite/doclink.html?document=/content/forms/af/we-finance/credit-card/credit-card-statement&amp;customerId=197&amp;canal=web
 
 Vous pouvez y accéder dans les instances d’auteur et de publication.
 
-Le relevé de carte de crédit affiche les offres promotionnelles vers la fin du relevé. Vous pouvez intégrer Adobe Target à AEM Forms Interactive Communication pour diffuser des offres ciblées promotionnelles basées sur des segments de clients spécifiques. Pour configurer votre communication interactive afin d’utiliser Adobe Target pour des offres personnalisées et ciblées, voir [Création d’expériences](/help/forms/using/experience-targeting-forms.md)ciblées.
+Le relevé de carte de crédit affiche les offres promotionnelles vers la fin du relevé. Vous pouvez intégrer Adobe Target à la communication interactive d’AEM Forms pour fournir des offres ciblées promotionnelles basées sur des segments de clients spécifiques. Pour configurer votre communication interactive afin d’utiliser Adobe Target pour des offres personnalisées et ciblées, voir [Création d’expériences](/help/forms/using/experience-targeting-forms.md)ciblées.
 
 ![](do-not-localize/offers.png)
 
@@ -260,20 +263,20 @@ Pour que vous puissiez afficher et explorer le rapport d’analyse, nous fournis
 1. Go to **[!UICONTROL Forms &amp; Documents]** UI at https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Cliquez pour ouvrir le dossier **[!UICONTROL We.Finance]**.
-1. Sélectionnez **[!UICONTROL Demande de formulaire adaptatif Carte]** de crédit, puis dans la barre d’outils, cliquez sur **[!UICONTROL Activer Analytics]**.
+1. Sélectionnez **[!UICONTROL Demande de formulaire adaptatif Carte de crédit]** , puis dans la barre d’outils, cliquez sur **[!UICONTROL Activer Analytics]**.
 
-1. Sélectionnez de nouveau le formulaire adaptatif, puis cliquez sur Rapport **** Analytics dans la barre d’outils pour générer le rapport. Un rapport vierge s’affiche initialement.
+1. Sélectionnez de nouveau le formulaire adaptatif et cliquez sur Rapport **** Analytics dans la barre d’outils pour générer le rapport. Un rapport vierge s’affichera initialement.
 
-Pour générer un rapport d’analyse avec des données de départ :
+Pour générer un rapport d’analyse avec des données sources :
 
 1. In the address browser of CRXDE lite, type: `/apps/we-finance/demo-artifacts/analyticsTestData/Credit card Analytics Test Data`
 1. Les données de test sont sélectionnées dans la structure de répertoires de gauche.
 1. Cliquez deux fois sur le fichier sélectionné pour ouvrir son contenu dans le panneau de droite.
-1. Copiez tout le contenu du fichier de données d’origine.
+1. Copiez tout le contenu du fichier de données sources.
 1. In CRXDE, navigate to: `/content/dam/formsanddocuments/we-finance/cc-app/jcr:content/analyticsdatanode/lastsevendays`
 1. In the **[!UICONTROL analyticsdata]** field under **[!UICONTROL Properties]**, paste the copied content of the seed data file.
 
-1. Sélectionnez **Demande de formulaire adaptatif Carte** de crédit et cliquez sur Rapport **** Analytics dans la barre d’outils pour générer le rapport avec les données de base.
+1. Sélectionnez le formulaire adaptatif **Demande de carte de crédit** et cliquez sur Rapport **** Analytics dans la barre d’outils pour générer le rapport avec les données sources.
 
 **Test A/B de la demande de carte de crédit**
 
@@ -301,7 +304,7 @@ Effectuez les étapes suivantes pour expérimenter la création d’un test A/B 
 
 1. Ouvrez maintenant le formulaire dans le navigateur Chrome plusieurs fois à l’aide de l’URL suivante :
 
-   `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
    >[!NOTE] Supprimez le cookie nommé **mbox** de la liste de persistance des cookies dans le navigateur avant d’ouvrir le formulaire la fois suivante. Vous voyez l’expérience A et B du formulaire de manière aléatoire.
 
 1. Sélectionnez le formulaire, cliquez sur **Plus**, et cliquez sur **Rapport de test A/B**. Vous ne trouverez pas beaucoup de données dans le rapport car vous venez de démarrage du test. Ajoutons maintenant quelques données sources pour voir à quoi ressemble le rapport de test A/B.
@@ -309,7 +312,7 @@ Effectuez les étapes suivantes pour expérimenter la création d’un test A/B 
 1. Ouvrez CRXDE Lite et prenez une copie du fichier suivant : /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Remplacez la définition de fonction `onReportLoadSuccess` dans le fichier mentionné ci-dessus par la définition de fonction dans le fichier suivant : /apps/we-finance/demo-artifacts/targetreport.js
 
-   **** Remarque : Ces modifications sont uniquement destinées à la démonstration. Assurez-vous de restaurer le contenu du fichier après avoir terminé cette procédure.
+   **Remarque :** Ces modifications sont uniquement destinées à la démonstration. Assurez-vous de restaurer le contenu du fichier après avoir terminé cette procédure.
 
 1. Actualisez le rapport que vous avez généré et vous verrez quelque chose qui ressemble à ça : Examinez le tableau de bord de génération de rapports.
 
@@ -337,9 +340,9 @@ L’infographie suivante illustre le déroulement détaillé d’une demande de 
 
 Sarah Rose envisage d’acheter une maison et cherche donc un prêt immobilier. Elle est cliente chez We.Finance et se rend donc sur le portail We.Finance pour découvrir les offres de prêt. Elle accède à la section des prêts et trouve un calculateur dédié sur le portail. Elle remplit les détails et clique sur Calculer mon prêt, qui renvoie une offre de prêt.
 
-![](assets/loans1.png) prêts1![ ](assets/loans2.png)prêts2 **** Figure : Calculatrice *d&#39;hypothèques*
+![prêts1](assets/loans1.png) ![prêts2](assets/loans2.png)**Figure :** *Calculatrice de prêt immobilier*
 
-![](assets/loans3.png) prêts3 **** Figure : Résultat du calculateur *d&#39;hypothèque*
+![prêts3](assets/loans3.png)**Figure :** *Résultat du calculateur de prêt immobilier*
 
 #### Fonctionnement {#how-it-works-6}
 
@@ -414,7 +417,7 @@ We.Finance reçoit la demande de prêt immobilier envoyée par Sarah. La tâche 
 
 Gloria ouvre la tâche, clique sur le bouton Besoin de plus d’informations et saisit un commentaire sur la copie manquante.
 
-![require-more-info](assets/need-more-info.png)
+![need-more-info](assets/need-more-info.png)
 
 La tâche est désormais confiée à John Doe, un représentant du service client chez We.Finance. Il ouvre la tâche et lit le commentaire de Gloria. Il contacte Sarah et lui demande d’envoyer une copie de sa carte d’identité. Après avoir reçu une copie de la carte d’identité de Sarah, il la joint à la tâche et envoie la demande pour réévaluation.
 
@@ -430,7 +433,7 @@ AEM Forms sur OSGi fournit des processus centrés sur des formulaires qui vous 
 
 L’image suivante illustre le processus AEM associé à la demande de prêt immobilier.
 
-![prêt immobilier-processus-modèle](assets/mortgage-workflow-model.png)
+![modèle de processus hypothécaire](assets/mortgage-workflow-model.png)
 
 #### Démonstration {#see-it-yourself-7}
 
@@ -442,7 +445,7 @@ For information about using AEM Inbox for forms-centric workflow tasks, see [Man
 
 Lorsque la demande de prêt immobilier de Sarah est approuvée, elle reçoit un courrier électronique contenant un lien vers le kit de bienvenue. Elle ouvre le kit de bienvenue, qui comprend un carrousel affichant des offres promotionnelles personnalisées pour Sarah.
 
-![kit de bienvenue-prêt immobilier](assets/mortgage-welcome-kit.png)
+![kit de bienvenue-prêt hypothécaire](assets/mortgage-welcome-kit.png)
 
 Le kit de bienvenue est personnalisé pour Sarah et affiche des informations la concernant. Il fournit une option pour télécharger une version PDF du kit de bienvenue. Le bouton fléché au bas de l’écran permet à Sarah de faire défiler la page vers le bas et de parcourir d’autres sections du kit de bienvenue.
 
@@ -464,7 +467,7 @@ Vous pouvez l’afficher dans l’instance de publication AEM à l’adresse sui
 
 Lorsque Sarah se sert du prêt et commence à effectuer des versements, elle reçoit un autre courrier électronique de We.Finance comprenant son relevé de compte mensuel.
 
-![hypothèque-relevé-courrier électronique](assets/mortgage-statement-email.png)
+![déclaration hypothécaire-courriel](assets/mortgage-statement-email.png)
 
 Sarah clique sur Afficher le relevé dans le courrier électronique pour afficher le relevé de compte du prêt immobilier. Le relevé interactif est constitué de plusieurs éléments :
 
@@ -479,7 +482,7 @@ Le relevé détaillé est présenté dans un tableau dynamique et offre la possi
 
 #### Fonctionnement {#how-it-works-10}
 
-Le relevé hypothécaire est une communication interactive. Il est généré avec le processus de traitement par lots JSON. Le tableau détaillé des dépenses dans le relevé est un tableau dynamique.
+Le relevé de prêt immobilier est une communication interactive. Il est généré avec le processus de traitement par lots JSON. Le tableau détaillé des dépenses dans le relevé est un tableau dynamique.
 
 #### Démonstration {#see-it-yourself-9}
 
@@ -495,7 +498,7 @@ We.Finance, de temps à autre, examine les performances de son formulaire de dem
 
 Pour plus d’informations sur la façon d’interpréter le tableau de bord des analyses, reportez-vous à la section [Affichage et compréhension des rapports d’analyse AEM Forms](/help/forms/using/view-understand-aem-forms-analytics-reports.md).
 
-![prêt immobilier-analytics](assets/mortgage-analytics.png)
+![analytique de prêt immobilier](assets/mortgage-analytics.png)
 
 #### Fonctionnement {#how-it-works-11}
 
@@ -508,19 +511,19 @@ Pour que vous puissiez afficher et explorer le rapport d’analyse, nous fournis
 1. Go to **Forms &amp; Documents** UI at https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Cliquez pour ouvrir le dossier **we-finance**.
-1. Sélectionnez le formulaire adaptatif **[!UICONTROL Demande de prêt immobilier]** , puis dans la barre d’outils, cliquez sur **[!UICONTROL Activer Analytics]**.
+1. Sélectionnez Formulaire adaptatif **[!UICONTROL Demande de prêt immobilier]** , puis dans la barre d’outils, cliquez sur **[!UICONTROL Activer Analytics]**.
 
-1. Sélectionnez de nouveau le formulaire, puis cliquez sur Rapport **** Analytics dans la barre d’outils pour générer le rapport. Un rapport vierge s’affichera initialement.
+1. Sélectionnez de nouveau le formulaire et cliquez sur Rapport **** Analytics dans la barre d’outils pour générer le rapport. Un rapport vierge s’affichera initialement.
 
-Pour générer un rapport d’analyse avec des données de départ :
+Pour générer un rapport d’analyse avec des données sources :
 
 1. In the address browser of CRXDE lite, type the following: `/apps/we-finance/demo-artifacts/analyticsTestData/HomeMortgageAnalyticsTestData`
 1. Les données de test sont sélectionnées dans la structure de répertoires de gauche.
 1. Cliquez deux fois sur le fichier sélectionné pour ouvrir son contenu dans le panneau de droite.
-1. Copiez tout le contenu du fichier de données d’origine.
+1. Copiez tout le contenu du fichier de données sources.
 1. In CRXDE, navigate to: `/content/dam/formsanddocuments/we-finance/hm-app/jcr:content/analyticsdatanode/lastsevendays`
-1. Dans le champ analyticsdata sous Properties, collez le contenu copié du fichier de données d’origine.
-1. Générez à présent le rapport d’analyse pour le formulaire de demande de prêt immobilier. Le rapport s’affiche avec les données de base.
+1. Dans le champ analyticsdata sous Properties, collez le contenu copié du fichier de données sources.
+1. Désormais, générez à nouveau le rapport d’analyse pour le formulaire de demande de prêt immobilier. Vous verrez le rapport contenant des données sources.
 
 **Test A/B de la demande de prêt immobilier**
 
@@ -533,7 +536,7 @@ Effectuez les étapes suivantes dans l’instance d’auteur pour expérimenter 
 1. Go to **Forms &amp; Documents** at https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Cliquez pour ouvrir le dossier **We.Finance**.
-1. Sélectionnez le formulaire adaptatif **Demande de prêt immobilier** .
+1. Sélectionnez le formulaire adaptatif **Demande de prêt immobilier** immobilier.
 1. Cliquez sur le bouton **Plus** dans la barre d’outils et sélectionnez **Configurer les tests A/B**. La page de configuration des tests A/B s’ouvre.
 
 1. Spécifiez un **Nom d’activité**.
@@ -548,7 +551,7 @@ Effectuez les étapes suivantes dans l’instance d’auteur pour expérimenter 
 
 1. Ouvrez maintenant le formulaire dans le navigateur Chrome plusieurs fois à l’aide de l’URL suivante :
 
-   `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
    >[!NOTE] Supprimez le cookie nommé **mbox** de la liste de persistance des cookies dans le navigateur avant d’ouvrir le formulaire la fois suivante. Vous voyez l’expérience A et B du formulaire de manière aléatoire.
 
 1. Sélectionnez le formulaire, cliquez sur **Plus**, et cliquez sur **Rapport de test A/B**. Vous ne trouverez pas beaucoup de données dans le rapport car vous venez de démarrage du test. Ajoutons maintenant quelques données sources pour voir à quoi ressemble le rapport de test A/B.
@@ -572,15 +575,15 @@ Le cas de figure du prêt immobilier We.Finance avec Microsoft Dynamics met en 
 * Sarah Rose, une cliente de We.Finance
 * L’administrateur de l’instance We.Finance Microsoft Dynamics
 
-La présentation de l&#39;application Prêt immobilier avec Microsoft Dynamics montre comment un client Web.Finance peut utiliser le site pour demander un prêt immobilier lorsque le site de référence utilise Microsoft Dynamics pour l&#39;intégration des données. La présentation se termine par des données remplies par l’utilisateur et collectées par Microsoft Dynamics. Before you proceed with this scenario, you need to complete the [Microsoft Dynamics 365 configuration for the home mortgage workflow of the We.Finance reference site](/help/forms/using/ms-dynamics-configuration-home-mortgage.md).
+La présentation de la demande de prêt immobilier avec Microsoft Dynamics montre comment un client Web.Finance peut utiliser le site pour demander un prêt immobilier lorsque le site de référence utilise Microsoft Dynamics pour l&#39;intégration des données. La présentation se termine par des données remplies par l’utilisateur et collectées par Microsoft Dynamics. Before you proceed with this scenario, you need to complete the [Microsoft Dynamics 365 configuration for the home mortgage workflow of the We.Finance reference site](/help/forms/using/ms-dynamics-configuration-home-mortgage.md).
 
 ### Sarah se rend sur le site Web de We.Finance et demande un prêt immobilier {#sarah-visits-we-finance-website-and-applies-for-home-mortgage-1}
 
 Sarah Rose envisage d’acheter une maison et cherche donc un prêt immobilier. Elle est cliente chez We.Finance et se rend donc sur le portail We.Finance pour découvrir les offres de prêt. Elle accède à la section des prêts et trouve un calculateur dédié sur le portail. Elle remplit les détails et clique sur Calculer mon prêt, qui renvoie une offre de prêt.
 
-![](assets/loans1.png) prêts1![ ](assets/loans2.png)prêts2 **** Figure : Calculatrice *d&#39;hypothèques*
+![prêts1](assets/loans1.png) ![prêts2](assets/loans2.png)**Figure :** *Calculatrice de prêt immobilier*
 
-![](assets/loans3.png) prêts3 **** Figure : Résultat du calculateur *d&#39;hypothèque*
+![prêts3](assets/loans3.png)**Figure :** *Résultat du calculateur de prêt immobilier*
 
 #### Fonctionnement {#how-it-works-12}
 
@@ -654,7 +657,7 @@ L’infographie suivante illustre le déroulement détaillé d’un cas de deman
 
 Sarah Rose a un prêt immobilier chez We.Finance et elle est à la recherche d’une bonne affaire pour une assurance habitation. Elle visite le portail We.Finance et consulte les plans d’assurance habitation. We.Finance l’a identifiée comme cliente actuelle et envoie une newsletter ciblée à son adresse électronique. La newsletter contient des offres d’assurance habitation.
 
-![assurance-newsletter](assets/insurance-newsletter.png)
+![bulletin d&#39;assurance](assets/insurance-newsletter.png)
 
 #### Fonctionnement {#how-it-works-14}
 
@@ -687,7 +690,7 @@ Le bouton **Demander maintenant** de la newsletter redirige Sarah vers la demand
 Voici quelques fonctionnalités clés que vous pouvez consulter dans le formulaire adaptatif :
 
 * Il est basé sur un schéma XSD, `insurance.xsd`.
-* Il est créé avec le thème Assurance pour le style et utilise la mise en page sans titre de panneau dans la mise en forme de l’en-tête de formulaire pour la navigation mobile. Il présente une mise en page mobile progressive lorsqu’il est ouvert depuis un appareil mobile. Vous pouvez consulter le modèle à l’adresse `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` et le thème à l’adresse `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/insurance/jcr:content`.
+* Il est créé avec le thème Assurance pour le style et utilise la mise en page sans titre de panneau dans la mise en forme de l’en-tête de formulaire pour la navigation mobile. Il présente une mise en page mobile progressive lorsqu’il est ouvert depuis un appareil mobile. Vous pouvez consulter le modèle à la page `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` et le thème à la page `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/insurance/jcr:content`.
 
 * Il inclut des règles de formulaire adaptatif pour appeler les services de modèle de données de formulaire afin de préremplir les détails de l’utilisateur connecté. Il appelle également les services pour préremplir les informations selon le numéro de sécurité sociale ou l’adresse électronique fournie dans le formulaire. You can review the Form Data Models and their services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * Il utilise divers composants de formulaire adaptatif pour collecter les entrées et s’adapter aux réponses des utilisateurs. Il emploie également des composants tels que Courrier électronique qui prennent en charge les types d’entrée HTML5.
@@ -718,13 +721,13 @@ We.Finance reçoit la demande d’assurance habitation envoyée par Sarah. Une t
 
 ![assurance-boîte de réception-grios](assets/insurance-inbox-grios.png)
 
-Lorsque Gloria approuve la demande d’assurance habitation de Sarah, une tâche est créée dans la boîte de réception AEM de Frank De Costa. Frank examine la tâche. Il prépare un contrat de police d’assurance habitation pour Sarah, joint le contrat à sa demande et l’envoie à Sarah pour la signature du contrat. Le contrat, affiché ci-dessous dans l’interface utilisateur de l’agent, est la version papier de la communication interactive.
+Lorsque Gloria approuve la demande d’assurance habitation de Sarah, une tâche est créée dans la boîte de réception AEM de Frank De Costa. Frank examine la tâche. Il prépare un contrat de police d’assurance habitation pour Sarah, joint le contrat à sa demande et l’envoie à Sarah pour la signature du contrat. Le contrat, affiché ci-dessous dans l’interface utilisateur de l’agent, est la version imprimable de la communication interactive.
 
-![assurance-contact-lettre](assets/insurance-contact-letter.png)
+![lettre-contact-assurance](assets/insurance-contact-letter.png)
 
 Sarah reçoit un courrier électronique avec un lien vers le contrat de police d’assurance habitation pour la signature. Sarah examine et signe le contrat.
 
-![assurance-contrat-courrier électronique](assets/insurance-contract-email.png)
+![contrat d&#39;assurance-courrier électronique](assets/insurance-contract-email.png)
 
 #### Fonctionnement {#how-it-works-16}
 
@@ -743,7 +746,7 @@ Procédez comme suit :
 1. Go to AEM Inbox, `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`, and log in with `grios/grios` as username password for Gloria&#39;s persona. Approuvez la tâche pour la demande d’assurance habitation de Sarah.
 
 1. Ensuite, connectez-vous à la boîte de réception AEM avec les nom d’utilisateur/mot de passe `fdcosta/password` pour le personnage de Frank. Affichez la tâche.
-1. Accédez maintenant à `https://[authorHost]:[authorPort]/aem/forms.html/content/dam/formsanddocuments/we-finance/insurance` et prévisualisez le modèle de lettre pour HomeInsuranceWelcomeKit.
+1. Accédez maintenant au modèle de lettre `https://[authorHost]:[authorPort]/aem/forms.html/content/dam/formsanddocuments/we-finance/insurance` et prévisualisation-le pour HomeInsuranceWelcomeKit.
 1. Indiquez les informations dans le panneau Données. Cliquez sur **[!UICONTROL Aperçu]**, puis téléchargez le fichier PDF sur votre système de fichiers local. Assurez-vous que le fichier PDF est enregistré sous le nom de contract.pdf.
 1. Accédez à la boîte de réception AEM de Frank, ouvrez la tâche, joignez le PDF du contrat téléchargé, puis cliquez sur **[!UICONTROL Envoyer contrat]**.
 1. Ouvrez le courrier électronique avec le contrat et signez le document.
@@ -756,145 +759,145 @@ Lorsque Sarah signe le contrat d’assurance habitation, elle reçoit un courrie
 
 Peu après, elle reçoit un autre courrier électronique de We.Finance avec un kit de bienvenue pour sa police d’assurance. Sarah peut accéder aux documents de sa police et consulter les instructions depuis le kit de bienvenue.
 
-![assurance-accueil-kit](assets/insurance-welcome-kit.png)
+![kit de bienvenue-assurance](assets/insurance-welcome-kit.png)
 
 #### Démonstration {#see-it-yourself-14}
 
 Si vous avez spécifié votre ID de courrier électronique dans la demande, vous devriez avoir reçu un courrier électronique avec un lien vers le kit de bienvenue. Cliquez sur **[!UICONTROL Mon kit de bienvenue]** pour ouvrir le kit de bienvenue.
 
-![assurance-bienvenue-kit-courrier électronique](assets/insurance-welcome-kit-email.png)
+![assurance-accueil-kit-courrier électronique](assets/insurance-welcome-kit-email.png)
 
-## Présentation du prospectus de gestion de la richesse {#wealth-management-prospectus-walkthrough}
+## Présentation du prospectus de gestion du patrimoine {#wealth-management-prospectus-walkthrough}
 
-Le scénario de gestion du patrimoine Web.Finance implique la personne suivante :
+Le scénario de gestion de patrimoine Web.Finance implique la personne suivante :
 
 * Sarah Rose, une cliente chez We.Finance
 
-La présentation de la gestion de la richesse montre comment un client Web.Finance peut utiliser le site pour en savoir plus sur un fonds commun de placement, le Blue Chip Growth Fund. Le site de référence utilise une communication interactive pour afficher des informations sur le fonds. Ces informations sont disponibles en format Web et PDF. La présentation se termine par un client qui envoie la version PDF des informations à son frère.
+La présentation de la gestion de la richesse montre comment un client Web.Finance peut utiliser le site pour en savoir plus sur un fonds commun de placement, le Blue Chip Growth Fund. Le site de référence utilise une communication interactive pour afficher des informations sur le fonds. Ces informations sont disponibles en format Web et PDF. La procédure pas à pas se termine par l&#39;envoi par courriel de la version PDF des informations à son frère.
 
 L’image suivante affiche le flux de travail de la présentation de la gestion de patrimoine :
 
 ![gestion de patrimoine-prospectus-présentation](assets/wealth-management-prospectus-walkthrough.png)
 
-### Sarah visite le site Web We.Finance et ouvre le prospectus du Fonds pour la croissance de la puce bleue {#sarah-visits-we-finance-website-and-opens-the-blue-chip-growth-fund-prospectus}
+### Sarah visite le site Web We.Finance et ouvre le prospectus du Fonds de croissance de la puce bleue {#sarah-visits-we-finance-website-and-opens-the-blue-chip-growth-fund-prospectus}
 
-Sarah Rose prévoit d&#39;investir dans un fonds commun de placement. Elle est déjà cliente de We.Finance et visite donc le portail Web.Finance pour explorer les fonds communs de placement disponibles. Elle se rend à la section Gestion de la richesse et ouvre la page Fonds de croissance de la puce bleue de We.Finance. La page contient des liens vers le prospectus qui contiennent des détails sur les prix actuels et historiques, les performances mensuelles, la diversification sectorielle, les dépenses, les frais, les taxes et autres renseignements sur les fonds.
+Sarah Rose prévoit d&#39;investir dans un fonds commun de placement. Elle est déjà cliente de We.Finance et se rend donc sur le portail We.Finance pour explorer les fonds communs de placement disponibles. Elle se rend à la section Gestion de la richesse et ouvre la page Fonds de croissance de la puce bleue We.Finance. La page contient des liens vers le prospectus qui contient des détails sur les prix courants et historiques, les performances mensuelles, la diversification sectorielle, les dépenses, les frais, la taxe et plus d&#39;informations sur les fonds.
 
 ![slide1](assets/slide1.png)
 
 #### Fonctionnement {#how-it-works-17}
 
-Le prospectus du Blue Chip Growth Fund est une communication interactive. Il utilise des textes, des images, des graphiques et des composants de tableau (fragments de document) pour afficher le résumé du produit, le style de stock, les performances du fonds, les détails du fonds et d’autres informations connexes. [ Vous pouvez consulter la communication interactive en mode d’édition à l’adresse https://]authorHost[: authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html
+Le prospectus du Blue Chip Growth Fund est une communication interactive. Il utilise des textes, des images, des graphiques et des composants de table (fragments de document) pour afficher le résumé du produit, le style des actions, les performances du fonds, les détails du fonds et d&#39;autres informations connexes. Vous pouvez consulter la communication interactive en mode d’édition à l’adresse https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html
 
-Les graphiques et les tableaux récupèrent les données d’un modèle de données de formulaire. Le modèle de données de formulaire se connecte à des sources de données configurées, une base de données dans cette présentation, pour récupérer des informations spécifiques au fonds. Vous pouvez consulter le modèle de données de formulaire à l’adresse https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/patrimoine-management
+Les graphiques et les tableaux récupèrent les données d’un modèle de données de formulaire. Le modèle de données de formulaire se connecte à des sources de données configurées, une base de données dans cette procédure pas à pas, pour récupérer des informations spécifiques au fonds. Vous pouvez consulter le modèle de données de formulaire à l’adresse https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/wealth-management.
 
 #### Démonstration  {#see-it-yourself-15}
 
-Accédez au portail Web.Finance à l’adresse https://[publishHost]:[publishPort]/wefinance, appuyez sur Gestion de patrimoine, développez Fonds par catégorie d’actifs, puis appuyez sur We.Finance Blue Chip Growth Fund. Le prospectus du Fonds de croissance de la puce bleue We.Finance s&#39;ouvre.
+Accédez au portail Web.Finance à l’adresse https://[publishHost]:[publishPort]/wefinance, appuyez sur Gestion de patrimoine, développez Fonds par classe d’actifs, et appuyez sur Fonds de croissance de la puce bleue We.Finance. Le prospectus du Fonds de croissance de la puce bleue We.Finance s&#39;ouvre.
 
-### Sarah explore le prospectus du Fonds de croissance de la puce bleue pour en savoir plus sur le fonds {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund}
+### Sarah explore le prospectus du Blue Chip Growth Fund pour en savoir plus sur le fonds {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund}
 
-Sarah explore les onglets Aperçu, Prix et Performance, Gestion de portefeuille, Frais et minimum, Impôts et Paiement du prospectus pour connaître les prix courants et historiques, la croissance historique, la comparaison avec l’indice S&amp;P 500, la diversification sectorielle, les personnes qui gèrent le fonds et les dépenses liées au fonds. Les informations associées sont divisées en différents onglets. Le prospectus est une communication interactive. Les communications interactives ont une conception adaptée. Elle peut ouvrir la communication interactive sur un appareil de n’importe quelle taille d’écran et la communication interactive repositionne la conception en fonction du périphérique sous-jacent.
+Sarah explore les onglets Aperçu, Prix et Performance, Gestion de portefeuille, Frais et minima, Impôts et Paiements du prospectus pour connaître les prix courants et historiques, la croissance historique, la comparaison avec l’indice S&amp;P 500, la diversification sectorielle, les personnes qui gèrent le fonds et les dépenses liées au fonds. Les informations associées sont divisées en différents onglets. Le prospectus est une communication interactive. Les communications interactives ont une conception adaptée. Elle peut ouvrir la communication interactive sur un appareil de n’importe quelle taille d’écran et la communication interactive repositionne la conception en fonction du périphérique sous-jacent.
 
 ![diapositive 1-1](assets/slide1-1.png)
 
 #### Fonctionnement {#how-it-works-18}
 
-La communication interactive du Blue Chip Growth Fund utilise des panneaux parents et enfants pour séparer les informations connexes en différentes sections. Le panneau parent organise tous les panneaux enfants en onglets.
+La communication interactive du Fonds de croissance de la puce bleue utilise les panneaux parents et enfants pour séparer les informations connexes en différentes sections. Le panneau parent organise tous les panneaux enfants en onglets.
 
-La disposition de l’onglet parent est définie sur Onglets en haut pour convertir tous les panneaux enfants en onglets. [ Vous pouvez consulter les panneaux de la communication interactive en mode d’édition à l’adresse https://]authorHost[: authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
+La disposition de l’onglet parent est définie sur Onglets en haut pour convertir tous les panneaux enfants en onglets. Vous pouvez consulter les panneaux de la communication interactive en mode d’édition à l’adresse https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
 
 #### Démonstration  {#see-it-yourself-16}
 
-[ Rendez-vous sur la communication interactive du Blue Chip Growth Fund à l&#39;adresse https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled. Explorez tous les onglets.
+Accédez à la communication interactive du Blue Chip Growth Fund à l’adresse https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled. Explorez tous les onglets.
 
-### Sarah affiche et envoie par courrier électronique la version PDF de la page Fonds pour la croissance de la puce bleue {#sarah-views-and-emails-the-pdf-version-of-the-blue-chip-growth-fund-page}
+### Sarah vue et envoie par courrier électronique la version PDF de la page du Fonds pour la croissance de la puce bleue {#sarah-views-and-emails-the-pdf-version-of-the-blue-chip-growth-fund-page}
 
-Sarah se rend à la campagne le week-end. Elle a l&#39;intention de discuter avec son frère aîné du Fonds pour la croissance de la puce bleue. Son frère aîné travaille avec une banque et l&#39;aide dans les décisions liées à la finance. Sarah télécharge une copie de la version PDF de la page Blue Chip Growth Fund sur son ordinateur portable pour une lecture hors ligne. Elle envoie aussi par e-mail une copie de la version PDF à son frère.
+Sarah voyage à la campagne le week-end. Elle a l&#39;intention de discuter avec son frère aîné du Fonds de croissance de la puce bleue. Son frère aîné travaille avec une banque et l&#39;aide dans les décisions liées à la finance. Sarah télécharge une copie de la version PDF de la page Blue Chip Growth Fund sur son ordinateur portable pour une lecture hors ligne. Elle envoie aussi par courriel une copie de la version PDF à son frère.
 
 ![blue-chip-pdf](assets/blue-chip-pdf.gif)
 
 #### Fonctionnement {#how-it-works-19}
 
-Le prospectus du Blue Chip Growth Fund est une communication interactive. Il comporte un canal Web et PDF. La communication interactive s’intègre aux processus AEM pour envoyer la version PDF par courrier électronique. [ Vous pouvez consulter le modèle de processus à l’adresse https://]authorHost[: authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
+Le prospectus du Blue Chip Growth Fund est une communication interactive. Il comporte un canal Web et PDF. La communication interactive s’intègre aux Workflows AEM pour envoyer la version PDF par courrier électronique. Vous pouvez consulter le modèle de processus à l’adresse https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
 
 ![gestion du patrimoine](assets/wealth-management.png)
 
 #### Démonstration  {#see-it-yourself-17}
 
-[ Pour télécharger la version PDF, accédez à la communication interactive https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, appuyez sur Télécharger PDF.
+Pour télécharger la version PDF, accédez à la communication interactive https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, appuyez sur Télécharger PDF.
 
-[ Pour envoyer un PDF par courrier électronique, accédez à la communication interactive du Fonds pour la croissance des puces bleues https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, appuyez sur EMAIL PDF. Spécifiez le nom **complet** et l’adresse **de** courriel. Cliquez sur **Envoyer un courriel**.
+Pour envoyer un fichier PDF par courrier électronique, accédez à la communication interactive du Blue Chip Growth Fund https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, appuyez sur EMAIL PDF. Indiquez le nom **** complet et l’adresse ****&#x200B;électronique. Cliquez sur **Envoyer un courriel**.
 
 ## Présentation de la demande d&#39;assurance automatique {#auto-insurance-application-walkthrough}
 
-Le scénario de la demande d&#39;assurance automobile We.Finance implique la personne suivante :
+Le scénario de demande d&#39;assurance automobile We.Finance implique la personne suivante :
 
 * Sarah Rose, une cliente chez We.Finance
 * Conrad Simms, agent d&#39;assurance, We.Finance
 
-Sarah Rose est déjà cliente chez We.Finance et a acheté une police d’assurance automobile. Elle doit renouveler sa police d’assurance aujourd’hui. Conrad Simms, agent d’assurance, We.Finance envoie un rappel à Sarah au sujet de son renouvellement de police. Le courrier électronique de rappel contient un PDF contenant les détails du renouvellement de la stratégie et un lien vers la version Web de la communication interactive. Les communications interactives ont une conception adaptée aux mobiles et adaptée. Elle peut ouvrir la communication interactive sur n&#39;importe quel appareil et la communication interactive est repositionnée en fonction de la taille d&#39;écran du périphérique sous-jacent. La version PDF de la communication interactive, jointe au courrier électronique, est utile pour la lecture hors ligne.
+Sarah Rose est déjà cliente chez We.Finance et a acheté une police d’assurance automobile. Elle doit renouveler sa police d’assurance aujourd’hui. Conrad Simms, agent d’assurance, We.Finance envoie un rappel à Sarah au sujet du renouvellement de sa police. Le courrier électronique de rappel contient un PDF contenant les détails du renouvellement de la stratégie et un lien vers la version Web de la communication interactive. Les communications interactives ont une conception adaptée et adaptée aux mobiles. Elle peut ouvrir la communication interactive sur n&#39;importe quel appareil et la communication interactive se repositionne en fonction de la taille d&#39;écran du périphérique sous-jacent. La version PDF de la communication interactive, jointe à un courrier électronique, est utile pour la lecture hors ligne.
 
-Sarah suit les instructions fournies dans le courrier électronique et renouvelle le processus avec succès. L’image suivante affiche le flux de travail de la présentation de la demande d’assurance automobile :  ![auto-assurance-présentation de demande](assets/auto-insurance-application-walkthrough.png)
+Sarah suit les instructions fournies dans le courrier électronique et renouvelle le processus avec succès. L&#39;image suivante affiche le flux de travail de la procédure pas à pas de la demande d&#39;assurance automobile :  ![auto-assurance-demande-présentation](assets/auto-insurance-application-walkthrough.png)
 
 ### Conrad sends an insurance policy renewal communication from We.Finance {#conrad-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Conrad se connecte à l’instance AEM, ouvre le tableau de bord Assurance automatique et spécifie l’ID **** client de Sarah, puis clique sur **Renouveler la stratégie**. L’interface utilisateur **de l’** agent s’ouvre avec les détails de stratégie de Sarah Rose déjà renseignée. Conrad a spécifié l’adresse électronique de Sarah et clique sur **Envoyer**. Sarah receives an email with the subject **Your Auto Insurance Renewal**.
+Conrad se connecte à l’instance AEM, ouvre le tableau de bord d’assurance automatique et spécifie l’ID **** client de Sarah, puis clique sur **Renouveler la stratégie**. L’interface utilisateur **de l’** agent s’ouvre avec les détails de stratégie de Sarah Rose déjà renseignée. Conrad a spécifié l’adresse électronique de Sarah et clique sur **Envoyer**. Sarah receives an email with the subject **Your Auto Insurance Renewal**.
 
-![cc-dashboard](assets/cc-dashboard.png)
+![cc-tableau de bord](assets/cc-dashboard.png)
 
 #### Fonctionnement {#how-it-works-20}
 
-La communication sur le renouvellement des polices d’assurance est une communication interactive. Conrad Simms utilise l’interface utilisateur de l’agent pour envoyer la communication de renouvellement de police d’assurance à Sarah. La communication comprend l&#39;impression (PDF) et le lien vers le canal Web de la communication interactive. La communication interactive utilise AEM Workflow pour envoyer le courrier électronique. [ Vous pouvez consulter le flux de travaux à l’adresse https://]authorHost[: authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
+La communication sur le renouvellement des polices d&#39;assurance est une communication interactive. Conrad Simms utilise l’interface utilisateur de l’agent pour envoyer la communication de renouvellement de police d’assurance à Sarah. La communication comprend l&#39;impression (PDF) et le lien vers le canal Web de la communication interactive. La communication interactive utilise AEM Workflow pour envoyer le courrier électronique. Vous pouvez voir le processus à l’adresse https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
 
 ![auto-assurance-workflow](assets/auto-insurance-workflow.png)
 
 #### Démonstration  {#see-it-yourself-18}
 
-Connectez-vous au tableau de bord **d&#39;assurance automatique** We.Finance sous Conrad Simms (csimms/password). L’URL est https://[publisher]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Spécifiez l’ID **** du client. L’ID client de Sarah Rose est 900001. Cliquez sur **Renouveler la stratégie**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Dans l’interface utilisateur de l’agent, saisissez une adresse électronique valide pour envoyer le courrier électronique avec le document de stratégie joint, puis cliquez sur **Envoyer**. Un message, Envoi initié, s’affiche à l’écran, puis, en quelques secondes, un autre message, Envoi réussi, s’affiche. Un courrier électronique contenant l’objet de **votre renouvellement** d’assurance automatique est envoyé à l’adresse électronique spécifiée. La politique proposée à Sarah Rose est une politique de prime.
+Connectez-vous au Tableau de bord **d&#39;assurance auto** We.Finance sous la forme Conrad Simms (csimms/password). L’URL est https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Indiquez l’ID **** du client. L’ID de client de Sarah Rose est 900001. Cliquez sur **Renouveler la stratégie**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Dans l’interface utilisateur de l’agent, saisissez une adresse électronique valide pour envoyer le courrier électronique avec le document de stratégie associé, puis cliquez sur **Envoyer**. Un message, Envoi initié, s’affiche à l’écran, puis, en quelques secondes, un autre message, Envoi réussi, s’affiche. Un courrier électronique contenant l’objet de **votre renouvellement** d’assurance automatique et est envoyé à l’adresse électronique spécifiée. La politique proposée à Sarah Rose est une politique de prime.
 
-La présentation de l&#39;assurance automobile contient également un autre client, Alison Jones. L’ID de client d’Alison Jones est 900002. Lorsque vous envoyez la communication interactive à Alison Jones, une stratégie standard est envoyée. La différence entre la politique standard et la politique de prime est la suivante :
+La présentation de l&#39;assurance automobile contient également un autre client, Alison Jones. L’ID de client d’Alison Jones est 900002. Lorsque vous envoyez la communication interactive à Alison Jones, une stratégie standard est envoyée. La différence entre la politique standard et la politique des primes est la suivante :
 
 * La stratégie Premium comporte une image de bannière et la stratégie standard ne contient que du texte sous le bloc d’adresse.
 * La politique standard coûte moins cher que la politique de prime.
-* La politique de prime a une récompense anti-vol et la politique standard a une récompense intelligente.
+* La politique de prime comporte une récompense contre le vol et la politique standard a une récompense de conduite intelligente.
 
 Les deux stratégies utilisent la même communication interactive. Les sections de la stratégie sont modifiées ou masquées en fonction de la condition de type de stratégie. You can access and review the auto insurance renewal interactive communication directly from https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal
 
 **Utilisation de Microsoft Dynamics comme source de données**
 
-Le site de référence fournit également une communication interactive qui utilise Microsoft Dynamics comme source de données pour le modèle de données de formulaire. Effectuez les étapes suivantes pour configurer la communication interactive pour la présentation de l’assurance auto :
+Le site de référence fournit également une communication interactive qui utilise Microsoft Dynamics comme source de données pour le modèle de données de formulaire. Effectuez les étapes suivantes pour configurer la communication interactive pour la présentation de l&#39;assurance auto :
 
 1. Connectez-vous à https://[author]:[port]/crx/de en tant qu’administrateur.
 1. Open the `/apps/we-finance/components/ccrui/ccrui.jsp`file.
 1. Définissez la valeur de `FormFieldRequestParameter`sur `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
-1. Appuyez sur **Enregistrer tout**. Le site de référence est configuré pour utiliser la communication interactive qui utilise MS Dynamics comme source de données.
+1. Appuyez sur **Tout enregistrer**. Le site de référence est configuré pour utiliser la communication interactive qui utilise MS Dynamics comme source de données.
 
-Désormais, connectez-vous au tableau de bord **Assurance auto** We.Finance sous la forme Conrad Simms (csimms/password). L’URL est https://[publisher]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Spécifiez l’ID **** du client. L’ID client de Sarah Rose est 900001. Cliquez sur **Renouveler la stratégie**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Dans l’interface utilisateur de l’agent, saisissez une adresse électronique valide pour envoyer le courrier électronique avec le document de stratégie joint, puis cliquez sur **Envoyer**. Un message, Envoi initié, s’affiche à l’écran, puis, en quelques secondes, un autre message, Envoi réussi, s’affiche. Un courrier électronique contenant l’objet de **votre renouvellement** d’assurance automatique est envoyé à l’adresse électronique spécifiée.
+Désormais, connectez-vous au Tableau de bord **d&#39;assurance auto** We.Finance sous la forme Conrad Simms (csimms/password). L’URL est https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Indiquez l’ID **** du client. L’ID de client de Sarah Rose est 900001. Cliquez sur **Renouveler la stratégie**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Dans l’interface utilisateur de l’agent, saisissez une adresse électronique valide pour envoyer le courrier électronique avec le document de stratégie associé, puis cliquez sur **Envoyer**. Un message, Envoi initié, s’affiche à l’écran, puis, en quelques secondes, un autre message, Envoi réussi, s’affiche. Un courrier électronique contenant l’objet de **votre renouvellement** d’assurance automatique est envoyé à l’adresse électronique spécifiée.
 
 >[!NOTE]
 >
->Lorsque vous utilisez la communication interactive qui utilise Microsoft Dynamics comme source de données, les liens des courriers électroniques envoyés à Sarah pointent vers la communication interactive qui n’utilise pas Microsoft Dynamics. Pour résoudre ce problème, modifiez manuellement les liens dans les modèles de courrier électronique.
+>Lorsque vous utilisez la communication interactive qui utilise Microsoft Dynamics en tant que source de données, les liens des courriers électroniques envoyés à Sarah pointent vers la communication interactive qui n’utilise pas Microsoft Dynamics. Pour résoudre ce problème, modifiez manuellement les liens dans les modèles de courrier électronique.
 
 ![agent_ui_email-1](assets/agent_ui_email-1.png)
 
 ### Sarah reçoit une notification de renouvellement de police d’assurance de We.Finance et décide d’effectuer le renouvellement.{#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
-Sarah reçoit un e-mail avec une pièce jointe de We.Finance qui lui rappelle que sa police d’assurance automobile est sur le point d’expirer. La pièce jointe est la version imprimée des détails de renouvellement de sa police d&#39;assurance-automobile.
+Sarah reçoit un courrier électronique accompagné d’une pièce jointe de We.Finance qui lui rappelle que sa police d’assurance automobile est sur le point d’expirer. La pièce jointe est la version imprimée de ses détails sur le renouvellement de sa police d&#39;assurance-automobile.
 
-Sarah clicks **Renew Now** and is directed to the web version of her auto insurance letter. En plus de cette lettre, Sarah trouve qu’il lui reste un certain nombre de jours avant l’expiration de sa stratégie. La page fournit à Sarah un aperçu des détails de sa police d’assurance, tels que le numéro de police, le montant dû et d’autres informations, telles que les offres de remise et les récompenses de fidélité. Sarah again clicks **Renew Now** at the bottom of the policy.
+Sarah clicks **Renew Now** and is directed to the web version of her auto insurance letter. En plus de cette lettre, Sarah trouve qu’il lui reste un certain nombre de jours pour que sa stratégie arrive à expiration. La page fournit à Sarah un aperçu des détails de sa police d’assurance, tels que le numéro de police, le montant dû et d’autres informations, telles que les offres d’escompte et les récompenses de fidélité. Sarah again clicks **Renew Now** at the bottom of the policy.
 
-![auto-assurance-renouvellement-courrier électronique](assets/auto-insurance-renewal-email.png)
+![auto-assurance-renouvellement-courriel](assets/auto-insurance-renewal-email.png)
 
 #### Fonctionnement  {#how-it-works-21}
 
-Les sorties Web et papier de votre lettre d’assurance automobile sont créées à l’aide des fonctionnalités multicanaux d’Interactive Communications. The **Renew Now** button in the email is linked to the auto insurance renew application, which is an interactive communication on a publish instance.
+Les sorties Web et imprimées de votre lettre d&#39;assurance automobile sont créées à l&#39;aide des fonctionnalités multi-canaux d&#39;Interactive Communications. The **Renew Now** button in the email is linked to the auto insurance renew application, which is an interactive communication on a publish instance.
 
 ![ic-web-version](assets/ic-web-version.png)
 
 #### Démonstration  {#see-it-yourself-19}
 
-Vous devriez recevoir un courrier électronique avec un fichier PDF joint. Le PDF est une version imprimée de votre lettre d’assurance automobile. Click **Renew Now** to reach to the web version of the policy. Vérifiez vos informations personnelles et les détails de votre stratégie et cliquez sur **Renouveler maintenant**. Vous accédez à un formulaire adaptatif pour paiement.
+Vous devriez recevoir un courrier électronique avec un fichier PDF joint. Le PDF est une version imprimée de votre lettre d&#39;assurance automobile. Click **Renew Now** to reach to the web version of the policy. Vérifiez vos informations personnelles et les détails de votre stratégie et cliquez sur **Renouveler maintenant**. Il vous conduit à un formulaire adaptatif pour paiement.
 
 The **Renew Now** button in the email directs Sarah to the web version of the policy. Vous pouvez consulter l’URL suivante :
 
@@ -904,9 +907,9 @@ You can check the detailed summary of your auto insurance renewal and click **Re
 
 ### Sarah ouvre la page de paiement et effectue le paiement et termine le processus {#sarah-opens-the-payment-page-and-makes-the-payment-and-completes-the-process}
 
-Lorsque Sarah clique sur **Renouveler maintenant** dans la version Web de la communication interactive, la page de paiements s’ouvre. Sarah vérifie à nouveau son numéro de police et sa date d’expiration avec ses enregistrements. Sur le côté droit de la page, elle vérifie le Sommaire des paiements de son renouvellement avec une réduction de 10 % sur le montant total. Sarah remplit ses informations de carte de crédit et clique sur **Effectuer un paiement**.
+Lorsque Sarah clique sur **Renouveler maintenant** sur la version Web de la communication interactive, la page de paiements s’ouvre. Sarah vérifie à nouveau son numéro de stratégie et sa date d’expiration avec ses enregistrements. Sur le côté droit de la page, elle vérifie le Sommaire des paiements de son renouvellement avec une remise de 10 % sur le montant total. Sarah remplit ses informations de carte de crédit et clique sur **Effectuer un paiement**.
 
-![paiement-formulaire adaptatif](assets/payment-adaptive-form.png)
+![formulaire adaptatif-paiement](assets/payment-adaptive-form.png)
 
 #### Fonctionnement  {#how-it-works-22}
 
