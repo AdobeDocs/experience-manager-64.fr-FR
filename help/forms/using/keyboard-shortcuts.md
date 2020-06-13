@@ -9,7 +9,10 @@ content-type: reference
 topic-tags: correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '1172'
+ht-degree: 80%
 
 ---
 
@@ -31,12 +34,12 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 | Rétablir la dernière modification | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Sélectionner plusieurs composants | Maj + Clic | Maj + Clic |
 | Copier le composant sélectionné | Ctrl+C | Ctrl-C&amp;ast; |
-| Couper un ou plusieurs composants sélectionnés. Le composant de coupe ne disparaît pas tant qu’il n’est pas collé au nouvel emplacement. | Ctrl+X | Ctrl&amp;X&amp;ast; |
-| Coller le ou les composants | Ctrl+V | Ctrl+V |
-| Supprimer un ou plusieurs composants sélectionnés | Ctr + Suppr | Ctrl+Del&amp;ast; |
+| Couper un ou plusieurs composants sélectionnés. Le composant de découpe ne disparaît pas tant qu&#39;il n&#39;est pas collé au nouvel emplacement. | Ctrl+X | Ctrl-X&amp;ast; |
+| Coller les composants | Ctrl+V | Ctrl+V |
+| Supprimer un ou plusieurs composants sélectionnés | Ctr + Suppr | Ctrl+Suppr&amp;ast; |
 | Supprimer un ou plusieurs composants sélectionnés | Ctrl+Retour arrière | Ctrl+Retour arrière&amp;ast; |
 | Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode aperçu | Ctrl+B | Ctrl+B&amp;ast; |
-| Italique du texte lors de l’utilisation du composant Editeur de texte enrichi en mode Aperçu | Ctrl+I | Ctrl+I&amp;ast; |
+| Italique du texte lors de l’utilisation du composant Editeur de texte enrichi en mode Prévisualisation | Ctrl+I | Ctrl+I&amp;ast; |
 | Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode aperçu | Ctrl+U | Ctrl+U&amp;ast; |
 
 >[!NOTE]
@@ -49,6 +52,7 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 >
 >* Windows : maintenez la touche Ctrl enfoncée tout en cliquant sur les composants requis.
 >* MAC OS : Commande + clic sur les composants nécessaires.
+
 >
 
 
@@ -71,21 +75,21 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 | **Action** | **Raccourci sous Windows** | **Raccourci sous Mac OS** |
 |---|---|---|
-| Développer tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl + A pour sélectionner tous les accordéons, puis flèche droite pour développer | Commande+A pour sélectionner tous les accordéons suivis de la flèche droite pour développer |
-| Réduire tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl+A pour sélectionner tous les accordéons suivis de la flèche gauche pour réduire | Commande+A pour sélectionner tous les accordéons suivis de la flèche vers la gauche pour réduire |
+| Développer tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl + A pour sélectionner tous les accordéons, puis flèche droite pour développer | Commande+A pour sélectionner tous les accordéons suivis de la flèche Droite pour développer |
+| Réduire tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl+A pour sélectionner tous les accordéons suivis de Flèche Gauche pour réduire | Commande+A pour sélectionner tous les accordéons suivis de la flèche vers la gauche pour réduire |
 | Développer l’accordéon sélectionné dans l’arborescence des objets de formulaire | Flèche vers la droite | Flèche vers la droite |
 | Réduire l’accordéon sélectionné dans l’arborescence des objets de formulaire | Flèche vers la gauche | Flèche vers la gauche |
 | Sélectionner l’élément suivant dans l’arbre des objets de formulaire | Flèche vers le bas | Flèche vers le bas |
 | Sélectionner l’élément précédent dans l’arborescence d’objets de formulaire | Flèche vers le haut | Flèche vers le haut |
 
-[1] Remplace Ctrl + Flèche Droite pour Windows et Commande + Flèche Droite pour Mac OS.\
-[2] Remplace Ctrl + Flèche Gauche pour Windows et Commande + Flèche Gauche pour Mac OS.
+[1] Remplace les touches Ctrl + Flèche Droite pour Windows et Commande + Flèche Droite pour Mac OS.\
+[2] Remplace les touches Ctrl + Flèche Gauche pour Windows et Commande + Flèche Gauche pour Mac OS.
 
 ## Correspondence Management {#correspondence-management}
 
 Cette section répertorie les différents raccourcis clavier et raccourcis d’accessibilité que vous pouvez utiliser dans l’éditeur de texte de Correspondence Management. Vous pouvez utiliser ces raccourcis lorsque vous effectuez les actions suivantes :
 
-* Creating or editing a [Text](/help/forms/using/document-fragments.md#main-pars-header-0) asset
+* Creating or editing a [Text](document-fragments.md) asset
 * Editing a text module after tapping the relevant Edit icon ( ![edittextmodule](assets/edittextmodule.png)) when [creating a correspondence](/help/forms/using/create-correspondence.md).
 
 ### Sélection de texte et déplacement du curseur {#text-selection-and-moving-the-cursor-around}
@@ -331,7 +335,7 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
  </tbody>
 </table>
 
-### Formatage {#formatting}
+### Mise en forme {#formatting}
 
 <table> 
  <tbody>
