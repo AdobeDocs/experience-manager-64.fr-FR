@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 63%
 
 ---
 
@@ -135,7 +138,7 @@ Pour afficher uniquement des images pour des actions, personnalisez les images u
 
 ### Menu contextuel de l’action de tâche Liste de tâches {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Vous avez besoin du paquet de développement pour personnaliser les éléments du menu contextuel de l’action de tâche Liste de tâches de l’espace de travail AEM Forms. For detailed information about creating development package, see [Building AEM Forms workspace code.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+1. Vous avez besoin du paquet de développement pour personnaliser les éléments du menu contextuel de l’action de tâche Liste de tâches de l’espace de travail AEM Forms. For detailed information about creating development package, see [Building AEM Forms workspace code.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copy /libs/ws/js/runtime/templates/task.html to `/apps/ws/js/runtime/templates/task.html`replace the following code snippet:
 
@@ -262,7 +265,7 @@ Pour afficher uniquement des images pour des actions, personnalisez les images u
 
 ### Menu contextuel de l’action de tâche Détails de la tâche {#task-details-task-action-pop-up-menu}
 
-Effectuez les étapes suivantes pour personnaliser le menu contextuel des actions de tâche Détails :
+Effectuez les étapes suivantes pour personnaliser le menu contextuel Actions de la tâche Détails :
 
 * Copy the /libs/ws/js/runtime/templates/taskdetails.html file to the `/apps/ws/js/runtime/templates/` folder:
 * Encapsulez la balise de l’icône dans la balise d’ancrage au lieu du texte. Par exemple, le *nouveau code *répertorié ci-dessous encapsule la balise d’icône dans la balise d’ancrage :
@@ -360,4 +363,4 @@ Effectuez les étapes suivantes pour personnaliser le menu contextuel des action
 * Recherchez le texte suivant : `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
 * Replace the located text with the following text: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
 
-[**Contacter le support technique **](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Contacter le support technique **](https://www.adobe.com/fr/account/sign-in.supportportal.html)
