@@ -2,13 +2,16 @@
 title: Fragments de document
 seo-title: Fragments de document
 description: Les fragments de document, tels que du texte, des listes, des conditions et des fragments de disposition, dans Gestion de la correspondance, permettent de former les composants statiques, dynamiques et répétables de la correspondance de client.
-seo-description: Fragments de document, comme le texte, les , les conditions et les fragments de mise en page, dans Correspondence Management vous permet de former les composants statiques, dynamiques et répétables de la correspondance client.
+seo-description: Fragments de document, comme les fragments de texte, de listes, de conditions et de mise en page, dans Correspondence Management vous permet de former les composants statiques, dynamiques et répétables de la correspondance client.
 uuid: d1baa9eb-dffe-4e02-af95-394e7ee0d6ee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 7bdf1f06-c298-4695-bad1-e402cf472086
 translation-type: tm+mt
-source-git-commit: 1c79deea23ad9c5ba1c4e2471f36a40f5dbafea9
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '6809'
+ht-degree: 83%
 
 ---
 
@@ -44,47 +47,47 @@ La solution Correspondence Management prend en charge deux types d’éléments 
 1. Tap **Create** > **Text.** Ou sélectionnez un actif de texte et appuyez sur **Modifier**.
 1. Spécifiez les informations suivantes pour le texte :
 
-   * **Titre : (Facultatif)** Entrez le titre de la ressource de texte. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les textes sont référencés par leur titre (le cas échéant) comme dans les vignettes et les propriétés de l’actif.
+   * **Titre : (Facultatif)** Saisissez le titre de l’actif de texte. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les textes sont référencés par leur titre (le cas échéant) comme dans les vignettes et les propriétés de l’actif.
    * **Nom :** Saisissez un nom unique pour l’actif de texte. Aucun actif (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre actif. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
    * **Description** : Entrez une description de l’actif.
    * **Dictionnaire de données** : Si vous le souhaitez, sélectionnez le dictionnaire de données auquel mapper l’actif. Cet attribut vous permet d’ajouter dans l’actif de texte des références à des éléments du dictionnaire de données.
    * **Balises** : Eventuellement, pour créer une balise personnalisée, entrez la valeur dans le champ de texte et appuyez sur Entrée. Vous pouvez afficher la balise sous le champ de texte des balises. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont également créées.
 
-1. Appuyez sur **Suivant**. Correspondence Management affiche la page Editeur dans laquelle vous pouvez ajouter des paragraphes de texte et des éléments de données au texte.
+1. Appuyez sur **Next** (Suivant). Correspondence Management affiche la page Editeur dans laquelle vous pouvez ajouter des paragraphes et des éléments de données de texte au texte.
 
    Le vérificateur orthographique par défaut dans les vérifications orthographiques des navigateurs dans l’éditeur de texte. Pour gérer les vérifications d’orthographe et de grammaire, vous pouvez modifier les paramètres du vérificateur orthographique de votre navigateur ou installer des modules/adjonctions externes de navigateur pour vérifier l’orthographe et la grammaire.
 
-   Vous pouvez également utiliser les différents raccourcis clavier de l’éditeur de texte pour gérer, modifier et mettre en forme le texte. For more information on [Text Editor](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) keyboard shortcuts in Correspondence Management Keyboard Shortcuts.
+   Vous pouvez également utiliser les divers raccourcis clavier de l’éditeur de texte pour gérer, modifier et mettre en forme du texte. For more information on [Text Editor](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) keyboard shortcuts in Correspondence Management Keyboard Shortcuts.
 
 1. Un éditeur de texte s’ouvre. Entrez le texte. Utilisez la barre d’outils située en haut de la page pour mettre en forme le texte, les conditions d’insertion, le lien et les sauts de page.
 
 
    ![Barre d’outils](assets/advancedediting.png)
 
-   **Figure :** Barre d’ *outils*
+   **Figure :** *Barre d’outils*
 
-   * **Lien** : Insérez un lien hypertexte dans le texte. Appuyez sur **[!UICONTROL Lien]**, spécifiez le lien dans le champ **[!UICONTROL URL]** , supprimez le nom d’objet par défaut du champ Texte **[!UICONTROL de]** remplacement, puis appuyez sur ![Enregistrer.](assets/save_icon.svg)
+   * **Lien** : Insérez un lien hypertexte dans le texte. Appuyez sur **[!UICONTROL Lien]**, spécifiez le lien dans le champ **[!UICONTROL URL]** , supprimez le nom d’objet par défaut du champ Texte **[!UICONTROL de]** remplacement et appuyez sur ![Enregistrer.](assets/save_icon.svg)
    * **Répéter** : Imprime l’élément Collection dans le dictionnaire de données au moyen d’un délimiteur.
    * **Condition** : cliquez pour insérer une condition. Insérez le texte en fonction de la condition. Si la condition est vraie, le texte est visible dans la lettre, sinon il ne l’est pas.
-   * **Ajouter Description**: Ajouter une annotation à un bout de texte. Il s’agit de métadonnées visibles pour l’auteur mais pas d’une partie de la lettre créée.
+   * **Ajouter la description**: Ajoutez une annotation à un bout de texte. Il s’agit de métadonnées visibles pour l’auteur mais pas d’une partie de la lettre créée.
    * **Saut de page** : Si vous définissez l’attribut de saut de page d’un module de texte sur false, le module de texte n’est pas fractionné sur plusieurs pages.
    L’éditeur de texte s’ouvre. Saisissez le texte. La barre d’outils change selon le type de modifications que vous souhaitez effectuer : paragraphes, alignement ou liste :
 
    ![Sélectionnez le type de barre d’outils](assets/toolbarselection.png)
 
-   **Figure :** *Sélectionner le type de barre d’outils : Paragraphe, Alignement ou Liste*
+   **Figure :** *Sélectionnez le type de barre d’outils : Paragraphe, alignement ou liste*
 
    ![Barre d’outils Paragraphe](assets/fonteditingtoolbar.png)
 
-   **Figure :** Barre d’outils *Paragraphe*
+   **Figure :** *Barre d’outils Paragraphe*
 
    ![Barre d’outils d’alignement](assets/paragrapheditingtoolbar.png)
 
-   **Figure :** Barre d’outils *Alignement*
+   **Figure :** *Barre d’outils d’alignement*
 
    ![Barre d’outils Liste](assets/bulleteditingtoolbar.png)
 
-   **Figure :** Barre d’outils *Liste*
+   **Figure :** *Barre d’outils Liste*
 
 1. Pour réutiliser un ou plusieurs paragraphes de texte existant dans une autre application, comme par exemple du texte issu de MS Word ou des pages HTML, copiez et collez le texte dans l’éditeur de texte. La mise en forme du texte copié est conservée dans l’éditeur de texte.
 
@@ -94,7 +97,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
 
    Vous pouvez directement copier et coller le texte à partir du document MS Word vers un module de texte modifiable. La mise en forme, telle que la liste à puces, la police et la couleur du texte, est conservée dans le module de texte.
 
-   ![pastetexttexttexttextmodule](assets/pastetexttextmodule.png)
+   ![pastetexttexttextmodule](assets/pastetexttextmodule.png)
 
    >[!NOTE]
    >
@@ -103,7 +106,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
 1. Si nécessaire, insérez des caractères spéciaux dans le fragment de document. Vous pouvez, par exemple, utiliser la palette des caractères spéciaux pour insérer les caractères suivants :
 
    * Symboles de devise tels que €, ¥ et £
-   * Symboles mathématiques tels que Δ, √, Δet ^
+   * Symboles mathématiques tels que Δ, √,  et ^
    * Symboles de ponctuation tels que ‟ et&quot;
    ![specialcharacters](assets/specialcharacters.png)
 
@@ -111,7 +114,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
 
 1. Pour mettre en surbrillance\mettre en évidence des parties de texte dans un module incorporé modifiable, sélectionnez le texte et appuyez sur Couleur de surbrillance.
 
-   ![textbackgroundcolor](assets/textbackgroundcolorapplied.png)
+   ![textbackgroundcolor appliqué](assets/textbackgroundcolorapplied.png)
 
    You can either directly tap a basic color **`[A]`** present in the Basic Colors palette or tap **Select** after using the slider **`[B]`** to choose the appropriate shade of the color.
 
@@ -127,14 +130,14 @@ La solution Correspondence Management prend en charge deux types d’éléments 
    * Ajoutez un élément d’espace réservé dans le texte, dans le panneau Éléments de données, appuyez sur Nouveau, saisissez les détails du nouvel élément de données, puis appuyez sur Créer pour ajouter le nouvel élément à la liste. Le nouvel espace réservé peut être inséré dans le texte de la même façon qu’un élément du dictionnaire de données. Pour modifier un espace réservé, sélectionnez l’espace réservé et appuyez sur Modifier.
    ![Éléments d’espace réservé](assets/placeholder_elements_in_xmldata.png)
 
-   **Figure :** Eléments *d’espace réservé spécifiés dans le fichier de données d’exemple d’un dictionnaire de données*
+   **Figure :** *Éléments d’espace réservé tels que spécifiés dans le fichier de données d’exemple d’un dictionnaire de données*
 
    ![Éléments d’espace réservé dans la lettre](assets/placeholder_elements_in_text.png)
 
-   **Figure :** Valeurs d’élément *d’espace réservé dans le CCR renseigné à partir des variables du dictionnaire de données, comme spécifié dans le fichier de données d’exemple*
+   **Figure :** *Valeurs d’élément d’espace réservé dans la vue CCR renseignée à partir des variables du dictionnaire de données, comme indiqué dans le fichier de données d’exemple.*
 
 1. Vous pouvez utiliser des conditions intégrés et la répétition afin que votre lettre soit hautement contextuelle et parfaitement structurée. For more information on inline condition and repeat, see [Inline conditions and repeat in letters](/help/forms/using/cm-inline-condition.md).
-1. Appuyez sur **Enregistrer**.
+1. Appuyez sur **Save** (Enregistrer).
 
 #### Recherche et remplacement de texte {#searching-and-replacing-text}
 
@@ -149,7 +152,7 @@ La fonction Rechercher et remplacer vous permet de rechercher (et de remplacer) 
 1. Appuyez sur Rechercher et remplacer.
 1. Saisissez le texte à rechercher dans le champ Rechercher et appuyez sur Rechercher. La recherche de texte est mise en surbrillance dans le module de texte.
 
-1. Pour rechercher l’instance suivante du texte, appuyez à nouveau sur Rechercher.
+1. Pour rechercher l’instance suivante du texte, appuyez de nouveau sur Rechercher.
 
    Si vous continuez à appuyer sur le bouton Rechercher, la recherche se poursuit jusqu’au bas de la page. After the last instance of the text is found, the message **Reached end of module** indicates that no more search results were found.
 
@@ -159,13 +162,13 @@ La fonction Rechercher et remplacer vous permet de rechercher (et de remplacer) 
 
 #### Options de recherche {#search-options}
 
-**Respecter la casse :** La recherche renvoie des résultats avec le même cas uniquement.
+**Respecter la casse :** La recherche renvoie uniquement les résultats avec la même casse.
 
-**Mot entier :** La recherche renvoie uniquement des mots entiers.
+**Mot entier :** La recherche ne renvoie que des mots entiers.
 
 **Remarque :** Si vous saisissez des caractères spéciaux dans le champ Rechercher, l’option Mot entier est désactivée.
 
-**Reg ex :** Recherche à l’aide d’un   régulier. Par exemple, l’expression régulière suivante recherche des adresses électroniques dans un module de texte :
+**Reg ex :** Recherche à l’aide d’expressions régulières. Par exemple, l’expression régulière suivante recherche des adresses électroniques dans un module de texte :
 
 `[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}`
 
@@ -182,7 +185,7 @@ La fonction Rechercher et remplacer vous permet de rechercher (et de remplacer) 
 
 1. Si vous appuyez à nouveau sur Rechercher, la recherche se poursuit dans la partie supérieure de la page.
 
-   Utilisez l’option Tout remplacer pour remplacer toutes les occurrences dans le module de texte. Lorsque vous nous faites &quot;, le nombre de remplacements est affiché sous forme de message dans la boîte de dialogue Rechercher et remplacer.
+   Utilisez l’option Tout remplacer pour remplacer toutes les occurrences dans le module de texte. Lorsque vous utilisez &quot;, le nombre de remplacements s&#39;affiche sous la forme d&#39;un message dans la boîte de dialogue Rechercher et remplacer.
 
 #### Conseils et astuces des meilleures pratiques relatives aux modules de texte {#best-practices-tips-and-tricks-for-text-modules}
 
@@ -197,7 +200,7 @@ La fonction Rechercher et remplacer vous permet de rechercher (et de remplacer) 
 
 ## Liste {#list}
 
-Une liste est un groupe de fragments du document, y compris le texte, les listes (autres), les conditions, et les images. L’ordre des éléments de la liste peut être fixe ou modifiable. Lors de la création d’une lettre, vous pouvez utiliser certains ou la totalité des éléments de liste pour reproduire un modèle d’éléments réutilisable. Les  se comportent en fait comme des  qui peuvent être imbriqués dans d&#39;autres .
+Une liste est un groupe de fragments du document, y compris le texte, les listes (autres), les conditions, et les images. L’ordre des éléments de la liste peut être fixe ou modifiable. Lors de la création d’une lettre, vous pouvez utiliser certains ou la totalité des éléments de liste pour reproduire un modèle d’éléments réutilisable. Les Listes se comportent essentiellement comme des cibles qui peuvent être imbriquées dans d&#39;autres cibles.
 
 ### Implémentation des listes {#implementing-lists}
 
@@ -225,13 +228,13 @@ Une liste est un groupe de contenus associés pouvant être utilisés dans un mo
 
 1. Spécifiez les informations suivantes pour la liste :
 
-   * **Titre (facultatif) : saisissez** le titre de la liste. Le titre ne doit pas être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les  sont référencées par leurs titres (le cas échéant), comme dans les vignettes et les propriétés des ressources.
-   * **Nom :** Nom unique du  de. Aucun actif (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre actif. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ nom est automatiquement renseigné par la valeur dans le champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
+   * **Titre (facultatif) : saisissez** le titre de la liste. Le titre ne doit pas être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les Listes sont référencées par leur titre (lorsqu’elles sont disponibles), par exemple dans les miniatures et les propriétés de la ressource.
+   * **Nom :** Nom unique de la liste. Aucun actif (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre actif. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ nom est automatiquement renseigné par la valeur dans le champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
    * **Description (Facultatif)**: Entrez une description de la ressource.
-   * **Dictionnaire de données (facultatif)**: Si vous le souhaitez, sélectionnez le dictionnaire de données auquel vous connecter. Seuls peuvent être ajoutés à la liste les actifs qui utilisent le même dictionnaire de données que la liste ou les actifs auxquels aucun dictionnaire de données n’a été affecté. L’affectation d’un dictionnaire de données à une liste permet à une personne créant un modèle de lettre de trouver facilement la liste appropriée.
+   * **Dictionnaire de données (facultatif)**: Si vous le souhaitez, sélectionnez le dictionnaire de données auquel se connecter. Seuls peuvent être ajoutés à la liste les actifs qui utilisent le même dictionnaire de données que la liste ou les actifs auxquels aucun dictionnaire de données n’a été affecté. L’affectation d’un dictionnaire de données à une liste permet à une personne créant un modèle de lettre de trouver facilement la liste appropriée.
    * **Balises (facultatif)**: Sélectionnez les balises à appliquer. Vous pouvez également taper un nouveau nom d’étiquette pour créer une étiquette. (The new tag is created when you tap **Save**.)
 
-1. Appuyez sur **Suivant**.
+1. Appuyez sur **Next** (Suivant).
 1. Tap **Add Asset**.
 1. To add assets to the list, select them in the Select Assets page and tap **Done**.
 
@@ -248,12 +251,12 @@ Une liste est un groupe de contenus associés pouvant être utilisés dans un mo
    * **Accès à la bibliothèque** : pour activer l’accès à la bibliothèque pour ajouter des éléments, appuyez sur Accès à la bibliothèque. Lorsque l’accès à la bibliothèque est activé, l’expert en assurance peut ajouter plus de contenu à la liste. Sinon, l’expert en assurance est limité au contenu que vous avez défini pour la liste.
    * **Ordre de verrouillage** : pour verrouiller l’ordre des actifs dans la liste et empêcher l’utilisateur de modifier cet ordre, appuyez sur Verrouiller l’ordre. Si vous ne sélectionnez pas cette option, l’utilisateur pourra modifier l’ordre des éléments de la liste.
    * **Ajouter des puces** : Utilisez cette option pour appliquer une puce ou un style de numérotation au module. Vous pouvez utiliser un style de liste prédéfini ou personnalisé. Vous pouvez également indiquer le texte à afficher avant et après chaque élément de liste.
-   * **Saut** de page : Sélectionnez cette option ( ![saut](assets/break.png)) pour ajouter un saut de page entre le contenu du . When this option is not selected ( ![nobreak](assets/nobreak.png)), if the contents of the list are overflowing to the next page, the whole list is shifted to the next page instead of breaking in the page between the list.
+   * **Saut** de page : Sélectionnez cette option ( ![saut](assets/break.png)) pour ajouter un saut de page entre le contenu de la liste. When this option is not selected ( ![nobreak](assets/nobreak.png)), if the contents of the list are overflowing to the next page, the whole list is shifted to the next page instead of breaking in the page between the list.
    * **Configuration d’affectation** : Utilisez cette option pour spécifier le nombre minimal et maximal d’actifs qui peuvent être ajoutés à la liste.
 
 1. Vous pouvez sélectionner les options suivantes pour spécifier le comportement de chaque actif de la liste au moment de l’exécution :
 
-   * **Modifiable** : Lorsque cette option est sélectionnée, le contenu peut être modifié dans l’interface utilisateur de création de correspondance. (Cette option n’est pas disponible pour les modules  et Image.)
+   * **Modifiable** : Lorsque cette option est sélectionnée, le contenu peut être modifié dans l’interface utilisateur de création de correspondance. (Cette option n’est pas disponible pour les modules Liste et Image.)
    * **Obligatoire** : Lorsque cette option est sélectionnée, le contenu est obligatoire dans l’interface utilisateur de création de correspondance.
    * **Sélectionné** : Lorsque cette option est sélectionnée, le contenu est présélectionné dans l’interface utilisateur de création de correspondance.
    * **Sauter les puces et la numérotation** : Lorsque cette option est sélectionnée, le contenu n’utilise pas les puces et la numérotation dans l’interface utilisateur de création de correspondance. (Cette option n’est pas disponible pour les modules d’image). En outre, entre Sauter le style, Numérotation composée et Ignorer le style de liste, une seule des options peut être appliquée à un module. Une de ces options peut être utilisée pour un module lorsque vous sélectionnez l’option Ajouter les puces pour un module.)
@@ -262,7 +265,7 @@ Une liste est un groupe de contenus associés pouvant être utilisés dans un mo
    * **Ignorer le style de liste** : Si l’option Numérotation composée est désélectionnée, l’option Ignorer le style de liste est activée. Cette sélection ignore le style de la liste imbriquée et la numérotation continue à partir de la liste extérieure. Par conséquent, les modules de la liste imbriquée sont traités en tant que partie intégrante de la liste extérieure et tous les styles spécifiés dans la liste imbriquée sont ignorés. Si l’option Ignorer le style de liste est désactivée pour une liste imbriquée, les modules qui font partie de cette liste imbriquée ont leur propre style de numérotation.
    * **Sous-formulaire solidaire :** Définit le saut de page des actifs d’une liste. Si vous définissez la propriété Sous-formulaire solidaire pour l’un des actifs d’une liste sur **On**, cet actif et l’actif suivant resteront sur la même page. Le contenu de l’actif sélectionné et de l’actif suivant ne sera pas fractionné sur plusieurs pages.
 
-1. Appuyez sur **Enregistrer**.
+1. Appuyez sur **Save** (Enregistrer).
 
 ### Meilleures pratiques/conseils et astuces {#best-practices-tips-and-tricks}
 
@@ -283,8 +286,8 @@ Selon les options sélectionnées, soit uniquement la première expression véri
 
 L’éditeur de conditions est fourni avec une interface utilisateur [Générateur d’expression](/help/forms/using/expression-builder.md), qui prend en charge la création d’expressions à l’aide à la fois de plusieurs espaces réservés et d’éléments du dictionnaire de données. Vous pouvez utiliser sur ces expressions des opérandes communs et des fonctions locales/globales. Chaque expression peut être associée à un certain contenu et il peut éventuellement y avoir une section par défaut si aucune des expressions n’est évaluée comme vraie. Toutes les expressions sont évaluées dans l’ordre dans lequel elles sont définies et la première expression renvoyant la valeur true est sélectionnée et son contenu associé est renvoyé par ce module conditionnel.
 
-Par exemple, si le texte des termes et conditions d’une lettre diffère selon l’état dans lequel se trouve le client et que le dictionnaire de données contient un élément appelé &quot;état&quot;, vous pouvez ajouter la condition comme suit :\
-・ state = NY, sélectionnez le paragraphe de texte T&amp;C_NY\
+Par exemple, si le texte des termes et conditions d’une lettre diffère selon l’état dans lequel se trouve le client et si le dictionnaire de données contient un élément appelé &quot;état&quot;, vous pouvez ajouter la condition comme suit :\
+・ état = NY, sélectionnez le paragraphe de texte T&amp;C_NY\
 ・ state = NC, sélectionnez le paragraphe de texte T&amp;C_NC
 
 L’Editeur de condition vous permet de spécifier une condition par défaut. Si la valeur des variables de contrôle ne correspond à aucune condition, alors le contenu associé à la condition par défaut est utilisé. Suivant l’exemple précédent, vous pourriez ajouter cette ligne de condition :\
@@ -296,13 +299,13 @@ L’Editeur de condition vous permet de spécifier une condition par défaut. Si
 1. Sélectionnez **Créer > condition**.
 1. Spécifiez les informations suivantes pour la liste :
 
-   * **Titre (facultatif) :** Entrez le titre de la condition. Le titre ne doit pas être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les conditions sont référencées par leur titre (le cas échéant), comme dans les vignettes et les propriétés des ressources.
+   * **Titre (facultatif) :** Entrez le titre de la condition. Le titre ne doit pas être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les conditions sont référencées par leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource.
    * **Nom :** Nom unique de la condition. Aucun actif (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre actif. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
-   * **Description (Facultatif)** Entrez une description de la condition.
-   * **Dictionnaire de données (facultatif)**: Si vous le souhaitez, sélectionnez le dictionnaire de données auquel vous connecter. Seuls peuvent être ajoutés à la liste les actifs qui utilisent le même dictionnaire de données que la condition ou les actifs auxquels aucun dictionnaire de données n’a été affecté. L’affectation d’un dictionnaire de données à une liste permet à une personne créant un modèle de lettre de trouver facilement la condition appropriée.
+   * **Description (facultatif)** Saisissez une description de la condition.
+   * **Dictionnaire de données (facultatif)**: Si vous le souhaitez, sélectionnez le dictionnaire de données auquel se connecter. Seuls peuvent être ajoutés à la liste les actifs qui utilisent le même dictionnaire de données que la condition ou les actifs auxquels aucun dictionnaire de données n’a été affecté. L’affectation d’un dictionnaire de données à une liste permet à une personne créant un modèle de lettre de trouver facilement la condition appropriée.
    * **Balises (facultatif)**: Si vous le souhaitez, sélectionnez les balises à appliquer. Vous pouvez également taper un nouveau nom d’étiquette pour créer une étiquette. (The new tag is created when you tap **Save**.)
 
-1. Appuyez sur **Suivant**.
+1. Appuyez sur **Next** (Suivant).
 1. Tap **Add Asset**.
 1. To add an asset to the Condition, select it in the Select Assets page and tap **Done**. Les actifs sont ajoutés au volet Expression.
 1. Vous pouvez sélectionner les options suivantes pour spécifier le comportement de la condition au moment de l’exécution :
@@ -385,9 +388,9 @@ For a detailed example of using static and dynamic tables in layout fragments, s
 1. Correspondence Management affiche les fichiers XDP disponibles. Select the XDP on which you want to base your layout fragment and tap **Next**.
 1. Spécifiez les informations suivantes pour la mise en page :
 
-   * **Titre (facultatif) :** Entrez le titre du fragment de mise en page. Le titre ne doit pas être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les fragments de mise en page sont référencés par leurs titres (le cas échéant), comme dans les vignettes et les propriétés de la ressource.
-   * **Nom :** Nom unique du fragment de mise en page. Aucun actif (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre actif. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier. Ce nom apparaît dans le  du dans l’interface utilisateur de gestion des actifs.
-   * **Description (Facultatif)**: Description qui s’affiche dans le  du dans l’interface utilisateur de gestion des actifs.
+   * **Titre (facultatif) :** Entrez le titre du fragment de mise en page. Le titre ne doit pas être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les fragments de mise en page sont référencés par leurs titres (le cas échéant), comme dans les miniatures et les propriétés de la ressource.
+   * **Nom :** Nom unique du fragment de mise en page. Aucun actif (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre actif. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier. Ce nom apparaît dans la liste de l’interface utilisateur de gestion des actifs.
+   * **Description (Facultatif)**: Description qui s’affiche dans la liste de l’interface utilisateur de gestion des actifs.
    * **Balises (facultatif)**: Si vous le souhaitez, sélectionnez les balises à appliquer à la condition. Vous pouvez également taper un nouveau nom d’étiquette pour créer une étiquette.
 
 1. Cliquez sur l’onglet **Tableau** et spécifiez les informations suivantes pour la mise en page :
@@ -401,9 +404,9 @@ For a detailed example of using static and dynamic tables in layout fragments, s
    * **Pied de page** : Le texte à afficher pour le pied de page.
    * **Type** : Le type de colonne supplémentaire : champ ou zone cible. L’option Type est activée pour les tableaux d’espaces réservés statiques. Elle peut être définie au niveau colonne et non au niveau cellule. Toutes les cellules d’une colonne étendue seront du même type. Dans le cas d’un tableau dynamique, toutes les colonnes sont de type champ. Dans le cas de tableaux autres qu’espaces réservées, vous ne pouvez pas définir le type des colonnes supplémentaires. Dans ce cas, les cellules supplémentaires d’une colonne étendue sont du même type que celles de la dernière colonne de la ligne et le type des cellules d’une ligne supplémentaire est identique à celui de la dernière cellule de la colonne.
    * **Rapport largeur/hauteur** : Le ratio des largeurs des colonnes du tableau. 
-   For a detailed example of using static and dynamic tables in layout fragments, see [Example with sample files: using static and dynamic tables in a letter](#main-pars-header-28).
+   For a detailed example of using static and dynamic tables in layout fragments, see [Example with sample files: using static and dynamic tables in a letter](create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them).
 
-1. Appuyez sur **Enregistrer**.
+1. Appuyez sur **Save** (Enregistrer).
 
 ### Télécharger un fichier XDP vers Correspondence Management {#upload-an-xdp-to-correspondence-management}
 
@@ -487,8 +490,8 @@ Cet exemple montre comment créer un tableau dynamique et statique, lier le tabl
 
 1. Dans Designer, créez deux fichiers XDP (fragments de mise en page) : un tableau dynamique et un tableau statique. Pour les deux mises en pages :
 
-   * Ajouter sous-formulaire à la colonne du tableau. Veillez à rendre souple la mise en page du sous-formulaire parent du tableau et à supprimer les liaisons du sous-formulaire dans le tableau.
-   * Ajouter un sous-formulaire à la cellule du tableau. Veillez à rendre souple la mise en page du sous-formulaire parent du tableau et à supprimer les liaisons du sous-formulaire dans le tableau.
+   * Ajoutez le sous-formulaire à la colonne du tableau. Veillez à rendre souple la mise en page du sous-formulaire parent du tableau et à supprimer les liaisons du sous-formulaire dans le tableau.
+   * Ajoutez un sous-formulaire à la cellule du tableau. Veillez à rendre souple la mise en page du sous-formulaire parent du tableau et à supprimer les liaisons du sous-formulaire dans le tableau.
    Ou utilisez les fichiers XDP statiques et dynamiques liés à cette étape.
 
    Pour plus d’informations sur l’utilisation des fragments de mise en page, voir [Fragments de mise en page](#layoutfragments).
