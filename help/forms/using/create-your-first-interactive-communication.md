@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +29,7 @@ Ce didacticiel fournit un cadre de bout en bout pour la création d’une commun
 
 L’image suivante illustre les blocs de construction nécessaires à la création d’une communication interactive.
 
-![workflow](assets/workflow.gif)
+![flux de travail](assets/workflow.gif)
 
 À la fin de ce didacticiel, vous serez capable de :
 
@@ -35,7 +38,6 @@ L’image suivante illustre les blocs de construction nécessaires à la créati
 * Tester et publier une communication interactive
 
 ## Cas d’utilisation{#use-case}
-
 
 
 La procédure commence par l’apprentissage du cas d’utilisation :
@@ -55,7 +57,7 @@ Un opérateur de télécommunications envoie des factures mensuelles aux clients
 
 ## Étape 1 : Planifier la communication interactive {#step-plan-the-interactive-communication}
 
-![07-apply-rule-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
+![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
 La première étape de la planification d’une communication interactive consiste à finaliser le contenu de cette dernière. Une fois le contenu finalisé, vous devez l’analyser pour identifier les différents types de ressources requis pour créer la communication interactive.
 
@@ -88,7 +90,7 @@ Un modèle de données de formulaire vous permet de connecter une communication 
 * Modifier les exemples de données
 * Tester le modèle de données de formulaire et les services configurés avec des données de test
 
-   [ ![voir-le-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
+   [ ![voir-le-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model-tutorial.md)
 
 ## Étape 3 : Créer des fragments de document {#step-create-document-fragments}
 
@@ -106,7 +108,7 @@ Les fragments de document sont des composants réutilisables d’une corresponda
 
 ## Étape 4 : Créer des modèles {#step-create-templates}
 
-![07-apply-rule-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
+![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
 Pour créer une communication interactive, vous devez disposer de modèles disponibles sur le serveur AEM pour les canaux d’impression et web.
 
@@ -124,7 +126,7 @@ Les modèles pour le canal web sont créés dans AEM. Les auteurs et les adminis
 
 ## Étape 5 : Créer une communication interactive {#step-create-an-interactive-communication}
 
-![09-style-votre-adaptatif-formulaire-petit](assets/09-style-your-adaptive-form-small.png)
+![09-style-votre-formulaire adaptatif-petit](assets/09-style-your-adaptive-form-small.png)
 
 Une fois que vous avez créé tous les blocs de construction, tels que le modèle de données de formulaire, les fragments de document et les modèles pour la version web, vous pouvez commencer à créer une communication interactive.
 
@@ -139,7 +141,7 @@ Les communications interactives peuvent être fournies par deux canaux : impres
 * Créer un tableau dans la version web de la communication interactive
 * Création d’hyperliens dans la version Web d’Interactive Communication
 
-   [ ![voir-le-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
+   [ ![voir-le-guide-sm](assets/see-the-guide-sm.png)](create-interactive-communication-tutorial.md)
 
 ## Étape 6 : Tester votre communication interactive {#step-test-your-interactive-communication}
 
