@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 translation-type: tm+mt
-source-git-commit: 9327fd06957fafc7c711f1726f5d8a363ae0c1ad
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 89%
 
 ---
 
@@ -49,7 +52,7 @@ La structure comprend des données avec les modes de saisie suivants :
 * Données conditionnelles
 * Images
 
-Dans chaque section, le texte en gras représente le texte statique. La base de données comprend les tableaux des clients, des factures et des appels. Un modèle de données de formulaire peut recevoir des données de n’importe lequel de ces tableaux. For more information, see [Create form data model](/help/forms/using/create-form-data-model0.md).
+Dans chaque section, le texte en gras représente le texte statique. La base de données comprend les tableaux des clients, des factures et des appels. Un modèle de données de formulaire peut recevoir des données de n’importe lequel de ces tableaux. For more information, see [Create form data model](create-form-data-model-tutorial.md).
 
 Le tableau suivant illustre la source de données de chaque champ de la structure de la communication interactive :
 
@@ -79,7 +82,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
    <td><p>Lieu de livraison</p> <p>Code du pays</p> <p>Numéro de mobile</p> <p>Autre numéro de téléphone</p> <p>Numéro de relation</p> <p>Nombre de connexions</p> </td> 
    <td><p>Valeurs des champs suivants :</p> 
     <ul> 
-     <li>Nom</li> 
+     <li>Name (Nom)</li> 
      <li>Adresse</li> 
      <li>Numéro de mobile</li> 
      <li>Autre numéro de téléphone</li> 
@@ -109,7 +112,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
   </tr>
   <tr>
    <td>Récapitulatif des frais</td> 
-   <td><p>Frais d’appel</p> <p>Frais de conférence téléphonique</p> <p>Frais de SMS </p> <p>Frais d’Internet mobile</p> <p>Frais d’itinérance nationale</p> <p>Frais d’itinérance internationale</p> <p>Frais de services à valeur ajoutée</p> <p>Frais totaux</p> <p>TOTAL À PAYER</p> <p>Condition sur le champ des frais de services à valeur ajoutée</p> </td> 
+   <td><p>Frais d’appel</p> <p>Frais de conférence téléphonique</p> <p>Frais de SMS </p> <p>Frais d’Internet mobile</p> <p>Frais d’itinérance nationale</p> <p>Frais d’itinérance internationale</p> <p>Frais de services à valeur ajoutée</p> <p>Frais totaux</p> <p>TOTAL À PAYER</p> <p>Condition sur le champ Valeur Ajoutée Services Charges</p> </td> 
    <td><p>Valeurs des champs suivants :</p> 
     <ul> 
      <li>Frais d’appel</li> 
@@ -120,7 +123,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
      <li>Frais d’itinérance internationale</li> 
      <li>Frais de services à valeur ajoutée</li> 
      <li>Total des frais (champ calculé à partir des frais d’utilisation)</li> 
-     <li>TOTAL PAYABLE (champ calculé usagecharges)</li> 
+     <li>TOTAL PAYABLE (champ de calcul usagecharges)</li> 
     </ul> <p>Tableau - factures</p> </td> 
    <td>Aucun champ</td> 
    <td>--</td> 
