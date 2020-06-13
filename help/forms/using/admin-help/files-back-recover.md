@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2206'
+ht-degree: 90%
 
 ---
 
@@ -134,8 +137,10 @@ Voir les sections [Stratégies de sauvegarde](https://articles.techrepublic.com.
 
 Utilisez MySQLAdmin ou modifiez les fichiers INI dans Windows pour configurer votre base de données MySQL pour qu’elle s’exécute en mode de consignation binaire (Voir [Connexion binaire MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)). Un outil de sauvegarde à chaud pour MySQL est également disponible à partir du logiciel InnoBase (Voir [Sauvegarde à chaud avec Innobase](https://www.innodb.com/hot-backup/features.md)).
 
-**Remarque**: *Le mode de connexion binaire par défaut pour MySQL est Instruction, qui est incompatible avec les tables utilisées par Content Services (obsolète). L’utilisation de la connexion binaire dans ce mode par défaut fait échouer Content Services (obsolète). Si votre système inclut Content Services (obsolète), utilisez le mode de connexion mixte. Pour activer la connexion mixte, ajoutez l’argument suivant au fichier my.ini :*
-`binlog_format=mixed log-bin=logname`
+>[!NOTE]
+>
+>le mode de connexion binaire par défaut pour MySQL est Instruction ; il est incompatible avec les tables utilisées par Content Services (obsolète). L’utilisation de la connexion binaire dans ce mode par défaut fait échouer Content Services (obsolète). Si votre système inclut Content Services (obsolète), utilisez le mode de connexion mixte. Pour activer la connexion mixte, ajoutez l’argument suivant au fichier my.ini :*
+`binlog_format=mixed log-bin=logname`.
 
 Vous pouvez utiliser l’utilitaire mysqldump pour effectuer la sauvegarde intégrale de la base de données. Les sauvegardes intégrales sont nécessaires, mais ne sont pas toujours pratiques. Elles génèrent des fichiers de sauvegarde volumineux et leur exécution prend du temps. To do an incremental backup, ensure that you start the server with the - `log-bin` option as described in the previous section. A chaque fois que le serveur MySQL redémarre, il cesse d’écrire dans le journal binaire courant, en crée un nouveau, qui devient dès lors le nouveau journal binaire courant. You can force a switch manually with the `FLUSH LOGS SQL` command. Après la première sauvegarde intégrale, les sauvegardes incrémentielles suivantes sont effectuées en utilisant l’utilitaire mysqladmin avec la commande `flush-logs`, qui crée le fichier journal suivant.
 
