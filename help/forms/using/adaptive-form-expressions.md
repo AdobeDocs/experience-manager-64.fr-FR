@@ -8,14 +8,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9f3ba207-b5a3-43a2-b59c-0d74d62c03fc
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '2759'
+ht-degree: 77%
 
 ---
 
 
 # Expressions de formulaire adaptatif {#adaptive-form-expressions}
 
-Les formulaires adaptatifs facilitent et optimisent le remplissage des formulaires pour les utilisateurs finaux à l’aide de fonctions de script dynamique. Il vous permet d’écrire des expressions pour ajouter divers comportements, tels que des champs et des panneaux dynamiques d’affichage/masquage. Il vous permet également d’ajouter des champs calculés, de rendre les champs en lecture seule, d’ajouter une logique de validation, etc. Le comportement dynamique se base sur les entrées de l’utilisateur ou les données pré-renseignées.
+Les formulaires adaptatifs facilitent et optimisent le remplissage des formulaires pour les utilisateurs finaux à l’aide de fonctions de script dynamique. Il vous permet d’écrire des expressions pour ajouter divers comportements tels que des champs et panneaux dynamiques d’affichage/masquage. Il vous permet également d’ajouter des champs calculés, de rendre les champs en lecture seule, d’ajouter une logique de validation, etc. Le comportement dynamique se base sur les entrées de l’utilisateur ou les données pré-renseignées.
 
 JavaScript est le langage d’expression utilisé pour les formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)
 
@@ -42,9 +45,9 @@ Les panneaux de répétition sont des instances d’un panneau qui sont ajoutée
 
 ## Types d’expression {#expression-types}
 
-Dans les formulaires adaptatifs, vous pouvez écrire des expressions pour ajouter des comportements tels que les champs et panneaux dynamiques d’affichage/masquage. Vous pouvez également écrire des expressions pour ajouter des champs calculés, rendre les champs en lecture seule, valider la logique, etc. Les formulaires adaptatifs prennent en charge les expressions suivantes :
+Dans les formulaires adaptatifs, vous pouvez écrire des expressions pour ajouter des comportements tels que les champs et panneaux dynamiques d’affichage/masquage. Vous pouvez également écrire des expressions pour ajouter des champs calculés, rendre les champs en lecture seule, la logique de validation, etc. Les formulaires adaptatifs prennent en charge les expressions suivantes :
 
-* **[Expressions d’accès](/help/forms/using/adaptive-form-expressions.md#main-pars-header-4)** : pour activer/désactiver un champ.
+* **[Expressions d’accès](#access-expression-enablement-expression)** : pour activer/désactiver un champ.
 * **[Expressions de calcul](/help/forms/using/adaptive-form-expressions.md#p-calculate-expression-p)** : pour calculer automatiquement la valeur d’un champ.
 * **[Expression de clic](/help/forms/using/adaptive-form-expressions.md#p-click-expression-p)** : pour gérer les actions en utilisant l’événement clic d’un bouton.
 * **[Script d’initialisation](/help/forms/using/adaptive-form-expressions.md#p-initialization-script-p) :**effectuez une action lors de l’initialisation d’un champ.
@@ -52,10 +55,10 @@ Dans les formulaires adaptatifs, vous pouvez écrire des expressions pour ajoute
 * **[Expression d’options](/help/forms/using/adaptive-form-expressions.md#p-options-expression-p)** : pour remplir de façon dynamique une liste déroulante.
 * [**Expression récapitulative **](#summary) : pour calculer de façon dynamique le titre d’un accordéon.
 * **[Expressions de validation](/help/forms/using/adaptive-form-expressions.md#p-validate-expression-p)** : pour valider un champ.
-* **[](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p)Script **de validation de valeur : pour modifier les composants d’un formulaire après la modification de la valeur d’un champ.
+* **[Script](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p)de validation de valeur :**pour modifier les composants d’un formulaire après la modification de la valeur d’un champ.
 
 * **[Expression de visibilité](/help/forms/using/adaptive-form-expressions.md#p-visibility-expression-p)** : pour contrôler la visibilité d’un champ et d’un panneau.
-* **[Expression](/help/forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**de fin d’étape : pour empêcher un utilisateur de passer à l’étape suivante d’un assistant.
+* **[expression](/help/forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**de fin d’étape : pour empêcher un utilisateur de passer à l’étape suivante d’un assistant.
 
 ### Expression d’accès (expression d’activation) {#access-expression-enablement-expression}
 
@@ -75,12 +78,12 @@ L’expression de calcul est utilisée pour calculer automatiquement la valeur d
 
 **Type de valeur renvoyée** : l’expression renvoie une valeur compatible avec le champ dans lequel le résultat de l’expression est affiché (par exemple, décimal).
 
-**Exemple**: L’expression calculate pour afficher la somme de deux champs dans **field1** est :\
+**Exemple**: L’expression de calcul pour afficher la somme de deux champs dans **field1** est :\
 `field2.value + field3.value`
 
 ### Expression de clic {#click-expression}
 
-L’expression de clic gère les actions effectuées sur l’événement clic d’un bouton. GuideBridge fournit des API prêtes à l’emploi pour remplir différentes fonctions comme l’envoi et la validation, qui sont utilisées avec l’expression de clic. For complete list of the APIs, see [GuideBridge APIs](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+L’expression de clic gère les actions effectuées sur l’événement clic d’un bouton. GuideBridge fournit des API prêtes à l’emploi pour remplir différentes fonctions comme l’envoi et la validation, qui sont utilisées avec l’expression de clic. For complete list of the APIs, see [GuideBridge APIs](https://helpx.adobe.com/fr/aem-forms/6/javascript-api/GuideBridge.html).
 
 **Application pour** : champs de bouton
 
@@ -100,7 +103,7 @@ Le script d’initialisation est déclenché lorsqu’un formulaire adaptatif es
 
 **Type de valeur renvoyée :** l’expression du script d’initialisation ne renvoie aucune valeur. Si une expression renvoie une valeur, la valeur est ignorée.
 
-**** Exemple : Dans un scénario de préremplissage de données, pour remplir les champs avec une valeur par défaut `'Adaptive Forms'` lorsque leur valeur est enregistrée comme nulle, l’expression de script d’initialisation est :\
+**Exemple :** Dans un scénario de préremplissage de données, pour remplir les champs avec une valeur par défaut `'Adaptive Forms'` lorsque leur valeur est enregistrée comme nulle, l’expression du script d’initialisation est :\
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Expression d’options{#options-expression}
@@ -123,15 +126,15 @@ L’expression récapitulative calcule dynamiquement le titre d’un panneau enf
 
 L’expression récapitulative est généralement utilisée pour répéter les enfants d’un panneau de disposition en accordéon afin de fournir un titre significatif à chaque panneau enfant.
 
-**** S’applique à : Panneaux qui sont des enfants directs d’un panneau dont la disposition est configurée en tant qu’accordéon.
+**S&#39;applique à :** Panneaux qui sont des enfants directs d’un panneau dont la disposition est configurée en tant qu’accordéon.
 
-**** Type de retour : L’expression renvoie une chaîne qui devient le titre de l’accordéon.
+**Type de retour :** L’expression renvoie une chaîne qui devient le titre de l’accordéon.
 
-**** Exemple : &quot;Numéro de compte : &quot;+ textbox1.value
+**Exemple :** &quot;Numéro de compte : &quot;+ textbox1.value
 
 ### Expression de validation {#validate-expression}
 
-L’expression de validation est utilisée pour valider les champs à l’aide de l’expression donnée. En règle générale, ces expressions utilisent des expressions régulières avec la valeur du champ pour valider un champ. L’expression est redéclenchée et l’état de validation du champ est recalculé pour toute modification de la valeur d’un champ.
+L’expression de validation est utilisée pour valider les champs à l’aide de l’expression donnée. En règle générale, ces expressions utilisent des expressions régulières ainsi que la valeur du champ pour valider un champ. L’expression est redéclenchée et l’état de validation du champ est recalculé pour toute modification de la valeur d’un champ.
 
 **Application pour** : champs
 
@@ -163,7 +166,7 @@ Le script de validation de valeur est déclenché dans les cas suivants :
 
 >[!NOTE]
 >
->Vous pouvez désactiver l’exécution du script de validation de valeur lorsque la valeur d’un champ est changée par programmation. Pour ce faire, accédez à la version des formulaires `https://[server]:[port]/system/console/configMgr and change` adaptatifs pour la compatibilité **avec** AEM Forms 6.1 ****. Par la suite, le script de validation de valeur est exécuté uniquement lorsque l’utilisateur change la valeur à partir de l’interface utilisateur.
+>Vous pouvez désactiver l’exécution du script de validation de valeur lorsque la valeur d’un champ est changée par programmation. Pour ce faire, accédez à Version des formulaires `https://[server]:[port]/system/console/configMgr and change` adaptatifs pour la compatibilité **avec** AEM Forms 6.1 ****. Par la suite, le script de validation de valeur est exécuté uniquement lorsque l’utilisateur change la valeur à partir de l’interface utilisateur.
 
 ### Expression de visibilité {#visibility-expression}
 
@@ -177,13 +180,13 @@ L’expression de visibilité est utilisée pour contrôler la visibilité du ch
 
 ### Expression d’achèvement de l’étape {#step-completion-expression}
 
-L’expression d’achèvement de l’étape est utilisée pour empêcher l’utilisateur de passer à l’étape suivante d’une mise en page d’assistant. Ces expressions sont utilisées lorsque les panneaux disposent d’une mise en page d’assistant (un formulaire à plusieurs étapes qui montre une étape à la fois). L’utilisateur ne peut passer à l’étape, au panneau ou à la sous-section suivante que si toutes les valeurs requises dans la section active sont remplies et valides.
+L’expression d’achèvement de l’étape est utilisée pour empêcher l’utilisateur de passer à l’étape suivante d’une mise en page d’assistant. Ces expressions sont utilisées lorsque les panneaux disposent d’une mise en page d’assistant (un formulaire à plusieurs étapes qui montre une étape à la fois). L’utilisateur ne peut passer à l’étape, au panneau ou à la sous-section suivante que si toutes les valeurs requises de la section active sont remplies et valides.
 
 **Application pour** : panneaux avec mise en page d’un ensemble d’éléments de l’assistant.
 
 **Type de valeur renvoyée** : l’expression renvoie une valeur booléenne, qui indique si le panneau actuel est valide ou non. **True** indique que le panneau actuel est valide et l’utilisateur peut accéder au prochain panneau.
 
-**Exemple** : dans un formulaire organisé en différents panneaux, avant d’accéder au prochain panneau, le panneau actuel doit être validé. Dans ce cas, les expressions d’achèvement de l’étape sont utilisées. En règle générale, ces expressions utilisent l’API de validation GuideBridge. Voici un exemple d’expression de fin d’étape :\
+**Exemple** : dans un formulaire organisé en différents panneaux, avant d’accéder au prochain panneau, le panneau actuel doit être validé. Dans ce cas, les expressions d’achèvement de l’étape sont utilisées. En règle générale, ces expressions utilisent l’API de validation GuideBridge. Voici un exemple d’expression d’achèvement d’étape :\
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Validations dans un formulaire adaptatif {#validations-in-adaptive-form}
@@ -222,7 +225,7 @@ GuideBridge se compose d’un ensemble d’API qui peuvent être utilisées en i
 
 * To reset form fields, you can trigger `guideBridge.reset()` API on the click expression of a button. De même, il existe une API d’envoi qui peut être appelée expression de clic `guideBridge.submit()`**.**
 
-* You can use the `setFocus()` API to set focus across various fields or panels (for panel focus is set to the first field automatically). `setFocus()`offre un large éventail d’options pour naviguer entre les panneaux, comme la navigation, la traversée précédente/suivante, la définition de la cible d’action sur un champ particulier, etc. For example, to move to the next panel, you can use: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
+* You can use the `setFocus()` API to set focus across various fields or panels (for panel focus is set to the first field automatically). `setFocus()`offre un large éventail d’options de navigation, telles que la navigation entre les panneaux, la traversée précédente/suivante, la définition de la cible d’action sur un champ particulier, etc. For example, to move to the next panel, you can use: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
 
 * To validate an adaptive form or its specific panels, use `guideBridge.validate(errorList, somExpression).`
 
@@ -258,7 +261,7 @@ Pour utiliser GuideBridge après l’initialisation du formulaire (l’événeme
 
 #### Evénements de GuideBridge {#guidebridge-events}
 
-GuideBridge fournit également certains événements pour les scripts externes de la page d’hébergement. Les scripts externes peuvent écouter ces événements et effectuer diverses opérations. Par exemple, lorsque le nom d’utilisateur d’un formulaire est modifié, le nom affiché dans l’en-tête de la page est également modifié. For more details about such events, see [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge fournit également certains événements pour les scripts externes de la page d’hébergement. Les scripts externes peuvent écouter ces événements et effectuer diverses opérations. Par exemple, lorsque le nom d’utilisateur d’un formulaire est modifié, le nom affiché dans l’en-tête de la page est également modifié. For more details about such events, see [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/fr/aem-forms/6/javascript-api/GuideBridge.html).
 
 Utilisez le code suivant pour enregistrer des gestionnaires :
 
@@ -283,5 +286,5 @@ Exécutez les étapes suivantes pour créer un modèle personnalisé destiné à
 1. Vous pouvez ajouter un modèle personnalisé en affectant une propriété au nœud `textboxpatterns`. Ajoutez une propriété qui dispose d’un nom (par exemple, `pattern1`) et définissez la valeur du modèle que vous voulez ajouter. Par exemple, ajoutez une propriété `pattern1` avec une valeur Fax=text{99-999-9999999}. Le modèle est disponible pour toutes les zones de texte que vous utilisez dans les formulaires adaptatifs.
 
    ![Création de modèles personnalisés pour les champs dans CrxDe](assets/creating-custom-patterns.png)
-   **** Figure : *Création de modèles personnalisés*
+   **Figure :** *Création de modèles personnalisés*
 
