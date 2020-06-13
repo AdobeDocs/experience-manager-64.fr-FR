@@ -10,7 +10,10 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: d2657bc364b7a814fac9228afdec60f96faaf175
+source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+workflow-type: tm+mt
+source-wordcount: '1702'
+ht-degree: 80%
 
 ---
 
@@ -35,7 +38,7 @@ Effectuez la procédure suivante pour mettre à niveau AEM 6.2 Forms on JEE ou
 
 ## AEM Forms 6.0 sur JEE > AEM Forms 6.3 sur JEE {#aem-forms-jee-60-to-63}
 
-La mise à niveau directe de LiveCycle ES2, LiveCycle ES3, AEM Forms 6.0, AEM Forms 6.1 vers AEM Forms 6.4 n’est pas disponible. Vous pouvez effectuer une mise à niveau intermédiaire vers une ou plusieurs versions de LiveCycle ou AEM Forms, puis effectuer une mise à niveau à partir d’AEM 6.4 Forms. Pour la liste des versions intermédiaires et les instructions de mise à niveau correspondantes, voir [Sélectionner un chemin de mise à niveau](/help/forms/using/upgrade.md#main-pars-header).
+La mise à niveau directe de LiveCycle ES2, LiveCycle ES3, AEM Forms 6.0, AEM Forms 6.1 vers AEM Forms 6.4 n’est pas disponible. Vous pouvez effectuer une mise à niveau intermédiaire vers une ou plusieurs versions de LiveCycle ou AEM Forms, puis effectuer une mise à niveau à partir d’AEM 6.4 Forms. Pour la liste des versions intermédiaires et les instructions de mise à niveau correspondantes, voir [Sélectionner un chemin de mise à niveau](upgrade.md).
 
 ## LiveCycle ES4 SP1 vers AEM 6.4 Forms on JEE {#livecycle-es4sp1-forms-jee}
 
@@ -50,7 +53,8 @@ Voici une présentation de la procédure de mise à niveau d’un serveur LiveCy
 
       * Dans LiveCycle ES4 SP1, les fonctionnalités Correspondence Management, Forms Portal, HTML Workspace et Process Reporting utilisent le référentiel de contenu. Si vous n’avez pas utilisé ces fonctionnalités dans LiveCycle ES4 et prévoyez de ne pas les utiliser dans AEM Forms, Content Repository n’est pas requis.
       * Dans AEM Forms, Adaptive Forms, Correspondence Management, HTML5 Forms (également appelé Mobile Forms dans LiveCycle ES4 SP1), Forms Portal, HTML Workspace, Process Reporting et les processus spécifiques à Forms on OSGi, les fonctionnalités utilisent le référentiel de contenu. Si vous prévoyez d’utiliser AEM Forms pour ces fonctionnalités, Content Repository est requis.
-      * Vous n’avez pas besoin du référentiel de contenu pour la sécurité des documents AEM Forms.
+      * Vous n’avez pas besoin du référentiel de contenu pour la sécurité de Document d’AEM Forms.
+
       De plus, le type de référentiel de LiveCycle et d’AEM Forms est différent. Pour connaître les types de référentiel disponibles et les informations connexes, reportez-vous à la section [Choix d’un type de persistance pour l’installation d’AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 
    1. Créez une sauvegarde du contenu et des données LiveCycle ES4 SP1 :
@@ -112,10 +116,11 @@ Voici une présentation de la procédure de mise à niveau d’un serveur LiveCy
    1. Choisissez un type de référentiel de contenu (référentiel CRX) à utiliser. Seules quelques fonctionnalités AEM Forms on JEE utilisent la persistance du référentiel de contenu pour stocker le contenu et les actifs. Installez et configurez Content Repository uniquement si vous prévoyez d’utiliser les fonctionnalités d’AEM Forms sur JEE :
 
       * Dans AEM Forms, Adaptive Forms, Correspondence Management, HTML5 Forms, Forms Portal, HTML Workspace, Process Reporting et Forms centric workflows on OSGi, les fonctionnalités utilisent le référentiel de contenu. Si vous prévoyez d’utiliser AEM Forms pour ces fonctionnalités, Content Repository est requis.
-      * Vous n’avez pas besoin du référentiel de contenu pour la sécurité des documents AEM Forms.
+      * Vous n’avez pas besoin du référentiel de contenu pour la sécurité de Document d’AEM Forms.
+
       De plus, le type de référentiel de LiveCycle et d’AEM Forms est différent. Pour connaître les types de référentiel disponibles et les informations connexes, reportez-vous à la section [Choix d’un type de persistance pour l’installation d’AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 
-   1. Créez une sauvegarde de la base de données LiveCycle ES3, du stockage global de données et du référentiel de contenu (non requis pour Document Security). Si vous effectuez une mise à niveau vers la persistance MongoMK ou RDBMK, exportez les actifs de gestion de correspondance de LiveCycle ES3 en tant qu’archive.
+   1. Créez une sauvegarde de la base de données LiveCycle ES3, de l’Enregistrement de données global (GDS) et du référentiel de contenu (non requis pour la sécurité des documents). Si vous effectuez une mise à niveau vers la persistance MongoMK ou RDBMK, exportez les actifs de gestion de correspondance de LiveCycle ES3 en tant qu’archive.
    1. Déterminez si votre plateforme existante (serveur d’applications, base de données, système d’exploitation, Adobe Acrobat, applications tierces ou matériel) est prise en charge par AEM 6.4 Forms on JEE. Pour plus d’informations sur les logiciels et le matériel pris en charge, consultez le document [Combinaisons de plates-formes prises en charge](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
       Si vous créez une nouvelle instance de la base de données, importez les données sauvegardées à l’étape 3 dans la base de données. Pour plus d’informations sur l’importation de données dans une base de données, voir la documentation du fournisseur de base de données correspondant.
@@ -128,7 +133,7 @@ Voici une présentation de la procédure de mise à niveau d’un serveur LiveCy
    1. Installez AEM 6.4 Forms on JEE sur un nouveau serveur en exécutant le programme d’installation. Le programme d’installation place tous les fichiers requis sur votre ordinateur dans une même arborescence d’installation.
    1. Une fois l’installation terminée, exécutez **Configuration Manager** pour configurer divers modules AEM Forms et définir les configurations appropriées. Avec la configuration des paramètres, il permet de spécifier le chemin du stockage de données global (GDS) et le référentiel crx.
 
-      >[!NOTE] Dans l’écran Sélection de la tâche de mise à niveau, sélectionnez l’option **[!UICONTROL Mettre à niveau à partir d’Adobe Experience Manager Forms 6.2.0]** . The **[!UICONTROL Upgrade from Adobe Experience Manager Forms 6.2.0]** option allows the configuration manager to upgrade from LiveCycle ES3 to AEM 6.4 Forms.
+      >[!NOTE] Dans l’écran Sélection de la Tâche de mise à niveau, sélectionnez l’option **[!UICONTROL Mettre à niveau à partir d’Adobe Experience Manager Forms 6.2.0]** . The **[!UICONTROL Upgrade from Adobe Experience Manager Forms 6.2.0]** option allows the configuration manager to upgrade from LiveCycle ES3 to AEM 6.4 Forms.
 
    1. (Non requis pour le module de sécurité des documents AEM Forms) Mettez à niveau et importez le référentiel CRX vers le serveur AEM 6.4 Forms.
 
