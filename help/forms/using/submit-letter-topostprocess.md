@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 637342e8-fbdd-4cda-b175-56a805b3b480
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 66%
 
 ---
 
@@ -22,15 +25,15 @@ Les agents peuvent associer et exécuter les flux de travaux de post-traitement 
 
 ![Post-traitement](assets/ppoverview.png)
 
-Pour associer les post-traitements aux lettres et communications interactives, vous devez commencer par configurer les post-traitements. Deux types de processus peuvent être exécutés sur les lettres envoyées :
+Pour associer les post-traitements aux lettres et communications interactives, vous devez commencer par configurer les post-traitements. Deux types de workflows peuvent être exécutés sur les lettres envoyées :
 
-1. **** Processus des formulaires : Il s’agit des processus de gestion des processus d’AEM Forms sur JEE. Instructions for setting up [Forms Workflow](/help/forms/using/submit-letter-topostprocess.md#main-pars-header-3).
+1. **Processus des formulaires :** Il s’agit des workflows de gestion de processus d’AEM Forms sur JEE. Instructions for setting up [Forms Workflow](#formsworkflow).
 
-1. **** Processus AEM : Les processus AEM peuvent également être utilisés comme post-processus pour les lettres envoyées. Instructions for setting up [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
+1. **Processus AEM :** Les workflows AEM peuvent également être utilisés comme post-traitements pour les lettres envoyées. Instructions for setting up [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
 
 ## Processus des formulaires {#formsworkflow}
 
-1. Dans AEM, ouvrez la configuration de la console Web Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Dans AEM, ouvrez la configuration de la console Web d’Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
    ![Configuration du gestionnaire](assets/2configmanager-1.png)
 
@@ -40,9 +43,9 @@ Pour associer les post-traitements aux lettres et communications interactives, v
    ![Saisissez le nom du serveur LiveCycle](assets/1cofigmanager.png)
 
 1. Indiquez le nom d’utilisateur et le mot de passe.
-1. Vérifiez que sun.util.calendar est ajouté à la configuration du pare-feu de désérialisation.
+1. Assurez-vous que sun.util.calendar est ajouté à la configuration du pare-feu de désérialisation.
 
-   Accédez à la Configuration du pare-feu de désérialisation et sous Classes de préfixes de package autorisés, ajoutez sun.util.calendar.
+   Accédez à Configuration du pare-feu de désérialisation et sous Classes de préfixes de package autorisés, ajoutez sun.util.calendar.
 
 1. Désormais, vos serveurs sont mappés et les post-traitements dans AEM Forms sur JEE sont disponibles dans l’interface utilisateur d’AEM lors de la création de lettres.
 
@@ -56,11 +59,12 @@ Pour associer les post-traitements aux lettres et communications interactives, v
 
    Go to the Adobe Experience Manager Web Console Configurations page > **[!UICONTROL Correspondence Management Configurations]** and set up the following parameters:
 
-   1. **** inPDFDoc (paramètre de document PDF) : Document PDF en tant qu’entrée. Cette entrée contient la lettre générée comme entrée. Les noms de paramètre indiqués peuvent être configurés. Ils peuvent être configurés depuis les configurations de Correspondence Management, sous Configuration.
-   1. **** inXMLDoc (paramètre de données XML) : Un document XML comme entrée. Cette entrée contient les données saisies par l’utilisateur sous la forme XML.
-   1. **** inXDPDoc (paramètre de document XDP) : Un document XML comme entrée. Cette entrée contient une disposition sous-jacente (XDP).
-   1. **** inAttachmentDocs (paramètre Documents joints) : Paramètre d’entrée de liste. Cette entrée contient toutes les pièces jointes comme entrée.
-   1. **** redirectURL (sortie de l’URL de redirection) : Type de sortie indiquant l’URL vers laquelle rediriger.
+   1. **inPDFDoc (paramètre de document PDF) :** document PDF en entrée. Cette entrée contient la lettre générée comme entrée. Les noms de paramètre indiqués peuvent être configurés. Ils peuvent être configurés depuis les configurations de Correspondence Management, sous Configuration.
+   1. **inXMLDoc (paramètre de données XML) :** document XML en tant qu’entrée. Cette entrée contient des données saisies par l’utilisateur sous la forme XML.
+   1. **inXDPDoc (paramètre de document XDP) :** document XML en tant qu’entrée. Cette entrée contient une mise en page sous-jacente (XDP).
+   1. **inAttachmentDocs (paramètre de Documents de pièce jointe) :** Paramètre d’entrée de liste. Cette entrée contient toutes les pièces jointes comme entrée.
+   1. **redirectURL (Sortie d’URL de redirection) :** Type de sortie indiquant l’URL vers laquelle effectuer la redirection.
+
    Votre processus des formulaires doit présenter un paramètre de document PDF ou un paramètre de données XML en tant qu’entrée avec un nom identique à celui spécifié dans les **[!UICONTROL configurations de Correspondence Management]**. Ces informations sont requises pour que le processus soit répertorié dans la liste déroulante Post-traitement.
 
 ## Paramètres de l’instance de publication {#settings-on-the-publish-instance}
@@ -114,7 +118,7 @@ Dans l’interface utilisateur CCR, effectuez les étapes suivantes pour associe
 1. Hover over a letter and tap **View Properties**.
 1. Sélectionnez **Modifier**.
 1. Dans Propriétés de base, sélectionnez le post-traitement à associer à la lettre dans la liste déroulante Post-traitement. Les post-traitements liés aux formulaires et à AEM sont répertoriés dans la liste déroulante.
-1. Appuyez sur **Enregistrer**.
+1. Appuyez sur **Save** (Enregistrer).
 1. Après avoir configuré la lettre avec le post-traitement, publiez la lettre et, sur l’instance de publication, spécifiez éventuellement l’URL de traitement dans le service Paramètres AEM DS. Cela garantit que le post-traitement est exécuté sur une instance de traitement.
 
 ## Rechargement d’une instance de lettre Brouillon{#reloaddraft}
