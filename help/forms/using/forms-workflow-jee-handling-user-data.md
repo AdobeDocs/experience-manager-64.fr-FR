@@ -8,14 +8,17 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '1371'
+ht-degree: 70%
 
 ---
 
 
 # Flux de travail AEM Forms JEE | Gestion des données utilisateur {#forms-jee-workflows-handling-user-data}
 
-Les processus AEM Forms JEE fournissent des outils pour concevoir, créer et gérer des processus d’entreprise. Un processus de flux de travail se compose d’une série d’étapes effectuées dans un ordre spécifique. Chaque étape exécute une action spécifique, par exemple, attribuer une tâche à un utilisateur ou envoyer un message électronique. Un processus peut interagir avec les ressources, les comptes utilisateur et les services. Il peut également être déclenché à l’aide de l’une des méthodes suivantes :
+Les workflows AEM Forms JEE fournissent des outils pour concevoir, créer et gérer des processus d’entreprise. Un processus de flux de travail se compose d’une série d’étapes effectuées dans un ordre spécifique. Chaque étape exécute une action spécifique, par exemple, attribuer une tâche à un utilisateur ou envoyer un message électronique. Un processus peut interagir avec les ressources, les comptes utilisateur et les services. Il peut également être déclenché à l’aide de l’une des méthodes suivantes :
 
 * Démarrage d’un processus de l’espace de travail AEM Forms
 * Utilisation du service SOAP ou RESTful
@@ -31,13 +34,13 @@ Lorsqu’un processus est déclenché et tout au long de sa progression, il capt
 
 ## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
-Lorsqu’un processus est déclenché, un ID d’instance de processus unique et un ID d’appel de longue durée sont générés et associés à l’instance de processus. Vous pouvez accéder et supprimer des données pour une instance de processus en fonction de l’ID d’appel de longue durée. Vous pouvez déduire l’ID d’appel de longue durée d’une instance de processus avec le nom d’utilisateur de l’initiateur du processus ou des participants au processus qui ont envoyé leurs tâches.
+Lorsqu’un processus est déclenché, un ID d’instance de processus unique et un ID d’appel de longue durée sont générés et associés à l’instance de processus. Vous pouvez accéder et supprimer des données pour une instance de processus en fonction de l’ID d’appel de longue durée. Vous pouvez déduire l’ID d’appel de longue durée d’une instance de processus avec le nom d’utilisateur de l’initiateur du processus ou des participants au processus qui ont soumis leurs tâches.
 
 Vous ne pouvez toutefois pas identifier l’ID de l’instance de processus pour un initiateur dans les cas suivants :
 
 * **Processus déclenché par un dossier de contrôle** : une instance de processus ne peut pas être identifiée à l’aide de son initiateur si le processus est déclenché par un dossier de contrôle. Dans ce cas, les informations de l’utilisateur sont codées dans les données stockées.
 * **Processus lancé à partir d’une instance de publication AEM** : toutes les instances de processus déclenchées depuis une instance de publication AEM ne capturent pas d’informations sur l’initiateur. Toutefois, les données utilisateur peuvent être capturées dans le formulaire associé au processus qui est stocké dans des variables de flux de travail.
-* **Processus initié par courrier électronique**: L’ID de courrier électronique de l’expéditeur est capturé en tant que propriété dans une colonne blob opaque de la table de `tb_job_instance` base de données, qui ne peut pas être interrogée directement.
+* **Processus initié par courrier électronique**: L&#39;ID d&#39;adresse électronique de l&#39;expéditeur est capturé en tant que propriété dans une colonne blob opaque de la table de la `tb_job_instance` base de données, qui ne peut pas être interrogée directement.
 
 ### Identification des ID de l’instance de processus lorsque l’initiateur ou le participant de flux de travail est connu {#initiator-participant}
 
@@ -59,7 +62,7 @@ Suivez les étapes ci-dessous pour identifier les ID de l’instance de processu
 
    The query returns tasks initiated by the specified `initiator`_ `principal_id`. Il existe deux types de tâche :
 
-   * **Tâches** terminées : Ces tâches ont été envoyées et affichent une valeur alphanumérique dans le `process_instance_id` champ. Notez tous les ID d’instance de processus pour les tâches envoyées et suivez les étapes.
+   * **tâches** terminées : Ces tâches ont été envoyées et affichent une valeur alphanumérique dans le `process_instance_id` champ. Notez tous les ID d’instance de processus pour les tâches envoyées et suivez les étapes.
    * **Tâches lancées mais non terminées** : ces tâches sont lancées mais n’ont pas encore été envoyées. The value in the `process_instance_id` field for these tasks is **0** (zero). Dans ce cas, notez les ID de tâche correspondants et consultez l’article [Utilisation de tâches orphelines](#orphan).
 
 1. (**For workflow participants**) Execute the following command to retrieve process instance IDs associated with the principal ID of the process participant for the initiator from the `tb_assignment` database table.
@@ -78,7 +81,7 @@ Suivez les étapes ci-dessous pour identifier les ID de l’instance de processu
 
 ### Identification des ID de l’instance de processus lorsque les données utilisateur sont stockées dans des variables de type primitif {#primitive}
 
-Un flux de travail peut être conçu de telle sorte que les données utilisateur soient capturées dans une variable qui est stockée sous la forme d’un objet blob dans la base de données. Dans ce cas, vous pouvez interroger les données utilisateur uniquement si elles sont stockées dans l’une des variables de type primitif suivantes :
+Un processus peut être conçu de telle sorte que les données utilisateur soient capturées dans une variable qui est stockée en tant que blob dans la base de données. Dans ce cas, vous pouvez interroger les données utilisateur uniquement si elles sont stockées dans l’une des variables de type primitif suivantes :
 
 * **Chaîne** : contient l’ID utilisateur tel quel ou sous forme de sous-chaîne. Elle peut être interrogée via SQL.
 * **Numérique** : contient l’ID utilisateur tel quel.
@@ -126,7 +129,7 @@ Après avoir identifié les ID de l’instance de processus associés à un util
 
 1. Create an instance of the public `ProcessManager` client ( `com.adobe.idp.workflow.client.ProcessManager`) using a `ServiceClientFactory` instance with the correct connection settings.
 
-   Pour plus d’informations, consultez [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html) dans la référence de l’API Java.
+   Pour plus d’informations, consultez [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html) dans la référence de l’API Java.
 
 1. Vérifiez l’état de l’instance de flux de travail. Si l’état est différent de 2 (COMPLETE) ou 4 (TERMINÉ), terminez d’abord l’instance en appelant la méthode suivante :
 
