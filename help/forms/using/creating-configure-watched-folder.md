@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '1848'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +34,7 @@ Avant de configurer un dossier de contrôle, vérifiez les éléments suivants :
 * Les dossiers de contrôle constituent une fonctionnalité avancée d’AEM Forms. Le module complémentaire AEM Forms est requis pour un bon fonctionnement. Assurez-vous que le module complémentaire approprié d’AEM Forms est installé et configuré.
 * Vous pouvez créer le dossier de contrôle à un emplacement de stockage local ou partagé. Assurez-vous que l’utilisateur d’AEM Forms configuré pour exécuter le dossier de contrôle dispose des autorisations de lecture et d’écriture sur le dossier de contrôle.
 * Vous pouvez utiliser un service, un flux de travail ou un script pour automatiser une opération avec un dossier de contrôle. Vérifiez que le service, flux de travail ou script correspondant est créé et prêt à exécution. For information about creating a Service, Workflow, and Script, see [Various methods of processing files](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
-* Un dossier de contrôle possède différentes propriétés, voir [Propriétés de dossier de contrôle](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+* Un dossier de contrôle possède différentes propriétés, voir [Propriétés de dossier de contrôle](/help/forms/using/watched-folder-in-aem-forms.md#watchedfolderproperties).
 
 Effectuez les étapes suivantes pour créer un dossier de contrôle :
 
@@ -47,6 +50,7 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
       * Pour le flux de travail, spécifiez le modèle de flux de travail à exécuter. Par exemple, /etc/workflow/models/&lt;workflow_name>/jcr:content/model
       * Pour le script, indiquez le chemin JCR du script à exécuter. Par exemple, /etc/watchfolder/test/testScript.ecma
       * Pour le service, spécifiez le filtre utilisé pour localiser un service OSGi. Le service est enregistré comme une implémentation de l’interface de com.adobe.aemfd.watchfolder.service.api.ContentProcessor. Par exemple, le code suivant est une implémentation personnalisée de l’interface ContentProcessor avec une propriété personnalisée (foo=bar).
+
    >[!NOTE]
    >
    >Si vous avez sélectionné **Service** pour le champ **Traiter les fichiers avec**, la valeur du champ de nom du service (inputProcessorType) doit être mise entre parenthèses. Par exemple, (foo=bar).
@@ -72,10 +76,10 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
    * **Supprimer les fichiers de scène expirés en cas de ralentissement** : si cette option est activée, le mécanisme **Expiration des fichiers de scène toutes les** est activé uniquement lorsque l’option de ralentissement est activé pour le dossier de contrôle.
    * **Analyser le dossier d’entrée toutes les :** spécifiez l’intervalle de temps, en secondes, entre les analyses du dossier de contrôle des entrées. À moins que le paramètre Ralentissement ne soit activé, l’attribut Intervalle de répétition doit être supérieur à la durée du traitement d’une tâche moyenne, faute de quoi le système risque d’être surchargé. La valeur de l’intervalle doit être supérieure ou égale à un.
    * **Exclure le modèle de fichier** : indiquez une liste délimitée par des points-virgules (;) de modèles utilisés par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés en vue d’être traités. Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
-   * **Inclure le modèle de fichier** : spécifiez une liste délimitée par des points-virgules (;) des modèles utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Par exemple, si le modèle de fichier Inclure est input&amp;ast;, tous les fichiers et dossiers qui correspondent input&amp;ast; sont ramassées. La valeur par défaut est &amp;ast; et indique tous les fichiers et dossiers. For more information about file patterns, see [About File Patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+   * **Inclure le modèle de fichier** : spécifiez une liste délimitée par des points-virgules (;) des modèles utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Par exemple, si Inclure le modèle de fichier est input&amp;ast;, tous les fichiers et dossiers qui correspondent input&amp;ast; sont ramassées. La valeur par défaut est &amp;ast; et indique tous les fichiers et dossiers. For more information about file patterns, see [About File Patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
    * **Durée d’attente :** indiquez le temps, en millisecondes, à patienter avant l’analyse d’un dossier ou fichier après sa création. Par exemple, si la durée d’attente est de 3 600 000 millisecondes (une heure) et que le fichier a été créé une minute auparavant, ce dernier est sélectionné après 59 minutes ou plus. La valeur par défaut est 0.
 
-      Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux et que le téléchargement du fichier dure dix minutes, définissez le délai d’attente sur 10&amp;ast;60 &amp;ast;1000 millisecondes. Cet intervalle évite que le dossier de contrôle analyse le fichier tant que ce dernier a une existence inférieure à dix minutes.
+      Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous avez un fichier volumineux à traiter et que le téléchargement du fichier prend dix minutes, définissez le délai d’attente sur 10&amp;ast;60 &amp;ast;1000 millisecondes. Cet intervalle évite que le dossier de contrôle analyse le fichier tant que ce dernier a une existence inférieure à dix minutes.
 
    * **Supprimer les résultats antérieurs à :** indiquez l’heure, en fonction du nombre de jours, à attendre avant de supprimer les fichiers et dossiers antérieurs à la valeur spécifiée. Grâce à ce paramètre, le dossier obtenu n’est jamais plein. La valeur -1 jour indique de ne jamais supprimer le dossier result. La valeur par défaut est -1.
    * **Nom du dossier de résultat :** spécifiez le nom du dossier dans lequel enregistrer les résultats. Si les résultats ne s’affichent pas dans ce dossier, vérifiez le dossier des échecs. Les fichiers en lecture seule ne sont pas traités ; ils sont enregistrés dans le dossier des échecs. Vous pouvez utiliser un chemin d’accès relatif ou absolu répondant aux modèles de fichiers suivants :
@@ -98,14 +102,14 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
       * Si le chemin d’accès n’est pas absolu, mais relatif, le dossier est créé dans le dossier de contrôle. La valeur par défaut est result/%Y/%M/%D/, qui correspond au dossier result dans le dossier de contrôle. Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
    * **Nom du dossier Échecs :** spécifiez le dossier dans lequel les fichiers en situation d’échec sont enregistrés. Cet emplacement dépend toujours du dossier de contrôle. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result.
    * **Conserver le nom de dossier :** indiquez le dossier dans lequel les fichiers sont stockés après avoir été analysés et sélectionnés. Le chemin d’accès peut être absolu, relatif ou vide. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result. La valeur par défaut est preserve/%Y/%M/%D/.
-   * **Taille du lot :** indiquez le nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.
+   * **Taille du lot :** indiquez le nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.  
 
       Si l’intervalle d’analyse défini est court, les threads analysent fréquemment le dossier input. Si des fichiers sont déposés régulièrement dans le dossier de contrôle, il est préférable que l’intervalle d’analyse soit court. Si au contraire, des fichiers y sont déposés peu fréquemment, utilisez un intervalle d’analyse plus long afin que les autres services puissent utiliser les threads.
 
    * **Ralentir sur :** lorsque cette option est sélectionnée, elle permet de limiter le nombre de tâches du dossier de contrôle qu’AEM Forms peut traiter en une seule fois. La valeur Taille du lot détermine le nombre maximal de tâches. Pour plus d’informations, voir [Ralentissement](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling).
    * **Écraser les fichiers existants portant le même nom :** lorsque ce paramètre est défini sur true, les fichiers du dossier obtenu et du dossier conservé sont remplacés. Lorsqu’il est défini sur false, les fichiers et les dossiers pourvus d’un suffixe d’index numérique sont utilisés pour le nom. La valeur par défaut est False.
    * **Conserver les fichiers en cas d’échec :** lorsque ce paramètre est défini sur true, les fichiers d’entrée sont conservés en cas d’échec. La valeur par défaut est true.
-   * **Inclure les fichiers avec modèle :** spécifiez une liste délimitée par des points-virgules (;) des modèles utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Par exemple, si le modèle de fichier Inclure est input&amp;ast;, tous les fichiers et dossiers qui correspondent input&amp;ast; sont ramassées. Pour plus d’informations, voir [Aide à l’administration](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md) 
+   * **Inclure les fichiers avec modèle :** spécifiez une liste délimitée par des points-virgules (;) des modèles utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Par exemple, si Inclure le modèle de fichier est input&amp;ast;, tous les fichiers et dossiers qui correspondent input&amp;ast; sont ramassées. Pour plus d’informations, voir [Aide à l’administration](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md) 
    * **Appeler un dossier de contrôle de manière asynchrone :** identifie le type d’appel comme étant asynchrone ou synchrone. La valeur par défaut est asynchrone. Le mode asynchrone est recommandé pour les processus de longue durée, tandis que le mode synchrone est préférable pour les processus transitoires ou de courte durée.
    * **Activer le dossier de contrôle :** lorsque cette option est activée, le dossier de contrôle est activé. La valeur par défaut est True.
 
