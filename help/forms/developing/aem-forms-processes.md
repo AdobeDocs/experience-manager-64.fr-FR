@@ -10,30 +10,35 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 3%
 
 ---
 
 
 # Présentation des processus AEM Forms {#understanding-aem-forms-processes}
 
-Un cas d’utilisation courant est qu’un ensemble de services AEM Forms fonctionne sur un seul document. Vous pouvez envoyer une requête au conteneur de services en créant un processus à l’aide de Workbench. Un processus représente un processus d’entreprise que vous automatisez. Pour plus d’informations sur la création de processus, voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Un cas d’utilisation courant consiste à ce qu’un ensemble de services AEM Forms fonctionnent sur un seul document. Vous pouvez envoyer une demande au conteneur de services en créant un processus à l’aide de Workbench. Un processus représente un processus d’entreprise que vous automatisez. Pour plus d’informations sur la création de processus, voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
-Une fois un processus activé, il devient un service et peut être appelé comme d’autres services. Une différence entre un service standard, tel que le service Encryption et un service issu d’un processus, réside dans le fait que ce dernier dispose d’une opération qui effectue de nombreuses actions. En revanche, un service standard comporte de nombreuses opérations. Chaque opération effectue généralement une action, telle que l’application d’une stratégie à un document ou le chiffrement d’un document.
+Une fois qu’un processus est activé, il devient un service et peut être appelé comme d’autres services. Une différence entre un service standard, tel que le service Encryption, et un service issu d’un processus, réside dans le fait que ce dernier dispose d’une opération qui exécute de nombreuses actions. En revanche, un service standard comporte de nombreuses opérations. Chaque opération exécute généralement une action, telle que l’application d’une stratégie à un document ou le chiffrement d’un document.
 
-Les processus peuvent être de courte durée ou de longue durée. Un processus de courte durée est une opération exécutée de manière synchrone et sur le même thread d’exécution que celui à partir duquel il a été appelé. Les opérations de courte durée sont comparables au comportement standard de la plupart des langages de programmation, où une application cliente appelle une méthode et attend une valeur de retour.
+Les processus peuvent être de courte ou de longue durée. Un processus de courte durée est une opération exécutée de manière synchrone et sur le même thread d’exécution à partir duquel il a été appelé. Les opérations de courte durée sont comparables au comportement standard de la plupart des langages de programmation, où une application cliente appelle une méthode et attend une valeur renvoyée.
 
-Cependant, il arrive qu’un processus ne puisse pas être exécuté de manière synchrone en raison de facteurs tels que :
+Cependant, il arrive qu’un processus ne puisse pas être exécuté de façon synchrone en raison de facteurs tels que :
 
 * Un processus peut s’étendre sur une période considérable.
 * Un processus peut dépasser les limites organisationnelles.
-* Un processus nécessite une entrée externe pour être terminé. Prenons l’exemple d’un formulaire envoyé à un responsable absent du bureau. Dans ce cas, le processus n’est pas terminé tant que le gestionnaire ne retourne pas et ne remplit pas le formulaire.
+* Un processus a besoin d’une entrée externe pour se terminer. Prenons l’exemple d’un cas où un formulaire est envoyé à un responsable absent du bureau. Dans ce cas, le processus n’est pas terminé tant que le gestionnaire ne retourne pas et ne remplit pas le formulaire.
 
    Ces types de processus sont appelés processus de longue durée. Un processus de longue durée est exécuté de manière asynchrone, ce qui permet aux systèmes d’interagir lorsque les ressources le permettent et permet le suivi et la surveillance de l’opération. Lorsqu’un processus de longue durée est appelé, AEM Forms crée une valeur d’identificateur d’appel dans le cadre d’un enregistrement qui effectue le suivi de l’état du processus de longue durée. L’enregistrement est stocké dans la base de données AEM Forms. Vous pouvez purger les enregistrements de processus de longue durée lorsqu’ils ne sont plus nécessaires.
 
-   ***Remarque**: AEM Forms ne crée pas d’enregistrement lorsqu’un processus de courte durée est appelé. *
+>[!NOTE]
+>
+>AEM Forms ne crée pas d’enregistrement lorsqu’un processus de courte durée est appelé.
 
-   A l’aide de la valeur de l’identifiant d’appel, vous pouvez suivre l’état du processus de longue durée. Par exemple, vous pouvez utiliser la valeur de l’identificateur d’appel de processus pour effectuer des opérations de Process Manager, telles que l’arrêt d’une instance de processus en cours d’exécution.
+A l’aide de la valeur d’identifiant d’appel, vous pouvez suivre l’état du processus de longue durée. Par exemple, vous pouvez utiliser la valeur de l’identifiant d’appel de processus pour effectuer des opérations Process Manager telles que l’arrêt d’une instance de processus en cours d’exécution.
 
 **Exemple de processus de courte durée**
 
@@ -45,11 +50,11 @@ L’illustration suivante illustre un exemple de processus de courte durée appe
 
 Lorsque ce processus de courte durée est appelé, il effectue les actions suivantes :
 
-1. Obtient le document PDF non sécurisé transmis au processus sous forme de valeur d’entrée.
+1. Obtient le document PDF non sécurisé transmis au processus en tant que valeur d’entrée.
 1. Chiffrement du document PDF avec un mot de passe. Le nom du paramètre d’entrée pour ce processus est `inDoc` et le type de données est document.
-1. Enregistre le document PDF chiffré par mot de passe sous forme de fichier PDF dans le système de fichiers local. Ce processus renvoie le document PDF chiffré en tant que valeur de sortie. Le nom du paramètre de sortie pour ce processus est `outDoc` et le type de données est document.
+1. Enregistre le document PDF chiffré par mot de passe sous la forme d’un fichier PDF dans le système de fichiers local. Ce processus renvoie le document PDF chiffré en tant que valeur de sortie. Le nom du paramètre de sortie pour ce processus est `outDoc` et le type de données est document.
 
-   Ce processus est effectué de manière synchrone sur le même thread d’exécution à partir duquel il a été appelé. Le nom de ce processus de courte durée est `MyApplication/EncryptDocument`et son fonctionnement est `invoke`.
+   Ce processus est terminé de manière synchrone sur le même thread d’exécution que celui à partir duquel il a été appelé. Le nom de ce processus de courte durée est `MyApplication/EncryptDocument`et son fonctionnement `invoke`est.
 
    >[!NOTE]
    >
@@ -70,7 +75,7 @@ Lorsque ce processus de courte durée est appelé, il effectue les actions suiva
 
 L’illustration suivante illustre un processus de longue durée.
 
-Ce processus est appelé lorsqu’un demandeur envoie un formulaire de prêt. Le processus n&#39;est pas terminé tant qu&#39;un agent de prêt n&#39;a pas approuvé ou rejeté la demande de prêt. Le nom de ce processus de longue durée est* FirstAppSolution/PreLoanProcess *et son fonctionnement est `invoke_Async`. Ce processus doit être appelé de manière asynchrone. For information about programmatically invoking this long-lived process, see [Invoking Human-Centric Long-Lived Processes](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
+Ce processus est appelé lorsqu’un demandeur envoie un formulaire de prêt. Le processus n&#39;est pas terminé tant qu&#39;un agent de prêt n&#39;a pas approuvé ou rejeté la demande de prêt. Le nom de ce processus de longue durée est* FirstAppSolution/PreLoanProcess *et son fonctionnement est `invoke_Async`conforme. Ce processus doit être appelé de manière asynchrone. For information about programmatically invoking this long-lived process, see [Invoking Human-Centric Long-Lived Processes](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
 
 >[!NOTE]
 >
