@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 79%
 
 ---
 
@@ -43,7 +46,7 @@ Les paramètres de cache par défaut d’AEM Forms peuvent ne pas suffire pour o
 >
 >Si vous utilisez le répartiteur AEM pour mettre en cache des formulaires adaptatifs, il met également en cache les formulaires adaptatifs contenant des formulaires avec des données préremplies. Si ces formulaires sont diffusés à partir du cache du répartiteur AEM, il se peut que des données préremplies ou obsolètes soient diffusées aux utilisateurs. Par conséquent, utilisez le répartiteur AEM pour mettre en cache des formulaires adaptatifs qui n’utilisent pas de données pré-renseignées. De plus, un cache de répartiteur n’invalide pas automatiquement les fragments mis en cache. Par conséquent, ne l’utilisez pas pour mettre en cache des fragments de formulaire. Pour de tels formulaires et fragments, utilisez le [Cache de formulaires adaptatifs](/help/forms/using/configure-adaptive-forms-cache.md).
 
-## Paramètres JVM {#jvm-parameters}
+## Paramètres JVM    {#jvm-parameters}
 
 For optimal performance, it is recomended to use the following JVM `init` arguments to configure the `Java heap` and `PermGen`.
 
@@ -54,7 +57,9 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:PermSize=256m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 ```
 
-**Remarque** : Les paramètres recommandés concernent Windows 2008 R2 8 Core et Oracle HotSpot 1.7 (64 bits) JDK et doivent être augmentés ou réduits selon votre configuration système.
+>[!NOTE]
+>
+>Les paramètres recommandés sont pour le JDK Windows 2008 R2 8 Core et Oracle HotSpot 1.7 (64 bits) et doivent être augmentés ou réduits en fonction de votre configuration système.
 
 ## Utilisation d’un serveur Web {#using-a-web-server}
 
@@ -62,7 +67,9 @@ Les formulaires adaptatifs et les formulaires HTML5 sont rendus au format HTML5.
 
 Par exemple, suivez les étapes ci-dessous pour activer la compression sur Apache Web Server 2.0 32 bits avec JBoss :
 
-***Remarque ** : Les instructions suivantes ne s’appliquent qu’à Apache Web Server 2.0 32 bits. Pour obtenir des instructions spécifiques à un autre serveur, reportez-vous à la documentation correspondante.*
+>[!NOTE]
+>
+>Les instructions suivantes ne s&#39;appliquent à aucun autre serveur que le serveur Web Apache 2.0 32 bits. Pour obtenir des instructions spécifiques à un autre serveur, reportez-vous à la documentation correspondante.
 
 Les étapes suivantes présentent les modifications à effectuer pour activer la compression avec le serveur Web Apache.
 
@@ -88,14 +95,14 @@ Apache peut communiquer avec CRX via le protocole HTTP. Les configurations conce
 
 1. Configurez le proxy sur le port 4502 de crx.
 
-   Ajoutez la configuration suivante dans `APACHE_HOME/conf/httpd.conf` le fichier de configuration.
+   Ajoutez la configuration suivante dans le fichier de `APACHE_HOME/conf/httpd.conf` configuration.
 
    ```java
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Activez la compression. Ajoutez la configuration suivante dans `APACHE_HOME/conf/httpd.conf` le fichier de configuration.
+1. Activez la compression. Ajoutez la configuration suivante dans le fichier de `APACHE_HOME/conf/httpd.conf` configuration.
 
    **Pour les formulaires HTML5**
 
@@ -166,7 +173,7 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 >
 >* If you are using a different location for GDS and temporary directory, open the AdminUI at `https://[server]:[port]/adminui)`, navigate to **Home > Settings > Core System Settings > Core Configurations** to confirm the location in use.
 
-* Si le serveur AEM Forms se comporte lentement, même après avoir exclu les répertoires suggérés, excluez également le fichier exécutable Java (java.exe).
+* Si le serveur AEM Forms s’exécute lentement même après avoir exclu les répertoires suggérés, excluez également le fichier exécutable Java (java.exe).
 
 
 
