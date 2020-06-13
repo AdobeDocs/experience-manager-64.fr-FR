@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1334'
+ht-degree: 68%
 
 ---
 
@@ -27,7 +30,7 @@ L’intégration de données AEM Forms permet de configurer des sources de donn
 * Services web SOAP
 * Services OData
 
-L’intégration des données prend en charge OAuth2.0, l’authentification de base et les types d’authentification de clé d’API prêts à l’emploi et permet l’implémentation d’une authentification personnalisée pour l’accès aux services Web. Alors que les services RESTful, SOAP et OData sont configurés dans les services cloud AEM, JDBC pour les bases de données relationnelles et Connector pour le profil utilisateur AEM sont configurés dans la console Web AEM.
+L’intégration des données prend en charge OAuth2.0, l’authentification de base et les types d’authentification de clé d’API prêts à l’emploi et permet l’implémentation de l’authentification personnalisée pour l’accès aux services Web. Alors que les services RESTful, SOAP et OData sont configurés dans les services cloud AEM, JDBC pour les bases de données relationnelles et Connector pour le profil utilisateur AEM sont configurés dans la console Web AEM.
 
 ## Configurer la base de données relationnelle {#configure-relational-database}
 
@@ -42,12 +45,14 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    * Nom de classe Java pour le pilote JDBC
    * URI de connexion JDBC
    * Nom d’utilisateur et mot de passe pour établir la connexion avec le pilote JDBC
+
    >[!NOTE] {grayBox=&quot;true&quot;}
    >
    >Veillez à chiffrer les informations sensibles telles que les mots de passe avant de configurer la source de données. Pour chiffrer :
    >
-   >1. Aller à `https://[server]:[port]/system/console/crypto`.
+   >1. Accédez à `https://[server]:[port]/system/console/crypto`.
    >1. Dans le champ **[!UICONTROL Texte brut]**, spécifiez le mot de passe ou toute chaîne à chiffrer et cliquez sur **[!UICONTROL Protéger]**.
+
    >
    >Le texte chiffré apparaît dans le champ Texte protégé que vous pouvez spécifier dans la configuration.
 
@@ -73,15 +78,18 @@ Vous pouvez configurer le profil utilisateur AEM à l’aide de la configuration
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
+
    >[!NOTE] {grayBox=&quot;true&quot;}
    >
-   >**&amp;** amp;ast; dans l’exemple ci-dessus, indique tous les noeuds sous le `profile/empLocation/` noeud dans le profil utilisateur AEM dans la structure CRXDE. It means that the form data model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. Toutefois, les nœuds qui contiennent la propriété spécifiée doivent suivre une structure cohérente.
+   >The **&amp;ast;** in the above example denotes all nodes under the `profile/empLocation/` node in AEM user profile in CRXDE structure. It means that the form data model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. Toutefois, les nœuds qui contiennent la propriété spécifiée doivent suivre une structure cohérente.
 
 1. Tap **[!UICONTROL Save]** to save the configuration.
 
 ## Configuration du dossier pour les configurations de service cloud {#cloud-folder}
 
-**Remarque** : la configuration du dossier de services cloud est requise pour la configuration des services cloud pour les services RESTful, SOAP et OData.
+>[!NOTE]
+>
+>La configuration du dossier des services cloud est requise pour la configuration des services cloud pour les services RESTful, SOAP et OData.
 
 All cloud service configurations in AEM are consolidated in the `/conf` folder in AEM repository. Par défaut, le dossier `conf` contient le dossier `global` dans lequel vous pouvez créer des configurations de service cloud. Toutefois, vous devez l’activer manuellement pour les configurations cloud. Vous pouvez également créer des dossiers supplémentaires dans `conf` pour créer et organiser des configurations de service cloud.
 
@@ -104,7 +112,7 @@ RESTful web service can be described using [Swagger specifications](https://swag
 
 Procédez comme suit pour configurer les services RESTful :
 
-1. Accédez à **[!UICONTROL Outils > Services cloud > Sources de données]**. Appuyez sur pour sélectionner le dossier dans lequel vous souhaitez créer une configuration Cloud.
+1. Accédez à **[!UICONTROL Outils > Services cloud > Sources de données]**. Appuyez sur pour sélectionner le dossier dans lequel vous souhaitez créer une configuration de cloud.
 
    See [Configure folder for cloud service configurations](/help/forms/using/configure-data-sources.md#cloud-folder) for information about creating and configuring a folder for cloud service configurations.
 
@@ -112,7 +120,7 @@ Procédez comme suit pour configurer les services RESTful :
 1. Spécifiez les informations suivantes pour le service RESTful :
 
    * Sélectionnez l’URL ou le fichier dans la liste déroulante Source Swagger et spécifiez l’URL Swagger du fichier de définition Swagger ou chargez le fichier Swagger à partir de votre système de fichiers local.
-   * Sélectionnez le type d&#39;authentification — Aucun, OAuth2.0, authentification de base, clé d&#39;API ou authentification personnalisée — pour accéder au service RESTful et, par conséquent, fournir des détails pour l’authentification.
+   * Sélectionnez le type d’authentification — Aucun, OAuth2.0, Authentification de base, Clé d’API ou Authentification personnalisée — pour accéder au service RESTful et, par conséquent, fournir des détails pour l’authentification.
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service RESTful.
 
@@ -120,7 +128,7 @@ Procédez comme suit pour configurer les services RESTful :
 
 Les services Web basés sur SOAP sont décrits à l’aide des [spécifications WSDL (Web Services Description Language).](https://www.w3.org/TR/wsdl) Pour configurer le service Web SOAP dans les services cloud AEM, vérifiez que vous disposez de l’URL WSDL pour le service Web et procédez comme suit :
 
-1. Accédez à **[!UICONTROL Outils > Services cloud > Sources de données]**. Appuyez sur pour sélectionner le dossier dans lequel vous souhaitez créer une configuration Cloud.
+1. Accédez à **[!UICONTROL Outils > Services cloud > Sources de données]**. Appuyez sur pour sélectionner le dossier dans lequel vous souhaitez créer une configuration de cloud.
 
    See [Configure folder for cloud service configurations](/help/forms/using/configure-data-sources.md#cloud-folder) for information about creating and configuring a folder for cloud service configurations.
 
@@ -128,7 +136,7 @@ Les services Web basés sur SOAP sont décrits à l’aide des [spécifications 
 1. Spécifiez les éléments suivants pour le service Web SOAP :
 
    * URL WSDL pour le service Web.
-   * Sélectionnez le type d&#39;authentification — Aucun, OAuth2.0, authentification de base ou authentification personnalisée — pour accéder au service SOAP et, par conséquent, fournir les détails de l’authentification.
+   * Sélectionnez le type d’authentification — Aucun, OAuth2.0, Authentification de base ou Authentification personnalisée — pour accéder au service SOAP et, par conséquent, fournir les détails de l’authentification.
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service Web SOAP.
 
@@ -140,7 +148,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 >
 >Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365, en ligne ou sur site, voir [Configuration OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
-1. Accédez à **[!UICONTROL Outils > Services cloud > Sources de données]**. Appuyez sur pour sélectionner le dossier dans lequel vous souhaitez créer une configuration Cloud.
+1. Accédez à **[!UICONTROL Outils > Services cloud > Sources de données]**. Appuyez sur pour sélectionner le dossier dans lequel vous souhaitez créer une configuration de cloud.
 
    See [Configure folder for cloud service configurations](/help/forms/using/configure-data-sources.md#cloud-folder) for information about creating and configuring a folder for cloud service configurations.
 
@@ -148,7 +156,8 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 1. Spécifiez les informations suivantes pour le service OData :
 
    * URL racine du service pour le service OData à configurer.
-   * Sélectionnez le type d&#39;authentification — Aucun, OAuth2.0, authentification de base ou authentification personnalisée — pour accéder au service OData et, par conséquent, fournir les détails de l’authentification.
+   * Sélectionnez le type d’authentification — Aucun, OAuth2.0, Authentification de base ou Authentification personnalisée — pour accéder au service OData et, par conséquent, fournir les détails de l’authentification.
+
    >[!NOTE]
    >
    >Vous devez sélectionner le type d’authentification OAuth 2.0 pour vous connecter aux services Microsoft Dynamics à l’aide du point de terminaison OData en tant que racine du service.
