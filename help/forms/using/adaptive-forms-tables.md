@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2044'
+ht-degree: 88%
 
 ---
 
@@ -43,7 +46,7 @@ Les cellules du corps sont par défaut des zones de texte. Vous pouvez remplacer
 
 Par exemple, la première rangée du corps du tableau ci-dessous inclut les composants Zone de texte, Sélecteur de dates et Liste déroulante comme cellules.
 
-![row-cell-types](assets/row-cell-types.png)
+![types de cellule-ligne](assets/row-cell-types.png)
 
 Vous pouvez fusionner deux cellules du corps ou plus en sélectionnant les cellules que vous souhaitez fusionner, puis en cliquant avec le bouton droit et en choisissant la commande **Fusionner**. Vous pouvez aussi diviser une cellule fusionnée en cliquant sur celle-ci et en sélectionnant **Fractionner les cellules**.
 
@@ -112,7 +115,7 @@ Les tableaux des formulaires adaptatifs permettent d’écrire des expressions e
 Alors que les tableaux et les lignes ne prennent en charge que les expressions de visibilité pour contrôler leur visibilité en fonction de la valeur renvoyée par une expression, les cellules prennent en charge les expressions suivantes :
 
 * **Script d’initialisation** : pour effectuer une action à l’initialisation d’un champ.
-* **** Script de validation de valeur : pour modifier les composants d’un formulaire après la modification de la valeur d’un champ.
+* **Script de validation de valeur :** pour modifier les composants d’un formulaire après la modification de la valeur d’un champ.
 
 >[!NOTE]
 >
@@ -129,7 +132,7 @@ Pour obtenir la liste complète des classes de formulaires adaptatifs, des évé
 
 ## Dispositions pour appareils mobiles {#mobile-layouts}
 
-Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. AEM Forms propose deux types de mise en page mobile pour les tableaux : En-têtes à gauche et Colonnes réductibles.
+Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. AEM Forms offre deux types de dispositions mobiles pour les tableaux : En-têtes à gauche et Colonnes réductibles.
 
 Vous pouvez configurer une disposition de tableau pour périphériques mobiles depuis l’onglet Style de la boîte de dialogue Modifier le composant.
 
@@ -137,21 +140,23 @@ Vous pouvez configurer une disposition de tableau pour périphériques mobiles d
 
 Dans la disposition En-têtes à gauche, les en-têtes du tableau sont transposés à gauche. Une seule cellule apparaît pour un en-tête. Chaque ligne dans cette disposition s’affiche en tant que partie distincte. Les images suivantes comparent un tableau sur un bureau et le même tableau sur un périphérique mobile.
 
-![](assets/desktopview.png) desktopview **** Figure : Vue *Bureau d’un tableau avec disposition En-tête à gauche*
+![desktopview](assets/desktopview.png)**Figure :** *vue de bureau d’un tableau avec disposition En-tête à gauche*
 
-![](assets/headersontheleft.png) headersontheleft **** Figure: Vue *mobile d’un tableau avec disposition En-tête à gauche*
+![headersontheleft](assets/headersontheleft.png)**Figure :** *vue mobile d’un tableau avec disposition En-tête à gauche*
 
 ### Disposition Colonnes réductibles {#collapsible-columns-layout}
 
 Dans la disposition Colonnes réductibles, les colonnes du tableau sont réduites pour afficher une ou deux colonnes, selon la taille du périphérique. Les autres colonnes sont réduites. Vous pouvez cliquer sur l’icône Réduire/Développer pour afficher les autres colonnes de la table.
 
-***Note**: While Collapsible column layout is optimized for mobile devices, it will work on desktop as well, if the width available is not enough to show all the columns in a table. *
+>[!NOTE]
+>
+>Bien que la disposition Colonnes réductibles soit optimisée pour les périphériques mobiles, elle fonctionne également sur le bureau, si la largeur disponible ne suffit pas à afficher toutes les colonnes d’un tableau.
 
 Les images suivantes comparent l’aspect d’un tableau affiché sur un périphérique, l’un comportant des colonnes réduites, l’autre les affichant développées.
 
-![](assets/collapsed-column.png) colonne **réduite** Figure : Colonnes *réduites d’un tableau avec seulement deux colonnes affichées sur un périphérique mobile*
+![colonne](assets/collapsed-column.png)**réduite Figure :** *Colonnes réduites d’un tableau contenant uniquement deux colonnes s’affichant sur un périphérique mobile*
 
-![](assets/collapsible_column.png) collapse_column **** Figure : Colonne *développée d’un tableau sur un périphérique mobile*
+![collapse_column](assets/collapsible_column.png)**Figure :** *Colonne développée d’un tableau sur un périphérique mobile*
 
 ## Fusion de données dans un tableau {#merge-data-in-a-table}
 
@@ -159,7 +164,7 @@ Les tableaux des formulaires adaptatifs permettent de renseigner le tableau lors
 
 Prenons l’exemple du tableau récapitulatif de transaction bancaire suivant, que nous voulons renseigner avec des données provenant d’un fichier XML.
 
-![data-merge-table](assets/data-merge-table.png)
+![tableau de fusion-données](assets/data-merge-table.png)
 
 Dans cet exemple, la propriété Nom d’élément pour :
 
@@ -233,7 +238,7 @@ Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiq
 
 *http://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
-![data-merge-table](assets/data-merged-table.png)
+![tableau fusionné de données](assets/data-merged-table.png)
 
 ## Utilisation des composants XDP et des types complexes de schéma XSD {#use-xdp-components-and-xsd-complex-types}
 
