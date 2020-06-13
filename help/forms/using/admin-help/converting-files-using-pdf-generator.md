@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: ce8849ae94fd643147df2a3a9d5e49264e6cb638
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1130'
+ht-degree: 95%
 
 ---
 
@@ -73,15 +76,19 @@ Si le fichier ZIP contient plusieurs fichiers HTML au niveau le plus bas de son 
    * Dans le champ Télécharger, saisissez le chemin d’accès et le nom du fichier HTML ou ZIP, ou cliquez sur Parcourir pour le rechercher et le sélectionner.
    * Dans le champ Spécifier l’URL, saisissez l’URL de la page ou du site Web à convertir.
 
-      ***Remarque ** : le fichier que vous convertissez doit porter l’extension .html, .htm ou .zip.*
+   >[!NOTE]
+   >
+   >le fichier que vous convertissez doit porter l’extension .html, .htm ou .zip.
 
 1. Définissez les paramètres de configuration :
 
    * Pour utiliser des paramètres personnalisés, sélectionnez Utiliser des paramètres personnalisés, indiquez les paramètres de type de fichier et de protection, et définissez un délai d’expiration. La valeur par défaut est de 270 secondes.
-
-      ***Remarque** : si vous avez configuré le service Generate PDF pour utiliser Acrobat WebCapture, les paramètres de type de fichier que vous sélectionnez sur cette page n’ont aucune incidence sur le PDF produit. Au lieu de cela, apportez les modifications appropriées à la version d’Acrobat installée sur le serveur. *
+   >[!NOTE]
+   >
+   >si vous avez configuré le service Generate PDF pour utiliser Acrobat WebCapture, les paramètres de type de fichier que vous sélectionnez sur cette page n’ont aucune incidence sur le PDF produit. Au lieu de cela, apportez les modifications appropriées à la version d’Acrobat installée sur le serveur.
 
    * Pour utiliser un fichier de paramètres existant, sélectionnez Télécharger le fichier de paramètres et cliquez sur Parcourir pour accéder au fichier.
+
 
 1. Pour télécharger un fichier XMP, cliquez sur Parcourir et accédez à l’emplacement du fichier. Il est possible d’utiliser un fichier XMP pour y inclure des métadonnées standard (voir [A propos des fichiers XMP](converting-files-using-pdf-generator.md#about-xmp-files)).
 1. Cliquez sur Créer. Lorsque le fichier est créé, un lien vers le fichier PDF s’affiche.
