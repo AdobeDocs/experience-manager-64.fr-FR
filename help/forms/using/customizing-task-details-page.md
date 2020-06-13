@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 63%
 
 ---
 
@@ -55,7 +58,7 @@ Pour personnaliser la page Détails de la tâche :
 
 1. Copiez `/libs/ws/js/runtime/templates/taskdetails.html` dans `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-   Ajouter les nouvelles informations à `/apps/ws/js/runtime/templates/taskdetails.html`. Par exemple :
+   Ajoutez les nouvelles informations à `/apps/ws/js/runtime/templates/taskdetails.html`. Par exemple :
 
    ```css
    <div class="detailsContainer">
@@ -84,4 +87,4 @@ Pour personnaliser la page Détails de la tâche :
 >
 >To customize the task details page with tasks created in the **Start Process **tab of AEM Forms workspace, add the new information to `/apps/ws/js/runtime/templates/startprocess.html`.
 >
->To add new styles for the information added in the details page, modify the CSS file by using the *User interface changes* section in [Workspace Customization](/help/forms/using/changing-locale-user-interface.md#main-pars-header-3).
+>To add new styles for the information added in the details page, modify the CSS file by using the *User interface changes* section in [Workspace Customization](/help/forms/using/changing-locale-user-interface.md).
