@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 79%
 
 ---
 
@@ -29,7 +32,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
 1. Accédez à https://[*server*]:[*port*]/system/console/configMgr sur AEM Forms s’exécutant sur OSGi ou
 
-   https://[*serveur*]:[*port*]/lc/system/console/configMgr sur AEM Forms s’exécutant sur JEE.
+   https://[*serveur*]:[*port*]/lc/system/console/configMgr sur AEM Forms exécuté sur JEE.
 
 1. Localisez et cliquez sur la boîte de configuration **Service d’authentification Apache Sling** pour l’ouvrir en mode d’édition.
 
@@ -43,6 +46,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
+
    >[!NOTE]
    >
    >N’effectuez pas de copier-coller de la valeur spécifiée dans le champ des conditions d’authentification requises, car ceci risquerait d’endommager les caractères spéciaux dans la valeur. Saisissez plutôt la valeur spécifiée dans le champ.
@@ -52,7 +56,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
 ### Désactiver le mode Protégé {#disable-protected-mode}
 
-Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé par défaut. Laissez-le activé pour les environnements de production. Vous pouvez la désactiver pour un environnement de développement afin de prévisualiser les formulaires HTML5 dans Designer. Pour le désactiver, procédez comme suit :
+Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé par défaut. Laissez-le activé pour les environnements de production. Vous pouvez la désactiver pour un environnement de développement afin de prévisualiser les formulaires HTML5 dans Designer. Pour la désactiver, procédez comme suit :
 
 1. Connectez-vous à la console Web AEM en tant qu’administrateur. 
 
@@ -68,8 +72,8 @@ Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé 
 1. In the Options window, select **Server Options** page, provide the following details, and click **OK**.
 
    * **URL de serveur** : URL du serveur de AEM Forms.
-   * **Numéro de port HTTP** : port du serveur AEM. La valeur par défaut est 4502.
-   * **** Contexte de l’aperçu HTML : Chemin du profil pour le rendu des formulaires XFA. Les profils par défaut suivants sont utilisés pour prévisualiser le formulaire dans Designer. Cependant, vous pouvez également spécifier un chemin vers un profil personnalisé.
+   * **Numéro de port HTTP** : port du serveur AEM. La valeur par défaut est 4502.  
+   * **Contexte de la Prévisualisation HTML :** Chemin d’accès du profil pour le rendu des formulaires XFA. Les profils par défaut suivants permettent de prévisualisation du formulaire dans Designer. Cependant, vous pouvez également spécifier un chemin vers un profil personnalisé.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
       * `/lc/content/xfaforms/profiles/default.html` (AEM  Forms on JEE)
@@ -77,6 +81,7 @@ Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé 
 
       * `/aem/forms` (AEM Forms on OSGi)
       * `/lc/forms` (AEM  Forms on JEE)
+
    **Remarque :***assurez-vous que le serveur AEM Forms est en cours d’exécution. The HTML preview connects to the CRX server to* generate *a preview.*
 
    ![Options d’AEM Forms Designer ](assets/server_options.png)
@@ -103,7 +108,7 @@ L’utilisation d’une source de données d’exemple pour tester votre formula
 
 1. Sélectionnez **Fichier > Propriétés du formulaire**.
 
-1. Cliquez sur l’onglet **Aperçu **et, dans la zone Fichier de données, saisissez le chemin d’accès complet à votre fichier de données de test. Vous pouvez également vous servir du bouton Parcourir pour naviguer jusqu’au fichier.
+1. Cliquez sur l’onglet **Aperçu** et, dans la zone Fichier de données, indiquez le chemin d’accès complet au fichier de données de test. Vous pouvez également vous servir du bouton Parcourir pour naviguer jusqu’au fichier.
 
 1. Cliquez sur **OK**. La prochaine fois que vous prévisualiserez le formulaire dans l’onglet **Aperçu HTML**, les valeurs des données de l’exemple de fichier XML apparaîtront dans les objets respectifs.
 
@@ -111,4 +116,4 @@ L’utilisation d’une source de données d’exemple pour tester votre formula
 
 Dans AEM Forms, vous pouvez prévisualiser des formulaires et documents figurant dans le référentiel. La prévisualisation reflète l’apparence et le comportement des formulaires lorsqu’ils seront utilisés par les utilisateurs finaux.
 
-[**Contacter le support technique **](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Contacter le support technique **](https://www.adobe.com/fr/account/sign-in.supportportal.html)
