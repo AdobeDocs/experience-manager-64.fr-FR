@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4df5ee77-5a77-4efd-b7e1-c78e650673a9
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2090'
+ht-degree: 94%
 
 ---
 
@@ -37,6 +40,7 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
 
    * **[!UICONTROL Aucun]** : indique de créer un fragment à partir de zéro, sans utiliser aucun modèle de formulaire.
    * **[!UICONTROL Modèle de formulaire]** : indique de créer le fragment à l’aide d’un modèle XDP téléchargé dans AEM Forms. Sélectionnez le modèle XDP correspondant en tant que modèle de formulaire pour le fragment.
+
    ![Création d’un formulaire adaptatif avec le modèle de formulaire comme modèle](assets/form-template-model.png)
 
    Les sous-formulaires marqués comme fragments dans le modèle de formulaire sélectionné sont également affichés. Vous pouvez sélectionner un sous-formulaire comme fragment de formulaire adaptatif dans la liste déroulante.
@@ -46,6 +50,7 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
    En outre, vous pouvez créer un fragment de formulaire adaptatif en utilisant les sous-formulaires qui ne sont pas marqués comme des fragments dans le modèle de formulaire en spécifiant l’expression SOM du sous-formulaire dans la liste déroulante.
 
    * **[!UICONTROL Schéma XML]** : indique de créer un fragment à partir d’un schéma XML téléchargé dans AEM Forms. Vous pouvez télécharger ou sélectionner l’un des schémas XML comme modèle de formulaire pour le fragment.
+
    ![Création d’un fragment de formulaire adaptatif basé sur un schéma XML comme modèle](assets/xml-schema-model.png)
 
    Vous pouvez également créer un fragment de formulaire adaptatif en choisissant un type complexe présent dans le schéma sélectionné dans la liste déroulante.
@@ -71,7 +76,9 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
 
    * **[!UICONTROL Nom]** : nom du fragment. La valeur par défaut est le nom de l’élément du panneau. Ce champ est obligatoire.
 
-      ***Remarque **: assurez-vous de spécifier un nom unique pour le fragment. S’il existe déjà un fragment portant le même nom, la création du fragment échoue.*
+      >[!NOTE]
+      >
+      >Assurez-vous de spécifier un nom unique pour le fragment. S’il existe déjà un fragment portant le même nom, la création du fragment échoue.
 
    * **[!UICONTROL Titre]** : titre du fragment. La valeur par défaut est le titre du panneau. 
    * **[!UICONTROL Description]** : description du fragment.
@@ -84,8 +91,9 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
 
    * **[!UICONTROL Référence de schéma XSD]** : s’affiche uniquement dans les formulaires adaptatifs XSD. Il indique l’emplacement du schéma XML. 
    * **[!UICONTROL Référence de XDP]** : s’affiche uniquement dans les formulaires adaptatifs basés sur XDP. Il indique l’emplacement du modèle de formulaire XDP.
+
    ![save-fragment](assets/save-fragment.png)
-   **** Figure : Boîte de dialogue *Enregistrer en tant que fragment*
+   **Figure :** *Boîte de dialogue Enregistrer en tant que fragment*
 
 1. Cliquez sur **[!UICONTROL OK]**.
 
@@ -156,7 +164,7 @@ Vous pouvez modifier la ressource de fragment et ses liaisons dans la boîte de 
 
 Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adaptatif depuis l’interface utilisateur AEM Forms.
 
-1. Aller à `https://[hostname]:[port]/aem/forms.html`.
+1. Accédez à `https://[hostname]:[port]/aem/forms.html`.
 
 1. Cliquez sur **[!UICONTROL Sélectionner]** dans la barre d’outils de l’interface utilisateur AEM Forms et sélectionnez un fragment de formulaire adaptatif. La barre d’outils affiche les opérations suivantes que vous pouvez effectuer sur le fragment de formulaire adaptatif sélectionné.
 
@@ -195,7 +203,7 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
    <td><p>Génère un dictionnaire pour localiser le fragment sélectionné. Pour plus d’informations, voir <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank">Localisation des formulaires adaptatifs</a>.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>Publier / Annuler la publication</p> </td> 
+   <td><p>Publier/Annuler la publication</p> </td> 
    <td><p>Publie ou annule la publication du fragment sélectionné.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
@@ -225,7 +233,7 @@ Pour localiser un formulaire adaptatif contenant des fragments de formulaire ada
 * Lorsque vous publiez un formulaire adaptatif, vous devez publier le fragment de formulaire adaptatif autonome inséré par référence dans le formulaire adaptatif.
 * Lorsque vous publiez de nouveau un fragment de formulaire adaptatif mis à jour, les modifications sont répercutées dans les instances publiées du formulaire adaptatif dans lequel le fragment est utilisé.
 * Le formulaire adaptatif contenant le composant Vérifier ne prend pas en charge les utilisateurs anonymes. En outre, il n’est pas recommandé d’utiliser le composant Vérifier dans un fragment de formulaire adaptatif.
-* (**Mac uniquement**) Pour vous assurer que la fonctionnalité des fragments de formulaire fonctionne parfaitement dans tous les scénarios, ajoutez l’entrée suivante au fichier /private/etc/hosts :
+* (**Mac uniquement**) Pour vous assurer que la fonctionnalité de fragments de formulaire fonctionne parfaitement dans tous les scénarios, ajoutez l’entrée suivante au fichier /private/etc/hosts :
 
    `127.0.0.1 <Host machine>`
 
