@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
+source-git-commit: 8922b6cfecfbb592e4f073254be68b24add6c5c7
+workflow-type: tm+mt
+source-wordcount: '1824'
+ht-degree: 68%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 Créer des modèles d’impression et web pour la communication interactive
 
-![07-apply-rule-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
+![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
 This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
@@ -46,12 +49,12 @@ Créez et gérez un modèle pour le canal d’impression de la communication int
 Based on the [use case](/help/forms/using/create-your-first-interactive-communication.md) and [anatomy](/help/forms/using/planning-interactive-communications.md), create the following subforms in the XDP template:
 
 * Informations de facturation : comprend un fragment de document
-* Détails du client : Inclut un fragment 
-* Résumé du projet de loi : Inclut un fragment 
-* Résumé : Inclut un fragment  (sous-formulaire Frais) et un graphique (sous-formulaire Graphiques)
+* Détails du client : Inclut un fragment de document
+* Résumé de la facture : Inclut un fragment de document
+* Résumé : Comprend un fragment de document (sous-formulaire Frais) et un graphique (sous-formulaire Graphiques).
 * Appels ciblés : Inclut un tableau (fragment de mise en page)
 * Payer maintenant : Inclut une image
-* Services à valeur ajoutée : Inclut une image
+* Services Ajoutés de valeur : Inclut une image
 
 ![create_print_template](assets/create_print_template.gif)
 
@@ -70,12 +73,14 @@ Exécutez les étapes suivantes pour créer un modèle XDP pour le canal d’imp
 
    1. Specify **BillDetails** in the **Name** field.
    1. Sélectionnez **Aucune liaison de données** dans la liste déroulante **Liaison de données**.
+
    ![forms_designer_subform](assets/forms_designer_subform.png)
 
 1. Similarly, select the root subform, select the **Subform** tab, and select **Flowed** from the **Content** drop-down list. Dans l’onglet **Liaisons** :
 
    1. Specify **TelecaBill** in the **Name** field.
    1. Sélectionnez **Aucune liaison de données** dans la liste déroulante **Liaison de données**.
+
    ![root_subform_print_template](assets/root_subform_print_template.png)
 
 1. Répétez les étapes 2 à 5 pour créer les sous-formulaires suivants :
@@ -90,6 +95,7 @@ Exécutez les étapes suivantes pour créer un modèle XDP pour le canal d’imp
    * ItemisedCalls
    * PayNow
    * ValueAddedServices
+
    Pour gagner du temps, vous pouvez également copier et coller des sous-formulaires existants pour créer de nouveaux sous-formulaires.
 
    To shift the **Charts** subform to the right of the Charges subform, select the **Charts** subform from the left pane, select the **Layout** tab, and specify a value for **AnchorX** field. La valeur doit être supérieure à la valeur du champ **Largeur** pour le sous-formulaire **Frais**. Sélectionnez le sous-formulaire **Frais** et sélectionnez l’onglet **Mise en page** pour afficher la valeur du champ **Largeur.**
@@ -153,6 +159,7 @@ Pour créer un fragment de mise en page pour le canal d’impression de la commu
    1. Navigate to the location to save the file and specify the name as **table_lf**.
    1. Sélectionnez **.xdp** dans la liste déroulante **Type**.
    1. Appuyez sur **Save** (Enregistrer).
+
    Une fois que vous avez créé un modèle XDP pour le fragment de mise en page à l’aide de Forms Designer, vous devez le [télécharger](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) sur le serveur AEM Forms pour qu’il soit disponible lors de la création des fragments de mise en page.
 
 ## Créer un modèle pour le canal web {#create-template-for-web-channel}
@@ -170,7 +177,7 @@ Pour créer un modèle de canal web, définissez un dossier dans lequel vous pou
 
 Exécutez les étapes suivantes pour créer un dossier pour les modèles modifiables :
 
-1. Tap **Tools** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > **Configuration Browser**.
+1. Tap **Tools** ![Tools](assets/tools-icon.svg) > **Configuration Browser**.
 1. In the Configuration Browser page, tap **Create**.
 1. In the **Create Configuration** dialog, specify **Create_First_IC_templates** as the title for the folder, check **Editable Templates**, and tap **Create**.
 
@@ -183,9 +190,9 @@ Exécutez les étapes suivantes pour créer un dossier pour les modèles modifia
 Based on the [use case](/help/forms/using/create-your-first-interactive-communication.md) and [anatomy](/help/forms/using/planning-interactive-communications.md), create the following panels in the Web template:
 
 * Informations de facturation : comprend un fragment de document
-* Détails du client : Inclut un fragment 
-* Résumé du projet de loi : Inclut un fragment 
-* Résumé des frais : Comprend un fragment  et un graphique (mise en page à deux colonnes)
+* Détails du client : Inclut un fragment de document
+* Résumé de la facture : Inclut un fragment de document
+* Résumé des frais : Comprend un fragment de document et un graphique (mise en page à deux colonnes)
 * Appels ciblés : Inclut un tableau
 * Pay Now: Includes a **Pay Now** button and an image
 * Value Added Services: Includes an image and a **Subscribe** button.
@@ -197,7 +204,7 @@ Toutes les entités telles que des fragments de document, des graphiques, des ta
 Exécutez les étapes suivantes pour créer un modèle pour le canal web dans le dossier **Create_First_IC_templates** :
 
 1. Navigate to the appropriate template folder by selecting **Tools** > **Templates** > **Create_First_IC_templates** folder.
-1. Appuyez sur **Create** (Créer). 
+1. Appuyez sur **Créer**. 
 1. On the **Pick a Template Type** configuration wizard, select **Interactive Communication - Web Channel** and tap **Next**.
 1. On the **Template Details** configuration wizard, specify **Create_First_IC_Web_Template** as the template title. Spécifiez une description facultative et appuyez sur **Créer**.
 
@@ -221,6 +228,7 @@ Exécutez les étapes suivantes pour créer un modèle pour le canal web dans le
    1. Spécifiez **Information de facturation** dans le champ Titre.
    1. Sélectionnez **1** dans la liste déroulante **Nombre de colonnes**.
    1. Tap ![done_icon](assets/done_icon.png) to save the properties.
+
    Le nom du panneau est mis à jour vers **Information de facturation** dans l’arborescence de contenu.
 
 1. Répétez les étapes 7 à 11 pour ajouter des panneaux avec les propriétés suivantes au modèle :
@@ -236,7 +244,7 @@ Exécutez les étapes suivantes pour créer un modèle pour le canal web dans le
 
    L’image suivante illustre l’arborescence de contenu après l’ajout de tous les panneaux au modèle :
 
-   ![content_tee_all_panels](assets/content_tee_all_panels.png)
+   ![content_tee_all_boards](assets/content_tee_all_panels.png)
 
 ### Activer le modèle {#enable-the-template}
 
@@ -244,7 +252,7 @@ Une fois que vous avez créé le modèle web, vous devez l’activer pour utilis
 
 Effectuez les étapes suivantes pour activer le modèle web :
 
-1. Tap **Tools** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > **Templates**.
+1. Tap **Tools** ![Tools](assets/tools-icon.svg) > **Templates**.
 1. Navigate to the **Create_First_IC_Web_Template** template, select it, and tap **Enable**.
 1. Appuyez de nouveau sur **Activer** pour confirmer.
 
@@ -261,7 +269,7 @@ En fonction du cas d’utilisation, vous devez inclure les boutons **Payer maint
 
 1. Dans l’onglet **Composants autorisés** de la section **Propriétés**, sélectionnez **Bouton** à partir des composants de **formulaire adaptatif**.
 
-   ![allowed_components_af](assets/allowed_components_af.png)
+   ![allow_components_af](assets/allowed_components_af.png)
 
 1. Tap ![done_icon](assets/done_icon.png) to save the properties.
 
