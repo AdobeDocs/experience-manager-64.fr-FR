@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1047'
+ht-degree: 95%
 
 ---
 
@@ -59,13 +62,15 @@ Si vous saisissez un nom d’utilisateur ou un mot de passe incorrect, vous obti
 
 Vous pouvez configurer le fournisseur de services de référentiel à utiliser avec Documentum. Les appels des services de référentiel sont délégués au fournisseur que vous configurez. Les options suivantes sont disponibles :
 
-**** Nom actuel du fournisseur de services de référentiel : Nom du fournisseur de services de référentiel actuel
+**Nom du Prestataire du référentiel actuel :** Nom du prestataire de référentiel actuel
 
-**** Fournisseur de référentiel ECM Documentum : Transforme le fournisseur de référentiel Documentum en fournisseur du référentiel. Cette option est obsolète.
+**Fournisseur du référentiel EMC Documentum :** Fait du fournisseur de référentiel Documentum le fournisseur du référentiel. Cette option est obsolète.
 
-**** fournisseur de référentiel : Fait du fournisseur de référentiel natif le fournisseur du référentiel
+**fournisseur de référentiel :** Fait du fournisseur de référentiel natif le fournisseur du référentiel
 
-***Remarque ** : pour sélectionner un fournisseur de services de référentiel non répertorié, configurez le service RepositoryService dans Applications and Services > Gestion des services.<!-- Fix broken link (See Managing Services) -->*
+>[!NOTE]
+>
+>pour sélectionner un fournisseur de services de référentiel non répertorié, configurez le service RepositoryService dans Applications and Services > Gestion des services <!-- Fix broken link (See Managing Services) -->
 
 1. Dans Administration Console, cliquez sur Services > Connecteur pour EMC Documentum > Paramètres de configuration.
 1. Dans la zone Informations sur les fournisseurs de services de référentiel, sélectionnez un autre fournisseur de services de référentiel.
