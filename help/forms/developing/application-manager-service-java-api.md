@@ -1,6 +1,6 @@
 ---
-title: Application Manager Service JavaAPI Quick Start (SOAP)
-seo-title: Application Manager Service JavaAPI Quick Start (SOAP)
+title: Début rapide sur l’API Java du service Application Manager (SOAP)
+seo-title: Début rapide sur l’API Java du service Application Manager (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
@@ -10,18 +10,21 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 2%
 
 ---
 
 
-# Démarrage rapide de l’API Java du service Application Manager (SOAP) {#application-manager-service-javaapi-quick-start-soap}
+# Début rapide sur l’API Java du service Application Manager (SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
-Java API Quick Start (SOAP) est disponible pour le service Application Manager.
+Le Début rapide des API Java (SOAP) est disponible pour le service Application Manager.
 
-[Démarrage rapide : Déploiement d’applications à l’aide de l’API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
+[Début rapide : Déploiement d’applications à l’aide de l’API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
-[Démarrage rapide : Suppression d’une application à l’aide de l’API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
+[Début rapide : Suppression d’une application à l’aide de l’API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
 
 >[!NOTE]
 >
@@ -29,9 +32,11 @@ Java API Quick Start (SOAP) est disponible pour le service Application Manager.
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
-* ***Remarque **: Le démarrage rapide de l’API Java (SOAP) situé dans Programmation avec AEM Forms est basé sur Forms si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>Le Début rapide API Java (SOAP) situé dans Programmation avec AEM Forms est basé sur Forms si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Démarrage rapide (mode SOAP) : Déploiement d’applications à l’aide de l’API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+## Début rapide (mode SOAP) : Déploiement d’applications à l’aide de l’API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
 L’exemple de code Java suivant importe une application basée sur un fichier LCA existant appelé *EncryptDocument.lca*.
 
@@ -133,7 +138,7 @@ L’exemple de code Java suivant importe une application basée sur un fichier L
  
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression d’une application à l’aide de l’API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+## Début rapide (mode SOAP) : Suppression d’une application à l’aide de l’API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
 L’exemple de code Java suivant supprime une application nommée *EncryptDocument*.
 
