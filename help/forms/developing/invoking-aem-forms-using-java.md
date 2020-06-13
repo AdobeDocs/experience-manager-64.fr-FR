@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '5409'
+ht-degree: 89%
 
 ---
 
@@ -43,7 +46,7 @@ Le site Web d’Adobe Developer contient les articles suivants traitant de l’
 
 [Inclusion des fichiers de bibliothèque Java AEM Forms](#including-aem-forms-java-library-files)
 
-[Appel de processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md#main-pars-text-0)
+[Appel de processus pour des intervenants humains de longue durée](invoking-human-centric-long-lived.md)
 
 [Appel d’AEM Forms utilisant des services Web](/help/forms/developing/invoking-aem-forms-using-web.md)
 
@@ -66,7 +69,7 @@ Pour appeler un service AEM Forms par programmation à l’aide de l’API Java
 
 >[!NOTE]
 >
->(Clé en main uniquement) du serveur AEM Forms avec la commande `standalone.bat -b <Server IP> -c lc_turnkey.xml` pour spécifier une adresse IP de serveur pour EJB.
+>(Clé en main uniquement) Début le serveur AEM Forms avec la commande `standalone.bat -b <Server IP> -c lc_turnkey.xml` pour spécifier une adresse IP de serveur pour EJB.
 
 * Le serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
@@ -262,7 +265,7 @@ Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de connex
   </tr>
   <tr>
    <td><p> jboss-client.jar</p> </td>
-   <td><p>Si AEM Forms est déployé sur le serveur d’applications JBoss, incluez ce fichier JAR.</p> <p>Les classes requises ne seront pas trouvées par le chargeur de classe si jboss-client.jar et les fichiers JAR référencés ne sont pas colocalisés.</p> </td>
+   <td><p>Si AEM Forms est déployé sur le serveur d’applications JBoss, incluez ce fichier JAR.</p> <p>Les classes requises ne seront pas trouvées par le chargeur de classe si jboss-client.jar et les jars référencés ne sont pas colocalisés.</p> </td>
    <td><p>Répertoire lib du client JBoss</p> <p>Si vous déployez votre application client sur le même serveur d’applications J2EE, vous n’avez pas besoin d’inclure ce fichier.</p> </td>
   </tr>
   <tr>
@@ -444,13 +447,17 @@ Pour appeler un service AEM Forms, définissez les propriétés de connexion su
    * If you set this connection property to `WebLogic`, the `java.naming.factory.initial` value is set to `weblogic.jndi.WLInitialContextFactory`.
    * Likewise, if you set this connection property to `JBoss`, the `java.naming.factory.initial` value is set to `org.jnp.interfaces.NamingContextFactory`.
    * Vous pouvez définir la propriété `java.naming.factory.initial` sur une valeur répondant à vos exigences si vous ne souhaitez pas utiliser les valeurs par défaut.
-   ***Note**: Instead of using a string to set the `DSC_SERVER_TYPE` connection property, you can use a static member of the `ServiceClientFactoryProperties` class. The following values can be used: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, or `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
+   >[!NOTE]
+   >
+   >Instead of using a string to set the `DSC_SERVER_TYPE` connection property, you can use a static member of the `ServiceClientFactoryProperties` class. The following values can be used: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, or `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
 * **DSC_CREDENTIAL_USERNAME :** spécifie le nom d’utilisateur d’AEM Forms. Pour qu’un utilisateur puisse appeler un service AEM Forms, il lui faut le rôle Services User. Un utilisateur peut également avoir un autre rôle incluant l’autorisation d’appel de services. Sinon, une exception est levée lorsqu’il tente d’appeler un service. Si la sécurité du service est désactivée, il n’est pas nécessaire de spécifier cette propriété de connexion.
 * **DSC_CREDENTIAL_PASSWORD :** indique la valeur de mot de passe correspondant. Si la sécurité du service est désactivée, il n’est pas nécessaire de spécifier cette propriété de connexion.
 * **DSC_REQUEST_TIMEOUT :** la limite du délai d’attente de requête par défaut pour la demande SOAP est 1 200 000 millisecondes (20 minutes). Parfois, une demande peut prendre plus de temps pour réaliser l’opération. Par exemple, une demande SOAP qui récupère un grand ensemble d’enregistrements peut nécessiter un délai d’expiration plus long. Vous pouvez utiliser le `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` pour augmenter la limite de délai d’appel de demande pour les requêtes SOAP.
 
-   **Remarque**: Seuls les appels SOAP prennent en charge la propriété DSC_REQUEST_TIMEOUT.
+   >[!NOTE]
+   >
+   >Seuls les appels SOAP prennent en charge la propriété DSC_REQUEST_TIMEOUT.
 
 Pour définir les propriétés de connexion, effectuez les tâches suivantes :
 
