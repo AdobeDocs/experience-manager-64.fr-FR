@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '3076'
+ht-degree: 82%
 
 ---
 
@@ -44,14 +47,14 @@ L’interface utilisateur optimisée pour les écrans tactiles permet de créer 
 Lorsque vous créez ou modifiez un formulaire adaptatif, vous utilisez les éléments suivants de l’interface utilisateur :
 
 * [Barre latérale](#sidebar)
-* [Barre d’outils de la page](#page-toolbar)
+* [Barre d’outils Page](#page-toolbar)
 
 * [Barre d’outils de composants](#component-toolbar)
 * [Page de formulaires adaptatifs](#af-page)
 
 ![Interface de création de formulaires adaptatifs](assets/formeditor.png)
 
-******A. Barre latérale** B. Barre d’outils **C.** Page de formulaire adaptatif
+**A.** Barre latérale **B.** Barre d&#39;outils de la page **C.** Page de formulaire adaptatif
 
 ### Barre latérale {#sidebar}
 
@@ -65,7 +68,7 @@ La barre latérale vous permet de
    ![Barre latérale](assets/sidebar-comps-2.png)
    [Cliquez sur l’image pour l’agrandir](assets/sidebar-comps-2.png)
 
-******** A. Explorateur de contenu **B. Explorateur de propriétés** C.**Explorateur de ressources** D. Explorateur de composants
+**A.** Explorateur de contenu **B.** Explorateur de propriétés **C.** Explorateur de ressources **D.** Explorateur de composants
 
 La barre latérale comprend les explorateurs suivants :
 
@@ -85,22 +88,22 @@ La barre latérale comprend les explorateurs suivants :
 
 * **Explorateur de propriétés**
 
-   Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction d’un composant. Pour afficher les propriétés du conteneur de formulaires adaptatifs :
+   Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction d’un composant. Pour afficher les propriétés du conteneur de formulaire adaptatif :
 
-   Sélectionnez un composant, puis appuyez au niveau ![du](assets/field-level.png) champ > Conteneur **[!UICONTROL de formulaires]** adaptatifs, puis appuyez sur ![cmppr](assets/cmppr.png).
+   Sélectionnez un composant, puis appuyez sur au niveau ![du](assets/field-level.png) champ > Conteneur **[!UICONTROL de formulaire]** adaptatif, puis sur ![cmppr](assets/cmppr.png).
 
 * **Explorateur de ressources**
 
-   Sépare les différents types de contenu (images, documents, pages, films, etc.).
+   Sépare différents types de contenu, tels que des images, des documents, des pages, des films, etc.
 
 * **Explorateur de composants**
 
-   Comprend les composants que vous pouvez utiliser pour créer un formulaire adaptatif. Vous pouvez faire glisser des composants sur le formulaire adaptatif afin d’ajouter des éléments de formulaire, puis configurer les éléments ajoutés conformément aux exigences. Le tableau ci-dessous décrit les composants répertoriés dans l’explorateur de composants.
+   Inclut des composants que vous pouvez utiliser pour créer un formulaire adaptatif. Vous pouvez faire glisser des composants sur le formulaire adaptatif afin d’ajouter des éléments de formulaire, puis configurer les éléments ajoutés conformément aux exigences. Le tableau ci-dessous décrit les composants répertoriés dans l’explorateur de composants.
 
 <table> 
  <tbody> 
   <tr> 
-   <th><strong>Component</strong></th> 
+   <th><strong>Composant</strong></th> 
    <th><strong>Fonctionnalité</strong></th> 
   </tr> 
   <tr> 
@@ -144,12 +147,12 @@ La barre latérale comprend les explorateurs suivants :
    <td>Ajoute une liste déroulante, à sélection simple ou multiple.</td> 
   </tr> 
   <tr> 
-   <td>Courriel</td> 
+   <td>Courrier électronique</td> 
    <td><p>Ajoute un champ pour capturer une adresse électronique. Le composant Courrier électronique, par défaut, valide les adresses électroniques à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td> 
   </tr> 
   <tr> 
    <td>Fichier en pièce jointe</td> 
-   <td><p>Ajoute un bouton qui permet aux utilisateurs de rechercher et de joindre des documents annexes au formulaire.</p> <p><strong>Remarque :</strong> le composant Pièce jointe prend en charge un ensemble prédéfini de formats de fichiers dans des formulaires adaptatifs activés pour Adobe Sign. Pour plus d’informations, voir <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formats de fichiers pris en charge</a>.</p> </td> 
+   <td><p>Ajoute un bouton qui permet aux utilisateurs de rechercher et de joindre des documents annexes au formulaire.</p> <p><strong>Remarque :</strong> le composant Pièce jointe prend en charge un ensemble prédéfini de formats de fichiers dans des formulaires adaptatifs activés pour Adobe Sign. Pour plus d’informations, voir <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">Formats de fichiers pris en charge</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Liste des pièces jointes</td> 
@@ -220,7 +223,7 @@ La barre latérale comprend les explorateurs suivants :
    <td>Affiche les informations fournies dans le formulaire et les champs de signature pour que l’utilisateur puisse vérifier et signer le formulaire.</td> 
   </tr> 
   <tr> 
-   <td>Texte</td> 
+   <td>Text (Texte)</td> 
    <td>Permet de spécifier du texte statique.</td> 
   </tr> 
   <tr> 
@@ -258,7 +261,7 @@ La barre latérale comprend les explorateurs suivants :
    <td><p>Ajoute une zone de texte dans laquelle un utilisateur peut spécifier les informations nécessaires.. </p> <p>Par défaut, le composant de zone de texte accepte uniquement du texte brut. Vous pouvez activer un composant de zone de texte afin de permettre la prise en charge du texte brut. Un composant de texte compatible avec le texte brut permet d’ajouter des en-têtes, de modifier les styles de caractère (gras, italique, souligné), de créer les listes ordonnées et non ordonnées, de modifier l’arrière-plan et la couleur du texte et d’ajouter des hyperliens. To enable rich text for a text box, enable the<strong> Allow Rich Text</strong> option in the component properties.</p> </td> 
   </tr> 
   <tr> 
-   <td>Titre</td> 
+   <td>Title (Titre)</td> 
    <td>Spécifie un titre pour le formulaire adaptatif.</td> 
   </tr> 
   <tr> 
@@ -302,17 +305,17 @@ For more best practices around adaptive forms, see [Best practices for working w
 
 >[!NOTE]
 >
->Les composants de formulaire adaptatif ne prennent pas en charge les langues s’écrivant de droite à gauche (RTL). Par exemple, l&#39;hébreu.
+>Les composants de formulaire adaptatif ne prennent pas en charge les langues de droite à gauche (RTL). Par exemple, hébreu.
 
-### Barre d’outils de la page{#page-toolbar} 
+### Barre d’outils Page {#page-toolbar}
 
 La barre d’outils de la page, située en haut de l’écran, propose des options permettant d’afficher un aperçu du formulaire, d’en modifier les propriétés, puis d’en modifier la disposition. Vous pouvez prévisualiser le formulaire lors de son écriture et apporter des modifications en conséquence. Dans la barre d’outils de la page, vous voyez :
 
-* **[!UICONTROL Activer/désactiver le panneau]** latéral ![bascule-panneau](assets/toggle-side-panel.png)latéral : Permet d’afficher ou de masquer la barre latérale.
+* **[!UICONTROL Activer/désactiver le panneau]** latéral ![pour activer/désactiver le panneau](assets/toggle-side-panel.png)latéral : Permet d’afficher ou de masquer la barre latérale.
 
-* **[!UICONTROL Informations]** sur la page ![thème-options](assets/theme-options.png): Permet d’afficher les propriétés de la page, de publier/d’annuler la publication d’un formulaire, de démarrer un processus de formulaire et d’ouvrir le formulaire dans une interface utilisateur classique.
+* **[!UICONTROL Informations]** sur la page ![Thème-options](assets/theme-options.png): Permet de vue des propriétés de page, de publier/annuler la publication d’un formulaire, de début d’un processus de formulaire et d’ouvrir le formulaire dans l’interface utilisateur classique.
 
-* **[!UICONTROL Emulateur]** ![règle](assets/ruler.png): Vous permet d’imiter l’aspect de votre formulaire pour différentes tailles d’affichage, comme les tablettes et les smartphones.
+* **** Règle ![d&#39;émulateur](assets/ruler.png): Vous permet d’imiter l’aspect de votre formulaire pour différentes tailles d’affichage, telles que les tablettes et les smartphones.
 
 * **[!UICONTROL Modifier]** : Sélectionne d’autres modes comme **Modifier, Style, Développeur** et **Conception**.
 
@@ -322,7 +325,7 @@ La barre d’outils de la page, située en haut de l’écran, propose des optio
 
       * Découvrir la composition des formulaires.
       * Déboguer en temps réel afin de mieux résoudre les problèmes.
-   * **[!UICONTROL Conception]**: Permet d’activer ou de désactiver les composants personnalisés ou les composants prêts à l’emploi qui ne sont pas répertoriés dans la barre latérale.
+   * **[!UICONTROL Conception]**: Permet d’activer ou de désactiver des composants personnalisés ou des composants prêts à l’emploi qui ne sont pas répertoriés dans la barre latérale.
 
 
 * **[!UICONTROL Aperçu]** : Permet de prévisualiser le formulaire avant de le publier. 
@@ -381,9 +384,9 @@ La structure de contenu contient généralement les composants principaux ci-des
    * *Action d’envoi* : définit la manière dont le formulaire est traité sur le serveur lorsque l’utilisateur l’envoie.
    * *Style* : indique le chemin d’accès au fichier CSS utilisé pour personnaliser l’apparence du formulaire.
 
-* **[!UICONTROL rootPanel]**: Panneau racine d’un formulaire adaptatif. Il peut contenir des sous-panneaux sous le nœud d’éléments. Une mise en page peut être associée à chaque panneau qui comprend le panneau racine. La mise en page du panneau détermine la disposition du formulaire. Par exemple, dans la mise en page Accordéon*, *ses éléments sont présentés sous forme d’étapes Accordéon.
+* **[!UICONTROL rootPanel]**: Panneau racine d’un formulaire adaptatif. Il peut contenir des sous-panneaux sous le nœud d’éléments. Une mise en page peut être associée à chaque panneau qui comprend le panneau racine. La mise en page du panneau détermine la disposition du formulaire. Par exemple, dans la mise en page Accordéon*, *ses éléments sont présentés comme des étapes Accordéon.
 
-* **[!UICONTROL barre d’outils]**: Un conteneur de formulaires adaptatifs est associé à une barre d’outils globale, qui est globale dans le formulaire. This toolbar can be added using the **Add Toolbar** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
+* **[!UICONTROL barre d&#39;outils]**: Un conteneur de formulaire adaptatif est associé à une barre d’outils globale, qui est globale dans le formulaire. This toolbar can be added using the **Add Toolbar** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
 
 * **[!UICONTROL ressources]**: Ce noeud contient des informations supplémentaires utilisées pour la création de formulaires. Il s’agit, par exemple, de détails sur le modèle de formulaire, de détails de localisation, etc.
 
