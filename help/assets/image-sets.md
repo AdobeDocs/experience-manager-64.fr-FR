@@ -10,7 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 translation-type: tm+mt
-source-git-commit: e269c0cf002f4b2db5454c315d35f4101b652540
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '2064'
+ht-degree: 81%
 
 ---
 
@@ -19,29 +22,29 @@ source-git-commit: e269c0cf002f4b2db5454c315d35f4101b652540
 
 Les visionneuses d’images offrent aux utilisateurs une expérience de visionnage intégrée en leur permettant d’afficher différentes vues d’un élément en cliquant sur une miniature. Les visionneuses d’images permettent de présenter différentes vues d’un élément. Elles offrent des outils de zoom afin d’examiner les images de plus près.
 
-Les visionneuses d’images sont désignées par une bannière comportant le mot **[!UICONTROL VISIONNEUSE D’IMAGES]**. En outre, si la visionneuse d’images est publiée, la date de publication, indiquée par l’icône représentant la **[!UICONTROL Terre]** figure sur la bannière avec la date de dernière modification, indiquée par l’icône en forme de **[!UICONTROL crayon]**.
+Les visionneuses d’images sont désignées par une bannière comportant le mot **[!UICONTROL VISIONNEUSE D’IMAGES]**. En outre, si la visionneuse d’images est publiée, la date de publication, indiquée par l’icône représentant la **[!UICONTROL Terre]**, figure sur la bannière avec la date de dernière modification, indiquée par l’icône représentant un **[!UICONTROL crayon]**.
 
 ![chlimage_1-339](assets/chlimage_1-339.png)
 
-Dans la visionneuse d’images, vous pouvez également créer des échantillons en créant une visionneuse d’images et en ajoutant des miniatures.
+Dans une visionneuse d’images, vous pouvez également créer des échantillons en créant une visionneuse d’images et en ajoutant des miniatures.
 
 Cette application est particulièrement utile lorsque vous souhaitez afficher un élément avec une couleur, un modèle ou une finition différente. Pour créer une visionneuse d’images avec des échantillons de couleur, vous avez besoin d’une image pour chaque couleur, modèle ou finition que vous souhaitez présenter aux utilisateurs. Vous avez également besoin d’un échantillon de couleurs, de modèle ou de finition pour chaque couleur, modèle ou finition.
 
-Par exemple, supposons que vous souhaitez présenter les images d’une casquette avec différentes couleurs de visière : rouge, vert et bleu. Dans ce cas, vous avez besoin de trois prises de vue de la même casquette. Vous avez besoin d’une prise de vue avec une visière rouge, une avec une verte et une avec une bleue. Vous avez également besoin d’un échantillon de couleurs rouge, vert et bleu. Les échantillons de couleurs servent de miniatures sur lesquelles les utilisateurs cliquent dans la visionneuse des séries d’échantillon pour voir les visières rouge, verte ou bleue.
+Par exemple, supposons que vous souhaitez présenter les images d’une casquette avec différentes couleurs de visière : rouge, vert et bleu. Dans ce cas, vous avez besoin de trois prises de vue de la même casquette. Vous avez besoin d’une prise de vue avec une visière rouge, une avec une verte et une avec une bleue. Vous avez également besoin d’un échantillon de couleurs rouge, vert et bleu. Les échantillons de couleurs servent de miniatures sur lesquelles les utilisateurs cliquent dans la visionneuse des séries d’échantillons pour voir les visières rouge, verte ou bleue.
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’interface utilisateur des ressources, voir [Gestion des ressources avec l’interface utilisateur tactile](managing-assets-touch-ui.md).
+>Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](managing-assets-touch-ui.md).
 
-## Démarrage rapide : Visionneuses d&#39;images {#quick-start-image-sets}
+## Démarrage rapide : Visionneuses d’images  {#quick-start-image-sets}
 
 Pour démarrer rapidement :
 
-1. [Téléchargez les images maître pour plusieurs vues.](#uploading-assets-in-image-sets)
+1. [Téléchargez vos images principales pour plusieurs vues.](#uploading-assets-in-image-sets)
 
-   Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images ont une dimension de 2 000 pixels minimum pour un zoom optimal. Contenu multimédia dynamique peut générer des images jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
+   Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande pour obtenir un détail de zoom optimal. Dynamic Media peut générer des images faisant jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
 
-   AEM Assets prend en charge de nombreux formats de fichier image mais les formats sans perte TIFF, PNG et EPS sont recommandés.
+   AEM Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
 1. [Créez une visionneuse d’images.](#creating-image-sets)
 
@@ -51,52 +54,52 @@ Pour démarrer rapidement :
 
    Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
-   **Important** — Les visionneuses par lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation des fichiers et ne sont disponibles qu’en mode Contenu multimédia dynamique - Scene7.
+   **Important** : les visionneuses par lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation de fichiers et ne sont disponibles qu’en mode Contenu multimédia dynamique - Scene7.
 
-   See [Preparing Image Set assets for upload and Uploading your files](#uploading-assets-in-image-sets).
+   Voir [Préparation du chargement de ressources de visionneuse d’images et Chargement des fichiers](#uploading-assets-in-image-sets).
 
    Voir [Utilisation de sélecteurs](working-with-selectors.md).
 
-1. Add [Image Set Viewer presets](managing-viewer-presets.md), as needed.
+1. Ajoutez des [paramètres prédéfinis de visionneuse d’images](managing-viewer-presets.md), selon les besoins.
 
-   Administrators can create or modify Image **[!UICONTROL Set Viewer Presets]**. To see your image set with a viewer preset, select the image set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Administrators can create or modify Image **[!UICONTROL Set Viewer Presets]**. Pour afficher vos images avec un paramètre prédéfini de visionneuse, sélectionnez la visionneuse d’images, puis dans le menu déroulant du rail gauche, sélectionnez **[!UICONTROL Visionneuses]**.
 
-   See **[!UICONTROL Tools > Assets > Viewer Presets]** to create or edit viewer presets.
+   Accédez à **[!UICONTROL Outils > Ressources > Paramètres visionneuse]** pour créer ou modifier les paramètres prédéfinis de la visionneuse.
 
-1. (Optional) [Viewing Image Sets](image-sets.md#viewing-image-sets) that were created using batch set presets.
+1. (Facultatif) [Affichage des visionneuses d’images](image-sets.md#viewing-image-sets) créées à l’aide de paramètres prédéfinis d’ensemble par lot.
 1. [Prévisualisez une visionneuse d’images.](previewing-assets.md)
 
-   Sélectionnez la visionneuse d’images pour pouvoir la prévisualiser. Appuyez sur les icônes de miniature pour examiner votre visionneuse d’images dans la visionneuse sélectionnée. You can choose different viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down menu.
+   Sélectionnez la visionneuse d’images pour pouvoir la prévisualiser. Appuyez sur les icônes de miniature pour examiner votre visionneuse d’images dans la visionneuse sélectionnée. Vous pouvez choisir différentes visionneuses dans le menu **[!UICONTROL Visionneuses]** disponible dans le menu déroulant du rail gauche.
 
 1. [Publiez une visionneuse d’images.](publishing-dynamicmedia-assets.md)
 
-   La publication d’une visionneuse d’images active la chaîne URL et d’incorporation. In addition, you must [publish any custom viewer preset](managing-viewer-presets.md) that you have created. Les paramètres prédéfinis de visionneuse prêts à l’emploi sont déjà publiés.
+   La publication d’une visionneuse d’images active la chaîne URL et d’incorporation. En outre, vous devez [publier tous les paramètres prédéfinis de visionneuse personnalisés](managing-viewer-presets.md) que vous avez créés. Les paramètres prédéfinis de visionneuse prêts à l’emploi sont déjà publiés.
 
-1. [Liez des URL à l’application Web](linking-urls-to-yourwebapplication.md) ou [incorporez la vidéo ou la visionneuse d’images](embed-code.md).
+1. [Liez des URL à l’application web](linking-urls-to-yourwebapplication.md) ou [incorporez la vidéo ou la visionneuse d’images](embed-code.md).
 
    AEM Assets crée des appels URL pour les visionneuses d’images et les active une fois que vous avez publié la visionneuse d’images. Vous pouvez copier ces URL lorsque vous prévisualisez les ressources. Vous pouvez également les incorporer à votre site web.
 
    Sélectionnez la visionneuse d’images, puis, dans le menu déroulant du rail de gauche, sélectionnez **[!UICONTROL Visionneuses]**.
 
-   Voir [Liaison d’une visionneuse d’images à une page web](linking-urls-to-yourwebapplication.md) et [Intégration de la vidéo ou de la visionneuse d’images](embed-code.md).
+   Voir [Liaison d’une visionneuse d’images à une page web](linking-urls-to-yourwebapplication.md) et [Incorporation de la vidéo ou de la visionneuse d’images](embed-code.md).
 
-To edit Image Sets, see [editing Image Sets.](#editing-image-sets) En outre, vous pouvez  et modifier les propriétés [de la visionneuse d’](managing-assets-touch-ui.md#editing-properties)images.
+Pour modifier des visionneuses d’images, voir [Modification de visionneuses d’images.](#editing-image-sets) Vous pouvez en outre afficher et modifier les [propriétés de la visionneuse d’images](managing-assets-touch-ui.md#editing-properties).
 
 Si vous rencontrez des problèmes lors de la création des visionneuses, reportez-vous à Images et visionneuses dans la section [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md#images-and-sets).
 
 ## Uploading assets in Image Sets {#uploading-assets-in-image-sets}
 
-Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2000 pixels dans leur dimension la plus grande. Les visionneuses d’images prennent en charge de nombreux formats de fichier image mais les formats sans perte TIFF, PNG et EPS sont recommandés.
+Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande. Les visionneuses d’images prennent en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
-Vous pouvez télécharger des images pour les visionneuses d’images comme vous le feriez pour [charger une autre ressource dans les ressources AEM](managing-assets-touch-ui.md#uploading-assets).
+Vous pouvez charger des images pour les visionneuses d’images comme vous le feriez pour [charger une autre ressource dans AEM Assets](managing-assets-touch-ui.md#uploading-assets).
 
-### Préparation du téléchargement de ressources de visionneuse d’images {#preparing-image-set-assets-for-upload}
+### Préparation du chargement de ressources de visionneuse d’images {#preparing-image-set-assets-for-upload}
 
 Avant de créer une visionneuse d’images, assurez-vous que la taille et le format des images sont corrects.
 
 Pour créer une visionneuse d’images à plusieurs vues, vous avez besoin d’images qui montrent un élément depuis différents points de vue ainsi que différents aspects du même élément. L’objectif est de mettre en avant les fonctionnalités importantes d’un élément afin que les utilisateurs aient un tableau complet de son apparence et son fonctionnement.
 
-Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’images, assurez-vous que la dimension la plus grande des images comporte au moins 2000 pixels. Les ressources prennent en charge de nombreux formats de fichier image mais les formats sans perte TIFF, PNG et EPS sont recommandés.
+Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’images, assurez-vous que la dimension la plus grande des images comporte au moins 2000 pixels.  Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
 >[!NOTE]
 >
@@ -110,9 +113,9 @@ Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’i
 
 
 
-## Création d’une visionneuse d’images {#creating-image-sets}
+## Création d’une visionneuse d’images  {#creating-image-sets}
 
-Vous pouvez créer des visionneuses d’images à partir de l’interface utilisateur ou de l’API. Cette section explique comment créer des visionneuses d’images dans l’interface utilisateur.
+Vous pouvez créer des visionneuses d’images par le biais de l’interface utilisateur ou de l’API. Cette section décrit comment créer des visionneuses d’images dans l’interface utilisateur.
 
 >[!NOTE]
 >
@@ -126,9 +129,9 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 >
 >Image sets are not supported for assets with `,` (comma) in the file name.
 
-**Pour créer une visionneuse** d’images :
+**Pour créer une visionneuse d’images**:
 
-1. In **Assets**, navigate to where you want to create an image set, tap **[!UICONTROL Create]**, and select **[!UICONTROL Image Set]**. Vous pouvez également créer la visionneuse à partir d’un dossier contenant vos fichiers.
+1. In **Assets**, navigate to where you want to create an image set, tap **[!UICONTROL Create]**, and select **[!UICONTROL Image Set]**. Vous pouvez également la créer depuis un dossier qui contient les ressources.
 
    ![chlimage_1-340](assets/chlimage_1-340.png)
 
@@ -138,21 +141,21 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
    >[!NOTE]
    >
-   >Lors de la création de la visionneuse d’images, vous pouvez modifier la miniature de la visionneuse d’images ou autoriser AEM à la sélectionner automatiquement en fonction des fichiers de la visionneuse d’images. To select a thumbnail, tap **[!UICONTROL Change thumbnail]** and select any image (you can navigate to other folders to find images as well). Si vous avez sélectionné une miniature, puis décidé qu’AEM en génère une à partir de la visionneuse d’images, sélectionnez **[!UICONTROL Basculer vers la miniature automatique]**.
+   >Lors de la création de la visionneuse d’images, vous pouvez modifier la miniature de la visionneuse d’images ou autoriser AEM à la sélectionner automatiquement en fonction des fichiers de la visionneuse d’images. To select a thumbnail, tap **[!UICONTROL Change thumbnail]** and select any image (you can navigate to other folders to find images as well). Si vous avez sélectionné une miniature, puis souhaitez qu’AEM en génère une depuis la visionneuse d’images, sélectionnez **[!UICONTROL Basculer vers les miniatures automatiques]**.
 
 1. Effectuez l’une des opérations suivantes :
 
    * Near the upper-left corner of the **[!UICONTROL Image Set Editor]** page, tap **[!UICONTROL Add Asset]**.
    * Near the middle of the **[!UICONTROL Image Set Editor]** page, tap **[!UICONTROL Tap to open Asset Selector]**.
-   Appuyez sur pour sélectionner les fichiers à inclure dans votre visionneuse d’images. Les fichiers sélectionnés sont dotés d’une coche. Lorsque vous avez terminé, en haut à droite de la page, appuyez sur **[!UICONTROL Sélectionner]**.
+   Appuyez sur pour sélectionner les fichiers à inclure dans votre visionneuse d’images. Les ressources sélectionnées sont cochées. Lorsque vous avez terminé, en haut à droite de la page, appuyez sur **[!UICONTROL Sélectionner]**.
 
-   Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé et en appuyant sur **[!UICONTROL Retour]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis appuyez sur l’icône **[!UICONTROL Filtre]** dans la barre d’outils. Change the view by tapping the **[!UICONTROL View]** icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
+   Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en appuyant sur **[!UICONTROL Retour]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis appuyez sur l’icône **[!UICONTROL Filtre]** de la barre d’outils. Change the view by tapping the **[!UICONTROL View]** icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
 
    Voir [Utilisation de sélecteurs](working-with-selectors.md).
 
    ![chlimage_1-342](assets/chlimage_1-342.png)
 
-1. Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources après les avoir ajoutées.
+1. Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources une fois qu’elles ont été ajoutées.
 
    If necessary, drag an asset&#39;s **[!UICONTROL Reorder]** icon to the right of the asset&#39;s file name to re-order images up or down the set list.
 
@@ -165,27 +168,27 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
    * To delete an image, select the image, then tap **[!UICONTROL Delete Asset]**.
    * Pour appliquer un paramètre prédéfini, en haut à droite de la page, appuyez sur **[!UICONTROL Paramètre prédéfini]**, puis sélectionnez un paramètre prédéfini à appliquer en une seule fois à toutes les ressources.
 
-1. Appuyez sur **[!UICONTROL Enregistrer]**. La visionneuse d’images nouvellement créée apparaît dans le dossier dans laquelle vous l’avez créée.
+1. Appuyez sur **[!UICONTROL Save]** (Enregistrer). La nouvelle visionneuse d’images apparaît dans le dossier dans lequel vous l’avez créée.
 
-## Affichage de visionneuses d’images {#viewing-image-sets}
+## Affichage de visionneuses d’images  {#viewing-image-sets}
 
 Vous pouvez créer des visionneuses d’images dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
-**Important** — Les visionneuses de lots sont créées par le système [de production d’] images IPS dans le cadre de l’assimilation de fichiers. Elles sont disponibles uniquement en mode Contenu multimédia dynamique - Scene7.)
+**Important** : les visionneuses de lots sont créées par le système [de production d’] images IPS dans le cadre de l’assimilation de fichiers et ne sont disponibles que dans le mode Contenu multimédia dynamique - Scene7.)
 
-However, sets created using batch set presets, do *not* appear in the user interface. Vous pouvez  ces ensembles de trois manières différentes. (Ces méthodes sont disponibles même si vous avez créé les visionneuses d’images dans l’interface utilisateur.)
+Notez toutefois que les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot *ne s’affichent pas* dans l’interface utilisateur. Vous pouvez afficher ces visionneuses de trois manières différentes. (Ces méthodes sont disponibles même si vous avez créé les visionneuses d’images dans l’interface utilisateur.)
 
 * Lors de l’ouverture des propriétés d’une ressource individuelle. Les propriétés indiquent les jeux dont la ressource sélectionnée fait partie (sous **[!UICONTROL Membre des visionneuses]**). Appuyez sur le nom de la visionneuse pour afficher la totalité de la visionneuse.
 
    ![chlimage_1-343](assets/chlimage_1-343.png)
 
-* Image d’un membre d’une visionneuse. sélectionnez le menu **[!UICONTROL Visionneuses]** pour afficher les visionneuses dont la ressource fait partie.
+* À partir de l’image membre d’une visionneuse, sélectionnez le menu **[!UICONTROL Visionneuses]** pour afficher les visionneuses dont la ressource fait partie.
 
    ![chlimage_1-344](assets/chlimage_1-344.png)
 
 * From search, you can select **[!UICONTROL Filters]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets]**.
 
-   La recherche renvoie les visionneuses correspondantes qui ont soit été créées manuellement dans l’interface utilisateur, soit automatiquement au moyen de paramètres prédéfinis d’ensemble par lot. Dans le cas des visionneuses automatisées, la requête de recherche est effectuée à l’aide du critère « Commence par », à la différence de la recherche AEM qui repose sur l’utilisation du critère « Contient ». Setting the filter to **[!UICONTROL Sets]** is the only way to search automated sets.
+   La recherche renvoie les visionneuses correspondantes qui ont soit été créées manuellement dans l’interface utilisateur, soit automatiquement au moyen de paramètres prédéfinis d’ensemble par lot. Dans le cas des visionneuses automatisées, la requête de recherche est effectuée à l’aide du critère « Commence par », à la différence de la recherche AEM qui repose sur l’utilisation du critère « Contient ». La définition du filtre sur **[!UICONTROL Visionneuses]** constitue la seule méthode de recherche dans des visionneuses automatisées.
 
    ![chlimage_1-345](assets/chlimage_1-345.png)
 
@@ -193,7 +196,7 @@ However, sets created using batch set presets, do *not* appear in the user inter
 >
 >Vous pouvez afficher les visionneuses par le biais de l’interface utilisateur, comme indiqué dans la section [Modification d’une visionneuse d’images](#editing-image-sets).
 
-## Modification d’une visionneuse d’images {#editing-image-sets}
+## Modification d’une visionneuse d’images  {#editing-image-sets}
 
 Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’images, comme suit :
 
@@ -203,7 +206,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 * Appliquer des paramètres prédéfinis de visionneuse.
 * Supprimer la visionneuse d’images.
 
-**Pour modifier des visionneuses** d’images :
+**Pour modifier les visionneuses d’images**:
 
 1. Effectuez l’une des opérations suivantes :
 
@@ -217,22 +220,23 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
    * Pour trier les éléments par ordre croissant ou décroissant, appuyez sur l’en-tête de colonne.
    * To add an asset or update an existing asset, tap the **[!UICONTROL Add Asset]**. Accédez à une ressource, sélectionnez-la, puis appuyez sur **[!UICONTROL Sélectionner]** en haut à droite de la page.
    >[!NOTE]
-   >si vous supprimez l’image qu’AEM utilise pour la miniature en la remplaçant par une autre image, la ressource originale s’affiche toujours.
+   >[!NOTE]
 
+
+   * Si vous supprimez l’image qu’AEM utilise pour la miniature en la remplaçant par une autre image, la ressource d’origine s’affiche toujours.****
    * To delete an asset, select it, then tap **[!UICONTROL Delete Asset]**.
    * Pour appliquer un paramètre prédéfini, en haut à droite de la page, appuyez sur **[!UICONTROL Paramètre prédéfini]**, puis sélectionnez un paramètre prédéfini de visionneuse.
    * Pour ajouter ou changer une miniature, sélectionnez l’icône de miniature située à droite de la ressource. Naviguez jusqu’à la nouvelle miniature ou ressource d’échantillon, sélectionnez-la, puis appuyez sur **[!UICONTROL Sélectionner]**.
-   * Pour supprimer intégralement une visionneuse d’images, accédez à cette visionneuse, sélectionnez-la, puis sélectionnez **[!UICONTROL Supprimer]**.
-   >[!NOTE]
+   >Pour supprimer intégralement une visionneuse d’images, accédez à cette visionneuse, sélectionnez-la, puis sélectionnez **[!UICONTROL Supprimer]**.
    >
-   >Vous pouvez modifier les images d’une visionneuse d’images en accédant à la visionneuse, en appuyant sur **[!UICONTROL Membres de la visionneuse]** dans la barre de navigation de gauche, puis en appuyant sur l’icône représentant un crayon pour ouvrir la fenêtre de modification.****
+   >[!NOTE]]******
 
-1. Appuyez sur **[!UICONTROL Enregistrer]** lorsque vous avez terminé.
+1. Vous pouvez modifier les images d’une visionneuse d’images en accédant à la visionneuse, en cliquant sur **[!UICONTROL Définir les membres]** dans le rail gauche, puis en cliquant ou en appuyant sur l’icône Crayon d’une ressource pour afficher la fenêtre d’édition.****
 
-## Aperçu d’une visionneuse d’images {#previewing-image-sets}
+## Appuyez sur **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
 
-Voir [Aperçu des ressources](previewing-assets.md).
+Aperçu d’une visionneuse d’images  {#previewing-image-sets}](previewing-assets.md)
 
-## Publication de visionneuses d’images {#publishing-image-sets}
+## Voir aussi [Aperçu des ressources](previewing-assets.md).
 
-Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
+Publication de visionneuses d’images  {#publishing-image-sets}](publishing-dynamicmedia-assets.md)
