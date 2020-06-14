@@ -1,11 +1,14 @@
 ---
 title: Réutilisation de ressources à l’aide de MSM pour Assets
-description: Utilisez des ressources sur plusieurs pages/dossiers qui sont dérivées des ressources parents et liées à celles-ci. Les ressources restent synchronisées avec une copie originale. De plus, en quelques clics, elles reçoivent les mises à jour des ressources parents.
+description: Utilisez des ressources sur plusieurs pages/dossiers qui sont dérivées des ressources parents et liées à celles-ci. Les ressources restent synchronisées avec une copie principale et, en quelques clics, reçoivent les mises à jour des ressources parents.
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 14e89bf1e17243cc10c60fc712ee23f846ceb907
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '3158'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: 14e89bf1e17243cc10c60fc712ee23f846ceb907
 La fonctionnalité Multi Site Manager (MSM) d’Adobe Experience Manager (AEM) permet aux utilisateurs de réutiliser du contenu créé une fois et réutilisé sur plusieurs emplacements web. Il en est de même pour les ressources numériques que pour la fonctionnalité MSM pour Assets. À l’aide de MSM pour Assets, vous pouvez :
 
 * créer des ressources une fois, puis en effectuer des copies pour les réutiliser dans d’autres zones du site ;
-* conserver plusieurs copies dans la synchronisation et mettre à jour la copie originale maîtresse une fois pour transmettre les modifications aux copies enfants ;
+* Maintenez plusieurs copies synchronisées et mettez à jour la copie principale d’origine une seule fois afin de transmettre les modifications aux copies enfants.
 * effectuer des modifications locales en suspendant temporairement ou définitivement la liaison entre les ressources parents et enfants.
 
 ## Conditions préalables {#msm-prerequisites}
@@ -27,7 +30,7 @@ Pour utiliser MSM pour Assets, installez au moins le Service Pack 5. Pour plus 
 
 ### Fonctionnement et avantages {#how-it-works-the-benefits}
 
-Pour comprendre les scénarios d’utilisation afin de réutiliser le même contenu (texte et ressources) sur plusieurs emplacements web, consultez les [scénarios MSM possibles](/help/sites-administering/msm.md#possible-scenarios). AEM conserve un lien entre la ressource d’origine et ses copies liées, appelées Live Copies. La liaison conservée permet de transmettre des modifications centralisées à de nombreuses Live Copies. Cela permet d’effectuer des mises à jour plus rapides tout en éliminant les limites liées à la gestion des copies en double. La propagation des modifications n’entraîne aucune erreur et est centralisée. Cette fonctionnalité permet des mises à jour qui sont limitées aux Live Copies sélectionnées. Les utilisateurs peuvent annuler la liaison, ce qui rompt l’héritage, et apporter des modifications locales qui ne sont pas remplacées lorsque la copie originale est mise à jour et que les modifications sont déployées. La désolidarisation peut être effectuée pour certains champs de métadonnées sélectionnés ou pour une ressource entière. Elle permet de mettre à jour localement les ressources héritées d’une copie originale.
+Pour comprendre les scénarios d’utilisation afin de réutiliser le même contenu (texte et ressources) sur plusieurs emplacements web, consultez les [scénarios MSM possibles](/help/sites-administering/msm.md#possible-scenarios). AEM conserve un lien entre la ressource d’origine et ses copies liées, appelées Live Copies. La liaison conservée permet de transmettre des modifications centralisées à de nombreuses Live Copies. Cela permet d’effectuer des mises à jour plus rapides tout en éliminant les limites liées à la gestion des copies en double. La propagation des modifications n’entraîne aucune erreur et est centralisée. Cette fonctionnalité permet des mises à jour qui sont limitées aux Live Copies sélectionnées. Les utilisateurs peuvent détacher la liaison, c’est-à-dire rompre l’héritage, et effectuer des modifications locales qui ne sont pas remplacées lors de la prochaine mise à jour de la copie principale et de l’application des modifications. La désolidarisation peut être effectuée pour certains champs de métadonnées sélectionnés ou pour une ressource entière. Il permet de mettre à jour localement les ressources héritées à l’origine d’une copie principale.
 
 MSM entretient une relation dynamique entre la ressource source et ses Live Copies de sorte que :
 
@@ -37,25 +40,25 @@ MSM entretient une relation dynamique entre la ressource source et ses Live Copi
 
 ### Glossaire des termes MSM pour Assets    {#glossary-msm-for-assets}
 
-* **Source :** Fichiers ou dossiers d’origine. Copie originale d’où sont dérivées les Live Copies.
+* **Source :** Fichiers ou dossiers d’origine. Copie principale à partir de laquelle les copies dynamiques sont dérivées.
 
-* **Live Copy :** Copie des fichiers/dossiers source synchronisés avec sa source. Les Live Copies peuvent être une source d’autres Live Copies. Découvrez [comment créer des Live Copies](#create-live-copy-asset).
+* **Copie en direct :** Copie des fichiers/dossiers source synchronisés avec sa source. Les Live Copies peuvent être une source d’autres Live Copies. Découvrez [comment créer des Live Copies](#create-live-copy-asset).
 
-* **Héritage :** Lien/référence entre une ressource/un dossier de copie dynamique et sa source que le système utilise pour se rappeler où envoyer les mises à jour. L’héritage existe à un niveau granulaire pour les champs de métadonnées. L’héritage peut être supprimé pour les champs de métadonnées sélectionnés tout en conservant les relations dynamiques entre la source et sa Live Copy.
+* **Héritage :** Lien/référence entre un fichier/dossier de copie dynamique et sa source que le système utilise pour mémoriser l’emplacement d’envoi des mises à jour. L’héritage existe à un niveau granulaire pour les champs de métadonnées. L’héritage peut être supprimé pour les champs de métadonnées sélectionnés tout en conservant les relations dynamiques entre la source et sa Live Copy.
 
 * **Déploiement**: Action qui pousse les modifications apportées à la source en aval vers ses copies dynamiques. Il est possible de mettre à jour une ou plusieurs Live Copies en une seule fois à l’aide de l’action de déploiement. Voir [Déploiement](#rollout-action).
 
 * **Configuration du déploiement :** Règles qui déterminent quelles propriétés sont synchronisées, comment et quand. Ces configurations sont appliquées lors de la création de Live Copies ; elles peuvent être modifiées ultérieurement. De plus, un enfant peut hériter de la configuration de déploiement de sa ressource parent. Pour MSM pour Assets, utilisez uniquement la configuration de déploiement standard. Les autres configurations de déploiement ne sont pas disponibles pour MSM pour Assets.
 
-* **Synchroniser :** Une autre action, en plus du déploiement, qui assure la parité entre la source et sa copie en direct en envoyant les mises à jour de la source vers les copies en direct. Une synchronisation est lancée pour une Live Copy spécifique et l’action récupère les modifications de la source. Cette action permet de mettre à jour uniquement l’une des Live Copies. Voir [Action de synchronisation](#about-synchronize-action).
+* **Synchroniser :** Une autre action, en plus du déploiement, qui apporte la parité entre la source et sa copie en direct en envoyant les mises à jour de la source aux copies en direct. Une synchronisation est lancée pour une Live Copy spécifique et l’action récupère les modifications de la source. Cette action permet de mettre à jour uniquement l’une des Live Copies. Voir [Action de synchronisation](#about-synchronize-action).
 
-* **Suspendre :** Supprimez temporairement la relation de production entre une copie dynamique et son fichier/dossier source. Vous pouvez reprendre la relation. Voir [Action de suspension](#suspend-and-resume-relationship).
+* **Suspendre :** Supprimez temporairement la relation active entre une copie dynamique et son fichier/dossier source. Vous pouvez reprendre la relation. Voir [Action de suspension](#suspend-and-resume-relationship).
 
-* **Reprendre :** Reprenez la relation en direct afin qu’une copie en direct soit de nouveau  recevoir les mises à jour de la source. Voir [Action de reprise](#suspend-and-resume-relationship).
+* **Reprendre :** Reprenez la relation en direct de sorte qu’une copie en direct début de recevoir les mises à jour de la source. Voir [Action de reprise](#suspend-and-resume-relationship).
 
-* **Réinitialiser :** L’action Réinitialiser fait de nouveau de la copie dynamique un réplica de la source en remplaçant les modifications locales. Elle supprime également les annulations d’héritage et réinitialise l’héritage sur tous les champs de métadonnées. Pour apporter dans l’avenir des modifications locales, vous devez à nouveau annuler l’héritage de champs spécifiques. Voir [Modifications locales apportées à une Live Copy](#make-local-modifications-to-live-copy).
+* **Réinitialiser :** L’action Réinitialiser fait de la copie dynamique une réplique de la source en remplaçant les modifications locales. Elle supprime également les annulations d’héritage et réinitialise l’héritage sur tous les champs de métadonnées. Pour apporter dans l’avenir des modifications locales, vous devez à nouveau annuler l’héritage de champs spécifiques. Voir [Modifications locales apportées à une Live Copy](#make-local-modifications-to-live-copy).
 
-* **Détacher :** Supprimez irrévocablement la relation de production d’un fichier/dossier de copie dynamique. Après une action de désolidarisation, les Live Copies ne peuvent jamais recevoir les mises à jour de la source et elles cessent d’être des Live Copies. Voir [Suppression des relations](#remove-live-relationship).
+* **Détacher :** Supprimez irrévocablement la relation active d’un fichier/dossier de copie dynamique. Après une action de désolidarisation, les Live Copies ne peuvent jamais recevoir les mises à jour de la source et elles cessent d’être des Live Copies. Voir [Suppression des relations](#remove-live-relationship).
 
 ## Création d’une Live Copy d’une ressource {#create-live-copy-asset}
 
@@ -122,7 +125,7 @@ AEM fournit une console permettant de vérifier les états de toutes les Live Co
 
 >[!TIP]
 >
->Vous pouvez voir rapidement l’état des copies dynamiques d’autres dossiers sans avoir à trop parcourir. Il suffit de modifier le dossier dans la liste contextuelle dans la partie centrale supérieure de l’interface **[!UICONTROL Aperçu de la Live Copy]**.
+>Vous pouvez voir rapidement l’état des copies en direct d’autres dossiers sans avoir à trop parcourir. Il suffit de modifier le dossier dans la liste contextuelle dans la partie centrale supérieure de l’interface **[!UICONTROL Aperçu de la Live Copy]**.
 
 ### Actions rapides pour la source depuis le rail Références {#quick-actions-from-references-rail-for-source}
 
@@ -190,7 +193,7 @@ Une action de synchronisation récupère les modifications d’une source unique
 
 Pour démarrer une action de synchronisation, ouvrez la page **[!UICONTROL Propriétés]** d’une Live Copy, cliquez sur **[!UICONTROL Live Copy]**, puis sur l’action souhaitée dans la barre d’outils.
 
-Pour connaître les états et les informations liés à une action de synchronisation, voir [Informations et états de toutes les copies en direct d’un dossier](#information-status-of-all-lcs-of-folder).
+Pour connaître les états et les informations liés à une action de synchronisation, voir [Informations et états de toutes les copies actives d’un dossier](#information-status-of-all-lcs-of-folder).
 
 ![L’action de synchronisation récupère les modifications apportées à la source](assets/lc_sync.png)
 
@@ -278,6 +281,6 @@ Dans d’autres scénarios, MSM pour Assets correspond au comportement de la fon
 
 ## Limites des MSM pour les ressources {#limitations-of-msm-for-assets}
 
-Vous trouverez ci-dessous la limite avec le module MSM pour les ressources.
+Vous trouverez ci-dessous la limite avec MSM pour les ressources.
 
 * Les fragments de contenu ne sont pas pris en charge dans le cas d’utilisation. Lorsque vous tentez de créer leurs Live Copies, les fragments de contenu sont copiés tels quels sans aucune relation. Les fragments de contenu copiés sont un instantané temporel et ne sont pas mis à jour lorsque les fragments de contenu d’origine sont mis à jour.
