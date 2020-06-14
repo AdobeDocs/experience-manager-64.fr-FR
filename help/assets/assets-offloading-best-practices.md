@@ -1,12 +1,12 @@
 ---
 title: Meilleures pratiques de déchargement dans Assets
 description: Cas d’utilisation recommandés et meilleures pratiques pour le déchargement des workflows d’assimilation et de réplication des ressources dans AEM Assets.
-uuid: 7d08fda2-1c59-44ad-bd35-83d199642e01
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
-discoiquuid: cdb175f4-a7c6-4d9f-994a-5fc8eca51f03
 translation-type: tm+mt
-source-git-commit: c0d2172c8797a187e316e45e3f3bea0c6c7a15eb
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '1818'
+ht-degree: 74%
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: c0d2172c8797a187e316e45e3f3bea0c6c7a15eb
 
 >[!WARNING]
 >
->Cette fonctionnalité est obsolète à partir d’AEM 6.4 et est supprimée d’AEM 6.5. Planifiez en conséquence.
+>Cette fonction est obsolète à partir de la version 6.4 d’AEM et est supprimée de la version 6.5 d’AEM. Planifiez en conséquence.
 
 La gestion de fichiers volumineux et l’exécution des workflow dans Adobe Experience Manager (AEM) Assets peuvent utiliser des ressources de processeur, de mémoire et d’E/S considérables. En particulier, la taille des ressources, les workflow, le nombre d’utilisateurs et la fréquence d’assimilation des ressources peuvent affecter les performances globales du système. Les opérations les plus gourmandes en ressources incluent les workflow d’assimilation et de réplication des ressources d’AEM. L’utilisation intensive de ces workflow sur une seule instance de création AEM peut avoir un impact négatif sur l’efficacité de la création.
 
@@ -33,11 +33,11 @@ Le diagramme suivant illustre les principaux composants du processus de décharg
 
 ### Processus Déchargement des ressources de mise à jour de gestion des actifs numériques {#dam-update-asset-offloading-workflow}
 
-Le workflow Déchargement des ressources de mise à jour de gestion des actifs numériques s’exécute sur le maître (auteur) dans lequel l’utilisateur charge les ressources. Ce workflow est déclenché par un lanceur de workflow standard. Au lieu de traiter la ressource chargée, ce processus de déchargement crée une nouvelle tâche, en utilisant la rubrique com/adobe/granite/workflow/offloading *.* Le workflow de déchargement ajoute le nom du workflow cible, le workflow Ressources de mise à jour de gestion des actifs numériques dans ce cas, ainsi que le chemin de la ressource permettant d’accéder à la charge utile de la tâche. Après la création de la tâche de déchargement, le workflow de déchargement sur le maître ne démarre qu’une fois que la tâche de déchargement a été exécutée.
+Le processus de déchargement des ressources de mise à jour DAM s’exécute sur le serveur principal (auteur) sur lequel l’utilisateur télécharge les ressources. Ce workflow est déclenché par un lanceur de workflow standard. Au lieu de traiter la ressource chargée, ce processus de déchargement crée une nouvelle tâche, en utilisant la rubrique com/adobe/granite/workflow/offloading *.* Le workflow de déchargement ajoute le nom du workflow cible, le workflow Ressources de mise à jour de gestion des actifs numériques dans ce cas, ainsi que le chemin de la ressource permettant d’accéder à la charge utile de la tâche. Après avoir créé la tâche de déchargement, le processus de déchargement sur l’instance principale attend l’exécution de la tâche de déchargement.
 
 ### Gestionnaire des tâches {#job-manager}
 
-Le gestionnaire des tâches distribue les nouvelles tâches aux instances de programme de travail. Lors de la conception du mécanisme de distribution, il est important de prendre en compte l’activation de rubrique. Les tâches ne peuvent être affectées qu’à des instances dont la rubrique de la tâche est activée. Désactivez la rubrique com/adobe/granite/workflow/offloading *sur le maître et activez-la sur le programme de travail afin de garantir que la tâche est affectée à ce dernier.*
+Le gestionnaire des tâches distribue les nouvelles tâches aux instances de programme de travail. Lors de la conception du mécanisme de distribution, il est important de prendre en compte l’activation de rubrique. Les tâches ne peuvent être affectées qu’à des instances dont la rubrique de la tâche est activée. Disable the topic `com/adobe/granite/workflow/offloading` on the primary, and enable it on the worker to ensure that the job is assigned to the worker.
 
 ### Déchargement AEM {#aem-offloading}
 
@@ -96,7 +96,7 @@ Pour plus d’informations sur la configuration d’une banque de données, voir
 
 ### Désactivation de la gestion automatique des agents {#turning-off-automatic-agent-management}
 
-Adobe recommande de désactiver la gestion automatique des agents car elle ne prend pas en charge la réplication sans fichier binaire et peut entraîner une confusion lors de la configuration d’une nouvelle topologie de déchargement. En outre, il ne prend pas automatiquement en charge le flux de réplication avancé requis par la réplication binaire.
+Adobe recommande de désactiver la gestion automatique des agents car elle ne prend pas en charge la réplication sans fichier binaire et peut entraîner une confusion lors de la configuration d’une nouvelle topologie de déchargement. En outre, il ne prend pas automatiquement en charge le flux de réplication avancé requis par la réplication sans binaire.
 
 1. Open Configuration Manager from the URL `http://localhost:4502/system/console/configMgr`.
 1. Ouvrez la configuration pour `OffloadingAgentManager` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager`).
@@ -104,16 +104,19 @@ Adobe recommande de désactiver la gestion automatique des agents car elle ne pr
 
 ### Utilisation de la réplication vers l’avant {#using-forward-replication}
 
-Par défaut, le transport du déchargement utilise la réplication inverse pour transférer les ressources déchargées du programme de travail vers le maître. Les agents de réplication inverse ne prennent pas en charge la réplication sans fichier binaire. Vous devez configurer le déchargement afin d’utiliser la réplication vers l’avant pour transférer les ressources déchargées du programme de travail vers le maître.
+Par défaut, le déchargement du transport utilise la réplication inverse pour retirer les actifs déchargés du programme de travail vers le principal. Les agents de réplication inverse ne prennent pas en charge la réplication sans fichier binaire. Vous devez configurer le déchargement pour utiliser la réplication différée afin de repousser les ressources déchargées du programme de travail vers le principal.
 
-1. If you are migrating from the default configuration using reverse replication, disable or delete all agents named &quot; `offloading_outbox`&quot; and &quot; `offloading_reverse_*`&quot; on master and worker, where &amp;ast; represents the Sling id of the target instance.
-1. Sur chaque programme de travail, créez le nouvel agent de réplication vers l’avant pointant vers le maître. La procédure est identique à la création d’agents vers l’avant du maître vers le programme de travail. See [Creating Replication Agents For Offloading](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) for instructions around setting up offloading replication agents.
+1. If you are migrating from the default configuration using reverse replication, disable or delete all agents named &quot; `offloading_outbox`&quot; and &quot; `offloading_reverse_*`&quot; on primary and worker, where &amp;ast; represents the Sling id of the target instance.
+1. Sur chaque programme de travail, créez un agent de réplication avancé pointant vers le principal. La procédure est la même que la création d&#39;agents de transfert du primaire au travailleur. See [Creating Replication Agents For Offloading](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) for instructions around setting up offloading replication agents.
 1. Ouvrez la configuration pour `OffloadingDefaultTransporter` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`).
 1. Change value of the property `default.transport.agent-to-master.prefix` from `offloading_reverse` to `offloading`.
 
+<!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
+-->
+
 ### Utilisation d’une banque de données partagée et d’une réplication sans fichier binaire entre l’auteur et les programmes de travail  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
-Il est recommandé d’utiliser la réplication sans fichier binaire afin de réduire la surcharge de transport pour le déchargement des ressources. Pour savoir comment configurer la réplication sans fichier binaire pour une banque de données partagée, voir [Configuration des magasins de nœuds et des banques de données dans AEM](/help/sites-deploying/data-store-config.md). La procédure n’est pas différente pour le déchargement des ressources, mais elle implique d’autres agents de réplication. Dans la mesure où la réplication sans binaire fonctionne uniquement avec les agents de réplication avancés, vous devez également utiliser la réplication avancée pour tous les agents de déchargement.
+Il est recommandé d’utiliser la réplication binaire pour réduire les frais de transport liés au déchargement des ressources. Pour savoir comment configurer la réplication sans fichier binaire pour une banque de données partagée, voir [Configuration des magasins de nœuds et des banques de données dans AEM](/help/sites-deploying/data-store-config.md). La procédure n’est pas différente pour le déchargement des ressources, mais elle implique d’autres agents de réplication. Dans la mesure où la réplication sans binaire fonctionne uniquement avec les agents de réplication avancés, vous devez également utiliser la réplication avancée pour tous les agents de déchargement.
 
 ### Désactivation des modules de transport {#turning-off-transport-packages}
 
@@ -132,20 +135,20 @@ Pour désactiver le transport du modèle de workflow, modifiez le workflow Déch
 
 1. Open the workflow console from [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 1. Ouvrez l’onglet Modèles.
-1. Ouvrez le modèle de flux de travaux de déchargement de ressource de mise à jour de gestion des actifs numériques.
+1. Ouvrez le modèle de flux de travail DAM Update Asset Offloading.
 1. Ouvrez les propriétés d’étape pour l’étape de déchargement du flux de travail DAM.
 1. Ouvrez l’onglet Arguments, puis désélectionnez les options Ajouter le modèle à l’entrée et Ajouter le modèle à la sortie.
 1. Enregistrez les modifications apportées au modèle.
 
 ### Optimisation de la fréquence d’interrogation {#optimizing-the-polling-interval}
 
-Le déchargement des workflow est mis en œuvre à l’aide d’un workflow externe sur le maître, qui interroge l’achèvement du workflow déchargé sur le programme de travail. La fréquence d’interrogation par défaut pour les workflow externes est de cinq secondes. Adobe recommande d’augmenter la fréquence d’interrogation de l’étape de déchargement des ressources à au moins 15 secondes afin de réduire la surcharge de déchargement sur le maître.
+Le déchargement du flux de travail est implémenté à l’aide d’un flux de travail externe sur le serveur principal, qui interroge la fin du flux de travail déchargé sur le programme de travail. La fréquence d’interrogation par défaut pour les workflow externes est de cinq secondes. Adobe vous recommande d’augmenter l’intervalle d’interrogation de l’étape de déchargement Ressources à au moins 15 secondes afin de réduire la surcharge de déchargement sur le serveur principal.
 
 1. Open the workflow console from [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 
 1. Ouvrez l’onglet Modèles.
-1. Ouvrez le modèle de flux de travaux de déchargement de ressource de mise à jour de gestion des actifs numériques.
-1. Ouvrez les propriétés d’étape pour l’étape de déchargement du flux de travail DAM.
+1. Ouvrez le modèle de flux de travail DAM Update Asset Offloading.
+1. Ouvrez les propriétés de l’étape pour l’étape de déchargement du flux de travail DAM.
 1. Ouvrez l’onglet Commons et ajustez la valeur de la propriété Period.
 1. Enregistrez les modifications apportées au modèle.
 
