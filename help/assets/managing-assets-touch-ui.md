@@ -4,10 +4,10 @@ description: Découvrez les différentes tâches de gestion et de modification d
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
 workflow-type: tm+mt
-source-wordcount: '9813'
-ht-degree: 67%
+source-wordcount: '9812'
+ht-degree: 68%
 
 ---
 
@@ -59,6 +59,7 @@ Avant de télécharger un fichier, assurez-vous qu’il est dans un format [](as
 
    * Appuyez sur l’icône **[!UICONTROL Créer]** de la barre d’outils. Ensuite, dans le menu, appuyez sur **[!UICONTROL Fichiers]**. Au besoin, vous pouvez renommer le fichier dans la boîte de dialogue affichée.
    * Dans un navigateur prenant en charge HTML5, faites glisser les ressources directement sur l’interface. La boîte de dialogue permettant de renommer les fichiers n’est pas affichée.
+
    ![create_menu](assets/create_menu.png)
 
    Pour sélectionner plusieurs fichiers, appuyez sur la touche Ctrl/Commande et sélectionnez les ressources dans la boîte de dialogue de sélecteur de fichiers. Sur un iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
@@ -116,6 +117,7 @@ Avant de télécharger un fichier, assurez-vous qu’il est dans un format [](as
    Toutefois, la liste de caractères suivante, séparée par des espaces, n’est pas prise en charge :
    * Le nom du fichier de ressource ne doit pas contenir  `* / : [ \ \ ] | # % { } ? &`
    * Le nom du dossier de ressources ne doit pas contenir  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+
    In addition, the Assets interface displays the most recent asset that you upload or the folder you create first in all the views (**[!UICONTROL Card view]**, **[!UICONTROL List view]**, and **[!UICONTROL Column view]**).
 
    Souvent, lors du transfert simultané de fichiers volumineux ou de plusieurs fichiers, les indicateurs visuels vous permettent d’évaluer la progression. The **[!UICONTROL Upload Progress]** dialog box displays the count of successfully uploaded files and the files that failed to upload.
@@ -142,7 +144,7 @@ Contenu multimédia dynamique permet le téléchargement par lots de fichiers pa
 
 >[!NOTE]
 >
->Pour télécharger des fichiers par FTP dans Contenu multimédia dynamique - Mode Scene7 : installez Feature Pack (FP) 18912 sur l’auteur d’AEM. Contactez le service à la clientèle d’Adobe pour accéder au FP-18912 et terminer la configuration de votre compte FTP. Voir la section [Installation du pack de fonctionnalités 18912 pour la migration des ressources en bloc](/help/assets/bulk-ingest-migrate.md).
+>Pour télécharger des fichiers par FTP dans Contenu multimédia dynamique - Mode Scene7 : installez Feature Pack (FP) 18912 sur l’auteur d’AEM. Contactez le service à la clientèle Adobe pour accéder au FP-18912 et terminer la configuration de votre compte FTP. Voir la section [Installation du pack de fonctionnalités 18912 pour la migration des ressources en bloc](/help/assets/bulk-ingest-migrate.md).
 Si vous utilisez le protocole FTP pour télécharger des ressources, les paramètres de téléchargement spécifiés dans AEM sont ignorés. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
 
 **Pour télécharger des ressources via FTP, procédez comme suit :**
@@ -192,7 +194,7 @@ Si vous utilisez le protocole FTP pour télécharger des ressources, les paramè
 
 When uploading image files, including AI, EPS, and PSD files, you can take the following editing actions in the **[!UICONTROL Upload Job Options]** dialog box:
 
-* Rogner l’espace blanc du contour des images (voir la description dans le tableau ci-dessus).
+* Recadrer l’espace blanc à partir du bord des images (voir la description dans le tableau ci-dessus).
 * Recadrer manuellement des images par leurs côtés (voir la description dans le tableau ci-dessus).
 * Choisir un profil colorimétrique (voir la description de l’option dans le tableau ci-dessus).
 * Créer un masque à partir d’un chemin de tracé.
@@ -379,6 +381,7 @@ To create tags, you require write permission for `/content/cq:tags/default` in t
    * Le nombre de fois que la ressource a été visualisée ou téléchargée..
    * Les canaux/périphériques via lesquels la ressource a été utilisée.
    * Des solutions de création où la ressource a été récemment utilisée.
+
    Pour plus d’informations, reportez-vous à la section [Informations sur les ressources](touch-ui-asset-insights.md).
 
 1. Appuyez sur **[!UICONTROL Save &amp; Close]** (Enregistrer et fermer). 
@@ -432,6 +435,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    * Spécifiez le nom de la ressource après l’avoir déplacée. Then tap **[!UICONTROL Next]** to proceed.
    * Tap **[!UICONTROL Cancel]** to stop the process.
+
    >[!NOTE]
    >
    >Vous pouvez attribuer le même nom à la ressource si aucune autre ressource portant ce nom n’existe dans le nouvel emplacement. Cependant, vous devez utiliser un nouveau nom si vous déplacez la ressource vers un emplacement dans lequel une ressource portant le même nom existe. Si vous utilisez le même nom, le système génère automatiquement une variante du nom. Par exemple, si votre ressource porte le nom Carré, le système génère le nom Carré1 pour sa copie.
@@ -456,6 +460,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
    * From the **[!UICONTROL Adjust]** column, select or deselect references to the assets.
    * Tap **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** page.
    * Tap **[!UICONTROL Cancel]** to stop the move operation.
+
    Si vous ne mettez pas à jour les références, elles continuent à pointer vers le chemin précédent de la ressource. Si vous adaptez les références, elles sont mises à jour avec le nouveau chemin de la ressource.
 
 ## Gestion des rendus {#managing-renditions}
@@ -482,7 +487,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    **Suppression d’un rendu**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap the **[!UICONTROL Delete Rendition]** icon from the [toolbar](/help/sites-authoring/basic-handling.md). Les rendus ne peuvent pas être supprimés en bloc une fois le traitement des ressources terminé. Pour les fichiers individuels, vous pouvez supprimer des rendus manuellement de l’interface utilisateur. Pour plusieurs ressources, vous pouvez personnaliser Experience Manager pour supprimer des rendus spécifiques ou supprimer les ressources et télécharger à nouveau les ressources supprimées.
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap the **[!UICONTROL Delete Rendition]** icon from the [toolbar](/help/sites-authoring/basic-handling.md). Une fois le traitement des ressources terminé, il est impossible de supprimer les rendus en masse. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Pour plusieurs ressources, vous pouvez personnaliser Experience Manager pour supprimer des rendus spécifiques ou supprimer les ressources et télécharger à nouveau les ressources supprimées.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
@@ -535,6 +540,7 @@ Pour pouvoir supprimer une ressource, vous devez disposer des autorisations appr
 
       * Si la ressource ne comporte aucune référence, elle est supprimée.
       * If the asset has references, an error-message informs you that **[!UICONTROL One or more assets are referenced]**. You can select **[!UICONTROL Force Delete]** or **[!UICONTROL Cancel]**.
+
    >[!NOTE]
    >
    >Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource.
@@ -667,6 +673,7 @@ Vous pouvez également ajouter des zones cliquables à l’aide de l’éditeur 
    * Select the asset and then click the **[!UICONTROL Edit]** icon in the toolbar.
    * Appuyez sur l’option **[!UICONTROL Modifier]** qui s’affiche sur un fichier dans la vue de carte.
    * In the asset page, tap the **[!UICONTROL Edit]** icon in the toolbar.
+
    ![edit_icon](assets/edit_icon.png)
 
 1. Pour recadrer l’image, appuyez sur **[!UICONTROL Recadrer]**.
@@ -719,7 +726,7 @@ Dans la [console Collections](managing-collections-touch-ui.md#navigating-the-co
 
 ## Ajouter des annotations {#annotating}
 
-Les annotations sont des commentaires ou des notes d’explication ajoutées aux images ou vidéos. Les annotations offrent aux spécialistes marketins la possibilité de collaborer et de laisser des commentaires sur des ressources.
+Les annotations sont des commentaires ou des notes d’explication ajoutées aux images ou vidéos. Les annotations offrent aux spécialistes marketing la possibilité de collaborer et de laisser des commentaires sur des ressources.
 
 Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Les formats vidéo pris en charge par AEM Assets dépendent du navigateur.
 
@@ -738,6 +745,7 @@ Vous pouvez également ajouter des annotations à une collection. Cependant, si 
 
    * [Actions rapides](managing-assets-touch-ui.md#quick-actions)
    * Dans la barre d’outils, après avoir sélectionné la ressource  ou avoir accédé à la page de la ressource
+
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
