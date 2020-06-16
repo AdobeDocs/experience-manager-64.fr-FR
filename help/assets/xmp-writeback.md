@@ -3,10 +3,10 @@ title: Écriture différée XMP sur les rendus
 description: Découvrez comment la fonctionnalité d’écriture différée XMP propage les modifications apportées aux métadonnées d’une ressource à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: b7180dcc7b50dca1c101a3fd28e031ef8e08f37f
 workflow-type: tm+mt
 source-wordcount: '794'
-ht-degree: 48%
+ht-degree: 46%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 48%
 
 La fonction Écriture différée XMP d’Adobe Experience Manager (AEM) Assets réplique les modifications des métadonnées de la ressource sur les rendus de la ressource.
 
-Lorsque vous modifiez les métadonnées d’un fichier depuis AEM Assets ou lors du téléchargement de l’actif, les modifications sont initialement stockées dans le noeud de l’actif dans Crx-De.
+Lorsque vous modifiez les métadonnées d’un fichier depuis le AEM Assets ou lors du téléchargement du fichier, les modifications sont initialement stockées dans le noeud de fichier dans Crx-De.
 
 La fonction d’enregistrement XMP propage les modifications de métadonnées à tous les rendus ou à des rendus spécifiques de la ressource.
 
@@ -47,7 +47,7 @@ Pour laisser la fonction Écriture différée XMP propager les modifications de
 
 Pour que la fonction Écriture différée XMP propage les métadonnées aux miniatures de rendu 140.100.png et 319.319.png, procédez comme suit :
 
-1. Dans Experience Manager, accédez à **[!UICONTROL Outils > Processus > Modèles]**.
+1. Dans le Experience Manager, accédez à **[!UICONTROL Outils > Processus > Modèles]**.
 1. From the [!UICONTROL Models] page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
 1. Sur la page de propriétés **[!UICONTROL Écriture différée des métadonnées de gestion des actifs numériques]**, ouvrez l’étape **[!UICONTROL Processus d’écriture différée XMP]**.
 1. Dans la boîte de dialogue **[!UICONTROL Propriétés des étapes]**, appuyez/cliquez sur l’onglet **[!UICONTROL Processus]**.
@@ -56,7 +56,7 @@ Pour que la fonction Écriture différée XMP propage les métadonnées aux min
    ![step_properties](assets/step_properties.png)
 
 1. To regenerate the pyramid TIFF renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata Writeback workflow.
-Les rendus PTIFF ne sont créés et stockés que localement en mode hybride Contenu multimédia dynamique. Enregistrez le workflow.
+Les rendus PTIFF sont uniquement créés et stockés localement en mode Dynamic Media hybride. Enregistrez le workflow.
 
 The metadata changes are propagated to the renditions `thumbnail.140.100.png` and `thumbnail.319.319.png` of the asset, and not the others.
 
@@ -68,11 +68,11 @@ The metadata changes are propagated to the renditions `thumbnail.140.100.png` an
 
 ## Filtrage des métadonnées XMP {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] prend en charge à la fois les listes bloquées et le filtrage de liste autorisé des propriétés/noeuds pour les métadonnées XMP lues à partir de fichiers binaires et stockées dans le JCR lorsque des fichiers sont ingérés.
+[!DNL Experience Manager Assets] prend en charge à la fois le filtrage de liste bloquée et de liste autorisée des propriétés/noeuds pour les métadonnées XMP lues à partir de fichiers binaires et stockées dans le JCR lorsque des fichiers sont ingérés.
 
-Le filtrage à l’aide d’une liste bloquée permet d’importer toutes les propriétés de métadonnées XMP, à l’exception des propriétés spécifiées pour l’exclusion. Cependant, pour les types de ressources tels que les fichiers INDD comportant un très grand nombre de métadonnées XMP (par exemple 1 000 nœuds avec 10 000 propriétés), les noms des nœuds à filtrer ne sont pas toujours connus à l’avance. Si le filtrage à l’aide d’une liste bloquée permet l’importation d’un grand nombre de fichiers avec de nombreuses métadonnées XMP, l’instance ou la grappe AEM peut rencontrer des problèmes de stabilité, par exemple des files d’attente d’observation bloquées.
+Le filtrage à l’aide d’une liste bloquée vous permet d’importer toutes les propriétés de métadonnées XMP, à l’exception des propriétés spécifiées pour l’exclusion. Cependant, pour les types de ressources tels que les fichiers INDD comportant un très grand nombre de métadonnées XMP (par exemple 1 000 nœuds avec 10 000 propriétés), les noms des nœuds à filtrer ne sont pas toujours connus à l’avance. Si le filtrage à l’aide d’une liste bloquée permet l’importation d’un grand nombre de fichiers avec de nombreuses métadonnées XMP, l’instance ou la grappe AEM peut rencontrer des problèmes de stabilité, par exemple des files d’attente d’observation bloquées.
 
-Le filtrage des métadonnées XMP via la liste autorisée résout ce problème en vous permettant de définir les propriétés XMP à importer. Ainsi, toute autre propriété XMP ou inconnue est ignorée. Pour une compatibilité ascendante, vous pouvez ajouter certaines de ces propriétés au filtre qui utilise une liste bloquée.
+Le filtrage des métadonnées XMP par liste autorisée résout ce problème en vous permettant de définir les propriétés XMP à importer. Ainsi, toute autre propriété XMP ou inconnue est ignorée. Pour une compatibilité ascendante, vous pouvez ajouter certaines de ces propriétés au filtre qui utilise une liste bloquée.
 
 <!-- TBD: The instructions don't seem to match the UI. I see com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.description
 in Config Manager. And the settings are,
@@ -90,12 +90,12 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 1. Ouvrez Configuration Manager à partir de `https://[aem_server]:[port]/system/console/configMgr`.
 1. Ouvrez la configuration **[!UICONTROL Filtre XMP de gestion des actifs numériques Adobe CQ]**.
-1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
+1. To apply filtering via an allowed list, select **[!UICONTROL Apply Allowlist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Allowed XML Names for XMP filtering]** box.
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. To filter out blocked XMP properties after applying filtering via allowed list, specify those in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box. Enregistrez les modifications.
+1. Pour filtrer les propriétés XMP bloquées après l’application du filtrage par liste autorisée, spécifiez celles qui se trouvent dans la zone Noms XML **[!UICONTROL bloqués pour le filtrage]** XMP. Enregistrez les modifications.
 
    >[!NOTE]
    >
-   >L’option **[!UICONTROL Appliquer la liste noire aux propriétés XMP]** est sélectionnée par défaut. En d’autres termes, le filtrage à l’aide d’une liste bloquée est activé par défaut. To disable such filtering, deselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
+   >The **[!UICONTROL Apply Blocklist to XMP Properties]** option is selected by default. En d’autres termes, le filtrage à l’aide d’une liste bloquée est activé par défaut. To disable such filtering, deselect the **[!UICONTROL Apply Blocklist to XMP Properties]** option.
