@@ -2,7 +2,7 @@
 title: Balise décorative
 description: Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés.
 translation-type: tm+mt
-source-git-commit: 440a514fa1b0b5d685fe7717caf40400e5288e02
+source-git-commit: 7b5cae8aea49b3fd4200bd902d07e1c0fe1090ce
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 73%
@@ -10,7 +10,7 @@ ht-degree: 73%
 ---
 
 
-# Balise décorative{#decoration-tag}
+# Balise décorative {#decoration-tag}
 
 Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Il s&#39;agit principalement de deux objectifs :
 
@@ -38,9 +38,7 @@ Ces quelques recommandations générales vous indiquent à quel moment inclure l
 Les propriétés et nœuds suivants peuvent être appliqués aux composants pour contrôler le comportement de leur balise décorative :
 
 * **`cq:noDecoration {boolean}`:**Cette propriété peut être ajoutée à un composant et une valeur réelle force AEM à ne générer aucun élément wrapper sur le composant.
-
 * **`cq:htmlTag`Nœud  : :**ce nœud peut être ajouté sous un composant et contenir les propriétés suivantes :
-
    * **`cq:tagName {String}`:**Vous pouvez l’utiliser pour spécifier une balise HTML personnalisée à utiliser pour envelopper les composants au lieu de l’élément DIV par défaut.
    * **`class {String}`:**Vous pouvez l’utiliser pour spécifier les noms de classe css à ajouter à l’enveloppe.
    * D’autres noms de propriété seront ajoutés comme attributs HTML avec la même valeur String que celle fournie.
