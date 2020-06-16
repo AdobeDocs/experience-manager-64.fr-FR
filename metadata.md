@@ -11,7 +11,10 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-64.en
 index: y
 translation-type: tm+mt
-source-git-commit: 9b01573286810356a93d7bc632363624523cd48c
+source-git-commit: a58558fe18743e1aee0d65da7a2140561bc97e98
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 70%
 
 ---
 
@@ -22,17 +25,17 @@ Le fichier metadata.md comprend des métadonnées de niveau référentiel qui tr
 
 | metadata | effets |
 |--- |--- |
-| solution-title | Utilisé dans l’en-tête de l’article en tant que lien. |
-| solution-hub-url | Ouvre la page hub helpx. |
-| solution-icon | Affiche l’icône de solution en regard du titre de la solution. Pas encore implémenté |
-| getting-started-url | Lien vers la page de démarrage helpx. |
-| tutorials-url | Lien vers les tutoriels vidéo : tutoriels helpx ou KT. |
-| mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail droit. La valeur par défaut est 2. |
-| git-repo | Spécifie l’emplacement du référentiel principal pour une utilisation interne. |
+| solution-title | Utilisé dans l’en-tête de l’article en tant que lien.. |
+| solution-hub-url | Ouvre la page hub Formation et support. |
+| solution-icon | Affiche l’icône de solution en regard du titre de la solution. Pas encore implémenté. |
+| getting-started-url | Lien vers la page de prise en main. |
+| tutorials-url | Lien vers les didacticiels vidéo. |
+| mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail droit. La valeur par défaut est 2.   |
+| git-repo | Spécifie l&#39;emplacement du repo principal pour une utilisation interne. |
 
 Dans le fichier TOC.md
 
 | metadata | effets |
 |--- |--- |
-| guide-utilisateur-titre | Utilisé dans l’en-tête de l’article en tant que lien. |
-| user-guide-url | Ouvre la page hub helpx. |
+| guide-utilisateur-titre | Utilisé dans l’en-tête de l’article comme lien. |
+| user-guide-url | Ouvre la page hub Formation et support. |
