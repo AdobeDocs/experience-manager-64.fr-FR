@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: 801941c060e1a912f3969bca1e89962241e7fbe0
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 79%
+source-wordcount: '820'
+ht-degree: 81%
 
 ---
 
@@ -30,9 +30,9 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
 ### Configurer le service d&#39;authentification Apache Sling {#configure-apache-sling-authentication-service}
 
-1. Accédez à https://[*server*]:[*port*]/system/console/configMgr sur AEM Forms s’exécutant sur OSGi ou
+1. Accéder à `https://[server]:[port]/system/console/configMgr` un AEM Forms s’exécutant sur OSGi ou
 
-   https://[*serveur*]:[*port*]/lc/system/console/configMgr sur AEM Forms exécuté sur JEE.
+   `https://[server]:[port]/lc/system/console/configMgr` sur les AEM Forms exécutant JEE.
 
 1. Localisez et cliquez sur la boîte de configuration **Service d’authentification Apache Sling** pour l’ouvrir en mode d’édition.
 
@@ -46,7 +46,6 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
-
    >[!NOTE]
    >
    >N’effectuez pas de copier-coller de la valeur spécifiée dans le champ des conditions d’authentification requises, car ceci risquerait d’endommager les caractères spéciaux dans la valeur. Saisissez plutôt la valeur spécifiée dans le champ.
@@ -60,8 +59,8 @@ Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé 
 
 1. Connectez-vous à la console Web AEM en tant qu’administrateur. 
 
-   * URL for AEM Forms on OSGi is https://[server]:[port]/system/console/configMgr
-   * URL for AEM Forms on JEE is https://[*server*]:[*port*]/lc/system/console/configMgr
+   * L’URL des AEM Forms sur OSGi est `https://[server]:[port]/system/console/configMgr`
+   * L’URL de AEM Forms on JEE est `https://[server]:[port]/lc/system/console/configMgr`
 
 1. Ouvrez les **[!UICONTROL configurations de Mobile Forms]** à des fins d’édition.
 1. Désélectionnez l’option **[!UICONTROL Mode Protégé]** et cliquez sur **[!UICONTROL Enregistrer]**.
@@ -81,7 +80,6 @@ Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé 
 
       * `/aem/forms` (AEM Forms on OSGi)
       * `/lc/forms` (AEM  Forms on JEE)
-
    **Remarque :***assurez-vous que le serveur AEM Forms est en cours d’exécution. The HTML preview connects to the CRX server to* generate *a preview.*
 
    ![Options d’AEM Forms Designer ](assets/server_options.png)
