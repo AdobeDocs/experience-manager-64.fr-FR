@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: 280c2b3cc8026988472d4ad0cf6649fa8a7c9c38
+workflow-type: tm+mt
+source-wordcount: '509'
+ht-degree: 88%
 
 ---
 
@@ -43,9 +46,9 @@ Tous les accès aux objets de données sont arbitrés par le référentiel et do
 
 ## 5. Cross-Site Request Forgery (CSRF) {#cross-site-request-forgery-csrf}
 
-Le format CSRF (Cross-Site Request Forgery) est atténué en injectant automatiquement un jeton cryptographique dans tous les formulaires et les requêtes AJAX et en vérifiant ce jeton sur le serveur pour chaque POST.
+La fonctionnalité CSRF (Cross-Site Request Forgery) est atténuée en injectant automatiquement un jeton cryptographique dans tous les formulaires et requêtes AJAX et en vérifiant ce jeton sur le serveur pour chaque POST.
 
-En outre, AEM est fourni avec un filtre référent-en-tête, qui peut être configuré pour autoriser uniquement les requêtes POST d’hôtes spécifiquement mis sur liste blanche.
+In addition, AEM ships with a referrer-header based filter, which can be configured to *only* allow POST requests from specific hosts (defined in a list).
 
 ## 6. Configuration incorrecte de la sécurité {#security-misconfiguration}
 
