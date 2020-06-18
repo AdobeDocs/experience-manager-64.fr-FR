@@ -1,21 +1,24 @@
 ---
-title: Guide de l’utilisateur des fonctionnalités AEM 6.4
-seo-title: Guide de l’utilisateur des fonctionnalités AEM 6.4
+title: Guide de l’utilisateur des fonctionnalités d’AEM 6.4
+seo-title: Guide de l’utilisateur des fonctionnalités d’AEM 6.4
 description: Présentation des fonctionnalités essentielles d’AEM 6.4
 seo-description: Présentation des fonctionnalités essentielles d’AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 translation-type: tm+mt
-source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
+source-git-commit: 8aab981849152e6826dd4d0d68867790a85f373a
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 15%
 
 ---
 
 
-# Guides de l’utilisateur des fonctionnalités AEM 6.4 {#aem-64-capabilities-user-guides}
+# Guides de l’utilisateur des fonctionnalités d’AEM 6.4 {#aem-64-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4](/help/sites-deploying/home.md), y compris notre déploiement en cloud Adobe Managed Services.
+[En savoir plus sur l’installation, le déploiement et l’architecture de l’Adobe Experience Manager 6.4](/help/sites-deploying/home.md), y compris sur le déploiement en cloud d’Adobes Managed Services.
 
 [Découvrez comment gérer un projet](/help/managing/home.md)AEM.
 
@@ -25,7 +28,7 @@ source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
 
 [Découvrez comment administrer AEM](/help/sites-administering/home.md).
 
-## AEM Assets {#aem-assets}
+## AEM Assets {#aem-assets}
 
 [Créez, gérez, diffusez et optimisez des ressources numériques.](/help/assets/home.md)
 
@@ -35,7 +38,7 @@ source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
 
 ## AEM Screens {#aem-screens}
 
-[Découvrez la solution d’affichage numérique pour publier des expériences dynamiques et interactives.](/help/screens/home.md)
+[Découvrez la solution d’affichage numérique pour publier des expériences dynamiques et interactives.](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
