@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
+source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+workflow-type: tm+mt
+source-wordcount: '2746'
+ht-degree: 86%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
  <tbody>
   <tr>
    <th>Produit</th> 
-   <td>Adobe Experience Manager  <br /> </td> 
+   <td>Adobe Experience Manager <br /> </td> 
   </tr>
   <tr>
    <th>Version</th> 
@@ -39,7 +42,7 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
   </tr>
   <tr>
    <th>Mises à jour recommandées</th> 
-   <td>See <a href="https://helpx.adobe.com/experience-manager/aem-releases-updates.html">AEM releases and updates</a></td> 
+   <td>See <a href="https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html">AEM releases and updates</a></td> 
   </tr>
  </tbody>
 </table>
@@ -52,13 +55,13 @@ Adobe Experience Manager 6.4 est disponible depuis le 4 avril 2018.
 
 >[!NOTE]
 >
->Adobe recommande d’installer le dernier Service Pack, car tous les nouveaux Feature Packs sont livrés uniquement par le biais de Service Packs [](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)Service Packs.
+>Adobe recommande d’installer le dernier Service Pack, car tous les nouveaux Feature Packs sont livrés uniquement par le biais de [Service Packs](https://helpx.adobe.com/fr/experience-manager/maintenance-releases-roadmap.html).
 
 ## Nouveautés {#what-s-new}
 
 Adobe Experience Manager 6.4 est une mise à niveau de la base de code d’Adobe Experience Manager 6.3. Cette version comporte de nouvelles fonctionnalités améliorées, des correctifs clés de bogues signalés par des clients, des améliorations prioritaires demandées par les clients et des correctifs de bogues généraux destinés à améliorer la stabilité du produit. Elle comprend également la majorité des packs de fonctionnalités, correctifs et Service Pack d’Adobe Experience Manager 6.3.
 
-La liste ci-dessous donne un aperçu, tandis que les pages suivantes donnent une liste complète des détails.
+La liste ci-dessous fournit un aperçu, tandis que les pages suivantes liste tous les détails.
 
 ### Experience Manager Foundation {#experience-manager-foundation}
 
@@ -120,7 +123,7 @@ Pour plus d’informations, voir la [page de documentation](/help/sites-deployin
 
 * [Compatibilité descendante](/help/sites-deploying/backward-compatibility.md) : grâce aux fonctions de la version 6.4 compatibles avec les versions antérieures, votre code personnalisé reste compatible dans la plupart des cas, et les efforts de mise à niveau sont réduits.
 * [Évaluation de la complexité de la mise à niveau](/help/sites-deploying/pattern-detector.md) : le nouvel outil de détection des motifs évalue la complexité de vos mises à niveau avant que vous ne les effectuiez.
-* [Restructuration](/help/sites-deploying/repository-restructuring.md)du référentiel : restructuration importante (principalement /etc.) pour faciliter les mises à niveau et promouvoir les meilleures pratiques d&#39;implémentation
+* [Restructuration](/help/sites-deploying/repository-restructuring.md)du référentiel : restructuration importante (principalement /etc.) pour faciliter les mises à niveau et promouvoir les meilleures pratiques de mise en oeuvre
 * Pour des informations plus générales sur les mises à niveau, voir [cette page](/help/sites-deploying/upgrade.md).
 
 ### Experience Manager Sites {#experience-manager-sites}
@@ -137,13 +140,13 @@ Les nouveautés de la version 6.4 incluent un éditeur de [modèle de contenu](
 
 **Fragments d’expérience**
 
-La création de variations au sein d’un fragment avec le même contenu, mais une disposition différente, est maintenant plus efficace, grâce à la fonctionnalité de blocs de création. Outre l’envoi de fragments d’expérience vers Facebook et Pinterest, il est désormais possible de les envoyer sous forme d’offre à Adobe Target.
+La création de variations au sein d’un fragment avec le même contenu, mais une disposition différente, est maintenant plus efficace, grâce à la fonctionnalité de blocs de création. En plus d’envoyer des fragments d’expérience à Facebook et à Pinterest, il est maintenant possible de les envoyer à l’Adobe Target en tant qu’offre.
 
 **Content Services**
 
-Diverses améliorations ont été apportées à Sling Model Exporter et aux composants principaux afin de fournir une sortie JSON robuste pour incorporer du contenu dans les applications mobiles et les expériences créées avec des applications d’une seule page.
+Diverses améliorations ont été apportées à Sling Model Exporter et aux composants principaux afin de fournir une sortie JSON robuste pour incorporer du contenu dans les applications mobiles et les expériences créées à l’aide d’applications d’une seule page.
 
-#### Obtention plus rapide des sites {#gettings-sites-built-quicker}
+#### Obtention de sites plus rapidement {#gettings-sites-built-quicker}
 
 AEM 6.4 complète la transformation vers le modèle de composant de nouvelle génération. Le concept de composants de base introduit dans AEM 6.3, et maintenant accompagné du système de style, fournit une manière efficace pour créer des sites et étendre des sites existants.
 
@@ -151,9 +154,9 @@ Tutoriel recommandé pour tirer le meilleur parti du nouveau modèle de composan
 
 #### Module complémentaire Screens {#screens-add-on}
 
-La diffusion d’un message cohérent sur tous les canaux marketing, y compris les réseaux Digital Signage et de kiosques, est l’acronyme d’AEM Screens. AEM 6.4 ajoute la prise en charge de l’exécution du lecteur de contenu dynamique sur le matériel reposant sur Microsoft Windows et Google Chrome OS. De plus, la gestion des périphériques à distance et les planifications (groupes de canaux) ont été améliorées.
+Diffuser un message cohérent sur tous les canaux marketing, y compris les réseaux Digital Signage et de kiosques, est ce que les AEM Screens veulent dire. AEM 6.4 ajoute la prise en charge de l’exécution du lecteur de contenu dynamique sur le matériel reposant sur Microsoft Windows et Google Chrome OS. De plus, la gestion des périphériques à distance et les planifications (groupes de canaux) ont été améliorées.
 
-For more information on the Screens updates, see [AEM Screens User Guide](/help/screens/home.md).
+For more information on the Screens updates, see [AEM Screens User Guide](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 ### Experience Manager Communities {#experience-manager-communities}
 
@@ -181,7 +184,7 @@ AEM 6.4 Communities expose les [API prêtes à l’emploi](/help/communities/u
 
 #### Amélioration de la gestion des sites et des groupes {#enhancements-to-site-and-group-management}
 
-**Création de groupes multirégionaux en une seule étape**
+**Créer des groupes à plusieurs paramètres régionaux en une seule étape**
 
 Il est maintenant possible de créer des groupes multilingues en une seule opération. Pour créer de tels groupes, les utilisateurs peuvent accéder à la collection de groupe des communautés désirées à partir de la console Sites. Créez un groupe et spécifiez les langues souhaitées sur la page Modèle de groupe de communautés. Pour plus d’informations sur cette fonctionnalité, voir [Console Groupes communautaires](/help/communities/groups.md).
 
@@ -195,13 +198,13 @@ L’icône Supprimer est maintenant disponible sur les sites et les groupes resp
 
 Les fonctions d’affectation et de catalogue sont désormais disponibles au sein des groupes. Elles permettent de créer, gérer et publier du contenu pédagogique pour un ensemble spécifique de membres de communauté ciblés. Pour plus d’informations sur l’activation des groupes de communautés, voir [Gestion des ressources d’activation](/help/communities/resource.md).
 
-![assignmentcatalog](assets/assignmentcatalog.png)
+![catalogue d’affectations](assets/assignmentcatalog.png)
 
 ### Experience Manager Assets {#experience-manager-assets}
 
 AEM 6.4 apporte plusieurs nouvelles fonctions et améliorations d’Assets, notamment l’intégration améliorée de Creative Cloud, des innovations importantes d’intelligence artificielle, la gestion perfectionnée des métadonnées, ainsi que des améliorations dans la création de rapports et l’expérience utilisateur générale. La liste complète des modifications est disponible dans [AEM Assets](assets.md). Les principales fonctionnalités de cette version sont les suivantes :
 
-**Adobe Asset Link**
+**Adobe Asset Link**
 
 Adobe Asset Link dans Creative Cloud abonnement Entreprise simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le cadre du processus de création de contenu. Il s’agit d’une nouvelle fonctionnalité native de Creative Cloud abonnement Entreprise qui relie Photoshop CC, Illustrator CC et InDesign CC à AEM, sans que les créatifs n’aient besoin d’abandonner leurs outils de prédilection.
 
@@ -213,13 +216,13 @@ Pour plus d’informations sur cette fonctionnalité, les conditions préalables
 
 AEM desktop app has been updated to Version 1.8, which is compatible with AEM 6.4. The full list of changes for AEM desktop app is provided in a dedicated [AEM desktop app release notes](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) document.
 
-Les améliorations introduites depuis la version 6.3 d’AEM incluent la possibilité de télécharger les fichiers hiérarchiques en arrière-plan, une nouvelle interface utilisateur pour contrôler les tâches associées aux actifs en arrière-plan, l’optimisation de la mise en cache, de la mise en réseau et de la connexion réseau, ainsi que des améliorations de stabilité. La documentation comprend également un [guide de meilleures pratiques](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+Les améliorations introduites depuis la version 6.3 d’AEM incluent la possibilité de télécharger les fichiers hiérarchiques en arrière-plan, une nouvelle interface utilisateur pour contrôler les tâches associées aux actifs en arrière-plan, l’optimisation de la mise en cache, de la mise en réseau et de la connexion réseau, ainsi que des améliorations de stabilité. La documentation comprend également un [guide de meilleures pratiques](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html).
 
 **Adobe Sensei Services**
 
 Parmi les nouvelles fonctionnalités, figurent les balises intelligentes améliorées, avec la possibilité d’apprendre la taxonomie métier du client, de baliser automatiquement les actifs numériques à l’aide de balises spécifiques au client, ainsi que la recherche de traduction intelligente, qui améliore l’accessibilité dans plusieurs langues en traduisant les termes de recherche à la volée. Pour plus d’informations sur cette fonction, voir [Balises intelligentes améliorées](/help/assets/enhanced-smart-tags.md).
 
-![advanced_smart_tags2](assets/enhanced_smart_tags2.png)
+![expanded_smart_tags2](assets/enhanced_smart_tags2.png)
 
 **Métadonnées**
 
@@ -265,11 +268,11 @@ Voir la documentation [Images panoramiques](/help/assets/panoramic-images.md) po
 
 **Ressources 3D**
 
-New integration with [Adobe Dimension CC](https://www.adobe.com/products/dimension.html), a Creative Cloud application for authoring 3D experiences.
+New integration with [Adobe Dimension CC](https://www.adobe.com/fr/products/dimension.html), a Creative Cloud application for authoring 3D experiences.
 
 Voir la documentation [Utilisation d’actifs 3D](/help/assets/assets-3d.md) pour plus d’informations.
 
-![do-not-localize/3d](assets/do-not-localize/3d.png)
+![ne pas localiser/3d](assets/do-not-localize/3d.png)
 
 ### Experience Manager Forms {#experience-manager-forms}
 
@@ -293,7 +296,7 @@ Vous pouvez intégrer Livefyre à votre instance AEM 6.4. Vous trouverez des in
 
 Adobe applique un modèle de développement axé sur les utilisateurs afin que ces derniers puissent contribuer à toutes les étapes du processus de développement, au cours des phases de spécification, de développement et de tests. Merci à tous les utilisateurs et partenaires qui contribuent à ce processus.
 
-Adobe a mis en place les procédures et processus nécessaires à la collecte, à la hiérarchisation et au suivi de la résolution des bogues signalés par les utilisateurs et du développement des demandes d’amélioration. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/marketing-cloud/contact-support.html) is integrated with the Adobe Enhancement &amp; Defect Tracking System. Les questions des utilisateurs sont identifiées et résolues par l’assistance clientèle dans la mesure du possible. Lorsqu’elles sont transmises au service R&amp;D, toutes les informations client sont capturées et utilisées à des fins de hiérarchisation et de création de rapports. Les problèmes entrant dans le cadre de l’assistance payante et de la garantie, ainsi que les demandes d’amélioration des utilisateurs détenant un compte payant sont prioritaires.
+Adobe a mis en place les procédures et processus nécessaires à la collecte, à la hiérarchisation et au suivi de la résolution des bogues signalés par les utilisateurs et du développement des demandes d’amélioration. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) is integrated with the Adobe Enhancement &amp; Defect Tracking System. Les questions des utilisateurs sont identifiées et résolues par l’assistance clientèle dans la mesure du possible. Lorsqu’elles sont transmises au service R&amp;D, toutes les informations client sont capturées et utilisées à des fins de hiérarchisation et de création de rapports. Les problèmes entrant dans le cadre de l’assistance payante et de la garantie, ainsi que les demandes d’amélioration des utilisateurs détenant un compte payant sont prioritaires.
 
 Ce processus de hiérarchisation a généré plus de 500 modifications axées sur le client, corrigées dans AEM 6.4.
 
@@ -324,15 +327,15 @@ Ce processus de hiérarchisation a généré plus de 500 modifications axées s
 
 * [Outil de conversion de boîte de dialogue](/help/sites-developing/dialog-conversion.md) pour faire migrer les composants de l’interface utilisateur classique vers Coral 3
 
-**Assets**
+**Ressources**
 
-* Adobe Experience Manager desktop app ([read more](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html) and [download](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html))
+* Adobe Experience Manager desktop app ([read more](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html) and [download](https://helpx.adobe.com/fr/experience-manager/kb/download-companion-app.html))
 
 * Module pour ajouter le PDF Rasterizer amélioré ([plus d’infos](/help/assets/aem-pdf-rasterizer.md) et [téléchargement](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/assets/aem-assets-pdf-rasterizer-pkg))
 
 * Module pour ajouter la prise en charge étendue des images RAW ([plus d’infos](/help/assets/camera-raw.md))
 
-**Forms**
+**Formulaires**
 
 * Packages des fonctionnalités d’AEM Forms :
 
@@ -351,7 +354,7 @@ L’interface utilisateur est disponible dans les langues suivantes :
 * Français
 * Espagnol
 * Italien
-* Brésilien Portugais
+* Brésilien       Portugais
 * Japonais
 * Chinois simplifié
 * Chinois traditionnel (prise en charge limitée)
