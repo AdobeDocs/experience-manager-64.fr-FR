@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e3f2dc5a-ef5e-432c-be07-b3dedbd6549b
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
+workflow-type: tm+mt
+source-wordcount: '1610'
+ht-degree: 73%
 
 ---
 
@@ -90,7 +93,7 @@ Le connecteur prend en charge les applications suivantes :
 
 AEM Package Share est utilisé pour la distribution des fonctionnalités produit, des exemples et des correctifs logiciels. For details, see the [Package Share documentation](/help/sites-administering/package-manager.md#package-share).
 
-To access Package Share on the AEM Welcome page, tap/click **Tools** and then select **Package Share**. Vous avez besoin d’un ID Adobe valide qui comprend l’adresse électronique de votre société. En outre, après vous être connecté à votre compte, demandez l’accès à Package Share.
+To access Package Share on the AEM Welcome page, tap/click **Tools** and then select **Package Share**. Vous avez besoin d’un Adobe ID valide incluant votre adresse électronique de société. En outre, après vous être connecté à votre compte, demandez l’accès à Package Share.
 
 #### Intégration à AEM {#integrating-with-aem}
 
@@ -127,14 +130,14 @@ Paramètres Espaces de travail et Nom d’espace de travail par défaut :
 
 Par défaut, le connecteur expose un espace de travail JCR unique. Le serveur SharePoint exposé par cet espace de travail est défini via le paramètre de configuration URL du serveur SharePoint.
 
-  Le connecteur peut également être configuré pour plusieurs espaces de travail. Dans ce cas, chaque espace de travail est associé à l’URL du serveur SharePoint correspondant qui est exposé par l’espace de travail. Pour ajouter un espace de travail, ajoutez une définition d’espace de travail au paramètre Espaces de travail. Une définition d’espace de travail a le format suivant :\
+  Le connecteur peut également être configuré pour plusieurs espaces de travail. Dans ce cas, chaque espace de travail est associé à l’URL du serveur SharePoint correspondant qui est exposé par l’espace de travail. Pour ajouter un espace de travail, ajoutez une définition d’espace de travail au paramètre Espaces de travail. Une définition d’espace de travail présente le format suivant :\
 `<name>`= `<url>` où\
 `<name>` est le nom de l’espace de travail JCR et\
 `<url>` est l’URL du serveur SharePoint pour cet espace de travail.
 
-Dans AEM, effectuez une étape en plus des étapes de configuration ci-dessus. Placez le lot **com.day.cq.dam.cq-dam-jcr-connectors** dans la liste blanche.
+Dans AEM, effectuez une étape en plus des étapes de configuration ci-dessus. Liste autorisée du lot &quot;**com.day.cq.dam.cq-dam-jcr-connectors**&quot;.
 
-Pour placer les lots en liste blanche dans AEM, effectuez les étapes suivantes :
+Pour liste autorisée de lots dans AEM, effectuez les étapes suivantes :
 
 1. Accédez à la console de gestion OSGi : http://localhost:4502/system/console/configMgr.
 
@@ -200,10 +203,10 @@ En particulier, les types d’authentification suivants sont disponibles :
 * Revendications – de base
 * Revendications – reposant sur les formulaires
 
-AEM JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0. prend en charge l’authentification basée sur les revendications (suggérée par Microsoft), qui fonctionne dans les modes suivants :
+AEM JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0. prennent en charge l’authentification basée sur les revendications (suggérée par Microsoft), qui fonctionne dans les modes suivants :
 
 * **Authentification de base/NTLM** : le connecteur tente d’abord de se connecter à l’aide de l’authentification de base. Si elle n’est pas disponible, il passe à l’authentification basée sur NTLM.
-* **Authentification** basée sur les formulaires : SharePoint valide les utilisateurs en fonction des informations d’identification saisies par les utilisateurs dans un formulaire de connexion (généralement une page Web). Le système génère un jeton pour les requêtes authentifiées contenant une clé pour rétablir l’identité des requêtes ultérieures.
+* **Authentification** basée sur des formulaires : SharePoint valide les utilisateurs en fonction des informations d’identification saisies par les utilisateurs dans un formulaire de connexion (généralement une page Web). Le système génère un jeton pour les requêtes authentifiées contenant une clé pour rétablir l’identité des requêtes ultérieures.
 
 **Configuration de l’authentification reposant sur les formulaires**
 
@@ -243,7 +246,7 @@ Pour créer un utilisateur dans AEM :
 Pour ajouter l’utilisateur au groupe administrateur :
 
 1. Accédez à l’administration des groupes.
-1. Cliquez sur le noeud &quot;a&quot;
+1. Cliquez sur le noeud &quot;a&quot;.
 1. Cliquez sur Administrateurs.
 1. Type the user ID create above in the text box before **Browse** button
 1. Cliquez sur la coche verte pour ajouter l’utilisateur au groupe administrateur.
