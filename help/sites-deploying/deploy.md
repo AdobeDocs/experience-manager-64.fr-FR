@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: 4d5cc3a785be782e79a53d18cb9bb5beba60f61d
+source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1843'
 ht-degree: 77%
 
 ---
@@ -59,7 +59,7 @@ Une fois que vous serez familiarisé avec ces principes fondamentaux, vous pourr
 * [Instructions de performance](/help/sites-deploying/performance-guidelines.md)
 * [Prise en main d’AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Mettre à jour les définitions de véhicule de version](/help/sites-deploying/update-release-vehicle-definitions.md)
-* [Présentation d’AEM Screens](/help/screens/aem-screens-introduction.md)
+* [Présentation d’AEM Screens](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## Concepts de base {#basic-concepts}
 
@@ -118,7 +118,7 @@ AEM Managed Services est une solution complète pour la gestion de l’expérien
 
 Avec AEM Managed Services, les clients peuvent bénéficier des avantages suivants :
 
-**Un délai de mise sur le marché plus rapide :** avec l’infrastructure cloud flexible d’Adobe Managed Services, les entreprises peuvent rapidement planifier, lancer et optimiser des expériences numériques réussies. Adobe gère l’architecture de cloud sans nécessiter de capital, de matériel ou de logiciels supplémentaires, et les ingénieurs de réussite d’Adobe aident à l’architecture d’AEM, à la mise en service et à la personnalisation de la connexion aux applications dorsales et aux meilleures pratiques de mise en service.
+**Un délai de mise sur le marché plus rapide :** avec l’infrastructure cloud flexible d’Adobe Managed Services, les entreprises peuvent rapidement planifier, lancer et optimiser des expériences numériques réussies. Adobe gère l’architecture de cloud sans avoir besoin de capital, de matériel ou de logiciels supplémentaires et les ingénieurs clients de Adobe, aident à l’architecture AEM, à la mise en service et à la personnalisation pour la connexion aux applications dorsales et aux meilleures pratiques de mise en service.
 
 **Meilleures performances :** fournit des expériences numériques fiables pour votre entreprise avec quatre options de disponibilité du service : 99,5 %, 99,9 %, 99,95 % et 99,99 %. De plus, il permet des modèles de sauvegarde automatique et de reprise après sinistre multimode pour garantir la fiabilité et la gestion des situations d&#39;urgence.
 
@@ -321,5 +321,5 @@ La section ci-dessus doit vous permettre de bien comprendre les principes fondam
 * [Instructions de performance](/help/sites-deploying/performance-guidelines.md)
 * [Prise en main d’AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Mettre à jour les définitions de véhicule de version](/help/sites-deploying/update-release-vehicle-definitions.md)
-* [Présentation d’AEM Screens](/help/screens/aem-screens-introduction.md)
+* [Présentation d’AEM Screens](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
