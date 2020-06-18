@@ -109,6 +109,7 @@ Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’i
 >
 >* D’une prise de vue en noir, en marron et en vert de la même veste.
 >* Une miniature de couleur noire, marron et verte.
+
 >
 
 
@@ -147,6 +148,7 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
    * Near the upper-left corner of the **[!UICONTROL Image Set Editor]** page, tap **[!UICONTROL Add Asset]**.
    * Near the middle of the **[!UICONTROL Image Set Editor]** page, tap **[!UICONTROL Tap to open Asset Selector]**.
+
    Appuyez sur pour sélectionner les fichiers à inclure dans votre visionneuse d’images. Les ressources sélectionnées sont cochées. Lorsque vous avez terminé, en haut à droite de la page, appuyez sur **[!UICONTROL Sélectionner]**.
 
    Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en appuyant sur **[!UICONTROL Retour]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis appuyez sur l’icône **[!UICONTROL Filtre]** de la barre d’outils. Change the view by tapping the **[!UICONTROL View]** icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
@@ -219,24 +221,25 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
    * Pour réorganiser les ressources, faites glisser une image vers un nouvel emplacement (sélectionnez l’icône de réorganisation pour déplacer des éléments).
    * Pour trier les éléments par ordre croissant ou décroissant, appuyez sur l’en-tête de colonne.
    * To add an asset or update an existing asset, tap the **[!UICONTROL Add Asset]**. Accédez à une ressource, sélectionnez-la, puis appuyez sur **[!UICONTROL Sélectionner]** en haut à droite de la page.
-   >[!NOTE]
-   >[!NOTE]
 
+   >[!NOTE]
+   >Si vous supprimez l’image qu’AEM utilise pour la miniature en la remplaçant par une autre image, la ressource d’origine s’affiche toujours.
 
-   * Si vous supprimez l’image qu’AEM utilise pour la miniature en la remplaçant par une autre image, la ressource d’origine s’affiche toujours.****
    * To delete an asset, select it, then tap **[!UICONTROL Delete Asset]**.
    * Pour appliquer un paramètre prédéfini, en haut à droite de la page, appuyez sur **[!UICONTROL Paramètre prédéfini]**, puis sélectionnez un paramètre prédéfini de visionneuse.
    * Pour ajouter ou changer une miniature, sélectionnez l’icône de miniature située à droite de la ressource. Naviguez jusqu’à la nouvelle miniature ou ressource d’échantillon, sélectionnez-la, puis appuyez sur **[!UICONTROL Sélectionner]**.
-   >Pour supprimer intégralement une visionneuse d’images, accédez à cette visionneuse, sélectionnez-la, puis sélectionnez **[!UICONTROL Supprimer]**.
+   * Pour supprimer intégralement une visionneuse d’images, accédez à cette visionneuse, sélectionnez-la, puis sélectionnez **[!UICONTROL Supprimer]**.
+
+   >[!NOTE]
    >
-   >[!NOTE]]******
+   >Vous pouvez modifier les images d’une visionneuse d’images en accédant à la visionneuse, en cliquant sur **[!UICONTROL Définir les membres]** dans le rail gauche, puis en cliquant ou en appuyant sur l’icône Crayon d’une ressource pour afficher la fenêtre d’édition.****
 
-1. Vous pouvez modifier les images d’une visionneuse d’images en accédant à la visionneuse, en cliquant sur **[!UICONTROL Définir les membres]** dans le rail gauche, puis en cliquant ou en appuyant sur l’icône Crayon d’une ressource pour afficher la fenêtre d’édition.****
+1. Appuyez sur **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
 
-## Appuyez sur **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
+## Aperçu d’une visionneuse d’images  {#previewing-image-sets}
 
-Aperçu d’une visionneuse d’images  {#previewing-image-sets}](previewing-assets.md)
+Voir aussi [Aperçu des ressources](previewing-assets.md).
 
-## Voir aussi [Aperçu des ressources](previewing-assets.md).
+## Publication de visionneuses d’images  {#publishing-image-sets}
 
-Publication de visionneuses d’images  {#publishing-image-sets}](publishing-dynamicmedia-assets.md)
+Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
