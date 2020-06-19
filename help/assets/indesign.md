@@ -1,9 +1,9 @@
 ---
-title: Intégration d’AEM Assets avec Adobe InDesign Server
+title: Intégration de AEM Assets à Adobe InDesign Server
 description: Découvrez comment intégrer AEM Assets à InDesign Server.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 70%
@@ -11,7 +11,7 @@ ht-degree: 70%
 ---
 
 
-# Intégration d’AEM Assets avec Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
+# Intégration de AEM Assets à Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
 
 Adobe Experience Manager (AEM) Assets utilise :
 
@@ -234,7 +234,7 @@ Pour configurer le nombre de tâches parallèles d’IDS :
    >
    >By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. Si le travailleur est trouvé en ligne, il est retiré de la liste bloquée.
 
-<!-- TBD: Make updates to configurations for allow and block list after product updates are done.
+<!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
 ## Activation de la prise en charge du serveur Adobe InDesign 10.0 ou version ultérieure {#enabling-support-for-indesign-server-or-higher}
@@ -249,7 +249,7 @@ Pour InDesign Server 10.0 ou version ultérieure, réalisez les étapes suivan
 >
 >For [!DNL InDesign Server] integration with [!DNL Assets], use a multi-core processor because the session support feature necessary for the integration is not supported on single core systems.
 
-## Configuration des informations d’identification d’Experience Manager {#configure-aem-credentials}
+## Configuration des informations d’identification du Experience Manager {#configure-aem-credentials}
 
 Vous pouvez modifier les informations d’identification d’administrateur par défaut (nom d’utilisateur et mot de passe) pour accéder au serveur InDesign à partir de votre instance AEM sans rompre l’intégration au serveur Adobe InDesign.
 
