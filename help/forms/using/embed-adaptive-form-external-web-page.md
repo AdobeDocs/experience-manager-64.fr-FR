@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 56%
+source-wordcount: '1274'
+ht-degree: 54%
 
 ---
 
@@ -155,7 +155,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->Si vous installez une autre topologie, assurez-vous de mettre en liste blanche les URL d’envoi, de pré-remplissage et d’autres URL au niveau de la couche de répartiteur.
+>Si vous définissez une autre topologie, veillez à ajouter les URL d’envoi, de préremplissage et autres à la liste autorisée au niveau du calque du répartiteur.
 
 ## Bonnes pratiques {#best-practices}
 
