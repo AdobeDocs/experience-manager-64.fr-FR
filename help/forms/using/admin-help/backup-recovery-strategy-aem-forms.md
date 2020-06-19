@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '1520'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -88,7 +88,7 @@ Avant de redémarrer le serveur Forms après une récupération, procédez comme
    1. Cliquez sur **Admin Options** (Options d’administration).
    1. Cliquez sur **Start** (Démarrer) pour synchroniser les actifs du référentiel.
 
-1. Dans un environnement organisé en grappes, le nœud maître (par rapport à AEM) doit être au-dessus des nœuds esclaves.
+1. Dans un environnement organisé en grappes, le noeud principal (par rapport à AEM) doit être supérieur aux noeuds secondaires.
 1. Assurez-vous qu’aucun processus n’est initialisé à partir de sources internes ou externes telles que les initiateurs de processus Web, SOAP ou EJB jusqu’à ce que le fonctionnement normal du système soit validé.
 
 Si la base de données principale d’AEM forms est déplacée ou modifiée, consultez les guides d’installation correspondant à votre serveur d’applications pour connaître les détails de mise à jour des informations de connexion des sources de données IDP_DS et EDC_DS pour AEM Forms.
