@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '2206'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -25,7 +25,7 @@ Les fichiers d’application et de données à sauvegarder sont décrits en dét
 Considérez les points suivants concernant la sauvegarde et la récupération :
 
 * La base de données doit être sauvegardée avant le stockage global de document et le référentiel AEM.
-* Si vous avez besoin de faire descendre les nœuds dans un environnement organisé en grappes pour la sauvegarde, assurez-vous que les nœuds esclaves sont fermés avant le nœud maître. Dans le cas contraire, une incohérence peut survenir dans la grappe ou le serveur. En outre, le nœud maître doit être rendu dynamique avant tout nœud esclave.
+* Si vous devez descendre les noeuds dans un environnement organisé en grappes pour la sauvegarde, veillez à ce que les noeuds secondaires soient fermés avant le noeud principal. Dans le cas contraire, une incohérence peut survenir dans la grappe ou le serveur. En outre, le noeud principal doit être rendu actif avant tout noeud secondaire.
 * Pour l’opération de restauration d’une grappe, le serveur d’applications doit être arrêté pour chaque nœud de la grappe.
 
 ## Répertoire de stockage global de documents {#global-document-storage-directory}
