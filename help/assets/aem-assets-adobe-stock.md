@@ -3,7 +3,10 @@ title: Utilisation de ressources Adobe Stock dans AEM Assets
 description: Vous pouvez rechercher, récupérer, acquérir sous licence et gérer les ressources Adobe Stock dans AEM. Traitez les ressources sous licence comme n’importe quelle autre ressource AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+workflow-type: tm+mt
+source-wordcount: '1176'
+ht-degree: 94%
 
 ---
 
@@ -33,6 +36,9 @@ Pour permettre à AEM et Adobe Stock de communiquer, créez une configuration I
 1. Cliquez sur **[!UICONTROL Créer un certificat]**. Une fois le certificat créé, téléchargez la clé publique. Cliquez sur **[!UICONTROL Suivant]**.
 1. Indiquez les valeurs appropriées dans les champs intitulés **[!UICONTROL Titre]**, **[!UICONTROL Serveur d’autorisation]**, **[!UICONTROL Clé API]**, **[!UICONTROL Secret client]** et **[!UICONTROL Charge]**. Voir [Démarrage rapide de l’authentification JWT](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) pour obtenir des informations détaillées sur la récupération de ces valeurs à partir des E/S Adobe.
 1. Ajoutez la clé publique téléchargée à votre compte de service Adobe I/O.
+
+<!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+-->
 
 ### Création d’une configuration Adobe Stock dans AEM   {#create-adobe-stock-configuration-in-aem}
 
@@ -74,7 +80,7 @@ Vous pouvez également commencer à saisir `Location: Adobe Stock` dans la barre
 
 ![Filtres de recherche dans AEM et ressources Adobe Stock mises en évidence dans les résultats de recherche](assets/aem-search-filters2.jpg)
 
-*Figure :  de recherche dans AEM et ressources Adobe Stock mises en surbrillance dans les résultats de recherche*
+*Figure : filtres de recherche dans AEM et ressources Adobe Stock mises en surbrillance dans les résultats de recherche*
 
 ### Enregistrement et affichage des ressources requises {#saveassets}
 
@@ -92,7 +98,7 @@ Les utilisateurs peuvent acquérir des ressources Adobe Stock sous licence en u
 
 ![Boîte de dialogue permettant d’acquérir sous licence et d’enregistrer des ressources Adobe Stock dans AEM Assets](assets/aem-stock_licenseandsave.jpg)
 
-*Figure : Boîte de dialogue permettant d’activer la licence et d’enregistrer des ressources Adobe Stock dans les ressources AEM*
+*Figure : Boîte de dialogue permettant d’activer la licence et d’enregistrer des actifs Adobe Stock en AEM Assets*
 
 ### Accès aux propriétés de ressources et de métadonnées {#access-metadata-and-asset-properties}
 
@@ -102,7 +108,7 @@ Les utilisateurs peuvent afficher les propriétés de toutes les ressources, ave
 
 ![Affichage des métadonnées et des références de licence des ressources enregistrées, et accès à ces éléments](assets/metadata_properties.jpg)
 
-*Figure :  et accès aux métadonnées et aux références de licence des fichiers enregistrés*
+*Figure : Vue et accès aux métadonnées et aux références de licence des fichiers enregistrés*
 
 ## Limitations connues {#known-limitations}
 
