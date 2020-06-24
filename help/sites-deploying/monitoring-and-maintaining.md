@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+workflow-type: tm+mt
+source-wordcount: '5893'
+ht-degree: 81%
 
 ---
 
@@ -102,17 +105,17 @@ The **Purge Versions** tool is available in the **[Tools](/help/sites-administer
 
 ![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
 
-**Chemin** de début Chemin d&#39;accès absolu sur lequel la purge doit être effectuée. Vous pouvez sélectionner le chemin de début en cliquant sur le navigateur d’arborescence du référentiel. 
+**Chemin** du Début Chemin absolu sur lequel la purge doit être effectuée. Vous pouvez sélectionner le chemin de début en cliquant sur le navigateur d’arborescence du référentiel. 
 
-**Récursif** Lors de la purge de données, vous pouvez choisir entre exécuter l’opération sur un noeud ou sur une hiérarchie entière en sélectionnant Récursif.  Dans ce cas, le chemin donné définit le nœud racine de la hiérarchie. 
+**Récursif** Lors de la purge de données, vous pouvez choisir entre exécuter l’opération sur un noeud ou sur une hiérarchie entière en sélectionnant Recursif.  Dans ce cas, le chemin donné définit le nœud racine de la hiérarchie. 
 
 **Nombre maximal de versions à conserver** Nombre maximal de versions à conserver pour un noeud. Lorsque ce nombre dépasse la valeur, les versions les plus anciennes sont purgées.
 
-**âge** maximal de la version L’âge maximal de la version d’un noeud. Lorsque l’âge d’une version dépasse cette valeur, elle est purgée. 
+**Âge** maximal de la version L’âge maximal de la version d’un noeud. Lorsque l’âge d’une version dépasse cette valeur, elle est purgée. 
 
-**Exécution** à sec Comme la suppression des versions de votre contenu est définitive et ne peut pas être annulée sans restauration d’une sauvegarde, l’outil Purger les versions fournit un mode d’exécution à sec qui vous permet de prévisualiser les versions purgées. Pour lancer le mode Exécution d’essai du processus de purge, cliquez sur Exécution d’essai.
+**Exécution** à sec Comme la suppression de versions de votre contenu est définitive et ne peut pas être annulée sans restauration d’une sauvegarde, l’outil Purger les versions fournit un mode d’exécution à sec qui vous permet de prévisualisation des versions purgées. Pour lancer le mode Exécution d’essai du processus de purge, cliquez sur Exécution d’essai.
 
-**Purger** Lancez la purge des versions sur le noeud défini par le chemin de démarrage.
+**Purger** Lancez la purge des versions sur le noeud défini par le chemin d’accès au Début.
 
 ### Purge des versions d’un site web {#purging-versions-of-a-web-site}
 
@@ -147,7 +150,7 @@ Les processus **Exécution d’essai** et **Purge** répertorient tous les noeud
 Par ailleurs, la console affiche des informations utiles sur les versions :
 
 * `V 1.0`: numéro de version.
-* `V 1.0.1`&amp;ast;: l’étoile indique que la version est la version actuelle.
+* `V 1.0.1`&amp;ast; : l&#39;étoile indique que la version est la version actuelle.
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: date de la version.
 
 Dans l’exemple suivant :
@@ -173,7 +176,7 @@ La gestion du contenu web d’AEM permet d’enregistrer de manière détaillée
 La rotation de fichier journal fait référence au processus qui limite la croissance du fichier par la création régulière d’un nouveau fichier. Dans AEM, un fichier journal appelé `error.log` est activé une fois par jour, selon les règles en place :
 
 * Le fichier `error.log` est renommé selon le modèle {original_filename} `.yyyy-MM-dd`. Par exemple, le 11 juillet , le fichier journal actuel est renommé `error.log-2010-07-10`-2010-, , puis un nouveau fichier `error.og` est créé.
-* Les fichiers journaux précédents ne sont pas supprimés, il vous incombe donc de nettoyer régulièrement les anciens fichiers journaux afin de limiter l&#39;utilisation du disque.
+* Les fichiers journaux précédents ne sont pas supprimés, il est donc de votre responsabilité de nettoyer régulièrement les anciens fichiers journaux afin de limiter l&#39;utilisation du disque.
 
 >[!NOTE]
 >
@@ -191,14 +194,13 @@ Divers fichiers journaux sont conservés sur le serveur de fichiers sur lequel v
 
    * `audit.log`
 
-      
-Les actions de modération sont enregistrées ici.
+      Les actions de modération sont enregistrées ici.
 
    * `error.log`
 
       Les messages d’erreur (de différents niveaux de gravité) sont enregistrés ici.
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 
       Ce journal n&#39;est utilisé que si le média dynamique est activé. Il fournit des statistiques et des informations analytiques utilisées pour analyser le comportement du processus interne ImageServer.
 
@@ -206,7 +208,7 @@ Les actions de modération sont enregistrées ici.
 
       Chaque demande d’accès est enregistrée ici en même temps que la réponse.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 
       Ce journal n&#39;est utilisé que si le média dynamique est activé. The s7access log records each request made to Dynamic Media through `/is/image` and `/is/content`.
 
@@ -226,8 +228,7 @@ Les actions de modération sont enregistrées ici.
 
    * `revision.log`
 
-      
-Révision des informations de journalisation.
+      Révision des informations de journalisation.
 
 >[!NOTE]
 >
@@ -251,11 +252,11 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 Les niveaux de journalisation sont les suivants :
 
-| 0 | Erreur fatale | L&#39;action a échoué et le programme d&#39;installation ne peut pas continuer. |
+| 0 | Erreur fatale | L’action a échoué et le programme d’installation ne peut pas continuer. |
 |---|---|---|
-| 1 | Erreur | L&#39;action a échoué. L’installation se poursuit, mais une partie de la gestion du contenu web d’AEM n’a pas été installée correctement et ne fonctionnera pas. |
-| 2 | Avertissement | L&#39;action a réussi mais a rencontré des problèmes. La gestion du contenu web d’AEM risque de ne pas fonctionner correctement. |
-| 3 | Informations | L&#39;action a réussi. |
+| 1 | Erreur | L’action a échoué. L’installation se poursuit, mais une partie de la gestion du contenu web d’AEM n’a pas été installée correctement et ne fonctionnera pas. |
+| 2 | Avertissement | L’action a réussi, mais a rencontré des problèmes. La gestion du contenu web d’AEM risque de ne pas fonctionner correctement. |
+| 3 | Informations | L’action a réussi. |
 
 ### Création d’un fichier journal personnalisé {#create-a-custom-log-file}
 
@@ -265,38 +266,38 @@ Les niveaux de journalisation sont les suivants :
 
 Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un niveau de journalisation différent. Vous pouvez le faire depuis le référentiel en procédant comme suit :
 
-1. If not already existing, create a new configuration folder ( `sling:Folder`) for your project `/apps/<project-name>/config`.
+1. S’il n’existe pas déjà, créez un dossier de configuration (`sling:Folder`) pour votre projet `/apps/<project-name>/config`.
 1. Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings):
 
-   * Nom:
-   `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (car il s’agit d’un journal)
+   * Nom (name) : 
 
-   Where `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). Par exemple, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (car il s&#39;agit d&#39;un journal)
 
-   * Type: `sling:OsgiConfig`
+   Où `<identifier>` est remplacé par du texte libre que vous devez entrer pour l’instance (vous ne pouvez pas omettre cette information). Par exemple, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+
+   * Type : `sling:OsgiConfig`
    >[!NOTE]
    >
-   >Although not a technical requirement, it is advisable to make `<identifier>` unique.
+   >Bien que cela ne constitue pas une exigence technique, il est recommandé de rendre `<identifier>` unique.
 
 1. Définissez les propriétés suivantes sur ce nœud :
 
-   * Nom: `org.apache.sling.commons.log.file`
+   * Nom (name) : `org.apache.sling.commons.log.file`
 
       Type : Chaîne
 
-      Valeur : spécifiez le fichier journal;
-par exemple, `logs/myLogFile.log`
+      Valeur : spécifiez le fichier journal ; par exemple, `logs/myLogFile.log`
 
-   * Nom: `org.apache.sling.commons.log.names`
+   * Nom (name) : `org.apache.sling.commons.log.names`
 
-      Type: `String[] (String + Multi)`
+      Type : `String[] (String + Multi)`
 
       Valeur : spécifiez les services OSGi pour lesquels le journal doit enregistrer les messages ; par exemple, tous les éléments suivants :
 
       * `org.apache.sling`
       * `org.apache.felix`
       * `com.day`
-   * Nom: `org.apache.sling.commons.log.level`
+   * Nom (name) : `org.apache.sling.commons.log.level`
 
       Type : Chaîne
 
@@ -304,11 +305,11 @@ par exemple, `logs/myLogFile.log`
 
    * Configurez les autres paramètres en fonction de vos besoins :
 
-      * Nom: `org.apache.sling.commons.log.pattern`
+      * Nom (name) : `org.apache.sling.commons.log.pattern`
 
-         Type: `String`
+         Type : `String`
 
-         Valeur : préciser le modèle du message du journal, le cas échéant; par exemple,
+         Valeur : spécifier le modèle du message du journal selon les besoins ; par exemple,
 
          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
    >[!NOTE]
@@ -318,7 +319,7 @@ par exemple, `logs/myLogFile.log`
    >{0} Horodatage de type `java.util.Date`
    >{1} le marqueur de journal
    >{2} nom du thread actuel\
-   >{3} nom du journal\
+   >{3} nom de la journalisation\
    >{4} au niveau du journal\
    >{5} le message du journal
    >
@@ -347,7 +348,7 @@ par exemple, `logs/myLogFile.log`
    >écrit à un répertoire :
    >
    >`<cq-installation-dir>/logs/`\
-   >(c.-à-d. à côté de `<cq-installation-dir>/crx-quickstart/`)
+   >(c’est-à-dire à côté de `<cq-installation-dir>/crx-quickstart/`)
 
 1. Cette étape est nécessaire uniquement lorsqu’un nouvel auteur est nécessaire (c’est-à-dire avec une configuration différente de l’auteur par défaut).
 
@@ -358,20 +359,20 @@ par exemple, `logs/myLogFile.log`
 
    Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings):
 
-   * Nom : `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (comme il s’agit d’un auteur)
+   * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (as this is a Writer)
 
-      Comme pour le Logger, `<identifier>` est remplacé par du texte libre que vous (devez) entrez pour identifier l&#39;instance (vous ne pouvez pas omettre ces informations). Par exemple, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      As with the Logger, `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). Par exemple, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
-   * Type: `sling:OsgiConfig`
+   * Type : `sling:OsgiConfig`
    >[!NOTE]
    >
-   >Although not a technical requirement, it is advisable to make `<identifier>` unique.
+   >Bien que cela ne constitue pas une exigence technique, il est recommandé de rendre `<identifier>` unique.
 
    Définissez les propriétés suivantes sur ce nœud :
 
-   * Nom: `org.apache.sling.commons.log.file`
+   * Nom (name) : `org.apache.sling.commons.log.file`
 
-      Type: `String`
+      Type : `String`
 
       Valeur : spécifiez le fichier journal de sorte qu&#39;il corresponde au fichier spécifié dans le journal ;
 
@@ -379,15 +380,15 @@ par exemple, `logs/myLogFile.log`
 
    * Configurez les autres paramètres en fonction de vos besoins :
 
-      * Nom: `org.apache.sling.commons.log.file.number`
+      * Nom (name) : `org.apache.sling.commons.log.file.number`
 
-         Type: `Long`
+         Type : `Long`
 
          Value: specify the number of log files you want kept; for example, `5`
 
-      * Nom: `org.apache.sling.commons.log.file.size`
+      * Nom (name) : `org.apache.sling.commons.log.file.size`
 
-         Type: `String`
+         Type : `String`
 
          Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
    >[!NOTE]
@@ -396,11 +397,13 @@ par exemple, `logs/myLogFile.log`
    >
    >* une taille maximale de fichier
    >* une planification heure/date
+
    >
    >pour indiquer quand un nouveau fichier sera créé (et le fichier existant renommé selon le modèle de nom). 
    >
    >* Une taille maximale peut être spécifiée par un nombre. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
    >* Une planification heure/date peut être spécifiée sous la forme d’un modèle `java.util.SimpleDateFormat`. Cela définit le délai au bout duquel le fichier subit une rotation ; de même que le suffixe ajouté au fichier pivoté (pour identification). 
+
    >
    >  La valeur par défaut est &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
    >
@@ -414,12 +417,12 @@ par exemple, `logs/myLogFile.log`
    >  | `'.'yyyy-MM-dd-HH` | Rotation au sommet de chaque heure. |
    >  | `'.'yyyy-MM-dd-HH-mm` | Rotation au début de chaque minute. |
    >
-   >  Remarque : Lors de la spécification d’une heure/date :
+   >  Remarque : Lorsque vous spécifiez une heure/date :
    >
    >  1. Vous devez placer le texte littéral &quot;escape&quot; dans une paire de guillemets simples (&#39; &#39;);
       >
       >     
-      pour éviter que certains caractères ne soient interprétés comme des lettres de modèle.
+      pour éviter que certains caractères ne soient interprétés comme des lettres types.
       >
       >  
    1. Utilisez uniquement les caractères autorisés pour un nom de fichier valide n’importe où dans l’option.
@@ -489,6 +492,7 @@ Pour surveiller un agent de réplication :
    * **Consulter le journal** pour accéder au journal de toutes actions de l’agent de réplication.
    * **Tester la connexion** à l’instance cible.
    * **Forcer un nouvel essai** sur tous les éléments de la file d’attente si nécessaire.
+
    >[!CAUTION]
    >
    >N’utilisez pas le lien « Tester la connexion » pour la boîte d’envoi de la réplication inverse sur l’instance de publication. 
@@ -577,12 +581,12 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
   <tr> 
    <td>Images mémoire de threads</td> 
    <td>Observez les threads JVM. Identifiez les contentions, les verrouillages et les exécutions longues.</td> 
-   <td><p><br /> Selon le système d’exploitation : - Unix/Linux : <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (mode console) : Ctrl-Saut<br /> </p> <p>Des outils d’analyse sont disponibles, tels que <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
+   <td><p>Dependent on the operating system:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (console mode): Ctrl-Break<br /> </p> <p>Des outils d’analyse sont disponibles, tels que <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Vidages de tas</td> 
    <td>Problèmes d’insuffisance de mémoire affectant la vitesse de performance.</td> 
-   <td><p><br /> Ajoutez la variable <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> à l’appel java vers AEM.</p> <p>Voir le <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Guide de dépannage pour Java SE 6 avec HotSpot VM</a>.</p> </td> 
+   <td><p>Add the:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> option to the java call to AEM.</p> <p>Voir le <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Guide de dépannage pour Java SE 6 avec HotSpot VM</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Appels système</td> 
@@ -732,7 +736,7 @@ Des tests doivent être effectués pour déterminer le nombre d’utilisations s
 
 ### Utilisation de rlog.jar pour trouver des demandes avec de longues durées {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM inclut divers outils d’aide situés dans :\
+AEM comprend divers outils d’assistance situés dans :\
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 L’un de ces outils, `rlog.jar` , , peut être utilisé pour trier rapidement `request.log` de sorte que les demandes soient affichées selon la durée, c’est-à-dire de la plus longue à la plus courte.
@@ -843,7 +847,7 @@ Percentage of the requests served within a certain time (ms)
 
 Les chiffres ci-dessus sont extraits d’un ordinateur portable standard MacBook Pro (mi-2010) avec accès à la page d’entreprise geometrixx, comme inclus dans une installation d’AEM par défaut. La page est très simple, mais non optimisée pour la performance. 
 
-`apachebench` affiche également le temps par requête comme moyenne, pour toutes les requêtes simultanées ; voir `Time per request: 54.595 [ms]` (moyenne, pour toutes les demandes simultanées). You can change the value of the concurrency parameter `-c` (number of multiple requests to perform at a time) to see any effects.
+`apachebench` affiche également le temps par demande comme moyenne, pour toutes les demandes simultanées ; voir `Time per request: 54.595 [ms]` (moyenne, entre toutes les demandes simultanées). You can change the value of the concurrency parameter `-c` (number of multiple requests to perform at a time) to see any effects.
 
 ### Compteurs de demandes {#request-counters}
 
@@ -953,7 +957,7 @@ Pour voir nombre total d’activation de page depuis l’installation du serveur
 
 * **Chemin** `/`
 
-* **Requête**`//element(*, cq:AuditEvent)[@cq:type='Activate']`
+* **Requête** `//element(*, cq:AuditEvent)[@cq:type='Activate']`
 
 Calculez ensuite le nombre de jours écoulés depuis l’installation pour calculer la moyenne.
 
@@ -965,7 +969,7 @@ Pour voir nombre de pages actuellement sur le serveur, utilisez une requête de 
 
 * **Chemin** `/`
 
-* **Requête**`//element(*, cq:Page)`
+* **Requête** `//element(*, cq:Page)`
 
 #### Si vous utilisez MSM, quel est le nombre moyen de déploiements par mois ?{#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month}
 
@@ -975,7 +979,7 @@ Pour déterminer le nombre total de déploiements depuis l’installation, utili
 
 * **Chemin** `/`
 
-* **Requête**`//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
+* **Requête** `//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
 
 Calculez le nombre de mois écoulés depuis l’installation pour calculer la moyenne.
 
@@ -987,7 +991,7 @@ Pour déterminer le nombre total des Live Copies effectuées depuis l’installa
 
 * **Chemin** `/`
 
-* **Requête**`//element(*, cq:LiveSyncConfig)`
+* **Requête** `//element(*, cq:LiveSyncConfig)`
 
 Utilisez toujours le nombre de mois écoulés depuis l’installation pour calculer la moyenne.
 
@@ -999,7 +1003,7 @@ Pour voir le nombre de ressource de gestion des actifs numériques que vous cons
 
 * **Chemin** `/`
 
-* **Requête**`/jcr:root/content/dam//element(*, dam:Asset)`
+* **Requête** `/jcr:root/content/dam//element(*, dam:Asset)`
 
 #### Quelle est la taille moyenne des ressources ?{#what-is-the-average-size-of-the-assets}
 
@@ -1024,7 +1028,7 @@ Pour identifier le nombre de modèles actuellement sur le serveur, utilisez une 
 
 * **Chemin** `/`
 
-* **Requête**`//element(*, cq:Template)`
+* **Requête** `//element(*, cq:Template)`
 
 #### Combien de composants sont actuellement utilisés ?{#how-many-components-are-currently-used}
 
@@ -1034,7 +1038,7 @@ Pour voir nombre de composants actuellement sur le serveur, utilisez une requêt
 
 * **Chemin** `/`
 
-* **Requête**`//element(*, cq:Component)`
+* **Requête** `//element(*, cq:Component)`
 
 #### Combien de demandes par heure recevez-vous sur le système de création lorsque le niveau d’activité est élevé ?{#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
 
@@ -1072,6 +1076,7 @@ Voici une liste de suggestions des éléments à vérifier si vous commencez à 
 >* [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 >* [Analyse à l’aide du profileur intégré](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
 >* [Analyse des processus lents et bloqués](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+
 >
 
 
@@ -1150,7 +1155,7 @@ Le rapport résultant peut être assimilé par un visualiseur GC comme :
 
 Ou JConsole :
 
-* Ces paramètres sont destinés à une connexion JMX &quot;large ouverte&quot; :
+* Ces paramètres sont définis pour une connexion JMX &quot;large ouverte&quot; :
 
    ```
    -Dcom.sun.management.jmxremote \
@@ -1159,10 +1164,10 @@ Ou JConsole :
     -Dcom.sun.management.jmxremote.ssl=false
    ```
 
-* Connectez-vous ensuite à la JVM avec la console JConsole ; voir:\
+* Connectez-vous ensuite à la JVM avec la console JConsole ; voir :\
    ` [https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html)`
 
-Cela vous aidera à déterminer la quantité de mémoire utilisée, les algorithmes GC utilisés, leur durée d’exécution et l’impact sur la performance de l’application. Sans cela, le réglage n&#39;est que des &quot;boutons de redéfinition aléatoire&quot;.
+Cela vous aidera à déterminer la quantité de mémoire utilisée, les algorithmes GC utilisés, leur durée d’exécution et l’impact sur la performance de l’application. Sans cela, le réglage n&#39;est que des &quot;boutons à bascule aléatoire&quot;.
 
 >[!NOTE]
 >
