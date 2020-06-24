@@ -3,10 +3,10 @@ title: Rapports sur l’utilisation et le partage de vos ressources numériques.
 description: Rapports sur vos ressources [!DNL Adobe Experience Manager Assets] dans lesquels vous pouvez comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a5e9b38cd7ed7a513c2ca6b6c0c3b5d0830dfdab
+source-git-commit: 6faa69ee1d38ad16add95263c53f18ea0a413fd2
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 49%
+source-wordcount: '1061'
+ht-degree: 47%
 
 ---
 
@@ -59,11 +59,11 @@ Pour générer des rapports, veillez à ce que :
 
    >[!NOTE]
    >
-   >Par défaut, les fragments de contenu et les partages de lien sont inclus dans le rapport Ressource téléchargée. Sélectionnez l’option appropriée pour créer un rapport de partages de lien ou pour exclure les fragments de contenu du rapport de téléchargement.
+   >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Downloaded report]. Sélectionnez l’option appropriée pour créer un rapport de partages de lien ou pour exclure les fragments de contenu du rapport de téléchargement.
 
    >[!NOTE]
    >
-   >Le rapport [!UICONTROL Télécharger] affiche uniquement les détails des ressources sélectionnées individuellement et téléchargées. Cependant, il n’inclut pas les détails des ressources qui se trouvaient dans un dossier téléchargé.
+   >Le rapport [!UICONTROL Télécharger] affiche uniquement les détails des ressources sélectionnées individuellement et téléchargées ou téléchargées à l’aide de l’action rapide. Cependant, il n’inclut pas les détails des ressources qui se trouvaient dans un dossier téléchargé.
 
 1. Configurez les détails du rapport, tels que le titre, la description, la miniature et le chemin du dossier dans le référentiel CRX où le rapport est stocké. By default, the folder path is `/content/dam`. Vous pouvez spécifier un autre chemin.
 
