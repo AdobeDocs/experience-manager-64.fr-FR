@@ -1,6 +1,6 @@
 ---
-title: profils d’image Contenu multimédia dynamique
-seo-title: profils d’image Contenu multimédia dynamique
+title: profils d’image Dynamic Media
+seo-title: profils d’image Dynamic Media
 description: Créez des profils d’image qui contiennent des paramètres de masquage flou et de recadrage intelligent ou d’échantillon dynamique, ou les deux, puis appliquez le profil à un dossier de fichiers d’image.
 seo-description: Créez des profils d’image qui contiennent des paramètres de masquage flou et de recadrage intelligent ou d’échantillon dynamique, ou les deux, puis appliquez le profil à un dossier de fichiers d’image.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: dbe1feef05cebed7c7bcadbe6a1b4af242cb9d3c
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
 workflow-type: tm+mt
 source-wordcount: '2708'
-ht-degree: 85%
+ht-degree: 87%
 
 ---
 
@@ -36,7 +36,7 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 
 Les coordonnées de recadrage intelligent dépendent du rapport L/H. En d’autres termes, pour les différents paramètres de recadrage intelligent d’un profil d’image, si le format est le même pour les dimensions ajoutées dans le profil d’image, le même format est envoyé au support dynamique. C’est pourquoi Adobe vous recommande d’utiliser la même zone de récolte. Cela permet de s’assurer qu’il n’y a pas d’impact sur les différentes dimensions utilisées dans le profil d’image.
 
-Gardez à l’esprit que chaque génération de recadrage dynamique créée nécessite un traitement supplémentaire. Par exemple, l’ajout de plus de cinq proportions de recadrage intelligent peut entraîner un taux d’assimilation des ressources lent. Il peut également augmenter la charge sur les systèmes. Etant donné que vous pouvez appliquer une recadrage dynamique au niveau des dossiers, Adobe vous recommande de l’utiliser *uniquement* dans les dossiers où cela est nécessaire.
+Gardez à l’esprit que chaque génération de recadrage dynamique créée nécessite un traitement supplémentaire. Par exemple, l’ajout de plus de cinq proportions de recadrage intelligent peut ralentir le taux d’ingestion des ressources. Cet ajout peut également augmenter la charge des systèmes. Étant donné que le recadrage intelligent s’applique aux dossiers, Adobe vous recommande de l’utiliser *uniquement* pour les dossiers où cela est nécessaire.
 
 Vous avez le choix entre deux options de recadrage d’image. Vous avez également la possibilité d’automatiser la création de nuances de couleurs et d’images.
 
@@ -96,7 +96,7 @@ L’option **Accentuation** propose les options de filtre suivantes :
   </tr> 
   <tr> 
    <td>Rayon</td> 
-   <td>Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2.    La plage est 0 à 250.</td> 
+   <td>Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2.   La plage est 0 à 250.</td> 
   </tr> 
   <tr> 
    <td>Seuil</td> 
@@ -111,7 +111,7 @@ L’accentuation est décrite dans [Accentuation des images](/help/assets/assets
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](config-dms7.md#configuring-asset-processing).
 
-**Pour créer des profils** d’image Contenu multimédia dynamique :
+**Pour créer des profils** d’image Dynamic Media :
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image]**.
 1. Appuyez sur **[!UICONTROL Créer]** pour ajouter un nouveau profil d’image.
@@ -249,12 +249,14 @@ Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des rec
 
       * Si l’image comporte un recadrage intelligent ou un échantillon intelligent uniquement, faites glisser sur celle-ci la poignée de l’angle de la zone de recadrage pour ajuster la taille de la zone visible du recadrage.
       * Si l’image comporte à la fois un recadrage intelligent et un échantillon intelligent, faites glisser sur celle-ci la poignée de l’angle de la zone de recadrage pour ajuster la taille de la zone visible du recadrage. Ou, appuyez ou cliquez sur l’échantillon intelligent sous l’image (les échantillons de couleurs sont statiques), puis faites glisser la poignée de l’angle de la zone de recadrage pour ajuster la taille de la zone visible de l’échantillon.
+
       ![Redimensionnement du recadrage intelligent d’une image.](assets/edit_smart_crops-resize.png)
 
    * Déplacez la zone de recadrage intelligent. Effectuez l’une des opérations suivantes :
 
       * Si l’image comporte un recadrage intelligent ou un échantillon intelligent uniquement, faites glisser sur celle-ci la zone de recadrage vers un nouvel emplacement.
       * Si l’image comporte à la fois un recadrage intelligent et un échantillon intelligent, faites glisser sur celle-ci la zone de recadrage intelligent vers un nouvel emplacement. Vous pouvez également appuyer sur l’échantillon dynamique situé sous l’image (les nuances de couleur sont statiques), puis faire glisser la zone de recadrage de l’échantillon dynamique vers un nouvel emplacement.
+
       ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
 
    * Annulez toutes vos modifications et rétablissez le recadrage intelligent ou l’échantillon intelligent d’origine (s’applique à la session de modification active uniquement).
