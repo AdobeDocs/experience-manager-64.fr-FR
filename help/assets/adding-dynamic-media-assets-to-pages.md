@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: ec4fe78ff6101bc427570c48f80c1bd4f173e6e2
 workflow-type: tm+mt
 source-wordcount: '2830'
 ht-degree: 62%
@@ -115,7 +115,6 @@ Le composant Dynamic Media est intelligent ; selon que vous ajoutez une image ou
 >
 >* Vous avez [activé Dynamic Media](config-dynamic.md). Par défaut, ce module complémentaire est désactivé.
 >* L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media ne possèdent pas de fichier pyramid tiff.
-
 >
 
 
@@ -177,8 +176,8 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
    Avec les modificateurs de visionneuse, par exemple, vous pouvez effectuer les opérations suivantes :
 
-   * Associate a caption file with a video [caption](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Associate a navigation file with a video [navigation](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Associate a caption file with a video [caption.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Associate a navigation file with a video [navigation.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
 You can edit the following [!UICONTROL Advanced Settings] by clicking **[!UICONTROL Edit]** in the component.
 
