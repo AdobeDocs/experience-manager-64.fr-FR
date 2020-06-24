@@ -10,14 +10,17 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: 43a28b0d9552cfde74850dfd1a1d63d04f7e4540
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+workflow-type: tm+mt
+source-wordcount: '4303'
+ht-degree: 78%
 
 ---
 
 
 # Images interactives {#interactive-images}
 
-Vous pouvez facilement rendre les images statiques riches et attrayantes pour les clients en faisant glisser des zones réactives &quot;susceptibles d’être visitées&quot; sur une image. Les points d’accès aux boutiques combinent des informations supplémentaires sur un produit ou un service avec une fonctionnalité directe de &quot;Ajouter au panier&quot; ou &quot;Acheter&quot; au point de vente. Les clients peuvent appuyer sur ces zones réactives et être directement liés au produit ou au service, l’ajouter à un panier ou être liés à une page Web. Des expériences directes comme celles-ci augmentent l’engagement et la conversion des clients sur votre site Web.
+Vous pouvez facilement rendre les images statiques riches et attrayantes pour les clients en faisant glisser et en déplaçant des zones réactives &quot;susceptibles d’être visitées&quot; sur une image. Les points d&#39;accès disponibles dans les magasins combinent des informations supplémentaires sur un produit ou un service avec une fonctionnalité directe, au point de vente, &quot;Ajouter au panier&quot; ou &quot;Acheter&quot;. Les clients peuvent appuyer sur ces zones réactives et être directement liés au produit ou au service, l’ajouter à un panier ou être liés à une page Web. Les expériences directes de ce type augmentent l’engagement et la conversion des clients sur votre site Web.
 
 Voici une bannière publicitaire avec une fenêtre contextuelle d’aperçu rapide. L’utilisateur active l’aperçu rapide en appuyant sur le cercle ou la « zone réactive » du modèle.
 
@@ -54,19 +57,19 @@ Le tutoriel permet d’illustrer les étapes d’intégration d’images interac
 
    Voir [(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives](managing-viewer-presets.md#creating-a-new-viewer-preset).
 
-1. **Téléchargement d&#39;une bannière** d&#39;image - Téléchargez les bannières d&#39;image que vous souhaitez rendre interactives.
+1. **Téléchargement d&#39;une bannière** d&#39;image - Téléchargez des bannières d&#39;image que vous souhaitez rendre interactives.
 
    See [Uploading an image banner](#uploading-an-image-banner).
 
-1. **Ajout de zones réactives à une bannière** d’image - Ajouter une ou plusieurs zones réactives à une bannière d’image et associez chacune d’elles à une action telle qu’un hyperlien, un affichage rapide ou un fragment d’expérience. Après avoir ajouté des zones réactives, vous terminez cette tâche en publiant l’image interactive.
+1. **Ajouter des zones réactives à une bannière** d’image : Ajoutez une ou plusieurs zones réactives à une bannière d’image et associez-les à une action telle qu’un hyperlien, une vue rapide ou un fragment d’expérience. Après avoir ajouté des zones réactives, vous terminez cette tâche en publiant l’image interactive.
 
    * Voir [Ajout de zones réactives à une bannière d’image](#adding-hotspots-to-an-image-banner).
    * Voir [Prévisualisation d’images interactives](#optional-previewing-interactive-images) – Facultatif. Si vous le souhaitez, vous pouvez afficher une représentation de votre bannière Shoppable et tester son interactivité.
    * Voir [Publication de ressources](publishing-dynamicmedia-assets.md) pour obtenir des informations sur la publication de ressources d’images interactives.
 
-1. **Ajout d’une image interactive à votre site Web ou à votre site Web dans AEM**
+1. **Ajouter une image interactive à votre site Web ou à votre site Web dans AEM**
 
-   * Si vous utilisez des sites AEM, ou AEM eCommerce, ou les deux, vous pouvez ajouter l’image interactive directement à une page Web dans AEM en faisant glisser le composant Interactive Media sur la page. Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](adding-dynamic-media-assets-to-pages.md).
+   * Si vous utilisez des AEM Sites, ou AEM eCommerce, ou les deux, vous pouvez ajouter l’image interactive directement à une page Web dans AEM en faisant glisser le composant Interactive Media sur la page. Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](adding-dynamic-media-assets-to-pages.md).
    * Si vous utilisez des instances autonomes d’AEM Assets et de Dynamic Media, vous devez copier le code intégré sur votre site web, puis l’intégrer à votre aperçu rapide existant. Voir [Intégration d’une image interactive à votre site web](#integrating-an-interactive-image-with-your-website).
    * Si vous utilisez un gestionnaire de contenu web (WCM) tiers, vous devez intégrer la nouvelle vidéo interactive à l’aperçu rapide existant utilisé sur votre site web. Reportez-vous à la section [Intégration d’une image interactive dans un aperçu rapide existant](#integrating-an-interactive-image-with-an-existing-quickview).
 
@@ -78,6 +81,7 @@ Le tutoriel permet d’illustrer les étapes d’intégration d’images interac
 >
 >* Vous souhaitez ajouter de l’interactivité à votre image en déclenchant des aperçus rapides.
 >* Votre mise en œuvre d’AEM n’utilise *pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans AEM à partir d’une solution de commerce électronique, comme IBM WebSphere Commerce, Elastic Path, Hybris ou Intershop. Reportez-vous à la section [Concepts de commerce électronique dans AEM Assets](/help/sites-administering/concepts.md).
+
 >
 >
 Si votre mise en œuvre d’AEM utilise eCommerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
@@ -151,7 +155,7 @@ Consultez les exemples suivants d’URL d’aperçu rapide et les variables de z
          <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li> 
          <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li> 
          <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li> 
-        </ul> <p>Dans ce cas, l’URL comporte deux parties différentes. Le SKU est stocké dans le <code>prodId</code> paramètre et l’ID de  du.</p><p><code>categoryId</code></p><ul><li><p><code>305466</code><code>categoryId</code><code>1100004</code></p></li><li><p><code>310181</code><code>categoryId</code><code>1100004</code></p></li><li><p><code>308706</code><code>categoryId</code><code>1740148</code></p></li></ul><p></p></td></tr></tbody></table></td></tr><tr></tr></table>
+        </ul> <p>Dans ce cas, l’URL comporte deux parties différentes. Le SKU est stocké dans le <code>prodId</code> paramètre et l’ID de catégorie.</p><p><code>categoryId</code></p><ul><li><p><code>305466</code><code>categoryId</code><code>1100004</code></p></li><li><p><code>310181</code><code>categoryId</code><code>1100004</code></p></li><li><p><code>308706</code><code>categoryId</code><code>1740148</code></p></li></ul><p></p></td></tr></tbody></table></td></tr><tr></tr></table>
 
 **Exemple**
 
@@ -195,7 +199,7 @@ After you save the viewer preset, it is automatically activated (turned on) on t
 
    This is the title that will appear in the **[!UICONTROL Viewer Preset]** list page after you save.
 1. In the **[!UICONTROL Rich Media Type]** pull-down menu, select **[!UICONTROL Interactive Image]**.
-1. Appuyez sur **Create** (Créer). 
+1. Appuyez sur **Créer**. 
 1. On the **[!UICONTROL Edit Viewer Preset]** page, tap the **[!UICONTROL Appearance]** tab.
 1. Utilisez l’une des méthodes suivantes :
 
@@ -266,8 +270,8 @@ Reportez-vous à la section [(Facultatif) Aperçu des images interactives ](#opt
 1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Zone réactive]**.
 1. a. Near the upper-left corner of the **Hotspot Management** page, tap **[!UICONTROL Hotspot]**.
 b. Sur l’image, appuyez sur un emplacement où vous souhaitez que la zone réactive s’affiche. Si nécessaire, faites glisser la zone réactive pour en ajuster l’emplacement.
-c. Ajouter des zones réactives supplémentaires si nécessaire en répétant les étapes a et b.
-d. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la dans l’image, puis appuyez sur **[!UICONTROL Supprimer]** (icône de poubelle) sous l’en-tête **[!UICONTROL Zones réactives]** .
+c. Ajouter d&#39;autres points d&#39;accès si nécessaire en répétant les étapes a et b.
+d. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la sur l’image, puis appuyez sur **[!UICONTROL Supprimer]** (icône de poubelle) sous l’en-tête **[!UICONTROL Zones réactives]** .
 
 1. In the **[!UICONTROL Name]** text field, type the name of the hotspot. This name also appears in the **[!UICONTROL Selected Hotspot]** drop-down list.
 1. Utilisez l’une des méthodes suivantes :
@@ -284,6 +288,7 @@ d. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la dans l’ima
 
       * If you are an AEM Sites customer, tap the **[!UICONTROL Site Selector]** icon (folder) to navigate to a URL. Notez que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
       * If you are a standalone customer, in the **[!UICONTROL HREF]** text field, specify the full URL path to a linked web page.
+
       Veillez à spécifier si vous souhaitez ouvrir le lien dans un nouvel onglet du navigateur (paramètre par défaut recommandé) ou dans le même onglet.
 
       Pour plus d’informations, reportez-vous à la section [Utilisation de sélecteurs](working-with-selectors.md).
@@ -362,7 +367,7 @@ Notez que l’image des trois hommes est une balise `IMG` statique :
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-L’intégration revient simplement à supprimer la balise `IMG` et à la remplacer par le code intégré copié à partir d’AEM Assets. Vous pouvez voir le résultat dans l’URL suivante, qui affiche l’image interactive pouvant être consultée sur la page avec trois zones réactives de cercle :
+L’intégration revient simplement à supprimer la balise `IMG` et à la remplacer par le code intégré copié à partir d’AEM Assets. Vous pouvez voir le résultat dans l’URL suivante qui affiche l’image interactive pouvant être consultée sur la page avec trois zones réactives de cercle :
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)
 
@@ -372,9 +377,9 @@ L’intégration revient simplement à supprimer la balise `IMG` et à la rempla
 
 To apply a crop to a shoppable interactive image for a responsive environment, you can include the Interactive Image configuration attribute `ZoomView.iscommand` to the path—where `ZoomView` is the component to call and `iscommand` is the crop image serving command that you apply.
 
-Voir l’attribut de configuration [ZoomView.iscommand](https://marketing.adobe.com/resources/help/fr_FR/s7/viewers_ref/r_html5_aem_interactive_image_config_attrib_zoomview_iscommand.html).
+Voir l’attribut de configuration [ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
 
-Voir la commande de service d’images [crop](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_crop.html)
+Voir la commande de service d’images [crop](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html)
 
 Vous êtes désormais prêt à intégrer l’image interactive à un aperçu rapide existant de votre site web.
 
