@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: a84fd0ab-0bcd-48cf-bba3-fb29308fa0f8
 translation-type: tm+mt
-source-git-commit: 152f60a7c9579d89cca5dc326679dc5a08d4dd5f
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 70%
 
 ---
 
@@ -21,7 +24,7 @@ As part of the [integration of AEM and Adobe Target](/help/sites-administering/t
 
 ## Inscription à Adobe Target {#registering-with-adobe-target}
 
-Pour intégrer AEM à Adobe Target, vous devez disposer d’un compte Adobe Target valide. Ce compte doit avoir des autorisations **approbateur **niveau minimum. Lorsque vous vous inscrivez à Adobe Target, vous recevez un code client. Vous avez besoin du code client et de vos nom d’utilisateur et mot de passe Adobe Target pour connecter AEM à Adobe Target.
+Pour intégrer AEM à Adobe Target, vous devez disposer d’un compte Adobe Target valide. Ce compte doit disposer au minimum des autorisations **approbateur **niveau. Lorsque vous vous inscrivez à Adobe Target, vous recevez un code client. Vous avez besoin du code client et de vos nom d’utilisateur et mot de passe Adobe Target pour connecter AEM à Adobe Target.
 
 Le code client identifie le compte client Adobe Target en appelant le serveur Adobe Target.
 
@@ -30,7 +33,7 @@ Le code client identifie le compte client Adobe Target en appelant le serveur A
 >Votre compte doit également être activé par l’équipe Target pour pouvoir utiliser l’intégration.
 >
 >
->Si ce n’est pas encore le cas, contactez l’[Assistance clientèle Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/target/r_problem.html).
+>Si ce n’est pas encore le cas, contactez l’[Assistance clientèle Adobe Target](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html).
 
 ## Activation de l’agent de réplication Target {#enabling-the-target-replication-agent}
 
@@ -49,9 +52,9 @@ The Test and Target [replication agent](/help/sites-deploying/replication.md) mu
 
 ## Sécurisation du nœud de paramètres d’activité {#securing-the-activity-settings-node}
 
-Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
+Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 
-**Le noeud** cq:ActivitySettings`/content/campaigns/*nameofbrand*` est disponible dans CRXDE Lite sous *** sous le noeud activités jcr:content ; *par exemple `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
+The **cq:ActivitySettings** node is available in CRXDE lite under `/content/campaigns/*nameofbrand*`* *under the activities jcr:content node;* *for example `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
 
 The **cq:ActivitySettings** node under the activity&#39;s jcr:content is protected by the following ACLs:
 
