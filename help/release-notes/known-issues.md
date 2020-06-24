@@ -1,8 +1,8 @@
 ---
 title: Problèmes connus dans AEM 6.4
 seo-title: Problèmes connus dans AEM 6.4
-description: Problèmes connus dans Adobe Experience Manager 6.4
-seo-description: Problèmes connus dans Adobe Experience Manager 6.4.
+description: Problèmes connus dans l'Adobe Experience Manager 6.4
+seo-description: Problèmes connus dans l'Adobe Experience Manager 6.4.
 uuid: 1733f15e-9c4f-4db3-98ee-25c2ea606f0d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,14 +10,17 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 translation-type: tm+mt
-source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+source-git-commit: 55b9105fab3947322649c7ed2b750497e486ec63
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 46%
 
 ---
 
 
 # Problèmes connus {#known-issues}
 
-Cette page répertorie les problèmes connus d’Adobe Experience Manager 6.4, publiés en avril 2018. Pour plus d’informations sur les problèmes connus, [contactez l’assistance](https://helpx.adobe.com/support/experience-manager.html).
+Cette page garde une liste des problèmes connus Adobe Experience Manager 6.4 publié en avril 2018. Pour plus d&#39;informations sur les problèmes connus, [contactez l&#39;assistance](https://helpx.adobe.com/fr/support/experience-manager.html).
 
 ## Appareils hybrides {#hybrid-devices}
 
@@ -31,7 +34,7 @@ Si vous utilisez Google Chrome comme navigateur :
 Si vous utilisez Mozilla Firefox comme navigateur :
 * Type `about:config` in the address bar and press Enter.
 * Filter the settings to `dom.w3c`.
-* Vérifiez que les paramètres sont `0` et `false`.
+* Assurez-vous que les paramètres sont `0` et `false`.
 * Redémarrez le navigateur.
 
 Si vous utilisez Microsoft Edge comme navigateur :
@@ -45,43 +48,43 @@ Si vous utilisez Microsoft Edge comme navigateur :
 ## Plate-forme {#platform}
 
 * **Tableau de bord des opérations :** la barre de progression n’apparaît pas lorsque l’extension .zip est manquante dans le fichier de sauvegarde. (GRANITE-10713)
-* **** HTL : L’objet Java Use avec l’espace de fin dans la déclaration du package gèle SightlyJavaCompilerService (GRANITE-20836).
-* **** Apache Felix/Sling : Fichier de configuration toujours présent dans le référentiel, même après configuration.delete() (GRANITE-20618)
-* **** Paramètres du cloud : La console est rompue après la modification du conteneur de configuration (GRANITE-20726)
-* **** Sécurité : Échec de l&#39;intégration IMS avec le chemin de contexte personnalisé (GRANITE-20639)
-* **** Sécurité : Amélioration du classement JAAS par défaut des modules de connexion SSO, externes et par défaut (GRANITE-20590)
-* **** Outils - CRX DE Lite: Déplacement de la vue Propriétés vers le haut (GRANITE-12040)
-* **** Outils - CRX DE Lite: Impossible d&#39;enregistrer les modifications dans les types de valeurs &quot;Long&quot; sauf si vous double-cliquez sur Nom de propriété (GRANITE-12351)
+* **HTL :** Objet Java Use avec un espace de fin dans la déclaration de package fige le SightlyJavaCompilerService (GRANITE-20836)
+* **Apache Felix/Sling :** Fichier de configuration toujours présent dans le référentiel, même après configuration.delete() (GRANITE-20618)
+* **Paramètres du cloud :** La console est rompue après la modification du conteneur de configuration (GRANITE-20726)
+* **Sécurité :** Échec de l&#39;intégration IMS avec le chemin de contexte personnalisé (GRANITE-20639)
+* **Sécurité :** Amélioration du classement JAAS par défaut des modules de connexion SSO, externe et par défaut (GRANITE-20590)
+* **Outils - CRX DE Lite :** La vue de la crête des propriétés continue de progresser (GRANITE-12040)
+* **Outils - CRX DE Lite :** Impossible d&#39;enregistrer les modifications dans les types de valeurs &quot;longs&quot;, sauf si vous cliquez sur le doublon-clic sur le nom de la propriété (GRANITE-12351)
 
-* **** Outils - CRX DE Lite: ctrl+F sur les fichiers texte ouverts reste bloqué sur la recherche RegExp (GRANITE-5996)
+* **Outils - CRX DE Lite :** ctrl+F sur les fichiers texte ouverts reste bloqué sur la recherche RegExp (GRANITE-5996)
 
-* **** Outils - CRX DE Lite: Propriété de noeud non affichée après avoir renommé le noeud (GRANITE-7160)
-* **** IU : &quot;Plus...&quot; n’affiche pas tous les éléments lorsqu’ils sont ouverts dans un élément contextuel sur IE et Firefox (GRANITE-16326)
-* **** IU : L’info-bulle est masquée lors de l’utilisation d’une disposition à colonnes fixes avec deux colonnes côte à côte (GRANITE-16869).
+* **Outils - CRX DE Lite :** Propriété de noeud non affichée après le changement de nom du noeud (GRANITE-7160)
+* **IU :** &quot;Plus...&quot; n’affiche pas tous les éléments lorsqu’ils sont ouverts à un élément de substitution dans IE et Firefox (GRANITE-16326).
+* **IU :** L&#39;info-bulle est masquée lors de l&#39;utilisation de la mise en page à colonnes fixes avec 2 colonnes côte à côte (GRANITE-16869)
 * **Interface utilisateur** : erreur non gérée lorsque vous empruntez l’identité d’un utilisateur qui n’existe pas (GRANIT -23228). Solution[ : mise en œuvre d’un gestionnaire d’erreur](/help/sites-developing/customizing-errorhandler-pages.md) pour personnaliser le message d’erreur.
 
-* **** Omnisearch : Recherches avec une exception de cause de barre oblique inverse (GRANITE-11769)
-* **** Omnisearch : L’ouverture de &quot;Paramètres d’affichage&quot; en mode Liste provoque la modification du filtre de recherche (GRANITE-16524).
-* **** Omnisearch : Liste incorrecte des configurations de colonne affichées lors de la recherche de ressources à partir de sites (GRANITE-16527)
+* **Omnisearch :** Recherches avec une exception de cause de barre oblique inverse (GRANITE-11769)
+* **Omnisearch :** L’ouverture de &quot;Paramètres de Vue&quot; dans la vue de liste provoque la modification du filtre de recherche (GRANITE-16524)
+* **Omnisearch :** liste erronée des configurations de colonne affichée lors de la recherche de ressources à partir de sites (GRANITE-16527)
 
 * **Omnisearch :** les prédicats de rail gauche s’entendent avec la demande de serveur Omnisearch (GRANITE-20524).
-* **** Omnisearch : Omnisearch ne prend pas en charge les chemins de contexte (GRANITE-16044)
+* **Omnisearch :** Omnisearch ne prend pas en charge les chemins de contexte (GRANITE-16044)
 
-## Assets {#assets}
+## Ressources {#assets}
 
-* **Rechercher**: La recherche ne renvoie aucun résultat si la chaîne de recherche commence par un espace blanc [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
+* **Rechercher**: La recherche ne renvoie aucun résultat si la chaîne de recherche début avec un espace blanc [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
 
 * **Rechercher**: Dans l’interface utilisateur classique et les balises ne sont pas visibles dans la recherche (CQ-4235239)
 
-* **Interface utilisateur**: L’interface utilisateur des ressources ne répond plus après Copier-coller et Sélectionner tout (CQ-4236142)
+* **IU**: L’interface utilisateur des ressources ne répond plus après Copier-coller et Sélectionner tout (CQ-4236142).
 
-* **Interface utilisateur**: Impossible de déplacer les fichiers après un chargement différé (CQ-4236134)
+* **IU**: Impossible de déplacer les ressources après un chargement différé (CQ-4236134)
 
 * **Rapports**: Erreur lors de la création du rapport Modification des ressources (CQ-4239744)
 
 * **Rapports**: La génération régulière et planifiée de rapports sur les ressources échoue de manière incohérente (certains rapports restent en file d’attente) (CQ-4239089)
 
-* **Métadonnées**: Lors de l’ajout d’un champ de texte à plusieurs valeurs au schéma d’actif, la règle de cascade de champ obligatoire ne fonctionne pas (CQ-4239333)
+* **Métadonnées**: Lors de l’ajout d’un champ de texte à plusieurs valeurs au schéma de ressources, la règle de cascade de champ obligatoire ne fonctionne pas (CQ-4239333).
 
 * **BrandPortal**: La publication sur BrandPortal ne fonctionne pas pour les collections (CQ-4238731)
 
@@ -91,13 +94,14 @@ Si vous utilisez Microsoft Edge comme navigateur :
 
 * **Modération :** impossible de supprimer une publication parente en une seule opération de suppression à partir de l’interface utilisateur de modération en masse (CQ-4236797).
 
-* **Console** - Le lien Nom d’utilisateur ou Mot de passe oublié redirige vers la page de connexion au lieu du formulaire de récupération du mot de passe correspondant (CQ-4237682).
+* **Console** - Le lien Nom d’utilisateur ou Mot de passe oublié est redirigé vers la page de connexion au lieu du formulaire de récupération du mot de passe correspondant (CQ-4237682).
 
-## Forms {#forms}
+## Formulaires {#forms}
 
 ### Installation et déploiement
 
 * (AEM Forms JEE uniquement) En cas d’amorçage d’un serveur d’applications JBoss en cours d’exécution, le gestionnaire de configuration renvoie un appel EJB et des erreurs d’échec de l’amorçage. Vous pouvez toutefois les ignorer. (Réf. CQ-4229793)
+* Lorsque le AEM Forms est démarré, l’ `SAX Security Manager could not be setup` avertissement s’affiche. (CQ-4297403)
 
 ### Communications interactives
 
@@ -121,9 +125,9 @@ Si vous utilisez Microsoft Edge comme navigateur :
 
    1. Dans la console CRXDE Lite, accédez au nœud suivant.\
       /libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigWizard/cloudservices/\
-      wsdlauthenticationsettings/items/fixedcolumns/items/container/items/wsdl/items/\
+      wsdlauthenticationsettings/items/fixedcolumns/items/conteneur/items/wsdl/items/\
       selectAuthentication/items/custom.
-   1. Mettez à jour la valeur de la propriété value pour qu’elle soit identique à la valeur de la propriété text.
+   1. Mettez à jour la valeur de la propriété value de la même manière que celle de la propriété text.
    1. Cliquez sur Enregistrer tout pour enregistrer la configuration.
 
 (CQ-4238462)
