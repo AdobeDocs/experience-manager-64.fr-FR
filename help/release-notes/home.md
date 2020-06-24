@@ -4,7 +4,7 @@ seo-title: Notes de mise à jour d’AEM 6.4
 description: Les Notes de mise à jour d’AEM présentent des informations importantes sur la dernière version d’AEM, notamment les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et supprimées et les problèmes connus.
 seo-description: Les Notes de mise à jour d’AEM présentent des informations importantes sur la dernière version d’AEM, notamment les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et supprimées et les problèmes connus.
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 28%
@@ -37,7 +37,7 @@ Les Notes de mise à jour d’AEM présentent des informations importantes sur l
 | [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment créer votre instance AEM. |
 | [Gestion du guide de l’utilisateur](/help/managing/home.md) | Ce guide décrit comment gérer un projet AEM avec succès. |
 | [Guide de l&#39;utilisateur mobile](/help/mobile/home.md) | Ce guide décrit comment créer et gérer du contenu pour les applications mobiles. |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | Ce guide vous explique comment partager du contenu généré par les utilisateurs avec Livefyre. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Ce guide vous explique comment partager du contenu généré par les utilisateurs avec Livefyre. |
 
 ## Ressources clés AEM
 
