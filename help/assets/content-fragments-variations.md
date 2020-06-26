@@ -10,10 +10,10 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '1845'
-ht-degree: 90%
+source-wordcount: '1762'
+ht-degree: 91%
 
 ---
 
@@ -193,12 +193,13 @@ Le résumé de texte est conçu pour aider les utilisateurs à réduire la longu
 >
 >L’anglais est disponible par défaut.
 >
->D’autres langues sont disponibles sous forme de modules de langue à partir du partage de package ou de la distribution de logiciels :
+>D&#39;autres langues sont disponibles en tant que modules de modèles linguistiques de la distribution de logiciels :
 >
->* [Français (fr) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr) ou [Français (fr) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Allemand (de) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de) ou [allemand (de) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italien (it) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it) ou [Italien (it) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Espagnol (es) du Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es) ou [Espagnol (es) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Français (fr) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Allemand (de) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italien (it) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Espagnol (es) de la distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+
 >
 
 
@@ -216,6 +217,7 @@ Le résumé de texte est conçu pour aider les utilisateurs à réduire la longu
    * Toutes les phrases à éliminer sont biffées en rouge.
    * Cliquez sur n’importe quelle phrase en surbrillance pour la conserver dans le contenu résumé.
    * Cliquez sur n’importe quelle phrase qui ne figure pas en surbrillance pour l’éliminer.
+
    ![cfm-6420-23](assets/cfm-6420-23.png)
 
 1. Sélectionnez **[!UICONTROL Résumer]** pour confirmer les modifications.
@@ -277,6 +279,7 @@ Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mi
 
    * Accéder à la ressource souhaitée dans la gestion des actifs numériques
    * Rechercher la ressource dans la gestion des actifs numériques
+
    Une fois la ressource souhaitée localisée, sélectionnez-la en cliquant sur la miniature.
 
 1. Utilisez **[!UICONTROL Sélectionner]** pour ajouter le fichier au système de paragraphes de votre fragment de contenu à l’emplacement actuel.
@@ -372,6 +375,7 @@ Lors de la modification d’une variation, vous pouvez accéder à l’action de
 
    * le contenu ajouté figure en vert   (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
+
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 4. Sélectionnez **[!UICONTROL Synchroniser]**. La variation est alors mise à jour et affichée.
