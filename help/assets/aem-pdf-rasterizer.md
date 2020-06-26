@@ -3,9 +3,9 @@ title: Utiliser le pixelliseur PDF
 description: Générez des miniatures et des rendus de haute qualité à l’aide de la bibliothèque Adobe PDF Rasterizer.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '745'
 ht-degree: 60%
 
 ---
@@ -23,7 +23,7 @@ Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit�
 
 Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d’une plus grande qualité par rapport à la sortie native et fournissent donc une expérience d’affichage homogène sur tous les périphériques. La bibliothèque PDF Rasterizer d’Adobe ne prend en charge aucune conversion d’espace colorimétrique. Elle génère toujours une sortie RVB indépendamment de l’espace colorimétrique du fichier source.
 
-1. Install the PDF Rasterizer package on your AEM instance from [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) or [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Install the PDF Rasterizer package on your AEM instance from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
@@ -34,9 +34,11 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
 1. Configurez les éléments suivants pour ignorer la génération de miniatures et de rendus Web par défaut pour les fichiers PDF et AI :
 
    * Ouvrez l’étape Processus **** des miniatures, puis ajoutez `application/pdf` ou `application/postscript` dans le champ **[!UICONTROL Ignorer les types]** MIME.
+
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
    * In the **[!UICONTROL Web Enabled Image]** tab, add `application/pdf` or `application/postscript` under **[!UICONTROL Skip List]** depending upon your requirements.
+
    ![web_enabled_imageskiplist](assets/web_enabled_imageskiplist.png)
 
 1. Open the **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** step, and remove the MIME type for which you want to skip the default generation of preview image renditions. For example, remove the MIME type *application/pdf*, *application/postscript,* or *application/illustrator* from the **[!UICONTROL MIME Types]** list.
@@ -49,6 +51,7 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
    * Mime Types: *application/pdf* or *application/postscript*
    * Commandes: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Ajoutez les tailles des miniatures : 319:319, 140:100, 48:48. Ajoutez une configuration de miniature personnalisée, si nécessaire.
+
    Voici des arguments de ligne de commande de la commande `PDFRasterizer` :
 
    **-d** : indicateur pour activer le rendu lissé du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’ajout de ce paramètre ralentit l’exécution de la commande et augmente la taille des images.
@@ -80,6 +83,7 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
    * Types Mime : `application/pdf` ou `application/postscript`
    * Commandes: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Ajoutez les tailles des miniatures : 319:319, 140:100, 48:48. Ajoutez une configuration de miniature personnalisée, si nécessaire.
+
    Voici des arguments de ligne de commande de la commande PDFRasterizer :
 
    **-d** : indicateur pour activer le rendu lissé du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’ajout de ce paramètre ralentit l’exécution de la commande et augmente la taille des images.
@@ -104,4 +108,4 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Enregistrez le workflow.
-1. Téléchargez un fichier PDF ou un fichier AI vers AEM Assets. PDF Rasterizer génère les miniatures et les rendus web pour le fichier.
+1. Téléchargez un fichier PDF ou un fichier AI en AEM Assets. PDF Rasterizer génère les miniatures et les rendus web pour le fichier.
