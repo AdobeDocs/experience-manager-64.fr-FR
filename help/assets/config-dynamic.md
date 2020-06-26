@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '7873'
+source-wordcount: '7833'
 ht-degree: 53%
 
 ---
@@ -961,7 +961,7 @@ Les cas d’utilisation avancés peuvent utiliser un modificateur de configurati
 * **[!UICONTROL iccEmbed]** - profil de couleur [incorporé.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
-L&#39;ensemble standard de profils de couleur Adobe n&#39;est disponible que si vous avez [Feature Pack 12445 de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) ou [Feature Pack 12445 de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installé. All feature packs and service packs are available via [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) and [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Le Feature Pack 12445 fournit les profils de couleurs Adobe.
+The standard set of Adobe color profiles are only available if you have [Feature Pack 12445 from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installed. Tous les Feature Packs et Service Packs sont disponibles dans [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Le Feature Pack 12445 fournit les profils de couleurs Adobe.
 
 ### Installing feature pack 12445 {#installing-feature-pack}
 
@@ -969,9 +969,9 @@ Vous devez installer un Feature Pack 12445 pour utiliser les fonctionnalités d
 
 **Pour installer Feature Pack 12445**:
 
-1. Accédez à [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) ou [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) et téléchargez l’un ou l’autre `cq-6.3.0-featurepack-12445`.
+1. Accédez à Distribution [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) logiciels et téléchargez `cq-6.3.0-featurepack-12445`.
 
-   See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Package Share and Packages in AEM.
+   See [How to work with packages](/help/sites-administering/package-manager.md) for more information on using packages in [!DNL Adobe Experience Manager].
 
 1. Installez le Feature Pack.
 
