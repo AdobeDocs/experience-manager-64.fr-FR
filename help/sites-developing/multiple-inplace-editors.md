@@ -3,19 +3,19 @@ title: Configurez RTE pour plusieurs éditeurs en place.
 description: Créez plusieurs éditeurs sur place en Adobe Experience Manager en configurant l’éditeur de texte enrichi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a7d9ea37d26c2eb51d136de630e737616e7cf5b
+source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 27%
+source-wordcount: '445'
+ht-degree: 26%
 
 ---
 
 
 # Configuration de plusieurs éditeurs sur place {#configure-multiple-in-place-editors}
 
-Vous pouvez configurer l’Editeur de texte enrichi en Adobe Experience Manager de sorte qu’il dispose de plusieurs éditeurs sur place. Une fois le composant configuré, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat. Par exemple :
+Vous pouvez configurer l’Editeur de texte enrichi en Adobe Experience Manager de sorte qu’il dispose de plusieurs éditeurs sur place. Une fois le composant configuré, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![Un éditeur statique spécifique](assets/rte-inplace-editor.png)
 
 ## Configuration de plusieurs éditeurs {#configure-multiple-editors}
 
@@ -42,7 +42,7 @@ Par exemple :
 
     /**
       * Configures one child editor for a sub-component. The name of the this node is
-      * be used as DD ID.
+      * used as DD ID.
       *
       * @prop type type of the inline editor. For example, ["image"].
       * @prop title Title of the inline editor.
