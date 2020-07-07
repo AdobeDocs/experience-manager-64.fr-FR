@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: eebb765465c90c0ede5957c8bf79a028e1b4f6ce
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 54%
@@ -184,6 +184,7 @@ Le mixin `cq:OwnerTaggable`, qui hérite de `cq:Taggable`, sert à indiquer que 
    >
    >
 * assets ( `cq:Asset`) where the `jcr:content/metadata` node always has the `cq:Taggable` mixin.
+
 >
 
 
@@ -259,14 +260,17 @@ Vous trouverez, ci-après, la description des effets dans le référentiel lors 
 
 ## Migration des balises {#tags-migration}
 
-Les balises Experience Manager 6.4 et ultérieures sont stockées sous `/content/cq:tags`, qui étaient précédemment stockées sous `/etc/tags`. Cependant, dans les scénarios où Adobe Experience Manager a été mis à niveau à partir de la version précédente, les balises sont toujours présentes sous l’ancien emplacement `/etc/tags`. Dans les systèmes mis à niveau, les balises doivent être migrées sous `/content/cq:tags`.
+Les balises Experience Manager 6.4 et ultérieures sont stockées sous `/content/cq:tags`, qui étaient précédemment stockées sous `/etc/tags`. Cependant, dans les cas où l’Adobe Experience Manager a été mis à niveau à partir de la version précédente, les balises sont toujours présentes sous l’ancien emplacement `/etc/tags`. Dans les systèmes mis à niveau, les balises doivent être migrées sous `/content/cq:tags`.
 
-> [!NOTE]
-> Dans Propriétés de page de la page des balises, il est conseillé d’utiliser l’ID de balise (par exemple `geometrixx-outdoors:activity/biking`) plutôt que de coder en dur le chemin de base de la balise (par exemple, `/etc/tags/geometrixx-outdoors/activity/biking`).
-> Pour les balises de liste, `com.day.cq.tagging.servlets.TagListServlet` vous pouvez les utiliser.
+>[!NOTE]
+>
+>Dans Propriétés de page de la page des balises, il est conseillé d’utiliser l’ID de balise (par exemple `geometrixx-outdoors:activity/biking`) plutôt que de coder en dur le chemin de base de la balise (par exemple, `/etc/tags/geometrixx-outdoors/activity/biking`).
+>
+>Pour les balises de liste, `com.day.cq.tagging.servlets.TagListServlet` vous pouvez les utiliser.
 
-> [!NOTE]
-> Il est conseillé d’utiliser l’API du gestionnaire de balises en tant que ressource.
+>[!NOTE]
+>
+>Il est conseillé d’utiliser l’API du gestionnaire de balises en tant que ressource.
 
 **Si l’instance AEM mise à niveau prend en charge l’API TagManager**
 
@@ -332,9 +336,9 @@ Le script récupère toutes les balises qui ont `/etc/tags` la valeur de `cq:mov
 
 **Si l’instance AEM mise à niveau s’exécute sur l’interface utilisateur classique**
 
-> [!NOTE]
-> L’interface utilisateur classique n’est pas compatible avec zéro temps d’arrêt et ne prend pas en charge le nouveau chemin de base des balises. Si vous souhaitez utiliser une interface utilisateur classique qui ne doit pas `/etc/tags` être créée, suivie du redémarrage du `cq-tagging` composant.
-
+>[!NOTE]
+>
+>L’interface utilisateur classique n’est pas compatible avec zéro temps d’arrêt et ne prend pas en charge le nouveau chemin de base des balises. Si vous souhaitez utiliser une interface utilisateur classique qui ne doit pas `/etc/tags` être créée, suivie du redémarrage du `cq-tagging` composant.
 
 Dans le cas d’instances AEM mises à niveau prises en charge par l’API TagManager et s’exécutant dans l’interface utilisateur classique :
 
