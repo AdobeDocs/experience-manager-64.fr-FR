@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 7a1bfd43-39b1-478b-a294-92c78eaebbf2
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+workflow-type: tm+mt
+source-wordcount: '1273'
+ht-degree: 83%
 
 ---
 
@@ -53,11 +56,11 @@ Vous pouvez créer des [formulaires adaptatifs](/help/forms/using/creating-adapt
 
 Une fois le formulaire adaptatif ou le fragment de formulaire adaptatif basé sur un modèle de données de formulaire créé, les objets de modèle de données de formulaire apparaissent dans l’onglet **[!UICONTROL Objets de modèle de données]** de l’explorateur de contenu dans l’éditeur de formulaires adaptatifs.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >Pour un fragment de formulaire adaptatif, seul l’objet de modèle de données sélectionné au moment de la création et les objets de modèle de données associés apparaissent dans l’onglet Objets de modèle de données.
 
-![modèle de données-objets-onglet](assets/data-model-objects-tab.png)
+![data-model-objets-tab](assets/data-model-objects-tab.png)
 
 Vous pouvez glisser-déposer des objets de modèle de données sur le formulaire adaptatif ou le fragment pour ajouter des champs de formulaire. Les champs de formulaire ajoutés conservent les propriétés des métadonnées et la liaison avec les propriétés de l’objet de modèle de données. La liaison garantit que les valeurs de champ sont mises à jour dans les sources de données correspondantes lors de l’envoi du formulaire et préremplies lorsque le formulaire est rendu.
 
@@ -93,7 +96,7 @@ Pour prévisualiser une communication interactive avec des exemples de données 
 
 La communication interactive s’ouvre avec des exemples de données préremplies.
 
-![aperçu Web](assets/web-preview.png)
+![prévisualisation Web](assets/web-preview.png)
 
 De même, pour prévisualiser un formulaire adaptatif avec des exemples de données, ouvrez le formulaire adaptatif en mode création et appuyez sur **[!UICONTROL Aperçu]**.
 
