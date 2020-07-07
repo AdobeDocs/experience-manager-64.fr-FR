@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 8a612282df46f5f54ebe73c4b297eba6515ea35d
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '4726'
+ht-degree: 68%
 
 ---
 
@@ -28,7 +31,7 @@ Cette section décrit les concepts et les problèmes majeurs et sert d’introdu
 
 ### Planification {#planning}
 
-Avant de commencer à configurer ou à coder réellement votre composant, vous devez demander :
+Avant de commencer à configurer ou coder réellement votre composant, vous devez vous demander :
 
 * de quoi avez-vous besoin exactement pour le nouveau composant ?
 
@@ -58,7 +61,7 @@ Avant de commencer à configurer ou à coder réellement votre composant, vous d
 Avant toute considération sérieuse sur le développement de composants, vous devez savoir quelle IU vos auteurs vont utiliser :
 
 * **Interface utilisateur optimisée pour les écrans tactiles**
-   [Interface](/help/sites-developing/touch-ui-concepts.md) utilisateur standard introduite dans AEM 5.6.0 en tant que  de et étendue dans la version 6.x. Il repose sur l’expérience utilisateur unifiée d’Adobe Marketing Cloud, en utilisant les technologies sous-jacentes de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral et de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#granite-ui)Granite.
+   [Interface](/help/sites-developing/touch-ui-concepts.md) utilisateur standard introduite dans AEM 5.6.0 en tant que prévisualisation et étendue dans la version 6.x. Il repose sur l’expérience utilisateur unifiée de l’Adobe Marketing Cloud, en utilisant les technologies sous-jacentes de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral et de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#granite-ui)Granite.
 
 * **IU classique** Interface utilisateur basée sur la technologie ExtJS introduite avec CQ 5.1.
 
@@ -69,19 +72,20 @@ Les composants peuvent être implémentés de manière à prendre en charge l’
 Pour cette raison, nous allons aborder les notions de base des deux interfaces et expliquer comment les reconnaître, dans cette page.
 
 >[!NOTE]
-> Adobe recommande d’exploiter l’interface utilisateur tactile pour bénéficier des toutes dernières technologies. [AEM Modernination Tools&amp;(modernatzion-tools.md) peut faciliter la migration.
+>
+>Adobe recommande de tirer parti de l’interface utilisateur tactile pour tirer parti des dernières technologies. [AEM Modernination Tools&amp;(modernatzion-tools.md)] peut faciliter la migration.
 
 ### Logique de contenu et balisage de rendu  {#content-logic-and-rendering-markup}
 
 Il est recommandé de garder le code responsable du balisage et du rendu distinct de celui qui contrôle la logique utilisée pour sélectionner le contenu du composant.
 
-Cette approche est compatible avec [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html), un langage de modèle intentionnellement limité pour s’assurer qu’un vrai langage de programmation est utilisé afin de définir la logique métier sous-jacente. Cette logique (facultative) est appelée à partir de HTL avec une commande spécifique. Ce mécanisme met en évidence le code appelé pour une vue donnée et, si nécessaire, autorise une logique spécifique pour différentes vues du même composant.
+Cette approche est compatible avec [HTL](https://helpx.adobe.com/fr/experience-manager/htl/user-guide.html), un langage de modèle intentionnellement limité pour s’assurer qu’un vrai langage de programmation est utilisé afin de définir la logique métier sous-jacente. Cette logique (facultative) est appelée à partir de HTL avec une commande spécifique. Ce mécanisme met en évidence le code appelé pour une vue donnée et, si nécessaire, autorise une logique spécifique pour différentes vues du même composant.
 
 ### HTL vs JSP {#htl-vs-jsp}
 
-HTML est un langage de modèle HTML introduit avec AEM 6.0.
+HTL est un langage de modèle HTML introduit avec AEM 6.0.
 
-Le choix entre l’utilisation de [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) ou de JSP (Java Server Pages) lors du développement de vos propres composants devrait être simple à faire dans la mesure où HTL est aujourd’hui le langage de script recommandé pour AEM.
+Le choix entre l’utilisation de [HTL](https://helpx.adobe.com/fr/experience-manager/htl/user-guide.html) ou de JSP (Java Server Pages) lors du développement de vos propres composants devrait être simple à faire dans la mesure où HTL est aujourd’hui le langage de script recommandé pour AEM.
 
 HTL et JSP peuvent être utilisés pour développer des composants de l’IU classique et de l’IU tactile. Bien que la tendance laisse à supposer que HTL est réservé à l’IU tactile et JSP à l’IU classique, c’est une idée reçue que l’on attribue à une synchronisation fortuite. L’IU tactile et HTL ont été intégrés à AEM à peu près en même temps. Puisque HTL est aujourd’hui le langage recommandé, il est utilisé pour les nouveaux composants, qui sont plus souvent développés pour l’IU tactile.
 
@@ -173,10 +177,11 @@ La définition d’un composant peut être décomposée comme suit :
 
    * Ressources:
 
-      Elles définissent les  de utilisées par le composant.
+      Elles définissent les éléments statiques utilisés par le composant.
 
    * Scripts:
-   Sont utilisées pour implémenter le comportement de l’instance résultante du composant.
+
+   Sont utilisés pour implémenter le comportement de l’instance résultante du composant.
 
 * **Nœud racine** :
 
@@ -201,7 +206,7 @@ La définition d’un composant peut être décomposée comme suit :
 
       Remarque : si le composant possède une boîte de dialogue, elle apparaît automatiquement dans le navigateur de composants ou le sidekick, même si le cq:editConfig n’existe pas.
 
-   * `cq:childEditConfig (cq:EditConfig)` - Contrôle les aspects de l&#39;interface utilisateur de création pour les composants enfants qui ne définissent pas les leurs `cq:editConfig`.
+   * `cq:childEditConfig (cq:EditConfig)` - Contrôle les aspects de l&#39;interface utilisateur de création pour les composants enfants qui ne définissent pas leurs propres `cq:editConfig`.
    * Interface utilisateur optimisée pour les écrans tactiles :
 
       * `cq:dialog` ( `nt:unstructured`) - Boîte de dialogue pour ce composant. Définit l’interface permettant à l’utilisateur de configurer le composant et/ou de modifier le contenu.
@@ -214,9 +219,9 @@ La définition d’un composant peut être décomposée comme suit :
 
 #### Icône de composant dans l’IU tactile {#component-icon-in-touch-ui}
 
-L’icône ou l’abréviation du composant est définie via les propriétés JCR du composant lorsque le composant est créé par le développeur. Ces propriétés sont évaluées dans l’ordre suivant, la première propriété valide trouvée étant utilisée.
+L’icône ou l’abréviation du composant est définie au moyen des propriétés JCR du composant lorsque celui-ci est créé par le développeur. Ces propriétés sont évaluées dans l’ordre suivant, la première propriété valide trouvée étant utilisée.
 
-1. `cq:icon` - Propriété de chaîne pointant vers une icône standard dans la bibliothèque [d&#39;interface utilisateur](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Coral pour l&#39;afficher dans le navigateur de composants
+1. `cq:icon` - Propriété de chaîne pointant vers une icône standard dans la bibliothèque [d&#39;interface utilisateur](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Coral pour s&#39;afficher dans le navigateur de composants
 
    * Utilisez la valeur de l’attribut HTML de l’icône Coral.
 
@@ -230,7 +235,7 @@ L’icône ou l’abréviation du composant est définie via les propriétés JC
    * L’abréviation n’est traduite que si le composant possède une propriété `abbreviation_commentI18n`, qui est ensuite utilisée comme indice de traduction.
 
 
-1. `cq:icon.png` ou `cq:icon.svg` - Icône pour ce composant, qui s’affiche dans l’explorateur de composants
+1. `cq:icon.png` ou `cq:icon.svg` - Icône pour ce composant, qui s&#39;affiche dans l&#39;explorateur de composants
 
    * La taille des icônes des composants standard est de 20 x 20 pixels.
 
@@ -239,7 +244,7 @@ L’icône ou l’abréviation du composant est définie via les propriétés JC
    * L’arrière-plan des icônes de composants standard est transparent.
    * Only `.png` and `.svg` files are supported.
    * If importing from the file system via Eclipse plugin, filenames need to be esacaped as `_cq_icon.png` or `_cq_icon.svg` for example.
-   * `.png` prend le relais `.svg` si les deux sont présents
+   * `.png` prend le pas sur `.svg` si les deux sont présents
 
 
 If none of the above properties ( `cq:icon`, `abbreviation`, `cq:icon.png` or `cq:icon.svg`) are found on the component:
@@ -386,7 +391,7 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
   <tr> 
    <td><code>virtual</code></td> 
    <td><code>sling:Folder</code></td> 
-   <td>Permet la création de composants virtuels. Pour consulter un exemple, consultez le composant contact à l’adresse suivante :<br /> <code>/libs/foundation/components/profile/form/contact</code></td> 
+   <td>Permet la création de composants virtuels. Pour consulter un exemple, consultez le composant contact à l'adresse suivante :<br /> <code>/libs/foundation/components/profile/form/contact</code></td> 
   </tr>
   <tr> 
    <td><code>&lt;breadcrumb.jsp&gt;</code></td> 
@@ -427,7 +432,7 @@ Les nœuds d’enfant d’un intérêt particulier sont les suivants :
 
 * `cq:editConfig` ( `cq:EditConfig`) - contrôle les aspects visuels. Par exemple, il peut définir l’apparence d’une barre ou d’un widget, ou peut ajouter des contrôles personnalisés
 
-* `cq:childEditConfig` ( `cq:EditConfig`) - contrôle les aspects visuels des composants enfants qui n&#39;ont pas leurs propres définitions
+* `cq:childEditConfig` ( `cq:EditConfig`) - contrôle les aspects visuels pour les composants enfants qui n&#39;ont pas leurs propres définitions
 
 * Interface utilisateur optimisée pour les écrans tactiles :
 
@@ -453,6 +458,7 @@ Les définitions de boîte de dialogue sont spécifiques à l’IU :
 >
 >* Pour des raisons de compatibilité, l’IU tactile peut utiliser la définition d’une boîte de dialogue d’IU classique, si aucune boîte de dialogue n’a été définie pour l’IU tactile.
 >* L’[outil de conversion de boîtes de dialogue](/help/sites-developing/dialog-conversion.md) sert à étendre/convertir les composants dont les boîtes de dialogue sont seulement définies pour l’IU classique.
+
 >
 
 
@@ -469,6 +475,7 @@ Les définitions de boîte de dialogue sont spécifiques à l’IU :
 
          * Pour les composants prêts à l’emploi, il s’agit souvent d’une page dans la documentation.
          * Si aucun `helpPath` n’est spécifié, l’URL par défaut (page de présentation de la documentation) est affichée.
+
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
    Dans la boîte de dialogue, des champs individuels sont définis :
@@ -487,6 +494,7 @@ Les définitions de boîte de dialogue sont spécifiques à l’IU :
 
          * Pour les composants prêts à l’emploi, il s’agit souvent d’une page dans la documentation.
          * Si aucun `helpPath` n’est spécifié, l’URL par défaut (page de présentation de la documentation) est affichée.
+
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
    Dans la boîte de dialogue, des champs individuels sont définis :
@@ -555,13 +563,13 @@ Les composants d’AEM sont soumis à trois hiérarchies différentes :
 
 * **Hiérarchie du type de ressource**
 
-   Cette propriété est utilisée pour étendre les composants à l’aide de la propriété `sling:resourceSuperType`. Cela permet au composant d’hériter d’attributs. Par exemple, un composant Text hérite de divers attributs du composant standard.
+   Cette méthode est utilisée pour étendre les composants à l’aide de la propriété `sling:resourceSuperType`. Cela permet au composant d’hériter d’attributs. Par exemple, un composant Text hérite de divers attributs du composant standard.
 
    * scripts (résolus par Sling)
    * boîtes de dialogue
    * descriptions (y compris les images miniatures, les icônes, etc.)
 
-* **Hiérarchie**
+* **Hiérarchie des Conteneurs**
 
    Il est utilisé pour renseigner les paramètres de configuration du composant enfant et est le plus souvent utilisé dans un scénario parsys.
 
@@ -571,7 +579,7 @@ Les composants d’AEM sont soumis à trois hiérarchies différentes :
 
 * **Inclure la hiérarchie**
 
-   Ceci est imposé au moment de l’exécution par la séquence d’inclusions.
+   Ceci est imposé au moment de l’exécution par la séquence d’inclusion.
 
    Cette hiérarchie est utilisée par le concepteur, qui à son tour sert de base pour divers aspects de conception du rendu, notamment les informations de mise en page, les informations css, les composants disponibles dans un parsys, etc.
 
@@ -583,11 +591,11 @@ La configuration est commune à l’IU tactile et à l’IU classique, à l’ex
 
 Le comportement de modification d’un composant est configuré en ajoutant un nœud `cq:editConfig` de type `cq:EditConfig` en dessous du nœud de composant (de type `cq:Component`) et en ajoutant des propriétés spécifiques et des nœuds enfants. Les propriétés et les nœuds enfants suivants sont disponibles :
 
-* [ Propriétés `cq:editConfig` des](#configuring-with-cq-editconfig-properties)noeuds :
+* [ `cq:editConfig` propriétés](#configuring-with-cq-editconfig-properties)du noeud :
 
    * `cq:actions` ( `String array`) : définit les actions qui peuvent être exécutées sur le composant.
-   * `cq:layout` ( `String`) : : définit le mode de modification du composant dans l’interface utilisateur classique.
-   * `cq:dialogMode` ( `String`) : définit le mode d’ouverture de la boîte de dialogue du composant dans l’interface utilisateur classique
+   * `cq:layout` ( `String`) : : définit comment le composant est modifié dans l’interface utilisateur classique.
+   * `cq:dialogMode` ( `String`) : définit comment la boîte de dialogue du composant s’ouvre dans l’interface utilisateur classique
 
       * Dans l’IU tactile, les boîtes de dialogue flottent toujours en mode bureau et s’ouvrent automatiquement en mode plein écran sur mobile.
    * `cq:emptyText` ( `String`) : définit le texte qui s’affiche lorsqu’aucun contenu visuel n’est présent.
@@ -595,13 +603,13 @@ Le comportement de modification d’un composant est configuré en ajoutant un n
    * `dialogLayout` (chaîne) : définit le mode d’ouverture de la boîte de dialogue.
 
 
-* [ noeuds `cq:editConfig`](#configuring-with-cq-editconfig-child-nodes)enfants :
+* [ `cq:editConfig` noeuds](#configuring-with-cq-editconfig-child-nodes)enfants :
 
-   * `cq:dropTargets` (type de noeud `nt:unstructured`) : définit un de de dépôt qui peut accepter un dépôt à partir d’un fichier de l’outil de recherche de contenu
+   * `cq:dropTargets` (type de noeud `nt:unstructured`) : définit une liste de cibles de dépôt qui peut accepter une goutte à partir d’une ressource de l’outil de recherche de contenu.
 
       * Les cibles de dépôt multiples sont uniquement disponibles dans l’IU classique.
       * Dans l’IU tactile, une seule cible est autorisée.
-   * `cq:actionConfigs` (type de noeud `nt:unstructured`) : définit un  de nouvelles actions qui sont ajoutées au cq:actions .
+   * `cq:actionConfigs` (type de noeud `nt:unstructured`) : définit une liste de nouvelles actions annexées à la liste cq:actions.
    * `cq:formParameters` (type de noeud `nt:unstructured`) : définit des paramètres supplémentaires qui sont ajoutés au formulaire de boîte de dialogue.
    * `cq:inplaceEditing` (type de noeud `cq:InplaceEditingConfig`) : définit une configuration de modification statique pour le composant.
    * `cq:listeners` (type de noeud `cq:EditListenersConfig`) : définit ce qui se produit avant ou après une action sur le composant.
@@ -667,7 +675,7 @@ The `cq:actions` property ( `String array`) defines one or several actions that 
   </tr> 
   <tr> 
    <td><code>insert</code></td> 
-   <td>Ajoute un bouton permettant d’insérer un nouveau composant avant le composant actif.</td> 
+   <td>Ajoute un bouton pour insérer un nouveau composant avant le composant actif.</td> 
   </tr> 
   <tr> 
    <td><code>copymove</code></td> 
@@ -706,11 +714,11 @@ The `cq:layout` property ( `String`) defines how the component can be edited in 
   </tr> 
   <tr> 
    <td><code>rollover</code></td> 
-   <td>Valeur par défaut. L'édition de composant est accessible "au passage de la souris" par le biais de clics et/ou du menu contextuel.<br /> Pour une utilisation avancée, notez que l’objet client correspondant est : <code>CQ.wcm.EditRollover</code>.</td> 
+   <td>Valeur par défaut. L'édition du composant est accessible "sur souris" par le biais de clics et/ou d'un menu contextuel.<br /> Pour une utilisation avancée, notez que l’objet client correspondant est : <code>CQ.wcm.EditRollover</code>.</td> 
   </tr> 
   <tr> 
    <td><code>editbar</code></td> 
-   <td>L’édition de composants est accessible via une barre d’outils.<br /> Pour une utilisation avancée, notez que l’objet client correspondant est : <code>CQ.wcm.EditBar</code>.</td> 
+   <td>L'édition des composants est accessible via une barre d'outils.<br /> Pour une utilisation avancée, notez que l’objet client correspondant est : <code>CQ.wcm.EditBar</code>.</td> 
   </tr> 
   <tr> 
    <td><code>auto</code></td> 
@@ -809,12 +817,12 @@ Each child node of type `cq:DropTargetConfig` defines a drop target in the compo
  <node name of the drop target in the edit configuration>
 ```
 
-La propriété `<*drag and drop prefix*>` est définie par la propriété Java :
+La propriété `<*drag and drop prefix*>` Java définit les éléments suivants :
 
 `com.day.cq.wcm.api.components.DropTarget.CSS_CLASS_PREFIX`.
 
-Par exemple, le nom de la classe est défini comme suit dans le JSP du composant Télécharger.\
-( `/libs/foundation/components/download/download.jsp`), où `file` est le nom du noeud du de dépôt dans la configuration de modification du composant Télécharger :
+Par exemple, le nom de classe est défini comme suit dans le JSP du composant Télécharger.\
+( `/libs/foundation/components/download/download.jsp`), où `file` est le nom de noeud de la cible de dépôt dans la configuration de modification du composant Télécharger :
 
 `String ddClassName = DropTarget.CSS_CLASS_PREFIX + "file";`
 
@@ -828,11 +836,11 @@ Le nœud de type `cq:DropTargetConfig` doit posséder les propriétés suivantes
   </tr> 
   <tr> 
    <td><code>accept</code></td> 
-   <td>Regex appliqué au type MIME de ressource pour valider si le dépôt est autorisé.</td> 
+   <td>Regex appliqué au type MIME de la ressource pour valider si la suppression est autorisée.</td> 
   </tr> 
   <tr> 
    <td><code>groups</code></td> 
-   <td>Tableau de  de dépôt. Chaque groupe doit correspondre au type de groupe défini dans l’extension du Content Finder et associé aux ressources.</td> 
+   <td>Tableau de Populations cibles de dépôt. Chaque groupe doit correspondre au type de groupe défini dans l’extension du Content Finder et associé aux ressources.</td> 
   </tr> 
   <tr> 
    <td><code>propertyName</code></td> 
@@ -921,7 +929,7 @@ The `cq:inplaceEditing` node (node type `cq:InplaceEditingConfig`) defines an in
    <td><p>(<code>String</code>) Type d’éditeur. Les types disponibles sont les suivants :</p> 
     <ul> 
      <li>texte brut : à utiliser pour le contenu non HTML.<br /> </li> 
-     <li>title : est un éditeur de texte brut amélioré qui convertit les titres graphiques en texte brut avant le début de la modification. Utilisé par le composant title de Geometrixx.<br /> </li> 
+     <li>titre : est un éditeur de texte brut amélioré qui convertit les titres graphiques en texte brut avant que la modification ne commence. Utilisé par le composant title de Geometrixx.<br /> </li> 
      <li>text: to be used for HTML content (uses the Rich Text Editor).<br /> </li> 
     </ul> </td> 
   </tr> 
@@ -950,7 +958,7 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
   </tr> 
   <tr> 
    <td><code>beforedelete</code></td> 
-   <td>Le gestionnaire est déclenché avant la suppression du composant.<br /> </td> 
+   <td>Le gestionnaire est déclenché avant que le composant ne soit supprimé.<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -970,17 +978,17 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
   </tr> 
   <tr> 
    <td><code>beforeinsert</code></td> 
-   <td>Le gestionnaire est déclenché avant l’insertion du composant.<br /> Valide uniquement pour l’IU tactile.</td> 
+   <td>Le gestionnaire est déclenché avant l'insertion du composant.<br /> Valide uniquement pour l’IU tactile.</td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td><code>beforechildinsert</code></td> 
-   <td>Le gestionnaire est déclenché avant que le composant ne soit inséré dans un autre composant (uniquement).</td> 
+   <td>Le gestionnaire est déclenché avant que le composant ne soit inséré dans un autre composant (conteneurs uniquement).</td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td><code>afterdelete</code></td> 
-   <td>Le gestionnaire est déclenché une fois le composant supprimé.</td> 
+   <td>Le gestionnaire est déclenché après la suppression du composant.</td> 
    <td><code>REFRESH_SELF</code></td> 
   </tr> 
   <tr> 
@@ -995,7 +1003,7 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
   </tr> 
   <tr> 
    <td><code>afterinsert</code></td> 
-   <td>Le gestionnaire est déclenché une fois le composant inséré.</td> 
+   <td>Le gestionnaire est déclenché après l'insertion du composant.</td> 
    <td><code>REFRESH_INSERTED</code></td> 
   </tr> 
   <tr> 
@@ -1005,7 +1013,7 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
   </tr> 
   <tr> 
    <td><code>afterchildinsert</code></td> 
-   <td>Le gestionnaire est déclenché une fois que le composant est inséré dans un autre composant (uniquement).</td> 
+   <td>Le gestionnaire est déclenché après l’insertion du composant dans un autre composant (conteneurs uniquement).</td> 
    <td> </td> 
   </tr> 
  </tbody> 
