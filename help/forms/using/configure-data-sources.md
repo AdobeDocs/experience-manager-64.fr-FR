@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: f614e0e47d12f6155364e498cf5fd04c777a25c4
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 64%
+source-wordcount: '1410'
+ht-degree: 65%
 
 ---
 
@@ -45,12 +45,14 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    * Nom de classe Java pour le pilote JDBC
    * URI de connexion JDBC
    * Nom d’utilisateur et mot de passe pour établir la connexion avec le pilote JDBC
-   >[!NOTE] {grayBox=&quot;true&quot;}
+
+   >[!NOTE]
    >
    >Veillez à chiffrer les informations sensibles telles que les mots de passe avant de configurer la source de données. Pour chiffrer :
    >
    >1. Accédez à `https://[server]:[port]/system/console/crypto`.
    >1. Dans le champ **[!UICONTROL Texte brut]**, spécifiez le mot de passe ou toute chaîne à chiffrer et cliquez sur **[!UICONTROL Protéger]**.
+
    >
    >Le texte chiffré apparaît dans le champ Texte protégé que vous pouvez spécifier dans la configuration.
 
@@ -76,7 +78,8 @@ Vous pouvez configurer le profil utilisateur AEM à l’aide de la configuration
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
-   >[!NOTE] {grayBox=&quot;true&quot;}
+
+   >[!NOTE]
    >
    >The **&amp;ast;** in the above example denotes all nodes under the `profile/empLocation/` node in AEM user profile in CRXDE structure. It means that the form data model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. Toutefois, les nœuds qui contiennent la propriété spécifiée doivent suivre une structure cohérente.
 
@@ -158,6 +161,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 
    * URL racine du service pour le service OData à configurer.
    * Sélectionnez le type d’authentification — Aucun, OAuth2.0, Authentification de base ou Authentification personnalisée — pour accéder au service OData et, par conséquent, fournir les détails de l’authentification.
+
    >[!NOTE]
    >
    >Vous devez sélectionner le type d’authentification OAuth 2.0 pour vous connecter aux services Microsoft Dynamics à l’aide du point de terminaison OData en tant que racine du service.
