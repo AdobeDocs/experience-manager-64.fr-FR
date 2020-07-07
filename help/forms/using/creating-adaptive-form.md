@@ -9,9 +9,9 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 86%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 86%
 
 Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
-1. Accédez à l’instance Auteur d’AEM Forms à l’adresse `https://[server]:[port]/<custom-context-if-any>.`
+1. Accédez à l’instance d’auteur AEM Forms à l’adresse `https://[server]:[port]/<custom-context-if-any>.`
 
    ```
    
@@ -67,7 +67,7 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
    Pour plus d’informations sur l’interface de création de formulaires adaptatifs et les composants disponibles, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Autorisez les fenêtres indépendantes dans votre navigateur pour ouvrir le formulaire créé dans un nouvel onglet.
 
@@ -130,7 +130,7 @@ Procédez comme suit pour utiliser un schéma XML ou JSON comme modèle de formu
    * **[!UICONTROL Télécharger depuis un disque]** : sélectionnez cette option et appuyez sur Charger une définition de schéma pour parcourir et charger un schéma XML ou un schéma JSON à partir de votre système de fichiers. Le fichier de schéma chargé se trouve avec le formulaire et n’est pas accessible aux autres formulaires adaptatifs.
    * **[!UICONTROL Recherche dans le référentiel]** : sélectionnez cette option pour effectuer une sélection dans la liste fichiers de définition de schéma disponibles dans le référentiel. Sélectionnez le fichier de schéma XML ou JSON comme modèle de formulaire. Le schéma sélectionné sera associé au formulaire par référence et sera accessible pour une utilisation dans d’autres formulaires adaptatifs.
 
-   >[!CAUTION] {grayBox=&quot;true&quot;}
+   >[!CAUTION]
    >
    >Assurez-vous que le nom du schéma JSON se termine par **.schema.json**. Par exemple : mySchema.schema.json
 
