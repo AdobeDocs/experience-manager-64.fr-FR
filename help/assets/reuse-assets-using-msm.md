@@ -5,7 +5,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '3158'
 ht-degree: 85%
@@ -40,7 +40,7 @@ MSM entretient une relation dynamique entre la ressource source et ses Live Copi
 
 ### Glossaire des termes MSM pour Assets    {#glossary-msm-for-assets}
 
-* **Source :** Fichiers ou dossiers d’origine. Copie principale à partir de laquelle les copies dynamiques sont dérivées.
+* **Source :** Fichiers ou dossiers d’origine. Copie de Principal à partir de laquelle les copies en direct sont dérivées.
 
 * **Copie en direct :** Copie des fichiers/dossiers source synchronisés avec sa source. Les Live Copies peuvent être une source d’autres Live Copies. Découvrez [comment créer des Live Copies](#create-live-copy-asset).
 
@@ -253,9 +253,9 @@ AEM permet d’étendre la fonctionnalité à l’aide des API Java MSM. Pour As
 
 >[!NOTE]
 >
-> * Blueprint dans MSM pour Site est appelé Source Live Copy dans MSM pour Assets.
-> * La suppression de l’étape des chapitres dans l’assistant de création de site n’est pas prise en charge dans MSM pour Assets.
-> * La configuration des verrous MSM sur les propriétés de la page (IU tactile) n’est pas prise en charge dans MSM pour Assets.
+>* Blueprint dans MSM pour Site est appelé Source Live Copy dans MSM pour Assets.
+>* La suppression de l’étape des chapitres dans l’assistant de création de site n’est pas prise en charge dans MSM pour Assets.
+>* La configuration des verrous MSM sur les propriétés de la page (IU tactile) n’est pas prise en charge dans MSM pour Assets.
 
 
 ## Impact des tâches de gestion des ressources sur les Live Copies {#impact-of-asset-management-tasks-on-live-copies}
