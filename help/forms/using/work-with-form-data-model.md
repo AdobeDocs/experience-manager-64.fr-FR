@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 2ee45ac0-bc15-403a-93fc-c8592afb967d
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+workflow-type: tm+mt
+source-wordcount: '3150'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +22,7 @@ L’intégration de données fournit un éditeur de modèle de données de formu
 
 ![](do-not-localize/data-integeration.png)
 
-L’éditeur de modèle de données de formulaire fournit une interface utilisateur intuitive et des outils d’édition et de configuration d’un modèle de données de formulaire. L’éditeur vous permet d’ajouter et de configurer des objets, des propriétés et des services de modèles de données à partir de sources de données associées dans le modèle de données de formulaire. En outre, il vous permet de créer des objets et des propriétés de modèle de données sans sources de données et de les lier ultérieurement aux objets et propriétés de modèle de données respectifs. Vous pouvez également générer et modifier des exemples de données pour les propriétés d’objet de modèle de données que vous pouvez utiliser pour préremplir des formulaires adaptatifs et des communications interactives lors de la prévisualisation. Vous pouvez tester les objets et services de modèle de données configurés dans un modèle de données de formulaire afin de vous assurer de leur intégration correcte aux sources de données.
+L’éditeur de modèle de données de formulaire fournit une interface utilisateur intuitive et des outils d’édition et de configuration d’un modèle de données de formulaire. L’éditeur vous permet d’ajouter et de configurer des objets, des propriétés et des services de modèle de données provenant de sources de données associées dans le modèle de données de formulaire. En outre, il vous permet de créer des objets et des propriétés de modèle de données sans sources de données et de les lier ultérieurement aux objets et propriétés de modèle de données respectifs. Vous pouvez également générer et modifier des exemples de données pour les propriétés d’objet de modèle de données que vous pouvez utiliser pour préremplir des formulaires adaptatifs et des communications interactives lors de la prévisualisation. Vous pouvez tester les objets et services de modèle de données configurés dans un modèle de données de formulaire afin de vous assurer de leur intégration correcte aux sources de données.
 
 Si vous êtes novice en intégration de données Forms et n’avez pas configuré de source de données ou créé de modèle de données de formulaire, consultez les rubriques suivantes :
 
@@ -35,29 +38,29 @@ Lisez la suite pour plus de détails sur les diverses tâches et configurations 
 
 ## Ajouter des objets et des services de modèle de données {#add-data-model-objects-and-services}
 
-Si vous avez créé un modèle de données de formulaire avec des sources de données, vous pouvez utiliser l’éditeur de modèle de données de formulaire pour ajouter des objets et des services de modèle de données, configurer leurs propriétés, créer des associations entre les objets de modèle de données et tester le modèle de données de formulaire et les services.
+Si vous avez créé un modèle de données de formulaire avec des sources de données, vous pouvez utiliser l’éditeur de modèle de données de formulaire pour ajouter des objets et des services de modèle de données, configurer leurs propriétés, créer des associations entre les objets de modèle de données et tester le modèle et les services de données de formulaire.
 
 Vous pouvez ajouter des objets et des services de modèle de données à partir des sources de données disponibles dans le modèle de données de formulaire. Lorsque des objets de modèle de données ajoutés apparaissent dans l’onglet Modèle, les services ajoutés apparaissent dans l’onglet Services.
 
 Pour ajouter des objets et des services de modèle de données :
 
 1. Connectez-vous à l’instance d’auteur AEM, accédez à **[!UICONTROL Formulaires > Intégrations de données]** et ouvrez le modèle de données du formulaire dans lequel vous souhaitez ajouter des objets de modèle de données.
-1. Dans le volet Sources de données, développez les sources de données pour afficher les objets et services de modèle de données disponibles.
+1. Dans le volet Sources de données, développez les sources de données en vue des objets et services de modèles de données disponibles.
 1. Sélectionnez les objets et services de modèle de données que vous souhaitez ajouter au modèle de données de formulaire, puis appuyez sur **[!UICONTROL Ajouter la sélection]**.
 
-   ![selected-objets](assets/selected-objects.png)
+   ![objets sélectionnés](assets/selected-objects.png)
 
    L’onglet Modèle affiche une représentation graphique de tous les objets de modèle de données et de leurs propriétés ajoutées au modèle de données de formulaire. Chaque objet de modèle de données est représenté par une boîte dans le modèle de données de formulaire.
 
    ![model-tab](assets/model-tab.png)
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Vous pouvez conserver et faire glisser des boîtes d’objet de modèle de données pour les organiser dans la zone de contenu. Tous les objets de modèle de données ajoutés au modèle de données de formulaire sont grisés dans le volet Sources de données.
 
    L’onglet Services répertorie les services ajoutés.
 
-   ![service-tab](assets/services-tab.png)
+   ![service-onglet](assets/services-tab.png)
 
    >[!NOTE]
    >
@@ -65,7 +68,7 @@ Pour ajouter des objets et des services de modèle de données :
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer l’objet modèle de formulaire.
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Vous pouvez appeler les services que vous avez configurés dans l’onglet Services d’un modèle de données de formulaire à l’aide des règles de formulaire adaptatif. Les services configurés sont disponibles dans l’action Appeler les services de l’éditeur de règles. Pour plus d’informations sur l’utilisation de ces services dans des règles de formulaire adaptatif, voir les règles Appeler des services et Définir la valeur de dans l’[éditeur de règles](/help/forms/using/rule-editor.md).
 
@@ -79,7 +82,7 @@ Pour créer un objet de modèle de données sans sources de données :
 
 1. Connectez-vous à l’instance d’auteur AEM, accédez à **[!UICONTROL Formulaires > Intégrations de données]** et ouvrez le modèle de données du formulaire dans lequel vous souhaitez créer un objet ou une entité de modèle de données.
 1. Appuyez sur **[!UICONTROL Créer une entité]**.
-1. Dans la boîte de dialogue Créer un modèle de données de formulaire, spécifiez un nom pour l’objet de modèle de données de formulaire et appuyez sur **[!UICONTROL Ajouter]**. Un objet de modèle de données est ajouté au modèle de données de formulaire. Notez que l’objet de modèle de données récemment ajouté n’est lié à aucune source de données et ne possède aucune propriété, comme illustré dans l’illustration suivante.
+1. Dans la boîte de dialogue Créer un modèle de données de formulaire, spécifiez un nom pour l’objet de modèle de données de formulaire et appuyez sur **[!UICONTROL Ajouter]**. Un objet de modèle de données est ajouté au modèle de données de formulaire. Notez que l’objet de modèle de données récemment ajouté n’est pas lié à une source de données et n’a aucune propriété, comme illustré dans l’illustration suivante.
 
    ![nouvelle entité](assets/new-entity.png)
 
@@ -165,9 +168,9 @@ Pour lire et écrire des données pour un objet de modèle de données, procéde
 
 Généralement, des associations sont créées entre des objets de modèle de données dans une source de données. L’association peut lier un objet à un autre ou à plusieurs objets. Par exemple, plusieurs personnes à charge peuvent être associées à un employé. Il s’agit d’une association d’un objet à plusieurs objets, désignée par `1:n` sur la ligne reliant les objets de modèle de données associés. Toutefois, si une association renvoie un nom d’employé unique pour un ID d’employé donné, elle est appelée association un-à-un.
 
-Lorsque vous ajoutez des objets de modèle de données associés dans une source de données à un modèle de données de formulaire, leurs associations sont conservées et affichées sous forme de lignes de flèche. Vous pouvez ajouter des associations entre des objets de modèle de données dans des sources de données disparates dans un modèle de données de formulaire.
+Lorsque vous ajoutez des objets de modèle de données associés dans une source de données à un modèle de données de formulaire, leurs associations sont conservées et affichées sous forme de lignes de flèche. Vous pouvez ajouter des associations entre des objets de modèle de données à travers des sources de données disparates dans un modèle de données de formulaire.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >Les associations prédéfinies dans une source de données JDBC ne sont pas conservées dans le modèle de données de formulaire. Vous devez les créer manuellement.
 
@@ -190,9 +193,10 @@ Pour ajouter une association :
 1. Dans le volet Ajouter une association :
 
    * Spécifiez un titre pour l’association.
-   * Sélectionnez le type d&#39;association — Un pour un ou un pour plusieurs.
+   * Sélectionnez le type d&#39;association : Un à un ou Un à plusieurs.
    * Sélectionnez l’objet de modèle de données à associer.
    * Sélectionnez le service de lecture pour lire les données de l’objet de modèle sélectionné. L’argument de service de lecture apparaît. Modifiez l’argument, si nécessaire, et liez-le à la propriété de l’objet de modèle de données à associer.
+
    Dans l’exemple suivant, l’argument par défaut pour le service de lecture de l’objet de modèle de données Personnes à charge est `dependentid`.
 
    ![add-association-exemple](assets/add-association-example.png)
@@ -210,7 +214,7 @@ Pour ajouter une association :
 1. Appuyez sur **[!UICONTROL Terminé]** pour enregistrer l’association, puis sur **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire.
 1. Répétez les étapes pour créer plus d’associations si nécessaire.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >L’association ajoutée apparaît dans la zone d’objet de modèle de données avec le titre spécifié et une ligne reliant les objets de modèle de données associés.
 >
@@ -218,7 +222,7 @@ Pour ajouter une association :
 
 ![association ajoutée](assets/added-association.png)
 
-## Modifier les propriétés {#properties}
+## Modification des propriétés {#properties}
 
 Vous pouvez modifier les propriétés des objets de modèle de données, leurs propriétés et les services ajoutés dans le modèle de données de formulaire.
 
@@ -230,6 +234,7 @@ Pour modifier les propriétés :
    * **Objet de modèle de données** : spécifiez les services de lecture et d’écriture et modifiez les arguments.
    * **Propriété** : spécifiez le type, le sous-type et le format de la propriété. Vous pouvez également spécifier si la propriété sélectionnée est la clé principale de l’objet de modèle de données.
    * **Service** : spécifiez l’objet de modèle d’entrée, le type de sortie et les arguments du service. Pour un service Get, vous pouvez spécifier s’il doit renvoyer un tableau.
+
    ![edit-properties-service](assets/edit-properties-service.png)
 
    Boîte de dialogue Modifier les propriétés pour un service get
@@ -249,7 +254,7 @@ Par exemple, vous pouvez créer une propriété calculée **FullName** dont la v
 
    La propriété calculée FullName est créée. Identifiez l’icône en regard de la propriété comme illustration d’une propriété calculée.
 
-   ![calculted-prop](assets/computed-prop.png)
+   ![prop calculé](assets/computed-prop.png)
 
 1. Sélectionnez la propriété FullName et appuyez sur **[!UICONTROL Modifier la règle]**. Une fenêtre Editeur de règles s’ouvre.
 1. Dans la fenêtre Editeur de règles, cliquez sur **[!UICONTROL Créer]**. Une fenêtre de règles **[!UICONTROL Définir la valeur]** s’ouvre.
