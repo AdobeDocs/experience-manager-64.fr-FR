@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 92%
@@ -29,7 +29,7 @@ L’exemple présenté dans ce document est une implémentation de référence d
 >
 >* Les exemples et les configurations décrits dans ce document correspondent à MySQL 5.6.24 et vous devez les remplacer de manière appropriée selon votre système de base de données. 
 >* Vérifiez que vous avez installé la dernière version du package complémentaire AEM Forms. Pour obtenir la liste des packages disponibles, consultez l’article sur les [versions d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
-> * L’exemple de package fonctionne uniquement avec les actions d’envoi Formulaires adaptatifs.
+>* L’exemple de package fonctionne uniquement avec les actions d’envoi Formulaires adaptatifs.
 
 
 ## Installer et configurer l’exemple {#set-up-and-configure-the-sample}
