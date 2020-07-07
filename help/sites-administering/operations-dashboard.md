@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
 translation-type: tm+mt
-source-git-commit: 6eb03b035793a21eafd120ac848a6d62eaf6e6ec
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '6231'
 ht-degree: 78%
@@ -106,11 +106,11 @@ La création d’un contrôle de l’intégrité individuel comprend deux étape
 
    Les propriétés ci-dessous doivent être définies sur le nouveau nœud :
 
-   * **Nom (name) :**`sling:resourceType`
+   * **Nom:** `sling:resourceType`
 
       * **Type:** `String`
       * **Valeur:** `granite/operations/components/mbean`
-   * **Nom (name) :**`resource`
+   * **Nom:** `resource`
 
       * **Type:** `String`
       * **Valeur:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
@@ -163,17 +163,17 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
 
    Par exemple, si vous avez créé une configuration et défini la valeur **hc.mbean.name** sur **diskusage**, les nœuds de configuration se présentent comme suit :
 
-   * **Nom (name) :**`Composite Health Check`
+   * **Nom:** `Composite Health Check`
 
       * **Type:** `nt:unstructured`
 
    Avec les propriétés suivantes :
 
-   * **Nom (name) :**`sling:resourceType`
+   * **Nom:** `sling:resourceType`
 
       * **Type:** `String`
       * **Valeur:** `granite/operations/components/mbean`
-   * **Nom (name) :**`resource`
+   * **Nom:** `resource`
 
       * **Type:** `String`
       * **Valeur:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
@@ -595,7 +595,7 @@ Il est possible également de purger les workflows à partir du tableau de bord 
 
 >[!NOTE]
 >
-> Pour plus d’informations sur la maintenance du workflow, consultez [cette page](workflows-administering.md#regular-purging-of-workflow-instances).
+>Pour plus d’informations sur la maintenance du workflow, consultez [cette page](workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Maintenance des journaux d’audit {#audit-log-maintenance}
 
