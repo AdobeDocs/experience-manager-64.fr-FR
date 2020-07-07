@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
 translation-type: tm+mt
-source-git-commit: 1d1914f760e3d77350665ab55025266e79d9f0fe
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '2178'
+ht-degree: 76%
 
 ---
 
@@ -31,7 +34,7 @@ Avant de démarrer la mise à niveau, il est important de suivre les tâches de 
 * [Désactivez les tâches planifiées personnalisées](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
 * [Effectuez un nettoyage des révisions hors ligne](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
 * [Exécutez le nettoyage de la mémoire de l’entrepôt de données](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
-* [Mettre à niveau le schéma de base de données si nécessaire](pre-upgrade-maintenance-tasks.md#upgrade-the-database-schema-if-needed)
+* [Mettre à niveau le Schéma de base de données si nécessaire](pre-upgrade-maintenance-tasks.md#upgrade-the-database-schema-if-needed)
 * [Suppression des utilisateurs susceptibles de gêner la mise à niveau](pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
 * [Effectuez la rotation des fichiers journaux](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
 
@@ -186,12 +189,12 @@ Vous trouverez ci-dessous la liste de toutes les méthodes disponibles offertes 
   </tr> 
   <tr> 
    <td><code>runAllPreUpgradeTasks()</code></td> 
-   <td>ACTION</td> 
+   <td>ACTION </td> 
    <td>Exécute toutes les tâches de maintenance de la liste avant la mise à niveau.</td> 
   </tr> 
   <tr> 
    <td><code>runPreUpgradeTask(preUpgradeTaskName)</code></td> 
-   <td>ACTION</td> 
+   <td>ACTION </td> 
    <td>Exécute la tâche de maintenance avant la mise à niveau avec le nom donné en tant que paramètre.</td> 
   </tr> 
   <tr> 
@@ -206,22 +209,22 @@ Vous trouverez ci-dessous la liste de toutes les méthodes disponibles offertes 
   </tr> 
   <tr> 
    <td><code>getPreUpgradeTaskLastRunTime(preUpgradeTaskName)</code></td> 
-   <td>ACTION</td> 
+   <td>ACTION </td> 
    <td>Affiche l’heure exacte d’exécution de la tâche de maintenance avant la mise à niveau avec le nom donné en tant que paramètre.</td> 
   </tr> 
   <tr> 
    <td><code>getPreUpgradeTaskLastRunState(preUpgradeTaskName)</code></td> 
-   <td>ACTION</td> 
+   <td>ACTION </td> 
    <td>Affiche le dernier état d’exécution de la tâche de maintenance avant la mise à niveau, avec le nom donné en tant que paramètre.</td> 
   </tr> 
   <tr> 
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td> 
-   <td>ACTION</td> 
+   <td>ACTION </td> 
    <td><p>Runs all the pre-upgrade health checks and saves their status in a file named <code>preUpgradeHCStatus.properties</code> that is located in the sling home path. If the <code>shutDownOnSuccess</code> parameter is set to <code>true</code>, the AEM instance will be shut down, but only if all the pre-upgrade health checks have an OK status.</p> <p>Le fichier des propriétés est utilisé comme prérequis pour une future mise à niveau<br /> et le processus de mise à niveau est interrompu si l’exécution de la vérification de l’intégrité avant la mise à niveau<br /> échoue. Si vous souhaitez ignorer le résultat des vérifications d’intégrité<br /> avant la mise à niveau et lancer la mise à niveau, vous pouvez supprimer le fichier.</p> </td> 
   </tr> 
   <tr> 
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td> 
-   <td>ACTION</td> 
+   <td>ACTION </td> 
    <td>Répertorie tous les modules importés qui ne fonctionneront plus<br /> lors du passage à la version d’AEM spécifiée. La version cible d’AEM doit être<br /> fournie en tant que paramètre. </td> 
   </tr> 
  </tbody> 
@@ -234,6 +237,7 @@ Vous trouverez ci-dessous la liste de toutes les méthodes disponibles offertes 
 >* La console JMX
 >* Toute application externe qui se connecte à JMX
 >* cURL
+
 >
 
 
@@ -311,45 +315,45 @@ Après l’exécution du nettoyage des révisions sur les instances CRX3, vous d
 
 >[!NOTE]
 >
->Cette tâche de maintenance préalable à la mise à niveau n’est nécessaire que si :
+>Cette tâche de maintenance antérieure à la mise à niveau n&#39;est nécessaire que si :
 >
-> * Vous effectuez une mise à niveau à partir des versions d’AEM antérieures à AEM 6.3
-> * Vous rencontrez les erreurs mentionnées ci-dessous lors de la mise à niveau.
+>* Vous effectuez une mise à niveau à partir des versions d’AEM antérieures à AEM 6.3.
+>* Vous rencontrez les erreurs mentionnées ci-dessous lors de la mise à niveau.
 
 
-Dans certains cas exceptionnels, les utilisateurs du service peuvent se retrouver dans des versions plus anciennes d’AEM incorrectement balisées en tant qu’utilisateurs réguliers.
+Il existe des cas exceptionnels où les utilisateurs du service peuvent se retrouver dans des versions plus anciennes d’AEM mal balisées en tant qu’utilisateurs réguliers.
 
-Dans ce cas, la mise à niveau échoue avec un message comme celui-ci :
+Si cela se produit, la mise à niveau échoue avec un message comme celui-ci :
 
 `ERROR [Apache Sling Repository Startup Thread] com.adobe.granite.repository.impl.SlingRepositoryManager Exception in a SlingRepositoryInitializer, SlingRepository service registration aborted
 java.lang.RuntimeException: Unable to create service user [communities-utility-reader]:java.lang.RuntimeException: Existing user communities-utility-reader is not a service user.`
 
-Pour résoudre ce problème, procédez comme suit :
+Pour résoudre ce problème, veillez à effectuer les opérations suivantes :
 
-Pour résoudre ce problème, procédez comme suit :
+Pour résoudre ce problème, veillez à effectuer les opérations suivantes :
 
 * Détacher l’instance du trafic de production
-* Créez une sauvegarde des utilisateurs à l’origine du problème. Vous pouvez le faire via Package Manager. For more information, see [How to Work with Packages](/help/sites-administering/package-manager.md).
-* Supprimez le ou les utilisateurs à l’origine du problème. Vous trouverez ci-dessous la liste des utilisateurs qui pourraient appartenir à cette catégorie :
-   * dynamic-media-réplication
+* Créez une sauvegarde du ou des utilisateurs à l’origine du problème. Vous pouvez le faire via Package Manager. For more information, see [How to Work with Packages](/help/sites-administering/package-manager.md).
+* Supprimez le ou les utilisateurs à l’origine du problème. Vous trouverez ci-dessous une liste d’utilisateurs susceptibles de tomber sous cette catégorie :
+   * réplication dynamique-multimédia
    * communautés-ugc-writer
-   * communautés-utilitaire-lecteur
+   * communautés-utilitaire-reader
    * communautés-utilisateur-admin
    * oauthservice
-   * sling-scripting
+   * sling-script
 
-## Mettre à niveau le schéma de base de données si nécessaire {#upgrade-the-database-schema-if-needed}
+## Mettre à niveau le Schéma de base de données si nécessaire {#upgrade-the-database-schema-if-needed}
 
-En règle générale, la pile Apache Oak sous-jacente utilisée par AEM pour la persistance s’occupera de la mise à niveau du schéma de base de données si nécessaire.
+En règle générale, la pile Apache Oak sous-jacente utilisée par AEM pour la persistance prend en charge la mise à niveau du schéma de base de données si nécessaire.
 
-Cependant, des cas peuvent se produire lorsque le schéma ne peut pas être mis à niveau automatiquement. Il s’agit principalement d’environnements de haute sécurité dans lesquels la base de données est exécutée sous un utilisateur avec des privilèges très limités. Si cela se produit, AEM continuera à utiliser l’ancien schéma.
+Cependant, il peut arriver que le schéma ne puisse pas être mis à niveau automatiquement. Il s&#39;agit principalement d&#39;environnements de sécurité élevée où la base de données s&#39;exécute sous un utilisateur avec des privilèges très limités. Si cela se produit, AEM continuera à utiliser l’ancien schéma.
 
 Pour éviter cela, vous devez mettre à niveau le schéma en suivant la procédure ci-dessous :
 
 1. Arrêtez l’instance AEM qui doit être mise à niveau.
-1. Mettez à niveau le schéma de base de données. Consultez la documentation relative au type de base de données afin de connaître les outils dont vous avez besoin pour y parvenir.
+1. Mettez à niveau le schéma de base de données. Veuillez consulter la documentation relative au type de base de données afin de connaître les outils dont vous avez besoin pour ce faire.
 
-   Pour plus d’informations sur la façon dont Oak gère les mises à niveau de schémas, voir [cette page sur le site Web](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade)d’Apache.
+   Pour plus d&#39;informations sur la façon dont Oak gère les mises à niveau de schéma, consultez [cette page sur le site Web](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade)d&#39;Apache.
 
 1. Passez à la mise à niveau d’AEM.
 
