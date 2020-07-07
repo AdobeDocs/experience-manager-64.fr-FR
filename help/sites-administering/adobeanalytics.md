@@ -1,6 +1,6 @@
 ---
-title: Intégration à Adobe Analytics
-seo-title: Intégration à Adobe Analytics
+title: Intégration à Adobe Analytics
+seo-title: Intégration à Adobe Analytics
 description: Découvrez comment intégrer AEM à Adobe Analytics.
 seo-description: Découvrez comment intégrer AEM à Adobe Analytics.
 uuid: 8329d891-1897-46f6-80ee-40244b079c0e
@@ -10,17 +10,20 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 0089394f-0107-49eb-ad73-52e9cabe71b1
 translation-type: tm+mt
-source-git-commit: ee380780bb7b62d348051b29edb9d13e14407377
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 94%
 
 ---
 
 
-# Intégration à Adobe Analytics{#integrating-with-adobe-analytics}
+# Intégration à Adobe Analytics{#integrating-with-adobe-analytics}
 
 L’intégration d’Adobe Analytics et d’AEM vous permet de suivre votre activité de pages web :
 
 * Une configuration Adobe Analytics permet à AEM de s’authentifier avec Adobe Analytics.
-* Une structure identifie les données envoyées à votre suite de rapports Adobe Analytics.
+* Une structure identifie les données envoyées à votre suite de rapports Adobe Analytics.
 
 Les données incluent la page et les données sur l’utilisateur, par exemple :
 
@@ -40,26 +43,25 @@ Vous pouvez également utiliser l’[assistant de souscription](/help/sites-admi
 
 >[!NOTE]
 >
->Voir également l’article de procédures : [Intégration d’AEM avec Adobe Target et Analytics à l’aide de la gestion dynamique des balises](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Voir également l’article de procédures : [Intégration d’AEM avec Adobe Target et Analytics à l’aide de la gestion dynamique des balises](https://helpx.adobe.com/fr/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Informations supplémentaires {#further-information}
 
 Voir :
 
-* [Extension de l’intégration](/help/sites-developing/extending-analytics.md) Adobe Analytics pour en savoir plus sur le développement de composants qui collectent des données utilisateur et personnalisent la structure Adobe Analytics.
-* The knowledge base article, [Adobe Analytics integration - troubleshooting issues](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), for information about troubleshooting your Adobe Analytics integration.
+* [Extension de l’intégration à Adobe Analytics](/help/sites-developing/extending-analytics.md) pour plus d’informations sur le développement de composants qui collectent des données utilisateur et la personnalisation de la structure d’Adobe Analytics.
+* L’article de la base de connaissances, [Intégration Adobe Analytics : résolution des incidents ](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html) pour plus d’informations concernant le dépannage de votre intégration Adobe Analytics.
 
 >[!NOTE]
 >
->Si vous utilisez Adobe Analytics avec une configuration de proxy personnalisée, vous devez [configurer deux lots OSGi](/help/sites-deploying/configuring-osgi.md) (par exemple, avec la console web) requis pour les configurations de proxy **Apache HTTP Client**. Les deux lots sont requis, car certaines fonctionnalités d’AEM utilisent les API 3.x, tandis que d’autres utilisent les API 4.x. Configurer :
+>Si vous utilisez Adobe Analytics avec une configuration de proxy personnalisée, vous devez [configurer deux lots OSGi](/help/sites-deploying/configuring-osgi.md) (par exemple, avec la console web) requis pour les configurations de proxy **Apache HTTP Client**. Les deux lots sont requis, car certaines fonctionnalités d’AEM utilisent les API 3.x, tandis que d’autres utilisent les API 4.x. Configurer:
 >
->* **Day Commons HTTP Client 3.1** pour configurer l&#39;API 3.x ;\
+>* **Day Commons HTTP Client 3.1** pour configurer l’API 3.x ;\
    >  for example, [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
    >
    >
-* **Configuration** du proxy des composants HTTP Apache pour configurer l&#39;API 4.x ;\
-   >  for example, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+* **Apache HTTP Components Proxy Configuration** pour configurer l’API 4.x ;
 >
-
-
+>  
+for example, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 
