@@ -10,10 +10,10 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 89%
+source-wordcount: '849'
+ht-degree: 79%
 
 ---
 
@@ -50,14 +50,16 @@ Vous pouvez effectuer une mise à niveau directe à partir d’AEM 6.2 Forms o
 
 1. Installation du module complémentaire AEM Forms. Les étapes sont énumérées ci-dessous :
 
-   1. Connectez-vous au serveur AEM en tant qu’administrateur, puis ouvrez le partage de package. L’URL par défaut du partage de package est `https://[server]:[port]/crx/packageshare`.
-   1. Dans le partage de package, recherchez les **[!UICONTROL packages de modules complémentaires d’AEM 6.4 Forms]**, cliquez sur le package correspondant à votre système d’exploitation, puis sur **[!UICONTROL Télécharger]**. Lisez et acceptez l’accord de licence, puis cliquez sur **[!UICONTROL OK]**. Le téléchargement démarre. Une fois le téléchargement effectué, le mot **[!UICONTROL Téléchargé]** apparaît en regard du package.
+   1. Distribution [](https://experience.adobe.com/downloads)de logiciels ouverts. Vous avez besoin d&#39;un Adobe ID pour vous connecter à la distribution de logiciels.
+   1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
+   1. In the **[!UICONTROL Filters]** section:
+      1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]** .
+      1. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option Téléchargements **[!UICONTROL de]** recherche pour filtrer les résultats.
+   1. Appuyez sur le nom du pack applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes]** du contrat de licence de l’utilisateur final et appuyez sur **[!UICONTROL Télécharger]**.
+   1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+   1. Select the package and click **[!UICONTROL Install]**.
 
-      Alternately, you can also use the hyperlinks listed in [AEM Forms releases](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) to manually download a package.
-
-   1. Une fois le téléchargement terminé, cliquez sur **[!UICONTROL Téléchargé]**. Vous êtes redirigé vers le gestionnaire de package. Dans le gestionnaire de packages, recherchez le package téléchargé, puis cliquez sur **[!UICONTROL Installer]**.
-
-      Si vous téléchargez manuellement le package à l’aide du lien direct répertorié dans les [versions d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html), ouvrez AEM Package Manager, cliquez sur **[!UICONTROL Télécharger le package]**, sélectionnez le package téléchargé et cliquez sur Télécharger. After the package is uploaded, click package name, and click **[!UICONTROL Install]**.
+      Vous pouvez également télécharger le package à l’aide du lien direct répertorié dans l’article [AEM Forms Release](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) .
 
       >[!NOTE]
       >
@@ -74,7 +76,7 @@ Vous pouvez effectuer une mise à niveau directe à partir d’AEM 6.2 Forms o
 
    * **Exécuter l’utilitaire de migration**
 
-      L’utilitaire de migration rend les formulaires adaptatifs et les actions de gestion de la correspondance des versions antérieures compatibles avec les formulaires AEM 6.4. Vous pouvez télécharger l’utilitaire à partir du partage de package AEM. Pour des informations détaillées sur la configuration et l’utilisation de l’utilitaire de migration, voir [l’utilitaire de migration](/help/forms/using/migration-utility.md).
+      L’utilitaire de migration rend les formulaires adaptatifs et les actions de gestion de la correspondance des versions antérieures compatibles avec les formulaires AEM 6.4. Vous pouvez télécharger l’utilitaire à partir de la distribution de logiciels AEM. Pour des informations détaillées sur la configuration et l’utilisation de l’utilitaire de migration, voir [l’utilitaire de migration](/help/forms/using/migration-utility.md).
 
       Si vous utilisez [Exemple pour l’intégration du composant brouillons et envois](integrate-draft-submission-database.md) avec la base de données et que vous mettez à niveau à partir d’une version précédente, exécutez les requêtes SQL suivantes après avoir effectué la mise à niveau :
 
