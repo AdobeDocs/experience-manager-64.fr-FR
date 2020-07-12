@@ -9,25 +9,30 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 85048fe4-ca1b-41fa-8e19-6eeb8dd09962
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+workflow-type: tm+mt
+source-wordcount: '940'
+ht-degree: 67%
 
 ---
 
 
 # Configuration du projet Visual Studio et création d’une application Windows {#set-up-the-visual-studio-project-and-build-the-windows-app}
 
-AEM Forms fournit le code source complet de l’application AEM Forms. La source contient tous les composants nécessaires pour générer une application d’espace de travail personnalisée. The source code archive, `adobe-lc-mobileworkspace-src-<version>.zip`is a part of the `adobe-aemfd-forms-app-src-pkg-<version>.zip` package on package share.
+AEM Forms fournit le code source complet de l’application AEM Forms. La source contient tous les composants nécessaires pour générer une application d’espace de travail personnalisée. L&#39;archive du code source `adobe-lc-mobileworkspace-src-<version>.zip`fait partie du `adobe-aemfd-forms-app-src-pkg-<version>.zip` package sur la distribution de logiciels.
 
 Pour obtenir le code source de l’application AEM Forms, suivez les étapes ci-après :
 
-1. Accéder au partage de package
+1. Distribution [](https://experience.adobe.com/downloads)de logiciels ouverts. Vous avez besoin d&#39;un Adobe ID pour vous connecter à la distribution de logiciels.
+1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
+1. In the **[!UICONTROL Filters]** section:
+   1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]** .
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option Téléchargements **[!UICONTROL de]** recherche pour filtrer les résultats.
+1. Appuyez sur le nom du pack applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes]** du contrat de licence de l’utilisateur final et appuyez sur **[!UICONTROL Télécharger]**.
+1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Select the package and click **[!UICONTROL Install]**.
 
-   URL: `https://<server>:<port>/crx/packageshare`.
-
-1. Téléchargez le package source. Lorsque vous téléchargez le package, il est ajouté au gestionnaire de package AEM Forms.
-1. Une fois téléchargé, accédez à : `https://<server>:<port>/crx/packmgr/index.jsp`, puis installez `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
-
-1. Pour télécharger l’archive du code source, ouvrez `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` dans votre navigateur.
+1. Pour télécharger l’archive du code source, ouvrez- `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` la dans votre navigateur.
 
    Le package source est téléchargé sur votre périphérique.
 
@@ -37,7 +42,7 @@ L&#39;image suivante affiche le contenu extrait du fichier`adobe-lc-mobileworksp
 
 The following image displays the directory structure of the `windows` folder in the `src` folder.
 
-![win-dir](assets/win-dir.png)
+![rép_win](assets/win-dir.png)
 
 ## Configuration de l’environnement {#setting-up-the-environment}
 
@@ -62,7 +67,7 @@ Suivez les étapes ci-après pour générer et déployer l’application AEM For
 
 >[!NOTE]
 >
->Les données stockées sur le système de fichiers Windows de l’application AEM Forms ne sont pas chiffrées. Il est recommandé d’utiliser un outil tiers, tel que le chiffrement de lecteur Windows BitLocker, pour chiffrer les données du disque.
+>Les données stockées sur le système de fichiers Windows de l’application AEM Forms ne sont pas chiffrées. Il est recommandé d’utiliser un outil tiers, tel que Windows BitLocker Drive Encryption, pour chiffrer les données du disque.
 
 1. In the Visual Studio Standard Toolbar, select **Release** from the drop-down for build mode.
 
@@ -91,11 +96,13 @@ Suivez les étapes ci-après pour générer et déployer l’application AEM For
 
    * Windows PowerShell
    * Visual Studio
+
    The `.appx` package requires the following items to install successfully:
 
    1. Bibliothèque WinJS
    1. Assurez-vous que le package s’accompagne d’un certificat auto-signé ou qu’une autorité approuvée, telle que VeriSign, a signé le certificat public.
    1. Licence de développeur
+
    Le répertoire Platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test contient les quatre composants principaux suivants :
 
    1. `.appx` approuvé
