@@ -1,14 +1,17 @@
 ---
 title: Thèmes de référence
 seo-title: Thèmes de référence
-description: 'AEM Forms fournit les thèmes de formulaires adaptatifs que vous pouvez obtenir à partir du partage de package et utiliser pour donner un style à un formulaire. '
-seo-description: 'AEM Forms fournit les thèmes de formulaires adaptatifs que vous pouvez obtenir à partir du partage de package et utiliser pour donner un style à un formulaire. '
+description: 'AEM Forms fournit des thèmes de formulaires adaptatifs que vous pouvez obtenir de la distribution de logiciels et utiliser pour mettre en forme un formulaire. '
+seo-description: 'AEM Forms fournit des thèmes de formulaires adaptatifs que vous pouvez obtenir de la distribution de logiciels et utiliser pour mettre en forme un formulaire. '
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 78d7d4b6-95dd-429b-870b-30aba5a3fea3
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 81%
 
 ---
 
@@ -37,7 +40,7 @@ For more information on installing the package, see [How to Work With Packages](
 ## Beryl {#beryl}
 
 Le thème Beryl est utilisé par le [formulaire adaptatif We.Gov](/help/forms/using/gov-reference-site-walkthrough.md) et souligne l’utilisation d’une image d’arrière-plan, de la transparence et de grandes icônes aplaties. Dans la capture d’écran ci-dessous, vous pouvez voir à quoi ressemble le thème Beryl, et comment il peut augmenter le style de votre formulaire.
-![Thème](assets/beryl.png)Beryl[Cliquez pour agrandir](assets/beryl-1.png)
+![Béryl theme](assets/beryl.png)[Click pour élargir](assets/beryl-1.png)
 
 ## Exec {#exec}
 
