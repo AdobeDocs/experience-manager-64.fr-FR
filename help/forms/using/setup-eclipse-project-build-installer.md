@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 translation-type: tm+mt
-source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 63%
+source-wordcount: '743'
+ht-degree: 55%
 
 ---
 
@@ -27,13 +27,18 @@ Effectuez les étapes suivantes dans l’ordre recommandé pour créer l’appli
 
 ## Téléchargement du package de code source de l’application AEM Forms {#download-android-zip}
 
-AEM Forms App Source Code Package refers to the `adobe-lc-mobileworkspace-src-<version>.zip` archive. Cette archive comprend le code source requis pour créer une application AEM Forms personnalisée. The archive is included in the `adobe-aemfd-forms-app-src-pkg-<version>.zip`package available on the package share.
+AEM Forms App Source Code Package refers to the `adobe-lc-mobileworkspace-src-<version>.zip` archive. Cette archive comprend le code source requis pour créer une application AEM Forms personnalisée. L&#39;archive est incluse dans le `adobe-aemfd-forms-app-src-pkg-<version>.zip`package disponible sur la distribution de logiciels.
 
 Perform the following steps to download the `adobe-aemfd-forms-app-src-pkg-<version>.zip` file:
 
-1. Log in to the author instance of the [AEM server](http://localhost:4502/) as an administrator and open [package share](http://localhost:4502/crx/packageshare). Vous avez besoin d’un Adobe ID pour vous connecter au partage de package.
-1. In [AEM package share](http://localhost:4502/crx/packageshare/login.html), search `adobe-aemfd-forms-app-src-pkg-<version>.zip`, click the package applicable to your operating system, and click **Download**. Lisez et acceptez l’accord de licence, puis cliquez sur **OK**. Le téléchargement démarre. Une fois le téléchargement effectué, le mot **Téléchargé** apparaît en regard du package.
-1. Une fois le téléchargement terminé, cliquez sur **Téléchargé**. Vous êtes redirigé vers le gestionnaire de package. Dans le gestionnaire de packages, recherchez le package téléchargé, puis cliquez sur **Installer**.
+1. Distribution [](https://experience.adobe.com/downloads)de logiciels ouverts. Vous avez besoin d&#39;un Adobe ID pour vous connecter à la distribution de logiciels.
+1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
+1. In the **[!UICONTROL Filters]** section:
+   1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]** .
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option Téléchargements **[!UICONTROL de]** recherche pour filtrer les résultats.
+1. Appuyez sur le nom du pack applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes]** du contrat de licence de l’utilisateur final et appuyez sur **[!UICONTROL Télécharger]**.
+1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Select the package and click **[!UICONTROL Install]**.
 1. To download the source-code archive, open **https://&lt;server>:&lt;port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-&lt;version>.zip** in your browser. Le fichier .zip de l’application Android est téléchargé sur votre appareil.
 1. Extrayez le contenu du fichier .zip dans un dossier de votre système de fichiers local. For example, *C:\Folder Structure\adobe-lc-mobileworkspace-src-2.4.20*
 
