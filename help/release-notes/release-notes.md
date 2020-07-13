@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2745'
 ht-degree: 86%
 
 ---
@@ -290,7 +290,7 @@ Pour plus d’informations, consultez la page des notes de mise à jour d’[AEM
 
 Vous pouvez intégrer Livefyre à votre instance AEM 6.4. Vous trouverez des informations sur la façon d’intégrer Livefyre à AEM en suivant ce lien :
 
-* [Intégration de Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)
+* [Intégration de Livefyre](https://helpx.adobe.com/fr/experience-manager/6-4/sites/administering/using/livefyre.html)
 
 ### Tirer parti du développement axé sur le client {#leverage-customer-focused-development}
 
