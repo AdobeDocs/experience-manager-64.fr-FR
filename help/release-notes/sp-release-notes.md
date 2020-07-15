@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 98d52be43b1668b0f16ae18fc82402acc1058a38
+source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
 workflow-type: tm+mt
-source-wordcount: '21555'
+source-wordcount: '21534'
 ht-degree: 25%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 25%
 | Version | 6.4.8.0 |
 | Type | Version du Service Pack |
 | Date  | 5 mars 2020 |
-| URL de téléchargement | AEM 6.4.8.0 sur [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/AEM-6.4.8.0-Service-Pack), distribution [de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| URL de téléchargement | AEM 6.4.8.0 sur la distribution de [logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Fonctionnalités présentes dans AEM 6.4.8.0 {#what-s-included-in-aem}
 
@@ -1543,7 +1543,7 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 
 * Un type dans le lot SymbolicName conduit à un lot de duplicata. Correctif pour Granite-22155
 * CUGConfiguration ne peut pas récupérer CugExclude. Correctif pour Granite-21109
-* Redémarrage de Adobe Granite Workflow Core redémarre les étapes du workflow à partir du milieu, créant des workflows inutiles. NPR-25057 : correctif pour Granite-22218
+* Redémarrage de Adobe Granite Workflow Core Relance les étapes du workflow à partir du milieu, créant des workflows inutiles. NPR-25057 : correctif pour Granite-22218
 * JcrResourceBundle ne prend pas correctement en charge plusieurs noms de base. NPR-25245 : correctif pour Granite-22317
 * Lors de l’installation des packages de contenu, les ACL sont regroupées par entité de sécurité, ce qui rompt le modèle d’autorisation. NPR-24583 : correctif pour Granite-21591
 * Mettez Jetty à jour vers la version 9.4.11 pour corriger les vulnérabilités. NPR-25030 : correctif pour Granite-22120
@@ -2028,7 +2028,7 @@ Les principaux aspects pour AEM Forms sont les suivants :
 **Correspondence Management**
 
 * Légendes supprimées du modèle de lettre après modification d’un actif de texte contenant des espaces réservés. NPR-24196
-* Le fichier XDP, lorsqu’il est téléchargé et utilisé comme mise en page pour les modèles de lettre, ne parvient pas à prévisualisation ou à modifier les modèles. NPR-24143 : correctif pour CQ-4244407
+* Le fichier XDP, lorsqu’il est téléchargé et utilisé comme mise en page pour les modèles de lettre, ne parvient pas à prévisualisation ni à modifier les modèles. NPR-24143 : correctif pour CQ-4244407
 * La sélection d’affectation est sélectionnée par défaut dans le fragment de liste. Correctif pour CQ-4240097
 * Éditeur de conditions : l’évaluation de plusieurs résultats doit être activée par défaut. Correctif pour CQ-4240096
 * L&#39;image supprimée de la Liste affiche toujours l&#39;image en prévisualisation. Correctif pour CQ-4239909
@@ -2106,8 +2106,8 @@ Liste des packages de contenu inclus dans AEM 6.4.1.0
 >
 >Utilisateurs ayant installé Feature Packs sur AEM 6.4 : les Feature Packs en option fournis par Adobe ont des dépendances sur la version et le Service Pack. Si vous avez installé un Feature Pack, contactez l’équipe d’assistance clientèle d’AEM pour valider la compatibilité de ces Feature Packs avec ce Service Pack pour AEM 6.4.
 
-* AEM 6.4.8.0 requires AEM 6.4. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
-* Le Service Pack peut être téléchargé sur Adobe Package Share, accessible directement depuis l’instance AEM 6.4.
+* AEM 6.4.8.0 nécessite AEM 6.4. Pour plus d’informations, reportez-vous à la documentation [de](../sites-deploying/upgrade.md)mise à niveau.
+* Le téléchargement du Service Pack est disponible sur le portail [de distribution de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) logiciels pour téléchargement.
 * Lors d’un déploiement avec MongoDB et plusieurs instances, installez AEM 6.4.8.0 sur l’une des instances d’auteur à l’aide du gestionnaire de modules.
 * Avant d’installer le pack de service, veillez à disposer d’un instantané ou d’une nouvelle sauvegarde de votre instance AEM.
 * Redémarrez l’instance avant l’installation. Cela est nécessaire uniquement lorsque l’instance reste en mode de mise à jour (ce qui est le cas lorsque l’instance vient d’être mise à jour depuis une version antérieure). Toutefois, cela est généralement recommandé si l’instance s’est exécutée pendant longtemps.
@@ -2116,14 +2116,13 @@ Liste des packages de contenu inclus dans AEM 6.4.1.0
 >
 >Adobe recommande de ne pas supprimer ni désinstaller le package AEM 6.4.8.0.
 
-### Installation du Service Pack au moyen de Package Share {#install-the-service-pack-via-package-share}
+### Install the Service Pack via Package Manager {#install-the-service-pack-via-package-share}
 
 Accomplissez les étapes suivantes pour installer le Service Pack sur une instance 6.4 existante :
 
-1. Connectez-vous au partage de packages dans AEM ou directement depuis votre navigateur et téléchargez le package AEM 6.4.8.0.
+1. Téléchargez le package à partir de Software Distribution.
 
-   (Recherchez « AEM-6.4.8.0 » pour le trouver)
-1. Installez le package téléchargé à l’aide du gestionnaire de modules.
+1. Dans AEM, connectez-vous à Package Manager et ajoutez le package AEM 6.4.8.0 téléchargé. Sélectionnez le package téléchargé, puis cliquez sur **[!UICONTROL Installer]**.
 
 >[!NOTE]
 >
