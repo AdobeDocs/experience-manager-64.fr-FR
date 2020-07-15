@@ -10,10 +10,10 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
+source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
 workflow-type: tm+mt
-source-wordcount: '1706'
-ht-degree: 67%
+source-wordcount: '1652'
+ht-degree: 68%
 
 ---
 
@@ -39,22 +39,13 @@ AEM 6.4 est livré avec le module 1.2.6 de Livefyre pré-installé. Ce module in
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. Return to the AEM homepage, click Tools, then navigate to **Deployment > Package Share**.
+1. Téléchargez le package Livefyre à partir de [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-   Une liste des feature packs et des correctifs disponibles en téléchargement s’affiche.
-
-1. Dans la recherche par mot-clé, recherchez « Livefyre », puis sélectionnez le feature pack Livefyre correspondant à votre version d’AEM.
-
-   ![livefyre-aem3-6-4](assets/livefyre-aem3-6-4.png)
-
-1. On the feature pack information page, click **Download**, then read the Package License Agreement and click **Accept**.
-1. Return to the Package Manager, locate the newly downloaded package, and click **Install**.
+1. A partir de Package Manager, installez le package téléchargé. Pour obtenir des instructions sur l’utilisation de la distribution de logiciels et des packages dans AEM, voir [Comment utiliser des packages](/help/sites-administering/package-manager.md).
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
    Le module Livefyre-AEM est maintenant installé. Pour pouvoir commencer à utiliser les fonctionnalités d’intégration, vous devez configurer AEM pour utiliser Livefyre.
-
-   For more information on packages, see [How to Work With Packages](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/package-manager.html).
 
    For more information and release notes on feature packs, see [Feature Packs](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 
