@@ -3,19 +3,22 @@ title: Mettre vos images en filigrane
 description: Utilisez la fonction de filigrane pour ajouter un filigrane numérique à vos images PNG ET JPEG.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0e0e2aa693c30c8e1ef1033b936b82d83e5b348e
+source-git-commit: 04de28347ddf0082d2e224aa3853297cad3aacd8
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 40%
 
 ---
 
 
-# Mettre vos ressources en filigrane {#watermarking}
+# Mettre vos fichiers en filigrane {#watermarking}
 
 Les ressources d’Adobe Experience Manager (AEM) vous permettent d’ajouter un filigrane numérique aux images afin d’aider les utilisateurs à vérifier l’authenticité et la propriété des ressources par copyright. AEM Assets prend en charge le texte à utiliser comme un filigrane sur les fichiers PNG et JPEG.
 
 To be able to apply watermark on assets, add the [!UICONTROL Watermark] step in the [!UICONTROL DAM Update Asset] workflow.
 
 1. Tap the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. From the Workflow Models page, select the **[!UICONTROL DAM Update Asset]** workflow and click **[!UICONTROL Edit]**.
+1. Sur la page Modèles de workflows, sélectionnez le workflow **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**, puis cliquez sur **[!UICONTROL Modifier]**.
 
 1. From the side panel, drag the **[!UICONTROL Add Watermark]** step and add it to the [!UICONTROL DAM Update Asset] workflow.
 
@@ -30,5 +33,7 @@ To be able to apply watermark on assets, add the [!UICONTROL Watermark] step in 
 
    ![Indiquer les arguments dans l’étape Ajouter un filigrane dans Assets](assets/arguments_add_watermark_aem_assets.png)
 
-1. Enregistrez le processus **[!UICONTROL Ressources de mise à jour de DAM]** avec l’étape Filigrane.
+1. Enregistrez le workflow **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]** avec l’étape Filigrane.
 1. Dans l’interface utilisateur d’AEM, téléchargez un exemple de fichier. Le filigrane s’affiche avec la taille de police, la couleur, etc., à la position que vous avez configurée dans les étapes ci-dessus.
+
+Pour mettre en filigrane des documents PDF par programmation ou avec des informations dynamiques, pensez à utiliser l’offre [AEM Document Services](/help/forms/using/overview-aem-document-services.md) .
