@@ -3,7 +3,7 @@ title: Schémas de métadonnées
 description: 'Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ed87c419557f65667bde46a9f4b32a484e3300f5
+source-git-commit: 33541e9d1fa8bc24ae637141c0260f5595f38a4f
 workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 78%
@@ -41,7 +41,7 @@ Pour vue d’une liste de formulaires/modèles, dans l’ [!DNL Experience Manag
 |---|---|---|
 | [!UICONTROL default] |  | schéma de métadonnées de base pour les ressources. |
 |  | The following child forms inherit the properties of the [!UICONTROL default] form: |  |
-|  | [!UICONTROL dm_video] | Schéma de formulaire pour les vidéos Dynamic Media. |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Schéma de formulaire pour les vidéos Dynamic Media. |
 |  | <ul><li> [!UICONTROL image]</li></ul> | Schéma de formulaire pour les fichiers de type MIME &quot;image&quot;, par exemple image/jpeg, image/png, etc. <br> Le formulaire [!UICONTROL image] comporte les modèles de formulaire enfant suivants : <ul><li> [!UICONTROL jpeg]: Schéma de formulaire pour les ressources avec un sous-type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schéma de formulaire pour les ressources avec un [!UICONTROL tiff]de sous-type.</li></ul> |
 |  | <ul><li> [!UICONTROL l’application ;]</li></ul> | Schéma de formulaire pour les ressources de type MIME &quot;application&quot;, par exemple application/ pdf, application/ zip, etc. <br>[!UICONTROL pdf]: Formulaire de Schéma pour les ressources avec un sous-type pdf. |
 |  | <ul><li>[!UICONTROL vidéo]</li></ul> | Schéma de formulaire pour les ressources de type MIME &quot;video&quot;, telles que video/avi, video/mp4, etc. |
