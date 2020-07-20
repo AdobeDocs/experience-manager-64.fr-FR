@@ -3,10 +3,10 @@ title: Traiter les ressources pour exécuter des processus d’entreprise, effec
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+source-git-commit: 73d440198028bfa6b47e9fde13f3a354a1b8445f
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 21%
+source-wordcount: '1047'
+ht-degree: 28%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 21%
 
 Pour le traitement des ressources, [!DNL Experience Manager] utilise des workflows. Les Workflows permettent d’automatiser la logique ou les activités métier. Les étapes granulaires permettant d’accomplir des tâches spécifiques sont fournies par défaut et les développeurs peuvent créer leurs propres étapes personnalisées. Ces étapes peuvent être combinées dans un ordre logique pour créer des workflows. Par exemple, un processus peut automatiquement appliquer un filigrane sur les images téléchargées en fonction de critères spécifiques tels que les métadonnées intégrées à l’image, le dossier dans lequel il est téléchargé, la résolution de l’image, etc. Un autre exemple est un processus configuré pour créer des filigranes d’une telle manière et répondre simultanément à plusieurs besoins de gestion de ressources, tels que l’ajout de métadonnées, la création de rendus, l’ajout de balises intelligentes pour la découverte de ressources, la publication dans une banque de données, la définition d’autorisations d’accès utilisateur, etc.
 
-## workflows par défaut disponibles dans Experience Manager {#default-workflows}
+## workflows par défaut disponibles dans le Experience Manager {#default-workflows}
 
 Par défaut, toutes les ressources téléchargées sont traitées à l’aide du processus [!UICONTROL DAM Update Asset] . Le processus s’exécute pour chaque ressource téléchargée et exécute les tâches de gestion des ressources de base telles que la génération de rendu, l’écriture différée des métadonnées, l’extraction de page, l’extraction du média et le transcodage.
 
@@ -27,7 +27,7 @@ Pour afficher les différents modèles de processus disponibles par défaut, voi
 
 ![Certains flux de travaux par défaut](assets/aem-default-workflows.png)
 
-*Figure : Certains des processus par défaut disponibles dans[!DNL Experience Manager]*
+*Figure : Certains des processus par défaut disponibles dans[!DNL Experience Manager].*
 
 ## Application de workflows à des ressources {#applying-workflows-to-assets}
 
@@ -102,9 +102,10 @@ Pour un modèle de processus, les utilisateurs peuvent créer un lanceur de proc
 * Effectuez une copie du flux de travail [!UICONTROL DAM Update Asset] et modifiez-le pour qu’il s’exécute sur une hiérarchie de dossiers spécifique. Cette approche est utile pour quelques dossiers.
 * Les étapes de traitement supplémentaires peuvent être ajoutées à l’aide d’un fractionnement [](/help/sites-developing/workflows-step-ref.md#or-split) OU applicable de manière conditionnelle au plus grand nombre de dossiers requis.
 
-## Best practices and limitations {#best-practices-limitations-tips}
+## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 
-* Tenez compte de vos besoins pour tous les types de rendus lors de la conception de workflows. Si vous ne prévoyez pas la nécessité d’un rendu à l’avenir, supprimez l’étape de création du flux de travail. Les rendus ne peuvent pas être supprimés en bloc par la suite. Les rendus non désirés peuvent prendre beaucoup d’espace d’enregistrement après une utilisation prolongée de [!DNL Experience Manager]. Pour les fichiers individuels, vous pouvez supprimer des rendus manuellement de l’interface utilisateur. Pour plusieurs fichiers, vous pouvez soit personnaliser [!DNL Experience Manager] la suppression de rendus spécifiques, soit supprimer les fichiers et les télécharger à nouveau.
+* Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus superflus peuvent occuper beaucoup d’espace de stockage suite à une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
+* Par défaut, le processus de mise à jour des ressources  DAM comprend certaines étapes pour créer des miniatures et des rendus Web. Si des rendus par défaut sont supprimés du flux de travail, l’interface utilisateur de [!DNL Assets] ne s’affiche pas correctement.
 
 >[!MORELIKETHIS]
 >
