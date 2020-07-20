@@ -48,52 +48,69 @@ Pour ajouter une nouvelle configuration, sélectionnez l’icône plus &quot;**+
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-* **[!UICONTROL Liste autorisée]** Champs de message Indique les propriétés du composant Composer les messages que les utilisateurs peuvent modifier et conserver. Si de nouveaux éléments de formulaire sont ajoutés, l’ID d’élément doit être ajouté si vous souhaitez le stocker dans SRP. La valeur par défaut est de deux entrées : ****
+* **[!UICONTROL Liste autorisée]** Champs de message Indique les propriétés du composant Composer les messages que les utilisateurs peuvent modifier et conserver. Si de nouveaux éléments de formulaire sont ajoutés, l’ID d’élément doit être ajouté si vous souhaitez le stocker dans SRP. La valeur par défaut est de deux entrées : 
+*sujet* et *contenu*.
 
-* *sujet* et *contenu*.**
+* **[!UICONTROL Taille limite]** de la zone de message Nombre maximal d’octets dans la zone de message de chaque utilisateur. La valeur par défaut est 
+*1073741824* (1 Go).
 
-* **[!UICONTROL Taille limite]** de la zone de message Nombre maximal d’octets dans la zone de message de chaque utilisateur. La valeur par défaut est **
+* **[!UICONTROL Limite]** du nombre de messages Nombre total de messages autorisés par utilisateur. La valeur -1 indique qu’un nombre illimité de messages est autorisé, sous réserve de la taille limite de la zone de message. La valeur par défaut est 
+*10000* (10 k).
 
-* *1073741824* (1 Go).]****
+* **[!UICONTROL Signaler l&#39;échec]** de la diffusion Si cette case est cochée, avertissez l&#39;expéditeur si la diffusion de message ne parvient pas à certains destinataires. La valeur par défaut est 
+*vérifié*.
 
-* **[!UICONTROL Limite]** du nombre de messages Nombre total de messages autorisés par utilisateur. La valeur -1 indique qu’un nombre illimité de messages est autorisé, sous réserve de la taille limite de la zone de message. La valeur par défaut est **
+* **[!UICONTROL ID]** de l&#39;expéditeur de la diffusion d&#39;échec Nom de l&#39;expéditeur qui apparaît dans le message d&#39;échec de la diffusion. La valeur par défaut est 
+*failureNotifier*.
 
-* *10000* (10 k).]****
+* **[!UICONTROL Chemin]** du modèle de message d’échec Chemin absolu vers la racine du modèle de message d’échec de la diffusion. La valeur par défaut est 
+*/etc/notification/messaging/default*.
 
-* **[!UICONTROL Signaler l&#39;échec]** de la diffusion Si cette case est cochée, avertissez l&#39;expéditeur si la diffusion de message ne parvient pas à certains destinataires. La valeur par défaut est **
+* **[!UICONTROL maxRetries.name]** Nombre de tentatives de renvoi d’un message dont la remise échoue. La valeur par défaut est 
+*3*.
 
-* *vérifié*.]**
+* **[!UICONTROL minWaitBetweenRetries.name]** Nombre de secondes d&#39;attente entre les tentatives de renvoi d&#39;un message en cas d&#39;échec de l&#39;envoi. La valeur par défaut est *100 *(secondes).
 
-* **[!UICONTROL ID]** de l&#39;expéditeur de la diffusion d&#39;échec Nom de l&#39;expéditeur qui apparaît dans le message d&#39;échec de la diffusion. La valeur par défaut est **
+* **[!UICONTROL Compter la taille]** du pool de mise à jour Nombre de threads simultanés utilisés pour la mise à jour de la comptabilisation. La valeur par défaut est 
+*10*.
 
-* *failureNotifier*.]********`inbox`****
+* **[!UICONTROL inbox.path.name]**(
+*Obligatoire*) Chemin d’accès, relatif au noeud de l’utilisateur (/home/users/*username*), à utiliser pour le **`inbox`** dossier. Le chemin ne doit PAS se terminer par une barre oblique (/) à la fin. La valeur par défaut est */mail/inbox* .
 
-* **[!UICONTROL Chemin]** du modèle de message d’échec Chemin absolu vers la racine du modèle de message d’échec de la diffusion. La valeur par défaut est ******`senditems`****
+* **[!UICONTROL stitems.path.name]**(
+*Obligatoire*) Chemin d’accès, relatif au noeud de l’utilisateur (/home/users/*username*), à utiliser pour le **`senditems`** dossier. Le chemin ne doit PAS se terminer par une barre oblique (/) à la fin. La valeur par défaut est */mail/stitems* .
 
-* */etc/notification/messaging/default*.]****
+* **[!UICONTROL supportAttachments.name]** Si cette case est cochée, les utilisateurs peuvent ajouter des pièces jointes à leurs messages. La valeur par défaut est 
+*vérifié*.
 
-* **[!UICONTROL maxRetries.name]** Nombre de tentatives de renvoi d’un message dont la remise échoue. La valeur par défaut est **
+* **[!UICONTROL batchSize.name]** Nombre de messages à regrouper par lots pour un envoi lors de l&#39;envoi à un grand groupe de destinataires. La valeur par défaut est 
+*100*.
 
-* *3*.]****
+* **[!UICONTROL maxTotalAttachmentSize.name]** Si supportAttachments est coché, cette valeur spécifie la taille totale maximale autorisée (en octets) de toutes les pièces jointes. La valeur par défaut est 
+*104857600* (100 Mo).
 
-* **[!UICONTROL minWaitBetweenRetries.name]** Nombre de secondes d&#39;attente entre les tentatives de renvoi d&#39;un message en cas d&#39;échec de l&#39;envoi. La valeur par défaut est *100 *(secondes).**************
+* **[!UICONTROL attachementTypeBlocklist.name]** liste bloquée d&#39;extensions de fichiers, précédée de &#39;
+**.**&quot;, cela sera rejeté par le système. Si elle n’est pas placée sur l&#39;liste bloquée, l’extension est autorisée. Les extensions peuvent être ajoutées ou supprimées à l&#39;aide des icônes &quot;**+**&quot; et &quot;**-**&quot;. Default is *DEFAULT*.
 
-* **[!UICONTROL Compter la taille]** du pool de mise à jour Nombre de threads simultanés utilisés pour la mise à jour de la comptabilisation. La valeur par défaut est    *10*.*******
+* **[!UICONTROL allowAttachmentTypes.name]**
 
-* **[!UICONTROL inbox.path.name]**(****[`Apache Sling Servlet/Script Resolver and Error Handler`-ERR:REF-NOT-FOUND-`/bin/``/apps/``/services/`**`Service selector`**`Message List and Compose Message components`[](configure-messaging.md)**
+   **(*Action requise*)** liste autorisée des extensions de fichier, à l’opposé de la liste bloquée. Pour autoriser toutes les extensions de fichier, à l&#39;exception de celles placées sur l&#39;liste bloquée, utilisez l&#39;icône &quot;**-**&quot; pour supprimer l&#39;entrée vide unique.
 
-* 
+* **[!UICONTROL serviceSelector.name]**(*Obligatoire*) Chemin absolu (point de terminaison) par lequel le service est appelé (une ressource virtuelle). La racine du chemin choisi doit être incluse dans le paramètre de configuration *Execution Paths* de la configuration OSGi [`Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), telle que `/bin/`, `/apps/`et `/services/`. Pour sélectionner cette configuration pour la fonction de messagerie d&#39;un site, ce point de terminaison est fourni comme **`Service selector`** valeur pour la `Message List and Compose Message components` (voir Fonction [de](configure-messaging.md)message). La valeur par défaut est */bin/messaging* .
 
+* **[!UICONTROL fieldAllowlist.name]** Use 
+**Liste autorisée Champs de message**.
+
+>[!CAUTION]
 >
+>Chaque fois qu’une `Messaging Operations Service` configuration est ouverte pour modification, si `allowedAttachmentTypes.name` elle a été supprimée, une entrée vide est ajoutée pour rendre la propriété configurable. Une seule entrée vide désactive efficacement les pièces jointes.
 >
->
->
->
+>Pour autoriser toutes les extensions de fichier, à l’exception de celles placées sur l&#39;liste bloquée, utilisez l’icône &quot;**-**&quot; pour (à nouveau) supprimer l’entrée vide avant de cliquer sur **[!UICONTROL Enregistrer]**.
 
-## 
+## Résolution des incidents {#troubleshooting}
 
+Une façon de résoudre les problèmes consiste à activer les messages de [débogage dans le journal.](../../help/sites-administering/troubleshooting.md)
 
+Voir aussi [Journaux et Ecrivains pour les services](../../help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services)individuels.
 
-
-
-
+Le package à surveiller est `com.adobe.cq.social.messaging`.
