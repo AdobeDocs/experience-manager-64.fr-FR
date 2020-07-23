@@ -10,7 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: d4357905fe6b7acc70f828d9b73581393e003cd5
+workflow-type: tm+mt
+source-wordcount: '3964'
+ht-degree: 89%
 
 ---
 
@@ -77,6 +80,7 @@ Vous pouvez modifier ou supprimer une configuration de plan directeur existante�
 
    * **Propriétés** : vous pouvez utiliser cette option pour afficher puis modifier les propriétés de la configuration.
    * **Supprimer**
+
    ![chlimage_1-211](assets/chlimage_1-211.png)
 
 ## Création d’une Live Copy {#creating-a-live-copy}
@@ -90,7 +94,7 @@ Vous pouvez créer une Live Copy de n’importe quelle page ou branche. Lorsque 
 
 Vous pouvez créer une Live Copy de n’importe quelle page :
 
-* Des pages qui sont référencées par une [configuration de plan directeur](#creating-a-blueprint-configuration).
+* Pages that are referenced by a [blueprint configuration](#creating-a-blueprint-configuration).
 * Et des pages n’ayant aucune connexion avec une configuration.
 * AEM prend également en charge la création d’une Live Copy dans les pages d’une autre Live Copy.
 
@@ -121,6 +125,7 @@ Pour créer une Live Copy :
 
    * Le **Titre** de la page.
    * Le **Nom** utilisé dans l’URL.
+
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Utilisez la case **Exclure les sous-pages** :
@@ -215,7 +220,7 @@ Déployez une page de plan directeur pour pousser les modifications de contenu v
 
 >[!NOTE]
 >
->Des conflits peuvent se produire si de nouvelles pages portant le même nom de page sont créées dans la branche blueprint et dans une branche de copie dynamique dépendante.
+>Des conflits peuvent survenir si de nouvelles pages portant le même nom de page sont créées à la fois dans la branche du plan directeur et dans une branche de la copie dynamique dépendante.
 >
 >Ces [conflits doivent être traités et résolus lors du déploiement](/help/sites-administering/msm-rollout-conflicts.md).
 
@@ -246,7 +251,7 @@ Déployez une page de plan directeur pour pousser les modifications de contenu v
 
    * **Déploiement d&#39;arrière-plan**:
 
-      Si de nombreuses pages/sous-pages sont impliquées, vous pouvez exécuter le déploiement en tant que tâche d’arrière-plan.
+      Si de nombreuses pages/sous-pages sont impliquées, vous pouvez exécuter le déploiement en tant que tâche d&#39;arrière-plan.
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
 1. Après avoir défini ces détails, sélectionnez **Déployer** pour exécuter l’opération.
@@ -291,6 +296,7 @@ L’[action Synchroniser est également disponible dans l’aperçu de la Live C
 
    * **Page et sous-pages**
    * **Page seulement**
+
    ![chlimage_1-225](assets/chlimage_1-225.png)
 
 ## Modification du contenu de Live Copy {#changing-live-copy-content}
@@ -308,14 +314,14 @@ Pour modifier le contenu de Live Copy, vous pouvez :
 
 >[!NOTE]
 >
->Des conflits peuvent se produire si de nouvelles pages portant le même nom de page sont créées dans la branche blueprint et dans une branche de copie dynamique dépendante.
+>Des conflits peuvent survenir si de nouvelles pages portant le même nom de page sont créées à la fois dans la branche du plan directeur et dans une branche de la copie dynamique dépendante.
 >
 >Ces [conflits doivent être traités et résolus lors du déploiement](/help/sites-administering/msm-rollout-conflicts.md).
 
 
 ### Ajout de composants à une page Live Copy {#adding-components-to-a-live-copy-page}
 
-Vous pouvez ajouter des composants à une page Live Copy à tout moment. L’état d’héritage de la copie dynamique et de son système de paragraphe ne contrôle pas votre capacité à ajouter des composants.
+Vous pouvez ajouter des composants à une page Live Copy à tout moment. L’état d’héritage de la copie dynamique et de son système de paragraphes ne contrôle pas votre capacité à ajouter des composants.
 
 Lorsque la page Live Copy est synchronisée avec la page source, les composants ajoutés demeurent inchangés. Voir également [Modification de l’ordre des composants sur une page Live Copy](#changing-the-order-of-components-on-a-live-copy-page).
 
@@ -356,6 +362,7 @@ L’[action Suspendre est également disponible dans l’aperçu de la Live Copy
 
    * **Suspendre**
    * **Suspendre avec enfants**
+
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
 1. Confirm the **Suspend** action in the **Suspend Live Copy **dialog:
@@ -423,6 +430,7 @@ Pour spécifier ou changer la profondeur :
 
    * Cochée - une Live Copy profonde (les pages enfants sont incluses)
    * Décochée - une Live Copy superficielle (les pages enfants sont exclues)
+
    >[!CAUTION]
    >
    >Le passage à une Live Copy superficielle a un effet immédiat et est irréversible.
@@ -545,12 +553,13 @@ To track the changes you have made, you can view the blueprint page in **Referen
 1. Ouvrez le panneau **[Références](/help/sites-authoring/basic-handling.md#references)**et sélectionnez :
 
    * **Plan directeur** (lorsqu’une page de copie dynamique est sélectionnée)
-   * **Live Copies** (lorsqu’une page de plan directeur est sélectionnée)
+   * **Copies** en direct (lorsqu’une page de plan directeur est sélectionnée)
 
 1. Sélectionnez votre Live Copy, puis choisissez entre :
 
    * **Comparer au plan directeur** (lorsqu’une page Live Copy est sélectionnée)
    * **Comparer à Live Copy** (lorsqu’une page de plan directeur est sélectionnée)
+
    Par exemple :
 
    ![chlimage_1-235](assets/chlimage_1-235.png)
@@ -583,12 +592,14 @@ Il existe des implications liées à l’endroit dans l’arborescence où vous 
 
    * les relations en direct sont supprimées pour cette sous-page (ou branche)
    * et les sous-pages ou pages dans la branche Live Copy sont traitées comme si elles avaient été créées manuellement.
+
    *Toutefois*, les sous-pages étant encore soumises aux relations en direct de la branche parent, un autre déploiement de la ou des pages de plan directeur aura à la fois pour effet :
 
    1. De renommer les pages désolidarisées :
 
       * En effet, MSM les considère comme des pages créées manuellement provoquant un conflit, car portant le même nom que les pages Live Copy qu’il tente de créer.
    1. De créer une nouvelle page (Live Copy) avec le nom d’origine et contenant les modifications du déploiement.
+
    >[!NOTE]
    >
    >Voir [Conflits de déploiement MSM](/help/sites-administering/msm-rollout-conflicts.md) pour obtenir des détails sur ces situations.
