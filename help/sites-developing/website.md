@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+workflow-type: tm+mt
+source-wordcount: '4919'
+ht-degree: 64%
 
 ---
 
@@ -37,7 +40,7 @@ Ce tutoriel vous explique comment :
    * **[!UICONTROL Logo]**
    * **[!UICONTROL Image]**
    * **[!UICONTROL Texte-Image]**
-   * **[!UICONTROL Recherche]**
+   * **[!UICONTROL Rechercher]**
 
 1. Inclure différents composants Foundation.
 
@@ -50,7 +53,7 @@ Une fois toutes les étapes exécutées, vos pages se présentent comme suit :
 Pour suivre le tutoriel plutôt que d’effectuer les exercices, téléchargez le fichier website-1.0.zip. Il s’agit d’un module de contenu AEM comprenant les résultats de ce tutoriel. Utilisez [Package Manager](/help/sites-administering/package-manager.md) pour installer le module sur votre instance de création.
 
 >[!NOTE]
->L’installation de ce package remplacera toutes les ressources que vous avez créées sur votre instance de création à l’aide de ce didacticiel.
+>L’installation de ce package va remplacer toutes les ressources de votre instance de création que vous avez créées à l’aide de ce didacticiel.
 
 Package de contenu du site Web
 
@@ -102,7 +105,7 @@ Exemple de fichier et d’images static.css
 
 1. Si l’élément mywebsite n’apparaît pas dans le tableau, actualisez l’arborescence ou le tableau.
 
-1. [A l’aide de l’accès WebDAV](/help/sites-administering/webdav-access.md) à l’URL à l’adresse http://localhost:4502, copiez le fichier d’exemple `static.css` et le `images` dossier du fichier monsite Web.zip téléchargé dans le `/etc/designs/mywebsite` dossier.
+1. [A l’aide de l’accès WebDAV](/help/sites-administering/webdav-access.md) à l’URL à l’adresse http://localhost:4502, copiez l’exemple de `static.css` fichier et `images` dossier du fichier mysite.zip téléchargé dans le `/etc/designs/mywebsite` dossier.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
@@ -128,6 +131,7 @@ Un modèle définit le contenu par défaut d’une nouvelle page. Les sites web 
    * **[!UICONTROL Titre]** : My Website Content Page Template (Modèle de page de contenu de mon site web)
    * **[!UICONTROL Description]** : This is my Website Content Page Template (Il s’agit du modèle de page de contenu de mon site web)
    * **[!UICONTROL Type]** de ressource : monsite Web/composants/contentpage
+
    Utilisez la valeur par défaut pour la propriété Classement.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
@@ -142,7 +146,7 @@ Un modèle définit le contenu par défaut d’une nouvelle page. Les sites web 
 
    When an author creates a page below `/content`, the **[!UICONTROL contentpage]** template appears in a list of available templates to use.
 
-1. Click **[!UICONTROL Next** in the **[!UICONTROL Allowed Parents]** and **[!UICONTROL Allowed Children]** panels and click **[!UICONTROL OK]**. Dans CRXDE Lite, cliquez sur **[!UICONTROL Enregistrer tout]**.
+1. Cliquez sur **[!UICONTROL Suivant]** dans les panneaux **[!UICONTROL Parents autorisés]** et **[!UICONTROL Enfants autorisés]**, puis cliquez sur **[!UICONTROL OK]**. Dans CRXDE Lite, cliquez sur **[!UICONTROL Enregistrer tout]**.
 
    ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -156,6 +160,7 @@ Créez le *composant* qui définit le contenu et effectue le rendu des pages qui
    * **[!UICONTROL Libellé]** : contentpage
    * **[!UICONTROL Titre]** : My Website Content Page Component (Composant de page de contenu de mon site web)
    * **[!UICONTROL Description]** : This is My Website Content Page Component (Il s’agit du composant de page de contenu de mon site web)
+
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
    The location of the new component is `/apps/mywebsite/components/contentpage`. This path corresponds with the resource type of the contentpage template (minus the initial `/apps/` part of the path).
@@ -221,14 +226,15 @@ Dans cette section, vous créez les pages suivantes qui utilisent toutes le mod�
 1. Dans la fenêtre **[!UICONTROL Créer une page]**, saisissez les informations suivantes :
 
    * **[!UICONTROL Titre]**: `My Website`
-   * **[!UICONTROL Nom]**: `mywebsite`
+   * **[!UICONTROL Nom]** : `mywebsite`
    * Sélectionnez **[!UICONTROL My Website Content Page Template]** (Modèle de page de contenu de mon site web)
+
    ![chlimage_1-110](assets/chlimage_1-110.png)
 
 1. Cliquez sur **[!UICONTROL Créer]**. In the folder tree, select the `/Websites/My Website` page and click **[!UICONTROL New > New Page]**.
 1. Dans la boîte de dialogue **[!UICONTROL Créer une page]**, entrez les valeurs de propriété ci-dessous et cliquez ensuite sur Créer :
 
-   * **[!UICONTROL Titre]**:Anglais
+   * **[!UICONTROL Titre]**: Anglais
    * **[!UICONTROL Nom]**: en
    * Sélectionnez **[!UICONTROL My Website Content Page Template]** (Modèle de page de contenu de mon site web)
 
@@ -249,6 +255,7 @@ Dans cette section, vous créez les pages suivantes qui utilisent toutes le mod�
 
    * **Titre**: Clients
    * Sélectionnez **[!UICONTROL My Website Content Page Template]** (Modèle de page de contenu de mon site web)
+
    La structure se présente comme suit :
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
@@ -258,6 +265,7 @@ Dans cette section, vous créez les pages suivantes qui utilisent toutes le mod�
    * **[!UICONTROL Nom]**: cq:designPath
    * **[!UICONTROL Type]** : String
    * **[!UICONTROL Valeur]**: /etc/designs/monsite Web
+
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
 1. In a new web browser tab or window, open [http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html) to see the Products page:
@@ -410,7 +418,7 @@ Votre navigation supérieure se présente alors comme suit :
 1. In CRXDE Lite, right-click `/apps/mywebsite/components`, select **[!UICONTROL Create]**, then **[!UICONTROL Create Component]**.
 1. Dans la fenêtre **[!UICONTROL Créer un composant]**, saisissez les informations suivantes :
 
-   * **[!UICONTROL Étiquette]**: `topnav`
+   * **[!UICONTROL Libellé]**: `topnav`
    * **[!UICONTROL Titre]**: `My Top Navigation Component`
    * **[!UICONTROL Description]**: `This is My Top Navigation Component`
 
@@ -492,7 +500,7 @@ Par exemple, la source du lien d’image vers la page Products peut être http:/
 
 Dans le cadre de cet exercice, Sling fait correspondre ces URL au script /apps/mywebsite/components/contentpage/navimage.png.java que vous créez.
 
-1. Dans CRXDE Lite, ouvrez le `topnav.jsp` sous `/apps/mywebsite/components/topnav.`Localiser le contenu de l’élément d’ancrage (ligne 14) :
+1. Dans CRXDE Lite, ouvrez le `topnav.jsp` sous `/apps/mywebsite/components/topnav.`Localisez le contenu de l’élément d’ancrage (ligne 14) :
 
    ```xml
    <%=child.getTitle() %>
@@ -508,7 +516,7 @@ Dans le cadre de cet exercice, Sling fait correspondre ces URL au script /apps/m
 1. Cliquez avec le bouton droit sur le nœud `/apps/mywebsite/components/contentpage` et cliquez sur **[!UICONTROL Créer > Créer un fichier]**.
 1. Dans la fenêtre **[!UICONTROL Créer un fichier]**, dans le champ **[!UICONTROL Nom]**, saisissez `navimage.png.java`.
 
-   L’extension de nom de fichier .java indique à Sling que la prise en charge Java de script Apache Sling doit être utilisée pour compiler le script et créer une servlet.
+   L&#39;extension de nom de fichier .java indique à Sling que la prise en charge Java de script Apache Sling doit être utilisée pour compiler le script et créer une servlet.
 
 1. Copiez le code suivant dans `navimage.png.java.`Le code étend la classe AbstractImageServlet :
 
@@ -664,8 +672,8 @@ Create two pages located below the **[!UICONTROL Products]** page. Pour chaque p
    1. Select the `/content/mywebsite/en/products/product1/jcr:content` node.
    1. Dans l’onglet **[!UICONTROL Propriétés]**, entrez les valeurs suivantes :
 
-      * **[!UICONTROL Nom]**: `jcr:description`
-      * **[!UICONTROL Type]**: `String`
+      * **[!UICONTROL Nom]** : `jcr:description`
+      * **[!UICONTROL Type]** : `String`
       * **[!UICONTROL Valeur]**: `This is a description of the Product 1!.`
    1. Cliquez sur **[!UICONTROL Ajouter]**.
    1. Dans l’onglet **[!UICONTROL Propriétés]**, créez une autre propriété à l’aide des valeurs suivantes :
@@ -685,7 +693,7 @@ Create two pages located below the **[!UICONTROL Products]** page. Pour chaque p
 
       * **[!UICONTROL Nom]**: jcr:description
       * **[!UICONTROL Type]** : String
-      * **[!UICONTROL Valeur]**: Ceci est une description du Produit 2!.
+      * **[!UICONTROL Valeur]**: Voici une description du produit 2 ! .
    1. Cliquez sur **[!UICONTROL Ajouter]**.
    1. Dans les mêmes zones de texte, remplacez les valeurs précédentes par les valeurs suivantes :
 
@@ -704,9 +712,9 @@ Pour créer le composant listchildren, procédez comme suit :
 1. In CRXDE Lite, right-click `/apps/mywebsite/components`, select **[!UICONTROL Create]**, then **[!UICONTROL Create Component]**.
 1. In the dialog enter the following property values and then click **[!UICONTROL Next]**:
 
-   * **[!UICONTROL Étiquette]**: listchildren.
-   * **[!UICONTROL Titre]**: Composant Mes Fils D&#39;Enfants.
-   * **[!UICONTROL Description]**: Voici le composant Mes enfants de liste.
+   * **[!UICONTROL Libellé]**: listchildren.
+   * **[!UICONTROL Titre]**: Composant Mes Listchildren.
+   * **[!UICONTROL Description]**: Voici le composant My Listchildren.
 
 1. Continue clicking **[!UICONTROL Next]** until the **[!UICONTROL Allowed Children]** panel appears, and then click **[!UICONTROL OK]**.
 
@@ -752,8 +760,9 @@ Créez la boîte de dialogue utilisée pour configurer les propriétés du compo
    1. In CRXDE Lite, right-click the `/apps/mywebsite/components/listchildren`node and click **[!UICONTROL Create > Create Dialog]**.
    1. Dans la boîte de dialogue, entrez les valeurs de propriété ci-dessous et cliquez ensuite sur OK.
 
-      * **[!UICONTROL Étiquette]**: `dialog`
+      * **[!UICONTROL Libellé]**: `dialog`
       * **[!UICONTROL Titre]**: `Edit Component` et cliquez sur **[!UICONTROL OK]**.
+
    ![screen_shot_2012-03-07at45818pm](assets/screen_shot_2012-03-07at45818pm.png)
 
    Avec les propriétés suivantes :
@@ -769,20 +778,22 @@ Créez la boîte de dialogue utilisée pour configurer les propriétés du compo
 
    * **[!UICONTROL Nom]** : items
    * **[!UICONTROL Type]** : cq:WidgetCollection
+
    ![screen_shot_2012-03-07at51018pm](assets/screen_shot_2012-03-07at51018pm.png)
 
 1. Créez un nœud sous le nœud des éléments à l’aide des valeurs de propriété suivantes :
 
    * **[!UICONTROL Nom]**: listroot
    * **[!UICONTROL Type]** : cq:Widget
+
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
-1. Ajoutez des propriétés pour le noeud listroot afin de le configurer en tant que champ de texte. Chaque ligne du tableau suivant représente une propriété. When finished, click **[!UICONTROL Save All]**.
+1. Ajoutez les propriétés du noeud listroot pour le configurer en tant que champ de texte. Chaque ligne du tableau suivant représente une propriété. When finished, click **[!UICONTROL Save All]**.
 
    | Nom | Type | Valeur |
    |---|---|---|
    | fieldLabel | Chaîne | Chemin d’accès de la liste racine |
-   | nom est | Chaîne | ./listroot |
+   | name | Chaîne | ./listroot |
    | xtype | Chaîne | textfield |
 
    ![screen_shot_2012-03-07at51433pm](assets/screen_shot_2012-03-07at51433pm.png)
@@ -846,7 +857,7 @@ Pour créer le composant Logo, procédez comme suit :
 1. Dans CRXDE Lite, cliquez avec le bouton droit de la souris sur /apps/mywebsite/components, puis sélectionnez **[!UICONTROL Créer]** et **[!UICONTROL Créer un composant]**.
 1. Dans la boîte de dialogue Créer un composant, entrez les valeurs de propriété ci-dessous et cliquez ensuite sur Suivant :
 
-   * **[!UICONTROL Étiquette]**: `logo`.
+   * **[!UICONTROL Libellé]**: `logo`.
    * **[!UICONTROL Titre]**: `My Logo Component`.
    * **[!UICONTROL Description]**: `This is My Logo Component`.
 
@@ -900,7 +911,7 @@ Créez la boîte de dialogue pour configurer votre composant Logo en mode Créat
    1. Right-click the `/apps/mywebsite/components/logo` node and click **[!UICONTROL Create > Create Dialog]**.
    1. Type the following property values and then click **[!UICONTROL OK]**:
 
-      * **[!UICONTROL Etiquette]**`design_dialog`
+      * **[!UICONTROL Libellé]** `design_dialog`
       * **[!UICONTROL Titre]** `Logo (Design)`
 
 1. Cliquez avec le bouton droit de la souris sur le nœud tab1 dans la branche design_dialog et cliquez ensuite sur Supprimer. Cliquez sur **[!UICONTROL Enregistrer tout]**.
@@ -910,7 +921,7 @@ Créez la boîte de dialogue pour configurer votre composant Logo en mode Créat
    |---|---|---|
    | fileNameParameter | Chaîne | ./imageName |
    | fileReferenceParameter | Chaîne | ./imageReference |
-   | nom est | Chaîne | ./image |
+   | name | Chaîne | ./image |
    | titre | Chaîne | Image |
    | xtype | Chaîne | html5smartimage |
 
@@ -1071,7 +1082,7 @@ Cette section vous explique comment inclure le composant Titre, qui est l’un d
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
->[!Note]
+>[!NNote]
 >You can set a different Title and the Type/Size in **[!UICONTROL Edit]** mode.
 
 ### Insertion du composant Système de paragraphes {#including-the-paragraph-system-component}
@@ -1113,13 +1124,13 @@ Créez un composant qui affiche une image dans le système de paragraphes. Pour 
 1. Sélectionnez le nœud du composant `image` et modifiez les valeurs de propriété suivantes :
 
    * `jcr:title:` Composant Mon image.
-   * `jcr:description`: Voici le composant Mon image.
+   * `jcr:description`: Voici le composant My Image Component.
 
 1. Ajoutez une propriété au nœud `image` avec les valeurs de propriété suivantes :
 
    * **[!UICONTROL Nom]**: componentGroup
    * **[!UICONTROL Type]** : String
-   * **[!UICONTROL Valeur]**: Mon site Web
+   * **[!UICONTROL Valeur]**: MonSite Web
 
 1. Below the `image` node, rename the `design_dialog` node to `dialog`.
 
@@ -1202,7 +1213,7 @@ Dans cette section, vous allez afficher la page **[!UICONTROL Products]** et ajo
 1. Click the **[!UICONTROL Edit]** button to edit the design dialog of par.
 1. Une liste de **[!UICONTROL Composants autorisés]** est affichée dans la boîte de dialogue ; accédez à **[!UICONTROL MyWebsite]**, sélectionnez **[!UICONTROL My Image Component]** (Mon composant Image), puis cliquez sur **[!UICONTROL OK]**.
 1. Return to **[!UICONTROL Edit mode]**.
-1. Double-click the parsys frame (on **[!UICONTROL Drag components or assets here**). Les sélecteurs **[!UICONTROL Insérer un nouveau composant]** et **[!UICONTROL Sidekick]** se présentent comme suit :
+1. Double-cliquez sur le cadre du système de paragraphes (**[!UICONTROL Faire glisser des composants ou éléments ici]**). Les sélecteurs **[!UICONTROL Insérer un nouveau composant]** et **[!UICONTROL Sidekick]** se présentent comme suit :
 
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
@@ -1238,7 +1249,7 @@ Vous disposez de plusieurs options, aussi bien en mode d’édition qu’en mode
    * Contacts
    * Commentaires
    * Connexion
-   * Recherche
+   * Rechercher
 
 1. Dans votre navigateur, rechargez la page **[!UICONTROL Products ]**. Elle se présente comme suit :
 
@@ -1259,10 +1270,10 @@ Votre zone de saisie des termes de recherche se présentera comme suit sur la pa
 
    1. Sur le premier panneau, spécifiez les valeurs de propriété suivantes :
 
-      * **[!UICONTROL Étiquette]**: rechercher
+      * **[!UICONTROL Libellé]**: rechercher
       * **[!UICONTROL Titre]**: Mon composant de recherche
-      * **[!UICONTROL Description]**: Ceci est le composant de recherche
-      * **[!UICONTROL Groupe]**: Mon site Web
+      * **[!UICONTROL Description]**: Ceci est mon composant de recherche
+      * **[!UICONTROL Groupe]**: MonSite Web
    1. Click **[!UICONTROL Next]**, then click **[!UICONTROL Next]** again.
    1. On the **[!UICONTROL Allowed Parents** panel, click the **[!UICONTROL +]** button and type `*/parsys`.
    1. Click **[!UICONTROL Next]** and then click **[!UICONTROL OK]**.
@@ -1279,7 +1290,7 @@ Votre zone de saisie des termes de recherche se présentera comme suit sur la pa
 
 #### Création du script de recherche {#creating-the-search-script}
 
-Cette section décrit la création du script de recherche :
+Cette section décrit comment créer le script de recherche :
 
 1. Open the `/apps/mywebsite/components/search/search.jsp` file.
 1. Copiez le code suivant dans `search.jsp` :
