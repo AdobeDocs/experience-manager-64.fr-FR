@@ -4,8 +4,9 @@ product: adobe experience manager
 sub-product: 'formulaires '
 audience: end-user
 user-guide-title: Guide de l’utilisateur d’AEM 6.4 Forms
+user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 4f6b0555b681d257c6d92490daa85a3ae2439a96
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
 workflow-type: tm+mt
 source-wordcount: '3702'
 ht-degree: 73%
@@ -60,18 +61,18 @@ ht-degree: 73%
       + [Installation et configuration des communications interactives](using/installing-configuring-intreactive-communication-correspondence-management.md)
    + Install AEM Forms on JEE {#jee-installation}
       + [Plateformes prises en charge pour AEM forms on JEE](using/aem-forms-jee-supported-platforms.md)
-      + [Installation et déploiement d’AEM Forms sur JEE à l’aide de JBoss clé en main](http://www.adobe.com/go/learn_aemforms_installTurnkey_64_fr)
+      + [Installation et déploiement de AEM Forms on JEE à l’aide de JBoss clé en main](http://www.adobe.com/go/learn_aemforms_installTurnkey_64_fr)
       + [Installation et configuration du serveur de sécurité de document uniquement](using/installing-and-configuring-the-document-security-server.md)
-      + [Préparation à l’installation du serveur unique AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_fr)
-      + [Installation et déploiement d’AEM Forms sur JEE pour JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64_fr)
-      + [Installation et déploiement d’AEM Forms sur JEE pour WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_fr)
-      + [Installation et déploiement d’AEM Forms sur JEE pour WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_fr)
-      + [Installation d’AEM Forms Workbench](http://help.adobe.com/fr/AEMForms/6.1/InstallWorkbench/index.html)
+      + [Préparation à l’installation du serveur AEM Forms unique](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_fr)
+      + [Installation et déploiement de AEM Forms on JEE pour JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64_fr)
+      + [Installation et déploiement de AEM Forms on JEE pour WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_fr)
+      + [Installation et déploiement de AEM Forms on JEE pour WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_fr)
+      + [Installation de AEM Forms Workbench](http://help.adobe.com/fr/AEMForms/6.1/InstallWorkbench/index.html)
       + [Installation et configuration de Designer](using/installing-configuring-designer.md)
-      + [Préparation à l’installation de la grappe de serveurs AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64_fr)
-      + [Configuration d’AEM Forms sur JEE sur une grappe JBoss](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64_fr)
-      + [Configuration d’AEM Forms sur JEE sur une grappe WebLogic](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64_fr)
-      + [Configuration d’AEM Forms sur JEE sur une grappe WebSphere](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64_fr)
+      + [Préparation à l’installation d’une grappe de serveurs AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64_fr)
+      + [Configuration de AEM Forms sur JEE sur une grappe JBoss](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64_fr)
+      + [Configuration de AEM Forms sur JEE sur une grappe WebLogic](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64_fr)
+      + [Configuration de AEM Forms sur JEE sur une grappe WebSphere](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64_fr)
    + Configurer AEM Forms {#configure-aem-forms}
       + [Réglage des performances du serveur AEM Forms](using/performance-tuning-aem-forms.md)
       + [Configurer le cache de formulaires adaptatifs](using/configure-adaptive-forms-cache.md)
@@ -80,25 +81,25 @@ ht-degree: 73%
       + [Configuration de Connector for Microsoft SharePoint](http://help.adobe.com/fr/AEMForms/6.1/SharePointConfig/index.html)
       + [Connexion d’AEM Forms à Adobe LiveCycle](using/aem-livecycle-connector.md)
       + [Configuration d’AEM Forms pour envoyer des données de formulaire aux processus AEM Forms sur JEE](using/submit-form-data-livecycle-process.md)
-      + [Application de bureau AEM pour AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-+ Mise à niveau d’AEM Forms {#upgrade-aem-forms}
+      + [Application de bureau AEM pour les AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
++ AEM Forms de mise à niveau {#upgrade-aem-forms}
    + [Chemins de mise à niveau disponibles](using/upgrade.md)
-   + Mise à niveau d’AEM Forms sur OSGi {#aem-forms-osgi-upgrade}
+   + Mise à niveau des AEM Forms sur OSGi {#aem-forms-osgi-upgrade}
       + [Mise à niveau vers AEM Forms 6.4 sur OSGi](using/upgrade-forms-osgi.md)
       + [Installation du package de compatibilité](using/compatibility-package.md)
       + [Migration de ressources et de documents AEM Forms](using/migration-utility.md)
-   + Mise à niveau d’AEM Forms sur JEE {#aem-forms-jee-upgrade}
-      + [Préparation à la mise à niveau d’AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareupgrade_64_fr)
+   + Mise à niveau des AEM Forms sur JEE {#aem-forms-jee-upgrade}
+      + [Préparation à la mise à niveau des AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareupgrade_64_fr)
       + [Aide-mémoire et planification de la mise à niveau](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64_fr)
       + [Mise à niveau vers AEM Forms 6.4 sur JEE](using/upgrade-forms-jee.md)
-      + [Mise à niveau d’une version d’AEM Forms vers AEM Forms 6.4 sur JEE pour JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64_fr)
+      + [Mise à niveau d’une version AEM Forms vers AEM Forms 6.4 sur JEE pour JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64_fr)
       + [Mise à niveau de LiveCycle ES4 SP1 vers Adobe Experience Manager Forms on JEE pour JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-jboss-livecycle.pdf)
-      + [Mise à niveau d’une version d’AEM Forms vers AEM Forms 6.4 sur JEE pour JBoss clé en main](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64_fr)
-      + [Mise à niveau de LiveCycle ES4 SP1 vers AEM Forms sur JEE pour JBoss clé en main](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
-      + [Mise à niveau d’une version d’AEM Forms vers AEM Forms 6.4 sur JEE pour WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64_fr)
-      + [Mise à niveau de LiveCycle ES4 SP1 vers AEM Forms sur JEE pour WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
-      + [Mise à niveau d’une version d’AEM Forms vers AEM Forms 6.4 sur JEE pour WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64_fr)
-      + [Mise à niveau de LiveCycle ES4 SP1 vers AEM Forms sur JEE pour WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
+      + [Mise à niveau d’une version AEM Forms vers AEM Forms 6.4 sur JEE pour JBoss clé en main](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64_fr)
+      + [Mise à niveau de LiveCycle ES4 SP1 vers AEM Forms on JEE pour JBoss clé en main](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
+      + [Mise à niveau d’une version AEM Forms vers AEM Forms 6.4 sur JEE pour WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64_fr)
+      + [Mise à niveau de LiveCycle ES4 SP1 vers AEM Forms on JEE pour WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
+      + [Mise à niveau d’une version AEM Forms vers AEM Forms 6.4 sur JEE pour WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64_fr)
+      + [Mise à niveau de LiveCycle ES4 SP1 vers AEM Forms on JEE pour WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
 + Gestion d’AEM Forms {#manage-administer-aem-forms}
    + [AEM Forms sur les groupes et privilèges OSGi](using/forms-groups-privileges-tasks.md)
    + [Création de dossiers pour classer les formulaires](using/creating-new-folders-categorize-forms.md)
@@ -119,9 +120,9 @@ ht-degree: 73%
       + [Document Security](/help/forms/using/document-security-handling-user-data.md)
    + Hardening AEM Forms Environment {#hardening-aem-forms-environment}
       + [Renforcement et sécurisation d’AEM Forms dans un environnement OSGi](using/hardening-securing-aem-forms-environment.md)
-      + [Considérations générales sur la sécurité d’AEM Forms sur JEE](using/general-security-considerations.md)
-      + [Renforcement de votre Environnement AEM Forms sur JEE](using/hardening-aem-forms-jee-environment.md)
-      + [Configuration des paramètres d’administration sécurisée d’AEM Forms sur JEE](using/configuring-secure-administration-settings-aem.md)
+      + [Considérations générales sur la sécurité pour les AEM Forms sur JEE](using/general-security-considerations.md)
+      + [Renforcement de l’Environnement de vos AEM Forms sur JEE](using/hardening-aem-forms-jee-environment.md)
+      + [Configuration des paramètres d’administration sécurisée pour AEM Forms on JEE](using/configuring-secure-administration-settings-aem.md)
 + Modèle de données de formulaire {#form-data-model}
    + [Présentation de l’intégration des données AEM Forms](using/data-integration.md)
    + [Configurer les sources de données](using/configure-data-sources.md)
@@ -391,7 +392,7 @@ ht-degree: 73%
    + [Affichage et compréhension des rapports de transactions](using/viewing-and-understanding-transaction-reports.md)
    + [API facturables des rapports de transaction](using/transaction-reports-billable-apis.md)
    + [Enregistrer une transaction pour les implémentations personnalisées](using/record-transaction-custom-implementation.md)
-+ Aide pour l’administrateur d’AEM Forms sur JEE {#administrator-help}
++ Aide pour l’administrateur de AEM Forms on JEE {#administrator-help}
    + Prise en main {#get-started}
       + [Paramètres généraux d’AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [Mise à jour du type de licence pour le déploiement](/help/forms/using/admin-help/update-license-type-deployment.md)
@@ -571,7 +572,7 @@ ht-degree: 73%
    + [Rapports de processus de dépannage](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Guides de référence pour les développeurs {#developer-reference}
    + [Principes de développement de base](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-   + [HTML Template Language](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+   + [HTML Template Language](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
    + [Module externe AEM permettant de déboguer les formulaires adaptatifs](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Référence API Java pour AEM Forms](https://helpx.adobe.com/fr/experience-manager/6-4/forms/javadocs/index.html)
    + [Référence d’API Java d’AEM Forms on JEE](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
@@ -579,9 +580,9 @@ ht-degree: 73%
    + [Guide de référence du service Assembler et de DDX](http://www.adobe.com/go/learn_aemforms_ddxRef_64_fr)
    + [Aide de Workbench](http://www.adobe.com/go/learn_aemforms_workbench_64_fr)
    + Programmation avec AEM Forms sur JEE {#programming-aem-forms-jee}
-      + Présentation de la programmation avec AEM Forms sur JEE {#introduction-programming-aem-forms-jee}
+      + Présentation de la programmation avec AEM Forms on JEE {#introduction-programming-aem-forms-jee}
          + [Présentation de l’API Java QuickStart](developing/introducing-java-api-soap-quick.md)
-         + [Appel d’AEM Forms à l’aide d’API](developing/invoking-aem-forms-using-apis.md)
+         + [Appel de AEM Forms à l’aide d’API](developing/invoking-aem-forms-using-apis.md)
          + [Présentation des processus AEM Forms](developing/aem-forms-processes.md)
          + [conteneur de service](developing/service-container.md)
       + Début rapide de l’API Java - Exemples de code {#java-api-quick-start-code-examples}
@@ -612,9 +613,9 @@ ht-degree: 73%
          + [API Java du service Tâche Manager QuickStart (SOAP)](developing/task-manager-service-java-api.md)
          + [Début rapide de l’API Java User Manager (SOAP)](developing/user-manager-java-api-quick.md)
          + [XMP Utilities Service Java APIQuick Début(SOAP)](developing/xmp-utilities-service-java-api.md)
-      + Appel d’AEM Forms sur JEE à l’aide d’API {#invoking-aem-forms-jee-apis}
-         + [Appel d’AEM Forms à l’aide de requêtes REST](developing/invoking-aem-forms-using-rest.md)
-         + [Appel d’AEM Forms à l’aide de Remoting](developing/invoking-aem-forms-using-remoting.md)
+      + Appel de AEM Forms sur JEE à l’aide d’API {#invoking-aem-forms-jee-apis}
+         + [Appeler des AEM Forms à l’aide de requêtes REST](developing/invoking-aem-forms-using-rest.md)
+         + [Appel de AEM Forms à l’aide de Remoting](developing/invoking-aem-forms-using-remoting.md)
          + [Appel d’AEM Forms utilisant des services Web](developing/invoking-aem-forms-using-web.md)
          + [Appel d’AEM Forms utilisant des services Web](developing/invoking-human-centric-long-lived.md)
          + [Appel d’AEM Forms à l’aide de l’API Java](developing/invoking-aem-forms-using-java.md)
@@ -649,7 +650,7 @@ ht-degree: 73%
          + [Rendu des formulaires au niveau du client](developing/rendering-forms-client.md)
          + [Rendu de formulaires HTML à l’aide de fichiers CSS personnalisés](developing/rendering-html-forms-using-custom.md)
          + [Rendu de formulaires HTML avec des barres d’outils personnalisées](developing/rendering-html-forms-custom-toolbars.md)
-         + [Rendu de formulaires PDF interactifs](developing/rendering-interactive-pdf-forms.md)
+         + [Rendu des PDF forms interactifs](developing/rendering-interactive-pdf-forms.md)
          + [Rendu de formulaires prenant en charge les droits](developing/rendering-rights-enabled-forms.md)
          + [Validation des Documents DDX](developing/validating-ddx-documents.md)
          + [Conversion de fichiers PDF en fichiers Postscript et Image](developing/converting-pdf-postscript-image-files.md)
@@ -665,7 +666,7 @@ ht-degree: 73%
          + [Utilisation de Documents PDF/A](developing/pdf-a-documents.md)
          + [Utilisation des utilitaires PDF](developing/pdf-utilities.md)
          + [Utilisation des utilitaires XMP](developing/xmp-utilities.md)
-         + [Préparation d’AEM Forms pour la sauvegarde](developing/preparing-aem-forms-backup.md)
+         + [Préparation des AEM Forms pour la sauvegarde](developing/preparing-aem-forms-backup.md)
          + [Gestion par programmation des points de terminaison](developing/programmatically-endpoints.md)
          + [Gestion par programmation des noeuds de préférences](developing/programmatically-preferences-nodes.md)
          + [Protection des Documents avec des stratégies](developing/protecting-documents-policies.md)
