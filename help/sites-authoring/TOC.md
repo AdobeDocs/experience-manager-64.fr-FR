@@ -2,17 +2,21 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Authoring User Guide
+user-guide-title: Guide de l’utilisateur de création d’AEM 6.4
+user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 88%
 
 ---
 
 
 # AEM 6.4 Authoring User Guide {#authoring}
 
-+ [Présentation du Guide de l’utilisateur de création](home.md)
-+ Tâches, outils et concepts essentiels pour la création AEM {#essentials}
++ [Présentation du guide de l’utilisateur de création](home.md)
++ tâches, outils et concepts essentiels pour la création AEM {#essentials}
    + [Premières étapes pour les auteurs](first-steps.md)
    + [Guide rapide pour la création de pages](qg-page-authoring.md)
    + [Concept de création](author.md)
@@ -34,20 +38,20 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Fragments d’expérience](experience-fragments.md)
    + [Exportation au format CSV](csv-export.md)
    + [Composants](default-components.md)
-   + [Création d’une page pour les périphériques mobiles](mobile.md)
+   + [Création d’une page pour les appareils mobiles](mobile.md)
    + [Résolution des problèmes d’AEM lors de la création](troubleshooting.md)
    + [Raccourcis clavier lors de la modification de pages](page-authoring-keyboard-shortcuts.md)
-   + [Meilleures pratiques](best-practices.md)
+   + [Bonnes pratiques](best-practices.md)
 + Fonctions de site et de page {#siteandpage}
    + [Utilisation des balises](tags.md)
-   + [Création de modèles de page](templates.md)
+   + [Création de modèles de page   ](templates.md)
    + [Système de style](style-system.md)
    + [Utilisation des versions de page](working-with-page-versions.md)
    + [Outil de comparaison des pages](page-diff.md)
    + [Console des composants](default-components-console.md)
    + [Mise en page réactive](responsive-layout.md)
    + [Content Insight ](content-insights.md)
-   + [Création d’un contenu accessible (conformité WCAG 2.0)](creating-accessible-content.md)
+   + [Création d’un contenu accessible (conformité WCAG 2.0)](creating-accessible-content.md)
    + [Génération de modèles automatique](scaffolding.md)
    + [Configuration de composants en mode de conception](default-components-designmode.md)
    + [Composants de base](default-components-foundation.md)
@@ -65,7 +69,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Conversion de lancements](launches-promoting.md)
 + Workflows {#workflows}
    + [Utilisation des workflows](workflows.md)
-   + [Application de workflows aux pages](workflows-applying.md)
+   + [Application de workflows aux pages ](workflows-applying.md)
    + [Participation aux workflows](workflows-participating.md)
    + [Utilisation des workflows de projet](projects-with-workflows.md)
 + Performances de la page {#page-performance}
@@ -83,7 +87,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Gestion des audiences](managing-audiences.md)
    + [Création et gestion d’offres](offerlib.md)
    + [Compréhension de la segmentation](segmentation-overview.md)
-+ AEM et Adobe Campaign {aem-adobe-campaign}
++ AEM et l’Adobe Campaign {aem-adobe-campaign}
    + [Utilisation d’Adobe Campaign](adobe-campaign.md)
    + [Utilisation d’Adobe Campaign Classic et d’Adobe Campaign Standard](campaign.md)
    + [Ciblage de votre Adobe Campaign](target-adobe-campaign.md)
