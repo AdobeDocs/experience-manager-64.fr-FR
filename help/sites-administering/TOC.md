@@ -2,16 +2,20 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
-user-guide-title: AEM 6.4 Administering User Guide
+user-guide-title: Guide de l’utilisateur de l’administration d’AEM 6.4
+user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 97%
 
 ---
 
 
 # AEM 6.4 Administering User Guide {#administering}
 
-+ [Présentation du Guide de l’utilisateur Administration](home.md)
++ [Présentation de l’administration du Guide de l’utilisateur](home.md)
 + Fonctionnalités des sites {#introduction}
    + [Administration de site web](msm-and-translation.md) 
    + [Réutilisation de contenu : Multi Site Manager et Live Copy](msm.md)
@@ -60,7 +64,7 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [Configuration du conteneur et du mode de mises en page](configuring-responsive-layout.md)
    + [Activation de l’accès à l’IU classique](enable-classic-ui.md)
    + [Démarrage de workflows](workflows-starting.md)
-   + [Configuration des modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md)
+   + [Configuration des modules externes d’éditeur de texte enrichi ](configure-rich-text-editor-plug-ins.md)
    + [Consoles d’administration](enable-classic-ui-admin.md)
 + Sécurité {#security}
    + [Administration et sécurité des utilisateurs](security.md)
@@ -98,7 +102,7 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [Intégration des pages d’entrée à Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
 + Aperçu {#ecommerce}
    + [Commerce électronique](ecommerce.md)
-   + [Concepts](concepts.md)
+   + [Concepts ](concepts.md)
    + [Administration du commerce électronique générique](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
@@ -123,7 +127,7 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [Articles associés de la communauté](related-community-articles.md)
    + [Intégration à Adobe Campaign Standard](campaignstandard.md)
    + [Notification de fin de prise en charge de la visionneuse Flash](flash-viewers-eol.md)
-   + [Intégration à Adobe Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
+   + [Intégration à Adobe Creative Cloud](https://docs.adobe.com/content/help/fr-FR/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
    + [Flux de produit](product-feed.md)
    + [Intégration à Adobe Dynamic Tag Management](dtm.md)
    + [Souscription à Adobe Analytics et Adobe Target](opt-in.md)
@@ -147,8 +151,8 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [Intégration de solutions](integration.md)
    + [Intégration de fragments d’expérience dans Adobe Target](experience-fragments-target.md)
    + [Meilleures pratiques des modèles de courrier électronique](best-practices-for-email-templates.md)
-+ Meilleures pratiques {#bestpractices}
-   + [Meilleures pratiques](administer-best-practices.md)
++ Bonnes pratiques {#bestpractices}
+   + [Bonnes pratiques](administer-best-practices.md)
    + [Meilleures pratiques de traduction](tc-bp.md)
    + [Meilleures pratiques MSM](msm-best-practices.md)
    + [AEM Sites – Préparation pour le RGPD](gdpr-compliance-sites.md)
