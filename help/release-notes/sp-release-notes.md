@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
+source-git-commit: 42238ab0c76fbe114ae1646c9f69311df45d8722
 workflow-type: tm+mt
-source-wordcount: '21534'
+source-wordcount: '21532'
 ht-degree: 25%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 25%
 |---|---|
 | Version | 6.4.8.0 |
 | Type | Version du Service Pack |
-| Date  | 5 mars 2020 |
+| Date   | 5 mars 2020 |
 | URL de téléchargement | AEM 6.4.8.0 sur la distribution de [logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Fonctionnalités présentes dans AEM 6.4.8.0 {#what-s-included-in-aem}
@@ -99,7 +99,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 ### Intégrations {#integrations-6480}
 
-* Les menus déroulants **Société** et suite de **Rapports** sont masqués une fois que **Rapports Source** est sélectionné lors de la configuration de Adobe Analytics dans les services de cloud Experience Manager (NPR-31729).
+* Les menus déroulants **Société** et suite de **Rapports** sont masqués une fois que la source **du** Rapports est sélectionnée lors de la configuration d’Adobe Analytics dans les services de cloud Experience Manager (NPR-31729).
 
 * Les propriétés de l&#39;Adobe Campaign ne sont pas nettoyées lorsque la copie de langue d&#39;un bulletin d&#39;information lié à un Adobe Campaign est effectuée, tandis que le nettoyage se produit lorsqu&#39;un bulletin d&#39;information lié à un Adobe Campaign est copié ou collé (NPR-32540).
 
@@ -357,7 +357,7 @@ Si vous utilisez le package `com.day.cq.dam.handler.standard.msoffice` dans votr
 
 **Service PDFG**
 
-* Impossible de télécharger le fichier de paramètres PDF Adobe téléchargé à l’aide de l’interface utilisateur d’administration (NPR-31273).
+* Impossible de télécharger le fichier de paramètres Adobe PDF téléchargé à l’aide de l’interface utilisateur d’administration (NPR-31273).
 
 #### AEM 6.4.6.0 {#experience-manager-6460}
 
@@ -848,8 +848,8 @@ Voici quelques-uns des points forts d’AEM 6.4.4.0 :
 
 **DAM - Général**
 
-* (Intégration Adobe Stock) Le modal d’erreur du serveur s’affiche avec une erreur Oauth dans le fichier error.log. Correctif pour CQ-4260406
-* L’intégration Adobe Stock ne fonctionne pas si la version 6.4.4 est appliquée à la version 6.4.3. Correctif pour CQ-4266009
+* (Intégration d’Adobe Stock) Le module d’erreur du serveur s’affiche avec une erreur Oauth dans le fichier error.log. Correctif pour CQ-4260406
+* L’intégration d’Adobe Stock ne fonctionne pas si la version 6.4.4 est appliquée à la version 6.4.3. Correctif pour CQ-4266009
 * Le lien vers le modèle CF est manquant même après l&#39;application du correctif SP3. Correctif pour CQ-4259029
 
 **Plate-forme**
@@ -942,7 +942,7 @@ Les principaux points forts d&#39;AEM Forms 6.4.4.0 sont les suivants :
 
 **Package de modules complémentaires Forms**
 
-**Intégration de Adobe Sign**
+**Intégration d’Adobe Sign**
 
 * Le SDK client d’AEM Forms 6.4 ne contient pas de package adobésité-recipent. NPR-27735 : correctif pour CQ-4259372
 
@@ -994,10 +994,6 @@ Un lot reste à l’état installé après l’installation du package Forms Man
 **Forms - Designer**
 
 * Certaines images JPEG d’un modèle XDP ne s’affichent pas correctement.  NPR-26702 : correctif pour LC-3917457
-
-**Formulaires - OBSOLÈTE**
-
-* Le service de capture de papier se bloque lors du traitement des fichiers TIFF. NPR-28079 : correctif pour CQ-4240649
 
 **Forms - Workflow**
 
@@ -1255,6 +1251,7 @@ Les principaux points forts d&#39;AEM Forms 6.4.3.0 sont les suivants :
 
 * Impossible d&#39;afficher les paramètres de Rapports et de conformité des normes pour PDF Generator. NPR-26715 : correctif pour CQ-4253384
 * le fichier binaire convertpdf est absent du package de module complémentaire AIX Forms, ce qui entraîne un échec lors de l’appel du service PDFA. Correctif pour CQ-4257873
+* Le service de capture de papier se bloque lors du traitement des fichiers TIFF. NPR-28079 : correctif pour CQ-4240649
 
 **Services de documents**
 
@@ -1294,7 +1291,7 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 * Prise en charge Ajoutée de MongoDB Enterprise 3.6.
 * L’éditeur de page Sites ajoute la prise en charge de la modification et de la composition contextuelles avec les composants côté client créés en React ou Angular en combinaison avec le SDK <a href="../sites-developing/spa-walkthrough.md">JS de l’éditeur d’</a>applications monopages d’AEM.
 * Améliorations des fragments de contenu : ajout de la capacité d’annoter dans les champs de texte et de comparer côte à côte les versions.
-* Ajoute [l’intégration avec Adobe Stock](/help/assets/aem-assets-adobe-stock.md) afin que les utilisateurs puissent rechercher, prévisualisation, enregistrer et mettre en licence des actifs Adobe Stock directement à partir de l’interface utilisateur d’AEM. Pour plus d’informations, voir [Utilisation d’actifs Adobe Stock avec des AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/stock-assets-feature-video-use.md).
+* Ajouté [l’intégration à Adobe Stock](/help/assets/aem-assets-adobe-stock.md) afin que les utilisateurs puissent rechercher, prévisualisation, enregistrer et activer la licence des ressources Adobe Stock directement à partir de l’interface utilisateur d’AEM. Pour plus d’informations, voir [Utilisation de ressources Adobe Stock avec des AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/stock-assets-feature-video-use.md).
 * Les ressources prennent également en charge les métaschémiques conditionnelles dynamiques et permettent de définir un schéma de métadonnées pour les dossiers de ressources.
 * Configuration Ajoutée dans chaque composant pour activer/désactiver la fonctionnalité de création/mise à jour de miniatures de dossier.
 * Amélioration de l’éditeur d’images lors de la création de pages.
@@ -1324,7 +1321,7 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 * Le bouton Créer n’est pas disponible lors de la sélection du dossier de ressources sans autorisation de suppression. NPR-25788 : correctif pour CQ-4250140
 * (Backport) Améliorations de l’accessibilité : Duplicata-id : La valeur de l&#39;attribut id doit être unique, Libellé : Les éléments de formulaire doivent avoir des libellés et un nom de lien : Les liens doivent présenter un texte perceptible. NPR-24252 : correctif pour CQ-4250905, CQ-4250906, CQ-4250907
 * Le téléchargement d’un fichier CSV avec des champs séparés par &quot;,&quot; échoue pour les pays européens. NPR-25549 : correctif pour CQ-4249931
-* (Portail de marques) Les sous-ensembles d’un fichier pdf de plusieurs pages ne sont pas publiés lorsqu’un fichier est publié. NPR-25991 : correctif pour CQ-4245162
+* (Portail de marques) Les sous-ensembles d’un fichier PDF de plusieurs pages ne sont pas publiés lorsqu’un fichier est publié. NPR-25991 : correctif pour CQ-4245162
 * Publiez des fonctionnalités ultérieures pour la réplication AEM vers le portail de marque. NPR-25911 : correctif pour CQ-109139
 * La publication et la dépublication de la collection privée par des utilisateurs non administrateurs génèrent un NPE. NPR-25906 : correctif pour CQ-4250594
 * Désactivez la publication de fragments de contenu et de schémas de formulaires sur le portail de marque. NPR-24176, NPR-26004 : correctif pour CQ-4251592, CQ-4252026
@@ -1543,7 +1540,7 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 
 * Un type dans le lot SymbolicName conduit à un lot de duplicata. Correctif pour Granite-22155
 * CUGConfiguration ne peut pas récupérer CugExclude. Correctif pour Granite-21109
-* Redémarrage de Adobe Granite Workflow Core Relance les étapes du workflow à partir du milieu, créant des workflows inutiles. NPR-25057 : correctif pour Granite-22218
+* Redémarrage de Adobe Granite Workflow Core redémarre les étapes du workflow à partir du milieu, créant des workflows inutiles. NPR-25057 : correctif pour Granite-22218
 * JcrResourceBundle ne prend pas correctement en charge plusieurs noms de base. NPR-25245 : correctif pour Granite-22317
 * Lors de l’installation des packages de contenu, les ACL sont regroupées par entité de sécurité, ce qui rompt le modèle d’autorisation. NPR-24583 : correctif pour Granite-21591
 * Mettez Jetty à jour vers la version 9.4.11 pour corriger les vulnérabilités. NPR-25030 : correctif pour Granite-22120
@@ -1659,7 +1656,7 @@ Les principaux points forts d&#39;AEM Forms 6.4.2.0 sont les suivants :
 
 **Ressources**
 
-* Ajoute [l’intégration à Adobe Stock](/help/assets/aem-assets-adobe-stock.md) afin que les utilisateurs puissent rechercher, prévisualisation, enregistrer et mettre en licence des actifs Adobe Stock directement à partir de l’interface utilisateur d’AEM. Pour plus d’informations, voir [Utilisation de ressources Adobe Stock avec des ressources]AEM (https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html). NPR-15779 : correctif pour CQ-30857
+* Ajouté [l’intégration à Adobe Stock](/help/assets/aem-assets-adobe-stock.md) afin que les utilisateurs puissent rechercher, prévisualisation, enregistrer et activer la licence des ressources Adobe Stock directement à partir de l’interface utilisateur d’AEM. Pour plus d’informations, voir [Utilisation de ressources Adobe Stock avec des ressources]AEM (https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html). NPR-15779 : correctif pour CQ-30857
 * Prise en charge Ajoutée de la métaschie conditionnelle dynamique. For more information, see [Cascading Metadata](/help/assets/cascading-metadata.md). NPR-25189 : correctif pour CQ-4237413
 * Activation de l’option &quot;Téléchargement de fichier&quot; sur les fragments de contenu. For more information, see [Asset Reports](/help/assets/asset-reports.md). NPR-25186 : correctif pour CQ-4237410
 * Possibilité de définir un schéma de métadonnées pour les dossiers de fichiers. Pour plus d’informations, voir Schéma [de métadonnées de](/help/assets/folder-metadata-schema.md) dossiers et consultez ses Paramètres [de](#configuration-settings-required-for-npr) configuration après l’installation d’AEM 6.4.2.0. NPR-21268 : correctif pour CQ-4221574
@@ -2028,7 +2025,7 @@ Les principaux aspects pour AEM Forms sont les suivants :
 **Correspondence Management**
 
 * Légendes supprimées du modèle de lettre après modification d’un actif de texte contenant des espaces réservés. NPR-24196
-* Le fichier XDP, lorsqu’il est téléchargé et utilisé comme mise en page pour les modèles de lettre, ne parvient pas à prévisualisation ni à modifier les modèles. NPR-24143 : correctif pour CQ-4244407
+* Le fichier XDP, lorsqu’il est téléchargé et utilisé comme mise en page pour les modèles de lettre, ne parvient pas à prévisualisation ou à modifier les modèles. NPR-24143 : correctif pour CQ-4244407
 * La sélection d’affectation est sélectionnée par défaut dans le fragment de liste. Correctif pour CQ-4240097
 * Éditeur de conditions : l’évaluation de plusieurs résultats doit être activée par défaut. Correctif pour CQ-4240096
 * L&#39;image supprimée de la Liste affiche toujours l&#39;image en prévisualisation. Correctif pour CQ-4239909
