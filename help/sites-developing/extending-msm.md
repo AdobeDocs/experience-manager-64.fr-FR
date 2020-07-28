@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
 translation-type: tm+mt
-source-git-commit: 6d0bd714548e62dcb63298e3d26c84c1a3d37bc9
+source-git-commit: 0cb1a323ac56b5b8ecd07f84c4840f1b466d5796
 workflow-type: tm+mt
-source-wordcount: '2597'
-ht-degree: 68%
+source-wordcount: '2588'
+ht-degree: 67%
 
 ---
 
@@ -24,8 +24,9 @@ Cette page vous explique comment étendre les fonctionnalités de Multi Site Man
 
 * Découvrez les principaux membres de l’API Java de MSM.
 * Créez une nouvelle action de synchronisation pouvant être utilisée dans une configuration de déploiement.
-* Supprimez l’étape « Chapitres » dans l’assistant Créer un site.
 * Modifiez la langue par défaut et les codes pays.
+
+<!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >
