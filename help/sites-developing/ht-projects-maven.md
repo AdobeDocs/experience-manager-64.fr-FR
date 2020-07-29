@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
+source-git-commit: b46164c81890a41e3811a65534c264884e8562fc
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 73%
@@ -447,7 +447,7 @@ Les dépendances ci-dessous doivent être ajoutées au POM des modules `content`
 
 >[!NOTE]
 >
->A moins que vous n’importiez les dépendances de produit décrites ci-dessus, elles doivent également être ajoutées au POM parent avec la version correspondant à votre configuration AEM, comme décrit ci-dessus. Les commentaires de chaque entrée ci-dessous indiquent le module à rechercher dans Dependency Finder.
+>A moins que vous n’importiez les dépendances de produits décrites ci-dessus, elles doivent également être ajoutées au POM parent avec la version correspondant à votre configuration AEM, comme décrit ci-dessus. Les commentaires de chaque entrée ci-dessous indiquent le module à rechercher dans Dependency Finder.
 
 >[!NOTE]
 >
@@ -551,14 +551,14 @@ Pour parvenir à la suppression des classes compilées à partir des pages JSP, 
 >
 >
 ```
-> <resource>  
->           <directory>src/main/content/jcr_root</directory>  
->           <includes>  
->                   <include>apps/**</include>  
->                   <include>libs/foundation/global.jsp</include>
->       </includes>  
->   </resource>  
->  ```
+><resource>
+>       <directory>src/main/content/jcr_root</directory>
+>       <includes>
+>               <include>apps/**</include>
+>               <include>libs/foundation/global.jsp</include>
+>       </includes>
+></resource>
+>```
 
 ### Utilisation des systèmes SCM {#how-to-work-with-scm-systems}
 
