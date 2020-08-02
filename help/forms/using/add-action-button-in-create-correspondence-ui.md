@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 3c67867637cb3fdcdce77a5d494b9b150f128a20
 workflow-type: tm+mt
-source-wordcount: '1912'
-ht-degree: 55%
+source-wordcount: '1896'
+ht-degree: 56%
 
 ---
 
@@ -38,7 +38,7 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
 1. L’ajout du bouton à l’interface utilisateur de création de correspondance
 1. L’ajout d’un traitement d’action au bouton
-1. Ajouter le processus LiveCycle pour activer l’action &quot;gestion&quot;
+1. Ajouter le processus de LiveCycle pour activer l&#39;action &quot;gestion&quot;
 
 ### Ajout du bouton à l’interface utilisateur de création de correspondance {#add-the-button-to-the-create-correspondence-user-interface}
 
@@ -106,7 +106,7 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
    | **Nom** | **Description** |
    |---|---|
-   | nom est | Nom alphanumérique de l’action à exécuter. La valeur de cette balise est obligatoire, doit être unique (dans la balise modelExtension) et doit commencer par une lettre de l’alphabet. |
+   | name | Nom alphanumérique de l’action à exécuter. La valeur de cette balise est obligatoire, doit être unique (dans la balise modelExtension) et doit commencer par une lettre de l’alphabet. |
    | label | Libellé du bouton d’action. |
    | tooltip | Texte de l’info-bulle du bouton, qui s’affiche lorsque l’utilisateur passe le pointeur de la souris sur le bouton. |
    | styleName | Nom du style personnalisé appliqué au bouton d’action. |
@@ -163,7 +163,7 @@ Le fichier ACMExtensionsMessages.properties contient des libellés et des messag
 
 #### Redémarrage du lot du bloc de création Adobe Asset Composer {#restart-the-adobe-asset-composer-building-block-bundle}
 
-Après avoir effectué chaque modification côté serveur, redémarrez le lot du bloc de création Adobe Asset Composer. Dans ce scénario, les fichiers acmExtensionsConfig.xml et ACMExtensionsMessages.properties côté serveur sont modifiés. Par conséquent, le lot du bloc de création Adobe Asset Composer nécessite un redémarrage.
+Après avoir effectué chaque modification côté serveur, redémarrez le lot du bloc de création Adobe Asset Composer. Dans ce scénario, les fichiers acmExtensionsConfig.xml et ACMExtensionsMessages.properties côté serveur sont modifiés. Par conséquent, le lot du bloc de création Asset Composer Adobe nécessite un redémarrage.
 
 >[!NOTE]
 >
@@ -326,11 +326,10 @@ La gestion de l’action/du bouton lors d’un clic sur l’action/le bouton com
 
 Dans ce scénario, activez les composants suivants, qui font partie du fichier joint components.zip :
 
-* Composant JAR DSC (DSCSample.jar)
-* Processus LCA d’envoi de la lettre pour révision (SendLetterForReview.lca)
+* DSC component jar (`DSCSample.jar`)
+* Processus LCA d’envoi de la lettre pour révision (`SendLetterForReview.lca`)
 
-Téléchargez et décompressez le fichier components.zip pour obtenir les fichiers DSCSample.jar et SendLetterForReview.lca. Utilisez ces fichiers comme indiqué dans les procédures suivantes.\
-components.zip
+Download and unzip the `components.zip` file to get `DSCSample.jar` and `SendLetterForReview.lca` files. Utilisez ces fichiers comme indiqué dans les procédures suivantes.
 
 [Obtenir le fichier](assets/components.zip)
 
@@ -350,11 +349,12 @@ Le processus LCA s’exécute sur le serveur LiveCycle et requiert l’adresse d
    * **[!UICONTROL URL]** du serveur : URL du serveur LC dont le service Send For Review est utilisé par le code du gestionnaire d’actions.
    * **[!UICONTROL Nom d&#39;utilisateur]**: Nom d’utilisateur administrateur du serveur LC
    * **[!UICONTROL Mot de passe]** : mot de passe du nom d’utilisateur de l’administrateur.
+
    ![Configuration du SDK client d’Adobe LiveCycle](assets/3_clientsdkconfiguration.png)
 
 #### Installation de LiveCycle Archive (LCA) {#install-livecycle-archive-lca}
 
-Processus LiveCycle requis qui active le processus du service de messagerie électronique.
+Processus de LiveCycle requis qui active le processus de service de messagerie.
 
 >[!NOTE]
 >
@@ -407,36 +407,37 @@ Dans ce scénario, configurez le service de messagerie dans le serveur LiveCycle
 
 #### Configuration du service DSC {#configure-the-dsc-service}
 
-Pour utiliser l’API Correspondence Management, téléchargez le fichier DSCSample.jar (joint à ce document dans le cadre de components.zip) et téléchargez-le sur le serveur LiveCycle. Une fois le fichier DSCSample.jar téléchargé sur le serveur LiveCycle, le serveur AEM utilise le fichier DSCSample.jar pour accéder à l’API renderLetter.
+To use the Correspondence Management API, download the `DSCSample.jar` (attached in this document as part of `components.zip`) and upload it to the LiveCycle server. After the `DSCSample.jar` file is uploaded to the LiveCycle server, the AEM server uses the `DSCSample.jar` file to access the renderLetter API.
 
 Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
-1. Mettez à jour l’URL du serveur AEM dans cmsa.properties dans DSCSample.jar, qui se trouve à l’emplacement suivant :
+1. Update the AEM server URL in cmsa.properties in `DSCSample.jar`, which is at the following location:
 
    DSCSample.jar\com\adobe\livecycle\cmsa.properties
 
 1. Indiquez les paramètres suivants dans le fichier de configuration :
 
-   * **crx.serverUrl**=https:/[host]/:[port]/context path[]/URL AEM[]
+   * **crx.serverUrl**=https:/[host]/:[port]/context path[]/AEM URL[]
    * **crx.username**= nom d’utilisateur AEM
    * **crx.password**= mot de passe AEM
    * **crx.appRoot**=/content/apps/cm
+
    >[!NOTE]
    >
    >À chaque modification apportée au côté serveur, redémarrez le serveur LiveCycle. Pour plus d’informations sur la création de votre propre composant LiveCycle, voir [Extension du logiciel LiveCycle ES via le développement d’un DSC personnalisé](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
 
-   Le fichier DSCSample.jar utilise l’API renderLetter. For more Information about the renderLetter API, see [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   Le `DSCSample.jar` fichier utilise l’ `renderLetter` API. For more Information about the renderLetter API, see [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importer DSC vers LiveCycle {#import-dsc-to-livecyle}
 
-Le fichier DSCSample.jar utilise l’API renderLetter pour effectuer le rendu de la lettre en tant qu’octets PDF à partir de données XML que C fournit en entrée. Pour plus d’informations sur l’API renderLetter et les autres API, voir [Service de rendu de lettre](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+`DSCSample.jar``renderLetter`Le fichier utilise l’API pour effectuer le rendu d’une lettre sous forme d’octets PDF à partir des données XML fournies par C en tant qu’entrée. Pour plus d’informations sur l’API renderLetter et les autres API, voir [Service de rendu de lettre](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Démarrer Workbench et connectez-vous.
 1. Select **[!UICONTROL Window > Show Views > Components]**. La vue Composants est ajoutée à Workbench ES2.
 
 1. Right-click **[!UICONTROL Components]** and select **[!UICONTROL Install Component]**.
 
-1. Select the **[!UICONTROL DSCSample.jar]** file through the file browser and click **[!UICONTROL Open]**.
+1. Select the `DSCSample.jar` file through the file browser and click **[!UICONTROL Open]**.
 1. Right-click **[!UICONTROL RenderWrapper]** and select **[!UICONTROL Start Component]**. Si le composant démarre, une flèche verte apparaît en regard du nom du composant.
 
 ## Envoi de la lettre pour révision {#send-letter-for-review}
