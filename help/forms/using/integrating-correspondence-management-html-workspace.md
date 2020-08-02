@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f2bde2e8-da95-48ac-a652-85ead87f2cd3
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 3c67867637cb3fdcdce77a5d494b9b150f128a20
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 86%
 
 ---
 
@@ -23,9 +26,9 @@ Par exemple, considérons Correspondence Management comme exemple de candidat po
 
 ## Création d’actifs de Correspondence Management {#create-correspondence-management-assets}
 
-en créant un exemple de modèle Correspondence Management qui est rendu dans l’espace de travail AEM Forms. For more details, see [Create a letter template](/help/forms/using/create-letter.md).
+Début en créant un exemple de modèle Correspondence Management qui est rendu dans l’espace de travail AEM Forms. For more details, see [Create a letter template](/help/forms/using/create-letter.md).
 
-Accédez au modèle Correspondence Management à son URL pour vérifier si le rendu du modèle Correspondence Management est réussi. L’URL a un modèle semblable à celui de `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Accédez au modèle Correspondence Management à l’adresse URL correspondante pour vérifier si le modèle Correspondence Management peut être rendu correctement. L’URL a un modèle similaire à celui de la variable `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 où `encodedLetterId` correspond à l’ID de lettre codé URL. Spécifiez le même identifiant de lettre lors de la définition du processus de rendu pour une tâche d’espace de travail dans Workbench.
 
@@ -42,7 +45,7 @@ Procédez comme suit pour créer une tâche pour le rendu et l’envoi d’une l
 
 1. Lancez Workbench. Connectez-vous à localhost en tant qu’administrateur.
 1. Cliquez sur Fichier > Nouveau > Application. Dans le champ Nom de l’application, saisissez `CMDemoSample`, puis cliquez sur Terminer.
-1. Sélectionnez `CMDemoSample/1.0` puis cliquez avec le bouton droit `NewProcess`. Dans le champ Nom, saisissez `CMRenderer`, puis cliquez sur Terminer.
+1. Sélectionnez `CMDemoSample/1.0` et cliquez avec le bouton droit `NewProcess`. Dans le champ Nom, saisissez `CMRenderer`, puis cliquez sur Terminer.
 1. Faites glisser le sélecteur d’activité du point de départ et configurez-le :
 
    1. Dans Données de présentation, sélectionnez Utiliser un actif CRX.
@@ -98,7 +101,7 @@ Procédez comme suit pour créer une tâche pour le rendu et l’envoi d’une l
    }
    ```
 
-   [Télécharger le fichier](assets/dscsample.zip)Télécharger DSC : Un exemple de DSC est disponible dans le fichier DSCSample.zip joint ci-dessus. Téléchargez et décompressez l’archive ce fichier. Avant d’utiliser le service DSC, vous devez le configurer. Pour plus d’informations, [Configuration du service DSC](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   [Obtenir le fichier](assets/dscsample.zip)Télécharger DSC : Un exemple de DSC est disponible dans le `DSCSample.zip` fichier joint ci-dessus. Download and unzip the `DSCSample.zip` file. Avant d’utiliser le service DSC, vous devez le configurer. Pour plus d’informations, [Configuration du service DSC](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Dans la boîte de dialogue Définir l’activité, sélectionnez l’activité appropriée tel que GetLetterInstanceInfo et cliquez sur **OK**.
 
