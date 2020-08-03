@@ -1,18 +1,18 @@
 ---
-title: Notes de mise à jour cumulées d’AEM 6.4 Fix Pack
+title: Notes de mise à jour cumulées du pack de correctifs AEM 6.4
 description: Notes de mise à jour spécifiques à l'Adobe Experience Manager 6.4 Cumulative Fix Packs.
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 24%
+source-wordcount: '2125'
+ht-degree: 25%
 
 ---
 
 
-# Notes de mise à jour cumulées d’AEM 6.4 Fix Pack {#aem-cumulative-fix-pack-release-notes}
+# Notes de mise à jour cumulées du pack de correctifs AEM 6.4 {#aem-cumulative-fix-pack-release-notes}
 
 ## Informations sur la version {#release-information}
 
@@ -20,17 +20,17 @@ ht-degree: 24%
 |---|---|
 | Version | 6.4.8.1 |
 | Type | Pack de correctifs cumulés  |
-| Date  | 4 juin 2020 |
+| Date   | 4 juin 2020 |
 | Condition requise | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
 | URL de téléchargement | AEM 6.4.8.1 sur la distribution de [logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
 
 ## Fonctionnalités présentes dans AEM 6.4.8.1 {#what-s-included-in-aem}
 
-AEM Cumulative Fix Pack 6.4.8.1 est une mise à jour importante qui comprend plusieurs correctifs internes et clients depuis la disponibilité générale d’AEM 6.4 Service Pack 8 (6.4.8.0) en mars 2020.
+AEM Cumulative Fix Pack 6.4.8.1 est une mise à jour importante qui comprend plusieurs correctifs internes et clients depuis la disponibilité générale d&#39;AEM 6.4 Service Pack 8 (6.4.8.0) en mars 2020.
 
-AEM Cumulative Fix Pack 6.4.8.1 dépend d’AEM 6.4 Service Pack 8. Par conséquent, vous devez installer le package AEM Cumulative Fix Pack 6.4.8.1 après avoir installé AEM 6.4 Service Pack 8.
+AEM Cumulative Fix Pack 6.4.8.1 dépend de AEM 6.4 Service Pack 8. Par conséquent, vous devez installer AEM Cumulative Fix Pack 6.4.8.1 après avoir installé AEM 6.4 Service Pack 8.
 
-Voici quelques-uns des points forts d’AEM 6.4.8.1 :
+Voici quelques-uns des points saillants de l&#39;AEM 6.4.8.1 :
 
 * Suppression de l’intégration Package Share avec l’Adobe Experience Manager.
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.8.21.
@@ -79,7 +79,7 @@ L’Adobe Experience Manager 6.4.8.1 corrige les problèmes suivants.
 * Le [!DNL Sling] filtre n’est pas appelé si l’entrée de `sling:match` mappage est créée sous `/etc/maps` (NPR-33308).
 * Tous les agents de vidage sont déclenchés lors de la désactivation d&#39;une page (NPR-32941).
 * Lorsque vous utilisez l’ `ScriptProcessor` API pour réduire la taille d’une bibliothèque JavaScript, le fichier journal affiche un message d’erreur indiquant que le code JavaScript n’est pas conforme au mode strict. L’API ne fournit pas d’option permettant d’activer ou de désactiver le mode strict. (NPR-32746).
-* Lorsqu’une requête SQL s’exécute pendant une période plus longue, par exemple 7 heures, AEM arrête de répondre (NPR-33043).
+* Lorsqu&#39;une requête SQL s&#39;exécute plus longtemps, par exemple pendant 7 heures, AEM cesse de répondre (NPR-33043).
 
 ### Interface utilisateur {#ui-6481}
 
@@ -109,11 +109,11 @@ L’Adobe Experience Manager 6.4.8.1 corrige les problèmes suivants.
 >AEM Cumulative Fix Pack n’inclut pas de correctifs pour les AEM Forms. Les correctifs sont fournis à l’aide d’un module complémentaire Forms distinct.  En outre, un programme d’installation cumulatif est publié, qui comprend des correctifs pour AEM Forms on JEE. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
 * Correspondence Management : Lorsqu’un utilisateur colle du contenu à partir d’un [!DNL Word] document, le fragment de document de texte ne conserve pas la mise en forme (NPR-33213).
-* Formulaires adaptatifs : Une nouvelle ligne d’une chaîne dans un dictionnaire de formulaires adaptatifs ajoute `&#xa;` des caractères au dictionnaire (NPR-33265).
-* Formulaires adaptatifs : L’utilisateur ne peut pas enregistrer de formulaire adaptatif contenant plusieurs pièces jointes (NPR-33214).
-* Formulaires adaptatifs : `AddInstance` et `RemoveInstance` les méthodes de la classe Instance Manager n’ajoutent pas de nombre dynamique d’instances pour les fragments de chargement différé sur [!DNL Internet Explorer 11] (NPR-33201).
-* Formulaires adaptatifs : Analytics activé sur un formulaire adaptatif incorporé dans une [!DNL Sites] page n’enregistre pas les données pour les événements Envoyer et Abandon (NPR-31359).
-* Formulaires adaptatifs : Lorsqu’un utilisateur colle le contenu d’un [!DNL Word] document à un formulaire adaptatif et l’envoie, le formulaire adaptatif envoyé comprend des caractères Unicode. En outre, la conversion PDF/A échoue en raison de caractères Unicode (NPR-33348).
+* Forms adaptatif : Une nouvelle ligne d’une chaîne dans un dictionnaire de formulaires adaptatifs ajoute `&#xa;` des caractères au dictionnaire (NPR-33265).
+* Forms adaptatif : L’utilisateur ne peut pas enregistrer de formulaire adaptatif contenant plusieurs pièces jointes (NPR-33214).
+* Forms adaptatif : `AddInstance` et `RemoveInstance` les méthodes de la classe Instance Manager n’ajoutent pas de nombre dynamique d’instances pour les fragments de chargement différé sur [!DNL Internet Explorer 11] (NPR-33201).
+* Forms adaptatif : Analytics activé sur un formulaire adaptatif incorporé dans une [!DNL Sites] page n’enregistre pas les données pour les événements Envoyer et Abandon (NPR-31359).
+* Forms adaptatif : Lorsqu’un utilisateur colle le contenu d’un [!DNL Word] document à un formulaire adaptatif et l’envoie, le formulaire adaptatif envoyé comprend des caractères Unicode. En outre, la conversion PDF/A échoue en raison de caractères Unicode (NPR-33348).
 * BackendIntegration : Les demandes de modèle de données de formulaire échouent lorsque le jeton d’actualisation expire en raison d’un état inactif incorrect (NPR-33168).
 * Document Services : Le service Convert PDF ne parvient pas à convertir les documents PDF en PostScript en raison de l’absence de jars Gibson pour [!DNL WebLogic] [!DNL Linux] le serveur (NPR-33515, CQ-4292239).
 * Document Services : Lorsqu’un utilisateur convertit un fichier texte au format PDF, les caractères japonais ne s’affichent pas correctement (NPR-33239).
@@ -134,7 +134,7 @@ L’Adobe Experience Manager 6.4.8.1 corrige les problèmes suivants.
 
 >[!CAUTION]
 >
->Pour les clients dont les Feature Packs sont installés sur AEM 6.4. Les Feature Packs facultatifs fournis par Adobe dépendent de la version de publication et des Service Packs. Si vous avez installé un pack de fonctionnalités, contactez l’équipe d’assistance clientèle d’AEM pour vérifier la compatibilité de ces packs de fonctionnalités avec ce pack de correctifs cumulatif pour AEM 6.4.
+>Pour les clients dont les Feature Packs sont installés sur AEM 6.4. Les Feature Packs facultatifs fournis par Adobe dépendent de la version de publication et des Service Packs. Si vous disposez d’un pack de fonctionnalités, contactez l’équipe d’assistance AEM clientèle afin de vérifier la compatibilité de ces packs de fonctionnalités avec ce pack de correctifs cumulatif pour AEM 6.4.
 
 * AEM 6.4.8.1 requires AEM 6.4.8.0. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
 * Lors d’un déploiement avec MongoDB et plusieurs instances, installez AEM 6.4.8.1 sur l’une des instances d’auteur à l’aide du gestionnaire de modules.
@@ -175,18 +175,18 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 ### Validation de l’installation {#validate-install}
 
-1. La page Informations sur le produit (*/system/console/ productinfo *) doit maintenant afficher la chaîne de version mise à jour &quot;Adobe Experience Manager, Version 6.4.8.1&quot; sous Produits installés.
+1. La page Informations sur le produit (*/system/console/productinfo*) doit maintenant afficher la chaîne de version mise à jour « Adobe Experience Manager, Version 6.4.8.1. » sous Produits installés.
 1. Tous les lots OSGI sont ACTIFS ou FRAGMENT dans la console OSGI (utiliser la console web : /system/console/bundles).
 1. Le lot OSGI org.apache.jackrabbit.oak-core est sur la version 1.8.17 ou ultérieure (utilisez la console Web : /system/console/bundles).
 
 To determine the certified platform for running with this release of AEM Sites and Assets, see [Technical Requirements](../sites-deploying/technical-requirements.md).
 
 >[!NNote]
->On successful installation of the package, an >informational message appears indicating that the content >package has installed successfully,  such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
+>On successful installation of the package, an informational message appears indicating that the content package has installed successfully, such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
 ### Mise à jour des visionneuses Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.1 contient la nouvelle version des visionneuses Dynamic Media (5.10.1) qui permet de vérifier les noms de duplicata sur la page Paramètres d’image prédéfinis. Il est conseillé aux clients de Dynamic Media d’exécuter la commande suivante afin de mettre à jour les paramètres prédéfinis de la visionneuse prête à l’emploi.
+AEM 6.4.8.1 contient la nouvelle version des visionneuses Dynamic Media (5.10.1) qui permet de vérifier les noms de duplicata sur la page Paramètres d’image prédéfinis. Il est conseillé aux clients de Dynamic Media d’exécuter la commande suivante afin de mettre à jour les paramètres prédéfinis de la visionneuse prête à l’emploi.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -198,9 +198,9 @@ qui copiera les nouveaux paramètres prédéfinis de la visionneuse à l’empla
 >
 >Passez cette étape si vous n’utilisez pas AEM Forms. Les correctifs dans AEM Forms sont fournis dans un module complémentaire distinct.
 
-1. Vérifiez que vous avez installé le Cumulative Fix Pack d’AEM.
+1. Assurez-vous d’avoir installé l’AEM Cumulative Fix Pack.
 1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) for your operating system.
-1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html#InstallAEMFormsaddonpackage).
+1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### Installation du programme d’installation d’AEM Forms JEE {#install-aem-forms-jee-installer}
 
@@ -233,19 +233,19 @@ Cette section répertorie les fonctionnalités qui ont été supprimées ou dés
 | Zone | Fonctionnalité | Remplacement | Version |
 |---|---|---|---|
 | Ressources | Gérer l’action de balise pour les sous-ensembles | Aucun remplacement. | AEM 6.4.2.0 |
-| Intégration des Ressources et d’Adobe Creative Cloud | [Le partage](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/creative-cloud.html) de dossiers AEM vers Creative Cloud a été introduit dans AEM 6.2 pour permettre aux utilisateurs créatifs d’accéder aux ressources d’AEM. Adobe Asset Link, nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apportera pas d’améliorations supplémentaires à la fonctionnalité de partage de dossiers. Bien que la fonction soit incluse dans AEM, les clients sont (il est vivement conseillé d’utiliser le remplacement). | Adobe Asset Link ou application de bureau. Pour plus d’informations, reportez-vous à l’article [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
+| Intégration des Ressources et d’Adobe Creative Cloud | [AEM au partage](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) des dossiers des Creative Cloud a été introduit dans AEM 6.2 pour permettre aux utilisateurs créatifs d’accéder aux ressources à partir d’AEM. Adobe Asset Link, nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apportera pas d’améliorations supplémentaires à la fonctionnalité de partage de dossiers.  | Lien de ressources d’Adobe ou application de bureau. Pour plus d’informations, reportez-vous à l’article [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
 
 ## Problèmes connus {#known-issues}
 
-* Lors de l’installation d’AEM 6.4.8.1, la mise à jour de [!DNL Chrome] la version 83 entraîne un problème lors de la création de packages. Utilisez d’autres navigateurs disponibles, tels que [!DNL Internet Explorer] et [!DNL Firefox], ou d’autres options d’installation de package standard d’AEM pour résoudre le problème. Le problème est résolu après l’installation d’AEM 6.4.8.1.
+* Lors de l’installation de AEM 6.4.8.1, la mise à jour de la [!DNL Chrome] version 83 entraîne un problème lors de la création de packages. Utilisez d’autres navigateurs disponibles, tels que [!DNL Internet Explorer] et [!DNL Firefox], ou d’autres options d’installation de packs standard AEM pour résoudre ce problème. Le problème est résolu après l’installation AEM 6.4.8.1.
 
-* Impossible d&#39;envoyer un courrier électronique au serveur SMTP distant à l&#39;aide de l&#39;expéditeur de courrier par défaut d&#39;AEM, car il permet uniquement la communication à l&#39;aide de TLS v1.2. Supprimez le lot `javax.mail:mail:1.5.0-b01` de `system/console` et actualisez les lots pour résoudre le problème.
+* Impossible d&#39;envoyer un courrier électronique au serveur SMTP distant à l&#39;aide de l&#39;expéditeur de courrier par défaut AEM, car il permet uniquement la communication à l&#39;aide de TLS v1.2. Supprimez le lot `javax.mail:mail:1.5.0-b01` de `system/console` et actualisez les lots pour résoudre le problème.
 
-Pour plus d’informations sur les problèmes connus d’AEM 6.4.8.0 Service Pack, voir Notes [de mise à jour d’](sp-release-notes.md)AEM 6.4.8.0 Service Pack.
+Pour plus d’informations sur les problèmes connus du Service Pack AEM 6.4.8.0, voir [AEM 6.4.8.0 Notes](sp-release-notes.md)de mise à jour du Service Pack.
 
 ## Lots OSGi et packages de contenu inclus {#osgi-bundles-and-content-packages-included}
 
-Les documents de texte suivants liste les lots OSGi et les packages de contenu inclus dans AEM 6.4.8.1.
+Les documents de texte suivants liste les lots OSGi et les packages de contenu inclus dans l&#39;AEM 6.4.8.1.
 
 Liste des lots OSGi inclus dans AEM 6.4.8.1
 
