@@ -10,36 +10,39 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 translation-type: tm+mt
-source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '1689'
+ht-degree: 59%
 
 ---
 
 
 # AEM Assets Notes de mise à jour {#aem-assets-release-notes}
 
-Les principales fonctionnalités, mises en évidence et améliorations apportées aux ressources AEM 6.4 sont décrites dans ces notes de mise à jour. Pour plus d’informations, suivez les liens fournis.
+Les principales fonctionnalités, les points saillants et les améliorations apportées aux ressources AEM 6.4 sont abordés dans ces notes de mise à jour. Pour obtenir des informations détaillées, suivez les liens fournis.
 
-## Adobe Asset Link {#adobe-asset-link}
+## Adobe Asset Link {#adobe-asset-link}
 
-Adobe Asset Link dans Creative Cloud abonnement Entreprise simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le cadre du processus de création de contenu. Il s’agit d’une nouvelle fonctionnalité native de Creative Cloud abonnement entreprise, qui permet de se connecter aux ressources AEM directement depuis Adobe Photoshop, Adobe Illustrator ou Adobe InDesign — sans quitter ces outils.
+Adobe Asset Link dans Creative Cloud abonnement Entreprise simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le cadre du processus de création de contenu. Il s&#39;agit d&#39;une nouvelle fonctionnalité native en Creative Cloud pour les entreprises, qui permet de se connecter directement aux AEM Assets de Adobe Photoshop, Adobe Illustrator ou Adobe InDesign — sans quitter ces outils.
 
-To learn more about the capability, prerequisites, and how to access it, see the [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) page.
+To learn more about the capability, prerequisites, and how to access it, see the [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) page.
 
 ## Enhanced Smart Tags (powered by Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
-AEM 6.4 introduit la fonctionnalité Balises dynamiques améliorées basée sur l’intelligence artificielle en plus des balises actives lancées dans AEM 6.3.
+AEM 6.4 introduit la fonctionnalité Balises intelligentes améliorées basée sur l&#39;intelligence artificielle en plus des Balises intelligentes qui a été lancée dans AEM 6.3.
 
-* Le service de contenu dynamique identifie la taxonomie commerciale du client et l’utilise pour baliser automatiquement les ressources numériques avec les balises pertinentes du client en plus des balises génériques. Il améliore considérablement la visibilité des ressources et réduit le délai de mise sur le marché.
-* Adobe Sensei alimente le service de contenu dynamique, ce qui vous permet de former l’algorithme de reconnaissance d’images à la taxonomie de votre entreprise. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur les ressources similaires.
+* Smart Content Service identifie la taxonomie commerciale du client et l’utilise pour baliser automatiquement les ressources numériques avec les balises pertinentes du client, en plus des balises génériques. Il améliore considérablement la visibilité des ressources et réduit le délai de mise sur le marché.
+* Adobe Sensei alimente Smart Content Service, ce qui vous permet de former l’algorithme de reconnaissance d’images à votre taxonomie professionnelle. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur les ressources similaires.
 
-Pour utiliser les balises actives améliorées d’AEM Assets, installez le [dernier Service Pack d’AEM 6.4](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+Pour utiliser les balises actives améliorées AEM Assets, installez le [dernier Service Pack de AEM 6.4](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html).
 
 ## Smart Translation Search (powered by Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
 
-AEM 6.4 introduit la fonctionnalité de recherche Smart Traduction pour prendre en charge les scénarios de recherche multilingue. Les clients disposant d’équipes dispersées dans le monde et parlant différentes langues ont désormais accès à la recherche dans différentes langues sans passer par des workflows de traduction coûteux et fastidieux.
+AEM 6.4 introduit la fonctionnalité de recherche Smart Translation pour prendre en charge les scénarios de recherche multilingues. Les clients disposant d’équipes dispersées dans le monde et parlant différentes langues ont désormais accès à la recherche dans différentes langues sans passer par des workflows de traduction coûteux et fastidieux.
 
 * La requête de recherche est traduite sans intervention manuelle.
-* Les balises intelligentes sont générées en anglais et sont automatiquement traduites dans d’autres langues.
+* Les balises actives sont générées en anglais et sont automatiquement traduites dans d’autres langues.
 * La recherche multilingue est créée à l&#39;aide de la bibliothèque open source Apache Joshua qui prend en charge plus de 50 langues.
 
 ## Expérience utilisateur {#user-experience}
@@ -49,7 +52,7 @@ AEM 6.4 offre des améliorations significatives de l’expérience utilisateur d
 Améliorations de la navigation
 
 * Nouveau rail d’arborescence de contenu pour naviguer rapidement au sein d’une hiérarchie d’actifs. Conjointement avec le mode Liste, cela restaure le modèle d’interaction de l’interface utilisateur classique afin de parcourir les hiérarchies d’actifs.
-* Nouveaux raccourcis clavier, tels que m pour déplacer des fichiers, p pour ouvrir la page des propriétés, Ctrl + C pour copier l’opération, etc.
+* Nouveaux raccourcis clavier tels que m pour déplacer des ressources, p pour ouvrir la page des propriétés, Ctrl + C pour copier l&#39;opération, et bien d&#39;autres.
 * Amélioration du défilement et de l’expérience de chargement différé en modes Carte et Liste afin de parcourir un grand nombre de ressources.
 * Mode Carte amélioré avec la prise en charge d’images de différentes dimensions en fonction du paramètre d’affichage.
 * Expérience de détail des actifs améliorée avec la possibilité d’afficher l’actif actuel et de naviguer entre l’actif précédent et suivant en fonction du nombre d’actifs.
@@ -58,10 +61,10 @@ Améliorations de la recherche
 
 * Nouveau bouton Retour pour les recherches qui permet d’accéder à un élément de recherche et de revenir à la même position dans les résultats de recherche sans exécuter à nouveau la requête de recherche.
 * Nouveau compteur de résultats de recherche pour afficher le nombre de résultats d’une recherche.
-* Amélioration du filtre de recherche de type de fichier grâce à la possibilité de filtrer les résultats de la recherche en fonction de types mime affinés tels que JPG, PNG et PSD, par rapport aux options d’image, de document et de contenu multimédia précédentes.
+* Filtre de recherche de type de fichier amélioré permettant de filtrer les résultats de la recherche en fonction de types mime affinés tels que JPG, PNG et PSD, par rapport aux options multimédia d’image, de document et de  précédentes.
 * Améliorations des filtres de recherche avec des horodatages précis au lieu de la fonctionnalité précédente de curseur temporel.
 
-Améliorations des ressources multipage
+Améliorations des ressources de plusieurs pages
 
 * Amélioration de l’expérience de navigation parmi les actifs multi-pages avec un nombre moindre de clics.
 * Prise en charge améliorée des commentaires et des annotations, tous assemblés au niveau des actifs plutôt que des pages.
@@ -79,15 +82,15 @@ Catalogues
 AEM 6.4 comprend plusieurs fonctionnalités avancées de gestion des métadonnées destinées à gérer les métadonnées à l’échelle et à mettre en place l’intégrité des métadonnées par l’intermédiaire de règles et de validations. Voici les fonctionnalités essentielles :
 
 * Nouvelle fonctionnalité d’exportation en masse de métadonnées permettant d’exporter toutes les métadonnées, ou une sélection, pour un grand nombre d’actifs au format CSV pour l’édition, le partage et l’intégration tierce.
-* Nouvelle fonctionnalité d’importation en masse de métadonnées permettant d’importer un fichier CSV afin d’ajouter de nouvelles métadonnées et de mettre à jour des métadonnées existantes pour plusieurs actifs en une seule opération. Cette opération est asynchrone et n’entrave pas les performances du système. Une fois l’opération terminée, l’utilisateur est informé par le biais du système de notification d’AEM.
+* Nouvelle fonctionnalité d’importation en masse de métadonnées permettant d’importer un fichier CSV afin d’ajouter de nouvelles métadonnées et de mettre à jour des métadonnées existantes pour plusieurs actifs en une seule opération. Cette opération est asynchrone et n&#39;entrave pas les performances du système. Une fois l’opération terminée, l’utilisateur est informé par le biais du système de notification d’AEM.
 * Nouvelles métadonnées en cascade et contextuelles à l’aide de l’outil de schéma de métadonnées. Il est désormais possible de définir les chaînes de dépendances et les mappages de valeur entre les champs. Vous pouvez également définir le contexte dans lequel les champs de formulaire de métadonnées sont affichés/masqués. De cette façon, vous pouvez afficher uniquement les champs appropriés à tout moment en fonction des valeurs dans d’autres champs.
 
 ## Rapports {#reports}
 
-AEM 6.4 offre d’importantes améliorations de la création de rapports sur les ressources :
+AEM 6.4 présente des améliorations importantes du rapports des ressources :
 
 * Nouveau framework de rapports extensibles (pour les référentiels de grande taille) au niveau de l’entreprise appliquant des tâches Sling pour le traitement asynchrone des demandes de rapports. Vous pouvez planifier un rapport à une date et une heure précises. Vous pouvez également ajouter des colonnes personnalisées à un rapport.
-* Les nouveaux rapports prêtes à l’emploi sont le plus souvent demandés par les clients, tels que l’utilisation des disques, les fichiers, les partages de liens, la publication sur le portail de marque et la formation sur les balises intelligentes.
+* Les nouveaux rapports prêtes à l’emploi sont le plus souvent demandés par les clients, tels que l’utilisation des disques, les fichiers, les partages de liens, la publication sur le portail de la marque et la formation sur les balises actives.
 * Nouvelle interface utilisateur de création et de gestion des rapports dotée d’options de granularité fine, avec la possibilité d’accéder aux rapports archivés et de voir l’état d’exécution des rapports (réussite, échoué, en file d’attente, etc.).
 
 ## Brand Portal {#brand-portal}
@@ -96,15 +99,15 @@ AEM 6.4 offre d’importantes améliorations de la création de rapports sur les
 * **Publication en parallèle** : jusqu’à réplications peuvent se produire entre AEM Assets et Brand Portal (contre une auparavant), ce qui améliore considérablement les performances de publication.
 * **Publication des schémas et des facettes de recherche** : possibilité de publier les schémas de métadonnées et les facettes de recherche personnalisée sur Brand Portal, évitant ainsi le dédoublement des efforts.
 * **Publication en masse des balises** : possibilité de publier les taxonomies (avec les hiérarchies) sur Brand Portal, évitant ainsi le dédoublement des efforts.
-* **S’inscrire ou demander l’accès**: Processus pour les utilisateurs non enregistrés sur le portail de marque.
+* **S’inscrire ou demander l’accès**: Flux de travaux pour les utilisateurs non enregistrés sur le portail de marque.
 * **Notification de maintenance dans l’application (à l’écran)** : les notifications sont affichées longtemps à l’avance afin d’éviter toute interruption de l’activité.
 * **Amélioration de la création des rapports** : trois rapports prêts à l’emploi sont disponibles (téléchargements, publication et partages de lien).
 * **Restrictions basées sur DRM** : lorsqu’un actif sous licence expire, il n’est plus disponible en téléchargement depuis Brand Portal.
 
 ## Application de bureau AEM {#aem-desktop-app}
 
-AEM desktop app is updated to version 1.8, which is compatible with AEM 6.4. The full list of changes for AEM desktop app is provided in a dedicated [AEM desktop app release notes](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) document.\
-Voici une liste des points forts de l’application de bureau AEM depuis la publication d’AEM 6.3 :
+AEM desktop app is updated to version 1.8, which is compatible with AEM 6.4. The full list of changes for AEM desktop app is provided in a dedicated [AEM desktop app release notes](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html) document.\
+Voici une liste des mises en évidence des applications de bureau AEM depuis la sortie d&#39;AEM 6.3 :
 
 * Possibilité de télécharger des dossiers hiérarchiques en arrière-plan.
 * Interface utilisateur permettant de surveiller les téléchargements des actifs en arrière-plan.
@@ -115,23 +118,22 @@ Voici une liste des points forts de l’application de bureau AEM depuis la publ
 
 Pour accéder plus facilement à la documentation et aux meilleures pratiques, la documentation suivante est disponible :
 
-* [Guide](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)d’utilisation destiné aux utilisateurs finaux travaillant avec l’application
-* [Guide](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app-best-practices.html)des meilleures pratiques, destiné aux utilisateurs finaux et aux administrateurs
-* [Guide](https://helpx.adobe.com/experience-manager/desktop-app/install-configure-aem-desktop-app.html)d’installation, destiné aux administrateurs qui configurent l’application de bureau AEM et AEM pour travailler ensemble
+* [Guide](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html)d’utilisation destiné aux utilisateurs finaux travaillant avec l’application.
+* [Guide](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/install-upgrade.html)d&#39;installation destiné aux administrateurs configurant AEM et AEM applications de bureau pour travailler ensemble
 
 ## Stockage à plusieurs niveaux {#tiered-storage}
 
 AEM 6.4 comprend un ensemble de fonctions prenant en charge différentes préférences de stockage à plusieurs niveaux et mettant en œuvre les règles de cycle de vie. Les options de stockage prennent également en charge (sans toutefois s’y limiter) les clouds publics AWS et Azure.
 
-* Possibilité pour les utilisateurs de sélectionner et de modifier ultérieurement la classe de stockage à leur gré et de définir des règles de stockage des ressources d’une classe à une autre ou de gérer le cycle de vie de leurs ressources.
+* Possibilité pour les utilisateurs de sélectionner et de modifier ultérieurement la classe d’enregistrements à leur guise et de définir des règles pour l’enregistrement de ressources d’une classe à l’autre ou de gérer le cycle de vie de leurs ressources.
 * Possibilité pour les utilisateurs de réduire leurs coûts de stockage en choisissant un autre cloud AWS ou Azure.
 
 Pour une présentation des plates-formes prises en charge, consultez la [documentation sur les exigences techniques](../sites-deploying/technical-requirements.md).
 
 ## Groupe d’utilisateurs fermé {#closed-user-group}
 
-* Dans AEM 6.4, Groupe d’utilisateurs fermés ou CUG permet de restreindre l’accès aux dossiers sur l’instance de publication. Il s’agit d’une option d’interface utilisateur tactile permettant d’ajouter des entités via la page des propriétés des dossiers au niveau du dossier et de les appliquer à tous les dossiers et sous-dossiers/ressources à l’intérieur d’AEM 6.4.
-* En mode de publication, si un CUG est configuré et que l’autorisation est activée sur un dossier, les utilisateurs sont redirigés vers une page de connexion lorsqu’ils tentent d’accéder au dossier. Par conséquent, les utilisateurs autorisés peuvent accéder au dossier et à ses actifs uniquement après la réussite de la connexion. Par conséquent, le CUG restreint l’accès en lecture à une arborescence donnée au sein du référentiel de contenu pour tout le monde à l’exception des entités sélectionnées.
+* Dans AEM 6.4, Groupe d’utilisateurs fermé ou CUG permet de limiter l’accès aux dossiers sur l’instance de publication. Il s’agit d’une option d’interface utilisateur tactile permettant d’ajouter des entités via la page des propriétés de dossiers au niveau du dossier et de les appliquer à tous les dossiers et sous-dossiers/ressources à l’intérieur.
+* En mode publication, si un CUG est configuré et que l’autorisation est activée sur un dossier, les utilisateurs sont redirigés vers une page de connexion lorsqu’ils tentent d’accéder au dossier. Par conséquent, les utilisateurs autorisés peuvent accéder au dossier et à ses actifs uniquement après la réussite de la connexion. Par conséquent, le CUG restreint l’accès en lecture à une arborescence donnée au sein du référentiel de contenu pour tout le monde à l’exception des entités sélectionnées.
 
 ## Dynamic Media add-on {#dynamic-media-add-on}
 
@@ -152,7 +154,7 @@ Voir également [Ajout de ressources Dynamic Media aux pages](../assets/adding-
 
 ### Imagerie dynamique {#smart-imaging}
 
-* L’imagerie intelligente tire parti des caractéristiques d’affichage uniques de chaque utilisateur pour diffuser automatiquement des images optimisées pour leur expérience, ce qui améliore les performances et l’engagement.
+* L’imagerie intelligente exploite les caractéristiques d’affichage uniques de chaque utilisateur pour diffuser automatiquement des images optimisées pour leur expérience, ce qui se traduit par de meilleures performances et un meilleur engagement.
 * Les images sont automatiquement converties en différents formats en fonction des fonctionnalités du navigateur.
 * Les paramètres de qualité d’image sont déterminés dans le navigateur et appliqués respectivement. Grâce à cette intelligence, les performances de chargement des images restent acceptables en cas de bande passante limitée ou de faibles débits de connexion.
 
@@ -161,12 +163,12 @@ Voir [Imagerie dynamique](../assets/imaging-faq.md) pour plus d’informations.
 ### Emerging Media and Viewer Enhancements {#emerging-media-amp-viewer-enhancements}
 
 * De nouvelles visionneuses sont prises en charge de façon à fournir de meilleures expériences immersives à l’utilisateur.
-* La visionneuse panoramique permet à l’utilisateur d’interagir avec lui et de mieux ressentir les scènes de la salle, les propriétés, les lieux et les paysages. Voir la documentation [Images panoramiques](../assets/panoramic-images.md) pour plus d’informations.
+* Panoramic Viewer aide l’utilisateur à s’engager et à offrir une meilleure expérience des scènes de la salle, des propriétés, des emplacements et des paysages. Voir la documentation [Images panoramiques](../assets/panoramic-images.md) pour plus d’informations.
 
-* VR Viewer offre une expérience immersive pour les propriétés, les lieux et les paysages.
+* VR Viewer offre une expérience immersive pour les propriétés, les emplacements et les paysages.
 * La visionneuse d’image verticale est optimisée pour l’imagerie produit.
 * Amélioration de l’accessibilité du clavier.
 
 ### 3D and integration with Dimension CC {#d-and-integration-with-dimension-cc}
 
-Integration with [Adobe Dimension CC](https://www.adobe.com/products/dimension.html) for more seamless 3D workflow has been introduced. Pour en savoir plus, voir [Utilisation de la documentation sur les ressources](../assets/assets-3d.md) 3D.
+Integration with [Adobe Dimension CC](https://www.adobe.com/fr/products/dimension.html) for more seamless 3D workflow has been introduced. Pour en savoir plus, voir [Utilisation de la documentation sur les ressources](../assets/assets-3d.md) 3D.
