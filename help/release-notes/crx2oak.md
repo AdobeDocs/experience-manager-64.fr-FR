@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: cfdaceac-a5b3-4070-ad4c-f1457b1e2e4b
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 66%
 
 ---
 
@@ -21,16 +24,16 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 
 ### 1.8.6 (June 2018) {#june}
 
-* OAK-7339 Correction de toutes les ruptures de versions secondaires avec UnsupportedOperationException sur MissingBlobStore en introduisant LoopbackBlobStore
+* OAK-7339 Correction de la rupture de toutes les versions secondaires avec UnsupportedOperationException sur MissingBlobStore en introduisant LoopbackBlobStore
 * Utiliser Oak 1.8.4
 
 ### 1.8.4 (April 2018) {#april}
 
 * Utiliser Oak version 1.8.2
-* GRANITE-18104 L’erreur de migration des reproduits de la version 6.3 à la version 6.4 doit être plus significative
+* GRANITE-18104 L&#39;erreur de migration de rebol de 6.3 à 6.4 doit être plus significative
 * GRANITE-16571 Remplacer l’utilisation de SHA-1
 
-   * La somme de contrôle de l’outil est désormais SHA-512 lors de l’utilisation de l’option —version
+   * La somme de contrôle de l&#39;outil est désormais SHA-512 lors de l&#39;utilisation de l&#39;option —version
 
 * GRANITE-17601 Incorporer la mise à niveau du chêne dans CRX2Oak avec le chêne-blob-cloud
 * GRANITE-18553 crx2oak laisse les propriétés de version sur le noeud même lorsque les versions ne sont pas migrées
@@ -40,7 +43,7 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 * Passage à la version 1.6.1 d’Oak
 * CQ-61847 Fusionner crx2oak-quickstart-extension avec crx2oak (profils de migration ajoutés)
 * CQ-97488 Promotion et suppression des modes d’exécution d’AEM (en réécrivant sling.options.file)
-* GRANITE-12798/OAK-4260 Capacité à évaluer de côté le segment Oak au segment Oak Tar
+* GRANITE-12798/OAK-4260 Capacité à évaluer de côté le segment de chêne au goudron de segment de chêne
 
 ### Version 1.4.2 (mars 2016) {#version-march-1}
 
