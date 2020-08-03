@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 translation-type: tm+mt
-source-git-commit: 55b9105fab3947322649c7ed2b750497e486ec63
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 46%
@@ -27,11 +27,13 @@ Cette page garde une liste des problèmes connus Adobe Experience Manager 6.4 pu
 Les appareils hybrides ne sont pas pris en charge. Plusieurs problèmes peuvent être rencontrés lors de l’utilisation de tels appareils. Les procédures suggérées suivantes permettent de résoudre de nombreux problèmes :
 
 Si vous utilisez Google Chrome comme navigateur :
+
 * Type `chrome://flags/` in the address bar and press Enter.
 * Cliquez sur Activer les événements tactiles > Désactivé.
 * Redémarrez le navigateur (l’ensemble des onglets et des fenêtres).
 
 Si vous utilisez Mozilla Firefox comme navigateur :
+
 * Type `about:config` in the address bar and press Enter.
 * Filter the settings to `dom.w3c`.
 * Assurez-vous que les paramètres sont `0` et `false`.
