@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 55a0b70e-5212-408b-8560-6e758bd8bb10
 translation-type: tm+mt
-source-git-commit: 242f60c70c7cc00871d2ff9f42d2ade4125eaa31
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 86%
 
 ---
 
@@ -58,12 +61,12 @@ Modération :
 
 Compatibilité d’ensemble avec les modifications de base apportées à AEM 6.4.
 
-Note: all these features are also available for AEM 6.3. Please check the AEM Communities release notes for [6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html).
+Note: all these features are also available for AEM 6.3. Please check the AEM Communities release notes for [6.3](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html).
 
 ## Problèmes connus {#known-issues}
 
 * **Modération :** impossible de supprimer une publication parente en une seule opération de suppression à partir de l’interface utilisateur de modération en masse (CQ-4236797).
-* **Console** - Le lien Nom d’utilisateur ou Mot de passe oublié redirige vers la page de connexion au lieu du formulaire de récupération du mot de passe correspondant (CQ-4237682).
+* **Console** - Le lien Nom d’utilisateur ou Mot de passe oublié est redirigé vers la page de connexion au lieu du formulaire de récupération du mot de passe correspondant (CQ-4237682).
 
 ## Fonctionnalités mises en avant {#select-features}
 
