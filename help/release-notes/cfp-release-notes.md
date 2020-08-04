@@ -1,13 +1,13 @@
 ---
 title: Notes de mise à jour cumulées du pack de correctifs AEM 6.4
-description: Notes de mise à jour spécifiques à l'Adobe Experience Manager 6.4 Cumulative Fix Packs.
+description: Notes de mise à jour spécifiques aux packs de correctifs cumulés Adobe Experience Manager 6.4.
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 87843465e8e0b372dc457630b84bcb5e50628dea
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 25%
+source-wordcount: '2159'
+ht-degree: 24%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 25%
 |---|---|
 | Version | 6.4.8.1 |
 | Type | Pack de correctifs cumulés  |
-| Date   | 4 juin 2020 |
+| Date    | 4 juin 2020 |
 | Condition requise | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
 | URL de téléchargement | AEM 6.4.8.1 sur la distribution de [logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
 
@@ -32,14 +32,14 @@ AEM Cumulative Fix Pack 6.4.8.1 dépend de AEM 6.4 Service Pack 8. Par conséque
 
 Voici quelques-uns des points saillants de l&#39;AEM 6.4.8.1 :
 
-* Suppression de l’intégration Package Share avec l’Adobe Experience Manager.
+* Suppression de l’intégration Package Share avec Adobe Experience Manager.
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.8.21.
 
 For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](../sites-deploying/update-release-vehicle-definitions.md)
 
-## Liste des modifications        {#list-of-changes}
+## Liste des modifications         {#list-of-changes}
 
-L’Adobe Experience Manager 6.4.8.1 corrige les problèmes suivants.
+Adobe Experience Manager 6.4.8.1 apporte des correctifs aux problèmes suivants.
 
 ### Sites {#sites-6481}
 
@@ -48,13 +48,15 @@ L’Adobe Experience Manager 6.4.8.1 corrige les problèmes suivants.
 * Lorsque l&#39;option Coral.Select définit emptyOption=true ou contient un élément par défaut avec la valeur = &quot;&quot;, le fichier dropdownshowhide.js rencontre une erreur : Erreur de type non interceptée : component.getValue n&#39;est pas une fonction (NPR-33163).
 * Lorsqu&#39;un composant comprend un autre composant en tant que ressource de données, l&#39;espace réservé du composant de conteneur parent est remplacé par l&#39;espace réservé des composants internes (NPR-33119).
 * Lorsque vous basez un fragment de contenu sur un schéma et qu’il contient une zone de texte obligatoire ou un champ de chemin d’accès, l’enregistrement du fragment de contenu échoue (NPR-33007)
-* Lorsque vous créez un composant personnalisé à l’aide du composant de fragment d’expérience prêt à l’emploi et que vous l’utilisez dans des pages AEM Sites, AEM n’affiche pas les références (utilisation) du composant personnalisé (NPR-32852).
-* Lorsqu&#39;une page AEM Sites fait partie d&#39;un vaste ensemble de contenus comportant plusieurs copies en direct, la prévisualisation d&#39;historique des versions de page ne se charge pas (NPR-32772).
+* Lorsque vous créez un composant personnalisé à l’aide du composant de fragment d’expérience prêt à l’emploi et que vous l’utilisez dans les pages AEM Sites, AEM n’affiche pas les références (utilisation) du composant personnalisé (NPR-32852).
+* Lorsqu’une page AEM Sites fait partie d’un grand jeu de contenu comportant plusieurs copies en direct, la prévisualisation d’historique des versions de page ne se charge pas (NPR-32772).
 * Lorsque vous promouvez un lancement, il ajoute le mixin &quot;cq:LiveRelationship&quot; à chaque composant ajouté au lancement. Elle a un impact sur tous les lancements, indépendamment du fait qu&#39;un lancement soit créé avec ou sans sélectionner l&#39;option — Hériter les données en direct de la page source — (NPR-32664).
 * Lors des débuts de pagination, le sélecteur de fragments d’expérience ne charge pas tous les éléments (NPR-32605).
 * Impossible de créer un lancement pour une page AEM Sites. La création du lancement génère une erreur (NPR-32544).
 * Gérer la publication n’inclut pas les ressources référencées dans le processus de demande d’activation (NPR-32463).
-* La vérification de l&#39;intégrité du Dispatcher affiche un message d&#39; `Invalid cookie header` avertissement dans les fichiers journaux (NPR-33630).
+* La vérification d&#39;intégrité du répartiteur affiche un message d&#39; `Invalid cookie header` avertissement dans les fichiers journaux (NPR-33630).
+* L&#39;intégration de Salesforce est vulnérable au SSRF (NPR-32671).
+* XSS reflété dans PreferencesServlet (NPR-33439).
 
 ### Ressources {#assets-6481}
 
@@ -74,6 +76,8 @@ L’Adobe Experience Manager 6.4.8.1 corrige les problèmes suivants.
 
 * Le traitement des ressources pendant le chargement en masse est bloqué (CQ-4293916).
 
+* Vulnérabilité SSRF en Experience Manager (NPR-33437).
+
 ### Plate-forme {#platform-6481}
 
 * Le [!DNL Sling] filtre n’est pas appelé si l’entrée de `sling:match` mappage est créée sous `/etc/maps` (NPR-33308).
@@ -89,12 +93,17 @@ L’Adobe Experience Manager 6.4.8.1 corrige les problèmes suivants.
 
 * Une `NullPointerException` erreur s&#39;affiche dans les journaux d&#39;exécution d&#39;une tâche de traduction (NPR-32220).
 
+### Intégrations {#integrations-6481}
+
+* Script intersite pour JSON (NPR-32745).
+
 ### Communities {#communities-6481}
 
 * Les auteurs, après avoir créé un nouveau groupe, ne sont pas redirigés vers la section Groupe  communautaire le [!DNL Internet Explorer] 11 (NPR-33202).
 * Une erreur se produit lors de l&#39;accès à la page [!UICONTROL Activité Stream] (NPR-33152).
 * La modification d&#39;un [!DNL Communities] groupe et de l&#39;image miniature n&#39;actualise pas l&#39;image miniature du groupe (NPR-32603).
 * Lors de la création d’une version de notifications et d’abonnements de contenu généré par l’utilisateur (UGC), un ID incorrect de la page source est stocké (CQ-4289703).
+* Problème de script intersite (NPR-33212).
 
 ### Workflow {#workflow-6481}
 
@@ -106,17 +115,19 @@ L’Adobe Experience Manager 6.4.8.1 corrige les problèmes suivants.
 
 >[!NOTE]
 >
->AEM Cumulative Fix Pack n’inclut pas de correctifs pour les AEM Forms. Les correctifs sont fournis à l’aide d’un module complémentaire Forms distinct.  En outre, un programme d’installation cumulatif est publié, qui comprend des correctifs pour AEM Forms on JEE. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
+>AEM Cumulative Fix Pack n&#39;inclut pas de correctifs pour AEM Forms. Les correctifs sont fournis à l’aide d’un module complémentaire Forms distinct.  En outre, un programme d’installation cumulatif est publié, qui comprend des correctifs pour AEM Forms on JEE. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
 * Correspondence Management : Lorsqu’un utilisateur colle du contenu à partir d’un [!DNL Word] document, le fragment de document de texte ne conserve pas la mise en forme (NPR-33213).
 * Forms adaptatif : Une nouvelle ligne d’une chaîne dans un dictionnaire de formulaires adaptatifs ajoute `&#xa;` des caractères au dictionnaire (NPR-33265).
 * Forms adaptatif : L’utilisateur ne peut pas enregistrer de formulaire adaptatif contenant plusieurs pièces jointes (NPR-33214).
 * Forms adaptatif : `AddInstance` et `RemoveInstance` les méthodes de la classe Instance Manager n’ajoutent pas de nombre dynamique d’instances pour les fragments de chargement différé sur [!DNL Internet Explorer 11] (NPR-33201).
-* Forms adaptatif : Analytics activé sur un formulaire adaptatif incorporé dans une [!DNL Sites] page n’enregistre pas les données pour les événements Envoyer et Abandon (NPR-31359).
+* Forms adaptatif : Les analyses activées sur un formulaire adaptatif incorporé dans une [!DNL Sites] page n’enregistrent pas les données des événements Envoyer et Abandon (NPR-31359).
 * Forms adaptatif : Lorsqu’un utilisateur colle le contenu d’un [!DNL Word] document à un formulaire adaptatif et l’envoie, le formulaire adaptatif envoyé comprend des caractères Unicode. En outre, la conversion PDF/A échoue en raison de caractères Unicode (NPR-33348).
 * BackendIntegration : Les demandes de modèle de données de formulaire échouent lorsque le jeton d’actualisation expire en raison d’un état inactif incorrect (NPR-33168).
 * Document Services : Le service Convert PDF ne parvient pas à convertir les documents PDF en PostScript en raison de l’absence de jars Gibson pour [!DNL WebLogic] [!DNL Linux] le serveur (NPR-33515, CQ-4292239).
 * Document Services : Lorsqu’un utilisateur convertit un fichier texte au format PDF, les caractères japonais ne s’affichent pas correctement (NPR-33239).
+* Stockage de XSS avec le GuideSOMProviderServlet (NPR-32701).
+
 
 ## Install 6.4.8.1 {#install}
 
@@ -184,9 +195,9 @@ To determine the certified platform for running with this release of AEM Sites a
 >[!NNote]
 >On successful installation of the package, an informational message appears indicating that the content package has installed successfully, such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
-### Mise à jour des visionneuses Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
+### Mise à jour des visionneuses de médias dynamiques (5.10.1) {#update-dynamic-media-viewers}
 
-AEM 6.4.8.1 contient la nouvelle version des visionneuses Dynamic Media (5.10.1) qui permet de vérifier les noms de duplicata sur la page Paramètres d’image prédéfinis. Il est conseillé aux clients de Dynamic Media d’exécuter la commande suivante afin de mettre à jour les paramètres prédéfinis de la visionneuse prête à l’emploi.
+AEM 6.4.8.1 contient la nouvelle version des visionneuses de contenu Contenu multimédia dynamique (5.10.1) qui permet de vérifier les noms des duplicata sur la page Paramètres d’image prédéfinis. Il est conseillé aux utilisateurs de Contenu multimédia dynamique d’exécuter la commande suivante afin de mettre à jour les paramètres prédéfinis de la visionneuse prête à l’emploi.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -233,7 +244,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées ou dés
 | Zone | Fonctionnalité | Remplacement | Version |
 |---|---|---|---|
 | Ressources | Gérer l’action de balise pour les sous-ensembles | Aucun remplacement. | AEM 6.4.2.0 |
-| Intégration des Ressources et d’Adobe Creative Cloud | [AEM au partage](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) des dossiers des Creative Cloud a été introduit dans AEM 6.2 pour permettre aux utilisateurs créatifs d’accéder aux ressources à partir d’AEM. Adobe Asset Link, nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apportera pas d’améliorations supplémentaires à la fonctionnalité de partage de dossiers.  | Lien de ressources d’Adobe ou application de bureau. Pour plus d’informations, reportez-vous à l’article [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
+| Intégration des Ressources et d’Adobe Creative Cloud | [AEM au partage](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) des dossiers des Creative Cloud a été introduit dans AEM 6.2 pour permettre aux utilisateurs créatifs d’accéder aux ressources à partir d’AEM. Adobe Asset Link, nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apportera pas d’améliorations supplémentaires à la fonctionnalité de partage de dossiers. Bien que la fonction soit incluse dans AEM, les clients sont (il est fortement conseillé d’utiliser le remplacement). | Lien de ressources d’Adobe ou application de bureau. Pour plus d’informations, reportez-vous à l’article [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
 
 ## Problèmes connus {#known-issues}
 
