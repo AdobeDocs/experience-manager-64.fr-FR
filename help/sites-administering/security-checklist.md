@@ -237,7 +237,7 @@ Pour chacun des services ci-dessous, les paramètres spécifiés doivent être m
 
 * [Gestionnaire de scripts Apache Sling JSP](/help/sites-deploying/osgi-configuration-settings.md):
 
-   * Désactivez l’option **Générer les informations de débogage**
+   * Désactivez **Generate Debug Info (Générer les informations de débogage)**
    * Désactivez **Mapped Content (Contenu mappé)**
 
 Pour plus d’informations, voir [Paramètres de configuration d’OSGi](/help/sites-deploying/osgi-configuration-settings.md).
@@ -301,7 +301,7 @@ Pour vous aider à prévenir toute utilisation abusive en raison d’une attaque
 
       **Résultats** max JSON ( `json.maximumresults`)
 
-      dans la configuration pour le [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md). Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est `200`.
+      dans la configuration pour le servlet [de GET](/help/sites-deploying/osgi-configuration-settings.md)Apache Sling. Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est `200`.
 
    * À titre de mesure préventive, désactivez les autres outils de rendu par défaut (HTML, texte brut, XML). Là encore, en configurant le [servlet Sling GET d’Apache](/help/sites-deploying/osgi-configuration-settings.md).
    >[!CAUTION]
