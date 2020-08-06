@@ -29,17 +29,17 @@ AEM Forms fournit plusieurs API pour envoyer des formulaires, traiter des docume
 * Aplatissement d’un document PDF dynamique
 * Génération d&#39;un Document d&#39;enregistrement
 * Fusion d’un document PDF interactif avec un autre document PDF
-* Utilisation de l’étape d’attribution de la tâche et des étapes des services de document des Workflows AEM
+* Utilisation de l’étape d’affectation des tâches et des étapes des services de document des Workflows AEM
 * Utilisation d’un formulaire adaptatif dans un formulaire adaptatif
 
-Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur d’un document ou d’un formulaire, ni du format final du document rendu. Un rapport de transactions divise les transactions en trois catégories : Documents traités, Documents rendus et formulaires envoyés.
+Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur d’un document ou d’un formulaire, ni du format final du document rendu. Un rapport de transactions divise les transactions en trois catégories : Documents traités, Documents rendus et Forms envoyés.
 
-* **Formulaires envoyés :** Lorsque des données sont envoyées à partir de n’importe quel type de formulaire créé avec AEM Forms et que les données sont envoyées à n’importe quel référentiel d’enregistrement de données ou base de données est considérée comme un envoi de formulaire. Par exemple, l’envoi d’un formulaire adaptatif, d’un formulaire HTML5, de formulaires PDF et d’un jeu de formulaires est comptabilisé comme des formulaires envoyés. Chaque formulaire d’un jeu de formulaires est considéré comme un envoi. Par exemple, si un jeu de formulaires comporte 5 formulaires, lorsque le jeu de formulaires est envoyé, le service de rapports de transactions le compte comme 5 envois.
+* **Forms Soumis :** Lorsque des données sont envoyées à partir de n’importe quel type de formulaire créé avec AEM Forms et que les données sont envoyées à n’importe quel référentiel d’enregistrement de données ou base de données est considérée comme un envoi de formulaire. Par exemple, l’envoi d’un formulaire adaptatif, d’un formulaire HTML5, de PDF forms et d’un jeu de formulaires est comptabilisé comme des formulaires envoyés. Chaque formulaire d’un jeu de formulaires est considéré comme un envoi. Par exemple, si un jeu de formulaires comporte 5 formulaires, lorsque le jeu de formulaires est envoyé, le service de rapports de transactions le compte comme 5 envois.
 * **Documents rendus :** La génération d’un document en combinant un modèle et des données, en signant ou certifiant numériquement un document, en utilisant une API de services de document facturables pour les services de document ou en convertissant un document d’un format à un autre est comptabilisée comme des documents rendus.
 
 >[!NOTE]
 >
->L’interface utilisateur des rapports sur les transactions affiche trois catégories : Formulaires envoyés, Documents rendus et Documents traités. Les Documents générés et les Documents traités sont comptabilisés comme Documents générés.
+>L’interface utilisateur des rapports sur les transactions affiche trois catégories : Forms envoyée, Documents rendus et Documents traités. Les Documents générés et les Documents traités sont comptabilisés comme Documents générés.
 
 ## API de services de Document facturables {#billable-document-services-apis}
 
@@ -55,13 +55,13 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a></td> 
-   <td>Crée un fichier Adobe PDF à partir des types de fichiers pris en charge.</td> 
+   <td>Crée Adobe PDF à partir des types de fichiers pris en charge.</td> 
    <td>Documents traités</td> 
    <td> </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td> 
-   <td>Crée un fichier Adobe PDF à partir des types de fichiers pris en charge.</td> 
+   <td>Crée Adobe PDF à partir des types de fichiers pris en charge.</td> 
    <td>Documents traités</td> 
    <td> </td> 
   </tr>
@@ -122,13 +122,13 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a><br /> </td> 
-   <td>Crée un fichier Adobe PDF à partir des types de fichiers pris en charge.</td> 
+   <td>Crée Adobe PDF à partir des types de fichiers pris en charge.</td> 
    <td>Documents traités</td> 
    <td> </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td> 
-   <td>Crée un fichier Adobe PDF à partir des types de fichiers pris en charge.</td> 
+   <td>Crée Adobe PDF à partir des types de fichiers pris en charge.</td> 
    <td>Documents traités</td> 
    <td> </td> 
   </tr>
@@ -305,6 +305,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
 >
 >* L’API d’appel du service Assembler peut, en interne, appeler une API facturable d’un autre service en fonction de l’entrée. Ainsi, l’API d’appel peut être comptabilisée comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend de l&#39;entrée et des API internes invoquées.
 >* Un document PDF unique créé à l’aide du service Assembler peut être comptabilisé comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend du code DDX fourni.
+
 >
 
 
@@ -349,7 +350,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
 
 ## API de capture de données facturables {#billable-data-capture-apis}
 
-Tous les événements d’envoi des formulaires adaptatifs, des formulaires HTML5 et du jeu de formulaires sont comptabilisés comme des transactions. Par défaut, l’envoi d’un formulaire PDF n’est pas comptabilisé comme une transaction. Utilisez l’API [des rapports de](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) transactions fournie pour enregistrer un envoi de formulaires PDF en tant que transaction.
+Tous les événements d’envoi des formulaires adaptatifs, du Forms HTML5 et du jeu de formulaires sont comptabilisés comme des transactions. Par défaut, l’envoi d’un formulaire PDF n’est pas comptabilisé comme une transaction. Utilisez l&#39;API [des rapports de](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) transactions fournie pour enregistrer un envoi PDF forms en tant que transaction.
 
 ### Formulaires adaptatifs {#adaptive-forms}
 
@@ -410,15 +411,15 @@ Tous les événements d’envoi des formulaires adaptatifs, des formulaires HTML
    <td>
     <ul> 
      <li>L’utilisation du formulaire adaptatif dans un formulaire adaptatif (jeu de formulaires adaptatifs) ne tient compte que d’une seule transaction. Vous pouvez avoir n’importe quel nombre de formulaires adaptatifs dans un formulaire adaptatif.</li> 
-     <li>Chaque formulaire d’un formulaire HTML5 Forms définit des comptes en tant que transaction distincte. </li> 
+     <li>Chaque formulaire d’un jeu de formulaires Forms HTML5 est comptabilisé comme une transaction distincte. </li> 
     </ul> </td> 
   </tr>
  </tbody>
 </table>
 
-## Communication interactive facturable et Workflows AEM orientés formulaires sur les API OSGi {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
+## Workflows d&#39;AEM de communication interactive facturables et orientés formulaires sur les API OSGi {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
-Affectez les étapes des services de tâche et de document des Workflows AEM orientés formulaire sur OSGi et tous les rendus de la communication interactive et sont comptabilisés comme des transactions. La prévisualisation d’une communication interactive sur l’instance d’auteur et la prévisualisation sur l’instance de publication à l’aide de l’interface utilisateur de l’agent ne sont pas comptabilisées comme des transactions. Si une étape de workflow comptabilise une transaction et que celle-ci ne se termine pas, le décompte de transaction n&#39;est pas inversé.
+Affectez des étapes de tâche et de services de document des Workflows d&#39;AEM orientés formulaire sur OSGi et tous les rendus de communication interactive et sont comptabilisés comme des transactions. La prévisualisation d’une communication interactive sur l’instance d’auteur et la prévisualisation sur l’instance de publication à l’aide de l’interface utilisateur de l’agent ne sont pas comptabilisées comme des transactions. Si une étape de workflow comptabilise une transaction et que celle-ci ne se termine pas, le décompte de transaction n&#39;est pas inversé.
 
 ### Communication interactive - canal Web {#interactive-communication-web-channel}
 
