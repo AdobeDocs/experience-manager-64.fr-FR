@@ -1,8 +1,8 @@
 ---
 title: Sécurisation de votre environnement d’AEM Forms sur JEE
 seo-title: Sécurisation de votre environnement d’AEM Forms sur JEE
-description: Découvrez divers paramètres de renforcement de la sécurité afin d’améliorer la sécurité des AEM Forms sur JEE s’exécutant sur un intranet d’entreprise.
-seo-description: Découvrez divers paramètres de renforcement de la sécurité afin d’améliorer la sécurité des AEM Forms sur JEE s’exécutant sur un intranet d’entreprise.
+description: Découvrez divers paramètres de renforcement de la sécurité pour améliorer la sécurité d’AEM Forms on JEE s’exécutant sur un intranet d’entreprise.
+seo-description: Découvrez divers paramètres de renforcement de la sécurité pour améliorer la sécurité d’AEM Forms on JEE s’exécutant sur un intranet d’entreprise.
 uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
@@ -17,16 +17,16 @@ ht-degree: 73%
 ---
 
 
-# Renforcement de l’Environnement de vos AEM Forms sur JEE {#hardening-your-aem-forms-on-jee-environment}
+# Renforcement de votre Environnement AEM Forms on JEE {#hardening-your-aem-forms-on-jee-environment}
 
-Découvrez divers paramètres de renforcement de la sécurité afin d’améliorer la sécurité des AEM Forms sur JEE s’exécutant sur un intranet d’entreprise.
+Découvrez divers paramètres de renforcement de la sécurité pour améliorer la sécurité d’AEM Forms on JEE s’exécutant sur un intranet d’entreprise.
 
-L’article fournit des conseils et des pratiques recommandées de sécurisation des serveurs exécutant AEM Forms sur JEE. Il ne vise pas à expliquer de manière exhaustive comment renforcer des hôtes pour votre système d’exploitation et vos serveurs d’applications. Cet article décrit plutôt divers paramètres de renforcement de la sécurité que vous devez implémenter pour améliorer la sécurité de AEM Forms sur JEE qui s’exécute dans un intranet d’entreprise. Toutefois, pour que les serveurs d’applications AEM Forms sur JEE restent sécurisés, vous devez également mettre en œuvre des procédures de surveillance, de détection et de réponse de sécurité.
+L’article fournit des conseils et des pratiques recommandées de sécurisation des serveurs exécutant AEM Forms sur JEE. Il ne vise pas à expliquer de manière exhaustive comment renforcer des hôtes pour votre système d’exploitation et vos serveurs d’applications. Cet article décrit plutôt divers paramètres de renforcement de la sécurité que vous devez implémenter pour améliorer la sécurité de AEM Forms on JEE qui s’exécute dans un intranet d’entreprise. Toutefois, pour que les serveurs d’applications AEM Forms sur JEE restent sécurisés, vous devez également mettre en œuvre des procédures de surveillance, de détection et de réponse de sécurité.
 
 Cet article décrit des techniques de renforcement à appliquer au cours des étapes suivantes, lors du cycle de vie de l’installation et de la configuration :
 
 * **Préinstallation :** Utilisez ces techniques avant d’installer AEM Forms sur JEE.
-* **Installation :** Utilisez ces techniques pendant le processus d’installation de AEM Forms on JEE.
+* **Installation :** Utilisez ces techniques pendant le processus d’installation d’AEM Forms on JEE.
 * **Post-installation :** Utilisez ces techniques après l’installation, puis régulièrement par la suite.
 
 AEM Forms sur JEE est hautement personnalisable et compatible avec de nombreux environnements. Il est possible que certains des conseils présentés ici ne soient pas directement applicables à votre entreprise.
@@ -41,7 +41,7 @@ Avant d’installer AEM Forms sur JEE, vous pouvez appliquer des solutions de s�
 
 **Installation et configuration sous Windows**
 
-Sous Windows, il est préférable d’effectuer l’installation en tant qu’administrateur si vous installez AEM Forms sur JEE sur JBoss en utilisant la procédure d’installation clé en main ou si vous installez PDF Generator. Par ailleurs, lorsque vous installez PDF Generator sous Windows avec prise en charge des applications natives, vous devez exécuter l’installation sous la même identité que l’utilisateur Windows ayant installé Microsoft Office. Pour plus d’informations sur les privilèges d’installation, voir le document* Installation et déploiement de AEM Forms sur JEE* correspondant à votre serveur d’applications.
+Sous Windows, il est préférable d’effectuer l’installation en tant qu’administrateur si vous installez AEM Forms sur JEE sur JBoss en utilisant la procédure d’installation clé en main ou si vous installez PDF Generator. Par ailleurs, lorsque vous installez PDF Generator sous Windows avec prise en charge des applications natives, vous devez exécuter l’installation sous la même identité que l’utilisateur Windows ayant installé Microsoft Office. Pour plus d’informations sur les privilèges d’installation, voir le document* Installation et déploiement d’AEM Forms on JEE* correspondant à votre serveur d’applications.
 
 ### Sécurité de la couche réseau {#network-layer-security}
 
@@ -63,7 +63,7 @@ Le tableau suivant décrit des processus classiques qui permettent de réduire l
   </tr> 
   <tr> 
    <td><p>Adresses IP privées</p> </td> 
-   <td><p>Utilisez la traduction d’adresses réseau (NAT) avec les adresses IP privées RFC 1918 sur le serveur d’applications AEM Forms. Attribuez des adresses IP privées (10.0.0.0/8, 172.16.0.0/12 et 192.168.0.0/16) pour rendre plus difficile pour un attaquant d'acheminer le trafic vers et depuis un hôte interne de NAT par Internet.</p> </td> 
+   <td><p>Utilisez le NAT (Network Address Translation) avec les adresses IP privées RFC 1918 sur le serveur d’applications AEM Forms. Attribuez des adresses IP privées (10.0.0.0/8, 172.16.0.0/12 et 192.168.0.0/16) pour rendre plus difficile pour un attaquant d'acheminer le trafic vers et depuis un hôte interne de NAT par Internet.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Pare-feu</p> </td> 
@@ -447,7 +447,7 @@ Une fois AEM Forms sur JEE installé avec succès, il est important que vous ass
 
 Un *proxy inverse* peut être utilisé pour garantir qu’un jeu d’URL d’applications AEM Forms sur JEE est disponible à la fois pour des utilisateurs externes et internes. Cette configuration est plus sûre que si vous autorisiez des utilisateurs à se connecter directement au serveur d’applications sur lequel est exécuté AEM Forms sur JEE. Le proxy inverse exécute toutes les requêtes HTTP pour le serveur d’applications qui exécute AEM Forms sur JEE. Les utilisateurs disposent d’un accès réseau limité au seul proxy inverse et ne peuvent se connecter qu’aux URL prises en charge par le proxy inverse.
 
-**URL racine des AEM Forms sur JEE à utiliser avec un serveur proxy inverse**
+**URL racine AEM Forms on JEE à utiliser avec un serveur proxy inverse**
 
 Les URL suivantes sont les URL racine de chaque application Web AEM Forms sur JEE. Configurez votre proxy inverse pour qu’il n’expose que les URL de fonctionnalités d’applications Web dont vous souhaitez autoriser l’accès aux utilisateurs finaux.
 
@@ -654,7 +654,7 @@ Le processus de filtrage des Parrains peut être décrit comme suit :
 
 1. Le serveur Forms vérifie la méthode HTTP utilisée pour l’appel :
 
-   1. S’il s’agit d’un POST, le serveur Forms vérifie l’en-tête du Parrain.
+   1. S’il est POST, le serveur Forms vérifie l’en-tête du Parrain.
    1. If it is GET, the forms server bypasses the Referrer check, unless *CSRF_CHECK_GETS* is set to true, in which case it performs the Referrer header check. La variable *CSRF_CHECK_GETS* est spécifiée dans le fichier *web.xml* pour votre application.
 
 1. Le serveur Forms vérifie si l’URI requis est placé sur l&#39;liste autorisée :
@@ -695,7 +695,7 @@ AEM Forms on JEE fournit des API pour gérer la liste d’exception Parrain auto
 * updateAllowedRefererExceptions
 * deleteAllowedRefererExceptions
 
-Pour plus d’informations sur les API, voir le Guide de référence de l’API de AEM Forms on JEE*.
+Pour plus d’informations sur les API, voir le Guide de référence des API d’AEM Forms on JEE*.
 
 Use the ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list for Allowed Referrer Exceptions at the global level i.e. to define exceptions that are applicable to all applications. This list contains only URIs with either an absolute path (e.g. `/index.html`) or a relative path (e.g. `/sample/`). Vous pouvez également ajouter une expression régulière à la fin d’un URI relatif, par ex. `/sample/(.)*`.
 
@@ -717,7 +717,7 @@ Include the `-Dlc.um.csrffilter.disabled=true` JAVA argument in the startup scri
 
 Vous avez peut-être créé des fichiers WAR personnalisés afin de travailler avec AEM Forms sur JEE pour répondre aux besoins de l’activité. To enable Referrer Filtering for your custom WAR files, include ***adobe-usermanager-client.jar*** in the class path for the WAR and include a filter entry in the* web.xml* file with the following parameters:
 
-**CSRF_CHECK_GETS** contrôle la vérification du Parrain sur les requêtes GET. Si ce paramètre n’est pas défini, la valeur par défaut est définie sur false. Incluez ce paramètre uniquement si vous souhaitez filtrer vos requêtes GET.
+**CSRF_CHECK_GETS** contrôle la vérification du Parrain sur les demandes de GET. Si ce paramètre n’est pas défini, la valeur par défaut est définie sur false. Incluez ce paramètre uniquement si vous souhaitez filtrer vos requêtes GET.
 
 **CSRF_ALLOWED_REFERER_EXCEPTIONS** est l’identifiant de la liste d’exceptions aux Parrains autorisés. Le filtre de Parrain empêche les requêtes provenant de Parrains de la liste identifiés par l’ID de liste d’appeler toute ressource sur le serveur Forms.
 
