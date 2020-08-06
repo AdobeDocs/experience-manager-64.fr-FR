@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
 translation-type: tm+mt
 source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 80%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
 
 Une action d’envoi est déclenchée lorsqu’un utilisateur clique sur le bouton Envoyer d’un formulaire adaptatif. Vous pouvez configurer l’action d’envoi sur le formulaire adaptatif. Les formulaires adaptatifs fournissent quelques actions d’envoi prêtes à l’emploi. Vous pouvez copier et étendre les actions d’envoi par défaut afin de créer votre propre action. Cependant, en fonction des exigences, vous pouvez rédiger et enregistrer votre propre action d’envoi afin de traiter les données du formulaire envoyé.
 
-Lorsqu’un formulaire est prérempli ou envoyé, les données envoyées sont acheminées via AEM pour le massage des données vers des formats intermédiaires. Les données ne sont pas enregistrées sur une instance AEM, sauf lorsque le formulaire adaptatif utilise Adobe Sign, verify, le brouillon ou l’envoi du portail de formulaires ou les processus AEM.
+Lorsqu’un formulaire est prérempli ou envoyé, les données envoyées sont acheminées par l’AEM pour le massage des données aux formats intermédiaires. Les données ne sont pas enregistrées sur une instance AEM sauf si le formulaire adaptatif utilise Adobe Sign, verify, Forms Portal draft or submit ou AEM Workflows
 
 Vous pouvez configurer une action d’envoi dans la section **[!UICONTROL Envoi]** des propriétés du conteneur de formulaire adaptatif, dans la zone latérale.
 
-![](assets/thank-you-setting.png) Configuration de l’action **Envoyer** Figure : *Configurer l’action d’envoi*
+![Configuration de la](assets/thank-you-setting.png)figure de l’action **d’envoi :** *Configurer l’action d’envoi*
 
 Les actions d’envoi par défaut disponibles avec les formulaires adaptatifs sont les suivantes :
 
@@ -130,7 +133,7 @@ Avant d’utiliser l’action d’envoi **[!UICONTROL Appeler un processus AEM]*
 
 ## Revalidation côté serveur dans un formulaire adaptatif {#server-side-revalidation-in-adaptive-form}
 
-Généralement, dans tout système de capture de données en ligne, les développeurs placent certaines validations JavaScript côté client pour appliquer quelques règles métier. Mais dans les navigateurs modernes, les utilisateurs finaux peuvent contourner ces validations et effectuer les envois manuellement à l’aide de différentes méthodes, comme la console Web Browser DevTools. Ces techniques sont également valides pour les formulaires adaptatifs. Un développeur de formulaires peut créer différentes logiques de validation, mais techniquement, les utilisateurs finaux peuvent ignorer ces logiques de validation et envoyer des données incorrectes au serveur. Les données incorrectes violeraient les règles de fonctionnement mises en place par un auteur de formulaires.
+En règle générale, dans tout système de capture de données en ligne, les développeurs placent certaines validations JavaScript côté client pour appliquer quelques règles métier. Mais dans les navigateurs modernes, les utilisateurs finaux peuvent contourner ces validations et effectuer les envois manuellement à l’aide de différentes méthodes, comme la console Web Browser DevTools. Ces techniques sont également valables pour les formulaires adaptatifs. Un développeur de formulaires peut créer différentes logiques de validation, mais techniquement, les utilisateurs finaux peuvent ignorer ces logiques de validation et envoyer des données incorrectes au serveur. Les données incorrectes violeraient les règles de fonctionnement mises en place par un auteur de formulaires.
 
 La fonction de revalidation côté serveur permet également d’exécuter les validations fournies par un auteur de formulaires adaptatifs lors de la conception d’un formulaire adaptatif sur le serveur. Elle empêche toute erreur lors des envois de données et toute violation des règles de fonctionnement représentées en termes de validations de formulaire.
 
@@ -146,7 +149,7 @@ Les champs de validation en standard d’un formulaire adaptatif réexécutés s
 
 Utilisez **Revalider sur le serveur** sous le conteneur de formulaires adaptatifs dans la zone latérale pour activer ou désactiver la validation côté serveur pour le formulaire actif.
 
-![](assets/revalidate-on-server.png) Activation de la validation **côté serveur** Figure : *Activation de la validation côté serveur*
+![Activation de la validation](assets/revalidate-on-server.png)**côté serveur :** *Activation de la validation côté serveur*
 
 Si l’utilisateur final contourne ces validations et envoie les formulaires, le serveur effectue de nouveau la validation. Si la validation échoue du côté du serveur, la transaction d’envoi est alors désactivée. L’utilisateur final voit de nouveau s’afficher le formulaire d’origine. Pour l’utilisateur, les données capturées et les données envoyées s’affichent en tant qu’erreurs.
 
@@ -154,7 +157,7 @@ Si l’utilisateur final contourne ces validations et envoie les formulaires, le
 
 Parfois, en cas de **règles de validation complexes**, le script de validation exact réside dans des fonctions personnalisées que l’auteur doit appeler à partir de l’expression du champ de validation. To make this custom function library known and available while performing server-side validations, the form author can configure the name of AEM client library under the **[!UICONTROL Basic]** tab of Adaptive Form Container properties as shown below.
 
-![](assets/clientlib-cat.png) Prise en charge des fonctions personnalisées dans les expressions **de validation** Figure : Prise en *charge des fonctions personnalisées dans les expressions de validation*
+![Prise en charge des fonctions personnalisées dans les Expressions](assets/clientlib-cat.png)**de validation Figure :** *Prise en charge des fonctions personnalisées dans les Expressions de validation*
 
 L’auteur peut configurer la bibliothèque personnalisée JavaScript pour chaque formulaire adaptatif. Dans la bibliothèque, conservez uniquement les fonctions réutilisables ayant une dépendance sur les bibliothèques tierces jquery et underscore.js.
 
