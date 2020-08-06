@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 00f7ed25-276b-42c2-ae4c-11de357a9ec6
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +59,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
    * **[!UICONTROL Onglet Qualité]**
 
       * **[!UICONTROL Qualité générale]** : `0.5`   ou moins
-      * **[!UICONTROL Mode]** Diffusion Indirecte (GI) - `Final Gather`
+      * **[!UICONTROL Mode]** Diffuse Indirecte (GI) - `Final Gather`
       * **[!UICONTROL Taille]** du filtre - `2.0`, `2.0`
    * Définissez le rendu de la scène selon les tailles de l’image type que vous comptez utiliser. Si nécessaire, affinez les lumières, les paramètres de rendu ou les deux pour parvenir au résultat souhaité.
 
