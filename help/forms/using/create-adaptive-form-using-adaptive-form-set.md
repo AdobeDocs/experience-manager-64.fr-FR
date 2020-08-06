@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: 75ee94f7-e939-409b-b8cb-8fdc3f79bb63
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '597'
+ht-degree: 75%
 
 ---
 
@@ -33,7 +36,7 @@ Certaines fonctionnalités, telles que la création indépendante et le chargeme
 
 ## Arrière-plan {#behind-the-scenes}
 
-Vous pouvez ajouter des formulaires et des fragments adaptatifs basés sur XSD dans le formulaire parent. La structure du formulaire parent est la même que celle d’un [formulaire adaptatif](/help/forms/using/prepopulate-adaptive-form-fields.md) courant. Lorsque vous ajoutez un formulaire adaptatif en tant que formulaire enfant, il est ajouté sous forme de panneau dans le formulaire parent. Data of a bound child form is stored under the `data`root of the `afBoundData` section of the parent form&#39;s XML schema.
+Vous pouvez ajouter des formulaires et des fragments adaptatifs basés sur XSD dans le formulaire parent. La structure du formulaire parent est la même que celle d’un [formulaire adaptatif](/help/forms/using/prepopulate-adaptive-form-fields.md) courant. Lorsque vous ajoutez un formulaire adaptatif en tant que formulaire enfant, il est ajouté en tant que panneau dans le formulaire parent. Data of a bound child form is stored under the `data`root of the `afBoundData` section of the parent form&#39;s XML schema.
 
 Par exemple, vos clients remplissent le formulaire de demande. Les deux premiers champs du formulaire sont le nom et l’identité. Son XML est :
 
@@ -51,7 +54,7 @@ Par exemple, vos clients remplissent le formulaire de demande. Les deux premiers
 </afData>
 ```
 
-Vous ajoutez un autre formulaire à la demande qui permet aux clients de remplir leur adresse professionnelle. Le schéma racine du formulaire enfant est`officeAddress` . Appliquer `bindref` ou `/application/officeAddress` `/officeAddress`. Si `bindref` n’est pas fourni, le formulaire enfant est ajouté comme sous-arborescence `officeAddress`. Voir le XML du formulaire ci-dessous :
+Vous ajoutez un autre formulaire à la demande qui permet aux clients de remplir leur adresse professionnelle. Le schéma racine du formulaire enfant est`officeAddress` . Appliquer `bindref` `/application/officeAddress` ou `/officeAddress`. Si `bindref` n’est pas fourni, le formulaire enfant est ajouté comme sous-arborescence `officeAddress`. Consultez le XML du formulaire ci-dessous :
 
 ```xml
 <afData>
@@ -71,7 +74,7 @@ Vous ajoutez un autre formulaire à la demande qui permet aux clients de remplir
 </afData>
 ```
 
-Si vous insérez un autre formulaire qui permet à vos clients de fournir l’adresse du domicile, appliquez `bindref` le code XML `/application/houseAddress or /houseAddress.`qui ressemble à :
+Si vous insérez un autre formulaire qui permet à vos clients de fournir l’adresse de leur domicile, appliquez `bindref` le code XML à `/application/houseAddress or /houseAddress.`l’aspect suivant :
 
 ```xml
 <afData>
@@ -140,5 +143,5 @@ Effectuez les étapes suivantes pour ajouter un formulaire adaptatif en tant que
    [ ![Sélection d’un formulaire adaptatif dans Ressources](assets/asset.png)](assets/asset-1.png)
 
 1. Glissez et déposez le formulaire adaptatif que vous souhaitez ajouter en tant que formulaire enfant.
-   [ ![Faites glisser et déposez le formulaire adaptatif dans votre](assets/drag-drop.png)](assets/drag-drop-1.png)siteLe formulaire adaptatif que vous déposez est ajouté en tant que formulaire enfant.
+   [ ![Faites glisser et déposez le formulaire adaptatif dans votre](assets/drag-drop.png)](assets/drag-drop-1.png)site. Le formulaire adaptatif que vous déposez est ajouté en tant que formulaire enfant.
 
