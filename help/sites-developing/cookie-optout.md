@@ -20,7 +20,7 @@ ht-degree: 81%
 
 # Configuration de l’utilisation de cookies{#configuring-cookie-usage}
 
-AEM fournit un service qui vous permet de configurer et de contrôler la manière dont les cookies sont utilisés dans vos pages Web :
+AEM fournit un service qui vous permet de configurer et de contrôler l’utilisation des cookies dans vos pages Web :
 
 * Un service configurable côté serveur conserve la liste des cookies qui peuvent être utilisés.
 * Une API JavaScript permet à votre code JavaScript de vérifier qu’un cookie peut être utilisé.
