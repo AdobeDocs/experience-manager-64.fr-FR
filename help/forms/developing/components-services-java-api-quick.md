@@ -34,7 +34,7 @@ Le Début rapide des API Java (SOAP) est disponible pour les composants et les s
 
 [Début rapide (mode SOAP) : Suppression de composants à l’aide de l’API Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
-Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms fortement typée et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Les opérations AEM Forms peuvent être exécutées à l’aide de l’API forte
 
 >[!NOTE]
 >
->Les débuts rapides situés dans Programmation avec AEM forms dépendent du serveur Forms déployé sur JBoss et sur le système d’exploitation Windows. Cependant, si vous utilisez un autre système d&#39;exploitation, tel que Unix, remplacez les chemins spécifiques à windows par les chemins pris en charge par le système d&#39;exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les débuts rapides situés dans Programmation avec AEM formulaires sont basés sur le serveur Forms déployé sur JBoss et le système d’exploitation Windows. Cependant, si vous utilisez un autre système d&#39;exploitation, tel que Unix, remplacez les chemins spécifiques à windows par les chemins pris en charge par le système d&#39;exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
