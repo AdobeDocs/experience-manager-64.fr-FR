@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2833'
+ht-degree: 69%
 
 ---
 
@@ -27,6 +30,7 @@ Les modèles de workflow se composent d’une série d’étapes de différents 
 >
 >* [Référence sur les étapes de workflow d’AEM Forms](/help/forms/using/aem-forms-workflow-step-reference.md)
 >* [Traitement des ressources à l’aide des workflows et des gestionnaires de médias](/help/assets/media-handlers.md)
+
 >
 
 
@@ -49,11 +53,11 @@ Une combinaison des propriétés suivantes est disponible pour la plupart des co
 
 * **[!UICONTROL Étape du processus]**
 
-   Sélecteur déroulant pour appliquer une [scène](/help/sites-developing/workflows.md#workflow-stages) à l’étape.
+   Sélecteur déroulant permettant d’appliquer une [étape](/help/sites-developing/workflows.md#workflow-stages) à l’étape.
 
 * **[!UICONTROL Délai dépassé]**
 
-   Période au bout de laquelle l’étape sera &quot;dépassée de délai&quot;.
+   Période au terme de laquelle l’étape sera &quot;dépassée de délai&quot;.
 
    You can select between: **[!UICONTROL Off]**, **[!UICONTROL Immediate]**, **[!UICONTROL 1h]**, **[!UICONTROL 6h]**, **[!UICONTROL 12h]**, **[!UICONTROL 24h]**.
 
@@ -65,7 +69,7 @@ Une combinaison des propriétés suivantes est disponible pour la plupart des co
 
 * **[!UICONTROL Avance du gestionnaire]**
 
-   Sélectionnez cette option pour faire avancer automatiquement le flux de travail à l’étape suivante après l’exécution. Si cette option n’est pas sélectionnée, le script de mise en œuvre doit gérer l’avancement du workflow.
+   Sélectionnez cette option pour avancer automatiquement le flux de travail à l’étape suivante après l’exécution. Si cette option n’est pas sélectionnée, le script de mise en œuvre doit gérer l’avancement du workflow.
 
 #### Propriétés des étapes – onglet Utilisateur/Groupe {#step-properties-user-group-tab}
 
@@ -93,7 +97,7 @@ The **[!UICONTROL AND Split]** creates a split in the workflow, after which both
 
 * Edit the **[!UICONTROL AND Split]** properties:
 
-   * **[!UICONTROL Nom]** partagé : attribuez un nom à des fins explicatives.
+   * **[!UICONTROL Nom]** fractionné : attribuez un nom à des fins explicatives.
    * Sélectionnez le nombre de branches requis : 2, 3, 4 ou 5.
 
 * Ajoutez des étapes de workflow aux branches selon vos besoins.
@@ -135,8 +139,8 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 * **[!UICONTROL Processus]**
 
    * **[!UICONTROL Étape à suivre]]**: Sélectionnez l’étape à exécuter.
-   * **[!UICONTROL Chemin]** du script : Chemin d’accès à ECMAScript qui détermine si l’étape **[!UICONTROL Atteindre]** doit être exécutée.
-   * **[!UICONTROL Script]**: ECMAScript qui détermine s’il faut exécuter l’ **[!UICONTROL étape]** Goto.
+   * **[!UICONTROL Chemin]** du script : Chemin d’accès à ECMAScript qui détermine si l’étape **** Goto doit être exécutée.
+   * **[!UICONTROL Script]**: ECMAScript qui détermine si l’étape **** Goto doit être exécutée.
 
 >[!CAUTION]
 >
@@ -197,13 +201,14 @@ La **[!UICONTROL division OU]** crée une division dans le workflow, après quo
       * **[!UICONTROL Chemin du script]** : chemin d’accès au fichier contenant le script.
       * **[!UICONTROL Script]** : ajoutez le script dans la boîte de dialogue.
       * **[!UICONTROL Chemin par défaut]** : la branche par défaut est suivie lorsque plusieurs branches renvoient la valeur true. Vous pouvez spécifier uniquement une branche par défaut.
+
    >[!NOTE]
    >
    >Il existe un onglet distinct pour chaque branche :
    >
    >* Les scripts de chaque branche sont évalués un par un.
    >* Les branches sont évaluées de gauche à droite.
-   >* Le premier script qui renvoie true est exécuté.
+   >* Le premier script dont la valeur est true est exécuté.
    >* Si aucune branche n’est évaluée sur true, le flux de travaux n’avance pas.
 
 
@@ -238,6 +243,7 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 >
 >* le workflow est terminé ;
 >* le workflow est interrompu.
+
 >
 
 
@@ -260,9 +266,9 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
 * [**[!UICONTROL Courant]**](#step-properties-common-tab)
 * [**[!UICONTROL Utilisateur/Groupe]**](#step-properties-user-group-tab)
-* **[!UICONTROL Dialogue]**
+* **[!UICONTROL Boîte de dialogue]**
 
-   * **Chemin** de la boîte de dialogue [!UICONTROL: Chemin d’accès au noeud dialog de la [boîte de dialogue que vous créez](#dialog-participant-step-creating-a-dialog).
+   * **[ ! UICONTROL Dialog Path**: Chemin d’accès au noeud dialog de la [boîte de dialogue que vous créez](#dialog-participant-step-creating-a-dialog).
 
 #### Dialog Participant Step – Creating a dialog{#dialog-participant-step-creating-a-dialog}
 
@@ -286,7 +292,7 @@ Vous pouvez stocker des données de widget dans la charge utile de workflow ou d
 
 * **[!UICONTROL Stockage des données avec l’élément de travail]**
 
-   * Pour stocker des données de widget en tant que propriété des métadonnées de l’élément de travail, utilisez le format suivant pour la valeur de la propriété name :
+   * Pour stocker les données du widget en tant que propriété des métadonnées de l’élément de travail, utilisez le format suivant pour la valeur de la propriété name :
 
       `nodename`
 
@@ -384,7 +390,7 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
    * **[!UICONTROL Arguments]** : tous les arguments requis.
    * **[!UICONTROL E-mail]** : si une notification électronique doit être envoyée à l’utilisateur.
 
-* **[!UICONTROL Dialogue]**
+* **[!UICONTROL Boîte de dialogue]**
 
    * **[!UICONTROL Chemin de la boîte de dialogue]** : chemin du nœud de la [boîte de dialogue que vous créez (avec l’**étape de participant de la boîte de dialogue**)](#dialog-participant-step-creating-a-dialog).
 
@@ -404,7 +410,7 @@ Créez un service OSGi ou un ECMAScript qui sélectionne un utilisateur auquel a
 
    >[!CAUTION]
    >
-   >You *must* not change anything in the `/libs` path.
+   >Vous ne devez *rien* modifier dans le chemin `/libs`.
    >
    >
    >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
@@ -425,8 +431,9 @@ Créez un service OSGi ou un ECMAScript qui sélectionne un utilisateur auquel a
 
    Services must implement the [com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface. L’interface définit les membres suivants :
 
-   * `SERVICE_PROPERTY_LABEL` champ : Utilisez ce champ pour spécifier le nom du sélecteur de participants. Le nom s’affiche dans la liste des programmes de sélection des participants disponibles dans les propriétés **[!UICONTROL Étape choix dynamique de participant]**.
-   * `getParticipant` méthode : Renvoie l’identifiant principal résolu dynamiquement sous forme de `String` valeur.
+   * `SERVICE_PROPERTY_LABEL` field : Utilisez ce champ pour spécifier le nom du sélecteur de participants. Le nom s’affiche dans la liste des programmes de sélection des participants disponibles dans les propriétés **[!UICONTROL Étape choix dynamique de participant]**.
+   * `getParticipant` méthode : Renvoie l’identifiant principal résolu de manière dynamique sous la forme d’une `String` valeur.
+
    >[!CAUTION]
    >
    >The `getParticipant` method returns the dynamically resolved Principal id. Il peut s’agir d’un ID de groupe ou d’utilisateur.
@@ -444,7 +451,7 @@ Créez un service OSGi ou un ECMAScript qui sélectionne un utilisateur auquel a
 
 La classe Java suivante met en œuvre l’interface `ParticipantStepChooser`. La classe renvoie le nom du participant qui a initié le workflow. The code uses the same logic that the sample script ( `initator-participant-chooser.ecma`) uses.
 
-L’ `@Property` annotation définit la valeur du `SERVICE_PROPERTY_LABEL` champ sur `Workflow Initiator Participant Chooser`.
+L&#39; `@Property` annotation définit la valeur du `SERVICE_PROPERTY_LABEL` champ sur `Workflow Initiator Participant Chooser`.
 
 ```java
 package com.adobe.example;
@@ -485,7 +492,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 
 In the **[!UICONTROL Dynamic Participant Step]** properties dialog, the **[!UICONTROL Participant Chooser]** list includes the item `Workflow Initiator Participant Chooser (script)`, which represents this service.
 
-&quot;Lorsque le modèle de flux de travail est démarré, le journal indique l’ID de l’utilisateur qui a lancé le flux de travail et qui est affecté à la tâche. Dans cet exemple, l’utilisateur `admin` a commencé le workflow.
+&quot;Lorsque le modèle de flux de travail est démarré, le journal indique l&#39;identifiant de l&#39;utilisateur qui a lancé le flux de travail et qui est affecté à la tâche. Dans cet exemple, l’utilisateur `admin` a commencé le workflow.
 
 `13.09.2015 15:48:53.037 *INFO* [10.176.129.223 [1347565733037] POST /etc/workflow/instances HTTP/1.1] com.adobe.example.InitiatorParticipantChooser Assigning Dynamic Participant Step work item to admin`
 
@@ -507,17 +514,17 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 * [**[!UICONTROL Utilisateur/Groupe]**](#step-properties-user-group-tab)
 * **[!UICONTROL Formulaire]**
 
-   * **[!UICONTROL Form Path**: Chemin d’accès au [formulaire que vous créez](#form-participant-step-creating-the-form).
+   * **[ ! UICONTROL Form Path**: Chemin d’accès au [formulaire que vous créez](#form-participant-step-creating-the-form).
 
 #### Étape de participant du formulaire – création de formulaire {#form-participant-step-creating-the-form}
 
 Créez un formulaire à utiliser avec une **[!UICONTROL étape de participant du formulaire]** de façon normale. Toutefois, les formulaires d’une étape de participant du formulaire doivent avoir les configurations suivantes :
 
-* La propriété Type **[!UICONTROL d’]** action **[!UICONTROL du composant]** Début du formulaire `Edit Workflow Controlled Resource(s)`doit être définie sur.
+* La propriété Type **[!UICONTROL d’]** action **[!UICONTROL doit être définie sur]** le composant Début du formulaire `Edit Workflow Controlled Resource(s)`.
 
 * The **[!UICONTROL Start of Form]** component must have a value for the `Form Identifier` property.
 
-* Les composants de formulaire doivent présenter la propriété **Nom de l’élément** définie sur le chemin du nœud dans lequel les données de champs sont stockées. Le chemin d’accès doit localiser un noeud dans le contenu de charge utile du flux de travail. La valeur utilise le format suivant :
+* Les composants de formulaire doivent présenter la propriété **Nom de l’élément** définie sur le chemin du nœud dans lequel les données de champs sont stockées. Le chemin d’accès doit localiser un noeud dans le contenu de la charge utile du flux de travail. La valeur utilise le format suivant :
 
    `./jcr:content/path_to_node`
 
