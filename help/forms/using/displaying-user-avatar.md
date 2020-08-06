@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 80%
 
 ---
 
 
 # Affichage de l’avatar de l’utilisateur {#displaying-the-user-avatar}
 
-L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droit de l’espace de travail AEM Forms. Les avatars de rapports directs dans la hiérarchie de l’entreprise sont affichés également dans la vue du gestionnaire. Vous pouvez configurer l’espace de travail AEM Forms pour sélectionner les images de l’utilisateur dans votre base de données, par exemple le serveur LDAP.
+L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droit de l’espace de travail AEM Forms. Les avatars de rapports directs dans la hiérarchie de l’entreprise sont affichés également dans la vue du gestionnaire. Vous pouvez configurer l’espace de travail AEM Forms pour sélectionner les images des utilisateurs dans votre base de données, par exemple, le serveur LDAP.
 
 >[!NOTE]
 >
