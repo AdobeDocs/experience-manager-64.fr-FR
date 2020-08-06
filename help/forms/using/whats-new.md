@@ -10,6 +10,9 @@ topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 translation-type: tm+mt
 source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+workflow-type: tm+mt
+source-wordcount: '2017'
+ht-degree: 80%
 
 ---
 
@@ -26,7 +29,7 @@ Lisez ci-après la présentation rapide des nouvelles fonctionnalités et améli
 
 ![gestion de la correspondance](assets/correspondence-management.png)
 
-Interactive Communications centralise et gère la création, l’assemblage et la livraison de correspondances sécurisées, personnalisées et interactives, telles que la correspondance d’affaires, les lettres, les documents, les déclarations, les avis d’avantages, les prospectus de gestion de patrimoine, les courriels marketing, les factures et les kits de bienvenue.
+Interactive Communications centralise et gère la création, l&#39;assemblage et la diffusion de correspondances sécurisées, personnalisées et interactives telles que la correspondance d&#39;affaires, les lettres, les documents, les déclarations, les avis de prestations, les prospectus de gestion de patrimoine, les courriels marketing, les factures et les kits de bienvenue.
 
 Les communications interactives utilisent la même technologie, les mêmes processus et les mêmes composants sous-jacents que les formulaires adaptatifs pour créer des communications multicanaux réactives, tout comme les formulaires adaptatifs réactifs.
 
@@ -49,7 +52,7 @@ For more information, see [Interactive Communications Overview](/help/forms/usin
 
 L’éditeur de document glisser-déposer WYSIWYGM est adapté aux entreprises. L’interface intuitive, la fonction de glisser-déposer, les composants standard, les modèles de données et le référentiel intégré des actifs permettent la création facile et rapide d’une communication interactive.
 
-Pour créer une communication interactive ou en modifier une existante, les utilisateurs professionnels peuvent utiliser les blocs de création suivants : Canaux, Contenu, Propriétés, Ressources, Composants et Sources de données.
+Pour créer une communication interactive ou en modifier une existante, les utilisateurs professionnels peuvent utiliser les blocs de construction suivants : Canaux, contenu, propriétés, ressources, composants et sources de données.
 
 ![glisser-n-déposer-lf](assets/drag-n-drop-lf.png)
 
@@ -57,7 +60,7 @@ For more information, see [Introduction to authoring Interactive Communication](
 
 ### Générer automatiquement la version web à partir du contenu imprimé dans la communication interactive {#auto-generate-web-version-from-print-content-in-interactive-communication}
 
-Les auteurs peuvent générer automatiquement du contenu de document Web à partir de documents imprimés pour créer, prévisualiser et modifier des documents imprimés et Web dans le même éditeur. Les auteurs de communications interactives peuvent créer une fois et publier sur tous les canaux. Les auteurs de communications interactives peuvent utiliser les mêmes fragments de document dans l’impression et le canal Web pour éviter la duplication des efforts.
+Les auteurs peuvent générer automatiquement du contenu de document Web à partir des documents d’impression pour créer, prévisualisation et modifier des documents Web et d’impression dans le même éditeur. Les auteurs de communications interactives peuvent créer une fois et publier sur tous les canaux. Les auteurs de communications interactives peuvent utiliser les mêmes fragments de document dans le canal papier et le  Web pour éviter la duplication des efforts.
 
 For more information, see [Print channel and web channel](/help/forms/using/web-channel-print-channel.md).
 
@@ -65,13 +68,13 @@ For more information, see [Print channel and web channel](/help/forms/using/web-
 
 La communication interactive prend en charge des thèmes. Vous pouvez créer des thèmes et les appliquer à votre communication interactive. Un thème contient des détails de style pour les composants et les panneaux. Vous pouvez réutiliser un thème sur différentes communications interactives pour leur donner une apparence et une identité graphique cohérentes et communes.
 
-AEM Forms comprend un thème prêt à l’emploi pour les communications interactives. À l’aide d’un thème, vous pouvez également personnaliser l’apparence d’une communication interactive sur un périphérique.
+AEM Forms comprend un thème prêt à l&#39;emploi pour Interactive Communications. À l’aide d’un thème, vous pouvez également personnaliser l’apparence d’une communication interactive sur un périphérique.
 
 Pour plus d’informations, voir [Thèmes dans AEM Forms](/help/forms/using/themes.md).
 
 ### Interface améliorée de l’agent {#enhanced-agent-interface}
 
-L’interface utilisateur de l’agent prend désormais en charge l’impression et l’aperçu web de la communication interactive. Dans la même interface utilisateur Agent, vous pouvez choisir de modifier le canal d’impression et de prévisualiser le canal Web de votre communication interactive multicanaux. Les champs, les variables, les éléments FDM et les fragments de document dans le canal d’impression peuvent être configurés pour être modifiés par l’agent dans l’interface utilisateur de l’agent. La prise en charge du modèle de données de formulaire vous permet de générer des aperçus avec des exemples de données pré-remplies.
+L’interface utilisateur de l’agent prend désormais en charge l’impression et l’aperçu web de la communication interactive. Dans la même interface utilisateur de l&#39;agent, vous pouvez choisir de modifier le canal Web du canal d&#39;impression et de la prévisualisation de votre communication interactive multicanal. Les champs, les variables, les éléments FDM et les fragments de document dans le canal d’impression peuvent être configurés pour être modifiés par l’agent dans l’interface utilisateur de l’agent. La prise en charge du modèle de données de formulaire vous permet de générer des aperçus avec des exemples de données pré-remplies.
 
 For more information, see [Prepare and send Interactive Communication using the Agent UI](/help/forms/using/prepare-send-interactive-communication.md).
 
@@ -98,7 +101,7 @@ Vous pouvez maintenant utiliser des éléments et des règles FDM dans des fragm
 * Prise en charge des éléments de modèle de données de formulaire
 * Afficher ou masquer un fragment d’actif/texte utilisant des règles
 * Valider la valeur d’un élément/d’une variable
-* Exécuter des fonctions pour calculer la valeur d’une expression mathématique
+* Exécuter des fonctions pour calculer la valeur d&#39;une expression mathématique
 
 Pour en savoir plus, voir:
 
@@ -119,7 +122,7 @@ Plusieurs nouvelles fonctionnalités et améliorations sont disponibles dans l�
 
 ### Créer un modèle de données de formulaire sans source de données {#create-form-data-model-without-data-source}
 
-Les utilisateurs professionnels et les auteurs de formulaire peuvent désormais créer un modèle de données de formulaire, y compris ses entités et propriétés, sans configurer de source de données, et peuvent être utilisés pour la création de formulaires et de documents adaptatifs. Vous pouvez lier le modèle de données de formulaire aux sources de données ultérieurement. Il élimine les dépendances sur les sources de données pour créer des formulaires et des documents à l’aide du modèle de données de formulaire.
+Les utilisateurs professionnels et les auteurs de formulaire peuvent désormais créer un modèle de données de formulaire, y compris ses entités et propriétés, sans configurer de source de données, et peuvent être utilisés pour la création de formulaires et de documents adaptatifs. Vous pouvez lier le modèle de données de formulaire aux sources de données ultérieurement. Il élimine les dépendances des sources de données pour créer des formulaires et des documents à l’aide du modèle de données de formulaire.
 
 De même, vous pouvez créer des entités et des propriétés enfant dans un modèle de données de formulaire existant et les lier ultérieurement aux entités et propriétés correspondantes dans une source de données.
 
@@ -127,7 +130,7 @@ For more information, see [Create form data model](/help/forms/using/create-form
 
 ### Créer des propriétés calculées {#create-computed-properties}
 
-Les auteurs et les développeurs de formulaires peuvent créer des propriétés calculées dans un modèle de données de formulaire. Ils vous permettent de calculer une valeur pour la propriété en créant des règles ou une logique sur les données disponibles dans les sources de données configurées. Une règle est une expression qui est évaluée lorsque les données sont chargées dans le modèle de données du formulaire ou lorsque les valeurs des propriétés de l’expression changent. Par exemple, une propriété calculée appelée Versements calcule le montant mensuel à payer pour un prêt en fonction du taux d’intérêt spécifié dans la source de données et du montant du prêt et de la durée spécifiés par l’utilisateur dans le formulaire.
+Les auteurs et les développeurs de formulaires peuvent créer des propriétés calculées dans un modèle de données de formulaire. Ils vous permettent de calculer une valeur pour la propriété en créant des règles ou une logique sur les données disponibles dans les sources de données configurées. Une règle est une expression qui est évaluée lorsque les données sont chargées dans le modèle de données de formulaire ou lorsque les valeurs des propriétés dans l’expression changent. Par exemple, une propriété calculée appelée Versements calcule le montant mensuel à payer pour un prêt en fonction du taux d’intérêt spécifié dans la source de données et du montant du prêt et de la durée spécifiés par l’utilisateur dans le formulaire.
 
 Une propriété calculée réside localement dans un modèle de données de formulaire et n’existe pas dans une source de données. Vous pouvez utiliser des propriétés calculées dans des formulaires adaptatifs et des communications interactives.
 
@@ -169,7 +172,7 @@ Plusieurs améliorations ont été apportées à la fonctionnalité de chargemen
 
 La fonctionnalité Processus AEM basés sur l’utilisation de Forms permet une création et un déploiement rapides des processus pour diverses tâches de la pile OSGi. Vous n’avez plus besoin d’installer la fonctionnalité de gestion des processus disponible sur la pile JEE, ce qui simplifie le déploiement et l’élimination des coûts de serveur d’applications et d’infrastructure. Pour plus d’informations, voir [Flux de travail basé sur l’utilisation de Forms sur OSGi](/help/forms/using/aem-forms-workflow.md).
 
-Les améliorations suivantes ont été apportées aux processus AEM orientés vers Forms : ・
+Les améliorations suivantes ont été apportées aux Workflows d&#39;AEM orientés Forms : ・
 
 * L’éditeur de modèle de processus est disponible dans l’interface utilisateur tactile. Il vous aide à réduire le temps requis pour la création de processus AEM basés sur l’utilisation de Forms.
 * Étape de processus pour l’envoi de courriers électroniques. Par exemple, vous pouvez utiliser l’étape Envoyer un courrier électronique pour envoyer un document d’enregistrement à la fin d’un processus.
@@ -188,9 +191,9 @@ Voici les améliorations apportées à l’application AEM Forms :
 
 ## Document Security {#document-security}
 
-![aem-forms-document-security-](assets/aem-forms-document-security-.png)
+![aem-forms-document-sécurité-](assets/aem-forms-document-security-.png)
 
-Document Security vous permet de distribuer en toute sécurité toute information enregistrée sous un format pris en charge. Grâce à Document Security, seuls les utilisateurs autorisés peuvent utiliser vos documents. Voici les principales modifications apportées à Document Security :
+Document Security vous permet de distribuer en toute sécurité toute information enregistrée sous un format pris en charge. Grâce à Document Security, seuls les utilisateurs autorisés peuvent utiliser vos documents. Les principaux changements apportés à la sécurité des documents sont les suivants :
 
 * Document Security fournit une [bibliothèque portable de protection (PPL)](/help/forms/using/document-security-offerings.md) pour protéger un document localement sans l’envoyer vers le serveur AEM Forms. Seules les informations d’identification de sécurité et les détails de la stratégie transitent sur le réseau vers le serveur AEM Forms. AEM 6.4 Forms inclut la bibliothèque portable de protection (PPL) dans un format de bundle OSGi. Vous pouvez maintenant installer directement la bibliothèque PPL sur un serveur AEM Forms et utiliser conjointement les fonctionnalités AEM et PPL.
 * Le SDK Document Security C++ et la bibliothèque PPL C++ peuvent être compilés avec Microsoft Visual Studio 2013. La version précédemment prise en charge était Microsoft Visual Studio 2010.
@@ -202,7 +205,7 @@ AEM Forms peut être installé à l’aide de n’importe quelle combinaison de
 <table> 
  <tbody> 
   <tr> 
-   <td>Component</td> 
+   <td>Composant</td> 
    <td>Prise en charge ajoutée</td> 
    <td>Prise en charge supprimée</td> 
   </tr> 
