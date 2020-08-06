@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1672'
+ht-degree: 89%
 
 ---
 
@@ -33,7 +36,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Balises**
 
-   Vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection :
+   Vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection:
 
    * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
    * Vous pouvez saisir une nouvelle balise en entrant son nom dans une zone de sélection vide.
@@ -42,6 +45,7 @@ Les propriétés sont réparties sur plusieurs onglets.
       * Elle s’affiche alors avec une petite étoile à droite indiquant qu’il s’agit d’une nouvelle balise.
    * Vous pouvez faire votre choix parmi les balises existantes dans la liste déroulante.
    * Un « x » apparaît lorsque vous passez le pointeur de la souris sur une entrée de balise dans la zone de sélection ; vous pouvez vous en servir pour supprimer cette balise de la page.
+
    Pour plus d’informations sur les balises, voir [Utilisation des balises](/help/sites-authoring/tags.md).
 
 * **Masquer dans la navigation**
@@ -66,7 +70,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Heure d’activation**
 
-   Date et heure auxquelles la page publiée sera activée. Une fois publiée, cette page restera dormante jusqu’à l’heure indiquée. 
+   Date et heure auxquelles la page publiée sera activée. Une fois publiée, cette page restera dormante jusqu’à l’heure indiquée.
 
    Ne complétez pas ces champs pour les pages que vous souhaitez publier immédiatement (scénario normal).
 
@@ -80,19 +84,19 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    Permet de saisir une URL Vanity pour cette page. Vous pouvez ainsi disposer d’une URL plus courte et/ou plus explicite.
 
-   Par exemple, si l’URL de vanité est définie sur w `elcome`à la page identifiée par le chemin / `v1.0/startpage`pour le site Web, il `ttp://example.com,` `ttp://example.com/welcome`sera alors l’URL de vanité de h `ttp://example.com/content/v1.0/startpage`
+   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
-   >L’URL Vanity :
+   >L’URL de redirection :
    >
-   >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page
+   >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page.
    >* ne prend pas en charge les modèles d’expression régulière.
 
 
 * **Rediriger l’URL Vanity**
 
-   Indique si vous souhaitez que la page utilise l’URL Vanity.
+   Indique si vous souhaitez que la page utilise l’URL de redirection.
 
 ### Avancé {#advanced}
 
@@ -114,11 +118,11 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    >[!NOTE]
    >
-   > L’alias définit la `sling:alias` propriété pour définir un nom d’alias pour la ressource (cela n’affecte que la ressource, et non le chemin).
+   > L’alias définit la propriété `sling:alias` afin de définir un nom d’alias pour la ressource (cela n’affecte que la ressource, et non le chemin).
    >
-   >Par exemple : si vous définissez un alias de `latin-lang` pour le noeud `/content/we-retail/spanish` de noeud, cette page est accessible via `/content/we-retail/latin-language`
+   >Par exemple, si vous définissez l’alias `latin-lang` pour le nœud `/content/we-retail/spanish`, cette page est accessible via `/content/we-retail/latin-language`.
    >
-   >Pour plus d&#39;informations, reportez-vous à la section Noms de page [localisés sous Optimisation du référencement et bonnes pratiques de gestion des URL](/help/managing/seo-and-url-management.md#localized-page-names)
+   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **Modèles autorisés**
 
@@ -145,7 +149,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    Indiquez une configuration d’exportation.
 
-### Miniature {#thumbnail}
+### Miniature  {#thumbnail}
 
 1. **Miniature de page**
 
@@ -167,19 +171,20 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    * **Activer le partage utilisateur pour Facebook**
    * **Activer le partage utilisateur pour Pinterest**
-   * **Variation de fragment d’expérience préférée** Définit la variation de fragment d’expérience utilisée pour générer les métadonnées de la page.
+   * **Variation de fragment d’expérience préférée**
+Définit la variation de fragment d’expérience utilisée pour générer les métadonnées de la page.
 
-### Services cloud {#cloud-services}
+### Cloud Services {#cloud-services}
 
-* **Services cloud**
+* **Cloud Services**
 
    Définissez les propriétés des [services cloud](/help/sites-developing/extending-cloud-config.md).
 
-### Personnalisation  {#personalization}
+### Personnalisation   {#personalization}
 
 * **Personnalisation**
 
-   Sélectionnez [une marque pour spécifier la portée du ciblage](/help/sites-authoring/personalization.md).
+   Sélectionnez une [marque pour spécifier la portée du ciblage](/help/sites-authoring/personalization.md).
 
 ### Autorisations {#permissions}
 
@@ -190,6 +195,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    * [Ajouter des autorisations](/help/sites-administering/user-group-ac-admin.md)
    * [Modifier le groupe d’utilisateurs fermé](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
    * Afficher les [autorisations effectives](/help/sites-administering/user-group-ac-admin.md)
+
    >[!CAUTION]
    >
    >The **Permissions** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. Si les autorisations de page sont configurées à l’aide de configurations des groupes d’utilisateurs fermés obsolètes, basées sur la présence de la propriété `cq:cugEnabled`, un message d’avertissement s’affiche et les autorisations des groupes d’utilisateurs fermés ne sont pas modifiables, non plus que l’option Exigence d’authentification de l’onglet [Avancé](/help/sites-authoring/editing-page-properties.md#advanced).
@@ -205,17 +211,17 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Blueprint**
 
-   Définissez les propriétés d’une page Blueprint dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à Live Copy.
+   Définissez les propriétés d’une page Blueprint dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
 
-### Live Copy {#live-copy}
+### Live Copy  {#live-copy}
 
-* **Live Copy**
+* **Live Copy**
 
-   Définissez les propriétés d’une page Live Copy dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à partir du plan directeur.
+   Définissez les propriétés d’une page Live Copy dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur.
 
-### Structure du site {#site-structure}
+### Structure du site  {#site-structure}
 
-* Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la page **en mode hors ligne**, entre autres. 
+* Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la page **en mode hors ligne**, entre autres.
 
 ## Modification des propriétés de page {#editing-page-properties-2}
 
@@ -224,14 +230,14 @@ Vous pouvez définir des propriétés de page :
 * Dans la console **Sites** :
 
    * [En créant une page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (sous-ensemble des propriétés)
-   * Clicking or tapping **Properties**
+   * En cliquant ou en appuyant sur **Propriétés**
 
       * Pour une seule page
       * Pour plusieurs pages (un seul sous-ensemble des propriétés est disponible pour la modification en masse)
 
 * Dans l’éditeur de page :
 
-   * À l’aide de l’option **Informations sur la page** (puis **Ouvrir les propriétés**)
+   * En sélectionnant **Informations sur la page** (puis **Ouvrir les propriétés**)
 
 ### À partir de la console Sites – Une seule page {#from-the-sites-console-single-page}
 
@@ -239,13 +245,14 @@ Cliquez ou appuyez sur **Propriétés** pour définir les propriétés de la pag
 
 1. Dans la console **Sites**, accédez à l’emplacement de la page pour laquelle afficher et modifier les propriétés.
 
-1. Select the **Properties** option for the required page using either:
+1. Sélectionnez l’option **Propriétés** pour la page requise, en utilisant :
 
-   * [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
+   * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+
    Les propriétés de la page affichées dans les onglets appropriés.
 
-1. Affichez ou modifiez les propriétés selon les besoins. 
+1. Affichez ou modifiez les propriétés selon les besoins.
 
 1. Puis cliquez sur **Enregistrer** pour enregistrer vos modifications et sur **Fermer** pour revenir à la console.
 
@@ -253,7 +260,7 @@ Cliquez ou appuyez sur **Propriétés** pour définir les propriétés de la pag
 
 Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour définir ses propriétés :
 
-1. Ouvrez la page pour laquelle vous souhaitez modifier les propriétés.
+1. Ouvrez la page dont vous souhaitez modifier les propriétés.
 
 1. Sélectionnez l’icône **Informations sur la page** pour ouvrir le menu de sélection :
 
@@ -287,16 +294,16 @@ After selecting the pages and then clicking or tapping the **Properties** option
 
 ![screen_shot_2018-03-22at100114](assets/screen_shot_2018-03-22at100114.png)
 
-Vous ne pouvez modifier en masse que des pages qui
+Vous ne pouvez modifier en masse que des pages qui :
 
-* partagent le même type de ressource
-* ne font pas partie d’une Live Copy.
+* Partagent le même type de ressource.
+* Ne font pas partie d’une Live Copy.
 
    * Si l’une de ces pages fait partie d’une Live Copy, un message s’affiche lorsque les propriétés sont ouvertes.
 
-Une fois le mode de modification en masse activé, vous pouvez effectuer les opérations suivantes :
+Une fois le mode de modification en bloc activé, vous pouvez effectuer les opérations suivantes :
 
-* **Afficher**
+* **Mode**
 
    Lors de l’affichage des propriétés de plusieurs pages, vous pouvez consulter :
 
@@ -314,9 +321,10 @@ Une fois le mode de modification en masse activé, vous pouvez effectuer les op
 
       * Seules les propriétés qui partagent une valeur commune sont visibles en mode Affichage.
       * Si le champ comporte plusieurs valeurs (Balises, par exemple), les valeurs ne sont visibles que lorsque *toutes* sont communes. Si seulement quelques-unes sont communes, elles sont visibles lors de la phase de modification.
+
    En l’absence de propriétés avec une valeur commune, un message s’affiche.
 
-* **Edition**
+* **Modifier**
 
    En cas de modification des propriétés de plusieurs pages :
 
@@ -324,7 +332,7 @@ Une fois le mode de modification en masse activé, vous pouvez effectuer les op
 
       * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous appuyez sur **Terminé**.
       * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une valeur ou supprimer une valeur commune.
-   * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. Vous devez être prudent lors de la modification de ces champs afin d’éviter toute perte de données.
+   * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`. Vous devez être prudent lors de la modification de ces champs afin d’éviter toute perte de données.
 
 
 >[!NOTE]
