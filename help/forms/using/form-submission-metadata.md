@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: 93961c9c-b46c-4233-b070-7343245255d1
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 88%
 
 ---
 
@@ -41,7 +44,7 @@ Pour ajouter un élément aux métadonnées, procédez comme suit :
    `(agebox.value >= 21) ? true : false`
 
    ![Script de métadonnées](assets/add-element-metadata.png)
-   **** Figure : Script *saisi dans l’onglet Métadonnées*
+   **Figure :** *Script saisi dans l’onglet Métadonnées*
 
 1. Cliquez sur **OK**.
 
