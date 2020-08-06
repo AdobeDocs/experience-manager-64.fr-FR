@@ -1035,7 +1035,7 @@ public class ModifySignatureField {
 Vous pouvez définir un document PDF en le certifiant avec un type de signature particulier appelé signature certifiée. Une signature certifiée se différencie d’une signature numérique de plusieurs manières :
 
 * Elle doit être la première signature appliquée au document PDF. En d’autres termes, lorsque la signature certifiée est appliquée, les autres champs de signature du document doivent être non signés. Une seule signature certifiée est autorisée dans un document PDF. Pour signer et certifier un document PDF, certifiez-le avant de le signer. Après avoir certifié un document PDF, vous pouvez signer numériquement les champs de signature supplémentaires.
-* L’auteur ou l’expéditeur du document peut indiquer que le document peut être modifié de certaines manières sans invalider la signature certifiée. Par exemple, le document peut autoriser le remplissage de formulaires ou de commentaires. Si l’auteur spécifie qu’une modification spécifique n’est pas autorisée, Acrobat limite la modification du document aux utilisateurs. Si ces modifications sont effectuées, la signature certifiée est non valide. En outre, Acrobat génère un avertissement lorsqu’un utilisateur ouvre le document. (Avec des signatures non certifiées, les modifications ne sont pas empêchées et les opérations normales de modification n’invalident pas la signature d’origine.)
+* L’auteur ou l’expéditeur du document peut indiquer que le document peut être modifié de certaines manières sans invalider la signature certifiée. Par exemple, le document peut autoriser le remplissage de formulaires ou de commentaires. Si l’auteur spécifie qu’une modification spécifique n’est pas autorisée, Acrobat limite la modification du document aux utilisateurs. Si ces modifications sont effectuées, la signature certifiée est non valide. En outre, Acrobat émet un avertissement lorsqu’un utilisateur ouvre le document. (Avec des signatures non certifiées, les modifications ne sont pas empêchées et les opérations normales de modification n’invalident pas la signature d’origine.)
 * Au moment de la signature, les différents types de contenus du document susceptibles de rendre le document ambigu ou trompeur sont analysés. Par exemple, une annotation peut assombrir du texte sur une page qui est essentiel pour comprendre ce qui est certifié. Une explication (attestation légale) peut être fournie pour un type de contenu.
 
 **Syntaxe**:
@@ -1362,7 +1362,7 @@ En outre, les listes de révocation des certificats (CRL) fournissent des inform
 
 >[!NOTE]
 >
->Avant de chiffrer un document PDF avec un certificat, vous devez vous assurer d’ajouter le certificat au Trust Store d’AEM.
+>Avant de chiffrer un document PDF avec un certificat, vous devez vous assurer d’ajouter le certificat à AEM Trust Store.
 
 **Application de droits d’utilisation aux documents PDF**
 
@@ -1382,7 +1382,7 @@ La clé publique est stockée dans le certificat de l’utilisateur, celle-ci do
 
 >[!NOTE]
 >
->Avant de signer numériquement un document PDF, vous devez vous assurer d’ajouter les informations d’identification dans le magasin de clés AEM. Les informations d’identification sont la clé privée utilisée pour la signature.
+>Avant de signer numériquement un document PDF, vous devez vous assurer d’ajouter les informations d’identification dans AEM Keystore. Les informations d’identification sont la clé privée utilisée pour la signature.
 
 >[!NOTE]
 >
@@ -1410,7 +1410,7 @@ Par exemple, une annotation peut assombrir du texte sur une page qui est essenti
 
 >[!NOTE]
 >
->Avant de signer numériquement un document PDF, vous devez vous assurer d’ajouter les informations d’identification dans le magasin de clés AEM. Les informations d’identification sont la clé privée utilisée pour la signature.
+>Avant de signer numériquement un document PDF, vous devez vous assurer d’ajouter les informations d’identification dans AEM Keystore. Les informations d’identification sont la clé privée utilisée pour la signature.
 
 
 **Syntaxe**:
