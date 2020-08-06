@@ -11,6 +11,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +28,7 @@ La persistance est la méthode de stockage du contenu sur les stockages physique
 >
 >LiveCycle ES4 SP1 utilise le format de persistance TarPM pour stocker du contenu.
 
-Le tableau suivant répertorie tous les types de persistance pris en charge ainsi que divers paramètres pour vous aider à choisir un type de persistance pour votre environnement :
+Le tableau suivant liste tous les types de persistance pris en charge avec divers paramètres afin de vous aider à choisir un type de persistance pour votre environnement :
 
 <table> 
  <tbody>
