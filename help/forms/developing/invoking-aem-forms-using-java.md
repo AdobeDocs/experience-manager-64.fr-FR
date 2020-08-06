@@ -80,7 +80,7 @@ Le tableau suivant énumère les fichiers JAR qui sont nécessaires pour appeler
 <table>
  <thead>
   <tr>
-   <th><p>Fichier</p></th>
+   <th><p>File</p></th>
    <th><p>Description</p></th>
    <th><p>Emplacement</p></th>
   </tr>
@@ -231,7 +231,7 @@ Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de connex
 <table>
  <thead>
   <tr>
-   <th><p>Fichier</p> </th>
+   <th><p>File</p> </th>
    <th><p>Description</p> </th>
    <th><p>Emplacement</p> </th>
   </tr>
@@ -447,6 +447,7 @@ Pour appeler un service AEM Forms, définissez les propriétés de connexion su
    * If you set this connection property to `WebLogic`, the `java.naming.factory.initial` value is set to `weblogic.jndi.WLInitialContextFactory`.
    * Likewise, if you set this connection property to `JBoss`, the `java.naming.factory.initial` value is set to `org.jnp.interfaces.NamingContextFactory`.
    * Vous pouvez définir la propriété `java.naming.factory.initial` sur une valeur répondant à vos exigences si vous ne souhaitez pas utiliser les valeurs par défaut.
+
    >[!NOTE]
    >
    >Instead of using a string to set the `DSC_SERVER_TYPE` connection property, you can use a static member of the `ServiceClientFactoryProperties` class. The following values can be used: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, or `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
@@ -466,6 +467,7 @@ Pour définir les propriétés de connexion, effectuez les tâches suivantes :
 
    * The `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` enumeration value
    * Une valeur string qui spécifie l’URL du serveur d’applications J2EE hébergeant AEM Forms
+
    >[!NOTE]
    >
    >If you are using the SOAP connection mode, specify the `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` enumeration value instead of the `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` enumeration value.
@@ -474,6 +476,7 @@ Pour définir les propriétés de connexion, effectuez les tâches suivantes :
 
    * The `ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL` enumeration value
    * The `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` enumeration value
+
    >[!NOTE]
    >
    >If you are using the SOAP connection mode, specify the `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`enumeration value instead of the `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` enumeration value.
@@ -991,6 +994,7 @@ Vous pouvez appeler le service Repository en utilisant une bibliothèque client 
    * A unique ID value by specifying `new Id()`.
    * A unique UUID value by specifying `new Lid()`.
    * Nom de la ressource. Vous pouvez spécifier le nom du fichier XDP.
+
    Convertissez la valeur de retour en `Resource`.
 
 1. Create a `ResourceContent` object by invoking the `RepositoryInfomodelFactoryBean` object’s `newImage` method and casting the return value to `ResourceContent`. Cet objet représente le contenu ajouté au référentiel.
