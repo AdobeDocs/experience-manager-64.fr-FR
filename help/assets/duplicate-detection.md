@@ -4,6 +4,9 @@ description: Découvrez comment activer la détection des ressources en double d
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26e860cd513d70d748f872e2ce445a042d075bc6
+workflow-type: tm+mt
+source-wordcount: '154'
+ht-degree: 61%
 
 ---
 
@@ -22,5 +25,5 @@ La fonctionnalité de détection des doublons est maintenant activée dans AEM 
 
 >[!MORELIKETHIS]
 >
->* [Dupliquer des ressources dans le référentiel existant (didacticiel d’un membre de la communauté)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
+>* [Duplicata de ressources dans le référentiel existant (un didacticiel d’un membre de la communauté)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
 
