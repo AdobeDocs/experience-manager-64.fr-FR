@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 560b62b7-6bff-4cc4-baf9-c6573daa61ef
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2475'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +24,7 @@ Lorsque vous procédez à l’intégration à Adobe Campaign, des composants son
 
 ## Composant Newsletter Adobe Campaign {#adobe-campaign-newsletter-components}
 
-Tous les composants d’Adobe Campaign appliquent les méthodes recommandées décrites dans les [bonnes pratiques pour les modèles de courrier électronique](/help/sites-administering/best-practices-for-email-templates.md) et dépendent du langage de balisage [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html) d’Adobe.
+Tous les composants d’Adobe Campaign appliquent les méthodes recommandées décrites dans les [bonnes pratiques pour les modèles de courrier électronique](/help/sites-administering/best-practices-for-email-templates.md) et dépendent du langage de balisage [HTL](https://helpx.adobe.com/fr/experience-manager/htl/using/overview.html) d’Adobe.
 
 Lorsque vous ouvrez une newsletter/un courrier électronique configuré de manière à être intégré à Adobe Campaign, les composants ci-dessous doivent s’afficher dans la section **Newsletter Adobe Campaign** :
 
@@ -130,7 +133,8 @@ Vous pouvez configurer les éléments ci-dessous sur les onglets **Affichage**, 
 
 * **Info-bulle du lien** Ajoute des informations supplémentaires sur l’utilisation du lien.
 
-* **Type de lien** Dans la liste déroulante, sélectionnez **URL personnalisée** ou **Document adaptatif**. Ce champ est obligatoire. Si vous sélectionnez l’URL personnalisée, vous pouvez indiquer l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez préciser le chemin d’accès au document.
+* **Type de lien** Dans la liste déroulante, sélectionnez entre un 
+**URL** personnalisée et Document **** adaptatif. Ce champ est obligatoire. Si vous sélectionnez l’URL personnalisée, vous pouvez indiquer l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez préciser le chemin d’accès au document.
 
 * **Paramètre d’URL supplémentaire** Ajoutez des paramètres d’URL supplémentaires. Cliquez sur Ajouter un élément pour ajouter plusieurs éléments.
 
@@ -167,7 +171,7 @@ Permet de saisir du texte. Utilisez la barre d’outils pour modifier la mise en
 * **Image**
 Faites glisser une image à partir de l’Outil de recherche de contenu ou cliquez pour accéder à une image. Vous pouvez la recadrer ou la faire pivoter le cas échéant.
 
-* **Propriétés** de l’image (propriétés **d’image** avancées)
+* **Propriétés** de l’image (propriétés **de l’image** avancée)
 
    Sous cet onglet, vous pouvez spécifier les paramètres suivants :
 
@@ -245,7 +249,7 @@ Le tableau ci-dessous décrit les composants disponibles pour afficher et modifi
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>Component</strong></p> </td> 
+   <td><p><strong>Composant</strong></p> </td> 
    <td><p><strong>Type de données d’un champ Adobe Campaign </strong></p> </td> 
    <td><p><strong>Exemple de champ</strong></p> </td> 
   </tr> 
@@ -287,7 +291,7 @@ Dans la plupart des composants, vous pouvez configurer les éléments suivants 
 
 * **Titre**
 
-   Si vous souhaitez utiliser un nom autre que le nom de l’élément, saisissez-le ici.
+   Si vous souhaitez utiliser un nom autre que le nom de l’élément, entrez-le ici.
 
 * **Masquer le titre**
 
@@ -299,7 +303,7 @@ Dans la plupart des composants, vous pouvez configurer les éléments suivants 
 
 * **N’afficher que la valeur**
 
-   Affiche uniquement la valeur, s’il existe une
+   Affiche uniquement la valeur, s’il y en a une
 
 #### Adobe Campaign {#adobe-campaign}
 
@@ -311,17 +315,17 @@ Vous pouvez configurer les éléments suivants :
 
 * **Clé de réconciliation**
 
-   Cochez cette case si ce champ fait partie de la clé de rapprochement.
+   Cochez cette case si ce champ fait partie de la clé de réconciliation.
 
 #### Contraintes {#constraints}
 
 * **Requis**
 
-   Cochez cette case pour rendre ce composant obligatoire ; autrement dit, les utilisateurs doivent saisir une valeur.
+   Activez cette case à cocher pour que ce composant soit requis ; autrement dit, les utilisateurs doivent saisir une valeur.
 
 * **Message obligatoire**
 
-   Vous pouvez éventuellement ajouter un message indiquant que le champ est obligatoire.
+   Vous pouvez éventuellement ajouter un message indiquant que le champ est requis.
 
 #### Style {#styling}
 
@@ -351,7 +355,7 @@ Outre les [paramètres communs à la plupart des composants Adobe Campaign](#set
 
 * **Message de contrainte**
 
-   En outre, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent comment formater correctement leurs réponses.
+   En outre, vous pouvez ajouter un message de contrainte pour que les utilisateurs sachent comment formater correctement leurs réponses.
 
 * **Style - Largeur**
 
@@ -371,11 +375,11 @@ Vous pouvez configurer les éléments ci-dessous dans le composant Clé primaire
 
 * **Titre et texte - Nom de l’élément**
 
-   Valeur par défaut de encryptedPK. Il suffit de modifier le nom d’élément lorsqu’il crée un conflit avec le nom d’un autre élément sur le formulaire. Deux champs de formulaire ne peuvent pas porter le même nom d’élément.
+   Par défaut, la valeur de encryptedPK est définie. Il suffit de modifier le nom d’élément lorsqu’il crée un conflit avec le nom d’un autre élément sur le formulaire. Deux champs de formulaire ne peuvent pas porter le même nom d’élément.
 
 * **Adobe Campaign - Paramètre d’URL**
 
-   Ajoutez le paramètre d’URL pour l’EPK. Par exemple, vous pouvez utiliser la valeur **epk**.
+   Ajoutez le paramètre d&#39;URL pour le EPK. Par exemple, vous pouvez utiliser la valeur **epk**.
 
 L’exemple ci-dessous présente le composant Clé primaire chiffrée (Campaign) affiché.
 
@@ -397,7 +401,7 @@ Vous pouvez configurer les éléments ci-dessous dans le composant Clé de réco
 
 * **Titre et texte - Nom de l’élément**
 
-   Valeur par défaut de reconcilKey. Il suffit de modifier le nom d’élément lorsqu’il crée un conflit avec le nom d’un autre élément sur le formulaire. Deux champs de formulaire ne peuvent pas porter le même nom d’élément.
+   La valeur par défaut est reconcilKey. Il suffit de modifier le nom d’élément lorsqu’il crée un conflit avec le nom d’un autre élément sur le formulaire. Deux champs de formulaire ne peuvent pas porter le même nom d’élément.
 * **Adobe Campaign – Mappage** Associez-la à un champ de personnalisation Adobe Campaign.
 
 L’exemple ci-dessous présente le composant Clé de réconciliation masquée (Campaign) affiché.
@@ -416,8 +420,9 @@ Outre les [paramètres communs à la plupart des composants Adobe Campaign](#set
 
 * **Message de contrainte**
 
-   En outre, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent comment formater correctement leurs réponses.
-* **Style - Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur les icônes **+** et **-** ou en saisissant un nombre.
+   En outre, vous pouvez ajouter un message de contrainte pour que les utilisateurs sachent comment formater correctement leurs réponses.
+* **Style - Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur le bouton 
+**+** et **-** icônes ou saisie d’un nombre.
 
 L’exemple ci-dessous présente le composant Champ numérique (Campaign), dont la largeur est configurée, affiché.
 
@@ -461,7 +466,7 @@ Outre les [paramètres communs à la plupart des composants Adobe Campaign](#set
 
 * **Message de contrainte**
 
-   En outre, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent comment formater correctement leurs réponses.
+   En outre, vous pouvez ajouter un message de contrainte pour que les utilisateurs sachent comment formater correctement leurs réponses.
 
 * **Style - Largeur**
 
