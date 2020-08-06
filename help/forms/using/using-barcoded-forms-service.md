@@ -123,7 +123,7 @@ Lorsque vous utilisez les API BCF, tenez compte des restrictions suivantes :
 
 ### Autres restrictions {#other-limitations}
 
-Tenez également compte des restrictions suivantes lors de l’utilisation du service Barcoded Forms :
+Tenez également compte des restrictions suivantes lors de l’utilisation du service Forms Barcoded :
 
 * Le service prend entièrement en charge AcroForms et les formulaires statiques contenant des codes à barres 2D qui sont enregistrés avec Adobe Reader ou Acrobat. Toutefois, pour les codes à barres 1D, aplatissez le formulaire ou fournissez-le sous forme de document PDF ou TIFF numérisé.
 * Les formulaires XFA dynamiques ne sont pas entièrement pris en charge. Pour décoder correctement les codes à barres 1D et 2D dans un formulaire dynamique, aplatissez le formulaire ou fournissez-le sous forme de document PDF ou TIFF numérisé.
