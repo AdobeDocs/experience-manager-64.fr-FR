@@ -4,6 +4,9 @@ description: Personnalisez la page d’accueil d’AEM Assets afin d’enrichir 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '574'
+ht-degree: 56%
 
 ---
 
@@ -28,7 +31,7 @@ La page d’accueil d’Assets est désactivée par défaut. Pour l’activer, p
    >
    >Activer les options Ressource affichée, Projets affichés et Collections affichées augmente significativement le nombre d’événements enregistrés.
 
-1. Ouvrez le service d’indicateur **[!UICONTROL de fonction de page d’accueil des ressources]** DAM à partir de Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Ouvrez le service **[!UICONTROL DAM Asset Page d&#39;accueil Feature Flag]** à partir de Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
 1. Select the **[!UICONTROL isEnabled.name]** option to enable the Assets Home page feature. Enregistrez les modifications.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
@@ -37,7 +40,7 @@ La page d’accueil d’Assets est désactivée par défaut. Pour l’activer, p
 
    ![user_préférences](assets/user_preferences.png)
 
-Après avoir activé la page d’accueil Ressources, accédez à l’interface utilisateur Ressources à partir de la page de navigation.
+Après avoir activé la Page d&#39;accueil Ressources, accédez à l’interface utilisateur Ressources à partir de la page Navigation.
 
 ![home_page](assets/home_page.png)
 
@@ -62,11 +65,11 @@ Cette section s’affiche sous la section Bienvenue et contient des widgets prê
 * Récent
 * Découvrez
 
-**Activité**: Dans cette section, le widget **Mon activité** affiche les activités récentes exécutées par l’utilisateur connecté avec des ressources (y compris des ressources sans rendus), par exemple les téléchargements, les téléchargements, la création de ressources, les modifications, les commentaires, les annotations et les partages.
+**Activité**: Sous cette section, le widget **Mon Activité** affiche les activités récentes effectuées par l’utilisateur connecté avec des ressources (y compris des ressources sans rendus), par exemple les téléchargements, les téléchargements, la création de ressources, les modifications, les commentaires, les annotations et les partages.
 
 **Récent**: Le widget **Récemment affiché** sous cette section affiche les entités récemment consultées par l’utilisateur connecté, y compris les dossiers, les collections et les projets.
 
-**Discover**: Le **nouveau** widget sous cette section affiche les ressources et rendus récemment transférés vers l’instance AEM Assets.
+**Discover**: Le **nouveau** widget sous cette section affiche les ressources et les rendus récemment transférés vers l’instance AEM Assets.
 
 To enable purging of user activity data, enable the **DAM Event Purge Service** from Configuration Manager. Une fois que vous avez activé ce service, les activités de l’utilisateur connecté dépassant le nombre spécifié sont supprimées par le système.
 
@@ -74,7 +77,7 @@ L’écran de bienvenue fournit des outils d’aide à la navigation, comme des 
 
 >[!NOTE]
 >
->L’activation des services Day CQ DAM Event Recorder (enregistreur d’événements DAM Day CQ) et DAM Event Purge (purge d’événements DAM) augmente les opérations d’écriture sur le JCR et l’indexation de recherche, ce qui augmente considérablement la charge sur le serveur AEM. La charge supplémentaire sur le serveur AEM peut affecter les performances.
+>L’activation de l’enregistreur de Événement DAM Day CQ et des services de purge de Événement DAM augmente les opérations d’écriture sur le JCR et l’indexation de la recherche, ce qui augmente considérablement la charge sur le serveur AEM. La charge supplémentaire sur le serveur AEM peut affecter les performances.
 
 >[!CAUTION]
 >
