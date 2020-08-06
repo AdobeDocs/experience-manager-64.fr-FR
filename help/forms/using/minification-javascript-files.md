@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 85%
 
 ---
 
@@ -39,7 +42,7 @@ Pour générer un code minimisé pour les modifications sémantiques, effectuez 
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
-1. Mettre à jour `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` en cas de modification/ajout d’alias dans `main.js`.
+1. Mettre à jour `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` en cas de modification/ajout d&#39;alias dans `main.js`.
 
    Par exemple, pour ajouter un nouveau modèle Sharequeue, par exemple mySharequeue, modifiez :
 
