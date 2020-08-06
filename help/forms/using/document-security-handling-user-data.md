@@ -18,7 +18,7 @@ ht-degree: 65%
 
 # Document Security | Gestion des données utilisateur {#document-security-handling-user-data}
 
-La sécurité du document AEM Forms vous permet de créer, de stocker et d’appliquer des paramètres de sécurité prédéfinis à vos documents. Cela garantit que seuls les utilisateurs autorisés peuvent utiliser les documents. Vous pouvez protéger les documents à l’aide de stratégies. Une stratégie est un groupe d’informations comprenant des paramètres de sécurité et une liste d’utilisateurs autorisés. Vous pouvez appliquer une stratégie à un ou plusieurs documents et autoriser des utilisateurs ajoutés dans le composant User Management d’AEM Forms JEE.
+La sécurité des documents AEM Forms vous permet de créer, stocker et appliquer des paramètres de sécurité prédéfinis à vos documents. Cela garantit que seuls les utilisateurs autorisés peuvent utiliser les documents. Vous pouvez protéger les documents à l’aide de stratégies. Une stratégie est un groupe d’informations comprenant des paramètres de sécurité et une liste d’utilisateurs autorisés. Vous pouvez appliquer une stratégie à un ou plusieurs documents et autoriser des utilisateurs ajoutés dans le composant User Management d’AEM Forms JEE.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
@@ -159,6 +159,7 @@ Procédez comme suit pour supprimer les données de Document Security pour un ID
    1. Open the XML blob of each row in the `EdcPolicyXMLEntity` or `EdcPolicyArchiveEntity` table and extract the XML file. Le fichier XML ressemble à l’un des fichiers ci-dessous.
    1. Modifiez le fichier XML pour supprimer l’objet Blog de l’ID principal.
    1. Répétez les étapes 1 et 2 pour l’autre fichier.
+
    >[!NOTE]
    >
    >You must remove the complete blob within the `Principal` tag for a principal ID or the policy XML may get corrupt or unusable.
@@ -197,6 +198,7 @@ Procédez comme suit pour supprimer les données de Document Security pour un ID
    1. As an administrator, log into the Forms JEE administration console at https://[*server*]:[*port*]/adminui.
    1. Navigate to **[!UICONTROL Services > Document Security > Policy Sets]**.
    1. Ouvrez un jeu de stratégies et supprimez l’utilisateur de la stratégie.
+
    **Utilisation d’une page Web Document Security**
 
    Les utilisateurs de Document Security détenant les autorisations nécessaires pour créer des stratégies personnelles peuvent supprimer des données utilisateur de leurs stratégies. Pour ce faire :
@@ -204,6 +206,7 @@ Procédez comme suit pour supprimer les données de Document Security pour un ID
    1. Users who have personal policies log into their document security web page at https://[*server*]:[*port*]/edc.
    1. Navigate to **[!UICONTROL Services > Document Security > My Policies]**.
    1. Ouvrez une stratégie et supprimez l’utilisateur de la stratégie.
+
    >[!NOTE]
    >
    >Administrators can search, access, and delete user data from personal policies of other users in **[!UICONTROL Services > Document Security > My Policies]** using administration console.
