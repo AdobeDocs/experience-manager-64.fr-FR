@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 237b8cc6-158e-4c51-970d-4c9cc74f6496
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 80%
 
 ---
 
@@ -28,6 +31,7 @@ La procédure ci-dessous utilise l’interface utilisateur classique pour créer
       * Le code langue pris en charge est un code à deux lettres en minuscules, défini par la norme ISO-639-1.
       * Le code pays pris en charge est un code à deux lettres en minuscules ou en majuscules, défini par la norme ISO-3166.
    1. Sélectionnez le modèle et cliquez sur Créer.
+
    ![newpagefr](assets/newpagefr.png)
 
 1. Dans la console Sites web, dans l’arborescence des sites web, sélectionnez la page racine du site.
@@ -49,7 +53,7 @@ La procédure ci-dessous utilise l’interface utilisateur classique pour créer
    |---|---|
    | auto | Utilise le comportement des pages parents |
    | ignore | Ne crée pas de copie de cette page et de ses enfants |
-   | `<language>+` (par exemple, Français+) | Copie la page et tous ses enfants de cette langue |
+   | `<language>+` (p. ex. Français+) | Copie la page et tous ses enfants de cette langue |
    | `<language>` (français, par exemple) | Copie uniquement la page de cette langue |
 
 1. Cliquez sur OK pour fermer la boîte de dialogue.
