@@ -11,11 +11,14 @@ topic-tags: best-practices
 discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 100%
 
 ---
 
 
-# Meilleures pratiques en matière de développement{#development-practices}
+# Pratiques de développement{#development-practices}
 
 ## Travailler selon une « définition de fini » (DoD){#work-according-to-a-definition-of-done}
 
