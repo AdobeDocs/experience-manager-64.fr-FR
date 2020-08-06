@@ -103,7 +103,7 @@ Voici un exemple d’utilisation d’API :
  proxyJobService.removeJob(jobId);
 ```
 
-### Configuration de Cloud Services {#cloud-service-configurations}
+### Configurations du service cloud {#cloud-service-configurations}
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ Voici un exemple d’utilisation d’API :
 
 The [IDS proxy worker](indesign.md) is an example of a AEM Assets proxy worker that is already provided out-of-the-box to outsource the processing of Indesign assets.
 
-Vous pouvez également développer et configurer votre propre agent proxy AEM Assets pour créer un agent spécialisé qui répartira et externalisera vos tâches de traitement AEM Assets.
+Vous pouvez également développer et configurer votre propre collaborateur proxy AEM Assets pour créer un collaborateur spécialisé qui répartira et externalisera vos tâches de traitement AEM Assets.
 
 Pour configurer votre propre worker de proxy personnalisé, vous devez effectuer les opérations suivantes :
 
@@ -176,9 +176,9 @@ Le schéma et les étapes ci-dessous détaillent la procédure à suivre :
 
 >[!NOTE]
 >
->La structure proxy d’AEM Assets ne fournit pas de structure prête à l’emploi est le mécanisme de pool.
+>Ce que le cadre proxy AEM Assets ne fournit pas prêt à l&#39;emploi est le mécanisme de pool.
 >
->L’intégration InDesign autorise l’accès à un pool de serveurs InDesign (IDSPool). Ce pool est spécifique à l’intégration d’Indesign et ne fait pas partie de la structure proxy d’AEM Assets.
+>L’intégration InDesign autorise l’accès à un pool de serveurs InDesign (IDSPool). Ce pool est spécifique à l’intégration Indesign et ne fait pas partie de la structure proxy AEM Assets.
 
 >[!NOTE]
 >
