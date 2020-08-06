@@ -27,8 +27,8 @@ Le service de registre des points de terminaison permet de gérer les points de 
 * EJB
 * méthode d’objet
 * Watched Folder
-* Courrier électronique
-* (Obsolète pour AEM Forms) Remoting
+* Email
+* (Obsolète pour les formulaires AEM) Remoting
 * Gestionnaire de Tâches
 
    >[!NOTE]
@@ -55,7 +55,7 @@ Le service de registre des points de terminaison permet de gérer les points de 
 
 ## Ajouter des points de terminaison EJB {#adding-ejb-endpoints}
 
-Vous pouvez ajouter par programmation un point de terminaison EJB à un service en utilisant l’API Java d’AEM Forms. En ajoutant un point de terminaison EJB à un service, vous activez une application cliente pour appeler le service en utilisant le mode EJB. En d’autres termes, lorsque vous définissez les propriétés de connexion requises pour appeler AEM Forms, vous pouvez sélectionner le mode EJB. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+Vous pouvez ajouter par programmation un point de terminaison EJB à un service en utilisant l’API Java AEM Forms. En ajoutant un point de terminaison EJB à un service, vous activez une application cliente pour appeler le service en utilisant le mode EJB. En d’autres termes, lorsque vous définissez les propriétés de connexion requises pour appeler AEM Forms, vous pouvez sélectionner le mode EJB. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ Ajoutez un point de terminaison EJB à l’aide de l’API Java :
 
 ## Ajouter des points de terminaison SOAP {#adding-soap-endpoints}
 
-Vous pouvez ajouter par programmation un point de terminaison SOAP à un service en utilisant l’API Java d’AEM Forms. En ajoutant un point de terminaison SOAP, vous activez une application cliente pour appeler le service en utilisant le mode SOAP. En d’autres termes, lorsque vous définissez les propriétés de connexion requises pour appeler AEM Forms, vous pouvez sélectionner le mode SOAP.
+Vous pouvez ajouter par programmation un point de terminaison SOAP à un service à l’aide de l’API Java AEM Forms. En ajoutant un point de terminaison SOAP, vous activez une application cliente pour appeler le service en utilisant le mode SOAP. En d’autres termes, lorsque vous définissez les propriétés de connexion requises pour appeler AEM Forms, vous pouvez sélectionner le mode SOAP.
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss Application Server)
 * jbossall-client.jar (requis si AEM Forms est déployé sur JBoss Application Server)
 
-Ces fichiers JAR sont nécessaires pour créer un point de terminaison SOAP. Cependant, vous avez besoin de fichiers JAR supplémentaires si vous utilisez le point de terminaison SOAP pour appeler le service. Pour plus d’informations sur les fichiers JAR d’AEM Forms, voir [Inclusion de fichiers](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de bibliothèque Java d’AEM Forms.
+Ces fichiers JAR sont nécessaires pour créer un point de terminaison SOAP. Cependant, vous avez besoin de fichiers JAR supplémentaires si vous utilisez le point de terminaison SOAP pour appeler le service. Pour plus d’informations sur les fichiers JAR AEM Forms, voir [Inclusion de fichiers](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de bibliothèque Java AEM Forms.
 
 **Création d’un objet Client EndpointRegistry**
 
@@ -263,9 +263,9 @@ Ajoutez un point de terminaison SOAP à un service en utilisant l’API Java :
 
 ## Ajouter des points de fin Watched Folder {#adding-watched-folder-endpoints}
 
-Vous pouvez ajouter par programmation un point de terminaison Watched Folder à un service en utilisant l’API Java d’AEM Forms. En ajoutant un point de terminaison Watched Folder, vous permettez aux utilisateurs de placer un fichier (tel qu’un fichier PDF) dans un dossier. Lorsque le fichier est placé dans le dossier, le service configuré est alors appelé et manipule le fichier. Après que le service a effectué l’opération spécifiée, il enregistre le fichier modifié dans un dossier de sortie spécifié. Un dossier de contrôle est configuré pour être analysé à un intervalle de fréquence fixe ou selon un calendrier cron, par exemple tous les lundis, mercredis et vendredis à midi.
+Vous pouvez ajouter par programmation un point de terminaison Watched Folder à un service en utilisant l’API Java AEM Forms. En ajoutant un point de terminaison Watched Folder, vous permettez aux utilisateurs de placer un fichier (tel qu’un fichier PDF) dans un dossier. Lorsque le fichier est placé dans le dossier, le service configuré est alors appelé et manipule le fichier. Après que le service a effectué l’opération spécifiée, il enregistre le fichier modifié dans un dossier de sortie spécifié. Un dossier de contrôle est configuré pour être analysé à un intervalle de fréquence fixe ou selon un calendrier cron, par exemple tous les lundis, mercredis et vendredis à midi.
 
-Pour ajouter par programmation un point de terminaison Watched Folder à un service, tenez compte du processus de courte durée suivant, *EncryptDocument*. (Voir [Présentation des processus](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)d’AEM Forms).
+Pour ajouter par programmation un point de terminaison Watched Folder à un service, tenez compte du processus de courte durée suivant, *EncryptDocument*. (Voir [Présentation des processus](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)AEM Forms.)
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
@@ -325,12 +325,12 @@ La liste suivante spécifie les valeurs de configuration qui sont définies lors
 * **asynchrone**: Identifie le type d’appel comme étant asynchrone ou synchrone. Les processus provisoires et synchrones peuvent être appelés uniquement de façon synchrone. La valeur par défaut est true. Il est recommandé de procéder de façon asynchrone.
 * **cronExpression**: Utilisé par quartz pour planifier l’interrogation du répertoire d’entrée. Pour plus d’informations sur la configuration de l’expression cron, voir [https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html).
 * **purgeDuration**: Il s’agit d’un attribut obligatoire. Les fichiers et les dossiers du dossier result sont purgés lorsqu’ils sont plus anciens que cette valeur. Cette valeur est mesurée en jours. Cet attribut est utile pour s’assurer que le dossier de résultats n’est pas plein. La valeur -1 jour indique de ne jamais supprimer le dossier result. La valeur par défaut est -1.
-* **repeatInterval**: Intervalle, en secondes, d’analyse du dossier de contrôle pour saisie. Si le ralentissement n’est pas activé, cette valeur doit être supérieure à la durée de traitement d’une tâche moyenne ; sinon, le système risque d&#39;être surchargé. La valeur par défaut est 5.  
+* **repeatInterval**: Intervalle, en secondes, d’analyse du dossier de contrôle pour saisie. Si le ralentissement n’est pas activé, cette valeur doit être supérieure à la durée de traitement d’une tâche moyenne ; sinon, le système risque d&#39;être surchargé. La valeur par défaut est 5.   
 * **repeatCount**: Nombre de fois où un dossier de contrôle analyse le dossier ou le répertoire. La valeur -1 indique une analyse indéfinie. La valeur par défaut est -1.
 * **throttleOn**: Limite le nombre de tâches du dossier de contrôle pouvant être traitées à tout moment. Le nombre maximal de tâches est déterminé par la valeur batchSize.
 * **userName**: Nom d’utilisateur utilisé lors de l’appel d’un service de cible à partir du dossier de contrôle. Cette valeur est obligatoire. La valeur par défaut est SuperAdmin.
 * **domainName**: Domaine de l’utilisateur. Cette valeur est obligatoire. La valeur par défaut est DefaultDom.
-* **batchSize**: Nombre de fichiers ou de dossiers à sélectionner par analyse. Utilisez cette valeur pour éviter une surcharge sur le système ; l’analyse simultanée d’un trop grand nombre de fichiers peut entraîner un blocage. La valeur par défaut est 2.  
+* **batchSize**: Nombre de fichiers ou de dossiers à sélectionner par analyse. Utilisez cette valeur pour éviter une surcharge sur le système ; l’analyse simultanée d’un trop grand nombre de fichiers peut entraîner un blocage. La valeur par défaut est 2.   
 * **waitTime**: Durée, en millisecondes, d’attente avant l’analyse d’un dossier ou d’un fichier après sa création. Par exemple, si le temps d’attente est de 36 000 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce fichier est récupéré après 59 minutes ou plus. Cet attribut est utile pour s’assurer qu’un fichier ou un dossier est entièrement copié dans le dossier input. Par exemple, si vous avez un fichier volumineux à traiter et que le téléchargement du fichier prend dix minutes, définissez le délai d’attente sur 10&amp;ast;60 &amp;ast;1000 millisecondes. Ce paramètre empêche le dossier de contrôle d’analyser le fichier s’il n’a pas attendu dix minutes. La valeur par défaut est 0.
 * **excludeFilePattern**: modèle utilisé par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers présentant ce modèle ne seront pas analysés en vue de leur traitement. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Le contenu du dossier peut être copié dans un dossier dont le nom sera choisi par le dossier de contrôle. Cette étape empêche le dossier de contrôle de sélectionner un dossier à traiter avant que le dossier ne soit complètement copié dans le dossier d’entrée. For example, if the excludeFilePattern value is `data*`, all files and folders that match `data*` are not picked up. This includes files and folders named `data1`, `data2`, and so on. En outre, le modèle peut être complété par des modèles génériques pour spécifier des modèles de fichier. Le dossier de contrôle modifie l’expression régulière afin de prendre en charge les modèles génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les expressions régulières.
 * **includeFilePattern**: modèle utilisé par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. For example, if this value is `*`, all files and folders that match `input*` are picked up. This includes files and folders named `input1`, `input2`, and so on. La valeur par défaut est `*`. Cette valeur indique tous les fichiers et dossiers. En outre, le modèle peut être complété par des modèles génériques pour spécifier des modèles de fichier. Le dossier de contrôle modifie l’expression régulière afin de prendre en charge les modèles génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les expressions régulières. Cette valeur est obligatoire.
@@ -391,7 +391,7 @@ Après avoir créé un point de terminaison Watched Folder, vous devez l’activ
 
 ### Ajouter un point de terminaison Watched Folder à l’aide de l’API Java {#add-a-watched-folder-endpoint-using-the-java-api}
 
-Ajoutez un point de terminaison Watched Folder à l’aide de l’API Java d’AEM Forms :
+Ajoutez un point de terminaison Watched Folder à l’aide de l’API Java AEM Forms :
 
 1. Incluez des fichiers de projet.
 
@@ -428,7 +428,7 @@ Ajoutez un point de terminaison Watched Folder à l’aide de l’API Java d’A
 
    * Valeur de chaîne qui spécifie le nom du paramètre d’entrée. Par exemple, le nom du paramètre d’entrée du service EncryptDocument est `InDoc`.
    * Valeur de chaîne qui spécifie le type de données du paramètre d’entrée. Par exemple, le type de données du paramètre `InDoc` d’entrée est `com.adobe.idp.Document`.
-   * Valeur de chaîne qui spécifie le type de mappage. For example, you can specify `variable`.
+   * Valeur de chaîne qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `variable`.
    * Valeur de chaîne qui spécifie la valeur du type de mappage. Par exemple, vous pouvez spécifier &amp;ast;.pdf comme modèle de fichier.
 
    >[!NOTE]
@@ -441,7 +441,7 @@ Ajoutez un point de terminaison Watched Folder à l’aide de l’API Java d’A
 
    * Valeur de chaîne qui spécifie le nom du paramètre de sortie. Par exemple, le nom du paramètre de sortie pour le service EncryptDocument est `SecuredDoc`.
    * Valeur de chaîne qui spécifie le type de données du paramètre de sortie. Par exemple, le type de données du paramètre de `SecuredDoc` sortie est `com.adobe.idp.Document`.
-   * Valeur de chaîne qui spécifie le type de mappage. For example, you can specify `%F.pdf`.
+   * Valeur de chaîne qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `%F.pdf`.
 
 1. Créez un point de terminaison Watched Folder.
 
@@ -496,9 +496,9 @@ Le [QuickStart : Ajouter un point de terminaison Watched Folder à l’aide de l
 
 ## Ajouter des points de fin de courrier électronique {#adding-email-endpoints}
 
-Vous pouvez ajouter par programmation un point de fin de courrier électronique à un service en utilisant l’API Java d’AEM Forms. En ajoutant un point de fin Courrier électronique, vous permettez aux utilisateurs d’envoyer un message électronique contenant une ou plusieurs pièces jointes à un compte de messagerie spécifié. Ensuite, l’opération de configuration du service est appelée et manipule les fichiers. Une fois que le service a effectué l’opération spécifiée, il envoie à l’expéditeur un message électronique contenant les fichiers modifiés en tant que pièces jointes.
+Vous pouvez ajouter par programmation un point de terminaison de courrier électronique à un service en utilisant l’API Java AEM Forms. En ajoutant un point de fin Courrier électronique, vous permettez aux utilisateurs d’envoyer un message électronique contenant une ou plusieurs pièces jointes à un compte de messagerie spécifié. Ensuite, l’opération de configuration du service est appelée et manipule les fichiers. Une fois que le service a effectué l’opération spécifiée, il envoie à l’expéditeur un message électronique contenant les fichiers modifiés en tant que pièces jointes.
 
-Pour ajouter par programmation un point de fin de courrier électronique à un service, tenez compte du processus de courte durée suivant, *MyApplication\EncryptDocument*. Pour plus d’informations sur les processus de courte durée, voir [Présentation des processus](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)AEM Forms.
+Pour ajouter par programmation un point de fin de courrier électronique à un service, tenez compte du processus de courte durée suivant, *MyApplication\EncryptDocument*. Pour plus d’informations sur les processus de courte durée, voir [Compréhension des processus](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)AEM Forms.
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
@@ -560,9 +560,9 @@ Les valeurs de configuration suivantes sont définies lors de l’ajout programm
 
 * **cronExpression**: expression cron si le courrier électronique doit être planifié à l’aide d’une expression cron.
 * **repeatCount**: Nombre de fois où le point de terminaison du courrier électronique analyse le dossier ou le répertoire. La valeur -1 indique une analyse indéfinie. La valeur par défaut est -1.
-* **repeatInterval**: Taux d&#39;analyse en secondes que le destinataire utilise pour vérifier le courrier entrant. La valeur par défaut est 10.  
+* **repeatInterval**: Taux d&#39;analyse en secondes que le destinataire utilise pour vérifier le courrier entrant. La valeur par défaut est 10.   
 * **startDelay**: Temps d’attente pour l’analyse après les débuts du Planificateur. L’heure par défaut est 0.
-* **batchSize**: Nombre de messages électroniques que le destinataire traite par analyse pour obtenir des performances optimales. La valeur -1 désigne tous les messages électroniques. La valeur par défaut est 2.  
+* **batchSize**: Nombre de messages électroniques que le destinataire traite par analyse pour obtenir des performances optimales. La valeur -1 désigne tous les messages électroniques. La valeur par défaut est 2.   
 * **userName**: Nom d’utilisateur utilisé lors de l’appel d’un service de cible à partir d’un courrier électronique. La valeur par défaut est `SuperAdmin`.
 * **domainName**: Valeur de configuration obligatoire. La valeur par défaut est `DefaultDom`.
 * **domainPattern**: Indique les modèles de domaine du courrier électronique entrant que le fournisseur accepte. For example, if `adobe.com` is used, only email from adobe.com is processed, email from other domains is ignored.
@@ -572,7 +572,7 @@ Les valeurs de configuration suivantes sont définies lors de l’ajout programm
 * **inboxHost**: nom d’hôte de boîte de réception ou adresse IP du fournisseur de messagerie électronique à analyser.
 * **inboxPort**: port utilisé par le serveur de messagerie. La valeur POP3 par défaut est 110 et la valeur IMAP par défaut est 143. Si le protocole SSL est activé, la valeur POP3 par défaut est 995 et la valeur IMAP par défaut est 993.
 * **inboxProtocol**: protocole de courrier électronique que le point de terminaison de courrier électronique doit utiliser pour analyser la boîte de réception. Les options sont `IMAP` ou `POP3`. Le serveur de messagerie de l’hôte boîte de réception doit prendre en charge ces protocoles.
-* **inboxTimeOut**: Délai d’attente en secondes pour que le fournisseur de messagerie électronique attende les réponses de la boîte de réception. La valeur par défaut est 60.  
+* **inboxTimeOut**: Délai d’attente en secondes pour que le fournisseur de messagerie électronique attende les réponses de la boîte de réception. La valeur par défaut est 60.   
 * **inboxUser**: Nom d’utilisateur requis pour se connecter au compte de messagerie. Selon le serveur de messagerie et la configuration, il peut s’agir uniquement de la partie nom d’utilisateur du courrier électronique ou de l’adresse électronique complète.
 * **inboxPassword**: Mot de passe de l’utilisateur de la boîte de réception.
 * **inboxSSLEnabled**: Définissez cette valeur pour forcer le fournisseur de messagerie électronique à utiliser SSL lors de l’envoi de messages de notification de résultats ou d’erreurs. Assurez-vous que l’hôte IMAP ou POP3 prend en charge SSL.
@@ -673,7 +673,7 @@ Ajoutez un point de terminaison de courrier électronique à l’aide de l’API
 
    * Valeur de chaîne qui spécifie le nom du paramètre d’entrée. Par exemple, le nom du paramètre d’entrée du service EncryptDocument est `InDoc`.
    * Valeur de chaîne qui spécifie le type de données du paramètre d’entrée. Par exemple, le type de données du paramètre `InDoc` d’entrée est `com.adobe.idp.Document`.
-   * Valeur de chaîne qui spécifie le type de mappage. For example, you can specify `variable`.
+   * Valeur de chaîne qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `variable`.
    * Valeur de chaîne qui spécifie la valeur du type de mappage. Par exemple, vous pouvez spécifier &amp;ast;.pdf comme modèle de fichier.
 
    >[!NOTE]
@@ -686,7 +686,7 @@ Ajoutez un point de terminaison de courrier électronique à l’aide de l’API
 
    * Valeur de chaîne qui spécifie le nom du paramètre de sortie. Par exemple, le nom du paramètre de sortie pour le service EncryptDocument est `SecuredDoc`.
    * Valeur de chaîne qui spécifie le type de données du paramètre de sortie. Par exemple, le type de données du paramètre de `SecuredDoc` sortie est `com.adobe.idp.Document`.
-   * Valeur de chaîne qui spécifie le type de mappage. For example, you can specify `%F.pdf`.
+   * Valeur de chaîne qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `%F.pdf`.
 
 1. Créez le point de terminaison Courrier électronique.
 
@@ -750,9 +750,9 @@ Le [QuickStart : Ajouter un point de terminaison de courrier électronique à l�
 
 >[!NOTE]
 >
->Les API LiveCycle Remoting sont obsolètes pour AEM forms on JEE.
+>API de LiveCycle Remoting obsolètes pour AEM forms on JEE.
 
-Vous pouvez par programmation ajouter un point de terminaison Remoting à un service en utilisant l’API Java d’AEM Forms. En ajoutant un point de terminaison Remoting, vous activez une application Flex pour appeler le service à distance. (Voir [Appel d’AEM Forms à l’aide d’AEM Forms (obsolète pour AEM Forms) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+Vous pouvez par programmation ajouter un point de terminaison Remoting à un service à l’aide de l’API Java AEM Forms. En ajoutant un point de terminaison Remoting, vous autorisez une application Flex à appeler le service en utilisant la commande Remoting. (Voir [Appel d’AEM Forms à l’aide de AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)(obsolète pour les formulaires AEM).)
 
 Pour ajouter par programmation un point de terminaison Remoting à un service, tenez compte du processus de courte durée suivant, *EncryptDocument*.
 
@@ -861,7 +861,7 @@ Ajoutez un point de terminaison Remoting à l’aide de l’API Java :
 
 ## Ajouter des points de terminaison TaskManager {#adding-taskmanager-endpoints}
 
-Vous pouvez ajouter par programmation un point de terminaison TaskManager à un service en utilisant l’API Java d’AEM Forms. En ajoutant un point de terminaison TaskManager à un service, vous permettez à un utilisateur de Workspace d’appeler le service. En d’autres termes, un utilisateur travaillant dans Workspace peut appeler un processus qui possède un point de terminaison TaskManager correspondant.
+Vous pouvez ajouter par programmation un point de terminaison TaskManager à un service à l’aide de l’API Java AEM Forms. En ajoutant un point de terminaison TaskManager à un service, vous permettez à un utilisateur de Workspace d’appeler le service. En d’autres termes, un utilisateur travaillant dans Workspace peut appeler un processus qui possède un point de terminaison TaskManager correspondant.
 
 >[!NOTE]
 >
@@ -982,7 +982,7 @@ Ajoutez un point de terminaison TaskManager à l’aide de l’API Java :
 
 ## Modification des points de terminaison {#modifying-endpoints}
 
-Vous pouvez modifier par programmation un point de terminaison existant à l’aide de l’API Java d’AEM Forms. En modifiant un point de terminaison, vous pouvez modifier le comportement du point de terminaison. Prenons l’exemple d’un point de terminaison Watched Folder qui spécifie un dossier utilisé comme dossier de contrôle. Vous pouvez modifier par programmation les valeurs de configuration qui appartiennent au point de terminaison Watched Folder, ce qui entraîne le fonctionnement d’un autre dossier en tant que dossier de contrôle. Pour plus d’informations sur les valeurs de configuration qui appartiennent à un point de terminaison Watched Folder, voir [Ajouter des points de terminaison](programmatically-endpoints.md#adding-watched-folder-endpoints)Watched Folder.
+Vous pouvez modifier par programmation un point de terminaison existant à l’aide de l’API Java AEM Forms. En modifiant un point de terminaison, vous pouvez modifier le comportement du point de terminaison. Prenons l’exemple d’un point de terminaison Watched Folder qui spécifie un dossier utilisé comme dossier de contrôle. Vous pouvez modifier par programmation les valeurs de configuration qui appartiennent au point de terminaison Watched Folder, ce qui entraîne le fonctionnement d’un autre dossier en tant que dossier de contrôle. Pour plus d’informations sur les valeurs de configuration qui appartiennent à un point de terminaison Watched Folder, voir [Ajouter des points de terminaison](programmatically-endpoints.md#adding-watched-folder-endpoints)Watched Folder.
 
 Pour montrer comment modifier un point de terminaison, cette section modifie un point de terminaison Watched Folder en modifiant le dossier qui se comporte comme le dossier de contrôle.
 
@@ -1084,7 +1084,7 @@ Modifiez un point de terminaison à l’aide de l’API Java :
 
 ## Suppression de points de terminaison {#removing-endpoints}
 
-Vous pouvez supprimer par programmation un point de terminaison d’un service en utilisant l’API Java d’AEM Forms. Une fois que vous avez supprimé un point de terminaison, le service ne peut pas être appelé à l’aide de la méthode d’appel activée par le point de terminaison. Par exemple, si vous supprimez un point de terminaison SOAP d’un service, vous ne pouvez pas appeler le service à l’aide du mode SOAP.
+Vous pouvez supprimer par programmation un point de terminaison d’un service à l’aide de l’API Java AEM Forms. Une fois que vous avez supprimé un point de terminaison, le service ne peut pas être appelé à l’aide de la méthode d’appel activée par le point de terminaison. Par exemple, si vous supprimez un point de terminaison SOAP d’un service, vous ne pouvez pas appeler le service à l’aide du mode SOAP.
 
 Pour montrer comment supprimer un point de terminaison d’un service, cette section supprime un point de terminaison EJB d’un service appelé *EncryptDocument*.
 
@@ -1172,7 +1172,7 @@ Supprimez un point de terminaison à l’aide de l’API Java :
 
 ## Récupération des informations du connecteur de point de terminaison {#retrieving-endpoint-connector-information}
 
-Vous pouvez programmer la récupération d’informations sur les connecteurs de points de terminaison à l’aide de l’API AEM Forms. Un connecteur permet à un point de terminaison d’appeler un service à l’aide de diverses méthodes d’appel. Par exemple, un connecteur Watched Folder permet à un point de terminaison d’appeler un service à l’aide de dossiers de contrôle. En récupérant par programmation des informations sur les connecteurs de point de terminaison, vous pouvez récupérer les valeurs de configuration associées à un connecteur, telles que les valeurs de configuration requises et celles qui sont facultatives.
+Vous pouvez programmer la récupération d’informations sur les connecteurs de point de terminaison à l’aide de l’API AEM Forms. Un connecteur permet à un point de terminaison d’appeler un service à l’aide de diverses méthodes d’appel. Par exemple, un connecteur Watched Folder permet à un point de terminaison d’appeler un service à l’aide de dossiers de contrôle. En récupérant par programmation des informations sur les connecteurs de point de terminaison, vous pouvez récupérer les valeurs de configuration associées à un connecteur, telles que les valeurs de configuration requises et celles qui sont facultatives.
 
 Pour montrer comment récupérer des informations sur les connecteurs de point de terminaison, cette section récupère des informations sur un connecteur de dossier de contrôle. (See [Adding Watched Folder Endpoints](programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
@@ -1182,7 +1182,7 @@ Pour montrer comment récupérer des informations sur les connecteurs de point d
 
 >[!NOTE]
 >
->Cette rubrique utilise l’ `ConnectorRegistryClient` API pour récupérer des informations sur les connecteurs de point de terminaison. (Voir Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms).
+>Cette rubrique utilise l’ `ConnectorRegistryClient` API pour récupérer des informations sur les connecteurs de point de terminaison. (Voir Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.)
 
 ### Résumé des étapes {#summary_of_steps-8}
 
