@@ -1,14 +1,17 @@
 ---
-title: Ressources connexes
+title: Ressources liées
 description: Découvrez comment mettre en relation des ressources qui partagent des attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '613'
+ht-degree: 100%
 
 ---
 
 
-# Related assets {#related-assets}
+# Ressources liées{#related-assets}
 
 Adobe Experience Manager (AEM) Assets vous permet de mettre en relation manuellement des ressources en fonction des besoins de votre organisation à l’aide de la fonctionnalité Ressources associées. Par exemple, vous pouvez mettre en relation un fichier de licence avec une ressource ou une image/vidéo portant sur un sujet similaire. Vous pouvez mettre en relation des ressources qui partagent certains attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources. Par exemple, si un fichier PDF est généré à partir d’un fichier INDD, vous pouvez mettre en relation le fichier PDF avec son fichier INDD source.
 
@@ -35,8 +38,9 @@ De cette manière, vous avez la possibilité de partager un fichier basse résol
 1. Utilisez l’une des méthodes suivantes :
 
    * Pour mettre en relation le fichier source avec la ressource, sélectionnez **[!UICONTROL Source]** dans la liste.
-   * To relate a derived file, select **[!UICONTROL Derived]** from the list.
+   * Pour mettre en relation un fichier dérivé avec la ressource, sélectionnez **[!UICONTROL Dérivés]** dans la liste.
    * Pour créer une relation réciproque entre les ressources, sélectionnez **[!UICONTROL Autres]** dans la liste.
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. Sur l’écran **[!UICONTROL Sélectionner une ressource]**, accédez à l’emplacement de la ressource que vous souhaitez mettre en relation et sélectionnez-la.
@@ -44,7 +48,7 @@ De cette manière, vous avez la possibilité de partager un fichier basse résol
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Cliquez/appuyez sur l’icône **[!UICONTROL Confirmer]**.
-1. Click/tap **[!UICONTROL OK]** to close the dialog. En fonction de la relation que vous avez choisie à l’étape 3, la ressource associée apparaît sous une catégorie appropriée dans la section **[!UICONTROL En relation]**. Par exemple, si la ressource que vous avez mise en relation est le fichier source de la ressource actuelle, elle apparaît sous **[!UICONTROL Source]**.
+1. Cliquez/appuyez sur **[!UICONTROL OK]** pour fermer la boîte de dialogue. En fonction de la relation que vous avez choisie à l’étape 3, la ressource associée apparaît sous une catégorie appropriée dans la section **[!UICONTROL En relation]**. Par exemple, si la ressource que vous avez mise en relation est le fichier source de la ressource actuelle, elle apparaît sous **[!UICONTROL Source]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
@@ -89,6 +93,6 @@ Si le fichier source est mis en relation avec une autre ressource, AEM Assets r
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
-1. Select the asset that is related to the source, and then click/tap **[!UICONTROL Reveal in Assets]**. La ressource associée traduite s’affiche.
+1. Sélectionnez la ressource mise en relation avec la source, puis cliquez/appuyez sur **[!UICONTROL Afficher dans Assets]**. La ressource associée traduite s’affiche.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
