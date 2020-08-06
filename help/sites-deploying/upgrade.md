@@ -12,6 +12,9 @@ discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '715'
+ht-degree: 75%
 
 ---
 
@@ -39,7 +42,7 @@ Pour une référence conviviale aux instances d’AEM incluses dans ces procédu
 
 >[!NOTE]
 >
->Dans le cadre des efforts visant à améliorer la fiabilité des mises à niveau, AEM 6.4 a subi une restructuration complète du référentiel. For more information on how to align with the new structure, see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md)
+>Dans le cadre des efforts visant à améliorer la fiabilité des mises à niveau, AEM 6.4 a fait l&#39;objet d&#39;une restructuration complète des dépôts. For more information on how to align with the new structure, see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md)
 
 ## What Has Changed? {#what-has-changed}
 
@@ -67,9 +70,9 @@ Le nettoyage périodique des révisions et de l’entrepôt de données sont dé
 
 Pour plus d’informations sur les autres points modifiés dans les versions récentes d’AEM, consultez les notes de mise à jour complètes :
 
-* [https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/experience-manager/6-2/release-notes.html)
-* [https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
-* [https://helpx.adobe.com/fr/experience-manager/6-4/release-notes.html ](https://helpx.adobe.com/experience-manager/6-4/release-notes.html)
+* [https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html)
+* [https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html)
+* [https://helpx.adobe.com/fr/experience-manager/6-4/release-notes.html ](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes.html )
 
 ## Vue d’ensemble de la mise à niveau {#upgrade-overview}
 
