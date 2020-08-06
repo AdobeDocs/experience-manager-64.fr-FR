@@ -12,6 +12,9 @@ discoiquuid: 4c4a7bc4-3fb1-44c1-823f-d789790f5e06
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '819'
+ht-degree: 90%
 
 ---
 
