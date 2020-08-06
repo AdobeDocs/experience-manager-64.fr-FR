@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0ef6a3b1-e7ce-4268-a5be-a565646ecc29
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '1952'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +40,7 @@ Outre le [développement de nouveaux composants](/help/sites-developing/developi
 
 >[!NOTE]
 >
->Ce document porte sur le développement de formulaires à l’aide des [composants Foundation](/help/sites-authoring/default-components-foundation.md) dans l’IU classique. Adobe recommande de tirer parti des nouveaux [composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) et des [conditions de masquage](/help/sites-developing/hide-conditions.md) pour le développement de formulaires dans l’interface utilisateur tactile.
+>Ce document porte sur le développement de formulaires à l’aide des [composants Foundation](/help/sites-authoring/default-components-foundation.md) dans l’IU classique. Adobe recommande de tirer parti des nouveaux [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et des [conditions de masquage](/help/sites-developing/hide-conditions.md) pour le développement de formulaires dans l’interface utilisateur tactile.
 
 ## Préchargement de valeurs de formulaire {#preloading-form-values}
 
@@ -144,6 +147,7 @@ You can add your own action under `/apps` as follows:
 
    * Un fichier `post.POST.jsp` est utile pour les petites opérations qui sont entièrement effectuées par l’action proprement dite.
    * Le fichier `forward.jsp`, en revanche, est utile lorsque la délégation seule est requise.
+
    L’ordre d’exécution des scripts est le suivant :
 
    * Upon rendering the form ( `GET`):
@@ -171,19 +175,19 @@ You can add your own action under `/apps` as follows:
 
       The name of the script is `addfields.<extension>`, e.g. `addfields.jsp`
 
-      Un script addfields est appelé immédiatement après l’écriture du code HTML pour le démarrage du formulaire. Cela permet à l’action d’ajouter les champs de saisie personnalisés ou tout autre code HTML à l’intérieur du formulaire.
+      Un script addfields est appelé immédiatement après l’écriture du code HTML pour le début de formulaire. Cela permet à l’action d’ajouter les champs de saisie personnalisés ou tout autre code HTML à l’intérieur du formulaire.
 
    1. Un script d’initialisation.
 
       The name of the script is `init.<extension>`, e.g. `init.jsp`
 
-      Ce script est appelé lorsque le formulaire est généré. Il peut être utilisé pour initialiser des caractéristiques d’action. ``
+      Ce script est appelé lorsque le formulaire est rendu. Il peut être utilisé pour initialiser des caractéristiques d’action. ``
 
    1. Un script de nettoyage.
 
       The name of the script is `cleanup.<extension>`, e.g. `cleanup.jsp`
 
-      Ce script peut être utilisé pour effectuer le nettoyage.
+      Ce script peut être utilisé pour effectuer un nettoyage.
 
 1. Utilisez le composant **Forms** dans un système de paragraphes (parsys). Le liste déroulante **Type d’action** contient désormais votre nouvelle action.
 
@@ -227,11 +231,11 @@ You can add your own constraints for an individual field (under `/apps`) as foll
 
       Cette fonction est appelée lorsque le champ de formulaire est généré. Il peut être utilisé pour créer le JavaScript client afin de valider le champ sur le client.
 
-   * Un script de validation de serveur :
+   * Un script de validation du serveur :
 
       The name of the script is `servervalidation.<extension>`, e.g. `servervalidation.jsp`
 
-      Elle est appelée lorsque le formulaire est envoyé. Il peut être utilisé pour valider le champ sur le serveur une fois qu’il a été envoyé.
+      Cette fonction est appelée lorsque le formulaire est envoyé. Il peut être utilisé pour valider le champ sur le serveur une fois qu’il a été envoyé.
 
 >[!NOTE]
 >
@@ -292,6 +296,7 @@ Dans JavaScript, les conditions utilisent la valeur de la propriété Nom de l�
       * **n’importe quelle(s)** si uniquement une ou plusieurs conditions doivent être vraies pour afficher ou masquer le composant.
    * Dans la ligne de condition (une est présentée par défaut), sélectionnez un composant et un opérateur, puis spécifiez une valeur.
    * Si nécessaire, ajoutez d’autres conditions en cliquant sur **Ajouter une condition**.
+
    Par exemple :
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
@@ -314,9 +319,9 @@ Dans JavaScript, les conditions utilisent la valeur de la propriété Nom de l�
 
 #### Gestion de références de composant interrompues {#handling-broken-component-references}
 
-Les conditions Afficher / Masquer utilisent la valeur de la propriété Nom de l’élément pour faire référence aux autres composants dans le formulaire. La configuration Afficher/Masquer n’est pas valide lorsque l’une des conditions fait référence à un composant supprimé ou que la propriété Nom de l’élément a été modifiée. Dans ce cas, vous devez mettre à jour manuellement les conditions, sans quoi une erreur se produira au chargement du formulaire.
+Les conditions Afficher / Masquer utilisent la valeur de la propriété Nom de l’élément pour faire référence aux autres composants dans le formulaire. La configuration Afficher/Masquer n&#39;est pas valide lorsque l&#39;une des conditions fait référence à un composant supprimé ou si la propriété Nom de l&#39;élément a été modifiée. Dans ce cas, vous devez mettre à jour manuellement les conditions, sans quoi une erreur se produira au chargement du formulaire.
 
-Lorsque la configuration Afficher/Masquer n’est pas valide, la configuration est fournie uniquement sous forme de code JavaScript. Modifiez le code pour résoudre les problèmes. Le code utilise la propriété Nom de l’élément utilisée initialement pour faire référence aux composants.
+Lorsque la configuration Afficher/Masquer n&#39;est pas valide, la configuration est fournie uniquement en tant que code JavaScript. Modifiez le code pour résoudre les problèmes. Le code utilise la propriété Nom de l’élément utilisée initialement pour faire référence aux composants.
 
 ### Développement de scripts à utiliser avec des formulaires {#developing-scripts-for-use-with-forms}
 
