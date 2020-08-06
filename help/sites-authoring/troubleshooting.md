@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 translation-type: tm+mt
 source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 100%
 
 ---
 
@@ -37,15 +40,15 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * Les raisons peuvent être multiples, mais sont généralement liées à la mémoire cache (de votre navigateur local ou du dispatcher), bien qu’il s’agisse parfois d’un problème de la file d’attente de réplication.
 
-* **Solutions** :
+* **Solutions**:
 
    * Plusieurs solutions sont possibles :
    * Vérifiez que la page a bien été répliquée. Vérifiez l’état de la page et, si nécessaire, l’état de la file d’attente de réplication.
    * Effacez la mémoire cache du navigateur local et accédez de nouveau à votre page.
-   * Ajoutez `?` à la fin de l’URL de la page.Par exemple :
+   * Ajoutez `?` à la fin de l’URL de la page. Par exemple :
 
       * `http://localhost:4502/sites.html/content?`
-      * Ceci demandera la page directement auprès d’AEM et contournera le dispatcher. Si vous recevez la page mise à jour, cela indique que vous devez vider le cache du Dispatcher.
+      * Ceci demandera la page directement auprès d’AEM et contournera le dispatcher. Si vous recevez la page mise à jour, ceci indique que vous devez vider la mémoire cache du dispatcher.
    * Contactez l’administrateur du système en cas de problèmes avec les files d’attente de réplication.
 
 
@@ -59,7 +62,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * Dans de rares cas, une action précédente peut avoir un impact sur la barre d’outils.
 
-* **Solution** :
+* **Solution**:
 
    * Actualisez la page.
 
