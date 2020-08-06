@@ -11,6 +11,9 @@ topic-tags: Security
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 La connexion unique permet à l’utilisateur d’accéder à plusieurs systèmes après avoir fourni une seule fois ses informations d’identification (telles qu’un nom d’utilisateur et un mot de passe). Un système distinct (appelé l’authentificateur de confiance) effectue une authentification et fournit à Experience Manager les informations d’identification de l’utilisateur. Experience Manager vérifie les autorisations d’accès de l’utilisateur et les applique (c’est-à-dire qu’il détermine les ressources auxquelles l’utilisateur a accès).
 
-Le service de gestion de l’authentification SSO (`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) traite les résulats de l’authentification que l’authentificateur de confiance fournit. Le gestionnaire d’authentification unique recherche un identifiant d’authentification unique (identifiant SSO) comme valeur d’un attribut spécial aux emplacements suivants dans cet ordre :
+Le service de gestion de l’authentification SSO (`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) traite les résulats de l’authentification que l’authentificateur de confiance fournit. Le gestionnaire d’authentification unique recherche un identifiant d’authentification unique (identifiant d’authentification unique) comme valeur d’un attribut spécial aux emplacements suivants dans cet ordre :
 
 1. En-têtes de la demande
 1. Cookies
@@ -51,7 +54,8 @@ Pour configurer le SSO pour une instance AEM, vous devez configurer le [gestionn
 
    * **Chemin d’accès :** en fonction des besoins, par exemple, `/`
    * **Noms des en-têtes** : remote_user
-   * **** Format d’ID : AsIs
+   * **Format d’ID :** AsIs
+
    Pour SiteMinder :
 
    * **Chemin d’accès :** en fonction des besoins, par exemple, `/`
@@ -83,6 +87,7 @@ Pour configurer le SSO pour une instance AEM, vous devez configurer le [gestionn
 >
 >* `disp_iis.ini`
 >* IIS
+
 >
 >
 Dans le `disp_iis.ini` jeu :\
@@ -90,6 +95,7 @@ Dans le `disp_iis.ini` jeu :\
 >
 >* `servervariables=1` (transmet des variables de serveur IIS comme en-têtes de requête à une instance distante)
 >* `replaceauthorization=1` (remplace n’importe quel en-tête appelé « Authorization » autre que l’en-tête « Basic » par son « Basic » équivalent)
+
 >
 >
 Dans IIS :
@@ -98,6 +104,7 @@ Dans IIS :
    >
    >
 * autoriser **l’authentification intégrée de Windows**
+
 >
 
 
@@ -126,7 +133,7 @@ Utilisation de la configuration suivante :
 
 * **Noms des** en-têtes : `TestHeader`
 
-* **Noms des** cookies : `TestCookie`
+* **Noms** des cookies : `TestCookie`
 
 * **Noms des** paramètres : `TestParameter`
 
@@ -166,14 +173,14 @@ Lorsque vous utilisez le SSO, la connexion et la déconnexion sont traités en e
 
 Le lien de déconnexion sur l’écran de bienvenue peut être supprimé en suivant les étapes suivantes.
 
-1. Recouvrement `/libs/cq/core/components/welcome/welcome.jsp` sur `/apps/cq/core/components/welcome/welcome.jsp`
+1. Recouvrement `/libs/cq/core/components/welcome/welcome.jsp` vers `/apps/cq/core/components/welcome/welcome.jsp`
 1. Supprimez la partie suivante de JSP.
 
    `<a href="#" onclick="signout('<%= request.getContextPath() %>');" class="signout"><%= i18n.get("sign out", "welcome screen") %>`
 
 Pour supprimer le lien de déconnexion disponible dans le menu personnel de l’utilisateur dans le coin supérieur droit, procédez comme suit :
 
-1. Recouvrement `/libs/cq/ui/widgets/source/widgets/UserInfo.js` sur `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
+1. Recouvrement `/libs/cq/ui/widgets/source/widgets/UserInfo.js` vers `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
 
 1. Supprimez la partie suivante du fichier :
 
