@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +28,7 @@ Cette page fournit les informations essentielles pour travailler avec le forum.
  <tbody>
   <tr>
    <td> <strong>resourceTypes</strong></td> 
-   <td>social/forum/components/hbs/forum<br /> social/forum/components/hbs/topic<br /> social/forum/components/hbs/post</td> 
+   <td>social/forum/composants/hbs/forum<br /> social/forum/composants/hbs/thème<br /> social/forum/composants/hbs/post</td> 
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclus</strong></a></td> 
@@ -45,7 +48,7 @@ Cette page fournit les informations essentielles pour travailler avec le forum.
   </tr>
   <tr>
    <td><strong> properties</strong></td> 
-   <td>Voir Fonctionnalité <a href="forum.md">du forum</a></td> 
+   <td>Voir Fonctionnalité <a href="forum.md">du forum.</a></td> 
   </tr>
  </tbody>
 </table>
@@ -56,27 +59,27 @@ Cette page fournit les informations essentielles pour travailler avec le forum.
 
 * [API du forum](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
-* [Points de fin du forum](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
+* [Points de terminaison du forum](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](server-customize.md)
 
 ### Fonction Forum {#forum-function}
 
-Une structure de site communautaire qui inclut la fonction [](functions.md#forum-function)Forum, inclut un `forum` composant configuré, ainsi que des paramètres affectant la modération, le balisage et la traduction.
+Une structure de site communautaire qui comprend la fonction [](functions.md#forum-function)Forum, inclut un `forum` composant configuré, ainsi que des paramètres affectant la modération, le balisage et la traduction.
 
 ### Accès aux publications du forum (UGC) {#accessing-forum-posts-ugc}
 
-L’UGC doit être modérée à l’aide de l’une des méthodes standard de modération.\
+L’UGC doit être modéré à l’aide de l’une des méthodes standard de modération.\
 Voir [Modération du contenu](moderate-ugc.md)généré par l’utilisateur.
 
-Depuis les communautés AEM 6.1, l’utilisation d’un magasin [](working-with-srp.md) commun pour l’UGC inclut l’accès par programmation à l’UGC, quelle que soit l’option de stockage choisie (par exemple, ASRP, MSRP ou JSRP).
+AEM 6.1 Collectivités, l&#39;utilisation d&#39;un magasin [](working-with-srp.md) commun pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
 
-**L’emplacement et le format de l’UGC dans le référentiel peuvent être modifiés sans avertissement**.
+**L&#39;emplacement et le format de l&#39;UGC dans le référentiel peuvent être modifiés sans avertissement**.
 
 Voir :
 
-* [Présentation](srp.md) du fournisseur de ressources de stockage - présentation et présentation de l&#39;utilisation du référentiel
+* [Présentation](srp.md) du fournisseur de ressources d&#39;Enregistrement - présentation et présentation de l&#39;utilisation du référentiel
 * [SRP et UGC Essentials](srp-and-ugc.md) - Méthodes et exemples d&#39;utilitaires SRP
-* [Accès UGC avec SRP](accessing-ugc-with-srp.md) - directives de codage
+* [Accès à l&#39;UGC avec SRP](accessing-ugc-with-srp.md) - directives de codage
 * [SocialUtils Refactoring](socialutils.md) - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles
 
