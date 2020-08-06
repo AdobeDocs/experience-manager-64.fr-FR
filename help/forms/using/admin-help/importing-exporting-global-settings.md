@@ -125,9 +125,9 @@ Pour plus d’informations sur JGroups et Workspace, consultez l’article [JGro
 
 **server_debugLevel :** Ne modifiez pas ce paramètre.
 
-**client_pollingInterval :** Définit l’intervalle d’interrogation (en secondes) utilisé dans Flex Workspace (obsolète pour AEM forms on JEE) pour détecter les tâches nouvelles et modifiées. La valeur par défaut est de 3 secondes. Elle ne fonctionne pas pour l’espace de travail AEM Forms
+**client_pollingInterval :** Définit l’intervalle d’interrogation (en secondes) utilisé sur l’espace de travail Flex (obsolète pour AEM forms on JEE) pour détecter les tâches nouvelles et modifiées. La valeur par défaut est de 3 secondes. Elle ne fonctionne pas pour l’espace de travail AEM Forms
 
-**client_systemContext_name :** Indiquez un nom personnalisé (par exemple, Citoyen) à afficher dans le champ Ajouté par (dans l’onglet Pièces jointes) pour les pièces jointes d’une tâche dans l’espace de travail AEM Forms.
+**client_systemContext_name :** Indiquez un nom personnalisé (par exemple Citoyen) à afficher dans le champ Ajouté par (dans l’onglet Pièces jointes) pour les pièces jointes d’une tâche dans AEM Forms Workspace.
 
 Pour définir le nom personnalisé :
 
