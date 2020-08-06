@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '1233'
+ht-degree: 80%
 
 ---
 
@@ -89,17 +92,17 @@ Cette mise en correspondance des éléments JSON avec les composants de formulai
 
 Le formulaire adaptatif utilise les informations disponibles dans le schéma JSON pour mapper chaque champ généré. En particulier :
 
-* La propriété title sert de libellé aux composants du formulaire adaptatif.
-* La propriété description est définie comme une description longue pour un composant de formulaire adaptatif.
+* La propriété title sert de libellé pour les composants du formulaire adaptatif.
+* La propriété description est définie en tant que description longue pour un composant de formulaire adaptatif.
 * La propriété par défaut sert de valeur initiale à un champ de formulaire adaptatif.
-* La propriété maxLength est définie comme attribut maxlength du composant de champ de texte.
+* La propriété maxLength est définie sous la forme d’un attribut maxlength du composant de champ de texte.
 * Les propriétés minimales, maximales, exclusivesMinimum et exclusivesMaximum sont utilisées pour le composant de zone numérique.
-* Pour prendre en charge la plage du composant DatePicker, d’autres propriétés de schéma JSON minDate et maxDate sont fournies.
+* Pour prendre en charge la plage du composant DatePicker, d’autres propriétés de Schéma JSON minDate et maxDate sont fournies.
 * Les propriétés minItems et maxItems permettent de limiter le nombre d’éléments/de champs qui peuvent être ajoutés ou supprimés d’un composant de panneau.
 * La propriété readOnly définit l’attribut readonly d’un composant de formulaire adaptatif.
-* La propriété requise marque le champ du formulaire adaptatif comme étant obligatoire, alors que dans le cas d’un panneau (où type est objet), les données JSON finales envoyées comportent des champs avec une valeur vide correspondant à cet objet.
+* La propriété requise marque le champ du formulaire adaptatif comme obligatoire alors que dans le cas d’un panneau (où le type est un objet), les données JSON envoyées finales comportent des champs avec une valeur vide correspondant à cet objet.
 * La propriété pattern est définie en tant que modèle de validation (expression régulière) dans le formulaire adaptatif.
-* L’extension du fichier de schéma JSON doit être conservée dans .schema.json. Par exemple, &lt;nom_fichier>.schema.json.
+* L’extension du fichier de Schéma JSON doit être conservée dans .schéma.json. Par exemple, &lt;nom_fichier>.schéma.json.
 
 ## Exemple de schéma JSON {#sample-json-schema}
 
@@ -338,7 +341,7 @@ You can use the **aem:afProperties** property to preconfigure JSON Schema field 
 
 ## Valeurs possibles de limite pour un composant de formulaire adaptatif {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON pour limiter les valeurs acceptables pour un composant de formulaire adaptatif :
+Vous pouvez ajouter les restrictions suivantes aux éléments de Schéma JSON pour limiter les valeurs acceptables pour un composant de formulaire adaptatif :
 
 <table> 
  <tbody> 
@@ -346,7 +349,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON po
    <td><p><strong> Propriété de schéma</strong></p> </td> 
    <td><p><strong>Type de données</strong></p> </td> 
    <td><p><strong>Description</strong></p> </td> 
-   <td><p><strong>Component</strong></p> </td> 
+   <td><p><strong>Composant</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p><code>maximum</code></p> </td> 
@@ -372,7 +375,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON po
   </tr> 
   <tr> 
    <td><p><code>exclusiveMaximum</code></p> </td> 
-   <td><p>Booléen  </p> </td> 
+   <td><p>Booléen</p> </td> 
    <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être inférieure à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit inférieure ou égale à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> </td> 
    <td> 
     <ul> 
@@ -383,7 +386,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON po
   </tr> 
   <tr> 
    <td><p><code>exclusiveMinimum</code></p> </td> 
-   <td><p>Booléen  </p> </td> 
+   <td><p>Booléen</p> </td> 
    <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure ou égale à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> </td> 
    <td> 
     <ul> 
