@@ -1,6 +1,6 @@
 ---
-title: Création de modèles de page
-seo-title: Création de modèles de page
+title: 'Création de modèles de page   '
+seo-title: 'Création de modèles de page   '
 description: Le modèle définit la structure de la page créée et, à l’aide de l’éditeur de modèles, les tâches de création et de gestion des modèles ne sont plus réservées aux développeurs.
 seo-description: Le modèle définit la structure de la page créée et, à l’aide de l’éditeur de modèles, les tâches de création et de gestion des modèles ne sont plus réservées aux développeurs.
 uuid: ffdc760d-9504-4d13-9f74-a58499632b78
@@ -11,11 +11,14 @@ topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
 translation-type: tm+mt
 source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+workflow-type: tm+mt
+source-wordcount: '4811'
+ht-degree: 97%
 
 ---
 
 
-# Création de modèles de page {#creating-page-templates}
+# Création de modèles de page    {#creating-page-templates}
 
 Lors de la création d’une page, vous devez sélectionner un modèle. C’est la base pour la création de la page. Le modèle définit la structure de la page créée, le contenu initial et les composants pouvant être utilisés.
 
@@ -23,13 +26,13 @@ Grâce à **Éditeur de modèles**, la création et la maintenance de modèles n
 
 La **console de modèles** permet aux créateurs de modèles :
 
-* de créer ou de copier un modèle.
+* de créer ou de copier un modèle ;
 * de gérer le cycle de vie du modèle.
 
 L’**éditeur de modèles** permet aux créateurs de modèles :
 
 * d’ajouter des composants au modèle et de les positionner sur une grille réactive.
-* De préconfigurer les composants ;
+* de préconfigurer les composants ;
 * de définir les composants qui peuvent être publiés dans les pages créées à partir du modèle.
 
 Ce document explique comment un **créateur de modèles** peut utiliser la console et l’éditeur de modèles pour créer et gérer des modèles modifiables.
@@ -38,7 +41,7 @@ Pour obtenir des informations détaillées sur le fonctionnement des modèles mo
 
 >[!NOTE]
 >
->AEM 6.4.5.0 ou version ultérieure est requis pour utiliser des modèles modifiables avec l’éditeur [d’](/help/sites-developing/spa-overview.md)application d’une seule page.
+>AEM version 6.4.5.0 ou ultérieure est requise pour utiliser des modèles modifiables avec l’éditeur [](/help/sites-developing/spa-overview.md)d’applications monopages.
 
 >[!NOTE]
 >
@@ -52,7 +55,7 @@ Pour obtenir des informations détaillées sur le fonctionnement des modèles mo
 
 >[!NOTE]
 >
->Un administrateur doit configurer un dossier de modèles dans le **navigateur des configurations** et appliquer les autorisations appropriées permettant à un créateur de modèles de créer un modèle dans ce dossier.
+>Un administrateur doit configurer un dossier de modèles dans le **navigateur des configurations** et appliquer les autorisations appropriées permettant au créateur de modèles de créer un modèle dans ce dossier.
 
 Avant de commencer, vous devez tenir compte des points importants suivants :
 
@@ -66,10 +69,10 @@ La création d’un modèle à l’aide de la **console Modèles** et de l’**�
 
 * **Administrateur** :
 
-   * Creates a new folder for templates requires `admin` rights.
+   * La création d’un dossier pour les modèles nécessite des droits `admin`.
    * Souvent, ces tâches peuvent également être effectuées par un développeur.
 
-* **Développeur**:
+* **Développeur** :
 
    * Se concentre sur les détails techniques/internes.
    * Requiert une expérience de l’environnement de développement.
@@ -121,19 +124,19 @@ Lorsque vous utilisez un modèle pour [créer une page](/help/sites-authoring/ma
 
 Lors de la création d’un modèle modifiable :
 
-* Utilisez la **console de modèles**. Elle est accessible dans la section **Général** de la console **Outils**. 
+* Utilisez la **console de modèles**. Elle est accessible dans la section **Général** de la console **Outils**.
 
-   * Vous pouvez également accéder directement à : [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf).
+   * Ou directement à l’adresse : [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
-* Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
+* Si besoin, vous pouvez [créer un dossier pour les modèles](#creating-a-template-folder-admin).
 * [Créez un modèle](#creating-a-new-template-template-author), qui est initialement vide.
 
 * Si besoin, [définissez des propriétés supplémentaires](#defining-template-properties-template-author) pour le modèle.
 * [Modifiez le modèle](#editing-templates-template-authors) pour définir ce qui suit :
 
-   * [Structure](#editing-a-template-structure-template-author) : contenu prédéfini qui ne peut pas être modifié sur les pages créées avec le modèle.
-   * [Contenu](#editing-a-template-initial-content-author) initial : contenu prédéfini pouvant être modifié sur les pages créées avec le modèle.
-   * [Disposition](#editing-a-template-layout-template-author) - Pour une gamme de périphériques.
+   * [Structure](#editing-a-template-structure-template-author) : contenu prédéfini ne pouvant pas être modifié dans les pages créées avec le modèle.
+   * [Contenu initial](#editing-a-template-initial-content-author) : contenu prédéfini pouvant être modifié dans les pages créées avec le modèle.
+   * [Mise en page](#editing-a-template-layout-template-author) : pour de nombreux appareils.
    * [Styles](/help/sites-authoring/style-system.md) : définissez les styles à utiliser avec le modèle et ses composants.
 
 * [Activez le modèle](#enabling-a-template-template-author) à utiliser lors de la création d’une page.
@@ -158,7 +161,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
 
    >[!NOTE]
    >
-   >Dans une instance AEM standard, le dossier **Global** existe déjà dans la console Modèles. Il contient les modèles par défaut et fait office de dossier de rechange si le dossier actif ne contient pas de stratégies et/ou de types de modèles.
+   >Dans une instance AEM standard, le dossier **Global** existe déjà dans la console de modèles. Il contient les modèles par défaut et fait office de dossier de rechange si le dossier actif ne contient pas de stratégies et/ou de types de modèles.
    >
    >Il est recommandé d’utiliser un [dossier de modèles créé pour le projet](/help/sites-developing/page-templates-editable.md#template-folders).
 
@@ -175,13 +178,13 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
    * **Nom du modèle**
    * **Description**
 
-1. Sélectionnez **Créer**. Un message de confirmation s’affiche. Sélectionnez **Ouvrir** pour commencer à [modifier le modèle](#editing-templates-template-authors) ou **Terminé** pour revenir à la console Modèles.
+1. Sélectionnez **Créer**. Un message de confirmation s’affiche. Sélectionnez **Ouvrir**[](#editing-templates-template-authors) pour commencer à modifier le modèle ou **Terminé** pour revenir à la console de modèles.
 
    >[!NOTE]
    >
    >Lorsque vous créez un modèle, il est marqué comme **Brouillon** dans la console pour indiquer qu’il n’est pas encore actif.
 
-### Définition des propriétés des modèles - Créateur de modèles {#defining-template-properties-template-author}
+### Définition des propriétés des modèles - Créateur de modèles    {#defining-template-properties-template-author}
 
 Un modèle peut posséder les propriétés suivantes :
 
@@ -202,13 +205,13 @@ Un modèle peut posséder les propriétés suivantes :
 
 Pour afficher et/ou modifier les propriétés :
 
-1. In the **Templates Console**, select the template.
-1. Sélectionnez **Afficher les propriétés** depuis la barre d’outils ou les options rapides afin d’ouvrir la boîte de dialogue.
+1. Dans la **console de modèles**, sélectionnez le modèle.
+1. Sélectionnez **Afficher les propriétés** dans la barre d’outils ou les options rapides pour ouvrir la boîte de dialogue.
 1. Vous pouvez maintenant afficher ou modifier les propriétés du modèle.
 
 >[!NOTE]
 >
->L’état d’un modèle (brouillon, activé ou désactivé) est indiqué dans la console.
+>L’état du modèle (brouillon, activé ou désactivé) est indiqué dans la console.
 
 #### Miniature du modèle {#template-thumbnail-image}
 
@@ -226,12 +229,12 @@ Pour définir la miniature du modèle :
 
 1. Lorsque vous êtes satisfait de la miniature, cliquez ou appuyez sur **Enregistrer et Fermer**.
 
-### Activation et autorisation d’un modèle - Créateur de modèles {#enabling-and-allowing-a-template-template-author}
+### Activation et autorisation d’un modèle - Créateur de modèles    {#enabling-and-allowing-a-template-template-author}
 
 Pour utiliser un modèle lors de la création d’une page, vous devez effectuer les deux tâches suivantes :
 
-* [Activez le modèle](#enabling-a-template-template-author) pour le rendre disponible lors de la création de pages.
-* [Permet au modèle](#allowing-a-template-author) de spécifier les branches de contenu dans lesquelles le modèle peut être utilisé.
+* [Activer le modèle](#enabling-a-template-template-author) : permet de le rendre disponible lors de la création de pages.
+* [Autoriser le modèle](#allowing-a-template-author) : permet de spécifier les branches de contenu dans lesquelles le modèle peut être utilisé.
 
 #### Activation d’un modèle - Créateur de modèles {#enabling-a-template-template-author}
 
@@ -241,13 +244,13 @@ Un modèle peut être activé ou désactivé pour être mis à disposition (ou n
 >
 >Une fois qu’un modèle est activé, un avertissement s’affiche lorsqu’un créateur de modèles commence à le mettre à jour. Cela permet d’avertir l’utilisateur que le modèle peut être référencé et que donc des modifications sont susceptibles d’affecter les pages faisant référence à ce modèle.
 
-1. In the **Templates Console**, select the template.
-1. Select **Enable** or **Disable** from the toolbar, and again in the confirmation dialog.
+1. Dans la **console de modèles**, sélectionnez le modèle.
+1. Sélectionnez **Activer** ou **Désactiver** dans la barre d’outils, puis de nouveau dans la boîte de dialogue de confirmation.
 1. Vous pouvez maintenant utiliser le modèle lors de la [création d’une page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Cependant, vous souhaiterez sans doute [modifier le modèle](#editing-templates-template-authors) en fonction de vos besoins.
 
 >[!NOTE]
 >
->L’état d’un modèle (brouillon, activé ou désactivé) est indiqué dans la console.
+>L’état du modèle (brouillon, activé ou désactivé) est indiqué dans la console.
 
 #### Autorisation d’un modèle - Créateur {#allowing-a-template-author}
 
@@ -257,7 +260,7 @@ Un modèle peut être rendu disponible ou indisponible pour certaines branches d
 
 1. Ouvrez l’onglet **Avancé**.
 
-1. Sous **Paramètres du modèle**, utilisez l’option **Ajouter un champ** pour spécifier le(s) chemin(s) d’accès vers vos modèles.
+1. Sous **Paramètres du modèle**, utilisez **Ajouter un champ** pour spécifier le ou les chemins d’accès de vos modèles.
 
    Le chemin d’accès peut être explicite ou utiliser des modèles. Par exemple :
 
@@ -281,13 +284,13 @@ Un modèle peut être rendu disponible ou indisponible pour certaines branches d
 
 Dans la mesure où il est référencé lors du rendu d’une page, le modèle (totalement configuré) doit être publié afin d’être disponible dans l’environnement de publication.
 
-1. In the **Templates Console**, select the template.
+1. Dans la **console de modèles**, sélectionnez le modèle.
 1. Sélectionnez **Publier** dans la barre d’outils pour ouvrir l’Assistant.
 1. Sélectionnez les **Politiques de contenu** à publier en tandem.
 
 1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
 
-## Modification des modèles  - Créateurs de modèles {#editing-templates-template-authors}
+## Modification des modèles    - Créateurs de modèles    {#editing-templates-template-authors}
 
 Lors de la création ou de la modification d’un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
@@ -309,11 +312,11 @@ Les aspects suivants d’un modèle peuvent être modifiés :
 
    >[!NOTE]
    >
-   >En mode **Contenu initial** (et dans les pages créées), les composants déverrouillés qui possèdent un parent accessible (c’est-à-dire, les composants dans un conteneur de mise en page) peuvent être supprimés.
+   >En mode **Contenu initial** (et dans les pages créées), les composants déverrouillés qui possèdent un parent accessible (c’est-à-dire, les composants dans un conteneur de mises en page) peuvent être supprimés.
 
 * [Mise en page](#editing-a-template-layout-template-author)
 
-   Vous pouvez prédéfinir la mise en page du modèle pour les formats de dispositif de votre choix. Le mode **Disposition** pour la création de modèles a la même fonctionnalité que le mode **[Disposition](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**pour la création de pages].
+   Vous pouvez prédéfinir la mise en page du modèle pour les formats de dispositif de votre choix. Le mode **Mise en page** pour la création de modèles comporte la même fonctionnalité que le mode **[Mise en page](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**pour la création de pages].
 
 * [Stratégies de page](#editing-a-template-structure-template-author)
 
@@ -362,14 +365,16 @@ En mode **Structure** de l’éditeur de modèles :
    * Dans l’Explorateur de **composants** du panneau latéral.
    * En utilisant l’option **Insérer le composant** (icône **+**) disponible dans la barre d’outils des composants figurant déjà dans le modèle ou la zone **Faire glisser les composants ici**.
    * En faisant glisser une ressource (de l’Explorateur de **ressources** dans le panneau latéral) directement dans le modèle pour générer le composant approprié in situ.
+
    Une fois ajouté, chaque composant est identifié par :
 
    * Une bordure
    * Un marqueur indiquant le type de composant
    * Un marqueur indiquant quand le composant a été déverrouillé
+
    >[!NOTE]
    >
-   >Lorsque vous ajoutez un composant **Titre** prêt à l’emploi au modèle, il contient la **structure** de texte par défaut.
+   >Lorsque vous ajoutez un composant **Titre** prêt à l’emploi au modèle, il contient le texte **structure** par défaut.
    >
    >
    >Si vous le modifiez et que vous ajoutez votre propre texte, le texte mis à jour sera utilisé pour les pages créées à partir du modèle.
@@ -411,29 +416,30 @@ En mode **Structure** de l’éditeur de modèles :
 
    La fenêtre de configuration est divisée en deux.
 
-   * In the left side of the dialogue under **Policy**, you have the ability to select an existing policy or select an existing one.
-   * In the right side of the dialogue under **Properties**, you can set the properties specific to the component type.
+   * Dans la partie gauche de la boîte de dialogue, sous **Stratégie**, vous avez la possibilité de sélectionner une stratégie existante.
+   * Dans la partie droite de la boîte de dialogue, sous **Propriétés**, vous pouvez définir les propriétés spécifiques au type de composant.
+
    Les propriétés disponibles dépendent du composant sélectionné. Par exemple, pour un composant de texte, les propriétés définissent entre autres les options de copie et de collage, de mise en forme, et le style des paragraphes.
 
    ***Stratégie***
 
    Les stratégies de contenu (ou de conception) définissent les propriétés de conception d’un composant. Par exemple, les composants disponibles ou les dimensions minimales/maximales. Elles s’appliquent au modèle (et aux pages créées avec le modèle).
 
-   Under **Policy** you can select an existing policy to apply to the component via the drop-down.
+   Sous **Stratégie**, vous pouvez sélectionner, dans le menu déroulant, une stratégie à appliquer au composant.
 
    ![chlimage_1-367](assets/chlimage_1-367.png)
 
-   Vous pouvez ajouter une nouvelle stratégie en sélectionnant le bouton d’ajout en regard du menu déroulant **Sélectionner une stratégie.** A new title should then be given in the **Policy Title** field.
+   Vous pouvez ajouter une nouvelle stratégie en sélectionnant le bouton d’ajout en regard du menu déroulant **Sélectionner une stratégie**. Vous devez ensuite attribuer un nouveau titre dans le champ **Titre de la stratégie**.
 
    ![chlimage_1-368](assets/chlimage_1-368.png)
 
-   La stratégie existante sélectionnée dans le menu déroulant **Sélectionner une stratégie** peut être copiée comme nouvelle stratégie à l’aide du bouton de copie en regard du menu déroulant. A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
+   La stratégie existante sélectionnée dans le menu déroulant **Sélectionner une stratégie** peut être copiée comme nouvelle stratégie à l’aide du bouton de copie en regard du menu déroulant. Vous devez ensuite attribuer un nouveau titre dans le champ **Titre de la stratégie**. Par défaut, la stratégie copiée sera intitulée **Copie de X**, X étant le titre de la stratégie copiée.
 
    ![chlimage_1-369](assets/chlimage_1-369.png)
 
    Vous pouvez saisir la description de la stratégie dans le champ **Description de la stratégie** (facultatif).
 
-   In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
+   Dans la section **D’autres modèles utilisent également la stratégie sélectionnée**, vous pouvez facilement voir les autres modèles qui utilisent la stratégie sélectionnée dans le menu déroulant **Sélectionner une stratégie**.
 
    ![chlimage_1-370](assets/chlimage_1-370.png)
 
@@ -447,6 +453,7 @@ En mode **Structure** de l’éditeur de modèles :
 
    * Principal
    * Fonctionnalités
+
    *Principal*
 
    Dans l’onglet **Principal**, les paramètres les plus importants du composant sont définis.
@@ -473,11 +480,11 @@ En mode **Structure** de l’éditeur de modèles :
 
    >[!CAUTION]
    >
-   >Note that in AEM crop ratios are defined as **height/width**. Cela diffère de la définition conventionnelle de la largeur/hauteur. Cette différence a été créée pour des raisons de compatibilité héritée. Les utilisateurs de la création de pages ne percevront aucune différence à condition que vous définissiez clairement le **Nom**, car c’est ce dernier qui s’affiche dans l’interface utilisateur.
+   >Remarque : Dans AEM, les rapports de recadrage sont définis sous forme de **hauteur/largeur**. Cela diffère de la définition conventionnelle de la largeur/hauteur. Cette différence a été créée pour des raisons de compatibilité héritée. Les utilisateurs de la création de pages ne percevront aucune différence à condition que vous définissiez clairement le **Nom**, car c’est ce dernier qui s’affiche dans l’interface utilisateur.
 
    >[!NOTE]
    >
-   >[Les stratégies de contenu pour les composants impliquant la mise en œuvre de l’Éditeur de texte enrichi ](/help/sites-administering/rich-text-editor.md) peuvent uniquement être définies pour les options accessibles par les paramètres de l’interface utilisateur, via ses propres paramètres d’interface utilisateur.
+   >[](/help/sites-administering/rich-text-editor.md)Les stratégies de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi peuvent uniquement être définies pour les options accessibles par les paramètres de l’interface utilisateur, via ses propres paramètres d’interface utilisateur.
 
 * **Stratégie et propriétés (conteneur de mises en page)**
 
@@ -493,7 +500,7 @@ En mode **Structure** de l’éditeur de modèles :
 
    Les stratégies de contenu (ou de conception) définissent les propriétés de conception d’un composant. Par exemple, les composants disponibles ou les dimensions minimales/maximales. Elles s’appliquent au modèle (et aux pages créées avec le modèle).
 
-   Under **Policy** you can select an existing policy to apply to the component via the drop-down. Cela fonctionne exactement comme dans l’utilisation générale de la fenêtre.
+   Sous **Stratégie**, vous pouvez sélectionner, dans le menu déroulant, une stratégie à appliquer au composant. Cela fonctionne exactement comme dans l’utilisation générale de la fenêtre.
 
    ***Propriétés***
 
@@ -502,6 +509,7 @@ En mode **Structure** de l’éditeur de modèles :
    * Composants autorisés
    * Composants par défaut
    * Paramètres réactifs
+
    *Composants autorisés*
 
    Dans l’onglet **Composants autorisés**, vous définissez les composants disponibles pour le conteneur de mises en page.
@@ -511,11 +519,12 @@ En mode **Structure** de l’éditeur de modèles :
    * Le signe moins indique qu’au moins un élément du groupe est sélectionné, mais pas tous.
    * Un champ de recherche est disponible pour filtrer un composant en fonction de son nom.
    * Les chiffres à droite du nom du groupe de composants représentent le nombre total de composants sélectionnés dans ce groupe, quel que soit le filtre.
+
    ![chlimage_1-374](assets/chlimage_1-374.png)
 
    *Composants par défaut*
 
-   Dans l’onglet **Composants par défaut**, vous définissez les composants qui sont automatiquement associés à des types de média donnés. Ainsi, lorsqu’un créateur fait glisser une ressource depuis le navigateur des ressources, AEM sait avec quel composant l’associer. Notez que seuls les composants dotés de zones de dépôt sont disponibles pour cette configuration.
+   Dans l’onglet **Composants par défaut**, vous définissez les composants qui sont automatiquement associés à des types de médias donnés. Ainsi, lorsqu’un créateur fait glisser une ressource depuis le navigateur des ressources, AEM sait avec quel composant l’associer. Notez que seuls les composants dotés de zones de dépôt sont disponibles pour cette configuration.
 
    Cliquez ou appuyez sur **Ajouter le mappage** pour ajouter un nouveau composant et un mappage de type MIME.
 
@@ -537,11 +546,12 @@ En mode **Structure** de l’éditeur de modèles :
    * La barre d’outils Composants est ajustée en conséquence.
    * Tout contenu déjà saisi ne sera plus affiché en mode **Structure**.
 
-      * Already entered content is considered initial content and is only visible in **Initial Content** mode.
+      * Le contenu déjà saisi est considéré comme du contenu initial et n’est visible qu’en mode **Contenu initial**.
    * Les parents du composant déverrouillé ne peuvent être ni déplacés, ni coupés, ni supprimés.
+
    ![chlimage_1-376](assets/chlimage_1-376.png)
 
-   Cela comprend le déverrouillage des composants de conteneur afin que d’autres composants puissent être ajoutés, soit en mode **Contenu initial**, soit sur les pages résultantes. Si vous avez déjà ajouté des composants/du contenu au conteneur avant de le déverrouiller, ceux-ci ne s’afficheront plus en mode **Structure**, mais en mode **Contenu initial**. En **mode Structure**, seul le composant de conteneur lui-même s’affichera avec sa liste de **composants autorisés**.
+   Cela comprend le déverrouillage des composants de conteneur afin que d’autres composants puissent être ajoutés, soit en mode **Contenu initial**, soit sur les pages résultantes. Si vous avez déjà ajouté des composants/du contenu au conteneur avant de le déverrouiller, ceux-ci ne s’afficheront plus en mode **Structure**, mais en mode **Contenu initial**. En mode **Structure**, seul le composant de conteneur est affiché avec sa liste de **Composants autorisés**.
 
    ![chlimage_1-377](assets/chlimage_1-377.png)
 
@@ -561,11 +571,11 @@ En mode **Structure** de l’éditeur de modèles :
 
 Le mode **Contenu initial** est utilisé pour définir le contenu qui s’affiche lors de la première création d’une page en fonction du modèle. Le contenu initial peut ensuite être modifié par les créateurs de la page.
 
-Bien que tout le contenu créé en mode **Structure** soit visible dans le **contenu initial**, seuls les composants déverrouillés peuvent être sélectionnés et modifiés.
+Même si l’ensemble du contenu créé en mode **Structure** est visible en mode **Contenu initial**, seuls les composants déverrouillés peuvent être sélectionnés et modifiés.
 
 >[!NOTE]
 >
->Le mode **Contenu initial** peut être envisagé comme mode de modification pour les pages créées avec ce modèle. Par conséquent, les stratégies ne sont pas définies en mode **Contenu initial**, mais plutôt en mode **[Structure](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)**.
+>Le mode **Contenu initial** peut être envisagé comme mode d’édition pour les pages créées avec ce modèle. Par conséquent, les stratégies ne sont pas définies en mode **Contenu initial**, mais plutôt en mode **[Structure](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)**.
 
 * Les composants déverrouillés modifiables sont marqués. Une fois sélectionnés, ils comportent une bordure bleue :
 
@@ -575,9 +585,9 @@ Bien que tout le contenu créé en mode **Structure** soit visible dans le **con
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
-* Si un composant de conteneur a été déverrouillé (en mode **Structure**), vous pouvez alors ajouter de nouveaux composants au conteneur (en mode **Contenu initial**). Les composants ajoutés en mode **Contenu initial** peuvent être déplacés ou supprimés des pages résultantes.
+* Si un composant de conteneur a été déverrouillé (en mode **Structure**), vous pouvez ajouter de nouveaux composants au conteneur (en mode **Contenu initial**). Les composants ajoutés en mode **Contenu initial** peuvent être déplacés ou supprimés dans les pages créées.
 
-   Vous pouvez ajouter un composant à l’aide de la zone **Faire glisser les composants ici** ou de l’option **Insérer un nouveau composant** depuis la barre d’outils du conteneur approprié.
+   Vous pouvez ajouter le composant à l’aide de la zone **Faire glisser les composants ici** ou de l’option **Insérer un nouveau composant** de la barre d’outils du conteneur approprié.
 
    ![chlimage_1-382](assets/chlimage_1-382.png) ![chlimage_1-383](assets/chlimage_1-383.png)
 
@@ -589,7 +599,7 @@ Bien que tout le contenu créé en mode **Structure** soit visible dans le **con
 
 ### Modification d’un modèle - Mise en page - Créateur de modèles {#editing-a-template-layout-template-author}
 
-Vous pouvez définir la mise en page du modèle pour différents dispositifs. [La mise en page réactive pour les modèles fonctionne de la même manière que pour la création de pages.](/help/sites-authoring/responsive-layout.md)
+Vous pouvez définir la mise en page du modèle pour différents appareils. [La mise en page réactive pour les modèles fonctionne de la même manière que pour la création de pages.](/help/sites-authoring/responsive-layout.md)
 
 >[!NOTE]
 >
@@ -608,6 +618,7 @@ Pour accéder à la boîte de dialogue **Conception de page** :
 
    * La moitié gauche définit les [stratégies de page](/help/sites-authoring/templates.md#page-policies).
    * La moitié droite définit les [propriétés de page](/help/sites-authoring/templates.md#page-properties).
+
    ![chlimage_1-385](assets/chlimage_1-385.png)
 
 #### Stratégies de page {#page-policies}
@@ -620,11 +631,11 @@ Vous pouvez appliquer une stratégie de contenu au modèle ou aux pages créées
 
    ![chlimage_1-387](assets/chlimage_1-387.png)
 
-   Vous pouvez ajouter une nouvelle stratégie en sélectionnant le bouton d’ajout en regard du menu déroulant **Sélectionner une stratégie.** A new title should then be given in the **Policy Title** field.
+   Vous pouvez ajouter une nouvelle stratégie en sélectionnant le bouton d’ajout en regard du menu déroulant **Sélectionner une stratégie**. Vous devez ensuite attribuer un nouveau titre dans le champ **Titre de la stratégie**.
 
    ![chlimage_1-388](assets/chlimage_1-388.png)
 
-   La stratégie existante sélectionnée dans le menu déroulant **Sélectionner une stratégie** peut être copiée comme nouvelle stratégie à l’aide du bouton de copie en regard du menu déroulant. A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
+   La stratégie existante sélectionnée dans le menu déroulant **Sélectionner une stratégie** peut être copiée comme nouvelle stratégie à l’aide du bouton de copie en regard du menu déroulant. Vous devez ensuite attribuer un nouveau titre dans le champ **Titre de la stratégie**. Par défaut, la stratégie copiée sera intitulée **Copie de X**, X étant le titre de la stratégie copiée.
 
    ![chlimage_1-389](assets/chlimage_1-389.png)
 
@@ -633,13 +644,13 @@ Vous pouvez appliquer une stratégie de contenu au modèle ou aux pages créées
    ![chlimage_1-390](assets/chlimage_1-390.png)
 
 * Vous pouvez saisir la description de la stratégie dans le champ **Description de la stratégie** (facultatif).
-* In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
+* Dans la section **D’autres modèles utilisent également la stratégie sélectionnée**, vous pouvez facilement voir les autres modèles qui utilisent la stratégie sélectionnée dans le menu déroulant **Sélectionner une stratégie**.
 
    ![chlimage_1-391](assets/chlimage_1-391.png)
 
 #### Propriétés de page {#page-properties}
 
-Using page properties, you can define the required client-side libraries by using the **Page Design** dialog. Ces bibliothèques côté client incluent des feuilles de style et du code JavaScript à charger avec le modèle et les pages créées avec ce modèle.
+À l’aide des propriétés de page, vous pouvez définir les bibliothèques côté client requises avec la boîte de dialogue **Conception de page**. Ces bibliothèques côté client incluent des feuilles de style et du code JavaScript à charger avec le modèle et les pages créées avec ce modèle.
 
 ![chlimage_1-392](assets/chlimage_1-392.png)
 
@@ -675,7 +686,7 @@ Using page properties, you can define the required client-side libraries by usin
 
 1. Confirmez vos définitions en cliquant/appuyant sur **Terminé**.
 
-## Meilleures pratiques {#best-practices}
+## Bonnes pratiques {#best-practices}
 
 Lors de la création de modèles, vous devez prendre en compte :
 
@@ -698,6 +709,7 @@ Lors de la création de modèles, vous devez prendre en compte :
 
       * est réservé à la structure, auquel cas elles sont appliquées immédiatement.
       * contient le contenu initial, auquel cas elles ne sont appliquées qu’aux pages créées après les modifications.
+
    Soyez particulièrement prudent lors du :
 
    * verrouillage ou déverrouillage des composants sur des modèles activés.
@@ -705,6 +717,7 @@ Lors de la création de modèles, vous devez prendre en compte :
 
       * Le déverrouillage des composants (qui ont été verrouillés) est manquant dans les pages existantes.
       * Le verrouillage des composants (modifiables) empêche l’affichage de ce contenu dans les pages.
+
    >[!NOTE]
    >
    >AEM génère des avertissements explicites lors de la modification du statut de verrouillage des composants dans les modèles qui ne sont plus des brouillons.
