@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d2695f71-5126-477c-ae6b-a964fb55728b
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '1644'
+ht-degree: 84%
 
 ---
 
@@ -31,7 +34,7 @@ Le site de référence de libre-service des employés montre comment vous pouvez
 
 ## Présentation du questionnaire sur les conflits d’intérêt {#conflict-of-interest-questionnaire-walkthrough}
 
-Les organisations demandent de temps à autre à leurs employés de soumettre un questionnaire sur les conflits d’intérêts afin d’identifier les activités extérieures ou les relations personnelles de leurs employés qui pourraient entrer en conflit avec leur organisation.
+De temps à autre, les organisations demandent à leurs employés de soumettre un questionnaire sur les conflits d’intérêts afin de déterminer les activités ou les relations personnelles de leurs employés qui pourraient entrer en conflit avec leur organisation.
 
 Le service de conformité de l’organisation de Sarah a demandé aux employés de soumettre le questionnaire sur les conflits d’intérêts.
 
@@ -39,9 +42,9 @@ Le service de conformité de l’organisation de Sarah a demandé aux employés 
 
 Sarah se rend sur le portail de son entreprise, se connecte et clique sur Employé pour accéder au tableau de bord des employés. Elle trouve le questionnaire sur les conflits d’intérêt dans le tableau de bord des employés et clique sur **[!UICONTROL Demander]**.
 
-![](assets/we-finance-home.png) we-finance-home **** Figure : Portail *d’organisation*
+![we-finance-home](assets/we-finance-home.png)**Figure :** *Portail d’organisation*
 
-![](assets/employee-dashboard.png) employee-dashboard **** Figure : Tableau de bord *Employé*
+![employé-tableau de bord](assets/employee-dashboard.png)**Figure :** *tableau de bord employé*
 
 Sarah navigue dans le formulaire en utilisant le bouton Suivant et lit les sections Introduction et Définition. Elle répond aux questions dans la section dédiée. Enfin, elle signe et envoie le questionnaire.
 
@@ -53,7 +56,7 @@ Le portail de l’entreprise et le questionnaire sont réactifs et compatibles a
 
 Le portail de l’entreprise et le tableau de bord des employés sont des pages de sites AEM. Le tableau de bord répertorie plusieurs options de libre-service, telles que le questionnaire sur les conflits d’intérêt. Le bouton Demander est lié à un formulaire adaptatif.
 
-Le formulaire adaptatif utilise des règles pour masquer ou afficher les informations en fonction de la réponse fournie dans l’onglet Questions. En outre, le formulaire utilise le composant Scribble pour la signature dans l’onglet Déclaration. Consultez le formulaire adaptatif à l’adresse `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/conflict-of-interest.html`.
+Le formulaire adaptatif utilise des règles pour masquer ou afficher les informations en fonction de la réponse fournie dans l’onglet Questions. En outre, le formulaire utilise le composant Scribble pour la signature dans l’onglet Déclaration. Consultez le formulaire adaptatif à `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/conflict-of-interest.html`.
 
 **Démonstration**
 
@@ -63,15 +66,15 @@ Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-ser
 
 Le questionnaire sur les conflits d’intérêt envoyé par Sarah est attribué à Gloria Rios pour examen. Gloria travaille en tant qu’agent de conformité dans l’entreprise. Gloria se connecte à sa boîte de réception AEM et passe en revue les tâches qui lui sont assignées. Elle approuve le questionnaire envoyé par Sarah et termine la tâche.
 
-![](assets/conflict-inbox.png) Conflict-inbox **** Figure : Boîte de réception de *Gloria*
+![inbox](assets/conflict-inbox.png)**de conflit Figure :** *La boîte de réception de Gloria*
 
-![](assets/conflict-approved.png) approuvé&#x200B;**par** le conflit Figure : Tâche *Ouvrir*
+![approuvé](assets/conflict-approved.png)**parle conflit Figure :** *Ouvrir la tâche*
 
 **Fonctionnement**
 
-L’action d’envoi dans le questionnaire sur les conflits d’intérêt déclenche un processus qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le processus des formulaires à l’adresse `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-conflict-of-interest.html`
+L’action d’envoi dans le questionnaire sur les conflits d’intérêt déclenche un processus qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le Forms Workflow à l’adresse `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-conflict-of-interest.html`
 
-![employee-self-service-reference-site](assets/employee-self-service-reference-site.png)
+![site de référence-libre-service-employé](assets/employee-self-service-reference-site.png)
 
 **Démonstration**
 
@@ -85,9 +88,9 @@ Sarah voyage beaucoup pour les affaires et elle a besoin d’une carte de crédi
 
 Sarah se rend sur le portail de son entreprise, se connecte et clique sur **[!UICONTROL Employé]** pour accéder au tableau de bord des employés. Elle trouve la demande Carte d’entreprise dans le tableau de bord des employés et clique sur **[!UICONTROL Demander]**.
 
-![](assets/we-finance-home-1.png) we-finance-home-1 **** Figure : Portail *d’organisation*
+![we-finance-home-1](assets/we-finance-home-1.png)**Figure :** *Portail d’organisation*
 
-![](assets/employee-dashboard-1.png) employee-dashboard-1 **** Figure : Tableau de bord *Employé*
+![employee-tableau de bord-1](assets/employee-dashboard-1.png)**Figure :** *tableau de bord employé*
 
 Elle clique sur **[!UICONTROL Demander]** dans la demande Carte d’entreprise. Une demande d’une page s’ouvre. Elle renseigne toutes les informations et clique sur **[!UICONTROL Demander]** pour envoyer la demande.
 
@@ -108,15 +111,15 @@ Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-ser
 
 La demande de carte d’entreprise envoyée par Sarah est attribuée à Gloria Rios pour examen. Gloria se connecte à sa boîte de réception AEM et passe en revue les tâches qui lui sont assignées. Elle approuve la demande envoyée par Sarah et termine la tâche.
 
-![](assets/corporate-card-inbox.png) enterprise-card-inbox **** Figure: Boîte de réception de *Gloria*
+![carte d&#39;entreprise-boîte de réception](assets/corporate-card-inbox.png)**Figure :** *La boîte de réception de Gloria*
 
-![](assets/corporate-card-approved.png) approbation **par carte d&#39;entreprise** Figure : Tâche *Ouvrir*
+![Carte d&#39;entreprise approuvée](assets/corporate-card-approved.png)**Figure :** *Ouvrir la tâche*
 
 **Fonctionnement**
 
-Le processus d’envoi dans la demande de carte d’entreprise déclenche un processus Forms qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le processus des formulaires à l’adresse `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-corporate-card.html`
+Le processus d’envoi dans la demande de carte d’entreprise déclenche un processus Forms qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le Forms Workflow à l’adresse `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-corporate-card.html`
 
-![carte d&#39;entreprise-modèle de processus](assets/corporate-card-workflow-model.png)
+![carte d&#39;entreprise-workflow-modèle](assets/corporate-card-workflow-model.png)
 
 **Démonstration**
 
@@ -130,21 +133,21 @@ Sarah doit envoyer des rapports de dépenses pour approbation car ses déplaceme
 
 Sarah se rend sur le portail de son entreprise, se connecte et clique sur **[!UICONTROL Employé]** pour accéder au tableau de bord des employés. Elle trouve la demande Rapport de dépenses dans le tableau de bord des employés et clique sur **[!UICONTROL Demander]**.
 
-![](assets/we-finance-home-2.png) we-finance-home-2 **** Figure: Portail *d’organisation*
+![we-finance-home-2](assets/we-finance-home-2.png)**Figure :** *Portail d’organisation*
 
-![](assets/employee-dashboard-2.png) employee-dashboard-2 **** Figure : Tableau de bord *Employé*
+![employee-tableau de bord-2](assets/employee-dashboard-2.png)**Figure :** *tableau de bord employé*
 
 Elle clique sur **[!UICONTROL Demander]** dans la demande Rapport de dépenses. Un formulaire de demande s’ouvre avec deux onglets : Nom du rapport et Détails du rapport. L’icône **+** dans l’onglet Détails du rapport lui permet d’ajouter plus de dépenses dans un rapport.
 
 Le portail de l’entreprise et les demandes sont réactifs et compatibles avec les appareils mobiles. Le processus suivant montre comment Sarah navigue dans le rapport de dépenses et l’envoie depuis son appareil mobile.
 
-![notes de frais sur mobile](assets/expense-report-on-mobile.png)
+![rapport de dépenses sur mobile](assets/expense-report-on-mobile.png)
 
 **Fonctionnement**
 
 Le portail de l’entreprise et le tableau de bord des employés sont des pages de sites AEM. Le tableau de bord répertorie plusieurs options de libre-service, telles que la demande de rapport de dépenses. Le bouton Demander est lié à un formulaire adaptatif.
 
-Les onglets Nom du rapport et Détails du rapport du formulaire adaptatif sont des composants Panneau. Le panneau Détails du rapport contient le panneau Dépenses. Il s’agit d’un panneau répétable qui permet d’ajouter plusieurs dépenses dans le rapport. Consultez le formulaire adaptatif et ses configurations à l’adresse `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/expense-report.html`.
+Les onglets Nom du rapport et Détails du rapport du formulaire adaptatif sont des composants Panneau. Le panneau Détails du rapport contient le panneau Dépenses. Il s’agit d’un panneau répétable qui permet d’ajouter plusieurs dépenses dans le rapport. Consultez le formulaire adaptatif et ses configurations à `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/expense-report.html`.
 
 **Démonstration**
 
@@ -154,15 +157,15 @@ Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-ser
 
 Le rapport de dépenses envoyé par Sarah est attribué à Gloria Rios pour examen. Gloria se connecte à sa boîte de réception AEM et passe en revue les tâches qui lui sont assignées. Elle approuve la demande envoyée par Sarah et termine la tâche.
 
-![](assets/expense-report-inbox.png) cost-report-inbox **** Figure : Boîte de réception de *Gloria*
+![notes de frais-boîte de réception](assets/expense-report-inbox.png)**Figure :** *La boîte de réception de Gloria*
 
-![](assets/expense-report-approved.png) notes de frais approuvées **** Figure : Tâche *Ouvrir*
+![rapport de dépenses approuvé](assets/expense-report-approved.png)**Figure :** *Ouvrir la tâche*
 
 **Fonctionnement**
 
-Le processus d’envoi dans la demande de rapport de dépenses déclenche un processus Forms qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le processus des formulaires à l’adresse `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-expense-report-workflow.html`
+Le processus d’envoi dans la demande de rapport de dépenses déclenche un processus Forms qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le Forms Workflow à l’adresse `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-expense-report-workflow.html`
 
-![carte d&#39;entreprise-dépense-rapport-processus-modèle](assets/corporate-card-expense-report-workflow-model.png)
+![carte d&#39;entreprise-dépense-rapport-workflow-modèle](assets/corporate-card-expense-report-workflow-model.png)
 
 **Démonstration**
 
@@ -176,15 +179,15 @@ Sarah prévoit des vacances en famille le mois prochain et veut demander une sem
 
 Sarah se rend sur le portail de son entreprise, se connecte et clique sur **[!UICONTROL Employé]** pour accéder au tableau de bord des employés. Elle trouve la demande de congés dans le tableau de bord des employés et clique sur **[!UICONTROL Demander]**.
 
-![](assets/we-finance-home-3.png) we-finance-home-3 **** Figure : Portail *d’organisation*
+![we-finance-home-3](assets/we-finance-home-3.png)**Figure :** *Portail d’organisation*
 
-![](assets/employee-dashboard-3.png) employee-dashboard-3 **** Figure : Tableau de bord *Employé*
+![employee-tableau de bord-3](assets/employee-dashboard-3.png)**Figure :** *tableau de bord employé*
 
 La demande de congés s’ouvre avec le nom de Sarah et son ID d’employée pré-renseignés dans le formulaire. Elle affiche également son nombre de jours de congé et l’historique. Elle remplit les informations du congé et envoie la demande pour approbation.
 
 Le portail de l’entreprise et les demandes sont réactifs et compatibles avec les appareils mobiles. Le processus suivant montre comment Sarah navigue dans la demande et l’envoie depuis son appareil mobile.
 
-![leave-form-on-mobile](assets/leave-form-on-mobile.png)
+![congé-sur-mobile](assets/leave-form-on-mobile.png)
 
 **Fonctionnement**
 
@@ -206,13 +209,13 @@ Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-ser
 
 La demande de congés envoyée par Sarah est attribuée à Gloria Rios pour examen. Gloria se connecte à sa boîte de réception AEM et passe en revue les tâches qui lui sont assignées. Elle approuve la demande envoyée par Sarah et termine la tâche.
 
-![](assets/leave-inbox.png) leave-inbox **** Figure: Boîte de réception de *Gloria*
+![leave-inbox](assets/leave-inbox.png)**Figure :** *La boîte de réception de Gloria*
 
-![](assets/leave-approved.png) approbation **de congé** Figure : Tâche *Ouvrir*
+![approbation](assets/leave-approved.png)**de congé Figure :** *Ouvrir la tâche*
 
 **Fonctionnement**
 
-Le processus d’envoi dans la demande de congés déclenche un processus Forms qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le processus des formulaires à l’adresse `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-leave-application.html`
+Le processus d’envoi dans la demande de congés déclenche un processus Forms qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le Forms Workflow à l’adresse `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-leave-application.html`
 
 ![carte d&#39;entreprise-sortie-application-workflow-modèle](assets/corporate-card-leave-application-workflow-model.png)
 
