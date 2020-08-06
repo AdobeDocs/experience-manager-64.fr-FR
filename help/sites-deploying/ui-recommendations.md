@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 42bf42cb-0c6c-4390-8170-2c540c4d3ed3
 translation-type: tm+mt
 source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 98%
 
 ---
 
@@ -91,7 +94,7 @@ Voici une liste de recommandations de la gestion du produit pour Adobe Experien
  </tbody> 
 </table>
 
-## FAQ {#faq}
+## FAQ  {#faq}
 
 Voir l’article de la base de connaissances, [FAQ sur la création dans l’interface utilisateur tactile](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html) pour en savoir plus, notamment sur la planification du déclassement de l’IU classique.
 
@@ -124,5 +127,5 @@ Pour des informations détaillées de développement :
 * [Personnalisation de la création de la page dans l’IU optimisée pour les écrans tactiles](/help/sites-developing/customizing-page-authoring-touch.md) (inclut un exemple de code).
 
 * [Séance AEM sur la personnalisation de l’IU optimisée pour les écrans tactiles](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
-* [Documentation sur l’interface utilisateur Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html).
+* [Documentation sur l’interface utilisateur Granite](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html).
 
