@@ -36,6 +36,7 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 >* Indisponible dans l’IU classique.
 >* Indisponible pour les pages d’une live copy.
 >* Uniquement disponible pour les pages ayant le même type de ressource.
+
 >
 
 
@@ -56,6 +57,7 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 >* `/libs/granite/ui/components/foundation/form/datepicker`
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
+
 >
 
 
@@ -73,9 +75,10 @@ Les champs sont activés sur le composant de page (et *non* sur le modèle) :
 1. Navigate to the required field within the `cq:dialog` definition.
 1. Définissez la propriété suivante sur le nœud de champ :
 
-   * **Name** (Nom) : `allowBulkEdit`
-   * **Type**: `Boolean`
+   * **Nom** : `allowBulkEdit`
+   * **Type** : `Boolean`
    * **Valeur**: `true`
+
    Par exemple, pour le [composant de base](/help/sites-authoring/default-components-foundation.md) de page standard :
 
    `/libs/foundation/components/page`
