@@ -1,8 +1,8 @@
 ---
 title: Tendances d’activité
 seo-title: Tendances d’activité
-description: Ajout d’un composant Liste d’activités de la communauté à une page
-seo-description: Ajout d’un composant Liste d’activités de la communauté à une page
+description: Ajouter un composant Liste d'Activité communautaire à une page
+seo-description: Ajouter un composant Liste d'Activité communautaire à une page
 uuid: 6a030340-0e69-432a-98f1-3effb2b97136
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 93a112fc-ef34-4281-89b8-a0f1b3d3aca9
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 29%
 
 ---
 
@@ -23,19 +26,19 @@ The `Community Activity List` component provides the ability to add trending inf
 
 Cette section de la documentation décrit :
 
-* Ajout du `Community Activity List` composant à un site [communautaire](overview.md#community-sites)
+* Ajouter le `Community Activity List` composant à un site [communautaire](overview.md#community-sites)
 
 * Configuration settings for the `Community Activity List` component
 
 ## Condition requise {#requirement}
 
-Les données du `Community Activity List` module ne sont disponibles que si Adobe Analytics est sous licence et configuré pour le site de la communauté.
+Les données pour le site `Community Activity List` sont disponibles uniquement lorsque Adobe Analytics est sous licence et configuré pour le site communautaire.
 
-Voir Configuration [Analytics pour les fonctionnalités](analytics.md)des communautés.
+Voir Configuration [d’Analytics pour les fonctionnalités](analytics.md)des communautés.
 
 ## Adding a Community Activity List to a Page {#adding-a-community-activity-list-to-a-page}
 
-Pour ajouter un `Community Activity List` composant à une page en mode création, recherchez le composant `Communities / Community Activity List` et faites-le glisser vers son emplacement sur une page.
+Pour ajouter un `Community Activity List` composant à une page en mode création, localisez le composant `Communities / Community Activity List` et faites-le glisser vers son emplacement sur une page.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
@@ -43,7 +46,7 @@ Placé pour la première fois sur une page d’un site de communauté, voici à 
 
 ![chlimage_1-227](assets/chlimage_1-227.png)
 
-## Configuration de la liste des activités de la communauté {#configuring-community-activity-list}
+## Configuration de la Liste d’Activité de la communauté  {#configuring-community-activity-list}
 
 Select the placed `Community Activity List` component to access and select the `Configure` icon which opens the edit dialog.
 
@@ -57,9 +60,10 @@ Dans l’onglet **[!UICONTROL Commentaires]**, indiquez si et comment les commen
 
    Indiquez s’il faut afficher les données concernant les membres de la communauté ou le contenu généré par l’utilisateur.
 
-   Sélectionner parmi
+   Sélectionner dans
    * `Members`
    * `Content`
+
    La valeur par défaut est `Members`.
 
 * **[!UICONTROL Titre affiché]**
@@ -70,7 +74,7 @@ Dans l’onglet **[!UICONTROL Commentaires]**, indiquez si et comment les commen
 
 * **[!UICONTROL Nombre d’affichages]**
 
-   Nombre d’éléments à répertorier.
+   Nombre d&#39;éléments à liste.
 
    La valeur par défaut est 10.
 
@@ -81,6 +85,7 @@ Dans l’onglet **[!UICONTROL Commentaires]**, indiquez si et comment les commen
    * `Posts`(création d’UGC)
    * `Follows`
    * `Likes`
+
    La valeur par défaut est Vues.
 
 * **[!UICONTROL Période]**
@@ -92,6 +97,7 @@ Dans l’onglet **[!UICONTROL Commentaires]**, indiquez si et comment les commen
    * `Last 90 days`
    * `This year (since Jan 1st)`
    * `Total`
+
    La valeur par défaut est `Total`.
 
 * **[!UICONTROL Chemin d’accès au contexte]**
@@ -102,7 +108,7 @@ Dans l’onglet **[!UICONTROL Commentaires]**, indiquez si et comment les commen
 
 * **[!UICONTROL Agrégation du nombre de membres]**
 
-   Lorsque cette option est désactivée, seules les publications de niveau supérieur sont comptabilisées. For example, if the context is the root page (the default), then an `Activity Type`of `Posts`will never show any activity as there is no ability to post content to the root page. Lorsque cette option est cochée, les nombres sur toutes les pages descendantes sont inclus.
+   Si cette option est désactivée, seules les publications de niveau supérieur sont comptabilisées. For example, if the context is the root page (the default), then an `Activity Type`of `Posts`will never show any activity as there is no ability to post content to the root page. Lorsque cette option est cochée, les nombres sur toutes les pages descendantes sont inclus.
 
    Cette option est cochée par défaut.
 
@@ -110,10 +116,10 @@ Dans l’onglet **[!UICONTROL Commentaires]**, indiquez si et comment les commen
 
 **Principaux visiteurs** config : Type = Membres, Type d’activité = Vues
 
-**Configuration des principaux contributeurs** : Type = Membres, Type d’activité = Publications
+**Configuration des principaux contributeurs** : Type = Membres, type d’Activité = Publications
 
-**Configuration du contenu** principal : Type = Contenu, Type d’activité = Vues,
+**Configuration du contenu** principal : Type = Contenu, type d&#39;Activité = Vues,
 
-**Configuration du contenu** de tendance : Type = Contenu, Type d’activité = Publications
+**Configuration du contenu** de tendance : Type = Contenu, type d’Activité = Publications
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
