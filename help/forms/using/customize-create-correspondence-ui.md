@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 3efd8f5a-9f38-4d9b-88d6-d8fde6c9a644
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 67%
 
 ---
 
@@ -22,7 +25,7 @@ Correspondence Management vous permet d’adapter le modèle de solution à l’
 
 Vous pouvez changer le logo dans l&#39;interface utilisateur de création de correspondance pour le remplacer par le logo de votre entreprise.
 
-![](assets/0_1_introscreenshot.png) Icône personnalisée dans la **Figure Interface utilisateur** de création de correspondance : *L’icône personnalisée dans l’interface utilisateur de création de correspondance*
+![Icône personnalisée de la](assets/0_1_introscreenshot.png)Figure **de l’interface utilisateur de création de correspondance :** *Icône personnalisée dans l’interface utilisateur de création de correspondance*
 
 ### Modification du logo dans l&#39;interface utilisateur de création de correspondance {#changing-the-logo-in-the-create-correspondence-ui}
 
@@ -31,7 +34,7 @@ Pour configurer une image de logo de votre choix, procédez comme suit :
 1. Create the appropriate [folder structure in CRX](#creatingfolderstructure).
 1. [Téléchargez le nouveau fichier](#uploadlogo) de logo dans le dossier que vous avez créé dans CRX.
 
-1. [Configurez le fichier CSS](#createcss) sur CRX pour faire référence au nouveau logo.
+1. [Configurez la page CSS](#createcss) sur CRX pour faire référence au nouveau logo.
 1. Clear the browser history and [refresh the Create Correspondence UI](#refreshccrui).
 
 ## Création de la structure de dossiers requise {#creatingfolderstructure}
@@ -42,9 +45,9 @@ Pour une personnalisation, créez une structure de dossiers parallèle, comme ex
 
 La branche /apps (structure de dossiers) :
 
-* Garantit que vos fichiers sont sûrs en cas de mise à jour du système. En cas de mise à niveau, de feature pack ou de correctif, la branche /libs est mise à jour et si vous hébergez vos modifications dans la branche /libs, elles sont remplacées.
+* Garantit que vos fichiers sont sûrs en cas de mise à jour du système. En cas de mise à niveau, de feature pack ou de correctif logiciel, la branche /libs est mise à jour et si vous hébergez vos modifications dans la branche /libs, elles sont remplacées.
 * Vous aide à ne pas toucher au système/à la branche actuels, que vous pouvez ébranler par erreur si vous utilisez les emplacements par défaut pour enregistrer les fichiers personnalisés.
-* Aide vos ressources pour obtenir une priorité plus élevée si AEM recherche des ressources. AEM est configuré pour rechercher d’abord la branche /apps, puis la branche /libs pour trouver une ressource. Ce mécanisme signifie que le système utilise votre recouvrement (et les personnalisations qui y sont définies).
+* Aide vos ressources pour obtenir une priorité plus élevée si AEM recherche des ressources. AEM est configuré pour rechercher d&#39;abord la branche /apps, puis la branche /libs pour trouver une ressource. Ce mécanisme signifie que le système utilise votre recouvrement (et les personnalisations qui y sont définies).
 
 Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans la branche /apps :
 
@@ -59,17 +62,17 @@ Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans 
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Chemin :** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **** Emplacement de l’incrustation : /apps/
+      **Emplacement de l’incrustation :** /apps/
 
-      **** Faire correspondre les types de noeud : Coché
+      **Faire correspondre les types de noeud :** Coché
 
       ![Chemin d&#39;accès au nœud de recouvrement](assets/0_1_5ioverlaynodedialog.png)
 
       >[!NOTE]
       >
-      >N&#39;apportez pas de modifications dans la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
+      >N&#39;apportez aucune modification à la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
       >
       >* Effectuez une mise à niveau sur votre instance
       >* Appliquez un correctif
@@ -83,11 +86,11 @@ Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans 
    1. Right-click the **imgs** folder at the following path and select **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **Chemin :** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **** Emplacement de l’incrustation : /apps/
+      **Emplacement de l’incrustation :** /apps/
 
-      **** Faire correspondre les types de noeud : Coché
+      **Faire correspondre les types de noeud :** Coché
 
    1. Cliquez sur **OK**.
 
@@ -101,13 +104,13 @@ Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans 
 
 Téléchargez votre fichier de logo personnalisé dans CRX. Les règles HTML standard régissent le rendu du logo. Les formats de fichier image pris en charge dépendent du navigateur utilisé pour accéder à AEM Forms. Tous les navigateurs prennent en charge les fichiers JPEG, GIF et PNG. Pour en savoir plus, reportez-vous à la documentation du navigateur sur les formats d&#39;image pris en charge.
 
-* Les dimensions par défaut de l’image du logo sont de 48 px &amp;ast; 48 px. Assurez-vous que votre image est similaire à cette taille ou supérieure à 48 px &amp;ast; 48 px.
+* Les dimensions par défaut de l&#39;image du logo sont de 48 px &amp;amp ; ast ; 48 px. Assurez-vous que votre image est similaire à cette taille ou supérieure à 48 px &amp;amp ; ast ; 48 px.
 * Si la hauteur de l&#39;image de logo est de plus de 50 px, l&#39;interface utilisateur de création de correspondance réduit l&#39;image à une hauteur maximale de 50 px car il s&#39;agit de la hauteur de l&#39;en-tête. Lors de la réduction de l&#39;image, l&#39;interface utilisateur de création de correspondance conserve les proportions de votre image.
 * L&#39;interface utilisateur de création de correspondance n&#39;agrandit pas votre image si elle est petite. Vous devez donc vous assurer que vous utilisez une image de logo d&#39;au moins 48 px de haut et d&#39;une largeur suffisante pour la clarté.
 
 Suivez les étapes ci-dessous pour télécharger le fichier du logo personnalisé dans CRX :
 
-1. Aller à `https://[server]:[port]/[contextpath]/crx/de`. Le cas échéant, connectez-vous en tant qu’administrateur.
+1. Accédez à `https://[server]:[port]/[contextpath]/crx/de`. Le cas échéant, connectez-vous en tant qu’administrateur.
 1. Dans CRXDE, faites un clic droit sur le dossier **imgs** au  niveau du chemin d&#39;accès suivant et sélectionez **Créer > Créer un fichier** :
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -132,14 +135,14 @@ Suivez les étapes ci-dessous pour télécharger le fichier du logo personnalis�
 
    La boîte de dialogue Edit jcr:data s&#39;affiche.
 
-   Cliquez maintenant sur le dossier newlogo.png, double-cliquez sur jcr:content (option dim) et définissez type nt:resource. Dans le cas contraire, créez une propriété du nom de jcr:content.
+   Cliquez maintenant sur le dossier newlogo.png, cliquez sur jcr:content (option dim) en doublon et définissez type nt:resource. Dans le cas contraire, créez une propriété du nom de jcr:content.
 
 1. Dans la boîte de dialogue Edit jcr:data, cliquez sur **Parcourir** et sélectionnez le fichier image que vous souhaitez utiliser comme logo (ici, CustomLogo.png).
 
    Les formats de fichier image pris en charge dépendent du navigateur utilisé pour accéder à AEM Forms. Tous les navigateurs prennent en charge les fichiers JPEG, GIF et PNG. Pour en savoir plus, reportez-vous à la documentation du navigateur sur les formats d&#39;image pris en charge.
 
    ![Exemple de fichier de logo personnalisé](assets/geometrixx-outdoors.png)
-   **** Figure : *Exemple : CustomLogo.png à utiliser comme logo personnalisé*
+   **Figure :** *Exemple : CustomLogo.png à utiliser comme logo personnalisé*
 
 1. Cliquez sur **Enregistrer tout**.
 
@@ -149,7 +152,7 @@ L&#39;image de logo nécessite une feuille de style supplémentaire à charger d
 
 Effectuez les étapes suivantes pour définir la feuille de style pour le rendu du logo :
 
-1. Aller à `https://[server]:[port]/[contextpath]/crx/de`. Le cas échéant, connectez-vous en tant qu’administrateur.
+1. Accédez à `https://[server]:[port]/[contextpath]/crx/de`. Le cas échéant, connectez-vous en tant qu’administrateur.
 1. Créez un fichier nommé customcss.css (vous ne pouvez pas utiliser un autre nom de fichier) à l’emplacement suivant :
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`
@@ -172,5 +175,5 @@ Effectuez les étapes suivantes pour définir la feuille de style pour le rendu 
 
 Effacez la mémoire cache du navigateur, puis ouvrez l&#39;instance de l&#39;interface utilisateur de création de correspondance dans votre navigateur. Vous devez voir votre logo personnalisé.
 
-![](assets/0_1_introscreenshot-1.png) Créer une interface utilisateur de correspondance avec un logo **** personnalisé Figure : *L’icône personnalisée dans l’interface utilisateur de création de correspondance*
+![Créer une interface utilisateur de correspondance avec un logo](assets/0_1_introscreenshot-1.png)**personnalisé Figure :** *Icône personnalisée dans l’interface utilisateur de création de correspondance*
 
