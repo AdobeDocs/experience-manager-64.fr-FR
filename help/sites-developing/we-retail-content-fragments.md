@@ -11,13 +11,16 @@ topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 79%
 
 ---
 
 
 # Test des fragments de contenu dans We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Les fragments de contenu vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variantes (éventuellement spécifiques aux canaux). **We.Retail** (comme disponible dans une instance prête à l’emploi d’AEM) fournit le fragment **Arctic Surfing dans Lofoten** en tant qu’exemple de base. On peut en tirer les enseignements suivants :
+Les fragments de contenu vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variantes (éventuellement spécifiques aux canaux). **We.Retail** (comme disponible dans une instance prête à l&#39;emploi de AEM) fournit le fragment **Arctic Surfing in Lofoten** en tant qu&#39;échantillon de base. On peut en tirer les enseignements suivants :
 
 * Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments.md). Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). 
 
@@ -36,7 +39,8 @@ Pour consulter la documentation complète traitant de la création, de la gestio
 >Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-authoring/experience-fragments.md)**représentent deux fonctions distinctes d’AEM :
 >
 >* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
->* Les **fragments d’expérience** désignent un contenu parfaitement mis en page ; un fragment d’une page web. 
+>* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
+
 >
 >
 Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
