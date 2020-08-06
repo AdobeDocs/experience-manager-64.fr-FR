@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '689'
+ht-degree: 85%
 
 ---
 
@@ -23,7 +26,7 @@ Une révision est un mécanisme permettant à un ou plusieurs réviseurs d’ajo
 ## Configuration d’une révision {#setting-up-a-review}
 
 1. Accédez à l’onglet Formulaires et sélectionnez un formulaire.
-1. If the asset does not have a review in progress, a Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Cliquez sur l’icône Commencer la révision ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
+1. If the asset does not have a review in progress, a Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Cliquez sur l’icône Révision du Début ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
 1. Saisissez les informations suivantes :
 
    * Nom de la révision : (Obligatoire) peut contenir des caractères alphanumériques, des traits d’union ou des caractères de soulignement.
@@ -41,7 +44,7 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 1. Tous les réviseurs se voient affecter une tâche de révision. La tâche apparaît dans leur section Notification. Le réviseur peut soit cliquer sur une notification, soit accéder à la boîte de réception pour afficher la tâche. Le réviseur peut cliquer pour ouvrir la tâche de révision, afficher le formulaire et commencer à ajouter des commentaires.
 
    ![Alerte de notification du réviseur](assets/noti.png)
-   **** Figure : Alerte de notification *du réviseur*
+   **Figure :** *Alerte de notification du réviseur*
 
 1. La zone de commentaire est accessible à l’initiateur et aux réviseurs de l’actif. Les autres utilisateurs peuvent voir les commentaires, mais ne sont pas habilités à en rédiger.
 
@@ -55,7 +58,7 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 
 1. If an asset has a review in progress and you are the initiator of the review, a Manage Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icons appears in the Action bar. Seul l’initiateur de la révision peut gérer (mettre à jour/terminer) la révision.
 
-   Cliquez sur Gérer la révision ![aem6forms_review_chat_](assets/aem6forms_review_chat_comment.png)virgule.
+   Cliquez sur Gérer la révision ![aem6forms_review_chat_](assets/aem6forms_review_chat_comment.png)commenticon.
 
    Cette icône est désactivée pour les utilisateurs autres que l’initiateur.
 
@@ -69,7 +72,7 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 1. Modifiez les champs nécessaires, puis cliquez sur Mettre à jour.
 
    ![Etat Mis à jour de la révision dans le Gestionnaire des tâches](assets/tskmgr.png)
-   **** Figure : État *Révision mis à jour dans le Gestionnaire des tâches*
+   **Figure :** *Vérifier l’état mis à jour dans Tâche Manager*
 
 1. Pour mettre fin à la révision, cliquez sur Terminer.
 
@@ -83,7 +86,7 @@ Cette section décrit ce qui se produit lorsque vous modifiez ou mettez fin à u
 1. Si un réviseur est supprimé :
 
    ![Suppression d’un réviseur](assets/removeduser.png)
-   **** Figure : *Suppression d’un réviseur*
+   **Figure :** *Suppression d’un réviseur*
 
    1. Si la tâche affectée est incomplète, elle est terminée.
    1. Le réviseur ne peut plus ajouter de commentaires à l’actif.
@@ -91,7 +94,7 @@ Cette section décrit ce qui se produit lorsque vous modifiez ou mettez fin à u
 1. Si un réviseur est ajouté : 
 
    ![Ajout d’un réviseur](assets/addedreviewer.png)
-   **** Figure : *Ajout d’un réviseur*
+   **Figure :** *Ajouter un réviseur*
 
    1. Une tâche de révision est créée et affectée au réviseur qui vient d’être ajouté.
    1. Le nouveau réviseur peut ajouter des commentaires à l’actif.
