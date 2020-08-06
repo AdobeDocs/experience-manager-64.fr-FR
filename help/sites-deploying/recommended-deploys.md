@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 5e903df9-6591-46e8-9251-45170c78aa21
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1801'
+ht-degree: 94%
 
 ---
 
@@ -58,7 +61,7 @@ Les avantages :
 
 * Simplicité 
 * Maintenabilité
-* Performance
+* Performances
 * Basculement
 
 Les inconvénients :
@@ -73,7 +76,7 @@ Les inconvénients :
 
 >[!NOTE]
 >
->Le déploiement du mécanisme Cold Standby dans cet exemple de TarMK exige que les instances principales et de secours disposent de licences distinctes, en raison de la réplication constante vers le serveur de basculement. For more information about licensing, please consult the [Adobe General Licensing Terms](https://www.adobe.com/legal/terms/enterprise-licensing.html).
+>Le déploiement du mécanisme Cold Standby dans cet exemple de TarMK exige que les instances principales et de secours disposent de licences distinctes, en raison de la réplication constante vers le serveur de basculement. For more information about licensing, please consult the [Adobe General Licensing Terms](https://www.adobe.com/fr/legal/terms/enterprise-licensing.html).
 
 ### La ferme TarMK {#tarmk-farm}
 
@@ -89,7 +92,7 @@ Pour AEM Communities, le contenu généré par l’utilisateur (CGU) n’est ja
 
 Les avantages :
 
-* Performance
+* Performances
 * Évolutivité pour l’accès en lecture
 * Basculement
 
@@ -142,7 +145,7 @@ La raison principale pour choisir la persistance MongoMK plutôt que TarMK est s
 Il est pratiquement impossible de prévoir quel sera le modèle exact de concurrence après le lancement du nouveau site. Par conséquent, Adobe vous recommande de tenir compte des critères suivants lorsque vous considérez d’utiliser MongoMK et au moins deux nœuds actifs d’auteur :
 
 1. Nombre d’utilisateurs nommés connectés au cours de la journée : des milliers ou plus.
-1. Nombre d’utilisateurs simultanés : par centaines ou plus.
+1. Nombre d&#39;utilisateurs simultanés : par centaines ou plus.
 1. Volume d’assimilation de ressources par jour : des centaines de milliers, voire plus.
 1. Volume de modifications de pages par jour : des centaines de milliers (y compris les mises à jour automatisées via le gestionnaire multi-site ou des assimilations de flux d’actualité, par exemple).
 1. Volume de recherches par jour : des dizaines de milliers, voire plus.
@@ -180,7 +183,7 @@ Certaines conditions préalables et des recommandations sont disponibles si vous
 1. Les architectures et infrastructures d’ensemble d’AEM et de MongoDB doivent être correctement configurées et validées par un architecte Adobe AEM ; 
 1. Vous devez passer en revue le modèle de prise en charge des déploiements AEM qui incluent MongoDB.
 
-**Recommandations fortes pour les déploiements MongoDB :**
+**Recommandations strictes pour les déploiements de MongoDB :**
 
 * Consultez l’article sur MongoDB pour [Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager) ;
 * Passez en revue la liste de contrôle de production [MongoDB](https://docs.mongodb.org/manual/administration/production-checklist/) ;
@@ -188,7 +191,7 @@ Certaines conditions préalables et des recommandations sont disponibles si vous
 
 >[!NOTE]
 >
->Pour toute question supplémentaire concernant les consignes, les conditions préalables et les recommandations, veuillez contacter le [service cientèle d’Adobe](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+>Pour toute question supplémentaire concernant les consignes, les conditions préalables et les recommandations, veuillez contacter le [service cientèle d’Adobe](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
 
 ### Remarques pour AEM Communities {#considerations-for-aem-communities}
 
