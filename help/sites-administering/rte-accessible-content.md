@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 75%
 
 ---
 
@@ -32,7 +35,7 @@ Les auteurs de contenu peuvent utiliser les fonctions de l’éditeur de texte e
 
 Vous pouvez [configurer et personnaliser ces fonctions en configurant des modules externes RTE](#configuring-the-plugin-features) pour le composant. For example, the `paraformat` plugin allows you to add additional block level semantic elements, including extending the number of heading levels supported beyond the basic `H1`, `H2` and `H3` provided by default.
 
-Le RTE est disponible dans divers composants de l’interface utilisateur tactile et classique. Cependant, le composant principal pour l’utilisation de l’éditeur de texte enrichi est le composant **Texte**.
+Le RTE est disponible dans divers composants de l&#39;interface utilisateur tactile et classique. Cependant, le composant principal pour l’utilisation de l’éditeur de texte enrichi est le composant **Texte**.
 
 The **Text** component in AEM is available for both the touch-enabled and the classic UIs. Les illustrations suivantes présentent l’éditeur de texte enrichi avec une plage de modules externes activés, y compris `paraformat` :
 
@@ -49,7 +52,8 @@ The **Text** component in AEM is available for both the touch-enabled and the cl
 >Il existe des différences entre les fonctionnalités RTE disponibles dans l’interface utilisateur classique et l’interface utilisateur tactile. Pour plus d’informations, voir
 >
 >* [Modules externes et leurs fonctionnalités](/help/sites-administering/rich-text-editor.md#aboutplugins)
->* [Plugins et leurs fonctionnalités - IU tactile](/help/sites-administering/rich-text-editor.md#aboutplugins)
+>* [Plug-ins et leurs fonctionnalités - IU tactile](/help/sites-administering/rich-text-editor.md#aboutplugins)
+
 >
 
 
@@ -65,7 +69,7 @@ Les instructions complètes sur la configuration de l’éditeur de texte enrich
 
 By configuring a plugin within the appropriate `rtePlugins` sub-branch in CRXDE Lite (see the following image), you can activate either all or specific features for that plugin.
 
-![CRXDE Lite présentant un exemple de sous-branche rtePlugin.](assets/chlimage_1-208.png)
+![CRXDE Lite présentant un exemple de rtePlugin.](assets/chlimage_1-208.png)
 
 ### Exemple : spécification des formats de paragraphes disponibles dans le champ de sélection de l’éditeur de texte enrichi {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
@@ -77,6 +81,7 @@ De nouveaux formats de bloc sémantique peuvent être rendus disponibles pour la
 1. Les formats de paragraphe sont ensuite à la disposition de l’auteur du contenu des champs de sélection dans l’éditeur de texte enrichi. Ils sont accessibles :
 
    * Using the paragraph ([pilcrow](https://en.wikipedia.org/wiki/Pilcrow)) icon in the touch-enabled UI:
+
    ![Icône de paragraphe (pied-de-mouche).](do-not-localize/chlimage_1-7.png)
 
    * Utilisation du champ **Format** (sélecteur déroulant) dans l’IU classique.
@@ -84,13 +89,13 @@ De nouveaux formats de bloc sémantique peuvent être rendus disponibles pour la
 
 Avec les éléments structurels disponibles dans l’éditeur de texte enrichi via les options de format de paragraphe, AEM constitue une bonne base pour le développement de contenu accessible. Les auteurs de contenu ne peuvent pas utiliser l’éditeur de texte enrichi pour formater la taille de la police ou les couleurs ou d’autres attributs associés, empêchant la création de formatage en ligne. À la place, ils doivent sélectionner les éléments structurels appropriés comme les en-têtes et utiliser des styles globaux choisis via l’option Styles. Ceci garantit une mise en forme nette, de meilleures options pour les utilisateurs qui naviguent avec leurs propres feuilles de style et un contenu correctement structuré.
 
-## Utilisation de l’option Modification de la source {#use-of-the-source-edit-feature}
+## Utilisation de l’option Modification de la source  {#use-of-the-source-edit-feature}
 
 Dans certains cas, les auteurs de contenu constateront qu’il est nécessaire d’examiner et d’ajuster le code source HTML créé à l’aide de l’éditeur de texte enrichi. Par exemple, un élément de contenu créé dans l’éditeur de texte enrichi peut nécessiter une mise en forme supplémentaire pour être conforme à la norme WCAG 2.0. Ceci peut s’effectuer avec l’option [Modification de la source](/help/sites-administering/rich-text-editor.md#aboutplugins) de l’éditeur de texte enrichi. You can specify the [ `sourceedit` feature on the `misctools` plugin](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
->Use the `sourceedit` feature carefully. Les fautes de frappe et/ou les fonctions non prises en charge peuvent entraîner d’autres problèmes.
+>Utilisez la fonction `sourceedit` avec prudence. Les fautes de frappe et/ou les fonctions non prises en charge peuvent entraîner d’autres problèmes.
 
 ## Ajout de la prise en charge des éléments et attributs HTML supplémentaires {#adding-support-for-additional-html-elements-and-attributes}
 
@@ -111,7 +116,7 @@ Dans le composant **Table**, vous devez définir ou supprimer explicitement l’
 ### Instructions détaillées {#step-by-step-instructions}
 
 1. Démarrez CRXDE Lite. Par exemple : [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
-1. Copier:
+1. Copier :
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
 
@@ -123,7 +128,7 @@ Dans le composant **Table**, vous devez définir ou supprimer explicitement l’
    >
    >Vous devrez peut-être créer des dossiers intermédiaires si ceux-ci n’existent pas déjà.
 
-1. Copier:
+1. Copier :
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`
 
