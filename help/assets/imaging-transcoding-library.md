@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 65f45bdb34279f5834c0466457101ca2f309d5f1
 workflow-type: tm+mt
 source-wordcount: '960'
-ht-degree: 35%
+ht-degree: 38%
 
 ---
 
@@ -77,7 +77,7 @@ Pour configurer le traitement ITL, créez un fichier de configuration et mettez 
 
 Pour configurer la bibliothèque, créez un fichier .conf pour indiquer les bibliothèques à l’aide des étapes suivantes. Vous avez besoin d’autorisations d’administrateur ou de root.
 
-1. Download the [Imaging Transcoding Library package from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. Le package est compatible avec AEM 6.5.
+1. Download the [Imaging Transcoding Library package from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. Le paquet est compatible avec AEM 6.5.
 
 1. Pour connaître un ID d’assemblage pour `com.day.cq.dam.cq-dam-switchengine`, connectez-vous à la console Web et appuyez sur **[!UICONTROL OSGi > Bundles]**. Vous pouvez également ouvrir la console des lots en utilisant l’ `https://[aem_server:[port]/system/console/bundles/` URL d’accès. Localisez le `com.day.cq.dam.cq-dam-switchengine` lot et son ID.
 
@@ -95,7 +95,7 @@ Pour configurer la bibliothèque, créez un fichier .conf pour indiquer les bibl
 
 1. Exécutez `ldconfig` la commande pour créer les liens et le cache nécessaires.
 
-1. Dans le compte utilisé pour début d’AEM, modifiez le `.bash_profile` fichier. Ajoutez `LD_LIBRARY_PATH` en ajoutant ce qui suit.
+1. Dans le compte utilisé pour début de AEM, modifiez le `.bash_profile` fichier. Ajoutez `LD_LIBRARY_PATH` en ajoutant ce qui suit.
 
    ```shell
    LD_LIBRARY_PATH=.
