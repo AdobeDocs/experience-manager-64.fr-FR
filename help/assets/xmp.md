@@ -4,6 +4,9 @@ description: Découvrez le standard de métadonnées XMP (Extensible Metadata P
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 83%
 
 ---
 
@@ -12,22 +15,22 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
 XMP (« Extensible Metadata Platform », plate-forme de métadonnées extensible) est la norme de métadonnées utilisée par AEM Assets pour toute la gestion des métadonnées. XMP fournit un format standard pour la création, le traitement et l’échange de métadonnées pour toute une variété d’applications.
 
-Aside from offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich [content model](xmp.md#xmp-core-concepts) and is [supported by Adobe](xmp.md#advantages-of-xmp) and other companies, so that users of XMP in combination with AEM Assets have a powerful platform to build upon.
+En plus d’un codage de métadonnées universel qui peut être incorporé dans tous les formats de fichier, XMP fournit un [modèle de contenu](xmp.md#xmp-core-concepts) riche et est [pris en charge par Adobe](xmp.md#advantages-of-xmp) et d’autres sociétés. Ainsi, les utilisateurs XMP, en association avec AEM Assets, disposent d’une plate-forme puissante sur laquelle s’appuyer.
 
 La [spécification XMP](https://www.adobe.com/devnet/xmp.html) est disponible auprès d’Adobe.
 
 ## What is XMP? {#what-is-xmp}
 
-AEM Assets prend nativement en charge XMP, la plateforme de métadonnées extensible pilotée par Adobe.XMP est une norme de traitement et de stockage des métadonnées propriétaires et normalisées dans les ressources numériques.XMP est conçu pour être la norme commune qui permet à plusieurs applications de fonctionner efficacement avec les métadonnées.
+AEM Assets prend nativement en charge le XMP - la plateforme de métadonnées extensible pilotée par l&#39;Adobe. XMP est une norme de traitement et de stockage des métadonnées normalisées et propriétaires dans les ressources numériques. XMP est conçu pour être la norme commune qui permet à plusieurs applications de travailler efficacement avec les métadonnées.
 
-Les professionnels de la production, par exemple, utilisent la prise en charge du format XMP intégré au sein des applications d’Adobe pour communiquer les informations entre divers formats de fichier. Le référentiel AEM Assets extrait les métadonnées XMP et les utilise pour gérer le cycle de vie du contenu. Il offre également la possibilité de créer des processus d’automatisation.
+Les professionnels de la production, par exemple, utilisent la prise en charge du format XMP intégré au sein des applications d’Adobe pour communiquer les informations entre divers formats de fichier. Le référentiel AEM Assets extrait les métadonnées XMP et les utilise pour gérer le cycle de vie du contenu. Il offre également la possibilité de créer des workflows d’automatisation.
 
 XMP normalise la façon dont les métadonnées sont définies, créées et traitées en fournissant un modèle de données, un modèle de stockage et des schémas. Tous ces concepts sont abordés dans cette section.
 
-Toutes les métadonnées héritées de EXIF, ID3 ou Microsoft Office sont automatiquement converties au format XMP, qui peut être étendu pour prendre en charge le schéma de métadonnées spécifiques au client comme les catalogues de produits.
+Toutes les métadonnées héritées d’EXIF, d’ID3 ou de Microsoft Office sont automatiquement converties au format XMP, qui peut être étendu pour prendre en charge le schéma de métadonnées spécifiques au client comme les catalogues de produits.
 
-Les métadonnées dans XMP sont composées d’un ensemble de propriétés. Ces propriétés sont toujours associées à une\
-une entité particulière désignée comme ressource; c&#39;est-à-dire que les propriétés sont &quot;à propos&quot; de la ressource. Dans le cas de XMP, la ressource est toujours la ressource.
+Les métadonnées XMP sont composées d’un ensemble de propriétés. Ces propriétés sont toujours associées à un\
+une entité particulière appelée ressource ; c&#39;est-à-dire que les propriétés sont &quot;environ&quot; la ressource. Dans le cas de XMP, il s’agit toujours de la ressource (ou actif).
 
 ### Adobe {#adobe}
 
@@ -35,16 +38,16 @@ Adobe a introduit pour la première fois la norme XMP dans le cadre du logiciel 
 
 ### XMP ecosystem {#xmp-ecosystem}
 
-XMP définit un modèle de [métadonnées](https://en.wikipedia.org/wiki/Metadata) qui peut être utilisé avec n’importe quel ensemble défini d’éléments de métadonnées. XMP définit également des [schémas](https://en.wikipedia.org/wiki/XML_schema) particuliers pour les propriétés de base utiles pour enregistrer l’historique d’une ressource lorsqu’elle passe par plusieurs étapes de traitement, depuis la photographie, la [numérisation](https://en.wikipedia.org/wiki/Image_scanner) ou la création au format texte, en passant par les étapes de retouche photo ([recadrage](https://en.wikipedia.org/wiki/Cropping_%28image%29) ou réglage des couleurs, par exemple), pour l’assembler dans une image finale. XMP permet à chaque programme logiciel ou appareil d’ajouter en cours de route ses propres informations à une ressource numérique, qui peut ensuite être conservée dans le fichier numérique final.
+XMP définit un modèle de [métadonnées](https://fr.wikipedia.org/wiki/Métadonnée) exploitable avec n’importe quel ensemble défini d’éléments de métadonnées. XMP définit également des [schémas](https://en.wikipedia.org/wiki/XML_schema) spécifiques pour des propriétés de base utiles pour consigner l’historique d’une ressource lorsqu’elle passe par diverses étapes de traitement, de la photographie, en passant par la [numérisation](https://fr.wikipedia.org/wiki/Scanner_(informatique)) ou la création en tant que texte, à travers des étapes de retouche photo (comme le [recadrage](https://fr.wikipedia.org/wiki/Recadrage_(image)) ou l’ajustement de couleur), pour former une image finale. XMP permet à chaque programme ou appareil d’ajouter ses propres informations à une ressource numérique. Ces informations peuvent être ensuite conservées dans le fichier numérique final.
 
-XMP est le plus souvent sérialisé et stocké à l’aide d’un sous-ensemble du [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework) (RDF) [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium), qui est à son tour exprimé en langage [XML](https://en.wikipedia.org/wiki/XML).
+XMP est le plus souvent sérialisé et stocké à l’aide d’un sous-ensemble du [W3C](https://fr.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://fr.wikipedia.org/wiki/Resource_Description_Framework) (RDF), exprimé à son tour en format [XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language).
 
-## Avantages du mode XMP {#advantages-of-xmp}
+## Avantages du mode XMP  {#advantages-of-xmp}
 
 La norme XMP présente les avantages suivants par rapport aux autres normes de codage et schémas :
 
 * Les métadonnées basées sur la norme XMP sont très puissantes et précises.
-* La norme XMP permet de posséder plusieurs valeurs pour une propriété.
+* La norme XMP permet de définir plusieurs valeurs pour une propriété.
 * XMP possède un encodage normalisé, ce qui vous permet d’échanger facilement des métadonnées.
 * Le format XMP est extensible. Vous pouvez ajouter d’autres informations à vos ressources.
 
@@ -62,8 +65,8 @@ Les sections ci-après décrivent les notions fondamentales relatives à XMP, no
 
 ### Espaces de noms et schémas {#namespaces-and-schemata}
 
-Un schéma XMP est un ensemble de noms de propriété dans un espace de noms XML commun qui inclut\
-le type de données et les informations descriptives. Un schéma XMP est identifié par son URI d’espace de noms XML. L’utilisation d’espaces de noms empêche les conflits entre les propriétés de différents schémas portant le même nom mais une signification différente.
+Un schéma XMP est un ensemble de noms de propriété dans un espace de nommage XML commun qui inclut\
+le type de données et les informations descriptives. Un schéma XMP est identifié par son URI d’espace de nommage XML. L’utilisation d’espaces de nommage empêche les conflits entre les propriétés de différents schémas portant le même nom mais une signification différente.
 
 Par exemple, la propriété **Créateur** de deux schémas conçus indépendamment peut signifier la personne ayant créé la ressource ou l’application l’ayant créée (Adobe Photoshop, par exemple).
 
