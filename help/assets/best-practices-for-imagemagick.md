@@ -4,13 +4,16 @@ description: Découvrez le logiciel ImageMagick, comment l’installer, configur
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
+workflow-type: tm+mt
+source-wordcount: '779'
+ht-degree: 59%
 
 ---
 
 
 # Installation et configuration d’ImageMagick pour une utilisation avec AEM Assets {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
-ImageMagick est un module logiciel permettant de créer, modifier, composer ou convertir des images bitmap. Il peut lire et écrire des images dans divers formats (plus de 200), notamment PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF et SVG. Utilisez ImageMagick pour redimensionner, réaliser une symétrie, effectuer un miroir, faire pivoter, déformer, cisailler et transformer des images. Vous pouvez également régler les couleurs des images, ainsi qu’appliquer divers effets spéciaux, ou tracer du texte, des lignes, des polygones, des ellipses et des courbes à l’aide d’ImageMagick.
+ImageMagick est un module logiciel qui permet de créer, modifier, composer ou convertir des images bitmap. Il peut lire et écrire des images dans divers formats (plus de 200), y compris PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF et SVG. Utilisez ImageMagick pour redimensionner, réaliser une symétrie, effectuer un miroir, faire pivoter, déformer, cisailler et transformer des images. Vous pouvez également régler les couleurs des images, ainsi qu’appliquer divers effets spéciaux, ou tracer du texte, des lignes, des polygones, des ellipses et des courbes à l’aide d’ImageMagick.
 
 Utilisez le gestionnaire de médias d’Adobe Experience Manager (AEM) à partir de la ligne de commande afin de traiter les images via ImageMagick. Pour utiliser plusieurs formats de fichiers avec ImageMagick, voir [Meilleures pratiques relatives au format de fichier des ressources](assets-file-format-best-practices.md). Pour connaître tous les formats de fichiers pris en charge, voir [Formats de ressources pris en charge](assets-formats.md).
 
@@ -18,7 +21,7 @@ Pour traiter des fichiers volumineux à l’aide d’ImageMagick, veuillez tenir
 
 >[!NOTE]
 >
->Si vous utilisez AEM sur Adobe Managed Services (AMS), contactez le service à la clientèle d’Adobe si vous prévoyez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Experience Manager peut ne pas traiter les fichiers PSB haute résolution de plus de 3 000 x 2 3 000 pixels.
+>Si vous utilisez AEM sur Adobe Managed Services (AMS), contactez le service à la clientèle Adobe si vous prévoyez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Le Experience Manager ne peut pas traiter de fichiers PSB à très haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 ## Installation d’ImageMagick {#installing-imagemagick}
 
@@ -75,7 +78,7 @@ Vous pouvez configurer l’étape de processus de ligne de commande en fonction 
 
 Il existe plusieurs vulnérabilités de sécurité liées à l’utilisation d’ImageMagick pour traiter les images. Par exemple, le traitement d’images envoyées par l’utilisateur entraîne un risque d’exécution de code à distance (RCE).
 
-En outre, divers plug-ins de traitement d’images dépendent de la bibliothèque ImageMagick, y compris, mais sans s’y limiter, l’image de PHP, le rmagick et le clip de Ruby, et l’image de Node.js.
+En outre, divers modules externes de traitement d’images dépendent de la bibliothèque ImageMagick, y compris, mais sans s’y limiter, l’imagerie de PHP, le rmagick et le trombone de Ruby, et l’imagerie de Node.js.
 
 Si vous utilisez ImageMagick ou une bibliothèque affectée, Adobe vous recommande de limiter les vulnérabilités connues en réalisant au moins l’une des tâches suivantes (de préférence les deux) :
 
