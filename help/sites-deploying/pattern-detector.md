@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
 translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 93%
 
 ---
 
@@ -28,9 +31,9 @@ Cela peut servir à évaluer l’ampleur des tâches de développement nécessai
 
 ## Méthode de configuration {#how-to-set-up}
 
-L’outil de détection des motifs est publié séparément sous forme de [module](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l&#39;aide du [Gestionnaire de modules](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
+L’outil de détection des motifs est publié séparément sous forme de [module](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l&#39;aide du [Gestionnaire de modules](https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/package-manager.html).
 
-## Procédure d’utilisation {#how-to-use}
+## Utilisation {#how-to-use}
 
 >[!NOTE]
 >
@@ -48,11 +51,11 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
 1. Go to the AEM Web Console by browsing to: https://<i></i>serveraddress:serverport/system/console/configMgr
 1. Sélectionnez **État – Outil de détection des motifs**, comme illustré ci-dessous :
 
-   ![capture d&#39;écran-2018-2-5détecteur de motif](assets/screenshot-2018-2-5pattern-detector.png)
+   ![capture d&#39;écran-2018-2-5détecteur à motifs](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Via une interface JSON standard ou une interface en mode texte réactive**
 
-* **Par le biais d’une interface** de lignes JSON réactives, qui génère un document JSON distinct dans chaque ligne.
+* **Au moyen d’une interface** de lignes JSON réactives, qui génère un document JSON distinct dans chaque ligne.
 
 Vous trouverez, ci-dessous, une description détaillée de ces deux méthodes :
 
