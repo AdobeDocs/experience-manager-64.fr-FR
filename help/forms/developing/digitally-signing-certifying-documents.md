@@ -22,7 +22,7 @@ ht-degree: 8%
 
 **À propos du service Signature**
 
-Le service Signature permet à votre entreprise de protéger la sécurité et la confidentialité des documents PDF Adobe qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s&#39;assurer que seuls les destinataires prévus peuvent modifier les documents. Les fonctions de sécurité étant appliquées au document lui-même, le document reste sécurisé et contrôlé pendant toute sa durée de vie. Un document reste sécurisé au-delà du pare-feu, lorsqu’il est téléchargé hors ligne et lorsqu’il est renvoyé à votre organisation.
+Le service Signature permet à votre entreprise de protéger la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s&#39;assurer que seuls les destinataires prévus peuvent modifier les documents. Les fonctions de sécurité étant appliquées au document lui-même, le document reste sécurisé et contrôlé pendant toute sa durée de vie. Un document reste sécurisé au-delà du pare-feu, lorsqu’il est téléchargé hors ligne et lorsqu’il est renvoyé à votre organisation.
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ Pour ajouter un champ de signature à un document PDF, spécifiez des valeurs de
 
 **Enregistrer le document PDF en tant que fichier PDF**
 
-Une fois que le service Signature a ajouté un champ de signature au document PDF, vous pouvez enregistrer le document au format PDF afin que les utilisateurs puissent l’ouvrir dans Acrobat ou Adobe Reader.
+Une fois que le service Signature a ajouté un champ de signature au document PDF, vous pouvez enregistrer le document en tant que fichier PDF afin que les utilisateurs puissent l’ouvrir dans Acrobat ou Adobe Reader.
 
 **Voir également**
 
@@ -195,6 +195,7 @@ Pour ajouter un champ de signature à l’aide de l’API de signature (service 
    * Objet `PositionRect` spécifiant l’emplacement du champ de signature.
    * Objet `FieldMDPOptions` spécifiant les champs du document PDF verrouillés après l’application d’une signature numérique au champ de signature. Cette valeur de paramètre est facultative et vous pouvez la transmettre `null`.
    * Objet `PDFSeedValueOptions` spécifiant diverses valeurs d’exécution. Cette valeur de paramètre est facultative et vous pouvez la transmettre `null`.
+
    La `addSignatureField` méthode renvoie un `BLOB` objet qui représente un document PDF contenant un champ de signature.
 
 1. Enregistrer le document PDF en tant que fichier PDF
@@ -206,9 +207,9 @@ Pour ajouter un champ de signature à l’aide de l’API de signature (service 
 
 **Voir également**
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Récupération des noms des champs de signature {#retrieving-signature-field-names}
 
@@ -340,9 +341,9 @@ Récupérez les noms des champs de signature à l’aide de l’API Signature (s
 
 [Récupération des noms des champs de signature](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Modifying Signature Fields {#modifying-signature-fields}
 
@@ -460,9 +461,10 @@ Modifiez un champ de signature à l’aide de l’API de signature (Java) :
    * Verrouillez tous les champs du document PDF en appelant la `FieldMDPOptionSpec` méthode de l’ `setMdpValue` objet et en transmettant la valeur de la `FieldMDPAction.ALL` énumération.
    * Définissez les informations du dictionnaire des valeurs de départ en appelant la `PDFSignatureFieldProperties` méthode de l’objet et en transmettant l’ `setSeedValue` `PDFSeedValueOptionSpec` objet.
    * Définissez les informations du dictionnaire de verrouillage de champ de signature en appelant la `PDFSignatureFieldProperties`méthode de l’ `setFieldMDP` objet et en transmettant l’ `FieldMDPOptionSpec` objet.
+
    >[!NOTE]
    >
-   >Pour afficher toutes les valeurs du dictionnaire de valeurs de départ que vous pouvez définir, consultez la référence de `PDFSeedValueOptionSpec` classe. (Voir Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms).
+   >Pour afficher toutes les valeurs du dictionnaire de valeurs de départ que vous pouvez définir, consultez la référence de `PDFSeedValueOptionSpec` classe. (Voir Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.)
 
 1. Modification du champ de signature
 
@@ -471,6 +473,7 @@ Modifiez un champ de signature à l’aide de l’API de signature (Java) :
    * Objet `com.adobe.idp.Document` stockant le document PDF contenant le champ de signature à modifier
    * Valeur de chaîne qui spécifie le nom du champ de signature
    * L’ `PDFSignatureFieldProperties` objet qui stocke les informations du dictionnaire de verrouillage du champ de signature et du dictionnaire de valeur de départ
+
    La `modifySignatureField` méthode renvoie un `com.adobe.idp.Document` objet qui stocke un document PDF contenant le champ de signature modifié.
 
 1. Enregistrer le document PDF en tant que fichier PDF
@@ -520,6 +523,7 @@ Modifiez un champ de signature à l’aide de l’API de signature (service Web)
    * Verrouillez tous les champs du document PDF en attribuant la valeur de `FieldMDPAction.ALL` énumération au membre `FieldMDPOptionSpec` de données de l’ `mdpValue` objet.
    * Définissez les informations du dictionnaire des valeurs sources en affectant l’ `PDFSeedValueOptionSpec` objet au membre `PDFSignatureFieldProperties` de données de l’ `seedValue` objet.
    * Définissez les informations du dictionnaire de verrouillage de champ de signature en affectant l’ `FieldMDPOptionSpec` objet au membre `PDFSignatureFieldProperties` de données de l’ `fieldMDP` objet.
+
    >[!NOTE]
    >
    >Pour afficher toutes les valeurs du dictionnaire de valeurs de départ que vous pouvez définir, consultez la référence de `PDFSeedValueOptionSpec` classe. (Voir Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms).
@@ -531,6 +535,7 @@ Modifiez un champ de signature à l’aide de l’API de signature (service Web)
    * Objet `BLOB` stockant le document PDF contenant le champ de signature à modifier
    * Valeur de chaîne qui spécifie le nom du champ de signature
    * L’ `PDFSignatureFieldProperties` objet qui stocke les informations du dictionnaire de verrouillage du champ de signature et du dictionnaire de valeur de départ
+
    La `modifySignatureField` méthode renvoie un `BLOB` objet qui stocke un document PDF contenant le champ de signature modifié.
 
 1. Enregistrer le document PDF en tant que fichier PDF
@@ -542,9 +547,9 @@ Modifiez un champ de signature à l’aide de l’API de signature (service Web)
 
 **Voir également**
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Digitally Signing PDF Documents {#digitally-signing-pdf-documents}
 
@@ -554,9 +559,9 @@ Les documents PDF sont signés au moyen de la technologie de clé publique. Le s
 
 >[!NOTE]
 >
->Avant de pouvoir signer numériquement un document PDF, vous devez vous assurer d’ajouter le certificat à AEM Forms. Un certificat est ajouté à l’aide d’Administration Console ou par programmation à l’aide de l’API Trust Manager. (Voir [Importation des informations d’identification à l’aide de l’API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)Trust Manager.)
+>Avant de signer numériquement un document PDF, vous devez vous assurer d’ajouter le certificat à AEM Forms. Un certificat est ajouté à l’aide d’Administration Console ou par programmation à l’aide de l’API Trust Manager. (Voir [Importation des informations d’identification à l’aide de l’API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)Trust Manager.)
 
-Vous pouvez signer numériquement des documents PDF par programmation. Lors de la signature numérique d’un document PDF, vous devez référencer des informations d’identification de sécurité qui existent dans AEM Forms. Les informations d’identification sont la clé privée utilisée pour la signature.
+Vous pouvez signer numériquement des documents PDF par programmation. Lors de la signature numérique d’un document PDF, vous devez référencer les informations d’identification de sécurité qui existent dans AEM Forms. Les informations d’identification sont la clé privée utilisée pour la signature.
 
 Le service Signature effectue les étapes suivantes lorsqu’un document PDF est signé :
 
@@ -596,7 +601,7 @@ Lors de la certification et de la signature du même document PDF, si la signatu
 
 **Signature de documents basés sur XFA**
 
-Si vous tentez de signer un formulaire XFA à l’aide de l’API du service Signature, il se peut que les données ne figurent pas dans le formulaire `View``Signed` `Version` situé dans Acrobat. Prenons l’exemple du processus suivant :
+Si vous tentez de signer un formulaire XFA à l’aide de l’API du service Signature, il se peut que les données soient manquantes dans le formulaire `View``Signed` `Version` situé dans Acrobat. Prenons l’exemple du processus suivant :
 
 * A l’aide d’un fichier XDP créé à l’aide de Designer, vous fusionnez une conception de formulaire contenant un champ de signature et des données XML contenant des données de formulaire. Vous utilisez le service Forms pour générer un document PDF interactif.
 * Vous pouvez signer le document PDF à l’aide de l’API du service Signature.
@@ -652,7 +657,7 @@ Pour effectuer une vérification de révocation sur un certificat, vous pouvez s
 
 Au lieu d’utiliser un serveur CRL, vous pouvez utiliser un serveur OCSP (Online Certificate Status Protocol) lors de la vérification de révocation. En règle générale, lorsque vous utilisez un serveur OCSP plutôt qu’un serveur CRL, la vérification de révocation est effectuée plus rapidement. (Voir &quot;Protocole d’état de certificat en ligne&quot; à l’adresse [https://tools.ietf.org/html/rfc2560](https://tools.ietf.org/html/rfc2560).)
 
-Vous pouvez définir l’ordre de CRL et de serveur OCSP que le service Signature utilise à l’aide des applications et services Adobe. Par exemple, si le serveur OCSP est défini en premier dans les applications et services Adobe, le serveur OCSP est coché, suivi du serveur CRL. (voir &quot;Gestion des certificats et des informations d’identification à l’aide de Trust Store&quot; dans l’aide AAC).
+Vous pouvez définir l’ordre de CRL et de serveur OCSP que le service Signature utilise à l’aide d’Adobe Applications and Services. Par exemple, si le serveur OCSP est défini en premier dans Adobe Applications and Services, le serveur OCSP est coché, suivi du serveur CRL. (voir &quot;Gestion des certificats et des informations d’identification à l’aide de Trust Store&quot; dans l’aide AAC).
 
 Si vous indiquez de ne pas effectuer la vérification de révocation, le service Signature ne vérifie pas si le certificat utilisé pour signer ou certifier un document a été révoqué. En d’autres termes, les informations de CRL et de serveur OCSP sont ignorées.
 
@@ -721,6 +726,7 @@ Signer numériquement un document PDF à l’aide de l’API de signature (Java)
    * Objet `OCSPOptionSpec` qui stocke les préférences pour la prise en charge OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Objet `CRLPreferences` qui stocke les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Objet `TSPPreferences` qui stocke les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Ce paramètre est facultatif et peut être `null`défini. For more information, see [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+
    La `sign` méthode renvoie un `com.adobe.idp.Document` objet qui représente le document PDF signé.
 
 1. Enregistrer le document PDF signé
@@ -784,10 +790,11 @@ Pour signer numériquement un document PDF à l’aide de l’API de signature (
    * Valeur de chaîne qui représente l’emplacement du signataire.
    * Valeur de chaîne qui représente les coordonnées du signataire.
    * Objet `PDFSignatureAppearanceOptions` contrôlant l’aspect de la signature numérique. Par exemple, vous pouvez utiliser cet objet pour ajouter un logo personnalisé à une signature numérique.
-   * Objet `System.Boolean` spécifiant s’il faut effectuer une vérification de révocation sur le certificat du signataire. Si cette vérification de révocation est effectuée, elle est incorporée dans la signature. La valeur par défaut est `false`.
+   * Objet `System.Boolean` spécifiant s’il faut effectuer une vérification de révocation sur le certificat du signataire. Si cette vérification de révocation est effectuée, elle est incorporée dans la signature. La valeur par défaut est de `false`.
    * Objet `OCSPOptionSpec` qui stocke les préférences pour la prise en charge OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`. Pour plus d’informations sur cet objet, voir Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Objet `CRLPreferences` qui stocke les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Objet `TSPPreferences` qui stocke les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Ce paramètre est facultatif et peut être `null`défini.
+
    La `sign` méthode renvoie un `BLOB` objet qui représente le document PDF signé.
 
 1. Enregistrer le document PDF signé
@@ -801,28 +808,28 @@ Pour signer numériquement un document PDF à l’aide de l’API de signature (
 
 [Signature numérique de Documents PDF](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Signature numérique de formulaires interactifs {#digitally-signing-interactive-forms}
+## Signature numérique d’un Forms interactif {#digitally-signing-interactive-forms}
 
-Vous pouvez signer un formulaire interactif que le service Forms a créé. Prenons l’exemple du processus suivant :
+Vous pouvez signer un formulaire interactif que le service Forms crée. Prenons l’exemple du processus suivant :
 
-* Vous fusionnez un formulaire PDF XFA créé à l’aide de Designer et de données de formulaire situées dans un document XML à l’aide du service Forms. Le serveur Forms rend un formulaire interactif.
+* Vous fusionnez un formulaire PDF XFA créé à l’aide de Designer et de données de formulaire situées dans un document XML à l’aide du service Forms. Le serveur Forms génère un formulaire interactif.
 * Vous pouvez signer le formulaire interactif à l’aide de l’API du service Signature.
 
-Le résultat est un formulaire PDF interactif signé numériquement. Lorsque vous signez un formulaire PDF basé sur un formulaire XFA, veillez à enregistrer le fichier PDF en tant que formulaire PDF statique Adobe. Si vous tentez de signer un formulaire PDF enregistré en tant que formulaire PDF dynamique Adobe, une exception se produit. Etant donné que vous signez le formulaire renvoyé par le service Forms, veillez à ce qu’il contienne un champ de signature.
+Le résultat est un formulaire PDF interactif signé numériquement. Lors de la signature d’un formulaire PDF basé sur un formulaire XFA, veillez à enregistrer le fichier PDF en tant que formulaire PDF statique Adobe. Si vous tentez de signer un formulaire PDF enregistré en tant que formulaire PDF dynamique Adobe, une exception se produit. Etant donné que vous signez le formulaire renvoyé par le service Forms, veillez à ce qu’il contienne un champ de signature.
 
 >[!NOTE]
 >
 >Avant de pouvoir signer numériquement un formulaire interactif, vous devez vous assurer d’ajouter le certificat à AEM Forms. Un certificat est ajouté à l’aide d’Administration Console ou par programmation à l’aide de l’API Trust Manager. (Voir [Importation des informations d’identification à l’aide de l’API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)Trust Manager.)
 
-Lors de l’utilisation de l’API Forms Service, définissez l’option `GenerateServerAppearance` d’exécution sur `true`. Cette option d’exécution garantit que l’aspect du formulaire généré sur le serveur reste valide lorsqu’il est ouvert dans Acrobat ou Adobe Reader. Il est recommandé de définir cette option d’exécution lors de la génération d’un formulaire interactif à signer à l’aide de l’API Forms.
+Lors de l’utilisation de l’API Service Forms, définissez l’option `GenerateServerAppearance` d’exécution sur `true`. Cette option d’exécution garantit que l’aspect du formulaire généré sur le serveur reste valide lors de son ouverture dans Acrobat ou Adobe Reader. Il est recommandé de définir cette option d’exécution lors de la génération d’un formulaire interactif à signer à l’aide de l’API Forms.
 
 >[!NOTE]
 >
->Avant de lire Signature numérique de formulaires interactifs, il est recommandé de se familiariser avec la signature de documents PDF. (See [Digitally Signing PDF Documents](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+>Avant de lire Digital Signing Interactive Forms, il est recommandé de se familiariser avec la signature de documents PDF. (See [Digitally Signing PDF Documents](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 ### Résumé des étapes {#summary_of_steps-4}
 
@@ -830,7 +837,7 @@ Pour signer numériquement un formulaire interactif renvoyé par le service Form
 
 1. Incluez des fichiers de projet.
 1. Créez un client Forms et Signatures.
-1. Récupérez le formulaire interactif à l’aide du service Forms.
+1. Obtenez le formulaire interactif à l’aide du service Forms.
 1. Signez le formulaire interactif.
 1. Enregistrez le document PDF signé au format PDF.
 
@@ -849,19 +856,19 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Créer un client Forms et Signatures**
+**Création d’un client Forms and Signatures**
 
-Dans la mesure où ce processus appelle les services Forms et Signature, créez un client de service Forms et un client de service Signature.
+Dans la mesure où ce flux de travail appelle les services Forms et Signature, créez un client de service Forms et un client de service Signature.
 
 **Obtention du formulaire interactif à l’aide du service Forms**
 
-Vous pouvez utiliser le service Forms pour obtenir le formulaire PDF interactif à signer. Depuis AEM Forms, vous pouvez transmettre un `com.adobe.idp.Document` objet au service Forms qui contient le formulaire à générer. Le nom de cette méthode est `renderPDFForm2`. Cette méthode renvoie un `com.adobe.idp.Document` objet contenant le formulaire à signer. Vous pouvez transmettre cette `com.adobe.idp.Document` instance au service Signature.
+Vous pouvez utiliser le service Forms pour obtenir le formulaire PDF interactif à signer. Depuis AEM Forms, vous pouvez transmettre un `com.adobe.idp.Document` objet au service Forms qui contient le formulaire à rendre. Le nom de cette méthode est `renderPDFForm2`. Cette méthode renvoie un `com.adobe.idp.Document` objet contenant le formulaire à signer. Vous pouvez transmettre cette `com.adobe.idp.Document` instance au service Signature.
 
 De même, si vous utilisez des services Web, vous pouvez transmettre l’ `BLOB` instance que le service Forms renvoie au service Signature.
 
 >[!NOTE]
 >
->Le début rapide associé à la section Signature numérique de formulaires interactifs appelle la `renderPDFForm2` méthode.
+>Le début rapide associé à la section Signature numérique d’un Forms interactif appelle la `renderPDFForm2` méthode.
 
 **Signature du formulaire interactif**
 
@@ -875,7 +882,7 @@ Vous définissez les options d’aspect à l’aide d’un `PDFSignatureAppearan
 
 **Enregistrer le document PDF signé**
 
-Une fois que le service Signature a signé numériquement le document PDF, vous pouvez l’enregistrer au format PDF. Le fichier PDF peut être ouvert dans Acrobat ou Adobe Reader.
+Une fois que le service Signature a signé numériquement le document PDF, vous pouvez l’enregistrer au format PDF. Le fichier PDF peut être ouvert en Acrobat ou en Adobe Reader.
 
 **Voir également**
 
@@ -889,7 +896,7 @@ Une fois que le service Signature a signé numériquement le document PDF, vous 
 
 [Signature numérique de Documents PDF](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
-[Rendu de formulaires PDF interactifs](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)
+[Rendu des PDF forms interactifs](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)
 
 ### Signature numérique d’un formulaire interactif à l’aide de l’API Java {#digitally-sign-an-interactive-form-using-the-java-api}
 
@@ -899,7 +906,7 @@ Signer numériquement un formulaire interactif à l’aide de l’API Forms and 
 
    Incluez des fichiers JAR client, tels que adobe-signatures-client.jar et adobe-forms-client.jar, dans le chemin de classe de votre projet Java.
 
-1. Créer un client Forms et Signatures
+1. Création d’un client Forms and Signatures
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
@@ -919,6 +926,7 @@ Signer numériquement un formulaire interactif à l’aide de l’API Forms and 
       * Objet `PDFFormRenderSpec` qui stocke les options d’exécution.
       * Objet `URLSpec` contenant des valeurs URI requises par le service Forms. Vous pouvez spécifier `null` cette valeur de paramètre.
       * Objet `java.util.HashMap` qui stocke les pièces jointes. Il s’agit d’un paramètre facultatif que vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
+
       La `renderPDFForm2` méthode renvoie un `FormsResult` objet contenant un flux de données de formulaire.
 
    * Récupérez le formulaire PDF en appelant la `FormsResult` `getOutputContent` méthode de l’objet. Cette méthode renvoie un `com.adobe.idp.Document` objet qui représente le formulaire interactif.
@@ -928,7 +936,7 @@ Signer numériquement un formulaire interactif à l’aide de l’API Forms and 
 
    Signez le document PDF en appelant la `SignatureServiceClient` `sign` méthode de l’objet et en transmettant les valeurs suivantes :
 
-   * A `com.adobe.idp.Document` object that represents the PDF document to sign. Assurez-vous que cet objet est l’ `com.adobe.idp.Document` objet obtenu du service Forms.
+   * A `com.adobe.idp.Document` object that represents the PDF document to sign. Assurez-vous que cet objet est l’ `com.adobe.idp.Document` objet obtenu à partir du service Forms.
    * Valeur de chaîne qui représente le nom du champ de signature signé.
    * A `Credential` object that represents the credential that is used to digitally sign the PDF document. Créez un `Credential` objet en appelant la méthode `Credential` statique de l’ `getInstance` objet. Transmettez une valeur de chaîne qui spécifie la valeur d’alias qui correspond aux informations d’identification de sécurité.
    * Objet `HashAlgorithm` spécifiant un membre de données statique qui représente l’algorithme de hachage à utiliser pour digérer le document PDF. Par exemple, vous pouvez spécifier `HashAlgorithm.SHA1` d’utiliser l’algorithme SHA1.
@@ -939,6 +947,7 @@ Signer numériquement un formulaire interactif à l’aide de l’API Forms and 
    * Objet `OCSPPreferences` qui stocke les préférences pour la prise en charge OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Objet `CRLPreferences` qui stocke les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Objet `TSPPreferences` qui stocke les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Ce paramètre est facultatif et peut être `null`défini.
+
    La `sign` méthode renvoie un `com.adobe.idp.Document` objet qui représente le document PDF signé.
 
 1. Enregistrer le document PDF signé
@@ -948,7 +957,7 @@ Signer numériquement un formulaire interactif à l’aide de l’API Forms and 
 
 **Voir également**
 
-[Signature numérique de formulaires interactifs](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
+[Signature numérique d’un Forms interactif](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
 [Début rapide (mode SOAP) : Signature numérique d’un document PDF à l’aide de l’API Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
@@ -962,7 +971,7 @@ Signer numériquement un formulaire interactif à l’aide de l’API Forms and 
 
 1. Inclure les fichiers de projet
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Comme cette application cliente appelle deux services AEM Forms, créez deux références de service. Utilisez la définition WSDL suivante pour la référence de service associée au service Signature : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Dans la mesure où cette application cliente appelle deux services AEM Forms, créez deux références de service. Utilisez la définition WSDL suivante pour la référence de service associée au service Signature : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
 
    Utilisez la définition WSDL suivante pour la référence de service associée au service Forms : `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
 
@@ -972,7 +981,7 @@ Signer numériquement un formulaire interactif à l’aide de l’API Forms and 
    >
    >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
-1. Créer un client Forms et Signatures
+1. Création d’un client Forms and Signatures
 
    * Create a `SignatureServiceClient` object by using its default constructor.
    * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
@@ -984,9 +993,10 @@ Signer numériquement un formulaire interactif à l’aide de l’API Forms and 
       * Attribuez la valeur de mot de passe correspondante au champ `SignatureServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+
    >[!NOTE]
    >
-   >Répétez ces étapes pour le client du service Forms.
+   >Répétez ces étapes pour le client de service Forms.
 
 1. Obtention du formulaire interactif à l’aide du service Forms
 
@@ -1027,10 +1037,11 @@ Signer numériquement un formulaire interactif à l’aide de l’API Forms and 
    * Valeur de chaîne qui représente l’emplacement du signataire.
    * Valeur de chaîne qui représente les coordonnées du signataire.
    * Objet `PDFSignatureAppearanceOptions` contrôlant l’aspect de la signature numérique. Par exemple, vous pouvez utiliser cet objet pour ajouter un logo personnalisé à une signature numérique.
-   * Objet `System.Boolean` spécifiant s’il faut effectuer une vérification de révocation sur le certificat du signataire. Si cette vérification de révocation est effectuée, elle est incorporée dans la signature. La valeur par défaut est `false`.
+   * Objet `System.Boolean` spécifiant s’il faut effectuer une vérification de révocation sur le certificat du signataire. Si cette vérification de révocation est effectuée, elle est incorporée dans la signature. La valeur par défaut est de `false`.
    * Objet `OCSPPreferences` qui stocke les préférences pour la prise en charge OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`. Pour plus d’informations sur cet objet, voir Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Objet `CRLPreferences` qui stocke les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Objet `TSPPreferences` qui stocke les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Ce paramètre est facultatif et peut être `null`défini.
+
    La `sign` méthode renvoie un `BLOB` objet qui représente le document PDF signé.
 
 1. Enregistrer le document PDF signé
@@ -1042,9 +1053,9 @@ Signer numériquement un formulaire interactif à l’aide de l’API Forms and 
 
 **Voir également**
 
-[Signature numérique de formulaires interactifs](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
+[Signature numérique d’un Forms interactif](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Certification de documents PDF {#certifying-pdf-documents}
 
@@ -1054,11 +1065,11 @@ Vous pouvez définir un document PDF en le certifiant avec un type de signature 
 * L’auteur ou l’expéditeur du document peut indiquer que le document peut être modifié de certaines manières sans invalider la signature certifiée. Par exemple, le document peut autoriser le remplissage de formulaires ou de commentaires. Si l’auteur spécifie qu’une modification spécifique est autorisée, Acrobat limite ainsi les utilisateurs dans la modification du document. Si ces modifications sont effectuées, à l’aide d’une autre application par exemple, la signature certifiée est alors non valide et Acrobat affiche un avertissement à l’ouverture du document. (Avec des signatures non certifiées, les modifications ne sont pas empêchées et les opérations normales de modification n’invalident pas la signature d’origine.)
 * Au moment de la signature, les différents types de contenus du document susceptibles de rendre le document ambigu ou trompeur sont analysés. Par exemple, une annotation peut assombrir du texte sur une page qui est essentiel pour comprendre ce qui est certifié. Une explication (attestation légale) peut être fournie pour un type de contenu.
 
-Vous pouvez programmer la certification des documents PDF à l’aide de l’API Java du service Signature ou de l’API du service Web Signature. Lors de la certification d’un document PDF, vous devez référencer des informations d’identification de sécurité qui existent dans le service d’informations d’identification. Pour plus d’informations sur les informations d’identification de sécurité, voir le guide *Installation et déploiement d’AEM Forms* pour votre serveur d’applications.
+Vous pouvez programmer la certification des documents PDF à l’aide de l’API Java du service Signature ou de l’API du service Web Signature. Lors de la certification d’un document PDF, vous devez référencer des informations d’identification de sécurité qui existent dans le service d’informations d’identification. Pour plus d’informations sur les informations d’identification de sécurité, voir le guide *Installation et déploiement d’AEM Forms* correspondant à votre serveur d’applications.
 
 >[!NOTE]
 >
->Lors de la certification et de la signature du même document PDF, si la signature de certification n’est pas approuvée, un triangle jaune s’affiche en regard de la première signature lorsque vous ouvrez le document PDF dans Acrobat ou Adobe Reader. La signature de certification doit être approuvée pour éviter cette situation.
+>Lors de la certification et de la signature du même document PDF, si la signature de certification n’est pas approuvée, un triangle jaune s’affiche en regard de la signature du premier signe lorsque vous ouvrez le document PDF dans Acrobat ou Adobe Reader. La signature de certification doit être approuvée pour éviter cette situation.
 
 >[!NOTE]
 >
@@ -1116,7 +1127,7 @@ Pour certifier un document PDF, vous devez disposer des valeurs d’entrée suiv
 * **Nom** du champ de signature : Nom complet du champ de signature certifié. La valeur suivante est un exemple : `form1[0].#subform[1].SignatureField3[3]`. Lors de l’utilisation d’un champ de formulaire XFA, le nom partiel du champ de signature peut également être utilisé : `SignatureField3[3]`. Si une valeur nulle est transmise pour le nom du champ, un champ de signature invisible est créé et certifié de manière dynamique.
 * **Informations d’identification** de sécurité : Informations d’identification utilisées pour certifier le document PDF. Ces informations d’identification de sécurité contiennent un mot de passe et un alias, qui doivent correspondre à un alias figurant dans les informations d’identification du service d’informations d’identification. L’alias est une référence à des informations d’identification réelles qui peuvent se trouver dans un fichier PKCS#12 (avec une extension .pfx) ou un module de sécurité matérielle (HSM).
 * **Algorithme** de hachage : Algorithme de hachage à utiliser pour digérer le document PDF.
-* **Raison de la signature**: Valeur affichée dans Acrobat ou Adobe Reader pour que d’autres utilisateurs connaissent la raison pour laquelle le document PDF a été certifié.
+* **Raison de la signature**: Valeur affichée dans Acrobat ou Adobe Reader pour que les autres utilisateurs connaissent la raison pour laquelle le document PDF a été certifié.
 * **Emplacement du signataire**: Emplacement du signataire spécifié par les informations d’identification.
 * **Coordonnées**: Coordonnées, telles que l’adresse et le numéro de téléphone, du signataire.
 * **Informations** d&#39;autorisation : Autorisations qui contrôlent les actions qu’un utilisateur final peut effectuer sur un document sans que la signature certifiée ne soit incorrecte. Par exemple, vous pouvez définir l’autorisation de sorte que toute modification apportée au document PDF entraîne la non-validité de la signature certifiée.
@@ -1129,7 +1140,7 @@ Pour certifier un document PDF, vous devez disposer des valeurs d’entrée suiv
 
 **Enregistrer le document PDF certifié en tant que fichier PDF**
 
-Une fois le document PDF certifié par le service Signature, vous pouvez l’enregistrer au format PDF afin que les utilisateurs puissent l’ouvrir dans Acrobat ou Adobe Reader.
+Une fois que le service Signature a certifié le document PDF, vous pouvez l’enregistrer en tant que fichier PDF afin que les utilisateurs puissent l’ouvrir dans Acrobat ou Adobe Reader.
 
 **Voir également**
 
@@ -1174,11 +1185,12 @@ Certifier un document PDF à l’aide de l’API Signature (Java) :
    * Objet `MDPPermissions` spécifiant les actions qui peuvent être exécutées sur le document PDF et qui invalide la signature.
    * Objet `PDFSignatureAppearanceOptions` contrôlant l’aspect de la signature certifiée. Si nécessaire, modifiez l’aspect de la signature en appelant une méthode, telle que `setShowDate`.
    * Valeur de chaîne qui fournit une explication des actions qui invalident la signature.
-   * Objet `java.lang.Boolean` spécifiant s’il faut effectuer une vérification de révocation sur le certificat du signataire. Si cette vérification de révocation est effectuée, elle est incorporée dans la signature. La valeur par défaut est `false`.
-   * Objet `java.lang.Boolean` spécifiant si le champ de signature en cours de certification est verrouillé ou non. Si le champ est verrouillé, le champ de signature est marqué en lecture seule, ses propriétés ne peuvent pas être modifiées et il ne peut pas être effacé par quiconque ne dispose pas des autorisations requises. La valeur par défaut est `false`.
+   * Objet `java.lang.Boolean` spécifiant s’il faut effectuer une vérification de révocation sur le certificat du signataire. Si cette vérification de révocation est effectuée, elle est incorporée dans la signature. La valeur par défaut est de `false`.
+   * Objet `java.lang.Boolean` spécifiant si le champ de signature en cours de certification est verrouillé ou non. Si le champ est verrouillé, le champ de signature est marqué en lecture seule, ses propriétés ne peuvent pas être modifiées et il ne peut pas être effacé par quiconque ne dispose pas des autorisations requises. La valeur par défaut est de `false`.
    * Objet `OCSPPreferences` qui stocke les préférences pour la prise en charge OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`. Pour plus d’informations sur cet objet, voir Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Objet `CRLPreferences` qui stocke les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Objet `TSPPreferences` qui stocke les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Par exemple, après avoir créé un `TSPPreferences` objet, vous pouvez définir l’URL du serveur TSP en appelant la `TSPPreferences` méthode de l’ `setTspServerURL` objet. Ce paramètre est facultatif et peut être `null`défini. For more information, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+
    La `certify` méthode renvoie un `com.adobe.idp.Document` objet qui représente le document PDF certifié.
 
 1. Enregistrer le document PDF certifié en tant que fichier PDF
@@ -1245,12 +1257,13 @@ Certifier un document PDF à l’aide de l’API Signature (service Web) :
    * Valeur booléenne qui indique si l’objet transmis en tant que valeur de paramètre précédente doit être utilisé ou non. `MDPPermissions`
    * Valeur de chaîne qui explique quelles actions invalident la signature.
    * Objet `PDFSignatureAppearanceOptions` contrôlant l’aspect de la signature certifiée. Créez un objet `PDFSignatureAppearanceOptions` en utilisant son constructeur. Vous pouvez modifier l’aspect de la signature en définissant l’un de ses membres de données.
-   * Objet `System.Boolean` spécifiant s’il faut effectuer une vérification de révocation sur le certificat du signataire. Si cette vérification de révocation est effectuée, elle est incorporée dans la signature. La valeur par défaut est `false`.
-   * Objet `System.Boolean` spécifiant si le champ de signature en cours de certification est verrouillé ou non. Si le champ est verrouillé, le champ de signature est marqué en lecture seule, ses propriétés ne peuvent pas être modifiées et il ne peut pas être effacé par quiconque ne dispose pas des autorisations requises. La valeur par défaut est `false`.
+   * Objet `System.Boolean` spécifiant s’il faut effectuer une vérification de révocation sur le certificat du signataire. Si cette vérification de révocation est effectuée, elle est incorporée dans la signature. La valeur par défaut est de `false`.
+   * Objet `System.Boolean` spécifiant si le champ de signature en cours de certification est verrouillé ou non. Si le champ est verrouillé, le champ de signature est marqué en lecture seule, ses propriétés ne peuvent pas être modifiées et il ne peut pas être effacé par quiconque ne dispose pas des autorisations requises. La valeur par défaut est de `false`.
    * Objet `System.Boolean` spécifiant si le champ de signature est verrouillé ou non. En d’autres termes, si vous passez `true` au paramètre précédent, passez `true` à ce paramètre.
    * Objet `OCSPPreferences` qui stocke des préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol), qui fournit des informations sur l’état des informations d’identification utilisées pour certifier le document PDF. Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Objet `CRLPreferences` qui stocke les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Objet `TSPPreferences` qui stocke les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Par exemple, après avoir créé un `TSPPreferences` objet, vous pouvez définir l’URL du fournisseur de services de télécommunication en définissant le membre `TSPPreferences` de données de l’ `tspServerURL` objet. Ce paramètre est facultatif et peut être `null`défini.
+
    La `certify` méthode renvoie un `BLOB` objet qui représente le document PDF certifié.
 
 1. Enregistrer le document PDF certifié en tant que fichier PDF
@@ -1264,9 +1277,9 @@ Certifier un document PDF à l’aide de l’API Signature (service Web) :
 
 [Certification de documents PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Verifying Digital Signatures {#verifying-digital-signatures}
 
@@ -1280,7 +1293,7 @@ De même, lorsque vous vérifiez par programmation une signature numérique, vou
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Signature et la vérification des signatures numériques, voir le Guide de référence des [services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Signature et la vérification des signatures numériques, voir [Service Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)(Guide de référence des services pour).
 
 ### Résumé des étapes {#summary_of_steps-6}
 
@@ -1326,13 +1339,13 @@ Définissez les options d’exécution PKI que le service Signature utilise lors
 
 Dans le cadre de la définition de ces options, vous pouvez spécifier l’heure de vérification. Par exemple, vous pouvez sélectionner l’heure actuelle (l’heure sur l’ordinateur du validateur), qui indique d’utiliser l’heure actuelle. Pour plus d’informations sur les différentes valeurs d’heure, voir la valeur de `VerificationTime` énumération dans le Guide de référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
-Vous pouvez également indiquer si la vérification de révocation doit être effectuée dans le cadre du processus de vérification. Par exemple, vous pouvez effectuer une vérification de révocation pour déterminer si le certificat est révoqué. Pour plus d’informations sur les options de vérification de révocation, voir la valeur de `RevocationCheckStyle` énumération dans le Guide de référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+Vous pouvez également indiquer si la vérification de révocation doit être effectuée dans le cadre du processus de vérification. Par exemple, vous pouvez effectuer une vérification de révocation pour déterminer si le certificat est révoqué. Pour plus d’informations sur les options de vérification de révocation, voir la valeur de `RevocationCheckStyle` énumération dans la référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 Pour effectuer une vérification de révocation sur un certificat, spécifiez une URL vers un serveur CRL (Certificate Revocation liste) à l’aide d’un `CRLOptionSpec` objet. Cependant, si vous ne spécifiez pas d’URL vers le serveur CRL, le service Signature obtient l’URL à partir du certificat.
 
 Au lieu d’utiliser un serveur CRL, vous pouvez utiliser un serveur OCSP (Online Certificate Status Protocol) lors de la vérification de révocation. En règle générale, lorsque vous utilisez un serveur OCSP plutôt qu’un serveur CRL, la vérification de révocation est effectuée plus rapidement. (See [Online Certificate Status Protocol](https://tools.ietf.org/html/rfc2560).)
 
-Vous pouvez définir l’ordre de CRL et de serveur OCSP utilisé par le service Signature à l’aide des applications et services Adobe. Par exemple, si le serveur OCSP est défini en premier dans les applications et services Adobe, le serveur OCSP est coché, suivi du serveur CRL.
+Vous pouvez définir l’ordre de CRL et de serveur OCSP utilisé par le service Signature à l’aide d’Adobe Applications and Services. Par exemple, si le serveur OCSP est défini en premier dans Adobe Applications and Services, le serveur OCSP est coché, suivi du serveur CRL.
 
 Si vous n’effectuez pas de vérification de révocation, le service Signature ne vérifie pas si le certificat est révoqué. En d’autres termes, les informations de CRL et de serveur OCSP sont ignorées.
 
@@ -1354,7 +1367,7 @@ Par défaut, le service Signature limite à 65 minutes la durée pendant laquell
 
 >[!NOTE]
 >
->Pour obtenir d’autres valeurs dont vous avez besoin lors de la vérification d’une signature, voir Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+>Pour connaître les autres valeurs dont vous avez besoin lors de la vérification d’une signature, voir Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 **Détermination de l’état de la signature**
 
@@ -1410,6 +1423,7 @@ Vérifiez une signature numérique à l’aide de l’API Signature Service (Jav
    * Valeur de chaîne qui représente le nom du champ de signature qui contient la signature à vérifier.
    * Objet `PKIOptions` contenant des options d’exécution PKI.
    * Instance `VerifySPIOptions` contenant des informations SPI. Vous pouvez spécifier `null` ce paramètre.
+
    La `verify2` méthode renvoie un `PDFSignatureVerificationInfo` objet contenant des informations qui peuvent être utilisées pour vérifier la signature numérique.
 
 1. Détermination de l’état de la signature
@@ -1478,6 +1492,7 @@ Vérifiez une signature numérique à l’aide de l’API Signature Service (ser
    * Valeur de chaîne qui représente le nom du champ de signature qui contient la signature à vérifier.
    * Objet `PKIOptions` contenant des options d’exécution PKI.
    * Instance `VerifySPIOptions` contenant des informations SPI. Vous pouvez spécifier `null` ce paramètre.
+
    La `verify2` méthode renvoie un `PDFSignatureVerificationInfo` objet contenant des informations qui peuvent être utilisées pour vérifier la signature numérique.
 
 1. Détermination de l’état de la signature
@@ -1493,9 +1508,9 @@ Vérifiez une signature numérique à l’aide de l’API Signature Service (ser
 
 [Vérification des signatures numériques](#unresolvedlink-lc-si)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Verifying Multiple Digital Signatures {#verifying-multiple-digital-signatures}
 
@@ -1503,7 +1518,7 @@ AEM Forms permet de vérifier toutes les signatures numériques qui se trouvent 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Signature et la vérification des signatures numériques, voir le Guide de référence des [services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Signature et la vérification des signatures numériques, voir [Service Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)(Guide de référence des services pour).
 
 ### Résumé des étapes {#summary_of_steps-7}
 
@@ -1548,13 +1563,13 @@ Définissez les options d’exécution PKI que le service Signature utilise lors
 
 Dans le cadre de la définition de ces options, vous pouvez spécifier l’heure de vérification. Par exemple, vous pouvez sélectionner l’heure actuelle (l’heure sur l’ordinateur du validateur), qui indique d’utiliser l’heure actuelle. Pour plus d’informations sur les différentes valeurs d’heure, voir la valeur de `VerificationTime` énumération dans le Guide de référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
-Vous pouvez également indiquer si la vérification de révocation doit être effectuée dans le cadre du processus de vérification. Par exemple, vous pouvez effectuer une vérification de révocation pour déterminer si le certificat est révoqué. Pour plus d’informations sur les options de vérification de révocation, voir la valeur de `RevocationCheckStyle` énumération dans le Guide de référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+Vous pouvez également indiquer si la vérification de révocation doit être effectuée dans le cadre du processus de vérification. Par exemple, vous pouvez effectuer une vérification de révocation pour déterminer si le certificat est révoqué. Pour plus d’informations sur les options de vérification de révocation, voir la valeur de `RevocationCheckStyle` énumération dans la référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 Pour effectuer une vérification de révocation sur un certificat, spécifiez une URL vers un serveur CRL (Certificate Revocation liste) à l’aide d’un `CRLOptionSpec` objet. Cependant, si vous ne spécifiez pas d’URL vers un serveur CRL, le service Signature obtient l’URL à partir du certificat.
 
 Au lieu d’utiliser un serveur CRL, vous pouvez utiliser un serveur OCSP (Online Certificate Status Protocol) lors de la vérification de révocation. En règle générale, lorsque vous utilisez un serveur OCSP plutôt qu’un serveur CRL, la vérification de révocation est effectuée plus rapidement. (See [Online Certificate Status Protocol](https://tools.ietf.org/html/rfc2560).)
 
-Vous pouvez définir l’ordre de CRL et de serveur OCSP utilisé par le service Signature à l’aide des applications et services Adobe. Par exemple, si le serveur OCSP est défini en premier dans Adobe Applications and Services, le serveur OCSP est coché, suivi du serveur CRL.
+Vous pouvez définir l’ordre de CRL et de serveur OCSP utilisé par le service Signature à l’aide d’Adobe Applications and Services. Par exemple, si le serveur OCSP est défini en premier dans Adobe Applications and Services, le serveur OCSP est coché, suivi du serveur CRL.
 
 Si vous n’effectuez pas de vérification de révocation, le service Signature ne vérifie pas si le certificat est révoqué. En d’autres termes, les informations de CRL et de serveur OCSP sont ignorées.
 
@@ -1625,6 +1640,7 @@ Vérifiez plusieurs signatures numériques à l’aide de l’API Signature Serv
    * Objet `com.adobe.idp.Document` contenant un document PDF contenant plusieurs signatures numériques.
    * Objet `PKIOptions` contenant des options d’exécution PKI.
    * Instance `VerifySPIOptions` contenant des informations SPI. Vous pouvez spécifier `null` ce paramètre.
+
    La `verifyPDFDocument` méthode renvoie un `PDFDocumentVerificationInfo` objet contenant des informations sur toutes les signatures numériques du document PDF.
 
 1. Effectuer une itération à travers toutes les signatures
@@ -1690,6 +1706,7 @@ Vérifiez plusieurs signatures numériques à l’aide de l’API Signature Serv
    * Objet `BLOB` contenant un document PDF contenant plusieurs signatures numériques.
    * Objet `PKIOptions` contenant des options d’exécution PKI.
    * Instance `VerifySPIOptions` contenant des informations SPI. Vous pouvez spécifier null pour ce paramètre.
+
    La `verifyPDFDocument` méthode renvoie un `PDFDocumentVerificationInfo` objet contenant des informations sur toutes les signatures numériques du document PDF.
 
 1. Effectuer une itération à travers toutes les signatures
@@ -1701,9 +1718,9 @@ Vérifiez plusieurs signatures numériques à l’aide de l’API Signature Serv
 
 [Vérification de plusieurs signatures numériques](#unresolvedlink-lc-si)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Removing Digital Signatures {#removing-digital-signatures}
 
@@ -1789,6 +1806,7 @@ Supprimez une signature numérique à l’aide de l’API Signature (Java) :
 
    * Objet `com.adobe.idp.Document` représentant le document PDF contenant la signature à supprimer.
    * Valeur de chaîne qui spécifie le nom du champ de signature qui contient la signature numérique.
+
    La `clearSignatureField` méthode renvoie un `com.adobe.idp.Document` objet qui représente le document PDF à partir duquel la signature numérique a été supprimée.
 
 1. Enregistrer le document PDF en tant que fichier PDF
@@ -1845,6 +1863,7 @@ Supprimez une signature numérique à l’aide de l’API Signature (service Web
 
    * Objet `BLOB` contenant le document PDF signé.
    * Valeur de chaîne qui représente le nom du champ de signature qui contient la signature numérique à supprimer.
+
    La `clearSignatureField` méthode renvoie un `BLOB` objet qui représente le document PDF à partir duquel la signature numérique a été supprimée.
 
 1. Enregistrer le document PDF en tant que fichier PDF
@@ -1858,6 +1877,6 @@ Supprimez une signature numérique à l’aide de l’API Signature (service Web
 
 [Suppression des signatures numériques](digitally-signing-certifying-documents.md#removing-digital-signatures)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
