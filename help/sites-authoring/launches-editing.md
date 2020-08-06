@@ -12,6 +12,9 @@ discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +28,7 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
 1. Accédez à [Lancement à partir des références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) pour afficher les actions disponibles.
 1. Sélectionnez **Aller à la page** pour ouvrir la page d’édition.
 
-### Modification de l’objet des pages de lancement en Live Copy {#editing-launch-pages-subject-to-a-live-copy}
+### Modification de l’objet des pages de lancement en Live Copy   {#editing-launch-pages-subject-to-a-live-copy}
 
 Si votre lancement est basé sur une [Live Copy](/help/sites-administering/msm.md), vous :
 
@@ -37,7 +40,7 @@ Une Live Copy est utilisée pour synchroniser le contenu *depuis* la branche sou
 Vous pouvez apporter des modifications de la même manière que vous pouvez modifier une Live Copy standard, par exemple :
 
 * Cliquer sur un cadenas fermé interrompt cette synchronisation et vous permet d’apporter de nouvelles mises à jour au contenu de votre lancement. Une fois le cadenas déverrouillé (ouvert), vos modifications ne seront remplacées par aucune modification effectuée au même emplacement dans la branche de source.
-* **Suspendre** (et **Reprendre**) l’héritage pour une page spécifique.
+* **Suspendre** (et **Reprendre**) l’héritage pour une page spécifique.
 
 Pour plus d’informations, voir [Modification du contenu d’une Live Copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content).
 
@@ -53,7 +56,7 @@ Pour suivre les modifications que vous avez apportées, vous pouvez afficher le 
 
 1. Les deux pages (de lancement et source) s’ouvrent côte à côte.
 
-   Pour des informations complètes sur l’utilisation de cette fonction, voir [Différence entre les pages](/help/sites-authoring/page-diff.md).
+   Pour des informations complètes sur l’utilisation de cette fonction, consultez [Différence entre les pages](/help/sites-authoring/page-diff.md).
 
 ## Modification des pages source utilisées {#changing-the-source-pages-used}
 
@@ -67,6 +70,7 @@ Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage d
    * [Références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) pour afficher les actions disponibles :
 
       * Sélectionnez **Modifier le lancement**. 
+
    Les pages source s’affichent.
 
 1. Effectuez les modifications requises, puis confirmez avec **Enregistrer**.
@@ -75,7 +79,7 @@ Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage d
    >
    >Pour ajouter des pages à un lancement, celles-ci doivent se trouver sous une racine de langue commune (c’est-à-dire, sur un seul site).
 
-## Modification d’une configuration de lancement {#editing-a-launch-configuration}
+## Modification d’une configuration de lancement   {#editing-a-launch-configuration}
 
 Vous pouvez à tout moment modifier les propriétés d’un lancement : 
 
@@ -87,13 +91,14 @@ Vous pouvez à tout moment modifier les propriétés d’un lancement :
    * [Références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) pour afficher les actions disponibles :
 
       * Sélectionnez **Modifier les propriétés**. 
+
    Les détails s’affichent.
 
 1. Effectuez les modifications requises, puis confirmez avec **Enregistrer**.
 
-   Reportez-vous à [Lancements - Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour obtenir des informations sur l’objectif et l’interaction des champs **Date de lancement** et **Prêt pour la production**.
+   Consultez [Lancements - Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour plus d’informations sur l’objectif et l’interaction des champs **Date de lancement** et **Prêt pour la production**.
 
-## Identification de l’état de lancement d’une page {#discovering-the-launch-status-of-a-page}
+## Identification de l’état de lancement d’une page   {#discovering-the-launch-status-of-a-page}
 
 L’état s’affiche lorsque vous sélectionnez un lancement spécifique dans l’onglet Références (voir [Lancements dans les références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
