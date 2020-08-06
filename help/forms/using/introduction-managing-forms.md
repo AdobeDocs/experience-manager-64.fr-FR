@@ -10,13 +10,16 @@ topic-tags: introduction
 discoiquuid: 6f9cb26a-ac7f-4218-827f-9d4d55b859b4
 translation-type: tm+mt
 source-git-commit: 1a671421c208d8b1b446765b9302877506dbddc2
+workflow-type: tm+mt
+source-wordcount: '1605'
+ht-degree: 80%
 
 ---
 
 
 # Présentation de la gestion des formulaires {#introduction-to-managing-forms}
 
-AEM Forms fournit une interface utilisateur simplifiée mais puissante pour créer et gérer des formulaires, des documents, des thèmes, des lettres, des fragments de document, des dictionnaires de données et des actifs associés. Il permet de gérer le cycle de vie complet des formulaires, des documents et des ressources connexes, du bureau d’un développeur à l’offre\
+AEM Forms fournit une interface utilisateur simplifiée mais puissante pour créer et gérer des formulaires, des documents, des thèmes, des lettres, des fragments de document, des dictionnaires de données et des actifs associés. Il permet de gérer tout le cycle de vie des formulaires, des documents et des ressources connexes, depuis l’ordinateur de bureau d’un développeur jusqu’à l’offre\
 sur un serveur de portail pour les utilisateurs finaux. Vous pouvez utiliser l’interface utilisateur AEM Forms pour :
 
 * Accéder aux composants AEM Forms
@@ -46,11 +49,11 @@ Le bouton de création est le point de départ du processus de création de char
 
 * **Communication** interactive : Une communication interactive est une correspondance, un relevé ou un document numérique HTML personnalisé, interactif et compatible avec les périphériques. Réactives par nature, les communications interactives modifient automatiquement leur mise en forme et leur conception en fonction du périphérique et des paramètres de l’utilisateur. Pour en savoir plus, consultez la section [Aperçu des communications interactives](/help/forms/using/interactive-communications-overview.md).
 
-* **Formulaire adaptatif :** un formulaire adaptatif est un formulaire engageant et réactif. Vous pouvez créer un formulaire adaptatif pour l’adapter dynamiquement aux entrées utilisateur en ajoutant ou en supprimant des sections de formulaire en fonction de la réponse de l’utilisateur, du périphérique ou de l’environnement de travail. L’article [Introduction à la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md) fournit plus d’informations sur les formulaires adaptatifs.
+* **Formulaire adaptatif :** un formulaire adaptatif est un formulaire engageant et réactif. Vous pouvez créer un formulaire adaptatif pour l’adapter de manière dynamique aux entrées utilisateur en ajoutant ou en supprimant des sections de formulaire en fonction de la réponse de l’utilisateur, du périphérique ou de l’environnement de travail. L’article [Introduction à la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md) fournit plus d’informations sur les formulaires adaptatifs.
 
 * **Fragment de formulaire adaptatif :** bien que chaque formulaire soit conçu pour un rôle spécifique, certains segments sont communs à la plupart des formulaires, comme les informations personnelles telles que le nom et l’adresse, les informations relatives à la famille et aux revenus, etc. Vous pouvez créer un actif pour les sections de ce type.  Ces segments réutilisables et autonomes sont appelés fragments de formulaire adaptatif. Pour plus de détails, l’article relatif aux [fragments de formulaire adaptatif](/help/forms/using/adaptive-form-fragments.md).
 
-* **Jeu de formulaires :** un jeu de formulaires est un assortiment de formulaires HTML5 regroupés et présentés aux utilisateurs finaux comme un ensemble unique de formulaires. Lorsque les utilisateurs finaux commencent à compléter un jeu de formulaires, les formulaires passent facilement d’un formulaire à l’autre. En fin de compte, un utilisateur peut envoyer tous les formulaires, en tant qu’entité unique, en un seul clic. Pour plus d’informations, voir [Jeu de formulaires dans AEM Forms](/help/forms/using/formset-in-aem-forms.md).
+* **Jeu de formulaires :** un jeu de formulaires est un assortiment de formulaires HTML5 regroupés et présentés aux utilisateurs finaux comme un ensemble unique de formulaires. Lorsque les utilisateurs finaux commencent à compléter un jeu de formulaires, les formulaires passent facilement d’un formulaire à l’autre. A la fin, un utilisateur peut envoyer tous les formulaires, en tant qu’entité unique, en un seul clic. Pour plus d’informations, voir [Jeu de formulaires dans AEM Forms](/help/forms/using/formset-in-aem-forms.md).
 
 * **Dossier :** l’interface utilisateur d’AEM Forms utilise des dossiers pour classer les ressources. Elle prend en charge deux types de dossiers :
 
@@ -59,7 +62,7 @@ Le bouton de création est le point de départ du processus de création de char
 
 ![dossiers](assets/folders.png)
 
-******A. Dossier général** B. Dossier Processus des formulaires
+**A.** Dossier Général **B.** Dossier Forms Workflow
 
 Le panneau Formulaires et document fournit également des options pour effectuer les actions suivantes :
 
@@ -95,7 +98,7 @@ Le panneau d’outils AEM contient des outils pour divers composants. To navigat
 
 * **Configurer le dossier de contrôle :** un administrateur peut configurer un dossier réseau, appelé dossier de contrôle, de sorte que lorsqu’un utilisateur y place un fichier (par exemple un fichier PDF), une opération pré-configurée est lancée et manipule le fichier. <!-- Fix broken link For detailed information, see Create and Configure a watched folder. -->
 
-* **** Configuration du service hors ligne de l’application Forms : Le service hors ligne de l’application AEM Forms met en cache les chemins ou les URL des ressources utilisées dans un formulaire. La mise en cache des chemins ou des URL des ressources utilisées dans un formulaire améliore les performances côté serveur. To configure the server-side offline component of AEM Forms app, see [Working in the offline mode](/help/forms/using/work-offline-mode.md).
+* **Configuration du service hors ligne de l’application Forms :** Le service hors ligne de l’application AEM Forms met en cache les chemins ou les URL des ressources utilisées dans un formulaire. La mise en cache des chemins ou des URL des ressources utilisées dans un formulaire améliore les performances côté serveur. To configure the server-side offline component of AEM Forms app, see [Working in the offline mode](/help/forms/using/work-offline-mode.md).
 
 ![aem-forms-tools](assets/aem-forms-tools.png)
 
@@ -105,14 +108,14 @@ Le panneau d’outils AEM contient des outils pour divers composants. To navigat
 
 ## Éléments courants de l’interface utilisateur {#commonelements}
 
-* **** Rail de gauche : Vous pouvez cliquer sur l’icône de rail de gauche ![rail-ftpng](assets/railleftpng.png) pour afficher les fonctionnalités Chronologie et Références d’AEM Forms.
+* **Rail de gauche :** Vous pouvez cliquer sur l’icône de rail de gauche ![rail-ftpng](assets/railleftpng.png) pour afficher les fonctionnalités Chronologie et Références de AEM Forms.
 
    * **Montage :** vous pouvez ajouter et afficher un commentaire sur un actif qui est disponible à des fins d’examen dans le montage. Pour des instructions détaillées, voir [Création et gestion de révisions des actifs d’un formulaire](/help/forms/using/create-reviews-forms.md).
    * **Références :** un actif AEM Forms peut être utilisé dans plusieurs actifs AEM Forms. Par exemple, un fragment de document peut être utilisé dans plusieurs lettres. Les références sont une liste des actifs (d’autres formulaires ou ressources) dans lesquels l’actif sélectionné est utilisé et également la liste des autres actifs que l’actif sélectionné utilise.
 
 * **Chemins de navigation :** un chemin de navigation représente le titre de la console ou du dossier actif. Vous pouvez cliquer sur l’option Chemin de navigation pour naviguer entre le niveau des dossiers qui sont plus élevés dans la hiérarchie.
-* **** Navigateur d’affichage : Vous pouvez cliquer sur la ![liste](assets/viewlist.png) de visualisation de l’icône de commutateur d’affichage ou sur la ![carte](assets/viewcard.png) pour passer rapidement de l’affichage de liste à l’affichage de carte. Pour plus d’informations sur les composants d’interface utilisateur communs, voir [Utilisation de l’environnement de rédaction](/help/sites-authoring/basic-handling.md).
-* **** Rechercher : L&#39;option de recherche ![de recherche](assets/search.png) permet de rechercher rapidement le contenu et les outils dont vous avez besoin et d&#39;y accéder. Saisissez le nom de la fonctionnalité de contenu ou de produit, puis sélectionnez l’une des suggestions. Par exemple, saisissez « documents » pour rechercher et accéder rapidement à la console Formes et documents ou Fragments de document. Pour plus de détails sur la recherche, voir l’article sur la [recherche](/help/sites-authoring/search.md) AEM 6.2.
+* **Commutateur de Vue :** Vous pouvez cliquer sur la ![liste](assets/viewlist.png) d’affichage de l’icône de permutation de Vues ou sur la carte de ![visionneuse](assets/viewcard.png) pour basculer rapidement entre la vue de la liste et celle de la carte. Pour plus d’informations sur les composants d’interface utilisateur communs, voir [Utilisation de l’environnement de rédaction](/help/sites-authoring/basic-handling.md).
+* **Rechercher :** L&#39;option de recherche ![de la recherche](assets/search.png) permet de trouver rapidement le contenu et les outils dont vous avez besoin et d&#39;y accéder rapidement. Saisissez le nom de la fonctionnalité de contenu ou de produit, puis sélectionnez l’une des suggestions. Par exemple, saisissez « documents » pour rechercher et accéder rapidement à la console Formes et documents ou Fragments de document. Pour plus de détails sur la recherche, voir l’article sur la [recherche](/help/sites-authoring/search.md) AEM 6.2.
 * **Barre d’outils Actions** : lors de la sélection d’un actif, la barre d’outils des actions s’affiche au-dessus de la liste des actifs. Elle contient tous les outils de gestion pour l’actif sélectionné. Vous pouvez placer votre curseur sur l’icône d’outil pour afficher l’info-bulle qui en décrit la fonctionnalité
 
 >[!NOTE]
