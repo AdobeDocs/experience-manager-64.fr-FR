@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Présentation des processus AEM Forms {#understanding-aem-forms-processes}
 
-Un cas d’utilisation courant consiste à ce qu’un ensemble de services AEM Forms fonctionnent sur un seul document. Vous pouvez envoyer une demande au conteneur de services en créant un processus à l’aide de Workbench. Un processus représente un processus d’entreprise que vous automatisez. Pour plus d’informations sur la création de processus, voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Un cas d&#39;utilisation courant est qu&#39;un ensemble de services AEM Forms fonctionne sur un seul document. Vous pouvez envoyer une demande au conteneur de services en créant un processus à l’aide de Workbench. Un processus représente un processus d’entreprise que vous automatisez. Pour plus d’informations sur la création de processus, voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 Une fois qu’un processus est activé, il devient un service et peut être appelé comme d’autres services. Une différence entre un service standard, tel que le service Encryption, et un service issu d’un processus, réside dans le fait que ce dernier dispose d’une opération qui exécute de nombreuses actions. En revanche, un service standard comporte de nombreuses opérations. Chaque opération exécute généralement une action, telle que l’application d’une stratégie à un document ou le chiffrement d’un document.
 
@@ -32,7 +32,7 @@ Cependant, il arrive qu’un processus ne puisse pas être exécuté de façon s
 * Un processus peut dépasser les limites organisationnelles.
 * Un processus a besoin d’une entrée externe pour se terminer. Prenons l’exemple d’un cas où un formulaire est envoyé à un responsable absent du bureau. Dans ce cas, le processus n’est pas terminé tant que le gestionnaire ne retourne pas et ne remplit pas le formulaire.
 
-   Ces types de processus sont appelés processus de longue durée. Un processus de longue durée est exécuté de manière asynchrone, ce qui permet aux systèmes d’interagir lorsque les ressources le permettent et permet le suivi et la surveillance de l’opération. Lorsqu’un processus de longue durée est appelé, AEM Forms crée une valeur d’identificateur d’appel dans le cadre d’un enregistrement qui effectue le suivi de l’état du processus de longue durée. L’enregistrement est stocké dans la base de données AEM Forms. Vous pouvez purger les enregistrements de processus de longue durée lorsqu’ils ne sont plus nécessaires.
+   Ces types de processus sont appelés processus de longue durée. Un processus de longue durée est exécuté de manière asynchrone, ce qui permet aux systèmes d’interagir lorsque les ressources le permettent et permet le suivi et la surveillance de l’opération. Lorsqu’un processus de longue durée est appelé, AEM Forms crée une valeur d’identificateur d’appel dans le cadre d’un enregistrement qui effectue le suivi de l’état du processus de longue durée. L&#39;enregistrement est stocké dans la base de données AEM Forms. Vous pouvez purger les enregistrements de processus de longue durée lorsqu’ils ne sont plus nécessaires.
 
 >[!NOTE]
 >
@@ -60,15 +60,15 @@ Lorsque ce processus de courte durée est appelé, il effectue les actions suiva
    >
    >En règle générale, un processus de courte durée comprend plus de trois actions. Vous créez un processus à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
-   *La programmation avec AEM* forms décrit les méthodes suivantes pour appeler ce processus de courte durée par programmation :
+   *La programmation avec des* formulaires AEM décrit les manières suivantes d’appeler ce processus de courte durée par programmation :
 
-   * [Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (à l’aide d’une application Flex)
+   * [Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide de AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (à l’aide d’une application Flex)
    * [Appel d’un processus de courte durée à l’aide de l’API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) d’appel (API d’appel Java)
-   * [Appel d’AEM Forms à l’aide du codage](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) Base64 (exemple de service Web)
-   * [Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (exemple de service Web)
-   * [Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (exemple de service Web)
-   * [Appel d’AEM Forms à l’aide de données BLOB sur HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) (exemple de service Web)
-   * [Appel d’AEM Forms à l’aide de DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (exemple de service Web)
+   * [Appeler AEM Forms à l’aide de l’encodage](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) Base64 (exemple de service Web)
+   * [Appeler AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (exemple de service Web)
+   * [Appeler AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (exemple de service Web)
+   * [Appeler AEM Forms à l’aide de données BLOB sur HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) (exemple de service Web)
+   * [Appeler AEM Forms à l’aide de DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (exemple de service Web)
    * [Appel du processus MyApplication/EncryptDocument à l’aide de REST](/help/forms/developing/invoking-aem-forms-using-rest.md)
 
 **Exemple de processus de longue durée**
