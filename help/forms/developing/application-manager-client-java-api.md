@@ -34,15 +34,15 @@ Le Début rapide de l’API Java suivant (SOAP) est disponible pour le client Ap
 
 [Début rapide (mode SOAP) : Obtention de l’état des applications à l’aide de l’API Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[Début rapide (mode SOAP) : prévisualisation d’AEM Forms et de l’archive d’application ultérieure à l’aide de l’API Java](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[Début rapide (mode SOAP) : aperçu de l’archive AEM Forms et des applications ultérieures à l’aide de l’API Java](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
 [Début rapide (mode SOAP) : suppression de l’archive de l’application AEM Forms à l’aide de l’API Java](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
-Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms fortement typée et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les débuts rapides situés dans Programmation avec AEM Forms dépendent du serveur Forms déployé sur JBoss et le système d’exploitation Windows. Cependant, si vous utilisez un autre système d&#39;exploitation, tel que Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d&#39;exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les débuts rapides situés dans Programmation avec AEM Forms reposent sur le serveur Forms déployé sur JBoss et le système d’exploitation Windows. Cependant, si vous utilisez un autre système d&#39;exploitation, tel que Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d&#39;exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Début rapide (mode SOAP) : Création d’une version d’application à l’aide de l’API Java {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
@@ -644,9 +644,9 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## Début rapide (mode SOAP) : aperçu de l’archive d’applications LiveCycle ES2 et versions ultérieures à l’aide de l’API Java {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## Début rapide (mode SOAP) : aperçu de l’archive d’application LiveCycle ES2 et versions ultérieures à l’aide de l’API Java {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
-L’exemple de code Java suivant est destiné à prévisualiser AEM Forms et l’archive d’application ultérieure à l’aide de l’API Java.
+L’exemple de code Java suivant est destiné à prévisualiser l’archive d’application AEM Forms et ultérieure à l’aide de l’API Java.
 
 ```as3
 /* 
