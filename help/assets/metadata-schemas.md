@@ -41,7 +41,7 @@ Pour vue d’une liste de formulaires/modèles, dans l’ [!DNL Experience Manag
 |---|---|---|
 | [!UICONTROL default] |  | schéma de métadonnées de base pour les ressources. |
 |  | The following child forms inherit the properties of the [!UICONTROL default] form: |  |
-|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Schéma de formulaire pour les vidéos Dynamic Media. |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Schéma de formulaire pour les vidéos Contenu multimédia dynamique. |
 |  | <ul><li> [!UICONTROL image]</li></ul> | Schéma de formulaire pour les fichiers de type MIME &quot;image&quot;, par exemple image/jpeg, image/png, etc. <br> Le formulaire [!UICONTROL image] comporte les modèles de formulaire enfant suivants : <ul><li> [!UICONTROL jpeg]: Schéma de formulaire pour les ressources avec un sous-type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schéma de formulaire pour les ressources avec un [!UICONTROL tiff]de sous-type.</li></ul> |
 |  | <ul><li> [!UICONTROL l’application ;]</li></ul> | Schéma de formulaire pour les ressources de type MIME &quot;application&quot;, par exemple application/ pdf, application/ zip, etc. <br>[!UICONTROL pdf]: Formulaire de Schéma pour les ressources avec un sous-type pdf. |
 |  | <ul><li>[!UICONTROL vidéo]</li></ul> | Schéma de formulaire pour les ressources de type MIME &quot;video&quot;, telles que video/avi, video/mp4, etc. |
