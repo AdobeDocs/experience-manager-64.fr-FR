@@ -183,7 +183,7 @@ Les clients utilisent des images de tailles et de formats différents sur leur s
 
 De nombreux clients de sites mettent en œuvre un servlet d’image qui redimensionne ou recadre les images lorsque cela est nécessaire, ce qui a pour effet d’appliquer une charge supplémentaire à l’instance de publication. Toutefois, tant que ces images peuvent être mises en cache, le défi peut être plus facilement relevé.
 
-Une autre méthode consiste à utiliser la technologie Scene7 pour transférer entièrement la manipulation de l’image. En outre, vous pouvez déployer le portail de marque qui prend en charge non seulement les responsabilités de génération de rendu de l’infrastructure AEM, mais également l’ensemble du niveau de publication.
+Une autre méthode consiste à utiliser la technologie Scene7 pour transférer entièrement la manipulation de l’image. De plus, vous pouvez déployer le portail de marque qui prend en charge non seulement les responsabilités de génération de rendu de l’infrastructure AEM, mais également l’ensemble du niveau de publication.
 
 #### ImageMagick {#imagemagick}
 
@@ -214,7 +214,7 @@ En outre, définissez le chemin du dossier temporaire d’ImageMagick dans le fi
 >
 >The ImageMagick `policy.xml` and `configure.xml` files may be found under `/usr/lib64/ImageMagick-*/config/` instead of `/etc/ImageMagick/`. See [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for details on the configuration file locations.
 
-Si vous utilisez AEM sur Adobe Managed Services (AMS), contactez le service à la clientèle d’Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Experience Manager ne peut pas traiter de fichiers PSB haute résolution de plus de 3 000 x 2 3 000 pixels.
+Si vous utilisez AEM sur Adobe Managed Services (AMS), contactez le service à la clientèle Adobe si vous prévoyez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Le Experience Manager ne peut pas traiter de fichiers PSB à très haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 <!-- 
 
@@ -410,13 +410,13 @@ Afin de réduire au maximum la latence et d’obtenir un débit élevé grâce �
 * Utiliser une connexion câblée pour le chargement de ressources volumineuses.
 * Définition de paramètres JVM optimaux.
 * Configurer un entrepôt de données de système de fichiers ou un entrepôt de données S3.
-* Désactivez la génération de sous-ressources. S’il est activé, le processus d’AEM crée une ressource distincte pour chaque page d’une ressource de plusieurs pages. Chacune de ces pages est une ressource individuelle qui consomme de l&#39;espace disque supplémentaire, nécessite un contrôle de version et un traitement supplémentaire du flux de travail. Si vous n’avez pas besoin de pages distinctes, désactivez la génération de sous-ressources et les activités d’extraction de page.
+* Désactivez la génération de sous-ressources. Si elle est activée, AEM processus crée un actif distinct pour chaque page d’une ressource de plusieurs pages. Chacune de ces pages est une ressource individuelle qui consomme de l&#39;espace disque supplémentaire, nécessite un contrôle de version et un traitement supplémentaire du flux de travail. Si vous n’avez pas besoin de pages distinctes, désactivez la génération de sous-ressources et les activités d’extraction de page.
 * Activer les workflows transitoires.
 * Régler les files d’attente de workflows Granite pour limiter les tâches concurrentes.
 * Configurer ImageMagick pour limiter la consommation de ressources.
 * Supprimer les étapes inutiles du workflow Ressource de mise à jour de gestion des actifs numériques.
 * Configurer la purge des workflows et versions.
 * Optimiser la configuration de l&#39;index Lucene.
-* Optimisez les index avec les derniers Service Pack et correctifs. Contactez le service à la clientèle d’Adobe pour connaître les optimisations d’index supplémentaires éventuellement disponibles.
+* Optimisez les index avec les derniers Service Pack et correctifs. Vérifiez auprès du service à la clientèle Adobe si d’autres optimisations d’index sont disponibles.
 * Use `guessTotal` to optimize query performance.
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
