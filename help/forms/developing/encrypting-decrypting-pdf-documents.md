@@ -141,7 +141,7 @@ Chiffrer un document PDF avec un mot de passe à l’aide de l’API de chiffrem
    * Spécifiez les ressources de document PDF à chiffrer en appelant la `PasswordEncryptionOptionSpec` méthode de l’objet et en transmettant une valeur de `setEncryptOption` `PasswordEncryptionOption` énumération qui spécifie les ressources de document à chiffrer. Par exemple, pour chiffrer l’ensemble du document PDF, y compris ses métadonnées et ses pièces jointes, spécifiez `PasswordEncryptionOption.ALL`.
    * Créez un `java.util.List` objet qui stocke les autorisations de chiffrement à l’aide du `ArrayList` constructeur.
    * Spécifiez une autorisation en appelant la méthode de l’ `java.util.List` objet `add` et en transmettant une valeur de énumération correspondant à l’autorisation que vous souhaitez définir. Par exemple, pour définir l’autorisation permettant à un utilisateur de copier des données situées dans le document PDF, spécifiez `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Répétez cette étape pour chaque autorisation à définir).
-   * Spécifiez l’option de compatibilité Acrobat en appelant la `PasswordEncryptionOptionSpec` `setCompatability` méthode de l’objet et en transmettant une valeur de énumération qui spécifie le niveau de compatibilité Acrobat. For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
+   * Spécifiez l’option de compatibilité Acrobat en appelant la `PasswordEncryptionOptionSpec` méthode de l’ `setCompatability` objet et en transmettant une valeur de énumération qui spécifie le niveau de compatibilité Acrobat. Par exemple, vous pouvez spécifier `PasswordEncryptionCompatability.ACRO_7`.
    * Spécifiez la valeur du mot de passe qui permet à un utilisateur d’ouvrir le document PDF chiffré en appelant la `PasswordEncryptionOptionSpec` `setDocumentOpenPassword` méthode de l’objet et en transmettant une valeur de chaîne représentant le mot de passe ouvert.
    * Spécifiez la valeur du mot de passe maître permettant à un utilisateur de supprimer le chiffrement du document PDF en appelant la `PasswordEncryptionOptionSpec` `setPermissionPassword` méthode de l’objet et en transmettant une valeur de chaîne représentant le mot de passe maître.
 
@@ -151,6 +151,7 @@ Chiffrer un document PDF avec un mot de passe à l’aide de l’API de chiffrem
 
    * Objet `com.adobe.idp.Document` contenant le document PDF à chiffrer avec le mot de passe.
    * Objet `PasswordEncryptionOptionSpec` contenant les options d’exécution de chiffrement.
+
    La `encryptPDFUsingPassword` méthode renvoie un `com.adobe.idp.Document` objet contenant un document PDF chiffré par mot de passe.
 
 1. Enregistrez le document PDF chiffré au format PDF.
@@ -183,7 +184,7 @@ Chiffrer un document PDF avec un mot de passe à l’aide de l’API Encryption 
 1. Créez un objet API Client Encryption.
 
    * Créez un `EncryptionServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `EncryptionServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un `EncryptionServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `EncryptionServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -215,6 +216,7 @@ Chiffrer un document PDF avec un mot de passe à l’aide de l’API Encryption 
 
    * Objet `BLOB` contenant le document PDF à chiffrer avec le mot de passe.
    * Objet `PasswordEncryptionOptionSpec` contenant les options d’exécution de chiffrement.
+
    La `encryptPDFUsingPassword` méthode renvoie un `BLOB` objet contenant un document PDF chiffré par mot de passe.
 
 1. Enregistrez le document PDF chiffré au format PDF.
@@ -228,9 +230,9 @@ Chiffrer un document PDF avec un mot de passe à l’aide de l’API Encryption 
 
 [Résumé des étapes](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Encrypting PDF Documents with Certificates {#encrypting-pdf-documents-with-certificates}
 
@@ -355,7 +357,7 @@ Chiffrer un document PDF avec un certificat à l’aide de l’API de chiffremen
 
    * Create a `CertificateEncryptionOptionSpec` object by invoking its constructor.
    * Spécifiez les ressources de document PDF à chiffrer en appelant la `CertificateEncryptionOptionSpec` méthode de l’objet et en transmettant une valeur de `setOption` `CertificateEncryptionOption` énumération qui spécifie les ressources de document à chiffrer. Par exemple, pour chiffrer l’ensemble du document PDF, y compris ses métadonnées et ses pièces jointes, spécifiez `CertificateEncryptionOption.ALL`.
-   * Spécifiez l’option de compatibilité Acrobat en appelant la `CertificateEncryptionOptionSpec` méthode de l’ `setCompat` objet et en transmettant une valeur de `CertificateEncryptionCompatibility` énumération qui spécifie le niveau de compatibilité Acrobat. For example, you can specify `CertificateEncryptionCompatibility.ACRO_7`.
+   * Spécifiez l’option de compatibilité Acrobat en appelant la `CertificateEncryptionOptionSpec` méthode de l’ `setCompat` objet et en transmettant une valeur de `CertificateEncryptionCompatibility` énumération qui spécifie le niveau de compatibilité Acrobat. Par exemple, vous pouvez spécifier `CertificateEncryptionCompatibility.ACRO_7`.
 
 1. Créez un document PDF chiffré par certificat.
 
@@ -364,6 +366,7 @@ Chiffrer un document PDF avec un certificat à l’aide de l’API de chiffremen
    * Objet `com.adobe.idp.Document` contenant le document PDF à chiffrer.
    * Objet `java.util.List` qui stocke les informations de certificat.
    * Objet `CertificateEncryptionOptionSpec` contenant les options d’exécution de chiffrement.
+
    La `encryptPDFUsingCertificates` méthode renvoie un `com.adobe.idp.Document` objet contenant un document PDF chiffré par certificat.
 
 1. Enregistrez le document PDF chiffré au format PDF.
@@ -396,7 +399,7 @@ Chiffrer un document PDF avec un certificat à l’aide de l’API Encryption (s
 1. Créez un objet API Client Encryption.
 
    * Créez un `EncryptionServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `EncryptionServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un `EncryptionServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `EncryptionServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -440,6 +443,7 @@ Chiffrer un document PDF avec un certificat à l’aide de l’API Encryption (s
    * Objet `BLOB` contenant le document PDF à chiffrer.
    * Tableau `Object` contenant les informations de certificat.
    * Objet `CertificateEncryptionOptionSpec` contenant les options d’exécution de chiffrement.
+
    La `encryptPDFUsingCertificates` méthode renvoie un `BLOB` objet contenant un document PDF chiffré par certificat.
 
 1. Enregistrez le document PDF chiffré au format PDF.
@@ -453,9 +457,9 @@ Chiffrer un document PDF avec un certificat à l’aide de l’API Encryption (s
 
 [Résumé des étapes](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Removing Certificate Based Encryption {#removing-certificate-based-encryption}
 
@@ -543,6 +547,7 @@ Supprimez le chiffrement avec certificat d’un document PDF à l’aide de l’
 
    * Objet `com.adobe.idp.Document` contenant le document PDF chiffré.
    * Valeur de chaîne qui spécifie le nom d’alias de la clé privée qui correspond à la clé utilisée pour chiffrer le document PDf.
+
    La `removePDFCertificateSecurity` méthode renvoie un `com.adobe.idp.Document` objet contenant un document PDF non sécurisé.
 
 1. Enregistrez le document PDF.
@@ -575,7 +580,7 @@ Supprimez le chiffrement avec certificat à l’aide de l’API Encryption (serv
 1. Créez un client de service de chiffrement.
 
    * Créez un `EncryptionServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `EncryptionServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un `EncryptionServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `EncryptionServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -599,6 +604,7 @@ Supprimez le chiffrement avec certificat à l’aide de l’API Encryption (serv
 
    * Objet `BLOB` contenant des données de flux de fichiers qui représentent un document PDF chiffré.
    * Valeur de chaîne qui spécifie le nom d’alias de la clé publique qui correspond à la clé privée utilisée pour chiffrer le document PDf.
+
    La `removePDFCredentialSecurity` méthode renvoie un `BLOB` objet contenant un document PDF non sécurisé.
 
 1. Enregistrez le document PDF.
@@ -612,9 +618,9 @@ Supprimez le chiffrement avec certificat à l’aide de l’API Encryption (serv
 
 [Résumé des étapes](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Suppression du chiffrement de mot de passe {#removing-password-encryption}
 
@@ -696,6 +702,7 @@ Supprimez le chiffrement avec mot de passe d’un document PDF à l’aide de l�
 
    * Objet `com.adobe.idp.Document` contenant le document PDF chiffré.
    * Valeur de chaîne qui spécifie la valeur du mot de passe maître utilisée pour supprimer le chiffrement du document PDF.
+
    La `removePDFPasswordSecurity` méthode renvoie un `com.adobe.idp.Document` objet contenant un document PDF non sécurisé.
 
 1. Enregistrez le document PDF.
@@ -722,7 +729,7 @@ Supprimez le chiffrement avec mot de passe à l’aide de l’API Encryption (se
 1. Créez un client de service de chiffrement.
 
    * Créez un `EncryptionServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `EncryptionServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un `EncryptionServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `EncryptionServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -746,6 +753,7 @@ Supprimez le chiffrement avec mot de passe à l’aide de l’API Encryption (se
 
    * Objet `BLOB` contenant des données de flux de fichiers qui représentent un document PDF chiffré.
    * Valeur de chaîne qui spécifie la valeur du mot de passe utilisée pour supprimer le chiffrement du document PDF. Cette valeur est spécifiée lors du chiffrement du document PDF avec un mot de passe.
+
    La `removePDFPasswordSecurity` méthode renvoie un `BLOB` objet contenant un document PDF non sécurisé.
 
 1. Enregistrez le document PDF.
@@ -757,13 +765,13 @@ Supprimez le chiffrement avec mot de passe à l’aide de l’API Encryption (se
 
 **Voir également**
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Déverrouillage des Documents PDF chiffrés {#unlocking-encrypted-pdf-documents}
 
-Un document PDF chiffré par mot de passe ou par certificat doit être déverrouillé avant qu’une autre opération AEM Forms puisse être effectuée sur celui-ci. Si vous tentez d’effectuer une opération sur un document PDF chiffré, vous allez générer une exception. Après avoir déverrouillé un document PDF chiffré, vous pouvez y effectuer une ou plusieurs opérations. Ces opérations peuvent appartenir à d’autres services, tels que le service des extensions d’Acrobat Reader DC.
+Un document PDF chiffré par mot de passe ou par certificat doit être déverrouillé avant qu’une autre opération AEM Forms ne puisse être effectuée sur celui-ci. Si vous tentez d’effectuer une opération sur un document PDF chiffré, vous allez générer une exception. Après avoir déverrouillé un document PDF chiffré, vous pouvez y effectuer une ou plusieurs opérations. Ces opérations peuvent appartenir à d’autres services, tels que le service d’extensions Acrobat Reader DC.
 
 >[!NOTE]
 >
@@ -847,15 +855,17 @@ Déverrouillez un document PDF chiffré à l’aide de l’API de chiffrement (J
 
    * Objet `com.adobe.idp.Document` contenant le document PDF chiffré par mot de passe.
    * Valeur de chaîne qui spécifie la valeur de mot de passe utilisée pour ouvrir un document PDF chiffré par mot de passe. Cette valeur est spécifiée lors du chiffrement du document PDF avec un mot de passe.
+
    Pour déverrouiller un document PDF chiffré avec un certificat, appelez la `unlockPDFUsingCredential` méthode et transmettez les valeurs suivantes :
 
    * A `com.adobe.idp.Document` object that contains the certificate-encrypted PDF document.
    * Valeur de chaîne spécifiant le nom d’alias de la clé publique correspondant à la clé privée utilisée pour chiffrer le document PDF.
+
    Les méthodes `unlockPDFUsingPassword` et `unlockPDFUsingCredential` renvoient toutes deux un `com.adobe.idp.Document` objet que vous transmettez à une autre méthode Java AEM Forms pour effectuer une opération.
 
 1. Exécutez une opération AEM Forms.
 
-   Exécutez une opération AEM Forms sur le document PDF déverrouillé pour répondre aux besoins de votre entreprise. Par exemple, si vous souhaitez appliquer des droits d’utilisation à un document PDF déverrouillé, transmettez l’ `com.adobe.idp.Document` objet renvoyé par les méthodes `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` à la `ReaderExtensionsServiceClient` méthode de l’ `applyUsageRights` objet.
+   Effectuez une opération AEM Forms sur le document PDF déverrouillé pour répondre aux besoins de votre entreprise. Par exemple, si vous souhaitez appliquer des droits d’utilisation à un document PDF déverrouillé, transmettez l’ `com.adobe.idp.Document` objet renvoyé par les méthodes `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` à la `ReaderExtensionsServiceClient` méthode de l’ `applyUsageRights` objet.
 
 **Voir également**
 
@@ -884,7 +894,7 @@ Déverrouillez un document PDF chiffré à l’aide de l’API Encryption (servi
 1. Créez un client de service de chiffrement.
 
    * Créez un `EncryptionServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `EncryptionServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un `EncryptionServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `EncryptionServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -910,33 +920,35 @@ Déverrouillez un document PDF chiffré à l’aide de l’API Encryption (servi
 
    * Objet `BLOB` contenant le document PDF chiffré par mot de passe.
    * Valeur de chaîne qui spécifie la valeur de mot de passe utilisée pour ouvrir un document PDF chiffré par mot de passe. Cette valeur est spécifiée lors du chiffrement du document PDF avec un mot de passe.
+
    Pour déverrouiller un document PDF chiffré avec un certificat, appelez la `unlockPDFUsingCredential` méthode et transmettez les valeurs suivantes :
 
    * A `BLOB` object that contains the certificate-encrypted PDF document.
    * Valeur de chaîne qui spécifie le nom d’alias de la clé publique qui correspond à la clé privée utilisée pour chiffrer le document PDf.
+
    Les méthodes `unlockPDFUsingPassword` et `unlockPDFUsingCredential` renvoient toutes deux un `com.adobe.idp.Document` objet que vous transmettez à une autre méthode AEM Forms pour effectuer une opération.
 
 1. Exécutez une opération AEM Forms.
 
-   Exécutez une opération AEM Forms sur le document PDF déverrouillé pour répondre aux besoins de votre entreprise. Par exemple, si vous souhaitez appliquer des droits d’utilisation au document PDF déverrouillé, transmettez l’ `BLOB` objet renvoyé par les méthodes `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` à la `ReaderExtensionsServiceClient` méthode de l’ `applyUsageRights` objet.
+   Effectuez une opération AEM Forms sur le document PDF déverrouillé pour répondre aux besoins de votre entreprise. Par exemple, si vous souhaitez appliquer des droits d’utilisation au document PDF déverrouillé, transmettez l’ `BLOB` objet renvoyé par les méthodes `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` à la `ReaderExtensionsServiceClient` méthode de l’ `applyUsageRights` objet.
 
 **Voir également**
 
 [Résumé des étapes](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Détermination du type de chiffrement {#determining-encryption-type}
 
-Vous pouvez déterminer par programmation le type de chiffrement qui protège un document PDF à l’aide de l’API Java Encryption Service ou de l’API Web Service Encryption Service. Il est parfois nécessaire de déterminer de manière dynamique si un document PDF est chiffré et, le cas échéant, le type de chiffrement. Par exemple, vous pouvez déterminer si un document PDF est protégé par un chiffrement avec mot de passe ou par une stratégie Rights Management.
+Vous pouvez déterminer par programmation le type de chiffrement qui protège un document PDF à l’aide de l’API Java Encryption Service ou de l’API Web Service Encryption Service. Il est parfois nécessaire de déterminer de manière dynamique si un document PDF est chiffré et, le cas échéant, le type de chiffrement. Par exemple, vous pouvez déterminer si un document PDF est protégé par un chiffrement avec mot de passe ou par une stratégie de Rights Management.
 
 Un document PDF peut être protégé par les types de chiffrement suivants :
 
 * Chiffrement par mot de passe
 * Chiffrement basé sur un certificat
-* Stratégie créée par le service Rights Management
+* Stratégie créée par le service de Rights Management
 * Autre type de chiffrement
 
 >[!NOTE]
@@ -1038,7 +1050,7 @@ Déterminez le type de chiffrement qui protège un document PDF à l’aide de l
 1. Créez un client de service.
 
    * Créez un `EncryptionServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `EncryptionServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un `EncryptionServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `EncryptionServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -1065,6 +1077,6 @@ Déterminez le type de chiffrement qui protège un document PDF à l’aide de l
 
 [Résumé des étapes](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
