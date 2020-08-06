@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b9752c60-eb26-4840-9163-a99537a58727
 translation-type: tm+mt
 source-git-commit: 7dc90299b7a0e5166c30702323f1678353fe39b3
+workflow-type: tm+mt
+source-wordcount: '1505'
+ht-degree: 82%
 
 ---
 
@@ -76,10 +79,10 @@ Pour configurer AEM de manière à l’intégrer à Salesforce :
 
    ![chlimage_1-23](assets/chlimage_1-23.jpeg)
 
-   | URL de connexion | Il s’agit du point de terminaison de l’autorisation Salesforce. Sa valeur est prérenseignée et convient dans la plupart des cas. |
+   | URL de connexion | Il s&#39;agit du point de terminaison de l&#39;autorisation Salesforce. Sa valeur est prérenseignée et convient dans la plupart des cas. |
    |---|---|
-   | Clé de client | Entrez la valeur obtenue à partir de la page Enregistrement des demandes d&#39;accès à distance dans salesforce.com |
-   | Secret client | Entrez la valeur obtenue à partir de la page Enregistrement des demandes d&#39;accès à distance dans salesforce.com |
+   | Clé client | Saisissez la valeur obtenue à partir de la page Enregistrement des demandes d&#39;accès à distance sur salesforce.com |
+   | Secret client | Saisissez la valeur obtenue à partir de la page Enregistrement des demandes d&#39;accès à distance sur salesforce.com |
 
 1. Cliquez sur **Connexion à Salesforce** pour vous connecter. Salesforce vous demande d’autoriser votre configuration à se connecter à Salesforce.
 
