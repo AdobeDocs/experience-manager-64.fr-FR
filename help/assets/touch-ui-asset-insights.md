@@ -1,14 +1,17 @@
 ---
-title: Utilisez la fonction Statistiques des ressources pour suivre l’utilisation de vos images
-description: La fonctionnalité Statistiques des ressources vous permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans des sites Web tiers, des campagnes marketing et des solutions créatives d’Adobe.
+title: Utilisez la fonction Statistiques des ressources pour suivre l’utilisation de vos images.
+description: La fonctionnalité Statistiques des ressources vous permet de suivre les évaluations des utilisateurs et les statistiques d’utilisation des images utilisées dans les sites Web tiers, les campagnes marketing et les solutions créatives d’Adobe.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0e0e2aa693c30c8e1ef1033b936b82d83e5b348e
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 84%
 
 ---
 
 
-# Informations sur les ressources {#asset-insights}
+# Statistiques sur les ressources {#asset-insights}
 
 Découvrez comment la fonction Statistiques sur les ressources permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des ressources utilisées dans les sites web tiers, les campagnes marketing et les solutions de création d’Adobe. 
 
@@ -36,19 +39,20 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 
    Le score **[!UICONTROL Impressions]** correspond au nombre de fois que la ressource est chargée sur le site web. Le nombre affiché sous **[!UICONTROL Clics]** représente le nombre de fois que la ressource est cliquée.
 
-1. Review the **[!UICONTROL Usage Statistics]** section to know which entities the asset was part of and which creative solutions recently used it. Plus l’utilisation est élevée, plus la ressource a de chances d’être populaire auprès des utilisateurs. Les données d’utilisation s’affichent sous les sections suivantes :
+1. Passez en revue la section **[!UICONTROL Statistiques d’utilisation]** pour savoir de quelles entités la ressource faisait partie et dans quelles solutions de création elle a récemment été utilisée. Plus l’utilisation est élevée, plus la ressource a de chances d’être populaire auprès des utilisateurs. Les données d’utilisation s’affichent sous les sections suivantes :
 
    * **[!UICONTROL Ressource]** : nombre de fois où la ressource faisait partie d’une collection ou d’une ressource composite
-   * **[!UICONTROL Web et mobile]**: Nombre de fois où la ressource faisait partie de sites Web et d’applications
+   * **[!UICONTROL Web et mobile]** : nombre de fois où la ressource faisait partie de sites web et d’applications
    * **[!UICONTROL Social]** : nombre de fois où la ressource a été utilisée dans des solutions, comme Adobe Social et Adobe Campaign
-   * **[!UICONTROL Courrier électronique]** : nombre de fois où la ressource a été utilisée dans des campagnes par courrier électronique
+   * **[!UICONTROL Email]** : nombre de fois où la ressource a été utilisée dans des campagnes par email
+
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >La fonctionnalité Statistiques des ressources récupérant généralement les données des solutions d’Adobe Analytics de manière périodique, la section Solutions peut ne pas afficher les données les plus récentes. La période pendant laquelle les données sont affichées dépend de la planification de l’opération de récupération que la fonction Statistiques sur les ressources exécute pour récupérer les données d’analyse.
+   >La fonctionnalité Statistiques des ressources récupérant généralement les données Solutions d’Adobe Analytics de manière périodique, il est possible que la section Solutions n’affiche pas les données les plus récentes. La période pendant laquelle les données sont affichées dépend de la planification de l’opération de récupération que la fonction Statistiques sur les ressources exécute pour récupérer les données d’analyse.
 
-1. Pour afficher les statistiques de performances de l’actif sous forme graphique sur une période donnée, sélectionnez une période dans la section **[!UICONTROL Statistiques de performances]**. Les détails, y compris les clics et les impressions, sont affichés sous forme de lignes de tendances d’un graphique.
+1. Pour afficher les statistiques de performances de l’actif sous forme graphique sur une période donnée, sélectionnez une période dans la section **[!UICONTROL Statistiques de performances]**. Les détails, y compris les clics et les impressions, sont affichés sous forme de lignes de tendance dans un graphique.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -56,24 +60,24 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
    >
    >Contrairement à la section Solutions, la section Statistiques de performances affiche les données les plus récentes.
 
-1. To obtain the embed code for the asset that you include in websites to gets performance data, tap/click **[!UICONTROL Get Embed Code]** below the asset thumbnail. For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](touch-ui-using-page-tracker.md).
+1. Pour obtenir le code intégré de la ressource que vous incluez sur les sites web afin d’obtenir les données de performances, appuyez/cliquez sur **[!UICONTROL Obtenir le code intégré]** sous la vignette de la ressource. For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](touch-ui-using-page-tracker.md).
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
 ## View aggregate statistics for assets {#viewing-aggregate-statistics-for-assets}
 
-Vous pouvez afficher simultanément des dizaines de fichiers dans un dossier à l’aide du **[!UICONTROL Mode Statistiques]**.
+Vous pouvez afficher les scores de toutes les ressources d’un dossier simultanément à l’aide du **[!UICONTROL mode Statistiques]**.
 
 1. Dans l’IU Assets, accédez au dossier contenant les ressources dont vous souhaitez consulter les statistiques.
 1. Appuyez/cliquez sur l’icône Mise en page de la barre d’outils, puis sélectionnez **[!UICONTROL Mode Statistiques]**.
 1. La page affiche les scores d’utilisation pour les ressources. Comparez les évaluations des différentes ressources et tirez-en des conclusions.
 
-## Planifier une tâche en arrière-plan {#scheduling-background-job}
+## Planification d’une tâche en arrière-plan {#scheduling-background-job}
 
-La fonction Statistiques sur les ressources extrait les données d’utilisation des ressources à partir de suites de rapports Adobe Analytics de manière périodique. Par défaut, la fonction Statistiques sur les ressources exécute une tâche en arrière-plan toutes les 24 heures à 2 heures du matin pour récupérer les données. Cependant, vous pouvez modifier la fréquence et l’heure en configurant le service de **[!UICONTROL tâche de synchronisation de rapport de performances de ressource Adobe CQ DAM]** via la console Web.
+La fonction Statistiques sur les ressources extrait les données d’utilisation des ressources à partir de suites de rapports Adobe Analytics de manière périodique. Par défaut, la fonction Statistiques sur les ressources exécute une tâche en arrière-plan toutes les 24 heures à 2 heures du matin pour récupérer les données. Cependant, vous pouvez modifier la fréquence et l’heure en configurant le service de **[!UICONTROL tâche de synchronisation de rapport de performances de ressource Adobe CQ DAM]** via la console web.
 
-1. Appuyez sur le logo AEM, puis sélectionnez **[!UICONTROL Outils > Opérations > Console web]**.
-1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
+1. Appuyez sur le logo AEM, puis accédez à **[!UICONTROL Outils > Opérations > Console web]**.
+1. Ouvrez la configuration de service **[!UICONTROL Tâche de synchronisation des rapports sur les performances des ressources de la gestion des actifs numériques Adobe CQ]**.
 
    ![chlimage_1-304](assets/chlimage_1-304.png)
 
