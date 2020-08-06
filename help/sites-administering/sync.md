@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
 source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
+workflow-type: tm+mt
+source-wordcount: '2502'
+ht-degree: 75%
 
 ---
 
@@ -33,13 +36,13 @@ Depuis AEM 6.1, lorsque la synchronisation des utilisateurs est activée, les d
 
 The user data, along with their [ACLs](/help/sites-administering/security.md), are stored in the [Oak Core](/help/sites-deploying/platform.md), the layer below Oak JCR, and are accessed using the [Oak API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). With infrequent updates, it is reasonable for user data to be synchronized with other publish instances using [Sling Content Distribution](https://github.com/apache/sling/blob/trunk/contrib/extensions/distribution/README.md) (Sling distribution).
 
-Les avantages de la synchronisation des utilisateurs à l’aide de la distribution Sling par rapport à la réplication traditionnelle sont les suivants :
+Les avantages de la synchronisation des utilisateurs à l’aide de la distribution Sling, par rapport à la réplication traditionnelle, sont les suivants :
 
 * Les *utilisateurs*, *les profils d’utilisateur* et les *groupes d’utilisateurs* créés à la publication ne sont pas créés en mode de création.
 
 * La distribution Sling définit des propriétés dans les événements JCR, permettant d’agir au niveau des écouteurs d’événements du côté publication sans se préoccuper des boucles de réplication infinies.
 * La distribution Sling envoie uniquement les données utilisateur à des instances de publication non originaires, ce qui élimine le trafic inutile.
-* [Les listes de contrôle d’accès](/help/sites-administering/security.md) définies dans le noeud utilisateur sont incluses dans la synchronisation.
+* [Les listes de contrôle d&#39;accès](/help/sites-administering/security.md) définies dans le noeud utilisateur sont incluses dans la synchronisation.
 
 >[!NOTE]
 >
@@ -92,7 +95,7 @@ Vous trouverez ci-dessous les étapes nécessaires pour activer la synchronisati
 
          Vérifier `name`: **`socialpubsync`**
 
-      * sélectionnez la `Enabled` case à cocher
+      * cochez la `Enabled` case
       * select `Save`
 
 
@@ -125,6 +128,7 @@ Vous trouverez ci-dessous les étapes nécessaires pour activer la synchronisati
 >
 >* L’utilisateur par défaut affecté est l’utilisateur **`admin`**.
 >* Ne pas utiliser `*communities-user-admin *user*.*`
+
 >
 
 
@@ -140,9 +144,9 @@ Vous trouverez ci-dessous les étapes nécessaires pour activer la synchronisati
 * select the `+` button to add an ACL entry
 
    * **Entité de sécurité :** : *recherchez l’utilisateur créé pour la synchronisation des utilisateurs*
-   * **Type**: `Allow`
+   * **Type** : `Allow`
    * **Privilèges**: `jcr:all`
-   * **Restrictions** rep:glob : `*/activities/*`
+   * **Restrictions** rep : glob : `*/activities/*`
    * sélectionnez **OK**
 
 * sélectionnez **Enregistrer tout**
@@ -194,7 +198,7 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
 
          Vérifier `Name` : `socialpubsync-reverse`
 
-      * sélectionnez la `Enabled` case à cocher
+      * cochez la `Enabled` case
       * select `Save`
    * **répétez** l’opération pour chaque instance de publication
 
@@ -218,7 +222,7 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
 
          Vérifier `agent name` : `socialpubsync-reverse`
 
-      * sélectionnez la `Enabled` case à cocher
+      * cochez la `Enabled` case
       * select `Save`
 
 
@@ -241,7 +245,7 @@ Par défaut, l’auteur interroge les modifications toutes les 30 secondes. Pou
       * sélectionnez la configuration existante à ouvrir pour modification (icône de crayon)
 
          * Vérifier `Name` : `socialpubsync-scheduled-trigger`
-      * définissez l’intervalle `Interval in Seconds` sur
+      * définir l’intervalle `Interval in Seconds` de votre choix
       * select `Save`
 
 
@@ -276,7 +280,7 @@ La configuration par défaut couvre une instance de publication unique. Puisque 
    * http://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse
    * http://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse
 
-* **Points de fin** de l’importateur Il doit y avoir un point de fin d’importateur pour chaque éditeur. Par exemple, s’il existe 2 éditeurs, localhost:4503 et 4504, il doit y avoir 2 entrées :
+* **Points de terminaison** de l’importateur Il doit y avoir un point de terminaison d’importateur pour chaque éditeur. Par exemple, s’il existe 2 éditeurs, localhost:4503 et 4504, il doit y avoir 2 entrées :
 
    * http://localhost:4503/libs/sling/distribution/services/importers/socialpubsync
    * http://localhost:4504/libs/sling/distribution/services/importers/socialpubsync
@@ -305,7 +309,7 @@ S’il existe des données personnalisées à synchroniser sur plusieurs instanc
 
 * **Types de nœuds**
 
-   Il s’agit du  des types de noeud qui seront synchronisés. Tout type de nœud autre que sling:Folder doit être répertorié ici (sling:folder est traité séparément).
+   Il s’agit de la liste des types de noeud qui seront synchronisés. Tout type de nœud autre que sling:Folder doit être répertorié ici (sling:folder est traité séparément).
 
     Liste par défaut des types de nœuds à synchroniser :
 
@@ -315,7 +319,7 @@ S’il existe des données personnalisées à synchroniser sur plusieurs instanc
 
 * **Propriétés ignorables**
 
-   Il s’agit du  des propriétés qui sera ignoré si un changement est détecté. Les modifications apportées à ces propriétés peuvent être synchronisées comme effet secondaire d’autres modifications (la synchronisation ayant toujours lieu au niveau du nœud), mais les modifications apportées à ces propriétés ne déclenchent pas en elles-mêmes de synchronisation.
+   Il s’agit de la liste des propriétés qui seront ignorées si une modification est détectée. Les modifications apportées à ces propriétés peuvent être synchronisées comme effet secondaire d’autres modifications (la synchronisation ayant toujours lieu au niveau du nœud), mais les modifications apportées à ces propriétés ne déclenchent pas en elles-mêmes de synchronisation.
 
     Propriété par défaut à ignorer :
 
@@ -350,7 +354,7 @@ Si l’identifiant Sling est identique pour plusieurs instances de modification 
 
 Pour vérifier que toutes les valeurs d’identifiant Sling diffèrent, sur chaque instance de publication :
 
-1. naviguer vers `http://<host>:<port>/system/console/status-slingsettings`
+1. accéder à `http://<host>:<port>/system/console/status-slingsettings`
 1. vérifiez la valeur de l’**identifiant Sling**
 
 ![chlimage_1-395](assets/chlimage_1-395.png)
@@ -370,7 +374,7 @@ Si l’identifiant Sling d’une instance de publication correspond à l’ident
 
          `use windows explorer and search for *sling.id.file*`
 
-1. de l’instance de publication
+1. début de l’instance de publication
 
    * au démarrage, un nouvel identifiant Sling lui est affecté
 
@@ -387,7 +391,7 @@ Pour que les mises à jour soient correctement synchronisées, il est nécessair
 
    * par exemple, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* localisez la variable `Apache Sling Distribution Packaging - Vault Package Builder Factor`
+* recherchez `Apache Sling Distribution Packaging - Vault Package Builder Factor`
 
    * `Builder name: socialpubsync-vlt`
 
@@ -524,9 +528,9 @@ L’utilisateur autorisé doit avoir explicitement les autorisations et la restr
 
 | **path** | **jcr:all** | **rep:glob** |
 |---|---|---|
-| /home | X | &amp;ast;/ /&amp;ast; |
-| /home/users | X | &amp;ast;/ /&amp;ast; |
-| /home/groups | X | &amp;ast;/ /&amp;ast; |
+| /home | X | &amp;ast;/activités/&amp;ast; |
+| /home/users | X | &amp;ast;/activités/&amp;ast; |
+| /home/groups | X | &amp;ast;/activités/&amp;ast; |
 
 As a member of the `administrators` group, the authorized user should have the following privileges on all publish instances :
 
@@ -568,7 +572,7 @@ To configure or enable user sync, go to step 1: [Apache Sling Distribution Agent
 
 Lorsqu’une instance de publication n’est plus disponible, elle ne doit pas être supprimée si elle doit être de nouveau en ligne à l’avenir. Les modifications sont mises en file d’attente pour l’éditeur et, une fois l’instance de nouveau en ligne, elles sont traitées.
 
-Si l’instance de publication n’est jamais remise en ligne, si elle est hors ligne de manière permanente, elle doit être supprimée, car l’accumulation de files d’attente entraînera une utilisation notable de l’espace disque dans le de l’auteur  .
+Si l’instance de publication n’est jamais remise en ligne, si elle est hors ligne de manière permanente, elle doit être supprimée car l’accumulation de files d’attente entraînera une utilisation notable de l’espace disque dans l’environnement d’auteur.
 
 Lorsqu’un éditeur est en panne, le journal de création comporte des exceptions similaires à :
 
