@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 90%
 
 ---
 
 
 # Création – Environnement et outils{#authoring-the-environment-and-tools}
 
-L’environnement de création d’AEM fournit divers mécanismes pour organiser et modifier votre contenu. Les outils fournis sont accessibles à partir des différentes consoles et des éditeurs de pages.
+L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu. Les outils proposés sont accessibles dans les divers éditeurs de pages et consoles.
 
 ## Administration de sites {#site-administration}
 
@@ -33,7 +36,7 @@ L’IU classique comporte un éditeur de page distinct, qui utilise l’outil de
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
-## Accès à l’Aide {#accessing-help}
+## Accès à l’aide {#accessing-help}
 
 Plusieurs ressources d’**Aide** sont accessibles directement depuis AEM :
 
@@ -98,7 +101,7 @@ Cet onglet répertorie tous les produits. Après avoir créé un paragraphe appr
 
 ### Trouver des pages {#finding-pages}
 
-Cet onglet affiche toutes les pages. Cliquez deux fois sur une page pour l’ouvrir et la modifier.
+Cet onglet affiche toutes les pages. Cliquez avec le Doublon sur une page pour l’ouvrir en vue de la modifier.
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -154,7 +157,7 @@ Pour afficher les références de page directes :
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. **Sélectionner** Afficher les références... AEM ouvre la fenêtre Références et affiche les pages qui font référence à la page sélectionnée, y compris leurs chemins.
+1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -177,7 +180,7 @@ Le **journal d’audit** est accessible depuis l’onglet **Informations** du si
 
 The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, etc.
 
-## Modes de page {#page-modes}
+## Modes de page    {#page-modes}
 
 Lors de la modification d’une page dans l’IU classique, plusieurs modes sont accessibles à l’aide des icônes au bas du sidekick :
 
