@@ -1,5 +1,5 @@
 ---
-title: Intégration de AEM Assets à Adobe InDesign Server
+title: Intégration de AEM Assets avec Adobe InDesign Server
 description: Découvrez comment intégrer AEM Assets à InDesign Server.
 contentOwner: AG
 translation-type: tm+mt
@@ -11,14 +11,14 @@ ht-degree: 70%
 ---
 
 
-# Intégration de AEM Assets à Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
+# Intégration de AEM Assets avec Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
 
 Adobe Experience Manager (AEM) Assets utilise :
 
 * Un proxy pour distribuer la charge de certaines tâches de traitement. Un proxy est une instance AEM qui communique avec un programme de traitement du proxy afin d’accomplir une tâche spécifique, et avec d’autres instances AEM pour diffuser les résultats.
 * Le programme de traitement du proxy définit et gère une tâche spécifique.
 
-Elles peuvent couvrir une grande variété de tâches; par exemple, l’utilisation d’un serveur Adobe InDesign Server pour traiter des fichiers.
+Elles peuvent couvrir une grande variété de tâches; par exemple, l’utilisation d’une Adobe InDesign Server pour traiter des fichiers.
 
 Pour transférer intégralement des fichiers créés avec Adobe InDesign vers AEM Assets, un proxy est utilisé. Cette méthode utilise un programme de traitement du proxy pour communiquer avec Adobe InDesign Server, qui exécute des [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) afin d’extraire des métadonnées et de générer divers rendus pour AEM Assets. Le programme de traitement du proxy permet une communication bidirectionnelle entre InDesign Server et les instances AEM dans une configuration cloud.
 
@@ -32,7 +32,7 @@ Pour transférer intégralement des fichiers créés avec Adobe InDesign vers A
    >
 * [InDesign Server](https://www.adobe.com/fr/products/indesignserver.html)\
    >  Vous permet de créer des documents de façon automatisée, et par programmation, sur la base de vos mises en pages créées avec InDesign. Il s’exécute en tant que service offrant une interface pour son moteur [ExtendScript](https://www.adobe.com/devnet/scripting.html).\
-   >  Les scripts sont écrits dans ExtendScript, qui est similaire à javascript. Pour plus d’informations sur les scripts InDesign, rendez-vous à l’adresse [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+   >  Les scripts sont écrits en ExtendScript, ce qui est similaire à javascript. Pour plus d’informations sur les scripts InDesign, rendez-vous à l’adresse [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 >
 
@@ -117,7 +117,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 * [Extraction de médias](#media-extraction)
 * [Extraction de page  ](#page-extraction)
 
-Ce processus est configuré avec les valeurs par défaut qui peuvent être adaptées à votre configuration pour diverses instances d’auteur (il s’agit d’un processus standard, aussi des informations supplémentaires sont disponibles sous [Modifier un processus](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Si vous utilisez les valeurs par défaut (y compris le port SOAP), aucune configuration n’est nécessaire.
+Ce workflow est configuré avec les valeurs par défaut qui peuvent être adaptées à votre configuration pour diverses instances d’auteur (il s’agit d’un workflow standard, aussi des informations supplémentaires sont disponibles sous [Modifier un workflow](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Si vous utilisez les valeurs par défaut (y compris le port SOAP), aucune configuration n’est nécessaire.
 
 Après la configuration, le transfert de fichiers InDesign dans AEM Assets (via les méthodes habituelles) déclenche le workflow requis pour le traitement de la ressource et la préparation des différents rendus. Testez votre configuration en transférant un fichier `.indd` dans AEM Assets afin de confirmer que vous voyez les différents rendus créés par IDS sous `<*your_asset*>.indd/Renditions`.
 
@@ -139,7 +139,7 @@ Arguments d’extraction de médias et chemins de scripts
 
 >[!CAUTION]
 >
->Ne modifiez pas la bibliothèque ExtendScript. La bibliothèque fournit la fonctionnalité HTTP requise pour communiquer avec Sling. Ce paramètre spécifie la bibliothèque à envoyer au serveur Adobe InDesign Server pour y être utilisée.
+>Ne modifiez pas la bibliothèque ExtendScript. La bibliothèque fournit la fonctionnalité HTTP requise pour communiquer avec Sling. Ce paramètre spécifie la bibliothèque à envoyer à l’Adobe InDesign Server pour y être utilisée.
 
 Le script `ThumbnailExport.jsx` exécuté par l’étape de workflow Extraction des médias génère un rendu miniature au format .jpg. Ce rendu est utilisé par l’étape du workflow Miniatures des processus afin de générer les rendus statiques requis par AEM.
 
@@ -180,7 +180,7 @@ Par défaut, le gestionnaire d’Extractions d’exportation IDML est disponible
 
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
-   * **Pool** IDS : Point(s) de terminaison SOAP à utiliser pour communiquer avec InDesign Server. Vous pouvez ajouter, supprimer ou trier les éléments au besoin.
+   * **Pool** IDS : Point(s) de terminaison SOAP à utiliser pour communiquer avec l’InDesign Server. Vous pouvez ajouter, supprimer ou trier les éléments au besoin.
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer.
 
@@ -232,7 +232,7 @@ Pour configurer le nombre de tâches parallèles d’IDS :
    >
    >En outre, sous la configuration `com.day.cq.dam.ids.impl.IDSPoolImpl.name`, définissez une valeur positive pour le paramètre `max.errors.to.blacklist`, qui détermine le nombre de tentatives pour une tâche avant qu’un IDS ne soit exclu de la liste des gestionnaires de tâches.
    >
-   >By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. Si le travailleur est trouvé en ligne, il est retiré de la liste bloquée.
+   >By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. Si le programme de traitement est en ligne, il est retiré de la liste bloquée.
 
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
@@ -251,7 +251,7 @@ Pour InDesign Server 10.0 ou version ultérieure, réalisez les étapes suivan
 
 ## Configuration des informations d’identification du Experience Manager {#configure-aem-credentials}
 
-Vous pouvez modifier les informations d’identification d’administrateur par défaut (nom d’utilisateur et mot de passe) pour accéder au serveur InDesign à partir de votre instance AEM sans rompre l’intégration au serveur Adobe InDesign.
+Vous pouvez modifier les informations d’identification d’administrateur par défaut (nom d’utilisateur et mot de passe) pour accéder au serveur d’InDesigns à partir de votre instance AEM sans interrompre l’intégration au serveur Adobe InDesign.
 
 1. Accédez à `/etc/cloudservices/proxy.html`.
 1. Dans la boîte de dialogue, indiquez le nouveau nom d’utilisateur et le nouveau mot de passe.
