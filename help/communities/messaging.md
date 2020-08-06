@@ -22,7 +22,7 @@ ht-degree: 4%
 
 ## Présentation {#overview}
 
-La fonction de messagerie pour les AEM Communities permet aux visiteurs (membres) du site connectés d&#39;envoyer des messages les uns aux autres qui sont accessibles lorsqu&#39;ils sont connectés au site.
+La fonction de messagerie pour AEM Communities permet aux visiteurs (membres) du site connectés d&#39;envoyer des messages les uns aux autres qui sont accessibles lorsqu&#39;ils sont connectés au site.
 
 La messagerie est activée pour un site communautaire en cochant une case lors de la création [d&#39;un site](sites-console.md)communautaire.
 
@@ -32,7 +32,7 @@ For additional information for developers, see [Messaging Essentials](essentials
 
 ## Service des opérations de messagerie {#messaging-operations-service}
 
-Le service [des opérations de messagerie](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities identifie le point de terminaison qui traite les demandes liées à la messagerie, les dossiers que le service doit utiliser pour stocker les messages et, si les messages peuvent inclure des pièces jointes, quels types de fichiers sont autorisés.
+Le service [de messagerie](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities identifie le point de terminaison qui traite les requêtes liées à la messagerie, les dossiers que le service doit utiliser pour stocker les messages et si les messages peuvent inclure des pièces jointes, quels types de fichiers sont autorisés.
 
 Pour les sites communautaires créés à l&#39;aide de la console [Sites](sites-console.md)des communautés, une instance du service existe déjà, avec la boîte de réception définie sur `/mail/community/inbox`.
 
