@@ -1,6 +1,6 @@
 ---
-title: Composants pour la création de pages
-seo-title: Composants pour la création de pages
+title: Composants pour la création de page
+seo-title: Composants pour la création de page
 description: Les composants sont disponibles lors de la modification d’une page à partir de l’onglet Composants du sidekick et du sélecteur Insérer un nouveau composant (lorsque vous double-cliquez dans la zone Faire glisser des composants ou éléments ici).
 seo-description: Les composants sont disponibles lors de la modification d’une page à partir de l’onglet Composants du sidekick et du sélecteur Insérer un nouveau composant (lorsque vous double-cliquez dans la zone Faire glisser des composants ou éléments ici).
 uuid: 6e4db6b1-af52-4b54-88a5-b82634f264fa
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 62c6826d-bc8b-4177-a3bb-134ebafed8d2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '6177'
+ht-degree: 82%
 
 ---
 
@@ -154,22 +157,22 @@ Vous spécifiez ici la manière dont le carrousel fonctionne :
 
    * Vitesse de lecture
 
-      Temps en millisecondes avant l’affichage de la diapositive suivante.
+      Durée, en millisecondes, avant l’affichage de la diapositive suivante.
    * Temps de transition
 
       Durée en millisecondes de la transition entre deux diapositives.
    * Type des commandes
 
-      Différentes options sont disponibles dans un menu déroulant ; par exemple, Boutons Précédent / Suivant, Commutateurs Haut-Droite.
+      Différentes options sont disponibles dans un menu déroulant ; par exemple, boutons Précédent / Suivant, Commutateurs Haut-Droite.
 
 * **Liste**
 Vous spécifiez ici la manière dont les pages sont incluses dans le carrousel :
 
    * **Construire la liste avec**
 
-      Il existe plusieurs manières de créer une liste de pages : Pages enfants, Liste fixe, Recherche ou Recherche avancée (toutes décrites ci-dessous).
+      Il existe plusieurs façons de créer une liste de page : Pages enfants, Liste fixe, Recherche ou Recherche avancée (toutes décrites ci-dessous).
 
-      Notez que, quelle que soit la méthode choisie, les pages que vous incluez dans votre liste doivent avoir chacune une image associée à la page, c&#39;est cette image qui s&#39;affichera dans le carrousel. S’il n’existe aucune image pour une page donnée sous les Propriétés de page de cette page, vous devez associer une image à la page avant de commencer, sinon le carrousel affichera une page vierge (ou presque). See [Editing Page Properties](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+      Notez que quelle que soit la méthode choisie, les pages que vous incluez dans votre liste doivent déjà être associées à une image, c&#39;est cette image qui s&#39;affichera dans le carrousel. S’il n’existe aucune image pour une page donnée sous les Propriétés de page de cette page, vous devez associer une image à la page avant de commencer, sinon le carrousel affichera une page vierge (ou principalement vide). See [Editing Page Properties](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
       Selon l’élément que vous choisissez, un nouveau panneau s’affiche :
 
@@ -177,12 +180,12 @@ Vous spécifiez ici la manière dont les pages sont incluses dans le carrousel 
 
          * **Page parente**
 
-            Spécifiez un chemin manuellement ou à l’aide du sélecteur. Laissez vide pour utiliser la page active comme parent.
+            Spécifiez un chemin d’accès manuellement ou à l’aide du sélecteur. Laissez vide pour utiliser la page active comme parent.
       * **Options de la liste fixe**
 
          * **Pages**
 
-            Sélectionnez une liste de pages.  Utilisez `+` pour ajouter d’autres entrées et les boutons Haut/Bas pour modifier l’ordre.
+            Sélectionnez une liste de pages. Utilisez `+` pour ajouter d’autres entrées et les boutons Haut/Bas pour modifier l’ordre.
       * **Options de recherche**
 
          * **Démarrer dans**
@@ -194,9 +197,9 @@ Vous spécifiez ici la manière dont les pages sont incluses dans le carrousel 
 
          * **Notation des prédicats de Query Builder**
 
-            Vous pouvez entrer une requête de recherche à l’aide de la notation de prédicat de Querybuilder. Par exemple, vous pouvez entrer &quot;fulltext=Marketing&quot; pour que toutes les pages comportant &quot;Marketing&quot; dans leur contenu s’affichent dans le carrousel.
+            Vous pouvez entrer une requête de recherche à l’aide de la notation de prédicat Querybuilder. Par exemple, vous pouvez entrer &quot;fulltext=Marketing&quot; pour que toutes les pages contenant &quot;Marketing&quot; s’affichent dans le carrousel.
 
-            Voir l’API [QueryBuilder](/help/sites-developing/querybuilder-api.md) pour une discussion complète des expressions de requête et d’autres exemples.
+            Voir l’API [](/help/sites-developing/querybuilder-api.md) QueryBuilder pour une analyse complète des expressions d’requête et d’autres exemples.
    * **Classer par**
 
       Sélectionnez `jcr:title`, `jcr:created`, `cq:lastModified`ou `cq:template` dans le menu déroulant.
@@ -345,7 +348,7 @@ Le composant Flash vous permet de charger une animation Flash. Faites glisser un
 
    * **Version minimale**
 
-      Version minimale d’Adobe Flash Player requise pour exécuter l’animation. La version minimale par défaut est 9.0.0.
+      Version minimale d’Adobe Flash Player requise pour exécuter l’animation. La valeur par défaut est de 9.0.0.
 
    * **Attributs**
 
@@ -373,7 +376,7 @@ Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
 * **Map**
 
-   Pour mapper une image, sélectionnez Zone cliquable. Vous pouvez indiquer comment créer la zone cliquable (rectangle, polygone, etc.) et où la zone doit pointer.
+   Pour mapper une image, sélectionnez Zone cliquable. Vous pouvez spécifier comment créer la zone cliquable (rectangle, polygone, etc.) et où la zone doit pointer.
 
 * **Options**
 
@@ -381,7 +384,7 @@ Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
 * **Rotation**
 
-   Pour faire pivoter une image, sélectionnez Rotation. Utilisez-le plusieurs fois jusqu’à ce que l’image soit pivotée comme vous le souhaitez.
+   Pour faire pivoter une image, sélectionnez Pivoter. Utilisez-le à plusieurs reprises jusqu’à ce que l’image soit pivotée comme vous le souhaitez.
 
 * **Effacer**
 
@@ -435,18 +438,18 @@ Le composant Liste vous permet de configurer des critères de recherche pour aff
 
       * **Options des pages enfants**
 
-         * **Enfants des** (page parent)
+         * **Enfants de** (page parente)
 
-            Spécifiez un chemin manuellement ou à l’aide du sélecteur. Laissez vide pour utiliser la page active comme parent.
+            Spécifiez un chemin d’accès manuellement ou à l’aide du sélecteur. Laissez vide pour utiliser la page active comme parent.
       * **Options de la liste fixe**
 
-         * **Pages** : sélectionnez une liste de pages.Utilisez + pour ajouter d’autres entrées et les boutons Haut/Bas pour modifier l’ordre.
+         * **Pages** - Sélectionnez une liste de pages. Utilisez + pour ajouter d’autres entrées et les boutons Haut/Bas pour modifier l’ordre.
       * **Options de recherche**
 
-         * **Commencer dans** - Entrez un chemin de départ, manuellement ou à l&#39;aide du sélecteur. Requête de recherche Entrez une requête de recherche en texte brut.
+         * **Début dans** : entrez un chemin de départ, manuellement ou à l&#39;aide du sélecteur. Requête de recherche Entrez une requête de recherche en texte brut.
       * **Options de la recherche avancée**
 
-         * **Notation** des prédicats de Querybuilder - Vous pouvez entrer une requête de recherche à l&#39;aide de la notation des prédicats de Querybuilder.Par exemple, vous pouvez entrer &quot;fulltext=Marketing&quot; pour que toutes les pages comportant &quot;Marketing&quot; dans leur contenu s’affichent dans le carrousel.Voir l’API [QueryBuilder](/help/sites-developing/querybuilder-api.md) pour une discussion complète des expressions de requête et d’autres exemples.
+         * **Notation** des prédicats de Querybuilder - Vous pouvez entrer une requête de recherche à l&#39;aide de la notation des prédicats de Querybuilder. Par exemple, vous pouvez entrer &quot;fulltext=Marketing&quot; pour que toutes les pages contenant &quot;Marketing&quot; s’affichent dans le carrousel. Voir l’API [](/help/sites-developing/querybuilder-api.md) QueryBuilder pour une analyse complète des expressions d’requête et d’autres exemples.
       * **Balises** : indiquez la page **** parente, **Balises/Mots-clés** et les critères de correspondance requis.
    * **Afficher comme**
 
@@ -475,7 +478,7 @@ Le composant Liste vous permet de configurer des critères de recherche pour aff
 
 L’exemple suivant illustre un composant **Liste** affichant une liste de pages enfants. La conception est contrôlée par les définitions CSS personnalisées d’une conception de site.
 
-![dc_list_use](assets/dc_list_use.png)
+![dc_liste_use](assets/dc_list_use.png)
 
 ### Connexion {#login}
 
@@ -489,11 +492,11 @@ Vous pouvez configurer :
 
    * Libellé de section
 
-      Texte de piste pour les champs de saisie.
+      Texte de l’entrée pour les champs de saisie.
 
    * Libellé du nom de l&#39;utilisateur
 
-      Texte permettant d’étiqueter le champ username.
+      Texte permettant d’étiqueter le champ du nom d’utilisateur.
 
    * Libellé du mot de passe
 
@@ -505,7 +508,7 @@ Vous pouvez configurer :
 
    * Rediriger vers
 
-      Vous pouvez spécifier la page de votre site Web qui doit être ouverte une fois que l’utilisateur est connecté.
+      Vous pouvez spécifier la page de votre site Web qui doit être ouverte une fois que l’utilisateur s’est connecté.
 
 * Déjà connecté
 
@@ -523,7 +526,7 @@ Vous pouvez configurer :
 
    * **Lien**
 
-      Spécifiez la page (produit) pour laquelle le statut de la commande doit être affiché.
+      Spécifiez la page (le produit) pour laquelle le statut de la commande doit être affiché.
 
    * **Type / Taille**
 
@@ -531,7 +534,7 @@ Vous pouvez configurer :
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
-### Référence {#reference}
+### Référence  {#reference}
 
 Le composant **Référence** permet de référencer du texte à partir d’une autre page de votre site web AEM (dans l’instance actuelle). Le contenu du paragraphe référencé s’affiche alors comme s’il faisait partie de la page actuelle. Le contenu est mis à jour lorsque le paragraphe source est modifié (peut nécessiter une actualisation de la page).
 
@@ -539,7 +542,7 @@ Le composant **Référence** permet de référencer du texte à partir d’une a
 
    * **Référence**
 
-      Indiquez le chemin d’accès à la page et au paragraphe à référencer (inclure le contenu).
+      Indiquez le chemin d’accès à la page et au paragraphe que vous souhaitez référencer (y compris le contenu).
 
 Pour spécifier le chemin d’accès à un paragraphe, vous devez le suffixer (vers la page) avec :
 
@@ -567,7 +570,7 @@ Le composant Rechercher offre des capacités de recherche à votre page.
 
 Vous pouvez configurer :
 
-* Recherche
+* Rechercher
 
    * **Types de nœuds**
 
@@ -575,7 +578,7 @@ Vous pouvez configurer :
 
    * **Chemin d’accès de la recherche**
 
-      Spécifiez la page racine de la branche que vous souhaitez rechercher.
+      Indiquez la page racine de la branche que vous souhaitez rechercher.
 
    * **Texte du bouton de recherche**
 
@@ -593,7 +596,7 @@ Vous pouvez configurer :
 
       Si une personne saisit un terme similaire, ce texte est affiché devant le terme.
 
-      Par exemple, si vous saisissez geometrixxe, le système affiche &quot;Voulez-vous dire ? geometrixx&quot;.
+      Par exemple, si vous tapez geometrixx, le système affiche &quot;Voulez-vous dire ? geometrixx&quot;.
 
    * **Texte Pages similaires**
 
@@ -654,7 +657,7 @@ Vous pouvez configurer :
 
    * **Titre**
 
-      Spécifiez un titre si nécessaire. Ceci est superposé sur la diapositive appropriée.
+      Indiquez un titre si nécessaire. Il est superposé sur la diapositive appropriée.
 
 * **Avancé**
 
@@ -695,7 +698,7 @@ Lorsque vous configurez le composant Nuage de tags, vous pouvez spécifier les o
 
 * **Balises à afficher**
 
-   Emplacement à partir duquel les balises à afficher sont rassemblées. Sélectionnez une page, une page avec tous les enfants ou toutes les balises.
+   Emplacement à partir duquel les balises à afficher sont rassemblées. Sélectionnez une page, une page contenant tous les enfants ou toutes les balises.
 
 * **Page**
 
@@ -742,11 +745,11 @@ Le composant Texte et image permet d’ajouter un bloc de texte et une image. Vo
 
 Vous pouvez configurer :
 
-* **Styles** de composant (**Styles**)
+* **Styles** de composant (**styles**)
 
    Vous pouvez ici aligner l’image à droite ou à gauche. Le paramètre par défaut est aligné à **Gauche**, avec l’image à gauche.
 
-* **Propriétés** de l’image (propriétés **d’image** avancées)
+* **Propriétés** de l’image (propriétés **de l’image** avancée)
 
    Sous cet onglet, vous pouvez spécifier les paramètres suivants :
 
@@ -764,7 +767,7 @@ Vous pouvez configurer :
 
    * **Lier à**
 
-      Spécifiez un chemin cible.
+      Spécifiez un chemin de cible.
 
    * **Description**
 
@@ -814,7 +817,7 @@ Une fois une instance du composant placée sur la page, vous pouvez configurer l
 * Vidéo
 
    * **Fichier** vidéo : téléchargez ou déposez votre fichier vidéo.
-   * **Taille** : la taille native de la vidéo (largeur x hauteur en pixels) apparaît dans les zones en regard de Taille (voir ci-dessus). Entrez manuellement les dimensions de largeur et de hauteur si vous souhaitez remplacer les dimensions natives de la vidéo.Cliquez sur **OK** pour fermer la boîte de dialogue.
+   * **Taille** : la taille native de la vidéo (largeur x hauteur en pixels) apparaît dans les zones en regard de Taille (voir ci-dessus). Saisissez manuellement les dimensions de largeur et de hauteur si vous souhaitez remplacer les dimensions natives de la vidéo. Cliquez sur **OK** pour fermer la boîte de dialogue.
 
 >[!NOTE]
 >
@@ -822,7 +825,8 @@ Une fois une instance du composant placée sur la page, vous pouvez configurer l
 >
 >* `.mp4`
 >* `Ogg`
->* `FLV` (Vidéo Flash)
+>* `FLV` (vidéo Flash)
+
 >
 
 
@@ -851,7 +855,7 @@ Le composant Contrôle de colonne permet aux utilisateurs de sélectionner la ma
 
    * **Disposition des colonnes**
 
-      Sélectionnez le nombre de colonnes à afficher. Une fois créée, chaque colonne dispose de son propre lien pour faire glisser des composants ou des ressources lors de l’ajout de contenu.
+      Sélectionnez le nombre de colonnes à afficher. Une fois créée, chaque colonne dispose de son propre lien permettant de faire glisser des composants ou des ressources lors de l’ajout de contenu.
 
 ## Formulaire {#form}
 
@@ -944,9 +948,9 @@ Ces onglets vous fournissent les paramètres nécessaires ; ceux-ci peuvent dé
 
    * **Requis**
 
-      Cela dépend du type de composant de formulaire, mais fournit une ou plusieurs zones de clic pour indiquer que ce champ, ou certaines parties de ce champ, est/sont requis.
+      Il dépend du type de composant de formulaire, mais fournit une ou plusieurs zones de clic pour indiquer que ce champ, ou certaines parties de ce champ, est/sont requis.
 
-   * **Message** obligatoire - Un message pour informer les utilisateurs que ce champ est obligatoire ; un champ obligatoire sera également marqué par un astérisque et un marqueur.
+   * **Message** obligatoire - Message informant les utilisateurs que ce champ est obligatoire ; un champ obligatoire sera également marqué avec un astérisque.
    * **Contrainte** : les contraintes disponibles pour la sélection dépendent du type de composant de formulaire.
    * **Message de contrainte**
  Message qui informe les utilisateurs de ce qui est obligatoire.
@@ -986,7 +990,7 @@ Détermine quel workflow est déclenché une fois le formulaire envoyé.
 
    * **Type d’action**
 
-      Un formulaire requiert une action. L’action définit l’opération déclenchée avec les données soumises par l’utilisateur (semblable à action= en langage HTML). Certains nécessitent une configuration **d’** action correspondante.
+      Un formulaire requiert une action. L’action définit l’opération déclenchée avec les données soumises par l’utilisateur (semblable à action= en langage HTML). Certains ont besoin d&#39;une configuration **d&#39;** action correspondante.
 
       Une sélection de types d’action est incluse dans une installation AEM standard :
 
@@ -1019,7 +1023,7 @@ Détermine quel workflow est déclenché une fois le formulaire envoyé.
 
    * **Chemin de chargement**
 
-      Chemin d’accès aux propriétés de noeud utilisé pour charger des valeurs prédéfinies dans les champs du formulaire.
+      Chemin d’accès aux propriétés de noeud utilisé pour charger des valeurs prédéfinies dans les champs de formulaire.
 
       Il s’agit d’un champ facultatif qui permet de spécifier le chemin à un nœud dans le référentiel. Lorsque ce nœud comporte des propriétés qui correspondent aux noms des champs, les champs adéquats du formulaire sont préchargés avec la valeur de ces propriétés. S’il n’existe aucune correspondance, le champ contient la valeur par défaut.
 
@@ -1070,14 +1074,14 @@ Page utilisée lors de la création d’un compte.
 
          * **Type de ressource**
 
-            Si cette propriété est définie, elle est ajoutée à chaque commentaire en tant que `sling:resourceType`
+            Si elle est définie, elle est ajoutée à chaque commentaire en tant que `sling:resourceType`
 
          * **Sélecteur d’affichage**
       * **Créer une piste**
 
          * **La piste sera ajoutée à cette liste**
 
-            Spécifiez la liste de pistes requise.
+            Spécifiez la liste de piste requise.
       * **Créer un compte et le mettre à jour**
 
          * **Groupe initial**
@@ -1134,13 +1138,13 @@ Page utilisée lors de la création d’un compte.
             Cliquez sur ce bouton pour accéder aux informations sur les résultats de formulaire dans l’éditeur en masse. Vous avez alors la possibilité d’exporter les informations vers un fichier .tsv (séparé par des tabulations) en vue de l’utiliser, par exemple, dans une feuille de calcul Excel).
       * **Stocker le contenu avec les chargements**
 
-         Les options disponibles sont les mêmes que celles du **stockage de contenu**.
+         Cette option présente les mêmes options que **Stocker le contenu**.
 
       * **Désabonner l’abonné**
 
          * **La piste sera supprimée de cette liste.**
 
-            Spécifiez la liste de pistes requise.
+            Spécifiez la liste de piste requise.
 
 
 
