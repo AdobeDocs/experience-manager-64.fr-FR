@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 49c9c9ab-632a-40f7-8c30-d6a8c0f1b420
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 75%
 
 ---
 
@@ -79,11 +82,11 @@ Les caractéristiques de segment suivantes sont disponibles clé en main ; elle
   </tr> 
   <tr> 
    <td> Mots-clés de référence<br /> </td> 
-   <td>Mots-clés à associer aux informations du site Web référent. <br /> </td> 
+   <td>Mots-clés pour correspondre aux informations du site Web référent. <br /> </td> 
   </tr> 
   <tr> 
    <td> Script</td> 
-   <td>Expression JavaScript à évaluer.<br /> </td> 
+   <td>expression JavaScript à évaluer.<br /> </td> 
   </tr> 
   <tr> 
    <td> Référence de segment <br /> </td> 
@@ -95,7 +98,7 @@ Les caractéristiques de segment suivantes sont disponibles clé en main ; elle
   </tr> 
   <tr> 
    <td> Âge de l’utilisateur<br /> </td> 
-   <td>Comme extrait du profil utilisateur.<br /> </td> 
+   <td>Extrait du profil utilisateur.<br /> </td> 
   </tr> 
   <tr> 
    <td> Propriété de l’utilisateur<br /> </td> 
@@ -169,7 +172,7 @@ Une fois le segment défini, les résultats potentiels peuvent être testés ave
 
 1. En fonction des caractéristiques définies, les données disponibles pour la page en cours peuvent ou non correspondre à la définition de segment. Le statut de la correspondance s’affiche sous la définition.
 
-Par exemple, une seule définition de segment peut être fonction de l’âge et du sexe de l’utilisateur. Le chargement d’un profil spécifique montre que le segment est résolu avec succès :
+Par exemple, une seule définition de segment peut être fonction de l’âge et du sexe de l’utilisateur. Le chargement d’un profil spécifique montre que le segment a été résolu avec succès :
 
 ![screen_shot_2012-02-02at105926am-1](assets/screen_shot_2012-02-02at105926am-1.png)
 
