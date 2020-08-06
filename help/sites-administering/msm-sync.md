@@ -262,7 +262,7 @@ La nouvelle configuration de déploiement est alors disponible lorsque vous déf
 
 ### Exclusion des propriétés et des types de nœuds de la synchronisation {#excluding-properties-and-node-types-from-synchronization}
 
-Vous pouvez configurer différents services OSGi qui prennent en charge les actions de synchronisation correspondantes afin qu’ils n’affectent pas des types de nœuds et des propriétés spécifiques. Par exemple, de nombreuses propriétés et sous-noeuds liés au fonctionnement interne d’AEM ne doivent pas être inclus dans une copie dynamique. Seul le contenu pertinent pour l’utilisateur de la page doit être copié.
+Vous pouvez configurer différents services OSGi qui prennent en charge les actions de synchronisation correspondantes afin qu’ils n’affectent pas des types de nœuds et des propriétés spécifiques. Par exemple, de nombreuses propriétés et sous-noeuds liés au fonctionnement interne de l’AEM ne doivent pas être inclus dans une copie dynamique. Seul le contenu pertinent pour l’utilisateur de la page doit être copié.
 
 Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
 
