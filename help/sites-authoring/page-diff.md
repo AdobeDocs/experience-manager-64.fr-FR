@@ -28,7 +28,7 @@ De fait, l’outil de comparaison des pages permet d’afficher côte à côte d
 
 >[!CAUTION]
 >
->Si vous exécutez une version antérieure à AEM 6.4.3, l’utilisateur doit disposer de l’autorisation **Modifier/Créer/Supprimer** sur le noeud `/content/versionhistory` pour pouvoir utiliser la fonctionnalité.
+>Si vous exécutez une version antérieure à AEM 6.4.3, l’utilisateur doit disposer de l’autorisation **Modifier/Créer/Supprimer** sur le noeud `/content/versionhistory` pour pouvoir utiliser la fonction.
 >
 >Consultez la section consacrée à l’[outil de comparaison des pages](/help/sites-developing/pagediff.md#operation-details) pour plus d’informations sur cette fonction.
 
