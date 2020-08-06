@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 525c4afc-e109-4546-b78c-1efee63edc43
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 89%
 
 ---
 
@@ -24,6 +27,7 @@ Il existe plusieurs éléments à prendre en compte lors de l’exécution d’A
 
    * Un clic sur un lien vous renvoie à la page d’ouverture de session au lieu du lien prévu.
    * Un clic sur un lien entraîne l’affichage d’une erreur d’autorisation.
+
    Il est conseillé d’exécuter Administration Console depuis un autre navigateur, tel que Mozilla Firefox, pour éviter que des liens n’échouent.
 
 * N’utilisez pas de barres obliques inverses (\) lorsque vous exécutez des recherches dans Administration Console.
