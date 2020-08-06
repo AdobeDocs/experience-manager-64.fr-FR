@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
 source-git-commit: f957ca343d12c325d012034a6fdbc36f77e41d87
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 85%
 
 ---
 
@@ -196,15 +199,15 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
    * Sauvegarde complète de la base de données (nsrnmddbf.bat) :
 
-      *[NetWorker_database_module_root]* `-s`*&lt;Nom_serveur_NetWorker>Nom *d’utilisateur`-U`*[mot ]*de passe`-P`*[]*_de_passe&lt;nom_bdd>`-l full`**
+      *[NetWorker_database_module_root]* `-s`*&lt;Nom_serveur_NetWorker>Nom_*utilisateur`-U`*[]*mot de passe`-P`*[]*&lt;nom_bdd>`-l full`**
 
    * Sauvegarde incrémentielle de la base de données (nsrnmddbi.bat) :
 
-      *[NetWorker_database_module_root]* `-s`*&lt;Nom_serveur_NetWorker>Nom *d’utilisateur`-U`*[mot ]*de passe`-P`*[]*_de_passe&lt;nom_bdd>`-l 1 -R`**
+      *[NetWorker_database_module_root]* `-s`*&lt;Nom_serveur_NetWorker>Nom_*utilisateur`-U`*[]*mot de passe`-P`*[]*&lt;nom_bdd>`-l 1 -R`**
 
    * Sauvegarde du journal de la base de données (nsrnmddbl.bat) :
 
-      *[NetWorker_database_module_root]* `-s`*&lt;Nom_serveur_NetWorker>Nom *d’utilisateur`-U`*[mot ]*de passe`-P`*[]*_de_passe&lt;nom_bdd>`-l incr -R`**
+      *[NetWorker_database_module_root]* `-s`*&lt;Nom_serveur_NetWorker>Nom_*utilisateur`-U`*[]*mot de passe`-P`*[]*&lt;nom_bdd>`-l incr -R`**
 
       Où :
 
@@ -225,7 +228,7 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
    **Nom :** chemin d’accès complet au répertoire partagé
 
-   **** Type de support : `File`
+   **Type de support :** `File`
 
 1. Cliquez avec le bouton droit de la souris sur le nouveau périphérique, puis sélectionnez Operations.
 1. Cliquez sur Label, saisissez un nom, puis cliquez sur Mount.
