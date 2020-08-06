@@ -39,7 +39,7 @@ Les valeurs de propriétés suivantes sont utilisées dans la configuration de c
 * **Courriel :** Comme indiqué dans l’assistant d’ouverture de session.
 * **Mot de passe :** Comme indiqué dans l’assistant d’ouverture de session.
 * **Type d&#39;API :** REPOSE
-* **Synchroniser les segments à partir de l&#39;Adobe Target :** Sélectionné.
+* **Synchroniser les segments à partir d’Adobe Target :** Sélectionné.
 
 * **Bibliothèque cliente :** mbox.js.
 * **Utilisez la gestion dynamique des balises pour diffuser la bibliothèque cliente :** Non sélectionné. Select this option if you [use DTM](/help/sites-administering/dtm.md) or another tag management system to host the mbox.js or AT.js file. Adobe vous recommande d’utiliser la gestion dynamique des balises plutôt qu’AEM pour livrer la bibliothèque.
@@ -150,7 +150,7 @@ Utilisez la procédure suivante pour créer une configuration de cloud Target da
    * **Configuration d’A4T Analytics Cloud** : sélectionnez la configuration de cloud Analytics utilisée pour les objectifs et les mesures des activités de Target. Vous avez besoin de cette option si vous utilisez Adobe Analytics en tant que source de création de rapports lors du ciblage de contenu. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
 
    * **Utiliser un ciblage précis :** Cette case à cocher est activée par défaut. Si cette option est sélectionnée, la configuration du service cloud attend le chargement du contexte avant de charger le contenu. Voir la remarque qui suit.
-   * **Synchroniser les segments à partir d&#39;un Adobe Target :** Sélectionnez cette option pour télécharger les segments définis dans la Cible afin de les utiliser dans AEM. Vous devez sélectionner cette option lorsque la propriété Type d’API est REST, car les segments incorporés ne sont pas pris en charge, et vous devez toujours utiliser les segments de Target. (Notez que le terme « segment » d’AEM équivaut à « audience » dans Target.)
+   * **Synchroniser les segments à partir d’Adobe Target :** Sélectionnez cette option pour télécharger les segments définis dans la Cible afin de les utiliser dans AEM. Vous devez sélectionner cette option lorsque la propriété Type d’API est REST, car les segments incorporés ne sont pas pris en charge, et vous devez toujours utiliser les segments de Target. (Notez que le terme « segment » d’AEM équivaut à « audience » dans Target.)
    * **Bibliothèque cliente :** Indiquez si vous souhaitez utiliser la bibliothèque cliente mbox.js ou AT.js.
    * **Utilisez la gestion dynamique des balises pour diffuser la bibliothèque** client : sélectionnez cette option pour utiliser AT.js ou mbox.js de la gestion dynamique des balises ou un autre système de gestion des balises. You must [configure the DTM integration](/help/sites-administering/dtm.md) to use this option. Adobe vous recommande d’utiliser la gestion dynamique des balises plutôt qu’AEM pour livrer la bibliothèque.
    * **Fichier mbox.js personnalisé** : laissez ce champ vierge si vous avez coché la case Gestion dynamique des balises ou pour utiliser le fichier mbox.js par défaut. Vous pouvez également télécharger votre fichier mbox.js personnalisé. S’affiche uniquement si vous avez sélectionné mbox.js.
