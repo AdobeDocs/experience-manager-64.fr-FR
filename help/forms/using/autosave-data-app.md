@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: 133d93b0-512c-46db-b5f9-f981d77b565f
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 75%
 
 ---
 
@@ -40,5 +43,5 @@ Suivez les étapes ci-après pour utiliser la fonction d’enregistrement automa
 1. Lorsque vous redémarrez l’application et que vous vous connectez avec le même nom d’utilisateur, vous êtes invité à restaurer votre tâche à l’aide de la boîte de dialogue de récupération de la tâche non enregistrée. Click **[!UICONTROL OK]** in the Recover Unsaved Task dialog to resume working with the saved task. Vous pouvez cliquer sur **[!UICONTROL Annuler]** pour supprimer les données enregistrées correspondant au dernier enregistrement automatique déclenché et commencer à travailler sur une nouvelle tâche.
 
    Si vous cliquez sur **[!UICONTROL OK]**, la tâche est restaurée avec les données correspondant au dernier enregistrement automatique déclenché avant que l’application ne s’arrête. Il comprend les données du formulaire et toutes les pièces jointes associées à la tâche.
-   [![](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)****** Obtention d’une tâche **récupéréeA. Formulaire de travail en cours** B. Application fermée avec force **C.** L’application a redémarré avec la boîte de dialogue Récupérer la tâche non enregistrée **D. Formulaire restauré avec les données d’origine
+   [ ![Obtention d&#39;une tâche](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**récupéréeA.**Un formulaire de travail en cours** B.**L&#39;application s&#39;est fermée de manière forcée** C.**L&#39;application a redémarré avec la boîte de dialogue de récupération des Tâches non enregistrées** D.**Formulaire restauré avec les données d&#39;origine
 
