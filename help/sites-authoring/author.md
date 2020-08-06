@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 translation-type: tm+mt
 source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 83%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
 AEM vous propose deux environnements :
 
 * Création
-* Publication
+* Publication 
 
 Ces environnements interagissent afin que vous puissiez rendre le contenu disponible sur votre site web, pour que vos visiteurs puissent le lire.
 
@@ -35,11 +38,11 @@ Dans l’environnement de création, les fonctions d’AEM sont accessibles dans
 
 >[!NOTE]
 >
->AEM et le répartiteur sont utilisés pour publier cette documentation AEM.
+>AEM et le répartiteur sont utilisés pour publier cette AEM documentation.
 
 ## Environnement de création {#author-environment}
 
-The author works in what is known as the **[author environment](/help/sites-authoring/home.md)**. This provides an easy to use interface (graphical user interface (GUI or UI)) for creating the content. It is usually located behind a company&#39;s firewall that provides full protection and requires the author to login, using an account that has been assigned the appropriate access rights.
+L’auteur travaille dans ce qu’on appelle l’**[environnement de création](/help/sites-authoring/home.md)**. Il s’agit d’une interface facile à utiliser (interface utilisateur graphique) pour créer le contenu. En fait, cette interface se trouve habituellement derrière le pare-feu d’une entreprise qui fournit une protection complète et implique que l’auteur se connecte à l’aide d’un compte doté des droits d’accès appropriés.
 
 >[!NOTE]
 >
@@ -77,20 +80,20 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
 >
 >Il existe malheureusement une interférence dans la terminologie utilisée. Cela peut se produire avec les fonctions suivantes :
 >
->* **Publier / Annuler la publication**
-   >  Il s’agit des principaux termes des actions qui rendent votre contenu public dans votre environnement de publication (ou pas).
+>* **Publier/Annuler la publication**
+   >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
    >
    >
-* **Activer / désactiver**
-   >  Ces termes sont synonymes de publication/annulation de publication. Elles sont plus courantes dans l’interface utilisateur classique.
+* **Activer/Désactiver**
+   >  Ces termes sont synonymes de publication/annulation de la publication. Elles sont plus courantes dans l’interface utilisateur classique.
    >
    >
-* **Répliquer / Réplication**
-   >  Il s&#39;agit des termes techniques utilisés pour indiquer le mouvement des données (par exemple, contenu de la page, fichiers, code, commentaires des utilisateurs) d&#39;un environnement à un autre; c’est-à-dire lors de la publication ou de la réplication inversée des commentaires des utilisateurs.
+* **Répliquer/Réplication**
+   >  Il s&#39;agit des termes techniques utilisés pour indiquer le mouvement des données (par exemple, le contenu des pages, les fichiers, le code, les commentaires des utilisateurs) d&#39;un environnement à l&#39;autre ; c’est-à-dire lors de la publication ou de la réplication inversée des commentaires d’utilisateur.
 >
 
 
 
-## Répartiteur {#dispatcher}
+## Dispatcher {#dispatcher}
 
-To optimize performance for visitors to your website, the **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)**implements load balancing and caching.
+Afin que les visiteurs de votre site web bénéficient de performances optimales, le **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)met en œuvre des mécanismes de mise en cache et d’équilibrage de la charge.**
