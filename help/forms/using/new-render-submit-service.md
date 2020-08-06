@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 58f95138-5439-4540-a8dc-193b4cb42203
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '929'
+ht-degree: 85%
 
 ---
 
@@ -127,7 +130,7 @@ Le profil d’action par défaut a rendu le formulaire XDP au format PDF. Ce com
 
 Voici certaines questions fréquentes sur les profils d’action :
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Quels processus de rendu/envoi seront disponibles en standard ?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Quels processus de rendu/d’envoi seront disponibles prêts à l’emploi ?**
 
 * Render Guide (Guides est obsolète)
 * Render Form Guide
@@ -138,7 +141,7 @@ Voici certaines questions fréquentes sur les profils d’action :
 
 Et, les processus d’envoi équivalents.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Quel d&#39;action sera disponible en standard ?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Quels Profils d&#39;action seront disponibles en standard ?**
 
 Pour des formulaires XDP:
 
@@ -152,7 +155,7 @@ Rien. Le profil d’action par défaut est choisi automatiquement, et le mode de
 
 L’utilisateur doit sélectionner le bouton radio HTML pour le profil par défaut.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Y aura-t-il un impact de mise à niveau sur la modification du comportement du d&#39;actions par défaut  comportement ?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Y aura-t-il un impact de mise à niveau sur la modification du comportement du profil d&#39;action par défaut ?**
 
 Oui ; étant donné que le rendu précédent et les services d’envoi associés au profil d’action par défaut étaient différents, ils sont gérés en tant que personnalisations des formulaires existants. On clicking **[!UICONTROL Restore Defaults]**, the default render and submit services are set instead.
 
