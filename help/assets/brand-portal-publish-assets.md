@@ -1,20 +1,23 @@
 ---
 title: Publication de dossiers sur Brand Portal
-description: Découvrez comment publier et annuler la publication de fichiers sur le portail de marque.
+description: Découvrez comment publier et annuler la publication de fichiers sur le portail des marques.
 contentOwner: VG
 translation-type: tm+mt
 source-git-commit: f09853921dec6602952f369982a1563c7e4a9727
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 52%
 
 ---
 
 
 # Publication de ressources sur Brand Portal {#publish-assets-to-brand-portal}
 
-En tant qu’administrateur des ressources d’Adobe Experience Manager (AEM), vous pouvez publier des ressources sur l’instance de portail de marques AEM Assets (ou programmer le processus de publication à une date/heure ultérieure) pour votre entreprise. Toutefois, vous devez d’abord configurer AEM Assets avec Brand Portal. For details, see [Configure AEM Assets with Brand Portal](configure-aem-assets-with-brand-portal.md).
+En tant qu’administrateur Adobe Experience Manager (AEM) Assets, vous pouvez publier des fichiers sur l’instance AEM Assets Brand Portal (ou programmer le processus de publication à une date/heure ultérieure) pour votre entreprise. Toutefois, vous devez d’abord configurer AEM Assets avec Brand Portal. Pour plus de détails, voir [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md).
 
 Une fois que vous avez publié un fichier, il est accessible aux utilisateurs du portail de marque.
 
-Si vous apportez des modifications ultérieures à la ressource d’origine dans les ressources AEM, les modifications ne sont pas répercutées dans le portail de marque tant que vous n’avez pas republié la ressource. Cette fonctionnalité garantit que les modifications en cours ne sont pas disponibles dans le portail de marque. Seules les modifications approuvées publiées par un administrateur sont disponibles dans le portail des marques.
+Si vous apportez des modifications ultérieures à l’actif d’origine dans AEM Assets, les modifications ne sont pas répercutées dans le portail des marques tant que vous n’avez pas republié l’actif. Cette fonction assure que les modifications en cours ne sont pas disponibles dans Brand Portal. Seules les modifications approuvées publiées par un administrateur sont disponibles dans Brand Portal.
 
 Une fois la réplication réussie, vous pouvez publier des ressources, des dossiers et des collections sur Brand Portal. Pour publier des ressources sur Brand Portal, procédez comme suit :
 
@@ -28,17 +31,17 @@ Une fois la réplication réussie, vous pouvez publier des ressources, des dossi
 
    ![publish2bp-2](assets/publish2bp-2.png)
 
-2. Pour publier les fichiers sur Brand Portal, vous disposez de deux options :
+2. Pour publier les fichiers sur le portail des marques, deux options sont disponibles :
    * [Publication immédiate des fichiers](#publish-now)
-   * [Publier les ressources plus tard](#publish-later)
+   * [Publication ultérieure des ressources](#publish-later)
 
-## Publier les ressources maintenant {#publish-now}
+## Publication immédiate des ressources {#publish-now}
 
 Pour publier les ressources sélectionnées sur Brand Portal, effectuez l’une des opérations suivantes :
 
-* From the toolbar, select **[!UICONTROL Quick Publish]**. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+* Dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
 
-* From the toolbar, select **[!UICONTROL Manage Publication]**.
+* Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**.
 
    1. Then from the **[!UICONTROL Action]** select **[!UICONTROL Publish to Brand Portal]**, and from **[!UICONTROL Scheduling]** select **[!UICONTROL Now]**. Appuyez/cliquez sur **[!UICONTROL Suivant].**
 
@@ -46,7 +49,7 @@ Pour publier les ressources sélectionnées sur Brand Portal, effectuez l’une
 
 Un message indique que les ressources ont été placées en file d’attente pour publication sur Brand Portal. Connectez-vous à l’interface Brand Portal pour voir les ressources publiées.
 
-## Publier les ressources plus tard {#publish-later}
+## Publication ultérieure des ressources {#publish-later}
 
 Pour planifier la publication des ressources sur Brand Portal à une date ou une heure ultérieure :
 
@@ -55,12 +58,12 @@ Pour planifier la publication des ressources sur Brand Portal à une date ou un
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
-3. Select an **[!UICONTROL Activation date]** and specify time. Appuyez/cliquez sur **[!UICONTROL Suivant]**.
-4. Select an **[!UICONTROL Activation date]** and specify time. Appuyez/cliquez sur **[!UICONTROL Suivant]**.
-5. Specify a Workflow title under **[!UICONTROL Workflows]**. Tap/ click **[!UICONTROL Publish Later]**.
+3. Sélectionnez une **[!UICONTROL Date d’activation]** et spécifiez l’heure. Appuyez/cliquez sur **[!UICONTROL Suivant]**.
+4. Sélectionnez une **[!UICONTROL Date d’activation]** et spécifiez l’heure. Appuyez/cliquez sur **[!UICONTROL Suivant]**.
+5. Spécifiez un titre de workflow sous **[!UICONTROL Processus]**. Tap/ click **[!UICONTROL Publish Later]**.
 
-   ![processus de publication](assets/publishworkflow.png)
+   ![publishworkflow](assets/publishworkflow.png)
 
-Désormais, connectez-vous à Brand Portal pour savoir si les fichiers publiés sont disponibles dans l’interface de Brand Portal.
+Désormais, connectez-vous à Brand Portal pour savoir si les fichiers publiés sont disponibles sur l’interface du portail Marque.
 
 ![bp_631_landing_page](assets/bp_landing_page.png)
