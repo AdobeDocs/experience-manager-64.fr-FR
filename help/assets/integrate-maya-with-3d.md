@@ -1,6 +1,6 @@
 ---
-title: Intégration d’AEM 3D à Autodesk Maya
-seo-title: Intégration d’AEM 3D à Autodesk Maya
+title: Intégration de l'AEM 3D avec Autodesk Maya
+seo-title: Intégration de l'AEM 3D avec Autodesk Maya
 description: Vous pouvez également intégrer AEM 3D avec le logiciel Autodesk® Maya® pour activer la prise en charge des fichiers natifs Maya (.MA et .MB) et le rendu des ressources 3D dans AEM avec n’importe quel moteur de rendu Maya disponible.
 seo-description: Vous pouvez également intégrer AEM 3D avec le logiciel Autodesk® Maya® pour activer la prise en charge des fichiers natifs Maya (.MA et .MB) et le rendu des ressources 3D dans AEM avec n’importe quel moteur de rendu Maya disponible.
 uuid: 07ff17b6-bdfc-4617-8b16-42aaf5c73fc7
@@ -11,11 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 3d063268-17d7-4db6-8028-682537645377
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '876'
+ht-degree: 36%
 
 ---
 
 
-# Intégration d’AEM 3D avec Autodesk Maya {#integrating-aem-d-with-autodesk-maya}
+# Intégration de l&#39;AEM 3D avec Autodesk Maya {#integrating-aem-d-with-autodesk-maya}
 
 >[!NOTE]
 >
@@ -23,17 +26,17 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 You can optionally integrate AEM 3D with Autodesk® Maya® software to enable support for native Maya files (`.MA` and `.MB`) and to let you render 3D assets in AEM with any available Maya renderer.
 
-*Cette intégration s’applique uniquement*&#x200B;à Windows.
+*Cette intégration est réservée à Windows uniquement*.
 
 Lorsque vous intégrez Autodesk Maya, vous devez l’installer et le configurer, puis ajouter le chemin du dossier exécutable Maya, activer Maya pour l’assimilation et le rendu, et tester l’intégration.
 
 See [Advanced configuration settings](advanced-config-3d.md).
 
-Voir aussi [Intégration d’AEM 3D avec AutoDesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md).
+Voir aussi [Intégration de AEM 3D avec AutoDesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md).
 
 **Pour intégrer AEM 3D avec Autodesk Maya**:
 
-1. Installez le logiciel Autodesk Maya 2016 sur les mêmes serveurs qu’AEM.
+1. Installez le logiciel Autodesk Maya 2016 sur les mêmes serveurs où AEM est hébergé.
 
    Une fois l’installation terminée, vérifiez que vous pouvez ouvrir et utiliser Maya et qu’il n’y a aucun problème d’autorisation.
 
@@ -82,7 +85,7 @@ Voir aussi [Intégration d’AEM 3D avec AutoDesk 3ds Max](integrating-aem-3d-wi
 
 1. After all processing is finished, open the `logo-sphere.ma` asset and select the `stage-helipad.ma` stage.
 
-   L’expérience d’aperçu est la même que pour `logo_sphere.fbx` et `stage-helipad.fbx`.
+   L’expérience de Prévisualisation est la même que pour `logo_sphere.fbx` et `stage-helipad.fbx`.
 
 1. Near the upper-left corner of the page, tap or click the drop-down list and then select **[!UICONTROL CRender]**.
 
@@ -95,7 +98,7 @@ Voir aussi [Intégration d’AEM 3D avec AutoDesk 3ds Max](integrating-aem-3d-wi
 
    >[!NOTE]
    >
-   >Le rendu est très gourmand en CPU et peut prendre plusieurs minutes.
+   >Le rendu sollicite énormément le processeur et peut prendre plusieurs minutes.
 
 1. Une fois le rendu terminé, ouvrez la resource image dont le rendu a été généré.
 
@@ -103,16 +106,16 @@ Voir aussi [Intégration d’AEM 3D avec AutoDesk 3ds Max](integrating-aem-3d-wi
 
 ## Enabling Additional Formats Supported By Maya {#enabling-additional-formats-supported-by-maya}
 
-(Facultatif) Maya prend en charge un certain nombre de formats d’entrée 3D, qui peuvent être activés pour qu’AEM reconnaisse le type de fichier. Lorsqu’il est activé, AEM envoie le fichier à Maya pour le convertir dans un format intermédiaire qui peut être directement assimilé par AEM.
+(Facultatif) Maya prend en charge un certain nombre de formats d’entrée 3D, dont tous peuvent être activés afin que AEM reconnaisse le type de fichier. Une fois activé, AEM envoie le fichier à Maya pour le convertir en format intermédiaire qui peut être directement assimilé par AEM.
 
-Selon le format, la prise en charge des fonctionnalités peut être limitée (par exemple, les matériaux ne peuvent pas être transmis) et la qualité/fidélité peut être limitée (par exemple, les faces inversées). Adobe prend uniquement en charge le mécanisme général, et non les conversions de formats spécifiques.
+Selon le format, la prise en charge des fonctions peut être limitée (par exemple, les matériaux ne peuvent pas être transmis) et la qualité/fidélité peut être limitée (par exemple, les faces inversées). Adobe prend uniquement en charge le mécanisme général, et non les conversions de formats spécifiques.
 
 See [Supported Data Import Formats | Maya](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-69BC066D-D4D8-4B12-900C-CF42E798A5D6-htm.html) for information about the formats supported by Maya.
 
 **Pour activer des formats supplémentaires pris en charge par AEM**:
 
-1. A l’aide de **[!UICONTROL CRXDE Lite]**, accédez à `/libs/settings/dam/v3D/assetTypes`.
-1. Make a copy of the **[!UICONTROL jt]** node. Right-click on the **[!UICONTROL jt]** node and select **[!UICONTROL Copy]**, then right-click the **[!UICONTROL assetTypes]** folder and select **[!UICONTROL Paste]**. Cela doit produire un nouveau noeud `/apps/cq-scene7-v3D/config/assetTypes/Copy of jt`.
+1. À l’aide de **[!UICONTROL CRXDE Lite]**, accédez à `/libs/settings/dam/v3D/assetTypes`.
+1. Make a copy of the **[!UICONTROL jt]** node. Right-click on the **[!UICONTROL jt]** node and select **[!UICONTROL Copy]**, then right-click the **[!UICONTROL assetTypes]** folder and select **[!UICONTROL Paste]**. Ceci doit produire un nouveau noeud `/apps/cq-scene7-v3D/config/assetTypes/Copy of jt`.
 1. Renommez le nouveau nœud pour lui donner un nom unique qui représente le type de fichier à ajouter. Le suffixe de fichier ou tout autre identifiant unique peut être utilisé.
 
 1. Set the **[!UICONTROL Enabled]** property of the new node to `true`.
@@ -122,7 +125,7 @@ See [Supported Data Import Formats | Maya](https://knowledge.autodesk.com/suppor
 1. Make certain that the **[!UICONTROL Conversion]** property is set to `fbx` and **[!UICONTROL IngestRegime]** to `Maya`.
 1. Click **[!UICONTROL Save All]** near the top left of the page.
 
-La capture d’écran suivante illustre un format de fichier ajouté, à l’aide de COLLADA DAE comme exemple :
+La capture d&#39;écran suivante illustre un format de fichier ajouté, à l&#39;aide de COLLADA DAE comme exemple :
 
 ![image2018-6-22_12-50-39](assets/image2018-6-22_12-50-39.png)
 
