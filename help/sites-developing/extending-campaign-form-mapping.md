@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 92%
 
 ---
 
@@ -25,7 +28,7 @@ Ce document vous explique comment créer des mappages de formulaire personnalis�
 
 Les éléments suivants doivent être installés :
 
-* Adobe Experience Manager  
+* Adobe Experience Manager 
 * Adobe Campaign Classic
 
 See [Integrating AEM with Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) for more information.
@@ -43,7 +46,7 @@ Pour créer des mappages de formulaire personnalisés, vous devez suivre ces ét
 
 ### Création du tableau personnalisé dans Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
 
-Commencez par créer un tableau personnalisé dans Adobe Campaign. Dans cet exemple, nous utilisons la définition suivante pour créer un tableau d’événements :
+Commencez par créer un tableau personnalisé dans Adobe Campaign. Dans cet exemple, nous utilisons la définition suivante pour créer un tableau de événement :
 
 ```xml
 <element autopk="true" label="Event" labelSingular="Event" name="event">
