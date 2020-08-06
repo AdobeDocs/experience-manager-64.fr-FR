@@ -31,7 +31,7 @@ Le service Output vous permet de générer des documents au format PDF (y compri
 
 Le service Output vous permet de fusionner des données de formulaire XML avec une conception de formulaire et de générer le document sur une imprimante ou un fichier réseau.
 
-Il existe deux façons de transmettre une conception de formulaire (un fichier XDP) au service Output. Vous pouvez transmettre une `com.adobe.idp.Document` instance contenant une conception de formulaire au service Output. Vous pouvez également transmettre une valeur URI spécifiant l’emplacement de la conception de formulaire. Ces deux méthodes sont décrites dans *Programmation avec AEM Forms*.
+Il existe deux façons de transmettre une conception de formulaire (un fichier XDP) au service Output. Vous pouvez transmettre une `com.adobe.idp.Document` instance contenant une conception de formulaire au service Output. Vous pouvez également transmettre une valeur URI spécifiant l’emplacement de la conception de formulaire. Ces deux méthodes sont abordées dans *Programmation avec des formulaires* AEM.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Les sections suivantes montrent comment transmettre une conception de formulaire
 * [Transmission de Documents situés dans Content Services (obsolète) à Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [Création de Documents PDF à l’aide de fragments](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
-Lorsque vous décidez de la technique à utiliser, vous devez notamment savoir si vous obtenez la conception de formulaire à partir d’un autre service AEM Forms, puis la transmettre dans une `com.adobe.idp.Document` instance. Les sections *Transmission de Documents au service* Output et *Création de Documents PDF à l’aide de fragments* montrent comment obtenir une conception de formulaire à partir d’un autre service AEM Forms. La première section récupère la conception de formulaire de Content Services (obsolète). La deuxième section récupère la conception de formulaire à partir du service Assembler.
+Lorsque vous décidez de la technique à utiliser, vous devez notamment savoir si vous obtenez la conception de formulaire d’un autre service AEM Forms, puis la transmettre dans une `com.adobe.idp.Document` instance. Les sections *Transmission de Documents au service* Output et *Création de Documents PDF à l’aide de fragments* montrent comment obtenir une conception de formulaire à partir d’un autre service AEM Forms. La première section récupère la conception de formulaire de Content Services (obsolète). La deuxième section récupère la conception de formulaire à partir du service Assembler.
 
 Si vous obtenez la conception de formulaire à un emplacement fixe, tel que le système de fichiers, vous pouvez utiliser l’une ou l’autre technique. En d’autres termes, vous pouvez spécifier la valeur URI d’un fichier XDP ou utiliser une `com.adobe.idp.Document` instance.
 
@@ -77,7 +77,7 @@ Vous pouvez utiliser le service Output pour créer un document PDF basé sur une
 
 Si vous souhaitez créer un document PDF destiné à un enregistrement à long terme, il est recommandé de créer un document PDF/A. (voir [Création de Documents](creating-document-output-streams.md#creating-pdf-a-documents)PDF/A).
 
-Pour créer un formulaire PDF interactif permettant à un utilisateur de saisir des données, utilisez le service Forms. (voir [Rendu de formulaires](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)PDF interactifs).
+Pour créer un formulaire PDF interactif permettant à un utilisateur de saisir des données, utilisez le service Forms. (Voir [Rendu de PDF forms](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)interactifs.)
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, vous devrez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
+si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
 **Création d’un objet Client de sortie**
 
@@ -235,9 +235,10 @@ Créez un document PDF à l’aide de l’API Output (Java) :
 
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur.
    * Mettez en cache la conception de formulaire afin d’améliorer les performances du service Output en appelant l’objet `RenderOptionsSpec` et en `setCacheEnabled` `true`le transmettant.
+
    >[!NOTE]
    >
-   >Vous ne pouvez pas définir la version du document PDF à l’aide de la `RenderOptionsSpec` `setPdfVersion` méthode de l’objet si le document d’entrée est un formulaire Acrobat (un formulaire créé dans Acrobat) ou un document XFA signé ou certifié. Le document PDF de sortie conserve la version PDF d’origine. De même, vous ne pouvez pas définir l’option PDF Adobe balisé en appelant la méthode `RenderOptionsSpec` `setTaggedPDF`* de l’objet si le document d’entrée est un formulaire Acrobat ou un document XFA signé ou certifié. *
+   >Vous ne pouvez pas définir la version du document PDF à l’aide de la `RenderOptionsSpec` `setPdfVersion` méthode de l’objet si le document d’entrée est un formulaire Acrobat (un formulaire créé dans Acrobat) ou un document XFA signé ou certifié. Le document PDF de sortie conserve la version PDF d’origine. De même, vous ne pouvez pas définir l’option Adobe PDF balisée en appelant la méthode `RenderOptionsSpec` `setTaggedPDF`* de l’objet si le document d’entrée est un formulaire Acrobat ou un document XFA signé ou certifié. *
 
    >[!NOTE]
    >
@@ -253,6 +254,7 @@ Créez un document PDF à l’aide de l’API Output (Java) :
    * Objet `PDFOutputOptionsSpec` contenant des options d’exécution PDF.
    * Objet `RenderOptionsSpec` contenant des options d’exécution de rendu.
    * Objet `com.adobe.idp.Document` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire.
+
    The `generatePDFOutput` method returns an `OutputResult` object that contains the results of the operation.
 
    >[!NOTE]
@@ -272,6 +274,7 @@ Créez un document PDF à l’aide de l’API Output (Java) :
    * Récupérez un `com.adobe.idp.Document` objet qui représente l’état de l’ `generatePDFOutput` opération en appelant la `OutputResult` méthode de l’ `getStatusDoc` objet. Cette méthode renvoie des données XML d’état qui spécifient si l’opération a réussi.
    * Créez un `java.io.File` objet contenant les résultats de l’opération. Assurez-vous que l’extension de nom de fichier est .xml.
    * Appelez la `com.adobe.idp.Document` méthode de l’ `copyToFile` objet pour copier le contenu de l’ `com.adobe.idp.Document` objet dans le fichier (veillez à utiliser l’ `com.adobe.idp.Document` objet renvoyé par la `getStatusDoc` méthode).
+
    Bien que le service Output écrive le document PDF à l’emplacement spécifié par l’argument transmis à la `PDFOutputOptionsSpec` méthode de l’ `setFileURI` objet, vous pouvez programmer la récupération du document PDF/A en appelant la `OutputResult` méthode de l’ `getGeneratedDoc` objet.
 
 **Voir également**
@@ -301,7 +304,7 @@ Créez un document PDF à l’aide de l’API Output (service Web) :
 1. Créez un objet Client de sortie.
 
    * Créez un `OutputServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
+   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `OutputServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -328,9 +331,10 @@ Créez un document PDF à l’aide de l’API Output (service Web) :
 
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur.
    * Mettez en cache la conception de formulaire afin d’améliorer les performances du service Output en affectant la valeur `true` au membre `RenderOptionsSpec` de données de l’ `cacheEnabled` objet.
+
    >[!NOTE]
    >
-   >Vous ne pouvez pas définir la version du document PDF à l’aide de la `RenderOptionsSpec` `setPdfVersion` méthode de l’objet si le document d’entrée est un formulaire Acrobat (un formulaire créé dans Acrobat) ou un document XFA signé ou certifié. Le document PDF de sortie conserve la version PDF d’origine. De même, vous ne pouvez pas définir l’option PDF Adobe balisé en appelant la méthode `RenderOptionsSpec` `setTaggedPDF`* de l’objet si le document d’entrée est un formulaire Acrobat ou un document XFA signé ou certifié.*
+   >Vous ne pouvez pas définir la version du document PDF à l’aide de la `RenderOptionsSpec` `setPdfVersion` méthode de l’objet si le document d’entrée est un formulaire Acrobat (un formulaire créé dans Acrobat) ou un document XFA signé ou certifié. Le document PDF de sortie conserve la version PDF d’origine. De même, vous ne pouvez pas définir l’option Adobe PDF balisée en appelant la méthode `RenderOptionsSpec` `setTaggedPDF`* de l’objet si le document d’entrée est un formulaire Acrobat ou un document XFA signé ou certifié.*
 
    >[!NOTE]
    >
@@ -349,6 +353,7 @@ Créez un document PDF à l’aide de l’API Output (service Web) :
    * Objet `BLOB` renseigné par la `generatePDFOutput` méthode. La `generatePDFOutput` méthode remplit cet objet avec des métadonnées générées qui décrivent le document. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
    * Objet `BLOB` renseigné par la `generatePDFOutput` méthode. La `generatePDFOutput` méthode remplit cet objet avec des données de résultat. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
    * Objet `OutputResult` contenant les résultats de l’opération. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
+
    >[!NOTE]
    >
    >Lorsque vous générez un document PDF en appelant la `generatePDFOutput` méthode, sachez que vous ne pouvez pas fusionner des données avec un formulaire PDF XFA signé ou certifié. (Voir Signature [numérique et certification de Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
@@ -363,13 +368,14 @@ Créez un document PDF à l’aide de l’API Output (service Web) :
    * Créez un tableau d’octets qui stocke le contenu des données de l’ `BLOB` objet qui a été renseigné avec les données de résultat par la `OutputServiceService` méthode de l’ `generatePDFOutput` objet (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur de l’objet `BLOB``MTOM` `field`.
    * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
    * Ecrivez le contenu du tableau d’octets dans le fichier XML en appelant la méthode `System.IO.BinaryWriter` `Write` de l’objet et en transmettant le tableau d’octets.
+
    Voir également
 
    [Résumé des étapes](creating-document-output-streams.md#summary-of-steps)
 
-   [Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+   [Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-   [Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+   [Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
    >[!NOTE]
    >
@@ -387,7 +393,7 @@ Votre organisation doit évaluer ses propres besoins, la durée de conservation 
 
 Un document PDF/A doit utiliser la police spécifiée dans la conception de formulaire et les polices ne peuvent pas être substituées. Par conséquent, si une police située dans un document PDF n’est pas disponible sur le système d’exploitation hôte, une exception se produit.
 
-Lorsqu’un document PDF/A est ouvert dans Acrobat, un message s’affiche, confirmant que le document est un document PDF/A, comme illustré ci-dessous.
+Lorsqu’un document PDF/A est ouvert dans Acrobat, un message s’affiche qui confirme que le document est un document PDF/A, comme illustré ci-dessous.
 
 ![cp_cp_pdfamessage](assets/cp_cp_pdfamessage.png)
 
@@ -423,7 +429,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, vous devrez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
+si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
 **Création d’un objet Client de sortie**
 
@@ -445,7 +451,7 @@ La `PDFARevisionNumber` valeur fait référence au numéro de révision d’un d
 
 >[!NOTE]
 >
->Vous ne pouvez pas définir l’option Adobe PDF balisé sur `false` lors de la création d’un document PDF/A 1A. PDF/A 1A sera toujours un document PDF balisé. En outre, vous ne pouvez pas définir l’option Adobe PDF balisé sur `true` lors de la création d’un document PDF/A 1B. PDF/A 1B sera toujours un document PDF non balisé.
+>Vous ne pouvez pas définir l’option Adobe PDF balisée sur `false` lors de la création d’un document PDF/A 1A. PDF/A 1A sera toujours un document PDF balisé. En outre, vous ne pouvez pas définir l’option Adobe PDF balisée sur `true` lors de la création d’un document PDF/A 1B. PDF/A 1B sera toujours un document PDF non balisé.
 
 **Générer un document PDF/A**
 
@@ -495,6 +501,7 @@ Créez un document PDF/A à l’aide de l’API Output (Java) :
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur.
    * Définissez la `PDFAConformance` valeur en appelant la `RenderOptionsSpec` méthode de l’ `setPDFAConformance` objet et en transmettant une valeur `PDFAConformance` d’énumération qui spécifie le niveau de conformité. Par exemple, pour spécifier le niveau de conformité A, passez `PDFAConformance.A`.
    * Définissez la `PDFARevisionNumber` valeur en appelant la `RenderOptionsSpec` méthode de l’ `setPDFARevisionNumber` objet et en transmettant `PDFARevisionNumber.Revision_1`la valeur.
+
    >[!NOTE]
    >
    >La version PDF d’un document PDF/A est 1.4, quelle que soit la valeur spécifiée pour la `RenderOptionsSpec` méthode de l’ `setPdfVersion`*objet.*
@@ -509,6 +516,7 @@ Créez un document PDF/A à l’aide de l’API Output (Java) :
    * Objet `PDFOutputOptionsSpec` contenant des options d’exécution PDF.
    * Objet `RenderOptionsSpec` contenant des options d’exécution de rendu.
    * Objet `com.adobe.idp.Document` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire.
+
    The `generatePDFOutput` method returns an `OutputResult` object that contains the results of the operation.
 
    >[!NOTE]
@@ -524,6 +532,7 @@ Créez un document PDF/A à l’aide de l’API Output (Java) :
    * Créez un `com.adobe.idp.Document` objet qui représente l’état de la `generatePDFOutput` méthode en appelant la `OutputResult` méthode de l’ `getStatusDoc` objet.
    * Créez un `java.io.File` objet qui contiendra les résultats de l’opération. Assurez-vous que l’extension de nom de fichier est .xml.
    * Appelez la `com.adobe.idp.Document` méthode de l’ `copyToFile` objet pour copier le contenu de l’ `com.adobe.idp.Document` objet dans le fichier (veillez à utiliser l’ `com.adobe.idp.Document` objet renvoyé par la `getStatusDoc` méthode).
+
    >[!NOTE]
    >
    >Bien que le service Output écrive le document PDF/A à l’emplacement spécifié par l’argument transmis à la `PDFOutputOptionsSpec` méthode de l’ `setFileURI` objet, vous pouvez programmer la récupération du document PDF/A en appelant la méthode `OutputResult` * de l’ `getGeneratedDoc`objet.*
@@ -553,7 +562,7 @@ Créez un document PDF/A à l’aide de l’API Output (service Web) :
 1. Créez un objet Client de sortie.
 
    * Créez un `OutputServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
+   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `OutputServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -581,6 +590,7 @@ Créez un document PDF/A à l’aide de l’API Output (service Web) :
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur.
    * Définissez la `PDFAConformance` valeur en attribuant une valeur `PDFAConformance` enum au membre `RenderOptionsSpec` de données de l’ `PDFAConformance` objet. Par exemple, pour spécifier le niveau de conformité A, affectez `PDFAConformance.A` ce membre de données.
    * Définissez la `PDFARevisionNumber` valeur en attribuant une valeur `PDFARevisionNumber` enum au membre `RenderOptionsSpec` de données de l’ `PDFARevisionNumber` objet. Affecter `PDFARevisionNumber.Revision_1` à ce membre de données.
+
    >[!NOTE]
    >
    >La version PDF d’un document PDF/A est 1.4, quelle que soit la valeur spécifiée.
@@ -598,6 +608,7 @@ Créez un document PDF/A à l’aide de l’API Output (service Web) :
    * Objet `BLOB` renseigné par la `generatePDFOutput` méthode. La `generatePDFOutput` méthode remplit cet objet avec des métadonnées générées qui décrivent le document. (Cette valeur de paramètre est requise pour l’appel de service Web uniquement.)
    * Objet `BLOB` renseigné par la `generatePDFOutput` méthode. La `generatePDFOutput` méthode remplit cet objet avec des données de résultat. (Cette valeur de paramètre est requise pour l’appel de service Web uniquement.)
    * Objet `OutputResult` contenant les résultats de l’opération. (Cette valeur de paramètre est requise pour l’appel de service Web uniquement.)
+
    >[!NOTE]
    >
    >Vous pouvez également créer un document PDF/A en appelant la méthode `OutputClient` 2 de l’objet `generatePDFOutput`. (voir [Transmission de Documents situés dans Content Services (obsolète) à Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)).)
@@ -613,15 +624,15 @@ Créez un document PDF/A à l’aide de l’API Output (service Web) :
 
 [Résumé des étapes](creating-document-output-streams.md#summary-of-steps)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Transmission de Documents situés dans Content Services (obsolète) à Output Service {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
 Le service Output génère un formulaire PDF non interactif basé sur une conception de formulaire généralement enregistrée dans un fichier XDP et créée dans Designer. Vous pouvez transmettre un `com.adobe.idp.Document` objet contenant la conception de formulaire au service Output. Le service Output effectue ensuite le rendu de la conception de formulaire située dans l’ `com.adobe.idp.Document` objet.
 
-L’avantage de transmettre un `com.adobe.idp.Document` objet au service Output est que d’autres opérations du service AEM Forms retournent une `com.adobe.idp.Document` instance. En d’autres termes, vous pouvez obtenir une `com.adobe.idp.Document` instance à partir d’une autre opération de service et la générer. Supposons, par exemple, qu’un fichier XDP soit stocké dans un noeud Content Services (obsolète) nommé `/Company Home/Form Designs`, comme illustré ci-dessous.
+L’avantage de transmettre un `com.adobe.idp.Document` objet au service Output est que d’autres opérations de service AEM Forms retournent une `com.adobe.idp.Document` instance. En d’autres termes, vous pouvez obtenir une `com.adobe.idp.Document` instance à partir d’une autre opération de service et la générer. Supposons, par exemple, qu’un fichier XDP soit stocké dans un noeud Content Services (obsolète) nommé `/Company Home/Form Designs`, comme illustré ci-dessous.
 
 Vous pouvez récupérer par programmation le fichier Loan.xdp de Content Services (obsolète) et transmettre le fichier XDP au service Output dans un `com.adobe.idp.Document` objet.
 
@@ -661,7 +672,7 @@ Pour effectuer le rendu d’un formulaire non interactif, transmettez l’ `com.
 
 **Exécution d’une action avec le flux de données de formulaire**
 
-Vous pouvez enregistrer le formulaire non interactif au format PDF. Le formulaire peut être affiché dans Adobe Reader ou Acrobat.
+Vous pouvez enregistrer le formulaire non interactif au format PDF. Le formulaire peut être affiché en Adobe Reader ou en Acrobat.
 
 **Voir également**
 
@@ -698,6 +709,7 @@ Transmettez un document récupéré de Content Services (obsolète) à l’aide 
    * Valeur de chaîne qui spécifie la banque où le contenu est ajouté. The default store is `SpacesStore`. Cette valeur est un paramètre obligatoire.
    * Valeur de chaîne qui spécifie le chemin d’accès complet au contenu à récupérer (par exemple, `/Company Home/Form Designs/Loan.xdp`). Cette valeur est un paramètre obligatoire.
    * Valeur de chaîne qui spécifie la version. Cette valeur est un paramètre facultatif et vous pouvez transmettre une chaîne vide. Dans ce cas, la dernière version est récupérée.
+
    La `retrieveContent` méthode renvoie un `CRCResult` objet contenant le fichier XDP. Récupérez une `com.adobe.idp.Document` instance en appelant la `CRCResult` méthode de l’ `getDocument` objet.
 
 1. Générer le formulaire PDF non interactif.
@@ -710,6 +722,7 @@ Transmettez un document récupéré de Content Services (obsolète) à l’aide 
    * Objet `PDFOutputOptionsSpec` contenant des options d’exécution PDF.
    * Objet `RenderOptionsSpec` contenant des options d’exécution de rendu.
    * Objet `com.adobe.idp.Document` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire.
+
    The `generatePDFOutput2` method returns an `OutputResult` object that contains the results of the operation.
 
 1. Exécutez une action avec le flux de données du formulaire.
@@ -736,7 +749,7 @@ Transmettez un document récupéré de Content Services (obsolète) à l’aide 
 
 1. Incluez des fichiers de projet.
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Comme cette application cliente appelle deux services AEM Forms, créez deux références de service. Utilisez la définition WSDL suivante pour la référence de service associée au service Output : `http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Dans la mesure où cette application cliente appelle deux services AEM Forms, créez deux références de service. Utilisez la définition WSDL suivante pour la référence de service associée au service Output : `http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`.
 
    Utilisez la définition WSDL suivante pour la référence de service associée au service Document Management : `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
@@ -758,6 +771,7 @@ Transmettez un document récupéré de Content Services (obsolète) à l’aide 
       * Attribuez la valeur de mot de passe correspondante au champ `OutputServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+
    >[!NOTE]
    >
    >Répétez ces étapes pour le client de service `DocumentManagementServiceClient`*. *
@@ -786,6 +800,7 @@ Transmettez un document récupéré de Content Services (obsolète) à l’aide 
    * Objet `BLOB` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire.
    * Objet de sortie `BLOB` qui est renseigné par la `generatePDFOutput2` méthode. La `generatePDFOutput2` méthode remplit cet objet avec des métadonnées générées qui décrivent le document. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
    * Objet de sortie `OutputResult` contenant les résultats de l’opération. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
+
    La `generatePDFOutput2` méthode renvoie un `BLOB` objet contenant le formulaire PDF non interactif.
 
 1. Exécutez une action avec le flux de données du formulaire.
@@ -799,21 +814,21 @@ Transmettez un document récupéré de Content Services (obsolète) à l’aide 
 
 [Résumé des étapes](creating-document-output-streams.md#summary-of-steps)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Transmission de Documents situés dans le référentiel au service Output {#passing-documents-located-in-the-repository-to-the-output-service}
 
 Le service Output génère un formulaire PDF non interactif basé sur une conception de formulaire généralement enregistrée dans un fichier XDP et créée dans Designer. Vous pouvez transmettre un `com.adobe.idp.Document` objet contenant la conception de formulaire au service Output. Le service Output effectue ensuite le rendu de la conception de formulaire située dans l’ `com.adobe.idp.Document` objet.
 
-L’avantage de transmettre un `com.adobe.idp.Document` objet au service Output est que d’autres opérations du service AEM Forms retournent une `com.adobe.idp.Document` instance. En d’autres termes, vous pouvez obtenir une `com.adobe.idp.Document` instance à partir d’une autre opération de service et la générer. Supposons, par exemple, qu’un fichier XDP soit stocké dans le référentiel AEM Forms, comme illustré ci-dessous.
+L’avantage de transmettre un `com.adobe.idp.Document` objet au service Output est que d’autres opérations de service AEM Forms retournent une `com.adobe.idp.Document` instance. En d’autres termes, vous pouvez obtenir une `com.adobe.idp.Document` instance à partir d’une autre opération de service et la générer. Supposons, par exemple, qu’un fichier XDP soit stocké dans le référentiel AEM Forms, comme illustré ci-dessous.
 
 ![pd_pd_formrepository](assets/pd_pd_formrepository.png)
 
-Le dossier *FormsFolder* est un emplacement défini par l’utilisateur dans le référentiel AEM Forms (cet emplacement est un exemple et n’existe pas par défaut). Dans cet exemple, une conception de formulaire nommée Loan.xdp se trouve dans ce dossier. Outre la conception de formulaire, d’autres éléments collatéraux de formulaire, tels que des images, peuvent être stockés à cet emplacement. Le chemin d’accès à une ressource située dans le référentiel AEM Forms est :
+Le dossier *FormsFolder* est un emplacement défini par l’utilisateur dans le référentiel AEM Forms (cet emplacement est un exemple et n’existe pas par défaut). Dans cet exemple, une conception de formulaire nommée Loan.xdp se trouve dans ce dossier. Outre la conception de formulaire, d’autres éléments collatéraux de formulaire, tels que des images, peuvent être stockés à cet emplacement. Le chemin d&#39;accès à une ressource située dans le référentiel AEM Forms est :
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
-Vous pouvez récupérer par programmation le fichier Loan.xdp du référentiel AEM Forms et le transmettre au service Output dans un `com.adobe.idp.Document` objet.
+Vous pouvez programmer la récupération du fichier Loan.xdp du référentiel AEM Forms et le transmettre au service Output dans un `com.adobe.idp.Document` objet.
 
 Vous pouvez créer un fichier PDF à partir d’un fichier XDP situé dans le référentiel de l’une des deux manières suivantes. Vous pouvez transmettre l’emplacement XDP par référence ou, par programmation, récupérer le fichier XDP du référentiel et le transmettre au service Output dans un fichier XDP.
 
@@ -845,7 +860,7 @@ Avant de pouvoir exécuter par programmation une opération d’API de service O
 
 **Récupération de la conception de formulaire à partir du référentiel AEM Forms**
 
-Récupérez le fichier XDP dans le référentiel AEM Forms à l’aide de l’API Repository. (Voir Ressources [](/help/forms/developing/aem-forms-repository.md#reading-resources)de lecture.)
+Récupérez le fichier XDP dans le référentiel AEM Forms Repository à l’aide de l’API Repository. (Voir Ressources [](/help/forms/developing/aem-forms-repository.md#reading-resources)de lecture.)
 
 Le fichier XDP est renvoyé au sein d’une `com.adobe.idp.Document` instance (ou d’une `BLOB` instance si vous utilisez des services Web). Vous pouvez ensuite transmettre l’ `com.adobe.idp.Document` instance au service Output.
 
@@ -859,7 +874,7 @@ Pour générer un formulaire non interactif, transmettez l’ `com.adobe.idp.Doc
 
 **Exécution d’une action avec le flux de données de formulaire**
 
-Vous pouvez enregistrer le formulaire non interactif au format PDF. Le formulaire peut être affiché dans Adobe Reader ou Acrobat.
+Vous pouvez enregistrer le formulaire non interactif au format PDF. Le formulaire peut être affiché en Adobe Reader ou en Acrobat.
 
 **Voir également**
 
@@ -879,7 +894,7 @@ Transmettez un document récupéré du référentiel à l’aide du service Outp
 
 1. Incluez des fichiers de projet.
 
-   Incluez des fichiers JAR client, tels que adobe-output-client.jar et adobe-repository-client.jar, dans le chemin de classe de votre projet Java.
+   Include client JAR files, such as adobe-output-client.jar and adobe-repository-client.jar, in your Java project’s class path.
 
 1. Créez un objet Output et un objet API Client de gestion de Document.
 
@@ -901,6 +916,7 @@ Transmettez un document récupéré du référentiel à l’aide du service Outp
    * Objet `PDFOutputOptionsSpec` contenant des options d’exécution PDF.
    * Objet `RenderOptionsSpec` contenant des options d’exécution de rendu.
    * Objet `com.adobe.idp.Document` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire.
+
    The `generatePDFOutput2` method returns an `OutputResult` object that contains the results of the operation.
 
 1. Exécutez une action avec le flux de données du formulaire.
@@ -931,7 +947,7 @@ Avant de lire *Création de Documents PDF à l’aide de fragments*, il est reco
 
 >[!NOTE]
 >
->Vous pouvez également transmettre une conception de formulaire assemblée par le service Assembler au service Forms au lieu du service Output. La principale différence entre le service Output et le service Forms réside dans le fait que le service Forms génère des documents PDF interactifs et que le service Output produit des documents PDF non interactifs. De même, le service Forms ne peut pas générer de flux de sortie basés sur l’imprimante comme ZPL.
+>Vous pouvez également transmettre une conception de formulaire assemblée par le service Assembler au service Forms au lieu du service Output. La Principale différence entre le service Output et le service Forms réside dans le fait que le service Forms génère des documents PDF interactifs et que le service Output produit des documents PDF non interactifs. De même, le service Forms ne peut pas générer de flux de sortie basés sur une imprimante comme ZPL.
 
 >[!NOTE]
 >
@@ -1004,6 +1020,7 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
    * Objet `com.adobe.idp.Document` représentant le document DDX à utiliser.
    * Objet `java.util.Map` contenant les fichiers XDP d’entrée.
    * Objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` spécifiant les options d’exécution, y compris la police par défaut et le niveau du journal des tâches.
+
    La `invokeDDX` méthode renvoie un `com.adobe.livecycle.assembler.client.AssemblerResult` objet contenant le document XDP assemblé. Pour récupérer le document XDP assemblé, effectuez les actions suivantes :
 
    * Appelle la méthode `AssemblerResult` de l’ `getDocuments` objet. Cette méthode renvoie un `java.util.Map` objet.
@@ -1021,6 +1038,7 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
    * Objet `PDFOutputOptionsSpec` contenant des options d’exécution PDF
    * Objet `RenderOptionsSpec` contenant des options d’exécution de rendu
    * Objet `com.adobe.idp.Document` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire
+
    The `generatePDFOutput2` method returns an `OutputResult` object that contains the results of the operation
 
 1. Enregistrez le document PDF au format PDF.
@@ -1068,7 +1086,7 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
 1. Créez un objet Client Output et Assembler.
 
    * Créez un `OutputServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
+   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `OutputServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -1077,6 +1095,7 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
       * Attribuez la valeur de mot de passe correspondante au `OutputServiceClient.ClientCredentials.UserName.Password`champ.
       * Affectez la valeur constante `HttpClientCredentialType.Basic` au `BasicHttpBindingSecurity.Transport.ClientCredentialType`champ.
    * Attribuez la valeur `BasicHttpSecurityMode.TransportCredentialOnly` constante au `BasicHttpBindingSecurity.Security.Mode`champ.
+
    >[!NOTE]
    >
    >Répétez ces étapes pour l’objet `AssemblerServiceClient`*. *
@@ -1088,6 +1107,7 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
    * Objet `BLOB` représentant le document DDX
    * Objet `MyMapOf_xsd_string_To_xsd_anyType` contenant les fichiers requis
    * Objet `AssemblerOptionSpec` spécifiant les options d’exécution
+
    La `invokeDDX` méthode renvoie un `AssemblerResult` objet qui contient les résultats de la tâche et les exceptions survenues. Pour obtenir le nouveau document XDP, effectuez les actions suivantes :
 
    * Accédez au `AssemblerResult` champ de l’ `documents` objet, qui est un `Map` objet contenant les documents PDF résultants.
@@ -1106,6 +1126,7 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
    * Objet `BLOB` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire.
    * Objet de sortie `BLOB` que la `generatePDFOutput2` méthode remplit. La `generatePDFOutput2` méthode remplit cet objet avec des métadonnées générées qui décrivent le document. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
    * Objet de sortie `OutputResult` contenant les résultats de l’opération. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
+
    La `generatePDFOutput2` méthode renvoie un `BLOB` objet contenant le formulaire PDF non interactif.
 
 1. Enregistrez le document PDF au format PDF.
@@ -1119,7 +1140,7 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
 
 [Résumé des étapes](creating-document-output-streams.md#summary-of-steps)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Impression dans des fichiers {#printing-to-files}
 
@@ -1163,7 +1184,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, vous devrez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. (Voir [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
+si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. (Voir [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
 
 **Création d’un objet Client de sortie**
 
@@ -1235,6 +1256,7 @@ Imprimer dans un fichier à l’aide de l’API Output (Java) :
    * Valeur de chaîne spécifiant l’emplacement du fichier XDC à utiliser (vous pouvez transmettre `null` si vous avez spécifié le fichier XDC à utiliser à l’aide de l’ `PrintedOutputOptionsSpec` objet).
    * Objet `PrintedOutputOptionsSpec` contenant les options d’exécution requises pour l’impression dans un fichier.
    * Objet `com.adobe.idp.Document` contenant la source de données XML contenant les données de formulaire.
+
    The `generatePrintedOutput` method returns an `OutputResult` object that contains the results of the operation.
 
    >[!NOTE]
@@ -1272,7 +1294,7 @@ Imprimer dans un fichier à l’aide de l’API Output (service Web) :
 1. Créez un objet Client de sortie.
 
    * Créez un `OutputServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
+   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `OutputServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -1321,9 +1343,9 @@ Imprimer dans un fichier à l’aide de l’API Output (service Web) :
 
 [Résumé des étapes](creating-document-output-streams.md#summary-of-steps)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Envoi de flux d&#39;impression à des imprimantes {#sending-print-streams-to-printers}
 
@@ -1367,7 +1389,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, vous devrez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
+si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
 **Création d’un objet Client de sortie**
 
@@ -1381,7 +1403,7 @@ Pour imprimer un document qui contient des données, vous devez référencer une
 
 Vous pouvez définir les options d’exécution lors de l’envoi d’un flux d’impression vers une imprimante, notamment les options suivantes :
 
-* **Copies**: Indique le nombre de copies à envoyer à l’imprimante. La valeur par défaut est 1.  
+* **Copies**: Indique le nombre de copies à envoyer à l’imprimante. La valeur par défaut est 1.   
 * **Agrafage**: Une option XCI est définie lorsqu’un agrafeur est utilisé. Cette option peut être spécifiée dans le modèle de configuration par l’élément agrafeur et est utilisée uniquement pour les imprimantes PS et PCL.
 * **OutputJog**: Une option XCI est définie lorsque les pages de sortie doivent être jolies (déplacées physiquement dans le bac de sortie). Cette option s’applique uniquement aux imprimantes PS et PCL.
 * **OutputBin**: Valeur XCI utilisée pour permettre au pilote d’impression de sélectionner la corbeille de sortie appropriée.
@@ -1394,7 +1416,7 @@ Vous pouvez définir les options d’exécution lors de l’envoi d’un flux d�
 
 Récupérez un flux d’impression à envoyer à une imprimante. Par exemple, vous pouvez récupérer un fichier PostScript et l’envoyer à une imprimante.
 
-Vous pouvez choisir d’envoyer un fichier PDF si votre imprimante prend en charge le format PDF. Cependant, l’envoi d’un document PDF à une imprimante pose problème car chaque fabricant d’imprimante a une mise en oeuvre différente de l’interpréteur PDF. En d’autres termes, certains imprimeurs utilisent l’interprétation Adobe PDF, mais cela dépend de l’imprimante. D’autres imprimantes disposent de leur propre interprète PDF. Par conséquent, les résultats d’impression peuvent varier.
+Vous pouvez choisir d’envoyer un fichier PDF si votre imprimante prend en charge le format PDF. Cependant, l’envoi d’un document PDF à une imprimante pose problème car chaque fabricant d’imprimante a une mise en oeuvre différente de l’interpréteur PDF. C&#39;est-à-dire que certains imprimeurs utilisent l&#39;interprétation Adobe PDF, mais cela dépend de l&#39;imprimante. D’autres imprimantes disposent de leur propre interprète PDF. Par conséquent, les résultats d’impression peuvent varier.
 
 Une autre limitation de l’envoi d’un document PDF à une imprimante est qu’il s’agit simplement d’une impression ; il ne peut pas accéder au mode recto verso, à la sélection de bacs de papier et à l&#39;agrafage, sauf par le biais de paramètres sur l&#39;imprimante.
 
@@ -1525,6 +1547,7 @@ Envoyez un flux d’impression à une imprimante réseau à l’aide de l’API 
       * Valeur de chaîne spécifiant l’emplacement du fichier XDC à utiliser.
       * Objet `PrintedOutputOptionsSpec` contenant les options d’exécution requises pour l’impression dans un fichier.
       * Objet `com.adobe.idp.Document` représentant la source de données XML contenant les données de formulaire à fusionner avec la conception de formulaire.
+
       Cette méthode renvoie un `OutputResult` objet contenant les résultats de l&#39;opération.
 
    * Créez un `com.adobe.idp.Document` objet à envoyer à l’imprimante en appelant la `OutputResult` méthode de l’ `getGeneratedDoc` objet. Cette méthode renvoie un `com.adobe.idp.Document` objet.
@@ -1538,6 +1561,7 @@ Envoyez un flux d’impression à une imprimante réseau à l’aide de l’API 
    * Valeur de `PrinterProtocol` énumération spécifiant le protocole d’imprimante à utiliser. Par exemple, pour spécifier le protocole SharedPrinter, transmettez `PrinterProtocol.SharedPrinter`.
    * Valeur de chaîne qui spécifie le nom du serveur d’impression. Par exemple, en supposant que le nom du serveur d’impression soit PrintServer1, transmettez `\\\PrintSever1`.
    * Valeur de chaîne qui spécifie le nom de l’imprimante. Par exemple, en supposant que le nom de l’imprimante soit Imprimante1, transmettez `\\\PrintSever1\Printer1`.
+
    >[!NOTE]
    >
    >La `sendToPrinter` méthode a été ajoutée à l’API AEM Forms dans la version 8.2.1.
@@ -1557,7 +1581,7 @@ Envoyez un flux d’impression à une imprimante réseau à l’aide de l’API 
 1. Créez un objet Client de sortie.
 
    * Créez un `OutputServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
+   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `OutputServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -1608,6 +1632,7 @@ Envoyez un flux d’impression à une imprimante réseau à l’aide de l’API 
    * Valeur `bool` indiquant si la valeur du paramètre précédent doit être utilisée ou non. Transmettez la valeur `true`. (Cette valeur de paramètre est requise pour l’appel de service Web uniquement.)
    * Valeur de chaîne qui spécifie le nom du serveur d’impression. Par exemple, en supposant que le nom du serveur d’impression soit PrintServer1, transmettez `\\\PrintSever1`.
    * Valeur de chaîne qui spécifie le nom de l’imprimante. Par exemple, en supposant que le nom de l’imprimante soit Printer1, transmettez `\\\PrintSever1\Printer1`.
+
    >[!NOTE]
    >
    >La `sendToPrinter` méthode a été ajoutée à l’API AEM Forms dans la version 8.2.1.
@@ -1705,7 +1730,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, vous devrez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
+si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
 **Création d’un objet Client de sortie**
 
@@ -1818,6 +1843,7 @@ Créez plusieurs fichiers PDF à l’aide de l’API Output (Java) :
    * Objet `PDFOutputOptionsSpec` contenant des options d’exécution PDF.
    * Objet `RenderOptionsSpec` contenant des options d’exécution de rendu.
    * Objet `com.adobe.idp.Document` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire.
+
    The `generatePDFOutput` method returns an `OutputResult` object that contains the results of the operation.
 
 1. Récupérer les résultats de l&#39;opération
@@ -1850,7 +1876,7 @@ Créez plusieurs fichiers PDF à l’aide de l’API Output (service Web) :
 1. Créez un objet Client de sortie.
 
    * Créez un `OutputServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
+   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `OutputServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -1881,9 +1907,9 @@ Créez plusieurs fichiers PDF à l’aide de l’API Output (service Web) :
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur.
    * Mettez en cache la conception de formulaire afin d’améliorer les performances du service Output en affectant la valeur `true` au membre `RenderOptionsSpec` de données de l’ `cacheEnabled` objet.
 
-1. Générez plusieurs fichiers PDF.
+1. Generate multiple PDF files.
 
-   Créez plusieurs fichiers PDF en appelant la `OutputServiceService` `generatePDFOutput`méthode de l’objet et en transmettant les valeurs suivantes :
+   Create multiple PDF files by invoking the `OutputServiceService` object’s `generatePDFOutput`method and passing the following values:
 
    * Valeur d&#39;énumération TransformationFormat. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
    * Valeur string spécifiant le nom de la nouvelle conception de formulaire.
@@ -1906,9 +1932,9 @@ Créez plusieurs fichiers PDF à l’aide de l’API Output (service Web) :
 
 [Résumé des étapes](creating-document-output-streams.md#summary-of-steps)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Création de règles de recherche {#creating-search-rules}
 
@@ -1947,7 +1973,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, vous devrez remplacer adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
+if AEM Forms is deployed on a supported J2EE application server that is not JBoss, then you will need to replace adobe-utilities.jar and jbossall-client.jar with JAR files that are specific to the J2EE application server on which AEM Forms is deployed.
 
 **Création d’un objet Client de sortie**
 
@@ -1955,31 +1981,31 @@ Avant de pouvoir exécuter une opération de service Output par programmation, v
 
 **Référence à une source de données XML**
 
-Un élément XML doit exister pour chaque champ de formulaire que vous souhaitez renseigner avec des données. Le nom de l’élément XML doit correspondre au nom du champ. Un élément XML est ignoré s’il ne correspond pas à un champ de formulaire ou si le nom de l’élément XML ne correspond pas au nom du champ. Il n’est pas nécessaire de correspondre à l’ordre dans lequel les éléments XML sont affichés, tant que tous les éléments XML sont spécifiés.
+Un élément XML doit exister pour chaque champ de formulaire que vous souhaitez renseigner avec des données. Le nom de l’élément XML doit correspondre au nom du champ. Un élément XML est ignoré s’il ne correspond pas à un champ de formulaire ou si le nom de l’élément XML ne correspond pas au nom du champ. It is not necessary to match the order in which the XML elements are displayed, as long as all XML elements are specified.
 
-**Définir des règles de recherche**
+**Define search rules**
 
-Pour définir des règles de recherche, vous définissez un ou plusieurs modèles de texte que les services Output recherchent dans les données d’entrée. Pour chaque modèle de texte que vous définissez, vous spécifiez une conception de formulaire correspondante utilisée si le modèle de texte est localisé. Si un modèle de texte est détecté, le service Output utilise la conception de formulaire correspondante pour générer la sortie. Un exemple de modèle de texte est *hypothécaire*.
+To define search rules, you define one or more text patterns that the Output services searches for in the input data. Pour chaque modèle de texte que vous définissez, vous spécifiez une conception de formulaire correspondante utilisée si le modèle de texte est localisé. Si un modèle de texte est détecté, le service Output utilise la conception de formulaire correspondante pour générer la sortie. Un exemple de modèle de texte est *hypothécaire*.
 
 >[!NOTE]
 >
->Si les modèles de texte ne sont pas localisés, le formulaire par défaut est utilisé. Assurez-vous que toutes les conceptions de formulaire que vous utilisez se trouvent à la racine de contenu.
+>If text patterns are not located, then the default form is used. Make sure that all form designs that you use are located in the content root.
 
 **Définition des options d’exécution PDF**
 
-Définissez les options d’exécution PDF suivantes afin que le service Output puisse créer un document PDF basé sur plusieurs conceptions de formulaire :
+Set the following PDF run-time options in order for the Output service to successfully create a PDF document based on multiple form designs:
 
-* **URI** du fichier : Indique le nom et l’emplacement du fichier PDF généré par le service Output.
-* **Règles**: Indique les règles que vous avez définies.
+* **File URI**: Specifies the name and location of the PDF file that the Output service generates.
+* **Rules**: Specifies rules that you defined.
 * **LookAHead**: Indique le nombre d’octets à utiliser depuis le début du fichier de données d’entrée pour rechercher les modèles de texte définis. La valeur par défaut est de 500 octets.
 
 **Définition des options d’exécution de rendu**
 
-Vous pouvez définir les options d’exécution de rendu lors de la création de fichiers PDF. Bien que ces options ne soient pas requises (contrairement aux options d’exécution PDF), vous pouvez effectuer des tâches telles que l’amélioration des performances du service Output. Par exemple, vous pouvez mettre en cache la conception de formulaire utilisée par le service Output afin d’améliorer les performances.
+You can set rendering run-time options while creating PDF files. Although these options are not required (unlike PDF run-time options), you can perform tasks such as improving the performance of the Output service. Par exemple, vous pouvez mettre en cache la conception de formulaire utilisée par le service Output afin d’améliorer les performances.
 
 **Générer un document PDF**
 
-Après avoir référencé une source de données XML valide et défini les options d’exécution, vous pouvez appeler le service Output, ce qui génère un document PDF. Si le service Output localise un modèle de texte spécifié dans les données d’entrée, il utilise alors la conception de formulaire correspondante. Si aucun modèle de texte n’est utilisé, le service Output utilise la conception de formulaire par défaut.
+Après avoir référencé une source de données XML valide et défini les options d’exécution, vous pouvez appeler le service Output, ce qui génère un document PDF. If the Output service locates a specified text pattern in the input data, then it uses the corresponding form design. Si aucun modèle de texte n’est utilisé, le service Output utilise la conception de formulaire par défaut.
 
 **Récupérer les résultats de l&#39;opération**
 
@@ -2016,6 +2042,7 @@ Créez des règles de recherche à l’aide de l’API Output (Java) :
    * Créez un objet `Rule` en utilisant son constructeur.
    * Définissez un modèle de texte en appelant la `Rule` `setPattern` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie un modèle de texte.
    * Définissez la conception de formulaire correspondante en faisant appel à la `Rule` `setForm` méthode de l’objet. Transmettez une valeur de chaîne qui spécifie le nom de la conception de formulaire.
+
    >[!NOTE]
    >
    >Pour chaque modèle de texte à définir, répétez les trois étapes secondaires précédentes.
@@ -2028,13 +2055,13 @@ Créez des règles de recherche à l’aide de l’API Output (Java) :
 
    * Créez un objet `PDFOutputOptionsSpec` en utilisant son constructeur.
    * Spécifiez le nom et l’emplacement du fichier PDF généré par le service Output en appelant la `PDFOutputOptionsSpec` `setFileURI` méthode de l’objet. Transmettez une valeur de chaîne qui spécifie l’emplacement du fichier PDF. L’option URI de fichier est relative au serveur d’applications J2EE hébergeant AEM Forms, et non à l’ordinateur client.
-   * Définissez les règles que vous avez définies en appelant la `PDFOutputOptionsSpec` `setRules` méthode de l’objet. Transmettez l’ `java.util.List` objet qui contient les `Rule` objets.
-   * Définissez le nombre d’octets à analyser pour les modèles de texte définis en appelant la `PDFOutputOptionsSpec` méthode de l’ `setLookAhead` objet. Transmettez une valeur entière qui représente le nombre d’octets.
+   * Définissez les règles que vous avez définies en appelant la `PDFOutputOptionsSpec` `setRules` méthode de l’objet. Pass the `java.util.List` object that contains the `Rule` objects.
+   * Définissez le nombre d’octets à analyser pour les modèles de texte définis en appelant la `PDFOutputOptionsSpec` méthode de l’ `setLookAhead` objet. Pass an integer value that represents the numbers of bytes.
 
 1. Définissez les options d’exécution du rendu.
 
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur.
-   * Mettez en cache la conception de formulaire afin d’améliorer les performances du service Output en appelant l’objet `RenderOptionsSpec` et en `setCacheEnabled` `true`le transmettant.
+   * Cache the form design in order to improve the performance of the Output service by invoking the `RenderOptionsSpec` object’s `setCacheEnabled` and passing `true`.
 
 1. Générer un document PDF.
 
@@ -2046,6 +2073,7 @@ Créez des règles de recherche à l’aide de l’API Output (Java) :
    * Objet `PDFOutputOptionsSpec` contenant des options d’exécution PDF.
    * Objet `RenderOptionsSpec` contenant des options d’exécution de rendu.
    * Objet `com.adobe.idp.Document` contenant les données de formulaire recherchées par le service Output pour les modèles de texte définis.
+
    The `generatePDFOutput` method returns an `OutputResult` object that contains the results of the operation.
 
 1. Récupérez les résultats de l&#39;opération.
@@ -2081,7 +2109,7 @@ Créez des règles de recherche à l’aide de l’API Output (service Web) :
 1. Créez un objet Client de sortie.
 
    * Créez un `OutputServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
+   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `OutputServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -2102,14 +2130,15 @@ Créez des règles de recherche à l’aide de l’API Output (service Web) :
 1. Définissez des règles de recherche.
 
    * Créez un objet `Rule` en utilisant son constructeur.
-   * Définissez un modèle de texte en attribuant une valeur de chaîne qui spécifie un modèle de texte au membre `Rule` de données de l’ `pattern` objet.
+   * Define a text pattern by assigning a string value that specifies a text pattern to the `Rule` object’s `pattern` data member.
    * Définissez la conception de formulaire correspondante en attribuant une valeur de chaîne qui spécifie la conception de formulaire au membre `Rule` de données de l’ `form` objet.
+
    >[!NOTE]
    >
    >Pour chaque modèle de texte à définir, répétez les trois étapes secondaires précédentes.
 
-   * Créez un `MyArrayOf_xsd_anyType` objet qui stocke les règles.
-   * Affectez chaque `Rule` objet à un élément du `MyArrayOf_xsd_anyType` tableau. Appelez la méthode `MyArrayOf_xsd_anyType` de l’ `Add` objet pour chaque `Rule` objet.
+   * Create a `MyArrayOf_xsd_anyType` object that stores the rules.
+   * Assign each `Rule` object to an element of the `MyArrayOf_xsd_anyType` array. Invoke the `MyArrayOf_xsd_anyType` object’s `Add` method for each `Rule` object.
 
 
 1. Définition des options d’exécution PDF
@@ -2124,13 +2153,14 @@ Créez des règles de recherche à l’aide de l’API Output (service Web) :
 
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur.
    * Mettez en cache la conception de formulaire afin d’améliorer les performances du service Output en affectant la valeur `true` au membre `RenderOptionsSpec` de données de l’ `cacheEnabled` objet.
-   >[!NOTE]
-   >
-   >Vous ne pouvez pas définir la version du document PDF en utilisant le `RenderOptionsSpec` `pdfVersion` membre de l’objet si le document d’entrée est un formulaire Acrobat. Le document PDF de sortie conserve la version PDF du formulaire Acrobat. De même, vous ne pouvez pas définir l’option PDF balisé à l’aide de la `RenderOptionsSpec` `taggedPDF` méthode de l’objet si le document d’entrée est un formulaire Acrobat.
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas définir l’option PDF linéarisé en utilisant le `RenderOptionsSpec` `linearizedPDF` membre de l’objet si le document PDF d’entrée est certifié ou signé numériquement. Pour plus d’informations, voir Signature [numérique de Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)PDF.
+   >Vous ne pouvez pas définir la version du document PDF à l’aide du `RenderOptionsSpec` `pdfVersion` membre de l’objet si le document d’entrée est un formulaire Acrobat. The output PDF document retains the PDF version of the Acrobat form. De même, vous ne pouvez pas définir l’option PDF balisé à l’aide de la `RenderOptionsSpec` `taggedPDF` méthode de l’objet si le document d’entrée est un formulaire Acrobat.
+
+   >[!NOTE]
+   >
+   >Vous ne pouvez pas définir l’option PDF linéarisé en utilisant le `RenderOptionsSpec` `linearizedPDF` membre de l’objet si le document PDF d’entrée est certifié ou signé numériquement. For information, see [Digitally Signing PDF Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).
 
 1. Générer un document PDF
 
@@ -2145,9 +2175,10 @@ Créez des règles de recherche à l’aide de l’API Output (service Web) :
    * Objet `BLOB` renseigné par la `generatePDFOutput` méthode. La `generatePDFOutput` méthode remplit cet objet avec des métadonnées générées qui décrivent le document. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
    * Objet `BLOB` renseigné par la `generatePDFOutput` méthode. La `generatePDFOutput` méthode remplit cet objet avec des données de résultat. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
    * Objet `OutputResult` contenant les résultats de l’opération. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
+
    >[!NOTE]
    >
-   >Lorsque vous générez un document PDF en appelant la `generatePDFOutput` méthode, sachez que vous ne pouvez pas fusionner des données avec un formulaire PDF XFA signé, certifié ou contenant des droits d’utilisation. Pour plus d’informations sur les droits d’utilisation, voir [Application de droits d’utilisation à des Documents](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)PDF.
+   >When generating a PDF document by invoking the `generatePDFOutput` method, be aware that you cannot merge data with an XFA PDF form that is signed, certified, or contains usage rights. For information about usage rights, see [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
 
 1. Récupérer les résultats de l&#39;opération
 
@@ -2160,18 +2191,18 @@ Créez des règles de recherche à l’aide de l’API Output (service Web) :
 
 [Résumé des étapes](creating-document-output-streams.md#summary-of-steps)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Aplatissement des Documents PDF {#flattening-pdf-documents}
+## Flattening PDF Documents {#flattening-pdf-documents}
 
-Vous pouvez utiliser le service Output pour transformer un document PDF interactif en PDF non interactif. Un document PDF interactif permet aux utilisateurs de saisir ou de modifier des données contenues dans les champs du document PDF. The process of transforming an interactive PDF document to a non-interactive PDF document is called *flattening*. Lorsqu’un document PDF est aplati, un utilisateur ne peut pas modifier les données des champs du document. S’assurer que les données ne peuvent être modifiées est l’une des raisons de l’aplatissement d’un document PDF.
+You can use the Output service to transform an interactive PDF document to a non-interactive PDF. Un document PDF interactif permet aux utilisateurs de saisir ou de modifier des données contenues dans les champs du document PDF. The process of transforming an interactive PDF document to a non-interactive PDF document is called *flattening*. When a PDF document is flattened, a user cannot modify the data in the document fields. S’assurer que les données ne peuvent être modifiées est l’une des raisons de l’aplatissement d’un document PDF.
 
-Vous pouvez aplatir les types de documents PDF suivants :
+You can flatten the following types of PDF documents:
 
-* documents PDF XFA interactifs
-* Acrobat Forms
+* Interactive XFA PDF documents
+* Acrobat
 
 Toute tentative d’aplatissement d’un PDF non interactif document PDF entraîne une exception.
 
@@ -2201,15 +2232,15 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, vous devrez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Création d’un objet Client de sortie**
 
 Avant de pouvoir exécuter une opération de service Output par programmation, vous devez créer un objet client de service Output. Si vous utilisez l’API Java, créez un `OutputClient` objet. Si vous utilisez l’API du service Web Output, créez un `OutputServiceService` objet.
 
-**Récupération d’un document PDF interactif**
+**Retrieve an interactive PDF document**
 
-Récupérez un document PDF interactif que vous souhaitez transformer en document PDF non interactif. Toute tentative de transformation d’un document PDF non interactif entraîne une exception.
+Retrieve an interactive PDF document that you want to transform to a non-interactive PDF document. Attempting to transform a non-interactive PDF document, causes an exception.
 
 **Transformation du document PDF**
 
@@ -2221,7 +2252,7 @@ Vous pouvez enregistrer le document PDF non interactif au format PDF.
 
 **Voir également**
 
-[Aplatissement d’un document PDF à l’aide de l’API Java](creating-document-output-streams.md#flatten-a-pdf-document-using-the-java-api)
+[Flatten a PDF document using the Java API](creating-document-output-streams.md#flatten-a-pdf-document-using-the-java-api)
 
 [Aplatissement d’un document PDF à l’aide de l’API du service Web](creating-document-output-streams.md#flatten-a-pdf-document-using-the-web-service-api)
 
@@ -2231,9 +2262,9 @@ Vous pouvez enregistrer le document PDF non interactif au format PDF.
 
 [Débuts rapides de l’API Output Service](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Aplatissement d’un document PDF à l’aide de l’API Java {#flatten-a-pdf-document-using-the-java-api}
+### Flatten a PDF document using the Java API {#flatten-a-pdf-document-using-the-java-api}
 
-Aplatissement d’un document PDF interactif en document PDF non interactif à l’aide de l’API Output (Java) :
+Flatten an interactive PDF document to a non-interactive PDF document by using the Output API (Java):
 
 1. Incluez des fichiers de projet.
 
@@ -2251,13 +2282,14 @@ Aplatissement d’un document PDF interactif en document PDF non interactif à l
 
 1. Transformation du document PDF.
 
-   Transformez le document PDF interactif en document PDF non interactif en appelant la `OutputServiceService` `transformPDF` méthode de l’objet et en transmettant les valeurs suivantes :
+   Transform the interactive PDF document to a non-interactive PDF document by invoking the `OutputServiceService` object’s `transformPDF` method and passing the following values:
 
-   * Objet `com.adobe.idp.Document` contenant le document PDF interactif.
-   * Valeur `TransformationFormat` enum. Pour générer un document PDF non interactif, spécifiez `TransformationFormat.PDF`.
+   * The `com.adobe.idp.Document` object that contains the interactive PDF document.
+   * A `TransformationFormat` enum value. To generate a non-interactive PDF document, specify `TransformationFormat.PDF`.
    * A `PDFARevisionNumber` enum value that specifies the revision number. Ce paramètre étant destiné à un document PDF/A, vous pouvez spécifier `null`.
    * Valeur de chaîne qui représente le numéro de modification et l’année, séparée par un deux-points. Ce paramètre étant destiné à un document PDF/A, vous pouvez spécifier `null`.
-   * Valeur `PDFAConformance` d’énumération représentant le niveau de conformité PDF/A. Ce paramètre étant destiné à un document PDF/A, vous pouvez spécifier `null`.
+   * A `PDFAConformance` enum value that represents the PDF/A conformance level. Ce paramètre étant destiné à un document PDF/A, vous pouvez spécifier `null`.
+
    La `transformPDF` méthode renvoie un `com.adobe.idp.Document` objet contenant un document PDF non interactif.
 
 1. Enregistrez le document PDF non interactif au format PDF.
@@ -2292,7 +2324,7 @@ Aplatissement d’un document PDF interactif en document PDF non interactif à l
 1. Créez un objet Client de sortie.
 
    * Créez un `OutputServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
+   * Créez un `OutputServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `OutputServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -2321,6 +2353,7 @@ Aplatissement d’un document PDF interactif en document PDF non interactif à l
    * Valeur de chaîne qui représente le numéro de modification et l’année, séparée par un deux-points. Ce paramètre étant destiné à un document PDF/A, vous pouvez spécifier `null`.
    * Valeur `PDFAConformance` d’énumération représentant le niveau de conformité PDF/A.
    * Valeur booléenne qui spécifie si la valeur `PDFAConformance` enum est utilisée. Ce paramètre étant destiné à un document PDF/A, vous pouvez spécifier `false`.
+
    La `transformPDF` méthode renvoie un `BLOB` objet contenant un document PDF non interactif.
 
 1. Enregistrez le document PDF non interactif au format PDF.
@@ -2334,6 +2367,6 @@ Aplatissement d’un document PDF interactif en document PDF non interactif à l
 
 [Résumé des étapes](creating-document-output-streams.md#summary-of-steps)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
