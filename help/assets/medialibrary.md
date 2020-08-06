@@ -1,9 +1,12 @@
 ---
-title: Comparaison des fonctionnalités disponibles dans les ressources AEM et la bibliothèque de médias AEM
-description: Questions fréquentes sur les ressources AEM et la bibliothèque de médias AEM, y compris les différences.
+title: Comparer les fonctionnalités disponibles dans l’AEM Assets et la bibliothèque de médias AEM
+description: Questions fréquentes sur AEM Assets et AEM Media Library, y compris les différences.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
+workflow-type: tm+mt
+source-wordcount: '551'
+ht-degree: 82%
 
 ---
 
@@ -28,7 +31,7 @@ Les fonctionnalités uniques disponibles uniquement pour les clients AEM Assets
 
 1. la possibilité d’extraire et de modifier des métadonnées autres que le titre, les balises et la description.
 1. L’administrateur d’AEM Assets, accessible via l’écran de bienvenue en cliquant sur le deuxième bouton à côté de `siteadmin`.
-1. Toutes les étapes du flux de travail liées à la gestion des ressources numériques, à savoir l’assimilation des ressources AEM, la suppression des ressources AEM, la gestion des sous-ressources AEM Assets, les métadonnées AEM Assets  le.
+1. Toutes les étapes de flux de travail liées à la gestion des ressources numériques, à savoir l’assimilation AEM ressources, la suppression de AEM Assets, la gestion des sous-ressources AEM Assets, l’extraction des métadonnées AEM Assets.
 1. libraries including `dam` im package space.
 
 L’utilisation de ces fonctions nécessite une licence AEM Assets valide.
@@ -51,7 +54,7 @@ Le composant image fait partie de la gestion du contenu web d’AEM. La biblioth
 
 ### Comment puis-je empêcher mes utilisateurs d’utiliser AEM Assets si je ne dispose pas d’une licence AEM Assets ?{#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-Vous pouvez supprimer tous les workflows, composants, taxonomies et options d’AEM Assets, ainsi que l’administrateur AEM Assets à partir d’AEM. Cela empêche vos utilisateurs d’utiliser accidentellement les fonctionnalités AEM Assets que vous n’avez pas sous licence.
+Vous pouvez supprimer tous les workflows, composants, taxonomies et options d’AEM Assets, ainsi que l’administrateur AEM Assets à partir d’AEM. Cela évite aux utilisateurs d’utiliser accidentellement des fonctionnalités AEM Assets que vous n’aviez pas sous licence.
 
 ### Je souhaite ajouter des images à une page et recadrer ou redimensionner ces images. Ai-je besoin d’AEM Assets ?   {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
@@ -59,5 +62,5 @@ Pour ce cas d’utilisation, il n’est pas nécessaire d’acheter AEM Assets.
 
 >[!MORELIKETHIS]
 >
->* [détaillée des différences de fonctionnalités](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+>* [liste détaillée des différences de fonction](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
 
