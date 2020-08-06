@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 67%
 
 ---
 
@@ -45,12 +48,15 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
 
 1. Dans les deux cas, saisissez
 
-   * **Titre**(*Obligatoire*) Titre d’affichage de la balise. Tout caractère peut être saisi,
+   * **Titre**
+(
+*Obligatoire*) Titre d’affichage de la balise. Bien que n&#39;importe quel caractère puisse être saisi,
 
       il est recommandé de ne pas utiliser ces caractères spéciaux :
 
-      * `colon (:)` - délimiteur d’espace de noms
+      * `colon (:)` - Délimiteur d&#39;espace de nommage
       * `forward slash (/)` - délimiteur de sous-balises
+
       Si vous saisissez ces caractères, ils ne s’affichent pas.
 
    * **Nom**
@@ -88,7 +94,7 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
 
 L’option **Liste** ouvre une nouvelle fenêtre qui présente les chemins d’accès de toutes les pages utilisant la balise mise en surbrillance :
 
-![list_show_wheretagsarerefertered](assets/list_showing_wheretagsarereferenced.png)
+![liste_show_wheretagsarereferenced](assets/list_showing_wheretagsarereferenced.png)
 
 ## Déplacement des balises {#moving-tags}
 
