@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 84%
 
 ---
 
@@ -30,7 +33,7 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 ## Réalisation d’une vérification de cohérence {#perform-a-consistency-check}
 
-Pour vérifier la cohérence, accédez à la page d’administration du JMX Mbean** com.adobe.granite (Repository)**. Depuis l’écran principal d’AEM, accédez à :
+Pour vérifier la cohérence, accédez à la page d’administration de JMX Mbean** com.adobe.granite (Repository)**. Depuis l’écran principal d’AEM, accédez à :
 
 **Outils > Console Web > Main (dans la barre de menus) > JMX > com.adobe.granite (Repository)**
 
