@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: ead74e39-3b07-488e-aeb1-fcb4aa6ff200
 translation-type: tm+mt
 source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 95%
 
 ---
 
@@ -83,7 +86,7 @@ L’état de la recommandations d’optimisation pour les moteurs de recherche i
 
 ![chlimage_1-253](assets/chlimage_1-253.png)
 
-Une fois créée, la tâche apparaît dans la liste Tâches de l’utilisateur. Pour plus d’informations sur les tâches, voir [Utilisation des tâches](/help/sites-authoring/task-content.md).
+Une fois créée, la tâche apparaît dans la liste Tâches de l’utilisateur. Pour plus d’informations sur les tâches, voir [Utilisation de Tâches](/help/sites-authoring/task-content.md).
 
 Utilisez la procédure suivante afin de créer une tâche pour une recommandation d’optimisation pour les moteurs de recherche.
 
