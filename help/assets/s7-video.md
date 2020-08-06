@@ -1,8 +1,8 @@
 ---
 title: Vidéo
 seo-title: Vidéo
-description: Découvrez la gestion centralisée des ressources vidéo AEM Assets, où vous pouvez télécharger des vidéos pour le codage automatique vers Dynamic Media Classic et accéder aux vidéos Dynamic Media Classic directement à partir d’AEM Assets. L’intégration vidéo de Dynamic Media Classic étend la portée de la vidéo optimisée à tous les écrans.
-seo-description: Découvrez la gestion centralisée des ressources vidéo AEM Assets, où vous pouvez télécharger des vidéos pour le codage automatique vers Dynamic Media Classic et accéder aux vidéos Dynamic Media Classic directement à partir d’AEM Assets. L’intégration vidéo de Dynamic Media Classic étend la portée de la vidéo optimisée à tous les écrans.
+description: Découvrez l’AEM Assets de gestion centralisée des ressources vidéo dans laquelle vous pouvez télécharger des vidéos pour le codage automatique vers Dynamic Media Classic et accéder directement aux vidéos de Dynamic Media Classic depuis AEM Assets. L’intégration vidéo de Dynamic Media Classic étend la portée de la vidéo optimisée à tous les écrans.
+seo-description: Découvrez l’AEM Assets de gestion centralisée des ressources vidéo dans laquelle vous pouvez télécharger des vidéos pour le codage automatique vers Dynamic Media Classic et accéder directement aux vidéos de Dynamic Media Classic depuis AEM Assets. L’intégration vidéo de Dynamic Media Classic étend la portée de la vidéo optimisée à tous les écrans.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '1670'
+ht-degree: 62%
 
 ---
 
 
 # Vidéo {#video}
 
-Ressources permet une gestion centralisée des fichiers vidéo dans laquelle vous pouvez télécharger des vidéos directement vers Ressources pour le codage automatique vers Dynamic Media Classic (Scene7) et accéder aux vidéos de Dynamic Media Classic directement depuis Ressources pour la création de pages.
+Les ressources permettent une gestion centralisée des ressources vidéo, dans laquelle vous pouvez télécharger directement des vidéos vers les ressources pour un codage automatique vers Dynamic Media Classic (Scene7) et accéder aux vidéos de Dynamic Media Classic directement à partir des ressources pour la création de pages.
 
 L’intégration vidéo de Dynamic Media Classic étend la portée de la vidéo optimisée à tous les écrans (détection automatique de périphériques et de bande passante).
 
@@ -31,7 +34,7 @@ Le processus de codage vidéo par défaut est basé sur l’utilisation d’une 
 * Miniatures FFMPEG
 * Codage FFMPEG
 
-Gardez à l’esprit que l’activation et la configuration de l’intégration de Dynamic Media Classic ne suppriment pas ou ne désactivent pas automatiquement ces deux étapes du processus d’assimilation de gestion des actifs numériques prêt à l’emploi. Si vous utilisez déjà le codage vidéo FFMPEG dans AEM, il est probable que FFMPEG soit installé dans vos environnements de création. Dans ce cas, une nouvelle vidéo ingérée à l’aide de DAM serait codée deux fois : une fois à partir de l’encodeur FFMPEG et une fois à partir de l’intégration de Dynamic Media Classic.
+Gardez à l’esprit que l’activation et la configuration de l’intégration de Dynamic Media Classic ne suppriment pas ou ne désactivent pas automatiquement ces deux étapes de flux de travaux du processus d’assimilation de DAM prêt à l’emploi. Si vous utilisez déjà le codage vidéo FFMPEG dans AEM, il est probable que FFMPEG soit installé dans vos environnements de création. Dans ce cas, une nouvelle vidéo ingérée à l’aide de DAM serait codée deux fois : une fois à partir de l’encodeur FFMPEG et une fois à partir de l’intégration de Dynamic Media Classic.
 
 Si le codage vidéo basé sur FFMPEG est configuré dans AEM et que FFMPEG est installé, Adobe recommande de supprimer les deux processus FFMPEG des processus d’assimilation de la gestion des actifs numériques.
 
@@ -55,7 +58,7 @@ Si la réponse est « oui » à l’une des questions ou aux deux, télécharg
 
 Si vous avez besoin d’un processus ou d’une création de versions pour les ressources, vous devez tout d’abord les télécharger dans la gestion des actifs numériques d’Adobe. Vous trouverez ci-dessous le processus recommandé :
 
-1. Téléchargez le fichier vidéo dans Adobe DAM et codez et publiez automatiquement dans Dynamic Media Classic.
+1. Téléchargez la ressource vidéo dans la gestion des actifs numériques d’Adobe et codez et publiez automatiquement la ressource vidéo dans Dynamic Media Classic.
 1. Dans AEM, accédez aux contenus vidéo dans la gestion de contenu web, dans l’onglet **[!UICONTROL Films]** de l’outil de recherche de contenu.
 1. Author with **[!UICONTROL Scene7 Video]** or **[!UICONTROL Foundation Video]** component.
 
@@ -119,7 +122,7 @@ Le tableau suivant explique les cas d’utilisation de chaque composant :
 
 >[!NOTE]
 >
->Prêt à l’emploi, le composant vidéo S7 utilise le profil vidéo universel. Vous pouvez toutefois obtenir le lecteur vidéo basé sur HTML5 à utiliser par AEM en procédant de l’une des manières suivantes dans Scene7 : copiez le code incorporé du lecteur vidéo HTML5 prêt à l’emploi et placez-le dans votre page AEM.
+>Prêt à l’emploi, le composant vidéo S7 utilise le profil vidéo universel. Vous pouvez toutefois obtenir le lecteur vidéo basé sur HTML5 pour l’utiliser par AEM en procédant de l’une des manières suivantes dans Scene7 : copiez le code incorporé du lecteur vidéo HTML5 prêt à l’emploi et placez-le dans votre page AEM.
 
 ## Composant vidéo AEM {#aem-video-component}
 
@@ -147,9 +150,9 @@ Les différents codages vidéo sont créés selon les paramètres prédéfinis d
 >
 >Les nouveaux profils vidéo et leurs modifications doivent être activés pour la publication.
 
-1. Dans AEM, appuyez sur **[!Outils UICONTROL > Console** de configuration.
+1. Dans AEM, appuyez sur **[!UICONTROL Tools > Configuration Console**.
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
-1. Créez un nouveau profil vidéo S7. **[!UICONTROL Dans le]** nouveau... , sélectionnez **[!UICONTROL Créer une page]** , puis sélectionnez le modèle Profil vidéo Scene7. Attribuez un nom à la nouvelle page de profil vidéo et cliquez sur **[!UICONTROL Créer]**.
+1. Créez un nouveau profil vidéo S7. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Attribuez un nom à la nouvelle page de profil vidéo et cliquez sur **[!UICONTROL Créer]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -177,8 +180,8 @@ The **[!UICONTROL Foundation Video]** component must know about what video profi
 >
 >Les modifications apportées à la conception requièrent l’activation de la conception afin qu’elles prennent effet lors de la publication.
 
-1. Open the **[!UICONTROL Foundation Video]** component&#39;s design dialog box and change to the **[!UICONTROL Profiles]** tab. Supprimez ensuite les profils vidéo prêts à l’emploi et ajoutez les nouveaux profils vidéo S7. L’ordre de la liste des profils dans la boîte de dialogue de conception définit l’ordre de l’élément sources vidéo lors du rendu.
-1. Pour les navigateurs qui ne prennent pas en charge HTML5, le composant vidéo permet de configurer un abandon Flash. Open the video components design dialog box and change to the **[!UICONTROL Flash]** tab. Configurez les paramètres du lecteur Flash et attribuez un profil de secours au lecteur Flash.
+1. Open the **[!UICONTROL Foundation Video]** component&#39;s design dialog box and change to the **[!UICONTROL Profiles]** tab. Supprimez ensuite les profils prêts à l’emploi et ajoutez les nouveaux profils vidéo S7. L’ordre de la liste de profil dans la boîte de dialogue de conception définit l’ordre de l’élément sources vidéo lors du rendu.
+1. Pour les navigateurs qui ne prennent pas en charge HTML5, le composant vidéo permet de configurer un Flash de secours. Open the video components design dialog box and change to the **[!UICONTROL Flash]** tab. Configurez les paramètres du lecteur de Flash et attribuez un profil de secours au lecteur Flash.
 
 #### Liste de contrôle {#checklist}
 
