@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '5252'
+ht-degree: 78%
 
 ---
 
@@ -21,7 +24,7 @@ AEM provides a selection of [standard reports](/help/sites-administering/reporti
 
 Cette structure vous permet soit d’étendre ces rapports standard, soit de développer vos propres rapports en partant de zéro. La structure de création de rapports s’intègre parfaitement dans les concepts et principes CQ5 existants. Les développeurs peuvent ainsi mettre à profit leurs connaissances actuelles de la plate-forme CQ5 pour développer des rapports.
 
-Pour les rapports standard fournis avec AEM :
+Pour les rapports standard livrés avec AEM :
 
 * Ces rapports reposent sur la structure de création de rapports :
 
@@ -52,13 +55,13 @@ Pour les rapports standard fournis avec AEM :
 * `N:<name> [<nodeType>]`
    > 
    >     
-   Décrit un noeud avec le nom `<*name*>` et le type de noeud de `<*nodeType*>`*.*
+   Décrit un noeud portant le nom `<*name*>` et le type de noeud de `<*nodeType*>`*.*
    >
    >  
 * `P:<name> [<propertyType]`
    >
    >     
-   Décrit une propriété avec le nom `<*name*>` et un type de propriété de `<*propertyType*>`.
+   Décrit une propriété avec le nom de `<*name*>` et un type de propriété de `<*propertyType*>`.
    >
    >  
 * `P:<name> = <value>`
@@ -68,12 +71,13 @@ Pour les rapports standard fournis avec AEM :
    >
    >
 * La mise en retrait indique les dépendances hiérarchiques entre les nœuds.
->* Éléments séparés par| indique une liste d&#39;éléments possibles; par exemple, types ou noms :
+>* Éléments séparés par | indique une liste d&#39;éléments possibles ; par exemple, types ou noms :
+
 >
 >  
 Par exemple, `String|String[]` signifie que la propriété peut être Chaîne ou Chaîne[].
 >
->* `[]` représente un tableau ; comme Chaîne[] ou tableau de noeuds comme dans la Définition [de](#query-definition)requête.
+>* `[]` représente un tableau ; comme Chaîne[] ou tableau de noeuds comme dans la Définition [de](#query-definition)Requête.
 >
 >
 Sauf indication contraire, les types par défaut sont les suivants :
@@ -127,7 +131,7 @@ Chaque colonne est une instance du [composant `columnbase`](#column-base-compone
 La requête :
 
 * est définie comme faisant partie du composant [`reportbase`](#report-base) ;
-* est basée sur [CQ QueryBuilder](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html) ;
+* est basée sur [CQ QueryBuilder](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html) ;
 * récupère les données utilisées comme base du rapport. Chaque ligne du jeu de résultats (tableau) est associée à un nœud, tel qu’il est renvoyé par la requête. Des informations spécifiques pour les [différentes colonnes](#column-base-component) sont ensuite extraites de ce jeu de données.
 
 * se compose généralement des éléments suivants :
@@ -209,7 +213,7 @@ Emplacement des étapes détaillées et des éléments :
 Voici ce dont vous avez besoin pour créer et configurer un rapport :
 
 * Un [emplacement pour la définition des composants de votre rapport](#location-of-report-components)
-* un [ composant `reportbase`](#report-base-component)
+* un [`reportbase` composant](#report-base-component)
 * Un ou plusieurs [composants `columnbase`](#column-base-component)
 * Un [composant de page](#page-component)
 * Une [conception de rapports](#report-design)
@@ -332,7 +336,7 @@ N:charting
 
 * `settings`
 
-   Contient les définitions des graphiques actifs.
+   Contient les définitions des principaux graphiques.
 
    * `active`
 
@@ -340,7 +344,7 @@ N:charting
 
       * `id`
 
-         Identification des graphiques actifs. This must match the id of one of the chart `definitions`.
+         Identification des principaux graphiques. This must match the id of one of the chart `definitions`.
 
 * `definitions`
 
@@ -357,7 +361,7 @@ N:charting
       Type de graphique disponible. Faites un choix parmi 
 
       * `pie`
-Graphique circulaire. Généré uniquement à partir des données actuelles.
+Diagramme circulaire. Généré uniquement à partir des données actuelles.
 
       * `lineseries`
 Série de lignes (points reliés représentant les instantanés). Graphique généré uniquement à partir des données historiques.
@@ -365,28 +369,28 @@ Série de lignes (points reliés représentant les instantanés). Graphique gén
 
       * for the chart type `pie`:
 
-         * `maxRadius` ( `Double/Long`)
+         * `maxRadius` (`Double/Long`)
 
             Rayon maximum autorisé pour le graphique en secteurs et donc la taille maximale autorisée pour le graphique (sans légende). Ignored if `fixedRadius` is defined.
 
-         * `minRadius` ( `Double/Long`)
+         * `minRadius` (`Double/Long`)
 
             Rayon minimal autorisé pour le graphique circulaire. Ignored if `fixedRadius` is defined.
 
          * `fixedRadius` ( `Double/Long`)Définit un rayon fixe pour le graphique circulaire.
       * for the chart type [`lineseries`](/help/sites-administering/reporting.md#display-limits):
 
-         * `totals` ( `Boolean`)
+         * `totals` (`Boolean`)
 
             True if an additional line showing the **Total** should be shown.
 default: `false`
 
-         * `series` ( `Long`)
+         * `series` (`Long`)
 
             Nombre de lignes/séries à afficher.
 Valeur par défaut : `9` (il s’agit également du maximum autorisé)
 
-         * `hoverLimit` ( `Long`)
+         * `hoverLimit` (`Long`)
 
             Nombre maximum d’instantanés agrégés (points affichés sur chaque ligne horizontale, représentant des valeurs distinctes) pour les fenêtres contextuelles qui doivent être affichées ; c’est-à-dire lorsque l’utilisateur fait passer le pointeur de la souris sur une valeur distincte ou un libellé correspondant dans la légende du graphique.
 
@@ -447,13 +451,13 @@ Plusieurs composants préconfigurés sont fournis ; ils peuvent être référen
 
    `/libs/cq/reporting/components/commons/title`
 
-   Champ de texte pour définir le titre du rapport.
+   Champ de texte permettant de définir le titre du rapport.
 
 * **`description`**
 
    `/libs/cq/reporting/components/commons/description`
 
-   Zone de texte pour définir la description du rapport.
+   Zone de texte permettant de définir la description du rapport.
 
 * **`processing`**
 
@@ -547,7 +551,7 @@ N:definitions
 
    `property = [ "jcr:lastModified", "jcr:created" ]`
 
-   L’extracteur de valeur correspondant (qui est ici en charge) :
+   L&#39;extracteur de valeur correspondant (qui est ici sous contrôle) :
 
    * Vérifier si une propriété jcr:lastModified est disponible et, si tel est le cas, l’utiliser.
    * Si aucune propriété jcr:lastModified n’est disponible, le contenu de jcr:created est utilisé à la place.
@@ -627,7 +631,7 @@ N:definitions
 
    * `page`
 
-       Résout une valeur de chemin sur le chemin d’accès de la page appropriée ; plus précisément, sur le nœud `jcr:content` correspondant. Par exemple, `/content/.../page/jcr:content/par/xyz` est résolu à `/content/.../page/jcr:content`.
+       Résout une valeur de chemin sur le chemin d’accès de la page appropriée ; plus précisément, sur le nœud `jcr:content` correspondant. For example, `/content/.../page/jcr:content/par/xyz` is resolved to `/content/.../page/jcr:content`.
 
    * `path`
 
@@ -669,11 +673,11 @@ N:definitions
 
       * `path` (mandatory)
 
-         Définit le chemin à ajouter.
+         Définit le chemin à ajouter en préfixe.
 
       * `propertyName` (mandatory)
 
-         Définit la propriété sur le chemin résolu où se trouve la valeur réelle.
+         Définit la propriété sur le chemin d’accès résolu où se trouve la valeur réelle.
 
       * `i18n` (facultatif) type Boolean)
 
@@ -769,7 +773,7 @@ Vous pouvez spécifier l’une des options suivantes à utiliser lors du prétra
 
 * [Motifs de recherche et de remplacement](#preprocessing-find-and-replace-patterns) Lorsqu’il est trouvé, le motif spécifié (qui est défini sous la forme d’une expression régulière) est remplacé par un autre ; il peut, par exemple, être utilisé pour extraire une sous-chaîne de l’original.
 
-* [formateur de type de données](#preprocessing-data-type-formatters)
+* [Formateurs de types de données](#preprocessing-data-type-formatters)
 
    Converts a numeric value into a relative string; for example, the value ``representing a time difference of 1 hour would be resolved to a string such as `1:24PM (1 hour ago)`.
 
@@ -834,7 +838,7 @@ Actuellement, les formateurs de type de données disponibles sont les suivants 
 
    * `duration`
 
-      La durée est la période comprise entre deux dates définies. Par exemple, le début et la fin d’une action de processus qui a duré 1 heure, lancée le 13/02/2011 à 11h23, pour se terminer une heure plus tard, le 13/02/2011 à 12h23.
+      La durée correspond à la période comprise entre deux dates définies. Par exemple, le début et la fin d’une action de processus qui a duré 1 heure, lancée le 13/02/2011 à 11h23, pour se terminer une heure plus tard, le 13/02/2011 à 12h23.
 
       Il convertit une valeur numérique (interprétée en millisecondes) en chaîne de durée ; par exemple, `30000` est formaté comme * `30s`.*
 
@@ -925,14 +929,14 @@ N:definitions
 
    * `filterType`
 
-      Les filtres disponibles sont :
+      Les filtres disponibles sont les suivants :
 
       * `string`
 
-         Filtre basé sur une chaîne.
+         Filtre basé sur des chaînes.
    * `id`
 
-      Identifiant du filtre.
+      Identificateur de filtre.
 
    * `phase`
 
@@ -953,7 +957,7 @@ N:definitions
 
 * `aggregates`
 
-   Définitions agrégées.
+   Définitions des Agrégats.
 
    * `text`
 
@@ -961,7 +965,7 @@ N:definitions
 
    * `type`
 
-      Type agrégé. Les agrégats disponibles sont les suivants :
+      Type d’Agrégat. Les agrégats disponibles sont les suivants :
 
       * `count`
 
@@ -1056,7 +1060,7 @@ Pour rendre une colonne générique, procédez comme suit :
 
    Voir `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
 
-* Utilisez les méthodologies AEM standard pour définir des propriétés de colonne (supplémentaires).
+* Utilisez des méthodologies d&#39;AEM standard pour définir des propriétés de colonne (supplémentaires).
 
    Notez que pour les propriétés qui sont définies à la fois sur les instances de composant et de colonne, la valeur définie sur la colonne est prioritaire.
 
@@ -1069,6 +1073,7 @@ Pour rendre une colonne générique, procédez comme suit :
    * `definitions/data/resolver` et `definitions/data/resolverConfig` (mais pas `definitions/data/preprocessing` ou `.../clientFilter`) - le résolveur et la configuration
    * `definitions/queryBuilder` - la configuration du créateur de requêtes
    * `defaults/aggregate` - l&#39;agrégat par défaut
+
    In the case of a new instance of the generic column on the **User Report** the properties defined with the dialog are persisted under:
 
    `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
@@ -1085,7 +1090,7 @@ L’emplacement de vos rapports peut varier selon l’endroit où vous avez plac
 
 * `/etc/designs/reports/<yourReport>` convient si le rapport est situé sous `/apps/cq/reporting`
 
-* `/etc/designs/<yourProject>/reports/<*yourReport*>` pour les rapports utilisant le `/apps/<yourProject>/reports` modèle
+* `/etc/designs/<yourProject>/reports/<*yourReport*>` pour les rapports utilisant le modèle `/apps/<yourProject>/reports`
 
 Les propriétés de conception requises sont enregistrées sur `jcr:content/reportpage/report/columns` (par exemple, `/etc/designs/reports/<reportName>/jcr:content/reportpage/report/columns`) :
 
@@ -1224,7 +1229,7 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
                N:osgireport [sling:Folder]
    ```
 
-1. Définissez votre base de rapport. Par exemple `osgireport[cq:Component]` sous `/apps/cq/reporting/components/osgireport`.
+1. Définissez votre base de rapport. Par exemple, `osgireport[cq:Component]` sous `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1276,7 +1281,7 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
    * displays both `pie` and `lineseries` charts
    * fournit une boîte de dialogue permettant à l’utilisateur de configurer le rapport.
 
-1. Définissez votre premier composant de colonne (columnbase). Par exemple `bundlecol[cq:Component]` sous `/apps/cq/reporting/components/osgireport`.
+1. Définissez votre premier composant de colonne (columnbase). Par exemple, `bundlecol[cq:Component]` sous `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1312,11 +1317,12 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
    * porte le titre `Bundle` (titre de colonne dans le tableau) ;
    * se trouve dans le groupe sidekick `OSGi Report`
    * est actualisé lors d’événements spécifiés.
+
    >[!NOTE]
    >
    >In this example there are no definitions of `N:data` and `P:clientFilter`. Cela est dû au fait que la valeur reçue du serveur est renvoyée sur une base 1:1 ; ce qui est le comportement par défaut.
    >
-   >Il s’agit des mêmes définitions :
+   >Il s’agit de la même définition :
    >
    >
    ```
@@ -1325,7 +1331,7 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
    >```
    >Lorsque la fonction renvoie simplement la valeur qu’elle reçoit.
 
-1. Définissez votre conception de rapport. Par exemple `osgireport[cq:Page]` sous `/etc/designs/reports`.
+1. Définissez votre conception de rapport. Par exemple, `osgireport[cq:Page]` sous `/etc/designs/reports`.
 
    ```xml
    N:osgireport [cq:Page]
@@ -1350,7 +1356,7 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
                N:osgireport [cq:Template]
    ```
 
-1. Définissez votre modèle de rapport. Par exemple `osgireport[cq:Template]` sous `/apps/cq/reporting/templates`.
+1. Définissez votre modèle de rapport. Par exemple, `osgireport[cq:Template]` sous `/apps/cq/reporting/templates`.
 
    ```xml
    N:osgireport [cq:Template]
@@ -1439,6 +1445,7 @@ These can be viewed using the Configuration menu of the web console (available f
 >
 >* un seul rapport pour deux utilisateurs avec des paramètres linguistiques différents ou
 >* un seul utilisateur et deux rapports.
+
 >
 
 
