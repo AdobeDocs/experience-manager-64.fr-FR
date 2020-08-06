@@ -1,8 +1,8 @@
 ---
 title: Utilisation du graphique des réseaux sociaux
 seo-title: Utilisation du graphique des réseaux sociaux
-description: Ajout d’un composant Suivant à une page
-seo-description: Ajout d’un composant Suivant à une page
+description: Ajouter un composant Suivant à une page
+seo-description: Ajouter un composant Suivant à une page
 uuid: 8be6334b-e6c9-40bc-90a8-750b98419470
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0ce57ab1-e4c6-4c38-963d-556eef8757f2
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 26%
 
 ---
 
@@ -27,7 +30,7 @@ The `Following`component simply lists the members that are either following the 
 
 ## Ajout d’un composant Abonnement à une page {#adding-following-to-a-page}
 
-Si vous souhaitez ajouter un `Following`composant à une page en mode création, localisez le composant `Communities / Following` et faites-le glisser sur une page sur laquelle le graphique social doit apparaître.
+Si vous souhaitez ajouter un `Following`composant à une page en mode création, recherchez le composant `Communities / Following` et faites-le glisser sur une page sur laquelle le graphique social doit apparaître.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
