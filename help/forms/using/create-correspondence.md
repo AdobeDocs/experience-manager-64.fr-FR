@@ -283,7 +283,7 @@ Il existe deux types d’instances de lettre pouvant être enregistrées : inst
 
 Ces instances peuvent être enregistrées uniquement lorsque la lettre est en cours de consultation sur l’instance Publication. Par défaut, l’enregistrement sur les instances est désactivé. Pour activer l’enregistrement des instances de lettre, effectuez les étapes suivantes.
 
-1. Dans AEM, ouvrez la configuration de la console Web d’Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : https://&lt;serveur>:&lt;port>/&lt;chemin_contexte>/system/console/configMgr
+1. Dans AEM, ouvrez Configuration de la console Web Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : https://&lt;serveur>:&lt;port>/&lt;chemin_contexte>/system/console/configMgr
 1. Locate **[!UICONTROL Correspondence Management Configurations]** and click it.
 1. Cochez la configuration **[!UICONTROL Gestion des instances de lettre sur Publication]**, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -299,13 +299,13 @@ Cette option est destinée aux personnes ayant des inquiétudes quant à l’enr
 
 #### Activer l’enregistrement à distance {#enable-remote-save}
 
-1. Dans AEM, ouvrez la configuration de la console Web d’Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Dans AEM, ouvrez Configuration de la console Web Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
 1. Search for **[!UICONTROL Correspondence Management Configurations]** and click it.
 1. Locate the **[!UICONTROL Remote Save]** configuration, check it, and the click **[!UICONTROL Save]**.
 
 #### Spécifiez les paramètres d’auteur de traitement {#specify-processing-author-settings}
 
-1. Dans AEM, ouvrez la configuration de la console Web d’Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Dans AEM, ouvrez Configuration de la console Web Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
    ![Configuration de la console Web d’Adobe Experience Manager](assets/2configmanager.png)
 
