@@ -8,6 +8,9 @@ contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '4561'
+ht-degree: 88%
 
 ---
 
@@ -38,8 +41,8 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Gestionnaire de dépassement de délai :** sélectionnez le script à exécuter lorsque l’étape Affecter une tâche dépasse l’échéance. Scripts placed in the CRX-repository at [apps]/fd/dashboard/scripts/timeoutHandler are available for selection. Le chemin spécifié n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser.
 * **Sélectionner l’action et ajouter un commentaire depuis la dernière tâche dans Détails de la tâche :** sélectionnez cette option pour afficher la dernière action qui a été effectuée et le dernier commentaire reçu dans la section Détails de la tâche.
 * **Type :** sélectionnez le type de document à remplir lors du lancement du processus. Vous pouvez sélectionner un formulaire adaptatif, un formulaire adaptatif en lecture seule ou un document PDF non interactif.
-* **** Utiliser un formulaire adaptatif : Spécifiez la méthode pour localiser le formulaire adaptatif d’entrée. Vous pouvez utiliser le formulaire adaptatif disponible à un chemin absolu, envoyé en tant que charge utile au flux de travail, ou disponible à un chemin calculé à l’aide d’une variable. Vous pouvez utiliser une variable de type String pour spécifier le chemin d’accès.
-* **Chemin d’accès du formulaire adaptatif** : indiquez le chemin d’accès du formulaire adaptatif. Ce champ est disponible lorsque vous utilisez un formulaire adaptatif ou l’option de formulaire adaptatif en lecture seule dans le champ Type en association avec l’option de chemin absolu dans le champ Utiliser un formulaire adaptatif.
+* **Utiliser un formulaire adaptatif :** Spécifiez la méthode pour localiser le formulaire adaptatif d’entrée. Vous pouvez utiliser le formulaire adaptatif disponible à un chemin absolu, envoyé en tant que charge utile au flux de travail, ou disponible à un chemin calculé à l’aide d’une variable. Vous pouvez utiliser une variable de type String pour spécifier le chemin d’accès.
+* **Chemin d’accès du formulaire adaptatif** : indiquez le chemin d’accès du formulaire adaptatif. Ce champ est disponible lorsque vous utilisez un formulaire adaptatif ou un formulaire adaptatif en lecture seule dans le champ Type en association avec l’option de chemin absolu dans le champ Utiliser un formulaire adaptatif.
 * **Chemin d’accès du fichier PDF :** indiquez le chemin d’accès d’un document PDF non interactif. Le champ apparaît lorsque vous sélectionnez un document PDF non interactif dans le champ Type. Le chemin d’accès est toujours relatif à la charge. For example, [Payload_Directory]/Workflow/PDF/credit-card.pdf. Le chemin n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser. Vous devez activer l’option Document d’enregistrement ou posséder des formulaires adaptatifs basés sur un modèle de formulaire pour utiliser l’option Chemin d’accès du fichier PDF.
 * **Une fois la tâche terminée, effectuer le rendu du formulaire adaptatif en tant que** : lorsqu’une tâche est marquée comme terminée, vous pouvez effectuer le rendu du formulaire adaptatif en tant que formulaire adaptatif en lecture seule ou document PDF. Vous devez activer l’option Document d’enregistrement ou posséder des formulaires adaptatifs basés sur un modèle de formulaire pour effectuer le rendu du formulaire adaptatif en tant que Document d’enregistrement.
 * **Informations à pré-renseigner :** les champs répertoriés ci-dessous servent de données d’entrées pour la tâche :
@@ -70,7 +73,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Actions par défaut :** les actions Prêt à l’emploi, Envoyer, Enregistrer et Réinitialiser sont disponibles. Par défaut, toutes les actions par défaut sont activées.
 * **Variable d’itinéraire :** nom de la variable d’itinéraire. La variable d’itinéraire capture les actions personnalisées qu’un utilisateur sélectionne dans la boîte de réception AEM.
 * **Itinéraires :** une tâche peut se composer de plusieurs itinéraires. Lorsque cette option est sélectionnée dans la boîte de réception AEM, l’itinéraire renvoie une valeur et les branches du processus en fonction de l’itinéraire sélectionné.
-* **Titre**: Indiquez le titre de l’itinéraire. Il s’affiche dans la boîte de réception AEM.
+* **Titre**: Indiquez le titre de l&#39;itinéraire. Il s’affiche dans la boîte de réception AEM.
 * **Icône Corail** : indiquez l’attribut HTML d’une icône corail. La bibliothèque Adobe CorelUI fournit un vaste ensemble d’icônes tactiles. Vous pouvez sélectionner et utiliser une icône pour l’itinéraire. Elle s’affiche avec le titre dans la boîte de réception AEM.
 * **Autoriser la personne désignée à ajouter des commentaires** : sélectionnez cette option pour activer les commentaires pour la tâche. Une personne désignée peut ajouter des commentaires à partir de la boîte de réception AEM au moment de l’envoi de la tâche.
 * **Autoriser la personne désignée à ajouter des pièces jointes à la tâche** : sélectionnez cette option pour activer les pièces jointes pour la tâche. Une personne désignée peut ajouter des pièces jointes à partir de la boîte de réception AEM au moment de l’envoi de la tâche.
@@ -96,19 +99,19 @@ L’étape Envoyer un courrier électronique utilise le service de messagerie Da
 
 **Modèle de courrier électronique HTML** : modèle HTML pour le courrier électronique. Vous pouvez spécifier des variables dans un modèle de courrier électronique. L’étape Envoyer un courrier électronique extrait et affiche toutes les variables incluses dans un modèle pour les entrées.
 
-**** Métadonnées du modèle de courrier électronique : La valeur des variables de modèle de courrier électronique peut être une valeur spécifiée par l’utilisateur, le chemin d’accès d’un fichier sur l’auteur ou sur le serveur de publication, une image ou une propriété de métadonnées de flux de travail.
+**Métadonnées du modèle de courriel :** La valeur des variables de modèle de courrier électronique peut être une valeur spécifiée par l’utilisateur, le chemin d’accès d’un fichier sur l’auteur ou sur le serveur de publication, une image ou une propriété de métadonnées de processus.
 
 * **Littéral :** utilisez cette option lorsque vous connaissez la valeur exacte à spécifier. Par exemple, [example@example.com](mailto:example@example.com).
 
 * **Métadonnées de processus :** utilisez cette option lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de processus. Après avoir sélectionné cette option, saisissez le nom de la propriété des métadonnées dans la zone de texte vide en dessous de l’option Métadonnées de processus. Par exemple, emailAddress.
-* **** URL du fichier : Utilisez cette option pour incorporer un lien Web d’une communication interactive au courrier électronique. Après avoir sélectionné l’option, parcourez l’arborescence et choisissez la communication interactive à incorporer. Un actif peut résider sur le serveur de création ou de publication.
+* **URL du fichier :** Utilisez cette option pour incorporer un lien Web d’une communication interactive avec le courrier électronique. Après avoir sélectionné l’option, recherchez et choisissez la communication interactive à incorporer. Un actif peut résider sur le serveur de création ou de publication.
 * **Image :** utilisez cette option pour inclure une image au courrier électronique. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option d’image est disponible uniquement pour les balises d’image (&lt;img src=&quot;&amp;ast;&quot;/>) disponibles dans le modèle de courrier électronique.
 
-**** Adresse électronique de l’expéditeur / du destinataire : Sélectionnez l’option **Littéral** pour spécifier manuellement une adresse électronique ou sélectionnez l’option **Récupérer des métadonnées** du flux de travail pour récupérer l’adresse électronique à partir d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérer à partir des métadonnées de processus**.
+**Adresse électronique de l’expéditeur / du Destinataire :** Sélectionnez l’option **Littéral** pour spécifier manuellement une adresse électronique ou l’option **Récupérer des métadonnées** du flux de travail pour récupérer l’adresse électronique à partir d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérer à partir des métadonnées de processus**.
 
 **Chemin d’accès de la pièce jointe de fichier :** l’actif disponible à l’emplacement spécifié est joint au courrier électronique. Le chemin d’accès de l’actif peut être lié à la charge utile ou au chemin d’accès absolu. An example path is [Payload_Directory]/attachments/
 
-**Nom de fichier :** nom du fichier de la pièce jointe au courrier électronique. L’étape E-mail modifie le nom de fichier d’origine de la pièce jointe en le nommant de fichier spécifié. Le nom peut être spécifié manuellement ou récupéré à partir d’une propriété de métadonnées de processus. Utilisez l’option **Littéral** lorsque vous connaissez la valeur exacte à spécifier. Utilisez l’option **Récupérer à partir des métadonnées de processus** lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de processus.
+**Nom de fichier :** nom du fichier de la pièce jointe au courrier électronique. L’étape de courrier électronique modifie le nom de fichier d’origine de la pièce jointe en le remplaçant par le nom de fichier spécifié. Le nom peut être spécifié manuellement ou récupéré à partir d’une propriété de métadonnées de processus. Utilisez l’option **Littéral** lorsque vous connaissez la valeur exacte à spécifier. Utilisez l’option **Récupérer à partir des métadonnées de processus** lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de processus.
 
 ## Etape Générer un document d’enregistrement {#generate-document-of-record-step}
 
@@ -118,7 +121,7 @@ L’étape Document d’enregistrement possède les propriétés suivantes :
 
 **Utiliser un formulaire** adaptatif : Spécifiez la méthode pour localiser le formulaire adaptatif d’entrée. Vous pouvez utiliser le formulaire adaptatif disponible à un chemin absolu, envoyé en tant que charge utile au flux de travail, ou disponible à un chemin calculé à l’aide d’une variable. Vous pouvez utiliser une variable de type String pour spécifier le chemin d’accès.
 
-**Chemin d’accès du formulaire adaptatif** : indiquez le chemin d’accès du formulaire adaptatif. Ce champ est disponible lorsque vous utilisez un formulaire adaptatif ou l’option de formulaire adaptatif en lecture seule dans le champ Type en association avec l’option de chemin absolu dans le champ Utiliser un formulaire adaptatif.
+**Chemin d’accès du formulaire adaptatif** : indiquez le chemin d’accès du formulaire adaptatif. Ce champ est disponible lorsque vous utilisez un formulaire adaptatif ou un formulaire adaptatif en lecture seule dans le champ Type en association avec l’option de chemin absolu dans le champ Utiliser un formulaire adaptatif.
 
 **Chemin d’accès des données d’entrée :** chemin d’accès des données d’entrée pour le formulaire adaptatif. Vous pouvez conserver les données à un emplacement lié à une charge utile ou spécifier un chemin d’accès absolu des données. Les données d’entrée sont fusionnées avec le formulaire adaptatif pour créer un document d’enregistrement.
 
@@ -207,12 +210,12 @@ L’étape Invoquer le service de modèle de données de formulaire contient les
 
 * **JSON Dot Notation :** laissez le champ vide pour utiliser tous les objets du fichier JSON spécifié en tant qu’entrée pour les arguments de service. Pour lire un objet JSON spécifique à partir du fichier JSON spécifié en tant qu’entrée pour des arguments de service, spécifiez la notation par point pour l’objet JSON. Par exemple, si vous avez un fichier JSON identique à l’un des fichiers indiqué au début de la section, spécifiez insurance.customerDetails pour fournir tous les détails d’un client en tant qu’entrée du service.
 * **Sortie de service > Mapper et écrire les valeurs de sortie dans les métadonnées :** sélectionnez cette option pour enregistrer les valeurs de sortie en tant que propriétés du nœud de métadonnées de l’instance de processus dans le référentiel CRX. Spécifiez le nom de la propriété de métadonnées et sélectionnez l’attribut de sortie de service correspondant à mapper avec la propriété de métadonnées, par exemple, mappez la valeur numéro_de_téléphone renvoyé par le service de sortie avec la propriété numéro_de_téléphone des métadonnées du processus.
-* **** Output de service > Save output as JSON : Sélectionnez l’option permettant d’enregistrer les valeurs de sortie dans un fichier JSON.
+* **Output de service > Save output as JSON :** Sélectionnez l’option permettant d’enregistrer les valeurs de sortie dans un fichier JSON.
 * **Chemin d’accès au fichier JSON de sortie :** chemin d’accès pour enregistrer le fichier JSON de sortie. Le chemin d’accès du fichier JSON peut être relatif à la charge utile ou à un chemin d’accès absolu.
 
 ## Etape Signer le document {#sign-document-step}
 
-L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer des documents. L’étape Signature du document possède les propriétés suivantes :
+L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer des documents. L’étape du Document de signature possède les propriétés suivantes :
 
 * **Nom du contrat :** indiquez le titre du contrat. Le nom du contrat devient une partie de l’objet et du corps du courrier électronique envoyé aux signataires.
 * **Paramètre régional :** spécifiez la langue pour les options de messagerie et de vérification.
@@ -227,10 +230,10 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
 * **URL de redirection :** spécifiez une URL de redirection. Une fois le document signé, vous pouvez rediriger la personne désignée vers une URL. En général, cette URL contient un message de remerciement ou des instructions supplémentaires.
 * **Phase de processus :** un processus peut se composer de plusieurs phases. Ces phases sont affichées dans la boîte de réception AEM. Vous pouvez définir ces phases dans les propriétés du modèle (Sidekick > Page > Propriétés de la page > Phases).
 * **Sélectionner les signataires :** indiquez la méthode utilisée pour sélectionner des signataires pour le document. Vous pouvez affecter de manière dynamique le processus à un utilisateur ou à un groupe ou ajouter manuellement les informations d’un signataire.
-* **Script ou service pour sélectionner les signataires :** cette option est disponible uniquement si l’option De manière dynamique est sélectionnée dans le champ Sélectionner les signataires. Vous pouvez spécifier un ECMAScript ou un service pour choisir des signataires et des options de vérification pour un document.
+* **Script ou service pour sélectionner les signataires :** cette option est disponible uniquement si l’option De manière dynamique est sélectionnée dans le champ Sélectionner les signataires. Vous pouvez spécifier un ECMAScript ou un service pour choisir les signataires et les options de vérification pour un document.
 
 * **Détails du signataire :** cette option est disponible uniquement si l’option Manuellement est sélectionnée dans le champ Sélectionner les signataires. Indiquez l’adresse électronique et choisissez une méthode de vérification facultative. Avant de sélectionner une méthode de vérification en 2 étapes, assurez-vous que l’option de vérification correspondante est activée pour le compte Adobe Sign configuré.
-* **Variable d’état :** l’état de signature d’un document activé par Adobe Sign est stocké dans une variable. Spécifiez le nom de la variable d’état (adobeSignStatus). Une variable d’état d’une instance est disponible dans CRXDE à l’adresse /etc/workflow/instances/&lt;serveur>/&lt;date-heure>/&lt;instance du modèle de processus>/workItems/&lt;noeud>/metaData contient l’état d’une variable.
+* **Variable d’état :** l’état de signature d’un document activé par Adobe Sign est stocké dans une variable. Spécifiez le nom de la variable d’état (adobeSignStatus). Une variable d’état d’une instance est disponible dans CRXDE à l’adresse /etc/workflow/instances/&lt;serveur>/&lt;date-time>/&lt;instance du modèle de flux de travail>/workItems/&lt;noeud>/metaData contient l’état d’une variable.
 * **Chemin d’accès du document signé :** spécifiez l’emplacement pour conserver les documents signés. Vous pouvez choisir de remplacer le fichier de charge utile ou de placer le document signé à un emplacement dans le répertoire de charge utile.
 
 ## Etapes Services de document {#document-services-steps}
@@ -286,16 +289,16 @@ Exécute le fichier DDX sur la carte spécifiée des documents d’entrée et re
 
 ### Etape Optimiser un PDF {#optimize-pdf-step}
 
-Optimise les fichiers PDF en réduisant leur taille. Cette conversion se traduit par des fichiers PDF pouvant être plus petits que leurs versions d’origine. Cette opération permet également de convertir des documents PDF vers la version PDF spécifiée dans les paramètres d’optimisation.
+Optimise les fichiers PDF en réduisant leur taille. Cette conversion a pour effet de réduire la taille des fichiers PDF par rapport à leur version d’origine. Cette opération permet également de convertir des documents PDF vers la version PDF spécifiée dans les paramètres d’optimisation.
 
-Les paramètres d’optimisation définissent le mode d’optimisation des fichiers. Voici des exemples de paramètres :
+Les paramètres d’optimisation spécifient comment les fichiers sont optimisés. Voici des exemples de paramètres :
 
-* Version PDF cible
+* Version PDF Cible
 * Ignorer les objets tels que les actions JavaScript et les vignettes incorporées
 * Ignorer les données utilisateur telles que les commentaires et les pièces jointes
 * Ignorer les paramètres incorrects ou inutilisés
 * Compression de données non compressées ou utilisation d’algorithmes de compression plus efficaces
-* Suppression des polices incorporées
+* Suppression de polices incorporées
 * Définition des valeurs de transparence
 
 ### Etape Effectuer un rendu de formulaire PDF {#render-pdf-form-step}
