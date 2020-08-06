@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 940e45b4-dbf1-4207-bd4a-cf677d645fb4
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 75%
 
 ---
 
@@ -21,7 +24,7 @@ Lorsqu’un auteur de formulaire crée un formulaire adaptatif à l’aide d’u
 
 ## Modification de la stratégie de contenu d’un modèle {#changing-the-content-policy-of-a-template}
 
-When you create a template, it is created under `/conf` in the content repository. En fonction des dossiers que vous avez créés dans le `/conf` répertoire, le chemin d’accès à votre modèle est : `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
+When you create a template, it is created under `/conf` in the content repository. En fonction des dossiers que vous avez créés dans le `/conf` répertoire, le chemin d’accès à votre modèle est le suivant : `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
 Effectuez les étapes suivantes pour afficher les composants dans la barre latérale en fonction de la stratégie de contenu d’un modèle :
 
@@ -31,7 +34,7 @@ Effectuez les étapes suivantes pour afficher les composants dans la barre laté
 
 1. Dans CRXDE, accédez au dossier dans lequel le modèle est créé.
 
-   Par exemple: `/conf/<your-folder>/`
+   Par exemple : `/conf/<your-folder>/`
 
 1. In CRXDE, navigate to: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/`
 
@@ -51,7 +54,7 @@ Effectuez les étapes suivantes pour afficher les composants dans la barre laté
 
    Après avoir ajouté un groupe de composants, cliquez sur **OK** pour mettre à jour la liste, puis cliquez sur **Enregistrer tout** au-dessus de la barre d’adresse de CRXDE et actualisez.
 
-1. Dans le modèle, remplacez la stratégie de contenu par défaut par la nouvelle stratégie que vous avez créée. ( `myPolicy` dans cet exemple.)
+1. Dans le modèle, remplacez la stratégie de contenu par défaut par la nouvelle stratégie que vous avez créée. ( `myPolicy` dans cet exemple).
 
    Pour modifier la stratégie, dans CRXDE, accédez à `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/guideContainer/rootPanel/items`.
 
