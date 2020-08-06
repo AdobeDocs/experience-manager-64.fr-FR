@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 86%
 
 ---
 
@@ -46,6 +49,7 @@ Toutes les pages We.Retail reposent sur des modèles modifiables, ce qui permet 
    * Sélectionner une stratégie existante ou en créer une nouvelle pour le conteneur.
    * Sélectionner les composants autorisés dans le conteneur.
    * Définir les composants par défaut à placer lorsqu’une ressource est déplacée dans le conteneur.
+
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
 1. De retour dans l’éditeur de modèles, vous pouvez modifier la stratégie du composant de texte dans le conteneur de mises en page.
@@ -59,6 +63,7 @@ Toutes les pages We.Retail reposent sur des modèles modifiables, ce qui permet 
       * Options de mise en forme
       * Styles de paragraphe autorisés
       * Caractères spéciaux autorisés
+
    De nombreux composants basés sur les composants principaux permettent de configurer des options au niveau du composant par le biais de modèles modifiables, rendant ainsi inutile toute personnalisation de la part des développeurs.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
@@ -71,5 +76,5 @@ Toutes les pages We.Retail reposent sur des modèles modifiables, ce qui permet 
 
 For further information please refer to the authoring document [Creating Page Templates](/help/sites-authoring/templates.md) or the developer document Page [Templates - Editable](/help/sites-developing/page-templates-editable.md) for complete technical details on editable templates.
 
-Vous pouvez également vous renseigner sur les [composants principaux](/help/sites-developing/we-retail-core-components.md). See the authoring document [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) for an overview of the capabilities of the core components and the developer document [Developing Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) for a technical overview.
+Vous pouvez également vous renseigner sur les [composants principaux](/help/sites-developing/we-retail-core-components.md). See the authoring document [Core Components](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) for an overview of the capabilities of the core components and the developer document [Developing Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) for a technical overview.
 
