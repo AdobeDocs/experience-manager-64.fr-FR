@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 72%
 
 ---
 
@@ -39,16 +42,16 @@ Selon la persistance du stockage de données configuré, les données de formula
  <tbody> 
   <tr> 
    <td><p><strong>Type de persistance</strong></p> </td> 
-   <td><p><strong>Magasin de données</strong></p> </td> 
+   <td><p><strong>Stockage de données</strong></p> </td> 
    <td><p><strong>Emplacement</strong></p> </td> 
   </tr> 
   <tr> 
-   <td><p>Default</p> </td> 
+   <td><p>Valeur par défaut</p> </td> 
    <td><p>Référentiel AEM d’instances d’auteur et de publication</p> </td> 
    <td><p><code>/content/forms/fp/</code></p> </td> 
   </tr> 
   <tr> 
-   <td><p>distant</p> </td> 
+   <td><p>Distant</p> </td> 
    <td><p>Référentiel AEM d’instances d’auteur et distantes</p> </td> 
    <td><p><code>/content/forms/fp/</code></p> </td> 
   </tr> 
@@ -85,7 +88,7 @@ The following table explains how the data for all drafts by `srose` is stored in
 | `/content/forms/fp/srose/drafts` | Données de nœud de conteneur pour tous les brouillons de l’utilisateur |
 | `/content/forms/fp/srose/drafts/attachments/` | Range toutes les pièces jointes de l’utilisateur en fonction de l’ID du brouillon |
 | `/content/forms/fp/srose/drafts/attachments/<ID>` | Contient la pièce jointe de l’ID sélectionné au format binaire |
-| `/content/forms/fp/srose/drafts/metadata/` | Organise les métadonnées de formulaire pour l’utilisateur en fonction de l’ID de brouillon |
+| `/content/forms/fp/srose/drafts/metadata/` | Organise les métadonnées de formulaire pour l’utilisateur en fonction de l’ID de brouillon. |
 | `/content/forms/fp/srose/drafts/metadata/<draft ID>` | Contient les métadonnées de formulaire de l’ID de brouillon sélectionné |
 | `/content/forms/fp/srose/drafts/data/` | Range les données de formulaire de l’utilisateur en fonction de l’ID de données utilisateur |
 | `/content/forms/fp/srose/drafts/data/<user data ID>` | Contient les données de formulaire pour l’ID de données utilisateur sélectionné au format binaire |
