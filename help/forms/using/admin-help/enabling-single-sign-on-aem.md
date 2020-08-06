@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 translation-type: tm+mt
 source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+workflow-type: tm+mt
+source-wordcount: '1538'
+ht-degree: 95%
 
 ---
 
 
 # Activation de l’authentification unique dans AEM forms{#enabling-single-sign-on-in-aem-forms}
 
-AEM forms offre deux méthodes pour activer l’authentification unique (SSO) : les en-têtes HTTP et SPNEGO.
+Les formulaires AEM offrent deux façons d’activer l’authentification unique (SSO) : les en-têtes HTTP et SPNEGO.
 
 Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d’AEM forms ne sont plus obligatoires. Elles ne s’affichent pas si l’utilisateur s’est déjà authentifié via le portail de son entreprise.
 
@@ -99,7 +102,7 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP (v
 1. Procurez-vous l’utilitaire KtPass. Cet utilitaire sert au mappage d’un SPN sur un DOMAINE. Vous pouvez obtenir l’utilitaire KtPass dans le pack d’outils ou dans le Kit de ressources techniques de Windows Server (Voir [Outils de support de Windows Server 2003 Service Pack 1](https://support.microsoft.com/kb/892777).)
 1. Dans une invite de commande, exécutez `ktpass` à l’aide des arguments suivants :
 
-   `ktpass -princ HTTP/`*hôte *`@`*REALM*`-mapuser`*utilisateur *
+   `ktpass -princ HTTP/`*hôte *`@`** REALM `-mapuser`*utilisateur *
 
    Par exemple, saisissez le texte suivant :
 
@@ -113,6 +116,7 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP (v
 
    * Cliquez sur Poste de travail avec le bouton droit de la souris et sélectionnez Propriétés.
    * Cliquez sur l’onglet Nom de l’ordinateur. La valeur Nom du domaine est celle que vous recherchez.
+
    **utilisateur :** nom d’ouverture de session du compte utilisateur créé dans la tâche précédente. Dans notre exemple, il s’agit de spnegodemo.
 
 Si vous rencontrez cette erreur :
@@ -141,7 +145,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 Pour que l’authentification SPNEGO fonctionne, l’ordinateur client doit faire partie du domaine dans lequel le compte utilisateur a été créé. Vous devez également configurer le navigateur client pour autoriser l’authentification SPNEGO. De même, le site exigeant une authentification SPNEGO doit être un site de confiance.
 
-Si vous accédez au serveur à l’aide du nom de l’ordinateur, par exemple https://lcserver:8080*,*, aucun paramètre n’est requis pour Internet Explorer. Si vous saisissez une URL ne contenant aucun point (« . »), Internet Explorer traite le site comme un site intranet local. Si vous utilisez un nom qualifié complet pour le site, ce site doit être de confiance.
+Si le serveur est accessible à l’aide du nom de l’ordinateur, par exemple https://lcserver:8080*,*, aucun paramètre n’est requis pour Internet Explorer. Si vous saisissez une URL ne contenant aucun point (« . »), Internet Explorer traite le site comme un site intranet local. Si vous utilisez un nom qualifié complet pour le site, ce site doit être de confiance.
 
 **Configuration d’Internet Explorer 6.x**
 
