@@ -4,6 +4,9 @@ description: Découvrez comment AEM Assets déploie le tri côté serveur de fa�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 96%
 
 ---
 
@@ -47,13 +50,13 @@ AEM Assets vous permet de trier les ressources de dossier sur la base des champ
 
 >[!NOTE]
 >
->Pour trier les valeurs des `Name` colonnes ou des `Title`colonnes, superposez `/libs/dam/gui/content/commons/availablecolumns` et modifiez la valeur de `sortable` en `True`.
+>Pour trier les valeurs des `Name` ou des `Title`colonnes, superposez `/libs/dam/gui/content/commons/availablecolumns` et modifiez la valeur de `sortable` en `True`.
 
 ## Tri des ressources dans les résultats de la recherche {#sorting-assets-in-search-results}
 
 Vous pouvez trier les résultats de la recherche en fonction des champs suivants :
 
-* Titre
+* Title (Titre)
 * État
 * Type
 * Taille
