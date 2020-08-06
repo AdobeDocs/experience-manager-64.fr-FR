@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 49b195b2-78c4-49f9-b07a-a87b73624c2c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 100%
 
 ---
 
@@ -40,6 +43,7 @@ Pour utiliser le vérificateur de lien externe, procédez comme suit :
    * Délai depuis que le lien a été validé pour la dernière fois
    * Délai depuis que le lien a été mis à disposition pour la dernière fois
    * Délai depuis que le lien a été consulté pour la dernière fois
+
    s’affichent.
 
 1. Dans les différentes pages de contenu, les liens non valides sont affichés comme étant rompus :
