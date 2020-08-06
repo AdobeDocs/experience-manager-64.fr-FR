@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
 translation-type: tm+mt
 source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 96%
 
 ---
 
@@ -90,6 +93,7 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
+
    Ces deux fichiers configureront AEM de façon à ce qu’ils utilisent un entrepôt de nœuds TarMK et un entrepôt de données File.
 
 1. Modifiez les fichiers de configuration pour les rendre prêts à l’emploi. Plus précisément :
