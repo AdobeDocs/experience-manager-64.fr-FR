@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 91%
 
 ---
 
@@ -37,16 +40,16 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * Les raisons peuvent être multiples, mais sont généralement liées à la mémoire cache (de votre navigateur local ou du dispatcher), bien qu’il s’agisse parfois d’un problème de la file d’attente de réplication.
 
-* **Solutions** :
+* **Solutions**:
 
    * Plusieurs solutions sont possibles :
    * Vérifiez que la page a bien été répliquée. Vérifiez l’état de la page et, si nécessaire, l’état de la file d’attente de réplication.
    * Effacez la mémoire cache du navigateur local et accédez de nouveau à votre page.
-   * Ajoutez `?` à la fin de l’URL de la page.Par exemple :
+   * Ajoutez `?` à la fin de l’URL de la page. Par exemple :
 
       `http://localhost:4502/sites.html/content?`
 
-      Ceci demandera la page directement auprès d’AEM et contournera le dispatcher. Si vous recevez la page mise à jour, cela indique que vous devez vider le cache du Dispatcher.
+      Ceci demandera la page directement auprès d’AEM et contournera le dispatcher. Si vous recevez la page mise à jour, ceci indique que vous devez vider la mémoire cache du dispatcher.
 
    * Contactez l’administrateur du système en cas de problèmes avec les files d’attente de réplication.
 
@@ -60,13 +63,13 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * Dans de rares cas, il se peut que vous ayez positionné l’en-tête de votre sidekick en dehors de votre fenêtre active. Ceci signifie que vous ne pouvez pas le repositionner.
 
-* **Solution** :
+* **Solution**:
 
    * Fermez votre session en cours et rouvrez-la. Le sidekick revient à sa position par défaut.
 
 ## Rechercher et remplacer - Toutes les instances ne sont pas remplacées {#find-replace-not-all-instances-are-replaced}
 
-* **Problème :**
+* **Problème:**
 
    * When using the **Find &amp; Replace** option it can happen that not all instances of the `find` term are replaced on a page.
 
@@ -79,7 +82,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
       * `jcr:text`
       * `text`
 
-* **Solution** :
+* **Solution**:
 
    * Ces définitions peuvent être modifiées dans la configuration du **servlet Day CQ WCM Find Replace** à l’aide de la **console Web**, par exemple à l’adresse
 
