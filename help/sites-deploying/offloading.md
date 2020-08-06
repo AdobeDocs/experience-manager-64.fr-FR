@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
 workflow-type: tm+mt
 source-wordcount: '2803'
-ht-degree: 76%
+ht-degree: 83%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 76%
 
 ## Présentation {#introduction}
 
-Le déchargment permet de répartir le traitement des tâches entre les instances d’Experience Manager dans une topologie. Avec le déchargement, vous pouvez utiliser des instances spécifiques d’Experience Manager pour exécuter des types de traitement spécifiques. Le traitement spécialisé permet d’optimiser l’utilisation des ressources disponibles sur le serveur.
+Le déchargement permet de répartir le traitement des tâches entre les instances d’Experience Manager dans une topologie. Avec le déchargement, vous pouvez utiliser des instances spécifiques d’Experience Manager pour exécuter des types de traitement spécifiques. Le traitement spécialisé permet d’optimiser l’utilisation des ressources disponibles sur le serveur.
 
 Le déchargement est basé sur les fonctionnalités [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) et Sling JobManager. Pour utiliser le déchargement, ajoutez des clusters Experience Manager à une topologie, puis identifiez les rubriques de tâche devant être traitées par le cluster. Les clusters sont composés d’une ou de plusieurs instances Experience Manager, de sorte qu’une instance unique soit considérée comme un cluster.
 
@@ -110,8 +110,8 @@ Le service de recherche basé sur les ressources Apache Sling s’exécute sur 
 
 Le service de recherche (Discovery Service) envoie des demandes POST périodiques (heartbeats) aux services du connecteur de topologie (Topology Connector) pour établir et gérer les connexions avec une topologie. Le service Topology Connector conserve une liste autorisée d’adresses IP ou de noms d’hôtes autorisés à rejoindre la topologie :
 
-* Pour participer à une instance de topologie, précisez l’URL du service Topology Connector du membre racine.
-* Pour permettre à une instance de se joindre à une topologie, ajoutez l’instance à la liste autorisée du service Topology Connector du membre racine.
+* Pour joindre une instance à une topologie, précisez l’URL du service Topology Connector du membre racine.
+* Pour permettre à une instance de rejoindre une topologie, ajoutez-la à la liste autorisée du service Topology Connector du membre racine.
 
 Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propriétés suivantes du service org.apache.sling.discovery.impt.Config :
 
@@ -124,25 +124,25 @@ Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propri�
    <th>Valeur par défaut</th> 
   </tr> 
   <tr> 
-   <td>Délai d’expiration de pulsation (secondes)</td> 
+   <td>Délai d’expiration de pulsation (en secondes)</td> 
    <td>heartbeatTimeout</td> 
-   <td>Durée, en secondes, d’attente d’une réponse de pulsation avant que l’instance ciblée ne soit considérée comme indisponible. </td> 
+   <td>Durée, en secondes, d’attente d’une réponse de pulsation avant que l’instance ciblée ne soit considérée comme non disponible. </td> 
    <td>20</td> 
   </tr> 
   <tr> 
-   <td>Intervalle de pulsation (secondes)</td> 
+   <td>Intervalle de pulsation (en secondes)</td> 
    <td>heartbeatInterval</td> 
    <td>Durée, en secondes, entre les pulsations.</td> 
    <td>15</td> 
   </tr> 
   <tr> 
-   <td>Délai minimal de Événement (secondes)</td> 
+   <td>Délai minimal de l’événement (en secondes)</td> 
    <td>minEventDelay</td> 
-   <td><p>Lorsqu’une modification est apportée à la topologie, délai nécessaire pour retarder le changement d’état de TOPOLOGY_CHANGING à TOPOLOGY_CHANGED. Chaque modification qui se produit lorsque l’état est TOPOLOGY_CHANGING augmente la durée de ce délai. </p> <p>Ce délai empêche les écouteurs d’être submergés par les événements. </p> <p>Pour ne pas utiliser de délai, indiquez 0 ou un nombre négatif.</p> </td> 
+   <td><p>Lorsqu’une modification est apportée à la topologie, délai nécessaire pour retarder le changement d’état de TOPOLOGY_CHANGING à TOPOLOGY_CHANGED. Chaque modification qui se produit lorsque l’état est TOPOLOGY_CHANGING augmente ce délai. </p> <p>Ce délai empêche les écouteurs d’être submergés par les événements. </p> <p>Pour n’utiliser aucun délai, spécifiez 0 ou un chiffre négatif.</p> </td> 
    <td>3</td> 
   </tr> 
   <tr> 
-   <td>URL du connecteur de topologie</td> 
+   <td>URL de Topology Connector</td> 
    <td>topologyConnectorUrls</td> 
    <td>URL des services Topology Connector pour envoyer des messages de pulsation.</td> 
    <td>http://localhost:4502/libs/sling/topology/connector</td> 
@@ -150,7 +150,7 @@ Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propri�
   <tr> 
    <td>liste autorisée du connecteur de topologie</td> 
    <td>topologyConnectorWhitelist</td> 
-   <td>liste d’adresses IP ou de noms d’hôtes que le service Topology Connector local autorise dans la topologie. </td> 
+   <td>Liste d’adresses IP ou de noms d’hôtes autorisés par le service Topology Connector dans la topologie. </td> 
    <td><p>localhost</p> <p>127.0.0.1</p> </td> 
   </tr> 
   <tr> 
@@ -223,10 +223,10 @@ The logic that creates the list of enabled topics first allows all of the topics
 
 Utilisez le console web ou le nœud `sling:OsgiConfig` pour configurer les propriétés suivantes. Pour les nœuds `sling:OsgiConfig`, le paramètre PID du service Job Consumer Manager est org.apache.sling.event.impl.jobs.JobConsumerManager.
 
-| Nom de propriété dans la console Web | ID OSGi | Description |
+| Nom de propriété dans la console web | ID OSGi | Description |
 |---|---|---|
-| Liste blanche des rubriques | job.consumermanager.whitelist | liste de rubriques traitées par le service JobManager local. La valeur par défaut de &amp;ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
-| Liste noire des rubriques | job.consumermanager.blacklist | liste de rubriques que le service JobManager local ne traite pas. |
+| Liste autorisée de rubrique | job.consumermanager.whitelist | Liste de rubriques traitées par le service JobManager local. La valeur par défaut de &amp;ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
+| Liste bloquée de rubrique | job.consumermanager.blacklist | Liste de rubriques que le service JobManager local ne traite pas. |
 
 ## Création des agents de réplication pour le déchargement {#creating-replication-agents-for-offloading}
 
@@ -250,7 +250,7 @@ Ce modèle de réplication est similaire à celui utilisé entre les instances d
 
 >[!NOTE]
 >
->La structure de déchargement utilise la topologie pour obtenir les adresses IP des instances de déchargement. La structure crée alors automatiquement des agents de réplication en fonction de ces adresses IP. Si les adresses IP des instances de déchargement changent ultérieurement, la modification se propage automatiquement sur la topologie après le redémarrage de l’instance. Toutefois, la structure de déchargement ne met pas automatiquement à jour les agents de réplication pour refléter les nouvelles adresses IP. Pour éviter cette situaion, utilisez des adresses IP fixes pour toutes les instances de la topologie.
+>La structure de déchargement utilise la topologie pour obtenir les adresses IP des instances de déchargement. La structure crée alors automatiquement des agents de réplication en fonction de ces adresses IP. Si les adresses IP des instances de déchargement changent ultérieurement, la modification se propage automatiquement sur la topologie après le redémarrage de l’instance. Toutefois, la structure de déchargement ne met pas automatiquement à jour les agents de réplication pour refléter les nouvelles adresses IP. Pour éviter cette situation, utilisez des adresses IP fixes pour toutes les instances de la topologie.
 
 ### Nommage des agents de réplication pour le déchargement {#naming-the-replication-agents-for-offloading}
 
@@ -274,7 +274,7 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Création de l’agent sortant {#creating-the-outgoing-agent}
 
-1. Créez un **agent de réplication** sur l’auteur. (Voir la [documentation sur la réplication des agents](/help/sites-deploying/replication.md)). Specify any **Title**. The **Name** must follow the naming convention.
+1. Créez un **agent de réplication** sur l’auteur. (Voir la [documentation sur les agents de réplication](/help/sites-deploying/replication.md)). Specify any **Title**. The **Name** must follow the naming convention.
 1. Créez un agent en utilisant les propriétés suivantes :
 
    | Propriétés | Valeur |
@@ -288,7 +288,7 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Création de l’agent inverse {#creating-the-reverse-agent}
 
-1. Create a **Reverse Replication Agent** on author. (Voir la [documentation sur la réplication des agents](/help/sites-deploying/replication.md).) Specify any **Title**. The **Name** must follow the naming convention.
+1. Create a **Reverse Replication Agent** on author. (Voir la [documentation sur les agents de réplication](/help/sites-deploying/replication.md).) Specify any **Title**. The **Name** must follow the naming convention.
 1. Créez un agent en utilisant les propriétés suivantes :
 
    | Propriétés | Valeur |
@@ -301,7 +301,7 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Création de l’agent de dossier d’envoi {#creating-the-outbox-agent}
 
-1. Create a **Replication Agent** on the worker instance. (Voir la [documentation sur la réplication des agents](/help/sites-deploying/replication.md).) Specify any **Title**. The **Name** must be `offloading_outbox`.
+1. Create a **Replication Agent** on the worker instance. (Voir la [documentation sur les agents de réplication](/help/sites-deploying/replication.md).) Specify any **Title**. The **Name** must be `offloading_outbox`.
 1. Créez l’agent en utilisant les propriétés suivantes.
 
    | Propriétés | Valeur |
@@ -333,7 +333,7 @@ La procédure suivante part des fonctionnalités suivantes pour la topologie de 
 * Les utilisateurs ne communiquent pas directement avec une ou plusieurs instances Experience Manager traitant les ressources de gestion des actifs numériques. Ces instances sont dédiées au traitement en arrière-plan des ressources de gestion des actifs numériques. 
 
 1. Sur chaque instance Experience Manager, configurez Discovery Service (service de recherche) afin qu’il indique le Topography Connector (connecteur de topographie) racine. (Voir [Configuration de l’appartenance à une topologie](#title4).)
-1. Configurez le connecteur de topographie racine de sorte que les instances de connexion se trouvent sur la liste autorisée.
+1. Configurez la racine Topography Connector afin que les instances de connexion soient affichées sur la liste autorisée.
 1. Open Offloading Browser and disable the `com/adobe/granite/workflow/offloading` topic on the instances with which users interact to upload or change DAM assets.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
