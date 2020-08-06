@@ -8,22 +8,25 @@ uuid: 2cb2bf82-130f-4d6b-a711-df0b97cb0504
 discoiquuid: f3ca177f-7c0d-4b8b-ab4b-bf04668d634c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 17%
 
 ---
 
 
 # NE PAS PUBLIER Créez votre premier document adaptatif {#do-not-publish-create-your-first-adaptive-document}
 
-## Cas d’utilisation {#use-case}
+## Exemple d’utilisation  {#use-case}
 
-Nous Finance est une organisation de premier plan dans le domaine des services financiers qui offre des solutions financières complètes et personnalisées pour répondre aux besoins de divers profils de clients.
+Nous Finance est une organisation leader dans le domaine des services financiers qui offre des solutions financières complètes et personnalisées pour répondre aux besoins de divers profils clients.
 
-L&#39;une des polices d&#39;assurance automobile de leurs clients arrive à expiration et ils lui envoient un rappel, interactif et incluant un PDF, avec la soumission de renouvellement. La communication comprend également d&#39;autres informations, telles que des récompenses de fidélité et des offres de rabais.
+L&#39;une des polices d&#39;assurance automobile de leurs clients arrive à expiration et ils lui envoient un rappel interactif, incluant un PDF, avec la soumission de renouvellement. La communication comprend également d&#39;autres informations, telles que des récompenses de fidélité et des offres de rabais.
 
-Le portail s’exécute sur Adobe AEM. La sortie du canal d’accueil pour le Web et l’impression est créée à l’aide des fonctionnalités multicanaux du document adaptatif.
+Le portail s’exécute sur l’Adobe AEM. La sortie du canal de bienvenue sur le Web et l&#39;impression est créée à l&#39;aide des fonctionnalités multi-canaux du Document adaptatif.
 
-Vous disposez d’un document adaptatif semblable à ce qui suit à la fin du didacticiel :
-[ ad-1 ![](assets/ad-1.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Mobile.pdf)[ ad-2 ![](assets/ad-2.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Desktop.pdf)Creating your first adaptive document tutorial is categories (Création de votre premier didacticiel de document adaptatif) est classé en étapes. Chaque étape est un article complet en soi.
+Vous aurez un document adaptatif semblable à ce qui suit à la fin du didacticiel :
+[ ![ad-1](assets/ad-1.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Mobile.pdf) [![ad-2](assets/ad-2.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Desktop.pdf)La création de votre premier didacticiel de document adaptatif est divisée en étapes. Chaque étape est un article complet en soi.
 
 <table> 
  <tbody>
@@ -41,12 +44,12 @@ Vous disposez d’un document adaptatif semblable à ce qui suit à la fin du di
    <td>Condition requise</td> 
    <td>
     <ul> 
-     <li>Configurez l’instance d’auteur AEM. </li> 
+     <li>Configurez AEM instance d’auteur. </li> 
      <li>Installation du module complémentaire AEM Forms. Pour plus d’informations, voir <a href="/help/forms/using/installing-configuring-aem-forms-osgi.md" target="_blank">Installation et configuration d’AEM Forms</a>.</li> 
      <li>Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du didacticiel sont basés sur la base de données MySQL et utilisent le pilote de base de données MySQL JDBC d’Oracle. </li> 
      <li>Configurez une base de données contenant les données client. Une base de données est essentielle pour créer un document adaptatif. Ce didacticiel utilise une base de données pour afficher les fonctionnalités de modèle de données de formulaire et de persistance d’AEM Forms. </li> 
-     <li>Créez/importez et activez <a href="/help/forms/using/web-channel-print-channel.md">les modèles pour l’impression et le canal</a>Web.</li> 
-     <li>Vérifiez que vous disposez des fragments de <a href="/help/forms/using/document-fragments.md">document en fonction de FDM</a>.</li> 
+     <li>Créez/importez et activez les <a href="/help/forms/using/web-channel-print-channel.md">modèles pour l’impression et le canal</a>Web.</li> 
+     <li>Vérifiez que vous disposez des fragments de <a href="/help/forms/using/document-fragments.md">Document basés sur FDM</a>.</li> 
     </ul> </td> 
   </tr>
  </tbody>
@@ -58,7 +61,7 @@ Un modèle de données de formulaire permet de connecter un document adaptatif �
 
 Goals:
 
-* Configuration de l’instance de base de données (Microsoft Dynamics) en tant que source de données
+* Configurer l&#39;instance de base de données (Microsoft Dynamics) en tant que source de données
 * Création du modèle de données de formulaire à l’aide de Microsoft Dynamics en tant que source de données
 * Ajouter des objets de modèle de données pour former un modèle de données
 * Configurer les services de lecture et d’écriture pour le modèle de données de formulaire
@@ -66,41 +69,41 @@ Goals:
 
 ## Step 2: Create an adaptive document {#step-create-an-adaptive-document}
 
-Customer Communications centralise et gère la création, l’assemblage et la livraison de correspondances sécurisées, personnalisées et interactives, telles que la correspondance d’affaires, les lettres, les documents, les déclarations, les avis d’avantages, le prospectus de gestion de patrimoine, les courriels marketing, les factures et les kits de bienvenue.
+Customer Communications centralise et gère la création, l’assemblage et la diffusion de correspondances sécurisées, personnalisées et interactives telles que la correspondance d’affaires, les lettres, les documents, les déclarations, les avis de prestations, les prospectus de gestion de patrimoine, les courriels marketing, les factures et les kits de bienvenue.
 
-Les documents adaptatifs vous permettent de créer des communications client attrayantes, réactives, dynamiques et adaptatives par nature. AEM Forms fournit un éditeur WYSIWYG par glisser-déposer pour créer des documents adaptatifs.
+Grâce aux documents adaptatifs, vous pouvez créer des communications client attrayantes, réactives, dynamiques et adaptatives par nature. AEM Forms fournit un éditeur WYSIWYG par glisser-déposer pour créer des documents adaptatifs.
 
 <!--`For more information about adaptive documents, see [Introduction to authoring adaptive documents](/forms/using/introduction-ad-authoring.md).`-->
 
 Goals:
 
-* Créez l’impression et la sortie Web d’un document adaptatif basé sur le modèle de données de formulaire.
+* Créez l’impression et la sortie Web d’un document adaptatif en fonction du modèle de données de formulaire.
 * Champs de disposition d’un formulaire adaptatif pour afficher des informations au client
-* Créez des règles pour récupérer et afficher des informations du modèle de données de formulaire dans un document adaptatif.
+* Créez des règles pour récupérer et afficher des informations du modèle de données de formulaire au document adaptatif.
 
 <!--![see-the-guide-sm](assets/see-the-guide-sm.png)-->
 
 ## Étape 3 : Application de règles aux champs de document adaptatif (canal Web uniquement) {#step-apply-rules-to-adaptive-document-fields-web-channel-only}
 
-Le document adaptatif fournit un éditeur permettant d’écrire des règles sur des objets de document adaptatif. Ces règles définissent les actions à déclencher sur les objets de document en fonction des conditions prédéfinies et des actions de l’utilisateur sur le document. Cela permet d’assurer la précision et d’accélérer l’expérience des utilisateurs dans la version Web du document adaptatif. Pour plus d’informations sur les règles et l’éditeur de règles du document adaptatif, voir Éditeur [de](/help/forms/using/rule-editor.md)règles.
+Le document adaptatif fournit un éditeur pour la création de règles sur les objets de document adaptatif. Ces règles définissent les actions à déclencher sur les objets de document en fonction des conditions prédéfinies et des actions de l’utilisateur sur le document. Il permet d’assurer la précision et d’accélérer l’expérience des utilisateurs dans la version Web du document adaptatif. Pour plus d’informations sur l’éditeur de règles et de règles de document adaptatif, voir Éditeur [de](/help/forms/using/rule-editor.md)règles.
 
 Goals:
 
 * Création et application de règles aux champs de canal Web du document adaptatif
-* Utiliser des règles pour déclencher des services de modèle de données de document dans le canal Web
+* Utiliser des règles pour déclencher des services de modèles de données de document dans le canal Web
 
 ## Étape 4 : Style du document adaptatif (canal Web uniquement) {#step-style-the-adaptive-document-web-channel-only}
 
-Les documents adaptatifs fournissent un éditeur pour créer des thèmes pour les documents adaptatifs et le style en ligne. Un thème contient des détails de style pour les composants et les panneaux et vous pouvez réutiliser un thème sur les canaux Web de différents documents. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez le thème à votre document, le style spécifié se reflète sur les composants correspondants de votre document. Pour plus d’informations, voir [Thèmes](/help/forms/using/themes.md).
+Les documents adaptatifs fournissent un éditeur pour créer des thèmes pour les documents adaptatifs et la mise en forme en ligne. Un thème contient des détails de style pour les composants et les panneaux et vous pouvez réutiliser un thème sur des canaux Web de différents documents. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez le thème à votre document, le style spécifié se reflète sur les composants correspondants de votre document. Pour plus d’informations, voir [Thèmes](/help/forms/using/themes.md).
 
 Goals:
 
-* Créer un thème pour le canal Web du document adaptatif
+* Créer un thème pour le canal Web de document adaptatif
 * Appliquer le thème au canal Web du document adaptatif
-* Validation de l’aspect du canal Web du document adaptatif sur les périphériques mobiles et le bureau
+* Valider l’apparence du canal Web du document adaptatif sur les périphériques mobiles et sur le bureau
 
 ## Étape 5 : Publication du document adaptatif {#step-publish-the-adaptive-document}
 
-Une fois votre document adaptatif créé, vous devez le publier pour qu’il soit disponible sur votre instance de publication, où les agents peuvent utiliser le document adaptatif pour créer les instances de communication en fonction.
+Une fois que vous avez créé votre document adaptatif, vous devez le publier pour qu’il soit disponible sur votre instance de publication où les agents peuvent utiliser le document adaptatif pour créer les instances de communication en fonction de celui-ci.
 
-Pour publier le document adaptatif, les auteurs du document doivent disposer des autorisations requises.
+Pour publier le document adaptatif, les auteurs de document doivent disposer des autorisations requises.
