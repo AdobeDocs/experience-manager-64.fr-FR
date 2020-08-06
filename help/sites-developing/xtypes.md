@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: adb70b43-1b0b-4302-905a-c7612675dabb
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '6414'
+ht-degree: 52%
 
 ---
 
@@ -23,7 +26,7 @@ Dans le langage ExtJS, un xtype est un nom symbolique donné à une classe. You 
 
 Pour obtenir des informations complètes sur tous les widgets disponibles dans AEM, reportez-vous à la [documentation relative à l’API de widget](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
-Pour savoir dans quels composants un xtype donné est utilisé dans AEM, vous pouvez utiliser la requête Xpath suivante dans CRXDE en remplaçant &#39;checkbox&#39; par le xtype qui vous intéresse :
+Pour savoir dans quels composants un xtype donné est utilisé en AEM, vous pouvez utiliser la requête Xpath suivante dans CRXDE en remplaçant &quot;case à cocher&quot; par le type qui vous intéresse :
 
 `//element(*, cq:Widget)[@xtype='checkbox']`
 
@@ -93,7 +96,7 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
    [CQ.form.BrowseField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.BrowseField)
 
-   **Obsolète : Utilisez plutôt[CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField)**
+   **Obsolète : Utilisez[CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField)à la place**
 
 * bulkeditor
 
@@ -127,7 +130,7 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
    Le module CQ.Ext.chart fournit la fonctionnalité de visualisation des données avec une représentation graphique basée sur Flash. Chaque graphique est directement lié à un CQ.Ext.data.Store qui en permet la mise à jour automatique. Pour modifier l’aspect, voir les options de configuration [chartStyle](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) et [extraStyle](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart).
 
-* checkbox
+* la case 
 
    [CQ.Ext.form.Checkbox](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Checkbox)
 
@@ -203,7 +206,7 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
    [CQ.form.CompositeField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField)
 
-   Classe de base pour les champs de formulaire complexes basés sur un panneau qui incluent un champ de formulaire ou un groupe de champs de formulaire.
+   Classe de base pour les champs de formulaire complexes basés sur des panneaux qui incluent un champ de formulaire ou un groupe de champs de formulaire.
 
 * container
 
@@ -617,7 +620,7 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
    [CQ.form.PathCompletion](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathCompletion)
 
-   **Obsolète : Utilisez plutôt[CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField)**
+   **Obsolète : Utilisez[CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField)à la place**
 
 * pathfield
 
@@ -787,7 +790,7 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
 * static
 
-   [CQ.Static](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Static)
+   [CQ.Statique](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Static)
 
    Static peut être utilisé pour afficher du code HTML ou du texte arbitraire.
 
@@ -819,7 +822,7 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
    [CQ.form.TableEdit](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit)
 
-   **Obsolète : Utilisez plutôt[CQ.form.TableEdit2](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit2).**
+   **Obsolète : Utilisez[CQ.form.TableEdit2](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit2)à la place.**
 
 * tableedit2
 
@@ -847,7 +850,7 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
    [CQ.Ext.form.TextArea](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextArea)
 
-   Champ de texte multiligne. Il peut être utilisé en tant que remplacement direct pour les champs textarea traditionnels et ajoute la prise en charge du dimensionnement automatique.
+    Il peut être utilisé en tant que remplacement direct pour les champs textarea traditionnels et ajoute la prise en charge du dimensionnement automatique.
 
 * textbutton
 
@@ -947,4 +950,4 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
    Petite classe d’aide permettant de faciliter la création des [CQ.Ext.data.Stores](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) à partir de données XML. Un XmlStore est automatiquement configuré avec un [CQ.Ext.data.XmlReader](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.XmlReader).
 
-   **cqinclude** pseudo xtype qui inclut des définitions de widgets provenant d&#39;un chemin d&#39;accès différent dans le référentiel. Il est le plus souvent utilisé dans les boîtes de dialogue de page. Il n’existe aucune classe de widget JavaScript pour ce xtype. Il est traité par la fonction formatData() de la classe CQ.Util. Pour plus d’informations, voir cet article de la base de connaissances.
+   **cqinclude** Pseudo xtype qui inclut des définitions de widgets provenant d&#39;un chemin d&#39;accès différent dans le référentiel. Il est le plus souvent utilisé dans les boîtes de dialogue de page. Il n’existe aucune classe de widget JavaScript pour ce xtype. Il est traité par la fonction formatData() de la classe CQ.Util. Pour plus d’informations, voir cet article de la base de connaissances.
