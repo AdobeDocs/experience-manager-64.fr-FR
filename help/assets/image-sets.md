@@ -40,7 +40,7 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 
 Pour démarrer rapidement :
 
-1. [Téléchargez vos images principales pour plusieurs vues.](#uploading-assets-in-image-sets)
+1. [Téléchargez vos Principales images pour plusieurs vues.](#uploading-assets-in-image-sets)
 
    Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande pour obtenir un détail de zoom optimal. Dynamic Media peut générer des images faisant jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
 
@@ -54,7 +54,7 @@ Pour démarrer rapidement :
 
    Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
-   **Important** : les jeux de lots sont créés par le système IPS (Image Production System) dans le cadre de l’assimilation de fichiers et ne sont disponibles que dans le mode Dynamic Media - Scene7.
+   **Important** : les visionneuses de lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation de ressources et ne sont disponibles que dans le mode Contenu multimédia dynamique - Scene7.
 
    Voir [Préparation du chargement de ressources de visionneuse d’images et Chargement des fichiers](#uploading-assets-in-image-sets).
 
@@ -176,7 +176,7 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
 Vous pouvez créer des visionneuses d’images dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
-**Important** : les visionneuses de lots sont créées par le système [de production d’] images IPS dans le cadre de l’assimilation de fichiers et sont disponibles uniquement en mode Dynamic Media - Scene7.)
+**Important** : les jeux de lots sont créés par le système [de production d&#39;] images IPS dans le cadre de l&#39;assimilation de ressources et ne sont disponibles que dans le mode Contenu multimédia dynamique - Scene7.)
 
 Notez toutefois que les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot *ne s’affichent pas* dans l’interface utilisateur. Vous pouvez afficher ces visionneuses de trois manières différentes. (Ces méthodes sont disponibles même si vous avez créé les visionneuses d’images dans l’interface utilisateur.)
 
