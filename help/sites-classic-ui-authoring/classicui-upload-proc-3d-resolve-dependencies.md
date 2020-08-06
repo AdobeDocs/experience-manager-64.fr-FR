@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 14754023-e7c4-4dc5-a9d8-408b81861d95
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 60%
 
 ---
 
@@ -42,6 +45,7 @@ Les dépendances des principaux fichiers de modèle 3D, tels que les fichiers d
 
       1. Notez les chemins et les noms de fichiers manquants.
       1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Fermer]**.
+
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. La nouvelle ressource chargée est désormais correctement répertoriée comme une ressource référencée.
 
    * **[!UICONTROL Ignorer les dépendances]**.
