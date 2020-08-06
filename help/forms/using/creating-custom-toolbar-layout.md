@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: c69bb229-d680-4a55-9b2d-cd5ad0f83a9e
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 83%
 
 ---
 
@@ -22,11 +25,11 @@ Lorsque vous créez un formulaire adaptatif, vous pouvez spécifier une mise en 
 
 La mise en page de barre d’outils dépend fortement du traitement côté client piloté par du code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe. Pour résoudre ce problème, AEM fournit des dossiers de bibliothèques côté client qui permettent de stocker le code côté client dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page web finale pour charger le code correct. Pour plus d’informations, voir [Fonctionnement des bibliothèques côté client dans AEM.](/help/sites-developing/clientlibs.md)
 
-![](assets/default_toolbar_layout.png) Exemple de mise en page de la barre d’outils **** Figure : *Exemple de mise en page de la barre d’outils*
+![Exemple de mise en page de la barre d’outils](assets/default_toolbar_layout.png)**Figure :** *Exemple de mise en page de la barre d’outils*
 
 Les formulaires adaptatifs fournissent un ensemble de mises en page prêtes à l’emploi :
 
-![](assets/toolbar1.png) Dispositions de barre d’outils disponibles prêtes à l’emploi **** Figure : Dispositions de *barre d’outils disponibles prêtes à l’emploi*
+![Dispositions de barre d’outils disponibles prêtes à l’emploi ](assets/toolbar1.png)**Figure :** *Dispositions de barre d’outils disponibles prêtes à l’emploi*
 
 Vous pouvez en outre créer une mise en page de barre d’outils personnalisée.
 
@@ -36,7 +39,7 @@ Le module de contenu joint contient le code complet décrit ci-dessous. After in
 
 CustomToolbarLayoutDemo.zip
 
-[Obtenir une mise en page de barre d’outils personnalisée avec File](assets/customtoolbarlayoutdemo.zip)Demo
+[Obtenir la mise en page de barre d&#39;outils personnalisée de la démonstration de fichier](assets/customtoolbarlayoutdemo.zip)
 
 ## Création d’une mise en page de barre d’outils personnalisée {#layout-1}
 
@@ -223,4 +226,4 @@ CustomToolbarLayoutDemo.zip
 >
 >La description mise à jour à l’étape précédente est affichée dans la liste déroulante Mise en forme.
 
-![](assets/toolbar_1.png) Vue Bureau de la barre d’outils **de disposition personnalisée** Figure : Vue *Bureau de la barre d’outils de disposition personnalisée*
+![vue de bureau de la barre d’outils](assets/toolbar_1.png)**de disposition personnalisée Figure :** *vue de bureau de la barre d’outils de disposition personnalisée*
