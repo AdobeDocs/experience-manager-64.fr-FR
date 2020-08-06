@@ -1,8 +1,8 @@
 ---
 title: Fonction de recherche
 seo-title: Fonction de recherche
-description: Ajout et configuration de la recherche sur un site des communautés
-seo-description: Ajout et configuration de la recherche sur un site des communautés
+description: Ajouter et configurer la recherche sur un site des communautés
+seo-description: Ajouter et configurer la recherche sur un site des communautés
 uuid: ca633456-911f-447f-881e-653533125d5f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
 source-git-commit: a6d50dbcbfec85d21072d51a5fa48e3667835f06
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 29%
 
 ---
 
@@ -53,7 +56,8 @@ Under the **[!UICONTROL Search Settings]** tab, specify how what paths are are s
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL Page]** de résultats Les résultats apparaîtront sur une page distincte spécifiée à l’aide du navigateur pour sélectionner une page contenant le `Search Results` composant.
+* **[!UICONTROL Page]** de résultats Les résultats apparaîtront sur une page distincte spécifiée à l’aide du navigateur pour sélectionner une page contenant la variable 
+`Search Results` component.
 
 ## Résultats de la recherche {#search-results}
 
