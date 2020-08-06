@@ -24,7 +24,7 @@ ht-degree: 40%
 >
 >Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations relatives à la protection des données et à la protection de la vie privée ; comme le RGPD, l&#39;ACCP, etc.
 
-Les AEM Communities exposent les API prêtes à l’emploi pour gérer les profils utilisateur et gérer en masse le contenu généré par l’utilisateur. Once enabled, the **UserUgcManagement** service allows the privileged users (community administrators and moderators) to disable user profiles, and bulk delete or bulk export UGC for specific users. Ces API permettent également aux contrôleurs et aux processeurs des données client de se conformer au Règlement général sur la protection des données (RGPD) de l&#39;Union européenne et à d&#39;autres mandats de confidentialité inspirés du RGPD.
+AEM Communities expose les API prêtes à l’emploi pour gérer les profils utilisateur et gérer en bloc le contenu généré par l’utilisateur. Once enabled, the **UserUgcManagement** service allows the privileged users (community administrators and moderators) to disable user profiles, and bulk delete or bulk export UGC for specific users. Ces API permettent également aux contrôleurs et aux processeurs des données client de se conformer au Règlement général sur la protection des données (RGPD) de l&#39;Union européenne et à d&#39;autres mandats de confidentialité inspirés du RGPD.
 
 Pour plus d’informations, voir la [page RGPD du centre de traitement des données personnelles d’Adobe](https://www.adobe.com/fr/privacy/general-data-protection-regulation.html).
 
@@ -57,18 +57,18 @@ Par exemple, pour exporter le contenu généré par un utilisateur nommé Weston
 
 * **user** : ID autorisable d’un utilisateur.
 
-Par exemple, pour supprimer l’UGC d’un utilisateur disposant d’un ID autorisé weston.mccall@dodgit.com via une requête http-POST, utilisez les paramètres suivants :
+Par exemple, pour supprimer l’UGC d’un utilisateur disposant d’un ID pouvant être autorisé weston.mccall@dodgit.com via une requête de POST HTTP, utilisez les paramètres suivants :
 
 * user= weston.mccall@dodgit.com
 * operation= deleteUgc
 
-### Supprimer l&#39;UGC de Adobe Analytics {#delete-ugc-from-analytics}
+### Supprimer l&#39;UGC d&#39;Adobe Analytics {#delete-ugc-from-analytics}
 
-Pour supprimer les données utilisateur de l’Adobe Analytics, suivez le processus de Analytics du GDPR ; car l’API ne supprime pas les données utilisateur d’Adobe Analytics.
+Pour supprimer les données utilisateur de l’Adobe Analytics, suivez le flux de travaux GDPR Analytics ; car l’API ne supprime pas les données utilisateur d’Adobe Analytics.
 
-Pour les mappages des variables Adobe Analytics utilisés par les AEM Communities, reportez-vous à l’image suivante :
+Pour les mappages de variables Adobe Analytics utilisés par AEM Communities, reportez-vous à l’image suivante :
 
-![Mappage des variables des communautés AEM pour Adobe Analytics](assets/Analytics-Communities-Mapping.png)
+![Mappage des variables de communautés AEM pour Adobe Analytics](assets/Analytics-Communities-Mapping.png)
 
 ## Désactivation d’un compte utilisateur {#disable-a-user-account}
 
@@ -80,7 +80,7 @@ Pour les mappages des variables Adobe Analytics utilisés par les AEM Communitie
 >
 >La désactivation d’un utilisateur supprime tout le contenu qu’il a généré et qui se trouve sur le serveur.
 
-Par exemple, pour supprimer le profil d’un utilisateur disposant d’un identifiant weston.mccall@dodgit.com via une requête http-POST, utilisez les paramètres suivants :
+Par exemple, pour supprimer le profil d’un utilisateur disposant d’un ID weston.mccall@dodgit.com autorisé via une requête de POST HTTP, utilisez les paramètres suivants :
 
 * user= weston.mccall@dodgit.com
 * operation= deleteUser
