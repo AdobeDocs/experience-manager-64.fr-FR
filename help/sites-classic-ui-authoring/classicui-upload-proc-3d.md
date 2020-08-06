@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0be4a856-951b-4cb6-8103-8004052c63a0
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 80%
 
 ---
 
@@ -21,7 +24,7 @@ Utilisez les mécanismes de synchronisation ou de chargement standard pour impor
 
 Voir la section [Chargement des ressources](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
-Adobe vous recommande de télécharger tous les fichiers référencés avant ou en même temps que le fichier de modèle 3D principal. Cependant, ceci n’est pas obligatoire.
+L&#39;Adobe vous recommande de télécharger tous les fichiers référencés avant ou en même temps. Il vous est recommandé de télécharger le Principal fichier de modèle 3D. Cependant, ceci n’est pas obligatoire.
 
 Une fois le téléchargement terminé, vos fichiers 3D sont convertis et un traitement supplémentaire est appliqué afin de préparer la ressource en vue de la visualisation et du rendu.
 
@@ -54,19 +57,19 @@ Les tâches de conversion, de traitement et de rendu sont placées en file d’a
 
 ## Surveillance de l’état du traitement de vos fichiers 3D chargés {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. Chaque modèle 3D téléchargé subit généralement les étapes de traitement triées suivantes :
+In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. Chaque modèle 3D téléchargé subit généralement les quatre ou six étapes de traitement ordonnées suivantes :
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Etape de traitement</strong><br /> </td> 
+   <td><strong>Phase de traitement</strong><br /> </td> 
    <td><strong>Noms de traitement</strong></td> 
    <td><strong>Description</strong></td> 
   </tr> 
   <tr> 
    <td>1</td> 
    <td>Traitement en cours</td> 
-   <td>Traitement initial de base et extraction de métadonnées.</td> 
+   <td>extraction initiale de base du traitement et des métadonnées.</td> 
   </tr> 
   <tr> 
    <td>2</td> 
@@ -75,12 +78,12 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   </tr> 
   <tr> 
    <td>3</td> 
-   <td>Création d’un aperçu</td> 
+   <td>Création de prévisualisation</td> 
    <td>Le fichier FBX ou OBJ est assimilé et traité. Les dépendances de fichier sont évaluées et résolues en tant que références de ressources, si possible.</td> 
   </tr> 
   <tr> 
    <td>4</td> 
-   <td>Création de cartes graphiques</td> 
+   <td>Création de cartes lumineuses</td> 
    <td>Facultatif. Permet d’augmenter la qualité de l’aperçu interactif et d’accélérer le rendu avec le moteur de rendu par défaut.</td> 
   </tr> 
   <tr> 
