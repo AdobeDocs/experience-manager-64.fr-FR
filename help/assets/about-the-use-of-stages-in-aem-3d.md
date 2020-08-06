@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 7b9d3b81-3bb4-4ca6-b6e1-f9adfb455855
 translation-type: tm+mt
 source-git-commit: 9cc06c16122b98146c51ac61d7fa27553a9d971e
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 69%
 
 ---
 
