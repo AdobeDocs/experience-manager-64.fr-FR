@@ -42,12 +42,12 @@ Vous pouvez parcourir l’interface utilisateur principale de l’espace de trav
 
 ## Utilisation de l’espace de travail AEM Forms avec des lecteurs d’écran {#using-html-workspace-with-screen-readers}
 
-L’espace de travail AEM Forms est une application HTML Web compatible avec les lecteurs d’écran. Vous pouvez naviguer dans l’interface de l’espace de travail AEM Forms à l’aide du clavier.
+AEM Forms Workspace est une application HTML Web compatible avec les lecteurs d’écran. Vous pouvez naviguer dans l’interface de l’espace de travail AEM Forms à l’aide du clavier.
 
 Pour utiliser l’espace de travail AEM Forms avec un lecteur d’écran, gardez à l’esprit les points suivants :
 
-* L’espace de travail AEM Forms est une application HTML standard conforme à tout outil de lecteur d’écran standard. Vous n’avez pas besoin de script spécifique pour exécuter un outil de lecteur d’écran.
-* La navigation dans l’espace de travail AEM Forms s’effectue via des balises d’ancrage, qui sont facilement accessibles via des onglets.
+* AEM Forms Workspace est une application HTML standard conforme à tout outil de lecteur d’écran standard. Vous n’avez pas besoin de script spécifique pour exécuter un outil de lecteur d’écran.
+* Toute la navigation dans l’espace de travail AEM Forms se fait par le biais de balises d’ancrage, qui peuvent être facilement accessibles via des onglets.
 * Le chargement des formulaires peut prendre quelques secondes. Le lecteur d’écran ne vous informe pas de manière audible que le formulaire est en cours de chargement et que vous devez attendre.
 
 ## Navigation dans l’espace de travail AEM Forms à l’aide du clavier {#navigating-html-workspace-using-a-keyboard}
