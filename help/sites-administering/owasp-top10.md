@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 280c2b3cc8026988472d4ad0cf6649fa8a7c9c38
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -46,7 +46,7 @@ Tous les accès aux objets de données sont arbitrés par le référentiel et do
 
 ## 5. Cross-Site Request Forgery (CSRF) {#cross-site-request-forgery-csrf}
 
-La fonctionnalité CSRF (Cross-Site Request Forgery) est atténuée en injectant automatiquement un jeton cryptographique dans tous les formulaires et requêtes AJAX et en vérifiant ce jeton sur le serveur pour chaque POST.
+La fonctionnalité CSRF (Cross-Site Request Forgery) est atténuée en injectant automatiquement un jeton cryptographique dans tous les formulaires et demandes d’AJAX et en vérifiant ce jeton sur le serveur pour chaque POST.
 
 In addition, AEM ships with a referrer-header based filter, which can be configured to *only* allow POST requests from specific hosts (defined in a list).
 
