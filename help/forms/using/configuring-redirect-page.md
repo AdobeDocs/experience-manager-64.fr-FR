@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: c51817aa-193a-4d4f-bd83-06518ddfb395
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 72%
 
 ---
 
@@ -24,13 +27,13 @@ Pour chaque formulaire, les auteurs peuvent configurer une page vers laquelle le
 1. Indiquez L’URL de la page de redirection sous Page de remerciement dans la section Envoyer. 
 1. Sous Action Envoyer, vous pouvez éventuellement configurer le paramètre à transmettre à la page de redirection pour l’action Envoyer vers le point de fin REST.
 
-![](assets/thank-you-setting-1.png) Configuration **de la page de redirection** Figure : Configuration de la page de *redirection*
+![Configuration](assets/thank-you-setting-1.png)**de la page de redirection Figure :** *Configuration de la page de redirection*
 
 Les auteurs de formulaires peuvent utiliser les paramètres suivants qui sont transmis à la page de remerciement. For all the available submit actions, `status` and `owner` parameters are passed. Outre ces deux paramètres, des paramètres supplémentaires sont transmis pour les actions d’envoi suivantes :
 
-* **Action** Stocker le contenu (obsolète) : `contentPath`(chemin d’accès du noeud dans le référentiel où sont stockées les données envoyées) est transmis.
+* **Action** Stocker le contenu (obsolète) : `contentPath`—le chemin d’accès du noeud dans le référentiel où sont stockées les données envoyées est transmis.
 
-* **Action** Stocker le PDF (obsolète) : `contentPath`(des données envoyées et du chemin d’accès au noeud stockant le fichier PDF dans le référentiel) est transmis.
+* **Action** Stocker le PDF (obsolète) : `contentPath`—des données envoyées et du chemin d’accès au noeud qui stocke le fichier PDF dans le référentiel—est transmis.
 
 * **Flux de travail Envoyer aux formulaires** : les paramètres de sortie renvoyés à partir du flux de travail des formulaires sont transmis.
 
