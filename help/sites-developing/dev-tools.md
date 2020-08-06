@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 73%
 
 ---
 
@@ -58,5 +61,5 @@ Outils facilitant la création de projets :
 >[!NOTE]
 >
 >Le didacticiel suivant peut être intéressant pour le démarrage d’un nouveau projet AEM :\
->[Prise en main des sites AEM Partie 1 - Configuration du projet](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
+>[Prise en main de AEM Sites Partie 1 - Configuration du projet](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
 
