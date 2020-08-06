@@ -1,6 +1,6 @@
 ---
-title: Recherche
-seo-title: Recherche
+title: Rechercher
+seo-title: Rechercher
 description: Retrouvez votre contenu plus rapidement grâce à de puissantes options de recherche
 seo-description: Retrouvez votre contenu plus rapidement grâce à de puissantes options de recherche
 uuid: 1e80cf85-653f-4dde-930a-de05415b994f
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 94%
 
 ---
 
@@ -31,13 +34,13 @@ La recherche est disponible dans la barre d’outils supérieure :
 
 Avec le rail de recherche, vous pouvez accomplir ce qui suit :
 
-* Recherchez un mot-clé, un chemin ou une balise.
-* Filtrez selon des critères spécifiques aux ressources, dates de modification, état de la page, taille du fichier, etc.
-* Définissez et utilisez une [recherche enregistrée](#saved-searches) sur la base des critères ci-dessus.
+* Rechercher un mot-clé, un chemin ou une balise.
+* Filtrer selon des critères spécifiques aux ressources, dates de modification, état de la page, taille du fichier, etc.
+* Définir et utiliser une [recherche enregistrée](#saved-searches) sur la base des critères ci-dessus.
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>Vous pouvez également accéder à la fonction de recherche en appuyant sur la touche `/` (barre oblique) lorsque le rail de recherche est visible.
 
 ## Rechercher et filtrer {#search-and-filter}
 
@@ -70,6 +73,7 @@ Pour rechercher et filtrer vos ressources :
    * Répertoire de recherche
    * Balises
    * Critères de recherche, par exemple, les dates de modification, l’état de publication, l’état LiveCopy. 
+
    >[!NOTE]
    >
    >Les critères de recherche peuvent varier :
@@ -80,7 +84,7 @@ Pour rechercher et filtrer vos ressources :
 
    ![screen_shot_2018-03-23at101619](assets/screen_shot_2018-03-23at101619.png)
 
-1. Vous pouvez également ajouter des termes de recherche :
+1. Vous pouvez également ajouter des termes de recherche:
 
    ![screen_shot_2018-03-23at101710](assets/screen_shot_2018-03-23at101710.png)
 
@@ -92,7 +96,7 @@ Pour rechercher et filtrer vos ressources :
 >
 >Lorsque vous sélectionnez un élément sur la page de résultats de recherche et lorsque vous revenez à la page de recherche après avoir utilisé le bouton Précédent du navigateur, les critères de recherche restent inchangés.
 
-## Saved Searches {#saved-searches}
+## Recherches enregistrées {#saved-searches}
 
 Outre la recherche selon diverses facettes, vous pouvez également enregistrer une configuration de recherche particulière pour la récupérer et la réutiliser ultérieurement :
 
