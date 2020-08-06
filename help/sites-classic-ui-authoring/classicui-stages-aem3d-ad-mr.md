@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f30c4039-3bbf-4d02-a9b5-bda6ccce16b9
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 88%
 
 ---
 
@@ -25,6 +28,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
    * Lumières directionnelles
    * Projecteurs
    * Lumières ponctuelles
+
    D’autres types de lumière sont ignorés ou convertis dans l’un des types pris en charge ci-dessus lorsque l’étape est chargée dans AEM 3D. Les types convertis sont utilisés lorsque vous affichez la ressource et lorsque vous utilisez le convertisseur Rapid Refine intégré pour le rendu. Les types de lumière d’origine sont utilisés lors du rendu avec Maya.
 
 1. Créez un plan de masse, si nécessaire, et appliquez un matériau approprié.
@@ -45,8 +49,8 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
 
    * **[!UICONTROL Onglet Qualité]**
 
-      * **[!UICONTROL Qualité]** `- 0.5` globale ou inférieure
-      * **[!UICONTROL Mode]** Diffusion Indirecte (GI) - `Final Gather`
+      * **[!UICONTROL Qualité]** globale `- 0.5` ou moins
+      * **[!UICONTROL Mode]** Diffuse Indirecte (GI) - `Final Gather`
       * **[!UICONTROL Taille]** du filtre - `2.0`, `2.0`
    * Définissez le rendu de la scène selon les tailles de l’image type que vous comptez utiliser. If necessary, refine the lights, or [!UICONTROL Render settings], or do both to achieve the results you want.
 
