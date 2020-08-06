@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 84%
 
 ---
 
@@ -72,7 +75,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
    * **Confirmer le mot de passe**
 
-      Ceci est obligatoire car requis pour la confirmation du mot de passe.
+      Ceci est obligatoire car il est nécessaire pour la confirmation du mot de passe.
 
    * **Prénom**
    * **Nom**
@@ -89,7 +92,8 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
    * **À propos**
    * **Paramètres du compte**
 
-      * **Statut** Vous pouvez signaler le compte comme étant **actif** ou **inactif**.
+      * **Statut** Vous pouvez marquer le compte comme 
+**principal** ou **inactif**.
    * **Photo**
 
       Vous pouvez ici télécharger une photo à utiliser comme avatar.
@@ -104,7 +108,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
    * **Groupes**
 
-      Liste des groupes auxquels l’utilisateur est actuellement membre. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
+      liste du ou des groupes dont l’utilisateur est actuellement membre. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
 
 
 1. Lorsque vous avez défini le compte d’utilisateur, utilisez :
@@ -187,7 +191,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
    * **Description**
 
-       Description du groupe.
+      Description du groupe.
 
    * **Ajouter des membres au groupe**
 
@@ -195,7 +199,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
    * **Membres du groupe**
 
-      Liste des utilisateurs du groupe. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
+      liste d’utilisateurs du groupe. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
 
 1. Lorsque vous avez défini le groupe, utilisez :
 
