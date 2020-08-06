@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: 1bada670-3e0e-40f4-b9be-8b090df910be
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 80%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 **- Conditions requises**
 
-**Connaissances** préalables requises Avant de pouvoir ajouter AEM Forms Workspace à SharePoint Server, vous devez avoir accès à SharePoint Server avec les privilèges appropriés et connaître l’URL d’accès à Workspace. Les étapes ci-dessous supposent que vous connaissez SharePoint Server. Pour en savoir plus sur les composants Webpart de SharePoint Server, consultez Composants Webpart sous Windows SharePoint Services.
+**Connaissances** préalables Avant de pouvoir ajouter AEM Forms Workspace à SharePoint Server, vous devez avoir accès à SharePoint Server avec les privilèges appropriés et connaître l’URL d’accès à Workspace. Les étapes ci-dessous supposent que vous connaissez SharePoint Server. Pour en savoir plus sur les composants Webpart de SharePoint Server, consultez Composants Webpart sous Windows SharePoint Services.
 
 **Niveau d’utilisateur** Début
 
@@ -49,7 +52,7 @@ Effectuez les étapes suivantes pour intégrer AEM Forms Workspace à un composa
 
    ![Zone Composant Webpart de la visionneuse de pages de Microsoft Office SharePoint Server.](assets/page-viewer-web-part-box-in-microsoft-office-sharepoint-server.png)
 
-   **** Figure : *La zone Composant Webpart de la visionneuse de pages dans Microsoft Office SharePoint Server.*
+   **Figure :** *Zone Composant Webpart de la visionneuse de pages dans le serveur Microsoft Office SharePoint.*
 
 1. Sur la page Visionneuse de pages, effectuez les tâches suivantes :
 
@@ -67,5 +70,5 @@ Une fois que vous avez effectué toutes les étapes ci-dessus, votre site ShareP
 
 ![AEM Forms Workspace intégré à Microsoft Office SharePoint Server](assets/aem-forms-workspace.jpg)
 
-**** Figure : Espace de travail *AEM Forms intégré à Microsoft Office SharePoint Server*
+**Figure :** *AEM Forms Workspace intégré à Microsoft Office SharePoint Server*
 
