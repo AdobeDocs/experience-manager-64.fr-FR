@@ -135,6 +135,7 @@ Vous pouvez transférer une tâche accompagnée de notes ou de pièces jointes �
    * **Transférer**
    * **Partager**
    * **Consulter**
+
    >[!NOTE]
    >
    >Selon la tâche, vous pouvez également effectuer ces actions à partir de la liste des tâches sans ouvrir la tâche.
@@ -231,8 +232,9 @@ Lorsque vous terminez une tâche, selon la tâche, une boîte de dialogue de con
 
    * Sélectionnez la tâche et cliquez sur le bouton approprié pour l’étape suivante requise dans le processus en bas de la liste.
    * If the form has no buttons and the Complete button in AEM Forms workspace is available, click **Complete**.
-   * Si le formulaire comporte des boutons et que le bouton Terminer dans l’espace de travail AEM Forms n’est pas disponible, cliquez sur le bouton approprié du formulaire pour passer à l’étape suivante du processus.
-   Si le formulaire ne comporte aucun bouton et que le bouton Terminer dans l’espace de travail AEM Forms n’est pas disponible, un message s’affiche, indiquant que le formulaire ne peut pas être envoyé.
+   * Si le formulaire comporte des boutons et que le bouton Terminer de l’espace de travail AEM Forms n’est pas disponible, cliquez sur le bouton approprié du formulaire pour passer à l’étape suivante du processus.
+
+   Si le formulaire ne comporte aucun bouton et que le bouton Terminer de l’espace de travail AEM Forms n’est pas disponible, un message s’affiche, indiquant que le formulaire ne peut pas être envoyé.
 
 1. Si une boîte de dialogue de confirmation s’affiche, effectuez l’une des actions suivantes :
 
@@ -270,7 +272,7 @@ Vous pouvez envoyer plusieurs tâches dans votre liste des tâches. Les tâches 
 
 Vous pouvez recevoir et effectuer les tâches par courrier électronique. La participation aux tâches par courrier électronique vous évite d’avoir à consulter régulièrement votre liste de tâches afin de vérifier l’existence de nouvelles tâches ou la page Suivi pour vérifier l’état d’une tâche.
 
-Tout d’abord, définissez vos préférences d’espace de travail AEM Forms pour recevoir des notifications par courrier électronique. L’espace de travail AEM Forms peut envoyer des notifications par courrier électronique pour les tâches de votre liste de tâches ou de tout groupe auquel vous appartenez. L’administrateur détermine le moment d’envoi des courriers électroniques de notification, ainsi que leurs destinataires.
+Tout d’abord, définissez vos préférences d’espace de travail AEM Forms pour recevoir des notifications par courrier électronique. AEM Forms Workspace peut envoyer des notifications par courrier électronique pour les tâches de votre liste de tâches ou de tout groupe auquel vous appartenez. L’administrateur détermine le moment d’envoi des courriers électroniques de notification, ainsi que leurs destinataires.
 
 Les courriers électroniques peuvent contenir un lien qui ouvre la tâche dans AEM Forms Workspace, une pièce jointe du formulaire utilisé pour la tâche, ou des actions pour exécuter la tâche par courrier électronique. Si un formulaire est inclus dans le courrier électronique, vous pouvez ouvrir le formulaire et exécuter la tâche si les boutons nécessaires sont intégrés dans le formulaire. Si les actions pour exécuter la tâche sont incluses dans le courrier électronique, vous pouvez effectuer la tâche en cliquant sur les actions dans le courrier électronique ou en répondant au courrier électronique avec l’action saisie en tant que première ligne dans le corps du courrier électronique.
 
