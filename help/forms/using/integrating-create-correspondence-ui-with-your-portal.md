@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '497'
+ht-degree: 78%
 
 ---
 
@@ -30,7 +33,7 @@ Il est possible d’appeler l’application de création de correspondance à pa
 
 Par exemple, le portail personnalisé prépare l’URL en tant que\
 `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, qui peut être la valeur href d’un lien sur le portail.\
-Si le portail dispose du nom du modèle de lettre, l’URL peut être\
+Si le nom du modèle de lettre est disponible sur le portail, l’URL peut être\
 `https://[server]:[port]/content/cm/createcorrespondence.html?cmLetterName=[letter name]&cmDataUrl=[data URL]`.
 
 >[!NOTE]
@@ -57,7 +60,7 @@ Another (and a more secure) way to call the Create Correspondence application co
   <tr>
    <td>cmLetterInstanceId</td> 
    <td>Chaîne</td> 
-   <td>Identifiant de l’instance de lettre.</td> 
+   <td>Identificateur de l’instance de lettre.</td> 
   </tr>
   <tr>
    <td>cmLetterName</td> 
@@ -95,7 +98,7 @@ L’ordre des paramètres du tableau indique la préférence de paramètres util
   </tr>
   <tr>
    <td>cmUseTestData</td> 
-   <td>Booléen  </td> 
+   <td>Booléen</td> 
    <td>Pour réutiliser les données de test associées au dictionnaire de données.</td> 
   </tr>
  </tbody>
@@ -114,7 +117,7 @@ L’ordre des paramètres du tableau indique la préférence de paramètres util
   </tr>
   <tr>
    <td>cmPreview<br /> </td> 
-   <td>Booléen  </td> 
+   <td>Booléen</td> 
    <td>Permet d’ouvrir la lettre en mode aperçu<br /> </td> 
   </tr>
   <tr>
