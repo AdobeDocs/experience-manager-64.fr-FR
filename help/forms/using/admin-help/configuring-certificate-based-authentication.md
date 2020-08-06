@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 94%
 
 ---
 
@@ -55,23 +58,24 @@ Lorsque vous testez un certificat, User Management télécharge les contrôles p
    Vous pouvez utiliser les caractères suivants dans l’expression regex :
 
    * . (n’importe quel caractère)
-   *  &amp;ast; (0 occurrence ou plus)
+   * &amp;ast; (0 occurrence ou plus)
    * () (spécifier le groupe entre parenthèses)
    * \ (permet d’utiliser un caractère regex en tant que caractère normal)
    * $n (permet de faire référence au énième groupe)
+
    Exemples d’expressions régulières :
 
    * Pour extraire « Alex Dupont » de « Alex Dupont (Authentification) »
 
-      **Regex :** (.&amp;ast;) \(Authentication\)
+      **Regex :** (.&amp;ast;) \(Authentification\)
 
    * Pour extraire « Alex Dupont » de « Alex (Authentification) Dupont »
 
-      **Regex :** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+      **Regex :** (.&amp;ast;)\(Authentification\) (.&amp;ast;)
 
    * Pour extraire « Dupont Alex » de « Alex (Authentification) Dupont »
 
-      **Regex :** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+      **Regex :** (.&amp;ast;)\(Authentification\) (.&amp;ast;)
 
       Ordre personnalisé : $2 $1 (renvoyer le second groupe concaténé au premier groupe, capturé par un caractère espace)
 
