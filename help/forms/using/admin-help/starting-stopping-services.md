@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 82%
 
 ---
 
@@ -33,8 +36,8 @@ Les modules AEM forms (par exemple, Forms, Rights Management et Output) fonction
 
 Une implémentation complète d’AEM forms comprend des services de serveur d’applications et de base de données :
 
-* *`[application server]`* pour AEM Forms
-* *`[database]`* pour AEM Forms
+* *`[application server]`* pour les formulaires AEM
+* *`[database]`* pour les formulaires AEM
 
 On Windows, these services are accessible through the **Administrative Tools** > **Services panel**. Par exemple, si vous avez installé AEM forms sur JBoss à l’aide de la méthode clé en main, les services suivants sont disponibles :
 
