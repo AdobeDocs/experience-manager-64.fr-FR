@@ -10,6 +10,9 @@ topic-tags: interactive-communications
 discoiquuid: 046b1bf9-1ac7-4e2e-ab37-6fe5422dfa20
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '1305'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +26,7 @@ Les modèles de formulaire XFA ou XDP sont ceux de :
 
 * Fragments de mise en page
 
-Les XDP sont conçus dans Adobe Forms Designer. Cet article explique en détail comment concevoir vos fichiers XDP pour créer des correspondances/communications interactives efficaces, par exemple où utiliser les champs de formulaire ou les zones cible et quand utiliser des fragments de mise en page.
+Les XDP sont conçus dans Adobe Forms Designer. Cet article fournit des détails sur la conception de vos fichiers XDP pour créer des correspondances/communications interactives efficaces, comme l’emplacement d’utilisation des champs de formulaire ou des zones de cible et le moment d’utilisation des fragments de mise en page.
 
 ## Création d’une mise en page pour des lettres ou pour le canal d’impression des communications interactives {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
@@ -71,7 +74,7 @@ Un champ associable ne doit pas :
 
 * inclure de suffixe « _int » dans son nom ;
 * avoir une liaison définie comme « aucune » ;
-* être un enfant d’un élément &lt;exclGroup>
+* être l’enfant d’un élément &lt;exclGroup>
 
 Dès lors qu’un champ associable répond aux critères décrits ci-dessus, il peut être situé à n’importe quel emplacement et dans n’importe quel niveau d’imbrication de la mise en page. Vous pouvez utiliser les champs associables dans les pages de gabarit.
 
