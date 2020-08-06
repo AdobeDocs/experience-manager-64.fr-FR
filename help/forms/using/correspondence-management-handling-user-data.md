@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 87%
 
 ---
 
@@ -33,16 +36,16 @@ Selon la persistance du stockage de données configuré pour votre déploiement 
  <tbody>
   <tr>
    <td><p><strong>Type de persistance</strong></p> </td> 
-   <td><p><strong>Magasin de données</strong></p> </td> 
+   <td><p><strong>Stockage de données</strong></p> </td> 
    <td><p><strong>Emplacement</strong></p> </td> 
   </tr>
   <tr>
-   <td><p>Default</p> </td> 
+   <td><p>Valeur par défaut</p> </td> 
    <td><p>Référentiel AEM d’une instance de publication et des instances d’auteur spécifiées dans la configuration d’une réplication inverse</p> </td> 
    <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code> </p> </td> 
   </tr>
   <tr>
-   <td><p>distant</p> </td> 
+   <td><p>Distant</p> </td> 
    <td><p>Référentiel AEM de l’instance d’auteur de traitement distante</p> </td> 
    <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code></p> </td> 
   </tr>
@@ -79,6 +82,6 @@ Vous pouvez également accéder à une instance de lettre dans un référentiel 
 Pour rechercher une instance de lettre qui contient les données d’un utilisateur spécifique, vous pouvez :
 
 * utiliser les API de Correspondence Management si le nom de l’instance de lettre ou l’utilisateur qui a enregistré le brouillon ou envoyé la correspondance est connu ;
-* Utilisez la recherche de référentiel AEM à l’aide d’informations d’identification personnelle telles que l’ID ou le nom de l’adresse électronique pour rechercher le noeud sur lequel les informations sont stockées.
+* Utilisez AEM recherche de référentiel à l’aide d’informations d’identification personnelle telles que l’ID ou le nom de l’adresse électronique pour rechercher le noeud sur lequel les informations sont stockées.
 
 Pour supprimer définitivement des données utilisateur de correspondances sous forme de brouillon et envoyées dans les systèmes AEM, vous devez supprimer manuellement le nœud d’instance de lettre de toutes les instances AEM applicables.
