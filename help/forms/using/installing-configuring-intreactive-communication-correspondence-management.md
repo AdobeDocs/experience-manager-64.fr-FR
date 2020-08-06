@@ -19,7 +19,7 @@ ht-degree: 73%
 
 ## Présentation {#introduction}
 
-AEM Form permet de centraliser la création, l’assemblage, la gestion et la diffusion de documents sécurisés et interactifs tels que les correspondances d’entreprise, les documents, les relevés, les avis d’avantages, les courriers marketing, les factures et les kits de bienvenue. Cette fonctionnalité est appelée communication interactive. Cette fonctionnalité est incluse dans le package du module complémentaire AEM Forms. Le package du module complémentaire est déployé sur une instance de création ou de publication d’AEM.
+AEM Form a la capacité de centraliser la création, l&#39;assemblage, la gestion et la diffusion de documents sécurisés et interactifs tels que les correspondances d&#39;entreprise, les documents, les relevés, les avis d&#39;avantages, les courriels marketing, les factures et les kits de bienvenue. Cette fonctionnalité est appelée communication interactive. Cette fonctionnalité est incluse dans le package du module complémentaire AEM Forms. Le package du module complémentaire est déployé sur une instance de création ou de publication d’AEM.
 
 Vous pouvez utiliser la fonctionnalité de communication interactive pour produire une communication dans plusieurs formats, par exemple, Web et PDF. Vous pouvez intégrer la communication interactive au processus AEM pour traiter et fournir la communication assemblée aux clients sur le canal de leur choix. Par exemple, l’envoi d’une communication à l’utilisateur final par email.
 
@@ -37,12 +37,12 @@ Les communications interactives AEM Forms exécutent les interfaces utilisateur 
 
 ## Configuration requise {#system-requirements}
 
-Avant de commencer à installer et à configurer les capacités interactives de gestion des communications et de la correspondance des AEM Forms, assurez-vous que :
+Avant de commencer à installer et à configurer les fonctionnalités interactives de gestion des communications et de la correspondance d’AEM Forms, assurez-vous que :
 
 * Le matériel et l’infrastructure logicielle sont en place. Pour obtenir une liste détaillée des matériels et logiciels pris en charge, voir [Conditions techniques applicables](/help/sites-deploying/technical-requirements.md).
 
 * Le chemin d’installation de l’instance AEM ne contient aucun espace blanc.
-* Une instance AEM est en cours d’utilisation. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. Vous avez besoin d’au moins une instance AEM (Auteur ou Traitement) pour exécuter les fonctionnalités AEM Forms de communication interactive et de gestion de correspondance :
+* Une instance AEM est en cours d’utilisation. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. Vous avez besoin d’au moins une instance AEM (Auteur ou Traitement) pour exécuter les fonctionnalités de communication interactive et de gestion de correspondance de AEM Forms :
 
    * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site Web. Une fois que le contenu est publié, il est répliqué sur l’instance de publication.
    * **Traitement :** une instance de traitement est une instance [de création AEM sécurisée de manière renforcée](/help/forms/using/hardening-securing-aem-forms-environment.md). Vous pouvez configurer une instance de création et renforcer sa sécurité après avoir effectué l’installation.
@@ -86,7 +86,7 @@ Avant de commencer à installer et à configurer les capacités interactives de 
 
 ## Installation du module complémentaire AEM Forms {#install-aem-forms-add-on-package}
 
-Le package du module complémentaire AEM Forms est une application déployée sur AEM. Le package contient des fonctionnalités AEM Forms de communication interactive, de gestion de la correspondance et d’autres fonctionnalités. Suivez les étapes ci-après pour installer le package du module complémentaire :
+Le package du module complémentaire AEM Forms est une application déployée sur AEM. Le package contient des fonctionnalités de communication interactive AEM Forms, de gestion de la correspondance et d’autres fonctionnalités. Suivez les étapes ci-après pour installer le package du module complémentaire :
 
 1. Distribution [](https://experience.adobe.com/downloads)de logiciels ouverts. Vous avez besoin d&#39;un Adobe ID pour vous connecter à la distribution de logiciels.
 1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
@@ -99,7 +99,7 @@ Le package du module complémentaire AEM Forms est une application déployée s
 
    Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [AEM Forms Release](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) .
 
-1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED ne s’affichent plus dans le fichier [AEM-Installation-Directory]/crx-quickstart/logs/error.log et que le journal soit stable.
+1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d&#39;arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED ne s&#39;affichent plus dans le fichier [AEM-Installation-Directory]/crx-quickstart/logs/error.log et que le journal est stable.
 1. Répétez les étapes 1 à 7 sur toutes les instances de création et de publication.
 
 ## Configurations post-installation {#post-installation-configurations}
