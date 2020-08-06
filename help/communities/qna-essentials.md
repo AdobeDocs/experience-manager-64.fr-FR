@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 3%
 
 ---
 
@@ -45,7 +48,7 @@ Cette page fournit les informations essentielles pour travailler sur le forum de
   </tr>
   <tr>
    <td> properties</td> 
-   <td>Voir <a href="working-with-qna.md">Fonctionnalité du forum QnA</a></td> 
+   <td>Voir <a href="working-with-qna.md">QnA Forum Feature</a></td> 
   </tr>
  </tbody>
 </table>
@@ -56,27 +59,27 @@ Cette page fournit les informations essentielles pour travailler sur le forum de
 
 * [API QnA](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [Points de fin QnA](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [Points de terminaison QnA](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](server-customize.md)
 
 ### Fonction Q&amp;R {#qna-function}
 
-Une structure de site de la communauté qui inclut la fonction [](functions.md#qna-function) QnA aura un `QnA` composant configuré, ainsi que des paramètres affectant la modération et le balisage. La fonction QnA prend en charge l’identification d’un groupe [d’utilisateurs membres](users.md#privileged-members-group)privilégiés.
+Une structure de site communautaire qui inclut la fonction [](functions.md#qna-function) QnA aura un `QnA` composant configuré, ainsi que des paramètres affectant la modération et le balisage. La fonction QnA prend en charge l&#39;identification d&#39;un groupe [d&#39;utilisateurs](users.md#privileged-members-group)privilégiés.
 
 ### Accès aux publications du forum QnA (UGC) {#accessing-qna-forum-posts-ugc}
 
-L’UGC doit être modérée à l’aide de l’une des méthodes standard de modération.\
+L’UGC doit être modéré à l’aide de l’une des méthodes standard de modération.\
 Voir [Modération du contenu](moderate-ugc.md)généré par l’utilisateur.
 
-Depuis les communautés AEM 6.1, l’utilisation d’un magasin [](working-with-srp.md) commun pour l’UGC inclut l’accès par programmation à l’UGC, quelle que soit l’option de stockage choisie (par exemple, ASRP, MSRP ou JSRP).
+AEM 6.1 Collectivités, l&#39;utilisation d&#39;un magasin [](working-with-srp.md) commun pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
 
-**L’emplacement et le format de l’UGC dans le référentiel peuvent être modifiés sans avertissement**.
+**L&#39;emplacement et le format de l&#39;UGC dans le référentiel peuvent être modifiés sans avertissement**.
 
 Voir :
 
-* [Présentation](srp.md) du fournisseur de ressources de stockage - présentation et présentation de l&#39;utilisation du référentiel
-* [SRP et UGC Essentials](srp-and-ugc.md) - Méthodes et exemples d&#39;utilitaires SRP
-* [Accès UGC avec SRP](accessing-ugc-with-srp.md) - directives de codage
+* [Présentation](srp.md) du fournisseur de ressources d&#39;Enregistrement - présentation et présentation de l&#39;utilisation du référentiel
+* [SRP et UGC Essentials](srp-and-ugc.md) - Exemples et méthodes d&#39;utilitaire SRP
+* [Accès à l&#39;UGC avec SRP](accessing-ugc-with-srp.md) - directives de codage
 * [SocialUtils Refactoring](socialutils.md) - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles
 
