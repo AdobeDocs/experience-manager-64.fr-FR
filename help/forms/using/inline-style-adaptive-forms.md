@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 88%
 
 ---
 
@@ -61,7 +64,7 @@ Notez la modification du style de la zone de texte comme illustré ci-dessous ap
    <td><p>Effet</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Champ</p> </td> 
+   <td><p>Field (Champ)</p> </td> 
    <td><p>bordure</p> </td> 
    <td><p>Largeur de la bordure = 2px</p> <p>Style de la bordure = plein</p> <p>Couleur de la bordure = #1111</p> </td> 
    <td><p>Crée une bordure large noire 2px autour du champ</p> </td> 
@@ -93,7 +96,7 @@ Notez la modification du style de la zone de texte comme illustré ci-dessous ap
  </tbody> 
 </table>
 
-![](assets/applied-style.png) Style de zone de texte après l’application **du style en ligne** Figure : Composant de zone de *texte après application des propriétés de style intégré*
+![Style de zone de texte après l’application](assets/applied-style.png)**du style intégré Figure :** *Composant de zone de texte après application des propriétés de style intégré*
 
 En suivant les étapes ci-dessus, vous pouvez sélectionner et styliser d’autres composants, tels que les panneaux, les boutons d’envoi et les boutons radio.
 
