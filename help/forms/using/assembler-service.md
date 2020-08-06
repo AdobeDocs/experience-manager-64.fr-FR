@@ -10,6 +10,9 @@ topic-tags: document_services
 discoiquuid: d34f1598-38bc-46c3-b6cd-954a3880994a
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '2161'
+ht-degree: 91%
 
 ---
 
@@ -28,7 +31,7 @@ Vous pouvez utiliser le service Assembler pour assembler deux documents PDF ou p
 
 L’illustration suivante présente la fusion de trois documents source en un seul document cible.
 
-![](assets/as_document_assembly.png) Assemblage d’un document PDF simple à partir de plusieurs documents **PDF** Figure : *Assemblage d’un document PDF simple à partir de plusieurs documents PDF*
+![Assemblage d’un document PDF simple à partir de plusieurs documents](assets/as_document_assembly.png)**PDF Figure :** *Assemblage d’un document PDF simple à partir de plusieurs documents PDF*
 
 L’exemple suivant représente un document DDX utilisé pour assembler ce document. Il spécifie les noms des documents source à utiliser pour produire le document cible, ainsi que le nom de ce document cible :
 
@@ -40,8 +43,8 @@ L’exemple suivant représente un document DDX utilisé pour assembler ce docum
 </PDF>
 ```
 
-L’assemblage de documents produit un document cible qui contient le contenu suivant et\
-caractéristiques:
+L&#39;assemblage de Documents produit un document résultant qui contient le contenu suivant et\
+caractéristiques :
 
 * L’intégralité ou une partie de chacun des documents source ;
 * L’intégralité ou une partie des signets de chacun des documents source, normalisés pour le document cible assemblé ;
@@ -83,7 +86,7 @@ Lors de l’assemblage d’un document, vous pouvez utiliser la numérotation Ba
 
 L’illustration suivante présente un document PDF contenant un identifiant unique, situé dans l’en-tête du document.
 
-![](do-not-localize/as_batesnumber.png) Document PDF contenant un identifiant unique situé dans l’en-tête **du document** Figure : *Un document PDF contenant un identifiant unique situé dans l’en-tête du document*
+![document PDF contenant un identifiant unique situé dans l’en-tête](do-not-localize/as_batesnumber.png)**du document Figure :** *document PDF contenant un identifiant unique situé dans l’en-tête du document*
 
 ### Aplatissement et assemblage de documents {#flatten-and-assemble-documents}
 
@@ -105,7 +108,7 @@ Vous pouvez assembler des documents XDP de différentes manières, dont quelques
 
 L’illustration suivante présente la fusion de trois documents XDP source en un seul document XDP cible. Le document XDP produit contient les trois documents XDP source, ainsi que les données connexes. Le document cible récupère les attributs de base du document d’origine (premier document XDP source).
 
-![](assets/as_assembler_xdpassembly.png) Assemblage d’un document XDP simple à partir de plusieurs documents **XDP** Figure : *Assemblage d’un document XDP simple à partir de plusieurs documents XDP*
+![Assemblage d’un document XDP simple à partir de plusieurs documents](assets/as_assembler_xdpassembly.png)**XDP Figure :** *Assemblage d’un document XDP simple à partir de plusieurs documents XDP*
 
 Voici le document DDX qui produit le résultat illustré ci-dessus.
 
@@ -155,7 +158,7 @@ Vous pouvez spécifier la valeur de l’attribut resolveAssets dans la balise XD
 #### Résolution de toutes les références source dans un document XDP {#resolve-all-source-references-in-an-xdp-document}
 
 Pour résoudre toutes les références dans les documents XDP source, spécifiez l’attribut resolveAssets pour la variable\
-document cible à tous, comme dans l’exemple ci-dessous :
+document obtenu pour tous, comme dans l’exemple ci-dessous :
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -167,7 +170,7 @@ document cible à tous, comme dans l’exemple ci-dessous :
 </DDX
 ```
 
-Vous pouvez également spécifier l’attribut pour tous les documents XDP source indépendamment afin d’obtenir le même\
+Vous pouvez également spécifier l’attribut pour tous les documents XDP source indépendamment pour obtenir la même valeur\
 résultat.
 
 ```xml
@@ -219,7 +222,7 @@ Les concepteurs de formulaires utilisent LiveCycle Designer pour créer des frag
 
 L’illustration suivante représente deux formulaires XML (modèles XFA). Le formulaire placé à gauche contient un point d’insertion appelé myInsertionPoint. Celui de droite inclut un fragment appelé myFragment.
 
-![](assets/as_assembler_fragment_assy_assembled.png) Insertion de fragments de formulaire dans un formulaire **XFA** Figure : *Insertion de fragments de formulaire dans un formulaire XFA*
+![Insertion de fragments de formulaire dans un formulaire](assets/as_assembler_fragment_assy_assembled.png)**XFA Figure :** *Insertion de fragments de formulaire dans un formulaire XFA*
 
 Lorsque le service Assembler interprète le document DDX suivant, il crée un formulaire XML contenant un autre formulaire XML. Le sous-formulaire appelé myFragment du document myFragmentSource est inséré au niveau du point d’insertion myInsertionPoint du document myFormSource.
 
@@ -257,7 +260,7 @@ Vous pouvez utiliser le service Assembler pour désassembler un document PDF. Ce
 
 Dans l’illustration qui suit, les pages 1 à 3 sont extraites du document source, puis insérées dans un nouveau document cible.
 
-![](assets/as_intro_page_extraction.png) Extraction de pages spécifiques d’un document **source** Figure : *Extraction de pages spécifiques d’un document source*
+![Extraction de pages spécifiques à partir d&#39;un document](assets/as_intro_page_extraction.png)**source Figure :** *Extraction de pages spécifiques à partir d’un document source*
 
 L’exemple qui suit représente un document DDX utilisé pour désassembler ce document.
 
@@ -271,7 +274,7 @@ L’exemple qui suit représente un document DDX utilisé pour désassembler ce 
 
 Dans l’illustration suivante, le document DocA est divisé en plusieurs documents cible. Le signet de niveau 1 d’une page identifie le début d’un nouveau document cible.
 
-![](assets/as_intro_pdfsfrombookmarks.png) Division d’un document source basé sur des signets en plusieurs documents **** Figure : *Division d’un document source basé sur des signets en plusieurs documents*
+![Division d&#39;un document source en fonction de signets en plusieurs documents](assets/as_intro_pdfsfrombookmarks.png)**Figure :** *Division d’un document source en fonction de signets en plusieurs documents*
 
 L’exemple qui suit représente un document DDX qui utilise des signets pour désassembler un document source.
 
