@@ -9,6 +9,9 @@ topic-tags: customization
 discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 83%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 
 Dans les formulaires HTML5, hors de la zone, les messages d’erreur et les avertissements ont une position et un aspect fixes (police et couleur), l’erreur est affichée uniquement pour un champ sélectionné, et une seule erreur s’affiche.
 
-Cet article décrit les étapes à suivre pour personnaliser les messages d’erreur de formulaires HTML5 en :
+L&#39;article décrit la procédure à suivre pour personnaliser les messages d&#39;erreur des formulaires HTML5 en :
 
 * changer l’aspect et la position des messages d’erreur. Vous pouvez faire qu’une erreur apparaisse en haut, en bas, et sur le côté droit de chaque champ.
 * afficher les messages d’erreur pour plusieurs champs à tout moment spécifié. 
@@ -42,7 +45,7 @@ Pour personnaliser la position d’un message d’erreur, ajoutez une balise &lt
    |---|---|
    | jqWidget | jqWidget est la poignée du widget. |
    | msg | contient le message d’erreur |
-   | Type | indique s’il s’agit d’une erreur ou d’un avertissement |
+   | type | indique s’il s’agit d’une erreur ou d’un avertissement |
 
 1. Sur l’implémentation hors de la zone, les messages d’erreur apparaissent à droite du champ. Pour que les messages d’erreur apparaissent au-dessus, utilisez le code suivant.
 
@@ -117,9 +120,9 @@ Utilisez le package ci-joint pour afficher simultanément les messages d’erreu
 
 ## Rendre le formulaire avec le nouveau profil.  {#render-the-form-with-the-new-profile-nbsp}
 
-Les formulaires HTML5 standard utilisent un profil par défaut : https://&lt;serveur>/content/xfaforms/profiles/default.html?contentRoot=&lt;emplacement xdp>&amp;template=&lt;nom du fichier xdp>
+Les formulaires HTML5 utilisent un profil par défaut prêt à l’emploi : https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;emplacement xdp>&amp;template=&lt;nom du fichier xdp>
 
-Pour afficher un formulaire avec des messages d’erreur personnalisés, générez le formulaire avec le profil d’erreur : https://&lt;serveur>/content/xfaforms/profiles/error.html?contentRoot=&lt;emplacement xdp>&amp;template=&lt;nom du fichier xdp>
+Pour vue d’un formulaire avec des messages d’erreur personnalisés, effectuez le rendu du formulaire avec le profil d’erreur : https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;emplacement xdp>&amp;template=&lt;nom du fichier xdp>
 
 >[!NOTE]
 >
