@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide de l’utilisateur des communautés AEM 6.4
+user-guide-title: AEM 6.4 Guide de l’utilisateur des communautés
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
 source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
@@ -35,12 +35,12 @@ ht-degree: 26%
    + [Déploiement de Communities](deploy-communities.md)
    + [Mise à niveau vers les communautés AEM 6.4](upgrade.md)
    + [Topologies recommandées pour Communities](topologies.md)
-   + [Configuration du Dispatcher pour les communautés](dispatcher.md)
+   + [Configuration du répartiteur pour les communautés](dispatcher.md)
 + Administration {#administer}
    + [Service de gestion des utilisateurs et du contenu qu’ils génèrent dans AEM Communities](user-ugc-management-service.md)
    + [Sites des communautés](administer-landing.md)
    + [Consoles de communautés](consoles.md)
-   + [Configuration Analytics pour les communautés, fonctionnalités](analytics.md)
+   + [Fonctionnalités de configuration d’Analytics pour les communautés](analytics.md)
    + [Fontionnalités Configuration de l’activation](enablement.md)
    + [Configuration de la messagerie](messaging.md)
    + [Modération du contenu de la communauté](moderate-ugc.md)
@@ -67,7 +67,7 @@ ht-degree: 26%
    + [Fichier mpeg pour les communautés](ffmpeg.md)
    + [Modération en contexte](in-context.md)
    + [Scores et badges avancés](advanced.md)
-   + [ASRP - Fournisseur de ressources d&#39;Enregistrement Adobe](asrp.md)
+   + [ASRP - Fournisseur de ressources d&#39;Enregistrement d&#39;Adobe](asrp.md)
    + [MSRP - Fournisseur de ressources d&#39;Enregistrement MongoDB](msrp.md)
    + [Configuration de MongoDB pour la démonstration](demo-mongo.md)
    + [DSRP - Fournisseur de ressources d&#39;Enregistrement de données relationnelles](dsrp.md)
