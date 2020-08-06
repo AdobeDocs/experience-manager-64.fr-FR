@@ -102,7 +102,7 @@ Pour obtenir plus d’informations, y compris des attributs de filtrage des bibl
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, qui par le passé était généralement utilisé pour inclure des bibliothèques clientes, a été abandonné depuis AEM 5.6. [ doit `<ui:includeClientLib>`](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib) être utilisé à la place comme indiqué ci-dessus.
+>`<cq:includeClientLib>`, qui par le passé était généralement utilisé pour inclure les bibliothèques clientes, a été abandonné depuis AEM 5.6. [ devrait `<ui:includeClientLib>`](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib) être utilisé à la place comme indiqué ci-dessus.
 
 ## Création de dossiers de bibliothèques clientes {#creating-client-library-folders}
 
@@ -447,6 +447,7 @@ The `dumplibs` component includes a test selector that displays the source code 
    * Ouvrez l’URL suivante dans votre navigateur Web (utilisez un hôte et un port différents selon les besoins) :
 
       * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+
    La page par défaut affiche le résultat pour les balises ne comportant aucune valeur pour l’attribut categories.
 
 1. To see the output for a category, type the value of the client library&#39;s `categories` property and click **Submit Query**.
