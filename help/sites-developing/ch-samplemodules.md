@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fa68c786-5102-4cc3-b61c-2565ee919768
 translation-type: tm+mt
 source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+workflow-type: tm+mt
+source-wordcount: '1194'
+ht-degree: 78%
 
 ---
 
@@ -39,20 +42,20 @@ Les fonctionnalités suivantes sont disponibles :
 
 Le code source se trouve à l’adresse /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.
 
-### Configuration{#configuration}
+### Configuration {#configuration}
 
 Configurez le module d’IU contexthub.base à l’aide d’un objet Javascript au format JSON. Ajoutez l’une des propriétés suivantes pour configurer les fonctionnalités du module d’IU :
 
-* **** image : URL d’une image à afficher comme icône.
-* **** icône : Nom d’une classe d’icône [d’interface utilisateur](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Coral. Si vous spécifiez une valeur pour les propriétés de l’icône et de l’image, l’image est utilisée.
+* **image :** URL d’une image à afficher en tant qu’icône.
+* **icône :** Nom d&#39;une classe d&#39;icône [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Coral UI. Si vous spécifiez une valeur pour les propriétés de l’icône et de l’image, l’image est utilisée.
 
-* **** title : Titre du module d’interface utilisateur. Le titre apparaît lorsque le pointeur s’arrête sur l’icône du module d’IU.
-* **** plein écran : Valeur booléenne indiquant si le module d’interface utilisateur prend en charge le mode plein écran. Use `true` to support fullscreen and `false` to prevent fullscreen mode.
+* **titre :** Titre du module d’interface utilisateur. Le titre apparaît lorsque le pointeur s’arrête sur l’icône du module d’IU.
+* **plein écran :** Valeur booléenne indiquant si le module d’interface utilisateur prend en charge le mode plein écran. Use `true` to support fullscreen and `false` to prevent fullscreen mode.
 
 * **template :** modèle [Handlebars](https://handlebarsjs.com/) qui spécifie le contenu à afficher dans la barre d’outils ContextHub. Use at most two `<p>` tags.
 
 * **storeMapping :** mappage de clé/magasin. Utilisez la clé des modèles de barre de main pour accéder aux données de stockage ContextHub associées.
-* **** list : Tableau d’éléments à afficher sous forme de liste dans une fenêtre contextuelle lorsque l’utilisateur clique sur le module IU. Si vous ajoutez cet élément, n’incluez pas popoverTemplate. La valeur est une table d’objets avec les clés suivantes :
+* **liste :** Tableau d’éléments à afficher en tant que liste dans une fenêtre contextuelle lorsque l’utilisateur clique sur le module IU. Si vous ajoutez cet élément, n’incluez pas popoverTemplate. La valeur est une table d’objets avec les clés suivantes :
 
    * title : texte à afficher pour cet élément
    * image : (facultatif) URL d’une image à afficher sur la gauche
@@ -62,10 +65,10 @@ Configurez le module d’IU contexthub.base à l’aide d’un objet Javascript 
 * **listType :** style à utiliser pour les éléments de la liste déroulante. Utilisez l’une des valeurs suivantes :
 
    * checkmark
-   * checkbox
+   * la case 
    * radio
 
-* **** popoverTemplate : Modèle de barres de poignées qui spécifie le contenu à rendre dans la fenêtre contextuelle lorsque l’utilisateur clique sur le module d’interface utilisateur. Si vous ajoutez cet élément, n’incluez pas l’élément `list`.
+* **popoverTemplate:** Modèle Handlebars qui spécifie le contenu à rendre dans la fenêtre contextuelle lorsque l’utilisateur clique sur le module d’interface. Si vous ajoutez cet élément, n’incluez pas l’élément `list`.
 
 ### Exemple {#example}
 
@@ -90,7 +93,7 @@ Le module d’IU contextthub.browserinfo affiche des informations sur le navigat
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
-Le code source du module d’interface se trouve à l’emplacement /libs/granite/contexthub/components/modules/browserinfo. Bien que contexthub.browserinfo étende le module d’IU contextthub.base, il ne remplace ni ne fournit de fonctions supplémentaires. L’implémentation offre une configuration par défaut pour le rendu des informations du navigateur.
+Le code source du module d’interface utilisateur se trouve dans /libs/granite/contexthub/components/modules/browserinfo. Bien que contexthub.browserinfo étende le module d’IU contextthub.base, il ne remplace ni ne fournit de fonctions supplémentaires. L’implémentation offre une configuration par défaut pour le rendu des informations du navigateur.
 
 ### Configuration {#configuration-1}
 
@@ -115,7 +118,7 @@ Le module fournit un formulaire contextuel qui vous permet de modifier la date e
 
 La source du module d’interface contexthub.datetime se trouve dans /libs/granite/contexthub/components/modules/datetime.
 
-### Configuration{#configuration-2}
+### Configuration {#configuration-2}
 
 Les instances du module d’IU contextthub.datetime ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module.
 
@@ -138,7 +141,7 @@ Le module d’IU contextthub.location affiche la longitude et la latitude du cli
 
 La source du module IU se trouve dans /etc/cloudsettings/default/contexthub/geolocation.
 
-### Configuration{#configuration-4}
+### Configuration {#configuration-4}
 
 Les instances du module d’IU contextthub.geolocation ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module.
 
@@ -179,9 +182,9 @@ Le module d’IU contextthub.screen-orientation affiche l’orientation actuelle
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
-La source du module IU se trouve à l’emplacement /libs/granite/contexthub/components/modules/screen-orientation.
+La source du module d&#39;interface se trouve à l&#39;emplacement /libs/granite/contexthub/components/modules/screen-orientation.
 
-### Configuration{#configuration-5}
+### Configuration {#configuration-5}
 
 Les instances du module d’IU contextthub.screen-orientation ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. Note that the `clickable` property is `false` by default. If you override the default configuration to set `clickable` to `true`, clicking the module reveals a popup where you can select the orientation.
 
@@ -205,7 +208,7 @@ Le module d’IU contexthub.tagcloud affiche des informations sur les balises. D
 
 La source du module d’interface se trouve dans /libs/granite/contexthub/components/modules/tagcloud.
 
-### Configuration{#configuration-6}
+### Configuration {#configuration-6}
 
 Les instances du module d’IU contexthub.tagcloud ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module.
 
@@ -227,9 +230,9 @@ Le module d’IU ContextHub granite.profile affiche le nom d’affichage de l’
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
-La source du module d’interface se trouve dans /libs/granite/contexthub/components/modules/profile.
+La source du module d&#39;interface se trouve dans /libs/granite/contexthub/components/modules/profil.
 
-### Configuration{#configuration-7}
+### Configuration {#configuration-7}
 
 Les instances du module d’IU granite.profile ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module.
 
