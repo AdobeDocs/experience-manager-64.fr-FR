@@ -4,6 +4,9 @@ description: Découvrez comment rechercher les ressources souhaitées dans AEM �
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 88%
 
 ---
 
@@ -36,7 +39,7 @@ Vous pouvez personnaliser le panneau Filtres et ajouter/supprimer des prédicats
 
 1. Appuyez/cliquez sur l’icône de navigation globale. Le panneau Filtres s’affiche.
 
-   ![_panel-1](assets/filters_panel-1.png)
+   ![filtres_panel-1](assets/filters_panel-1.png)
 
    Selon le type d’éléments que vous recherchez, le nombre de correspondances est indiqué en haut des résultats de la recherche.
 
@@ -44,7 +47,7 @@ Vous pouvez personnaliser le panneau Filtres et ajouter/supprimer des prédicats
 
 ## Recherche de types de fichiers {#search-for-file-types}
 
-Le panneau Filtres permet d’augmenter la granularité de votre expérience de recherche et rend la fonctionnalité de recherche plus polyvalente. Vous pouvez facilement accéder au niveau de détail souhaité.
+Le panneau Filtres permet d’augmenter la granularité de votre expérience de recherche et rend la fonctionnalité de recherche plus polyvalente. Vous pouvez facilement approfondir l’analyse jusqu’au niveau de détail souhaité.
 
 Par exemple, si vous recherchez une image, utilisez le prédicat **[!UICONTROL Type de fichier]** pour indiquer si vous souhaitez obtenir une image bitmap ou vectorielle.
 
@@ -82,7 +85,7 @@ Utilisez le prédicat **État** pour rechercher des ressources en fonction de di
 
 Par exemple, si vous surveillez la publication des ressources, vous pouvez utiliser l’option appropriée pour rechercher les ressources qui sont publiées.
 
-![serveur ](assets/publish.png)
+![publish](assets/publish.png)
 
 Si vous surveillez l’état de révision des ressources, utilisez l’option appropriée pour trouver les ressources qui sont approuvées ou en attente d’approbation.
 
@@ -97,4 +100,4 @@ Utilisez le prédicat **Statistiques** pour rechercher des ressources en fonctio
 * Clics
 * Canaux de médias où les ressources apparaissent
 
-![informations](assets/insights.png)
+![statistiques](assets/insights.png)
