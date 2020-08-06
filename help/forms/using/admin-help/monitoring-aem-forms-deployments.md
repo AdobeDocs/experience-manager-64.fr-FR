@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '643'
+ht-degree: 75%
 
 ---
 
@@ -72,33 +75,33 @@ Vous pouvez accéder aux statistiques du MBean OperationStatistic depuis une con
 
 **Arborescence de MBean**
 
-**** Nom de domaine Adobe : Dépend du serveur d’applications. Si celui-ci ne définit pas le domaine, la valeur par défaut sera adobe.com.
+**Nom de domaine de l&#39;Adobe :** Dépend du serveur d’applications. Si celui-ci ne définit pas le domaine, la valeur par défaut sera adobe.com.
 
-**** ServiceType : AdobeService est le nom utilisé pour répertorier tous les services.
+**ServiceType :** AdobeService est le nom utilisé pour la liste de tous les services.
 
-**** AdobeServiceName : Nom du service ou ID du service.
+**AdobeServiceName :** Nom du service ou ID du service.
 
-**** Version : Version du service.
+**Version :** Version du service.
 
 **Statistiques des opérations**
 
-**** Heure d’appel : Temps nécessaire à l’exécution de la méthode. Cette valeur ne comprend pas le temps de sérialisation de la demande, de transfert du client vers le serveur et de désérialisation.
+**Heure d&#39;appel :** Temps nécessaire à l&#39;exécution de la méthode. Cette valeur ne comprend pas le temps de sérialisation de la demande, de transfert du client vers le serveur et de désérialisation.
 
-**** Nombre d’appels : Nombre de fois où le service est appelé.
+**Nombre d&#39;appels :** Nombre d’appels du service.
 
-**** Temps moyen d’appel : Temps moyen de tous les appels qui ont été exécutés depuis le démarrage du serveur.
+**Temps moyen d’appel :** Temps moyen de tous les appels qui ont été exécutés depuis le démarrage du serveur.
 
-**** Max invocation time : durée de l’appel le plus long qui a été exécuté depuis le démarrage du serveur.
+**Max invocation time :** Durée de l’appel le plus long qui a été exécuté depuis le démarrage du serveur.
 
-**** Temps d’appel min. : durée de l’appel le plus court qui a été exécuté depuis le démarrage du serveur.
+**Durée d&#39;appel min. :** Durée de l’appel le plus court qui a été exécuté depuis le démarrage du serveur.
 
-**** Nombre d’exceptions : Nombre d’appels ayant entraîné des échecs.
+**Nombre d&#39;exceptions :** Nombre d’appels ayant entraîné des échecs.
 
-**** Message d’exception : Message d’erreur de la dernière exception survenue.
+**Message d&#39;exception :** Message d’erreur de la dernière exception survenue.
 
-**** Heure du dernier échantillonnage : Date du dernier appel.
+**Heure du dernier échantillonnage :** Date du dernier appel.
 
-**** Unité de temps : La valeur par défaut est milliseconde.
+**Unité de temps :** La valeur par défaut est de milliseconde.
 
 Pour activer le contrôle JMX, les serveurs d’applications ont généralement besoin d’être configurés. Veuillez consulter la documentation de votre serveur d’applications pour obtenir des informations détaillées.
 
