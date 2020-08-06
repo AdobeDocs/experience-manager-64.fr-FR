@@ -160,7 +160,7 @@ Conversion d’un document PDF en PostScript à l’aide de l’API de service C
 1. Créez un client Convert PDF.
 
    * Create a `ConvertPdfServiceClient` object by using its default constructor.
-   * Create a `ConvertPdfServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Spécifiez toutefois `?blob=mtom`.
+   * Create a `ConvertPdfServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Spécifiez toutefois `?blob=mtom`.
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `ConvertPdfServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -203,9 +203,9 @@ Conversion d’un document PDF en PostScript à l’aide de l’API de service C
 
 [Résumé des étapes](converting-pdf-postscript-image-files.md#summary-of-steps)
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Conversion de Documents PDF en formats d’image {#converting-pdf-documents-to-image-formats}
 
@@ -321,7 +321,7 @@ Conversion d’un document PDF en format d’image à l’aide de l’API de ser
 1. Créez un client PDF de conversion.
 
    * Create a `ConvertPdfServiceClient` object by using its default constructor.
-   * Create a `ConvertPdfServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Spécifiez toutefois `?blob=mtom`.
+   * Create a `ConvertPdfServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Spécifiez toutefois `?blob=mtom`.
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `ConvertPdfServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -364,6 +364,6 @@ Conversion d’un document PDF en format d’image à l’aide de l’API de ser
 
 **Voir également**
 
-[Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
