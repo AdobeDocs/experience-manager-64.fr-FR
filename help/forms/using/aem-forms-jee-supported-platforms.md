@@ -10,11 +10,14 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
 source-git-commit: ef8b12b462b05b6117d61d2877b16cbedfee42fd
+workflow-type: tm+mt
+source-wordcount: '3276'
+ht-degree: 87%
 
 ---
 
 
-# Plateformes prises en charge pour AEM Forms sur JEE {#supported-platforms-for-aem-forms-on-jee}
+# Plateformes prises en charge pour AEM Forms on JEE {#supported-platforms-for-aem-forms-on-jee}
 
 ## Plateformes prises en charge {#supported-platforms}
 
@@ -28,6 +31,7 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 >
 >* Pour une liste complète des exceptions concernant les plateformes de serveur prises en charge, voir [Exceptions aux plateformes de serveur prises en charge](#exceptions-to-supported-server-platforms).
 >* AEM Forms on JEE ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
+
 >
 
 
@@ -92,6 +96,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 >
 >* AEM Forms on JEE ne prend en charge que les JVM 64 bits pour les environnements de production.
 >* Il est conseillé de consulter les bulletins de sécurité publiés par l’éditeur Java afin de garantir la sécurité des environnements de production et d’installer les mises à jour Java les plus récentes.
+
 >
 
 
@@ -306,7 +311,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 
 #### Environnement virtualisé {#virtualized-environment}
 
-Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environnement virtuel. Toutefois, si vous rencontrez un problème avec AEM Forms sur un environnement virtuel, essayez de reproduire le problème sur un ordinateur physique. Si le problème persiste sur l’ordinateur physique, contactez l’assistance technique d’Adobe pour une résolution. Pour les problèmes qui ne sont pas répliqués sur l’ordinateur physique, contactez votre fournisseur d’environnement virtuel.
+Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environnement virtuel. Toutefois, si vous rencontrez un problème avec AEM Forms sur un environnement virtuel, essayez de reproduire le problème sur un ordinateur physique. Si le problème persiste sur l’ordinateur physique, contactez l’assistance Adobe pour obtenir une résolution. Pour les problèmes qui ne sont pas répliqués sur l’ordinateur physique, contactez votre fournisseur d’environnement virtuel.
 
 #### Environnements de développement {#development-environments}
 
@@ -329,6 +334,7 @@ Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environn
 >
 >* AEM Forms on JEE prend uniquement en charge les systèmes d’exploitation 64 bits.
 >* Le service PDF Generator n’est pas pris en charge sous Windows 10.
+
 >
 
 
@@ -344,7 +350,7 @@ Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de c
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec JBoss® qu’Oracle Java™ SE.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec IBM® WebSphere® que le JDK IBM®.
 1. AEM Forms on JEE ne prend pas en charge IBM® DB2 avec JBoss®.
-1. CRX-repository prend en charge la persistance de type TarMK, MongoDB et des bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de base de données différents entre le serveur d’applications et le référentiel CRX. Cependant, dans un environnement AEM Forms sur JEE, vous pouvez utiliser MongoMK avec CRX-repository et une base de données relationnelle prise en charge avec le serveur d’applications.
+1. CRX-repository prend en charge la persistance de type TarMK, MongoDB et les bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de base de données différents entre le serveur d’applications et le référentiel CRX. Cependant, sur un environnement AEM Forms on JEE, vous pouvez utiliser MongoMK avec CRX-repository et une base de données relationnelle prise en charge avec le serveur d’applications.
 1. AEM Forms on JEE ne prend pas en charge le serveur d’application WebSphere sur CentOS.
 1. Les systèmes d’exploitation AIX et Solaris sont disponibles uniquement pour les clients de mise à niveau.
 1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles (RBAC) JBoss.
@@ -438,7 +444,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 
 ### Prise en charge de Cordova {#support-for-cordova}
 
-L’application AEM Forms prend désormais en charge Apache Cordova. Voici les versions spécifiques à la plate-forme de Cordova prises en charge :
+AEM Forms App prend désormais en charge Apache Cordova. Voici les versions spécifiques à la plate-forme de Cordova prises en charge :
 
 * Apache Cordova 6.4.0
 * Cordova iOS 4.3.0
@@ -495,11 +501,11 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
   </tr> 
   <tr> 
    <td>OpenOffice 4.1.2</td> 
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM RTF et TXT</td> 
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC, HTML, HTM RTF et TXT</td> 
   </tr> 
   <tr> 
    <td>OpenOffice 3.4</td> 
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM RTF et TXT</td> 
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC, HTML, HTM RTF et TXT</td> 
   </tr> 
  </tbody> 
 </table>
@@ -517,6 +523,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 >* Le service HTML2PDF est obsolète sous AIX.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
 >* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
+
 >
 
 
@@ -530,7 +537,7 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [5
 * Interface de création de Correspondence Management
 * Interface utilisateur d’administration (interface utilisateur de la console d’administration)
 
-## Configuration requise pour AEM Forms sur JEE {#system-requirements-for-aem-forms-on-jee}
+## Configuration requise pour AEM Forms on JEE {#system-requirements-for-aem-forms-on-jee}
 
 ### Configuration matérielle requise {#minimum-hardware-requirements}
 
@@ -575,10 +582,10 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [5
 
 Pour la configuration requise supplémentaire, voir :
 
-* [Configuration requise pour un déploiement sur serveur unique d’AEM Forms sur JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_64)
+* [Configuration requise pour le déploiement d’un serveur unique AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_64)
 * [Configuration requise pour le déploiement en grappe d’AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_64)
 
-## Clients pris en charge pour AEM Forms sur JEE {#supported-clients-for-aem-forms-on-jee}
+## Clients pris en charge pour AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
 
 ### Workbench {#workbench}
 
@@ -632,7 +639,7 @@ Pour la configuration requise supplémentaire, voir :
    * Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
    * Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
 
-* Mémoire graphique - 128 Mo de GPU (256 Mo recommandés)
+* Mémoire graphique - 128 Mo de GPU (256 Mo recommandé)
 * 2,35 Go d’espace disponible sur le disque dur
 * Lecteur de DVD-ROM
 * Internet Explorer 10 ou 11 ; Firefox 45.x
@@ -702,7 +709,7 @@ Pour la configuration requise supplémentaire, voir :
 >
 >Voici quelques exceptions liées au navigateur pour les ordinateurs de bureau :
 >
->* La plupart des navigateurs récents ne prennent plus en charge les modules externes basés sur NPAPI. For information about how it impacts AEM Forms applications and workflows, see [Discontinuation of NPAPI browser plugins and its impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+>* La plupart des navigateurs récents ne prennent plus en charge les modules externes basés sur NPAPI. For information about how it impacts AEM Forms applications and workflows, see [Discontinuation of NPAPI browser plugins and its impact](https://helpx.adobe.com/fr/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 >* Safari est pris en charge uniquement sous Macintosh OS X.
 
 
@@ -740,6 +747,7 @@ Pour la configuration requise supplémentaire, voir :
 >[!NOTE]
 >
 >* Le Portail Formulaires est pris en charge sur Safari sur iPad uniquement.
+
 >
 
 
@@ -753,8 +761,8 @@ L’application AEM Forms est disponible sur les plateformes suivantes :
 | **Plate-forme** | **Appareils mobiles** |
 |---|---|
 | Apple iOS  | Apple iPhone, iPad, iPad Air et iPad mini exécutant iOS 11 et versions ultérieures. |
-| Google Android | Android 4.4 (Andoird Kit Kat) and above *[API Level 19 and above]*. L’application AEM Forms est certifiée sur les tablettes Samsung Galaxy 7 et 10 pouces et la tablette Google Nexus 7 pouces et les smartphones les plus courants. |
-| Microsoft Windows | Périphériques Microsoft Surface, tablettes, ordinateurs portables et ordinateurs de bureau exécutant le système d’exploitation Microsoft Windows 10. |
+| Google Android | Android 4.4 (Andoird Kit Kat) and above *[API Level 19 and above]*. L&#39;application AEM Forms est certifiée sur les tablettes Samsung Galaxy 7 et 10 pouces, les tablettes Google Nexus 7 pouces et les smartphones les plus courants. |
+| Microsoft Windows | Périphériques Microsoft Surface, tablettes, ordinateurs portables et ordinateurs de bureau exécutant le système d&#39;exploitation Microsoft Windows 10. |
 
 ### Adobe Flash Player {#adobe-flash-player}
 
@@ -777,7 +785,7 @@ L’application AEM Forms est disponible sur les plateformes suivantes :
 
 ### Extension d’Adobe Document Security for Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 
-Cliquez [ici](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html) afin de voir la configuration requise par Adobe Document Security Extension for Microsoft® Office.
+Cliquez [ici](https://www.adobe.com/fr/products/livecycle/rightsmanagement/extension/downloads.html) afin de voir la configuration requise par Adobe Document Security Extension for Microsoft® Office.
 
 ### Exceptions de prise en charge de clients {#exceptions-to-client-support}
 
@@ -801,4 +809,4 @@ Adobe se réserve le droit de modifier les plateformes de fournisseurs tiers de 
 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site Support Adobe aux entreprises les articles de la base de connaissances relatifs à votre produit.
 
-[**Contacter le support technique **](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Contacter le support technique **](https://www.adobe.com/fr/account/sign-in.supportportal.html)
