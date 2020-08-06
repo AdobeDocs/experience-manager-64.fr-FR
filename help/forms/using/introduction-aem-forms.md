@@ -10,6 +10,9 @@ topic-tags: introduction
 discoiquuid: a976a854-4bf2-49f8-871e-28bc597ac496
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '943'
+ht-degree: 99%
 
 ---
 
@@ -113,5 +116,6 @@ Des documents personnalisés tels que des reçus, des kits de bienvenue et des i
 * Prise en charge des signatures numériques pour garantir l’intégrité du contenu et l’identité du signataire
 * Module complémentaire de sécurité des documents pour AEM Forms comprenant le chiffrement, les stratégies d’utilisation, le suivi et l&#39;audit
 
-![](do-not-localize/layout-02.png)**** Figure : Processus de communication personnalisée *rationalisé*
+![](do-not-localize/layout-02.png)
+**Figure :** *Processus de communication personnalisée rationalisé*
 
