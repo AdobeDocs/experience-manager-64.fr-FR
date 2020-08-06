@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
 translation-type: tm+mt
 source-git-commit: 4ca6d4e59843656d289c0d650a68d8c9cf2ff0a0
+workflow-type: tm+mt
+source-wordcount: '2725'
+ht-degree: 80%
 
 ---
 
@@ -54,7 +57,7 @@ Un déploiement classique du processus TarMK Cold Standby :
 
 Le flux de données est conçu pour détecter et traiter automatiquement la connexion et les problèmes liés au réseau. Tous les modules sont regroupés avec des sommes de contrôle. Dès que vous rencontrez des problèmes liés à la connexion ou des modules endommagés, des mécanismes enclenchent de nouvelles tentatives. 
 
-### Les performances {#performance}
+### Performances {#performance}
 
 L’activation du processus TarMK Cold Standby sur l’instance principale n’a presque aucun impact mesurable sur les performances. La consommation supplémentaire de processeur est très faible et le disque dur et le réseau E/S supplémentaires ne doivent pas poser de problème de performance.
 
@@ -76,8 +79,9 @@ En outre, vous pouvez spécifier les instances de secours qui sont autorisées �
 >
 >Le PID de la boutique de nœuds de segment et le service de stockage Standby a changé dans AEM 6.3 par rapport aux versions précédentes :
 >
->* de org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService vers org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
+>* de org.apache.jackrabbit.oak.**plugins**.segment.Secondaire.store.StandbyStoreService vers org.apache.jackrabbit.oak.segment.Secondaire.store.StandbyStoreService
 >* de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService vers org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
+
 >
 >
 Assurez-vous d’effectuer les réglages de configuration nécessaires pour refléter ces modifications.
@@ -97,11 +101,13 @@ Consultez ci-dessous la procédure devant être suivie afin de créer une instal
    1. Créez un fichier nommé `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config` au même emplacement et configurez-le conformément aux exigences. Pour plus d’informations sur les options de configuration, voir [Configuration](/help/sites-deploying/tarmk-cold-standby.md#configuration). 
    1. If you are using an AEM TarMK instance with an external data store, create a folder named `crx3` under `aem-primary/crx-quickstart/install` named `crx3`
    1. Placez le fichier de configuration de l’entrepôt de données dans le dossier `crx3`. 
+
    Par exemple, si vous exécutez une instance AEM TarMK avec un entrepôt de données de fichiers externe, vous aurez besoin de ces fichiers de configuration :
 
    * `aem-primary/crx-quickstart/install/install.primary/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
    * `aem-primary/crx-quickstart/install/install.primary/org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
    * `aem-primary/crx-quickstart/install/crx3/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`
+
    Vous trouverez ci-dessous des exemples de configuration pour une instance principale :
 
    **Exemple de org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**
@@ -150,6 +156,7 @@ Consultez ci-dessous la procédure devant être suivie afin de créer une instal
 
       * org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config
    1. Modifiez les fichiers et créez les configurations nécessaires.
+
    Vous trouverez ci-dessous des exemples fichiers de configuration pour une instance de secours standard : 
 
    **Exemple de org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**
@@ -241,7 +248,7 @@ Dans ce cas, le « client » mentionné dans le journal est l’instance **de 
 
 Une fois que ces entrées cessent de s’afficher dans le journal, sachez que le processus de synchronisation est terminé.
 
-Bien que les entrées ci-dessus indiquent que le mécanisme d’interrogation fonctionne correctement, il est souvent utile d’identifier s’il existe bien des données en cours de synchronisation pendant que le processus d’interrogation a lieu. Pour ce faire, recherchez les entrées suivantes :
+Bien que les entrées ci-dessus indiquent que le mécanisme d’interrogation fonctionne correctement, il est souvent utile d’identifier s’il existe bien des données en cours de synchronisation pendant que le processus d’interrogation a lieu. Pour ce faire, recherchez des entrées comme celles-ci :
 
 ```xml
 *DEBUG* [defaultEventExecutorGroup-156-1] org.apache.jackrabbit.oak.segment.file.TarWriter Writing segment 3a03fafc-d1f9-4a8f-a67a-d0849d5a36d5 to /<<CQROOTDIRECTORY>>/crx-quickstart/repository/segmentstore/data00014a.tar
@@ -253,23 +260,23 @@ De même, lorsque l’exécution a lieu avec un fichier `FileDataStore` non part
 *DEBUG* [nioEventLoopGroup-228-1] org.apache.jackrabbit.oak.segment.standby.codec.ReplyDecoder received blob with id eb26faeaca7f6f5b636f0ececc592f1fd97ea1a9#169102 and size 169102
 ```
 
-### Configuration{#configuration}
+### Configuration {#configuration}
 
 Les paramètres OSGi suivants sont disponibles pour le service Cold Standby :
 
 * **Continuer la configuration :** si ce paramètre est activé, la configuration est stockée dans le référentiel plutôt que les fichiers de configuration OSGi traditionnels. Il est recommandé de garder ce paramètre désactivé sur des systèmes de production afin que la configuration principale ne soit pas effectuée par l’instance de secours.
 
-* **`mode`Mode (**) : vous choisirez alors le mode d’exécution de l’instance.
+* **Mode (`mode`) :** cette option permet de choisir le mode d&#39;exécution de l&#39;instance.
 
-* **Port (port) :** le port à utiliser pour la communication. La valeur par défaut est `8023`.
+* **Port (port) :** le port à utiliser pour la communication. La valeur par défaut est de `8023`.
 
-* **`primary.host`Hôte principal (**) : - hôte de l&#39;instance principale. Ce paramètre s’applique uniquement à l’instance de secours.
-* **`interval`Intervalle de synchronisation (**) : - ce paramètre détermine l&#39;intervalle entre la demande de synchronisation et s&#39;applique uniquement à l&#39;instance de secours.
+* **Hôte Principal (`primary.host`) :** - l&#39;hôte de l&#39;instance Principale. Ce paramètre s’applique uniquement à l’instance de secours.
+* **Intervalle de synchronisation (`interval`) :** - ce paramètre détermine l&#39;intervalle entre la demande de synchronisation et ne s&#39;applique qu&#39;à l&#39;instance Secondaire.
 
-* **`primary.allowed-client-ip-ranges`Plages IP autorisées (**) : - les plages d&#39;adresses IP à partir desquelles le serveur principal autorise les connexions.
-* **`secure`Sécurisé (**) : Activez le chiffrement SSL. Pour que ce paramètre fonctionne, il doit être activé sur toutes les instances.
-* **`standby.readtimeout`Délai d’expiration de lecture en attente (**) : Délai d’expiration pour les demandes émises par l’instance de secours en millisecondes. **La valeur recommandée pour le délai d’expiration est 43200000. Il est généralement recommandé de définir le délai d’expiration sur au moins 12 heures.**
-* **`standby.autoclean`Nettoyage automatique de secours (**) : Appelez la méthode de nettoyage si la taille de la boutique augmente lors d’un cycle de synchronisation.
+* **Plages IP autorisées (`primary.allowed-client-ip-ranges`) :** - les plages d&#39;adresses IP à partir desquelles la Principale autorisera les connexions.
+* **Sécurisé (`secure`) :** Activez le chiffrement SSL. Pour que ce paramètre fonctionne, il doit être activé sur toutes les instances.
+* **Délai d’expiration de lecture Secondaire (`standby.readtimeout`) :** Délai d’attente pour les requêtes émises par l’instance Secondaire en millisecondes. **La valeur recommandée pour le délai d’expiration est 43200000. Il est généralement recommandé de définir le délai d’expiration sur au moins 12 heures.**
+* **Nettoyage automatique Secondaire (`standby.autoclean`) :** Appelez la méthode de nettoyage si la taille de la banque augmente lors d&#39;un cycle de synchronisation.
 
 >[!NOTE]
 >
@@ -326,15 +333,15 @@ Ce nœud possède cinq attributs en lecture seule :
 
 * `Running:` valeur booléenne indiquant si le processus de synchronisation est en cours d’exécution ou non.
 * `Mode:` Client : suivi de l’UUID utilisé pour identifier l’instance. Notez que cet UUID change chaque fois que la configuration est mise à jour.
-* `Status:` une représentation textuelle de l’état actuel (comme `running` ou `stopped`).
+* `Status:` une représentation textuelle de l’état actuel (par exemple `running` ou `stopped`).
 * `FailedRequests:`nombre d’erreurs consécutives.
 * `SecondsSinceLastSuccess:` nombre de secondes écoulées depuis la dernière communication réussie avec le serveur. It will display `-1` if no successful communication has been made.
 
 Il existe également trois méthodes invocables : 
 
-* `start():` lance le processus de synchronisation.
+* `start():` début le processus de synchronisation.
 * `stop():` arrête le processus de synchronisation.
-* `cleanup():` exécute l’opération de nettoyage en mode veille.
+* `cleanup():` exécute l&#39;opération de nettoyage sur le Secondaire.
 
 **Instance principale**
 
@@ -344,13 +351,13 @@ L’observation de l’instance principale permet d’identifer certaines inform
 
 Des informations supplémentaires pour jusqu’à 10 clients (instances de secours) connectés au maître peuvent être récupérées. L’ID du MBean est l’UUID de l’instance. Il n’existe pas de méthode invocable pour ces MBeans, mais certains attributs en lecture seule très utiles :
 
-* `Name:` ID du client.
-* `LastSeenTimestamp:` l’horodatage de la dernière requête dans une représentation textuelle.
-* `LastRequest:` dernière requête du client.
+* `Name:` l’identifiant du client.
+* `LastSeenTimestamp:` horodatage de la dernière requête dans une représentation textuelle.
+* `LastRequest:` la dernière demande du client.
 * `RemoteAddress:` adresse IP du client.
 * `RemotePort:` port utilisé par le client pour la dernière requête.
-* `TransferredSegments:` nombre total de segments transférés vers ce client.
-* `TransferredSegmentBytes:`nombre total d’octets transférés vers ce client.
+* `TransferredSegments:` nombre total de segments transférés à ce client.
+* `TransferredSegmentBytes:`nombre total d&#39;octets transférés à ce client.
 
 ## Maintenance du référentiel Cold Standby {#cold-standby-repository-maintenance}
 
@@ -364,7 +371,7 @@ Des informations supplémentaires pour jusqu’à 10 clients (instances de seco
 >
 >Si vous exécutez [Nettoyage des révisions en ligne](/help/sites-deploying/revision-cleanup.md) sur l’instance principale, la procédure manuelle présentée ci-dessous n’est pas nécessaire. Additionally, if you are using Online Revision Cleanup, the `cleanup ()` operation on the standby instance will pe performed automatically.
 
-Adobe conseille d’exécuter régulièrement la maintenance afin d’éviter une croissance excessive du référentiel au fil du temps. Pour exécuter manuellement la maintenance du référentiel Cold Standby, procédez comme suit :
+Adobe recommande d&#39;exécuter régulièrement la maintenance afin d&#39;éviter une croissance excessive du référentiel au fil du temps. Pour exécuter manuellement la maintenance du référentiel Cold Standby, procédez comme suit :
 
 1. Arrêtez le processus de secours sur l’instance de secours en accédant à la console JMX et en utilisant le bean **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**. Pour plus d’informations sur cette procédure, reportez-vous à la section [Surveillance](/help/sites-deploying/tarmk-cold-standby.md#monitoring) ci-dessous.
 
@@ -388,6 +395,7 @@ Il est important d’exécuter de temps en temps le nettoyage de la mémoire sur
 
    * On the primary, run the data store garbage collection via the relevant JMX bean as described in [this article](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
    * On the standby, the data store garbage collection is available only via the **BlobGarbageCollection** MBean - `startBlobGC()`. The **RepositoryManagement** MBean is not available on the standby.
+
    >[!NOTE]
    >
    >Si vous n’utilisez pas d’entrepôt de données partagé, le nettoyage de la mémoire doit d’abord être exécuté sur l’instance principale, puis sur l’instance de secours.
