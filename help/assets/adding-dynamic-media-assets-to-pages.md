@@ -22,7 +22,7 @@ ht-degree: 62%
 
 To add the dynamic media functionality to assets you use on your websites, you can add the **Dynamic Media** or **Interactive Media** component directly on the page. Pour ce faire, vous devez activer le mode Mise en page et activer les composants Dynamic Media. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media et Interactive Media sont dynamiques : ils détectent si vous ajoutez une image ou une vidéo et les options disponibles changent en conséquence.
 
-Vous pouvez ajouter directement des ressources multimédias dynamiques à la page si vous utilisez AEM en tant que WCM. Si vous faites appel à un tiers pour votre gestion de contenu web, [liez](linking-urls-to-yourwebapplication.md) ou [incorporez](embed-code.md) vos ressources. Pour un site web tiers réactif, reportez-vous à la section [Diffusion d’images optimisées sur un site réactif](responsive-site.md).
+Vous pouvez ajouter directement des fichiers multimédias dynamiques à la page si vous utilisez AEM comme gestion de contenu Web. Si vous faites appel à un tiers pour votre gestion de contenu web, [liez](linking-urls-to-yourwebapplication.md) ou [incorporez](embed-code.md) vos ressources. Pour un site web tiers réactif, reportez-vous à la section [Diffusion d’images optimisées sur un site réactif](responsive-site.md).
 
 >[!NOTE]
 >
@@ -30,21 +30,21 @@ Vous pouvez ajouter directement des ressources multimédias dynamiques à la pag
 
 ## Ajout d’un composant Dynamic Media à une page  {#adding-a-dynamic-media-component-to-a-page}
 
-Ajouter un composant Dynamic Media à une page revient à ajouter un composant à une page. Les composants Dynamic Media sont décrits en détail dans les sections suivantes.
+Ajouter un composant Contenu multimédia dynamique à une page revient à ajouter un composant à une page. Les composants Contenu multimédia dynamique sont décrits en détail dans les sections suivantes.
 
 >[!NOTE]
 >
->S’il existe un composant Dynamic Media sur une page Web accessible par un utilisateur disposant d’autorisations en lecture seule, les sauts de page et les composants ne sont pas rendus correctement. La raison en est que la page est reconstruite pour s’assurer que les propriétés des composants sont correctes et que les ressources et configurations référencées sont accessibles. La page est alors rendue à nouveau, ce qui entraîne la coupure des composants ; le code de composant correspondant sur la page ne peut pas être rendu à nouveau en raison de l’accès en lecture seule de l’utilisateur.
+>S’il existe un composant Contenu multimédia dynamique sur une page Web accessible par un utilisateur disposant d’autorisations en lecture seule, les sauts de page et les composants ne s’affichent pas correctement. La raison en est que la page est reconstruite pour s’assurer que les propriétés des composants sont correctes et que les ressources et configurations référencées sont accessibles. La page est alors rendue à nouveau, ce qui entraîne la coupure des composants ; le code de composant correspondant sur la page ne peut pas être rendu à nouveau en raison de l’accès en lecture seule de l’utilisateur.
 >  
 >Pour éviter ce problème, assurez-vous que les utilisateurs AEM Sites disposent des autorisations nécessaires pour accéder aux ressources.
 
 1. Dans AEM, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
 1. Dans le panneau situé à gauche de la page (vous devrez peut-être activer/désactiver l’affichage du panneau latéral), cliquez sur l’icône **[!UICONTROL Composants]** .
-1. Sous l’en-tête **[!UICONTROL Composants]** , dans la liste déroulante, sélectionnez **[!UICONTROL Dynamic Media]**. Si aucune liste de composants Dynamic Media n’est disponible, vous devrez probablement activer ceux que vous souhaitez utiliser. Voir [Activation des composants Dynamic Media](#enabling-dynamic-media-components).
+1. Sous l’en-tête **[!UICONTROL Composants]** , dans la liste déroulante, sélectionnez Contenu multimédia **** dynamique. Si aucune liste de composants Dynamic Media n’est disponible, vous devrez probablement activer ceux que vous souhaitez utiliser. Voir [Activation des composants Dynamic Media](#enabling-dynamic-media-components).
 
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
-1. Faites glisser un composant Dynamic Media que vous souhaitez utiliser sur la page à l’emplacement de votre choix.
+1. Faites glisser un composant Contenu multimédia dynamique que vous souhaitez utiliser sur la page à l’emplacement de votre choix.
 1. Placez le pointeur de la souris directement sur le composant. Lorsque le composant est entouré d’une zone bleue, appuyez une fois pour afficher la barre d’outils du composant. Appuyez sur l’icône **** Configuration (clé à molette).
 1. [Modifiez les composants](#dynamic-media-components) selon vos besoins et cochez la case pour enregistrer les modifications.
 
@@ -101,11 +101,11 @@ Dynamic Media and Interactive Media are available under the [!UICONTROL Dynamic 
 
 ### Composant Dynamic Media {#dynamic-media-component}
 
-Le composant Dynamic Media est intelligent ; selon que vous ajoutez une image ou une vidéo, vous disposez de différentes options. Le composant prend en charge les paramètres d’image prédéfinis, ainsi que les visionneuses d’images telles que les visionneuses d’images, les visionneuses à 360°, les visionneuses de médias mixtes et le contenu vidéo. En outre, le lecteur est réactif. Autrement dit, la taille de l’écran change automatiquement en fonction de la taille de l’écran. Toutes les visionneuses sont des visionneuses HTML5.
+Le composant Contenu multimédia dynamique est intelligent ; selon que vous ajoutez une image ou une vidéo, vous disposez de différentes options. Le composant prend en charge les paramètres d’image prédéfinis, ainsi que les visionneuses d’images telles que les visionneuses d’images, les visionneuses à 360°, les visionneuses de médias mixtes et le contenu vidéo. En outre, le lecteur est réactif. Autrement dit, la taille de l’écran change automatiquement en fonction de la taille de l’écran. Toutes les visionneuses sont des visionneuses HTML5.
 
 >[!NOTE]
 >
->S’il existe un composant Dynamic Media, un composant Interactive Media ou les deux sur une page Web accessible par un utilisateur disposant d’autorisations en lecture seule, les sauts de page et les composants ne sont pas rendus correctement. La raison en est que la page est reconstruite pour s’assurer que les propriétés des composants sont correctes et que les ressources et configurations référencées sont accessibles. La page est alors rendue à nouveau, ce qui entraîne la coupure des composants ; le code de composant correspondant sur la page ne peut pas être rendu à nouveau en raison de l’accès en lecture seule de l’utilisateur.
+>S’il existe un composant Contenu multimédia dynamique, un composant Contenu multimédia interactif ou les deux sur une page Web accessible par un utilisateur disposant d’autorisations en lecture seule, les sauts de page et les composants ne sont pas rendus correctement. La raison en est que la page est reconstruite pour s’assurer que les propriétés des composants sont correctes et que les ressources et configurations référencées sont accessibles. La page est alors rendue à nouveau, ce qui entraîne la coupure des composants ; le code de composant correspondant sur la page ne peut pas être rendu à nouveau en raison de l’accès en lecture seule de l’utilisateur.
 >  
 >Pour éviter ce problème, assurez-vous que les utilisateurs AEM Sites disposent des autorisations nécessaires pour accéder aux ressources.
 
@@ -115,6 +115,7 @@ Le composant Dynamic Media est intelligent ; selon que vous ajoutez une image ou
 >
 >* Vous avez [activé Dynamic Media](config-dynamic.md). Par défaut, ce module complémentaire est désactivé.
 >* L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media ne possèdent pas de fichier pyramid tiff.
+
 >
 
 
@@ -172,7 +173,7 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
 * **[!UICONTROL Paramètre prédéfini]** de visionneuse Sélectionnez un paramètre prédéfini existant dans le menu déroulant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse.
 
-* **[!UICONTROL Modificateurs]** de visionneuse Les modificateurs de visionneuse prennent la forme d’une paire nom=valeur avec un délimiteur &amp; et vous permettent de modifier les visionneuses comme l’indique le Guide de référence des visionneuses Adobe. Un exemple de modificateur de visionneuse est posterimage=img.jpg&amp;caption=text.vtt,1
+* **[!UICONTROL Modificateurs]** de visionneuse Les modificateurs de visionneuse prennent la forme d’une paire nom=valeur avec un délimiteur &amp; et vous permettent de modifier les visionneuses comme l’indique le Guide de référence des visionneuses d’Adobes. Un exemple de modificateur de visionneuse est posterimage=img.jpg&amp;caption=text.vtt,1
 
    Avec les modificateurs de visionneuse, par exemple, vous pouvez effectuer les opérations suivantes :
 
@@ -222,7 +223,7 @@ Le composant Interactive Media est intelligent. Selon que vous ajoutez une image
 
 >[!NOTE]
 >
->S’il existe un composant Dynamic Media, un composant Interactive Media ou les deux sur une page Web accessible par un utilisateur disposant d’autorisations en lecture seule, les sauts de page et les composants ne sont pas rendus correctement. La raison en est que la page est reconstruite pour s’assurer que les propriétés des composants sont correctes et que les ressources et configurations référencées sont accessibles. La page est alors rendue à nouveau, ce qui entraîne la coupure des composants ; le code de composant correspondant sur la page ne peut pas être rendu à nouveau en raison de l’accès en lecture seule de l’utilisateur.
+>S’il existe un composant Contenu multimédia dynamique, un composant Contenu multimédia interactif ou les deux sur une page Web accessible par un utilisateur disposant d’autorisations en lecture seule, les sauts de page et les composants ne sont pas rendus correctement. La raison en est que la page est reconstruite pour s’assurer que les propriétés des composants sont correctes et que les ressources et configurations référencées sont accessibles. La page est alors rendue à nouveau, ce qui entraîne la coupure des composants ; le code de composant correspondant sur la page ne peut pas être rendu à nouveau en raison de l’accès en lecture seule de l’utilisateur.
 > 
 >Pour éviter ce problème, assurez-vous que les utilisateurs AEM Sites disposent des autorisations nécessaires pour accéder aux ressources.
 
