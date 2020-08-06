@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: a9ab5a78-2add-46e1-a8f2-444d0f25f43a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '337'
+ht-degree: 76%
 
 ---
 
@@ -18,11 +21,11 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 Les formulaires HTML5 sont rendu utilisant des fonctionnalités HTML5 et le style du formulaire rendu est fait utilisant CSS. L’apparence par défaut des formulaires HTML5 est similaire à son rendu PDF. Les développeurs peuvent utiliser des CSS personnalisés pour modifier l’apparence par défaut des formulaires HTML5.
 
-This article provides step-by-step information to change style of an HTML5 form and [Introduction to Styles](/help/forms/using/css-styles.md) article contains detailed information about various styling aspects of HTML5 forms. Veillez à lire l’article Introduction aux styles avant d’exécuter les étapes mentionnées dans cet article.
+This article provides step-by-step information to change style of an HTML5 form and [Introduction to Styles](/help/forms/using/css-styles.md) article contains detailed information about various styling aspects of HTML5 forms. Assurez-vous de lire l’article Introduction aux styles avant d’exécuter les étapes mentionnées dans cet article.
 
 Les deux images qui suivent montrent la différence entre les styles par défaut et les styles personnalisés.
 
-![picture-002-small](assets/pictures-002-small.png)
+![images-002-small](assets/pictures-002-small.png)
 
 ## Donner du style à vos formulaires {#style-your-forms}
 
