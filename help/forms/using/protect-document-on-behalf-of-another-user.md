@@ -8,6 +8,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 AEM Forms Document Security Java SDK fournit des API permettant à un compte d’utilisateur de protéger un document au nom d’un autre utilisateur sans avoir les autorisations nécessaires pour modifier le document. Vous pouvez utiliser l’API dans un processus de flux ou par programmation en tant que service de document. Les nouvelles API sont les suivantes :
 
-* **protectDocumentUtilisez** l’API ProtectDocument pour appliquer une stratégie à un document pour le compte de
+* **protectDocumentUtilisez** l&#39;API ProtectDocument pour appliquer une stratégie à un document pour le compte de
 
    un autre compte utilisateur. Les autorisations du compte utilisateur utilisé pour appliquer la stratégie restent limitées à la protection du document. Elles ne permettent pas d’ouvrir et d’afficher le document. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, boolean bExactMatchForNames)
 
