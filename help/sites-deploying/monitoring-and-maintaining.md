@@ -269,7 +269,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 1. S’il n’existe pas déjà, créez un dossier de configuration (`sling:Folder`) pour votre projet `/apps/<project-name>/config`.
 1. Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings):
 
-   * Nom (name) : 
+   * Nom:
 
    `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (car il s&#39;agit d&#39;un journal)
 
@@ -288,7 +288,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
       Valeur : spécifiez le fichier journal ; par exemple, `logs/myLogFile.log`
 
-   * Nom (name) : `org.apache.sling.commons.log.names`
+   * Nom : `org.apache.sling.commons.log.names`
 
       Type : `String[] (String + Multi)`
 
@@ -305,7 +305,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
    * Configurez les autres paramètres en fonction de vos besoins :
 
-      * Nom (name) : `org.apache.sling.commons.log.pattern`
+      * Nom : `org.apache.sling.commons.log.pattern`
 
          Type : `String`
 
@@ -370,7 +370,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
    Définissez les propriétés suivantes sur ce nœud :
 
-   * Nom (name) : `org.apache.sling.commons.log.file`
+   * Nom : `org.apache.sling.commons.log.file`
 
       Type : `String`
 
@@ -380,13 +380,13 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
    * Configurez les autres paramètres en fonction de vos besoins :
 
-      * Nom (name) : `org.apache.sling.commons.log.file.number`
+      * Nom : `org.apache.sling.commons.log.file.number`
 
          Type : `Long`
 
          Value: specify the number of log files you want kept; for example, `5`
 
-      * Nom (name) : `org.apache.sling.commons.log.file.size`
+      * Nom : `org.apache.sling.commons.log.file.size`
 
          Type : `String`
 
@@ -405,7 +405,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >* Une planification heure/date peut être spécifiée sous la forme d’un modèle `java.util.SimpleDateFormat`. Cela définit le délai au bout duquel le fichier subit une rotation ; de même que le suffixe ajouté au fichier pivoté (pour identification). 
 
    >
-   >  La valeur par défaut est &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
+   >  La valeur par défaut est de &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
    >
    >  Par exemple, à minuit le 20 janvier 2010 (ou pour être précis, lorsque le premier message de journal après cette heure est envoyé), ../logs/error.log sera renommé ../logs/error.log.2010-01-20. La journalisation du 21 janvier sera générée vers ../logs/error.log (nouveau et vide) jusqu’à ce qu’elle soit remplacée lors de la prochaine modification quotidienne.
    >
@@ -736,7 +736,7 @@ Des tests doivent être effectués pour déterminer le nombre d’utilisations s
 
 ### Utilisation de rlog.jar pour trouver des demandes avec de longues durées {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM comprend divers outils d’assistance situés dans :\
+AEM comprend divers outils d&#39;assistance situés dans :\
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 L’un de ces outils, `rlog.jar` , , peut être utilisé pour trier rapidement `request.log` de sorte que les demandes soient affichées selon la durée, c’est-à-dire de la plus longue à la plus courte.
