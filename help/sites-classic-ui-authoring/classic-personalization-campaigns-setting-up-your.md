@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e30e5a21-ac86-4653-bd1f-7351852db3f3
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2289'
+ht-degree: 98%
 
 ---
 
@@ -184,7 +187,7 @@ Création manuelle d’une piste :
 
    ![screen_shot_2012-02-21at115045am](assets/screen_shot_2012-02-21at115045am.png)
 
-1. Saisissez les informations de l’adresse, si nécessaire. Cliquez sur **Enregistrer** pour enregistrer la piste. Si vous devez ajouter des pistes supplémentaires, cliquez sur** Enregistrer et nouveau**.
+1. Saisissez les informations de l’adresse, si nécessaire. Cliquez sur **Enregistrer** pour enregistrer la piste. Si vous devez ajouter d&#39;autres pistes, cliquez sur** Enregistrer et nouveau**.
 
    La nouvelle piste s’affiche dans le volet Pistes. Lorsque vous cliquez sur l’entrée, toutes les informations saisies s’affichent dans le volet de droite. Une fois une piste créée, vous pouvez l’ajouter à une liste.
 
@@ -229,7 +232,7 @@ Importation de pistes à partir d’une liste de valeurs séparées par des virg
    >
    >La première ligne de la liste CSV contient des étiquettes dont la formulation doit être parfaitement identique à l’exemple ci-dessous :
    >
-   >`email,givenName,familyName` - s&#39;il est écrit comme `givenname`, par exemple, le système ne le reconnaîtra pas.
+   >`email,givenName,familyName` - s&#39;il est écrit comme `givenname`par exemple, le système ne le reconnaîtra pas.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
@@ -253,7 +256,7 @@ Ajout de pistes à des listes préexistantes :
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. Dans le menu **Outils**, sélectionnez **Ajouter à la liste.** La fenêtre **Ajouter à la liste **s&#39;ouvre.
+1. Dans le menu **Outils**, sélectionnez **Ajouter à la liste.** La **Ajouter à la Liste **fenêtre s&#39;ouvre.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
