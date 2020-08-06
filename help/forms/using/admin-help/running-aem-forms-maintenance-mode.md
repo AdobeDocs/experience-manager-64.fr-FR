@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +31,7 @@ Evitez d’appeler des processus lorsque le serveur est en mode de maintenance. 
 
 1. Dans un navigateur Web, entrez :
 
-   `https://`*[hostname ]*`:`*[port]* user name `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[administrator ]*`&password=`*[password]*
+   `https://`*[hostname ]*`:`*[port]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[administrator username ]*`&password=`*[password]*
 
    Un message de pause s’affiche dans la fenêtre du navigateur.
 
@@ -40,7 +43,7 @@ Evitez d’appeler des processus lorsque le serveur est en mode de maintenance. 
 
 1. Dans un navigateur Web, entrez :
 
-   `https://`*[nom]d’hôte:[port ]*nom d’utilisateur`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[]* `&password=`*[administrateurmot de passe ]*
+   `https://`*[nom d’hôte]:[port ]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[administrator nom d’utilisateur]* `&password=`*[password ]*
 
    L’état s’affiche dans la fenêtre du navigateur. L’état « true » indique que le serveur s’exécute en mode de maintenance et « false » que le serveur ne s’exécute pas dans ce mode.
 
@@ -48,7 +51,7 @@ Evitez d’appeler des processus lorsque le serveur est en mode de maintenance. 
 
 1. Dans un navigateur Web, entrez :
 
-   `https://`*[nom]d’hôte:[port ]*nom d’utilisateur`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[]* `&password=`*[administrateurmot de passe ]*
+   `https://`*[nom d’hôte]:[port ]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[administrator nom d’utilisateur]* `&password=`*[password ]*
 
    Un message d’exécution s’affiche dans la fenêtre du navigateur.
 
