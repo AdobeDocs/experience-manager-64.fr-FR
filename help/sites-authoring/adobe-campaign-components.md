@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2778'
+ht-degree: 74%
 
 ---
 
@@ -21,7 +24,7 @@ Lorsque vous procédez à l’intégration à Adobe Campaign, des composants son
 
 ## Composant Newsletter Adobe Campaign {#adobe-campaign-newsletter-components}
 
-Tous les composants d’Adobe Campaign appliquent les méthodes recommandées décrites dans les [bonnes pratiques pour les modèles de courrier électronique](/help/sites-administering/best-practices-for-email-templates.md) et dépendent du langage de balisage [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html) d’Adobe.
+Tous les composants d’Adobe Campaign appliquent les méthodes recommandées décrites dans les [bonnes pratiques pour les modèles de courrier électronique](/help/sites-administering/best-practices-for-email-templates.md) et dépendent du langage de balisage [HTL](https://helpx.adobe.com/fr/experience-manager/htl/using/overview.html) d’Adobe.
 
 Lorsque vous ouvrez une newsletter/un courrier électronique configuré de manière à être intégré à Adobe Campaign, les composants ci-dessous doivent s’afficher dans la section **Newsletter Adobe Campaign** :
 
@@ -93,7 +96,7 @@ Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
 * **Map**
 
-   Pour mapper une image, sélectionnez Zone cliquable. Vous pouvez indiquer comment créer la zone cliquable (rectangle, polygone, etc.) et où la zone doit pointer.
+   Pour mapper une image, sélectionnez Zone cliquable. Vous pouvez spécifier comment créer la zone cliquable (rectangle, polygone, etc.) et où la zone doit pointer.
 
 * **Options**
 
@@ -101,7 +104,7 @@ Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
 * **Rotation**
 
-   Pour faire pivoter une image, sélectionnez Rotation. Utilisez-le plusieurs fois jusqu’à ce que l’image soit pivotée comme vous le souhaitez.
+   Pour faire pivoter une image, sélectionnez Pivoter. Utilisez-le à plusieurs reprises jusqu’à ce que l’image soit pivotée comme vous le souhaitez.
 
 * **Effacer**
 
@@ -152,7 +155,7 @@ Vous pouvez configurer les éléments ci-dessous sur les onglets **Affichage**, 
 
    Légende du lien. Il s’agit du texte que les utilisateurs voient.
 
-* **Link ToolTip**
+* **Info-bulle de lien**
 
    Ajoute des informations supplémentaires sur la manière d’utiliser le lien.
 
@@ -177,7 +180,7 @@ L’exemple ci-dessous présente le composant Lien (Campaign) affiché.
 
 ### Modèle d’image Scene7 (Campaign) {#scene-image-template-campaign}
 
-[Les modèles](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) d’image Scene7 sont des fichiers d’images superposés, dans lesquels le contenu et les propriétés peuvent être paramétrés en fonction de la variabilité. Le composant **Modèle d’image** permet d’utiliser des modèles Scene7 dans des newsletters et de modifier les valeurs des paramètres de modèle. En outre, vous pouvez utiliser les variables de métadonnées d’Adobe Campaign dans les paramètres, de sorte que chaque utilisateur expérimente l’image de manière personnalisée.
+[Les modèles](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) d’image Scene7 sont des fichiers d’image superposés où le contenu et les propriétés peuvent être paramétrés en fonction de la variabilité. Le composant **Modèle d’image** permet d’utiliser des modèles Scene7 dans des newsletters et de modifier les valeurs des paramètres de modèle. En outre, vous pouvez utiliser des variables de métadonnées Adobe Campaign à l’intérieur des paramètres, de sorte que chaque utilisateur expérimente l’image d’une manière personnalisée.
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
@@ -223,7 +226,7 @@ Comme pour les composants Texte et personnalisation (Campaign) et Image (Campaig
 
    Faites glisser une image à partir de l’Outil de recherche de contenu ou cliquez pour accéder à une image. Recadrez ensuite l’image ou faites-la pivoter.
 
-* **Propriétés** de l’image (propriétés **d’image** avancées)
+* **Propriétés** de l’image (propriétés **de l’image** avancée)
 
    Sous cet onglet, vous pouvez spécifier les paramètres suivants :
 
@@ -272,6 +275,7 @@ Dans l’éditeur statique, vous pouvez ajouter du texte, modifier l’alignemen
 >
 >* Les champs de personnalisation disponibles dépendent du modèle Adobe Campaign auquel votre newsletter est liée.
 >* Après avoir sélectionné un persona dans ContextHub, les champs de personnalisation sont remplacés automatiquement par les données du profil sélectionné.
+
 >
 >
 Reportez-vous à la section [Insertion d’une personnalisation](/help/sites-authoring/campaign.md#inserting-personalization).
@@ -313,7 +317,7 @@ Le tableau ci-dessous décrit les composants disponibles pour afficher et modifi
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>Component</strong></p> </td> 
+   <td><p><strong>Composant</strong></p> </td> 
    <td><p><strong>Type de données d’un champ Adobe Campaign </strong></p> </td> 
    <td><p><strong>Exemple de champ</strong></p> </td> 
   </tr> 
@@ -357,7 +361,7 @@ Dans la plupart des composants, vous pouvez configurer les éléments suivants 
 
 * **Titre**
 
-   Si vous souhaitez utiliser un nom autre que le nom de l’élément, saisissez-le ici.
+   Si vous souhaitez utiliser un nom autre que le nom de l’élément, entrez-le ici.
 
 * **Masquer le titre**
 
@@ -369,7 +373,7 @@ Dans la plupart des composants, vous pouvez configurer les éléments suivants 
 
 * **N’afficher que la valeur**
 
-   Affiche uniquement la valeur, s’il existe une
+   Affiche uniquement la valeur, s’il y en a une
 
 #### Adobe Campaign {#adobe-campaign}
 
@@ -381,7 +385,7 @@ Vous pouvez configurer les éléments suivants :
 
 * **Clé de réconciliation**
 
-   Cochez cette case si ce champ fait partie de la clé de rapprochement.
+   Cochez cette case si ce champ fait partie de la clé de réconciliation.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -389,11 +393,11 @@ Vous pouvez configurer les éléments suivants :
 
 * **Requis**
 
-   Cochez cette case pour rendre ce composant obligatoire ; autrement dit, les utilisateurs doivent saisir une valeur.
+   Activez cette case à cocher pour que ce composant soit requis ; autrement dit, les utilisateurs doivent saisir une valeur.
 
 * **Message obligatoire**
 
-   Vous pouvez éventuellement ajouter un message indiquant que le champ est obligatoire.
+   Vous pouvez éventuellement ajouter un message indiquant que le champ est requis.
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -425,8 +429,9 @@ Outre les [paramètres communs à la plupart des composants Adobe Campaign](#set
 
 * **Message de contrainte**
 
-   En outre, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent comment formater correctement leurs réponses.
-* **Style - Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur les icônes **+** et **-** ou en saisissant un nombre.
+   En outre, vous pouvez ajouter un message de contrainte pour que les utilisateurs sachent comment formater correctement leurs réponses.
+* **Style - Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur le bouton 
+**+** et **-** icônes ou saisie d’un nombre.
 
 L’exemple ci-dessous présente le composant Champ de date (Campaign), dont la largeur ajustée, affiché.
 
@@ -442,8 +447,9 @@ Vous pouvez configurer les éléments ci-dessous dans le composant Clé primaire
 
 * **Titre et texte - Nom de l’élément**
 
-   Valeur par défaut de encryptedPK. Il suffit de modifier le nom d’élément lorsqu’il crée un conflit avec le nom d’un autre élément sur le formulaire. Deux champs de formulaire ne peuvent pas porter le même nom d’élément.
-* **Adobe Campaign – Paramètre d’URL** Ajoutez le paramètre d’URL de l’EPK. Par exemple, vous pouvez utiliser la valeur **epk**.
+   Par défaut, la valeur de encryptedPK est définie. Il suffit de modifier le nom d’élément lorsqu’il crée un conflit avec le nom d’un autre élément sur le formulaire. Deux champs de formulaire ne peuvent pas porter le même nom d’élément.
+* **Adobe Campaign – Paramètre d’URL** Ajoutez le paramètre d’URL de l’EPK. Par exemple, vous pouvez utiliser la valeur 
+**epk**.
 
 L’exemple ci-dessous présente le composant Clé primaire chiffrée (Campaign) affiché.
 
@@ -465,7 +471,7 @@ Vous pouvez configurer les éléments ci-dessous dans le composant Clé de réco
 
 * **Titre et texte - Nom de l’élément**
 
-   Valeur par défaut de reconcilKey. Il suffit de modifier le nom d’élément lorsqu’il crée un conflit avec le nom d’un autre élément sur le formulaire. Deux champs de formulaire ne peuvent pas porter le même nom d’élément.
+   La valeur par défaut est reconcilKey. Il suffit de modifier le nom d’élément lorsqu’il crée un conflit avec le nom d’un autre élément sur le formulaire. Deux champs de formulaire ne peuvent pas porter le même nom d’élément.
 * **Adobe Campaign – Mappage** Associez-la à un champ de personnalisation Adobe Campaign.
 
 L’exemple ci-dessous présente le composant Clé de réconciliation masquée (Campaign) affiché.
@@ -484,8 +490,9 @@ Outre les [paramètres communs à la plupart des composants Adobe Campaign](#set
 
 * **Message de contrainte**
 
-   En outre, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent comment formater correctement leurs réponses.
-* **Style - Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur les icônes **+** et **-** ou en saisissant un nombre.
+   En outre, vous pouvez ajouter un message de contrainte pour que les utilisateurs sachent comment formater correctement leurs réponses.
+* **Style - Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur le bouton 
+**+** et **-** icônes ou saisie d’un nombre.
 
 L’exemple ci-dessous présente le composant Champ numérique (Campaign), dont la largeur est configurée, affiché.
 
@@ -531,7 +538,7 @@ Outre les [paramètres communs à la plupart des composants Adobe Campaign](#set
 
 * **Message de contrainte**
 
-   En outre, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent comment formater correctement leurs réponses.
+   En outre, vous pouvez ajouter un message de contrainte pour que les utilisateurs sachent comment formater correctement leurs réponses.
 
 * **Style - Largeur**
 
