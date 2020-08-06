@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: df8cfde3-543d-4150-9822-9be763908bd7
 translation-type: tm+mt
 source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+workflow-type: tm+mt
+source-wordcount: '1687'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +26,7 @@ Pour plus d’informations sur l’utilisation de la console JMX, voir [Surveill
 
 ## Le framework JMX dans Felix et CQ5 {#the-jmx-framework-in-felix-and-cq}
 
-Sur la plate-forme Apache Felix, vous déployez MBeans en tant que services OSGi. Lorsqu’un service MBean est enregistré dans le registre du service OSGi, le module Tableau blanc Aries JMX enregistre automatiquement le MBean avec le serveur MBean. Le MBean est alors disponible pour la console JMX qui expose les attributs et opérations publics.
+Sur la plate-forme Apache Felix, vous déployez MBeans en tant que services OSGi. Lorsqu&#39;un service MBean est enregistré dans le registre de services OSGi, le module Carte blanche Aries JMX enregistre automatiquement le MBean avec le serveur MBean. Le MBean est alors disponible pour la console JMX qui expose les attributs et opérations publics.
 
 ![jmxwhiteboard](assets/jmxwhiteboard.png)
 
@@ -57,7 +60,7 @@ Ajoutez des annotations à l’interface de gestion pour spécifier les métadon
 Les classes sont fournies pour la création de MBeans dynamiques qui consomment les annotations que vous ajoutez à leurs interfaces :
 
 * **AnnotatedStandardMBean :** sous-classe de la classe javax.management.StandardMBean qui fournit automatiquement à la console JMX les métadonnées d’annotation.
-* **** OpenAnnotatedStandardMBean : Sous-classe de la classe AnnotatedStandardMBean pour la création de mbeans ouverts qui consomment l’annotation OpenTypeInfo.
+* **OpenAnnotatedStandardMBean :** Sous-classe de la classe AnnotatedStandardMBean pour la création de Mbeans ouverts qui consomment l&#39;annotation OpenTypeInfo.
 
 ### Développement de MBeans {#developing-mbeans}
 
@@ -136,9 +139,9 @@ Lorsque vous enregistrez des MBeans en tant que service OSGi, ils sont automatiq
 
 En plus des métadonnées liées à OSGi, vous devez également fournir les métadonnées dont le module Aries JMX Whiteboard a besoin pour enregistrer le MBean avec le serveur MBean :
 
-* **** Nom de l’interface DynamicMBean : Déclarez que le service MBean implémente l’interface `javax.management.DynamicMBea`n. Cette déclaration indique au module Aries JMX Whiteboard que le service est un service MBean.
+* **Nom de l’interface DynamicMBean :** Déclarez que le service MBean implémente l&#39;interface `javax.management.DynamicMBea`n. Cette déclaration indique au module Aries JMX Whiteboard que le service est un service MBean.
 
-* **** Domaine MBean et propriétés clés : Sur Felix, vous fournissez ces informations en tant que propriété du service OSGi du MBean. This is the same information that you ordinarily provide to the MBean Server in a `javax.management.ObjectName` object.
+* **Le domaine MBean et les propriétés clés :** Sur Felix, vous fournissez ces informations en tant que propriété du service OSGi du MBean. This is the same information that you ordinarily provide to the MBean Server in a `javax.management.ObjectName` object.
 
 Lorsque votre MBean reflète un service unique, une seule instance du service MBean est requise. Dans ce cas, si vous utilisez le module externe Felix SCR Maven, vous pouvez utiliser les annotations SCR (Apache Felix Service Component Runtime) sur la classe d’implémentation MBean pour spécifier les métadonnées associées à JMX. Pour instancier plusieurs instances MBean, vous pouvez créer une autre classe qui effectue cet enregistrement du service OSGi du MBean. Dans ce cas, les métadonnées associées à JMX sont générées lors de l’exécution.
 
@@ -217,7 +220,7 @@ Le MBean de cet exemple fournit des informations sur les modèles de processus C
 
 >[!NOTE]
 >
-> Pour simplifier, le code de cet exemple n’effectue pas de journalisation ni ne réagit aux exceptions générées.
+>Pour simplifier, le code de cet exemple n’effectue pas de journalisation ou ne réagit pas aux exceptions générées.
 
 WorkflowMBeanManagerImpl inclut une méthode d’activation de composant. Lorsque le composant est activé, la méthode exécute les tâches suivantes :
 
