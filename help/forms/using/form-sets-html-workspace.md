@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: c1793e2e-413c-4b6f-b96b-09e011f06263
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '384'
+ht-degree: 73%
 
 ---
 
@@ -34,7 +37,7 @@ L’espace de travail AEM Forms prend en charge les jeux de formulaires. Avec le
 
 1. Click the **Formset** tab, select the relevant formset from the list, and then click **OK**.
 
-1. Déployez l’application après avoir mis à jour d’autres propriétés de processus appropriées.
+1. Déployez l’application après la mise à jour d’autres propriétés de processus appropriées.
 
 ## Utilisation des jeux de formulaires dans l’espace de travail AEM Forms {#using-formset-in-nbsp-aem-forms-workspace}
 
