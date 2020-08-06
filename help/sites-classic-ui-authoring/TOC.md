@@ -58,7 +58,7 @@ ht-degree: 91%
    + [Création de lancements](classic-launches-creating.md)
    + [Modification de lancements](classic-launches-editing.md)
    + [Conversion de lancements](classic-launches-promoting.md)
-+ Personnalisation  {#personalization}
++ Personnalisation   {#personalization}
    + [Compréhension de la segmentation](classic-personalization-campaigns-segmentation.md)
    + [Gestion de campagnes](classic-personalization-campaigns.md)
    + [Teasers et stratégies](classic-personalization-campaigns-teasers-strategy.md)
