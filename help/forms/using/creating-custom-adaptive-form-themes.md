@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 82%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 >[!CAUTION]
 >
->AEM Forms fournit la fonctionnalité Editeur [de](/help/forms/using/themes.md) thème permettant de créer et de modifier des [thèmes](/help/forms/using/themes.md)de formulaires adaptatifs. Exécutez les étapes répertoriées dans cet article, uniquement si vous avez effectué une mise à niveau à partir d’une version qui n’a pas d’éditeur [de](/help/forms/using/themes.md) thème et si vous avez déjà investi dans des thèmes créés à l’aide de fichiers Less/CSS (méthode d’éditeur de préthème).
+>AEM Forms fournit la fonctionnalité Editeur [de](/help/forms/using/themes.md) thème pour créer et modifier des [thèmes](/help/forms/using/themes.md)de formulaires adaptatifs. Exécutez les étapes répertoriées dans cet article, uniquement si vous avez effectué une mise à niveau à partir d’une version qui ne comporte pas d’éditeur [de](/help/forms/using/themes.md) thème et si vous avez déjà investi dans des thèmes créés à l’aide de fichiers Less/CSS (méthode d’éditeur de thème préalable).
 
 ## Conditions préalables {#prerequisites}
 
@@ -42,7 +45,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
 >
 >Si vous procédez comme suit en utilisant les noms, le modèle résultant ressemble normalement à l’instantané suivant : 
 
-![](assets/thumbnail.png) Instantané&#x200B;**de formulaire adaptatif sur le thème Forêt** Figure : Exemple de thème *Forêt*
+![Instantané](assets/thumbnail.png)**de formulaire adaptatif sur le thème Forêt Figure :** *Exemple de thème de forêt*
 
 1. Create a node of type `cq:ClientLibraryFolder` under the `/apps`node.
 
@@ -58,17 +61,19 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
 
 1. Add two folders, `less` and `css`, and a file `css.txt` to the node created in step 1:
 
-   * `less` dossier : Contient les fichiers `less` variables dans lesquels vous définissez les `less` variables et `less mixins` qui sont utilisées pour gérer les styles .css.
+   * `less` folder: Contient les fichiers `less` variables dans lesquels vous définissez les `less` variables et `less mixins` qui sont utilisées pour gérer les styles .css.
 
       Ce dossier se compose de fichiers de variables `less`, de fichiers mixin `less` et de fichiers `less` de définition utilisant les mixins et les variables. Et tous ces fichiers less sont ensuite importés dans styles.less.
 
    * dossier`css` :   : contient les fichiers .css dans lesquels vous définissez les styles statiques à utiliser dans le thème.
+
    **Fichiers de variables less** : ce sont les fichiers où vous définissez ou remplacez les variables utilisées lors de la définition des styles CSS.
 
    Les formulaires adaptatifs fournissent des variables en standard définies dans les fichiers .less suivants :
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
+
    Les formulaires adaptatifs offrent également des variables tierces définies dans :
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
@@ -96,6 +101,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
       `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
 
    1. Importez ensuite le fichier less contenant les variables remplacées.
+
    Exemples de définitions de nouvelles variables :
 
    ```
@@ -108,9 +114,11 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
    Les formulaires adaptatifs fournissent des mixins en standard définis dans :
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
+
    Les formulaires adaptatifs offrent également des mixins tiers définis dans :
 
    * `/apps/clientlibs/fd/af/third-party/less/mixins.less`
+
    Exemple de définition de mixin : 
 
    ```
