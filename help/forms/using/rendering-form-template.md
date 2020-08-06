@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 79%
 
 ---
 
@@ -65,7 +68,7 @@ Les paramètres de requête pris en charge lors du rendu d’un formulaire au fo
 
 | Paramètre | Description |
 |---|---|
-| dataRef | Ce paramètre indique le **chemin d’accès absolu** du fichier de données fusionné avec le modèle. Ce paramètre peut être une URL vers un service REST renvoyant les données au format xml. |
+| dataRef | Ce paramètre indique le **chemin d’accès absolu** du fichier de données fusionné avec le modèle. Ce paramètre peut être une URL vers un service rest renvoyant les données au format xml. |
 | data | Ce paramètre spécifie les octets de données codés au format UTF-8 qui sont fusionnés avec le modèle. Si ce paramètre est spécifié, le formulaire HTML5 ignore le paramètre dataRef. |
 
 ### Passage du paramètre de rendu {#passing-the-render-parameter}
@@ -76,7 +79,7 @@ Les formulaires HTML5 prennent en charge trois méthodes pour transmettre des pa
 
 * **Paramètres de demande SetAttribute** : Vous pouvez spécifier les paramètres de rendu sous la forme d’une paire de valeurs de clé. Dans les paramètres de demande SetAttribute, les paramètres ne sont pas visibles par l’utilisateur final. Vous pouvez transférer une requête depuis un autre JSP vers le JSP de rendu de profil HTML5 et utiliser *setAttribute* sur l’objet de la requête pour transmettre tous les paramètres de rendu. Cette méthode a la priorité la plus élevée.
 
-* **Paramètres de requête de noeud  :** Vous pouvez spécifier les paramètres de rendu en tant que propriétés de noeud d’un noeud . Dans les paramètres de requête de nœud de profil, les paramètres ne sont pas visibles par l’utilisateur. Le nœud de profil est le nœud où la requête est envoyée. Pour spécifier des paramètres en tant que propriétés de nœud, utilisez CRXDE lite.
+* **Paramètres de demande de noeud de Profil :** Vous pouvez spécifier les paramètres de rendu en tant que propriétés de noeud d’un noeud de profil. Dans les paramètres de requête de nœud de profil, les paramètres ne sont pas visibles par l’utilisateur. Le nœud de profil est le nœud où la requête est envoyée. Pour spécifier des paramètres en tant que propriétés de nœud, utilisez CRXDE lite.
 
 ### Paramètres d’envoi {#submit-parameters}
 
