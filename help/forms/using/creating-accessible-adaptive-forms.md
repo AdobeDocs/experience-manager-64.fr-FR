@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 96d9ad52-074b-4084-b818-abce79282776
 translation-type: tm+mt
 source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+workflow-type: tm+mt
+source-wordcount: '924'
+ht-degree: 86%
 
 ---
 
@@ -43,11 +46,11 @@ Pour utiliser l’option d’accessibilité, procédez comme suit :
 
 ![Options d’accessibilité dans des composants de formulaire](assets/accessibility-options.png)
 
-**Les auteurs de formulaires de texte** personnalisé fournissent le contenu dans le champ de texte personnalisé de l’option d’accessibilité. La technologie d’assistance, comme les lecteurs d’écran, utilise ce texte personnalisé. L’utilisation du paramètre Titre constitue la meilleure option dans la majorité des cas. N’envisagez la création d’un texte personnalisé pour lecteur d’écran que lorsque l’utilisation du titre ou d’une brève description s’avère impossible.
+**Les auteurs de formulaires de texte** personnalisé fournissent le contenu dans l’option d’accessibilité Champ de texte personnalisé. La technologie d’assistance, telle que les lecteurs d’écran, utilise ce texte personnalisé. L’utilisation du paramètre Titre constitue la meilleure option dans la majorité des cas. N’envisagez la création d’un texte personnalisé pour lecteur d’écran que lorsque l’utilisation du titre ou d’une brève description s’avère impossible.
 
-**Brève description** Pour la majorité des composants, la brève description s’affiche au moment de l’exécution lorsque l’utilisateur passe le pointeur sur le composant. Vous pouvez définir cette option dans le champ approprié, sous l’option du contenu d’aide.
+**Description** courte Pour la majorité des composants, la description courte s’affiche au moment de l’exécution lorsque l’utilisateur place le pointeur de la souris sur le composant. Vous pouvez définir cette option dans le champ approprié, sous l’option du contenu d’aide.
 
-**Titre** Utilisez cette option pour permettre à AEM Forms d’utiliser le libellé visuel associé au champ de formulaire comme texte de lecteur d’écran.
+**Titre** Utilisez cette option pour permettre à l’AEM Forms d’utiliser le libellé visuel associé au champ de formulaire comme texte de lecteur d’écran.
 
 **Nom** Vous pouvez spécifier une valeur dans le champ Nom de l’onglet Liaison. Le nom ne peut pas contenir d’espaces.
 
