@@ -109,11 +109,11 @@ Ces options permettent de configurer les autorisations :
 
 **Mise en page, retouche, remplissage de champs de formulaire et signature de champs de signature existants :** Permet aux utilisateurs d’insérer, de faire pivoter ou de supprimer des pages, de créer des signets ou des images miniatures, de remplir des formulaires et d’ajouter des signatures numériques. Cette option ne permet pas aux utilisateurs de créer des champs de formulaire. Cette option n’est disponible que si un niveau de chiffrement faible (Acrobat 3.0) est sélectionné.
 
-**Tout sauf extraire des pages :** Permet aux utilisateurs de modifier le document à l’aide de n’importe quelle méthode de la liste Modifications autorisées, à l’exception des pages supprimées.
+**Tout sauf extraire des pages :** Permet aux utilisateurs de modifier le document à l’aide de n’importe quelle méthode de la Liste autorisée Modifications, à l’exception des pages supprimées.
 
 **Activer La Copie De Texte, D’Images Et D’Autre Contenu :** Permet aux utilisateurs de sélectionner et de copier le contenu du document PDF. Elle permet également aux utilitaires ayant besoin du contenu d’un fichier PDF, comme un catalogue Acrobat, d’y avoir accès. Cette option n’est disponible que si un niveau de chiffrement élevé est sélectionné.
 
-**Activer l’accès au texte des lecteurs d’écran pour les malvoyants :** Permet aux utilisateurs ayant une déficience visuelle de lire le document à l’aide de lecteurs d’écran. Toutefois, les utilisateurs ne peuvent pas copier ou extraire le contenu du document. Cette option n’est disponible que si un niveau de chiffrement élevé est sélectionné.
+**Activer L’Accès Au Texte Des Périphériques De Reader D’Écran Pour Les Personnes Visuellement Handicapées :** Permet aux utilisateurs ayant une déficience visuelle de lire le document à l’aide de lecteurs d’écran. Toutefois, les utilisateurs ne peuvent pas copier ou extraire le contenu du document. Cette option n’est disponible que si un niveau de chiffrement élevé est sélectionné.
 
 ## Suppression d’un paramètre de protection {#delete-a-security-setting}
 
