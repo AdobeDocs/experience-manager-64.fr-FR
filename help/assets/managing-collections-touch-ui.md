@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: dfe5d976da937162e902ba8afac862f290702f5b
 workflow-type: tm+mt
 source-wordcount: '2328'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -253,7 +253,7 @@ Vous pouvez ajouter une collection à une autre collection, créant ainsi une co
 >
 >Les collections dynamiques ne peuvent pas être imbriquées. En d’autres termes, elles ne peuvent pas comporter d’autres collections.
 
-## Recherches enregistrées  {#saved-searches}
+## Recherches enregistrées   {#saved-searches}
 
 Dans l’interface utilisateur d’Assets, vous pouvez rechercher ou filtrer des ressources selon des règles, critères de recherche ou facettes de recherche personnalisées. Si vous enregistrez ces éléments en tant que **[!UICONTROL recherches enregistrées]**, vous pouvez y accéder ultérieurement à partir de la liste **[!UICONTROL Recherches enregistrées]** du panneau Filtrer. La création d’une recherche enregistrée entraîne celle d’une collection dynamique.
 
