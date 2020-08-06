@@ -25,7 +25,7 @@ Les fichiers d’application et de données à sauvegarder sont décrits en dét
 Considérez les points suivants concernant la sauvegarde et la récupération :
 
 * La base de données doit être sauvegardée avant le stockage global de document et le référentiel AEM.
-* Si vous devez descendre les noeuds dans un environnement organisé en grappes pour la sauvegarde, veillez à ce que les noeuds secondaires soient fermés avant le noeud principal. Dans le cas contraire, une incohérence peut survenir dans la grappe ou le serveur. En outre, le noeud principal doit être rendu actif avant tout noeud secondaire.
+* Si vous devez descendre les noeuds dans un environnement organisé en grappes pour la sauvegarde, veillez à ce que les noeuds secondaires soient fermés avant le noeud Principal. Dans le cas contraire, une incohérence peut survenir dans la grappe ou le serveur. En outre, le noeud Principal doit être rendu actif avant tout noeud secondaire.
 * Pour l’opération de restauration d’une grappe, le serveur d’applications doit être arrêté pour chaque nœud de la grappe.
 
 ## Répertoire de stockage global de documents {#global-document-storage-directory}
