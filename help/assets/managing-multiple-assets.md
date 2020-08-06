@@ -1,9 +1,12 @@
 ---
-title: Modification en masse des métadonnées de plusieurs fichiers et collections
+title: Modification en masse des métadonnées de plusieurs ressources et collections
 description: Découvrez comment modifier simultanément les métadonnées de nombreux fichiers et collections afin de propager rapidement les modifications de métadonnées courantes.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 77%
 
 ---
 
@@ -41,20 +44,20 @@ Pour personnaliser la page des propriétés de métadonnées, notamment ajouter,
    >[!NOTE]
    >
    >* Dans la page des propriétés, vous pouvez supprimer des ressources de la liste des ressources en les désélectionnant. La liste des ressources contient toutes les ressources sélectionnées par défaut. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
-   >* At the top of assets list, select the check box near **Title** to toggle between selecting the assets and clearing the list.
+   >* En haut de la liste des ressources, cochez la case située en regard de l’option **Titre** pour passer de la sélection des ressources à l’effacement de la liste, et inversement.
 
 
 1. Pour sélectionner un schéma de métadonnées différent pour les ressources, appuyez/cliquez sur l’icône **[!UICONTROL Paramètres]** dans la barre d’outils, puis sélectionnez le schéma souhaité.
 1. Enregistrez les modifications.
-1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes dans les champs qui contiennent plusieurs valeurs, sélectionnez le mode **[!UICONTROL Ajouter]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Appuyez/cliquez sur **[!UICONTROL Envoyer]**.
+1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes dans les champs contenant plusieurs valeurs, sélectionnez **[!UICONTROL Mode d’ajout]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Appuyez/cliquez sur **[!UICONTROL Envoyer]**.
 
    >[!CAUTION]
    >
-   >Pour les champs à une valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ, même si vous sélectionnez le **[!UICONTROL mode Ajouter]**.
+   >Pour les champs à une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
 
 ## Configuration du nombre maximal de paramètres pour la mise à jour des métadonnées en masse {#configure-limit-for-bulk-metadata-update}
 
-Pour éviter une situation similaire à DOS, AEM limite le nombre de paramètres pris en charge dans une requête Sling. Lors de la mise à jour simultanée de plusieurs fichiers, vous pouvez atteindre le nombre maximal de paramètres et les métadonnées ne sont pas mises à jour pour d’autres fichiers. AEM génère l’avertissement suivant dans les journaux :
+Pour éviter une situation similaire à DOS, AEM limite le nombre de paramètres pris en charge dans une requête Sling. Lors de la mise à jour simultanée de plusieurs fichiers, vous pouvez atteindre le nombre maximal de paramètres et les métadonnées ne sont pas mises à jour pour d’autres fichiers. AEM génère l’avertissement suivant dans les journaux :
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
