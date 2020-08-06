@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1814'
+ht-degree: 88%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM. Il constitue la base de divers composants, dont :
 
-* Texte
+* Text (Texte)
 * Texte et Image
 * Tableau
 
@@ -137,7 +140,7 @@ AEM conserve un historique des 50 dernières actions effectuées dans le compos
 
 Le texte peut être aligné à gauche, au centre ou à droite.
 
-![cq55_rte_align_use](assets/cq55_rte_alignment_use.png)
+![cq55_rte_alignement_use](assets/cq55_rte_alignment_use.png)
 
 ### Indentation {#indentation}
 
@@ -157,7 +160,7 @@ Vous pouvez créer des listes imbriquées en mettant en retrait un ou plusieurs 
 
 Vous pouvez modifier le style d’une liste en positionnant simplement le curseur dans la liste, puis en sélectionnant un autre style. Une sous-liste peut également présenter un style différent de sa liste parent ; vous pouvez lui appliquer ce style après l’avoir créée (par mise en retrait).
 
-![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
+![cq55_rte_listes_use](assets/cq55_rte_lists_use.png)
 
 ### Liens {#links}
 
@@ -350,7 +353,7 @@ Les propriétés d’une cellule spécifique ou d’une série de cellules peuve
 
 * **Largeur**
 * **Hauteur**
-* **Alignement horizontal** - Gauche, Centre ou Droite
+* **Alignement** horizontal - Gauche, Centre ou Droite
 * **Alignement** vertical - Haut, Milieu, Bas ou Ligne de base
 * **Type** de cellule - Données ou En-tête
 * **Appliquer à :**
@@ -408,6 +411,7 @@ La création d’un tableau imbriqué génère un nouveau tableau autonome dans 
 >
 >* Windows IE : utilisez la combinaison Ctrl + bouton principal de la souris (il s’agit généralement du bouton gauche) pour sélectionner plusieurs cellules.
 >* Firefox : faites glisser la souris pour sélectionner une plage de cellules.
+
 >
 
 
