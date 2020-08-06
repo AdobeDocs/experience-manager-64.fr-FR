@@ -7,6 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: c2f190af-656e-4435-9f44-2698d41c4ad1
 translation-type: tm+mt
 source-git-commit: fb2567cdf5a0ae210270366899b49db256374f25
+workflow-type: tm+mt
+source-wordcount: '1367'
+ht-degree: 72%
 
 ---
 
@@ -25,7 +28,7 @@ En arrière-plan, le serveur AEM authentifie votre profil avec la passerelle, pu
 
 >[!NOTE]
 >
->La fonctionnalité de partage de dossiers AEM vers Adobe Creative Cloud est obsolète. Learn more and find a better method in [AEM and Creative Cloud integration best practices](../assets/aem-cc-integration-best-practices.md). La configuration de la réplication AEM vers Marketing Cloud et l’échange des ressources entre AEM Assets et Marketing Cloud ne sont pas obsolètes.
+>La fonctionnalité de partage de dossiers Adobe Creative Cloud AEM est obsolète. Learn more and find a better method in [AEM and Creative Cloud integration best practices](../assets/aem-cc-integration-best-practices.md). La configuration de la réplication AEM vers Marketing Cloud et l’échange des ressources entre AEM Assets et Marketing Cloud ne sont pas obsolètes.
 
 ![Flux des données lorsque AEM Assets et Creative Cloud sont intégrés](assets/chlimage_1-287.png)
 
@@ -132,7 +135,7 @@ Flux des données lorsque AEM Assets et Creative Cloud sont intégrés
 1. Connectez-vous à Marketing Cloud avec les informations d’identification de l’administrateur.
 1. From the rails, go to **[!UICONTROL Administration]**and then click/tap **[!UICONTROL Launch Enterprise Dashboard]**.
 1. Sur le rail, cliquez sur **[!UICONTROL Utilisateurs]** pour ouvrir la page **[!UICONTROL Gestion des utilisateurs]**.
-1. Dans la barre d’outils, cliquez/appuyez sur **Ajouter** l’icône ![aem_assets_add_icon](assets/aem_assets_add_icon.png).
+1. Dans la barre d’outils, cliquez/appuyez sur **Ajouter** ![aem_assets_add_icon](assets/aem_assets_add_icon.png).
 1. Ajoutez un ou plusieurs utilisateurs auxquels vous souhaitez offrir la possibilité de partager des ressources avec Creative Cloud.
 
    >[!NOTE]
@@ -150,7 +153,7 @@ Flux des données lorsque AEM Assets et Creative Cloud sont intégrés
    >[!NOTE]
    Partager un dossier de ressources du type `sling:OrderedFolder` n’est pas pris en charge dans le cadre du partage dans Adobe Marketing Cloud. Si vous souhaitez partager un dossier, lors de sa création dans AEM Assets, ne sélectionnez pas l’option **[!UICONTROL Ordre]**.
 
-1. Actualisez l’interface utilisateur d’AEM Assets. Le dossier que vous avez créé dans la console Ressources de votre instance locale AEM Assets est copié dans l’interface utilisateur de Marketing Cloud. La ressource que vous téléchargez vers le dossier dans AEM Assets s’affiche dans la copie du dossier dans Marketing Cloud après son traitement par le serveur AEM.
+1. Actualisez l’interface utilisateur AEM Assets. Le dossier que vous avez créé dans la console Ressources de votre instance AEM Assets locale est copié dans l’interface utilisateur du Marketing Cloud. La ressource que vous téléchargez dans le dossier en AEM Assets s’affiche dans la copie du dossier dans le Marketing Cloud après son traitement par le serveur AEM.
 1. Vous pouvez également télécharger une ressource dans la copie répliquée du dossier dans Marketing Cloud. Une fois qu’elle a été traitée, la ressource s’affiche dans le dossier partagé dans AEM Assets.
 
 ## Échange de ressources entre AEM Assets et Creative Cloud {#exchange-assets-between-aem-assets-and-creative-cloud}
@@ -170,7 +173,7 @@ AEM Assets permet de partager des dossiers comportant des ressources avec les ut
 
 La synchronisation AEM Assets-Marketing Cloud est conçue de manière à ce que l’instance de machine utilisateur à partir de laquelle la ressource est téléchargée conserve le droit de modifier la ressource. Seules ces modifications sont propagées vers l’autre instance.
 
-Par exemple, si une ressource est téléchargée d’une instance AEM Assets (sur site), les modifications apportées à la ressource à partir de cette instance sont propagées à l’instance Marketing Cloud. Toutefois, les modifications apportées de l’instance Marketing Cloud à la même ressource ne sont pas propagées dans l’instance AEM et inversement pour la ressource téléchargée à partir de Marketing Cloud.
+Par exemple, si une ressource est téléchargée d’une instance AEM Assets (sur site), les modifications apportées à la ressource à partir de cette instance sont propagées à l’instance Marketing Cloud. Cependant, les modifications effectuées de l’instance de Marketing Cloud à la même ressource ne sont pas propagées à l’instance AEM et vice versa pour la ressource téléchargée à partir du Marketing Cloud.
 
 >[!MORELIKETHIS]
 * [Meilleures pratiques d’intégration d’AEM et de Creative Cloud](../assets/aem-cc-integration-best-practices.md)
