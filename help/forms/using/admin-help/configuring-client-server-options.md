@@ -61,7 +61,7 @@ Le fait de sélectionner cette option autorise les applications clientes à util
 
 **Largeur de contrôle HTML préférée pour l’authentification** étendue Spécifiez la largeur de la boîte de dialogue d’authentification étendue qui s’ouvre dans Acrobat pour la saisie des informations d’identification de l’utilisateur.
 
-**Hauteur de contrôle HTML préférée pour l’authentification** étendue Indiquez la hauteur de la boîte de dialogue d’authentification étendue qui s’ouvre dans Acrobat pour la saisie des informations d’identification de l’utilisateur.
+**Hauteur de contrôle HTML préférée pour l’authentification** étendue Spécifiez la hauteur de la boîte de dialogue d’authentification étendue qui s’ouvre dans Acrobat pour la saisie des informations d’identification de l’utilisateur.
 
 ***remarque **: Les limites de largeur et de hauteur de cette boîte de dialogue sont les suivantes :*Largeur : Minimum = 400, maximum = 900
 
