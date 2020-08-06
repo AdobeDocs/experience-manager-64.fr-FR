@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 87e62346-98d5-40ec-a3ef-904adf667425
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 54%
 
 ---
 
@@ -30,8 +33,9 @@ Pour appeler le service Adobe Search&amp;Promote depuis votre site web, effectue
 >
 >Si vous utilisez Search&amp;Promote avec une configuration de proxy personnalisée, vous devez configurer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’AEM utilisent les API 3.x et d’autres les API 4.x :
 >
->* 3.x is configured with [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* La version 3.x est configurée avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
@@ -40,18 +44,18 @@ Pour appeler le service Adobe Search&amp;Promote depuis votre site web, effectue
 
 The default URL that is configured for the Search&amp;Promote service is `https://searchandpromote.omniture.com/px/`. Pour utiliser un autre service, utilisez la console OSGi afin de spécifier une autre URL.
 
-**Pour modifier l’URL** du service Search&amp;Promote :
+**Pour modifier l’URL** du service de Search &amp; Promote :
 
 1. Open the [!UICONTROL OSGi] console and tap the **[!UICONTROL Configuration]** tab. ([http://localhost:4502/system/console/configMgr.](http://localhost:4502/system/console/configMgr))
 
 1. Click the **[!UICONTROL Day CQ Search&amp;Promote Configuration]** item.
-1. Dans le champ **[!UICONTROL Remote Server URI]** , saisissez l’URL, puis appuyez sur **[!UICONTROL Enregistrer]**.
+1. Dans le champ de texte URI **[!UICONTROL du serveur]** distant, saisissez l’URL, puis appuyez sur **[!UICONTROL Enregistrer]**.
 
 ## Configuration de la connexion à Search&amp;Promote {#configuring-the-connection-to-search-promote}
 
 Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages web puissent interagir avec le service. Pour vous connecter, vous avez besoin du numéro d’identification et de compte du membre de votre compte Search&amp;Promote.
 
-**Pour configurer la connexion à Search&amp;Promote**:
+**Pour configurer la connexion au Search &amp; Promote**:
 
 1. From the **[!UICONTROL Tools]** icon > **[!UICONTROL Deployment]**, select **[!UICONTROL Cloud Services]**.
 
@@ -77,21 +81,22 @@ Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages 
 
    * **[!UICONTROL ID de membre]**
    * **[!UICONTROL Numéro de compte]**
+
    >[!NOTE]
    >
-   >Pour obtenir ces informations vous-même, connectez-vous aux éléments suivants :
+   >Pour obtenir ces informations vous-même, connectez-vous aux sections suivantes :
    >
    >[https://searchandpromote.omniture.com/center/](https://searchandpromote.omniture.com/center/)
    >
    >à l’aide de vos identifiants Search&amp;Promote (adresse électronique/mot de passe) valides.
    >
-   >Remarquez l&#39;URL dans la barre d&#39;adresse de votre navigateur. Il devrait ressembler à ce qui suit :
+   >Notez l&#39;URL dans la barre d&#39;adresse de votre navigateur. Il devrait ressembler à ce qui suit :
    >
    >[](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
    >[https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
-   >Où **XXXXXXXX** correspond à votre ID **[!UICONTROL de]** membre et **[!UICONTROL spYYYYYY]** correspond à votre numéro de compte.
+   >Où **XXXXXXXX** correspond à votre ID **** membre et **[!UICONTROL spYYYYYYYY]** correspond à votre numéro de compte.
 
 1. Tap **[!UICONTROL Connect To Search&amp;Promote]**.
 
@@ -103,7 +108,7 @@ Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages 
 
 ## Configuration du centre de données {#configuring-the-data-center}
 
-Si votre compte Search&amp;Promote se trouve en Asie ou en Europe, vous devez modifier le centre de données par défaut afin qu’il pointe vers le bon (le centre de données par défaut est pour les comptes nord-américains).
+Si votre compte de Search &amp; Promote se trouve en Asie ou en Europe, vous devez modifier le centre de données par défaut pour qu&#39;il pointe vers le bon (le centre de données par défaut est pour les comptes nord-américains).
 
 **Pour configurer le centre** de données :
 
@@ -117,7 +122,7 @@ Si votre compte Search&amp;Promote se trouve en Asie ou en Europe, vous devez mo
    * EMEA: [https://center.lon5.atomz.com/px/](https://center.lon5.atomz.com/px/)
    * APAC: [https://center.sin2.atomz.com/px/](https://center.sin2.atomz.com/px/)
 
-1. Appuyez sur **[!UICONTROL Enregistrer]**.
+1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
 
 ## Ajout de composants Search&amp;Promote au sidekick {#adding-search-promote-components-to-sidekick}
 
@@ -149,11 +154,11 @@ Lorsque vous configurez les propriétés Search&amp;Promote d’une page, toutes
 
 ## Flux de produit {#product-feed}
 
-L’intégration de Search&amp;Promote vous permet d’effectuer les opérations suivantes :
+L’intégration de Search &amp; Promote vous permet d’effectuer les opérations suivantes :
 
 * Use the [!UICONTROL eCommerce] API, independently of the underlying repository structure and commerce platform.
 * Leverage the [!UICONTROL Index Connector] feature of Search&amp;Promote to provide a product feed in XML format.
 * Leverage the [!UICONTROL Remote Control] feature of Search&amp;Promote to perform on-demand or scheduled requests of the product feed.
-* Génération de flux pour différents comptes Search&amp;Promote, configurés en tant que configurations de services Cloud.
+* Génération de flux pour différents comptes de Search &amp; Promote, configurés en tant que configurations de services Cloud.
 
 For more information, see [Product Feed](/help/sites-administering/product-feed.md).
