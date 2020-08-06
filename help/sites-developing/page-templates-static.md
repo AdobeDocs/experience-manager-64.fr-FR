@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a483ac24-cfe7-4156-a3a8-c0f14282490c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1662'
+ht-degree: 64%
 
 ---
 
@@ -26,7 +29,7 @@ Chaque modèle présente une sélection de composants disponibles.
 
 >[!NOTE]
 >
->[Les modèles](/help/sites-developing/page-templates-editable.md) modifiables sont également disponibles et constituent le type recommandé pour la plus grande flexibilité et les nouvelles fonctionnalités.
+>[Les modèles](/help/sites-developing/page-templates-editable.md) modifiables sont également disponibles et sont le type recommandé pour la plus grande flexibilité et les fonctionnalités les plus récentes.
 
 ## Propriétés et nœuds enfants d’un modèle {#properties-and-child-nodes-of-a-template}
 
@@ -45,23 +48,23 @@ Un modèle est un nœud de type cq:Template et possède les propriétés et les 
    <td>Modèle actuel. Un modèle possède le type de noeud cq:Template.<br /> </td> 
   </tr> 
   <tr> 
-   <td> allowedChildren </td> 
+   <td> allowChildren </td> 
    <td> Chaîne[]</td> 
    <td>Path of a template that is allowed to be a child of this template.<br /> </td> 
   </tr> 
   <tr> 
-   <td> allowedParents</td> 
+   <td> allowParents</td> 
    <td> Chaîne[]</td> 
    <td>Path of a template that is allowed to be a parent of this template.<br /> </td> 
   </tr> 
   <tr> 
-   <td> allowedPaths</td> 
+   <td> allowPaths</td> 
    <td> Chaîne[]</td> 
-   <td>Chemin d’une page autorisée à être basée sur ce modèle.<br /> </td> 
+   <td>Chemin d’accès d’une page autorisée à être basée sur ce modèle.<br /> </td> 
   </tr> 
   <tr> 
    <td> jcr:created</td> 
-   <td> Date</td> 
+   <td> Date   </td> 
    <td>Date of creation of the template.<br /> </td> 
   </tr> 
   <tr> 
@@ -131,7 +134,7 @@ Ce composant est utilisé pour définir la structure et la conception du contenu
 
 ### Contenu produit par un modèle {#the-content-produced-by-a-template}
 
-Les modèles servent à créer des pages de type `cq:Page`(comme mentionné précédemment, une page est un type spécial de composant). Each AEM Page has a structured node `jcr:content`. This:
+Les modèles servent à créer des pages de type `cq:Page`(comme mentionné précédemment, une page est un type spécial de composant). Each AEM Page has a structured node `jcr:content`. Cela :
 
 * est de type cq:PageContent
 * est un type de nœud structuré contenant une définition de contenu définie
@@ -143,7 +146,7 @@ AEM offre un certain nombre de modèles par défaut prêts à l’emploi. Dans c
 
 Par exemple, AEM s’accompagne de plusieurs modèles, dont contentpage et homepage.
 
-| **Titre** | **Component** | **Emplacement** | **Objectif** |
+| **Titre** | **Composant** | **Emplacement** | **Objectif** |
 |---|---|---|---|
 | Page d’accueil | homepage | geometrixx | Modèle de page d’accueil de Geometrixx. |
 | Page de contenu | contentpage | geometrixx | Modèle de page de contenu de Geometrixx. |
@@ -168,11 +171,11 @@ To enable an existing template for your website and you want it to be displayed 
 
 ## Application des conceptions de modèle {#how-template-designs-are-applied}
 
-Lorsque des styles sont définis dans l’interface utilisateur en mode [de](/help/sites-authoring/default-components-designmode.md)conception, la conception est conservée au chemin exact du noeud de contenu pour lequel le style est défini.
+Lorsque des styles sont définis dans l’interface utilisateur à l’aide du mode [de](/help/sites-authoring/default-components-designmode.md)conception, la conception est conservée à l’emplacement exact du noeud de contenu pour lequel le style est défini.
 
 >[!CAUTION]
 >
->Adobe recommande uniquement d’appliquer des conceptions en mode [](/help/sites-authoring/default-components-designmode.md)Création.
+>Adobe recommande uniquement d’appliquer des conceptions en mode [](/help/sites-authoring/default-components-designmode.md)Design.
 >
 >La modification de conceptions dans CRX DE, par exemple, n’est pas recommandée et l’application de ces conceptions risque de provoquer un comportement imprévu.
 
@@ -180,38 +183,38 @@ Si les conceptions sont appliquées uniquement en mode Création, les sections s
 
 >[!NOTE]
 >
->Cette section décrit le comportement de résolution du chemin de conception à partir d’AEM 6.4.2.0.
+>Cette section décrit le comportement de la résolution du chemin de conception à partir de AEM 6.4.2.0.
 
 ### Résolution du chemin de conception {#design-path-resolution}
 
-Lors du rendu du contenu basé sur un modèle statique, AEM tentera d’appliquer la conception et les styles les plus pertinents au contenu en fonction d’une traversée de la hiérarchie du contenu.
+Lors du rendu du contenu à partir d’un modèle statique, AEM tentera d’appliquer la conception et les styles les plus pertinents au contenu en fonction d’une traversée de la hiérarchie du contenu.
 
 AEM détermine le style le plus pertinent pour un noeud de contenu dans l’ordre suivant :
 
 * S’il existe une conception pour le chemin d’accès complet et exact du noeud de contenu (comme lorsque la conception est définie en mode Création), utilisez cette conception.
 * S’il existe une conception pour le noeud de contenu du parent, utilisez-la.
-* S’il existe une conception pour un noeud sur le chemin du noeud de contenu, utilisez-la.
+* S’il existe une conception pour un noeud sur le chemin du noeud de contenu, utilisez cette conception.
 
 Dans les deux derniers cas, s’il existe plusieurs conceptions applicables, utilisez celle qui est la plus proche du noeud de contenu.
 
 ### Arborescence de décision {#decision-tree}
 
-Il s’agit d’une représentation graphique de la logique Résolution [du chemin de](/help/sites-developing/page-templates-static.md#design-path-resolution) conception.
+Il s’agit d’une représentation graphique de la logique de résolution [des chemins de](/help/sites-developing/page-templates-static.md#design-path-resolution) conception.
 
 ![design_path_resolution](assets/design_path_resolution.png)
 
 ### Exemple {#example}
 
-Prenons l’exemple d’une structure de contenu simple, dans laquelle une conception peut s’appliquer à l’un des noeuds :
+Considérez une structure de contenu simple comme suit, où une conception peut s’appliquer à l’un des noeuds :
 
 `/root/branch/leaf`
 
-Le tableau suivant décrit la manière dont AEM choisira une conception.
+Le tableau suivant décrit comment AEM choisira une conception.
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Recherche De Conception Pour<br /> </strong></td> 
+   <td><strong>Recherche de conception pour<br /> </strong></td> 
    <td><strong>Il existe des conceptions pour<br /> </strong></td> 
    <td><strong>Conception choisie<br /> </strong></td> 
    <td><strong>Commentaire</strong></td> 
@@ -227,7 +230,7 @@ Le tableau suivant décrit la manière dont AEM choisira une conception.
    <td><code>leaf</code></td> 
    <td><p><code>root</code></p> <p><code>branch</code></p> </td> 
    <td><code>branch</code></td> 
-   <td>Revenez à la correspondance la plus proche en bas de l'arbre.</td> 
+   <td>Revenez à la correspondance la plus proche plus bas dans l'arbre.</td> 
   </tr> 
   <tr> 
    <td><code>leaf</code></td> 
@@ -260,7 +263,7 @@ Le tableau suivant décrit la manière dont AEM choisira une conception.
    <td><p><code>root</code></p> <p><code class="code">leaf
        </code></p> </td> 
    <td><code>root</code></td> 
-   <td><p>S'il n'y a pas de correspondance exacte, prenez celle en bas de l'arbre.</p> <p>L'hypothèse est que cela sera toujours applicable, mais plus haut l'arbre peut être trop spécifique.<br /> </p> </td> 
+   <td><p>S'il n'y a pas de correspondance exacte, prenez celle plus bas dans l'arbre.</p> <p>L'hypothèse est que cela sera toujours applicable, mais plus haut l'arbre peut être trop spécifique.<br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
