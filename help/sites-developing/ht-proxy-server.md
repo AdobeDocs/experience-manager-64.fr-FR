@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 translation-type: tm+mt
 source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 91%
 
 ---
 
@@ -62,7 +65,7 @@ N’écrit pas la sortie dans la fenêtre de la console. Utilisez cette option s
 
 Si vous recherchez des combinaisons de bits spécifiques dans le trafic, activez le mode binaire. La sortie contient alors la sortie sous forme hexadécimale et de caractères.
 
-`-t` (entrées du journal des horodatages)
+`-t` (horodatage des entrées du journal)
 
 Ajoute un horodatage à chaque sortie du journal. L’horodatage est en secondes. Il n’est donc peut-être pas adapté à la recherche de demandes uniques. Utilisez cette option pour rechercher des événements qui se sont produits à une heure spécifique si vous utilisez le serveur proxy pendant une longue période.
 
