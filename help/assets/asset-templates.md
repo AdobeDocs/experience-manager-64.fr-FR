@@ -7,21 +7,24 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
 translation-type: tm+mt
 source-git-commit: b6f0dc15244f71ecdb8d937810d3c5d393a7712f
+workflow-type: tm+mt
+source-wordcount: '1604'
+ht-degree: 84%
 
 ---
 
 
 # Modèles de ressources {#asset-templates}
 
-Les modèles de ressources sont une catégorie spéciale de ressources qui facilite la réutilisation rapide de contenu riche en visuels pour les supports numériques et imprimés. Un modèle de ressource comprend deux parties : une section de message fixe et une section modifiable.
+Les modèles de ressources sont une catégorie spéciale de ressources qui facilite la réaffectation rapide de contenu visuellement riche pour les supports numériques et imprimés. Un modèle de ressource comprend deux parties : une section de message fixe et une section modifiable.
 
-La section fixe peut comprendre du contenu propriétaire, comme le logo d’une marque ou des informations sur les droits d’auteur, pour lequel la modification n’est pas activée. La section modifiable peut contenir du contenu visuel et textuel dans des champs qui peuvent être modifiés pour personnaliser les messages.
+La section fixe peut comprendre du contenu propriétaire, comme le logo d’une marque ou des informations sur les droits d’auteur, pour lequel la modification n’est pas activée. La section modifiable peut contenir du contenu visuel et textuel dans des champs qui peuvent être modifiés pour personnaliser la messagerie.
 
 Parce qu’ils permettent de réaliser des modifications limitées tout en garantissant une harmonie d’ensemble, les modèles de ressources sont des blocs de création parfaits pour adapter et diffuser rapidement votre contenu. La réutilisation de contenu permet de réduire les coûts de gestion des canaux papier et numériques. Cela garantit en outre une expérience globale cohérente, quel que soit le canal de diffusion.
 
-En tant que spécialiste du marketing, vous pouvez stocker et gérer des modèles dans AEM Assets et utiliser un modèle de base unique pour créer facilement plusieurs expériences d’impression personnalisée. Vous pouvez créer différents types de documents marketing, par exemple, des brochures, des prospectus, des cartes postales, des cartes de visite, etc. pour transmettre de façon claire votre message marketing à vos clients. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Vous pouvez surtout diffuser des expériences à la fois numériques et papier simultanément en toute simplicité et offrir ainsi aux utilisateurs une expérience intégrée cohérente.
+En tant que spécialiste du marketing, vous pouvez stocker et gérer des modèles dans AEM Assets et utiliser un seul modèle de base pour créer facilement plusieurs expériences d’impression personnalisées. Vous pouvez créer différents types de documents marketing, par exemple, des brochures, des prospectus, des cartes postales, des cartes de visite, etc. pour transmettre de façon claire votre message marketing à vos clients. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Vous pouvez surtout diffuser des expériences à la fois numériques et papier simultanément en toute simplicité et offrir ainsi aux utilisateurs une expérience intégrée cohérente.
 
-Si les modèles de ressources sont pour la plupart des fichiers InDesign, il n’est pas nécessaire de maîtriser InDesign pour réaliser des documents de qualité. Vous n’avez pas besoin de mapper les champs de votre modèle InDesign avec vos champs produit comme cela est nécessaire lors de la création de catalogues. Vous pouvez modifier les modèles en mode WYSIWYG directement dans l’interface Web. Toutefois, pour qu’InDesign puisse traiter vos modifications, vous devez au préalable configurer AEM Assets pour l’intégrer avec le serveur InDesign.
+Si les modèles de ressources sont pour la plupart des fichiers InDesign, il n’est pas nécessaire de maîtriser InDesign pour réaliser des documents de qualité. Vous n’avez pas besoin de mapper les champs de votre modèle InDesign avec vos champs produit comme cela est nécessaire lors de la création de catalogues. Vous pouvez modifier les modèles en mode WYSIWYG directement sur l’interface Web. Toutefois, pour qu’InDesign puisse traiter vos modifications, vous devez au préalable configurer AEM Assets pour l’intégrer avec le serveur InDesign.
 
 La possibilité de modifier les modèles InDesign depuis l’interface web contribue à une meilleure collaboration entre les équipes marketing et créatives tout en réduisant le délai de diffusion des actions de promotion locales.
 
@@ -43,9 +46,9 @@ Vous pouvez exporter le fichier mis à jour dans le dossier parent aux formats s
 
 Vous pouvez également télécharger ces différents formats sur votre système local.
 
-## Création d’une garantie {#creating-a-collateral}
+## Créer une garantie {#creating-a-collateral}
 
-Imaginons que vous voulez créer des contenus numériques papier, comme des brochures, des prospectus ou des publicités pour une future campagne, et les envoyer à des magasins dans le monde entier. Créer de tels documents à l’aide d’un modèle vous permet de proposer la même expérience client sur tous les canaux de diffusion. Les graphistes peuvent créer des modèles pour la campagne (document d’une seule page ou de plusieurs pages) à l’aide d’une solution de création, comme InDesign et vous les envoyer sur AEM Assets. Avant de créer une garantie, vous devez télécharger à l’avance un ou plusieurs modèles INDD vers Experience Manager et les rendre disponibles.
+Imaginons que vous voulez créer des contenus numériques papier, comme des brochures, des prospectus ou des publicités pour une future campagne, et les envoyer à des magasins dans le monde entier. Créer de tels documents à l’aide d’un modèle vous permet de proposer la même expérience client sur tous les canaux de diffusion. Les graphistes peuvent créer des modèles pour la campagne (document d’une seule page ou de plusieurs pages) à l’aide d’une solution de création, comme InDesign et vous les envoyer sur AEM Assets. Avant de créer une garantie, demandez qu’un ou plusieurs modèles INDD soient chargés et disponibles en Experience Manager à l’avance.
 
 1. Cliquez ou appuyez sur le logo AEM, puis cliquez/appuyez sur **[!UICONTROL Ressources]** sur la page Navigation.
 1. Dans les options, choisissez **[!UICONTROL Modèles]**.
@@ -56,7 +59,7 @@ Imaginons que vous voulez créer des contenus numériques papier, comme des broc
 
    ![chlimage_1-307](assets/chlimage_1-307.png)
 
-1. Demandez à un ou plusieurs modèles INDD d’être chargés et disponibles dans Experience Manager à l’avance. Choisissez un modèle pour votre brochure, puis cliquez/appuyez sur **[!UICONTROL Suivant]**.
+1. Demandez qu’un ou plusieurs modèles INDD soient chargés et disponibles en Experience Manager à l’avance. Choisissez un modèle pour votre brochure, puis cliquez/appuyez sur **[!UICONTROL Suivant]**.
 
    ![chlimage_1-308](assets/chlimage_1-308.png)
 
@@ -76,7 +79,7 @@ Imaginons que vous voulez créer des contenus numériques papier, comme des broc
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## Modification d’un titre {#editing-a-collateral}
+## Modification d&#39;un titre {#editing-a-collateral}
 
 Vous pouvez modifier un document immédiatement après sa création. Vous pouvez aussi choisir de l’ouvrir depuis la page Modèles ou la page des détails du fichier.
 
@@ -85,7 +88,8 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
    * Ouvrez le document marketing (une brochure ici) créé à l’étape 7 de la section [Création d’un document](asset-templates.md#creating-a-collateral).
    * Depuis la page Modèles, accédez au dossier où vous avez placé le document créé, puis cliquez/appuyez sur l’option d’édition rapide depuis la miniature d’un document.
    * Dans la page des détails du document, cliquez/appuyez sur l’icône Modifier dans la barre d’outils.
-   * Sélectionnez le support, puis cliquez/appuyez sur l’icône Modifier de la barre d’outils.
+   * Sélectionnez la garantie, puis cliquez/appuyez sur l’icône Modifier de la barre d’outils.
+
    ![chlimage_1-313](assets/chlimage_1-313.png)
 
    L’outil de recherche de ressources et l’éditeur de texte sont affichés à gauche de la page. L’éditeur de texte s’ouvre par défaut.
@@ -142,11 +146,13 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
    >
    >* Les images ne sont pas incorporées au modèle InDesign sous-jacent.
    >* Les images ne sont pas liées depuis le système de fichiers local.
+
    >
    >Pour permettre à AEM de résoudre les images, procédez de la façon suivante :
    >
-   >* Incorporez les images lorsque vous créez les modèles InDesign (reportez-vous à la section [À propos des liens et des objets graphiques incorporés](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Incorporez les images lorsque vous créez les modèles InDesign (reportez-vous à la section [À propos des liens et des objets graphiques incorporés](https://helpx.adobe.com/fr/indesign/using/graphics-links.html)).
    >* Montez AEM sur votre système de fichiers local, puis mappez les icônes manquantes avec les ressources AEM existantes.
+
    >
    >For more information around working with InDesign documents, see [Best Practices for Working with InDesign Documents in AEM](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
@@ -155,7 +161,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
 
-1. Cliquez/appuyez sur le rendu PDF dans la liste des rendus pour télécharger le fichier PDF. Ouvrez le fichier PDF pour réviser le document.
+1. Cliquez/appuyez sur le rendu PDF depuis la liste des rendus pour télécharger le fichier PDF. Ouvrez le fichier PDF pour réviser le document.
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
@@ -193,7 +199,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-331](assets/chlimage_1-331.png)
 
-1. Dans l’écran Configurer un modèle, spécifiez un nom pour le support. Vous pouvez également spécifier les balises que vous considérez appropriées. Pour exporter le résultat au format PDF, sélectionnez l’option **[!UICONTROL Acrobat (.PDF)]**. Par défaut, le document est exporté aux formats JPG et InDesign. Pour modifier la miniature du document multipage, cliquez/appuyez sur **[!UICONTROL Modifier la miniature]**.
+1. Dans l’écran Configurer un modèle, spécifiez un nom pour la garantie. Vous pouvez également spécifier les balises que vous considérez appropriées. Pour exporter le résultat au format PDF, sélectionnez l’option **[!UICONTROL Acrobat (.PDF)]**. Par défaut, le document est exporté aux formats JPG et InDesign. Pour modifier la miniature du document multipage, cliquez/appuyez sur **[!UICONTROL Modifier la miniature]**.
 
    ![chlimage_1-332](assets/chlimage_1-332.png)
 
