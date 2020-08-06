@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 74%
 
 ---
 
@@ -37,7 +40,7 @@ Effectuez les étapes suivantes pour configurer les journaux côté serveur :
    >
    >Pour générer des journaux dans le répertoire de formulaires HTML5, ajoutez ../logs/ avant le nom de fichier.
 
-1. Modifiez **Logger** en **HTMLFormsPerfLogger.** Cliquez sur **Enregistrer**.
+1. Modifiez **Logger** en **HTMLFormsPerfLogger.** Cliquez sur **Save** (Enregistrer).
 
 ## Configuration de la journalisation du client {#configuring-client-logging}
 
@@ -168,7 +171,7 @@ Par exemple :
 >
 >Le niveau de journalisation par défaut de chaque catégorie de journalisation a (xfa), b (xfaView) et c (xfaPerf) est de 2 (ERROR). En conséquence, pour configurer la journalisation 2-b6, les niveaux de journalisation des différentes catégories sont les suivants :\
 >a (xfa) : 2 (niveau par défaut ERROR)\
->b (xfaView) : 6 (TRACE spécifié par l’utilisateur)\
+>b (xfaView) : 6 (TRACE spécifiée par l’utilisateur)\
 >a (xfaPerf) : 2 (niveau par défaut ERROR)
 
 ### Activation de la journalisation à l’aide de Configuration Manager {#enabling-logging-using-configuration-manager}
