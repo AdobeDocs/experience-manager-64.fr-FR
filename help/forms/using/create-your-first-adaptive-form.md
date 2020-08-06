@@ -9,6 +9,9 @@ topic-tags: introduction
 discoiquuid: 4e247e70-c50a-4571-8ac1-fbbb07100262
 translation-type: tm+mt
 source-git-commit: fae6d621ad61a26db99994482c16c9d9a5f88ad9
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 85%
 
 ---
 
@@ -32,7 +35,7 @@ Ce didacticiel fournit un cadre de bout en bout pour la création d’un formula
 
 La procédure commence par l’apprentissage du cas d’utilisation :
 
-Un site Web propose une gamme de produits pour des clients divers. Les clients parcourent le portail, sélectionnent et commandent les produits. Chaque client crée un compte et fournit des adresses de livraison et de facturation. Une cliente, Sara Rose, cherche à ajouter son adresse de livraison sur le site Web. Le site Web fournit un formulaire en ligne pour ajouter et mettre à jour les adresses d’expédition.
+Un site Web propose une gamme de produits pour des clients divers. Les clients parcourent le portail, sélectionnent et commandent les produits. Chaque client crée un compte et fournit des adresses de livraison et de facturation. Une cliente, Sara Rose, cherche à ajouter son adresse de livraison sur le site Web. Le site Web fournit un formulaire en ligne pour ajouter et mettre à jour les adresses d&#39;expédition.
 
 Le site Web est basé sur Adobe Experience Manager (AEM) et utilise AEM Forms pour la capture et le traitement des données. Le formulaire d’ajout et de mise à jour d’adresse est un formulaire adaptatif. Le site Web stocke les coordonnées du client dans une base de données. Ils utilisent le formulaire d&#39;ajout d&#39;adresse et de mise à jour pour récupérer et afficher les adresses disponibles. Il utilise également le formulaire adaptatif pour accepter les adresses mises à jour et les nouvelles adresses.
 
@@ -79,7 +82,7 @@ Goals:
 
 ## Étape 3 : application de règles aux champs de formulaires adaptatifs {#step-apply-rules-to-adaptive-form-fields}
 
-![07-apply-rule-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
+![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
 Les formulaires adaptatifs fournissent un éditeur pour l’écriture de règles sur des objets de formulaire adaptatifs. Ces règles déterminent les actions à déclencher sur des objets de formulaire en fonction des conditions prédéfinies, des saisies de l’utilisateur et des actions de l’utilisateur sur le formulaire.  Cela permet d’assurer la précision et accélère le remplissage des formulaires.
 
