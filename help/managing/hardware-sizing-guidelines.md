@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '2843'
+ht-degree: 75%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 
 Ces consignes de dimensionnement procurent une estimation des ressources matérielles requises pour déployer un projet AEM. Les estimations de dimensionnement dépendent de l&#39;architecture du projet, de la complexité de la solution, du trafic attendu et des exigences du projet. Ce guide vous aide à déterminer les besoins matériels pour une solution spécifique ou à trouver une estimation supérieure et inférieure pour les exigences matérielles.
 
-Les facteurs de base à prendre en considération sont (dans cet ordre) :
+Les facteurs fondamentaux à prendre en compte sont (dans cet ordre) :
 
 * **Vitesse du réseau**
 
@@ -55,7 +58,7 @@ Dans une configuration de projet type, vous disposez de plusieurs environnements
 
 * L’**environnement de développement** pour le développement de nouvelles fonctions ou pour apporter des modifications importantes. La meilleure pratique consiste à travailler dans un environnement de développement par développeur (généralement des installations locales sur leurs systèmes personnels).
 
-* **Environnement** de test de l’auteur Pour vérifier les modifications. Le nombre d’environnements de test peut varier en fonction des exigences du projet (par exemple, séparément pour l’assurance qualité, les tests d’intégration ou les tests d’acceptation par l’utilisateur).
+* **environnement** de test de l’auteur Pour vérifier les modifications. Le nombre d’environnements de test peut varier en fonction des exigences du projet (par exemple, séparément pour l’assurance qualité, les tests d’intégration ou les tests d’acceptation par l’utilisateur).
 
 * L’**environnement de test de publication** principalement pour tester les cas d’utilisation de collaboration sociale et/ou l’interaction entre l’instance de création et plusieurs instances de publication.
 
@@ -119,19 +122,19 @@ Adobe a développé plusieurs tests d’évaluation des performances pour des in
 
 * **Test de référence 1**
 
-   Calculez le débit maximal d’un profil de chargement dans lequel les utilisateurs effectuent un simple exercice de création de page au-dessus d’un chargement de base de 300 pages existantes de nature similaire. Les étapes impliquées étaient la connexion au site, la création d’une page contenant un SWF et une image/du texte, l’ajout d’un nuage de balises, puis l’activation de la page.
+   Calculez le débit maximal d’un profil de chargement où les utilisateurs effectuent un simple exercice de création de page au-dessus d’un chargement de base de 300 pages existantes de nature similaire. Les étapes impliquées étaient la connexion au site, la création d’une page contenant un SWF et une image/du texte, l’ajout d’un nuage de balises, puis l’activation de la page.
 
    * **Résultat**
 
       Le débit maximal pour un simple exercice de création de page tel que ci-dessus (considéré comme une transaction) a été de 1 730 transactions/heure.
 
-* **Test de référence 2**
+* **Test de test 2**
 
-   Calculez le débit maximum lorsque le profil de chargement comporte un mélange de création de nouvelles pages (10 %), de modification d’une page existante (80 %) et de création, puis de modification d’une page par la suite (10 %). La complexité des pages reste la même que dans le profil du test d’évaluation des performances 1. La modification de base de la page est effectuée en ajoutant une image et en modifiant le contenu textuel. Là encore, l’exercice a été effectué sur une charge de base de 300 pages de même complexité, tel que défini dans le test d’évaluation des performances 1.
+   Calculez le débit maximal lorsque le profil de chargement comporte un mélange de création de page Fresh (10 %), de modification d’une page existante (80 %) et de création, puis de modification d’une page successivement (10 %). La complexité des pages reste la même que dans le profil du test d’évaluation des performances 1. La modification de base de la page est effectuée en ajoutant une image et en modifiant le contenu textuel. Là encore, l’exercice a été effectué sur une charge de base de 300 pages de même complexité, tel que défini dans le test d’évaluation des performances 1.
 
    * **Résultat**
 
-      Le débit maximal d&#39;un tel scénario d&#39;opération de mixage était de 3 252 transactions par heure.
+      Le débit maximal d&#39;un tel scénario d&#39;opération de mixage était de 3252 transactions par heure.
 
 >[!NOTE]
 >
@@ -141,7 +144,7 @@ Les deux tests ci-dessus indiquent que le débit varie en fonction du type d’o
 
 ### Mise en cache {#caching}
 
-Dans l’environnement de création, l’efficacité de la mise en cache est en général bien plus faible, car les modifications du site web sont plus fréquentes et en raison du caractère hautement interactif et personnalisé du contenu. Le répartiteur vous permet de mettre en cache les bibliothèques AEM, les scripts JavaScript, les fichiers CSS et les images de mise en page. Cela permet d’accélérer certains aspects du processus de création. La configuration du serveur web afin de définir des en-têtes supplémentaires pour la mise en cache de ces ressources dans le navigateur, réduit le nombre de requêtes HTTP et améliore ainsi la réactivité du système pour les auteurs.
+Dans l’environnement de création, l’efficacité de la mise en cache est en général bien plus faible, car les modifications du site web sont plus fréquentes et en raison du caractère hautement interactif et personnalisé du contenu. Grâce au répartiteur, vous pouvez mettre en cache AEM bibliothèques, JavaScript, fichiers CSS et images de mise en page. Cela permet d’accélérer certains aspects du processus de création. La configuration du serveur web afin de définir des en-têtes supplémentaires pour la mise en cache de ces ressources dans le navigateur, réduit le nombre de requêtes HTTP et améliore ainsi la réactivité du système pour les auteurs.
 
 ### Auteurs travaillant en parallèle {#authors-working-in-parallel}
 
@@ -151,15 +154,15 @@ Pour de tels scénarios, Adobe a effectué des tests d’évaluation des perform
 
 * **Test de référence 1a**
 
-   Avec une grappe active-active de 2 instances d’auteur sans partage, calculez le débit maximal avec un profil de chargement où les utilisateurs effectuent un simple exercice de création de page au-dessus d’un chargement de base de 300 pages existantes, le tout de même nature.
+   Avec une principale grappe de 2 instances d’auteur sans partage, calculez le débit maximal avec un profil de chargement où les utilisateurs effectuent un simple exercice de création de page au-dessus d’un chargement de base de 300 pages existantes, le tout de même nature.
 
    * **Résultat**
 
-      Le débit maximal d’un simple exercice de création de page, comme ci-dessus (considéré comme une transaction), correspond à des transactions 2016/heure. Il s’agit d’une augmentation d’environ 16 % par rapport à une instance de création autonome pour la même évaluation des performances.
+      Le débit maximal pour un simple exercice de création de page, tel que ci-dessus (considéré comme une transaction) est de 2016 transactions/heure. Il s’agit d’une augmentation d’environ 16 % par rapport à une instance de création autonome pour la même évaluation des performances.
 
 * **Test de référence 2b**
 
-   Avec une grappe active-active de partage sans action de 2 instances d’auteur, calculez le débit maximal lorsque le profil de chargement comporte un mélange de création de page Fresh (10 %), de modification d’une page existante (80 %) et de création et de modification d’une page de suite (10 %). La complexité de la page reste la même que dans le profil du test d’évaluation des performances 1. La modification de base de la page est effectuée en ajoutant une image et en modifiant le contenu textuel. Là encore, l’exercice a été effectué sur une charge de base de 300 pages de même complexité, tel que défini dans le test d’évaluation des performances 1.
+   Avec une grappe de 2 instances d’auteur sans partage principale-principale, calculez le débit maximal lorsque le profil de chargement comporte un mélange de création de page nouvelle (10 %), de modification d’une page existante (80 %) et de création et de modification d’une page par ordre chronologique (10 %). La complexité de la page reste la même que dans le profil du test d’évaluation des performances 1. La modification de base de la page est effectuée en ajoutant une image et en modifiant le contenu textuel. Là encore, l’exercice a été effectué sur une charge de base de 300 pages de même complexité, tel que défini dans le test d’évaluation des performances 1.
 
    * **Résultat**
 
@@ -173,7 +176,7 @@ Les deux tests ci-dessus indiquent clairement qu’AEM se dimensionne correcteme
 
 Sur un site web type, la plus grande partie de la création se produit pendant la phase de projet. Une fois le site web activé, le nombre d’auteurs travaillant en parallèle baisse généralement vers une moyenne inférieure (en mode opérationnel).
 
-Vous pouvez calculer le nombre d’ordinateurs (ou de processeurs) requis pour l’environnement de création comme suit :
+Vous pouvez calculer le nombre d’ordinateurs (ou d’unités centrales) requis pour l’environnement d’auteur comme suit :
 
 `n = numberOfParallelAuthors / 30`
 
@@ -185,7 +188,7 @@ Please also see the additional comments on [Parallelization](/help/managing/hard
 
 En règle générale, vous pouvez utiliser pour votre environnement de création le même matériel que celui recommandé pour votre environnement de publication. Le trafic de votre site web est normalement nettement inférieur sur les systèmes de création, mais l’efficacité du cache est également inférieure. Toutefois, le facteur fondamental est ici le nombre d’auteurs travaillant en parallèle, ainsi que le type des actions réalisées sur le système. En général, la mise en grappe AEM (de l’environnement de création) est plus efficace pour dimensionner les opérations de lecture ; en d’autres termes, une grappe AEM se dimensionne correctement avec les auteurs qui effectuent des opérations de modification de base.
 
-Les tests de performances d’Adobe ont été effectués à l’aide du système d’exploitation RedHat 5.5, exécuté sur une plate-forme matérielle Hewlett-Packard ProLiant DL380 G5 avec la configuration suivante :
+Les tests de référence à l&#39;Adobe ont été effectués à l&#39;aide du système d&#39;exploitation RedHat 5.5, exécuté sur une plate-forme matérielle Hewlett-Packard ProLiant DL380 G5 avec la configuration suivante :
 
 * Deux unités centrales Intel Xeon Quad Core X5450 à 3 GHz
 * 8 Go de RAM
@@ -202,7 +205,7 @@ Les instances AEM fonctionnaient avec une taille de tas minimale de 256 Mo et u
 
 L’efficacité de la mise en mémoire cache est cruciale pour la vitesse du site web. Le tableau suivant indique le nombre de pages pouvant être gérées par seconde par un système AEM optimisé à l’aide d’un proxy inverse, tel que le Dispatcher :
 
-| Ratio de cache | Pages/s (pic) | Millions de pages/jour (moyenne) |
+| Ratio de cache | Pages/s (pic) | Millions de pages par jour (moyenne) |
 |---|---|---|
 | 100% | 1000-2000 | 35-70 |
 | 99% | 910 | 32 |
@@ -227,7 +230,7 @@ La formule suivante vous permet de calculer une estimation de la complexité glo
 
 `complexity = applicationComplexity + ((1-cacheRatio) * templateComplexity)`
 
-En fonction de la complexité, vous pouvez déterminer le nombre de serveurs (ou de coeurs d’unités centrales) dont vous avez besoin pour l’environnement de publication comme suit :
+En fonction de la complexité, vous pouvez déterminer le nombre de serveurs (ou de coeurs CPU) nécessaires pour l’environnement de publication comme suit :
 
 `n = (traffic * complexity / 1000 ) * activations`
 
@@ -243,11 +246,11 @@ Les variables de l’équation sont les suivantes :
    <td>applicationComplexity</td>
    <td><p>Utilisez 1 pour une application simple, 2 pour une application complexe ou une valeur intermédiaire :</p>
     <ul>
-     <li>1 - un site entièrement anonyme, axé sur le contenu</li>
-     <li>1.1 - un site entièrement anonyme axé sur le contenu avec personnalisation côté client/Target</li>
-     <li>1.5 - un site orienté contenu avec des sections anonymes et connectées, personnalisation côté client/Target</li>
-     <li>1.7 - pour un site axé sur le contenu avec des sections anonymes et connectées, une personnalisation côté client/cible et du contenu généré par l’utilisateur</li>
-     <li>2 - lorsque l'ensemble du site nécessite une connexion, avec une utilisation intensive du contenu généré par l'utilisateur et diverses techniques de personnalisation</li>
+     <li>1 - un site entièrement anonyme, orienté contenu</li>
+     <li>1.1 - un site entièrement anonyme orienté contenu avec personnalisation côté client/Cible</li>
+     <li>1.5 - site orienté contenu avec des sections anonymes et connectées, personnalisation côté client/Cible</li>
+     <li>1.7 - pour un site orienté contenu avec des sections anonymes et connectées, personnalisation côté client/Cible et certains contenus générés par les utilisateurs</li>
+     <li>2 - où l'ensemble du site nécessite la connexion, avec une utilisation intensive du contenu généré par les utilisateurs et une variété de techniques de personnalisation</li>
     </ul> </td>
   </tr>
   <tr>
@@ -260,7 +263,7 @@ Les variables de l’équation sont les suivantes :
   </tr>
   <tr>
    <td>activations</td>
-   <td>Nombre moyen d’activations (réplication de pages et de ressources de taille moyenne de l’auteur au niveau de publication) par heure divisé par x, où x est le nombre d’activations effectuées sur un système sans effets secondaires sur les performances pour d’autres tâches traitées par le système. Vous pouvez également prédéfinir une valeur initiale pessimiste comme x = 100.<br /> </td>
+   <td>Nombre d’activations moyennes (réplication de pages et de ressources de taille moyenne de l’auteur au niveau de publication) par heure divisé par x, où x est le nombre d’activations effectuées sur un système sans effets secondaires sur les performances pour d’autres tâches traitées par le système. Vous pouvez également prédéfinir une valeur initiale pessimiste comme x = 100.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -268,20 +271,20 @@ Les variables de l’équation sont les suivantes :
 Si vous possédez un site web plus complexe, vous avez également besoin de serveurs web plus puissants afin qu’AEM réponde à une requête dans un délai acceptable.
 
 * Complexité inférieure à 4 :
-   * 1024 Mo de RAM et d’amp JVM;ast;
+   * 1 024 Mo de RAM&amp;amp JVM ; ast ;
    * Processeur basse à moyenne performance
 
 * Complexité entre 4 et 8 :
-   * 2 048 Mo de mémoire vive JVM&amp;ast;
+   * 2 048 Mo de RAM&amp;amp JVM ; ast ;
    * Processeur milieu à hautes performances
 
 * Complexité supérieure à 8 :
-   * 4096 Mo de RAM et d’horodatage JVM;ast;
-   * Processeur hautes performances
+   * 4 096 Mo de RAM&amp;amp JVM ; ast ;
+   * Processeur haut de gamme à hautes performances
 
 >[!NOTE]
 >
-> &amp;ast; Réservez suffisamment de mémoire vive pour votre système d’exploitation en plus de la mémoire requise pour votre JVM.
+>&amp;ast; Réservez suffisamment de RAM pour votre système d’exploitation en plus de la mémoire requise pour votre JVM.
 
 ## Autres calculs spécifiques aux cas d’utilisation {#additional-use-case-specific-calculations}
 
@@ -322,7 +325,7 @@ Les sites AEM qui incluent des fonctions AEM Communities (des sites de communa
 
 Les considérations de dimensionnement pour un site de communauté dépendent de l’interaction anticipée des membres de la communauté et de l’importance de disposer de performances optimales pour le contenu des pages.
 
-Le contenu généré par les utilisateurs et soumis par les membres est stocké séparément du contenu des pages. Tandis que la plate-forme AEM utilise un magasin de noeuds qui répliquent le contenu du site de l’auteur à la publication, les communautés AEM utilisent un magasin commun unique pour l’UGC qui n’est jamais répliqué.
+Le contenu généré par les utilisateurs et soumis par les membres est stocké séparément du contenu des pages. Alors que la plateforme AEM utilise une banque de noeuds qui répliquera le contenu du site de l’auteur à la publication, AEM Communities utilise une banque de données unique et commune pour l’UGC qui n’est jamais répliquée.
 
 Pour le magasin du contenu généré par les utilisateurs, il est nécessaire de sélectionner un fournisseur de ressources de stockage qui influence le déploiement sélectionné.\
 Voir
