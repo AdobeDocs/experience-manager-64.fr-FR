@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '1015'
+ht-degree: 86%
 
 ---
 
@@ -87,9 +90,11 @@ Pour identifier et accéder aux données utilisateur stockées pour une instance
 1. Selon les informations disponibles, effectuez l’une des requêtes suivantes :
 
    * Exécutez la commande suivante si l’initiateur de flux de travail est connu :
+
    `SELECT &ast; FROM [cq:Workflow] AS s WHERE ISDESCENDANTNODE([path-to-workflow-instances]) and s.[initiator]='*initiator-ID*'`
 
-   * Exécutez ce qui suit si l’utilisateur dont vous trouvez les données est le responsable actuel du flux de travail :
+   * Exécutez les actions suivantes si l’utilisateur dont vous recherchez les données est la personne désignée pour le flux de travail actuel :
+
    `SELECT &ast; FROM [cq:WorkItem] AS s WHERE ISDESCENDANTNODE([path-to-workflow-instances]) and s.[assignee]='*assignee-id*'`
 
    La requête renvoie l’emplacement de toutes les instances de flux de travail de l’initiateur de flux de travail spécifié ou de la personne à laquelle le flux de travail est actuellement assigné.
@@ -104,7 +109,7 @@ Pour identifier et accéder aux données utilisateur stockées pour une instance
 
 1. In the workflow instance node, navigate to `data/payload/`. La propriété `path` enregistre le chemin de la charge utile de l’instance de flux de travail. Vous pouvez accéder au chemin d’accès des données stockées dans la charge utile.
 
-   ![payload-path](assets/payload-path.png)
+   ![chemin_charge](assets/payload-path.png)
 
 1. Accédez aux emplacements des brouillons et de l’historique de l’instance de flux de travail.
 
@@ -136,6 +141,7 @@ Vous devez être un administrateur AEM pour supprimer des données utilisateur d
    1. Accédez à `https://[server]:[port]/aem/start.html` et connectez-vous avec les informations d’identification de l’administrateur.
    1. Accédez à **[!UICONTROL Outils > Flux de travail > Modèles]**.
    1. Sélectionnez les instances de flux de travail correspondant à l’utilisateur et appuyez sur **[!UICONTROL Arrêter]** pour arrêter les instances en cours d’exécution.
+
    For more information about working with workflow instances, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md).
 
 1. Go to CRXDE Lite console, navigate to the payload path for a workflow instance, and delete the `payload` node.
