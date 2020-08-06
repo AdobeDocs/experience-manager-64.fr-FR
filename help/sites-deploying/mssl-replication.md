@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 93%
 
 ---
 
@@ -44,7 +47,7 @@ Vous avez besoin d’une clé privée et d’un certificat public pour les insta
 
 ### Format JKS {#jks-format}
 
-Générez une clé privée et un certificat au format JKS. La clé privée est stockée dans un fichier KeyStore, et le certificat est stocké dans un fichier TrustStore. Use [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) to create both.
+Générez une clé privée et un certificat au format JKS. La clé privée est stockée dans un fichier KeyStore, et le certificat est stocké dans un fichier TrustStore. Utilisez l’utilitaire [Java`keytool` ](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) pour les créer.
 
 Effectuez les étapes suivantes en utilisant l’utilitaire Java `keytool` pour créer la clé privée et les informations d’identification :
 
@@ -64,9 +67,9 @@ Utilisez la procédure suivante pour créer une clé privée et un certificat au
    keytool -genkeypair -keyalg RSA -validity 3650 -alias alias -keystore keystorename.keystore  -keypass key_password -storepass  store_password -dname "CN=Host Name, OU=Group Name, O=Company Name,L=City Name, S=State, C=Country_ Code"
    ```
 
-   | Option | Création | Publication |
+   | Option | Création | Publication  |
    |---|---|---|
-   | -alias | author | serveur  |
+   | -alias | Auteur  | publish |
    | -keystore | author.keystore | publish.keystore |
 
 1. Pour exporter le certificat, saisissez la commande suivante à l’aide des valeurs d’option dans le tableau ci-dessous :
@@ -75,9 +78,9 @@ Utilisez la procédure suivante pour créer une clé privée et un certificat au
    keytool -exportcert -alias alias -file cert_file -storetype jks -keystore keystore -storepass store_password
    ```
 
-   | Option | Création | Publication |
+   | Option | Création | Publication  |
    |---|---|---|
-   | -alias | author | serveur  |
+   | -alias | Auteur  | publish |
    | -file | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
@@ -91,7 +94,7 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    openssl genrsa -out keyname.key 2048
    ```
 
-   | Option | Création | Publication |
+   | Option | Création | Publication  |
    |---|---|---|
    | -out | author.key | publish.key |
 
@@ -101,7 +104,7 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    openssl req -new -key keyname.key -out key_request.csr
    ```
 
-   | Option | Création | Publication |
+   | Option | Création | Publication  |
    |---|---|---|
    | -key | author.key | publish.key |
    | -out | author_request.csr | publish_request.csr |
@@ -114,7 +117,7 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    openssl x509 -req -days 3650 -in key_request.csr -signkey keyname.key -out certificate.cer
    ```
 
-   | Option | Création | Publication |
+   | Option | Création | Publication  |
    |---|---|---|
    | -signkey | author.key | publish.key |
    | -in | author_request.csr | publish_request.csr |
@@ -126,12 +129,12 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    openssl pkcs12 -keypbe PBE-SHA1-3DES -certpbe PBE-SHA1-3DES -export -in certificate.cer -inkey keyname.key -out pkcs12_archive.pfx -name "alias"
    ```
 
-   | Option | Création | Publication |
+   | Option | Création | Publication  |
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
    | -in | author.cer | publish.cer |
-   | -nom est | author | publish |
+   | -name | Auteur  | publish |
 
 ## Installation de la clé privée et du TrustStore sur l’auteur {#install-the-private-key-and-truststore-on-author}
 
@@ -212,11 +215,11 @@ Configurez les propriétés du service HTTP basé sur Apache Felix Jetty sur l�
 
 Le tableau suivant répertorie les propriétés OSGi que vous devez configurer si vous utilisez la console web. 
 
-| Nom de propriété dans la console Web | Nom de propriété OSGi | Valeur |
+| Nom de propriété sur la console Web | Nom de propriété OSGi | Valeur |
 |---|---|---|
 | Activer HTTPS | org.apache.felix.https.enable | true |
 | Activer HTTPS pour utiliser Granite KeyStore | org.apache.felix.https.use.granite.keystore | true |
-| Port HTTPS | org.osgi.service.http.port.secure | 8443 (ou un autre port souhaité) |
+| Port HTTPS | org.osgi.service.http.port.secure | 8443 (ou tout autre port souhaité) |
 | Certificat client | org.apache.felix.https.clientcertificate | &quot;Certificat client recherché&quot; |
 
 ## Configuration de l’agent de réplication sur l’auteur {#configure-the-replication-agent-on-author}
@@ -236,7 +239,7 @@ Pour activer MSSL, configurez les propriétés sur l’onglet Transport en fonct
    <td><p>https://server_name:SSL_port/bin/receive?sling:authRequestLogin=1</p> <p>Par exemple :</p> <p>http://localhost:8443/bin/receive?sling:authRequestLogin=1</p> </td> 
   </tr> 
   <tr> 
-   <td>Utilisateur</td> 
+   <td>User</td> 
    <td>Aucune valeur</td> 
   </tr> 
   <tr> 
