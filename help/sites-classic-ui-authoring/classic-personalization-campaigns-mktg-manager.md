@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 95%
 
 ---
 
@@ -72,7 +75,7 @@ MCM vous permet d’accéder aux éléments suivants :
 
 Le tableau de bord se compose de quatre volets qui vous donnent un aperçu des listes (de pistes), segments, rapports et campagnes. L’accès aux fonctionnalités de base est également possible à partir de ce tableau de bord.
 
-![mcm_dashboard](assets/mcm_dashboard.png)
+![mcm_tableau de bord](assets/mcm_dashboard.png)
 
 ## Pistes {#leads}
 
@@ -183,7 +186,7 @@ Deux modes d’affichage sont disponibles pour chaque campagne :
 
    Vous pouvez effectuer les opérations suivantes à partir de cette fenêtre :
 
-   * **Créer un** nouveau... expérience; par exemple, Adobe Target propose des offres, des teasers et des bulletins d’information.
+   * Create a **New...** experience; for example, Adobe Target offers, teasers and newsletters.
    * **Modifier** les détails d’une newsletter ou d’une page de teaser spécifique (vous pouvez également effectuer un double-clic).
    * Définir les **Propriétés...** d’une newsletter ou d’une page de teaser spécifique
    * **Simuler** l’aspect et la fonctionnalité d’une expérience (newsletter ou page de teaser).
@@ -207,5 +210,5 @@ Vous avez également la possibilité d’ouvrir le sidekick (en cliquant sur la 
 
 Dans MCM, cliquez sur **Campagnes**. Assurez-vous que le mode Liste est actif, puis sélectionnez l’expérience de campagne requise et cliquez sur **Analyser...** Un graphique des impressions de page au fil du temps s’affiche alors.
 
-![mcm_campaign analysis](assets/mcm_campaignanalyze.png)
+![mcm_campaign analyser](assets/mcm_campaignanalyze.png)
 
