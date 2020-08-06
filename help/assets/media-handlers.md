@@ -17,7 +17,7 @@ Adobe Experience Manager Assets fournit un ensemble de workflows et de gestionna
 
 Un processus peut être défini et s’exécuter automatiquement lorsqu’un fichier d’un type ou d’un format particulier est téléchargé sur le serveur. Les étapes de traitement sont définies comme une série de gestionnaires de médias AEM Assets. AEM fournit certains [gestionnaires intégrés](#default-media-handlers) et des gestionnaires supplémentaires peuvent être [conçus et personnalisés](#creating-a-new-media-handler) ou définis en déléguant le processus à un [outil de ligne de commande](#command-line-based-media-handler).
 
-Les gestionnaires de médias sont des services d’AEM Assets qui effectuent des actions spécifiques sur les ressources. Par exemple, lorsqu’un fichier audio MP3 est chargé dans AEM, un workflow déclenche un gestionnaire MP3 qui extrait les métadonnées et génère une miniature. Les gestionnaires de médias sont généralement utilisés conjointement avec des workflows. La plupart des types MIME courants sont pris en charge dans AEM. Il est possible d’effectuer des tâches spécifiques sur les ressources en étendant/créant des processus, en étendant/créant des gestionnaires de médias ou en désactivant/activant des gestionnaires de médias.
+Les gestionnaires de médias sont des services d’AEM Assets qui effectuent des actions spécifiques sur les ressources. Par exemple, lorsqu’un fichier audio MP3 est chargé dans AEM, un workflow déclenche un gestionnaire MP3 qui extrait les métadonnées et génère une miniature. Les gestionnaires de médias sont généralement utilisés conjointement avec des workflows. La plupart des types MIME courants sont pris en charge dans AEM. Il est possible d’effectuer des tâches spécifiques sur les ressources en étendant/créant des workflows, en étendant/créant des gestionnaires de médias ou en désactivant/activant des gestionnaires de médias.
 
 >[!NOTE]
 >
@@ -57,9 +57,9 @@ Il est possible d’afficher les gestionnaires de médias actifs :
 
 ## Use media handlers in workflows to perform tasks on Assets {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
-Les gestionnaires de médias sont des services généralement utilisés conjointement avec des processus.
+Les gestionnaires de médias sont des services généralement utilisés conjointement avec des workflows.
 
-AEM comporte des processus par défaut pour le traitement des ressources. Pour les afficher, ouvrez la console de workflow et cliquez sur l’onglet **[!UICONTROL Modèles]** : les titres de workflow commençant par AEM Assets concernent des ressources.
+AEM comporte des workflows par défaut pour le traitement des ressources. Pour les afficher, ouvrez la console de workflow et cliquez sur l’onglet **[!UICONTROL Modèles]** : les titres de workflow commençant par AEM Assets concernent des ressources.
 
 Les workflows existants peuvent être étendus et de nouveaux workflows peuvent être créés pour gérer les ressources en fonction d’exigences spécifiques.
 
