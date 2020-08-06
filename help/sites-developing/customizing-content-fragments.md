@@ -1,6 +1,6 @@
 ---
 title: Personnalisation et extensions de fragments de contenu
-seo-title: Personnalisation et extension des fragments de contenu
+seo-title: Personnalisation et extensions de fragments de contenu
 description: Un fragment de contenu étend une ressource standard.
 seo-description: Un fragment de contenu étend une ressource standard.
 uuid: f8d0bb22-0b51-4488-a1c8-29e50213c913
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: af95c6c7-0475-4f55-88a8-ec5e39a9ddcd
 translation-type: tm+mt
 source-git-commit: c93c1754a44a2f18c27caf4b50888bdd09d26f7c
+workflow-type: tm+mt
+source-wordcount: '2759'
+ht-degree: 81%
 
 ---
 
 
-# Personnalisation et extension des fragments de contenu{#customizing-and-extending-content-fragments}
+# Personnalisation et extensions de fragments de contenu{#customizing-and-extending-content-fragments}
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragments de contenu nécessitent l’application d’ [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application de l’ [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
 
 Un fragment de contenu étend une ressource standard. Voir :
 
@@ -31,7 +34,7 @@ Un fragment de contenu étend une ressource standard. Voir :
 
 Les [parties constituantes](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) de base d’un fragment de contenu sont les suivantes :
 
-* A *Content Fragment,*
+* un *fragment de contenu,*
 * consisting of one or more *Content Element* s,
 * and which can have one or more *Content Variation* s.
 
@@ -39,17 +42,18 @@ Selon le type de fragment, des modèles sont également utilisés :
 
 >[!CAUTION]
 >
->[Les modèles](/help/assets/content-fragments-models.md) de fragments de contenu sont désormais recommandés pour la création de tous vos fragments.
+>Les [modèles de fragment de contenu](/help/assets/content-fragments-models.md) sont désormais recommandés pour créer tous les fragments.
 >
 >Les modèles de fragment de contenu sont utilisés pour tous les exemples dans We.Retail.
 
-* Modèles de fragment de contenu:
+* Modèles de fragment de contenu :
 
    * utilisés pour définir des fragments de contenu comportant le contenu structuré.
    * Les modèles de fragment de contenu définissent la structure d’un fragment de contenu lors de sa création.
    * Un fragment référençant le modèle, les modifications du modèle peuvent impacter tous les fragments dépendants.
    * Les modèles sont composés de types de données.
    * Les fonctions pour ajouter des variations, etc., doivent mettre à jour le fragment en conséquence.
+
    >[!CAUTION]
    >
    >Toutes les modifications apportées à un modèle de fragment de contenu existant peuvent impacter les fragments dépendants, ce qui peut engendrer des propriétés orphelines dans ces fragments.
@@ -60,7 +64,7 @@ Selon le type de fragment, des modèles sont également utilisés :
    * Les modèles définissent la structure (de base, texte seul) d’un fragment de contenu lors de sa création.
    * Le modèle étant copié dans le fragment lorsqu’il est créé, les modifications ultérieures du modèle ne seront pas répercutées dans les fragments existants.
    * Les fonctions pour ajouter des variations, etc., doivent mettre à jour le fragment en conséquence.
-   * [Les modèles](/help/sites-developing/content-fragment-templates.md) de fragments de contenu fonctionnent différemment de ceux des autres mécanismes de modèle de l’écosystème AEM (modèles de page, etc.). C’est la raison pour laquelle ils doivent être pris en compte séparément.
+   * [Les modèles](/help/sites-developing/content-fragment-templates.md) de fragments de contenu fonctionnent différemment de ceux des autres mécanismes de modélisation de l’écosystème AEM (modèles de page, etc.). C’est la raison pour laquelle ils doivent être pris en compte séparément.
    * S’il est basé sur un modèle, le type MIME du contenu est géré sur le contenu. Cela signifie que chaque élément et variation peut avoir un type MIME différent.
 
 ## Intégration avec Assets {#integration-with-assets}
@@ -73,13 +77,13 @@ La gestion des fragments de contenu (CFM) fait partie d’AEM Assets pour les r
 
 ### Mappage de fragments de contenu structuré à Assets {#mapping-structured-content-fragments-to-assets}
 
-![fragment à actif-structuré](assets/fragment-to-assets-structured.png)
+![structurée de fragment à actif](assets/fragment-to-assets-structured.png)
 
 Les fragments de contenu avec du contenu structuré (c’est-à-dire basé sur un modèle de fragment de contenu) sont mappés à une ressource unique :
 
-* All content is stored under the `jcr:content/data` node of the asset:
+* L’ensemble du contenu est stocké sous le nœud `jcr:content/data` de la ressource :
 
-   * Les données d’élément sont stockées sous le sous-noeud maître :
+   * Les données d’éléments sont stockées sous le sous-nœud maître :
 
       `jcr:content/data/master`
 
@@ -87,14 +91,13 @@ Les fragments de contenu avec du contenu structuré (c’est-à-dire basé sur u
 
       Par exemple, `jcr:content/data/myvariation`
 
-   * Les données de chaque élément sont stockées dans le sous-noeud correspondant sous forme de propriété avec le nom de l’élément :
+   * Les données de chaque élément sont stockées dans le sous-noeud correspondant sous la forme d’une propriété portant le nom de l’élément :
 
-      
-Par exemple, le contenu de l’élément `text` est stocké en tant que propriété `text` sur `jcr:content/data/master`
+      Par exemple, le contenu de l’élément `text` est stocké en tant que propriété `text` sur `jcr:content/data/master`
 
-* Les métadonnées et le contenu associé sont stockés sous `jcr:content/metadata`
+* Les métadonnées et le contenu associé sont stockés ci-dessous. `jcr:content/metadata`
 
-   À l’exception du titre et de la description, qui ne sont pas considérés comme des métadonnées traditionnelles et qui sont stockés sur `jcr:content`
+   Sauf pour le titre et la description, qui ne sont pas considérés comme des métadonnées traditionnelles et qui sont stockés sur `jcr:content`
 
 ### Mappage des fragments de contenu simples à Assets {#mapping-simple-content-fragments-to-assets}
 
@@ -109,10 +112,10 @@ Les fragments de contenu simples (basés sur un modèle) sont associés à un co
 
 * Les éléments supplémentaires (s’ils existent) sont mappés aux sous-ressources de la ressource principale.
 
-   * Le contenu principal de ces éléments supplémentaires correspond au rendu initial de la sous-ressource correspondante.
+   * Le contenu principal de ces éléments supplémentaires est mappé au rendu d’origine de la sous-ressource respective.
    * Les autres variations (le cas échéant) de tout élément supplémentaire sont mappées aux autres rendus de la sous-ressource respective.
 
-### Emplacement des ressources {#asset-location}
+### Emplacement des ressources  {#asset-location}
 
 Comme pour les ressources standard, un fragment de contenu est conservé sous :
 
@@ -120,13 +123,13 @@ Comme pour les ressources standard, un fragment de contenu est conservé sous :
 
 ### Autorisations de ressources {#asset-permissions}
 
-Pour plus d’informations, voir Fragment de [contenu - Suppression de considérations](/help/assets/content-fragments-delete.md).
+Pour plus d’informations, voir [Fragments de contenu – considérations sur la suppression](/help/assets/content-fragments-delete.md).
 
 ### Intégration de fonction {#feature-integration}
 
 * La fonction de gestion des fragments de contenu (CFM) repose sur le noyau Assets, mais devrait être aussi indépendante que possible.
-* CFM fournit ses propres implémentations pour les éléments dans les vues carte/colonne/liste ; ces plug-ins s’intègrent aux implémentations de rendu de contenu Ressources existantes.
-* Plusieurs composants Ressources ont été étendus afin de prendre en charge les fragments de contenu.
+* CFM possède ses propres mises en œuvre pour les éléments en mode Carte/Colonnes/Liste. Celles-ci se connectent aux mises en œuvre de rendu de contenu existantes d’Assets.
+* Plusieurs composants d’Assets ont été étendus pour prendre en charge les fragments de contenu.
 
 ## Utilisation des fragments de contenu dans les pages {#using-content-fragments-in-pages}
 
@@ -134,9 +137,9 @@ Pour plus d’informations, voir Fragment de [contenu - Suppression de considér
 >
 >Le [composant de base Fragment de contenu](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) est désormais recommandé. Voir [Développement de composants de base](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) pour plus d’informations.
 
-Les fragments de contenu peuvent être référencés dans les pages AEM, exactement comme n’importe quel autre type de ressource. AEM fournit le composant de base de [**fragment de contenu **](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)[qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend, this** Content Fragment **core component.
+Les fragments de contenu peuvent être référencés dans les pages AEM, exactement comme n’importe quel autre type de ressource. AEM fournit le composant de base de [****fragment de contenu](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)[qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend, this** Content Fragment **core component.
 
-* Le composant utilise la propriété `fragmentPath` pour référencer le fragment de contenu. The `fragmentPath` property is handled in the same manner as similar properties of other asset types; for example, when the content fragment is moved to another location.
+* Le composant utilise la propriété `fragmentPath` pour référencer le fragment de contenu. La propriété `fragmentPath` est traitée de la même façon que les propriétés similaires d’autres types de ressources, par exemple, lorsque le fragment de contenu est déplacé vers un autre emplacement.
 
 * Le composant permet de sélectionner la variation à afficher.
 * En outre, une plage de paragraphes peut être sélectionnée pour limiter la sortie ; par exemple, pour la sortie en plusieurs colonnes.
@@ -145,7 +148,7 @@ Les fragments de contenu peuvent être référencés dans les pages AEM, exactem
    * Ici, le composant permet de placer d’autres ressources (images, etc.) entre les paragraphes du fragment référencé.
       * Pour le contenu intermédiaire, vous devez :
 
-         * être conscient de la possibilité de références instables; le contenu intermédiaire (ajouté lors de la création d’une page) n’a aucune relation fixe avec le paragraphe en regard duquel il est placé, l’insertion d’un nouveau paragraphe (dans l’éditeur de fragments de contenu) avant que la position du contenu intermédiaire ne perde la position relative
+         * être conscient du risque de références instables ; le contenu intermédiaire (ajouté lors de la création d’une page) n’a pas de rapport fixe avec le paragraphe adjacent, et l’insertion d’un nouveau paragraphe (dans l’éditeur de fragments de contenu) avant la position du contenu intermédiaire peut entraîner la perte de l’emplacement relatif ;
             * tenir compte des paramètres supplémentaires (par exemple, tels que les filtres de variation et de paragraphe) afin d’éviter les faux positifs dans les résultats de recherche.
 
 >[!NOTE]
@@ -170,7 +173,7 @@ Les paramètres correspondants peuvent être configurés dans la [console web](/
 
 * **Propriétés de référence**
 
-   Une liste de propriétés peut être configurée pour indiquer où la référence au fragment est stockée pour le composant correspondant.
+   Une liste de propriétés peut être configurée pour spécifier où la référence au fragment est stockée pour le composant correspondant.
 
 >[!NOTE]
 >
@@ -206,11 +209,11 @@ Les fragments de contenu peuvent être intégrés à :
 
    * Les traductions d’un fragment de contenu sont en fait des fragments distincts, par exemple :
 
-      * ils sont situés sous différentes racines linguistiques :
+      * elles sont situées sous des racines linguistiques différentes :
 
          `/content/dam/<path>/en/<to>/<fragment>`
 
-         vs.
+         ou
 
          `/content/dam/<path>/de/<to>/<fragment>`
 
@@ -218,29 +221,29 @@ Les fragments de contenu peuvent être intégrés à :
 
          `/content/dam/<path>/en/<to>/<fragment>`
 
-         vs.
+         ou
 
          `/content/dam/<path>/de/<to>/<fragment>`
    * Outre les chemins basés sur des règles, il n’existe aucune connexion entre les différentes versions linguistiques d’un fragment de contenu ; elles sont traitées comme deux fragments distincts, bien que l’IU fournisse les moyens de naviguer entre les variantes de langues.
    >[!NOTE]
    >
-   >The AEM translation workflow works with `/content`:
+   >Le workflow de traduction AEM fonctionne avec `/content` :
    >
-   >  * As the content fragment models reside in `/conf`, these are not included in such translations. Vous pouvez [internationaliser les chaînes de l’IU](/help/sites-developing/i18n-dev.md).
+   >  * Les modèles de fragment de contenu résidant dans `/conf` ; ils ne sont pas inclus dans ces traductions. Vous pouvez [internationaliser les chaînes de l’IU](/help/sites-developing/i18n-dev.md).
    >  * Les modèles étant copiés pour créer le fragment, cela est donc implicite.
 
 
 * **Schémas de métadonnées**
 
    * Les fragments de contenu (ré)utilisent les [schémas de métadonnées](/help/assets/metadata-schemas.md) qui peuvent être définis par de ressources standard.
-* CFM fournit son propre schéma spécifique :
+* CFM fournit son propre schéma spécifique :
 
    `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-   cela peut être étendu si nécessaire.
+   il peut être étendu si nécessaire.
 * Le formulaire de schéma respectif est intégré à l’éditeur de fragments.
 
-## L’API de gestion des fragments de contenu – côté serveur {#the-content-fragment-management-api-server-side}
+## L’API de gestion des fragments de contenu – côté serveur   {#the-content-fragment-management-api-server-side}
 
 Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de contenu ; voir :
 
@@ -250,7 +253,7 @@ Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de co
 >
 >Il est fortement conseillé d’utiliser l’API côté serveur plutôt que d’accéder directement à la structure du contenu.
 
-### Interfaces principales {#key-interfaces}
+### Interfaces principales   {#key-interfaces}
 
 Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
@@ -270,6 +273,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
    * un modèle de fragment de contenu utilisé pour créer un fragment de contenu ;
    * et (après la création) les informations structurelles de ce fragment
+
    Ces informations peuvent inclure les éléments suivants :
 
    * Accès aux données de base (titre et description)
@@ -284,6 +288,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
       * Obtenir des informations structurelles pour une variation donnée
       * Accès au modèle de variation (voir `VariationTemplate`)
    * Obtention du contenu associé initial
+
    Interfaces qui représentent des informations importantes :
 
    * `ElementTemplate`
@@ -317,8 +322,8 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
       * Établissement de la liste des éléments
       * Obtention des éléments par nom
-      * Create new elements (see [Caveats](#caveats))
-      * Access element data (see `ContentElement`)
+      * Création des éléments (voir [Restrictions](#caveats))
+      * Accès aux données des éléments (voir `ContentElement`)
    * Établissement de la liste des variations définies pour le fragment
    * Création des variations de manière globale
    * Gestion du contenu associé :
@@ -326,7 +331,8 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
       * Établissement de la liste des collections
       * Ajout de collections
       * Suppression de collections
-   * Accès au modèle du fragment
+   * Accès au modèle du fragment ou modèle
+
    Les interfaces représentant les éléments clés d’un fragment sont :
 
    * **Elément Contenu**
@@ -340,17 +346,18 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
          * Établissement de la liste des variations
          * Obtention des variations par nom
          * Création de variations (voir [Restrictions](#caveats))
-         * Remove variations (see [Caveats](#caveats))
-         * Access variation data (see `ContentVariation`)
+         * Suppression de variations (voir [Restrictions](#caveats))
+         * Accès aux données de variation (voir `ContentVariation`)
       * Raccourci pour résoudre les variations (en appliquant une certaine logique supplémentaire spécifique à la mise en œuvre si la variation spécifiée n’est pas disponible pour un élément)
-   * **Variation du contenu**
+   * **Variation de contenu**
 
       <pre><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html">ContentVariation</a></pre>
 
       * Obtention des informations de base (nom, titre et description)
       * Obtention/définition de contenu
       * Synchronisation unique, en fonction des informations sur les dernières modifications
-   All three interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) extend the `Versionable` interface, which adds versioning capabilities, required for content fragments:
+
+   Chacune des trois interfaces (`ContentFragment`, `ContentElement` et `ContentVariation`) étend l’interface `Versionable`, ce qui ajoute des fonctionnalités de contrôle de version, requises pour les fragments de contenu :
 
    * Création d’une version de l’élément
    * Établissement de la liste des versions de l’élément
@@ -362,26 +369,26 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
 
 
-### Adaptation – utilisation d’adaptTo() {#adapting-using-adaptto}
+### Adaptation – utilisation d’adaptTo()   {#adapting-using-adaptto}
 
 Ce qui suit peut être adapté :
 
-* `ContentFragment` peuvent être adaptées à:
+* `ContentFragment` peut être adapté en :
 
-   * `Resource` - la ressource Sling sous-jacente; notez que la mise à jour `Resource` directe du sous-jacent nécessite la reconstruction de l’ `ContentFragment` objet.
+   * `Resource` - la ressource Sling sous-jacente ; notez que la mise à jour du sous-jacent `Resource` directement nécessite la reconstruction de l’ `ContentFragment` objet.
    * `Asset` - l&#39;abstraction DAM `Asset` qui représente le fragment de contenu ; notez que la mise à jour `Asset` directe nécessite la reconstruction de l’ `ContentFragment` objet.
 
-* `ContentElement` peuvent être adaptées à:
+* `ContentElement` peut être adapté en :
 
    * `ElementTemplate` pour accéder aux informations structurelles de l’élément.
 
-* `FragmentTemplate` peuvent être adaptées à:
+* `FragmentTemplate` peut être adapté en :
 
-   * `Resource` - la `Resource` détermination du modèle référencé ou du modèle original copié;
+   * `Resource` - la `Resource` détermination du modèle référencé ou du modèle original copié ;
 
       * changes made through the `Resource` are not automatically reflected in the `FragmentTemplate`.
 
-* `Resource` peuvent être adaptées à:
+* `Resource` peut être adapté en :
 
    * `ContentFragment`
    * `FragmentTemplate`
@@ -398,7 +405,7 @@ Il convient de noter les éléments suivants :
    * La création de variations de `ContentElement` ne met pas à jour la structure de données (tandis que la création globale à partir de `ContentFragment` la met à jour).
    * La suppression des variations existantes ne met pas à jour la structure de données.
 
-## L’API de gestion des fragments de contenu – côté client {#the-content-fragment-management-api-client-side}
+## L’API de gestion des fragments de contenu – côté client  {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
@@ -410,7 +417,7 @@ Reportez-vous aux informations suivantes :
 
 * `filter.xml`
 
-   The `filter.xml` for content fragment management is configured so that it does not overlap with the Assets core content package.
+   Le fichier `filter.xml` pour la gestion des fragments de contenu est configuré pour ne pas chevaucher le module de contenu de base d’Assets.
 
 ## Sessions de modification {#edit-sessions}
 
@@ -420,7 +427,7 @@ Une session de modification est lancée lorsque l’utilisateur ouvre un fragmen
 
 Les conditions pour contrôler une session de modification sont les suivantes :
 
-* La modification d’un fragment de contenu, qui peut couvrir plusieurs vues (= pages HTML), doit être atomique.
+* La modification d’un fragment de contenu qui peut être réparti sur plusieurs vues (= pages HTML) doit être atomique.
 * La modification doit également être *transactionnelle* ; à la fin de la session de modification, les modifications doivent être validées (enregistrées) ou restaurées (annulées).
 * Les cas limites doivent être traités correctement. Il peut s’agir de situations telles qu’un utilisateur quittant la page en saisissant une URL manuellement ou en utilisant la navigation globale.
 * Un enregistrement automatique récurrent (toutes les x minutes) doit être disponible pour éviter toute perte de données.
@@ -454,7 +461,7 @@ Les processus impliqués sont les suivants :
    * Toutes les modifications (enregistrement automatique inclus) sont effectuées sur le fragment de contenu actif, et non dans une zone séparée et protégée.
    * Par conséquent, ces modifications sont répercutées immédiatement sur les pages AEM faisant référence au fragment de contenu respectif.
 
-### Actions {#actions}
+### Actions  {#actions}
 
 Les actions possibles sont les suivantes :
 
@@ -481,7 +488,7 @@ Les actions possibles sont les suivantes :
 
 ## Exemples {#examples}
 
-### Exemple : accès à un fragment contenu existant {#example-accessing-an-existing-content-fragment}
+### Exemple : accès à un fragment de contenu existant {#example-accessing-an-existing-content-fragment}
 
 Pour ce faire, vous pouvez adapter la ressource qui représente l’API à :
 
@@ -499,7 +506,7 @@ if (fragmentResource != null) {
 } 
 ```
 
-### Exemple : création d’un fragment de contenu {#example-creating-a-new-content-fragment}
+### Exemple : création d’un fragment de contenu   {#example-creating-a-new-content-fragment}
 
 Pour créer un fragment de contenu par programmation, vous devez utiliser :
 
@@ -513,22 +520,22 @@ FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Exemple : spécification de l’intervalle d’enregistrement automatique {#example-specifying-the-auto-save-interval}
+### Exemple : spécification de l’intervalle d’enregistrement automatique   {#example-specifying-the-auto-save-interval}
 
 L’intervalle d’enregistrement automatique (exprimé en secondes) peut être défini à l’aide de Configuration Manager (ConfMgr) :
 
-* Node: `<conf-root>/settings/dam/cfm/jcr:content`
-* Nom de la propriété: `autoSaveInterval`
-* Type: `Long`
+* Nœud : `<conf-root>/settings/dam/cfm/jcr:content`
+* Nom de la propriété : `autoSaveInterval`
+* Type : `Long`
 
-* Default: `600` (10 minutes); this is defined on `/libs/settings/dam/cfm/jcr:content`
+* Valeur par défaut : `600` (10 minutes) ; cette valeur est définie sur `/libs/settings/dam/cfm/jcr:content`
 
 Si vous souhaitez définir un intervalle d’enregistrement automatique de 5 minutes, vous devez définir la propriété sur le nœud, par exemple :
 
-* Node: `/conf/global/settings/dam/cfm/jcr:content`
-* Nom de la propriété: `autoSaveInterval`
+* Nœud : `/conf/global/settings/dam/cfm/jcr:content`
+* Nom de la propriété : `autoSaveInterval`
 
-* Type: `Long`
+* Type : `Long`
 
 * Valeur : `300` (5 minutes correspondent à 300 secondes).
 
