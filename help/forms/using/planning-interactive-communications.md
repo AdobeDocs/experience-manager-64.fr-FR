@@ -82,7 +82,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
    <td><p>Lieu de livraison</p> <p>Code du pays</p> <p>Numéro de mobile</p> <p>Autre numéro de téléphone</p> <p>Numéro de relation</p> <p>Nombre de connexions</p> </td> 
    <td><p>Valeurs des champs suivants :</p> 
     <ul> 
-     <li>Name (Nom)</li> 
+     <li>Nom</li> 
      <li>Adresse</li> 
      <li>Numéro de mobile</li> 
      <li>Autre numéro de téléphone</li> 
@@ -132,7 +132,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
    <td>Appels détaillés - Sortants</td> 
    <td><p>Noms des colonnes :</p> 
     <ul> 
-     <li>Date </li> 
+     <li>Date   </li> 
      <li>Heure</li> 
      <li>Nombre</li> 
      <li>Durée</li> 
