@@ -4,15 +4,18 @@ description: Apprenez à créer un dossier privé dans Adobe Experience Manage
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 100%
 
 ---
 
 
 # Partage de dossiers privés {#private-folder-sharing}
 
-Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager (AEM) Assets un dossier privé qui n’est disponible que pour vous. Vous pouvez partager ce dossier privé avec d’autres utilisateurs auxquels vous attribuez différents droits. Selon le niveau de privilège que vous affectez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
+Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager (AEM) Assets un dossier privé qui n’est disponible que pour vous. Vous pouvez partager ce dossier privé avec d’autres utilisateurs auxquels vous attribuez différents droits. Selon le niveau de privilège que vous affectez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
 
-1. In the Assets console, tap/click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
+1. Dans la console Ressources, appuyez ou cliquez sur **[!UICONTROL Créer]** dans la barre d’outils, puis choisissez **[!UICONTROL Dossier]** dans le menu.
 
    ![chlimage_1-411](assets/chlimage_1-411.png)
 
@@ -30,7 +33,7 @@ Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager (
 
    >[!NOTE]
    >
-   >Le dossier n’est visible par aucun autre utilisateur tant que vous ne l’avez pas partagé.
+   >Le dossier n’est pas visible par les autres utilisateurs tant qu’il n’est pas partagé.
 
 1. Sélectionnez un utilisateur dans la liste **[!UICONTROL Ajouter un utilisateur]** de la page Propriétés du dossier, attribuez-lui un rôle dans le dossier privé, puis cliquez sur **[!UICONTROL Ajouter]**.
 
