@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c7e5667-14c5-40f3-968a-c574b04671e3
 translation-type: tm+mt
 source-git-commit: da7f86f36de0688ebe234d813959000068ef67ff
+workflow-type: tm+mt
+source-wordcount: '2218'
+ht-degree: 92%
 
 ---
 
@@ -23,7 +26,7 @@ Cette interface utilisateur tactile remplace l’interface classique. Il s’agi
 
 >[!NOTE]
 >
->L’interface utilisateur tactile est l’interface utilisateur standard d’AEM, bien que l’interface utilisateur classique soit toujours prise en charge.
+>L’interface utilisateur tactile est l’interface utilisateur standard pour AEM, bien que l’interface utilisateur classique soit toujours prise en charge.
 
 L’interface utilisateur tactile se compose des éléments suivants :
 
@@ -35,7 +38,7 @@ L’interface utilisateur tactile se compose des éléments suivants :
 
 * Le rail de gauche (affiché lorsque cela s’avère nécessaire et pouvant être masqué) qui peut afficher les options suivantes :
 
-   * Frise chronologique
+   * Chronologie
    * Références
    * Filtres
 
@@ -75,7 +78,7 @@ Les principes de base dans l’IU tactile sont les suivants :
 * Inclure des tests intégrés
 * Approche ascendante pour garantir l’application de ces principes à tous les éléments et composants
 
-Pour une présentation plus détaillée de la structure de l’interface utilisateur tactile, voir l’article [Structure de l’interface utilisateur](/help/sites-developing/touch-ui-structure.md)tactile d’AEM.
+Pour un aperçu plus complet de la structure de l’interface utilisateur tactile, voir l’article [Structure de l’interface utilisateur](/help/sites-developing/touch-ui-structure.md)tactile AEM.
 
 ## Pile technologique AEM {#aem-technology-stack}
 
@@ -191,12 +194,12 @@ Il est aussi intéressant d’examiner les différences entre l’IU Granite et 
    <td>Hypermédia</td> 
   </tr> 
   <tr> 
-   <td>Le client connaît le serveur interne</td> 
+   <td>Le client connaît les serveurs internes</td> 
    <td>Le client ne connaît pas les informations internes</td> 
   </tr> 
   <tr> 
    <td>"Grand client"</td> 
-   <td>"Client mince"</td> 
+   <td>"Client léger"</td> 
   </tr> 
   <tr> 
    <td>Bibliothèques clientes spécialisées</td> 
@@ -219,7 +222,7 @@ Les composants de base se trouvent à l’emplacement suivant :
 
 Cette bibliothèque contient un composant IU Granite pour chaque élément Coral. Un composant est axé sur le contenu et sa configuration réside dans le référentiel. Cela permet de composer une application IU Granite sans écrire manuellement de balises HTML.
 
-Objectif :
+Objectif:
 
 * Modèle de composant des éléments HTML
 * Composition du composant
@@ -270,7 +273,7 @@ Les [composants d’administration de l’IU Granite](https://helpx.adobe.com/e
 * Rail (squelette)
 * Panneau de recherche
 
-Objectif :
+Objectif:
 
 * Apparence unifiée pour les applications d’administration
 * Développement accéléré (RAD) pour les applications d’administration
@@ -295,6 +298,7 @@ L’interface utilisateur (IU) Coral est une implémentation du style visuel d�
 >* Documents marketing, publicités et présentations Adobe.
 >* Interface utilisateur des applications de marque Adobe (la police ne doit pas être facilement accessible à d’autres fins).
 >* Personnalisations mineures.
+
 >
 >
 Vous devez éviter d’utiliser l’IU Coral dans les cas suivants :
@@ -302,6 +306,7 @@ Vous devez éviter d’utiliser l’IU Coral dans les cas suivants :
 >* Documents et autres éléments non liés à Adobe.
 >* Environnements de création de contenu (dans lesquels les éléments précédents peuvent être générés par des tiers).
 >* Applications/composants/pages web qui ne sont pas clairement associés à Adobe.
+
 >
 
 
@@ -322,7 +327,7 @@ Au niveau le plus bas, un élément HTML est une balise HTML avec un nom de clas
 
 Le code CSS est utilisé pour définir l’apparence réelle. Pour qu’il soit possible de personnaliser facilement l’apparence (dans le cas d’une valorisation de marque, par exemple), les valeurs de style proprement dites sont déclarées en tant que variables qui sont étendues par le préprocesseur [LESS](https://lesscss.org/) lors de la phase d’exécution.
 
-Objectif :
+Objectif:
 
 * Uniformiser l’apparence au niveau des éléments d’interface de base
 * Fournir le système de grille par défaut
@@ -389,7 +394,7 @@ Le même concept est utilisé pour implémenter la validation de formulaire. For
 >
 >La validation de formulaire native au format HTML5 doit être utilisée lorsque cela s’avère possible et/ou s’il y a une volonté de l’enrichir.
 
-Objectif :
+Objectif:
 
 * Indiquer le comportement dynamique pour les éléments HTML
 * Fournir des dispositions personnalisées impossibles à obtenir avec du code PSS pur
@@ -401,7 +406,7 @@ Mise en œuvre:
 * Module externe jQuery, lié à un ou plusieurs éléments DOM spécifiques.
 * Using `data-*` attributes to customize behavior
 
-Un extrait d&#39;exemple de balisage (notez les options spécifiées comme data-&amp;ast; attributs) :
+Un extrait d&#39;exemple de balisage (notez les options spécifiées comme data-&amp;amp ; ast ; attributs) :
 
 ```xml
 <ul data-column-width="220" data-layout="card" class="cards">
@@ -443,7 +448,7 @@ Un widget combine un ou plusieurs éléments de base avec un module externe Java
 
 Un widget peut se déclencher et écouter des événements personnalisés pour coopérer avec d’autres widgets sur la page. Certains widgets sont, en fait, des widgets jQuery natifs qui utilisent les éléments HTML Coral.
 
-Objectif :
+Objectif:
 
 * Implémenter des éléments d’IU de niveau supérieur présentant un comportement complexe
 * Déclencher et gérer des événements
@@ -497,7 +502,7 @@ Il s’agit notamment de la gestion XSS et du bus d’événements.
 
 Bien que les widgets et les modules externes d’éléments HTML puissent dépendre des fonctionnalités fournies par la bibliothèque Utility, cette dernière ne peut pas présenter de dépendance dure envers les éléments, ni envers les widgets proprement dits.
 
-Objectif :
+Objectif:
 
 * Fourniture de fonctionnalités communes
 * Implémentation du bus d’événements
