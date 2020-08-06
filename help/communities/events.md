@@ -1,8 +1,8 @@
 ---
-title: Événements OSGi pour les composants de communautés
-seo-title: Événements OSGi pour les composants de communautés
-description: Des événements OSGi sont envoyés, qui peuvent déclencher des écouteurs asynchrones.
-seo-description: Des événements OSGi sont envoyés, qui peuvent déclencher des écouteurs asynchrones.
+title: Composants des Événements OSGi pour les communautés
+seo-title: Composants des Événements OSGi pour les communautés
+description: Les événements OSGi sont envoyés et peuvent déclencher des écouteurs asynchrones.
+seo-description: Les événements OSGi sont envoyés et peuvent déclencher des écouteurs asynchrones.
 uuid: 317e2add-689d-4c99-ae38-0703b6649cb7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 5%
 
 ---
 
 
-# Événements OSGi pour les composants de communautés {#osgi-events-for-communities-components}
+# Composants des Événements OSGi pour les communautés {#osgi-events-for-communities-components}
 
 ## Présentation {#overview}
 
 Lorsque les membres interagissent avec les fonctionnalités des communautés, des événements OSGi sont envoyés, ce qui peut déclencher des écouteurs asynchrones, tels que des notifications ou une gamification (score et badge).
 
-L’instance [SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) d’un composant enregistre les événements comme `actions`cela se produit pour un `topic`composant. SocialEvent inclut une méthode pour renvoyer une `verb`associée à l’action. Il existe une relation *n-1* entre `actions`et `verbs`.
+L’instance [SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) d’un composant enregistre les événements `actions`qui surviennent pour un `topic`composant. SocialEvent inclut une méthode pour renvoyer une `verb`associée à l’action. Il existe une relation *n-1* entre `actions`et `verbs`.
 
-Pour les composants Communities livrés dans la version, les tableaux suivants décrivent les `verbs`paramètres `topic`définis pour chaqueutilisation disponible.
+Pour les composants Communities fournis dans la version, les tableaux suivants décrivent la `verbs`définition de chaque composant `topic`disponible à utiliser.
 
 ## Rubriques et verbes {#topics-and-verbs}
 
@@ -32,18 +35,18 @@ Pour les composants Communities livrés dans la version, les tableaux suivants d
 | **Verbe** | **Description** |
 |---|---|
 | POST | crée un événement de calendrier |
-| AJOUTER | commentaires de membre sur un événement de calendrier |
-| UPDATE | l’événement de calendrier ou le commentaire du membre est modifié. |
-| DELETE | l’événement de calendrier ou le commentaire du membre est supprimé |
+| AJOUTER | commentaires d&#39;un membre sur un événement de calendrier |
+| UPDATE | le événement de calendrier ou le commentaire du membre est modifié |
+| DELETE | le événement de calendrier ou le commentaire du membre est supprimé |
 
-[Composant](essentials-comments.md)de commentaires SocialEvent `topic`= com/adobe/cq/social/comment
+[Composant](essentials-comments.md)Commentaires SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verbe** | **Description** |
 |---|---|
 | POST | crée un commentaire |
-| AJOUTER | les réponses du membre au commentaire |
-| UPDATE | le commentaire du membre est modifié. |
-| DELETE | commentaire du membre supprimé |
+| AJOUTER | réponse du membre au commentaire |
+| UPDATE | le commentaire du membre est modifié |
+| DELETE | le commentaire du membre est supprimé |
 
 [Composant](essentials-file-library.md)de bibliothèque de fichiers SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
@@ -60,30 +63,30 @@ Pour les composants Communities livrés dans la version, les tableaux suivants d
 |---|---|
 | POST | membre crée une rubrique de forum |
 | AJOUTER | réponses des membres au sujet du forum |
-| UPDATE | Le sujet ou la réponse du membre du forum est modifié |
-| DELETE | Le sujet ou la réponse du membre du forum est supprimé |
+| UPDATE | le sujet ou la réponse du forum du membre est modifié |
+| DELETE | le sujet ou la réponse du membre du forum est supprimé |
 
-[Composant](blog-developer-basics.md)du journal SocialEvent `topic`= com/adobe/cq/social/journal
+[Composant](blog-developer-basics.md)Journal SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbe** | **Description** |
 |---|---|
 | POST | crée un article de blog |
 | AJOUTER | commentaires d&#39;un membre sur un article de blog |
-| UPDATE | l’article ou le commentaire du blog du membre est modifié. |
-| DELETE | article ou commentaire de blog du membre supprimé |
+| UPDATE | article ou commentaire du blog du membre modifié |
+| DELETE | article ou commentaire du blog du membre supprimé |
 
-[Composant](qna-essentials.md)QA SocialEvent `topic` = com/adobe/cq/social/qna
+[Composant](qna-essentials.md)QnA SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbe** | **Description** |
 |---|---|
 | POST | crée une question QnA |
 | AJOUTER | crée une réponse QnA |
-| UPDATE | QnUne question ou une réponse du membre est modifiée |
+| UPDATE | Question ou réponse QnA du membre modifiée |
 | SELECT | la réponse du membre est sélectionnée |
 | DÉSÉLECTIONNER | la réponse du membre est désélectionnée |
-| DELETE | qualité du membre Une question ou une réponse est supprimée |
+| DELETE | QnUne question ou réponse du membre est supprimée |
 
-[Composant](reviews-basics.md)Révisions SocialEvent `topic`= com/adobe/cq/social/review
+[Composant](reviews-basics.md)de révision SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbe** | **Description** |
 |---|---|
@@ -95,40 +98,40 @@ Pour les composants Communities livrés dans la version, les tableaux suivants d
 
 | **Verbe** | **Description** |
 |---|---|
-| AJOUTER UNE COTATION | le contenu du membre a été amélioré |
-| SUPPRIMER LA COTE | le contenu du membre a été mal évalué |
+| AJOUTER LA COTATION | le contenu du membre a été amélioré |
+| SUPPRESSION DE LA COTE | le contenu du membre a été réduit |
 
 [Composant](essentials-voting.md)de vote SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbe** | **Description** |
 |---|---|
-| AJOUTER UN VOTE | le contenu du membre a été voté |
-| SUPPRIMER LE VOTE | le contenu du membre a été rejeté |
+| AJOUTER le vote | le contenu du député a été voté |
+| SUPPRIMER LE VOTE | le contenu du député a été rejeté, voté |
 
 **Composants** SocialEvent prenant en charge la modération `topic`= com/adobe/cq/social/modération
 
 | **Verbe** | **Description** |
 |---|---|
-| DENY | contenu du membre refusé |
-| INDICATEUR COMME INAPPROPRIÉ | le contenu du membre est marqué |
-| INAPPROPRIÉ | le contenu du membre n’est pas marqué |
+| DENY | le contenu du membre est refusé |
+| INDICATEUR INAPPROPRIÉ | le contenu du membre est marqué |
+| INAPPROPRIÉ | le contenu du membre n&#39;est pas marqué |
 | ACCEPTER | le contenu du membre est approuvé par le modérateur |
 | CLOSE | le membre ferme les commentaires aux modifications et aux réponses |
 | OUVRIR | membre réouvre le commentaire |
 
-## Evénements pour les composants personnalisés {#events-for-custom-components}
+## Événements pour les composants personnalisés {#events-for-custom-components}
 
 Pour un composant personnalisé, la classe [abstraite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) SocialEvent doit être étendue d pour enregistrer les événements du composant comme `actions`cela se produit pour un `topic`composant.
 
-L’événement personnalisé remplacerait la méthode `getVerb()` afin qu’un paramètre approprié `verb`soit renvoyé pour chaque `action`élément. Le `verb` retour d’une action peut être un élément couramment utilisé ( `POST`) ou spécialisé pour le composant ( `ADD RATING`). Il existe une relation *n-1* entre `actions`et `verbs`.
+Le événement personnalisé remplacerait la méthode `getVerb()` afin qu’un paramètre approprié `verb`soit renvoyé pour chaque `action`méthode. L&#39; `verb` action renvoyée peut être couramment utilisée (par exemple `POST`) ou spécialisée pour le composant (par exemple `ADD RATING`). Il existe une relation *n-1* entre `actions`et `verbs`.
 
 >[!NOTE]
 >
->Assurez-vous qu’une extension personnalisée est enregistrée avec un rang inférieur à toute implémentation existante dans le produit.
+>Assurez-vous qu’une extension personnalisée est enregistrée avec un classement inférieur à toute implémentation existante dans le produit.
 
-### Pseudo-Code pour un événement de composant personnalisé {#pseudo-code-for-custom-component-event}
+### Code pseudo pour le Événement de composants personnalisés {#pseudo-code-for-custom-component-event}
 
-[org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);\
+[org.osgi.service.événement.Événement](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);\
 [com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);\
 [com.adobe.granite.activitystream.ObjectTypes](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);\
 [com.adobe.granite.activitystream.Verbs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
@@ -227,15 +230,15 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 }
 ```
 
-## Exemple d’écouteur d’événements pour filtrer les données du flux d’activités {#sample-eventlistener-to-filter-activity-stream-data}
+## Exemple d&#39;écouteur d&#39;événement pour filtrer les données du flux d&#39;Activité {#sample-eventlistener-to-filter-activity-stream-data}
 
-Il est possible d’écouter les événements dans le but de modifier ce qui apparaît dans le flux d’activité.
+Il est possible d&#39;écouter les événements dans le but de modifier ce qui apparaît dans le flux d&#39;activité.
 
-L’exemple de pseudo-code suivant supprime les événements DELETE pour le composant Comments du flux d’activité.
+L&#39;exemple de pseudo-code suivant supprime les événements DELETE pour le composant Commentaires du flux d&#39;activité.
 
-### pseudo-code pour EventListener {#pseudo-code-for-eventlistener}
+### Pseudo-code pour EventListener {#pseudo-code-for-eventlistener}
 
-Nécessite le [dernier pack](deploy-communities.md#latestfeaturepack)de fonctionnalités.
+Requiert le [dernier pack de fonctionnalités](deploy-communities.md#latestfeaturepack).
 
 ```java
 package my.company.comments;
