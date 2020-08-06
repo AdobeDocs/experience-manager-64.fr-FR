@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2142'
+ht-degree: 93%
 
 ---
 
 
 # Environnement et outils de création{#authoring-the-environment-and-tools}
 
-L’environnement de création d’AEM fournit divers mécanismes pour organiser et modifier votre contenu. Les outils fournis sont accessibles à partir des différentes consoles et des éditeurs de pages.
+L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu. Les outils proposés sont accessibles dans les divers éditeurs de pages et consoles.
 
 ## Gestion de votre site {#managing-your-site}
 
@@ -41,7 +44,7 @@ Vous pouvez modifier une page dans l’éditeur de page. Par exemple :
 >
 >Vous pouvez ignorer cette présentation ou la revoir à tout moment en la sélectionnant dans le menu **Informations sur la page**.
 
-## Accès à l’Aide {#accessing-help}
+## Accès à l’aide {#accessing-help}
 
 Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
@@ -50,33 +53,33 @@ Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
 D’autres [ressources d’aide sont accessibles depuis les consoles](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Explorateur de composants {#components-browser}
+## Explorateur de composants    {#components-browser}
 
 L’explorateur de composants présente tous les composants que vous pouvez utiliser sur la page active. Faites-les glisser à l’emplacement de votre choix, puis modifiez-les pour ajouter du contenu.
 
-L’explorateur de composants est un onglet dans le panneau latéral (avec [l’explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser) et [l’arborescence de contenu](/help/sites-authoring/author-environment-tools.md#content-tree)). Pour ouvrir (ou fermer) le panneau latéral, utilisez l’icône en haut à gauche de la barre d’outils :
+L’explorateur de composants est un onglet du panneau latéral (de même que l’[explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser) et l’[arborescence de contenu](/help/sites-authoring/author-environment-tools.md#content-tree)). Pour ouvrir (ou fermer) le panneau latéral, utilisez l’icône en haut à gauche de la barre d’outils :
 
 ![](do-not-localize/screen_shot_2018-03-22at141659.png)
 
 Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côté gauche (sélectionnez l’onglet **Composants** si nécessaire). De là, vous pouvez parcourir tous les composants disponibles pour votre page.
 
-L’aspect et la gestion de l’explorateur dépendent du type de périphérique utilisé :
+L’aspect et la gestion de l’explorateur dépendent du type d’appareil utilisé :
 
 >[!NOTE]
 >
 >Un appareil mobile est détecté si sa largeur est inférieure à 1 024 px. C’est également le cas pour les petites fenêtres sur les ordinateurs de bureau.
 
-* **Appareils mobiles (p. ex. iPad)** 
+* **Appareils mobiles (p. ex. iPad)**
 
    Le navigateur de composants couvre complètement la page en cours de modification.
 
-   Pour ajouter des composants à votre page, maintenez le composant requis appuyé et déplacez-le vers la droite - l’explorateur de composants se ferme pour afficher à nouveau la page - où vous pouvez positionner le composant.
+   Pour ajouter des composants à votre page, maintenez le composant requis enfoncé et déplacez-le vers la droite - l’explorateur de composants se ferme pour afficher à nouveau la page - où vous pouvez positionner le composant.
 
    ![screen_shot_2018-03-22at141752](assets/screen_shot_2018-03-22at141752.png)
 
-* **Périphérique de bureau**
+* **Poste de travail**
 
-   Le navigateur de composants s’ouvre sur le côté gauche de la fenêtre.
+   Le navigateur de composants s&#39;ouvre sur le côté gauche de la fenêtre.
 
    Pour ajouter un composant à votre page, cliquez sur le composant souhaité et faites-le glisser vers l’emplacement requis.
 
@@ -90,10 +93,12 @@ L’aspect et la gestion de l’explorateur dépendent du type de périphérique
 
       * Les icônes de composants standard sont monochromes.
       * Les abréviations correspondent toujours aux deux premiers caractères du nom du composant.
-   Dans la barre d’outils supérieure de l’explorateur de composants, vous pouvez effectuer ce qui suit :
 
-   * filtrer les composants par nom ;
-   * restreindre l’affichage à un groupe spécifique à l’aide de la liste déroulante.
+   Dans la barre d’outils supérieure de l’explorateur de composants, vous pouvez effectuer les opérations suivantes :
+
+   * Filtrer les composants par nom
+   * Restreindre l’affichage à un groupe spécifique à l’aide de la liste déroulante
+
    Pour obtenir une description plus détaillée du composant, vous pouvez cliquer ou appuyer sur l’icône d’informations en regard du composant dans le navigateur Composants (le cas échéant).
 
    ![screen_shot_2018-03-22at141929](assets/screen_shot_2018-03-22at141929.png)
@@ -128,7 +133,7 @@ Pour ajouter une ressource à votre page, sélectionnez-la et faites-la glisser 
 
 >[!NOTE]
 >
->Vous pouvez agir ainsi pour des ressources et des types de composant spécifiques. Voir [Insertion d’un composant à l’aide de l’explorateur de ressources](/help/sites-authoring/editing-content.md#inserting-a-component-using-the-assets-browser) pour en savoir plus.
+>Vous pouvez agir ainsi pour des ressources et des types de composants spécifiques. Voir [Insertion d’un composant à l’aide de l’explorateur de ressources](/help/sites-authoring/editing-content.md#inserting-a-component-using-the-assets-browser) pour en savoir plus.
 
 Dans la barre d’outils supérieure de l’explorateur de ressources, vous pouvez filtrer les ressources par :
 
@@ -139,7 +144,7 @@ Dans la barre d’outils supérieure de l’explorateur de ressources, vous pouv
 
    * Disponible uniquement pour certains types de ressources
 
-L’aspect et la gestion de l’explorateur dépendent du type de périphérique utilisé :
+L’aspect et la gestion de l’explorateur dépendent du type d’appareil utilisé :
 
 >[!NOTE]
 >
@@ -153,7 +158,7 @@ L’aspect et la gestion de l’explorateur dépendent du type de périphérique
 
    ![screen_shot_2018-03-22at142223](assets/screen_shot_2018-03-22at142223.png)
 
-* **Périphérique de bureau**
+* **Poste de travail**
 
    L’explorateur de ressources s’ouvre sur le côté gauche de la fenêtre.
 
@@ -165,7 +170,7 @@ Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeu
 
 ![](do-not-localize/screen_shot_2018-03-22at142448.png)
 
-## Arborescence de contenu   {#content-tree}
+## Arborescence de contenu    {#content-tree}
 
 L’**arborescence de contenu** présente une vue d’ensemble des composants sur la page sous forme de structure hiérarchique pour que vous puissiez visualiser la composition de la page en un seul coup d’œil.
 
@@ -173,13 +178,13 @@ L’arborescence de contenu est un onglet du panneau latéral (de même que l’
 
 ![](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côté gauche. Select the **Content Tree** tab if necessary. Vous pouvez alors voir une représentation de votre page ou modèle sous forme d’arborescence, qui vous permet de comprendre plus facilement la structure hiérarchique de son contenu. Sur une page complexe, elle vous permet en outre de passer plus facilement d’un composant à l’autre.
+Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côté gauche. Sélectionnez l’onglet **Arborescence de contenu** si nécessaire. Vous pouvez alors voir une représentation de votre page ou modèle sous forme d’arborescence, qui vous permet de comprendre plus facilement la structure hiérarchique de son contenu. Sur une page complexe, elle vous permet en outre de passer plus facilement d’un composant à l’autre.
 
 ![screen_shot_2018-03-22at142526](assets/screen_shot_2018-03-22at142526.png)
 
 Comme une page peut souvent être composée de nombreux composants du même type, l’arborescence des composants affiche un texte descriptif (en gris) après le nom du type de composant (en noir). Le texte descriptif provient des propriétés communes du composant, telles que le titre ou le texte.
 
-Les types de composant sont affichés dans la langue de l’utilisateur, tandis que le texte descriptif du composant dépend de la langue de la page.
+Les types de composants sont affichés dans la langue de l’utilisateur, tandis que le texte descriptif du composant dépend de la langue de la page.
 
 Cliquez sur le chevron en regard d’un composant pour réduire ou développer ce niveau.
 
@@ -195,11 +200,11 @@ Si le composant sur lequel vous cliquez dans l’arborescence est modifiable, un
 
 >[!NOTE]
 >
->L’arborescence de contenu n’est pas disponible si vous modifiez une page sur un périphérique mobile (si la largeur du navigateur est inférieure à 1 024 pixels).
+>L’arborescence de contenu n’est pas disponible si vous modifiez une page sur un appareil mobile (si la largeur de l’explorateur est inférieure à 1 024 px).
 
-## Fragments - Explorateur de contenu associé {#fragments-associated-content-browser}
+## Fragments – Explorateur de contenu associé {#fragments-associated-content-browser}
 
-Si votre page contient des fragments de contenu, vous aurez dans ce cas également accès à l’[explorateur de contenu associé](/help/sites-authoring/content-fragments.md#using-associated-content). 
+Si votre page contient des fragments de contenu, vous aurez dans ce cas également accès à l’[explorateur de contenu associé](/help/sites-authoring/content-fragments.md#using-associated-content).
 
 ## Références {#references}
 
@@ -212,7 +217,7 @@ Si votre page contient des fragments de contenu, vous aurez dans ce cas égaleme
 * Utilisation du composant de référence
 * Références aux pages de produit (depuis la console Commerce – Produits)
 
-Open the required console, then navigate to the required resource and open **References** using:
+Ouvrez la console appropriée, puis accédez à la ressource requise et ouvrez **Références** à l’aide de :
 
 ![screen_shot_2018-03-22at153653](assets/screen_shot_2018-03-22at153653.png)
 
@@ -225,29 +230,29 @@ Sélectionnez le type de référence approprié pour en savoir plus. Dans certai
 * Instances du composant Référence (par ex. lorsque vous naviguez jusqu’à la page de référence/référencée)
 * [Références aux pages de produit](/help/sites-administering/generic.md#showing-product-references) (depuis la console Commerce – Produits)
 * [Lancements](/help/sites-authoring/launches.md)
-* [Live Copies](/help/sites-administering/msm.md) affiche les chemins d’accès de toutes les copies dynamiques basées sur la ressource sélectionnée.
-* [Plan directeur](/help/sites-administering/msm-best-practices.md)
+* [](/help/sites-administering/msm.md)Live Copies affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée.
+* [Blueprint](/help/sites-administering/msm-best-practices.md)
 * [Copies de langue](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel)
 
 Par exemple, vous pouvez corriger une référence rompue dans un composant Référence :
 
 ![chlimage_1-292](assets/chlimage_1-292.png)
 
-## Événements - Frise chronologique {#events-timeline}
+## Événements – Chronologie {#events-timeline}
 
-Pour accéder aux ressources appropriées (par ex. des pages de la console **Sites** ou des ressources de la console **Ressources**), utilisez la [frise chronologique pour afficher l’activité récente d’un élément sélectionné](/help/sites-authoring/basic-handling.md#timeline).
+Pour accéder aux ressources appropriées (par ex. des pages de la console **Sites** ou des ressources de la console **Ressources**), utilisez la [chronologie afin d’afficher l’activité récente d’un élément sélectionné](/help/sites-authoring/basic-handling.md#timeline).
 
-Open the required console, then navigate to the required resource and open **Timeline**, using:
+Ouvrez la console appropriée, puis accédez à la ressource requise et ouvrez la **Chronologie** à l’aide de :
 
 ![screen_shot_2018-03-22at153952](assets/screen_shot_2018-03-22at153952.png)
 
-[Sélectionnez la ressource requise puis ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)**Afficher tout** ou **Activités** afin de répertorier les activités récentes pour les ressources sélectionnées :
+[Sélectionnez la ressource requise](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), puis **Tout afficher** ou **Activités** afin de répertorier les activités récentes pour les ressources sélectionnées :
 
 ![screen_shot_2018-03-22at154130](assets/screen_shot_2018-03-22at154130.png)
 
 ## Informations sur la page {#page-information}
 
-L’icône Informations sur la page (en forme d’égaliseur) ouvre un menu fournissant également des détails sur la dernière modification et la dernière publication. Selon les caractéristiques de la page (et du site sur lequel elle se trouve), d’autres options peuvent être disponibles :
+L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fournit également des détails sur la dernière modification et la dernière publication. Selon les caractéristiques de la page (et du site sur lequel elle se trouve), d’autres options peuvent être disponibles :
 
 ![screen_shot_2018-03-22at154210](assets/screen_shot_2018-03-22at154210.png)
 
@@ -257,7 +262,7 @@ L’icône Informations sur la page (en forme d’égaliseur) ouvre un menu four
 * [Verrouiller la page](/help/sites-authoring/editing-content.md#locking-a-page)
 * [Publier la page](/help/sites-authoring/publishing-pages.md#publishing-pages)
 * [Annuler la publication de la page](/help/sites-authoring/publishing-pages.md#unpublishing-pages)
-* [Afficher comme publié(e)](/help/sites-authoring/editing-content.md#view-as-published)
+* [Afficher comme publié(e) ](/help/sites-authoring/editing-content.md#view-as-published)
 * [Afficher en administrateur](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Aide](/help/sites-authoring/basic-handling.md#accessing-help)
 
@@ -270,12 +275,12 @@ Le cas échéant, le menu **Informations sur la page** propose également les op
 
 Le menu **Informations sur la page** peut en outre donner accès à des analyses et recommandations, le cas échéant.
 
-## Modes de page {#page-modes}
+## Modes de page    {#page-modes}
 
 Lors de la modification d’une page, plusieurs modes permettent d’effectuer différentes actions :
 
 * [Modifier](/help/sites-authoring/editing-content.md) : mode à utiliser lors de la modification du contenu de la page.
-* [Disposition](/help/sites-authoring/responsive-layout.md) : permet de créer et de modifier une disposition adaptée en fonction du périphérique (si la page est basée sur un conteneur de dispositions).
+* [Mise en page](/help/sites-authoring/responsive-layout.md) : permet de créer et de modifier une mise en page réactive en fonction du type d’appareil utilisé (si la page est basée sur un conteneur de mises en page).
 
 * [Génération de modèles automatique](/help/sites-authoring/scaffolding.md) : permet de créer un jeu volumineux de pages partageant la même structure, mais avec un contenu différent.
 * [Développeur](/help/sites-developing/developer-mode.md) : permet d’accomplir diverses opérations (certains droits sont requis), notamment la vérification des détails techniques d’une page et de ses composants.
@@ -287,7 +292,7 @@ Lors de la modification d’une page, plusieurs modes permettent d’effectuer d
 
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) : permet d’afficher l’état d’une page à un moment donné.
 * [État de Live Copy](/help/sites-authoring/editing-content.md#live-copy-status) : donne un aperçu rapide de l’état de la live copy et des composants qui sont ou non hérités.
-* [Aperçu](/help/sites-authoring/editing-content.md#previewing-pages) : permet d’afficher la page comme elle sera présentée dans l’environnement de publication ou de naviguer au moyen des liens figurant dans le contenu. 
+* [Aperçu](/help/sites-authoring/editing-content.md#previewing-pages) : permet d’afficher la page comme elle sera présentée dans l’environnement de publication ou de naviguer au moyen des liens figurant dans le contenu.
 
 * [Annoter](/help/sites-authoring/annotations.md) : permet d’ajouter ou d’afficher des annotations sur la page.
 
@@ -300,7 +305,8 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* Certains modes peuvent ne pas être disponibles en fonction des caractéristiques de la page.
 >* L’accès à certains modes implique que vous disposiez des droits ou autorisations appropriés.
 >* Le mode Développeur n’est pas accessible sur les appareils mobiles en raison de restrictions d’espace.
->* Il existe un [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) pour basculer entre **Aperçu** et le mode actuellement sélectionné (par exemple, **Édition**, **Disposition**, etc.).
+>* Utilisez le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Mise en page**, etc.).
+
 >
 
 
@@ -329,7 +335,7 @@ L’explorateur de chemins d’accès est organisé de la même façon que le [m
 
 Lorsqu’une ressource est sélectionnée, le bouton **Sélectionner** situé en haut à droit de la boîte de dialogue devient actif. Cliquez ou appuyez dessus pour confirmer la sélection, ou sur **Annuler** pour annuler.
 
-Si le contexte permet de sélectionner plusieurs ressources, la sélection d’une ressource active également le bouton Sélectionner, mais ajoute aussi un nombre de ressources sélectionnées dans le coin supérieur droit de la fenêtre. Cliquez sur le X en regard du nombre pour tout désélectionner.
+Si le contexte permet la sélection de plusieurs ressources, la sélection d’une ressource active également le bouton Sélectionner, mais ajoute également le nombre de ressources sélectionnées en haut à droite de la fenêtre. Cliquez sur le X en regard du nombre pour tout désélectionner.
 
 ![chlimage_1-294](assets/chlimage_1-294.png)
 
