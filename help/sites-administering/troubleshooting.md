@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b4c1cb82-865b-48dd-b5c0-946e6610ce8e
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 93%
 
 ---
 
@@ -45,15 +48,15 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 Les niveaux de journalisation sont les suivants :
 
-| 0 | Erreur fatale | L&#39;action a échoué et le programme d&#39;installation ne peut pas continuer. |
+| 0 | Erreur fatale | L’action a échoué et le programme d’installation ne peut pas continuer. |
 |---|---|---|
-| 1 | Erreur | L&#39;action a échoué. L’installation se poursuit, mais une partie de CRX n’a pas été installée correctement et ne fonctionnera pas. |
-| 2 | Avertissement | L&#39;action a réussi mais a rencontré des problèmes. CRX risque de ne pas fonctionner correctement. |
-| 3 | Informations | L&#39;action a réussi. |
+| 1 | Erreur | L’action a échoué. L’installation se poursuit, mais une partie de CRX n’a pas été installée correctement et ne fonctionnera pas. |
+| 2 | Avertissement | L’action a réussi, mais a rencontré des problèmes. CRX risque de ne pas fonctionner correctement. |
+| 3 | Informations | L’action a réussi. |
 
 ## Option d’informations détaillées utilisée pour la résolution des incidents {#verbose-option-used-for-troubleshooting}
 
-Lorsque vous démarrez CRX, vous pouvez ajouter l’option -v (texte) à la ligne de commande comme suit : &quot;
+Lorsque vous début CRX, vous pouvez ajouter l’option -v (verbose) à la ligne de commande comme dans : &quot;
 
 ` java -jar crx-<*version*>-<*edition*>.jar -v`
 
