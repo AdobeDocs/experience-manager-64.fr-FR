@@ -1,8 +1,8 @@
 ---
 title: Routage de modèle SPA
 seo-title: Routage de modèle SPA
-description: Pour les applications d’une seule page dans AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
-seo-description: Pour les applications d’une seule page dans AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
+description: Pour les applications d’une seule page en AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
+seo-description: Pour les applications d’une seule page en AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 uuid: 93b4f85a-a240-42d4-95e2-e8b790df7723
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,11 +20,11 @@ ht-degree: 4%
 
 # Routage de modèle SPA{#spa-model-routing}
 
-Pour les applications d’une seule page dans AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
+Pour les applications d’une seule page en AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 
 >[!NOTE]
 >
->La fonctionnalité Editeur d’application monopage (SPA) requiert AEM 6.4 Service Pack 2 ou version ultérieure.
+>La fonctionnalité Editeur d’application monopage (SPA) nécessite AEM Service Pack 2 6.4 ou version ultérieure.
 >
 >L’éditeur d’applications monopages est la solution recommandée pour les projets qui nécessitent un rendu côté client basé sur la structure d’applications monopages (par exemple, Réagir ou Angular).
 
