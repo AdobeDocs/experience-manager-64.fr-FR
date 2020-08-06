@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 87%
 
 ---
 
@@ -27,11 +30,11 @@ Vous pouvez exécuter les types de processus de copie de langue suivants sur les
 
 Dans ce processus, les fragments de contenu à traduire sont copiés vers la racine de langue de la langue vers laquelle vous souhaitez traduire. En outre, en fonction des options que vous sélectionnez, un projet de traduction est créé pour les fragments de contenu dans la console Projets. En fonction des paramètres, vous pouvez démarrer le projet de traduction manuellement ou autoriser son exécution automatique dès sa création.
 
-**Màj des copies de langue**
+**Mise à jour des copies de langue**
 
 Lorsque le fragment de contenu source est mis à jour ou modifié, le fragment de contenu correspondant spécifique au paramètre régional/à la langue doit être à nouveau traduit. Le processus de mise à jour des copies de langue traduit un groupe supplémentaire de fragments de contenu et l’ajoute à une copie de langue pour un paramètre régional spécifique. Dans ce cas, les fragments de contenu traduits sont ajoutés au dossier de destination qui contient déjà les fragments de contenu précédemment traduits.
 
-## Processus Créer et traduire {#create-and-translate-workflow}
+## Workflow Créer et traduire {#create-and-translate-workflow}
 
 Le processus Créer et traduire comprend les options suivantes. Les étapes de procédure associées à chaque option sont similaires aux étapes de procédure associées à l’option correspondante pour les ressources.
 
@@ -56,7 +59,7 @@ Si le fragment de contenu inclut une collection, les ressources de la collection
 
 Pour pouvoir traduire des fragments de contenu comprenant des supports variés, modifiez tout d’abord la structure de traduction par défaut afin de permettre la traduction des ressources intégrées et des collections associées à des fragments de contenu.
 
-1. Cliquez/appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Déploiement > Services cloud]**.
+1. Cliquez/appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Déploiement > Cloud Services]**.
 1. Locate **[!UICONTROL Translation Integration]** under **[!UICONTROL Adobe Marketing Cloud]**, and click/tap **[!UICONTROL Show Configurations]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
@@ -149,7 +152,7 @@ Pour pouvoir traduire des fragments de contenu comprenant des supports variés, 
 
    Notez que seul le contenu de la collection est traduit. La collection elle-même n’est pas traduite.
 
-1. Accédez au chemin d’accès de la ressource associée traduite. Observez que le fichier traduit est stocké sous la racine de la langue cible.
+1. Accédez au chemin d’accès de la ressource associée traduite. Observez que le fichier traduit est stocké sous la racine de la langue de la cible.
 
    ![chlimage_1-466](assets/chlimage_1-466.png)
 
