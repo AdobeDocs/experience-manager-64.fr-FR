@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 842d3a5a-8e09-4a21-b9a2-a8f4f5b699bd
 translation-type: tm+mt
 source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
+workflow-type: tm+mt
+source-wordcount: '1247'
+ht-degree: 73%
 
 ---
 
@@ -32,7 +35,7 @@ Pour créer un modèle personnalisé pour divers composants de Forms Portal, sui
 
 ## Création d’un modèle personnalisé {#creating-a-nbsp-custom-template}
 
-1. Création d’un noeud sling:Folder sous */apps *
+1. Créez un noeud sling:Folder sous */apps *
 
    Ajoutez une propriété « fpContentType ». Spécifiez les valeurs adéquates pour la propriété en fonction du composant pour lequel vous définissez le modèle personnalisé.
 
@@ -42,6 +45,7 @@ Pour créer un modèle personnalisé pour divers composants de Forms Portal, sui
       * Section Brouillons : /libs/fd/fp/draftsTemplate
       * Section Envois : /libs/fd/fp/submissionsTemplate
    * Component Lien : /libs/fd/fp/linkTemplate
+
    Ajoutez un titre que vous souhaitez afficher lors de la sélection des modèles de disposition.
 
    *Remarque : le titre peut être différent du nom du nœud sling:Folder que vous avez créé. *
@@ -106,7 +110,7 @@ Les différents composants de Forms Portal fournissent des jeux exclusifs de mé
 
 Prise en charge de la localisation et du tri et utilisation des propriétés de configuration de l’interface utilisateur (Recherche et énumérateur uniquement) :
 
-1. **Prise en charge** de la localisation : Pour localiser un texte statique, utilisez l’attribut **${localize-***VOTRE_TEXTE***}** et rendez la valeur localisée disponible, le cas échéant.
+1. **Prise en charge** des Localisations : Pour localiser un texte statique, utilisez l&#39;attribut **${localize-***YOUR_TEXT}***** et rendez la valeur localisée disponible, le cas échéant.
 
    *Dans l&#39;exemple présenté, les attributs ${localize-Apply} et ${localize-Download} sont utilisés pour localiser les termes Apply et Download.*
 
@@ -114,7 +118,7 @@ Prise en charge de la localisation et du tri et utilisation des propriétés de 
 
    Par exemple, pour l&#39;en-tête &quot;Title&quot; dans la vue Grille, la valeur de l&#39;en-tête &quot;data-sortKey&quot; est &quot;title&quot;. Cliquez sur l’en-tête pour trier les valeurs d’une colonne particulière.
 
-1. **Utilisation des propriétés de configuration** : le composant Recherche et énumérateur possède plusieurs configurations que vous pouvez utiliser dans l’interface utilisateur. For example, to display HTML ToolTip text saved through the edit dialog, use the **${config-htmlLinkText} attribute.** De même, pour le texte d’info-bulle PDF, utilisez l’attribut ${config-pdfLinkText}**** .
+1. **Utilisation des propriétés de configuration** : le composant Recherche et énumérateur possède plusieurs configurations que vous pouvez utiliser dans l’interface utilisateur. For example, to display HTML ToolTip text saved through the edit dialog, use the **${config-htmlLinkText} attribute.** De même, pour le texte d’info-bulle PDF, utilisez l’**attribut ${config-pdfLinkText}** .
 
 ### Composant Link {#link-component}
 
@@ -149,15 +153,15 @@ Prise en charge de la localisation et du tri et utilisation des propriétés de 
 
 **A**. Elément conteneur
 
-**** B. Métadonnées &quot;path&quot; avec une hiérarchie fixe pour obtenir la miniature stockée pour chaque formulaire.
+**B.** les métadonnées &quot;path&quot; avec une hiérarchie fixe pour obtenir la miniature stockée pour chaque formulaire.
 
 **C.** Attribut répétable aux données utilisé pour la section de modèle de chaque formulaire
 
-**** D. Pour localiser la chaîne &quot;Apply&quot;
+**D.** Pour localiser la chaîne &quot;Apply&quot;
 
 **E.** Utilisation de la propriété de configuration pdfLinkText
 
-**** F. Utilisation des métadonnées &quot;pdfUrl&quot;
+**F.** Utilisation des métadonnées &quot;pdfUrl&quot;
 
 ## Conseils, astuces et problèmes connus {#tips-tricks-and-known-issues}
 
@@ -168,11 +172,11 @@ Prise en charge de la localisation et du tri et utilisation des propriétés de 
 
 ## Articles connexes
 
-* [Activation des composants Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
-* [Créer une page Forms Portal](/help/forms/using/creating-form-portal-page.md)
+* [Activation des composants du portail de formulaires](/help/forms/using/enabling-forms-portal-components.md)
+* [Créer une page du portail de formulaires](/help/forms/using/creating-form-portal-page.md)
 * [Affichage de la liste des formulaires sur une page Web à l’aide d’API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utiliser le composant Drafts and Submissions](/help/forms/using/draft-submission-component.md)
-* [Personnalisation du stockage des brouillons et des formulaires envoyés](/help/forms/using/draft-submission-component.md)
+* [Personnalisation de l’enregistrement des brouillons et des formulaires envoyés](/help/forms/using/draft-submission-component.md)
 * [Exemple d’intégration d’un composant brouillons &amp; envois à la base de données](/help/forms/using/integrate-draft-submission-database.md)
 * [Personnalisation de modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md)
