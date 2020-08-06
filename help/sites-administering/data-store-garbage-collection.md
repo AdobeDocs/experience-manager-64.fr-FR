@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5ee9d11a-85c2-440d-b487-a38d04dc040b
 translation-type: tm+mt
 source-git-commit: 3c4b8bf3fd912406657c4cecb75eb2b77dd41bc7
+workflow-type: tm+mt
+source-wordcount: '1905'
+ht-degree: 79%
 
 ---
 
@@ -53,7 +56,7 @@ Cette approche fonctionne bien pour un nœud unique avec un entrepôt de donnée
 
 >[!NOTE]
 >
->Lorsque le nettoyage de la mémoire est effectué dans une configuration d’entrepôt de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut contenir des avertissements sur l’impossibilité de supprimer certains ID de blob. Cela se produit parce que les ID d’objet blob supprimés dans une précédente collecte de déchets sont de nouveau référencés de manière incorrecte par d’autres noeuds de la grappe ou partagés qui ne disposent pas d’informations sur les suppressions d’ID. Lorsque le nettoyage est effectué, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du précédent nettoyage. Ce comportement n’a toutefois aucune incidence sur les performances ou la fonctionnalité.
+>Lorsque le nettoyage de la mémoire est effectué dans une configuration d’entrepôt de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut contenir des avertissements sur l’impossibilité de supprimer certains ID de blob. Cela se produit car les ID d’objet blob supprimés dans une précédente collecte de déchets sont de nouveau référencés de manière incorrecte par d’autres noeuds de la grappe ou partagés qui ne disposent pas d’informations sur les suppressions d’ID. Lorsque le nettoyage est effectué, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du précédent nettoyage. Ce comportement n’a toutefois aucune incidence sur les performances ou la fonctionnalité.
 
 ## Exécution du nettoyage de la mémoire d’entrepôt de données {#running-data-store-garbage-collection}
 
@@ -78,22 +81,22 @@ Le tableau ci-dessous indique le type de nettoyage de la mémoire d’entrepôt 
   <tr> 
    <td>TarMK</td> 
    <td>TarMK</td> 
-   <td>Nettoyage de révision (les fichiers binaires sont intégrés au magasin de segments)</td> 
+   <td>Nettoyage de la révision (les fichiers binaires sont intégrés au magasin de segments)</td> 
   </tr> 
   <tr> 
    <td>TarMK</td> 
    <td>Système de fichiers externe</td> 
-   <td><p>Tâche de collecte de déchets du magasin de données via le tableau de bord Opérations</p> <p>Console JMX</p> </td> 
+   <td><p>tâche de collecte des déchets de la banque de données via le Tableau de bord d’exploitation</p> <p>Console JMX</p> </td> 
   </tr> 
   <tr> 
    <td>MongoDB</td> 
    <td>MongoDB</td> 
-   <td><p>Tâche de collecte de déchets du magasin de données via le tableau de bord Opérations</p> <p>Console JMX</p> </td> 
+   <td><p>tâche de collecte des déchets de la banque de données via le Tableau de bord d’exploitation</p> <p>Console JMX</p> </td> 
   </tr> 
   <tr> 
    <td>MongoDB</td> 
    <td>Système de fichiers externe</td> 
-   <td><p>Tâche de collecte de déchets du magasin de données via le tableau de bord Opérations</p> <p>Console JMX</p> </td> 
+   <td><p>tâche de collecte des déchets de la banque de données via le Tableau de bord d’exploitation</p> <p>Console JMX</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -134,7 +137,7 @@ Cette section aborde le nettoyage de la mémoire d’entrepôt de données via l
 Pour exécuter le nettoyage de la mémoire :
 
 1. Dans la console de gestion OSGi Apache Felix, sélectionnez l’onglet **Principal**, puis **JMX** dans le menu suivant.
-1. Ensuite, recherchez et cliquez sur le MB **Gestionnairede** référentiel (ou accédez à `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
+1. Ensuite, recherchez et cliquez sur le MBean du Gestionnaire **de** référentiel (ou accédez à `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
 1. Cliquez sur **startDataStoreGC(boolean markOnly)**.
 1. enter &quot;`true`&quot; for the `markOnly` parameter if required:
 
@@ -150,7 +153,7 @@ Pour exécuter le nettoyage de la mémoire :
 
 >[!NOTE]
 >
->La tâche de collecte de déchets du magasin de données ne démarre que si vous avez configuré un magasin de données de fichiers externe. Si aucune banque de données de fichiers externe n’a été configurée, la tâche renvoie le message `Cannot perform operation: no service of type BlobGCMBean found` après l’appel. See [Configuring node stores and data stores in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) for information on how to set up a file data store.
+>La tâche de collecte des données de la banque de données ne sera début que si vous avez configuré une banque de données de fichiers externe. Si aucune banque de données de fichiers externe n’a été configurée, la tâche renvoie le message `Cannot perform operation: no service of type BlobGCMBean found` après l’appel. See [Configuring node stores and data stores in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) for information on how to set up a file data store.
 
 ## Automatisation du nettoyage de la mémoire d’entrepôt de données {#automating-data-store-garbage-collection}
 
@@ -160,15 +163,15 @@ La période de maintenance hebdomadaire intégrée, disponible via le [tableau d
 
 >[!NOTE]
 >
->La raison de ne pas l’exécuter simultanément est que les anciens fichiers de stockage de données (et inutilisés) sont également sauvegardés, de sorte que, s’il est nécessaire de restaurer une ancienne version, les fichiers binaires sont toujours présents dans la sauvegarde.
+>La raison de ne pas l’exécuter simultanément est que les anciens fichiers de stockage de données (et inutilisés) sont également sauvegardés, de sorte que s’il est nécessaire de revenir à une ancienne révision, les fichiers binaires sont toujours présents dans la sauvegarde.
 
-Si vous ne souhaitez pas exécuter la collecte des déchets de stockage de données avec la fenêtre de maintenance hebdomadaire du tableau de bord Opérations, elle peut également être automatisée à l’aide des clients HTTP wget ou curl. Voici un exemple d’automatisation de la sauvegarde à l’aide de curl :
+Si vous ne souhaitez pas exécuter la collecte des déchets de stockage de données avec la fenêtre de maintenance hebdomadaire du Tableau de bord des opérations, elle peut également être automatisée à l&#39;aide des clients HTTP wget ou curl. Voici un exemple d’automatisation de la sauvegarde à l’aide de curl :
 
 >[!CAUTION]
 >
 >Dans les exemples de commande `curl` suivants, il se peut que divers paramètres doivent être configurés pour votre instance. Par exemple, le nom d’hôte (`localhost`), le port (`4502`) le mot de passe administrateur (`xyz`) et divers paramètres pour le nettoyage effectif de la mémoire d’entrepôt de données.
 
-Voici un exemple de commande curl pour appeler la collecte de déchets du magasin de données via la ligne de commande :
+Voici un exemple de commande curl permettant d’appeler la collecte de déchets de la banque de données via la ligne de commande :
 
 ```shell
 curl -u admin:admin -X POST --data markOnly=true  http://localhost:4503/system/console/jmx/org.apache.jackrabbit.oak"%"3Aname"%"3Drepository+manager"%"2Ctype"%"3DRepositoryManagement/op/startDataStoreGC/boolean
