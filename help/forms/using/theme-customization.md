@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 58%
 
 ---
 
@@ -25,7 +28,7 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 
 ## Étapes {#steps}
 
-1. Ouvrez votre projet.
+1. Ouvrez le projet.
 
    * For iOS, open `Capture.xcodeproj` in Xcode
    * Pour Android, ouvrez le projet Android dans Eclipse.
