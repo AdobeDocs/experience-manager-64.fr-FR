@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3c59ec8f-b72f-48dd-bac8-9817005ae210
 translation-type: tm+mt
 source-git-commit: 77997d6d8744cf1498add91a0aa2dab4e29f8e3d
+workflow-type: tm+mt
+source-wordcount: '6512'
+ht-degree: 93%
 
 ---
 
@@ -40,11 +43,11 @@ Si les critères ne sont pas remplis, un déploiement TarMK actif/en mode atten
 
 ### Déploiement minimal de MongoDB pour AEM {#minimal-mongodb-deployment-for-aem}
 
-Voici un déploiement minimal pour AEM sur MongoDB. Par souci de simplicité, l’arrêt SSL et les composants proxy HTTP ont été généralisés. Il se compose d’un jeu de réplicas MongoDB unique, avec un principal et deux secondaires.
+Voici un déploiement minimal pour AEM sur MongoDB. Par souci de simplicité, l’arrêt SSL et les composants proxy HTTP ont été généralisés. Il est constitué d&#39;un jeu de réplicas MongoDB unique, avec un Principal et deux secondes.
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
 
-Un déploiement minimal nécessite 3 instances `mongod` configurées en tant que jeu de réplicas. Une seule instance sera élue comme étant la principale et les autres instances les secondaires, l’élection étant gérée par `mongod`. Un disque local est associé à chaque instance. Pour que la grappe prenne en charge la charge, un débit minimal de 12 Mo/s avec plus de 3 000 E/S par seconde (E/S par seconde) est recommandé.
+Un déploiement minimal nécessite 3 instances `mongod` configurées en tant que jeu de réplicas. Une seule instance sera élue comme étant la principale et les autres instances les secondaires, l’élection étant gérée par `mongod`. Un disque local est associé à chaque instance. Pour que la grappe prenne en charge la charge, un débit minimal de 12 Mo/s avec plus de 3 000 opérations d&#39;E/S par seconde (E/S) est recommandé.
 
 Les auteurs AEM sont connectés aux instances `mongod`, chaque auteur AEM se connectant aux trois instances `mongod`. Les écritures sont envoyées à l’instance principale et les lectures peuvent être lues depuis n’importe quelle instance. Le trafic est réparti en fonction de la charge par un dispatcher à l’une des instances d’auteur d’AEM actives. L’entrepôt de données OAK est un `FileDataStore`. La surveillance MongoDB est assurée par MMS ou MongoDB Ops Manager en fonction de l’emplacement du déploiement. La surveillance au niveau du système d’exploitation et des journaux est fournie par des solutions tierces telles que Splunk ou Ganglia.
 
@@ -105,7 +108,7 @@ Bien qu’il soit possible d’utiliser des outils de ligne de commande pour obt
 
 MongoDB Cloud Manager est un service gratuit offert par MongoDB qui permet la surveillance et la gestion des instances de MongoDB. Il offre une visibilité en temps réel sur les performances et l’intégrité du cluster MongoDB. Il gère à la fois les instances hébergées en mode cloud et privé, à condition que l’instance puisse atteindre le serveur de surveillance Cloud Manager.
 
-Un agent installé sur l’instance MongoDB doit être connecté au serveur de surveillance. L’agent comporte trois niveaux :
+Il nécessite un agent installé sur l’instance MongoDB qui se connecte au serveur de surveillance. L’agent comporte trois niveaux :
 
 * Un agent d’automatisation qui peut entièrement automatiser toutes les opérations sur le serveur MongoDB.
 * Un agent de surveillance qui peut surveiller l’instance `mongod`.
@@ -187,8 +190,7 @@ Où :
 
 * `cache`
 
-   
-Taille du cache en mégaoctets. Elle est répartie entre les différents caches utilisés dans `DocumentNodeStore`. La valeur par défaut est 256 Mo. Cependant, les performances de lecture Oak bénéficieront d’un cache plus important.
+   Taille du cache en mégaoctets. Elle est répartie entre les différents caches utilisés dans `DocumentNodeStore`. La valeur par défaut est 256 Mo. Cependant, les performances de lecture Oak bénéficieront d’un cache plus important.
 
 * `blobCacheSize`
 
@@ -213,8 +215,7 @@ Où :
 
 * `minRecordLength`
 
-   
-Taille en octets. Les fichiers binaires inférieurs ou égaux à cette taille sont stockés dans le magasin de nœuds de document. Plutôt que de stocker l’ID du blob, le contenu du fichier binaire est stocké. Pour les fichiers binaires supérieurs à cette taille, l’ID du fichier binaire est stocké en tant que propriété du document dans la collection de nœuds, et le corps du fichier binaire est stocké dans le `FileDataStore` sur le disque. La taille de bloc du système de fichiers est généralement de 4 096 octets.
+   Taille en octets. Les fichiers binaires inférieurs ou égaux à cette taille sont stockés dans le magasin de nœuds de document. Plutôt que de stocker l’ID du blob, le contenu du fichier binaire est stocké. Pour les fichiers binaires supérieurs à cette taille, l’ID du fichier binaire est stocké en tant que propriété du document dans la collection de nœuds, et le corps du fichier binaire est stocké dans le `FileDataStore` sur le disque. La taille de bloc du système de fichiers est généralement de 4 096 octets.
 
 * `path`
 
@@ -395,18 +396,15 @@ Le processus MongoDB se comporte différemment selon les différentes stratégie
 
 * `-membind=<nodes>`
 
-   
-Affectez uniquement les noeuds répertoriés. Mongod n’alloue pas de mémoire sur les nœuds répertoriés et ne peut pas utiliser toute la mémoire disponible.
+   Affectez uniquement les noeuds répertoriés. Mongod n’alloue pas de mémoire sur les nœuds répertoriés et ne peut pas utiliser toute la mémoire disponible.
 
 * `-cpunodebind=<nodes>`
 
-   
-S’exécuter uniquement sur les noeuds. Mongod s’exécute uniquement sur les nœuds spécifiés et utilise exclusivement la mémoire disponible sur ces nœuds.
+   S’exécute uniquement sur les noeuds. Mongod s’exécute uniquement sur les nœuds spécifiés et utilise exclusivement la mémoire disponible sur ces nœuds.
 
 * `-physcpubind=<nodes>`
 
-   
-S’exécuter uniquement sur les processeurs (coeurs) répertoriés. Mongod ne s’exécute que sur les processeurs répertoriés et n’utilise que la mémoire disponible sur ces processeurs.
+   S’exécute uniquement sur les CPU (coeurs) répertoriés. Mongod ne s’exécute que sur les processeurs répertoriés et n’utilise que la mémoire disponible sur ces processeurs.
 
 * `--localalloc`
 
@@ -424,19 +422,19 @@ En raison de l’activité intensive des bases de données en termes de mémoire
 
 #### Systèmes de fichiers distants {#remote-filesystems}
 
-Les systèmes de fichiers distants comme NFS ne sont pas recommandés pour les fichiers de données internes de MongoDB (les fichiers de base de données de processus mongod), car ils introduisent trop de latence. Ce type de système ne doit pas être confondu avec le système de fichiers partagé requis pour le stockage d’Oak Blob (FileDataStore), où NFS est recommandé.
+Les systèmes de fichiers distants tels que NFS ne sont pas recommandés pour les fichiers de données internes de MongoDB (les fichiers de base de données de processus mongod), car ils introduisent trop de latence. Ce type de système ne doit pas être confondu avec le système de fichiers partagé requis pour le stockage d’Oak Blob (FileDataStore), où NFS est recommandé.
 
 #### Lecture anticipée {#read-ahead}
 
-La lecture anticipée doit être affinée de sorte que lorsqu&#39;une page est mise en page à l&#39;aide d&#39;une lecture aléatoire, les blocs inutiles ne sont pas lus à partir du disque, ce qui entraîne une consommation inutile de la bande passante E/S.
+La lecture à l&#39;avance doit être réglée de sorte que lorsqu&#39;une page est paginée en utilisant une lecture aléatoire, les blocs inutiles ne sont pas lus à partir du disque, ce qui entraîne une consommation inutile de bande passante d&#39;E/S.
 
 ### Exigences Linux {#linux-requirements}
 
 #### Versions minimales du noyau {#minimum-kernel-versions}
 
-* **2.6.23** pour les systèmes de fichiers `ext4`
+* **2.6.23** `ext4` pour les systèmes de fichiers
 
-* **2.6.25** pour les systèmes de fichiers `xfs`
+* **2.6.25** `xfs` pour les systèmes de fichiers
 
 #### Paramètres recommandés pour les disques de base de données {#recommended-settings-for-database-disks}
 
@@ -588,7 +586,7 @@ Si vous utilisez WMWare ESX pour gérer et déployer vos environnements virtual
 1. Utilisez le contrôle d’E/S de stockage pour allouer suffisamment d’E/S au processus `mongod`
 1. Garantissez les ressources de processeur des machines hébergeant MongoDB en définissant la [réservation de processeur](https://pubs.vmware.com/vsphere-4-esx-vcenter/index.jsp?topic=/com.vmware.vsphere.vmadmin.doc_41/vsp_vm_guide/configuring_virtual_machines/t_allocate_cpu_resources.html)
 
-1. Envisagez d’utiliser des pilotes d’E/S ParaVirtual. For more information on how to do this, check this [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).
+1. Envisagez d’utiliser des pilotes d’E/S ParaVirtual. For more information on how to do this, check this [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1010398).
 
 ### Amazon Web Services {#amazon-web-services}
 
@@ -700,4 +698,4 @@ If AEM is running on a MongoMK persistence manager deployment, [page names are l
 
 >[!NOTE]
 >
->[Consultez la documentation](https://docs.mongodb.com/manual/reference/limits/) de MongoDB pour vous familiariser avec les limites et les seuils connus de MongoDB.
+>[Consultez la documentation](https://docs.mongodb.com/manual/reference/limits/) de MongoDB pour vous familiariser avec les limites et seuils connus de MongoDB lui-même.
