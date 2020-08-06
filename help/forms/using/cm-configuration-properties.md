@@ -10,13 +10,16 @@ topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 97%
 
 ---
 
 
 # Propriétés de configuration de Correspondence Management {#correspondence-management-configuration-properties}
 
-Pour configurer ces propriétés, ouvrez l’URL suivante dans un navigateur : `https://<server>:<port>/<contextPath>/system/console/configMgr` puis sélectionnez Configurations **de** Correspondence Management.
+Pour configurer ces propriétés, ouvrez l’URL suivante dans un navigateur : `https://<server>:<port>/<contextPath>/system/console/configMgr` et sélectionnez Configurations **de** Correspondence Management.
 
 Correspondence Management possède les propriétés de configuration suivantes :
 
@@ -25,7 +28,7 @@ Correspondence Management possède les propriétés de configuration suivantes 
   <tr> 
    <th><p><strong>Propriétés</strong></p> </th> 
    <th><p><strong>Description</strong></p> </th> 
-   <th><p><strong>Default</strong></p> </th> 
+   <th><p><strong>Valeur par défaut</strong></p> </th> 
    <th><p><strong>Valeurs acceptables</strong></p> </th> 
   </tr> 
   <tr> 
@@ -269,7 +272,7 @@ Correspondence Management possède les propriétés de configuration suivantes 
    <td><p>true/false</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td>Dossier temp</td> 
+   <td>Dossier temp   </td> 
    <td>Emplacement du dossier temporaire.</td> 
    <td>acm.tpmFolder</td> 
    <td> </td> 
