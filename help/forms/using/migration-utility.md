@@ -12,6 +12,9 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '1872'
+ht-degree: 72%
 
 ---
 
@@ -66,7 +69,7 @@ Pour les ressources de Correspondence Management :
 
 ### Exécution de l’utilitaire de migration {#runningmigrationutility}
 
-Exécutez l’utilitaire de migration avant toute modification ou création de ressources. Nous vous recommandons de ne pas exécuter l’utilitaire après une modification ou création de ressources. Assurez-vous que l’interface utilisateur Correspondence Management ou Ressources de formulaires adaptatifs n’est pas ouverte pendant l’exécution du processus de migration.
+Exécutez l’utilitaire de migration avant toute modification ou création de ressources. Nous vous recommandons de ne pas exécuter l’utilitaire après une modification ou création de ressources. Assurez-vous que l’interface utilisateur Correspondence Management ou Ressources Forms adaptatives n’est pas ouverte pendant l’exécution du processus de migration.
 
 When you run the Migration Utility for the first time, a log is created with the following path and name: `\[aem-installation-directory]\cq-quickstart\logs\aem-forms-migration.log`. Ce journal conserve les informations de migration mises à jour de Correspondence Management et des formulaires adaptatifs, telles que le déplacement des ressources.
 
@@ -96,21 +99,23 @@ When you run the Migration Utility for the first time, a log is created with the
       * Thèmes
       * Lettres
       * Dictionnaires de données
+
    >[!NOTE]
    >
    >Pendant la migration des actifs, des messages d’avertissement tels que « Conflit détecté pour ... » peuvent s’afficher. Ces messages indiquent que les règles de certains composants des formulaires adaptatifs n’ont pas pu être migrées. Par exemple, si le composant possède un événement qui contient à la fois des règles et des scripts, si les règles se produisent après un script, aucune des règles du composant n’est migrée. Cependant, de telles règles peuvent être migrées en ouvrant l’éditeur de règles dans la création de formulaires adaptatifs.
    >
    >Ces composants peuvent être migrés en les ouvrant dans l’éditeur de règles dans l’éditeur de formulaires adaptatifs.
    >
-   >* Pour migrer des règles et des scripts (non requis si la mise à niveau de la version 6.3) dans des composants personnalisés, appuyez sur Migration des composants personnalisés des formulaires adaptatifs, puis, dans l’écran suivant, appuyez sur Démarrer la migration. Les éléments suivants sont migrés :
+   >* Pour migrer des règles et des scripts (non requis si la mise à niveau de la version 6.3) dans des composants personnalisés, appuyez sur Migration des composants personnalisés de Forms adaptatif et, dans l’écran suivant, appuyez sur Migration des Débuts. Les éléments suivants sont migrés :
       >
       >  
    * Règles et scripts créés à l’aide de éditeur de règles (6.1 FP1 et versions ultérieures)
    >  * Scripts créés à l’aide de l’onglet Script dans l’interface utilisateur de la version 6.1 et versions antérieures
-   >* Pour migrer des modèles (non requis si la mise à niveau est effectuée à partir de la version 6.3), appuyez sur Migration des modèles de formulaires adaptatifs, puis, dans l’écran suivant, appuyez sur Démarrer la migration. Les éléments suivants sont migrés :
+   >* Pour migrer des modèles (non requis si la mise à niveau est effectuée à partir de la version 6.3), appuyez sur Migration de modèles de Forms adaptatif et, dans l’écran suivant, appuyez sur Migration de Débuts. Les éléments suivants sont migrés :
+
       >
       >  
-   * Anciens modèles : modèles de formulaires adaptatifs créés sous /apps à l’aide d’AEM Forms 6.1 ou version antérieure. Ceci inclut les scripts qui ont été définis dans les composants du modèle.
+   * Anciens modèles : modèles de formulaires adaptatifs créés sous /apps à l’aide d’AEM version Forms 6.1 ou antérieure. Ceci inclut les scripts qui ont été définis dans les composants du modèle.
    >  * Nouveaux modèles - Modèles de formulaires adaptatifs créés à l’aide de l’éditeur de modèles sous /conf. Cela inclut la migration des règles et des scripts créés à l’aide de l’éditeur de règles.
 
 
@@ -121,7 +126,8 @@ When you run the Migration Utility for the first time, a log is created with the
    * To migrate adaptive form templates, tap **Adaptive Forms Template Migration** and in the Custom Components Migration page, tap **Start Migration**. Les éléments suivants sont migrés :
 
       * Les modèles de formulaire adaptatif créés sous /apps ou /conf à l’aide de l’éditeur de modèles AEM.
-   * Migrez les services de configuration cloud d’AEM Forms pour exploiter le nouveau paradigme de service cloud contextuel comprenant l’interface utilisateur tactile (sous /conf). Lorsque vous migrez les services de configuration cloud d’AEM Forms, les services cloud dans /etc sont déplacés vers /conf. Si vous ne disposez d’aucune personnalisation des services Cloud dépendant des chemins hérités (/etc), il est recommandé d’exécuter l’utilitaire de migration juste après la mise à niveau vers la version 6.4 et d’utiliser l’interface utilisateur tactile de configuration Cloud pour tout travail ultérieur. Si vous disposez déjà de personnalisations de services cloud, continuez à utiliser l’interface utilisateur classique dans la configuration mise à niveau jusqu’à ce que les personnalisations soient mises à jour et concordent avec les chemins migrés (/conf), puis exécutez l’utilitaire de migration.
+   * Migrez les services de configuration cloud d’AEM Forms pour exploiter le nouveau paradigme de service cloud contextuel comprenant l’interface utilisateur tactile (sous /conf). Lorsque vous migrez les services de configuration cloud d’AEM Forms, les services cloud dans /etc sont déplacés vers /conf. Si vous ne disposez d’aucune personnalisation des services de cloud qui dépend des chemins hérités (/etc), il est recommandé d’exécuter l’utilitaire de migration juste après la mise à niveau vers la version 6.4 et d’utiliser l’interface utilisateur tactile de configuration de cloud pour toute autre tâche. Si vous disposez déjà de personnalisations de services cloud, continuez à utiliser l’interface utilisateur classique dans la configuration mise à niveau jusqu’à ce que les personnalisations soient mises à jour et concordent avec les chemins migrés (/conf), puis exécutez l’utilitaire de migration.
+
    To migrate **AEM Forms cloud services**, which include the following, tap AEM Forms Cloud Configuration Migration (cloud config migration is independent of AEMFD Compatibility package), tap AEM Forms Cloud Configurations Migration and then on the Configuration Migration page, tap **Start Migration**:
 
    * Services cloud du modèle de données de formulaire
@@ -140,15 +146,18 @@ When you run the Migration Utility for the first time, a log is created with the
 
       * Chemin d’accès source : /etc/cloudservices/typekit
       * Chemin d’accès cible : /conf/global/settings/cloudconfigs/typekit
+
    La fenêtre du navigateur affiche les éléments suivants pendant le processus de migration :
 
    * Lorsque les actifs sont mis à jour : mise à jour des actifs effectuée avec succès.
    * Une fois la migration terminée : migration des actifs terminée.
+
    Lorsqu’il est exécuté, l’utilitaire de migration effectue les opérations suivantes :
 
    * **Ajoute les balises aux actifs** : ajoute la balise « Correspondence Management : actifs migrés » / « Formulaires adaptatifs : actifs migrés » aux actifs migrés, afin que les utilisateurs puissent identifier les actifs migrés. Lorsque vous exécutez l’utilitaire de migration, tous les actifs existants du système sont marqués comme migrés.
    * **Génération des balises** : les catégories et les sous-catégories présentes dans le système précédent sont créées sous forme de balises et ces balises sont associées aux actifs appropriés de Correspondence Management dans AEM. Par exemple, une catégorie (Réclamations) et une sous-catégorie (Réclamations) d’un modèle de lettre sont générées sous forme de balises.
    * **Déplacement des mises en page et des fragments de mise en page vers l’interface utilisateur d’AEM 6.4 Forms** : si vous effectuez une mise à niveau de 6.2 à 6.4, les modèles de mise en page et les fragments de mise en page sont ajoutés sous forme de formulaires dans la section de l’interface utilisateur d’AEM Forms 6.4.
+
    >[!NOTE]
    >
    >Si vous effectuez une mise à niveau de 6.2 à 6.4, pour Correspondence Management, les nouveaux dossiers peuvent être affichés dans l’interface utilisateur contenant vos ressources. Vous devez donc vérifier ces dossiers pour localiser vos actifs.
@@ -159,7 +168,7 @@ When you run the Migration Utility for the first time, a log is created with the
 
 Après avoir exécuté l’utilitaire de migration, effectuez les tâches de maintenance suivantes :
 
-1. Assurez-vous que la version XFA des mises en page et des mises en page de fragments est 3.3 ou ultérieure. Si vous utilisez des mises en page et des mises en page de fragments d’une ancienne version, il se peut que le rendu de la lettre pose problème. Pour mettre à jour une version d’un XFA plus ancien vers la dernière version, procédez comme suit :
+1. Assurez-vous que la version XFA des mises en page et des mises en page de fragments est 3.3 ou ultérieure. Si vous utilisez des mises en page et des mises en page de fragments d’une version antérieure, il se peut que le rendu de la lettre pose problème. Pour mettre à jour une version d’un XFA plus ancien vers la dernière version, procédez comme suit :
 
    1. [Téléchargez XFA sous la forme d’un fichier zip](/help/forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) depuis l’interface utilisateur de Forms.
    1. Extrayez le fichier.
