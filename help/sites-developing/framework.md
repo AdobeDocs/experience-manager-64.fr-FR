@@ -260,7 +260,7 @@ Vous trouverez, ci-après, la description des effets dans le référentiel lors 
 
 ## Migration des balises {#tags-migration}
 
-Les balises Experience Manager 6.4 et ultérieures sont stockées sous `/content/cq:tags`, qui étaient précédemment stockées sous `/etc/tags`. Cependant, dans les cas où l’Adobe Experience Manager a été mis à niveau à partir de la version précédente, les balises sont toujours présentes sous l’ancien emplacement `/etc/tags`. Dans les systèmes mis à niveau, les balises doivent être migrées sous `/content/cq:tags`.
+Les balises Experience Manager 6.4 et ultérieures sont stockées sous `/content/cq:tags`, qui étaient précédemment stockées sous `/etc/tags`. Cependant, dans les cas où Adobe Experience Manager a été mis à niveau à partir de la version précédente, les balises sont toujours présentes sous l’ancien emplacement `/etc/tags`. Dans les systèmes mis à niveau, les balises doivent être migrées sous `/content/cq:tags`.
 
 >[!NOTE]
 >
