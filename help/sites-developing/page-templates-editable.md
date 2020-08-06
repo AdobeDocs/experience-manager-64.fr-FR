@@ -34,7 +34,7 @@ Avec les modèles modifiables, les éléments qui constituent une page sont isol
 
 >[!NOTE]
 >
->AEM 6.4.5.0 ou version ultérieure est requis pour utiliser des modèles modifiables avec l’éditeur [](/help/sites-developing/spa-overview.md)d’applications monopages.
+>AEM version 6.4.5.0 ou ultérieure est requise pour utiliser des modèles modifiables avec l’éditeur [](/help/sites-developing/spa-overview.md)d’applications monopages.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Dans ce document, nous partons du principe que vous êtes déjà rompu à la cr�
 >[!NOTE]
 >
 >Le didacticiel suivant peut également être intéressant pour la configuration d’un modèle de page modifiable dans un nouveau projet :\
->[Prise en main des sites AEM Partie 2 - Création d’une page et d’un modèle de base](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>[Prise en main de AEM Sites Partie 2 - Création d&#39;une page et d&#39;un modèle de base](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Création d’un modèle {#creating-a-new-template}
 
@@ -185,7 +185,7 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 
 ### Utilisation de CRXDE Lite {#using-crxde-lite}
 
-1. Un nouveau dossier (sous /conf) peut être créé pour votre instance par programmation ou avec CRXDE Lite.
+1. Un nouveau dossier (sous /conf) peut être créé pour votre instance par programmation ou avec un CRXDE Lite.
 
    La structure ci-dessous doit être utilisée :
 
@@ -202,7 +202,7 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 
    `<your-folder-name> [sling:Folder]`
 
-   Nom (name) : `jcr:title`
+   Nom : `jcr:title`
 
    * Type : `String`
    * Valeur : titre (du dossier) que vous souhaitez afficher dans la console **Modèles**.
@@ -252,7 +252,7 @@ Le tableau suivant récapitule les autorisations nécessaires pour la modificati
 <table> 
  <tbody> 
   <tr> 
-   <th>Chemin  </th> 
+   <th>Chemin   </th> 
    <th>Rôle/Groupe</th> 
    <th>Autorisations<br /> </th> 
    <th>Description</th> 
@@ -312,7 +312,7 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
 <table> 
  <tbody> 
   <tr> 
-   <th>Chemin  </th> 
+   <th>Chemin   </th> 
    <th>Rôle/Groupe</th> 
    <th>Autorisations<br /> </th> 
    <th>Description</th> 
@@ -497,11 +497,11 @@ Les éléments principaux sont les suivants :
 
 Ce nœud contient des propriétés pour le modèle :
 
-* **Name** (Nom) : `jcr:title`
+* **Nom** : `jcr:title`
 
-* **Name** (Nom) : `status`
+* **Nom** : `status`
 
-   * **Type**: `String`
+   * **Type** : `String`
    * **Valeur**: `draft`, `enabled` ou `disabled`
 
 ### Structure {#structure}
@@ -536,7 +536,7 @@ When [editing a template you can define the layout](/help/sites-authoring/templa
 
 Les stratégies de contenu (ou de conception) définissent les propriétés de conception d’un composant. Par exemple, les composants disponibles ou les dimensions minimales/maximales. Elles s’appliquent au modèle (et aux pages créées avec le modèle). Les stratégies de contenu peuvent être créées et sélectionnées dans l’éditeur de modèles.
 
-* La propriété `cq:policy`, sur le `root` noeud
+* The property `cq:policy`, on the `root` node
 
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 
@@ -581,7 +581,7 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
 
          * Nom : status
          * Type : Chaîne
-         * Valeur: `enabled`
+         * Valeur : `enabled`
 
 1. **Modèles autorisés**
 
