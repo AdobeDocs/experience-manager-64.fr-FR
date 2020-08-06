@@ -1,8 +1,8 @@
 ---
-title: Application des paramètres d’image prédéfinis de média dynamique
-seo-title: Application des paramètres d’image prédéfinis de média dynamique
-description: Découvrez comment appliquer des paramètres d’image prédéfinis dans Contenu multimédia dynamique
-seo-description: Découvrez comment appliquer des paramètres d’image prédéfinis dans Contenu multimédia dynamique
+title: Application des paramètres d’image prédéfinis de Contenu multimédia dynamique
+seo-title: Application des paramètres d’image prédéfinis de Contenu multimédia dynamique
+description: Découvrez comment appliquer des paramètres d’image prédéfinis Dynamic Media
+seo-description: Découvrez comment appliquer des paramètres d’image prédéfinis Dynamic Media
 uuid: 8bafcbd0-6df0-4d5b-b2f7-116ddb4ec060
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 90%
 
 ---
 
@@ -25,20 +28,20 @@ Cette section décrit comment utiliser les paramètres d’image prédéfinis. [
 
 >[!NOTE]
 >
->L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis et utilise des informations à la dernière milliseconde de diffusion pour réduire davantage encore la taille du fichier d’image en fonction de la vitesse de connexion du réseau et du navigateur. Voir [Imagerie numérique](imaging-faq.md) pour plus d’informations.
+>L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis et utilise des informations à la dernière milliseconde de la diffusion pour réduire davantage encore la taille du fichier d’image en fonction de la vitesse de connexion du réseau et du navigateur. Voir [Imagerie numérique](imaging-faq.md) pour plus d’informations.
 
-Vous pouvez appliquer un paramètre d&#39;image prédéfini à une image lorsque vous la prévisualisez.
+Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque vous la prévisualisez.
 
 **Pour appliquer les paramètres d’image prédéfinis** Contenu multimédia dynamique :
 
-1. Ouvrez le fichier et, dans le rail de gauche, appuyez sur le menu déroulant, puis sur **[!UICONTROL Rendus]**.
+1. Ouvrez la ressource et, dans le rail de gauche, sélectionnez dans le menu déroulant l’option **[!UICONTROL Rendus]**.
 
    >[!NOTE]
    >
    >* Les rendus statiques apparaissent dans la moitié supérieure du volet. Les rendus dynamiques apparaissent dans la moitié inférieure. Avec des rendus dynamiques uniquement, vous pouvez utiliser l’URL pour afficher l’image. Le bouton **[!UICONTROL URL]** apparaît uniquement lorsque vous sélectionnez un rendu dynamique. Le bouton **[!UICONTROL RESS]** ne s’affiche que lorsque vous sélectionnez un paramètre d’image prédéfini réactif.
       >
       >
-   * Le système affiche plusieurs rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** dans l’affichage des détails d’une ressource. Vous pouvez augmenter le nombre de paramètres prédéfinis affichés. Voir [Augmentation du nombre de paramètres d’image prédéfinis affichés](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+   * Le système affiche plusieurs rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** dans l’affichage des détails d’une ressource. Vous pouvez augmenter le nombre de paramètres prédéfinis visibles. Voir [Augmentation du nombre de paramètres d’image prédéfinis affichés](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
@@ -46,10 +49,11 @@ Vous pouvez appliquer un paramètre d&#39;image prédéfini à une image lorsque
 1. Procédez de l’une des manières suivantes :
 
    * Sélectionnez un rendu dynamique pour afficher un aperçu du paramètre d’image prédéfini.
-   * Tap **[!UICONTROL URL]**, **[!UICONTROL Embed]**, or **[!UICONTROL RESS]** to display the pop-up.
+   * Appuyez sur **[!UICONTROL URL]**, **[!UICONTROL Incorporer]** ou **[!UICONTROL RESS]** pour afficher la fenêtre contextuelle.
+
    >[!NOTE]
    >
    >Si la ressource *et* le paramètre d’image prédéfini ne sont pas encore publiés, le bouton **[!UICONTROL URL]** (ou les boutons **[!UICONTROL URL]** et **[!UICONTROL RESS]**, le cas échéant) n’est pas disponible.
    >
-   >Notez également que les paramètres prédéfinis de l’image sont automatiquement publiés sur un serveur Dynamic Media S7.
+   >Notez également que les paramètres prédéfinis de l’image sont automatiquement publiés sur un serveur Dynamic Media S7.
 
