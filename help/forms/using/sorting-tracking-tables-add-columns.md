@@ -10,20 +10,23 @@ topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 79%
 
 ---
 
 
 # Personnalisation des tableaux de suivi{#customize-tracking-tables}
 
-L’onglet de suivi dans l’espace de travail AEM Forms permet d’afficher les détails des instances de processus dans lesquelles l’utilisateur connecté est impliqué. Afin de visualiser les tableaux de suivi, vous devez d’abord sélectionner le nom d’un processus dans le volet gauche pour afficher la liste de ses instances dans le volet central. Sélectionnez une instance de processus pour afficher un tableau des tâches générées par cette instance dans le volet droit. Par défaut, les colonnes du tableau affichent les attributs de tâche suivants (l’attribut correspondant dans le modèle de tâche est indiqué entre parenthèses) :
+L’onglet de suivi de l’espace de travail AEM Forms est utilisé pour afficher les détails des instances de processus dans lesquelles l’utilisateur connecté est impliqué. Afin de visualiser les tableaux de suivi, vous devez d’abord sélectionner le nom d’un processus dans le volet gauche pour afficher la liste de ses instances dans le volet central. Sélectionnez une instance de processus pour afficher un tableau des tâches générées par cette instance dans le volet droit. Par défaut, les colonnes du tableau affichent les attributs de tâche suivants (l’attribut correspondant dans le modèle de tâche est indiqué entre parenthèses) :
 
 * ID ( `taskId`)
 * Nom ( `stepName`)
 * Instructions ( `instructions`)
 * Action sélectionnée ( `selectedRoute`)
 * Heure de création ( `createTime`)
-* Heure d’achèvement ( `completeTime`)
+* Heure d&#39;achèvement ( `completeTime`)
 * Propriétaire ( `currentAssignment.queueOwner`)
 
 Les attributs restants dans le modèle de tâche disponibles à l’affichage dans le tableau de la tâche sont les suivants :
