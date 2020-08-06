@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 6a806727-28c5-430e-9a83-b43e0e9d9e1c
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 80%
 
 ---
 
@@ -26,7 +29,7 @@ Les deux composants présentent une fenêtre, comme illustré ci-dessous, pour s
 1. Créez une option Document d’enregistrement activée ou un formulaire adaptatif basé sur modèle de formulaire. Pour obtenir des informations détaillées, voir [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md).
 1. Drag-and-drop the **Scribble Signature** component from component browser to the adaptive form.
 1. Tap the **Configure** ![configure](assets/configure.png) icon. Vous ouvrez ainsi le navigateur de propriétés et affiche les propriétés du composant Signature tactile. Configurez les propriétés du composant Signature tactile.
-1. Faites glisser le composant Etape de signature de l’explorateur de composants vers le formulaire adaptatif.
+1. Faites glisser le composant Signature Step de l’explorateur de composants vers le formulaire adaptatif.
 
    >[!NOTE]
    >
@@ -45,6 +48,7 @@ Les deux composants présentent une fenêtre, comme illustré ci-dessous, pour s
    * **Message du modèle :** indiquez le message à afficher lorsque la signature PDF est chargée. Les services Adobe Sign mettent un certain temps à préparer et charger la signature PDF.
    * **Service de signature :** sélectionnez l’option **Signature tactile**.
    * **Classe CSS** : spécifiez la classe CSS de la bibliothèque client, le cas échéant. Il est recommandé d’utiliser des [thèmes](/help/forms/using/themes.md) et des [styles en ligne](/help/forms/using/inline-style-adaptive-forms.md) au lieu de la classe CSS.
+
    Appuyez sur l’icône Terminé ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications. La signature est configurée correctement.
 
    Désormais, lorsque vous remplissez un formulaire, une version PDF du formulaire adaptatif est affichée et les options pour signer le document PDF sont fournies. Pour plus d’informations, voir [Signature d’un formulaire adaptatif en utilisant la signature tactile](/help/forms/using/signing-forms-using-scribble.md#p-sign-an-adaptive-form-using-scribble-signature-p).
