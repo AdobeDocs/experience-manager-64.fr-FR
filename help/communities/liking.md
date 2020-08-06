@@ -1,8 +1,8 @@
 ---
-title: Utilisation des mentions J’aime
-seo-title: Utilisation des mentions J’aime
-description: Ajout et configuration du composant J’aime
-seo-description: Ajout et configuration du composant J’aime
+title: Utilisation de la fonction J’aime
+seo-title: Utilisation de la fonction J’aime
+description: Ajoute et configuration du composant J’aime
+seo-description: Ajoute et configuration du composant J’aime
 uuid: 12103ab7-1a1c-49cd-8dad-6c7508b4550e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 7%
 
 ---
 
 
-# Utilisation des mentions J’aime {#using-liking}
+# Utilisation de la fonction J’aime {#using-liking}
 
-Le `Liking`composant est un outil utile qui permet aux utilisateurs d’exprimer une opinion sur un élément de contenu particulier, tel qu’un commentaire dans un forum. Avec le `Liking`composant, les membres sélectionnent l’icône en forme de coeur pour indiquer une opinion positive.
+Le `Liking`composant est un outil utile qui permet aux utilisateurs d’exprimer une opinion sur un élément de contenu particulier, tel qu’un commentaire dans un forum. Avec le `Liking`composant, les membres sélectionnent l&#39;icône du coeur pour indiquer une opinion positive.
 
 ## Adding Liking to a Page {#adding-liking-to-a-page}
 
@@ -25,7 +28,7 @@ To add a `Liking` component to a page in author mode, use the component browser 
 
 * `Communities / Liking`
 
-et faites-le glisser sur une page, par exemple une position relative à la fonction que les utilisateurs peuvent aimer.
+et faites-le glisser sur une page, par exemple une position par rapport à la fonction que les utilisateurs peuvent aimer.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
@@ -33,7 +36,7 @@ When the [required client-side libraries](essentials-liking.md#essentials-for-cl
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
-## Configuration des mentions J’aime {#configuring-liking}
+## Configuration de la fonction J’aime {#configuring-liking}
 
 Select the placed `Liking` component to access and select the `Configure` icon which opens the edit dialog.
 
@@ -43,11 +46,17 @@ Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used t
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL Libellé]** de réponse positive (*Obligatoire*) Nom de propriété pour une réponse positive.
+* **[!UICONTROL Etiquette de réponse positive]**
+(
+*Obligatoire*) Nom de la propriété pour une réponse positive.
 
-* **[!UICONTROL Étiquette]** de réponse négative (*Obligatoire*) Nom de propriété pour une réponse négative.
+* **[!UICONTROL Etiquette de réponse négative]**
+(
+*Obligatoire*) Nom de la propriété pour une réponse négative.
 
-* **[!UICONTROL Nom]** du compte (*Obligatoire*) Nom de propriété interne identifiable pour cette instance d’un composant de vote.
+* **[!UICONTROL Nom Tally]**
+(
+*Obligatoire*) Nom de propriété interne identifiable pour cette instance d&#39;un composant de vote.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
@@ -57,7 +66,7 @@ Les membres peuvent changer de comportement à tout moment.
 
 ### Anonyme {#anonymous}
 
-Les mentions J’aime anonymes ne sont pas prises en charge. Les visiteurs du site doivent s&#39;inscrire (devenir membre) et se connecter pour participer à aimer.
+Les mentions &quot;J’aime&quot; anonymes ne sont pas prises en charge. Les visiteurs du site doivent s&#39;inscrire (devenir membre) et se connecter pour participer à aimer.
 
 ## Informations supplémentaires {#additional-information}
 
