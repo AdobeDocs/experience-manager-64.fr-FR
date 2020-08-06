@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '389'
+ht-degree: 63%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
 
 >[!CAUTION]
 >
->Cet article explique comment créer un site Web en fonction de l’interface utilisateur classique. Adobe vous recommande de tirer parti des technologies AEM les plus récentes pour vos sites web. Vous en trouverez une description détaillée dans l’article [Prise en main du développement d’AEM Sites](/help/sites-developing/getting-started.md).
+>Cet article explique comment créer un site Web basé sur l’interface utilisateur classique. Adobe vous recommande de tirer parti des technologies AEM les plus récentes pour vos sites web. Vous en trouverez une description détaillée dans l’article [Prise en main du développement d’AEM Sites](/help/sites-developing/getting-started.md).
 
 Vous devez créer une conception pour votre site web et dans AEM. Pour ce faire, vous allez utiliser le Designer.
 
@@ -49,7 +52,7 @@ Pour créer votre conception, vous aurez besoin des éléments suivants :
 
 **CSS** - Les feuilles de style en cascade définissent le format des zones spécifiques de vos pages.
 
-**Images** : images que vous utilisez pour des fonctions telles que les arrière-plans, les boutons.
+**Images** - Toutes les images utilisées pour des fonctions telles que les arrière-plans, les boutons.
 
 ### Points à prendre en compte lors de la conception de votre site web {#considerations-when-designing-your-website}
 
@@ -59,7 +62,7 @@ When developing a website, it is highly recommended to store images and CSS file
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
 ```
 
-L’exemple précédent offre plusieurs avantages :
+L&#39;exemple précédent offre plusieurs avantages :
 
 * Les composants peuvent avoir une apparence différente selon que chaque site utilise un chemin de conception différent.
 * Re-design of the website can be simply done by pointing the design path to a different node at the root of the site from `design/v1` to `design/v2.`
