@@ -28,7 +28,7 @@ La page Liste de processus répertorie les processus initiés par un utilisateur
 
    **Application :** Application à laquelle appartient le processus, telle que définie dans Workbench.
 
-   **État :** Actif signifie que le processus est celui qui est activé pour la version du processus. Inactif signifie que le processus est une ancienne version qui comporte toujours des instances de processus.
+   **État :** Principal signifie que le processus est celui qui est activé pour la version du processus. Inactif signifie que le processus est une ancienne version qui comporte toujours des instances de processus.
 
    **Date de création :** date et heure auxquelles le processus a été déployé.
 
@@ -197,7 +197,7 @@ La page Détails de l’opération affiche le résumé d’une opération dans u
 
    **Application :** Application à laquelle appartient le processus, telle que définie dans Workbench.
 
-   **État :** Actif signifie que le processus est celui qui est activé pour la version du processus. Inactif signifie que le processus est une ancienne version qui comporte toujours des instances de processus.
+   **État :** Principal signifie que le processus est celui qui est activé pour la version du processus. Inactif signifie que le processus est une ancienne version qui comporte toujours des instances de processus.
 
    **Date de création :** date et heure auxquelles le processus a été déployé.
 
