@@ -12,6 +12,9 @@ discoiquuid: ba8efc24-a34c-477b-8c6d-6e8f893eb999
 targetaudience: target-audience upgrader
 translation-type: tm+mt
 source-git-commit: 1f78ef33b33558187b0164864dc373e53d7f86ce
+workflow-type: tm+mt
+source-wordcount: '2226'
+ht-degree: 80%
 
 ---
 
@@ -27,14 +30,14 @@ En planifiant une mise à niveau, les parties suivantes de l’implémentation d
 
 ## Présentation {#overview}
 
-1. **Outil de détection des motifs** : exécutez l’outil de détection des motifs comme indiqué dans la planification de la mise à niveau et dans la description détaillée sur [cette page](/help/sites-deploying/pattern-detector.md) pour générer un rapport de détection des motifs contenant des informations plus détaillées sur les points à examiner, en plus des API/lots indisponibles dans la version cible d’AEM. Le rapport Détection des schémas doit vous indiquer les incompatibilités éventuelles dans votre code. S’il n’en existe aucune, votre déploiement est déjà compatible avec la version 6.4, vous pouvez tout de même choisir d’effectuer un nouveau développement pour utiliser la fonctionnalité 6.4, mais vous n’en avez pas besoin uniquement pour maintenir la compatibilité. Si des incompatibilités sont signalées, vous pouvez choisir a) Exécuter en mode de compatibilité et différer votre développement pour les nouvelles fonctionnalités 6.4 ou la compatibilité, b) Décider de développer après la mise à niveau, puis passer à l’étape 2. Please see please see [Backward Compatibility in AEM 6.4](/help/sites-deploying/backward-compatibility.md) for more details.
+1. **Outil de détection des motifs** : exécutez l’outil de détection des motifs comme indiqué dans la planification de la mise à niveau et dans la description détaillée sur [cette page](/help/sites-deploying/pattern-detector.md) pour générer un rapport de détection des motifs contenant des informations plus détaillées sur les points à examiner, en plus des API/lots indisponibles dans la version cible d’AEM. Le rapport Détection des schémas doit vous indiquer les incompatibilités éventuelles dans votre code. S’il n’en existe aucune, votre déploiement est déjà compatible avec la version 6.4, vous pouvez tout de même choisir d’effectuer un nouveau développement pour l’utilisation de la fonctionnalité 6.4, mais vous n’en avez pas besoin uniquement pour préserver la compatibilité. Si des incompatibilités ont été signalées, vous pouvez choisir a) Exécuter en mode de compatibilité et reporter votre développement pour les nouvelles fonctionnalités ou la compatibilité 6.4, b) Décider de développer après la mise à niveau et passer à l’étape 2. Please see please see [Backward Compatibility in AEM 6.4](/help/sites-deploying/backward-compatibility.md) for more details.
 
-1. **Développement de la base de code pour la version 6.4** - Créez une branche ou un référentiel dédié à la base de code pour la version Target. Utilisez les informations de la compatibilité avant la mise à niveau pour prévoir les zones de code à mettre à jour.
-1. **Compiler avec 6.4 Uber jar** - Mettez à jour les POM de base de code pour pointer vers 6.4 uber jar et compilez le code par rapport à cela.
-1. **Mettre à jour les personnalisations** d’AEM - Toutes les personnalisations ou extensions d’AEM doivent être mises à jour/validées pour fonctionner dans la version 6.4 et ajoutées à la base de code 6.4. Comprend des formulaires de recherche d’interface utilisateur, des personnalisations de ressources, tout élément utilisant /mnt/overlay
+1. **Développement de la base de code pour la version 6.4** - Créez une branche ou un référentiel dédié à la base de code pour la version de Cible. Utilisez les informations de la compatibilité avant la mise à niveau pour prévoir les zones de code à mettre à jour.
+1. **Compiler avec 6.4 Uber jar** - Mettre à jour les POM de base de code pour pointer vers 6.4 uber jar et compiler le code par rapport à cela.
+1. **Mettre à jour les personnalisations** AEM - Toute personnalisation ou extension à AEM doit être mise à jour/validée pour fonctionner dans la version 6.4 et ajoutée à la base de code 6.4. Comprend des formulaires de recherche d’interface utilisateur, des personnalisations de ressources, tout élément utilisant /mnt/overlay
 
-1. **Déploiement dans l’environnement** 6.4 : une instance propre d’AEM 6.4 (Auteur + Publication) doit être configurée dans un environnement de développement/AQ. La base de code à jour et un échantillon représentatif de contenu (de la production actuelle) doivent être déployés.
-1. **Validation d’assurance qualité et correction** de bogues : l’assurance qualité doit valider l’application sur les instances d’auteur et de publication de la version 6.4. Tous les bogues trouvés doivent être corrigés et validés dans la base de code 6.4. Répétez le cycle de développement autant de fois que nécessaire jusqu’à ce que tous les problèmes soient corrigés.
+1. **Déploiement vers l’Environnement** 6.4 - Une instance propre de l’AEM 6.4 (Auteur + Publier) doit être relevée dans un environnement Dev/QA. La base de code à jour et un échantillon représentatif de contenu (de la production actuelle) doivent être déployés.
+1. **Validation de l&#39;assurance qualité et correction** de bogues - L&#39;assurance qualité doit valider l&#39;application sur les instances d&#39;auteur et de publication de 6.4. Tous les bogues détectés doivent être corrigés et validés dans la base de code 6.4. Répétez le cycle de développement autant de fois que nécessaire jusqu’à ce que tous les problèmes soient corrigés.
 
 Avant d’effectuer une mise à niveau, vous devez disposer d’une base stable de code d’application qui a été complètement testée par rapport à la version cible d’AEM. En fonction des observations effectuées durant le test, il existe des façons d’optimiser le code personnalisé. Cela peut inclure la restructuration du code pour éviter de parcourir le référentiel, l’indexation personnalisée pour optimiser la recherche ou l’utilisation des nœuds non classés dans le JCR, entre autres.
 
@@ -85,7 +88,7 @@ La création de l’IU classique est toujours disponible dans AEM 6.4, mais ell
 
 >[!NOTE]
 >
->Pour vous aider à quitter l’interface utilisateur classique et à tirer parti des dernières technologies AEM, pensez à tirer parti des outils [de modernisation](/help/sites-developing/modernization-tools.md) AEM pour faciliter votre migration.
+>Pour vous aider à quitter l’interface utilisateur classique et à tirer parti des dernières technologies AEM, pensez à tirer parti des outils [de modernisation de l’](/help/sites-developing/modernization-tools.md) AEM pour faciliter votre migration.
 
 ## Alignement avec la structure de référentiel de la version 6.4 {#align-repository-structure}
 
@@ -190,7 +193,7 @@ Vous trouverez ci-dessous les domaines stratégiques de toute implémentation AE
    <td>Test de l’implémentation d’AEM et du code associé sur le niveau de publication<br /> via le dispatcher. Doit inclure des critères pour les mises à jour de la page et<br /> l’invalidation du cache.</td> 
   </tr> 
   <tr> 
-   <td>Création</td> 
+   <td>Création  </td> 
    <td>Test de votre implémentation d’AEM et du code associé sur le niveau d’auteur. Doit inclure la page, la création de composants et les boîtes de dialogue.</td> 
   </tr> 
   <tr> 
@@ -214,7 +217,7 @@ Vous trouverez ci-dessous les domaines stratégiques de toute implémentation AE
    <td>Toutes les extensions ou personnalisations de l’interface utilisateur d’AEM dans l’environnement de création. </td> 
   </tr> 
   <tr> 
-   <td>Workflows</td> 
+   <td>Workflows   </td> 
    <td>Fonctionnalités et workflows personnalisés et/ou prêts à l’emploi.</td> 
   </tr> 
   <tr> 
