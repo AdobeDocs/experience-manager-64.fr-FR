@@ -8,13 +8,16 @@ contentOwner: jsyal
 discoiquuid: c66b65af-443f-4fc2-b775-9f4e3c60285a
 translation-type: tm+mt
 source-git-commit: f5b45b2c8bfcf9d82ddc08b05b5fff22937fa9fd
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 49%
 
 ---
 
 
 # FAQ sur AEM{#aem-faqs}
 
-Suivez cette page pour obtenir des réponses à certains problèmes de dépannage et de configuration d’AEM.
+Suivez cette page pour obtenir des réponses à certains problèmes AEM de dépannage et de configuration.
 
 ## Sites {#sites}
 
@@ -46,7 +49,7 @@ If one requires the authors to manage projects as well, then the workaround is t
 Avant de créer un projet de traduction, créez une racine de langue et une copie de langue dans la racine.
 
 Par exemple :\
-Create a language root at `/content/geometrixx` with name as `fr_LU` (and title as French (Luxembourg)). Par la suite, créez une copie de langue de la page à partir du panneau de références et accédez à l’ `Create structure only` option `Create & Translate`. Enfin, créez un projet de traduction, puis ajoutez la copie de langue à la tâche de traduction.
+Create a language root at `/content/geometrixx` with name as `fr_LU` (and title as French (Luxembourg)). Par la suite, créez une copie de langue de la page à partir du panneau des références et accédez à l’ `Create structure only` option dans `Create & Translate`. Enfin, créez un projet de traduction, puis ajoutez la copie de langue à la tâche de traduction.
 
 Pour plus d’informations, reportez-vous aux ressources supplémentaires ci-dessous :
 
@@ -68,11 +71,11 @@ Pour activer SSL par défaut, voir [SSL par défaut](/help/sites-administering/s
 
 Content Services est basé sur les modèles Sling et les développeurs AEM doivent fournir un profil de modèle Sling pour chaque composant exporté.
 
-Pour comprendre comment consommer des services de contenu d’AEM depuis une application React, consultez le tutoriel [Prise en main des services de contenu AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html).
+Pour comprendre comment consommer des services de contenu d’AEM depuis une application React, consultez le tutoriel [Prise en main des services de contenu AEM](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/content-services-tutorial-use.html).
 
 Also, if the developers want to export a tree of components they can also implement the `ComponentExporter` and `ContainerExporter` interfaces as well as use the `ModelFactory` to iterate over the child components and return their model representation. Consultez les ressources ci-dessous :
 
-[1] Adobe- [Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
+[1] [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
 [2] [Apache Sling : Modèles Sling](https://sling.apache.org/documentation/bundles/models.html)
 
@@ -86,21 +89,21 @@ Refer to [Understanding Reasons to Upgrade AEM](https://helpx.adobe.com/experien
 
 ### Comment configurer une instance AEM pour utiliser le filtre PorterStem ? {#how-to-configure-an-aem-instance-to-use-the-porterstem-filter}
 
-Le filtre PorterStem applique l’algorithme de chiffrement de Porter pour l’anglais. Les résultats sont similaires à l&#39;utilisation de la Snowball Porter Stemmer avec l&#39;argument *language=&quot;English&quot;* . Mais cette tige est codée directement en Java et n&#39;est pas basée sur Snowball. Il n&#39;accepte pas une liste de mots protégés et ne convient qu&#39;au texte en anglais.
+Le filtre PorterStem applique l&#39;algorithme de recherche Porter pour l&#39;anglais. Les résultats sont similaires à l&#39;utilisation du Snowball Porter Stemmer avec l&#39;argument *language=&quot;English&quot;* . Mais ce tige est codé directement en Java et n&#39;est pas basé sur Snowball. Il n&#39;accepte pas une liste de mots protégés et n&#39;est approprié que pour le texte en anglais.
 
-Oak expose un ensemble d’éléments de configuration de l’analyseur lucene-fournit à utiliser dans AEM. Pour savoir comment utiliser les filtres, reportez-vous aux Analyseurs **Oak** Apache dans le guide [de mise en oeuvre de la recherche](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html)simple.
+Oak expose un ensemble d&#39;éléments de configuration de l&#39;analyseur lucene-fournit à utiliser dans AEM. Pour savoir comment utiliser les filtres, reportez-vous aux analyseurs **de chêne** Apache dans le guide [de mise en oeuvre de la recherche](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html)simple.
 
-### Comment procéder à une ré-indexation complète ? {#how-to-perform-a-full-re-indexing}
+### Comment procéder à une réindexation complète ? {#how-to-perform-a-full-re-indexing}
 
 La réindexation doit toujours être envisagée en tenant compte de son impact sur les performances globales d’AEM et être réalisée pendant les périodes de faible activité ou de maintenance.
 
-Reportez-vous aux [Bonnes pratiques pour les requêtes et l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md) pour comprendre les raisons de la réindexation.
+Consultez les [Bonnes pratiques relatives aux Requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md) pour comprendre les raisons de la réindexation.
 
 ### Prenons-nous en charge les bibliothèques JS minifiées dans l’importateur de conception ? {#do-we-support-minified-js-libs-in-design-importer}
 
-Vous devez modifier la propriété de configuration par défaut du processeur JS du gestionnaire de bibliothèques HTML d’Adobe Granite en ***min:gcc***. Pour importer le pack de conception avec succès, il est recommandé d’inclure des bibliothèques tierces préminifiées dans nos bibliothèques côté client.
+Vous devez modifier la propriété de configuration par défaut du processeur JS de l’Adobe Granite HTML Library Manager en ***min:gcc***. Pour importer le pack de conception avec succès, il est recommandé d’inclure des bibliothèques tierces préminifiées dans nos bibliothèques côté client.
 
-## Assets {#assets}
+## Ressources {#assets}
 
 ### Why the Assets workflow repeats itself while uploading MP4 files (for example, using drag-and-drop method)? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
 
@@ -135,7 +138,7 @@ To setup and configure Asset Insights for Experience Manager deployed via Adobe 
 
 ### How to customize admin consoles? {#how-to-customize-admin-consoles}
 
-AEM fournit divers mécanismes pour vous permettre de personnaliser les consoles et la fonctionnalité de création de page de votre instance de création.
+AEM fournit divers mécanismes permettant de personnaliser les consoles et les fonctionnalités de création de page de votre instance de création.
 To learn how to create a custom console and customize a default view for a console, refer to [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md).
 
 ### What is the difference between CoralUI 2 and CoralUI 3-based components? {#what-is-the-difference-between-coralui-and-coralui-based-components}
@@ -152,17 +155,17 @@ La mise en œuvre de recherche simple est le matériel du Summit Lab AEM Search 
 
 ### Si un client achète uniquement la licence Sites dans AEM, a-t-il toujours accès aux ressources ? {#if-a-customer-buys-only-sites-license-in-aem-do-they-still-have-access-to-assets}
 
-Non, le client ne peut pas accéder aux ressources (ou à tout autre élément que les sites). Bien que tous les composants d’Adobe Experience Manager (AEM) sur site soient inclus dans le fichier JAR, le client est autorisé à accéder uniquement aux composants du fichier JAR pour lesquels il détient une licence dans son contrat. S’ils souhaitent explorer d’autres composants, ils peuvent soit utiliser le programme d’évaluation AEM pendant 45 jours au maximum, soit signer une commande client de 0 € qui les autorise à évaluer (sans utilisation de production) des composants nommés, tels que Ressources.
+Non, le client ne peut pas accéder aux ressources (ou à tout autre élément que Sites). Même si tous les éléments Adobe Experience Manager (AEM) sur site sont inclus dans le JAR, le client n’est autorisé à accéder qu’aux composants du JAR pour lesquels il est titulaire d’une licence dans son contrat. S&#39;ils veulent explorer d&#39;autres composants, ils peuvent utiliser le programme d&#39;évaluation AEM pendant 45 jours au maximum ou signer une commande client de 0 € qui les autorise à évaluer (sans utilisation de production) des composants nommés tels que Actifs.
 
-Reportez-vous aux ressources suivantes pour en savoir plus sur le logiciel AEM On-premise et les services gérés Adobe :
+Consultez les ressources suivantes pour en savoir plus sur les logiciels AEM sur site et les services gérés Adobe :
 
-* [Adobe Experience Manager On-Premise Software](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+* [Logiciel Adobe Experience Manager sur site](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
 
-* [Services gérés Adobe Experience Manager](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+* [Adobe Experience Manager](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
 
-### Comment un client peut-il étendre les propriétés par défaut d’une page ou d’un fichier ? {#how-to-extend-default-properties-page-or-asset}
+### Comment un client peut-il étendre les propriétés par défaut d’une page ou d’une ressource ? {#how-to-extend-default-properties-page-or-asset}
 
-Pour en savoir plus sur l’extension des propriétés par défaut d’une page ou d’un fichier, consultez les ressources ci-dessous :
+Pour en savoir plus sur l’extension des propriétés par défaut d’une page ou d’une ressource, consultez les ressources ci-dessous :
 
 * [Schémas de métadonnées dans les ressources](/help/assets/metadata-schemas.md)
 * [Personnalisation des vues des propriétés de la page](/help/sites-developing/page-properties-views.md)
