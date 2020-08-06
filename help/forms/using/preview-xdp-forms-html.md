@@ -30,9 +30,9 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
 ### Configurer le service d&#39;authentification Apache Sling {#configure-apache-sling-authentication-service}
 
-1. Accéder à `https://[server]:[port]/system/console/configMgr` un AEM Forms s’exécutant sur OSGi ou
+1. Accéder à `https://[server]:[port]/system/console/configMgr` AEM Forms s’exécutant sur OSGi ou
 
-   `https://[server]:[port]/lc/system/console/configMgr` sur les AEM Forms exécutant JEE.
+   `https://[server]:[port]/lc/system/console/configMgr` sur AEM Forms s’exécutant sur JEE.
 
 1. Localisez et cliquez sur la boîte de configuration **Service d’authentification Apache Sling** pour l’ouvrir en mode d’édition.
 
@@ -46,6 +46,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
+
    >[!NOTE]
    >
    >N’effectuez pas de copier-coller de la valeur spécifiée dans le champ des conditions d’authentification requises, car ceci risquerait d’endommager les caractères spéciaux dans la valeur. Saisissez plutôt la valeur spécifiée dans le champ.
@@ -59,7 +60,7 @@ Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé 
 
 1. Connectez-vous à la console Web AEM en tant qu’administrateur. 
 
-   * L’URL des AEM Forms sur OSGi est `https://[server]:[port]/system/console/configMgr`
+   * L’URL de AEM Forms sur OSGi est `https://[server]:[port]/system/console/configMgr`
    * L’URL de AEM Forms on JEE est `https://[server]:[port]/lc/system/console/configMgr`
 
 1. Ouvrez les **[!UICONTROL configurations de Mobile Forms]** à des fins d’édition.
@@ -71,7 +72,7 @@ Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé 
 1. In the Options window, select **Server Options** page, provide the following details, and click **OK**.
 
    * **URL de serveur** : URL du serveur de AEM Forms.
-   * **Numéro de port HTTP** : port du serveur AEM. La valeur par défaut est 4502.  
+   * **Numéro de port HTTP** : port du serveur AEM. La valeur par défaut est 4502.   
    * **Contexte de la Prévisualisation HTML :** Chemin d’accès du profil pour le rendu des formulaires XFA. Les profils par défaut suivants permettent de prévisualisation du formulaire dans Designer. Cependant, vous pouvez également spécifier un chemin vers un profil personnalisé.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
@@ -80,6 +81,7 @@ Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé 
 
       * `/aem/forms` (AEM Forms on OSGi)
       * `/lc/forms` (AEM  Forms on JEE)
+
    **Remarque :***assurez-vous que le serveur AEM Forms est en cours d’exécution. The HTML preview connects to the CRX server to* generate *a preview.*
 
    ![Options d’AEM Forms Designer ](assets/server_options.png)
