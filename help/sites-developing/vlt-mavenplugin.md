@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 943de371-0149-4307-be3a-b11c590b3451
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3281'
+ht-degree: 81%
 
 ---
 
@@ -89,10 +92,10 @@ Les paramètres contenus dans le tableau ci-après sont communs à tous les goal
    <td>Tous les goals, à l’exception de package.</td> 
   </tr> 
   <tr> 
-   <td>nom est</td> 
+   <td>name</td> 
    <td>Chaîne</td> 
-   <td>build : Oui<br /> installation : Non<br /> rm : Oui</td> 
-   <td>Créer : Aucune valeur par défaut.<br /> install : Valeur de la propriété artifactId du projet expert.</td> 
+   <td>build: Oui<br /> installer : Pas<br /> de rm : Oui</td> 
+   <td>Créer : Aucune valeur par défaut.<br /> install: Valeur de la propriété artifactId du projet Maven.</td> 
    <td>Nom du package sur lequel exécuter une action.</td> 
    <td>Tous les goals, à l’exception de Is.</td> 
   </tr> 
@@ -157,7 +160,7 @@ Les paramètres contenus dans le tableau ci-après sont communs à tous les goal
 
 ### build {#build}
 
-Crée un package de contenu déjà défini sur une instance AEM.
+Crée un package de contenu qui est déjà défini sur une instance AEM.
 
 >[!NOTE]
 >
@@ -169,7 +172,7 @@ Tous les paramètres du goal build sont décrits dans la section [Paramètres c
 
 #### Exemple {#example}
 
-L’exemple suivant crée le package workflow-mbean installé sur l’instance AEM avec l’adresse IP 10.36.79.223. L’objectif est exécuté à l’aide de la commande suivante :
+L&#39;exemple suivant crée le package workflow-mbean installé sur l&#39;instance AEM avec l&#39;adresse IP 10.36.79.223. L&#39;objectif est exécuté à l&#39;aide de la commande suivante :
 
 ```shell
 mvn content-package:build
@@ -357,7 +360,7 @@ All parameters of the ls goal are described in the [Common Parameters](#common-p
 
 #### Exemple {#example-2}
 
-L’exemple suivant répertorie les packages installés sur l’instance AEM avec l’adresse IP 10.36.79.223. L’objectif est exécuté à l’aide de la commande suivante :
+L&#39;exemple suivant liste les packages installés sur l&#39;instance AEM avec l&#39;adresse IP 10.36.79.223. L&#39;objectif est exécuté à l&#39;aide de la commande suivante :
 
 ```shell
 mvn content-package:ls
@@ -398,7 +401,7 @@ All parameters of the rm goal are described in the [Common Parameters](#common-p
 
 #### Exemple {#example-3}
 
-L’exemple suivant supprime le package workfow-mbean installé sur l’instance AEM avec l’adresse IP 10.36.79.223. L’objectif est exécuté à l’aide de la commande suivante :
+L&#39;exemple suivant supprime le package workfow-mbean installé sur l&#39;instance AEM avec l&#39;adresse IP 10.36.79.223. L&#39;objectif est exécuté à l&#39;aide de la commande suivante :
 
 ```shell
 mvn content-package:rm
@@ -440,7 +443,7 @@ All parameters of the uninstall goal are described in the [Common Parameters](#c
 
 #### Exemple {#example-4}
 
-L’exemple suivant désinstalle le package workflow-mbean installé sur l’instance AEM avec l’adresse IP 10.36.79.223. L’objectif est exécuté à l’aide de la commande suivante :
+L&#39;exemple suivant désinstalle le package workflow-mbean installé sur l&#39;instance AEM avec l&#39;adresse IP 10.36.79.223. L&#39;objectif est exécuté à l&#39;aide de la commande suivante :
 
 ```shell
 mvn content-package:uninstall
@@ -530,7 +533,7 @@ In addition to the following parameters, see the description of the `name` param
    <td>booléen</td> 
    <td>Oui</td> 
    <td>false</td> 
-   <td>La valeur true provoque l’échec de la génération lorsqu’un artefact incorporé est introuvable dans les dépendances du projet. Une valeur incorrecte entraîne l’ignorance de l’erreur par la génération.</td> 
+   <td>Si la valeur true est affectée, la génération échoue lorsqu’un artefact incorporé n’est pas détecté dans les dépendances du projet. Si la valeur est désactivée, la compilation ignore l’erreur.</td> 
   </tr> 
   <tr> 
    <td>filterSource</td> 
@@ -554,7 +557,7 @@ In addition to the following parameters, see the description of the `name` param
    <td>Nom du fichier ZIP du package généré sans l’extension de fichier .zip.</td> 
   </tr> 
   <tr> 
-   <td>group</td> 
+   <td>groupe</td> 
    <td>java.lang.String</td> 
    <td>Oui</td> 
    <td>Paramètre groupID défini dans le projet Maven.</td> 
@@ -588,16 +591,16 @@ In addition to the following parameters, see the description of the `name` param
    <td></td> 
    <td>Autres propriétés que vous pouvez définir dans le fichier properties.xml. Ces propriétés ne peuvent pas remplacer les propriétés prédéfinies suivantes : 
     <ul> 
-     <li>group : Utilisez le paramètre de groupe à définir</li> 
-     <li>name : Utilisez le paramètre name pour définir</li> 
+     <li>group: Utiliser le paramètre de groupe à définir</li> 
+     <li>name: Utiliser le paramètre name pour définir</li> 
      <li>version : Utiliser le paramètre de version à définir</li> 
      <li>description : Défini à partir de la description du projet</li> 
      <li>groupId : groupid du descripteur de projet Maven.</li> 
      <li>artifactId : artifactId du descripteur de projet Maven.</li> 
      <li>dépendances : Utiliser le paramètre de dépendances pour définir</li> 
      <li>createdBy : Valeur de la propriété système user.name</li> 
-     <li>créé : Heure système actuelle</li> 
-     <li>requireRoot : Utiliser le paramètre requireRoot pour définir</li> 
+     <li>created : Heure système actuelle</li> 
+     <li>requireRoot : Utiliser le paramètre requireRoot à définir</li> 
      <li>packagePath : Généré automatiquement à partir du nom du groupe et du package</li> 
     </ul> </td> 
   </tr> 
@@ -657,7 +660,7 @@ L’exemple de filtre suivant montre la structure XML à utiliser :
 L’élément `mode` définit l’impact de l’importation du package sur le contenu du référentiel. Les valeurs suivantes peuvent être utilisées :
 
 * **Fusionner** : le contenu du package ne se trouvant pas encore dans le référentiel est ajouté. Le contenu se trouvant dans le package et le référentiel reste inchangé. Aucun contenu n’est supprimé du référentiel.
-* **** Remplacer : Le contenu du package qui ne se trouve pas dans le référentiel est ajouté au référentiel. Le contenu du référentiel est remplacé par le contenu correspondant du package. Le contenu est supprimé du référentiel lorsqu’il n’existe pas dans le package.
+* **Remplacer :** Le contenu du package qui ne se trouve pas dans le référentiel est ajouté au référentiel. Le contenu du référentiel est remplacé par le contenu correspondant du package. Le contenu est supprimé du référentiel lorsqu’il n’existe pas dans le package.
 * **Mettre à jour** : le contenu du package ne se trouvant pas dans le référentiel y est ajouté. Le contenu du référentiel est remplacé par le contenu correspondant du package. Le contenu existant est supprimé du référentiel.
 
 Lorsque le filtre ne contient pas d’élément `mode`, la valeur `replace` par défaut est utilisée.
@@ -885,7 +888,7 @@ Le code POM ci-après ajoute uniquement une image miniature au package. L’imag
 
 ## Using Archetypes To Generate AEM Projects {#using-archetypes-to-generate-aem-projects}
 
-Plusieurs archétypes Maven sont disponibles pour la génération de projets AEM. Utilisez l’archetype qui correspond à vos objectifs de développement :
+Plusieurs archétypes Maven sont disponibles pour générer des projets AEM. Utilisez l’archetype qui correspond à vos objectifs de développement :
 
 * A content package that installs resources for a AEM application: [simple-content-package-archetype](#simple-content-package-archetype)
 * Un module de contenu qui comporte des artifacts tiers : [simple-content-package-with-embedded-archetype](#simple-content-package-with-embedded-archetype).
@@ -893,7 +896,7 @@ Plusieurs archétypes Maven sont disponibles pour la génération de projets AEM
 
 >[!NOTE]
 >
->Le projet Apache Sling offre également des archétypes utiles dans le développement d’AEM. These are documented at [https://sling.apache.org/site/maven-archetypes.html](https://sling.apache.org/documentation/development/maven-archetypes.html).
+>Le projet Apache Sling offre également des archétypes utiles pour le développement AEM. These are documented at [https://sling.apache.org/site/maven-archetypes.html](https://sling.apache.org/documentation/development/maven-archetypes.html).
 
 Chaque archetype génère les éléments suivants :
 
@@ -913,7 +916,7 @@ Le module externe d’archetype Maven utilise le mode interactif du shell ou de 
 
 **Fichiers POM**
 
-Les fichiers POM générés comprennent des commandes de compilation de code, de création de lots et de déploiement vers AEM dans des packages. The `groupID`, `artifactId`, `version`, and `name` properties of the Maven project are automatically populated using the values that you provide to the Maven `archetype:generate` interactive prompt.
+Les fichiers POM générés comprennent des commandes permettant de compiler du code, de créer des lots et de les déployer vers des AEM dans des packages. The `groupID`, `artifactId`, `version`, and `name` properties of the Maven project are automatically populated using the values that you provide to the Maven `archetype:generate` interactive prompt.
 
 Vous pouvez modifier les valeurs par défaut suivantes dans le fichier pom.xml généré :
 
@@ -927,7 +930,7 @@ Vous pouvez modifier les valeurs par défaut suivantes dans le fichier pom.xml g
 
 1. Dans une fenêtre shell ou une invite de commandes, saisissez la commande `archetype:generate` Maven. Lorsque vous y êtes invité, fournissez les valeurs des paramètres restants.
 
-   Pour plus d&#39;informations sur chaque paramètre, reportez-vous à la section correspondant au type d&#39;archétype utilisé.
+   Pour plus d&#39;informations sur chaque paramètre, reportez-vous à la section relative à l&#39;archétype que vous utilisez.
 
 1. Utilisez un éditeur de texte pour ouvrir le fichier pom.xml et modifier les valeurs par défaut selon vos besoins.
 1. Remplissez les dossiers générés avec des ressources.
@@ -935,7 +938,7 @@ Vous pouvez modifier les valeurs par défaut suivantes dans le fichier pom.xml g
 
 ### simple-content-package-archetype {#simple-content-package-archetype}
 
-Crée un projet expert qui permet d’installer des ressources pour une application AEM simple. The folder structure is that used below the `/apps` folder of the AEM repository. Le POM définit les commandes permettant de compresser les ressources que vous importez dans les dossiers et d’installer les packages sur l’instance AEM.
+Crée un projet maven adapté à l’installation de ressources pour une application AEM simple. The folder structure is that used below the `/apps` folder of the AEM repository. Le POM définit les commandes permettant d’empaqueter les ressources que vous importez dans les dossiers et d’installer les packages sur l’instance AEM.
 
 **Propriétés de lot archetype :**
 
@@ -1055,7 +1058,7 @@ Le dossier `bundle` contient la structure des dossiers qui stocke les fichiers s
 * artifactID: `${artifactID}-bundle`.
 * Bundle-SymbolicName: `${groupId}.${artifactId}-bundle`.
 
-`${artifactID}` et `${groupId}` sont les valeurs que vous fournissez pour ces paramètres lors de l’exécution des archétypes.
+`${artifactID}` et `${groupId}` sont les valeurs que vous fournissez pour ces paramètres lors de l&#39;exécution des archétypes.
 
 The `content` folder contains the resources that are installed to the AEM instance. The value of artifactID is `${artifactID}multimodule-bundle`.
 
