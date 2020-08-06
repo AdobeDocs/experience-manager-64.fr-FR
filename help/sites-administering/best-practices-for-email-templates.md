@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
 source-git-commit: 8e6eaa5053bb94fa33e027594bdc2e30ad16d62e
+workflow-type: tm+mt
+source-wordcount: '1054'
+ht-degree: 46%
 
 ---
 
@@ -51,30 +54,30 @@ Assurez-vous qu’il se trouve sous un gabarit :
   </tr> 
   <tr> 
    <td><p>Spécifiez le type de document pour assurer un rendu cohérent.</p> <p>Ajouter DOCTYPE au début (HTML ou XHTML)</p> </td> 
-   <td><p>Est configurable en modifiant la propriété <i>cq:doctype</i> dans<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>La valeur par défaut est "XHTML" :</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 transitionnel//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Peut être remplacé par "HTML_5" :</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td> 
+   <td><p>Est configurable en modifiant la propriété <i>cq:doctype</i> dans<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>La valeur par défaut est "XHTML" :</p> <p>&lt; ! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 transitionnel//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Peut être remplacé par "HTML_5" :</p> <p>&lt; ! DOCTYPE HTML&gt;</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Spécifiez la définition des caractères pour garantir le rendu correct des caractères spéciaux.</p> <p>Ajoutez la déclaration CHARSET (ex. : iso-8859-15, UTF-8) à &lt;head&gt;.</p> </td> 
+   <td><p>Spécifiez la définition des caractères pour garantir le rendu correct des caractères spéciaux.</p> <p>Ajouter la déclaration CHARSET (par exemple iso-8859-15, UTF-8) à &lt;head&gt;</p> </td> 
    <td><p>Est défini sur UTF-8.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Codez toute la structure à l’aide de l’élément &lt;table&gt;. Pour des mises en page plus compliquées, vous devez imbriquer les tableaux pour créer des structures complexes.</p> <p>Le courrier électronique devrait avoir l'air bien, même sans css.</p> </td> 
-   <td><p>Les tableaux sont utilisés dans tout le modèle pour structurer le contenu. Actuellement, il est possible d’utiliser un maximum de quatre tableaux imbriqués (1 tableau de base + 3 niveaux d’imbrication)</p> <p>Les balises &lt;div&gt; ne sont utilisées qu’en mode création pour garantir une modification appropriée des composants.</p> </td> 
+   <td><p>Codez toute la structure à l’aide de l’élément &lt;table&gt;. Pour des mises en page plus compliquées, vous devez imbriquer les tableaux pour créer des structures complexes.</p> <p>Le courrier électronique devrait être de bonne qualité, même sans css.</p> </td> 
+   <td><p>Les tableaux sont utilisés dans tout le modèle pour structurer le contenu. Actuellement, il est possible d’utiliser un maximum de quatre tableaux imbriqués (1 tableau de base + 3 niveaux d’imbrication)</p> <p>Les balises &lt;div&gt; ne sont utilisées qu'en mode création pour assurer la modification correcte des composants.</p> </td> 
   </tr> 
   <tr> 
    <td>Utilisez les attributs d’élément (tels que le remplissage de la cellule, la valeur et la largeur) pour définir les dimensions du tableau. Ceci force une structure boîte-modèle.</td> 
-   <td><p>Tous les tableaux contiennent les attributs nécessaires, tels que <i>bordure</i>, <i>remplissage</i>cellulaire, espacement <i>entre les cellules et</i> <i>largeur.</i></p> <p>To harmonize element positioning inside tables, all table cells have the attribute <i>valign="top"</i> being set.</p> </td> 
+   <td><p>Tous les tableaux contiennent les attributs nécessaires tels que <i>bordure</i>, <i>remplissage</i>de cellule, espacement <i></i> entre les cellules et <i>largeur.</i></p> <p>To harmonize element positioning inside tables, all table cells have the attribute <i>valign="top"</i> being set.</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Tenez compte, si possible, de la convivialité mobile. Utilisez les requêtes multimédias pour augmenter la taille du texte sur les petits écrans et fournir des zones actives de la taille d’une vignette pour les liens.</p> <p>Rendez un courrier électronique interactif si la conception l’autorise.</p> </td> 
+   <td><p>Si possible, tenez compte de la convivialité des dispositifs portables. Utilisez les requêtes multimédias pour augmenter la taille du texte sur les petits écrans et fournir des zones actives de la taille d’une vignette pour les liens.</p> <p>Rendez un courrier électronique interactif si la conception l’autorise.</p> </td> 
    <td>Dans la mesure où les styles CSS sont utilisés pour illustrer la conception de démonstration, les requêtes multimédias le sont pour proposer une version conviviale pour les appareils mobiles.</td> 
   </tr> 
   <tr> 
-   <td>Le format CSS intégré est préférable à la mise en page de toutes les feuilles de style CSS au début.</td> 
-   <td><p>Pour mieux démontrer la structure HTML sous-jacente et utiliser la possibilité de personnaliser la structure de newsletter, seules certaines définitions CSS ont été intégrées.</p> <p>Les styles de base et les variations de modèle ont été extraits dans un bloc de style dans le &lt;head&gt; de la page. À l’envoi final de la newsletter, ces définitions CSS doivent être intégrées dans la structure HTML. Un mécanisme d’intégration automatique est prévu, mais n’est actuellement pas disponible.</p> </td> 
+   <td>Il est préférable d’insérer une page CSS en ligne plutôt que de placer toutes les pages CSS au début.</td> 
+   <td><p>Pour mieux démontrer la structure HTML sous-jacente et utiliser la possibilité de personnaliser la structure de newsletter, seules certaines définitions CSS ont été intégrées.</p> <p>Les styles de base et les variations de modèle ont été extraits dans un bloc de style dans l'&lt;head&gt; de la page. À l’envoi final de la newsletter, ces définitions CSS doivent être intégrées dans la structure HTML. Un mécanisme d’intégration automatique est prévu, mais n’est actuellement pas disponible.</p> </td> 
   </tr> 
   <tr> 
-   <td>Restez simple avec votre CSS. Évitez les déclarations de style composées, les formes courtes de code, les propriétés de mise en page CSS, les sélecteurs complexes et les pseudo-éléments.</td> 
+   <td>Restez simple avec votre page CSS. Évitez les déclarations de style composées, les formes courtes de code, les propriétés de mise en page CSS, les sélecteurs complexes et les pseudo-éléments.</td> 
    <td>Dans la mesure où les styles CSS sont utilisés pour illustrer la conception de démonstration, les recommandations CSS sont observées.</td> 
   </tr> 
   <tr> 
@@ -88,11 +91,11 @@ Assurez-vous qu’il se trouve sous un gabarit :
 
 /libs/mcm/campaign/components/image
 
-| **Meilleure pratique** | **Mise en œuvre** |
+| **Bonne pratique** | **Mise en œuvre** |
 |---|---|
-| Ajout d’attributs *alt* aux images | L’attribut *alt* a été défini comme obligatoire pour le composant d’image. |
+| Ajouter des attributs *alt* aux images | L’attribut *alt* a été défini comme obligatoire pour le composant d’image. |
 | Utiliser *jpg* au lieu du format *png* pour les images | Les images seront toujours diffusées au format JPG par le composant d’image. |
-| Utilisez `<img>` un élément au lieu des images d’arrière-plan dans un tableau. | Aucune donnée d’image d’arrière-plan n’est utilisée dans les modèles. |
+| Utilisez l’ `<img>` élément au lieu des images d’arrière-plan dans un tableau. | Aucune donnée d’image d’arrière-plan n’est utilisée dans les modèles. |
 | Ajoutez l’attribut style=&quot;bloc d’affichage&quot; sur les images. Permet d’obtenir un affichage correct dans Gmail. | Toutes les images contiennent par défaut l’attribut *style=&quot;bloc d’affichage&quot;* . |
 
 ## Texte et liens {#text-and-links}
@@ -102,15 +105,15 @@ Assurez-vous qu’il se trouve sous un gabarit :
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Meilleure pratique</strong></td> 
+   <td><strong>Bonne pratique</strong></td> 
    <td><strong>Mise en œuvre</strong></td> 
   </tr> 
   <tr> 
    <td>Utilisez html &lt;font&gt; au lieu de style dans CSS (font-family)</td> 
-   <td>RichTextEditor (par exemple dans le composant textimage) prend désormais en charge le choix et l’application de familles de polices et de tailles de police aux textes sélectionnés. Ils seront rendus sous forme de balises &lt;font&gt;.</td> 
+   <td>RichTextEditor (par exemple dans le composant textimage) prend désormais en charge le choix et l’application de familles de polices et de tailles de police à des textes sélectionnés. Ils seront rendus sous la forme de balises &lt;font&gt;.</td> 
   </tr> 
   <tr> 
-   <td>Utilisez des polices de base multiplateformes, telles que <i>Arial, Verdana, Georgia</i> et <i>Times New Roman</i>.</td> 
+   <td>Utilisez des polices de base multiplateformes telles que <i>Arial, Verdana, Georgia</i> et <i>Times New Roman</i>.</td> 
    <td><p>Dépend de la conception du bulletin d’information.</p> <p>Pour la conception de la démo, la police "Helvetica" est utilisée, mais elle revient à la police générique sans-serif, si elle n'est pas présente.</p> </td> 
   </tr> 
  </tbody> 
@@ -118,11 +121,11 @@ Assurez-vous qu’il se trouve sous un gabarit :
 
 ## Générique {#generic}
 
-| **Meilleure pratique** | **Mise en œuvre** |
+| **Bonne pratique** | **Mise en œuvre** |
 |---|---|
 | Utilisez le validateur W3C pour corriger le code HTML. Assurez-vous que toutes les balises ouvertes sont correctement fermées. | Le code a été validé. For XHTML transitional Doctype only the missing xmlns attribute for the `<html>` element is missing. |
-| Ne vous embêtez pas avec JavaScript ou Flash : ces technologies ne sont en grande partie pas prises en charge par les clients du courrier électronique. | Ni JavaScript ni Flash ne sont utilisés dans le modèle de newsletter. |
-| Ajoutez une version en texte brut pour l’envoi en plusieurs parties. | Un nouveau widget a été intégré aux propriétés de la page pour extraire facilement une version en texte brut du contenu de la page. Ceci peut être utilisé comme point de départ pour la version en texte brut finale. |
+| Ne vous embêtez pas à JavaScript ou au Flash : ces technologies ne sont généralement pas prises en charge par les clients de messagerie. | Ni JavaScript ni Flash ne sont utilisés dans le modèle de newsletter. |
+| Ajoutez une version en texte brut pour l’envoi en plusieurs parties. | Un nouveau widget a été créé dans les propriétés de la page pour extraire facilement une version en texte brut du contenu de la page. Ceci peut être utilisé comme point de départ pour la version en texte brut finale. |
 
 ## Modèles et exemples de newsletter de campagne {#campaign-newsletter-templates-and-examples}
 
