@@ -1,8 +1,8 @@
 ---
 title: Plan directeur d’applications sur une seule page (SPA)
 seo-title: Plan directeur d’applications sur une seule page (SPA)
-description: Ce document décrit le contrat général et indépendant de la structure que toute structure d’application d’une seule page doit respecter afin de mettre en oeuvre des composants d’application d’une seule page modifiables dans AEM.
-seo-description: Ce document décrit le contrat général et indépendant de la structure que toute structure d’application d’une seule page doit respecter afin de mettre en oeuvre des composants d’application d’une seule page modifiables dans AEM.
+description: Ce document décrit le contrat général et indépendant du cadre que tout cadre d’application d’une seule page doit respecter pour mettre en oeuvre des composants modifiables d’une application d’une seule page dans AEM.
+seo-description: Ce document décrit le contrat général et indépendant du cadre que tout cadre d’application d’une seule page doit respecter pour mettre en oeuvre des composants modifiables d’une application d’une seule page dans AEM.
 uuid: 41a5f0f5-bd84-4e56-a368-a14c73366774
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
@@ -19,29 +19,29 @@ ht-degree: 14%
 
 # Plan directeur d’applications sur une seule page (SPA){#spa-blueprint}
 
-Pour permettre à l’auteur d’utiliser l’éditeur d’applications monopages AEM de modifier le contenu d’une application monopages, les exigences que l’application doit respecter sont décrites dans ce document.
+Pour permettre à l’auteur d’utiliser l’éditeur d’applications monopages AEM pour modifier le contenu d’une application monopages, les exigences que l’application doit respecter sont décrites dans ce document.
 
 >[!NOTE]
 >
->La fonctionnalité Editeur d’application monopage (SPA) requiert AEM 6.4 Service Pack 2 ou version ultérieure.
+>La fonctionnalité Editeur d’application monopage (SPA) nécessite AEM Service Pack 2 6.4 ou version ultérieure.
 >
 >L’éditeur d’applications monopages est la solution recommandée pour les projets qui nécessitent un rendu côté client basé sur la structure d’applications monopages (par exemple, Réagir ou Angular).
 
 ## Présentation {#introduction}
 
-Ce document décrit le contrat général que toute structure d’application d’une seule page doit respecter (c’est-à-dire le type de couche de prise en charge d’AEM) afin de mettre en oeuvre des composants d’application d’une seule page modifiables dans AEM.
+Ce document décrit le contrat général que tout cadre d&#39;application d&#39;une seule page doit respecter (c&#39;est-à-dire le type de couche de support AEM) pour mettre en oeuvre des composants d&#39;application d&#39;une seule page modifiables dans AEM.
 
 >[!NOTE]
 >
 >Les exigences suivantes sont indépendantes de la structure. Si ces exigences sont satisfaites, un calque spécifique à l’infrastructure, constitué de modules, de composants et de services, peut être fourni.
 >
->**Ces exigences sont déjà satisfaites pour les structures Réagir et Angular dans AEM.** Les exigences de ce plan directeur ne sont pertinentes que si vous souhaitez mettre en oeuvre une autre structure destinée à être utilisée avec AEM.
+>**Ces exigences sont déjà satisfaites pour les cadres Réagir et Angular en AEM.** Les exigences de ce plan directeur ne sont pertinentes que si vous souhaitez mettre en oeuvre un autre cadre à utiliser avec AEM.
 
 >[!CAUTION]
 >
->Bien que les fonctionnalités d’application d’une seule page soient indépendantes de la structure, seules les structures React et Angular sont actuellement prises en charge.
+>Bien que les capacités d’application d’une seule page soient indépendantes de la structure, seules les structures React et Angular sont actuellement prises en charge.
 
-Pour permettre à l’auteur d’utiliser l’éditeur de page AEM pour modifier les données exposées par une structure d’application d’une seule page, un projet doit être en mesure d’interpréter la structure du modèle représentant la sémantique des données stockées pour une application dans le référentiel AEM. Pour atteindre cet objectif, deux bibliothèques indépendantes du cadre sont fournies : le `PageModelManager` et le `ComponentMapping`.
+Pour permettre à l’auteur d’utiliser l’Éditeur de page AEM pour modifier les données exposées par une structure d’application d’une seule page, un projet doit être en mesure d’interpréter la structure du modèle représentant la sémantique des données stockées pour une application dans le référentiel AEM. Pour atteindre cet objectif, deux bibliothèques indépendantes du cadre sont fournies : le `PageModelManager` et le `ComponentMapping`.
 
 ### PageModelManager {#pagemodelmanager}
 
@@ -63,7 +63,7 @@ Chaque élément présent dans le modèle contient un `:type` champ qui expose u
 
 #### Mappage du modèle dynamique au composant {#dynamic-model-to-component-mapping}
 
-Pour plus d’informations sur la façon dont le mappage du modèle dynamique avec les composants se produit dans le SDK SPA Javascript pour AEM, voir l’article Mappage du modèle [dynamique avec les composants pour les applications monopages](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Pour plus d’informations sur la façon dont le mappage du modèle dynamique avec les composants se produit dans le SDK SPA Javascript pour AEM voir l’article Mappage du modèle [dynamique avec les composants pour les applications monopages](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### Couche spécifique au cadre {#framework-specific-layer}
 
@@ -75,7 +75,7 @@ Le reste de ce document décrit les exigences de cette couche spécifique de cad
 
 ### Modèle de page {#page-model}
 
-La structure de contenu de la page est stockée dans AEM. Le modèle de la page est utilisé pour mapper et instancier les composants de l’application d’une seule page (SPA). Les développeurs d’applications d’une seule page créent des composants SPA qu’ils mappent sur des composants AEM. Pour ce faire, ils utilisent le type de ressource (ou le chemin d’accès au composant AEM) comme clé unique.
+La structure de contenu de la page est stockée dans AEM. Le modèle de la page est utilisé pour mapper et instancier les composants de l’application d’une seule page (SPA). Les développeurs d’applications d’une seule page créent des composants SPA qu’ils mappent sur des composants AEM. Pour ce faire, ils utilisent le type de ressource (ou le chemin d&#39;accès au composant AEM) comme clé unique.
 
 Les composants de l’application d’une seule page doivent être synchronisés avec le modèle de page et être mis à jour en fonction des modifications apportées à son contenu. Un modèle qui a recours à des composants dynamiques doit être utilisé pour instancier des composants à la volée, suivant la structure de modèle de page fournie.
 
@@ -97,7 +97,7 @@ Voir aussi [Prise en main d’AEM Content Services](https://helpx.adobe.com/fr
 
 La séparation des préoccupations aide à faciliter la mise en oeuvre du projet. Par conséquent, un package spécifique au régime npm devrait être fourni. Ce package est chargé d’agréger et d’exposer les modules, services et composants de base. Ces composants doivent encapsuler la logique de gestion des modèles de données et fournir un accès aux données attendues par le composant du projet. Le module est également chargé d&#39;exposer de façon transitoire les points d&#39;entrée utiles des bibliothèques sous-jacentes.
 
-Pour faciliter l’interopérabilité des bibliothèques, Adobe conseille au module spécifique à la structure de regrouper les bibliothèques suivantes. Si nécessaire, la couche peut encapsuler et adapter les API sous-jacentes avant de les exposer au projet.
+Pour faciliter l&#39;interopérabilité des bibliothèques, l&#39;Adobe conseille au module spécifique au cadre de regrouper les bibliothèques suivantes. Si nécessaire, la couche peut encapsuler et adapter les API sous-jacentes avant de les exposer au projet.
 
 * [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
 * [@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
@@ -154,7 +154,7 @@ Un conteneur est un composant conçu pour contenir des composants enfants et en 
 
 Le conteneur obtient dynamiquement les composants enfants à partir du magasin de la [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) bibliothèque. Le conteneur étend ensuite le composant enfant avec les fonctionnalités du fournisseur de modèles et l&#39;instancie finalement.
 
-### Page {#page}
+### Page  {#page}
 
 Le `Page` composant étend le `Container` composant. Un conteneur est un composant destiné à contenir et à générer des composants enfants, y compris des pages enfants. Pour ce faire, le conteneur effectue une itération sur les propriétés `:itemsOrder`, `:items`et `:children` des propriétés de son modèle. Le `Page` composant obtient dynamiquement les composants enfants à partir du magasin de la bibliothèque [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping) . Il `Page` est responsable de l’instanciation des composants enfants.
 
@@ -162,7 +162,7 @@ Le `Page` composant étend le `Container` composant. Un conteneur est un composa
 
 Le composant Grille réactive est un conteneur. Il contient une variante spécifique du fournisseur de modèles représentant ses colonnes. La grille réactive et ses colonnes sont chargées de décorer l&#39;élément HTML externe du composant du projet avec les noms de classe spécifiques contenus dans le modèle.
 
-Le composant de grille réactive doit être prémappé à son homologue AEM, car ce composant est complexe et rarement personnalisé.
+Le composant de grille réactive doit être prémappé à son homologue AEM car ce composant est complexe et rarement personnalisé.
 
 #### Champs de modèle spécifiques {#specific-model-fields}
 
@@ -187,6 +187,7 @@ Par exemple :
 >
 >* `"new section"` : indique que l’élément en cours est l’espace réservé du conteneur.
 >* `"aem-Grid-newComponent"`: Normalise le composant pour la création de mise en page.
+
 >
 
 
@@ -246,7 +247,7 @@ Les composants du projet doivent générer au minimum les attributs de données 
 
 En résumé, pour être interprété par l’éditeur de page comme modifiable, un composant de projet doit respecter le contrat suivant :
 
-* Fournissez les attributs attendus pour associer une instance de composant principal à une ressource AEM.
+* Fournissez les attributs attendus pour associer une instance de composant frontal à une ressource AEM.
 * Fournissez la série attendue d&#39;attributs et de noms de classe qui permet la création d&#39;espaces réservés vides.
 * Fournissez les noms de classe attendus permettant le glisser-déposer des ressources.
 
