@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: 80a70f5c-dcc4-425f-9971-9e0feec094d6
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1784'
+ht-degree: 84%
 
 ---
 
 
 # Introduction à la personnalisation de l’espace de travail AEM Forms {#introduction-to-customizing-aem-form-workspace}
 
-L’espace de travail AEM forms offre des fonctionnalités permettant de modifier la sémantique de la présentation et les fonctionnalités de son interface. Les types de personnalisations pour modifier le style, la mise en page, le formatage, la marque et les principales fonctionnalités sont décrits ci-dessous.
+L’espace de travail de formulaire AEM permet de modifier la sémantique de présentation et les fonctionnalités de son interface. Les types de personnalisations pour modifier le style, la mise en page, le formatage, la marque et les principales fonctionnalités sont décrits ci-dessous.
 
 ![cu_custom_workspace_example](assets/cu_customized_workspace_example.png)
 
@@ -128,7 +131,7 @@ For the exact steps to do these customizations, see [Generic steps for AEM Forms
 
 #### Image {#image}
 
-Vous pouvez personnaliser l’espace de travail AEM Forms pour ajouter des avatars d’utilisateurs ou le logo de votre organisation. Pour ces personnalisations, utilisez la commande [Ship Package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+Vous pouvez personnaliser l’espace de travail AEM Forms pour ajouter des avatars d’utilisateurs ou pour ajouter le logo de votre organisation. Pour ces personnalisations, utilisez la commande [Ship Package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
 
 Les étapes de niveau supérieur pour des personnalisations des images sont les suivantes :
 
@@ -141,7 +144,7 @@ To get started with customizing the images in AEM Forms workspace, follow the [G
 
 #### Contrôleur HTML {#html-template}
 
-Les modèles HTML permettent de définir l’aspect et la disposition de l’interface utilisateur de l’espace de travail. Lors de la mise à jour des contrôleurs HTML par défaut, vous pouvez personnaliser l’interface de l’utilisateur par défaut de la mise en page.
+Les modèles HTML permettent de définir l’aspect et la mise en page de l’interface utilisateur de l’espace de travail. Lors de la mise à jour des contrôleurs HTML par défaut, vous pouvez personnaliser l’interface de l’utilisateur par défaut de la mise en page.
 
 Les étapes de niveau supérieur pour les personnalisations du contrôleur HTML sont les suivantes :
 
@@ -155,7 +158,7 @@ Vous trouverez des exemples spécifiques de ces personnalisations dans les rubri
 
 Pour modifier la fonctionnalité de l’espace de travail AEM Forms, modifiez le code source JavaScript. Les modifications dans les principales fonctionnalités ne sont pas libellées comme modifications sémantiques. Vous modifiez des modèles, des vues et des contrôleurs fournis en tant que partie intégrante du code source de l’espace de travail AEM Forms.
 
-Les étapes de niveau supérieur pour effectuer des modifications sémantiques afin de modifier la fonctionnalité de l’espace de travail AEM Forms sont les suivantes :
+Les étapes de niveau supérieur permettant d’effectuer des modifications sémantiques pour modifier les fonctionnalités de l’espace de travail AEM Forms sont les suivantes :
 
 * Dans un dossier créé par l’utilisateur, effectuez des copies des fichiers par défaut appropriés.
 * Ajoutez de nouveaux modèles et de nouvelles vues dans le dossier défini par l’utilisateur.
@@ -166,7 +169,7 @@ Pour plus d’informations conceptuelles sur les composants qui font partie du c
 
 ### Composants réutilisables {#reusable-components}
 
-Comme l’espace de travail AEM Forms est un logiciel basé sur des composants, il peut être facilement personnalisé et réutilisé. Vous pouvez intégrer facilement les composants de l’espace de travail avec vos applications Web.
+Comme AEM Forms Workspace est un logiciel basé sur des composants, il peut être facilement personnalisé et réutilisé. Vous pouvez intégrer facilement les composants de l’espace de travail avec vos applications Web.
 
 For more conceptual information, see the [Description of reusable components](/help/forms/using/description-reusable-components.md) and for instruction about using the components, see [Integrating AEM Forms workspace components in web applications](/help/forms/using/description-reusable-components.md).
 
@@ -174,7 +177,7 @@ For more conceptual information, see the [Description of reusable components](/h
 
 ### Paquet SDK {#sdk-package}
 
-Le paquet contient le code source de l’espace de travail AEM Forms. Le paquet est disponible à l&#39;adresse `[*LC root*]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
+Le paquet contient le code source de l’espace de travail AEM Forms. Le forfait est disponible à `[*LC root*]\sdk\html-workspace\adobe-lc-workspace-src.zip`l&#39;adresse.
 
 Il est essentiellement destiné aux personnalisations, car il permet de générer les éléments suivants :
 
@@ -213,7 +216,7 @@ Il est essentiellement destiné aux personnalisations, car il permet de génére
             * views - contient les vues Backbone de tous les composants dans l’espace de travail AEM Forms.
          * main.js
          * router.js
-      * libs/ws : pdf.html et pluginPing.pdf sont utilisés pour charger des formulaires PDF dans l’espace de travail AEM Forms et WSNextAdapter.swf est utilisé pour charger des formulaires SWF et des guides dans l’espace de travail AEM Forms.
+      * libs/ws : pdf.html et pluginPing.pdf sont utilisés pour charger des PDF forms dans l’espace de travail AEM Forms et WSNextAdapter.swf est utilisé pour charger des formulaires SWF et des guides dans l’espace de travail AEM Forms.
       * locales :
 
          * de-DE : contient translation.json pour l’allemand.
@@ -244,7 +247,7 @@ Ce paquet peut être créé à l’aide des trois profils décrits ci-dessous.
 #### Commande {#command}
 
 * mvn clean -P Ship install sur le dossier client-pkg du package Source fourni au client.
-* L’exécution de la commande Ship  fonctionne uniquement sur une JVM 64 bits.
+* L’exécution de la commande Ship profil fonctionne uniquement sur une JVM 64 bits.
 
 #### Contenu du dossier WS {#ws-content-1}
 
