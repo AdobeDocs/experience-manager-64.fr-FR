@@ -1,8 +1,8 @@
 ---
 title: Modèles de site
 seo-title: Modèles de site
-description: Accès à la console Modèles de site
-seo-description: Accès à la console Modèles de site
+description: Comment accéder à la console Modèles de site
+seo-description: Comment accéder à la console Modèles de site
 uuid: d2f7556e-7e43-424e-82f1-41790aeb2d98
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,21 +11,24 @@ content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 4%
 
 ---
 
 
 # Modèles de site {#site-templates}
 
-La console Modèles de site est très similaire à la console Modèles [de](tools-groups.md) groupe, qui se concentre sur des fonctions présentant un intérêt pour les groupes communautaires.
+La console Modèles de site est très similaire à la console Modèles [de](tools-groups.md) groupe, qui est axée sur des fonctions présentant un intérêt pour les groupes communautaires.
 
 >[!NOTE]
 >
->Les consoles pour la création de sites [](sites-console.md)communautaires, de modèles [de sites](sites.md)communautaires, de modèles [de groupes de](tools-groups.md) communautés et de fonctions de [communauté ne sont utilisées que dans l’environnement de création.](functions.md)
+>Les consoles pour la création de sites [](sites-console.md)communautaires, de modèles [de sites](sites.md)communautaires, de modèles de groupes de [communautés et de fonctions de](tools-groups.md) [communauté ne sont utilisées que dans l&#39;environnement d&#39;auteur.](functions.md)
 
 ## Console Modèles de site {#site-templates-console}
 
-Dans l’environnement de création, pour accéder à la console des sites de la communauté
+Dans l’environnement de l’auteur, pour accéder à la console des sites de la communauté
 
 * A partir de la navigation globale : **[!UICONTROL Outils > Communautés > Modèles de site]**
 
@@ -45,17 +48,17 @@ Le panneau Editeur de site qui contient 3 sous-panneaux s’affiche alors :
 
 Dans le panneau Informations de base, un nom, une description et si le modèle est activé ou désactivé sont configurés :
 
-* **[!UICONTROL Nom]** du modèle de site de la communauté ID du nom du modèle
+* **[!UICONTROL Nom]** du modèle de site de la communauté ID du nom de modèle
 
 * **[!UICONTROL Description]** du modèle de site de la communauté Description du modèle
 
-* **[!UICONTROL Désactivé/Activé]** Un commutateur à bascule contrôlant si le modèle est référent
+* **[!UICONTROL Désactivé/Activé]** Un commutateur à bascule contrôlant si le modèle est référencé
 
-### Miniature {#thumbnail}
+### Miniature  {#thumbnail}
 
 ![chlimage_1-20](assets/chlimage_1-20.png)
 
-(Facultatif) Sélectionnez l’icône Télécharger l’image pour afficher une miniature avec le nom et la description des créateurs de sites de la communauté.
+(Facultatif) Sélectionnez l’icône Télécharger l’image pour afficher une miniature ainsi que le nom et la description des créateurs de sites communautaires.
 
 ### Structure {#structure}
 
@@ -63,11 +66,11 @@ Dans le panneau Informations de base, un nom, une description et si le modèle e
 
 Pour ajouter des fonctions de communauté, faites glisser le curseur de droite vers la gauche dans l&#39;ordre d&#39;affichage des liens du menu du site. Les styles seront appliqués au modèle lors de la création du site.
 
-Par exemple, si vous souhaitez une page d’accueil, faites glisser la fonction Page de la bibliothèque et déposez-la sous le créateur de modèles. La boîte de dialogue de configuration de la page s’ouvre alors. Pour plus d&#39;informations sur les boîtes de dialogue de configuration, consultez la console [des fonctions](functions.md) .
+Par exemple, si vous souhaitez une page d&#39;accueil, faites glisser la fonction Page de la bibliothèque et déposez-la sous le créateur de modèles. La boîte de dialogue de configuration de la page s’ouvre alors. Pour plus d&#39;informations sur les boîtes de dialogue de configuration, consultez la console [](functions.md) fonctions.
 
 Continuez à faire glisser et à déposer toutes les autres fonctions de la communauté souhaitées pour un site communautaire en fonction de ce modèle.
 
-La fonction de page fournit une page vide. La fonction de groupes permet de créer un site de groupe (sous-communauté) au sein du site communautaire.
+La fonction page fournit une page vide. La fonction de groupes permet de créer un site de groupe (sous-communauté) au sein du site communautaire.
 
 >[!CAUTION]
 >
@@ -79,7 +82,7 @@ La fonction de page fournit une page vide. La fonction de groupes permet de cré
 
 ### Modèles de groupe pour la fonction Groupes {#group-templates-for-groups-function}
 
-Lors de l’inclusion d’une fonction de groupes dans le modèle de site, la configuration requiert la spécification des choix de modèles de groupe autorisés lorsqu’un nouveau groupe est créé dans l’environnement de publication.
+Lorsque vous incluez une fonction de groupes dans le modèle de site, la configuration requiert la spécification des choix de modèle de groupe autorisés lorsqu&#39;un nouveau groupe est créé dans l&#39;environnement de publication.
 
 >[!CAUTION]
 >
@@ -87,12 +90,12 @@ Lors de l’inclusion d’une fonction de groupes dans le modèle de site, la co
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
-En sélectionnant plusieurs modèles de groupe de la communauté, l’administrateur du groupe peut choisir de créer un nouveau groupe dans la communauté.
+En sélectionnant au moins deux modèles de groupe de communauté, un choix est fourni à l’administrateur du groupe lors de la création d’un nouveau groupe dans la communauté.
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
 ## Modifier le modèle de site{#edit-site-template}
 
-Lorsque vous consultez des modèles de site dans la console [principale Modèles de](#site-templates-console)site, il est possible de sélectionner un modèle de site existant à modifier.
+Lorsque vous consultez des modèles de site dans la console [](#site-templates-console)principale Modèles de site, il est possible de sélectionner un modèle de site existant à modifier.
 
 Ce processus fournit les mêmes panneaux que la [création d’un modèle](#create-site-template)de site.
