@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +33,7 @@ Par exemple, les pages de produits saisonniers de votre boutique en ligne sont m
 
 Les lancements peuvent également être :
 
-* Créés pour plusieurs branches racine. Même si vous pouvez créer un lancement pour le site dans son intégralité (et y apporter des modifications), cette méthode n’est pas pratique puisque l’ensemble du site doit être copié. Lorsque des centaines, voire des milliers, de pages sont utilisées, les configurations et les performances du système dépendent de l’action de copie et ultérieurement des comparaisons nécessaires pour les tâches de conversion.
+* Créés pour plusieurs branches racine. Même si vous pouvez créer un lancement pour le site dans son intégralité (et y apporter des modifications), cette méthode n’est pas pratique puisque l’ensemble du site doit être copié. Lorsque des centaines, voire des milliers de pages sont utilisées, les configurations et les performances du système dépendent de l’action de copie et ultérieurement des comparaisons nécessaires pour les tâches de conversion.
 * Imbriqués (un lancement dans un lancement). Vous pouvez ainsi créer un lancement à partir d’un lancement existant pour que les développeurs de contenu exploitent les modifications déjà apportées, au lieu de répercuter ces mêmes modifications à plusieurs reprises pour chaque lancement.
 
 Cette section explique comment créer, modifier et convertir (et, le cas échéant, [supprimer](/help/sites-authoring/launches-creating.md#deleting-a-launch)) les pages de lancement de la console Sites ou de la console [Lancements](#the-launches-console) :
@@ -60,7 +63,7 @@ La fonction Lancements vous permet de :
 * Modifier la configuration de lancement :
 
    * Ajoutez ou supprimez des pages et/ou des branches vers/à partir du lancement.
-   * Modifiez les propriétés de lancement telles que **Titre**, **Date de lancement** et l’indicateur **Prêt pour la production**.
+   * Modifiez des propriétés de lancement, comme le **titre**, la **date de lancement** et l’indicateur **Prêt pour la production**. 
 
 * Vous pouvez convertir et modifier le contenu manuellement ou automatiquement :
 
@@ -71,7 +74,7 @@ La fonction Lancements vous permet de :
       * Convertissez toutes les pages ou uniquement celles qui ont été modifiées.
    * Automatiquement, ce qui implique les étapes suivantes : 
 
-      * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification d’un lancement.
+      * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
       * L’indicateur **Prêt pour la production** : cette option n’est sélectionnable que lors de la modification d’un lancement.
       * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la date de **lancement** (**En direct**) spécifiée ****. Après la promotion, les pages de production sont automatiquement publiées.
 
@@ -82,12 +85,14 @@ La fonction Lancements vous permet de :
 
    * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy). 
    * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source. 
+
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
 * [Créer un lancement imbriqué](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) (lancement dans un lancement) :
 
    * La source est un lancement existant.
    * Vous pouvez [promouvoir un lancement imbriqué](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) dans n’importe quelle cible. Il peut s’agir d’un lancement parent ou des pages source de niveau supérieur (production).
+
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
    >[!CAUTION]
@@ -96,7 +101,7 @@ La fonction Lancements vous permet de :
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>La création et la modification de lancements exigent des droits d’accès à `/content/launches`, comme avec le groupe par défaut `content-authors`.
 >
 >Si vous rencontrez des difficultés, contactez votre administrateur système. 
 
@@ -106,7 +111,7 @@ La console de lancements fournit un aperçu de vos lancements et permet d’appl
 
 * La console **Outils** : **Outils**, **Sites**, **Lancements**.
 
-* Ou directement avec [http://localhost:4502/libs/launches/content/launches.html](http://localhost:4502/libs/launches/content/launches.html)
+* Ou directement avec [.http://localhost:4502/libs/launches/content/launches.html](http://localhost:4502/libs/launches/content/launches.html)
 
 ## Lancements dans les références (console de sites) {#launches-in-references-sites-console}
 
