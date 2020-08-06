@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
 workflow-type: tm+mt
 source-wordcount: '1015'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Les pare-feu et les proxys de l’entreprise peuvent également influencer la ba
 
 Dans cet exemple, l’entreprise dispose d’une liaison de 10 Gbps. Cela doit être suffisant pour prendre en charge plusieurs clients. Par ailleurs, le pare-feu impose une limite de débit par hôte de 10 Mbps. Cette restriction risque de ralentir le trafic d’un seul hôte à 10 Mbps, même si la liaison montante à l’Internet est de 10 Gbps.
 
-C’est le plus petit goulot d’étranglement axé sur le client. Cependant, vous pouvez évaluer une modification ou une liste autorisée avec le groupe d&#39;opérations réseau responsable de ce pare-feu.
+C’est le plus petit goulot d’étranglement axé sur le client. Cependant, vous pouvez opter pour une modification ou créer une liste autorisée avec le groupe des opérations réseau responsable de ce pare-feu.
 
 Les exemples de diagrammes vous permettent de conclure que six périphériques partagent un canal conceptuel de 10 Mbps. Selon la taille des ressources exploitées, cela peut s’avérer insuffisant pour répondre aux attentes de l’utilisateur.
 
