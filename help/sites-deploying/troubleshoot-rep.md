@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: e862c8a9-b5b6-4857-a154-03d3ffac3e67
 translation-type: tm+mt
 source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+workflow-type: tm+mt
+source-wordcount: '1282'
+ht-degree: 80%
 
 ---
 
@@ -35,7 +38,7 @@ Il existe diverses facteurs pouvant mener à l’échec d’une réplication. Ce
 
 **Les réplications sont-elles alignées dans les files d’attente des agents de réplication ?**
 
-Vérifiez cela en accédant à /etc/replication/agents.author.html, puis cliquez sur les agents de réplication à vérifier.
+Vérifiez ce point en accédant à /etc/replication/agents.author.html, puis en cliquant sur les agents de réplication à vérifier.
 
 **Si une ou plusieurs files d’attente sont bloquées :**
 
@@ -43,17 +46,17 @@ Vérifiez cela en accédant à /etc/replication/agents.author.html, puis cliquez
 1. Does the queue status show **Queue is active - # pending**? La tâche de réplication peut être simplement bloquée dans une fiche, en attente d’une instance de publication ou du dispatcher pour répondre. Il se peut également que l’instance de publication ou le dispatcher subisse un chargement élevé ou qu’il soit coincé dans un verrouillage. Prenez les thread dumps de l’auteur et de la publication dans ce cas.
 
    * Ouvrez les thread dumps de l’auteur dans un programme d’analyse de thread dump, vérifiez s’il indique que la tâche sling eventing de l’agent de réplication est boquée dans un socketRead.
-   * Ouvrez les thread dumps de la publication dans un programme d’analyse de thread dump, analysez ce qui peut causer le manque de réaction de l’instance de publication. Vous devriez voir un thread avec POST /bin/receive dans son nom, c&#39;est-à-dire le thread qui reçoit la réplication de l&#39;auteur.
+   * Ouvrez les thread dumps de la publication dans un programme d’analyse de thread dump, analysez ce qui peut causer le manque de réaction de l’instance de publication. Vous devriez voir un thread avec le POST /bin/receive dans son nom, c&#39;est-à-dire le thread recevant la réplication de l&#39;auteur.
 
 **Si toutes les files d’attente de l’agent sont bloquées**
 
-1. Il est possible qu’un certain élément de contenu ne puisse pas être sérialisé sous /var/Replication/data en raison d’une corruption du référentiel ou d’un autre problème. Recherchez une erreur connexe dans logs/error.log. Pour supprimer un élément de réplication défectueux, procédez comme suit :
+1. Il est possible qu’un certain élément de contenu ne puisse pas être sérialisé sous /var/Replication/data en raison d’une corruption du référentiel ou d’un autre problème. Recherchez une erreur connexe dans le fichier logs/error.log. Pour supprimer un élément de réplication défectueux, procédez comme suit :
 
    1. Accédez à https://&lt;hôte>:&lt;port>/crx et connectez-vous en tant qu’utilisateur administrateur. Dans CQ5.5, accédez plutôt à https://&lt;hôte>:&lt;port>/crx/explorer.
    1. Cliquez sur « Content Explorer » (l’explorateur de contenu).
    1. Dans la fenêtre Content Explorer, cliquez sur le bouton de loupe dans l’angle supérieur droit de la fenêtre. Une boîte de dialogue de recherche s’affiche.
    1. Sélectionnez le bouton radio « XPath ».
-   1. Dans la zone &quot;Requête&quot;, saisissez l’ordre /jcr:root/var/eventing/jobs//element(&amp;ast;,slingevent:Job) de la requête par @slingevent:created.
+   1. Dans la zone &quot;Requête&quot;, saisissez l’ordre de requête /jcr:root/var/eventing/jobs//element(&amp;ast;,slingevent:Job) de @slingevent:created.
    1. Cliquez sur « Search » (Rechercher).
    1. Les résultats affichés dans la partie supérieure de la page correspondent aux dernières tâches sling eventing. Cliquez sur chacune d’entre elles et recherchez les réplications bloquées qui correspondent aux résultats visibles dans la partie supérieure de la file d’attente.
 
@@ -65,7 +68,7 @@ Vérifiez cela en accédant à /etc/replication/agents.author.html, puis cliquez
 1. Il se peut également que la configuration DefaultJobManager ait cessé de fonctionner normalement. Cela peut avoir lieu lorsqu’une personne modifie manuellement la configuration du gestionnaire Apache Sling Job Event via la console OSGi (par exemple, en désactivant et en réactivant la propriété « Job Processing Enabled », puis en enregistrant la configuration).
 
    * À ce stade, la configuration de DefaultJobManager stockée sur crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config cesse de fonctionner normalement. Même si la case « Job Processing Enabled » de la propriété « Apache Sling Job Event Handler » est cochée, lorsque l’on accède à l’onglet Sling Eventing, le message suivant s’affiche : « JOB PROCESSING IS DISABLED » (Le traitement des tâches est désactivé) et la réplication ne fonctionne pas.
-   * Pour résoudre ce problème, vous devez accéder à la page Configuration de la console OSGi et supprimer la configuration &quot;Apache Sling Job Event Handler&quot;. Relancez ensuite le noeud maître du cluster pour que la configuration revienne à un état stable. Cela devrait résoudre le problème et faire fonctionner de nouveau la réplication.
+   * Pour résoudre ce problème, vous devez accéder à la page Configuration de la console OSGi et supprimer la configuration &quot;Apache Sling Job Événement Handler&quot;. Relancez ensuite le noeud maître du cluster pour que la configuration revienne à un état stable. Cela devrait résoudre le problème et faire fonctionner de nouveau la réplication.
 
 **Création de replication.log**
 
@@ -75,7 +78,7 @@ Il est parfois très utile de programmer toute la journalisation de la réplicat
 1. Find the Apache Sling Logging Logger factory and create an instance by clicking the **+** button on the right of the factory configuration. Cela entraîne la création d’un enregistreur de connexions.
 1. Définissez la configuration comme suit :
 
-   * Niveau du journal : DEBUG
+   * Niveau de journal : DEBUG
    * Log File Path: *(CQ5.4 and 5.3)* ../logs/replication.log *(CQ5.5)* logs/replication.log
    * Catégories : com.day.cq.replication
 
