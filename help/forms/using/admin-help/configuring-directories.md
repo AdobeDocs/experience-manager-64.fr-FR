@@ -91,7 +91,7 @@ Lorsque vous ajoutez un nouvel annuaire à un domaine, définissez les paramètr
 
 **Utilisateur :** L&#39;authentification est requise. Dans le champ Nom, indiquez le nom de l’enregistrement utilisateur qui peut accéder à l’annuaire. Il est généralement conseillé d’entrer le nom distinctif complet (ND) du compte utilisateur, par exemple : cn=Jane Doe, ou=user, dc=can, dc=com. Dans le champ Mot de passe, indiquez le mot de passe associé. Ces paramètres sont obligatoires lorsque vous sélectionnez Utilisateur pour l’option Liaison.
 
-**Nom :** Nom qui peut être utilisé pour la connexion à la base de données LDAP lorsque l’accès anonyme n’est pas activé. Pour Active Directory 2003, spécifiez `[domain name]\[userid]`. Pour Sun™ One, eDirectory ou IBM Tivoli Directory Server, spécifiez le nom qualifié complet de l’utilisateur, comme uid=lcuser,ou=it,o=company.com.
+**Nom :** Nom qui peut être utilisé pour la connexion à la base de données LDAP lorsque l’accès anonyme n’est pas activé. Pour Principale Directory 2003, indiquez `[domain name]\[userid]`. Pour Sun™ One, eDirectory ou IBM Tivoli Directory Server, spécifiez le nom qualifié complet de l’utilisateur, comme uid=lcuser,ou=it,o=company.com.
 
 **Mot de passe :** Mot de passe correspondant au nom que vous avez spécifié pour la connexion à la base de données LDAP lorsque l’accès anonyme n’est pas activé.
 
@@ -99,7 +99,7 @@ Lorsque vous ajoutez un nouvel annuaire à un domaine, définissez les paramètr
 
 **Récupérer les DN de base :** Récupère les DN de base et les affiche dans la liste déroulante. Ce paramètre est utile lorsque vous avez plusieurs DN de base et que vous devez sélectionner une valeur.
 
-**Activer le référent :** Ce paramètre est applicable lorsque votre organisation utilise plusieurs domaines Active Directory organisés dans une structure hiérarchique et que vous avez spécifié des paramètres d&#39;annuaire pour le domaine parent uniquement. Dans ce cas, lorsque vous sélectionnez cette option, User Management peut accéder aux détails des utilisateurs et des groupes à partir des domaines enfants.
+**Activer le référent :** Ce paramètre s’applique lorsque votre organisation utilise plusieurs domaines Principale Directory organisés dans une structure hiérarchique et que vous avez spécifié des paramètres d’annuaire pour le domaine parent uniquement. Dans ce cas, lorsque vous sélectionnez cette option, User Management peut accéder aux détails des utilisateurs et des groupes à partir des domaines enfants.
 
 >[!NOTE]
 >
@@ -147,9 +147,9 @@ L’espace utilisé pour l’affichage du nom de clé du calendrier professionne
 
 **Organisation :** Attribut de Schéma pour le nom de l’organisation à laquelle appartient l’utilisateur.
 
-**Adresse électronique principale :** attribut de Schéma pour l’adresse électronique principale de l’utilisateur.
+**Courriel Principal :** attribut de Schéma pour l’adresse électronique Principale de l’utilisateur.
 
-**Adresse électronique secondaire :** attribut de Schéma pour l’adresse électronique secondaire de l’utilisateur.
+**Courriel Secondaire :** attribut de Schéma pour l’adresse électronique secondaire de l’utilisateur.
 
 **Téléphone :** attribut de Schéma pour le numéro de téléphone de l’utilisateur.
 
@@ -195,9 +195,9 @@ Si ND est spécifié comme identificateur unique, il n’est pas nécessaire de 
 
 **Organisation :** Attribut de Schéma pour le nom de l&#39;organisation à laquelle appartient le groupe
 
-**Adresse électronique principale :** Attribut de Schéma pour l&#39;adresse électronique principale du groupe
+**Courriel Principal :** Attribut de Schéma pour l&#39;adresse électronique Principale du groupe
 
-**Adresse électronique secondaire :** Attribut de Schéma pour l&#39;adresse électronique secondaire du groupe
+**Courriel Secondaire :** Attribut de Schéma pour l&#39;adresse électronique secondaire du groupe
 
 **Modifier l’horodatage :** Pour activer la synchronisation d’annuaires delta, définissez cette valeur sur modify TimeStamp. Voir Activation de la synchronisation d’annuaires delta.
 
