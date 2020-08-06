@@ -76,7 +76,7 @@ Vous pouvez effectuer une mise à niveau directe à partir d’AEM 6.2 Forms o
 
    * **Exécuter l’utilitaire de migration**
 
-      L’utilitaire de migration rend les formulaires adaptatifs et les actions de gestion de la correspondance des versions antérieures compatibles avec les formulaires AEM 6.4. Vous pouvez télécharger l’utilitaire à partir de la distribution de logiciels AEM. Pour des informations détaillées sur la configuration et l’utilisation de l’utilitaire de migration, voir [l’utilitaire de migration](/help/forms/using/migration-utility.md).
+      L’utilitaire de migration rend les formulaires adaptatifs et les actions de gestion de la correspondance des versions antérieures compatibles avec les formulaires AEM 6.4. Vous pouvez télécharger l&#39;utilitaire depuis AEM Software Distribution. Pour des informations détaillées sur la configuration et l’utilisation de l’utilitaire de migration, voir [l’utilitaire de migration](/help/forms/using/migration-utility.md).
 
       Si vous utilisez [Exemple pour l’intégration du composant brouillons et envois](integrate-draft-submission-database.md) avec la base de données et que vous mettez à niveau à partir d’une version précédente, exécutez les requêtes SQL suivantes après avoir effectué la mise à niveau :
 
@@ -92,7 +92,7 @@ Vous pouvez effectuer une mise à niveau directe à partir d’AEM 6.2 Forms o
       WHERE `key` = 'dataType'
       ```
 
-   * **(Si la mise à niveau d’AEM Forms 6.2 ou des versions antérieures uniquement) Reconfiguration de Adobe Sign**
+   * **(Si la mise à niveau est effectuée à partir de AEM 6.2 Forms ou des versions précédentes uniquement) Reconfiguration de Adobe Sign**
 
       Si vous avez configuré Adobe Sign dans la version précédente d’AEM Forms, reconfigurez Adobe Sign à partir des services cloud AEM. Pour plus d’informations, voir [Incorporation d’Adobe Sign à AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
