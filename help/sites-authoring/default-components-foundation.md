@@ -13,6 +13,9 @@ legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/ed
 pagetitle: Foundation Components
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '6592'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 >[!NOTE]
 >
->Cette section décrit les composants de base, qui sont fournis avec AEM depuis de nombreuses versions et sont disponibles prêts à l’emploi dans une installation AEM standard. Cependant, plusieurs composants de base ont été abandonnés avec AEM 6.4.
+>Cette section décrit les composants de base, qui sont fournis avec AEM depuis de nombreuses versions et sont disponibles prêts à l’emploi dans une installation AEM standard. Cependant, un certain nombre de composantes de base ont été abandonnées avec l&#39;AEM 6.4.
 >
 >Adobe recommends leveraging the more modern and extensible [core components](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html). These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://helpx.adobe.com/experience-manager/core-components/using/using.html) by your administrator.
 
@@ -29,7 +32,7 @@ Les composants de base ont été conçus pour être utilisés lors de la créati
 
 Some are immediately available through component browser, various others are also available by using [design mode](/help/sites-authoring/default-components-designmode.md) (if the page is based on a static template) or by [editing the template](/help/sites-authoring/templates.md) (if the page is based on an editable template).
 
-L&#39;utilisation des composantes de base est soutenue, mais elles ont été remplacées par des composantes de base qui offrent plus d&#39;extensibilité et de flexibilité.
+L&#39;utilisation des composantes de base est soutenue, mais elles ont été remplacées par des composantes de base qui ont offre plus d&#39;extensibilité et de flexibilité.
 
 >[!NOTE]
 >
@@ -58,7 +61,7 @@ Les composants de type Général sont des composants de base qui servent à cré
 ### Élément de compte {#account-item}
 
 >[!CAUTION]
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Vous pouvez définir un lien avec un titre et une description.
 
@@ -67,7 +70,7 @@ Vous pouvez définir un lien avec un titre et une description.
 ### Image adaptative {#adaptive-image}
 
 >[!CAUTION]
->Ce composant de base est obsolète. Adobe recommends leveraging the [Core Components Image Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) instead.
+>Ce composant de base est obsolète. Adobe recommends leveraging the [Core Components Image Component](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/image.html) instead.
 
 Le composant d’image adaptative génère des images dimensionnées en fonction de la fenêtre dans laquelle s’ouvre la page web. Pour utiliser le composant, vous devez fournir une image issue du système de fichiers ou du gestionnaire des actifs numériques. Si la page web s’ouvre, le navigateur web télécharge une copie de l’image qui a été redimensionnée, afin qu’elle s’adapte à la fenêtre active.
 
@@ -174,7 +177,7 @@ Ces propriétés sont disponibles dans deux onglets :
 
    * Vitesse de lecture
 
-      Temps en millisecondes avant l’affichage de la diapositive suivante.
+      Durée, en millisecondes, avant l’affichage de la diapositive suivante.
 
    * Temps de transition
 
@@ -182,17 +185,17 @@ Ces propriétés sont disponibles dans deux onglets :
 
    * Type des commandes
 
-      Différentes options sont disponibles dans un menu déroulant ; par exemple, Boutons Précédent / Suivant, Commutateurs Haut-Droite.
+      Différentes options sont disponibles dans un menu déroulant ; par exemple, boutons Précédent / Suivant, Commutateurs Haut-Droite.
 
 * **Liste**
 
-   Vous spécifiez ici le mode d’inclusion des pages dans votre carrousel :
+   Vous indiquez ici comment les pages sont incluses dans votre carrousel :
 
    * **Construire la liste avec**
 
-      Il existe plusieurs manières de créer une liste de pages : Pages enfants, Liste fixe, Recherche ou Recherche avancée (toutes décrites ci-dessous).
+      Il existe plusieurs façons de créer une liste de page : Pages enfants, Liste fixe, Recherche ou Recherche avancée (toutes décrites ci-dessous).
 
-      Notez que, quelle que soit la méthode choisie, les pages que vous incluez dans votre liste doivent avoir chacune une image associée à la page, c&#39;est cette image qui s&#39;affichera dans le carrousel. S’il n’existe aucune image pour une page donnée sous les Propriétés de page de cette page, vous devez associer une image à la page avant de commencer, sinon le carrousel affichera une page vierge (ou presque). See [Editing Page Properties](/help/sites-authoring/editing-page-properties.md).
+      Notez que quelle que soit la méthode choisie, les pages que vous incluez dans votre liste doivent déjà être associées à une image, c&#39;est cette image qui s&#39;affichera dans le carrousel. S’il n’existe aucune image pour une page donnée sous les Propriétés de page de cette page, vous devez associer une image à la page avant de commencer, sinon le carrousel affichera une page vierge (ou principalement vide). See [Editing Page Properties](/help/sites-authoring/editing-page-properties.md).
 
       Selon l’élément que vous choisissez, un nouveau panneau s’affiche :
 
@@ -202,7 +205,8 @@ Ces propriétés sont disponibles dans deux onglets :
 Spécifiez un chemin d’accès manuellement ou à l’aide du sélecteur. Laissez vide pour utiliser la page actuelle comme page parente.
       * **Options de la liste fixe**
 
-         * **Pages** Sélectionnez une liste de pages. Utilisez `+` pour ajouter d’autres entrées et les boutons Haut/Bas pour modifier l’ordre.
+         * **Pages** Sélectionnez une liste de pages. Utiliser 
+`+` pour ajouter d’autres entrées et les boutons Haut/Bas pour modifier l’ordre.
       * **Options de recherche**
 
          * **Démarrer dans**
@@ -216,9 +220,9 @@ Spécifiez un chemin d’accès manuellement ou à l’aide du sélecteur. Laiss
 
          * **Notation des prédicats de Query Builder**
 
-            Vous pouvez entrer une requête de recherche à l’aide de la notation de prédicat de Querybuilder. Par exemple, vous pouvez entrer &quot;fulltext=Marketing&quot; pour que toutes les pages comportant &quot;Marketing&quot; dans leur contenu s’affichent dans le carrousel.
+            Vous pouvez entrer une requête de recherche à l’aide de la notation de prédicat Querybuilder. Par exemple, vous pouvez entrer &quot;fulltext=Marketing&quot; pour que toutes les pages contenant &quot;Marketing&quot; s’affichent dans le carrousel.
 
-            Voir l’API [QueryBuilder](/help/sites-developing/querybuilder-api.md) pour une discussion complète des expressions de requête et d’autres exemples.
+            Voir l’API [](/help/sites-developing/querybuilder-api.md) QueryBuilder pour une analyse complète des expressions d’requête et d’autres exemples.
    * **Classer par**
 
       Sélectionnez `jcr:title`, `jcr:created`, `cq:lastModified`ou `cq:template` dans le menu déroulant.
@@ -330,7 +334,7 @@ L’application externe est intégrée au système de paragraphes de la page AE
 ### Modèle    {#flash}
 
 >[!CAUTION]
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Le composant Flash vous permet de charger une animation Flash. Faites glisser un élément Flash à partir de l’Outil de recherche de contenu ou utilisez la boîte de dialogue :
 
@@ -364,7 +368,7 @@ Le composant Flash vous permet de charger une animation Flash. Faites glisser un
 
    * **Version minimale**
 
-      Version minimale d’Adobe Flash Player requise pour exécuter l’animation. La version minimale par défaut est 9.0.0.
+      Version minimale d’Adobe Flash Player requise pour exécuter l’animation. La valeur par défaut est de 9.0.0.
 
    * **Attributs**
 
@@ -406,7 +410,7 @@ Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
 * **Map**
 
-   Pour mapper une image, sélectionnez Zone cliquable. Vous pouvez indiquer comment créer la zone cliquable (rectangle, polygone, etc.) et où la zone doit pointer.
+   Pour mapper une image, sélectionnez Zone cliquable. Vous pouvez spécifier comment créer la zone cliquable (rectangle, polygone, etc.) et où la zone doit pointer.
 
 * **Options**
 
@@ -414,7 +418,7 @@ Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
 * **Rotation**
 
-   Pour faire pivoter une image, sélectionnez Rotation. Utilisez-le plusieurs fois jusqu’à ce que l’image soit pivotée comme vous le souhaitez.
+   Pour faire pivoter une image, sélectionnez Pivoter. Utilisez-le à plusieurs reprises jusqu’à ce que l’image soit pivotée comme vous le souhaitez.
 
 * **Effacer**
 
@@ -456,7 +460,7 @@ Ce composant fournit un système de paragraphes/grille qui permet d’ajouter et
 
 >[!NOTE]
 >
->Ce composant a été mis en œuvre avec le [langage de modèle HTML (HTL)](https://helpx.adobe.com/experience-manager/htl/user-guide.html).
+>Ce composant a été mis en œuvre avec le [langage de modèle HTML (HTL)](https://helpx.adobe.com/fr/experience-manager/htl/user-guide.html).
 
 ### Liste {#list}
 
@@ -472,9 +476,9 @@ Le composant Liste vous permet de configurer des critères de recherche pour aff
 
       * **Options des pages enfants**
 
-         * **Enfants des** (page parent)
+         * **Enfants de** (page parente)
 
-            Spécifiez un chemin manuellement ou à l’aide du sélecteur. Laissez vide pour utiliser la page active comme parent.
+            Spécifiez un chemin d’accès manuellement ou à l’aide du sélecteur. Laissez vide pour utiliser la page active comme parent.
       * **Options de la liste fixe**
 
          * **Pages**
@@ -493,9 +497,9 @@ Le composant Liste vous permet de configurer des critères de recherche pour aff
 
          * **Notation des prédicats de Query Builder**
 
-            Vous pouvez entrer une requête de recherche à l’aide de la notation de prédicat de Querybuilder. Par exemple, vous pouvez entrer &quot;fulltext=Marketing&quot; pour que toutes les pages comportant &quot;Marketing&quot; dans leur contenu s’affichent dans le carrousel.
+            Vous pouvez entrer une requête de recherche à l’aide de la notation de prédicat Querybuilder. Par exemple, vous pouvez entrer &quot;fulltext=Marketing&quot; pour que toutes les pages contenant &quot;Marketing&quot; s’affichent dans le carrousel.
 
-            Voir l’API [QueryBuilder](/help/sites-developing/querybuilder-api.md) pour une discussion complète des expressions de requête et d’autres exemples.
+            Voir l’API [](/help/sites-developing/querybuilder-api.md) QueryBuilder pour une analyse complète des expressions d’requête et d’autres exemples.
       * **Balises**
 
          Permet de spécifier la **Page parente**, les **Tags / Mots-clés** et les critères de correspondance.
@@ -526,12 +530,12 @@ Le composant Liste vous permet de configurer des critères de recherche pour aff
 
 L’exemple suivant illustre un composant **Liste** affichant une liste de pages enfants. La conception est contrôlée par les définitions CSS personnalisées d’une conception de site.
 
-![dc_list_use](assets/dc_list_use.png)
+![dc_liste_use](assets/dc_list_use.png)
 
 ### Connexion {#login}
 
 >[!CAUTION]
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Ces options fournissent les champs de nom d’utilisateur et de mot de passe.
 
@@ -543,11 +547,11 @@ Vous pouvez configurer :
 
    * Libellé de section
 
-      Texte de piste pour les champs de saisie.
+      Texte de l’entrée pour les champs de saisie.
 
    * Libellé du nom de l&#39;utilisateur
 
-      Texte permettant d’étiqueter le champ username.
+      Texte permettant d’étiqueter le champ du nom d’utilisateur.
 
    * Libellé du mot de passe
 
@@ -559,7 +563,7 @@ Vous pouvez configurer :
 
    * Rediriger vers
 
-      Vous pouvez spécifier la page de votre site Web qui doit être ouverte une fois que l’utilisateur est connecté.
+      Vous pouvez spécifier la page de votre site Web qui doit être ouverte une fois que l’utilisateur s’est connecté.
 
 * Déjà connecté
 
@@ -577,7 +581,7 @@ Vous pouvez configurer :
 
    * **Lien**
 
-      Spécifiez la page (produit) pour laquelle le statut de la commande doit être affiché.
+      Spécifiez la page (le produit) pour laquelle le statut de la commande doit être affiché.
 
    * **Type / Taille**
 
@@ -585,7 +589,7 @@ Vous pouvez configurer :
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
-### Référence {#reference}
+### Référence  {#reference}
 
 Le composant **Référence** permet de référencer du texte à partir d’une autre page de votre site web AEM (dans l’instance actuelle). Le contenu du paragraphe référencé s’affiche alors comme s’il faisait partie de la page actuelle. Le contenu est mis à jour lorsque le paragraphe source est modifié (peut nécessiter une actualisation de la page).
 
@@ -593,7 +597,7 @@ Le composant **Référence** permet de référencer du texte à partir d’une a
 
    * **Référence**
 
-      Indiquez le chemin d’accès à la page et au paragraphe à référencer (inclure le contenu).
+      Indiquez le chemin d’accès à la page et au paragraphe que vous souhaitez référencer (y compris le contenu).
 
 Pour spécifier le chemin d’accès à un paragraphe, vous devez le suffixer (vers la page) avec :
 
@@ -618,13 +622,13 @@ Une fois configuré, le contenu s’affiche exactement comme sur la page source.
 ### Recherche {#search-features}
 
 >[!CAUTION]
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Recherche rapide](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/quick-search.html).
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Recherche rapide](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/quick-search.html).
 
 Le composant Rechercher offre des capacités de recherche à votre page.
 
 Vous pouvez configurer :
 
-* Recherche
+* Rechercher
 
    * **Types de nœuds**
 
@@ -632,7 +636,7 @@ Vous pouvez configurer :
 
    * **Chemin d’accès de la recherche**
 
-      Spécifiez la page racine de la branche que vous souhaitez rechercher.
+      Indiquez la page racine de la branche que vous souhaitez rechercher.
 
    * **Texte du bouton de recherche**
 
@@ -650,7 +654,7 @@ Vous pouvez configurer :
 
       Si une personne saisit un terme similaire, ce texte est affiché devant le terme.
 
-      Par exemple, si vous saisissez geometrixxe, le système affiche &quot;Voulez-vous dire ? geometrixx&quot;.
+      Par exemple, si vous tapez geometrixx, le système affiche &quot;Voulez-vous dire ? geometrixx&quot;.
 
    * **Texte Pages similaires**
 
@@ -687,7 +691,7 @@ L&#39;exemple suivant montre un terme de recherche mal orthographié et non disp
 ### Plan du site {#sitemap}
 
 >[!CAUTION]
->Ce composant de base est obsolète. Adobe recommends leveraging the [Navigation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html), [Language Navigation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/language-navigation.html), and [Breadcrumb Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/breadcrumb.html) instead.
+>Ce composant de base est obsolète. Adobe recommends leveraging the [Navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/navigation.html), [Language Navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/language-navigation.html), and [Breadcrumb Core Components](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/breadcrumb.html) instead.
 
 Liste automatique du plan du site qui (avec les paramètres par défaut) répertorie toutes les pages (sous forme de liens actifs) du site web actuel. Par exemple (extrait) :
 
@@ -704,7 +708,7 @@ Si nécessaire, vous pouvez configurer l’option suivante :
 ### Slideshow {#slideshow}
 
 >[!CAUTION]
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Carrousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html).
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Carrousel](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/carousel.html).
 
 Ce composant vous permet de charger une série d’images à afficher sous forme de diaporama dans la page. Vous pouvez ajouter ou supprimer des images et leur attribuer un titre. Sous l’onglet Avancé, vous pouvez également spécifier la taille de la zone d’affichage.
 
@@ -718,7 +722,7 @@ Vous pouvez configurer :
 
    * **Titre**
 
-      Spécifiez un titre si nécessaire. Ceci est superposé sur la diapositive appropriée.
+      Indiquez un titre si nécessaire. Il est superposé sur la diapositive appropriée.
 
 * **Avancé**
 
@@ -733,7 +737,7 @@ Le composant Diaporama affiche ensuite de façon répétée chaque image en séq
 ### Tableau {#table}
 
 >[!CAUTION]
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html).
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html).
 
 >[!NOTE]
 >
@@ -768,7 +772,7 @@ Lorsque vous configurez le composant Nuage de tags, vous pouvez spécifier les o
 
 * **Balises à afficher**
 
-   Emplacement à partir duquel les balises à afficher sont rassemblées. Sélectionnez une page, une page avec tous les enfants ou toutes les balises.
+   Emplacement à partir duquel les balises à afficher sont rassemblées. Sélectionnez une page, une page contenant tous les enfants ou toutes les balises.
 
 * **Page**
 
@@ -815,11 +819,11 @@ Le composant Texte et image permet d’ajouter un bloc de texte et une image. Vo
 
 Vous pouvez configurer :
 
-* **Styles** de composant (**Styles**)
+* **Styles** de composant (**styles**)
 
    Vous pouvez ici aligner l’image à droite ou à gauche. Le paramètre par défaut est aligné à **Gauche**, avec l’image à gauche.
 
-* **Propriétés** de l’image (propriétés **d’image** avancées)
+* **Propriétés** de l’image (propriétés **de l’image** avancée)
 
    Sous cet onglet, vous pouvez spécifier les paramètres suivants :
 
@@ -837,7 +841,7 @@ Vous pouvez configurer :
 
    * **Lier à**
 
-      Spécifiez un chemin cible.
+      Spécifiez un chemin de cible.
 
    * **Description**
 
@@ -884,6 +888,7 @@ Une fois une instance du composant placée sur la page, vous pouvez configurer l
 * Vidéo
 
    * **Contenu vidéo**
+
    Téléchargez ou déposez votre fichier vidéo.
 
    * **Taille**
@@ -897,7 +902,8 @@ Une fois une instance du composant placée sur la page, vous pouvez configurer l
 >
 >* `.mp4`
 >* `Ogg`
->* `FLV` (Vidéo Flash)
+>* `FLV` (vidéo Flash)
+
 >
 
 
@@ -926,7 +932,7 @@ Le composant Contrôle de colonne permet aux utilisateurs de sélectionner la ma
 
    * **Disposition des colonnes**
 
-      Sélectionnez le nombre de colonnes à afficher. Une fois créée, chaque colonne dispose de son propre lien pour faire glisser des composants ou des ressources lors de l’ajout de contenu.
+      Sélectionnez le nombre de colonnes à afficher. Une fois créée, chaque colonne dispose de son propre lien permettant de faire glisser des composants ou des ressources lors de l’ajout de contenu.
 
 ## Formulaire {#form}
 
@@ -1019,11 +1025,11 @@ Ces onglets vous fournissent les paramètres nécessaires ; ceux-ci peuvent dé
 
    * **Requis**
 
-      Cela dépend du type de composant de formulaire, mais fournit une ou plusieurs zones de clic pour indiquer que ce champ, ou certaines parties de ce champ, est/sont requis.
+      Il dépend du type de composant de formulaire, mais fournit une ou plusieurs zones de clic pour indiquer que ce champ, ou certaines parties de ce champ, est/sont requis.
 
    * **Message obligatoire**
 
-      Un message pour informer les utilisateurs que ce champ est obligatoire ; un champ obligatoire sera également marqué par un astérisque et un marqueur.
+      Un message pour informer les utilisateurs que ce champ est requis ; un champ obligatoire sera également marqué avec un astérisque.
 
    * **Contrainte**
 
@@ -1031,7 +1037,7 @@ Ces onglets vous fournissent les paramètres nécessaires ; ceux-ci peuvent dé
 
    * **Message de contrainte**
 
-      Message destiné à informer les utilisateurs des conditions requises.
+      Message informant les utilisateurs de ce qui est requis.
 
 * **Style**
 
@@ -1055,7 +1061,7 @@ Entre le début et la fin d’un formulaire, vous pouvez ajouter des composants 
 
 >[!NOTE]
 >
->Le composant de formulaire des composants de base ne prend en charge que l’utilisation d’autres composants de base Formulaire (bouton, texte, masqué, etc.). L’utilisation des composants de formulaire des [composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) dans un formulaire de composant de base (et vice versa) n’est pas prise en charge.
+>Le composant de formulaire des composants de base ne prend en charge que l’utilisation d’autres composants de base Formulaire (bouton, texte, masqué, etc.). L’utilisation des composants de formulaire des [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) dans un formulaire de composant de base (et vice versa) n’est pas prise en charge.
 
 #### Début du formulaire {#start-of-form}
 
@@ -1072,7 +1078,8 @@ Détermine quel workflow est déclenché une fois le formulaire envoyé.
 
 * **Avancé**
 
-   * **Type** d’action Un formulaire doit être suivi. L’action définit l’opération déclenchée pour l’exécution avec les données envoyées par l’utilisateur (semblable à action= dans HTML). Certains nécessitent une configuration **d’** action correspondante.
+   * **Type** d&#39;action Un formulaire doit être suivi. L’action définit l’opération déclenchée pour exécution avec les données envoyées par l’utilisateur (semblable à action= dans HTML). Certains ont besoin d’un 
+**Configuration de l’action**.
 
       Une sélection de types d’action est incluse dans une installation AEM standard :
 
@@ -1105,7 +1112,7 @@ Détermine quel workflow est déclenché une fois le formulaire envoyé.
 
    * **Chemin de chargement**
 
-      Chemin d’accès aux propriétés de noeud utilisé pour charger des valeurs prédéfinies dans les champs du formulaire.
+      Chemin d’accès aux propriétés de noeud utilisé pour charger des valeurs prédéfinies dans les champs de formulaire.
 
       Il s’agit d’un champ facultatif qui permet de spécifier le chemin à un nœud dans le référentiel. Lorsque ce nœud comporte des propriétés qui correspondent aux noms des champs, les champs adéquats du formulaire sont préchargés avec la valeur de ces propriétés. S’il n’existe aucune correspondance, le champ contient la valeur par défaut.
 
@@ -1157,14 +1164,14 @@ Détermine quel workflow est déclenché une fois le formulaire envoyé.
 
          * **Type de ressource**
 
-            Si cette propriété est définie, elle est ajoutée à chaque commentaire en tant que `sling:resourceType`
+            Si elle est définie, elle est ajoutée à chaque commentaire en tant que `sling:resourceType`
 
          * **Sélecteur d’affichage**
       * **Créer une piste**
 
          * **La piste sera ajoutée à cette liste**
 
-            Spécifiez la liste de pistes requise.
+            Spécifiez la liste de piste requise.
       * **Créer un compte et le mettre à jour**
 
          * **Groupe initial**
@@ -1221,13 +1228,13 @@ Détermine quel workflow est déclenché une fois le formulaire envoyé.
             Cliquez sur ce bouton pour accéder aux informations sur les résultats de formulaire dans l’éditeur en masse. Vous avez alors la possibilité d’exporter les informations vers un fichier .tsv (séparé par des tabulations) en vue de l’utiliser, par exemple, dans une feuille de calcul Excel).
       * **Stocker le contenu avec les chargements**
 
-         Les options disponibles sont les mêmes que celles du **stockage de contenu**.
+         Cette option présente les mêmes options que **Stocker le contenu**.
 
       * **Désabonner l’abonné**
 
          * **La piste sera supprimée de cette liste.**
 
-            Spécifiez la liste de pistes requise.
+            Spécifiez la liste de piste requise.
 
 
 
@@ -1285,7 +1292,7 @@ Le composant est configuré pour une utilisation immédiate, mais vous pouvez mo
 ### Captcha {#captcha}
 
 >[!CAUTION]
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Le composant Captcha requiert que l’utilisateur saisisse une chaîne alphanumérique comme affichée à l’écran. La chaîne est modifiée à chaque actualisation.
 
@@ -1310,7 +1317,7 @@ Vous pouvez spécifier divers paramètres y compris un titre, une description et
 ### Détails de la carte de crédit {#credit-card-details}
 
 >[!CAUTION]
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Ce composant vous permet de fournir les champs nécessaires pour saisir les informations de carte de crédit. Vous pouvez le configurer pour spécifier les types de cartes acceptés et les informations requises (par exemple, le code de sécurité).
 
