@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: d570ead9-8f9c-4668-8b23-e8984d9b25e9
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '996'
+ht-degree: 88%
 
 ---
 
@@ -25,7 +28,7 @@ Découvrons d’abord les exigences et les étapes préparatoires avant de confi
 
 Avant de configurer le chargement différé des fragments d’un formulaire adaptatif, il est essentiel de définir des stratégies afin de créer des fragments, d’identifier les valeurs utilisées dans les scripts ou référencées dans d’autres fragments, ou encore de définir des règles de contrôle de la visibilité des champs des fragments chargés.
 
-* **Identifier et créer des fragments** Vous pouvez configurer uniquement des fragments de formulaire adaptatif pour un chargement différé. Un fragment est un segment autonome qui réside en dehors d’un formulaire adaptatif et qui peut être réutilisé dans les formulaires. Ainsi, la première étape de l’implémentation du chargement différé consiste à identifier les sections logiques d’un formulaire et à les convertir en fragments. Vous pouvez créer un fragment à partir de zéro ou enregistrer un panneau de formulaire existant en tant que fragment.
+* **Identifier et créer des fragments** Vous pouvez configurer uniquement des fragments de formulaire adaptatif pour un chargement différé. Un fragment est un segment autonome qui réside en dehors d’un formulaire adaptatif et peut être réutilisé dans plusieurs formulaires. Ainsi, la première étape de l’implémentation du chargement différé consiste à identifier les sections logiques d’un formulaire et à les convertir en fragments. Vous pouvez créer un fragment à partir de zéro ou enregistrer un panneau de formulaire existant en tant que fragment.
 
     Pour plus d’informations sur la création de fragments, voir [Fragments de formulaire adaptatif](/help/forms/using/adaptive-form-fragments.md).
 
