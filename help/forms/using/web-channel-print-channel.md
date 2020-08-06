@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 71bba66a-3cac-445b-9941-aa4bcf9b2160
 translation-type: tm+mt
 source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+workflow-type: tm+mt
+source-wordcount: '706'
+ht-degree: 65%
 
 ---
 
@@ -33,7 +36,7 @@ Pour télécharger le modèle, vous devez être membre du groupe forms-user. Sui
 
 1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 
-1. Appuyez sur **[!UICONTROL Créer]**>**[!UICONTROL Chargement de fichier]**.
+1. Appuyez sur **[!UICONTROL Create]** (Créer) > **[!UICONTROL File Upload]** (Téléchargement de fichier). 
 
    Naviguez et sélectionnez le modèle de canal d’impression approprié (XDP), puis appuyez sur **[!UICONTROL Ouvrir]**.
 
@@ -43,22 +46,22 @@ Les auteurs de modèles et les administrateurs peuvent créer, modifier et activ
 
 ### Création de modèle de canal web {#authoring-web-channel-template}
 
-Pour créer un modèle de canal web, vous devez d’abord créer un dossier modèle. Une fois que vous avez créé un modèle Web dans un dossier de modèles, vous devez activer le modèle pour permettre aux utilisateurs de formulaires de créer un canal Web d’une communication interactive basée sur le modèle.
+Pour créer un modèle de canal web, vous devez d’abord créer un dossier modèle. Une fois que vous avez créé un modèle Web dans un dossier de modèle, vous devez activer ce modèle pour permettre aux utilisateurs de formulaires de créer un canal Web d’une communication interactive basée sur ce modèle.
 
 Pour créer un modèle de canal Web, procédez comme suit :
 
-1. Créez un dossier Modèle pour conserver vos modèles Web de communication interactive, si vous n’en avez pas déjà un. For more information, see Template Folders in [Page Templates - Editable](/help/sites-developing/page-templates-editable.md).
+1. Créez un dossier Modèle pour conserver vos modèles Web de communication interactive, si vous n’en avez pas encore. For more information, see Template Folders in [Page Templates - Editable](/help/sites-developing/page-templates-editable.md).
 
    1. Tap **[!UICONTROL Tools]** ![tools-1](assets/tools-1.png) > **[!UICONTROL Configuration Browser]**.
    1. In the Configuration Browser page, tap **[!UICONTROL Create]**.
    1. In the Create Configuration dialog, specify a title for the folder, check **[!UICONTROL Editable Templates]**, and tap **[!UICONTROL Create]**.
 
-      Le dossier est créé et répertorié dans la page du navigateur de configuration.
+      Le dossier est créé et répertorié dans la page Navigateur de configuration.
 
 1. Accédez au dossier de modèle approprié et créez un modèle web.
 
    1. Navigate to the appropriate template folder by selecting **[!UICONTROL Tools]** > **[!UICONTROL Templates > Folder]**.
-   1. Appuyez sur **[!UICONTROL Créer]**.
+   1. Appuyez sur **[!UICONTROL Créer]**. 
    1. Select **[!UICONTROL Interactive Communication - Web Channel]** and tap **[!UICONTROL Next]**.
    1. Entrez un titre et une description de modèle, puis appuyez sur **[!UICONTROL Créer]**.
 
@@ -68,7 +71,7 @@ Pour créer un modèle de canal Web, procédez comme suit :
 
       L’Éditeur de modèle s’affiche.
 
-      ![webchannel eltemplate](assets/webchanneltemplate.png)
+      ![webchanneltemplate](assets/webchanneltemplate.png)
 
       Lors de la création ou de la modification d’un modèle, un auteur de modèles peut définir différents aspects. La création ou la modification d’un modèle est similaire à la création de pages. For more information, see Editing Templates - Template Authors in [Creating Page Templates](/help/sites-authoring/templates.md).
 
