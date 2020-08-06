@@ -58,7 +58,7 @@ Si les processus que vous utilisez sont conçus et implémentés sans avoir à u
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour la version d’AEM Forms.
+>Flex Workspace est obsolète pour AEM version de formulaires.
 
 Par défaut, les courriers électroniques envoyés par AEM forms contiennent des liens vers Flex Workspace (obsolète pour AEM forms on JEE). Vous pouvez configurer AEM forms pour envoyer des courriers électroniques contenant des liens vers l’espace de travail AEM Forms. Pour en savoir plus sur les avantages de l’espace de travail AEM Forms par rapport à Flex Workspace (obsolète pour AEM forms on JEE), consultez [cet](/help/forms/using/features-html-workspace-available-flex.md) article.
 
@@ -220,7 +220,7 @@ Pour les rappels, affectations de tâche et échéances des utilisateurs et des 
 
 **instructions** Contenu de la propriété Instructions de la Tâche, tel que défini dans l’étape utilisateur du processus dans Workbench.
 
-**hôte** de notification Nom d’hôte du serveur d’applications AEM forms.
+**notification-host** Nom d’hôte du serveur d’applications AEM forms.
 
 **process-name** Nom du processus.
 
@@ -244,7 +244,7 @@ Pour les branches bloquées, vous pouvez utiliser les variables suivantes dans l
 
 **process-id** Identifiant de l’instance de processus.
 
-**hôte** de notification Nom d’hôte du serveur d’applications AEM forms.
+**notification-host** Nom d’hôte du serveur d’applications AEM forms.
 
 Pour les opérations bloquées, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
@@ -254,7 +254,7 @@ Pour les opérations bloquées, vous pouvez utiliser les variables suivantes dan
 
 **process-id** Identifiant de l’instance de processus.
 
-**hôte** de notification Nom d’hôte du serveur d’applications AEM forms.
+**notification-host** Nom d’hôte du serveur d’applications AEM forms.
 
 ### Utilisation d’une variable dans la zone Objet {#using-a-variable-in-the-subject-box}
 
