@@ -12,6 +12,9 @@ discoiquuid: 76b63c7c-f7ea-46be-8d10-6c1a30af2e2b
 pagetitle: Components for Content Fragments
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 84%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragments de contenu nécessitent l’application d’ [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application de l’ [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
 
 ## Composants pour la création de fragment {#components-for-fragment-authoring}
 
 >[!CAUTION]
 >
->Il n’est pas recommandé d’étendre ou de modifier les composants réels utilisés dans l’éditeur de fragments, car ils peuvent encore être modifiés.
+>Il n’est pas recommandé d’étendre ou de modifier les composants réels utilisés dans l’éditeur de fragments, car ils peuvent encore faire l’objet de modifications.
 
 See the [Content Fragment Management API - Client-Side](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
 
