@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8e568c59-5455-422f-94a6-baf6d2aae070
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '5365'
+ht-degree: 86%
 
 ---
 
@@ -33,7 +36,7 @@ Un module est un fichier ZIP contenant le contenu d’un référentiel sous for
 
 Les modules comportent du contenu, du contenu du page et du contenu lié au projet, sélectionnés à l’aide de filtres.
 
-Un module contient également les méta-informations du coffre-fort, dont les définitions des filtres et les informations de configuration de l’importation. D’autres propriétés de contenu (qui ne sont pas utilisées pour l’extraction du package) peuvent être incluses dans le package, par exemple une description, une image visuelle ou une icône ; ces propriétés sont destinées au consommateur du package de contenu et à titre d’information uniquement.
+Un module contient également les méta-informations du coffre-fort, dont les définitions des filtres et les informations de configuration de l’importation. D’autres propriétés de contenu (qui ne sont pas utilisées pour l’extraction du package) peuvent être incluses dans le package, telles qu’une description, une image visuelle ou une icône ; ces propriétés sont destinées au consommateur du package de contenu et à titre d’information uniquement.
 
 >[!NOTE]
 >
@@ -50,7 +53,7 @@ Vous pouvez effectuer les actions ci-dessous sur des modules ou avec des modules
 * Recréer des modules existants
 * Réencapsuler des modules
 * Télécharger des modules d’AEM vers le système de fichiers
-* Téléchargez des packages de votre système de fichiers vers votre instance locale AEM
+* Téléchargement de packages à partir de votre système de fichiers vers votre instance AEM locale
 * Valider le contenu du module avant l’installation
 * Exécution d’une installation à exécution sèche
 * Installer des modules (AEM n’installe pas automatiquement les modules après le chargement)
@@ -75,20 +78,20 @@ La boîte de dialogue **Paramètres du module** est accessible à l’aide du bo
 
 ![packagesedit](assets/packagesedit.png)
 
-| **Champ** | **Description** |
+| **Field (Champ)** | **Description** |
 |---|---|
 | Nom | Nom du package. |
 | Groupe | Nom du groupe auquel ajouter le package, pour l’organisation des packages. Saisissez le nom d’un nouveau groupe ou sélectionnez un groupe existant. |
 | Version | Texte à utiliser pour la version personnalisée. |
-| Description | Brève description du pack. Des balises HTML peuvent être utilisées pour la mise en forme. |
-| Miniature | Icône qui apparaît avec la liste des packages. Cliquez sur Parcourir pour sélectionner un fichier local. |
+| Description | Brève description du package. Des balises HTML peuvent être utilisées pour la mise en forme. |
+| Miniature  | Icône qui s’affiche avec la liste des packages. Cliquez sur Parcourir pour sélectionner un fichier local. |
 
 ![chlimage_1-344](assets/chlimage_1-344.png)
 
 <table> 
  <tbody> 
   <tr> 
-   <th><strong>Champ</strong></th> 
+   <th><strong>Field (Champ)</strong></th> 
    <th><strong>Description</strong></th> 
    <th><strong>Format/Exemple</strong></th> 
   </tr> 
@@ -140,12 +143,12 @@ La boîte de dialogue **Paramètres du module** est accessible à l’aide du bo
 
 ![packages-dépendances](assets/packagesdependencies.png)
 
-| **Champ** | **Description** | **Format/Exemple** |
+| **Field (Champ)** | **Description** | **Format/Exemple** |
 |---|---|---|
-| Testé avec | Nom du produit et version de ce pack ciblés ou compatibles avec. | *AEM 6* |
-| Problèmes/bogues résolus | Champ de texte vous permettant de répertorier les détails des bogues corrigés avec ce paquet. Répertoriez chaque bogue sur une ligne distincte. | bug-nr summary |
-| Dépend de | Répertorie les informations de dépendance qui doivent être respectées lorsque d&#39;autres packages sont nécessaires pour permettre l&#39;exécution du package actuel comme prévu. Ce champ est important lorsque vous utilisez des correctifs. | groupId:name:version |
-| Remplace | Liste des packages obsolètes que ce package remplace. Avant de procéder à l’installation, assurez-vous que ce module contient tout le contenu nécessaire des modules obsolètes afin qu’aucun contenu ne soit remplacé. | groupId:name:version |
+| Testé avec | Nom du produit et version avec lesquels ce pack est ciblé ou compatible. | *AEM 6* |
+| Problèmes/bogues résolus | Un champ de texte vous permettant de liste des détails des bogues corrigés avec ce paquet. Répertoriez chaque bogue sur une ligne distincte. | résumé de bug-nr |
+| Dépend de | Liste les informations de dépendance qui doivent être respectées chaque fois que d&#39;autres paquets sont nécessaires pour laisser le paquet actuel s&#39;exécuter comme prévu. Ce champ est important lorsque vous utilisez des correctifs. | groupId:name:version |
+| Remplace | liste de packages obsolètes que ce package remplace. Avant de procéder à l’installation, assurez-vous que ce module contient tout le contenu nécessaire des modules obsolètes afin qu’aucun contenu ne soit remplacé. | groupId:name:version |
 
 ### Filtres de module {#package-filters}
 
@@ -253,7 +256,7 @@ Pour créer une définition de module :
 
    * **Nom du groupe**
 
-      Nom du groupe cible (ou dossier). Les groupes vous aident à organiser vos modules.
+      Nom de la Population cible (ou du dossier). Les groupes vous aident à organiser vos modules.
 
        Si le dossier n’existe pas encore, il est créé pour le groupe. Si vous ne renseignez pas le nom du groupe, le module est créé dans la liste de modules principale (Accueil > Modules).
 
@@ -266,7 +269,7 @@ Pour créer une définition de module :
        Champ de texte permettant d’indiquer une version. Il sera ajouté au nom du module pour former le nom du fichier ZIP.
    Cliquez sur **OK** pour créer le module.
 
-1. AEM répertorie le nouveau package dans le dossier de groupe approprié.
+1. AEM liste le nouveau package dans le dossier de groupe approprié.
 
    ![packagesitem](assets/packagesitem.png)
 
@@ -392,6 +395,7 @@ Cette section décrit comment télécharger un module d’AEM vers votre systèm
    >
    >
 * Télécharger des modules du [partage de modules vers votre système de fichiers](#downloading-packages-to-your-file-system-from-package-share).
+
 >
 
 
@@ -399,7 +403,7 @@ Cette section décrit comment télécharger un module d’AEM vers votre systèm
 1. On the AEM Welcome screen, click **Packages**, then select **Package Manager**.
 1. Accédez au module à télécharger.
 
-   ![package esdownload](assets/packagesdownload.png)
+   ![packagesdownload](assets/packagesdownload.png)
 
 1. Cliquez sur le lien formé par le nom du fichier ZIP (souligné) pour le module à télécharger, par exemple, `export-for-offline.zip`.
 
@@ -419,17 +423,17 @@ Pour charger un module :
 
    ![packagesuploadbutton](assets/packagesuploadbutton.png)
 
-1. Cliquez sur **Charger un module**.
+1. Cliquez sur **Upload Package** (Télécharger le package).
 
    ![packagesuploaddialog](assets/packagesuploaddialog.png)
 
    * **File**
 
-      **Vous pouvez soit taper directement le nom du fichier, soit utiliser la** fenêtre de navigation... pour sélectionner le package requis dans votre système de fichiers local (après sélection, cliquez sur **OK**).
+      You can either type the file name directly, or use the **Browse...** dialog to select the required package from your local file system (after selection click **OK**).
 
-   * **Forcer le téléchargement**
+   * **Forcer le transfert**
 
-      Si un package portant ce nom existe déjà, vous pouvez cliquer sur ce lien pour forcer le téléchargement (et remplacer le package existant).
+      Si un package portant ce nom existe déjà, vous pouvez cliquer sur celui-ci pour forcer le téléchargement (et remplacer le package existant).
    Cliquez sur **OK** afin que le nouveau module soit chargé et répertorié dans la liste Gestionnaire de modules.
 
    >[!NOTE]
@@ -490,7 +494,7 @@ Ces options sont détaillées ci-dessous.
 
    >[!NOTE]
    >
-   >Notez que le mécanisme de validation ne permet pas de concilier le contenu superposé correctement incorporé dans le fichier d’incrustation. Par conséquent, cette validation continuera à signaler des conflits même après que les modifications nécessaires auront été apportées.
+   >Notez que le mécanisme de validation n’a aucun moyen de rapprocher si le contenu superposé a été correctement incorporé dans le fichier d’incrustation. Par conséquent, cette validation continuera à signaler des conflits même après que les modifications nécessaires auront été apportées.
 
 * **Valider les listes ACL**
 
@@ -553,6 +557,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 >* `osgiPackageImports`
 >* `overlays`
 >* `acls`
+
 >
 >
 The value of `type` defaults to `osgiPackageImports` if not passed.
@@ -585,12 +590,13 @@ Après avoir chargé un module, vous devez installer le contenu. Pour que le con
 >
 >Pour afficher le contenu ou l’impact d’un module, vous pouvez :
 >
->* Effectuez un test d’installation du package sans modifier le contenu :\
-   >  Ouvrez le package (cliquez sur l’icône ou le nom du package) et cliquez sur **Tester l’installation**.
+>* Effectuez une installation de test du package sans modifier le contenu :\
+   >  Ouvrez le package (cliquez sur l’icône ou le nom du package) et cliquez sur **Test Install**.
    >
    >
-* Consultez la liste des contenus des packages :\
+* Voir une liste de contenu de package :\
    >  Ouvrez le package et cliquez sur **Contenu**.
+
 >
 
 
@@ -666,9 +672,10 @@ Pour supprimer un module dans les listes du Gestionnaire de modules :
 
    * Click **Delete** in the toolbar menu.
    * Cliquez avec le bouton droit de la souris et sélectionnez **Supprimer**.
+
    ![packagesdelete](assets/packagesdelete.png)
 
-1. AEM vous demande de confirmer la suppression du package. Cliquez sur **OK** pour confirmer la suppression.
+1. AEM demande de confirmer que vous souhaitez supprimer le package. Cliquez sur **OK** pour confirmer la suppression.
 
 >[!CAUTION]
 >
@@ -716,6 +723,7 @@ Pour accéder au partage de modules :
 
    * vous connecter à l’aide de votre Adobe ID ;
    * [ou créer un Adobe ID](#registering-for-package-share).
+
    >[!NOTE]
    >
    >La première fois que vous vous connectez avec votre Adobe ID, vous devez faire [valider votre adresse électronique](#validating-your-adobe-id).
@@ -747,7 +755,7 @@ Si vous devez accéder au partage de modules, vous devez vous enregistrer afin d
 
 * La [page de connexion du partage de modules](#signing-in-to-package-share) contient un lien pour enregistrer un Adobe ID.
 * Vous pouvez vous enregistrer pour obtenir un Adobe ID à partir de certains logiciels de bureau Adobe.
-* Vous pouvez également vous enregistrer en ligne dans la [page de connexion d’Adobe](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&nl=1).
+* Vous pouvez également vous enregistrer en ligne dans la [page de connexion d’Adobe](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&amp;nl=1).
 
 Il est possible de créer un Adobe ID en indiquant :
 
@@ -885,5 +893,5 @@ Vous ne pouvez supprimer que les modules que vous avez téléchargés en procéd
 
 ### Définition des modules comme modules semi-privés {#making-packages-semi-private}
 
-Vous pouvez partager des modules en dehors de votre entreprise, mais pas publiquement. Ces modules sont considérés comme des modules semi-privés. Pour partager ces modules semi-privés, vous avez besoin de l’aide du support Adobe. À cet effet, ouvrez un ticket auprès du support Adobe en demandant qu’un module soit disponible en dehors de votre entreprise. Ils vous demanderont une liste des ID Adobe que vous souhaitez autoriser à accéder à vos packs.
+Vous pouvez partager des modules en dehors de votre entreprise, mais pas publiquement. Ces modules sont considérés comme des modules semi-privés. Pour partager ces modules semi-privés, vous avez besoin de l’aide du support Adobe. À cet effet, ouvrez un ticket auprès du support Adobe en demandant qu’un module soit disponible en dehors de votre entreprise. Ils vous demanderont une liste de Adobe ID que vous voulez accorder l&#39;accès à vos paquets.
 
