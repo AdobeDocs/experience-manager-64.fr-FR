@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a91fd37e-5975-4572-a4b3-c7e8993d5f88
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 80%
 
 ---
 
@@ -21,7 +24,8 @@ AEM vous dote des outils nécessaires pour configurer votre compte ainsi que cer
 
 Les [paramètres du compte](#account-settings) et les [préférences utilisateur](#user-preferences) permettent de définir les options et préférences suivantes :
 
-* **Barre d’outils d’édition** Indiquez si vous souhaitez que la barre d’outils d’édition globale soit visible. Cette barre d’outils (affichée en haut de la fenêtre du navigateur) met à votre disposition les boutons **Copier**, **Couper**, **Coller** et **Supprimer** utilisables avec les composants de paragraphe sur cette page :
+* **Barre d’outils d’édition** Indiquez si vous souhaitez que la barre d’outils d’édition globale soit visible. Cette barre d’outils, qui s’affiche en haut de la fenêtre du navigateur, vous permet de 
+**Boutons Copier**, **Couper**, **Coller**, **Supprimer** pour une utilisation avec les composants de paragraphe de cette page :
 
    * Afficher lorsque cela s’avère nécessaire (paramètre par défaut)
    * Toujours afficher
@@ -36,7 +40,7 @@ La fonction [Se faire passer pour](/help/sites-administering/security.md#imperso
 Sélectionnez :
 
    * Plusieurs fenêtres (par défaut) : Les pages s&#39;ouvrent dans une nouvelle fenêtre.
-   * Fenêtre unique : Les pages s&#39;ouvrent dans la fenêtre active.
+   * Fenêtre unique : Les pages s&#39;ouvriront dans la fenêtre active.
 
 ## Paramètres du compte {#account-settings}
 
