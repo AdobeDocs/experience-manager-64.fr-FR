@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 10%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ## Présentation {#overview}
 
-Les communautés AEM simplifient la création et la personnalisation de fonctionnalités de la communauté telles que les forums, les groupes d’utilisateurs, les blogs, les questions et réponses, les calendriers, les commentaires, les révisions, le vote, les évaluations et les affectations. Ces fonctions entraînent la saisie de contenu généré par l’utilisateur (UGC) dans l’environnement de publication.
+AEM Communities simplifie la création et la personnalisation de fonctionnalités de la communauté telles que les forums, les groupes d’utilisateurs, les blogs, les questions et réponses, les calendriers, les commentaires, les commentaires, les votes, les évaluations et les affectations. Ces fonctions entraînent la saisie de contenu généré par l’utilisateur (UGC) dans l’environnement de publication.
 
-La fondation d’un site [](overview.md#communitiessites) communautaire est le cadre [des composantes](scf.md) sociales (SCF). La création d&#39;un site communautaire commence par la sélection d&#39;un modèle [de site](sites-console.md) communautaire composé de fonctions [](functions.md)communautaires.
+La fondation d&#39;un site [](overview.md#communitiessites) communautaire est le cadre [des composantes](scf.md) sociales (SCF). La création d&#39;un site communautaire commence par la sélection d&#39;un modèle [de site](sites-console.md) communautaire composé de fonctions [](functions.md)communautaires.
 
-Pour obtenir une présentation et des didacticiels de prise en main, visitez :
+Pour une présentation et des didacticiels de prise en main, visitez :
 
 * [Présentation d’AEM Communities](overview.md)
 * [Prise en main d’AEM Communities](getting-started.md)
@@ -35,22 +38,22 @@ Pour obtenir une présentation et des didacticiels de prise en main, visitez :
 
 ## Déploiements recommandés {#recommended-deployments}
 
-* [Stockage](working-with-srp.md)du contenu de la communauté : décrit les choix SRP disponibles pour une boutique commune UGC
-* [Topologies recommandées pour les communautés](topologies.md): aborde les topologies en fonction de la casse d’utilisation et du choix SRP
+* [Enregistrement](working-with-srp.md)de contenu de la communauté : décrit les options SRP disponibles pour un magasin commun UGC
+* [Topologies recommandées pour les communautés](topologies.md): aborde les topologies en fonction du cas d’utilisation et du choix SRP
 
-## Cadre des composants sociaux {#social-component-framework}
+## Cadre des composantes sociales {#social-component-framework}
 
 * [Cadre](scf.md)des composants sociaux : présentation de la structure et des API
 * [Aide](handlebars-helpers.md)des barres d&#39;outils SCF : assistants par défaut et comment écrire des assistants personnalisés
-* [Personnalisation](client-customize.md)côté client : personnalisation du code s’exécutant dans un navigateur
+* [Personnalisation](client-customize.md)côté client : personnalisation du code s’exécutant dans le navigateur
 * [Personnalisation](server-customize.md)côté serveur : personnalisation du code s’exécutant sur le serveur
-* [Fournisseur de ressources de stockage (SRP)](srp.md): présentation du stockage de contenu de la communauté
+* [Fournisseur de ressources d&#39;Enregistrement (SRP)](srp.md): présentation de l&#39;enregistrement de contenu communautaire
 * [Instructions](code-guide.md)de codage : directives, conseils et astuces
 * [Guide](components-guide.md)des composants de la communauté : outil de développement interactif
 
 ## Composants, fonctions et caractéristiques essentielles {#component-function-and-feature-essentials}
 
-Les composants, fonctions et fonctionnalités des communautés AEM fournissent les blocs de création pour les sites [de](sites-console.md)la communauté.
+Les composants, fonctions et fonctionnalités AEM Communities constituent les éléments de base des sites [](sites-console.md)communautaires.
 
 * [Composants, fonctions et caractéristiques essentielles](essentials.md)
 * [Clientlibs pour les composants Communities](clientlibs.md)
@@ -67,7 +70,7 @@ Les composants, fonctions et fonctionnalités des communautés AEM fournissent l
 
 [Les groupes](overview.md#communitygroups) communautaires sont le concept qui permet aux membres de la communauté de former des sous-communautés au sein du site communautaire. La création d’un groupe communautaire peut se produire dans l’environnement de publication ou d’auteur.
 
-* [Essentials du groupe communautaire](essentials-groups.md)
+* [Groupe communautaire Essentials](essentials-groups.md)
 * [Fonction Groupes](functions.md#groups-function)
 * [Modèles de groupe de communautés](tools-groups.md)
 * [Gestion des utilisateurs et des groupes d’utilisateurs](users.md)
@@ -75,12 +78,12 @@ Les composants, fonctions et fonctionnalités des communautés AEM fournissent l
 
 ## Gestion des données {#managing-data}
 
-* [SRP et UGC Essentials](srp-and-ugc.md) - Exemples et méthodes de l’utilitaire SRP API
-* [Tag Essentials](tag.md) - capacité des membres de la communauté à baliser les ressources d&#39;activation de catalogue et/ou UGC
+* [SRP et UGC Essentials](srp-and-ugc.md) - Exemples et méthodes d&#39;utilitaire SRP API
+* [Tag Essentials](tag.md) : capacité des membres de la communauté à baliser les ressources d&#39;activation des clics numériques et/ou cataloguées
 
 ## Tutoriels {#tutorials}
 
-* [Didacticiels côté client](tutorials.md#client-side-customization)
+* [Didacticiels client](tutorials.md#client-side-customization)
 * [Didacticiels côté serveur](tutorials.md#server-side-customization)
 * [Instructions pratiques](tutorials.md#how-to-instructions)
 
@@ -95,5 +98,5 @@ Les composants, fonctions et fonctionnalités des communautés AEM fournissent l
 
 * Visit [Administering Communities Sites](administer-landing.md) to learn about creating a Community Site, configuring Community Site Templates, moderating community content, managing members, and configuring messaging.
 
-* Visitez [Création de composants](author-communities.md) de communautés pour apprendre à créer et à configurer des composants de communautés.
+* Visitez la page Composants [Communautés](author-communities.md) de création pour découvrir comment créer et configurer des composants Communautés.
 
