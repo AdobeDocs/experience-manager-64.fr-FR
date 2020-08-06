@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 6faa69ee1d38ad16add95263c53f18ea0a413fd2
 workflow-type: tm+mt
 source-wordcount: '1061'
-ht-degree: 47%
+ht-degree: 49%
 
 ---
 
@@ -40,7 +40,7 @@ Pour générer des rapports, veillez à ce que :
 * Téléchargement
 * Expiration
 * Modification
-* Publier
+* Publication 
 * [!DNL Brand Portal] publish
 * Utilisation du disque
 * Fichiers
@@ -63,7 +63,7 @@ Pour générer des rapports, veillez à ce que :
 
    >[!NOTE]
    >
-   >Le rapport [!UICONTROL Télécharger] affiche uniquement les détails des ressources sélectionnées individuellement et téléchargées ou téléchargées à l’aide de l’action rapide. Cependant, il n’inclut pas les détails des ressources qui se trouvaient dans un dossier téléchargé.
+   >The [!UICONTROL Download] report displays details of only those assets which are selected individually and downloaded or downloaded using Quick Action. Cependant, il n’inclut pas les détails des ressources qui se trouvaient dans un dossier téléchargé.
 
 1. Configurez les détails du rapport, tels que le titre, la description, la miniature et le chemin du dossier dans le référentiel CRX où le rapport est stocké. By default, the folder path is `/content/dam`. Vous pouvez spécifier un autre chemin.
 
@@ -120,7 +120,7 @@ Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour affi
 * Téléchargement
 * Expiration
 * Modification
-* Publier
+* Publication 
 * [!DNL Brand Portal] publish
 * Fichiers
 
