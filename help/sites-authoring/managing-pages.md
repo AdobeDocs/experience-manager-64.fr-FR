@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
 translation-type: tm+mt
 source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
+workflow-type: tm+mt
+source-wordcount: '2307'
+ht-degree: 94%
 
 ---
 
@@ -198,12 +201,14 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
 
    * Sélectionnez le modèle à utiliser pour créer la page, puis cliquez ou appuyez sur **Suivant** pour poursuivre.
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
+
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
 1. À l’étape finale de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
    * Utilisez les trois onglets pour accéder aux [propriétés de la page](/help/sites-authoring/editing-page-properties.md) à attribuer à la nouvelle page, puis cliquez ou appuyez sur **Créer** pour réellement créer la page.
    * Cliquez ou appuyez sur **Précédent** pour revenir au choix du modèle.
+
    Les champs clés sont les suivants :
 
    * **Titre** :
@@ -214,6 +219,7 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
       * Il est utilisé pour générer l’URI. Si le nom n’est pas spécifié, il est dérivé du titre.
       * Si vous indiquez le **nom** d’une page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
       * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsque AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
+
    >[!NOTE]
    >
    >Voir [Conventions de dénomination des pages](#page-naming-conventions).
@@ -248,6 +254,7 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-authoring/basic-handling.md#product-navigation) et la barre d’outils
+
    Sélectionnez ensuite l’icône **Modifier** :
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -258,7 +265,7 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 >
 >L’accès à d’autres pages à partir de l’Éditeur de page n’est possible qu’en mode Aperçu, car les liens ne sont pas actifs dans le mode d’édition.
 
-### Copie et collage d’une page    {#copying-and-pasting-a-page}
+### Copier et coller une page   {#copying-and-pasting-a-page}
 
 Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplacement :
 
@@ -267,6 +274,7 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-authoring/basic-handling.md#product-navigation) et la barre d’outils
+
    Sélectionnez ensuite l’icône de page **Copier** :
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
@@ -309,6 +317,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-authoring/basic-handling.md#product-navigation) et la barre d’outils
+
    Sélectionnez ensuite l’icône de page **Déplacer** :
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -319,6 +328,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 
    * Spécifiez le nom à attribuer à la page après son déplacement et cliquez/appuyez sur **Suivant** pour poursuivre.
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
+
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
    Le nom de la page peut être conservé si vous déplacez uniquement la page.
@@ -334,6 +344,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
       * Sélectionnez la destination en cliquant sur sa miniature.
       * Cliquez sur **Suivant** pour continuer.
    * Utilisez la commande **Précédent** pour revenir à l’étape de spécification du nom de la page.
+
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
    >[!NOTE]
@@ -365,12 +376,12 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
    >
    >Par mesure de sécurité, l’icône **Supprimer la page** n’est pas disponible en tant qu’action rapide.
 
-1. Une boîte de dialogue vous demandera de confirmer.
+1. Une boîte de dialogue de confirmation s’affiche.
 
-   * **Voulez-vous archiver les pages avant la suppression ?** - Si cette option est cochée, les versions des pages sélectionnées pour suppression seront créées lors de la suppression.
-      * [Les versions peuvent être restaurées ultérieurement.](/help/sites-authoring/working-with-page-versions.md)
+   * **Voulez-vous archiver les pages avant la suppression ?** – Si cette case est cochée, les versions des pages sélectionnées pour suppression seront créées lors de la suppression.
+      * [Il est possible de restaurer les versions ultérieurement.](/help/sites-authoring/working-with-page-versions.md)
       * Les pages supprimées sans les versions précédentes ne peuvent pas être restaurées.
-      * Cette option est disponible uniquement à partir de la version 6.4.7.0 d’AEM.
+      * Cette option est disponible uniquement à partir de AEM version 6.4.7.0.
    * **Annuler** pour abandonner l’action
    * **Supprimer** pour confirmer l’action :
 
@@ -400,6 +411,7 @@ Vous pouvez créer des dossiers pour classer vos fichiers et vos pages.
 >* Les dossiers ne peuvent être créés que sous **Sites** ou sous d’autres dossiers. Ils ne peuvent pas être créés sous une page.
 >* Les opérations standard (déplacer, copier, coller, supprimer, publier, annuler la publication et afficher/modifier les propriétés) peuvent être effectuées sur un dossier.
 >* Dans une Live Copy, les dossiers ne peuvent pas être sélectionnés.
+
 >
 
 
