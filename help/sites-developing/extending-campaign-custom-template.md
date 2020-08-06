@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c3f6eed4-bbda-454a-88ce-c7f2041d4217
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 59%
 
 ---
 
@@ -29,10 +32,11 @@ Pour créer un modèle de page AEM personnalisé à l’aide de composants de fo
 
    Make sure the page-component inherits from `mcm/campaign/components/profile`.
 
-   Ceci est nécessaire pour que les servlets obtiennent et enregistrent des informations
+   Ceci est nécessaire pour que les servlets obtiennent et enregistrent des informations.
 
    * `com.day.cq.mcm.campaign.servlets.TemplateListServlet`
    * `com.day.cq.mcm.campaign.servlets.SaveProfileServlet`
+
    ![chlimage_1-201](assets/chlimage_1-201.png)
 
 1. **Paramètres de ClientContext**
@@ -41,6 +45,7 @@ Pour créer un modèle de page AEM personnalisé à l’aide de composants de fo
 
    * ClientContext points to `/etc/clientcontext/campaign`
    * Il existe également un nœud *config* supplémentaire.
+
    ![chlimage_1-202](assets/chlimage_1-202.png)
 
 1. **head.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/head.jsp)**
