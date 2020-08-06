@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 95%
 
 ---
 
@@ -29,7 +32,7 @@ It can be accessed from **Tools** -> **General** -> **Components**. Dans la cons
 
 ## Recherche {#search-features}
 
-À l’aide de l’icône **Contenu uniquement** (en haut à gauche), vous pouvez ouvrir le panneau **Rechercher** afin de rechercher et/ou de filtrer les composants :
+Avec l’icône **Contenu uniquement** (en haut à gauche), vous pouvez ouvrir le panneau de **recherche** pour rechercher et/ou filtrer les composants :
 
 ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -52,7 +55,7 @@ Pour afficher les détails correspondant à un composant spécifique, appuyez/cl
       * Cliquez sur le type de super-ressource pour accéder à ce composant.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >Étant donné que les `/apps` ne sont pas modifiables à l’exécution, la console Composants est en lecture seule.
 
 * **Stratégies**
 
@@ -64,7 +67,7 @@ Pour afficher les détails correspondant à un composant spécifique, appuyez/cl
 
    >[!CAUTION]
    >
-   >En raison de la nature des informations collectées pour cette vue, la collecte/l’affichage de ces informations peut nécessiter un certain temps. 
+   >En raison de la nature des informations collectées pour cette vue, la collecte/l’affichage de ces informations peut nécessiter un certain temps.
 
 * **Documentation**
 
