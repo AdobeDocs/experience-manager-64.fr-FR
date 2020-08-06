@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 71%
 
 ---
 
@@ -32,13 +35,13 @@ Pour configurer cela :
 
    Les propriétés sont par exemple les suivantes :
 
-   | **Champ** | **Description** |
+   | **Field (Champ)** | **Description** |
    |---|---|
    | Activé | Sélectionnez **Oui** pour activer les paramètres d’Adobe Classifications. |
    | Remplacer en cas de conflit | Sélectionnez **Oui** pour remplacer toute collision de données. Par défaut, cette option est définie sur **Non**. |
    | Suppression traitée | Si elle est définie sur **Oui**, supprime les nœuds traités après leur exportation. La valeur par défaut est **Faux**. |
    | Description de la tâche d’exportation | Saisissez une description pour la tâche d’Adobe Classifications. |
-   | Message de notification | Entrez une adresse électronique pour la notification des classifications Adobe. |
+   | Message de notification | Entrez une adresse électronique pour la notification des classifications d’Adobes. |
    | Suite de rapports | Saisissez la suite de rapports pour laquelle exécuter la tâche d’importation. |
    | Ensemble de données | Saisissez l’ID de relation de l’ensemble de données pour lequel exécuter la tâche d’importation. |
    | Transformateur | Dans le menu déroulant, sélectionnez une mise en œuvre de transformateur. |
@@ -49,9 +52,9 @@ Pour configurer cela :
 
 ## Modification de la taille des pages {#modifying-page-size}
 
-Les enregistrements sont traités par pages. Par défaut, les classifications Adobe créent des pages d’un format de page de 1 000.
+Les enregistrements sont traités par pages. Par défaut, les classifications d’Adobes créent des pages d’un format de page de 1 000.
 
-Une page peut avoir une taille maximale de 25 000 pages, par définition dans les classifications Adobe et peut être modifiée à partir de la console Felix. Au cours de l’exportation, les classifications Adobe verrouillent le noeud source afin d’empêcher les modifications simultanées. Le nœud est déverrouillé après l’exportation, en cas d’erreur, ou lorsque la session est fermée.
+Une page peut avoir une taille maximale de 25 000 par définition dans les Classifications d&#39;Adobe et peut être modifiée à partir de la console Felix. Au cours de l’exportation, les classifications d’Adobes verrouillent le noeud source afin d’éviter les modifications simultanées. Le nœud est déverrouillé après l’exportation, en cas d’erreur, ou lorsque la session est fermée.
 
 Pour modifier la taille de page :
 
@@ -69,7 +72,7 @@ Pour modifier la taille de page :
 
 Un exportateur peut utiliser un transformateur pour transformer les données d’exportation vers un format spécifique. For Adobe Classifications, a subinterface `SAINTTransformer<String[]>` implementing the Transformer interface has been provided. This interface is used to restrict the data type to `String[]` which is used by the SAINT API and to have a marker interface to find such services for selection.
 
-Dans l’implémentation par défaut de SAINTDefaultTransformer, les ressources enfants de la source de l’exportateur sont traitées comme des enregistrements avec des noms de propriété comme clés et des valeurs de propriété comme valeurs. La colonne **Clé** est automatiquement ajoutée en tant que première colonne ; sa valeur est le nom du nœud. Les propriétés d’espace de noms (contenant :) ne sont pas prises en compte.
+Dans l’implémentation par défaut SAINTDefaultTransformer, les ressources enfants de la source d’exportation sont traitées comme des enregistrements avec des noms de propriété comme clés et des valeurs de propriété comme valeurs. La colonne **Clé** est automatiquement ajoutée en tant que première colonne ; sa valeur est le nom du nœud. Les propriétés espacées de noms (contenant :) ne sont pas prises en compte.
 
 *Structure de nœud :*
 
