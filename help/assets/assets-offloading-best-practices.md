@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1818'
-ht-degree: 74%
+ht-degree: 80%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 74%
 
 >[!WARNING]
 >
->Cette fonction est obsolète à partir de la version 6.4 d’AEM et est supprimée de la version 6.5 d’AEM. Planifiez en conséquence.
+>Cette fonction est obsolète AEM 6.4 et est supprimée dans AEM 6.5. Planifiez en conséquence.
 
-La gestion de fichiers volumineux et l’exécution des workflow dans Adobe Experience Manager (AEM) Assets peuvent utiliser des ressources de processeur, de mémoire et d’E/S considérables. En particulier, la taille des ressources, les workflow, le nombre d’utilisateurs et la fréquence d’assimilation des ressources peuvent affecter les performances globales du système. Les opérations les plus gourmandes en ressources incluent les workflow d’assimilation et de réplication des ressources d’AEM. L’utilisation intensive de ces workflow sur une seule instance de création AEM peut avoir un impact négatif sur l’efficacité de la création.
+La gestion de fichiers volumineux et l’exécution des workflows dans Adobe Experience Manager (AEM) Assets peuvent utiliser des ressources de processeur, de mémoire et d’E/S considérables. En particulier, la taille des ressources, les workflows, le nombre d’utilisateurs et la fréquence d’assimilation des ressources peuvent affecter les performances globales du système. Les opérations les plus gourmandes en ressources incluent les workflows d’assimilation et de réplication des ressources d’AEM. L’utilisation intensive de ces workflows sur une seule instance de création AEM peut avoir un impact négatif sur l’efficacité de la création.
 
 Le déchargement de ces tâches vers des instances de programme de travail dédiées peut réduire les surcharges du processeur, de la mémoire et de l’E/S. En général, l’idée qui sous-tend le déchargement consiste à distribuer les tâches qui utilisent des ressources intensives de processeur, mémoire ou E/S vers des instances de programme de travail dédiées. Les sections suivantes incluent les cas d’utilisation recommandés pour le déchargement des ressources.
 
-## Déchargement des ressources AEM {#aem-assets-offloading}
+## Déchargement AEM Assets {#aem-assets-offloading}
 
-AEM Assets met en œuvre une extension de workflow spécifique aux ressources natives pour le déchargement. AEM Assets s’appuie sur l’extension de workflow générique fournie par la structure de déchargement, mais inclut, dans la mise en œuvre, des fonctionnalités supplémentaires spécifiques aux ressources. L’objectif du déchargement des ressources consiste à exécuter efficacement le workflow Ressources de mise à jour de gestion des actifs numériques sur une ressource chargée. Le déchargement des ressources permet de mieux contrôler les workflow d’assimilation.
+AEM Assets met en œuvre une extension de workflow spécifique aux ressources natives pour le déchargement. AEM Assets s’appuie sur l’extension de workflow générique fournie par la structure de déchargement, mais inclut, dans la mise en œuvre, des fonctionnalités supplémentaires spécifiques aux ressources. L’objectif du déchargement des ressources consiste à exécuter efficacement le workflow Ressources de mise à jour de gestion des actifs numériques sur une ressource chargée. Le déchargement des ressources permet de mieux contrôler les workflows d’assimilation.
 
 ## Composants du déchargement AEM Assets {#aem-assets-offloading-components}
 
@@ -31,19 +31,19 @@ Le diagramme suivant illustre les principaux composants du processus de décharg
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-### Processus Déchargement des ressources de mise à jour de gestion des actifs numériques {#dam-update-asset-offloading-workflow}
+### Workflow Déchargement des ressources de mise à jour de gestion des actifs numériques {#dam-update-asset-offloading-workflow}
 
-Le processus de déchargement des ressources de mise à jour DAM s’exécute sur le serveur principal (auteur) sur lequel l’utilisateur télécharge les ressources. Ce workflow est déclenché par un lanceur de workflow standard. Au lieu de traiter la ressource chargée, ce processus de déchargement crée une nouvelle tâche, en utilisant la rubrique com/adobe/granite/workflow/offloading *.* Le workflow de déchargement ajoute le nom du workflow cible, le workflow Ressources de mise à jour de gestion des actifs numériques dans ce cas, ainsi que le chemin de la ressource permettant d’accéder à la charge utile de la tâche. Après avoir créé la tâche de déchargement, le processus de déchargement sur l’instance principale attend l’exécution de la tâche de déchargement.
+Le processus de déchargement des ressources de mise à jour DAM s’exécute sur le Principal serveur (auteur) sur lequel l’utilisateur télécharge les ressources. Ce workflow est déclenché par un lanceur de workflow standard. Au lieu de traiter la ressource chargée, ce processus de déchargement crée une nouvelle tâche, en utilisant la rubrique *com/adobe/granite/workflow/offloading*. Le workflow de déchargement ajoute le nom du workflow cible, le workflow Ressources de mise à jour de gestion des actifs numériques dans ce cas, ainsi que le chemin de la ressource permettant d’accéder à la charge utile de la tâche. Après la création de la tâche de déchargement, le workflow de déchargement sur l’instance principale ne démarre qu’une fois que la tâche de déchargement a été exécutée.
 
 ### Gestionnaire des tâches {#job-manager}
 
-Le gestionnaire des tâches distribue les nouvelles tâches aux instances de programme de travail. Lors de la conception du mécanisme de distribution, il est important de prendre en compte l’activation de rubrique. Les tâches ne peuvent être affectées qu’à des instances dont la rubrique de la tâche est activée. Disable the topic `com/adobe/granite/workflow/offloading` on the primary, and enable it on the worker to ensure that the job is assigned to the worker.
+Le gestionnaire des tâches distribue les nouvelles tâches aux instances de programme de travail. Lors de la conception du mécanisme de distribution, il est important de prendre en compte l’activation de rubrique. Les tâches ne peuvent être affectées qu’à des instances dont la rubrique de la tâche est activée. Désactivez la rubrique `com/adobe/granite/workflow/offloading` sur l’instance principale et activez-la sur le programme de travail afin de garantir que la tâche est affectée à ce dernier.
 
 ### Déchargement AEM {#aem-offloading}
 
-Le structure de déchargement identifie les tâches de déchargement des workflow affectées aux instances de programme de travail et utilise la réplication pour les transporter physiquement, y compris leur charge utile (par exemple, les images à intégrer), vers les programmes de travail.
+Le structure de déchargement identifie les tâches de déchargement des workflows affectées aux instances de programme de travail et utilise la réplication pour les transporter physiquement, y compris leur charge utile (par exemple, les images à intégrer), vers les programmes de travail.
 
-### Consommateur de tâche du déchargement des workflow {#workflow-offloading-job-consumer}
+### Consommateur de tâche du déchargement des workflows {#workflow-offloading-job-consumer}
 
 Once a job is written on the worker, the job manager calls the job consumer responsible for the *com/adobe/granite/workflow/offloading* topic. Le consommateur de tâche exécute alors le workflow Ressources de mise à jour de gestion des actifs numériques sur la ressource.
 
@@ -65,7 +65,7 @@ La structure de déchargement Granite complète la distribution des tâches Slin
 
 Les tâches Sling distribuées fournissent la structure des tâches et des distributions. Le déchargement Granit prend uniquement en charge le transport dans le cas particulier où les tâches sont distribuées à des instances sans cluster.
 
-En plus du transport, la structure de déchargement fournit une extension du moteur de workflow. Cette extension permet à la structure de créer des tâches distribuées dans le cadre d’un workflow et d’attendre leur achèvement pour que le workflow progresse. L’extension est mise en œuvre à l’aide de l’API d’étape externe des workflow à partir du moteur de workflow. L’une des extensions facilite la distribution générique des workflow. La distribution des étapes d’un workflow unique n’est pas prise en charge.
+En plus du transport, la structure de déchargement fournit une extension du moteur de workflow. Cette extension permet à la structure de créer des tâches distribuées dans le cadre d’un workflow et d’attendre leur achèvement pour que le workflow progresse. L’extension est mise en œuvre à l’aide de l’API d’étape externe des workflows à partir du moteur de workflow. L’une des extensions facilite la distribution générique des workflows. La distribution des étapes d’un workflow unique n’est pas prise en charge.
 
 La structure de déchargement fournit également une interface utilisateur (IU) permettant de visualiser et de contrôler l’activation des rubriques de tâche sur l’ensemble de la topologie. L’interface utilisateur permet de configurer facilement l’activation des rubriques des tâches Sling distribuées. Vous pouvez également configurer le déchargement sans l’interface utilisateur.
 
@@ -76,9 +76,9 @@ Chaque mise en œuvre est unique et, en tant que telle, il n’y a pas de config
 Le déchargement des ressources entraîne également des surcharges du système, notamment des surcharges opérationnelles. Si vous rencontrez des problèmes relatifs à la charge d’assimilation des ressources, Adobe recommande d’améliorer d’abord la configuration sans le déchargement. Pensez aux options suivantes avant de passer au déchargement des ressources :
 
 * Mettez à niveau le matériel
-* Optimisez les workflow
-* Utilisez des workflow transitoires
-* Limitez le nombre de cœurs utilisés pour les workflow
+* Optimisez les workflows
+* Utilisez des workflows transitoires
+* Limitez le nombre de cœurs utilisés pour les workflows
 
 Si vous estimez que le déchargement des ressources est une approche adaptée à vos besoins, Adobe fournit les conseils suivants :
 
@@ -104,10 +104,10 @@ Adobe recommande de désactiver la gestion automatique des agents car elle ne pr
 
 ### Utilisation de la réplication vers l’avant {#using-forward-replication}
 
-Par défaut, le déchargement du transport utilise la réplication inverse pour retirer les actifs déchargés du programme de travail vers le principal. Les agents de réplication inverse ne prennent pas en charge la réplication sans fichier binaire. Vous devez configurer le déchargement pour utiliser la réplication différée afin de repousser les ressources déchargées du programme de travail vers le principal.
+Par défaut, le transport du déchargement utilise la réplication inverse pour transférer les ressources déchargées du programme de travail vers l’instance principale. Les agents de réplication inverse ne prennent pas en charge la réplication sans fichier binaire. Vous devez configurer le déchargement afin d’utiliser la réplication de transfert pour transférer les ressources déchargées du programme de travail vers l’instance principale.
 
 1. If you are migrating from the default configuration using reverse replication, disable or delete all agents named &quot; `offloading_outbox`&quot; and &quot; `offloading_reverse_*`&quot; on primary and worker, where &amp;ast; represents the Sling id of the target instance.
-1. Sur chaque programme de travail, créez un agent de réplication avancé pointant vers le principal. La procédure est la même que la création d&#39;agents de transfert du primaire au travailleur. See [Creating Replication Agents For Offloading](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) for instructions around setting up offloading replication agents.
+1. Sur chaque programme de travail, créez un agent de réplication de transfert pointant vers l’instance principale. La procédure est la même que la création d&#39;agents de transfert de Principal à ouvrier. See [Creating Replication Agents For Offloading](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) for instructions around setting up offloading replication agents.
 1. Ouvrez la configuration pour `OffloadingDefaultTransporter` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`).
 1. Change value of the property `default.transport.agent-to-master.prefix` from `offloading_reverse` to `offloading`.
 
@@ -143,7 +143,7 @@ Pour désactiver le transport du modèle de workflow, modifiez le workflow Déch
 
 ### Optimisation de la fréquence d’interrogation {#optimizing-the-polling-interval}
 
-Le déchargement du flux de travail est implémenté à l’aide d’un flux de travail externe sur le serveur principal, qui interroge la fin du flux de travail déchargé sur le programme de travail. La fréquence d’interrogation par défaut pour les workflow externes est de cinq secondes. Adobe vous recommande d’augmenter l’intervalle d’interrogation de l’étape de déchargement Ressources à au moins 15 secondes afin de réduire la surcharge de déchargement sur le serveur principal.
+Le déchargement du flux de travail est implémenté à l’aide d’un flux de travail externe sur la Principale, qui interroge la fin du flux de travail déchargé sur le travailleur. La fréquence d’interrogation par défaut pour les workflows externes est de cinq secondes. Adobe recommande d’augmenter la fréquence d’interrogation de l’étape de déchargement des ressources à au moins 15 secondes afin de réduire la surcharge de déchargement sur l’instance principale.
 
 1. Open the workflow console from [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 
@@ -158,5 +158,5 @@ Le déchargement du flux de travail est implémenté à l’aide d’un flux de 
 Ce document aborde le déchargement des ressources. Documentation supplémentaire sur le déchargement :
 
 * [Tâches de déchargement](/help/sites-deploying/offloading.md)
-* [Déchargeur des workflow de ressources](/help/sites-administering/workflow-offloader.md)
+* [Déchargeur des workflows de ressources](/help/sites-administering/workflow-offloader.md)
 
