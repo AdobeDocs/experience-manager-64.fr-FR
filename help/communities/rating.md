@@ -1,8 +1,8 @@
 ---
 title: Utilisation des évaluations
 seo-title: Utilisation des évaluations
-description: Ajout d’un composant Évaluation à une page
-seo-description: Ajout d’un composant Évaluation à une page
+description: Ajouter un composant Note à une page
+seo-description: Ajouter un composant Note à une page
 uuid: a986970b-1221-4648-9a69-410f4480e0ae
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 32%
 
 ---
 
 
 # Utilisation des évaluations {#using-ratings}
 
-The `Rating`component is used standalone or in conjunction with other Communities features. Ce composant permet aux membres de la communauté connectés d’exprimer leurs opinions en évaluant le contenu.
+The `Rating`component is used standalone or in conjunction with other Communities features. Ce composant permet aux membres de la communauté connectés d&#39;exprimer leurs opinions en évaluant le contenu.
 
 ## Ajout d’une évaluation à une page {#adding-a-rating-to-a-page}
 
-Pour ajouter un `Rating`composant à une page en mode création, localisez le composant `Communities / Rating` et faites-le glisser vers sa place sur une page, par exemple une position relative à la fonction à évaluer par les membres.
+Pour ajouter un `Rating`composant à une page en mode création, recherchez le composant `Communities / Rating` et faites-le glisser sur sa place sur une page, par exemple une position relative à la fonction à évaluer par les membres.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
