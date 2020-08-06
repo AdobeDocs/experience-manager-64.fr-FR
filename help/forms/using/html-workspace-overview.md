@@ -35,7 +35,7 @@ Pour être informé du processus de bout en bout de création d’une applicatio
 
 Vous pouvez utiliser l’espace de travail AEM Forms pour effectuer les tâches suivantes :
 
-**Début d’un processus d’entreprise :** L’espace de travail AEM Forms catégorie vos processus tels qu’ils ont été conçus et configurés par votre organisation. Vous pouvez ajouter aux favoris les catégories fréquemment utilisées pour pouvoir y accéder rapidement. Lors du démarrage d’un processus, vous remplissez généralement un formulaire pour démarrer un processus d’entreprise contrôlé par le flux de travail des formulaires. Pour plus d’informations, voir [Démarrage des processus](/help/forms/using/starting-processes.md).
+**Début d’un processus d’entreprise :** AEM Forms Workspace catégorie vos processus tels qu’ils ont été conçus et configurés par votre organisation. Vous pouvez ajouter aux favoris les catégories fréquemment utilisées pour pouvoir y accéder rapidement. Lors du démarrage d’un processus, vous remplissez généralement un formulaire pour démarrer un processus d’entreprise contrôlé par le flux de travail des formulaires. Pour plus d’informations, voir [Démarrage des processus](/help/forms/using/starting-processes.md).
 
 **Vue et action sur tâches :** Lorsque vous vue vos listes de tâches, vous voyez les tâches d’un processus d’entreprise qui vous sont affectées, ou à tout groupe auquel vous appartenez, ou qui sont les tâches partagées d’autres utilisateurs. Vous pouvez ouvrir, modifier et effectuer les tâches selon vos besoins. En règle générale, l’exécution d’une tâche implique de fournir des informations, d’approuver ou de rejeter un formulaire. Pour plus d’informations, voir [Utilisation des listes de tâches](/help/forms/using/todo-lists.md).
 
@@ -140,7 +140,7 @@ Vous pouvez personnaliser une grande partie de l’interface et des principales 
 
 Par défaut, pour un nouveau processus, un formulaire XDP est rendu au format PDF sur un bureau d’ordinateur et au format HTML sur une tablette. Il est possible de toujours rendre un formulaire XDP au format HTML. Pour plus d’informations, voir [Nouveaux services de rendu et d’envoi](/help/forms/using/new-render-submit-service.md).
 
-[La fonction Mobile Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) , qui fonctionne avec [les profils](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), permet le rendu HTML des formulaires XDP. Par défaut, « Rendre le nouveau formulaire HTML » utilise le profil `default.html`, qui peut être modifié. Vous pouvez également ajouter des modifications personnalisées qui surviennent avant le rendu d’un formulaire XDP au format HTML.
+[La fonctionnalité Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) mobile, qui fonctionne avec [des profils](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), permet le rendu HTML des formulaires XDP. Par défaut, « Rendre le nouveau formulaire HTML » utilise le profil `default.html`, qui peut être modifié. Vous pouvez également ajouter des modifications personnalisées qui surviennent avant le rendu d’un formulaire XDP au format HTML.
 
 ## Application de l’espace de travail AEM Forms {#aem-forms-workspace-app}
 
