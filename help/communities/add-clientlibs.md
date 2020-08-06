@@ -1,8 +1,8 @@
 ---
 title: Ajouter des bibliothèques clientes
 seo-title: Ajouter des bibliothèques clientes
-description: Ajout d’un dossier ClientLibrary
-seo-description: Ajout d’un dossier ClientLibrary
+description: Ajouter un dossier ClientLibrary
+seo-description: Ajouter un dossier ClientLibrary
 uuid: cdc1d258-2011-4517-9206-dd2b5d1f7e0d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,24 +11,27 @@ content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 8%
 
 ---
 
 
 # Ajouter des bibliothèques clientes {#add-clientlibs}
 
-## Ajout d’un dossier ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
+## Ajouter un dossier ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
-Créez un dossier ClientLibraryFolder nommé `clientlibs`qui contiendra les fichiers JS et CSS utilisés pour rendre les pages de votre site.
+Créez un dossier ClientLibraryFolder nommé `clientlibs`qui contiendra les fichiers JS et CSS utilisés pour générer les pages de votre site.
 
 La valeur de `categories`propriété donnée à cette bibliothèque cliente est l’identifiant utilisé pour inclure directement cette bibliothèque cliente à partir d’une page de contenu ou pour l’incorporer à d’autres bibliothèques clientes.
 
 1. Using **[!UICONTROL CRXDE Lite]**, expand `/etc/designs`
 
-1. Cliquez avec le bouton droit `an-scf-sandbox` et sélectionnez `Create Node`
+1. Cliquez avec le bouton droit sur `an-scf-sandbox` et sélectionnez `Create Node`
 
-   * Nom: `clientlibs`
-   * Type: `cq:ClientLibraryFolder`
+   * Nom : `clientlibs`
+   * Type : `cq:ClientLibraryFolder`
 
 1. Cliquez sur **[!UICONTROL OK]**
 
@@ -42,10 +45,10 @@ Dans l’onglet **[!UICONTROL Propriétés]** du nouveau `clientlibs` noeud, sai
 * Cliquez sur **[!UICONTROL Ajouter]**
 * Cliquez sur **[!UICONTROL Enregistrer tout]**
 
-Remarque : la préface de la valeur de catégories avec &quot;apps&quot;. est une convention permettant d&#39;identifier l&#39;application propriétaire comme se trouvant dans le dossier /apps et non /libs.  IMPORTANT : Ajoutez un espace réservé `js.txt` et `css.txt` des fichiers. (Il ne s’agit pas officiellement d’un dossier cq:ClientLibraryFolder sans eux.)
+Remarque : la préface de la valeur catégories avec &quot;applications&quot;. est une convention permettant d&#39;identifier l&#39;application propriétaire comme se trouvant dans le dossier /apps et non /libs.  IMPORTANT : Ajoutez un espace réservé `js.txt` et `css.txt` des fichiers. (Il ne s’agit pas officiellement d’un cq:ClientLibraryFolder sans eux.)
 
 
-1. Clic droit sur **`/etc/designs/an-scf-sandbox/clientlibs`**
+1. Cliquez avec le bouton droit sur **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Sélectionner **[!UICONTROL Créer un fichier...]**
 1. Enter **[!UICONTROL Name]**: `css.txt`
 
@@ -56,7 +59,7 @@ Remarque : la préface de la valeur de catégories avec &quot;apps&quot;. est un
 
 ![chlimage_1-221](assets/chlimage_1-221.png)
 
-La première ligne de css.txt et js.txt identifie l’emplacement de base à partir duquel les listes de fichiers suivantes doivent être trouvées.
+La première ligne des fichiers css.txt et js.txt identifie l’emplacement de base à partir duquel les listes de fichiers suivantes doivent être trouvées.
 
 Essayez de définir le contenu de css.txt sur :
 
@@ -75,21 +78,21 @@ Créez ensuite un fichier sous clientlibs nommé style.css, puis définissez le 
 
 ## Incorporer les bibliothèques clientes SCF {#embed-scf-clientlibs}
 
-Dans l’onglet **[!UICONTROL Propriétés]** du `clientlibs` noeud, saisissez la propriété Chaîne à plusieurs valeurs **[!UICONTROL incorporée]**. Les bibliothèques côté [client (clientlibs) nécessaires seront ainsi intégrées aux composants](client-customize.md#clientlibs-for-scf)SCF. Pour ce tutoriel, nous ajouterons plusieurs clientlibs nécessaires aux composants Communautés.
+Dans l’onglet **[!UICONTROL Propriétés]** du noeud, saisissez la propriété String à plusieurs valeurs `clientlibs` incorporée ****. Les bibliothèques côté [client (clientlibs) nécessaires seront ainsi incorporées aux composants](client-customize.md#clientlibs-for-scf)SCF. Pour ce tutoriel, nous allons ajouter plusieurs clientlibs nécessaires aux composants Communautés.
 
-**Notez** qu’il peut s’agir de l’approche souhaitée ou non pour un site de production, car il y a des considérations de commodité par rapport à la taille/vitesse des clients téléchargés pour chaque page.
+**Notez** qu’il peut s’agir de l’approche souhaitée pour un site de production, car il y a des considérations de commodité par rapport à la taille/vitesse des clientlibs téléchargés pour chaque page.
 
-Si vous utilisez une seule fonctionnalité sur une page, vous pouvez inclure directement la bibliothèque cliente complète de cette fonctionnalité sur la page, par exemple, &lt;% ui:includeClientLib categories=cq.social.hbs.forum&quot; %>
+Si vous n&#39;utilisez qu&#39;une seule fonction sur une page, vous pouvez inclure directement la bibliothèque cliente complète de cette fonction sur la page, par exemple &lt;% ui:includeClientLib catégories=cq.social.hbs.forum&quot; %>
 
 Dans ce cas, nous les incluons tous, et nous préférerions donc les clientlibs SCF les plus basiques qui sont les clientlibs d&#39;auteur :
 
-* Nom: **`embed`**
-* Type: **`String`**
+* Nom : **`embed`**
+* Type : **`String`**
 
 * Cliquez sur **`Multi`**
-* Valeur: **`cq.social.scf`**
+* Valeur : **`cq.social.scf`**
 
-   *&lt;enter> affiche une boîte de dialogue*
+   *&lt;enter> affiche une boîte de dialogue.*
 
    *Cliquez sur **[+]**après chaque entrée pour ajouter les catégories clientlib suivantes :*
 
@@ -105,31 +108,31 @@ Dans ce cas, nous les incluons tous, et nous préférerions donc les clientlibs 
 
 ![chlimage_1-222](assets/chlimage_1-222.png)
 
-Voici comment `/etc/designs/an-scf-sandbox/clientlibs` apparaître dans le référentiel :
+Voici comment `/etc/designs/an-scf-sandbox/clientlibs` s’afficher dans le référentiel :
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
 ## Inclure les bibliothèques clientes dans le modèle PlayPage {#include-clientlibs-in-playpage-template}
 
-Sans inclure la catégorie `apps.an-scf-sandbox` ClientLibraryFolder sur la page, les composants SCF ne seront pas fonctionnels ni stylisés, car les scripts JavaScript et le ou les styles nécessaires ne seront pas disponibles.
+Sans inclure la catégorie `apps.an-scf-sandbox` ClientLibraryFolder sur la page, les composants SCF ne seront pas fonctionnels ni mis en forme, car les scripts JavaScript et le(s) style(s) nécessaires ne seront pas disponibles.
 
 Par exemple, sans inclure les clientlibs, le composant de commentaires SCF apparaît sans style :
 
 ![chlimage_1-224](assets/chlimage_1-224.png)
 
-Une fois les clients apps.an-scf-sandbox inclus, le composant de commentaires SCF s’affiche avec le style suivant :
+Une fois les clientlibs apps.an-scf-sandbox inclus, le composant de commentaires SCF s’affiche avec le style suivant :
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-L’instruction include appartient au <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> de la section <html> script. La valeur par défaut **`foundation head.jsp`** inclut un script qui peut être superposé : **`headlibs.jsp`**.
+L&#39;instruction include appartient à la variable <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> de la section <html> script. La valeur par défaut **`foundation head.jsp`** inclut un script qui peut être superposé : **`headlibs.jsp`**.
 
 **Copiez headlibs.jsp et incluez clientlibs :**
 
 1. Using **[!UICONTROL CRXDE Lite]**, select **`/libs/foundation/components/page/headlibs.jsp`**
-1. Cliquez avec le bouton droit de la souris et sélectionnez **[!UICONTROL Copier]** (ou sélectionnez Copier dans la barre d’outils).
+1. Cliquez avec le bouton droit et sélectionnez **[!UICONTROL Copier]** (ou sélectionnez Copier dans la barre d’outils).
 1. Sélectionner **`/apps/an-scf-sandbox/components/playpage`**
-1. Cliquez avec le bouton droit et sélectionnez **[!UICONTROL Coller]** (ou choisissez Coller dans la barre d’outils).
-1. Double-cliquez sur **`headlibs.jsp`** pour l’ouvrir.
+1. Cliquez avec le bouton droit et sélectionnez **[!UICONTROL Coller]** (ou sélectionnez Coller dans la barre d&#39;outils).
+1. Doublon cliquer sur **`headlibs.jsp`** pour l&#39;ouvrir
 1. Ajouter la ligne suivante à la fin du fichier
 
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
@@ -147,7 +150,7 @@ L’instruction include appartient au <head><meta http-equiv="Content-Type" cont
 <ui:includeClientLib categories="apps.an-scf-sandbox"/>
 ```
 
-Chargez votre site Web dans le navigateur et voyez si l’arrière-plan n’est pas bleu.
+Chargez votre site Web dans le navigateur et vérifiez si l’arrière-plan n’est pas bleu.
 
 [http://localhost:4502/content/an-scf-sandbox/en/play.html](http://localhost:4502/content/an-scf-sandbox/en/play.html)
 
@@ -155,14 +158,14 @@ Chargez votre site Web dans le navigateur et voyez si l’arrière-plan n’est 
 
 ## Sauver votre travail jusqu&#39;à présent {#saving-your-work-so-far}
 
-A ce stade, il existe un sandbox minimaliste, et il peut être utile d&#39;enregistrer sous forme de package pour que, lors de la lecture, si votre référentiel est corrompu et que vous souhaitez recommencer, vous puissiez désactiver votre serveur, renommer ou supprimer le dossier crx-quickstart/, activer votre serveur, télécharger et installer ce package enregistré, sans avoir à répéter ces étapes de base.
+A ce stade, il existe un sandbox minimaliste, et il peut être utile d&#39;enregistrer sous forme de package pour que, lors de la lecture, si votre référentiel est corrompu et que vous souhaitez le début, vous puissiez désactiver votre serveur, renommer ou supprimer le dossier crx-quickstart/, activer votre serveur, télécharger et installer ce package enregistré, et ne pas avoir à répéter ces étapes les plus basiques.
 
-Ce paquet existe dans le didacticiel [Créer un exemple de page](create-sample-page.md) pour ceux qui ne peuvent pas attendre d&#39;entrer et commencer à jouer!...
+Ce paquet existe sur le tutoriel [Créer un exemple de page](create-sample-page.md) pour ceux qui ne peuvent pas attendre d&#39;entrer et de jouer au début ! ....
 
 Pour créer un pack :
 
 
-* Dans **[!UICONTROL CRXDE Lite]**, cliquez sur l’icône [Package](http://localhost:4502/crx/packmgr/)
+* Dans le **[!UICONTROL CRXDE Lite]**, cliquez sur l’icône [Package](http://localhost:4502/crx/packmgr/)
 * Cliquez sur **[!UICONTROL Créer un package]**
 
    * Nom du module: `an-scf-sandbox-minimal-pkg`
@@ -172,7 +175,7 @@ Pour créer un pack :
 
 * Cliquez sur **[!UICONTROL Modifier]**
 
-   * Onglet **[!UICONTROL Filtres]** de sélection
+   * Onglet Sélectionner les **[!UICONTROL Filtres]**
 
       * Click **[!UICONTROL Add filter]**
       * Chemin racine : &lt;accédez à `/apps/an-scf-sandbox`>
@@ -188,4 +191,4 @@ Pour créer un pack :
 
 * Click **[!UICONTROL Build]**
 
-Vous pouvez maintenant sélectionner **[!UICONTROL Télécharger]** pour l’enregistrer sur le disque et **[!UICONTROL Télécharger le package]** ailleurs, ainsi que **[!UICONTROL Plus > Répliquer]** pour pousser le sandbox vers une instance de publication localhost afin d’étendre le domaine de votre sandbox.
+Vous pouvez maintenant sélectionner **[!UICONTROL Télécharger]** pour l’enregistrer sur le disque et **[!UICONTROL Télécharger le package]** ailleurs, ainsi que sélectionner **[!UICONTROL Plus > Répliquer]** pour pousser le sandbox vers une instance de publication localhost afin de développer le domaine de votre sandbox.
