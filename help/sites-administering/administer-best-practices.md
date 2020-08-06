@@ -1,6 +1,6 @@
 ---
-title: Meilleures pratiques
-seo-title: Meilleures pratiques
+title: Bonnes pratiques
+seo-title: Bonnes pratiques
 description: Découvrez les meilleures pratiques compilées par les équipes d’ingénierie et de conseil d’Adobe pour aider les administrateurs à être opérationnels.
 seo-description: Découvrez les meilleures pratiques compilées par les équipes d’ingénierie et de conseil d’Adobe pour aider les administrateurs à être opérationnels.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
@@ -11,17 +11,20 @@ topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
 source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 95%
 
 ---
 
 
-# Meilleures pratiques{#best-practices}
+# Bonnes pratiques{#best-practices}
 
 La section Meilleures pratiques décrit comment développer, administrer ou utiliser AEM de la manière la plus efficace possible. Cette liste de rubriques, qui évolue constamment, inclut un grand nombre de zones dans AEM.
 
 Une documentation sur les meilleures pratiques est disponible pour les aspects suivants :
 
-* [Assets](#assets)
+* [Ressources](#assets)
 * [Sites](#sites)
 
 Pour connaître les meilleures pratiques concernant la création, le déploiement et la maintenance ou le développement, voir l’une des rubriques suivantes :
@@ -32,15 +35,15 @@ Pour connaître les meilleures pratiques concernant la création, le déploiemen
 
 Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
 
-## Assets {#assets}
+## Ressources {#assets}
 
 Les meilleures pratiques concernant les ressources, y compris les fonctionnalités Dynamic Media et l’intégration de Scene 7, sont décrites dans les rubriques suivantes :
 
 <table> 
  <tbody>
   <tr>
-   <td>Meilleures pratiques dans différents domaines liés aux ressources pour améliorer la stabilité du système et les performances sous charge</td> 
-   <td><a href="/help/assets/organize-assets.md">Meilleures pratiques pour les ressources</a></td> 
+   <td>Meilleures pratiques dans différents domaines liés aux ressources pour améliorer la stabilité et les performances du système en situation de charge</td> 
+   <td><a href="/help/assets/organize-assets.md">Bonnes pratiques pour les ressources</a></td> 
    <td>Inclut des liens vers des guides des meilleures pratiques dans différentes zones autour des ressources. Après avoir consulté ce contenu, vous disposerez des connaissances et des outils vous permettant de créer et gérer un système de gestion de ressources d’entreprise.</td> 
   </tr>
   <tr>
@@ -98,7 +101,7 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
    <td>Décrit les meilleures pratiques lorsque vous travaillez avec des autorisations et droits d’accès </td> 
   </tr>
   <tr>
-   <td>Workflows</td> 
+   <td>Workflows   </td> 
    <td><a href="/help/sites-developing/workflows-best-practices.md#configuration">Meilleures pratiques de workflows : Configuration</a></td> 
    <td>Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM) et peuvent représenter une grande partie du traitement qui se produit dans un environnement AEM. Il est donc hautement recommandé de planifier et de configurer avec soin les implémentations de workflows.</td> 
   </tr>
