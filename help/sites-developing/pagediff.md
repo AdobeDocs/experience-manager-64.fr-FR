@@ -30,7 +30,7 @@ L’outil de comparaison des pages permet à un utilisateur de comparer la page 
 
 Lors de la comparaison de versions d’une page, la version précédente que l’utilisateur souhaite comparer est recréée par AEM en arrière-plan afin de faciliter la comparaison. Ceci est nécessaire pour pouvoir générer le contenu [pour une comparaison](/help/sites-authoring/page-diff.md#presentation-of-differences)côte à côte.
 
-Cette opération de récréation est effectuée par AEM en interne et est transparente pour l’utilisateur et ne nécessite aucune intervention. Cependant, un administrateur qui consulte le référentiel par exemple dans CRX DE Lite voit ces versions recréées dans la structure de contenu.
+Cette opération de loisirs est réalisée par AEM en interne et est transparente pour l&#39;utilisateur et ne nécessite aucune intervention. Cependant, un administrateur qui consulte le référentiel par exemple dans CRX DE Lite voit ces versions recréées dans la structure de contenu.
 
 Selon le niveau de correctif AEM, le comportement est différent et peut nécessiter certaines autorisations pour fonctionner correctement.
 
@@ -40,13 +40,13 @@ Lors de la comparaison du contenu, l’arborescence entière jusqu’à la page 
 
 `/content/versionhistory/<userId>/<site structure>`
 
-En effet, lorsque vous utilisez le mécanisme de différences de page, AEM recrée la version précédente de la page, afin d’utiliser la fonction, l’utilisateur doit disposer de certaines autorisations JCR.
+Parce que, lors de l&#39;utilisation du mécanisme de différences de page, AEM recrée la version précédente de la page, pour utiliser la fonction, l&#39;utilisateur doit disposer de certaines autorisations JCR.
 
 >[!CAUTION]
 >
 >Pour utiliser la fonction de différenciation des pages, l’utilisateur doit disposer de l’autorisation **Modifier/Créer/Supprimer** sur le noeud `/content/versionhistory`.
 
-### A compter de la version 6.4.3 d’AEM {#as-of-aem}
+### Au AEM 6.4.3 {#as-of-aem}
 
 Lors de la comparaison du contenu, l’arborescence entière jusqu’à la page à comparer est recréée à l’emplacement suivant :
 
