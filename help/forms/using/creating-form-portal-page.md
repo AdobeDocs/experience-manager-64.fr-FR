@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 7387dfe8-0029-4ad0-b319-fc519928318b
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1622'
+ht-degree: 74%
 
 ---
 
@@ -28,7 +31,7 @@ Les composants de Forms Portal ne peuvent pas être utilisés par défaut. Assur
 
 Une fois qu’elles sont activées sur une page de sites AEM, ces catégories de composants peuvent être utilisées dans l’explorateur de composants.
 
-![](assets/component-categories.png) Composants du portail AEM Forms dans le navigateur **de composants** Figure : Catégories de composants *Forms Portal*
+![Composants du portail AEM Forms dans le navigateur](assets/component-categories.png)**de composants Figure :** *catégories des composants du portail Forms*
 
 ## Composant Search &amp; Lister {#search-amp-lister-component}
 
@@ -37,9 +40,9 @@ Le composant Search &amp; Lister, disponible dans la catégorie des composants D
 * Le volet Liste, où les formulaires sont répertoriés
 * Le volet Recherche, où ajouter la fonction de recherche
 
-Vous pouvez faire glisser le composant Search &amp; Lister depuis la catégorie de composants Document Services dans l’explorateur de composants vers la page. Une fois ajouté, le composant se présente comme suit.
+Vous pouvez faire glisser et déposer le composant Search &amp; Lister depuis la catégorie de composants Document Services dans l’explorateur de composants sur la page. Une fois ajouté, le composant se présente comme suit.
 
-![](assets/fp-grid-viw.png) Composant Search &amp; Lister dans une page **** Figure : Composant *Search &amp; Lister dans une page avec disposition Grille*
+![Composant Search &amp; Lister dans une page](assets/fp-grid-viw.png)**Figure :** *Composant Search &amp; Lister dans une page avec disposition Grille*
 
 ### Zone de liste {#list-pane}
 
@@ -47,7 +50,7 @@ La zone de liste contient vos formulaires répertoriés. Le composant Search &a
 
 To configure the List pane, tap the Search and Lister component and then tap ![settings_icon](assets/settings_icon.png). La boîte de dialogue **[!UICONTROL Modifier le composant]** s’ouvre.
 
-![](assets/edit-list.png) Volet Liste en mode **de modification** Figure : Volet *Liste en mode d’édition*
+![Volet Liste en mode](assets/edit-list.png)**de modification Figure :** *Volet Liste en mode d’édition*
 
 La boîte de dialogue **[!UICONTROL Modifier]** comprend plusieurs onglets fournissant des options de configuration décrites dans le tableau ci-dessous. Tap **[!UICONTROL OK]** to save the configuration, when done.
 
@@ -152,7 +155,7 @@ La zone de recherche vous permet d’ajouter les composants Date Predicate (attr
 
 **Conseil :** *vous pouvez contrôler la liste des formulaires affichée sur votre portail de formulaires en fonction d’un paramètre prédéfini et masquer la fonctionnalité de recherche pour les utilisateurs finaux. Pour contrôler la liste des formulaires, utilisez les attributs pour appliquer des filtres de recherche. You can also specify the default filter values and disable the search from the Display tab of the Edit Component dialog.*
 
-![](assets/search-with-predicates.png) Panneau de recherche avec attribut **Date, Texte complet, Propriétés et Balises** Figure : Panneau *de recherche avec prédicat Date, Texte complet, Propriétés et Balises*
+![Panneau de recherche avec l’attribut Date, Texte complet, Propriétés et Balises](assets/search-with-predicates.png)**Figure :** *Panneau de recherche avec un attribut Date, Texte complet, Propriétés et Balises*
 
 #### Prédicat de la date {#date-predicate}
 
@@ -163,11 +166,11 @@ Pour configurer l’attribut de date :
 1. Tap the component and then tap ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
 1. Indiquez les informations suivantes :
 
-   * **** Type : La seule option disponible est Date **[!UICONTROL de]** dernière modification.
+   * **[!UICONTROL Type :]** La seule option disponible est Date **[!UICONTROL de la]** dernière modification.
    * **[!UICONTROL Texte]** : libellé ou légende pour l’attribut de date. La valeur par défaut est **[!UICONTROL Date de la dernière modification]**.
-   * **** Étiquette de date de début : Libellé ou légende du champ de date de début.
-   * **** Etiquette de date de fin : Libellé ou légende du champ de date de fin.
-   * **** Masquer : Pour appliquer le filtre de date par défaut à la liste des formulaires.
+   * **[!UICONTROL Étiquette de date de Début :]** Libellé ou légende du champ de date du début.
+   * **[!UICONTROL Libellé de la date de fin :]** Libellé ou légende du champ de date de fin.
+   * **[!UICONTROL Masquer :]** Pour appliquer le filtre de date par défaut aux formulaires de liste.
 
 1. Appuyez sur **[!UICONTROL OK]**.
 
@@ -194,7 +197,7 @@ Pour configurer l’attribut de propriétés, procédez comme suit :
 1. Sélectionnez une propriété dans la liste déroulante et spécifiez un libellé de recherche pour la propriété dans le champ situé sous la liste déroulante.
 1. Répétez l’étape 4 pour ajouter d’autres propriétés. Vous pouvez également indiquer une valeur de filtre par défaut pour répertorier les formulaires basés sur les critères spécifiés et masquer la propriété pour les recherches effectuées par les utilisateurs finaux. Cochez la case Masquer d’une propriété et spécifiez la valeur de filtre par défaut.
 
-   Par exemple, si vous souhaitez afficher les formulaires dont le titre contient le mot « voyage », sélectionnez Masquer à côté de la propriété de titre. En outre, spécifiez Voyage dans la zone de texte Valeur de filtre par défaut.
+   Par exemple, si vous souhaitez afficher les formulaires dont le titre contient le mot « voyage », sélectionnez Masquer à côté de la propriété de titre. En outre, indiquez Voyage dans la zone de texte de valeur de filtre par défaut.
 
 1. Appuyez sur **[!UICONTROL OK]**.
 
@@ -221,11 +224,11 @@ Pour répertorier les formulaires qui sont à l’état Brouillon et ceux qui on
 
 ## Compatibilité avec les périphériques mobiles {#mobile-device-friendliness}
 
-Le composant Search &amp; Lister de Forms Portal est compatible avec les périphériques mobiles et s’adapte en conséquence. Les trois vues par défaut : Grille, Carte, Représentations du panneau en fonction du périphérique sur lequel le site est ouvert, à condition que la page Web s’adapte également. Search &amp; Lister n’est qu’un simple composant et ne contrôle pas le style au niveau de la page.
+Le composant Search &amp; Lister de Forms Portal est compatible avec les périphériques mobiles et s’adapte en conséquence. Les trois vues par défaut : La grille, la carte, les mises en page du panneau en fonction du périphérique sur lequel le site est ouvert, à condition que la page Web s’adapte également. Search &amp; Lister n’est qu’un simple composant et ne contrôle pas le style au niveau de la page.
 
 L’image suivante montre le composant Search &amp; Lister lorsqu’il est ouvert sur un périphérique mobile :
 
-![](assets/search_lister.png) Capture d&#39;écran du composant **** Recherche et énumérateur Figure : Composant *Search &amp; Lister*
+![Capture d&#39;écran du composant](assets/search_lister.png)**Search and Lister Figure :** *Composant Search &amp; Lister*
 
 ## Personnalisation d’une page Forms Portal {#customizing-a-forms-portal-page-br}
 
