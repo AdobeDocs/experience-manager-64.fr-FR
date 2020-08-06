@@ -10,6 +10,9 @@ topic-tags: develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1282'
+ht-degree: 84%
 
 ---
 
@@ -75,7 +78,7 @@ En utilisant Calvin, vous pouvez créer des cas de test dans CRXDE et exécuter 
    <td><p>Interaction de l’interface utilisateur</p> </td> 
    <td> 
     <ul> 
-     <li><a href="https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html#toc2__anchor" target="_blank">Test de l’interaction de l’interface utilisateur avec les objets de formulaire adaptatif</a></li> 
+     <li><a href="https://helpx.adobe.com/fr/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html#toc2__anchor" target="_blank">Test de l’interaction de l’interface utilisateur avec les objets de formulaire adaptatif</a></li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -85,9 +88,9 @@ En utilisant Calvin, vous pouvez créer des cas de test dans CRXDE et exécuter 
 
 Avant d’utiliser cet article pour créer vos cas de test, vous devez savoir ce qui suit :
 
-* Creating test suites and executing test cases using [Hobbes](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)
-* [API JavaScript Hobbes](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/test-api/index.html)
-* [API JavaScript Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
+* Creating test suites and executing test cases using [Hobbes](https://docs.adobe.com/docs/fr/aem/6-3/develop/components/hobbes.html)
+* [API JavaScript Hobbes](https://docs.adobe.com/docs/fr/aem/6-2/develop/ref/test-api/index.html)
+* [API JavaScript Calvin](https://helpx.adobe.com/fr/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
 ## Exemple : créer une suite de tests pour un formulaire adaptatif en utilisant Hobbes comme cadre de test {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
@@ -103,7 +106,7 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
 <table> 
  <tbody> 
   <tr> 
-   <td>Propriétés</td> 
+   <td>Propriété</td> 
    <td>Type</td> 
    <td>Valeur</td> 
   </tr> 
@@ -159,11 +162,11 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
    * Nom : testForm (le nom de votre formulaire)
    * Type : cq:ClientLibraryFolder
 
-1. Ajoutez les propriétés suivantes au noeud nouvellement créé (ici testForm) pour tester un formulaire adaptatif :
+1. Ajoutez les propriétés suivantes au nouveau noeud (ici testForm) pour tester un formulaire adaptatif :
 
    | **Propriété** | **Type** | **Valeur** |
    |---|---|---|
-   | categories | Chaîne[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
+   | categories | Chaîne[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.test.testForm |
    | dependencies | Chaîne[] | granite.testing.calvin.tests |
 
    >[!NOTE]
@@ -174,7 +177,7 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
 
 1. Cliquez avec le bouton droit sur le dossier que vous avez créé pour le formulaire de test (ici testForm) et sélectionnez **[!UICONTROL Créer > Créer un fichier]**. Nommez le fichier scriptingTest.js et ajoutez le code suivant au fichier, puis cliquez sur **[!UICONTROL Enregistrer tout.]**
 
-   Pour utiliser le code suivant afin de tester un autre formulaire adaptatif, modifiez le chemin et le nom du formulaire dans **navigateTo** (lignes 11, 36 et 62) et dans les cas de test respectifs. For more information on APIs for testing different aspects of forms and form objects, see [Calvin APIs](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
+   Pour utiliser le code suivant afin de tester un autre formulaire adaptatif, modifiez le chemin et le nom du formulaire dans **navigateTo** (lignes 11, 36 et 62) et dans les cas de test respectifs. For more information on APIs for testing different aspects of forms and form objects, see [Calvin APIs](https://helpx.adobe.com/fr/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
    ```
    (function(window, hobs) {
@@ -268,7 +271,7 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
     }(window, window.hobs));
    ```
 
-   Le cas de test est créé. Passez à l’exécution du cas de test pour tester les formulaires adaptatifs via Hobbes. For steps for running the test cases, see [Executing Tests in Testing Your UI Using Automated Tests](/help/sites-developing/hobbes.md).
+   Le cas de test est créé. Passez à l’exécution du test pour tester les formulaires adaptatifs via Hobbes. For steps for running the test cases, see [Executing Tests in Testing Your UI Using Automated Tests](/help/sites-developing/hobbes.md).
 
 Vous pouvez également installer le package dans le fichier joint SampleTestPackage.zip pour obtenir les mêmes résultats qu’avec les étapes expliquées dans Exemple : créer une suite de tests pour un formulaire adaptatif en utilisant Hobbes comme cadre de test.
 
@@ -312,7 +315,7 @@ Les étapes de test de vos formulaires adaptatifs AEM sont similaires aux étape
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Term</strong></td> 
+   <td><strong>Terme</strong></td> 
    <td><strong>Description</strong></td> 
   </tr> 
   <tr> 
@@ -324,7 +327,7 @@ Les étapes de test de vos formulaires adaptatifs AEM sont similaires aux étape
    <td><p>Un cas de test représente une tâche effectuée par un utilisateur à l’aide de votre interface utilisateur. Ajoutez des cas de test à votre suite de tests pour tester les activités effectuées par les utilisateurs.</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Actions</p> </td> 
+   <td><p>Actions </p> </td> 
    <td><p>Les actions sont des méthodes qui effectuent un geste dans l’interface utilisateur, par exemple en cliquant sur un bouton ou en remplissant une zone de saisie avec une valeur.</p> <p>Les méthodes des classes hobs.actions.Asserts, hobs.actions.Core et hobs.utils.af sont des actions que vous pouvez utiliser dans vos tests. Toutes les actions sont exécutées de manière synchronisée.</p> </td> 
   </tr> 
   <tr> 
