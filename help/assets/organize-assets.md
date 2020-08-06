@@ -1,6 +1,6 @@
 ---
 title: Organisez vos ressources numériques.
-description: Organisez vos ressources numériques, images, fichiers, dossiers, etc. à l’aide d’Experience Manager.
+description: Organisez vos fichiers numériques, images, fichiers, dossiers, etc. à l’aide du Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
@@ -26,7 +26,7 @@ La méthode la plus élémentaire pour organiser les fichiers consiste à les en
 
    * **Dossiers de développement** : contiennent les ressources numériques que vous utilisez actuellement.
    * **Dossiers de clients** : contiennent des ressources numériques en fonction des clients ou des noms de projet.
-   * **Dossiers** principaux : contient des ressources numériques source d’origine.
+   * **Dossiers** Principal : contient des ressources numériques source d’origine.
    * **Dossiers de rendus** : contiennent les rendus et les copies des ressources numériques sources originales.
    * **Dossiers de taille de fichier** : contiennent des ressources numériques en fonction des tailles de fichier petite, moyenne et volumineuse.
    * **Dossiers intermédiaires** : contiennent les ressources numériques qui sont prêtes à être publiées sur votre site web.
@@ -39,9 +39,9 @@ La méthode la plus élémentaire pour organiser les fichiers consiste à les en
 
 ## Organisation des fichiers à l’aide de balises {#use-tags-to-organize-assets}
 
-Grâce aux balises, en tant que métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de la recherche, augmenter le classement des recherches pour certains fichiers et tirer parti des algorithmes d’IA d’Adobe Sensei pour la découverte de fichiers.
+Grâce aux balises, en tant que métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de la recherche, augmenter le classement des recherches pour certains fichiers et tirer parti des algorithmes d’IA Adobe Sensei pour la découverte de fichiers.
 
-Adobe Experience Manager Assets utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, notre système d&#39;intelligence artificielle et d&#39;apprentissage automatique, qui peut être formé pour reconnaître et appliquer des balises standard et spécifiques à l&#39;entreprise à l&#39;imagerie. Les balises actives peuvent également identifier le contenu, les mots individuels ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
+Adobe Experience Manager Assets utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, notre intelligence artificielle et notre système d&#39;apprentissage automatique, qui peut être formé pour reconnaître et appliquer des balises standard et commerciales à l&#39;imagerie. Les balises actives peuvent également identifier le contenu, les mots individuels ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
 
 Pour plus d’informations, reportez-vous aux articles suivants :
 
@@ -51,7 +51,7 @@ Pour plus d’informations, reportez-vous aux articles suivants :
 
 ## Organiser en tant que collections {#organize-as-collections}
 
-Grâce aux collections de ressources d’Experience Manager Assets, vous pouvez rationaliser la capacité de créer, de modifier et de partager des ressources entre utilisateurs. Créez plusieurs types de collections en fonction de leur utilisation, y compris des collections qui contiennent une liste de référence statique de ressources, de dossiers et de collections, ainsi que des collections qui extraient des ressources en fonction de critères de recherche.  Vous pouvez également créer des collections avec des ressources provenant de différents emplacements et les partager avec plusieurs utilisateurs avec différents niveaux d’accès, d’affichage et de modification des privilèges.
+Grâce aux collections de ressources dans les ressources des Experience Manager, vous pouvez rationaliser la possibilité de créer, de modifier et de partager des ressources entre utilisateurs. Créez plusieurs types de collections en fonction de leur utilisation, y compris des collections qui contiennent une liste de référence statique de ressources, de dossiers et de collections, ainsi que des collections qui extraient des ressources en fonction de critères de recherche.  Vous pouvez également créer des collections avec des ressources provenant de différents emplacements et les partager avec plusieurs utilisateurs avec différents niveaux d’accès, d’affichage et de modification des privilèges.
 
 For more information, see [manage collections](managing-collections-touch-ui.md)
 
