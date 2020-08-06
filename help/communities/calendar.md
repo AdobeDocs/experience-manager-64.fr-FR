@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8b8e74c5-8b65-4117-9ef0-da9d9e47191f
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 42%
 
 ---
 
@@ -23,7 +26,7 @@ La fonction Calendrier offre des informations relatives aux événements de la c
 
 Cette section de la documentation décrit : :
 
-* Ajout de la fonctionnalité de calendrier à un site AEM
+* Ajouter la fonction Calendrier à un site AEM
 * Configuration settings for `Calendar`components
 
 ## Ajout d’un calendrier à une page {#adding-a-calendar-to-a-page}
@@ -56,15 +59,15 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Modéré]**
 
-   Si cette option est cochée, la publication des événements de calendrier et des commentaires doit être approuvée avant qu’ils n’apparaissent sur un site de publication. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, la publication des événements calendaires et des commentaires doit être approuvée avant d&#39;apparaître sur un site de publication. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Fermé]**
 
-   Si cette option est cochée, le calendrier est fermé aux nouvelles entrées d’événement et aux nouveaux commentaires. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, le calendrier est fermé aux nouvelles entrées et aux nouveaux commentaires de événement. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Éditeur de texte enrichi]**
 
-   Si cette option est cochée, les événements de calendrier et les commentaires peuvent être saisis avec une annotation. Cette option est cochée par défaut.
+   Si cette case est cochée, les événements calendaires et les commentaires peuvent être saisis avec une annotation. Cette option est cochée par défaut.
 
 * **[!UICONTROL Autoriser le balisage]**
 
@@ -76,27 +79,27 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Autoriser abonnement]**
 
-   Si cette option est cochée, permettez aux membres de suivre les événements publiés dans le calendrier. Cette option est cochée par défaut.
+   Si cette option est cochée, autorisez les membres à suivre les événements publiés dans le calendrier. Cette option est cochée par défaut.
 
 * **[!UICONTROL Taille maximale du fichier]**
 
-   N’est pertinent que si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 1 048 57 600 (10 Mo).
+   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **[!UICONTROL Types de fichier autorisés]**
 
-   N’est pertinent que si `Allow File Uploads` est coché. Liste d’extensions de fichiers séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
 * **[!UICONTROL Taille max. du fichier image joint]**
 
-   Applicable uniquement si l’option Autoriser les téléchargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
+   N’est pertinent que si l’option Autoriser les téléchargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
 
 * **[!UICONTROL Types autorisés d’image de couverture]**
 
-   Liste séparée par des virgules d’extensions de fichier image avec le séparateur &quot;point&quot;. La valeur par défaut est `.jpg,.jpeg,.png,.gif,.bmp`.
+   liste séparée par des virgules des extensions de fichiers d’image avec le séparateur &quot;point&quot;. La valeur par défaut est `.jpg,.jpeg,.png,.gif,.bmp`.
 
 * **[!UICONTROL Autoriser les réponses à thème]**
 
-   Si cette option est cochée, autorisez les réponses aux commentaires publiés sur l’événement de calendrier. Cette option est cochée par défaut.
+   Si cette option est cochée, autorisez les réponses aux commentaires publiés sur le événement du calendrier. Cette option est cochée par défaut.
 
 * **[!UICONTROL Autoriser les utilisateurs à supprimer les commentaires et événements]**
 
@@ -104,7 +107,7 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Autoriser le vote]**
 
-   Si cette option est cochée, incluez la fonction de vote avec un événement de calendrier. Cette option est cochée par défaut.
+   Si cette case est cochée, incluez la fonction Vote avec un événement de calendrier. Cette option est cochée par défaut.
 
 * **[!UICONTROL Afficher le fil d’Ariane]**
 
@@ -112,11 +115,11 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Filtre de plage de dates]**
 
-   Définit le nombre de jours ajoutés à la date actuelle afin de calculer la valeur &quot;À&quot; du filtre de page de liste des événements de calendrier. Le nombre par défaut est 30.
+   Définit le nombre de jours ajoutés à la date actuelle afin de calculer la valeur &quot;À&quot; du filtre de page de liste des événements du calendrier. Le nombre par défaut est 30.
 
 * **[!UICONTROL Autoriser le contenu proposé]**
 
-   Si cette option est cochée, l’idée peut être identifiée comme contenu [](featured.md)incitatif. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, l’idée peut être identifiée comme contenu [](featured.md)phare. Cette option n’est pas cochée par défaut.
 
 Under the **[!UICONTROL User Moderation]** tab, specify how the posted topics and replies (user generated content) are managed. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
 
@@ -124,15 +127,15 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted topics an
 
 * **[!UICONTROL Refuser les publications]**
 
-   Si cette option est cochée, les modérateurs membres de confiance seront autorisés à refuser les publications et à empêcher leur publication de s’afficher sur le forum public. Cette option est cochée par défaut.
+   Si cette option est cochée, les modérateurs membres de confiance seront autorisés à refuser les publications et à empêcher que la publication ne s&#39;affiche sur le forum public. Cette option est cochée par défaut.
 
 * **[!UICONTROL Fermer/rouvrir les événements]**
 
-   Si cette option est cochée, les modérateurs de membres de confiance peuvent fermer un événement pour apporter d’autres modifications et commentaires et peuvent également rouvrir un événement. Cette option est cochée par défaut.
+   Si cette option est cochée, les modérateurs membres approuvés peuvent fermer un événement pour apporter d&#39;autres modifications et commentaires, et peuvent également rouvrir un événement. Cette option est cochée par défaut.
 
 * **[!UICONTROL Marquer les publications]**
 
-   Si cette option est cochée, autorisez les membres à signaler les événements ou commentaires d’autres personnes comme étant inappropriés. Cette option est cochée par défaut.
+   Si cette option est cochée, autorisez les membres à signaler que les événements ou commentaires d&#39;autrui sont inappropriés. Cette option est cochée par défaut.
 
 * **[!UICONTROL Marquer la liste de motifs]**
 
@@ -140,15 +143,15 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted topics an
 
 * **[!UICONTROL Motif de la marque personnalisée]**
 
-   Si cette option est cochée, autorisez les membres à entrer leur propre raison pour signaler un événement ou un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les membres à indiquer leur propre raison de signaler un événement ou un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Seuil de modération]**
 
-   Entrez le nombre de fois où un événement ou un commentaire doit être marqué par les membres avant que les modérateurs ne soient avertis. La valeur par défaut est 1 (une fois).
+   Indiquez le nombre de fois où un événement ou un commentaire doit être marqué par les membres avant que les modérateurs ne soient avertis. La valeur par défaut est 1 (une fois).
 
 * **[!UICONTROL Limite de marquage]**
 
-   Entrez le nombre de fois où un événement ou un commentaire doit être marqué avant d’être masqué dans la vue publique. Si la valeur est -1, le sujet ou le commentaire marqué est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
+   Indiquez le nombre de fois où un événement ou un commentaire doit être marqué avant d’être masqué dans la vue publique. Si la valeur est -1, le sujet ou le commentaire marqué est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
 
 #### Onglet Champ de balise {#tag-field-tab}
 
@@ -156,7 +159,7 @@ Dans l’onglet **[!UICONTROL Champ de balise]**, les balises qui peuvent être 
 
 * **[!UICONTROL Espaces de noms autorisés]**
 
-   Pertinente si `Allow Tagging` est cochée sous l’onglet **[!UICONTROL Paramètres]** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
+   Pertinent si `Allow Tagging` est coché sous l’onglet **[!UICONTROL Paramètres]** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
 
 * **[!UICONTROL Limite de suggestions]**
 
@@ -172,7 +175,7 @@ Sous l’onglet **[!UICONTROL Traduction]**, si la traduction est activée pour 
 
 * **[!UICONTROL Tout traduire]**
 
-   Si cette option est cochée, l’événement et les commentaires sont traduits dans la langue préférée de l’utilisateur. Cette option est cochée par défaut.
+   Si cette case est cochée, le événement et les commentaires sont traduits dans la langue préférée de l’utilisateur. Cette option est cochée par défaut.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
@@ -195,10 +198,10 @@ When the signed in user is a community member or [privileged member](users.md#pr
 Plus précisément, il est autorisé à :
 
 * Créer un événement de calendrier
-* Publication d’un commentaire sur un événement de calendrier
+* Publier un commentaire sur un événement de calendrier
 * Modifier leur propre événement de calendrier ou commentaire
 * Supprimer leur propre événement de calendrier ou commentaire
-* Marquer les événements ou les commentaires d’autres utilisateurs
+* Marquer les événements ou commentaires du calendrier d’autres utilisateurs
 
 ![chlimage_1-116](assets/chlimage_1-116.png) ![chlimage_1-117](assets/chlimage_1-117.png)
 
