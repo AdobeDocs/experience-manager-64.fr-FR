@@ -237,7 +237,7 @@ Pour localiser un formulaire adaptatif contenant des fragments de formulaire ada
 
    `127.0.0.1 <Host machine>`
 
-   **Ordinateur** hôte : Ordinateur Apple Mac sur lequel les AEM Forms sont déployés.
+   **Ordinateur** hôte : Ordinateur Apple Mac sur lequel AEM Forms est déployé.
 
 ## Fragments de référence {#reference-fragments}
 
