@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f9291151-851a-4aff-a50e-a24330ee0c13
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 78%
 
 ---
 
@@ -25,7 +28,7 @@ Pour de meilleurs résultats, les images utilisées pour l’éclairage par imag
 
 Actuellement, AEM 3D prend uniquement en charge les fichiers TIFF 32 bits. Si nécessaire, utilisez Adobe Photoshop ou un outil similaire pour convertir l’image HDR au format TIFF à l’aide des paramètres suivants dans la boîte de dialogue d’exportation TIFF d’Adobe Photoshop :
 
-* **[!UICONTROL Profondeur]** de bit - 32 bits (flottant)
+* **[!UICONTROL Profondeur]** de bits - 32 bits (flottant)
 * **[!UICONTROL Ordre]** des pixels - Entrelacé (RGBRGB)
 * **[!UICONTROL Compression]** d’images - LZW
 * **[!UICONTROL Ordre]** des octets - IBM PC
@@ -51,24 +54,24 @@ Vous pouvez modifier l’aspect de la scène IBL grâce aux propriétés de scè
    <td><strong>Description</strong></td> 
   </tr> 
   <tr> 
-   <td>Détails sur IBL Sun</td> 
+   <td>Détails de l'IBL Sun</td> 
    <td><p>Permet d'ajuster la direction et la force de la source lumineuse supplémentaire qui simule le soleil. <span class="diff-html-added">Cette source lumineuse augmente la luminosité de l’éclairage et fait en sorte que l’objet diffuse une ombre portée sur le sol. La projection d’ombre est prise en charge lors du rendu avec Rapid Refine et pour une prévisualisation avec Google Chrome. Toutefois, elle n’est actuellement pas prise en charge par les autres navigateurs.</span></p> 
     <ul> 
-     <li><strong>lat</strong> - Position verticale de la source lumineuse (<code>0.0</code>-<code>1.0</code>).<br /> Un paramètre de <code>0.0</code> est à l’horizon (centre vertical de l’image de l’environnement d’éclairage diffus) ; est <code>1.0</code> au zénith (bord supérieur de l’image de l’environnement d’éclairage diffus).</li> 
-     <li><strong>long</strong> - Position horizontale de la source lumineuse (<code>0.0</code>-<code>1.0</code>).<br /> Un paramètre de 0,0 correspond à gauche ; 1.0 correspond au bord droit de l’image de l’environnement d’éclairage diffus.<br /> </li> 
-     <li><strong>clair</strong> - La luminosité de la source de lumière du soleil. Augmentez cette valeur pour éclaircir la source lumineuse et réduisez-la pour l’assombrir. <br /> Le paramètre <code>0</code> Désactive l’éclairage supplémentaire et désactive les ombres portées. Le paramètre n’affecte pas les reflets de l’environnement.<br /> </li> 
+     <li><strong>lat</strong> - Position verticale de la source de lumière du soleil (<code>0.0</code>-<code>1.0</code>).<br /> Un paramètre de <code>0.0</code> est à l'horizon (centre vertical de l'image de l'Environnement d'éclairage diffus); <code>1.0</code> est au zénith (bord supérieur de l'Environnement d'éclairage diffus).</li> 
+     <li><strong>long</strong> - Position horizontale de la source de lumière du soleil (<code>0.0</code>-<code>1.0</code>).<br /> Un paramètre de 0,0 correspond à gauche ; 1.0 correspond au bord droit de l'Environnement d'éclairage diffus.<br /> </li> 
+     <li><strong>clair</strong> - Luminosité de la source de lumière du soleil. Augmentez cette valeur pour éclaircir la source lumineuse et réduisez-la pour l’assombrir. <br /> Un paramètre de <code>0</code> désactivation de l’éclairage supplémentaire et désactive les ombres projetées. Le paramètre n’affecte pas les reflets de l’environnement.<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Hauteur de l'appareil photo IBL</td> 
-   <td>Si l’arrière-plan IBL semble déformé près de l’horizon, il est possible de réduire ou d’éliminer la distorsion en ajustant cette propriété. <br /> </td> 
+   <td>Hauteur de la caméra IBL</td> 
+   <td>Si l'arrière-plan IBL apparaît déformé près de l'horizon, il est possible de réduire ou d'éliminer la distorsion en ajustant cette propriété. <br /> </td> 
   </tr> 
   <tr> 
-   <td>Eclairage de l’environnement</td> 
+   <td>Éclairage des Environnements</td> 
    <td><p><span class="diff-html-added">Permet de contrôler l’éclairage diffus. Vous devrez peut-être régler cette propriété manuellement pour corriger la luminosité de l’éclairage si l’image Environnement d’éclairage diffus est anormalement claire ou sombre (pour les scènes nocturnes, par exemple).</span></p> 
     <ul> 
      <li><strong>r, g, b</strong> - Actuellement non utilisé.</li> 
-     <li><strong>clair</strong> - Multiplicateur de <span class="diff-html-added">luminosité. Ajustez cette valeur pour augmenter ou réduire l’intensité lumineuse globale (éclairage de base IBL et luminosité de la source lumineuse solaire).</span></li> 
+     <li><strong>clair</strong> - multiplicateur <span class="diff-html-added">de luminosité. Ajustez cette valeur pour augmenter ou réduire l’intensité lumineuse globale (éclairage de base IBL et luminosité de la source lumineuse solaire).</span></li> 
     </ul> </td> 
   </tr> 
  </tbody> 
