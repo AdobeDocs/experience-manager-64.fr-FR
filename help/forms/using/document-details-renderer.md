@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '678'
+ht-degree: 66%
 
 ---
 
@@ -29,7 +32,7 @@ Ce document explique le fonctionnement de ces rendus du point de vue de la perso
 
 ## Formulaires PDF {#pdf-forms}
 
-Les formulaires PDF sont générés par `PdfTaskForm View`.
+Les PDF forms sont rendus par `PdfTaskForm View`.
 
 Lorsqu’un formulaire XDP est rendu au format PDF, un `FormBridge` JavaScript™ est ajouté par le service FormsAugmenter. Ce JavaScript™ (dans le formulaire PDF) permet d’effectuer des actions telles que l’envoi d’un formulaire, la sauvegarde d’un formulaire ou la mise hors ligne d’un formulaire.
 
@@ -37,13 +40,13 @@ In AEM Forms workspace, PDFTaskForm view communicates with the `FormBridge`javas
 
 **Vue PDFTaskForm - pdf.html**
 
-Communique avec `window.postMessage` / `window.attachEvent('message')`
+Communication à l’aide de `window.postMessage` / `window.attachEvent('message')`
 
 Cette méthode est la méthode standard de communication entre un cadre parent et un iframe. Les écouteurs d’événement existants issus de formulaires PDF précédemment ouverts sont supprimés avant d’en ajouter un nouveau. Cette purge tient également compte du passage de l’onglet Formulaire à l’onglet Historique et vice-versa dans la vue Détails de la tâche.
 
 **PDF.html -`FormBridge`javascript dans le PDF rendu**
 
-Communique avec `pdfObject.postMessage` / `pdfObject.messageHandler`
+Communication à l’aide de `pdfObject.postMessage` / `pdfObject.messageHandler`
 
 Cette méthode est la méthode standard de communication avec un javascript PDF d’un HTML. La vue PdfTaskForm prend aussi en charge le PDF aplati et effectue le rendu clair.
 
@@ -61,7 +64,7 @@ Ce javascript est différent de celui des formulaires PDF décris ci-dessus, mai
 
 >[!NOTE]
 >
->Il n’est pas recommandé de modifier le contenu du  NewHTMLTaskForm.
+>Il n’est pas recommandé de modifier le contenu de la vue NewHTMLTaskForm.
 
 ## Guides et formulaires Flex {#flex-forms-and-guides}
 
@@ -85,9 +88,9 @@ Les applications tierces sont rendues à l’aide de la vue ExtAppTaskForm.
 
 AEM Forms workspace listens on `window.global.postMessage([Message],[Payload])`
 
-[Le message] peut être une chaîne spécifiée comme `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`dans le `runtimeMap`. Les applications tierces doivent utiliser cette interface pour avertir l’espace de travail AEM Forms selon les besoins. L’utilisation de cette interface est obligatoire, car l’espace de travail AEM Forms doit savoir que lorsque le est envoyé, il peut nettoyer la fenêtre de  de.
+[Le message] peut être une chaîne spécifiée comme `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`dans le `runtimeMap`. Les applications tierces doivent utiliser cette interface pour avertir AEM Forms Workspace si nécessaire. L’utilisation de cette interface est obligatoire, car l’espace de travail AEM Forms doit savoir que lorsque la tâche est envoyée, il doit pouvoir nettoyer la fenêtre de tâche.
 
-**Communication entre l’espace de travail AEM Forms et l’application tierce**
+**Communication de l’espace de travail AEM Forms à une application tierce**
 
 Si les boutons d’action directe de l’espace de travail AEM Forms sont visibles, il appelle `window.[External-App-Name].getMessage([Action])`, où [ `Action]` est lu à partir du `routeActionMap`. The third-party application must listen on this interface, and then notify AEM Forms workspace via the `postMessage ()` API.
 
