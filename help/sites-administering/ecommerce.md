@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
 translation-type: tm+mt
 source-git-commit: eb1ae2b4910e7adef48865996db4837175f588d9
+workflow-type: tm+mt
+source-wordcount: '776'
+ht-degree: 79%
 
 ---
 
 
 # eCommerce{#ecommerce}
 
-* [Concepts](/help/sites-administering/concepts.md)
+* [Concepts ](/help/sites-administering/concepts.md)
 * [Administration (générique)](/help/sites-administering/generic.md)
 * [SAP Commerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
 * [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
@@ -30,11 +33,11 @@ Adobe propose deux versions de la structure d’intégration de Commerce :
 | Versions d’AEM prises en charge | AEM sur site ou AMS 6.x | AEM AMS 6.4 et 6.5 |
 | Back-end | - AEM, Java <br> - Intégration monolithique, mappage de pré-génération (modèle)<br> - référentiel JCR | - Magento <br>- Java et JavaScript <br>- Aucune donnée commerciale stockée dans le référentiel JCR |
 | Frontal | Pages rendues côté serveur AEM | Application de page mixte (rendu hybride) |
-| Catalogue de produits | - Importateur de produits, éditeur, mise en cache dans AEM <br>- Catalogues réguliers avec AEM ou pages proxy | - Pas d&#39;importation de produit <br>- Modèles génériques <br>- Données à la demande via un connecteur |
+| Catalogue de produits | - Importateur de produits, éditeur, mise en cache dans AEM <br>- Catalogues réguliers avec des pages AEM ou proxy | - Pas d&#39;importation de produit <br>- Modèles génériques <br>- Données à la demande via un connecteur |
 | Évolutivité | - Peut prendre en charge jusqu&#39;à quelques millions de produits (selon le cas d&#39;utilisation) <br> - Mise en cache du répartiteur | - Aucune limitation de volume <br>- Mise en cache sur le répartiteur ou le CDN |
 | Modèle de données normalisé | Non | Oui, schéma Magento GraphQL |
-| Disponibilité | <br> Oui : - SAP Commerce Cloud (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4 <br>- Salesforce Commerce Cloud (Connector open-source pour prendre en charge AEM 6.4) | Oui via open source via GitHub. <br> Magento Commerce (prend en charge Magento 2.3.2 (par défaut) et compatible avec Magento 2.3.1). |
-| Quand utiliser la personnalisation | Cas d’utilisation limités : Dans les cas où des catalogues statiques de petite taille peuvent être importés | Solution conseillée dans la plupart des cas d’utilisation |
+| Disponibilité | Oui :<br> - Commerce Cloud SAP (Extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4 <br>- Commerce Cloud Salesforce (Connector open-source pour prendre en charge AEM 6.4) | Oui via open source via GitHub. <br> Magento Commerce (prend en charge Magento 2.3.2 (par défaut) et compatible avec Magento 2.3.1). |
+| Quand utiliser la personnalisation | Cas d&#39;utilisation limités : Dans les cas où de petits catalogues statiques peuvent avoir besoin d’être importés | Solution conseillée dans la plupart des cas d’utilisation |
 
 Conjointement avec la gestion d’informations sur les produits, eCommerce gère les activités d’un site web de vente de produits dans une boutique en ligne :
 
@@ -76,6 +79,7 @@ AEM eCommerce fournit ce qui suit :
    * Produits récemment affichés
    * Bons
    * Autres
+
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    >[!NOTE]
@@ -88,6 +92,7 @@ AEM eCommerce fournit ce qui suit :
    * Recherche du système de commerce électronique
    * Recherche tierce (Search&amp;Promote par exemple)
    * Ou une combinaison de ces trois fonctions
+
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
 * Uses the AEM ability to **present your content on multiple channels**, be that full browser window or mobile device. Ainsi, vous proposez votre contenu au format nécessaire pour vos visiteurs.
@@ -102,6 +107,7 @@ AEM eCommerce fournit ce qui suit :
 
    * Par exemple, une réduction des frais de livraison proposée lorsque le montant total d’une commande dépasse un montant spécifique.
    * Autre exemple : la possibilité de proposer des offres à certaines occasions à partir des informations de profil (tel le lieu). Ces possibilités peuvent ensuite être mises en avant, là encore en fonction d’autres facteurs, si nécessaire.
+
    Dans l’exemple ci-dessous, un teaser est affiché lorsque le contenu du panier est inférieur à 75 $ :
 
    ![chlimage_1-153](assets/chlimage_1-153.png)
