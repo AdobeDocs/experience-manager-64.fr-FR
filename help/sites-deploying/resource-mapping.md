@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ddfacc63-1840-407e-8802-3730009c84f0
 translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 61%
 
 ---
 
@@ -66,7 +69,7 @@ Les listes associe **un modèle**, une expression régulière correspondant à l
 
 Par exemple :
 
-**Modèle**`^[^/]+/[^/]+/welcome$`
+**Modèle** `^[^/]+/[^/]+/welcome$`
 
 déclenche :
 
@@ -123,7 +126,7 @@ To create the mapping that prefixes any request to http://localhost:4503/ with `
 
 1. Cliquez sur **Enregistrer tout**.
 
-Cette opération traitera une requête telle que :\
+Cela permettra de traiter une demande telle que :\
 `localhost:4503/geometrixx/en/products.html`\
 comme si :\
 `localhost:4503/content/geometrixx/en/products.html`\
