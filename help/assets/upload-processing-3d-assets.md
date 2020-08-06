@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 78%
 
 ---
 
@@ -21,7 +24,7 @@ Utilisez les mécanismes de synchronisation ou de chargement standard pour impor
 
 Voir la section [Chargement des ressources](managing-assets-touch-ui.md#uploading-assets).
 
-Adobe vous recommande de télécharger tous les fichiers référencés avant ou en même temps que le fichier de modèle 3D principal. Cependant, ceci n’est pas obligatoire.
+L&#39;Adobe vous recommande de télécharger tous les fichiers référencés avant ou en même temps. Il vous est recommandé de télécharger le Principal fichier de modèle 3D. Cependant, ceci n’est pas obligatoire.
 
 Une fois le téléchargement terminé, vos fichiers 3D sont convertis et un traitement supplémentaire est appliqué afin de préparer la ressource en vue de la visualisation et du rendu.
 
@@ -56,19 +59,19 @@ Des mécanismes sont disponibles pour limiter l’utilisation du processeur pour
 
 ## Surveillance de l’état du traitement de vos fichiers 3D chargés {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. Chaque modèle 3D téléchargé subit généralement les étapes de traitement triées suivantes :
+In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. Chaque modèle 3D téléchargé subit généralement les quatre ou six étapes de traitement ordonnées suivantes :
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Etape de traitement</strong><br /> </td> 
+   <td><strong>Phase de traitement</strong><br /> </td> 
    <td><strong>Noms de traitement</strong></td> 
    <td><strong>Description</strong></td> 
   </tr> 
   <tr> 
    <td>1</td> 
    <td>Traitement en cours</td> 
-   <td>Traitement initial de base et extraction de métadonnées.</td> 
+   <td>extraction initiale de base du traitement et des métadonnées.</td> 
   </tr> 
   <tr> 
    <td>2</td> 
@@ -77,17 +80,17 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   </tr> 
   <tr> 
    <td>3</td> 
-   <td>Création d’un aperçu</td> 
+   <td>Création de prévisualisation</td> 
    <td>Le fichier FBX ou OBJ est assimilé et traité. Les dépendances de fichier sont évaluées et résolues en tant que références de ressources, si possible.</td> 
   </tr> 
   <tr> 
    <td>4</td> 
-   <td>Création d’ombre au sol</td> 
+   <td>Création d'une ombre au sol</td> 
    <td>Facultatif. Vous permet de générer une ombre portée pour l’occlusion ambiante sur le plan de masse dans l’objet 3D. Voir Paramètres <a href="/help/assets/advanced-config-3d.md">de configuration</a> avancés pour activer ou désactiver ce traitement.</td> 
   </tr> 
   <tr> 
    <td>5<br /> </td> 
-   <td>Création de cartes graphiques</td> 
+   <td>Création de cartes lumineuses</td> 
    <td>Facultatif. Vous pouvez ainsi augmenter la qualité de l’aperçu interactif et accélérer le rendu avec le convertisseur par défaut. Voir Paramètres <a href="/help/assets/advanced-config-3d.md">de configuration</a> avancés pour activer ou désactiver ce traitement.</td> 
   </tr> 
   <tr> 
