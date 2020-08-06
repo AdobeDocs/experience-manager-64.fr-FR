@@ -10,6 +10,9 @@ topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 translation-type: tm+mt
 source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 42%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
 
 Vous pouvez utiliser les API Form Bridge pour ouvrir un canal de communication entre des formulaires HTML5 XFA et vos applications. The Form Bridge APIs provides a **connect** API to create the connection.
 
-L’API de **connexion** accepte un gestionnaire en tant qu’argument. Après la création d’une connexion réussie entre un formulaire HTML5 XFA et Form Bridge, le gestionnaire est appelé.
+L’API de **connexion** accepte un gestionnaire en tant qu’argument. Après la création d’une connexion réussie entre un formulaire HTML5 XFA et Form Bridge, la poignée est appelée.
 
 Vous pouvez utiliser l’exemple de code suivant pour créer la connexion.
 
@@ -44,22 +47,22 @@ window.addEventListener("FormBridgeInitialized",
 Renvoie le numéro de version de la bibliothèque de script.
 
 * **Input** : aucune
-* **Output**: Numéro de version de la bibliothèque de scripts
+* **Output**: Numéro de version de la bibliothèque de script
 * **Errors** : aucune
 
-**isConnected()** Vérifie si l’état du formulaire a été initialisé
+**isConnected()** Vérifie si l’état du formulaire a été initialisé.
 
 * **Input** : aucune
 * **Output**: **True** si l’état du formulaire XFA a été initialisé
 
 * **Errors** : aucune
 
-**connect(handler, context)** établit une connexion à FormBridge et exécute la fonction une fois la connexion établie et l’état du formulaire initialisé.
+**connect(handler, context)** Se connecte à FormBridge et exécute la fonction après avoir établi la connexion et initialisé l’état du formulaire.
 
 * **Entrée**:
 
    * **handler** : fonction à exécuter après la connexion de Form Bridge
-   * **contexte**: Objet pour lequel le contexte (this) de la fonction *handler *est défini.
+   * **contexte**: Objet pour lequel le contexte (ceci) de la fonction *handler *est défini.
 
 * **Output** : aucune
 * **Error** : aucune
@@ -79,21 +82,21 @@ Renvoie le numéro de version de la bibliothèque de script.
 * **Output :** aucune
 * **Error :** aucune
 
-**registerConfig(configName, config)** Enregistre les configurations spécifiques à l’utilisateur/au portail avec FormBridge. Ces configurations remplacent les configurations par défaut. Les configurations prises en charge sont spécifiées dans la section config.
+**registerConfig(configName, config)** Enregistre les configurations spécifiques des utilisateurs/portails avec FormBridge. Ces configurations remplacent les configurations par défaut. Les configurations prises en charge sont spécifiées dans la section config.
 
 * **Entrée:**
 
-   * **** configName : Nom de la configuration à remplacer
+   * **configName :** Nom de la configuration à remplacer
 
-      * **** widgetConfig : Permet à l’utilisateur de remplacer les widgets par défaut du formulaire par des widgets personnalisés. La configuration est remplacée comme suit :
+      * **widgetConfig :** Permet à l’utilisateur de remplacer les widgets par défaut dans le formulaire par des widgets personnalisés. La configuration est remplacée comme suit :
 
          formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})
 
-      * **** pagingConfig : Permet à l’utilisateur de remplacer le comportement par défaut du rendu de la première page uniquement. La configuration est remplacée comme suit :
+      * **pagingConfig :** Permet à l’utilisateur de remplacer le comportement par défaut du rendu de la première page uniquement. La configuration est remplacée comme suit :
 
          window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).
 
-      * **** LoggingConfig : Permet à l’utilisateur de remplacer le niveau de journalisation, de désactiver la journalisation d’une catégorie ou d’afficher la console des journaux ou de l’envoyer au serveur. La configuration peut être remplacée comme suit :
+      * **LoggingConfig :** Permet à l’utilisateur de remplacer le niveau de journalisation, de désactiver la journalisation d’une catégorie ou d’afficher la console des journaux ou de l’envoyer au serveur. La configuration peut être remplacée comme suit :
 
       ```css
       formBridge.registerConfig{  
@@ -107,7 +110,7 @@ Renvoie le numéro de version de la bibliothèque de script.
         }
       ```
 
-      * **** SubmitServiceProxyConfig : Permet aux utilisateurs d’enregistrer les services proxy d’envoi et de journalisation.
+      * **SubmitServiceProxyConfig :** Permet aux utilisateurs d’enregistrer les envois et de consigner les services proxy.
 
          ```css
          window.formBridge.registerConfig("submitServiceProxyConfig",  
@@ -129,7 +132,7 @@ Renvoie le numéro de version de la bibliothèque de script.
 
 * **Entrée:**
 
-   * **** fieldArray : Tableau des expressions Som pour les champs à masquer
+   * **fieldArray :** Tableau des expressions Som des champs à masquer
 
 * **Output :** aucune
 * **Error :** aucune
@@ -138,12 +141,12 @@ Renvoie le numéro de version de la bibliothèque de script.
 
 * **Entrée:**
 
-   * **** fieldArray : Tableau des expressions Som pour les champs à afficher
+   * **fieldArray :** Tableau des expressions Som des champs à afficher
 
 * **Output :** aucune
 * **Error :** aucune
 
-**hideSubmitButtons()** Masque tous les boutons d’envoi du formulaire
+**hideSubmitButtons()** Masque tous les boutons d’envoi du formulaire.
 
 * **Input** : aucune
 * **Output** : aucune
@@ -152,7 +155,7 @@ Renvoie le numéro de version de la bibliothèque de script.
 **getFormState()** Renvoie le JSON représentant l’état du formulaire
 
 * **Input :** aucune
-* **** Output : Objet contenant JSON représentant l’état actuel du formulaire dans la propriété *data* .
+* **Output :** Objet contenant JSON représentant l’état actuel du formulaire dans la propriété *data* .
 
 * **Error :** aucune
 
@@ -160,11 +163,11 @@ Renvoie le numéro de version de la bibliothèque de script.
 
 * **Entrée:**
 
-   * **** Options : Objet JavaScript contenant les propriétés suivantes :
+   * **Options :** Objet JavaScript contenant les propriétés suivantes :
 
       * **Error**: Error Handler Function
       * **success** : fonction du gestionnaire de réussite
-      * **contexte**: Objet auquel le contexte (ceci) de la fonction *success* est défini
+      * **contexte**: Objet pour lequel le contexte (ceci) de la fonction *success* est défini
       * **formState** : état JSON du formulaire. Le formulaire est restauré à l’état JSON.
 
 * **Output :** aucune
@@ -172,7 +175,7 @@ Renvoie le numéro de version de la bibliothèque de script.
 
 **setFocus (som)** Définit la cible d’action sur le champ spécifié dans l’expression Som
 
-* **** Input : Expression om du champ sur lequel définir la cible d’action
+* **Input :** expression du champ sur lequel définir la cible d’action
 * **Output :** aucune
 * **Error :** renvoie une exception si l’expression Som est incorrecte
 
@@ -180,16 +183,16 @@ Renvoie le numéro de version de la bibliothèque de script.
 
 * **Entrée:**
 
-   * **som :** tableau contenant les expressions Som du champ. Expression som pour définir la valeur des champs.
-   * **** value : Tableau contenant des valeurs correspondant aux expressions Som fournies dans un tableau **som** . Si le type de données de la valeur n’est pas identique à fieldType, la valeur n’est pas modifiée.
+   * **som :** tableau contenant les expressions Som du champ. expression de définition de la valeur des champs.
+   * **value:** Tableau contenant les valeurs correspondant aux expressions Som fournies dans un tableau **som** . Si le type de données de la valeur n’est pas identique à fieldType, la valeur n’est pas modifiée.
 
 * **Output :** aucune
-* **** Erreur : Lance une exception en cas d’expression Som incorrecte.
+* **Erreur :** Lance une exception en cas d’expression Som incorrecte.
 
 **getFieldValue (som)** Renvoie la valeur des champs pour les expressions Som données
 
-* **** Input : Tableau contenant les expressions Som des champs dont la valeur doit être récupérée
-* **** Output : Objet contenant le résultat sous forme de tableau dans la propriété **data** .
+* **Input :** Tableau contenant les expressions Som des champs dont la valeur doit être récupérée
+* **Output :** Objet contenant le résultat sous forme de tableau dans la propriété **data** .
 
 * **Error :** aucune
 
@@ -213,17 +216,17 @@ if(a.errors) {
    * **som :** tableau contenant les expressions Som des champs
    * **property** : nom de la propriété dont la valeur est requise
 
-* **** Output : Objet contenant le résultat sous forme de tableau dans *data *property
+* **Output :** Objet contenant le résultat sous forme de tableau dans *data *property
 
 * **Error :** aucune
 
-**setFieldProperties(som, property, values)** Définit la valeur de la propriété donnée pour tous les champs spécifiés dans les expressions Som
+**setFieldProperties(som, property, values)** Définit la valeur de la propriété donnée pour tous les champs spécifiés dans les expressions Som.
 
 * **Entrée:**
 
-   * **** som : Tableau contenant les expressions Som des champs dont la valeur doit être définie
+   * **som :** Tableau contenant les expressions Som des champs dont la valeur doit être définie
    * **property **: propriété dont la valeur doit être définie
-   * **** value : Tableau contenant les valeurs de la propriété donnée pour les champs spécifiés dans les expressions Som
+   * **value:** Tableau contenant les valeurs de la propriété donnée pour les champs spécifiés dans les expressions Som
 
 * **Output :** aucune
 * **Error :** aucune
