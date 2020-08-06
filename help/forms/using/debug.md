@@ -71,7 +71,7 @@ Vérifiez les paramètres suivants :
 
    (com.adobe.livecyclescala-lang.bundle)
 
-   * Rendu de formulaires XFA Adobe
+   * Adobe de rendu XFA Forms
 
    (com.adobe.livecycle.adobe-lc-forms-core)
 
