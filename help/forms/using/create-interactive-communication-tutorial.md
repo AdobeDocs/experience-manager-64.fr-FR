@@ -58,6 +58,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
    1. Specify **create_first_ic_print_template** as the Print template and tap **Select**. Ensure that the **Use Print as Master for Web Channel** checkbox is not selected.
    1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
    1. Appuyez sur **Créer**. 
+
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
 1. Appuyez sur **Modifier** pour ouvrir la communication interactive dans le volet droit.
@@ -118,6 +119,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
    1. Specify **create_first_ic_print_template** as the Print template and tap **Select**. Ensure that the **Use Print as Master for Web Channel** checkbox is not selected.
    1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
    1. Appuyez sur **Créer**. 
+
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
 1. Appuyez sur **Modifier** pour ouvrir la communication interactive dans le volet droit.
@@ -170,6 +172,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
    1. Dans la section **Bordure**, spécifiez **1,5 px** comme **largeur de bordure**, sélectionnez **Solide** comme **style de bordure** et spécifiez **46 px** comme **rayon de bordure**.
    1. Sélectionnez Rouge comme couleur d’arrière-plan pour le bouton dans la section **Arrière-plan**.
    1. Dans le champ **Marge** de la section **Dimensions et position**, appuyez sur l’icône **Modifier simultanément** et définissez la marge de **droite** à **450 px**. Les zones Haut, Bas et Gauche sont définies comme vides.
+
    ![ic_web_hyperlink](assets/ic_web_hyperlink.png)
 
 1. Tap **Pay Now** target area, and tap **+** to add an **Image** component.
@@ -198,6 +201,7 @@ Exécutez les étapes suivantes pour dériver le contenu du canal web à l’aid
    1. Select the **Use Print as Master for Web Channel** checkbox.
    1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
    1. Appuyez sur **Créer**. 
+
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
 1. Appuyez sur **Modifier** pour ouvrir la communication interactive dans le volet droit.
@@ -221,6 +225,7 @@ Exécutez les étapes suivantes pour dériver le contenu du canal web à l’aid
    * Composant Récapitulatif de facturation dans le panneau Récapitulatif de facturation
    * Composant Récapitulatif des frais dans le panneau Récapitulatif des frais
    * Fragment de mise en page (tableau) dans le panneau Appels détaillés
+
    ![ic_web_content_tree](assets/ic_web_content_tree.png)
 
 1. Répétez les étapes 13 à 18 de la section [Créer une communication interactive pour canal web](#create-interactive-communication-for-web-channel) pour insérer les hyperliens **Payer maintenant** et **S’abonner** dans le canal web de la communication interactive.
