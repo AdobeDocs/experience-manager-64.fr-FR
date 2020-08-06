@@ -36,7 +36,7 @@ Les principaux aspects de la notation et des badges sont les suivants :
 
 >[!CAUTION]
 >
->La structure d’implémentation visible dans CRXDE Lite peut être modifiée une fois que l’interface utilisateur est disponible.
+>La structure d’implémentation visible dans le CRXDE Lite peut être modifiée une fois que l’interface utilisateur est disponible.
 
 ## Badges {#badges}
 
@@ -213,9 +213,9 @@ Les sous-règles sont des noeuds de type `cq:Page` avec des propriétés sur son
 <table> 
  <tbody> 
   <tr> 
-   <th>Propriétés</th> 
+   <th>Propriété</th> 
    <th>Type</th> 
-   <th> Description de la valeur</th> 
+   <th> Valeur Description</th> 
   </tr> 
   <tr> 
    <td><i><code>VERB</code></i></td> 
@@ -352,9 +352,9 @@ La `scoringRules`propriété d’une règle de badge limite simplement les règl
 <table> 
  <tbody> 
   <tr> 
-   <th>Propriétés</th> 
+   <th>Propriété</th> 
    <th>Type</th> 
-   <th>Description de la valeur</th> 
+   <th>Valeur Description</th> 
   </tr> 
   <tr> 
    <td>seuils</td> 
@@ -586,15 +586,15 @@ Si la fonction ne fonctionne pas comme prévu, assurez-vous que les données ont
 
 Il est possible d’essayer rapidement de marquer et de marquer des points à l’aide du site [Getting Started Tutorial](getting-started.md) (engager) :
 
-* Accès à CRXDE Lite sur l’auteur
+* Accéder au CRXDE Lite sur l’auteur
 * Accédez à la page de base :
 
    * /content/sites/learn/fr/jcr:content
 
 * Ajoutez la propriété badgingRules :
 
-   * **Name** (Nom) : `badgingRules`
-   * **Type**: `String`
+   * **Nom** : `badgingRules`
+   * **Type** : `String`
    * Sélectionner **[!UICONTROL plusieurs]**
    * Sélectionner le **[!UICONTROL Ajoute]**
    * Enter `/etc/community/badging/rules/forums-badging`
@@ -604,8 +604,8 @@ Il est possible d’essayer rapidement de marquer et de marquer des points à l�
 
 * Ajoutez la propriété scoringRules :
 
-   * **Name** (Nom) : `scoringRules`
-   * **Type**: `String`
+   * **Nom** : `scoringRules`
+   * **Type** : `String`
    * Sélectionner **[!UICONTROL plusieurs]**
    * Sélectionner le **[!UICONTROL Ajoute]**
    * Enter `/etc/community/scoring/rules/forums-scoring`
@@ -619,15 +619,15 @@ Il est possible d’essayer rapidement de marquer et de marquer des points à l�
 
 Ensuite, assurez-vous que les composants du forum et des commentaires permettent l&#39;affichage des badges :
 
-* Utilisation de CRXDE Lite
+* Utilisation de nouveau du CRXDE Lite
 * Accédez au composant de forum
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
 * Si nécessaire, Ajoutez la propriété booléenne allowBadges et assurez-vous qu’elle est vraie.
 
-   * **Name** (Nom) : `allowBadges`
-   * **Type**: `Boolean`
+   * **Nom** : `allowBadges`
+   * **Type** : `Boolean`
    * **Valeur**: `true`
 
 ![chlimage_1-371](assets/chlimage_1-371.png)
