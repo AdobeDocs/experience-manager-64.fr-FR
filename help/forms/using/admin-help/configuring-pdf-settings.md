@@ -333,7 +333,7 @@ Si vous avez sélectionné Aucune pour Fichier de paramètres, la zone Stratégi
 
 **Ne pas modifier la couleur :** permet de ne pas modifier les couleurs dépendantes du périphérique et de conserver les couleurs indépendantes du périphérique en tant qu’équivalent le plus proche possible dans le PDF. Cette option s’avère utile pour les ateliers d’impression ayant étalonné l’ensemble de leurs périphériques, ayant utilisé ces informations pour définir les couleurs du fichier et qui impriment uniquement sur ces périphériques.
 
-**Référencer les balises pour la gestion des couleurs :** Incorpore un profil International Color Consortium lors de la conversion de fichiers et de l’étalonnage des couleurs dans les images, ce qui rend les couleurs des fichiers PDF obtenus indépendantes du périphérique si vous avez sélectionné la compatibilité Acrobat 4 (PDF 1.3) ou versions ultérieures. Cependant, les espaces colorimétriques dépendants du périphérique des fichiers (RVB, Niveaux de gris et CMJN) sont convertis en espaces colorimétriques de référence (CalRVB, CalGray et LAB).
+**Référencer les balises pour la gestion des couleurs :** Incorpore un profil International Color Consortium lors de la conversion de fichiers et de l’étalonnage des couleurs dans les images, ce qui rend les couleurs des fichiers PDF résultants indépendantes du périphérique si vous avez sélectionné la compatibilité Acrobat 4 (PDF 1.3) ou ultérieure. Cependant, les espaces colorimétriques dépendants du périphérique des fichiers (RVB, Niveaux de gris et CMJN) sont convertis en espaces colorimétriques de référence (CalRVB, CalGray et LAB).
 
 **Baliser uniquement les images pour la gestion des couleurs :** Incorpore les profils ICC uniquement dans les images, et non dans le texte ou les graphiques, lors de la conversion de fichiers si vous avez sélectionné la compatibilité Acrobat 4 (PDF 1.3). Cela empêche le texte noir de subir une variation chromatique. Cependant, les espaces colorimétriques dépendants du périphérique des images (RVB, Niveaux de gris et CMJN) sont convertis en espaces colorimétriques de référence (CalRVB, CalGray et LAB). Les textes et les graphiques ne sont pas convertis.
 
@@ -399,7 +399,7 @@ Ces options avancées permettent d’indiquer les commentaires DSC à conserver 
 
 Les options avancées permettent de mieux comprendre le langage PostScript et la manière dont il est traduit en PDF (Voir[ adobe postscript 3](https://www.adobe.com/products/postscript/main.html)).
 
-**Autoriser le fichier PostScript à remplacer les paramètres PDF Adobe :** Utilise les paramètres stockés dans un fichier PostScript au lieu du fichier de paramètres PDF Adobe actif. Avant de traiter un fichier PostScript, vous pouvez placer des paramètres dans le fichier pour contrôler les aspects suivants :
+**Autoriser le fichier PostScript à remplacer les paramètres Adobe PDF :** Utilise les paramètres stockés dans un fichier PostScript au lieu du fichier de paramètres Adobe PDF actif. Avant de traiter un fichier PostScript, vous pouvez placer des paramètres dans le fichier pour contrôler les aspects suivants :
 
 * la compression du texte et des graphiques,
 * le sous-échantillonnage et l’encodage des images échantillonnées,
@@ -407,7 +407,7 @@ Les options avancées permettent de mieux comprendre le langage PostScript et la
 
 **Autoriser les XObjects au format PostScript :** Les XObjects PostScript stockent des informations qui s’affichent sur de nombreuses pages du même fichier, telles qu’une image d’arrière-plan ou des informations d’en-tête et de pied de page. Leur utilisation peut contribuer à accélérer l’impression, mais nécessite une plus grande mémoire d’imprimante. Pour empêcher la création de XObjects au format PostScript, désélectionnez cette option si vous créez des fichiers PDF avec une compatibilité Acrobat 5 (PDF 1.4) ou versions ultérieures.
 
-**Convertir les dégradés en ombres lissées :** permet de convertir les fondus en ombres lissées pour Acrobat 4 et versions ultérieures, ce qui réduit la taille des fichiers PDF et peut améliorer la qualité de la sortie finale. PDF Generator convertit les dégradés issus d’Adobe Illustrator, Adobe InDesign, Adobe Freehand MX, CorelDraw, Quark XPress et Microsoft PowerPoint.
+**Convertir les dégradés en ombres lissées :** permet de convertir les fondus en ombres lissées pour Acrobat 4 et les versions ultérieures, ce qui réduit la taille des fichiers PDF et peut améliorer la qualité de la sortie finale. PDF Generator convertit les dégradés issus d’Adobe Illustrator, Adobe InDesign, Adobe Freehand MX, CorelDraw, Quark XPress et Microsoft PowerPoint.
 
 **Convertir les lignes lissées en courbes :** Réduit la quantité de points de contrôle utilisés pour créer des courbes dans des dessins CAO, ce qui se traduit par des PDF plus petits et un rendu plus rapide à l’écran.
 
@@ -469,7 +469,7 @@ Pour plus d’informations sur l’accès aux options de rapport et conformité 
 
 **Si aucune zone de rognage ou d’illustration n’est spécifiée :** Disponible lorsque l’option Norme de conformité de la page Rapports et conformité des normes est définie sur une autre option que Aucune.
 
-**Signaler comme erreur :** Signale le fichier PostScript comme non conforme si l’une des options de rapports est sélectionnée et qu’une zone de rognage ou une zone graphique est manquante dans une page.
+**Report As Error:** Flags the PostScript file as noncompliant if one of the reporting options is selected and a trim box or art box is missing from any page.
 
 **Définir la zone de rognage sur la zone de support avec des décalages :** Calcule les valeurs en points de la zone de rognage en fonction des décalages de la zone de support des pages respectives si aucune zone de rognage ni zone graphique n’est spécifiée. La zone de rognage est toujours aussi petite ou plus petite que la zone de support qui l’entoure.
 
