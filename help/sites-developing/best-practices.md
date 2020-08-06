@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
 source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 77%
 
 ---
 
@@ -34,7 +37,7 @@ Avant de commencer votre projet de développement AEM, passez en revue ces bonne
 
 ### Informations supplémentaires sur les bonnes pratiques {#additional-best-practices-information}
 
-La documentation disponible dans les domaines suivants est spécifique à l’élaboration des meilleures pratiques :
+La documentation disponible dans les domaines suivants porte sur l&#39;élaboration des meilleures pratiques :
 
 * [Sites](#sites)
 * [Communities](/help/sites-developing/best-practices.md#communities)
@@ -79,13 +82,13 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
 
 ## Communities {#communities}
 
-[Les communautés](/help/communities/overview.md) AEM simplifient la création et la gestion des communautés sur site.
+[AEM Communities](/help/communities/overview.md) simplifie la création et la gestion de communautés sur site.
 
 Les bonnes pratiques pour AEM Communities sont présentées ici :
 
 |  |  |  |
 |---|---|---|
-| Recommandations relatives à l’utilisation du contenu généré par l’utilisateur (UGC) | [Consignes de codage](/help/communities/code-guide.md) | Directives pour le développement de code portable flexible pour le cadre [des composants](/help/communities/scf.md) sociaux (SCF). |
+| Recommandations relatives à l’utilisation du contenu généré par l’utilisateur (UGC) | [Consignes de codage](/help/communities/code-guide.md) | Lignes directrices pour le développement de code flexible et portable pour le cadre [des composants](/help/communities/scf.md) sociaux (SCF). |
 | Exemple d’utilisation des composants Communities | [Guide de composants de communauté](/help/communities/components-guide.md) | Un outil de développement interactif. |
 
 ## Outillage/HTL {#tooling-htl}
@@ -99,6 +102,6 @@ HTML Template Language (HTL) est un nouveau système de modèle HTML, introduit 
 
 >[!NOTE]
 >
->Le didacticiel en plusieurs parties suivant peut s’avérer intéressant pour la meilleure pratique de configuration d’un nouveau projet AEM, en détaillant les composants principaux, les modèles modifiables, les bibliothèques client et le développement de composants :\
+>Le didacticiel en plusieurs parties suivant peut présenter un intérêt pour la meilleure pratique de configuration d’un nouveau projet AEM, en détaillant les composants principaux, les modèles modifiables, les bibliothèques client et le développement de composants :\
 >[Prise en main du développement AEM Sites – Tutoriel WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
