@@ -1,6 +1,6 @@
 ---
-title: Meilleures pratiques
-seo-title: Meilleures pratiques
+title: Bonnes pratiques
+seo-title: Bonnes pratiques
 description: Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
 seo-description: Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
 source-git-commit: ef7e013fc36bc06025b0cdedf9038c33206e4a1a
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 82%
 
 ---
 
 
-# Meilleures pratiques{#best-practices}
+# Bonnes pratiques{#best-practices}
 
 Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
 
 Une documentation sur les meilleures pratiques est disponible pour les aspects suivants :
 
-* [Assets](#assets)
+* [Ressources](#assets)
 * [Sites](#sites)
 * [Formulaires](#forms)
 
@@ -33,7 +36,7 @@ Pour connaître les meilleures pratiques en matière d’administration, de dép
 
 Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
 
-## Assets {#assets}
+## Ressources {#assets}
 
 Les meilleures pratiques concernant les ressources, y compris les fonctionnalités Dynamic Media et l’intégration de Scene 7, sont décrites dans les rubriques suivantes :
 
@@ -66,9 +69,9 @@ Les meilleures pratiques concernant les ressources, y compris les fonctionnalit�
 
 Les meilleures pratiques en termes de création et de gestion du contenu de votre site web sont les suivantes :
 
-Création : Environnement et outils [Auteur](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fournit un aperçu de la création de pages.
+Création : [environnement et outils](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) Auteur - Fournit un aperçu de la manière de créer des pages.
 
-## Forms {#forms}
+## Formulaires {#forms}
 
 Formulaires adaptatifs : [Meilleures pratiques pour l’utilisation des formulaires](/help/forms/using/adaptive-forms-best-practices.md) adaptatifs : décrit les meilleures pratiques pour la configuration, la création et la personnalisation des formulaires adaptatifs.
 
