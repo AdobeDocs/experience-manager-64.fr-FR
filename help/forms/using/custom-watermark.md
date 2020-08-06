@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: a09e2c83-083d-427a-8336-0567e00c5712
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 58%
 
 ---
 
@@ -24,7 +27,7 @@ Pour éviter l’utilisation non autorisée de ces données, les entreprises peu
 
 To enable the watermark in preview PDF, select the **[!UICONTROL Apply Watermark]** During Preview option in **[!UICONTROL Correspondence Management Configurations]** at `https://[server]:[port]/system/console/configMgr`.
 
-![default-watermark](assets/default-watermark.png)
+![filigrane par défaut](assets/default-watermark.png)
 
 Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’apparence du filigrane :
 
@@ -39,15 +42,15 @@ Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’ap
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/configFiles/previewwatermark
+      **Chemin :** /libs/fd/cm/configFiles/previewwatermark
 
-      **** Emplacement de l’incrustation : /apps/
+      **Emplacement de l’incrustation :** /apps/
 
-      **** Faire correspondre les types de noeud : Coché
+      **Faire correspondre les types de noeud :** Coché
 
       >[!NOTE]
       >
-      >N&#39;apportez pas de modifications dans la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
+      >N&#39;apportez aucune modification à la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
       >
       >* Effectuez une mise à niveau sur votre instance
       >* Appliquez un correctif
