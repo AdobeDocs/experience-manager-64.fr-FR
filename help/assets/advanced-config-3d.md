@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: e43fd002-2954-4ef1-ac2b-e8d45afa75be
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '1383'
+ht-degree: 61%
 
 ---
 
@@ -84,16 +87,16 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), access
  </tbody> 
 </table>
 
-## Paramètres de configuration des services Cloud {#cloud-services-configuration-settings}
+## Paramètres de configuration Cloud Services {#cloud-services-configuration-settings}
 
-Les valeurs des paramètres suivants sont fournies par votre gestionnaire de compte Adobe, votre expert en attribution de privilèges d’accès ou votre représentant du service d’assistance.
+Les valeurs des paramètres suivants sont fournies par votre gestionnaire de compte d’Adobe, votre expert en attribution de privilèges d’accès ou votre représentant de l’assistance.
 
 | **Chemin** | **Description** |
 |---|---|
-| `/libs/settings/dam/v3D/services/aws/accountId` | ID de compte du compte Adobe AWS. |
-| `/libs/settings/dam/v3D/services/aws/bucketName` | nom du compartiment de transfert S3; normalement `aem3d`. |
-| `/libs/settings/dam/v3D/services/aws/customerId` | ID unique attribué par Adobe à votre organisation. Utilisé comme identifiant utilisateur AWS Cognito. |
-| `/libs/settings/dam/v3D/services/aws/encryptedPassword` | mot de passe associé à ce customerId. Utilisé comme mot de passe AWS Cognito. |
+| `/libs/settings/dam/v3D/services/aws/accountId` | ID du compte AWS Adobe. |
+| `/libs/settings/dam/v3D/services/aws/bucketName` | Nom du compartiment de transfert S3 ; normalement `aem3d`. |
+| `/libs/settings/dam/v3D/services/aws/customerId` | ID unique attribué par Adobe à votre organisation. Utilisé en tant qu’ID utilisateur de cookie AWS. |
+| `/libs/settings/dam/v3D/services/aws/encryptedPassword` | Mot de passe associé à cet ID de client. Utilisé comme mot de passe AWS Cognito. |
 | `/libs/settings/dam/v3D/services/aws/region` | Région AWS dans laquelle les services cloud sont déployés. |
 | `/libs/settings/dam/v3D/services/aws/userPoolId` | ID du pool d’utilisateurs AWS Cognito applicable. |
 | `/libs/settings/dam/v3D/services/dncr/clientId` | ID client AWS Cognito pour le service de conversion dncr. |
