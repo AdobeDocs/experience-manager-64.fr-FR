@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 7dd851ab-3fa7-426e-89cb-08b67e9b5999
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '196'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Le diagramme suivant indique comment est structurée la prise en charge multisite du contenu ciblé.
 
-Areas appear underneath **/content/campaigns/&lt;brand>** and by default each brand has a master area, which is created automatically. Chaque zone contient son propre ensemble d’activités, d’expériences et d’offres.
+Les zones apparaissent sous **/content/campaigns/&lt;marque>** et par défaut chaque marque comporte une zone maître, qui est créée automatiquement. Chaque zone contient son propre ensemble d’activités, d’expériences et d’offres.
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 
