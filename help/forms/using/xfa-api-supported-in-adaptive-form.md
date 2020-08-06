@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 87%
 
 ---
 
@@ -80,8 +83,8 @@ Lorsqu’un formulaire adaptatif est créé à l’aide d’un fichier XDP, vous
    <td><p>Image</p> </td> 
   </tr>
   <tr>
-   <td><p>Texte</p> </td> 
-   <td><p>Texte</p> </td> 
+   <td><p>Text (Texte)</p> </td> 
+   <td><p>Text (Texte)</p> </td> 
   </tr>
   <tr>
    <td><p>Sous-formulaire </p> </td> 
@@ -118,7 +121,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
   </tr>
   <tr>
    <td><p>access </p> </td> 
-   <td><p>Associé à la propriété activée dans le formulaire adaptatif. Vous pouvez le remplacer à l’aide de l’expression Access.</p> </td> 
+   <td><p>Associé à la propriété activée dans le formulaire adaptatif. Vous pouvez le remplacer à l’aide de l’expression d’accès.</p> </td> 
   </tr>
   <tr>
    <td><p>Accessibilité : role </p> </td> 
@@ -150,7 +153,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
   </tr>
   <tr>
    <td><p>items<em> (List Box, Check Box)</em></p> </td> 
-   <td><p>Associé à la propriété options dans le formulaire adaptatif. Vous pouvez le remplacer à l’aide de l’expression Options.</p> </td> 
+   <td><p>Associé à la propriété options dans le formulaire adaptatif. Vous pouvez la remplacer à l’aide de l’expression Options.</p> </td> 
   </tr>
   <tr>
    <td><p>maxChar<em> (Text Field)</em></p> </td> 
