@@ -13,7 +13,7 @@ ht-degree: 40%
 
 # Mettre vos fichiers en filigrane {#watermarking}
 
-Les ressources d’Adobe Experience Manager (AEM) vous permettent d’ajouter un filigrane numérique aux images afin d’aider les utilisateurs à vérifier l’authenticité et la propriété des ressources par copyright. AEM Assets prend en charge le texte à utiliser comme un filigrane sur les fichiers PNG et JPEG.
+Adobe Experience Manager (AEM) Assets (Actifs) permet d’ajouter un filigrane numérique aux images, ce qui permet aux utilisateurs de vérifier l’authenticité et la propriété des fichiers sous copyright. AEM Assets prend en charge le texte à utiliser comme un filigrane sur les fichiers PNG et JPEG.
 
 To be able to apply watermark on assets, add the [!UICONTROL Watermark] step in the [!UICONTROL DAM Update Asset] workflow.
 
@@ -34,6 +34,6 @@ To be able to apply watermark on assets, add the [!UICONTROL Watermark] step in 
    ![Indiquer les arguments dans l’étape Ajouter un filigrane dans Assets](assets/arguments_add_watermark_aem_assets.png)
 
 1. Enregistrez le workflow **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]** avec l’étape Filigrane.
-1. Dans l’interface utilisateur d’AEM, téléchargez un exemple de fichier. Le filigrane s’affiche avec la taille de police, la couleur, etc., à la position que vous avez configurée dans les étapes ci-dessus.
+1. Dans l’interface utilisateur AEM, téléchargez un exemple de fichier. Le filigrane s’affiche avec la taille de police, la couleur, etc., à la position que vous avez configurée dans les étapes ci-dessus.
 
 Pour mettre en filigrane des documents PDF par programmation ou avec des informations dynamiques, pensez à utiliser l’offre [AEM Document Services](/help/forms/using/overview-aem-document-services.md) .
