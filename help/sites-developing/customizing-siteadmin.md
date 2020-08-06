@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 73e57f20-4022-46ab-aa5c-ec866298b645
 translation-type: tm+mt
 source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 72%
 
 ---
 
@@ -33,6 +36,7 @@ Ce tutoriel détaillé explique comment afficher une nouvelle colonne dans la co
 >
 >* Console Digital Assets
 >* Console Community
+
 >
 
 
@@ -109,6 +113,7 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >* Votre implémentation doit déterminer, sur la base de la requête et/ou de la ressource fournies, si elle doit ou non ajouter les informations à l’objet JSON.
 >* Si votre implémentation de `ListInfoProvider` définit une propriété qui existe déjà dans l’objet de réponse, sa valeur est remplacée par celle que vous fournissez.\
    >   Vous pouvez utiliser le [classement de service](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) pour gérer l’ordre d’exécution de plusieurs implémentations de `ListInfoProvider`.
+
 >
 
 
@@ -117,13 +122,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 Lorsque vous ouvrez la console Administration de sites web et parcourez votre site, le navigateur génère un appel ajax pour obtenir l’objet JSON qui est utilisé pour créer la console. For example, when you browse to the `/content/geometrixx` folder, the following request is sent to the AEM server to build the console:
 
-[http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 Pour vous assurer que le nouveau service s’exécute après le déploiement du lot où il réside, procédez comme suit :
 
 1. Pointez votre navigateur sur l’URL suivante :
 
-   [http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+   [http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 1. La réponse doit afficher les nouvelles propriétés comme suit :
 
@@ -164,7 +169,7 @@ The last step consists in adapting the nodes structure of the Websites Administr
 
    To redirect this to your version of siteadmin on `/apps/wcm/core/content/siteadmin` define the property `sling:vanityOrder` to have a value higher than that defined on `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300 ; toute valeur plus élevée est donc acceptable.
 
-1. Accédez à la console d’administration des sites Web et au site Geometrixx :
+1. Accédez à la console d’administration des sites Web et accédez au site Geometrixx :
 
    [http://localhost:4502/siteadmin#/content/geometrixx](http://localhost:4502/siteadmin#/content/geometrixx).
 
