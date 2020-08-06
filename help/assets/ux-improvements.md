@@ -4,17 +4,20 @@ description: Cet article décrit les améliorations de l’expérience utilisate
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 73%
 
 ---
 
 
 # Améliorations de l’expérience utilisateur dans Assets {#user-experience-enhancements-in-assets}
 
-Les ressources AEM 6.4 comprennent plusieurs améliorations de la convivialité qui fournissent une expérience utilisateur transparente et améliorent la productivité. L’augmentation de la vitesse à laquelle vous pouvez créer/gérer votre contenu marketing accroît la vélocité du contenu de l’entreprise.
+AEM 6.4 Ressources comprend plusieurs améliorations de convivialité qui offrent une expérience utilisateur transparente et améliorent la productivité. L’augmentation de la vitesse à laquelle vous pouvez créer/gérer votre contenu marketing accroît la vélocité du contenu de l’entreprise.
 
 L’interface est plus réactive, ce qui vous permet de gérer efficacement un large portefeuille de ressources. Vous pouvez rapidement rechercher, afficher, trier et faire défiler en toute fluidité une longue liste d’éléments.
 
-Vous pouvez personnaliser les différents modes : Carte, Liste et Colonnes. Vous pouvez, par exemple, configurer la taille des miniatures à afficher dans la vue Carte. Pour le mode Liste, vous pouvez configurer le niveau de détail que vous voulez afficher pour les ressources dans la liste. AEM 6.4 Assets comprend une nouvelle arborescence qui permet de parcourir le référentiel des ressources et de rechercher vos ressources.
+Vous pouvez personnaliser les différents modes : Carte, Liste et Colonnes. Par exemple, vous pouvez configurer la taille des miniatures que vous souhaitez afficher dans la vue Carte. Pour le mode Liste, vous pouvez configurer le niveau de détail que vous voulez afficher pour les ressources dans la liste. AEM 6.4 Assets comprend une nouvelle arborescence qui permet de parcourir le référentiel des ressources et de rechercher vos ressources.
 
 ## Chargement différé {#lazy-loading}
 
@@ -30,11 +33,11 @@ Pour redimensionner les miniatures en mode Carte, procédez comme suit :
 
 1. Tap/click the Layout icon from the toolbar, and then choose the **[!UICONTROL View Settings]** option.
 
-   ![view_settings](assets/view_settings.png)
+   ![vue_settings](assets/view_settings.png)
 
 1. From the **[!UICONTROL View Settings]** dialog, select the desired thumbnail size, and then tap/click **[!UICONTROL Update]**.
 
-   ![view_settings_dialog](assets/view_settings_dialog.png)
+   ![vue_settings_dialog](assets/view_settings_dialog.png)
 
 1. Vérifiez les vignettes qui s’affichent dans la taille sélectionnée.
 
@@ -48,11 +51,11 @@ La mosaïque en mode Carte affiche désormais des informations supplémentaires,
 
 En mode Liste, la première colonne affiche désormais par défaut les noms des fichiers des ressources. Des informations supplémentaires, telles que les états de publication et de traitement, et les paramètres régionaux, sont également affichées.
 
-![list_view](assets/list_view.png)
+![liste_vue](assets/list_view.png)
 
 Vous pouvez choisir de configurer la quantité de détails que vous souhaitez afficher. Appuyez/cliquez sur l’icône Mise en page, choisissez l’option **[!UICONTROL Paramètres]**, puis spécifiez les colonnes que vous souhaitez afficher dans la boîte de dialogue **[!UICONTROL Paramètres]**.
 
-![view_settings_dialoglistview](assets/view_settings_dialoglistview.png)
+![vue_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
 ## Améliorations du mode Colonnes {#column-view-improvements}
 
@@ -74,7 +77,7 @@ Dans la hiérarchie de contenu, accédez à la ressource de votre choix.
 
 ## Navigation dans les détails des ressources {#navigating-asset-details}
 
-La page des détails de la ressource comprend désormais les boutons Précédent et Suivant dans la barre d’outils, ce qui vous permet d’afficher toutes les images d’un dossier l’une après l’autre.
+La page des détails de la ressource comprend désormais les boutons Précédent et Suivant dans la barre d’outils, de sorte que vous puissiez vue toutes les images d’un dossier l’une après l’autre.
 
 En fonction de votre périphérique, vous pouvez faire glisser votre doigt sur l’écran ou utiliser les touches fléchées du clavier pour vous déplacer en avant et en arrière entre les images.
 
@@ -83,7 +86,7 @@ En fonction de la mise en page sélectionnée, vous pouvez ouvrir la page de dé
 | **Mode** | **Comment ouvrir la page des détails de ressource** |
 |---|---|
 | [!UICONTROL Mode Carte] | Appuyez/cliquez sur la mosaïque de ressources. |
-| [!UICONTROL Mode Liste] | Appuyez/cliquez sur l’entrée de ligne pour le fichier dans la liste. |
+| [!UICONTROL Mode Liste] | Appuyez/cliquez sur l’entrée de ligne de la ressource dans la liste. |
 | [!UICONTROL Mode Colonnes] | Tap/click the **[!UICONTROL More Details]** button from the asset snapshot. |
 
 Utilisez les boutons Précédent/Suivant pour vous déplacer entre les ressources.
