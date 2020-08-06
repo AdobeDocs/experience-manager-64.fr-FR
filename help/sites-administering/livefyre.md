@@ -41,7 +41,7 @@ AEM 6.4 est livré avec le module 1.2.6 de Livefyre pré-installé. Ce module in
 
 1. Téléchargez le package Livefyre à partir de [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-1. A partir de Package Manager, installez le package téléchargé. Pour obtenir des instructions sur l’utilisation de la distribution de logiciels et des packages dans AEM, voir [Comment utiliser des packages](/help/sites-administering/package-manager.md).
+1. A partir de Package Manager, installez le package téléchargé. Pour obtenir des instructions sur l&#39;utilisation de la distribution de logiciels et des packages dans AEM, voir [Comment utiliser des packages](/help/sites-administering/package-manager.md).
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
@@ -222,7 +222,7 @@ Après avoir importé le catalogue de produits, les produits apparaissent en tem
 | Commentaires | X | X | X | X |
 | Filmstrip |  | X | X | X |
 | LiveBlog | X | X | X | X |
-| Mapper | X | X | X | X |
+| Map | X | X | X | X |
 | Mur multimédia | X | X | X | X |
 | Mosaïque | X | X | X | X |
 | Sondage |  | X | X | X |
