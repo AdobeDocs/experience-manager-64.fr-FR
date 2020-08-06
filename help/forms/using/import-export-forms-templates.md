@@ -10,17 +10,21 @@ topic-tags: forms-manager
 discoiquuid: 6fddb09a-ec60-4235-8ff4-0646f53f38f7
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '2534'
+ht-degree: 79%
 
 ---
 
 
 # Importation et exportation des actifs dans AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
-Vous pouvez déplacer des formulaires et des ressources, des thèmes, des dictionnaires de données, des fragments de document et des lettres associés entre différentes instances d’AEM Forms. Ce déplacement est nécessaire lors de la migration des systèmes ou du déplacement des formulaires d’un serveur d’étape à un serveur de production. En ce qui concerne les actifs pour lesquels le téléchargement et l’importation via l’interface utilisateur AEM Forms sont pris en charge, l’utilisation de l’interface utilisateur Forms est recommandée pour l’exportation ou l’importation. L’utilisation d’AEM Package Manager pour l’exportation ou l’importation de ces actifs n’est pas recommandée.
+Vous pouvez déplacer des formulaires et des ressources, thèmes, dictionnaires de données, fragments de document et lettres associés entre différentes instances AEM Forms. Ce déplacement est nécessaire lors de la migration des systèmes ou du déplacement des formulaires d’un serveur d’étape à un serveur de production. En ce qui concerne les actifs pour lesquels le téléchargement et l’importation via l’interface utilisateur AEM Forms sont pris en charge, l’utilisation de l’interface utilisateur Forms est recommandée pour l’exportation ou l’importation. L’utilisation d’AEM Package Manager pour l’exportation ou l’importation de ces actifs n’est pas recommandée.
 
 >[!NOTE]
 >
->* Dans AEM Forms 6.4, la structure et les chemins d’accès de crx-repository ont changé. Si vous importez des actifs d’une version précédente vers AEM Forms 6.4 et que le formulaire comporte certaines dépendances par rapport à l’ancienne structure, vous devez exporter manuellement les dépendances. Pour plus d’informations sur les modifications apportées à la structure et aux chemins d’accès du référentiel, voir Restructuration du [référentiel dans AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+>* Dans AEM 6.4 Forms, la structure et les chemins d&#39;accès de crx-repository ont changé. Si vous importez des actifs d’une version précédente vers AEM Forms 6.4 et que le formulaire est dépendant de l’ancienne structure, vous devez exporter manuellement les dépendances. Pour plus d’informations sur les modifications apportées à la structure et aux chemins d’accès du référentiel, voir Restructuration du [référentiel dans AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+
 >
 
 
@@ -29,15 +33,15 @@ Vous pouvez déplacer des formulaires et des ressources, des thèmes, des dictio
 
 L’interface utilisateur d’AEM Forms vous permet d’exporter des actifs d’une instance AEM en les téléchargeant sous forme de package CRX ou de fichiers binaires AEM. Vous pouvez ensuite importer le package CRX ou le fichier binaire AEM téléchargé dans une autre instance AEM.
 
-L’exportation et l’importation via l’interface utilisateur d’AEM Forms sont prises en charge pour tous les actifs, à l’exception des modèles de formulaire adaptatif et des stratégies de contenu de formulaire adaptatif. Par conséquent, lors de l’exportation d’un formulaire adaptatif depuis l’interface utilisateur d’AEM Forms, le modèle de formulaire adaptatif associé et les stratégies de contenus ne sont pas automatiquement exportés comme d’autres actifs associés.
+L’exportation et l’importation via l’interface utilisateur AEM Forms sont prises en charge pour tous les actifs, à l’exception des modèles de formulaire adaptatif et des stratégies de contenu de formulaire adaptatif. Par conséquent, lors de l’exportation d’un formulaire adaptatif depuis l’interface utilisateur d’AEM Forms, le modèle de formulaire adaptatif associé et les stratégies de contenus ne sont pas automatiquement exportés comme d’autres actifs associés.
 
 Pour ces types d’actifs, vous devez utiliser AEM Package Manager pour créer un package CRX sur le serveur AEM source et pour installer le package sur le serveur de destination. Pour plus d’informations sur la création et l’installation des packages, voir [Utilisation des packages](/help/sites-administering/package-manager.md).
 
 ### Téléchargement des actifs Formulaires et documents {#download-forms-amp-documents-assets}
 
-Pour télécharger des ressources de formulaires et documents :
+Pour télécharger des ressources Forms &amp; Documents :
 
-1. Connectez-vous à l’instance AEM Forms.
+1. Connectez-vous à l’instance AEM Forms.
 1. Tap Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon > navigation ![compass](assets/compass.png) icon> Forms > Forms &amp; Documents.
 1. Sélectionnez les actifs de formulaires et cliquez sur l’**icône de téléchargement**.
 1. In the Download Asset(s), choose one of the following options, and tap **Download**.
@@ -61,10 +65,10 @@ Pour télécharger des actifs Formulaires et documents :
 
 >[!VIDEO](https://vimeo.com/)
 
-1. Connectez-vous à l’instance AEM Forms.
+1. Connectez-vous à l’instance AEM Forms.
 1. Tap Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon > navigation ![compass](assets/compass.png) icon> Forms> Forms &amp; Documents.
-1. Appuyez sur **Créer**>**Chargement de fichier**. Une boîte de dialogue de téléchargement de formulaires ou de package apparaît.
-1. Dans la boîte de dialogue, recherchez et sélectionnez le package ou l’archive à importer. Vous pouvez également sélectionner un document PDF, des fichiers XSD, des images, des feuilles de style et des formulaires XDP. Appuyez sur **Ouvrir**.
+1. Appuyez sur **Create** (Créer) > **File Upload** (Téléchargement de fichier). Une boîte de dialogue de téléchargement de formulaires ou de package apparaît.
+1. Dans la boîte de dialogue, recherchez et sélectionnez le package ou l’archive à importer. Vous pouvez également sélectionner document PDF, schémas XSD, images, feuilles de style et formulaires XDP. Appuyez sur **Ouvrir**.
 
    On the dialog box, verify the details of assets being uploaded, and tap **Upload**.
 
@@ -84,7 +88,7 @@ Vous pouvez exporter des thèmes dans AEM Forms, que vous pouvez utiliser dans d
 
 Pour télécharger un thème :
 
-1. Connectez-vous à l’instance AEM Forms.
+1. Connectez-vous à l’instance AEM Forms.
 1. Tap Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon > navigation ![compass](assets/compass.png) icon> Forms> Themes.
 1. Sélectionnez le composant et appuyez sur **Télécharger**. Le thème est téléchargé sous forme d’archive (fichier .zip).
 
@@ -100,7 +104,7 @@ Pour charger un thème :
 
    Le thème chargé est disponible dans la page Thèmes.
 
-1. Connectez-vous à l’instance AEM Forms.
+1. Connectez-vous à l’instance AEM Forms.
 1. Tap Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon > navigation ![compass](assets/compass.png) icon> Forms> Themes.
 1. Cliquez sur **Créer**> **Chargement de fichier**. Dans l’invite de téléchargement de fichier, recherchez et sélectionnez un package de thème sur votre ordinateur et cliquez sur **Charger**. Le thème est chargé.
 
@@ -112,7 +116,7 @@ Pour partager des actifs, tels que des dictionnaires de données, lettres et fra
 
 1. Dans les lettres, les fragments de document ou les pages de dictionnaire de données, cliquez sur les actifs à exporter dans un package unique pour les sélectionner, puis cliquez sur Ajouter à la file d’attente de téléchargement. Les actifs sont placés en file d’attente pour l’exportation.
 1. Si nécessaire, répétez les étapes ci-dessus pour ajouter des lettres, des fragments de document et des dictionnaires de données.
-1. Appuyez sur **Télécharger**.
+1. Appuyez sur **Download** (Télécharger). 
 1. Correspondence Management affiche la boîte de dialogue Télécharger les ressources avec une liste de ressources dans la liste d’exportation.
 
    ![exporter](assets/export.png)
@@ -138,13 +142,13 @@ Pour télécharger tous les actifs de Correspondence Management et les dépendan
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
-   La page Exporter tous les actifs de Correspondence Management s’affiche et affiche les informations sur la dernière tentative d’exportation et un lien pour télécharger le dernier package exporté avec succès.
+   La page Exporter tous les actifs de Correspondence Management s’affiche et affiche les informations sur la dernière tentative d’exportation et un lien permettant de télécharger le dernier package exporté avec succès.
 
    ![export-last-run-details](assets/export-last-run-details.png)
 
 1. Tap **Export** and, in the confirm message, tap **OK**.
 
-   À la fin du traitement par lot, les détails de la dernière exécution et un lien de téléchargement du package s’affichent. Cela inclut des informations telles que la connexion administrateur et si le lot est &quot;réussi ou échoué&quot;. Les actifs sont exportés vers un package et le lien Télécharger le package exporté s’affiche.
+   À la fin du traitement par lot, les détails de la dernière exécution et un lien de téléchargement du package s’affichent. Ceci inclut des informations telles que la connexion administrateur et si le lot ou &quot;n réussi ou échoué&quot;. Les actifs sont exportés vers un package et le lien Télécharger le package exporté s’affiche.
 
    >[!NOTE]
    >
@@ -160,7 +164,7 @@ Vous pouvez importer des ressources qui sont exportées dans un fichier .cmp. Un
 
 >[!NOTE]
 >
->Lors de l’importation d’anciens actifs de Correspondence Management pour la migration, connectez-vous à l’aide d’un compte administrateur. Pour plus d’informations sur la migration des anciens actifs de Correspondence Management, voir [Migration des actifs et des documents](/help/forms/using/migration-utility.md)AEM Forms.
+>Lors de l’importation d’anciens actifs de Correspondence Management pour la migration, connectez-vous à l’aide d’un compte administrateur. Pour plus d’informations sur la migration d’anciens actifs de Correspondence Management, voir [Migration d’actifs et de documents](/help/forms/using/migration-utility.md)AEM Forms.
 
 1. On the data dictionary, letters, or document fragments page, tap **Create > File Upload** and select the .cmp file.
 1. Correspondance Management affiche la boîte de dialogue d’importation des actifs avec la liste des actifs qui sont importés. Tap **Import**.
@@ -169,6 +173,7 @@ Vous pouvez importer des ressources qui sont exportées dans un fichier .cmp. Un
 
    * Auteur : affiche l’ID de l’utilisateur qui a importé l’actif dans le serveur
    * Modifié : l’heure à laquelle l’actif a été importé dans le serveur
+
    >[!NOTE]
    >
    >Pour que vous puissiez télécharger des fichiers XDP (comme partie du fichier cmp ou autre), vous devez faire partie du groupe forms-power-users. Pour obtenir les droits d’accès, contactez l’administrateur.
@@ -177,7 +182,7 @@ Vous pouvez importer des ressources qui sont exportées dans un fichier .cmp. Un
 
 Vous pouvez utiliser le gestionnaire de packages AEM pour exporter des applications de processus. Pour ce faire, procédez comme suit :
 
-1. Ouvrez le gestionnaire de packages AEM Forms. L’URL du gestionnaire de packages est https://&lt;server>:&lt;port>/crx/packmgr.
+1. Ouvrez le gestionnaire de packages AEM Forms. L’URL du gestionnaire de packages est https://&lt;serveur>:&lt;port>/crx/packmgr.
 1. Cliquez sur **[!UICONTROL Créer un package]**. La boîte de dialogue **[!UICONTROL Nouveau package]** apparaît.
 1. Indiquez le nom, la version et le groupe du package. Cliquez sur **[!UICONTROL OK]**.
 1. Cliquez sur **[!UICONTROL Modifier]** et ouvrez l’onglet **[!UICONTROL Filtres]**. Cliquez sur **[!UICONTROL Add Filter]** (Ajouter un filtre). Indiquez le chemin de l’application de processus. Par exemple, /etc/fd/dashboard/startpoints/homemortgage.
@@ -206,8 +211,9 @@ Pour créer un dossier, procédez comme suit :
 1. Appuyez sur Créer > Dossier.
 1. Saisissez les informations suivantes :
 
-   * **** Titre : Nom d’affichage du dossier
+   * **Titre :** Nom d’affichage du dossier
    * **Nom :** *(Obligatoire)* nom du nœud sous lequel vous souhaitez stocker le dossier dans le référentiel.
+
    >[!NOTE]
    >
    >Par défaut, la valeur du champ de nom est automatiquement renseignée à partir du titre. Le nom peut contenir uniquement des caractères alphanumériques, des tirets (-) et des traits de soulignement (_). Tout autre caractère spécial saisi dans le titre est automatiquement remplacé par un tiret. Vous êtes alors invité à confirmer le nouveau nom. Vous pouvez choisir de conserver le nom proposé ou de le modifier.
@@ -230,7 +236,7 @@ Effectuez les étapes suivantes pour créer des copies d’actifs et de lettres�
 1. Appuyez sur Copier. L’interface utilisateur affiche l’icône Coller. Vous pouvez également choisir d’accéder/de naviguer dans un dossier avant de le coller. Des dossiers différents peuvent contenir des actifs avec les mêmes noms. Pour plus d’informations sur les dossiers, voir [Dossiers et organisation des actifs](#folders-and-organizing-assets).
 1. Appuyez sur Coller. La boîte de dialogue Coller s’affiche. Le système génère automatiquement des noms et des titres pour les nouvelles copies d’actifs/de lettres, mais vous pouvez modifier les titres et les noms des actifs/lettres.
 
-   Si vous copiez et collez les ressources/lettres au même endroit, un suffixe &quot;-CopyXX&quot; est ajouté au nom existant de la ressource/lettre. Si aucun titre n’existe pour la lettre/l’actif copié, le champ de titre généré automatiquement reste vide.
+   Si vous copiez et collez les actifs/lettres au même endroit, un suffixe &quot;-CopyXX&quot; est ajouté au nom existant de la ressource/lettre. Si aucun titre n’existe pour la lettre/l’actif copié, le champ de titre généré automatiquement reste vide.
 
 1. Si nécessaire, modifiez le titre et le nom sous lesquels vous souhaitez enregistrer la copie de la lettre/de l’actif.
 1. Appuyez sur Coller. De nouvelles copies des actifs copiés sont créées.
@@ -243,9 +249,9 @@ Lorsque vous recherchez des actifs, AEM Forms affiche le panneau latéral. You 
 
 ![search_topbar](assets/search_topbar.png)
 
-******A. Recherche** B. Filtrer
+**A.** Recherche **B.** Filtre
 
-![](assets/search_sidepanel.png) Panneau latéral - Filtres **** Figure : Panneau *latéral - Filtres*
+![Panneau latéral - Filtres](assets/search_sidepanel.png)**Figure :** *Panneau latéral - Filtres*
 
 Sur le panneau latéral, vous pouvez utiliser les éléments suivants pour affiner les résultats de votre recherche :
 
