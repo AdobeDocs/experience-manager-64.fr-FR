@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2bf8496d-a485-4b39-a6c9-07222b66d0cd
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '883'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +45,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td><a href="/help/sites-developing/client-context.md">ClientContext</a> représente une collection de données utilisateur assemblées dynamiquement. Les configurations de cloud par défaut et marketing sont définies ici.<br /> </td> 
   </tr> 
   <tr> 
-   <td>Configuration des services cloud<br /> </td> 
+   <td>Configuration de Cloud Services<br /> </td> 
    <td> </td> 
    <td>Contient les configurations liées à l’<a href="/help/sites-administering/marketing-cloud.md">intégration à Adobe Marketing Cloud</a>.</td> 
   </tr> 
@@ -187,7 +190,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Obsolète. Voir <a href="/help/communities/moderate-ugc.md#watchwords">Modération du contenu d’une communauté</a></td> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/workflows.md">Processus</a></td> 
+   <td><a href="/help/sites-administering/workflows.md">Workflow</a></td> 
    <td> </td> 
    <td>Les workflows contrôlent une série d’actions dans des pages ou des ressources numériques prenant en charge tout processus éditorial.</td> 
   </tr> 
@@ -204,7 +207,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <th>Objectif</th> 
   </tr> 
   <tr> 
-   <td>Création</td> 
+   <td>Création  </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -215,7 +218,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-authoring/launches.md">Lancements</a></td> 
+   <td><a href="/help/sites-authoring/launches.md">Les lancements  </a></td> 
    <td>Gérez vos lancements marketing</td> 
   </tr> 
   <tr> 
@@ -245,12 +248,12 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="https://helpx.adobe.com/cloud-manager/using/using-cloud-manager.html">Services cloud</a></td> 
+   <td><a href="https://helpx.adobe.com/cloud-manager/using/using-cloud-manager.html">Cloud Services</a></td> 
    <td>Connectez-vous à Adobe Marketing Cloud.</td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-administering/workflows.md">Workflows</a></td> 
+   <td><a href="/help/sites-administering/workflows.md">Workflows   </a></td> 
    <td>Modélisez et gérez les workflows.</td> 
   </tr> 
   <tr> 
@@ -296,7 +299,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   <tr> 
    <td> </td> 
    <td><a href="/help/sites-deploying/offloading.md">Déchargement du navigateur</a></td> 
-   <td>Gestion du déchargement.</td> 
+   <td>Gérer le déchargement.</td> 
   </tr> 
   <tr> 
    <td> </td> 
