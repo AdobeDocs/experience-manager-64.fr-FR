@@ -11,11 +11,14 @@ topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 96%
 
 ---
 
 
-# Aperçu des pages à l’aide des données ContextHub{#previewing-pages-using-contexthub-data}
+# Aperçu des pages à l’aide des données ContextHub {#previewing-pages-using-contexthub-data}
 
 La barre d’outils [ContextHub](/help/sites-developing/contexthub.md) affiche les données ContextHub et vous permet de modifier les données de la boutique. Elle est utile pour prévisualiser le contenu déterminé par des données dans une boutique ContextHub.
 
@@ -46,7 +49,7 @@ La barre d’outils ContextHub est disponible en mode aperçu. La barre d’outi
 
 Chaque module d’IU fournit un ensemble de fonctionnalités différent, mais les types de fonctionnalités suivants sont communs. Les modules d’IU étant redimensionnables, votre développeur peut mettre en œuvre d’autres fonctionnalités selon les besoins.
 
-### Contenu de la barre d’outils {#toolbar-content}
+### Contenu de la barre d’outils   {#toolbar-content}
 
 Les modules d’IU peuvent afficher des données d’une ou de plusieurs boutiques ContextHub sur la barre d’outils. Les modules d’IU utilisent une icône et un titre pour s’identifier.
 
@@ -62,7 +65,7 @@ Certains modules d’IU affichent une fenêtre contextuelle lorsque l’utilisat
 
 La fenêtre contextuelle d’un module peut contenir des éléments de formulaire qui vous permettent de changer les données contenues dans la boutique ContextHub. Si le contenu de la page est déterminé par les données de la boutique, vous pouvez utiliser le formulaire et observer les modifications apportées au contenu de la page.
 
-### Mode Plein écran {#fullscreen-mode}
+### Mode Plein écran   {#fullscreen-mode}
 
 Les fenêtres contextuelles peuvent inclure une icône sur laquelle vous cliquez ou appuyez afin que le contenu de la fenêtre contextuelle englobe l’intégralité de la fenêtre du navigateur.
 
