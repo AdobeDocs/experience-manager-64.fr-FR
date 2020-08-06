@@ -11,25 +11,28 @@ topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 translation-type: tm+mt
 source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 4%
 
 ---
 
 
 # Create a Sample Page {#create-a-sample-page}
 
-Depuis les Communautés AEM 6.1, le moyen le plus simple de créer un exemple de page consiste à créer un site communautaire simple, constitué simplement d’une fonction Page.
+AEM 6.1 Collectivités, le moyen le plus simple de créer un exemple de page est de créer un site communautaire simple, constitué simplement d&#39;une fonction Page.
 
-Cela inclut un composant parsys afin que vous puissiez [activer les composants pour la création](basics.md#accessing-communities-components).
+Ceci inclut un composant parsys afin que vous puissiez [activer les composants pour la création](basics.md#accessing-communities-components).
 
-Une autre option pour explorer les échantillons de composants consiste à utiliser les fonctionnalités présentées dans le Guide [des composants](components-guide.md)communautaires.
+Une autre option d&#39;exploration avec des échantillons de composants consiste à utiliser les fonctionnalités présentées dans le Guide [des composants](components-guide.md)communautaires.
 
-## Création d’un site communautaire {#create-a-community-site}
+## Créer un site communautaire {#create-a-community-site}
 
-Cela ressemble beaucoup à la création d’un nouveau site décrit dans [Prise en main des communautés](getting-started.md)AEM.
+Cela ressemble beaucoup à la création d&#39;un nouveau site décrit dans [Prise en main d&#39;AEM Communities](getting-started.md).
 
-La principale différence est que ce didacticiel créera un nouveau modèle de site communautaire qui ne contiendra que la fonction [](functions.md#page-function) Page afin de créer un site communautaire simple sans aucune autre fonctionnalité (autres que les fonctionnalités prédéfinies de base pour tous les sites communautaires).
+La principale différence est que ce tutoriel va créer un nouveau modèle de site communautaire qui ne contient que la fonction [](functions.md#page-function) Page afin de créer un site communautaire simple et gratuit d&#39;autres fonctionnalités (autres que les fonctionnalités préprogrammées de base pour tous les sites communautaires).
 
-### Créer un modèle de site {#create-new-site-template}
+### Créer un nouveau modèle de site {#create-new-site-template}
 
 Pour commencer, créez un modèle [de site](sites.md)communautaire simple.
 
@@ -48,10 +51,10 @@ Dans la navigation globale sur une instance d’auteur, sélectionnez **[!UICONT
 
 * STRUCTURE
 
-   * Faire glisser une `Page` fonction vers le Créateur de modèles
+   * Faire glisser une `Page` fonction vers le créateur de modèles
    * Pour les détails de la fonction de configuration, saisissez
 
-      * `Title`: Une seule page
+      * `Title`: Page unique
       * `URL`: page
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
@@ -67,12 +70,12 @@ Après avoir créé le modèle de site, dans la navigation globale, sélectionne
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
-* Sélectionner **`Create`** l&#39;icône
+* Icône Sélectionner **`Create`**
 
 * Étape `1 - Site Template`
 
-   * `Title`: Site de communauté simple
-   * `Description`: Site communautaire constitué d&#39;une page unique pour l&#39;expérimentation.
+   * `Title`: Site communautaire simple
+   * `Description`: Site communautaire constitué d&#39;une seule page d&#39;expérimentation.
    * `Community Site Root: (leave blank)`
    * `Community Site Base Language: English`
    * `Name`: sample
@@ -86,7 +89,7 @@ Après avoir créé le modèle de site, dans la navigation globale, sélectionne
 * Sélectionner `Next`
 * Étape `2 - Design`
 
-   * Sélectionner une conception
+   * Sélectionner n’importe quelle conception
 
 * Sélectionner `Next`
 * Sélectionner `Next`
@@ -103,18 +106,18 @@ Après avoir créé le modèle de site, dans la navigation globale, sélectionne
 
 Dans la console [Sites](sites-console.md)de la communauté, sélectionnez l’icône Publier pour publier le site, par défaut sur http://localhost:4503.
 
-## Ouvrez le site en mode d’édition pour l’auteur {#open-the-site-on-author-in-edit-mode}
+## Ouvrez le site en mode d’édition sur l’auteur. {#open-the-site-on-author-in-edit-mode}
 
 ![chlimage_1-89](assets/chlimage_1-89.png)
 
-Sélectionnez l&#39;icône d&#39;ouverture du site pour afficher le site en mode d&#39;édition.
+Sélectionnez l&#39;icône d&#39;ouverture du site pour vue du site en mode d&#39;édition.
 
 L’URL sera [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
 ![chlimage_1-90](assets/chlimage_1-90.png)
 
-Sur la page d&#39;accueil simple, il est possible de voir ce qui est préconnecté via les fonctions et modèles de la communauté, et de jouer avec l&#39;ajout et la configuration des composants de la communauté.
+Sur la page d&#39;accueil simple, il est possible de voir ce qui est précâblé à travers les fonctions et modèles de la communauté, et de jouer avec l&#39;ajout et la configuration des composants de la communauté.
 
-## Afficher le site lors de la publication {#view-site-on-publish}
+## Site de Vue sur la publication {#view-site-on-publish}
 
-Après avoir publié la page, ouvrez-la sur l’instance [de](http://localhost:4503/content/sites/sample/en.html) publication pour tester les fonctionnalités en tant que visiteur anonyme du site, membre connecté ou administrateur. Le lien Administration visible dans l’environnement d’auteur n’apparaîtra pas dans l’environnement de publication, sauf si un administrateur se connecte.
+Après avoir publié la page, ouvrez la page sur l’instance [de](http://localhost:4503/content/sites/sample/en.html) publication afin d’expérimenter les fonctionnalités en tant que visiteur de site anonyme, membre connecté ou administrateur. Le lien Administration visible dans l’environnement d’auteur n’apparaît pas dans l’environnement de publication, sauf si un administrateur se connecte.
