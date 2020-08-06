@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 9017ab55-6d4a-4306-922f-223ab1b2504b
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '1041'
+ht-degree: 36%
 
 ---
 
 
 # Working with the 3D Sites component {#working-with-the-d-sites-component}
 
-AEM 3D comprend un composant Sites AEM que vous pouvez utiliser pour implémenter l’affichage interactif de modèles 3D sur des pages Web.
+AEM 3D comprend un composant AEM Sites que vous pouvez utiliser pour implémenter l&#39;affichage interactif de modèles 3D sur des pages Web.
 
 Une fois que vous avez ajouté votre composant 3D, vous pouvez [afficher la ressource 3D dans ce composant.](viewing-3d-assets.md)
 
@@ -31,8 +34,8 @@ Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur u
 
 1. Accédez au modèle de page dans lequel vous souhaitez activer le composant 3D, puis sélectionnez le modèle.
 
-1. Tap **[!UICONTROL Edit]** to open the template.
-1. Près de l’angle supérieur droit de la page, dans le menu déroulant, sélectionnez le mode **[!UICONTROL Structure]** s’il n’est pas déjà actif.
+1. Appuyez sur **[!UICONTROL Modifier]** pour ouvrir le modèle.
+1. Près de l’angle supérieur droit de la page, dans le menu déroulant, sélectionnez le mode **[!UICONTROL Structure]**, s’il n’est pas déjà actif.
 
    ![image2017-11-14_15-33-57](assets/image2017-11-14_15-33-57.png)
 
@@ -49,11 +52,11 @@ Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur u
 >
 >Cette version d’AEM 3D prend en charge une seule instance du composant 3D sur chaque page web. Plusieurs composants 3D sur la même page ne fonctionnent pas correctement.
 
-**Pour ajouter le composant de visionneuse 3D à une page** Web :
+**Pour ajouter le composant de lecteur 3D à une page** Web :
 
-1. Ouvrez Sites AEM et sélectionnez la page Web à laquelle vous souhaitez ajouter le composant 3D.
+1. Ouvrez AEM Sites et sélectionnez la page Web à laquelle vous souhaitez ajouter le composant 3D.
 
-1. Tap the **[!UICONTROL Edit]** (pencil) icon to open the page into the page editor. Make sure **[!UICONTROL Edit]** mode near the top right of page is selected.
+1. Appuyez sur l’icône **[!UICONTROL Modifier]** (en forme de crayon) pour ouvrir la page dans l’éditeur de pages. Make sure **[!UICONTROL Edit]** mode near the top right of page is selected.
 
    ![image2017-11-14_15-44-40](assets/image2017-11-14_15-44-40.png)
 
@@ -67,7 +70,7 @@ Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur u
 
 1. In the AEM Sites page editor, select the **[!UICONTROL 3D Viewer]** component that you previously added to the page.
 
-1. Tap the **[!UICONTROL Configuration]** icon (wrench) to open the component configuration dialog box.
+1. Appuyez sur l’icône **[!UICONTROL Configuration]** (en forme de clé à molette) pour ouvrir la boîte de dialogue de configuration du composant.
 
    Vous pouvez définir les propriétés de composant suivantes :
 
@@ -84,7 +87,7 @@ Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur u
     <td> </td> 
     </tr> 
     <tr> 
-    <td>Scène Nom</td> 
+    <td>Nom de l’étape</td> 
     <td><p>Sélectionnez une scène 3D dans la liste des scènes disponibles. La scène fournit l’arrière-plan et l’éclairage.</p> <p>See <a href="/help/assets/about-the-use-of-stages-in-aem-3d.md" target="_blank">About the use of stages in AEM 3D Sites</a>.</p> </td> 
     <td>Ignoré pour les ressources Adobe Dimension.</td> 
     </tr> 
@@ -93,15 +96,15 @@ Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur u
     <td><p>La visionneuse 3D satellise la caméra sans interruption après le chargement et la réinitialisation. La rotation automatique s’interrompt lorsque l’utilisateur lance une action d’orbite manuelle.</p> <p>Vous pouvez spécifier la vitesse de rotation en RPM à l’aide des valeurs suivantes :</p> 
         <ul> 
         <li>Définir une valeur positive pour tourner à droite</li> 
-        <li>Définir une valeur négative pour tourner à gauche</li> 
+        <li>Définir une valeur négative pour faire pivoter à gauche</li> 
         <li>Définissez une valeur de 0 pour désactiver la rotation automatique.</li> 
-        </ul> <p>La valeur par défaut est de 3 tr/min, soit 20 secondes par révolution complète.<br /><br /> <strong> </strong>Remarque : La vitesse de rotation suppose une cadence de 60/s. Ce taux est généralement atteint avec des modèles de petite à moyenne taille sur des matériels graphiques plus puissants. Des modèles plus grands ou des périphériques plus lents s’exécutent automatiquement à des vitesses inférieures.</p> </td> 
+        </ul> <p>La valeur par défaut est de 3 tr/min, soit 20 secondes par révolution complète.<br /> <br /> <strong>Remarque :</strong> La vitesse de rotation suppose une cadence de 60/s. Ce taux est généralement atteint avec des modèles de petite ou moyenne taille sur des matériels graphiques plus puissants. Des modèles plus grands ou des périphériques plus lents fonctionnent automatiquement à des vitesses de rotation plus basses.</p> </td> 
     <td>Ignoré pour les ressources Adobe Dimension.</td> 
     </tr> 
     <tr> 
     <td>Couleur du bouton de navigation</td> 
     <td>Utilisez le sélecteur de couleurs pour sélectionner la couleur principale des boutons de contrôle de la visionneuse.</td> 
-    <td>Ignoré pour les fichiers Adobe Dimension.</td> 
+    <td>Ignorée pour les fichiers Adobe Dimension.</td> 
     </tr> 
     <tr> 
     <td>Couleur de survol de navigation</td> 
@@ -114,21 +117,21 @@ Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur u
     <td>Ignoré pour les ressources Adobe Dimension.</td> 
     </tr> 
     <tr> 
-    <td>Afficher les paramètres prédéfinis de la caméra GLTF</td> 
+    <td>Afficher les paramètres prédéfinis de caméra GLTF</td> 
     <td>Affichez ou masquez les paramètres prédéfinis de caméra qui peuvent être présents dans les fichiers Adobe Dimension.</td> 
-    <td>Pour les fichiers Adobe Dimension uniquement.</td> 
+    <td>Pour les ressources Adobe Dimension uniquement.</td> 
     </tr> 
     <tr> 
     <td>Couleur d'arrière-plan GLTF</td> 
-    <td>Couleur d’arrière-plan par défaut si le modèle 3D n’inclut pas d’arrière-plan.</td> 
-    <td>Pour les fichiers Adobe Dimension uniquement.</td> 
+    <td>Couleur d'arrière-plan par défaut si le modèle 3D n'inclut pas d'arrière-plan.</td> 
+    <td>Pour les ressources Adobe Dimension uniquement.</td> 
     </tr> 
     </tbody> 
    </table>
 
 1. Appuyez sur la coche pour enregistrer vos modifications.
 
-   Outre les paramètres disponibles dans la boîte de dialogue de configuration des composants, un certain nombre de paramètres de configuration globale sont disponibles et peuvent être modifiés par CRXDE Lite.
+   Outre les paramètres disponibles dans la boîte de dialogue de configuration des composants, un certain nombre de paramètres de configuration globale peuvent être modifiés par le CRXDE Lite.
 Voir [Paramètres de configuration avancée](advanced-config-3d.md) pour plus d’informations sur ces paramètres globaux.
 
 ## Attribution d’un modèle 3D au composant {#assigning-a-d-model-to-the-component}
@@ -143,21 +146,21 @@ Voir [Paramètres de configuration avancée](advanced-config-3d.md) pour plus d�
 
 1. Drag the 3D asset from the **[!UICONTROL Assets]** list to the **[!UICONTROL 3D Viewer]** component previously placed on the page.
 
-   Les fichiers Adobe Dimension sont rendus à l’aide de la nouvelle technologie de la visionneuse basée sur la norme ouverte glTF, tandis que tous les autres types de fichiers 3D reposent sur la visionneuse WebGL AEM 3D classique. Le composant sélectionne automatiquement la visionneuse appropriée en fonction du type du modèle 3D.
+   Les ressources Adobe Dimension sont rendues à l’aide de la nouvelle technologie de lecteur basée sur la norme ouverte glTF, tandis que tous les autres types de ressources 3D reposent sur la visionneuse WebGL 3D classique AEM. Le composant sélectionne automatiquement la visionneuse appropriée en fonction du type du modèle 3D.
 
-## Prévisualisation d’une page Web comportant un composant 3D {#previewing-a-web-page-that-has-a-d-component}
+## Prévisualisation d’une page Web contenant un composant 3D {#previewing-a-web-page-that-has-a-d-component}
 
 While the web page is in **[!UICONTROL Edit]** mode, the 3D component displays the 3D model but no interaction with the model is possible.
 
-Vous pouvez prévisualiser la page Web dans l’éditeur de page en accédant pleinement aux fonctionnalités du composant 3D.
+Vous pouvez prévisualisation la page Web dans l&#39;éditeur de page en accédant pleinement aux fonctionnalités du composant 3D.
 
 See also [Viewing 3D assets in the Sites 3D component](viewing-3d-assets.md#viewing-d-assets-in-the-sites-d-component).
 
-**Pour prévisualiser une page Web comportant un composant** 3D :
+**Pour prévisualisation d’une page Web qui comporte un composant** 3D :
 
 1. Effectuez l’une des opérations suivantes :
 
-   * Près de l’angle supérieur droit de la page, cliquez sur **[!UICONTROL Aperçu]** pour passer en mode d’aperçu.
+   * Near the upper-right of the page, click **[!UICONTROL Preview]** to enter preview mode.
    * Supprimez `/edit.html` de l’URL de la page dans le navigateur.
 
 ## Publication de la page et des ressources {#publishing-the-page-and-assets}
@@ -168,5 +171,5 @@ Voir [Publication de ressources](managing-assets-touch-ui.md) pour obtenir des 
 >
 >Using the **[!UICONTROL Publish Page]** menu item on the **[!UICONTROL Page Information]** menu will publish the page and all primary page dependencies. Les dépendances secondaires qui peuvent être référencées par le modèle 3D et/ou la scène 3D, telles que les textures plaquées et les images IBL, ne sont pas publiées lorsque vous publiez la page de cette manière.
 >
->Adobe vous recommande de publier toutes les ressources 3D et leurs dépendances directement à partir des ressources AEM, avant de publier la page Web qui référence ces ressources.
+>Adobe vous recommande de publier tous les actifs 3D et leurs dépendances directement depuis AEM Assets, avant de publier la page Web qui les référence.
 
