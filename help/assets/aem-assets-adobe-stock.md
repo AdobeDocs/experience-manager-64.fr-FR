@@ -34,7 +34,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 1. In [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Solution Cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Réutilisez un certificat existant ou sélectionnez **[!UICONTROL Créer un certificat]**.
 1. Cliquez sur **[!UICONTROL Créer un certificat]**. Une fois le certificat créé, téléchargez la clé publique. Cliquez sur **[!UICONTROL Suivant]**.
-1. Add the downloaded public key to your [!DNL Adobe Developer Console] service account. Cliquez sur **[!UICONTROL Suivant]**. Laissez l’écran Configuration [!UICONTROL du compte technique] Adobe IMS ouvert pour fournir les valeurs sous peu.
+1. Add the downloaded public key to your [!DNL Adobe Developer Console] service account. Cliquez sur **[!UICONTROL Suivant]**. Laissez l’écran Configuration [!UICONTROL du compte technique] IMS de l’Adobe ouvert pour fournir les valeurs sous peu.
 1. Accédez à [Adobe Developer Console](https://console.adobe.io). Assurez-vous que votre compte dispose des autorisations d’administrateur pour l’organisation pour laquelle l’intégration est requise.
 1. Cliquez sur **[!UICONTROL Créer un nouveau projet]** , puis sur **[!UICONTROL Ajouter l’API]**. Sélectionnez **[!UICONTROL Adobe Stock]** dans la liste des API [!UICONTROL disponibles pour vous]. Sélectionnez Web OAUTH 2.0. Configurez et copiez les différentes valeurs présentées.
 1. In [!DNL Experience Manager] provide the values in the fields titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. Voir début [rapide de l’authentification](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)JWT pour obtenir des informations détaillées sur ces valeurs.
@@ -60,7 +60,7 @@ Using this capability, organizations can allow its users to work using [!DNL Ado
 
 Once an [!DNL Adobe Stock] asset is licensed in [!DNL Experience Manager], it can be used and managed like a typical asset. In [!DNL Experience Manager], the users can search and preview the assets; copy and publish the assets; share the assets on [!DNL Brand Portal]; access and use the assets via [!DNL Experience Manager] desktop app; and so on.
 
-![Recherchez des fichiers Adobe Stock et filtrez les résultats de votre espace de travail Adobe Experience Manager.](assets/adobe-stock-search-results-workspace.png)
+![Rechercher des ressources Adobe Stock et filtrer les résultats de votre espace de travail Adobe Experience Manager](assets/adobe-stock-search-results-workspace.png)
 
 *Figure : Recherchez[!DNL Adobe Stock]des ressources et filtrez les résultats de votre[!DNL Experience Manager]interface.*
 
@@ -98,7 +98,7 @@ La prochaine fois que vous rechercherez des ressources, les ressources enregistr
 
 Users can license [!DNL Adobe Stock] assets by using the quota of their [!DNL Adobe Stock] enterprise plan. Lorsque vous acquérez une ressource sous licence, elle est enregistrée sans filigrane, et elle peut être recherchée et utilisée dans [!DNL Experience Manager Assets].
 
-![Boîte de dialogue permettant d’activer la licence et d’enregistrer des actifs Adobe Stock dans des actifs Experience Manager](assets/aem-stock_licenseandsave.jpg)
+![Boîte de dialogue permettant d’activer la licence et d’enregistrer des ressources Adobe Stock dans des ressources Experience Manager](assets/aem-stock_licenseandsave.jpg)
 
 *Figure : Boîte de dialogue permettant d’activer la licence et d’enregistrer[!DNL Adobe Stock]des fichiers dans[!DNL Experience Manager Assets].*
 
