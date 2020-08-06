@@ -370,10 +370,10 @@ Les valeurs suivantes du tableau
   <tr> 
    <td> </td> 
    <td><strong>Littéral</strong></td> 
-   <td><strong>Mise à jour </strong></td> 
+   <td><strong>Asset</strong></td> 
    <td><strong>Dictionnaire de données</strong></td> 
    <td><strong>Ignorer</strong></td> 
-   <td><strong>Utilisateur</strong></td> 
+   <td><strong>User</strong></td> 
    <td><strong>Field (Champ)</strong></td> 
    <td><strong>Variable</strong></td> 
   </tr> 
