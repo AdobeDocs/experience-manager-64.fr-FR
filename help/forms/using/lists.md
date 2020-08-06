@@ -71,6 +71,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
    * **Condition** : cliquez pour insérer une condition. Insérez le texte en fonction de la condition. Si la condition est vraie, le texte est visible dans la lettre, sinon il ne l’est pas.
    * **Ajouter la description**: Ajoutez une annotation à un bout de texte. Il s’agit de métadonnées visibles pour l’auteur mais pas d’une partie de la lettre créée.
    * **Saut de page** : Si vous définissez l’attribut de saut de page d’un module de texte sur false, le module de texte n’est pas fractionné sur plusieurs pages.
+
    L’éditeur de texte s’ouvre. Saisissez le texte. La barre d’outils change selon le type de modifications que vous souhaitez effectuer : paragraphes, alignement ou liste :
 
    ![Sélectionnez le type de barre d’outils](assets/toolbarselection.png)
@@ -108,6 +109,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
    * Symboles de devise tels que €, ¥ et £
    * Symboles mathématiques tels que Δ, √,  et ^
    * Symboles de ponctuation tels que ‟ et&quot;
+
    ![specialcharacters](assets/specialcharacters.png)
 
    Correspondence Management offre une prise en charge intégrée de 210 caractères spéciaux. The admin can [add support for more/custom special characters by customization](/help/forms/using/custom-special-characters.md).
@@ -128,6 +130,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
 
    * Add a data dictionary element in the text, select a data element from the list, and tap Insert ( ![insert](assets/insert.png)). Si vous sélectionnez Protégé, l’élément de dictionnaire de données est en lecture seule et il apparaît dans l’éditeur de lettre, mais pas dans l’interface utilisateur de création de correspondance ni dans le créateur de correspondance.
    * Ajoutez un élément d’espace réservé dans le texte, dans le panneau Éléments de données, appuyez sur Nouveau, saisissez les détails du nouvel élément de données, puis appuyez sur Créer pour ajouter le nouvel élément à la liste. Le nouvel espace réservé peut être inséré dans le texte de la même façon qu’un élément du dictionnaire de données. Pour modifier un espace réservé, sélectionnez l’espace réservé et appuyez sur Modifier.
+
    ![Éléments d’espace réservé](assets/placeholder_elements_in_xmldata.png)
 
    **Figure :** *Éléments d’espace réservé tels que spécifiés dans le fichier de données d’exemple d’un dictionnaire de données*
@@ -398,12 +401,14 @@ For a detailed example of using static and dynamic tables in layout fragments, s
    * **Configuration pour** : sélectionnez le tableau à configurer. Comme un suffixe du nom de table dans la liste déroulante est (Statique) si la table est une table statique ou (Dynamique) si la table est une table dynamique. Les tableaux statiques contiennent un nombre fixe de lignes. Ils peuvent contenir des zones cibles et des champs. Il n’est pas possible de lier ces zones cible et ces champs à des éléments de dictionnaire de données répétés. Les données liées à des cellules déterminent le nombre des lignes des tableaux dynamiques.
    * **Lignes** : Sélectionnez le nombre de lignes pour la mise en page. Le nombre de lignes configuré doit être supérieur ou égal au nombre de lignes à l’origine.
    * **Colonnes** : Sélectionnez le nombre de colonnes pour la mise en page. Le nombre de colonnes configuré doit être supérieur ou égal au nombre de colonnes à l’origine.
+
    Pour chaque colonne, les détails suivants sont requis :
 
    * **En-tête** : Le texte à afficher pour l’en-tête.
    * **Pied de page** : Le texte à afficher pour le pied de page.
    * **Type** : Le type de colonne supplémentaire : champ ou zone cible. L’option Type est activée pour les tableaux d’espaces réservés statiques. Elle peut être définie au niveau colonne et non au niveau cellule. Toutes les cellules d’une colonne étendue seront du même type. Dans le cas d’un tableau dynamique, toutes les colonnes sont de type champ. Dans le cas de tableaux autres qu’espaces réservées, vous ne pouvez pas définir le type des colonnes supplémentaires. Dans ce cas, les cellules supplémentaires d’une colonne étendue sont du même type que celles de la dernière colonne de la ligne et le type des cellules d’une ligne supplémentaire est identique à celui de la dernière cellule de la colonne.
    * **Rapport largeur/hauteur** : Le ratio des largeurs des colonnes du tableau. 
+
    For a detailed example of using static and dynamic tables in layout fragments, see [Example with sample files: using static and dynamic tables in a letter](create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them).
 
 1. Appuyez sur **Save** (Enregistrer).
@@ -492,6 +497,7 @@ Cet exemple montre comment créer un tableau dynamique et statique, lier le tabl
 
    * Ajoutez le sous-formulaire à la colonne du tableau. Veillez à rendre souple la mise en page du sous-formulaire parent du tableau et à supprimer les liaisons du sous-formulaire dans le tableau.
    * Ajoutez un sous-formulaire à la cellule du tableau. Veillez à rendre souple la mise en page du sous-formulaire parent du tableau et à supprimer les liaisons du sous-formulaire dans le tableau.
+
    Ou utilisez les fichiers XDP statiques et dynamiques liés à cette étape.
 
    Pour plus d’informations sur l’utilisation des fragments de mise en page, voir [Fragments de mise en page](#layoutfragments).
