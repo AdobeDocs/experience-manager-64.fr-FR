@@ -20,7 +20,7 @@ ht-degree: 61%
 
 # Types de nœuds personnalisés{#custom-node-types}
 
-AEM étant basé sur Sling et utilisant un référentiel JCR, les types de noeud proposés par ces deux solutions sont disponibles pour utilisation :
+Comme AEM est basé sur Sling et utilise un référentiel JCR, les types de noeud proposés par ces deux types sont disponibles pour l’utilisation :
 
 * [Types de nœuds JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7%20Node%20Types)
 * [Types de nœuds Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
@@ -138,7 +138,7 @@ Définit le type d’un nœud de rétrolien.
 
 Définit la page CQ par défaut.
 
-* `@node jcr:content` - Contenu du Principal de la page.
+* `@node jcr:content` - Contenu Principal de la page.
 
 **Définition**
 
@@ -298,7 +298,7 @@ Définit la configuration de la barre d’édition.
    * `editbar` - barre d&#39;édition
    * `rollover` - cadre de roulement
    * `auto` - détection automatique
-* `@node cq:formParameters`- Paramètres supplémentaires à ajouter au formulaire de boîte de dialogue.
+* `@node cq:formParameters`- Additional parameters to add to the dialog form.
 * `@prop cq:actions`- Liste des actions (boutons de la barre d&#39;édition ou éléments de menu).
 * `@node cq:actionConfigs` - Configurations de widgets pour les éléments de barre d&#39;édition ou de menu.
 * `@prop cq:emptyText` - Texte à afficher si aucun contenu visuel n&#39;est présent.
@@ -472,7 +472,7 @@ Le type de nœud `cq:contentPage` contient les définitions de propriété et de
 
 The items in a `cq:Cq4ContentPage` are:
 
-* `@prop cq:csd` - Le CSD ContentBus de la page.
+* `@prop cq:csd` - CSD ContentBus de la page.
 * `@node cq:content` - Contenu de la page. Ce nœud enfant n’existe pas si l’état du nœud de page est défini sur « Existant sans contenu » ou « Supprimé ».
 * `@node cq:attributes` - Liste d’attributs de page, connus précédemment sous le nom de balises de version. Ce nœud est obligatoire pour le type cq:contentPage. Le noeud d’attributs est versionné lorsque la page est un noeud est versionné.
 
@@ -553,7 +553,7 @@ Types de nœuds MailerService (Service mailer). Le mailer utilise des nœuds con
 
 **Description**
 
-Définit un mixin LiveRelationship (Relation en direct). Un noeud source principal (de contrôle) et un noeud de copie dynamique (contrôlé) peuvent être virtuellement liés via LiveRelationship.
+Définit un mixin LiveRelationship (Relation en direct). Un noeud source Principal (de contrôle) et un noeud de copie dynamique (contrôlé) peuvent être virtuellement liés via LiveRelationship.
 
 **Définition**
 
@@ -566,9 +566,9 @@ Définit un mixin LiveRelationship (Relation en direct). Un noeud source princip
 
 **Description**
 
-Définit un mixin LiveSync (Synchronisation en direct). Si un noeud est impliqué dans une LiveRelationship avec un noeud source principal (contrôle) et un noeud de copie dynamique (contrôlé), il est marqué comme LiveSync.
+Définit un mixin LiveSync (Synchronisation en direct). Si un noeud est impliqué dans une LiveRelationship avec un noeud Principal (de contrôle) et un noeud de copie dynamique (contrôlé), il est marqué comme LiveSync.
 
-* `@prop cq:master` - Chemin du noeud source principal (de contrôle) de LiveRelationship.
+* `@prop cq:master` - Chemin du noeud Principal source (de contrôle) de LiveRelationship.
 * `@prop cq:isDeep` - Définit si la relation est disponible pour les enfants.
 * `@prop cq:syncTrigger` - Définit quand est déclenché la synchronisation.
 * `@node * LiveSyncAction` - Actions à effectuer lors de la synchronisation
@@ -618,7 +618,7 @@ Configuration de la synchronisation en direct.
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-Pour AEM 5.4, ajoutez à la fin de la liste :
+Pour AEM 5.4, ajouter à la fin de la liste :
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
