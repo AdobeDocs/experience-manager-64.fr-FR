@@ -1,8 +1,8 @@
 ---
 title: Fonction Forum
 seo-title: Fonction Forum
-description: Comment ajouter et configurer la fonction du forum
-seo-description: Comment ajouter et configurer la fonction du forum
+description: Comment ajouter et configurer la fonction de forum
+seo-description: Comment ajouter et configurer la fonction de forum
 uuid: ced860ef-6f8a-4df2-acc8-6a48140fca83
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3495f983-d71e-4704-be4e-8a42a63f72db
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '1056'
+ht-degree: 58%
 
 ---
 
@@ -21,8 +24,8 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 La fonction Forum offre un espace aux visiteurs connectés (membres de la communauté) dans l’environnement de publication pour leur permettre de :
 
-* Création de nouvelles rubriques
-* Afficher et répondre aux rubriques
+* Créer de nouvelles rubriques
+* Vue et réponse aux rubriques
 * Suivre une rubrique
 * Rechercher un forum
 * Aider à modérer le contenu du forum
@@ -30,7 +33,7 @@ La fonction Forum offre un espace aux visiteurs connectés (membres de la commun
 
 Cette section de la documentation décrit :
 
-* Ajout de la fonctionnalité de forum à un site AEM
+* Ajouter la fonction de forum à un site AEM
 * Configuration settings for the `Forum`component
 
 ## Ajout d’un forum à une page {#adding-a-forum-to-a-page}
@@ -39,7 +42,7 @@ To add a `Forum` component to a page in author mode, use the component browser t
 
 * `Communities / Forum`
 
-Et faites-le glisser sur une page où le forum devrait apparaître.
+Et faites-le glisser sur une page où le forum doit apparaître.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
@@ -69,19 +72,21 @@ Sous l’onglet **[!UICONTROL Paramètres]**, spécifiez les paramètres des suj
 
 * **[!UICONTROL Autoriser les chargements de fichiers]** Si cette option est cochée, des fichiers joints peuvent être ajoutés à un sujet ou à un commentaire. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Autoriser le suivi]** Si coché, incluez la fonctionnalité suivante pour les publications de forum, ce qui permet aux membres d’être [informés](notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser le suivi]** Si coché, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [informés](notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Permettre l’épinglage]** Si cette option est cochée, les rubriques du forum peuvent être épinglées en haut de la liste des rubriques. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Permettre l’épinglage]** Si cette option est cochée, les sujets du forum peuvent être épinglés en haut de la liste des sujets. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Si cette option est cochée, l’idée peut être identifiée comme contenu]**[](featured.md)phare. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Si l’option Autoriser le contenu]** proposé est cochée, l’idée peut être identifiée comme contenu [](featured.md)phare. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Autoriser les abonnements]** par courrier électronique Si cette option est cochée, autorisez les membres à être avertis des nouvelles publications par courrier électronique ([abonnement](subscriptions.md)). Requiert `Allow Following` la vérification et la configuration [du](email.md)courrier électronique. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser les Abonnements]** par courriel Si cette case est cochée, autoriser les membres à être informés des nouvelles publications par courriel ([abonnement](subscriptions.md)). Nécessite `Allow Following` la vérification et la configuration [du](email.md)courrier électronique. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Taille]** de fichier maximale pertinente uniquement si `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 1 048 57 600 (10 Mo).
+* **[!UICONTROL Taille]** de fichier maximale pertinente uniquement si 
+`Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
-* **[!UICONTROL Types]** de fichiers autorisés pertinents uniquement si `Allow File Uploads` l’option est cochée. Liste d’extensions de fichiers séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+* **[!UICONTROL Types]** de fichiers autorisés pertinents uniquement si 
+`Allow File Uploads` est cochée. liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
-* **[!UICONTROL Taille]** max. du fichier image joint, applicable uniquement si l’option Autoriser les téléchargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
+* **[!UICONTROL Taille]** de fichier d’image de pièce jointe maximale adaptée uniquement si l’option Autoriser les téléchargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
 
 * **[!UICONTROL Autoriser les réponses à thème]** Si cette option est cochée, les réponses aux commentaires sont publiées pour le sujet. Cette option n’est pas cochée par défaut.
 
@@ -91,11 +96,11 @@ Sous l’onglet **[!UICONTROL Paramètres]**, spécifiez les paramètres des suj
 
 * **[!UICONTROL Afficher le fil d’Ariane]** Si cette option est cochée, le fil d’Ariane s’affiche dans les pages de sujet. Cette option est cochée par défaut.
 
-* **[!UICONTROL Afficher les badges]** Si coché, afficher les [badges](implementing-scoring.md) gagnés et attribués avec l&#39;entrée de blog d&#39;un membre. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Afficher les insignes]** Si coché, afficher les [insignes](implementing-scoring.md) gagnés et attribués avec l&#39;entrée de blog d&#39;un membre. Cette option n’est pas cochée par défaut.
 
 >[!NOTE]
 >
->Il peut s’avérer nécessaire de vérifier `AllowThreaded Replies` et `Allow users to Delete Comments and Topics` d’activer les commentaires sur un sujet.
+>Il peut être nécessaire de vérifier à la fois `AllowThreaded Replies` et `Allow users to Delete Comments and Topics` d&#39;activer les commentaires sur un sujet.
 
 ### Onglet Modération utilisateur {#user-moderation-tab}
 
@@ -121,9 +126,10 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted topics an
 
 Dans l’onglet **[!UICONTROL Champ de balise]**, les balises qui peuvent être appliquées, si l’option est activée dans l’onglet **[!UICONTROL Paramètres]**, sont limitées selon les espaces de noms sélectionnés.
 
-* **[!UICONTROL Espaces de noms]** autorisés pertinents si `Allow Tagging` l’option est cochée sous l’onglet **[!UICONTROL Paramètres]** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
+* **[!UICONTROL Espaces de nommage]** pertinents autorisés si `Allow Tagging` l’option est cochée sous l’onglet **[!UICONTROL Paramètres]** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
 
-* **[!UICONTROL Limite de suggestions]** Entrez le nombre de balises à afficher comme suggestion destinée au membre qui publie sur le forum. Default is **-** 1 (no limits).
+* **[!UICONTROL Limite de suggestions]** Entrez le nombre de balises à afficher comme suggestion destinée au membre qui publie sur le forum. La valeur par défaut est 
+**-** 1 (sans limites).
 
 ### Onglet Traduction {#translation-tab}
 
@@ -133,13 +139,16 @@ Sous l’onglet **[!UICONTROL Traduction]**, si la traduction est activée pour 
 
 ### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous l’onglet Paramètres **[!UICONTROL de]** tri, spécifiez le mode de tri des commentaires publiés lorsqu’ils sont affichés.
+Sous l’onglet Paramètres **[!UICONTROL de]** tri, indiquez comment les commentaires publiés sont triés lorsqu’ils s’affichent.
 
-* **[!UICONTROL Trier par]** Vérifier toutes les sélections de tri autorisées : `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. La valeur par défaut est `Newest, Oldest, Last Updated`.
+* **[!UICONTROL Trier par]** Vérifier toutes les sélections de tri autorisées : 
+`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. La valeur par défaut est `Newest, Oldest, Last Updated`.
 
-* **[!UICONTROL Définissez cette option comme valeur par défaut]** Tirez vers le bas pour sélectionner l’une des options de tri cochées à afficher comme valeur par défaut. La valeur par défaut est `Newest`.
+* **[!UICONTROL Définir comme valeur par défaut]** Décompressez pour sélectionner l’une des options de tri cochées à afficher comme valeur par défaut. La valeur par défaut est 
+`Newest`.
 
-* **[!UICONTROL Sélectionnez Options de temps pour le tri]** Analytics. Décompressez pour sélectionner l’une des options `All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
+* **[!UICONTROL Sélectionnez les options d’heure pour Analytics Tri]** déroulant pour sélectionner l’une des options suivantes : 
+`All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
 
 ## Informations supplémentaires {#additional-information}
 
