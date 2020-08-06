@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: f1cb5e98-ccd1-4b2c-acca-2b3cc1b7ac5f
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 78%
 
 ---
 
@@ -38,7 +41,7 @@ Pour créer des segments :
 1. Sélectionnez la page créée dans l’arborescence située sur le côté gauche.
 1. Créez un segment, par exemple en ciblant les utilisateurs hommes, en créant une nouvelle page sous le segment créé et intitulé Masculin, puis sélectionnez le modèle **Segment (Adobe Campaign)**.
 1. Ouvrez la page du segment créé et faites glisser **ID de segment** à partir du sidekick jusque sur la page.
-1. Double-click the trait, enter the ID representing in this case, the male segment defined in Adobe Campaign - for example, **MALE** - and click **OK**. Le message suivant doit s’afficher : *`targetData.segmentCode == "MALE"`*
+1. Double-click the trait, enter the ID representing in this case, the male segment defined in Adobe Campaign - for example, **MALE** - and click **OK**. Le message suivant doit apparaître : *`targetData.segmentCode == "MALE"`*
 1. Recommencez ces étapes pour un autre segment, par exemple, un segment ciblant les utilisateurs femmes.
 
 ### Création d’une marque {#creating-a-brand}
