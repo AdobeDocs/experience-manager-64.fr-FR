@@ -24,9 +24,9 @@ Découvrez-vous dans le développement des applications monopages grâce à ce d
 
 ## Tutoriels {#tutorials}
 
-Pour un exemple complet de création d’une application d’une seule page modifiable avec AEM en commençant par la configuration du projet via le routage d’applications, consultez les didacticiels WKND SPA :
+Pour un exemple de bout en bout de création d’une application d’une seule page modifiable avec AEM démarrage de la configuration du projet via le routage d’application, consultez les Tutorials d’application d’application d’application WKND :
 
-* [Prise en main de l’éditeur d’applications monopages AEM et d’Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [Prise en main de l’éditeur d’applications monopages AEM et réaction](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+* [Prise en main de l’éditeur AEM d’applications monopages et d’Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [Prise en main de l’éditeur AEM d’applications monopages et réaction](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
 
-Toutefois, avant de commencer votre propre projet d’application d’une seule page pour AEM, veillez également à consulter les [applications d’une seule page pour AEM](/help/sites-developing/spa-architecture.md) document.
+Toutefois, avant de commencer votre propre projet d’application d’une seule page pour AEM, veillez également à consulter les [applications d’une seule page pour un document AEM](/help/sites-developing/spa-architecture.md) .
