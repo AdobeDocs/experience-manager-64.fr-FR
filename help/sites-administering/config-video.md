@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
 source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 38%
 
 ---
 
@@ -29,11 +32,11 @@ Vous pouvez définir des profils vidéo à utiliser pour les éléments HTML5. L
 
 You can also configure the design of the video components and parameters for [!UICONTROL Playback], [!UICONTROL Flash], and [!UICONTROL Advanced].
 
-## Installation de FFmpeg et configuration d’AEM {#install-ffmpeg}
+## Installation de FFmpeg et configuration des AEM {#install-ffmpeg}
 
 The Video Component relies on the third-party open-source product FFmpeg for proper transcoding of videos that can be downloaded from [https://ffmpeg.org/](https://ffmpeg.org/). Après avoir installé FFmpeg, vous devez configurer AEM pour pouvoir utiliser un codec audio et des options d’exécution spécifiques.
 
-**Pour installer FFmpeg pour votre plateforme**:
+**Pour installer FFmpeg pour votre plate-forme**:
 
 * **Sous Windows :**
 
@@ -51,7 +54,7 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
       `sudo port install ffmpeg`
 
-      `FFmpeg` doit se trouver dans `PATH` ce répertoire pour qu’AEM puisse le récupérer par le biais de la ligne de commande.
+      `FFmpeg` doit être en `PATH` pour pouvoir le récupérer via la ligne de commande.
 
 * **Utilisation de la version précompilée d’OS X 10.6 :**
 
@@ -88,5 +91,5 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
 >[!NOTE]
 >
->Les modèles de flux de travaux prêtes à l’emploi ne sont pas conservés lorsque vous mettez à niveau votre instance AEM. Adobe vous recommande de copier les modèles de processus prêtes à l’emploi avant de les modifier. Par exemple, copiez le modèle d’actif de mise à jour DAM prêtes à l’emploi avant de modifier l’étape de transcodage FFmpeg dans le modèle d’actif de mise à jour DAM pour sélectionner les noms de profil vidéo qui existaient avant la mise à niveau. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
+>Les modèles de processus prêtes à l’emploi ne sont pas conservés lors de la mise à niveau de votre instance AEM. Adobe vous recommande de copier les modèles de processus prêtes à l&#39;emploi avant de les modifier. Par exemple, copiez le modèle de fichier de mise à jour DAM prête à l’emploi avant de modifier l’étape de transcodage FFmpeg dans le modèle de fichier de mise à jour DAM pour sélectionner les noms de profil vidéo qui existaient avant la mise à niveau. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
 
