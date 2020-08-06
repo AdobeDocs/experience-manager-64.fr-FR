@@ -37,7 +37,7 @@ Ces quelques recommandations générales vous indiquent à quel moment inclure l
 
 Les propriétés et nœuds suivants peuvent être appliqués aux composants pour contrôler le comportement de leur balise décorative :
 
-* **`cq:noDecoration {boolean}`:**Cette propriété peut être ajoutée à un composant et une valeur réelle force AEM à ne générer aucun élément wrapper sur le composant.
+* **`cq:noDecoration {boolean}`:**Cette propriété peut être ajoutée à un composant et une valeur vraie force AEM à ne générer aucun élément wrapper sur le composant.
 * **`cq:htmlTag`Nœud  : :**ce nœud peut être ajouté sous un composant et contenir les propriétés suivantes :
    * **`cq:tagName {String}`:**Vous pouvez l’utiliser pour spécifier une balise HTML personnalisée à utiliser pour envelopper les composants au lieu de l’élément DIV par défaut.
    * **`class {String}`:**Vous pouvez l’utiliser pour spécifier les noms de classe css à ajouter à l’enveloppe.
