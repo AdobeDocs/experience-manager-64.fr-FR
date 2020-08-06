@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: 2c8cea3c-8d8b-41d4-8ef9-a0ada8f86be6
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 79%
 
 ---
 
@@ -38,13 +41,13 @@ Vous pouvez utiliser l’option **Synchroniser les ressources à partir du réf�
 
    ![Interface utilisateur d’AEM Forms](assets/aem_forms_ui.png)
 
-   **** Figure : Interface utilisateur *d’AEM Forms*
+   **Figure :** *Interface utilisateur d’AEM Forms*
 
 1. Cliquez sur l’icône ![aem6forms_sync](assets/aem6forms_sync.png) dans la barre d’outils. Si vous ne disposez d’aucune ressource dans le dernier chemin configuré, la boîte de dialogue s’affiche comme ci-dessous. Cliquez sur **Démarrer** pour lancer la synchronisation.
 
    ![Boîte de dialogue de synchronisation](assets/migrate-and-syncronize.png)
 
-   **** Figure : Boîte de dialogue *Synchronisation*
+   **Figure :** *Boîte de dialogue Synchronisation*
 
 ## Dépannage des erreurs de synchronisation {#troubleshooting-synchronization-error}
 
@@ -56,5 +59,5 @@ Pour résoudre le conflit, renommez l’application puis synchronisez manuelleme
 
 ![Conflits dans la boîte de dialogue de synchronisation des ressources](assets/sync-conflict.png)
 
-**** Figure : *Conflits dans la boîte de dialogue de synchronisation des ressources*
+**Figure :** *Conflits dans la boîte de dialogue de synchronisation des ressources*
 
