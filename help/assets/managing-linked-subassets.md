@@ -83,17 +83,17 @@ Adobe InDesign peut exporter un document et les ressources liées sous la forme 
 
 ## Création de sous-ressources {#generate-subassets}
 
-Pour les ressources prises en charge avec des formats de plusieurs pages (fichiers PDF, fichiers AI, fichiers Microsoft PowerPoint et Apple Keynote et fichiers Adobe InDesign), AEM peut générer des sous-ressources qui correspondent à chaque page individuelle de la ressource d’origine. Ces sous-ressources sont liées à l’actif *parent* et facilitent la vue de plusieurs pages. Pour tous les autres usages, les sous-ressources sont traitées comme des ressources normales dans AEM.
+Pour les ressources prises en charge avec des formats de plusieurs pages (fichiers PDF, fichiers AI, fichiers Microsoft PowerPoint et Apple Keynote et fichiers Adobe InDesign), AEM peut générer des sous-ressources qui correspondent à chaque page individuelle de la ressource d’origine. Ces sous-ressources sont liées à l’actif *parent* et facilitent la vue de plusieurs pages. Pour tous les autres usages, les sous-ressources sont traitées comme des actifs normaux en AEM.
 
 La génération de sous-ressources est désactivée par défaut. Pour activer la génération de sous-ressources, procédez comme suit :
 
-1. Connectez-vous à Experience Manager en tant qu’administrateur. Access **[!UICONTROL Tools > Workflow > Models]**.
+1. Connectez-vous au Experience Manager en tant qu’administrateur. Access **[!UICONTROL Tools > Workflow > Models]**.
 1. Sélectionnez **[!UICONTROL DAM Update Asset]** Workflow et cliquez sur **[!UICONTROL Modifier]**.
-1. Cliquez sur **[!UICONTROL Activer/désactiver le panneau]** latéral et recherchez l’étape **[!UICONTROL Créer un sous-actif]** . Ajouter l’étape du processus. Cliquez sur **[!UICONTROL Synchroniser]**.
+1. Cliquez sur **[!UICONTROL Activer/désactiver le panneau]** latéral et recherchez l’étape **[!UICONTROL Créer un sous-actif]** . Ajoutez l’étape au processus. Cliquez sur **[!UICONTROL Synchroniser]**.
 
 Pour générer les sous-ressources, effectuez l’une des opérations suivantes :
 
-* Nouveaux actifs : Le processus de mise à jour des actifs  DAM s’exécute sur toute nouvelle ressource téléchargée vers AEM. Les sous-ressources sont générées automatiquement pour les nouvelles ressources de plusieurs pages.
+* Nouveaux actifs : Le processus de mise à jour des actifs  DAM s’exécute sur toute nouvelle ressource téléchargée sur AEM. Les sous-ressources sont générées automatiquement pour les nouvelles ressources de plusieurs pages.
 * Ressources multi-page existantes : Exécutez manuellement le processus de mise à jour des ressources  DAM en procédant comme suit :
 
    * Sélectionnez une ressource et cliquez sur [!UICONTROL Chronologie] pour ouvrir le panneau de gauche. Alternately, use the keyboard shortcut `alt + 3`. Cliquez sur Processus [!UICONTROL de]Début, sélectionnez [!UICONTROL DAM Update Asset], cliquez sur [!UICONTROL Début], puis sur [!UICONTROL Continuer.]
@@ -109,7 +109,7 @@ Les sous-ressources s’affichent uniquement si elles sont générées et dispon
 
 ## Affichage des pages d’un fichier multipage   {#view-pages-of-a-multi-page-file}
 
-Vous pouvez vue un fichier de plusieurs pages, tel que PDF, INDD, PPT, PPTX et AI, à l’aide de la fonction Visionneuse de pages d’AEM Assets. Ouvrez un fichier de plusieurs pages et cliquez sur Pages **[!UICONTROL de]** Vue dans le coin supérieur gauche de la page. La visionneuse de pages qui s’ouvre affiche les pages du fichier et les commandes permettant de parcourir et de zoomer chaque page.
+Vous pouvez vue un fichier de plusieurs pages, tel que PDF, INDD, PPT, PPTX et AI, à l’aide de la fonction Page Viewer d’AEM Assets. Ouvrez un fichier de plusieurs pages et cliquez sur Pages **[!UICONTROL de]** Vue dans le coin supérieur gauche de la page. La visionneuse de pages qui s’ouvre affiche les pages du fichier et les commandes permettant de parcourir et de zoomer chaque page.
 
 ![Vue et affichage des pages d’un fichier de plusieurs pages](assets/view_multipage_asset_fmr.gif)
 
@@ -117,7 +117,7 @@ S’agissant d’InDesign, vous pouvez extraire des pages à l’aide du serveur
 
 Les options suivantes sont disponibles dans la barre d’outils, dans le rail de gauche et dans les commandes de la visionneuse de pages :
 
-* **[!UICONTROL Actions]** de bureau pour ouvrir ou afficher une sous-ressource spécifique à l’aide de l’application de bureau AEM. Découvrez comment [configurer les actions](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) pour ordinateur si vous utilisez l’application de bureau AEM.
+* **[!UICONTROL Actions]** de bureau pour ouvrir ou afficher une sous-ressource spécifique à l’aide d’AEM application de bureau. Découvrez comment [configurer les actions](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) pour ordinateur si vous utilisez AEM application de bureau.
 
 * **[!UICONTROL L’option Propriétés]** ouvre la page [!UICONTROL Propriétés] de la sous-ressource spécifique.
 
@@ -129,7 +129,7 @@ Les options suivantes sont disponibles dans la barre d’outils, dans le rail de
 
 ## Best practices and limitation {#best-practice-limitation-tips}
 
-* La génération de sous-ressources peut être très gourmande en ressources pour tout déploiement d’Experience Manager. Si vous générez des sous-ressources lorsque des ressources complexes sont téléchargées, ajoutez l’étape suivante dans le processus de mise à jour des ressources de gestion des actifs numériques. Si vous générez des sous-ressources à la demande, créez un processus distinct pour générer des sous-ressources. Un processus dédié vous permet d’ignorer les autres étapes du processus de mise à jour des actifs de gestion des actifs numériques et d’enregistrer des ressources de calcul.
+* La génération de sous-ressources peut être très gourmande en ressources pour tout déploiement Experience Manager. Si vous générez des sous-ressources lorsque des ressources complexes sont téléchargées, ajoutez l’étape suivante dans le processus de mise à jour des ressources de gestion des actifs numériques. Si vous générez des sous-ressources à la demande, créez un processus distinct pour générer des sous-ressources. Un processus dédié vous permet d’ignorer les autres étapes du processus de mise à jour des actifs de gestion des actifs numériques et d’enregistrer des ressources de calcul.
 
 >[!MORELIKETHIS]
 >
