@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 32143da1-09c8-45ce-b50d-32adf6efe383
 translation-type: tm+mt
 source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+workflow-type: tm+mt
+source-wordcount: '1143'
+ht-degree: 80%
 
 ---
 
@@ -54,7 +57,7 @@ Le fichier de modèle 3D principal contient la géométrie réelle du modèle 
 
 * Format de fichier Autodesk FBX (Filmbox) (`.fbx`)
 
-   Format d&#39;échange de fichiers Autodesk 3D; aux formats binaire et ASCII.
+   Format d&#39;échange de fichiers Autodesk 3D ; aux formats binaire et ASCII.
 
    Lorsque vous créez des fichiers FBX dans des applications tierces, Adobe recommande d’utiliser les paramètres de configuration suivants (voir le tableau ci-dessous). Ces paramètres vous permettent d’obtenir les meilleurs résultats pour les fichiers 3D que vous prévoyez d’utiliser dans AEM. The option names are taken from the **[!UICONTROL Autodesk Maya FBX Export Options]** dialog box.
 
@@ -69,16 +72,16 @@ Le fichier de modèle 3D principal contient la géométrie réelle du modèle 
    <td><p>Désélectionner.</p> <p>AEM 3D ne prend pas en charge les références externes pour l’instant.</p> </td> 
   </tr> 
   <tr> 
-   <td>Filet lisse<br /> </td> 
+   <td>Maillage lisse<br /> </td> 
    <td>Sélectionner.</td> 
   </tr> 
   <tr> 
    <td>Convertir les surfaces NURBS en</td> 
-   <td><strong>Filet de rendu logiciel</strong></td> 
+   <td><strong>Maillage de rendu logiciel</strong></td> 
   </tr> 
   <tr> 
    <td>Animation</td> 
-   <td><p>Sélectionne ou désélectionne.</p> <p>Si vous sélectionnez cette option, AEM 3D ignore les informations relatives à l’animation dans le fichier.</p> </td> 
+   <td><p>Sélectionnez ou désélectionnez.</p> <p>Si vous sélectionnez cette option, AEM 3D ignore les informations relatives à l’animation dans le fichier.</p> </td> 
   </tr> 
   <tr> 
    <td>Appareils photo</td> 
@@ -94,7 +97,7 @@ Le fichier de modèle 3D principal contient la géométrie réelle du modèle 
   </tr> 
   <tr> 
    <td>Conversion de l'axe - Axe vers le haut</td> 
-   <td><p><strong>Y-up</strong></p> <p>L’ordonnée donne des résultats cohérents lorsque vous exportez à partir de Maya et constitue le repère privilégié pour les fichiers FBX dans cette version d’AEM 3D.</p> </td> 
+   <td><p><strong>Montage Y</strong></p> <p>L'option Y-up donne des résultats cohérents lorsque vous exportez à partir de Maya et est le repère préféré pour les fichiers FBX dans cette version AEM 3D.</p> </td> 
   </tr> 
   <tr> 
    <td>Incorporer le média</td> 
@@ -102,7 +105,7 @@ Le fichier de modèle 3D principal contient la géométrie réelle du modèle 
   </tr> 
   <tr> 
    <td>Format de fichier FBX - Type</td> 
-   <td>Le <strong>binaire </strong>ou <strong>ASCII </strong>sont pris en charge.</td> 
+   <td><strong>Binary </strong>ou <strong>ASCII </strong>sont pris en charge.</td> 
   </tr> 
   <tr> 
    <td>Format de fichier FBX - Version</td> 
@@ -158,5 +161,5 @@ Voir [Rendu des ressources 3D](rendering-3d-assets.md).
 
 ## Nommage des matériaux dans un fichier de modèle 3D principal {#naming-materials-in-a-primary-d-model-file}
 
-Une *surface* est définie comme la zone de la surface d’un modèle 3D couverte par le même matériau. Ce matériau fournit aussi le nom de la surface. Adobe recommande donc de nommer les matériaux inclus dans les fichiers de modèles 3D principaux en fonction de ce qu’ils représentent. Par exemple, l’utilisation de noms spécifiques tels que &quot;Corps&quot;, &quot;Windows&quot;, &quot;Pneumatiques&quot; ou &quot;Rims&quot; est préférable à l’utilisation de noms vagues tels que &quot;Rouge&quot;, &quot;Verre&quot;, &quot;Caoutchouc&quot;, &quot;Aluminium&quot;.
+Une *surface* est définie comme la zone de la surface d’un modèle 3D couverte par le même matériau. Ce matériau fournit aussi le nom de la surface. Adobe recommande donc de nommer les matériaux inclus dans les fichiers de modèles 3D principaux en fonction de ce qu’ils représentent. Par exemple, l&#39;utilisation de noms spécifiques tels que &quot;Corps&quot;, &quot;Windows&quot;, &quot;Pneumatiques&quot; ou &quot;Rims&quot; est préférée à l&#39;utilisation de noms vagues tels que &quot;Rouge&quot;, &quot;Verre&quot;, &quot;Caoutchouc&quot;, &quot;Aluminium&quot;.
 
