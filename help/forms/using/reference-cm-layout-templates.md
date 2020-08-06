@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 
 Dans Correspondence Management, un modèle de lettre contient des champs de formulaire classiques, des fonctions de mise en page (en-têtes et pieds de page, par exemple) et des « zones cibles » vides où placer du contenu.
 
-Correspondence Management provides letter templates in the AEM Forms package [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES). For installing a package, see [How to Work With Packages](/help/sites-administering/package-manager.md). Vous pouvez personnaliser les modèles dans Designer en fonction de vos besoins de marque et d’entreprise. Le package inclut les modèles suivants :
+Correspondence Management provides letter templates in the AEM Forms package [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/fr/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES). For installing a package, see [How to Work With Packages](/help/sites-administering/package-manager.md). Vous pouvez personnaliser les modèles dans Designer en fonction de vos besoins de marque et d’entreprise. Le package inclut les modèles suivants :
 
 * Classique
 * Classique simple
@@ -34,7 +37,7 @@ Après avoir installé le package, les modèles de mise en page (XDP) sont répe
 
 Voici les champs communs à tous les modèles de ce package :
 
-* Date
+* Date   
 * Salutations
 * Texte de clôture
 * Texte de signature
@@ -63,7 +66,7 @@ Aperçu PDF d’une lettre créée à l’aide du modèle Classique simple
 
 Le modèle Équilibré à gauche affiche le logo à gauche de la lettre.
 
-![balanceleft](assets/balancedleft.png)
+![balancée à gauche](assets/balancedleft.png)
 
 Aperçu PDF d’une lettre créée à l’aide du modèle Équilibré à gauche
 
@@ -71,7 +74,7 @@ Aperçu PDF d’une lettre créée à l’aide du modèle Équilibré à gauche
 
 Le modèle Équilibré à droite présente le logo de la société sur la gauche et fournit un espace pour saisir l’adresse des destinataires dans la lettre elle-même. Le modèle Equilibré à droite comprend également un pied de page qui se répète lorsque votre lettre comporte plusieurs pages.
 
-![balancedright](assets/balancedright.png)
+![balanceright](assets/balancedright.png)
 
 Aperçu PDF d’une lettre créée à l’aide du modèle Equilibré à droite
 
