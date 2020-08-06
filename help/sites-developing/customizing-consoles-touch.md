@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
 translation-type: tm+mt
 source-git-commit: 1dc15f323dc30d5730e2af6c0e762d623523870d
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 79%
 
 ---
 
@@ -39,23 +42,25 @@ Ils peuvent être utilisés de différentes manières pour étendre les consoles
 >
 >* Utilisation et création de [bibliothèques clientes](/help/sites-developing/clientlibs.md).
 >* Utilisation et création d’[incrustations](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+>* [Granite](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+
 >
 >
 Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) – [Personnalisation de l’interface utilisateur pour AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Vous ne devez ***rien*** modifier dans le chemin `/libs`.
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+>En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
 >1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
    >
    >
-1. Make any changes within `/apps`
+1. Apportez les modifications désirées dans `/apps`
+
 >
 
 
@@ -192,7 +197,7 @@ Vous pouvez personnaliser le mode par défaut (colonnes, carte ou liste) pour un
 
    La première entrée est la valeur par défaut.
 
-   Les noeuds disponibles sont corrélés aux options d’affichage disponibles :
+   Les noeuds disponibles correspondent aux options de vue disponibles :
 
    * `column`
    * `card`
@@ -204,8 +209,8 @@ Vous pouvez personnaliser le mode par défaut (colonnes, carte ou liste) pour un
 
    Définissez la propriété suivante :
 
-   * **Nom**: `sling:orderBefore`
-   * **Type**: `String`
+   * **Nom** : `sling:orderBefore`
+   * **Type** : `String`
    * **Valeur**: `column`
 
 <!-- Needs a review by Engineering -->
