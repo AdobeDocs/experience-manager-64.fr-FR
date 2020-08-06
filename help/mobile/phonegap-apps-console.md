@@ -24,7 +24,7 @@ ht-degree: 2%
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Le processus de développement des applications mobiles AEM reconnaît que des utilisateurs de différentes compétences contribuent au développement des applications mobiles. Le mappage de processus suivant illustre l’ordre général dans lequel les auteurs de contenu et les développeurs d’applications effectuent des tâches.
+Le processus AEM de développement d&#39;applications mobiles reconnaît que des utilisateurs de différentes compétences contribuent au développement d&#39;applications mobiles. Le mappage de processus suivant illustre l’ordre général dans lequel les auteurs de contenu et les développeurs d’applications effectuent des tâches.
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
@@ -32,7 +32,7 @@ Cette page contient des informations sur la façon d’exécuter les tâches du 
 
 ## La structure des applications mobiles {#the-structure-of-mobile-applications}
 
-AEM Mobile fournit le plan d&#39;application PhoneGap pour la création d&#39;applications mobiles. Le plan définit la structure des applications que vous créez. Les applications se composent des éléments suivants :
+AEM Mobile fournit le plan directeur de l&#39;application PhoneGap pour la création d&#39;applications mobiles. Le plan définit la structure des applications que vous créez. Les applications se composent des éléments suivants :
 
 * Page racine.
 * Variations de langue de l’application.
@@ -57,7 +57,7 @@ Les premières pages enfants de la page racine sont les variations de langue de 
 La page Langue a deux objectifs :
 
 * Le contenu de la page correspond à la page de fractionnement de la variation linguistique de l’application.
-* Les propriétés de page contrôlent plusieurs aspects de conception de l’application, tels que l’URL à utiliser pour demander des mises à jour de contenu, ainsi que des informations sur la connexion à la création de cloud et à l’intégration des services Analytics Adobe.
+* Les propriétés de la page contrôlent plusieurs aspects de conception de l’application, tels que l’URL à utiliser pour demander des mises à jour de contenu, ainsi que des informations sur la connexion à la création de cloud et à l’intégration des services Adobe Analytics.
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -75,16 +75,16 @@ Les applications mobiles sont basées sur un modèle qui définit une structure 
 * **Description :** Description de l’application.
 * **URL du serveur :** URL qui fournit du contenu en direct (OTA) mis à jour vers l’application. La valeur par défaut est l’URL du serveur de publication de l’instance utilisée pour créer une application (provenant du service externalizer). Remarque : il doit s’agir d’une instance de serveur de publication et non d’un auteur, ce qui nécessite une authentification.
 
-Vous pouvez également fournir un fichier image à utiliser comme miniature de l’application, sélectionner la configuration PhoneGap Build à utiliser et sélectionner la configuration Mobile App Analytics à utiliser. Cette image est uniquement utilisée comme miniature pour représenter votre application mobile dans la console des applications mobiles en Experience Manager.
+Vous pouvez également fournir un fichier image à utiliser comme miniature de l’application, sélectionner la configuration de PhoneGap Build à utiliser et sélectionner la configuration d’analyse des applications mobiles à utiliser. Cette image est uniquement utilisée comme miniature pour représenter votre application mobile dans la console des applications mobiles en Experience Manager.
 
 Il existe d’autres onglets (et facultatifs) pour créer un service cloud et intégrer le module Adobe Mobile Services SDK dans votre application.
 
 * Créer : Cliquez ici pour gérer les configurations et configurer votre service de génération build.phonegap.com. Ensuite, à partir de la liste déroulante, vous pourrez sélectionner le nouveau service PhoneGap build cloud créé.
-* Analytics : Cliquez sur Gérer les configurations et configurez votre service cloud SDK [](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) Adobe Mobile Services. Ensuite, dans la liste déroulante, vous pourrez sélectionner le nouveau service mobile à intégrer à votre application mobile.
+* Analytics : Cliquez sur Gérer les configurations et configurez votre service cloud SDK [Mobile Services](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) Adobe. Ensuite, dans la liste déroulante, vous pourrez sélectionner le nouveau service mobile à intégrer à votre application mobile.
 
 >[!NOTE]
 >
->Les développeurs peuvent utiliser le kit de démarrage AEM PhoneGap pour créer des applications et les ajouter à la console.
+>Les développeurs peuvent utiliser l&#39;AEM PhoneGap Starter Kit pour créer des applications et les ajouter à la console.
 
 La procédure suivante utilise l’interface utilisateur tactile pour créer une application mobile.
 
@@ -94,11 +94,11 @@ La procédure suivante utilise l’interface utilisateur tactile pour créer une
    ![](do-not-localize/chlimage_1-7.png)
 
 1. (Facultatif) Dans l’onglet Avancé, fournissez une description de l’application et modifiez l’URL du serveur si nécessaire.
-1. (Facultatif) Si vous utilisez PhoneGap Build pour compiler l’application, dans l’onglet Build (Créer), sélectionnez Configuration à utiliser.
+1. (Facultatif) Si vous utilisez le PhoneGap Build pour compiler l’application, sélectionnez la configuration à utiliser dans l’onglet Créer.
 
    Pour créer une configuration de build PhoneGap, cliquez sur Gérer les configurations.
 
-1. (Facultatif) Si vous utilisez SiteCatalyst pour effectuer le suivi de l’activité de l’application, dans l’onglet Analytics, sélectionnez la configuration à utiliser.
+1. (Facultatif) Si vous utilisez le SiteCatalyst pour effectuer le suivi de l’activité de l’application, dans l’onglet Analytics, sélectionnez la configuration à utiliser.
 
    Pour créer une configuration d’application mobile, cliquez sur Gérer les configurations.
 
@@ -171,18 +171,18 @@ Exécutez la procédure suivante sur l’instance où vous souhaitez mettre à j
 
 ### Utilisation de modèles d’application {#using-app-templates}
 
-Il s’agit d’une fonctionnalité disponible avec Apps 6.1 Feature Pack 2 et qui offre un moyen simple d’exploiter les modèles d’application existants pour créer de nouvelles applications dans AEM.
+Il s’agit d’une fonctionnalité disponible avec Apps 6.1 Feature Pack 2 et qui permet d’exploiter facilement les modèles d’applications existants pour créer de nouvelles applications dans AEM.
 
 Qu’est-ce qu’un modèle d’application ? Considérez-le comme un ensemble de modèles de page et de composants qui représentent une base ou une base d’application.
 Lors de la création d’une application basée sur le modèle d’une autre application, vous obtenez une application dont le point de départ est représentatif de l’application à partir de laquelle elle a été créée.
 
 Vous devez disposer d’un modèle d’application mobile existant (ou d’une application installée avec un modèle d’application) pour pouvoir utiliser cette fonction.
 
-Les derniers exemples d’applications AEM 6.1 incluent une version mise à jour de l’application Geometrixx avec un modèle d’application. Vous pouvez également installer le StarterKit qui fournit également un modèle.
+Le dernier exemple de package d’applications AEM 6.1 inclut une version mise à jour de l’application Geometrixx avec un modèle d’application. Vous pouvez également installer le StarterKit qui fournit également un modèle.
 
 Procédure de création d’une application à partir d’un modèle d’application :
 
-1. Assurez-vous que le dernier pack de fonctionnalités et les exemples de packages de référence des applications AEM 6.1 sont installés.
+1. Assurez-vous que le pack de fonctionnalités et les exemples de référence AEM Apps 6.1 les plus récents sont installés.
 1. Cliquez sur Applications dans le rail de gauche.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
@@ -195,7 +195,7 @@ Procédure de création d’une application à partir d’un modèle d’applica
 1. Cliquez sur Suivant.
 1. Indiquez un ID d’application et un titre, mais vous pouvez également inclure un nom et une description.
 
-   1. De plus, vous pouvez fournir un fichier PNG (format d’icône PhoneGap pris en charge) en tant qu’icône en parcourant les ressources AEM.
+   1. De plus, vous pouvez fournir un fichier PNG (format d’icône PhoneGap pris en charge) en tant qu’icône en parcourant AEM ressources.
    1. Rappelez-vous que vous pouvez modifier tous ces champs une fois l’application créée dans le volet Gérer l’application. A l’exception de l’ID d’application, une fois l’ID d’application défini, vous ne pouvez plus le modifier.
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
@@ -209,15 +209,15 @@ Procédure de création d’une application à partir d’un modèle d’applica
 
 >[!NOTE]
 >
->Si vous désinstallez le package de l’application de référence Geometrixx Outdoors d’AEM et que vous avez créé une application basée sur son modèle, cette application ne sera plus fonctionnelle. L’application Geometrixx Outdoors peut être supprimée, mais le modèle d’application doit rester s’il est utilisé par d’autres applications mobiles.
+>Si vous désinstallez le package d’application de référence Geometrixx Outdoors d’AEM et si une application est créée à partir de son modèle, cette application ne fonctionnera plus. L’application Geometrixx Outdoors peut être supprimée, mais le modèle d’application doit rester s’il est utilisé par d’autres applications mobiles.
 
 ## Exploration de l’exemple d’application Geometrixx Outdoors {#exploring-the-sample-geometrixx-outdoors-app}
 
-L’application Geometrixx Outdoors est un exemple d’application PhoneGap qui présente les fonctionnalités du modèle d’application PhoneGap par défaut et les exemples de composants mobiles.
+L&#39;application Geometrixx Outdoors est un exemple d&#39;application PhoneGap qui présente les fonctionnalités du modèle d&#39;application PhoneGap par défaut et les exemples de composants mobiles.
 
-Pour ouvrir l’application, dans le rail, cliquez sur Applications mobiles, puis sélectionnez Application Geometrixx Outdoors.
+Pour ouvrir l&#39;application, dans le rail, cliquez sur Applications mobiles, puis sélectionnez Application Geometrixx Outdoors.
 
-### Fonctionnalités courantes de la page - Application Geometrixx Mobile {#common-page-features-geometrixx-mobile-app}
+### Fonctionnalités courantes de la page - Application mobile Geometrixx {#common-page-features-geometrixx-mobile-app}
 
 Chaque page de l’application mobile comprend les fonctionnalités suivantes :
 
@@ -255,7 +255,7 @@ La page Produits et son héritage de pages enfants implémentent un système de 
 
 La page Produits n’est pas disponible pour les utilisateurs de l’application. La page Engrenage permet d&#39;accéder à chaque page de produit.
 
-### Page de commentaires - Application Geometrixx Mobile {#the-reviews-page-geometrixx-mobile-app}
+### Page de commentaires - Application mobile Geometrixx {#the-reviews-page-geometrixx-mobile-app}
 
 Contient un bouton Précédent. Le système de paragraphe vous permet d’ajouter des composants.
 
@@ -273,7 +273,7 @@ La page Qui sommes-nous contient plusieurs composants de ligne à deux colonnes.
 
 Lors de l’utilisation de l’application, la page Qui sommes-nous est disponible à partir du carrousel sur la page Anglais.
 
-### Page Emplacements - Application Geometrixx Mobile {#the-locations-page-geometrixx-mobile-app}
+### Page Emplacements - Application mobile Geometrixx {#the-locations-page-geometrixx-mobile-app}
 
 La page Emplacements contient un composant Emplacements.
 
