@@ -1,6 +1,6 @@
 ---
-title: Gestion des paramètres d’image prédéfinis Dynamic Media
-description: Comprendre les paramètres d’image prédéfinis Dynamic Media et apprendre à créer, modifier et gérer les paramètres d’image prédéfinis
+title: Gestion des paramètres d’image prédéfinis de média dynamique
+description: Comprendre les paramètres d’image prédéfinis de Contenu multimédia dynamique et apprendre à créer, modifier et gérer les paramètres d’image prédéfinis
 uuid: 087e6c32-82d5-4645-8dba-0a22c62f891f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
 workflow-type: tm+mt
 source-wordcount: '3851'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -61,7 +61,7 @@ You manage your image presets in AEM by tapping the AEM logo to access the globa
 >
 >Le système affiche une grande variété de rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** dans l’affichage des détails d’une ressource. **** Vous pouvez augmenter le nombre de paramètres d’image prédéfinis affichés. Voir [Augmentation du nombre de paramètres d’image prédéfinis affichés](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Formats de fichiers Adobe Illustrator (AI), PostScript (EPS) et PDF    {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Formats de fichiers Adobe Illustrator (AI), PostScript (EPS) et PDF  {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 Si vous avez l’intention de prendre en charge l’assimilation de fichiers AI, EPS et PDF de manière à pouvoir générer des rendus dynamiques de ces formats de fichiers, vous pouvez consulter les informations suivantes avant de créer des paramètres d’image prédéfinis.
 
@@ -86,7 +86,7 @@ Vous pouvez afficher les sous-ressources ou les pages lorsque vous ouvrez la res
 >
 >In the **[!UICONTROL DAM Update Asset]** workflow, the **[!UICONTROL EPS thumbnails]** step generates thumbnails for EPS files.
 
-### Propriétés des métadonnées de ressource PDF/AI/EPS    {#pdf-ai-eps-asset-metadata-properties}
+### Propriétés des métadonnées de ressource PDF/AI/EPS  {#pdf-ai-eps-asset-metadata-properties}
 
 | **Propriété de métadonnées** | **Description** |
 |---|---|
@@ -139,7 +139,7 @@ Appuyez sur Adobe Experience Manager dans le coin supérieur gauche de l’éc
 
 Une valeur maximale est définie pour le composant de processus **[!UICONTROL Pixelliser le rendu d’aperçus d’image PDF/AI]**, afin de s’assurer qu’il ne crée pas d’images exagérément grandes en mémoire. Ces images volumineuses peuvent, en effet, dépasser la capacité de mémoire allouée à la machine virtuelle Java (JVM). Il faut veiller à fournir suffisamment de mémoire à la machine virtuelle Java pour gérer le nombre configuré de workflows parallèles, de sorte que chacun d’eux soit en mesure de créer une image à la taille maximale configurée.
 
-### Format de fichier InDesign (INDD)    {#indesign-indd-file-format}
+### Format de fichier InDesign (INDD)  {#indesign-indd-file-format}
 
 Si vous avez l’intention de prendre en charge l’assimilation de fichiers INDD de manière à pouvoir générer le rendu dynamique de ce format de fichier, vous pouvez consulter les informations suivantes avant de créer des paramètres d’image prédéfinis.
 
@@ -218,7 +218,7 @@ Le dimensionnement des miniatures est défini au format suivant : **width:heigh
 
 Les paramètres d’image prédéfinis que vous créez sont disponibles sous la forme de rendus dynamiques lorsque vous prévisualisez des ressources. AEM affiche une grande variété de rendus dynamiques lors de l’affichage de ressources à partir de **[!UICONTROL Affichage des détails > Rendus]**. Vous pouvez augmenter ou diminuer la limite des rendus affichés.
 
-**Pour augmenter ou diminuer le nombre de paramètres d’image prédéfinis Dynamic Media affichés**:
+**Pour augmenter ou diminuer le nombre de paramètres d’image prédéfinis de Contenu multimédia dynamique affichés**:
 
 1. Navigate to **[!UICONTROL CRXDE Lite]** ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Accédez au nœud de liste des paramètres d’image prédéfinis à l’adresse `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -235,7 +235,7 @@ Les paramètres d’image prédéfinis que vous créez sont disponibles sous la 
 
 ### Creating Dynamic Media image presets {#creating-image-presets}
 
-La création d’un paramètre d’image prédéfini Dynamic Media vous permet d’appliquer ces paramètres à toute image lors de la prévisualisation ou de la publication.
+La création d’un paramètre d’image prédéfini Contenu multimédia dynamique vous permet d’appliquer ces paramètres à toute image lors de la prévisualisation ou de la publication.
 
 >[!NOTE]
 >
@@ -248,9 +248,9 @@ Si vous avez l’intention de prendre en charge l’assimilation de fichiers IND
 
 >[!NOTE]
 >
->Pour créer des paramètres d’image prédéfinis Dynamic Media, vous devez disposer de droits d’administrateur en tant qu’administrateur AEM ou administrateur Admin Console.
+>Pour créer des paramètres d’image prédéfinis de Contenu multimédia dynamique, vous devez disposer de droits d’administrateur en tant qu’administrateur AEM ou administrateur Admin Console.
 
-**Pour créer un paramètre d’image prédéfini** Dynamic Media :
+**Pour créer un paramètre** d’image prédéfini Contenu multimédia dynamique :
 
 1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale.
 1. Appuyez sur l’icône **[!UICONTROL Outils]** , puis accédez à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
@@ -286,7 +286,7 @@ Lorsque ces valeurs sont vides, AEM détermine que ce paramètre d’image préd
 
 ### Options des paramètres d’image prédéfinis {#image-preset-options}
 
-Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous disposez des options décrites dans cette section. En outre, Adobe recommande au début les trois *meilleures pratiques* suivantes :
+Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous disposez des options décrites dans cette section. En outre, l&#39;Adobe recommande au début les trois *meilleures pratiques* suivantes :
 
 * **[!UICONTROL Format]** (onglet **[!UICONTROL Basic]** ) - Sélectionnez **[!UICONTROL JPEG]** ou un autre format qui répond à vos besoins. Tous les navigateurs Web prennent en charge le format d’image JPEG ; il offre un bon équilibre entre la taille des petits fichiers et la qualité des images. Cependant, les images au format JPEG utilisent un modèle de compression avec perte qui peut introduire des artefacts d’image indésirables si le paramètre de compression est trop faible. C’est pourquoi Adobe recommande de définir la qualité de compression sur 75. Ce paramètre offre un bon équilibre entre la qualité d’image et la taille de fichier réduite.
 * **[!UICONTROL Activer l’accentuation]** simple : ne sélectionnez pas l’option **[!UICONTROL Activer l’accentuation]** simple (cette offre de filtre d’accentuation contrôle moins les paramètres de masquage flou).
@@ -407,7 +407,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
   </tr> 
   <tr> 
    <td><strong>Modificateur d’image</strong></td> 
-   <td><p>Au-delà des paramètres d’image courants disponibles dans l’IU, Dynamic Media prend en charge de nombreuses modifications d’image avancées que vous pouvez spécifier dans le champ <strong>Modificateurs d’images</strong>. Ces paramètres sont définis dans la <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">référence des commandes du protocole de serveur d’images</a>.</p> <p>Important : La fonctionnalité suivante répertoriée dans l’API n’est pas prise en charge :</p> 
+   <td><p>Au-delà des paramètres d’image courants disponibles dans l’IU, Dynamic Media prend en charge de nombreuses modifications d’image avancées que vous pouvez spécifier dans le champ <strong>Modificateurs d’images</strong>. Ces paramètres sont définis dans la <a href="https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">référence des commandes du protocole de serveur d’images</a>.</p> <p>Important : La fonctionnalité suivante répertoriée dans l’API n’est pas prise en charge :</p> 
     <ul> 
      <li>Commandes de base de création de modèles et de rendu de texte : <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> et <code>textPs=</code></li> 
      <li>Commandes de localisation : <code>locale=</code> et <code>req=xlate</code></li> 
@@ -424,7 +424,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
 
 ## Defining Image Preset options with image modifiers {#defining-image-preset-options-with-image-modifiers}
 
-Outre les options disponibles dans les onglets **[!UICONTROL Réglages de base]** et **[!UICONTROL Avancé]** , vous pouvez définir des modificateurs d’image afin de vous donner plus d’options lorsque vous définissez des paramètres d’image prédéfinis. Le rendu des images dépend de l’API de rendu des images de Dynamic Media. L&#39;API est définie en détail dans la référence [du protocole](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html)HTTP.
+Outre les options disponibles dans les onglets **[!UICONTROL Réglages de base]** et **[!UICONTROL Avancé]** , vous pouvez définir des modificateurs d’image afin de vous donner plus d’options lorsque vous définissez des paramètres d’image prédéfinis. Le rendu des images dépend de l’API de rendu des images de Contenu multimédia dynamique. L&#39;API est définie en détail dans la référence [du protocole](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html)HTTP.
 
 Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l’aide des modificateurs d’image.
 
@@ -490,7 +490,7 @@ Si vous exécutez le mode hybride de Dynamic Media, vous devez publier manuellem
 
 Si vous exécutez le mode Scene7 de Dynamic Media, les paramètres d’image prédéfinis sont automatiquement publiés ; vous n’avez pas besoin de réaliser ces étapes.
 
-**Pour publier des paramètres d’image prédéfinis en mode** hybride Dynamic Media :
+**Pour publier des paramètres d’image prédéfinis dans Contenu multimédia dynamique - Mode** hybride :
 
 1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale.
 1. Appuyez sur l’icône **[!UICONTROL Outils]** , puis accédez à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
@@ -501,7 +501,7 @@ Si vous exécutez le mode Scene7 de Dynamic Media, les paramètres d’image pr�
 
 ## Deleting Dynamic Media image presets {#deleting-image-presets}
 
-**Pour supprimer des paramètres** d’image Dynamic Media prédéfinis :
+**Pour supprimer les paramètres d’image prédéfinis** Contenu multimédia dynamique :
 
 1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale.
 1. Appuyez sur l’icône **[!UICONTROL Outils]** , puis accédez à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
