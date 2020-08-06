@@ -178,15 +178,15 @@ Ces droits de document sont disponibles dans l’onglet Droits. Vous pouvez les 
 
 **N&#39;importe lequel :** L’utilisateur peut modifier le PDF.
 
-**Collaboration :** L’utilisateur est autorisé à collaborer avec d’autres utilisateurs, à l’aide des options de collaboration d’Adobe Acrobat. Cette autorisation permet à l’utilisateur de copier les données d’un formulaire, même si l’autorisation Copier n’est pas explicitement donnée dans la stratégie.
+**Collaboration :** L’utilisateur est autorisé à collaborer avec d’autres utilisateurs, à l’aide des options de collaboration dans Adobe Acrobat. Cette autorisation permet à l’utilisateur de copier les données d’un formulaire, même si l’autorisation Copier n’est pas explicitement donnée dans la stratégie.
 
 **Modifier les pages :** L’utilisateur est autorisé à ajouter et supprimer des pages et à modifier du contenu dans le PDF.
 
-**Remplir et signer :** L’utilisateur est autorisé à remplir les champs de formulaire du PDF et à le signer.
+**Fill &amp; Sign :** L’utilisateur est autorisé à remplir les champs de formulaire du PDF et à le signer.
 
 **Copier :** autorise l’utilisateur à copier du texte d’un document protégé par cette stratégie.
 
-**Lecteur d’écran :** Cette autorisation s’affiche si vous cochez la case Afficher les autorisations personnalisées pour PDF. Lorsque cette option est sélectionnée, Adobe Acrobat a l’autorisation d’ajouter des balises temporaires sur le PDF pour améliorer sa lisibilité sur un lecteur d’écrans.
+**Reader d’écran :** Cette autorisation s’affiche si vous cochez la case Afficher les autorisations personnalisées pour PDF. Lorsque cette option est sélectionnée, Adobe Acrobat a l’autorisation d’ajouter des balises temporaires sur le PDF pour améliorer sa lisibilité sur un lecteur d’écrans.
 
 Ces droits de document sont disponibles dans l’onglet Options. Vous pouvez les appliquer aux fichiers PDF, PTC Pro/E et Microsoft Office :
 
@@ -226,7 +226,7 @@ La zone Paramètres généraux contient les paramètres suivants :
 
 **Suivi des utilisations étendues :** Activez ou désactivez le suivi des utilisations étendues. Document Security prend en charge le suivi des événements d’utilisateur associés aux diverses opérations réalisées sur un fichier PDF. L’objet Document Security peut être accessible à l’aide d’un script Java. Le fait de cliquer sur un bouton, un fichier multimédia en cours de lecture ou l’enregistrement d’un fichier sont quelques exemples d’événements pouvant être envoyés par un fichier PDF protégé par une stratégie. A l’aide de l’objet Document Security, vous pouvez également récupérer des informations sur l’utilisateur. Le suivi des événements peut être activé dans le serveur Document Security au niveau global ou au niveau stratégique.
 
-**Période de location hors connexion :** Nombre maximal de jours pendant lesquels le destinataire peut utiliser le document protégé par une stratégie hors connexion (sans connexion Internet ou réseau active). A l’issue de cette période d’ouverture, le destinataire doit resynchroniser le document pour continuer à l’utiliser.
+**Période de location hors connexion :** Nombre maximal de jours pendant lesquels le destinataire peut utiliser le document protégé par une stratégie hors connexion (sans une principale connexion Internet ou réseau). A l’issue de cette période d’ouverture, le destinataire doit resynchroniser le document pour continuer à l’utiliser.
 
 ### Fournisseurs d’autorisations externes {#external-authorization-providers}
 
@@ -264,7 +264,7 @@ Si vous modifiez une stratégie et que l’administrateur a supprimé un filigra
 >
 >pour les stratégies qui autorisent les accès anonymes, le nom d’utilisateur et l’ID d’un utilisateur anonyme ne s’affichent pas en filigrane si vous sélectionnez ce type de filigrane.
 
-**Utiliser uniquement les modules externes Acrobat certifiés pour PDF :** Lorsqu’elle est sélectionnée pour une stratégie, cette option indique qu’Acrobat 8.0 et versions ultérieures doivent s’exécuter en mode certifié lors de l’ouverture de documents sécurisés par la stratégie. Lorsqu’Acrobat s’exécute en mode certifié, il n’ouvre aucun module externe tiers. 
+**Utiliser uniquement des modules externes Acrobat certifiés pour PDF :** Lorsqu’elle est sélectionnée pour une stratégie, cette option indique que Acrobat 8.0 et les versions ultérieures doivent s’exécuter en mode certifié lors de l’ouverture de documents sécurisés par la stratégie. Lorsqu’Acrobat s’exécute en mode certifié, il n’ouvre aucun module externe tiers. 
 
 Sélectionnez cette option si un destinataire d’un document crée un module externe susceptible de contourner les systèmes de protection des documents dans Acrobat 8.0 et versions ultérieures. Ne la sélectionnez pas si les destinataires du document doivent utiliser des modules externes tiers dans Acrobat pour interagir avec des documents.
 
