@@ -1,5 +1,5 @@
 ---
-title: Gérer vos ressources numériques à l’aide d’AEM Assets
+title: Gérer vos ressources numériques à l’aide de AEM Assets
 description: Découvrez les différentes tâches de gestion et de modification des ressources que vous pouvez réaliser à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
@@ -16,7 +16,7 @@ ht-degree: 68%
 
 Découvrez les différentes tâches de gestion et de modification des ressources que vous pouvez réaliser à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’AEM Assets.
 
-Cet article décrit comment gérer et modifier des ressources à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’Adobe Experience Manager (AEM) Assets. For an elementary knowledge about the user interface, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
+Cet article décrit comment gérer et modifier des ressources à l’aide de l’interface utilisateur optimisée pour les AEM de ressources Adobe Experience Manager. For an elementary knowledge about the user interface, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
 
 ## Création de dossiers {#create-folders}
 
@@ -128,7 +128,7 @@ Avant de télécharger un fichier, assurez-vous qu’il est dans un format [](as
 
 ### Transferts en série {#serial-uploads}
 
-Le téléchargement de nombreux actifs en vrac consomme d’importantes ressources système, ce qui peut avoir un impact négatif sur les performances de votre déploiement AEM. Les goulets d’étranglement potentiels peuvent être votre connexion Internet, les opérations de lecture-écriture sur le disque, les limitations du navigateur Web quant au nombre de requêtes POST lors du transfert simultané de ressources. L’opération de transfert en masse peut échouer ou se terminer prématurément. Autrement dit, AEM Assets peut ignorer certains fichiers lors de l’assimilation, voire n’assimiler aucun fichier.
+Le transfert de nombreux actifs en vrac consomme d’importantes ressources système, ce qui peut avoir un impact négatif sur les performances de votre déploiement AEM. Les goulets d’étranglement potentiels peuvent être votre connexion Internet, les opérations de lecture-écriture sur le disque, les limitations du navigateur Web quant au nombre de demandes de POST lors du téléchargement simultané de ressources. L’opération de transfert en masse peut échouer ou se terminer prématurément. Autrement dit, AEM Assets peut ignorer certains fichiers lors de l’assimilation, voire n’assimiler aucun fichier.
 
 Pour remédier à cette situation, AEM Assets assimile une ressource à la fois (chargement en série) au cours d’une opération de chargement en masse, plutôt que d’assimiler toutes les ressources simultanément.
 
@@ -144,7 +144,7 @@ Contenu multimédia dynamique permet le téléchargement par lots de fichiers pa
 
 >[!NOTE]
 >
->Pour télécharger des fichiers par FTP dans Contenu multimédia dynamique - Mode Scene7 : installez Feature Pack (FP) 18912 sur l’auteur d’AEM. Contactez le service à la clientèle Adobe pour accéder au FP-18912 et terminer la configuration de votre compte FTP. Voir la section [Installation du pack de fonctionnalités 18912 pour la migration des ressources en bloc](/help/assets/bulk-ingest-migrate.md).
+>Pour télécharger des fichiers par FTP dans Contenu multimédia dynamique - Mode Scene7 : installez Feature Pack (FP) 18912 sur AEM auteur. Contactez le service à la clientèle de l’Adobe pour accéder au FP-18912 et terminer la configuration de votre compte FTP. Voir la section [Installation du pack de fonctionnalités 18912 pour la migration des ressources en bloc](/help/assets/bulk-ingest-migrate.md).
 Si vous utilisez le protocole FTP pour télécharger des ressources, les paramètres de téléchargement spécifiés dans AEM sont ignorés. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
 
 **Pour télécharger des ressources via FTP, procédez comme suit :**
@@ -160,7 +160,7 @@ Si vous utilisez le protocole FTP pour télécharger des ressources, les paramè
 
    >[!NOTE]
    >
-   >Lorsque vous téléchargez des fichiers par FTP, les options de tâche de téléchargement que vous définissez dans Dynamic Media Classic (Scene7) prévalent sur les paramètres de traitement des fichiers définis dans AEM.
+   >Lorsque vous téléchargez des fichiers par FTP, les options de tâche de téléchargement que vous définissez dans Dynamic Media Classic (Scene7) ont un précédent par rapport aux paramètres de traitement des fichiers définis dans AEM.
 
 1. In the lower-right corner of the **[!UICONTROL Upload Job Options]** dialog box, tap **[!UICONTROL Save]**.
 1. In the lower-right corner of the **[!UICONTROL Upload]** page, tap **[!UICONTROL Submit Upload]**.
@@ -229,7 +229,7 @@ Lorsque vous transférez des fichiers d’image PostScript (EPS) ou Illustrator 
 |  | Forcer comme CMJN | Applique l’espace colorimétrique CMJN. |
 |  | Forcer comme Niveaux de gris | Applique l’espace colorimétrique Niveaux de gris. |
 
-#### Définition des options de téléchargement Photoshop {#setting-photoshop-upload-options}
+#### Définition des options de transfert Photoshop {#setting-photoshop-upload-options}
 
 Les fichiers PSD (Photoshop Document) sont généralement utilisés pour créer des modèles d’image. Lorsque vous transférez un fichier PSD, vous pouvez créer automatiquement un modèle d’image à partir de celui-ci (sélectionnez l’option Créer un modèle sur l’écran Télécharger).
 
@@ -269,7 +269,7 @@ Faites votre choix parmi les options suivantes :
 | Extraire | Termes de recherche | Extrait les termes du fichier PDF afin qu’ils puissent être recherchés par mot-clé dans une visionneuse de catalogue électronique. |
 |  | Liens | Extrait les liens des fichiers PDF et les convertit en zones cliquables utilisées dans une visionneuse de catalogue électronique. |
 | Générer automatiquement un catalogue électronique à partir d’un PDF de plusieurs pages |  | Crée automatiquement un catalogue électronique à partir du fichier PDF. Le catalogue électronique reprend le nom du fichier PDF que vous avez transféré (cette option n’est disponible que si vous pixellisez le fichier PDF au moment du transfert). |
-| Résolution |  | Détermine le paramètre de résolution. Ce paramètre définit le nombre de pixels affichés par pouce dans le fichier PDF. La valeur par défaut est 150. |
+| Résolution |  | Détermine le paramètre de résolution. Ce paramètre définit le nombre de pixels affichés par pouce dans le fichier PDF. La valeur par défaut est de 150. |
 | Espace colorimétrique |  | Dans le menu Espace colorimétrique, sélectionnez un espace colorimétrique pour le fichier PDF. La plupart des fichiers PDF contiennent des images en couleurs RVB et CMJN. L’espace colorimétrique RVB est préférable pour un affichage à l’écran. |
 |  | Détecter automatiquement | Conserve l’espace colorimétrique du fichier PDF. |
 |  | Forcer comme RVB | Applique l’espace colorimétrique RVB. |
@@ -487,7 +487,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    **Suppression d’un rendu**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap the **[!UICONTROL Delete Rendition]** icon from the [toolbar](/help/sites-authoring/basic-handling.md). Une fois le traitement des ressources terminé, il est impossible de supprimer les rendus en masse. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Pour plusieurs ressources, vous pouvez personnaliser Experience Manager pour supprimer des rendus spécifiques ou supprimer les ressources et télécharger à nouveau les ressources supprimées.
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap the **[!UICONTROL Delete Rendition]** icon from the [toolbar](/help/sites-authoring/basic-handling.md). Une fois le traitement des ressources terminé, il est impossible de supprimer les rendus en masse. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Pour plusieurs fichiers, vous pouvez personnaliser le Experience Manager pour supprimer des rendus spécifiques ou supprimer les fichiers et télécharger à nouveau les fichiers supprimés.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
@@ -596,7 +596,7 @@ Lors de l’annulation de la publication d’une ressource complexe, annulez uni
 
 ## Create a Closed User Group {#closed-user-group}
 
-Un CUG (groupe d’utilisateurs fermé) est utilisé pour limiter l’accès à des dossiers de ressources spécifiques publiés à partir d’AEM. Si vous créez un groupe d’utilisateurs fermé pour un fichier, l’accès au dossier (y compris aux ressources du dossier et à ses sous-dossiers) est limité aux membres ou aux groupes attribués. Pour accéder au dossier, ils doivent se connecter à l’aide de leurs informations d’identification de sécurité.
+Un CUG (Groupe d’utilisateurs fermé) est utilisé pour limiter l’accès à des dossiers de ressources spécifiques publiés à partir d’AEM. Si vous créez un groupe d’utilisateurs fermé pour un fichier, l’accès au dossier (y compris aux ressources du dossier et à ses sous-dossiers) est limité aux membres ou aux groupes attribués. Pour accéder au dossier, ils doivent se connecter à l’aide de leurs informations d’identification de sécurité.
 
 Le format CUG est un moyen supplémentaire de restreindre l’accès à vos ressources. Vous pouvez également configurer une page de connexion pour le dossier.
 
@@ -711,7 +711,7 @@ The **[!UICONTROL Timeline]** lets you view various events for a selected item, 
 
 Dans la [console Collections](managing-collections-touch-ui.md#navigating-the-collections-console), la liste **[!UICONTROL Tout afficher]** contient des options permettant de n’afficher que les commentaires et les workflows. De plus, la frise chronologique ne s’affiche que pour les collections de niveau supérieur répertoriées dans la console. Elle ne s’affiche pas si vous accédez à l’intérieur des collections.
 
-**[!UICONTROL Le journal]** contient plusieurs [options spécifiques aux fragments](content-fragments-managing.md#timeline-for-content-fragments)de contenu ; cette fonctionnalité nécessite [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) ou version ultérieure.
+**[!UICONTROL Le journal]** contient plusieurs [options spécifiques aux fragments](content-fragments-managing.md#timeline-for-content-fragments)de contenu ; cette fonctionnalité nécessite [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) ou une version ultérieure.
 
 **Pour utiliser la chronologie**:
 
@@ -862,7 +862,7 @@ Si un fichier comprend des annotations en langues étrangères (en particulier e
 
 1. Redémarrez l’instance AEM.
 
-Voici un exemple de configuration d’AEM pour l’impression d’annotations dans CJK (chinois, japonais et coréen) :
+Vous trouverez ci-dessous un exemple de configuration des AEM pour l’impression d’annotations en CJK (chinois, japonais et coréen) :
 
 1. Téléchargez les polices Google Noto CJK à partir des liens ci-dessous et enregistrez-les dans le répertoire des polices configuré dans le service Font Manager.
 
