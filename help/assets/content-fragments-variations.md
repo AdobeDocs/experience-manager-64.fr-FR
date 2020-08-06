@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
 source-wordcount: '1762'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 91%
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragment de contenu nécessitent l’application d’ [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](../release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application de [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](../release-notes/sp-release-notes.md).
 
 Les [variations](content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonction importante des fragments de contenu, car elles permettent de créer et de modifier des copies du contenu maître pour une utilisation sur des canaux spécifiques et/ou dans des cas spécifiques.
 
@@ -83,7 +83,7 @@ L’éditeur plein écran fournit :
 * l’accès à diverses [actions](#actions) ;
 * selon le [format](#formats), des options de mise en forme supplémentaires ([texte enrichi](#rich-text)).
 
-### Actions   {#actions}
+### Actions  {#actions}
 
 Les actions suivantes sont également disponibles (pour tous les [formats](#formats)) lorsque l’éditeur plein écran (c’est-à-dire pour le texte sur plusieurs lignes) est ouvert :
 
@@ -193,7 +193,7 @@ Le résumé de texte est conçu pour aider les utilisateurs à réduire la longu
 >
 >L’anglais est disponible par défaut.
 >
->D&#39;autres langues sont disponibles en tant que modules de modèles linguistiques de la distribution de logiciels :
+>D’autres langues sont disponibles en tant que modules de modèle de langues sur le portail Distribution logicielle :
 >
 >* [Français (fr) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 >* [Allemand (de) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
@@ -238,7 +238,7 @@ Pour annoter un fragment :
 
 ### Affichage, modification et suppression d’annotations {#viewing-editing-deleting-annotations}
 
-Annotations:
+Les annotations :
 
 * Sont mise en surbrillance sur le texte, en mode plein écran et en mode normal de l’éditeur. Les détails complets d’une annotation peuvent être affichés, modifiés et/ou supprimés en cliquant sur le texte mis en surbrillance, ce qui rouvre la boîte de dialogue.
 
@@ -292,7 +292,7 @@ Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mi
    >* **Markdown** : le fichier ne sera pas visible, mais il sera toujours présent lorsque vous reviendrez au **texte enrichi**.
 
 
-## Gestion des variations   {#managing-variations}
+## Gestion des variations  {#managing-variations}
 
 ### Création d’une variation {#creating-a-variation}
 
@@ -310,7 +310,7 @@ Pour créer une variation, procédez comme suit :
    >
    >Lors de la création d’une variation, c’est toujours le **Maître** qui est copié et non pas la variation ouverte.
 
-### Modification d’une variation   {#editing-a-variation}
+### Modification d’une variation  {#editing-a-variation}
 
 Vous pouvez apporter des modifications au contenu de la variation après avoir :
 
@@ -335,7 +335,7 @@ Pour renommer une variation existante :
 >
 >Cette opération concerne uniquement le **Titre** de la variation.
 
-### Suppression d’une variation   {#deleting-a-variation}
+### Suppression d’une variation  {#deleting-a-variation}
 
 Pour supprimer une variation existante :
 
@@ -349,7 +349,7 @@ Pour supprimer une variation existante :
 >
 >Vous ne pouvez pas supprimer le **Maître**.
 
-### Synchronisation avec le gabarit {#synchronizing-with-master}
+### Synchronisation avec le maître {#synchronizing-with-master}
 
 Le **Maître** fait partie intégrante d’un fragment de contenu et, par définition, il contient la copie maître du contenu, tandis que les variations contiennent les versions individuelles et personnalisées de ce contenu. Lorsque le Maître est mis à jour, il est possible que ces modifications soient également liées aux variations et qu’elles doivent, par conséquent, être appliquées à celles-ci.
 
@@ -357,7 +357,7 @@ Lors de la modification d’une variation, vous pouvez accéder à l’action de
 
 >[!CAUTION]
 >
->La synchronisation n’est disponible que pour copier les modifications *du **gabarit**dans la variation*.
+>La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
 >
 >Seul l’élément actuel de la variation est synchronisé.
 >
@@ -371,9 +371,9 @@ Lors de la modification d’une variation, vous pouvez accéder à l’action de
    * du menu déroulant du sélecteur **Actions** – **Synchroniser l’élément actif avec le gabarit** ;
    * de la barre d’outils de l’éditeur plein écran – **Synchroniser avec le gabarit**.
 
-3. Le Maître et la variation seront affichés côte à côte :
+3. Le maître et la variation seront affichés côte à côte :
 
-   * le contenu ajouté figure en vert   (ajouté à la variation) ;
+   * le contenu ajouté figure en vert  (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
 
    ![cfm-6420-27](assets/cfm-6420-27.png)
