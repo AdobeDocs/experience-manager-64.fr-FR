@@ -129,13 +129,13 @@ Définissez les paramètres suivants pour configurer un point de fin Watched Fol
 
 **Nombre de répétitions :** Nombre de fois où le dossier de contrôle analyse le dossier ou le répertoire. La valeur -1 indique une analyse indéfinie. La valeur par défaut est -1.
 
-**Ralentissement :** Lorsque cette option est sélectionnée, elle limite le nombre de tâches du dossier de contrôle qu’AEM forms peut traiter à un moment donné. La valeur Taille du lot détermine le nombre maximal de tâches. Voir A propos du ralentissement .
+**Ralentissement :** Lorsque cette option est sélectionnée, elle limite le nombre de tâches du dossier de contrôle que AEM forms traite à un moment donné. La valeur Taille du lot détermine le nombre maximal de tâches. Voir A propos du ralentissement .
 
 **Nom d’utilisateur :** (obligatoire) nom d’utilisateur utilisé lors de l’appel d’un service de cible à partir du dossier de contrôle. La valeur par défaut est SuperAdmin.
 
 **Nom de domaine :** (obligatoire) domaine de l’utilisateur. La valeur par défaut est DefaultDom.
 
-**Taille du lot :** Nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.  
+**Taille du lot :** Nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.   
 
 Les paramètres Intervalle de répétition et Taille du lot permettent de déterminer le nombre de fichiers sélectionnés par Watched Folder pour chaque analyse. Watched Folder utilise un pool de threads Quartz pour analyser le dossier input. Le pool de threads est partagé avec d’autres services. Si l’intervalle d’analyse défini est court, les threads analysent fréquemment le dossier input. Si des fichiers sont déposés régulièrement dans le dossier de contrôle, il est préférable que l’intervalle d’analyse soit court. Si au contraire, des fichiers y sont déposés peu fréquemment, utilisez un intervalle d’analyse plus long afin que les autres services puissent utiliser les threads.
 
