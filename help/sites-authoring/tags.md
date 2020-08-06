@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: d0b0e47b-e68d-407d-9d06-deca2039dede
 translation-type: tm+mt
 source-git-commit: 8326ee711558a390f79fc185fc37bbbb3097e309
+workflow-type: tm+mt
+source-wordcount: '690'
+ht-degree: 79%
 
 ---
 
@@ -46,11 +49,11 @@ Les balises sont un moyen simple et rapide de classer le contenu de votre site w
 
 Lors de la conception de la structure du contenu d’un site et du schéma de métadonnées des ressources, pensez à l’approche légère et accessible qu’offre le balisage.
 
-## Application de balises {#applying-tags}
+## Application de balises   {#applying-tags}
 
-In the author environment, authors may apply tags by accessing the page properties and entering one or more tags in the **Tags/Keywords** field.
+Dans l’environnement de développement de contenu, les auteurs peuvent appliquer des balises en accédant aux propriétés de la page et en entrant une ou plusieurs balises dans le champ **Balises/Mots-clés**.
 
-To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. L’onglet **Balises standard** est l’espace de noms par défaut, ce qui signifie qu’il n’existe aucun `namespace-string:` préfixé à la taxonomie.
+To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. Le panneau **Balises standard** est l’espace de noms par défaut, ce qui signifie qu’il n’y a pas de `namespace-string:` préfixé à la taxonomie.
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -60,9 +63,9 @@ Comme c’est le cas avec les pages, vous pouvez effectuer les opérations suiva
 
 **Activer**
 
-* Activez des tags individuels.
+* Activez individuellement des balises.
 
-   A l’instar des pages, les nouveaux tags doivent être activés avant d’être disponibles dans l’environnement de publication.
+   A l’instar des pages, les nouvelles balises doivent être activées avant d’être disponibles dans l’environnement de publication.
 
 >[!NOTE]
 >
@@ -74,7 +77,7 @@ Comme c’est le cas avec les pages, vous pouvez effectuer les opérations suiva
 
 ## Nuages de tags {#tag-clouds}
 
-Les nuages de balises affichent un nuage de balises, soit pour la page active, soit pour l’ensemble du site Web, soit pour les pages les plus consultées. Les nuages de balises sont un moyen de mettre en évidence les problèmes qui intéressent (ont été) l’utilisateur. La taille du texte utilisé pour afficher la balise varie en termes d’utilisation.
+Les nuages de balises affichent un nuage de balises, soit pour la page active, soit pour l’ensemble du site Web, soit pour les pages les plus consultées. Les nuages de balises permettent de mettre en évidence les problèmes qui intéressent (ont été) l’utilisateur. La taille du texte utilisé pour afficher la balise varie en termes d’utilisation.
 
 Le composant [Nuage de tags](/help/sites-authoring/default-components-foundation.md#tag-cloud) (groupe de composants Général) sert à ajouter un nuage de tags à une page.
 
