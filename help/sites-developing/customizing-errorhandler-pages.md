@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 76%
 
 ---
 
@@ -48,6 +51,7 @@ Vous pouvez développer vos propres scripts afin de personnaliser les pages affi
 
    * de `/libs/sling/servlet/errorhandler/`
    * vers `/apps/sling/servlet/errorhandler/`
+
    Puisque le chemin de destination n’existe pas par défaut, vous devez le créer lorsque vous effectuez cette opération pour la première fois.
 
 1. Accédez à `/apps/sling/servlet/errorhandler`. Ici, vous pouvez effectuer l’une des opérations suivantes :
@@ -67,22 +71,23 @@ Vous pouvez développer vos propres scripts afin de personnaliser les pages affi
 
 Les erreurs HTTP 500 sont dues à des exceptions côté serveur.
 
-* **[500 : erreur de serveur interne](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**Le serveur a rencontré une condition inattendue qui l’a empêché de satisfaire la demande.
+* **[500 : erreur de serveur interne](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)Le serveur a rencontré une condition inattendue qui l’a empêché de satisfaire la demande.**
 
-Lorsque le traitement des requêtes génère une exception, la structure Apache Sling (sur laquelle AEM est construit) :
+Lorsque le traitement des requêtes génère une exception, la structure Apache Sling (sur laquelle l’AEM est créée) :
 
 * consigne l’exception ;
 * renvoie :
 
    * le code de réponse HTTP 500
    * la trace de la pile d’exception
+
    dans le corps de la réponse.
 
 La [personnalisation des pages affichées par le gestionnaire d’erreurs](#how-to-customize-pages-shown-by-the-error-handler) permet de créer un script `500.jsp`. However, it is only used if `HttpServletResponse.sendError(500)` is executed explicitly; i.e. from an exception catcher.
 
 Dans le cas contraire, le code de réponse est défini sur , mais le script `500.jsp`500.  n’est pas exécuté.
 
-Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire d’erreurs doit être identique à la classe d’exception (ou superclasse). Pour gérer toutes ces exceptions, vous pouvez créer un script `/apps/sling/servlet/errorhandler/Throwable.js`p ou `/apps/sling/servlet/errorhandler/Exception.jsp`.
+Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire d’erreurs doit être identique à la classe d’exception (ou superclasse). Pour gérer toutes ces exceptions, vous pouvez créer un script `/apps/sling/servlet/errorhandler/Throwable.js`p ou `/apps/sling/servlet/errorhandler/Exception.jsp`p.
 
 >[!CAUTION]
 >
