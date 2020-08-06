@@ -8,6 +8,9 @@ uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
 discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1416'
+ht-degree: 80%
 
 ---
 
@@ -42,20 +45,20 @@ Il est plus facile de créer et de gérer des formulaires en suivant un processu
 
 1. L’option **Ajouter des propriétés** s’affiche. Les champs **Titre** et **Nom** sont obligatoires :
 
-   * **** Titre : Indiquez `Add new or update shipping address` dans le champ Titre. Le champ Titre spécifie le nom d’affichage du formulaire. Le titre vous permet d’identifier le formulaire dans l’interface utilisateur d’AEM Forms.
+   * **Titre :** Indiquez `Add new or update shipping address` dans le champ Titre. Le champ Titre spécifie le nom d’affichage du formulaire. Le titre vous permet d’identifier le formulaire dans l’interface utilisateur d’AEM Forms.
    * **Nom :** spécifiez `shipping-address-add-update-form` dans le champ Nom. Le champ Nom indique le nom du formulaire. Un nœud portant le nom indiqué est alors créé dans le référentiel. Lorsque vous commencez à saisir un titre, une valeur pour le champ de nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ de nom peut contenir uniquement des caractères alphanumériques, des traits d’union et des tirets bas. Toutes les entrées non valides sont remplacées par un tiret.
 
-1. Appuyez sur **Créer**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche. Tap **Open** to open the newly created form in a new tab. Le formulaire s’ouvre pour modification. Il affiche également la barre latérale permettant de personnaliser le formulaire nouvellement créé selon vos besoins.
+1. Appuyez sur **Create** (Créer). Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche. Tap **Open** to open the newly created form in a new tab. Le formulaire s’ouvre pour modification. Il affiche également la barre latérale permettant de personnaliser le formulaire nouvellement créé selon vos besoins.
 
    Pour plus d’informations sur l’interface de création de formulaires adaptatifs et les composants disponibles, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/creating-adaptive-form.md).
 
-   ![nouvellement créé-formulaire adaptatif-adaptatif](assets/newly-created-adaptive-form.png)
+   ![nouvellement créé-formulaire adaptatif](assets/newly-created-adaptive-form.png)
 
 ## Étape 2 : ajout d’un en-tête et d’un pied de page {#step-add-header-and-footer}
 
 AEM Forms fournit de nombreux composants pour l’affichage d’informations sur un formulaire adaptatif. Les composants d’en-tête et de pied de page contribuent à une apparence cohérente du formulaire. Un en-tête comprend généralement le logo d’une entreprise, le titre du formulaire et un résumé. Un pied de page contient généralement des informations de copyright, ainsi que des liens vers d’autres pages.
 
-1. Appuyez sur ![bascule-côté-panneau](assets/toggle-side-panel.png) > ![bascule](assets/treeexpandall.png). L’explorateur de composants s’affiche. Faites glisser et déposez le composant **En-tête** de l’explorateur de composants vers le formulaire adaptatif.
+1. Appuyez sur ![bascule-côté-panneau](assets/toggle-side-panel.png) > ![triangle](assets/treeexpandall.png). L’explorateur de composants s’affiche. Faites glisser et déposez le composant **En-tête** de l’explorateur de composants vers le formulaire adaptatif.
 1. Appuyez sur **Logo**. La barre d’outils s’affiche. Appuyez sur ![aem_6_3_edit](assets/aem_6_3_edit.png) dans la barre d’outils, saisissez **We.Retail**, puis appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 1. Appuyez sur l’image. La barre d’outils s’affiche. Appuyez sur ![cmppr](assets/cmppr.png). L’explorateur de propriétés s’ouvre sur la partie gauche de l’écran. **Recherchez** et téléchargez l’image du logo. Appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). L’image apparaît dans l’en-tête.
@@ -78,13 +81,13 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM 
 <table> 
  <tbody> 
   <tr> 
-   <td>Propriétés</td> 
+   <td>Property</td> 
    <td>Zone de texte 1<br /> </td> 
    <td>Zone de texte 2<br /> </td> 
    <td>Zone de texte 3</td> 
   </tr> 
   <tr> 
-   <td>Titre</td> 
+   <td>Title (Titre)</td> 
    <td>Nom<br /> </td> 
    <td>Adresse d’expédition</td> 
    <td>État</td> 
@@ -114,7 +117,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM 
 
    | Propriétés | Valeur |
    |---|---|
-   | Titre | Code postal |
+   | Title (Titre) | Code postal |
    | Nom de l’élément | customer_ZIPCode |
    | Nombre maximal de chiffres | 6 |
    | Champ obligatoire | Activé |
@@ -124,7 +127,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM 
 
    | Propriétés | Valeur |
    |---|---|
-   | Titre | Courriel |
+   | Title (Titre) | Email |
    | Nom de l’élément | customer_Email |
    | Champ obligatoire | Activé |
 
@@ -137,7 +140,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM 
    <td>Valeur</td> 
   </tr> 
   <tr> 
-   <td>Titre</td> 
+   <td>Title (Titre)</td> 
    <td>Preuve d’adresse approuvée par le gouvernement<br /> </td> 
   </tr> 
   <tr> 
