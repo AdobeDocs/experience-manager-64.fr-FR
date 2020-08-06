@@ -80,7 +80,7 @@ L’exemple suivant présente une entrée dans le fichier de mappage de polices�
 
 La valeur par défaut est une chaîne vide.
 
-**Emplacement du cache :** Indique l’emplacement du cache disque de Forms. Lorsque ce paramètre est modifié, toutes les informations concernant le cache de l’emplacement courant sont réinitialisées et un nouveau cache est créé dans le nouveau répertoire. Sélectionnez l’une des options suivantes :
+**Emplacement du cache :** Indique l’emplacement du cache disque Forms. Lorsque ce paramètre est modifié, toutes les informations concernant le cache de l’emplacement courant sont réinitialisées et un nouveau cache est créé dans le nouveau répertoire. Sélectionnez l’une des options suivantes :
 
 **Emplacement par défaut :** Il s’agit de la sélection par défaut. Lorsque cette option est sélectionnée, le cache est créé à un emplacement différent selon le serveur d’applications utilisé :
 
