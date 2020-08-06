@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: c9e51008-6009-49a2-9c74-1c610cef2e7f
 translation-type: tm+mt
 source-git-commit: b7e5c42009acb5044d1112e66b8e65b528355736
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 77%
 
 ---
 
@@ -39,6 +42,7 @@ Les différentes règles suivantes s’appliquent lorsque vous renommez le fichi
 >* ces chiffres doivent figurer après un tiret
 >* si le nom du fichier comporte d’autres chiffres, alors le numéro du port doit comporter le préfixe `-p`
 >* le préfixe « cq5 » au début du nom du fichier est ignoré
+
 >
 
 
@@ -86,7 +90,8 @@ Pour installer et démarrer AEM en tant que service Windows :
 
    * prunsrv_amd64 
    * prunsrv_ia64 
-   Cette commande appelle le script approprié qui démarre le démon du service Windows dans Java 64 bits au lieu de Java 32 bits.
+
+   Cette commande appelle le script approprié qui début le démon de service Windows dans Java 64 bits au lieu de Java 32 bits.
 
 1. Pour empêcher le processus de se diviser en plusieurs processus, augmentez la taille maximale du tas ainsi que les paramètres JVM PermGen. Locate the `set jvm_options` command and set the value as follows:
 
@@ -101,9 +106,11 @@ Pour installer et démarrer AEM en tant que service Windows :
 1. Démarrez le service en procédant comme suit :
 
    * Dans le panneau de commande Services, cliquez sur cq5, puis sur Démarrer.
+
    ![chlimage_1-71](assets/chlimage_1-71.png)
 
    * Sur la ligne de commande, tapez net start cq5.
+
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
 1. Windows indique que le service est en cours d’exécution. AEM démarre et l’exécutable prunsrv apparaît dans le gestionnaire de tâches. Dans le navigateur Web, accédez à AEM, par exemple `http://localhost:4502` pour commencer à l’utiliser.
@@ -135,7 +142,7 @@ If you want to change the location of the temporary folder (for example, if you 
 
 ## Autres options disponibles à partir du fichier de démarrage rapide {#further-options-available-from-the-quickstart-file}
 
-D’autres options et conventions de changement de nom sont décrites dans le fichier d’aide Quickstart, disponible via l’option -help. Pour accéder à l’aide, tapez :
+D&#39;autres options et conventions de changement de nom sont décrites dans le fichier d&#39;aide Quickstart, disponible via l&#39;option -help. Pour accéder à l’aide, tapez :
 
 * `java -jar cq5-<version>.jar -help`
 
@@ -276,13 +283,11 @@ Vous pouvez utiliser les liens suivants afin de vérifier que l’installation f
 
 * `http://localhost:8080/crx/de`
 
-   
-Console CRXDE Lite.
+   Console du CRXDE Lite.
 
 * `http://localhost:8080/system/console`
 
-   
-La console Web.
+   Console Web.
 
 ## Actions après l’installation {#actions-after-installation}
 
