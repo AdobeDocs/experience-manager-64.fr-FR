@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 487e3966-443a-408e-b5af-899fcba6fca6
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 73%
 
 ---
 
@@ -27,7 +30,7 @@ Follow the [Generic steps for AEM Forms workspace customization](/help/forms/usi
 
 Par exemple, pour remplacer la police du texte de la barre de navigation supérieure par Courier New, procédez comme suit :
 
-1. Connectez-vous à CRXDE Lite en accédant à `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Connectez-vous au CRXDE Lite en accédant à `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Utilisez l’une des méthodes suivantes :
 
    1. Pour modifier la famille de police dans un style existant, ajoutez la ligne suivante dans le fichier newStyle.css sous /apps/ws/css.
@@ -74,6 +77,6 @@ Par exemple, pour remplacer la police du texte de la barre de navigation supéri
 
 1. Relancez l’espace de travail et effacez le cache du navigateur pour que les modifications soient visibles.
 
-![change_font_before](assets/change_font_before.png)**Figure :** Barre de navigation *supérieure avant la personnalisation des polices*
+![change_font_before](assets/change_font_before.png)**Figure :** *Barre de navigation supérieure avant la personnalisation de la police*
 
-![change_font_after](assets/change_font_after.png)**Figure :** Barre de navigation *supérieure après la personnalisation de la police du premier onglet*
+![change_font_after](assets/change_font_after.png)**Figure :** *Barre de navigation supérieure après la personnalisation de la police du premier onglet*
