@@ -1,6 +1,6 @@
 ---
-title: Meilleures pratiques
-seo-title: Meilleures pratiques
+title: Bonnes pratiques
+seo-title: Bonnes pratiques
 description: Découvrez comment utiliser AEM de la manière la plus efficace possible.
 seo-description: Découvrez comment utiliser AEM de la manière la plus efficace possible.
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
 source-git-commit: 8a5222c98b4f93ea86b572eaf233f61dec074951
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 90%
 
 ---
 
 
-# Meilleures pratiques{#best-practices}
+# Bonnes pratiques{#best-practices}
 
 Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
 
 Une documentation sur les meilleures pratiques est disponible pour les aspects suivants :
 
-* [Assets](#assets)
+* [Ressources](#assets)
 * [Sites](#sites)
 * [Formulaires](#forms)
 
@@ -33,7 +36,7 @@ Pour connaître les meilleures pratiques en matière d’administration, de dép
 
 Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
 
-## Assets {#assets}
+## Ressources {#assets}
 
 Les meilleures pratiques concernant les ressources, y compris les fonctionnalités Dynamic Media et l’intégration de Scene 7, sont décrites dans les rubriques suivantes :
 
@@ -69,9 +72,9 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
 |  |  |  |
 |---|---|---|
 | Outils de création | [Environnement et outils de création](/help/sites-authoring/author-environment-tools.md)  | Fournit un aperçu des outils utilisés pour créer des pages. |
-| Organisation des pages | [Création et organisation des pages](/help/sites-authoring/managing-pages.md) | Fournit un aperçu de la meilleure façon d’organiser vos pages, y compris les conventions d’affectation des noms. |
+| Organisation des pages | [Création et organisation des pages](/help/sites-authoring/managing-pages.md) | Fournit un aperçu de la meilleure façon d&#39;organiser vos pages, y compris les conventions d&#39;affectation de nom. |
 
-## Forms {#forms}
+## Formulaires {#forms}
 
 |  |  |  |
 |---|---|---|
