@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: 29c0a78c-53b5-4ce7-a2f3-63e1b089b0d0
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '1169'
+ht-degree: 83%
 
 ---
 
@@ -118,7 +121,7 @@ Les étapes suivantes illustrent ce flux d’utilisation des ressources dans l�
 
 1. Mettez à jour le fichier `sample-form.xdp` et supprimez NumericField1.
 1. Téléchargez le fichier `sample-form.xdp` dans l’interface utilisateur d’AEM Forms.
-1. Ouvrez le formulaire adaptatif `sample-xfa-af`   en vue de sa création. Le message d’erreur suivant s’affiche : Le schéma/modèle de formulaire pour le formulaire adaptatif a été mis à jour. `Click Here` pour la rebaser sur la nouvelle version.
+1. Ouvrez le formulaire adaptatif `sample-xfa-af`   en vue de sa création. Le message d’erreur suivant s’affiche : Le Schéma/modèle de formulaire pour le formulaire adaptatif a été mis à jour. `Click Here` pour la rebaser sur la nouvelle version.
 
 1. Click the link (labeled &quot; `Click Here`&quot;) in the message. Un message d’erreur s’affiche indiquant que le champ n’existe plus dans le fichier XDP.
 
