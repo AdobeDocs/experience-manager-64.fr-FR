@@ -1,8 +1,8 @@
 ---
 title: Rapports prédéfinis dans le Rapports de processus
 seo-title: Rapports prédéfinis dans le Rapports de processus
-description: Requête des données de processus d’AEM Forms sur JEE pour créer des rapports sur les processus à long terme, la durée du processus et le volume de flux de travail
-seo-description: Requête des données de processus d’AEM Forms sur JEE pour créer des rapports sur les processus à long terme, la durée du processus et le volume de flux de travail
+description: Requête des données de processus d’AEM Forms on JEE pour créer des rapports sur les processus à long terme, la durée du processus et le volume de flux de travail
+seo-description: Requête des données de processus d’AEM Forms on JEE pour créer des rapports sur les processus à long terme, la durée du processus et le volume de flux de travail
 uuid: ba3a1809-270e-4c94-ade4-d2f6af86d860
 content-type: reference
 topic-tags: process-reporting
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Rapports prédéfinis dans le Rapports de processus {#pre-defined-reports-in-process-reporting}
 
-Le Rapports de processus AEM Forms est livré avec les rapports prêts à l’emploi ** suivants :
+Le Rapports de processus AEM Forms est livré avec les rapports *prêts à l’emploi* suivants :
 
-* **[Processus](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**à long terme : Rapport de tous les processus AEM Forms qui ont pris plus d’un temps spécifié pour s’achever
+* **[Processus](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**à long terme : Rapport de tous les processus AEM Forms dont l’exécution a pris plus d’un temps spécifié
 
-* **[Graphique](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**de durée du processus : Rapport d’un processus AEM Forms spécifié par la durée
+* **[Graphique](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**de durée du processus : Rapport d’un processus AEM Forms spécifié par durée
 
 * **[Volume](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**de flux de travaux : Rapport des instances en cours d’exécution et terminées d’un processus spécifié par date
 
