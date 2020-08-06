@@ -10,6 +10,9 @@ topic-tags: integration
 discoiquuid: b6786321-6e8e-40e2-809b-d117991246c4
 translation-type: tm+mt
 source-git-commit: 7e1d32127ee82f4353d768e5a2446a4bf4db2f57
+workflow-type: tm+mt
+source-wordcount: '589'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +31,7 @@ Alors qu’un système modulaire distribué a des avantages propres, le défi co
 
 ## Aperçu de l’intégration de données {#data-integration-overview}
 
-![aem-forms-data-integration](assets/aem-forms-data-integeration.png)
+![aem-forms-data-intégration](assets/aem-forms-data-integeration.png)
 
 L’intégration de données AEM Forms permet de configurer et de connecter des sources de données disparates avec AEM Forms. Il fournit une interface utilisateur intuitive qui permet de créer un schéma de représentation de données unifiée des entités d’entreprise dans les sources de données connectées. La représentation unifiée est appelée modèle de données de formulaire, qui est une extension du schéma JSON. Les entités d’un modèle de données de formulaire sont appelées objets de modèle de données. Un modèle de données du formulaire vous permet d’effectuer les opérations suivantes :
 
@@ -40,7 +43,7 @@ L’intégration de données AEM Forms permet de configurer et de connecter des
 Une fois que vous avez créé un modèle de données de formulaire, vous pouvez l’utiliser dans divers processus de formulaires adaptatifs et de communications interactives :
 
 * Créer des formulaires adaptatifs et des communications interactives basés sur le modèle de données de formulaire
-* Préremplissage des formulaires adaptatifs et des communications interactives à partir de sources de données configurées
+* Préremplir les formulaires adaptatifs et les communications interactives à partir de sources de données configurées
 * Appeler des services/opérations de source de données à l’aide de règles de formulaire adaptatif
 * Écrire les données de formulaire adaptatif envoyées dans les sources de données
 
