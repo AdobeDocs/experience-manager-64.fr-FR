@@ -40,15 +40,15 @@ Le Début rapide de l’API Java (SOAP) est disponible pour le service Assembler
 
 [Début rapide (mode SOAP) : Création dynamique d’un document DDX à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[Début rapide (mode SOAP) : Assemblage de portfolios PDF à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[Début rapide (mode SOAP) : Assemblage de Portfolios PDF à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
 [Début rapide (mode SOAP) : Assemblage de plusieurs fragments XDP à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
-Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms fortement typée et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les Débuts rapides situés dans Programmation avec AEM Forms dépendent du serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les Débuts rapides situés dans Programmation avec AEM Forms reposent sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Début rapide (mode SOAP) : Assemblage d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
@@ -1381,9 +1381,9 @@ public class AssemblePDFWithDynamicDDXSOAP {
 }
 ```
 
-## Début rapide (mode SOAP) : Assemblage de portfolios PDF à l’aide de l’API Java {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
+## Début rapide (mode SOAP) : Assemblage de Portfolios PDF à l’aide de l’API Java {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
 
-L’exemple de code Java suivant crée un portfolio PDF. Le portfolio PDF est enregistré en tant que fichier PDF nommé *AssemblerResultPortfolio.pdf*. (voir [Assemblage de portfolios](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios)PDF).
+L’exemple de code Java suivant crée un portfolio PDF. Le portfolio PDF est enregistré en tant que fichier PDF nommé *AssemblerResultPortfolio.pdf*. (voir [Assemblage de Portfolios](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios)PDF).
 
 ```as3
  /* 
