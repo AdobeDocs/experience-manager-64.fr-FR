@@ -24,7 +24,7 @@ Vous pouvez appeler par programmation des processus de longue durée centrés su
 
 * Application cliente Web Java utilisant l’API d’appel. (Voir [Appel d’AEM Forms à l’aide de l’API](/help/forms/developing/invoking-aem-forms-using-java.md)Java (/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api).)
 * Application ASP.NET qui utilise des services Web. (See [Invoking AEM Forms Using Web Services](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
-* Application cliente générée avec Flex qui utilise Remoting. (Voir [Appel d’AEM Forms à l’aide d’AEM Forms (obsolète pour AEM Forms) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+* Application cliente créée avec Flex qui utilise Remoting. (Voir [Appel d’AEM Forms à l’aide de (obsolète pour les formulaires AEM) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Le processus de longue durée appelé s’appelle *FirstAppSolution/PreLoanProcess*. Vous pouvez créer ce processus en suivant le didacticiel spécifié dans [Création de votre première application](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63)AEM Forms.
 
@@ -66,7 +66,7 @@ A l’aide d’une application cliente, vous pouvez envoyer le *processus *First
 
 [Création d&#39;une application Web ASP.NET qui appelle un processus de longue durée axé sur l&#39;humain](invoking-human-centric-long-lived.md#creating-an-asp-net-web-application-that-invokes-a-human-centric-long-lived-process)
 
-[Création d’une application cliente générée avec Flex qui appelle un processus de longue durée axé sur l’être humain](invoking-human-centric-long-lived.md#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process)
+[Création d’une application cliente créée avec Flex qui appelle un processus de longue durée axé sur l’être humain](invoking-human-centric-long-lived.md#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process)
 
 ## Création d’une application Web Java qui appelle un processus pour des intervenants humains de longue durée {#creating-a-java-web-application-that-invokes-a-human-centric-long-lived-process}
 
@@ -77,8 +77,8 @@ L’illustration suivante présente une application cliente Web qui publie des v
 La servlet Java exécute les tâches suivantes :
 
 * Récupère les valeurs publiées de la page HTML vers la servlet Java.
-* Crée de manière dynamique une source de données XML à transmettre au * processus FirstAppSolution/PreLoanProcess *. Les valeurs de nom, de téléphone (ou de courrier électronique) et de montant sont spécifiées dans la source de données XML.
-* Appelle le processus *FirstAppSolution/PreLoanProcess* à l’aide de l’API d’appel d’AEM Forms.
+* Crée de façon dynamique une source de données XML à transmettre au * processus FirstAppSolution/PreLoanProcess *. Les valeurs de nom, de téléphone (ou de courrier électronique) et de montant sont spécifiées dans la source de données XML.
+* Appelle le processus *FirstAppSolution/PreLoanProcess* à l’aide de l’API d’appel AEM Forms.
 * Renvoie la valeur de l’identifiant d’appel au navigateur Web client.
 
 ### Résumé des étapes {#summary-of-steps}
@@ -94,7 +94,7 @@ Pour créer une application Web Java appelant le `FirstAppSolution/PreLoanProces
 
 >[!NOTE]
 >
->Certaines de ces étapes dépendent de l’application J2EE sur laquelle AEM Forms est déployé. Par exemple, la méthode que vous utilisez pour déployer un fichier WAR dépend du serveur d’applications J2EE que vous utilisez. On suppose qu’AEM Forms est déployé sur JBoss®.
+>Certaines de ces étapes dépendent de l’application J2EE sur laquelle AEM Forms est déployé. Par exemple, la méthode que vous utilisez pour déployer un fichier WAR dépend du serveur d’applications J2EE que vous utilisez. AEM Forms est probablement déployé sur JBoss®.
 
 ### Création d’un projet Web {#create-a-web-project}
 
@@ -110,7 +110,7 @@ For the location of these JAR files, see [Including AEM Forms Java library files
 
 >[!NOTE]
 >
->Le fichier J2EE.jar définit les types de données utilisés par une servlet Java. Vous pouvez obtenir ce fichier JAR auprès du serveur d’applications J2EE sur lequel AEM Forms est déployé.
+>Le fichier J2EE.jar définit les types de données utilisés par une servlet Java. Vous pouvez obtenir ce fichier JAR à partir du serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
 **Création d’un projet Web**
 
@@ -829,11 +829,11 @@ où localhost est le nom du serveur Web hébergeant le projet ASP.NET et 1629 es
 >
 >Pour confirmer que l&#39;application ASP.NET a appelé le processus, début Workspace et accepté le prêt.
 
-## Création d’une application cliente générée avec Flex qui appelle un processus de longue durée axé sur l’être humain {#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process}
+## Création d’une application cliente créée avec Flex qui appelle un processus de longue durée axé sur l’être humain {#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process}
 
-Vous pouvez créer une application cliente créée avec Flex pour appeler le processus *FirstAppSolution/PreLoanProcess* . Cette application utilise Remoting pour appeler le processus *FirstAppSolution/PreLoanProcess* . (Voir [Appel d’AEM Forms à l’aide d’AEM Forms (obsolète pour AEM Forms) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+Vous pouvez créer une application cliente créée avec Flex pour appeler le processus *FirstAppSolution/PreLoanProcess* . Cette application utilise Remoting pour appeler le processus *FirstAppSolution/PreLoanProcess* . (Voir [Appel d’AEM Forms à l’aide de (obsolète pour les formulaires AEM) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
-L’illustration suivante présente une application cliente générée avec Flex qui collecte des données auprès d’un utilisateur final. Les données sont placées dans une source de données XML et envoyées au processus.
+L’illustration suivante présente une application cliente créée avec Flex pour collecter des données auprès d’un utilisateur final. Les données sont placées dans une source de données XML et envoyées au processus.
 
 Notez qu’une fois le processus appelé, une valeur d’identificateur d’appel s’affiche. Une valeur d’identifiant d’appel est créée dans le cadre d’un enregistrement qui effectue le suivi de l’état du processus de longue durée.
 
@@ -846,11 +846,11 @@ L’application cliente générée avec Flex effectue les tâches suivantes :
 
 ### Résumé des étapes {#summary_of_steps-2}
 
-Pour créer une application cliente générée avec Flex qui peut appeler le processus FirstAppSolution/PreLoanProcess, effectuez les étapes suivantes :
+Pour créer une application cliente créée avec Flex qui peut appeler le processus FirstAppSolution/PreLoanProcess, effectuez les étapes suivantes :
 
-1. Début d’un nouveau projet Flex.
-1. Incluez le fichier adobe-remoting-provider.swc dans le chemin de classe de votre projet. (Voir [Inclusion du fichier](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)de bibliothèque Flex d’AEM Forms.)
-1. Créez une `mx:RemoteObject` instance par le biais d’ActionScript ou de MXML. (voir [Création d’une instance](/help/forms/developing/invoking-aem-forms-using-remoting.md)mx:RemoteObject).
+1. Début d&#39;un nouveau projet Flex.
+1. Incluez le fichier adobe-remoting-provider.swc dans le chemin de classe de votre projet. (voir [Inclusion du fichier](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)de bibliothèque Flex AEM Forms).
+1. Créez une `mx:RemoteObject` instance par ActionScript ou MXML. (voir [Création d’une instance](/help/forms/developing/invoking-aem-forms-using-remoting.md)mx:RemoteObject).
 1. Configurez une `ChannelSet` instance pour communiquer avec AEM Forms et associez-la à l’ `mx:RemoteObject` instance. (Voir [Création d’un Canal à AEM Forms](/help/forms/developing/invoking-aem-forms-using-remoting.md).)
 1. Appelez la `login` méthode ChannelSet ou la `setCredentials` méthode du service pour spécifier la valeur d&#39;identifiant utilisateur et le mot de passe. (Voir [Utilisation de la connexion](/help/forms/developing/invoking-aem-forms-using-remoting.md#using-single-sign-on)unique.)
 1. Créez la source de données XML à transmettre au `FirstAppSolution/PreLoanProcess` processus en créant une instance XML. (Cette logique d’application est illustrée dans l’exemple de code suivant.)
@@ -877,7 +877,7 @@ Pour créer une application cliente générée avec Flex qui peut appeler le pro
 
 ### Appel d’un processus de longue durée à l’aide de Remoting {#invoking-a-long-lived-process-using-remoting}
 
-L’exemple de code Flex suivant appelle le `FirstAppSolution/PreLoanProcess` processus.
+L&#39;exemple de code Flex suivant appelle le `FirstAppSolution/PreLoanProcess` processus.
 
 ```as3
  <?xml version="1.0" encoding="utf-8"?> 
