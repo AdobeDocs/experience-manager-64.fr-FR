@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '783'
+ht-degree: 10%
 
 ---
 
@@ -21,7 +24,7 @@ Dans une application d’une seule page, le composant de page ne fournit pas les
 
 >[!NOTE]
 >
->La fonctionnalité Editeur d’application monopage (SPA) requiert AEM 6.4 Service Pack 2 ou version ultérieure.
+>La fonctionnalité Editeur d’application monopage (SPA) nécessite AEM Service Pack 2 6.4 ou version ultérieure.
 >
 >L’éditeur d’applications monopages est la solution recommandée pour les projets qui nécessitent un rendu côté client basé sur la structure d’applications monopages (par exemple, Réagir ou Angular).
 
@@ -31,18 +34,18 @@ Le composant de page d’un SPA ne fournit pas les éléments HTML de ses compos
 
 ## Gestion du modèle de page {#page-model-management}
 
-The resolution and the management of the page model is delegated to a provided [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) module. L’application d’une seule page doit interagir avec le `PageModelManager` module lorsqu’elle s’initialise pour récupérer le modèle de page initial et s’enregistrer pour les mises à jour du modèle. Cette opération est principalement réalisée lorsque l’auteur modifie la page via l’éditeur de page. Le `PageModelManager` est accessible par le projet SPA sous la forme d&#39;un package npm. En tant qu’interprète entre AEM et l’application d’une seule page, l’application `PageModelManager` est destinée à accompagner l’application d’une seule page.
+The resolution and the management of the page model is delegated to a provided [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) module. L’application d’une seule page doit interagir avec le `PageModelManager` module lorsqu’elle s’initialise pour récupérer le modèle de page initial et s’enregistrer pour les mises à jour du modèle. Cette opération est principalement réalisée lorsque l’auteur modifie la page via l’éditeur de page. Le `PageModelManager` est accessible par le projet SPA sous la forme d&#39;un package npm. En tant qu&#39;interprète entre AEM et le SPA, le `PageModelManager` est destiné à accompagner le SPA.
 
 Pour autoriser la création de la page, une bibliothèque cliente nommée `cq.authoring.pagemodel.messaging` doit être ajoutée pour fournir un canal de communication entre l’application d’une seule page et l’éditeur de page. Si le composant de page de l’application d’une seule page hérite du composant wcm/core de la page, il existe les options suivantes pour rendre la catégorie de bibliothèque `cq.authoring.pagemodel.messaging` cliente disponible :
 
 * Si le modèle est modifiable, ajoutez la catégorie de bibliothèque cliente à la stratégie de page.
-* Ajouter la catégorie de bibliothèque cliente à l’aide `customfooterlibs.html` du composant de page.
+* Ajoutez la catégorie de bibliothèque cliente à l’aide `customfooterlibs.html` du composant de page.
 
 N&#39;oubliez pas de limiter l&#39;inclusion de la `cq.authoring.pagemodel.messaging` catégorie au contexte de l&#39;éditeur de page.
 
 ## Type de données de communication {#communication-data-type}
 
-Le type de données de communication est défini dans le composant Page d’AEM à l’aide de l’ `data-cq-datatype` attribut. Lorsque le type de données de communication est défini sur JSON, les requêtes GET atteignent les points de terminaison du modèle Sling d’un composant. À la suite d’une mise à jour dans l’éditeur de page, la représentation JSON du composant mis à jour est envoyée à la bibliothèque modèle de page. La bibliothèque Modèle de page avertit ensuite l’application d’une seule page des mises à jour.
+Le type de données de communication est défini comme un élément HTML dans le composant AEM Page à l’aide de l’ `data-cq-datatype` attribut. Lorsque le type de données de communication est défini sur JSON, les demandes de GET atteignent les points de terminaison du modèle Sling d’un composant. À la suite d’une mise à jour dans l’éditeur de page, la représentation JSON du composant mis à jour est envoyée à la bibliothèque modèle de page. La bibliothèque Modèle de page avertit ensuite l’application d’une seule page des mises à jour.
 
 **Composant de page SPA -`body.html`**
 
@@ -92,7 +95,7 @@ Propriétés des ressources de métadonnées décrivant le contenu de l’applic
 >
 >Ce document utilise l&#39;application de Journal We.Retail à des fins de démonstration uniquement. Il ne doit être utilisé pour aucun travail de projet.
 >
->Tout projet AEM doit tirer parti de l’archétype [du projet](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, qui prend en charge les projets d’application d’une seule page à l’aide de React ou d’Angular et qui exploite le SDK d’application d’une seule page. Tous les projets d’application d’une seule page sur AEM doivent être basés sur l’archétype expert pour le kit de démarrage d’une seule page.
+>Tout projet AEM doit tirer parti de l&#39;archétype [de projet](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, qui prend en charge les projets d&#39;application d&#39;une seule page à l&#39;aide de React ou d&#39;Angular et qui exploite le SDK d&#39;application d&#39;une seule page. Tous les projets d&#39;application d&#39;une seule page doivent être basés sur l&#39;archétype Maven pour le kit de démarrage d&#39;une application d&#39;une seule page.
 
 ## Synchronisation des incrustations de l’éditeur de page {#page-editor-overlay-synchronization}
 
