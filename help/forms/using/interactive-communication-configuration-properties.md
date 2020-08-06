@@ -11,6 +11,9 @@ topic-tags: interactive-communications
 discoiquuid: 1aef2a51-4391-4075-8841-a62ace5606f9
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 70%
 
 ---
 
@@ -41,7 +44,7 @@ Tap **Document Fragments Configuration** on the **Adobe Experience Manager Web C
   <tr> 
    <td>Propriétés</td> 
    <td>Description</td> 
-   <td>Default</td> 
+   <td>Valeur par défaut</td> 
    <td>Valeurs acceptables</td> 
   </tr> 
   <tr> 
@@ -82,7 +85,7 @@ Tap **Document Fragments Configuration** on the **Adobe Experience Manager Web C
 
 Tap **Create Correspondence Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Agent UI.
 
-| Propriétés | Description | Default | Valeurs acceptables |
+| Propriétés | Description | Valeur par défaut | Valeurs acceptables |
 |---|---|---|---|
 | Afficher le contenu résolu pour modification | Cochez la case pour afficher le contenu résolu (valeurs réelles au lieu d’espaces réservés) lors de la modification du module de texte sur l’interface utilisateur de l’agent. | Non sélectionné | Non applicable |
 | Appliquer un filigrane lors de l’aperçu | Cochez la case pour appliquer un filigrane au canal d’impression de la communication interactive en mode Aperçu. | Non sélectionné | Ne s’applique pas |
@@ -91,7 +94,7 @@ Tap **Create Correspondence Configuration** on the **Adobe Experience Manager We
 
 Tap **Adaptive Form and Interactive Communication Web Channel Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Adaptive Forms and Interactive Communications Web channel. Le tableau suivant décrit les propriétés liées aux communications interactives :
 
-| Propriétés | Description | Default | Valeurs acceptables |
+| Propriétés | Description | Valeur par défaut | Valeurs acceptables |
 |---|---|---|---|
 | Afficher l’espace réservé | Cochez la case pour activer l’affichage des espaces réservés pour les champs inclus dans les formulaires adaptatifs et les communications interactives. | Sélectionné | Non applicable |
 | Nombre maximal d’entrées de cache | Définissez le nombre maximal de formulaires adaptatifs et de communications interactives pouvant être récupérés à l’aide de la mémoire cache. | 100 | Nombre |
@@ -106,7 +109,7 @@ Tap **Adaptive Form and Interactive Communication Web Channel Theme Configuratio
   <tr> 
    <td>Propriétés</td> 
    <td>Description</td> 
-   <td>Default</td> 
+   <td>Valeur par défaut</td> 
    <td>Valeurs acceptables</td> 
   </tr> 
   <tr> 
