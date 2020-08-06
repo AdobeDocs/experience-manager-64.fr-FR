@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 4a864547-edbe-4d2d-a8ee-39bc65dffe88
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '797'
+ht-degree: 83%
 
 ---
 
@@ -20,7 +23,7 @@ Avec le Générateur d’expression, vous pouvez créer des expressions ou des c
 
 ## Création d’expressions et de fonctions distantes avec Expression Builder {#creating-expressions-and-remote-functions-with-expression-builder}
 
-Le Générateur d’expression utilise en interne les bibliothèques EL JSP, de sorte que l’expression adhère à la syntaxe JSPEL. Pour plus d’informations, voir [Exemples d’expressions](#exampleexpressions).
+Le créateur d’Expressions utilise en interne les bibliothèques EL JSP. L’expression adhère donc à la syntaxe JSPEL. Pour plus d’informations, voir [Exemples d’expressions](#exampleexpressions).
 
 ![Générateur d’expression](assets/expressionbuilder.png)
 
@@ -45,7 +48,7 @@ Vous trouverez plus d’informations dans [Spécification de l’EL JSP](https:/
    * java.lang.Character
    * Caractère
    * java.lang.Boolean
-   * Booléen  
+   * Booléen
    * java.lang.Integer
    * Int
    * java.util.list
@@ -74,7 +77,7 @@ Les fonctions distantes offrent la possibilité d’utiliser la logique personna
 Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonctions distantes à utiliser dans les expressions. Pour créer un lot personnalisé afin d’exporter vos propres fonctions distantes, effectuez les tâches suivantes. Cet onglet indique comment créer une fonction personnalisée tirant parti de sa chaîne d’entrée.
 
 1. Définissez une interface pour le service OSGi, contenant des méthodes à exporter pour l’utilisation par Expression Manager.
-1. Déclarez les méthodes sur l’interface A et annotez-les avec l’annotation @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). Expression Manager ignore les méthodes non annotées. L&#39;annotation ServiceMethod comporte les attributs facultatifs suivants, qui peuvent également être spécifiés :
+1. Déclarez les méthodes sur l’interface A et annotez-les avec l’annotation @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). Expression Manager ignore les méthodes non annotées. L&#39;annotation ServiceMethod possède les attributs facultatifs suivants, qui peuvent également être spécifiés :
 
    1. **Enabled** : indique si la méthode est activée. Expression Manager ignore toute méthode désactivée.
    1. **familyId** : indique la famille (groupe) de méthodes. Si cet attribut n’est pas spécifié, Expression Manager présume que la méthode appartient à la famille par défaut. Il n’y a aucun registre de familles (à l’exception de celui par défaut) d’où sont sélectionnées les fonctions. Expression Manager crée le registre de façon dynamique en prenant en compte l’ensemble des ID de famille spécifiés par toutes les fonctions exportées par les différents lots. Assurez-vous que l’ID spécifié ici est raisonnablement lisible étant donné qu’il apparaît également dans l’interface utilisateur de création d’expression.
@@ -98,7 +101,7 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
    * java.lang.Character
    * Caractère
    * java.lang.Boolean
-   * Booléen  
+   * Booléen
    * java.lang.Integer
    * Int
    * java.lang.Short
