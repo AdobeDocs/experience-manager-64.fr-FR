@@ -10,6 +10,9 @@ topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
 source-git-commit: abdcde27b33f290a4288b09c39bffb0d4f1918a1
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 76%
 
 ---
 
@@ -22,7 +25,7 @@ Adobe Sign autorise les processus de signature électronique pour les formulaire
 
 Dans un scénario Adobe Sign et de formulaires adaptatifs standard, un utilisateur remplit un formulaire adaptatif pour effectuer une demande de service. Par exemple, un formulaire de demande de carte de paiement et d’allocation. Lorsqu’un utilisateur remplit, envoie et signe le formulaire de demande, le formulaire est envoyé au prestataire de services qui décidera des actions à entreprise. Le prestataire de services passe en revue la demande et utilise Adobe Sign pour marquer la demande approuvée. Pour activer les processus de signature électronique similaires, vous pouvez intégrer Adobe Sign à AEM Forms.
 
-Pour utiliser Adobe Sign avec AEM Forms, configurez Adobe Sign dans les services cloud AEM :
+Pour utiliser Adobe Sign avec AEM Forms, configurez Adobe Sign dans AEM Cloud Services :
 
 ## Conditions préalables {#prerequisites}
 
@@ -62,6 +65,7 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
    * aggrement_send
    * widget_write
    * workflow_read
+
    Pour obtenir des informations détaillées sur la configuration des paramètres OAuth pour une application Adobe Sign et l’obtention des clés, voir [Configurer les paramètres oAuth pour la documentation](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) dans la documentation du développeur.
 
    ![Configuration OAuth](assets/oauth_config.png)
@@ -103,6 +107,6 @@ Un formulaire adaptatif Adobe Sign est envoyé uniquement après que tous les si
 
    `https://[localhost]:[port]/system/console/configMgr`
 
-1. Recherchez et ouvrez l’option **[!UICONTROL Service de configuration Adobe Sign]**. Spécifiez une [expression cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) dans le champ **[!UICONTROL Expression du planificateur de mise à jour de l’état]** et cliquez sur **[!UICONTROL Enregistrer]**. Par exemple, pour exécuter le service de configuration tous les jours à 00:00, spécifiez `0 0 0 1/1 * ? *` dans le champ du de mise à jour de l’ **[!UICONTROL état]** .
+1. Recherchez et ouvrez l’option **[!UICONTROL Service de configuration Adobe Sign]**. Spécifiez une [expression cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) dans le champ **[!UICONTROL Expression du planificateur de mise à jour de l’état]** et cliquez sur **[!UICONTROL Enregistrer]**. Par exemple, pour exécuter le service de configuration tous les jours à 00:00, indiquez `0 0 0 1/1 * ? *` dans le champ Expression **[!UICONTROL de l’Planificateur]** Status Update.
 
 L’intervalle par défaut pour synchroniser l’état d’Adobe Sign est désormais modifié.
