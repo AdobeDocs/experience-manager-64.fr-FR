@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 86a31407-96a4-467c-9468-da4095ca38d5
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1220'
+ht-degree: 89%
 
 ---
 
@@ -21,16 +24,16 @@ Les campagnes se servent souvent des teasers comme d’un mécanisme pour incite
 
 >[!NOTE]
 >
-> Le composant Teaser a été abandonné dans AEM 6.2.
+>Le composant Teaser a été abandonné dans AEM 6.2.
 
 * **Les pages** de marque sont stockées dans la section Campagnes du site Web. Une marque contient les différentes campagnes.
 
-* **Les pages** de campagne sont stockées dans la section Campagnes du site Web. Chaque campagne possède une page individuelle, où sont conservées les définitions de teaser. La page de conteneur ou d’aperçu présente également certaines informations et statistiques concernant les pages de teaser individuelles.
+* **Les pages** Campaign sont stockées dans la section Campagnes du site Web. Chaque campagne possède une page individuelle, où sont conservées les définitions de teaser. La page de conteneur ou d’aperçu présente également certaines informations et statistiques concernant les pages de teaser individuelles.
 
 Dans AEM, les teasers sont constitués de plusieurs parties :
 
 * **Les pages** de teaser sont stockées sous la page de campagne appropriée et contiennent les définitions des paragraphes de teaser disponibles pour chaque campagne spécifique. Ces définitions sont utilisées lors de l’affichage des paragraphes de teaser ; y compris les variations de contenu, le segment à utiliser pour la sélection d’une variation et du facteur d’amplification.
-* Le **composant de teaser** est disponible prêt à l’emploi et vous permet de créer une instance de votre paragraphe de teaser spécifique dans une page de contenu. Vous pouvez faire glisser le composant de teaser depuis le sidekick, puis spécifier votre définition de teaser pour créer votre propre paragraphe de teaser. **** Remarque : Le composant Teaser a été abandonné dans AEM 6.2.
+* Le **composant de teaser** est disponible prêt à l’emploi et vous permet de créer une instance de votre paragraphe de teaser spécifique dans une page de contenu. Vous pouvez faire glisser le composant de teaser depuis le sidekick, puis spécifier votre définition de teaser pour créer votre propre paragraphe de teaser. **Remarque :** Le composant Teaser a été abandonné dans AEM 6.2.
 
 * Les **paragraphes de teaser** sont de véritables instances de votre teaser au sein d’une page de contenu. Ceux-ci incitent un segment de visiteurs à consulter du contenu centré sur leurs intérêts.
 * Les pages qui présentent le contenu de la campagne centré sur un segment de visiteurs spécifique. Généralement, les paragraphes de teaser dirigent le visiteur jusqu’à des pages de ce type.
@@ -42,7 +45,7 @@ When adding a teaser paragraph to a page you need to define the **Strategy**.
 C’est pour le cas où plusieurs teasers sont disponibles pour être sélectionnés alors que leurs segments affectés sont tous résolus avec succès. La **stratégie** indique alors un critère supplémentaire utilisé pour sélectionner le teaser affiché :
 
 * **Score Clickstream** est basé sur les balises et les accès aux balises associés conservés dans le ClientContext du visiteur (indique la fréquence à laquelle un visiteur clique sur les pages contenant la balise respective). Les taux de fréquence d’accès aux balises définis sur la page de teaser sont comparés.
-* **Aléatoire**, pour la sélection &quot;aléatoire&quot;; utilise le facteur aléatoire généré pour une page, ce qui est visible avec le contexte [du](/help/sites-administering/client-context.md)client.
+* **Aléatoire**, pour la sélection &quot;aléatoire&quot;; utilise le facteur aléatoire généré pour une page, ce qui est visible avec le contexte [](/help/sites-administering/client-context.md)client.
 
 * **Premier** dans la liste des segments résolus. L’ordre est celui des teasers dans la page conteneur de campagne.
 
@@ -112,7 +115,7 @@ Et nous utilisons les définitions de teaser suivantes :
 
 Ensuite, si nous appliquons ceci à un visiteur quand :
 
-* **Résolution S1**, **S2** et **S6** réussie
+* **Résolution de S1**, **S2** et **S6** réussie
 
 * la balise **marketing** est accédée 3 fois
 * la balise **commerce** est accédée 6 fois
@@ -236,7 +239,7 @@ Après avoir créé votre marque et votre campagne, vous pouvez créer et config
 
 >[!NOTE]
 >
-> Le composant Teaser a été abandonné dans AEM 6.2.
+>Le composant Teaser a été abandonné dans AEM 6.2.
 
 1. Accédez à la page de contenu où vous souhaitez placer le paragraphe du teaser qui conduira à votre page de campagne.
 1. Ajoutez un composant **Teaser** (disponible dans la section **Personnalisation** de sidekick) dans l’emplacement requis. Lors de la configuration initiale, il indique que le chemin d’accès à la campagne n’est pas encore configuré :
