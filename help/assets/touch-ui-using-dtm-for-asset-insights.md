@@ -29,6 +29,7 @@ Effectuez les étapes suivantes pour activer les statistiques sur les ressources
 
    * Select the **[!UICONTROL Web Properties]** tab, and then tap/click **[!UICONTROL Add Property]**.
    * Update the fields as appropriate, and tap/click **[!UICONTROL Create Property]** (see [documentation](https://helpx.adobe.com/fr/experience-manager/using/dtm.html)).
+
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
 1. In the **[!UICONTROL Rules]** tab, select **[!UICONTROL Page Load Rules]** from the navigation pane and tap/click **[!UICONTROL Create New Rule]**.
@@ -47,7 +48,7 @@ Effectuez les étapes suivantes pour activer les statistiques sur les ressources
    >* `AppMeasurement.js` a été supprimé. Il devrait être disponible via l’outil de gestion dynamique des balises Adobe Analytics.
    >* The call to `assetAnalytics.dispatcher.init()` is removed. Le système s’attend à ce que la fonction soit appelée une fois le chargement de l’outil de gestion dynamique des balises Adobe Analytics terminé.
    >* Selon l’endroit où est hébergé le dispositif de suivi de la page de statistiques sur les ressources (par exemple, AEM, CDN, etc.), l’origine de la source du script peut nécessiter des modifications.
-   >* Pour le suivi des pages hébergé par AEM, la source doit pointer vers une instance de publication à l’aide du nom d’hôte de l’instance de répartiteur.
+   >* Pour le suivi des pages hébergé AEM, la source doit pointer vers une instance de publication à l’aide du nom d’hôte de l’instance de répartiteur.
 
 
 
