@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: d1cff2bb-9fdf-49cb-a695-d437bba5653d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 78%
 
 ---
 
 
 # Intégration à ExactTarget{#integrating-with-exacttarget}
 
-L’intégration d’AEM à Exact Target vous permet de gérer et d’envoyer des courriers électroniques créés dans AEM via Exact Target. Il vous permet également d’utiliser les fonctionnalités de gestion des pistes de Target exact via AEM forms sur les pages AEM.
+L&#39;intégration de l&#39;AEM à la Cible exacte vous permet de gérer et d&#39;envoyer des e-mails créés dans AEM via la Cible exacte. Il vous permet également d’utiliser les fonctions de gestion des pistes de la Cible exacte via AEM formulaires sur les pages AEM.
 
 L’intégration offre les fonctionnalités suivantes :
 
@@ -34,7 +37,7 @@ Il est possible d’ajouter des configurations ExactTarget par le biais d’outi
 
 Pour créer une configuration ExactTarget dans les services cloud :
 
-1. Sur la page d’accueil, cliquez sur **Services cloud**. (Ou un accès direct à `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. Sur la page d’accueil, cliquez sur **Services cloud**. (Or directly access at `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. Click **ExactTarget** and then **Configure**. La fenêtre de configuration d’ExactTarget s’affiche.
 
    ![chlimage_1-182](assets/chlimage_1-182.png)
