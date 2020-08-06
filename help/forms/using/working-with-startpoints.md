@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 81%
 
 ---
 
@@ -31,7 +34,7 @@ To initiate a process from the AEM Forms app, you need to have a startpoint of t
 1. Pour afficher les points de départ disponibles dans l’application AEM Forms, accédez à l’écran [Accueil](/help/forms/using/home-screen.md).
 1. On the **[!UICONTROL Home]** screen, by default, the **[!UICONTROL All Forms]** list is displayed.
 
-   Le point de départ est associé à un formulaire. Appuyez sur le formulaire associé au point de départ dans le  pour l’ouvrir.
+   Le point de départ est associé à un formulaire. Appuyez sur le formulaire associé au point de départ dans la liste pour l’ouvrir.
 
    Le formulaire associé au point de départ s’ouvre.
 
