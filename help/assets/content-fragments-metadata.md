@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 96cf7c92-af98-417f-ab60-b368e3846ef8
 translation-type: tm+mt
 source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+workflow-type: tm+mt
+source-wordcount: '126'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragments de contenu nécessitent l’application d’ [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application de [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
 
 ## Modification des propriétés/métadonnées {#editing-properties-meta-data}
 
@@ -29,7 +32,8 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
 1. Vous pouvez :
 
    * Sélectionnez [Afficher les propriétés pour ouvrir les boîtes de dialogue](managing-assets-touch-ui.md#editing-properties). Une fois la collection ouverte pour consultation, vous pouvez également la modifier.
-   * Open the [content fragment for Edit](content-fragments-managing.md#opening-the-fragment-editor), then select **[!UICONTROL Metadata]** from the side panel.
+   * Ouvrez[ le fragment de contenu à modifier](content-fragments-managing.md#opening-the-fragment-editor), puis sélectionnez **[!UICONTROL Métadonnées]** dans le panneau latéral.
+
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
 1. L’onglet **[!UICONTROL De base]** fournit des options que vous pouvez afficher ou modifier :
@@ -39,5 +43,6 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
    * **Description**
    * **Balises**
    * Créé (affichage uniquement)
+
    ![cfm-6420-07](assets/cfm-6420-07.png)
 
