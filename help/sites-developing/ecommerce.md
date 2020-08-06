@@ -11,6 +11,9 @@ topic-tags: platform
 discoiquuid: a8c0cd0f-268f-4b37-83de-0ccbd819a016
 translation-type: tm+mt
 source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 62%
 
 ---
 
