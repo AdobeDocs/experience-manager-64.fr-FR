@@ -80,6 +80,7 @@ Procédez comme suit pour configurer votre base de données MySQL :
       * **Test lors du renvoi :** activez l’option **Test lors du renvoi.**
       * **Requête de validation :** spécifiez une requête SQL SELECT pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. Par exemple, **sélectionnez &amp;ast; de customerdetails**.
       * **Isolation de transaction** : définissez la valeur sur **READ_COMMITTED**.
+
       Leave other properties with default [values](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) and tap **Save**.
    Une configuration similaire à la suivante est créée.
 
@@ -121,7 +122,7 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
    * **Objets de modèle de données**:
 
       * id
-      * nom est
+      * name
       * shippingAddress
       * city
       * state
@@ -130,6 +131,7 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
 
       * get
       * mise à jour
+
    Appuyez sur **Ajouter la sélection** pour ajouter des objets et des services de modèle de données sélectionnés au modèle de données de formulaire.
 
    ![schéma-réseau](assets/weretail-schema.png)
@@ -174,6 +176,7 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
          schéma de détails du client
       * **Revenir au tableau** : désactivez l’option **Revenir au tableau**.
       * **Arguments** : sélectionnez l’argument nommé **ID**.
+
       Appuyez sur **Done** (Terminé). Le service de récupération des détails des clients de la base de données MySQL est configuré.
 
       ![expédition-récupération-adresse](assets/shiiping-address-retrieval.png)
@@ -194,6 +197,7 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
 
       * **Type de sortie** : sélectionnez **VALEUR BOOLEENNE**.
       * **Arguments** : sélectionnez l’argument nommé **ID** et **customerdetails**.
+
       Appuyez sur **Done** (Terminé). Le service **update** permettant de mettre à jour les détails du client dans la base de données MySQL est configuré.
 
       ![envoi-adresse-mise à jour](assets/shiiping-address-update.png)
