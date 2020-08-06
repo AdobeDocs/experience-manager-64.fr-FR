@@ -4,6 +4,9 @@ description: Découvrez comment créer des pages Éditeur de ressources personna
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '3314'
+ht-degree: 79%
 
 ---
 
@@ -93,9 +96,9 @@ Pour ajouter des actions à la page Partage de ressources :
 |---|---|
 | [!UICONTROL Supprimer l’action] | Les utilisateurs peuvent supprimer les fichiers sélectionnés. |
 | [!UICONTROL Télécharger l’action] | Permet aux utilisateurs de télécharger les fichiers sélectionnés sur leur ordinateur. |
-| [!UICONTROL Action Lightbox] | Enregistre les fichiers dans une &quot;lightbox&quot; où vous pouvez effectuer d’autres actions dessus. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. Elle peut également être utilisée comme panier pour les ressources. |
-| [!UICONTROL Déplacer l’action] | Les utilisateurs peuvent déplacer le fichier vers un autre emplacement |
-| [!UICONTROL Action sur les tags] | Permet aux utilisateurs d’ajouter des balises aux fichiers sélectionnés |
+| [!UICONTROL Action Lightbox] | Enregistre les fichiers dans une &quot;boîte lumineuse&quot; où vous pouvez effectuer d’autres actions. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. Elle peut également être utilisée comme panier pour les ressources. |
+| [!UICONTROL Déplacer l’action] | Les utilisateurs peuvent déplacer la ressource vers un autre emplacement |
+| [!UICONTROL Action sur les tags] | permet aux utilisateurs d’ajouter des balises aux fichiers sélectionnés. |
 | [!UICONTROL Action Afficher un élément] | Ouvre le fichier dans l’éditeur de fichiers en vue d’une manipulation par l’utilisateur. |
 
 1. Faites glisser l’action appropriée vers la zone **Actions** de la page. Cette opération crée un bouton utilisé pour effectuer cette action.
@@ -114,11 +117,11 @@ Pour modifier la façon dont les résultats de la recherche sont affichés :
 
 1. Faites glisser la loupe appropriée en haut au centre de la page. Dans le centre de presse, les loupes sont déjà disponibles. Les utilisateurs appuient sur l’icône de loupe appropriée pour afficher les résultats de recherche souhaités.
 
-Les lentilles suivantes sont disponibles:
+Les objectifs suivants sont disponibles :
 
 | Objectif | Description |
 |---|---|
-| **[!UICONTROL Liste des loupes]** | Présente les fichiers sous forme de liste avec des détails. |
+| **[!UICONTROL Liste des loupes]** | Présente les fichiers de manière liste avec des détails. |
 | **[!UICONTROL Loupe mosaïque]** | Présente les fichiers de manière mosaïque. |
 
 #### Loupe mosaïque {#mosaic-lens}
@@ -174,9 +177,9 @@ Pour ajouter des prédicats :
 | Prédicat | Description |
 |---|---|
 | **[!UICONTROL Prédicat de la date]** | Permet aux utilisateurs de rechercher des fichiers qui ont été modifiés avant et après certaines dates. |
-| **[!UICONTROL Prédicat Options]** | Le propriétaire du site peut spécifier une propriété à rechercher (comme dans le prédicat de la propriété, par exemple cq:tags) et une arborescence de contenu à partir de laquelle renseigner les options (comme l&#39;arborescence des balises). Cela génère une liste d’options dans laquelle les utilisateurs peuvent sélectionner les valeurs (balises) que la propriété sélectionnée (propriété de la balise) doit comporter. Ce prédicat permet de créer des contrôles de liste comme la liste des balises, les types de fichiers, les orientations d’image, etc. Il est donc parfait pour un jeu fixe d’options. |
+| **[!UICONTROL Prédicat Options]** | Le propriétaire du site peut spécifier une propriété à rechercher (comme dans le prédicat de la propriété, par exemple cq:tags) et une arborescence de contenu pour renseigner les options de (par exemple l’arborescence des balises). Cela génère une liste d’options dans laquelle les utilisateurs peuvent sélectionner les valeurs (balises) que la propriété sélectionnée (propriété de la balise) doit comporter. Ce prédicat permet de créer des contrôles de liste comme la liste des balises, les types de fichiers, les orientations d’image, etc. Il est donc parfait pour un jeu fixe d’options. |
 | **[!UICONTROL Prédicat du chemin d’accès]** | Permet aux utilisateurs de définir le chemin d’accès et les sous-dossiers, le cas échéant. |
-| **[!UICONTROL Prédicat de la propriété]** | Le propriétaire du site spécifie une propriété à rechercher, par exemple tiff:ImageLength et l’utilisateur peut alors saisir une valeur, par exemple 800. Renvoie toutes les images de 800 pixels de haut. Ce prédicat est utile si votre propriété peut comporter des valeurs arbitraires. |
+| **[!UICONTROL Prédicat de la propriété]** | Le propriétaire du site spécifie une propriété à rechercher, par exemple tiff:ImageLength, et l&#39;utilisateur peut alors entrer une valeur, par exemple 800. Cette opération renvoie toutes les images d&#39;une hauteur de 800 pixels. Ce prédicat est utile si votre propriété peut comporter des valeurs arbitraires. |
 
 Pour plus d’informations, voir la [documentation Javadoc sur les prédicats](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
 
@@ -192,7 +195,7 @@ Personnalisez l’Éditeur de ressources pour déterminer comment les utilisateu
 >
 >Si vous souhaitez ajouter des champs personnalisés à l’Éditeur de ressources du gestionnaire des actifs numériques, ajoutez les nouveaux nœuds cq:Widget à `/apps/dam/content/asseteditors.`
 
-### Création de la page Editeur de fichiers {#creating-the-asset-editor-page}
+### Création de la page Editeur de ressources {#creating-the-asset-editor-page}
 
 Lors de la création de la page Éditeur de ressources, il est recommandé de créer la page directement sous la page Partage de ressources.
 
@@ -204,7 +207,7 @@ Pour créer une page Éditeur de ressources :
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
-La page de base créée à l’aide du modèle Editeur de ressources Geometrixx se présente comme suit :
+La page de base créée à l’aide du modèle Éditeur de ressources Geometrixx se présente comme suit :
 
 ![assetshare5](assets/assetshare5.bmp)
 
@@ -246,7 +249,7 @@ Pour ajouter des composants de l’Éditeur de ressources :
    >
    >Lors de la conception de la page Éditeur de ressources, vous créez des composants en lecture seule ou modifiables. Les utilisateurs savent qu’un champ peut être modifié si une icône en forme de crayon apparaît dans ce composant. Par défaut, la plupart des composants sont configurés en lecture seule.
 
-   | Component | Description |
+   | Composant | Description |
    |---|---|
    | **[!UICONTROL Formulaire]de métadonnées et champ de texte de[!UICONTROL métadonnées]** | Vous permet d’ajouter des métadonnées supplémentaires à un fichier et d’effectuer une action, telle que l’envoi, sur ce fichier. |
    | **[!UICONTROL Sous-ressources]** | Permet de personnaliser des sous-ressources. |
@@ -327,7 +330,7 @@ Voici un composant Balises renseigné :
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniature {#thumbnail}
+#### Miniature  {#thumbnail}
 
 Le composant Miniature est l’emplacement où la ressource affiche la miniature sélectionnée (pour la plupart des formats, la miniature est extraite automatiquement). En outre, le composant affiche le nom de fichier et les [actions que vous pouvez modifier](assets-finder-editor.md#adding-asset-editor-actions).
 
@@ -361,13 +364,14 @@ Voici un exemple de composant Titre renseigné :
 
 ![chlimage_1-392](assets/chlimage_1-392.png)
 
-#### Ajout d’actions à l’éditeur de fichiers {#adding-asset-editor-actions}
+#### Ajouter les actions de l’éditeur de ressources {#adding-asset-editor-actions}
 
 Vous pouvez déterminer les actions que les utilisateurs peuvent effectuer sur des ressources numériques sélectionnées à partir d’une sélection d’actions prédéfinies.
 
 Pour ajouter des actions à la page Éditeur de ressources :
 
 1. In the Asset Editor page that you want to customize, click **[!UICONTROL Asset Editor]** in the sidekick.<br>
+
    ![sélectionner l’éditeur de fichiers dans le panneau latéral](assets/screen_shot_2012-04-23at35515pm.png)
 
    Les actions suivantes sont disponibles :
@@ -376,10 +380,10 @@ Pour ajouter des actions à la page Éditeur de ressources :
    |---|---|
    | [!UICONTROL Téléchargement] | Permet aux utilisateurs de télécharger les fichiers sélectionnés sur leur ordinateur. |
    | [!UICONTROL Editeurs] | Permet aux utilisateurs de modifier une image (édition interactive) |
-   | [!UICONTROL Lightbox] | Enregistre les fichiers dans une &quot;lightbox&quot; où vous pouvez effectuer d’autres actions dessus. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. |
+   | [!UICONTROL Lightbox] | Enregistre les fichiers dans une &quot;boîte lumineuse&quot; où vous pouvez effectuer d’autres actions. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. |
    | [!UICONTROL Verrouillage] | Permet aux utilisateurs de verrouiller un fichier. Cette fonctionnalité n’est pas activée par défaut et doit être activée dans la liste des composants. |
-   | [!UICONTROL Références] | Cliquez sur ceci pour afficher sur quelles pages le fichier est utilisé. |
-   | [!UICONTROL Création de versions] | Permet de créer et de restaurer des versions d’un fichier. |
+   | [!UICONTROL Références] | Cliquez sur cette option pour afficher sur quelles pages la ressource est utilisée. |
+   | [!UICONTROL Contrôle de version] | Permet de créer et de restaurer des versions d’un fichier. |
 
 1. Faites glisser l’action appropriée vers la zone **Actions** de la page. Cette opération crée un bouton utilisé pour effectuer cette action.
 
@@ -390,15 +394,16 @@ Pour ajouter des actions à la page Éditeur de ressources :
 Avec AEM Assets, vous pouvez apporter des modifications à plusieurs ressources à la fois. Après avoir sélectionné les ressources, vous pouvez simultanément modifier leurs :
 
 * Balises
-* Métadonnées
+* Métadonnées  
 
 Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeur de ressources :
 
 1. Ouvrez la page Centre de **[!UICONTROL presse]** Geometrixx à `http://localhost:4502/content/geometrixx/en/company/press.html`.
 1. Sélectionnez les ressources :
 
-   * sous Windows : `Ctrl + click` chaque fichier.
-   * sous Mac : `Cmd + click` chaque fichier.
+   * sous Windows : `Ctrl + click` chaque ressource.
+   * sur Mac : `Cmd + click` chaque ressource.
+
    To select a range of assets: click the first asset then `Shift + click` the last asset.
 
 1. Cliquez sur **[!UICONTROL Éditer les métadonnées]** dans le champ **Actions** (partie gauche de la page).
@@ -406,7 +411,7 @@ Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeu
 1. La page **[!UICONTROL Éditeur de ressources du centre de presse]** de Geometrixx s’ouvre dans un nouvel onglet. Les métadonnées des ressources s’affichent de la façon suivante :
 
    * Les balises qui ne s’appliquent pas à toutes les ressources, mais seulement à quelques-unes, s’affichent en italique.
-   * Une balise qui s’applique à tous les fichiers s’affiche avec une police normale.
+   * Une balise qui s’applique à tous les actifs s’affiche avec une police normale.
    * Métadonnées autres que les balises : la valeur du champ ne s’affiche que si elle est identique pour toutes les ressources sélectionnées.
 
 1. Click **[!UICONTROL Download]** to download a ZIP file containing the assets original renditions.
@@ -414,11 +419,13 @@ Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeu
 
    * Les balises qui ne s’appliquent pas à toutes les ressources, mais seulement à quelques-unes, s’affichent avec un arrière-plan grisé.
    * Les balises qui s’appliquent à toutes les ressources s’affichent avec un arrière-plan blanc.
+
    Vous pouvez :
 
    * cliquer sur l’icône `x` pour supprimer la balise de toutes les ressources ;
    * Click the `+` icon to add the tag to all the assets.
    * Click the `arrow` and select a tag to add a new tag to all the assets.
+
    Cliquez sur **[!UICONTROL OK]** pour enregistrer les modifications apportées au formulaire. La case en regard du champ **Balises** est automatiquement activée.
 
 1. Modifiez le champ Description. For example set it to: `This is a common description`. When a field is edited, its value overwrites the existing values of the selected assets when the form is submitted. La case en regard du champ est automatiquement cochée lorsque le champ est modifié.
