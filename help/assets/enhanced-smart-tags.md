@@ -8,6 +8,9 @@ topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 translation-type: tm+mt
 source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
+workflow-type: tm+mt
+source-wordcount: '1577'
+ht-degree: 85%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
 
 ## Présentation des balises intelligentes améliorées {#overview-of-enhanced-smart-tags}
 
-Les entreprises qui traitent les ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il comprend essentiellement une liste des mots-clés que les employés, les partenaires et les clients utilisent fréquemment pour mentionner et rechercher des ressources numériques d’une classe particulière. Le balisage des ressources avec vocabulaire contrôlé par taxonomie permet de s’assurer que les ressources peuvent être facilement identifiées et récupérées par des recherches reposant sur les balises.
+Les entreprises qui traitent des ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il comprend essentiellement une liste des mots-clés que les employés, les partenaires et les clients utilisent fréquemment pour mentionner et rechercher des ressources numériques d’une classe particulière. Le balisage des ressources avec vocabulaire contrôlé par taxonomie permet de s’assurer que les ressources peuvent être facilement identifiées et récupérées par des recherches reposant sur les balises.
 
 Comparé aux vocabulaires des langages naturels, le balisage des ressources numériques basé sur la taxonomie métier aide à les aligner avec les activités d’une entreprise et à assurer que les ressources les mieux adaptées apparaissent dans les recherches.
 
@@ -26,7 +29,7 @@ Pour que le service de contenu dynamique applique les balises adéquates, vous d
 
 Une fois une balise entraînée et prête, le service peut appliquer ces balises sur les ressources par un workflow de balisage.
 
-En arrière-plan, Smart Content Service utilise la structure AI d’Adobe Sensei pour former son algorithme de reconnaissance d’image à la structure des balises et à la taxonomie commerciale. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
+En arrière-plan, Smart Content Service utilise la structure d’IA de Adobe Sensei pour former son algorithme de reconnaissance d’image à la structure des balises et à la taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
 
 Le service de contenu dynamique est un service cloud hébergé sur Adobe I/O. Pour l’utiliser dans Adobe Experience Manager (AEM), l’administrateur système doit intégrer votre instance AEM à Adobe I/O.
 
@@ -48,7 +51,7 @@ Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respe
 
 ## Intégration {#onboarding}
 
-Smart Content Service est disponible à l’achat en tant que module complémentaire d’AEM. Une fois l’achat effectué, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers les E/S Adobe.
+Smart Content Service est disponible à l’achat en tant que module complémentaire pour AEM. Après l’achat, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers les E/S d’Adobe.
 
 L’administrateur peut suivre le lien pour intégrer le service de contenu dynamique à AEM. Pour intégrer le service à AEM Assets, voir [Configuration des balises intelligentes](config-smart-tagging.md).
 
@@ -56,7 +59,7 @@ Le processus d’intégration est terminé lorsque l’administrateur configure 
 
 >[!NOTE]
 >
->Si vous utilisez AEM 6.3 ou une version antérieure et que vous avez besoin du service de balisage automatique pour vos ressources, reportez-vous à la page Balises [dynamiques](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Les balises intelligentes n’utilisent pas les fonctionnalités AI et sont moins précises que la fonctionnalité de balisage intelligent amélioré.
+>Si vous utilisez AEM version 6.3 ou antérieure et que vous avez besoin du service de balisage automatique pour vos ressources, reportez-vous à la section [Balises](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)dynamiques. Les balises actives n’utilisent pas les fonctionnalités d’IA et sont moins précises que la fonctionnalité de balisage intelligent améliorée.
 
 ## Passage en revue des ressources et des balises {#reviewing-assets-and-tags}
 
@@ -71,6 +74,7 @@ Ajoutez les ressources à un dossier, puis appliquez les balises à chaque resso
 >1. L’entraînement est un processus irrévocable. Adobe recommande de bien passer en revue les balises dans la série de ressources sélectionnée bien avant d’entraîner le service de contenu dynamique sur les balises.
 >1. Please do read [Smart Content Service training guidelines](smart-tags-training-guidelines.md) before starting training for any tag.
 >1. Lorsque vous entraînez le service de contenu dynamique pour la première fois, Adobe recommande de réaliser l’entraînement sur au moins deux balises distinctes.
+
 >
 
 
@@ -99,7 +103,7 @@ Lorsque cette option est sélectionnée pour un dossier, AEM exécute automatiqu
 
 Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est nécessaire à partir de la console Processus.
 
-1. Appuyez/cliquez sur le logo AEM, puis sélectionnez **[!UICONTROL Outils > Processus > Modèles]**.
+1. Appuyez/cliquez sur le logo AEM et accédez à **[!UICONTROL Outils > Workflow > Modèles]**.
 1. Dans la page **[!UICONTROL Modèles de processus]**, sélectionnez le processus **[!UICONTROL Entraînement des balises dynamiques]**, puis appuyez/cliquez sur **[!UICONTROL Démarrer le processus]** dans la barre d’outils.
 1. Dans la boîte de dialogue **[!UICONTROL Exécuter le processus]**, localisez le dossier de charge utile qui comprend les ressources balisées pour entraîner le service.
 1. Indiquez le titre du workflow et ajoutez un commentaire. Ensuite, appuyez/cliquez sur **[!UICONTROL Exécuter]**. Les ressources et les balises sont soumises à l’entraînement.
@@ -108,20 +112,20 @@ Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est 
 
 >[!NOTE]
 >
->Une fois que les ressources d’un dossier sont traitées pour la formation, seules les ressources modifiées sont traitées lors des cycles de formation suivants.
+>Une fois que les ressources d’un dossier sont traitées pour la formation, seules les ressources modifiées sont traitées au cours des cycles de formation suivants.
 
 ### Affichage des rapports d’entraînement {#viewing-training-reports}
 
 Pour vérifier que le service de contenu dynamique est entraîné sur vos balises dans la série de ressources d’entraînement, examinez le rapport de workflow d’entraînement dans la console Rapports.
 
-1. Appuyez/cliquez sur le logo AEM, puis sélectionnez **[!UICONTROL Outils > Ressources > Rapports]**.
+1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils > Ressources > Rapports]**.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, appuyez/cliquez sur **[!UICONTROL Créer]**.
 1. Sélectionnez le rapport **[!UICONTROL Entraînement des balises intelligentes]**, puis appuyez/cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 1. Indiquez un titre et une description pour le rapport. Sous **[!UICONTROL Planifier le rapport]**, laissez l’option **[!UICONTROL Maintenant]** sélectionnée. Si vous souhaitez planifier le rapport pour une date ultérieure, sélectionnez **[!UICONTROL Plus tard]** et spécifiez une date et une heure. Ensuite, appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, sélectionnez le rapport que vous avez généré. Pour afficher le rapport, appuyez/cliquez sur l’icône **[!UICONTROL Afficher]** dans la barre d’outils.
 1. Passez en revue les détails du rapport.
 
-   Le rapport affiche l’état d’identification des balises que vous avez formées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de contenu dynamique est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le processus d’entraînement pour l’entraînement complet du service sur la balise.
+   Le rapport affiche l’état d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de contenu dynamique est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le processus d’entraînement pour l’entraînement complet du service sur la balise.
 
    Si vous ne voyez pas vos balises dans ce rapport, lancez à nouveau le workflow d’entraînement pour ces balises.
 
@@ -156,12 +160,12 @@ Vous pouvez déclencher le workflow de balisage à partir des emplacements suiva
 
 #### Balisage des actifs de la console de processus {#tagging-assets-from-the-workflow-console}
 
-1. Appuyez/cliquez sur le logo AEM, puis sélectionnez **[!UICONTROL Outils > Processus > Modèles]**.
+1. Appuyez/cliquez sur le logo AEM et accédez à **[!UICONTROL Outils > Workflow > Modèles]**.
 1. Dans la page **[!UICONTROL Modèles de processus]**, sélectionnez le processus **[!UICONTROL Ressources de balises dynamiques DAM]**, puis appuyez/cliquez sur **[!UICONTROL Démarrer le processus]** dans la barre d’outils.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
+1. Dans la boîte de dialogue **[!UICONTROL Exécuter le processus]**, accédez au dossier de charge utile contenant les ressources sur lesquelles vous souhaitez appliquer vos balises automatiquement.
 1. Indiquez un titre pour le workflow et un commentaire facultatif. Ensuite, appuyez/cliquez sur **[!UICONTROL Exécuter]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
@@ -177,12 +181,12 @@ Vous pouvez déclencher le workflow de balisage à partir des emplacements suiva
    ![start_workflow](assets/start_workflow.png)
 
 1. Sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques)]** et spécifiez un titre pour le workflow.
-1. Appuyez/cliquez sur **[!UICONTROL Démarrer]**. Le workflow applique vos balises sur les ressources. Accédez au dossier de ressources et passez en revue les balises pour vérifier que le service de contenu dynamique a correctement balisé vos ressources. Pour plus d’informations, voir [Gestion des balises intelligentes](managing-smart-tags.md).
+1. Appuyez/cliquez sur **[!UICONTROL Démarrer]**. Le workflow applique vos balises aux ressources. Accédez au dossier de ressources et passez en revue les balises pour vérifier que le service de contenu dynamique a correctement balisé vos ressources. Pour plus d’informations, voir [Gestion des balises intelligentes](managing-smart-tags.md).
 
 >[!NOTE]
 >
 >Dans les cycles de balisage suivants, seules les ressources modifiées sont balisées à nouveau avec les balises qui viennent d’être entraînées.
 >
->Cependant, même les fichiers non modifiés sont balisés si l’écart entre le dernier cycle de balisage et le cycle de balisage actuel pour le flux de travail de balisage dépasse 24 heures.
+>Cependant, même les ressources non modifiées sont balisées si l’écart entre le dernier cycle de balisage et le cycle de balisage actuel du processus de balisage dépasse 24 heures.
 >
 >Pour les workflows de balisage périodiques, les ressources non modifiées sont balisées lorsque l’intervalle dépasse 6 mois.
