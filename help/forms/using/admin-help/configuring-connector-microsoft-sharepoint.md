@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0ec881c9-8dcc-4847-9edf-24d9e6c4a7ea
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 63%
 
 ---
 
@@ -22,13 +25,13 @@ Le connecteur pour Microsoft SharePoint permet la communication entre AEM forms 
 1. Dans Administration Console, cliquez sur Services > Connector for Microsoft SharePoint.
 1. Spécifiez les paramètres suivants pour votre serveur SharePoint :
 
-   **** Nom d’hôte du serveur SharePoint : Numéro de port du nom d’hôte de l’application Web sur le serveur SharePoint, au format `[hostname]:[port]`.
+   **Nom d’hôte SharePoint Server :** Numéro de port du nom d’hôte de l’application Web sur le serveur SharePoint, au format `[hostname]:[port]`.
 
-   **** Nom d’utilisateur : Compte utilisateur utilisé pour la connexion au serveur SharePoint.
+   **Nom d’utilisateur :** Compte utilisateur utilisé pour la connexion au serveur SharePoint.
 
-   **** Mot de passe : Mot de passe du compte utilisateur utilisé pour la connexion au serveur SharePoint
+   **Mot de passe :** Mot de passe du compte utilisateur utilisé pour la connexion au serveur SharePoint
 
-   **** Nom de domaine : Domaine où se trouve le serveur SharePoint.
+   **Nom de domaine :** Domaine où se trouve le serveur SharePoint.
 
 1. Cliquez sur Enregistrer.
 
