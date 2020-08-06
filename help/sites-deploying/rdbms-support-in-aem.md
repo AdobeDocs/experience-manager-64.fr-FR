@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
 translation-type: tm+mt
 source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 72%
 
 ---
 
@@ -43,9 +46,9 @@ Pour obtenir des instructions sur la création des lots OSGi pour les pilotes JD
 
 >[!NOTE]
 >
->Certains pilotes SQL sont déjà inclus dans des lots OSGi.
+>Certains des pilotes SQL sont déjà conditionnés en bundles OSGi.
 >
->Si c&#39;est le cas, copiez simplement le fichier jar pour installer-path/crx-quickstart/install/9.
+>Si tel est le cas, copiez simplement le fichier jar pour installer-path/crx-quickstart/install/9.
 
 Une fois que les lots sont en place, suivez les étapes ci-dessous en vue de configurer AEM avec la persistance RDB :
 
@@ -67,12 +70,12 @@ Une fois que les lots sont en place, suivez les étapes ci-dessous en vue de con
 
    1. Téléchargez l’archive ZIP depuis https://dev.mysql.com/downloads/connector/j/
       * version doit être >= 5.1.38
-   1. Extraire le `mysql-connector-java-version-bin.jar` (lot) de l’archive
-   1. Utilisez la console Web pour installer et démarrer le lot :
+   1. Extraire l’ `mysql-connector-java-version-bin.jar` (assemblage) de l’archive
+   1. Utilisez la console Web pour installer et début le lot :
       * Go to *http://serveraddress:serverport/system/console/bundles*
       * Sélectionner **Installer/Mettre à jour**
-      * Naviguez jusqu’à la sélection du lot extrait de l’archive ZIP téléchargée
-      * Vérifiez que le pilote JDBC d&#39; **Oracle Corporation pour MySQLcom.mysql.jdbc** est actif et démarrez-le.
+      * Accédez à la sélection du lot extrait de l’archive ZIP téléchargée
+      * Vérifiez que le pilote JDBC d&#39; **Oracle Corporation pour MySQLcom.mysql.jdbc** est principal et début-le.
 
 1. Finally, start AEM with the `crx3` and `crx3rdb` runmodes:
 
@@ -86,19 +89,19 @@ La configuration OSGi de `org.apache.sling.datasource.DataSourceFactory-oak.conf
 
 Les options de configuration suivantes sont disponibles :
 
-* `datasource.name:` Nom de la source de données. La valeur par défaut est `oak`.
+* `datasource.name:` Nom de la source de données. La valeur par défaut est de `oak`.
 
 * `url:` Chaîne URL de la base de données qui doit être utilisée avec JDBC. Chaque type de base de données est doté de son propre format de chaîne d’URL. Pour plus d’informations, reportez-vous à la section [Formats de chaîne d’URL](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) ci-dessous.
 
 * `driverClassName:` Nom de classe du pilote JDBC. Cela varie en fonction de la base de données que vous souhaitez utiliser et du pilote nécessaire pour s’y connecter. Vous trouverez ci-dessous les noms de classe pour toutes les bases de données prises en charge par AEM :
 
-   * `org.postgresql.Driver` pour PostgreSQL;
-   * `com.ibm.db2.jcc.DB2Driver` pour DB2;
-   * `oracle.jdbc.OracleDriver` pour Oracle;
+   * `org.postgresql.Driver` pour PostgreSQL ;
+   * `com.ibm.db2.jcc.DB2Driver` pour DB2 ;
+   * `oracle.jdbc.OracleDriver` pour Oracle ;
    *  `com.mysql.jdbc.Driver` pour MySQL et MariaDB (expérimentaux) ;
    * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` for Microsoft SQL Server (experimental).
 
-* `username:` Nom d’utilisateur sous lequel s’exécute la base de données.
+* `username:` Nom d&#39;utilisateur sous lequel s&#39;exécute la base de données.
 
 * `password:` Mot de passe de la base de données.
 
@@ -106,10 +109,10 @@ Les options de configuration suivantes sont disponibles :
 
 Un format de chaîne d’URL différent est utilisé dans la configuration de la source de données, en fonction du type de base de données qui doit être utilisé. Vous trouverez ci-dessous la liste des formats pour les bases de données actuellement prises en charge par AEM :
 
-* `jdbc:postgresql:databasename` pour PostgreSQL;
+* `jdbc:postgresql:databasename` pour PostgreSQL ;
 
-* `jdbc:db2://localhost:port/databasename` pour DB2;
-* `jdbc:oracle:thin:localhost:port:SID` pour Oracle;
+* `jdbc:db2://localhost:port/databasename` pour DB2 ;
+* `jdbc:oracle:thin:localhost:port:SID` pour Oracle ;
 *  `jdbc:mysql://localhost:3306/databasename` pour MySQL et MariaDB (expérimentaux) ;
 
 * `jdbc:sqlserver://localhost:1453;databaseName=name` pour Microsoft SQL Server (expérimental).
