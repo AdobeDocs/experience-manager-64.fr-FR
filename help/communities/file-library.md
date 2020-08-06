@@ -1,8 +1,8 @@
 ---
 title: Fonctionnalité Bibliothèque de fichiers
 seo-title: Fonctionnalité Bibliothèque de fichiers
-description: La fonctionnalité Bibliothèque de fichiers permet aux visiteurs du site connectés de télécharger, de télécharger et de gérer des fichiers.
-seo-description: La fonctionnalité Bibliothèque de fichiers permet aux visiteurs du site connectés de télécharger, de télécharger et de gérer des fichiers.
+description: La fonction Bibliothèque de fichiers permet aux visiteurs de site connectés de télécharger, gérer et télécharger des fichiers.
+seo-description: La fonction Bibliothèque de fichiers permet aux visiteurs de site connectés de télécharger, gérer et télécharger des fichiers.
 uuid: 7da94703-8334-4c02-ba2a-55b5cde22e6c
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cdcae09f-c3cb-471e-863f-b33130e9df0f
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 65%
 
 ---
 
@@ -23,7 +26,7 @@ La fonctionnalité Bibliothèque de fichiers fournit un espace où les visiteurs
 
 Cette section de la documentation décrit :
 
-* Ajout de la fonctionnalité de bibliothèque de fichiers à un site AEM
+* Ajouter la fonction de bibliothèque de fichiers à un site AEM
 * Configuration settings for the `File Library` component
 
 ## Ajout d’une bibliothèque de fichiers à une page {#adding-a-file-library-to-a-page}
@@ -46,13 +49,14 @@ Select the placed `File Library` component to access and select the `Configure` 
 
 ![chlimage_1-431](assets/chlimage_1-431.png) ![chlimage_1-432](assets/chlimage_1-432.png)
 
-### Onglet Commentaires {#comments-tab}
+### Comments tab {#comments-tab}
 
 Dans l’onglet **[!UICONTROL Commentaires]**, indiquez si et comment les commentaires pour les fichiers transférés apparaissent :
 
 * **[!UICONTROL Autoriser les commentaires sur les fichiers]** Si cette option est cochée, les commentaires sur les fichiers transférés sont autorisés. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Commentaires par page]** Limite le nombre de commentaires par page, ainsi que le nombre de réponses affichées. La valeur par défaut est **10**.
+* **[!UICONTROL Commentaires par page]** Limite le nombre de commentaires par page, ainsi que le nombre de réponses affichées. La valeur par défaut est 
+**10**.
 
 * **[!UICONTROL Taille maximale du fichier]** Cette valeur limite la taille du fichier transféré. La limite par défaut est 104857600 (10 Mo).
 
@@ -66,15 +70,15 @@ Dans l’onglet **[!UICONTROL Commentaires]**, indiquez si et comment les commen
 
 * **[!UICONTROL Autoriser le balisage]** Si cette option est cochée, une balise peut être ajoutée au fichier. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Espaces de noms]** autorisés Si l’option Autoriser le balisage est cochée, les balises disponibles seront limitées aux espaces de noms cochés. Si aucun n&#39;est coché, tous sont autorisés. Par défaut, tous les espaces de noms sont autorisés.
+* **[!UICONTROL Espaces de nommage]** autorisés Si l’option Autoriser le balisage est cochée, les balises disponibles seront limitées aux espaces de nommage cochés. Si aucun n&#39;est coché, tous sont autorisés. Par défaut, tous les espaces de noms sont autorisés.
 
 * **[!UICONTROL Limite de suggestions]** Si l’option Autoriser le balisage est sélectionnée, ce paramètre limite le nombre de balises suggérées à afficher. Si la valeur est -1, il n’existe aucune limite. La valeur par défaut est -1.
 
-* **[!UICONTROL Autoriser le vote]** Si cette option est cochée, la possibilité d’élire un fichier sera activée. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser le vote]** Si cette option est cochée, la possibilité d&#39;voter pour un fichier sera activée. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Autoriser le suivi]** Si cette option est cochée, incluez la fonctionnalité suivante pour les articles de blog, ce qui permet aux membres d’être [informés](notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser le suivi]** Si coché, incluez la fonctionnalité suivante pour les articles de blog, ce qui permet aux membres d’être [informés](notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Autoriser les réponses]** liées Si cette option est cochée, autoriser les réponses aux commentaires publiés. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser les réponses]** filetées Si cette option est cochée, autoriser les réponses aux commentaires publiés. Cette option n’est pas cochée par défaut.
 
 ### Onglet Modération utilisateur {#user-moderation-tab}
 
@@ -94,9 +98,11 @@ Dans l’onglet **[!UICONTROL Modération d’utilisateur]**, configurez la mod�
 
 * **[!UICONTROL Motif de la marque personnalisée]** Si cette option est activée, les visiteurs ont le droit de préciser la raison pour laquelle ils ont marqué un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Seuil de modération]** Saisissez le nombre de fois qu’un commentaire doit être marqué par les visiteurs avant que les modérateurs n’en soient informés. La valeur par défaut est une fois (**1**).
+* **[!UICONTROL Seuil de modération]** Saisissez le nombre de fois qu’un commentaire doit être marqué par les visiteurs avant que les modérateurs n’en soient informés. La valeur par défaut est une fois (
+**1**).
 
-* **[!UICONTROL Limite de marquage]** Saisissez le nombre de fois qu’un commentaire doit être marqué avant qu’il ne soit plus visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au **seuil de modération**. La valeur par défaut est 5.
+* **[!UICONTROL Limite de marquage]** Saisissez le nombre de fois qu’un commentaire doit être marqué avant qu’il ne soit plus visible pour le public. Ce nombre doit être supérieur ou égal à 
+**Seuil de modération**. La valeur par défaut est 5.
 
 ## Informations supplémentaires {#additional-information}
 
