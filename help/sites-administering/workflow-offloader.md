@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 91f0fd7d-4b49-4599-8f0e-fc367d51aeba
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '601'
+ht-degree: 31%
 
 ---
 
@@ -21,7 +24,7 @@ Le déchargeur de workflow de ressources permet à plusieurs instances Adobe Ex
 
 ## Configuration de la topologie du déchargeur {#configure-offloader-topology}
 
-Utilisez Configuration Manager pour ajouter l’URL de l’instance de filet de conduite et les noms d’hôte des instances de déchargement pour les demandes de connexion sur l’instance de filet de conduite.
+Utilisez Configuration Manager pour ajouter l’URL de l’instance de responsable et les noms d’hôte des instances de déchargeur pour les demandes de connexion sur l’instance de responsable.
 
 1. Tap/click the AEM logo, and choose **Tools** > **Operations** > **Web Console** to open Configuration Manager.
 1. From the Web Console, select **Sling** >  **Topology Management**.
@@ -95,5 +98,5 @@ Disable the workflow launchers that run the **DAM Update Asset** workflow on the
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
 
-1. Téléchargez tout fichier de type image dans l’instance de filet de conduite. Vérifiez les miniatures générées et reportées pour le fichier par l’instance déchargée.
+1. Téléchargez tout fichier de type image sur l’instance de filet de conduite. Vérifiez les miniatures générées et réportées pour l’actif par l’instance déchargée.
 
