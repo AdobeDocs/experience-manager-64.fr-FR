@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: ba674a2d-7c78-430e-8e17-1a18619e71cb
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 Vous pouvez utiliser le composant Separator pour isoler visuellement les volets d’un formulaire. Vous pouvez définir l’aspect général et le style d’un composant Separator en spécifiant les propriétés suivantes du composant :
 
 * **Nom d’élément :** spécifie le nom du composant. L’expression SOM intègre au composant la valeur spécifiée dans le champ de nom d’élément.
-* **** Epaisseur : Indique l’épaisseur du composant de séparateur en pixels.
+* **Epaisseur :** Indique l’épaisseur du composant de séparateur en pixels.
 * **Colspan :** spécifie le nombre de colonnes auquel s’applique un composant de séparateur.
 * **Classe CSS :** spécifie la classe CSS personnalisée pour le composant de séparateur
 * **Styles en ligne :** avec AEM Forms, vous pouvez désormais appliquer des styles CSS en ligne à chaque composant de formulaire adaptatif et prévisualiser les modifications en temps réel.
