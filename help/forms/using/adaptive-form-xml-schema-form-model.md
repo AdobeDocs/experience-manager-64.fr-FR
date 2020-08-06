@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '1081'
+ht-degree: 91%
 
 ---
 
@@ -167,6 +170,7 @@ Vous pouvez ajouter les attributs suivants aux éléments de schéma XML pour aj
 >
 >* la mise en majuscule du premier caractère du nom de l’élément ;
 >* l’insertion d’un espace entre la casse mixte.
+
 >
 >
 For example, if you add the `userFirstName` schema element, the caption generated in the adaptive form is `User First Name`.
@@ -181,7 +185,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
    <td><p><strong> Propriété de schéma</strong></p> </td> 
    <td><p><strong>Type de données</strong></p> </td> 
    <td><p><strong>Description</strong></p> </td> 
-   <td><p><strong>Component</strong></p> </td> 
+   <td><p><strong>Composant</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p><code>totalDigits</code></p> </td> 
@@ -217,7 +221,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
   </tr> 
   <tr> 
    <td><p><code>exclusiveMaximum</code></p> </td> 
-   <td><p>Booléen  </p> </td> 
+   <td><p>Booléen</p> </td> 
    <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être inférieure à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit inférieure ou égale à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> </td> 
    <td> 
     <ul> 
@@ -228,7 +232,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
   </tr> 
   <tr> 
    <td><p><code>exclusiveMinimum</code></p> </td> 
-   <td><p>Booléen  </p> </td> 
+   <td><p>Booléen</p> </td> 
    <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure ou égale à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> </td> 
    <td> 
     <ul> 
