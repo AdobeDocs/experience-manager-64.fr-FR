@@ -147,7 +147,7 @@ La barre latérale comprend les explorateurs suivants :
    <td>Ajoute une liste déroulante, à sélection simple ou multiple.</td> 
   </tr> 
   <tr> 
-   <td>Courrier électronique</td> 
+   <td>Email</td> 
    <td><p>Ajoute un champ pour capturer une adresse électronique. Le composant Courrier électronique, par défaut, valide les adresses électroniques à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td> 
   </tr> 
   <tr> 
