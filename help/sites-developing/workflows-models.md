@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2dba11-0d2d-4aed-b941-c8ade9bb7bfa
 translation-type: tm+mt
 source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
+workflow-type: tm+mt
+source-wordcount: '2468'
+ht-degree: 71%
 
 ---
 
@@ -43,7 +46,7 @@ Pour créer un workflow avec l’éditeur, procédez comme suit :
 
    [http://localhost:4502/aem/workflow](http://localhost:4502/aem/workflow)
 
-1. Sélectionnez **[!UICONTROL Créer]**, puis **[!UICONTROL Créer un modèle]**.
+1. Sélectionnez **[!UICONTROL Create]** (Créer), puis **[!UICONTROL Creat Model]** (Créer un modèle). 
 1. The **[!UICONTROL Add Workflow Model]** dialog box appears. Saisissez le **[!UICONTROL Titre]** et le **[!UICONTROL Nom]** (facultatif) avant de sélectionner **[!UICONTROL Terminé]**.
 1. The new model is listed in the **[!UICONTROL Workflow Models]** console.
 1. Sélectionnez votre nouveau workflow, puis utilisez [**[!UICONTROL Modifier ]**pour l’ouvrir à des fins de configuration](#editing-a-workflow) :
@@ -127,6 +130,7 @@ When you edit a model, the available steps appear in the various groups of the *
    * **[!UICONTROL Filtrer]** des étapes spécifiques.
    * Utiliser le menu déroulant pour limiter la sélection à un groupe d’étapes bien défini.
    * Select the Show Description icon ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png) to show more details about the appropriate step.
+
    ![wf-02](assets/wf-02.png)
 
 1. Faites glisser la ou les étapes appropriées vers l’emplacement souhaité dans le modèle.
@@ -157,6 +161,7 @@ You can **Configure** and customize the behavior of a workflow step using the **
 
    * Tap the step in the workflow model and select **[!UICONTROL Configure]** from the component toolbar.
    * Double-cliquez sur l’étape.
+
    >[!NOTE]
    >
    >Pour plus d’informations sur les principaux composants d’étape qui sont installés avec AEM, voir [Référence des étapes du workflow](/help/sites-developing/workflows-step-ref.md).
@@ -190,20 +195,20 @@ Vous pouvez créer un modèle de workflow [Transitoire](/help/sites-developing/w
 
 ### Mise à disposition des modèles de workflow dans l’interface utilisateur tactile {#make-workflow-models-available-in-touchui}
 
-If a workflow model is present in Classic UI, but missing in the selection popup menu in the **[!UICONTROL Timeline]** rail of Touch UI, then follow the configuration to make it available. Les étapes suivantes illustrent l’utilisation du modèle de processus appelé **[!UICONTROL Demande d’activation]**.
+If a workflow model is present in Classic UI, but missing in the selection popup menu in the **[!UICONTROL Timeline]** rail of Touch UI, then follow the configuration to make it available. Les étapes suivantes illustrent l’utilisation du modèle de processus appelé **[!UICONTROL Demande d’Activation]**.
 
-1. Vérifiez que le modèle n’est pas disponible dans l’interface utilisateur tactile. Access an asset using `/assets.html/content/dam` path. Sélectionnez un fichier. Ouvrez **[!UICONTROL Chronologie]** dans le rail gauche. Cliquez sur **[!UICONTROL Démarrer le processus]** et vérifiez que le modèle **[!UICONTROL Request for Activation]** n’est pas présent dans la liste contextuelle.
+1. Vérifiez que le modèle n’est pas disponible dans l’interface utilisateur tactile. Access an asset using `/assets.html/content/dam` path. Sélectionnez un fichier. Ouvrez **[!UICONTROL Chronologie]** dans le rail gauche. Cliquez sur Processus **[!UICONTROL de]** Début et vérifiez que le modèle de **[!UICONTROL demande d’Activation]** n’est pas présent dans la liste contextuelle.
 
 1. Accédez à **[!UICONTROL Outils > Général > Balisage]**. Sélectionnez **[!UICONTROL Workflow]**.
 
 1. Select **[!UICONTROL Create > Create Tag]**. Set **[!UICONTROL Title]** as `DAM` and **[!UICONTROL Name]** as `dam`. Sélectionnez **[!UICONTROL Envoyer]**.
    ![Créer une balise dans le modèle de workflow](assets/workflow_create_tag.png)
 
-1. Navigate to **[!UICONTROL Tools > Workflow > Models]**. Sélectionnez **[!UICONTROL Demande d’activation]**, puis **[!UICONTROL Modifier]**.
+1. Navigate to **[!UICONTROL Tools > Workflow > Models]**. Sélectionnez **[!UICONTROL Demande d’Activation]**, puis **[!UICONTROL Modifier]**.
 
 1. Sélectionnez **[!UICONTROL Modifier]** , puis ouvrez Propriétés **[!UICONTROL du modèle de]** flux de travail. Go to the **[!UICONTROL Basic]** tab.
 
-1. Ajouter `Workflow : DAM` au champ **[!UICONTROL Balises]** . Confirmez la sélection à l’aide de la case à cocher (cochez).
+1. Ajoutez `Workflow : DAM` au champ **[!UICONTROL Balises]** . Confirmez la sélection à l’aide de la case à cocher (cochez).
 
 1. Confirmez l’ajout de la balise avec **[!UICONTROL Enregistrer et fermer]**.
    ![Modifier les propriétés de page du modèle](assets/workflow_model_edit_activation1.png)
@@ -252,7 +257,7 @@ Pour définir des **[!UICONTROL Phases]** pour votre workflow, procédez comme s
 
    Une phase peut être affectée à plusieurs étapes. Par exemple :
 
-   | **Étape** | **Niveau** |
+   | **Étape** | **Évaluation** |
    |---|---|
    | Étape 1 | Créer |
    | Étape 2 | Créer |
@@ -316,7 +321,7 @@ Lorsque vous testez un workflow, il est conseillé d’utiliser divers types de 
 
 Vous pouvez, par exemple, tester votre nouveau workflow comme suit :
 
-1. [Démarrez votre modèle](/help/sites-administering/workflows-starting.md) de processus à partir de la console.
+1. [Début votre modèle](/help/sites-administering/workflows-starting.md) de processus à partir de la console.
 1. Définissez la **[!UICONTROL Charge utile]** et confirmez-la.
 
 1. Prenez les mesures nécessaires au bon déroulement du workflow.
@@ -353,6 +358,7 @@ To illustrate some of the possibilities for creating a workflow, the following e
 
    * Activez **[!UICONTROL Avertir l’utilisateur par courrier électronique]**.
    * Select `Administrator` ( `admin`) for the **[!UICONTROL User/Group]** field.
+
    >[!NOTE]
    >
    >Pour que les courriers électroniques soient envoyés, [les informations relatives au service de messagerie et au compte utilisateur doivent être configurées](/help/sites-administering/notification.md).
@@ -363,7 +369,7 @@ To illustrate some of the possibilities for creating a workflow, the following e
 
 1. Drag an **[!UICONTROL Or Split]** onto the workflow and position it between `Validate Content` and **[!UICONTROL Flow End]**.
 1. Ouvrez la **[!UICONTROL Division OU]** en vue de la configuration.
-1. Configurer :
+1. Configurer:
 
    * **[!UICONTROL Commun]**: sélectionner **[!UICONTROL 2 branches]**
    * **[!UICONTROL Branche 1]** : sélectionnez **[!UICONTROL Itinéraire par défaut]**.
@@ -374,7 +380,7 @@ To illustrate some of the possibilities for creating a workflow, the following e
 
    * **[!UICONTROL Titre]**: `Reject Publish Request`
    * **[!UICONTROL Utilisateur/Groupe]** : par exemple, `projects-administrators`
-   * **[!UICONTROL Avertissez l’utilisateur par courrier électronique]**: Activez cette option pour que l’utilisateur soit averti par courrier électronique.
+   * **[!UICONTROL Notifier l&#39;utilisateur par courriel]**: Activez cette option pour que l’utilisateur soit averti par courrier électronique.
 
 1. Faites glisser une **[!UICONTROL Étape du processus]** sur la branche de droite, ouvrez les propriétés, spécifiez les valeurs suivantes, puis confirmez les modifications :
 
