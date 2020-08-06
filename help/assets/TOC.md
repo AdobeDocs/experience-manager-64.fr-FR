@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide de l’utilisateur d’AEM 6.4 Assets
+user-guide-title: Guide de l’utilisateur AEM 6.4 Assets
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
 source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
@@ -16,11 +16,11 @@ ht-degree: 76%
 # AEM 6.4 Assets User Guide {#assets}
 
 + [Guide de l’utilisateur des ressources](home.md)
-+ [Notes de mise à jour d’AEM 6.4 Assets](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/assets.html)
++ [Notes de mise à jour AEM Ressources 6.4](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/assets.html)
 + [À propos de DAM](assets.md)
 + [Améliorations de l’expérience utilisateur](ux-improvements.md)
 + [Recommandations relatives aux ressources](best-practices-for-assets.md)
-+ Utiliser des AEM Assets {#using}
++ Utiliser AEM Assets {#using}
    + [Expérience page d&#39;accueil AEM Assets](assets-home-page.md)
    + [Recherche de ressources dans AEM ](search-assets.md)
    + [Recherche en texte intégral GQL](gql-search.md)
@@ -48,7 +48,7 @@ ht-degree: 76%
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
    + [Vidéo](s7-video.md)
-   + [Ajouter les fonctionnalités de Scene7 à votre page](scene7.md)
+   + [Ajouter les fonctionnalités Scene7 à votre page](scene7.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
@@ -103,7 +103,7 @@ ht-degree: 76%
    + [Utilisation du pixelliseur PDF](aem-pdf-rasterizer.md)
    + [Configuration des restrictions de transfert de fichier](configuring-asset-upload-restrictions.md)
    + [Bonnes pratiques d’intégration d’AEM et de Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Intégration de AEM Assets avec le serveur InDesign](indesign.md)
+   + [Intégration d’AEM Assets avec un serveur d’InDesign](indesign.md)
    + [Profils de métadonnées](metadata-profiles.md)
    + [Gestion des droits numériques dans AEM Assets](drm.md)
    + [Utilisation du module de démonstration pour les statistiques sur les ressources](touch-ui-using-demo-package-for-asset-insights.md)
@@ -165,7 +165,7 @@ ht-degree: 76%
    + [Instructions d’entraînement sur le service de contenu dynamique](smart-tags-training-guidelines.md)
    + [Rendus vidéo](video-renditions.md)
 + Ressources 3D {#three-d}
-   + [Notes de mise à jour d’AEM 3D](../release-notes/aem3d-release-notes.md)
+   + [Notes de mise à jour AEM 3D](../release-notes/aem3d-release-notes.md)
    + [Utilisation de ressources 3D](assets-3d.md)
    + [Installation et configuration d’AEM 3D](install-config-3d.md)
    + [Paramètres de configuration avancés](advanced-config-3d.md)
@@ -177,7 +177,7 @@ ht-degree: 76%
    + [À propos de l’utilisation des scènes dans AEM 3D](about-the-use-of-stages-in-aem-3d.md)
    + [Configuration d’une étape standard avec Autodesk Maya et Mental Ray](setting-up-stage-with-ad-mr.md)
    + [Utilisation du composant Sites 3D](using-the-3d-sites-component.md)
-   + [Intégration d’AEM 3D avec Autodesk Maya](integrate-maya-with-3d.md)
+   + [Intégration de l&#39;AEM 3D avec Autodesk Maya](integrate-maya-with-3d.md)
    + [Utilisation de scènes IBL](working-with-ibl-stages.md)
-   + [Intégration d’AEM 3D avec Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
+   + [Intégration de AEM 3D avec Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
    + [Configuration d’une étape IBL avec Autodesk Maya et Mental Ray](setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray.md)
