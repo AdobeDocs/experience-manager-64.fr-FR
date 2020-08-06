@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
 translation-type: tm+mt
 source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 71%
 
 ---
 
@@ -38,7 +41,7 @@ AEM Forms permet de limiter l’accès à l’éditeur de règles des utilisateu
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup"]`
 
-   Pour activer l’accès à plusieurs groupes, spécifiez une liste de valeurs séparées par des virgules :
+   Pour autoriser l’accès à plusieurs groupes, spécifiez une liste de valeurs séparées par des virgules :
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup", "PermittedUserGroup"]`
 
@@ -46,11 +49,11 @@ AEM Forms permet de limiter l’accès à l’éditeur de règles des utilisateu
 
    Now, when a user that is not a part of the specified user group (here RuleEditorsUserGroup) taps a field, the Edit Rule icon ( ![edit-rules1](assets/edit-rules1.png)) is not available for her in the components toolbar:
 
-   ![composant stoïolbarwithre](assets/componentstoolbarwithre.png)
+   ![composant stoolbarwithre](assets/componentstoolbarwithre.png)
 
    Barre d’outils de composants comme visible pour un utilisateur ayant un accès à l’éditeur de règles
 
-   ![composant stoïolbarwithoutre](assets/componentstoolbarwithoutre.png)
+   ![composant ststoolbarwithoutre](assets/componentstoolbarwithoutre.png)
 
    Barre d’outils de composants comme visible pour un utilisateur sans accès à l’éditeur de règles
 
