@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide de l’utilisateur du développement d’AEM 6.4
+user-guide-title: AEM 6.4 Élaboration du Guide de l’utilisateur
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
 source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
@@ -42,7 +42,7 @@ ht-degree: 80%
       + [Modèles de page - Statiques](page-templates-static.md)
       + [Modèles de fragment de contenu](content-fragment-templates.md)
       + [Rendu de modèle adaptatif](templates-adaptive-rendering.md)
-   + [Utilisation de Sling Resource Merger dans AEM  ](sling-resource-merger.md)
+   + [Utilisation de Sling Resource Merger dans AEM   ](sling-resource-merger.md)
    + [Recouvrements](overlays.md)
    + [Conventions de dénomination](naming-conventions.md)
    + [Création d’un composant de champ d’IU Granite](granite-ui-component.md)
@@ -103,7 +103,7 @@ ht-degree: 80%
       + [Présentation et présentation des applications monopages](spa-walkthrough.md)
       + [Didacticiel sur le WKND SPA](spa-wknd.md)
       + [Prise en main des applications monopages dans AEM - Réagir](spa-getting-started-react.md)
-      + [Prise en main des applications monopages dans AEM - Angular](spa-getting-started-angular.md)
+      + [Prise en main des applications monopages en AEM - Angular](spa-getting-started-angular.md)
       + [Mise en oeuvre d’un composant de réaction pour l’application d’une seule page](spa-implementing-react-component.md)
       + [SPA Deep Dives](spa-deep-dives.md)
       + [Aperçu de l’éditeur d’application d’une seule page](spa-overview.md)
@@ -112,7 +112,7 @@ ht-degree: 80%
       + [Composant de page SPA](spa-page-component.md)
       + [Mappage Modèle dynamique/Composant pour les applications monopages](spa-dynamic-model-to-component-mapping.md)
       + [Routage de modèle SPA](spa-routing.md)
-      + [Intégration de l’application d’une seule page et du lancement d’Adobe Experience Platform](spa-launch.md)
+      + [Intégration SPA et Adobe Experience Platform Launch](spa-launch.md)
       + [SPA et rendu côté serveur](spa-ssr.md)
       + [Références de l’API JavaScript SPA](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
@@ -134,7 +134,7 @@ ht-degree: 80%
    + [Extension AEM Brackets](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [Outil AEM Repo](aem-repo-tool.md)
-+ Personnalisation {#personlization}
++ Personnalisation  {#personlization}
    + [ContextHub](contexthub.md)
    + [Guide de référence pour l’API Javascript ContextHub](contexthub-api.md)
    + [Extension de ContextHub](ch-extend.md)
@@ -161,9 +161,9 @@ ht-degree: 80%
       + [Meilleures pratiques relatives aux workflows](workflows-best-practices.md)
       + [Référence sur les processus de workflow](workflows-process-ref.md)
    + [Extension du Multi Site Manager](extending-msm.md)
-   + Suivi et Analytics{#extending-analytics}
+   + Suivi et analyses{#extending-analytics}
       + [Extension du suivi des événements](extending-analytics.md)
-      + [Ajouter le suivi Analytics d&#39;Adobe aux composants](extending-analytics-components.md)
+      + [Ajouter le suivi des Adobe Analytics aux composants](extending-analytics-components.md)
       + [Personnalisation du cadre Adobe Analytics](extending-analytics-framework.md)
       + [Implémentation de l’appellation des pages côté serveur pour Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
@@ -195,7 +195,7 @@ ht-degree: 80%
    + [Test de votre interface utilisateur](hobbes.md)
 + Bonnes pratiques{#bestpractices}
    + [Présentation des meilleures pratiques](best-practices.md)
-   + [Directives et bonnes pratiques de développement AEM](dev-guidelines-bestpractices.md)
+   + [Lignes directrices AEM développement et bonnes pratiques](dev-guidelines-bestpractices.md)
    + [Meilleures pratiques de développement](development-practices.md)
    + [Content Architecture](content-architecture.md)
    + [Architecture logicielle](software-architecture.md)
