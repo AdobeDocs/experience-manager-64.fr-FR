@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 95%
 
 ---
 
@@ -27,11 +30,11 @@ Voici comment l’authentification traditionnelle fonctionne :
 1. Le fournisseur d’authentification valide les informations d’identification.
 1. Il vérifie ensuite si l’utilisateur existe dans la base de données User Management. L’un des résultats suivants s’affiche :
 
-   **** Existe : Si l’utilisateur est en cours et déverrouillé, User Management renvoie la réussite de l’authentification. Toutefois, si l’utilisateur n’est pas en cours ou s’il est verrouillé, User Management signale un échec d’authentification.
+   **Existe :** Si l’utilisateur est en cours et déverrouillé, User Management renvoie la réussite de l’authentification. Toutefois, si l’utilisateur n’est pas en cours ou s’il est verrouillé, User Management signale un échec d’authentification.
 
-   **** N’existe pas : User Management renvoie un échec d’authentification.
+   **N&#39;existe pas :** User Management renvoie un échec d’authentification.
 
-   **** Non valide : User Management renvoie un échec d’authentification.
+   **Non valide :** User Management renvoie un échec d’authentification.
 
 1. L’état indiqué par le fournisseur d’authentification est évalué. Si ce dernier a confirmé l’authentification, l’utilisateur peut alors ouvrir une session. Dans le cas contraire, User Management vérifie auprès du fournisseur d’authentification suivant. (les étapes 2 et 3)
 1. Un échec d’authentification est indiqué lorsqu’aucun fournisseur d’authentification disponible n’a pu valider les informations d’identification de l’utilisateur.
