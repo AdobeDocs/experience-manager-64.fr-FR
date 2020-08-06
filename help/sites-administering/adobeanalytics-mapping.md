@@ -37,7 +37,7 @@ Les données mappées sont envoyées à Adobe Analytics lorsque la page se charg
 * La page est associée à la structure.
 * La page utilise les composants ajoutés à la structure.
 
-Suivez la procédure suivante pour mapper les variables de composant CQ avec les propriétés de rapport Adobe Analytics.
+Suivez la procédure suivante pour mapper des variables de composant CQ avec des propriétés de rapport Adobe Analytics.
 
 1. In the **AEM view**, drag a tracking component from sidekick onto the framework. For example, drag the **Page** component component from the **General** category.
 
@@ -71,7 +71,7 @@ Suivez la procédure suivante pour mapper les variables de composant CQ avec les
 
 ## Mappage de variables liées à des produits {#mapping-product-related-variables}
 
-AEM utilise une convention pour nommer les variables et les événements liés aux produits qui sont censés être mappés sur les propriétés liées aux produits Adobe Analytics :
+AEM utilise une convention pour nommer les variables et les événements liés aux produits qui sont censés être mappés aux propriétés liées aux produits Adobe Analytics :
 
 | Variable CQ | Variable Analytics | Description |
 |---|---|---|
@@ -86,7 +86,7 @@ Plusieurs composants d’AEM Commerce utilisent ces noms de variables.
 
 >[!NOTE]
 >
->Ne mappez pas la propriété Produits Analytics Adobe à une variable CQ. La configuration de mappages liés à un produit, comme indiqué dans le tableau, s’apparente au mappage de la variable Products.
+>Ne mappez pas la propriété Produits Adobe Analytics à une variable CQ. La configuration de mappages liés à un produit, comme indiqué dans le tableau, s’apparente au mappage de la variable Products.
 
 ## Vérification des rapports dans Adobe Analytics {#checking-reports-on-adobe-analytics}
 
@@ -94,11 +94,11 @@ Plusieurs composants d’AEM Commerce utilisent ces noms de variables.
 1. Assurez-vous que le RSID sélectionné est celui utilisé lors des étapes précédentes.
 1. Dans **Rapports** (dans la partie gauche de la page), sélectionnez **Conversion personnalisée**, puis **Conversion personnalisée 1-10** et sélectionnez la variable correspondant à `eVar7`.
 
-1. Selon la version de Adobe Analytics que vous utilisez, vous devez attendre en moyenne 45 minutes pour que le rapport soit mis à jour avec le terme de recherche utilisé ; par exemple, aubergine dans l&#39;exemple
+1. Selon la version d’Adobe Analytics que vous utilisez, vous devez attendre en moyenne 45 minutes pour que le rapport soit mis à jour avec le terme de recherche utilisé ; par exemple, aubergine dans l&#39;exemple
 
 ## Utilisation de l’outil de recherche de contenu (cf#) avec les structures Adobe Analytics {#using-the-content-finder-cf-with-adobe-analytics-frameworks}
 
-Au départ, lorsque vous ouvrez un cadre Adobe Analytics, l’outil de recherche de contenu contient des variables Analytics prédéfinies sous :
+Au départ, lorsque vous ouvrez une structure Adobe Analytics, l’outil de recherche de contenu contient des variables Analytics prédéfinies sous :
 
 * Trafic
 
@@ -126,7 +126,7 @@ La liste peut être manipulée comme suit :
 
    >[!NOTE]
    >
-   >Les variables de Search&amp;Promote appartiennent également à la section Conversion.
+   >Les variables de Search &amp; Promote appartiennent également à la section Conversion.
 
    1. La liste comporte également une fonctionnalité de recherche, qui filtre les éléments en fonction du texte saisi dans le champ de recherche.
    1. Si une option de filtre est activée lors de la recherche des éléments de la liste, les résultats affichés sont également filtrés en fonction du bouton actif.
@@ -141,15 +141,15 @@ La liste peut être manipulée comme suit :
    ![aa-22](assets/aa-22.png)
 
    * The variables can be dragged&amp;dropped onto any Adobe Analytics variable belonging to either one of the 3 variable sections (**Traffic**, **Conversion** and **Events**).
-   * Lorsque vous faites glisser un nouveau composant de suivi sur la structure dans la vue CQ, les variables CQ appartenant au composant sont automatiquement ajoutées à l’outil de recherche de contenu (cf#) dans la vue Analytics d’Adobe.
+   * Lorsque vous faites glisser un nouveau composant de suivi sur la structure dans la vue CQ, les variables CQ appartenant au composant sont automatiquement ajoutées à l’outil de recherche de contenu (cf#) dans la vue Adobe Analytics.
 
    >[!NOTE]
    >
-   >Une seule variable CQ peut être mappée à une variable Adobe Analytics à la fois.
+   >Une seule variable CQ peut être mappée simultanément à une variable Adobe Analytics.
 
 ## Utilisation de la vue AEM et de la vue Analytics {#using-aem-view-and-analytics-view}
 
-A tout moment, les utilisateurs ont la possibilité de basculer entre deux méthodes d’affichage des mappages Adobe Analytics sur une page de cadre. Les deux vues offrent une meilleure présentation des mappages dans la structure, de deux points de vue différents.
+A tout moment, les utilisateurs ont la possibilité de basculer entre deux méthodes d’affichage des mappages Adobe Analytics sur une page de structure. Les deux vues offrent une meilleure présentation des mappages dans la structure, de deux points de vue différents.
 
 ### Vue AEM {#aem-view}
 
@@ -158,7 +158,7 @@ A tout moment, les utilisateurs ont la possibilité de basculer entre deux méth
 En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propriétés suivantes :
 
 1. Voici la vue par défaut à l’ouverture de la structure.
-1. Côté gauche : l&#39;outil de recherche de contenu (cf#) est renseigné par les variables Analytics Adobe d&#39;en fonction du ou des RSID sélectionnés.
+1. Côté gauche : l&#39;outil de recherche de contenu (cf#) est renseigné par des variables Adobe Analytics en fonction du ou des RSID sélectionnés.
 1. En-têtes d’onglets (**vue AEM** et **vue Analytics**) : à utiliser pour basculer entre les vues.
 
 1. **Vue AEM**:
@@ -184,7 +184,7 @@ En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propri
 1. Sur la gauche de l’écran : outil de recherche de contenu (cf#) renseigné par des variables CQ en fonction des composants déplacés sur la structure dans la vue CQ.
 1. En-têtes d’onglets (**vue AEM** et **vue Analytics**) : à utiliser pour basculer entre les vues.
 
-1. Les trois tables (Trafic, Conversion, Événement) liste toutes les variables Adobe Analytics disponibles. des RSID sélectionnés. Les mappages affichés ici doivent être identiques à ceux de la vue AEM :
+1. Les trois tableaux (Trafic, Conversion, Événement) liste toutes les variables Adobe Analytics disponibles. des RSID sélectionnés. Les mappages affichés ici doivent être identiques à ceux de la vue AEM :
 
    * **Trafic** :
 
@@ -206,7 +206,7 @@ En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propri
 >
 >* Par exemple, en regard de `prop3` vous pouvez ajouter
 >* `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-   >  pour envoyer le *titre* d&#39;une page concaténée avec sa section *de* site à l&#39;aide de *:* (deux-points) et précédé du préfixe *Adobe* comme `prop3`
+   >  pour envoyer le *titre* d&#39;une page concaténée avec sa section *de* site à l&#39;aide de *:* (deux-points) et précédés d’un *Adobe* comme `prop3`
 
 
 >[!CAUTION]
