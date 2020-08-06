@@ -1,8 +1,8 @@
 ---
 title: 'Authentification Adobe IMS et prise en charge de l’Admin Console pour AEM Managed Services '
 seo-title: 'Authentification Adobe IMS et prise en charge de l’Admin Console pour AEM Managed Services '
-description: Découvrez comment utiliser la Console d’administration dans AEM.
-seo-description: Découvrez comment utiliser la Console d’administration dans AEM.
+description: Apprenez à utiliser le Admin Console en AEM.
+seo-description: Apprenez à utiliser le Admin Console en AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1804'
+ht-degree: 81%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 AEM 6.4.3.0 introduces Admin Console support for AEM instances and Adobe IMS(Identity Management System) based authentication for **AEM Managed Services** customers.
 
-L’intégration d’AEM à l’Admin Console permettra aux clients AEM Managed Services de gérer tous les utilisateurs d’Experience Cloud dans une seule console. Les utilisateurs et les groupes peuvent être affectés aux profils de produits associés aux instances AEM, ce qui leur permet de se connecter à une instance spécifique.
+L’intégration d’AEM à l’Admin Console permettra aux clients AEM Managed Services de gérer tous les utilisateurs d’Experience Cloud dans une seule console. Les utilisateurs et les groupes peuvent être affectés à des profils de produits associés à des instances AEM, ce qui leur permet de se connecter à une instance spécifique.
 
 ## Principales caractéristiques {#key-highlights}
 
@@ -35,7 +38,7 @@ L’intégration d’AEM à l’Admin Console permettra aux clients AEM Managed 
 * Les profils de produit de l’Admin Console détermineront à quelles instances un utilisateur peut accéder
 * L’authentification fédérée à l’aide des propres fournisseurs d’identité des clients conformes SAML 2 est prise en charge
 * Seuls les ID d’entreprise ou fédérés (pour l’authentification unique du client) sont pris en charge, et non les Adobe ID personnels.
-* La gestion des utilisateurs (dans la console d’administration Adobe) continuera d’appartenir aux administrateurs du client.
+* La gestion des utilisateurs (dans Adobe Admin Console) continuera à appartenir aux administrateurs du client.
 
 ## Architecture {#architecture}
 
@@ -47,13 +50,13 @@ Le flux d’identifiant de connexion utilisateur est indiqué ci-dessous, l’ut
 
 ## Méthode de configuration {#how-to-set-up}
 
-### Intégration des organisations à l’Admin Console {#onboarding-organizations-to-admin-console}
+### Intégration des organisations dans Admin Console {#onboarding-organizations-to-admin-console}
 
 L’intégration du client à l’Admin Console est un prérequis pour utiliser Adobe IMS pour l’authentification AEM.
 
-Pour commencer, une organisation doit être configurée pour les clients dans Adobe IMS. Les clients Adobe Enterprise sont représentés en tant qu’organisations IMS dans [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html).
+Pour commencer, une organisation doit être configurée pour les clients dans Adobe IMS. Les clients Adobe Enterprise sont représentés en tant qu’organisations IMS dans [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html).
 
-Les clients des services gérés AEM doivent déjà disposer d’une organisation configurée. Dans le cadre de l’attribution des privilèges d’accès IMS, les instances de client seront rendues disponibles dans la Console d’administration pour la gestion des droits d’accès et des droits d’utilisateur.
+AEM clients Managed Services doivent déjà disposer d’une organisation configurée et, dans le cadre de l’attribution de privilèges d’accès IMS, les instances de client seront mises à disposition dans le Admin Console pour la gestion des droits d’utilisateur et de l’accès.
 
 L’authentification des utilisateurs par IMS sera un travail commun à AMS et les clients, chacun devant mener à bien ses workflows.
 
@@ -61,7 +64,7 @@ Une fois qu’un client est défini en tant qu’organisation IMS et qu’AMS a 
 
 ![image2018-9-23_23-33-25](assets/image2018-9-23_23-33-25.png)
 
-1. L’administrateur système désigné reçoit une invitation à se connecter à la console d’administration.
+1. L&#39;administrateur système désigné reçoit une invitation à se connecter au Admin Console.
 1. L’administrateur système désigne le domaine pour confirmer la propriété du nom de domaine (dans cet exemple acme.com)
 1. L’administrateur système configure les répertoires utilisateur
 1. L’administrateur système configure le fournisseur d’identité (IDP) dans l’Admin Console pour la configuration SSO.
@@ -69,9 +72,9 @@ Une fois qu’un client est défini en tant qu’organisation IMS et qu’AMS a 
 
 >[!NOTE]
 >
->Pour plus d’informations sur les bases de la gestion des identités dans Adobe, y compris sur la configuration de fournisseur d’identité, voir l’article présenté [sur cette page.](https://helpx.adobe.com/enterprise/using/set-up-identity.html)
+>Pour plus d’informations sur les bases de la gestion des identités dans Adobe, y compris sur la configuration de fournisseur d’identité, voir l’article présenté [sur cette page.](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html)
 >
->Pour plus d’informations sur Enterprise Administration et sur l’Admin Console, voir l’article présenté [sur cette page](https://helpx.adobe.com/enterprise/managing/user-guide.html).
+>Pour plus d’informations sur Enterprise Administration et sur l’Admin Console, voir l’article présenté [sur cette page](https://helpx.adobe.com/fr/enterprise/managing/user-guide.html).
 
 ### Intégration d’utilisateurs à l’Admin Console {#onboarding-users-to-the-admin-console}
 
@@ -83,7 +86,7 @@ Il existe trois méthodes d’intégration des utilisateurs en fonction de la ta
 
 #### Ajout manuel via l’interface utilisateur de l’Admin Console {#manual-addition-through-admin-console-ui}
 
-Les utilisateurs et les groupes peuvent être créés manuellement dans l’interface utilisateur de l’Admin Console. Cette méthode peut être utilisée s’il y a un nombre réduit d’utilisateurs à gérer. Par exemple, moins de 50 utilisateurs d’AEM.
+Les utilisateurs et les groupes peuvent être créés manuellement dans l’interface utilisateur d’Admin Console. Cette méthode peut être utilisée s’il y a un nombre réduit d’utilisateurs à gérer. Par exemple, moins de 50 utilisateurs d’AEM.
 
 Les utilisateurs peuvent aussi être créés manuellement si le client utilise déjà cette méthode pour administrer d’autres produits Adobe comme Analytics, Target ou des applications Creative Cloud.
 
@@ -99,11 +102,11 @@ Pour gérer facilement la création d’utilisateurs, un fichier CSV peut être 
 
 L’outil de synchronisation des utilisateurs permet aux clients d’entreprise de créer ou de gérer des utilisateurs Adobe utilisant Active Directory ou d’autres services testés de répertoires OpenLDAP. Les utilisateurs cibles sont les administrateurs d’identité informatique (Enterprise Directory et administrateurs système) qui pourront installer et configurer l’outil. Cet outil en open source est personnalisable, de telle sorte que les clients peuvent le faire modifier par un développeur en fonction de leurs besoins spécifiques.
 
-Lorsque la synchronisation des utilisateurs s’exécute, elle récupère une liste d’utilisateurs à partir du répertoire Active Directory de l’organisation (ou de toute autre source de données compatible) et la compare à la liste des utilisateurs de l’Admin Console. Elle appelle ensuite l’API de gestion des utilisateurs Adobe pour synchroniser l’Admin Console avec le répertoire de l’organisation. Le flux de modification est uniquement unidirectionnel et les modifications apportées dans l’Admin Console ne sont pas transférées vers le répertoire.
+Lorsque la synchronisation des utilisateurs s’exécute, elle récupère une liste d’utilisateurs à partir du répertoire Active Directory de l’organisation (ou de toute autre source de données compatible) et la compare à la liste des utilisateurs de l’Admin Console. Elle appelle ensuite l’API de gestion des utilisateurs Adobe pour synchroniser Admin Console avec le répertoire de l’organisation. Le flux de modification est uniquement unidirectionnel et les modifications apportées dans l’Admin Console ne sont pas transférées vers le répertoire.
 
 Cet outil permet à l’administrateur système de mapper les groupes d’utilisateurs dans le répertoire client avec la configuration de produits et les groupes d’utilisateurs dans l’Admin Console. La nouvelle version de l’outil de synchronisation des utilisateurs permet également la création dynamique de groupes d’utilisateurs dans l’Admin Console.
 
-To set up User Sync, the organization needs to create a set of credentials in the same way they would use the [User Management API](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/setup.html).
+Pour configurer la synchronisation des utilisateurs, l’organisation doit créer un ensemble d’informations d’identification de la même manière qu’avec l’[API User Management](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/setup.html).
 
 ![image2018-9-23_13-36-56](assets/image2018-9-23_13-36-56.png)
 
@@ -113,7 +116,7 @@ La synchronisation des utilisateurs est distribuée via le référentiel Adobe G
 
 Note that a pre-release version 2.4RC1 is available with dynamic group creation support and can be found here: [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
-Cette version a pour principales fonctionnalités la possibilité de mapper de manière dynamique les nouveaux groupes LDAP pour l’appartenance des utilisateurs à l’Admin Console, ainsi que la création dynamique de groupes d’utilisateurs.
+Cette version a pour principales fonctionnalités la possibilité de mapper de manière dynamique les nouveaux groupes LDAP pour l’appartenance des utilisateurs à Admin Console, ainsi que la création dynamique de groupes d’utilisateurs.
 
 Vous trouverez plus d’informations sur les nouvelles fonctionnalités du groupe ici :
 
@@ -135,9 +138,9 @@ Vous trouverez plus d’informations sur les nouvelles fonctionnalités du group
 >
 >La configuration IMS d’AEM sera gérée par l’équipe Adobe Managed Services. Cependant, l’administrateur du client peut la modifier en fonction de ses besoins (par exemple, pour gérer l’appartenance automatique des groupes ou le mappage de groupes). Le client IMS sera également enregistré par votre équipe Managed Services.
 
-## Procédure d’utilisation {#how-to-use}
+## Utilisation {#how-to-use}
 
-### Gestion des produits et accès utilisateur dans l’Admin Console {#managing-products-and-user-access-in-admin-console}
+### Gestion des produits et accès utilisateur dans Admin Console {#managing-products-and-user-access-in-admin-console}
 
 Lorsque l’administrateur de produit client se connecte à l’Admin Console, il voit plusieurs instances de contexte du produit AEM Managed Services, comme illustré ci-dessous :
 
@@ -191,19 +194,19 @@ Une fois l’authentification terminée, l’utilisateur est redirigé vers AEM 
 
 Pour les instances AEM existantes qui utilisent une autre méthode d’authentification et qui sont désormais migrées vers IMS, une étape de migration est nécessaire.
 
-Les utilisateurs existants dans le référentiel AEM (provenant localement via LDAP ou SAML) peuvent être migrés pour pointer vers IMS en tant que fournisseur interne à l’aide de l’utilitaire de migration d’utilisateurs.
+Les utilisateurs existants dans le référentiel AEM (provenant localement, via LDAP ou SAML) peuvent être migrés pour pointer vers IMS en tant que IDP à l’aide de l’utilitaire de migration d’utilisateur.
 
 Cet utilitaire sera exécuté par votre équipe AMS dans le cadre de la mise en service de l’IMS.
 
 ### Gestion des autorisations et des listes de contrôle d’accès dans AEM {#managing-permissions-and-acls-in-aem}
 
-Le contrôle d’accès et les autorisations continueront d’être gérés dans AEM. Pour ce faire, vous pouvez séparer les groupes d’utilisateurs des services IMS (par exemple, AEM-GRP-008 dans l’exemple ci-dessous) et des groupes locaux où les autorisations et le contrôle d’accès sont définis. Les groupes d’utilisateurs synchronisés à partir de l’IMS peuvent être attribués aux groupes locaux et hériter des autorisations.
+Le Contrôle d&#39;accès et les autorisations continueront d’être gérés en AEM, ce qui peut se faire en séparant les groupes d’utilisateurs des IMS (par exemple AEM-GRP-008 dans l’exemple ci-dessous) et des groupes locaux où les autorisations et le contrôle d&#39;accès sont définis. Les groupes d’utilisateurs synchronisés à partir de l’IMS peuvent être attribués aux groupes locaux et hériter des autorisations.
 
-In the example below, we are adding synced groups to the local *Dam_Users* group as an example.
+Dans l’exemple ci-dessous, nous ajoutons des groupes synchronisés au groupe local *Dam_Users* comme exemple.
 
 Dans ce cas, un utilisateur a également été attribué à plusieurs groupes dans l’Admin Console. ( Please note that the users and groups can be synced from LDAP using the user sync tool or created locally, please see the section **Onboarding Users to the Admin Console** above).
 
-&amp;ast;Notez que les groupes d&#39;utilisateurs ne sont synchronisés que lorsque les utilisateurs se connectent à l&#39;instance. Pour les clients qui ont un grand nombre d&#39;utilisateurs et de groupes, AMS peut exécuter un utilitaire de synchronisation de groupes pour prérécupérer les groupes pour le contrôle d&#39;accès et la gestion des autorisations décrites ci-dessus.
+&amp;ast;Notez que les groupes d’utilisateurs ne sont synchronisés que lorsque les utilisateurs se connectent à l’instance, pour les clients qui ont un grand nombre d’utilisateurs et de groupes, un utilitaire de synchronisation de groupes peut être exécuté par AMS pour prérécupérer les groupes pour la gestion des contrôles d&#39;accès et des autorisations décrite ci-dessus.
 
 ![screen_shot_2018-09-17at94207pm](assets/screen_shot_2018-09-17at94207pm.png)
 
