@@ -60,7 +60,7 @@ Vous pouvez incorporer un formulaire adaptatif en insérant quelques lignes de c
     if(options.path) {
     / options.path fait référence à l&#39;URL de publication le formulaire
     adaptatif// Par exemple : http:myserver:4503/content/forms/af/ABC, où ABC est le formulaire
-    adaptatif// Remarque : Si le serveur AEM s’exécute sur un chemin de contexte, l’URL du formulaire adaptatif doit contenir le chemin d’accès de la
+    adaptatif// Remarque : Si AEM serveur s’exécute sur un chemin de contexte, l’URL du formulaire adaptatif doit contenir le chemin d’accès de la
     variable de contexte = options.path;
     path += &quot;/jcr:content/guideContainer.html&quot;;
     $.ajax({
@@ -169,6 +169,6 @@ Lorsque vous incorporez un formulaire adaptatif dans une page Web, prenez en com
 
 ## Activer AEM Forms pour diffuser des formulaires adaptatifs vers un site interdomaines  {#cross-domain-sites}
 
-1. Sur l’instance d’auteur AEM, accédez à Configuration Manager de la console Web AEM à `http://[server]:[port]/system/console/configMgr`.
+1. Sur AEM instance d’auteur, accédez à AEM Web Console Configuration Manager à l’adresse `http://[server]:[port]/system/console/configMgr`.
 1. Locate and open the **Apache Sling Referrer** Filter configuration.
 1. Dans le champ **Hôtes autorisés**, spécifiez le domaine dans lequel la page Web se trouve. Cette opération permet à l’hôte de créer des requêtes POST vers le serveur AEM. Vous pouvez également utiliser l’expression régulière pour spécifier une série de domaines d’application externes.
