@@ -51,7 +51,7 @@ La structure eCommerce peut être utilisée avec n’importe quelle solution d�
 
    * Les moteurs peuvent être distingués par une propriété de service `commerceProvider`.
 
-* AEM prend en charge `Resource.adaptTo()` `CommerceService` les `Product`
+* AEM prend en charge `Resource.adaptTo()` les `CommerceService` et `Product`
 
    * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource&#39;s hierarchy:
 
@@ -68,7 +68,7 @@ La structure eCommerce peut être utilisée avec n’importe quelle solution d�
 
 Consultez les exemples ci-dessous :
 
-| `cq:commerceProvider = geometrixx` | dans une installation AEM standard, une implémentation spécifique est requise ; par exemple, l’exemple geometrixx, qui inclut des extensions minimales à l’API générique. |
+| `cq:commerceProvider = geometrixx` | dans une installation AEM standard, une mise en oeuvre spécifique est requise ; par exemple, l’exemple geometrixx, qui inclut des extensions minimales à l’API générique. |
 |---|---|
 | `cq:commerceProvider = hybris` | mise en oeuvre de l&#39;hybris |
 
@@ -498,7 +498,7 @@ public class AxisFilter implements VariantFilter {
 >
 >Vous pouvez mettre en œuvre un sélecteur d’expédition, par exemple :
 >
->`yourProject/commerce/components/shippingpicker`:
+>`yourProject/commerce/components/shippingpicker` :
 >
 >* Essentially this could be a copy of `foundation/components/form/radio`, but with callbacks to the `CommerceSession` for:
    >
@@ -560,7 +560,7 @@ L’intégration est fournie entre AEM et différents systèmes eCommerce. Elle 
 
 * Comptes en hybris
 
-   AEM crée un compte correspondant (subordonné) en hybris pour chaque acheteur. Le nom d’utilisateur de ce compte est identique à celui d’AEM. Un mot de passe aléatoire sur le plan cryptographique est généré automatiquement et stocké (chiffré) dans AEM.
+   AEM crée un compte (Secondaire) correspondant en hybris pour chaque acheteur. Le nom d’utilisateur de ce compte est identique à celui de l’AEM. Un mot de passe aléatoire sur le plan cryptographique est généré automatiquement et stocké (chiffré) dans AEM.
 
 #### Utilisateurs préexistants {#pre-existing-users}
 
