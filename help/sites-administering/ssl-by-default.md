@@ -11,6 +11,9 @@ topic-tags: Security
 discoiquuid: 3a1817cd-357b-473d-9a09-e18bbfc60dfd
 translation-type: tm+mt
 source-git-commit: eb3ac73ebe3189c144dafa02a2596ea5d512ffba
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 81%
 
 ---
 
@@ -201,20 +204,20 @@ Vous pouvez également automatiser la configuration SSL à l’aide de l’outi
 
 Voici les paramètres que vous pouvez utiliser pour modifier les différents paramètres de l’assistant de configuration :
 
-* `-F "keystorePassword=password"` - le mot de passe du fichier de stockage des clés;
+* `-F "keystorePassword=password"` - le mot de passe du fichier de stockage des clés ;
 
 * `-F "keystorePasswordConfirm=password"` - confirmer le mot de passe du fichier de stockage des clés ;
 
-* `-F "truststorePassword=password"` - le mot de passe truststore;
+* `-F "truststorePassword=password"` - le mot de passe Trust Store ;
 
-* `-F "truststorePasswordConfirm=password"` - confirmer le mot de passe truststore;
+* `-F "truststorePasswordConfirm=password"` - confirmer le mot de passe truststore ;
 
-* `-F "privatekeyFile=@localhostprivate.der"` - spécifier la clé privée;
+* `-F "privatekeyFile=@localhostprivate.der"` - spécifier la clé privée ;
 
-* `-F "certificateFile=@localhost.crt"` - préciser le certificat;
+* `-F "certificateFile=@localhost.crt"` - préciser le certificat ;
 
-* `-F "httpsHostname=host.example.com"`- indiquer le nom d&#39;hôte;
-* `-F "httpsPort=8443"` - port sur lequel l’écouteur HTTPS fonctionne.
+* `-F "httpsHostname=host.example.com"`- indiquer le nom d&#39;hôte ;
+* `-F "httpsPort=8443"` - port sur lequel l&#39;écouteur HTTPS fonctionne.
 
 >[!NOTE]
 >
