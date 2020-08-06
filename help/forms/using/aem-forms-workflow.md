@@ -58,7 +58,7 @@ AEM fournit une interface utilisateur intuitive pour créer un modèle de proces
 
 ### Création d’un modèle pour un processus d’approbation et de révision {#create-a-model-for-an-approval-and-review-workflow}
 
-Le processus d’approbation et de révision est destiné aux tâches qui nécessitent une intervention humaine pour une prise de décisions. L’exemple suivant crée un modèle de processus pour une demande de prêt immobilier à remplir par un conseiller bancaire. Une fois remplie, la demande est envoyée pour approbation. Par la suite, la demande approuvée est envoyée au demandeur pour signature électronique à l’aide d’Adobe Sign.
+Le processus d’approbation et de révision est destiné aux tâches qui nécessitent une intervention humaine pour une prise de décisions. L’exemple suivant crée un modèle de processus pour une demande de prêt immobilier à remplir par un conseiller bancaire. Une fois remplie, la demande est envoyée pour approbation. Par la suite, la demande approuvée est envoyée au demandeur pour signature électronique à l&#39;aide de l&#39;Adobe Sign.
 
 L’exemple est disponible en tant que package joint ci-dessous. Importez et installez l’exemple à l’aide du gestionnaire de package. Vous pouvez également effectuer les opérations suivantes afin de créer manuellement le modèle de processus de la demande :
 
@@ -74,7 +74,7 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
    * les étapes : Début du processus et Fin du processus. Ces étapes définissent le début et la fin du processus. Ces étapes sont obligatoires et ne peuvent pas être modifiées ou supprimées.
    * Exemple d’étape Participant nommée Etape 1.  Cette étape est configurée pour affecter un élément de travail à l’utilisateur administrateur. Supprimez cette étape.
 
-1. Activez les notifications électroniques. Vous pouvez configurer le flux de travaux axé sur Forms sur OSGi pour envoyer des notifications par courrier électronique aux utilisateurs ou aux personnes désignées. Effectuez les configurations suivantes pour activer les notifications électroniques :
+1. Activez les notifications électroniques. Vous pouvez configurer le processus Forms-Central sur OSGi pour envoyer des notifications par courrier électronique aux utilisateurs ou aux personnes désignées. Effectuez les configurations suivantes pour activer les notifications électroniques :
 
    1. Accédez au gestionnaire de configuration AEM à l’adresse `https://[server]:[port]/system/console/configMgr`.
    1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Enregistrer]**.
@@ -126,7 +126,7 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
 1. Ajoutez d’autres étapes de processus pour créer une logique d’entreprise.
 
-   Pour l’exemple de prêt immobilier, ajoutez un document d’enregistrement généré, deux étapes Affecter une tâche et une étape de signature de document pour la Branche 1 du modèle, comme affiché dans l’image ci-dessous. Une étape Affecter une tâche consiste à afficher et envoyer des **documents de prêt à signer au demandeur** et un autre composant de tâche consiste à **afficher les documents signés**. Ajoutez également un composant Affecter une tâche à la branche 2. Elle est activée lorsqu’un utilisateur appuie sur Rejeter dans la boîte de réception AEM.
+   Pour l’exemple de prêt immobilier, ajoutez un document d’enregistrement généré, deux étapes Affecter une tâche et une étape de signature de document pour la Branche 1 du modèle, comme affiché dans l’image ci-dessous. Une étape Affecter une tâche consiste à afficher et envoyer des **documents de prêt à signer au demandeur** et un autre composant de tâche consiste à **afficher les documents signés**. Ajoutez également un composant Affecter une tâche à la branche 2. Il est activé lorsqu’un utilisateur appuie sur Rejeter dans AEM boîte de réception.
 
    Pour obtenir l’ensemble complet des valeurs de tous les champs des étapes Affecter une tâche, de l’étape Document d’enregistrement et de l’étape Signer le document configurées pour l’exemple de demande de prêt immobilier, importez l’exemple de package, disponible au téléchargement au début de cette section.
 
@@ -156,7 +156,7 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
    <td>Le titre est visible dans la boîte de réception AEM et permet aux utilisateurs de sélectionner une demande. Assurez-vous qu’il soit descriptif. Par exemple, Demande d’ouverture de compte d’épargne.<br />  </td> 
   </tr> 
   <tr> 
-   <td>Name (Nom) </td> 
+   <td>Nom </td> 
    <td>Indiquez le nom de la demande. Tous les caractères autres que les lettres, chiffres, tirets et traits de soulignement ont été remplacés par des tirets. </td> 
   </tr> 
   <tr> 
@@ -238,7 +238,7 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
    <td>Indiquez le nom du dossier de contrôle. Ce champ prend uniquement en charge les caractères alphanumériques.</td> 
   </tr> 
   <tr> 
-   <td><span class="uicontrol">Chemin </span></td> 
+   <td><span class="uicontrol">Chemin   </span></td> 
    <td>Spécifiez l’emplacement physique du dossier de contrôle. Dans un environnement organisé en grappes, utilisez un dossier réseau partagé accessible à partir du noeud de la grappe AEM.</td> 
   </tr> 
   <tr> 
@@ -266,7 +266,7 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
 
 ### Envoi d’une communication interactive ou d’une lettre {#letter}
 
-Vous pouvez associer et exécuter un flux de travail Forms sur OSGi lors de l’envoi d’une communication interactive ou d’une lettre. Dans la gestion de la correspondance, les workflows sont utilisés pour les communications interactives et les lettres après traitement. par exemple, l’envoi de courriers électroniques, l’impression, la télécopie ou l’archivage des lettres finales. Pour les étapes détaillées, voir [Post-traitement des communications interactives et des lettres](/help/forms/using/submit-letter-topostprocess.md).
+Vous pouvez associer et exécuter un flux de travaux centré sur Forms sur OSGi lors de l’envoi d’une communication interactive ou d’une lettre. Dans la gestion de la correspondance, les workflows sont utilisés pour les communications interactives et les lettres après traitement. par exemple, l’envoi de courriers électroniques, l’impression, la télécopie ou l’archivage des lettres finales. Pour les étapes détaillées, voir [Post-traitement des communications interactives et des lettres](/help/forms/using/submit-letter-topostprocess.md).
 
 ## Autres configurations {#additional-configurations}
 
