@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 273096d0-b0e1-4519-8af6-11b3414cc172
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 83%
 
 ---
 
@@ -49,7 +52,7 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   <tr>
    <td>Pagination<br /> </td> 
    <td><p>Un formulaire HTML5 est divisé en panneaux et en zones pour lui donner un aspect similaire aux formulaires PDF. La taille d’une page est calculée de façon dynamique. Si tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge est masquée et un espace vide (espace blanc) ne s’affiche pas entre les pages, au-dessus et au-dessous de la page vierge.</p> <p>Si la fusion des données ou des scripts ajoutent du contenu à une page, la longueur de la page s’ajuste au contenu qui vient d’être ajouté. Aucune nouvelle page n’est ajoutée au formulaire pour s’ajuster au contenu qui vient d’être ajouté. </p> <p><strong>Remarque :</strong> lorsque tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge (espace blanc) reste visible entre la 1ère et 2e page mais pas entre les autres pages.</p> </td> 
-   <td>La pagination dans le PDF dépend du contenu des données fusionné ou du contenu utilisateur et le nombre de pages est augmenté/réduit en fonction de ce contenu.</td> 
+   <td>La pagination dans le fichier PDF dépend du contenu des données fusionné ou du contenu de l’utilisateur et le nombre de pages est augmenté/réduit en fonction de ce contenu.</td> 
   </tr>
   <tr>
    <td>En-têtes/pieds de page </td> 
