@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 69%
 
 ---
 
@@ -29,14 +32,16 @@ Deux interfaces utilisateur graphiques sont à votre disposition, accessibles da
 
 1. Interface utilisateur optimisée pour les écrans tactiles
 
-   * Il s’agit de l’interface utilisateur moderne par défaut d’AEM.
+   * Il s’agit de l’interface utilisateur AEM moderne par défaut.
    * Particulièrement épurée, elle est principalement grise.
    * Elle est conçue à la fois pour les appareils à écran tactile les écrans tactiles et les ordinateurs de bureau. Son apparence est identique sur tous les appareils, bien que [l’affichage et la sélection des ressources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) diffèrent légèrement (pressions au lieu de clics).
 
       * Bureau :
+
    ![screen_shot_2018-03-23at115248](assets/screen_shot_2018-03-23at115248.png)
 
    * Tablettes (ou bureau de moins de 1024 pixels de large) :
+
    ![screen_shot_2018-03-23at115505](assets/screen_shot_2018-03-23at115505.png)
 
 1. IU classique
@@ -45,9 +50,10 @@ Deux interfaces utilisateur graphiques sont à votre disposition, accessibles da
    * Elle est principalement verte.
    * Elle est conçue pour les appareils de bureau.
    * La documentation suivante concerne l’interface utilisateur moderne. Pour plus d’informations sur la création dans l’interface utilisateur classique, voir [Documentation sur la création dans l’interface utilisateur classique](/help/sites-classic-ui-authoring/classicui.md).
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
-## Changement d’IU
+## Changement d’interface utilisateur
 
 Although the touch-enabled UI is now the standard UI and [feature parity](../release-notes/touch-ui-features-status.md) has been nearly reached with the administration and editing of sites, there may be times when the user wishes to switch to the [classic UI](/help/sites-classic-ui-authoring/classicui.md). Pour ce faire, plusieurs possibilités s’offrent à lui.
 
@@ -57,9 +63,9 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 
 Vous pouvez choisir quelle IU utiliser à divers emplacements :
 
-* [Configuration de l’interface utilisateur par défaut pour votre instance](#configuring-the-default-ui-for-your-instance) : cette option définit l’interface utilisateur par défaut à afficher lors de la connexion de l’utilisateur, bien que l’utilisateur puisse remplacer cette option et sélectionner une autre interface utilisateur pour son compte ou sa session en cours.
+* [Configuration de l&#39;interface utilisateur par défaut pour votre instance](#configuring-the-default-ui-for-your-instance) : cette option définit l&#39;interface utilisateur par défaut à afficher lors de la connexion de l&#39;utilisateur, bien que l&#39;utilisateur puisse remplacer cette interface et sélectionner une autre interface pour son compte ou sa session en cours.
 
-* [Définition de la création classique de l’interface utilisateur pour votre compte](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) : cette option définit l’interface utilisateur à utiliser par défaut lors de la modification des pages, bien que l’utilisateur puisse remplacer cette option et sélectionner une autre interface utilisateur pour son compte ou sa session en cours.
+* [Définition de la création classique de l&#39;interface utilisateur pour votre compte](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) : cette option définit l&#39;interface utilisateur à utiliser par défaut lors de la modification des pages, bien que l&#39;utilisateur puisse remplacer cette option et sélectionner une autre interface pour son compte ou sa session en cours.
 
 * [Passage à l’interface utilisateur classique pour la session](#switching-to-classic-ui-for-the-current-session) en cours : bascule vers l’interface utilisateur classique pour la session en cours.
 
@@ -167,6 +173,7 @@ Les paramètres définis par un utilisateur ou un administrateur du système peu
 >
 >* Modifier manuellement l’URL : une URL non standard risque de générer une situation inconnue et une absence de fonctionnalité.
 >* Ouvrir les deux éditeurs en même temps ; dans des fenêtres distinctes, par exemple.
+
 >
 
 
