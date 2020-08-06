@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 75%
 
 ---
 
@@ -24,10 +27,10 @@ By default, AEM Forms stores the user data associated with the draft and submiss
 
 ## Conditions préalables  {#prerequisites}
 
-* Activation des composants [Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
+* Activation des composants du portail de [formulaires](/help/forms/using/enabling-forms-portal-components.md)
 * Create a [forms portal page](/help/forms/using/creating-form-portal-page.md)
-* Activation des formulaires [adaptatifs pour Forms Portal](/help/forms/using/draft-submission-component.md)
-* Découvrez les détails [d&#39;implémentation du stockage personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Activation des formulaires [adaptatifs pour le portail de formulaires](/help/forms/using/draft-submission-component.md)
+* Découvrez les détails de [mise en oeuvre de l’enregistrement personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Service de données de brouillon {#draft-data-service}
 
