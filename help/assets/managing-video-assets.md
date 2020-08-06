@@ -7,21 +7,24 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
 source-git-commit: 9ced187ddc9bb2d12922fcc734b20ef9767d8fbf
+workflow-type: tm+mt
+source-wordcount: '797'
+ht-degree: 54%
 
 ---
 
 
-# Gestion des ressources vidéo {#managing-video-assets}
+# Gestion des ressources vidéo  {#managing-video-assets}
 
 Découvrez comment gérer et modifier les ressources vidéo dans Adobe Experience Manager (AEM) Assets. De plus, si vous possédez une licence d’utilisation Dynamic Media, reportez-vous à la [documentation vidéo sur Dynamic Media](video.md).
 
-## Upload and preview video assets {#uploading-and-previewing-video-assets}
+## Chargement et prévisualisation des ressources vidéo {#uploading-and-previewing-video-assets}
 
-AEM Assets génère des aperçus pour les fichiers vidéo avec l’extension MP4.  Si le format du fichier n’est pas MP4, installez le pack FFmpeg pour générer un aperçu.  FFmpeg crée des rendus vidéo de type OGG et MP4. Vous pouvez prévisualiser ces rendus dans l’interface utilisateur d’AEM Assets.
+AEM Assets génère des prévisualisations pour les fichiers vidéo avec l’extension MP4. Si le format de la ressource n’est pas MP4, installez le pack FFmpeg pour générer une prévisualisation. FFmpeg crée des rendus vidéo de type OGG et MP4. Vous pouvez prévisualiser ces rendus dans l’interface utilisateur d’AEM Assets.
 
 1. Dans le dossier ou les sous-dossiers Ressources numériques, accédez à l’emplacement où vous souhaitez ajouter des ressources numériques.
-1. Pour télécharger le contenu, cliquez ou appuyez sur **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Fichiers]**. Vous pouvez également le faire glisser directement jusqu’à la zone des ressources. See [Uploading assets](managing-assets-touch-ui.md#uploading-assets) for details around the upload operation.
-1. To preview a video in the Card view, tap the **[!UICONTROL Play]** button on the video asset.
+1. Pour télécharger le contenu, cliquez ou appuyez sur **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Fichiers]**. Vous pouvez également le faire glisser directement jusqu’à la zone des ressources. Pour plus d’informations sur l’opération de téléchargement, voir [Téléchargement des ressources](managing-assets-touch-ui.md#uploading-assets).
+1. Pour prévisualiser une vidéo en mode Carte, appuyez sur le bouton **[!UICONTROL Lire]** du contenu vidéo.
 
    ![chlimage_1-201](assets/chlimage_1-201.png)
 
@@ -33,43 +36,43 @@ AEM Assets génère des aperçus pour les fichiers vidéo avec l’extension MP4
 
    ![chlimage_1-202](assets/chlimage_1-202.png)
 
-## Configuration to upload assets that are larger than 2 GB {#configuration-to-upload-video-assets-that-are-larger-than-gb}
+## Configuration pour télécharger des ressources d’une taille supérieure à 2 Go {#configuration-to-upload-video-assets-that-are-larger-than-gb}
 
-Par défaut, les ressources AEM ne vous permettent pas de télécharger des ressources supérieures à 2 Go en raison d’une taille de fichier limitée. However, you can overwrite this limit by going into CRXDE Lite and creating a node under the `/apps` directory. Le nœud doit comporter le même nom, la même structure de répertoire et des propriétés comparables.
+Par défaut, l’AEM Assets ne vous permet pas de télécharger des fichiers de plus de 2 Go en raison d’une taille de fichier limitée. Néanmoins, vous pouvez contourner cette limite en accédant à CRXDE Lite et en créant un nœud dans le répertoire `/apps`. Le nœud doit comporter le même nom, la même structure de répertoire et des propriétés comparables.
 
 Outre la configuration AEM Assets, modifiez les configurations suivantes pour télécharger des fichiers volumineux :
 
-* Augmentez le délai d’expiration du jeton. Reportez-vous à [!UICONTROL Adobe Granite CSRF Servlet] dans la console Web à `https://[aem_server]:[port]/system/console/configMgr`. Pour plus d’informations, voir Protection [CSRF](/help/sites-developing/csrf-protection.md).
-* Augmentez la configuration `receiveTimeout` du répartiteur. Pour plus d’informations, voir Configuration [du répartiteur](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager.
+* Augmentez le délai d’expiration du jeton. Voir Servlet [!UICONTROL CSRF] Granite Adobe dans la console Web à l’adresse `https://[aem_server]:[port]/system/console/configMgr`. Pour plus d’informations, voir Protection [](/help/sites-developing/csrf-protection.md)CSRF.
+* Augmentez la configuration `receiveTimeout` du répartiteur. Pour plus d’informations, voir [Configuration du répartiteur Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >
 >L’interface utilisateur d’AEM Classic ne dispose pas d’une limite de taille de fichier de deux gigaoctets. Par ailleurs, le processus de bout en bout pour des vidéos volumineuses n’est pas entièrement pris en charge.
 
-To configure a higher file size limit, perform the following steps in the `/apps` directory.
+Pour configurer une limite de taille de fichier supérieure, procédez comme suit dans le répertoire `/apps`.
 
-1. Dans AEM, appuyez sur **[!UICONTROL Outils > Général > CRXDE Lite]**.
+1. Dans AEM, appuyez sur **[!UICONTROL Outils > Général > CRXDE Lite]**.
 1. In the **[!UICONTROL CRXDE Lite]** page, in the directory window on the left, navigate to `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. To see the directory window, touch `>>` icon.
-1. From the toolbar, tap **[!UICONTROL Overlay Node]**. Vous pouvez également sélectionner le **[!UICONTROL nœud de recouvrement]** dans le menu contextuel.
+1. From the toolbar, tap **[!UICONTROL Overlay Node]**. Vous pouvez également sélectionner **[!UICONTROL Nœud de recouvrement]** dans le menu contextuel.
 1. Dans la boîte de dialogue **[!UICONTROL Nœud de recouvrement]**, appuyez sur **[!UICONTROL OK]**.
 
    ![chlimage_1-203](assets/chlimage_1-203.png)
 
-1. Actualisez le navigateur. Le noeud d’incrustation `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` est sélectionné.
-1. In the **[!UICONTROL Properties]** tab, enter the appropriate value in bytes to increase the size limit to the desired size. Par exemple, entrez la valeur suivante afin d’augmenter la taille maximale à 30 Go :
+1. Actualisez le navigateur. Le nœud de recouvrement `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` est sélectionné.
+1. Dans l’onglet **[!UICONTROL Propriétés]**, saisissez la valeur appropriée en octets pour définir la taille maximale souhaitée. Par exemple, entrez la valeur suivante afin d’augmenter la taille maximale à 30 Go :
 
    `{sizeLimit : "32212254720"}`
 
 1. From the toolbar, tap **[!UICONTROL Save All]**.
-1. Dans AEM, appuyez sur **[!UICONTROL Outils > Opérations > Console web]**.
+1. Dans AEM, appuyez sur **[!UICONTROL Outils > Opérations > Console web]**.
 1. On the **[!UICONTROL Adobe Experience Manager Web Console Bundles]** page, under the **[!UICONTROL Name]** column of the table, locate and tap **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
 1. In the **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** page, set the seconds for both **[!UICONTROL Default Timeout]** and **[!UICONTROL Max Timeout]** fields to `18000` (five hours).
-1. Appuyez sur **[!UICONTROL Enregistrer]**.
+1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
 1. Dans AEM, appuyez sur **[!UICONTROL Outils > Processus > Modèles]**.
 1. On the **[!UICONTROL Workflow Models]** page, select **[!UICONTROL Dynamic Media Encode Video]**, then tap **[!UICONTROL Edit]**.
 1. On the **[!UICONTROL Workflow]** page, double-tap the **[!UICONTROL Dynamic Media Video Service Process]** component.
 1. Dans la boîte de dialogue **[!UICONTROL Propriétés des étapes]**, sous l’onglet **[!UICONTROL Commun]**, développez **[!UICONTROL Paramètres avancés]**.
-1. Dans le champ **[!UICONTROL Délai d’expiration]**, spécifiez la valeur `18000`, puis appuyez sur **[!UICONTROL OK]** pour revenir à la page du processus **[!UICONTROL Vidéo de codage Dynamic Media]**.
+1. Dans le champ **[!UICONTROL Délai dépassé]**, spécifiez une valeur de `18000`, puis appuyez sur **[!UICONTROL OK]** pour revenir à la page de workflow **[!UICONTROL Vidéo de codage de média dynamique]**.
 1. Near the top of the page, below the **[!UICONTROL Dynamic Media Encode Video]** page title, tap **[!UICONTROL Save]**.
 
 ## Publication de ressources vidéo {#publishing-video-assets}
@@ -92,6 +95,6 @@ Une fois vos ressources vidéo publiées, vous pouvez les inclure dans une page 
 
    ![chlimage_1-205](assets/chlimage_1-205.png)
 
-1. Cliquez sur une annotation pour l’afficher dans le plan de montage chronologique. Tap **[!UICONTROL Delete]** to remove the annotation from the timeline.
+1. Cliquez sur une annotation pour la vue dans la chronologie. Tap **[!UICONTROL Delete]** to remove the annotation from the timeline.
 
    ![chlimage_1-206](assets/chlimage_1-206.png)
