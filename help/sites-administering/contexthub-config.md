@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 780d1a2d-38f1-4115-a9bd-f466aa3774dd
 translation-type: tm+mt
 source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+workflow-type: tm+mt
+source-wordcount: '1850'
+ht-degree: 73%
 
 ---
 
@@ -38,7 +41,7 @@ ou
 
 >[!NOTE]
 >
->[En raison de la restructuration du référentiel dans AEM 6.4,](/help/sites-deploying/repository-restructuring.md) l’emplacement des configurations ContextHub est passé de `/etc/cloudsettings` à :
+>[En raison de la restructuration du référentiel dans AEM 6.4,](/help/sites-deploying/repository-restructuring.md) l’emplacement des configurations ContextHub a été remplacé par `/etc/cloudsettings` :
 >
 > * `/libs/settings/cloudsettings`
 > * `/conf/global/settings/cloudsettings`
@@ -52,7 +55,7 @@ Configurez le service Adobe Granite ContextHub OSGi pour afficher ou masquer l�
 To configure the service you can either use the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or use a [JCR node in the repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
 
 * **Console web :** pour afficher l’IU, sélectionnez la propriété Afficher l’IU. Pour masquer l’IU, désélectionnez la propriété Masquer l’IU.
-* **** Noeud JCR : Pour afficher l’interface utilisateur, définissez la `com.adobe.granite.contexthub.show_ui` propriété booléenne sur `true`. To hide the UI, set the property to `false`.
+* **Noeud JCR :** Pour afficher l’interface utilisateur, définissez la `com.adobe.granite.contexthub.show_ui` propriété booléenne sur `true`. To hide the UI, set the property to `false`.
 
 Si l’IU ContextHub est activée, elle s’affiche uniquement sur les pages sur les instances de création AEM. L’IU ne s’affiche pas sur les pages des instances de publication.
 
@@ -98,14 +101,14 @@ Les propriétés du module d’IU incluent une configuration de détails où vou
 
 | Type de module | Description | Boutique |
 |---|---|---|
-| [contexthub.base](/help/sites-developing/ch-samplemodules.md#contexthub-base-ui-module-type) | Un type de module d’interface générique | Configuré dans les propriétés du module IU |
-| [contexthub.browserinfo](/help/sites-developing/ch-samplemodules.md#contexthub-browserinfo-ui-module-type) | Affiche des informations sur le navigateur | surferinfo |
+| [contexthub.base](/help/sites-developing/ch-samplemodules.md#contexthub-base-ui-module-type) | Un type de module d’interface générique | Configuré dans les propriétés du module d’interface utilisateur |
+| [contexthub.browserinfo](/help/sites-developing/ch-samplemodules.md#contexthub-browserinfo-ui-module-type) | Affiche des informations sur le navigateur. | surferinfo |
 | [contexthub.datetime](/help/sites-developing/ch-samplemodules.md#contexthub-datetime-ui-module-type) | Affiche les informations sur la date et l’heure | datetime |
-| [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) | Afficher le périphérique client | émulateurs |
+| [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) | Affichage du périphérique client | émulateurs |
 | [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Affiche la latitude et la longitude du client, ainsi que l’emplacement sur une carte. Vous permet de modifier l’emplacement. | géolocalisation |
 | [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) | Affiche l’orientation de l’écran du périphérique (paysage ou portrait) | émulateurs |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Affiche des statistiques sur les balises de page | tagcloud |
-| [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Affiche les informations de profil de l’utilisateur actuel, y compris la valeur authorizedID, displayName et familyName. Vous pouvez modifier la valeur du nom d’affichage (displayName) et du nom de famille (familyName). | son profil |
+| [granite.profil](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Affiche les informations sur le profil de l’utilisateur actuel, y compris les variables authorizedID, displayName et familyName. Vous pouvez modifier la valeur du nom d’affichage (displayName) et du nom de famille (familyName). | son profil |
 
 1. Sur le rail Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
 1. Cliquez ou appuyez sur le conteneur de configurations auquel vous voulez ajouter un module d’IU.
@@ -144,9 +147,9 @@ AEM fournit des exemples de candidats de magasins sur lesquels vous pouvez baser
 | [aem.resolvedsegments](/help/sites-developing/ch-samplestores.md#aem-resolvedsegments-sample-store-candidate) | Stocke les segments actuellement résolus. Écoute le service ContextHub SegmentManager pour mettre à jour automatiquement le magasin |
 | [contexthub.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) | Stocke la latitude et la longitude de l’emplacement du navigateur. |
 | [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) | Stocke la date, l’heure et la saison actuelles pour l’emplacement du navigateur. |
-| [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) | Définit les propriétés et les fonctionnalités d’un certain nombre de périphériques et détecte le périphérique client actuel. |
+| [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) | Définit les propriétés et les fonctionnalités d&#39;un certain nombre de périphériques et détecte le périphérique client actuel. |
 | [contexthub.generic-jsonp](/help/sites-developing/ch-samplestores.md#contexthub-generic-jsonp-sample-store-candidate) | Récupère et stocke les données d’un service JSONP. |
-| [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) | Stocke les données de profil de l’utilisateur actuel |
+| [granite.profil](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) | Stocke les données de profil pour l’utilisateur actuel. |
 | [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) | Stocke des informations sur le client, telles que les informations sur le périphérique, le type de navigateur et l’orientation de la fenêtre. |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) | Stocke les balises de page et le nombre de balises |
 
@@ -169,7 +172,7 @@ AEM fournit des exemples de candidats de magasins sur lesquels vous pouvez baser
 
 ## Exemple : en utilisant un service JSONP  {#example-using-a-jsonp-service}
 
-Cet exemple illustre comment configurer un magasin et afficher les données dans un module d’IU. Dans cet exemple, le service MD5 du site jsontest.com est utilisé comme source de données pour une boutique. Le service renvoie le code de hachage MD5 d’une chaîne donnée, au format JSON.
+Cet exemple illustre comment configurer un magasin et afficher les données dans un module d’IU. Dans cet exemple, le service MD5 du site jsontest.com est utilisé comme source de données pour un magasin. Le service renvoie le code de hachage MD5 d’une chaîne donnée, au format JSON.
 
 A contexthub.generic-jsonp store is configured so that it stores data for the service call `https://md5.jsontest.com/?text=%22text%20to%20md5%22`. Le service renvoie les données suivantes qui s’affichent dans un module d’IU :
 
@@ -188,10 +191,10 @@ The [init](/help/sites-developing/contexthub-api.md#init-name-config) function o
 
 Pour enregistrer les données à partir du service MD5 du site jsontest.com, suivez la procédure décrite dans [Création d’un magasin ContextHub](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store) à l’aide des propriétés suivantes :
 
-* **** Titre de la configuration : md5
-* **** Type de magasin :contexthub.generic-jsonp
+* **Titre de la configuration :** md5
+* **Type de stockage :** contexthub.generic-jsonp
 * **Obligatoire :** sélectionnez cette option.
-* **** Activé : Sélectionner
+* **Activé :** Sélectionner
 * **Configuration des détails (JSON):**
 
    ```xml
@@ -219,7 +222,7 @@ Ajoutez un module d’IU à la barre d’outils ContextHub pour afficher les don
 Utilisez la procédure décrite dans [Ajout d’un module d’IU](/help/sites-administering/contexthub-config.md#adding-a-ui-module) pour ajouter le module d’IU à un mode d’IU existant, comme l’exemple de mode d’IU Perona. Pour le module d’IU, utilisez les valeurs de propriétés suivantes :
 
 * **Titre du module d’IU :** MD5.
-* **** Type de module :contexthub.base
+* **Type de module :** contexthub.base
 * **Configuration des détails (JSON):**
 
    ```xml
@@ -254,13 +257,13 @@ Use CRXDE Lite to set the property `debug` to **true** under:
 
 >[!NOTE]
 >
->Pour les configurations ContextHub qui se trouvent toujours sous leurs chemins hérités, l’emplacement de définition de `debug property` est `/libs/settings/cloudsettings/legacy/contexthub`.
+>Pour les configurations ContextHub toujours situées sous leurs chemins d’accès hérités, l’emplacement où définir le `debug property` est est `/libs/settings/cloudsettings/legacy/contexthub`.
 
 ### Mode silencieux {#silent-mode}
 
 Le mode silencieux supprime toutes les informations de débogage. Contrairement à l’option de débogage normal, qui peut être définie séparément pour chaque configuration ContextHub, le mode silencieux est un paramètre global qui prend la priorité sur tout paramètre de débogage au niveau de la configuration de ContextHub.
 
-Cela est utile pour votre instance de publication, où vous ne souhaitez aucune information de débogage. Puisqu’il s’agit d’un paramètre global, il est activé via OSGi.
+Cela s’avère utile pour votre instance de publication, où vous ne souhaitez aucune information de débogage. Puisqu’il s’agit d’un paramètre global, il est activé via OSGi.
 
 1. Open the **Adobe Experience Manager Web Console Configuration** at `http://<host>:<port>/system/console/configMgr`
 1. Search for **Adobe Granite ContextHub**
