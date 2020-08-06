@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 95%
 
 ---
 
@@ -46,7 +49,7 @@ Ces conventions sont mises en place à différents niveaux :
 
 ### Gestionnaire de pages {#page-manager}
 
-[PageManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) fournit des méthodes pour les opérations au niveau de la page, sur la base de [JCRUtil](#jcr-utilities).
+[PageManager](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) fournit des méthodes pour les opérations au niveau de la page, sur la base de [JCRUtil](#jcr-utilities).
 
 ### Interface utilisateur standard {#standard-ui}
 
