@@ -39,7 +39,7 @@ Vous créez ou modifiez un paramètre de type de fichier pour définir la maniè
 
 1. Dans Administration Console, cliquez sur **[!UICONTROL Services]** >**[!UICONTROL PDF Generator]** > **[!UICONTROL Paramètres de type de fichier]**.
 1. Cliquez sur Créer ou sur le nom d’un paramètre.
-1. Dans la zone Extensions de nom de fichier, saisissez les extensions de nom de fichier séparées par des virgules pour les types de fichier pris en charge par cette application. N’insérez pas de point avant les extensions ou d’espace entre celles-ci. La valeur par défaut est `bmp,gif,jpeg,jpg,tif,tiff,png`.
+1. Dans la zone Extensions de nom de fichier, saisissez les extensions de nom de fichier séparées par des virgules pour les types de fichier pris en charge par cette application. N’insérez pas de point avant les extensions ou d’espace entre celles-ci. La valeur par défaut est de `bmp,gif,jpeg,jpg,tif,tiff,png`.
 1. (Facultatif) Pour utiliser la reconnaissance de code optique de texte dans des graphiques ou des images, sélectionnez Utiliser la reconnaissance optique des caractères et définissez les options suivantes :
 
 **Langue principale  de reconnaissance optique des caractères :** définit la langue à utiliser par le moteur de reconnaissance optique des caractères pour identifier les caractères. La valeur par défaut est Anglais (Etats-Unis).
@@ -94,7 +94,7 @@ Vous pouvez modifier la valeur par défaut des paramètres Adobe PDF, des param�
 1. Dans la page **[!UICONTROL Paramètres Adobe PDF]**, **[!UICONTROL Paramètres de type de fichier]** ou **[!UICONTROL Paramètres de protection]**, cliquez sur **[!UICONTROL Définir les paramètres par défaut]**.
 1. Sélectionnez les paramètres par défaut souhaités. Dans la page Définir les paramètres par défaut, un ou plusieurs des paramètres suivants sont disponibles :
 
-   **[!UICONTROL Paramètre]** PDF Adobe : La valeur par défaut d’origine est Standard (Acrobat 6).
+   **[!UICONTROL Paramètre]** Adobe PDF : La valeur par défaut d’origine est Standard (Acrobat 6).
 
    **[!UICONTROL Paramètres]** de sécurité : La valeur par défaut d’origine est Aucune sécurité (Acrobat 5).
 
@@ -126,7 +126,7 @@ Les options suivantes permettent de déterminer comment les fichiers image sont 
 
 ***Remarque ** : la fonction OCR pour les fichiers PDF (PDF indexables) est uniquement prise en charge sous Microsoft Windows.*
 
-**Langue principale de reconnaissance optique des caractères :** Indique la langue à utiliser par le moteur de reconnaissance optique des caractères pour identifier les caractères.
+**Langue Principale de la reconnaissance optique des caractères :** Indique la langue à utiliser par le moteur de reconnaissance optique des caractères pour identifier les caractères.
 
 **Style de sortie PDF :** Détermine le type de fichier PDF à produire. Tous les formats appliquent la reconnaissance optique de caractères, ainsi que la reconnaissance de polices et de pages, aux images textuelles et les convertissent en texte normal.
 
@@ -186,7 +186,7 @@ Activez ces options pour spécifier le mode de conversion des pages HTML. Les va
 
 Ces options permettent de définir le mode d’affichage du contenu et des pages du document PDF et de spécifier le niveau de zoom :
 
-**Afficher :** Sélectionnez les volets à ouvrir dans Acrobat à l’ouverture du document PDF.
+**Afficher :** Sélectionnez les volets à ouvrir en Acrobat à l’ouverture du document PDF.
 
 **Mise en page :** Sélectionnez le type de mise en page du document PDF.
 
@@ -408,11 +408,11 @@ Ces options permettent de déterminer comment les fichiers Microsoft Excel sont
 
 **Essayer OpenOffice comme convertisseur** de secours : Lorsque cette option est sélectionnée et qu’une conversion utilisant Microsoft Excel échoue ou atteint le délai d’expiration spécifié, PDF Generator tente d’effectuer la conversion en utilisant OpenOffice. Si la méthode avec OpenOffice échoue ou atteint le délai d’expiration spécifié, une exception est consignée dans le fichier journal.
 
-**Extensions de nom de fichier **: permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est `xls,xlsx`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
+**Extensions de nom de fichier **: permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `xls,xlsx`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
 
 **Créer un fichier compatible avec le format PDF/A-1a **: rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RVB Adobe PDF.
 
-**Ajouter des signets au PDF** Adobe : permet de convertir les noms de feuille de calcul Excel en signets. Cette option est sélectionnée par défaut.
+**Ajouter des signets à Adobe PDF**: permet de convertir les noms de feuille de calcul Excel en signets. Cette option est sélectionnée par défaut.
 
 **Ajuster la feuille de calcul à une seule page**: Réduit la taille du texte pour qu’il s’adapte à la feuille de calcul sur une seule page.
 
@@ -424,9 +424,9 @@ Ces options permettent de déterminer comment les fichiers Microsoft Excel sont
 
 **Ajouter des liens à Adobe PDF **: permet de convertir les liens hypertexte du fichier source en liens hypertexte dans le document PDF.
 
-**Joindre le fichier source au PDF** Adobe : Lorsque cette option est sélectionnée, la feuille de calcul Excel d’origine est insérée en tant que pièce jointe dans le document PDF généré.
+**Joindre le fichier source à Adobe PDF**: Lorsque cette option est sélectionnée, la feuille de calcul Excel d’origine est insérée en tant que pièce jointe dans le document PDF généré.
 
-**Activer l’accessibilité et la redistribution avec un PDF** Adobe balisé : Incorpore des balises dans le document PDF pour activer l’accessibilité et la redistribution.
+**Activer l’accessibilité et Reflow avec un Adobe PDF** balisé : Incorpore des balises dans le document PDF pour activer l’accessibilité et la redistribution.
 
 **Liste Des Compléments Excel À Charger**: Par défaut (pour des raisons de sécurité), aucun complément Excel n’est exécuté lorsqu’un fichier Excel est converti au format PDF. Pour permettre l’exécution de certains compléments Excel au moment de la conversion, fournissez une liste séparée par des virgules indiquant le nom de ces compléments.
 
@@ -470,7 +470,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft PowerPoint
 
 Ces options permettent de déterminer comment les fichiers Microsoft Project sont convertis. Pour plus d’informations sur l’accès à ces options, voir [Création ou modification de paramètres de type de fichier](#create-or-edit-file-type-settings).
 
-1. **[!UICONTROL Extensions de nom de fichier :]** Indique les extensions de nom de fichier pour les types de fichiers, séparées par des virgules, qui sont acceptées pour cette application. La valeur par défaut est `mpp`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
+1. **[!UICONTROL Extensions de nom de fichier :]** Indique les extensions de nom de fichier pour les types de fichiers, séparées par des virgules, qui sont acceptées pour cette application. La valeur par défaut est de `mpp`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
 
 1. **[!UICONTROL Convertir les informations sur le document ]**: permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, le sujet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut.
 1. **[!UICONTROL Joindre le fichier source au fichier Adobe PDF ]**: permet d’ajouter le fichier source au fichier PDF sous forme de pièce jointe. 
@@ -483,7 +483,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft Word sont 
 
 **[!UICONTROL Essayer OpenOffice comme convertisseur de secours]** : lorsque cette option est sélectionnée et qu’une conversion utilisant Microsoft Word échoue ou atteint le délai d’expiration spécifié, PDF Generator tente d’effectuer la conversion en utilisant OpenOffice. Si la méthode avec OpenOffice échoue ou atteint le délai d’expiration spécifié, une exception est consignée dans le fichier journal.
 
-**[!UICONTROL Extensions de nom de fichier ]**: permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est `doc,docx,rtf,txt`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
+**[!UICONTROL Extensions de nom de fichier ]**: permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `doc,docx,rtf,txt`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
 
 **[!UICONTROL Convertir les informations sur le document ]**: permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, le sujet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut.
 
@@ -523,33 +523,33 @@ Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal 
 
 **Convertir les informations sur le document **: permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, le sujet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut. Cette option est activée par défaut.
 
-**Ajouter des liens vers le PDF** Adobe : Conserve tous les liens. Cette option est sélectionnée par défaut.
+**Ajouter des liens vers Adobe PDF**: Conserve tous les liens. Cette option est sélectionnée par défaut.
 
 **Ajouter des signets à Adobe PDF **: permet de convertir des titres en signets.  Cette option est sélectionnée par défaut.
 
 **Joindre le fichier source au fichier Adobe PDF **: permet d’ajouter le fichier source au fichier PDF sous forme de pièce jointe. 
 
-**Toujours aplatir les calques dans un PDF** Adobe : Aplatit tous les calques Visio.
+**Toujours aplatir les calques en Adobe PDF**: Aplatit tous les calques Visio.
 
 **Convertir toutes les pages**: permet de convertir toutes les pages du fichier Visio.
 
 **Ouvrir le panneau Calques lors de l’affichage dans Adobe Acrobat** : si les calques Visio ne sont pas aplatis, permet d’ouvrir une fenêtre dans laquelle vous pouvez préciser les calques qui sont conservés dans le fichier PDF lorsqu’ils sont ouverts dans Acrobat. Cette option est sélectionnée par défaut.
 
-**Créer un fichier** compatible avec le format PDF/A-1b : Force l’utilisation du paramètre PDF Adobe PDF/A-1b:2005 (RVB).
+**Créer un fichier** compatible avec le format PDF/A-1b : Force l’utilisation du paramètre Adobe PDF PDF/A-1b:2005 (RVB).
 
-**Convertir les commentaires en commentaires** PDF Adobe : permet de convertir des notes Visio en commentaires PDF.
+**Convertir les commentaires en commentaires** Adobe PDF : permet de convertir des notes Visio en commentaires PDF.
 
 ## Paramètres de Microsoft Publisher (Windows uniquement) {#microsoft-publisher-settings-windows-only}
 
 Ces options permettent de déterminer comment les fichiers Microsoft Publisher sont convertis. Pour plus d’informations sur l’accès à ces options, voir [Création ou modification de paramètres de type de fichier](#create-or-edit-file-type-settings).
 
-**[!UICONTROL Extensions de nom de fichier ]**: permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est `pub`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
+**[!UICONTROL Extensions de nom de fichier ]**: permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `pub`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
 
 ## Paramètres d’AutoCAD (Windows uniquement) {#autocad-settings-windows-only}
 
 Ces options permettent de déterminer comment les fichiers AutoCAD sont convertis. Pour plus d’informations sur l’accès à ces options, voir [Création ou modification de paramètres de type de fichier](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**[!UICONTROL Extensions de nom de fichier ]**: permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est `dwg`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
+**[!UICONTROL Extensions de nom de fichier ]**: permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `dwg`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
 
 **[!UICONTROL Convertir les informations sur le document ]**: permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, le sujet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut.
 
@@ -583,7 +583,7 @@ Ces options permettent de déterminer comment les fichiers OpenOffice sont conve
 
 **Essayer PDFMaker comme convertisseur de secours **: lorsque cette option est sélectionnée et qu’une conversion utilisant OpenOffice échoue ou atteint le délai d’expiration spécifié, PDF Generator tente d’effectuer la conversion en utilisant PDFMaker. Si la méthode avec PDFMaker échoue ou atteint le délai d’expiration spécifié, une exception est consignée dans le fichier journal.
 
-**Extensions de nom de fichier **: permet de définir les extensions de nom de fichier acceptées par cette application en les séparant par des virgules. La valeur par défaut est `odt,odp,ods,odg,odf,sxw,sxi,sxd`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
+**Extensions de nom de fichier **: permet de définir les extensions de nom de fichier acceptées par cette application en les séparant par des virgules. La valeur par défaut est de `odt,odp,ods,odg,odf,sxw,sxi,sxd`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
 
 **Plage**: permet de convertir toutes les pages ou de définir certaines pages ou une plage de pages. Si aucune plage n’est définie, toutes les pages sont converties. Pour exporter une plage de pages, utilisez le format 3-6. Pour exporter une page à la fois, utilisez le format 7;9;11. Vous pouvez exporter plusieurs plages de pages et des pages isolées à l’aide d’un format de type 3-6;8;10;12.
 
