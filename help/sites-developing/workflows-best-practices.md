@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+workflow-type: tm+mt
+source-wordcount: '1922'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +26,7 @@ Ils représentent généralement une bonne partie du traitement effectué dans u
 
 Il est donc vivement conseillé de planifier soigneusement vos implémentations de workflow.
 
-## Configuration{#configuration}
+## Configuration {#configuration}
 
 Lors de la configuration des processus de workflow (qu’ils soient personnalisés et/ou standard), vous devez tenir compte de plusieurs éléments.
 
@@ -106,6 +109,7 @@ Les modèles de workflow sont stockés dans le référentiel en fonction de leur
    >
    >* placer vos modèles de workflow personnalisés dans ce dossier,
    >* edit anything in `/libs`
+
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
@@ -141,6 +145,7 @@ Les définitions du lanceur de workflow sont également stockées dans le réfé
    >
    >* placer vos lanceurs de workflow personnalisés dans ce dossier,
    >* edit anything in `/libs`
+
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
@@ -172,6 +177,7 @@ Les scripts de workflow sont également stockés dans le référentiel en foncti
    >
    >* placer vos scripts de workflow personnalisés dans ce dossier,
    >* edit anything in `/libs`
+
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
@@ -199,6 +205,7 @@ Les notifications de workflow sont également stockées dans le référentiel en
    >
    >* placer vos définitions de notification de workflow personnalisées dans ce dossier,
    >* edit anything in `/libs`
+
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
