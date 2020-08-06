@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 0452062d-cf85-4009-a0a5-a1e891192ea8
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '966'
+ht-degree: 92%
 
 ---
 
@@ -30,7 +33,7 @@ Accédez à la page du portail des formulaires publiés. For more information ab
 
 Le composant Search and Lister de Forms Portal affiche les formulaires disponibles sur l’instance de publication du serveur AEM. Cette liste comprend tous les formulaires ou les formulaires définis dans le filtre au moment de la création de la page Forms Portal. Une page de Forms Portal est similaire à celle illustrée à la figure suivante :
 
-![](assets/forms-portal-page.png) Exemple de page Forms Portal **** Figure : *Exemple de page Forms Portal*
+![Exemple de page du portail de formulaires ](assets/forms-portal-page.png)**Figure :** *Exemple de page du portail de formulaires*
 
 ### Search and Lister {#search-and-lister}
 
@@ -51,7 +54,7 @@ Vous pouvez rechercher des formulaires dans la page Forms Portal à l’aide des
 
 La recherche de texte intégral permet de rechercher et de répertorier les formulaires avec des mots-clés spécifiques.
 
-![](assets/search-panel.png) Boîte de dialogue **de recherche avancée** Figure : *Boîte de dialogue de recherche avancée*
+![Boîte de dialogue](assets/search-panel.png)**de recherche avancée Figure :** *Boîte de dialogue de recherche avancée*
 
 La recherche avancée vous permet de rechercher des formulaires en fonction de propriétés de formulaire spécifiques. Elle fournit des résultats plus précis que la recherche de texte intégral. La recherche avancée comprend une recherche basée sur des balises, des propriétés (telles que l’auteur, la description et le titre), la date de modification et le texte intégral.
 
@@ -59,7 +62,7 @@ Le composant Lister affiche des formulaires en fonction de paramètres de recher
 
 ### Remplissage d’un formulaire {#filling-a-form}
 
-![](assets/filling_a_form.png) Exemple de formulaire **adaptatif** Figure : *Un exemple de formulaire adaptatif*
+![Exemple de formulaire](assets/filling_a_form.png)**adaptatif Figure :** *Exemple de formulaire adaptatif*
 
 L’accès aux formulaires peut s’effectuer par le biais du lien fourni avec celui-ci dans le composant Search and Lister de la page.
 
@@ -75,9 +78,9 @@ Une fois le formulaire complété, l’utilisateur l’envoie en cliquant sur le
 
 >[!NOTE]
 >
->Les formulaires envoyés apparaissent dans l’onglet Formulaires envoyés uniquement si l’action d’envoi du formulaire adaptatif est configurée comme Action d’envoi du portail de formulaires. Pour plus d’informations sur les actions d’envoi, reportez-vous à la section [Configuration de l’action Envoyer](/help/forms/using/configuring-submit-actions.md).
+>Les formulaires envoyés apparaissent dans l’onglet Forms envoyé uniquement si l’action d’envoi du formulaire adaptatif est configurée comme Action d’envoi du portail Forms. Pour plus d’informations sur les actions d’envoi, reportez-vous à la section [Configuration de l’action Envoyer](/help/forms/using/configuring-submit-actions.md).
 
-![](assets/draft-submission.png) Composant **Brouillons et envois** Figure : Composant *Brouillons et envois*
+![Composant](assets/draft-submission.png)**Drafts &amp; Submissions Figure :** *Composant Drafts &amp; Submissions*
 
 ## Démarrage d’un nouveau formulaire avec des données de formulaire envoyé {#start-a-new-form-using-submitted-form-data}
 
@@ -85,6 +88,6 @@ Il existe des formulaires que vous devez remplir et envoyer très souvent. Par e
 
 AEM Forms peut vous aider à optimiser l’opération de remplissage du formulaire et à réduire considérablement le temps de remplissage et d’envoi d’un formulaire déjà envoyé au préalable. Les utilisateurs finaux peuvent démarrer un nouveau formulaire avec des données d’un formulaire qui a déjà été envoyé. Cette fonctionnalité est intégrée dans le composant [Drafts and Submissions](/help/forms/using/draft-submission-component.md). Lorsque vous ajoutez un composant Drafts and Submission à votre page Forms Portal et que vous le publiez, les utilisateurs finaux ont une option dans les onglets Formulaires envoyés et Brouillons de formulaires pour démarrer un nouveau formulaire en utilisant des données d’un formulaire déjà envoyé. L’image suivante illustre cette option.
 
-![start-a-new-form](assets/start-a-new-form.png)
+![début-un-nouveau-formulaire](assets/start-a-new-form.png)
 
 Lorsque vous cliquez sur le bouton pour commencer un nouveau formulaire, il ouvre un formulaire avec les données du formulaire envoyé correspondant. Vous pouvez maintenant revoir et mettre à jour les informations, selon les besoins, puis envoyer le formulaire.
