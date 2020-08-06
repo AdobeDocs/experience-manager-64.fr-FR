@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9086b14c-cd75-4fc9-928e-81c8ad6b6292
 translation-type: tm+mt
 source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +24,9 @@ Cette section vous donne un aperçu des tâches principales que vous exécuterez
 
 Elle traite des sujets suivants :
 
-* [Prise en main](#getting-started) - Détail de la séquence de base des événements dont vous avez besoin pour créer et publier votre première page.
+* [Prise en main](#getting-started) - Détail de la séquence de événements de base dont vous avez besoin pour créer et publier votre première page.
 
-* [Autres actions](#further-actions) : suivez les nombreuses autres actions que vous pouvez utiliser lors de la création.
+* [Autres actions](#further-actions) - Suivez les nombreuses autres actions que vous pouvez utiliser lors de la création.
 
 ## Présentation {#overview}
 
