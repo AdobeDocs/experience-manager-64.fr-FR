@@ -11,6 +11,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
 translation-type: tm+mt
 source-git-commit: 9a2ebded0068213903020d2c5633a05b6ffb07ef
+workflow-type: tm+mt
+source-wordcount: '387'
+ht-degree: 87%
 
 ---
 
@@ -49,7 +52,7 @@ Ensure that you have [AEM Compatibility package](/help/sites-deploying/backward-
 
 ## Actifs devenus compatibles avec AEM Forms 6.4 après l’installation du package de compatibilité {#assetsmadecompatible}
 
-En installant le package de compatibilité, vous pouvez rendre les actifs et modèles suivants compatibles avec AEM Forms 6.4 :
+En installant le package Compatibilité, vous pouvez rendre les actifs et modèles suivants compatibles avec AEM Forms 6.4 :
 
 * Actifs de Correspondence Management d’AEM 6.3 et versions antérieures
 
