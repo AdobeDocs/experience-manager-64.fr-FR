@@ -8,6 +8,9 @@ topic-tags: publish
 discoiquuid: c447fc39-c0f3-4932-ac6c-465d1fb83f8c
 translation-type: tm+mt
 source-git-commit: 8b5a3e1f6616c3a07da91e4347596961ac4a8e22
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +45,7 @@ AEM Forms fournit un modèle prêt à l’emploi pour les notifications électro
 
    Un modèle de notification électronique est un [courrier électronique HTML](https://en.wikipedia.org/wiki/HTML_email). Vous pouvez remplacer le code HTML existant par votre code personnalisé pour modifier l’aspect du modèle.
 
-1. Enregistrez le fichier. Désormais, le modèle personnalisé est opérationnel.
+1. Enregistrez le fichier . Désormais, le modèle personnalisé est opérationnel.
 
 ## Création d’un modèle de courrier électronique {#create-an-email-template}
 
@@ -58,7 +61,7 @@ AEM Forms fournit un modèle prêt à l’emploi pour les notifications électro
 
    Un modèle de notification électronique est un [courrier électronique HTML](https://en.wikipedia.org/wiki/HTML_email). Vous pouvez ajouter du code HTML personnalisé au fichier pour créer un nouveau modèle.
 
-1. Enregistrez le fichier. Le modèle est prêt à être utilisé dans l’étape Affecter une tâche.
+1. Enregistrez le fichier . Le modèle est prêt à être utilisé dans l’étape Affecter une tâche.
 
 ## Utilisation d’un modèle de courrier électronique dans une étape Affecter une tâche {#use-an-email-template-in-an-assign-task-step}
 
