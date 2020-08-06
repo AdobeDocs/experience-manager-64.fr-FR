@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 1a6431f19b7eae73150ea3b0bfa00a719e155c41
+source-git-commit: f318a14b3d0e4abf25a73c0f19afdef969658b9c
 workflow-type: tm+mt
 source-wordcount: '21624'
 ht-degree: 24%
@@ -409,7 +409,7 @@ Voici quelques-uns des points saillants de l&#39;AEM 6.4.6.0 :
 * Erreur d’analyse lors de l’ouverture d’un fragment de contenu contenant des caractères dollar ($) et une accolade ouverte ({) l’un après l’autre. Correctif pour CQ-4270266
 * VersionPreviewServlet échoue dans NullPointerException lors de l’affichage d’une version d’un fragment d’expérience dans la chronologie. NPR-30074 : correctif pour CQ-4271881
 * Impossible de verrouiller les fragments de contenu par l&#39;intermédiaire de la fonction d&#39;archivage. NPR-29923 : correctif pour CQ-4258785
-* Échec de la vérification de la signature dans le gestionnaire d&#39;authentification SAML. NPR-30379 : Demande de report pour GRANITE-26567.
+* Échec de la vérification de la signature dans le gestionnaire d&#39;authentification SAML. NPR-30379 : Demande de report pour GRANITE-26567
 
 **Réplication**
 
@@ -2026,7 +2026,7 @@ Les principaux aspects pour AEM Forms sont les suivants :
 **Correspondence Management**
 
 * Légendes supprimées du modèle de lettre après modification d’un actif de texte contenant des espaces réservés. NPR-24196
-* Le fichier XDP, lorsqu’il est téléchargé et utilisé comme mise en page pour les modèles de lettre, ne parvient pas à prévisualisation ni à modifier les modèles. NPR-24143 : correctif pour CQ-4244407
+* Le fichier XDP, lorsqu’il est téléchargé et utilisé comme mise en page pour les modèles de lettre, ne parvient pas à prévisualisation ou à modifier les modèles. NPR-24143 : correctif pour CQ-4244407
 * La sélection d’affectation est sélectionnée par défaut dans le fragment de liste. Correctif pour CQ-4240097
 * Éditeur de conditions : l’évaluation de plusieurs résultats doit être activée par défaut. Correctif pour CQ-4240096
 * L&#39;image supprimée de la Liste affiche toujours l&#39;image en prévisualisation. Correctif pour CQ-4239909
