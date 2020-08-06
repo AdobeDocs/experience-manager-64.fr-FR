@@ -166,7 +166,7 @@ Le script de validation de valeur est déclenché dans les cas suivants :
 
 >[!NOTE]
 >
->Vous pouvez désactiver l’exécution du script de validation de valeur lorsque la valeur d’un champ est changée par programmation. Pour ce faire, accédez à Version des formulaires `https://[server]:[port]/system/console/configMgr and change` adaptatifs pour la compatibilité **avec** AEM Forms 6.1 ****. Par la suite, le script de validation de valeur est exécuté uniquement lorsque l’utilisateur change la valeur à partir de l’interface utilisateur.
+>Vous pouvez désactiver l’exécution du script de validation de valeur lorsque la valeur d’un champ est changée par programmation. Pour ce faire, accédez à `https://[server]:[port]/system/console/configMgr and change` Adaptive Forms Version for Compatibility **to** AEM Forms 6.1 ****. Par la suite, le script de validation de valeur est exécuté uniquement lorsque l’utilisateur change la valeur à partir de l’interface utilisateur.
 
 ### Expression de visibilité {#visibility-expression}
 
@@ -255,7 +255,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 >[!NOTE]
 >
->Dans AEM, il est recommandé d’écrire du code dans une bibliothèque cliente et de l’inclure dans votre page (header.jsp ou footer.jsp de la page).
+>En AEM, il est recommandé d’écrire du code dans une bibliothèque cliente et de l’inclure dans votre page (header.jsp ou footer.jsp de la page).
 
 Pour utiliser GuideBridge après l’initialisation du formulaire (l’événement `bridgeInitializeComplete` est distribué), obtenez l’instance GuideBridge à l’aide de `window.guideBridge`. Vous pouvez vérifier l’état d’initialisation de GuideBridge à l’aide de l’API `guideBride.isConnected`.
 
