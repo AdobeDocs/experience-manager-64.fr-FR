@@ -33,7 +33,7 @@ En résumé, la boîte de réception vous permet de créer une nouvelle applicat
 
 ## Création d’une application {#create-application}
 
-1. Accédez à la boîte de réception AEM à `https://[server]:[port]/aem/inbox`.
+1. Accédez à AEM boîte de réception à `https://[server]:[port]/aem/inbox`.
 1. In the Inbox UI, tap **[!UICONTROL Create > Application]**. La page Sélectionner une application s’affiche.
 1. Select an application and click **[!UICONTROL Create]**. Le formulaire adaptatif associé à l’application s’ouvre. Fill up the forms and tap **[!UICONTROL Submit]**. Cette action lance le processus associé et crée une tâche dans la boîte de réception de la personne désignée.
 
