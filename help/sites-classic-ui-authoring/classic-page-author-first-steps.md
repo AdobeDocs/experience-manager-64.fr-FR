@@ -11,6 +11,9 @@ topic-tags: page-authoring
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 translation-type: tm+mt
 source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +24,9 @@ Cette section vous donne un aperçu des tâches principales que vous exécuterez
 
 Elle traite des sujets suivants :
 
-* [Prise en main](#getting-started):Détail de la séquence de base des événements dont vous avez besoin pour créer et publier votre première page.
+* [Prise en main](#getting-started): Détail de la séquence de base des événements dont vous avez besoin pour créer et publier votre première page.
 
-* [Autres actions](#further-actions):Suivez les nombreuses autres actions que vous pouvez utiliser lors de la création.
+* [Autres actions](#further-actions): Suivez les nombreuses autres actions que vous pouvez utiliser lors de la création.
 
 ## Prise en main {#getting-started}
 
@@ -52,7 +55,7 @@ Si votre instance comprend déjà des pages ou si vous venez d’en créer une, 
 * [Couper/Copier/Coller un composant](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
 * [Annulation et rétablissement des modifications de page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
 * [Utilisation du mode Aperçu](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (pour avoir un aperçu du contenu avant publication)
-* [Verrouillage d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
+* [Verrouillage d’une page   ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Déverrouillage d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
 ### Publication d’une page {#publishing-a-page}
