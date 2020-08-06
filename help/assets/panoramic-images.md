@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 48%
 
 ---
 
@@ -33,17 +36,17 @@ Pour qu’une ressource téléchargée soit une image panoramique sphérique uti
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-* Avec les mots-clés `equirectangular`, ou `spherical`et `panorama`, ou `spherical` et `panoramic`. Voir [Utilisation des balises](/help/sites-authoring/tags.md).
+* Avec les mots-clés `equirectangular`, ou `spherical` et `panorama`, ou `spherical` et `panoramic`. Voir [Utilisation des balises](/help/sites-authoring/tags.md).
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the **[!UICONTROL Panoramic Media]** component.
+Les critères de rapport d’aspect et de mots-clés s’appliquent tous deux aux ressources panoramiques pour la page des détails des ressources et le composant  **[!UICONTROL Média panoramique]**.
 
-Pour télécharger des ressources à utiliser avec la visionneuse d’images panoramiques, voir [Téléchargement de ressources](managing-assets-touch-ui.md#uploading-assets).
+Pour télécharger des ressources à utiliser avec la visionneuse d’images panoramiques, consultez [Téléchargement de ressources](managing-assets-touch-ui.md#uploading-assets).
 
-## Configuration de Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
+## Configuring Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
-Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM, vous devez synchroniser les paramètres prédéfinis de la visionneuse d’images panoramiques avec les métadonnées spécifiques à Dynamic Media Classic et Dynamic Media Classic afin que les paramètres prédéfinis de la visionneuse soient mis à jour dans le JCR. Pour ce faire, configurez Dynamic Media Classic de la manière suivante :
+Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM, vous devez synchroniser les paramètres prédéfinis de la visionneuse d’images panoramiques avec les métadonnées propres à Dynamic Media Classic et Dynamic Media Classic afin que les paramètres prédéfinis de la visionneuse soient mis à jour dans le JCR. Pour ce faire, configurez Dynamic Media Classic de la manière suivante :
 
-1. [Connectez-vous à votre instance de Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) pour chaque compte d’entreprise.
+1. [Connectez-vous à votre instance de Dynamic Media Classic](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) pour chaque compte de société.
 
 1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images]**.
 1. On the **[!UICONTROL Image Server Publish]** page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.
@@ -51,7 +54,7 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM
 1. On the same **[!UICONTROL Image Server Publish]** page, locate the heading **[!UICONTROL Request Attributes]**.
 1. Under the **[!UICONTROL Request Attributes]** heading, locate **[!UICONTROL Reply Image Size Limit]**. Then, in the associated **[!UICONTROL Width]** and **[!UICONTROL Height]** fields, increase the maximum allowable image size for panoramic images.
 
-   Dynamic Media Classic est limité à 25 000 000 pixels. La taille maximale autorisée pour les images avec un rapport L/H de 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
+   Contenu multimédia dynamique Classic est limité à 25 000 000 pixels. La taille maximale autorisée pour les images de rapport 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
 
    >[!NOTE]
    >
@@ -61,6 +64,7 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM
 
    * Set **[!UICONTROL Request Obfuscation Mode]** to **[!UICONTROL Disabled]**.
    * Set **[!UICONTROL Request Locking Mode]** to **[!UICONTROL Disabled]**.
+
    These settings are necessary for using the **[!UICONTROL Panoramic Media]** component in AEM.
 
 1. At the bottom of the **[!UICONTROL Image Server Publish]** page, on the left side, tap **[!UICONTROL Save]**.
@@ -81,6 +85,6 @@ If you dropped an image into the **[!UICONTROL Panoramic Media]** component in y
 
 Voir aussi [Aperçu des ressources](previewing-assets.md).
 
-## Publication des images panoramiques {#publishing-panoramic-images}
+## Publication des images panoramiques   {#publishing-panoramic-images}
 
 Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
