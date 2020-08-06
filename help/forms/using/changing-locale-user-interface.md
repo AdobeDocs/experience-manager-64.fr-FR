@@ -20,7 +20,7 @@ ht-degree: 59%
 
 # Modification des paramètres régionaux de l’interface utilisateur de l’espace de travail AEM Forms {#changing-the-locale-of-aem-forms-workspace-user-interface}
 
-L’espace de travail AEM Forms fournit une prise en charge immédiate des langues allemande, anglaise, française et japonaise. Il permet également de localiser l’interface utilisateur de l’espace de travail AEM Forms dans n’importe quelle autre langue.
+L’espace de travail AEM Forms offre une prise en charge immédiate de l’anglais, du français, de l’allemand et du japonais. Il permet également de localiser l’interface utilisateur de l’espace de travail AEM Forms dans n’importe quelle autre langue.
 
 Pour localiser l’interface utilisateur de l’espace de travail AEM Forms dans la langue de votre choix :
 
@@ -40,7 +40,7 @@ Perform the following steps to add support for a language *New* and the browser 
 
 1. Connectez-vous à CRXDE Lite.
 
-   L’URL par défaut de CRXDE Lite est `https://[server]:[port]/lc/crx/de/index.jsp`.
+   L’URL par défaut du CRXDE Lite est `https://[server]:[port]/lc/crx/de/index.jsp`.
 
 1. Navigate to the location `apps/ws/locales` and create a new folder `nw.`
 1. Copiez le fichier `translation.json`de l’emplacement `/apps/ws/locales/en-US` vers `/apps/ws/locales/nw`l’emplacement.
