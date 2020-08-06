@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 69%
 
 ---
 
@@ -23,14 +26,15 @@ Pour ce faire, vous pouvez également charger et utiliser vos propres polices.
 
 Actuellement, toutes les implémentations de la plate-forme Java prennent en charge les polices [TrueType](https://en.wikipedia.org/wiki/Truetype).
 
-1. Ouvrez CRXDE Lite et accédez au dossier de votre application de projet :
+1. Ouvrez le CRXDE Lite et accédez au dossier de votre application de projet :
 
    `/apps/<your-project>/`
 
 1. Under `/apps/<your-project>/` create a new node:
 
-   * **Nom**: `fonts`
-   * **Type**: `sling:Folder`
+   * **Nom** : `fonts`
+   * **Type** : `sling:Folder`
+
    Enregistrez toutes les modifications.
 
 1. Copiez les fichiers de polices dans ce dossier, par exemple, au moyen de WebDAV.
