@@ -317,11 +317,11 @@ Après l’exécution du nettoyage des révisions sur les instances CRX3, vous d
 >
 >Cette tâche de maintenance antérieure à la mise à niveau n&#39;est nécessaire que si :
 >
->* Vous effectuez une mise à niveau à partir des versions d’AEM antérieures à AEM 6.3.
+>* Vous effectuez une mise à niveau depuis AEM versions antérieures à AEM 6.3
 >* Vous rencontrez les erreurs mentionnées ci-dessous lors de la mise à niveau.
 
 
-Il existe des cas exceptionnels où les utilisateurs du service peuvent se retrouver dans des versions plus anciennes d’AEM mal balisées en tant qu’utilisateurs réguliers.
+Dans certains cas exceptionnels, les utilisateurs du service risquent de se retrouver dans des versions AEM plus anciennes mal balisées en tant qu’utilisateurs réguliers.
 
 Si cela se produit, la mise à niveau échoue avec un message comme celui-ci :
 
@@ -344,9 +344,9 @@ Pour résoudre ce problème, veillez à effectuer les opérations suivantes :
 
 ## Mettre à niveau le Schéma de base de données si nécessaire {#upgrade-the-database-schema-if-needed}
 
-En règle générale, la pile Apache Oak sous-jacente utilisée par AEM pour la persistance prend en charge la mise à niveau du schéma de base de données si nécessaire.
+Habituellement, la pile Apache Oak sous-jacente utilisée AEM pour la persistance prend en charge la mise à niveau du schéma de base de données si nécessaire.
 
-Cependant, il peut arriver que le schéma ne puisse pas être mis à niveau automatiquement. Il s&#39;agit principalement d&#39;environnements de sécurité élevée où la base de données s&#39;exécute sous un utilisateur avec des privilèges très limités. Si cela se produit, AEM continuera à utiliser l’ancien schéma.
+Cependant, il peut arriver que le schéma ne puisse pas être mis à niveau automatiquement. Il s&#39;agit principalement d&#39;environnements de sécurité élevée où la base de données s&#39;exécute sous un utilisateur avec des privilèges très limités. Si cela se produit, AEM continuera à utiliser l&#39;ancien schéma.
 
 Pour éviter cela, vous devez mettre à niveau le schéma en suivant la procédure ci-dessous :
 
@@ -355,7 +355,7 @@ Pour éviter cela, vous devez mettre à niveau le schéma en suivant la procédu
 
    Pour plus d&#39;informations sur la façon dont Oak gère les mises à niveau de schéma, consultez [cette page sur le site Web](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade)d&#39;Apache.
 
-1. Passez à la mise à niveau d’AEM.
+1. Passez à l’AEM de mise à niveau.
 
 ## Rotation des fichiers journaux {#rotate-log-files}
 
