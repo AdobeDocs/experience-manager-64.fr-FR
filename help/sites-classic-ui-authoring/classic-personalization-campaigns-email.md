@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1771'
+ht-degree: 94%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe n’envisage pas d’améliorer davantage les courriers électroniques ouverts/reportés envoyés par le service SMTP d’AEM.\
->Il est recommandé d’ [exploiter Adobe Campaign et son intégration](/help/sites-administering/campaign.md)AEM.
+>Adobe ne prévoit pas d&#39;améliorer davantage les courriers électroniques ouverts/rebondis envoyés par le service SMTP AEM.\
+>La recommandation consiste à [tirer parti de l&#39;Adobe Campaign et de son intégration](/help/sites-administering/campaign.md)AEM.
 
 Le marketing par messagerie électronique (les newsletters, par exemple) constitue une partie importante de toute campagne de marketing, car il vous sert à pousser du contenu vers vos pistes. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
 
@@ -95,7 +98,7 @@ Ce document décrit les notions fondamentales de la création de newsletters dan
 
    * **Liste des destinataires par défaut**
 
-      Liste par défaut qui doit recevoir la newsletter.
+      liste par défaut qui doit recevoir la newsletter.
    Ces segments pourront être mis à jour ultérieurement à partir de la boîte de dialogue **Propriétés...**
 
 1. Cliquez sur **OK** pour enregistrer. 
@@ -193,6 +196,7 @@ Personnalisation des paramètres de newsletter :
    1. Modifiez l’**Objet** du courrier électronique, le cas échéant.
    1. Sélectionnez une **Liste des destinataires par défaut** dans la liste déroulante.
    1. Cliquez sur **OK**.
+
    Lorsque vous testez ou envoyez la newsletter, les destinataires reçoivent des courriers électroniques avec l’adresse électronique et l’objet spécifiés.
 
 ## Test envoi newsletters {#flight-testing-newsletters}
