@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 translation-type: tm+mt
 source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
 
 Le script `start` est disponible dans le répertoire *&lt;cq-installation>/bin*. Des versions sont fournies pour Unix et Windows. Le script démarre l’instance installée dans le répertoire *&lt;cq-installation>*.
 
-Ces deux versions prennent en charge un de  variables de  qui peuvent être utilisées pour et régler l’instance AEM.
+Ces deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour début et régler l’instance AEM.
 
 <table> 
  <tbody> 
