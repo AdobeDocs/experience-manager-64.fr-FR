@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 63%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 Vous pouvez ajouter des widgets personnalisés aux formulaires pour périphériques mobiles. Vous pouvez étendre les widgets jQuery existants ou développer vos propres widgets personnalisés. XFA engine uses various widgets, see [Appearance framework for adaptive and HTML5 forms](/help/forms/using/introduction-widgets.md) for detailed information.
 
-![Exemple de widget](assets/custom-widgets.jpg)personnalisé par défaut **Figure :** *Exemple de widget par défaut et personnalisé*
+![Exemple de widget](assets/custom-widgets.jpg)**personnalisé et par défaut :** *Exemple de widget par défaut et personnalisé*
 
 ## Intégration de widgets personnalisés dans des formulaires HTML5 {#integrating-custom-widgets-with-html-forms}
 
@@ -39,11 +42,11 @@ Les formulaires HTML5 fournissent une implémentation de la structure de widgets
   </tr> 
   <tr> 
    <td>render</td> 
-   <td>La fonction de rendu renvoie l’objet jQuery à l’élément HTML par défaut du widget. L’élément HTML par défaut doit être d’un type pouvant être actif. Par exemple, &lt;a&gt;, &lt;input&gt; et &lt;li&gt;. L’élément renvoyé est utilisé comme $userControl. Si $userControl spécifie la contrainte ci-dessus, les fonctions de la classe AbstractWidget fonctionnent comme prévu, sinon certaines des API courantes (focus, clic) nécessitent des modifications. </td> 
+   <td>La fonction de rendu renvoie l’objet jQuery à l’élément HTML par défaut du widget. L’élément HTML par défaut doit être d’un type pouvant être actif. Par exemple, &lt;a&gt;, &lt;input&gt; et &lt;li&gt;. L’élément renvoyé est utilisé comme $userControl. Si $userControl spécifie la contrainte ci-dessus, les fonctions de la classe AbstractWidget fonctionnent comme prévu, sinon certaines des API communes (focus, clic) nécessitent des modifications. </td> 
   </tr> 
   <tr> 
    <td>getEventMap</td> 
-   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> {<br /> flou : XFA_EXIT__,<br /> }<br /> Cet exemple montre que le flou est un  HTML et que XFA_EXIT_ est le XFA correspondant. </td> 
+   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> {<br /> blur: XFA_EXIT_ÉVÉNEMENT,<br /> }<br /> Cet exemple montre que le flou est un événement HTML et que XFA_EXIT_ÉVÉNEMENT correspond au événement XFA. </td> 
   </tr> 
   <tr> 
    <td>getOptionsMap</td> 
@@ -93,7 +96,7 @@ La configuration du widget est fournie sous la forme d’un objet JSON (ensemble
 ..\
 }*
 
-où &quot;identifier&quot; est un sélecteur CSS jQuery qui représente un champ particulier, un ensemble de champs d’un type particulier ou tous les champs. Le suivant  la valeur de l’identifiant dans différents cas :
+où &quot;identifier&quot; est un sélecteur CSS jQuery qui représente un champ particulier, un ensemble de champs d’un type particulier ou tous les champs. Les listes suivantes indiquent la valeur de l’identifiant dans différents cas :
 
 | Type d’identificateur | formulaire | Description |
 |---|---|---|
