@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 88%
 
 ---
 
@@ -33,10 +36,12 @@ Pour un formulaire adaptatif, l’option d’enregistrement automatique n’est 
 
    * **[!UICONTROL Basé sur l’heure :]** sélectionnez l’option pour commencer à enregistrer le contenu selon un intervalle de temps spécifié.
    * **[!UICONTROL Basé sur les événements :]** sélectionnez l’option pour commencer à enregistrer le contenu sur la base d’un événement déclenché.
+
    Lorsque vous sélectionnez un déclencheur, la zone Configuration de la stratégie est activée. La zone Configuration de la stratégie vous permet d’effectuer les opérations suivantes :
 
    * Spécifiez un intervalle de temps si vous sélectionnez un déclencheur **[!UICONTROL basé sur l’heure]**.
    * Spécifiez un nom d’événement si vous sélectionnez un déclencheur **[!UICONTROL basé sur un événement.]**
+
    Vous pouvez également créer et ajouter à la liste votre propre stratégie personnalisée. Pour plus d’informations, reportez-vous à la section [Mise en œuvre d’une stratégie personnalisée pour enregistrer automatiquement les formulaires](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
 
 1. (Enregistrement automatique basé sur un moment uniquement) Exécutez les étapes suivantes pour configurer les options de l’enregistrement automatique basé sur un moment.
@@ -45,7 +50,7 @@ Pour un formulaire adaptatif, l’option d’enregistrement automatique n’est 
 
 1. (Enregistrement automatique basé sur un événement uniquement) Exécutez les étapes suivantes pour configurer les options d’enregistrement automatique basé sur un événement.
 
-   1. Dans la zone **Enregistrement automatique après cet événement**, spécifiez un événement [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). Le formulaire est enregistré chaque fois que l’expression renvoie TRUE.
+   1. Dans la zone **Enregistrement automatique après cet événement**, spécifiez un événement [GuideBridge](https://helpx.adobe.com/fr/aem-forms/6/javascript-api/GuideBridge.html). Le formulaire est enregistré chaque fois que l’expression renvoie TRUE.
 
 1. (Facultatif) Pour enregistrer automatiquement le contenu pour des utilisateurs anonymes, sélectionnez l’option **Activer l’enregistrement automatique pour les utilisateurs anonymes**, puis cliquez sur **[!UICONTROL OK]**.
 
