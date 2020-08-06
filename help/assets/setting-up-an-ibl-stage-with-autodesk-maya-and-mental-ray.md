@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
 translation-type: tm+mt
 source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 78%
 
 ---
 
@@ -55,7 +58,7 @@ source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
    * **[!UICONTROL Onglet Qualité]**
 
       * **Qualité générale** : `0.5`   ou moins
-      * **Mode** Diffusion Indirecte (GI) - `Final Gather`
+      * **Mode** Diffuse Indirecte (GI) - `Final Gather`
       * ``**Filter Size** - `2.0`, `2.0`
    * Définissez le rendu de la scène selon les tailles de l’image type que vous comptez utiliser. Si nécessaire, affinez les lumières, les paramètres de rendu ou les deux pour parvenir au résultat souhaité.
 
