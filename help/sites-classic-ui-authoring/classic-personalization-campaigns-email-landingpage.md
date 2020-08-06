@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfe0ad66-9df5-4ea3-9e66-543b5ccd594a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '658'
+ht-degree: 93%
 
 ---
 
@@ -28,8 +31,8 @@ Pour créer une page d’entrée efficace pour votre newsletter, vous devez proc
 
 >[!NOTE]
 >
->Adobe ne prévoit pas d’améliorer davantage cette fonctionnalité (Gestion des pistes et des listes).\
->Il est recommandé d’exploiter [Adobe Campaign et son intégration](/help/sites-administering/campaign.md)AEM.
+>L&#39;Adobe ne prévoit pas d&#39;améliorer davantage cette capacité (Gestion des pistes et des Listes).\
+>La recommandation consiste à tirer parti de l&#39; [Adobe Campaign et de son intégration](/help/sites-administering/campaign.md)AEM.
 
 ## Création d’une liste pour la newsletter {#creating-a-list-for-the-newsletter}
 
