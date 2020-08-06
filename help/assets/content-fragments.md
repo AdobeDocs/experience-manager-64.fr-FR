@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 translation-type: tm+mt
 source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
+workflow-type: tm+mt
+source-wordcount: '2002'
+ht-degree: 98%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragments de contenu nécessitent l’application d’ [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application de [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
 
-Les fragments de contenu d’Adobe Experience Manager (AEM) permettent de concevoir, de créer, d’organiser et de [publier du contenu indépendant des pages](/help/sites-authoring/content-fragments.md). Ils permettent de préparer du contenu prêt à l’emploi pour de multiples emplacements et canaux.
+Les fragments de contenu d’Adobe Experience Manager (AEM) permettent de concevoir, de créer, d’organiser et de [publier du contenu indépendant des pages](/help/sites-authoring/content-fragments.md). Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples/sur plusieurs canaux.
 
 Les fragments de contenu peuvent également être livrés au format JSON, à l’aide des fonctions d’exportation Sling Model (JSON) des composants de base AEM. Cette forme de livraison :
 
@@ -30,7 +33,7 @@ Les fragments de contenu peuvent également être livrés au format JSON, à l�
 
 Cette page et les suivantes portent sur les tâches de création, de configuration et de gestion de vos fragments de contenu :
 
-* [Gestion des fragments](content-fragments-managing.md) de contenu - créez vos fragments de contenu ; puis modifier, publier et référencer
+* [Gestion des fragments de contenu](content-fragments-managing.md)    : créez des fragments de contenu, puis modifiez-les, publiez-les et référencez-les.
 
 * [Modèles de fragment de contenu](content-fragments-models.md) : activation, création et définition de vos modèles.
 
@@ -44,9 +47,9 @@ Cette page et les suivantes portent sur les tâches de création, de configurati
 
 >[!NOTE]
 >
->Ces pages devrait être lue conjointement à [Création de pages avec des fragments de contenu](/help/sites-authoring/content-fragments.md).
+>Ces pages devraient être lues conjointement à [Création de pages avec des fragments de contenu](/help/sites-authoring/content-fragments.md).
 
-Le nombre de canaux de communication augmente tous les ans. En règle générale, les canaux désignent le mécanisme de distribution, soit comme :
+Le nombre de canaux de communication augmente tous les ans. En règle générale, les canaux font référence au mécanisme de diffusion :
 
 * Canal physique ; ordinateur de bureau ou appareil mobile par exemple.
 * Forme de livraison sur un canal physique ; « page des détails produit »/« page catégorie de produit » sur ordinateur de bureau ou « web mobile »/« Application mobile » pour les appareils mobiles.
@@ -63,15 +66,15 @@ Les fragments de contenu vous permettent de :
 
 Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses expériences sur de multiples canaux.
 
-## Fragments de contenu et Content Services {#content-fragments-and-content-services}
+## Fragments de contenu et Content Services    {#content-fragments-and-content-services}
 
 Les services de contenu AEM sont conçus pour généraliser la description et la diffusion du contenu dans/depuis AEM, au-delà des pages web.
 
 Ils assurent la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients. Ces canaux peuvent inclure :
 
-* des applications sur une seule page
-* des applications mobiles natives
-* autres canaux et points de contact externes à AEM
+* des applications sur une seule page ;
+* des applications mobiles natives ;
+* d’autres canaux et points de contact externes à AEM.
 
 La diffusion est effectuée au format JSON.
 
@@ -84,12 +87,13 @@ Associé aux fonctionnalités d’exportation JSON des composants de base AEM, 
 >Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-authoring/experience-fragments.md)**représentent deux fonctions distinctes d’AEM :
 >
 >* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
->* Les **fragments d’expérience** désignent un contenu parfaitement mis en page ; un fragment d’une page web. 
+>* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
+
 >
 >
 Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 >
->Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
+>Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
 >[!CAUTION]
 >
@@ -107,13 +111,13 @@ Les fragments de contenu peuvent être comme suit :
 
 * Fragments simples
 
-   * Ils n&#39;ont pas de structure prédéfinie. Ils contiennent uniquement du texte et des images.
+   * Ils n’ont pas de structure prédéfinie. Ils contiennent uniquement du texte et des images.
    * Ils sont basés sur le modèle de fragment simple.
 
-* Fragments contenant du contenu structuré
+* Fragments présentant du contenu structuré
 
-   * These are based on a [Content Fragment Model](content-fragments-models.md), which predefines a structure for the resulting fragment.
-   * Elles peuvent également être utilisées pour réaliser Content Services à l’aide de l’exportateur JSON.
+   * Ils sont basés sur un [modèle de fragment de contenu](content-fragments-models.md), servant à prédéfinir une structure pour le fragment résultant.
+   * Ils peuvent également être utilisés pour réaliser des Content Services à l’aide de l’exportateur JSON.
 
 ## Type de contenu {#content-type}
 
@@ -124,9 +128,9 @@ Les fragments de contenu sont :
    * Les fragments de contenu (et leurs variations) peuvent être créés et gérés à partir de la console **Ressources**.
    * Créés et modifiés dans l’éditeur de fragment de contenu.
 
-* Utilisés dans l’[éditeur de page au moyen du composant Fragment de contenu](/help/sites-authoring/content-fragments.md) (qui référence le composant) :
+* Utilisés dans l’[éditeur de page au moyen du composant Fragment de contenu](/help/sites-authoring/content-fragments.md) (qui fait référence au composant) :
 
-   * Le composant **Fragment de contenu** est disponible pour les créateurs de page. Il leur permet de référencer et de livrer le fragment de contenu requis au format HTML ou JSON.
+   * Le composant **Fragment de contenu** est disponible pour les créateurs de pages. Il leur permet de référencer et de livrer le fragment de contenu requis au format HTML ou JSON.
 
 Les fragments de contenu sont une structure de contenu qui :
 
@@ -143,14 +147,15 @@ Pour donner aux auteurs plus de contrôle sur leur contenu, il est possible d’
 
 Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs façons ; chacune présentant ses propres avantages :
 
-* **Insertion d’un fichier** dans un fragment (fragments multimédias)
+* **Insérer une ressource** dans un fragment (fragments de supports variés)
 
    * Font partie intégrante du fragment (voir [Parties constituantes d’un fragment de contenu](#constituent-parts-of-a-content-fragment)).
    * Définissent la position de la ressource.
    * Voir [Insertion de ressources dans votre fragment](content-fragments-variations.md#inserting-assets-into-your-fragment) dans l’éditeur de fragment pour plus d’informations.
+
    >[!NOTE]
    >
-   >Les fichiers visuels insérés dans le fragment de contenu lui-même sont joints au paragraphe précédent. Lorsque le fragment est ajouté à une page, ces ressources sont déplacées avec le paragraphe en question lorsque du contenu intermédiaire est ajouté.
+   >Les ressources visuelles insérées dans le fragment de contenu sont liées au paragraphe précédent. Lorsque le fragment est ajouté à une page, ces ressources sont déplacées avec le paragraphe en question lorsque du contenu intermédiaire est ajouté.
 
 * **Contenu associé**
 
@@ -170,7 +175,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
 
 Les actifs de fragment de contenu se composent des parties suivantes (directement ou indirectement) :
 
-* **Éléments de fragment** 
+* **Éléments de fragment**
 
    * Les éléments sont en corrélation avec les champs de données possédant du contenu.
    * Pour les fragments avec du contenu structuré, vous utilisez un modèle de contenu afin de créer le fragment de contenu. Les éléments (champs) spécifiés dans le modèle définissent la structure du fragment. Ces éléments (champs) peuvent être de divers types de données.
@@ -198,6 +203,7 @@ Les actifs de fragment de contenu se composent des parties suivantes (directemen
    * Peuvent uniquement être ajoutées, supprimées ou déplacées dans un fragment en utilisant le format [texte enrichi de l’éditeur de fragment](content-fragments-variations.md#inserting-assets-into-your-fragment).
    * Peuvent uniquement être ajoutées aux éléments de texte multiligne (tout type de fragment).
    * Sont liées au texte précédent (paragraphe).
+
    >[!CAUTION]
    >
    >Peuvent être supprimées (par inadvertance) d’un fragment lors du passage au format texte brut.
@@ -210,14 +216,14 @@ Les actifs de fragment de contenu se composent des parties suivantes (directemen
 
    * Il s’agit d’un contenu externe, mais avec la pertinence éditoriale d’un fragment. En règle générale, des images, des vidéos ou d’autres types de fragments.
    * Les ressources individuelles de la collection peuvent être utilisées avec le fragment dans l’éditeur de page, lorsqu’il est ajouté à une page. Cela signifie qu’elles sont facultatives, en fonction des exigences du canal spécifique.
-   * The assets are [associated to fragments via collections](content-fragments-assoc-content.md); associated collections allow the author to decide which assets to use when they are authoring the page.
+   * Les ressources sont [associées aux fragments via des collections](content-fragments-assoc-content.md) ; les collections associées permettent à l’auteur de déterminer les ressources à utiliser lors de la création d’une page.
 
       * Les collections peuvent être associées à des fragments à l’aide de modèles, en tant que contenu par défaut, ou par les auteurs lors de la création du fragment.
       * Les [Collections de ressources (DAM)](managing-collections-touch-ui.md) servent de base au contenu associé des fragments.
    * Vous pouvez également ajouter le fragment lui-même à une collection pour en faciliter le suivi.
 
 
-* **Métadonnées de fragment** 
+* **Métadonnées de fragment**
 
    * Utilisez les [schémas de métadonnées de ressources](metadata.md).
    * Des balises peuvent être créées lorsque vous :
@@ -227,6 +233,7 @@ Les actifs de fragment de contenu se composent des parties suivantes (directemen
 
          * Lors de l’affichage/de la modification des **propriétés** de fragment dans la console
          * Lors de la modification des **métadonnées** dans l’éditeur de fragment
+
    >[!CAUTION]
    >
    >Les profils de traitement de métadonnées ne s’appliquent pas aux fragments de contenu.
@@ -237,25 +244,25 @@ Les actifs de fragment de contenu se composent des parties suivantes (directemen
 
       * Chaque fragment de contenu possède une instance maître.
       * L’instance maître ne peut pas être supprimée.
-   * Master is accessible in the fragment editor under **[Variations](content-fragments-variations.md)**.
+   * L’instance maître est accessible dans l’éditeur de fragment sous **[Variations](content-fragments-variations.md)**.
    * L’instance maître n’est pas une variation en tant que telle, mais plutôt la base de toutes les variations.
 
 
 * **Variations**
 
-   * Il s’agit de rendus de texte de fragment spécifiques à fin éditoriale. Les variations peuvent être associées au canal, sans que cela ne soit obligatoire, et elles peuvent également servir à des modifications locales ad hoc.
-   * Are created as copies of **Master**, but can then be edited as required; there is usually content overlap between the variations themselves.
+   * Il s’agit de rendus de texte de fragment spécifiques à fin éditoriale. Les variations peuvent être associées au canal, sans que cela soit obligatoire, et elles peuvent également servir à des modifications locales ad hoc.
+   * Sont créées en tant que copies de l’instance **maître**, mais peuvent ensuite être modifiées si besoin. Il existe généralement un chevauchement de contenu entre les différentes variations.
    * Peuvent être définies lors de la création du fragment ou être prédéfinies dans les modèles de fragment.
-   * Stockées dans le fragment, afin d’éviter l’éparpillement des copies de contenu. 
+   * Stockées dans le fragment, afin d’éviter l’éparpillement des copies de contenu.
    * Les variantes peuvent être [synchronisées](content-fragments-variations.md#synchronizing-with-master) avec l’instance maître si son contenu a été mis à jour.
-   * Can be [Summarized](content-fragments-variations.md#summarizing-text) to quickly truncate the text to a predefined length.
-   * Available under the [Variations](content-fragments-variations.md) tab of the fragment editor.
+   * Peuvent être [résumées](content-fragments-variations.md#summarizing-text) afin de tronquer rapidement le texte sur une longueur prédéfinie.
+   * Disponibles sous l’onglet [Variations](content-fragments-variations.md) de l’éditeur de fragment.
 
 ### Contenu intermédiaire lors de la création de page avec des fragments de contenu {#in-between-content-when-page-authoring-with-content-fragments}
 
 Contenu intermédiaire :
 
-* Est disponible dans l’[éditeur de page lorsque vous utilisez des fragments de contenu](/help/sites-authoring/content-fragments.md).
+* Il est disponible dans l’[éditeur de page lorsque vous utilisez des fragments de contenu](/help/sites-authoring/content-fragments.md).
 * Il s’agit de [contenu supplémentaire ajouté dans le flux d’un fragment](/help/sites-authoring/content-fragments.md#adding-in-between-content) une fois qu’il a été utilisé ou référencé sur une page.
 * Le contenu intermédiaire peut être ajouté à n’importe quel fragment, où seul un élément est visible.
 * Le contenu associé peut être utilisé, tout comme les ressources et/ou les composants du navigateur approprié.
@@ -287,10 +294,10 @@ Pour créer, modifier et utiliser des fragments de contenu, vous aurez égalemen
    * Essentiel pour livrer le fragment au format HTML et/ou JSON.
    * Obligatoire pour [référencer le fragment sur une page](/help/sites-authoring/content-fragments.md).
    * Responsable de la mise en page et de la diffusion d’un fragment, c’est-à-dire des canaux.
-   * Les fragments ont besoin d’un ou de plusieurs composants dédiés pour définir la mise en forme et diffuser tous les éléments/variations et le contenu associé.
+   * Les fragments ont besoin d’un ou de plusieurs composants dédiés pour définir la mise en page, ainsi que diffuser tous les éléments/variations et le contenu associé.
    * Faire glisser un fragment sur une page en mode Création permet d’associer automatiquement le composant requis.
 
-## Exemple d’utilisation {#example-usage}
+## Cas d’utilisation    {#example-usage}
 
 Un fragment, avec ses éléments et ses variations, peut être utilisé afin de créer du contenu homogène sur plusieurs canaux. Lors de la conception d’un fragment, vous devez prendre en compte où vous utiliserez chacun de ses éléments.
 
