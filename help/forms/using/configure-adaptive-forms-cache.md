@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: dd18f7b5-882d-4e81-ab3d-85f1e5d74992
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 84%
 
 ---
 
@@ -28,11 +31,11 @@ Un cache est un mécanisme qui permet de raccourcir les temps d’accès aux don
 
 ## Configurer le cache {#configure-the-cache}
 
-Effectuez les étapes suivantes pour configurer le cache des formulaires adaptatifs :
+Effectuez les étapes suivantes pour configurer le cache de formulaires adaptatifs :
 
-1. Accédez au gestionnaire de configuration de la console Web AEM à l’adresse `https://[server]:[port]/system/console/configMgr`.
+1. Go to AEM web console configuration manager at `https://[server]:[port]/system/console/configMgr`.
 1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration.
-1. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100.
+1. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100.   
 
    >[!NOTE]
    >
