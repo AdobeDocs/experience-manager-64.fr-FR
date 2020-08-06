@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 52%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 
-1. Connectez-vous à CRXDE Lite en accédant à `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Connectez-vous au CRXDE Lite en accédant à `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Create a folder named `ws`at `/apps`, if it does not exist. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 1. Browse to `/apps/ws`, and navigate to the **[!UICONTROL Access Control]** tab.
 1. In the **[!UICONTROL Access Control]** list, click **[!UICONTROL +]** to add a new entry. Cliquez de nouveau sur **[!UICONTROL +]**.
