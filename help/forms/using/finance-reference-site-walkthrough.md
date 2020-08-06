@@ -168,7 +168,7 @@ L’image suivante illustre le processus AEM qui traite la demande de carte de c
 
 #### Démonstration {#see-it-yourself-2}
 
-Vous pouvez accéder à la boîte de réception AEM pour le site we.finance à l’adresse https://&lt;*hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html. Sur la page, appuyez sur **[!UICONTROL Se connecter]**, cochez la case **[!UICONTROL Se connecter en tant que représentant]** , connectez-vous à la boîte de réception AEM en utilisant `grios/password` comme nom d’utilisateur/mot de passe pour Gloria Rios et approuvez la demande de carte de crédit. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
+Vous pouvez accéder à AEM boîte de réception pour le site we.finance à l’adresse https://&lt;*hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html. Sur la page, appuyez sur **[!UICONTROL Se connecter]**, cochez la case **[!UICONTROL Se connecter en tant que représentant]** , connectez-vous à la boîte de réception AEM en utilisant `grios/password` comme nom d’utilisateur/mot de passe pour Gloria Rios et approuvez la demande de carte de crédit. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
 
 ![boîte de réception-1](assets/inbox-1.png)
 
@@ -210,7 +210,7 @@ Comme Sarah commence à utiliser la carte de crédit, elle reçoit ensuite un au
 
 ![instruction-courrier électronique](assets/statement-email.png)
 
-Sarah clique sur Afficher le relevé dans le courrier électronique pour afficher le relevé de carte de crédit. Le relevé est une communication interactive. Il a des versions Web et Impression (PDF). L’instruction s’intègre au modèle de données de formulaires pour récupérer des données, propres au client, de la base de données. Le relevé interactif est constitué de plusieurs éléments :
+Sarah clique sur Afficher le relevé dans le courrier électronique pour afficher le relevé de carte de crédit. Le relevé est une communication interactive. Il a des versions Web et Impression (PDF). L’instruction s’intègre au modèle de données Forms pour récupérer des données, propres au client, de la base de données. Le relevé interactif est constitué de plusieurs éléments :
 
 * Récapitulatif du relevé
 * Rapport détaillé des dépenses
@@ -240,7 +240,7 @@ https://&lt;*nom d’hôte*>:&lt;*port*>/content/aemforms-refsite/doclink.html?d
 
 Vous pouvez y accéder dans les instances d’auteur et de publication.
 
-Le relevé de carte de crédit affiche les offres promotionnelles vers la fin du relevé. Vous pouvez intégrer Adobe Target à la communication interactive d’AEM Forms pour fournir des offres ciblées promotionnelles basées sur des segments de clients spécifiques. Pour configurer votre communication interactive afin d’utiliser Adobe Target pour des offres personnalisées et ciblées, voir [Création d’expériences](/help/forms/using/experience-targeting-forms.md)ciblées.
+Le relevé de carte de crédit affiche les offres promotionnelles vers la fin du relevé. Vous pouvez intégrer Adobe Target à AEM Forms Interactive Communication pour fournir des offres ciblées promotionnelles basées sur des segments de clients spécifiques. Pour configurer votre communication interactive afin d’utiliser Adobe Target pour des offres personnalisées et ciblées, voir [Création d’expériences](/help/forms/using/experience-targeting-forms.md)ciblées.
 
 ![](do-not-localize/offers.png)
 
@@ -797,7 +797,7 @@ Accédez au portail Web.Finance à l’adresse https://[publishHost]:[publishPor
 
 ### Sarah explore le prospectus du Blue Chip Growth Fund pour en savoir plus sur le fonds {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund}
 
-Sarah explore les onglets Aperçu, Prix et Performance, Gestion de portefeuille, Frais et minima, Impôts et Paiements du prospectus pour connaître les prix courants et historiques, la croissance historique, la comparaison avec l’indice S&amp;P 500, la diversification sectorielle, les personnes qui gèrent le fonds et les dépenses liées au fonds. Les informations associées sont divisées en différents onglets. Le prospectus est une communication interactive. Les communications interactives ont une conception adaptée. Elle peut ouvrir la communication interactive sur un appareil de n’importe quelle taille d’écran et la communication interactive repositionne la conception en fonction du périphérique sous-jacent.
+Sarah explore les onglets Aperçu, Prix et Performance, Gestion des Portfolios, Frais et Minimum, Impôts et Paiement du prospectus pour connaître les prix courants et historiques, la croissance historique, la comparaison avec l’indice S&amp;P 500, la diversification sectorielle, les personnes qui gèrent le fonds et les dépenses liées au fonds. Les informations associées sont divisées en différents onglets. Le prospectus est une communication interactive. Les communications interactives ont une conception adaptée. Elle peut ouvrir la communication interactive sur un appareil de n’importe quelle taille d’écran et la communication interactive repositionne la conception en fonction du périphérique sous-jacent.
 
 ![diapositive 1-1](assets/slide1-1.png)
 
