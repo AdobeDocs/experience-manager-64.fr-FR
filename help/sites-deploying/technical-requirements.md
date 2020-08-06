@@ -11,6 +11,9 @@ topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
 source-git-commit: 65346b3de98ec53e97c66fdac3be43b9c71e292a
+workflow-type: tm+mt
+source-wordcount: '3144'
+ht-degree: 84%
 
 ---
 
@@ -34,7 +37,7 @@ Configuration minimale requise pour installer Adobe Experience Manager :
 
 ### Configuration minimale requise en matière d’espace disque et de mémoire {#minimum-sizing-requirements}
 
-Configuration minimale requise pour l’exécution d’Adobe Experience Manager :
+Configuration minimale requise pour l’exécution de Adobe Experience Manager :
 
 * 5 Go d’espace disque disponible dans le répertoire d’installation
 * Mémoire de 2 Go
@@ -43,6 +46,7 @@ Configuration minimale requise pour l’exécution d’Adobe Experience Manager 
 >
 >* Les cas d’utilisation des ressources numériques nécessitent plus de mémoire de base. Voir [Deploiement et maintenance](/help/sites-deploying/deploy.md#default-local-install) pour plus de détails.
 >* [Le module complémentaire AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) nécessite 15 Go d’espace temporaire.
+
 >
 
 
@@ -147,7 +151,7 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
    <td>A : Pris en charge </td> 
   </tr> 
   <tr> 
-   <td><strong>Système de fichiers avec Datastore [1]</strong></td> 
+   <td><strong>Système de fichiers avec banque de données [1]</strong></td> 
    <td>Binaires</td> 
    <td>A : Pris en charge</td> 
   </tr> 
@@ -315,7 +319,7 @@ Adobe Experience Manager fonctionne avec les plates-formes serveur suivantes 
  </tbody> 
 </table>
 
-1. Linux Kernel 2.6, 3.x et 4.x inclut des dérivés de la distribution Red Hat, y compris Red Hat Enterprise Linux, CentOS, Oracle Linux et Amazon Linux. Les fonctions complémentaires d’AEM Forms sont uniquement prises en charge sous CentOS 7 et Red Hat Enterprise Linux 6.5 et 7.
+1. Linux Kernel 2.6, 3.x et 4.x inclut des dérivés de la distribution Red Hat, y compris Red Hat Enterprise Linux, CentOS, Oracle Linux et Amazon Linux. AEM fonctions de module complémentaire de formulaire sont uniquement prises en charge sur CentOS 7 et Red Hat Enterprise Linux 6.5 et 7.
 1. AEM Assets : Veuillez consulter la section [Prise en charge pour l’écriture différée des métadonnées XMP](#requirements-for-aem-assets-xmp-metadata-write-back)
 1. AEM Assets : Pas de prise en charge pour l’imagerie Dynamic Media. Le service vidéo de média dynamique est pris en charge.
 1. AEM Forms est pris en charge uniquement sur Ubuntu 16.04 LTS.
@@ -475,7 +479,7 @@ Cela signifie que lorsqu’une adresse IP doit être indiquée, vous avez le ch
 
    par exemple `https://123.1.1.4:4502`
 
-* nom de serveur
+* un nom de serveur
 
    par exemple, `https://www.yourserver.com:4502`
 
@@ -487,7 +491,7 @@ Cela signifie que lorsqu’une adresse IP doit être indiquée, vous avez le ch
 
 Par défaut, AEM Dynamic Media est désactivé. See [Enabling Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
-Lorsque Contenu multimédia dynamique est activé, les autres configurations requises suivantes s’appliquent :
+La fonction Contenu multimédia dynamique étant activée, les exigences système supplémentaires suivantes s’appliquent :
 >[!NOTE]
 >
 >The following system requirements apply **_only_** if you use Dynamic Media - Hybrid mode; Dynamic Media - Hybrid mode has an embedded image server, which is only certified on certain operating systems.
@@ -496,7 +500,7 @@ Lorsque Contenu multimédia dynamique est activé, les autres configurations req
 
 #### Matériel {#hardware}
 
-La configuration matérielle requise suivante s’applique aux systèmes d’exploitation Linux et Windows :
+Les exigences matérielles suivantes s’appliquent aux systèmes d’exploitation Linux et Windows :
 
 * Processeur Intel Xeon ou AMD Opteron avec au moins 4 cœurs
 * 16 Go de mémoire vive (RAM) au minimum
@@ -539,19 +543,19 @@ L’utilisation de Contenu multimédia dynamique sous Linux requiert les conditi
 * Microsoft Windows Server 2016
 * Espace d’échange égal à au moins deux fois la quantité de mémoire physique (RAM).
 
-Pour utiliser Contenu multimédia dynamique sous Windows, vous devez installer les fichiers redistribuables Microsoft Visual Studio 2010, 2013 et 2015 pour x64 et x86.
+Pour utiliser Contenu multimédia dynamique sous Windows, Microsoft Visual Studio 2010, 2013 et 2015 redistributables pour x64 et x86 doit être installé.
 
 x64
 
-* The Microsoft Visual Studio 2010 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/en-us/download/details.aspx?id=13523)
-* The Microsoft Visual Studio 2013 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* The Microsoft Visual Studio 2015 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* The Microsoft Visual Studio 2010 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/fr-fr/download/details.aspx?id=13523)
+* The Microsoft Visual Studio 2013 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/fr-fr/download/details.aspx?id=40784)
+* The Microsoft Visual Studio 2015 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/fr-fr/download/details.aspx?id=48145)
 
 x86
 
 * The Microsoft Visual Studio 2010 redistributable can be found at [https://www.microsoft.com/en-in/download/details.aspx?id=5555](https://www.microsoft.com/en-in/download/details.aspx?id=5555)
 * The Microsoft Visual Studio 2013 redistributable can be found at [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* The Microsoft Visual Studio 2015 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+* The Microsoft Visual Studio 2015 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/fr-fr/download/details.aspx?id=52685)
 
 #### Mac OS {#macos}
 
@@ -596,11 +600,11 @@ x86
   </tr> 
   <tr> 
    <td>OpenOffice 4.1.2</td> 
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM RTF et TXT</td> 
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC, HTML, HTM RTF et TXT</td> 
   </tr> 
   <tr> 
    <td><p>OpenOffice 3.4</p> </td> 
-   <td><p>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM RTF et TXT</p> </td> 
+   <td><p>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC, HTML, HTM RTF et TXT</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -618,6 +622,7 @@ x86
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows, Linux et Solaris.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
 >* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
+
 >
 
 
@@ -650,6 +655,6 @@ Le lecteur AEM Screens version 3.3.x prend en charge les systèmes d’exploit
 
 * Microsoft Windows 10 Enterprise LTSB
 * Google Chrome OS 62+
-* Google Android 5.1.1 avec mise à jour d’Android System WebView version 52+
+* Google Android 5.1.1 avec mise à jour d&#39;Android System WebView version 52+
 * Apple iOS 10.3+
 * Apple macOS 10.12+
