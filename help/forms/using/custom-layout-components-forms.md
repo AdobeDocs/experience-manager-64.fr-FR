@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 102718cb-592a-4a5c-89a6-ad4d56f3d547
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 63%
 
 ---
 
@@ -169,7 +172,7 @@ Le composant Disposition de panneau de formulaire adaptatif contrôle la disposi
    </ul>
    ```
 
-   Mise à jour `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
+   La mise à jour `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
 
    ```
    <%-- jsp governing the panel content --%>
@@ -198,7 +201,7 @@ Le composant Disposition de panneau de formulaire adaptatif contrôle la disposi
 
 1. Ouvrez un formulaire adaptative en mode création. La disposition de panneau que vous avez définie est ajoutée à la liste pour la configuration des dispositions de panneau.
 
-   ![La disposition Panneau personnalisé s’affiche dans la liste](assets/auth-layt.png) de disposition du panneau ![Capture d’écran du formulaire adaptatif, à l’aide de la disposition](assets/s1.png) ![de panneau personnalisée Capture d’écran montrant la fonctionnalité de basculement de la disposition personnalisée](assets/s2.png)
+   ![La disposition Panneau personnalisé s’affiche dans la liste](assets/auth-layt.png) de disposition du panneau Capture d’ ![écran du formulaire adaptatif, à l’aide de la disposition](assets/s1.png) du panneau personnalisé ![Capture d’écran montrant la fonctionnalité de basculement de la disposition personnalisée](assets/s2.png)
 
 Exemple de ZIP pour une disposition de panneau personnalisée et un formulaire adaptatif l’utilisant.
 
