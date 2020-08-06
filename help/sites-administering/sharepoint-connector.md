@@ -22,7 +22,7 @@ ht-degree: 73%
 
 Day JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013, version 4.0.
 
-Cet article contient des informations détaillées sur Adobe JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0.
+Cet article contient des informations détaillées sur l’Adobe JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0.
 
 SharePoint Connector prend en charge les fonctionnalités de base suivantes :
 
@@ -93,7 +93,7 @@ Le connecteur prend en charge les applications suivantes :
 
 AEM Package Share est utilisé pour la distribution des fonctionnalités produit, des exemples et des correctifs logiciels. For details, see the [Package Share documentation](/help/sites-administering/package-manager.md#package-share).
 
-To access Package Share on the AEM Welcome page, tap/click **Tools** and then select **Package Share**. Vous avez besoin d’un Adobe ID valide incluant votre adresse électronique de société. En outre, après vous être connecté à votre compte, demandez l’accès à Package Share.
+To access Package Share on the AEM Welcome page, tap/click **Tools** and then select **Package Share**. Vous avez besoin d’une Adobe ID valide qui comprend votre adresse électronique de société. En outre, après vous être connecté à votre compte, demandez l’accès à Package Share.
 
 #### Intégration à AEM {#integrating-with-aem}
 
@@ -137,7 +137,7 @@ Par défaut, le connecteur expose un espace de travail JCR unique. Le serveur Sh
 
 Dans AEM, effectuez une étape en plus des étapes de configuration ci-dessus. Liste autorisée du lot &quot;**com.day.cq.dam.cq-dam-jcr-connectors**&quot;.
 
-Pour liste autorisée de lots dans AEM, effectuez les étapes suivantes :
+Pour liste autorisée des lots dans AEM, effectuez les opérations suivantes :
 
 1. Accédez à la console de gestion OSGi : http://localhost:4502/system/console/configMgr.
 
@@ -203,10 +203,10 @@ En particulier, les types d’authentification suivants sont disponibles :
 * Revendications – de base
 * Revendications – reposant sur les formulaires
 
-AEM JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0. prennent en charge l’authentification basée sur les revendications (suggérée par Microsoft), qui fonctionne dans les modes suivants :
+L’AEM JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0. prend en charge l’authentification basée sur les revendications (suggérée par Microsoft), qui fonctionne dans les modes suivants :
 
 * **Authentification de base/NTLM** : le connecteur tente d’abord de se connecter à l’aide de l’authentification de base. Si elle n’est pas disponible, il passe à l’authentification basée sur NTLM.
-* **Authentification** basée sur des formulaires : SharePoint valide les utilisateurs en fonction des informations d’identification saisies par les utilisateurs dans un formulaire de connexion (généralement une page Web). Le système génère un jeton pour les requêtes authentifiées contenant une clé pour rétablir l’identité des requêtes ultérieures.
+* **Authentification** basée sur Forms : SharePoint valide les utilisateurs en fonction des informations d’identification saisies par les utilisateurs dans un formulaire de connexion (généralement une page Web). Le système génère un jeton pour les requêtes authentifiées contenant une clé pour rétablir l’identité des requêtes ultérieures.
 
 **Configuration de l’authentification reposant sur les formulaires**
 
