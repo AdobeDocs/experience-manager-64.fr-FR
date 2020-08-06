@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 translation-type: tm+mt
 source-git-commit: 22a5e6a75fdc1f15e6e612c5ef495ac01e50252d
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 97%
 
 ---
 
 
-# Texte (Markdown){#markdown}
+# Texte (Markdown) {#markdown}
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragments de contenu nécessitent l’application d’ [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application de [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
 
-When you are [authoring](content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write content:
+Lors du processus de [création](content-fragments-variations.md#authoring-your-content), l’éditeur de fragments de contenu utilise la syntaxe *markdown* pour vous permettre d’écrire aisément du contenu :
 
-![éditeur de balisage](/help/assets/assets/cfm-6420-08.png)
+![Éditeur de balisage](/help/assets/assets/cfm-6420-08.png)
 
 Vous pouvez définir :
 
@@ -77,7 +80,7 @@ Voici des exemples de liens intégrés :
 
     `[This link](https://example.net/) has no title attribute.`
 
-Un lien de référence présente la syntaxe suivante :
+Les liens de référence présentent la syntaxe suivante :
 
     `Hey you should [checkout][0] this [cool thing][wiki] that I [made][].`
 
@@ -91,7 +94,7 @@ Un lien de référence présente la syntaxe suivante :
 
 La syntaxe des images est similaire à celle des liens. Vous pouvez créer des images intégrées et référencées.
 
-Par exemple, une image intégrée présente la syntaxe suivante :
+Par exemple, les images intégrées présentent la syntaxe suivante :
 
     `![Alt text](/path/to/img.jpg)`
 
@@ -99,15 +102,15 @@ Par exemple, une image intégrée présente la syntaxe suivante :
 
 La syntaxe comprend :
 
-* Point d’exclamation : !;
-* suivi d’un ensemble de crochets contenant le texte de l’attribut alt pour l’image ;
-* suivi d’un ensemble de parenthèses contenant l’URL ou le chemin d’accès à l’image et d’un attribut de titre facultatif entre guillemets simples ou doubles.
+* Un point d’exclamation : !;
+* suivi d’un ensemble de crochets, contenant le texte d’attribut alternatif de l’image ;
+* suivi d’un ensemble de parenthèses, contenant l’URL ou le chemin d’accès de l’image, et un attribut de titre facultatif inclus dans des guillemets doubles ou simples.
 
-Une image de style de référence présente la syntaxe suivante :
+Les images de style de référence présentent la syntaxe suivante :
 
     `![Alt text][id]`
 
-Où &quot;id&quot; est le nom d’une référence d’image définie. Les références d’image sont définies à l’aide d’une syntaxe identique à celle des références de lien :
+Où « id » est le nom d’une référence d’image définie. Les références d’image sont définies à l’aide d’une syntaxe identique à celle des références de lien :
 
     `[id]: url/to/image "Optional title attribute"`
 
@@ -137,7 +140,7 @@ Vous pouvez utiliser des blocs de citations imbriqués. Par exemple :
 
 Vous pouvez créer des listes ordonnées et non ordonnées.
 
-Pour créer une liste non ordonnée, utilisez &amp;ast; avant les éléments de la liste. Par exemple :
+Pour créer une liste non ordonnée, insérez le symbole &amp;ast; avant les éléments de la liste. Par exemple :
 
     `* item in list`
 
@@ -189,7 +192,7 @@ Les blocs de code sont généralement utilisés pour illustrer le code source. V
 
 ## Échappements par barre oblique inverse {#backslash-escapes}
 
-Vous pouvez utiliser des caractères d’échappement par barre oblique inverse pour générer des caractères littéraux ayant une signification spéciale dans la syntaxe de formatage. Par exemple, si vous souhaitez entourer un mot avec des astérisques littéraux (au lieu d’une balise HTML &lt;em>), vous pouvez utiliser des barres obliques inverses avant les astérisques, comme suit :
+Vous pouvez utiliser des caractères d’échappement par barre oblique inverse pour générer des caractères littéraux ayant une signification spéciale dans la syntaxe de formatage. Par exemple, pour entourer un mot par des astérisques littéraux (au lieu d’une balise &lt;em> HTML), vous pouvez utiliser des barres obliques inverses avant les astérisques, comme suit :
 
     `\\*literal asterisks\\*`
 
