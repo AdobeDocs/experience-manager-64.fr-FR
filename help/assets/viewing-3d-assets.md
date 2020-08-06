@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '1755'
+ht-degree: 64%
 
 ---
 
@@ -21,7 +24,7 @@ Ce document décrit comment afficher les ressources 3D sur la page Détails de 
 
 ## Affichage des ressources 3D sur la page Détails de l’actif {#viewing-d-assets-in-the-asset-details-page}
 
-La visionneuse 3D interactive est disponible sur la page de détails de la ressource dans AEM. La visionneuse comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
+La visionneuse 3D interactive est disponible sur la page de détails de la ressource dans AEM. La visionneuse comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
 
 ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -35,23 +38,23 @@ Voir [Utilisation de scènes dans AEM 3D](about-the-use-of-stages-in-aem-3d.md)
 
 ### Facteurs de performance lors de l’affichage de ressources 3D {#performance-considerations-when-you-view-d-assets}
 
-Le délai nécessaire pour ouvrir une ressource 3D sur la page de détails de la ressource dépend de plusieurs facteurs. Ces facteurs sont entre autres :
+Le délai nécessaire pour ouvrir une ressource 3D sur la page de détails de la ressource dépend de plusieurs facteurs. Ces facteurs sont, entre autres :
 
 * Bande passante et latences du serveur
 * Taille du modèle (nombre de faces)
 * Nombre et taille des correspondances
 * Complexité de la scène. Par exemple, la taille de l’image IBL
 
-En outre, les fonctionnalités de l’ordinateur client (station de travail, ordinateur portable ou appareil tactile mobile, par exemple) sont également importantes à prendre en compte lorsque vous manipulez l’appareil de manière interactive. Un système relativement puissant avec de bonnes capacités graphiques peut rendre l’expérience interactive d’affichage en 3D plus fluide et plus favorable.
+De plus, les capacités de l’ordinateur client, par exemple un poste de travail, un ordinateur portable ou un appareil mobile tactile, doivent être prises en compte lorsque vous manipulez la caméra de manière interactive. Un système relativement puissant avec de bonnes capacités graphiques peut rendre l’expérience interactive d’affichage en 3D plus fluide et plus favorable.
 
-**Pour afficher des fichiers** 3D :
+**Pour vue de fichiers** 3D :
 
 1. Assurez-vous d’avoir chargé des ressources 3D dans AEM.
 
    Reportez-vous à la section [À propos du téléchargement et du traitement des ressources 3D dans AEM](upload-processing-3d-assets.md).
 
 1. From AEM, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets]**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
+1. Dans l’angle supérieur droit de la page, dans la liste déroulante **[!UICONTROL Vue]**, appuyez sur **[!UICONTROL Mode Carte]**.
 1. Accédez à une ressource 3D que vous souhaitez afficher.
 1. Appuyez sur la carte de la ressource 3D pour l’ouvrir sur la page Détails de l’actif.
 1. Procédez de l’une des manières suivantes :
@@ -64,48 +67,50 @@ En outre, les fonctionnalités de l’ordinateur client (station de travail, ord
    <table> 
     <tbody> 
       <tr> 
-      <td><strong>Nom du contrôle de l’appareil photo</strong><br /> </td> 
+      <td><strong>Nom du contrôle de l'appareil photo</strong><br /> </td> 
       <td><strong>Description</strong></td> 
       </tr> 
       <tr> 
       <td><p>Zoom</p> <p>ou</p> <p>Persp</p> </td> 
       <td><p>Appuyez ou cliquez pour basculer entre les modes Zoom et Perspective.</p> <p>Or, press and hold down the <code>ALT/OPTION</code> key during the action to temporarily toggle to Perspective<br /> mode. Relâchez la touche pour revenir en mode Zoom.</p> 
       <ul> 
-      <li><strong>Comportement Zoom</strong>-Dolly en entrée et en sortie qui rapproche ou éloigne la caméra de la ressource<br /> que vous visualisez. Zoom est le comportement par défaut de la roulette de défilement d’une souris (le cas échéant) pour les gestes de pincement à deux doigts sur les appareils mobiles ou lorsque vous appuyez de manière prolongée sur la touche Maj tout en faisant glisser vers le haut ou vers le bas à l’aide du bouton gauche de la souris.</li> 
-      <li><strong>Perspective</strong>-Modifie la distance focale (également appelée champ de vision) de la caméra tout en conservant la taille relative de la ressource dans la vue. Perspective est le comportement alternatif de la roulette de défilement (le cas échéant) pour les gestes de pincement à deux doigts sur les appareils mobiles ou lorsque vous appuyez de manière prolongée sur la touche Maj tout en faisant glisser vers le haut ou vers le bas à l’aide du bouton gauche de la souris.</li> 
+      <li><strong>Comportement Zoom</strong>-Dolly en avant et en arrière qui rapproche ou éloigne la caméra de la ressource<br /> que vous visualisez. Zoom est le comportement par défaut de la roulette de défilement d’une souris (le cas échéant) pour les gestes de pincement à deux doigts sur les appareils mobiles ou lorsque vous appuyez de manière prolongée sur la touche Maj tout en faisant glisser vers le haut ou vers le bas à l’aide du bouton gauche de la souris.</li> 
+      <li><strong>Perspective</strong>- Modifie la longueur focale (également appelée champ de vue) de la caméra tout en conservant la taille relative de la ressource dans la vue. Perspective est le comportement alternatif de la roulette de défilement (le cas échéant) pour les gestes de pincement à deux doigts sur les appareils mobiles ou lorsque vous appuyez de manière prolongée sur la touche Maj tout en faisant glisser vers le haut ou vers le bas à l’aide du bouton gauche de la souris.</li> 
       </ul> </td> 
       </tr> 
       <tr> 
       <td><p>Orbite</p> <p>ou</p> <p>Panoramique</p> </td> 
       <td><p>Appuyez ou cliquez pour basculer entre les modes Orbite et Panoramique.</p> <p>Or, press and hold the <code>ALT/OPTION</code> key during the action to temporarily toggle to Pan mode. Relâchez la touche pour revenir en mode Orbite.</p> 
       <ul> 
-      <li><strong>Orbite</strong>- Déplace la caméra de visualisation sur une sphère centrée sur un point cible situé près du centre de la ressource 3D par défaut. Orbite est le comportement par défaut pour un glisser avec le bouton gauche ou un glisser par un seul toucher sur les appareils mobiles.</li> 
-      <li><strong>Panoramique</strong>-Déplace la caméra dans le plan de visualisation. Le point cible est déplacé en conséquence. Ainsi, les actions d’orbite suivantes déplaceront la caméra autour d’un nouveau point cible. Panoramique est le comportement alternatif pour le glisser avec le bouton gauche et le glisser par un seul toucher.</li> 
+      <li><strong>Orbite</strong>- Déplace la caméra d'affichage sur une sphère centrée sur un point de cible situé près du centre de la ressource 3D par défaut. Orbite est le comportement par défaut pour un glisser avec le bouton gauche ou un glisser par un seul toucher sur les appareils mobiles.</li> 
+      <li><strong>Panoramique</strong>: déplace la caméra dans le plan de visualisation. Le point cible est déplacé en conséquence. Ainsi, les actions d’orbite suivantes déplaceront la caméra autour d’un nouveau point cible. Panoramique est le comportement alternatif pour le glisser avec le bouton gauche et le glisser par un seul toucher.</li> 
       </ul> </td> 
       </tr> 
       <tr> 
       <td><p>Examen</p> <p>ou</p> <p>Cible</p> </td> 
-      <td><p>Appuyez ou cliquez pour basculer entre les modes Examen et Target.</p> 
+      <td><p>Appuyez ou cliquez pour basculer entre les modes Examen et Cible.</p> 
       <ul> 
-      <li><strong>Examinez</strong>-Appuyez ou cliquez pour passer en mode Target.</li> 
-      <li><strong>Target</strong>-Appuyez ou cliquez sur un point n’importe où sur la ressource 3D pour centrer la vue sur cette partie de la ressource.<br /> Les actions d’orbite utilisent le nouveau point cible.</li> 
+      <li><strong>Examinez</strong>-Appuyez ou cliquez pour passer en mode Cible.</li> 
+      <li><strong>Appuyez sur Cible</strong>ou cliquez n'importe où sur la ressource 3D pour centrer la vue sur cette partie de la ressource.<br /> Les actions d’orbite utilisent le nouveau point cible.</li> 
       </ul> </td> 
       </tr> 
       <tr> 
       <td>Réinitialiser</td> 
-      <td>Appuyez ou cliquez pour rétablir le point cible de la vue au centre du modèle. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
+      <td>Appuyez ou cliquez pour rétablir le point de cible de vue au centre du modèle. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
       </tr> 
     </tbody> 
     </table>
 
    * Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon. Sélectionnez un nom de scène avec l’arrière-plan et l’éclairage à appliquer à la ressource 3D.
+
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
-   Les étapes fournissent l’environnement, l’arrière-plan, le plan au sol et l’éclairage dans lesquels le modèle 3D est affiché.
+   Les étapes fournissent l&#39;environnement-arrière-plan, le plan au sol et l&#39;éclairage dans lesquels le modèle 3D est visualisé.
 
    Voir [Utilisation de scènes dans AEM 3D](about-the-use-of-stages-in-aem-3d.md).
 
    * Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon, then select a camera view that you want to apply to the 3D asset.
+
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
    Les scènes fournissent souvent des caméras prédéfinies. Vous pouvez sélectionner à nouveau la caméra actuelle pour restaurer ses paramètres prédéfinis.
@@ -119,13 +124,13 @@ En outre, les fonctionnalités de l’ordinateur client (station de travail, ord
 
       Voir [Rendu des ressources 3D](rendering-3d-assets.md).
 
-   * Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Fermer]** pour revenir à la page Assets.
+   * Dans l’angle supérieur droit de la page, appuyez sur **[!UICONTROL Fermer]** pour revenir à la page Ressources.
 
 ## Affichage des ressources 3D dans le composant Sites 3D {#viewing-d-assets-in-the-sites-d-component}
 
 >[!NOTE]
 >
->Cette section s’applique uniquement au lecteur webGL classique utilisé pour les types de ressources 3D autres qu’Adobe Dimension.
+>Cette section s’applique uniquement au lecteur webGL classique utilisé pour les types de ressources 3D autres que Adobe Dimension.
 
 Selon le type de périphérique, vous accédez aux fonctions du composant 3D de diverses façons.
 
@@ -135,7 +140,7 @@ Pour plus d’informations, consultez les sections suivantes :
 * [Périphériques dotés d’un pavé tactile](#touchpad-devices)
 * [Périphériques dotés d’une souris ou d’un trackball](#mouse-and-trackball-devices)
 
-Voir aussi [Prévisualisation d’une page Web comportant un composant](using-the-3d-sites-component.md#previewing-a-web-page-that-has-a-d-component)3D.
+Voir aussi [Prévisualisation d’une page Web contenant un composant](using-the-3d-sites-component.md#previewing-a-web-page-that-has-a-d-component)3D.
 
 ![screen_shot_2017-12-11at145654](assets/screen_shot_2017-12-11at145654.png)
 
