@@ -11,6 +11,9 @@ topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '696'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +31,7 @@ Les formulaires HTML5 sont de plus en plus utilisés sur les périphériques tac
 
    >[!NOTE]
    >
-   >Les dimensions du champ sélectionné dans Forms Designer sont répercutées lors du rendu du champ. Toutefois, la dimension de la zone de signature rendue est calculée en fonction des proportions du champ et non des dimensions spécifiées dans Forms Designer.
+   >Les Dimensions du champ sélectionné dans Forms Designer sont répercutées lors du rendu du champ. Toutefois, la dimension de la zone de signature rendue est calculée en fonction des proportions du champ et non des dimensions spécifiées dans Forms Designer.
 
 1. Configurez le champ de signature tactile.
 
