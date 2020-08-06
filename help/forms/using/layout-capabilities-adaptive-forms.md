@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 10bf1d44-9660-44d9-b2c3-dd9a252efc3a
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '1172'
+ht-degree: 71%
 
 ---
 
@@ -29,7 +32,7 @@ Avant de découvrir les différentes fonctionnalités de disposition des formula
 
 Un formulaire adaptatif vous propose les types de disposition suivants :
 
-**Disposition** du panneau Contrôle la manière dont les éléments ou les composants d’un panneau sont affichés sur un périphérique.
+**Disposition** du panneau Contrôle l’affichage des éléments ou composants d’un panneau sur un périphérique.
 
 **Disposition** mobile Contrôle la navigation d’un formulaire sur un périphérique mobile. Si la largeur de l’écran d’un périphérique est supérieure ou égale à 768 pixels, la disposition est considérée comme étant adaptée à un appareil mobile et optimisée en conséquence.
 
@@ -51,7 +54,7 @@ Un auteur de formulaire peut associer une disposition à chaque panneau d’un f
 
 The Panel layouts are available at `/libs/fd/af/layouts/panel` location.
 
-![](assets/layouts.png) Liste des dispositions de panneau pour le panneau racine d’un formulaire **adaptatif** Figure : *Liste des dispositions de panneau dans les formulaires adaptatifs*
+![Liste des dispositions de panneau pour le panneau racine d’un formulaire](assets/layouts.png)**adaptatif Figure :** *Liste des dispositions de panneaux dans les formulaires adaptatifs*
 
 ### Réactif : tous sur une page sans navigation {#responsive-everything-on-one-page-without-navigation-br}
 
@@ -61,11 +64,11 @@ Using this layout, you can place multiple **[!UICONTROL Panel adaptive form]** c
 
 ![Formulaire avec disposition réactive, tel qu’il est affiché sur un écran de petite taille](assets/responsive_layout_seen_on_small_screen.png)
 
-**** Figure : *Un formulaire avec une disposition réactive, comme sur un petit écran*
+**Figure :** *Formulaire avec disposition réactive, tel qu’il est affiché sur un petit écran*
 
 ![Formulaire avec disposition réactive, tel qu’il est affiché sur un grand écran](assets/responsive_layout_seen_on_large_screen.png)
 
-**** Figure : *Formulaire avec disposition réactive, tel qu’il apparaît sur un grand écran*
+**Figure :** *Formulaire avec disposition réactive, tel qu’il est affiché sur un grand écran*
 
 ### Assistant : création de formulaire en plusieurs étapes, une étape à la fois {#wizard-a-multi-step-form-showing-one-step-at-a-time}
 
@@ -79,11 +82,11 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![Expression de fin d’étape dans la disposition Assistant d’un formulaire à plusieurs étapes](assets/layout-sidebar.png)
 
-**** Figure : Expression de fin d’ *étape dans la disposition Assistant pour un formulaire à plusieurs étapes*
+**Figure :** *expression de fin d’étape dans la disposition Assistant pour un formulaire à plusieurs étapes*
 
 ![Formulaire avec assistant](assets/wizard-layout.png)
 
-**** Figure : Formulaire *utilisant l’assistant*
+**Figure :** *Formulaire à l’aide de l’Assistant*
 
 ### Disposition de la conception en accordéon {#layout-for-accordion-design}
 
@@ -93,7 +96,7 @@ Une expression récapitulative peut être utilisée pour afficher les valeurs fo
 
 ![Panneaux reproductibles utilisant une disposition de type Accordéon dans des formulaires adaptatifs](assets/repeatable_panels_using_accordion_layout.png)
 
-**** Figure : Panneaux *répétables créés à l’aide de la disposition Accordéon*
+**Figure :** *Panneaux répétables créés à l’aide de la disposition Accordéon*
 
 ### Disposition avec onglets – Les onglets s’affichent sur la gauche {#tabbed-layout-tabs-appear-on-the-left}
 
@@ -101,7 +104,7 @@ Using this layout, you can place the `Panel adaptive form` component in a panel 
 
 ![Dans la disposition avec onglets, les onglets sont affichés à gauche.](assets/tabbed_layout_left.png)
 
-**** Figure : *Onglets affichés à gauche d’un panneau*
+**Figure :** *Onglets affichés à gauche d’un panneau*
 
 ### Disposition avec onglets – Les onglets s’affichent en haut {#tabbed-layout-tabs-appear-on-the-top}
 
@@ -109,7 +112,7 @@ Using this layout, you can place the `Panel adaptive form` Component in a panel 
 
 ![Disposition à onglets dans des formulaires adaptatifs, avec affichage des onglets en position supérieure](assets/tabbed_layout_top.png)
 
-**** Figure : *Onglets apparaissant en haut d’un panneau*
+**Figure :** *Onglets s’affichant en haut d’un panneau*
 
 ## Dispositions pour appareils mobiles {#mobile-layouts}
 
@@ -117,11 +120,11 @@ Ces dispositions permettent de naviguer de manière conviviale sur les appareils
 
 Avec cette disposition, le contrôle de la navigation s’effectue à l’aide d’une barre de navigation et d’un menu de navigation. The navigation bar shows **&lt;** and **>** icon to indicate **next** and **previous** navigation steps in the form.
 
-Les mises en page mobiles sont disponibles à `/libs/fd/af/layouts/mobile/` l’emplacement. Les dispositions mobiles suivantes sont disponibles par défaut dans les formulaires adaptatifs.
+Les dispositions pour dispositifs portables sont disponibles à `/libs/fd/af/layouts/mobile/` l’emplacement. Par défaut, les dispositions mobiles suivantes sont disponibles dans les formulaires adaptatifs.
 
 ![Liste de dispositions pour appareils mobiles dans les formulaires adaptatifs](assets/mobile-navigation.png)
 
-**** Figure : *Liste des mises en page mobiles dans les formulaires adaptatifs*
+**Figure :** *Liste des dispositions pour dispositifs portables dans les formulaires adaptatifs*
 
 When using a mobile layout, the form menu, to access various form panels, is available by tapping ![aem6forms_form_menu](assets/aem6forms_form_menu.png) icon.
 
@@ -131,7 +134,7 @@ Cette disposition, comme son nom l’indique, affiche les titres du panneau avec
 
 ![Dispositions pour appareils mobiles avec affichage du titre du panneau dans les en-têtes de formulaire](assets/mobile_layout_with.png)
 
-**** Figure : Dispositions *mobiles avec titres de panneau dans les en-têtes de formulaire*
+**Figure :** *Dispositions mobiles avec titres de panneau dans les en-têtes de formulaire*
 
 ### Disposition sans titres de panneau dans l’en-tête de formulaire {#layout-without-panel-titles-in-the-form-header}
 
@@ -139,7 +142,7 @@ Cette disposition, comme son nom l’indique, affiche uniquement le menu et la b
 
 ![Dispositions pour appareils mobiles sans affichage du titre du panneau dans les en-têtes de formulaire](assets/mobile_layout_without.png)
 
-**** Figure : Dispositions *mobiles sans titre de panneau dans les en-têtes de formulaire*
+**Figure :** *Dispositions mobiles sans titre de panneau dans les en-têtes de formulaire*
 
 ## Mises en page de barre d’outils {#toolbar-layouts}
 
@@ -147,7 +150,7 @@ Une disposition de barre d’outils contrôle le positionnement et l’affichage
 
 ![Liste des dispositions de barre d’outils dans des formulaires adaptatifs en vue de contrôler la disposition des boutons](assets/toolbar-layouts.png)
 
-**** Figure : *Liste des dispositions de barre d’outils dans les formulaires adaptatifs*
+**Figure :** *liste de dispositions de barre d’outils dans les formulaires adaptatifs*
 
 Toolbar layouts are available at `/libs/fd/af/layouts/toolbar` location. Les formulaires adaptatifs fournissent, par défaut, les dispositions de barre d’outils suivantes.
 
@@ -159,7 +162,7 @@ Vous pouvez, en outre, ajouter plusieurs barres d’outils contenant des boutons
 
 ![Affichage par défaut de la barre d’outils](assets/toolbar_layout_default.png)
 
-**** Figure : Vue *par défaut de la barre d’outils*
+**Figure :** *vue par défaut de la barre d’outils*
 
 ### Disposition fixe pour appareil mobile pour la barre d’outils {#mobile-fixed-layout-for-toolbar}
 
@@ -171,5 +174,5 @@ Dans le cas de la disposition pour appareils mobiles, vous pouvez ajouter des bo
 
 ![Disposition fixe pour appareil mobile pour la barre d’outils](assets/toolbar_layout_mobile_fixed.png)
 
-**** Figure : Disposition fixe *Mobile pour la barre d’outils*
+**Figure :** *Disposition fixe pour mobile pour la barre d’outils*
 
