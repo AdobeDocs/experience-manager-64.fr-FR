@@ -69,7 +69,7 @@ Adobe Experience Manager est un système client-serveur web qui permet de créer
 
 Au niveau infrastructure, AEM fournit les éléments suivants :
 
-* **Application web Server**: AEM peut être déployé en mode autonome (il comprend un serveur Web Jetty intégré) ou en tant qu’application Web au sein d’un serveur d’applications tiers (WebLogic, WebSphere, etc.).
+* **Application web Server**: AEM peut être déployé en mode autonome (il inclut un serveur Web Jetty intégré) ou en tant qu’application Web au sein d’un serveur d’applications tiers (WebLogic, WebSphere, etc.).
 * **Infrastructure d’application web** : AEM intègre l’infrastructure d’application web Sling qui simplifie l’écriture d’applications web REST orientées contenu.
 * **Référentiel de contenu** : AEM comprend un référentiel de contenu Java (JCR). Il s’agit d’un type de base de données hiérarchique destiné aux données semi-structurées et non structurées. Le référentiel stocke le contenu affiché aux utilisateurs et l’ensemble du code, des modèles et des données internes utilisés par l’application.
 
@@ -118,7 +118,7 @@ AEM Managed Services est une solution complète pour la gestion de l’expérien
 
 Avec AEM Managed Services, les clients peuvent bénéficier des avantages suivants :
 
-**Un délai de mise sur le marché plus rapide :** avec l’infrastructure cloud flexible d’Adobe Managed Services, les entreprises peuvent rapidement planifier, lancer et optimiser des expériences numériques réussies. Adobe gère l’architecture de cloud sans avoir besoin de capital, de matériel ou de logiciels supplémentaires et les ingénieurs clients de Adobe, aident à l’architecture AEM, à la mise en service et à la personnalisation pour la connexion aux applications dorsales et aux meilleures pratiques de mise en service.
+**Un délai de mise sur le marché plus rapide :** avec l’infrastructure cloud flexible d’Adobe Managed Services, les entreprises peuvent rapidement planifier, lancer et optimiser des expériences numériques réussies. Adobe gère l’architecture du cloud sans avoir besoin de capital, de matériel ou de logiciels supplémentaires et les ingénieurs de réussite client de l’Adobe, vous aident à concevoir AEM architecture, à configurer et à personnaliser la connexion aux applications dorsales et les meilleures pratiques de mise en service.
 
 **Meilleures performances :** fournit des expériences numériques fiables pour votre entreprise avec quatre options de disponibilité du service : 99,5 %, 99,9 %, 99,95 % et 99,99 %. De plus, il permet des modèles de sauvegarde automatique et de reprise après sinistre multimode pour garantir la fiabilité et la gestion des situations d&#39;urgence.
 
