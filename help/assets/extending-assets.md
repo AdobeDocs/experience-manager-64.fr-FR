@@ -4,6 +4,9 @@ description: Découvrez les moyens par lesquels vous pouvez personnaliser et ét
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +28,7 @@ Les aspects suivants de la fonctionnalité peuvent être adaptés ou développé
 
 ## Personnalisation de l’apparence et du comportement {#customizing-the-look-and-feel}
 
-Les aspects suivants de l’apparence de l’éditeur de fichiers peuvent être personnalisés :
+Les aspects suivants de l’aspect de l’éditeur de ressources peuvent être personnalisés :
 
 * Logo : vous pouvez ajouter le logo de votre entreprise à l’interface.
 * Couleurs et polices : vous pouvez changer les couleurs et polices de l’interface.
