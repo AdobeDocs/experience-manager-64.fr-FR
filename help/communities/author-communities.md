@@ -1,8 +1,8 @@
 ---
 title: Composants d’AEM Communities
 seo-title: Composants d’AEM Communities
-description: 'Ajout de fonctionnalités de la communauté à un site AEM '
-seo-description: 'Ajout de fonctionnalités de la communauté à un site AEM '
+description: 'Ajouter des fonctionnalités de la communauté à tout site AEM '
+seo-description: 'Ajouter des fonctionnalités de la communauté à tout site AEM '
 uuid: 676abcda-3021-498d-a6eb-b60004315349
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dc149196-fa56-494e-975c-b11ca1ef193b
 translation-type: tm+mt
 source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 67%
 
 ---
 
@@ -64,13 +67,13 @@ See also the interactive [Community Components guide](components-guide.md).
 | Message | [Message](configure-messaging.md) |
 | Liste des messages | [Message](configure-messaging.md) |
 | Q&amp;R | [Questions et réponses](working-with-qna.md) |
-| Recherche rapide | [Recherche](search.md) |
+| Recherche rapide | [Rechercher](search.md) |
 | Évaluation | [Évaluation](rating.md) |
 | Questions connexes | [Questions et réponses](working-with-qna.md) |
 | Révisions | [Révisions](reviews.md) |
 | Résumé des révisions (affichage) | [Révisions](reviews.md) |
-| Recherche | [Recherche](search.md) |
-| Résultat de la recherche | [Recherche](search.md) |
+| Rechercher | [Rechercher](search.md) |
+| Résultat de la recherche | [Rechercher](search.md) |
 | Nuage de balises sociales | [Nuage de balises sociales](tagcloud.md) |
 | Vote | [Vote](voting.md) |
 
