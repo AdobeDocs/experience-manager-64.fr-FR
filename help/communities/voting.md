@@ -1,8 +1,8 @@
 ---
 title: Utilisation du composant Vote
 seo-title: Utilisation du composant Vote
-description: Ajout du composant Vote à une page
-seo-description: Ajout du composant Vote à une page
+description: Ajouter le composant Voting à une page
+seo-description: Ajouter le composant Voting à une page
 uuid: 56e6cced-2f2d-434a-8fde-92a6c2478a04
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 26%
 
 ---
 
@@ -21,7 +24,7 @@ The `Voting` component is a useful tool that allows community members to rate a 
 
 ## Ajout d’un composant Vote à une page {#adding-voting-to-a-page}
 
-Pour ajouter un `Voting` composant à une page en mode d’auteur, utilisez le navigateur de composants pour le localiser `Communities / Voting` et le faire glisser vers son emplacement sur une page, par exemple une position relative à la fonction sur laquelle les utilisateurs peuvent voter.
+Pour ajouter un `Voting` composant à une page en mode création, utilisez l’explorateur de composants pour le localiser `Communities / Voting` et le faire glisser sur une page, par exemple une position relative à la fonction sur laquelle les utilisateurs peuvent voter.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
@@ -39,11 +42,17 @@ Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used t
 
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
-* **[!UICONTROL Libellé]** de réponse positive (*Obligatoire*) Nom de propriété interne pour une réponse positive.
+* **[!UICONTROL Etiquette de réponse positive]**
+(
+*Obligatoire*) Nom de propriété interne pour une réponse positive.
 
-* **[!UICONTROL Étiquette]** de réponse négative (*Obligatoire*) Nom de propriété interne pour une réponse négative.
+* **[!UICONTROL Etiquette de réponse négative]**
+(
+*Obligatoire*) Nom de propriété interne pour une réponse négative.
 
-* **[!UICONTROL Nom]** du compte (*Obligatoire*) Nom de propriété interne identifiable pour cette instance d’un composant de vote.
+* **[!UICONTROL Nom Tally]**
+(
+*Obligatoire*) Nom de propriété interne identifiable pour cette instance d&#39;un composant de vote.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
