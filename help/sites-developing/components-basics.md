@@ -61,7 +61,7 @@ Avant de commencer à configurer ou coder réellement votre composant, vous deve
 Avant toute considération sérieuse sur le développement de composants, vous devez savoir quelle IU vos auteurs vont utiliser :
 
 * **Interface utilisateur optimisée pour les écrans tactiles**
-   [Interface](/help/sites-developing/touch-ui-concepts.md) utilisateur standard introduite dans AEM 5.6.0 en tant que prévisualisation et étendue dans la version 6.x. Il repose sur l’expérience utilisateur unifiée de l’Adobe Marketing Cloud, en utilisant les technologies sous-jacentes de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral et de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#granite-ui)Granite.
+   [Interface](/help/sites-developing/touch-ui-concepts.md) utilisateur standard introduite dans AEM 5.6.0 en tant que prévisualisation et étendue dans 6.x. Il est basé sur l’expérience utilisateur unifiée de Adobe Marketing Cloud, en utilisant les technologies sous-jacentes de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral et de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#granite-ui)Granite.
 
 * **IU classique** Interface utilisateur basée sur la technologie ExtJS introduite avec CQ 5.1.
 
@@ -73,7 +73,7 @@ Pour cette raison, nous allons aborder les notions de base des deux interfaces
 
 >[!NOTE]
 >
->Adobe recommande de tirer parti de l’interface utilisateur tactile pour tirer parti des dernières technologies. [AEM Modernination Tools&amp;(modernatzion-tools.md)] peut faciliter la migration.
+>Adobe recommande de tirer parti de l’interface utilisateur tactile pour bénéficier des dernières technologies. [AEM Modernination Tools&amp;(modernatzion-tools.md) peut faciliter la migration.
 
 ### Logique de contenu et balisage de rendu  {#content-logic-and-rendering-markup}
 
