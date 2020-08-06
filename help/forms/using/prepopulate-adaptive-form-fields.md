@@ -244,9 +244,10 @@ Pour activer le service de préremplissage, spécifiez la configuration du servi
 
    * file:///C:/Users/public/Document/Prefill/.&amp;ast;
    * http://localhost:8000/somesamplexmlfile.xml
+
    >[!NOTE]
    >
-   >Par défaut, le préremplissage est autorisé par le biais des fichiers crx pour tous les types de formulaires adaptatifs (XSD, XDP, JSON, FDM et sans modèle de formulaire). Le préremplissage est autorisé uniquement avec les fichiers XML et JSON.
+   >Par défaut, le préremplissage est autorisé par le biais des fichiers crx pour tous les types de Forms adaptative (XSD, XDP, JSON, FDM et sans modèle de formulaire). Le préremplissage est autorisé uniquement avec les fichiers XML et JSON.
 
 1. Le service de préremplissage est maintenant configuré pour votre formulaire.
 
