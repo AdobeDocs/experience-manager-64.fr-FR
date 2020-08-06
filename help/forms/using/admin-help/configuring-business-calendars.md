@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1934'
+ht-degree: 94%
 
 ---
 
@@ -37,11 +40,11 @@ Si certains utilisateurs de votre entreprise ont des jours non ouvrés différen
 
 1. Choisissez la méthode appropriée d’association du calendrier professionnel à un utilisateur, parmi les deux suivantes :
 
-   **** Adhésion au groupe : Vous pouvez affecter un calendrier professionnel à un utilisateur en fonction de son appartenance à un groupe. Dans ce cas, chaque utilisateur du groupe utilise le même calendrier professionnel. 
+   **Appartenance à un groupe :** Vous pouvez affecter un calendrier professionnel à un utilisateur en fonction de son appartenance à un groupe. Dans ce cas, chaque utilisateur du groupe utilise le même calendrier professionnel. 
 
    Si un utilisateur est membre de deux groupes et si ces groupes sont associés à deux calendriers professionnels différents, AEM Forms utilise le premier calendrier qui s’affiche dans les résultats de recherche. Vous devez alors envisager d’utiliser des clés de calendriers professionnels pour associer les utilisateurs aux calendriers professionnels.
 
-   **** Clés de calendrier professionnel : Vous pouvez affecter un calendrier professionnel à un utilisateur en fonction d’une clé de calendrier professionnel, paramètre défini dans User Management. Associez ensuite la clé de calendrier professionnel à un calendrier professionnel dans le processus des formulaires. 
+   **Clés de calendrier professionnel :** Vous pouvez affecter un calendrier professionnel à un utilisateur en fonction d’une clé de calendrier professionnel, paramètre défini dans User Management. Associez ensuite la clé de calendrier professionnel à un calendrier professionnel dans le processus des formulaires. 
 
     Les clés de calendrier professionnel sont attribuées à des utilisateurs en fonction du domaine utilisé, tel que le domaine d’entreprise, local ou hybride Pour plus d’informations sur la configuration de domaines, voir [Ajout de domaines](/help/forms/using/admin-help/adding-domains.md#adding-domains). 
 
@@ -71,7 +74,7 @@ Si votre organisation comprend différents groupes d’utilisateurs pour lesquel
    Pour modifier un calendrier professionnel existant, sélectionnez-le dans la liste déroulante.
 
 1. Sous Jours non ouvrés par défaut, sélectionnez les jours non ouvrés par défaut de votre choix dans la semaine (week-ends, par exemple).
-1. [Facultatif] Sélectionnez Utiliser les heures de bureau et spécifiez les heures de début et de fin des jours ouvrés.
+1. [Facultatif] Sélectionnez Utiliser les heures de bureau et spécifiez les heures de début et de fin pour les jours ouvrés.
 
    Si vous sélectionnez cette option, un événement qui se produit avant la plage horaire définie est déplacé au début de la plage horaire et un événement qui se produit après est déplacé à l’heure de début du prochain jour ouvré.
 
