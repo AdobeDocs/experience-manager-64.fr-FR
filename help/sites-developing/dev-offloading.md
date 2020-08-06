@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 86%
 
 ---
 
@@ -25,8 +28,8 @@ Pour plus d’informations sur la création de topologies de déchargement et la
 
 La structure de déchargement définit deux propriétés de tâche que vous utilisez pour identifier la charge utile de la tâche. Les agents de réplication de déchargement utilisent ces propriétés pour identifier les ressources à répliquer sur les instances de la topologie :
 
-* `offloading.job.input.payload`: Liste de chemins de contenu séparés par des virgules. Le contenu est répliqué sur l’instance qui exécute la tâche.
-* `offloading.job.output.payload`: Liste de chemins de contenu séparés par des virgules. Une fois l’exécution de la tâche terminée, la charge utile est répliquée sur ces chemins d’accès sur l’instance qui a créé la tâche.
+* `offloading.job.input.payload`: liste de chemins de contenu séparés par des virgules. Le contenu est répliqué sur l’instance qui exécute la tâche.
+* `offloading.job.output.payload`: liste de chemins de contenu séparés par des virgules. Une fois l’exécution de la tâche terminée, la charge utile est répliquée sur ces chemins d’accès sur l’instance qui a créé la tâche.
 
 Utilisez l’énumération `OffloadingJobProperties` pour faire référence aux noms de propriété :
 
