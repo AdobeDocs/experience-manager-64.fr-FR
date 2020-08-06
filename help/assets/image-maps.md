@@ -1,14 +1,17 @@
 ---
-title: Ajout de zones cliquables
+title: Ajouter des zones cliquables
 description: Découvrez comment ajouter des zones cliquables avec liens hypertexte aux ressources d’images.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 20%
 
 ---
 
 
-# Ajout de zones cliquables {#adding-image-maps}
+# Ajouter des zones cliquables {#adding-image-maps}
 
 Découvrez comment ajouter des zones cliquables avec liens hypertexte aux ressources d’images.
 
@@ -47,7 +50,7 @@ Les zones cliquables permettent d’ajouter des zones de lien hypertexte qui fon
 
    ![chlimage_1-425](assets/chlimage_1-425.png)
 
-1. Pour afficher la zone cliquable, accédez à la page des détails du fichier, puis passez le curseur sur l’image.
+1. Pour vue de la zone cliquable, accédez à la page des détails du fichier, puis placez le curseur sur l’image.
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
