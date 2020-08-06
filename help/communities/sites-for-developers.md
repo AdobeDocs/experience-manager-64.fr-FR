@@ -1,8 +1,8 @@
 ---
 title: Site communautaire Essentials
 seo-title: Site communautaire Essentials
-description: Exportation et suppression de sites de la communauté et création de modèles de site personnalisés
-seo-description: Exportation et suppression de sites de la communauté et création de modèles de site personnalisés
+description: Exportation et suppression de sites communautaires et création de modèles de sites personnalisés
+seo-description: Exportation et suppression de sites communautaires et création de modèles de sites personnalisés
 uuid: f0ec0e71-64e9-415a-b14a-939a9b1611c1
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 1%
 
 ---
 
@@ -19,14 +22,14 @@ source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
 
 ## Modèle de site personnalisé {#custom-site-template}
 
-Un modèle de site personnalisé peut être spécifié séparément pour chaque copie linguistique d’un site communautaire.
+Un modèle de site personnalisé peut être spécifié séparément pour chaque copie de langue d’un site communautaire.
 
 Pour ce faire,
 
 * Création d’un modèle personnalisé
-* Recouvrir le chemin d’accès au modèle de site par défaut
+* Recouvrir le chemin d&#39;accès au modèle de site par défaut
 * Ajouter le modèle personnalisé au chemin d’accès de l’incrustation
-* Spécifiez le modèle personnalisé en ajoutant une `page-template` propriété au `configuration` noeud
+* Spécifiez le modèle personnalisé en ajoutant une `page-template` propriété au `configuration` noeud.
 
 **Modèle** par défaut :
 
@@ -34,7 +37,7 @@ Pour ce faire,
 
 **Modèle personnalisé dans le chemin** d’incrustation :
 
-/**apps**/social/console/components/hbs/sitepage/**&lt;nomdu *modèle*>**.hbs
+/**apps**/social/console/components/hbs/sitepage/**&lt;nom *du*modèle>**.hbs
 
 **Propriété**: page-template\
 **Type** : String\
@@ -58,7 +61,7 @@ Par exemple : /content/sites/engagement/fr/configuration
 
 Par exemple, `vertical-sitepage.hbs` est un modèle de site qui permet de placer les liens de menu verticalement sur le côté gauche de la page, plutôt que horizontalement sous la bannière.
 
-[Obtenir un fichier](assets/vertical-sitepage.hbs)Placez le modèle de site personnalisé dans le dossier de recouvrement :
+[Obtenir un fichier](assets/vertical-sitepage.hbs)Placez le modèle de site personnalisé dans le dossier d’incrustation :
 
 /**apps**/social/console/components/hbs/sitepage/**vertical-sitepage**.hbs
 
@@ -68,27 +71,27 @@ Identifiez le modèle personnalisé en ajoutant une `page-template` propriété 
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
-Veillez à **Enregistrer tout** et à répliquer le code personnalisé dans toutes les instances AEM (le code personnalisé n’est pas inclus lorsque le contenu du site de la communauté est publié à partir de la console).
+Veillez à **Enregistrer tout** et à répliquer le code personnalisé sur toutes les instances AEM (le code personnalisé n’est pas inclus lorsque le contenu du site de la communauté est publié à partir de la console).
 
 La pratique recommandée pour la réplication du code personnalisé consiste à [créer un package](../../help/sites-administering/package-manager.md#creating-a-new-package) et à le déployer sur toutes les instances.
 
 ## Exportation d’un site de la communauté {#exporting-a-community-site}
 
-Une fois un site communautaire créé, il est possible d’exporter le site sous la forme d’un package AEM stocké dans le gestionnaire de packages et disponible pour téléchargement et téléchargement.
+Une fois un site communautaire créé, il est possible d&#39;exporter le site sous la forme d&#39;un package AEM stocké dans le gestionnaire de packages et disponible pour téléchargement et téléchargement.
 
-Cette fonction est disponible dans la console [Sites](sites-console.md#exporting-the-site)des communautés.
+Cette option est disponible dans la console [Sites](sites-console.md#exporting-the-site)des communautés.
 
 Notez que l’UGC et le code personnalisé ne sont pas inclus dans le package du site de la communauté.
 
-Pour exporter l’UGC, utilisez l’outil [de migration UGC des communautés](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM, un outil de migration open source disponible sur GitHub.
+Pour exporter des fichiers UGC, utilisez l&#39;outil [de migration](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM Communities UGC, un outil de migration open source disponible sur GitHub.
 
-## Suppression d’un site de la communauté {#deleting-a-community-site}
+## Suppression d’un site communautaire {#deleting-a-community-site}
 
-Depuis la version 6.3 du Service Pack 1 d’AEM Communities, l’icône Supprimer le site s’affiche lorsque vous passez la souris sur le site de la communauté à partir de la console Communautés > Sites. Au cours du développement, si vous souhaitez supprimer un site communautaire et recommencer à zéro, vous pouvez utiliser cette fonctionnalité. La suppression d’un site communautaire supprime les éléments suivants associés à ce site :
+Depuis AEM Communities 6.3 Service Pack 1, l’icône Supprimer le site s’affiche en survolant le site de la communauté à partir de la console Communautés > Sites. Au cours du développement, si vous souhaitez supprimer un site communautaire et un début actualisé, vous pouvez utiliser cette fonctionnalité. La suppression d’un site communautaire supprime les éléments suivants qui lui sont associés :
 
 * [UGC](#user-generated-content)
 * [Groupes d’utilisateurs](#community-user-groups)
-* [Assets](#enablement-assets)
+* [Ressources](#enablement-assets)
 * [Enregistrements de base de données](#database-records)
 
 ### Identifiant de site unique de la communauté {#community-unique-site-id}
@@ -99,9 +102,10 @@ Pour identifier l’identifiant de site unique associé au site de la communaut�
 
 * Rechercher le `allow<#>` noeud avec un `rep:principalName` format dans ce format `rep:principalName = *community-enable-nrh9h-members*`
 
-* L’ID de site est le troisième composant de `rep:principalName`la variable `rep:principalName = community-enable-nrh9h-members`
+* L’ID de site est le troisième composant de `rep:principalName`Par exemple, si 
+`rep:principalName = community-enable-nrh9h-members`
 
-   * **nom** du site = *enable*
+   * **nom** du site = *activer*
    * **ID** du site = *nrh9h*
    * **ID** de site unique = *enable-nrh9h*
 
@@ -111,19 +115,19 @@ Obtenez le projet community-srp-tools de Github :
 
 * [https://github.com/Adobe-Marketing-Cloud/communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/communities-srp-tools)
 
-Contient une servlet pour supprimer toutes les UGC de tout SRP.
+Il contient une servlet pour supprimer toutes les UGC de tout SRP.
 
 Tout UGC peut être supprimé ou pour un site spécifique, par exemple :
 
-* path=/content/usergenerated/asi/mongo/content/sites/engage
+* path=/content/usergenerate/asi/mongo/content/sites/engagement
 
-Cela supprime uniquement le contenu généré par l’utilisateur (entré lors de la publication) et non le contenu créé (entré lors de la création). Par conséquent, les noeuds [d’](srp.md#shadownodes) ombre ne sont pas affectés.
+Cela supprime uniquement le contenu généré par l’utilisateur (saisi lors de la publication) et non le contenu créé (saisi lors de la création). Par conséquent, les noeuds [](srp.md#shadownodes) fantômes ne sont pas affectés.
 
 ### Groupes d’utilisateurs de la communauté {#community-user-groups}
 
-Sur toutes les instances d’auteur et de publication, dans la console [de](../../help/sites-administering/security.md)sécurité, recherchez et supprimez les groupes [d’](users.md) utilisateurs suivants :
+Sur toutes les instances d’auteur et de publication, dans la console [](../../help/sites-administering/security.md)de sécurité, recherchez et supprimez les groupes [d’](users.md) utilisateurs qui sont :
 
-* Préfixe avec `community`
+* Préfixé avec `community`
 * Suivi d’un ID de site [unique](#community-unique-site-id)
 
 Par exemple, `community-engage-x0e11-members`.
@@ -135,10 +139,10 @@ Depuis la console principale :
 * Select **[!UICONTROL Assets]**
 * Passer en mode **[!UICONTROL Sélectionner]**
 * Sélectionner le dossier nommé avec l&#39;ID de site [unique](#community-unique-site-id)
-* Sélectionnez **[!UICONTROL Supprimer]** (vous devrez peut-être sélectionner **[!UICONTROL Plus...]**).
+* Sélectionnez **[!UICONTROL Supprimer]** (peut être nécessaire de sélectionner **[!UICONTROL Plus...]**)
 
 ### Enregistrements de base de données {#database-records}
 
-Il n&#39;existe aucun outil pour supprimer de manière sélective les entrées de base de données d&#39;un site de la communauté d&#39;activation spécifique.
+Il n&#39;existe aucun outil permettant de supprimer de manière sélective les entrées de base de données pour un site communautaire d&#39;activation spécifique.
 
-Lorsque tous les sites de la communauté sont supprimés, déposez les valeurs enablementdb et scormenginedb à l’aide de MySQL Workbench.
+Lorsque tous les sites de la communauté sont supprimés, déposez les options enablementdb et scormenginedb à l’aide de MySQL Workbench.
