@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
 translation-type: tm+mt
 source-git-commit: a2f6deda8b3a34aa5893843a442241920edd6718
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 80%
 
 ---
 
@@ -143,7 +146,7 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
    }
    ```
 
-1. Créez un noeud déroulant sous une hiérarchie de dossiers spécifique dans les applications (par exemple, créez un noeud sous /apps/myfolder/demo). Ensure that the `sling:resourceType` parameter for the node is the same as that to which the servlet points (/apps/populatedropdown).
+1. Créez un noeud de liste déroulante sous une hiérarchie de dossiers spécifique dans les applications (par exemple, créez un noeud sous /apps/myfolder/demo). Ensure that the `sling:resourceType` parameter for the node is the same as that to which the servlet points (/apps/populatedropdown).
 
    ![Création d’un nœud de liste déroulante](assets/dropdown-node.png)
 
@@ -152,7 +155,7 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
 
    Ajoutez les noms des pays à afficher dans la liste Pays. Dans la liste Etat, ajoutez un script pour la remplir selon le nom du pays de la liste Pays.
 
-   ![Ajout de noms](assets/country-dropdown.png) de pays ![Ajout d’un script permettant de renseigner les noms](assets/state-dropdown.png) d’état Listes déroulantes ![Pays et Etat pour rassembler](assets/2dropdowns.png)
+   ![Ajouter des noms](assets/country-dropdown.png) de pays ![Ajouter un script pour renseigner les noms](assets/state-dropdown.png) d’état ![Pays et Etat listes déroulantes pour rassembler](assets/2dropdowns.png)
 
    ```
    JSON.parse(
