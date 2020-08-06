@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ff0b1e93-2fd2-4dc1-898f-4ba4db1b3d98
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '1173'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +38,7 @@ Vous pouvez, par exemple, placer le serveur proxy entre deux applications qui co
 
 ## Démarrage de l’outil de serveur proxy {#starting-the-proxy-server-tool}
 
-L’outil se trouve dans le dossier /opt/helpers de votre installation AEM. Pour le lancer, saisissez :
+L&#39;outil se trouve dans le dossier /opt/helpers de votre installation AEM. Pour le lancer, saisissez :
 
 ```xml
 java -jar proxy.jar <host> <remoteport> <localport> [options]
@@ -114,7 +117,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C signifie que cette entrée provient du client (il s’agit d’une demande de page web).
 * 0 correspond au nombre de connexions (le nombre de connexions commence à 0).
 * # 00000 correspond au décalage dans le flux de bits. Comme il s’agit de la première entrée, le décalage est de 0.
-* [GET &lt;?>] est le contenu de la requête, dans l&#39;exemple l&#39;un des en-têtes HTTP (url).
+* [GET &lt; ?>] est le contenu de la requête, dans l&#39;exemple, l&#39;un des en-têtes HTTP (url).
 
 Lorsqu’une connexion se ferme, les informations suivantes sont consignées :
 
