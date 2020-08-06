@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: a4a36e73-3f7a-4173-8807-931f26daa35a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +43,7 @@ Suivez les étapes ci-après pour ajouter un composant Link à la page :
 
    * **Chemin d’accès à l’actif** : chemin d’accès au référentiel de stockage de l’actif.
    * **Type de rendu** : le format de rendu : PDF, HTML ou Auto. Le type de rendu Auto détecte l’environnement de l’utilisateur et effectue le rendu du formulaire en conséquence, au format HTML ou PDF. Par exemple, si le formulaire est utilisé sur un périphérique mobile, le type de rendu Auto est effectué au format HTML.
-   * **** URL d’envoi :  URL de la servlet sur laquelle les données du formulaire sont envoyées.
+   * **URL d’envoi :**  URL de la servlet sur laquelle les données du formulaire sont envoyées.
    * **Profil HTML** : profil de rendu du formulaire au format HTML.
    * **Profil PDF** : profil de rendu du formulaire au format PDF.
 
