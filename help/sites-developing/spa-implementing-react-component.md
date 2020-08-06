@@ -1,8 +1,8 @@
 ---
 title: Mise en oeuvre d’un composant de réaction pour l’application d’une seule page
 seo-title: Mise en oeuvre d’un composant de réaction pour l’application d’une seule page
-description: Cet article présente un exemple d’adaptation d’un composant de réaction simple et existant à l’utilisation de l’éditeur d’applications monopages AEM.
-seo-description: Cet article présente un exemple d’adaptation d’un composant de réaction simple et existant à l’utilisation de l’éditeur d’applications monopages AEM.
+description: Cet article présente un exemple d’adaptation d’un composant Réagir simple et existant pour travailler avec l’éditeur d’applications monopages AEM.
+seo-description: Cet article présente un exemple d’adaptation d’un composant Réagir simple et existant pour travailler avec l’éditeur d’applications monopages AEM.
 uuid: aebca2ea-a020-45e1-8043-f8c21154c660
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '587'
+ht-degree: 10%
 
 ---
 
@@ -19,25 +22,25 @@ source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 Les applications d’une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
 
-La fonction de création d’application d’une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente un exemple d’adaptation d’un composant de réaction simple et existant à l’utilisation de l’éditeur d’applications monopages AEM.
+La fonction de création d’application d’une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente un exemple d’adaptation d’un composant Réagir simple et existant pour travailler avec l’éditeur d’applications monopages AEM.
 
 >[!NOTE]
->La fonctionnalité Editeur d’application monopage (SPA) requiert AEM 6.4 Service Pack 2 ou version ultérieure.
+>La fonctionnalité Editeur d’application monopage (SPA) nécessite AEM Service Pack 2 6.4 ou version ultérieure.
 >
 >L’éditeur d’applications monopages est la solution recommandée pour les projets qui nécessitent un rendu côté client basé sur la structure d’applications monopages (par exemple, Réagir ou Angular).
 
 ## Présentation {#introduction}
 
-Grâce au contrat simple et léger qui est requis par AEM et établi entre l’application SPA et l’éditeur SPA, prendre une application Javascript existante et l’adapter à une application SPA dans AEM est une chose simple.
+Grâce au contrat simple et léger requis par AEM et établi entre le SPA et le SPA Editor, prendre une application Javascript existante et l&#39;adapter pour l&#39;utiliser avec un SPA en AEM est une chose simple.
 
 Cet article illustre l&#39;exemple de la composante météorologique de l&#39;exemple d&#39;application d&#39;une seule page d&#39;accueil de Journal We.Retail.
 
-Avant de lire cet article, vous devez connaître la [structure d’une application SPA pour AEM](/help/sites-developing/spa-getting-started-react.md) .
+Avant de lire cet article, vous devez connaître la [structure d’une application d’application d’une seule page pour AEM](/help/sites-developing/spa-getting-started-react.md) .
 
 >[!CAUTION]
 >Ce document utilise l’application [de Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail à des fins de démonstration uniquement. Il ne doit être utilisé pour aucun travail de projet.
 >
->Tout projet AEM doit tirer parti de l’archétype [du projet](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, qui prend en charge les projets d’application d’une seule page à l’aide de React ou d’Angular et exploite le SDK de l’application d’une seule page.
+>Tout projet AEM doit tirer parti de l’archétype [de projet](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, qui prend en charge les projets d’application d’une seule page à l’aide de React ou d’Angular et qui utilise le SDK d’application d’une seule page.
 
 ## La composante météorologique {#the-weather-component}
 
@@ -47,7 +50,7 @@ Le composant météorologique se trouve dans le coin supérieur gauche de l&#39;
 
 ![screen_shot_2018-06-08at143224](assets/screen_shot_2018-06-08at143224.png)
 
-Lors de la création de contenu de l’application d’une seule page dans l’éditeur d’applications d’une seule page, le composant météorologique s’affiche comme tout autre composant AEM, avec une barre d’outils complète et peut être modifié.
+Lors de la création de contenu de l’application d’une seule page dans l’éditeur d’applications monopages, le composant météorologique apparaît sous la forme de tout autre composant AEM, avec une barre d’outils complète, et il est modifiable.
 
 ![screen_shot_2018-06-08at143304](assets/screen_shot_2018-06-08at143304.png)
 
@@ -129,4 +132,4 @@ Bien qu&#39;un composant principal doive déjà exister, le développeur frontal
 
 ## Étape suivante {#next-step}
 
-Pour plus d’informations sur le développement d’applications monopages pour AEM, voir l’article [Développement d’applications monopages pour AEM](/help/sites-developing/spa-architecture.md).
+Pour plus d’informations sur le développement d’applications monopages pour AEM voir l’article [Developing SPAs for AEM](/help/sites-developing/spa-architecture.md).
