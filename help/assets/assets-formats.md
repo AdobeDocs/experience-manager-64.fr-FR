@@ -1,6 +1,6 @@
 ---
 title: Formats de fichier pris en charge dans AEM Assets
-description: Liste des formats de fichier et des types MIME pris en charge par les AEM Assets et des fonctionnalités prises en charge pour chaque format.
+description: Liste des formats de fichier et des types MIME pris en charge par AEM Assets et des fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
@@ -47,7 +47,7 @@ Les formats d’image pixellisée pris en charge pour les fonctionnalités de ge
 
 **‡** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
-Les formats d’image pixellisée pris en charge pour les fonctionnalités Dynamic Media sont les suivants :
+Les formats d’image pixellisée pris en charge pour les fonctionnalités Contenu multimédia dynamique sont les suivants :
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -77,11 +77,11 @@ Outre les informations ci-dessus, tenez compte des points suivants :
 
 * Concernant les fichiers EPS, l’écriture différée des métadonnées est prise en charge dans PostScript Document Structuring Convention (PS-Adobe) version 3.0 ou supérieure.
 
-## Formats d’image pixellisée non pris en charge dans Dynamic Media {#unsupported-image-formats-dynamic-media}
+## Formats d’image pixellisée non pris en charge dans Contenu multimédia dynamique {#unsupported-image-formats-dynamic-media}
 
-La liste suivante décrit les sous-types de formats de fichier image pixellisée qui *ne sont pas* pris en charge dans Dynamic Media.
+La liste suivante décrit les sous-types de formats de fichier image pixellisée qui *ne sont pas* pris en charge dans Contenu multimédia dynamique.
 
-Voir aussi [Détection des formats de fichier non pris en charge pour Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Voir aussi [Détection de formats de fichier non pris en charge pour le contenu multimédia](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)dynamique.
 
 * Fichiers PNG dont la taille de bloc IDAT est supérieure à 100 Mo.
 * Fichiers PSB.
@@ -102,7 +102,7 @@ See [Using PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## Bibliothèque de transcodage d’imagerie (ITL){#supported-image-transcoding-library}
 
-La bibliothèque de transcodage d’images Adobe est une solution de traitement d’images qui exécute des fonctions essentielles de gestion d’images, telles que le codage, le transcodage, le rééchantillonnage et le redimensionnement.
+La bibliothèque de transcodage d’images d’Adobe est une solution de traitement d’images qui exécute des fonctions essentielles de gestion d’images, telles que le codage, le transcodage, le rééchantillonnage et le redimensionnement.
 
 La bibliothèque de transcodage d’images prend en charge les formats JPG/JPEG, PNG (8 et 16 bits), GIF, BMP, TIFF/Compressed TIFF (à l’exception des fichiers TIFF 32 bits et PTIFF), ICO et ICN MIME.
 
@@ -110,7 +110,7 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## Camera Raw {#supported-camera-raw}
 
-La bibliothèque Adobe Camera Raw permet à AEM Assets d’importer des images brutes. Voir Prise en charge [de](camera-raw.md)Camera Raw.
+La bibliothèque Adobe Camera Raw permet à AEM Assets d’importer des images brutes. Voir Prise en charge [](camera-raw.md)Camera Raw.
 
 ## Formats de document {#supported-document-formats}
 
@@ -137,7 +137,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 | QXP | ✓ | ✓ |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
 
-Les formats de Document pris en charge pour les fonctionnalités Dynamic Media sont les suivants :
+Les formats de Document pris en charge pour les fonctionnalités Contenu multimédia dynamique sont les suivants :
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -245,7 +245,7 @@ Le tableau ci-dessous décrit l’applicabilité des processus de gestion des ac
 
 Par défaut, AEM détecte le type de fichier à l’aide de l’extension de fichier. AEM peut le détecter à partir du contenu des fichiers. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the AEM Web Console.
 
-Une liste de types MIME pris en charge est disponible dans CRXDE Lite à `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+Une liste de types MIME pris en charge est disponible dans le CRXDE Lite à `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 | Extension de fichier | Type MIME/type de support Internet | Valeur de jobParam par défaut | Valeur de jobParam autorisée |
 |---|---|---|---|
