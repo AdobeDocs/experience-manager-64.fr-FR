@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 89%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe ne prévoit pas d’améliorer davantage le suivi des courriers électroniques ouverts/reportés envoyés par le service SMTP AEM.
+>Adobe ne prévoit pas d&#39;améliorer davantage le suivi des courriers électroniques ouverts/rebondis envoyés par AEM service SMTP.
 >
->Il est recommandé d’ [exploiter Adobe Campaign et son intégration](/help/sites-administering/campaign.md)AEM.
+>La recommandation consiste à [tirer parti de l&#39;Adobe Campaign et de son intégration](/help/sites-administering/campaign.md)AEM.
 
 Lorsque vous envoyez une newsletter à de nombreux utilisateurs, la liste de diffusion comporte généralement plusieurs adresses électroniques non valides. Les newsletters envoyées à ces adresses sont rejetées. AEM est en mesure de gérer ces rebonds et d’arrêter l’envoi de newsletters vers ces adresses après le dépassement du compteur de rebonds. Par défaut, le taux de rebonds est défini sur 3, mais cette valeur est configurable.
 
@@ -63,7 +66,7 @@ Pour configurer Feed Importer en vue du suivi des messages rejetés, procédez c
 
    Permet de définir des indicateurs pour la recherche.
 
-   `imap.flag.SEEN`:Définissez false pour le message nouveau/invisible, true pour les messages déjà lus
+   `imap.flag.SEEN`: Définit false pour le message nouveau/invisible, true pour les messages déjà lus
 
    See [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) for the full list of flags.
 
@@ -82,7 +85,7 @@ Après avoir configuré Feed Importer, vous devez configurer l’adresse de l’
 
 Pour configurer le service de newsletter, procédez comme suit :
 
-1. Dans la console OSGi à l’adresse `<host>:<port>/system/console/configMgr` et accédez au bulletin d’information **MCM**.
+1. Dans la console OSGi, accédez au bulletin `<host>:<port>/system/console/configMgr` **** MCM et accédez-y.
 
 1. Configurez le service et enregistrez les modifications une fois cette opération terminée.
 
