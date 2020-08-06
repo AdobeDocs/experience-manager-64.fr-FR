@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '776'
+ht-degree: 89%
 
 ---
 
@@ -34,10 +37,10 @@ En tant qu’implémentation de référence standard d’AEM, We.Retail présent
 | [Structure de site globalisée](/help/sites-administering/tc-bp.md) | We.Retail comprend des gabarits de langue qui sont copiés de manière dynamique dans des sites localisés. | [Faites un essai !](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [Mise en page réactive](/help/sites-authoring/responsive-layout.md) | Toutes les pages disposent d’une mise en page réactive pour s’adapter de manière dynamique à la taille de l’écran et du terminal. | [Faites un essai !](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Modèles modifiables](/help/sites-developing/page-templates-editable.md) | Toutes les pages reposent sur des modèles modifiables, ce qui permet aux non-développeurs d’adapter et de personnaliser les modèles. | [Faites un essai !](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML Template Language](https://helpx.adobe.com/experience-manager/htl/user-guide.html) | Tous les composants sont basés sur HTL. |  |
+| [HTML Template Language](https://helpx.adobe.com/fr/experience-manager/htl/user-guide.html) | Tous les composants sont basés sur HTL. |  |
 | [Fonctionnalités de commerce électronique](/help/sites-developing/ecommerce.md) | Catalogue de produits intégré. |  |
 | [Sites Communities](/help/communities/overview.md) | Les visiteurs sont autorisés à participer à des discussions communautaires, à lire des blogs et bien plus encore. |  |
-| [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) | Tous les composants sont basés sur les nouveaux composants principaux. Ils s’avèrent également plus faciles à utiliser et à configurer en standard. | [Faites un essai !](/help/sites-developing/we-retail-core-components.md) |
+| [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) | Tous les composants sont basés sur les nouveaux composants principaux. Ils s’avèrent également plus faciles à utiliser et à configurer en standard. | [Faites un essai !](/help/sites-developing/we-retail-core-components.md) |
 | [Fragments de contenu](/help/assets/content-fragments.md) | La section Expériences We.Retail permet de réutiliser du contenu au moyen de fragments de contenu. | [Faites un essai !](/help/sites-developing/we-retail-content-fragments.md) |
 | [Fragments d’expérience](/help/sites-authoring/experience-fragments.md) | Un fragment d’expérience est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages. | [Faites un essai !](/help/sites-developing/we-retail-experience-fragments.md) |
 
@@ -79,19 +82,19 @@ Le tableau suivant vous donne un aperçu des principales fonctionnalités qui so
 
 | **Fonctionnalité** | **We.Retail** | **Geometrixx** |
 |---|---|---|
-| Structure de site globalisée | Les maîtres de langues sont copiés en direct dans des sites spécifiques à un pays | Non disponible |
+| Structure de site globalisée | Les maîtres de langues sont copiés en direct sur des sites spécifiques à chaque pays. | Non disponible |
 | Fragments de contenu | Disponible | Non disponible |
 | Fragments d’expérience | Disponible | Non disponible |
-| Mise en page réactive | Pour toutes les pages | Uniquement Geometrixx Media |
+| Mise en page réactive   | Pour toutes les pages | Uniquement Geometrixx Media |
 | Modèles modifiables | Pour toutes les pages | Non disponible |
-| HTL | Tous les composants | Limité |
+| HTL | Tous les composants | Limited |
 | Ciblage | Pour toutes les pages | Uniquement Geometrixx Outdoors |
 | Screens | Disponible | Non disponible |
 | Mobile | Non disponible | Disponible |
 | Manuscrits | Non disponible | Disponible |
 | Carrousel, téléchargement, composants de graphique | Non disponible | Disponible |
 | Contrôle de colonne | Remplacé par le conteneur de mise en page | Disponible |
-| Forms | Non disponible | Disponible |
+| Formulaires | Non disponible | Disponible |
 | Campagne | Aucun exemple de courrier électronique | Disponible |
 
 >[!NOTE]
@@ -106,7 +109,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-sample-we-détaillant sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
+* [Ouvrez le projet aem-sample-we-commerce sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/archive/master.zip).
 
 La dernière version peut également être [téléchargée directement](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/latest) en tant que module à +installer.
@@ -119,5 +122,5 @@ N’hésitez pas à répliquer ou à contribuer avec des [requêtes d’extracti
 
 Aperçu de page d’accueil de We.Retail :
 
-![screencapture-localhost-4502-editor-html-content-we-détaillant-us-fr-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
+![screencapture-localhost-4502-editor-html-content-we-commerce-us-fr-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
 
