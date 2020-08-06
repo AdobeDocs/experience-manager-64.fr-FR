@@ -30,7 +30,7 @@ Imaginons, par exemple, un scénario où vous êtes connecté à Administration 
 
 **Référent :** Adresse de la page source à partir de laquelle une demande arrive. Par exemple, une page Web de site1.com contient un lien vers site2.com. En cliquant sur ce lien, une requête est envoyée à site2.com. Le référent de la requête est donc site1.com, la requête ayant été envoyée à partir d’une page provenant de site1.com.
 
-**URI autorisés :** Les URI identifient les ressources du serveur Forms qui sont demandées, par exemple /adminui ou /contentspace. Certaines ressources peuvent autoriser des requêtes à entrer dans l’application à partir de sites Web externes. Ces ressources sont considérées comme des URI placés sur l&#39;liste autorisée. Le serveur Forms n’effectue jamais de vérification du référent à partir d’URI placés sur l&#39;liste autorisée.
+**URI Placés sur l&#39;liste autorisée :** Les URI identifient les ressources du serveur Forms qui sont demandées, par exemple /adminui ou /contentspace. Certaines ressources peuvent autoriser des requêtes à entrer dans l’application à partir de sites Web externes. Ces ressources sont considérées comme des URI placés sur l&#39;liste autorisée. Le serveur Forms n’effectue jamais de vérification du référent à partir d’URI placés sur l&#39;liste autorisée.
 
 **Référent nul :** Lorsque vous ouvrez une nouvelle fenêtre ou un nouvel onglet du navigateur, puis que vous tapez une adresse et appuyez sur Entrée, le référent est nul. La requête est totalement nouvelle et ne provient d’aucune page Web parente ; il n’existe donc aucun référent pour la requête. La valeur d’un référent reçu par le serveur Forms peut être NULL dans plusieurs cas :
 
