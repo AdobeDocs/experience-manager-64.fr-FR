@@ -12,13 +12,16 @@ discoiquuid: 67faa2ee-cb12-44b0-8bfb-534d1d6c360a
 legacypath: /content/docs/en/aem/6-0/administer/integration/third-party-services/machine-translation
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 87%
 
 ---
 
 
 # Traduction de contenu pour les sites multilingues{#translating-content-for-multilingual-sites}
 
-Automatisez la traduction du contenu des pages, des ressources et du contenu créé par les utilisateurs pour créer et tenir à jour des sites web multilingues. Pour automatiser les processus de traduction, vous intégrez des fournisseurs de services de traduction à AEM et vous créez des projets pour traduire le contenu dans plusieurs langues. AEM prend en charge les processus de traduction humaine et automatique.
+Automatisez la traduction du contenu des pages, des ressources et du contenu créé par les utilisateurs pour créer et tenir à jour des sites web multilingues. Pour automatiser les processus de traduction, vous intégrez des fournisseurs de services de traduction à AEM et vous créez des projets pour traduire le contenu dans plusieurs langues. AEM prend en charge les workflows de traduction humaine et automatique.
 
 * Traduction humaine : le contenu est envoyé à votre fournisseur de traduction et traduit par des traducteurs professionnels. Une fois la traduction terminée, le contenu traduit est renvoyé et importé dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, le contenu est automatiquement transféré entre AEM et le fournisseur de traduction.
 * Traduction automatique : le service de traduction automatique traduit immédiatement votre contenu.
@@ -39,6 +42,6 @@ Si votre fournisseur de services de traduction ne fournit pas de connecteur pour
 >
 >Votre utilisateur doit être membre du groupe des administrateurs de projet pour utiliser les fonctionnalités de copie de langue.
 
-## Meilleures pratiques {#best-practices}
+## Bonnes pratiques {#best-practices}
 
 The [Translation Best Practices](/help/sites-administering/tc-bp.md) page contains important information regarding your implementation.
