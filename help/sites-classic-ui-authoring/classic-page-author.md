@@ -1,8 +1,8 @@
 ---
 title: Création de pages
 seo-title: Création de pages
-description: Il existe deux aperçus de la création avec AEM. (1) Premiers pas pour les auteurs - une introduction pour les nouveaux auteurs, et (2) Guide rapide des pages de création - un guide rapide (de haut niveau) des principales actions.
-seo-description: Il existe deux aperçus de la création avec AEM. (1) Premiers pas pour les auteurs - une introduction pour les nouveaux auteurs, et (2) Guide rapide des pages de création - un guide rapide (de haut niveau) des principales actions.
+description: Il existe deux aperçus de la création avec AEM. (1) Premiers pas pour les auteurs - une introduction pour les nouveaux auteurs, et (2) Guide rapide de création de pages - un guide rapide (de haut niveau) des principales actions.
+seo-description: Il existe deux aperçus de la création avec AEM. (1) Premiers pas pour les auteurs - une introduction pour les nouveaux auteurs, et (2) Guide rapide de création de pages - un guide rapide (de haut niveau) des principales actions.
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 translation-type: tm+mt
 source-git-commit: 040f776ee6a164cec57685f8a010ec82fd8bb48b
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 78%
 
 ---
 
