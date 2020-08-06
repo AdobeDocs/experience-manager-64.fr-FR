@@ -25,7 +25,7 @@ Ce contenu décrit la façon dont les dossiers de contrôle sont affectés par l
 *Watched Folder* est une application basée sur système de fichiers. Elle appelle des opérations de service configurées qui manipulent le fichier au sein de l’un des dossiers suivants de la hiérarchie du dossier de contrôle :
 
 * Entrée
-* Scène
+* Évaluation
 * Sortie
 * Failure (Echecs)
 * Preserve (Conservés)
@@ -69,7 +69,7 @@ Le tableau suivant décrit la manipulation de cinq exemples de fichier (fichier1
    <td><p>empty</p></td> 
   </tr> 
   <tr>
-   <td><p>Scène</p></td> 
+   <td><p>Évaluation</p></td> 
    <td><p>empty</p></td> 
    <td><p>fichier1</p></td> 
    <td><p>fichier2</p></td> 
