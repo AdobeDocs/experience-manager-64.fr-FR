@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
 translation-type: tm+mt
 source-git-commit: 03d738e50be604959af93c863fbdc711ee4b083e
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 82%
 
 ---
 
@@ -23,7 +26,7 @@ Il existe des listes de contrôle pour chaque personnage (rôle) impliqué dans 
 
 ## Téléchargement {#download}
 
-Liste de contrôle des meilleures pratiques du projet AEM v2
+Liste de contrôle des bonnes pratiques AEM Project v2
 
 [Obtenir le fichier](assets/aem_project_bp_checklistv2.xlsx)
 
@@ -37,7 +40,7 @@ Les feuilles de calcul suivantes sont fournies :
 * **[État par rôle](/help/managing/best-practices.md#status-by-role)**
 * Série de listes de contrôle, selon le [personnage](/help/managing/best-practices.md#persona), la [phase et le jalon](/help/managing/best-practices.md#phases-and-milestones)
 * **Glossaire**
-   * Le glossaire donne des détails sur tous les documents livrables figurant dans la liste de contrôle du projet.
+   * Le glossaire liste les détails de tous les documents livrables figurant dans la liste de contrôle du projet.
    * Le [glossaire](/help/managing/best-practices-glossary.md) est également disponible dans le cadre de la documentation.
 * **[Définition des personnages](/help/managing/best-practices.md#persona)**
 
