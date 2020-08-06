@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: b74a0933-2b96-4a88-9995-6fb21df141aa
 translation-type: tm+mt
 source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 90%
 
 ---
 
@@ -141,7 +144,7 @@ Enfin, vous devez inclure une entrée dans le package de développement pour cha
    * de: `/libs/ws/js/runtime/templates/`
    * vers: `/apps/ws/js/runtime/templates/`
 
-1. Ajouter les nouvelles informations à `/apps/ws/js/runtime/templates/task.html`.
+1. Ajoutez les nouvelles informations à `/apps/ws/js/runtime/templates/task.html`.
 
    For example, add under `div class="taskProperties"`:
 
