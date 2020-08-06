@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
 workflow-type: tm+mt
 source-wordcount: '1723'
-ht-degree: 58%
+ht-degree: 60%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 58%
 
 To add the Dynamic Media functionality to assets you use on your websites, you can add the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component directly on the page. You do this by entering [!UICONTROL Design] mode and enabling the dynamic media components. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media et Interactive Media sont dynamiques : ils détectent si vous ajoutez une image ou une vidéo et les options disponibles changent en conséquence.
 
-Vous pouvez ajouter directement des ressources multimédias dynamiques à la page si vous utilisez AEM en tant que WCM.
+Vous pouvez ajouter directement des fichiers multimédias dynamiques à la page si vous utilisez AEM comme gestion de contenu Web.
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Pour ajouter un composant/une visionneuse Dynamic Media à une page, procédez c
 
 ## Composants Dynamic Media {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] et [!UICONTROL Interactive Media] sont disponibles dans le [!UICONTROL Sidekick] sous **[!UICONTROL Dynamic Media]**. Vous utilisez le composant **[!UICONTROL Interactive Media]** pour toutes les ressources interactives telles que du contenu vidéo interactif, des images interactives ou des ensembles de carrousels. Pour tous les autres composants Dynamic Media, utilisez le composant **[!UICONTROL Dynamic Media]**.
+[!UICONTROL Contenu multimédia] dynamique et Contenu multimédia  interactif sont disponibles dans le [!UICONTROL Sidekick] sous Contenu multimédia **** dynamique. Vous utilisez le composant **[!UICONTROL Interactive Media]** pour toutes les ressources interactives telles que du contenu vidéo interactif, des images interactives ou des ensembles de carrousels. Pour tous les autres composants Dynamic Media, utilisez le composant **[!UICONTROL Dynamic Media]**.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -58,7 +58,7 @@ Pour ajouter un composant/une visionneuse Dynamic Media à une page, procédez c
 
 ### Composant Dynamic Media {#dynamic-media-component}
 
-Le composant Dynamic Media est intelligent ; selon que vous ajoutez une image ou une vidéo, vous disposez de différentes options. Le composant prend en charge les paramètres d’image prédéfinis, ainsi que les visionneuses d’images telles que les visionneuses d’images, les visionneuses à 360°, les visionneuses de médias mixtes et le contenu vidéo. En outre, le lecteur est réactif. Autrement dit, la taille de l’écran change automatiquement en fonction de la taille de l’écran. Toutes les visionneuses sont des visionneuses HTML5.
+Le composant Contenu multimédia dynamique est intelligent ; selon que vous ajoutez une image ou une vidéo, vous disposez de différentes options. Le composant prend en charge les paramètres d’image prédéfinis, ainsi que les visionneuses d’images telles que les visionneuses d’images, les visionneuses à 360°, les visionneuses de médias mixtes et le contenu vidéo. En outre, le lecteur est réactif. Autrement dit, la taille de l’écran change automatiquement en fonction de la taille de l’écran. Toutes les visionneuses sont des visionneuses HTML5.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Il s’agit de la seule option disponible si vous affichez des visionneuses d’
 
 Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
-**[!UICONTROL Modificateurs]** d’image : vous pouvez modifier les effets d’image en fournissant des commandes d’image supplémentaires. These are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Modificateurs]** d’image : vous pouvez modifier les effets d’image en fournissant des commandes d’image supplémentaires. These are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
