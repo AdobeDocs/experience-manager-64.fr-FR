@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2d0835e0-5602-49a9-b9ad-636ce5a8ad2a
 translation-type: tm+mt
 source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 33%
 
 ---
 
@@ -26,4 +29,4 @@ Les informations suivantes sont disponibles pour les développeurs :
 
 * [Cadre](/help/sites-developing/framework.md) de balisage AEM - Description des noeuds et des propriétés utilisés pour le balisage
 
-* [Création du balisage dans une application](/help/sites-developing/building.md) AEM - Description des API qui fonctionnent avec la structure de balisage du code côté client et côté serveur
+* [Création du balisage dans une application](/help/sites-developing/building.md) AEM - Description des API qui fonctionnent avec la structure de balisage à partir du code côté client et côté serveur
