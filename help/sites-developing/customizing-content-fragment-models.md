@@ -1,5 +1,5 @@
 ---
-title: NE PAS PUBLIER, MAIS NE PAS SUPPRIMER LA Personnalisation DES Modèles De Fragment De Contenu
+title: NE PAS PUBLIER, MAIS NE PAS Personnaliser DELETE les modèles de fragments de contenu
 seo-title: Personnalisation des modèles de fragments de contenu
 description: Les modèles de fragments de contenu peuvent être personnalisés et étendus.
 seo-description: Les modèles de fragments de contenu peuvent être personnalisés et étendus.
@@ -10,54 +10,58 @@ discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
 source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+workflow-type: tm+mt
+source-wordcount: '598'
+ht-degree: 3%
 
 ---
 
 
-# NE PAS PUBLIER, MAIS NE PAS SUPPRIMER LA Personnalisation DES Modèles De Fragment De Contenu{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
+# NE PAS PUBLIER, MAIS NE PAS Personnaliser DELETE les modèles de fragments de contenu{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
 
-L’éditeur de modèle de fragment de contenu est un assistant basé sur `Formbuilder`, hérité de :
+L’éditeur de modèle de fragment de contenu est un assistant basé sur `Formbuilder`les éléments suivants :
 
 `granite/ui/components/foundation/form/formbuilder`
 
-Ce composant dispose des outils nécessaires pour effectuer le rendu de l’interface glisser-déposer de l’éditeur de modèles, avec les types de données et les propriétés de chacun.
+Ce composant dispose des outils nécessaires pour effectuer le rendu de l&#39;interface glisser-déposer de l&#39;éditeur de modèles, avec les types de données et les propriétés pour chacun d&#39;eux.
 
 ## Emplacements {#locations}
 
 Les modèles sont enregistrés et créés sous `/conf`, sous un dossier dans lequel la propriété [Modèles de fragment de](/help/assets/content-fragments-models.md#enable-content-fragment-models) contenu est activée. Ce paramètre est également visible dans les Propriétés **de** configuration, accessibles depuis le navigateur **de** configuration.
 
-1. Accédez au navigateur à l’aide des **outils**, **Général**, Navigateur **de** configuration, par exemple : `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
+1. Naviguer jusqu’au navigateur à l’aide des **outils**, **Général**, Navigateur **de** configuration, par exemple : 
+`http://localhost:4502/libs/granite/configurations/content/view.html/conf`
 
 1. Dans le navigateur, sélectionnez la configuration appropriée, puis **Propriétés** dans la barre d’outils.
 
-   Par exemple, les propriétés de `global`: `http://localhost:4502/libs/granite/configurations/content/edit.html/conf/global`
+   Par exemple, les propriétés pour `global`: `http://localhost:4502/libs/granite/configurations/content/edit.html/conf/global`
 
-Dans la console des modèles, tous les dossiers contenant la propriété Modèles **de fragment de** contenu s’affichent. Naviguez via **Outils**, **Ressources**, Modèles **de fragments de** contenu ; par exemple, `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`.
+Dans la console des modèles, tous les dossiers contenant la propriété Modèles **de fragment de** contenu s’affichent. Accédez à l’aide des **outils**, des **ressources**, des modèles de fragment de **contenu**; par exemple, `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`.
 
 Un utilisateur peut [créer un modèle](/help/assets/content-fragments-models.md#creating-a-content-fragment-model) de fragment de contenu à l’aide de l’assistant **Créer un modèle** (à l’aide de **Créer** à partir de la console).
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Vous ne devez ***rien*** modifier dans le chemin `/libs`.
 >
 >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
 
 ## Structure d&#39;un modèle {#structure-of-a-model}
 
-L’assistant va créer une entrée avec cette structure :
+L&#39;Assistant va créer une entrée avec cette structure :
 
 ![cf-54](assets/cf-54.png)
 
 * `../settings/dam/cfm/models`
 
-   Tous les modèles sont enregistrés sous les sous-dossiers de ce dossier.
+   Tous les modèles sont enregistrés sous des sous-dossiers de ce dossier.
 
 * `jcr:content`
 
    Chaque modèle contient un `jcr:content` noeud qui :
 
    * contient des propriétés d’informations sur le modèle, telles que `jcr:title`, `lastModified`, `lastModifiedBy`
-   * a généralement la valeur `sling:ResourceType` of `dam/cfm/models/console/components/data/entity/default`,
+   * a généralement la `sling:ResourceType` valeur de `dam/cfm/models/console/components/data/entity/default`,
 
       avec la valeur `sling:ResourceSuperType` de `dam/cfm/models/console/components/data/entity`
 
@@ -67,27 +71,27 @@ L’assistant va créer une entrée avec cette structure :
 
 * `items`
 
-   Sous le `items` noeud, tous les types de données ajoutés au modèle sont enregistrés (par glissement-déplacement dans l’éditeur de modèles). Chaque élément reçoit un nom de noeud aléatoire, mais pour que l’éditeur de fragments de contenu fonctionne avec ce modèle, chaque élément doit avoir une `name` propriété. De plus, sur ce noeud, toutes les propriétés de configuration d’un type de données particulier sont enregistrées, y compris les propriétés par défaut nécessaires au rendu des composants.
+   Sous le `items` noeud, tous les types de données ajoutés au modèle sont enregistrés (comme glissés-déposés dans l’éditeur de modèles). Chaque élément reçoit un nom de noeud aléatoire, mais pour que l’éditeur de fragments de contenu fonctionne avec ce modèle, chaque élément doit posséder une `name` propriété. De plus, sur ce noeud, toutes les propriétés de configuration d’un type de données particulier sont enregistrées, y compris les propriétés par défaut nécessaires au rendu des composants.
 
 >[!CAUTION]
 >
->Tous les types de données glissés et déposés dans un éditeur de modèles, et par conséquent instanciés, **doivent** avoir la `name` propriété saisie par l’utilisateur.
+>Tous les types de données glissés-déposés dans un éditeur de modèles, et par conséquent instanciés, **doivent** `name` avoir la propriété saisie par l’utilisateur.
 >
->**Ceci est considéré comme le nom de** la propriété &amp;ast; dans l’onglet **Propriétés** de l’éditeur de modèles.
+>Il s’agit du nom de la **propriété &amp;ast;** dans l’onglet **Propriétés** de l’éditeur de modèles.
 
 ## Structure de l&#39;éditeur de modèles {#structure-of-the-model-editor}
 
 L’éditeur **de modèle de fragment de** contenu comporte deux parties :
 
-* Panneau de prévisualisation ou d’affichage sur le côté gauche, dans lequel vous pouvez déposer des éléments. This:
+* Panneau de prévisualisation, ou vue, sur le côté gauche, dans lequel vous pouvez déposer des éléments. Cela :
 
-   * Affiche un aperçu du type **de** données appelé.
+   * Affiche une prévisualisation du type **de** données appelé.
    * Autorise l&#39;ordre dans l&#39;éditeur de modèles.
 
-* Les onglets Types **de** données/**Propriétés** du panneau sur le côté droit. This:
+* Les onglets Types **de** données/**Propriétés** du panneau situé à droite s’affichent. Cela :
 
-   * Affiche la liste des types de données qui peuvent être déplacés et instanciés.
-   * Pour l’éditeur de modèles prêt à l’emploi, la liste se trouve à l’emplacement suivant :
+   * Affiche une liste de types de données qui peuvent être déplacés et instanciés.
+   * Pour l’éditeur de modèles prêt à l’emploi, la liste est présente à l’adresse suivante :
 
       `/libs/settings/dam/cfm/models/formbuilderconfig/datatypes`
 
@@ -99,7 +103,7 @@ L’éditeur **de modèle de fragment de** contenu comporte deux parties :
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Vous ne devez ***rien*** modifier dans le chemin `/libs`.
 >
 >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
 
@@ -107,11 +111,11 @@ L’éditeur **de modèle de fragment de** contenu comporte deux parties :
 The properties on the right side define a form that is submitted directly into JCR under `/conf`; see the path in the example [Structure of a Model](/help/sites-developing/customizing-content-fragment-models.md#structure-of-a-model).
 -->
 
-Lorsqu’un type de données est appelé, des entrées HTML sont créées pour chaque propriété dont le composant doit être rendu dans un fragment de contenu. Par exemple :
+Lorsqu’un type de données est instancié, des entrées HTML sont créées pour chaque propriété dont le composant doit être rendu dans un fragment de contenu. Par exemple :
 
-* **** Nom de la propriété &amp;ast; ( `name`) - sert d’identificateur aux composants
+* **Nom de la propriété &amp;ast;** ( `name`) - agit comme identificateur pour les composants
 
-* **Rendu en tant que** ( `metaType`) - tapez le composant à rendre comme
+* **Rendu en tant que** ( `metaType`) - tapez le composant à rendre en tant que
 
 * **Description** ( `fieldDescription`) - description du composant dans le fragment de contenu
 
