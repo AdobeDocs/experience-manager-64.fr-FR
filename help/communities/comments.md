@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b074ebfa-2894-4a2d-aa8e-28168049971a
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 38%
 
 ---
 
@@ -52,15 +55,15 @@ When the [required client-side libraries](essentials-comments.md#essentials-for-
 
 Select the placed `Comments` component to access and select the `Configure` icon which opens the edit dialog.
 
-![configuration](assets/configure.png) des paramètres ![de commentaire](assets/commentssettings.png)
+![configuration](assets/configure.png) des paramètres ![de commentaires](assets/commentssettings.png)
 
-### Onglet Commentaires {#comments-tab}
+### Comments tab {#comments-tab}
 
 Sous l’onglet **[!UICONTROL Commentaires]**, indiquez la façon dont les commentaires seront entrés par les visiteurs.
 
 * **[!UICONTROL Autoriser les réponses]**
 
-   Si elle est cochée, permet aux membres de répondre aux commentaires existants. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, permet aux membres de répondre aux commentaires existants. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Commentaires par page]**
 
@@ -72,7 +75,7 @@ Sous l’onglet **[!UICONTROL Commentaires]**, indiquez la façon dont les comme
 
 * **[!UICONTROL Taille maximale du fichier]**
 
-   Applicable uniquement si l’option Autoriser les téléchargements de fichiers est cochée. Cette valeur limite la taille du fichier chargé. La limite par défaut est de 10 Mo.
+   N’est pertinent que si l’option Autoriser les téléchargements de fichiers est cochée. Cette valeur limite la taille du fichier chargé. La limite par défaut est de 10 Mo.
 
 * **[!UICONTROL Longueur de message max.]**
 
@@ -80,23 +83,23 @@ Sous l’onglet **[!UICONTROL Commentaires]**, indiquez la façon dont les comme
 
 * **[!UICONTROL Types de fichier autorisés]**
 
-   Applicable uniquement si l’option Autoriser les téléchargements de fichiers est cochée. Liste d’extensions de fichiers séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   N’est pertinent que si l’option Autoriser les téléchargements de fichiers est cochée. liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
 * **[!UICONTROL Éditeur de texte enrichi]**
 
-   Si cette option est cochée, les commentaires peuvent être saisis avec une annotation. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les commentaires peuvent être saisis avec une annotation. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser le vote]**
 
-   Si cette option est cochée, l&#39;option de voter vers le haut ou vers le bas sera présentée avec la zone de texte. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, l&#39;option de voter vers le haut ou vers le bas sera présentée avec la zone de texte. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser abonnement]**
 
-   Si cette option est cochée, permettez aux membres de suivre les commentaires. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les membres à suivre les commentaires. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Afficher les badges]**
 
-   Si cette option est cochée, autorisez l’affichage des badges gagnés et attribués. Cette option n’est pas cochée par défaut.
+   Si coché, autoriser l&#39;affichage des badges gagnés et attribués. Cette option n’est pas cochée par défaut.
 
 ### Onglet Modération utilisateur {#user-moderation-tab}
 
@@ -108,7 +111,7 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted comments 
 
 * **[!UICONTROL Supprimer les commentaires]**
 
-   Si cette option est cochée, le membre qui a publié le commentaire peut le supprimer. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, le membre qui a publié le commentaire peut le supprimer. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Refuser les commentaires]**
 
@@ -120,35 +123,35 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted comments 
 
 * **[!UICONTROL Marquer les commentaires]**
 
-   Si cette option est cochée, permettez aux membres de signaler les commentaires comme inappropriés. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les membres à signaler les commentaires comme inappropriés. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Marquer la liste de motifs]**
 
-   Si cette option est cochée, permettez aux membres de choisir, dans une liste déroulante, la raison pour laquelle ils signalent un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, permettez aux membres de choisir, dans une liste déroulante, la raison pour laquelle ils signalent un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Motif de la marque personnalisée]**
 
-   Si cette option est cochée, autorisez les membres à entrer leur propre raison pour signaler un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les membres à indiquer leur propre raison de signaler un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Seuil de modération]**
 
-   Entrez le nombre de fois où un commentaire doit être marqué par les membres avant que les modérateurs ne soient avertis. La valeur par défaut est une fois (1).
+   Indiquez le nombre de fois où un commentaire doit être marqué par les membres avant que les modérateurs ne soient avertis. La valeur par défaut est une fois (1).
 
 * **[!UICONTROL Limite de marquage]**
 
-   Entrez le nombre de fois où un commentaire doit être marqué avant d’être masqué dans la vue publique. Dans le cas contraire, cette valeur doit être supérieure ou égale au **[!UICONTROL seuil de modération]**. La valeur par défaut est 5.
+   Indiquez le nombre de fois où un commentaire doit être marqué avant d’être masqué dans la vue publique. Dans le cas contraire, cette valeur doit être supérieure ou égale au **[!UICONTROL seuil de modération]**. La valeur par défaut est 5.
 
 ### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous l’onglet Paramètres **[!UICONTROL de]** tri, spécifiez le mode de tri des commentaires publiés lorsqu’ils sont affichés.
+Sous l’onglet Paramètres **[!UICONTROL de]** tri, indiquez comment les commentaires publiés sont triés lorsqu’ils s’affichent.
 
 * **[!UICONTROL Champ de tri]**
 
-   Tirez vers le bas pour sélectionner l’un des `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, ou `Most Liked`.
+   Appuyez sur la touche &lt;Entrée> pour sélectionner l’une des options `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, ou `Most Liked`.
 
 * **[!UICONTROL Ordre de tri]**
 
-   Tirez vers le bas pour sélectionner l’un des `Ascending` ou `Descending`.
+   Maintenez la touche enfoncée pour sélectionner l’un des `Ascending` ou `Descending`.
 
 ### Modification d’un type de commentaire personnalisé {#changing-to-a-custom-comment-type}
 
@@ -162,19 +165,19 @@ Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType f
 
 * **[!UICONTROL Type de ressource de commentaire]**
 
-   Accédez à resourceType d’un `comment`composant étendu (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`
+   Accédez à resourceType d&#39;un `comment`composant étendu (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`
 
-   Cette ressource identifie le type de ressource de l’UGC créé lorsqu’un visiteur publie un commentaire.
+   Cette ressource identifie le type de ressource de l&#39;UGC créé lorsqu&#39;un visiteur publie un commentaire.
 
 * **[!UICONTROL Type de ressource de vote]**
 
-   Accédez à resourceType d’un `voting`composant étendu dans /apps. Par exemple, `/apps/social/components/hbs/voting`
+   Accédez à resourceType d&#39;un `voting`composant étendu dans /apps. Par exemple, `/apps/social/components/hbs/voting`
 
-   Cette ressource identifie le type de ressource de l’UGC créé lorsqu’un visiteur publie un vote.
+   Cette ressource identifie le type de ressource de l&#39;UGC créé lorsqu&#39;un visiteur publie un vote.
 
 * **[!UICONTROL Type de ressource système de commentaires]**
 
-   Accédez à resourceType d’un `comments`composant étendu (système de commentaires) dans /apps. Leave blank unless the page template [dynamically includes](scf.md#add-or-include-a-communities-component) the Comment System in the underlying script instead of being added to the page as a resource (comments node). Learn more by reading about the [{{include}} helper](handlebars-helpers.md#include).
+   Accédez à resourceType d&#39;un `comments`composant étendu (système de commentaires) dans /apps. Leave blank unless the page template [dynamically includes](scf.md#add-or-include-a-communities-component) the Comment System in the underlying script instead of being added to the page as a resource (comments node). Learn more by reading about the [{{include}} helper](handlebars-helpers.md#include).
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
@@ -187,7 +190,7 @@ Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’a
 Lorsque le visiteur est connecté, selon la configuration, il peut :
 
 * Publier un nouveau commentaire
-* Modifier son propre commentaire
+* Modifier leur propre commentaire
 * Supprimer leur propre commentaire
 * Signaler les commentaires des autres
 
