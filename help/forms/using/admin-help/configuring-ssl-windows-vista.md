@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 667645a0-53d0-4f9b-a0ba-cc7e366a23a1
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 63%
 
 ---
 
@@ -29,7 +32,7 @@ Vous pouvez exécuter l’outil keytool en saisissant une seule commande qui com
 
 1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to create the certificate and keystore:
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Nom *d’hôte`, OU=`*Nom* du `, O=`*groupe Nom *de la`,L=`*société Nom* de la société Ville****Nom* État Codedu pays&quot;LC Cert&quot;*_*motmotde passenomstockagede clés `, S=`**`, C=`**`" -alias`**`-keypass``*key*`**`-keystore`**`.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*Nom *d’hôte`, OU=`** Groupe Nom `, O=`*de *la Société Nom`,L=`** Ville****Nom* Etat Code de pays &quot;LC Cert&quot; *_*mot de passestockage de clés`, S=`* *`, C=`**`" -alias`**`-keypass``*key*`**`-keystore`**`.keystore`
 
    >[!NOTE]
    >
