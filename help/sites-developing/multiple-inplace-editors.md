@@ -1,6 +1,6 @@
 ---
 title: Configurez RTE pour plusieurs éditeurs en place.
-description: Créez plusieurs éditeurs sur place en Adobe Experience Manager en configurant l’éditeur de texte enrichi.
+description: Créez plusieurs éditeurs sur site dans Adobe Experience Manager en configurant l’Editeur de texte enrichi.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
@@ -13,7 +13,7 @@ ht-degree: 26%
 
 # Configuration de plusieurs éditeurs sur place {#configure-multiple-in-place-editors}
 
-Vous pouvez configurer l’Editeur de texte enrichi en Adobe Experience Manager de sorte qu’il dispose de plusieurs éditeurs sur place. Une fois le composant configuré, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat.
+Vous pouvez configurer l’Editeur de texte enrichi dans Adobe Experience Manager afin qu’il dispose de plusieurs éditeurs sur place. Une fois le composant configuré, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat.
 
 ![Un éditeur statique spécifique](assets/rte-inplace-editor.png)
 
