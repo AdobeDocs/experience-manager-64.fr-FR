@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 05b7410b-82a1-4267-ac07-2edbc29e9ee8
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 47%
 
 ---
 
@@ -42,6 +45,7 @@ Les dépendances des principaux fichiers de modèle 3D, tels que les fichiers d
 
       1. Notez les chemins et les noms de fichiers manquants.
       1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Fermer]**.
+
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. La nouvelle ressource chargée est désormais correctement répertoriée comme une ressource référencée.
 
    * **Ignorer les dépendances**.
