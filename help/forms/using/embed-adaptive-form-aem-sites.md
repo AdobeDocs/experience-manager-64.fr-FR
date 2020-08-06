@@ -10,6 +10,9 @@ topic-tags: interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 translation-type: tm+mt
 source-git-commit: d6595efef33b3c296d427dcfac39c377bd42fc9f
+workflow-type: tm+mt
+source-wordcount: '1114'
+ht-degree: 73%
 
 ---
 
@@ -22,7 +25,7 @@ AEM Forms permet aux développeurs de formulaires d’incorporer facilement des
 
 For information about embedding an adaptive form in an external web page, see [Embed adaptive form in external web page](/help/forms/using/embed-adaptive-form-external-web-page.md).
 
-Dans la page Sites AEM, vous pouvez ajouter un formulaire adaptatif ou une communication interactive à l’aide des éléments suivants :
+Dans la page AEM Sites, vous pouvez ajouter un formulaire adaptatif ou une communication interactive à l’aide de :
 
 * **[Composant Conteneur AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**AEM Forms fournit un composant que vous pouvez ajouter à vos pages de site. Le composant Conteneur AEM Forms vous permet d’incorporer un formulaire adaptatif et une communication interactive.
 
@@ -30,7 +33,7 @@ Dans la page Sites AEM, vous pouvez ajouter un formulaire adaptatif ou une commu
 
 ## Conditions préalables {#prerequisites}
 
-Pour incorporer un formulaire adaptatif ou une communication interactive dans une page de sites AEM qui utilise un modèle modifiable, assurez-vous que le composant Formulaire AEM est configuré en tant que composant autorisé dans le modèle associé. Pour plus d’informations, consultez la section **Stratégie et propriétés (conteneur de disposition)** dans [Création de modèles de page](/help/sites-authoring/templates.md).
+Pour incorporer un formulaire adaptatif ou une communication interactive dans une page de sites AEM qui utilise un modèle modifiable, assurez-vous que le composant AEM Form est configuré comme composant autorisé dans le modèle associé. Pour plus d’informations, consultez la section **Stratégie et propriétés (conteneur de disposition)** dans [Création de modèles de page](/help/sites-authoring/templates.md).
 
 Si une page de sites utilise un modèle statique, vous devez le configurer dans le système de paragraphe de la page de sites. Pour plus d’informations, voir [Configuration des composants en mode Création](/help/sites-authoring/default-components-designmode.md).
 
@@ -62,7 +65,7 @@ Pour incorporer un formulaire adaptatif ou une communication interactive à l’
    * **Bibliothèque client CSS** : spécifiez le chemin d’accès à une bibliothèque client CSS.
 
 
-1. Enregistrez les paramètres. Le formulaire adaptatif ou la communication interactive est désormais incorporé dans la page.
+1. Enregistrez les paramètres. Le formulaire adaptatif ou la communication interactive est désormais incorporé à la page.
 
 ## Publishing embedded adaptive form and interactive communication {#publishing-embedded-adaptive-form-and-interactive-communication}
 
