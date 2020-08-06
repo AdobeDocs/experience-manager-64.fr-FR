@@ -219,9 +219,9 @@ La plupart des composants peuvent être convertis en composants ciblés à l’a
 
 Pour supprimer la commande Target du menu contextuel, ajoutez la propriété suivante au nœud cq:editConfig du composant :
 
-* Nom (name) : `cq:disableTargeting`
+* Nom : `cq:disableTargeting`
 * Type : `Boolean`
-* Valeur: `True`
+* Valeur : `True`
 
 For example, to disable targeting for the title components of the Geometrixx Demo Site pages, add the property to the `/apps/geometrixx/components/title/cq:editConfig` node.
 
