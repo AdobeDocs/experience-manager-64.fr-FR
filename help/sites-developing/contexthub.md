@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 78%
 
 ---
 
@@ -31,7 +34,7 @@ ContextHub est une structure pour stocker, manipuler et présenter des données 
 
 ## Persistance {#persistence}
 
-ContextHub stocke les données de contexte de persistance sur le client. L’API Javascript ContextHub vous permet d’accéder aux magasins pour créer, mettre à jour et supprimer des données, le cas échéant. En tant que tel, ContextHub représente une couche de données sur vos pages.
+ContextHub stocke les données de contexte de persistance sur le client. L’API Javascript ContextHub vous permet d’accéder aux magasins pour créer, mettre à jour et supprimer des données si nécessaire. En tant que tel, ContextHub représente une couche de données sur vos pages.
 
 Chaque magasin ContextHub est une instance d’un type de magasin prédéfini :
 
