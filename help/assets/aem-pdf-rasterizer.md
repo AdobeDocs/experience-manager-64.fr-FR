@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
 source-wordcount: '745'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -108,4 +108,4 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Enregistrez le workflow.
-1. Téléchargez un fichier PDF ou un fichier AI en AEM Assets. PDF Rasterizer génère les miniatures et les rendus web pour le fichier.
+1. Téléchargez un fichier PDF ou un fichier AI vers AEM Assets. PDF Rasterizer génère les miniatures et les rendus web pour le fichier.
