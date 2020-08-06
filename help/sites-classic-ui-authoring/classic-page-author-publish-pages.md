@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 82%
 
 ---
 
@@ -27,16 +30,16 @@ Vous pouvez également publier/annuler la publication d’une page immédiatemen
 >
 >Certains termes relatifs à la publication peuvent prêter à confusion :
 >
->* **Publier / Annuler la publication**
-   >  Il s’agit des principaux termes des actions qui rendent votre contenu public dans votre environnement de publication (ou pas).
+>* **Publier/Annuler la publication**
+   >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
    >
    >
-* **Activer / désactiver**
-   >  Ces termes sont synonymes de publication/annulation de publication.
+* **Activer/Désactiver**
+   >  Ces termes sont synonymes de publication/annulation de la publication.
    >
    >
-* **Répliquer / Réplication**
-   >  Il s’agit des termes techniques décrivant le mouvement des données (contenu de page, fichiers, code, commentaires utilisateur, par exemple) d’un environnement à un autre, comme lors de la publication ou de la réplication inverse des commentaires utilisateur.
+* **Répliquer/Réplication**
+   >  Il s’agit des termes techniques décrivant le déplacement des données (par exemple, contenu de page, fichiers, code, commentaires d’utilisateur) d’un environnement à l’autre, comme lors de la publication ou de la réplication inverse des commentaires d’utilisateur.
 >
 
 
@@ -47,6 +50,7 @@ Vous pouvez également publier/annuler la publication d’une page immédiatemen
 >
 >* Un workflow est déclenché afin d’aviser la personne concernée de votre demande de publication.
 >* Un message s’affiche (pendant un bref laps de temps) pour vous en informer.
+
 >
 
 
