@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: aab9d622-d76b-4100-9ca6-e5b86f543381
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '129'
+ht-degree: 67%
 
 ---
 
@@ -21,4 +24,4 @@ Un point de fin Remoting permet à une application créée avec Flex d’appeler
 
 ## Paramètres des points de fin Remoting {#remoting-endpoint-settings}
 
-**** Méthode d’authentification du client Flex : Détermine le type de réponse que le serveur renvoie au client lorsque la sécurité du service appelé est activée, que l’opération appelée ne prend pas en charge les appels anonymes et que le client transmet des informations d’identification non valides ou non valides.
+**Méthode d&#39;authentification du client Flex :** Détermine le type de réponse que le serveur renvoie au client lorsque la sécurité du service appelé est activée, que l’opération appelée ne prend pas en charge les appels anonymes et que le client transmet des informations d’identification non valides ou non valides.
