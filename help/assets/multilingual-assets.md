@@ -4,15 +4,18 @@ description: Découvrez comment automatiser les processus de traduction des ress
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '174'
+ht-degree: 85%
 
 ---
 
 
 # Ressources multilingues {#multilingual-assets}
 
-Adobe Experience Manager (AEM) Assets vous permet d’automatiser les processus de traduction des ressources (y compris les fichiers binaires, les métadonnées et les balises) pour générer des ressources dans d’autres langues à utiliser dans des projets multilingues.
+Adobe Experience Manager (AEM) Assets vous permet d’automatiser les workflows de traduction des ressources (y compris les fichiers binaires, les métadonnées et les balises) pour générer des ressources dans d’autres langues à utiliser dans des projets multilingues.
 
-Pour automatiser les processus de traduction, vous intégrez des fournisseurs de services de traduction à AEM et créez des projets pour traduire les ressources dans plusieurs langues. AEM prend en charge les processus de traduction humaine et automatique.
+Pour automatiser les workflows de traduction, vous intégrez des fournisseurs de services de traduction à AEM et créez des projets pour traduire les ressources dans plusieurs langues. AEM prend en charge les workflows de traduction humaine et automatique.
 
 Traduction humaine : les ressources traduites sont renvoyées et importées dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, les ressources sont envoyées automatiquement entre AEM et le fournisseur de traduction.
 
