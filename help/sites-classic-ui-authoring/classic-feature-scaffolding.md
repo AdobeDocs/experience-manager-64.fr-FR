@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 884b3e75-78b5-421a-938e-97fe6d77c8c2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1507'
+ht-degree: 78%
 
 ---
 
@@ -67,13 +70,13 @@ Le contenu du modèle automatique est le formulaire. Lorsqu’un utilisateur sou
 
 To create a new scaffold go to the **Tools** console, then **Default Page Scaffolding** and create a new page. A single page template type will be available, the *Scaffolding Template.*
 
-*Accédez aux Propriétés **de la**page de la nouvelle page et définissez le texte* du *titre, la* description **, le modèlecible et le cheminTarget, comme décrit ci-dessus.****
+*Accédez aux Propriétés **de la**page de la nouvelle page et définissez le* titre Texte *,* Description *, le modèle de* Cible et le chemin d’accès à la Cible, comme décrit ci-dessus.****
 
 *Vous devez ensuite définir la structure de la page qui sera créée par ce scaffold. Pour ce faire, passez en mode conception sur la page de l’échafaudage. Un lien s’affiche alors pour vous permettre de modifier le scaffold dans l’**éditeur de boîte de dialogue**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
-A l’aide de l’éditeur de dialogue, vous spécifiez les propriétés qui seront créées chaque fois qu’une nouvelle page est créée à l’aide de cet échafaudage.
+A l&#39;aide de l&#39;éditeur de dialogue, vous spécifiez les propriétés qui seront créées chaque fois qu&#39;une nouvelle page est créée à l&#39;aide de cet échafaudage.
 
 La définition de la boîte de dialogue d’un modèle automatique fonctionne de la même manière que celle d’un composant (voir [Composants](/help/sites-developing/components.md)). On remarque cependant quelques différences de taille :
 
@@ -87,9 +90,9 @@ Now, click on the dialog field **Dialog > Tab Panel > Text > Text**, like this:
 
 ![textedit](assets/textedit.png)
 
-La liste des propriétés de ce champ s’affiche sur le côté droit de l’éditeur de dialogue, comme suit :
+La liste de propriétés de ce champ s’affiche sur le côté droit de l’éditeur de dialogue, comme suit :
 
-![list_of_properties](assets/list_of_properties.png)
+![liste_of_properties](assets/list_of_properties.png)
 
 Notez la propriété name de ce champ. Elle porte la valeur suivante :
 
@@ -110,7 +113,7 @@ Pour spécifier ces deux informations, vous devez utiliser des champs masqués. 
 
 Les propriétés de ce champ masqué sont les suivantes :
 
-![hidden_list_props](assets/hidden_list_props.png)
+![hidden_liste_props](assets/hidden_list_props.png)
 
 La propriété name de ce champ masqué est
 
@@ -130,7 +133,7 @@ Vous pouvez afficher le second champ masqué en cliquant sur celui-ci comme ceci
 
 Les propriétés de ce champ masqué sont les suivantes :
 
-![hidden_list_props2](assets/hidden_list_props2.png)
+![hidden_liste_props2](assets/hidden_list_props2.png)
 
 La propriété name de ce champ masqué est
 
@@ -151,7 +154,7 @@ Lorsque vous ouvrez une page en mode **Génération de modèles automatique** (�
 * un cadenas (pour la plupart des composants, par exemple Texte et Titre) 
 * un masque avec le texte **Cliquez pour annuler l’héritage** (pour les composants Image)
 
-Elles indiquent que le composant ne peut pas être modifié tant que l’héritage n’est pas annulé.
+Elles montrent que le composant ne peut pas être modifié tant que l’héritage n’a pas été annulé.
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
