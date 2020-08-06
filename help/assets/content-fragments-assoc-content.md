@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
 translation-type: tm+mt
 source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragments de contenu nécessitent l’application d’ [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application de [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
 
 Le contenu associé fournit la connexion afin que les ressources puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu. Vous bénéficiez ainsi d’une certaine souplesse,[ car vous disposez d’une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu sur une page.](/help/sites-authoring/content-fragments.md#using-associated-content) Cela permet aussi de réduire le temps nécessaire pour rechercher la ressource appropriée.
 
@@ -31,7 +34,7 @@ Le contenu associé fournit la connexion afin que les ressources puissent (éven
 
 Pour effectuer l’association, vous devez d’abord [ajouter les ressources multimédias à une collection](managing-collections-touch-ui.md#adding-assets-to-a-collection). Une fois l’ajout effectué, vous pouvez réaliser les étapes suivantes :
 
-1. Ouvrez votre fragment et sélectionnez **[!UICONTROL Contenu associé]** dans le panneau latéral.
+1. Ouvrez votre fragment et sélectionnez ensuite **[!UICONTROL Contenu associé]** dans le panneau latéral.
 
    ![chlimage_1-207](assets/chlimage_1-207.png)
 
