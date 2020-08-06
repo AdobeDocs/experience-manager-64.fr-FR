@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d13c68ba-be49-440b-8bbe-a10edbfb9b9b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1918'
+ht-degree: 78%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >ClientContext a été remplacé par ContextHub. Pour plus de détails, voir la documentation associée concernant la [configuration](/help/sites-administering/contexthub-config.md) et la [documentation développeur](/help/sites-developing/contexthub.md).
 
-Le contexte client est un mécanisme qui fournit certaines informations sur la page active et le visiteur. It can be opened using **Ctrl-Alt-c** (windows) or **control-option-c** (Mac):
+Le contexte client est un mécanisme qui fournit certaines informations sur la page et le visiteur en cours. It can be opened using **Ctrl-Alt-c** (windows) or **control-option-c** (Mac):
 
 ![clientcontext_alisonparker](assets/clientcontext_alisonparker.png)
 
@@ -52,18 +55,18 @@ ClientContext peut afficher les propriétés suivantes ([selon les éléments ay
 * l’adresse **IP**
 * **mots-clés** utilisés pour le référent de moteur de recherche
 * le **navigateur** utilisé
-* le **SE** (système d’exploitation) utilisé
+* le **système d’exploitation** (système d’exploitation) utilisé
 * la **résolution d’écran**
 * position X **de la** souris
 * position Y **de la** souris
 
-**Flux** d’activités : fournit des informations sur l’activité sociale de l’utilisateur sur diverses plateformes ; par exemple, les forums AEM, les blogs, les évaluations, etc.
+**Flux** d&#39;Activité Ce flux fournit des informations sur l&#39;activité sociale de l&#39;utilisateur sur diverses plateformes ; par exemple, les forums AEM, les blogs, les évaluations, etc.
 
-**Campagne** Permet aux auteurs de simuler une expérience spécifique pour une campagne. Ce composant remplace la sélection normale de résolution et d’expérience de campagne pour permettre de tester différentes variantes.
+**Campaign** Permet aux auteurs de simuler une expérience spécifique pour une campagne. Ce composant remplace la sélection normale de résolution et d’expérience de campagne pour permettre de tester différentes variantes.
 
-La résolution de la campagne est normalement basée sur la propriété priority de la campagne. L’expérience est normalement sélectionnée en fonction de la segmentation.
+La résolution Campaign est généralement basée sur la propriété priority de la campagne. L’expérience est normalement sélectionnée en fonction de la segmentation.
 
-**Panier** Affiche les informations du panier d&#39;achats, y compris les entrées de produit (titre, quantité, prixFormaté, etc.), les promotions résolues (titre, message, etc.) et les bons (code, description, etc.).
+**Panier** Affiche les informations du panier, y compris les entrées de produits (titre, quantité, prixFormaté, etc.), les promotions résolues (titre, message, etc.) et les bons (code, description, etc.).
 
 La boutique de session de panier informe également le serveur des changements de promotion résolus (en fonction des modifications de segmentation) avec la propriété ClientContextCartServlet.
 
@@ -71,11 +74,11 @@ La boutique de session de panier informe également le serveur des changements d
 
 La boutique générique doit être configurée avec un rendu JS qui affiche les données d’une manière personnalisée.
 
-**Propriétés** génériques du magasin est un composant générique qui affiche le contenu d’une boutique. Il s’agit d’une version de niveau supérieur du composant Boutique générique.
+**Propriétés** génériques du magasin est un composant générique qui affiche le contenu d’un magasin. Il s’agit d’une version de niveau supérieur du composant Boutique générique.
 
 Le composant Propriétés de la boutique générique inclut un rendu par défaut qui répertorie les propriétés configurées (ainsi qu’une miniature).
 
-**Géolocalisation** Affiche la latitude et la longitude du client. Elle utilise l’API de géolocalisation HTML5 pour demander la position actuelle au navigateur. Une fenêtre contextuelle s’affiche alors au visiteur, où le navigateur lui demande s’il accepte de partager son emplacement.
+**Géolocalisation** Affiche la latitude et la longitude du client. Elle utilise l’API de géolocalisation HTML5 pour demander la position actuelle au navigateur. Cela se traduit par l’affichage d’une fenêtre contextuelle au visiteur, où le navigateur lui demande s’il accepte de partager son emplacement.
 
 Lorsqu’il est affiché dans le cloud contextuel, le composant utilise une API Google pour afficher une carte sous forme de vignette. Le composant est soumis aux [limites d’utilisation](https://developers.google.com/maps/documentation/staticmaps/intro#Limits) de l’API Google.
 
@@ -85,7 +88,7 @@ Lorsqu’il est affiché dans le cloud contextuel, le composant utilise une API 
 
 **JSONP Store** Composant qui affiche le contenu qui dépend de votre installation.
 
-La norme JSONP est un complément de JSON qui permet de contourner stratégie de même origine (ce qui empêche les applications web de communiquer avec les serveurs se trouvant sur un autre domaine). Il consiste à encapsuler l’objet JSON dans un appel de fonction afin de pouvoir le charger en tant qu’objet de l’autre domaine (exception autorisée à la même stratégie d’origine).
+La norme JSONP est un complément de JSON qui permet de contourner stratégie de même origine (ce qui empêche les applications web de communiquer avec les serveurs se trouvant sur un autre domaine). Il consiste à encapsuler l’objet JSON dans un appel de fonction afin de pouvoir le charger en tant qu’élément de l’autre domaine (exception autorisée à la même stratégie d’origine).
 
   La boutique JSONP est semblable à n’importe quelle autre boutique, mais elle charge des informations issues d’un autre domaine sans avoir besoin d’un proxy pour ces informations sur le domaine actuel. Voir l’exemple figurant dans [Stockage de données dans le contexte client via JSONP](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 
@@ -93,11 +96,11 @@ La norme JSONP est un complément de JSON qui permet de contourner stratégie de
 >
 >La boutique JSONP ne met pas en cache les informations figurant dans le cookie, mais récupère ces données à chaque chargement de la page.
 
-**Données** de profil Affiche les informations collectées dans le profil utilisateur. Par exemple, le sexe, l’âge ou l’adresse électronique.
+**Données** du Profil Affiche les informations collectées dans le profil utilisateur. Par exemple, le sexe, l’âge ou l’adresse électronique.
 
-**Segments** résolus Affiche les segments actuellement résolus (souvent en fonction d’autres informations affichées dans le contexte client). Ceci s’avère utile lors de la configuration d’une campagne.
+**Segments** résolus Affiche les segments actuellement résolus (souvent en fonction d’autres informations affichées dans le contexte du client). Ceci s’avère utile lors de la configuration d’une campagne.
 
-Par exemple, si la souris se trouve sur la partie gauche ou droite de la fenêtre. Ce segment est principalement utilisé pour les tests, car les modifications peuvent être affichées immédiatement.
+Par exemple, si la souris se trouve sur la partie gauche ou droite de la fenêtre. Ce segment est principalement utilisé pour les tests, car les modifications sont visibles immédiatement.
 
 **Graphique** social Affiche le graphique social des amis et abonnés de l’utilisateur.
 
@@ -222,7 +225,7 @@ Cet exemple utilise l’exemple de site web Geometrixx Outdoors pour accéder à
 Ajoutez le composant Boutique JSONP à ClientContext et utilisez-le pour récupérer et stocker des informations de géolocalisation sur le client web.
 
 1. Ouvrez la page d’accueil en anglais du site Geometrixx Outdoors sur l’instance de création AEM. ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html))
-1. Pour ouvrir Client Context, appuyez sur Ctrl-Alt-c (Windows) ou Ctrl-option-c (Mac).
+1. Pour ouvrir Client Context, appuyez sur Ctrl-Alt-c (windows) ou Ctrl-option-c (Mac).
 1. Cliquez sur l’icône de modification de ClientContext pour ouvrir le concepteur ClientContext.
 
    ![](do-not-localize/chlimage_1-12.png)
