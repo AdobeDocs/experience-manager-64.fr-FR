@@ -40,7 +40,7 @@ Cette configuration OSGi
 
 Pour atteindre cette configuration OSGi :
 
-* Sur l’éditeur principal
+* Sur l’éditeur Principal
 * Connexion avec droits d’administrateur
 * Access the [Web Console](../../help/sites-deploying/configuring-osgi.md)
 
