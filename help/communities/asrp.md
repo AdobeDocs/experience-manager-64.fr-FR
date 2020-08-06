@@ -1,8 +1,8 @@
 ---
-title: ASRP - Fournisseur de ressources d'Enregistrement Adobe
-seo-title: ASRP - Fournisseur de ressources d'Enregistrement Adobe
-description: Configurer des AEM Communities pour utiliser une base de données relationnelle comme magasin commun
-seo-description: Configurer des AEM Communities pour utiliser une base de données relationnelle comme magasin commun
+title: ASRP - Fournisseur de ressources d'Enregistrement d'Adobe
+seo-title: ASRP - Fournisseur de ressources d'Enregistrement d'Adobe
+description: Configurer AEM Communities pour utiliser une base de données relationnelle comme magasin commun
+seo-description: Configurer AEM Communities pour utiliser une base de données relationnelle comme magasin commun
 uuid: 29826b44-633d-4586-8553-cd87ebe269a2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -18,11 +18,11 @@ ht-degree: 2%
 ---
 
 
-# ASRP - Fournisseur de ressources d&#39;Enregistrement Adobe {#asrp-adobe-storage-resource-provider}
+# ASRP - Fournisseur de ressources d&#39;Enregistrement d&#39;Adobe {#asrp-adobe-storage-resource-provider}
 
 ## A propos d&#39;ASRP {#about-asrp}
 
-Lorsque les AEM Communities sont configurés pour utiliser ASRP en tant que magasin commun, le contenu généré par l’utilisateur est accessible à partir de toutes les instances d’auteur et de publication sans avoir besoin de synchronisation ni de réplication.
+Lorsque AEM Communities est configuré pour utiliser ASRP en tant que magasin commun, le contenu généré par l’utilisateur est accessible à partir de toutes les instances d’auteur et de publication sans avoir besoin de synchronisation ni de réplication.
 
 Voir aussi [Caractéristiques des options](working-with-srp.md#characteristics-of-srp-options) SRP et Topologies [](topologies.md)recommandées.
 
@@ -30,7 +30,7 @@ Voir aussi [Caractéristiques des options](working-with-srp.md#characteristics-o
 
 Une licence supplémentaire est requise pour l&#39;utilisation de ASRP.
 
-Pour configurer votre site AEM Communities pour utiliser ASRP pour UGC, contactez votre gestionnaire de compte pour :
+Pour configurer votre site AEM Communities de manière à utiliser ASRP pour UGC, contactez votre gestionnaire de compte pour :
 
 * URL du centre de données (adresse du point de terminaison ASRP)
 * Clé du client
@@ -85,7 +85,7 @@ Après avoir envoyé la configuration, testez la connexion :
 
 ### Réplication de la clé Crypto {#replicate-the-crypto-key}
 
-Le Consumer key et la clé secrète sont chiffrés. Pour que les clés soient chiffrées/déchiffrées correctement, la clé Granite Crypto principale doit être la même sur toutes les instances AEM.
+Le Consumer key et la clé secrète sont chiffrés. Pour que les clés soient chiffrées/déchiffrées correctement, la Principale clé Crypto de granit doit être la même sur toutes les instances AEM.
 
 Suivez les instructions de la section [Répliquer la clé](deploy-communities.md#replicate-the-crypto-key)Crypto.
 
@@ -97,7 +97,7 @@ Veillez à définir les domaines comme des URL routables à partir de l’URL du
 
 ### Synchronisation du temps {#time-synchronization}
 
-Pour que l&#39;authentification avec le point de terminaison ASRP réussisse, les machines exécutant vos AEM Communities hébergés doivent être synchronisées dans le temps, par exemple avec le protocole NTP ( [Network Time Protocol)](https://www.ntp.org/).
+Pour que l&#39;authentification avec le point de terminaison ASRP réussisse, les machines exécutant votre AEM Communities hébergée doivent être synchronisées dans le temps, par exemple avec le protocole NTP ( [Network Time Protocol)](https://www.ntp.org/).
 
 ### Publication de la configuration {#publishing-the-configuration}
 
@@ -116,13 +116,13 @@ Pour rendre la configuration identique disponible dans l’environnement de publ
    * Sélectionner **[!UICONTROL Activer]**
 
 
-## Mise à niveau à partir d’AEM 6.0 {#upgrading-from-aem}
+## Mise à niveau depuis AEM 6.0 {#upgrading-from-aem}
 
 >[!CAUTION]
 >
 >Si vous activez ASRP sur un site de communauté publié, les UGC déjà stockées dans [JCR](jsrp.md) ne seront plus visibles car il n’y a pas de synchronisation des données entre l’enregistrement sur site et l’enregistrement cloud.
 
-**`AEM Communities Extension`** était auparavant introduit dans les communautés sociales AEM 6.0 en tant que service cloud. Depuis les communautés AEM 6.1, aucune configuration de cloud n’est nécessaire, il vous suffit de sélectionner ASRP dans la console [de configuration de l’](srp-config.md)enregistrement.
+**`AEM Communities Extension`** était auparavant introduit dans AEM 6.0 communautés sociales en tant que service cloud. À partir de AEM 6.1 Communautés, aucune configuration de cloud n&#39;est nécessaire, il vous suffit de sélectionner ASRP dans la console [de configuration de l&#39;](srp-config.md)enregistrement.
 
 En raison de la nouvelle structure d’enregistrement, il est nécessaire de suivre les instructions de [mise à niveau](upgrade.md#adobe-cloud-storage) lors de la mise à niveau des communautés sociales vers les communautés.
 
@@ -137,17 +137,17 @@ Pour plus d’informations sur *les utilisateurs*, les profils ** utilisateur et
 
 ### UGC disparaît après la mise à niveau {#ugc-disappears-after-upgrade}
 
-Si la mise à niveau est effectuée à partir d’un site de communauté sociale AEM 6.0 existant, veillez à suivre les instructions [de](upgrade.md#adobe-cloud-storage)mise à niveau, sinon l’UGC *semble* être perdu.
+Si la mise à niveau à partir d’un site de communauté sociale AEM 6.0 existe déjà, veillez à suivre les instructions [de](upgrade.md#adobe-cloud-storage)mise à niveau, sinon l’UGC *semble* être perdu.
 
 ### Erreurs d’authentification {#authentication-errors}
 
-Si vous recevez des erreurs d’authentification par rapport à l’URL du centre de données et que le fichier error.log d’AEM contient des messages sur les horodatages obsolètes, vérifiez que la synchronisation de l’heure est en cours.
+Si vous recevez des erreurs d’authentification par rapport à l’URL du centre de données et que l’AEM error.log contient des messages sur les horodatages obsolètes, vérifiez que la synchronisation de l’heure est en cours.
 
 Il est recommandé d’utiliser un outil tel que le protocole NTP ( [Network Time Protocol)](https://www.ntp.org/) pour synchroniser tous les serveurs d’auteur et de publication AEM.
 
 ### Le nouveau contenu n&#39;apparaît pas dans les recherches {#new-content-does-not-appear-in-searches}
 
-L’infrastructure d’enregistrement cloud Adobe utilise *en fin de compte la cohérence* pour aider à atteindre ses objectifs de mise à l’échelle et de performance. Pour cette raison, le nouveau contenu n’est pas instantanément disponible et il peut s’écouler plusieurs secondes avant qu’il ne s’affiche dans les résultats de la recherche.
+L&#39;infrastructure d&#39;enregistrement de cloud d&#39;Adobes utilise *éventuellement la cohérence* pour aider à atteindre ses objectifs de mise à l&#39;échelle et de performance. Pour cette raison, le nouveau contenu n’est pas instantanément disponible et il peut s’écouler plusieurs secondes avant qu’il ne s’affiche dans les résultats de la recherche.
 
 Bien que l’intervalle affectant la cohérence éventuelle soit surveillé, contactez le représentant du compte si l’affichage du nouveau contenu dans les recherches prend plus de quelques secondes.
 
@@ -155,7 +155,7 @@ Bien que l’intervalle affectant la cohérence éventuelle soit surveillé, con
 
 Vérifiez que ASRP a été configuré pour être le fournisseur par défaut en vérifiant la configuration de l&#39;option enregistrement. Par défaut, le fournisseur de ressources d’enregistrement est JSRP et non ASRP.
 
-Sur toutes les instances d’AEM d’auteur et de publication, consultez de nouveau la console de configuration d’Enregistrement ou vérifiez le référentiel AEM :
+Sur toutes les instances d’AEM création et de publication, revisitez la console de configuration de l’Enregistrement ou vérifiez le référentiel AEM :
 
 * Dans JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
