@@ -7,6 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
 source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
+workflow-type: tm+mt
+source-wordcount: '1856'
+ht-degree: 91%
 
 ---
 
@@ -55,7 +58,7 @@ Les exemples de données renseignés dans l’outil montrent à quel point il es
 
 ### Banques de données partagées {#shared-datastores}
 
-Pour les banques de données volumineuses, vous pouvez mettre en oeuvre une banque de données partagée par le biais d’une banque de données de fichiers partagée sur un lecteur connecté au réseau ou d’une banque de données S3. Dans ce cas, les instances individuelles n’ont pas besoin de conserver une copie des fichiers binaires. En outre, une banque de données partagée facilite la réplication sans fichier binaire et permet de réduire la bande passante utilisée pour répliquer les ressources dans les environnements de publication ou les instances de déchargement.
+Pour les banques de données volumineuses, vous pouvez mettre en oeuvre une banque de données partagée soit par l&#39;intermédiaire d&#39;une banque de données de fichiers partagés sur un lecteur connecté au réseau, soit par l&#39;intermédiaire d&#39;une banque de données S3. Dans ce cas, les instances individuelles n’ont pas besoin de conserver une copie des fichiers binaires. En outre, une banque de données partagée facilite la réplication sans fichier binaire et permet de réduire la bande passante utilisée pour répliquer les ressources dans les environnements de publication ou les instances de déchargement.
 
 #### Cas d’utilisation {#use-cases}
 
@@ -96,7 +99,7 @@ Il est difficile d’obtenir des chiffres de dimensionnement précis pour un mag
 
 Comme les fichiers binaires sont stockés dans la banque de données, chaque fichier binaire occupe de l’espace. La plupart des référentiels ont une taille inférieure à 100 Go. Cependant, vous pouvez rencontrer des référentiels de plus grande taille pouvant atteindre 1 To. En outre, pour effectuer le compactage hors ligne, vous avez besoin de suffisamment d’espace libre sur le volume pour réécrire le référentiel compacté en plus de la version précompactée. En règle générale, il convient d’avoir un disque faisant 1,5 fois la taille attendue pour le référentiel.
 
-Pour le référentiel, utilisez des disques SSD ou des disques avec un niveau d&#39;E/S par seconde supérieur à 3 000. Pour éviter que les IOPS n’introduisent des goulets d’étranglement en termes de performances, surveillez les niveaux d’attente des E/S du processeur pour détecter les premiers signes de problèmes.
+Pour le référentiel, utilisez des disques SSD ou des disques avec un niveau d&#39;E/S supérieur à 3000. Pour éviter que les IOPS n’introduisent des goulets d’étranglement en termes de performances, surveillez les niveaux d’attente des E/S du processeur pour détecter les premiers signes de problèmes.
 
 [Obtenir le fichier](assets/aem_environment_sizingtool.xlsx)
 
@@ -108,17 +111,17 @@ AEM Assets comporte plusieurs cas d’utilisation qui rendent la performance du 
 
 Si vous ajoutez l’application de bureau AEM à l’ensemble, les problèmes de réseau s’aggravent en raison du manque d’efficacité du protocole WebDAV.
 
-Pour illustrer ce manque d’efficacité, Adobe a testé les performances du système à l’aide de WebDAV sur OS X. Un fichier InDesign de 3,5 Mo a été ouvert, modifié et les modifications enregistrées. Les observations suivantes ont été faites :
+Pour illustrer ce manque d’efficacité, Adobe a testé les performances du système à l’aide de WebDAV sur OS X. Un fichier InDesign de 3,5 Mo a été ouvert, modifié et les modifications enregistrées. Les observations suivantes ont été formulées :
 
 * Au total, environ 100 requêtes HTTP ont été générées pour terminer l’opération
 * Le fichier a été chargé quatre fois sur HTTP
 * Le fichier a été téléchargé une fois sur HTTP
-* L&#39;opération a duré 42 secondes.
+* L&#39;opération complète a pris 42 secondes.
 * Un total de 18 Mo de données a été transféré
 
 Lors de l’analyse du temps moyen d’enregistrement des fichiers sur WebDAV, il a été constaté que les performances augmentent considérablement lorsque la bande passante augmente jusqu’au niveau de 5-10 Mbits/s. Par conséquent, Adobe recommande que chaque utilisateur accédant simultanément au système dispose d’une vitesse de chargement d’au moins 10 Mbits/s et d’une bande passante comprise entre 5 et 10 Mbits/s.
 
-For more information, see [Troubleshooting AEM desktop app](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html).
+For more information, see [Troubleshooting AEM desktop app](https://helpx.adobe.com/fr/experience-manager/kb/troubleshooting-companion-app.html).
 
 ## Restrictions {#limitations}
 
@@ -136,10 +139,10 @@ While the limit for the number of nodes in a repository has not been determined,
 
 La limite du nombre de fichiers pouvant exister dans une banque de données peut être de 2,1 milliards en raison des restrictions du système de fichiers. Il est probable que le référentiel rencontre des problèmes en raison du grand nombre de nœuds, bien avant d’atteindre la limite de la banque de données.
 
-Si les rendus ne sont pas générés correctement, utilisez la bibliothèque Camera Raw. Toutefois, dans ce cas, le côté le plus long de l’image ne doit pas dépasser 65 000 pixels. En outre, l&#39;image ne doit pas contenir plus de 512 MP (512 &amp;ast; 1024 &amp;ast; 1024 pixels)&#39;. *La taille de la ressource est sans importance*.
+Si les rendus ne sont pas générés correctement, utilisez la bibliothèque Camera Raw. Toutefois, dans ce cas, le côté le plus long de l’image ne doit pas dépasser 65 000 pixels. En outre, l&#39;image ne doit pas contenir plus de 512 MP (512 &amp;amp ; ast ; 1024 &amp;ast; 1024 pixels)&#39;. *La taille de la ressource est sans importance*.
 
 Il est difficile d’estimer avec précision la taille du fichier TIFF pris en charge prêt à l’emploi avec un tas spécifique pour AEM en raison de facteurs supplémentaires, tels que la taille des pixels, qui influence le traitement. Il est possible qu’AEM puisse traiter un fichier prêt à l’emploi d’une taille de 255 Mo, mais ne puisse pas traiter un fichier de 18 Mo, parce que ce dernier comprend un nombre inhabituellement plus élevé de pixels par rapport au premier.
 
 ## Taille des ressources {#size-of-assets}
 
-Par défaut, AEM vous permet de télécharger des fichiers de tailles de fichier allant jusqu’à 2 Go. Pour télécharger des fichiers très volumineux dans AEM, voir [Configuration pour télécharger des fichiers](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)très volumineux.
+Par défaut, AEM vous permet de télécharger des fichiers de taille maximale de 2 Go. Pour télécharger des ressources très volumineuses dans AEM, voir [Configuration pour télécharger des ressources](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)très volumineuses.
