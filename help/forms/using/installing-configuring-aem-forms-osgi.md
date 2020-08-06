@@ -102,7 +102,7 @@ Le package du module complémentaire AEM Forms est une application déployée s
 
    Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [AEM Forms Release](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) .
 
-1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED ne s’affichent plus dans le fichier [AEM-Installation-Directory]/crx-quickstart/logs/error.log et que le journal soit stable.
+1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d&#39;arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED ne s&#39;affichent plus dans le fichier [AEM-Installation-Directory]/crx-quickstart/logs/error.log et que le journal est stable.
 1. Répétez les étapes 1 à 7 sur toutes les instances de création et de publication.
 
 ## Configurations post-installation {#post-installation-configurations}
@@ -173,7 +173,7 @@ La mise en cache est un mécanisme qui permet de raccourcir les temps d’accès
 Effectuez les étapes suivantes pour configurer le cache de formulaires adaptatifs :
 
 1. Go to AEM web console configuration manager at `https://[server]:[port]/system/console/configMgr`.
-1. Cliquez sur la **[!UICONTROL configuration de canal web de communication interactive de formulaire adaptatif]** pour éditer ses valeurs de configuration. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **[!UICONTROL Number of Adaptive Forms]** field. La valeur par défaut est 100. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Cliquez sur la **[!UICONTROL configuration de canal web de communication interactive de formulaire adaptatif]** pour éditer ses valeurs de configuration. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **[!UICONTROL Number of Adaptive Forms]** field. La valeur par défaut est 100.   Cliquez sur **[!UICONTROL Enregistrer]**.
 
    >[!NOTE]
    >
