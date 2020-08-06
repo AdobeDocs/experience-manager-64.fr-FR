@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bc8c9aa2-f669-41f3-a526-6146ff5cf0cd
 translation-type: tm+mt
 source-git-commit: 7e74796c60ffa785b712d21b34a909f373587cd9
+workflow-type: tm+mt
+source-wordcount: '1887'
+ht-degree: 91%
 
 ---
 
@@ -129,9 +132,9 @@ Cette section comporte des scénarios de problèmes que l’on peut rencontrer a
 
 Ces scénarios doivent vous permettre de trouver la cause première des problèmes de mise à niveau et d’identifier des problèmes spécifiques à un projet ou un produit.
 
-### Recréation de la configuration de Dynamic Media Cloud après la mise à niveau {#dynamic-media-cloud-configuration}
+### Récréation de la configuration de Dynamic Media Cloud après la mise à niveau {#dynamic-media-cloud-configuration}
 
-Après la mise à niveau vers AEM 6.4 à partir d’une version antérieure, la configuration de Contenu multimédia dynamique des paramètres antérieurs peut devenir inaccessible à partir d’AEM 6.4 TouchUI. Pour résoudre ce problème, utilisez CRXDE Lite pour supprimer les paramètres précédents, puis créez une nouvelle configuration de cloud de média dynamique. See also [Dynamic Media repository restructuring in AEM 6.4](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md).
+Après la mise à niveau vers AEM 6.4 à partir d’une version antérieure, la configuration de Contenu multimédia dynamique à partir des paramètres antérieurs peut devenir inaccessible à partir de AEM 6.4 TouchUI. Pour résoudre ce problème, utilisez le CRXDE Lite pour supprimer les paramètres antérieurs, puis créez une nouvelle configuration de Contenu multimédia dynamique. See also [Dynamic Media repository restructuring in AEM 6.4](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md).
 
 ### Échec de la migration du référentiel  {#repository-migration-failing-}
 
@@ -179,7 +182,7 @@ La manière de gérer le code personnalisé erroné consiste à réaliser en pre
 
 ### Missing Customizations Under etc {#missing-customizations-under-etc}
 
-`/apps` et `/libs` sont bien gérées par la mise à niveau, mais les modifications apportées à `/etc` la section peuvent nécessiter une restauration manuelle à partir de `/var/upgrade/PreUpgradeBackup` la mise à niveau. Veillez à inspecter cet emplacement pour identifier tout contenu devant être fusionné manuellement.
+`/apps` et `/libs` sont bien gérés par la mise à niveau, mais les modifications sous `/etc` peuvent devoir être restaurées manuellement à partir de `/var/upgrade/PreUpgradeBackup` la mise à niveau. Veillez à inspecter cet emplacement pour identifier tout contenu devant être fusionné manuellement.
 
 ### Analyse des journaux error.log et upgrade.log {#analyzing-the-error-log-and-upgrade-log}
 
@@ -193,7 +196,7 @@ grep -v UnrelatedErrorString
 
 Certains messages d’erreur peuvent ne pas être immédiatement explicatifs. Dans ce cas, l’étude du contexte dans lequel ils se sont produits peut également aider à comprendre où l’erreur a été créée. Vous pouvez séparer l’erreur à l’aide de :
 
-* `grep -B` pour ajouter des lignes avant l&#39;erreur;
+* `grep -B` pour ajouter des lignes avant l&#39;erreur ;
 
 ou
 
