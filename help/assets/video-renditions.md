@@ -4,6 +4,9 @@ description: Rendus vidéo
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 100%
 
 ---
 
@@ -16,11 +19,11 @@ Le composant AEM Assets prend en charge les rendus statiques et dynamiques (ren
 
 Les rendus statiques sont générés en mode natif à l’aide de FFMPEG (installé et disponible sur le chemin système) et stockés dans le référentiel de contenu.
 
-Les rendus codés DM sont stockés dans le serveur proxy et diffusés au moment de l’exécution.
+Les rendus avec codage DM sont stockés dans le serveur proxy et diffusés au moment de l’exécution.
 
 Les ressources AEM fournissent une prise en charge de lecture pour ces rendus du côté client.
 
-Pour afficher les rendus d’une ressource vidéo particulière, ouvrez sa page de ressources, puis appuyez sur l’icône Navigation globale. Then, choose **[!UICONTROL Renditions]** from the list.
+Pour afficher les rendus d’une ressource vidéo spécifique, ouvrez sa page de ressource, puis appuyez sur l’icône de navigation globale. Choisissez ensuite **[!UICONTROL Rendus]** dans la liste.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
