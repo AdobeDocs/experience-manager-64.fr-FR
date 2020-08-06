@@ -33,7 +33,7 @@ For an overview of the content translation features in AEM, see [Translating Con
 Créez une configuration de cloud qui connecte AEM à votre fournisseur de services de traduction. AEM permet d’établir par défaut une connexion à Microsoft Translator.
  Les fournisseurs de services de traduction ci-dessous fournissent une mise en œuvre de la nouvelle API pour les projets de traduction. Liens pour en savoir plus sur l’intégration :
 
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (partenaire Premier d&#39;Adobe Exchange)
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
@@ -53,6 +53,7 @@ Créez une configuration de cloud qui connecte AEM à votre fournisseur de servi
 >
 >* [Traduction humaine dans AEM](https://www.adobe.com/go/aem-human-translation-connectors)
 >* [Traduction automatique dans AEM](https://www.adobe.com/go/aem-machine-translation-connectors)
+
 >
 
 
