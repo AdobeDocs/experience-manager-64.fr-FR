@@ -24,7 +24,7 @@ ht-degree: 73%
 
 L’application AEM Forms permet de synchroniser des formulaires adaptatifs, des formulaires mobiles et des jeux de formulaires sur les périphériques mobiles, en fonction de votre serveur. Vous pouvez définir des processus en tant que [Processus spécifiques à Forms on OSGi](/help/forms/using/aem-forms-workflow.md) ou [Processus Forms on JEE](/help/forms/using/finance-reference-site-walkthrough.md#approving-the-application). Par exemple, vous dirigez un établissement bancaire et utilisez AEM Forms pour gérer les demandes et les communications de vos clients. Vos clients remplissent un formulaire et le soumettent pour vérification. Si vous activez le formulaire sur des périphériques mobiles, vos clients peuvent remplir le formulaire dans l’application AEM Forms. Vous pouvez également gérer le processus de vérification en activant le formulaire de vérification sur les périphériques mobiles. Votre agent de terrain peut apporter un périphérique mobile au client, vérifier les détails et envoyer le formulaire. L’application AEM Forms se synchronise avec le serveur AEM Forms et récupère les formulaires compatibles avec les périphériques mobiles. Si l’application est hors ligne, elle enregistre les données localement.
 
-Le code source de l&#39;application AEM Forms est disponible pour les clients via la distribution de logiciels. Le package de code source de Software Distribution est disponible sous la forme : `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+Le code source de l’application AEM Forms est disponible pour les clients via la distribution de logiciels. Le package de code source de Software Distribution est disponible sous la forme : `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 L’application AEM Forms est prise en charge sur les périphériques iOS, Android, Windows. Vous pouvez installer une application AEM Forms pour Android depuis Google Play, iOS depuis l’App Store et Windows depuis le Windows Store.
 
@@ -38,7 +38,7 @@ Pour installer, personnaliser et distribuer l’application sur les périphériq
 
 ## Conditions préalables {#prerequisites}
 
-L’application AEM Forms nécessite un serveur AEM Forms. Les utilisateurs peuvent générer des formulaires que vous créez en AEM Forms\
+L’application AEM Forms nécessite un serveur AEM Forms. Les utilisateurs peuvent générer des formulaires que vous créez dans l’AEM Forms.\
 serveur, remplissez-les, enregistrez-les en tant que brouillons et envoyez-les. L’application se connecte au serveur et y récupère les formulaires activés. L’application AEM Forms se synchronise avec le serveur et dès que les formulaires sont chargés dans l’application, les utilisateurs peuvent travailler hors ligne. Si l’application est hors ligne, les données sont enregistrées sur le périphérique, et les données sont synchronisées avec le serveur lorsque l’application est en ligne.
 
 ### Application AEM Forms avec des serveurs utilisant AEM Forms Workflow {#aem-forms-app-with-servers-using-aem-forms-workflow}
@@ -53,7 +53,7 @@ Pour plus d’informations sur le fonctionnement de l’application AEM Forms a
 
 ### Formulaires autonomes ou application AEM Forms avec des serveurs sans le serveur AEM Forms Workflow {#standalone-forms-or-aem-forms-app-with-servers-without-aem-forms-workflow}
 
-Un serveur AEM Forms qui n’utilise pas AEM Forms Workflow est un serveur AEM Forms on OSGi ou un formulaire adaptatif ou mobile autonome. L’application AEM Forms fonctionne avec votre implémentation d’AEM Forms on [OSGi](/help/sites-deploying/configuring-osgi.md). Les formulaires que vous activez et publiez pour l’application AEM Forms sont disponibles dans votre application.
+Un serveur AEM Forms qui n’utilise pas AEM Forms Workflow est un serveur AEM Forms on OSGi ou un formulaire adaptatif ou mobile autonome. L’application AEM Forms fonctionne avec votre implémentation d’AEM Forms on [OSGi](/help/sites-deploying/configuring-osgi.md). Forms que vous activez et publiez pour l’application AEM Forms est disponible dans votre application.
 
 Les formulaires sont téléchargés sur votre application et sont disponibles hors ligne. Par exemple, vous dirigez un établissement bancaire et un client remplit une demande sur votre site. L’application est un formulaire adaptatif qui accepte les informations de vos clients, puis les stocke en vue d’une révision. L’administrateur examine le formulaire et crée un formulaire de vérification dans l’instance d’auteur AEM. L’administrateur active la synchronisation du formulaire avec l’application AEM Forms, et le publie. Si le formulaire de vérification est disponible dans l’application AEM Forms, votre agent de terrain peut utiliser un périphérique mobile pour vérifier les détails de votre client. Le périphérique mobile se synchronise avec le serveur et le formulaire de vérification est chargés dans l’application. Votre agent de terrain peut rendre visite à votre client, vérifier les détails, enregistrer les données en tant que brouillon ou envoyer le formulaire de vérification. Le formulaire est synchronisé avec le serveur dès que l’application est en ligne.
 
@@ -153,7 +153,7 @@ Avec les jeux de formulaires, plusieurs formulaires associés à un service ou p
 
 L’application AEM Forms fournit une solution mobile permettant aux agents de terrain de travailler sur les formulaires qui leur sont assignés. L’application met en cache les données complètes à partir du serveur et apporte une expérience utilisateur supérieure en enregistrant le travail en local. Les données du disque sont envoyées au serveur via les mises à jour régulières de synchronisation.
 
-L&#39;application AEM Forms est une application PhoneGap 5.0 dans laquelle le modèle Backbone est utilisé efficacement pour présenter les données stockées dans les modèles par le biais de vues. Toutes les opérations natives sont exécutées via des modules externes PhoneGap.
+L’application AEM Forms est une application PhoneGap 5.0 dans laquelle le modèle Backbone est utilisé efficacement pour présenter les données stockées dans les modèles par le biais de vues. Toutes les opérations natives sont exécutées via des modules externes PhoneGap.
 
 ## Personnaliser, créer et distribuer l’application AEM Forms {#customize-build-distribute}
 
@@ -161,7 +161,7 @@ L&#39;application AEM Forms est une application PhoneGap 5.0 dans laquelle le mo
 >
 >Applicable uniquement si vous utilisez le code source de l’application AEM Forms pour créer l’application.
 
-L’application AEM Forms est facile à personnaliser en fonction des besoins spécifiques de l’entreprise. Le code source de l’application est fourni avec AEM Forms. Vous pouvez modifier le code source et concevoir votre propre solution mobile destinée au personnel de terrain. Vous pouvez également signer l’application avec votre propre clé d’entreprise.
+L’application AEM Forms est facile à personnaliser en fonction des besoins de l’entreprise. Le code source de l’application est fourni avec AEM Forms. Vous pouvez modifier le code source et concevoir votre propre solution mobile destinée au personnel de terrain. Vous pouvez également signer l’application avec votre propre clé d’entreprise.
 
 ### Personnalisation {#customize}
 
@@ -171,7 +171,7 @@ Vous pouvez personnaliser votre application aux fins suivantes :
 
 **Thème**: Modifiez les styles de couleur, de police et d’espacement dans l’interface utilisateur de l’application AEM Forms. Pour plus d’informations, consultez [Personnalisation du thème](/help/forms/using/theme-customization.md).
 
-**Mouvement**: Modifiez les mouvements, tels que le glissement vers la droite et le glissement vers la gauche, dans l’interface utilisateur de l’application AEM Forms. Pour plus d’informations, consultez [Personnalisation des gestes](/help/forms/using/gesture-customization.md).
+**Mouvement**: Modifiez les mouvements, tels que le glissement vers la droite ou vers la gauche, dans l’interface utilisateur de l’application AEM Forms. Pour plus d’informations, consultez [Personnalisation des gestes](/help/forms/using/gesture-customization.md).
 
 Pour plus d’informations sur la configuration d’un projet d’application AEM Forms à des fins de personnalisation, consultez :
 
