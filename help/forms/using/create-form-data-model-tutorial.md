@@ -142,6 +142,7 @@ Procédez comme suit pour configurer votre base de données MySQL :
       * **Test lors du renvoi :** activez l’option **Test lors du renvoi.**
       * **Requête de validation :** spécifiez une requête SQL SELECT pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. Par exemple, **sélectionnez &amp;ast; du client**.
       * **Isolation de transaction** : définissez la valeur sur **READ_COMMITTED**.
+
    Leave other properties with default [values](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) and tap **Save**.
 
    Une configuration similaire à la suivante est créée.
@@ -193,6 +194,7 @@ La configuration d’un modèle de données de formulaire inclut :
 
       * get
       * mise à jour
+
    Appuyez sur **Ajouter la sélection** pour ajouter des objets et des services de modèle de données sélectionnés au modèle de données de formulaire.
 
    ![select_data_model_objs_services](assets/select_data_model_objs_services.png)
@@ -219,6 +221,7 @@ Exécutez les étapes suivantes pour créer des propriétés enfant calculées p
    1. Saisissez **usagecharges** comme nom de propriété enfant.
    1. Activez **Calculé**.
    1. Select **Float** as the type and tap **Done** to add the child property to the **bills** data model object.
+
    ![create_child_property_float](assets/create_child_property_float.png)
 
 1. Tap **Edit Rule** to open the Rule Editor.
@@ -259,6 +262,7 @@ Procédez comme suit pour créer des associations entre objets de modèle de don
    * Sélectionnez **calls** dans la liste déroulante **Objet de modèle**.
    * Sélectionnez **get** dans la liste déroulante **Service**.
    * Tap **Add** to link the **customer** data model object to **calls** data model object using a property. En fonction du cas d’utilisation, l’objet de modèle de données calls doit être lié à la propriété de numéro de mobile dans l’objet de modèle de données customer. The **Add Argument** dialog box opens.
+
    ![add_association](assets/add_association.png)
 
 1. Dans la boîte de dialogue **Ajouter un argument** :
@@ -271,6 +275,7 @@ Procédez comme suit pour créer des associations entre objets de modèle de don
    * Sélectionnez **customer** dans la liste déroulante **Liaison à**.
    * Sélectionnez **mobilenum** dans la liste déroulante **Valeur de liaison**.
    * Appuyez sur **Ajouter**.
+
    ![add_association_argument](assets/add_association_argument.png)
 
    La propriété mobilenum s’affiche dans la section **Arguments**.
@@ -294,6 +299,7 @@ Procédez comme suit pour créer des associations entre objets de modèle de don
    * Sélectionnez **customer** dans la liste déroulante **Liaison à**.
    * Sélectionnez **customerplan** dans la liste déroulante **Valeur de liaison**.
    * Tap **Done** to create a binding between the billplan and customerplan properties.
+
    ![add_association_customer_bill](assets/add_association_customer_bills.png)
 
    L’image suivante décrit les associations entre les objets de modèle de données et les propriétés utilisées pour créer des associations entre eux :
@@ -337,6 +343,7 @@ Après avoir créé des associations entre l’objet customer et d’autres obje
    * Saisissez un titre et une description facultatifs.
    * Sélectionnez **customer** depuis la liste déroulante **Objet de modèle de sortie**.
    * Tap **Done** to save the properties.
+
    ![edit_properties_get_details](assets/edit_properties_get_details.png)
 
 1. Select the **update** service and tap **Edit Properties**. Le panneau **Modifier les propriétés** s’ouvre.
@@ -346,6 +353,7 @@ Après avoir créé des associations entre l’objet customer et d’autres obje
    * Select **customer** from the **Input Model Object** drop-down list.
    * Appuyez sur **Done** (Terminé). 
    * Appuyez sur **Save** (Enregistrer) pour enregistrer le modèle de données de formulaire.
+
    ![update_service_properties](assets/update_service_properties.png)
 
 ## Étape 5 : Tester le modèle de données de formulaire et les services {#step-test-form-data-model-and-services}
