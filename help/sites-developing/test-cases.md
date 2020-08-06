@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 87a1f27a-765e-4882-9c06-5909e1610e1d
 translation-type: tm+mt
 source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 77%
 
 ---
 
@@ -46,9 +49,9 @@ Cependant, l’automatisation des cas de test est un lourd investissement. Il fa
 * Réellement réalisable pour les projets de grande taille seulement.
 * Intéressant si plusieurs versions sont générées pour les tests ou dans le plan de diffusion de versions à long terme.
 
-## Test d’aspects spécifiques {#testing-specific-aspects}
+## Test d&#39;aspects spécifiques {#testing-specific-aspects}
 
-Lors du test d’AEM, quelques détails spécifiques présentent un intérêt particulier :
+Lors des tests AEM quelques détails spécifiques présentent un intérêt particulier :
 
 Environnements de création et de publication
 
@@ -84,16 +87,16 @@ La plupart des projets installent le dispatcher pour la mise en cache et l’éq
 
 Les tests sont difficiles (la mise en cache se fait à différents niveaux et à divers endroits) et doivent être réalisés en boîte noire. Les aspects clés à tester sont les suivants :
 
-* **Précision**; assurez-vous que les mises à jour de contenu sont visibles par le visiteur du site Web.
-* **la continuité**; assurez-vous que le site Web est toujours disponible lorsqu’un serveur est fermé.
-* **Les grappes** sont utilisées pour fournir :
-   * **Basculement** en cas d’échec d’un serveur, le traitement sera repris par d’autres serveurs de la grappe.
-   * **L’équilibrage de la** charge avec basculement complet augmente les performances d’une grappe.
+* **Précision**; s’assurer que les mises à jour de contenu sont affichées par le visiteur du site Web.
+* **la continuité**; assurez-vous que le site Web est toujours disponible lorsqu’un serveur est arrêté.
+* **Les grappes** Les grappes servent à :
+   * **Basculement** en panne d’un serveur, les autres serveurs de la grappe prennent le relais du traitement.
+   * **L’équilibrage des performances** de charge avec basculement complet augmente les performances d’une grappe.
 
 Lorsqu’il est utilisé pour un projet client, le cluster doit être testé pour confirmer le bon fonctionnement de la configuration.
 
 ## Test de logiciels tiers {#testing-third-party-software}
 
-Tout logiciel tiers interfacé à AEM sera référencé dans les Spécifications de besoins détaillées.
+Tout logiciel tiers relié à AEM sera référencé dans les Spécifications détaillées des besoins.
 
 Il faut analyser tous les tests nécessaires (en fonction de la portée définie) et obtenir des résultats satisfaisants.
