@@ -11,13 +11,16 @@ topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 74%
 
 ---
 
 
 # Test d’une mise en page en responsive design dans We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Toutes les pages Web.Retail utilisent le composant Conteneur de mise en forme pour implémenter une conception réactive. Le conteneur offre un système de paragraphe qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la mise en page en fonction de l’appareil/de la taille de fenêtre et du format. The component is used in conjunction with the **Layout** mode in the page editor, which allows you to create and edit your responsive layout dependent on device.
+Toutes les pages Web.Retail utilisent le composant Conteneur de mise en page pour implémenter une conception adaptée. Le conteneur offre un système de paragraphe qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la mise en page en fonction de l’appareil/de la taille de fenêtre et du format. The component is used in conjunction with the **Layout** mode in the page editor, which allows you to create and edit your responsive layout dependent on device.
 
 ## Test {#trying-it-out}
 
