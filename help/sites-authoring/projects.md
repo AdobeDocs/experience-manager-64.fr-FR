@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 42b224e5-1256-44b6-9b46-4cd6de5927fb
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1394'
+ht-degree: 95%
 
 ---
 
 
 # Projets{#projects}
 
-Les projets permettent de regrouper des ressources dans une seule entité. Un environnement commun et partagé permet de gérer facilement vos projets. Dans AEM, les types de ressources que vous pouvez associer à un projet s’appellent des mosaïques. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
+Les projets permettent de regrouper des ressources dans une seule entité. Un environnement commun et partagé permet de gérer facilement vos projets. Dans AEM, les types de ressources que vous pouvez associer à un projet s’appellent des mosaïques. Les mosaïques peuvent inclure des informations de projet et d’équipe, des ressources numériques, des workflows et d’autres types d’informations, comme le précise en détail la section [Mosaïques de projet](#project-tiles).
 
 >[!CAUTION]
 >
@@ -49,24 +52,24 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 * L’option **Activer/désactiver les projets actifs** vous permet de basculer entre tous les projets et uniquement ceux qui sont actifs.
 * L’option **Afficher la vue Statistiques** permet d’afficher les statistiques de projet relatives à la réalisation de tâches.
 
-## Mosaïques de projet {#project-tiles}
+## Mosaïques de projet   {#project-tiles}
 
 Dans la console Projets, vous devez associer différents types d’informations à vos projets. Elles sont connues sous le nom de **mosaïques**. Toutes les mosaïques, ainsi que le type d’informations qu’elles contiennent, sont décrites dans cette section.
 
 Vous pouvez associer les mosaïques suivantes à votre projet. Chacune d’elles est décrite dans les sections ci-après :
 
 * Ressources et collections de ressources
-* Expériences
+* Expériences  
 * Liens
 * Informations sur le projet
-* Equipe
+* Équipe
 * Pages d’entrée
 * Courriels
-* Workflows
+* Workflows   
 * Lancements
 * Tâches
 
-### Assets {#assets}
+### Ressources {#assets}
 
 Dans la mosaïque **Ressources**, vous pouvez regrouper tous les éléments dont vous avez besoin pour un projet particulier.
 
@@ -78,11 +81,11 @@ Vous chargez des ressources directement dans la mosaïque. En outre, vous pouvez
 
 ### Collections de ressources {#asset-collections}
 
-Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/managing-collections-touch-ui.md) directement à votre projet. Vous définissez les collections dans AEM Assets.
+Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/managing-collections-touch-ui.md) directement à votre projet. Vous définissez les collections dans AEM Assets.
 
 ![chlimage_1-172](assets/chlimage_1-172.png)
 
-Ajoutez une collection en cliquant sur **Ajouter une collection** et en sélectionnant une collection dans la liste.
+Ajoutez une collection en cliquant sur **Ajouter une collection** et en sélectionnant la collection appropriée dans la liste.
 
 ### Expériences {#experiences}
 
@@ -94,7 +97,7 @@ Les icônes indiquent le type d’expérience représenté : site web, applicat
 
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
-Sélectionnez le chemin des miniatures, et le cas échéant, modifiez la miniature de l’expérience. Les expériences sont regroupées dans la mosaïque **Expériences.**
+Sélectionnez le chemin des miniatures, et le cas échéant, modifiez la miniature de l’expérience. Les expériences sont regroupées dans la mosaïque **Expériences**.
 
 ### Liens {#links}
 
@@ -112,7 +115,7 @@ La mosaïque Informations sur le projet fournit des informations générales sur
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
-Des membres d’équipe peuvent être attribués et supprimés de cette mosaïque (ou leurs rôles peuvent être modifiés) et de la mosaïque Equipe.
+Des membres d’équipe peuvent être attribués et supprimés de cette mosaïque (ou leurs rôles peuvent être modifiés) et de la mosaïque Équipe.
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -122,13 +125,13 @@ La mosaïque Tâche de traduction est l’endroit où vous commencez une traduct
 
 ![chlimage_1-179](assets/chlimage_1-179.png)
 
-Click the ellipsis at the bottom of the **Translation Job** card to view the assets in the translation workflow. La liste des tâches de traduction contient également des entrées pour les balises et les métadonnées des ressources. Ces entrées indiquent que les métadonnées et les balises des ressources sont également traduites.
+Cliquez sur les points de suspension en bas de la carte **Tâche de traduction** pour afficher les ressources du workflow de traduction. La liste des tâches de traduction contient également des entrées pour les balises et les métadonnées des ressources. Ces entrées indiquent que les métadonnées et les balises des ressources sont également traduites.
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
-### Equipe {#team}
+### Équipe {#team}
 
-Dans cette page, vous pouvez définir les membres de l’équipe de projet. En mode d’édition, vous pouvez saisir le nom des membres d’équipe et attribuer des rôles utilisateur.
+Dans cette mosaïque, vous pouvez définir les membres de l’équipe de projet. En mode d’édition, vous pouvez saisir le nom des membres d’équipe et attribuer des rôles utilisateur.
 
 ![chlimage_1-181](assets/chlimage_1-181.png)
 
@@ -154,42 +157,42 @@ Pour plus d’informations, se reporter à [Worfklow de demande de courrier éle
 
 ### Workflows {#workflows}
 
-Vous pouvez configurer votre projet pour qu’il suive certains workflow. Si des workflows sont actifs, leur état s’affiche dans la mosaïque **Workflows** de la console Projets.
+Vous pouvez configurer votre projet pour qu’il suive certains workflows. Si des workflows sont actifs, leur état s’affiche dans la mosaïque **Workflows** de la console Projets.
 
 ![chlimage_1-185](assets/chlimage_1-185.png)
 
 Vous pouvez configurer votre projet pour qu’il suive certains workflows. Selon le type de projet que vous sélectionnez, différents workflows sont disponibles.
 
-Ils sont décrits à la section [Utilisation des workflows de projet.](/help/sites-authoring/projects-with-workflows.md) 
+Ils sont décrits à la section [Utilisation des workflows de projet](/help/sites-authoring/projects-with-workflows.md).
 
 ### Lancements {#launches}
 
-La mosaïque Lancements présente tous les programmes qui ont été demandés avec un workflow [de demande de lancement.](/help/sites-authoring/projects-with-workflows.md) 
+La mosaïque Lancements présente tous les programmes qui ont été demandés avec un [workflow de demande de lancement](/help/sites-authoring/projects-with-workflows.md).
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
 
 ### Tâches {#tasks}
 
-Les tâches vous permettent de surveiller l’état de toutes les activités associées à un projet, y compris des workflows. Tasks are covered in detail at [Working with Tasks](/help/sites-authoring/task-content.md).
+Les tâches vous permettent de surveiller l’état de toutes les activités associées à un projet, y compris des workflows. Les tâches sont décrites en détail à la section [Utilisation des tâches](/help/sites-authoring/task-content.md).
 
 ![chlimage_1-187](assets/chlimage_1-187.png)
 
 ## Modèles de projet {#project-templates}
 
-AEM est livré avec trois modèles différents prêts à l’emploi :
+AEM est fourni avec trois modèles prêts à l’emploi :
 
-* Un projet simple - Un échantillon de référence pour tout projet qui ne correspond pas à d&#39;autres catégories (un fourre-tout). Il comprend trois rôles de base (propriétaires, éditeurs et observateurs) et quatre workflows (Approbation de projet, Demander un lancement, Demander la page d’entrée et Demander un courrier électronique).
-* Un projet média - Un exemple de projet de référence pour les activités liées aux médias. Il comprend plusieurs rôles de projet relatifs aux médias (photographes, éditeurs, rédacteurs, concepteurs, propriétaires et observateurs). Il comprend également deux processus liés au contenu multimédia : Demande de copie (pour demander et examiner du texte) et Photo du produit (pour gérer la photographie liée aux produits).
-* [Produit Photo Shoot Project](/help/sites-authoring/managing-product-information.md) - Exemple de référence pour la gestion de la photographie de produit liée au commerce électronique. Il comprend les rôles suivants : photographes, éditeurs, retoucheurs de photos, propriétaires, directeurs créatifs, marketeurs de réseaux sociaux, directeurs marketing, réviseurs et observateurs.
+* Un projet simple : un modèle de référence pour tous les projets auxquels les autres catégories ne sont pas adaptées. Il comprend trois rôles de base (propriétaires, éditeurs et observateurs) et quatre workflows (Approbation de projet, Demander un lancement, Demander la page d’entrée et Demander un courrier électronique).
+* Un projet de média : un modèle de référence pour des activités multimédias. Il comprend plusieurs rôles de projet relatifs aux médias (photographes, éditeurs, rédacteurs, concepteurs, propriétaires et observateurs). Il comprend également deux workflows liés au contenu multimédia : Demander la copie (pour demander et réviser du texte) et Projet de séance photo du produit (pour gérer des photos relatives à des produits).
+* [Projet](/help/sites-authoring/managing-product-information.md) de prise de vue de photos de produit - Un échantillon de référence pour la gestion de la photographie de produit liée au commerce électronique. Il comprend les rôles suivants : photographes, éditeurs, retoucheurs de photos, propriétaires, directeurs créatifs, marketeurs de réseaux sociaux, directeurs marketing, réviseurs et observateurs.
 * [Un projet de traduction](/help/sites-administering/translation.md) : modèle de référence pour gérer des activités liées à la traduction. Il prévoit trois rôles de base (propriétaires, éditeurs et observateurs). Il comprend deux workflows accessibles dans l’interface utilisateur Workflows.
 
 En fonction du modèle sélectionné, plusieurs options s’offrent à vous, notamment en termes de rôles utilisateur et de workflows.
 
-## Rôles utilisateur dans un projet {#user-roles-in-a-project}
+## Rôles utilisateur dans un projet   {#user-roles-in-a-project}
 
 Différents rôles utilisateur sont définis dans un modèle de projet et utilisés pour deux principales raisons :
 
-1. Permissions. Les rôles utilisateur peuvent faire partie de l’une des trois catégories répertoriées : Observateur, Editeur, Propriétaire. Par exemple, un photographe ou un rédacteur aura les mêmes privilèges qu’un éditeur. Les autorisations déterminent ce que les utilisateurs peuvent faire avec le contenu d’un projet.
+1. Autorisations. Les rôles utilisateur peuvent faire partie de l’une des trois catégories répertoriées : Observateur, Éditeur, Propriétaire. Par exemple, un photographe ou un rédacteur aura les mêmes privilèges qu’un éditeur. Les autorisations déterminent ce que les utilisateurs peuvent faire avec le contenu d’un projet.
 1. Workflows. Les workflows déterminent l’utilisateur associé à telles ou telles tâches d’un projet. Les tâches peuvent être associées à un rôle de projet. Par exemple, une tâche peut être attribuée à des photographes, de sorte que tous les membres de l’équipe disposant du rôle Photographe se la voient attribuer.
 
 Pour vous permettre de gérer les autorisations de sécurité et de contrôle, tous les projets prennent en charge les rôles par défaut suivants :
@@ -199,7 +202,7 @@ Pour vous permettre de gérer les autorisations de sécurité et de contrôle, t
   <tr> 
    <td><p><strong>Rôle</strong></p> </td> 
    <td><p><strong>Description</strong></p> </td> 
-   <td><p><strong>Permissions</strong></p> </td> 
+   <td><p><strong>Autorisations</strong></p> </td> 
    <td><p><strong>Appartenance à un groupe</strong></p> </td> 
   </tr> 
   <tr> 
