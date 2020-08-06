@@ -121,7 +121,7 @@ Les paramètres ci-dessous sont disponibles pour le service Convert PDF.
 
 **Nécessite :** crée toujours un nouveau contexte de transaction. Si un contexte de transaction actif existe, il est suspendu.
 
-**Transaction Time Out (in sec) :** Nombre de secondes pendant lesquelles le fournisseur de transactions sous-jacent doit attendre avant de restaurer une transaction qui englobe cette opération. Cette valeur sera ignorée si un contexte de transaction existant est propagé. La valeur par défaut est 180.  
+**Transaction Time Out (in sec) :** Nombre de secondes pendant lesquelles le fournisseur de transactions sous-jacent doit attendre avant de restaurer une transaction qui englobe cette opération. Cette valeur sera ignorée si un contexte de transaction existant est propagé. La valeur par défaut est 180.   
 
 **Résolution du seuil pour le lissage (en ppp) :** Résolution de l’image sous laquelle le lissage (ou l’anti-crénelage) est appliqué au texte, aux dessins au trait et aux images, si vous avez sélectionné les options &quot;Appliquer le lissage à&quot; pour ces éléments.
 
@@ -137,7 +137,7 @@ Le service Distiller (`DistillerService`) convertit les fichiers PostScript, Enc
 
 Les paramètres ci-dessous sont disponibles pour le service Distiller.
 
-**Paramètres PDF Adobe :** Les paramètres préconfigurés suivants sont appliqués au fichier PDF généré :
+**Paramètres Adobe PDF :** Les paramètres préconfigurés suivants sont appliqués au fichier PDF généré :
 
 * High quality print (Haute qualité d’impression)
 * Oversized pages (Pages surdimensionnées)
@@ -237,7 +237,7 @@ Les paramètres ci-dessous sont disponibles pour le service FTP.
 
 **Hôte par défaut :** Adresse IP ou URL du serveur FTP.
 
-**Port par défaut :** port utilisé pour la connexion au serveur FTP. La valeur par défaut est 21.  
+**Port par défaut :** port utilisé pour la connexion au serveur FTP. La valeur par défaut est 21.   
 
 **Nom d’utilisateur par défaut :** nom du compte utilisateur que vous pouvez utiliser pour accéder au serveur FTP. Le compte utilisateur doit disposer de droits suffisants pour effectuer les opérations FTP que ce service requiert.
 
@@ -249,7 +249,7 @@ Le service Generate PDF (`GeneratePDFService`) convertit des fichiers de nombreu
 
 Les paramètres ci-dessous sont disponibles pour le service Generate PDF.
 
-**Paramètres PDF Adobe :** nom des paramètres PDF Adobe préconfigurés à appliquer à un travail de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appel d’API. Les paramètres Adobe PDF sont configurés dans Administration Console en cliquant sur Services > PDF Generator > Paramètres Adobe PDF. Ces paramètres sont applicables uniquement aux conversions basées sur PDFMaker.
+**Paramètres Adobe PDF :** nom des paramètres Adobe PDF préconfigurés à appliquer à un travail de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appel d’API. Les paramètres Adobe PDF sont configurés dans Administration Console en cliquant sur Services > PDF Generator > Paramètres Adobe PDF. Ces paramètres sont applicables uniquement aux conversions basées sur PDFMaker.
 
 **Paramètres de sécurité :** nom des paramètres de sécurité préconfigurés à appliquer à un travail de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appel d’API. Les paramètres de protection sont configurés dans Administration Console en cliquant sur Services > PDF Generator > Paramètres de protection.
 
@@ -261,7 +261,7 @@ Les paramètres ci-dessous sont disponibles pour le service Generate PDF.
 
 **Activer les conversions AutoCAD basées sur Acrobat (Windows uniquement) :** Lorsque ce paramètre est défini sur true, le service Generate PDF utilise Acrobat X Pro pour toutes les conversions DWG en PDF. Ce paramètre est utile uniquement si AutoCAD n’est pas installé sur le serveur ou si le mécanisme de conversion AutoCAD ne peut pas convertir correctement les fichiers.
 
-**Expressions régulières pour trouver des caractères spéciaux interdits dans le nom d’utilisateur (Windows uniquement) :** Indique les caractères qui interfèrent avec les opérations Exporter un PDF et Optimiser un PDF lorsque les caractères apparaissent dans le nom d’un utilisateur.
+**Expressions régulières pour trouver des caractères spéciaux interdits dans le nom d’utilisateur (Windows uniquement) :** Indique les caractères qui interfèrent avec les opérations d’Export PDF et de Optimize PDF lorsque les caractères apparaissent dans le nom d’un utilisateur.
 
 **Taille du pool ImageToPDF :** Taille du pool du convertisseur Image en PDF par défaut (Java pur) dans le service Generate PDF. Ce paramètre contrôle le nombre maximal de conversions Image en PDF qui peuvent être exécutées simultanément par le service Generate PDF. La valeur par défaut de ce paramètre (recommandée pour les systèmes à un processeur) est 3. Vous pouvez augmenter cette valeur pour les systèmes à plusieurs processeurs.
 
@@ -269,7 +269,7 @@ Les paramètres ci-dessous sont disponibles pour le service Generate PDF.
 
 **Taille du pool OCR :** Taille du pool PaperCaptureService utilisé par PDF Generator pour la reconnaissance optique des caractères (OCR). La valeur par défaut de ce paramètre (recommandée pour les systèmes à un processeur) est 3. Vous pouvez augmenter cette valeur pour les systèmes à plusieurs processeurs. Ce paramètre n’est valide que sur les systèmes Windows.
 
-**Famille de polices de secours pour les conversions HTML en PDF :** nom de la famille de polices à utiliser dans les documents PDF lorsque la police utilisée dans le code HTML d’origine n’est pas disponible pour le serveur AEM forms. Spécifiez une famille de polices si vous envisagez de convertir des pages HTML qui utilisent des polices non disponibles. Par exemple, les pages créées dans des langues régionales pourraient utiliser des polices non disponibles.
+**Famille de polices de secours pour les conversions HTML en PDF :** nom de la famille de polices à utiliser dans les documents PDF lorsque la police utilisée dans le code HTML d’origine n’est pas disponible pour AEM serveur Forms. Spécifiez une famille de polices si vous envisagez de convertir des pages HTML qui utilisent des polices non disponibles. Par exemple, les pages créées dans des langues régionales pourraient utiliser des polices non disponibles.
 
 **Si la première tentative de conversion a échoué, la logique de nouvel essai pour les conversions** natives régit les Reprises de génération de PDF :
 
@@ -320,7 +320,7 @@ Les valeurs par défaut du service Guide Utilities prennent en charge la plupart
 
 **macAlgorithm :** algorithme MAC (code d’authentification de message) à utiliser pour la vérification de l’URL collatérale. Cette méthode est transmise à la méthode getInstance de la classe Mac. Par défaut, cette valeur est réglée sur HmacSHA1.
 
-**macRefreshIntervalInMinutes :** Durée d’activation d’une clé. Lorsqu’une clé a été active pendant cette durée, une nouvelle clé est générée. La nouvelle clé devient la clé active. La clé précédemment active est conservée pendant une durée équivalente à 10 % de l’intervalle d’actualisation. Ce comportement permet aux URL générées avec l’ancienne clé de continuer à fonctionner pendant le changement de clé. La valeur par défaut est 144000.
+**macRefreshIntervalInMinutes :** Durée pendant laquelle une clé est principale. Lorsqu’une clé a été active pendant cette durée, une nouvelle clé est générée. La nouvelle clé devient la clé active. La clé précédemment active est conservée pendant une durée équivalente à 10 % de l’intervalle d’actualisation. Ce comportement permet aux URL générées avec l’ancienne clé de continuer à fonctionner pendant le changement de clé. La valeur par défaut est 144000.
 
 **macOverlapIntervalInMinutes :** Durée pendant laquelle la clé précédente reste valide après la génération d’une nouvelle clé. La valeur par défaut est 1 440 minutes (1 jour).
 
@@ -443,11 +443,11 @@ Les paramètres suivants sont disponibles pour le service de configuration Micro
 
 **BlackBerry :** Permet aux périphériques BlackBerry de se connecter au serveur.
 
-**Android Microsoft Exchange ActiveSync requis :** Indique si le gestionnaire de stratégies Microsoft Exchange ActiveSync (EAS) doit être installé et actif sur les périphériques Android. Lorsque cette option est sélectionnée, les EAS doivent être appliqués sur le périphérique Android. Si cette option n’est pas sélectionnée, aucune vérification n’est effectuée, bien que d’autres exigences soient toujours appliquées.
+**Android Microsoft Exchange ActiveSync requis :** Indique si le gestionnaire de stratégies Microsoft Exchange ActiveSync (EA) doit être installé et principal sur les périphériques Android. Lorsque cette option est sélectionnée, EA doit être appliquée sur le périphérique Android. Si cette option n’est pas sélectionnée, aucune vérification n’est effectuée, bien que d’autres exigences soient toujours appliquées.
 
-**Longueur minimale du PIN Android :** Les périphériques Android doivent disposer d’un paramètre global qui impose que le code confidentiel ou le mot de passe soit d’au moins cette longueur. Le simple fait d&#39;avoir un NIP de la longueur spécifiée ne suffit pas. La longueur du code confidentiel doit être appliquée par le système afin que les utilisateurs ne puissent pas supprimer ou raccourcir le code confidentiel ultérieurement. La valeur par défaut est 4.  
+**Longueur minimale du PIN Android :** Les périphériques Android doivent disposer d’un paramètre global qui impose que le code confidentiel ou le mot de passe soit d’au moins cette longueur. Le simple fait d&#39;avoir un NIP de la longueur spécifiée ne suffit pas. La longueur du code confidentiel doit être appliquée par le système afin que les utilisateurs ne puissent pas supprimer ou raccourcir le code confidentiel ultérieurement. La valeur par défaut est 4.   
 
-**Reprises de mot de passe maximales pour Android avant essuie :** Les périphériques Android disposent d’un paramètre global qui efface le système après un nombre spécifié de tentatives de mot de passe non valides. Ce paramètre global est activé et égal ou inférieur à la valeur spécifiée ici. La valeur par défaut est 5.  
+**Reprises de mot de passe maximales pour Android avant essuie :** Les périphériques Android disposent d’un paramètre global qui efface le système après un nombre spécifié de tentatives de mot de passe non valides. Ce paramètre global est activé et égal ou inférieur à la valeur spécifiée ici. La valeur par défaut est 5.   
 
 **Android Wipe On Removal :** Indique ce qui se produit lorsqu’une violation de stratégie survient sur un périphérique Android. Lorsque cette option est sélectionnée, le compte est supprimé. Si cette option n’est pas sélectionnée, le mot de passe du compte stocké et les données mises en cache sont supprimés. Aucune autre tentative de synchronisation n’est effectuée tant que l’utilisateur n’a pas corrigé la violation de stratégie.
 
@@ -468,7 +468,7 @@ Les paramètres ci-dessous sont disponibles pour le service Output.
 
 **Obligatoire :** prend en charge un contexte de transaction s&#39;il en existe déjà un ; sinon, un nouveau contexte de transaction est créé. Il s’agit de la valeur par défaut.
 
-**Nécessite :** crée toujours un nouveau contexte de transaction. Si un contexte de transaction actif existe, il est suspendu.
+**Requires New:** Always creates a new transaction context. Si un contexte de transaction actif existe, il est suspendu.
 
 **Transaction Time Out (in sec) :** Nombre de secondes que le fournisseur de transactions sous-jacent attend avant de restaurer une transaction qui englobe cette opération. Cette valeur est ignorée si un contexte de transaction existant est propagé. 
 
@@ -480,19 +480,19 @@ Les paramètres ci-dessous sont disponibles pour le service PDFG Config ( `PDFGC
 
 **User Job Options Directory :** Chemin d’accès du dossier du système de fichiers dans lequel le service c écrit les fichiers d’options de travail accessibles à Acrobat Pro Extended. The default value is [user.home]/Application Data/Adobe/Adobe PDF/Settings.
 
-**PS Startup Directory :** Chemin d’accès du dossier du système de fichiers dans lequel les fichiers de démarrage requis par Adobe Acrobat Distiller sont enregistrés. The default value is [user.home]/Application Data/Adobe/Adobe PDF/Distiller/Startup.
+**PS Startup Directory :** Chemin du dossier du système de fichiers dans lequel les fichiers de démarrage requis par Adobe Acrobat sont enregistrés. The default value is [user.home]/Application Data/Adobe/Adobe PDF/Distiller/Startup.
 
 **Fichier de démarrage PS :** Nom du fichier de démarrage requis par Adobe Acrobat Distiller. La valeur par défaut est example.ps.
 
-**Délai d’expiration de conversion du serveur :** Délai maximal de conversion de travail (en secondes) pour les services Generate PDF et Distiller. Ce paramètre limite le délai d’expiration de conversion maximal qui peut être spécifié dans le fichier config.xml et dans les pages de Administration Console pour PDF Generator. La valeur par défaut est 270.  
+**Délai d’expiration de conversion du serveur :** Délai maximal de conversion de tâche (en secondes) pour les services Generate PDF et Distiller. Ce paramètre limite le délai d’expiration de conversion maximal qui peut être spécifié dans le fichier config.xml et dans les pages de Administration Console pour PDF Generator. La valeur par défaut est 270.   
 
 **Server Global Timeout :** Lors des conversions PDF, un serveur Forms prend en compte le délai d’expiration. Configurez la valeur du délai d’expiration pour résoudre ce problème.
 
-**Préfixe des options de tâche :** Préfixe utilisé par le service Generate PDF pour ajouter en préfixe une chaîne courte aux fichiers d’options de travail qu’il crée temporairement pour être utilisés par Acrobat Distiller. La valeur par défaut est pdfg.
+**Préfixe des options de tâche :** Préfixe utilisé par le service Generate PDF pour ajouter en préfixe une chaîne courte aux fichiers d’options de travail qu’il crée temporairement pour une utilisation par Acrobat Distiller. La valeur par défaut est pdfg.
 
 **Applications non Unicode :** liste séparée par des virgules de noms d&#39;application connus pour être incompatibles avec Unicode. Cette liste est préremplie avec les noms de plusieurs applications, dont la prise en charge est préconfigurée dans PDF Generator. Si vous choisissez d’ajouter une prise en charge pour des conversions PDF via des applications tierces incompatibles avec Unicode, vous devez les ajouter à cette liste. La valeur par défaut est Autocad,Excel,PowerPoint,Project,Publisher,Visio,Word,WordPerfect.
 
-**Nombre de threads du serveur :** Contrôle la taille du pool de threads que le service Generate PDF utilise en interne pour traiter les demandes de conversion HTML en PDF impliquant l’indexation (conversion des pages liées accessibles à partir de la page principale). La valeur par défaut est 20.  
+**Nombre de threads du serveur :** Contrôle la taille du pool de threads que le service Generate PDF utilise en interne pour traiter les demandes de conversion HTML en PDF impliquant l’indexation (conversion des pages liées accessibles à partir de la page principale). La valeur par défaut est 20.   
 
 **Secondes d’analyse de nettoyage PDFG :** Voir la section Secondes avant expiration de la tâche pour en savoir plus.
 
@@ -520,9 +520,9 @@ La plupart des services sont configurés afin que vous puissiez y accéder avec 
 
 Les paramètres ci-dessous sont disponibles pour le service Remoting.
 
-**Méthode d’authentification du client Flex :** Détermine le type de réponse que le serveur renvoie au client lorsque la sécurité du service appelé est activée, que l’opération appelée ne prend pas en charge les appels anonymes et que le client transmet des informations d’identification non valides ou non valides. Choisissez entre Personnalisée ou Standard. La valeur par défaut est Standard.
+**Méthode d&#39;authentification du client Flex :** Détermine le type de réponse que le serveur renvoie au client lorsque la sécurité du service appelé est activée, que l’opération appelée ne prend pas en charge les appels anonymes et que le client transmet des informations d’identification non valides ou non valides. Choisissez entre Personnalisée ou Standard. La valeur par défaut est Standard.
 
-**Autoriser la sérialisation des classes non sérialisables :** La plupart des points de terminaison AEM forms autorisent uniquement l’utilisation de classes sérialisables pour l’appel. Dans les versions antérieures, les points de fin Remoting autorisaient l’utilisation des classes non sérialisables pour les appels depuis les clients Flex. Pour éviter toute vulnérabilité de sécurité décrite dans APS11-15, ceci a été modifié. Si vous souhaitez continuer à utiliser des classes non-sérialisables avec le point de fin Flex Remoting, cochez cette case.
+**Autoriser la sérialisation des classes non sérialisables :** La plupart des points de terminaison de formulaires AEM autorisent uniquement l’utilisation de classes sérialisables pour l’appel. Dans les versions antérieures, les points de fin Remoting autorisaient l’utilisation des classes non sérialisables pour les appels depuis les clients Flex. Pour éviter toute vulnérabilité de sécurité décrite dans APS11-15, ceci a été modifié. Si vous souhaitez continuer à utiliser des classes non-sérialisables avec le point de fin Flex Remoting, cochez cette case.
 
 ## Paramètres du service Repository {#repository-service-settings}
 
@@ -550,7 +550,7 @@ Les paramètres ci-dessous sont disponibles pour le service Signature.
 
 **Exécuter des scripts JavaScript Document :** Indique s’il faut exécuter des scripts JavaScript Document pendant les opérations de signature. La valeur par défaut est false. 
 
-**documents de traitement compatibles avec Acrobat 9 :** Indique s’il faut activer la compatibilité Acrobat 9. Par exemple, lorsque cette option est sélectionnée, l’option Visible Certification in Dynamics PDFs est activée. La valeur par défaut est false. 
+**documents de traitement avec compatibilité Acrobat 9 :** Indique s’il faut activer la compatibilité Acrobat 9. Par exemple, lorsque cette option est sélectionnée, l’option Visible Certification in Dynamics PDFs est activée. La valeur par défaut est false. 
 
 **Incorporer les informations de révocation lors de la signature :** Indique si les informations de révocation sont incorporées lors de la signature du document PDF. La valeur par défaut est false. 
 
@@ -562,7 +562,7 @@ Les paramètres ci-dessous sont disponibles pour le service Signature.
 
 **Taille Maximale Des Informations D&#39;Archivage De Révocation :** Taille maximale des informations d’archivage de révocation en kilo-octets. AEM forms tente de stocker le plus grand nombre d’informations de révocation possible sans dépasser cette limite. La valeur par défaut est 10 Ko.
 
-**Signatures De Prise En Charge Créées À Partir Des Créations Préalables Des Produits Adobe :** Lorsque cette option est sélectionnée, la signature créée à l’aide de la version préliminaire des produits Adobe est validée correctement. La valeur par défaut est false. 
+**Signatures De Prise En Charge Créées À Partir Des Créations Préalables Des Produits Adobe :** Lorsque cette option est sélectionnée, la signature créée à l’aide de la version préliminaire des produits d’Adobe sera validée correctement. La valeur par défaut est false. 
 
 **Option Heure de vérification :** Indique l’heure de vérification du certificat d’un signataire. La valeur par défaut est Secure Time Else Current Time.
 
@@ -570,7 +570,7 @@ Les paramètres ci-dessous sont disponibles pour le service Signature.
 
 **Utilisez Les Informations De Validation Stockées Dans Le Document Pour La Validation Des Signatures :** Lorsque cette option est sélectionnée, les informations de validation (y compris les informations de révocation et d’horodatage) incorporées dans le document sont utilisées pour valider les signatures. La valeur par défaut est true.
 
-**Nombre maximal de sessions de vérification imbriquées autorisées :** Nombre maximal de sessions de vérification imbriquées autorisées. AEM forms utilise cette valeur pour empêcher une boucle infinie lors de la vérification des certificats des signataires OCSP ou CRL en cas de configuration incorrecte du certificat OCSP ou CRL. La valeur par défaut est 10.  
+**Nombre maximal de sessions de vérification imbriquées autorisées :** Nombre maximal de sessions de vérification imbriquées autorisées. AEM forms utilise cette valeur pour empêcher une boucle infinie lors de la vérification des certificats des signataires OCSP ou CRL en cas de configuration incorrecte du certificat OCSP ou CRL. La valeur par défaut est 10.   
 
 **Inclinaison maximale de l&#39;horloge pour la vérification :** durée maximale (en minutes) pendant laquelle l’heure de signature peut être postérieure à l’heure de validation. Si le décalage est supérieur à cette valeur, la signature n’est pas valable. la valeur par défaut est de 65 minutes.
 
@@ -580,7 +580,7 @@ Les paramètres ci-dessous sont disponibles pour le service Signature.
 
 **Hôte proxy :** URL de l’hôte proxy. Attribut utilisé uniquement si une valeur valide est indiquée. Pas de valeur par défaut.
 
-**Port proxy :** Port proxy. Saisissez tout numéro de port valide compris entre 0 et 65535. La valeur par défaut est 80.  
+**Port proxy :** Port proxy. Saisissez tout numéro de port valide compris entre 0 et 65535. La valeur par défaut est 80.   
 
 **Proxy Login Username :** Nom d’utilisateur de connexion du proxy. Attribut utilisé uniquement si une valeur valide est indiquée pour l’hôte proxy et le port du proxy. Pas de valeur par défaut.
 
@@ -690,13 +690,13 @@ Les paramètres ci-dessous sont disponibles pour le service WatchedFolder.
 
 **Nombre de répétitions :** Nombre de fois où le répertoire d’entrée est interrogé. Nombre de répétitions par défaut à utiliser si cette valeur n’est pas spécifiée dans la configuration des points de fin. La valeur -1 indique une analyse indéfinie du répertoire. La valeur par défaut est -1.
 
-**Intervalle de répétition :** Nombre par défaut si secondes s’écoulent entre chaque interrogation. Cette valeur est utilisée comme intervalle de répétition à moins qu’une valeur différente ne soit définie dans la configuration du point de fin du dossier de contrôle. La valeur par défaut est 5.  Pour plus d’informations, voir la description du paramètre Batch Size.
+**Intervalle de répétition :** Nombre par défaut si secondes s’écoulent entre chaque interrogation. Cette valeur est utilisée comme intervalle de répétition à moins qu’une valeur différente ne soit définie dans la configuration du point de fin du dossier de contrôle. La valeur par défaut est 5.   Pour plus d’informations, voir la description du paramètre Batch Size.
 
 **Asynchrone :** Identifie le type d’appel comme étant asynchrone ou synchrone. Les processus provisoires et synchrones peuvent être appelés uniquement de façon synchrone. La valeur par défaut est asynchrone.
 
 **Durée d’attente :** Valeur par défaut du temps, en secondes, après lequel les fichiers sont récupérés dans les dossiers d’entrée. Si le fichier ou le dossier sont plus anciens que la durée définie dans l’attribut Durée d’attente, ils sont sélectionnés pour traitement. La valeur par défaut est 0.
 
-**Taille du lot :** Valeur par défaut du nombre de fichiers ou de dossiers traités par analyse. La valeur par défaut est 2.  
+**Taille du lot :** Valeur par défaut du nombre de fichiers ou de dossiers traités par analyse. La valeur par défaut est 2.   
 
 Les paramètres Intervalle de répétition et Taille du lot permettent de déterminer le nombre de fichiers sélectionnés par Watched Folder pour chaque analyse. Watched Folder utilise un pool de threads Quartz pour analyser le dossier input. Le pool de threads est partagé avec d’autres services. Si l’intervalle d’analyse défini est court, les threads analysent fréquemment le dossier input. Si des fichiers sont déposés régulièrement dans le dossier de contrôle, faites en sorte que l’intervalle d’analyse soit court. Si au contraire, des fichiers y sont déposés peu fréquemment, utilisez un intervalle d’analyse plus long afin que les autres services puissent utiliser les threads. 
 
@@ -743,7 +743,7 @@ Si le chemin d’accès n’est pas absolu, mais relatif, le dossier est créé 
 
 **Conserver en cas d’échec :** Si la valeur est true, les fichiers d’origine sont conservés dans le dossier failure en cas d’échec.
 
-**Ralentissement :** Lorsque cette option est sélectionnée, elle limite le nombre de tâches du dossier de contrôle qu’AEM forms peut traiter à un moment donné. La valeur Taille du lot détermine le nombre maximal de tâches (voir A propos du ralentissement).
+**Ralentissement :** Lorsque cette option est sélectionnée, elle limite le nombre de tâches du dossier de contrôle que AEM forms traite à un moment donné. La valeur Taille du lot détermine le nombre maximal de tâches (voir A propos du ralentissement).
 
 ## Paramètres du service Web Service {#web-service-service-settings}
 
