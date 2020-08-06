@@ -12,6 +12,9 @@ discoiquuid: ba90b25f-f672-42c5-8b06-07bb32cc51de
 targetaudience: target-audience upgrader
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '835'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +63,7 @@ La topologie utilisée pour cette section se compose d’un serveur s’exécuta
 
 ### En cas d’échec (restauration) {#if-unsuccessful-rollback}
 
-![restauration](assets/rollback.jpg)
+![annulation](assets/rollback.jpg)
 
 1. Démarrez l’instance Cold Standby en tant que nouvelle instance principale
 1. Recréez l’environnement de création depuis l’instance Cold Standby.
