@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 translation-type: tm+mt
 source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 86%
 
 ---
 
@@ -47,6 +50,7 @@ Ils aident les développeurs à :
 >
 >* sur une instance d’auteur à l’aide du mode d’exécution nosamplecontent
 >* sur une instance de publication.
+
 >
 >
 Il doit être désactivé à nouveau après utilisation.
@@ -100,6 +104,7 @@ Chaque entrée de composant peut afficher (par exemple) :
 
    * tous les scripts de composants utilisés pour le rendu du composant ;
    * le chemin du contenu de référentiel pour cet élément spécifique.
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 * **Modifier le script** : lien qui :
@@ -110,6 +115,7 @@ Chaque entrée de composant peut afficher (par exemple) :
 
    * la hiérarchie au sein du composant sélectionné ;
    * les temps de rendu pour le composant sélectionné de manière isolée, tous les composants individuels imbriqués qu’il contient, ainsi que le total combiné.
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 >[!CAUTION]
