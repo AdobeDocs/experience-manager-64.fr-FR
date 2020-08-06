@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 80%
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ Dans Adobe Experience Manager (AEM) Assets, les ressources multilingues se trouv
 
 Chaque dossier de langue est appelé une copie de langue. Le dossier racine d’une copie de langue, nommé racine de langue, identifie la langue du contenu de la copie de langue. For example, */content/dam/it* is the Italian language root for the Italian language copy. Les copies de langue doivent utiliser une [racine de langue correctement configurée](preparing-assets-for-translation.md#creating-a-language-root) pour que la langue correcte soit ciblée lors de la traduction des ressources source.
 
-La copie de langue pour laquelle vous avez initialement ajouté des ressources est la langue principale. La langue principale est la source qui est traduite dans d&#39;autres langues.
+La copie de langue pour laquelle vous ajoutez initialement des ressources est le gabarit de langue. Le gabarit de langue est la source qui est traduite dans d’autres langues.
 
 L’exemple de hiérarchie de dossiers comporte plusieurs racines de langue :
 
@@ -37,9 +37,9 @@ L’exemple de hiérarchie de dossiers comporte plusieurs racines de langue :
 
 Procédez comme suit pour préparer la traduction de vos ressources :
 
-1. Créez la racine de langue de votre langue principale. Par exemple, la racine de langue de la copie en anglais dans l’exemple de hiérarchie de dossiers est `/content/dam/en`. Ensure that the language root is correctly configured according to the information in [Creating a Language Root](preparing-assets-for-translation.md#creating-a-language-root).
+1. Créez la racine de langue de votre gabarit de langue. Par exemple, la racine de langue de la copie en anglais dans l’exemple de hiérarchie de dossiers est `/content/dam/en`. Ensure that the language root is correctly configured according to the information in [Creating a Language Root](preparing-assets-for-translation.md#creating-a-language-root).
 
-1. Ajoutez des ressources à votre langue principale.
+1. Ajoutez des ressources à votre gabarit de langue.
 1. Créez la racine de langue de chaque langue cible pour laquelle vous avez besoin d’une copie de langue.
 
 ## Création d’une racine de langue {#creating-a-language-root}
@@ -60,9 +60,9 @@ Par exemple, la page racine de la copie en italien de l’exemple de hiérarchie
 
 ## Affichage des racines de langue {#viewing-language-roots}
 
-L’IU optimisée pour les écrans tactiles propose un panneau Références qui affiche une liste des racines de langue créées dans AEM Assets.
+L’IU optimisée pour les écrans tactiles propose un panneau Références qui affiche la liste des racines de langue créées dans AEM Assets.
 
-1. Dans la console Ressources, sélectionnez la langue principale pour laquelle vous souhaitez créer des copies de langue.
+1. Dans la console Ressources, choisissez le gabarit de langue pour lequel vous souhaitez créer des copies de langue.
 1. Appuyez ou cliquez sur l’icône de navigation globale et sélectionnez **[!UICONTROL Références]** pour ouvrir le panneau Références.
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
