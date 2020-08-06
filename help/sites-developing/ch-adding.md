@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ac8f44df-39fb-44ea-ae17-ead0dbd1f6c0
 translation-type: tm+mt
 source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 78%
 
 ---
 
@@ -49,7 +52,7 @@ Tous les types de magasins sont des extensions de la classe [`ContextHub.Store.C
 Les magasins ContextHub utilisent l’un des modes de persistance suivants :
 
 * **Local** : utilise HTML5 localStorage pour conserver les données. L’espace de stockage local est conservé sur le navigateur entre les sessions.
-* **** Session : Utilise le paramètre sessionStorage HTML5 pour conserver les données. Le stockage de session est conservé pendant toute la durée de la session du navigateur et est disponible dans toutes les fenêtres du navigateur.
+* **Session :** Utilise le stockage de session HTML5 pour conserver les données. Le stockage de session est conservé pendant toute la durée de la session du navigateur et est disponible dans toutes les fenêtres du navigateur.
 * **Cookie** : utilise la prise en charge native des cookies du navigateur pour le stockage des données. Les données de cookie sont échangées avec le serveur dans des requêtes HTTP.
 * **Window.name** : utilise la propriété window.name pour conserver les données.
 * **Mémoire** : utilise un objet JavaScript pour conserver les données.
@@ -169,7 +172,7 @@ Les règles utilisées pour résoudre ces segments sont résumées comme suit :
 
 >[!WARNING]
 >
->Les segments installés sont fournis comme configurations de référence pour vous aider à créer votre propre configuration dédiée pour votre projet et ne doivent donc pas être utilisés directement.
+>Les segments installés sont fournis en tant que configurations de référence pour vous aider à créer votre propre configuration dédiée pour votre projet et ne doivent donc pas être utilisés directement.
 
 ## Journalisation des messages de débogage pour ContextHub {#logging-debug-messages-for-contexthub}
 
