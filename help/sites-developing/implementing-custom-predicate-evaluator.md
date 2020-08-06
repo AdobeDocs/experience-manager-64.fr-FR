@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 08bdade7-fdad-445d-80fe-8fc06596dace
 translation-type: tm+mt
 source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 68%
 
 ---
 
@@ -21,7 +24,7 @@ Cette section décrit comment étendre [Query Builder](/help/sites-developing/qu
 
 ## Présentation {#overview}
 
-[Query Builder](/help/sites-developing/querybuilder-api.md) offre un moyen simple pour effectuer des requêtes sur le référentiel de contenu. AEM est livré avec un ensemble d’évaluateurs de prédicats qui vous aide à traiter vos données.
+[Query Builder](/help/sites-developing/querybuilder-api.md) offre un moyen simple pour effectuer des requêtes sur le référentiel de contenu. AEM fournit un ensemble d’évaluateurs de prédicats qui vous aident à gérer vos données.
 
 Toutefois, vous pouvez simplifier vos requêtes en mettant en œuvre un évaluateur de prédicat personnalisé qui masque une partie de la complexité et assure une meilleure sémantique.
 
@@ -42,7 +45,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-search-custom-prédicate-évaluator sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
+* [Ouvrez le projet aem-search-custom-prédicate-évaluator sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip).
 
 ## L’évaluateur de prédicat en détail {#predicate-evaluator-in-detail}
@@ -57,7 +60,7 @@ Il mappe une contrainte de recherche de plus haut niveau (par exemple, « width
 
 ## Mise en œuvre d’un évaluateur de prédicat personnalisé pour les métadonnées de réplication {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
-À titre d’exemple, cette section explique comment créer un évaluateur de prédicats personnalisé qui aide les données en fonction des métadonnées de réplication :
+Cette section vous explique, par exemple, comment créer un évaluateur de prédicats personnalisé qui aide les données en fonction des métadonnées de réplication :
 
 * `cq:lastReplicated` qui stocke la date de la dernière action de réplication.
 
@@ -83,7 +86,7 @@ daterange.lowerBound=2013-01-01T00:00:00.000+01:00
 daterange.lowerOperation=>=
 ```
 
-Cette requête est valide, mais peu lisible et ne met pas en évidence la relation entre les trois propriétés de réplication. L’implémentation d’un évaluateur de prédicats personnalisé réduira la complexité et améliorera la sémantique de cette requête.
+Cette requête est valide, mais peu lisible et ne met pas en évidence la relation entre les trois propriétés de réplication. L’implémentation d’un évaluateur de prédicats personnalisé permet de réduire la complexité et d’améliorer la sémantique de cette requête.
 
 ### Objectifs {#objectives}
 
@@ -97,7 +100,7 @@ replic.since=2013-01-01T00:00:00.000+01:00
 replic.action=Activate
 ```
 
-Le regroupement des prédicats de métadonnées de réplication avec un évaluateur de prédicats personnalisé permet de créer une requête significative.
+Le regroupement des prédicats de métadonnées de réplication à l’aide d’un évaluateur de prédicats personnalisé permet de créer une requête significative.
 
 ### Mise à jour des dépendances Maven {#updating-maven-dependencies}
 
