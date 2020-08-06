@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 97%
 
 ---
 
@@ -41,6 +44,7 @@ Pour rediriger la sortie de la journalisation vers un fichier journal distinct, 
    * **Fichier journal :** logs/useraudit.log
    * **Modèle de message :** conservez la valeur par défaut
    * **Enregistreur :** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+
    Pour afficher les deux enregistreurs dans le champ **Enregistreur**, vous devez saisir le nom du premier enregistreur, puis créer un autre champ en cliquant sur le bouton « + » et en entrant le nom du second enregistreur.
 
 ## Exemple de sortie {#example-output}
