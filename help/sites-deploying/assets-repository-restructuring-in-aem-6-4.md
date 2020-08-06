@@ -10,6 +10,9 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 translation-type: tm+mt
 source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
+workflow-type: tm+mt
+source-wordcount: '1057'
+ht-degree: 58%
 
 ---
 
@@ -163,7 +166,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
 |---|---|
 | **Nouveaux emplacements** | `/libs/settings/dam/drm` |
 | **Conseil de restructuration** | N/A |
-| **Remarque** | N/A |
+| **Notes** | N/A |
 
 ### Modèle de notification par e-mail de lien de partage {#link-share-e-mail-notification-template}
 
@@ -222,7 +225,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
       <ol> 
        <li>For each instance of the Workflow Step, update the paths in config to point explicitly at the proper scripts under<strong> <code>/apps/settings/dam/indesign/scripts</code></strong> or <strong><code>/libs/settings/dam/indesign/scripts</code></strong> as appropriate.</li> 
       </ol> </li> 
-     <li>Supprimez<strong> entièrement <code>/etc/dam/indesign/scripts</code></strong> .</li> 
+     <li>Supprimez<strong><code>/etc/dam/indesign/scripts</code></strong> complètement.</li> 
     </ol> </td> 
   </tr> 
   <tr> 
@@ -300,7 +303,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
   </tr> 
   <tr> 
    <td><strong>Conseil de restructuration</strong></td> 
-   <td><p>Adjust any references to point to the new resources under <code>/libs</code> using the <code>/etc.clientlibs/</code> allow proxy prefix.</p> <p>Enfin, supprimez les dossiers des clients migrés depuis <code>/etc/clientlibs/foundation/</code></p> </td> 
+   <td><p>Adjust any references to point to the new resources under <code>/libs</code> using the <code>/etc.clientlibs/</code> allow proxy prefix.</p> <p>Enfin, supprimez les dossiers des clientlibs migrés de <code>/etc/clientlibs/foundation/</code></p> </td> 
   </tr> 
   <tr> 
    <td><strong>Notes</strong></td> 
