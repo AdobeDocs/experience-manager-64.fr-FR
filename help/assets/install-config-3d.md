@@ -20,7 +20,7 @@ ht-degree: 32%
 
 # Installation et configuration d’AEM 3D {#installing-and-configuring-aem-d}
 
-L’installation et la configuration d’AEM 3D (version 3.0) impliquent les éléments suivants :
+L&#39;installation et la configuration de AEM 3D (version 3.0) impliquent les opérations suivantes :
 
 1. Installation de la bibliothèque Autodesk® FBX® SDK.
 1. Téléchargement et installation du module de code 3D natif.
@@ -35,7 +35,7 @@ Voir aussi [Utilisation du composant 3D Sites](using-the-3d-sites-component.md)
 
 >[!NOTE]
 >
->Avant de télécharger et d’installer le package 3D, assurez-vous d’avoir installé tous les packages AEM requis avec succès. Voir les [Notes de mise à jour d’AEM 3D.](install-config-3d.md)
+>Avant de télécharger et d&#39;installer le package 3D, assurez-vous d&#39;avoir installé tous les packages AEM prérequis avec succès. Voir les [Notes de mise à jour d’AEM 3D.](install-config-3d.md)
 
 ## Installation de la bibliothèque SDK Autodesk FBX {#installing-the-autodesk-fbx-sdk-library}
 
@@ -64,7 +64,7 @@ Voir également [Paramètres de configuration avancés](advanced-config-3d.md).
 
 1. Installez le SDK FBX :
 
-   * Windows. Effectuez l’installation sur le même lecteur que celui sur lequel AEM se trouve.
+   * Windows. Installez sur le même lecteur où se trouve AEM.
    * Mac. Installez-le sur la partition où se trouve AEM.
    * Linux. Extract the downloaded package and follow the instructions in `<yourFBXSDKpath>/Install_FbxFileSdk.txt`. Install the SDK to `/usr`.
 
@@ -123,7 +123,7 @@ Voir également [Paramètres de configuration avancés](advanced-config-3d.md).
 1. Près du coin supérieur droit de la page Fichier **[!UICONTROL de mise à jour]** DAM, cliquez sur **[!UICONTROL Synchroniser]** pour enregistrer le modèle de flux de travaux modifié.
 1. Redémarrez AEM.
 
-   Après le redémarrage, vous êtes prêt à télécharger du contenu 3D et à le traiter par AEM.
+   Après le redémarrage, vous êtes prêt à télécharger du contenu 3D et à AEM le traiter.
 
    Procédez ensuite à la [validation de la configuration d’AEM 3D](#validating-the-setup-of-aem-d).
 
@@ -178,7 +178,7 @@ Voir également [Paramètres de configuration avancés](advanced-config-3d.md).
 
    ![chlimage_1-376](assets/chlimage_1-376.png)
 
-## Configuration de la prise en charge des ressources de dimension Adobe {#configuring-support-for-adobe-dimension-assets}
+## Configuration de la prise en charge des ressources Adobe Dimension {#configuring-support-for-adobe-dimension-assets}
 
 >[!NOTE]
 >
@@ -186,15 +186,15 @@ Voir également [Paramètres de configuration avancés](advanced-config-3d.md).
 
 Vous pouvez éventuellement configurer la prise en charge dans AEM 3D pour les ressources Adobe Dimension.
 
-Vous devez configurer un service de conversion externe pour autoriser l’assimilation, la prévisualisation et la publication de ressources Adobe Dimension 3D dans AEM. Le service convertit du format Adobe Dimension (`.dn`) propriétaire en une variante de glTF (formatée en `.glb` fichier) qui est enregistrée avec l’actif Dn en tant que rendu. Le `.glb` rendu est utilisé pour l’affichage en ligne du fichier 3D dans les AEM Assets, sites et écrans et peut également être téléchargé pour une utilisation avec des applications tierces.
+Vous devez configurer un service de conversion externe pour autoriser l’assimilation, la prévisualisation et la publication de ressources Adobe Dimension 3D dans AEM. Le service convertit du format Adobe Dimension (`.dn`) propriétaire en une variante de glTF (formatée en `.glb` fichier) qui est enregistrée avec la ressource Dn en tant que rendu. Le `.glb` rendu est utilisé pour l’affichage en ligne du fichier 3D dans AEM Assets, Sites et écrans et peut également être téléchargé pour une utilisation avec des applications tierces.
 
 >[!NOTE]
 >
->Le service de conversion est hébergé par Adobe dans Amazon AWS. Une fois le service correctement configuré, `.dn` les fichiers téléchargés vers AEM sont ensuite copiés en toute sécurité vers le service de conversion par enregistrement temporaire dans Amazon S3. Le résultat de la conversion est de nouveau transféré vers AEM par le biais d’un enregistrement S3 temporaire. Tous les transferts et enregistrements sont sécurisés. En outre, le contenu persiste dans S3 et le service de conversion ne dure que brièvement (généralement pas plus de quelques minutes).
+>Le service de conversion est hébergé par Adobe dans Amazon AWS. Après avoir configuré correctement le service, `.dn` les fichiers téléchargés vers AEM sont ensuite copiés en toute sécurité vers le service de conversion par enregistrement temporaire dans Amazon S3. Le résultat de la conversion est renvoyé à AEM par enregistrement S3 temporaire. Tous les transferts et enregistrements sont sécurisés. En outre, le contenu persiste dans S3 et le service de conversion ne dure que brièvement (généralement pas plus de quelques minutes).
 
-**Pour configurer la prise en charge des ressources** de dimension Adobe :
+**Pour configurer la prise en charge des ressources** Adobe Dimension :
 
-1. Contactez votre gestionnaire de compte AEM Adobe, votre expert en attribution de privilèges d’accès ou votre représentant de l’assistance pour demander des informations d’identification pour les services **** AEM3D.
+1. Contactez votre gestionnaire de compte d&#39;Adobe AEM, votre expert en attribution de privilèges d&#39;accès ou votre représentant de l&#39;assistance pour demander des informations d&#39;identification pour les services **** AEM3D.
 
    >[!NOTE]
    >
@@ -210,30 +210,30 @@ Vous devez configurer un service de conversion externe pour autoriser l’assimi
    * clientId
 
 1. En tant qu’administrateur, connectez-vous à votre instance d’auteur AEM où vous souhaitez que les informations d’identification soient installées, puis ouvrez **[!UICONTROL CRXDE Lite]**.
-1. Configurez les nouvelles informations d’identification en procédant comme suit dans CRXDE Lite :
+1. Configurez les nouvelles informations d’identification en procédant comme suit dans le CRXDE Lite :
 
    1. Accédez à `/libs/settings/dam/v3D/services/dncr` la propriété et définissez-la `clientId` sur la nouvelle valeur.
    1. Accédez aux `/libs/settings/dam/v3D/services/aws` nouvelles valeurs et définissez les `accountId`, `customerId`, `identityPoolId`et `userPoolId` les propriétés sur celles-ci.
    1. Chargez la nouvelle valeur de mot de passe dans la `encryptedPassword` propriété. Cette valeur est automatiquement chiffrée lorsque vous appuyez sur **[!UICONTROL Enregistrer tout]**.
    1. Appuyez sur **[!UICONTROL Enregistrer tout]**, rechargez la page, puis vérifiez que la `encryptedPassword` propriété affiche une autre chaîne entourée d’accolades. Cette apparence indique que le mot de passe est correctement chiffré et sécurisé.
 
-1. Spécifiez le format du rendu de `.glb` conversion en procédant comme suit dans **[!UICONTROL CRXDE Lite]**:
+1. Spécifiez le format du rendu de `.glb` conversion en procédant comme suit en **[!UICONTROL CRXDE Lite]**:
 
-   1. Accédez à `/libs/settings/dam/v3D/services/dncr` dans **[!UICONTROL CRXDE Lite]**.
+   1. Accédez à `/libs/settings/dam/v3D/services/dncr` dans le **[!UICONTROL CRXDE Lite]**.
    1. Définissez la `outputFormat` propriété sur `Dn` ou `generic`.
 
-      Lorsqu’elle est définie sur `Dn`, la `.glb` conversion inclut des extensions spécifiques à Adobe, telles que l’éclairage IBL, pour une qualité optimale lors de l’affichage des fichiers Dn dans AEM. Cependant, le rendu .glb converti peut ne pas s’afficher correctement dans les applications tierces.
+      Lorsqu’elle est définie sur `Dn`, la `.glb` conversion inclut des extensions spécifiques à l’Adobe, telles que l’éclairage IBL, pour une qualité optimale lors de l’affichage des fichiers Dn dans AEM. Cependant, le rendu .glb converti peut ne pas s’afficher correctement dans les applications tierces.
 
-      Lorsqu’il est défini sur `generic`, le `.glb` rendu est générique sans extensions spécifiques à Adobe. Ce paramètre permet de l’utiliser dans des applications tierces, tandis que l’affichage avec la visionneuse AEM 3D est visuellement sous-optimal.
+      Lorsqu’il est défini sur `generic`, le `.glb` rendu est générique sans extension spécifique à l’Adobe. Ce paramètre permet de l’utiliser dans des applications tierces, tandis que l’affichage avec la visionneuse 3D AEM est visuellement sous-optimal.
 
-1. Activez le format de fichier Dn en procédant comme suit dans **[!UICONTROL CRXDE Lite]**:
+1. Activez le format de fichier Dn en procédant comme suit en **[!UICONTROL CRXDE Lite]**:
 
    1. Accéder à `/libs/settings/dam/v3D/assetTypes/Dn`.
    1. Set the `Enabled` property to true.
 
 1. Validez la configuration en procédant comme suit :
 
-   1. AEM Assets ouverts.
+   1. Ouvrez AEM Assets.
    1. Téléchargez `logo_sphere.dn` vers le `test3d` dossier. Le fichier se trouve dans `sample-3D-content/models`.
 
       Veuillez noter que `sample-3D-content.zip` a été téléchargé au préalable pour valider la fonctionnalité 3D de base.
@@ -247,5 +247,5 @@ Vous devez configurer un service de conversion externe pour autoriser l’assimi
    Dans ce cas, vous pouvez résoudre les problèmes de conversion en procédant comme suit :
 
    * Supprimez le fichier, puis téléchargez-le à nouveau.
-   * Vérifiez que vous avez correctement défini tous les paramètres de configuration dans **[!UICONTROL CRXDE Lite]**.
+   * Vérifiez que vous avez correctement défini tous les paramètres de configuration dans le **[!UICONTROL CRXDE Lite]**.
    * Vérifiez qu’aucun pare-feu ne bloque l’accès au service de conversion et aux points de terminaison AWS.
