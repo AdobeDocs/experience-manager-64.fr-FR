@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 34f24837-f5e2-41f0-a359-fdb695e1b8f2
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 60%
 
 ---
 
@@ -27,7 +30,7 @@ Pour configurer le service de filtrage de référent :
 * https://&lt;serveur>:&lt;numéro_port>/system/console/configMgr
 * Connectez-vous en tant qu’administrateur.
 * In the **Configurations** menu, select: *Apache Sling Referrer Filter*
-* Cochez le champ Autoriser les champs vides pour autoriser les en-têtes de référent vides/manquants.
+* Cochez le champ Autoriser les champs vides pour autoriser les en-têtes de parrain vides/manquants.
 * Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
