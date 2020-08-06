@@ -135,7 +135,7 @@ L’en-tête et le pied de page donnent un aspect cohérent et distinctif à un 
    | Couleur de la police | FFFFFF |
    | Taille de la police | 54px |
 
-1. Appuyez sur le widget d’en-tête, puis sur **En-tête**. Les options permettant d’appliquer un style au widget En-tête s’affichent à gauche. Développez l’accordéon **Dimensions &amp; Position** , définissez la **Hauteur** sur `120px`, puis appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Appuyez sur le widget d’en-tête, puis sur **En-tête**. Les options permettant d’appliquer un style au widget En-tête s’affichent à gauche. Développez l’accordéon **Dimensions et position** , définissez la **Hauteur** sur `120px`, puis appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Développez l’accordéon Arrière-plan du widget d’en-tête, définissez la **couleur d’arrière-plan** sur `F6921E.`
 
    Hover over **Image &amp; Gradient** > **+ Add**, tap **Image**. Définissez les propriétés suivantes et appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
@@ -445,7 +445,7 @@ Adobe Typekit est un service de polices web d’Adobe. Vous pouvez configurer et
 
 >[!NOTE]
 >
->![Typekit vers adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit est désormais appelé polices Adobe et est inclus dans Creative Cloud et d’autres abonnements. [En savoir plus](https://fonts.adobe.com/).
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit est désormais appelé Adobe Fonts et est inclus dans le Creative Cloud et les autres abonnements. [En savoir plus](https://fonts.adobe.com/).
 
 1. Create an [Adobe Typekit](https://typekit.com/) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. Il est nécessaire d’utiliser les polices Adobe Typekit (polices web) dans un formulaire adaptatif.
 1. In the AEM Forms server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **Adobe Experience Manager** > **Tools** ![hammer](assets/hammer.png) > **Deployment** > **Cloud Services**. On the Cloud Services page, navigate to **Third Party Services** > **Typekit**, and click **Configure** Now under Typekit. Si une configuration est déjà disponible, cliquez sur le bouton + pour créer une nouvelle instance.
