@@ -1,8 +1,8 @@
 ---
 title: Prise en main du Rapports de processus
 seo-title: Prise en main du Rapports de processus
-description: Les étapes à suivre pour commencer à utiliser le Rapports de processus d’AEM Forms sur JEE
-seo-description: Les étapes à suivre pour commencer à utiliser le Rapports de processus d’AEM Forms sur JEE
+description: Les étapes à suivre pour commencer à utiliser le Rapports de processus AEM Forms on JEE
+seo-description: Les étapes à suivre pour commencer à utiliser le Rapports de processus AEM Forms on JEE
 uuid: 86ba17da-57e5-4e7a-a864-583d8c0f830e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Getting Started with Process Reporting {#getting-started-with-process-reporting}
 
-Le Rapports de processus permet aux utilisateurs d’AEM Forms de requête des informations sur les processus AEM Forms actuellement définis dans l’implémentation d’AEM Forms. Cependant, le Rapports de processus n’accède pas directement aux données du référentiel AEM Forms. Les données sont d’abord publiées dans le référentiel de Rapports de processus selon un calendrier défini (*par les* services ProcessDataPublisher et ProcessDataStorage). Les rapports et requêtes du Rapports de processus sont ensuite générés à partir des données du Rapports de processus publiées dans le référentiel. Le Rapports de processus est installé dans le cadre du module Forms Workflow.
+Le Rapports de processus permet aux utilisateurs de AEM Forms de requête des informations sur les processus AEM Forms actuellement définis dans l’implémentation de AEM Forms. Cependant, le Rapports de processus n’accède pas directement aux données du référentiel AEM Forms. Les données sont d’abord publiées dans le référentiel de Rapports de processus selon un calendrier défini (*par les* services ProcessDataPublisher et ProcessDataStorage). Les rapports et requêtes du Rapports de processus sont ensuite générés à partir des données du Rapports de processus publiées dans le référentiel. Le Rapports de processus est installé dans le cadre du module Forms Workflow.
 
 Cet article décrit en détail les étapes permettant d’activer la publication des données AEM Forms dans le référentiel de Rapports de processus. Vous pourrez ensuite utiliser le Rapports de processus pour exécuter des rapports et des requêtes. L’article traite également des options disponibles pour configurer les services Process Rapports.
 
@@ -27,21 +27,21 @@ Cet article décrit en détail les étapes permettant d’activer la publication
 
 ### Purger les processus non essentiels {#purge-non-essential-processes}
 
-Si vous utilisez actuellement Forms Workflow, la base de données AEM Forms peut contenir une grande quantité de données
+Si vous utilisez actuellement Forms Workflow, la base de données AEM Forms peut contenir une grande quantité de données.
 
-Les services de publication de Rapports de processus publieront toutes les données AEM Forms actuellement disponibles dans la base de données. Cela signifie que si la base de données contient des données héritées sur lesquelles vous ne souhaitez pas exécuter de rapports et de requêtes, toutes ces données seront également publiées dans le référentiel même si elles ne sont pas requises pour le rapports. Il est recommandé de purger ces données avant d’exécuter les services pour publier les données dans le référentiel de Rapports de processus. Cela améliorera les performances du service d’éditeur et du service qui requête les données pour le rapports.
+Les services de publication Process Rapports publieront toutes les données AEM Forms actuellement disponibles dans la base de données. Cela signifie que si la base de données contient des données héritées sur lesquelles vous ne souhaitez pas exécuter de rapports et de requêtes, toutes ces données seront également publiées dans le référentiel même si elles ne sont pas requises pour le rapports. Il est recommandé de purger ces données avant d’exécuter les services pour publier les données dans le référentiel de Rapports de processus. Cela améliorera les performances du service d’éditeur et du service qui requête les données pour le rapports.
 
 Pour plus d’informations sur la purge des données de processus AEM Forms, voir [Purge des données](https://help.adobe.com/en_US/livecycle/11.0/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7cb2.2.html)de processus.
 
 >[!NOTE]
 >
->Pour obtenir des conseils et astuces sur l’utilitaire de purge, reportez-vous à l’article Adobe Developer Connection sur la [Purge de processus et de tâches](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
+>Pour obtenir des conseils et astuces sur l’utilitaire de purge, reportez-vous à l’article Adobe Developer Connection sur la [purge de processus et de tâches](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
 
 ## Configuration des services de Rapports de processus {#configuring-process-reporting-services}
 
 ### Planification de la publication des données de processus {#schedule-process-data-publishing}
 
-Les services Process Rapports publient les données de la base de données AEM Forms dans le référentiel Process Rapports sur une base planifiée.
+Les services Process Rapports publient les données de la base de données AEM Forms vers le référentiel Process Rapports sur une base planifiée.
 
 Cette opération peut être gourmande en ressources et avoir un impact sur les performances des serveurs AEM Forms. Il est recommandé de planifier cette opération en dehors des créneaux horaires occupés de votre serveur AEM Forms.
 
@@ -51,7 +51,7 @@ Effectuez les étapes suivantes pour modifier le calendrier de publication :
 
 >[!NOTE]
 >
->Si vous exécutez l’implémentation d’AEM Forms sur une grappe, effectuez les étapes suivantes sur chaque noeud de la grappe.
+>Si vous exécutez l’implémentation AEM Forms sur une grappe, effectuez les étapes suivantes sur chaque noeud de la grappe.
 
 #### JBoss Application Server {#jboss-application-server}
 
@@ -196,7 +196,7 @@ Vous pouvez également utiliser cette option pour désactiver la publication des
 
 **Intervalle de lot (s)**
 
-Chaque fois que le service ProcessDataPublisher s’exécute, le service commence par fractionner l’heure depuis la dernière exécution du service par l’intervalle de traitement par lots. Le service traite ensuite chaque intervalle des données AEM Forms séparément.
+Chaque fois que le service ProcessDataPublisher s’exécute, le service commence par fractionner l’heure depuis la dernière exécution du service par l’intervalle de traitement par lots. Le service traite ensuite chaque intervalle de données AEM Forms séparément.
 
 Cela permet de contrôler la taille des données que l’éditeur traite de bout en bout lors de chaque exécution (lot) au cours d’un cycle.
 
@@ -218,7 +218,7 @@ Si un service d’éditeur qui a acquis un verrou est inactif pendant le nombre 
 
 **Publier les données à partir de**
 
-L’environnement AEM Forms contient les données du moment où l’environnement a été configuré.
+L’environnement d’AEM Forms contient les données du moment où l’environnement a été configuré.
 
 Par défaut, le service ProcessDataPublisher importe toutes les données de la base de données AEM Forms.
 
@@ -232,7 +232,7 @@ En fonction des besoins de votre rapports, si vous prévoyez d’exécuter des r
 
 L’interface utilisateur du Rapports de processus est basée sur un navigateur.
 
-Après avoir configuré le Rapports de processus, vous pouvez début travailler avec le Rapports de processus à l’emplacement suivant dans votre installation AEM Forms :
+Une fois que vous avez configuré Process Rapports, vous pouvez début utiliser Process Rapports à l’emplacement suivant dans votre installation AEM Forms :
 
 `https://<server>:<port>/lc/pr`
 
@@ -278,7 +278,7 @@ Pour la procédure de création et d&#39;affichage de rapports personnalisés, v
 
 Cliquez sur le titre à tout moment pour revenir à l’écran d’accueil.
 
-**Heure de la dernière mise à jour :** Les données de processus sont publiées de la base de données AEM Forms vers le référentiel de Rapports de processus sur une base planifiée.
+**Heure de la dernière mise à jour :** Les données de processus sont publiées de la base de données AEM Forms vers le référentiel Rapports de processus selon un calendrier défini.
 
 L’heure de la dernière mise à jour affiche la date et l’heure auxquelles les mises à jour de données ont été transférées vers le référentiel de Rapports de processus.
 
