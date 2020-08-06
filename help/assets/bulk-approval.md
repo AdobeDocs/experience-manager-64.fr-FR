@@ -1,16 +1,19 @@
 ---
 title: Révision de collections et de ressources situées dans un dossier
-description: Mettez en place des workflow de révision pour les ressources dans un dossier ou une collection et partagez ce processus avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
+description: Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez ce workflow avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '814'
+ht-degree: 98%
 
 ---
 
 
 # Révision de collections et de ressources situées dans un dossier {#review-folder-assets-and-collections}
 
-Mettez en place des workflow de révision pour les ressources dans un dossier ou une collection et partagez ce processus avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
+Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez ce workflow avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 
 Adobe Experience Manager (AEM) Assets permet de configurer un workflow de révision ad hoc pour les ressources situées dans un dossier ou une collection et de partager ce workflow avec des réviseurs ou des partenaires de conception afin d’obtenir leurs commentaires.
 
@@ -23,11 +26,11 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 ## Create a review task for folders {#creating-a-review-task-for-folders}
 
 1. Dans l’interface utilisateur Assets, sélectionnez le dossier pour lequel vous souhaitez créer une tâche de révision.
-1. Dans la barre d’outils, appuyez/cliquez sur l’icône **[!UICONTROL Créer une tâche]** de révision pour ouvrir la page **[!UICONTROL Tâche de révision]**. Si vous ne pouvez pas voir l’icône dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Plus]**, puis sélectionnez l’icône.
+1. Dans la barre d’outils, appuyez/cliquez sur l’icône **[!UICONTROL Créer une tâche de révision]** pour ouvrir la page **[!UICONTROL Tâche de révision]**. Si l’icône n’apparaît pas dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Plus]**, puis sélectionnez l’icône.
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
-1. (Optional) From the **[!UICONTROL Project]** list, select the project to which you want to associate the review task. By default, the **[!UICONTROL None]** option is selected. Si vous ne souhaitez associer aucun projet à la tâche de révision, conservez cette sélection.
+1. (Facultatif) Dans la liste **[!UICONTROL Projets]**, choisissez le projet auquel vous voulez associer la tâche de révision. Par défaut, l’option **[!UICONTROL Aucun]** est sélectionnée. Si vous ne souhaitez associer aucun projet à la tâche de révision, conservez cette sélection.
 
    >[!NOTE]
    >
@@ -41,7 +44,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
 1. Entrez une description, la priorité et la date d’échéance de la tâche de révision.
 
-   ![_details](assets/task_details.png)
+   ![task_details](assets/task_details.png)
 
 1. Dans l’onglet Avancé, entrez le libellé à utiliser pour créer l’URI.
 
@@ -52,12 +55,12 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
    ![notification](assets/notification.png)
 
-1. Dans la page **[!UICONTROL Tâche de révision]**, examinez les détails de la tâche de révision, puis appuyez/cliquez sur **[!UICONTROL Réviser]**.
-1. Dans la page **[!UICONTROL Tâche d’analyse]**, sélectionnez des ressources, puis touchez/cliquez sur l’icône **[!UICONTROL Approuver/Rejeter]** pour approuver ou rejeter, selon le cas.
+1. Sur la page **[!UICONTROL Tâche de révision]**, examinez les détails de la tâche de révision, puis appuyez/cliquez sur **[!UICONTROL Réviser]**.
+1. Sur la page **[!UICONTROL Tâche de révision]**, sélectionnez les ressources, puis appuyez/cliquez sur l’icône **[!UICONTROL Approuver/Rejeter]** pour approuver ou rejeter, de manière appropriée.
 
-   ![review_](assets/review_task.png)
+   ![review_task](assets/review_task.png)
 
-1. Appuyez/cliquez sur l’icône **[!UICONTROL Terminé]** dans la barre d’outils. In the dialog, enter a comment and tap/click  **[!UICONTROL Complete]** to confirm.
+1. Appuyez/cliquez sur l’icône **[!UICONTROL Terminé]** dans la barre d’outils. Dans la boîte de dialogue, saisissez un commentaire, puis appuyez/cliquez sur **[!UICONTROL Terminé]** pour confirmer.
 1. Accédez à l’IU Assets et ouvrez le dossier. Les icônes d’état d’approbation pour les ressources apparaissent dans les modes Carte et Liste.
 
    **Mode Carte**
@@ -71,11 +74,11 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 ## Create a review task for collections {#creating-a-review-task-for-collections}
 
 1. Sur la page Collections, sélectionnez la collection pour laquelle vous souhaitez créer une tâche de révision.
-1. Dans la barre d’outils, appuyez/cliquez sur l’icône **[!UICONTROL Créer une tâche]** de révision pour ouvrir la page **[!UICONTROL Tâche de révision]**. Si vous ne pouvez pas voir l’icône dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Plus]**, puis sélectionnez l’icône.
+1. Dans la barre d’outils, appuyez/cliquez sur l’icône **[!UICONTROL Créer une tâche de révision]** pour ouvrir la page **[!UICONTROL Tâche de révision]**. Si l’icône n’apparaît pas dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Plus]**, puis sélectionnez l’icône.
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
-1. (Optional) From the **[!UICONTROL Project]** list, select the project to which you want to associate the review task. By default, the **[!UICONTROL None]** option is selected. Si vous ne souhaitez associer aucun projet à la tâche de révision, conservez cette sélection.
+1. (Facultatif) Dans la liste **[!UICONTROL Projets]**, choisissez le projet auquel vous voulez associer la tâche de révision. Par défaut, l’option **[!UICONTROL Aucun]** est sélectionnée. Si vous ne souhaitez associer aucun projet à la tâche de révision, conservez cette sélection.
 
    >[!NOTE]
    >
@@ -89,16 +92,16 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
 1. Entrez une description, la priorité et la date d’échéance de la tâche de révision.
 
-   ![_details-collection](assets/task_details-collection.png)
+   ![task_details-collection](assets/task_details-collection.png)
 
 1. Appuyez/cliquez sur **[!UICONTROL Envoyer]**, puis sur **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
-1. Connectez-vous à AEM Assets en tant qu’approbateur et accédez à la console Ressources. To approve assets, tap/click the **[!UICONTROL Notifications]** icon and then select the review task from the list.
-1. Dans la page **[!UICONTROL Tâche de révision]**, examinez les détails de la tâche de révision, puis appuyez/cliquez sur **[!UICONTROL Réviser]**.
-1. Toutes les ressources situées dans la collection sont visibles dans le panneau de révision. Select the assets and tap/click the **[!UICONTROL Approve/Reject]** icon to approve or reject assets, as appropriate.
+1. Connectez-vous à AEM Assets en tant qu’approbateur et accédez à la console Ressources. Pour approuver des ressources, appuyez/cliquez sur l’icône **[!UICONTROL Notifications]**, puis sélectionnez la tâche de révision dans la liste.
+1. Sur la page **[!UICONTROL Tâche de révision]**, examinez les détails de la tâche de révision, puis appuyez/cliquez sur **[!UICONTROL Réviser]**.
+1. Toutes les ressources situées dans la collection sont visibles dans le panneau de révision. Sélectionnez les ressources, puis appuyez/cliquez sur l’icône **[!UICONTROL Approuver/Rejeter]** pour approuver ou rejeter les ressources selon les besoins.
 
-   ![review___collection](assets/review_task_collection.png)
+   ![review_task_collection](assets/review_task_collection.png)
 
-1. Appuyez/cliquez sur l’icône **[!UICONTROL Terminé]** dans la barre d’outils. In the dialog, enter a comment and tap/click **[!UICONTROL Complete]** to confirm.
+1. Appuyez/cliquez sur l’icône **[!UICONTROL Terminé]** dans la barre d’outils. Dans la boîte de dialogue, saisissez un commentaire, puis appuyez/cliquez sur **[!UICONTROL Terminé]** pour confirmer.
 1. Accédez à la console Collections et ouvrez la collection. Les icônes d’état d’approbation pour les ressources apparaissent dans les modes Carte et Liste.
 
    **Mode Carte**
