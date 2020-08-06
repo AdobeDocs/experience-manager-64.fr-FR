@@ -1,8 +1,8 @@
 ---
 title: Nuage de balises sociales
 seo-title: Nuage de balises sociales
-description: Ajout d’un composant Social Tag Cloud à une page
-seo-description: Ajout d’un composant Social Tag Cloud à une page
+description: Ajouter un composant Social Tag Cloud à une page
+seo-description: Ajouter un composant Social Tag Cloud à une page
 uuid: 8c400030-976c-457a-bb5f-e473909647a9
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 48%
 
 ---
 
@@ -31,7 +34,7 @@ See [Administering Tags](../../help/sites-administering/tags.md) for information
 
 ## Ajout d’un composant Nuage de balises sociales {#adding-a-social-tag-cloud}
 
-Pour ajouter un `Social Tag Cloud` composant à une page en mode création, utilisez l’explorateur de composants pour le localiser `Communities / Social Tag Cloud` et le faire glisser sur une page où le nuage de balises doit apparaître.
+Pour ajouter un `Social Tag Cloud` composant à une page en mode création, utilisez l’explorateur de composants pour le localiser `Communities / Social Tag Cloud` et faites-le glisser sur une page sur laquelle le nuage de balises doit apparaître.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
@@ -49,23 +52,26 @@ Dans l’onglet **[!UICONTROL Nuage de balises sociales]**, spécifiez les balis
 
 ![chlimage_1-305](assets/chlimage_1-305.png)
 
-* **[!UICONTROL Balises sociales à afficher]** Identifie les balises UGC à afficher. Les options du menu déroulant sont les suivantes :
+* **[!UICONTROL Balises sociales à afficher]** Identifie les balises UGC à afficher. Les options de la liste déroulante sont les suivantes :
 
    * `From page and child pages`
    * `All tags`
+
    La valeur par défaut est `From page and child pages`, où &quot;page&quot; fait référence au paramètre **Page** ci-dessous.
 
-* **[!UICONTROL Page]**(obligatoire si ce n’est pas `All tags)` Chemin d’accès au contenu généré par l’utilisateur pour une page. Par défaut, la page actuelle est laissée vide.
+* **[!UICONTROL Page]**(obligatoire si non 
+`All tags)` Chemin d’accès à l’UGC pour une page. Par défaut, la page actuelle est laissée vide.
 
 * **[!UICONTROL Aucun lien sur les balises]** Si cette option est sélectionnée, les balises sont affichées dans le nuage de balises en tant que texte brut. Si cette option n’est pas sélectionnée, les balises s’affichent sous forme de liens actifs qui effectuent une recherche sur tout le contenu auquel la balise est appliquée. Par défaut, l’option n’est pas sélectionnée et nécessite que **[!UICONTROL Chemin d’accès aux résultats de recherche]** soit défini.
 
-* **[!UICONTROL Chemin]** des résultats de recherche Chemin d’accès à une page sur laquelle un `Search Result` composant a été placé, configuré pour référencer l’UGC qui inclut le chemin d’accès UGC spécifié par le paramètre **Page** .
+* **[!UICONTROL Chemin d&#39;accès]** aux résultats de la recherche Chemin d&#39;accès à une page sur laquelle un 
+`Search Result` a été placé, configuré pour référencer l&#39;UGC qui inclut le chemin UGC spécifié par le paramètre **Page** .
 
 ## Modification de l’affichage du nuage de balises sociales {#change-display-of-social-tag-cloud}
 
 To edit the display of the **Social Tag Cloud**, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double click on the placed `Social Tag Cloud` component to open a dialog with an additional tab.
 
-Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are displayed. Une balise peut être une balise simple, un mot unique dans l’espace de noms par défaut ou une taxonomie hiérarchique :
+Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are displayed. Une balise peut être une balise simple, un mot unique dans l’espace de nommage par défaut ou une taxonomie hiérarchique :
 
 ![chlimage_1-306](assets/chlimage_1-306.png)
 
@@ -75,6 +81,7 @@ Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are d
 
    * Cochée: `Geometrixx Media: Gadgets / Cars`
    * Non cochée: `Cars`
+
    Il n’y a aucune différence pour une balise unique.
 
    Cette option n’est pas cochée par défaut.
@@ -89,6 +96,7 @@ Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are d
 
    * Checked: only `Cars` will display, if applied
    * Unchecked: `Geometrixx Media` and `Gadgets`as well as `Cars` will display, if applied
+
    Une balise unique est une balise terminale.
 
    Cette option n’est pas cochée par défaut.
