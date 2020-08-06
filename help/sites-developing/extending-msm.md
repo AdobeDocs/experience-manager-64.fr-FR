@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 0cb1a323ac56b5b8ecd07f84c4840f1b466d5796
 workflow-type: tm+mt
 source-wordcount: '2588'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -168,7 +168,7 @@ La nouvelle configuration de déploiement est disponible quand vous définissez 
 
 Pour créer une configuration de déploiement :
 
-1. Ouvrez CRXDE Lite ; par exemple :
+1. CRXDE Lite ouvert ; par exemple :
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Accédez à :
@@ -219,7 +219,7 @@ Les configurations de déploiement sont stockées sous le noeud [de configuratio
 
 Add child nodes of type `cq:LiveSyncAction` to add synchronization actions to the rollout configuration. L’ordre des nœuds d’action de synchronisation détermine l’ordre dans lequel les actions se produisent.
 
-1. Toujours dans CRXDE Lite, sélectionnez votre noeud Configuration [](#create-the-rollout-configuration) de déploiement.
+1. Toujours en CRXDE Lite, sélectionnez votre noeud Configuration [](#create-the-rollout-configuration) de déploiement.
 
    Par exemple :
    `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
