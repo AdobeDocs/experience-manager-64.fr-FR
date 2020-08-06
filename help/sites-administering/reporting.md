@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2793'
+ht-degree: 83%
 
 ---
 
@@ -54,6 +57,7 @@ Divers formats de rapport sont disponibles. Les rapports suivants utilisent tous
 >* Le rapport [Contrôle de l’intégrité](#health-check) utilise des champs de sélection pour spécifier les données sur lesquelles vous souhaitez générer des rapports.
 >* Le rapport [Utilisation du disque](#disk-usage) utilise des liens permettant d’explorer la structure du référentiel.
 >* Le [rapport de workflow](/help/sites-administering/reporting.md#workflow-report) offre un aperçu des workflows exécutés sur votre instance.
+
 >
 >
 Les procédures suivantes concernant la configuration de colonne ne sont donc pas appropriées. Voir la description des différents rapports pour en connaître les détails.
@@ -129,7 +133,7 @@ Pour désactiver le filtre :
 
 Vous pouvez également sélectionner une méthode d’agrégation (elle peut varier en fonction de la colonne sélectionnée) :
 
-![reportagrégé](assets/reportaggregate.png)
+![petit rapport](assets/reportaggregate.png)
 
 ### Propriétés de colonne {#column-properties}
 
@@ -160,11 +164,11 @@ Une fois la collecte de données commencée, vous pouvez sélectionner les optio
 
 * **Période**
 
-   Vous pouvez sélectionner des dates de début et de fin pour l&#39;affichage des données du rapport.
+   Vous pouvez sélectionner des dates et des dates pour les données du rapport à afficher.
 
 * **Intervalle**
 
-   Mois, Semaine, Jour, Heure peuvent être sélectionnés pour l’échelle et l’agrégation du rapport.
+   Mois, Semaine, Jour, Heure peuvent être sélectionnés pour l&#39;échelle et l&#39;agrégation du rapport.
 
     Par exemple, si des instantanés quotidiens sont disponibles pour le mois de février 2011 :
 
@@ -239,9 +243,9 @@ Il s’agit d’un emplacement où la période de collecte des instantanés pour
 
    Vous pouvez définir votre propre description.
 
-* **Chemin** racine (*actif uniquement pour certains rapports*)
+* **Chemin** racine (*principal uniquement pour certains rapports*)
 
-   Utilisez cette option pour limiter le rapport à une section (sous-section) du référentiel.
+   Utilisez cette option pour limiter le rapport à une sous-section du référentiel.
 
 * **Traitement du rapport**
 
@@ -285,7 +289,7 @@ Lorsque vous avez **terminé** le rapport :
 
 Avec cette boîte de dialogue, vous pouvez définir ou mettre à jour votre propre titre et votre propre description du rapport.
 
-![reportcomplete](assets/reportfinish.png)
+![reportend](assets/reportfinish.png)
 
 ## Types de rapports {#report-types}
 
@@ -295,11 +299,11 @@ Le rapport de composants fournit des informations sur la façon dont votre site 
 
 [Colonnes d’informations](#selecting-and-positioning-the-data-columns) sur :
 
-* Auteur
+* Création
 * Chemin de composant
 * Type de composant
 * Dernière modification
-* Page
+* Page  
 
 Signifient que vous pouvez voir, par exemple :
 
@@ -316,7 +320,7 @@ Signifient que vous pouvez voir, par exemple :
 
 Tous les composants sont inclus, ceux standard produit comme ceux spécifiques aux projets. Avec la boîte de dialogue **Modifier**, l’utilisateur peut également définir un **Chemin racine** qui définit le point de départ du rapport. Tous les composants sous cette racine sont pris en compte pour le rapport.
 
-![reportcomponent](assets/reportcomponent.png) ![reportcompentall](assets/reportcompentall.png)
+![reportcomponent](assets/reportcomponent.png) ![reportcompent](assets/reportcompentall.png)
 
 ### Utilisation du disque {#disk-usage}
 
@@ -331,8 +335,7 @@ Le rapport commence à la racine (/) du référentiel. En cliquant sur une branc
 Ce rapport analyse le journal de requêtes actuel :
 
 `<cq-installation-dir>/crx-quickstart/logs/request.log`\
-
-pour vous aider à identifier les requêtes les plus coûteuses au cours d’une période donnée.
+pour vous aider à identifier les demandes les plus coûteuses au cours d’une période donnée.
 
 Pour générer le rapport, vous pouvez spécifier :
 
@@ -340,13 +343,13 @@ Pour générer le rapport, vous pouvez spécifier :
 
    Nombre d&#39;heures (passées) à analyser.
 
-   Default: `24`
+   Valeur par défaut: `24`
 
 * **max. Résultats**
 
    Nombre maximal de lignes de sortie.
 
-   Default: `50`
+   Valeur par défaut: `50`
 
 * **max. Demandes**
 
@@ -362,11 +365,11 @@ Pour générer le rapport, vous pouvez spécifier :
 
 * **Exécution quotidienne à (hh:mm)**
 
-   Spécifiez l’heure d’exécution quotidienne automatique du rapport.
+   Spécifiez l&#39;heure à laquelle le rapport doit s&#39;exécuter automatiquement quotidiennement.
 
    Facultatif ; valeur par défaut : non renseigné
 
-![reportage](assets/reporthealth.png)
+![rapport](assets/reporthealth.png)
 
 ### Rapport d’activité de la page {#page-activity-report}
 
@@ -374,10 +377,10 @@ Le rapport d’activité de la page répertorie les pages et les actions effectu
 
 [Colonnes d’informations](#selecting-and-positioning-the-data-columns) sur :
 
-* Page
+* Page  
 * Heure
 * Type
-* Utilisateur
+* User
 
 Signifie que vous pouvez surveiller :
 
@@ -397,9 +400,9 @@ Ce rapport fournit des informations sur le contenu généré par l’utilisateur
 
 [Colonnes d’informations ](#selecting-and-positioning-the-data-columns) sur :
 
-* Date
+* Date   
 * Adresse IP
-* Page
+* Page  
 * Référent
 * Type
 * Identifiant de l’utilisateur
@@ -470,13 +473,13 @@ Dans l’onglet **Définitions**, vous pouvez définir :
 
 * **Agrégat par défaut**
 
-   Cette propriété définit l’agrégat utilisé par défaut si la colonne est dissociée dans un rapport avec au moins une colonne regroupée. Sélectionnez l’agrégat requis dans `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+   Ceci définit l&#39;agrégat utilisé par défaut si la colonne est dissociée dans un rapport avec au moins une colonne regroupée. Sélectionnez l’agrégat requis dans `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
    For example, *Count* for a `String` field means that the number of distinct `String` values is displayed for the column in the aggregated state.
 
 Dans l’onglet **Étendu**, vous pouvez également définir les agrégats et les filtres disponibles :
 
-![reportusrgenericcolmextended](assets/reportusrgenericcolmextented.png)
+![reportusrgenericcolmextented](assets/reportusrgenericcolmextented.png)
 
 ### Rapport d’instance de processus {#workflow-instance-report}
 
