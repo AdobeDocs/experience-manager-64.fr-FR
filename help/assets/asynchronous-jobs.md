@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: f6aa1ab2c7a0ddeda1504e95ce4bd57fe74a65fd
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 15%
+ht-degree: 18%
 
 ---
 
@@ -23,17 +23,17 @@ You can view the status of asynchronous tasks from the **[!UICONTROL Async Job S
 
 >[!NOTE]
 >
->Par défaut, les [!DNL Assets] tâches s’exécutent en parallèle. If `N` is the number of CPU cores, `N/2` tasks can execute in parallel, by default. To use custom settings for the task queue, modify the **[!UICONTROL Async Operation Default Queue]** configuration from the [!UICONTROL Web Console]. For more information, see [queue configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
+>Par défaut, les [!DNL Assets] tâches s’exécutent en parallèle. If `N` is the number of CPU cores, `N/2` tasks can execute in parallel, by default. To use custom settings for the task queue, modify the **[!UICONTROL Async Operation Default Queue]** configuration from the [!UICONTROL Web Console]. Pour plus d’informations, voir [Configurations de files d’attente](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
 ## Monitor the status of asynchronous operations {#monitoring-the-status-of-asynchronous-operations}
 
-Chaque fois que [!DNL Assets] vous traitez une opération de manière asynchrone, vous recevez une notification dans votre [!DNL Experience Manager] boîte de [réception](/help/sites-authoring/inbox.md) et par courrier électronique. Pour afficher l’état des opérations asynchrones en détail, accédez à la page **[!UICONTROL État des tâches asynchrones]**.
+Whenever [!DNL Assets] processes an operation asynchronously, you receive a notification in your [!DNL Experience Manager] [Inbox](/help/sites-authoring/inbox.md) and via an email. Pour afficher l’état des opérations asynchrones en détail, accédez à la page **[!UICONTROL État des tâches asynchrones]**.
 
-1. Dans l’ [!DNL Experience Manager] interface, cliquez sur **[!UICONTROL Opérations]** > **[!UICONTROL Tâches]**.
+1. In the [!DNL Experience Manager] interface click **[!UICONTROL Operations]** > **[!UICONTROL Jobs]**.
 
 1. Sur la page **[!UICONTROL État des tâches asynchrones]**, passez en revue les détails des opérations.
 
-   ![Statut et détails des opérations asynchrones](assets/job_status.png)
+   ![État et détails des opérations asynchrones](assets/job_status.png)
 
    Pour connaître la progression d&#39;une opération, consultez la colonne **[!UICONTROL État]** . Selon la progression, l’un des états suivants s’affiche :
 
@@ -48,11 +48,11 @@ Chaque fois que [!DNL Assets] vous traitez une opération de manière asynchrone
 
    ![Détails d’une tâche d’importation de métadonnées](assets/job_details.png)
 
-1. Pour supprimer l’opération de la liste, sélectionnez **[!UICONTROL Supprimer]** dans la barre d’outils. To download the details in a CSV file, click **[!UICONTROL Download]**.
+1. Pour supprimer l’opération de la liste, sélectionnez **[!UICONTROL Supprimer]** dans la barre d’outils. Pour télécharger les détails dans un fichier CSV, cliquez sur **[!UICONTROL Télécharger]**.
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas supprimer une tâche si son état est actif ou en file d’attente.
+   >Vous ne pouvez pas supprimer une tâche si son état est principal ou en file d’attente.
 
 ## Purger les tâches terminées {#purge-completed-tasks}
 
