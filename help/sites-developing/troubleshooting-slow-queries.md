@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2267'
+ht-degree: 68%
 
 ---
 
@@ -41,15 +44,15 @@ Chaque résultat potentiel devant être inspecté, le coût lié à l’identifi
 
 L’ajout de restrictions de requête et l’optimisation des index permettent de stocker les données d’index dans un format optimisé, ce qui se traduit par une récupération rapide des résultats. En outre, cela réduit la nécessité de recourir à une inspection linéaire des jeux de résultats potentiels, voire permet de s’en passer complètement.
 
-Par défaut, dans AEM 6.3, lorsqu’une traversée de 100 000 est atteinte, la requête échoue et génère une exception. Cette limite n’existe pas par défaut dans les versions d’AEM antérieures à AEM 6.3, mais peut être définie via les paramètres du moteur de requête Apache Jackrabbit OSGi et le bean de QueryEngineSettings JMX (property LimitReads).
+Par défaut, dans AEM 6.3, lorsqu’une traversée de 100 000 est atteinte, la requête échoue et génère une exception. Cette limite n&#39;existe pas par défaut dans AEM versions antérieures à AEM 6.3, mais peut être définie via les paramètres du moteur de Requête Apache Jackrabbit OSGi configuration et QueryEngineSettings JMX bean (property LimitReads).
 
 ### Détection des requêtes sans index {#detecting-index-less-queries}
 
 #### Pendant le développement {#during-development}
 
-Explain **all** queries and ensure their query plans do not contain the **/&amp;ast; traverse** explanation in them. Exemple de parcours du plan de requête :
+Explain **all** queries and ensure their query plans do not contain the **/&amp;ast; traverse** explanation in them. Exemple de plan de requête de traversée :
 
-* **** PLAN : `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
+* **PLAN :** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
 #### Après le déploiement {#post-deployment}
 
@@ -80,6 +83,7 @@ Avant d’ajouter la règle d’index cq:tags
 * **Requête Query Builder**
 
    * 
+
       ```
       type=cq:Page
        property=jcr:content/cq:tags
@@ -97,6 +101,7 @@ Après avoir ajouté la règle d’index cq:tags
 * **Règle d’index cq:tags**
 
    * 
+
       ```
       /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
        @name=jcr:content/cq:tags
@@ -106,6 +111,7 @@ Après avoir ajouté la règle d’index cq:tags
 * **Requête Query Builder**
 
    * 
+
       ```
       type=cq:Page
        property=jcr:content/cq:tags
@@ -122,7 +128,7 @@ When a query with the `jcr:content/cq:tags` restriction is performed, the index 
 
 Il va sans dire que des restrictions de requête supplémentaires réduisent les jeux de résultats éligibles et améliorent encore l’optimisation des requêtes.
 
-Similarly, without an additional index rule for the `cq:tags` property, even a fulltext query with a restriction on `cq:tags` would perform poorly as results from the index would return all fulltext matches. La restriction sur cq:tags sera ensuite filtrée.
+Similarly, without an additional index rule for the `cq:tags` property, even a fulltext query with a restriction on `cq:tags` would perform poorly as results from the index would return all fulltext matches. La restriction sur les balises cq:tags sera ensuite filtrée.
 
 Les listes de contrôle d’accès constituent une autre cause de filtrage post index. Bien souvent, il n’en est pas tenu compte en cours de développement. Tâchez de vous assurer que la requête ne renvoie pas de chemins d’accès auxquels l’utilisateur risque ne pas avoir accès. En règle générale, cela passe par une meilleure structure de contenu, ainsi que la définition d’une restriction de chemin d’accès appropriée sur la requête.
 
@@ -146,7 +152,7 @@ Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire 
 
 #### Après le déploiement {#post-deployment-2}
 
-* Surveillez les journaux pour les requêtes qui déclenchent une traversée de gros noeuds ou une grande consommation de mémoire de tas : &quot;
+* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de grands noeuds ou une consommation importante de mémoire de tas : &quot;
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * Optimisez la requête afin de réduire le nombre de nœuds parcourus transversalement.
@@ -156,7 +162,7 @@ Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
    * Optimisez la requête pour réduire la consommation de mémoire de tas.
 
-Pour les versions 6.0 à 6.2 d’AEM, vous pouvez régler le seuil de traversée des noeuds au moyen des paramètres JVM dans le script de démarrage d’AEM afin d’empêcher les requêtes volumineuses de surcharger l’environnement. Les valeurs recommandées sont les suivantes :
+Pour AEM versions 6.0 à 6.2, vous pouvez régler le seuil de traversée des noeuds au moyen de paramètres JVM dans le script d’début AEM afin d’éviter que les requêtes volumineuses ne surchargent l’environnement. Les valeurs recommandées sont les suivantes :
 
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
@@ -188,6 +194,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    * **Requête non optimisée**
 
       * 
+
          ```
           property=jcr:content/contentType
           property.value=article-page
@@ -195,6 +202,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    * **Requête optimisée**
 
       * 
+
          ```
           type=cq:Page 
           property=jcr:content/contentType 
@@ -209,6 +217,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    * **Requête non optimisée**
 
       * 
+
          ```
          type=nt:hierarchyNode
          property=jcr:content/contentType
@@ -217,22 +226,25 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    * **Requête optimisée**
 
       * 
+
          ```
          type=cq:Page
          property=jcr:content/contentType
          property.value=article-page
          ```
-   `nt:hierarchyNode` est le type de noeud parent de `cq:Page`, et en supposant `jcr:content/contentType=article-page` qu’il ne soit appliqué qu’aux `cq:Page` noeuds par le biais de notre application personnalisée, cette requête ne renvoie `cq:Page` que les noeuds où `jcr:content/contentType=article-page`. Il s’agit toutefois d’une restriction sous-optimale, pour les raisons suivantes :
+   `nt:hierarchyNode` est le type de noeud parent de `cq:Page`, et en supposant `jcr:content/contentType=article-page` qu’il ne soit appliqué qu’aux noeuds par le biais de `cq:Page` notre application personnalisée, cette requête ne retournera que `cq:Page` les noeuds où `jcr:content/contentType=article-page`. Il s’agit toutefois d’une restriction sous-optimale, pour les raisons suivantes :
 
-   * Other node inherit from `nt:hierarchyNode` (eg. `dam:Asset`) en ajoutant inutilement à l&#39;ensemble des résultats potentiels.
+   * Other node inherit from `nt:hierarchyNode` (eg. `dam:Asset`) ajoutant inutilement à l&#39;ensemble des résultats potentiels.
    * No AEM-provided index exists for `nt:hierarchyNode`, however as there a provided index for `cq:Page`.
+
    Le fait de définir `type=cq:Page` limite cette requête aux seuls nœuds `cq:Page` et résout la requête sur l’index cqPageLucene d’AEM, ce qui limite les résultats à un sous-ensemble de nœuds (uniquement les nœuds cq:Page) dans AEM.
 
-1. Vous pouvez également ajuster la ou les restrictions de propriété afin que la requête soit résolue en un index de propriétés existant.
+1. Vous pouvez également ajuster la ou les restrictions de propriété afin que la requête se résolve à un index de propriétés existant.
 
    * **Requête non optimisée**
 
       * 
+
          ```
          property=jcr:content/contentType
          property.value=article-page
@@ -240,6 +252,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    * **Requête optimisée**
 
       * 
+
          ```
          property=jcr:content/sling:resourceType
          property.value=my-site/components/structure/article-page
@@ -248,11 +261,12 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
 
    Les index de propriété (contrairement aux index de propriété Lucene) conviennent mieux lorsque la requête ne fait pas de distinction par type de nœud et qu’une seule restriction de propriété domine le jeu de résultats.
 
-1. Ajoutez la restriction de chemin la plus stricte possible à la requête. Par exemple, préférez `/content/my-site/us/en` sur `/content/my-site`ou `/content/dam` sur `/`.
+1. Ajoutez la restriction de chemin la plus stricte possible à la requête. Par exemple, préférez `/content/my-site/us/en` à `/content/my-site`, ou `/content/dam` à `/`.
 
    * **Requête non optimisée**
 
       * 
+
          ```
          type=cq:Page
          path=/content
@@ -262,6 +276,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    * **Requête optimisée**
 
       * 
+
          ```
          type=cq:Page
          path=/content/my-site/us/en
@@ -277,6 +292,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    * **Requête non optimisée**
 
       * 
+
          ```
          type=cq:Page
          property=jcr:content/contentType
@@ -286,12 +302,13 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    * **Requête optimisée**
 
       * 
+
          ```
          type=cq:Page
          fulltext=article
          fulltext.relPath=jcr:content/contentType
          ```
-   La condition LIKE est lente à être évaluée, car aucun index ne peut être utilisé si le texte commence par un caractère générique (&quot;%...&quot;). La condition jcr:contains autorise un index en texte intégral et est, de ce fait, à privilégier. This requires the resolved Lucene Property Index to have indexRule for `jcr:content/contentType` with `analayzed=true`.
+   La condition LIKE est lente à être évaluée, car aucun index ne peut être utilisé si le texte début avec un caractère générique (&quot;%...&#39;). La condition jcr:contains autorise un index en texte intégral et est, de ce fait, à privilégier. This requires the resolved Lucene Property Index to have indexRule for `jcr:content/contentType` with `analayzed=true`.
 
    Using query functions like `fn:lowercase(..)` may be harder to optimize as there are not faster equivalents (outside more complex and obtrusive index analyzer configurations). Il est préférable d’identifier d’autres restrictions d’étendue afin d’améliorer les performances globales des requêtes, ce qui exige que les fonctions s’exécutent sur le plus petit jeu possible de résultats potentiels.
 
@@ -302,6 +319,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    * **Requête non optimisée**
 
       * 
+
          ```
          type=cq:Page
          path=/content
@@ -309,6 +327,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    * **Requête optimisée**
 
       * 
+
          ```
          type=cq:Page
          path=/content
@@ -321,12 +340,13 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
 ## Optimisation d’un index existant {#existing-index-tuning}
 
 1. Si la requête optimale est résolue sur un index de propriété, il n’y a rien d’autre à faire, dans la mesure où les index de ce type présentent des capacités de réglage minimales.
-1. Dans le cas contraire, la requête doit être résolue en index de propriétés Lucene. Si aucun index ne peut être résolu, passez à la création d’un index.
+1. Dans le cas contraire, la requête doit se résoudre à un index de propriétés Lucene. Si aucun index ne peut être résolu, passez à la création d’un index.
 1. Le cas échéant, convertissez la requête au format XPath ou JCR-SQL2.
 
    * **Requête Query Builder**
 
       * 
+
          ```
          query type=cq:Page
          path=/content/my-site/us/en
@@ -338,6 +358,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    * **XPath généré à partir de la requête Query Builder**
 
       * 
+
          ```
          /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
          ```
@@ -378,6 +399,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    * **Requête Query Builder**
 
       * 
+
          ```
          type=myApp:Author
          property=firstName
@@ -386,6 +408,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    * **XPath généré à partir de la requête Query Builder**
 
       * 
+
          ```
          //element(*, myApp:Page)[@firstName = 'ira']
          ```
@@ -416,7 +439,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
 
    Lors du déploiement initial de cet index, AEM va le remplir avec les données requises.
 
-## Quand les requêtes sans index et de traversée sont-elles valides ? {#when-index-less-and-traversal-queries-are-ok}
+## Quand les requêtes sans index et de traversée sont-elles compatibles ? {#when-index-less-and-traversal-queries-are-ok}
 
 Compte tenu de l’architecture de contenu flexible d’AEM, il est difficile d’affirmer que les structures de contenu n’évolueront pas au fil du temps pour atteindre des proportions inacceptables.
 
@@ -426,7 +449,7 @@ Therefore, ensure an indexes satisfy queries, except if the combination of path 
 
 ### Prise en charge par Adobe {#adobe-supported}
 
-* **Débogueur du créateur de requêtes**
+* **Débogueur du créateur de Requêtes**
 
    * Interface utilisateur web destinée à exécuter des requêtes Query Builder et à générer le XPath connexe (à utiliser dans l’outil Expliquer la requête ou dans le Générateur de définitions d’index en Oak).
    * Located on AEM at [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
