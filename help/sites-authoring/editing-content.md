@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 07da66ab-dd5e-4ca8-ac6d-76fc81875fd9
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3064'
+ht-degree: 94%
 
 ---
 
@@ -25,15 +28,15 @@ Le contenu est ajouté à l’aide de [composants](/help/sites-authoring/default
 >
 >Vous devez disposer des [droits d’accès](/help/sites-administering/security.md) et des [autorisations](/help/sites-administering/security.md#permissions) appropriés sur votre compte pour modifier les pages.
 >
->En cas de problèmes, contactez votre administrateur système.
+>En cas de problème, contactez votre administrateur système.
 
 >[!NOTE]
 >
->If your page and/or template has been appropriately set up, then you can use [responsive layout](/help/sites-authoring/responsive-layout.md) when editing.
+>Si votre page et/ou modèle ont été configurés correctement, vous pouvez utiliser la [mise en page réactive](/help/sites-authoring/responsive-layout.md) lors de la modification.
 
 >[!NOTE]
 >
->When in **Edit** mode, links in your content are visible, but **not accessible**. Use [Preview mode](#previewing-pages) if you want to navigate using the links in your content.
+>En mode **Édition**, les liens dans votre contenu sont visibles, mais ils ne sont **pas accessibles**. Utilisez le [mode Aperçu](#previewing-pages) pour naviguer en suivant les liens.
 
 ## Barre d’outils Page {#page-toolbar}
 
@@ -93,7 +96,7 @@ La barre d’outils vous donne accès à de nombreuses options. La disponibilit�
 
 ### Notification d’état {#status-notification}
 
-If a page is part of a [workflow](/help/sites-authoring/workflows.md) or multiple workflows, this information is shown in a notification bar at the top of the screen when editing the page.
+Si la page fait partie d’un ou de plusieurs [workflows](/help/sites-authoring/workflows.md), ces informations s’affichent dans une barre de notification située en haut de l’écran lorsque vous la modifiez.
 
 ![screen_shot_2018-03-22at111739](assets/screen_shot_2018-03-22at111739.png)
 
@@ -103,13 +106,13 @@ If a page is part of a [workflow](/help/sites-authoring/workflows.md) or multipl
 
 La notification indique le workflow exécuté sur la page. Si l’utilisateur prend part à l’étape actuelle du workflow, des options [affectant l’état du workflow](/help/sites-authoring/workflows-participating.md) et permettant d’obtenir plus d’informations sur le workflow sont également disponibles, à savoir :
 
-* **Terminer** : ouvre la boîte de dialogue **Terminer la tâche** .
+* **Terminé** - Ouvre la boîte de dialogue **Terminer la tâche** .
 
-* **Délégué** - Ouvre la boîte de dialogue **Terminer la tâche** .
+* **Délégué** : ouvre la boîte de dialogue **Terminer la tâche** .
 
-* **Afficher les détails** - Ouvre la fenêtre **Détails** du processus
+* **Afficher les détails** : ouvre la fenêtre **Détails** du workflow
 
-Completing and delegating workflow steps via the notification bar works as it does when [participating in workflows](/help/sites-authoring/workflows-participating.md) from the Notification inbox.
+L’utilisation de la barre de notification pour terminer et déléguer des étapes de workflow fonctionne de la même manière que la [participation à des workflows](/help/sites-authoring/workflows-participating.md) depuis la boîte de réception de notifications.
 
 Si la page est soumise à plusieurs workflows, leur nombre est indiqué à droite de la notification, avec des chevrons, pour vous permettre de les parcourir.
 
@@ -133,7 +136,7 @@ L’espace réservé du composant est un indicateur qui signale où sera positio
 
 Vous pouvez ajouter un nouveau composant à l’aide de l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser). L’[espace réservé du composant](#component-placeholder) indique où le composant va être positionné :
 
-1. Assurez-vous que votre page est en [**mode Édition **](/help/sites-authoring/author-environment-tools.md#page-modes).
+1. Assurez-vous que votre page est en mode [**Édition **](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Ouvrez l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser).
 1. Faites glisser le composant jusqu’à la [position requise](#component-placeholder).
 
@@ -147,20 +150,22 @@ Vous pouvez ajouter un nouveau composant à l’aide de l’[explorateur de comp
 
 Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser les composants ici** du système de paragraphes :
 
-1. Assurez-vous que votre page est en [**mode Édition **](/help/sites-authoring/author-environment-tools.md#page-modes).
+1. Assurez-vous que votre page est en mode [**Édition **](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Pour sélectionner et ajouter un nouveau composant à partir du système de paragraphes, deux méthodes peuvent être utilisées :
 
    * Sélectionnez l’option **Insérer le composant** (+) à partir de la barre d’outils d’un composant existant ou de la zone **Faire glisser les composants ici**.
+
    ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
 
-   * If you are on a desktop device you can double-click on the **Drag components here** box.
+   * Si vous utilisez un ordinateur de bureau, vous pouvez double-cliquer sur la zone **Faire glisser les composants ici**.
+
    La boîte de dialogue **Insérer un nouveau composant** s’affiche pour vous permettre de sélectionner le composant nécessaire :
 
    ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
 
 1. Le composant sélectionné est alors ajouté au bas de la page. [Modifiez](#edit-content) le composant selon les besoins.
 
-### Insertion d’un composant à partir de l’Explorateur de ressources {#inserting-a-component-using-the-assets-browser}
+### Insertion d’un composant à partir de l’Explorateur de ressources    {#inserting-a-component-using-the-assets-browser}
 
 Vous pouvez également ajouter un nouveau composant à la page en faisant glisser un élément depuis l’[explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser). Un nouveau composant du type approprié (et contenant l’élément) est ainsi créé automatiquement.
 
@@ -199,9 +204,9 @@ Ceci est valide pour les types de ressources suivants (certains dépendent du sy
 >
 >Ce comportement peut être configuré pour votre installation. Pour plus d’informations, voir [Configuration d’un système de paragraphes de manière à faire glisser une ressource pour créer une instance de composant](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance).
 
-Pour créer un composant, faites glisser l’un des types de ressource ci-dessus :
+Pour créer un composant en faisant glisser l’un des types de ressources ci-dessus, suivez ces étapes :
 
-1. Assurez-vous que votre page est en [**mode Édition **](/help/sites-authoring/author-environment-tools.md#page-modes).
+1. Assurez-vous que votre page est en mode [**Édition **](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Ouvrez l’[explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser).
 1. Faites glisser la ressource jusqu’à la position requise. L’[espace réservé du composant](#component-placeholder) indique où le composant va être positionné.
 
@@ -227,13 +232,13 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
 * **Modifier**
 
-   [Selon le type](/help/sites-authoring/default-components.md) de composant, cela vous permettra de [modifier le contenu du composant](#edit-content). Une barre d’outils est souvent disponible.
+   [En fonction du type de composant](/help/sites-authoring/default-components.md), vous pouvez [en modifier le contenu](#edit-content). Une barre d’outils est souvent disponible.
 
    ![](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configurer**
 
-   [Selon le type](/help/sites-authoring/default-components.md) de composant, vous pourrez modifier et configurer les propriétés du composant. En général, une boîte de dialogue s’ouvre.
+   [En fonction du type de composant](/help/sites-authoring/default-components.md), vous pouvez modifier et configurer ses propriétés. En général, une boîte de dialogue s’ouvre.
 
    ![](do-not-localize/screen_shot_2018-03-22at112955.png)
 
@@ -268,6 +273,7 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
    * Vous pouvez coller le composant sur la même page ou sur une autre.
    * L’élément est collé au-dessus de celui dans lequel vous sélectionnez l’opération de collage.
    * L’opération de collage ne s’affiche que s’il y a du contenu dans le presse-papiers.
+
    ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
    >[!NOTE]
@@ -305,7 +311,7 @@ Deux méthodes permettent d’ajouter et/ou de modifier le contenu dans les comp
 * Ouvrez la [boîte de dialogue de composant pour l’édition](#component-edit-dialog).
 * [Faites glisser et déposez un élément](#inserting-a-component-using-the-assets-browser) depuis l’explorateur de ressources pour ajouter directement du contenu.
 
-### Boîte de dialogue d’édition de composant {#component-edit-dialog}
+### Boîte de dialogue d’édition de composant    {#component-edit-dialog}
 
 Vous pouvez ouvrir un composant pour modifier le contenu à l’aide de l’[icône Modifier (crayon) de la barre d’outils Composant](#edit-configure-copy-cut-delete-paste).
 
@@ -350,7 +356,7 @@ Pour certains types de composants, vous pouvez faire glisser et déposer des él
 
 ## Modifier (contenu) – Mode Plein écran {#edit-content-full-screen-mode}
 
-Pour tous les composants, vous pouvez accéder au mode plein écran (ou le quitter) avec :
+Pour tous les composants, vous pouvez accéder au mode Plein écran (ou le quitter) avec :
 
 ![](do-not-localize/chlimage_1-20.png)
 
@@ -379,13 +385,13 @@ Pour déplacer un composant de paragraphe :
 
 ## Modification de la mise en page du composant {#edit-component-layout}
 
-Plutôt que de passer de manière répétée du mode d’édition au [mode de disposition](/help/sites-authoring/responsive-layout.md) pour ajuster un composant, vous pouvez sélectionner l’action **Disposition** d’un composant pour modifier sa disposition et gagner du temps en n’ayant pas à quitter le mode d’édition.
+Au lieu de basculer à plusieurs reprises entre les modes d’édition et de [mise en page](/help/sites-authoring/responsive-layout.md) pour ajuster un composant, vous pouvez sélectionner l’action **Mise en page** pour un composant afin d’en modifier la mise en page. Cela vous évite de devoir quitter le mode d’édition, ce qui se traduit par un gain de temps.
 
-1. When in **Edit** mode of the sites console, selecting a component reveals the component&#39;s toolbar.
+1. Lorsque le mode **Édition** de la console Sites est actif, la sélection d’un composant déclenche l’affichage de sa barre d’outils.
 
    ![screen_shot_2018-03-22at133756](assets/screen_shot_2018-03-22at133756.png)
 
-   Click or tap the **Layout** action to adjust the layout of the component.
+   Cliquez ou appuyez sur l’action **Mise en page** pour ajuster la mise en page du composant.
 
    ![](do-not-localize/chlimage_1-21.png)
 
@@ -394,17 +400,18 @@ Plutôt que de passer de manière répétée du mode d’édition au [mode de di
    * Les poignées de redimensionnement du composant s’affichent.
    * La barre d’outils de l’émulateur est affichée en haut de l’écran.
    * Les actions de mise en page sont affichées dans la barre d’outils du composant, au lieu des actions d’édition standard.
+
    ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
 
-   You can now modify the layout of the component as you would in [layout mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
+   Vous pouvez à présent modifier la mise en page du composant, comme vous le feriez dans le [mode de mise en page](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
-1. After making the necessary layout changes, click the **Close** button in the component action menu to stop modifying the layout of the component. La barre d’outils du composant revient à son état d’édition normal.
+1. Après avoir effectué les modifications nécessaires au niveau de la mise en page, cliquez sur le bouton **Fermer** dans le menu des actions du composant pour arrêter la session de modification. La barre d’outils du composant revient à son état d’édition normal.
 
    ![](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
->L’action de mise en page est limitée au composant sélectionné. Par exemple, si vous modifiez la mise en page d’un composant puis cliquez sur un autre composant, la barre d’outils de modification standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné et les poignées de redimensionnement ainsi que la barre d’outils de l’émulateur disparaissent.
+>L’action de mise en page est limitée au composant sélectionné. Par exemple, si vous modifiez la mise en page d’un composant, puis cliquez sur un autre composant, la barre d’outils de modification standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné et les poignées de redimensionnement ainsi que la barre d’outils d’émulateur disparaissent.
 >
 >Si vous devez modifier la mise en page globale de la page et affecter ainsi plusieurs composants, basculez vers le [mode de mise en page](/help/sites-authoring/responsive-layout.md).
 
@@ -448,7 +455,7 @@ Si la page est basée sur un [modèle modifiable](/help/sites-authoring/template
 
 If the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates), you can switch to [Design mode](/help/sites-authoring/default-components-designmode.md) using the [page mode selector](/help/sites-authoring/author-environment-tools.md#page-modes) on the toolbar to enable/disable components for use on the page.
 
-Vous pouvez facilement voir sur quel modèle se base la page lors de la sélection de la page en mode [Colonnes](/help/sites-authoring/basic-handling.md#column-view) ou [Liste](/help/sites-authoring/basic-handling.md#list-view).
+Vous pouvez déterminer facilement le modèle sur lequel la page est basée en sélectionnant cette dernière en mode [Colonnes](/help/sites-authoring/basic-handling.md#column-view) ou [Liste](/help/sites-authoring/basic-handling.md#list-view).
 
 ## État de Live Copy {#live-copy-status}
 
@@ -465,7 +472,7 @@ Par exemple :
 
 Les [Annotations](/help/sites-authoring/annotations.md) permettent aux réviseurs et aux autres créateurs de fournir des commentaires sur votre contenu. Elles sont souvent utilisées à des fins de révision et de validation.
 
-## Aperçu des pages {#previewing-pages}
+## Aperçu des pages    {#previewing-pages}
 
 Deux options sont disponibles pour prévisualiser une page :
 
@@ -477,7 +484,8 @@ Deux options sont disponibles pour prévisualiser une page :
 >
 >* Les liens dans le contenu sont visibles, mais inaccessibles en mode Édition.
 >* Si vous souhaitez naviguer à l’aide des liens, utilisez l’une des options d’aperçu.
->* Use the [keyboard shortcut](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` to switch between preview and the last selected mode.
+>* Utilisez le [raccourci clavier](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` pour basculer entre le mode Aperçu et le dernier mode sélectionné.
+
 >
 
 
@@ -498,7 +506,7 @@ Lors de la création, le mode Aperçu est accessible par l’intermédiaire de l
 
 ![chlimage_1-248](assets/chlimage_1-248.png)
 
-### Afficher comme publié(e){#view-as-published}
+### Afficher comme publié(e) {#view-as-published}
 
 L’option **Afficher comme publié(e)** est disponible dans le menu [Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information). La page s’affiche sur un nouvel onglet, actualise le contenu et affiche la page telle qu’elle se présentera dans l’environnement de publication.
 
@@ -512,6 +520,7 @@ Il est possible de verrouiller une page depuis :
 
    1. Sélectionnez la page à l’aide du [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Sélectionnez l’icône de verrou.
+
    ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **Éditeur de page**
@@ -531,9 +540,9 @@ Une fois la page verrouillée, les informations d’affichage de la console sont
 
 ## Déverrouillage d’une page {#unlocking-a-page}
 
-Unlocking a page is very similar to [locking the page](#locking-a-page). Once the page is locked the lock options are replaced by unlock actions.
+Le déverrouillage d’une page est une procédure très similaire au [verrouillage de la page](#locking-a-page) : une fois la page verrouillée, les options de verrouillage sont remplacées par des actions de déverrouillage.
 
-Le menu Informations sur la page répertorie **Déverrouiller** en tant qu’option et l’icône de verrouillage de la console Sites est remplacée par une icône de **déverrouillage**.
+Dans le menu Informations sur la page, **Déverrouiller** est répertorié comme une option et l’icône Verrouiller dans la console Sites est remplacée par l’icône **Déverrouiller**.
 
 ![screen_shot_2018-03-22at134942](assets/screen_shot_2018-03-22at134942.png)
 
@@ -543,7 +552,7 @@ Le menu Informations sur la page répertorie **Déverrouiller** en tant qu’opt
 >
 >Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur qui les a verrouillées.
 
-## Undoing and Redoing Page Edits {#undoing-and-redoing-page-edits}
+## Annulation et rétablissement des modifications de page {#undoing-and-redoing-page-edits}
 
 Les icônes suivantes permettent d’annuler ou de rétablir une opération. Celles-ci s’affichent dans la barre d’outils le cas échéant :
 
@@ -557,9 +566,9 @@ Les icônes suivantes permettent d’annuler ou de rétablir une opération. Cel
 
 >[!NOTE]
 >
->Voir [Annulation et rétablissement des modifications de page – Théorie](#undoing-and-redoing-page-edits-the-theory) pour en savoir plus sur ce qu’il est possible de faire lorsque vous annulez ou rétablissez des modifications de page.
+>Voir [Annulation et rétablissement des modifications de page : la théorie](#undoing-and-redoing-page-edits-the-theory) pour en savoir plus sur ce qu’il est possible de faire lorsque vous annulez ou rétablissez des modifications de page.
 
-## Undoing and Redoing Page Edits - The Theory {#undoing-and-redoing-page-edits-the-theory}
+## Annulation et rétablissement des modifications de page : la théorie {#undoing-and-redoing-page-edits-the-theory}
 
 >[!NOTE]
 >
@@ -578,6 +587,7 @@ Les commandes Annuler et Rétablir fonctionnent de la même manière que dans le
 >* Rétablir des opérations pour autant qu’aucune modification de page n’ait été effectuée depuis la dernière utilisation de la commande Annuler.
 >* Annuler jusqu’à 20 opérations de modification (paramètre par défaut).
 >* Vous pouvez également utiliser les [raccourcis clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) pour annuler et rétablir des opérations.
+
 >
 
 
