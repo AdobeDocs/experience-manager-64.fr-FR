@@ -10,6 +10,9 @@ topic-tags: integrations
 discoiquuid: 6301e0ef-3faa-4e6f-932d-37b049577cec
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '1542'
+ht-degree: 83%
 
 ---
 
@@ -26,7 +29,7 @@ AEM Forms s’intègre à Adobe Analytics, ce qui permet la capture et le suivi 
 
 ## Présentation {#overview}
 
-Vous pouvez utiliser Adobe Analytics pour identifier les schémas et les problèmes d’interaction auxquels sont confrontés les utilisateurs lorsqu’ils utilisent des formulaires adaptatifs, des formulaires HTML5 et des communications interactives. Adobe Analytics effectue le suivi et stocke des informations sur les paramètres suivants :
+Vous pouvez utiliser Adobe Analytics pour identifier les schémas et les problèmes d’interaction auxquels sont confrontés les utilisateurs lorsqu’ils utilisent des formulaires adaptatifs, des formulaires HTML5 et des communications interactives. L’analyse des Adobes effectue le suivi et stocke des informations sur les paramètres suivants :
 
 * **Durée moyenne de remplissage** : temps moyen passé au remplissage du formulaire.
 * **Rendus** : nombre de fois qu’un formulaire est ouvert.
@@ -74,7 +77,7 @@ Procédez comme suit pour créer une suite de rapports.
 1. Sélectionnez la nouvelle suite de rapports. Cliquez sur **Modifier les paramètres** > **Général** > **Paramètres du compte général**.
 
    ![Paramètres du compte général](assets/geographic_settings.png)
-   **** Figure : Paramètres *généraux du compte*
+   **Figure :** *Paramètres généraux du compte*
 
 1. In General Account Settings screen, enable **Geography Reporting**, and click **Save**.
 1. Cliquez sur **Modifier les paramètres** > **Trafic** > **Variables de trafic**.
@@ -114,7 +117,7 @@ Procédez comme suit pour créer une suite de rapports.
 
 La configuration du service Cloud rassemble les informations sur votre compte Adobe Analytics. Elle permet à Adobe Experience Manager (AEM) de se connecter à Adobe Analytics. Créez une configuration distincte pour chaque compte Analytics que vous utilisez.
 
-1. Connectez-vous à votre instance de création AEM en tant qu’administrateur.
+1. Connectez-vous à votre instance d’auteur en tant qu’administrateur AEM.
 1. In the top-left corner, click **Adobe Experience Manager** > **Tools** ![tools](assets/tools.png)> **Deployment** > **Cloud Services**.
 1. Recherchez l’icône **Adobe Analytics**. Click **Show Configurations** and then proceed to click **[+]** to add new configuration.
 
@@ -143,7 +146,7 @@ Un cadre Adobe Analytics est un ensemble de mappages entre les variables Adobe A
 1. Click the **[+]** link next to next to your Analytics configuration.
 
    ![Configuration d’Adobe Analytics](assets/adobe-analytics-cloud-services.png)
-   **** Figure : Configuration *d’Adobe Analytics*
+   **Figure :** *Configuration d’Adobe Analytics*
 
 1. Saisissez un **titre** et un **nom** pour le cadre, sélectionnez le cadre **Adobe Analytics**, puis cliquez sur **Créer**. La structure s’ouvre en vue de la modification.
 
@@ -163,10 +166,10 @@ Un cadre Adobe Analytics est un ensemble de mappages entre les variables Adobe A
 ## Configuration du service de configuration d’AEM Forms Analytics {#configuring-aem-forms-analytics-configuration-service}
 
 1. On author instance, open AEM Web Console Configuration manager at https://&lt;*server*>:&lt;*port*>/system/console/configMgr.
-1. Localisation et ouverture de la configuration Analytics d’AEM Forms
+1. Localisation et ouverture de la configuration AEM Forms Analytics
 
    ![Service de configuration d’AEM Forms Analytics](assets/analytics_configuration.png)
-   **** Figure : Service de configuration *AEM Forms Analytics*
+   **Figure :** *Service de configuration AEM Forms Analytics*
 
 1. Indiquez les valeurs appropriées pour les champs suivants, puis cliquez sur **Enregistrer**.
 
@@ -174,9 +177,10 @@ Un cadre Adobe Analytics est un ensemble de mappages entre les variables Adobe A
    * **Ligne de base de suivi du temps passé sur le champ** : spécifiez la durée en secondes après laquelle un suivi doit être effectué sur la visite du champ. La valeur par défaut est 0. Lorsque la valeur est supérieure à 0 (zéro), deux événements de suivi distincts sont envoyés au serveur Adobe Analytics. Le premier événement demande au serveur d’analyse de cesser de suivre le champ désactivé. Le deuxième événement est envoyé après l’écoulement de la durée spécifiée. Le deuxième événement demande au serveur d’analyse de commencer le suivi du champ activé. L’utilisation de deux événements distincts permet de mesurer exactement le temps passé dans un champ. Lorsque la valeur est définie sur 0 (zéro), l’événement de suivi unique est envoyé au serveur Adobe Analytics.
    * **Expression cron de synchronisation des rapports d’analyse** : spécifiez l’expression cron pour récupérer les rapports d’Adobe Analytics. La valeur par défaut est 0 0 2 ?.
    * **Délai de rapport d’extraction :** spécifiez la durée, en secondes, à attendre pour que le serveur réponde au rapport d’analyse. La valeur par défaut est de 120 secondes.
+
    >[!NOTE]
    >
-   >Il peut s’écouler jusqu’à 10 secondes de plus avant que l’opération de récupération du rapport d’expiration ne soit lue, alors que le nombre de secondes spécifié est dépassé.
+   >Le délai d’attente peut prendre jusqu’à 10 secondes de plus pour que l’opération de récupération du rapport soit exécutée, puis le nombre de secondes spécifié.
 
 1. Répétez l’étape 1-3 sur l’instance à publier pour configurer les analyses.
 
@@ -188,9 +192,9 @@ Désormais, vous pouvez activer les analyses pour les formulaires et générer u
 1. Cliquez sur **Formulaires > Formulaires &amp; Documents**, sélectionnez un formulaire ou un document, puis cliquez sur **Activer les analyses**. Les analyses sont activées.
 
    ![Activation des analyses pour un formulaire ou un document](assets/enable-analytics-1.png)
-   **** Figure : *Activation des analyses pour un formulaire*
+   **Figure :** *Activation des analyses pour un formulaire*
 
-   ******A. Bouton** B Activation d’Analytics. Formulaire sélectionné
+   **A.** Bouton Activer Analytics **B.** Formulaire sélectionné
 
    For detailed information on viewing forms analytics reports, see [Viewing and understanding AEM Forms analytics reports](/help/forms/using/view-understand-aem-forms-analytics-reports.md)
 
