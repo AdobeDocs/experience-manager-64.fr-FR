@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 64%
 
 ---
 
@@ -34,7 +37,7 @@ L’API requiert les paramètres suivants.
 | Paramètre | Description |
 |---|---|
 | `operationInfo` | Structure permettant de spécifier l’identifiant du modèle de données de formulaire, le titre de l’opération et le nom de l’opération |
-| `inputs` | Structure permettant de spécifier les objets de formulaire dont les valeurs sont saisies dans l’opération de service |
+| `inputs` | Structure permettant de spécifier les objets de formulaire dont les valeurs sont entrées dans l’opération de service |
 | `outputs` | Structure permettant de spécifier les objets de formulaire qui seront renseignés avec les valeurs renvoyées par l’opération de service |
 
 The structure of the `guidelib.dataIntegrationUtils.executeOperation` API specifies details about the service operation. La syntaxe de la structure se présente comme suit.
