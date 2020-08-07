@@ -11,6 +11,9 @@ topic-tags: introduction
 discoiquuid: b891009b-d3b1-402a-920a-014366f342f0
 translation-type: tm+mt
 source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+workflow-type: tm+mt
+source-wordcount: '3313'
+ht-degree: 94%
 
 ---
 
@@ -28,7 +31,7 @@ Pour vous aider, les meilleures pratiques se composent des éléments suivants 
 
 * La documentation, fondée directement sur la [liste de contrôle](/help/managing/best-practices-checklist.md), qui décrit :
 
-   * [Analyse Project Heartbeat](#project-heartbeat-dashboard) .
+   * [analyse Project Heartbeat](#project-heartbeat-dashboard) .
    * [Présentation du statut par rôle](#status-by-role) .
    * les [phases et jalons](#phases-and-milestones).
    * le [personnage principal](#persona) et sa participation à chaque étape (appropriée).
@@ -194,6 +197,7 @@ La planification du développement est essentielle pour vous assurer que votre p
 
    * la façon dont elles interagiront les unes avec les autres et avec les utilisateurs ;
    * les données à consommer et générées par les applications, plutôt que leur structure interne.
+
    Les définitions doivent englober :
 
    * la structure du code de base pour le projet ;
@@ -209,7 +213,7 @@ La planification du développement est essentielle pour vous assurer que votre p
    Pour l’intégration système, vous devez prévoir (et ensuite implémenter) :
 
    * la façon dont tous les sous-systèmes et [intégrations de solutions](/help/sites-administering/integration.md) seront assemblés pour fonctionner comme un système cohérent ;
-   * Comment les systèmes tiers seront-ils intégrés? ainsi que toutes les considérations spéciales, telles que la gestion hors ligne/en ligne, côté client/côté navigateur ou la gestion du basculement lorsqu’un système tiers est hors service
+   * Comment les systèmes tiers seront-ils intégrés ? ainsi que toutes les considérations spéciales, telles que la gestion hors ligne/en ligne, côté client/côté navigateur ou la gestion du basculement lorsqu’un système tiers est hors service
 
 * **Concept de test**
 
@@ -233,7 +237,7 @@ La planification du développement est essentielle pour vous assurer que votre p
 
    Avant le développement, tous les processus de support, nécessaires pour déployer, publier, tester et signaler les problèmes doivent être en place.
 
-   Voir aussi le [portail d’assistance d’Adobe](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+   Voir aussi le [portail d’assistance d’Adobe](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
 
 ### Les opérations et leur planification {#operations-planning-and-operations}
 
@@ -251,6 +255,7 @@ De la même façon, les opérations doivent être correctement planifiées de ma
    * Definition of the use of privileges that impact the publish environment; for example, `replicate`
    * Pour les utilisateurs qui disposent de privilèges minimaux, les processus doivent être définis
    * Users in the `editor` group should not have `admin` rights nor be part of the `administrators` group
+
    For more information, see [User Administration and Security](/help/sites-administering/security.md).
 
 * **Surveillance et maintenance**
@@ -259,6 +264,7 @@ De la même façon, les opérations doivent être correctement planifiées de ma
 
    * ce qui doit être surveillé ;
    * les tâches de maintenance, aussi bien la maintenance standard que les cas spéciaux.
+
    Voir également [Surveillance et maintenance](/help/sites-deploying/monitoring-and-maintaining.md) pour plus d’informations.
 
 * **Migration**
@@ -285,7 +291,7 @@ Le développement est une étape essentielle nécessitant plus qu’un simple co
          * un système de suivi des problèmes, comme Jira ;
          * un environnement de développement intégré (IDE), comme Eclipse ;
          * un outil de gestion des compilations, comme Maven ;
-         * un outil d&#39;intégration continue; comme Jenkins
+         * un outil d&#39;intégration continue ; tels que Jenkins
          * un outil pour le contrôle de version, comme GIT/SVN ;
          * un gestionnaire de référentiel des artefacts de compilation, comme Archiva/Nexus ;
    * les dépendances/l’intégration des logiciels tiers ;
@@ -358,6 +364,7 @@ Une fois la nouvelle application disponible, elle doit subir des tests stricts, 
 
    * la solution remplit les exigences des utilisateurs/clients ;
    * les clients/utilisateurs acceptent la solution (fonction, conception et performances) ;
+
    Il doit exister une liste de contrôle formalisée pour la remise au client, idéalement automatisée et exécutée la nuit sur un instantané. Les résultats doivent être envoyés au chef de projet et à l’équipe de développement.
 
 * **Tests de performance et de charge**
@@ -369,6 +376,7 @@ Une fois la nouvelle application disponible, elle doit subir des tests stricts, 
    * [Test de performance](/help/sites-deploying/configuring-performance.md)
    * [Planification et exécution des tests](/help/sites-developing/planning.md)
    * [Consignes de performances de base](/help/sites-deploying/configuring-performance.md#basic-performance-guidelines)
+
    >[!NOTE]
    >
    >Ce processus doit être poursuivi pendant l’utilisation normale d’AEM, mais ces étapes initiales sont les plus cruciales.
@@ -593,7 +601,7 @@ Pour connaître les meilleures pratiques de déploiement, d’administration, de
 
 * Documentation AEM
 
-   En outre, les sections suivantes de la documentation AEM présentent un intérêt particulier (cette liste n’est toutefois pas exhaustive) :
+   En outre, les sections suivantes de la documentation AEM présentent un intérêt particulier (cette liste n&#39;est toutefois pas exhaustive) :
 
    * [Sécurité](/help/sites-developing/security.md)
    * [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md)
@@ -602,7 +610,7 @@ Pour connaître les meilleures pratiques de déploiement, d’administration, de
    * Concepts AEM :
       * [Développement – les principes de base](/help/sites-developing/the-basics.md)
       * [Concepts MSM](/help/sites-administering/msm.md)
-      * [Langage de modèle HTML (HTL)](https://helpx.adobe.com/experience-manager/htl/user-guide.html)
+      * [Langage de modèle HTML (HTL)](https://helpx.adobe.com/fr/experience-manager/htl/user-guide.html)
 
 * Documentation connexe
-   * Adobe Experience Cloud – [Planification pour Adobe Experience Cloud](https://helpx.adobe.com/marketing-cloud/how-to/planning.html)
+   * Adobe Experience Cloud – [Planification pour Adobe Experience Cloud](https://helpx.adobe.com/fr/marketing-cloud/how-to/planning.html)
