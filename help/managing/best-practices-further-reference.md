@@ -359,7 +359,7 @@ Avant de discuter des mesures relatives, une définition rapide des termes :
    |---|---|---|
    | Client | Puissance de calcul de l’ordinateur de l’utilisateur. | Complexité de la mise en page. |
    | Réseau | Bande passante réseau. | Taille de la page (code, images, etc.). |
-   | Cache Dispatcher | Mémoire serveur du serveur Web (mémoire principale et disque dur). | Serveur Web (mémoire principale et disque dur). Nombre et taille des pages mises en cache. |
+   | Cache du répartiteur | Mémoire serveur du serveur Web (mémoire principale et disque dur). | Serveur Web (mémoire principale et disque dur). Nombre et taille des pages mises en cache. |
    | Cache de sortie | Mémoire serveur du serveur AEM (mémoire principale et disque dur). | Nombre et taille des pages du cache de sortie, nombre de dépendances par page. Le cache du Dispatcher réduit ce volume. |
    | Serveur web | Puissance de calcul du serveur Web. | Nombre de demandes. La mise en cache réduit ce volume. |
    | Template (Modèle) | Puissance de calcul du serveur Web. | Complexité des modèles. |
@@ -527,7 +527,7 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>AEM fournit lui-même une gamme de mécanismes pour vous aider à surveiller, tester, étudier et déboguer votre application ; y compris :</p>
+   <td><p>AEM fournit une gamme de mécanismes pour vous aider à surveiller, tester, rechercher et déboguer votre application ; y compris :</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Mode Développeur</a></li>
      <li>La console <a href="/help/sites-developing/hobbes.md">Tests</a></li>
@@ -562,7 +562,7 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>Un IDE professionnel (et donc susceptible de supporter les coûts de licence) offrant une gamme complète de fonctionnalités. </p> <p>Voir <a href="/help/sites-developing/ht-intellij.md">Comment développer des projets AEM à l’aide d’IntelliJ IDEA</a> pour plus d’informations.</p> </td>
+   <td><p>Un IDE professionnel (et donc susceptible de supporter les coûts de licence) offrant une gamme complète de fonctionnalités. </p> <p>Voir <a href="/help/sites-developing/ht-intellij.md">Comment développer des projets AEM à l'aide d'IntelliJ IDEA</a> pour plus d'informations.</p> </td>
   </tr>
   <tr>
    <td>Maven</td>
