@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '9242'
 ht-degree: 64%
@@ -305,7 +305,10 @@ Effectuez les étapes suivantes pour expérimenter la création d’un test A/B 
 1. Ouvrez maintenant le formulaire dans le navigateur Chrome plusieurs fois à l’aide de l’URL suivante :
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
-   >[!NOTE] Supprimez le cookie nommé **mbox** de la liste de persistance des cookies dans le navigateur avant d’ouvrir le formulaire la fois suivante. Vous voyez l’expérience A et B du formulaire de manière aléatoire.
+
+   >[!NOTE]
+   >
+   >Supprimez le cookie nommé **mbox** de la liste de persistance des cookies dans le navigateur avant d’ouvrir le formulaire la fois suivante. Vous voyez l’expérience A et B du formulaire de manière aléatoire.
 
 1. Sélectionnez le formulaire, cliquez sur **Plus**, et cliquez sur **Rapport de test A/B**. Vous ne trouverez pas beaucoup de données dans le rapport car vous venez de démarrage du test. Ajoutons maintenant quelques données sources pour voir à quoi ressemble le rapport de test A/B.
 
@@ -552,13 +555,19 @@ Effectuez les étapes suivantes dans l’instance d’auteur pour expérimenter 
 1. Ouvrez maintenant le formulaire dans le navigateur Chrome plusieurs fois à l’aide de l’URL suivante :
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
-   >[!NOTE] Supprimez le cookie nommé **mbox** de la liste de persistance des cookies dans le navigateur avant d’ouvrir le formulaire la fois suivante. Vous voyez l’expérience A et B du formulaire de manière aléatoire.
+
+   >[!NOTE]
+   >
+   >Supprimez le cookie nommé **mbox** de la liste de persistance des cookies dans le navigateur avant d’ouvrir le formulaire la fois suivante. Vous voyez l’expérience A et B du formulaire de manière aléatoire.
 
 1. Sélectionnez le formulaire, cliquez sur **Plus**, et cliquez sur **Rapport de test A/B**. Vous ne trouverez pas beaucoup de données dans le rapport car vous venez de démarrage du test. Ajoutons maintenant quelques données sources pour voir à quoi ressemble le rapport de test A/B.
 
 1. Ouvrez CRXDE Lite et prenez une copie du fichier suivant : /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Remplacez la définition de la `onReportLoadSuccess` fonction dans le fichier mentionné ci-dessus par la définition de fonction dans le fichier suivant : /apps/we-finance/demo-artifacts/targetreport.js
-   >[!NOTE] Ces modifications sont uniquement à titre de démonstration. Assurez-vous de restaurer le contenu du fichier après avoir terminé cette procédure.
+
+   >[!NOTE]
+   >
+   >Ces modifications sont uniquement à titre de démonstration. Assurez-vous de restaurer le contenu du fichier après avoir terminé cette procédure.
 
 1. Actualisez le rapport que vous avez généré et vous verrez quelque chose qui ressemble à ça : Examinez le tableau de bord de génération de rapports.
 
@@ -891,7 +900,7 @@ Sarah clicks **Renew Now** and is directed to the web version of her auto insura
 
 #### Fonctionnement  {#how-it-works-21}
 
-Les sorties Web et imprimées de votre lettre d&#39;assurance automobile sont créées à l&#39;aide des fonctionnalités multi-canaux d&#39;Interactive Communications. The **Renew Now** button in the email is linked to the auto insurance renew application, which is an interactive communication on a publish instance.
+Les sorties Web et imprimées de votre lettre d&#39;assurance automobile sont créées à l&#39;aide des fonctionnalités multicanaux d&#39;Interactive Communications. The **Renew Now** button in the email is linked to the auto insurance renew application, which is an interactive communication on a publish instance.
 
 ![ic-web-version](assets/ic-web-version.png)
 
@@ -913,7 +922,7 @@ Lorsque Sarah clique sur **Renouveler maintenant** sur la version Web de la comm
 
 #### Fonctionnement  {#how-it-works-22}
 
-Le bouton Renouveler maintenant dirige Sarah vers la page de paiement. La page de paiement est un formulaire adaptatif. Sarah remplit les détails de la carte de crédit et clique sur **Envoyer**. Son paiement par carte de crédit est traité et un message de remerciement configuré dans le formulaire adaptatif s’affiche à l’écran.
+  Sarah remplit les détails de la carte de crédit et clique sur **Envoyer**. Son paiement par carte de crédit est traité et un message de remerciement configuré dans le formulaire adaptatif s’affiche à l’écran.
 
 #### Démonstration  {#see-it-yourself-20}
 
