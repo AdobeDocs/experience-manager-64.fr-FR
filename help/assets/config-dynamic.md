@@ -8,7 +8,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '7833'
 ht-degree: 54%
@@ -58,7 +58,7 @@ Les tâches de configuration suivantes font référence aux termes suivants :
 | **Terme** | **Contenu multimédia dynamique activé** | **Description** |
 |---|---|---|
 | Noeud d’auteur AEM | Coche blanche dans un cercle vert | Noeud d’auteur que vous déployez sur site ou via Managed Services. |
-| AEM noeud de publication | &quot;X&quot; blanc dans un carré rouge. | Noeud de publication que vous déployez sur site ou via Managed Services. |
+| aem noeud de publication | &quot;X&quot; blanc dans un carré rouge. | Noeud de publication que vous déployez sur site ou via Managed Services. |
 | Noeud de publication Image Service | Coche blanche en cercle vert. | Noeud de publication que vous exécutez sur les centres de données gérés par Adobe. Renvoie à l’URL du service d’images. |
 
 Vous pouvez choisir d’implémenter Dynamic Media uniquement pour les images, uniquement pour les vidéos ou à la fois pour les images et les vidéos. Pour déterminer les étapes à suivre pour configurer Dynamic Media pour votre scénario, reportez-vous au tableau suivant.
@@ -156,7 +156,7 @@ Pour activer Dynamic Media, vous devez activer le mode d’exécution Dynamic Me
 
    Si vous publiez vers s7 diffusion, vous devez également inclure les arguments TrustStore suivants :
 
-   ```
+   ```shell
    -Djavax.net.ssl.trustStore=<absoluteFilePath>/customerTrustStoreFileName>
    
     -Djavax.net.ssl.trustStorePassword=<passwordForTrustStoreFile>
@@ -604,7 +604,7 @@ Les propriétés des paramètres prédéfinis sont les suivantes :
 * **[!UICONTROL trackingNamespace]**
 * **[!UICONTROL marketingCloudOrgId]** (non présent dans les anciennes versions AEM)
 
-AEM 6.4 et les versions plus récentes enregistrent ce paramètre prédéfini à l’adresse `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
+aem 6.4 et les versions plus récentes enregistrent ce paramètre prédéfini à l’adresse `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
 ## Réplication des paramètres de catalogue {#replicating-catalog-settings}
 
@@ -765,7 +765,7 @@ Pour personnaliser les filtres de ressources pour la réplication (facultatif) 
  <tbody> 
   <tr> 
    <td><strong>Caractère à utiliser</strong></td> 
-   <td><strong>filtres des ressources pour la réplication</strong></td> 
+   <td><strong>Filtres des ressources pour la réplication</strong></td> 
   </tr> 
   <tr> 
    <td>*</td> 
@@ -1057,7 +1057,7 @@ Une fois que vous avez installé le Feature Pack, vous devez configurer les pro
       <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td> 
       <td>Chaîne</td> 
       <td>relative</td> 
-      <td><p>Indique le mode de rendu. Acceptable values are: <strong>perceptual, relative, saturation, absolute. </strong><i></i>Adobe recommande <strong>relative </strong><i></i>comme valeur par défaut.</p> </td> 
+      <td><p>Indique le mode de rendu. Acceptable values are: <strong>perceptual, relative, saturation, absolute. </strong><i></i>adobe recommande <strong>relative </strong><i></i>comme valeur par défaut.</p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -1079,7 +1079,7 @@ Une fois que vous avez installé le Feature Pack, vous devez configurer les pro
       <tr> 
       <td>AdobeRGB</td> 
       <td>RVB</td> 
-      <td>Adobe RGB (1998)</td> 
+      <td>adobe rgb (1998)</td> 
       </tr> 
       <tr> 
       <td>AppleRGB</td> 
