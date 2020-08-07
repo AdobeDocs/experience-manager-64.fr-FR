@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 7c39383b-b430-40a1-9bcb-f5aaccb616ad
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 78%
 
 ---
 
@@ -32,7 +35,7 @@ Pour modifier le schéma de métadonnées :
 1. En mode Création, sous Experience Manager, cliquez sur **[!UICONTROL Outils > Actifs > Schémas de métadonnées]**.
 1. Dans la page Formulaires de schéma, accédez à **[!UICONTROL Formulaires > Formulaires créés dans AEM]**.
 
-   L’URL de la page est :
+   L&#39;URL de la page est :
 
    ```
    https://<hostname>:<port>/mnt/overlay/dam/gui/content/metadataschemaeditor/
