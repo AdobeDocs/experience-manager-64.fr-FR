@@ -10,7 +10,7 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1702'
 ht-degree: 80%
@@ -125,7 +125,9 @@ Voici une présentation de la procédure de mise à niveau d’un serveur LiveCy
 
       Si vous créez une nouvelle instance de la base de données, importez les données sauvegardées à l’étape 3 dans la base de données. Pour plus d’informations sur l’importation de données dans une base de données, voir la documentation du fournisseur de base de données correspondant.
 
-      >[!NOTE] Si vous utilisez le format de persistance RDBMK, utilisez une base de données unique pour la persistance du référentiel et les services de document s’exécutant sur AEM Forms on JEE.
+      >[!NOTE]
+      >
+      >Si vous utilisez le format de persistance RDBMK, utilisez une base de données unique pour la persistance du référentiel et les services de document s’exécutant sur AEM Forms on JEE.
 
 
 1. Mettre à niveau :
@@ -133,17 +135,23 @@ Voici une présentation de la procédure de mise à niveau d’un serveur LiveCy
    1. Installez AEM 6.4 Forms on JEE sur un nouveau serveur en exécutant le programme d’installation. Le programme d’installation place tous les fichiers requis sur votre ordinateur dans une même arborescence d’installation.
    1. Une fois l’installation terminée, exécutez **Configuration Manager** pour configurer divers modules AEM Forms et définir les configurations appropriées. Avec la configuration des paramètres, il permet de spécifier le chemin du stockage de données global (GDS) et le référentiel crx.
 
-      >[!NOTE] Dans l’écran Sélection de la Tâche de mise à niveau, sélectionnez l’option **[!UICONTROL Mettre à niveau à partir de Adobe Experience Manager Forms 6.2.0]** . The **[!UICONTROL Upgrade from Adobe Experience Manager Forms 6.2.0]** option allows the configuration manager to upgrade from LiveCycle ES3 to AEM 6.4 Forms.
+      >[!NOTE]
+      >
+      >On the Upgrade Task Selection screen, select the **[!UICONTROL Upgrade from Adobe Experience Manager Forms 6.2.0]** option. The **[!UICONTROL Upgrade from Adobe Experience Manager Forms 6.2.0]** option allows the configuration manager to upgrade from LiveCycle ES3 to AEM 6.4 Forms.
 
    1. (Non requis pour le module de sécurité des documents AEM Forms) Mettez à niveau et importez le référentiel CRX vers le serveur AEM 6.4 Forms.
 
-      >[!NOTE] Après la mise à niveau du référentiel crx et la migration du contenu, modifiez le mot de passe du compte administrateur. Pour des instructions détaillées, voir [Modification du mot de passe pour un utilisateur existant](/help/sites-administering/granite-user-group-admin.md).
+      >[!NOTE]
+      >
+      >Après la mise à niveau du référentiel crx et la migration du contenu, modifiez le mot de passe du compte administrateur. Pour des instructions détaillées, voir [Modification du mot de passe pour un utilisateur existant](/help/sites-administering/granite-user-group-admin.md).
 1. Effectuez les tâches de post-déploiement pour vérifier les informations d’identification de connexion, configurer les services de document, la gestion de la correspondance, la sécurité des documents, etc. en fonction de votre cas d’utilisation.
 1. Vérifiez que le serveur a été mis à niveau :
 
    Effectuez quelques opérations de routine sur le serveur AEM Forms mis à niveau pour vous assurer que le serveur a été mis à niveau. Vous pouvez remplir et soumettre quelques formulaires migrés ou protéger des documents pour assurer une mise à niveau réussie.
 
-   >[!NOTE] Dans AEM 6.4 Forms, la structure du référentiel crx a changé. Après la mise à niveau vers AEM 6.4 Forms, utilisez les chemins d’accès modifiés pour la personnalisation que vous créez à nouveau. Pour la liste complète des chemins modifiés, voir [Restructuration du référentiel des formulaires dans AEM 6.4](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md).
+   >[!NOTE]
+   >
+   >Dans AEM 6.4 Forms, la structure du référentiel crx a changé. Après la mise à niveau vers AEM 6.4 Forms, utilisez les chemins d’accès modifiés pour la personnalisation que vous créez à nouveau. Pour la liste complète des chemins modifiés, voir [Restructuration du référentiel des formulaires dans AEM 6.4](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md).
 
 **En fonction de votre environnement et de votre serveur d’applications, sélectionnez l’un des documents suivants et suivez les instructions détaillées :**
 
