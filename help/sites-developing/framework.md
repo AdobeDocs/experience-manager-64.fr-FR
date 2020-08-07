@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 54%
@@ -233,14 +233,20 @@ Vous trouverez, ci-après, la description des effets dans le référentiel lors 
 
    A special value for the `cq:movedTo` property is `nirvana`: it is applied when the tag is deleted but cannot be removed from the repository because there are subtags with a `cq:movedTo` that must be kept.
 
-   >[!NOTE]La `cq:movedTo` propriété n’est ajoutée à la balise déplacée ou fusionnée que si l’une de ces conditions est remplie :
+   >[!NOTE]
+   >
+   >La `cq:movedTo` propriété n’est ajoutée à la balise déplacée ou fusionnée que si l’une de ces conditions est remplie :
+   >
    >1. La balise est utilisée dans le contenu (c&#39;est-à-dire qu&#39;elle contient une référence) OU
    >1. La balise a des enfants qui ont déjà été déplacés.
 
 
 * La propriété `cq:backlinks` conserve les références dans l’autre sens ; en d’autres termes, elle conserve la liste de toutes les balises qui ont été déplacées vers la balise B ou fusionnées avec celle-ci. Cela est requis essentiellement pour conserver les propriétés `cq:movedTo` jusqu’à la date de déplacement/fusion/suppression de la balise B ou jusqu’à ce que cette balise soit activée, auquel cas toutes ses balises de lien retour doivent également être activées.
 
->[!NOTE]La `cq:backlinks` propriété n’est ajoutée à la balise déplacée ou fusionnée que si l’une de ces conditions est remplie :
+>[!NOTE]
+>
+>La `cq:backlinks` propriété n’est ajoutée à la balise déplacée ou fusionnée que si l’une de ces conditions est remplie :
+>
 >1. La balise est utilisée dans le contenu (c&#39;est-à-dire qu&#39;elle contient une référence) OU
 >1. La balise a des enfants qui ont déjà été déplacés.
 
