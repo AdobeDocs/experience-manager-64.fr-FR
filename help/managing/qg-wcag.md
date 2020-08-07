@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3cac0e34-7514-48ce-a93b-592bbdbcd252
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1685'
+ht-degree: 92%
 
 ---
 
@@ -23,7 +26,7 @@ AEM a été développé afin d’optimiser la conformité aux consignes sur l’
 
 WCAG 2.0 regroupe un ensemble de consignes et de critères de réussite, qui ne sont pas associés à une technologie particulière, visant à rendre les contenus web plus accessibles aux personnes en situation de handicap. Elles fournissent aux auteurs, aux concepteurs et aux développeurs de contenu web des conseils à suivre afin de s’assurer que les ressources qu’ils produisent sont aussi accessibles que possible pour autant de personnes que possible, quel que soit le handicap qu’elles peuvent avoir ; par exemple, une déficience visuelle, des troubles de l’audition, des difficultés d’apprentissage ou des restrictions liées à l’âge.
 
-Par exemple, la description d’une image (ou de tout autre contenu non textuel) à l’aide de l’attribut `alt` dans le code HTML avantage considérablement les personnes non voyantes ou malvoyantes. The textual description in the `alt` attribute can either be converted into speech output or transmitted to electronic refreshable braille displays.
+Par exemple, la description d’une image (ou de tout autre contenu non textuel) à l’aide de l’attribut `alt` dans le code HTML avantage considérablement les personnes non voyantes ou malvoyantes. La description textuelle dans l’attribut `alt` peut être convertie en sortie vocale ou transmise aux affichages électroniques en braille actualisables.
 
 En outre, WCAG 2.0 peut présenter des avantages pour d’autres bénéficiaires, y compris les personnes qui peuvent être *handicapées par rapport à la situation*, c’est-à-dire les personnes qui, en raison de circonstances telles que la technologie de navigation, la vitesse de la connexion réseau ou l’environnement de navigation, peuvent rencontrer des obstacles similaires à ceux des personnes handicapées.
 
@@ -39,11 +42,11 @@ L’objectif de WCAG 2.0 est de fournir des consignes présentant les caractér
 
 * Sont **testables :**
 
-   Chaque ligne directrice est rédigée de manière à pouvoir être vérifiée objectivement pour s&#39;assurer qu&#39;un groupe d&#39;experts en accessibilité convienne généralement que la ligne directrice a été respectée. L’un des défis des consignes d’accessibilité est que, alors que certaines peuvent être testées par des moyens techniques, d’autres requièrent un jugement humain afin de vérifier si la consigne a été respectée. WCAG 2.0 a été écrit dans le but de réduire la subjectivité de certaines consignes et certains points de contrôle de WCAG 1.0.
+   Chaque ligne directrice est rédigée de façon à pouvoir être vérifiée objectivement afin de s&#39;assurer qu&#39;un groupe d&#39;experts en accessibilité convienne généralement que la ligne directrice a été respectée. L’un des défis des consignes d’accessibilité est que, alors que certaines peuvent être testées par des moyens techniques, d’autres requièrent un jugement humain afin de vérifier si la consigne a été respectée. WCAG 2.0 a été écrit dans le but de réduire la subjectivité de certaines consignes et certains points de contrôle de WCAG 1.0.
 
-* Prise en charge de l’implémentation contextuelle et **prioritaire :**
+* Prise en charge de l’implémentation **hiérarchisée et contextuelle :**
 
-   Comme pour WCAG 1.0, les lignes directrices de WCAG 2.0 se voient attribuer des priorités, en ce qui a trait à l&#39;incidence probable de ne pas suivre une ligne directrice sur un groupe particulier d&#39;utilisateurs ayant une déficience. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, le concept de l’*accessibilité prise en charge* est introduit. Cela permet aux auteurs de prendre des décisions sur la meilleure manière d’utiliser les technologies web qui peuvent ne pas présenter l’accessibilité totale, ou peut exiger des utilisateurs qu’ils disposent de technologies d’assistance et/ou de navigateurs spécifiques, permettant ainsi de tirer profit des fonctions d’accessibilité.
+   Comme dans le cas de WCAG 1.0, les lignes directrices de WCAG 2.0 se voient attribuer des priorités, en ce qui a trait à l&#39;impact probable du fait de ne pas suivre une ligne directrice sur un groupe particulier d&#39;utilisateurs handicapés. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, la notion d’ *accessibilité prise en charge* est introduite. Cela permet aux auteurs de prendre des décisions sur la meilleure manière d’utiliser les technologies web qui peuvent ne pas présenter l’accessibilité totale, ou peut exiger des utilisateurs qu’ils disposent de technologies d’assistance et/ou de navigateurs spécifiques, permettant ainsi de tirer profit des fonctions d’accessibilité.
 
 Ces objectifs ont considérablement influencé la structure de WCAG 2.0.
 
@@ -75,10 +78,10 @@ Ces principes sont parfois indiqués par l’acronyme POUR en anglais (correspon
 
 * Chaque consigne est composée d’un ou de plusieurs **critères de réussite**.
 
-   * Success criteria are written as statements, which are either `True` or `False` for any given web page.
+   * Les critères de réussite sont écrits sous la forme d’instructions, qui sont `True` ou `False` pour n’importe quelle page web donnée.
    * Les critères de réussite peuvent inclure des choix ou encore des exceptions (lorsque les critères de réussite ne doivent pas nécessairement être remplis).
    * Les critères de réussite sont numérotés selon la consigne et le principe parents, de 1.1.1 à 4.1.1. Ils ont également un nom court qui récapitule l’objectif du critère, pour plus de commodité. Par exemple, le critère de réussite 1.1.1 est « alternative non textuelle ».
-   * Success criteria include a list of related **techniques** (described in more detail below).
+   * Les critères de réussite incluent une liste de **techniques** associées (décrites plus en détail ci-dessous).
 
 ## Ressources annexes {#supporting-resources}
 
@@ -90,7 +93,7 @@ WCAG 2.0 est un document stable qui ne changera pas. Toutefois, la plupart de c
 
 * [Présentation de tous les documents relatifs à WCAG 2.0](https://www.w3.org/WAI/intro/wcag.php)
 * [Explication de la manière dont les composants individuels sont liés les uns aux autres](https://www.w3.org/WAI/intro/wcag20)
-* [Questions fréquemment posées concernant WCAG 2.0](https://www.w3.org/WAI/WCAG20/wcag2faq.html)
+* [Questions fréquemment posées concernant WCAG 2.0](https://www.w3.org/WAI/WCAG20/wcag2faq.html);
 
 ### Techniques relatives à WCAG 2.0 {#techniques-for-wcag}
 
@@ -102,7 +105,7 @@ Les **techniques** forment le niveau sous les critères de réussite dans la hi�
 
 Les techniques sont accessibles :
 
-* Par collection (les techniques peuvent être générales ou se rapporter à une technologie ou un format spécifique (HTML, CSS ou script côté client, par exemple), ou
+* par collection (les techniques peuvent être générales ou associées à une technologie ou un format spécifique, comme HTML, CSS ou des scripts côté client) ;
 * à partir des critères de réussite correspondants. Les techniques peuvent s’appliquer à plusieurs critères de réussite.
 
 Chaque technique a un numéro unique, qui fait référence à sa collection. Par exemple, l’une des techniques ARIA est la *technique ARIA2 : identification des champs obligatoires avec la propriété « required »*.
@@ -132,8 +135,8 @@ La page de présentation de chaque critère de réussite fournit des information
 * la finalité du critère de réussite ;
 * des exemples généraux sur la manière dont le critère de réussite peut être rempli ;
 * des ressources connexes (non W3C) sur la façon de remplir le critère de réussite ;
-* Techniques et échecs : exemples spécifiques et détaillés de la manière dont le critère de réussite peut être satisfait (décrits plus en détail ci-dessous)
-* Termes clés - glossaire de termes importants pour comprendre le critère de réussite.
+* des techniques et échecs : exemples spécifiques et détaillés de la façon dont le critère de réussite peut être rempli (décrits plus en détail ci-dessous) ;
+* les termes clés : glossaire des termes importants pour comprendre le critère de réussite.
 
 En voici un exemple : [Présentation du critère de réussite 1.1.1 (« contenu non textuel »)](https://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/text-equiv-all.html).
 
