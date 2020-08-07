@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 58%
@@ -37,7 +37,7 @@ Bien qu’une seule image HDR soit souvent suffisante pour les scènes IBL, AEM�
 
 * **Image** d&#39;Environnement d&#39;éclairage diffus - Ce type d&#39;image doit être une image HDR, mais peut être relativement petite, car l&#39;image sera fortement filtrée avant de l&#39;utiliser pour l&#39;éclairage diffus.
 * **Image** d&#39;Environnement de réflexion : ce type d&#39;image est utilisé pour créer des reflets sur les surfaces d&#39;objet. Il peut s’agir d’une image RVB 8 bits standard d’une taille et d’une résolution permettant d’obtenir la qualité souhaitée et des reflets nets. Si une image HDR est spécifiée, AEM 3D la convertit en RVB 8 bits avant d’utiliser un algorithme propriétaire.
-* **Image** d&#39;Environnement d&#39;arrière-plan - Ce type d&#39;image est utilisé comme arrière-plan. Il peut s’agir d’une image RVB 8 bits standard d’une taille, d’une résolution et d’un niveau de détail appropriés pour l’arrière-plan de la scène. Si une image HDR est spécifiée, AEM 3D la convertit en image RVB 8 bits à l’aide d’un algorithme propriétaire. ``
+* **Image** d&#39;Environnement d&#39;arrière-plan - Ce type d&#39;image est utilisé comme arrière-plan. Il peut s’agir d’une image RVB 8 bits standard. La taille/la résolution/le niveau de détail doivent correspondre aux valeurs souhaitées pour l’arrière-plan de la scène. Si une image HDR est spécifiée, AEM 3D la convertit en image RVB 8 bits à l’aide d’un algorithme propriétaire.
 
 >[!NOTE]
 >
