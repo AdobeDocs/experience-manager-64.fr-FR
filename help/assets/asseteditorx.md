@@ -3,10 +3,10 @@ title: Étendre l’éditeur de fichiers
 description: Découvrez comment étendre les fonctionnalités de l’Éditeur de ressources en utilisant des composants personnalisés.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '701'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ Certains composants d’AEM Assets nécessitent des fonctions JS définies dan
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-Cet exemple charge cette source JavaScript dans `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`).
+The sample loads this JavaScript source in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Feuilles de style supplémentaires {#additional-style-sheets}
 
