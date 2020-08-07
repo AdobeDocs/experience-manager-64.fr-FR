@@ -11,18 +11,21 @@ topic-tags: introduction
 discoiquuid: 13c7e0bd-54af-49f3-9743-075ce6f3314d
 translation-type: tm+mt
 source-git-commit: 40c4631e29093e5425cf0b7bd4bcd543a969bd1e
+workflow-type: tm+mt
+source-wordcount: '500'
+ht-degree: 85%
 
 ---
 
 
 # AEM et les consignes pour l’accessibilité web{#aem-and-the-web-accessibility-guidelines}
 
-De nombreuses motivations sociales, économiques et juridiques peuvent vous inciter à vous assurer que votre contenu web est conçu de façon à être aussi accessible que possible au public cible, quels que soient son handicap ou ses limitations. Par conséquent, l’accessibilité web est un aspect de plus en plus important d’une bonne conception web.
+De nombreuses motivations sociales, économiques et juridiques peuvent vous inciter à vous assurer que votre contenu web est conçu de façon à être aussi accessible que possible au public cible, quelles que soient ses situations de handicap ou ses limitations. Par conséquent, l’accessibilité web est un aspect de plus en plus important d’une bonne conception web.
 
 Création de sites web et de contenus accessibles avec un impact AEM :
 
-* Les administrateurs sont chargés de configurer Adobe Experience Manager (AEM) pour assurer que les fonctions d’accessibilité sont correctement activées.
-* Les auteurs utilisent ces fonctionnalités pour créer des sites Web qui prennent en charge les directives clés dans WCAG 2.0.
+* Les administrateurs chargés de configurer Adobe Experience Manager (AEM) pour assurer que les fonctions d’accessibilité sont correctement activées.
+* Les auteurs utilisent ces fonctionnalités pour créer des sites Web qui prennent en charge les directives clés de WCAG 2.0.
 
    La création de contenu accessible est un processus. AEM fournit les fonctionnalités, mais les auteurs de contenu doivent s’assurer de suivre les techniques requises pour créer du contenu accessible.
 
@@ -34,17 +37,17 @@ Les pages et la section suivantes fournissent des informations et des consignes�
 
 * [Configuration de l’éditeur de texte enrichi pour la création de sites accessibles](/help/sites-administering/rte-accessible-content.md)
 
-   Instructions expliquant comment les administrateurs peuvent configurer AEM pour la production de contenu accessible.
+   Conseils sur la manière dont les administrateurs peuvent configurer les AEM pour la production de contenu accessible.
 
-* [Création d’un contenu accessible (conformité WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
+* [Création d’un contenu accessible (conformité WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
 
-   Les lignes directrices WCAG 2.0 fournissent une liste de critères de réussite pour les niveaux de conformité de niveau A et de niveau A. Cette page décrit les critères de réussite couverts par AEM, ainsi que la manière de les satisfaire lors de la génération du contenu.
+   Les lignes directrices de WCAG 2.0 fournissent une liste des critères de réussite pour les niveaux de conformité de niveau A et de niveau A. Cette page décrit les critères de réussite couverts par AEM, ainsi que la manière de les satisfaire lors de la génération du contenu.
 
 * [Guide rapide relatif à WCAG 2.0](/help/managing/qg-wcag.md)
 
    Informations générales sur WCAG 2.0.
 
-* [Création de formulaires adaptatifs accessibles](/help/forms/using/creating-accessible-adaptive-forms.md)
+* [Création d’une Forms adaptative accessible](/help/forms/using/creating-accessible-adaptive-forms.md)
 
    Adobe Experience Manager (AEM) s’accompagne de nombreuses fonctions et fonctionnalités qui simplifient l’utilisation des formulaires adaptatifs pour cette catégorie d’utilisateurs. Cette solution aide également les auteurs à créer des formulaires adaptatifs accessibles.
 
@@ -70,6 +73,6 @@ These, as they relate to AEM, are covered under [Level A and AA Conformance](/he
 >
 >Étant donné qu’il est impossible de répondre à tous les critères de réussite du niveau AAA pour certains types de contenu, il n’est pas recommandé comme niveau de conformité requis.
 
-## L’accessibilité chez Adobe {#accessibility-at-adobe}
+## L’accessibilité chez Adobe  {#accessibility-at-adobe}
 
-For additional information, please visit the [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
+Pour plus d’informations, consultez le [Centre de ressources sur l’accessibilité Adobe](https://www.adobe.com/accessibility/).
