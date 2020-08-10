@@ -64,7 +64,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr> 
    <td><strong>Étape 0</strong></td> 
    <td>Analyse du flux de demandes</td> 
-   <td><p>Vous pouvez utiliser l’analyse de demandes HTTP standard dans le navigateur afin d’analyser le flux de demandes. Pour plus d’informations sur la façon de procéder sur Chrome, voir :<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading</a><a href=" https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td> 
+   <td><p>Vous pouvez utiliser l’analyse de demandes HTTP standard dans le navigateur afin d’analyser le flux de demandes. Pour plus d’informations sur la façon de procéder sur Chrome, voir :<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>Étape 2</strong></td> 
@@ -294,7 +294,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr> 
    <td><strong>Étape 49</strong></td> 
    <td>Réduction de la taille de la charge utile</td> 
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Activez Gzip</a> et<a href="https://docs.adobe.com/ddc/fr/gems/aem-web-performance.html "> réduisez la taille de l’image</a>.<br /> </td> 
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Activez Gzip</a> et<a href="https://docs.adobe.com/ddc/fr/gems/aem-web-performance.html"> réduisez la taille de l’image</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Étapes 42 et 43</strong></td> 
