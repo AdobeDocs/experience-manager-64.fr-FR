@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: abdcde27b33f290a4288b09c39bffb0d4f1918a1
+source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 76%
+source-wordcount: '906'
+ht-degree: 75%
 
 ---
 
@@ -66,7 +66,7 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
    * widget_write
    * workflow_read
 
-   Pour obtenir des informations détaillées sur la configuration des paramètres OAuth pour une application Adobe Sign et l’obtention des clés, voir [Configurer les paramètres oAuth pour la documentation](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) dans la documentation du développeur.
+   Pour obtenir des informations détaillées sur la configuration des paramètres OAuth pour une application Adobe Sign et l’obtention des clés, voir [Configurer les paramètres oAuth pour la documentation](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) dans la documentation du développeur.
 
    ![Configuration OAuth](assets/oauth_config.png)
 
