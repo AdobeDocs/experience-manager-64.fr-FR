@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur d’AEM 6.4 Forms
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
 workflow-type: tm+mt
-source-wordcount: '3702'
+source-wordcount: '3715'
 ht-degree: 73%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 73%
       + [Configuration de Connector for Microsoft SharePoint](http://help.adobe.com/fr/AEMForms/6.1/SharePointConfig/index.html)
       + [Connexion d’AEM Forms à Adobe LiveCycle](using/aem-livecycle-connector.md)
       + [Configuration d’AEM Forms pour envoyer des données de formulaire aux processus AEM Forms sur JEE](using/submit-form-data-livecycle-process.md)
-      + [AEM application pour ordinateur de bureau pour AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
+      + [aem application pour ordinateur de bureau pour AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
 + Mettre à niveau AEM Forms {#upgrade-aem-forms}
    + [Chemins de mise à niveau disponibles](using/upgrade.md)
    + Mise à niveau de AEM Forms sur OSGi {#aem-forms-osgi-upgrade}
@@ -113,7 +113,7 @@ ht-degree: 73%
    + Handling user data {#handling-user-data}
       + [Workflows basés sur Forms sur OSGi](using/forms-workflow-osgi-handling-user-data.md)
       + [Gestion des utilisateurs Forms](using/user-management-handling-user-data.md)
-      + [workflows Forms JEE](using/forms-workflow-jee-handling-user-data.md)
+      + [Workflows Forms JEE](using/forms-workflow-jee-handling-user-data.md)
       + [Portail Formulaires](using/forms-portal-handling-user-data.md)
       + [Correspondence Management](using/correspondence-management-handling-user-data.md)
       + [Intégration à Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
@@ -577,6 +577,7 @@ ht-degree: 73%
    + [Référence API Java pour AEM Forms](https://helpx.adobe.com/fr/experience-manager/6-4/forms/javadocs/index.html)
    + [Référence d’API Java d’AEM Forms on JEE](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
    + [API Form Bridge pour les formulaires HTML5](using/form-bridge-apis.md)
+   + [Référence à l’API de la bibliothèque JavaScript pour les formulaires adaptatifs](https://helpx.adobe.com/fr/experience-manager/6-4/forms/javascript-api/index.html)
    + [Guide de référence du service Assembler et de DDX](http://www.adobe.com/go/learn_aemforms_ddxRef_64_fr)
    + [Aide de Workbench](http://www.adobe.com/go/learn_aemforms_workbench_64_fr)
    + Programmation avec AEM Forms on JEE {#programming-aem-forms-jee}
@@ -584,12 +585,12 @@ ht-degree: 73%
          + [Présentation de l’API Java QuickStart](developing/introducing-java-api-soap-quick.md)
          + [Appel d’AEM Forms à l’aide d’API](developing/invoking-aem-forms-using-apis.md)
          + [Présentation des processus AEM Forms](developing/aem-forms-processes.md)
-         + [conteneur de service](developing/service-container.md)
+         + [Conteneur de service](developing/service-container.md)
       + Début rapide de l’API Java - Exemples de code {#java-api-quick-start-code-examples}
          + [Début rapide de l’API JavaScript client Application Manager (SOAP)](developing/application-manager-client-java-api.md)
          + [Début rapide sur l’API Java du service Application Manager (SOAP)](developing/application-manager-service-java-api.md)
          + [API Java du service Assembler QuickStart (SOAP)](developing/assembler-service-java-api-quick.md)
-         + [Début rapide de l&#39;API Java du service d&#39;extensions Acrobat Reader DC (SOAP)](developing/acrobat-reader-dc-extensions-service.md)
+         + [début rapide de l&#39;API Java du service d&#39;extensions Acrobat Reader DC (SOAP)](developing/acrobat-reader-dc-extensions-service.md)
          + [Débuts APIQuick du service de sauvegarde et de restauration](developing/backup-restore-service-api-quick.md)
          + [Début Java APIQuick du service Forms Barcoded (SOAP)](developing/barcoded-forms-service-java-api.md)
          + [Composants et services Java APIQuick Début(SOAP)](developing/components-services-java-api-quick.md)
@@ -597,8 +598,8 @@ ht-degree: 73%
          + [API Java du service d’informations d’identification QuickStart (SOAP)](developing/credential-service-java-api-quick.md)
          + [API Java du service Distiller QuickStart (SOAP)](developing/distiller-service-java-api-quick.md)
          + [API Java du service DocConverter QuickStart (SOAP)](developing/docconverter-service-java-api-quick.md)
-         + [Début rapide de l&#39;API Java du service de gestion de Document (obsolète) (SOAP)](developing/document-management-service-deprecated-java.md)
-         + [Début rapide de l&#39;API JavaDocument Security Service (SOAP)](developing/document-security-service-java-api.md)
+         + [Début rapide de l&#39;API Java du service de gestion de document (obsolète) (SOAP)](developing/document-management-service-deprecated-java.md)
+         + [Début rapide de l&#39;API Javadocument Security Service (SOAP)](developing/document-security-service-java-api.md)
          + [API Java du service de chiffrement QuickStart (SOAP)](developing/encryption-service-java-api-quick.md)
          + [API Java du registre des points de terminaison QuickStart (SOAP)](developing/endpoint-registry-java-api-quick.md)
          + [Début rapide de l&#39;API JavaScript Form Data Integration Service (SOAP)](developing/form-data-integration-service-java.md)
@@ -610,7 +611,7 @@ ht-degree: 73%
          + [PDF Utilities Service Java APIQuick Début(SOAP)](developing/pdf-utilities-service-java-api.md)
          + [Débuts rapides de l’API Repository Service](developing/repository-service-api-quick-starts.md)
          + [API Java du service Signature QuickStart (SOAP)](developing/signature-service-java-api-quick.md)
-         + [API Java du service Tâche Manager QuickStart (SOAP)](developing/task-manager-service-java-api.md)
+         + [API Java du service tâche Manager QuickStart (SOAP)](developing/task-manager-service-java-api.md)
          + [Début rapide de l’API Java User Manager (SOAP)](developing/user-manager-java-api-quick.md)
          + [XMP Utilities Service Java APIQuick Début (SOAP)](developing/xmp-utilities-service-java-api.md)
       + Appel d’AEM Forms on JEE à l’aide d’API {#invoking-aem-forms-jee-apis}
