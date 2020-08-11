@@ -1,5 +1,5 @@
 ---
-title: Utilisation des ressources 3D
+title: Utilisation de ressources AEM 3D
 seo-title: Utilisation des ressources 3D
 description: Découvrez comment utiliser les ressources 3D dans AEM 3D
 seo-description: Découvrez comment utiliser les ressources 3D dans AEM 3D
@@ -10,15 +10,19 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 32143da1-09c8-45ce-b50d-32adf6efe383
 translation-type: tm+mt
-source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 80%
+source-wordcount: '1192'
+ht-degree: 76%
 
 ---
 
 
-# Utilisation des ressources 3D {#working-with-d-assets}
+# Working with AEM 3D assets {#working-with-d-assets}
+
+>[!IMPORTANT]
+>
+>aem 3D dans AEM 6.4 n’est plus pris en charge. adobe vous recommande d’utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou version ultérieure.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 AEM 3D (Adobe Experience Manager 3D) est conçu pour le téléchargement, la gestion, l’affichage et le rendu du contenu 3D. La prise en charge de l’affichage et du rendu est optimisée pour les objets individuels.
 
