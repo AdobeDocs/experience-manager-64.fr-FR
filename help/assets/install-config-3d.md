@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1681'
 ht-degree: 32%
 
 ---
 
 
 # Installation et configuration d’AEM 3D {#installing-and-configuring-aem-d}
+
+>[!IMPORTANT]
+>
+>aem 3D dans AEM 6.4 n’est plus pris en charge. adobe vous recommande d’utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou version ultérieure.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 L&#39;installation et la configuration de AEM 3D (version 3.0) impliquent les opérations suivantes :
 
@@ -224,7 +228,7 @@ Vous devez configurer un service de conversion externe pour autoriser l’assimi
 
       Lorsqu’elle est définie sur `Dn`, la `.glb` conversion inclut des extensions spécifiques à l’Adobe, telles que l’éclairage IBL, pour une qualité optimale lors de l’affichage des fichiers Dn dans AEM. Cependant, le rendu .glb converti peut ne pas s’afficher correctement dans les applications tierces.
 
-      Lorsqu’il est défini sur `generic`, le `.glb` rendu est générique sans extension spécifique à l’Adobe. Ce paramètre permet de l’utiliser dans des applications tierces, tandis que l’affichage avec la visionneuse 3D AEM est visuellement sous-optimal.
+      Lorsqu’il est défini sur `generic`, le `.glb` rendu est générique sans extensions spécifiques à l’Adobe. Ce paramètre permet de l’utiliser dans des applications tierces, tandis que l’affichage avec la visionneuse 3D AEM est visuellement sous-optimal.
 
 1. Activez le format de fichier Dn en procédant comme suit en **[!UICONTROL CRXDE Lite]**:
 
