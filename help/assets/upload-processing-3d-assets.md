@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 78%
+source-wordcount: '868'
+ht-degree: 74%
 
 ---
 
 
 # À propos du chargement et du traitement de ressources 3D dans AEM {#about-the-uploading-and-processing-of-d-assets-in-aem}
+
+>[!IMPORTANT]
+>
+>aem 3D dans AEM 6.4 n’est plus pris en charge. adobe vous recommande d&#39;utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou version ultérieure.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html).
 
 Utilisez les mécanismes de synchronisation ou de chargement standard pour importer des ressources 3D et leurs fichiers référencés associés dans AEM Assets.
 
@@ -71,7 +75,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   <tr> 
    <td>1</td> 
    <td>Traitement en cours</td> 
-   <td>extraction initiale de base du traitement et des métadonnées.</td> 
+   <td>Extraction initiale de base du traitement et des métadonnées.</td> 
   </tr> 
   <tr> 
    <td>2</td> 
