@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 64%
+source-wordcount: '1806'
+ht-degree: 62%
 
 ---
 
 
 # Affichage de ressources 3D {#viewing-d-assets}
+
+>[!IMPORTANT]
+>
+>aem 3D dans AEM 6.4 n’est plus pris en charge. adobe vous recommande d’utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou version ultérieure.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) aux ressources 3D de vue.
 
 Ce document décrit comment afficher les ressources 3D sur la page Détails de l’actif et comment afficher les ressources qui se trouvent dans le composant Sites 3D.
 
@@ -91,7 +95,7 @@ De plus, les capacités de l’ordinateur client, par exemple un poste de travai
       <td><p>Appuyez ou cliquez pour basculer entre les modes Examen et Cible.</p> 
       <ul> 
       <li><strong>Examinez</strong>-Appuyez ou cliquez pour passer en mode Cible.</li> 
-      <li><strong>Appuyez sur Cible</strong>ou cliquez n'importe où sur la ressource 3D pour centrer la vue sur cette partie de la ressource.<br /> Les actions d’orbite utilisent le nouveau point cible.</li> 
+      <li><strong>Appuyez sur cible</strong>ou cliquez n'importe où sur la ressource 3D pour centrer la vue sur cette partie de la ressource.<br /> Les actions d’orbite utilisent le nouveau point cible.</li> 
       </ul> </td> 
       </tr> 
       <tr> 
