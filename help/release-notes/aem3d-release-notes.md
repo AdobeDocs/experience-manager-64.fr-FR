@@ -10,21 +10,25 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1933'
-ht-degree: 46%
+source-wordcount: '1983'
+ht-degree: 45%
 
 ---
 
 
 # Notes de mise à jour d’AEM 3D {#aem-d-release-notes}
 
-AEM-6.4-DynamicMedia-3D version 3.1.0 (10 octobre 2018)
+>[!IMPORTANT]
+>
+>Le pack de fonctionnalités 3D AEM dans AEM 6.4 n’est plus pris en charge. adobe vous recommande d’utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou version ultérieure.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+
+aem-6.4-DynamicMedia-3D version 3.1.0 (10 octobre 2018)
 
 Le pack de fonctionnalités 3D AEM permet la prise en charge du contenu 3D en AEM Assets. Il permet de transférer, de gérer, de prévisualiser et d’afficher des ressources 3D. La prise en charge de l’affichage et du rendu est optimisée pour les objets individuels (plutôt que pour les scènes complexes avec plusieurs objets).
 
-AEM 3D prend en charge les types de ressources Adobe Dimension (Dn) et glTF. L&#39;implémentation de ces types d&#39;actifs est sensiblement différente de celle des types 3D traditionnels décrits dans cette documentation. Voir [Utilisation de ressources](/help/assets/working-dimension-assets.md)Adobe Dimension.
+aem 3D prend en charge les types de ressources Adobe Dimension (Dn) et glTF. L&#39;implémentation de ces types d&#39;actifs est sensiblement différente de celle des types 3D traditionnels décrits dans cette documentation. Voir [Utilisation de ressources](/help/assets/working-dimension-assets.md)Adobe Dimension.
 
 Les intégrations côté serveur avec Autodesk® Maya® (Windows uniquement) sont également incluses. Lorsque vous installez et configurez Maya sur le même serveur qu’AEM, vous permettez la prise en charge des formats de fichier Maya natifs, notamment le rendu de haute qualité avec le module externe NVIDIA® mental ray® pour Maya. L&#39;installation et la configuration de 3ds Max sur le serveur permettent la prise en charge du format de fichier .max natif.
 
@@ -38,7 +42,7 @@ Voir aussi [Utilisation des ressources 3D](/help/assets/assets-3d.md).
 
 **Conditions préalables**
 
-* AEM 6.4.2 (AEM 6.4 avec Service Pack 2)
+* aem 6.4.2 (AEM 6.4 avec Service Pack 2)
 * Kit SDK Autodesk® FBX® 2016.1.2
 
 **Systèmes d’exploitation pris en charge**
@@ -47,7 +51,7 @@ Voir aussi [Utilisation des ressources 3D](/help/assets/assets-3d.md).
 * Apple OS X El Capitan 10.6 ou version ultérieure
 * RedHat Enterprise Linux 7.3
 
-**Navigateurs Web pris en charge pour les AEM Assets**
+**Navigateurs Web pris en charge pour AEM Assets**
 
 * Google Chrome 53 ou version ultérieure (recommandé).
 * Apple Safari 9.1 ou version ultérieure.
@@ -114,7 +118,7 @@ Version 3.1
 ### Compatibilité {#compatibility}
 
 * **La fonctionnalité Exécution en tant que service Windows n’est pas prise en charge (Windows uniquement)**. Elle peut fonctionner, mais elle n’a pas été testée.
-* **Dynamic Media** ( `dynamicmedia-scene7` mode) - La compatibilité de AEM3D avec la nouvelle solution Dynamic Media sortie avec AEM 6.4 n&#39;est pas encore entièrement vérifiée. Si Dynamic Media et AEM3D sont déployés ensemble, il est recommandé de ne placer les actifs 3D et leurs dépendances que dans une zone du référentiel AEM Assets qui n’est pas affectée à Dynamic Media. Cette recommandation est particulièrement importante pour les fichiers TIFF 32 bits qui sont requis pour les étapes 3D mais ne sont pas pris en charge par Dynamic Media.
+* **Contenu multimédia** dynamique ( `dynamicmedia-scene7` mode) - La compatibilité de AEM3D avec la nouvelle solution Contenu multimédia dynamique publiée avec AEM 6.4 n&#39;est pas encore entièrement vérifiée. Si Contenu multimédia dynamique et AEM3D sont déployés ensemble, il est recommandé de ne placer les éléments 3D et leurs dépendances que dans une zone du référentiel AEM Assets qui n’est pas affectée à Contenu multimédia dynamique. Cette recommandation est particulièrement importante pour les fichiers TIFF 32 bits qui sont requis pour les étapes 3D mais ne sont pas pris en charge par Contenu multimédia dynamique.
 
 ### Général {#general}
 
@@ -130,9 +134,9 @@ Version 3.1
 
 * **Fichiers Mathematica (.ma)** : les fichiers Mathematica utilisent le même suffixe de fichier que les fichiers Maya natifs. Lorsque le Feature Pack est installé et que le format de fichier Maya .ma est activé, AEM3D tente d&#39;assimiler des fichiers Mathematica en cas d&#39;échec des fichiers Maya. Ces ressources affichent une bannière d’erreur dans la vue Carte.
 
-* **Fichiers images Targa (.tga)** : les fichiers de modèle 3D plus anciens peuvent comprendre des références aux fichiers TGA. Ce format n’est pas pris en charge par AEM. Adobe vous recommande de convertir ces fichiers dans un format différent avant de télécharger les fichiers 3D en AEM.
+* **Fichiers images Targa (.tga)** : les fichiers de modèle 3D plus anciens peuvent comprendre des références aux fichiers TGA. Ce format n’est pas pris en charge par AEM. adobe vous recommande de convertir ces fichiers dans un format différent avant de télécharger les fichiers 3D en AEM.
 * **Images HDR** : les images HDR sont utilisées pour les scènes avec IBL. Actuellement, seules les images TIFF 32 bits sont prises en charge à cet effet.
-* **Images TIFF 32 bits** : les images TIFF 32 bits sont utilisées pour les scènes avec IBL. AEM ne prend pas en charge la création de rendus pour ces ressources, ce qui se traduit par des vignettes vides et la prévisualisation n’est pas possible. Une ressource fonctionne toujours correctement lorsqu’elle est utilisée avec une scène IBL.
+* **Images TIFF 32 bits** : les images TIFF 32 bits sont utilisées pour les scènes avec IBL. aem ne prend pas en charge la création de rendus pour ces ressources, ce qui se traduit par des vignettes vides et la prévisualisation n’est pas possible. Une ressource fonctionne toujours correctement lorsqu’elle est utilisée avec une scène IBL.
 * **Fichiers** Autodesk 3ds Max (.max) - Si Autodesk 3ds Max est installé et configuré sur les noeuds d&#39;auteur, AEM prend en charge l&#39;assimilation et la conversion des fichiers .max. L’utilisation de fichiers .max en tant qu’étapes n’est pas prise en charge pour le moment.
 
 ### Résolution automatique des dépendances {#automatic-dependency-resolution}
@@ -157,12 +161,12 @@ Version 3.1
 ### Composant 3D AEM Sites {#aem-sites-d-component}
 
 * **Un composant 3D par page** - Actuellement, une seule instance du composant 3D est autorisée sur chaque page Web. Si plusieurs composants 3D sont ajoutés à la même page, aucun de ces composants ne fonctionne correctement.
-* **Vue 3D manquante lors de la prévisualisation dans Sites** - Lorsque vous utilisez **la Prévisualisation** dans Sites, la page doit être rechargée dans le navigateur pour initialiser entièrement la visionneuse 3D. Il ne s’agit pas d’un problème lorsque vous vue directement la page Web (c’est-à-dire lorsque vous `edit.html` êtes supprimé du chemin) sur les noeuds Auteur ou Publier.
+* **vue 3D manquante lors de la prévisualisation dans Sites** - Lorsque vous utilisez **la Prévisualisation** dans Sites, la page doit être rechargée dans le navigateur pour initialiser entièrement la visionneuse 3D. Il ne s’agit pas d’un problème lorsque vous vue directement la page Web (c’est-à-dire lorsque vous `edit.html` êtes supprimé du chemin) sur les noeuds Auteur ou Publier.
 
 * **Mode plein écran non disponible sur les appareils** iOS : le bouton plein écran n’est pas disponible sur les appareils iOS, quel que soit le navigateur utilisé.
 
 ### Publication de contenu 3D {#publishing-d-content}
 
-* **Configuration** des composants 3D : vous devez installer le Pack de fonctionnalités 3D sur tous les noeuds de publication actifs et chaque noeud doit être configuré avec un **CRXDE Lite** sur les mêmes options de configuration à `/libs/settings/dam/v3D/WebGLSites`l&#39;adresse.
+* **Configuration** des composants 3D : vous devez installer le Pack de fonctionnalités 3D sur tous les noeuds de publication principaux et chaque noeud doit être configuré avec un **CRXDE Lite** avec les mêmes options de configuration à `/libs/settings/dam/v3D/WebGLSites`l&#39;adresse.
 
-* **textures manquantes, arrière-plan ou éclairage après publication** : le mécanisme de **publication** en AEM Sites publie automatiquement les principales dépendances de la page, y compris le modèle 3D et la scène 3D référencées par le composant 3D. Les scènes et modèles 3D dépendent généralement de ressources secondaires pour les images IBL et les placages de texture, lesquels ne sont pas publiés automatiquement par le mécanisme Publication de Sites. Solution : publier tous les fichiers 3D à partir des ressources avant de publier la page Web à partir des sites. Cela permet de s’assurer que toutes les dépendances des ressources 3D sont disponibles sur les noeuds de publication.
+* **textures manquantes, arrière-plan ou éclairage après publication** : le mécanisme de **publication** en AEM Sites publie automatiquement les Principales dépendances de la page, y compris le modèle 3D et la scène 3D référencées par le composant 3D. Les scènes et modèles 3D dépendent généralement de ressources secondaires pour les images IBL et les placages de texture, lesquels ne sont pas publiés automatiquement par le mécanisme Publication de Sites. Solution : publier tous les fichiers 3D à partir des ressources avant de publier la page Web à partir des sites. Cela permet de s’assurer que toutes les dépendances des ressources 3D sont disponibles sur les noeuds de publication.
