@@ -6,7 +6,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
-source-git-commit: 9ced187ddc9bb2d12922fcc734b20ef9767d8fbf
+source-git-commit: 38d3a204e3ef038ef4f848e12b9fc73f127ec488
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 54%
@@ -20,7 +20,7 @@ Découvrez comment gérer et modifier les ressources vidéo dans Adobe Experien
 
 ## Chargement et prévisualisation des ressources vidéo {#uploading-and-previewing-video-assets}
 
-AEM Assets génère des prévisualisations pour les fichiers vidéo avec l’extension MP4. Si le format de la ressource n’est pas MP4, installez le pack FFmpeg pour générer une prévisualisation. FFmpeg crée des rendus vidéo de type OGG et MP4. Vous pouvez prévisualiser ces rendus dans l’interface utilisateur d’AEM Assets.
+aem assets génère des prévisualisations pour les fichiers vidéo avec l’extension MP4. Si le format de la ressource n’est pas MP4, installez le pack FFmpeg pour générer une prévisualisation. FFmpeg crée des rendus vidéo de type OGG et MP4. Vous pouvez prévisualiser ces rendus dans l’interface utilisateur d’AEM Assets.
 
 1. Dans le dossier ou les sous-dossiers Ressources numériques, accédez à l’emplacement où vous souhaitez ajouter des ressources numériques.
 1. Pour télécharger le contenu, cliquez ou appuyez sur **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Fichiers]**. Vous pouvez également le faire glisser directement jusqu’à la zone des ressources. Pour plus d’informations sur l’opération de téléchargement, voir [Téléchargement des ressources](managing-assets-touch-ui.md#uploading-assets).
@@ -91,7 +91,7 @@ Une fois vos ressources vidéo publiées, vous pouvez les inclure dans une page 
 
    To exit the annotation wizard, tap **[!UICONTROL Close]**.
 
-1. To jump to a specific point in the video, specify the time in seconds in the text field and click **[!UICONTROL Jump]**. Par exemple, pour sauter les  premières secondes de la vidéo, saisissez `20`10 dans le champ texte.
+1. To jump to a specific point in the video, specify the time in seconds in the text field and click **[!UICONTROL Jump]**. Par exemple, pour sauter les  premières secondes de la vidéo, saisissez `20`20 dans le champ texte.
 
    ![chlimage_1-205](assets/chlimage_1-205.png)
 
