@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: c4e18cad7bc08638af9dce6ab396554052043e16
 workflow-type: tm+mt
-source-wordcount: '2293'
+source-wordcount: '2267'
 ht-degree: 69%
 
 ---
@@ -98,20 +98,20 @@ Après avoir ajouté la règle d’index cq:tags
 
 * **Règle d’index cq:tags**
 
-       ```
-       /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
-     @name=jcr:content/cq:tags
-     @propertyIndex=true
-       ```
-   
+   ```
+   /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
+    @name=jcr:content/cq:tags
+    @propertyIndex=true
+   ```
+
 * **Requête Query Builder**
 
-       ```
-       type=cq:Page
-     property=jcr:content/cq:tags
-     property.value=myTagNamespace:myTag
-       ```
-   
+   ```
+   type=cq:Page
+    property=jcr:content/cq:tags
+    property.value=myTagNamespace:myTag
+   ```
+
 * **Plan de requête**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
@@ -146,7 +146,7 @@ Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire 
 
 #### Après le déploiement {#post-deployment-2}
 
-* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de grands noeuds ou une consommation importante de mémoire de tas : &quot;
+* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de nœuds importante ou une consommation élevée de mémoire de tas : 
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * Optimisez la requête afin de réduire le nombre de nœuds parcourus transversalement.
@@ -417,7 +417,7 @@ Therefore, ensure an indexes satisfy queries, except if the combination of path 
 
 ### Prise en charge par Adobe {#adobe-supported}
 
-* **Débogueur du créateur de Requêtes**
+* **Débogueur du créateur de requêtes**
 
    * Interface utilisateur web destinée à exécuter des requêtes Query Builder et à générer le XPath connexe (à utiliser dans l’outil Expliquer la requête ou dans le Générateur de définitions d’index en Oak).
    * Located on AEM at [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
