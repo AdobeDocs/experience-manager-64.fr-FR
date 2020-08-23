@@ -4,9 +4,9 @@ description: Découvrez les différentes tâches de gestion et de modification d
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9812'
+source-wordcount: '9811'
 ht-degree: 68%
 
 ---
@@ -70,7 +70,7 @@ Avant de télécharger un fichier, assurez-vous qu’il est dans un format [](as
 
    Vous pouvez configurer la taille au-dessus de laquelle une ressource est considérée comme volumineuse. Par exemple, vous pouvez configurer le système de sorte qu’il considère les ressources dont la taille est supérieure à 1 000 Mo (au lieu de 500 Mo) comme des ressources volumineuses. Dans ce cas, le bouton **[!UICONTROL Pause]** figurant dans la barre de progression s’affiche lors du transfert de fichiers d’une taille supérieure à 1 000 Mo.
 
-   The **[!UICONTROL Pause]]**button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. Toutefois, si vous annulez le téléchargement de fichier inférieur à 1 000 Mo, le bouton**[!UICONTROL Pause ]**apparaît.
+   The **[!UICONTROL Pause]** button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. Toutefois, si vous annulez le téléchargement de fichier inférieur à 1 000 Mo, le bouton **[!UICONTROL Pause]** apparaît.
 
    To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
 
@@ -290,7 +290,7 @@ Vous pouvez transcoder un fichier vidéo en sélectionnant une option parmi dive
 
 #### Set Batch Set Presets at upload {#setting-batch-set-presets-at-upload}
 
-If you want to automatically create an Image Set or Spin Set from uploaded images, click the **[!UICONTROL Active** column for the preset you want to use. Vous pouvez sélectionner plusieurs paramètres prédéfinis. 
+If you want to automatically create an Image Set or Spin Set from uploaded images, click the **[!UICONTROL Active]** column for the preset you want to use. Vous pouvez sélectionner plusieurs paramètres prédéfinis. 
 
 Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, voir [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
@@ -471,7 +471,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    ![chlimage_1-15](assets/chlimage_1-15.png)
 
-1. Appuyez sur l’icône **[!UICONTROL Navigation]** globale et sélectionnez **[!UICONTROL Rendus]** dans la liste.
+1. Appuyez sur l’icône **[!UICONTROL Navigation]** globale, puis sélectionnez **[!UICONTROL Rendus]** dans la liste.
 
    ![renditions_menu](assets/renditions_menu.png)
 
@@ -716,7 +716,7 @@ Dans la [console Collections](managing-collections-touch-ui.md#navigating-the-co
 **Pour utiliser la chronologie**:
 
 1. Ouvrez la page Ressource de la ressource ou sélectionnez cette dernière dans l’IU Assets.
-1. Appuyez sur l’icône **[!UICONTROL Navigation]** globale, puis sélectionnez **Chronologie]** dans la liste.
+1. Appuyez sur l’icône **[!UICONTROL Navigation]** globale, puis sélectionnez **[Chronologie]** dans la liste.
 
    ![chronologie](assets/timeline.png)
 
