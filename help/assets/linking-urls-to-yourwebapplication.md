@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: 5dba0e6c4ce4dbdf3254f511476a035c60a81810
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1289'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -139,7 +139,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Par exemple, si l’ID d’enregistrement est `87654321|MyCompany`, le nom du client est `MyCompany`.
 
-1. Près du coin supérieur gauche de la page, appuyez sur **Cloud Services**, puis sur l’icône d’AEM et accédez à **[!UICONTROL Général > CRXDE Lite]**.
+1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Service]s**, then tap the AEM icon and navigate to **[!UICONTROL General > CRXDE Lite]**.
 1. Copiez le chemin URL du rendu vidéo à partir du référentiel JCR (Java Content Repository).
 
    Par exemple, le chemin URL du rendu vidéo est similaire au suivant :
