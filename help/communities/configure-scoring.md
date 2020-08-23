@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Les détails de la configuration de la fonction sont décrits dans la section
 Cette page contient des informations techniques supplémentaires :
 
 * Comment [afficher un badge](#displaying-badges) sous forme d’image ou de texte
-* Comment activer la journalisation [de débogage étendue](#debug-log-for-scoring-and-badging)
+* Comment activer la journalisation étendue du [débogage](#debug-log-for-scoring-and-badging)
 * Comment [accéder à l&#39;UGC](#ugc-for-scoring-and-badging) en rapport avec la notation et l&#39;insu
 
 >[!CAUTION]
@@ -86,7 +86,7 @@ Pour configurer rapidement un fichier journal en ligne :
 
    * http://localhost:4502/system/console/slinglog
 
-1. Sélectionner **[!UICONTROL Ajouter une nouvelle journalisation]**
+1. Sélectionner **[!UICONTROL Ajouter un nouveau journal]**
 
    1. Sélectionner `DEBUG` pour le niveau de **[!UICONTROL journal]**
    1. Entrez un nom pour le fichier **** journal, par exemple
@@ -150,18 +150,20 @@ Les captures d’écran des données du référentiel proviennent de la configur
    * Localisation du noeud de la page du forum
 
       * `/content/sites/engage/en/forum/jcr:content`
-   * Ajouter les propriétés d’évaluation et de mise en badge
+   * ajouter les propriétés d’évaluation et de mise en badge
 
-      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,
-/etc/community/scoring/rules/forums-scoring]`
-      * `badgingRules =[/etc/community/badging/rules/comments-scoring,
-/etc/community/badging/rules/forums-scoring]`
+      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,`
+
+         `/etc/community/scoring/rules/forums-scoring]`
+      * `badgingRules =[/etc/community/badging/rules/comments-scoring,`
+
+         `/etc/community/badging/rules/forums-scoring]`
    * Localisation du noeud du composant de forum
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
          ( `sling:resourceType = social/forum/components/hbs/forum`)
-   * Ajouter la propriété pour afficher les badges
+   * ajouter la propriété d’affichage des badges
 
       * `allowBadges = true`
    * Un utilisateur se connecte, crée un sujet de forum et reçoit un badge de bronze
@@ -176,7 +178,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
    * Localisation du noeud de la page du forum
 
       * `/content/community-components/en/forum/jcr:content`
-   * Ajouter les propriétés d’évaluation et de mise en badge
+   * ajouter les propriétés d’évaluation et de mise en badge
 
       ```
       scoringRules = [/etc/community/scoring/rules/comments-scoring,
@@ -193,7 +195,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
       * `/content/community-components/en/forum/jcr:content/content/forum`
 
          ( `sling:resourceType = social/forum/components/hbs/forum`)
-   * Ajouter la propriété pour afficher les badges
+   * ajouter la propriété d’affichage des badges
 
       * `allowBadges = true`
    * Un utilisateur se connecte, crée un sujet de forum et reçoit un badge de bronze
