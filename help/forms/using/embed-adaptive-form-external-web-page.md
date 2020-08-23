@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 54%
+source-wordcount: '1054'
+ht-degree: 66%
 
 ---
 
@@ -38,66 +38,63 @@ Vous pouvez incorporer un formulaire adaptatif en insérant quelques lignes de c
 
 1. Incorporez le code suivant à une page Web de votre site Web :
 
-   ```
-   
-   
-<!doctype html>
-<html>
-  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Voici le titre de la page Web !</title>
+   ```html
+   <!doctype html>
+   <html>
+   <head>
+    <title>This is the title of the webpage!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body>
-  <div class="customafsection"/>
-    <p>Cette section est remplacée par le formulaire adaptatif.</p>
-
-
-    &lt;script>options
-    var = {path:&quot;/content/forms/af/locbasic.html&quot;, dataRef:&quot;&quot;, the epath:&quot;&quot;, CSS_Selector:&quot;.customafsection&quot;};
+   </head>
+   <body>
+   <div class="customafsection"/>
+   <p>This section is replaced with the adaptive form.</p>
+   
+    <script>
+    var options = {path:"/content/forms/af/locbasic.html", dataRef:"", themepath:"", CSS_Selector:".customafsection"};
     alert(options.path);
     var loadAdaptiveForm = function(options){
     //alert(options.path);
     if(options.path) {
-    / options.path fait référence à l&#39;URL de publication le formulaire
-    adaptatif// Par exemple : http:myserver:4503/content/forms/af/ABC, où ABC est le formulaire
-    adaptatif// Remarque : Si AEM serveur s’exécute sur un chemin de contexte, l’URL du formulaire adaptatif doit contenir le chemin d’accès de la
-    variable de contexte = options.path;
-    path += &quot;/jcr:content/guideContainer.html&quot;;
-    $.ajax({
-    url : path,
-    type : &quot;GET&quot;,
-    data : {
-    // Définissez le mode Wcmmode comme
-    désabledwcmmode : &quot;disabled&quot;
-    // Définissez la référence de données, le cas échéant
-    // &quot;dataRef&quot; : options.dataRef
-    // Spécifiez un thème différent pour l’objet
-    de formulaire// &quot;themeOverride&quot; : options.themepath
-    },
-    async : false,
-    succès : fonction (données) {
-    // Si jquery est chargé, définissez le code html interne du conteneur
-    // Si jquery n&#39;est pas chargé, utilisez les API fournies par le document pour définir le code HTML interne, mais ces API n&#39;évalueraient pas la balise de script dans le code HTML conformément à la spécification
-    HTML5// Par exemple : document.getElementById().
-    innerHTMLif(window.$ &amp;&amp; options.CSS_Selector){
-    // L’API HTML de jquery extrait les balises, met à jour le DOM et évalue le code incorporé dans la balise de script.
-    $(options.CSS_Selector).html(data);
-    }
-    },
-    erreur : function (data) {
-    // tout gestionnaire
-    d&#39;erreurs}
-    });
+        // options.path refers to the publish URL of the adaptive form
+        // For Example: http:myserver:4503/content/forms/af/ABC, where ABC is the adaptive form
+        // Note: If AEM server is running on a context path, the adaptive form URL must contain the context path 
+        var path = options.path;
+        path += "/jcr:content/guideContainer.html";
+        $.ajax({
+            url  : path ,
+            type : "GET",
+            data : {
+                // Set the wcmmode to be disabled
+                wcmmode : "disabled"
+                // Set the data reference, if any
+               // "dataRef": options.dataRef
+                // Specify a different theme for the form object
+              //  "themeOverride" : options.themepath
+            },
+            async: false,
+            success: function (data) {
+                // If jquery is loaded, set the inner html of the container
+                // If jquery is not loaded, use APIs provided by document to set the inner HTML but these APIs would not evaluate the script tag in HTML as per the HTML5 spec
+                // For example: document.getElementById().innerHTML
+                if(window.$ && options.CSS_Selector){
+                    // HTML API of jquery extracts the tags, updates the DOM, and evaluates the code embedded in the script tag.
+                    $(options.CSS_Selector).html(data);
+                }
+            },
+            error: function (data) {
+                // any error handler
+            }
+        });
     } else {
-    if (typeof(console) !== &quot;undefined&quot;) {
-    console.log(&quot;Path of Adaptive Form not specified to loadAdaptiveForm&quot;);
-    }
+        if (typeof(console) !== "undefined") {
+            console.log("Path of Adaptive Form not specified to loadAdaptiveForm");
+        }
     }
     }(options);
-    
-    &lt;/script>
-</body>
-</html>
+   
+    </script>
+   </body>
+   </html>
    ```
 
 1. Dans le code incorporé :
@@ -136,7 +133,7 @@ Examinons un exemple de la manière dont vous pouvez configurer un serveur de pr
     ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
-   Replace `[AEM_Instance`] with the AEM server publish URL in the rules.
+   Replace `[AEM_Instance]` with the AEM server publish URL in the rules.
 
 Si vous ne montez pas le serveur AEM sur un chemin de contexte, les règles de proxy de la couche Apache seront les suivantes :
 
