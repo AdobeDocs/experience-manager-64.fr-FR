@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4726'
+source-wordcount: '4725'
 ht-degree: 68%
 
 ---
@@ -73,7 +73,7 @@ Pour cette raison, nous allons aborder les notions de base des deux interfaces
 
 >[!NOTE]
 >
->Adobe recommande de tirer parti de l’interface utilisateur tactile pour bénéficier des dernières technologies. [AEM Modernination Tools&amp;(modernatzion-tools.md) peut faciliter la migration.
+>adobe recommande de tirer parti de l’interface utilisateur tactile pour bénéficier des dernières technologies. [Les outils](modernization-tools.md) de modernisation AEM peuvent faciliter la migration.
 
 ### Logique de contenu et balisage de rendu  {#content-logic-and-rendering-markup}
 
@@ -569,7 +569,7 @@ Les composants d’AEM sont soumis à trois hiérarchies différentes :
    * boîtes de dialogue
    * descriptions (y compris les images miniatures, les icônes, etc.)
 
-* **Hiérarchie des Conteneurs**
+* **Hiérarchie des conteneurs**
 
    Il est utilisé pour renseigner les paramètres de configuration du composant enfant et est le plus souvent utilisé dans un scénario parsys.
 
@@ -659,27 +659,27 @@ The `cq:actions` property ( `String array`) defines one or several actions that 
   </tr> 
   <tr> 
    <td>-</td> 
-   <td>Ajoute un espaceur.<br /> Uniquement visible dans l’interface utilisateur classique. L’IU tactile n’affiche pas les actions dans un menu contextuel, donc ceci n’est pas applicable.</td> 
+   <td>ajoute un espaceur.<br /> Uniquement visible dans l’interface utilisateur classique. L’IU tactile n’affiche pas les actions dans un menu contextuel, donc ceci n’est pas applicable.</td> 
   </tr> 
   <tr> 
    <td><code>edit</code></td> 
-   <td>Ajoute un bouton pour modifier le composant.</td> 
+   <td>ajoute un bouton pour modifier le composant.</td> 
   </tr> 
     <tr>
     <td><code>editannotate</code></td>
-    <td>Ajoute un bouton pour modifier le composant et autoriser les <a href="/help/sites-authoring/annotations.md">annotations</a>.</td>
+    <td>ajoute un bouton pour modifier le composant et autoriser les <a href="/help/sites-authoring/annotations.md">annotations</a>.</td>
    </tr>
   <tr> 
    <td><code>delete</code></td> 
-   <td>Ajoute un bouton pour supprimer le composant</td> 
+   <td>ajoute un bouton pour supprimer le composant</td> 
   </tr> 
   <tr> 
    <td><code>insert</code></td> 
-   <td>Ajoute un bouton pour insérer un nouveau composant avant le composant actif.</td> 
+   <td>ajoute un bouton pour insérer un nouveau composant avant le composant actif.</td> 
   </tr> 
   <tr> 
    <td><code>copymove</code></td> 
-   <td>Ajoute un bouton pour copier et couper le composant.</td> 
+   <td>ajoute un bouton pour copier et couper le composant.</td> 
   </tr> 
  </tbody> 
 </table>
