@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '739'
 ht-degree: 99%
 
 ---
@@ -38,7 +38,7 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
 1. Accédez à l’ensemble de carrousels, à l’image interactive ou à la vidéo interactive, puis appuyez sur l’onglet **[!UICONTROL Actions]** (disponible uniquement si vous avez défini une zone réactive ou une zone cliquable).
 
-   Le sélecteur de produits se trouve dans la zone **Type d’action [!UICONTROL**.
+   Le sélecteur de produits se trouve dans la zone **[!UICONTROL Type d’action]**.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
