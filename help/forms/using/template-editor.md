@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 155aaf96-1e9c-4e73-8e43-d96878d69b16
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1993'
-ht-degree: 87%
+source-wordcount: '1983'
+ht-degree: 90%
 
 ---
 
@@ -81,7 +81,7 @@ Lorsque vous sélectionnez le calque de structure dans l’éditeur de modèles,
 
 ![Conteneur de dispositions dans le calque de structure](assets/header-layer-selector.png)
 
-**Figure :** *conteneurs de disposition dans le calque de structure*
+**Figure :** *Conteneurs de disposition dans le calque de structure*
 
 **A.** conteneur de mise en page pour le composant d’en-tête **B.** conteneur de mise en page pour le composant Pied de page
 
@@ -109,11 +109,11 @@ Lorsque l’option Contenu initial est sélectionnée, le conteneur de formulair
 
 Les auteurs de formulaires l’utilisent comme base pour créer un formulaire. La structure de flux de contenu est spécifiée dans le calque Contenu initial du modèle. To switch to editing initial content of the form template, before Preview in the page toolbar, tap ![canvas-drop-down](assets/canvas-drop-down.png)**[!UICONTROL > Initial Content ]**.
 
-    [ ![Calque Contenu initial dans l’éditeur de modèles](assets/initial-content-layer.png)
+![Calque Contenu initial dans l’éditeur de modèles](assets/initial-content-layer.png)
 
 Calque Contenu initial dans l’éditeur de modèles affichant le conteneur de formulaires adaptatifs sélectionné pour la spécification des propriétés.
 
-](assets/initial-content-layer-1.png) Dans le calque Contenu initial, vous créez le modèle de formulaire adaptatif que vos auteurs utilisent comme base. La création d’un modèle est semblable à la création d’un formulaire : vous utilisez les options disponibles dans la barre latérale. Celle-ci fournit les navigateurs de contenu, de propriétés, de ressources et de composants.
+Dans le calque Contenu initial, vous créez le modèle de formulaire adaptatif que les auteurs utilisent en tant que base. La création d’un modèle est semblable à la création d’un formulaire : vous utilisez les options disponibles dans la barre latérale. Celle-ci fournit les navigateurs de contenu, de propriétés, de ressources et de composants.
 
 Voir [Barre latérale](/help/forms/using/introduction-forms-authoring.md#sidebar).
 
@@ -141,11 +141,11 @@ Pour créer les onglets Informations générales et Informations professionnelle
 
 #### Ajout de contenu dans les onglets {#adding-content-in-tabs}
 
-    [ ![Adding fields in the adaptive form template](assets/template-edit-initial-content.png)
+![Ajout de champs dans le modèle de formulaire adaptatif](assets/template-edit-initial-content.png)
 
 Ajout de champs dans le modèle
 
-](assets/template-edit-initial-content-1.png) Après avoir ajouté des panneaux et les avoir structurés sous forme d’onglets, vous pouvez ajouter des champs à l’intérieur des onglets. Lorsque vous sélectionnez un onglet dans l’éditeur, vous pouvez voir l’option **[!UICONTROL Faire glisser les composants]** ici. Vous pouvez faire glisser et déposer les composants tels que les zones de texte, les éléments de liste et les boutons. Vous pouvez faire glisser les composants depuis le navigateur de composants et les déposer dans la barre latérale.
+Une fois que vous avez ajouté les panneaux et que vous les avez structurés sous forme d’onglets, vous pouvez ajouter des champs dans les onglets. Lorsque vous sélectionnez un onglet dans l’éditeur, vous pouvez voir l’option **[!UICONTROL Faire glisser les composants]** ici. Vous pouvez faire glisser et déposer les composants tels que les zones de texte, les éléments de liste et les boutons. Vous pouvez faire glisser les composants depuis le navigateur de composants et les déposer dans la barre latérale.
 
 Chaque composant possède des propriétés qui améliorent la capture et la manipulation des données. Par exemple, vous pouvez activer la propriété **[!UICONTROL Champ obligatoire]** d’un composant. Les auteurs peuvent définir un message que vos clients voient lorsqu’ils omettent de remplir un champ obligatoire. Specify the message in **[!UICONTROL Required Field Message]** property.
 
