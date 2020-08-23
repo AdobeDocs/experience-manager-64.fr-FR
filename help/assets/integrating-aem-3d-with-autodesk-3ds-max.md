@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 0d7fefc0-6923-4ac3-9e90-335c08fa56f0
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 8%
 
 ---
@@ -42,16 +42,16 @@ Voir aussi [Intégration de AEM 3D avec AutoDesk Maya](integrate-maya-with-3d.md
 
 1. Dans 3ds Max, cliquez sur **[!UICONTROL Personnaliser > Gestionnaire]** de modules complémentaires.
 
-   Recherchez `FBXMAX.DLU` et vérifiez que son **[!UICONTROL état]** est **[ ! UICONTROL chargé**.
+   Recherchez `FBXMAX.DLU` et vérifiez que son **[!UICONTROL état]** est **[!UICONTROL chargé]**.
 
    Fermez la boîte de dialogue Gestionnaire **[!UICONTROL de]** modules complémentaires et 3ds Max.
 
 1. Mettez à jour le script de conversion.
 
-   AEM utilise un script de ligne de commande pour appeler l&#39;utilitaire de ligne de commande 3ds Max `3dsmaxcmd.exe`. Vous devez modifier ce script si vous avez installé une version autre que 3ds Max 2016, ou si vous avez installé 3ds Max à un emplacement non standard, ou si vous avez installé AEM sur une partition ou un lecteur différent.
+   aem utilise un script de ligne de commande pour appeler l&#39;utilitaire de ligne de commande 3ds Max `3dsmaxcmd.exe`. Vous devez modifier ce script si vous avez installé une version autre que 3ds Max 2016, ou si vous avez installé 3ds Max à un emplacement non standard, ou si vous avez installé AEM sur une partition ou un lecteur différent.
 
    1. Ouvrez le CRXDE Lite et accédez à `/libs/settings/dam/v3D/scripts/max`.
-   1. Cliquez sur `export-fbx.bat` le Doublon pour l’ouvrir.
+   1. Cliquez sur `export-fbx.bat` le doublon pour l’ouvrir.
    1. Modifiez la première ligne du script en fonction de l’emplacement de l’ `3dsmaxcmd.exe` utilitaire. Par exemple, si 3ds Max 2017 est utilisé et que AEM est installé sur un autre lecteur de disque :
 
    ![image2018-6-22_13-35-8](assets/image2018-6-22_13-35-8.png)
