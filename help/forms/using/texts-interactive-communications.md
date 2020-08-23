@@ -8,10 +8,10 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2255'
-ht-degree: 71%
+source-wordcount: '2249'
+ht-degree: 72%
 
 ---
 
@@ -193,12 +193,11 @@ L’éditeur de règles dans un texte permet de créer des règles pour afficher
 
 ## Formatage du texte {#formatting}
 
-While creating or editing text, the toolbar changes depending on the type of edits you choose to make: Paragraph, Alignment, or Listing:
-[ ![Select type of toolbar](do-not-localize/toolbarselection.png)
+Lors de la création ou de la modification d’un texte, la barre d’outils change selon le type de modifications que vous souhaitez effectuer : paragraphes, alignement ou liste :
 
 Sélectionnez le type de barre d’outils : Paragraphe, alignement ou liste
 
-](assets/toolbarselection.png) Barre d’outils ![d’édition de polices](do-not-localize/paragraphtoolbar-1.png)
+![Barre d’outils d’édition de polices](do-not-localize/paragraphtoolbar-1.png)
 
 Barre d’outils d’édition de polices
 
