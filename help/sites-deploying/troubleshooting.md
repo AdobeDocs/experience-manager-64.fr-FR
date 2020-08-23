@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
 source-wordcount: '1126'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -48,7 +48,7 @@ L’option d’informations détaillées affiche une partie de la sortie du jour
 
 La section ci-après décrit quelques problèmes d’installation et les solutions pour les résoudre.
 
-### **Un clic Doublon sur le fichier JAR de démarrage rapide n&#39;a aucun effet ou ouvre le fichier JAR avec un autre programme (par exemple, Gestionnaire d&#39;archives).{#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}**
+### Lorsque vous double-cliquez sur le fichier Quickstart jar, rien ne se produit ou le fichier s’ouvre dans un autre programme (par exemple, le gestionnaire d’archives). {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
 Cela indique généralement un problème de configuration de l’environnement de bureau de votre système d’exploitation pour l’ouverture de fichiers avec l’extension .jar. Elle peut également indiquer que Java n’est pas installé sur votre ordinateur ou que vous utilisez une version de Java qui n’est pas prise en charge.
 
@@ -65,7 +65,7 @@ Pour résoudre ce problème, procédez comme suit :
 * Parfois, la réinstallation de la version de Java prise en charge peut permettre de restaurer l’association correcte.
 * Vous pouvez toujours exécuter CRX à partir d’une ligne de commande ou de scripts start/stop, comme décrit précédemment dans ce document.
 
-### **Mon application qui s’exécute sur CRX génère des erreurs de mémoire insuffisante.{#my-application-running-on-crx-throws-out-of-memory-errors}**
+### Mon application qui s’exécute sur CRX génère des erreurs de mémoire insuffisante. {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 Cette commande génère un fichier de vidage de segments de mémoire (**java_...hprof**) dès que la mémoire du processus est insuffisante. Le processus peut continuer à s’exécuter après la génération du vidage de segments de mémoire. En règle générale, un fichier est suffisant pour analyser le problème.
 
-### **Après avoir double-cliqué sur Quickstart AEM, l’écran de bienvenue d’AEM ne s’affiche pas dans le navigateur{#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}**
+### Après avoir double-cliqué sur Quickstart AEM, l’écran de bienvenue d’AEM ne s’affiche pas dans le navigateur. {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
 Dans certains cas, l’écran de bienvenue de la gestion de contenu web AEM ne s’affiche pas automatiquement bien que le référentiel s’exécute correctement. Ce problème peut être lié à la configuration du système d’exploitation ou du navigateur ou à d’autres facteurs similaires.
 
@@ -100,7 +100,7 @@ Si toutes les autres solutions échouent, consultez les journaux pour détermine
 
 ## Résolutions des problèmes d’installation avec un serveur d’applications {#troubleshooting-installations-with-an-application-server}
 
-### **Lorsqu’une page geometrixx-outdoor est demandée, l’erreur Page introuvable est renvoyée.{#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}**
+### Lorsqu’une page geometrixx-outdoor est demandée, l’erreur Page introuvable est renvoyée.{#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
 **S’applique à WebLogic 10.3.5 et JBoss 5.1**
 
@@ -108,7 +108,7 @@ Lorsqu’une demande de page geometrixx-outdoors/en renvoie une erreur 404 (Page
 
 Pour plus d’informations, reportez-vous à la procédure *Déployer une application web AEM*.
 
-### **La taille de l’en-tête de réponse peut être supérieure à 4 Ko.{#response-header-size-can-be-greater-than-kb}**
+### La taille de l’en-tête de réponse peut être supérieure à 4 Ko.{#response-header-size-can-be-greater-than-kb}
 
 Les erreurs 502 peuvent indiquer que le serveur web n’est pas en mesure de gérer la taille de l’en-tête de réponse HTTP AEM. AEM peut générer des en-têtes de réponse HTTP qui comprennent des cookies dont la taille est supérieure à 4 Ko. Vérifiez que le conteneur de servlets est configuré de sorte à ce que la taille d’en-tête de réponse maximale puisse dépasser 4 Ko.
 
@@ -126,7 +126,7 @@ Si le stockage persistent est incorporé dans le répertoire d’installation (d
 
 Si votre installation AEM utilise un système de stockage externe, comme un serveur de base de données, la suppression du dossier n’entraîne pas la suppression automatique des données, mais elle supprime la configuration du stockage, ce qui rend difficile la restauration du contenu JCR.
 
-### **Les fichiers JSP ne sont pas compilés sur JBoss.{#jsp-files-are-not-compiled-on-jboss}**
+### Les fichiers JSP ne sont pas compilés sur JBoss. {#jsp-files-are-not-compiled-on-jboss}
 
 Si vous installez ou mettez à jour les fichiers JSP dans Experience Manager sur JBoss et si les servlets correspondants ne sont pas compilés, vérifiez que le compilateur JSP JBoss est correctement configuré. Pour plus d’informations, voir la section\
 [Problèmes de compilation JSP dans l’article JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) .
