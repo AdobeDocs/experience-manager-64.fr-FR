@@ -3,9 +3,9 @@ title: 'Configuration des modules externes d’éditeur de texte enrichi '
 description: Apprenez à configurer les modules externes d’éditeur de texte enrichi d’AEM afin d’activer différentes fonctionnalités.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4220'
+source-wordcount: '4206'
 ht-degree: 94%
 
 ---
@@ -303,11 +303,10 @@ Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référenc
 >[!NOTE]
 Lors de l’utilisation de l’éditeur de texte enrichi dans une boîte de dialogue (IU classique), vous pouvez spécifier des feuilles de style optimisées pour la modification de texte enrichi. En raison de restrictions techniques, le contexte CSS est perdu dans l’éditeur. Vous devrez peut-être émuler ce contexte afin d’améliorer l’expérience WYSIWYG.
 L’éditeur de texte enrichi utilise un élément DOM de conteneur avec un ID de `CQrte`, qui peut être utilisé afin de fournir différents styles pour l’affichage et la modification :
-# CQ td {
-// définit le style pour l’affichage }
-# CQrte td {
-// définit le style de modification }
-
+`#CQ td {`
+` // defines the style for viewing }`
+`#CQrte td {`
+` // defines the style for editing }`
 
 ### Spécification des styles disponibles dans la liste contextuelle {#stylesindropdown}
 
