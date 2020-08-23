@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf155d8c-c012-4cb4-89a6-ceead715630e
 translation-type: tm+mt
-source-git-commit: 284339ee1ce0ffae97f732b569f73c732f063273
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 73%
+source-wordcount: '705'
+ht-degree: 77%
 
 ---
 
@@ -50,8 +50,8 @@ Les tâches de conversion, de traitement et de rendu sont placées en file d’a
 
    Voir [Visualisation de ressources 3D](/help/sites-classic-ui-authoring/classicui-view-3d-assets.md).
 
-1. From **Adobe Experience Manager**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View** drop-down list, tap **[!UICONTROL Card View]**.
+1. Dans **Adobe Experience Manager**, sur la page **[!UICONTROL Navigation]**, appuyez sur **[!UICONTROL Ressources]**.
+1. Dans l’angle supérieur droit de la page, dans la liste déroulante **[!UICONTROL Vue]**, appuyez sur **[!UICONTROL Mode Carte]**.
 1. Accédez à un objet 3D dont vous souhaitez effectuer le rendu.
 
 1. Appuyez sur la carte de l’objet 3D pour l’ouvrir sur la page de détails de la ressource.
