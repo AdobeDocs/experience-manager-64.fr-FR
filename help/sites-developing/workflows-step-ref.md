@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2833'
-ht-degree: 69%
+source-wordcount: '2831'
+ht-degree: 70%
 
 ---
 
@@ -108,7 +108,7 @@ The **[!UICONTROL AND Split]** creates a split in the workflow, after which both
 
 A **[!UICONTROL Container]** step starts another workflow model that runs as a child workflow.
 
-This **[!UICONTROL Container]]**lets you reuse workflow models to implement common sequences of steps. Par exemple, un modèle de workflow de traduction peut être utilisé dans plusieurs workflows de modification.
+This **[!UICONTROL Container]** lets you reuse workflow models to implement common sequences of steps. Par exemple, un modèle de workflow de traduction peut être utilisé dans plusieurs workflows de modification.
 
 ![wf-28](assets/wf-28.png)
 
@@ -138,7 +138,7 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 * [**[!UICONTROL Courant]**](#step-properties-common-tab)
 * **[!UICONTROL Processus]**
 
-   * **[!UICONTROL Étape à suivre]]**: Sélectionnez l’étape à exécuter.
+   * **[!UICONTROL Étape à suivre]**: Sélectionnez l’étape à exécuter.
    * **[!UICONTROL Chemin]** du script : Chemin d’accès à ECMAScript qui détermine si l’étape **** Goto doit être exécutée.
    * **[!UICONTROL Script]**: ECMAScript qui détermine si l’étape **** Goto doit être exécutée.
 
@@ -268,7 +268,7 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 * [**[!UICONTROL Utilisateur/Groupe]**](#step-properties-user-group-tab)
 * **[!UICONTROL Boîte de dialogue]**
 
-   * **[ ! UICONTROL Dialog Path**: Chemin d’accès au noeud dialog de la [boîte de dialogue que vous créez](#dialog-participant-step-creating-a-dialog).
+   * **[!UICONTROL Dialog Path**]: The path to the dialog node of the [dialog you create](#dialog-participant-step-creating-a-dialog).
 
 #### Dialog Participant Step – Creating a dialog{#dialog-participant-step-creating-a-dialog}
 
@@ -396,7 +396,7 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
 #### Étape choix dynamique de participant – développement du programme de sélection des participants {#dynamic-participant-step-developing-the-participant-chooser}
 
-Vous créez le programme de sélection des participants. Par conséquent, vous pouvez utiliser toute logique ou tout critère de sélection. Par exemple, le programme de sélection des participants peut sélectionner l’utilisateur (dans un groupe) qui a le moins d’éléments de travail. You can create any number of participant choosers to use with different instances of the **Dynamic Participant Step *]*component in your workflow models.
+Vous créez le programme de sélection des participants. Par conséquent, vous pouvez utiliser toute logique ou tout critère de sélection. Par exemple, le programme de sélection des participants peut sélectionner l’utilisateur (dans un groupe) qui a le moins d’éléments de travail. Vous pouvez créer un nombre illimité de programmes de sélection des participants à utiliser avec des instances différentes du composant **Étape choix dynamique de participant** dans vos modèles de workflow.
 
 Créez un service OSGi ou un ECMAScript qui sélectionne un utilisateur auquel attribuer l’élément de travail.
 
@@ -514,7 +514,7 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 * [**[!UICONTROL Utilisateur/Groupe]**](#step-properties-user-group-tab)
 * **[!UICONTROL Formulaire]**
 
-   * **[ ! UICONTROL Form Path**: Chemin d’accès au [formulaire que vous créez](#form-participant-step-creating-the-form).
+   * **[!UICONTROL Chemin]** du formulaire : Chemin d’accès au [formulaire que vous créez](#form-participant-step-creating-the-form).
 
 #### Étape de participant du formulaire – création de formulaire {#form-participant-step-creating-the-form}
 
