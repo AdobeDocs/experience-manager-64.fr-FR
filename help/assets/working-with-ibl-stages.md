@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '848'
 ht-degree: 58%
 
 ---
@@ -31,7 +31,7 @@ Actuellement, AEM 3D prend uniquement en charge les fichiers TIFF 32 bits. Si 
 * **[!UICONTROL Profondeur]** de bits - 32 bits (flottant)
 * **[!UICONTROL Ordre]** des pixels - Entrelacé (RGBRGB)
 * **[!UICONTROL Compression]** d’images - LZW
-* **[ !Ordre** des octets UICONTROL - PC IBM
+* **[!UICONTROL Ordre]** des octets - IBM PC
 
 Bien qu’une seule image HDR soit souvent suffisante pour les scènes IBL, AEM 3D offre un contrôle supplémentaire sur les effets IBL en autorisant jusqu’à trois images distinctes :
 
@@ -58,7 +58,7 @@ Vous pouvez modifier l’aspect de la scène IBL grâce aux propriétés de scè
    <td><p>Permet d'ajuster la direction et la force de la source lumineuse supplémentaire qui simule le soleil. <span class="diff-html-added">Cette source lumineuse augmente la luminosité de l’éclairage et fait en sorte que l’objet diffuse une ombre portée sur le sol. La projection d’ombre est prise en charge lors du rendu avec Rapid Refine et pour une prévisualisation avec Google Chrome. Toutefois, elle n’est actuellement pas prise en charge par les autres navigateurs.</span></p> 
     <ul> 
      <li><strong>lat</strong> - Position verticale de la source de lumière du soleil (<code>0.0</code>-<code>1.0</code>).<br /> Un paramètre de <code>0.0</code> est à l'horizon (centre vertical de l'image de l'Environnement d'éclairage diffus); <code>1.0</code> est au zénith (bord supérieur de l'Environnement d'éclairage diffus).</li> 
-     <li><strong>long</strong> - Position horizontale de la source de lumière du soleil (<code>0.0</code>-<code>1.0</code>).<br /> Un paramètre de 0,0 correspond à gauche ; 1.0 correspond au bord droit de l'Environnement d'éclairage diffus.<br /> </li> 
+     <li><strong>long</strong> - Position horizontale de la source de lumière du soleil (<code>0.0</code>-<code>1.0</code>).<br /> A setting of 0.0 corresponds to the left; 1.0 corresponds to the right edge of the Diffuse Lighting Environment Image.<br /> </li> 
      <li><strong>clair</strong> - Luminosité de la source de lumière du soleil. Augmentez cette valeur pour éclaircir la source lumineuse et réduisez-la pour l’assombrir. <br /> Un paramètre de <code>0</code> désactivation de l’éclairage supplémentaire et désactive les ombres projetées. Le paramètre n’affecte pas les reflets de l’environnement.<br /> </li> 
     </ul> </td> 
   </tr> 
