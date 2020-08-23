@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '6146'
 ht-degree: 82%
@@ -114,7 +114,7 @@ Vous pouvez supprimer un paramètre de type de fichier qui n’est plus utilisé
 
 Les options suivantes permettent de déterminer comment les fichiers image sont convertis en PDF. Pour plus d’informations sur l’accès à ces paramètres, voir [Création ou modification de paramètres de type de fichier](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**Extensions de nom de fichier :** liste séparée par des virgules des extensions de nom de fichier pouvant être converties.
+**Extensions de nom de fichier :** Liste séparée par des virgules des extensions de nom de fichier pouvant être converties.
 
 **Essayer le convertisseur de secours :** PDF Generator peut utiliser Java™ ou Acrobat pour convertir des fichiers image au format PDF. Lorsque cette option est sélectionnée et qu’une conversion échoue ou atteint le délai d’expiration spécifié, PDF Generator tente d’effectuer la conversion en utilisant la méthode alternative. Si la méthode alternative échoue ou atteint le délai d’expiration spécifié, une exception est consignée dans le fichier journal.
 
@@ -174,9 +174,9 @@ Activez ces options pour spécifier le mode de conversion des pages HTML. Les va
 
 **Orientation :** Sélectionnez Portrait ou Paysage pour le document PDF converti.
 
-**Marges :** Indique les marges (Haut, Bas, Gauche et Droite) dans le document PDF généré.
+**Marges :** Indique les marges (Haut, Bas, Gauche et Droite) du document PDF généré.
 
-**Ajouter les signets au format PDF :** Ajoute des signets au document PDF.
+**ajouter les signets au format PDF :** ajoute les signets au document PDF.
 
 **Activer le PDF balisé :** Incorpore des balises dans le document PDF.
 
@@ -220,13 +220,13 @@ Ces options permettent de définir l’apparence de la fenêtre :
 
 PDF Generator permet de soumettre une vidéo pour Adobe Flash (au format SWF ou FLV) et de créer un fichier PDF incorporant une vidéo pour Adobe Flash. Cette conversion ne nécessite pas l’installation d’Adobe Flash Player sur le serveur Forms. Pour plus d’informations sur l’accès à cette option, voir [Création ou modification de paramètres de type de fichier](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**Extensions de nom de fichier :** liste séparée par des virgules des extensions de nom de fichier pouvant être converties.
+**Extensions de nom de fichier :** Liste séparée par des virgules des extensions de nom de fichier pouvant être converties.
 
 ## Paramètres de conversion du format XPS en PDF {#xps-to-pdf-settings}
 
 Le format XPL (XML Paper Specification) est utilisé pour l’impression sous Windows. Il s’agit d’un format Microsoft pouvant être créé à partir de n’importe quelle application Microsoft Office. AEM forms permet de convertir des fichiers XPS en PDF.
 
-**Extensions de nom de fichier :** liste séparée par des virgules de toutes les extensions de nom de fichier XPS pouvant être converties. Il n’existe actuellement un seul format : .xps.
+**Extensions de nom de fichier :** Liste séparée par des virgules de toutes les extensions de nom de fichier XPS pouvant être converties. Il n’existe actuellement un seul format : .xps.
 
 ## Paramètres d’optimisation de PDF {#pdf-optimizer-settings}
 
@@ -238,7 +238,7 @@ PDF Generator permet de réduire la taille des fichiers PDF. Le nombre de param�
 
 Pour plus d’informations sur l’accès à ce paramètre, voir [Création ou modification de paramètres de type de fichier](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**Version PDF de la Cible :** Indique la version d’Acrobat avec laquelle le PDF est compatible.
+**Version PDF de la cible :** Indique la version d’Acrobat avec laquelle le PDF est compatible.
 
 ### Polices {#fonts}
 
@@ -263,7 +263,7 @@ Pour plus d’informations sur l’accès à ce paramètre, voir [Création ou m
 
    >[!NOTE]
    >
-   >*Si vous utilisez cette option en association avec **Désincorporer certaines polices**, les polices dans les polices **Ajoutées pour désincorporer**la liste sont toujours complètement désincorporées.*
+   >*Si vous utilisez cette option en association avec **Désincorporer certaines polices**, les polices de l’**Ajoute pour désincorporer**la liste sont toujours complètement désincorporées.*
 
    >[!NOTE]
    >
@@ -301,7 +301,11 @@ Sélectionnez **Transparence** pour configurer les paramètres de transparence l
 
 **Convertir tous les contours en contours** Convertit tous les contours en tracés simples remplis sur les pages contenant de la transparence. Cette option préserve la largeur des contours lors de l’aplatissement. Notez que l’activation de cette option a pour effet de donner aux contours fins un aspect légèrement plus épais et peut dégrader les performances de l’aplatissement.
 
-**Ecrêter les régions** complexes Assurez-vous que les limites entre l’illustration vectorielle et l’illustration pixellisée s’étendent le long des chemins d’objet. Cette option réduit les artefacts de raccordement qui subviennent lorsqu’un objet est partiellement pixellisé (une partie de l’objet restant vectorielle). 
+**Ecrêter les régions** complexes Assurez-vous que les limites entre l’illustration vectorielle et l’illustration pixellisée s’étendent le long des chemins d’objet. Cette option réduit les artefacts de raccordement qui se produisent lorsqu’une partie d’un og est incorporée.
+
+<!--
+NOTE to WRITER - The above sentence is incomplete.
+-->
 
 >[!NOTE]
 >
@@ -412,7 +416,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft Excel sont
 
 **Créer un fichier compatible avec le format PDF/A-1a **: rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RVB Adobe PDF.
 
-**Ajouter des signets à Adobe PDF**: permet de convertir les noms de feuille de calcul Excel en signets. Cette option est sélectionnée par défaut.
+**ajouter des signets à Adobe PDF**: permet de convertir les noms de feuille de calcul Excel en signets. Cette option est sélectionnée par défaut.
 
 **Ajuster la feuille de calcul à une seule page**: Réduit la taille du texte pour qu’il s’adapte à la feuille de calcul sur une seule page.
 
@@ -420,7 +424,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft Excel sont
 
 **Exécuter automatiquement** les macros : exécute toutes les macros du document Excel (par exemple une macro qui insère l’heure actuelle) avant de convertir le document.
 
-**Convertir les informations** de Document : Ajoute les propriétés du document PDF en fonction des informations de document contenues dans le fichier source. Cela inclut des informations telles que le titre, l’auteur, le sujet et les mots-clés du document.
+**Convertir les informations** de Document : ajoute les propriétés du document PDF en fonction des informations de document contenues dans le fichier source. Cela inclut des informations telles que le titre, l’auteur, le sujet et les mots-clés du document.
 
 **Ajouter des liens à Adobe PDF **: permet de convertir les liens hypertexte du fichier source en liens hypertexte dans le document PDF.
 
@@ -523,7 +527,7 @@ Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal 
 
 **Convertir les informations sur le document **: permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, le sujet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut. Cette option est activée par défaut.
 
-**Ajouter des liens vers Adobe PDF**: Conserve tous les liens. Cette option est sélectionnée par défaut.
+**ajouter des liens vers Adobe PDF**: Conserve tous les liens. Cette option est sélectionnée par défaut.
 
 **Ajouter des signets à Adobe PDF **: permet de convertir des titres en signets.  Cette option est sélectionnée par défaut.
 
