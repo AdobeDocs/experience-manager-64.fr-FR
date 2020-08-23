@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: ec4fe78ff6101bc427570c48f80c1bd4f173e6e2
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2830'
+source-wordcount: '2829'
 ht-degree: 62%
 
 ---
@@ -30,7 +30,7 @@ Vous pouvez ajouter directement des fichiers multimédias dynamiques à la page 
 
 ## Ajout d’un composant Dynamic Media à une page  {#adding-a-dynamic-media-component-to-a-page}
 
-Ajouter un composant Contenu multimédia dynamique à une page revient à ajouter un composant à une page. Les composants Contenu multimédia dynamique sont décrits en détail dans les sections suivantes.
+ajouter un composant Contenu multimédia dynamique à une page revient à ajouter un composant à une page. Les composants Contenu multimédia dynamique sont décrits en détail dans les sections suivantes.
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ Cette option n’est pas disponible si vous affichez des visionneuses d’images
 * **[!UICONTROL URL, Ouvrir dans]**Vous pouvez définir un fichier pour ouvrir un lien. Définissez l’URL, puis dans le champ Ouvrir dans, indiquez si vous souhaitez l’ouvrir dans la même fenêtre ou une nouvelle fenêtre.
 Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
-* **[ ! UICONTROL Height** and **[!UICONTROL Width]** Saisissez une valeur en pixels si vous souhaitez que l’image de recadrage dynamique ait une taille fixe. Si vous ne fournissez pas de valeurs, la vidéo devient adaptative.
+* **[!UICONTROL Hauteur]** et **[!UICONTROL Largeur]** Saisissez une valeur en pixels si vous souhaitez que la taille de l’image de recadrage dynamique soit fixe. Si vous ne fournissez pas de valeurs, la vidéo devient adaptative.
 
 ### Interactive Media component {#interactive-media-component}
 
