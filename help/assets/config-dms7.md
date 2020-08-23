@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 92017a4c2c9ab9f139440e40f368958bcc3bb2ef
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '5552'
+source-wordcount: '5547'
 ht-degree: 73%
 
 ---
@@ -38,7 +38,7 @@ Avec la nouvelle architecture, AEM est responsable des fichiers originaux et des
 
 [Par défaut, ce module complémentaire est désactivé. ](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) Pour tirer parti des fonctionnalités de Dynamic Media, vous devez l’activer.
 
->[REMARQUE]
+>[!NOTE]
 >
 >Contenu multimédia dynamique : le mode Scene7 est réservé à l’instance d’auteur AEM. En tant que tel, vous devez configurer `runmode=dynamicmedia_scene7`sur l’instance d’auteur AEM, et non sur l’instance de publication AEM.
 
@@ -52,7 +52,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 If you are upgrading AEM Dynamic Media from 6.3 to 6.4 (which now includes the ability for zero downtime deployments), you are required to run the following curl command to migrate all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
 
->[REMARQUE]
+>[!NOTE]
 >
 >Si vous exécutez votre instance AEM en mode de compatibilité (c&#39;est-à-dire si le package de compatibilité est installé), vous n&#39;avez pas besoin d&#39;exécuter ces commandes.
 
@@ -220,7 +220,7 @@ Vous pouvez définir les types de ressources qui doivent être traités par Dyna
 * Conversion d’un document Adobe Photoshop (.psd) en ressource de modèle de bannière afin de permettre la personnalisation.
 * Pixellisation d’un fichier Adobe Illustrator (.ai) ou d’un fichier PostScript encapsulé Adobe Photoshop (.eps).
 
->[REMARQUE]
+>[!NOTE]
 >
 >Les Profils vidéo et les Profils d’imagerie permettent de définir le traitement des vidéos et des images, respectivement.
 
@@ -420,7 +420,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
    Notez que l’option [!UICONTROL Afficher le formulaire], indiquée dans le coin supérieur droit de la page Détails, correspond à la vue par défaut.
 
 1. In the **[!UICONTROL Preset List]** panel, tap **[!UICONTROL Add]** to activate the definition fields in the **[!UICONTROL Details]** panel on the right hand side of the screen.
-1. In the **[!UICONTROL Details]** panel, in the [!UICONTROL Preset Name[!UICONTROL field, type a name for the preset.
+1. In the **[!UICONTROL Details]** panel, in the [!UICONTROL Preset Name] field, type a name for the preset.
 1. In the **[!UICONTROL Batch Set Type]** drop-down menu, select **[!UICONTROL Asset Set]**.
 1. In the **[!UICONTROL Sub Type]** drop-down list, select **[!UICONTROL Multi-Axis Spin Set]**.
 1. Expand **[!UICONTROL Asset Naming Conventions]**, and then in the **[!UICONTROL File Naming]** drop-down list, tap **[!UICONTROL Custom]**.
@@ -631,7 +631,7 @@ Si vous utilisez Contenu multimédia dynamique pour la création d’images et/o
     <tbody> 
     <tr> 
     <td><strong>Caractère à utiliser</strong></td> 
-    <td><strong>filtres des ressources pour la réplication</strong></td> 
+    <td><strong>Filtres des ressources pour la réplication</strong></td> 
     </tr> 
     <tr> 
     <td>*</td> 
