@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '5341'
 ht-degree: 69%
@@ -50,7 +50,7 @@ Pour plus d’informations sur l’implémentation d’un comportement de concep
 * [Grilles fluides](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [Images adaptatives](/help/sites-developing/responsive.md#using-adaptive-images)
 
-As you design, use **!UICONTROL Sidekick]**to preview your pages for various screen sizes.
+As you design, use **[!UICONTROL Sidekick]** to preview your pages for various screen sizes.
 
 ## Before you develop {#before-you-develop}
 
