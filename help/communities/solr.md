@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 2%
@@ -83,8 +83,7 @@ sh ./scripts/cloud-scripts/zkcli.sh \\
 #### 2. Create a collection {#create-a-collection}
 
 Référence:\
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create\
-](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 Utilisation:\
 ./bin/solr créer \\
@@ -145,7 +144,7 @@ Au total, les 33 langues suivantes sont prises en charge dans Advanced MLS.
 
 #### Comparaison de l&#39;AEM 6.1 Solr Search, Standard MLS et Advanced MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-**Remarque**: AEM 6.1 se rapporte à AEM 6.1 Communautés FP3 et versions antérieures.
+**Remarque**: aem 6.1 se rapporte à AEM 6.1 Communautés FP3 et versions antérieures.
 
 ![chlimage_1-283](assets/chlimage_1-283.png)
 
