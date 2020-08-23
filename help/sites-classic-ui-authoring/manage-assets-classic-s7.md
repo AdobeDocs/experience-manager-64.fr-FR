@@ -1,8 +1,8 @@
 ---
-title: Ajouter les fonctionnalités de Dynamic Media Classic à votre page
-seo-title: Ajouter les fonctionnalités de Dynamic Media Classic à votre page
-description: Adobe Dynamic Media Classic est une solution hébergée qui permet de gérer, d’améliorer, de publier et de diffuser des fichiers multimédias enrichis sur des écrans et des imprimantes Web, mobiles, électroniques et connectés à Internet.
-seo-description: Adobe Dynamic Media Classic est une solution hébergée qui permet de gérer, d’améliorer, de publier et de diffuser des fichiers multimédias enrichis sur des écrans et des imprimantes Web, mobiles, électroniques et connectés à Internet.
+title: ajouter les fonctionnalités de Dynamic Media Classic à votre page
+seo-title: ajouter les fonctionnalités de Dynamic Media Classic à votre page
+description: adobe Dynamic Media Classic est une solution hébergée qui permet de gérer, d’améliorer, de publier et de diffuser des fichiers multimédias enrichis sur des écrans et des imprimantes Web, mobiles, électroniques et connectés à Internet.
+seo-description: adobe Dynamic Media Classic est une solution hébergée qui permet de gérer, d’améliorer, de publier et de diffuser des fichiers multimédias enrichis sur des écrans et des imprimantes Web, mobiles, électroniques et connectés à Internet.
 uuid: 66b9c150-c482-4a41-9772-fa39c135802c
 contentOwner: Alva Ware-Bevacqui
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,17 +10,17 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3428'
 ht-degree: 32%
 
 ---
 
 
-# Ajouter les fonctionnalités de Dynamic Media Classic à votre page{#adding-scene-features-to-your-page}
+# ajouter les fonctionnalités de Dynamic Media Classic à votre page{#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) est une solution hébergée qui permet de gérer, d’améliorer, de publier et de diffuser des fichiers multimédias enrichis sur des écrans et des imprimantes Web, mobiles, électroniques et connectés à Internet.
+[adobe Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) est une solution hébergée qui permet de gérer, d’améliorer, de publier et de diffuser des fichiers multimédias enrichis sur des écrans et des imprimantes Web, mobiles, électroniques et connectés à Internet.
 
 Vous pouvez vue AEM fichiers publiés dans Dynamic Media Classic dans différentes visionneuses :
 
@@ -50,7 +50,7 @@ Vous pouvez publier des fichiers numériques dans Dynamic Media Classic à parti
 
 >[!NOTE]
 >
->AEM publie dans Dynamic Media Classic de manière asynchrone. After you click **[!UICONTROL Publish]**, it may take several seconds for your asset to publish to Dynamic Media Classic.
+>aem publie dans Dynamic Media Classic de manière asynchrone. After you click **[!UICONTROL Publish]**, it may take several seconds for your asset to publish to Dynamic Media Classic.
 
 
 ### Publication depuis la console Ressources {#publishing-from-the-assets-console}
@@ -95,7 +95,7 @@ Vous pouvez publier manuellement un fichier tant qu’il se trouve dans le dossi
 
 ### Publishing assets from outside the CQ target folder {#publishing-assets-from-outside-the-cq-target-folder}
 
-Adobe vous recommande de publier des fichiers dans Dynamic Media Classic uniquement à partir des fichiers du dossier de cible Dynamic Media Classic. However, if you need to upload assets from a folder outside of the target folder, you can still do that by uploading them to an *ad-hoc* folder on Dynamic Media Classic.
+adobe vous recommande de publier des fichiers dans Dynamic Media Classic uniquement à partir des fichiers du dossier de cible Dynamic Media Classic. However, if you need to upload assets from a folder outside of the target folder, you can still do that by uploading them to an *ad-hoc* folder on Dynamic Media Classic.
 
 Pour ce faire, vous devez configurer la configuration Cloud pour la page où apparaîtra le fichier. Vous ajoutez ensuite un composant Contenu multimédia dynamique classique à la page et faites glisser un fichier sur le composant. After the page properties are set for that page, a **[!UICONTROL Publish to Dynamic Media Classic]** link appears that when selected triggers uploading to Dynamic Media Classic.
 
@@ -109,7 +109,7 @@ Pour ce faire, vous devez configurer la configuration Cloud pour la page où app
 
 1. In the sidekick, click the **[!UICONTROL Page]** icon, then click **[!UICONTROL Page Properties]**.
 
-1. Cliquez sur **[!UICONTROL Cloud Services > Ajouter services > Dynamic Media Classic (Scene7)**.
+1. Cliquez sur **[!UICONTROL Cloud Services]> Servicesd’Ajoute >[!UICONTROL Dynamic Media Classic (Scene7)]**.
 1. Dans la liste déroulante Adobe de données Dynamic Media Classic, sélectionnez la configuration souhaitée, puis cliquez sur **[!UICONTROL OK]**.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -153,7 +153,7 @@ For more information about this important change, see [Flash viewer end-of-life 
 
 ### Adding a Dynamic Media Classic component to a page {#adding-a-scene-component-to-a-page}
 
-Ajouter un composant Contenu multimédia dynamique classique à une page revient à ajouter un composant à une page. Les composants de Dynamic Media Classic sont décrits en détail dans les sections suivantes.
+ajouter un composant Contenu multimédia dynamique classique à une page revient à ajouter un composant à une page. Les composants de Dynamic Media Classic sont décrits en détail dans les sections suivantes.
 
 **Pour ajouter un composant/visionneuse Contenu multimédia dynamique classique à une page dans l’interface utilisateur** classique :
 
@@ -240,7 +240,7 @@ Le composant Image de Contenu multimédia dynamique classique vous permet d’aj
 
 **[!UICONTROL Format]** de sortie : sélectionnez le format de sortie de l&#39;image, par exemple jpeg. Selon le format de sortie que vous sélectionnez, vous pouvez ajouter des options de configuration supplémentaires. Voir [Gestion des paramètres d’image prédéfinis](/help/assets/managing-image-presets.md).
 
-**[!UICONTROL Accentuation]** : sélectionnez le mode d’accentuation de l’image. L’accentuation est expliquée en détail dans [*Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices (Qualité des images dynamiques classiques et Meilleures pratiques *](/help/assets/assets/s7_sharpening_images.pdf)d’accentuation).
+**[!UICONTROL Accentuation]** : sélectionnez le mode d’accentuation de l’image. L’accentuation est expliquée en détail dans [*Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices (Qualité des images dynamiques classiques et Meilleures pratiques*](/help/assets/assets/s7_sharpening_images.pdf) d’accentuation).
 
 **[!UICONTROL Modificateurs]** d’URL : vous pouvez modifier les effets d’image en fournissant d’autres commandes d’image Dynamic Media Classic. These are described in [Managing Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
