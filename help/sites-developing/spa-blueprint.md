@@ -9,9 +9,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2128'
+source-wordcount: '2124'
 ht-degree: 14%
 
 ---
@@ -88,7 +88,7 @@ The page model leverages the JSON Model Exporter, which is itself based on the [
 * `:hierarchyType`: Type hiérarchique d&#39;une ressource. Actuellement, le type de page `PageModelManager` est pris en charge
 
 * `:items`: Ressources de contenu enfant de la ressource actuelle (structure imbriquée, présente uniquement sur les conteneurs)
-* `:itemsOrder`: liste ordonnée des enfants. L’objet de mappage JSON ne garantit pas l’ordre de ses champs. En disposant à la fois de la carte et de la baie actuelle, le consommateur de l&#39;API bénéficie des avantages des deux structures.
+* `:itemsOrder`: Liste ordonnée des enfants. L’objet de mappage JSON ne garantit pas l’ordre de ses champs. En disposant à la fois de la carte et de la baie actuelle, le consommateur de l&#39;API bénéficie des avantages des deux structures.
 * `:path`: Chemin d’accès au contenu d’un élément (présent sur les éléments représentant une page)
 
 Voir aussi [Prise en main d’AEM Content Services](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/content-services-tutorial-use.html).
@@ -278,7 +278,7 @@ Le fragment suivant illustre la représentation HTML type d’une structure de c
 
 L’application est propriétaire du routage. Le développeur principal doit d’abord implémenter un composant Navigation (mappé à un composant de navigation AEM). Ce composant rendrait les liens URL à utiliser conjointement avec une série d&#39;itinéraires qui afficheront ou masqueront des fragments de contenu.
 
-La [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) bibliothèque sous-jacente et son module `[`ModelRouter`](/help/sites-developing/spa-routing.md) (activé par défaut) sont responsables de la prérécupération et de l&#39;accès au modèle associé à un chemin de ressource donné.
+La [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) bibliothèque sous-jacente et son [`ModelRouter`](/help/sites-developing/spa-routing.md) module (activé par défaut) sont responsables de la prérécupération et de l&#39;accès au modèle associé à un chemin de ressource donné.
 
 Les deux entités se rapportent à la notion de routage, mais la [`ModelRouter`](/help/sites-developing/spa-routing.md) seule responsable du chargement de [`PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) avec un modèle de données structuré en synchronisation avec l&#39;état de l&#39;application en cours est celle de la &quot;PageModelManager&quot;.
 
