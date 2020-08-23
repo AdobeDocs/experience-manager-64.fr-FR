@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -40,10 +40,10 @@ Vous avez besoin de ce qui suit pour intégrer Adobe Sign à AEM Forms :
 
 Une fois les conditions préalables en place, procédez comme suit pour configurer Adobe Sign avec AEM Forms sur l’instance d’auteur :
 
-1. On AEM Forms author instance, navigate to **[!UICONTROL Tools **![hammer](assets/hammer.png)>**General **>**Configuration Browser]**.
+1. On AEM Forms author instance, navigate to **[!UICONTROL Tools** ![hammer](assets/hammer.png) > **General** > **Configuration Browser]**.
 1. On the **[!UICONTROL Configuration Browser]** page, tap **[!UICONTROL Create]**.
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and tap **[!UICONTROL Create]**. Un conteneur de configuration pour les services cloud est créé.
-1. Navigate to **[!UICONTROL Tools **![hammer](assets/hammer.png)>**Cloud Services **>**Adobe Sign]**and select the configuration container you created in the above step.
+1. Navigate to **[!UICONTROL Tools** ![hammer](assets/hammer.png) > **Cloud Services** > **Adobe Sign]** and select the configuration container you created in the above step.
 
    >[!NOTE]
    >
@@ -70,7 +70,7 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
 
    ![Configuration OAuth](assets/oauth_config.png)
 
-1. Revenez à la page **[!UICONTROL Créer une configuration Adobe Sign]**. In the **[!UICONTROL Settings]** tab, the **!UICONTROL OAuth URL]**field mentions the following default URL:
+1. Revenez à la page **[!UICONTROL Créer une configuration Adobe Sign]**. Dans l’onglet **[!UICONTROL Paramètres]**, le champ **[!UICONTROL URL OAuth]** indique l’URL suivante par défaut :
 
    `https://secure.na1.echosign.com/public/oauth`
 
