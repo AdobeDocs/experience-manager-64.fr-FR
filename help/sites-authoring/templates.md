@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
 translation-type: tm+mt
-source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '4811'
 ht-degree: 97%
@@ -41,7 +41,7 @@ Pour obtenir des informations détaillées sur le fonctionnement des modèles mo
 
 >[!NOTE]
 >
->AEM version 6.4.5.0 ou ultérieure est requise pour utiliser des modèles modifiables avec l’éditeur [](/help/sites-developing/spa-overview.md)d’applications monopages.
+>aem version 6.4.5.0 ou ultérieure est requise pour utiliser des modèles modifiables avec l’éditeur [](/help/sites-developing/spa-overview.md)d’applications monopages.
 
 >[!NOTE]
 >
@@ -316,7 +316,7 @@ Les aspects suivants d’un modèle peuvent être modifiés :
 
 * [Mise en page](#editing-a-template-layout-template-author)
 
-   Vous pouvez prédéfinir la mise en page du modèle pour les formats de dispositif de votre choix. Le mode **Mise en page** pour la création de modèles comporte la même fonctionnalité que le mode **[Mise en page](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**pour la création de pages].
+   Vous pouvez prédéfinir la mise en page du modèle pour les formats de dispositif de votre choix. Le mode **Mise en page** pour la création de modèles comporte la même fonctionnalité que le mode **[Mise en page](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)** pour la création de pages.
 
 * [Stratégies de page](#editing-a-template-structure-template-author)
 
@@ -445,7 +445,7 @@ En mode **Structure** de l’éditeur de modèles :
 
    >[!NOTE]
    >
-   >Si plusieurs composants du même type sont ajoutés comme contenu initial, la même stratégie s’applique à tous les composants. Cela correspond à la même restriction en **[mode Création](/help/sites-authoring/default-components-designmode.md)**que pour les modèles statiques.
+   >Si plusieurs composants du même type sont ajoutés comme contenu initial, la même stratégie s’applique à tous les composants. Cela correspond à la même restriction en **[mode Création](/help/sites-authoring/default-components-designmode.md)** que pour les modèles statiques.
 
    ***Propriétés***
 
