@@ -10,9 +10,9 @@ topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1435'
 ht-degree: 77%
 
 ---
@@ -26,7 +26,7 @@ Le serveur AEM Forms propose deux instances : Auteur et Publication. L’instan
 
 ## Ressources prises en charge   {#supported-assets-nbsp}
 
-AEM Forms prend en charge les types de ressources suivants :
+aem forms prend en charge les types de ressources suivants :
 
 * Formulaires adaptatifs
 * Documents adaptatifs
@@ -145,7 +145,7 @@ Procédez comme suit pour planifier la date et l’heure de publication et d’a
    1. Move the pointer over an asset and tap **[!UICONTROL Unpublish]** ![unpublish](assets/unpublish.png).
    1. Effectuez l’une des actions suivantes, puis appuyez sur Annuler la publication :
 
-      * If you are in the card view, tap **[!UICONTROL Enter Selection** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), and tap the asset. L’élément est sélectionné.
+      * If you are in the card view, tap **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), and tap the asset. L’élément est sélectionné.
       * If you are in the list view, hover over an asset and tap ![selectassetcheckmark](assets/selectassetcheckmark.png) . L’élément est sélectionné.
       * Appuyez sur un élément pour en afficher les détails.
       * Display an asset&#39;s properties by tapping View Properties ![viewproperties](assets/viewproperties.png).
