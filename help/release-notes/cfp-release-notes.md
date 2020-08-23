@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques aux packs de correctifs cumulés
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 87843465e8e0b372dc457630b84bcb5e50628dea
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2158'
 ht-degree: 24%
 
 ---
@@ -20,15 +20,15 @@ ht-degree: 24%
 |---|---|
 | Version | 6.4.8.1 |
 | Type | Pack de correctifs cumulés  |
-| Date    | 4 juin 2020 |
+| Date | 4 juin 2020 |
 | Condition requise | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
-| URL de téléchargement | AEM 6.4.8.1 sur la distribution de [logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
+| URL de téléchargement | aem 6.4.8.1 sur la distribution de [logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
 
 ## Fonctionnalités présentes dans AEM 6.4.8.1 {#what-s-included-in-aem}
 
-AEM Cumulative Fix Pack 6.4.8.1 est une mise à jour importante qui comprend plusieurs correctifs internes et clients depuis la disponibilité générale d&#39;AEM 6.4 Service Pack 8 (6.4.8.0) en mars 2020.
+aem Cumulative Fix Pack 6.4.8.1 est une mise à jour importante qui comprend plusieurs correctifs internes et clients depuis la disponibilité générale d&#39;AEM 6.4 Service Pack 8 (6.4.8.0) en mars 2020.
 
-AEM Cumulative Fix Pack 6.4.8.1 dépend de AEM 6.4 Service Pack 8. Par conséquent, vous devez installer AEM Cumulative Fix Pack 6.4.8.1 après avoir installé AEM 6.4 Service Pack 8.
+aem Cumulative Fix Pack 6.4.8.1 dépend de AEM 6.4 Service Pack 8. Par conséquent, vous devez installer AEM Cumulative Fix Pack 6.4.8.1 après avoir installé AEM 6.4 Service Pack 8.
 
 Voici quelques-uns des points saillants de l&#39;AEM 6.4.8.1 :
 
@@ -115,7 +115,7 @@ Adobe Experience Manager 6.4.8.1 apporte des correctifs aux problèmes suivants.
 
 >[!NOTE]
 >
->AEM Cumulative Fix Pack n&#39;inclut pas de correctifs pour AEM Forms. Les correctifs sont fournis à l’aide d’un module complémentaire Forms distinct.  En outre, un programme d’installation cumulatif est publié, qui comprend des correctifs pour AEM Forms on JEE. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
+>aem Cumulative Fix Pack n&#39;inclut pas de correctifs pour AEM Forms. Les correctifs sont fournis à l’aide d’un module complémentaire Forms distinct.  En outre, un programme d’installation cumulatif est publié, qui comprend des correctifs pour AEM Forms on JEE. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
 * Correspondence Management : Lorsqu’un utilisateur colle du contenu à partir d’un [!DNL Word] document, le fragment de document de texte ne conserve pas la mise en forme (NPR-33213).
 * Forms adaptatif : Une nouvelle ligne d’une chaîne dans un dictionnaire de formulaires adaptatifs ajoute `&#xa;` des caractères au dictionnaire (NPR-33265).
@@ -162,9 +162,9 @@ Suivez les étapes suivantes pour installer le pack de correctifs cumulés sur u
 
 1. Cliquez sur le lien Distribution [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-1.0.zip) logiciels pour télécharger le package.
 
-1. Ouvrez [Package Manager](http://localhost:4502/crx/packmgr/index.jsp) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Open [Package Manager](http://localhost:4502/crx/packmgr/index.jsp) and click **[!UICONTROL Upload Package]** to upload the package.
 
-1. Sélectionnez le nom du package et cliquez sur **[!UICONTROL Installer]**.
+1. Select the package name and click **[!UICONTROL Install]**.
 
 >[!NOTE]
 >
@@ -192,12 +192,12 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 To determine the certified platform for running with this release of AEM Sites and Assets, see [Technical Requirements](../sites-deploying/technical-requirements.md).
 
->[!NNote]
+>[!NOTE]
 >On successful installation of the package, an informational message appears indicating that the content package has installed successfully, such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
 ### Mise à jour des visionneuses de médias dynamiques (5.10.1) {#update-dynamic-media-viewers}
 
-AEM 6.4.8.1 contient la nouvelle version des visionneuses de contenu Contenu multimédia dynamique (5.10.1) qui permet de vérifier les noms des duplicata sur la page Paramètres d’image prédéfinis. Il est conseillé aux utilisateurs de Contenu multimédia dynamique d’exécuter la commande suivante afin de mettre à jour les paramètres prédéfinis de la visionneuse prête à l’emploi.
+aem 6.4.8.1 contient la nouvelle version des visionneuses de contenu Contenu multimédia dynamique (5.10.1) qui permet de vérifier les noms des duplicata sur la page Paramètres d’image prédéfinis. Il est conseillé aux utilisateurs de Contenu multimédia dynamique d’exécuter la commande suivante afin de mettre à jour les paramètres prédéfinis de la visionneuse prête à l’emploi.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -244,7 +244,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées ou dés
 | Zone | Fonctionnalité | Remplacement | Version |
 |---|---|---|---|
 | Ressources | Gérer l’action de balise pour les sous-ensembles | Aucun remplacement. | AEM 6.4.2.0 |
-| Intégration des Ressources et d’Adobe Creative Cloud | [AEM au partage](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) des dossiers des Creative Cloud a été introduit dans AEM 6.2 pour permettre aux utilisateurs créatifs d’accéder aux ressources à partir d’AEM. Adobe Asset Link, nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apportera pas d’améliorations supplémentaires à la fonctionnalité de partage de dossiers. Bien que la fonction soit incluse dans AEM, les clients sont (il est fortement conseillé d’utiliser le remplacement). | Lien de ressources d’Adobe ou application de bureau. Pour plus d’informations, reportez-vous à l’article [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
+| Intégration des Ressources et d’Adobe Creative Cloud | [aem au partage](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) des dossiers des Creative Cloud a été introduit dans AEM 6.2 pour permettre aux utilisateurs créatifs d’accéder aux ressources à partir d’AEM. Adobe Asset Link, nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apportera pas d’améliorations supplémentaires à la fonctionnalité de partage de dossiers. Bien que la fonction soit incluse dans AEM, les clients sont (il est fortement conseillé d’utiliser le remplacement). | Lien de ressources d’Adobe ou application de bureau. Pour plus d’informations, reportez-vous à l’article [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
 
 ## Problèmes connus {#known-issues}
 
