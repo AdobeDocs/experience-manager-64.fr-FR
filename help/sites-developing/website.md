@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 translation-type: tm+mt
-source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4919'
+source-wordcount: '4916'
 ht-degree: 64%
 
 ---
@@ -75,7 +75,7 @@ Après avoir installé AEM, accédez à l’environnement de développement CRXD
 
 Utilisez CRXDE Lite pour créer la structure d’application mywebsite dans le référentiel :
 
-1. In the tree on the left side of CRXDE Lite, right-click the **`/apps`** folder and click **[!UICONTROL Create > Create Folder]**. In the **Create Folder** dialog, type `mywebsite` as the folder name and click **[!UICONTROL OK**.
+1. In the tree on the left side of CRXDE Lite, right-click the **`/apps`** folder and click **[!UICONTROL Create > Create Folder]**. Dans la boîte de dialogue **Créer un dossier**, indiquez `mywebsite` comme nom de dossier, puis cliquez sur **OK**.
 1. Right-click the `/apps/mywebsite` folder and click **[!UICONTROL Create > Create Folder]**. Dans la boîte de dialogue **[!UICONTROL Créer un dossier]**, indiquez `components` comme nom de dossier, puis cliquez sur **[!UICONTROL OK]**.
 1. Right-click the `/apps/mywebsite` folder and click **[!UICONTROL Create > Create Folder]**. Dans la boîte de dialogue **[!UICONTROL Créer un dossier]**, indiquez `templates` comme nom de dossier, puis cliquez sur **[!UICONTROL OK]**.
 
@@ -788,7 +788,7 @@ Créez la boîte de dialogue utilisée pour configurer les propriétés du compo
 
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
-1. Ajoutez les propriétés du noeud listroot pour le configurer en tant que champ de texte. Chaque ligne du tableau suivant représente une propriété. When finished, click **[!UICONTROL Save All]**.
+1. ajoutez les propriétés du noeud listroot pour le configurer en tant que champ de texte. Chaque ligne du tableau suivant représente une propriété. When finished, click **[!UICONTROL Save All]**.
 
    | Nom | Type | Valeur |
    |---|---|---|
@@ -1082,7 +1082,7 @@ Cette section vous explique comment inclure le composant Titre, qui est l’un d
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
->[!NNote]
+>[!NOTE]
 >You can set a different Title and the Type/Size in **[!UICONTROL Edit]** mode.
 
 ### Insertion du composant Système de paragraphes {#including-the-paragraph-system-component}
@@ -1275,7 +1275,7 @@ Votre zone de saisie des termes de recherche se présentera comme suit sur la pa
       * **[!UICONTROL Description]**: Ceci est mon composant de recherche
       * **[!UICONTROL Groupe]**: MonSite Web
    1. Click **[!UICONTROL Next]**, then click **[!UICONTROL Next]** again.
-   1. On the **[!UICONTROL Allowed Parents** panel, click the **[!UICONTROL +]** button and type `*/parsys`.
+   1. On the **[!UICONTROL Allowed Parents]** panel, click the **[!UICONTROL +]** button and type `*/parsys`.
    1. Click **[!UICONTROL Next]** and then click **[!UICONTROL OK]**.
 
 
