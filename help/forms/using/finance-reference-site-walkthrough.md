@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9242'
-ht-degree: 64%
+source-wordcount: '9231'
+ht-degree: 65%
 
 ---
 
@@ -27,7 +27,7 @@ Installez les sites de référence comme décrit dans [Installation et configur
 
 We.Finance est une organisation de premier plan dans le domaine des services financiers qui offre des solutions financières complètes et personnalisées pour répondre aux exigences de différents profils clients. Elle propose des cartes de crédit, des prêts immobiliers et des services d’assurance habitation.
 
-Leur objectif est d&#39;atteindre les clients existants et potentiels sur leur périphérique préféré, d&#39;expliquer les avantages de leurs services et de les aider à s&#39;inscrire à leurs services. En outre, elle cherche à lancer davantage de produits financiers tels que les cartes ajoutées que les clients peuvent trouver intéressants.
+Leur objectif est d&#39;atteindre les clients existants et potentiels sur leur appareil préféré, d&#39;expliquer les avantages de leurs services et de les aider à s&#39;inscrire à leurs services. En outre, elle cherche à lancer davantage de produits financiers tels que les cartes ajoutées que les clients peuvent trouver intéressants.
 
 Poursuivez la lecture de cet article pour obtenir des informations détaillées sur les cas d’utilisation de We.Finance et comprendre comment AEM Forms aide les organisations financières à atteindre leurs objectifs. Les procédures pas à pas suivantes sont abordées :
 
@@ -871,7 +871,7 @@ La présentation de l&#39;assurance automobile contient également un autre clie
 * La politique standard coûte moins cher que la politique de prime.
 * La politique de prime comporte une récompense contre le vol et la politique standard a une récompense de conduite intelligente.
 
-Les deux stratégies utilisent la même communication interactive. Les sections de la stratégie sont modifiées ou masquées en fonction de la condition de type de stratégie. You can access and review the auto insurance renewal interactive communication directly from https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal
+Les deux stratégies utilisent la même communication interactive. Les sections de la stratégie sont modifiées ou masquées en fonction de la condition de type de stratégie. Vous pouvez accéder à la communication interactive de renouvellement d&#39;assurance automobile et la consulter directement depuis `https://[authorHost]: [authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
 
 **Utilisation de Microsoft Dynamics comme source de données**
 
@@ -900,13 +900,13 @@ Sarah clicks **Renew Now** and is directed to the web version of her auto insura
 
 #### Fonctionnement  {#how-it-works-21}
 
-Les sorties Web et imprimées de votre lettre d&#39;assurance automobile sont créées à l&#39;aide des fonctionnalités multicanaux d&#39;Interactive Communications. The **Renew Now** button in the email is linked to the auto insurance renew application, which is an interactive communication on a publish instance.
+Les sorties Web et imprimées de votre lettre d&#39;assurance automobile sont créées à l&#39;aide des fonctionnalités multi-canaux d&#39;Interactive Communications. The **Renew Now** button in the email is linked to the auto insurance renew application, which is an interactive communication on a publish instance.
 
 ![ic-web-version](assets/ic-web-version.png)
 
 #### Démonstration  {#see-it-yourself-19}
 
-Vous devriez recevoir un courrier électronique avec un fichier PDF joint. Le PDF est une version imprimée de votre lettre d&#39;assurance automobile. Click **Renew Now** to reach to the web version of the policy. Vérifiez vos informations personnelles et les détails de votre stratégie et cliquez sur **Renouveler maintenant**. Il vous conduit à un formulaire adaptatif pour paiement.
+Vous devriez recevoir un courrier électronique avec un fichier PDF joint. Le PDF est une version imprimée de votre lettre d&#39;assurance automobile. Click **Renew Now** to reach to the web version of the policy. Vérifiez vos informations personnelles et les détails de votre stratégie, puis cliquez sur **Renouveler maintenant**. Il vous conduit à un formulaire adaptatif pour paiement.
 
 The **Renew Now** button in the email directs Sarah to the web version of the policy. Vous pouvez consulter l’URL suivante :
 
@@ -922,7 +922,7 @@ Lorsque Sarah clique sur **Renouveler maintenant** sur la version Web de la comm
 
 #### Fonctionnement  {#how-it-works-22}
 
-  Sarah remplit les détails de la carte de crédit et clique sur **Envoyer**. Son paiement par carte de crédit est traité et un message de remerciement configuré dans le formulaire adaptatif s’affiche à l’écran.
+Le bouton Renouveler maintenant dirige Sarah vers la page de paiement. La page de paiement est un formulaire adaptatif. Sarah remplit les détails de la carte de crédit et clique sur **Envoyer**. Son paiement par carte de crédit est traité et un message de remerciement configuré dans le formulaire adaptatif s’affiche à l’écran.
 
 #### Démonstration  {#see-it-yourself-20}
 
