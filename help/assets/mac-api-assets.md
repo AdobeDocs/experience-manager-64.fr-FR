@@ -3,10 +3,10 @@ title: API HTTP Assets  dans [!DNL Adobe Experience Manager].
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5125cf56a71f72f1391262627b888499e0ac67b4
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '1458'
-ht-degree: 92%
+source-wordcount: '1552'
+ht-degree: 87%
 
 ---
 
@@ -24,6 +24,9 @@ La réponse de l’API est un fichier JSON pour certains types MIME et un code d
 
 Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] ni par le biais de l’API HTTP. L’API renvoie un message d’erreur 404 si l’[!UICONTROL heure d’activation] se situe dans le futur ou si l’[!UICONTROL heure de désactivation] se situe dans le passé.
 
+>[!CAUTION]
+>
+>[L’API HTTP met à jour les propriétés](#update-asset-metadata) de métadonnées dans l’ `jcr` espace de nommage. Toutefois, l’interface utilisateur du Experience Manager met à jour les propriétés de métadonnées dans l’ `dc` espace de nommage.
 
 ## Modèle de données {#data-model}
 
@@ -66,17 +69,17 @@ Dans [!DNL Experience Manager], un dossier comprend les composants suivants :
 
 L’API Assets HTTP offre les fonctionnalités suivantes :
 
-* Récupérer une liste de dossiers.
-* Créer un dossier.
-* Créer une ressource.
-* Mettre à jour le fichier binaire d’une ressource.
-* Mettre à jour les métadonnées d’une ressource.
-* Créer un rendu de ressource.
-* Mettre à jour un rendu de ressource.
-* Créer un commentaire de ressource.
-* Copier un dossier ou une ressource.
-* Déplacer un dossier ou une ressource.
-* Supprimer un dossier, une ressource ou un rendu.
+* [Récupérer une liste de dossiers](#retrieve-a-folder-listing).
+* [Créer un dossier](#create-a-folder)
+* [Créer une ressource](#create-an-asset).
+* [Mettre à jour le fichier binaire d’une ressource](#update-asset-binary).
+* [Mettre à jour les métadonnées d’une ressource](#update-asset-metadata).
+* [Créer un rendu de ressource](#create-an-asset-rendition).
+* [Mettre à jour un rendu de ressource](#update-an-asset-rendition).
+* [Créer un commentaire de ressource](#create-an-asset-comment).
+* [Copier un dossier ou une ressource](#copy-a-folder-or-asset).
+* [Déplacer un dossier ou une ressource](#move-a-folder-or-asset).
+* [Supprimer un dossier, une ressource ou un rendu](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
@@ -157,7 +160,7 @@ Met à jour le binaire d’un fichier (rendu avec le nom original). Une mise à 
 
 Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez à jour une propriété du namespace `dc:`, l’API met à jour cette même propriété dans le namespace `jcr`. L’API ne synchronise pas les propriétés des deux namespaces.
 
-**Requête** : `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**Requête** : `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Codes de réponse** : les codes de réponse sont les suivants :
 
@@ -165,6 +168,27 @@ Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez 
 * 404 - INTROUVABLE - si la ressource n’a pas été trouvée ou est inaccessible à l’aide de l’URI fourni.
 * 412 - ÉCHEC DE LA PRÉCONDITION - si la collection racine est introuvable ou inaccessible.
 * 500 - ERREUR INTERNE DU SERVEUR - si une autre erreur s’est produite.
+
+### Mise à jour des métadonnées de synchronisation entre `dc` et `jcr` l’espace de nommage {#sync-metadata-between-namespaces}
+
+La méthode API met à jour les propriétés de métadonnées dans l’ `jcr` espace de nommage. Les mises à jour effectuées à l’aide de l’interface utilisateur tactile modifient les propriétés de métadonnées dans l’ `dc` espace de nommage. Pour synchroniser les valeurs de métadonnées entre `dc` et `jcr` l’espace de nommage, vous pouvez créer un processus et configurer le Experience Manager pour qu’il exécute le processus lors de la modification des ressources. Utilisez un script ECMA pour synchroniser les propriétés de métadonnées requises. L’exemple de script suivant synchronise la chaîne de titre entre `dc:title` et `jcr:title`.
+
+```javascript
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH")
+{
+ var path = workflowData.getPayload().toString();
+ var node = workflowSession.getSession().getItem(path);
+ var metadataNode = node.getNode("jcr:content/metadata");
+ var jcrcontentNode = node.getNode("jcr:content");
+if (jcrcontentNode.hasProperty("jcr:title"))
+{
+ var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+ metadataNode.setProperty("dc:title", jcrTitle.toString());
+ metadataNode.save();
+}
+}
+```
 
 ## Créer un rendu de ressource {#create-an-asset-rendition}
 
