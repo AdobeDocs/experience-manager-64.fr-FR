@@ -3,10 +3,10 @@ title: Modification ou ajout de métadonnées
 description: Découvrez les métadonnées des ressources dans AEM Assets et les différentes façons de les modifier.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 94%
+source-wordcount: '483'
+ht-degree: 86%
 
 ---
 
@@ -54,3 +54,11 @@ Vous pouvez ajouter vos propres espaces de noms à AEM. Tout comme il existe des
 
 1. Pour ajouter un espace de noms, cliquez ou appuyez sur **[!UICONTROL Nouveau]** en bas de la page.
 1. Spécifiez un espace de noms personnalisé dans la convention des espaces de noms XML (spécifiez l’identifiant sous la forme d’un URI et d’un préfixe), puis cliquez ou appuyez sur **[!UICONTROL Enregistrer]**.
+
+## Conseils et restrictions {#best-practices-limitations}
+
+* Les métadonnées sont mises à jour via l’interface utilisateur tactile pour modifier les propriétés de métadonnées dans l’ `dc` espace de nommage. Toute mise à jour effectuée via l’API HTTP modifie les propriétés de métadonnées dans l’ `jcr` espace de nommage. Voir [comment mettre à jour les métadonnées à l’aide de l’API](/help/assets/mac-api-assets.md#update-asset-metadata)HTTP.
+
+>[!MORELIKETHIS]
+>
+>* [À propos des métadonnées et de leurs besoins dans les ressources](metadata.md)
