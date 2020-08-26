@@ -55,7 +55,7 @@ Les emplacements de référentiel par défaut où la charge utile, les brouillon
   <tr> 
    <td><strong>Charge utile</strong></td> 
    <td>/var/fd/dashboard/payload/[server_id]/[date]/<br /> [id-charge-utile]/</td> 
-   <td>/etc/fd/dashboard/payload/[server_id]/[date]/<br /> [id-charge-utile/</td> 
+   <td>/etc/fd/dashboard/payload/[server_id]/[date]/<br /> [id-charge-utile]/</td> 
   </tr> 
   <tr> 
    <td><strong>Brouillons</strong></td> 
