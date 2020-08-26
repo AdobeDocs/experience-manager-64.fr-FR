@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: babfbd7e864eb15c0b06b114fea4cef6db2a6a07
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 6%
+source-wordcount: '611'
+ht-degree: 7%
 
 ---
 
@@ -33,9 +33,10 @@ La première étape consiste à ajouter une propriété de super-type de ressour
 Utilisation de CRXDE Lite:
 
 <!--Resolve steps below-->
-    * Nom : `sling:resourceSuperType`
-    * Type : `String`
-    * Value: &quot;fondation/composants/page&quot;
+
+* Nom : `sling:resourceSuperType`
+* Type : `String`
+* Valeur : `foundation/components/page`
 
 1. Cliquez sur le vert **[!UICONTROL [+]Ajoute]**
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**
