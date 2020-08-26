@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: 730a874376c21d5d137223e35662b42e722049cf
+source-git-commit: 269facfb6351b0b7c73e963ac7c5dc0b57c78a3e
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 87%
@@ -34,7 +34,7 @@ Il existe plusieurs scénarios d’utilisation :
 
 * Obtenir des objets spécifiques à l’implémentation.
 
-    Par exemple, une implémentation basée sur JCR de l’interface [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) permet d’accéder à l’objet [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) JCR sous-jacent.`
+    Par exemple, une implémentation basée sur JCR de l’interface [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) permet d’accéder à l’objet [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) JCR sous-jacent.
 
 * Création de raccourcis d’objets qui nécessitent la transmission d’objets de contexte internes.
 
@@ -84,7 +84,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
 
 ### Sling {#sling}
 
-[**Resource **](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html)s’adapte à :
+[**Resource**](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) s’adapte à :
 
 <table> 
  <tbody> 
@@ -120,7 +120,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td> 
    <td>Renvoie le contenu binaire d’un "fichier"<code>nt:resource</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>AuthorizableResourceProvider</code><code>org.apache.sling.jackrabbit.usermanager</code><code>/system/userManager</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:Page</code><code>cq:PseudoPage</code></td></tr><tr><td></td><td><code>cq:Component</code></td></tr><tr><td></td><td><code>cq:Page</code></td></tr><tr><td></td><td><code>cq:Template</code></td></tr><tr><td></td><td><code>cq:Page</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:Tag</code></td></tr><tr><td></td><td><code>cq:Preferences</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr></tbody></table>
 
-[**ResourceResolver **](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html)s’adapte à :
+[**ResourceResolver**](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html) s’adapte à :
 
 <table> 
  <tbody> 
@@ -187,11 +187,11 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
  </tbody> 
 </table>
 
-[**SlingHttpServletRequest **](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)s’adapte à :
+[**SlingHttpServletRequest**](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) s’adapte à :
 
 Pas encore de cible, mais implémente l’interface Adaptable et peut être utilisé comme source dans une AdapterFactory personnalisée.
 
-[**SlingHttpServletResponse **](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html)s’adapte à :
+[**SlingHttpServletResponse**](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html) s’adapte à :
 
 <table> 
  <tbody> 
@@ -204,7 +204,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 #### WCM {#wcm}
 
-[**Page **](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)s’adapte à :
+[**Page**](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) s’adapte à :
 
 <table> 
  <tbody> 
@@ -227,7 +227,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
  </tbody> 
 </table>
 
-[**Component **](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)s’adapte à :
+[**Component**](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html) s’adapte à :
 
 | [Resource](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource du composant. |
 |---|---|
@@ -235,7 +235,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 | [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud du composant. |
 | … | Tous les éléments auxquels la ressource du composant peut être adaptée. |
 
-[**Template **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)s’adapte à :
+[**Template**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html) s’adapte à :
 
 <table> 
  <tbody> 
@@ -260,7 +260,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 #### Sécurité {#security}
 
-[**Autorisé&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html),[**utilisateur**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) et [**groupe **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html)s&#39;adapter à :
+[**Autorisé**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html), [**utilisateur**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) et [**groupe**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html) s&#39;adapter à :
 
 | [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Renvoie le nœud racine utilisateur/groupe. |
 |---|---|
@@ -268,7 +268,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 #### Gestion des actifs numériques {#dam}
 
-[**Asset **](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html)s’adapte à :
+[**Asset**](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html) s’adapte à :
 
 | [Resource](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de l’actif. |
 |---|---|
@@ -277,7 +277,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 #### Balisage {#tagging}
 
-[**Tag **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html)s’adapte à :
+[**Tag**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html) s’adapte à :
 
 | [Resource](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de la balise. |
 |---|---|
