@@ -10,7 +10,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
-source-git-commit: 6f6952686446359485f180050219a12db9d3969a
+source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 90%
@@ -189,7 +189,7 @@ La procédure suivante explique comment créer un teaser pour un produit :
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
-1. Sélectionnez **[!UICONTROL Configurer](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)**dans la barre d’outils du composant.
+1. Sélectionnez **[[!UICONTROL Configurer]](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** dans la barre d’outils du composant.
 1. Ajoutez la **[!UICONTROL ressource]** et définissez les **[!UICONTROL propriétés]** selon vos besoins.
 1. Confirmez les définitions en cliquant sur **[!UICONTROL Terminé]** (icône représentant une coche).
 1. Ajoutez d’autres composants, en fonction de vos besoins.
