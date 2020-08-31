@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur d’AEM 6.4 Forms
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3711'
 ht-degree: 73%
 
 ---
@@ -504,7 +504,6 @@ ht-degree: 73%
       + [Rendre les polices disponibles](/help/forms/using/admin-help/make-fonts-available.md)
       + [Définition des polices à incorporer](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [Définition des paramètres de protection](/help/forms/using/admin-help/specify-security-settings.md)
-      + [Modification du jeu de caractères](/help/forms/using/admin-help/change-character-set.md)
    + Configuration du processus des formulaires{#configure-forms-workflow}
       + [A propos de la terminologie concernant l’administration et les processus](/help/forms/using/admin-help/administration-process-terminology.md)
       + [Gestion de processus](/help/forms/using/admin-help/processes.md)
