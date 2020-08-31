@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
-user-guide-title: AEM 6.4 Guide de l’utilisateur
+user-guide-title: aem 6.4 Guide de l’utilisateur
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '614'
 ht-degree: 97%
 
 ---
@@ -150,7 +150,6 @@ ht-degree: 97%
    + [Intégration à Adobe Search&amp;Promote](search-and-promote.md)
    + [Intégration de solutions](integration.md)
    + [Intégration de fragments d’expérience dans Adobe Target](experience-fragments-target.md)
-   + [Meilleures pratiques des modèles de courrier électronique](best-practices-for-email-templates.md)
 + Bonnes pratiques {#bestpractices}
    + [Bonnes pratiques](administer-best-practices.md)
    + [Meilleures pratiques de traduction](tc-bp.md)
