@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur de création AEM 6.4
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: e0b25517821971098978db078b2f205a8a380459
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '266'
 ht-degree: 89%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 89%
 # AEM 6.4 Authoring User Guide {#authoring}
 
 + [Présentation du guide de l’utilisateur de création](home.md)
-+ tâches, outils et concepts essentiels pour la création AEM {#essentials}
++ Tâches, outils et concepts essentiels pour la création AEM {#essentials}
    + [Premières étapes pour les auteurs](first-steps.md)
    + [Guide rapide pour la création de pages](qg-page-authoring.md)
    + [Concept de création](author.md)
@@ -55,7 +55,6 @@ ht-degree: 89%
    + [Génération de modèles automatique](scaffolding.md)
    + [Configuration de composants en mode de conception](default-components-designmode.md)
    + [Composants de base](default-components-foundation.md)
-   + [Génération de modèles automatique](scaffolding.md)
 + Projets {#projects}
    + [Projets](projects.md)
    + [Gestion de projets](touch-ui-managing-projects.md)
@@ -87,7 +86,7 @@ ht-degree: 89%
    + [Gestion des audiences](managing-audiences.md)
    + [Création et gestion d’offres](offerlib.md)
    + [Compréhension de la segmentation](segmentation-overview.md)
-+ AEM et Adobe Campaign {#aem-adobe-campaign}
++ aem et Adobe Campaign {#aem-adobe-campaign}
    + [Utilisation d’Adobe Campaign](adobe-campaign.md)
    + [Utilisation d’Adobe Campaign Classic et d’Adobe Campaign Standard](campaign.md)
    + [Ciblage de votre Adobe Campaign](target-adobe-campaign.md)
