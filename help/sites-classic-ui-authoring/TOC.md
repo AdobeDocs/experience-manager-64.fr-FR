@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur de création d’interface utilisateur classique AEM 6.4
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 91%
+source-wordcount: '298'
+ht-degree: 90%
 
 ---
 
@@ -67,10 +67,8 @@ ht-degree: 91%
    + [Utilisation du Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
    + [Marketing par messagerie électronique](classic-personalization-campaigns-email.md)
    + [Suivi des messages rejetés](classic-personalization-campaigns-email-tracking-bounces.md)
-   + [Teasers et stratégies](classic-personalization-campaigns-teasers-strategy.md)
    + [Configuration d’une campagne](classic-personalization-campaigns-setting-up-your.md)
    + [Publication d’un courrier électronique sur des services de messagerie](classic-personalization-campaigns-email-newsletters.md)
-   + [Utilisation du Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
    + [Création d’une page d’entrée efficace pour une newsletter](classic-personalization-campaigns-email-landingpage.md)
    + [Gestion des abonnements](classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
