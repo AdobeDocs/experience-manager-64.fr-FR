@@ -2,13 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 - Guide de déploiement
+user-guide-title: aem 6.4 - Guide de déploiement
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: b9a270eb29e92e98a54b596ba745ef71f73a7b55
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 95%
+source-wordcount: '332'
+ht-degree: 93%
 
 ---
 
@@ -68,6 +68,7 @@ ht-degree: 95%
    + [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](pattern-detector.md)
    + [Compatibilité descendante dans AEM 6.4](backward-compatibility.md)
    + [Processus de mise à niveau](upgrade-procedure.md)
+   + [Utilisation de la réindexation hors connexion pour réduire les temps d’inactivité lors d’une mise à niveau](upgrade-offline-reindexing.md)
    + [Réalisation d’une mise à niveau statique](in-place-upgrade.md)
    + [Migration différée du contenu](lazy-content-migration.md)
    + [Utilisation de l’outil de migration CRX2OAK](using-crx2oak.md)
