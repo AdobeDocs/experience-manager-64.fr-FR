@@ -1,8 +1,8 @@
 ---
-title: Ajouter des bibliothèques clientes
-seo-title: Ajouter des bibliothèques clientes
-description: Ajouter un dossier ClientLibrary
-seo-description: Ajouter un dossier ClientLibrary
+title: ajouter les bibliothèques clientes
+seo-title: ajouter les bibliothèques clientes
+description: ajouter un dossier ClientLibrary
+seo-description: ajouter un dossier ClientLibrary
 uuid: cdc1d258-2011-4517-9206-dd2b5d1f7e0d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: 805e4411930749ff4b6b05ea4a8b87b4f96d72fd
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 8%
@@ -18,9 +18,9 @@ ht-degree: 8%
 ---
 
 
-# Ajouter des bibliothèques clientes {#add-clientlibs}
+# ajouter les bibliothèques clientes {#add-clientlibs}
 
-## Ajouter un dossier ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
+## ajouter un dossier ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
 Créez un dossier ClientLibraryFolder nommé `clientlibs`qui contiendra les fichiers JS et CSS utilisés pour générer les pages de votre site.
 
@@ -45,7 +45,7 @@ Dans l’onglet **[!UICONTROL Propriétés]** du nouveau `clientlibs` noeud, sai
 * Cliquez sur **[!UICONTROL Ajouter]**
 * Cliquez sur **[!UICONTROL Enregistrer tout]**
 
-Remarque : la préface de la valeur catégories avec &quot;applications&quot;. est une convention permettant d&#39;identifier l&#39;application propriétaire comme se trouvant dans le dossier /apps et non /libs.  IMPORTANT : Ajoutez un espace réservé `js.txt` et `css.txt` des fichiers. (Il ne s’agit pas officiellement d’un cq:ClientLibraryFolder sans eux.)
+Remarque : la préface de la valeur catégories avec &quot;applications&quot;. est une convention permettant d&#39;identifier l&#39;application propriétaire comme se trouvant dans le dossier /apps et non /libs.  IMPORTANT : ajoutez un espace réservé `js.txt` et `css.txt` des fichiers. (Il ne s’agit pas officiellement d’un cq:ClientLibraryFolder sans eux.)
 
 
 1. Cliquez avec le bouton droit sur **`/etc/designs/an-scf-sandbox/clientlibs`**
@@ -78,7 +78,7 @@ Créez ensuite un fichier sous clientlibs nommé style.css, puis définissez le 
 
 ## Incorporer les bibliothèques clientes SCF {#embed-scf-clientlibs}
 
-Dans l’onglet **[!UICONTROL Propriétés]** du noeud, saisissez la propriété String à plusieurs valeurs `clientlibs` incorporée ****. Les bibliothèques côté [client (clientlibs) nécessaires seront ainsi incorporées aux composants](client-customize.md#clientlibs-for-scf)SCF. Pour ce tutoriel, nous allons ajouter plusieurs clientlibs nécessaires aux composants Communautés.
+Dans l’onglet **[!UICONTROL Propriétés]** du noeud, saisissez la propriété String à plusieurs valeurs `clientlibs` incorporée ****. Les bibliothèques côté [client (clientlibs) nécessaires seront ainsi incorporées aux composants](client-customize.md#clientlibs-for-scf)SCF. Pour ce tutoriel, nous allons ajouter plusieurs clientlibs nécessaires pour les composants Communautés.
 
 **Notez** qu’il peut s’agir de l’approche souhaitée pour un site de production, car il y a des considérations de commodité par rapport à la taille/vitesse des clientlibs téléchargés pour chaque page.
 
@@ -124,7 +124,7 @@ Une fois les clientlibs apps.an-scf-sandbox inclus, le composant de commentaires
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-L&#39;instruction include appartient à la variable <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> de la section <html> script. La valeur par défaut **`foundation head.jsp`** inclut un script qui peut être superposé : **`headlibs.jsp`**.
+L’instruction include appartient à la `<head>` section du `<html>` script. La valeur par défaut **`foundation head.jsp`** inclut un script qui peut être superposé : **`headlibs.jsp`**.
 
 **Copiez headlibs.jsp et incluez clientlibs :**
 
@@ -160,7 +160,7 @@ Chargez votre site Web dans le navigateur et vérifiez si l’arrière-plan n’
 
 A ce stade, il existe un sandbox minimaliste, et il peut être utile d&#39;enregistrer sous forme de package pour que, lors de la lecture, si votre référentiel est corrompu et que vous souhaitez le début, vous puissiez désactiver votre serveur, renommer ou supprimer le dossier crx-quickstart/, activer votre serveur, télécharger et installer ce package enregistré, et ne pas avoir à répéter ces étapes les plus basiques.
 
-Ce paquet existe sur le tutoriel [Créer un exemple de page](create-sample-page.md) pour ceux qui ne peuvent pas attendre d&#39;entrer et de jouer au début ! ....
+Ce paquet existe sur le tutoriel [Créer un exemple de page](create-sample-page.md) pour ceux qui ne peuvent pas attendre d&#39;entrer et de début de lecture !...
 
 Pour créer un pack :
 
