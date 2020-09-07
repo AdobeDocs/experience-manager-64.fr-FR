@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques aux packs de correctifs cumulés
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5fefc81e68e64bcaa8df1d9648c4266367a92129
+source-git-commit: d3721590e3c2dfd2b048f1b5964915a343f95f6d
 workflow-type: tm+mt
-source-wordcount: '3331'
+source-wordcount: '3364'
 ht-degree: 16%
 
 ---
@@ -171,6 +171,7 @@ aem Cumulative Fix Pack 6.4.8.1 dépend de AEM 6.4 Service Pack 8. Par conséque
 
 Voici quelques-uns des points saillants de l&#39;AEM 6.4.8.1 :
 
+* L&#39;accès anonyme au CRXDE Lite n&#39;est pas autorisé pour améliorer la sécurité. Les utilisateurs sont redirigés vers l’écran de connexion. See [developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 * Suppression de l’intégration Package Share avec Adobe Experience Manager.
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.8.21.
 
@@ -180,6 +181,7 @@ Adobe Experience Manager 6.4.8.1 apporte des correctifs aux problèmes suivants.
 
 #### Sites {#sites-6481}
 
+* Les utilisateurs anonymes peuvent accéder aux fonctionnalités CRX DE Lite (NPR-33522).
 * Lorsque le nom d&#39;un composant local d&#39;un LiveCopy est identique au nom d&#39;un composant du plan et que le composant est déployé à partir du plan, le terme _msm_move n&#39;est pas ajouté au nom du composant local (NPR-33207).
 * Les paramètres annexés à la requête d’origine ne sont pas inclus dans l’URL de redirection (NPR-33174).
 * Lorsque l&#39;option Coral.Select définit emptyOption=true ou contient un élément par défaut avec la valeur = &quot;&quot;, le fichier dropdownshowhide.js rencontre une erreur : Erreur de type non interceptée : component.getValue n&#39;est pas une fonction (NPR-33163).
