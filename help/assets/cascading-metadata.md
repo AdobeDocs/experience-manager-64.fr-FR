@@ -3,10 +3,10 @@ title: Métadonnées en cascade
 description: Cet article décrit comment définir des métadonnées en cascade pour des ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 452c90bc72c8d71af4b6c4ca2243024b459f53d9
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 96%
+source-wordcount: '980'
+ht-degree: 95%
 
 ---
 
@@ -14,6 +14,10 @@ ht-degree: 96%
 # Métadonnées en cascade {#cascading-metadata}
 
 Cet article décrit comment définir des métadonnées en cascade pour des ressources.
+
+>[!CAUTION]
+>
+>Les métadonnées en cascade ne sont pas prises en charge pour les fragments de contenu.
 
 Lors de la capture des informations de métadonnées d’une ressource, les utilisateurs fournissent des informations dans les différents champs disponibles. Vous pouvez afficher des valeurs de champ ou des champs de métadonnées spécifiques en fonction des options sélectionnées dans les autres champs. Ce type d’affichage conditionnel des métadonnées est désigné sous le nom de métadonnées en cascade. En d’autres termes, vous pouvez créer une dépendance entre un champ/une valeur de métadonnées en particulier, ainsi qu’entre un ou plusieurs champs et/ou leurs valeurs.
 
