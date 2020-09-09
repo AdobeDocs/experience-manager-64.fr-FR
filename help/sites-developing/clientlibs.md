@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 translation-type: tm+mt
-source-git-commit: 50d57997496e6809361277f7025f3858857e14af
+source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 60%
@@ -181,8 +181,8 @@ Then you set the `allowProxy` property on `foo` to true.
 1. Sélectionnez le dossier de bibliothèques clientes et cliquez ensuite sur **Créer > Créer un fichier**.
 1. Dans la zone du nom de fichier, saisissez l’un des noms suivants et cliquez ensuite sur OK :
 
-   * **`js.txt`:**Utilisez ce nom de fichier pour générer un fichier JavaScript.
-   * **`css.txt`:**Utilisez ce nom de fichier pour générer une feuille de style en cascade.
+   * **`js.txt`:** Utilisez ce nom de fichier pour générer un fichier JavaScript.
+   * **`css.txt`:** Utilisez ce nom de fichier pour générer une feuille de style en cascade.
 
 1. Ouvrez le fichier et saisissez le texte suivant pour identifier la racine du chemin d’accès des fichiers sources :
 
@@ -242,7 +242,6 @@ In some cases you may find that the final HTML generated for typical page by you
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/shared.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/granite/underscore.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.js"></script>
 ```
 
@@ -315,7 +314,7 @@ Par exemple, le tableau suivant répertorie la valeur de la propriété `channel
 | `/libs/cq/analytics/widgets/themes/default` | `!touch` |
 | `/libs/cq/cloudserviceconfigs/widgets` | `!touch` |
 | `/libs/cq/searchpromote/widgets` | `!touch` |
-| `/libs/cq/searchpromote/widgets/themes/default` | `[`*aucune valeur *`]` |
+| `/libs/cq/searchpromote/widgets/themes/default` | `[`*aucune valeur*`]` |
 | `/libs/cq/touch/widgets` | `touch` |
 | `/libs/cq/touch/widgets/themes/default` | `touch` |
 | `/libs/cq/ui/widgets` | `!touch` |
