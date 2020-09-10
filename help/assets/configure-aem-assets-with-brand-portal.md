@@ -1,12 +1,12 @@
 ---
-title: Configuration d’AEM Assets avec Brand Portal
+title: Configuration d’AEM Assets avec Brand Portal
 description: 'Découvrez comment configurer AEM Assets avec Brand Portal pour publier des ressources et des collections sur Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 1510b3a1b40e2e08579fc833f563fa77d6cc65cd
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 58%
+source-wordcount: '1678'
+ht-degree: 59%
 
 ---
 
@@ -92,7 +92,7 @@ La configuration IMS comprend deux étapes :
 
 Un certificat public permet d’authentifier votre profil sur Adobe I/O.
 
-1. Connectez-vous à votre instance d&#39;auteur AEM AssetsURL par défaut : http:// localhost:4502/aem/start.html
+1. Connectez-vous à votre instance d’auteur AEM AssetsURL par défaut : http:// localhost:4502/aem/start.html
 1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** >> **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Interface utilisateur de configuration du compte Adobe IMS](assets/ims-config1.png)
@@ -254,10 +254,6 @@ Pour créer une configuration de service cloud Brand Portal, procédez comme su
    >
    >Les agents de réplication fonctionnent en parallèle et partagent la répartition des tâches de manière égale, augmentant ainsi la vitesse de publication de quatre fois la vitesse initiale. Une fois le service cloud configuré, aucune configuration supplémentaire n’est requise pour activer les agents de réplication activés par défaut pour permettre la publication parallèle de plusieurs actifs.
 
-   >[!NOTE]
-   >
-   >Évitez de désactiver tout agent de réplication, car cela peut entraîner l’échec de la réplication de certaines ressources.
-
 
 1. To verify the connection between AEM Assets author and Brand Portal, click **[!UICONTROL Test Connection]**.
 
@@ -267,15 +263,13 @@ Pour créer une configuration de service cloud Brand Portal, procédez comme su
 
    ![](assets/test-integration5.png)
 
-   >[!NOTE]
-   >
-   >Les agents de réplication fonctionnent en parallèle et partagent la répartition des tâches de manière égale, augmentant ainsi la vitesse de publication de quatre fois la vitesse initiale. Une fois le service cloud configuré, aucune configuration supplémentaire n’est requise pour activer les agents de réplication activés par défaut pour permettre la publication parallèle de plusieurs actifs.
 
 1. Vérifiez les résultats du test sur les quatre agents de réplication un par un.
 
    >[!NOTE]
    >
    >Évitez de désactiver tout agent de réplication, car cela peut entraîner l’échec de la réplication de certaines ressources.
+   >Assurez-vous que les quatre agents de réplication sont configurés pour éviter les erreurs de délai d’attente. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Le portail de marque a été correctement configuré avec votre instance d’auteur AEM Assets. Vous pouvez maintenant :
 
