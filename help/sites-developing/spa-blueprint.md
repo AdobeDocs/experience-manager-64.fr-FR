@@ -9,10 +9,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '2124'
-ht-degree: 14%
+ht-degree: 13%
 
 ---
 
@@ -49,7 +49,7 @@ La `PageModelManager` bibliothèque est fournie sous la forme d&#39;un package N
 
 Au nom de l’application sur une seule page, il extrait la récupération et la gestion de la structure JSON qui représente la structure de contenu proprement dite. Il est également responsable de la synchronisation avec l’application d’une seule page pour lui indiquer quand elle doit effectuer un nouveau rendu de ses composants.
 
-Voir le package NPM [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
+Voir le package NPM [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
 Lors de l’initialisation de l’application `PageModelManager`, la bibliothèque charge d’abord le modèle racine fourni de l’application (par l’intermédiaire d’un paramètre, d’une propriété meta ou de l’URL active). Si la bibliothèque identifie que le modèle de la page active ne fait pas partie du modèle racine qu’elle récupère et l’inclut comme modèle de page enfant.
 
@@ -99,14 +99,14 @@ La séparation des préoccupations aide à faciliter la mise en oeuvre du projet
 
 Pour faciliter l&#39;interopérabilité des bibliothèques, l&#39;Adobe conseille au module spécifique au cadre de regrouper les bibliothèques suivantes. Si nécessaire, la couche peut encapsuler et adapter les API sous-jacentes avant de les exposer au projet.
 
-* [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+* [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 #### Mises en œuvre {#implementations}
 
 #### Réagir {#react}
 
-module npm : [@adobe/cq-response-editable-components](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
+module npm : [@adobe/aem-response-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### Angular {#angular}
 
@@ -169,7 +169,7 @@ Le composant de grille réactive doit être prémappé à son homologue AEM car 
 * `gridClassNames:` Noms de classe fournis pour la grille dynamique
 * `columnClassNames:` Noms de classe fournis pour la colonne réactive
 
-Voir aussi la ressource npm [@adobe/cq-response-editable-components#srccomponentsreponvegridjsx](https://www.npmjs.com/package/@adobe/cq-react-editable-components#srccomponentsresponsivegridjsx)
+Voir aussi la ressource npm [@adobe/aem-response-editable-components#srccomponentsreponvegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### Espace réservé de la grille réactive {#placeholder-of-the-reponsive-grid}
 
