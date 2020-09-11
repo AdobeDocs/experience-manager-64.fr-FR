@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Élaboration du Guide de l’utilisateur
+user-guide-title: aem 6.4 Élaboration du Guide de l’utilisateur
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '803'
 ht-degree: 80%
 
 ---
@@ -114,7 +114,7 @@ ht-degree: 80%
       + [Routage de modèle SPA](spa-routing.md)
       + [Intégration SPA et Adobe Experience Platform Launch](spa-launch.md)
       + [SPA et rendu côté serveur](spa-ssr.md)
-      + [Références de l’API JavaScript SPA](spa-reference-materials.md)
+      + [Documents de référence SPA](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
    + [Fragments de contenu](/help/assets/content-fragments.md)
    + [Fragments d’expérience](/help/sites-authoring/experience-fragments.md)
@@ -163,7 +163,7 @@ ht-degree: 80%
    + [Extension du Multi Site Manager](extending-msm.md)
    + Suivi et analyses{#extending-analytics}
       + [Extension du suivi des événements](extending-analytics.md)
-      + [Ajouter le suivi des Adobe Analytics aux composants](extending-analytics-components.md)
+      + [ajouter le suivi des Adobe Analytics aux composants](extending-analytics-components.md)
       + [Personnalisation du cadre Adobe Analytics](extending-analytics-framework.md)
       + [Implémentation de l’appellation des pages côté serveur pour Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
