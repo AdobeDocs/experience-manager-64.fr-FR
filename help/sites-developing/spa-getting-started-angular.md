@@ -1,15 +1,15 @@
 ---
 title: Prise en main des applications monopages en AEM - Angular
 seo-title: Prise en main des applications monopages en AEM - Angular
-description: Cet article présente un exemple d’application d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page.
-seo-description: Cet article présente un exemple d’application d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page.
+description: Cet article présente un exemple d’application d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page.
+seo-description: Cet article présente un exemple d’application d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page.
 uuid: 29748b0d-c269-4d42-8f89-bd7477d997ad
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 50e24c2b-ad7e-4422-a850-9a0bf6bd9423
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 30%
@@ -62,9 +62,9 @@ Le `package.json` fichier définit les exigences du pack d’application d’une
 
 ```
 "dependencies": {
-  "@adobe/cq-angular-editable-components": "~1.0.3",
-  "@adobe/cq-spa-component-mapping": "~1.0.3",
-  "@adobe/cq-spa-page-model-manager": "~1.0.4"
+  "@adobe/aem-angular-editable-components": "~1.0.3",
+  "@adobe/aem-spa-component-mapping": "~1.0.5",
+  "@adobe/aem-spa-page-model-manager": "~1.0.3"
 }
 ```
 
@@ -131,12 +131,12 @@ Un composant d’image simplifié est utilisé comme exemple, mais tous les comp
 
 The entry point into the SPA is the `app.module.ts` file shown here simplified to focus on the important content.
 
-```
+```javascript
 // app.module.ts
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { SpaAngularEditableComponentsModule } from '@adobe/cq-angular-editable-components';
+import { SpaAngularEditableComponentsModule } from '@adobe/aem-angular-editable-components';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -162,11 +162,11 @@ Lorsque le composant est instancié de manière statique à l’aide du modèle 
 
 Une fois `app.module.ts` amorcé `AppComponent`, il peut initialiser l’application, qui est présentée ici dans une version simplifiée pour se concentrer sur le contenu important.
 
-```
+```javascript
 // app.component.ts
 import { Component } from '@angular/core';
-import { ModelManager } from '@adobe/cq-spa-page-model-manager';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { ModelManager } from '@adobe/aem-spa-page-model-manager';
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-root',
@@ -196,11 +196,11 @@ export class AppComponent {
 
 En traitant la page, `app.component.ts` les appels `main-content.component.ts` sont répertoriés ici dans une version simplifiée.
 
-```
+```javascript
 import { Component } from '@angular/core';
 import { ModelManagerService }     from '../model-manager.service';
 import { ActivatedRoute } from '@angular/router';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-main',
