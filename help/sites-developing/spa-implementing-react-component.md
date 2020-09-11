@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 10%
@@ -66,7 +66,7 @@ Le changement est persistant et le composant se met automatiquement à jour avec
 
 Le composant météorologique est en fait basé sur un composant React disponible au public, appelé [React Open Weather](https://www.npmjs.com/package/react-open-weather), qui a été adapté pour fonctionner en tant que composant dans l&#39;exemple d&#39;application SPA du Journal We.Retail.
 
-Voici quelques extraits de la documentation du MNP sur l&#39;utilisation du composant Réagir aux conditions météorologiques ouvertes.
+Voici quelques extraits de la documentation du MNP sur l&#39;utilisation du composant Réagir aux intempéries.
 
 ![screen_shot_2018-06-08at144723](assets/screen_shot_2018-06-08at144723.png) ![screen_shot_2018-06-08at144215](assets/screen_shot_2018-06-08at144215.png)
 
@@ -79,7 +79,7 @@ Vérification du code du composant météorologique personnalisé ( `Weather.js`
 
 * **Lignes 31 à 44**: Le composant Météo étend la `Component` classe et fournit les données requises telles que définies dans la documentation sur l&#39;utilisation du MNP pour le composant Réagir à la météo ouverte et effectue le rendu du composant.
 
-```
+```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ~ Copyright 2018 Adobe Systems Incorporated
  ~
@@ -97,7 +97,7 @@ Vérification du code du composant météorologique personnalisé ( `Weather.js`
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 import React, {Component} from 'react';
 import ReactWeather from 'react-open-weather';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Weather.css');
 
