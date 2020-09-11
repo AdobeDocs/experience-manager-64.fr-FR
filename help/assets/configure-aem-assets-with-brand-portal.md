@@ -3,7 +3,7 @@ title: Configuration d’AEM Assets avec Brand Portal
 description: 'Découvrez comment configurer AEM Assets avec Brand Portal pour publier des ressources et des collections sur Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 1510b3a1b40e2e08579fc833f563fa77d6cc65cd
+source-git-commit: f9993c7a1a7be95cf4f2652f32e71f370ff3c727
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 59%
@@ -269,6 +269,7 @@ Pour créer une configuration de service cloud Brand Portal, procédez comme su
    >[!NOTE]
    >
    >Évitez de désactiver tout agent de réplication, car cela peut entraîner l’échec de la réplication de certaines ressources.
+   >
    >Assurez-vous que les quatre agents de réplication sont configurés pour éviter les erreurs de délai d’attente. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Le portail de marque a été correctement configuré avec votre instance d’auteur AEM Assets. Vous pouvez maintenant :
