@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: c842bd832a63ed9e96801c56ff35489ee6df630b
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 53%
@@ -49,7 +49,7 @@ Le composant de page d’une application d’une seule page ne fournit pas les c
 
 ### Gestion du modèle de page {#page-model-management}
 
-The resolution and the management of the page model is delegated to a provided `PageModel` library. L’application d’une seule page doit utiliser la bibliothèque de modèles de page pour être initialisée et créée par l’éditeur d’applications d’une seule page. La bibliothèque de modèle de page est fournie indirectement au composant de page AEM via le npm `cq-react-editable-components`. Le modèle de page est un interpréteur entre AEM et l’application d’une seule page. Par conséquent, elle doit toujours être présente. Lorsque la page est créée, une bibliothèque supplémentaire `cq.authoring.pagemodel.messaging` doit être ajoutée afin de permettre la communication avec l’éditeur de page.
+The resolution and the management of the page model is delegated to a provided `PageModel` library. L’application d’une seule page doit utiliser la bibliothèque de modèles de page pour être initialisée et créée par l’éditeur d’applications d’une seule page. La bibliothèque de modèle de page est fournie indirectement au composant de page AEM via le npm `aem-react-editable-components`. Le modèle de page est un interpréteur entre AEM et l’application d’une seule page. Par conséquent, elle doit toujours être présente. Lorsque la page est créée, une bibliothèque supplémentaire `cq.authoring.pagemodel.messaging` doit être ajoutée afin de permettre la communication avec l’éditeur de page.
 
 Si le composant de page SPA hérite du composant principal de la page, deux options sont possibles pour faire en sorte que la catégorie de la bibliothèque cliente `cq.authoring.pagemodel.messaging` soit disponible :
 
@@ -223,7 +223,7 @@ Pour plus d’informations sur la `editElementQuery` propriété et la configura
 
 L’AEM SPA Editor SDK a été introduit avec AEM 6.4 Service Pack 2. Il est entièrement soutenu par l&#39;Adobe et, en tant que nouvelle fonctionnalité, il continue d&#39;être amélioré et élargi. Les fonctionnalités AEM suivantes ne sont pas encore couvertes par l’éditeur d’applications monopages :
 
-* Mode Cible
+* Mode cible
 * ContextHub
 * Modification des images intégrées
 * Modifier les configurations (ex. auditeurs)
@@ -232,4 +232,4 @@ L’AEM SPA Editor SDK a été introduit avec AEM 6.4 Service Pack 2. Il est ent
 * Différence de page et déformation temporelle
 * Fonctionnalités de réécriture HTML côté serveur telles que le vérificateur de liens, le service de réécriture CDN, le raccourcissement d’URL, etc.
 * Mode développeur
-* AEM lancements
+* aem lancements
