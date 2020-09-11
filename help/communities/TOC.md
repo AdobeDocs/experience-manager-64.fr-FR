@@ -2,10 +2,11 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Guide de l’utilisateur des communautés
+user-guide-title: aem 6.4 Guide de l’utilisateur des communautés
+breadcrumb-title: Communities Guide
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 26%
@@ -92,7 +93,7 @@ ht-degree: 26%
    + [Aide-mémoire SCF](handlebars-helpers.md)
    + [Présentation du fournisseur de ressources d&#39;Enregistrement](srp.md)
    + [Site communautaire Essentials](sites-for-developers.md)
-   + [Activité Stream Essentials](essentials-activities.md)
+   + [activité Stream Essentials](essentials-activities.md)
    + [Affectations Essentials](essentials-assignments.md)
    + [Blog Essentials](blog-developer-basics.md)
    + [Calendrier essentiel](calendar-basics-for-developers.md)
@@ -126,13 +127,13 @@ ht-degree: 26%
    + [Contenu initial du sandbox](initial-content.md)
    + [Développement d’une application Sandbox](develop-app.md)
    + [Développement du contenu du sandbox](develop-content.md)
-   + [Ajouter des bibliothèques clientes](add-clientlibs.md)
+   + [ajouter les bibliothèques clientes](add-clientlibs.md)
    + [Composant de commentaires d’incrustation](overlay-comments.md)
    + [Page Créer des commentaires](overlay-create-comments-page.md)
    + [Créer des noeuds](overlay-create-nodes.md)
    + [Modification de l’aspect](overlay-alter-appearance.md)
    + [Création des composants](extend-create-components.md)
-   + [Ajouter le commentaire à l&#39;exemple de page](extend-sample-page.md)
+   + [ajouter un commentaire sur un exemple de page](extend-sample-page.md)
    + [Étendre le composant Commentaires](extend-comments.md)
    + [Modification de l’aspect (HBS)](extend-alter-appearance.md)
    + [Créer un exemple de page](create-sample-page.md)
