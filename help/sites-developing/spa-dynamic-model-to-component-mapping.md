@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ Chaque élément présent dans le modèle contient un `:type` champ qui expose u
 
 Pour plus d&#39;informations sur l&#39;analyse des modèles et sur l&#39;accès des composants frontaux au modèle, consultez le document [SPA Blueprint](/help/sites-developing/spa-blueprint.md) .
 
-Voir aussi le package npm : [https://www.npmjs.com/package/@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+Voir aussi le package npm : [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 ## Application d&#39;une seule page pilotée par un modèle {#model-driven-single-page-application}
 
