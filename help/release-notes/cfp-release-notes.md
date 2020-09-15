@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques aux packs de correctifs cumulés
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5989421ee1207880462fd1eaefc1a9714061307e
+source-git-commit: 3b96c351b3deb72e1381e101433f4246fd26af1b
 workflow-type: tm+mt
-source-wordcount: '3362'
+source-wordcount: '3402'
 ht-degree: 16%
 
 ---
@@ -361,7 +361,7 @@ Pour plus d’informations sur l’installation du programme d’installation cu
 
 ### Uber Jar {#uber-jar}
 
-The Uber Jar for AEM 6.4.8.2 is available in the [Adobe Public Maven repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/).
+The Uber Jar for AEM 6.4.8.2 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/).
 
 To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](../sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -373,6 +373,10 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
       <scope>provided</scope>
 </dependency>
 ```
+
+>[!NOTE]
+>
+>A partir de cette version, UberJar et d’autres artefacts associés sont disponibles dans le référentiel Maven Central et non dans le référentiel Adobe Public Maven (repo.adobe.com). Le fichier UberJar principal est renommé `uber-jar-<version>.jar`. Par conséquent, il n’existe aucune `classifier`valeur, avec `apis` comme valeur, pour la `dependency` balise.
 
 ## Fonctionnalités supprimées / obsolètes {#removed-deprecated-features}
 
