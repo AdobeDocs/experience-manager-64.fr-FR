@@ -3,9 +3,9 @@ title: 'Configuration des modules externes d’éditeur de texte enrichi '
 description: Apprenez à configurer les modules externes d’éditeur de texte enrichi d’AEM afin d’activer différentes fonctionnalités.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 2236d029dc463930e6bbdc1e1aed89e761f0cd89
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4204'
 ht-degree: 94%
 
 ---
@@ -706,7 +706,7 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
       * **Nom** `cssExternal`
       * **Type** `String`
       * **Valeur** Nom de la classe CSS (non précédé d’un point « . »  ; par exemple, `cssClass` au lieu de `.cssClass`)
-   * Tableau des **protocoles** valides (dont https://, https://, file://, mailto:, entre autres)
+   * Tableau de **protocoles** valides. Les protocoles pris en charge sont `http://`, `https://`, `file://`et `mailto:`.
 
       * **Nom** `protocols`
       * **Type** `String[]`
