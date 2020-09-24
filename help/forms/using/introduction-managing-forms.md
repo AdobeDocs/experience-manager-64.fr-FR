@@ -6,10 +6,10 @@ seo-description: AEM Forms met à la disposition des utilisateurs des outils des
 uuid: 8a9fe83a-e9dc-410e-9bae-eca936c6eb8a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: introduction
+topic-tags: forms-manager, introduction
 discoiquuid: 6f9cb26a-ac7f-4218-827f-9d4d55b859b4
 translation-type: tm+mt
-source-git-commit: 1a671421c208d8b1b446765b9302877506dbddc2
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 80%
@@ -53,7 +53,7 @@ Le bouton de création est le point de départ du processus de création de char
 
 * **Fragment de formulaire adaptatif :** bien que chaque formulaire soit conçu pour un rôle spécifique, certains segments sont communs à la plupart des formulaires, comme les informations personnelles telles que le nom et l’adresse, les informations relatives à la famille et aux revenus, etc. Vous pouvez créer un actif pour les sections de ce type.  Ces segments réutilisables et autonomes sont appelés fragments de formulaire adaptatif. Pour plus de détails, l’article relatif aux [fragments de formulaire adaptatif](/help/forms/using/adaptive-form-fragments.md).
 
-* **Jeu de formulaires :** un jeu de formulaires est un assortiment de formulaires HTML5 regroupés et présentés aux utilisateurs finaux comme un ensemble unique de formulaires. Lorsque les utilisateurs finaux commencent à compléter un jeu de formulaires, les formulaires passent facilement d’un formulaire à l’autre. A la fin, un utilisateur peut envoyer tous les formulaires, en tant qu’entité unique, en un seul clic. Pour plus d’informations, voir [Jeu de formulaires dans AEM Forms](/help/forms/using/formset-in-aem-forms.md).
+* **Jeu de formulaires :** un jeu de formulaires est un assortiment de formulaires HTML5 regroupés et présentés aux utilisateurs finaux comme un ensemble unique de formulaires. Lorsque les utilisateurs finaux commencent à compléter un jeu de formulaires, les formulaires passent facilement d’un formulaire à l’autre. À la fin, un utilisateur peut envoyer tous les formulaires, en un seul clic, en tant qu’entité. Pour plus d’informations, voir [Jeu de formulaires dans AEM Forms](/help/forms/using/formset-in-aem-forms.md).
 
 * **Dossier :** l’interface utilisateur d’AEM Forms utilise des dossiers pour classer les ressources. Elle prend en charge deux types de dossiers :
 
@@ -114,7 +114,7 @@ Le panneau d’outils AEM contient des outils pour divers composants. To navigat
    * **Références :** un actif AEM Forms peut être utilisé dans plusieurs actifs AEM Forms. Par exemple, un fragment de document peut être utilisé dans plusieurs lettres. Les références sont une liste des actifs (d’autres formulaires ou ressources) dans lesquels l’actif sélectionné est utilisé et également la liste des autres actifs que l’actif sélectionné utilise.
 
 * **Chemins de navigation :** un chemin de navigation représente le titre de la console ou du dossier actif. Vous pouvez cliquer sur l’option Chemin de navigation pour naviguer entre le niveau des dossiers qui sont plus élevés dans la hiérarchie.
-* **Commutateur de Vue :** Vous pouvez cliquer sur la ![liste](assets/viewlist.png) d’affichage de l’icône de permutation de Vues ou sur la carte de ![visionneuse](assets/viewcard.png) pour basculer rapidement entre la vue de la liste et celle de la carte. Pour plus d’informations sur les composants d’interface utilisateur communs, voir [Utilisation de l’environnement de rédaction](/help/sites-authoring/basic-handling.md).
+* **Commutateur de vue :** Vous pouvez cliquer sur la ![liste](assets/viewlist.png) d’affichage de l’icône de permutation de Vues ou sur la carte de ![visionneuse](assets/viewcard.png) pour basculer rapidement entre la vue de la liste et celle de la carte. Pour plus d’informations sur les composants d’interface utilisateur communs, voir [Utilisation de l’environnement de rédaction](/help/sites-authoring/basic-handling.md).
 * **Rechercher :** L&#39;option de recherche ![de la recherche](assets/search.png) permet de trouver rapidement le contenu et les outils dont vous avez besoin et d&#39;y accéder rapidement. Saisissez le nom de la fonctionnalité de contenu ou de produit, puis sélectionnez l’une des suggestions. Par exemple, saisissez « documents » pour rechercher et accéder rapidement à la console Formes et documents ou Fragments de document. Pour plus de détails sur la recherche, voir l’article sur la [recherche](/help/sites-authoring/search.md) AEM 6.2.
 * **Barre d’outils Actions** : lors de la sélection d’un actif, la barre d’outils des actions s’affiche au-dessus de la liste des actifs. Elle contient tous les outils de gestion pour l’actif sélectionné. Vous pouvez placer votre curseur sur l’icône d’outil pour afficher l’info-bulle qui en décrit la fonctionnalité
 
