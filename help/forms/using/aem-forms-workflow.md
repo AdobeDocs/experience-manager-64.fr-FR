@@ -5,11 +5,11 @@ description: Utilisez AEM Forms Workflow pour automatiser et créer rapidement l
 seo-description: Utilisez AEM Forms Workflow pour automatiser et créer rapidement la révision et les approbations, pour démarrer Documents Services (par exemple, pour convertir un document PDF dans un autre format), pour intégrer le processus de signature Adobe Sign et bien plus encore.
 uuid: 46be7ec6-d5cc-498a-9484-e66a29527064
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: document_services
+topic-tags: document_services, publish
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '2916'
 ht-degree: 91%
@@ -77,8 +77,8 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 1. Activez les notifications électroniques. Vous pouvez configurer le processus Forms-Central sur OSGi pour envoyer des notifications par courrier électronique aux utilisateurs ou aux personnes désignées. Effectuez les configurations suivantes pour activer les notifications électroniques :
 
    1. Accédez au gestionnaire de configuration AEM à l’adresse `https://[server]:[port]/system/console/configMgr`.
-   1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Enregistrer]**.
-   1. Ouvrez la configuration de **[!UICONTROL Day CQ Link Externalizer]**. Dans le champ **[!UICONTROL Domaines]**, spécifiez le nom de hôte /l’adresse IP et le numéro de port réels pour les instances locale, de l’auteur et de publication. Cliquez sur **[!UICONTROL Enregistrer]**.
+   1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Save]**.
+   1. Ouvrez la configuration de **[!UICONTROL Day CQ Link Externalizer]**. Dans le champ **[!UICONTROL Domaines]**, spécifiez le nom de hôte /l’adresse IP et le numéro de port réels pour les instances locale, de l’auteur et de publication. Cliquez sur **[!UICONTROL Save]**.
 
 1. Créez des étapes de processus. Un processus peut se composer de plusieurs étapes. Ces étapes sont affichées dans la boîte de réception AEM et signalent la progression du processus.
 
@@ -275,7 +275,7 @@ Vous pouvez associer et exécuter un flux de travaux centré sur Forms sur OSGi 
 Vous pouvez utiliser les étapes Affecter une tâche et Envoyer un courrier électronique des processus AEM pour envoyer un courrier électronique. Effectuez les étapes suivantes pour spécifier les serveurs de messagerie et les autres configurations requises pour l’envoi de courriers électroniques :
 
 1. Accédez au gestionnaire de configuration AEM à l’adresse `https://[server]:[port]/system/console/configMgr`.
-1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Save]**.
 1. Ouvrez la configuration de **[!UICONTROL Day CQ Link Externalizer]**. Dans le champ **[!UICONTROL Domaines]**, spécifiez le nom de hôte /l’adresse IP et le numéro de port réels pour les instances locale, de l’auteur et de publication. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 ### Purge des instances de processus {#purge-workflow-instances}
