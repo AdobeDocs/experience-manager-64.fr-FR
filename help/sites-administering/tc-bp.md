@@ -6,11 +6,11 @@ seo-description: Découvrez les meilleures pratiques compilées par les équipes
 uuid: 3bac1d73-9696-4c9b-8bdd-6f00fac40cf7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
+topic-tags: site-features, best-practices
 content-type: reference
-topic-tags: best-practices
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
 translation-type: tm+mt
-source-git-commit: c1cf6fa92c923cce18000c8dd82b2c17d6783ee5
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '859'
 ht-degree: 77%
