@@ -5,11 +5,11 @@ description: Vous pouvez utiliser les thèmes pour styliser et fournir une ident
 seo-description: Vous pouvez utiliser les thèmes pour styliser et fournir une identité visuelle à un formulaire adaptatif ou à une communication interactive. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs ou de communications interactives.
 uuid: 7fa8afd9-8454-44a5-939b-b213b9a800cc
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: c5933e2a-fb8d-4d1b-a301-c8a2bc7ee226
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '6041'
 ht-degree: 80%
@@ -397,7 +397,7 @@ Les options de personnalisation des styles d’état varient en fonction des dif
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Property</strong></td> 
+   <td><strong>Propriété</strong></td> 
    <td><strong>Utilisation</strong></td> 
   </tr> 
   <tr> 
@@ -637,7 +637,7 @@ Vous pouvez voir le fichier CSS généré à l’aide des options suivantes :
 
 * Option **Affichage CSS** dans la barre latérale : lorsque vous sélectionnez un composant dans le thème, vous pouvez voir l’option AFFICHAGE CSS dans la barre latérale. It shows the generated CSS, including CSS for `::before` and `::after` pseudo elements.
 
-* **Option de thème de Vue CSS** dans la barre d’outils de la zone de travail : Dans la barre d’outils de la zone de travail, cliquez sur Options ![de](assets/theme-options.png) thème > Thème de **Vue CSS**. Vous pouvez voir tout le thème CSS généré à partir des propriétés que vous définissez dans l’éditeur de thèmes.
+* **Option de thème de vue CSS** dans la barre d’outils de la zone de travail : Dans la barre d’outils de la zone de travail, cliquez sur Options ![de](assets/theme-options.png) thème > Thème de **Vue CSS**. Vous pouvez voir tout le thème CSS généré à partir des propriétés que vous définissez dans l’éditeur de thèmes.
 
 ## Dépannage, recommandations et bonnes pratiques {#troubleshooting-recommendations-and-best-practices}
 
@@ -657,7 +657,7 @@ Vous pouvez voir le fichier CSS généré à l’aide des options suivantes :
       1. Dans la page Thèmes, sélectionnez un thème, puis cliquez sur **[!UICONTROL Afficher les propriétés]**.
       1. Dans la page des propriétés qui s’ouvre, cliquez sur **[!UICONTROL Avancé]**.
       1. Dans le champ Emplacement de la bibliothèque client de l’onglet Avancé, recherchez et sélectionnez la bibliothèque client à utiliser.
-      1. Cliquez sur **[!UICONTROL Enregistrer]**.
+      1. Cliquez sur **[!UICONTROL Save]**.
 
       La mise en forme que vous spécifiez dans la bibliothèque client est importée dans le thème qui l’utilise. Par exemple, vous spécifiez mise en page pour la zone de texte, la zone numérique et le basculement dans la bibliothèque client. Lorsque vous importez votre bibliothèque client dans le thème, la mise en page pour la zone de texte, la zone numérique et le basculement dans la bibliothèque client. Vous pouvez alors mettre en forme d’autres composants à l’aide de l’éditeur de thème.\
       Vous pouvez également créer un thème, créer des copies de ce thème, puis modifiez la mise en forme fournie dans les thèmes copiés pour des cas d’utilisation similaires.
