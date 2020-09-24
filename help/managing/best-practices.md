@@ -6,11 +6,11 @@ seo-description: 'La gestion d’un projet de mise en œuvre d’Adobe Experienc
 uuid: 61b45b1b-af0b-4b1b-9a52-6767611fc1ab
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
+topic-tags: managing-checklist, introduction
 content-type: reference
-topic-tags: introduction
 discoiquuid: b891009b-d3b1-402a-920a-014366f342f0
 translation-type: tm+mt
-source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '3313'
 ht-degree: 94%
@@ -31,7 +31,7 @@ Pour vous aider, les meilleures pratiques se composent des éléments suivants 
 
 * La documentation, fondée directement sur la [liste de contrôle](/help/managing/best-practices-checklist.md), qui décrit :
 
-   * [analyse Project Heartbeat](#project-heartbeat-dashboard) .
+   * [Analyse Project Heartbeat](#project-heartbeat-dashboard) .
    * [Présentation du statut par rôle](#status-by-role) .
    * les [phases et jalons](#phases-and-milestones).
    * le [personnage principal](#persona) et sa participation à chaque étape (appropriée).
@@ -57,7 +57,7 @@ La feuille de calcul de **pulsation du projet** fournit un aperçu graphique des
 
 ## État par rôle {#status-by-role}
 
-La feuille de calcul **État par rôle** indique le détail de l’**[état, la qualité et la complétude](#project-heartbeat-dashboard)**par**[ phase](#phases-and-milestones)** et **[personnage](#persona)**.
+La feuille de calcul **État par rôle** indique le détail de l’**[état, la qualité et la complétude](#project-heartbeat-dashboard)** par **[phase](#phases-and-milestones)** et **[personnage](#persona)**.
 
 ## Phases et jalons {#phases-and-milestones}
 
