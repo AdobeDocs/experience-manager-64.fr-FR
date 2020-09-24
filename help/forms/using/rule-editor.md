@@ -5,11 +5,11 @@ description: L’éditeur de règles de formulaires adaptatifs vous permet d’a
 seo-description: L’éditeur de règles de formulaires adaptatifs vous permet d’ajouter un comportement dynamique et de créer une logique complexe dans des formulaires, sans aucun codage ni script.
 uuid: 15c9bb41-ddae-4d3e-b130-5eb1b7572e6e
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 translation-type: tm+mt
-source-git-commit: 87680094e87b2ef58c7de2f1e42caa2ad966c28f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '6348'
 ht-degree: 80%
@@ -122,7 +122,7 @@ Par exemple, une liste comporte quatre options : Rouge, Bleu, Vert et Jaune. Lo
 
 ![multivaluefcdisplaysoptions](assets/multivaluefcdisplaysoptions.png)
 
-Lorsque vous écrivez une règle Lorsque, vous pouvez déclencher l’action Effacer la valeur de. L’action Effacer la valeur de efface la valeur de l’objet spécifié. L’option Clear Value of (Effacer la valeur de) de l’instruction Lorsque permet de créer des conditions complexes avec plusieurs champs.
+Lorsque vous écrivez une règle Lorsque, vous pouvez déclencher l’action Effacer la valeur de. L’action Effacer la valeur de efface la valeur de l’objet spécifié. L’option Clear Value of (Effacer la valeur de) de l’instruction When permet de créer des conditions complexes avec plusieurs champs.
 
 ![claivalueof](assets/clearvalueof.png)
 
@@ -158,7 +158,7 @@ For more information about configuring services in form data model, see [AEM For
 
 **Valider le formulaire** Valide le formulaire.
 
-**Ajouter l’instance** Ajoute une instance du panneau ou de la ligne de tableau répétable spécifiée.
+**Instance** Ajoute Ajoute une instance du panneau ou de la ligne de tableau répétable spécifiée.
 
 **Supprimer une instance** Supprime une instance de la ligne de tableau ou du panneau répétable spécifiée.
 
@@ -541,7 +541,7 @@ Balises prises en charge `jsdoc` :
 
    Vous pouvez également utiliser `@returns {type}`.
 
-   Ajoute des informations sur la fonction, telles que son objectif.
+   ajoute des informations sur la fonction, telles que son objectif.
 
    {type} représente le type de retour de la fonction. Les types de retour autorisés sont les suivants : 
 
