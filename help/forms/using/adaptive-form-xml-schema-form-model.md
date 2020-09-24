@@ -5,11 +5,11 @@ description: Les formulaires adaptatifs peuvent utiliser un schéma XML en tant 
 seo-description: Les formulaires adaptatifs peuvent utiliser un schéma XML en tant que modèle de formulaire, ce qui vous permet d’exploiter les modèles XSD existants pour créer des formulaires adaptatifs. Vous pouvez faire glisser et déposer des éléments de schéma du modèle XSD jusqu’à votre formulaire adaptatif.
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 91%
