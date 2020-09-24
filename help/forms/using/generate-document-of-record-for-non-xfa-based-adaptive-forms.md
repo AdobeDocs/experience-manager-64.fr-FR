@@ -5,12 +5,12 @@ description: Explique comment générer un modèle de document d’enregistremen
 seo-description: Explique comment générer un modèle de document d’enregistrement (DE) pour les formulaires adaptatifs.
 uuid: 6c0664a4-a2eb-4ec5-bad0-cf4e2f4fe83d
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1e533a8c-f200-40ca-b170-0e9abee8513e
 noindex: true
 translation-type: tm+mt
-source-git-commit: 1e46cdf8f52426ec3bb1c0712355b7bedf270b13
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '2781'
 ht-degree: 68%
@@ -272,7 +272,7 @@ Effectuez les étapes suivantes pour configurer un document d’enregistrement p
 
    >[!NOTE]
    >
-   >Dans l’onglet Modèle de formulaire, veillez à sélectionner **Schéma ** ou **Aucun** dans la liste déroulante **Sélectionner dans**. **[!UICONTROL Le Document d’enregistrement n’est pas pris en charge pour les formulaires XFA ou les formulaires adaptatifs avec modèle de formulaire comme modèle de formulaire.]**
+   >Dans l’onglet Modèle de formulaire, veillez à sélectionner **Schéma ** ou **Aucun** dans la liste déroulante **Sélectionner dans**. **[!UICONTROL Le document d’enregistrement n’est pas pris en charge pour les formulaires XFA ou les formulaires adaptatifs avec modèle de formulaire comme modèle de formulaire.]**
 
 1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez l’une des options suivantes :
 
@@ -362,7 +362,7 @@ Champs dans un panneau rendu dans une mise en page de colonne dans le document d
 
 ## Paramètres des documents d’enregistrement {#document-of-record-settings}
 
-Les paramètres de Document d’enregistrement vous permettent de choisir les options à inclure dans le document d’enregistrement. Par exemple, une banque accepte les informations suivantes dans un formulaire : nom, âge, numéro de sécurité sociale et numéro de téléphone. Le formulaire génère un numéro de compte bancaire et les informations sur la banque. Vous pouvez choisir de n’afficher que le nom, le numéro de sécurité sociale, le compte bancaire et les informations sur la banque dans le document d’enregistrement.
+Les paramètres de document d’enregistrement vous permettent de choisir les options à inclure dans le document d’enregistrement. Par exemple, une banque accepte les informations suivantes dans un formulaire : nom, âge, numéro de sécurité sociale et numéro de téléphone. Le formulaire génère un numéro de compte bancaire et les informations sur la banque. Vous pouvez choisir de n’afficher que le nom, le numéro de sécurité sociale, le compte bancaire et les informations sur la banque dans le document d’enregistrement.
 
 Le document des paramètres d’enregistrement d’un composant est disponible sous ses propriétés. To access the properties a component, select the component and click ![cmppr](assets/cmppr.png) in the overlay. Les propriétés sont répertoriées dans la barre latérale. Vous y trouvez les paramètres suivants.
 
@@ -383,7 +383,7 @@ Le document des paramètres d’enregistrement d’un composant est disponible s
 
 Gardez à l’esprit les points et limitations suivants lorsque vous travaillez sur un document d’enregistrement pour les formulaires adaptatifs.
 
-* Le Document des modèles d’enregistrement ne prend pas en charge le texte enrichi. Par conséquent, tout texte enrichi dans le formulaire adaptatif statique ou dans les informations renseignées par l’utilisateur final est remplacé par du texte brut dans le document d’enregistrement.
+* Le document des modèles d’enregistrement ne prend pas en charge le texte enrichi. Par conséquent, tout texte enrichi dans le formulaire adaptatif statique ou dans les informations renseignées par l’utilisateur final est remplacé par du texte brut dans le document d’enregistrement.
 * Les fragments de document contenus dans un formulaire adaptatif n’apparaissent pas dans le document d’enregistrement. Les fragments de formulaire adaptatif sont toutefois pris en charge.
 * Le document d&#39;enregistrement est utilisé à des fins d&#39;impression uniquement.
 * La liaison de contenu dans le document de l’enregistrement généré pour le formulaire adaptatif de schéma XML n’est pas prise en charge.
