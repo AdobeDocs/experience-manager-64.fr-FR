@@ -6,11 +6,11 @@ seo-description: Découvrez les meilleures pratiques compilées par les équipes
 uuid: cbb598bb-ec8f-4985-97af-7c87f5891c66
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
+topic-tags: site-features, best-practices
 content-type: reference
-topic-tags: best-practices
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 9710c9931b4f17073c712f5869a1843c1d99ee8e
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 63%
