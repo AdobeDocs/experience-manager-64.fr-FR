@@ -1,16 +1,16 @@
 ---
-title: conteneur de service
-seo-title: conteneur de service
+title: Conteneur de service
+seo-title: Conteneur de service
 description: 'null'
 seo-description: 'null'
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, coding
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: 11ce2d736f261daa789b94d23e2a5ca64192cefe
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# conteneur de service {#service-container}
+# Conteneur de service {#service-container}
 
 Les services AEM Forms situés dans le conteneur de services (y compris les services standard tels que le service Encryption, les processus de longue durée et de courte durée) peuvent être appelés à l’aide de divers fournisseurs, tels qu’un fournisseur EJB. Un fournisseur EJB permet aux services AEM Forms d’être appelés via RMI/IIOP. Un prestataire Web expose les services en tant que services Web (WSDL Generation) à l’aide de normes telles que SOAP/HTTP et SOAP/JMS.
 
@@ -42,11 +42,11 @@ Le tableau suivant décrit les différentes manières dont vous pouvez appeler l
   </tr> 
   <tr>
    <td><p>Services Web</p></td> 
-   <td><p>AEM Forms prend en charge les normes de service Web telles que SOAP/HTTP. Un service peut être présenté comme un service Web, le WSDL respectant les normes de service Web définies par le W3C.</p><p>Un service peut être appelé à partir de n'importe quelle pile de services Web, y compris .NET Framework et Sun™ Web Services SDK. (See <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">Invoking AEM Forms using Web Services</a>.)</p></td> 
+   <td><p>aem forms prend en charge les normes de service Web telles que SOAP/HTTP. Un service peut être présenté comme un service Web, le WSDL respectant les normes de service Web définies par le W3C.</p><p>Un service peut être appelé à partir de n'importe quelle pile de services Web, y compris .NET Framework et Sun™ Web Services SDK. (See <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">Invoking AEM Forms using Web Services</a>.)</p></td> 
   </tr> 
   <tr>
    <td><p>Demandes REST</p></td> 
-   <td><p>AEM Forms prend en charge les demandes REST. Un service peut être appelé directement à partir d’une page HTML. (Voir <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Appel d’AEM Forms à l’aide de requêtes</a>REST.)</p></td> 
+   <td><p>aem forms prend en charge les demandes REST. Un service peut être appelé directement à partir d’une page HTML. (Voir <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Appel d’AEM Forms à l’aide de requêtes</a>REST.)</p></td> 
   </tr> 
  </tbody> 
 </table>
