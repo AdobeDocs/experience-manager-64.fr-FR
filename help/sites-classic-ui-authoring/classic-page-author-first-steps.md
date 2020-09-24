@@ -6,11 +6,11 @@ seo-description: Cette section vous donne un aperçu des tâches principales que
 uuid: 1343acf9-b104-40f3-a3f2-df42060cb4fd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
+topic-tags: introduction, page-authoring
 content-type: reference
-topic-tags: page-authoring
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 translation-type: tm+mt
-source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 93%
