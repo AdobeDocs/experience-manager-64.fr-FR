@@ -7,10 +7,10 @@ uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 3%
@@ -36,7 +36,7 @@ Cependant, il arrive qu’un processus ne puisse pas être exécuté de façon s
 
 >[!NOTE]
 >
->AEM Forms ne crée pas d’enregistrement lorsqu’un processus de courte durée est appelé.
+>aem forms ne crée pas d’enregistrement lorsqu’un processus de courte durée est appelé.
 
 A l’aide de la valeur d’identifiant d’appel, vous pouvez suivre l’état du processus de longue durée. Par exemple, vous pouvez utiliser la valeur de l’identifiant d’appel de processus pour effectuer des opérations Process Manager telles que l’arrêt d’une instance de processus en cours d’exécution.
 
@@ -64,7 +64,7 @@ Lorsque ce processus de courte durée est appelé, il effectue les actions suiva
 
    * [Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide de AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (à l’aide d’une application Flex)
    * [Appel d’un processus de courte durée à l’aide de l’API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) d’appel (API d’appel Java)
-   * [Appeler AEM Forms à l’aide de l’encodage](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) Base64 (exemple de service Web)
+   * [Appel d’AEM Forms à l’aide de l’encodage](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) Base64 (exemple de service Web)
    * [Appeler AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (exemple de service Web)
    * [Appeler AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (exemple de service Web)
    * [Appeler AEM Forms à l’aide de données BLOB sur HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) (exemple de service Web)
