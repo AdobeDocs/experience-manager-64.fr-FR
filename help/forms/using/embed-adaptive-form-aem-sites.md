@@ -6,10 +6,10 @@ seo-description: Vous pouvez incorporer des formulaires adaptatifs dans des page
 uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: interactive-communications, author
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 translation-type: tm+mt
-source-git-commit: d6595efef33b3c296d427dcfac39c377bd42fc9f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 73%
@@ -27,9 +27,9 @@ For information about embedding an adaptive form in an external web page, see [E
 
 Dans la page AEM Sites, vous pouvez ajouter un formulaire adaptatif ou une communication interactive à l’aide de :
 
-* **[Composant Conteneur AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**AEM Forms fournit un composant que vous pouvez ajouter à vos pages de site. Le composant Conteneur AEM Forms vous permet d’incorporer un formulaire adaptatif et une communication interactive.
+* **[Composant Conteneur AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)** AEM Forms fournit un composant que vous pouvez ajouter à vos pages de site. Le composant Conteneur AEM Forms vous permet d’incorporer un formulaire adaptatif et une communication interactive.
 
-* **[Explorateur des actifs](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**Tous les formulaires et toutes les communications interactives que vous créez sont disponibles sous Actifs. Vous pouvez faire glisser et déposer le formulaire sous forme d’actif sur votre page.
+* **[Explorateur des actifs](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)** Tous les formulaires et toutes les communications interactives que vous créez sont disponibles sous Actifs. Vous pouvez faire glisser et déposer le formulaire sous forme d’actif sur votre page.
 
 ## Conditions préalables {#prerequisites}
 
