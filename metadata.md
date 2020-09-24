@@ -8,10 +8,11 @@ getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
 tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/experience-manager-64.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-64.fr-FR
+solution: Experience Manager
 index: y
 translation-type: tm+mt
-source-git-commit: a58558fe18743e1aee0d65da7a2140561bc97e98
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 70%
@@ -30,7 +31,7 @@ Le fichier metadata.md comprend des métadonnées de niveau référentiel qui tr
 | solution-icon | Affiche l’icône de solution en regard du titre de la solution. Pas encore implémenté. |
 | getting-started-url | Lien vers la page de prise en main. |
 | tutorials-url | Lien vers les didacticiels vidéo. |
-| mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail droit. La valeur par défaut est 2.   |
+| mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail droit. La valeur par défaut est 2.    |
 | git-repo | Spécifie l&#39;emplacement du repo principal pour une utilisation interne. |
 
 Dans le fichier TOC.md
