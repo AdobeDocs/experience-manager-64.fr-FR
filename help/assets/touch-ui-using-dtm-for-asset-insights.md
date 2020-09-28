@@ -3,19 +3,21 @@ title: Activation des statistiques sur les ressources via DTM
 description: Découvrez comment utiliser la gestion dynamique des balises Adobe pour activer les statistiques sur les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 994dd56ce13b2d1f959e392e181d752e994bf198
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 57%
+source-wordcount: '680'
+ht-degree: 50%
 
 ---
 
 
 # Activation des statistiques sur les ressources via DTM {#enabling-asset-insights-through-dtm}
 
-La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics.
+La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics. Vous pouvez personnaliser votre code de suivi pour permettre aux solutions CMS tierces d’utiliser Asset Insights ou utiliser la gestion dynamique des balises pour insérer des balises Asset Insights. Les statistiques sont uniquement prises en charge et fournies pour les images.
 
-Bien que vous puissiez personnaliser votre code de suivi pour permettre aux solutions CMS tierces d’utiliser les statistiques sur les ressources, Adobe vous recommande d’utiliser la gestion dynamique des balises pour insérer des balises de statistiques sur les ressources.
+>[!CAUTION]
+>
+>La gestion dynamique des balises Adobe est abandonnée en faveur de Adobe Experience Platform Launch et va bientôt [prendre fin](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). adobe vous recommande d’ [utiliser Lancer pour obtenir des informations](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)sur les ressources.
 
 Effectuez les étapes suivantes pour activer les statistiques sur les ressources au moyen de la gestion dynamique des balises :
 
@@ -49,7 +51,6 @@ Effectuez les étapes suivantes pour activer les statistiques sur les ressources
    >* The call to `assetAnalytics.dispatcher.init()` is removed. Le système s’attend à ce que la fonction soit appelée une fois le chargement de l’outil de gestion dynamique des balises Adobe Analytics terminé.
    >* Selon l’endroit où est hébergé le dispositif de suivi de la page de statistiques sur les ressources (par exemple, AEM, CDN, etc.), l’origine de la source du script peut nécessiter des modifications.
    >* Pour le suivi des pages hébergé AEM, la source doit pointer vers une instance de publication à l’aide du nom d’hôte de l’instance de répartiteur.
-
 
 
 1. Ouvrez [https://dtm.adobe.com](https://dtm.adobe.com). Cliquez sur Aperçu dans la propriété web et cliquez sur Ajouter un outil ou ouvrez un outil Adobe Analytics existant. Lors de la création de l’outil, vous pouvez définir la méthode de configuration sur Automatique.
