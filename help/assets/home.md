@@ -1,16 +1,17 @@
 ---
-title: Guide de l’utilisateur AEM 6.4 Assets
+title: Guide des ressources
 description: Ce guide couvre toutes les tâches AEM Assets, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
+user-guide-title: Guide des ressources
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 405733b2084621773c2992121be8d540eeba39a9
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '336'
 ht-degree: 31%
 
 ---
 
 
-# Guide de l’utilisateur AEM 6.4 Assets
+# Guide des ressources
 
 Ce guide couvre toutes les tâches AEM Assets, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 
@@ -21,7 +22,7 @@ Ce guide couvre toutes les tâches AEM Assets, telles que la création, la gesti
 * [Mises à jour récentes de la documentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Liste de contrôle de la sécurité AEM](/help/sites-administering/security-checklist.md)
 
-## AEM 6.4 guides d’utilisation
+## aem 6.4 guides d’utilisation
 
 | Guide de l’utilisateur | Description |
 |--- |---|
@@ -40,7 +41,7 @@ Ce guide couvre toutes les tâches AEM Assets, telles que la création, la gesti
 
 ## Principales ressources AEM
 
-* [AEM didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
+* [aem didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guide de l&#39;utilisateur du répartiteur](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
 * [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Guide de l’utilisateur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
