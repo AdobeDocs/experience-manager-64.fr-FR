@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: ecaeabfdd31ed35229fe7e41b5472e8582fa28db
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1877'
 ht-degree: 9%
 
 ---
@@ -50,7 +50,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
   <tr>
    <td><p>API</p> </td> 
    <td>Description</td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -117,7 +117,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
   <tr>
    <td><p>API</p> </td> 
    <td>Description</td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -135,14 +135,14 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
  </tbody>
 </table>
 
-### Service Document d&#39;enregistrement (service de DE) {#document-of-record-service-dor-service}
+### Service document d&#39;enregistrement (service de DE) {#document-of-record-service-dor-service}
 
 <table> 
  <tbody>
   <tr>
    <td><p>API</p> </td> 
    <td>Description</td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -161,7 +161,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
   <tr>
    <td><p>API</p> </td> 
    <td>Description</td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -204,7 +204,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
   <tr>
    <td><p>API</p> </td> 
    <td>Description</td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -229,7 +229,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
   <tr>
    <td><p>API</p> </td> 
    <td>Description</td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -254,7 +254,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
   <tr>
    <td><p>API</p> </td> 
    <td>Description</td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -273,7 +273,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
   <tr>
    <td><p>API</p> </td> 
    <td>Description</td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -317,7 +317,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
   <tr>
    <td><p>API</p> </td> 
    <td>Description</td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -336,7 +336,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
   <tr>
    <td><p>API</p> </td> 
    <td>Description</td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -350,7 +350,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
 
 ## API de capture de données facturables {#billable-data-capture-apis}
 
-Tous les événements d’envoi des formulaires adaptatifs, du Forms HTML5 et du jeu de formulaires sont comptabilisés comme des transactions. Par défaut, l’envoi d’un formulaire PDF n’est pas comptabilisé comme une transaction. Utilisez l&#39;API [des rapports de](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) transactions fournie pour enregistrer un envoi PDF forms en tant que transaction.
+Tous les événements d’envoi des formulaires adaptatifs, du Forms HTML5 et du jeu de formulaires sont comptabilisés comme des transactions. Par défaut, l’envoi d’un formulaire PDF n’est pas comptabilisé comme une transaction. Utilisez l&#39;API [des rapports de](record-transaction-custom-implementation.md) transactions fournie pour enregistrer un envoi PDF forms en tant que transaction.
 
 ### Formulaires adaptatifs {#adaptive-forms}
 
@@ -359,7 +359,7 @@ Tous les événements d’envoi des formulaires adaptatifs, du Forms HTML5 et du
   <tr>
    <td><p>Exemple d’utilisation </p> </td> 
    <td>Description</td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -382,7 +382,7 @@ Tous les événements d’envoi des formulaires adaptatifs, du Forms HTML5 et du
   <tr>
    <td><p>Exemple d’utilisation </p> </td> 
    <td>Description </td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -401,7 +401,7 @@ Tous les événements d’envoi des formulaires adaptatifs, du Forms HTML5 et du
   <tr>
    <td><p>API</p> </td> 
    <td>Description</td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -428,7 +428,7 @@ Affectez des étapes de tâche et de services de document des Workflows d&#39;AE
   <tr>
    <td><p>API</p> </td> 
    <td>Description</td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -449,7 +449,7 @@ Affectez des étapes de tâche et de services de document des Workflows d&#39;AE
   <tr>
    <td><p>API</p> </td> 
    <td>Description</td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
@@ -469,7 +469,7 @@ Affectez des étapes de tâche et de services de document des Workflows d&#39;AE
  <tbody>
   <tr>
    <td><p>Cas d’utilisation</p> </td> 
-   <td>catégorie de rapports de transactions</td> 
+   <td>Catégorie de rapports de transactions</td> 
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
