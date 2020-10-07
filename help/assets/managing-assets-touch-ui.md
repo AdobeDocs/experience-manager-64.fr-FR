@@ -4,10 +4,10 @@ description: Découvrez les différentes tâches de gestion et de modification d
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: dc3015732e2fe6b69117f736b31d89c5388d2be8
 workflow-type: tm+mt
-source-wordcount: '9811'
-ht-degree: 68%
+source-wordcount: '10015'
+ht-degree: 66%
 
 ---
 
@@ -425,6 +425,12 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 ### Déplacement ou changement du nom des ressources {#moving-or-renaming-assets}
 
+Lorsque vous déplacez des fichiers (ou des dossiers) vers un autre emplacement, les fichiers (ou dossiers) ne sont pas dupliqués, contrairement à ce qui se produit lors de la copie du fichier. Les fichiers (ou les dossiers) sont placés à l’emplacement de la cible et sont supprimés de l’emplacement source. Vous pouvez également renommer la ressource lorsque vous la déplacez vers le nouvel emplacement. Si vous déplacez un fichier publié vers un autre emplacement, vous avez la possibilité de le republier. Par défaut, l’opération de déplacement sur une ressource publiée annule automatiquement sa publication. La ressource déplacée est republiée si l’auteur sélectionne l’option [!UICONTROL Republier] lors du déplacement de la ressource.
+
+![Vous pouvez republier un fichier déjà publié lors de son déplacement.](assets/republish-on-move.png)
+
+Pour déplacer des fichiers ou des dossiers :
+
 1. Accédez à l’emplacement de la ressource à déplacer.
 
 1. Select the asset, and tap the **[!UICONTROL Move]** icon from the toolbar.
@@ -462,6 +468,14 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
    * Tap **[!UICONTROL Cancel]** to stop the move operation.
 
    Si vous ne mettez pas à jour les références, elles continuent à pointer vers le chemin précédent de la ressource. Si vous adaptez les références, elles sont mises à jour avec le nouveau chemin de la ressource.
+
+### Déplacement de fichiers à l’aide de l’opération de glisser {#move-using-drag}
+
+Vous pouvez déplacer des fichiers (ou des dossiers) vers un dossier frère en les faisant glisser vers l’emplacement de la cible, au lieu d’utiliser l’option [!UICONTROL Déplacer] dans l’interface utilisateur. Toutefois, cette opération n’est possible que dans la vue de liste.
+
+Le déplacement d’actifs par glisser-déplacer n’ouvre pas l’assistant [!UICONTROL Déplacer des actifs] . Par conséquent, vous n’avez pas la possibilité de renommer les actifs lors du déplacement. En outre, les fichiers déjà publiés sont republiés en les déplaçant par glisser-déplacer, sans demander l’approbation de la republication de l’utilisateur.
+
+![Déplacement de fichiers dans des dossiers frères en les faisant glisser](assets/move-by-drag.gif)
 
 ## Gestion des rendus {#managing-renditions}
 
