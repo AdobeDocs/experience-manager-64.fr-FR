@@ -4,7 +4,7 @@ description: Découvrez les différentes tâches de gestion et de modification d
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dc3015732e2fe6b69117f736b31d89c5388d2be8
+source-git-commit: 8970712d30883e96a1ae50bc40688c58857a7557
 workflow-type: tm+mt
 source-wordcount: '10015'
 ht-degree: 66%
