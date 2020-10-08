@@ -4,7 +4,7 @@ description: Découvrez les différentes tâches de gestion et de modification d
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8970712d30883e96a1ae50bc40688c58857a7557
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '10015'
 ht-degree: 66%
@@ -145,7 +145,8 @@ Contenu multimédia dynamique permet le téléchargement par lots de fichiers pa
 >[!NOTE]
 >
 >Pour télécharger des fichiers par FTP dans Contenu multimédia dynamique - Mode Scene7 : installez Feature Pack (FP) 18912 sur AEM auteur. Contactez le service à la clientèle de l’Adobe pour accéder au FP-18912 et terminer la configuration de votre compte FTP. Voir la section [Installation du pack de fonctionnalités 18912 pour la migration des ressources en bloc](/help/assets/bulk-ingest-migrate.md).
-Si vous utilisez le protocole FTP pour télécharger des ressources, les paramètres de téléchargement spécifiés dans AEM sont ignorés. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
+>
+>Si vous utilisez le protocole FTP pour télécharger des ressources, les paramètres de téléchargement spécifiés dans AEM sont ignorés. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
 
 **Pour télécharger des ressources via FTP, procédez comme suit :**
 
