@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2423'
 ht-degree: 55%
 
 ---
@@ -40,7 +40,7 @@ Pour ajouter un graphique à une communication interactive, procédez comme suit
 
 1. À partir des composants de la barre latérale AEM, glissez-déposez le composant graphique dans l’un des canaux d’impression ou web d’une communication interactive :
 
-   * canal d&#39;impression : Zone de Cible et champ d’image
+   * Canal d&#39;impression : Zone de cible et champ d’image
    * Canal web : panneau et zone Cible
 
    Le composant Graphique déposé crée un espace réservé pour un graphique.
@@ -95,7 +95,7 @@ Pour ce faire, vous devez spécifier :
 * **[!UICONTROL Titre]** pour les axes X et Y (pour le graphique de type Colonne dans le canal d’impression uniquement dans cet exemple) - dans cet exemple, Montant ($) pour l’axe X et Dépenses pour l’axe Y.
 * **[!UICONTROL Direction]** des étiquettes (pour le graphique de type Colonne dans le canal d&#39;impression uniquement dans cet exemple) - dans cet exemple `Tilt Left`
 
-* **[!UICONTROL Info-bulle]** à afficher au survol d&#39;une dépense (canal Web uniquement) - dans cet exemple `${x}: $ ${y}`, qui s&#39;affiche sous la forme Etiquette de [frais : Montant] $ (exemple : Theme Park Visit : 315 $)
+* **[!UICONTROL Info-bulle]** à afficher au survol d&#39;une dépense (canal Web uniquement) - dans cet exemple `${x}: $ ${y}`, qui s&#39;affiche comme `[Expense Label: $ Amount]` (exemple : Theme Park Visit : 315 $)
 
 ![Graphique en colonnes dans la sortie imprimée d&#39;une communication](assets/chartprintchannel.png)**interactive Figure :** *Graphique à colonnes dans la sortie imprimée d&#39;une communication interactive*
 
