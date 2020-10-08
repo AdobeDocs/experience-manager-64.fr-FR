@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1838'
 ht-degree: 69%
@@ -49,7 +49,8 @@ Pour vous familiariser rapidement avec les visionneuses à 360°, procédez comm
    >[!NOTE]
    >
    >You can also create Spin Sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
-   *Les visionneuses de lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation de ressources et ne sont disponibles qu’en mode* Contenu multimédia dynamique - Scene7.
+   >
+   >*Les visionneuses de lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation de ressources et ne sont disponibles qu’en mode* Contenu multimédia dynamique - Scene7.
 
 1. Configurez des [paramètres prédéfinis de visionneuse à 360°](managing-viewer-presets.md), selon les besoins.
 
@@ -73,7 +74,7 @@ Pour vous familiariser rapidement avec les visionneuses à 360°, procédez comm
 
 1. [Liez des URL à l’application web](linking-urls-to-yourwebapplication.md) ou [incorporez la vidéo ou la visionneuse d’images](embed-code.md).
 
-   aem assets crée des appels d’URL pour les visionneuses à 360° et les active après leur publication. Vous pouvez copier ces URL lorsque vous prévisualisation des fichiers. Vous pouvez également les incorporer sur votre site Web.
+   AEM Assets crée des appels d’URL pour les visionneuses à 360° et les active après leur publication. Vous pouvez copier ces URL lorsque vous prévisualisation des fichiers. Vous pouvez également les incorporer sur votre site Web.
 
    Sélectionnez la visionneuse à 360° puis, dans le menu déroulant du rail gauche, sélectionnez **[!UICONTROL Visionneuses]**.
 
@@ -104,7 +105,8 @@ L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a un
 >[!NOTE]
 >
 >Vous pouvez également créer des visionneuses à 360° automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
-Les visionneuses de lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation de ressources et sont disponibles uniquement en mode Contenu multimédia dynamique - Scene7.
+>
+>Les visionneuses de lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation de ressources et sont disponibles uniquement en mode Contenu multimédia dynamique - Scene7.
 >
 >Voir « Création de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360° » dans [Configuration de Dynamic Media – mode Scene7](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
