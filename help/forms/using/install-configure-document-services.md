@@ -7,10 +7,10 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 5aff983a0e8ef2f3ca790a997b37276567f543fe
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '4295'
-ht-degree: 69%
+ht-degree: 70%
 
 ---
 
@@ -392,16 +392,16 @@ Copiez la police Unicode vers l’un des répertoires suivants, en fonction de v
 
 Le package du module complémentaire AEM Forms est une application déployée sur AEM. Le package contient des services de document AEM Forms et d’autres fonctionnalités AEM Forms. Pour installer le package, procédez comme suit : 
 
-1. Distribution [](https://experience.adobe.com/downloads)de logiciels ouverts. Vous avez besoin d&#39;un Adobe ID pour vous connecter à la distribution de logiciels.
-1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
-1. In the **[!UICONTROL Filters]** section:
-   1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]** .
-   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option Téléchargements **[!UICONTROL de]** recherche pour filtrer les résultats.
-1. Appuyez sur le nom du pack applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes]** du contrat de licence de l’utilisateur final et appuyez sur **[!UICONTROL Télécharger]**.
-1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Open [Software Distribution](https://experience.adobe.com/fr/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+1. Dans la section **[!UICONTROL Filtres]** :
+   1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
+   2. Sélectionnez la version et le type du package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
+1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
+1. Open [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
 1. Select the package and click **[!UICONTROL Install]**.
 
-   Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [AEM Forms Release](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) .
+   You can also download the package via the direct link listed in the [AEM Forms releases](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) article.
 
 1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **N&#39;arrêtez pas le serveur immédiatement.** Avant d&#39;arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED ne s&#39;affichent plus dans le fichier `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log et que le journal soit stable.
 
@@ -431,7 +431,7 @@ Le package du module complémentaire AEM Forms est une application déployée s
 ### Configuration du service de gestion de polices  {#configuring-the-font-manager-service}
 
 1. Log in to [AEM Configuration Manager](http://localhost:4502/system/console/configMgr) as an administrator.
-1. Locate and open the **[!UICONTROL CQ-DAM-Handler-Gibson Font Managers]** service. Spécifiez le chemin d’accès des répertoires Polices système, Polices Adobe Server et Polices client. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Locate and open the **[!UICONTROL CQ-DAM-Handler-Gibson Font Managers]** service. Spécifiez le chemin d’accès des répertoires Polices système, Polices Adobe Server et Polices client. Cliquez sur **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
@@ -555,8 +555,7 @@ Effectuez les étapes suivantes pour configurer les certificats :
 
    >[!NOTE]
    >
-   >* Dans l’environnement de production, remplacez les informations d’identification d’évaluation par celles de production. Veillez à supprimer vos anciennes informations d’identification d’extensions de Reader avant de mettre à jour des informations d’identification expirées ou d’évaluation.
-
+   >Dans l’environnement de production, remplacez les informations d’identification d’évaluation par celles de production. Veillez à supprimer vos anciennes informations d’identification d’extensions de Reader avant de mettre à jour des informations d’identification expirées ou d’évaluation.
 
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** sur la page **[!UICONTROL Modifier les paramètres]** utilisateur.
 
