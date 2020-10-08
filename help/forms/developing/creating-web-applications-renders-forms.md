@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1842'
 ht-degree: 1%
@@ -119,7 +119,7 @@ For the location of these JAR files, see [Including AEM Forms Java library files
 
 >[!NOTE]
 >
->Pour plus d’informations sur la création de la page HTML qui appelle la servlet `RenderFormFragment` Java, voir[Création de la page](/help/forms/developing/rendering-forms.md#creating-the-web-page)Web.
+>Pour plus d’informations sur la création de la page HTML qui appelle la servlet `RenderFormFragment` Java, voir [Création de la page](/help/forms/developing/rendering-forms.md#creating-the-web-page)Web.
 
 ### Création de la logique d&#39;application Java pour la servlet {#creating-java-application-logic-for-the-servlet}
 
@@ -379,7 +379,7 @@ Pour déployer la servlet Java qui appelle le service Forms, incluez votre appli
 
 1. Dans la fenêtre Explorateur **de** projets, cliquez avec le bouton droit sur le `FragmentsWebApplication` projet et sélectionnez **Exporter** > Fichier **** WAR.
 1. Dans la zone de texte du module **** Web, saisissez `FragmentsWebApplication` le nom du projet Java.
-1. Dans la zone de texte **Destination** , saisissez `FragmentsWebApplication.war`****le nom du fichier, indiquez l’emplacement de votre fichier WAR, puis cliquez sur Terminer.
+1. Dans la zone de texte **Destination** , saisissez `FragmentsWebApplication.war`**** le nom du fichier, indiquez l’emplacement de votre fichier WAR, puis cliquez sur Terminer.
 
 ### Déploiement du fichier WAR sur le serveur d’applications J2EE {#deploying-the-war-file-to-the-j2ee-application-server}
 
