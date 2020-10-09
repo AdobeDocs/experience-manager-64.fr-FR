@@ -1,18 +1,18 @@
 ---
-title: Guide de l’utilisateur d’AEM 6.4 Forms
+title: Guide Adobe Experience Manager 6.4
 seo-title: Guide de l’utilisateur d’AEM 6.4 Forms
 description: Ce guide couvre toutes les tâches AEM Forms, y compris la création, la gestion, la publication et la mise à jour de formulaires numériques.
 seo-description: couvre toutes les tâches AEM Forms, y compris la création, la gestion, la publication et la mise à jour de formulaires numériques.
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 32%
+source-wordcount: '370'
+ht-degree: 30%
 
 ---
 
 
-# Guide de l’utilisateur d’AEM 6.4 Forms
+# Guide Adobe Experience Manager 6.4
 
 Ce guide couvre toutes les tâches AEM Forms, y compris la création, la gestion, la publication et la mise à jour de formulaires numériques.
 
@@ -23,7 +23,7 @@ Ce guide couvre toutes les tâches AEM Forms, y compris la création, la gestion
 * [Mises à jour récentes de la documentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Liste de contrôle de la sécurité AEM](/help/sites-administering/security-checklist.md)
 
-## AEM 6.4 guides d’utilisation
+## aem 6.4 guides d’utilisation
 
 | Guide de l’utilisateur | Description |
 |--- |---|
@@ -43,7 +43,7 @@ Ce guide couvre toutes les tâches AEM Forms, y compris la création, la gestion
 
 ## Principales ressources AEM
 
-* [AEM didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
+* [aem didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guide de l&#39;utilisateur du répartiteur](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
 * [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Guide de l’utilisateur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
