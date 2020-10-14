@@ -1,6 +1,6 @@
 ---
-title: profils d’image Contenu multimédia dynamique
-seo-title: profils d’image Contenu multimédia dynamique
+title: Profils d’image Contenu multimédia dynamique
+seo-title: Profils d’image Contenu multimédia dynamique
 description: Créez des profils d’image qui contiennent des paramètres de masquage flou et de recadrage intelligent ou d’échantillon dynamique, ou les deux, puis appliquez le profil à un dossier de fichiers d’image.
 seo-description: Créez des profils d’image qui contiennent des paramètres de masquage flou et de recadrage intelligent ou d’échantillon dynamique, ou les deux, puis appliquez le profil à un dossier de fichiers d’image.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: bca4e5ef625cae978120410f0b38692363d4f5f3
 workflow-type: tm+mt
-source-wordcount: '2708'
-ht-degree: 92%
+source-wordcount: '2713'
+ht-degree: 91%
 
 ---
 
@@ -28,7 +28,7 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 
 >[!IMPORTANT]
 >
->Les profils d’image ne s’appliquent pas aux fichiers PDF.
+>Les profils d’image ne s’appliquent pas aux fichiers PDF, GIF ou INDD (Adobe InDesign).
 
 ## Options de recadrage {#crop-options}
 
