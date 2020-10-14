@@ -4,9 +4,9 @@ description: Découvrez les différentes tâches de gestion et de modification d
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: c86c84efeb25673490373273a9f4720381e46454
 workflow-type: tm+mt
-source-wordcount: '10015'
+source-wordcount: '10031'
 ht-degree: 66%
 
 ---
@@ -424,7 +424,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
    >
    >L’icône **[!UICONTROL Coller]** est disponible dans la barre d’outils tant que l’opération de collage n’est pas terminée.
 
-### Déplacement ou changement du nom des ressources {#moving-or-renaming-assets}
+## Move and rename assets {#moving-or-renaming-assets}
 
 Lorsque vous déplacez des fichiers (ou des dossiers) vers un autre emplacement, les fichiers (ou dossiers) ne sont pas dupliqués, contrairement à ce qui se produit lors de la copie du fichier. Les fichiers (ou les dossiers) sont placés à l’emplacement de la cible et sont supprimés de l’emplacement source. Vous pouvez également renommer la ressource lorsque vous la déplacez vers le nouvel emplacement. Si vous déplacez un fichier publié vers un autre emplacement, vous avez la possibilité de le republier. Par défaut, l’opération de déplacement sur une ressource publiée annule automatiquement sa publication. La ressource déplacée est republiée si l’auteur sélectionne l’option [!UICONTROL Republier] lors du déplacement de la ressource.
 
@@ -434,39 +434,42 @@ Pour déplacer des fichiers ou des dossiers :
 
 1. Accédez à l’emplacement de la ressource à déplacer.
 
-1. Select the asset, and tap the **[!UICONTROL Move]** icon from the toolbar.
+![Vous pouvez republier un fichier déjà publié lors de son déplacement.](assets/republish-on-move.png)
 
-   ![move_icon](assets/move_icon.png)
+Pour déplacer des fichiers ou des dossiers :
 
-1. In the **[!UICONTROL Move Assets]** wizard, do one of the following:
+1. Accédez à l’emplacement de la ressource à déplacer.
 
-   * Spécifiez le nom de la ressource après l’avoir déplacée. Then tap **[!UICONTROL Next]** to proceed.
-   * Tap **[!UICONTROL Cancel]** to stop the process.
+1. Select the asset, and click **[!UICONTROL Move]** option from the toolbar.
+   ![Option Déplacer dans la barre d’outils Ressources](assets/do-not-localize/move_icon.png)
 
+1. In the [!UICONTROL Move Assets] wizard, do one of the following:
+
+   * Spécifiez le nom de la ressource après l’avoir déplacée. Then click **[!UICONTROL Next]** to proceed.
+
+   * Click **[!UICONTROL Cancel]** to stop the process.
    >[!NOTE]
    >
-   >Vous pouvez attribuer le même nom à la ressource si aucune autre ressource portant ce nom n’existe dans le nouvel emplacement. Cependant, vous devez utiliser un nouveau nom si vous déplacez la ressource vers un emplacement dans lequel une ressource portant le même nom existe. Si vous utilisez le même nom, le système génère automatiquement une variante du nom. Par exemple, si votre ressource porte le nom Carré, le système génère le nom Carré1 pour sa copie.
-
-   >[!NOTE]
-   >
-   >Les caractères suivants (liste de ceux-ci séparés par des espaces) ne sont pas pris en charge :
-   >* Le nom du fichier de ressource ne doit pas contenir  `* / : [ \ \ ] | # % { } ? &`
-   >* Le nom du dossier de ressources ne doit pas contenir  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   >* Vous pouvez attribuer le même nom à la ressource si aucune autre ressource portant ce nom n’existe dans le nouvel emplacement. Cependant, vous devez utiliser un nouveau nom si vous déplacez la ressource vers un emplacement dans lequel une ressource portant le même nom existe. Si vous utilisez le même nom, le système génère automatiquement une variante du nom. Par exemple, si votre ressource porte le nom Carré, le système génère le nom Carré1 pour sa copie.
+   >* Lors de l’attribution d’un nouveau nom à un fichier, aucun espace n’est autorisé dans le nom.
 
 
-1. On the **[!UICONTROL Select Destination]** page, do one of the following:
+1. Dans la boîte de dialogue **[!UICONTROL Sélectionner la destination]**, procédez comme suit :
 
-   * Navigate to the new location for the assets, and then tap **[!UICONTROL Next]** to proceed.
-   * Tap **[!UICONTROL Back]** to return to the **[!UICONTROL Rename]** page.
+   * Navigate to the new location for the assets, and then click **[!UICONTROL Next]** to proceed.
+
+   * Click **[!UICONTROL Back]** to return to the **[!UICONTROL Rename]** screen.
 
 1. Si les ressources déplacées sont référencées par des pages, des ressources ou des collections, l’onglet **[!UICONTROL Adapter les références]** s’affiche à côté de l’onglet **[!UICONTROL Sélectionner la destination]**.
 
-   Do one of the following on the **[!UICONTROL Adjust References]** page:
+   Dans l’écran **[!UICONTROL Adapter les références]**, effectuez l’une des actions suivantes :
 
-   * Specify the references to be adjusted based on the new details, and then tap **[!UICONTROL Move]** to proceed.
-   * From the **[!UICONTROL Adjust]** column, select or deselect references to the assets.
-   * Tap **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** page.
-   * Tap **[!UICONTROL Cancel]** to stop the move operation.
+   * Specify the references to be adjusted based on the new details, and then click **[!UICONTROL Move]** to proceed.
+
+   * Dans la colonne **[!UICONTROL Ajuster]**, sélectionnez/annulez la sélection des références aux ressources.
+   * Click **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** screen.
+
+   * Click **[!UICONTROL Cancel]** to stop the move operation.
 
    Si vous ne mettez pas à jour les références, elles continuent à pointer vers le chemin précédent de la ressource. Si vous adaptez les références, elles sont mises à jour avec le nouveau chemin de la ressource.
 
