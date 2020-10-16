@@ -3,13 +3,13 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guide de l’utilisateur de création d’interface utilisateur classique AEM 6.4
-breadcrumb-title: Classic UI Authoring Guide
-user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
+breadcrumb-title: Guide de création d’interface utilisateur classique
+user-guide-description: Ce guide traite des concepts de création dans AEM interface utilisateur classique.
 translation-type: tm+mt
 source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 90%
+source-wordcount: '316'
+ht-degree: 85%
 
 ---
 
