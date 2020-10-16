@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide des ressources
-breadcrumb-title: Assets Guide
-user-guide-description: Create, manage, deliver, and optimize digital assets.
+user-guide-title: Guide d’Assets
+breadcrumb-title: Guide d’Assets
+user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
 translation-type: tm+mt
 source-git-commit: 405733b2084621773c2992121be8d540eeba39a9
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 76%
+source-wordcount: '723'
+ht-degree: 77%
 
 ---
 
 
-# Guide des ressources {#assets}
+# Guide d’Assets {#assets}
 
 + [Guide de l’utilisateur des ressources](home.md)
 + [Notes de mise à jour AEM Ressources 6.4](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/assets.html)
@@ -30,7 +30,7 @@ ht-degree: 76%
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
    + [Flux d’activité dans la chronologie](activity-stream.md)
    + [Traiter les ressources](assets-workflow.md)
-   + [ajouter des zones cliquables](image-maps.md)
+   + [Ajouter des zones cliquables](image-maps.md)
    + [Réutilisation de ressources à l’aide de MSM](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
    + [Newsletter sur Dynamic Media par Experience League](dynamic-media-newsletter.md)
@@ -49,7 +49,7 @@ ht-degree: 76%
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
    + [Vidéo](s7-video.md)
-   + [ajouter les fonctionnalités Scene7 à votre page](scene7.md)
+   + [Ajouter les fonctionnalités Scene7 à votre page](scene7.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
