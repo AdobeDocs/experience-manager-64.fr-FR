@@ -3,18 +3,18 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Notes de mise à jour de Adobe Experience Manager 6.4
-breadcrumb-title: Release Notes
-user-guide-description: Learn about the latest new features in AEM 6.4 in the release notes.
+breadcrumb-title: Notes de mise à jour
+user-guide-description: Découvrez les nouvelles fonctionnalités les plus récentes de AEM 6.4 dans les notes de mise à jour.
 translation-type: tm+mt
 source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 49%
+source-wordcount: '91'
+ht-degree: 43%
 
 ---
 
 
-# Notes de mise à jour de Adobe Experience Manager 6.4 {#release-notes}
+# Adobe Experience Manager 6.4 Release Notes {#release-notes}
 
 + [aem 6.4 présentation](home.md)
 + [Notes de mise à jour générales](release-notes.md)
