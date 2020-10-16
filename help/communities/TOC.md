@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: aem 6.4 Guide de l’utilisateur des communautés
-breadcrumb-title: Communities Guide
-user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
+user-guide-title: Guide de l’utilisateur d’AEM 6.4 Communities
+breadcrumb-title: Guide Communities
+user-guide-description: Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales.
 translation-type: tm+mt
 source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 26%
+source-wordcount: '486'
+ht-degree: 30%
 
 ---
 
 
-# AEM 6.4 Communities User Guide {#communities}
+# Guide de l’utilisateur d’AEM 6.4 Communities {#communities}
 
 + [Présentation d’AEM Communities](home.md)
 + Introduction to AEM Communities {#introduction}
@@ -93,7 +93,7 @@ ht-degree: 26%
    + [Aide-mémoire SCF](handlebars-helpers.md)
    + [Présentation du fournisseur de ressources d&#39;Enregistrement](srp.md)
    + [Site communautaire Essentials](sites-for-developers.md)
-   + [activité Stream Essentials](essentials-activities.md)
+   + [Activité Stream Essentials](essentials-activities.md)
    + [Affectations Essentials](essentials-assignments.md)
    + [Blog Essentials](blog-developer-basics.md)
    + [Calendrier essentiel](calendar-basics-for-developers.md)
@@ -127,13 +127,13 @@ ht-degree: 26%
    + [Contenu initial du sandbox](initial-content.md)
    + [Développement d’une application Sandbox](develop-app.md)
    + [Développement du contenu du sandbox](develop-content.md)
-   + [ajouter les bibliothèques clientes](add-clientlibs.md)
+   + [Ajouter les bibliothèques clientes](add-clientlibs.md)
    + [Composant de commentaires d’incrustation](overlay-comments.md)
    + [Page Créer des commentaires](overlay-create-comments-page.md)
    + [Créer des noeuds](overlay-create-nodes.md)
    + [Modification de l’aspect](overlay-alter-appearance.md)
    + [Création des composants](extend-create-components.md)
-   + [ajouter un commentaire sur un exemple de page](extend-sample-page.md)
+   + [Ajouter un commentaire sur un exemple de page](extend-sample-page.md)
    + [Étendre le composant Commentaires](extend-comments.md)
    + [Modification de l’aspect (HBS)](extend-alter-appearance.md)
    + [Créer un exemple de page](create-sample-page.md)
