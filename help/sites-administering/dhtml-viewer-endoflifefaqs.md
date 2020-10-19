@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 100%
+source-wordcount: '1665'
+ht-degree: 98%
 
 ---
 
@@ -131,4 +131,4 @@ Bien que vous puissiez encore rester en production avec les visionneuses DHTML, 
 
 **Qui dois-je contacter pour plus d’informations ?**
 
-Si cette FAQ ne répond pas à toutes vos questions, contactez l’assistance ([s7support@adobe.com](mailto:s7support@adobe.com)) ou votre gestionnaire de compte Adobe.
+Si ce FAQ n&#39;a pas répondu à toutes vos questions, veuillez [utiliser le Admin Console pour créer un dossier](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) d&#39;assistance ou contactez votre gestionnaire de compte d&#39;Adobe.
