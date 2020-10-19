@@ -10,10 +10,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 83f8fc7773941a429bdf47425add64d2363e7851
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1750'
-ht-degree: 99%
+source-wordcount: '1758'
+ht-degree: 98%
 
 ---
 
@@ -120,8 +120,8 @@ Votre premier domaine personnalisé n’entraîne aucun coût supplémentaire av
 
 Vous devez envoyer la demande d’utilisation de l’imagerie dynamique ; elle n’est pas activée automatiquement.
 
-1. Envoyez une demande de support technique (adresse électronique : s7support@adobe.com).
-1. Indiquez les informations suivantes dans votre demande de support :
+1. [Utilisez le Admin Console pour créer un dossier de support.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. Fournissez les informations suivantes dans votre dossier de support :
 
    1. nom, adresse électronique et numéro de téléphone du contact principal.
    1. Tous les domaines à activer pour l’imagerie dynamique (c’est-à-dire images.company.com ou mycompany.scene7.com).
