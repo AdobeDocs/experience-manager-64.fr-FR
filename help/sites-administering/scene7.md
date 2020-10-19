@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '5477'
-ht-degree: 22%
+source-wordcount: '5491'
+ht-degree: 21%
 
 ---
 
@@ -59,7 +59,7 @@ The components you use for this integration are found in the **Dynamic Media Cla
 
 ### AEM Dynamic Media {#aem-dynamic-media}
 
-AEM Contenu multimédia dynamique est l’unification des fonctionnalités de Contenu multimédia dynamique classique directement dans la plate-forme AEM.
+aem Contenu multimédia dynamique est l’unification des fonctionnalités de Contenu multimédia dynamique classique directement dans la plate-forme AEM.
 
 Lorsque vous travaillez avec des ressources dans cette solution, vous suivez ce workflow :
 
@@ -96,7 +96,7 @@ Pour utiliser simultanément Contenu multimédia dynamique et Contenu multimédi
     <tr> 
     <td><strong>Si vous êtes ...</strong></td> 
     <td><strong>Processus de cas d’utilisation</strong></td> 
-    <td><strong>Imagerie/vidéo</strong></td> 
+    <td><strong>Imagerie/Vidéo</strong></td> 
     <td><strong>Composant Dynamic Media</strong></td> 
     <td><strong>Explorateur de contenu et composants Scene7</strong></td> 
     <td><strong>Téléchargement automatique des ressources vers S7</strong></td> 
@@ -164,7 +164,7 @@ Pour utiliser simultanément Contenu multimédia dynamique et Contenu multimédi
 1. (Facultatif) voir tableau de cas d’utilisation) - Si vous choisissez d’activer le téléchargement automatique à partir de ressources vers Dynamic Media Classic, vous devez ajouter les éléments suivants :
 
    1. Configurez le téléchargement automatique vers Dynamic Media Classic.
-   1. Ajoutez l’étape de téléchargement **** Dynamic Media Classic après toutes les étapes du flux de travail Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de Contenu de *Dam* **** Dam ( `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`
+   1. Ajoutez l’étape de téléchargement **de** Contenu multimédia dynamique classique après toutes les étapes du flux de travail Contenu multimédia dynamique *à la fin du flux de travail* Mise à jour des ressources **de Dam** ( `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`
    1. (Optional) Restrict Dynamic Media Classic asset upload by MIME type in [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl). Les types MIME de ressources qui ne figurent pas dans cette liste ne seront pas téléchargés sur le serveur Dynamic Media Classic.
    1. (Facultatif) Configurez la vidéo dans la configuration Dynamic Media Classic. Vous pouvez activer simultanément le codage vidéo pour Dynamic Media et Dynamic Media Classic, ou pour les deux. Les rendus dynamiques sont utilisés pour la prévisualisation et la lecture en local dans l’instance AEM, tandis que les rendus vidéo Dynamic Media Classic sont générés et stockés sur les serveurs Dynamic Media Classic. When setting up video encoding services for both Dynamic Media and Dynamic Media Classic, apply a [video processing profile](/help/assets/video-profiles.md) to the Dynamic Media Classic asset folder.
    1. (Facultatif) [Configurez la prévisualisation sécurisée dans Dynamic Media Classic](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene).
@@ -217,7 +217,7 @@ Vous pouvez configurer AEM pour télécharger des fichiers vers Dynamic Media Cl
 Pour configurer l’intégration de Dynamic Media Classic avec AEM, vous devez effectuer les étapes suivantes :
 
 1. [Définir une configuration](#creating-a-cloud-configuration-for-scene) de cloud : définit le mappage entre un dossier Contenu multimédia dynamique et un dossier Ressources. Vous devez exécuter cette étape même si vous souhaitez uniquement une synchronisation unidirectionnelle (AEM Assets vers Dynamic Media Classic).
-1. [Activez l’écouteur **de barrage **](#enabling-the-adobe-cq-scene-dam-listener)Adobe CQ s7dam - Terminé dans la console[!UICONTROL OSGi].
+1. [Activez l’écouteur **de barrage**](#enabling-the-adobe-cq-scene-dam-listener) Adobe CQ s7dam - Terminé dans la console [!UICONTROL OSGi] .
 1. Si vous souhaitez que AEM fichiers soient automatiquement transférés vers Dynamic Media Classic, vous devez activer cette option et ajouter Dynamic Media Classic au processus de mise à jour de la gestion des actifs numériques. Vous pouvez également télécharger les ressources manuellement.
 1. Ajouter des composants Dynamic Media Classic au panneau latéral. Cela permet aux utilisateurs d’utiliser les composants Dynamic Media Classic sur leurs pages d’AEM.
 1. [Faites correspondre la configuration à la page dans AEM](#enabling-scene-for-wcm) - Cette étape est nécessaire pour vue des paramètres vidéo prédéfinis que vous avez créés dans Dynamic Media Classic. Elle est également requise si vous devez publier un fichier en dehors du dossier de cible CQ dans Dynamic Media Classic.
@@ -236,7 +236,7 @@ Lors de la configuration de la synchronisation AEM Assets et Dynamic Media Class
 
 >[!NOTE]
 >
->AEM incorpore toutes les métadonnées comme XMP avant de les télécharger dans Dynamic Media Classic. Toutes les propriétés du noeud de métadonnées sont donc disponibles dans Dynamic Media Classic comme étant XMP.
+>aem incorpore toutes les métadonnées comme XMP avant de les télécharger dans Dynamic Media Classic. Toutes les propriétés du noeud de métadonnées sont donc disponibles dans Dynamic Media Classic comme étant XMP.
 
 #### Restrictions connues et implications en termes de conception {#known-limitations-and-design-implications}
 
@@ -277,7 +277,7 @@ Avec la synchronisation entre AEM Assets et Dynamic Media Classic, il existe act
    <td>Si vous téléchargez une vidéo en AEM Assets en vue de l’encoder via Dynamic Media Classic, les miniatures vidéo et les vidéos codées peuvent prendre un certain temps pour être disponibles dans AEM Assets, en fonction du temps de traitement de la vidéo.</td> 
   </tr> 
   <tr> 
-   <td>Sous-dossiers de Cible</td> 
+   <td>Sous-dossiers de cible</td> 
    <td><p>Si vous utilisez des sous-dossiers dans le dossier cible, veillez à utiliser des noms uniques pour chaque fichier (quel que soit l’emplacement) ou à configurer Dynamic Media Classic (dans la zone Configuration) pour ne pas remplacer les fichiers, quel que soit l’emplacement.</p> <p>Sinon, les fichiers portant le même nom qui sont téléchargés dans un sous-dossier de cible Contenu multimédia dynamique classique sont téléchargés, mais le fichier portant le même nom dans le dossier de cible est supprimé. </p> </td> 
   </tr> 
  </tbody> 
@@ -361,7 +361,7 @@ Pour l’activer :
 
 1. Appuyez sur **[!UICONTROL Save]** (Enregistrer). 
 
-### Ajouter un délai d’attente configurable au processus de téléchargement de contenu multimédia classique dynamique {#adding-configurable-timeout-to-scene-upload-workflow}
+### Ajouter un délai d’attente configurable au flux de travaux de téléchargement de contenu multimédia classique dynamique {#adding-configurable-timeout-to-scene-upload-workflow}
 
 Lorsqu’une instance AEM est configurée pour traiter le codage vidéo via Dynamic Media Classic (Scene7), par défaut, les tâches de téléchargement sont soumises à un délai d’expiration de 35 minutes. Pour pouvoir effectuer les tâches de codage vidéo potentiellement plus longues, vous pouvez configurer ce paramètre :
 
@@ -406,7 +406,7 @@ Pour configurer le téléchargement automatique à partir d’AEM Assets :
    >[!NOTE]
    >
    >* Lors de l’ajout de fichiers après l’automatisation, s’ils ne sont pas placés dans le dossier de cible CQ, ils ne sont pas téléchargés dans Contenu multimédia dynamique classique.
-   >* AEM incorpore toutes les métadonnées comme XMP avant de les télécharger dans Dynamic Media Classic. Toutes les propriétés du noeud de métadonnées sont donc disponibles dans Dynamic Media Classic comme étant XMP.
+   >* aem incorpore toutes les métadonnées comme XMP avant de les télécharger dans Dynamic Media Classic. Toutes les propriétés du noeud de métadonnées sont donc disponibles dans Dynamic Media Classic comme étant XMP.
 
 
 ### Configuration de l’état (publié/non publié) des ressources transférées à Dynamic Media Classic {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
@@ -425,7 +425,7 @@ Toutefois, si vous ne souhaitez pas que les fichiers transférés vers Dynamic M
 
 Avant de pouvoir transmettre des fichiers à Dynamic Media Classic sans les publier, vous devez configurer les éléments suivants :
 
-1. Contactez l’assistance clientèle de Dynamic Media Classic (s7support@adobe.com) pour activer la prévisualisation sécurisée de votre compte Dynamic Media Classic.
+1. [Utilisez le Admin Console pour créer un dossier de support.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Dans le cas de votre prise en charge, demandez que la prévisualisation sécurisée soit activée pour votre compte Dynamic Media Classic.
 1. Follow directions to [setup secure preview for your Dynamic Media Classic account.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
 
 Il s’agit des mêmes étapes que pour créer une configuration de test sécurisée dans Dynamic Media Classic.
@@ -483,7 +483,7 @@ Pour activer Dynamic Media Classic pour WCM dans l’interface utilisateur optim
 
 1. In the toolbar, select the [!UICONTROL settings] icon and tap **[!UICONTROL Open Properties]**.
 
-1. Appuyez sur **[!UICONTROL Cloud Services]** , appuyez sur **[!UICONTROL Ajouter la configuration]** et sélectionnez **[!UICONTROL Contenu multimédia dynamique classique]**.
+1. Appuyez sur **[!UICONTROL Cloud Services]** , appuyez sur Configuration **** Ajouter et sélectionnez **[!UICONTROL Contenu multimédia dynamique classique]**.
 1. Dans la liste déroulante **[!UICONTROL Adobe Dynamic Media Classic]** , sélectionnez la configuration souhaitée et appuyez sur **[!UICONTROL OK]**.
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
@@ -498,7 +498,7 @@ Pour activer Dynamic Media Classic pour WCM dans l’interface utilisateur class
 
 1. In the sidekick, tap the **[!UICONTROL Page]** icon and tap **[!UICONTROL Page Properties]**.
 
-1. Appuyez sur **[!UICONTROL Cloud Services > Ajouter services > Contenu multimédia dynamique classique]**.
+1. Appuyez sur **[!UICONTROL Cloud Services > Ajouter services > Dynamic Media Classic]**.
 1. Dans la liste déroulante **[!UICONTROL Adobe Dynamic Media Classic]** , sélectionnez la configuration souhaitée et appuyez sur **[!UICONTROL OK]**.
 
    Les paramètres vidéo prédéfinis de cette configuration de Contenu multimédia dynamique classique peuvent être utilisés dans AEM avec le composant vidéo Contenu multimédia dynamique classique sur cette page et les pages enfants.
