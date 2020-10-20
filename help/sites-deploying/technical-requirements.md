@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 65346b3de98ec53e97c66fdac3be43b9c71e292a
+source-git-commit: d09956e5e7fb42e9c4b145e027778f209876239a
 workflow-type: tm+mt
-source-wordcount: '3144'
+source-wordcount: '3143'
 ht-degree: 84%
 
 ---
@@ -319,7 +319,7 @@ Adobe Experience Manager fonctionne avec les plates-formes serveur suivantes 
  </tbody> 
 </table>
 
-1. Linux Kernel 2.6, 3.x et 4.x inclut des dérivés de la distribution Red Hat, y compris Red Hat Enterprise Linux, CentOS, Oracle Linux et Amazon Linux. AEM fonctions de module complémentaire de formulaire sont uniquement prises en charge sur CentOS 7 et Red Hat Enterprise Linux 6.5 et 7.
+1. Linux Kernel 2.6, 3.x et 4.x inclut des dérivés de la distribution Red Hat, y compris Red Hat Enterprise Linux, CentOS, Oracle Linux et Amazon Linux. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7 et Red Hat Enterprise Linux 7.
 1. AEM Assets : Veuillez consulter la section [Prise en charge pour l’écriture différée des métadonnées XMP](#requirements-for-aem-assets-xmp-metadata-write-back)
 1. AEM Assets : Pas de prise en charge pour l’imagerie Dynamic Media. Le service vidéo de média dynamique est pris en charge.
 1. AEM Forms est pris en charge uniquement sur Ubuntu 16.04 LTS.
@@ -479,7 +479,7 @@ Cela signifie que lorsqu’une adresse IP doit être indiquée, vous avez le ch
 
    par exemple `https://123.1.1.4:4502`
 
-* un nom de serveur
+* un nom de serveur ;
 
    par exemple, `https://www.yourserver.com:4502`
 
