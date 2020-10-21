@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
-source-git-commit: ef8b12b462b05b6117d61d2877b16cbedfee42fd
+source-git-commit: 503910dbea671cf441307f4fa4bdc24e54fd338e
 workflow-type: tm+mt
-source-wordcount: '3276'
-ht-degree: 87%
+source-wordcount: '3305'
+ht-degree: 86%
 
 ---
 
@@ -278,7 +278,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p>Mises à jour et correctifs</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</p> </td> 
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</br><b>Remarque :</b> Red Hat Enterprise Linux 6 a atteint la fin de la phase de maintenance et les transitions à la phase de durée de vie prolongée le 30 novembre 2020. Adobe recommande Red Hat Enterprise Linux 7 pour la mise à niveau et les nouvelles installations.</p> </td> 
    <td><p>A : Pris en charge</p> </td> 
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td> 
   </tr> 
@@ -809,4 +809,4 @@ Adobe se réserve le droit de modifier les plateformes de fournisseurs tiers de 
 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site Support Adobe aux entreprises les articles de la base de connaissances relatifs à votre produit.
 
-[**Contacter le support technique **](https://www.adobe.com/fr/account/sign-in.supportportal.html)
+[**Contacter le support technique**](https://www.adobe.com/fr/account/sign-in.supportportal.html)
