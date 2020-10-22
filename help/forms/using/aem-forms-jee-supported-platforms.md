@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
-source-git-commit: 503910dbea671cf441307f4fa4bdc24e54fd338e
+source-git-commit: ee38d0ebde12a70e3af04254b0c0b4995c45519b
 workflow-type: tm+mt
-source-wordcount: '3305'
-ht-degree: 86%
+source-wordcount: '3327'
+ht-degree: 85%
 
 ---
 
@@ -278,7 +278,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p>Mises à jour et correctifs</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</br><b>Remarque :</b> Red Hat Enterprise Linux 6 a atteint la fin de la phase de maintenance et les transitions à la phase de durée de vie prolongée le 30 novembre 2020. Adobe recommande Red Hat Enterprise Linux 7 pour la mise à niveau et les nouvelles installations.</p> </td> 
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</br><b>Remarque :</b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> a atteint la phase de fin de maintenance et les transitions à la phase de support du cycle de vie étendu le 30 novembre 2020. Adobe recommande Red Hat Enterprise Linux 7 pour les mises à niveau et les nouvelles installations. Les installations existantes peuvent utiliser Red Hat Enterprise Linux 6 pendant la phase de prise en charge du cycle de vie étendu.</p> </td> 
    <td><p>A : Pris en charge</p> </td> 
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td> 
   </tr> 
