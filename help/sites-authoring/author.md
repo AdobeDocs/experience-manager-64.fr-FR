@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 translation-type: tm+mt
-source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
+source-git-commit: b009abd8b3d55bd7dd030d7b4828aec72d9fa9ff
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 83%
+source-wordcount: '555'
+ht-degree: 85%
 
 ---
 
@@ -35,10 +35,6 @@ L’environnement de création fournit les mécanismes de création, de mise à 
 ![chlimage_1-289](assets/chlimage_1-289.png)
 
 Dans l’environnement de création, les fonctions d’AEM sont accessibles dans deux interfaces utilisateur. Dans l’environnement de publication, vous concevez l’aspect de l’interface proposée aux utilisateurs.
-
->[!NOTE]
->
->AEM et le répartiteur sont utilisés pour publier cette AEM documentation.
 
 ## Environnement de création {#author-environment}
 
@@ -96,4 +92,4 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
 
 ## Dispatcher {#dispatcher}
 
-Afin que les visiteurs de votre site web bénéficient de performances optimales, le **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)met en œuvre des mécanismes de mise en cache et d’équilibrage de la charge.**
+Afin que les visiteurs de votre site web bénéficient de performances optimales, le **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) met en œuvre des mécanismes de mise en cache et d’équilibrage de la charge.**
