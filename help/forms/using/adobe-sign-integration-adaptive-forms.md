@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 1c90faf2490dcf6ecfe67708633aee45e207aba0
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 70%
+source-wordcount: '923'
+ht-degree: 69%
 
 ---
 
@@ -41,6 +41,7 @@ Vous avez besoin de ce qui suit pour intégrer Adobe Sign à AEM Forms :
 Une fois les conditions préalables en place, procédez comme suit pour configurer Adobe Sign avec AEM Forms sur l’instance d’auteur :
 
 1. On AEM Forms author instance, navigate to **Tools** ![hammer](assets/hammer.png) > **General** > **Configuration Browser**.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. On the **[!UICONTROL Configuration Browser]** page, tap **[!UICONTROL Create]**.
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and tap **[!UICONTROL Create]**. Un conteneur de configuration pour les services cloud est créé.
 1. Navigate to **Tools** ![hammer](assets/hammer.png) > **Cloud Services** > **Adobe Sign** and select the configuration container you created in the above step.
