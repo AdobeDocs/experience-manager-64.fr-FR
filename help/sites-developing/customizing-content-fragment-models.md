@@ -9,7 +9,7 @@ contentOwner: aheimoz
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 3%
@@ -27,7 +27,7 @@ Ce composant dispose des outils nécessaires pour effectuer le rendu de l&#39;in
 
 ## Emplacements {#locations}
 
-Les modèles sont enregistrés et créés sous `/conf`, sous un dossier dans lequel la propriété [Modèles de fragment de](/help/assets/content-fragments-models.md#enable-content-fragment-models) contenu est activée. Ce paramètre est également visible dans les Propriétés **de** configuration, accessibles depuis le navigateur **de** configuration.
+Les modèles sont enregistrés et créés sous `/conf`, sous un dossier dans lequel la propriété [Modèles de fragment de](/help/assets/content-fragments-models.md#enable-content-fragment-models) contenu est activée. Ce paramètre est également visible dans les Propriétés **de** configuration, accessibles depuis le navigateur **[de](/help/sites-administering/configurations.md)** configuration.
 
 1. Naviguer jusqu’au navigateur à l’aide des **outils**, **Général**, Navigateur **de** configuration, par exemple : 
 `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
@@ -36,7 +36,7 @@ Les modèles sont enregistrés et créés sous `/conf`, sous un dossier dans leq
 
    Par exemple, les propriétés pour `global`: `http://localhost:4502/libs/granite/configurations/content/edit.html/conf/global`
 
-Dans la console des modèles, tous les dossiers contenant la propriété Modèles **de fragment de** contenu s’affichent. Accédez à l’aide des **outils**, des **ressources**, des modèles de fragment de **contenu**; par exemple, `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`.
+Dans la console des modèles, tous les dossiers contenant la propriété Modèles **de fragment de** contenu s’affichent. Accédez à l’aide des **outils**, des **ressources**, des modèles **de fragment de** contenu ; par exemple, `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`.
 
 Un utilisateur peut [créer un modèle](/help/assets/content-fragments-models.md#creating-a-content-fragment-model) de fragment de contenu à l’aide de l’assistant **Créer un modèle** (à l’aide de **Créer** à partir de la console).
 
