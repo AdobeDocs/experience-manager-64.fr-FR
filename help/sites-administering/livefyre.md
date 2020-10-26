@@ -10,10 +10,10 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 68%
+source-wordcount: '1668'
+ht-degree: 67%
 
 ---
 
@@ -52,6 +52,7 @@ AEM 6.4 est livré avec le module 1.2.6 de Livefyre pré-installé. Ce module in
 ### Configure AEM to use Livefyre: Create a Configuration Folder {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
 1. From the AEM homepage, click the **Tools** icon in the left rail, then navigate to **General > Configuration Browser**.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. Cliquez sur **Créer** pour ouvrir la boîte de dialogue Créer une configuration.
 1. Name your configuration and check the **Cloud Configurations** checkbox.
 
@@ -73,6 +74,8 @@ Configurez AEM pour utiliser les informations d’identification de licence Live
    >Pour que les configurations Livefyre puissent être ajoutées aux dossiers, les configurations de cloud doivent être activées dans leurs propriétés. Les dossiers de configuration sont créés et gérés dans l’explorateur de configurations.
    >
    >Vous ne pouvez pas créer de nom pour une configuration, celle-ci étant référencée par le chemin d’accès au dossier dans laquelle elle se trouve. Vous ne pouvez disposer que d’une configuration par dossier.
+   >
+   >See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 1. Sélectionnez la carte de configuration Livefyre nouvellement créée, puis cliquez sur **Propriétés**.
 
