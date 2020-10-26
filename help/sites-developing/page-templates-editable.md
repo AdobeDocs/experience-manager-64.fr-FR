@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: 4c0c4ee86840cec0aa368b48e7f512cb86abeb02
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '3223'
+source-wordcount: '3231'
 ht-degree: 73%
 
 ---
@@ -34,7 +34,7 @@ Avec les modèles modifiables, les éléments qui constituent une page sont isol
 
 >[!NOTE]
 >
->AEM version 6.4.5.0 ou ultérieure est requise pour utiliser des modèles modifiables avec l’éditeur [](/help/sites-developing/spa-overview.md)d’applications monopages.
+>aem 6.4.5.0 ou version ultérieure est nécessaire pour utiliser des modèles modifiables avec l’éditeur [](/help/sites-developing/spa-overview.md)SPA.
 
 >[!NOTE]
 >
@@ -230,6 +230,8 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 >[!NOTE]
 >
 >Dans l’explorateur de configurations, vous pouvez modifier le dossier global et activer l’option **Modèles modifiables** si vous souhaitez créer des modèles dans ce dossier. Il ne s’agit toutefois pas de la méthode recommandée.
+>
+>See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 ### ACL et groupes {#acls-and-groups}
 
@@ -585,7 +587,7 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
 
 1. **Modèles autorisés**
 
-   * [Définissez le(s) chemin(s) d’accès des modèles autorisés dans les **Propriétés de page **](/help/sites-authoring/templates.md#allowing-a-template-author)de la page appropriée ou de la page racine d’une sous-branche.
+   * [Définissez le(s) chemin(s) d’accès des modèles autorisés dans les **Propriétés de page**](/help/sites-authoring/templates.md#allowing-a-template-author) de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
 
       `cq:allowedTemplates`
