@@ -10,10 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 4b56b05117e52f38a6f7da0ab0d3b314769f2965
 workflow-type: tm+mt
 source-wordcount: '5893'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -33,7 +33,7 @@ Un facteur clé est qu’en vue d’identifier des problèmes potentiels, vous d
 | Les [fichiers journaux](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) sont surveillés. |  |  |
 | Le contrôle du système s’exécute (constamment) en arrière-plan. | Cela comprend l’usage du processeur, de la mémoire, du disque et du réseau. En utilisant, par exemple, iostat / vmstat / perfmon. | Les données enregistrées sont visualisées et peuvent être utilisées pour suivre les problèmes de performance. Les données brutes sont accessibles. |
 | [Les performances d’AEM sont surveillées](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Cela comprend le [décompte des demandes](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) pour surveiller les niveaux de trafic. | Si une perte de performance significative ou sur le long terme est constatée, il convient d’entreprendre une investigation approfondie. |
-| Vous surveillez vos [agents de réplication](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). `` |  |  |
+| Vous surveillez vos [agents de réplication](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
 | Purge régulière des instances de workflow. | Taille du référentiel et performance des workflows. | Voir [Purge régulière des instances de workflow](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
 ## Sauvegardes {#backups}
@@ -99,13 +99,13 @@ Cette section traite des opérations de maintenance liées à la fonctionnalité
 
 ### Présentation {#overview}
 
-The **Purge Versions** tool is available in the **[Tools](/help/sites-administering/tools-consoles.md)console **under**Versioning **or directly at: ``
+L’outil **Purge de versions** est disponible dans la console **[Outils](/help/sites-administering/tools-consoles.md)** sous **Versions** ou directement à l’adresse :
 
 `https://<server>:<port>/etc/versioning/purge.html`
 
 ![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
 
-**Chemin** du Début Chemin absolu sur lequel la purge doit être effectuée. Vous pouvez sélectionner le chemin de début en cliquant sur le navigateur d’arborescence du référentiel. 
+**Chemin** du début Chemin absolu sur lequel la purge doit être effectuée. Vous pouvez sélectionner le chemin de début en cliquant sur le navigateur d’arborescence du référentiel. 
 
 **Récursif** Lors de la purge de données, vous pouvez choisir entre exécuter l’opération sur un noeud ou sur une hiérarchie entière en sélectionnant Recursif.  Dans ce cas, le chemin donné définit le nœud racine de la hiérarchie. 
 
@@ -121,7 +121,7 @@ The **Purge Versions** tool is available in the **[Tools](/help/sites-administer
 
 Pour purger les versions d’un site web, procédez comme suit :
 
-1. Accédez à la console **[Outils](/help/sites-administering/tools-consoles.md)**, sélectionnez**Versions **et double-cliquez sur**Purger les versions **.
+1. Accédez à la console **[Outils](/help/sites-administering/tools-consoles.md)**, sélectionnez **Versions** et double-cliquez sur **Purger les versions**.
 1. Set the start path of the content to be purged (e.g. `/content/geometrixx-outdoors`).
 
    * Si vous souhaitez purger uniquement le nœud défini par le chemin, désélectionner **Récursif**.
@@ -143,7 +143,7 @@ Pour purger les versions d’un site web, procédez comme suit :
 Les processus **Exécution d’essai** et **Purge** répertorient tous les noeuds qui ont été traités. Au cours du processus, un nœud peut avoir l’un des états suivants :
 
 * `ignore (not versionnable)`: le noeud ne prend pas en charge le contrôle de version et est ignoré pendant le processus.
-* `ignore (no version)`: le noeud n’a aucune version et est ignoré pendant le processus. &quot;
+* `ignore (no version)`: le noeud n’a aucune version et est ignoré pendant le processus.
 * `retained`: le noeud n’est pas purgé.
 * `purged`: le noeud est purgé.
 
@@ -317,10 +317,15 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >`org.apache.sling.commons.log.pattern` prend en charge jusqu’à six arguments.
    >
    >{0} Horodatage de type `java.util.Date`
+   >
    >{1} le marqueur de journal
-   >{2} nom du thread actuel\
-   >{3} nom de la journalisation\
-   >{4} au niveau du journal\
+   >
+   >{2} nom du thread actuel
+   >
+   >{3} nom de la journalisation
+   >
+   >{4} au niveau du journal
+   >
    >{5} le message du journal
    >
    >Si l’appel de journal comprend un `Throwable`, la trace de pile est ajoutée au message. 
@@ -405,21 +410,20 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >* Une planification heure/date peut être spécifiée sous la forme d’un modèle `java.util.SimpleDateFormat`. Cela définit le délai au bout duquel le fichier subit une rotation ; de même que le suffixe ajouté au fichier pivoté (pour identification). 
 
    >
-   >  La valeur par défaut est de &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
+   >La valeur par défaut est de &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
    >
-   >  Par exemple, à minuit le 20 janvier 2010 (ou pour être précis, lorsque le premier message de journal après cette heure est envoyé), ../logs/error.log sera renommé ../logs/error.log.2010-01-20. La journalisation du 21 janvier sera générée vers ../logs/error.log (nouveau et vide) jusqu’à ce qu’elle soit remplacée lors de la prochaine modification quotidienne.
+   >Par exemple, à minuit le 20 janvier 2010 (ou pour être précis, lorsque le premier message de journal après cette heure est envoyé), ../logs/error.log sera renommé ../logs/error.log.2010-01-20. La journalisation du 21 janvier sera générée vers ../logs/error.log (nouveau et vide) jusqu’à ce qu’elle soit remplacée lors de la prochaine modification quotidienne.
    >
-   >  | `'.'yyyy-MM` | Rotation au début de chaque mois |
-   >  |---|---|
-   >  | `'.'yyyy-ww` | Rotation au premier jour de chaque semaine (dépend du paramètre régional). |
-   >  | `'.'yyyy-MM-dd` | Rotation à minuit tous les jours. |
-   >  | `'.'yyyy-MM-dd-a` | Rotation à minuit et midi de chaque jour. |
-   >  | `'.'yyyy-MM-dd-HH` | Rotation au sommet de chaque heure. |
-   >  | `'.'yyyy-MM-dd-HH-mm` | Rotation au début de chaque minute. |
+   >| `'.'yyyy-MM` | Rotation au début de chaque mois |
+   >|---|---|
+   >| `'.'yyyy-ww` | Rotation au premier jour de chaque semaine (dépend du paramètre régional). |
+   >| `'.'yyyy-MM-dd` | Rotation à minuit tous les jours. |
+   >| `'.'yyyy-MM-dd-a` | Rotation à minuit et midi de chaque jour. |
+   >| `'.'yyyy-MM-dd-HH` | Rotation au sommet de chaque heure. |
+   >| `'.'yyyy-MM-dd-HH-mm` | Rotation au début de chaque minute. |
    >
-   >  Remarque : Lorsque vous spécifiez une heure/date :
-   >
-   >  1. Vous devez placer le texte littéral &quot;escape&quot; dans une paire de guillemets simples (&#39; &#39;);
+   >Remarque : Lorsque vous spécifiez une heure/date :
+   > 1. Vous devez placer le texte littéral &quot;escape&quot; dans une paire de guillemets simples (&#39; &#39;);
       >
       >     
       pour éviter que certains caractères ne soient interprétés comme des lettres types.
@@ -456,7 +460,7 @@ Ces entrées contiennent les mêmes informations que lors de la modification d�
 
 #### Enregistrements d’audit OSGi dans la console web {#osgi-audit-records-from-the-web-console}
 
-OSGi events also generate audit records which can be seen from the **Configuration Status** tab -> **Log Files **tab in the AEM Web Console:
+Les événements OSGi produisent également des enregistrements d’audit pouvant être affichés dans l’onglet **État de la configuration** tab -> **Fichiers journaux** dans la console web Adobe AEM : 
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -736,7 +740,7 @@ Des tests doivent être effectués pour déterminer le nombre d’utilisations s
 
 ### Utilisation de rlog.jar pour trouver des demandes avec de longues durées {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM comprend divers outils d&#39;assistance situés dans :\
+aem comprend divers outils d&#39;assistance situés dans :\
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 L’un de ces outils, `rlog.jar` , , peut être utilisé pour trier rapidement `request.log` de sorte que les demandes soient affichées selon la durée, c’est-à-dire de la plus longue à la plus courte.
