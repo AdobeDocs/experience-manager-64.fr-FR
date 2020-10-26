@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2840'
+ht-degree: 1%
 
 ---
 
@@ -82,12 +82,12 @@ Pour créer une application Facebook, suivez les instructions de Facebook à l�
 
 En général, à partir de l’API Facebook v2.7 :
 
-* *ajouter une nouvelle application Facebook :*
+* *Ajouter une nouvelle application Facebook :*
    * Pour *Plateforme*, sélectionnez Site Web
       * Pour l’URL ** du site, entrez `  https://<server>:<port>.`
    * Pour Nom ** d’affichage, saisissez un titre à utiliser comme titre du service de connexion Facebook.
    * Pour *la Catégorie*, il est recommandé de choisir *des applications pour les pages,* mais cela peut être tout.
-   * *ajouter le produit :  Connexion Facebook*
+   * *Ajouter le produit :  Connexion Facebook*
       * Pour les URI *de redirection OAuth* valides, saisissez `  https://<server>:<port>.`
 
 >[!NOTE]
@@ -110,6 +110,7 @@ L’instance Application OAuth et Fournisseur [Granite](#adobe-granite-oauth-app
 1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. Sélectionnez votre contexte et modifiez les propriétés. Activez les Configurations de cloud si elles ne sont pas encore activées.
 
    ![config-propertiespng](assets/config-propertiespng.png)
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 1. Créez/modifiez la configuration du service cloud Facebook.
 
@@ -121,7 +122,7 @@ L’instance Application OAuth et Fournisseur [Granite](#adobe-granite-oauth-app
    * **[!UICONTROL Créer des utilisateurs]** Si cette case est cochée, la connexion avec un compte Facebook créera une AEM entrée utilisateur et l’ajoutera en tant que membre au ou aux groupes d’utilisateurs sélectionnés.  La valeur par défaut est cochée (fortement recommandé).
    * **[!UICONTROL Masquer les identifiants]** utilisateur : Laissez-le désélectionné.
    * **[!UICONTROL Adresse électronique]** de l&#39;étendue : l’ID d’adresse électronique de l’utilisateur doit être récupéré à partir de Facebook.
-   * **[!UICONTROL ajouter aux groupes]** d’utilisateurs sélectionnez Ajouter un groupe d’utilisateurs pour choisir un ou plusieurs groupes [de](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) membres pour le site communautaire auquel les utilisateurs seront ajoutés.
+   * **[!UICONTROL Ajouter aux groupes]** d’utilisateurs sélectionnez Ajouter un groupe d’utilisateurs pour choisir un ou plusieurs groupes [de](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) membres pour le site communautaire auquel les utilisateurs seront ajoutés.
 
    >[!NOTE]
    >
@@ -141,7 +142,7 @@ Le fournisseur AEM Communities étend l’application OAuth Granite [Adobe et l�
 Ce fournisseur devra être modifié pour :
 
 * Autoriser les mises à jour des utilisateurs
-* ajouter des champs supplémentaires [dans la portée](#adobe-granite-oauth-application-and-provider)
+* Ajouter des champs supplémentaires [dans la portée](#adobe-granite-oauth-application-and-provider)
 
    * Tous les champs autorisés par défaut ne sont pas inclus par défaut.
 
@@ -258,6 +259,7 @@ L’instance Application OAuth et Fournisseur [Granite](#adobe-granite-oauth-app
 1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. Sélectionnez votre contexte et modifiez les propriétés. Activez les Configurations de cloud si elles ne sont pas encore activées.
 
    ![twitterconfigproppng](assets/twitterconfigproppng.png)
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 1. Créez/modifiez la configuration du service cloud Twitter.
 
@@ -273,7 +275,7 @@ L’instance Application OAuth et Fournisseur [Granite](#adobe-granite-oauth-app
 
    * **[!UICONTROL Masquer les identifiants]** utilisateur Ne pas sélectionner.
 
-   * **[!UICONTROL ajouter aux groupes]** d’utilisateurs sélectionnez Ajouter un groupe d’utilisateurs pour choisir un ou plusieurs groupes [de](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) membres pour le site communautaire auquel les utilisateurs seront ajoutés.
+   * **[!UICONTROL Ajouter aux groupes]** d’utilisateurs sélectionnez Ajouter un groupe d’utilisateurs pour choisir un ou plusieurs groupes [de](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) membres pour le site communautaire auquel les utilisateurs seront ajoutés.
    >[!NOTE]
    >
    >Les groupes peuvent être ajoutés ou supprimés à tout moment. Mais les adhésions des utilisateurs existants ne seront pas affectées. L’abonnement automatique s’applique uniquement aux nouveaux utilisateurs créés après la mise à jour de ce champ. Pour les sites sur lesquels les utilisateurs anonymes sont désactivés, ajoutez des utilisateurs au groupe de membres de la communauté correspondant destiné à ce site de la communauté fermé.
@@ -379,7 +381,7 @@ For example, http://localhost:4503/system/console/configMgr
 
 ![chlimage_1-490](assets/chlimage_1-490.png)
 
-### adobe Granite OAuth Application et fournisseur {#adobe-granite-oauth-application-and-provider}
+### Adobe Granite OAuth Application et fournisseur {#adobe-granite-oauth-application-and-provider}
 
 Lorsqu’un service cloud pour Facebook ou Twitter est créé, une instance de `Adobe Granite OAuth Authentication Handler` est créée.
 
@@ -431,7 +433,7 @@ Pour localiser l’instance créée pour une application Facebook ou Twitter :
 
 Pour chaque configuration du gestionnaire d’authentification OAuth, deux configurations supplémentaires sont créées dans l’instance :
 
-* Gestionnaire de synchronisation par défaut d’Apache Jackrabbit Oak (org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler) - Aucune modification n’est requise, mais vous pouvez examiner les mappages de champs utilisateur comment les champs Facebook sont mappés à un noeud de profil d’utilisateur CQ. Notez également que &quot;Nom du gestionnaire de synchronisation&quot; correspond à l’ID de configuration du fournisseur OAuth.
+* Gestionnaire de synchronisation par défaut d’Apache Jackrabbit Oak (org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler) - Aucune modification n’est requise, mais vous pouvez examiner les mappages des champs utilisateur comment les champs Facebook sont mappés à un noeud de profil d’utilisateur CQ. Notez également que &quot;Nom du gestionnaire de synchronisation&quot; correspond à l’ID de configuration du fournisseur OAuth.
 * Module de connexion externe Apache Jackrabbit Oak (org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory) - Aucune modification n&#39;est requise ici, mais vous pouvez remarquer que &#39;Nom du fournisseur d&#39;identité&#39; et &#39;Nom du gestionnaire de synchronisation&#39; sont identiques et pointent vers les configurations OAuth et de gestionnaire de synchronisation correspondantes, respectivement.
 
 For more information, see [Authentication with Apache Oak External Login Module](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html).
@@ -444,7 +446,7 @@ Si des avertissements de traversée sont affichés dans les journaux, il est rec
 
 Sur une instance d’auteur, connectée avec des privilèges d’administration :
 
-1. A partir de la navigation globale : sélectionnez **Outils,[CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
+1. A partir de la navigation globale : sélectionnez **Outils, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
 1. Créez un index nommé ntBaseLucene-oauth à partir d&#39;une copie de ntBaseLucene :
 
    * Sous le noeud /oak:index
