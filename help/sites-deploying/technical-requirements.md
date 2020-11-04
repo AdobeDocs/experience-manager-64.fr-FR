@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 155a0425229c79b06eced72b689972e4fdd09265
+source-git-commit: 5e418ea537e00dc3b23174a7b1bb01dba0fc6b3a
 workflow-type: tm+mt
-source-wordcount: '3144'
-ht-degree: 84%
+source-wordcount: '3182'
+ht-degree: 83%
 
 ---
 
@@ -171,14 +171,14 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
    <td>A : Pris en charge</td> 
   </tr> 
   <tr> 
-   <td>MongoDB Enterprise 3.6  [5]</td> 
+   <td>MongoDB Enterprise 3.6  [5, 6]</td> 
    <td>Référentiel</td> 
-   <td>A : Pris en charge </td> 
+   <td>A : Pris en charge  avec limites</td> 
   </tr> 
   <tr> 
-   <td>MongoDB Enterprise 3.4 [2, 3]</td> 
+   <td>MongoDB Enterprise 3.4 [2, 3, 6]</td> 
    <td>Référentiel</td> 
-   <td>A : Non pris en charge</td> 
+   <td>A : Pris en charge  avec limites</td> 
   </tr> 
   <tr> 
    <td>MySQL 5.7</td> 
@@ -233,6 +233,7 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 1. Seule le moteur de stockage MongoDB WiredTiger est prise en charge. 
 1. AEM Forms n’est pas pris en charge.
 1. MongoDB Enterprise 3.6 est pris en charge à partir d’AEM version 6.4.2.0.
+1. La prise en charge de MongoDB 3.4 a atteint la fin de vie (EOL), tandis que MongoDB 3.6 devrait atteindre EOL le 30 avril 2021. Veuillez noter que l&#39;Adobe ne fournira qu&#39;un soutien pour AEM problèmes liés aux produits.
 
 >[!NOTE]
 >
