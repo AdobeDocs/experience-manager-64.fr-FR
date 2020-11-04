@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: d09956e5e7fb42e9c4b145e027778f209876239a
+source-git-commit: 155a0425229c79b06eced72b689972e4fdd09265
 workflow-type: tm+mt
-source-wordcount: '3143'
+source-wordcount: '3144'
 ht-degree: 84%
 
 ---
@@ -178,7 +178,7 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
   <tr> 
    <td>MongoDB Enterprise 3.4 [2, 3]</td> 
    <td>Référentiel</td> 
-   <td>A : Pris en charge</td> 
+   <td>A : Non pris en charge</td> 
   </tr> 
   <tr> 
    <td>MySQL 5.7</td> 
