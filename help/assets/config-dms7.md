@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
+source-git-commit: df92346ca23161b8eaff293a6b9f2c8b7c72e2ec
 workflow-type: tm+mt
-source-wordcount: '5547'
-ht-degree: 73%
+source-wordcount: '5571'
+ht-degree: 71%
 
 ---
 
@@ -140,8 +140,8 @@ Les tâches de configuration et de configuration sont les suivantes :
 * [Configuration de la publication pour Image Server](#publishing-setup-for-image-server)
 * [Configuration des paramètres généraux de l’application](#configuring-application-general-settings)
 * [Configuration de la gestion des couleurs](#configuring-color-management)
-* [Configuration du traitement des ressources](#configuring-asset-processing)
-* [Ajout de types MIME personnalisés pour les formats non pris en charge](#adding-custom-mime-types-for-unsupported-formats)
+* [Modification des types MIME pour les formats pris en charge](#editing-mime-types-for-supported-formats)
+* [Ajouter les types MIME pour les formats non pris en charge](#adding-mime-types-for-unsupported-formats)
 * [Création de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### Configuration de la publication pour Image Server  {#publishing-setup-for-image-server}
@@ -212,21 +212,18 @@ Cela aura les effets suivants :
 * Dynamic renditions that return RGB output, will return it in the `sRGB` color space.
 * Les rendus dynamiques qui renvoient une sortie CMJN, la renverront dans l’espace colorimétrique `WebCoated`.
 
-#### Configuration du traitement des ressources {#configuring-asset-processing}
+#### Modification des types MIME pour les formats pris en charge {#editing-mime-types-for-supported-formats}
 
 Vous pouvez définir les types de ressources qui doivent être traités par Dynamic Media et personnaliser les paramètres de traitement des ressources avancé. Vous pouvez, par exemple, spécifier les paramètres de traitement des ressources de façon à ce qu’ils effectuent les opérations suivantes :
 
 * Conversion d’un PDF Adobe en ressource de catalogue électronique.
 * Conversion d’un document Adobe Photoshop (.psd) en ressource de modèle de bannière afin de permettre la personnalisation.
 * Pixellisation d’un fichier Adobe Illustrator (.ai) ou d’un fichier PostScript encapsulé Adobe Photoshop (.eps).
-
->[!NOTE]
->
->Les Profils vidéo et les Profils d’imagerie permettent de définir le traitement des vidéos et des images, respectivement.
+* [Les Profils](/help/assets/video-profiles.md) vidéo et les Profils [](/help/assets/image-profiles.md) d’imagerie peuvent être utilisés pour définir le traitement des vidéos et des images, respectivement.
 
 Voir la section [Chargement des ressources](managing-assets-touch-ui.md#uploading-assets).
 
-**Pour configurer le traitement des ressources** :
+**Pour modifier les types MIME pour les formats pris en charge**
 
 1. In AEM, tap the AEM logo to access the global navigation console, then tap the **[!UICONTROL Tools]** (hammer) icon and navigate to **[!UICONTROL General > CRXDE Lite]**.
 1. Dans le rail de gauche, accédez à ce qui suit :
@@ -252,7 +249,7 @@ Voir la section [Chargement des ressources](managing-assets-touch-ui.md#uploadin
 
 Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en charge dans AEM Assets. To ensure that any new node you add in CRXDE Lite is not deleted by AEM, you must ensure that you move the MIME type before **[!UICONTROL image_]** and its enabled value is set to **[!UICONTROL false]**.
 
-**Pour ajouter des types MIME personnalisés pour des formats non pris en charge**:
+**Pour ajouter des types MIME personnalisés pour des formats non pris en charge**
 
 1. From AEM, click **[!UICONTROL Tools > Operations > Web Console]**.
 
@@ -498,7 +495,7 @@ Pour mettre à jour l’un de ces paramètres, procédez comme indiqué dans la 
 
 La file d’attente de workflows Granite est utilisée pour le workflow **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**. Dans Dynamic Media, elle est utilisée pour l’intégration et le traitement des images.
 
-**Pour mettre à jour la file d’attente de workflows transitoires Granite** :
+**Pour mettre à jour la file d’attente de workflows transitoires Granite**
 
 1. Accédez à [https://&lt;serveur>/system/console/configMgr](http://localhost:4502/system/console/configMgr) et recherchez **[!UICONTROL Queue: Granite Transient Workflow Queue]** (File d’attente : file d’attente de workflows transitoires Granite).
 
@@ -508,11 +505,13 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 1. Dans le champ **[!UICONTROL Nombre maximal de tâches en parallèle]**, modifiez le nombre en fonction de la valeur souhaitée.
 
-   Par défaut, le nombre maximal de tâches en parallèle dépend du nombre de cœurs de processeur disponibles. Par exemple, sur un serveur à 4 cœurs, 2 threads de traitement sont attribués. (Une valeur comprise entre 0,0 et 1,0 est basée sur un ratio, ou tout nombre supérieur à 1 attribuera le nombre de threads de traitement.)
+   Vous pouvez augmenter le **[!UICONTROL nombre maximum de tâches]** parallèles afin de prendre en charge de manière adéquate le téléchargement intensif de fichiers dans Contenu multimédia dynamique. La valeur exacte dépend de la capacité matérielle. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un transfert en vrac unique, vous pouvez utiliser une valeur importante. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de coeurs) peut avoir des effets négatifs sur d’autres activités simultanées. Vous devez donc tester et ajuster la valeur en fonction de votre cas d’utilisation particulier.
 
-   Adobe recommande de configurer 32 comme **[!UICONTROL nombre maximal de tâches en parallèle]**, de façon à prendre en charge de manière adéquate le transfert massif de fichiers vers Dynamic Media Classic.
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
