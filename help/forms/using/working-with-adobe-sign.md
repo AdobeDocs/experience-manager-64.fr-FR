@@ -10,10 +10,10 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 translation-type: tm+mt
-source-git-commit: f6b6d8559bb0b899a78afd6410eb316626ecaa18
+source-git-commit: 7ea83f879d5c3f5699d2a783686c53c5292fcf8a
 workflow-type: tm+mt
-source-wordcount: '3473'
-ht-degree: 71%
+source-wordcount: '3569'
+ht-degree: 69%
 
 ---
 
@@ -77,6 +77,10 @@ Pour créer un formulaire adaptatif pour Adobe Sign, procédez comme suit :
 
    1. Indiquez le **nom** et le **titre** du formulaire adaptatif.
    1. Sélectionnez le conteneur [de](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configuration créé lors de la configuration d&#39;Adobe Sign avec AEM Forms.
+
+      >[!NOTE]
+      >
+      >La liste déroulante Cloud Service **** Adobe Sign affiche les services cloud configurés dans le conteneur de configuration que vous sélectionnez dans ce champ. La liste déroulante Cloud Service **** Adobe Sign est disponible dans la section Signature **** électronique des propriétés du formulaire adaptatif lorsque vous sélectionnez l’option **[!UICONTROL Activer Adobe Sign]** .
 
 1. Dans l’onglet Modèle **[!UICONTROL de]** formulaire, sélectionnez l’une des options suivantes :
 
@@ -153,6 +157,8 @@ Effectuez les étapes suivantes pour sélectionner un service cloud et un ordre 
 1. Sélectionnez un service cloud dans la liste des services cloud Adobe Sign déjà configurés.
 
    Si la liste du **service cloud Adobe Sign** est vide, suivez l’article [Configurer Adobe Sign avec AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md) pour configurer le service.
+
+   La liste déroulante liste les services cloud qui existent dans le `global` dossier Outils > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. En outre, la liste déroulante liste également les services cloud qui existent dans le dossier que vous sélectionnez dans le champ Conteneur **[!UICONTROL de]** configuration lorsque vous créez un formulaire adaptatif.
 
 1. Sélectionnez l’ordre de signature dans la boîte de dialogue **Les signataires peuvent signer**. Les signataires Adobe Sign peuvent signer un formulaire adaptatif de manière **séquentielle** (l’un après l’autre) ou **simultanée** (dans n’importe quel ordre).
 
