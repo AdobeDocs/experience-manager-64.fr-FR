@@ -3,9 +3,9 @@ title: Gérez des ressources composées et générez des sous-ressources.
 description: Découvrez comment créer des références à des ressources AEM à partir de fichiers InDesign, Adobe Illustrator et Photoshop. Découvrez également comment utiliser la fonction Visionneuse de page pour afficher les pages individuelles de fichiers de plusieurs pages, y compris les fichiers PDF, INDD, PPT, PPTX et AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1532ea0f4203b269f8414d150a07bed0c42a23bc
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1386'
 ht-degree: 53%
 
 ---
@@ -105,7 +105,7 @@ Plus précisément pour les documents Microsoft Word, exécutez le processus des
 
 Les sous-ressources s’affichent uniquement si elles sont générées et disponibles pour la ressource multi-page sélectionnée. Pour vue des sous-ressources générées, ouvrez la ressource de plusieurs pages. Dans la partie supérieure gauche de la page, cliquez sur l’icône ![du rail de](assets/do-not-localize/aem_leftrail_contentonly.png) gauche et cliquez sur **[!UICONTROL Sous-ensembles]** dans la liste. Lorsque vous sélectionnez **[!UICONTROL Sous-ensembles]** dans la liste. Alternately, use the keyboard shortcut `alt + 5`.
 
-![Sous-ressources de Vue pour une ressource de plusieurs pages](assets/view_subassets_simulation.gif)
+![Sous-ressources de vue pour une ressource de plusieurs pages](assets/view_subassets_simulation.gif)
 
 ## Affichage des pages d’un fichier multipage   {#view-pages-of-a-multi-page-file}
 
@@ -117,7 +117,7 @@ S’agissant d’InDesign, vous pouvez extraire des pages à l’aide du serveur
 
 Les options suivantes sont disponibles dans la barre d’outils, dans le rail de gauche et dans les commandes de la visionneuse de pages :
 
-* **[!UICONTROL Actions]** de bureau pour ouvrir ou afficher une sous-ressource spécifique à l’aide d’AEM application de bureau. Découvrez comment [configurer les actions](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) pour ordinateur si vous utilisez AEM application de bureau.
+* **[!UICONTROL Actions]** de bureau pour ouvrir ou afficher une sous-ressource spécifique à l’aide d’AEM application de bureau. Découvrez comment [configurer les actions](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2) pour ordinateur si vous utilisez AEM application de bureau.
 
 * **[!UICONTROL L’option Propriétés]** ouvre la page [!UICONTROL Propriétés] de la sous-ressource spécifique.
 
@@ -133,4 +133,5 @@ Les options suivantes sont disponibles dans la barre d’outils, dans le rail de
 
 >[!MORELIKETHIS]
 >
->* [Utilisation de l’appli de bureau Adobe Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html)
+>* [Utilisation de l’appli de bureau Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+
