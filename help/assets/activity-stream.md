@@ -3,10 +3,10 @@ title: Flux d’activité dans la chronologie
 description: 'Cet article décrit comment afficher les journaux d’activité pour les ressources de la chronologie. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 99%
+source-wordcount: '214'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ Les opérations suivantes sont consignées dans le flux d’activités :
 * Créer
 * Supprimer
 * Téléchargement (rendus compris)
-* Publication 
+* Publication
 * Annuler la publication
 * Approuver
 * Refuser
@@ -28,7 +28,7 @@ Les opérations suivantes sont consignées dans le flux d’activités :
 
 Les journaux d’activité à afficher dans la chronologie sont récupérés à partir de l’emplacement `/var/audit/com.day.cq.dam/content/dam` dans CRX, où les fichiers journaux sont stockés. 
 
-De plus, l’activité de la chronologie est consignée lorsque de nouvelles ressources sont téléchargées ou que des ressources existantes sont modifiées et archivées dans AEM via [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html)[ ou l’application de bureau AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html).
+De plus, l’activité de la chronologie est consignée lorsque de nouvelles ressources sont téléchargées ou que des ressources existantes sont modifiées et archivées dans AEM via [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html)[ ou l’application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
 
 >[!NOTE]
 >
