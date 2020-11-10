@@ -3,10 +3,10 @@ title: Configurez le balisage des ressources à l’aide de Smart Content Servic
 description: Learn how to configure smart tagging and enhanced smart tagging in [!DNL Adobe Experience Manager], using the Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3d0a173b1c95141c91b7d0495e994eab07f2655e
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 47%
+source-wordcount: '1212'
+ht-degree: 48%
 
 ---
 
@@ -83,7 +83,7 @@ Une fois qu’un certificat expire, il n’est plus approuvé. Vous ne pouvez pa
 
    ![Supprimer l’entrée de recherche de similitudes existante dans Keystore pour ajouter un nouveau certificat de sécurité](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Figure : Suppression d’une entrée existante`similaritysearch`dans le Keystore pour ajouter un nouveau certificat de sécurité.*
+   *Figure : Suppression d’une entrée existante`similaritysearch` dans le Keystore pour ajouter un nouveau certificat de sécurité.*
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Ancienne version de Cloud Services]**. Cliquez sur **[!UICONTROL Balises dynamiques de ressources]** > **[!UICONTROL Afficher la configuration]** > **[!UICONTROL Configurations disponibles]**. Cliquez sur la configuration requise.
 
@@ -190,5 +190,4 @@ Une fois la configuration terminée, utilisez un MBean JMX pour valider la confi
 >* [Gérer les balises actives](managing-smart-tags.md)
 >* [Présentation et formation des balises actives](enhanced-smart-tags.md)
 >* [Instructions et règles de formation de Smart Content Service](smart-tags-training-guidelines.md)
->* [Didacticiel vidéo sur la configuration des balises actives](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
 
