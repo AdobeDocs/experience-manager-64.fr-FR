@@ -3,9 +3,9 @@ title: Partager des dossiers AEM Assets avec un Creative Cloud
 description: Configuration et bonnes pratiques pour permettre aux utilisateurs de Adobe Experience Manager Assets d’échanger des dossiers de ressources avec les utilisateurs de Adobe Creative Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1058'
 ht-degree: 44%
 
 ---
@@ -30,7 +30,7 @@ Ce type d’intégration peut être utilisé dans les deux cas d’utilisation, 
 
 ## Présentation {#overview}
 
-AEM au partage de dossiers Creative Cloud repose sur le partage côté serveur de dossiers et de fichiers entre les comptes AEM Assets et les comptes Creative Cloud. Les professionnels de la création, qui utilisent l’application de bureau Creative Cloud sur leurs ordinateurs de bureau, peuvent en outre rendre les dossiers partagés disponibles directement sur leurs disques à l’aide de la technologie Adobe CreativeSync.
+aem au partage de dossiers Creative Cloud repose sur le partage côté serveur de dossiers et de fichiers entre les comptes AEM Assets et les comptes Creative Cloud. Les professionnels de la création, qui utilisent l’application de bureau Creative Cloud sur leurs ordinateurs de bureau, peuvent en outre rendre les dossiers partagés disponibles directement sur leurs disques à l’aide de la technologie Adobe CreativeSync.
 
 Le diagramme suivant offre une vue d’ensemble du processus d’intégration.
 
@@ -39,7 +39,7 @@ Le diagramme suivant offre une vue d’ensemble du processus d’intégration.
 L’intégration comprend les éléments suivants :
 
 * **Serveur** AEM Assets déployé dans le réseau d’entreprise (services gérés ou sur site) : Le partage de dossiers est initié ici.
-* Le **service de base Adobe Marketing Cloud Assets** : sert d’intermédiaire entre AEM et les services de stockage Creative Cloud. L’administrateur de l’entreprise qui utilise l’intégration se doit d’établir des relations de confiance entre l’organisation Marketing Cloud et l’instance AEM Assets. Il définit également [une liste des collaborateurs Creative Cloud approuvés](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html), avec qui les utilisateurs d’AEM Assets peuvent partager des dossiers pour plus de sécurité.
+* Le **service de base Adobe Marketing Cloud Assets** : sert d’intermédiaire entre AEM et les services de stockage Creative Cloud. L’administrateur de l’entreprise qui utilise l’intégration se doit d’établir des relations de confiance entre l’organisation Marketing Cloud et l’instance AEM Assets. Il définit également [une liste des collaborateurs Creative Cloud approuvés](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html?lang=en#assets), avec qui les utilisateurs d’AEM Assets peuvent partager des dossiers pour plus de sécurité.
 * **Services** Web Creative Cloud Assets (interface utilisateur Web enregistrement et Fichiers Creative Cloud) : C’est là que des utilisateurs Creative Cloud spécifiques, avec lesquels un dossier AEM Assets a été partagé, peuvent accepter l’invitation et voir le dossier dans leur enregistrement de compte Creative Cloud.
 * **Application** de bureau Creative Cloud : (Facultatif) Permet un accès direct aux dossiers/fichiers partagés depuis le bureau de l’utilisateur créatif via la synchronisation avec l’enregistrement Ressources Creative Cloud.
 
