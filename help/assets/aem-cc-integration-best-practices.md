@@ -3,10 +3,10 @@ title: Bonnes pratiques d’intégration d’AEM et de Creative Cloud
 description: Meilleures pratiques pour intégrer un déploiement AEM à Adobe Creative Cloud afin de rationaliser les workflows de transfert d’actifs et d’optimiser l’efficacité
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f44950e3e0653df61289e1bd435d13829051365
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '3578'
-ht-degree: 85%
+source-wordcount: '3566'
+ht-degree: 84%
 
 ---
 
@@ -24,7 +24,7 @@ Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de trava
 
 >[!NOTE]
 >
->AEM au partage de dossiers Creative Cloud est obsolète et n’est plus couvert par ce guide. Adobe recommends using newer capabilities such as [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) or [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html) to provide creative user with access to assets managed in AEM.
+>aem au partage de dossiers Creative Cloud est obsolète et n’est plus couvert par ce guide. Adobe recommends using newer capabilities such as [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) or [AEM desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html) to provide creative user with access to assets managed in AEM.
 
 ## Collaboration needs of creatives, marketers, and DAM users {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
@@ -39,7 +39,7 @@ Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de trava
 | Proposition de valeur pour les personnes impliquées | Offre d’Adobe | Surfaces impliquées |
 |---|---|---|
 | Les utilisateurs créatifs découvrent des ressources à partir d’AEM, les ouvrent et les utilisent, les modifient et téléchargent les modifications dans AEM et téléchargent aussi de nouveaux fichiers dans AEM sans quitter les applications Creative Cloud. | [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator et InDesign |
-| Les utilisateurs professionnels simplifient l’ouverture et l’utilisation des ressources, la modification et le chargement des modifications dans AEM et le chargement de nouveaux fichiers dans AEM à partir de l’environnement de poste de travail. Ils utilisent une intégration générique pour ouvrir n’importe quel type de ressource dans l’application de bureau native, y compris les applications autres qu’Adobe. | [Application de bureau AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html) | Application de bureau AEM sous Windows et Mac |
+| Les utilisateurs professionnels simplifient l’ouverture et l’utilisation des ressources, la modification et le chargement des modifications dans AEM et le chargement de nouveaux fichiers dans AEM à partir de l’environnement de poste de travail. Ils utilisent une intégration générique pour ouvrir n’importe quel type de ressource dans l’application de bureau native, y compris les applications autres qu’Adobe. | [Application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Application de bureau AEM sous Windows et Mac |
 | Les spécialistes marketing et les utilisateurs professionnels découvrent, prévisualisent, attribuent une licence et enregistrent les ressources Adobe Stock dans AEM. Les ressources sous licence et enregistrées fournissent des métadonnées Adobe Stock pour une meilleure gouvernance. | [Intégration d’Experience Manager et d’Adobe Stock](aem-assets-adobe-stock.md) | Interface web d’AEM |
 
 Cet article se concentre principalement sur les deux premiers aspects des besoins de collaboration. La distribution et la source des ressources à grande échelle sont brièvement mentionnées comme cas d’utilisation. Pour répondre à ces besoins, pensez à Adobe Brand Portal ou à Asset Share Commons. Alternate solutions such as [Brand Portal](https://helpx.adobe.com/fr/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [Experience Manager Assets](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
@@ -67,9 +67,9 @@ The terms used in this document may have a different meaning in other contexts. 
 | Cas d’utilisation | Application de bureau AEM | Partage de dossiers | Autres solutions |
 |---|---|---|---|
 | Partager un nombre moins important (1) de ressources DAM avec un utilisateur créatif | ✔✔ | ✔ |  |
-| Partager un plus grand nombre (2) de ressources DAM avec un utilisateur créatif | ✔✔ | ✘ | [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) <br> [Partage de ressources](assets-finder-editor.md) |
+| Partager un plus grand nombre (2) de ressources DAM avec un utilisateur créatif | ✔✔ | ✘ | [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) <br> [Partage de ressources](assets-finder-editor.md) |
 | Partager des ressources de gestion des actifs numériques avec les utilisateurs ayant accès à la gestion des actifs numériques | ✔✔ | ✔ | [Partage de liens](link-sharing.md) |
-| Partager des ressources de gestion des actifs numériques avec les utilisateurs n’ayant pas accès à la gestion des actifs numériques | ✘ | ✔✔ | [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) <br> [Partage de ressources](assets-finder-editor.md) |
+| Partager des ressources de gestion des actifs numériques avec les utilisateurs n’ayant pas accès à la gestion des actifs numériques | ✘ | ✔✔ | [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) <br> [Partage de ressources](assets-finder-editor.md) |
 | Enregistrer un plus petit nombre/volume de ressources dans la gestion des actifs numériques | ✔✔ | ✔ | [Transfert sur l’interface utilisateur web](managing-assets-touch-ui.md) |
 | Enregistrer un plus grand nombre de ressources dans DAM (3) | ✔✔ | ✘ | [Transfert sur l’interface utilisateur web](managing-assets-touch-ui.md) <br> Script personnalisé/outil |
 | Migrer un nombre conséquent de ressources vers DAM | ✘ | ✘ | [Guide de migration](assets-migration-guide.md) |
@@ -111,7 +111,7 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 
 ### Remarques concernant l’utilisation de l’intégration d’AEM et Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* See [desktop app best practices](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
+* See [desktop app best practices](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
 * Voir Intégration [Adobe Stock](aem-assets-adobe-stock.md)
 * See [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html)
 
@@ -218,10 +218,10 @@ Le cycle de vie des ressources comprend les étapes suivantes :
 
 1. Partage des ressources approuvées sur l’ordinateur de bureau du créatif : les ressources finales de la gestion des actifs numériques sont mises à la disposition de l’utilisateur créatif (sur ordinateur de bureau).
 1. Création d’une conception (ressource numérique créative) : un nouveau fichier est stocké dans la zone de travail en cours (WIP).
-1. Utilisez (placez) des ressources approuvées dans une nouvelle conception : L’utilisateur créatif produit un nouveau fichier à l’aide des ressources approuvées existantes dans les applications Creative Cloud.
+1. Utilisez (placez) des ressources approuvées dans une nouvelle conception : L’utilisateur créatif produit une nouvelle ressource à l’aide des ressources approuvées existantes dans les applications de Creative Cloud.
 1. Enregistrement régulier des mises à jour des travaux en cours : l’utilisateur créatif produit des itérations rapidement et enregistre fréquemment le fichier. À ce stade, l’utilisateur créatif peut collaborer avec d’autres utilisateurs, mais les mises à jour fréquemment enregistrées sont   généralement sans intérêt pour les utilisateurs de DAM.
 1. La ressource est prête pour les créatifs et elle est enregistrée dans le dossier à destination des créatifs.
-1. Mise à jour   update : Une mise à jour de fichier ou un nouveau fichier est disponible pour les utilisateurs dans DAM
+1. Mise à jour   update : Une mise à jour de fichier ou un nouveau fichier est disponible pour les utilisateurs dans DAM.
 1. Le fichier est mis en production : Il s’agit d’un processus de gestion des actifs numériques qui, selon l’organisation, peut comprendre le balisage, les approbations et le changement de contrôle d&#39;accès. À ce stade, la ressource est considérée finale, et elle peut être utilisée par les équipes élargies utilisant la gestion des actifs numériques. Elle peut également être utilisée par les utilisateurs créatifs pour créer d’autres ressources.
 
 Voici quelques recommandations générales concernant la façon de gérer les ressources à travers ce processus :
@@ -297,7 +297,7 @@ Pour planifier et exécuter des migrations de ressources depuis le système exis
 >[!MORELIKETHIS]
 >
 >* [Adobe Asset Link](https://helpx.adobe.com/in/enterprise/using/adobe-asset-link.html)
->* [Meilleures pratiques pour l’application de bureau AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
->* [AEM Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
+>* [Meilleures pratiques pour l’application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
+>* [AEM Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 >* [Intégration d’AEM et d’Adobe Stock](aem-assets-adobe-stock.md)
 
