@@ -1,10 +1,10 @@
 ---
 cloud: experience-cloud
 solution-title: Formation et assistance
-solution-hub-url: https://helpx.adobe.com/fr/support/experience-manager/6-4.html
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-64.html
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: Prise en main
-getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
+getting-started-url: https://experienceleague.corp.adobe.com/docs/experience-manager-tutorials.html
 tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html
 mini-toc-levels: 2
@@ -13,10 +13,10 @@ solution: Experience Manager
 type: Documentation
 index: y
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 50b278705b703c190babc208567f7267796e66e4
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 70%
+ht-degree: 71%
 
 ---
 
@@ -39,5 +39,5 @@ Dans le fichier TOC.md
 
 | metadata | effets |
 |--- |--- |
-| guide-utilisateur-titre | Utilisé dans l’en-tête de l’article comme lien. |
+| user-guide-title | Utilisé dans l’en-tête de l’article en tant que lien.. |
 | user-guide-url | Ouvre la page hub Formation et support. |
