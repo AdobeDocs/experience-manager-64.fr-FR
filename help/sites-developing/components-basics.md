@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4725'
-ht-degree: 68%
+ht-degree: 69%
 
 ---
 
@@ -73,7 +73,7 @@ Pour cette raison, nous allons aborder les notions de base des deux interfaces
 
 >[!NOTE]
 >
->adobe recommande de tirer parti de l’interface utilisateur tactile pour bénéficier des dernières technologies. [Les outils](modernization-tools.md) de modernisation AEM peuvent faciliter la migration.
+>Adobe recommande de tirer parti de l’interface utilisateur tactile pour bénéficier des dernières technologies. [Les outils](modernization-tools.md) de modernisation AEM peuvent faciliter la migration.
 
 ### Logique de contenu et balisage de rendu  {#content-logic-and-rendering-markup}
 
@@ -659,27 +659,27 @@ The `cq:actions` property ( `String array`) defines one or several actions that 
   </tr> 
   <tr> 
    <td>-</td> 
-   <td>ajoute un espaceur.<br /> Uniquement visible dans l’interface utilisateur classique. L’IU tactile n’affiche pas les actions dans un menu contextuel, donc ceci n’est pas applicable.</td> 
+   <td>Ajoute un espaceur.<br /> Uniquement visible dans l’interface utilisateur classique. L’IU tactile n’affiche pas les actions dans un menu contextuel, donc ceci n’est pas applicable.</td> 
   </tr> 
   <tr> 
    <td><code>edit</code></td> 
-   <td>ajoute un bouton pour modifier le composant.</td> 
+   <td>Ajoute un bouton pour modifier le composant.</td> 
   </tr> 
     <tr>
     <td><code>editannotate</code></td>
-    <td>ajoute un bouton pour modifier le composant et autoriser les <a href="/help/sites-authoring/annotations.md">annotations</a>.</td>
+    <td>Ajoute un bouton pour modifier le composant et autoriser les <a href="/help/sites-authoring/annotations.md">annotations</a>.</td>
    </tr>
   <tr> 
    <td><code>delete</code></td> 
-   <td>ajoute un bouton pour supprimer le composant</td> 
+   <td>Ajoute un bouton pour supprimer le composant</td> 
   </tr> 
   <tr> 
    <td><code>insert</code></td> 
-   <td>ajoute un bouton pour insérer un nouveau composant avant le composant actif.</td> 
+   <td>Ajoute un bouton pour insérer un nouveau composant avant le composant actif.</td> 
   </tr> 
   <tr> 
    <td><code>copymove</code></td> 
-   <td>ajoute un bouton pour copier et couper le composant.</td> 
+   <td>Ajoute un bouton pour copier et couper le composant.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -1030,10 +1030,12 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
 >[!NOTE]
 >
 >Dans le cas des composants imbriqués, certaines restrictions existent sur les actions définies en tant que propriétés sur le nœud `cq:listeners` :
-
->* For nested components, the values of the following properties *must* be `REFRESH_PAGE`: >
->* `aftermove`
-* `aftercopy`
+>
+>* Pour les composants imbriqués, les valeurs des propriétés *doivent* être `REFRESH_PAGE` :
+   >
+   >  
+* `aftermove`
+>  * `aftercopy`
 
 
 Le gestionnaire d’événements peut être mis en œuvre avec une implémentation personnalisée. Par exemple (où `project.customerAction` est une méthode statique) :
@@ -1045,7 +1047,8 @@ The following example is equivalent to the `REFRESH_INSERTED` configuration:
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
-For the classic UI, to see which parameters can be used in the handlers, refer to the `before<action>` and `after<action>` events section of the [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) and [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widget documentation.
+>
+>For the classic UI, to see which parameters can be used in the handlers, refer to the `before<action>` and `after<action>` events section of the [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) and [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widget documentation.
 
 Avec la configuration suivante, la page est actualisée après la suppression, la modification, l’insertion ou le déplacement du composant :
 
