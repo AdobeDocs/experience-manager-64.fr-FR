@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '3241'
 ht-degree: 5%
@@ -216,10 +216,11 @@ Le panneau Paramètres contient plusieurs sous-panneaux présentant les fonction
    Ne vérifiez pas la présence d&#39;un site communautaire *privé* . Cette option n’est pas cochée par défaut.
 
 >[!NOTE]
-
-**[!UICONTROL Autorisation des connexions aux réseaux sociaux]**
->Bien que des exemples de configurations Facebook et Twitter puissent exister et être sélectionnables, pour un environnement [de](../../help/sites-administering/production-ready.md)production, il est nécessaire de créer des applications Facebook et Twitter personnalisées. Voir Connexion [aux réseaux sociaux avec Facebook et Twitter](social-login.md).
 >
+>**[!UICONTROL Autorisation des connexions aux réseaux sociaux]**
+>
+>Bien que des exemples de configurations Facebook et Twitter puissent exister et être sélectionnables, pour un environnement [de](../../help/sites-administering/production-ready.md)production, il est nécessaire de créer des applications Facebook et Twitter personnalisées. Voir Connexion [aux réseaux sociaux avec Facebook et Twitter](social-login.md).
+
 #### TAGGING {#tagging}
 
 ![chlimage_1-450](assets/chlimage_1-450.png)
@@ -346,7 +347,7 @@ Le paramètre global de modération du contenu généré par l’utilisateur (UG
 
 ![chlimage_1-457](assets/chlimage_1-457.png)
 
-Les `ENABLEMENT`paramètres sont applicables lorsque le modèle de site de la communauté choisi inclut la fonction [](functions.md#assignments-function)assignations, qui est disponible lorsque les fonctions d&#39;activation sont sous licence et [configurées](enablement.md). Le modèle de site de référence qui inclut la fonction d&#39;affectations est `Reference Structured Learning Site Template.`
+Les `ENABLEMENT`paramètres sont applicables lorsque le modèle de site de la communauté choisi inclut la fonction [](functions.md#assignments-function)assignations, qui est disponible lorsque les fonctionnalités d&#39;activation sont sous licence et [configurées](enablement.md). Le modèle de site de référence qui inclut la fonction d&#39;affectations est `Reference Structured Learning Site Template.`
 
 * **[!UICONTROL Responsables d’activation]**
 
@@ -392,7 +393,8 @@ Le contenu d&#39;un site peut être créé avec les mêmes outils que tout autre
 ![chlimage_1-461](assets/chlimage_1-461.png)
 
 >[!NOTE]
-If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+>
+>If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Modification des propriétés du site {#modifying-site-properties}
 
@@ -439,15 +441,20 @@ Le panneau STRUCTURE permet de modifier la structure initialement créée à par
       modifier l&#39;ordre des fonctions tel qu&#39;il s&#39;affiche dans la barre de navigation de niveau supérieur du site ;
 
 >[!NOTE]
-Vous pouvez modifier l&#39;ordre de toutes les fonctions de la Structure du site, à l&#39;exception de la fonction située en haut. Par conséquent, la page d&#39;accueil du site des communautés ne peut pas être modifiée.
+>
+>Vous pouvez modifier l&#39;ordre de toutes les fonctions de la Structure du site, à l&#39;exception de la fonction située en haut. Par conséquent, la page d&#39;accueil du site des communautés ne peut pas être modifiée.
 
 >[!CAUTION]
-Bien que le titre d’affichage puisse être modifié sans effets secondaires, il n’est pas recommandé de modifier le nom d’URL d’une fonction de communauté appartenant à un site communautaire.
-Par exemple, renommer l’URL ne déplace pas l’UGC existant, avec pour effet de &quot;perdre&quot; l’UGC.
+>
+>Bien que le titre d’affichage puisse être modifié sans effets secondaires, il n’est pas recommandé de modifier le nom d’URL d’une fonction de communauté appartenant à un site communautaire.
+>
+>Par exemple, renommer l’URL ne déplace pas l’UGC existant, avec pour effet de &quot;perdre&quot; l’UGC.
 
 >[!CAUTION]
-La fonction de groupes *ne doit pas* être la *première ou la seule* fonction de la structure du site.
-Toute autre fonction, telle que la fonction [de](functions.md#page-function)page, doit être incluse et répertoriée en premier.
+>
+>La fonction de groupes *ne doit pas* être la *première ou la seule* fonction de la structure du site.
+>
+>Toute autre fonction, telle que la fonction [de](functions.md#page-function)page, doit être incluse et répertoriée en premier.
 
 #### Exemple : Ajouter une fonction de catalogue à une structure de site communautaire {#example-adding-a-catalog-function-to-a-community-site-structure}
 
@@ -525,8 +532,10 @@ Notez que tous les membres affectés des rôles en tant que modérateurs ou admi
 Pour plus d’informations, voir [Gestion des utilisateurs et des groupes](users.md)d’utilisateurs.
 
 >[!NOTE]
-Si vous [autorisez la connexion à Social : Facebook](#user-management) est activé une fois le groupe d’utilisateurs
-* community-*&lt;site-name>*-*&lt;uid>*-members
+>
+>Si vous [autorisez la connexion à Social : Facebook](#user-management) est activé une fois le groupe d’utilisateurs
+>
+>* community-*&lt;site-name>*-*&lt;uid>*-members
 
 est créée, le service [cloud](social-login.md#createafacebookcloudservice) Facebook appliqué doit être configuré pour ajouter des utilisateurs à ce groupe.
 
