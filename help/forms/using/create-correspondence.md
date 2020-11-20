@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 2c1be479-9f44-4348-b074-a08af8df51fa
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '3726'
 ht-degree: 67%
@@ -57,7 +57,7 @@ Sélectionnez la lettre à prévisualiser en procédant comme suit :
    Il existe trois onglets : données, contenu et pièces jointes. S’il n’existe pas d’éléments de données (variables d’espace réservé et champs de mise en page), la lettre s’ouvre alors directement dans l’onglet Contenu. L’onglet de pièces jointes est disponible uniquement lorsque des pièces jointes sont présentes ou que l’accès à la bibliothèque est activé.
 
    >[!NOTE]
-
+   >
    >For more information on switching between HTML or PDF rendition mode of letter preview, see [Change rendition mode of letter](#changerenditionmode). For more information on PDF support in Correspondence Management and AEM, see [Discontinuation of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/fr/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/fr/aem-forms/kb/pdf-forms-to-html5-forms.html).
 
 ### Saisir des données {#enterdata}
@@ -170,7 +170,7 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
    * **Texte** Affiche la somme des variables d’espace réservé vides uniques et des éléments du dictionnaire de données contenus dans le module de texte.
    * **Condition** Affiche la somme des variables de condition vides uniques contenues dans la condition et des variables contenues dans les modules résultants.
    * **Liste** Affiche la somme de toutes les variables vides uniques contenues dans les modules affectés à la liste.
-   * **Zone** de Cible Affiche la somme de toutes les variables vides uniques contenues dans les modules affectés à la zone de cible.
+   * **Zone** de cible Affiche la somme de toutes les variables vides uniques contenues dans les modules affectés à la zone de cible.
 
    Notez ce qui suit concernant les variables avec des valeurs par défaut :
 
@@ -202,7 +202,7 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 
 * Insertion d’une ligne vide : permet d’insérer une nouvelle ligne vide.
 * Bibliothèque de contenu : ouvre la bibliothèque de contenu pour ajouter des modules à la liste.
-* Paramètre de Liste (liste imbriquée uniquement) :
+* Paramètre de liste (liste imbriquée uniquement) :
 * Verrouillage d’ordre (information) : indique que l’ordre des éléments de la liste ne peut pas être modifié.
 
 ### Gestion des pièces jointes {#manage-attachments}
@@ -356,5 +356,5 @@ Pour changer le mode d’aperçu de la lettre, effectuez les étapes suivantes :
 
 1. Go to `https://[system]:[port]/system/console/configMgr` and, if necessary, log in as Admin.
 1. Accédez à **[!UICONTROL Configurations de Correspondence Management]** > **[!UICONTROL Type de rendu]** et sélectionnez **Rendu HTML** (par défaut) ou **Rendu PDF**.
-1. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Cliquez sur **[!UICONTROL Save]**.
 
