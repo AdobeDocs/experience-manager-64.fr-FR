@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques aux packs de correctifs cumulés
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9b339e7a9ac3f43fd0ef2e672d6fbd640993368b
+source-git-commit: e29f203fc6754056d613bd47bdb8decff9e6b5c3
 workflow-type: tm+mt
-source-wordcount: '4042'
+source-wordcount: '4039'
 ht-degree: 13%
 
 ---
@@ -457,7 +457,7 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 
 >[!NOTE]
 >
->A partir de cette version, UberJar et d’autres artefacts associés sont disponibles dans le référentiel Maven Central et non dans le référentiel Adobe Public Maven (repo.adobe.com). Le fichier UberJar principal est renommé `uber-jar-<version>.jar`. Par conséquent, il n’existe aucune `classifier`valeur, avec `apis` comme valeur, pour la `dependency` balise.
+>UberJar et d’autres artefacts associés sont disponibles dans le référentiel Maven Central au lieu du référentiel Adobe Public Maven (repo.adobe.com). Le fichier UberJar principal est renommé `uber-jar-<version>.jar`. Par conséquent, il n’existe aucune `classifier`valeur, avec `apis` comme valeur, pour la `dependency` balise.
 
 ## Fonctionnalités supprimées / obsolètes {#removed-deprecated-features}
 
