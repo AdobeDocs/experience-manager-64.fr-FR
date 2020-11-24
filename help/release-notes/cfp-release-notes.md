@@ -4,10 +4,10 @@ description: Notes de mise à jour spécifiques aux packs de correctifs cumulés
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
+source-git-commit: 9b339e7a9ac3f43fd0ef2e672d6fbd640993368b
 workflow-type: tm+mt
-source-wordcount: '3420'
-ht-degree: 16%
+source-wordcount: '4042'
+ht-degree: 13%
 
 ---
 
@@ -16,15 +16,95 @@ ht-degree: 16%
 
 ## Informations sur la version {#release-information}
 
+<!-- TBD: Update the SD URL. -->
+
 | Produits | **Adobe Experience Manager (AEM) 6.4** |
 |---|---|
-| Version | 6.4.8.2 |
+| Version | 6.4.8.3 |
 | Type | Pack de correctifs cumulés  |
-| Date | 3 septembre 2020 |
+| Date | 26 novembre 2020 |
 | Condition requise | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
-| URL de téléchargement | aem 6.4.8.2 sur la distribution de [logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-2.0.zip) |
+| URL de téléchargement | aem 6.4.8.3 sur la distribution de [logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-3.0.zip) |
 
-## Fonctionnalités présentes dans AEM 6.4.8.2 {#what-s-included-in-aem}
+## Fonctionnalités présentes dans AEM 6.4.8.3 {#what-s-included-in-aem}
+
+aem Cumulative Fix Pack 6.4.8.3 est une mise à jour importante qui comprend plusieurs correctifs internes et clients depuis la disponibilité générale d&#39;AEM 6.4 Service Pack 8 (6.4.8.0) en mars 2020.
+
+aem 6.4.8.3 est un Cumulative Fix Pack (CFP) qui dépend de AEM 6.4 Service Pack 8. Installez le CFP après avoir installé AEM 6.4 Service Pack 8.
+
+Dans AEM 6.4.8.3, le référentiel intégré (Apache Jackrabbit Oak) est mis à jour vers la version 1.8.23.
+
+For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+
+Adobe Experience Manager 6.4.8.3 fournit des correctifs pour les problèmes suivants.
+
+### Sites {#sites-6483}
+
+* Lorsque vous mettez à jour le texte d’une variante d’un fragment de contenu, le contenu du fragment de contenu maître est mis à jour à la place de la variante (NPR-35080).
+
+* Lorsque vous définissez une valeur numérique pour la propriété d&#39;étiquette de type chaîne d&#39;un composant, supprimez le composant et utilisez l&#39;option Annuler pour le ramener, le type de propriété d&#39;étiquette passe automatiquement de String à Long (NPR-34738).
+
+* Lorsque vous ajoutez un composant Téléchargement de fichier à plusieurs champs, le chemin d’accès à l’image est stocké dans le noeud du composant au lieu du noeud Champ multiple (NPR-34423).
+
+* Dans l&#39;assistant Déplacer la page, même si aucune destination n&#39;est sélectionnée, le bouton suivant reste activé (NPR-34460).
+
+* Lorsque le composant parent inclut la `cq:isContainer` propriété, le composant hérité n’inclut pas automatiquement la propriété (CQ-4308409).
+
+* Lorsque vous utilisez la minification CSS à l’aide de `calc()` la fonction, les espaces autour du `+` signe sont supprimés (NPR-34991).
+
+* Lorsque vous début une instance AEM, les composants `com.adobe.granite.maintenance.impl.MaintenanceTaskManagerImpl` et `com.adobe.granite.maintenance.impl.TaskScheduler` composants ne s’affichent pas à `Active` l’état (NPR-34952).
+
+### [!DNL Assets] {#assets-6483}
+
+* Lors de la création d’une version d’un fichier existant, les mises à jour de l’utilisateur ne sont pas conservées si un profil de métadonnées est appliqué au dossier (NPR-34833).
+* Lorsque vous utilisez [!DNL Adobe Asset Link] avec [!DNL Adobe InDesign], les résultats de la recherche ne contiennent pas de dossiers et de collections, mais uniquement des fichiers (NPR-34700).
+* Lorsque vous faites glisser un fichier sur un dossier pour le déplacer, l’interface utilisateur affiche également l’option [!UICONTROL Déposer dans Lightbox] et [!UICONTROL Déposer dans la collection]. Même si l&#39;opération de déplacement est annulée, l&#39;interface utilisateur continue d&#39;afficher les deux dernières options (NPR-34525).
+* Lorsque l’interface Gérer la publication est ouverte, l’option de publication n’est pas disponible et lorsque vous sélectionnez l’option d’annulation de publication, la page d’étendue est vide (CQ-4302509).
+
+#### [!DNL Dynamic Media] {#dynamic-media}
+
+* Dans les paramètres d’image prédéfinie, lorsque l’option [!UICONTROL Activer le sous-échantillonnage] chrominance JPG est désélectionnée dans [!DNL Experience Manager], la modification n’est pas synchronisée avec [!DNL Dynamic Media] (NPR-34284).
+* Dans l’éditeur [!UICONTROL de paramètres prédéfinis de la]visionneuse, lors de la modification du paramètre prédéfini [!UICONTROL PanoramicImage/PanoramicImage_VR] , dans le `PanoramicView` composant, l’étiquette `PANORAMICVIEW_AUTOROTATE` de modificateur n’est pas disponible (CQ-4302043).
+* L’annulation de la publication d’une vidéo [!DNL Experience Manager] n’annule pas la publication de la visionneuse de vidéos adaptative sur Scene7 configuré. (CQ-4304405).
+
+### Plate-forme {#platform-6483}
+
+* L&#39; `emitUseStrict` indicateur est ajouté à la fonction de processeur du Compilateur de fermeture de Google (GCC) `com.adobe.granite.ui.clientlibs.impl.HtmlLibraryManagerImpl`. L&#39;indicateur supprime la sortie de l&#39; `use strict` instruction (NPR-34830).
+* Un `NullPointerException` est retourné au début des tâches de maintenance quotidiennes ou hebdomadaires (NPR-34702).
+* L&#39; [!DNL Apache Sling Health Check] outil est obsolète. Utilisez plutôt le Détecteur [de](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/upgrading/pattern-detector.html) schémas pour détecter les violations de contenu (NPR-33929).
+
+### Intégrations {#integrations-6483}
+
+* Le bouton [!UICONTROL Créer] apparaît sur la page [!UICONTROL Audiences] lors de la navigation d’un dossier vers la page [!UICONTROL Audiences] (NPR-35152).
+
+### Interface utilisateur {#ui-6483}
+
+* Le panneau de recherche [!UICONTROL Filtres] de l&#39;interface utilisateur [!UICONTROL Omnisearch] renvoie également des résultats provenant d&#39;autres emplacements que ceux d&#39;où la recherche est exécutée (NPR-34877).
+* Lors de la fermeture du panneau [!UICONTROL Filtres] de l&#39;interface utilisateur [!UICONTROL Omnisearch] , le rail de gauche n&#39;est pas réinitialisé à la sélection du [!UICONTROL contenu] , ce qui empêche la réouverture du panneau [!UICONTROL Filtres (NPR-34483).]
+* Une `NullPointerException` valeur est renvoyée lors de l&#39;accès aux propriétés de la page (NPR-34509).
+
+### Communities {#communities-6483}
+
+<!-- Following fixes of 6483 are documented on Nov 11 20202 by Vishabh. 
+-->
+
+* Tous les cas de terminologie inéquitable dans le produit sont remplacés par des équivalents acceptés (NPR-34506).
+
+### Commerce {#commerce-6483}
+
+* Lorsqu’une collection compte plus de 15 produits, la collection n’affiche que les 15 premiers produits (NPR-34494).
+
+### Formulaires {#forms-6483}
+
+>[!NOTE]
+>
+>[!DNL Experience Manager Forms] libère les packages de modules complémentaires une semaine après la date de mise à jour du pack de correctifs [!DNL Experience Manager] cumulatifs.
+
+Pour plus d&#39;informations sur les mises à jour de sécurité, consultez la page [Bulletins de sécurité des](https://helpx.adobe.com/security/products/experience-manager.html)Experience Manager.
+
+## Correctifs et packs de fonctionnalités inclus dans les packs de correctifs cumulés précédents {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
+
+### Adobe Experience Manager 6.4.8.2 {#experience-manager-6482}
 
 aem Cumulative Fix Pack 6.4.8.2 est une mise à jour importante qui comprend plusieurs correctifs internes et clients depuis la disponibilité générale d&#39;AEM 6.4 Service Pack 8 (6.4.8.0) en mars 2020.
 
@@ -36,7 +116,7 @@ For information on CFP and other types of releases, see [AEM Update Release Vehi
 
 Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suivants.
 
-### Sites {#sites-6482}
+#### Sites {#sites-6482}
 
 * Si le `RolloutConfigManagerFactoryImpl` serveur ne peut pas charger une configuration de déploiement, il ne tente pas de charger les configurations manquantes. Elle renvoie les configurations mises en cache (NPR-34091).
 * Dans le composant noyau de texte, après avoir utilisé l’option d’édition HTML source, la classe de la `em` balise est supprimée (NPR-34080).
@@ -59,7 +139,7 @@ Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suiv
 * Problème d’affichage des composants autorisés dans la page Modifier le modèle (CQ-4297295).
 * Après la mise à niveau de Chrome et Firefox, les menus contextuels ne fonctionnent plus comme prévu. Lors du chargement des propriétés de la page, le panneau n’apparaît pas lorsqu’il contient des données (CQ-4292995).
 
-### Ressources {#assets-6482}
+#### Ressources {#assets-6482}
 
 * L’extraction de texte des fichiers PDF téléchargés ne fonctionne pas et la recherche de texte intégral de certains mots dans un fichier PDF ne parvient pas à récupérer ce fichier PDF (NPR-34165).
 
@@ -88,26 +168,26 @@ Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suiv
 
 * Le libellé du modificateur [!UICONTROL PANORAMICVIEW_AUTOROTATE] est absent de l’onglet [!UICONTROL Comportement] de la page Editeur [!UICONTROL de paramètres prédéfinis de la] visionneuse (CQ-4302043).
 
-### Plate-forme {#platform-6482}
+#### Plate-forme {#platform-6482}
 
 * Les valeurs par défaut des paramètres **[!UICONTROL Connect Timeout]** et **[!UICONTROL Socket Timeout]** pour la configuration de l’agent par défaut (publication) ne sont pas spécifiées (NPR-33708).
 * Le Planificateur de la tâche de maintenance début et arrête les tâches de maintenance trop souvent que configurées (NPR-33520).
 * Impossible de télécharger les journaux à l&#39;aide de l&#39;outil Diagnostic sur une instance de Experience Manager mise à niveau (NPR-34419).
 
-### Intégrations {#integrations-6482}
+#### Intégrations {#integrations-6482}
 
 * La valeur de `library_path` n’est pas prise en compte lors de la génération de l’URL [!DNL Adobe Launch] de bibliothèque pour les bibliothèques migrées depuis [!DNL Adobe Dynamic Tag Management]. En outre, les bibliothèques migrées utilisent un préfixe différent de celui des [!DNL Adobe Launch] bibliothèques. (NPR-34238).
 * Les propriétés héritées d’un service cloud ne sont pas conservées lors de la mise à jour des propriétés de page (NPR-33865).
 
-### Interface utilisateur {#ui-6482}
+#### Interface utilisateur {#ui-6482}
 
 * L&#39;affichage du nombre de ressources sélectionnées sur une page de recherche est incorrect (NPR-33540).
 
-### Communities {#communities-6482}
+#### Communities {#communities-6482}
 
 * Les utilisateurs existants d’un groupe de la communauté ajouté via la console d’administration sont supprimés de la liste d’utilisateurs lors de toute modification de la console de groupe de la communauté (NPR-34312).
 
-### Formulaires {#forms-6482}
+#### Formulaires {#forms-6482}
 
 >[!NOTE]
 >
@@ -160,8 +240,6 @@ Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suiv
 * Lorsque vous mettez à niveau la [!DNL JBoss] version vers la version 7.0.9 pour [!DNL Experience Manager Forms] avec Document Security dans un [!DNL Linux] environnement, une erreur se produit (CQ-4300546).
 
 Pour plus d&#39;informations sur les mises à jour de sécurité, consultez la page [Bulletins de sécurité des](https://helpx.adobe.com/security/products/experience-manager.html)Experience Manager.
-
-## Correctifs et packs de fonctionnalités inclus dans les packs de correctifs cumulés précédents {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 
 ### Adobe Experience Manager 6.4.8.1 {#experience-manager-6481}
 
@@ -267,7 +345,7 @@ Adobe Experience Manager 6.4.8.1 apporte des correctifs aux problèmes suivants.
 * Document Services : Lorsqu’un utilisateur convertit un fichier texte au format PDF, les caractères japonais ne s’affichent pas correctement (NPR-33239).
 * Stockage de XSS avec le GuideSOMProviderServlet (NPR-32701).
 
-## Install 6.4.8.2 {#install}
+## Install 6.4.8.3 {#install}
 
 ### Conditions requises {#setup-requirements}
 
@@ -285,20 +363,20 @@ Adobe Experience Manager 6.4.8.1 apporte des correctifs aux problèmes suivants.
 >
 >Pour les clients dont les Feature Packs sont installés sur AEM 6.4. Les Feature Packs facultatifs fournis par Adobe dépendent de la version de publication et des Service Packs. Si vous disposez d’un pack de fonctionnalités, contactez l’équipe d’assistance AEM clientèle afin de vérifier la compatibilité de ces packs de fonctionnalités avec ce pack de correctifs cumulatif pour AEM 6.4.
 
-* AEM 6.4.8.2 requires AEM 6.4.8.0. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
-* Lors d’un déploiement avec MongoDB et plusieurs instances, installez AEM 6.4.8.2 sur l’une des instances d’auteur à l’aide du gestionnaire de modules.
+* AEM 6.4.8.3 requires AEM 6.4.8.0. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
+* Lors d’un déploiement avec MongoDB et plusieurs instances, installez AEM 6.4.8.3 sur l’une des instances d’auteur à l’aide du gestionnaire de modules.
 * Avant d’installer le pack de correctifs cumulatifs, veillez à disposer d’un instantané ou d’une nouvelle sauvegarde de votre instance AEM.
 * Redémarrez l’instance avant l’installation. Cela est nécessaire uniquement lorsque l’instance reste en mode de mise à jour (ce qui est le cas lorsque l’instance vient d’être mise à jour depuis une version antérieure). Toutefois, cela est généralement recommandé si l’instance s’est exécutée pendant longtemps.
 
 >[!NOTE]
 >
->Adobe recommande de ne pas supprimer ni désinstaller le package AEM 6.4.8.2.
+>Adobe recommande de ne pas supprimer ni désinstaller le package AEM 6.4.8.3.
 
 ### Installation du Cumulative Fix Pack {#install-cumulative-fix-pack}
 
 Suivez les étapes suivantes pour installer le pack de correctifs cumulés sur une instance 6.4.8.0 existante :
 
-1. Cliquez sur le lien Distribution [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-2.0.zip) logiciels pour télécharger le package.
+1. Cliquez sur le lien Distribution [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-3.0.zip) logiciels pour télécharger le package.
 
 1. Open [Package Manager](http://localhost:4502/crx/packmgr/index.jsp) and click **[!UICONTROL Upload Package]** to upload the package.
 
@@ -306,13 +384,13 @@ Suivez les étapes suivantes pour installer le pack de correctifs cumulés sur u
 
 >[!NOTE]
 >
->**La boîte de dialogue sur l’interface utilisateur de Package Manager se ferme parfois de manière impromptue lors de l’installation de la version 6.4.8.2**
+>**La boîte de dialogue sur l’interface utilisateur de Package Manager se ferme parfois de manière impromptue lors de l’installation de la version 6.4.8.3**
 >
 >Il est donc recommandé d’attendre que les journaux d’erreurs se stabilisent avant d’accéder à l’instance. L&#39;utilisateur doit attendre les journaux spécifiques liés à la désinstallation du lot de mise à jour avant de s&#39;assurer que l&#39;installation est réussie. Cela se produit généralement sur Safari, mais peut se produire par intermittence sur n’importe quel navigateur.
 
 ### Installation automatique {#auto-installation}
 
-Il existe deux manières d’installer automatiquement AEM 6.4.8.2 dans une instance en cours d’exécution :
+Il existe deux manières d’installer automatiquement AEM 6.4.8.3 dans une instance en cours d’exécution :
 
 A. Placez le package dans le dossier ..*/crx-quickstart/install* pendant que le serveur est en cours d’exécution. Le package est automatiquement installé.
 
@@ -320,11 +398,11 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 >[!NOTE]
 >
->AEM 6.4.8.2 ne prend pas en charge l’installation de Bootstrap.
+>AEM 6.4.8.3 ne prend pas en charge l’installation de Bootstrap.
 
 ### Validation de l’installation {#validate-install}
 
-1. La page Informations sur le produit (*/system/console/productinfo*) doit maintenant afficher la chaîne de version mise à jour « Adobe Experience Manager, Version 6.4.8.2. » sous Produits installés.
+1. La page Informations sur le produit (*/system/console/productinfo*) doit maintenant afficher la chaîne de version mise à jour « Adobe Experience Manager, Version 6.4.8.3. » sous Produits installés.
 1. Tous les lots OSGI sont ACTIFS ou FRAGMENT dans la console OSGI (utiliser la console web : /system/console/bundles).
 1. Le lot OSGI org.apache.jackrabbit.oak-core est sur la version 1.8.17 ou ultérieure (utilisez la console Web : /system/console/bundles).
 
@@ -335,13 +413,17 @@ To determine the certified platform for running with this release of AEM Sites a
 
 ### Mise à jour des visionneuses de médias dynamiques (5.10.1) {#update-dynamic-media-viewers}
 
-aem 6.4.8.2 contient la nouvelle version des visionneuses de contenu Contenu multimédia dynamique (5.10.1) qui permet de vérifier les noms des duplicata sur la page Paramètres d’image prédéfinis. Il est conseillé aux utilisateurs de Contenu multimédia dynamique d’exécuter la commande suivante afin de mettre à jour les paramètres prédéfinis de la visionneuse prête à l’emploi.
+aem 6.4.8.3 contient la nouvelle version des visionneuses de contenu Contenu multimédia dynamique (5.10.1) qui permet de vérifier les noms des duplicata sur la page Paramètres d’image prédéfinis. Il est conseillé aux utilisateurs de Contenu multimédia dynamique d’exécuter la commande suivante afin de mettre à jour les paramètres prédéfinis de la visionneuse prête à l’emploi.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
 qui copiera les nouveaux paramètres prédéfinis de la visionneuse à l’emplacement /conf.
 
 ### Installation du module complémentaire AEM Forms {#install-aem-forms-add-on-package}
+
+>[!NOTE]
+>
+>[!DNL Experience Manager Forms] libère les packages de modules complémentaires une semaine après la date de mise à jour du pack de correctifs [!DNL Experience Manager] cumulatifs.
 
 >[!NOTE]
 >
@@ -357,11 +439,11 @@ qui copiera les nouveaux paramètres prédéfinis de la visionneuse à l’empla
 >
 >Passez cette étape si vous n’utilisez pas AEM Forms sous JEE. Les correctifs dans AEM Forms JEE sont fournis dans un programme d’installation distinct.
 
-Pour plus d’informations sur l’installation du programme d’installation cumulatif pour AEM Forms JEE et la configuration post-déploiement, voir [AEM Forms JEE Patch Installer 0019](jee-patch-installer-64.md).
+Pour plus d’informations sur l’installation du programme d’installation cumulatif pour AEM Forms JEE et la configuration post-déploiement, voir [AEM Forms JEE Patch Installer](jee-patch-installer-64.md).
 
 ### Uber Jar {#uber-jar}
 
-The Uber Jar for AEM 6.4.8.2 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/).
+The Uber Jar for AEM 6.4.8.3 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.3/).
 
 To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](../sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -369,8 +451,7 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 <dependency>
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.4.8.2-1.0</version>  
-      <scope>provided</scope>
+      <version>6.4.8.3</version>  
 </dependency>
 ```
 
@@ -389,21 +470,21 @@ Cette section répertorie les fonctionnalités qui ont été supprimées ou dés
 
 ## Problèmes connus {#known-issues}
 
-* Si vous effectuez une mise à niveau de Experience Manager 6.4.8.2 vers Experience Manager 6.5, certains lots risquent de ne pas afficher leur état `Active`en tant que. Installez la dernière version de Experience Manager 6.5 Service Pack 6 pour résoudre le problème.
+* Si vous effectuez une mise à niveau de la version [!DNL Experience Manager] 6.4 vers [!DNL Experience Manager] la version 6.5, certains lots risquent de ne pas afficher leur statut `Active`. Installez la dernière version du Service Pack [!DNL Experience Manager] 6.5 pour résoudre ce problème.
 
 Pour plus d’informations sur les problèmes connus du Service Pack AEM 6.4.8.0, voir [AEM 6.4.8.0 Notes](sp-release-notes.md)de mise à jour du Service Pack.
 
 ## Lots OSGi et packages de contenu inclus {#osgi-bundles-and-content-packages-included}
 
-Les documents de texte suivants liste les lots OSGi et les packages de contenu inclus dans l&#39;AEM 6.4.8.2.
+Les documents de texte suivants liste les lots OSGi et les packages de contenu inclus dans l&#39;AEM 6.4.8.3.
 
-Liste des lots OSGi inclus dans AEM 6.4.8.2
+Liste des lots OSGi inclus dans AEM 6.4.8.3
 
-[Obtenir le fichier](assets/6.4.8.2_osgi_bundles.txt)
+[Obtenir le fichier](assets/6.4.8.3_osgi_bundles.txt)
 
-Liste des packages de contenu inclus dans AEM 6.4.8.2
+Liste des packages de contenu inclus dans AEM 6.4.8.3
 
-[Obtenir le fichier](assets/6.4.8.2_content_packages.txt)
+[Obtenir le fichier](assets/6.4.8.3_content_packages.txt)
 
 ## Ressources utiles {#helpful-resources}
 
