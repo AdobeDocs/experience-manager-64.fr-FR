@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1407'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,9 @@ ht-degree: 5%
 
 Adobe Experience Manager (AEM) Communities permet de créer rapidement un site de communauté local doté de performances et d’une gestion de sites améliorées, et qui encourage les visiteurs à devenir membres de la communauté.
 
-Contactez le représentant de votre compte pour obtenir des informations sur la licence d’AEM Communities, ainsi que des licences supplémentaires pour les fonctionnalités d’activation et Adobe Analytics.
+<!--
+Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
+-->
 
 ## Fonctionnalités des communautés {#communities-features}
 
@@ -182,7 +184,7 @@ Les caractéristiques d&#39;une communauté d&#39;engagement peuvent inclure :
 * Modération
 * Notifications
 * Scores et badges
-* rapports Analytics
+* Rapports Analytics
 
 Pour découvrir la facilité de création rapide d&#39;une nouvelle communauté d&#39;engagement, consultez [Prise en main avec AEM Communities](getting-started.md).
 
@@ -203,7 +205,7 @@ Une communauté d&#39;activation peut être créée lorsque le module complémen
 
 Pour découvrir la facilité de création d’une communauté d’activation, consultez [Prise en main d’AEM Communities pour l’activation](getting-started-enablement.md).
 
-## AEM machine de démonstration {#aem-demo-machine}
+## aem machine de démonstration {#aem-demo-machine}
 
 L’AEM [Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) gère et exécute des démos pour AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities, Appset Forms, qui nécessitent souvent plus de configuration que de simplement lancer une instance QuickStart. ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities)[](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps)[](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms) AEM Demo Machine va installer une [infrastructure](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) supplémentaire telle que MongoDB, Solr, MySQL, FFmpeg et les serveurs de messagerie.
 
