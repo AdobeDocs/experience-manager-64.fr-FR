@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2138'
 ht-degree: 5%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 5%
 
 ## Liste de contrôle d&#39;installation {#installation-checklist}
 
-**Pour la plateforme[AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
+**Pour la plateforme [AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
 
 * Installer les dernières mises à jour [AEM 6.4](#aem-updates)
 
@@ -44,7 +44,7 @@ ht-degree: 5%
 
    (l’exemple de configuration est fourni pour le développement)
 
-**Pour la fonctionnalité[Communautés](overview.md)**
+**Pour la fonctionnalité [Communautés](overview.md)**
 
 * Si vous déployez une batterie [de](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)publication, [identifiez l’éditeur Principal.](#primary-publisher)
 
@@ -75,7 +75,7 @@ ht-degree: 5%
 
          * UGC n’est jamais répliqué
          * UGC uniquement visible sur l’instance AEM ou la grappe dans laquelle il a été entré
-      * Par défaut, JSRP
+      * Par défaut, il s’agit de JSRP
 
    Pour la fonction **[d’activation](overview.md#enablement-community)**
 
@@ -91,11 +91,11 @@ ht-degree: 5%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.4 Collectivités GA expédie avec Collectivités package. Pour en savoir plus sur les mises à jour apportées à AEM 6.4 [Communautés](/help/release-notes/release-notes.md#experience-manager-communities), consultez les Notes [de mise à jour de](/help/release-notes/release-notes.md#release-information)AEM 6.4.
+aem 6.4 Communities GA inclut le package Communities. Pour en savoir plus sur les mises à jour apportées à AEM 6.4 [Communautés](/help/release-notes/release-notes.md#experience-manager-communities), consultez les Notes [de mise à jour de](/help/release-notes/release-notes.md#release-information)AEM 6.4.
 
-### Mises à jour AEM 6.4 {#aem-updates}
+### AEM 6.4 Updates {#aem-updates}
 
-À partir de l&#39;AEM 6.3, les mises à jour apportées aux communautés sont fournies dans le cadre des Fix Packs et Service Packs cumulatifs AEM.
+À partir de AEM 6.3, les mises à jour apportées aux communautés sont fournies dans le cadre des Fix Packs et Service Packs cumulatifs AEM.
 
 Pour les dernières mises à jour de AEM 6.4, veillez à vérifier les Fix Packs et Service Packs [Adobe Experience Manager 6.4 cumulatifs](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html).
 
@@ -125,7 +125,7 @@ Les étapes nécessaires sont les suivantes :
    * Par exemple, http://localhost:4502/system/console/bundles
    * Sélectionner **`Install/Update`**
    * Parcourir... pour sélectionner le lot extrait de l&#39;archive ZIP téléchargée
-   * Vérifiez que le pilote JDBC d&#39; *Oracle Corporation pour MySQLcom.mysql.jdbc* est principal et débuts-le s&#39;il ne l&#39;est pas (ou vérifiez les journaux).
+   * Vérifiez que le pilote JDBC de *Oracle Corporation pour MySQLcom.mysql.jdbc* est principal et début-le s&#39;il n&#39;est pas utilisé (ou vérifiez les journaux).
 
 1. Si vous effectuez l’installation sur un déploiement existant après la configuration de JDBC, regroupez JDBC sur le nouveau connecteur en réenregistrant la configuration JDBC à partir de la console Web :
 
@@ -150,7 +150,7 @@ Le moteur AEM Communities SCORM est requis pour la fonction d’ [activation](ov
 
 * **[cq -social-scorm -package, version 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. Ce paquet SCORM est pris en charge par toutes les versions AEM 6.4 Communities.
 
-* **[cq -social-scorm -package, version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**inclut le moteur[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/). Ce package SCORM est pris en charge AEM Communautés 6.4.2.x ultérieures.
+* **[cq -social-scorm -package, version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)** inclut le moteur [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) . Ce package SCORM est pris en charge AEM Communautés 6.4.2.x ultérieures.
 
 Pour une nouvelle installation du moteur SCORM, le package contenant [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (qui est [ cq -social-scorm -package, version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)) doit être utilisé. Pour que vous puissiez lire les ressources d’apprentissage prises en charge par SCORM 2017.
 
@@ -160,9 +160,9 @@ Pour une nouvelle installation du moteur SCORM, le package contenant [SCORM 2017
 
 1. Installez le **[package cq-social-scorm-package, version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).**
 1. Téléchargez **`/libs/social/config/scorm/database_scormengine_data.sql`** l&#39;instance cq et exécutez-la dans mysql server pour créer un schéma scormEngineDB mis à niveau.
-1. Ajoutez `/content/communities/scorm/RecordResults` dans la propriété Chemins exclus du filtre CSRF depuis `https://<hostname>;:<port>/system/console/configMgr` les éditeurs.
+1. Ajouter `/content/communities/scorm/RecordResults` dans la propriété Chemins exclus du filtre CSRF depuis `https://<hostname>;:<port>/system/console/configMgr` les éditeurs.
 
-Les installations SCORM existantes peuvent être mises à niveau vers [**cq-social-scorm-package, version 2.2.2 **](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)(qui utilise[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), si le contenu du cours créé nécessite SCORM 2017.1.
+Les installations SCORM existantes peuvent être mises à niveau vers [**cq-social-scorm-package, version 2.2.2**](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg) (qui utilise [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), si le contenu du cours créé nécessite SCORM 2017.1.
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ Les installations SCORM existantes peuvent être mises à niveau vers [**cq-soci
 
    `java -Dlogback.configurationFile=logback.xml -cp "lib/*" RusticiSoftware.ScormContentPlayer.Logic.Upgrade.ConsoleApp EngineInstall.xml`
 1. Surveillez `engine_upgrade.log` le fichier pour toute erreur et tout état de mise à niveau de schéma.
-1. Ajoutez `/content/communities/scorm/RecordResults` dans la propriété Chemins **** exclus du filtre CSRF depuis `https://<hostname>:<port>/system/console/configMgr` les éditeurs.
+1. Ajoute `/content/communities/scorm/RecordResults` dans la propriété Chemins **** exclus du filtre CSRF sur `https://<hostname>:<port>/system/console/configMgr` les éditeurs.
 
 ### Journalisation SCORM {#scorm-logging}
 
@@ -191,13 +191,13 @@ Si vous le souhaitez, le niveau de journal peut être défini sur WARN pour le `
 
 Pour utiliser les journaux, voir [Utilisation des enregistrements d’audit et des fichiers](../../help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)journaux.
 
-### AEM MLS avancé {#aem-advanced-mls}
+### aem MLS avancé {#aem-advanced-mls}
 
 Pour que la collection SRP (MSRP ou DSRP) prenne en charge la recherche multilingue avancée (MLS), de nouveaux modules externes Solr sont requis en plus d&#39;un schéma personnalisé et d&#39;une configuration Solr. Tous les éléments requis sont compressés dans un fichier zip téléchargeable.
 
 Le téléchargement MLS avancé (également appelé &quot;phasetwo&quot;) est disponible à partir du référentiel d’Adobes :
 
-* [AEM-SOLR-MLS-phasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
+* [aem-SOLR-MLS-phasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
 
    * Version 1.2.40, 6 avril 2016
    * Télécharger AEM-SOLR-MLS-phasetwo-1.2.40.zip
