@@ -11,13 +11,13 @@ ht-degree: 92%
 ---
 
 
-# Meilleures pratiques relatives au format de fichier des ressources {#assets-file-format-best-practices}
+# Meilleures pratiques relatives au format de fichier des ressources  {#assets-file-format-best-practices}
 
 AEM Assets prend en charge de nombreuses bibliothèques de formats de fichiers propriétaires et tierces pour gérer les divers besoins des utilisateurs en matière de prise en charge des fichiers. Les bibliothèques Adobe prises en charge comprennent Adobe Camera Raw, Gibson, Adobe PDF Rasterizer et Adobe InDesign Server. En outre, AEM Assets prend en charge les bibliothèques tierces, y compris ImageMagick, TwelveMonkeys, etc.
 
 Pour les formats de fichiers pris en charge, voir [Formats pris en charge par AEM Assets](assets-formats.md).
 
-## Bibliothèque Adobe Camera Raw {#adobe-camera-raw-library}
+## Bibliothèque Adobe Camera Raw  {#adobe-camera-raw-library}
 
 Pour des performances optimales, Adobe recommande d’utiliser la bibliothèque Adobe Camera Raw pour :
 
@@ -38,9 +38,9 @@ Pour des résultats optimaux, Adobe recommande d’utiliser la bibliothèque Ado
 
 Les miniatures et les aperçus générés à l’aide de l’interpréteur de PDF sont de qualité supérieure par rapport à la sortie de trame prête à l’emploi. La bibliothèque PDF Rasterizer d’Adobe ne prend en charge aucune conversion d’espace colorimétrique. Quel que soit l’espace colorimétrique du fichier PDF source, l’interpréteur de PDF Adobe génère la sortie RVB uniquement.
 
-## Serveur Adobe InDesign {#adobe-indesign-cc-server}
+## Serveur Adobe InDesign  {#adobe-indesign-cc-server}
 
-Adobe vous recommande d’utiliser le serveur Adobe InDesign pour extraire des rendus spécifiques à Adobe InDesign, tels que IDML et HTML. For more information, see [Adding AEM assets as references in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
+Adobe vous recommande d’utiliser le serveur Adobe InDesign pour extraire des rendus spécifiques à Adobe InDesign, tels que IDML et HTML. Pour plus d’informations, voir [Ajouter des ressources AEM en tant que références dans Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
 
 ## Dynamic Media  {#dynamic-media}
 
@@ -57,9 +57,9 @@ Adobe recommande d’utiliser la bibliothèque ImageMagick dans les cas suivants
 * Pour conserver la transparence
 * Pour traiter des fichiers PSD et PSB
 
-To know how to set up the ImageMagic library in AEM, see [Using ImageMagick](media-handlers.md#an-example-using-imagemagick). Pour une utilisation optimale, voir [Bonnes pratiques pour configurer ImageMagick](best-practices-for-imagemagick.md).
+Pour savoir comment configurer la bibliothèque ImageMagic en AEM, voir [Utilisation d’ImageMagick](media-handlers.md#an-example-using-imagemagick). Pour une utilisation optimale, voir [Bonnes pratiques pour configurer ImageMagick](best-practices-for-imagemagick.md).
 
-## Bibliothèque de transcodage d’imagerie (ITL) {#image-transcoding-library}
+## Bibliothèque de transcodage d’imagerie (ITL)  {#image-transcoding-library}
 
 La bibliothèque Adobe Imaging Transcoding Library est une solution de traitement des images qui exécute des fonctions essentielles de manipulation graphique, y compris le codage, le transcodage, le rééchantillonnage, le redimensionnement des images, etc.
 
@@ -73,4 +73,4 @@ La bibliothèque de transcodage d’imagerie (ITL) prend en charge les types MIM
 * ICO
 * ICN
 
-For details, see [Imaging Transcoding Library](imaging-transcoding-library.md).
+Pour plus d’informations, voir [Bibliothèque de transcodage d’images](imaging-transcoding-library.md).
