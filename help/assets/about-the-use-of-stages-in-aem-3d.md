@@ -18,14 +18,14 @@ ht-degree: 69%
 ---
 
 
-# À propos de l’utilisation des scènes dans AEM 3D {#about-the-use-of-stages-in-aem-d}
+# À propos de l’utilisation des scènes dans AEM 3D  {#about-the-use-of-stages-in-aem-d}
 
 Les scènes sont des fichiers de scène 3D allégés qui offrent un environnement de visualisation de base (lumières, arrière-plans, plans au sol ou tout autre géométrie fixe), des caméras prédéfinies facultatives et des paramètres de rendu pour moteurs de rendu tiers.
 
 >[!NOTE]
 >
->The **[!UICONTROL OBJ 3D]** format does not support lights. Par conséquent, il ne peut pas être utilisé pour fournir des scènes dans AEM 3D.
+>Le format **[!UICONTROL OBJ 3D]** ne prend pas en charge les lumières. Par conséquent, il ne peut pas être utilisé pour fournir des scènes dans AEM 3D.
 
-Le format de fichier de la scène détermine le rendu que vous pouvez utiliser avec cette scène. For example, if Autodesk® Maya® is used for high-quality rendering, the stage must be in `.ma` or `.mb` format. Si vous avez l’intention d’utiliser uniquement le rendu Rapid Refine™ par défaut, tout format de fichier de scène pris en charge est acceptable.
+Le format de fichier de la scène détermine le rendu que vous pouvez utiliser avec cette scène. Par exemple, si Autodesk® Maya® est utilisé pour un rendu de haute qualité, la scène doit être au format `.ma` ou `.mb`. Si vous avez l’intention d’utiliser uniquement le rendu Rapid Refine™ par défaut, tout format de fichier de scène pris en charge est acceptable.
 
 Tous les paramètres de rendu dans AEM 3D, à l’exception du type et de la taille de l’image de sortie, doivent être préconfigurés et enregistrés dans le fichier d’étape avant le téléchargement vers AEM.
