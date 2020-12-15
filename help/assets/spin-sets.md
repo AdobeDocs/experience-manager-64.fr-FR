@@ -42,21 +42,21 @@ Pour vous familiariser rapidement avec les visionneuses à 360°, procédez comm
 
 1. [Créez une visionneuse à 360°.](#creating-spin-sets)
 
-   Pour créer une visionneuse à 360°, choisissez **[!UICONTROL Créer > Visionneuse à 360°]** , nommez la visionneuse, choisissez les fichiers, puis triez les images dans l’ordre dans lequel elles apparaîtront.
+   Pour créer une visionneuse à 360°, sélectionnez **[!UICONTROL Créer > Visionneuse à 360°]**, puis attribuez un nom à la visionneuse, choisissez les fichiers, puis triez les images dans l’ordre dans lequel elles apparaîtront.
 
    Voir [Utilisation de sélecteurs](working-with-selectors.md).
 
    >[!NOTE]
    >
-   >You can also create Spin Sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+   >Vous pouvez également créer automatiquement des visionneuses à 360° à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
    >
-   >*Les visionneuses de lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation de ressources et ne sont disponibles qu’en mode* Contenu multimédia dynamique - Scene7.
+   >*Les jeux de lots sont créés par le système IPS (Image Production System) dans le cadre de l’assimilation des ressources et ne sont disponibles que dans le mode* Dynamic Media - Scene7.
 
 1. Configurez des [paramètres prédéfinis de visionneuse à 360°](managing-viewer-presets.md), selon les besoins.
 
-   Les administrateurs peuvent créer ou modifier des paramètres prédéfinis de visionneuse à 360°. To see your Spin Set with a Viewer preset, select the Spin Set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Les administrateurs peuvent créer ou modifier des paramètres prédéfinis de visionneuse à 360°. Pour afficher votre visionneuse à 360° avec un paramètre prédéfini de visionneuse, sélectionnez la visionneuse à 360° et, dans le menu déroulant du rail de gauche, sélectionnez **[!UICONTROL Visionneuses]**.
 
-   Accédez à **[!UICONTROL Outils > Ressources > Paramètres visionneuse]** pour créer ou modifier les paramètres prédéfinis de la visionneuse.
+   Accédez à **[!UICONTROL Outils > Ressources > Paramètres visionneuse]** pour créer ou modifier les paramètres prédéfinis de la visionneuse.
 
    Voir [Ajout et modification de paramètres prédéfinis de la visionneuse](managing-viewer-presets.md).
 
@@ -70,7 +70,7 @@ Pour vous familiariser rapidement avec les visionneuses à 360°, procédez comm
 
 1. [Publiez une visionneuse à 360°.](publishing-dynamicmedia-assets.md)
 
-   La publication d’une visionneuse à 360° active l’ordre dans lequel les images apparaissent dans une visionneuse à 360°. Veillez à les mettre dans le bon ordre afin que la rotation soit une vue à 360° parfaite.**[!UICONTROL URL]** et chaîne **[!UICONTROL incorporée]** . Vous devez, en outre, [publier le paramètre prédéfini de la visionneuse](managing-viewer-presets.md).
+   La publication d’une visionneuse à 360° active l’ordre dans lequel les images apparaissent dans une visionneuse à 360°. Veillez à les mettre dans le bon ordre afin que la rotation soit une vue à 360° parfaite.**** URLet  **** chaîne incorporée. Vous devez, en outre, [publier le paramètre prédéfini de la visionneuse](managing-viewer-presets.md).
 
 1. [Liez des URL à l’application web](linking-urls-to-yourwebapplication.md) ou [incorporez la vidéo ou la visionneuse d’images](embed-code.md).
 
@@ -80,7 +80,7 @@ Pour vous familiariser rapidement avec les visionneuses à 360°, procédez comm
 
    Voir [Liaison d’une visionneuse à 360° à une page web](linking-urls-to-yourwebapplication.md) et [Incorporation d’une vidéo ou d’une visionneuse d’images](embed-code.md).
 
-Le cas échéant, vous pouvez [modifier les visionneuses à 360°](#editing-spin-sets). In addition, you can view and edit [Spin Set properties](managing-assets-touch-ui.md#editing-properties).
+Le cas échéant, vous pouvez [modifier les visionneuses à 360°](#editing-spin-sets). En outre, vous pouvez vue et modifier [les propriétés de la visionneuse à 360°](managing-assets-touch-ui.md#editing-properties).
 
 ## Chargement de ressources pour les visionneuses à 360° {#uploading-assets-for-spin-sets}
 
@@ -90,7 +90,7 @@ Vous pouvez charger des images pour les visionneuses à 360° comme vous le [fer
 
 ### Instructions pour prendre des prises de vue dans la visionneuse à 360°{#guidelines-for-shooting-spin-set-images}
 
-Vous trouverez ci-dessous des pratiques recommandées relatives aux images de la visionneuse à 360°. En général, plus vous avez d’images dans la visionneuse à 360°, plus l’effet de rotation est réussi. Néanmoins, l’inclusion de nombreuses images dans la visionneuse augmente également la durée de chargement de ces dernières. AEM recommande de suivre les instructions suivantes pour les prises de vue à utiliser dans les visionneuses à 360° :
+Vous trouverez ci-dessous des bonnes pratiques relatives aux images de la visionneuse à 360°. En général, plus vous avez d’images dans la visionneuse à 360°, plus l’effet de rotation est réussi. Néanmoins, l’inclusion de nombreuses images dans la visionneuse augmente également la durée de chargement de ces dernières. AEM recommande de suivre les instructions suivantes pour les prises de vue à utiliser dans les visionneuses à 360° :
 
 * Au minimum, utilisez 8 à 12 images dans une visionneuse à 360° unidimensionnelle et 16 à 24 images dans une visionneuse à 360° bidimensionnelle. 8 images au minimum sont nécessaires pour effectuer une rotation de 360 degrés. Les visionneuses à 360° unidimensionnelles sont plus courantes que les visionneuses à 360° bidimensionnelles, car la création de ces dernières demande beaucoup de travail.
 * Utilisez un format d’image sans perte (formats TIFF et PNG recommandés).
@@ -106,45 +106,45 @@ L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a un
 >
 >Vous pouvez également créer des visionneuses à 360° automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 >
->Les visionneuses de lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation de ressources et sont disponibles uniquement en mode Contenu multimédia dynamique - Scene7.
+>Les jeux de lots sont créés par le système IPS (Image Production System) dans le cadre de l’assimilation des ressources et ne sont disponibles qu’en mode Dynamic Media - Scene7.
 >
 >Voir « Création de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360° » dans [Configuration de Dynamic Media – mode Scene7](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
 **Pour créer des visionneuses à 360° :**
 
-1. In Assets, navigate to where you want to create a spin set, tap **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set]**. Vous pouvez également la créer depuis un dossier qui contient les ressources.
+1. Dans Ressources, accédez à l’emplacement où vous souhaitez créer une visionneuse à 360°, appuyez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Visionneuse à 360°]**. Vous pouvez également la créer depuis un dossier qui contient les ressources.
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
-1. On the **[!UICONTROL Spin Set Editor]** page, in the **[!UICONTROL Title]** field, enter a name for the Spin Set. Le nom apparaît dans la bannière située sur la visionneuse à 360°. Vous pouvez aussi saisir une description.
+1. Sur la page **[!UICONTROL Editeur de la visionneuse à 360°]**, dans le champ **[!UICONTROL Titre]**, saisissez le nom de la visionneuse à 360°. Le nom apparaît dans la bannière située sur la visionneuse à 360°. Vous pouvez aussi saisir une description.
 
    ![chlimage_1-382](assets/chlimage_1-382.png)
 
-   Lorsque vous créez la visionneuse à 360°, vous pouvez modifier la miniature de la visionneuse à 360° ou autoriser AEM la sélection automatique de la miniature en fonction des fichiers de la visionneuse à 360°. To select a thumbnail, tap **[!UICONTROL Change thumbnail]**. Select any image (you can navigate to other folders to find images as well). Si vous avez sélectionné une miniature, puis décidez que vous souhaitez qu’AEM en génère une depuis la visionneuse à 360°, sélectionnez **[!UICONTROL Basculer vers les miniatures automatiques]**.
+   Lorsque vous créez la visionneuse à 360°, vous pouvez modifier la miniature de la visionneuse à 360° ou autoriser AEM la sélection automatique de la miniature en fonction des fichiers de la visionneuse à 360°. Pour sélectionner une miniature, appuyez sur **[!UICONTROL Modifier la miniature]**. Sélectionnez une image (vous pouvez accéder à d’autres dossiers pour rechercher des images également). Si vous avez sélectionné une miniature, puis décidez que vous souhaitez qu’AEM en génère une depuis la visionneuse à 360°, sélectionnez **[!UICONTROL Basculer vers les miniatures automatiques]**.
 
 1. Effectuez l’une des opérations suivantes :
 
-   * Near the upper-left corner of the **[!UICONTROL Spin Set Editor]** page, tap **[!UICONTROL Add Asset]**.
-   * Near the middle of the **[!UICONTROL Spin Set Editor]** page, tap **[!UICONTROL Tap to open Asset Selector]**.
+   * Près du coin supérieur gauche de la page **[!UICONTROL Editeur de visionneuse à 360°]**, appuyez sur **[!UICONTROL Ajouter l’actif]**.
+   * Près du milieu de la page **[!UICONTROL Editeur de visionneuse à 360°]**, appuyez sur **[!UICONTROL Appuyez pour ouvrir le sélecteur de ressources]**.
 
    Appuyez pour sélectionner les ressources que vous souhaitez inclure dans la visionneuse à 360°. Les ressources sélectionnées sont cochées. Lorsque vous avez terminé, en haut à droite de la page, appuyez sur **[!UICONTROL Sélectionner]**.
 
-   Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en appuyant sur **[!UICONTROL Retour]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis appuyez sur l’icône **[!UICONTROL Filtre]** de la barre d’outils. Pour modifier la vue, près de l’angle supérieur droit de la page, appuyez sur l’icône **[!UICONTROL Vue]** , puis appuyez sur Vue **[!UICONTROL de]** colonne, Vue **[!UICONTROL de]** carte ou Vue de **[!UICONTROL Liste.]**
+   Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en appuyant sur **[!UICONTROL Retour]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis appuyez sur l’icône **[!UICONTROL Filtre]** de la barre d’outils. Pour modifier la vue, près de l’angle supérieur droit de la page, appuyez sur l’icône **[!UICONTROL Vue]**, puis sur **[!UICONTROL Vue de colonne]**, **[!UICONTROL Vue de carte]** ou **[!UICONTROL Vue de Liste]**.
 
    Voir [Utilisation de sélecteurs](working-with-selectors.md).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
 
-1. Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources une fois qu’elles ont été ajoutées. If necessary, drag an asset&#39;s **[!UICONTROL Reorder]** icon to the right of the asset&#39;s file name to re-order images up or down the set list.
+1. Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources une fois qu’elles ont été ajoutées. Si nécessaire, faites glisser l’icône **[!UICONTROL Réorganiser]** d’un fichier vers la droite du nom de fichier du fichier pour réorganiser les images vers le haut ou vers le bas de la liste définie.
 
    ![spin_set_assets6-4](assets/spin_set_assets6-4.png)
 
 1. (En option) Effectuez l’une des actions suivantes :
 
-   * To delete an image, select the image, then tap **[!UICONTROL Delete Asset]**.
+   * Pour supprimer une image, sélectionnez-la, puis appuyez sur **[!UICONTROL Supprimer le fichier]**.
    * Pour appliquer un paramètre prédéfini, en haut à droite de la page, appuyez sur **[!UICONTROL Paramètre prédéfini]**, puis sélectionnez un paramètre prédéfini à appliquer en une seule fois à toutes les ressources.
 
-1. Appuyez sur **[!UICONTROL Save]** (Enregistrer). La nouvelle visionneuse à 360° s’affiche dans le dossier dans lequel vous l’avez créée.
+1. Appuyez sur **[!UICONTROL Enregistrer]**. La nouvelle visionneuse à 360° s’affiche dans le dossier dans lequel vous l’avez créée.
 
 ## Affichage de visionneuses à 360°   {#viewing-spin-sets}
 
@@ -162,9 +162,9 @@ Vous pouvez également afficher les visionneuses par le biais de l’interface u
 
    ![chlimage_1-385](assets/chlimage_1-385.png)
 
-1. From search, you can select **[!UICONTROL Filters]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets]**.
+1. Dans la recherche, vous pouvez sélectionner **[!UICONTROL Filtres]**, développer **[!UICONTROL Dynamic Media]** et sélectionner **[!UICONTROL Jeux]**.
 
-   La recherche renvoie les ensembles correspondants qui ont été créés manuellement dans l’interface utilisateur ou automatiquement créés par le biais de paramètres prédéfinis d’ensemble par lot. For automated sets, the search query is conducted using **[!UICONTROL Starts with]** search criteria which is different from AEM search which is based on using **[!UICONTROL Contains]** search criteria. La définition du filtre sur **[!UICONTROL Visionneuses]** constitue la seule méthode de recherche dans des visionneuses automatisées.
+   La recherche renvoie les ensembles correspondants qui ont été créés manuellement dans l’interface utilisateur ou automatiquement créés par le biais de paramètres prédéfinis d’ensemble par lot. Pour les jeux automatisés, la requête de recherche est effectuée à l&#39;aide de **[!UICONTROL Débuts avec des critères de recherche]** différents de la recherche AEM qui est basée sur l&#39;utilisation de critères de recherche **[!UICONTROL Contient]**. La définition du filtre sur **[!UICONTROL Visionneuses]** constitue la seule méthode de recherche dans des visionneuses automatisées.
 
    ![chlimage_1-386](assets/chlimage_1-386.png)
 
@@ -190,14 +190,14 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses à 3
 
    * Pour réorganiser les images, faites glisser une image vers son nouvel emplacement (sélectionnez l’icône de réorganisation pour déplacer les éléments).
    * Pour trier les éléments par ordre croissant ou décroissant, appuyez sur l’en-tête de colonne.
-   * To add an asset or update an existing asset, tap **[!UICONTROL Add Asset]**. Accédez à une ressource, sélectionnez-la, puis appuyez sur **[!UICONTROL Sélectionner]** en haut à droite.
+   * Pour ajouter une ressource ou mettre à jour une ressource existante, appuyez sur **[!UICONTROL Ajouter la ressource]**. Accédez à une ressource, sélectionnez-la, puis appuyez sur **[!UICONTROL Sélectionner]** en haut à droite.
 Si vous supprimez l’image qu’AEM utilise pour la miniature en la remplaçant par une autre image, la ressource d’origine s’affiche toujours.
-   * To delete an asset, select it and tap **[!UICONTROL Delete Asset]**.
-   * To apply a preset, tap the **[!UICONTROL Preset]** icon and select a preset.
-   * Pour supprimer une visionneuse à 360°, accédez à cette dernière, sélectionnez-la, puis choisissez **[!UICONTROL Supprimer]**
+   * Pour supprimer un fichier, sélectionnez-le et appuyez sur **[!UICONTROL Supprimer le fichier]**.
+   * Pour appliquer un paramètre prédéfini, appuyez sur l’icône **[!UICONTROL Paramètre prédéfini]** et sélectionnez un paramètre prédéfini.
+   * Pour supprimer une visionneuse à 360°, accédez à cette dernière, sélectionnez-la, puis choisissez **[!UICONTROL Supprimer]**.
 
       >[!NOTE]
-      >* You can edit the images in a Spin Set by navigating to the set, tap **[!UICONTROL Set Members]** in the left rail, and then tap the **[!UICONTROL Edit]** (pencil icon) on an individual asset to open the editing window.
+      >* Vous pouvez modifier les images d’une visionneuse à 360° en accédant à la visionneuse, en appuyant sur **[!UICONTROL Définir des membres]** dans le rail de gauche, puis sur **[!UICONTROL Modifier]** (icône représentant un crayon) d’une ressource individuelle pour ouvrir la fenêtre de modification.
 
 
 1. Lorsque vous avez terminé les modifications, cliquez sur **[!UICONTROL Enregistrer]**.
