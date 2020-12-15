@@ -30,7 +30,7 @@ Les fragments de contenu sont stockés en tant que **[!UICONTROL Ressources]**, 
 >
 >Les fragments de contenu sont ensuite utilisés avec les pages de création ; voir [Création de page avec des fragments de contenu](/help/sites-authoring/content-fragments.md).
 
-## Création de fragments de contenu  {#creating-content-fragments}
+## Création de fragments de contenu   {#creating-content-fragments}
 
 ### Création d’un modèle de contenu {#creating-a-content-model}
 
@@ -150,7 +150,7 @@ Pour ouvrir votre fragment à des fins de modification :
 
 1. Naviguez parmi les trois modes à l’aide des icônes du panneau latéral :
 
-   * Variations : [ Modification du contenu](#editing-the-content-of-your-fragment) et [Gestion des variations](#creating-and-managing-variations-within-your-fragment)
+   * Variations : [Modification du contenu](#editing-the-content-of-your-fragment) et [Gestion des variations](#creating-and-managing-variations-within-your-fragment)
    * [Annotations](content-fragments-variations.md#annotating-a-content-fragment)
    * [Contenu associé](#associating-content-with-your-fragment)
    * [Métadonnées](#viewing-and-editing-the-metadata-properties-of-your-fragment)
@@ -163,7 +163,7 @@ Pour ouvrir votre fragment à des fins de modification :
    >
    >Les options **[!UICONTROL Enregistrer]** et **[!UICONTROL Annuler]** vous font quitter l’éditeur. Pour plus d’informations sur le fonctionnement des deux options avec les fragments de contenu, voir [Enregistrer, Annuler et Versions](#save-cancel-and-versions).
 
-## Enregistrer, Annuler et Versions  {#save-cancel-and-versions}
+## Enregistrer, Annuler et Versions   {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -218,19 +218,19 @@ Lorsque vous modifiez votre fragment de contenu, AEM crée automatiquement des v
 
 Une fois que vous avez ouvert le fragment, vous pouvez utiliser l’onglet [Variations](content-fragments-variations.md) pour créer votre contenu.
 
-## Création et gestion de variations dans un fragment  {#creating-and-managing-variations-within-your-fragment}
+## Création et gestion de variations dans un fragment   {#creating-and-managing-variations-within-your-fragment}
 
 Une fois que vous avez créé le contenu maître, vous pouvez créer et gérer des [Variations](content-fragments-variations.md) de ce contenu.
 
-## Association de contenu au fragment  {#associating-content-with-your-fragment}
+## Association de contenu au fragment   {#associating-content-with-your-fragment}
 
 Vous pouvez également [associer du contenu](content-fragments-assoc-content.md) à un fragment. Cela fournit une liaison pour que les ressources (c’est-à-dire les images) puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
 
-## Affichage et modification des métadonnées (propriétés) du fragment  {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## Affichage et modification des métadonnées (propriétés) du fragment   {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 Vous pouvez afficher et modifier les propriétés d’un fragment à l’aide de l’onglet [[!UICONTROL Métadonnées]](content-fragments-metadata.md).
 
-## Chronologie pour les fragments de contenu  {#timeline-for-content-fragments}
+## Chronologie pour les fragments de contenu   {#timeline-for-content-fragments}
 
 Outre les options standard, la [Chronologie](managing-assets-touch-ui.md#timeline) fournit les informations et les actions spécifiques aux fragments de contenu :
 
