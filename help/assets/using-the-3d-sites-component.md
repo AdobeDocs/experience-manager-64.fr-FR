@@ -18,15 +18,15 @@ ht-degree: 36%
 ---
 
 
-# Working with the 3D Sites component {#working-with-the-d-sites-component}
+# Utilisation du composant Sites 3D {#working-with-the-d-sites-component}
 
-AEM 3D comprend un composant AEM Sites que vous pouvez utiliser pour implémenter l&#39;affichage interactif de modèles 3D sur des pages Web.
+aem 3D comprend un composant AEM Sites que vous pouvez utiliser pour implémenter l&#39;affichage interactif de modèles 3D sur des pages Web.
 
 Une fois que vous avez ajouté votre composant 3D, vous pouvez [afficher la ressource 3D dans ce composant.](viewing-3d-assets.md)
 
 ## Ajout du composant 3D au modèle de page {#adding-the-d-component-to-the-page-template}
 
-Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur une page. See [Editing templates](/help/sites-authoring/templates.md#editing-a-template-layout-template-author) for detailed information on enabling components in templates.
+Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur une page. Voir [Modification de modèles](/help/sites-authoring/templates.md#editing-a-template-layout-template-author) pour obtenir des informations détaillées sur l&#39;activation de composants dans les modèles.
 
 **Ajout du composant 3D au modèle de page**:
 
@@ -39,10 +39,10 @@ Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur u
 
    ![image2017-11-14_15-33-57](assets/image2017-11-14_15-33-57.png)
 
-1. Tap in the **[!UICONTROL Layout Container]** region to select it.
+1. Appuyez sur la région **[!UICONTROL Conteneur de mise en page]** pour la sélectionner.
 
-1. Tap the **[!UICONTROL Policy]** button to open the **[!UICONTROL Policy Editor]**.
-1. In the **[!UICONTROL Properties]** section, select the **[!UICONTROL 3D]** checkmark, and then tap **[!UICONTROL Done]** to save the changes and close the **[!UICONTROL Policy Editor]**.
+1. Appuyez sur le bouton **[!UICONTROL Stratégie]** pour ouvrir **[!UICONTROL Éditeur de stratégie]**.
+1. Dans la section **[!UICONTROL Propriétés]**, cochez la case **[!UICONTROL 3D]**, puis appuyez sur **[!UICONTROL Terminé]** pour enregistrer les modifications et fermer l&#39;**[!UICONTROL Éditeur de stratégie]**.
 
    Vous pouvez maintenant placer le composant Sites 3D sur toutes les pages qui utilisent ce modèle.
 
@@ -56,19 +56,19 @@ Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur u
 
 1. Ouvrez AEM Sites et sélectionnez la page Web à laquelle vous souhaitez ajouter le composant 3D.
 
-1. Appuyez sur l’icône **[!UICONTROL Modifier]** (en forme de crayon) pour ouvrir la page dans l’éditeur de pages. Make sure **[!UICONTROL Edit]** mode near the top right of page is selected.
+1. Appuyez sur l’icône **[!UICONTROL Modifier]** (en forme de crayon) pour ouvrir la page dans l’éditeur de pages. Assurez-vous que le mode **[!UICONTROL Modifier]** situé en haut à droite de la page est sélectionné.
 
    ![image2017-11-14_15-44-40](assets/image2017-11-14_15-44-40.png)
 
 1. Appuyez sur le sélecteur de rail pour ouvrir le panneau latéral.
 
-1. Tap the plus sign icon to open the **[!UICONTROL Components]** list.
+1. Appuyez sur l’icône + pour ouvrir la liste **[!UICONTROL Composants]**.
 
-1. Drag the **[!UICONTROL 3D Viewer]** component from the **[!UICONTROL Components]** list to the location on the page where you want the 3D viewer to appear.
+1. Faites glisser le composant **[!UICONTROL Visionneuse 3D]** de la liste **[!UICONTROL Composants]** vers l’emplacement de la page où doit apparaître la visionneuse 3D.
 
 ## Configuration du composant 3D {#configuring-the-d-component}
 
-1. In the AEM Sites page editor, select the **[!UICONTROL 3D Viewer]** component that you previously added to the page.
+1. Dans l’éditeur de page AEM Sites, sélectionnez le composant **[!UICONTROL Visionneuse 3D]** que vous avez précédemment ajouté à la page.
 
 1. Appuyez sur l’icône **[!UICONTROL Configuration]** (en forme de clé à molette) pour ouvrir la boîte de dialogue de configuration du composant.
 
@@ -77,7 +77,7 @@ Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur u
    <table> 
     <tbody> 
     <tr> 
-    <td>Propriétés</td> 
+    <td>Propriété</td> 
     <td>Description</td> 
     <td>Applicabilité</td> 
     </tr> 
@@ -88,7 +88,7 @@ Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur u
     </tr> 
     <tr> 
     <td>Nom de l’étape</td> 
-    <td><p>Sélectionnez une scène 3D dans la liste des scènes disponibles. La scène fournit l’arrière-plan et l’éclairage.</p> <p>See <a href="/help/assets/about-the-use-of-stages-in-aem-3d.md" target="_blank">About the use of stages in AEM 3D Sites</a>.</p> </td> 
+    <td><p>Sélectionnez une scène 3D dans la liste des scènes disponibles. La scène fournit l’arrière-plan et l’éclairage.</p> <p>Voir <a href="/help/assets/about-the-use-of-stages-in-aem-3d.md" target="_blank">A propos de l'utilisation des étapes dans AEM sites 3D</a>.</p> </td> 
     <td>Ignoré pour les ressources Adobe Dimension.</td> 
     </tr> 
     <tr> 
@@ -98,7 +98,7 @@ Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur u
         <li>Définir une valeur positive pour tourner à droite</li> 
         <li>Définir une valeur négative pour faire pivoter à gauche</li> 
         <li>Définissez une valeur de 0 pour désactiver la rotation automatique.</li> 
-        </ul> <p>La valeur par défaut est de 3 tr/min, soit 20 secondes par révolution complète.<br /> <br /> <strong>Remarque :</strong> La vitesse de rotation suppose une cadence de 60/s. Ce taux est généralement atteint avec des modèles de petite ou moyenne taille sur des matériels graphiques plus puissants. Des modèles plus grands ou des périphériques plus lents fonctionnent automatiquement à des vitesses de rotation plus basses.</p> </td> 
+        </ul> <p>La valeur par défaut est de 3 tr/min, soit 20 secondes par révolution complète.<br /> <br /> <strong>Remarque : </strong> La vitesse de rotation suppose une fréquence d’images de 60/s. Ce taux est généralement atteint avec des modèles de petite ou moyenne taille sur des matériels graphiques plus puissants. Des modèles plus grands ou des périphériques plus lents fonctionnent automatiquement à des vitesses de rotation plus basses.</p> </td> 
     <td>Ignoré pour les ressources Adobe Dimension.</td> 
     </tr> 
     <tr> 
@@ -134,33 +134,33 @@ Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur u
    Outre les paramètres disponibles dans la boîte de dialogue de configuration des composants, un certain nombre de paramètres de configuration globale peuvent être modifiés par le CRXDE Lite.
 Voir [Paramètres de configuration avancée](advanced-config-3d.md) pour plus d’informations sur ces paramètres globaux.
 
-## Attribution d’un modèle 3D au composant {#assigning-a-d-model-to-the-component}
+## Attribution d’un modèle 3D au composant  {#assigning-a-d-model-to-the-component}
 
-1. In the AEM Sites page editor, click the **[!UICONTROL Assets]** icon to open the Assets list in the side panel.
+1. Dans l’éditeur de page AEM Sites, cliquez sur l’icône **[!UICONTROL Ressources]** pour ouvrir la liste Ressources dans le panneau latéral.
 
-1. Select the **[!UICONTROL 3D Models]** filter to hide unwanted asset types.
+1. Sélectionnez le filtre **[!UICONTROL Modèles 3D]** pour masquer les types de ressources indésirables.
 
    ![screen_shot_2017-12-11at124258](assets/screen_shot_2017-12-11at124258.png)
 
 1. Recherchez ou faites défiler l’écran jusqu’à atteindre la ressource 3D que vous souhaitez afficher sur la page en cours de modification.
 
-1. Drag the 3D asset from the **[!UICONTROL Assets]** list to the **[!UICONTROL 3D Viewer]** component previously placed on the page.
+1. Faites glisser le fichier 3D de la liste **[!UICONTROL Ressources]** vers le composant **[!UICONTROL Visionneuse 3D]** précédemment placé sur la page.
 
    Les ressources Adobe Dimension sont rendues à l’aide de la nouvelle technologie de lecteur basée sur la norme ouverte glTF, tandis que tous les autres types de ressources 3D reposent sur la visionneuse WebGL 3D classique AEM. Le composant sélectionne automatiquement la visionneuse appropriée en fonction du type du modèle 3D.
 
 ## Prévisualisation d’une page Web contenant un composant 3D {#previewing-a-web-page-that-has-a-d-component}
 
-While the web page is in **[!UICONTROL Edit]** mode, the 3D component displays the 3D model but no interaction with the model is possible.
+Bien que la page Web soit en mode **[!UICONTROL Modifier]**, le composant 3D affiche le modèle 3D mais aucune interaction avec le modèle n&#39;est possible.
 
 Vous pouvez prévisualisation la page Web dans l&#39;éditeur de page en accédant pleinement aux fonctionnalités du composant 3D.
 
-See also [Viewing 3D assets in the Sites 3D component](viewing-3d-assets.md#viewing-d-assets-in-the-sites-d-component).
+Voir aussi [Affichage des ressources 3D dans le composant Sites 3D](viewing-3d-assets.md#viewing-d-assets-in-the-sites-d-component).
 
 **Pour prévisualisation d’une page Web qui comporte un composant** 3D :
 
 1. Effectuez l’une des opérations suivantes :
 
-   * Near the upper-right of the page, click **[!UICONTROL Preview]** to enter preview mode.
+   * Près de l’angle supérieur droit de la page, cliquez sur **[!UICONTROL Prévisualisation]** pour passer en mode prévisualisation.
    * Supprimez `/edit.html` de l’URL de la page dans le navigateur.
 
 ## Publication de la page et des ressources {#publishing-the-page-and-assets}
@@ -169,7 +169,7 @@ Voir [Publication de ressources](managing-assets-touch-ui.md) pour obtenir des 
 
 >[!NOTE]
 >
->Using the **[!UICONTROL Publish Page]** menu item on the **[!UICONTROL Page Information]** menu will publish the page and all primary page dependencies. Les dépendances secondaires qui peuvent être référencées par le modèle 3D et/ou la scène 3D, telles que les textures plaquées et les images IBL, ne sont pas publiées lorsque vous publiez la page de cette manière.
+>L&#39;utilisation de l&#39;option de menu **[!UICONTROL Publier la page]** du menu **[!UICONTROL Informations sur la page]** permet de publier la page et toutes les dépendances Principales de la page. Les dépendances secondaires qui peuvent être référencées par le modèle 3D et/ou la scène 3D, telles que les textures plaquées et les images IBL, ne sont pas publiées lorsque vous publiez la page de cette manière.
 >
 >Adobe vous recommande de publier tous les actifs 3D et leurs dépendances directement depuis AEM Assets, avant de publier la page Web qui les référence.
 
