@@ -11,15 +11,16 @@ ht-degree: 34%
 ---
 
 
-# Multi-tenancy for collections, snippets, and snippet templates {#multi-tenancy-for-collections-snippets-and-snippet-templates}
+# Multitenancy pour les collections, les extraits de code et les modèles de fragment de code {#multi-tenancy-for-collections-snippets-and-snippet-templates}
 
 La fonction multiclient permet de séparer du contenu dans CRX en fonction du préfixe et de l’identifiant d’organisation, de sorte à protéger le contenu contre tout accès non autorisé par les utilisateurs d’autres organisations.
 
-Adobe Experience Manager (AEM) Assets stocke les données de chaque organisation à un chemin d’accès différent. Chaque chemin d’accès spécifique à l’organisation est identifié par le préfixe et l’ID d’organisation.inclus dans l’emplacement traditionnel où différents types de ressources sont stockés dans CRX.
+Adobe Experience Manager (AEM) Assets stocke les données de chaque organisation à un chemin d’accès différent. Chaque chemin d’accès spécifique à l’organisation est identifié par le préfixe et l’ID d’organisation de l’organisation.
+qui est inclus dans l’emplacement traditionnel où différents types de ressources sont stockés dans CRX.
 
-For example, if you create a folder named `Demo`, AEM assets by default stores the folder at `../content/dam/Demo` location in CRX. La fonction de multitenanciation étant activée, vous pouvez stocker les données à `../content/dam/<organization prefix>/<organization id>Demo`l’emplacement suivant :
+Par exemple, si vous créez un dossier nommé `Demo`, AEM ressources stockent par défaut le dossier à l’emplacement `../content/dam/Demo` dans CRX. La fonction de multitenanciation étant activée, vous pouvez stocker les données à `../content/dam/<organization prefix>/<organization id>Demo`.
 
-For example, for Adobe Marketing Cloud users of AEM Assets (on-demand) that are assigned to `aodpremium` organization, you can use the multi-tenancy feature to configure the following path to `../content/dam/mac/aodpremiumDemo`, segregate the content. Dans cet exemple, `mac` est le préfixe d’organisation et `aodpremium` l’ID d’organisation.
+Par exemple, pour les utilisateurs Adobe Marketing Cloud de AEM Assets (à la demande) affectés à une organisation `aodpremium`, vous pouvez utiliser la fonction de multilocation pour configurer le chemin d’accès suivant vers `../content/dam/mac/aodpremiumDemo`, en séparant le contenu. Dans cet exemple, `mac` correspond au préfixe d&#39;organisation et `aodpremium` à l&#39;ID d&#39;organisation.
 
 En fonction de l’organisation et de l’identifiant de l’utilisateur, ce chemin d’accès s’affiche dans l’interface d’AEM Assets et dans différents assistants, notamment les assistants Déplacement et Création de fragment de code, pour appliquer la séparation.
 
