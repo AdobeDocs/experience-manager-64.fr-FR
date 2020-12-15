@@ -18,11 +18,11 @@ ht-degree: 76%
 ---
 
 
-# Working with AEM 3D assets {#working-with-d-assets}
+# Utilisation de ressources 3D AEM {#working-with-d-assets}
 
 >[!IMPORTANT]
 >
->aem 3D dans AEM 6.4 n’est plus pris en charge. adobe vous recommande d’utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou version ultérieure.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>aem 3D dans AEM 6.4 n’est plus pris en charge. L&#39;Adobe vous recommande d&#39;utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou version ultérieure.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 AEM 3D (Adobe Experience Manager 3D) est conçu pour le téléchargement, la gestion, l’affichage et le rendu du contenu 3D. La prise en charge de l’affichage et du rendu est optimisée pour les objets individuels.
 
@@ -30,7 +30,7 @@ Reportez-vous également à la section [Notes de mise à jour d’AEM 3D](/help/
 
 Reportez-vous également à la section [Installation et configuration d’AEM 3D](install-config-3d.md).
 
-## À propos des modèles et des scènes dans AEM 3D {#about-models-and-stages-in-aem-d}
+## À propos des modèles et des scènes dans AEM 3D  {#about-models-and-stages-in-aem-d}
 
 AEM 3D permet l’affichage et la création de rendus de modèles 3D autonomes et statiques de haute qualité dans des environnements prédéfinis appelés Scènes. Plus simplement, une scène permet un « éclairage » de l’objet 3D et fournit les paramètres de rendu dans une application native, par exemple, Autodesk® Maya® ou Autodesk 3ds Max®. Par ailleurs, une scène peut inclure en option des caméras, des arrière-plans et une géométrie de plan de sol prédéfinis.
 
@@ -49,7 +49,7 @@ Lorsque vous créez des modèles 3D pour les utiliser dans AEM 3D, vérifiez l
 
 ## Fichiers pris en charge dans AEM 3D {#supported-files-in-aem-d}
 
-Une ressource 3D inclut généralement un fichier de modèle principal sans aucun autre fichier de référence. Referenced files include such things as texture maps or **IBL (Image-Based Lighting)** images.
+Une ressource 3D inclut généralement un fichier de modèle principal sans aucun autre fichier de référence. Les fichiers référencés incluent des mappages de texture ou des images **IBL (Image-Based Lighting)**.
 
 ### À propos du fichier de modèle 3D principal {#about-the-primary-d-model-file}
 
@@ -57,13 +57,13 @@ Le fichier de modèle 3D principal contient la géométrie réelle du modèle 
 
 * Format de fichier Wavefront OBJ (`.obj`)
 
-   Le format OBJ requiert un ou plusieurs fichiers MTL externes (Bibliothèque de modèles de matériaux) (`.mtl`) distincts.
+   Le format OBJ requiert un ou plusieurs fichiers MTL externes distincts (Bibliothèque de modèles de matériaux) (`.mtl`).
 
 * Format de fichier Autodesk FBX (Filmbox) (`.fbx`)
 
    Format d&#39;échange de fichiers Autodesk 3D ; aux formats binaire et ASCII.
 
-   Lorsque vous créez des fichiers FBX dans des applications tierces, Adobe recommande d’utiliser les paramètres de configuration suivants (voir le tableau ci-dessous). Ces paramètres vous permettent d’obtenir les meilleurs résultats pour les fichiers 3D que vous prévoyez d’utiliser dans AEM. The option names are taken from the **[!UICONTROL Autodesk Maya FBX Export Options]** dialog box.
+   Lorsque vous créez des fichiers FBX dans des applications tierces, Adobe recommande d’utiliser les paramètres de configuration suivants (voir le tableau ci-dessous). Ces paramètres vous permettent d’obtenir les meilleurs résultats pour les fichiers 3D que vous prévoyez d’utiliser dans AEM. Les noms des options sont extraits de la boîte de dialogue **[!UICONTROL Autodesk Maya FBX Export Options]**.
 
 <table> 
  <tbody> 
@@ -89,11 +89,11 @@ Le fichier de modèle 3D principal contient la géométrie réelle du modèle 
   </tr> 
   <tr> 
    <td>Appareils photo</td> 
-   <td><p>Sélectionnez cette option pour les étapes <strong></strong>3D.</p> <p>Désélectionnez cette option pour les modèles 3D.</p> </td> 
+   <td><p>Sélectionnez <strong>Etapes 3D</strong>.</p> <p>Désélectionnez cette option pour les modèles 3D.</p> </td> 
   </tr> 
   <tr> 
    <td>Lumières</td> 
-   <td><p>Sélectionnez cette option pour les étapes <strong></strong>3D.</p> <p>Deselect for <strong>3D models</strong>.</p> </td> 
+   <td><p>Sélectionnez <strong>Etapes 3D</strong>.</p> <p>Désélectionnez <strong>Modèles 3D</strong>.</p> </td> 
   </tr> 
   <tr> 
    <td>Unités - Automatique</td> 
@@ -105,7 +105,7 @@ Le fichier de modèle 3D principal contient la géométrie réelle du modèle 
   </tr> 
   <tr> 
    <td>Incorporer le média</td> 
-   <td>Les deux options sont prises en charge. If embedded is selected, AEM 3D extracts the embedded media to an adjacent folder that has the same name as the model file with <code>.fbm</code> appended to it.</td> 
+   <td>Les deux options sont prises en charge. Si l'option Embedded est sélectionnée, AEM 3D extrait le support incorporé dans un dossier adjacent portant le même nom que le fichier de modèle auquel est ajouté <code>.fbm</code>.</td> 
   </tr> 
   <tr> 
    <td>Format de fichier FBX - Type</td> 
@@ -122,7 +122,7 @@ Les formats de fichier supplémentaires suivants sont pris en charge si Autodesk
 
 * Autodesk Maya
 
-   Formats ASCII `.ma` et binaires `.mb` .
+   Les formats ASCII `.ma` et binaire `.mb`.
 
 * `Jupiter Tesselation (ISO 14306-1).jt`.
 
@@ -142,7 +142,7 @@ Les définitions de matériaux dans les fichiers de modèle 3D peuvent inclure 
 
 Les matériaux du fichier de modèle 3D principal peuvent faire référence à d’autres types de textures inconnues d’AEM 3D.
 
-### IBL (Image-Based Lighting) images {#ibl-image-based-lighting-images}
+### Images IBL (Image Based Lighting) {#ibl-image-based-lighting-images}
 
 Un fichier de modèle 3D qui définit une scène peut ne référencer qu’une seule image d’environnement IBL. Actuellement, AEM 3D ne prend en charge que les images TIFF 32 bits au format latitude/longitude pour les images IBL diffuses et les réflexions. Les images RVB 8 bits sont également prises en charge pour les arrière-plans de scène sphériques.
 
