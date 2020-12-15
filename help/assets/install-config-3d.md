@@ -22,7 +22,7 @@ ht-degree: 32%
 
 >[!IMPORTANT]
 >
->aem 3D dans AEM 6.4 n’est plus pris en charge. adobe vous recommande d’utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou version ultérieure.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>aem 3D dans AEM 6.4 n’est plus pris en charge. L&#39;Adobe vous recommande d&#39;utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou version ultérieure.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 L&#39;installation et la configuration de AEM 3D (version 3.0) impliquent les opérations suivantes :
 
@@ -70,7 +70,7 @@ Voir également [Paramètres de configuration avancés](advanced-config-3d.md).
 
    * Windows. Installez sur le même lecteur où se trouve AEM.
    * Mac. Installez-le sur la partition où se trouve AEM.
-   * Linux. Extract the downloaded package and follow the instructions in `<yourFBXSDKpath>/Install_FbxFileSdk.txt`. Install the SDK to `/usr`.
+   * Linux. Extrayez le package téléchargé et suivez les instructions de `<yourFBXSDKpath>/Install_FbxFileSdk.txt`. Installez le SDK sur `/usr`.
 
 ## Téléchargement et installation du module de code 3D natif {#downloading-and-installing-the-native-d-code-package}
 
@@ -91,63 +91,63 @@ Voir également [Paramètres de configuration avancés](advanced-config-3d.md).
 
    Voir [Configuration requise](/help/release-notes/aem3d-release-notes.md#system-requirements).
 
-1. Accédez au portail [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)de distribution de logiciels. Localisez la version 3.0.1 de `AEM-6.4-DynamicMedia-3D` Feature Pack et téléchargez-la.
+1. Accédez au [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Localisez la version 3.0.1 de `AEM-6.4-DynamicMedia-3D` Feature Pack et téléchargez-la.
 
 1. Dans AEM, cliquez sur **[!UICONTROL Outils > Administration > Déploiement > Gestionnaire de modules]**.
 
 1. Téléchargez le Feature Pack téléchargé vers AEM. Recherchez-le et cliquez sur **[!UICONTROL Installer]**.
 
-1. In the **[!UICONTROL Install Package]** dialog box, expand **Advanced Settings**, then set **[!UICONTROL Access Control Handling]** to **Merge**.
+1. Dans la boîte de dialogue **[!UICONTROL Installer le package]**, développez **Paramètres avancés**, puis définissez **[!UICONTROL Gestion du Contrôle d&#39;accès]** sur **Fusionner**.
 1. Cliquez sur **[!UICONTROL Installer]** pour lancer l’installation du module.
 
-   The file `sample-3D-content.zip` is placed in the **[!UICONTROL Assets]** root folder. Pour plus d’informations, voir [Validation de la configuration d’AEM 3D](#validating-the-setup-of-aem-d).
+   Le fichier `sample-3D-content.zip` est placé dans le dossier racine **[!UICONTROL Assets]**. Pour plus d’informations, voir [Validation de la configuration d’AEM 3D](#validating-the-setup-of-aem-d).
 
-## Configuration du processus d’assimilation des ressources 3D et redémarrage d’AEM {#configuring-the-d-asset-ingestion-workflow-and-restarting-aem}
+## Configuration du processus d’assimilation des ressources 3D et redémarrage d’AEM  {#configuring-the-d-asset-ingestion-workflow-and-restarting-aem}
 
 **Pour configurer le processus** d&#39;assimilation des ressources 3D :
 
-1. In AEM, click the AEM logo to access the global navigation console, then click the **[!UICONTROL Tools]** icon and navigate to **[!UICONTROL Workflow > Models]**.
-1. On the **[!UICONTROL Workflow Models]** page, hover over the **[!UICONTROL DAM Update Asset]** workflow, and when the check mark appears, select it.
+1. Dans AEM, cliquez sur le logo AEM pour accéder à la console de navigation globale, puis cliquez sur l&#39;icône **[!UICONTROL Outils]** et accédez à **[!UICONTROL Processus > Modèles]**.
+1. Sur la page **[!UICONTROL Modèles de flux de travail]**, passez la souris sur le flux de travaux **[!UICONTROL DAM Update Asset]** et, lorsque la coche apparaît, sélectionnez-la.
 
 1. Cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
-1. On the **[!UICONTROL DAM Update Asset]** screen, in the AEM floating panel, click the **[!UICONTROL Plus]** icon to the right of Workflow to expand the list. Sélectionnez **[!UICONTROL Étape du processus]** dans la liste.
-1. Faites glisser l’étape **** de processus et déposez-la dans le processus juste avant le composant Processus de mise à jour des ressources **[!UICONTROL DAM terminé]** situé à la fin du processus.
+1. Dans l’écran **[!UICONTROL DAM Update Asset]**, dans le panneau flottant de l’AEM, cliquez sur l’icône **[!UICONTROL Plus]** située à droite de Workflow pour développer la liste. Sélectionnez **[!UICONTROL Étape du processus]** dans la liste.
+1. Faites glisser **[!UICONTROL Étape du processus]** et déposez-la dans le processus juste avant le composant **[!UICONTROL Processus de mise à jour de la gestion des actifs terminé]** situé à la fin du processus.
 
    ![3d_process_step_underaem6-4](assets/3d_process_step_underaem6-4.png)
 
 1. Double-cliquez sur l’étape de processus que vous venez d’ajouter.
-1. In the **[!UICONTROL Step Properties]** dialog box, under the **[!UICONTROL Common]** tab, in the **[!UICONTROL Title]** field, enter a suitable description for the process such as `Process 3D content`.
+1. Dans la boîte de dialogue **[!UICONTROL Propriétés de l&#39;étape]**, sous l&#39;onglet **[!UICONTROL Common]**, dans le champ **[!UICONTROL Titre]**, entrez une description appropriée pour le processus tel que `Process 3D content`.
 1. Cliquez sur l’onglet **[!UICONTROL Processus]**.
 
-1. From the **[!UICONTROL Process]** drop-down menu, select **[!UICONTROL Geometric 3D Object Service]**, then select the **[!UICONTROL Handler Advance]** check box.
+1. Dans le menu déroulant **[!UICONTROL Processus]**, sélectionnez **[!UICONTROL Service d&#39;objet 3D géométrique]**, puis cochez la case **[!UICONTROL Avance du gestionnaire]**.
 
    ![3d_install-process-stepproperties-dlg](assets/3d_install-process-steppropertiesdlg.png)
 
 1. Près du coin supérieur droit de la boîte de dialogue, cliquez sur l’icône en forme de coche pour revenir à la page Fichiers de mise à jour DAM.
-1. Près du coin supérieur droit de la page Fichier **[!UICONTROL de mise à jour]** DAM, cliquez sur **[!UICONTROL Synchroniser]** pour enregistrer le modèle de flux de travaux modifié.
+1. Près du coin supérieur droit de la page **[!UICONTROL Fichier de mise à jour DAM]**, cliquez sur **[!UICONTROL Synchroniser]** pour enregistrer le modèle de processus modifié.
 1. Redémarrez AEM.
 
    Après le redémarrage, vous êtes prêt à télécharger du contenu 3D et à AEM le traiter.
 
    Procédez ensuite à la [validation de la configuration d’AEM 3D](#validating-the-setup-of-aem-d).
 
-## Validation de la configuration d’AEM 3D {#validating-the-setup-of-aem-d}
+## Validation de la configuration d’AEM 3D  {#validating-the-setup-of-aem-d}
 
 1. Dans AEM, cliquez sur **[!UICONTROL Outils > Ressources]**, puis téléchargez `sample-3D-content.zip` et développez le fichier téléchargé. (Vous pouvez désormais supprimer `sample-3D-content.zip` dans AEM.)
 
    Vérifiez que le **[!UICONTROL Mode Carte]** est actif pour afficher les commentaires de transfert et de traitement dans les étapes suivantes.
 
-1. Create a folder named `test3d` to receive test content.
-1. Upload all files from `sample-3D-content/images` to the `test3d` folder.
+1. Créez un dossier nommé `test3d` pour recevoir le contenu du test.
+1. Téléchargez tous les fichiers de `sample-3D-content/images` vers le dossier `test3d`.
 1. Attendez que le transfert et le traitement soient terminés. Il se peut que vous deviez actualiser votre navigateur.
 
-   Upload the three `.fbx` files from `sample-3D-content/` to the `test3d` folder.
+   Téléchargez les trois fichiers `.fbx` de `sample-3D-content/` vers le dossier `test3d`.
 
    Ne transférez pas encore les fichiers de modèle .ma.
 
 1. Dans le mode Carte, observez les bannières de messages affichées sur les cartes de ressources 3D.
 
-   Chaque ressource passe par plusieurs étapes de traitement. When the **[!UICONTROL Creating Preview...]** processing step completes, the card is updated with a thumbnail image. Une fois le traitement final terminé, la bannière est remplacée par l’indicateur **[!UICONTROL NOUVEAU]**.
+   Chaque ressource passe par plusieurs étapes de traitement. Lorsque la **[!UICONTROL création de Prévisualisation...L’étape de traitement de]** se termine, la carte est mise à jour avec une image miniature. Une fois le traitement final terminé, la bannière est remplacée par l’indicateur **[!UICONTROL NOUVEAU]**.
 
    >[!NOTE]
    >
@@ -157,26 +157,26 @@ Voir également [Paramètres de configuration avancés](advanced-config-3d.md).
 
 1. Vous allez maintenant apprendre à résoudre les dépendances de fichiers.
 
-   On the **[!UICONTROL Unresolved Dependencies]** banner for the `stage-helipad.fbx` card, click the **[!UICONTROL Exclamation Point]** icon to navigate to the asset&#39;s properties and open the **Dependencies** tab.
+   Sur la bannière **[!UICONTROL Dépendances non résolues]** de la carte `stage-helipad.fbx`, cliquez sur l&#39;icône **[!UICONTROL Point d&#39;exclamation]** pour accéder aux propriétés de la ressource et ouvrez l&#39;onglet **Dépendances**.
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-1. Click the **[!UICONTROL Folder/Magnifying Glass]** icon to the right of the file name to open the asset browser and resolve the dependencies as follows:
+1. Cliquez sur l&#39;icône **[!UICONTROL Dossier/Loupe]** à droite du nom de fichier pour ouvrir l&#39;explorateur de ressources et résoudre les dépendances comme suit :
 
    ![chlimage_1-373](assets/chlimage_1-373.png)
 
-1. Click **[!UICONTROL Save]** and **[!UICONTROL Close]** to finish processing the asset and return to the **[!UICONTROL Card View]**, respectively.
-1. When processing is complete, you see the following in **[!UICONTROL Card View]**:
+1. Cliquez sur **[!UICONTROL Enregistrer]** et **[!UICONTROL Fermer]** pour terminer le traitement de la ressource et revenir à la **[!UICONTROL Vue de carte]**, respectivement.
+1. Une fois le traitement terminé, vous voyez ce qui suit dans **[!UICONTROL Vue de carte]** :
 
    ![chlimage_1-374](assets/chlimage_1-374.png)
 
-1. On the test3d page, click the `logo-sphere.fbx` card to open the model in **[!UICONTROL Detail View]**.
+1. Sur la page test3d, cliquez sur la carte `logo-sphere.fbx` pour ouvrir le modèle dans **[!UICONTROL Vue de détails]**.
 
    Dans le coin supérieur droit de la page logo-sphere.fbx, cliquez sur l’icône représentant un projecteur pour ouvrir le menu déroulant, puis sélectionnez `stage-spotlights.fbx`.
 
    ![chlimage_1-375](assets/chlimage_1-375.png)
 
-1. From the **[!UICONTROL Stage Spotlight]** drop-down list, select `stage-helipad.fbx`.
+1. Dans la liste déroulante **[!UICONTROL Points phares]**, sélectionnez `stage-helipad.fbx`.
 
    Utilisez le bouton gauche de la souris pour ajuster la vue. L’éclairage de l’arrière-plan et du modèle change pour tenir compte de la nouvelle sélection de scène.
 
@@ -190,15 +190,15 @@ Voir également [Paramètres de configuration avancés](advanced-config-3d.md).
 
 Vous pouvez éventuellement configurer la prise en charge dans AEM 3D pour les ressources Adobe Dimension.
 
-Vous devez configurer un service de conversion externe pour autoriser l’assimilation, la prévisualisation et la publication de ressources Adobe Dimension 3D dans AEM. Le service convertit du format Adobe Dimension (`.dn`) propriétaire en une variante de glTF (formatée en `.glb` fichier) qui est enregistrée avec la ressource Dn en tant que rendu. Le `.glb` rendu est utilisé pour l’affichage en ligne du fichier 3D dans AEM Assets, Sites et écrans et peut également être téléchargé pour une utilisation avec des applications tierces.
+Vous devez configurer un service de conversion externe pour autoriser l’assimilation, la prévisualisation et la publication de ressources Adobe Dimension 3D dans AEM. Le service convertit du format Adobe Dimension propriétaire (`.dn`) en une variante de glTF (formatée sous la forme d&#39;un fichier `.glb`) qui est enregistrée avec la ressource Dn en tant que rendu. Le rendu `.glb` est utilisé pour l’affichage en ligne de la ressource 3D dans AEM Assets, Sites et écrans et peut également être téléchargé pour une utilisation avec des applications tierces.
 
 >[!NOTE]
 >
->Le service de conversion est hébergé par Adobe dans Amazon AWS. Après avoir configuré correctement le service, `.dn` les fichiers téléchargés vers AEM sont ensuite copiés en toute sécurité vers le service de conversion par enregistrement temporaire dans Amazon S3. Le résultat de la conversion est renvoyé à AEM par enregistrement S3 temporaire. Tous les transferts et enregistrements sont sécurisés. En outre, le contenu persiste dans S3 et le service de conversion ne dure que brièvement (généralement pas plus de quelques minutes).
+>Le service de conversion est hébergé par Adobe dans Amazon AWS. Après avoir configuré correctement le service, les fichiers `.dn` téléchargés vers AEM sont ensuite copiés en toute sécurité vers le service de conversion par enregistrement temporaire dans Amazon S3. Le résultat de la conversion est renvoyé à AEM par enregistrement S3 temporaire. Tous les transferts et enregistrements sont sécurisés. En outre, le contenu persiste dans S3 et le service de conversion ne dure que brièvement (généralement pas plus de quelques minutes).
 
 **Pour configurer la prise en charge des ressources** Adobe Dimension :
 
-1. Contactez votre gestionnaire de compte d&#39;Adobe AEM, votre expert en attribution de privilèges d&#39;accès ou votre représentant de l&#39;assistance pour demander des informations d&#39;identification pour les services **** AEM3D.
+1. Contactez votre gestionnaire de compte AEM d&#39;Adobe, votre expert en attribution de privilèges d&#39;accès ou votre représentant de l&#39;assistance pour demander des informations d&#39;identification pour **AEM3D Services**.
 
    >[!NOTE]
    >
@@ -213,43 +213,43 @@ Vous devez configurer un service de conversion externe pour autoriser l’assimi
    * userPoolId
    * clientId
 
-1. En tant qu’administrateur, connectez-vous à votre instance d’auteur AEM où vous souhaitez que les informations d’identification soient installées, puis ouvrez **[!UICONTROL CRXDE Lite]**.
+1. En tant qu’administrateur, connectez-vous à l’instance d’auteur AEM où vous souhaitez installer les informations d’identification, puis ouvrez **[!UICONTROL CRXDE Lite]**.
 1. Configurez les nouvelles informations d’identification en procédant comme suit dans le CRXDE Lite :
 
-   1. Accédez à `/libs/settings/dam/v3D/services/dncr` la propriété et définissez-la `clientId` sur la nouvelle valeur.
-   1. Accédez aux `/libs/settings/dam/v3D/services/aws` nouvelles valeurs et définissez les `accountId`, `customerId`, `identityPoolId`et `userPoolId` les propriétés sur celles-ci.
-   1. Chargez la nouvelle valeur de mot de passe dans la `encryptedPassword` propriété. Cette valeur est automatiquement chiffrée lorsque vous appuyez sur **[!UICONTROL Enregistrer tout]**.
-   1. Appuyez sur **[!UICONTROL Enregistrer tout]**, rechargez la page, puis vérifiez que la `encryptedPassword` propriété affiche une autre chaîne entourée d’accolades. Cette apparence indique que le mot de passe est correctement chiffré et sécurisé.
+   1. Accédez à `/libs/settings/dam/v3D/services/dncr` et définissez la propriété `clientId` sur la nouvelle valeur.
+   1. Accédez à `/libs/settings/dam/v3D/services/aws` et définissez les propriétés `accountId`, `customerId`, `identityPoolId` et `userPoolId` sur les nouvelles valeurs.
+   1. Chargez la nouvelle valeur de mot de passe dans la propriété `encryptedPassword`. Cette valeur est automatiquement chiffrée lorsque vous appuyez sur **[!UICONTROL Enregistrer tout]**.
+   1. Appuyez sur **[!UICONTROL Enregistrer tout]**, rechargez la page, puis vérifiez que la propriété `encryptedPassword` affiche une autre chaîne entourée d&#39;accolades. Cette apparence indique que le mot de passe est correctement chiffré et sécurisé.
 
-1. Spécifiez le format du rendu de `.glb` conversion en procédant comme suit en **[!UICONTROL CRXDE Lite]**:
+1. Spécifiez le format du rendu de conversion `.glb` en procédant comme suit dans **[!UICONTROL CRXDE Lite]** :
 
-   1. Accédez à `/libs/settings/dam/v3D/services/dncr` dans le **[!UICONTROL CRXDE Lite]**.
-   1. Définissez la `outputFormat` propriété sur `Dn` ou `generic`.
+   1. Accédez à `/libs/settings/dam/v3D/services/dncr` dans **[!UICONTROL CRXDE Lite]**.
+   1. Définissez la propriété `outputFormat` sur `Dn` ou `generic`.
 
-      Lorsqu’elle est définie sur `Dn`, la `.glb` conversion inclut des extensions spécifiques à l’Adobe, telles que l’éclairage IBL, pour une qualité optimale lors de l’affichage des fichiers Dn dans AEM. Cependant, le rendu .glb converti peut ne pas s’afficher correctement dans les applications tierces.
+      Lorsqu’elle est définie sur `Dn`, la conversion `.glb` inclut des extensions spécifiques à l’Adobe, telles que l’éclairage IBL, pour une qualité optimale lors de l’affichage des ressources Dn dans AEM. Cependant, le rendu .glb converti peut ne pas s’afficher correctement dans les applications tierces.
 
-      Lorsqu’il est défini sur `generic`, le `.glb` rendu est générique sans extensions spécifiques à l’Adobe. Ce paramètre permet de l’utiliser dans des applications tierces, tandis que l’affichage avec la visionneuse 3D AEM est visuellement sous-optimal.
+      Lorsqu&#39;il est défini sur `generic`, le rendu `.glb` est générique sans extensions spécifiques à un Adobe. Ce paramètre permet de l’utiliser dans des applications tierces, tandis que l’affichage avec la visionneuse 3D AEM est visuellement sous-optimal.
 
-1. Activez le format de fichier Dn en procédant comme suit en **[!UICONTROL CRXDE Lite]**:
+1. Activez le format de fichier Dn en procédant comme suit dans **[!UICONTROL CRXDE Lite]** :
 
    1. Accéder à `/libs/settings/dam/v3D/assetTypes/Dn`.
-   1. Set the `Enabled` property to true.
+   1. Définissez la propriété `Enabled` sur true.
 
 1. Validez la configuration en procédant comme suit :
 
    1. Ouvrez AEM Assets.
-   1. Téléchargez `logo_sphere.dn` vers le `test3d` dossier. Le fichier se trouve dans `sample-3D-content/models`.
+   1. Téléchargez `logo_sphere.dn` dans le dossier `test3d`. Le fichier se trouve dans `sample-3D-content/models`.
 
       Veuillez noter que `sample-3D-content.zip` a été téléchargé au préalable pour valider la fonctionnalité 3D de base.
-   1. Return to the **[!UICONTROL Card View]** and observe the message banner shown on the uploaded asset. La bannière **[!UICONTROL Format de conversion...]** s’affiche pendant que le processus de conversion est en cours.
-   1. Une fois le traitement terminé, ouvrez le fichier dans la Vue **[!UICONTROL de]** détails afin de vérifier que le fichier converti s’affiche correctement et que les commandes de navigation du lecteur sont utilisables.
+   1. Revenez à la **[!UICONTROL Vue de carte]** et observez la bannière de message affichée sur la ressource téléchargée. Le **[!UICONTROL format de conversion...La bannière]** s’affiche pendant que le processus de conversion est en cours.
+   1. Une fois le traitement terminé, ouvrez le fichier dans **[!UICONTROL Vue de détails]** pour vérifier que le fichier converti s’affiche correctement et que les commandes de navigation du lecteur sont utilisables.
 
    ![image2018-11-2_15-51-19](assets/image2018-11-2_15-51-19.png)
 
-   Si une &quot;erreur de traitement&quot; s’affiche sur l’actif Dn dans la Vue **[!UICONTROL de]** carte après 10 à 15 minutes, la conversion a échoué.
+   Si une erreur de traitement s’affiche sur l’actif Dn dans la **[!UICONTROL Vue de carte]** après 10 à 15 minutes, la conversion a échoué.
 
    Dans ce cas, vous pouvez résoudre les problèmes de conversion en procédant comme suit :
 
    * Supprimez le fichier, puis téléchargez-le à nouveau.
-   * Vérifiez que vous avez correctement défini tous les paramètres de configuration dans le **[!UICONTROL CRXDE Lite]**.
+   * Vérifiez que vous avez correctement défini tous les paramètres de configuration dans **[!UICONTROL CRXDE Lite]**.
    * Vérifiez qu’aucun pare-feu ne bloque l’accès au service de conversion et aux points de terminaison AWS.
