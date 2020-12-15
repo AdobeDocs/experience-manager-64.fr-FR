@@ -11,7 +11,7 @@ ht-degree: 98%
 ---
 
 
-# Extend Asset Editor {#extending-asset-editor}
+# Étendre l’éditeur de ressources {#extending-asset-editor}
 
 L’Éditeur de ressources est la page qui s’ouvre lorsque l’utilisateur clique sur une ressource trouvée par le biais du partage de ressources, ce qui lui permet de modifier certains aspects de la ressource, tels que les métadonnées, la miniature, le titre et les balises.
 
@@ -19,7 +19,7 @@ La configuration de l’éditeur à l’aide des composants de modification pré
 
 En plus d’utiliser les composants d’éditeur préexistants, les développeurs d’Adobe Experience Manager (AEM) peuvent créer leurs propres composants.
 
-## Création d’un modèle Éditeur de ressources  {#creating-an-asset-editor-template}
+## Création d’un modèle Éditeur de ressources   {#creating-an-asset-editor-template}
 
 Les exemples de pages suivants sont inclus dans Geometrixx :
 
@@ -47,7 +47,7 @@ Certains composants d’AEM Assets nécessitent des fonctions JS définies dan
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-The sample loads this JavaScript source in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+L’exemple charge cette source JavaScript dans `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Feuilles de style supplémentaires {#additional-style-sheets}
 
@@ -57,7 +57,7 @@ Certains composants d’AEM Assets utilisent la bibliothèque de widgets d’AE
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Feuille de style Geometrixx  {#geometrixx-style-sheet}
+### Feuille de style Geometrixx   {#geometrixx-style-sheet}
 
 Les exemples de composants de page nécessitent que tous les sélecteurs commencent par `.asseteditor` dans `static.css` (`/etc/designs/geometrixx/static.css`). Bonne pratique : copiez tous les sélecteurs `.asseteditor` dans votre feuille de style et ajustez les règles en fonction de vos besoins.
 
@@ -120,7 +120,7 @@ Dans la partie HTML, utilisez l’ensemble de titre précédent (titre de la res
 <title><%= title %></title>
 ```
 
-## Création d’un composant de champ de formulaire simple  {#creating-a-simple-form-field-component}
+## Création d’un composant de champ de formulaire simple   {#creating-a-simple-form-field-component}
 
 Cet exemple illustre comment créer un composant qui affiche les métadonnées d’une ressource chargée.
 
@@ -201,7 +201,7 @@ Cet exemple illustre comment créer un composant qui affiche les métadonnées d
 
 1. En mode d’**édition**, le nouveau composant (par exemple, **Exemple de métadonnées**) est désormais disponible dans le sidekick (qui se trouve dans le groupe **Éditeur de ressources**). Insérez le composant. Pour pouvoir stocker les métadonnées, celles-ci doivent être ajoutées au formulaire de métadonnées.
 
-## Modification des options de métadonnées  {#modifying-metadata-options}
+## Modification des options de métadonnées   {#modifying-metadata-options}
 
 Vous pouvez modifier les espaces de noms disponibles [sous forme de métadonnées](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
 
