@@ -22,7 +22,7 @@ Pour pouvoir marquer efficacement vos images de marque, Smart Content Service ex
 
 Pour un résultat optimal, les images de votre corpus d’entraînement doivent respecter les instructions suivantes :
 
-**Quantité et taille :** Au moins **30 images par balise**. Minimum 500 pixels sur le côté le plus long.
+**Quantité et taille :** minimum  **30 images par balise**. Minimum 500 pixels sur le côté le plus long.
 
 **Cohérence** : les images associées à une même balise doivent être visuellement similaires.
 
