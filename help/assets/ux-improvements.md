@@ -11,15 +11,15 @@ ht-degree: 73%
 ---
 
 
-# Améliorations de l’expérience utilisateur dans Assets {#user-experience-enhancements-in-assets}
+# Améliorations de l’expérience utilisateur dans Assets  {#user-experience-enhancements-in-assets}
 
-AEM 6.4 Ressources comprend plusieurs améliorations de convivialité qui offrent une expérience utilisateur transparente et améliorent la productivité. L’augmentation de la vitesse à laquelle vous pouvez créer/gérer votre contenu marketing accroît la vélocité du contenu de l’entreprise.
+aem 6.4 Ressources comprend plusieurs améliorations de convivialité qui offrent une expérience utilisateur transparente et améliorent la productivité. L’augmentation de la vitesse à laquelle vous pouvez créer/gérer votre contenu marketing accroît la vélocité du contenu de l’entreprise.
 
 L’interface est plus réactive, ce qui vous permet de gérer efficacement un large portefeuille de ressources. Vous pouvez rapidement rechercher, afficher, trier et faire défiler en toute fluidité une longue liste d’éléments.
 
 Vous pouvez personnaliser les différents modes : Carte, Liste et Colonnes. Par exemple, vous pouvez configurer la taille des miniatures que vous souhaitez afficher dans la vue Carte. Pour le mode Liste, vous pouvez configurer le niveau de détail que vous voulez afficher pour les ressources dans la liste. AEM 6.4 Assets comprend une nouvelle arborescence qui permet de parcourir le référentiel des ressources et de rechercher vos ressources.
 
-## Chargement différé {#lazy-loading}
+## Chargement différé  {#lazy-loading}
 
 Lorsque vous parcourez/recherchez des ressources dans AEM 6.4 Assets, jusqu’à 200 ressources sont affichées à la fois. Vous pouvez faire défiler les résultats plus rapidement, ce qui est particulièrement utile si vous naviguez dans une longue liste de résultats. Puisqu’un nombre considérable de ressources sont chargées à la fois, la navigation est fluide.
 
@@ -31,11 +31,11 @@ Selon le périphérique que vous utilisez et la quantité de détails que vous s
 
 Pour redimensionner les miniatures en mode Carte, procédez comme suit :
 
-1. Tap/click the Layout icon from the toolbar, and then choose the **[!UICONTROL View Settings]** option.
+1. Appuyez/cliquez sur l’icône Disposition de la barre d’outils, puis sélectionnez l’option **[!UICONTROL Paramètres de Vue]**.
 
    ![vue_settings](assets/view_settings.png)
 
-1. From the **[!UICONTROL View Settings]** dialog, select the desired thumbnail size, and then tap/click **[!UICONTROL Update]**.
+1. Dans la boîte de dialogue **[!UICONTROL Paramètres de Vue]**, sélectionnez la taille de miniature souhaitée, puis appuyez/cliquez sur **[!UICONTROL Mettre à jour]**.
 
    ![vue_settings_dialog](assets/view_settings_dialog.png)
 
@@ -67,7 +67,7 @@ En plus des modes Carte et Liste, vous accédez désormais à la page de détail
 
 AEM 6.4 Assets inclut une arborescence qui permet de parcourir facilement votre hiérarchie de ressources et d’accéder à la ressource ou au dossier souhaité.
 
-To open the Tree view, tap/click the GlobalNav icon in the `Assets UI`, and choose **[!UICONTROL Content tree]** from the menu.
+Pour ouvrir la vue d&#39;arborescence, appuyez/cliquez sur l&#39;icône GlobalNav dans `Assets UI`, puis choisissez **[!UICONTROL Arborescence de contenu]** dans le menu.
 
 ![content_tree](assets/content_tree.png)
 
@@ -87,7 +87,7 @@ En fonction de la mise en page sélectionnée, vous pouvez ouvrir la page de dé
 |---|---|
 | [!UICONTROL Mode Carte] | Appuyez/cliquez sur la mosaïque de ressources. |
 | [!UICONTROL Mode Liste] | Appuyez/cliquez sur l’entrée de ligne de la ressource dans la liste. |
-| [!UICONTROL Mode Colonnes] | Tap/click the **[!UICONTROL More Details]** button from the asset snapshot. |
+| [!UICONTROL Mode Colonnes] | Appuyez/cliquez sur le bouton **[!UICONTROL Plus de détails]** de l&#39;instantané de la ressource. |
 
 Utilisez les boutons Précédent/Suivant pour vous déplacer entre les ressources.
 
