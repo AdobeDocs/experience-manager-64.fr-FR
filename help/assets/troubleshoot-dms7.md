@@ -18,7 +18,7 @@ ht-degree: 88%
 ---
 
 
-# Dépannage de Dynamic Media – mode Scene7 {#troubleshooting-dynamic-media-scene-mode}
+# Dépannage de Dynamic Media – mode Scene7  {#troubleshooting-dynamic-media-scene-mode}
 
 Le document suivant décrit la résolution des problèmes affectant Dynamic Media en mode d’exécution **dynamicmedia_scene7**.
 
@@ -26,22 +26,22 @@ Le document suivant décrit la résolution des problèmes affectant Dynamic Medi
 
 Assurez-vous que Dynamic Media a été correctement configuré en procédant comme suit :
 
-* Start up command contains the `-r dynamicmedia_scene7` runmode argument.
+* La commande début up contient l&#39;argument `-r dynamicmedia_scene7` runmode.
 * Tous les packs de correctifs cumulatifs (CFP) AEM 6.4 ont été installés *avant* tout Feature Pack Dynamic Media disponible.
 * Le Feature Pack 18912 facultatif est installé.
 
    Ce Feature Pack facultatif est utile pour la prise en charge FTP ou si vous effectuez une migration des ressources de Dynamic Media vers Dynamic Media Classic (Scene7).
 
 * Accédez à l’interface utilisateur des services cloud et vérifiez que le compte fourni s’affiche sous **[!UICONTROL Configurations disponibles]**.
-* Ensure that the **[!UICONTROL Dynamic Media Asset Activation (scene7)]** replication agent is enabled.
+* Assurez-vous que l’Activation de réplication **[!UICONTROL Dynamic Media Asset  (scene7)]** est activée.
 
-   This replication agent is found under **[!UICONTROL Agents]** on Author.
+   Cet agent de réplication se trouve sous **[!UICONTROL Agents]** sur l&#39;auteur.
 
-## General (all assets) {#general-all-assets}
+## Général (tous les actifs) {#general-all-assets}
 
 Vous trouverez ci-après quelques astuces et conseils généraux concernant toutes les ressources.
 
-### Asset synchronization status properties {#asset-synchronization-status-properties}
+### Propriétés d’état de synchronisation des ressources {#asset-synchronization-status-properties}
 
 Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE Lite pour vérifier que la synchronisation de la ressource depuis AEM vers Dynamic Media s’est déroulée correctement :
 
@@ -54,9 +54,9 @@ Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE L
 
 ### Journalisation de la synchronisation {#synchronization-logging}
 
-Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur AEM `/crx-quickstart/logs/`). Sufficient logging is available to determine the root cause of most issues, however you can increase the logging to DEBUG on the `com.adobe.cq.dam.ips` package through the Sling Console ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) to gather more information.
+Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur AEM `/crx-quickstart/logs/`). Une journalisation suffisante est disponible pour déterminer la cause première de la plupart des problèmes. Cependant, vous pouvez augmenter la journalisation dans DEBUG sur le package `com.adobe.cq.dam.ips` via la console Sling ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) afin de collecter plus d’informations.
 
-### Move, Copy, or Delete {#move-copy-delete}
+### Déplacer, copier ou supprimer {#move-copy-delete}
 
 Avant d’effectuer une opération de déplacement, de copie ou de suppression, procédez comme suit :
 
@@ -64,11 +64,11 @@ Avant d’effectuer une opération de déplacement, de copie ou de suppression, 
 * Pour les paramètres prédéfinis de visionneuse et d’image, vérifiez qu’il existe une valeur `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` avant d’effectuer des opérations de déplacement, de copie ou de suppression.
 * Si la valeur de métadonnées ci-dessus est absente, vous devez transférer à nouveau les ressources avant les opérations de déplacement, de copie ou de suppression.
 
-### Version control {#version-control}
+### Contrôle de version {#version-control}
 
-Lorsque vous remplacez un fichier Contenu multimédia dynamique existant (même nom et emplacement), vous avez la possibilité de conserver les deux fichiers ou de remplacer ou de créer une version :
+Lorsque vous remplacez un fichier Dynamic Media existant (même nom et emplacement), vous avez la possibilité de conserver les deux fichiers ou de remplacer ou de créer une version :
 
-* Keeping both will create a new asset with a unique name for the published asset URL. For example, **[!UICONTROL image.jpg]** is the original asset and **[!UICONTROL image1.jpg]** is the newly uploaded asset.
+* Si vous conservez ces deux éléments, vous créerez un nouveau fichier avec un nom unique pour l’URL du fichier publié. Par exemple, **[!UICONTROL image.jpg]** est la ressource d’origine et **[!UICONTROL image1.jpg]** la ressource nouvellement chargée.
 
 * La création d’une version n’est pas prise en charge dans le cadre de la diffusion en mode Scene7 de Dynamic Media. La nouvelle version remplace la ressource existante dans la diffusion.
 
@@ -184,7 +184,7 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
    <td>Le traitement vidéo prend trop de temps.</td> 
    <td><p>Pour déterminer si le codage vidéo est toujours en cours ou s’il est passé à l’état d’échec :</p> 
     <ul> 
-     <li>Vérifiez l’état de la vidéo <code>http://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <span class="kbd">dam:assetState</span></li> 
+     <li>Vérifiez l’état de la vidéo <code>http://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt;  <span class="kbd">dam:assetState</span></li> 
      <li>Surveillez la vidéo via la console de workflow <code>http://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; onglets Instances, Archive, Échecs.</li> 
     </ul> </td> 
    <td> </td> 
@@ -256,7 +256,7 @@ Si vous rencontrez des problèmes avec les visionneuses, reportez-vous aux conse
       </ol> </li> 
      <li>Sous Cloud Services, accédez à la page Configuration Dynamic Media, puis ouvrez la boîte de dialogue de configuration correspondant à la configuration S7 de Dynamic Media. 
       <ul> 
-       <li>N’effectuez aucune modification, cliquez sur <strong>Enregistrer</strong>. Cela a pour effet de déclencher à nouveau la logique pour créer et synchroniser les exemples de ressources, la feuille CSS du paramètre prédéfini de la visionneuse et l’illustration.<br /> <br /> </li> 
+       <li>N’effectuez aucune modification, cliquez sur <strong>Enregistrer</strong>. Cela a pour effet de déclencher à nouveau la logique pour créer et synchroniser les exemples de ressources, la feuille CSS du paramètre prédéfini de la visionneuse et l’illustration.<br />  <br /> </li> 
       </ul> </li> 
     </ol> </td> 
   </tr> 
