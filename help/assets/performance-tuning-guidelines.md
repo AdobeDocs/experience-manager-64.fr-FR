@@ -11,7 +11,7 @@ ht-degree: 85%
 ---
 
 
-# Assets performance tuning guide {#assets-performance-tuning-guide}
+# Guide d&#39;optimisation des performances des ressources {#assets-performance-tuning-guide}
 
 Une configuration d’Adobe Experience Manager (AEM) Assets présente un certain nombre de composants matériels, logiciels et réseau. Selon votre scénario de déploiement, vous pouvez avoir besoin d’apporter des modifications spécifiques à la configuration des composants matériels, logiciels et réseau pour supprimer les goulots d’étranglement en termes de performances.
 
@@ -27,9 +27,9 @@ Voici quelques éléments principaux essentiels pour lesquels vous devez identif
 
 Bien qu’AEM soit pris en charge sur plusieurs plates-formes, Adobe a trouvé le meilleur moyen de prendre en charge les outils natifs sous Linux et Windows, ce qui contribue à offrir des performances optimales et à faciliter l’implémentation. Dans l’idéal, vous devez déployer un système d’exploitation 64 bits pour répondre aux besoins de stockage du déploiement AEM Assets. A l’instar de tout déploiement AEM, vous devez mettre en œuvre TarMK dans la mesure du possible. Bien que TarMK ne puisse pas mesurer au-delà d’une instance d’auteur simple, il semble offrir de meilleurs résultats que MongoMK. Vous pouvez ajouter des instances de déchargement TarMK pour améliorer la capacité de traitement des workflows de votre déploiement d’AEM Assets.
 
-### Dossier temp    {#temp-folder}
+### Dossier temp     {#temp-folder}
 
-Afin de réduire les délais de chargement des ressources, utilisez un stockage haute performance pour le répertoire temporaire Java. Sous Linux et Windows, un disque SSD ou RAM peut être utilisé. Dans des environnements cloud, un type de stockage à grande vitesse équivalent peut être utilisé. For example in Amazon EC2, an [ephemeral drive](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temp folder.
+Afin de réduire les délais de chargement des ressources, utilisez un stockage haute performance pour le répertoire temporaire Java. Sous Linux et Windows, un disque SSD ou RAM peut être utilisé. Dans des environnements cloud, un type de stockage à grande vitesse équivalent peut être utilisé. Par exemple, dans Amazon EC2, un lecteur [éphémère](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) peut être utilisé pour le dossier temporaire.
 
 En supposant que le serveur dispose de suffisamment de mémoire, configurez un disque RAM. Sous Linux, exécutez les commandes suivantes pour créer un disque RAM de 8 Go :
 
@@ -52,7 +52,7 @@ Une fois que le volume temporaire haute performance est prêt, définissez le pa
 
 Étant donné qu’Oracle a cessé de publier des mises à jour de Java 7 depuis avril 2015, Adobe vous recommande de déployer AEM Assets sous Java 8. Dans certains cas, une amélioration des performances a été constatée.
 
-### Paramètres JVM    {#jvm-parameters}
+### Paramètres JVM     {#jvm-parameters}
 
 Vous devez définir les paramètres JVM suivants :
 
@@ -68,7 +68,7 @@ Vous devez définir les paramètres JVM suivants :
 
 Nous recommandons à tous les utilisateurs d’AEM Assets de séparer l’entrepôt de données et l’entrepôt de segments. En outre, la configuration des paramètres `maxCachedBinarySize` et `cacheSizeInMB` peut vous aider à optimiser les performances. Définissez le paramètre `maxCachedBinarySize` selon la plus petite taille de fichier pouvant être contenue dans le cache. Spécifiez la taille du cache en mémoire à utiliser pour l’entrepôt de données dans `cacheSizeInMB`. Adobe vous recommande de définir cette valeur entre 2 et 10 % de la taille totale du tas. Toutefois, le chargement ou le test des performances peuvent vous aider à déterminer le paramètre idéal.
 
-### Configuration de la taille maximale du cache d’images mis en mémoire tampon    {#configure-the-maximum-size-of-the-buffered-image-cache}
+### Configuration de la taille maximale du cache d’images mis en mémoire tampon     {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 Lors du chargement d’un grand nombre de ressources vers Adobe Experience Manager, réduisez la taille maximale configurée du cache d’images mis en mémoire tampon. De cette façon, vous tiendrez compte des pics inattendus de consommation de la mémoire et éviterez l’échec de JVM avec des erreurs de mémoire insuffisante. Prenez l’exemple d’un système présentant un tas maximal (paramètre -`Xmx`) de 5 Go, un BlobCache Oak défini sur 1 Go et un cache de documents défini sur 2 Go. Dans ce cas, le cache mis en mémoire tampon prendrait au maximum 1,25 Go, ce qui laisserait seulement 0,75 Go pour les pics inattendus.
 
@@ -76,9 +76,9 @@ Configurez la taille du cache mis en mémoire tampon dans la console web OSGi. �
 
 À compter d’AEM 6.1 SP1, si vous utilisez un nœud `sling:osgiConfig` pour configurer cette propriété, veillez à définir le type de données sur Long. Pour plus de détails, voir [CQBufferedImageCache utilise le tas pendant le téléchargement des ressources](https://helpx.adobe.com/fr/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
 
-### Entrepôts de données partagés    {#shared-data-stores}
+### Entrepôts de données partagés     {#shared-data-stores}
 
-La mise en œuvre d’un entrepôt de données basé sur les fichiers, partagé ou S3, peut vous aider à économiser de l’espace disque et à augmenter le débit réseau dans des implémentations à grande échelle. For more information on the pros and cons of using a shared datastore, see [Assets Sizing Guide](assets-sizing-guide.md).
+La mise en œuvre d’un entrepôt de données basé sur les fichiers, partagé ou S3, peut vous aider à économiser de l’espace disque et à augmenter le débit réseau dans des implémentations à grande échelle. Pour plus d&#39;informations sur les avantages et les inconvénients de l&#39;utilisation d&#39;une banque de données partagée, consultez le [Guide de dimensionnement des ressources](assets-sizing-guide.md).
 
 ### Entrepôt de données S3 {#s-data-store}
 
@@ -107,7 +107,7 @@ accessKey=<snip>
 
 ## Optimisation du réseau {#network-optimization}
 
-Adobe recommande d’activer HTTPS, car de nombreuses entreprises qui possèdent des pare-feu analysent le trafic HTTP, ce qui a une incidence sur les chargements et endommage les fichiers. Pour les chargements de fichiers volumineux, assurez-vous que les utilisateurs disposent d’une connexion filaire au réseau, car les réseaux Wi-Fi saturent rapidement. For guidelines on identifying network bottlenecks, see [Assets Sizing Guide](assets-sizing-guide.md). Pour évaluer les performances du réseau en analysant sa topologie, consultez les [Remarques sur le réseau des ressources](assets-network-considerations.md).
+Adobe recommande d’activer HTTPS, car de nombreuses entreprises qui possèdent des pare-feu analysent le trafic HTTP, ce qui a une incidence sur les chargements et endommage les fichiers. Pour les chargements de fichiers volumineux, assurez-vous que les utilisateurs disposent d’une connexion filaire au réseau, car les réseaux Wi-Fi saturent rapidement. Pour obtenir des instructions sur l&#39;identification des goulets d&#39;étranglement réseau, voir [Guide de dimensionnement des ressources](assets-sizing-guide.md). Pour évaluer les performances du réseau en analysant sa topologie, consultez les [Remarques sur le réseau des ressources](assets-network-considerations.md).
 
 Votre stratégie d’optimisation du réseau dépend essentiellement de la quantité de bande passante disponible et du chargement sur votre instance AEM. Les options de configuration courantes, notamment les pare-feu ou les proxys, peuvent améliorer les performances du réseau. Voici quelques points essentiels à prendre en compte :
 
@@ -126,7 +126,7 @@ Dans la mesure du possible, définissez le workflow Ressource de mise à jour de
 >
 >Par défaut, le workflow Ressource de mise à jour de gestion des actifs numériques est défini sur Transitoire dans AEM 6.3. Dans ce cas, vous pouvez ignorer la procédure suivante.
 
-1. Open `http://localhost:4502/miscadmin` on the AEM instance you want to configure.
+1. Ouvrez `http://localhost:4502/miscadmin` sur l&#39;instance AEM que vous souhaitez configurer.
 
 1. Dans l’arborescence de navigation, développez **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]** > **[!UICONTROL dam]**.
 1. Double-cliquez sur **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**.
@@ -147,17 +147,17 @@ Dans la mesure du possible, définissez le workflow Ressource de mise à jour de
 
    Par exemple, après l’exécution d’un grand nombre de workflows transitoires (ce qui crée des nœuds d’instance de workflow), vous pouvez exécuter l’[outil de suppression de workflow ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) sur une base ponctuelle. Il supprime les instances de workflow terminées et redondantes immédiatement sans attendre l’exécution du planificateur de purge de workflow d’Adobe Granite.
 
-### Tâches parallèles maximales    {#maximum-parallel-jobs}
+### Tâches parallèles maximales     {#maximum-parallel-jobs}
 
 Par défaut, AEM exécute un nombre maximal de tâches parallèles qui est égal au nombre de processeurs sur le serveur. Le problème avec ce paramètre est que pendant les périodes de charge importante, tous les processeurs sont occupés par des workflows Ressource de mise à jour de gestion des actifs numériques, ce qui ralentit la réactivité de l’interface utilisateur et empêche AEM d’exécuter d’autres processus qui assurent la stabilité et les performances du serveur. En tant que bonne pratique, définissez cette valeur sur la moitié des processeurs disponibles sur le serveur en procédant comme suit :
 
-1. On AEM Author, go to [http://localhost:4502/system/console/slingevent](http://localhost:4702/system/console/slingevent).
+1. Sur AEM Author, accédez à [http://localhost:4502/system/console/slingevent](http://localhost:4702/system/console/slingevent).
 1. Cliquez sur Modifier sur chaque file d’attente de workflow appropriée à votre implémentation (par exemple, la file d’attente de workflow transitoire de Granite).
 1. Modifiez la valeur des Tâches parallèles maximales, puis cliquez sur Enregistrer.
 
 Configurer une file d’attente à la moitié des processeurs disponibles est une solution exploitable pour commencer. Cependant, vous pouvez être amené à augmenter ou à réduire ce nombre pour atteindre un débit maximal et l’ajuster selon l’environnement. Il existe des files d’attente distinctes pour les workflows transitoires et non transitoires, ainsi que d’autres processus, tels que les workflows externes. Si plusieurs files d’attente configurées à 50 % des processeurs sont activées simultanément, le système peut devenir rapidement surchargé. Les files d’attente utilisées varient considérablement selon les différentes implémentations de l’utilisateur. Par conséquent, vous devrez peut-être les configurer de manière réfléchie pour un maximum d’efficacité sans sacrifier la stabilité des serveurs.
 
-### Déchargement {#offloading}
+### Déchargement  {#offloading}
 
 Pour un volume élevé de workflows ou de workflows gourmands en ressources, tels que le transcodage vidéo, vous pouvez décharger les workflows de mise à jour des actifs de gestion des actifs numériques vers une deuxième instance d’auteur. Un problème récurrent avec le déchargement est que tout chargement enregistré via le déchargement du traitement des workflows est compensé par le coût de la réplication du contenu dans les deux sens entre les instances.
 
@@ -187,7 +187,7 @@ Une autre méthode consiste à utiliser la technologie Scene7 pour transférer e
 
 #### ImageMagick {#imagemagick}
 
-Si vous personnalisez le workflow Ressource de mise à jour de gestion des actifs numériques pour générer des rendus à l’aide d’ImageMagick, Adobe vous recommande de modifier le fichier policy.xml à l’adresse */etc/ImageMagick/*. Par défaut, ImageMagick utilise l’espace disque disponible entier pour le volume du système d’exploitation et la quantité de mémoire disponible. Make the following configuration changes within the `policymap` section of policy.xml to limit these resources.
+Si vous personnalisez le workflow Ressource de mise à jour de gestion des actifs numériques pour générer des rendus à l’aide d’ImageMagick, Adobe vous recommande de modifier le fichier policy.xml à l’adresse */etc/ImageMagick/*. Par défaut, ImageMagick utilise l’espace disque disponible entier pour le volume du système d’exploitation et la quantité de mémoire disponible. Effectuez les modifications de configuration suivantes dans la section `policymap` du fichier policy.xml pour limiter ces ressources.
 
 ```xml
 <policymap>
@@ -212,7 +212,7 @@ En outre, définissez le chemin du dossier temporaire d’ImageMagick dans le fi
 
 >[!NOTE]
 >
->The ImageMagick `policy.xml` and `configure.xml` files may be found under `/usr/lib64/ImageMagick-*/config/` instead of `/etc/ImageMagick/`. See [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for details on the configuration file locations.
+>Les fichiers ImageMagick `policy.xml` et `configure.xml` se trouvent sous `/usr/lib64/ImageMagick-*/config/` au lieu de `/etc/ImageMagick/`. Pour plus d’informations sur les emplacements des fichiers de configuration, voir [la documentation ImageMagick](https://www.imagemagick.org/script/resources.php).
 
 Si vous utilisez AEM sur Adobe Managed Services (AMS), contactez le service à la clientèle Adobe si vous prévoyez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Le Experience Manager ne peut pas traiter de fichiers PSB à très haute résolution de plus de 3 000 x 2 3 000 pixels.
 
@@ -288,17 +288,17 @@ L’importation d’une grande quantité de métadonnées peut entraîner une ac
 
 Lors de la réplication des ressources vers un grand nombre d’instances de publication (par exemple, dans une implémentation de sites), Adobe vous recommande d’utiliser la réplication par chaîne. Dans ce cas, l’instance d’auteur est répliquée vers une instance de publication unique qui est répliquée à son tour vers d’autres instances de publication, ce qui libère l’instance d’auteur.
 
-### Configuration de la réplication en chaîne    {#configure-chain-replication}
+### Configuration de la réplication en chaîne     {#configure-chain-replication}
 
 1. Sélectionnez l’instance de publication vers laquelle vous souhaitez effectuer les réplications en chaîne
 1. Sur cette instance de publication, ajoutez des agents de réplication qui pointent vers d’autres instances de publication
-1. On each of those replication agents, enable **[!UICONTROL On Receive]** on the **[!UICONTROL Triggers]** tab
+1. Sur chacun de ces agents de réplication, activez **[!UICONTROL À réception]** sur l&#39;onglet **[!UICONTROL Déclencheurs]**.
 
 >[!NOTE]
 >
 >Adobe ne recommande pas d’activer automatiquement les ressources. Cependant, si nécessaire, Adobe recommande d’effectuer cette opération en tant que dernière étape d’un workflow, généralement Ressource de mise à jour de gestion des actifs numériques.
 
-## Recherche des index    {#search-indexes}
+## Recherche des index     {#search-indexes}
 
 Veillez à mettre en œuvre les derniers Service Packs et les correctifs liés aux performances étant donné qu’ils contiennent souvent des mises à jour des index du système. Voir [Conseils de réglage des performances | 6.x](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html) pour connaître certaines optimisations d’index qui peuvent être appliquées en fonction de votre version d’AEM.
 
@@ -311,22 +311,22 @@ Certaines optimisations peuvent être effectuées sur les configurations d’ind
 Mettez à jour la configuration de LuceneIndexProvider :
 
 1. Accédez à /system/console/configMgrorg.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService
-1. Enable **[!UICONTROL CopyOnRead , CopyOnWrite , and Prefetch Index Files]** in versions prior to AEM 6.2. These values are enabled by default in AEM 6.2 and later versions.
+1. Activez **[!UICONTROL CopyOnRead, CopyOnWrite et Prérécupérer les fichiers d&#39;index]** dans les versions antérieures à AEM 6.2. Ces valeurs sont activées par défaut dans AEM 6.2 et les versions ultérieures.
 
 Mettez à jour les configurations d’index pour améliorer la durée de réindexation :
 
 1. Ouvrez CRXDe /crx/de/index.jsp et connectez-vous en tant qu’utilisateur administrateur
 1. Naviguez jusqu’à /oak:index/lucene
-1. Add a String[] property named **[!UICONTROL excludedPaths]** with values &quot;/var&quot;, &quot;/etc/workflow/instances&quot;, and &quot;/etc/replication&quot;
+1. Ajouter une propriété String[] nommée **[!UICONTROL excludedPaths]** avec les valeurs &quot;/var&quot;, &quot;/etc/workflow/instances&quot; et &quot;/etc/replicationsde&quot;
 1. Naviguez jusqu’à /oak:index/damAssetLucene.
-1. Add a String[] property named **[!UICONTROL includedPaths]** with one value &quot;/content/dam&quot;
+1. Ajouter une propriété String[] nommée **[!UICONTROL includePaths]** avec une valeur &quot;/content/dam&quot;
 1. Enregistrez.
 
 (AEM 6.1 et 6.2 uniquement) Mettez à jour l’index ntBaseLucene pour améliorer les performances lors de la suppression et du déplacement des ressources :
 
 1. Naviguez jusqu’à */oak:index/ntBaseLucene/indexRules/nt:base/properties*
-1. Add two nt:unstructured nodes **[!UICONTROL slingResource]** and **[!UICONTROL damResolvedPath]** under */oak:index/ntBaseLucene/indexRules/nt:base/properties*
-1. Définissez les propriétés ci-dessous sur les noeuds (où les propriétés ordered et propertyIndex sont de type *Boolean*:
+1. Ajoutez deux noeuds nt:unstructured **[!UICONTROL slingResource]** et **[!UICONTROL damResolvedPath]** sous */oak:index/ntBaseLucene/indexRules/nt:base/properties*
+1. Définissez les propriétés ci-dessous sur les noeuds (où les propriétés ordered et propertyIndex sont de type *Boolean* :
 
    slingResource
 
@@ -355,7 +355,7 @@ Mettez à jour les configurations d’index pour améliorer la durée de réinde
    Réindexation terminée pour les index : [/oak:index/ntBaseLucene]
 
 1. Vous pouvez également constater que l’indexation est effectuée en actualisant le nœud /oak:index/ntBaseLucene dans CRXDe, étant donné que la propriété reindex retourne à la valeur false
-1. Once indexing is completed then go back to CRXDe and set the **[!UICONTROL type]** property to disabled on these two indexes
+1. Une fois l’indexation terminée, revenez à CRXDe et définissez la propriété **[!UICONTROL type]** sur Désactivé sur ces deux index.
 
    * */oak:index/slingResource*
    * */oak:index/damResolvedPath*
@@ -387,7 +387,7 @@ De même, lorsque les fichiers atteignent 2 Go lors de l’utilisation d’un e
 
 Pour chaque déploiement AEM, créez un régime de tests de performances qui permet d’identifier et de résoudre les goulots d’étranglement rapidement. Voici quelques points clés.
 
-### Test réseau    {#network-testing}
+### Test réseau     {#network-testing}
 
 Pour tous les problèmes liés aux performances du réseau du client, effectuez les tâches suivantes :
 
@@ -397,14 +397,14 @@ Pour tous les problèmes liés aux performances du réseau du client, effectuez 
 * En utilisant un outil localisateur de réseau
 * Tester par rapport au Dispatcher
 
-### Test de l’instance AEM    {#aem-instance-testing}
+### Test de l’instance AEM     {#aem-instance-testing}
 
 Afin de réduire au maximum la latence et d’obtenir un débit élevé grâce à l’utilisation efficace du processeur et au partage de charge, surveillez régulièrement les performances de votre instance AEM. En particulier :
 
 * Exécuter des tests de charge par rapport à l’instance AEM
 * Surveiller les performances de chargement et la réactivité de l’interface utilisateur
 
-## Liste de contrôle des performances d’AEM Assets    {#aem-assets-performance-checklist}
+## Liste de contrôle des performances d’AEM Assets     {#aem-assets-performance-checklist}
 
 * Autoriser HTTPS à contourner tous les renifleurs de trafic HTTP d’entreprise.
 * Utiliser une connexion câblée pour le chargement de ressources volumineuses.
@@ -418,5 +418,5 @@ Afin de réduire au maximum la latence et d’obtenir un débit élevé grâce �
 * Configurer la purge des workflows et versions.
 * Optimiser la configuration de l&#39;index Lucene.
 * Optimisez les index avec les derniers Service Pack et correctifs. Vérifiez auprès du service à la clientèle Adobe si d’autres optimisations d’index sont disponibles.
-* Use `guessTotal` to optimize query performance.
-* If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
+* Utilisez `guessTotal` pour optimiser les performances des requêtes.
+* Si vous configurez AEM pour détecter les types de fichiers à partir du contenu des fichiers (en configurant [!UICONTROL Service de type MIME DAM Jour CQ] dans la [!UICONTROL AEM Web Console]), téléchargez de nombreux fichiers en vrac pendant les heures creuses, car l&#39;opération est gourmande en ressources.
