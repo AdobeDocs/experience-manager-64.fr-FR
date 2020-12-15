@@ -19,7 +19,7 @@ En plus d’un codage de métadonnées universel qui peut être incorporé dans 
 
 La [spécification XMP](https://www.adobe.com/devnet/xmp.html) est disponible auprès d’Adobe.
 
-## What is XMP? {#what-is-xmp}
+## Qu&#39;est-ce que XMP ? {#what-is-xmp}
 
 AEM Assets prend nativement en charge le XMP - la plateforme de métadonnées extensible pilotée par l&#39;Adobe. XMP est une norme de traitement et de stockage des métadonnées normalisées et propriétaires dans les ressources numériques. XMP est conçu pour être la norme commune qui permet à plusieurs applications de travailler efficacement avec les métadonnées.
 
@@ -36,13 +36,13 @@ une entité particulière appelée ressource ; c&#39;est-à-dire que les propri�
 
 Adobe a introduit pour la première fois la norme XMP dans le cadre du logiciel Adobe Acrobat. Depuis, la norme XMP a été largement adoptée.
 
-### XMP ecosystem {#xmp-ecosystem}
+### XMP écosystème {#xmp-ecosystem}
 
 XMP définit un modèle de [métadonnées](https://fr.wikipedia.org/wiki/Métadonnée) exploitable avec n’importe quel ensemble défini d’éléments de métadonnées. XMP définit également des [schémas](https://en.wikipedia.org/wiki/XML_schema) spécifiques pour des propriétés de base utiles pour consigner l’historique d’une ressource lorsqu’elle passe par diverses étapes de traitement, de la photographie, en passant par la [numérisation](https://fr.wikipedia.org/wiki/Scanner_(informatique)) ou la création en tant que texte, à travers des étapes de retouche photo (comme le [recadrage](https://fr.wikipedia.org/wiki/Recadrage_(image)) ou l’ajustement de couleur), pour former une image finale. XMP permet à chaque programme ou appareil d’ajouter ses propres informations à une ressource numérique. Ces informations peuvent être ensuite conservées dans le fichier numérique final.
 
 XMP est le plus souvent sérialisé et stocké à l’aide d’un sous-ensemble du [W3C](https://fr.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://fr.wikipedia.org/wiki/Resource_Description_Framework) (RDF), exprimé à son tour en format [XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language).
 
-## Avantages du mode XMP  {#advantages-of-xmp}
+## Avantages du mode XMP   {#advantages-of-xmp}
 
 La norme XMP présente les avantages suivants par rapport aux autres normes de codage et schémas :
 
@@ -59,7 +59,7 @@ La norme XMP a été conçue pour être extensible, ce qui vous permet d’ajout
 >
 >En règle générale, XMP ne permet pas l’incorporation des types de données binaires. Pour gérer des données binaires dans XMP, comme des images miniatures, celles-ci doivent être codées dans un format XML tel que Base64.
 
-## Notions fondamentales relatives à XMP {#xmp-core-concepts}
+## Notions fondamentales relatives à XMP  {#xmp-core-concepts}
 
 Les sections ci-après décrivent les notions fondamentales relatives à XMP, notamment les espaces de noms et les schémas, les propriétés et les valeurs, ainsi que les variantes linguistiques.
 
@@ -70,7 +70,7 @@ le type de données et les informations descriptives. Un schéma XMP est identif
 
 Par exemple, la propriété **Créateur** de deux schémas conçus indépendamment peut signifier la personne ayant créé la ressource ou l’application l’ayant créée (Adobe Photoshop, par exemple).
 
-### Propriétés et valeurs {#properties-and-values}
+### Propriétés et valeurs  {#properties-and-values}
 
 XMP peut inclure des propriétés de l’un ou de plusieurs des schémas.
 
