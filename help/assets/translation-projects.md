@@ -39,7 +39,7 @@ Vous utilisez le processus Créer et traduire afin de générer des copies de la
 * Créer un projet de traduction
 * Ajouter à un projet de traduction existant
 
-### Créer uniquement la structure  {#create-structure-only}
+### Créer uniquement la structure   {#create-structure-only}
 
 Utilisez l’option **Créer uniquement la structure** pour créer une hiérarchie de dossiers cible au niveau de la racine de la langue cible semblable à celle du dossier source au sein de la racine de la langue source. Dans ce cas, les fichiers source sont copiés dans le dossier de destination. Cependant, aucun projet de traduction n’est généré.
 
@@ -189,7 +189,7 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
-   For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
+   Pour plus de détails, voir [Surveillance de l’état d’une tâche de traduction](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
 1. Une fois la traduction terminée, l’état devient Prêt pour la révision. Accédez à l’interface utilisateur d’Assets et ouvrez la page Propriétés de chacune des ressources traduites afin d’afficher les métadonnées traduites.
 
@@ -312,4 +312,4 @@ Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie d
 
 1. Accédez à la console Ressources et ouvrez la page Propriétés de chacune des ressources traduites afin d’afficher les métadonnées traduites.
 
-For tips on translating metadata for assets efficiently, see [5 Steps for Efficiently Translating Metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+Pour obtenir des conseils sur la traduction efficace des métadonnées des ressources, voir [5 Procédure de traduction efficace des métadonnées](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
