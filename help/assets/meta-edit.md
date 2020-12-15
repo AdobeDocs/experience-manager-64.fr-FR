@@ -17,7 +17,7 @@ Les métadonnées sont des informations supplémentaires sur la ressource qui pe
 
 Étant donné que les entreprises ont besoin de vocabulaires de métadonnées contrôlés et fiables, AEM Assets ne permet pas l’ajout ad hoc de nouvelles propriétés de métadonnées. Bien que les auteurs ne puissent pas ajouter de nouveaux champs de métadonnées aux ressources, les développeurs le peuvent. Voir [Création d’une propriété de métadonnées pour les ressources](meta-edit.md#editing-metadata-schema).
 
-## Modification des métadonnées d’une ressource   {#editing-metadata-for-an-asset}
+## Modification des métadonnées d’une ressource    {#editing-metadata-for-an-asset}
 
 Pour modifier des métadonnées, procédez comme suit :
 
@@ -25,7 +25,7 @@ Pour modifier des métadonnées, procédez comme suit :
 
    * Dans l’interface utilisateur d’Assets, sélectionnez la ressource et cliquez/appuyez sur l’icône **[!UICONTROL Afficher les propriétés]** dans la barre d’outils.
    * À partir de la miniature de la ressource, sélectionnez l’action rapide **[!UICONTROL Afficher les propriétés]**.
-   * From the asset page, click/tap the **[!UICONTROL View Properties]** icon ![info icon](assets/do-not-localize/info_icon.png) from the toolbar.
+   * Dans la page de ressources, cliquez/appuyez sur l&#39;icône **[!UICONTROL Propriétés de la Vue]** ![info](assets/do-not-localize/info_icon.png) de la barre d&#39;outils.
 
    La page de la ressource affiche toutes les métadonnées de celle-ci. Ces métadonnées sont automatiquement extraites lorsqu’elles sont chargées (assimilées) dans AEM Assets.
 
@@ -57,7 +57,7 @@ Vous pouvez ajouter vos propres espaces de noms à AEM. Tout comme il existe des
 
 ## Conseils et restrictions {#best-practices-limitations}
 
-* Les métadonnées sont mises à jour via l’interface utilisateur tactile pour modifier les propriétés de métadonnées dans l’ `dc` espace de nommage. Toute mise à jour effectuée via l’API HTTP modifie les propriétés de métadonnées dans l’ `jcr` espace de nommage. Voir [comment mettre à jour les métadonnées à l’aide de l’API](/help/assets/mac-api-assets.md#update-asset-metadata)HTTP.
+* Les métadonnées sont mises à jour via Touch-UI pour modifier les propriétés de métadonnées dans l’espace de nommage `dc`. Toute mise à jour effectuée via l’API HTTP modifie les propriétés de métadonnées dans l’espace de nommage `jcr`. Voir [comment mettre à jour les métadonnées à l’aide de l’API HTTP](/help/assets/mac-api-assets.md#update-asset-metadata).
 
 >[!MORELIKETHIS]
 >
