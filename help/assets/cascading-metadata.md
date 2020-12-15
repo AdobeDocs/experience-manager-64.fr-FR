@@ -32,7 +32,7 @@ Voici quelques cas d’utilisation pour lesquels vous pouvez définir des métad
 * Modifier les options affichées pour un champ particulier en fonction de la valeur spécifiée dans un autre champ.
 * Définir la valeur de métadonnées par défaut dans un domaine spécifique en fonction de la valeur spécifiée dans un autre champ.
 
-## Configuration des métadonnées en cascade dans AEM   {#configure-cascading-metadata-in-aem}
+## Configuration des métadonnées en cascade dans AEM    {#configure-cascading-metadata-in-aem}
 
 Supposons que vous souhaitiez afficher les métadonnées en cascade en fonction du type de ressource sélectionné. Quelques exemples
 
@@ -48,7 +48,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. (Facultatif) Dans l’éditeur de schéma de métadonnées, créez un champ pour l’application de conditions. Spécifiez un nom et un chemin de propriété sous l’onglet **[!UICONTROL Paramètres.]**
 
-   To create a new tab, tap/click **[!UICONTROL +]** to add a tab and then add a metadata field.
+   Pour créer un nouvel onglet, appuyez/cliquez sur **[!UICONTROL +]** pour ajouter un onglet, puis ajoutez un champ de métadonnées.
 
    ![add_tab](assets/add_tab.png)
 
