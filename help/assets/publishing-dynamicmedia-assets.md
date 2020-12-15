@@ -1,8 +1,8 @@
 ---
-title: 'Publication de ressources Dynamic Media '
+title: Publication de ressources Dynamic Media
 seo-title: Publication de ressources Dynamic Media
-description: Découvrez comment publier des ressources Dynamic Media.
-seo-description: Découvrez comment publier des ressources Dynamic Media.
+description: Découvrez comment publier des ressources Dynamic Media
+seo-description: Découvrez comment publier des ressources Dynamic Media
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -22,7 +22,7 @@ ht-degree: 98%
 
 Pour publier vos ressources Dynamic Media, sélectionnez-les en appuyant sur l’icône **[!UICONTROL Publier]**. Une fois les ressources Dynamic Media publiées, vous pouvez les inclure dans une page web via une URL ou une incorporation.
 
-Vous pouvez également publier immédiatement les ressources que vous téléchargez, sans intervention de l’utilisateur. See [Configuring Dynamic Media - Scene7 mode](config-dms7.md).
+Vous pouvez également publier immédiatement les ressources que vous téléchargez, sans intervention de l’utilisateur. Voir [Configuration du mode Dynamic Media - Scene7](config-dms7.md).
 
 En **[!UICONTROL mode Carte]** une petite icône en forme de globe apparaît directement sous le nom d’une ressource pour indiquer que celle-ci est publiée. En mode **[!UICONTROL Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
 
@@ -47,7 +47,7 @@ Voir aussi [Incorporation de la visionneuse de vidéos dans une page web.](embed
 
 Pour plus d’informations sur la publication d’une visionneuse ou d’une ressource, reportez-vous à la section [Publication de ressources.](managing-assets-touch-ui.md)
 
-## Diffusion de ressources Dynamic Media via HTTP/2  {#http-delivery-of-dynamic-media-assets}
+## Diffusion de ressources Dynamic Media via HTTP/2   {#http-delivery-of-dynamic-media-assets}
 
 AEM prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré dans toute application acceptant une ressource hébergée. Cette ressource publiée est alors distribuée par le biais du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
 
