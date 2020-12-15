@@ -11,7 +11,7 @@ ht-degree: 56%
 ---
 
 
-# Expérience de la page d’accueil d’AEM Assets {#aem-assets-home-page-experience}
+# Expérience de la page d’accueil d’AEM Assets  {#aem-assets-home-page-experience}
 
 Personnalisez la page d’accueil d’AEM Assets afin d’enrichir l’expérience de l’écran de bienvenue, avec notamment un instantané des activités récentes concernant les ressources.
 
@@ -19,24 +19,24 @@ La page d’accueil d’Adobe Experience Manager (AEM) Assets offre une expér
 
 La page d’accueil d’Assets est désactivée par défaut. Pour l’activer, procédez comme suit :
 
-1. Pour accéder à AEM Configuration Manager, cliquez sur **[!UICONTROL Outils > Opération > Console]** Web.
-1. Open the **Day CQ DAM Event Recorder** service.
-1. Select the **[!UICONTROL Enable this service]** to enable activity recording.
+1. Pour accéder à AEM Configuration Manager, cliquez sur **[!UICONTROL Outils > Opération > Console Web]**.
+1. Ouvrez le service **Day CQ DAM Événement Recorder**.
+1. Sélectionnez **[!UICONTROL Activer ce service]** pour activer l&#39;enregistrement des activités.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. From the **Event Types** list, select the events to be recorded and save the changes.
+1. Dans la liste **Types d&#39;événement**, sélectionnez les événements à enregistrer et enregistrez les modifications.
 
    >[!CAUTION]
    >
    >Activer les options Ressource affichée, Projets affichés et Collections affichées augmente significativement le nombre d’événements enregistrés.
 
 1. Ouvrez le service **[!UICONTROL DAM Asset Page d&#39;accueil Feature Flag]** à partir de Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
-1. Select the **[!UICONTROL isEnabled.name]** option to enable the Assets Home page feature. Enregistrez les modifications.
+1. Sélectionnez l&#39;option **[!UICONTROL isEnabled.name]** pour activer la fonction Page d&#39;accueil des ressources. Enregistrez les modifications.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Open the **[!UICONTROL User Preferences]** dialog, and select **[!UICONTROL Enable Assets Home Page]**. Enregistrez les modifications.
+1. Ouvrez la boîte de dialogue **[!UICONTROL Préférences utilisateur]**, puis sélectionnez **[!UICONTROL Activer la Page d&#39;accueil des ressources]**. Enregistrez les modifications.
 
    ![user_préférences](assets/user_preferences.png)
 
@@ -44,7 +44,7 @@ Après avoir activé la Page d&#39;accueil Ressources, accédez à l’interface
 
 ![home_page](assets/home_page.png)
 
-Tap/click the **[!UICONTROL Click here to configure your experience link]** to add your username, background image, and profile image.
+Appuyez/cliquez sur **[!UICONTROL Cliquez ici pour configurer votre lien d’expérience]** afin d’ajouter votre nom d’utilisateur, votre image d’arrière-plan et votre image de profil.
 
 La page d’accueil des ressources inclut les sections suivantes :
 
@@ -65,13 +65,13 @@ Cette section s’affiche sous la section Bienvenue et contient des widgets prê
 * Récent
 * Découvrez
 
-**Activité**: Sous cette section, le widget **Mon Activité** affiche les activités récentes effectuées par l’utilisateur connecté avec des ressources (y compris des ressources sans rendus), par exemple les téléchargements, les téléchargements, la création de ressources, les modifications, les commentaires, les annotations et les partages.
+**Activité** : Sous cette section, le  **widget** Mon activité affiche les récentes activités effectuées par l’utilisateur connecté avec des ressources (y compris des ressources sans rendus), par exemple les téléchargements, les téléchargements, la création de ressources, les modifications, les commentaires, les annotations et les partages.
 
-**Récent**: Le widget **Récemment affiché** sous cette section affiche les entités récemment consultées par l’utilisateur connecté, y compris les dossiers, les collections et les projets.
+**Récent** : Le widget  **Récemment** affiché sous cette section affiche les entités récemment consultées par l’utilisateur connecté, y compris les dossiers, les collections et les projets.
 
-**Discover**: Le **nouveau** widget sous cette section affiche les ressources et les rendus récemment transférés vers l’instance AEM Assets.
+**Discover** : Le  **** widget de cette section affiche les ressources et les rendus récemment transférés vers l’instance AEM Assets.
 
-To enable purging of user activity data, enable the **DAM Event Purge Service** from Configuration Manager. Une fois que vous avez activé ce service, les activités de l’utilisateur connecté dépassant le nombre spécifié sont supprimées par le système.
+Pour activer la purge des données d’activité utilisateur, activez le **service de purge de Événement DAM** à partir de Configuration Manager. Une fois que vous avez activé ce service, les activités de l’utilisateur connecté dépassant le nombre spécifié sont supprimées par le système.
 
 L’écran de bienvenue fournit des outils d’aide à la navigation, comme des icônes sur la barre d’outils afin d’accéder aux dossiers, aux collections et aux catalogues.
 
