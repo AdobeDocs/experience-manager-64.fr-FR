@@ -18,13 +18,13 @@ ht-degree: 61%
 ---
 
 
-# Paramètres de configuration avancés {#advanced-configuration-settings}
+# Paramètres de configuration avancés  {#advanced-configuration-settings}
 
 Bien que les paramètres de configuration par défaut soient adaptés aux cas d’utilisation standard, il est parfois nécessaire d’effectuer des modifications.
 
 Les paramètres de configuration avancés suivants s’appliquent à l’intégration d’AEM 3D pour les déploiements Maya et non Maya.
 
-All settings are accessed using **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**).
+Tous les paramètres sont accessibles à l’aide de **CRXDE Lite** dans AEM (**[!UICONTROL Outils > Général > CRXDE Lite]**).
 
 >[!NOTE]
 >
@@ -34,21 +34,21 @@ All settings are accessed using **CRXDE Lite** in AEM (**[!UICONTROL Tools > Gen
 >
 >La modification des paramètres qui ne sont pas répertoriés dans le tableau ci-dessous peuvent entraîner un dysfonctionnement du programme.
 
-## Configuration des types de ressources {#asset-types-configuration}
+## Configuration des types de ressources  {#asset-types-configuration}
 
-In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), access the following configurations:
+Dans **CRXDE Lite** en AEM (**[!UICONTROL Outils > Général > CRXDE Lite]**), accédez aux configurations suivantes :
 
 | Chemin | Description |
 |---|---|
 | `/libs/settings/dam/v3D/assetTypes/*/Conversion` | Spécifie le type de fichier pour le format 3D intermédiaire créé pendant l’assimilation. Il doit être vide pour les formats de fichiers fbx et obj, ou fbx pour les formats autorisés par Maya. |
-| `/libs/settings/dam/v3D/assetTypes/*/Enabled` | Set to true or false to enable or disable this entry in the **[!UICONTROL assetTypes]** list. |
+| `/libs/settings/dam/v3D/assetTypes/*/Enabled` | Définissez cette variable sur true ou false pour activer ou désactiver cette entrée dans la liste **[!UICONTROL assetTypes]**. |
 | `/libs/settings/dam/v3D/assetTypes/*/Extension` | Spécifiez un ou plusieurs suffixes de fichiers ou extensions de fichiers séparés par des virgules qui doivent être associés à ce type de ressource. |
-| `/libs/settings/dam/v3D/assetTypes/*/IngestRegime` | Must be `native` for FBX and OBJ file formats and  `maya` for formats enabled by Maya. |
-| `/libs/settings/dam/v3D/assetTypes/*/MimeType` | Spécifie le type MIME pour ce type de ressource. For formats enabled by Maya it is recommended to use `application/x-ext`, where `ext` is the string specified as the `Extension` value. |
+| `/libs/settings/dam/v3D/assetTypes/*/IngestRegime` | Doit être `native` pour les formats de fichier FBX et OBJ et `maya` pour les formats activés par Maya. |
+| `/libs/settings/dam/v3D/assetTypes/*/MimeType` | Spécifie le type MIME pour ce type de ressource. Pour les formats activés par Maya, il est recommandé d&#39;utiliser `application/x-ext`, où `ext` est la chaîne spécifiée comme valeur `Extension`. |
 
 ## Configuration d’assimilation {#ingestion-configuration}
 
-In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), access the following configurations:
+Dans **CRXDE Lite** en AEM (**[!UICONTROL Outils > Général > CRXDE Lite]**), accédez aux configurations suivantes :
 
 <table> 
  <tbody> 
@@ -74,7 +74,7 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), access
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/settings/gPlaneZero</td> 
-   <td><p>When set to <strong>true</strong> (default), objects are moved vertically, if necessary, to ensure that all parts of the object are above the ground plane (y=0).</p> <p>When set to <strong>false</strong> (default), objects are not repositioned and may be partially hidden by a stage's ground plane. (S'applique uniquement pour la prévisualisation et le rendu avec Rapid Refine.) Toutefois, cela n’affecte pas le rendu avec Maya. When set to <strong>true</strong>, the vertical position of objects in Maya may be different than in preview or when rendering with Rapid Refine.</p> </td> 
+   <td><p>Lorsqu’il est défini sur <strong>true</strong> (valeur par défaut), les objets sont déplacés verticalement, si nécessaire, pour s’assurer que toutes les parties de l’objet sont au-dessus du plan au sol (y=0).</p> <p>Lorsqu’il est défini sur <strong>false</strong> (valeur par défaut), les objets ne sont pas repositionnés et peuvent être partiellement masqués par le plan au sol d’une scène. (S'applique uniquement pour la prévisualisation et le rendu avec Rapid Refine.) Toutefois, cela n’affecte pas le rendu avec Maya. Lorsqu’elle est définie sur <strong>true</strong>, la position verticale des objets dans Maya peut être différente de celle de la prévisualisation ou lors du rendu avec l’option Affinage rapide.</p> </td> 
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/Paths/magickPath</td> 
@@ -87,7 +87,7 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), access
  </tbody> 
 </table>
 
-## Paramètres de configuration Cloud Services {#cloud-services-configuration-settings}
+## Paramètres de configuration des Cloud Services {#cloud-services-configuration-settings}
 
 Les valeurs des paramètres suivants sont fournies par votre gestionnaire de compte d’Adobe, votre expert en attribution de privilèges d’accès ou votre représentant de l’assistance.
 
@@ -101,9 +101,9 @@ Les valeurs des paramètres suivants sont fournies par votre gestionnaire de com
 | `/libs/settings/dam/v3D/services/aws/userPoolId` | ID du pool d’utilisateurs AWS Cognito applicable. |
 | `/libs/settings/dam/v3D/services/dncr/clientId` | ID client AWS Cognito pour le service de conversion dncr. |
 
-## Common processing settings {#common-processing-settings}
+## Paramètres de traitement courants {#common-processing-settings}
 
-In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), access the following configurations:
+Dans **CRXDE Lite** en AEM (**[!UICONTROL Outils > Général > CRXDE Lite]**), accédez aux configurations suivantes :
 
 | **Chemin** | **Description** |
 |---|---|
@@ -113,7 +113,7 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), access
 
 ## Configuration du moteur de rendu {#renderer-configuration}
 
-In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), access the following configurations:
+Dans **CRXDE Lite** en AEM (**[!UICONTROL Outils > Général > CRXDE Lite]**), accédez aux configurations suivantes :
 
 | **Chemin** | **Description** |
 |---|---|
@@ -122,31 +122,31 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), access
 | `/libs/settings/dam/v3D/renderers/*/Display` | Permet de modifier la chaîne affichée pour un moteur de rendu activé dans le sélecteur de rendu du panneau Rendu. |
 | `/libs/settings/dam/v3D/renderers/*/MaxCpuPercentage` | Spécifie le nombre maximal d’unités centrales utilisées pour effectuer le rendu des scènes 3D. Des valeurs élevées accélèrent le rendu, mais peuvent rendre AEM moins réactif. Ce paramètre est approximatif. En effet, la précision augmente avec le nombre de cœurs de processeur. |
 
-## 3D Asset preview settings {#d-asset-preview-settings}
+## Paramètres de la prévisualisation de ressources 3D {#d-asset-preview-settings}
 
-In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), access the following configurations:
+Dans **CRXDE Lite** en AEM (**[!UICONTROL Outils > Général > CRXDE Lite]**), accédez aux configurations suivantes :
 
 | Chemin | Description |
 |---|---|
-| `/libs/settings/dam/v3D/WebGLSites/autoSpin` | Set to **[!UICONTROL true]** or **[!UICONTROL false]** to enable or disable auto-spin (automatic camera orbit) on page load. |
-| `/libs/settings/dam/v3D/WebGLSites/autoSpinAfterReset` | Set to **[!UICONTROL true]** to restart auto-spin after **[!UICONTROL Reset]** is pressed. Ignoré lorsque la rotation automatique est désactivée. |
+| `/libs/settings/dam/v3D/WebGLSites/autoSpin` | Définissez sur **[!UICONTROL true]** ou **[!UICONTROL false]** pour activer ou désactiver la rotation automatique (orbite de caméra automatique) au chargement de la page. |
+| `/libs/settings/dam/v3D/WebGLSites/autoSpinAfterReset` | Définissez cette variable sur **[!UICONTROL true]** pour redémarrer la rotation automatique après avoir appuyé sur **[!UICONTROL Réinitialiser]**. Ignoré lorsque la rotation automatique est désactivée. |
 | `/libs/settings/dam/v3D/WebGLSites/autoSpinSpeed` | Spécifie la vitesse (en tours par minute) et la direction de la rotation automatique, avec des valeurs négatives pour une rotation de droite à gauche et des valeurs positives pour une rotation de gauche à droite. |
-| `/libs/settings/dam/v3D/WebGL/continueRotate` | Set to **[!UICONTROL false]** to disable continuation with gradual fadeout of viewer responses to touch and mouse gestures. |
+| `/libs/settings/dam/v3D/WebGL/continueRotate` | Définissez cette variable sur **[!UICONTROL false]** pour désactiver la continuation avec un fondu progressif des réponses de la visionneuse aux mouvements tactiles et de souris. |
 | `/libs/settings/dam/v3D/WebGL/curtainColor` | Indique la couleur du rideau de chargement qui peut éventuellement couvrir la fenêtre d’aperçu des ressources 3D lors du chargement et de l’initialisation. Valeur R, V et B avec chaque composant de couleur dans la plage de 0 à 255. |
-| `/libs/settings/dam/v3D/WebGL/fadeCurtains` | When set to **[!UICONTROL true]**, the load curtain will gradually fade out during the latter parts of viewer initialization. When set to **[!UICONTROL false]**, the curtain remains opaque until loading and initialization has completed. |
-| `/libs/settings/dam/v3D/WebGL/showCurtains` | Set to **[!UICONTROL true]** or **[!UICONTROL false]** to enable or disable the load curtain for 3D asset preview. |
+| `/libs/settings/dam/v3D/WebGL/fadeCurtains` | Lorsqu’il est défini sur **[!UICONTROL true]**, le rideau de charge disparaît progressivement au cours de la dernière partie de l’initialisation de la visionneuse. Lorsqu’il est défini sur **[!UICONTROL false]**, le rideau reste opaque jusqu’à ce que le chargement et l’initialisation soient terminés. |
+| `/libs/settings/dam/v3D/WebGL/showCurtains` | Définissez sur **[!UICONTROL true]** ou **[!UICONTROL false]** pour activer ou désactiver le rideau de charge pour la prévisualisation de ressources 3D. |
 | `/libs/settings/dam/v3D/WebGL/spinHeight` | Lorsque la rotation automatique est active, la position verticale de la caméra est ajustée automatiquement par rapport à la hauteur de l’objet 3D. Lorsqu’elle est définie sur 0,5, la caméra sera placée verticalement à la moitié de la hauteur de l’objet, ce qui permet d’obtenir un centrage vertical de l’horizon dans la fenêtre. Avec des valeurs plus élevées, la caméra regarde vers le bas sur l’objet et la hauteur de l’horizon rendu augmente ; avec des valeurs plus petites, la caméra regarde vers le haut sur l’objet et l’horizon est abaissé. |
 
-## 3D Sites component settings {#d-sites-component-settings}
+## Paramètres du composant Sites 3D {#d-sites-component-settings}
 
-In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), access the following configurations:
+Dans **CRXDE Lite** en AEM (**[!UICONTROL Outils > Général > CRXDE Lite]**), accédez aux configurations suivantes :
 
 | Chemin | Description |
 |---|---|
-| `/libs/settings/dam/v3D/WebGLSites/autoSpinAfterReset` | Set to **[!UICONTROL true]** to reactivate auto-spin (automatic camera orbit) after home is pressed. Ignoré lorsque la rotation automatique est désactivée. |
-| `/libs/settings/dam/v3D/WebGLSites/continueRotate` | Set to **[!UICONTROL false]** to disable continuation with gradual fadeout of viewer responses to touch and mouse gestures. |
+| `/libs/settings/dam/v3D/WebGLSites/autoSpinAfterReset` | Définissez cette variable sur **[!UICONTROL true]** pour réactiver la rotation automatique (orbite de la caméra automatique) après avoir appuyé sur la touche Accueil. Ignoré lorsque la rotation automatique est désactivée. |
+| `/libs/settings/dam/v3D/WebGLSites/continueRotate` | Définissez cette variable sur **[!UICONTROL false]** pour désactiver la continuation avec un fondu progressif des réponses de la visionneuse aux mouvements tactiles et de souris. |
 | `/libs/settings/dam/v3D/WebGLSites/curtainColor` | Indique la couleur du rideau de chargement qui peut éventuellement couvrir la fenêtre d’aperçu du composant 3D Sites lors du chargement. Valeur R, V et B avec chaque composant de couleur dans la plage de 0 à 255. |
-| `/libs/settings/dam/v3D/WebGLSites/fadeCurtains` | When set to **[!UICONTROL true]**, the load curtain will gradually fade out during the latter parts of loading and initialization. When set to **[!UICONTROL false]**, the curtain remains opaque until loading and initialization has completed. |
-| `/libs/settings/dam/v3D/WebGLSites/showCurtains` | Set to **[!UICONTROL true]** or **[!UICONTROL false]** to enable or disable the load curtain for the 3D Sites component. |
+| `/libs/settings/dam/v3D/WebGLSites/fadeCurtains` | Lorsqu&#39;il est défini sur **[!UICONTROL true]**, le rideau de charge disparaît progressivement au cours des dernières parties du chargement et de l&#39;initialisation. Lorsqu’il est défini sur **[!UICONTROL false]**, le rideau reste opaque jusqu’à ce que le chargement et l’initialisation soient terminés. |
+| `/libs/settings/dam/v3D/WebGLSites/showCurtains` | Définissez sur **[!UICONTROL true]** ou **[!UICONTROL false]** pour activer ou désactiver le rideau de charge pour le composant Sites 3D. |
 | `/libs/settings/dam/v3D/WebGLSites/spinHeight` | Lorsque la rotation automatique est active, la position verticale de la caméra est ajustée automatiquement par rapport à la hauteur de l’objet 3D. Lorsqu’elle est définie sur 0,5, la caméra sera placée verticalement à la moitié de la hauteur de l’objet, ce qui permet d’obtenir un centrage vertical de l’horizon dans la fenêtre. Avec des valeurs plus élevées, la caméra regarde vers le bas sur l’objet et la hauteur de l’horizon rendu augmente ; avec des valeurs plus petites, la caméra regarde vers le haut sur l’objet et l’horizon est abaissé. |
 
