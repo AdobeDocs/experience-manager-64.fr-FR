@@ -11,7 +11,7 @@ ht-degree: 92%
 ---
 
 
-# Extension de la recherche de ressources {#extending-assets-search}
+# Extension de la recherche de ressources  {#extending-assets-search}
 
 Vous pouvez étendre la recherche dans Adobe Experience Manager (AEM) Assets. AEM Assets propose des recherches prêtes à l’emploi de ressources par chaînes.
 
@@ -43,7 +43,7 @@ Vous pouvez ajouter des onglets de recherche supplémentaires en les configurant
 
    >[!NOTE]
    >
-   >When you create a second siteadminsearchpanel, be sure to set an `id` property in order to prevent form conflicts.
+   >Lorsque vous créez un second panneau siteadminsearch, veillez à définir une propriété `id` afin d’éviter les conflits de formulaires.
 
 ## Création de prédicats personnalisés {#creating-custom-predicates}
 
@@ -53,9 +53,9 @@ En plus d’utiliser des prédicats préexistants, les développeurs AEM peuvent
 
 La création de prédicats personnalisés nécessite des connaissances de base sur la [structure des widgets](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
-La pratique recommandée consiste à copier un prédicat existant, puis à le modifier. Sample predicates are located in `/libs/cq/search/components/predicates`.
+La pratique recommandée consiste à copier un prédicat existant, puis à le modifier. Les exemples de prédicats se trouvent dans `/libs/cq/search/components/predicates`.
 
-### Exemple : création d’un prédicat de propriété simple   {#example-build-a-simple-property-predicate}
+### Exemple : création d’un prédicat de propriété simple    {#example-build-a-simple-property-predicate}
 
 Pour créer un prédicat de propriété, procédez comme suit :
 
@@ -142,7 +142,7 @@ Pour créer un prédicat de propriété, procédez comme suit :
    </script>
    ```
 
-1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. To make a component editable, in CRXDE, add a node `cq:editConfig` of primary type `cq:EditConfig`. Pour pouvoir supprimer des paragraphes, ajoutez une propriété `cq:actions` à plusieurs valeurs avec une seule valeur de **DELETE**.
+1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. Pour rendre un composant modifiable, dans CRXDE, ajoutez un noeud `cq:editConfig` de type Principal `cq:EditConfig`. Pour pouvoir supprimer des paragraphes, ajoutez une propriété `cq:actions` à plusieurs valeurs avec une seule valeur de **DELETE**.
 1. Accédez à votre navigateur puis, sur votre exemple de page (par exemple `press.html`), basculez en mode de conception et activez votre nouveau composant pour le système de paragraphes de prédicats (par exemple **left**).
 
 1. En mode d’**édition**, le nouveau composant est désormais disponible dans le sidekick (accessible dans le groupe **Recherche**). Insérez le composant dans la colonne **Prédicats** et saisissez un mot de recherche, par exemple **Diamant**, puis cliquez sur la loupe pour lancer la recherche.
@@ -249,7 +249,7 @@ Pour créer un prédicat de groupe, procédez comme suit :
        });
    ```
 
-1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. To make a component editable, in CRXDE, add a node `cq:editConfig` of primary type `cq:EditConfig`. Afin de pouvoir supprimer des paragraphes, ajoutez une propriété à valeurs multiples `cq:actions` avec une valeur unique de `DELETE`.
+1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. Pour rendre un composant modifiable, dans CRXDE, ajoutez un noeud `cq:editConfig` de type Principal `cq:EditConfig`. Afin de pouvoir supprimer des paragraphes, ajoutez une propriété à valeurs multiples `cq:actions` avec une valeur unique de `DELETE`.
 1. Accédez à votre navigateur puis, sur votre exemple de page (par exemple `press.html`), basculez en mode de conception et activez votre nouveau composant pour le système de paragraphes de prédicats (par exemple **left**).
 1. En mode d’**édition**, le nouveau composant est désormais disponible dans le sidekick (accessible dans le groupe **Recherche**). Insérez le composant dans la colonne **Prédicats**.
 
@@ -257,18 +257,18 @@ Pour créer un prédicat de groupe, procédez comme suit :
 
 Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigurés.
 
-### FulltextPredicate   {#fulltextpredicate}
+### FulltextPredicate    {#fulltextpredicate}
 
 | Propriétés | Type | Description |
 |---|---|---|
 | predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `fulltext` |
-| searchCallback | Fonction | Callback for triggering search on event `keyup`. La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch` |
+| searchCallback | Fonction | Rappel pour le déclenchement de la recherche sur le événement `keyup`. La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
 | Propriétés | Type | Description |
 |---|---|---|
-| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `property` |
+| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `property` |
 | propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:title` |
 | defaultValue | Chaîne | Valeur par défaut préremplie. |
 
@@ -276,7 +276,7 @@ Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigur�
 
 | Propriétés | Type | Description |
 |---|---|---|
-| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `path` |
+| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `path` |
 | rootPath | Chaîne | Chemin racine du prédicat. La valeur par défaut est `/content/dam` |
 | pathFieldPredicateName | Chaîne | La valeur par défaut est `folder` |
 | showFlatOption | Booléen | Indicateur pour afficher la case à cocher `search in subfolders`. La valeur par défaut est « true ». |
@@ -285,7 +285,7 @@ Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigur�
 
 | Propriétés | Type | Description |
 |---|---|---|
-| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
+| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
 | propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:content/jcr:lastModified` |
 | defaultValue | Chaîne | Valeur par défaut préremplie |
 
@@ -294,7 +294,7 @@ Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigur�
 | Propriétés | Type | Description |
 |---|---|---|
 | titre | Chaîne | Ajoute un titre supérieur supplémentaire |
-| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
+| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
 | propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:content/metadata/cq:tags` |
 | collapse | Chaîne | Réduire par niveau. La valeur par défaut est `level1` |
 | triggerSearch | Booléen | Indicateur de déclenchement de la recherche lors de la vérification. Par défaut : « false » |
