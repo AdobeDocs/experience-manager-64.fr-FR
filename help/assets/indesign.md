@@ -40,18 +40,18 @@ Pour transférer intégralement des fichiers créés avec Adobe InDesign vers A
 
 ## Fonctionnement de l’extraction {#how-the-extraction-works}
 
-The InDesign Server can be integrated with AEM Assets so that files created with InDesign ( `.indd`) can be uploaded, renditions generated, *all* media extracted (for example, video) and stored as assets:
+L’InDesign Server peut être intégré à AEM Assets de sorte que les fichiers créés avec l’InDesign ( `.indd`) puissent être téléchargés, les rendus générés, *tous* les supports extraits (vidéo, par exemple) et stockés en tant que ressources :
 
 >[!NOTE]
 >
 >Les versions précédentes d’AEM permettaient seulement d’extraire le XMP et la miniature. Désormais, tous les médias peuvent être extraits.
 
-1. Upload your `.indd` file to AEM Assets.
+1. Téléchargez votre fichier `.indd` vers AEM Assets.
 1. Une infrastructure envoie des scripts de commande vers InDesign Server via SOAP (Simple Object Access Protocol).
 
    Ce script de commande permet d’effectuer les opérations suivantes :
 
-   * Retrieve the `.indd` file.
+   * Récupérez le fichier `.indd`.
    * Exécuter des commandes InDesign Server :
 
       * La structure, le texte et tous les fichiers multimédias sont extraits.
@@ -63,11 +63,11 @@ The InDesign Server can be integrated with AEM Assets so that files created with
    >
    >IDML est un format XML qui permet de générer un rendu de *l’intégralité* du contenu d’un fichier InDesign. Il est stocké sous forme d’une archive compressée au format [Zip](https://www.techterms.com/definition/zip).
    >
-   >See [Adobe InDesign Interchange Formats INX and IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8) for further information.
+   >Voir [Formats d’échange d’Adobe InDesign INX et IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8) pour plus d’informations.
 
    >[!CAUTION]
    >
-   >If the InDesign Server is not installed or not configured, then you can still upload an `.indd` file into AEM. However the renditions generated will be limited to `png` and `jpeg`, you will not be able to generate `html`, `idml` or the page renditions.
+   >Si l&#39;InDesign Server n&#39;est pas installé ou configuré, vous pouvez toujours télécharger un fichier `.indd` dans AEM. Cependant, les rendus générés seront limités à `png` et `jpeg`, vous ne pourrez pas générer `html`, `idml` ni les rendus de page.
 
 1. Après l’extraction et la génération du rendu :
 
@@ -75,7 +75,7 @@ The InDesign Server can be integrated with AEM Assets so that files created with
    * Le texte et les fichiers extraits sont stockés dans AEM Assets.
    * Tous les rendus sont stockés dans des AEM Assets, dans la ressource même.
 
-## Intégration d’InDesign Server à AEM   {#integrating-the-indesign-server-with-aem}
+## Intégration d’InDesign Server à AEM    {#integrating-the-indesign-server-with-aem}
 
 Pour intégrer InDesign Server afin de l’utiliser avec AEM Assets, après la configuration de votre proxy, vous devez :
 
@@ -86,7 +86,7 @@ Pour intégrer InDesign Server afin de l’utiliser avec AEM Assets, après la
 
 1. Configurer un [programme de traitement du proxy pour InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### Configuration de InDesign Server   {#installing-the-indesign-server}
+### Configuration de InDesign Server    {#installing-the-indesign-server}
 
 Pour installer et démarrer InDesign Server afin de l’utiliser avec AEM :
 
@@ -112,7 +112,7 @@ Pour installer et démarrer InDesign Server afin de l’utiliser avec AEM :
 
 ### Configuration du workflow AEM Assets {#configuring-the-aem-assets-workflow}
 
-AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several process steps specifically for InDesign:
+AEM Assets dispose d’un workflow préconfiguré **DAM Update Asset**, qui comprend plusieurs étapes de processus spécifiques à l’InDesign :
 
 * [Extraction de médias](#media-extraction)
 * [Extraction de page  ](#page-extraction)
@@ -123,7 +123,7 @@ Après la configuration, le transfert de fichiers InDesign dans AEM Assets (via 
 
 #### Extraction de médias {#media-extraction}
 
-This step controls the extraction of media from the `.indd` file.
+Cette étape contrôle l&#39;extraction du média à partir du fichier `.indd`.
 
 Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]** dans l’étape **[!UICONTROL Extraction de médias]**.
 
@@ -133,7 +133,7 @@ Arguments d’extraction de médias et chemins de scripts
 
 * **Bibliothèque** ExtendScript : Il s’agit d’une simple bibliothèque de méthodes get/post http, requise par les autres scripts.
 
-* **Étendre les scripts**: Vous pouvez spécifier différentes combinaisons de script ici. Si vous souhaitez que vos propres scripts soient exécutés sur le serveur InDesign, enregistrez-les sous `/apps/settings/dam/indesign/scripts`.
+* **Étendre les scripts** : Vous pouvez spécifier différentes combinaisons de script ici. Si vous souhaitez que vos propres scripts soient exécutés sur le serveur InDesign, enregistrez-les sous `/apps/settings/dam/indesign/scripts`.
 
    Pour plus d’informations sur les scripts InDesign, rendez-vous à l’adresse [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
@@ -145,7 +145,7 @@ Le script `ThumbnailExport.jsx` exécuté par l’étape de workflow Extraction 
 
 Vous pouvez configurer l’étape du workflow Miniatures des processus de manière à générer des rendus statiques de différentes tailles. Assurez-vous de ne pas supprimer les valeurs par défaut, car elles sont requises par l’interface utilisateur d’AEM Assets. Enfin, l’étape Processus de suppression du rendu d’aperçus d’image efface le rendu miniature .jpg, car il n’est plus nécessaire.
 
-#### Extraction de page   {#page-extraction}
+#### Extraction de page    {#page-extraction}
 
 Cette opération crée une page AEM à partir des éléments extraits. Un gestionnaire d’extraction est utilisé pour extraire les données d’un rendu (actuellement HTML ou IDML). Ces données sont ensuite utilisées pour créer une page avec PageBuilder.
 
@@ -154,7 +154,7 @@ Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]*
 ![chlimage_1-289](assets/chlimage_1-289.png)
 
 * **Gestionnaire** d&#39;Extractions de page : Dans la liste déroulante, sélectionnez le gestionnaire à utiliser. Un gestionnaire d’extraction fonctionne sur un rendu spécifique, sélectionné par un `RenditionPicker` associé (voir l’API `ExtractionHandler`).
-Par défaut, le gestionnaire d’Extractions d’exportation IDML est disponible. Il fonctionne sur le `IDML` rendu généré à l’étape MediaExtract.
+Par défaut, le gestionnaire d’Extractions d’exportation IDML est disponible. Il fonctionne sur le rendu `IDML` généré à l’étape MediaExtract.
 
 * **Nom** de page : Indiquez le nom que vous souhaitez attribuer à la page résultante. Si vous laissez le champ vide, le nom est « page » (ou une variante si « page » existe déjà).
 
@@ -219,8 +219,8 @@ Pour configurer le nombre de tâches parallèles d’IDS :
    * **[!UICONTROL Nombre max. de tâches parallèles]** - `<*x*>` (conformément au calcul ci-dessus)
 
 1. Enregistrez ces modifications.
-1. Pour activer la prise en charge de plusieurs sessions pour Adobe CS6 et versions ultérieures, cochez la `enable.multisession.name` case sous `com.day.cq.dam.ids.impl.IDSJobProcessor.name configuration`.
-1. Create a [pool of &lt; `*x*>` IDS workers by adding SOAP endpoints to the IDS Worker configuration](#configuring-the-proxy-worker-for-indesign-server).
+1. Pour activer la prise en charge de plusieurs sessions pour Adobe CS6 et versions ultérieures, cochez la case `enable.multisession.name` sous `com.day.cq.dam.ids.impl.IDSJobProcessor.name configuration`.
+1. Créez un [pool de travailleurs &lt; `*x*>` IDS en ajoutant des points de terminaison SOAP à la configuration IDS Worker](#configuring-the-proxy-worker-for-indesign-server).
 
    S’il existe plusieurs machines exécutant InDesign Server, ajoutez les points d’extrémité SOAP (nombre de processeurs par ordinateur -1) pour chaque ordinateur.
 
@@ -232,7 +232,7 @@ Pour configurer le nombre de tâches parallèles d’IDS :
    >
    >En outre, sous la configuration `com.day.cq.dam.ids.impl.IDSPoolImpl.name`, définissez une valeur positive pour le paramètre `max.errors.to.blacklist`, qui détermine le nombre de tentatives pour une tâche avant qu’un IDS ne soit exclu de la liste des gestionnaires de tâches.
    >
-   >By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. Si le programme de traitement est en ligne, il est retiré de la liste bloquée.
+   >Par défaut, après le temps configurable (`retry.interval.to.whitelist.name`) en minutes, le programme de travail IDS est revalidé. Si le programme de traitement est en ligne, il est retiré de la liste bloquée.
 
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
@@ -241,15 +241,15 @@ Pour configurer le nombre de tâches parallèles d’IDS :
 
 Pour InDesign Server 10.0 ou version ultérieure, réalisez les étapes suivantes pour activer la prise en charge multisession.
 
-1. Ouvrez Configuration Manager à partir de votre [!DNL Assets] instance `https://[aem_server]:[port]/system/console/configMgr`.
+1. Ouvrez Configuration Manager à partir de votre instance [!DNL Assets] `https://[aem_server]:[port]/system/console/configMgr`.
 1. Modifiez la configuration de `com.day.cq.dam.ids.impl.IDSJobProcessor.name`.
-1. Select **[!UICONTROL ids.cc.enable]** option, and click **[!UICONTROL Save]**.
+1. Sélectionnez **[!UICONTROL ids.cc.enable]**, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
 >[!NOTE]
 >
->For [!DNL InDesign Server] integration with [!DNL Assets], use a multi-core processor because the session support feature necessary for the integration is not supported on single core systems.
+>Pour l&#39;intégration de [!DNL InDesign Server] à [!DNL Assets], utilisez un processeur multicoeur car la fonction de prise en charge de session nécessaire à l&#39;intégration n&#39;est pas prise en charge sur les systèmes à noyau unique.
 
-## Configuration des informations d’identification du Experience Manager {#configure-aem-credentials}
+## Configurer les informations d&#39;identification du Experience Manager {#configure-aem-credentials}
 
 Vous pouvez modifier les informations d’identification d’administrateur par défaut (nom d’utilisateur et mot de passe) pour accéder au serveur d’InDesigns à partir de votre instance AEM sans interrompre l’intégration au serveur Adobe InDesign.
 
