@@ -11,7 +11,7 @@ ht-degree: 88%
 ---
 
 
-# Assets monitoring best practices {#assets-monitoring-best-practices}
+# Meilleures pratiques de surveillance des ressources {#assets-monitoring-best-practices}
 
 La surveillance dans Adobe Experience Manager (AEM) Assets implique l’observation et le suivi des technologies et processus suivants :
 
@@ -28,20 +28,20 @@ La surveillance dans Adobe Experience Manager (AEM) Assets implique l’observ
 
 Typiquement, la surveillance des ressources AEM peut être effectuée de deux façons : en temps réel ou sur le long terme.
 
-## Live monitoring {#live-monitoring}
+## Surveillance en direct {#live-monitoring}
 
 La surveillance en temps réel est conseillée lors de la phase de test des performances de votre développement ou en cas de charges élevées afin de comprendre les caractéristiques de performance de votre environnement. Typiquement, différents outils peuvent être utilisés pour la surveillance en temps réel. Voici quelques recommandations :
 
-* [Visual VM](https://visualvm.github.io/): Visual VM vous permet de vue des informations détaillées sur la machine virtuelle Java, y compris l&#39;utilisation du processeur et de la mémoire Java. En outre, il vous permet de tester et d’évaluer le code exécuté sur une instance.
+* [Visual VM](https://visualvm.github.io/) : Visual VM vous permet de vue des informations détaillées sur la machine virtuelle Java, y compris l&#39;utilisation du processeur et de la mémoire Java. En outre, il vous permet de tester et d’évaluer le code exécuté sur une instance.
 * [Top](http://man7.org/linux/man-pages/man1/top.1.html) : Top est une commande Linux ouvrant un tableau de bord qui affiche des statistiques d’utilisation, notamment sur le processeur, la mémoire et les E/S. Vous obtenez ainsi une vue d’ensemble de ce qui se produit sur une instance.
-* [Htop](https://hisham.hm/htop/) : Htop est un utilitaire qui permet de visualiser les processus de manière interactive. Il permet de disposer d’informations détaillées sur l’utilisation du processeur et de la mémoire en plus des informations fournies par Top. Htop can be installed on most Linux systems using `yum install htop` or `apt-get install htop`.
+* [Htop](https://hisham.hm/htop/) : Htop est un utilitaire qui permet de visualiser les processus de manière interactive. Il permet de disposer d’informations détaillées sur l’utilisation du processeur et de la mémoire en plus des informations fournies par Top. Htop peut être installé sur la plupart des systèmes Linux en utilisant `yum install htop` ou `apt-get install htop`.
 
-* [Iotop](http://guichaz.free.fr/iotop/) : Iotop fournit un tableau de bord détaillé sur l’utilisation des disques en lecture/écriture. Il fournit des informations détaillées sur les processus qui utilisent les E/S sur les disques ainsi que le volume utilisé. Iotop can be installed on most Linux systems using `yum install iotop` or `apt-get install iotop`.
+* [Iotop](http://guichaz.free.fr/iotop/) : Iotop fournit un tableau de bord détaillé sur l’utilisation des disques en lecture/écriture. Il fournit des informations détaillées sur les processus qui utilisent les E/S sur les disques ainsi que le volume utilisé. Iotop peut être installé sur la plupart des systèmes Linux en utilisant `yum install iotop` ou `apt-get install iotop`.
 
-* [Iftop](http://www.ex-parrot.com/pdw/iftop/) : Iftop affiche des informations détaillées sur l’utilisation des ports ethernet et réseau. Iftop affiche des statistiques par canal de communication sur les entités utilisant Ethernet et la quantité de bande passante utilisée. Iftop can be installed on most Linux systems using `yum install iftop` or `apt-get install iftop`.
+* [Iftop](http://www.ex-parrot.com/pdw/iftop/) : Iftop affiche des informations détaillées sur l’utilisation des ports ethernet et réseau. Iftop affiche des statistiques par canal de communication sur les entités utilisant Ethernet et la quantité de bande passante utilisée. Iftop peut être installé sur la plupart des systèmes Linux en utilisant `yum install iftop` ou `apt-get install iftop`.
 
-* Java Flight Recorder (JFR) : JFR est un outil Oracle pouvant être utilisé gratuitement dans les environnements qui ne sont pas destinés à la production. For more details, see [How to Use Java Flight Recorder to Diagnose CQ Runtime Problems](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
-* Fichier AEM error.log : vous pouvez consulter le fichier AEM error.log pour obtenir plus de détails sur les erreurs enregistrées par le système. Use the command `tail -F quickstart/logs/error.log` to identify errors that you should investigate.
+* Java Flight Recorder (JFR) : JFR est un outil Oracle pouvant être utilisé gratuitement dans les environnements qui ne sont pas destinés à la production. Pour plus d&#39;informations, voir [Comment utiliser l&#39;enregistreur de vol Java pour diagnostiquer les problèmes d&#39;exécution CQ](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
+* Fichier AEM error.log : vous pouvez consulter le fichier AEM error.log pour obtenir plus de détails sur les erreurs enregistrées par le système. Utilisez la commande `tail -F quickstart/logs/error.log` pour identifier les erreurs que vous devez rechercher.
 * [Console d’administration des workflow](../sites-administering/workflows.md) : utilisez la console d’administration des workflow pour suivre les workflow en retard ou bloqués.
 
 Ces outils vous permettent d’obtenir une vue globale des performances de votre instance AEM.
@@ -56,7 +56,7 @@ Ces outils vous permettent d’obtenir une vue globale des performances de votre
 
 La surveillance à long terme d’une instance consiste à surveiller pendant une longue période les mêmes portions de l’instance surveillées en temps réel. Cela implique également de définir des alertes spécifiques à votre environnement.
 
-### Agrégation des journaux et création de rapports {#log-aggregation-and-reporting}
+### Agrégation des journaux et création de rapports  {#log-aggregation-and-reporting}
 
 Plusieurs outils sont disponibles pour l’agrégation des journaux, par exemple, Splunk(TM) et Elastic Search/Logstash/Kabana (ELK). Pour évaluer la disponibilité de votre instance AEM, il est important de comprendre les événements de journal spécifiques à votre système et de créer des alertes basées sur ces événements. Une bonne connaissance de vos pratiques de développement et d&#39;exploitation peut vous aider à mieux comprendre comment ajuster votre processus d&#39;agrégation des journaux pour générer des alertes critiques.
 
@@ -73,7 +73,7 @@ La surveillance de l’environnement implique de surveiller les éléments suiva
 
 Des outils externes sont nécessaires, par exemple NewRelic(TM) et AppDynamics(TM) pour la surveillance de chaque élément. Vous pouvez, avec ces outils, définir des alertes spécifiques à votre système, par exemple, en cas d’utilisation intensive du système, pour la sauvegarde des workflow, en cas d’échec des contrôles de l’intégrité ou d’accès non authentifiés à votre site web. Adobe ne recommande pas un outil plutôt qu’un autre. Choisissez l’outil qui correspond le plus à vos besoins et utilisez-le pour la surveillance des éléments indiqués ici.
 
-#### Surveillance des applications internes {#internal-application-monitoring}
+#### Surveillance des applications internes  {#internal-application-monitoring}
 
 La surveillance des applications internes consiste à surveiller les composants d’application qui constituent la pile AEM, notamment JVM et le référentiel de contenu. Elle inclut également la surveillance via le code d’application personnalisé intégré à la plateforme. En général, elle se fait via les Mbeans JMX qui peuvent être contrôlés directement par de nombreuses et solutions de contrôle populaires telles que SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) et bien d’autres encore. Pour les systèmes ne prenant pas en charge une connexion directe avec JMX, vous pouvez écrire des scripts shell pour extraire les données JMX et les présenter à ces systèmes dans un format intelligible pour eux.
 
@@ -99,7 +99,7 @@ Mémoire
 
 Threads
 
-* MBean: `java.lang:type=Threading`
+* MBean : `java.lang:type=Threading`
 * URL : */system/console/jmx/java.lang:type=Threading*
 * Instances : tous les serveurs
 * Seuil d’alarme : lorsque le nombre de threads est supérieur de 150 % à la valeur de référence.
@@ -113,18 +113,18 @@ Voici quelques paramètres de référence que vous pouvez surveiller pour AEM :
 
 Agents de réplication
 
-* MBean: `com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
+* MBean : `com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
 * URL : */system/console/jmx/com.adobe.granite.replication:type=agent,id=”&lt;NOM_AGENT>”*
 * Instances : un auteur et toutes les instances de publication (pour les agents de purge)
 * Seuil d’alarme : lorsque `QueueBlocked` a la valeur true ou lorsque la valeur de `QueueNumEntries` est supérieure de 150 % à la valeur de référence.
 
 * Définition de l’alarme : une file d’attente est bloquée dans le système, indiquant que la cible de réplication n’est pas active ou qu’elle est hors d’atteinte. Très souvent, les problèmes d’infrastructure ou de réseau provoquent la mise en attente d’un nombre excessif d’entrées, ce qui peut affecter les performances du système.
 
-**Remarque**: Pour les paramètres MBean et URL, remplacez `<AGENT_NAME>` par le nom de l&#39;agent de réplication à surveiller.
+**Remarque** : Pour les paramètres MBean et URL, remplacez  `<AGENT_NAME>` par le nom de l&#39;agent de réplication à surveiller.
 
 Décompte du nombre de sessions
 
-* MBean: `org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
+* MBean : `org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
 * URL : */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=&quot;OakRepository Statistics&quot;,type*=&quot;RepositoryStats&quot;
 * Instances : tous les serveurs
 * Seuil d’alarme : lorsque la valeur des sessions ouvertes dépasse de 50 % la valeur de référence.
@@ -146,7 +146,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * File d’attente de réplication
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean : `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
    * URL : */system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck*
    * Instances : un auteur, tous les serveurs de publication
    * Seuil d’alarme : lorsque l’état n’est pas OK.
@@ -154,7 +154,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * Performances des réponses
 
-   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck `
+   * MBean : `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck `
    * URL : */system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck*
    * Instances : tous les serveurs
    * Durée de l’alarme : lorsque l’état n’est pas OK.
@@ -162,7 +162,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * Performances des requêtes
 
-   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck `
+   * MBean : `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck `
    * URL : */system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck*
    * Instances : un auteur, tous les serveurs de publication
    * Seuil d’alarme : lorsque l’état n’est pas OK.
@@ -178,19 +178,19 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * Erreurs de journal
 
-   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck `
+   * MBean : `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck `
    * URL : */system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck*
    * Instances : tous les serveurs
    * Seuil d’alarme : lorsque l’état n’est pas OK.
    * Définition de l’alarme : les fichiers journaux comportent des erreurs. Vérifiez l’attribut de journal pour en savoir plus sur l’origine du problème.
 
-## Problèmes courants et solutions  {#common-issues-and-resolutions}
+## Problèmes courants et solutions   {#common-issues-and-resolutions}
 
 Si vous rencontrez des problèmes lors du processus de surveillance, voici quelques solutions permettant de résoudre les problèmes courants des instances AEM :
 
-* Si vous utilisez TarMK, exécutez souvent la compression Tar. For more details, see [Maintaining the Repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Vérifiez `OutOfMemoryError` les journaux. Pour plus d’informations, reportez-vous à la section [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
-* Consultez les journaux pour vérifier les références aux requêtes non indexées, ou aux parcours d’arborescence ou d’index. Ils signalent les requêtes non indexées ou indexées de façon inappropriée. For For best practices on optimizing query and indexing performance, see [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+* Si vous utilisez TarMK, exécutez souvent la compression Tar. Pour plus de détails, voir [Maintenance du référentiel](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
+* Vérifiez les journaux `OutOfMemoryError`. Pour plus d’informations, reportez-vous à la section [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
+* Consultez les journaux pour vérifier les références aux requêtes non indexées, ou aux parcours d’arborescence ou d’index. Ils signalent les requêtes non indexées ou indexées de façon inappropriée. Pour connaître les meilleures pratiques relatives à l’optimisation des performances de requête et d’indexation, voir [Bonnes pratiques relatives aux Requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilisez la console d’administration des workflow pour vérifier que vos workflow se comportent comme prévu. Si possible, regroupez plusieurs workflow en un seul.
 * Revoyez la surveillance en temps réel et recherchez toute congestion supplémentaire ou recherchez les processus fortement consommateurs de certaines ressources spécifiques.
 * Vérifiez les points de sortie du réseau client et les points d’entrée au réseau de l’instance AEM, Dispatcher compris. Ce sont souvent des zones de congestion. Pour plus d’informations, reportez-vous à la section [Considérations relatives aux ressources réseau](assets-network-considerations.md).
