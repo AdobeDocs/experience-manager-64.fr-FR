@@ -83,11 +83,11 @@ L’éditeur plein écran fournit :
 * l’accès à diverses [actions](#actions) ;
 * selon le [format](#formats), des options de mise en forme supplémentaires ([texte enrichi](#rich-text)).
 
-### Actions  {#actions}
+### Actions   {#actions}
 
 Les actions suivantes sont également disponibles (pour tous les [formats](#formats)) lorsque l’éditeur plein écran (c’est-à-dire pour le texte sur plusieurs lignes) est ouvert :
 
-* Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text](#plain-text), [Markdown](#markdown))
+* Sélectionnez le [format](#formats) ([Texte enrichi](#rich-text), [Texte brut](#plain-text), [Marquage](#markdown)).
 * [Affichage des statistiques de texte](#viewing-key-statistics)
 * [Chargement du contenu](#uploading-content)
 * [Synchronisation avec le gabarit](#synchronizing-with-master) (lors de la modification d’une variation)
@@ -292,7 +292,7 @@ Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mi
    >* **Markdown** : le fichier ne sera pas visible, mais il sera toujours présent lorsque vous reviendrez au **texte enrichi**.
 
 
-## Gestion des variations  {#managing-variations}
+## Gestion des variations   {#managing-variations}
 
 ### Création d’une variation {#creating-a-variation}
 
@@ -310,7 +310,7 @@ Pour créer une variation, procédez comme suit :
    >
    >Lors de la création d’une variation, c’est toujours le **Maître** qui est copié et non pas la variation ouverte.
 
-### Modification d’une variation  {#editing-a-variation}
+### Modification d’une variation   {#editing-a-variation}
 
 Vous pouvez apporter des modifications au contenu de la variation après avoir :
 
@@ -335,7 +335,7 @@ Pour renommer une variation existante :
 >
 >Cette opération concerne uniquement le **Titre** de la variation.
 
-### Suppression d’une variation  {#deleting-a-variation}
+### Suppression d’une variation   {#deleting-a-variation}
 
 Pour supprimer une variation existante :
 
@@ -363,7 +363,7 @@ Lors de la modification d’une variation, vous pouvez accéder à l’action de
 >
 >La synchronisation fonctionne uniquement sur le type de données **Plusieurs lignes de texte**.
 >
->Le transfert des modifications n’est pas proposé *entre une variation et le **Maître ***.
+>Le transfert des modifications n’est pas proposé *entre une variation et le **Maître***.
 
 1. Ouvrez votre fragment de contenu dans l’éditeur de fragments. Assurez-vous que le **Maître** a été modifié.
 2. Sélectionnez une variation spécifique, puis l’action de synchronisation appropriée à partir soit :
