@@ -23,14 +23,14 @@ Le DCMES (Dublin Core Metadata Element Set) contient 15 éléments de métadonn
 
 Outre le DCMES, il existe d’autres éléments de métadonnées créés par le Dublin Core Initiative. Pour plus d’informations, consultez [Dublin Core Initiative](http://dublincore.org/). 
 
-| Propriétés | Description |
+| Propriété | Description |
 |---|---|
 | contributor | Personne ou entreprise chargée d’apporter des contributions au contenu. |
 | coverage | Emplacement géographique ou période que couvre la ressource. |
 | creator | Personne ou entreprise chargée de la création du contenu. |
 | date | Date ou période associée à la ressource. |
 | description | Informations supplémentaires sur la ressource. |
-| format | Format de fichier, support physique ou dimensions de la ressource. AEM utilise le format dc:format pour indiquer le type mime de la ressource. |
+| format | Format de fichier, support physique ou dimensions de la ressource. aem utilise le format dc:format pour indiquer le type mime de la ressource. |
 | identifier | Référence unique à la ressource. |
 | language | Langue de la ressource (« en » pour l’anglais, par exemple). |
 | publisher | Personne ou entreprise chargée de rendre la ressource disponible. |
