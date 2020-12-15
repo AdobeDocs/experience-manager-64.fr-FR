@@ -1,5 +1,5 @@
 ---
-title: 'Recherche de ressources dans AEM '
+title: Recherche de ressources dans AEM
 description: Découvrez comment rechercher les ressources souhaitées dans AEM à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 contentOwner: AG
 translation-type: tm+mt
@@ -34,7 +34,7 @@ Vous pouvez effectuer une recherche selon les options suivantes (prédicats) :
 
 Vous pouvez personnaliser le panneau Filtres et ajouter/supprimer des prédicats de recherche à l’aide des [facettes de recherche](search-facets.md). Pour afficher le panneau Filtres, procédez comme suit :
 
-1. In the Assets user interface, tap/click ![search_icon](assets/search_icon.png) from the toolbar to display the Omnisearch box.
+1. Dans l’interface utilisateur Ressources, appuyez/cliquez sur ![icône_de_recherche](assets/search_icon.png) dans la barre d’outils pour afficher la zone Omnisearch.
 1. Saisissez le terme à rechercher et appuyez ensuite sur Entrée. Vous pouvez également appuyer sur la touche Entrée, sans saisir aucun terme à rechercher. Ne saisissez aucun espace avant le terme, sans quoi la recherche ne fonctionnera pas.
 
 1. Appuyez/cliquez sur l’icône de navigation globale. Le panneau Filtres s’affiche.
@@ -85,7 +85,7 @@ Utilisez le prédicat **État** pour rechercher des ressources en fonction de di
 
 Par exemple, si vous surveillez la publication des ressources, vous pouvez utiliser l’option appropriée pour rechercher les ressources qui sont publiées.
 
-![publish](assets/publish.png)
+Publier sur ![](assets/publish.png)
 
 Si vous surveillez l’état de révision des ressources, utilisez l’option appropriée pour trouver les ressources qui sont approuvées ou en attente d’approbation.
 
