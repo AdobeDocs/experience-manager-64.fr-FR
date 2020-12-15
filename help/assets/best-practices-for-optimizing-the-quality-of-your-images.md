@@ -50,7 +50,7 @@ L’accentuation des images est l’aspect le plus complexe du contrôle des ima
 
 L’article technique des bonnes pratiques [Accentuation des images dans Adobe Scene7 Publishing System et sur le serveur d’images](/help/assets/assets/s7_sharpening_images.pdf) s’applique aussi à AEM.
 
-Voir aussi [Accentuation d’une image avec un masque](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)flou.
+Voir aussi [Accentuation d’une image avec un masque flou ](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
 Avec AEM, vous pouvez accentuer les images lors de l’assimilation, lors de la distribution, ou les deux. Néanmoins, dans la plupart des cas, vous devez accentuer les images à l’aide d’une seule méthode et non des deux. L’accentuation des images lors de la distribution, sur une URL, produit généralement les meilleurs résultats.
 
@@ -89,7 +89,7 @@ Augmentez graduellement la valeur de 1,75 à 4. Si l’accentuation ne correspon
 
 Laissez le paramètre monochrome sur 0.
 
-### Bonnes pratiques relatives à la compression JPEG (&amp;qlt=) {#best-practices-for-jpef-compression-qlt}
+### Bonnes pratiques relatives à la compression JPEG (&amp;qlt=)  {#best-practices-for-jpef-compression-qlt}
 
 * Ce paramètre contrôle la qualité du codage JPG. Une valeur élevée produit une image de meilleure qualité, mais un fichier plus volumineux ; en revanche, une valeur faible signifie une image de qualité inférieure mais un fichier plus petit. Ce paramètre est compris entre 0 et 100.
 * Pour optimiser la qualité, ne définissez pas la valeur du paramètre sur 100. La différence entre une valeur de 90, 95 ou 100 est presque imperceptible. Par contre, la valeur 100 augmente de manière inutile la taille du fichier image. En conséquence, pour optimiser la qualité, mais éviter que les fichiers image deviennent trop volumineux, définissez `qlt=<value>` sur 90 ou 95.
