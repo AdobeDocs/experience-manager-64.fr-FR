@@ -24,7 +24,7 @@ ht-degree: 77%
 + [Recommandations relatives aux ressources](best-practices-for-assets.md)
 + Utiliser AEM Assets {#using}
    + [Expérience page d&#39;accueil AEM Assets](assets-home-page.md)
-   + [Recherche de ressources dans AEM ](search-assets.md)
+   + [Recherche de ressources dans AEM](search-assets.md)
    + [Recherche en texte intégral GQL](gql-search.md)
    + [Ressources multilingues](multilingual-assets.md)
    + [Utilisation de ressources Adobe Stock dans AEM Assets](aem-assets-adobe-stock.md)
@@ -73,7 +73,7 @@ ht-degree: 77%
    + [Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)](invalidate-cdn-cached-content.md)
    + [Installation de Feature Pack 18912 pour la migration des ressources en vrac](bulk-ingest-migrate.md)
    + [Utilisation des sélecteurs](working-with-selectors.md)
-+ Étendre les ressources {#extending}
++ Étendre les actifs {#extending}
    + [Personnalisation et extension de ressources](extending-assets.md)
    + [Traitement des fichiers à l’aide de gestionnaires de médias et de workflows](media-handlers.md)
    + [Extension de la Recherche des ressources](searchx.md)
@@ -82,7 +82,7 @@ ht-degree: 77%
    + [Extension de l’Éditeur de ressources](asseteditorx.md)
    + [API HTTP Assets](mac-api-assets.md)
    + [Développement d’un proxy Assets](proxy.md)
-+ Administration des ressources {#administer}
++ Administrer les ressources {#administer}
    + [Formats pris en charge par Assets](assets-formats.md)
    + [Facettes de recherche](search-facets.md)
    + [Gestion des métadonnées pour les ressources](metadata.md)
@@ -139,7 +139,7 @@ ht-degree: 77%
    + [Fragments de contenu – considérations sur la suppression](content-fragments-delete.md)
    + [Fragments de contenu - Markdown](content-fragments-markdown.md)
    + [Création de projets de traduction pour des fragments de contenu](creating-translation-projects-for-content-fragments.md)
-+ Manage Assets {#managing}
++ Gérer les ressources {#managing}
    + [Gestion des ressources à l’aide de l’interface utilisateur optimisée pour les écrans tactiles](managing-assets-touch-ui.md)
    + [Gestion de plusieurs ressources et collections](managing-multiple-assets.md)
    + [Sélecteur de ressources](asset-selector.md)
