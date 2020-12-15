@@ -15,9 +15,9 @@ ht-degree: 93%
 
 À l’aide du module de démonstration, vous pouvez permettre à Adobe Asset Insights de capturer les données d’un exemple de page web et de générer des informations pour cette page.
 
-## Utilisation d’AEM Assets Insights avec un exemple de page web  {#using-aem-assets-insights-with-sample-web-page}
+## Utilisation d’AEM Assets Insights avec un exemple de page web   {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configure Asset Insights using the instructions in [Configuring Asset Insights](touch-ui-configuring-asset-insights.md).
+1. Configurez Asset Insights en suivant les instructions de la section [Configuration de Asset Insights](touch-ui-configuring-asset-insights.md).
 1. Téléchargez le module d’exemple AEM Assets ci-dessous et installez-le à partir du gestionnaire de modules CRXDE.
 
    [Obtenir le fichier](assets/insightsdemo.zip)
