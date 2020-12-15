@@ -20,7 +20,7 @@ ht-degree: 90%
 
 # Prévisualisation de ressources Dynamic Media {#previewing-assets}
 
-You can use **[!UICONTROL Preview]** to see how a Dynamic Media digital asset looks when it is viewed by a customer in their own web browser. The default embedded, cross-device viewer that is assigned to the asset is used for the **[!UICONTROL Preview]**.
+Vous pouvez utiliser **[!UICONTROL Prévisualisation]** pour voir à quoi ressemble un fichier numérique Dynamic Media lorsqu’il est affiché par un client dans son propre navigateur Web. La visionneuse multipériphériques incorporée par défaut affectée à la ressource est utilisée pour la **[!UICONTROL Prévisualisation]**.
 
 Une visionneuse est un ensemble de paramètres ou de « paramètres prédéfinis », tels que la taille d’affichage de la visionneuse, le comportement du zoom, les modèles de couleurs, les bordures et les polices, qui déterminent la manière dont les utilisateurs voient le contenu multimédia enrichi sur leurs écrans d’ordinateur et appareils mobiles.
 
@@ -35,7 +35,7 @@ Outre l’utilisation de la fonction de prévisualisation dédiée pour la vidé
 
 **Prévisualisation d’une ressource**:
 
-1. From **Adobe Experience Manager**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Asset]s **, then**[!UICONTROL Files ]**to access assets.
+1. À partir de **Adobe Experience Manager**, sur la page **[!UICONTROL Navigation]**, appuyez sur **[!UICONTROL Asset]s**, puis **[!UICONTROL Files]** pour accéder aux ressources.
 1. Dans le coin supérieur droit de la page, dans la liste déroulante **[!UICONTROL Afficher]**, appuyez sur **[!UICONTROL Mode Liste]**.
 1. (Facultatif) Utilisez la colonne **[!UICONTROL Type]** pour trier les ressources en fonction du type que vous souhaitez prévisualiser.
 1. Sous la colonne **[!UICONTROL Titre]**, cliquez sur le nom du titre (et non sur l’image miniature) de la ressource à prévisualiser.
