@@ -41,30 +41,30 @@ Pour activer la propagation des modifications apportées aux métadonnées aux r
 
    ![chlimage_1-346](assets/chlimage_1-346.png)
 
-## Enable XMP writeback for specific renditions {#enabling-xmp-writeback-for-specific-renditions}
+## Activer l&#39;écriture différée XMP pour des rendus spécifiques {#enabling-xmp-writeback-for-specific-renditions}
 
 Pour laisser la fonction Écriture différée XMP propager les modifications de métadonnées à des rendus spécifiques, spécifiez ces rendus à l’étape de workflow Écriture différée XMP du workflow Écriture différée des métadonnées de gestion des actifs numériques. Par défaut, cette étape est configurée avec le rendu d’origine.
 
 Pour que la fonction Écriture différée XMP propage les métadonnées aux miniatures de rendu 140.100.png et 319.319.png, procédez comme suit :
 
-1. In Experience Manager, navigate to **[!UICONTROL Tools > Workflow > Models]**.
-1. From the [!UICONTROL Models] page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
+1. Dans le Experience Manager, accédez à **[!UICONTROL Outils > Processus > Modèles]**.
+1. Dans la page [!UICONTROL Modèles], ouvrez le modèle de flux de travaux **[!UICONTROL DAM Metadata Writeback]**.
 1. Sur la page de propriétés **[!UICONTROL Écriture différée des métadonnées de gestion des actifs numériques]**, ouvrez l’étape **[!UICONTROL Processus d’écriture différée XMP]**.
 1. Dans la boîte de dialogue **[!UICONTROL Propriétés des étapes]**, appuyez/cliquez sur l’onglet **[!UICONTROL Processus]**.
-1. In the **[!UICONTROL Arguments]** box, add `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`. Tap/click **[!UICONTROL OK]**.
+1. Dans la zone **[!UICONTROL Arguments]**, ajoutez `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`. Appuyez/cliquez sur **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
-1. To regenerate the pyramid TIFF renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata Writeback workflow.
-Les rendus PTIFF ne sont créés et stockés que localement en mode hybride Contenu multimédia dynamique. Enregistrez le workflow.
+1. Pour régénérer les rendus TIFF pyramidaux pour les images Dynamic Media avec les nouveaux attributs, ajoutez l’étape **[!UICONTROL Fichiers d’image de processus de Dynamic Media]** au flux de travaux d’enregistrement des métadonnées DAM.
+Les rendus PTIFF sont uniquement créés et stockés localement en mode Dynamic Media hybride. Enregistrez le workflow.
 
-The metadata changes are propagated to the renditions `thumbnail.140.100.png` and `thumbnail.319.319.png` of the asset, and not the others.
+Les modifications de métadonnées sont propagées aux rendus `thumbnail.140.100.png` et `thumbnail.319.319.png` de la ressource, et non aux autres.
 
 >[!NOTE]
 >
->For XMP writeback issues in 64 bit Linux, see [How to enable XMP write-back on 64-bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+>Pour XMP problèmes d’écriture différée sous Linux 64 bits, voir [Comment activer l’écriture différée XMP sur RedHat Linux 64 bits](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
->For more information about supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
+>Pour plus d’informations sur les plateformes prises en charge, voir [XMP conditions préalables à l’écriture différée des métadonnées](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
 ## Filtrage des métadonnées XMP {#filtering-xmp-metadata}
 
@@ -76,7 +76,7 @@ Le filtrage par liste autorisée des métadonnées XMP résout le problème en v
 
 >[!NOTE]
 >
->Le filtrage fonctionne uniquement pour les propriétés dérivées des sources XMP dans les binaires des ressources. Pour les propriétés dérivées de sources autres que XMP, comme les formats EXIF et IPTC, le filtrage ne fonctionne pas. Par exemple, la date de création de la ressource est stockée dans la propriété appelée `CreateDate` dans EXIF TIFF. AEM stores this value in the metadata field named `exif:DateTimeOriginal`. Comme la source est autre que XMP, le filtrage ne fonctionne pas sur cette propriété.
+>Le filtrage fonctionne uniquement pour les propriétés dérivées des sources XMP dans les binaires des ressources. Pour les propriétés dérivées de sources autres que XMP, comme les formats EXIF et IPTC, le filtrage ne fonctionne pas. Par exemple, la date de création de la ressource est stockée dans la propriété appelée `CreateDate` dans EXIF TIFF. aem stocke cette valeur dans le champ de métadonnées `exif:DateTimeOriginal`. Comme la source est autre que XMP, le filtrage ne fonctionne pas sur cette propriété.
 
 1. Ouvrez Configuration Manager à partir de `https://[aem_server]:[port]/system/console/configMgr`.
 1. Ouvrez la configuration **[!UICONTROL Filtre XMP de gestion des actifs numériques Adobe CQ]**.
@@ -84,8 +84,8 @@ Le filtrage par liste autorisée des métadonnées XMP résout le problème en v
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. To filter out blocked XMP properties after applying filtering via allowed list, specify those in the **[!UICONTROL Blocked XML Names for XMP filtering]** box. Enregistrez les modifications.
+1. Pour filtrer les propriétés XMP bloquées après avoir appliqué le filtrage par liste autorisée, spécifiez celles qui se trouvent dans la zone **[!UICONTROL Noms XML bloqués pour XMP filtrage]**. Enregistrez les modifications.
 
    >[!NOTE]
    >
-   >L’option **[!UICONTROL Appliquer la liste bloquée aux propriétés XMP]** est sélectionnée par défaut. En d’autres termes, le filtrage à l’aide d’une liste bloquée est activé par défaut. To disable such filtering, deselect the **[!UICONTROL Apply Blocklist to XMP Properties]** option.
+   >L’option **[!UICONTROL Appliquer la liste bloquée aux propriétés XMP]** est sélectionnée par défaut. En d’autres termes, le filtrage à l’aide d’une liste bloquée est activé par défaut. Pour désactiver ce filtrage, désélectionnez l’option **[!UICONTROL Appliquer la Liste bloquée aux propriétés XMP]**.
