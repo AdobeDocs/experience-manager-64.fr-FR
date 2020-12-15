@@ -23,7 +23,7 @@ En résumé, les facettes de recherche permettent de rechercher des ressources d
 
 Par exemple, si vous recherchez une image, vous pouvez indiquer si vous souhaitez une image bitmap ou vectorielle. Vous pouvez réduire davantage le champ de recherche en spécifiant le type MIME de l’image. De la même façon, si vous recherchez des documents, vous pouvez spécifier le format, par exemple PDF ou MS Word.
 
-## Ajout d’un prédicat {#adding-a-predicate}
+## Ajout d’un prédicat  {#adding-a-predicate}
 
 Les facettes de recherche qui apparaissent dans le panneau Filtres sont définies dans le formulaire de recherche sous-jacent à l’aide de prédicats. Pour afficher d’autres facettes, ajoutez des prédicats au formulaire par défaut ou utilisez un formulaire personnalisé qui comprend les facettes de votre choix.
 
@@ -38,10 +38,10 @@ Pour des recherches de texte intégral, ajoutez le prédicat Texte intégral au 
 
    >[!NOTE]
    >
-   >Pour utiliser la fonctionnalité de recherche de dossiers du rail **de recherche d’administration des** ressources préconfiguré à partir d’une version AEM antérieure, effectuez les opérations suivantes :
+   >Pour utiliser la fonctionnalité de recherche de dossiers du **rail de recherche d&#39;administration des ressources** préconfiguré à partir d&#39;une version AEM antérieure, effectuez les opérations suivantes :
    > 
    >1. Accédez à */conf/global/settings/dam/search/facets/assets/jcr:content/items* dans CRX-DE.
-   >1. Supprimez le noeud de **type** .
+   >1. Supprimez le noeud **type**.
    >1. Dans le chemin */libs/settings/dam/search/facets/assets/jcr:content/items*, copiez les nœuds **asset, directory, typeor, excludepaths** et **search type** dans le chemin d’accès mentionné à l’étape 1.
    >1. Enregistrez les modifications.
 
@@ -80,7 +80,7 @@ Pour des recherches de texte intégral, ajoutez le prédicat Texte intégral au 
 1. Accédez au panneau Rechercher dans l’interface utilisateur d’Assets. Le prédicat Propriété est ajouté au panneau.
 1. Dans la zone de texte, saisissez une description de la ressource à rechercher. Saisissez par exemple « Adobe ». Lorsque vous effectuez une recherche, les ressources dont la description correspond à « Adobe » sont répertoriées dans les résultats de la recherche.
 
-## Ajout d’un prédicat Options {#adding-an-options-predicate}
+## Ajout d’un prédicat Options  {#adding-an-options-predicate}
 
 Le prédicat Options permet d’ajouter des options de recherche multiples dans le panneau Filtres. Vous pouvez choisir une ou plusieurs options dans le panneau Filtres pour rechercher des ressources. Par exemple, pour rechercher des actifs en fonction du type de fichier, configurez des options telles que Images, Multimédia, Documents et Archives dans le formulaire de recherche. Une fois ces options configurées, la recherche est effectuée sur les ressources de type GIF, JPEG, PNG, etc. lorsque vous sélectionnez l’option Images dans le panneau Filtres.
 
@@ -123,7 +123,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 1. Utilisez l’une des méthodes suivantes :
 
    * Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez le chemin du fichier JSON où sont définis les nœuds des options et spécifiez les paires clé-valeur correspondantes.
-   * Tap ![Add icon](assets/do-not-localize/aem_assets_add_icon.png) next to the Options field to specify the display text and value for the options you want to supply in the Filters panel. To add another option, tap/click ![Add icon](assets/do-not-localize/aem_assets_add_icon.png) and repeat the step.
+   * Appuyez sur ![Ajouter l&#39;icône](assets/do-not-localize/aem_assets_add_icon.png) en regard du champ Options pour spécifier le texte d&#39;affichage et la valeur des options à fournir dans le panneau Filtres. Pour ajouter une autre option, appuyez/cliquez sur ![Ajouter l’icône](assets/do-not-localize/aem_assets_add_icon.png) et répétez l’étape.
 
 1. Assurez-vous que l’option **[!UICONTROL Sélection simple]** est désactivée pour permettre à l’utilisateur de sélectionner plusieurs options à la fois pour les types de fichiers (Images, Documents, Multimédia et Archives, par exemple). Si vous choisissez **[!UICONTROL Sélection simple]**, l’utilisateur ne peut sélectionner qu’une seule option à la fois pour les types de fichiers.
 
@@ -134,7 +134,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 1. Dans le champ **Description**, saisissez une description facultative, puis cliquez sur **[!UICONTROL Terminé]**.
 1. Accédez au panneau Rechercher. Le prédicat Options est ajouté au panneau **Rechercher**. Les options proposées pour **[!UICONTROL Types de fichiers]** sont présentées sous la forme de cases à cocher.
 
-## Ajout d’un prédicat de propriété à plusieurs valeurs {#adding-a-multi-value-property-predicate}
+## Ajout d’un prédicat de propriété à plusieurs valeurs  {#adding-a-multi-value-property-predicate}
 
 Le prédicat de propriété à plusieurs valeurs vous permet de rechercher plusieurs valeurs dans des ressources. Supposons que vous disposiez des images de plusieurs produits dans AEM Assets et que les métadonnées de chaque image comprennent un numéro de SKU qui est associé au produit. Vous pouvez utiliser ce prédicat pour rechercher des images de produit sur la base de plusieurs numéros de SKU.
 
@@ -147,7 +147,7 @@ Le prédicat de propriété à plusieurs valeurs vous permet de rechercher plusi
 1. Accédez au panneau Filtres dans l’interface utilisateur d’Assets. Le prédicat **[!UICONTROL Propriété à plusieurs valeurs]** est ajouté au panneau.
 1. Indiquez plusieurs valeurs dans le champ Valeur multiple, en les séparant par des délimiteurs, puis effectuez la recherche. Le prédicat récupère une correspondance de texte exacte pour les valeurs que vous avez spécifiées.
 
-## Ajout d’un prédicat Balises {#adding-a-tags-predicate}
+## Ajout d’un prédicat Balises  {#adding-a-tags-predicate}
 
 Le prédicat Balise vous permet d’effectuer des recherches de ressources basées sur des balises. Par défaut, AEM Assets recherche une ou plusieurs correspondances de balise dans les ressources en fonction des balises que vous avez spécifiées. En d’autres termes, la requête de recherche effectue une opération OR à l’aide des balises indiquées. Cependant, vous pouvez utiliser l’option de correspondance de toutes les balises pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
@@ -172,7 +172,7 @@ Le prédicat Balise vous permet d’effectuer des recherches de ressources basé
 
 1. Sélectionnez **[!UICONTROL Correspondre à tous les critères]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
-## Ajout d’autres prédicats   {#adding-other-predicates}
+## Ajout d’autres prédicats    {#adding-other-predicates}
 
 Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous pouvez ajouter les autres prédicats suivants au panneau Rechercher :
 
@@ -193,7 +193,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
 | [!UICONTROL État d’expiration] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur état d’expiration. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Description</li></ul> |
 | [!UICONTROL Masqué] | Prédicat de recherche permettant de définir une propriété de champ masqué pour rechercher des ressources. | <ul><li>Nom de la propriété</li><li>Valeur de la propriété</li><li>Description</li></ul> |
 
-## Restauration de facettes de recherche par défaut {#restoring-default-search-facets}
+## Restauration de facettes de recherche par défaut  {#restoring-default-search-facets}
 
 Par défaut, une icône représentant un cadenas s’affiche devant **[!UICONTROL Rail de recherche d’administrateurs de ressources]** sur la page **[!UICONTROL Formulaires de recherche]**. L’icône représentant un cadenas disparaît lorsque vous ajoutez des facettes de recherche au formulaire, ce qui indique que le formulaire par défaut a été modifié.
 
@@ -204,7 +204,7 @@ L’icône de cadenas en regard d’une option de la page Formulaires de recherc
 Pour restaurer la facette de recherche par défaut, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]** sur la page **[!UICONTROL Formulaires de recherche]**.
-1. Tap **[!UICONTROL Delete]** ![deleteoutline](assets/deleteoutline.png) in the toolbar.
+1. Appuyez sur **[!UICONTROL Supprimer]** ![deleteoutline](assets/deleteoutline.png) dans la barre d’outils.
 1. Dans la boîte de dialogue de confirmation, appuyez sur **[!UICONTROL Supprimer]** pour supprimer les modifications personnalisées.
 
    Après avoir supprimé les modifications personnalisées apportées aux facettes de recherche, l’icône représentant un cadenas réapparaît devant **[!UICONTROL Rail de recherche d’administrateurs de ressources]** sur la page **[!UICONTROL Formulaires de recherche]**.
