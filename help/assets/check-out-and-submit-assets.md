@@ -19,7 +19,7 @@ Pour pouvoir extraire ou archiver des ressources, vous devez disposer d&#39;un a
 
 Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser les modifications apportées par un auteur lorsque plusieurs utilisateurs issus de plusieurs équipes collaborent à la modification des workflows.
 
-## Fichiers d&#39;extraction {#checking-out-assets}
+## Extraction de ressources {#checking-out-assets}
 
 1. Dans l’interface utilisateur Ressources, sélectionnez la ressource que vous souhaitez extraire. Vous pouvez également sélectionner plusieurs fichiers à extraire.
 
