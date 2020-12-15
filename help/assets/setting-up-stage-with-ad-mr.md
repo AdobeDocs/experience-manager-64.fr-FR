@@ -18,7 +18,7 @@ ht-degree: 91%
 ---
 
 
-# Configuration d’une étape standard avec Autodesk Maya et Mental Ray {#setting-up-a-standard-stage-with-autodesk-maya-and-mental-ray}
+# Configuration d’une étape standard avec Autodesk Maya et Mental Ray  {#setting-up-a-standard-stage-with-autodesk-maya-and-mental-ray}
 
 1. Dans Maya, créez une nouvelle scène vide.
 1. Créez une référence (temporaire) à un modèle représentatif. Ceci permet de faciliter l’évaluation de l’éclairage, la configuration des caméras, ainsi que celle du convertisseur.
@@ -43,15 +43,15 @@ ht-degree: 91%
 
    Configurez les paramètres de rendu d’après les suggestions suivantes :
 
-   * **[!UICONTROL Onglet courant]**
+   * **** Courant
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
+      Décochez la case **[!UICONTROL canal Alpha (masque)]** pour toutes les caméras de rendu.
 
    * **[!UICONTROL Onglet Qualité]**
 
-      * **[!UICONTROL Qualité]** globale `- 0.5` ou moins
-      * **[!UICONTROL Mode]** Diffuse Indirecte (GI) - `Final Gather`
-      * **[!UICONTROL Taille]** du filtre - `2.0`, `2.0`
+      * **** `- 0.5` Qualité globale ou moins
+      * **[!UICONTROL Mode]**  Diffuse Indirecte (GI) -  `Final Gather`
+      * **[!UICONTROL Taille]**  du filtre -  `2.0`,  `2.0`
    * Définissez le rendu de la scène selon les tailles de l’image type que vous comptez utiliser. Si nécessaire, affinez les lumières, ou les paramètres de rendu ou les deux pour parvenir au résultat souhaité.
 
        Gardez à l’esprit que le rendu avec Mental Ray, à l’aide de l’éclairage basé par image, est très lent et nécessite une utilisation importante du processeur. Adobe recommande de configurer les paramètres de qualité au niveau le plus faible, qui sont toujours capables de produire la qualité de rendu souhaité.
@@ -66,6 +66,6 @@ ht-degree: 91%
 
    Si Autodesk® Maya® n’est pas configuré sur le serveur AEM, exportez un FBX depuis Maya et chargez-le dans AEM.
 
-1. Ouvrez les Propriétés de ressource dans AEM. Set **[!UICONTROL Title]** to a suitable string that will appear in the **[!UICONTROL Stage Selector]** drop-down list. Vérifiez que **[!UICONTROL Classe]** est définie sur **[!UICONTROL Étape 3D]**. Enregistrez et fermez.
+1. Ouvrez les Propriétés de ressource dans AEM. Définissez **[!UICONTROL Title]** sur une chaîne appropriée qui apparaîtra dans la liste déroulante **[!UICONTROL Sélecteur d’état]**. Vérifiez que **[!UICONTROL Classe]** est définie sur **[!UICONTROL Étape 3D]**. Enregistrez et fermez.
 1. Ouvrez une ressource 3D, sélectionnez la nouvelle étape, et vérifiez qu’elle affiche un aperçu et présente un rendu comme prévu.
 
