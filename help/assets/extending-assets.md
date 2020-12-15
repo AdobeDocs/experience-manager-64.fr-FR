@@ -11,7 +11,7 @@ ht-degree: 94%
 ---
 
 
-# Personnalisation et extension de ressources {#customizing-and-extending-assets}
+# Personnalisation et extension de ressources  {#customizing-and-extending-assets}
 
 L’Éditeur de ressources est le point d’accès principal que les utilisateurs d’un site web Adobe Enterprise Manager (AEM) utiliseront pour rechercher, afficher et manipuler les ressources numériques dans votre référentiel.
 
@@ -26,7 +26,7 @@ Les aspects suivants de la fonctionnalité peuvent être adaptés ou développé
 * [Développement d’un proxy Assets](proxy.md)
 * [Pratiques recommandées pour la configuration d’ImageMagick](best-practices-for-imagemagick.md)
 
-## Personnalisation de l’apparence et du comportement {#customizing-the-look-and-feel}
+## Personnalisation de l’apparence et du comportement  {#customizing-the-look-and-feel}
 
 Les aspects suivants de l’aspect de l’éditeur de ressources peuvent être personnalisés :
 
@@ -34,7 +34,7 @@ Les aspects suivants de l’aspect de l’éditeur de ressources peuvent être p
 * Couleurs et polices : vous pouvez changer les couleurs et polices de l’interface.
 * Code HTML : pour une personnalisation plus approfondie, vous pouvez modifier le code HTML sous-jacent qui définit les interfaces.
 
-## Personnalisation des rendus {#customizing-renditions}
+## Personnalisation des rendus  {#customizing-renditions}
 
 Dans la terminologie AEM Assets, un rendu est la forme dans laquelle une ressource est présentée. En général, une ressource particulière peut posséder plusieurs rendus. Par exemple, une image en couleur peut avoir un rendu dans sa taille d’origine, une autre à un format réduit et une autre à la fois dans un format réduit et un format converti en niveaux de gris.
 
