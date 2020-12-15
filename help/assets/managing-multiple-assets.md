@@ -11,7 +11,7 @@ ht-degree: 77%
 ---
 
 
-# Manage multiple assets and collections {#managing-multiple-assets-and-collections}
+# Gérer plusieurs ressources et collections {#managing-multiple-assets-and-collections}
 
 Découvrez comment modifier les métadonnées de plusieurs ressources et collections simultanément pour propager rapidement les modifications courantes des métadonnées.
 
@@ -28,7 +28,7 @@ Pour personnaliser la page des propriétés de métadonnées, notamment ajouter,
 >
 >Les méthodes de modification en masse fonctionnent pour les ressources disponibles dans un dossier ou une collection. Pour les fichiers disponibles dans plusieurs dossiers ou qui correspondent à un critère commun, il est possible de mettre à jour les métadonnées en bloc à partir des résultats de la recherche de ressources.
 
-## Edit metadata properties of multiple assets {#editing-metadata-properties-of-multiple-assets}
+## Modifier les propriétés de métadonnées de plusieurs fichiers {#editing-metadata-properties-of-multiple-assets}
 
 1. Dans l’interface utilisateur Ressources, accédez à l’emplacement des ressources à modifier.
 1. Sélectionnez les ressources dont vous souhaitez modifier les propriétés communes.
@@ -61,7 +61,7 @@ Pour éviter une situation similaire à DOS, AEM limite le nombre de paramètres
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-To change the limit, access **[!UICONTROL Tools > Operations > Web Console]** and change the value of [!UICONTROL Maximum POST Parameters] in [!UICONTROL Apache Sling Request Parameter Handling] OSGi configuration.
+Pour modifier la limite, accédez à **[!UICONTROL Outils > Opérations > Console Web]** et modifiez la valeur de [!UICONTROL Paramètres de POST maximum] dans [!UICONTROL Gestion des paramètres de requête Apache Sling] configuration OSGi.
 
 >[!MORELIKETHIS]
 >
