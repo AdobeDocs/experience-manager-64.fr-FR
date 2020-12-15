@@ -11,7 +11,7 @@ ht-degree: 77%
 ---
 
 
-# Intégration des ressources avec Flux d’activités {#integrating-assets-with-activity-stream}
+# Intégration des ressources avec Flux d’activités  {#integrating-assets-with-activity-stream}
 
 Adobe Experience Manager (AEM) Les utilisateurs de ressources effectuent de nombreuses actions, telles que la création, le téléchargement et la suppression de ressources. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes actions réalisées par un utilisateur. Cette section décrit les fonctionnalités d’enregistrement d’AEM ainsi que la procédure de configuration d’AEM pour enregistrer des événements spécifiques.
 
@@ -39,9 +39,9 @@ Il est possible de configurer l’enregistrement des événements suivants :
 * Sous-ressource mise à jour (SUBASSET_UPDATED)
 * Sous-ressource supprimée (SUBASSET_REMOVED)
 
-## Configuration de l’enregistrement d’événements AEM Assets {#configuring-aem-assets-events-recording}
+## Configuration de l’enregistrement d’événements AEM Assets  {#configuring-aem-assets-events-recording}
 
-The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to the AEM Assets Event Recorder tuning. Pour configurer l’enregistreur de Événements AEM Assets, procédez comme suit :
+La [console Web](/help/sites-deploying/configuring-osgi.md) permet d&#39;accéder au réglage de l&#39;enregistreur de Événement AEM Assets. Pour configurer l’enregistreur de Événements AEM Assets, procédez comme suit :
 
 1. Accédez à la **[!UICONTROL console web]**.
 
