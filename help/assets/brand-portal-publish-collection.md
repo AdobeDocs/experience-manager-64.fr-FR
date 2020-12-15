@@ -19,7 +19,7 @@ Si vous apportez des modifications ultérieures à la collection d’origine dan
 
 >[!NOTE]
 >
->Les fragments de contenu ne peuvent pas être publiés sur Brand Portal. Therefore, if you select content fragment(s) on AEM Author, then **[Publish to Brand Portal]** action is not available.
+>Les fragments de contenu ne peuvent pas être publiés sur Brand Portal. Par conséquent, si vous sélectionnez des fragments de contenu sur l’auteur AEM, l’action **[Publier sur le portail de marque]** n’est pas disponible.
 >
 >Si des collections contenant des fragments de contenu sont publiées sur Brand Portal à partir de l’auteur AEM, alors tout le contenu du dossier, excepté les fragments de contenu, est répliqué sur l’interface Brand Portal.
 
@@ -48,7 +48,7 @@ Vous pouvez annuler la publication des collections que vous publiez depuis AEM A
 
    ![select_collection-1](assets/select_collection-1.png)
 
-2. From the toolbar, tap/click the **[!UICONTROL Remove from Brand Portal]** icon.
+2. Dans la barre d’outils, appuyez/cliquez sur l’icône **[!UICONTROL Supprimer de la marque Portal]**.
 
    ![remove_from_bp_icon](assets/remove_from_bp_icon.png)
 
