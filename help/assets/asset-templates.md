@@ -55,7 +55,7 @@ Imaginons que vous voulez créer des contenus numériques papier, comme des broc
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
 
-1. Cliquez/appuyez sur **[!UICONTROL Créer]**, puis choisissez dans le menu le type de document que vous souhaitez créer. For example, choose **[!UICONTROL Brochure]**.
+1. Cliquez/appuyez sur **[!UICONTROL Créer]**, puis choisissez dans le menu le type de document que vous souhaitez créer. Par exemple, choisissez **[!UICONTROL Brochure]**.
 
    ![chlimage_1-307](assets/chlimage_1-307.png)
 
@@ -79,7 +79,7 @@ Imaginons que vous voulez créer des contenus numériques papier, comme des broc
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## Modification d&#39;un titre {#editing-a-collateral}
+## Modifier une garantie {#editing-a-collateral}
 
 Vous pouvez modifier un document immédiatement après sa création. Vous pouvez aussi choisir de l’ouvrir depuis la page Modèles ou la page des détails du fichier.
 
@@ -106,7 +106,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    >[!NOTE]
    >
-   >Vérifiez que votre instance AEM est intégrée avec un serveur InDesign pour qu’AEM Assets puisse extraire les données du modèle InDesign et les rendre modifiables. For details, see [Integrating AEM Assets with InDesign Server](indesign.md).
+   >Vérifiez que votre instance AEM est intégrée avec un serveur InDesign pour qu’AEM Assets puisse extraire les données du modèle InDesign et les rendre modifiables. Pour plus d&#39;informations, voir [Intégration d&#39;AEM Assets à l&#39;InDesign Server](indesign.md).
 
 1. Pour modifier le texte d’un champ modifiable, cliquez/appuyez sur le champ de texte dans la liste des champs modifiables, puis modifiez le texte dans le champ.
 
@@ -118,7 +118,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-317](assets/chlimage_1-317.png)
 
-1. To swap an image, click/tap the **[!UICONTROL Asset Finder]** icon.
+1. Pour permuter une image, cliquez/appuyez sur l’icône **[!UICONTROL Asset Finder]**.
 
    ![chlimage_1-318](assets/chlimage_1-318.png)
 
@@ -130,7 +130,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
-1. Click/tap the **[!UICONTROL Preview]** icon to preview the image.
+1. Cliquez/appuyez sur l&#39;icône **[!UICONTROL Prévisualisation]** pour prévisualisation de l&#39;image.
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
@@ -138,7 +138,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
-1. Cliquez/appuyez sur l’icône **[!UICONTROL Aperçu]** dans la barre d’outils pour prévisualiser toutes les modifications. Click/tap **[!UICONTROL Done]** to save the editing changes to the collateral.
+1. Cliquez/appuyez sur l’icône **[!UICONTROL Aperçu]** dans la barre d’outils pour prévisualiser toutes les modifications. Cliquez/appuyez sur **[!UICONTROL Terminé]** pour enregistrer les modifications apportées à la documentation.
 
    >[!NOTE]
    >
@@ -154,7 +154,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
    >* Montez AEM sur votre système de fichiers local, puis mappez les icônes manquantes avec les ressources AEM existantes.
 
    >
-   >For more information around working with InDesign documents, see [Best Practices for Working with InDesign Documents in AEM](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Pour plus d’informations sur l’utilisation des documents d’InDesign, voir [Bonnes pratiques relatives à l’utilisation des Documents d’InDesign dans AEM](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Pour générer un rendu PDF pour la brochure, sélectionnez l’option Acrobat dans la boîte de dialogue, puis cliquez sur **[!UICONTROL Continuer]**.
 1. Le document est créé dans le dossier où vous avez commencé. Pour afficher les rendus, ouvrez le document et choisissez **[!UICONTROL Rendus]** dans la liste de navigation globale.
@@ -170,7 +170,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
 1. Cliquez ou appuyez sur **[!UICONTROL Outils > Ressources]**.
 1. Dans les options, choisissez **[!UICONTROL Modèles]**.
-1. Click/tap **[!UICONTROL Create]** and the choose **[!UICONTROL Merge]** from the menu.
+1. Cliquez/appuyez sur **[!UICONTROL Créer]** et choisissez **[!UICONTROL Fusionner]** dans le menu.
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
@@ -195,7 +195,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
    ![chlimage_1-330](assets/chlimage_1-330.png)
 
 1. Cliquez ou appuyez sur **[!UICONTROL Suivant]** dans la barre d’outils.
-1. In the **[!UICONTROL Preview &amp; Reorder]** screen, rearrange the templates if required and preview the selection of templates to merge. Cliquez/appuyez ensuite sur **[!UICONTROL Suivant]** dans la barre d’outils.
+1. Dans l’écran **[!UICONTROL Prévisualisation et réorganisation]**, réorganisez les modèles si nécessaire et prévisualisation la sélection des modèles à fusionner. Cliquez/appuyez ensuite sur **[!UICONTROL Suivant]** dans la barre d’outils.
 
    ![chlimage_1-331](assets/chlimage_1-331.png)
 
