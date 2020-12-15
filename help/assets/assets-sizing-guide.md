@@ -18,7 +18,7 @@ ht-degree: 91%
 
 Lors du dimensionnement de l’environnement pour une mise en œuvre d’Adobe Experience Manager (AEM) Assets, il est important de s’assurer que les ressources disponibles sont suffisantes en termes de disque, de processeur, de mémoire, d’entrée/de sortie et de débit réseau. Pour dimensionner la plupart de ces ressources, vous devez comprendre leur mode de chargement dans le système. Si aucune meilleure mesure n’est disponible, vous pouvez diviser la taille de la bibliothèque existante par l’âge de la bibliothèque pour trouver la fréquence de création des ressources.
 
-## Disque {#disk}
+## Disque  {#disk}
 
 ### Banque de données {#datastore}
 
@@ -64,31 +64,31 @@ Pour les banques de données volumineuses, vous pouvez mettre en oeuvre une banq
 
 La banque de données peut être partagée entre une instance d’auteur principale et de secours afin de réduire le temps nécessaire à la mise à jour de l’instance de secours avec les modifications apportées à l’instance principale. Adobe recommande de partager la banque de données entre une instance d’auteur principale et des instances d’auteur de déchargement afin de réduire les surcharges lors du déchargement du workflow. Vous pouvez également partager la banque de données entre les instances d’auteur et de publication afin de réduire le trafic lors de la réplication.
 
-#### Inconvénients {#drawbacks}
+#### Inconvénients  {#drawbacks}
 
 En raison de certains écueils, le partage d’une banque de données n’est pas recommandé dans tous les cas.
 
-#### Point de défaillance unique {#single-point-of-failure}
+#### Point de défaillance unique  {#single-point-of-failure}
 
 La mise en œuvre d’une banque de données partagée introduit un point de défaillance unique dans une infrastructure. Supposons que votre système dispose d’une instance d’auteur et de deux instances de publication, chacune dotée de sa propre banque de données. Si l’une d’entre elles tombe en panne, les deux autres peuvent continuer à fonctionner. Toutefois, si la banque de données est partagée, une défaillance de disque unique peut entraîner la défaillance de toute l’infrastructure. Par conséquent, pour pouvoir restaurer rapidement la banque de données partagée, assurez-vous d’en conserver une sauvegarde.
 
 La mise en œuvre du service AWS S3 pour les banques de données partagées est préférable, car il réduit considérablement la probabilité de défaillance par rapport aux architectures de disque normales.
 
-#### Complexité accrue {#increased-complexity}
+#### Complexité accrue  {#increased-complexity}
 
 Les banques de données partagées augmentent également la complexité des opérations, telles que le nettoyage de la mémoire. Normalement, le nettoyage de la mémoire pour une banque de données autonome peut être lancé d’un seul clic. Cependant, les banques de données partagées requièrent des opérations de balayage des repères sur chaque membre utilisant la banque de données, en plus de l’exécution du nettoyage réel sur un seul nœud.
 
 Pour les opérations AWS, la mise en œuvre d’un emplacement central unique (via S3) plutôt que la création d’une matrice RAID de volumes EBS peut considérablement limiter la complexité et les risques opérationnels du système.
 
-#### Problèmes de performances {#performance-concerns}
+#### Problèmes de performances  {#performance-concerns}
 
 Une banque de données partagée nécessite que les fichiers binaires soient stockés sur un lecteur monté sur le réseau partagé entre toutes les instances. Comme ces fichiers binaires sont accessibles sur un réseau, les performances du système sont affectées. Vous pouvez partiellement atténuer cet impact en utilisant une connexion réseau rapide à une matrice rapide de disques. Toutefois, il s’agit d’une proposition coûteuse. Dans le cas des opérations AWS, tous les disques sont distants et nécessitent une connectivité réseau. Les volumes éphémères perdent des données lorsque l’instance démarre ou s’arrête.
 
-#### Latence {#latency}
+#### Latence  {#latency}
 
 La latence dans les mises en œuvre S3 est introduite par les threads d’écriture en arrière-plan. Les procédures de sauvegarde doivent prendre en compte cette latence, ainsi que les procédures de déchargement. La ressource S3 peut ne pas être présente dans S3 lorsqu’une tâche de déchargement démarre. De plus, les index Lucene peuvent rester incomplets lors d’une sauvegarde. Cela s’applique à tout fichier sensible au temps écrit dans la banque de données S3 et accessible depuis une autre instance.
 
-### Magasin de nœuds/Banque de documents {#node-store-document-store}
+### Magasin de nœuds/Banque de documents  {#node-store-document-store}
 
 Il est difficile d’obtenir des chiffres de dimensionnement précis pour un magasin de nœuds ou une banque de documents en raison des ressources utilisées par les éléments suivants :
 
@@ -105,7 +105,7 @@ Pour le référentiel, utilisez des disques SSD ou des disques avec un niveau d&
 
 ## Réseau {#network}
 
-AEM Assets comporte plusieurs cas d’utilisation qui rendent la performance du réseau plus importante que sur la plupart de nos projets AEM. Un client peut disposer d’un serveur rapide, mais si la connexion réseau n’est pas assez puissante pour soutenir la charge des utilisateurs qui chargent et téléchargent des ressources à partir du système, il semblera toujours lent. There is a good methodology for determining the choke point in a user&#39;s network connection to AEM at [AEM Asset considerations for user experience, instance sizing, workflow evaluation, and network topology](assets-network-considerations.md).
+AEM Assets comporte plusieurs cas d’utilisation qui rendent la performance du réseau plus importante que sur la plupart de nos projets AEM. Un client peut disposer d’un serveur rapide, mais si la connexion réseau n’est pas assez puissante pour soutenir la charge des utilisateurs qui chargent et téléchargent des ressources à partir du système, il semblera toujours lent. Il existe une bonne méthodologie pour déterminer le point d’étranglement dans la connexion réseau d’un utilisateur à l’AEM [AEM Considérations relatives aux ressources pour l’expérience utilisateur, le dimensionnement d’instance, l’évaluation du flux de travail et la topologie réseau](assets-network-considerations.md).
 
 ## WebDAV {#webdav}
 
@@ -121,7 +121,7 @@ Pour illustrer ce manque d’efficacité, Adobe a testé les performances du sys
 
 Lors de l’analyse du temps moyen d’enregistrement des fichiers sur WebDAV, il a été constaté que les performances augmentent considérablement lorsque la bande passante augmente jusqu’au niveau de 5-10 Mbits/s. Par conséquent, Adobe recommande que chaque utilisateur accédant simultanément au système dispose d’une vitesse de chargement d’au moins 10 Mbits/s et d’une bande passante comprise entre 5 et 10 Mbits/s.
 
-For more information, see [Troubleshooting AEM desktop app](https://helpx.adobe.com/fr/experience-manager/kb/troubleshooting-companion-app.html).
+Pour plus d’informations, voir [Dépannage de AEM application de bureau](https://helpx.adobe.com/fr/experience-manager/kb/troubleshooting-companion-app.html).
 
 ## Restrictions {#limitations}
 
@@ -129,7 +129,7 @@ Lorsque vous dimensionnez une mise en œuvre, il est important de garder à l’
 
 La taille des fichiers n’est pas le seul facteur qui contribue aux problèmes de mémoire insuffisante. Cela dépend également des dimensions de l’image. Vous pouvez éviter les problèmes d’insuffisance de mémoire en fournissant une taille de tas supérieure lorsque vous démarrez AEM.
 
-In addition, you can edit the threshold size property of the `com.day.cq.dam.commons.handler.StandardImageHandler` component in Configuration Manager to use intermediate temporary file greater than zero.
+En outre, vous pouvez modifier la propriété de taille de seuil du composant `com.day.cq.dam.commons.handler.StandardImageHandler` dans Configuration Manager pour utiliser un fichier temporaire intermédiaire supérieur à zéro.
 
 ## Nombre maximal de ressources {#maximum-number-of-assets}
 
@@ -143,6 +143,6 @@ Si les rendus ne sont pas générés correctement, utilisez la bibliothèque Cam
 
 Il est difficile d’estimer avec précision la taille du fichier TIFF pris en charge prêt à l’emploi avec un tas spécifique pour AEM en raison de facteurs supplémentaires, tels que la taille des pixels, qui influence le traitement. Il est possible qu’AEM puisse traiter un fichier prêt à l’emploi d’une taille de 255 Mo, mais ne puisse pas traiter un fichier de 18 Mo, parce que ce dernier comprend un nombre inhabituellement plus élevé de pixels par rapport au premier.
 
-## Taille des ressources {#size-of-assets}
+## Taille des ressources  {#size-of-assets}
 
-Par défaut, AEM vous permet de télécharger des fichiers de taille maximale de 2 Go. Pour télécharger des ressources très volumineuses dans AEM, voir [Configuration pour télécharger des ressources](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)très volumineuses.
+Par défaut, AEM vous permet de télécharger des fichiers de taille maximale de 2 Go. Pour télécharger des ressources très volumineuses dans AEM, voir [Configuration pour télécharger des ressources très volumineuses](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).
