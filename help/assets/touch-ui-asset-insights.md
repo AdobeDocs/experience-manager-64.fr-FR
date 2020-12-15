@@ -21,13 +21,13 @@ La fonction Statistiques sur les ressources capture les détails de l’activit�
 
 Pour que la fonction Statistiques sur les ressources capture les statistiques d’utilisation des ressources à partir d’un site web, vous devez inclure le code intégré de la ressource dans le code du site web.
 
-To let Asset Insights display usage statistics for assets, first configure the feature to fetch reporting data from [!DNL Adobe Analytics]. Pour plus d’informations, consultez la section [Configuration des statistiques sur les ressources](touch-ui-configuring-asset-insights.md).
+Pour permettre à Asset Insights d’afficher les statistiques d’utilisation des ressources, configurez d’abord la fonction afin de récupérer les données de rapports de [!DNL Adobe Analytics]. Pour plus d’informations, consultez la section [Configuration des statistiques sur les ressources](touch-ui-configuring-asset-insights.md).
 
 >[!NOTE]
 >
 >Les statistiques sont prises en charge et fournies uniquement pour les images.
 
-## View statistics for an asset {#viewing-statistics-for-an-asset}
+## Statistiques de vue pour un fichier {#viewing-statistics-for-an-asset}
 
 Vous pouvez afficher les scores de statistiques sur les ressources à partir de la page des métadonnées.
 
@@ -50,7 +50,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 
    >[!NOTE]
    >
-   >La fonctionnalité Statistiques des ressources récupérant généralement les données Solutions d’Adobe Analytics de manière périodique, il est possible que la section Solutions n’affiche pas les données les plus récentes. La période pendant laquelle les données sont affichées dépend de la planification de l’opération de récupération que la fonction Statistiques sur les ressources exécute pour récupérer les données d’analyse.
+   >La fonctionnalité Statistiques des ressources récupérant généralement les données Solutions d’Adobe Analytics de manière périodique, la section Solutions n’affiche peut-être pas les données les plus récentes. La période pendant laquelle les données sont affichées dépend de la planification de l’opération de récupération que la fonction Statistiques sur les ressources exécute pour récupérer les données d’analyse.
 
 1. Pour afficher les statistiques de performances de l’actif sous forme graphique sur une période donnée, sélectionnez une période dans la section **[!UICONTROL Statistiques de performances]**. Les détails, y compris les clics et les impressions, sont affichés sous forme de lignes de tendance dans un graphique.
 
@@ -60,11 +60,11 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
    >
    >Contrairement à la section Solutions, la section Statistiques de performances affiche les données les plus récentes.
 
-1. Pour obtenir le code intégré de la ressource que vous incluez sur les sites web afin d’obtenir les données de performances, appuyez/cliquez sur **[!UICONTROL Obtenir le code intégré]** sous la vignette de la ressource. For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](touch-ui-using-page-tracker.md).
+1. Pour obtenir le code intégré de la ressource que vous incluez sur les sites web afin d’obtenir les données de performances, appuyez/cliquez sur **[!UICONTROL Obtenir le code intégré]** sous la vignette de la ressource. Pour plus d’informations sur la manière d’inclure votre code incorporé dans des pages Web tierces, voir [Utilisation du suivi de page et du code incorporé dans les pages Web](touch-ui-using-page-tracker.md).
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
-## View aggregate statistics for assets {#viewing-aggregate-statistics-for-assets}
+## Statistiques de l&#39;agrégat de vue pour les actifs {#viewing-aggregate-statistics-for-assets}
 
 Vous pouvez afficher les scores de toutes les ressources d’un dossier simultanément à l’aide du **[!UICONTROL mode Statistiques]**.
 
