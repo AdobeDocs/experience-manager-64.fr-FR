@@ -78,7 +78,7 @@ Vous ajoutez le code de suivi de page dans la section d’en-tête du code de vo
  </head>
 ```
 
-## Ajout de code intégré   {#adding-embed-code}
+## Ajout de code intégré    {#adding-embed-code}
 
 Vous ajoutez le code intégré dans le corps du code de votre site web. Le fragment de code suivant présente le code intégré inclus dans un exemple de page web :
 
