@@ -107,8 +107,8 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
    Pour en savoir plus sur la méthode `setHandlers()`, rendez-vous sur la page suivante :
 
-   * Interactive Image viewer: [setHandlers](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * Interactive Video viewer: [setHandlers](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * Visionneuse d’images interactive : [setHandlers](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * Visionneuse de vidéos interactives : [setHandlers](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. Vous devez maintenant configurer le gestionnaire `quickViewActivate`.
 
