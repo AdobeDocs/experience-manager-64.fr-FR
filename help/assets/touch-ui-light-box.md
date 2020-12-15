@@ -19,7 +19,7 @@ Lightbox est un type spécial de collection fournissant un accès aisé aux ress
 
 Si vous êtes un utilisateur Adobe Experience Manager (AEM) Assets, Lightbox est créé automatiquement la première fois que vous vous connectez à l’application. Il est exclusif à votre connexion. Les autres utilisateurs ne peuvent pas accéder à votre Lightbox.
 
-## Ajout de ressources à Lightbox {#adding-assets-to-lightbox}
+## Ajout de ressources à Lightbox  {#adding-assets-to-lightbox}
 
 1. Dans l’interface utilisateur Assets, sélectionnez les ressources que vous souhaitez ajouter à Lightbox.
 1. Faites glisser les ressources jusqu’à la zone **[!UICONTROL Déposer dans Lightbox]**. Relâchez lorsque la zone de dépôt devient active et que le libellé se transforme en **[!UICONTROL Déposer pour ajouter]**.
