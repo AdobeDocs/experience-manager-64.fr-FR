@@ -40,13 +40,13 @@ Le coin inférieur gauche du graphique présente deux périphériques connectés
 
 L’ordinateur présenté à droite, connecté au réseau d’entreprise via un VPN, a un débit limité, avec une vitesse de 1 Mbps. L’expérience utilisateur est totalement différente avec une connexion de 1 Mbps et avec une connexion de 1 Gbps. En fonction de la taille des ressources que les utilisateurs manipulent, leur liaison VPN peut s’avérer insuffisante pour la tâche.
 
-## La topologie du réseau d’entreprise  {#topology-of-the-corporate-network}
+## La topologie du réseau d’entreprise   {#topology-of-the-corporate-network}
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
 Le diagramme présente des vitesses de liaison plus élevées au sein du réseau d’entreprise que ce qui est généralement utilisé. Ces canaux sont des ressources partagées. Si le commutateur partagé est censé gérer 50 clients, il peut se transformer en goulot d’étranglement. Dans le diagramme initial, seuls deux ordinateurs partagent la connexion.
 
-## Liaison à Internet à partir du réseau d’entreprise et de l’environnement d’AEM  {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Liaison à Internet à partir du réseau d’entreprise et de l’environnement d’AEM   {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -62,7 +62,7 @@ C’est le plus petit goulot d’étranglement axé sur le client. Cependant, vo
 
 Les exemples de diagrammes vous permettent de conclure que six périphériques partagent un canal conceptuel de 10 Mbps. Selon la taille des ressources exploitées, cela peut s’avérer insuffisant pour répondre aux attentes de l’utilisateur.
 
-## La topologie de l’environnement AEM  {#topology-of-the-aem-environment}
+## La topologie de l’environnement AEM   {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
