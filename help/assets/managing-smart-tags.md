@@ -32,9 +32,9 @@ Vous pouvez également attribuer un rang supérieur à une balise afin d’accro
 
 ## Comprendre les résultats de recherche AEM avec des balises dynamiques  {#understand-search-results-with-smart-tags}
 
-Par défaut, la recherche AEM associe les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. However, an asset tagged with either `woman` or `running` using smart taggs appears in such a search query. Les résultats de la recherche sont donc une combinaison de
+Par défaut, la recherche AEM associe les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Cependant, un fichier balisé avec `woman` ou `running` à l’aide de balises actives apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
 
-* ressources avec des mots-clés `woman` et `running` dans les métadonnées.
+* actifs avec les deux mots-clés, `woman` et `running` dans les métadonnées.
 * ressources avec balise dynamique avec l’un des mots-clés.
 
 Les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats de recherche correspondant à l’un des termes de recherche des balises dynamiques. Dans l’exemple ci-dessus, l’ordre approximatif de l’affichage des résultats de recherche est le suivant :
