@@ -11,7 +11,7 @@ ht-degree: 98%
 ---
 
 
-# Meilleures pratiques pour traduire les ressources de manière efficace {#best-practices-for-translating-assets-efficiently}
+# Meilleures pratiques pour traduire efficacement les ressources {#best-practices-for-translating-assets-efficiently}
 
 Adobe Experience Manager (AEM) Assets prend en charge des workflow multilingues permettant de traduire les fichiers binaires, les métadonnées et les balises des ressources numériques en plusieurs paramètres régionaux et de gérer les ressources traduites. Pour plus d’informations, voir [Ressources multilingues](multilingual-assets.md).
 
