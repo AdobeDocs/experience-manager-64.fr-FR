@@ -17,7 +17,7 @@ Adobe Experience Manager (AEM) Assets vous permet de mettre en relation manuel
 
 De cette manière, vous avez la possibilité de partager un fichier basse résolution (par exemple au format PDF/JPG) avec les fournisseurs/agences et de transmettre le fichier haute résolution (par exemple au format INDD) sur demande uniquement.
 
-## Mise en relation de ressources {#relating-assets}
+## Mise en relation de ressources  {#relating-assets}
 
 1. À partir de l’interface d’Assets, ouvrez la page Propriétés d’une ressource que vous souhaitez mettre en relation.
 
@@ -62,7 +62,7 @@ De cette manière, vous avez la possibilité de partager un fichier basse résol
 
 1. Cliquez/appuyez sur **[!UICONTROL OK]** pour fermer la boîte de dialogue. Les ressources pour lesquelles vous avez supprimé des relations sont supprimées de la liste des ressources mises en relation dans la section **[!UICONTROL En relation]**.
 
-## Traduction de ressources associées {#translating-related-assets}
+## Traduction de ressources associées  {#translating-related-assets}
 
 La création de relations source/dérivés entre des ressources à l’aide de la fonctionnalité Ressources mises en relation est également utile dans les processus de traduction. Lorsque vous exécutez un processus de traduction sur une ressource dérivée, AEM Assets récupère automatiquement toute ressource référencée par le fichier source et la soumet pour traduction. De cette manière, la ressource référencée par la ressource source est traduite avec les ressources source et dérivées. Par exemple, supposons que votre copie de langue anglaise inclut une ressource dérivée et son fichier source, comme indiqué sur l’image ci-dessous.
 
