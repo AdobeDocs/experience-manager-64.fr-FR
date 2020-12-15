@@ -11,7 +11,7 @@ ht-degree: 97%
 ---
 
 
-# Configuration des statistiques sur les ressources {#configuring-asset-insights}
+# Configuration des statistiques sur les ressources  {#configuring-asset-insights}
 
 Adobe Experience Manager (AEM) Assets récupère les données d’utilisation des ressources AEM utilisées par les sites web tiers à partir d’Adobe Analytics. Pour permettre à la fonction Statistiques sur les ressources de récupérer ces données et de générer des informations, commencez par la configurer afin qu’elle s’intègre à Adobe Analytics.
 
@@ -36,7 +36,7 @@ Adobe Experience Manager (AEM) Assets récupère les données d’utilisation de
 
 Une fois que vous avez configuré votre compte Analytics, le code de suivi de page est généré pour vous. Pour permettre à la fonction Statistiques sur les ressources de surveiller les ressources AEM utilisées sur les sites web tiers, incluez le code de suivi de page dans le code du site web. Utilisez l’utilitaire de suivi de page d’AEM Assets pour générer le code de suivi de page. Pour plus d’informations sur la manière d’inclure votre code de suivi de page sur des pages web tierces, reportez-vous à la section [Utilisation du dispositif de suivi de page et du code intégré sur les pages web](touch-ui-using-page-tracker.md).
 
-1. In AEM, click the **[!UICONTROL Tools > Assets]**.
+1. Dans AEM, cliquez sur **[!UICONTROL Outils > Ressources]**.
 
    ![chlimage_1-214](assets/chlimage_1-214.png)
 
