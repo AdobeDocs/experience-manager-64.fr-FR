@@ -11,11 +11,11 @@ ht-degree: 75%
 ---
 
 
-# Bulk metadata import and export {#bulk-metadata-import-and-export}
+# Importation et exportation de métadonnées en bloc {#bulk-metadata-import-and-export}
 
 AEM Assets permet d’importer des métadonnées de ressources par lot à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour par lot pour les ressources récemment transférées ou les ressources existantes en important un fichier CSV. Vous pouvez également assimiler des métadonnées de ressources par lot à partir d’un système tiers au format CSV.
 
-## Importation de métadonnées  {#import-metadata}
+## Importation de métadonnées   {#import-metadata}
 
 L’importation de métadonnées est asynchrone et ne nuit pas aux performances du système. La mise à jour simultanée des métadonnées pour plusieurs ressources peut être gourmande en ressources en raison de l’activité d’écriture différée XMP si l’indicateur de workflow est coché. Planifiez une telle importation lors d’une utilisation allégée du serveur afin d’éviter un impact sur les performances des autres utilisateurs.
 
@@ -27,15 +27,15 @@ Pour importer des métadonnées en bloc, procédez comme suit :
 
 1. Accédez à l’IU Assets et appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 1. Dans le menu, sélectionnez **[!UICONTROL Métadonnées]**.
-1. On the **[!UICONTROL Metadata Import]** page, tap/click the **[!UICONTROL Select File]**.  Sélectionnez le fichier CSV contenant les métadonnées.
+1. Sur la page **[!UICONTROL Importation de métadonnées]**, appuyez/cliquez sur **[!UICONTROL Sélectionner un fichier]**.  Sélectionnez le fichier CSV contenant les métadonnées.
 1. Assurez-vous que le fichier CSV contient les paramètres suivants :
 
    | Paramètres d’importation des métadonnées | Description |
    |:---|:---|
    | [!UICONTROL Taille du lot] | Nombre de ressources dans un lot pour lesquelles les métadonnées doivent être importées. La valeur par défaut est 50. La valeur maximale est 100. |
-   | [!UICONTROL Séparateur de champs] | Default value is `,` – a comma. Vous pouvez spécifier n’importe quel autre caractère. |
-   | [!UICONTROL Délimiteur à plusieurs valeurs] | Séparateur des valeurs de métadonnées. Default value is `|` – a pipe. |
-   | [!UICONTROL Lancer les workflows] | Faux par défaut. When set to true and default Launcher settings are in effect for the `DAM Metadata WriteBack Workflow` (that writes metadata to the binary XMP data). L’activation des workflows de lancement a un impact sur les performances du système. |
+   | [!UICONTROL Séparateur de champs] | La valeur par défaut est `,` - une virgule. Vous pouvez spécifier n’importe quel autre caractère. |
+   | [!UICONTROL Délimiteur à plusieurs valeurs] | Séparateur des valeurs de métadonnées. La valeur par défaut est `|` - barre verticale. |
+   | [!UICONTROL Lancer les workflows] | Faux par défaut. Lorsque ce paramètre est défini sur true, les paramètres par défaut du lanceur sont appliqués à `DAM Metadata WriteBack Workflow` (qui écrit les métadonnées dans les données XMP binaires). L’activation des workflows de lancement a un impact sur les performances du système. |
    | [!UICONTROL Nom de colonne du chemin d’accès à la ressource] | Définit le nom de la colonne du fichier CSV avec des ressources. |
 
 1. Appuyez/cliquez sur **[!UICONTROL Importer]** dans la barre d’outils. Une fois les métadonnées importées, une notification est envoyée à votre boîte de réception de notifications. Accédez à la page de propriété des ressources et vérifiez que les valeurs des métadonnées sont correctement importées pour les ressources.
@@ -61,12 +61,12 @@ Pour exporter en bloc des métadonnées de plusieurs fichiers, procédez comme s
 
 1. Sélectionnez le dossier de ressources pour lequel vous souhaitez exporter des métadonnées. Dans la barre d’outils, sélectionnez **[!UICONTROL Exporter les métadonnées]**.
 
-1. In the [!UICONTROL Metadata Export] dialog, specify a name for the CSV file. Pour exporter des métadonnées des ressources dans les sous-dossiers, sélectionnez **[!UICONTROL Inclure les ressources dans les sous-dossiers]**.
+1. Dans la boîte de dialogue [!UICONTROL Exportation des métadonnées], spécifiez un nom pour le fichier CSV. Pour exporter des métadonnées des ressources dans les sous-dossiers, sélectionnez **[!UICONTROL Inclure les ressources dans les sous-dossiers]**.
 
    ![export_metadata_page](assets/export_metadata_page.png)
 
 1. Sélectionnez les options souhaitées. Indiquez un nom de fichier et, si nécessaire, une date.
-1. In the **[!UICONTROL Properties to be exported]**, specify whether you want to export all or specific properties. If you choose **[!UICONTROL Selective]** properties to be exported, add the desired properties.
+1. Dans la section **[!UICONTROL Propriétés à exporter]**, indiquez si vous souhaitez exporter toutes les propriétés ou des propriétés spécifiques. Si vous sélectionnez les propriétés **[!UICONTROL Sélective]** à exporter, ajoutez les propriétés souhaitées.
 
 1. Dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Exporter]**. Un message confirme que les métadonnées ont été exportées. Fermez le message.
 
