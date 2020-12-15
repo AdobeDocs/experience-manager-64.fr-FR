@@ -21,7 +21,7 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 
 | Champ de recherche | Valeurs de propriété de recherche |
 |---|---|
-| Types MIME | [!UICONTROL Images], [!UICONTROL Documents], [!UICONTROL Multimédia], [!UICONTROL Archives]ou Autre. |
+| Types MIME | [!UICONTROL Images],  [!UICONTROL Documents],  [!UICONTROL Multimédia],  [!UICONTROL Archives] ou Autre. |
 | [!UICONTROL Dernière modification] | Heure, Jour, Semaine, Mois ou Année. |
 | [!UICONTROL Taille de fichier] | Petit, Moyen ou Grand. |
 | [!UICONTROL État de publication] | Publiée ou Publication annulée. |
