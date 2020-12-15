@@ -18,11 +18,11 @@ ht-degree: 74%
 ---
 
 
-# À propos du chargement et du traitement de ressources 3D dans AEM {#about-the-uploading-and-processing-of-d-assets-in-aem}
+# À propos du chargement et du traitement de ressources 3D dans AEM  {#about-the-uploading-and-processing-of-d-assets-in-aem}
 
 >[!IMPORTANT]
 >
->aem 3D dans AEM 6.4 n’est plus pris en charge. adobe vous recommande d&#39;utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou version ultérieure.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html).
+>aem 3D dans AEM 6.4 n’est plus pris en charge. L&#39;Adobe vous recommande d&#39;utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou supérieur.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html).
 
 Utilisez les mécanismes de synchronisation ou de chargement standard pour importer des ressources 3D et leurs fichiers référencés associés dans AEM Assets.
 
@@ -57,13 +57,13 @@ Une fois le téléchargement terminé, vos fichiers 3D sont convertis et un tra
 
 La conversion et le traitement des fichiers 3D consomment généralement d’importantes ressources en termes de processeur et de mémoire sur un serveur. Cela prend également un temps considérable. Les délais de traitement varient souvent considérablement en fonction de la taille du modèle et des capacités du serveur. Par exemple, un petit modèle standard avec moins de 100 000 faces est généralement prêt pour l’affichage en moins d’une minute ; il est entièrement traité en 2 ou 3 minutes. En revanche, un grand modèle avec plus d’un million de faces peut prendre plusieurs dizaines de minutes pour être complètement traité.
 
-Les tâches de conversion, de traitement et de rendu sont placées en file d’attente pour empêcher de trop ralentir le serveur. The message &quot;Waiting for processing...&quot; is sometimes shown in the **[!UICONTROL Card View]** at the time you uploaded assets. Ce statut indique que d’autres tâches de traitement ou de rendu doivent se terminer avant que la ressource actuelle soit traitée.
+Les tâches de conversion, de traitement et de rendu sont placées en file d’attente pour empêcher de trop ralentir le serveur. Message &quot;En attente de traitement...&quot; s’affiche parfois dans la **[!UICONTROL Vue de carte]** au moment où vous avez téléchargé des ressources. Ce statut indique que d’autres tâches de traitement ou de rendu doivent se terminer avant que la ressource actuelle soit traitée.
 
 Des mécanismes sont disponibles pour limiter l’utilisation du processeur pour le traitement de l’assimilation de la gestion et du rendu. Voir la section [Paramètres de configuration avancés](advanced-config-3d.md) pour plus d’informations sur la configuration des limites du processeur.
 
-## Surveillance de l’état du traitement de vos fichiers 3D chargés {#monitoring-the-processing-status-of-your-uploaded-d-files}
+## Surveillance de l’état du traitement de vos fichiers 3D chargés  {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. Chaque modèle 3D téléchargé subit généralement les quatre ou six étapes de traitement ordonnées suivantes :
+Dans **[!UICONTROL Vue de carte]** uniquement, l’état et la progression du traitement s’affichent sous la forme d’une bannière de progression sur la carte du fichier. Chaque modèle 3D téléchargé subit généralement les quatre ou six étapes de traitement ordonnées suivantes :
 
 <table> 
  <tbody> 
@@ -74,7 +74,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   </tr> 
   <tr> 
    <td>1</td> 
-   <td>Traitement en cours</td> 
+   <td>Traitement</td> 
    <td>Extraction initiale de base du traitement et des métadonnées.</td> 
   </tr> 
   <tr> 
@@ -90,17 +90,17 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   <tr> 
    <td>4</td> 
    <td>Création d'une ombre au sol</td> 
-   <td>Facultatif. Vous permet de générer une ombre portée pour l’occlusion ambiante sur le plan de masse dans l’objet 3D. Voir Paramètres <a href="/help/assets/advanced-config-3d.md">de configuration</a> avancés pour activer ou désactiver ce traitement.</td> 
+   <td>Facultatif. Vous permet de générer une ombre portée pour l’occlusion ambiante sur le plan de masse dans l’objet 3D. Voir <a href="/help/assets/advanced-config-3d.md">Paramètres de configuration avancés</a> pour activer ou désactiver ce traitement.</td> 
   </tr> 
   <tr> 
    <td>5<br /> </td> 
    <td>Création de cartes lumineuses</td> 
-   <td>Facultatif. Vous pouvez ainsi augmenter la qualité de l’aperçu interactif et accélérer le rendu avec le convertisseur par défaut. Voir Paramètres <a href="/help/assets/advanced-config-3d.md">de configuration</a> avancés pour activer ou désactiver ce traitement.</td> 
+   <td>Facultatif. Vous pouvez ainsi augmenter la qualité de l’aperçu interactif et accélérer le rendu avec le convertisseur par défaut. Voir <a href="/help/assets/advanced-config-3d.md">Paramètres de configuration avancés</a> pour activer ou désactiver ce traitement.</td> 
   </tr> 
   <tr> 
    <td>6<br /> </td> 
    <td>Création d’une animation</td> 
-   <td>Facultatif. Vous permet d’obtenir le rendu d’une animation simple qui est ensuite utilisée comme miniature de vidéo en mode Carte. Voir Paramètres <a href="/help/assets/advanced-config-3d.md">de configuration</a> avancés pour activer ou désactiver ce traitement.</td> 
+   <td>Facultatif. Vous permet d’obtenir le rendu d’une animation simple qui est ensuite utilisée comme miniature de vidéo en mode Carte. Voir <a href="/help/assets/advanced-config-3d.md">Paramètres de configuration avancés</a> pour activer ou désactiver ce traitement.</td> 
   </tr> 
   <tr> 
    <td>7<br /> </td> 
@@ -112,5 +112,5 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
 
 >[!NOTE]
 >
->You can view a 3D asset in **[!UICONTROL Detail View]** or render it after the Creating preview stage is complete. Il n’est pas nécessaire d’attendre que toutes les étapes de traitement soient terminées.
+>Vous pouvez vue un fichier 3D dans **[!UICONTROL Vue de détails]** ou le rendre une fois l’étape de création de prévisualisation terminée. Il n’est pas nécessaire d’attendre que toutes les étapes de traitement soient terminées.
 
