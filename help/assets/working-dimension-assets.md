@@ -22,20 +22,20 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Le pack de fonctionnalités 3D AEM dans AEM 6.4 n’est plus pris en charge. adobe vous recommande d’utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou version ultérieure.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) lorsque vous utilisez des ressources Adobe Dimension.
+>Le pack de fonctionnalités 3D AEM dans AEM 6.4 n’est plus pris en charge. Adobe vous recommande d&#39;utiliser la fonction des actifs 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou supérieur.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) lorsque vous utilisez des ressources Adobe Dimension.
 
-Le pack de fonctionnalités 3D AEM fournit la prise en charge des fichiers Adobe Dimension (`.dn` fichiers) dans AEM Assets, AEM Sites et AEM Screens et.
+Le pack de fonctionnalités 3D AEM fournit la prise en charge des fichiers Adobe Dimension (`.dn` fichiers) dans AEM Assets, AEM Sites et AEM Screens.
 
 Une nouvelle visionneuse 3D basée sur la norme ouverte glTF offre des fonctionnalités d’affichage des prévisualisations et des sites et écrans pour les ressources Adobe Dimension.
 
-## À propos du service de conversion en mode cloud {#about-the-cloud-based-conversion-service}
+## À propos du service de conversion basé sur le cloud {#about-the-cloud-based-conversion-service}
 
 Lorsqu’un fichier de Dimension est téléchargé vers AEM, une copie du fichier est transférée vers un service cloud géré par Adobe hébergé dans Amazon AWS. Ce service convertit du format de fichier de Dimension propriétaire de l’Adobe au format glTF standard ouvert. Le modèle 3D converti est conditionné en tant que glTF binaire (`.glb`). aem stocke le modèle converti avec la ressource de Dimension Principale en tant que rendu.
 
-Vous pouvez configurer le format de `.glb` conversion de l’une des deux façons suivantes (voir [Installation et configuration de l’AEM 3D](install-config-3d.md) pour obtenir des instructions) :
+Vous pouvez configurer le format de conversion `.glb` de l’une des deux façons suivantes (voir [Installation et configuration de l’AEM 3D](install-config-3d.md) pour obtenir des instructions) :
 
 * Insérez des extensions spécifiques à l’Adobe pour optimiser la qualité visuelle lors de l’utilisation de la visionneuse glTF Adobe pour vue des ressources de Dimension dans AEM Assets, AEM Sites ou AEM Screens. Cela rend les rendus `.glb` incompatibles avec la plupart des applications tierces.
-* Exclure les extensions spécifiques à l’Adobe pour assurer la compatibilité du `.glb` rendu avec les applications tierces. Ceci limite la qualité visuelle lors de l’affichage en AEM Assets, AEM Sites ou AEM Screens (par exemple, aucun éclairage IBL) afin de simuler la qualité des applications tierces typiques.
+* Exclure les extensions spécifiques à l&#39;Adobe pour assurer la compatibilité du rendu `.glb` avec les applications tierces. Ceci limite la qualité visuelle lors de l’affichage en AEM Assets, AEM Sites ou AEM Screens (par exemple, aucun éclairage IBL) afin de simuler la qualité des applications tierces typiques.
 
 Le transfert des fichiers Dimension/glTF vers ou depuis Amazon AWS et leur enregistrement temporaire dans AWS sont entièrement sécurisés. Ces fichiers sont conservés dans Amazon AWS pendant un laps de temps minimal ; généralement, pas plus de quelques minutes pendant les opérations normales.
 
@@ -43,7 +43,7 @@ Pour activer la prise en charge des ressources de Dimension, vous devez obtenir 
 
 >[!NOTE]
 >
->Si vous installez et utilisez les informations d’identification fournies, vous comprenez et acceptez que vos ressources Adobe Dimension 3D soient transférées au service de conversion en cloud géré par Adobe et hébergé dans Amazon AWS et traitées par lui.
+>Si vous installez et utilisez les informations d’identification fournies, vous comprenez et acceptez que vos ressources Adobe Dimension 3D soient transférées vers le service de conversion en cloud géré par Adobe hébergé dans Amazon AWS et traitées par lui.
 
 ### Affichage sur AEM Assets {#viewing-on-aem-assets}
 
@@ -51,9 +51,9 @@ Le pack de fonctionnalités 3D AEM comprend une nouvelle visionneuse basée sur 
 
 Notez que l’interface utilisateur du lecteur glTF est quelque peu différente de la visionneuse 3D standard utilisée pour tous les autres types de fichier 3D.
 
-#### See also the following: {#see-also-the-following}
+#### Consultez également les informations suivantes : {#see-also-the-following}
 
-* [aem notes](/help/release-notes/aem3d-release-notes.md) de mise à jour 3D pour connaître les restrictions et limitations applicables aux ressources Dn et à la visionneuse glTF.
-* [Utilisation du composant](using-the-3d-sites-component.md) Sites 3D pour les propriétés de composants spécifiques aux ressources Adobe Dimension.
-* [Installation et configuration de AEM 3D](install-config-3d.md) pour configurer le service de conversion en mode cloud.
+* [aem de mise à jour 3D ](/help/release-notes/aem3d-release-notes.md) note les restrictions et limitations applicables aux ressources Dn et à la visionneuse glTF.
+* [Utilisation du ](using-the-3d-sites-component.md) composant Sites 3D pour les propriétés de composants spécifiques aux ressources Adobe Dimension.
+* [Installation et configuration d’AEM 3](install-config-3d.md) Dpour configurer le service de conversion basé sur le cloud.
 
