@@ -21,14 +21,14 @@ Pour rechercher un fichier en fonction de ses métadonnées, par exemple le titr
 
 Pour rechercher, par exemple, les ressources dont le titre est « Cible », suivez ces étapes :
 
-## Recherche de ressources {#searching-assets}
+## Recherche de ressources  {#searching-assets}
 
-1. From the toolbar of the Assets user interface, click or tap the **[!UICONTROL Search]** icon to display the Omnisearch box.
+1. Dans la barre d&#39;outils de l&#39;interface utilisateur Ressources, cliquez ou appuyez sur l&#39;icône **[!UICONTROL Rechercher]** pour afficher la zone Omnisearch.
 
    ![](assets/do-not-localize/chlimage_1.png)
 
 1. Le curseur étant situé dans la zone de recherche, appuyez sur la touche Entrée.
-1. Click or tap the GlobalNav icon to display the **[!UICONTROL Filters]** panel.
+1. Cliquez ou appuyez sur l’icône GlobalNav pour afficher le panneau **[!UICONTROL Filtres]**.
 1. Indiquez la valeur « Cible » dans le champ de recherche. Pour limiter la recherche à un dossier spécifique, cliquez ou appuyez sur l’icône Parcourir dans le panneau Filtres et sélectionnez le dossier. Dans ce cas, la correspondance est recherchée uniquement dans le dossier et les sous-dossiers.
 
    >[!NOTE]
@@ -37,7 +37,7 @@ Pour rechercher, par exemple, les ressources dont le titre est « Cible », su
 
    ![gql_search](assets/gql_search.png)
 
-1. Press **[!UICONTROL Enter]**. L’interface utilisateur AEM Assets affiche uniquement les ressources dont le titre correspond exactement à &quot;Cible&quot;.
+1. Appuyez sur **[!UICONTROL Entrée]**. L’interface utilisateur AEM Assets affiche uniquement les ressources dont le titre correspond exactement à &quot;Cible&quot;.
 
 La fonction de recherche en texte intégral de GQL vous permet de rechercher des fichiers en fonction des éléments suivants :
 
@@ -51,7 +51,7 @@ La fonction de recherche en texte intégral de GQL vous permet de rechercher des
 >
 >La recherche de texte intégral GQL fonctionne uniquement pour les prédicats de texte intégral.
 
-| Property | Format de recherche (valeur de facette) |
+| Propriété | Format de recherche (valeur de facette) |
 |---|---|
 | [!UICONTROL Titre] | title:John |
 | [!UICONTROL Créateur] | creator:John |
@@ -60,20 +60,20 @@ La fonction de recherche en texte intégral de GQL vous permet de rechercher des
 | [!UICONTROL Description] | description:&quot;Sample Image&quot; |
 | [!UICONTROL Outil créateur] | creatortool:&quot;Adobe Photoshop 7.0&quot; |
 | [!UICONTROL Détenteur de copyright] | copyrightowner:&quot;Adobe Systems&quot; |
-| [!UICONTROL Contributeur] | contributor:John |
+| [!UICONTROL Contributeur] | contributeur:John |
 | [!UICONTROL Conditions d’utilisation] | usageterms:&quot;CopyRights Reserved&quot; |
 | [!UICONTROL Créé] | créé:AAAA-MM-DTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
 | [!UICONTROL Date d’expiration] | expire : AAAA-MM-DTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
 | [!UICONTROL Heure d’activation] | ontime:YYYY-MM-DTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
 | [!UICONTROL Heure de désactivation] | off-time:AAAA-MM-DTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
-| [!UICONTROL Plage de temps] (expire la date, l’heure, l’heure d’arrêt) | facet field : lowerboundupperbound |
+| [!UICONTROL Plage de temps]  (expire la date, l’heure, l’heure d’arrêt) | facet field : lowerboundupperbound |
 | [!UICONTROL Chemin] | /content/dam/&lt;nom_dossier> |
 | [!UICONTROL Titre du PDF] | pdftitle:&quot;Adobe Document&quot; |
 | [!UICONTROL Objet] | subject:&quot;Training&quot; |
 | [!UICONTROL Balises] | tags:&quot;Location And Travel&quot; |
 | [!UICONTROL Type] | type:&quot;image\png&quot; |
-| [!UICONTROL Largeur de l’image] | width:lowerboundupperbound |
-| [!UICONTROL Hauteur de l’image] | height:lowerboundupperbound |
+| [!UICONTROL Largeur de l’image] | width:lowerboundsupérieur |
+| [!UICONTROL Hauteur de l’image] | height:lowerboundsupérieur |
 | [!UICONTROL Personne] | person:John |
 
 Voici quelques exemples de formats de recherche pour des requêtes complexes :
