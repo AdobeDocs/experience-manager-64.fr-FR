@@ -11,7 +11,7 @@ ht-degree: 79%
 ---
 
 
-# Process assets Using media handlers and workflows {#processing-assets-using-media-handlers-and-workflows}
+# Traiter les ressources à l’aide de gestionnaires de médias et de workflows {#processing-assets-using-media-handlers-and-workflows}
 
 Adobe Experience Manager Assets fournit un ensemble de workflows et de gestionnaires de médias par défaut pour traiter les ressources. Un processus définit une tâche de gestion et de traitement des ressources standard, puis délègue les tâches spécifiques aux gestionnaires de médias, par exemple la génération de miniatures ou l’extraction de métadonnées.
 
@@ -23,7 +23,7 @@ Les gestionnaires de médias sont des services d’AEM Assets qui effectuent des
 >
 >Reportez-vous à la page [Formats pris en charge par Assets](assets-formats.md) pour une description de tous les formats pris en charge par AEM Assets, ainsi que des fonctionnalités prises en charge pour chaque format.
 
-## Default media handlers {#default-media-handlers}
+## Gestionnaires de médias par défaut {#default-media-handlers}
 
 Les gestionnaires de médias suivants sont disponibles dans AEM Assets et gèrent les types MIME les plus courants :
 
@@ -55,7 +55,7 @@ Il est possible d’afficher les gestionnaires de médias actifs :
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## Use media handlers in workflows to perform tasks on Assets {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Utiliser des gestionnaires de médias dans les workflows pour effectuer des tâches sur les ressources {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 Les gestionnaires de médias sont des services généralement utilisés conjointement avec des workflows.
 
@@ -80,7 +80,7 @@ Pour activer/désactiver un gestionnaire de médias :
 
 Pour prendre en charge un nouveau type de médias ou exécuter des tâches spécifiques sur une ressource, il est nécessaire de créer un gestionnaire de médias. Cette section décrit la procédure à suivre.
 
-#### Classes et interfaces importantes  {#important-classes-and-interfaces}
+#### Classes et interfaces importantes   {#important-classes-and-interfaces}
 
 La meilleure façon de démarrer une implémentation est d’hériter d’une implémentation abstraite fournie qui prend en charge l’essentiel du traitement et qui fournit un comportement par défaut raisonnable : à savoir la classe `com.day.cq.dam.core.AbstractAssetHandler`.
 
@@ -127,15 +127,15 @@ Dans cette section, vous allez créer un gestionnaire de texte spécifique qui g
 
 Procédez comme suit :
 
-Reportez-vous à Outils [de](../sites-developing/dev-tools.md) développement pour installer et configurer Eclipse avec un module externe Maven et pour configurer les dépendances nécessaires au projet Maven.
+Reportez-vous à [Outils de développement](../sites-developing/dev-tools.md) pour installer et configurer Eclipse avec un module externe Maven et pour configurer les dépendances nécessaires au projet Maven.
 
 Lorsque vous téléchargez un fichier txt dans AEM après avoir effectué la procédure suivante, les métadonnées du fichier sont extraites, et deux miniatures comportant un filigrane sont générées.
 
-1. Dans Eclipse, créez le projet `myBundle` Maven :
+1. Dans Eclipse, créez le projet Maven `myBundle` :
 
-   1. In the Menu bar, click **[!UICONTROL File > New > Other]**.
-   1. In the dialog, expand the Maven folder, select Maven Project and click **[!UICONTROL Next]**.
-   1. Check the Create a simple project box and the Use default Workspace locations box, then click **[!UICONTROL Next]**.
+   1. Dans la barre de menus, cliquez sur **[!UICONTROL Fichier > Nouveau > Autre]**.
+   1. Dans la boîte de dialogue, développez le dossier expert, sélectionnez Projet expert et cliquez sur **[!UICONTROL Suivant]**.
+   1. Cochez les cases Créer un projet simple et Utiliser les emplacements d’espace de travail par défaut, puis cliquez sur **[!UICONTROL Suivant]**.
    1. Définissez le projet Maven :
 
       * Id de groupe : com.day.cq5.myhandler
@@ -147,7 +147,7 @@ Lorsque vous téléchargez un fichier txt dans AEM après avoir effectué la pro
 
 1. Réglez le compilateur Java sur la version 1.5 :
 
-   1. Right-click the `myBundle` project, select Properties.
+   1. Cliquez avec le bouton droit de la souris sur le projet `myBundle`, puis sélectionnez Propriétés.
    1. Sélectionnez Compilateur Java et définissez les propriétés suivantes sur 1.5 :
 
       * Niveau de conformité du compilateur
@@ -273,16 +273,16 @@ Lorsque vous téléchargez un fichier txt dans AEM après avoir effectué la pro
     </dependencies>
    ```
 
-1. Créez le package `com.day.cq5.myhandler` contenant les classes Java sous `myBundle/src/main/java`:
+1. Créez le package `com.day.cq5.myhandler` contenant les classes Java sous `myBundle/src/main/java` :
 
-   1. Under myBundle, right-click `src/main/java`, select New, then Package.
-   1. Name it `com.day.cq5.myhandler` and click Finish.
+   1. Sous myBundle, cliquez avec le bouton droit `src/main/java`, sélectionnez New, puis Package.
+   1. Nommez-le `com.day.cq5.myhandler` et cliquez sur Terminer.
 
 1. Créez la classe Java `MyHandler`:
 
-   1. In Eclipse, under `myBundle/src/main/java`, right-click the `com.day.cq5.myhandler` package, select New, then Class.
+   1. Dans Eclipse, sous `myBundle/src/main/java`, cliquez avec le bouton droit sur le package `com.day.cq5.myhandler`, sélectionnez Nouveau, puis Classe.
    1. Dans la boîte de dialogue, attribuez le nom MyHandler à la classe Java, puis cliquez sur Finish (Terminer). Eclipse crée le fichier MyHandler.java et l’ouvre.
-   1. In `MyHandler.java` replace the existing code with the following and then save the changes:
+   1. Dans `MyHandler.java`, remplacez le code existant par le code suivant, puis enregistrez les modifications :
 
    ```java
    package com.day.cq5.myhandler; 
@@ -426,12 +426,12 @@ Lorsque vous téléchargez un fichier txt dans AEM après avoir effectué la pro
 
 1. Compilez la classe Java et créez le lot :
 
-   1. Right-click the myBundle project, select **[!UICONTROL Run As]**, then **[!UICONTROL Maven Install]**.
-   1. The bundle `myBundle-0.0.1-SNAPSHOT.jar` (containing the compiled class) is created under `myBundle/target`.
+   1. Cliquez avec le bouton droit de la souris sur le projet myBundle, sélectionnez **[!UICONTROL Exécuter en tant que]**, puis **[!UICONTROL Maven Install]**.
+   1. Le lot `myBundle-0.0.1-SNAPSHOT.jar` (contenant la classe compilée) est créé sous `myBundle/target`.
 
-1. In CRX Explorer, create a new node under `/apps/myApp`. Name = `install`, Type = `nt:folder`.
-1. Copy the bundle `myBundle-0.0.1-SNAPSHOT.jar` and store it under `/apps/myApp/install` (for example with WebDAV). Le nouveau gestionnaire de texte est à présent actif dans AEM.
-1. Dans votre navigateur, ouvrez la console de gestion web Apache Felix. Select the Components tab and disable the default text handler `com.day.cq.dam.core.impl.handler.TextHandler`.
+1. Dans CRX Explorer, créez un nouveau noeud sous `/apps/myApp`. Nom = `install`, Type = `nt:folder`.
+1. Copiez le lot `myBundle-0.0.1-SNAPSHOT.jar` et stockez-le sous `/apps/myApp/install` (par exemple avec WebDAV). Le nouveau gestionnaire de texte est à présent actif dans AEM.
+1. Dans votre navigateur, ouvrez la console de gestion web Apache Felix. Sélectionnez l’onglet Composants et désactivez le gestionnaire de texte par défaut `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Gestionnaire de médias en ligne de commande {#command-line-based-media-handler}
 
@@ -458,13 +458,13 @@ Le processus `CommandLineProcess` effectue les opérations suivantes par ordre d
 * Supprime le répertoire temporaire.
 * Crée des miniatures basées sur ces rendus, si spécifié. Le nombre et les dimensions des miniatures sont définis par les arguments de l’étape.
 
-### An example using ImageMagick {#an-example-using-imagemagick}
+### Exemple d’utilisation d’ImageMagick {#an-example-using-imagemagick}
 
 L’exemple suivant montre comment configurer l’étape de processus de ligne de commande de sorte qu’à chaque fois qu’une ressource de type MIME gif ou tiff est ajoutée à /content/dam sur le serveur AEM, une image inversée de l’original est créée avec trois miniatures supplémentaires (140x100, 48x48 et 10x250).
 
 Pour ce faire, utilisez ImageMagick. Installez ImageMagick sur le disque hébergeant le serveur AEM :
 
-1. Installation d’ImageMagick. See [ImageMagick documentation](https://www.imagemagick.org/script/download.php) for more information.
+1. Installation d’ImageMagick. Pour plus d’informations, consultez la [documentation ImageMagick](https://www.imagemagick.org/script/download.php).
 1. Configurez l’outil afin de pouvoir exécuter convert sur la ligne de commande.
 1. Pour vérifier si cet outil est installé correctement, exécutez la commande `convert -h` sur la ligne de commande.
 
@@ -474,7 +474,7 @@ Pour ce faire, utilisez ImageMagick. Installez ImageMagick sur le disque héberg
    >
    >Dans certaines versions de Windows (Windows SE, par exemple), il se peut que la commande convert ne s’exécute pas, car elle est en conflit avec l’utilitaire de conversion natif de Windows. Dans ce cas, indiquez le chemin complet de l’utilitaire ImageMagick utilisé pour convertir les fichiers image en miniatures. Par exemple, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. To see if the tool runs properly, add a JPG image to the working directory and run the command `convert <image-name>.jpg -flip <image-name>-flipped.jpg` on the command line.
+1. Pour vérifier si l&#39;outil s&#39;exécute correctement, ajoutez une image JPG au répertoire de travail et exécutez la commande `convert <image-name>.jpg -flip <image-name>-flipped.jpg` sur la ligne de commande.
 
    Une image inversée est ajoutée au répertoire.
 
@@ -494,15 +494,15 @@ Pour tester le workflow modifié, ajoutez une ressource à `/content/dam`.
 1. Accédez à la console **[!UICONTROL CQ5 DAM]**, par exemple `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Ouvrez la ressource `myImage.tiff` et vérifiez que l’image inversée et les trois miniatures ont bien été créées.
 
-#### Configure the CommandLineProcess process step {#configuring-the-commandlineprocess-process-step}
+#### Configuration de l&#39;étape de processus CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
-Cette section décrit la procédure à suivre pour définir les **[!UICONTROL Arguments du processus]** de `CommandLineProcess`. Séparez les valeurs des arguments [!UICONTROL de] processus à l’aide d’une virgule et ne début pas une valeur avec un espace blanc.
+Cette section décrit la procédure à suivre pour définir les **[!UICONTROL Arguments du processus]** de `CommandLineProcess`. Séparez les valeurs de [!UICONTROL Traiter les arguments] à l’aide d’une virgule et ne début pas une valeur avec un espace blanc.
 
 | Argument-Format | Description |
 |---|---|
 | mime:&lt;mime-type> | Argument facultatif. Le processus est appliqué si la ressource a le même type MIME que celui de l’argument. <br>Plusieurs types MIME peuvent être définis. |
 | tn:&lt;width>:&lt;height> | Argument facultatif. Le processus crée une miniature avec les dimensions définies dans l’argument. <br>Plusieurs miniatures peuvent être définies. |
-| cmd: &lt;command> | Définit la commande qui sera exécutée. La syntaxe dépend de l’outil de ligne de commande. Une seule commande peut être définie. <br>Vous pouvez utiliser les variables suivantes pour créer la commande :<br>`${filename}`: nom du fichier d’entrée, par exemple original.jpg <br> `${file}`: nom de chemin d’accès complet du fichier d’entrée, par exemple /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: du fichier d’entrée, par exemple /tmp/cqdam0816.tmp <br>`${basename}`: nom du fichier d’entrée sans son extension, par exemple original <br>`${extension}`: extension du fichier d’entrée, par exemple jpg |
+| cmd: &lt;command> | Définit la commande qui sera exécutée. La syntaxe dépend de l’outil de ligne de commande. Une seule commande peut être définie. <br>Vous pouvez utiliser les variables suivantes pour créer la commande :<br>`${filename}` : nom du fichier d’entrée, par exemple original.jpg  <br> `${file}`: nom de chemin d’accès complet du fichier d’entrée, par exemple /tmp/cqdam0816.tmp/original.jpg  <br> `${directory}`: du fichier d’entrée, par exemple /tmp/cqdam0816.tmp  <br>`${basename}`: nom du fichier d’entrée sans son extension, par exemple original  <br>`${extension}`: extension du fichier d’entrée, par exemple jpg |
 
 Par exemple, si ImageMagick est installé sur le disque hébergeant le serveur AEM et que vous créez une étape de processus en utilisant **CommandLineProcess** en tant qu’implémentation et les valeurs suivantes en tant qu’**arguments de processus** :
 
@@ -520,4 +520,4 @@ Utilisez les [!UICONTROL Arguments de processus] suivants pour créer le rendu w
 
 >[!NOTE]
 >
->The `CommandLineProcess` step only applies to Assets (nodes of type `dam:Asset`) or descendants of an asset.
+>L’étape `CommandLineProcess` s’applique uniquement aux actifs (noeuds de type `dam:Asset`) ou descendants d’un actif.
