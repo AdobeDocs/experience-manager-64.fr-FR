@@ -11,7 +11,7 @@ ht-degree: 79%
 ---
 
 
-# Create and configure Asset Editor pages {#creating-and-configuring-asset-editor-pages}
+# Créer et configurer des pages d’Éditeur de ressources {#creating-and-configuring-asset-editor-pages}
 
 Ce document répond aux questions suivantes :
 
@@ -23,7 +23,7 @@ Ce document répond aux questions suivantes :
 >
 >Asset Share est disponible en tant qu’implémentation de référence en source libre. Voir [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) . Il n’est pas officiellement pris en charge.
 
-## Why Create and Configure Asset Editor Pages? {#why-create-and-configure-asset-editor-pages}
+## Pourquoi créer et configurer des pages de l’éditeur de ressources ? {#why-create-and-configure-asset-editor-pages}
 
 La gestion des actifs numériques est utilisée dans un nombre toujours plus grand de scénarios. Lorsque vous passez d’une solution à petite échelle pour un petit groupe d’utilisateurs formés (par exemple des photographes ou des taxonomistes) à des groupes d’utilisateurs plus vastes et plus diversifiés (par exemple, des utilisateurs de l’entreprise, des auteurs de gestion de contenu web, des journalistes, etc.), l’interface utilisateur puissante d’Adobe Experience Manager (AEM) destinée aux utilisateurs professionnels peut fournir trop d’informations et les parties prenantes commencent à demander des interfaces utilisateur ou des applications spécifiques pour accéder aux ressources numériques qui les concernent.
 
@@ -33,7 +33,7 @@ La création d’une application axée sur les ressources devient, dans une larg
 
 Dans AEM, une application axée sur les ressources consiste en une page Éditeur de ressources pouvant être utilisée pour obtenir une vue détaillée d’une ressource spécifique. Une page Éditeur de ressources permet également de modifier les métadonnées, à condition que l’utilisateur accédant à la ressource dispose des autorisations nécessaires.
 
-## Création et configuration d’une page de partage de ressources {#creating-and-configuring-an-asset-share-page}
+## Créer et configurer une page de partage de ressources {#creating-and-configuring-an-asset-share-page}
 
 Personnalisez la fonctionnalité du Finder de la gestion des actifs numériques et créez des pages disposant de toutes les fonctionnalités dont vous avez besoin, appelées pages Partage de ressources. Pour créer une page Partage de ressources, ajoutez la page à l’aide du modèle Partage de ressources de Geometrixx, puis personnalisez les opérations que les utilisateurs peuvent effectuer sur cette page, déterminez comment les utilisateurs voient les ressources et décidez comment ils peuvent créer leurs requêtes.
 
@@ -44,7 +44,7 @@ Voici quelques cas d’utilisation de création d’une page Partage de ressourc
 * Base de données d’images pour les utilisateurs du site web
 * Interface de balisage des données multimédias pour les éditeurs de métadonnées
 
-### Create an Asset Share page {#creating-an-asset-share-page}
+### Créer une page de partage de ressources {#creating-an-asset-share-page}
 
 Vous pouvez créer une page Partage de ressources lorsque vous travaillez sur des sites web ou à partir du gestionnaire des actifs numériques.
 
@@ -56,15 +56,15 @@ Pour créer une page Partage de ressources dans la console **Sites web**, procé
 
 1. Dans l’onglet **[!UICONTROL Sites web]**, accédez à l’emplacement où vous souhaitez créer une page Partage de ressources et cliquez sur **[!UICONTROL Nouveau]**.
 
-1. Select the **[!UICONTROL Asset Share]** page and click **[!UICONTROL Create]**. La nouvelle page est créée et la page Partage de ressources est répertoriée dans l’onglet **[!UICONTROL Sites web]**.
+1. Sélectionnez la page **[!UICONTROL Partage de ressources]** et cliquez sur **[!UICONTROL Créer]**. La nouvelle page est créée et la page Partage de ressources est répertoriée dans l’onglet **[!UICONTROL Sites web]**.
 
-![dam8](assets/dam8.png)
+![barrage8](assets/dam8.png)
 
 La page de base créée à l’aide du modèle Partage de ressources de gestion des actifs numériques de Geometrixx se présente comme suit :
 
 ![screen_shot_2012-04-18at115456am](assets/screen_shot_2012-04-18at115456am.png)
 
-Pour personnaliser la page Partage de ressources, utilisez les éléments du sidekick. Vous pouvez également modifier les propriétés du créateur de requêtes. The page **[!UICONTROL Geometrixx Press Center]** is a customized version of a page based on this template:
+Pour personnaliser la page Partage de ressources, utilisez les éléments du sidekick. Vous pouvez également modifier les propriétés du créateur de requêtes. La page **[!UICONTROL Geometrixx Press Center]** est une version personnalisée d&#39;une page basée sur ce modèle :
 
 ![screen_shot_2012-04-19at123048pm](assets/screen_shot_2012-04-19at123048pm.png)
 
@@ -81,7 +81,7 @@ Pour créer une page Partage de ressources par l’intermédiaire du gestionnair
 
    Par défaut, lorsque vous créez une page Partage de ressources à partir de l’option **[!UICONTROL Nouveau]**, une Visionneuse d’éléments et un Éditeur de ressources sont automatiquement créés pour vous.
 
-#### Personnalisation des actions {#customizing-actions}
+#### Personnaliser les actions {#customizing-actions}
 
 Vous pouvez déterminer les actions que les utilisateurs peuvent effectuer sur des ressources numériques sélectionnées à partir d’une sélection d’actions prédéfinies.
 
@@ -96,16 +96,16 @@ Pour ajouter des actions à la page Partage de ressources :
 |---|---|
 | [!UICONTROL Supprimer l’action] | Les utilisateurs peuvent supprimer les fichiers sélectionnés. |
 | [!UICONTROL Télécharger l’action] | Permet aux utilisateurs de télécharger les fichiers sélectionnés sur leur ordinateur. |
-| [!UICONTROL Action Lightbox] | Enregistre les fichiers dans une &quot;boîte lumineuse&quot; où vous pouvez effectuer d’autres actions. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. Elle peut également être utilisée comme panier pour les ressources. |
-| [!UICONTROL Déplacer l’action] | Les utilisateurs peuvent déplacer la ressource vers un autre emplacement |
+| [!UICONTROL Action Lightbox] | Enregistre les actifs dans une &quot;boîte lumineuse&quot;   où vous pouvez exécuter d’autres actions sur ces éléments. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. Elle peut également être utilisée comme panier pour les ressources. |
+| [!UICONTROL Déplacer l’action] | Les utilisateurs peuvent déplacer le fichier vers un autre   emplacement |
 | [!UICONTROL Action sur les tags] | permet aux utilisateurs d’ajouter des balises aux fichiers sélectionnés. |
-| [!UICONTROL Action Afficher un élément] | Ouvre le fichier dans l’éditeur de fichiers en vue d’une manipulation par l’utilisateur. |
+| [!UICONTROL Action Afficher un élément] | Ouvre le fichier dans l’éditeur de fichiers pour   manipulation des utilisateurs. |
 
 1. Faites glisser l’action appropriée vers la zone **Actions** de la page. Cette opération crée un bouton utilisé pour effectuer cette action.
 
    ![chlimage_1-387](assets/chlimage_1-387.png)
 
-#### Determine how search results are presented {#determining-how-search-results-are-presented}
+#### Déterminer comment les résultats de la recherche sont présentés {#determining-how-search-results-are-presented}
 
 Vous déterminez comment les résultats sont affichés à partir d’une liste de loupes prédéfinie.
 
@@ -132,7 +132,7 @@ Les objectifs suivants sont disponibles :
 
 ![chlimage_1-389](assets/chlimage_1-389.png)
 
-#### Customize the Query Builder {#customizing-the-query-builder}
+#### Personnaliser le créateur de Requêtes {#customizing-the-query-builder}
 
 Query Builder permet d’entrer des termes de recherche et de créer du contenu pour la page Partage de ressources. Lorsque vous modifiez Query Builder, vous pouvez également déterminer le nombre de résultats de la recherche affichés par page, l’Éditeur de ressources qui s’ouvre lorsque vous double-cliquez sur une ressource, le chemin parcouru par la requête et les types de nœuds personnalisés.
 
@@ -150,7 +150,7 @@ Pour personnaliser Query Builder :
 
 1. Saisissez un autre type de nœud, le cas échéant.
 
-1. In the **[!UICONTROL Query Builder URL]** field, you can override or wrap the query builder and enter the new servlet URLs with the existing query builder component. Dans le champ **[!UICONTROL URL du flux]**, vous pouvez également remplacer l’URL du flux.
+1. Dans le champ **[!UICONTROL URL du créateur de Requêtes]**, vous pouvez remplacer ou encapsuler le créateur de requêtes et entrer les nouvelles URL de servlet avec le composant de créateur de requêtes existant. Dans le champ **[!UICONTROL URL du flux]**, vous pouvez également remplacer l’URL du flux.
 
    ![screen_shot_2012-04-23at15313pm](assets/screen_shot_2012-04-23at15313pm.png)
 
@@ -158,7 +158,7 @@ Pour personnaliser Query Builder :
 
    ![screen_shot_2012-04-23at15300pm](assets/screen_shot_2012-04-23at15300pm.png)
 
-#### Ajouter des prédicats {#adding-predicates}
+#### Prédicats d&#39;Ajoute {#adding-predicates}
 
 AEM Assets inclut un certain nombre de prédicats que vous pouvez ajouter à la page Partage de ressources. Ils permettent à vos utilisateurs de restreindre les recherches. Dans certains cas, ils peuvent remplacer un paramètre de Query Builder (par exemple, le paramètre Chemin).
 
@@ -187,7 +187,7 @@ Pour plus d’informations, voir la [documentation Javadoc sur les prédicats](h
 
    ![screen_shot_2012-04-23at15640pm](assets/screen_shot_2012-04-23at15640pm.png)
 
-## Création et configuration d’une page Editeur de ressources {#creating-and-configuring-an-asset-editor-page}
+## Créer et configurer une page d’éditeur de ressources {#creating-and-configuring-an-asset-editor-page}
 
 Personnalisez l’Éditeur de ressources pour déterminer comment les utilisateurs peuvent afficher et modifier les ressources numériques. Pour ce faire, créez une page Éditeur de ressources, puis personnalisez les vues et les actions que les utilisateurs peuvent effectuer sur cette page.
 
@@ -195,7 +195,7 @@ Personnalisez l’Éditeur de ressources pour déterminer comment les utilisateu
 >
 >Si vous souhaitez ajouter des champs personnalisés à l’Éditeur de ressources du gestionnaire des actifs numériques, ajoutez les nouveaux nœuds cq:Widget à `/apps/dam/content/asseteditors.`
 
-### Création de la page Editeur de ressources {#creating-the-asset-editor-page}
+### Créer la page Editeur de ressources {#creating-the-asset-editor-page}
 
 Lors de la création de la page Éditeur de ressources, il est recommandé de créer la page directement sous la page Partage de ressources.
 
@@ -211,11 +211,11 @@ La page de base créée à l’aide du modèle Éditeur de ressources Geometrixx
 
 ![assetshare5](assets/assetshare5.bmp)
 
-Pour personnaliser votre page Éditeur de ressources, utilisez les éléments du sidekick. The Asset Editor page that is accessed from the **[!UICONTROL Geometrixx Press Center]** is a customized version of a page based on this template:
+Pour personnaliser votre page Éditeur de ressources, utilisez les éléments du sidekick. La page Editeur de ressources accessible à partir du **[!UICONTROL Centre de presse de Geometrixx]** est une version personnalisée d’une page basée sur ce modèle :
 
 ![assetshare6](assets/assetshare6.bmp)
 
-#### Set which Asset Editor opens from an Asset Share page {#setting-which-asset-editor-opens-from-an-asset-share-page}
+#### Définir l’éditeur de ressources qui s’ouvre à partir de la page de partage de ressources {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
 Après avoir créé la page Éditeur de ressources personnalisée, vous devez vous assurer que, lorsque vous double-cliquez sur des ressources, le Partage de ressources personnalisé que vous avez créé ouvre les ressources dans la page Éditeur personnalisée.
 
@@ -231,7 +231,7 @@ Pour définir la page Éditeur de ressources :
 
    ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
-#### Add Asset Editor components {#adding-asset-editor-components}
+#### Ajouter les composants de l’éditeur de ressources {#adding-asset-editor-components}
 
 Vous déterminez les fonctionnalités d’un Éditeur de ressources en ajoutant des composants à la page.
 
@@ -251,7 +251,7 @@ Pour ajouter des composants de l’Éditeur de ressources :
 
    | Composant | Description |
    |---|---|
-   | **[!UICONTROL Formulaire]de métadonnées et champ de texte de[!UICONTROL métadonnées]** | Vous permet d’ajouter des métadonnées supplémentaires à un fichier et d’effectuer une action, telle que l’envoi, sur ce fichier. |
+   | **[!UICONTROL Formulaire ] de métadonnées et champ de texte  [!UICONTROL de métadonnées]** | Vous permet d’ajouter des métadonnées supplémentaires à un fichier et d’effectuer une action, telle que l’envoi, sur ce fichier. |
    | **[!UICONTROL Sous-ressources]** | Permet de personnaliser des sous-ressources. |
    | **Balises** | Permet aux utilisateurs de sélectionner et d’ajouter des balises à un fichier. |
    | **[!UICONTROL Miniature]** | Affiche une miniature du fichier, son nom de fichier et vous permet d’ajouter un texte de remplacement. Vous pouvez également ajouter des actions de l’Éditeur de ressources dans ce composant. |
@@ -278,7 +278,7 @@ Le Formulaire de métadonnées est un formulaire incluant une action de début e
 
    ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-   See [Customizing and Extending AEM Assets](extending-assets.md) for information on modifying the namespaces available in the metadata form.
+   Voir [Personnalisation et extension de AEM Assets](extending-assets.md) pour plus d’informations sur la modification des espaces de nommage disponibles dans le formulaire de métadonnées.
 
 1. Cliquez sur l’onglet **[!UICONTROL Contraintes]**. Dans cet onglet, vous pouvez choisir si un champ est requis et, si nécessaire, ajouter des contraintes.
 
@@ -294,7 +294,7 @@ Le Formulaire de métadonnées est un formulaire incluant une action de début e
 
 Sur la page Éditeur de ressources, les utilisateurs peuvent ensuite saisir des valeurs dans les champs de métadonnées (s’ils sont modifiables) et effectuer l’action de fin (par exemple, envoyer les modifications).
 
-#### Sous-ressources {#sub-assets}
+#### Sous-ressources  {#sub-assets}
 
 Le composant Sous-ressources permet d’afficher et de sélectionner des sous-ressources. Vous pouvez déterminer les noms qui apparaissent dans la [ressources principale](assets.md#what-are-digital-assets) et les sous-ressources.
 
@@ -330,7 +330,7 @@ Voici un composant Balises renseigné :
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniature  {#thumbnail}
+#### Miniature   {#thumbnail}
 
 Le composant Miniature est l’emplacement où la ressource affiche la miniature sélectionnée (pour la plupart des formats, la miniature est extraite automatiquement). En outre, le composant affiche le nom de fichier et les [actions que vous pouvez modifier](assets-finder-editor.md#adding-asset-editor-actions).
 
@@ -370,7 +370,7 @@ Vous pouvez déterminer les actions que les utilisateurs peuvent effectuer sur d
 
 Pour ajouter des actions à la page Éditeur de ressources :
 
-1. In the Asset Editor page that you want to customize, click **[!UICONTROL Asset Editor]** in the sidekick.<br>
+1. Dans la page Editeur de ressources que vous souhaitez personnaliser, cliquez sur **[!UICONTROL Éditeur de ressources]** dans le panneau latéral.<br>
 
    ![sélectionner l’éditeur de fichiers dans le panneau latéral](assets/screen_shot_2012-04-23at35515pm.png)
 
@@ -378,18 +378,18 @@ Pour ajouter des actions à la page Éditeur de ressources :
 
    | Action | Description |
    |---|---|
-   | [!UICONTROL Téléchargement] | Permet aux utilisateurs de télécharger les fichiers sélectionnés sur leur ordinateur. |
-   | [!UICONTROL Editeurs] | Permet aux utilisateurs de modifier une image (édition interactive) |
-   | [!UICONTROL Lightbox] | Enregistre les fichiers dans une &quot;boîte lumineuse&quot; où vous pouvez effectuer d’autres actions. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. |
+   | [!UICONTROL Téléchargement] | Permet aux utilisateurs de télécharger les éléments sélectionnés   sur leurs ordinateurs. |
+   | [!UICONTROL Editeurs] | permet aux utilisateurs de modifier une image.   (édition interactive) |
+   | [!UICONTROL Lightbox] | Enregistre les actifs dans une   &quot;lightbox&quot; où vous pouvez exécuter d’autres actions sur ces objets. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. |
    | [!UICONTROL Verrouillage] | Permet aux utilisateurs de verrouiller un fichier. Cette fonctionnalité n’est pas activée par défaut et doit être activée dans la liste des composants. |
-   | [!UICONTROL Références] | Cliquez sur cette option pour afficher sur quelles pages la ressource est utilisée. |
-   | [!UICONTROL Contrôle de version] | Permet de créer et de restaurer des versions d’un fichier. |
+   | [!UICONTROL Références] | Cliquez pour afficher sur quelles pages   la ressource est utilisée. |
+   | [!UICONTROL Contrôle de version] | Permet de créer et de restaurer   versions d’une ressource. |
 
 1. Faites glisser l’action appropriée vers la zone **Actions** de la page. Cette opération crée un bouton utilisé pour effectuer cette action.
 
 ![chlimage_1-393](assets/chlimage_1-393.png)
 
-## Edit multiple assets with the Asset Editor page {#multi-editing-assets-with-the-asset-editor-page}
+## Modifier plusieurs fichiers à l’aide de la page Editeur de fichiers {#multi-editing-assets-with-the-asset-editor-page}
 
 Avec AEM Assets, vous pouvez apporter des modifications à plusieurs ressources à la fois. Après avoir sélectionné les ressources, vous pouvez simultanément modifier leurs :
 
@@ -398,13 +398,13 @@ Avec AEM Assets, vous pouvez apporter des modifications à plusieurs ressources 
 
 Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeur de ressources :
 
-1. Ouvrez la page Centre de **[!UICONTROL presse]** Geometrixx à `http://localhost:4502/content/geometrixx/en/company/press.html`.
+1. Ouvrez la page **[!UICONTROL Centre de presse]** du Geometrixx à `http://localhost:4502/content/geometrixx/en/company/press.html`.
 1. Sélectionnez les ressources :
 
    * sous Windows : `Ctrl + click` chaque ressource.
    * sur Mac : `Cmd + click` chaque ressource.
 
-   To select a range of assets: click the first asset then `Shift + click` the last asset.
+   Pour sélectionner une plage de ressources : cliquez sur le premier fichier, puis `Shift + click` sur le dernier fichier.
 
 1. Cliquez sur **[!UICONTROL Éditer les métadonnées]** dans le champ **Actions** (partie gauche de la page).
 
@@ -414,7 +414,7 @@ Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeu
    * Une balise qui s’applique à tous les actifs s’affiche avec une police normale.
    * Métadonnées autres que les balises : la valeur du champ ne s’affiche que si elle est identique pour toutes les ressources sélectionnées.
 
-1. Click **[!UICONTROL Download]** to download a ZIP file containing the assets original renditions.
+1. Cliquez sur **[!UICONTROL Télécharger]** pour télécharger un fichier ZIP contenant les ressources et les rendus d’origine.
 1. Cliquez sur l’icône en forme de crayon en regard du champ **[!UICONTROL Balises]** pour modifier ces dernières :
 
    * Les balises qui ne s’appliquent pas à toutes les ressources, mais seulement à quelques-unes, s’affichent avec un arrière-plan grisé.
@@ -423,12 +423,12 @@ Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeu
    Vous pouvez :
 
    * cliquer sur l’icône `x` pour supprimer la balise de toutes les ressources ;
-   * Click the `+` icon to add the tag to all the assets.
-   * Click the `arrow` and select a tag to add a new tag to all the assets.
+   * Cliquez sur l&#39;icône `+` pour ajouter la balise à toutes les ressources.
+   * Cliquez sur `arrow` et sélectionnez une balise pour ajouter une nouvelle balise à tous les actifs.
 
    Cliquez sur **[!UICONTROL OK]** pour enregistrer les modifications apportées au formulaire. La case en regard du champ **Balises** est automatiquement activée.
 
-1. Modifiez le champ Description. For example set it to: `This is a common description`. When a field is edited, its value overwrites the existing values of the selected assets when the form is submitted. La case en regard du champ est automatiquement cochée lorsque le champ est modifié.
+1. Modifiez le champ Description. Par exemple, définissez-le sur : `This is a common description`. Lorsqu’un champ est modifié, sa valeur remplace les valeurs existantes des ressources sélectionnées lors de l’envoi du formulaire. La case en regard du champ est automatiquement cochée lorsque le champ est modifié.
 
    `This is a common description`
 
