@@ -29,6 +29,6 @@ La traduction des ressources inclut les éléments suivants :
 1. [Application de services cloud de traduction à des dossiers](transition-cloud-services.md)
 1. [Création de projets de traduction](translation-projects.md)
 
-If your translation service provider does not provide a connector to integrate with AEM, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+Si votre prestataire de traduction ne fournit pas de connecteur à intégrer à AEM, utilisez un [autre processus](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
-Also see, [Creating translation projects for content fragments](creating-translation-projects-for-content-fragments.md).
+Voir aussi [Création de projets de traduction pour les fragments de contenu](creating-translation-projects-for-content-fragments.md).
