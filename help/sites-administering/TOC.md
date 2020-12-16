@@ -7,15 +7,15 @@ user-guide-title: Guide de l’utilisateur pour l’administration dans AEM 6.4
 breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 98%
+source-wordcount: '624'
+ht-degree: 97%
 
 ---
 
 
-# Guide de l’utilisateur pour l’administration dans AEM 6.4 {#administering}
+# Guide de l’utilisateur pour l’administration dans AEM 6.4  {#administering}
 
 + [Présentation de l’administration du Guide de l’utilisateur](home.md)
 + Fonctionnalités des sites {#introduction}
@@ -50,7 +50,7 @@ ht-degree: 98%
    + [Éditeur en bloc](bulk-editor.md)
    + [Configuration des notifications électroniques](notification.md)
    + [Configuration de l’éditeur de texte enrichi pour produire des sites accessibles](rte-accessible-content.md)
-   + [Vérificateur de lien externe](external-link-checker.md)
+   + [Vérificateur de lien](external-link-checker.md)
    + [Résolution des incidents liés à AEM](troubleshoot.md)
    + [Maintenance du journal d’audit dans AEM 6](operations-audit-log.md)
    + [Éditeur](enable-classic-ui-editor.md)
@@ -67,7 +67,7 @@ ht-degree: 98%
    + [Configuration du conteneur et du mode de mises en page](configuring-responsive-layout.md)
    + [Activation de l’accès à l’IU classique](enable-classic-ui.md)
    + [Démarrage de workflows](workflows-starting.md)
-   + [Configuration des modules externes d’éditeur de texte enrichi ](configure-rich-text-editor-plug-ins.md)
+   + [Configuration des modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md)
    + [Consoles d’administration](enable-classic-ui-admin.md)
 + Sécurité {#security}
    + [Administration et sécurité des utilisateurs](security.md)
@@ -75,7 +75,7 @@ ht-degree: 98%
    + [Liste de contrôle de sécurité](security-checklist.md)
    + [10 plus grands risques OWASP](owasp-top10.md)
    + [Exécution d’AEM en mode Prêt pour la production](production-ready.md)
-   + [Gestion d’identité](identity-management.md)
+   + [Identity Management](identity-management.md)
    + [Authentification Adobe IMS et prise en charge de l’Admin Console pour AEM Managed Services](ims-config-and-admin-console.md)
    + [Création d’un groupe d’utilisateurs fermé](cug.md)
    + [Réduction des problèmes de sérialisation dans AEM](mitigating-serialization-issues.md)
@@ -95,7 +95,7 @@ ht-degree: 98%
    + [Traitement des demandes RGPD pour AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [Filtre de disposition du contenu](content-disposition-filter.md)
 + Personnalisation   {#personalization}
-   + [Personnalisation  ](personalization.md)
+   + [Personnalisation ](personalization.md)
    + [Configuration de ContextHub](contexthub-config.md)
    + [Contexte client](client-context.md)
    + [Campagnes](campaigns.md)
