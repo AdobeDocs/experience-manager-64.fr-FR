@@ -19,7 +19,7 @@ La fonctionnalité de recherche d’Adobe Experience Manager (AEM) a été amé
 
 AEM Assets déploie une fonction de tri côté serveur pour trier tout le jeu de ressources (quelle que soit sa taille) au sein d’un dossier ou d’une requête de recherche en une seule fois plutôt que par lots du côté client. Cela permet d’afficher rapidement les résultats pré-extraits sur l’interface utilisateur, ce qui se traduit par une opération de tri plus vive et réactive.
 
-## Tri des ressources en mode Liste {#sorting-assets-in-list-view}
+## Tri des ressources en mode Liste  {#sorting-assets-in-list-view}
 
 AEM Assets vous permet de trier les ressources de dossier sur la base des champs suivants :
 
@@ -50,7 +50,7 @@ AEM Assets vous permet de trier les ressources de dossier sur la base des champ
 
 >[!NOTE]
 >
->Pour trier les valeurs des `Name` ou des `Title`colonnes, superposez `/libs/dam/gui/content/commons/availablecolumns` et modifiez la valeur de `sortable` en `True`.
+>Pour trier les valeurs des colonnes `Name` ou `Title`, superposez `/libs/dam/gui/content/commons/availablecolumns` et remplacez la valeur `sortable` par `True`.
 
 ## Tri des ressources dans les résultats de la recherche {#sorting-assets-in-search-results}
 
