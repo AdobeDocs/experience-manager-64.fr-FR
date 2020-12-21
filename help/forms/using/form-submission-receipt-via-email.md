@@ -17,19 +17,19 @@ ht-degree: 89%
 ---
 
 
-# Envoi d’un accusé de réception d’envoi de formulaire par courrier électronique {#sending-a-form-submission-acknowledgement-via-email}
+# Envoi d’un accusé de réception d’envoi de formulaire par courrier électronique  {#sending-a-form-submission-acknowledgement-via-email}
 
 ## Envoi de données de formulaire adaptatif {#adaptive-form-data-submission}
 
 Les formulaires adaptatifs fournissent plusieurs flux de travaux [d’actions Envoyer](/help/forms/using/configuring-submit-actions.md) prêts à l’emploi pour envoyer les données de formulaire à différents points de terminaison.
 
-For example, the **Email action** submit action sends an email on successful submission of an adaptive form. Elle peut également être configurée pour envoyer les données de formulaire et le fichier PDF dans le courrier électronique.
+Par exemple, l’action d’envoi **Action Courrier électronique** envoie un courrier électronique lors de l’envoi réussi d’un formulaire adaptatif. Elle peut également être configurée pour envoyer les données de formulaire et le fichier PDF dans le courrier électronique.
 
 Cet article décrit la procédure pour activer l’action Courrier électronique dans un formulaire adaptatif et les différentes configurations fournies.
 
 >[!NOTE]
 >
->You can also use the **Email PDF action** to send the completed form by email as a PDF attachment. Les options de configuration disponibles pour cette action sont identiques à celles proposées pour l’action Courrier électronique. L’action PDF par courrier électronique est disponible uniquement pour les formulaires adaptatifs basés sur XFA.
+>Vous pouvez également utiliser l&#39;action **Envoyer le PDF par courrier électronique** pour envoyer le formulaire rempli par courrier électronique en tant que pièce jointe PDF. Les options de configuration disponibles pour cette action sont identiques à celles proposées pour l’action Courrier électronique. L’action PDF par courrier électronique est disponible uniquement pour les formulaires adaptatifs basés sur XFA.
 
 ## Action Courrier électronique {#email-action}
 
@@ -39,7 +39,7 @@ L’action Courrier électronique permet à un auteur d’envoyer automatiquemen
 >
 >Pour utiliser l’action Courrier électronique, vous devez configurer le service de messagerie AEM, comme décrit dans la section [Configuration du service de messagerie](/help/sites-administering/notification.md#configuring-the-mail-service).
 
-### Activation de l’action Courrier électronique dans un formulaire adaptatif {#enabling-email-action-on-an-adaptive-form}
+### Activation de l’action Courrier électronique dans un formulaire adaptatif  {#enabling-email-action-on-an-adaptive-form}
 
 1. Ouvrez un formulaire adaptatif en mode d’édition.
 
@@ -49,7 +49,7 @@ L’action Courrier électronique permet à un auteur d’envoyer automatiquemen
 
    ![Boîte de dialogue Modifier le composant d’un formulaire adaptatif](assets/start_of_adp_form.png)
 
-1. Select the **Submit actions** tab and choose **Email action** from the Submit action drop-down list.
+1. Sélectionnez l&#39;onglet **Actions Envoyer** et choisissez **Action Courrier électronique** dans la liste déroulante Action Envoyer.
 
    L’onglet affiche les options pour configurer l’action Courrier électronique pour le formulaire actif.
 
@@ -75,7 +75,7 @@ Dans un formulaire adaptatif, les noms de champ sont appelés espaces réservés
 
 Sous l’onglet Action Courrier électronique, vous pouvez utiliser des espaces réservés qui sont traités lorsque l’action est effectuée. Cela implique que les en-têtes du courrier électronique (tels que De, CC, Cci et Objet) soient générés lorsque l’utilisateur envoie le formulaire.
 
-To define a placeholder, specify `${<field name>}` in a field in the Submit actions tab.
+Pour définir un espace réservé, spécifiez `${<field name>}` dans un champ de l’onglet Actions Envoyer.
 
 Par exemple, si le formulaire contient le champ **Adresse électronique**, appelé `email_addr`, pour capturer l’identifiant d’adresse électronique d’un utilisateur, vous pouvez spécifier les valeurs suivantes dans les champs De, CC ou Cci.
 
