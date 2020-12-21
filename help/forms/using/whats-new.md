@@ -23,7 +23,7 @@ Résumé des nouvelles fonctionnalités et améliorations de la version 6.4 d’
 
 AEM Forms comporte plusieurs nouvelles fonctionnalités et améliorations qui optimisent la création, la gestion et les expériences utilisateur avec des formulaires adaptatifs et des communications interactives.
 
-Lisez ci-après la présentation rapide des nouvelles fonctionnalités et améliorations. Consultez la documentation pour de plus amples informations. Vous pouvez également consulter les [notes de mise à jour](/help/release-notes/forms.md) d’AEM 6.4 Forms. For complete AEM 6.4 Forms documentation, visit [AEM 6.4 Forms Guide](/help/forms/home.md).
+Lisez ci-après la présentation rapide des nouvelles fonctionnalités et améliorations. Consultez la documentation pour de plus amples informations. Vous pouvez également consulter les [notes de mise à jour](/help/release-notes/forms.md) d’AEM 6.4 Forms. Pour obtenir la documentation complète de la version 6.4 de Forms, consultez le [AEM 6.4 Forms Guide](/help/forms/home.md).
 
 ## Communications interactives {#interactive-communications}
 
@@ -41,12 +41,12 @@ La communication interactive offre des avantages significatifs :
 
 La communication interactive est l’approche par défaut et recommandée pour créer des communications client. Pour continuer à utiliser les lettres dans AEM 6.3 Forms et AEM 6.2 Forms, vous devez installer un package de compatibilité.
 
-### Création d’une communication interactive multicanaux {#multi-channel-interactive-communication-authoring}
+### Création d’une communication interactive multicanaux  {#multi-channel-interactive-communication-authoring}
 
 Grâce à la communication interactive, vous pouvez créer et modifier des documents d’impression et web à partir d’un seul éditeur de document. En utilisant les mêmes fragments de document pour créer des rendus des deux canaux, vous évitez de fournir de multiples efforts.
 ![printweb_2](assets/printweb_2.png)
 
-For more information, see [Interactive Communications Overview](/help/forms/using/interactive-communications-overview.md).
+Pour plus d&#39;informations, voir [Présentation des communications interactives](/help/forms/using/interactive-communications-overview.md).
 
 ### Éditeur de document WYSIWYG {#wysiwyg-document-editor}
 
@@ -56,13 +56,13 @@ Pour créer une communication interactive ou en modifier une existante, les util
 
 ![glisser-n-déposer-lf](assets/drag-n-drop-lf.png)
 
-For more information, see [Introduction to authoring Interactive Communication](/help/forms/using/introduction-interactive-communication-authoring.md).
+Pour plus d’informations, voir [Introduction à la création de communications interactives](/help/forms/using/introduction-interactive-communication-authoring.md).
 
 ### Générer automatiquement la version web à partir du contenu imprimé dans la communication interactive {#auto-generate-web-version-from-print-content-in-interactive-communication}
 
 Les auteurs peuvent générer automatiquement du contenu de document Web à partir des documents d’impression pour créer, prévisualisation et modifier des documents Web et d’impression dans le même éditeur. Les auteurs de communications interactives peuvent créer une fois et publier sur tous les canaux. Les auteurs de communications interactives peuvent utiliser les mêmes fragments de document dans le canal papier et le  Web pour éviter la duplication des efforts.
 
-For more information, see [Print channel and web channel](/help/forms/using/web-channel-print-channel.md).
+Pour plus d’informations, voir [canal d’impression et canal Web](/help/forms/using/web-channel-print-channel.md).
 
 ### Utiliser des thèmes pour définir l’aspect du canal web de la communication interactive {#use-themes-to-style-web-channel-of-interactive-communication}
 
@@ -76,7 +76,7 @@ Pour plus d’informations, voir [Thèmes dans AEM Forms](/help/forms/using/them
 
 L’interface utilisateur de l’agent prend désormais en charge l’impression et l’aperçu web de la communication interactive. Dans la même interface utilisateur de l&#39;agent, vous pouvez choisir de modifier le canal Web du canal d&#39;impression et de la prévisualisation de votre communication interactive multicanal. Les champs, les variables, les éléments FDM et les fragments de document dans le canal d’impression peuvent être configurés pour être modifiés par l’agent dans l’interface utilisateur de l’agent. La prise en charge du modèle de données de formulaire vous permet de générer des aperçus avec des exemples de données pré-remplies.
 
-For more information, see [Prepare and send Interactive Communication using the Agent UI](/help/forms/using/prepare-send-interactive-communication.md).
+Pour plus d&#39;informations, voir [Préparation et envoi de communications interactives à l&#39;aide de l&#39;interface utilisateur de l&#39;agent](/help/forms/using/prepare-send-interactive-communication.md).
 
 ### Présenter des informations dans les graphiques {#present-information-in-charts}
 
@@ -84,7 +84,7 @@ La communication interactive prend en charge les graphiques dans le canal d’im
 
 ![graphique-2](assets/chart-2.png) ![graphique](assets/chart.png)
 
-For more information, see [Using charts in Interactive Communications](/help/forms/using/chart-component-interactive-communications.md).
+Pour plus d&#39;informations, voir [Utilisation de graphiques dans les communications interactives](/help/forms/using/chart-component-interactive-communications.md).
 
 ### Des connecteurs de données prêts à l’emploi pour pré-remplir des documents {#out-of-the-box-data-connectors-to-prefill-documents}
 
@@ -108,11 +108,11 @@ Pour en savoir plus, voir:
 * [Textes dans les communications interactives](/help/forms/using/texts-interactive-communications.md)
 * [Conditions dans les communications interactives](/help/forms/using/conditions-interactive-communications.md)
 
-### Package de compatibilité pour les actifs existants {#compatibility-package-for-existing-assets}
+### Package de compatibilité pour les actifs existants  {#compatibility-package-for-existing-assets}
 
 Par défaut, les actifs de lettres des versions précédentes d’AEM Forms ne sont pas pris en charge dans cette version. Pour continuer à utiliser les lettres dans AEM 6.3 Forms et AEM 6.2 Forms, vous devez installer un package de compatibilité.
 
-## Intégration de données {#data-integration}
+## Intégration de données  {#data-integration}
 
 ![](do-not-localize/data-integeration-1.png)
 
@@ -126,7 +126,7 @@ Les utilisateurs professionnels et les auteurs de formulaire peuvent désormais 
 
 De même, vous pouvez créer des entités et des propriétés enfant dans un modèle de données de formulaire existant et les lier ultérieurement aux entités et propriétés correspondantes dans une source de données.
 
-For more information, see [Create form data model](/help/forms/using/create-form-data-models.md).
+Pour plus d’informations, voir [Création d’un modèle de données de formulaire](/help/forms/using/create-form-data-models.md).
 
 ### Créer des propriétés calculées {#create-computed-properties}
 
@@ -134,7 +134,7 @@ Les auteurs et les développeurs de formulaires peuvent créer des propriétés 
 
 Une propriété calculée réside localement dans un modèle de données de formulaire et n’existe pas dans une source de données. Vous pouvez utiliser des propriétés calculées dans des formulaires adaptatifs et des communications interactives.
 
-For more information, see [Work with form data model](/help/forms/using/work-with-form-data-model.md).
+Pour plus d’informations, voir [Utilisation du modèle de données de formulaire](/help/forms/using/work-with-form-data-model.md).
 
 ### Prévisualiser les formulaires et les documents avec des exemples de données {#preview-forms-and-documents-with-sample-data}
 
@@ -142,15 +142,15 @@ Le modèle de données de formulaire permet de générer des exemples de donnée
 
 L’exemple de données est un ensemble de valeurs aléatoires qui change chaque fois que vous le générez. Cependant, vous pouvez modifier et enregistrer les exemples de données qui persistent même si vous les régénérez. Par exemple, si vous modifiez et enregistrez les exemples de données pour les propriétés Prénom et Nom et si vous ajoutez ultérieurement une autre propriété ou entité dans le modèle de données de formulaire et régénérez les exemples de données, les propriétés Prénom et Nom afficheront les valeurs enregistrées tandis que les valeurs des autres propriétés seront régénérées.
 
-For details, see [Use form data model](/help/forms/using/using-form-data-model.md).
+Pour plus d’informations, voir [Utiliser le modèle de données de formulaire](/help/forms/using/using-form-data-model.md).
 
 ### Actualiser les définitions de source de données {#refresh-data-source-definitions}
 
-Toute mise à jour dans les propriétés ou les entités de source de données ne se reflète pas automatiquement dans les modèles de données de formulaire associés. Form data model editor now features ![refresh_forms_di](assets/refresh_forms_di.png) (Refresh Data Source Definitions) that invalidates the server cache and fetches updated schema from the data source to immediately reflect in the form data model.
+Toute mise à jour dans les propriétés ou les entités de source de données ne se reflète pas automatiquement dans les modèles de données de formulaire associés. L’éditeur de modèles de données de formulaire contient désormais ![refresh_forms_di](assets/refresh_forms_di.png) (Actualiser les définitions de source de données) qui invalide le cache du serveur et récupère le schéma mis à jour de la source de données pour qu’il se reflète immédiatement dans le modèle de données de formulaire.
 
 ### Configurer les sources de données à l’aide de l’interface utilisateur tactile {#configure-data-sources-using-touch-user-interface}
 
-Avec cette version, la configuration des services cloud pour les sources de données est disponible dans l’interface utilisateur tactile. Also, the location to configure cloud services has changed to **[!UICONTROL Tools > Cloud Services > Data Sources]**. See [Configure data sources](/help/forms/using/configure-data-sources.md).
+Avec cette version, la configuration des services cloud pour les sources de données est disponible dans l’interface utilisateur tactile. En outre, l’emplacement de configuration des services cloud a été remplacé par **[!UICONTROL Outils > Cloud Services > Sources de données]**. Voir [Configurer les sources de données](/help/forms/using/configure-data-sources.md).
 
 ## Formulaires adaptatifs {#adaptive-forms}
 
@@ -166,7 +166,7 @@ Plusieurs améliorations ont été apportées à la fonctionnalité de chargemen
 * Les fragments de formulaire adaptatif avec activation du chargement différé sont pris en charge dans des panneaux répétables.
 * Les formulaires adaptatifs avec fragments à chargement différé sont pris en charge dans l’application AEM Forms.
 
-## Processus AEM basés sur l’utilisation de Forms {#forms-centric-aem-workflows}
+## Processus AEM basés sur l’utilisation de Forms  {#forms-centric-aem-workflows}
 
 ![aem-forms-workflow-on-osgi-](assets/aem-forms-workflow-on-osgi-.png)
 
@@ -182,7 +182,7 @@ Les améliorations suivantes ont été apportées aux Workflows d&#39;AEM orient
 
 ![aem-forms-app](assets/aem-forms-app.png)
 
-L’application AEM Forms permet aux agents de terrain de synchroniser leurs périphériques mobiles avec un serveur AEM Forms, puis de travailler sur leurs formulaires. L’application est exécutée sans accroc lorsque le périphérique est hors connexion et que les données y sont enregistrées en local et synchronisées avec le serveur lorsque le périphérique est de nouveau en ligne. For more information, see [AEM Forms app](/help/forms/using/aem-forms-app.md).
+L’application AEM Forms permet aux agents de terrain de synchroniser leurs périphériques mobiles avec un serveur AEM Forms, puis de travailler sur leurs formulaires. L’application est exécutée sans accroc lorsque le périphérique est hors connexion et que les données y sont enregistrées en local et synchronisées avec le serveur lorsque le périphérique est de nouveau en ligne. Pour plus d’informations, voir [Application AEM Forms](/help/forms/using/aem-forms-app.md).
 
 Voici les améliorations apportées à l’application AEM Forms :
 
