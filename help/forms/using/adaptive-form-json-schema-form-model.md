@@ -25,7 +25,7 @@ La création d’un formulaire adaptatif à l’aide d’un schéma JSON en tant
 * [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md)
 * [Schéma JSON](https://json-schema.org/)
 
-## Utilisation d’un schéma JSON comme modèle de formulaire  {#using-a-json-schema-as-form-model}
+## Utilisation d’un schéma JSON comme modèle de formulaire   {#using-a-json-schema-as-form-model}
 
 AEM Forms prend en charge la création d’un formulaire adaptatif en utilisant un schéma JSON existant en tant que modèle de formulaire. Ce schéma JSON représente la structure dans laquelle les données sont générées ou utilisées par le système principal de votre organisation. Le schéma JSON que vous utilisez doit être compatible avec les [spécifications v4](https://json-schema.org/draft-04/schema).
 
@@ -286,7 +286,7 @@ Vous trouverez ci-dessous un exemple de schéma JSON.
 }
 ```
 
-### Définitions de schéma réutilisables {#reusable-schema-definitions}
+### Définitions de schéma réutilisables  {#reusable-schema-definitions}
 
 Les touches de définition sont utilisées pour identifier les schémas réutilisables. Les définitions de schéma réutilisables sont utilisées pour créer des fragments. Il est semblable à l’identification des types complexes dans XSD. Un exemple de schéma JSON dont la définition est fournie ci-dessous :
 
@@ -317,9 +317,9 @@ Les touches de définition sont utilisées pour identifier les schémas réutili
 
 L’exemple ci-dessus définit un enregistrement de client dans lequel chaque client dispose d’une expédition et d’une adresse de facturation. La structure des deux adresses est la même : les adresses indiquent une rue, la ville et un état. Il est donc préférable de ne pas dupliquer les adresses. Cela simplifie également l’ajout et la suppression de champs simples pour toutes les nouvelles modifications.
 
-## Préconfiguration des champs dans la définition du schéma JSON {#pre-configuring-fields-in-json-schema-definition}
+## Préconfiguration des champs dans la définition du schéma JSON  {#pre-configuring-fields-in-json-schema-definition}
 
-You can use the **aem:afProperties** property to preconfigure JSON Schema field to map to a custom adaptive form component. Un exemple est répertorié ci-dessous :
+Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le champ de Schéma JSON en vue de le mapper à un composant de formulaire adaptatif personnalisé. Un exemple est répertorié ci-dessous :
 
 ```
 {
@@ -339,7 +339,7 @@ You can use the **aem:afProperties** property to preconfigure JSON Schema field 
 }
 ```
 
-## Valeurs possibles de limite pour un composant de formulaire adaptatif {#limit-acceptable-values-for-an-adaptive-form-component}
+## Valeurs possibles de limite pour un composant de formulaire adaptatif  {#limit-acceptable-values-for-an-adaptive-form-component}
 
 Vous pouvez ajouter les restrictions suivantes aux éléments de Schéma JSON pour limiter les valeurs acceptables pour un composant de formulaire adaptatif :
 
