@@ -18,7 +18,7 @@ ht-degree: 87%
 ---
 
 
-# Install compatibility Package {#compatibility-package}
+# Installer le package de compatibilité {#compatibility-package}
 
 L’installation du package de compatibilité sur AEM Forms 6.4 vous permet d’utiliser les actifs de Correspondence Management d’AEM Forms 6.3 et les modèles et pages de formulaires adaptatifs obsolètes
 
@@ -33,13 +33,13 @@ Le package de compatibilité AEMFD vous permet d’utiliser les actifs suivants 
 * Dictionnaires de données
 * Modèles et pages des formulaires adaptatifs obsolètes
 
-For more information, see [Assets made compatible with AEM Forms 6.4 by installing the Compatibility package](/help/forms/using/compatibility-package.md#assetsmadecompatible).
+Pour plus d’informations, voir [Ressources rendues compatibles avec AEM Forms 6.4 en installant le package de compatibilité](/help/forms/using/compatibility-package.md#assetsmadecompatible).
 
 ## Ajout de la prise en charge des actifs AEM Forms 6.3 et 6.2 dans AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Après avoir effectué une mise à niveau, exécutez les opérations suivantes pour installer le package de compatibilité AEMFD et rendre vos actifs compatibles avec la version 6.4 :
 
-Ensure that you have [AEM Compatibility package](/help/sites-deploying/backward-compatibility.md) pre-installed.
+Vérifiez que le [package de compatibilité AEM](/help/sites-deploying/backward-compatibility.md) est préinstallé.
 
 1. Installez le [package de compatibilité](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
 
@@ -48,7 +48,7 @@ Ensure that you have [AEM Compatibility package](/help/sites-deploying/backward-
 1. Une fois les journaux stabilisés, redémarrez le serveur.
 1. Utilisez l’utilitaire de migration pour rendre vos actifs compatibles avec la version 6.4.
 
-   For more information, see [migration utility](/help/forms/using/migration-utility.md).
+   Pour plus d’informations, voir [utilitaire de migration](/help/forms/using/migration-utility.md).
 
 ## Actifs devenus compatibles avec AEM Forms 6.4 après l’installation du package de compatibilité {#assetsmadecompatible}
 
