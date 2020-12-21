@@ -18,7 +18,7 @@ ht-degree: 100%
 ---
 
 
-# Mise à niveau vers AEM 6.4 Forms{#upgrade-to-aem-forms}
+# Mise à niveau vers AEM 6.4 Forms{#upgrade-to-aem-forms}
 
 AEM 6.4 Forms comporte plusieurs nouvelles fonctionnalités et améliorations qui optimisent la création, la gestion et la convivialité des formulaires et correspondances. Pour en savoir plus sur toutes les nouvelles fonctionnalités et améliorations d’AEM 6.4 Forms, voir [Résumé des nouvelles fonctionnalités](/help/forms/using/whats-new.md).
 
@@ -30,8 +30,8 @@ Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM 
 
 Vous pouvez effectuer une mise à niveau directe depuis :
 
-* AEM 6.2 Forms on OSGi
-* AEM 6.3 Forms on OSGi
+* AEM 6.2 Forms on OSGi
+* AEM 6.3 Forms on OSGi
 
 Vous pouvez également effectuer une mise à niveau en plusieurs étapes depuis
 
@@ -47,7 +47,7 @@ Vous pouvez effectuer une mise à niveau directe depuis :
 * LiveCycle ES3
 * LiveCycle ES4 SP1
 * AEM 6.2 Forms on JEE
-* AEM 6.3 Forms on JEE
+* AEM 6.3 Forms on JEE
 
 Vous pouvez également effectuer une mise à niveau en plusieurs étapes depuis
 
