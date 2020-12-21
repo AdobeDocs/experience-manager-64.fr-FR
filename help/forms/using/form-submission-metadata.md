@@ -16,7 +16,7 @@ ht-degree: 88%
 ---
 
 
-# Ajout d’informations issues de données utilisateur aux métadonnées d’envoi de formulaire {#adding-information-from-user-data-to-form-submission-metadata}
+# Ajout d’informations issues de données utilisateur aux métadonnées d’envoi de formulaire  {#adding-information-from-user-data-to-form-submission-metadata}
 
 Vous pouvez utiliser des valeurs saisies dans un élément de votre formulaire pour calculer les champs de métadonnées d’un brouillon ou d’un envoi de formulaire. Les métadonnées vous permettent de filtrer le contenu en fonction des données utilisateur. Par exemple, un utilisateur entre John Doe dans le champ de nom du formulaire. Vous pouvez utiliser ces informations pour calculer les métadonnées pouvant classer cet envoi par catégorie sous les initiales JD.
 
@@ -26,7 +26,7 @@ Par exemple, une compagnie d’assurance maladie publie un formulaire. Dans ce f
 
 Prenons un autre exemple d’un formulaire qui capture l’ID d’adresse électronique et le numéro de téléphone. Lorsqu’un utilisateur visite ce formulaire de manière anonyme et abandonne le formulaire, l’auteur peut configurer le formulaire afin que l’ID d’adresse électronique et le numéro de téléphone soient automatiquement enregistrés. Ce formulaire est enregistré automatiquement et le numéro de téléphone et l’ID d’adresse électronique sont stockés dans le nœud de métadonnées du brouillon. Un cas illustrant cette configuration est le tableau de bord de gestion des prospects.
 
-## Ajout d’éléments de formulaire aux métadonnées {#adding-form-elements-to-metadata}
+## Ajout d’éléments de formulaire aux métadonnées  {#adding-form-elements-to-metadata}
 
 Pour ajouter un élément aux métadonnées, procédez comme suit :
 
@@ -34,23 +34,23 @@ Pour ajouter un élément aux métadonnées, procédez comme suit :
 
    Pour ouvrir le formulaire en mode d’édition, dans Forms Manager, sélectionnez le formulaire, puis appuyez sur **Ouvrir**.
 
-1. In the edit mode, select a component, tap ![field-level](assets/field-level.png) > **Adaptive Form Container**, and then tap ![cmppr](assets/cmppr.png).
+1. En mode d’édition, sélectionnez un composant, appuyez sur ![niveau champ](assets/field-level.png) > **Conteneur de formulaire adaptatif**, puis sur ![cmppr](assets/cmppr.png).
 1. Dans la barre latérale, cliquez sur **Métadonnées**.
 1. Dans la section Métadonnées, cliquez sur **Ajouter**.
 1. Utilisez le champ Valeur de l’onglet Métadonnées pour ajouter des scripts. Les scripts que vous ajoutez collectent des données à partir d’éléments sur le formulaire et calculent les valeurs qui sont ajoutées aux métadonnées.
 
-   For example, **true** is logged in the metadata if age entered is greater than 21, and **false** is logged if it is less than 21. Vous entrez le script suivant dans l’onglet Métadonnées :
+   Par exemple, **true** est enregistré dans les métadonnées si l’âge saisi est supérieur à 21, et **false** est enregistré s’il est inférieur à 21. Vous entrez le script suivant dans l’onglet Métadonnées :
 
    `(agebox.value >= 21) ? true : false`
 
    ![Script de métadonnées](assets/add-element-metadata.png)
-   **Figure :** *Script saisi dans l’onglet Métadonnées*
+   **Figure:** *Script saisi dans le panneau Métadonnées*
 
 1. Cliquez sur **OK**.
 
 Une fois qu’un utilisateur a saisi des données dans l’élément sélectionné comme champ de métadonnées, les informations calculées sont enregistrées dans les métadonnées. Vous pouvez afficher les métadonnées dans le référentiel que vous avez configuré pour stocker les métadonnées.
 
-## Seeing updated form submission metadata: {#seeing-updated-form-nbsp-submission-metadata}
+## Affichage des métadonnées d’envoi de formulaire mises à jour : {#seeing-updated-form-nbsp-submission-metadata}
 
 Pour l’exemple ci-dessus, les métadonnées sont conservées dans le référentiel CRX. Les métadonnées présentent l’aspect suivant :
 
