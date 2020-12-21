@@ -18,25 +18,25 @@ ht-degree: 4%
 ---
 
 
-# Create a Sample Page {#create-a-sample-page}
+# Créer un exemple de page {#create-a-sample-page}
 
 AEM 6.1 Collectivités, le moyen le plus simple de créer un exemple de page est de créer un site communautaire simple, constitué simplement d&#39;une fonction Page.
 
 Ceci inclut un composant parsys afin que vous puissiez [activer les composants pour la création](basics.md#accessing-communities-components).
 
-Une autre option d&#39;exploration avec des échantillons de composants consiste à utiliser les fonctionnalités présentées dans le Guide [des composants](components-guide.md)communautaires.
+Une autre option d&#39;exploration avec des composants d&#39;exemple consiste à utiliser les fonctionnalités présentées dans le [Guide des composants de la communauté](components-guide.md).
 
 ## Créer un site communautaire {#create-a-community-site}
 
-Cela ressemble beaucoup à la création d&#39;un nouveau site décrit dans [Prise en main d&#39;AEM Communities](getting-started.md).
+Cela ressemble beaucoup à la création d&#39;un nouveau site décrit dans [Prise en main de AEM Communities](getting-started.md).
 
-La principale différence est que ce tutoriel va créer un nouveau modèle de site communautaire qui ne contient que la fonction [](functions.md#page-function) Page afin de créer un site communautaire simple et gratuit d&#39;autres fonctionnalités (autres que les fonctionnalités préprogrammées de base pour tous les sites communautaires).
+La principale différence est que ce tutoriel va créer un nouveau modèle de site communautaire qui ne contient que la fonction [Page](functions.md#page-function) afin de créer un site communautaire simple sans aucune autre fonctionnalité (autre que les fonctionnalités préprogrammées de base pour tous les sites communautaires).
 
 ### Créer un nouveau modèle de site {#create-new-site-template}
 
-Pour commencer, créez un modèle [de site](sites.md)communautaire simple.
+Pour commencer, créez un modèle de site communautaire [simple ](sites.md).
 
-Dans la navigation globale sur une instance d’auteur, sélectionnez **[!UICONTROL Outils > Communautés > Modèles]** de site.
+Dans la navigation globale sur une instance d’auteur, sélectionnez **[!UICONTROL Outils > Communautés > Modèles de site]**.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -51,7 +51,7 @@ Dans la navigation globale sur une instance d’auteur, sélectionnez **[!UICONT
 
 * STRUCTURE
 
-   * Faire glisser une `Page` fonction vers le créateur de modèles
+   * Faites glisser une fonction `Page` vers le créateur de modèles
    * Pour les détails de la fonction de configuration, saisissez
 
       * `Title`: Page unique
@@ -59,8 +59,8 @@ Dans la navigation globale sur une instance d’auteur, sélectionnez **[!UICONT
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
-* Sélectionner **`Save`** pour la configuration
-* Sélectionner **`Save`** pour le modèle de site
+* Sélectionnez **`Save`** pour la configuration.
+* Sélectionnez **`Save`** pour le modèle de site
 
 ### Créer un site de communauté {#create-new-community-site}
 
@@ -81,7 +81,7 @@ Après avoir créé le modèle de site, dans la navigation globale, sélectionne
    * `Name`: sample
 
       * url = http://localhost:4502/content/sites/sample
-   * `Template`: choisir `Single Page Template`
+   * `Template`: choisir  `Single Page Template`
 
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
@@ -100,13 +100,13 @@ Après avoir créé le modèle de site, dans la navigation globale, sélectionne
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
-## Publication du site {#publish-the-site}
+## Publier le site {#publish-the-site}
 
 ![chlimage_1-88](assets/chlimage_1-88.png)
 
-Dans la console [Sites](sites-console.md)de la communauté, sélectionnez l’icône Publier pour publier le site, par défaut sur http://localhost:4503.
+Dans la console [sites de la communauté](sites-console.md), sélectionnez l&#39;icône de publication pour publier le site, par défaut sur http://localhost:4503.
 
-## Ouvrez le site en mode d’édition sur l’auteur. {#open-the-site-on-author-in-edit-mode}
+## Ouvrez le site sur l’auteur en mode d’édition {#open-the-site-on-author-in-edit-mode}
 
 ![chlimage_1-89](assets/chlimage_1-89.png)
 
@@ -118,6 +118,6 @@ L’URL sera [http://localhost:4502/editor.html/content/sites/sample/en.html](ht
 
 Sur la page d&#39;accueil simple, il est possible de voir ce qui est précâblé à travers les fonctions et modèles de la communauté, et de jouer avec l&#39;ajout et la configuration des composants de la communauté.
 
-## Site de Vue sur la publication {#view-site-on-publish}
+## Site de vue sur la publication {#view-site-on-publish}
 
-Après avoir publié la page, ouvrez la page sur l’instance [de](http://localhost:4503/content/sites/sample/en.html) publication afin d’expérimenter les fonctionnalités en tant que visiteur de site anonyme, membre connecté ou administrateur. Le lien Administration visible dans l’environnement d’auteur n’apparaît pas dans l’environnement de publication, sauf si un administrateur se connecte.
+Après avoir publié la page, ouvrez la page sur l’[instance de publication](http://localhost:4503/content/sites/sample/en.html) pour tester les fonctionnalités en tant que visiteur anonyme du site, connecté ou administrateur. Le lien Administration visible dans l’environnement d’auteur n’apparaît pas dans l’environnement de publication, sauf si un administrateur se connecte.
