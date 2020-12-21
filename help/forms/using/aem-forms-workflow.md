@@ -31,7 +31,7 @@ Vous pouvez utiliser des processus AEM pour créer rapidement des processus bas�
 
 Avec le processus basé sur l’utilisation de Forms sur OSGi, vous pouvez rapidement créer et déployer des processus pour différentes tâches sur la pile OSGi, sans avoir à installer la fonctionnalité Process Management complète sur la pile JEE. Le développement et la gestion des processus utilisent les fonctionnalités de boîte de messagerie AEM et AEM Workflow habituelles. Les processus forment la base de l’automatisation des processus réels d’entreprise, qui s’étendent sur plusieurs systèmes logiciels, réseaux, services et même organisations.
 
-Une fois configurés, ces processus peuvent être déclenchés manuellement pour terminer une exécution ou un processus défini par programmation lorsque les utilisateurs envoient un formulaire ou une lettre [Correspondence Management](/help/forms/using/cm-overview.md). Avec des fonctionnalités AEM Workflow améliorées, AEM Forms offre deux fonctionnalités distinctes mais similaires. Dans le cadre de votre stratégie de déploiement, vous devez décider laquelle vous convient le mieux. See a [comparison](/help/forms/using/capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Une fois configurés, ces processus peuvent être déclenchés manuellement pour terminer une exécution ou un processus défini par programmation lorsque les utilisateurs envoient un formulaire ou une lettre [Correspondence Management](/help/forms/using/cm-overview.md). Avec des fonctionnalités AEM Workflow améliorées, AEM Forms offre deux fonctionnalités distinctes mais similaires. Dans le cadre de votre stratégie de déploiement, vous devez décider laquelle vous convient le mieux. Consultez une [comparaison](/help/forms/using/capabilities-osgi-jee-workflows.md) des Workflows d’AEM centrés sur Forms sur OSGi et Process Management on JEE. De plus, pour la topologie de déploiement, voir [Topologies d&#39;architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de messagerie AEM](/help/sites-authoring/inbox.md) et fournit des composants supplémentaires (étapes) pour que l’éditeur du processus AEM ajoute la prise en charge des processus AEM basés sur l’utilisation de Forms. La boîte de messagerie AEM étendue dispose de fonctionnalités similaires à celles de l’[espace de travail AEM Forms](/help/forms/using/introduction-html-workspace.md). Avec la gestion des processus basés sur les utilisateurs (approbation, révision, etc.), vous pouvez utiliser des processus AEM pour automatiser les opérations liées à [Document Services](/help/sites-developing/workflows-step-ref.md) (par exemple, la génération de PDF) et à la signature de documents (Adobe Sign) par voie électronique.
 
@@ -56,7 +56,7 @@ AEM fournit une interface utilisateur intuitive pour créer un modèle de proces
 >
 >Vous devez être membre du groupe d’éditeurs de processus pour créer ou modifier un modèle de processus.
 
-### Création d’un modèle pour un processus d’approbation et de révision {#create-a-model-for-an-approval-and-review-workflow}
+### Création d’un modèle pour un processus d’approbation et de révision  {#create-a-model-for-an-approval-and-review-workflow}
 
 Le processus d’approbation et de révision est destiné aux tâches qui nécessitent une intervention humaine pour une prise de décisions. L’exemple suivant crée un modèle de processus pour une demande de prêt immobilier à remplir par un conseiller bancaire. Une fois remplie, la demande est envoyée pour approbation. Par la suite, la demande approuvée est envoyée au demandeur pour signature électronique à l&#39;aide de l&#39;Adobe Sign.
 
@@ -77,18 +77,18 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 1. Activez les notifications électroniques. Vous pouvez configurer le processus Forms-Central sur OSGi pour envoyer des notifications par courrier électronique aux utilisateurs ou aux personnes désignées. Effectuez les configurations suivantes pour activer les notifications électroniques :
 
    1. Accédez au gestionnaire de configuration AEM à l’adresse `https://[server]:[port]/system/console/configMgr`.
-   1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Save]**.
-   1. Ouvrez la configuration de **[!UICONTROL Day CQ Link Externalizer]**. Dans le champ **[!UICONTROL Domaines]**, spécifiez le nom de hôte /l’adresse IP et le numéro de port réels pour les instances locale, de l’auteur et de publication. Cliquez sur **[!UICONTROL Save]**.
+   1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Enregistrer]**.
+   1. Ouvrez la configuration de **[!UICONTROL Day CQ Link Externalizer]**. Dans le champ **[!UICONTROL Domaines]**, spécifiez le nom de hôte /l’adresse IP et le numéro de port réels pour les instances locale, de l’auteur et de publication. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 1. Créez des étapes de processus. Un processus peut se composer de plusieurs étapes. Ces étapes sont affichées dans la boîte de réception AEM et signalent la progression du processus.
 
-   To define a stage, tap the ![info-circle](assets/info-circle.png) icon to open workflow model properties, open the **[!UICONTROL Stages]** tab, add stages for the workflow model, and tap **[!UICONTROL Save &amp; Close]**. Pour l’exemple de demande de prêt immobilier, créez des étapes : demande de prêt, état de la demande de prêt, documents à signer et document de prêt signé.
+   Pour définir une étape, appuyez sur l&#39;icône ![info-circle](assets/info-circle.png) pour ouvrir les propriétés du modèle de processus, ouvrez l&#39;onglet **[!UICONTROL Etapes]**, ajoutez des étapes pour le modèle de processus, et appuyez sur **[!UICONTROL Enregistrer et fermer]**. Pour l’exemple de demande de prêt immobilier, créez des étapes : demande de prêt, état de la demande de prêt, documents à signer et document de prêt signé.
 
-1. Drag-and-drop the **[!UICONTROL Assign Task]** steps browser to the workflow model. Faites-en la première étape du modèle.
+1. Faites glisser et déposez le navigateur des étapes **[!UICONTROL Attribuer la Tâche]** au modèle de processus. Faites-en la première étape du modèle.
 
    Le composant de tâche affecte la tâche créée par processus à un utilisateur ou à un groupe. Lors de l’affectation de la tâche, vous pouvez utiliser le composant pour spécifier un formulaire adaptatif ou un fichier PDF non interactif pour la tâche. Le formulaire adaptatif est requis pour accepter une saisie des utilisateurs et un fichier PDF non interactif ou un formulaire adaptatif en lecture seule est utilisé pour les processus de révision uniquement.
 
-   Vous pouvez également utiliser l’étape pour contrôler le comportement de la tâche. Par exemple, lors de la création d’un document d’enregistrement automatique, affectez la tâche à un utilisateur ou un groupe spécifique, le chemin des données envoyées, le chemin des données pré-renseignées et les actions par défaut. For detailed information about the options of the assign task step, see [Forms-centric workflow on OSGi - Step Reference](/help/forms/using/aem-forms-workflow.md) document.
+   Vous pouvez également utiliser l’étape pour contrôler le comportement de la tâche. Par exemple, lors de la création d’un document d’enregistrement automatique, affectez la tâche à un utilisateur ou un groupe spécifique, le chemin des données envoyées, le chemin des données pré-renseignées et les actions par défaut. Pour plus d’informations sur les options de l’étape d’affectation de tâche, voir le document [Processus centré sur Forms sur OSGi - Guide de référence des étapes](/help/forms/using/aem-forms-workflow.md).
 
    ![éditeur de processus](assets/workflow-editor.png)
 
@@ -102,7 +102,7 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
    **Fragment de code pour la Branche 1**
 
-   When a user taps **[!UICONTROL Approve]** in AEM Inbox, Branch 1 is activated.
+   Lorsqu’un utilisateur appuie sur **[!UICONTROL Approuver]** dans AEM boîte de réception, la branche 1 est activée.
 
    ```
    function check(){
@@ -114,7 +114,7 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
    **Fragment de code pour la Branche 2**
 
-   When a user taps **[!UICONTROL Reject]** in AEM Inbox, Branch 2 is activated.
+   Lorsqu&#39;un utilisateur appuie sur **[!UICONTROL Rejeter]** dans AEM boîte de réception, la branche 2 est activée.
 
    ```
    function check(){
@@ -142,8 +142,8 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
 >
 >Vous devez être membre du groupe administrateur-fd pour être en mesure de créer et de gérer les demandes de processus.
 
-1. On your AEM author instance, go to ![tools](assets/tools.png) > **[!UICONTROL Forms]** > **[!UICONTROL Manage Workflow Application]** and taps **[!UICONTROL Create]**.
-1. In the Create Workflow Application window, provide inputs for the following fields, and tap **[!UICONTROL Create]**. Une nouvelle demande est créée et est répertoriée dans l’écran Demandes de processus.
+1. Sur votre instance d’auteur AEM, accédez à ![outils](assets/tools.png) > **[!UICONTROL Forms]** > **[!UICONTROL Gérer l’application de flux de travail]** et appuyez sur **[!UICONTROL Créer]**.
+1. Dans la fenêtre Créer une application de flux de travail, fournissez des entrées pour les champs suivants, puis appuyez sur **[!UICONTROL Créer]**. Une nouvelle demande est créée et est répertoriée dans l’écran Demandes de processus.
 
 <table> 
  <tbody> 
@@ -206,13 +206,13 @@ Vous pouvez lancer ou de déclencher un processus basé sur l’utilisation de F
 
 * [Envoyant une communication interactive ou une lettre](#letter)
 
-### Envoi d’une demande depuis la boîte de réception AEM {#inbox}
+### Envoi d’une demande depuis la boîte de réception AEM  {#inbox}
 
 La demande de processus que vous avez créée est disponible en tant qu’application dans la boîte de réception. Les utilisateurs qui sont membres du groupe d’utilisateurs de processus peuvent renseigner et envoyer la demande qui déclenche le processus associé. Pour plus d’informations sur l’utilisation de la boîte de réception AEM pour envoyer des demandes et gérer des tâches, voir [Gestion des applications et des tâches Forms dans la boîte de réception AEM](/help/forms/using/manage-applications-inbox.md).
 
 ### Envoi d’une demande depuis l’application AEM Forms {#afa}
 
-L’application AEM Forms se synchronise avec un serveur AEM Forms et vous permet de modifier les données de formulaire, les tâches, les demandes de processus et les informations enregistrées (brouillons/modèles) dans votre compte. For more information, see [AEM Forms app](/help/forms/using/aem-forms-app.md) and related articles.
+L’application AEM Forms se synchronise avec un serveur AEM Forms et vous permet de modifier les données de formulaire, les tâches, les demandes de processus et les informations enregistrées (brouillons/modèles) dans votre compte. Pour plus d’informations, voir [Application AEM Forms](/help/forms/using/aem-forms-app.md) et articles connexes.
 
 ### Envoyant un formulaire adaptatif {#af}
 
@@ -224,7 +224,7 @@ Vous pouvez configurer la synchronisation, l’envoi et le déclenchement d’un
 
 Un administrateur (un membre du groupe administrateur-fd) peut configurer un dossier réseau pour exécuter un processus préconfiguré lorsqu’un utilisateur y place un fichier (tel qu’un fichier PDF). Une fois que le processus est terminé, vous pouvez enregistrer le fichier de sortie dans un dossier de sortie spécifié. Un tel fichier est appelé [Dossier de contrôle](/help/forms/using/watched-folder-in-aem-forms.md). Effectuez la procédure suivante pour configurer un dossier de contrôle afin de lancer un processus :
 
-1. On your AEM author instance, go to ![tools](assets/tools.png) **[!UICONTROL Forms > Configure Watched Folder]**.  Une liste de dossiers de contrôle déjà configurés s’affiche.
+1. Sur votre instance d’auteur AEM, accédez à ![tools](assets/tools.png) **[!UICONTROL Forms > Configure Watched Folder]**.  Une liste de dossiers de contrôle déjà configurés s’affiche.
 1. Appuyez sur **[!UICONTROL Nouveau]**. Une liste des champs s’affiche. Spécifiez une valeur pour les champs suivants afin de configurer un dossier de contrôle pour un processus :
 
 <table> 
@@ -238,12 +238,12 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
    <td>Indiquez le nom du dossier de contrôle. Ce champ prend uniquement en charge les caractères alphanumériques.</td> 
   </tr> 
   <tr> 
-   <td><span class="uicontrol">Chemin   </span></td> 
+   <td><span class="uicontrol">Chemin</span></td> 
    <td>Spécifiez l’emplacement physique du dossier de contrôle. Dans un environnement organisé en grappes, utilisez un dossier réseau partagé accessible à partir du noeud de la grappe AEM.</td> 
   </tr> 
   <tr> 
    <td><span class="uicontrol">Traiter les fichiers avec</span></td> 
-   <td>Select the <span class="uicontrol">Workflow </span>option. </td> 
+   <td>Sélectionnez l'option <span class="uicontrol">Workflow </span>. </td> 
   </tr> 
   <tr> 
    <td><span class="uicontrol">Modèle de processus</span></td> 
@@ -256,7 +256,7 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
  </tbody> 
 </table>
 
-1. Appuyez sur **[!UICONTROL Avancé]**. Specify a value for the following field and tap **[!UICONTROL Create]**. Le dossier de contrôle est configuré pour lancer un processus. Désormais, chaque fois qu’un fichier est placé dans le répertoire d’entrée du dossier de contrôle, le processus spécifié est déclenché.
+1. Appuyez sur **[!UICONTROL Avancé]**. Spécifiez une valeur pour le champ suivant et appuyez sur **[!UICONTROL Créer]**. Le dossier de contrôle est configuré pour lancer un processus. Désormais, chaque fois qu’un fichier est placé dans le répertoire d’entrée du dossier de contrôle, le processus spécifié est déclenché.
 
    | Field (Champ) | Description |
    |---|---|
@@ -264,20 +264,20 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
 
    L’onglet Avancé contient davantage de champs. La plupart de ces champs contiennent une valeur par défaut. Pour en savoir plus sur tous les champs, voir l’article [Création ou configuration d’un dossier de contrôle](/help/forms/using/creating-configure-watched-folder.md).
 
-### Envoi d’une communication interactive ou d’une lettre {#letter}
+### Envoi d’une communication interactive ou d’une lettre  {#letter}
 
 Vous pouvez associer et exécuter un flux de travaux centré sur Forms sur OSGi lors de l’envoi d’une communication interactive ou d’une lettre. Dans la gestion de la correspondance, les workflows sont utilisés pour les communications interactives et les lettres après traitement. par exemple, l’envoi de courriers électroniques, l’impression, la télécopie ou l’archivage des lettres finales. Pour les étapes détaillées, voir [Post-traitement des communications interactives et des lettres](/help/forms/using/submit-letter-topostprocess.md).
 
-## Autres configurations {#additional-configurations}
+## Autres configurations  {#additional-configurations}
 
 ### Configuration du service de messagerie {#configure-email-service}
 
 Vous pouvez utiliser les étapes Affecter une tâche et Envoyer un courrier électronique des processus AEM pour envoyer un courrier électronique. Effectuez les étapes suivantes pour spécifier les serveurs de messagerie et les autres configurations requises pour l’envoi de courriers électroniques :
 
 1. Accédez au gestionnaire de configuration AEM à l’adresse `https://[server]:[port]/system/console/configMgr`.
-1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Save]**.
+1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Enregistrer]**.
 1. Ouvrez la configuration de **[!UICONTROL Day CQ Link Externalizer]**. Dans le champ **[!UICONTROL Domaines]**, spécifiez le nom de hôte /l’adresse IP et le numéro de port réels pour les instances locale, de l’auteur et de publication. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-### Purge des instances de processus {#purge-workflow-instances}
+### Purge des instances de processus  {#purge-workflow-instances}
 
-Réduire le nombre d’instances de workflow améliore les performances du moteur de workflows. Vous pouvez donc purger régulièrement les instances de workflows terminées ou en cours d’exécution du référentiel. Pour plus d’informations, voir [Purge régulière des instances de processus](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+Réduire le nombre d’instances de workflow améliore les performances du moteur de workflows. Vous pouvez donc purger régulièrement les instances de workflow terminées ou en cours d’exécution du référentiel. Pour plus d’informations, voir [Purge régulière des instances de processus](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
