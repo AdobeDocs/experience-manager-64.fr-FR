@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Modification de l’aspect (HBS) {#alter-the-appearance-hbs}
+# Modifier l&#39;apparence (HBS) {#alter-the-appearance-hbs}
 
 Maintenant que les composants du système de commentaires personnalisés dans le répertoire de l&#39;application (/apps) sont en place, avec un resourceSuperType référençant le système de commentaires par défaut et le modèle/Vue personnalisé enregistré, il est possible de modifier l&#39;implémentation.
 
@@ -30,7 +30,7 @@ Pour une simple démonstration, une fonction visuelle, l’avatar affiché par l
 
 ## Modification des scripts HBS {#modify-the-hbs-scripts}
 
-Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Utilisation de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) :
 
 * Ouvrir [/apps/custom/components/comments/comment/comment.hbs](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
@@ -52,9 +52,9 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* Select **Save All**
+* Sélectionner **Enregistrer tout**
 
-## Répliquer une application personnalisée {#replicate-custom-app}
+## Répliquer l’application personnalisée {#replicate-custom-app}
 
 Une fois l’application modifiée, il est nécessaire de reproduire à nouveau le composant personnalisé.
 
@@ -62,15 +62,15 @@ Une façon de le faire est
 
 * Dans le menu principal
 
-   * Sélectionnez **[!UICONTROL Outils > Opérations > Réplication.]**
+   * Sélectionnez **[!UICONTROL Outils > Opérations > Réplication]**
    * Sélectionner `Activate Tree`
-   * Définir `Start Path`: to `/apps/custom`
-   * Décocher `Only Modified`
-   * Sélectionner le `Activate` bouton
+   * Définissez `Start Path` : à `/apps/custom`
+   * Désélectionner `Only Modified`
+   * Bouton Sélectionner `Activate`
 
-## Commentaire modifié de la Vue sur l&#39;exemple de page publié {#view-modified-comment-on-published-sample-page}
+## Commentaire modifié de la vue sur l’exemple de page publié {#view-modified-comment-on-published-sample-page}
 
-[En poursuivant l’expérience](extend-sample-page.md#publish-sample-page) sur l’instance de publication, toujours connectée en tant que même utilisateur, il est maintenant possible d’actualiser la page dans l’environnement de publication afin de vue la modification afin de supprimer l’avatar :
+[En poursuivant l’](extend-sample-page.md#publish-sample-page) expérience de l’instance de publication, toujours connectée en tant que même utilisateur, il est maintenant possible d’actualiser la page dans l’environnement de publication afin de vue la modification de suppression de l’avatar :
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
