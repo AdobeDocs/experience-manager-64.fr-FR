@@ -20,16 +20,16 @@ ht-degree: 90%
 
 # Configuration de User Management pour un serveur LDAP compatible SSL {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
-Pour un bon fonctionnement de la synchronisation sur LDAPS, les certificats LDAP délivrés par l’autorité de certification doivent être présents dans l’environnement JRE (Java Runtime Environment) du serveur d’applications. Import the certificate into the application server’s JRE cacerts file, which is usually in the *[JAVA_HOME]*/jre/lib/security/cacerts directory.
+Pour un bon fonctionnement de la synchronisation sur LDAPS, les certificats LDAP délivrés par l’autorité de certification doivent être présents dans l’environnement JRE (Java Runtime Environment) du serveur d’applications. Importez le certificat dans le fichier cacerts JRE du serveur d’applications, qui se trouve généralement dans le répertoire *[JAVA_HOME]*/jre/lib/security/cacerts.
 
 1. Activez SSL sur le serveur d’annuaire. Pour plus d’informations, consultez la documentation fournie avec l’annuaire.
 1. Exportez un certificat client depuis le serveur d’annuaire.
 1. Utilisez le programme Keytool pour importer le fichier du certificat client dans le magasin de certificats de la JVM™ (Java Virtual Machine) par défaut du serveur d’applications AEM Forms. La procédure peut varier selon la version de la JVM installée et les chemins d’installation du client. Ainsi, si vous utilisez BEA WebLogic Server avec le JDK 1.5, ouvrez une invite de commande et saisissez ce texte :
 
-   `keytool -import -alias`*alias *`-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
+   `keytool -import -alias`*alias* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
 1. A l’invite, spécifiez votre mot de passe (pour Java, le mot de passe par défaut est `changeit`). Une fois le certificat importé, un message vous confirme la réussite de l’opération.
-1. When prompted, type `Yes` to trust the certificate.
+1. Lorsque vous y êtes invité, tapez `Yes` pour approuver le certificat.
 1. Activez SSL dans User Management et, lors de la configuration des paramètres d’annuaire, sélectionnez Oui pour l’option SSL puis modifiez la définition du port en conséquence. Le numéro de port par défaut est 636.
 
 >[!NOTE]
