@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Composant de commentaires d’incrustation {#overlay-comments-component}
 
-L’intention de [superposer](client-customize.md#overlays) un composant par défaut est de modifier globalement l’aspect ou le comportement d’un composant, pour toutes les références relatives au composant. Il repose sur la nature de sling à résoudre dans le dossier /apps avant de rechercher dans le dossier /libs. Par conséquent, le chemin d’accès au composant est identique à celui du composant par défaut, sauf qu’il se trouve dans le dossier /apps et non dans le dossier /libs.
+L&#39;intention de [superposer](client-customize.md#overlays) un composant par défaut est de modifier globalement l&#39;apparence ou le comportement d&#39;un composant, pour toutes les références relatives au composant. Il dépend de la nature de sling à résoudre dans le dossier /apps avant de rechercher dans le dossier /libs. Par conséquent, le chemin d’accès au composant est identique à celui du composant par défaut, sauf qu’il se trouve dans le dossier /apps et non dans le dossier /libs.
 
 ## Exemple {#example}
 
