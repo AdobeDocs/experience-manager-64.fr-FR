@@ -1,6 +1,6 @@
 ---
-title: Début rapide de l'API Java du service de gestion de Document (obsolète) (SOAP)
-seo-title: Début rapide de l'API Java du service de gestion de Document (obsolète) (SOAP)
+title: Début rapide de l'API Java du service de gestion de document (obsolète) (SOAP)
+seo-title: Début rapide de l'API Java du service de gestion de document (obsolète) (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Document SOAP (Java API Quick Début) Service de gestion de  (obsolète) {#document-management-service-deprecated-java-api-quick-start-soap}
+# Début rapide de l&#39;API Java du service de gestion de document (obsolète) {#document-management-service-deprecated-java-api-quick-start-soap}
 
 Les Débuts rapides suivants sont disponibles pour le service Document Management (obsolète).
 
@@ -36,7 +36,7 @@ Les Débuts rapides suivants sont disponibles pour le service Document Managemen
 
 [Début rapide (mode SOAP) : Déplacement du contenu de Content Services à l’aide de l’API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated)
 
-[Début rapide (mode SOAP) : Contenu de Liste Content Services à l’aide de l’API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated)
+[Début rapide (mode SOAP) : Contenu de liste Content Services à l’aide de l’API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated)
 
 [Début rapide (mode SOAP) : Recherche de contenu Content Services à l’aide de l’API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated)
 
@@ -246,7 +246,7 @@ L’exemple de code Java suivant supprime un espace nommé /Société Home/Test 
 
 ## Début rapide (mode SOAP) : Ajouter du contenu à Content Services à l’aide de l’API Java (obsolète) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-L’exemple de code Java suivant ajoute un fichier PDF nommé *MortgageForm.pdf* dans un dossier nommé /Société Home/Test Directory. Les attributs de création et de description sont définis. La valeur d’identification du nouveau contenu est écrite dans la console.
+L’exemple de code Java suivant ajoute un fichier PDF nommé *MortgageForm.pdf* à un dossier nommé /Société Home/Test Directory. Les attributs de création et de description sont définis. La valeur d’identification du nouveau contenu est écrite dans la console.
 
 ```as3
  /* 
@@ -367,9 +367,9 @@ L’exemple de code Java suivant ajoute un fichier PDF nommé *MortgageForm.pdf*
  
 ```
 
-## Début rapide (mode SOAP) : Récupération du contenu de Content Services à l’aide de l’API Java (obsolète) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
+## Début rapide (mode SOAP) : Récupération de contenu de Content Services à l’aide de l’API Java (obsolète) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-L’exemple de code Java suivant récupère un fichier PDF nommé *MortgageForm.pdf* depuis /Société Home. Le fichier PDF est enregistré dans le système de fichiers local et est nommé *UpdateMortgageForm.pdf*.
+L’exemple de code Java suivant récupère un fichier PDF nommé *MortgageForm.pdf* de /Société Home. Le fichier PDF est enregistré dans le système de fichiers local et est nommé *UpdateMortgageForm.pdf*.
 
 ```as3
  /* 
@@ -574,7 +574,7 @@ L’exemple de code Java suivant déplace un fichier PDF nommé *MortgageForm.pd
  
 ```
 
-## Début rapide (mode SOAP) : Contenu de Liste Content Services à l’aide de l’API Java (obsolète) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
+## Début rapide (mode SOAP) : Contenu de liste Content Services utilisant l’API Java (obsolète) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
 L&#39;exemple de code Java suivant liste le contenu situé dans /Société Home. Chaque type de noeud et nom de noeud s’affichent.
 
@@ -799,7 +799,7 @@ Le code Java suivant recherche dans /Société Home un document qui contient le 
 
 ## Début rapide (mode SOAP) : Définition des autorisations de Content Services à l’aide de l’API Java (obsolète) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
 
-L&#39;exemple de code Java suivant définit une autorisation pour un utilisateur nommé tony blue. Le domaine spécifié est le domaine par défaut. L’autorisation Consommateur est spécifiée et le noeud est `/Company Home/Test Directory`défini.
+L&#39;exemple de code Java suivant définit une autorisation pour un utilisateur nommé tony blue. Le domaine spécifié est le domaine par défaut. L’autorisation de consommation est spécifiée et le noeud est `/Company Home/Test Directory`.
 
 ```as3
  /* 
