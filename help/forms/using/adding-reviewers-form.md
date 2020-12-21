@@ -16,7 +16,7 @@ ht-degree: 78%
 ---
 
 
-# Association de réviseurs d’envoi à un formulaire  {#associating-submission-reviewers-with-a-form}
+# Association de réviseurs d’envoi à un formulaire   {#associating-submission-reviewers-with-a-form}
 
 Lorsque vous créez un formulaire, vous pouvez spécifier les utilisateurs qui passent en revue les envois du formulaire via le portail de formulaires et qui font part de leur avis. Votre entreprise peut recueillir des avis et retravailler les formulaires envoyés.
 
@@ -43,9 +43,9 @@ Pour modifier le schéma de métadonnées :
     aem-authored
    ```
 
-1. Select **[!UICONTROL Adaptive Form]** and click **[!UICONTROL Edit]**.
+1. Sélectionnez **[!UICONTROL Formulaire adaptatif]** et cliquez sur **[!UICONTROL Modifier]**.
 1. Dans la page Modifier un formulaire, cliquez sur **[!UICONTROL Avancé]**.
-1. In the Advanced tab, drag-and-drop the **[!UICONTROL Single Line Text]** component available under Build Form.
+1. Dans l’onglet Avancé, faites glisser et déposez le composant **[!UICONTROL Texte d’une seule ligne]** disponible sous Créer un formulaire.
 1. Sélectionnez le composant de texte ajouté pour afficher ses paramètres.
 
    Sous Paramètres, saisissez `./jcr:content/metadata/form-submission-reviewer-group` dans le champ Associer à la propriété.
@@ -59,9 +59,9 @@ Les groupes d’utilisateurs vous permettent d’associer différents ensembles 
 
 Avant d’effectuer les étapes suivantes, reportez-vous à la section [Condition préalable](/help/forms/using/adding-reviewers-form.md#prerequisite).
 
-To create a group and add members to it, navigate to **[!UICONTROL Tools > Operations > Security > Groups]**.\
-For more information, see [User Administration and Services](/help/sites-administering/security.md).\
-Ensure that you add the group you create as a member of the out-of-the-box user group: **forms-submission-reviewers**. Ce groupe d’utilisateurs est fourni avec AEM Forms et garantit que les utilisateurs sont ajoutés en tant que réviseurs d’envoi.
+Pour créer un groupe et y ajouter des membres, accédez à **[!UICONTROL Outils > Opérations > Sécurité > Groupes]**.\
+Pour plus d’informations, voir [Administration utilisateur et services](/help/sites-administering/security.md).\
+Veillez à ajouter le groupe que vous créez en tant que membre du groupe d’utilisateurs prêt à l’emploi : **forms-submission-reviewers**. Ce groupe d’utilisateurs est fourni avec AEM Forms et garantit que les utilisateurs sont ajoutés en tant que réviseurs d’envoi.
 
 Pour associer des groupes d’utilisateurs à un formulaire adaptatif :
 
