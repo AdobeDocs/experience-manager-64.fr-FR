@@ -17,11 +17,11 @@ ht-degree: 93%
 ---
 
 
-# Connexion à l’application AEM Forms {#logging-in-to-aem-forms-app}
+# Connexion à l’application AEM Forms  {#logging-in-to-aem-forms-app}
 
 Lorsque vous démarrez l’application AEM Forms, vous devez d’abord indiquer vos identifiants de connexion ainsi que l’URL d’un serveur AEM Forms.
 
-## Démarrage de l’application {#to-start-the-app}
+## Démarrage de l’application  {#to-start-the-app}
 
 1. Appuyez sur l’icône de l’application AEM Forms sur votre périphérique mobile.
 1. Pour vous connecter à l’application, saisissez un nom d’utilisateur, un mot de passe et l’URL du serveur AEM Forms.
@@ -34,7 +34,7 @@ Lorsque vous démarrez l’application AEM Forms, vous devez d’abord indiquer 
    >* Vous pouvez alors sélectionner une URL de serveur AEM Forms pour vous connecter à via l’application.
 
 
-Lorsque vous vous connectez à l’application, vous êtes dirigé vers l’[**écran **d’accueil](/help/forms/using/home-screen.md).
+Lorsque vous vous connectez à l’application, vous êtes dirigé vers l’[**écran** d’accueil](/help/forms/using/home-screen.md).
 
 >[!NOTE]
 >
