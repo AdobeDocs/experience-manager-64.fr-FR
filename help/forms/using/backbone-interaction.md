@@ -19,17 +19,17 @@ ht-degree: 81%
 
 # Interaction de Backbone {#backbone-interaction}
 
-Backbone est une bibliothèque qui permet de créer et de suivre une architecture MVC dans des applications Web. L’idée de base de Backbone est d’organiser votre interface en vues logiques, sauvegardées par des modèles, chacune d’entre elles pouvant être mise à jour de manière indépendante lorsque le modèle change, sans devoir redessiner la page. For more information about Backbone, see [https://backbonejs.org](https://backbonejs.org/).
+Backbone est une bibliothèque qui permet de créer et de suivre une architecture MVC dans des applications Web. L’idée de base de Backbone est d’organiser votre interface en vues logiques, sauvegardées par des modèles, chacune d’entre elles pouvant être mise à jour de manière indépendante lorsque le modèle change, sans devoir redessiner la page. Pour plus d’informations sur Backbone, voir [https://backbonejs.org](https://backbonejs.org/).
 
 Voici quelques concepts clés :
 
-**Modèle** Backbone contient des données et la majeure partie de la logique associée à ces données.
+**Backbone** modelContient des données et la plupart de la logique associée à ces données.
 
-**vue** Backbone Utilisée pour représenter l’état du modèle correspondant. Une vue Backbone se comporte en fait comme un contrôleur, écoutant les événements de l’interface utilisateur comme les clics de l’utilisateur, ou les événements de modèle (comme les modifications de données), et modifie l’interface utilisateur en fonction des besoins.
+**Backbone** viewUtilisé pour représenter l’état du modèle correspondant. Une vue Backbone se comporte en fait comme un contrôleur, écoutant les événements de l’interface utilisateur comme les clics de l’utilisateur, ou les événements de modèle (comme les modifications de données), et modifie l’interface utilisateur en fonction des besoins.
 
-**Modèle** HTML Modèle d’enveloppe qui contient des espaces réservés renseignés par le modèle.
+**** modèle HTMLModèle d’enveloppe contenant des espaces réservés renseignés par le modèle.
 
-**AEM Forms Workspace** contient plusieurs composants individuels. Chaque composant :
+**AEM Forms** workspaceContient plusieurs composants individuels. Chaque composant :
 
 * représente un seul élément d’interface utilisateur logique ;
 * il peut s’agir d’un ensemble de composants similaires ;
@@ -53,7 +53,7 @@ Exemple :
 
 1. L’utilisateur clique sur un modèle de tâche dans la liste des tâches.
 1. La vue Tâches écoute le clic et appelle la fonction de rendu sur le modèle de tâche.
-1. Le modèle de Tâche appelle ensuite le service qui est un point commun pour toute communication avec le serveur AEM Forms.
+1. Le modèle de tâche appelle ensuite le service qui est un point commun pour toute communication avec le serveur AEM Forms.
 1. La classe de service appelle le point de terminaison AEM Forms REST pour la méthode de rendu via ajax.
 1. Le rappel réussi de cette invocation Ajax est défini dans le modèle de la tâche.
 1. Le modèle de tâche déclenche un événement Backbone comme une notification indiquant que l’appel de rendu est terminé.
