@@ -67,9 +67,9 @@ AEM Forms fournit un modèle prêt à l’emploi pour les notifications électro
 
 L’étape Affecter une tâche prête à l’emploi est configurée pour utiliser le modèle par défaut, htmlEmailTemplate.txt. Vous pouvez choisir d’utiliser un modèle personnalisé. Pour modifier le modèle :
 
-1. Open the **[!UICONTROL Assign Task]** step.
+1. Ouvrez l’étape **[!UICONTROL Attribuer la Tâche]**.
 
-1. Navigate to **[!UICONTROL Assignee > HTML Email Template]**.
+1. Accédez à **[!UICONTROL Destinataire > Modèle de courrier électronique HTML]**.
 
 1. Sélectionnez le modèle de courrier électronique HTML nouvellement créé.
 
