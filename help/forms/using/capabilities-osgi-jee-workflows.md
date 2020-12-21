@@ -67,44 +67,44 @@ La boîte de réception AEM est utilisée pour exécuter et surveiller les Workf
   <tr>
    <td>Pièces jointes de champ pour les formulaires adaptatifs</td> 
    <td>Pris en charge</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
   </tr>
   <tr>
    <td>Vue Calendrier</td> 
    <td>Pris en charge</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
   </tr>
   <tr>
    <td>Commentaires de tâche</td> 
    <td>Pris en charge</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
   </tr>
   <tr>
    <td>Files d’attente (file d’attente personnelle partagée, réclamer des tâches de la file d’attente)</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
    <td>Notification d’absence</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
    <td>Affectation d’une tâche à plusieurs utilisateurs</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
    <td>Pris en charge</td> 
   </tr>
  </tbody>
 </table>
 
-## Processus AEM de formulaire sur OSGi et processus AEM Forms JEE {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+## Processus AEM de formulaire sur OSGi et processus AEM Forms JEE  {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
 Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion des processus AEM Forms on JEE) ont un ensemble de fonctionnalités différent. Le tableau suivant liste d’importantes fonctionnalités et la prise en charge des fonctionnalités des Workflows d’AEM orientés formulaires sur OSGi et AEM Forms on JEE :
 
 <table> 
  <tbody>
   <tr>
-   <td>Fonctions</td> 
+   <td>Fonctionnalités</td> 
    <td>Processus AEM de formulaire sur OSGi<br /> </td> 
    <td>Processus AEM Forms JEE</td> 
   </tr>
@@ -164,7 +164,7 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
    <td>Pris en charge <sup>[2]</sup></td> 
   </tr>
   <tr>
-   <td>Services de documents</td> 
+   <td>Services de document</td> 
    <td>Pris en charge <sup>[3]</sup></td> 
    <td>Pris en charge <sup>[3]</sup></td> 
   </tr>
@@ -181,36 +181,36 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
   <tr>
    <td>Bouton Réinitialiser</td> 
    <td>Pris en charge</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
   </tr>
   <tr>
    <td>Étapes de workflow</td> 
    <td>Pris en charge</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
   </tr>
   <tr>
    <td>Formulaires adaptatifs en lecture seule</td> 
    <td>Pris en charge</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
   </tr>
   <tr>
    <td>Masquage du bouton d’enregistrement par défaut</td> 
    <td>Pris en charge</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
   </tr>
   <tr>
    <td>Contrôle précis de la section détails de processus</td> 
    <td>Pris en charge</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
   </tr>
   <tr>
    <td>Formulaires HTML5, formulaires PDF interactifs, jeu de formulaires<br /> </td> 
-   <td>pas de prise en charge<br /> </td> 
+   <td>Pas de prise en charge<br /> </td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
    <td>Rapports de workflow </td> 
-   <td>pas de prise en charge<br /> </td> 
+   <td>Pas de prise en charge<br /> </td> 
    <td>Pris en charge<br /> </td> 
   </tr>
   <tr>
@@ -220,27 +220,27 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
   </tr>
   <tr>
    <td>Catégories de point de départ</td> 
-   <td>pas de prise en charge </td> 
+   <td>Pas de prise en charge </td> 
    <td>Pris en charge </td> 
   </tr>
   <tr>
    <td>Approbation de tâches en masse </td> 
-   <td>pas de prise en charge </td> 
+   <td>Pas de prise en charge </td> 
    <td>Pris en charge </td> 
   </tr>
   <tr>
    <td>Enregistrer le brouillon avec un nom personnalisé</td> 
-   <td>pas de prise en charge </td> 
+   <td>Pas de prise en charge </td> 
    <td>Pris en charge </td> 
   </tr>
   <tr>
    <td>Lancer un processus à l’aide des données de processus existantes<br /> </td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
    <td>Pris en charge </td> 
   </tr>
   <tr>
    <td>Enregistrement d’un point de départ en tant que brouillon</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
@@ -250,57 +250,57 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
   </tr>
   <tr>
    <td>Vue Gestionnaire</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
    <td>Pris en charge<br /> </td> 
   </tr>
   <tr>
    <td>Rechercher dans les modèles</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
    <td>Pris en charge<br /> </td> 
   </tr>
   <tr>
    <td>Intégration à des applications tierces</td> 
-   <td>Supported <sup>[6]</sup></td> 
+   <td><sup>[6]</sup> pris en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
    <td>Pièces jointes de tâche pour application ou point de départ de processus</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
    <td>Courrier électronique de rappel</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
    <td>Modifier le titre à l’expiration de la tâche</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
    <td>Courrier électronique relatif à la délégation de tâche et la demande de tâche</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
    <td>Envoyer un courrier électronique à la fin du processus</td> 
-   <td>Supported <sup>[7]</sup></td> 
+   <td><sup>[7]</sup> pris en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
    <td>Déléguer entre des groupes séparés</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
    <td>Appeler un service Web à partir d’un processus</td> 
-   <td>Supported <sup>[6]</sup></td> 
+   <td><sup>[6]</sup> pris en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
    <td>Transformation XSLT</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
@@ -310,13 +310,13 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
   </tr>
   <tr>
    <td>OU, ET fractionné</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
    <td>Priorité des tâches dynamique</td> 
-   <td>pas de prise en charge</td> 
-   <td>pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
+   <td>Pas de prise en charge</td> 
   </tr>
  </tbody>
 </table>
@@ -324,15 +324,15 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
 1. Vous pouvez utiliser des Workflows d’AEM orientés Formulaire sur OSGi pour signer un formulaire adaptatif déjà rempli. Les processus AEM de formulaire sur OSGi prennent en charge la signature hors du formulaire. L’expérience de [signature dans le formulaire](/help/forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) n’est pas prise en charge.
 
 1. Vous devez avoir accès à la boîte de réception AEM pour exécuter et surveiller les processus AEM Forms OSGi et à l’espace de travail HTML pour exécuter et surveiller les processus AEM Forms JEE.
-1. Les services documentaires AEM Forms natifs sont disponibles pour les processus AEM de formulaire sur OSGi et les processus AEM Forms on JEE. AEM Workflow utilise les services de document natifs pour les Workflows d’AEM orientés formulaires sur OSGi et AEM Forms JEE (Process Management) Workflows.
+1. Les services documentaires AEM Forms natifs sont disponibles pour les processus AEM de formulaire sur OSGi et les processus AEM Forms on JEE. aem Workflow utilise les services de document natifs pour les Workflows d’AEM orientés formulaires sur OSGi et AEM Forms JEE (Process Management) Workflows.
 1. Les processus AEM Forms JEE peuvent uniquement rendre un formulaire adaptatif. Ils ne prennent pas en charge le rendu d’un formulaire adaptatif comme document PDF.
 1. Les processus AEM Forms JEE n’ont pas d’étape distincte pour Adobe Sign. Vous avez besoin d’un formulaire adaptatif Adobe Sign pour les processus AEM forms JEE. Pour plus d’informations, voir la [documentation d’Adobe Sign](/help/forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
-1. Vous pouvez utiliser l’étape [Appeler un service](/help/forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) de modèle de données de formulaire pour appeler un service Web et publier ou récupérer des données d’une application tierce.
+1. Vous pouvez utiliser l’étape [Appeler le service de modèle de données de formulaire](/help/forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) pour appeler un service Web et publier ou récupérer des données d’une application tierce.
 1. Vous pouvez utiliser l’étape [Envoyer un courriel](/help/forms/using/aem-forms-workflow-step-reference.md#send-email-step) pour envoyer des courriers électroniques.
 
 ## Différences entre les fonctionnalités de la boîte de réception AEM et l’application AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Two of the prominent ways to launch a Forms-centric workflow are using [AEM Inbox](/help/forms/using/manage-applications-inbox.md) and AEM Forms app. Les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms sont cependant différentes. AEM Inbox works only with [Forms-centric workflows](/help/forms/using/aem-forms-workflow.md) while the AEM Forms app works with both Forms-centric workflows as well as process management.
+Deux des principaux moyens de lancer un flux de travaux centré sur Forms sont d’utiliser [AEM Boîte de réception](/help/forms/using/manage-applications-inbox.md) et l’application AEM Forms. Les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms sont cependant différentes. aem boîte de réception fonctionne uniquement avec [workflows centrés sur le Forms](/help/forms/using/aem-forms-workflow.md) tandis que l’application AEM Forms fonctionne avec des workflows centrés sur le Forms et avec la gestion des processus.
 
 La table suivante répertorie les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms :
 
@@ -356,12 +356,12 @@ La table suivante répertorie les fonctionnalités de la boîte de réception AE
   <tr>
    <td><p>Délégation de tâches</p> </td> 
    <td><p>Pris en charge</p> </td> 
-   <td><p>pas de prise en charge</p> </td> 
+   <td><p>Pas de prise en charge</p> </td> 
   </tr>
   <tr>
    <td><p>Suivi de l’historique des tâches et du récapitulatif des tâches</p> </td> 
    <td><p>Pris en charge</p> </td> 
-   <td><p>pas de prise en charge</p> </td> 
+   <td><p>Pas de prise en charge</p> </td> 
   </tr>
   <tr>
    <td><p>Ajout de pièces jointes au niveau de la tâche</p> </td> 
@@ -381,7 +381,7 @@ La table suivante répertorie les fonctionnalités de la boîte de réception AE
   <tr>
    <td><p>Affichage de la vue de calendrier</p> </td> 
    <td><p>Pris en charge</p> </td> 
-   <td><p>pas de prise en charge</p> </td> 
+   <td><p>Pas de prise en charge</p> </td> 
   </tr>
   <tr>
    <td><p>Ajout de commentaires</p> </td> 
