@@ -20,7 +20,7 @@ ht-degree: 64%
 
 ## Présentation {#overview}
 
-AEM Forms permet aux auteurs de formulaires de simplifier et améliorer le remplissage de formulaire en appelant les services configurés dans un modèle de données de formulaire depuis un champ de formulaire adaptatif. To invoke a data model service, you can either create a rule in the visual editor or specify a JavaScript using the `guidelib.dataIntegrationUtils.executeOperation` API in the code editor of the [rule editor](/help/forms/using/rule-editor.md).
+AEM Forms permet aux auteurs de formulaires de simplifier et améliorer le remplissage de formulaire en appelant les services configurés dans un modèle de données de formulaire depuis un champ de formulaire adaptatif. Pour appeler un service de modèle de données, vous pouvez créer une règle dans l’éditeur visuel ou spécifier un code JavaScript à l’aide de l’API `guidelib.dataIntegrationUtils.executeOperation` dans l’éditeur de code de l’[éditeur de règles](/help/forms/using/rule-editor.md).
 
 Ce document aborde la manière d’écrire un script Javascript en utilisant l’API `guidelib.dataIntegrationUtils.executeOperation` pour appeler un service.
 
@@ -40,7 +40,7 @@ L’API requiert les paramètres suivants.
 | `inputs` | Structure permettant de spécifier les objets de formulaire dont les valeurs sont entrées dans l’opération de service |
 | `outputs` | Structure permettant de spécifier les objets de formulaire qui seront renseignés avec les valeurs renvoyées par l’opération de service |
 
-The structure of the `guidelib.dataIntegrationUtils.executeOperation` API specifies details about the service operation. La syntaxe de la structure se présente comme suit.
+La structure de l&#39;API `guidelib.dataIntegrationUtils.executeOperation` spécifie les détails de l&#39;opération de service. La syntaxe de la structure se présente comme suit.
 
 ```
 var operationInfo = {
@@ -85,11 +85,11 @@ La structure de l’API spécifie les détails suivants concernant l’opératio
  </tbody> 
 </table>
 
-## Exemple de script pour appeler un service {#sample-script-to-invoke-a-service}
+## Exemple de script pour appeler un service  {#sample-script-to-invoke-a-service}
 
-The following sample script uses the `guidelib.dataIntegrationUtils.executeOperation` API to invoke the `getAccountById` service operation configured in the `employeeAccount` form data model.
+L’exemple de script suivant utilise l’API `guidelib.dataIntegrationUtils.executeOperation` pour appeler l’opération de service `getAccountById` configurée dans le modèle de données de formulaire `employeeAccount`.
 
-The `getAccountById` operation takes the value in the `employeeID` form field as input for the `empId` argument and returns employee name, account number, and account balance for the corresponding employee. Les valeurs de sortie sont renseignées dans les champs de formulaire spécifiés. For example, the value in `name` argument is populated in the `fullName` form element and value for `accountNumber` argument in `account` form element.
+L&#39;opération `getAccountById` prend la valeur du champ de formulaire `employeeID` comme entrée pour l&#39;argument `empId` et renvoie le nom de l&#39;employé, le numéro de compte et le solde du compte pour l&#39;employé correspondant. Les valeurs de sortie sont renseignées dans les champs de formulaire spécifiés. Par exemple, la valeur de l’argument `name` est renseignée dans l’élément de formulaire `fullName` et la valeur de l’argument `accountNumber` dans l’élément de formulaire `account`.
 
 ```
 var operationInfo = {
