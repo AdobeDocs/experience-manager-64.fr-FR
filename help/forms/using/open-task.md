@@ -17,7 +17,7 @@ ht-degree: 100%
 ---
 
 
-# Ouverture d’une tâche {#opening-a-task}
+# Ouverture d’une tâche  {#opening-a-task}
 
 Si l’application AEM Forms se synchronise avec un serveur AEM Forms, vous pouvez travailler avec des tâches qui vous sont assignées. Les tâches sont des étapes du flux de travail défini dans le Workbench ou dans l’éditeur de flux de travail AEM. Par exemple, voir [Conrad obtient la tâche d’évaluation sur le site de référence Geometrixx Gov](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task). Vous pouvez apporter des modifications à une tâche qui vous est actuellement assignée. Toutes les tâches sont disponibles dans l’onglet Tâches. Les tâches enregistrées en tant que brouillons restent dans l’onglet Tâches.
 
