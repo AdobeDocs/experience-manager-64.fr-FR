@@ -17,7 +17,7 @@ ht-degree: 100%
 ---
 
 
-# Ajout d’une action personnalisée sur des éléments de liste de formulaire {#adding-custom-action-on-form-lister-items}
+# Ajout d’une action personnalisée sur des éléments de liste de formulaire  {#adding-custom-action-on-form-lister-items}
 
 Dans AEM Forms, vous pouvez créer une page de portail qui répertorie les formulaires disponibles. Par défaut, vous pouvez rechercher des formulaires et les répertorier sur une page de portail. Vous pouvez ouvrir des formulaires en vue de les compléter et envoyer vos informations. Seules les actions de rendu sont disponibles, prêtes à l’emploi, pour les formulaires répertoriés sur une page de portail. Pour plus d’informations sur les actions disponibles sur une page de portail, reportez-vous à la section [Création d’une page de portail de formulaires](/help/forms/using/creating-form-portal-page.md). 
 
