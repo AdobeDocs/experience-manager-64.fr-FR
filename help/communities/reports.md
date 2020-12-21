@@ -26,15 +26,15 @@ Pour AEM Communities, divers rapports peuvent être consultés de plusieurs mani
 
 En général, les différents rapports sont les suivants :
 
-* [Rapport](#assignments-report) sur les affectations - pour une communauté [d&#39;](overview.md#enablement-community)activation, fournit un aperçu de l&#39;avancement des apprenants sur leurs affectations, y compris un score associé si la mise en oeuvre de la norme SCORM est effectuée.
-* [Rapport](#views-report) sur les Vues - fournit un tableau des vues de contenu des membres de la communauté et des visiteurs du site pour tout site communautaire.
-* [Rapport](#posts-report) Publications - fournit un graphique des différents types de publications par les membres de la communauté sur n’importe quel site de la communauté.
+* [Rapport](#assignments-report)  sur les affectations - pour une communauté [ d&#39;](overview.md#enablement-community)activation, fournit un aperçu de l&#39;avancement des apprenants sur leurs affectations, y compris un score associé si la mise en oeuvre de la norme SCORM est effectuée.
+* [Rapport](#views-report)  sur les vues - fournit un tableau des vues de contenu des membres de la communauté et des visiteurs du site pour tout site communautaire
+* [Rapport](#posts-report)  Publications - fournit un graphique des différents types de publications par les membres de la communauté sur n’importe quel site de la communauté.
 
 Lorsque [Adobe Analytics est activé](sites-console.md#analytics), les rapports incluent le nombre de vues, de lectures, de commentaires et d’évaluations pour chaque ressource d’activation au fil du temps.
 
 Les rapports tabulaires peuvent être exportés au format .csv pour un traitement ultérieur.
 
-## Consoles de Rapports {#reporting-consoles}
+## Consoles de rapports {#reporting-consoles}
 
 ### Rapports pour les sites communautaires {#reports-for-community-sites}
 
@@ -48,13 +48,13 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
       * Générer un rapport pour le site de la communauté, le type de contenu et la période sélectionnés
          ![chlimage_1-156](assets/chlimage_1-156.png)
 
-### Rapports sur les ressources d’activation et les chemins d’apprentissage {#reports-for-enablement-resources-and-learning-paths}
+### Rapports sur les ressources d&#39;activation et les chemins d&#39;apprentissage {#reports-for-enablement-resources-and-learning-paths}
 
 * A partir de la navigation globale : **[!UICONTROL Navigation > Communautés > Ressources]**
 * Sélectionner un site de communauté d&#39;activation existant
    * Sélectionnez l&#39;icône **[!UICONTROL Rapport]** pour générer des rapports qui couvrent toutes les ressources d&#39;activation.
    * Sélectionner un chemin d&#39;apprentissage d&#39;activation
-   * Sélectionner l&#39;icône **[!UICONTROL Rapport]** pour générer des rapports
+   * Sélectionnez l&#39;icône **[!UICONTROL Rapport]** pour générer des rapports pour
       * Ressources d&#39;activation incluses
       * Les apprenants affectés au chemin d&#39;apprentissage
 * Ces rapports fournissent :
@@ -65,7 +65,7 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
       * Nombre de commentaires formulés
       * Évaluation par étoiles donnée
 
-Pour plus d&#39;informations, reportez-vous à la section [](resources.md#report) Rapports de la console Ressources.
+Pour plus d&#39;informations, consultez la section [Rapports](resources.md#report) de la console Ressources.
 
 ## Rapport des affectations {#assignments-report}
 
@@ -77,11 +77,14 @@ Le rapport fournit des renseignements sur leurs progrès ainsi que sur les comme
 
 Sélectionnez les critères du rapport :
 
-* **[!UICONTROL Site]** Sélectionner un site de communauté d&#39;activation
+* ****
+SiteSélectionner un site de communauté d&#39;activation
 * **[!UICONTROL Utilisateur ou groupe]**
    * Sélectionnez Utilisateur pour générer un rapport pour un seul stagiaire.
-   * Sélectionnez Groupe pour générer un rapport pour un groupe d&#39;apprenantsLe service tunnel accède aux membres et aux groupes de membres à partir de l&#39;environnement de publication.
-* **[!UICONTROL Affectation]** Choisissez parmi les ressources d&#39;activation affectées aux apprenants sélectionnés.
+   * Sélectionnez Groupe pour générer un rapport pour un groupe d’apprenants.
+Le service tunnel accède aux membres et aux groupes de membres à partir de l&#39;environnement de publication
+* ****
+AffectationFaites votre choix parmi les ressources d&#39;activation affectées aux apprenants sélectionnés.
 
 Sélectionnez **[!UICONTROL Générer]** pour créer le rapport :
 
@@ -95,9 +98,12 @@ La console Vues permet de générer des rapports sur les vues de page par foncti
 
 Sélectionnez les critères du rapport :
 
-* **[!UICONTROL Site]** Sélectionner un site communautaire
-* **[!UICONTROL Type]** de contenu Peut choisir Tout le contenu ou sélectionner l&#39;une des fonctionnalités présentes sur le site
-* PériodeSélectionnez l&#39;une des options suivantes :
+* ****
+SiteSélectionner un site communautaire
+* **[!UICONTROL Type de contenu]**
+Peut choisir Tout le contenu ou sélectionner l&#39;une des fonctionnalités présentes sur le site
+* Période
+Sélectionnez l&#39;une des options suivantes :
    * 7 derniers jours
    * 30 derniers jours
    * 90 derniers jours
@@ -115,9 +121,12 @@ La console Publications permet de générer des rapports sur le nombre de public
 
 Sélectionnez les critères du rapport :
 
-* **[!UICONTROL Site]** Sélectionner un site communautaire
-* **[!UICONTROL Type]** de contenu Peut choisir Tout le contenu ou sélectionner l&#39;une des fonctionnalités présentes sur le site
-* PériodeSélectionnez l&#39;une des options suivantes :
+* ****
+SiteSélectionner un site communautaire
+* **[!UICONTROL Type de contenu]**
+Peut choisir Tout le contenu ou sélectionner l&#39;une des fonctionnalités présentes sur le site
+* Période
+Sélectionnez l&#39;une des options suivantes :
    * 7 derniers jours
    * 30 derniers jours
    * 90 derniers jours
@@ -129,6 +138,6 @@ Sélectionnez **[!UICONTROL Générer]** pour créer le rapport :
 
 ## Résolution des incidents {#troubleshooting}
 
-### Aucun site de communauté répertorié {#no-community-sites-listed}
+### Aucun site communautaire n&#39;est répertorié {#no-community-sites-listed}
 
 Si aucun site de la communauté n’est répertorié, vérifiez que l’Adobe Analytics a été activé pour un site. Si vous choisissez des rapports sur les affectations, assurez-vous que la fonction des affectations est dans la structure du site de la communauté.
