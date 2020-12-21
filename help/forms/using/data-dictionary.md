@@ -26,7 +26,7 @@ Un dictionnaire de données est une représentation indépendante des métadonn�
 
 Le dictionnaire de données est composé d’éléments de trois types : simple, composite et de collection. Les DDE simples sont des éléments primitifs tels que des chaînes, des nombres, des dates et des valeurs booléennes qui contiennent des informations telles qu’un nom de ville. Un DDE composite contient d’autres éléments de dictionnaire de données qui peuvent être de type primitif, composite ou de collection. Par exemple, une adresse, qui se compose d’un nom de rue, d’une ville, d’une province, d’un pays et d’un code postal. Une collection est une liste de DDE simples ou composites similaires. Par exemple, un client avec plusieurs emplacements différents ou des adresses de facturation et de livraison différentes.
 
-Correspondence Management uses the back end, customer, `` ``or recipient-specific data stored according to the data dictionary’s structure to create correspondence meant for different customers. Par exemple, un document peut être créé avec des noms conviviaux, tels que « Cher/chère {Prénom} » ou « M. {Nom} ».
+Correspondence Management utilise les données dorsales, client, `` ``ou spécifiques au destinataire stockées selon la structure du dictionnaire de données pour créer de la correspondance destinée à différents clients. Par exemple, un document peut être créé avec des noms conviviaux, tels que « Cher/chère {Prénom} » ou « M. {Nom} ».
 
 En règle générale, les utilisateurs professionnels n’ont pas besoin de connaître les représentations de métadonnées telles que le schéma XSD (schéma XML) et les classes Java. Cependant, ils ont le plus souvent besoin de l’accès à ces structures de données et à leurs attributs dans le but de créer des solutions.
 
@@ -39,7 +39,7 @@ En règle générale, les utilisateurs professionnels n’ont pas besoin de conn
 
 ## Condition requise {#prerequisite}
 
-Install the [Compatibility Package](https://helpx.adobe.com/fr/in/experience-manager/6-4/forms/using/compatibility-package.html) to view the **Data Dictionaries** option on the **Forms** page.
+Installez le [package de compatibilité](https://helpx.adobe.com/fr/in/experience-manager/6-4/forms/using/compatibility-package.html) pour vue l&#39;option **dictionnaires de données** sur la page **Forms**.
 
 ## Création d’un dictionnaire de données {#createdatadictionary}
 
@@ -50,19 +50,19 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
 >Lorsque plusieurs lettres requièrent des éléments similaires, vous pouvez créer un dictionnaire de données commun. Un dictionnaire de données volumineux contenant un grand nombre d’éléments, toutefois, peut entraîner des problèmes de performances lors de son utilisation et du chargement des éléments, notamment dans les lettres et les fragments de document. Si vous rencontrez des problèmes de performances, essayez de créer les dictionnaires de données distincts pour chaque lettre.
 
 1. Choisissez **Formulaires** > **Dictionnaires de données**.
-1. Tap **Create Data Dictionary**.
+1. Appuyez sur **Créer un dictionnaire de données**.
 1. Dans l’écran de propriétés, ajoutez ce qui suit :
 
-   * **Titre :** (Facultatif) Saisissez le titre du dictionnaire de données. Le titre ne doit pas être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Des lettres et d’autres parties du document sont envoyées avec leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource. Les dictionnaires de données sont référencés avec leurs noms et non pas avec leurs titres.
+   * **Titre:** (Facultatif) Saisissez le titre du dictionnaire de données. Le titre ne doit pas être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Des lettres et d’autres parties du document sont envoyées avec leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource. Les dictionnaires de données sont référencés avec leurs noms et non pas avec leurs titres.
    * **Nom** : le nom unique du dictionnaire de données. Dans le champ Nom, vous pouvez entrer uniquement les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre et les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
 
-   * **Description**: (Facultatif) Description du dictionnaire de données.
-   * **Balises :** (Facultatif) Pour créer une balise personnalisée, entrez une valeur dans le champ de texte et appuyez sur Entrée. Vous pouvez afficher la balise sous le champ de texte des balises. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont également créées.
-   * **Propriétés**&#x200B;étendues : (Facultatif) Appuyez sur **Ajouter le champ** pour spécifier les attributs de métadonnées pour votre dictionnaire de données. Dans la colonne Nom de la propriété, saisissez un nom de propriété unique. Dans la colonne Valeur, saisissez une valeur à associer à la propriété.
+   * **Description** : (Facultatif) Description du dictionnaire de données.
+   * **Balises:** (Facultatif) Pour créer une balise personnalisée, entrez une valeur dans le champ de texte et appuyez sur Entrée. Vous pouvez afficher la balise sous le champ de texte des balises. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont également créées.
+   * **Propriétés** étendues : (Facultatif) Appuyez sur  **Ajouter** champ pour spécifier les attributs de métadonnées pour votre dictionnaire de données. Dans la colonne Nom de la propriété, saisissez un nom de propriété unique. Dans la colonne Valeur, saisissez une valeur à associer à la propriété.
 
    ![Propriétés du dictionnaire de données spécifiées en allemand](do-not-localize/1_ddproperties.png)
 
-1. (Optional) To upload an XSD schema definition for your data dictionary, under the Data Dictionary Structure pane, tap **Upload XML Schema**. Browse to XSD file, select it, and tap **Open**. Un dictionnaire de données est créé en fonction du schéma XML chargé. Vous devez modifier les noms d’affichage et les descriptions des éléments du dictionnaire de données. Pour ce faire, sélectionnez les nom des éléments en cliquant dessus et modifiez leur description, leur nom d’affichage, ou d’autres détails dans les champs du panneau de droite.
+1. (Facultatif) Pour télécharger une définition de schéma XSD pour votre dictionnaire de données, dans le volet Structure du dictionnaire de données, appuyez sur **Télécharger le Schéma XML**. Accédez au fichier XSD, sélectionnez-le, puis appuyez sur **Ouvrir**. Un dictionnaire de données est créé en fonction du schéma XML chargé. Vous devez modifier les noms d’affichage et les descriptions des éléments du dictionnaire de données. Pour ce faire, sélectionnez les nom des éléments en cliquant dessus et modifiez leur description, leur nom d’affichage, ou d’autres détails dans les champs du panneau de droite.
 
    Pour plus d’informations sur les éléments de dictionnaire de données calculés, consultez la section [Eléments de dictionnaire de données calculés](#computedddelements).
 
@@ -91,17 +91,17 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
    * Un DDE parent (composite) ne peut pas avoir deux enfants ayant le même nom.
    * Les énumérations contiennent uniquement des types de chaînes primitifs.
 
-   For more information on Composite, Collection, and Primitive elements and working with data dictionary elements, see [Mapping Data Dictionary Elements to XML Schema](#mappingddetoschema).
+   Pour plus d’informations sur les éléments composites, de collection et primitifs et l’utilisation des éléments du dictionnaire de données, voir [Mappage des éléments du dictionnaire de données au Schéma XML](#mappingddetoschema).
 
-   For information on validations in Data Dictionary, see [Data Dictionary Editor validations](#ddvalidations).
+   Pour plus d’informations sur les validations dans le dictionnaire de données, voir [Validations de l’éditeur du dictionnaire de données](#ddvalidations).
 
    ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
-1. (Facultatif) Après la sélection d’un élément, vous pouvez ajouter des propriétés dans l’onglet Avancé (attributs). You can also tap **Add Field** and extend the properties of a DD element.
+1. (Facultatif) Après la sélection d’un élément, vous pouvez ajouter des propriétés dans l’onglet Avancé (attributs). Vous pouvez également appuyer sur **Ajouter le champ** et étendre les propriétés d’un élément DD.
 
    ![3_addddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
-1. (Optional) You can remove any element by tapping the three dots on the right side of an element and selecting **Delete**.
+1. (Facultatif) Vous pouvez supprimer n’importe quel élément en appuyant sur les trois points du côté droit d’un élément et en sélectionnant **Supprimer**.
 
    ![4_deleteelement](assets/4_deleteelement.png)
 
@@ -151,9 +151,9 @@ Au cours de la modification ou de l’affichage d’un dictionnaire de données,
 
 ## Utilisation des données de test {#working-with-test-data}
 
-1. On the Data Dictionaries page, tap **Select**.
-1. Tap a data dictionary for which you want to download test data and then tap **Download Sample XML Data**.
-1. Tap **OK** in the alert message. Un fichier XML se télécharge.
+1. Sur la page Dictionnaires de données, appuyez sur **Sélectionner**.
+1. Appuyez sur un dictionnaire de données pour lequel vous souhaitez télécharger les données de test, puis sur **Télécharger l’exemple de données XML**.
+1. Appuyez sur **OK** dans le message d’alerte. Un fichier XML se télécharge.
 1. Ouvrez le fichier XML avec le Bloc-notes ou un éditeur XML différent. Le fichier XML a la même structure que les chaînes de dictionnaire de données et d’espace réservé dans les éléments. Remplacer les chaînes d’espace réservé par celles avec lesquelles vous souhaitez tester une lettre.
 
    ```xml
@@ -207,7 +207,7 @@ Au cours de la modification ou de l’affichage d’un dictionnaire de données,
 
 Les exemples de code suivants illustrent les détails d’implémentation pour le Dictionnaire de données.
 
-### Exemple de schéma pouvant être chargé dans le Dictionnaire de données {#sample-schema-that-can-be-uploaded-to-the-data-dictionary}
+### Exemple de schéma pouvant être chargé dans le Dictionnaire de données  {#sample-schema-that-can-be-uploaded-to-the-data-dictionary}
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
@@ -324,7 +324,7 @@ Le tableau suivant récapitule les attributs communs liés à un DDE :
   </tr> 
   <tr> 
    <td>extendedProperties</td> 
-   <td>Object</td> 
+   <td>objet</td> 
    <td>Carte des propriétés personnalisées ajoutées au DDE (spécifique d’une interface utilisateur ou toute autre information).</td> 
   </tr> 
   <tr> 
@@ -340,7 +340,7 @@ Le tableau suivant récapitule les attributs communs liés à un DDE :
  </tbody> 
 </table>
 
-### Eléments de dictionnaire de données calculés {#computedddelements}
+### Eléments de dictionnaire de données calculés  {#computedddelements}
 
 Un dictionnaire de données peut également contenir des éléments calculés. Un élément de dictionnaire de données calculé est toujours associé à une expression. Cette expression est évaluée pour obtenir la valeur d’un élément de dictionnaire de données au moment de l’exécution. Une valeur de DDE calculée est une fonction d’autres valeurs ou littéraux d’éléments de dictionnaire de données. Par défaut, les expressions du langage EL (Expression Language) JSP sont prises en charge. Les expressions EL utilisent les caractères ${ } et les expressions valides peuvent inclure des littéraux, des opérateurs, des variables (références d’élément de dictionnaire de données) ainsi que des appels de fonction. Tout en faisant référence à un élément de dictionnaire de données dans l’expression, le nom de référence de DDE est utilisé. Le chemin d’accès est unique pour chaque élément de dictionnaire de données au sein d’un dictionnaire de données.
 
@@ -379,7 +379,7 @@ L’exportation d’un schéma XSD nécessite un mappage de données spécifique
   </tr> 
   <tr> 
    <td>xs:attribute /xs:element de type xs:boolean <br /> </td> 
-   <td>DDE of type - Boolean <br /> </td> 
+   <td>DDE de type Boolean <br /> </td> 
    <td>java.lang.Boolean<br /> </td> 
   </tr> 
   <tr> 
@@ -410,15 +410,15 @@ L’exportation d’un schéma XSD nécessite un mappage de données spécifique
  </tbody> 
 </table>
 
-## Téléchargement d’un fichier de données d’exemple d’un dictionnaire de données {#download-a-sample-data-file-from-a-data-dictionary}
+## Téléchargement d’un fichier de données d’exemple d’un dictionnaire de données  {#download-a-sample-data-file-from-a-data-dictionary}
 
 Une fois que vous avez créé un dictionnaire de données, vous pouvez le télécharger en tant que fichier de données d’exemple XML pour y faire des entrées de texte.
 
-1. In the Data Dictionaries page, tap **Select** and then tap a data dictionary to select it.
+1. Dans la page Dictionnaires de données, appuyez sur **Sélectionner**, puis sur un dictionnaire de données pour le sélectionner.
 1. Sélectionnez **Télécharger l’exemple de données XML**.
-1. Tap **OK** in the alert message.
+1. Appuyez sur **OK** dans le message d’alerte.
 
-   Correspondence Management crée un fichier XML basé sur la structure du dictionnaire de données sélectionné et le télécharge vers votre ordinateur avec le nom &lt;nom-du-dictionnaire-de-données>-SampleData. Now you can edit this file in an XML or text editor to make data entries while [creating a letter](/help/forms/using/create-letter.md).
+   Correspondence Management crée un fichier XML basé sur la structure du dictionnaire de données sélectionné et le télécharge vers votre ordinateur avec le nom &lt;nom-du-dictionnaire-de-données>-SampleData. Vous pouvez maintenant modifier ce fichier dans un éditeur XML ou de texte pour créer des entrées de données lors de la création d&#39;une lettre [a1/>.](/help/forms/using/create-letter.md)
 
 ## Internationalisation des métadonnées {#internationalization-of-meta-data}
 
@@ -426,9 +426,9 @@ Lorsque vous souhaitez envoyer la même lettre dans différentes langues à vos 
 
 ### Localisation du dictionnaire de données {#localize-data-dictionary}
 
-1. On the Data Dictionaries page, tap **Select** and then tap a data dictionary to select it.
-1. Tap **Download Localization Data**.
-1. Tap **OK** in the alert. Correspondence Management télécharge un fichier zip sur votre ordinateur sous le nom DataDictionary-&lt;DDname>.zip.
+1. Sur la page Dictionnaires de données, appuyez sur **Sélectionner**, puis sur un dictionnaire de données pour le sélectionner.
+1. Appuyez sur **Télécharger les données de Localisation**.
+1. Appuyez sur **OK** dans l’alerte. Correspondence Management télécharge un fichier zip sur votre ordinateur sous le nom DataDictionary-&lt;DDname>.zip.
 1. Le fichier .zip contient un fichier .properties. Ce fichier définit le dictionnaire de données téléchargé. Le contenu du fichier de propriétés est semblable au contenu suivant :
 
    ```
@@ -460,7 +460,7 @@ Lorsque vous souhaitez envoyer la même lettre dans différentes langues à vos 
 1. Dans la page du Dictionnaires de données, sélectionnez **Plus** > **Charger les données de localisation** et sélectionnez le fichier .zip contenant des fichiers de propriétés localisés.
 1. Pour afficher les modifications de localisation, modifiez la langue de votre navigateur.
 
-## Validations du Dictionnaire de données {#ddvalidations}
+## Validations du Dictionnaire de données  {#ddvalidations}
 
 L’Editeur du dictionnaire de données impose les validations suivantes lors de la création ou de la mise à jour d’un dictionnaire de données.
 
@@ -532,7 +532,7 @@ L’exemple suivant montre un schéma simple.
 | age | /age |
 | prix | /prix |
 
-### Mappage des éléments composites {#mapping-composite-elements}
+### Mappage des éléments composites  {#mapping-composite-elements}
 
 La liaison n’est pas prise en charge pour les éléments composites ; si la liaison est fournie, elle est ignorée. La liaison pour tous les DDE enfants élémentaires de type primitif doit être absolue. L’autorisation de mappage absolu pour les éléments enfant d’un DDE composite offre plus de flexibilité en termes de liaison XPath. Le mappage d’un DDE composite à un type complexe d’élément de schéma XML limite la portée de la liaison pour ses éléments enfant.
 
@@ -580,7 +580,7 @@ L’exemple suivant illustre le schéma d’une note.
  </tbody> 
 </table>
 
-### Mappage des éléments de collection {#mapping-collection-elements}
+### Mappage des éléments de collection  {#mapping-collection-elements}
 
 Un élément Collection est uniquement mappé à un autre élément Collection de cardinalité > 1. Les DDE enfants d’un DDE Collection ont des liaisons XML relatives (locales) par rapport à la liaison XML de leur DDE parent. Etant donné que les DDE enfants d’un élément Collection doivent avoir la même cardinalité que celle du DDE parent, la liaison relative est chargée d’assurer la contrainte de cardinalité de sorte que le DDE enfant ne pointe pas vers un élément de schéma XML non répété. Dans l’exemple ci-dessous, la cardinalité de « TokenID » doit être la même que celle de « Tokens », son DDE Collection parent.
 
