@@ -15,7 +15,7 @@ ht-degree: 73%
 
 ---
 
-# Guide de Forms Adobe Experience Manager 6.4 {#forms}
+# Guide de Forms Adobe Experience Manager 6.4  {#forms}
 
 + [Guide de Forms AEM 6.4](home.md)
 + Notes de mise à jour {#release-notes-new-features}
@@ -27,20 +27,20 @@ ht-degree: 73%
    + [Présentation de la création de formulaires adaptatifs](using/introduction-forms-authoring.md)
    + [Présentation des communications interactives](using/interactive-communications-overview.md)
    + [Présentation de la gestion des formulaires](using/introduction-managing-forms.md)
-   + Tutorial: Create your First Adaptive Form {#create-first-adaptive-form}
+   + Didacticiel : Créer votre premier formulaire adaptatif {#create-first-adaptive-form}
       + [Didacticiel : Créer votre premier formulaire adaptatif](using/create-your-first-adaptive-form.md)
       + [Didacticiel : création d’un formulaire adaptatif](using/create-adaptive-form.md)
       + [Didacticiel : créer un modèle de données de formulaire](using/create-form-data-model.md)
       + [Didacticiel : Appliquer des règles aux champs de formulaire adaptatif l](using/apply-rules-to-adaptive-form-fields.md)
       + [Didacticiel : Mettre en forme votre formulaire adaptatif](using/style-your-adaptive-form.md)
-   + Tutorial: Create your First Interactive Communication {#create-first-interactive-communication}
+   + Didacticiel : Créer votre première communication interactive {#create-first-interactive-communication}
       + [Didacticiel : Créer votre première communication interactive](using/create-your-first-interactive-communication.md)
       + [Didacticiel : Planifier la communication interactive](using/planning-interactive-communications.md)
       + [Didacticiel : créer un modèle de données de formulaire](using/create-form-data-model-tutorial.md)
       + [Didacticiel : Créer des fragments de document](using/create-document-fragments.md)
       + [Didacticiel : Créer des modèles](using/create-templates-print-web.md)
       + [Didacticiel : Créer une communication interactive](using/create-interactive-communication-tutorial.md)
-   + AEM Forms Reference Collaterals {#aem-forms-reference-collaterals}
+   + Documents de référence AEM Forms {#aem-forms-reference-collaterals}
       + [Installé et configuré les sites de référence d’AEM Forms](using/setup-reference-sites.md)
       + [Présentation du site de référence We.Finance](using/finance-reference-site-walkthrough.md) 
       + [Présentation du site de référence We.Gov](using/gov-reference-site-walkthrough.md)
@@ -61,7 +61,7 @@ ht-degree: 73%
       + [Installation et configuration des fonctionnalités de capture de données](using/installing-configuring-aem-forms-osgi.md)
       + [Installation et configuration d’un processus Forms-Central sur OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Installation et configuration des communications interactives](using/installing-configuring-intreactive-communication-correspondence-management.md)
-   + Install AEM Forms on JEE {#jee-installation}
+   + Installer AEM Forms on JEE {#jee-installation}
       + [Plates-formes prises en charge pour AEM forms on JEE](using/aem-forms-jee-supported-platforms.md)
       + [Installation et déploiement d’AEM Forms on JEE à l’aide de JBoss clé en main](http://www.adobe.com/go/learn_aemforms_installTurnkey_64_fr)
       + [Installation et configuration du serveur de sécurité de document uniquement](using/installing-and-configuring-the-document-security-server.md)
@@ -86,11 +86,11 @@ ht-degree: 73%
       + [aem application pour ordinateur de bureau pour AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
 + Mettre à niveau AEM Forms {#upgrade-aem-forms}
    + [Chemins de mise à niveau disponibles](using/upgrade.md)
-   + Mise à niveau de AEM Forms sur OSGi {#aem-forms-osgi-upgrade}
+   + Mettre à niveau AEM Forms sur OSGi {#aem-forms-osgi-upgrade}
       + [Mise à niveau vers AEM Forms 6.4 sur OSGi](using/upgrade-forms-osgi.md)
       + [Installation du package de compatibilité](using/compatibility-package.md)
       + [Migration de ressources et de documents AEM Forms](using/migration-utility.md)
-   + Mise à niveau de AEM Forms on JEE {#aem-forms-jee-upgrade}
+   + Mettre à niveau AEM Forms on JEE {#aem-forms-jee-upgrade}
       + [Préparation à la mise à niveau de AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareupgrade_64_fr)
       + [Aide-mémoire et planification de la mise à niveau](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64_fr)
       + [Mise à niveau vers AEM Forms 6.4 sur JEE](using/upgrade-forms-jee.md)
@@ -112,7 +112,7 @@ ht-degree: 73%
    + [Obtention de documents XDP et PDF dans AEM Forms](using/get-xdp-pdf-documents-aem.md)
    + [Importation et exportation des actifs dans AEM Forms](using/import-export-forms-templates.md)
    + [Support de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs](using/supporting-new-language-localization.md)
-   + Handling user data {#handling-user-data}
+   + Gestion des données utilisateur {#handling-user-data}
       + [Workflows basés sur Forms sur OSGi](using/forms-workflow-osgi-handling-user-data.md)
       + [Gestion des utilisateurs Forms](using/user-management-handling-user-data.md)
       + [Workflows Forms JEE](using/forms-workflow-jee-handling-user-data.md)
@@ -120,7 +120,7 @@ ht-degree: 73%
       + [Correspondence Management](using/correspondence-management-handling-user-data.md)
       + [Intégration à Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [Document Security](/help/forms/using/document-security-handling-user-data.md)
-   + Hardening AEM Forms Environment {#hardening-aem-forms-environment}
+   + Renforcement de l’Environnement AEM Forms {#hardening-aem-forms-environment}
       + [Renforcement et sécurisation d’AEM Forms dans un environnement OSGi](using/hardening-securing-aem-forms-environment.md)
       + [Considérations générales sur la sécurité pour AEM Forms on JEE](using/general-security-considerations.md)
       + [Renforcement de votre Environnement AEM Forms on JEE](using/hardening-aem-forms-jee-environment.md)
@@ -323,13 +323,13 @@ ht-degree: 73%
    + [Condition intégrée et répétition dans les communications interactives et les lettres](using/cm-inline-condition.md)
    + [Fragments de document](using/lists.md)
    + [Propriétés de configuration de Correspondence Management](using/cm-configuration-properties.md)
-+ Integrate AEM Forms with Experience Cloud solutions {#integrate-aem-forms-with-experience-cloud-solutions}
++ Intégration de l&#39;AEM Forms avec des solutions Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
    + [Création d’expériences ciblées dans AEM Forms](/help/forms/using/experience-targeting-forms.md)
    + [Mesure et amélioration de l’efficacité et de la conversion des formulaires](using/measure-improve-performance-forms-documents.md)
    + [Configuration des analyses et des rapports](using/configure-analytics-forms-documents.md)
    + [Consultation et compréhension des rapports d’analyse d’AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
    + [Créer et gérer des tests A/B pour les formulaires adaptatifs](using/ab-testing-adaptive-forms.md)
-+ Publish and process AEM Forms {#publish-process-aem-forms}
++ Publier et traiter AEM Forms {#publish-process-aem-forms}
    + [Présentation de la publication de formulaires sur un portail](using/introduction-publishing-forms.md)
    + [Exemple d’intégration d’un composant brouillons &amp; envois à la base de données](using/integrate-draft-submission-database.md)
    + [Configuration des services de stockage pour les brouillons et les envois](using/configuring-draft-submission-storage.md)
@@ -350,7 +350,7 @@ ht-degree: 73%
    + [Création d’une page de portail de formulaires](using/creating-form-portal-page.md)
    + [API pour travailler avec des formulaires envoyés sur le portail de formulaires](using/report-submitted-data-forms.md)
    + [Stockage personnalisé pour les composants Drafts et Submissions](using/adding-custom-storage-provider-forms.md)
-+ Services de documents {#use-document-services}
++ Services de document {#use-document-services}
    + [Présentation d’AEM Document Services](using/overview-aem-document-services.md)
    + [Service Forms](using/forms-service.md)
    + [Service Output](using/output-service.md)
@@ -582,12 +582,12 @@ ht-degree: 73%
    + [Guide de référence du service Assembler et de DDX](http://www.adobe.com/go/learn_aemforms_ddxRef_64_fr)
    + [Aide de Workbench](http://www.adobe.com/go/learn_aemforms_workbench_64_fr)
    + Programmation avec AEM Forms on JEE {#programming-aem-forms-jee}
-      + Présentation de la programmation avec AEM Forms on JEE {#introduction-programming-aem-forms-jee}
+      + Introduction à la programmation avec AEM Forms on JEE {#introduction-programming-aem-forms-jee}
          + [Présentation de l’API Java QuickStart](developing/introducing-java-api-soap-quick.md)
          + [Appel d’AEM Forms à l’aide d’API](developing/invoking-aem-forms-using-apis.md)
          + [Présentation des processus AEM Forms](developing/aem-forms-processes.md)
          + [Conteneur de service](developing/service-container.md)
-      + Début rapide de l’API Java - Exemples de code {#java-api-quick-start-code-examples}
+      + Début rapide de l&#39;API Java - Exemples de code {#java-api-quick-start-code-examples}
          + [Début rapide de l’API JavaScript client Application Manager (SOAP)](developing/application-manager-client-java-api.md)
          + [Début rapide sur l’API Java du service Application Manager (SOAP)](developing/application-manager-service-java-api.md)
          + [API Java du service Assembler QuickStart (SOAP)](developing/assembler-service-java-api-quick.md)
