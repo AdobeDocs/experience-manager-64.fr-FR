@@ -16,7 +16,7 @@ ht-degree: 84%
 ---
 
 
-# Libre-service dédié aux employés reference site walkthrough {#employee-self-service-reference-site-walkthrough}
+# Libre-service dédié aux employés présentation du site de référence {#employee-self-service-reference-site-walkthrough}
 
 ## Condition requise {#prerequisite}
 
@@ -32,7 +32,7 @@ Le site de référence de libre-service des employés montre comment vous pouvez
 >
 >Les cas d’utilisation du libre-service destiné aux employés sont disponibles sur les sites de référence We.Finance et We.Gov. Les exemples, images et descriptions utilisés dans les présentations utilisent le site de référence We.Finance. Cependant, vous pouvez exécuter ces cas d’utilisation et revoir les artefacts en utilisant We.Gov. Pour ce faire, vous devez remplacer **we-finance** par **we-gov** dans les URL mentionnées.
 
-## Présentation du questionnaire sur les conflits d’intérêt {#conflict-of-interest-questionnaire-walkthrough}
+## Présentation du questionnaire sur les conflits d’intérêt  {#conflict-of-interest-questionnaire-walkthrough}
 
 De temps à autre, les organisations demandent à leurs employés de soumettre un questionnaire sur les conflits d’intérêts afin de déterminer les activités ou les relations personnelles de leurs employés qui pourraient entrer en conflit avec leur organisation.
 
@@ -42,9 +42,11 @@ Le service de conformité de l’organisation de Sarah a demandé aux employés 
 
 Sarah se rend sur le portail de son entreprise, se connecte et clique sur Employé pour accéder au tableau de bord des employés. Elle trouve le questionnaire sur les conflits d’intérêt dans le tableau de bord des employés et clique sur **[!UICONTROL Demander]**.
 
-![we-finance-home](assets/we-finance-home.png)**Figure :** *Portail d’organisation*
+![we-finance-](assets/we-finance-home.png)
+**homeFigure:portail** *Organisation*
 
-![employé-tableau de bord](assets/employee-dashboard.png)**Figure :** *tableau de bord employé*
+![employee-](assets/employee-dashboard.png)
+**dashboardFigure:tableau de bord** *employé*
 
 Sarah navigue dans le formulaire en utilisant le bouton Suivant et lit les sections Introduction et Définition. Elle répond aux questions dans la section dédiée. Enfin, elle signe et envoie le questionnaire.
 
@@ -56,41 +58,45 @@ Le portail de l’entreprise et le questionnaire sont réactifs et compatibles a
 
 Le portail de l’entreprise et le tableau de bord des employés sont des pages de sites AEM. Le tableau de bord répertorie plusieurs options de libre-service, telles que le questionnaire sur les conflits d’intérêt. Le bouton Demander est lié à un formulaire adaptatif.
 
-Le formulaire adaptatif utilise des règles pour masquer ou afficher les informations en fonction de la réponse fournie dans l’onglet Questions. En outre, le formulaire utilise le composant Scribble pour la signature dans l’onglet Déclaration. Consultez le formulaire adaptatif à `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/conflict-of-interest.html`.
+Le formulaire adaptatif utilise des règles pour masquer ou afficher les informations en fonction de la réponse fournie dans l’onglet Questions. En outre, le formulaire utilise le composant Scribble pour la signature dans l’onglet Déclaration. Consultez le formulaire adaptatif à l’adresse `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/conflict-of-interest.html`.
 
 **Démonstration**
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Cliquez sur **[!UICONTROL Employé]** pour accéder au tableau de bord, puis sur **[!UICONTROL Demander]** sur le questionnaire sur les conflits d’intérêt. Vérifiez et envoyez le questionnaire.
+Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` et connectez-vous en utilisant `srose/srose` comme nom d’utilisateur/mot de passe pour Sarah. Cliquez sur **[!UICONTROL Employé]** pour accéder au tableau de bord, puis sur **[!UICONTROL Demander]** sur le questionnaire sur les conflits d’intérêt. Vérifiez et envoyez le questionnaire.
 
-### Gloria examine et approuve l’envoi du questionnaire sur les conflits d’intérêt {#gloria-reviews-and-approves-the-conflict-of-interest-questionnaire-submission}
+### Gloria examine et approuve l’envoi du questionnaire sur les conflits d’intérêt  {#gloria-reviews-and-approves-the-conflict-of-interest-questionnaire-submission}
 
 Le questionnaire sur les conflits d’intérêt envoyé par Sarah est attribué à Gloria Rios pour examen. Gloria travaille en tant qu’agent de conformité dans l’entreprise. Gloria se connecte à sa boîte de réception AEM et passe en revue les tâches qui lui sont assignées. Elle approuve le questionnaire envoyé par Sarah et termine la tâche.
 
-![inbox](assets/conflict-inbox.png)**de conflit Figure :** *La boîte de réception de Gloria*
+![conflit-](assets/conflict-inbox.png)
+**inboxFigure:boîte de réception de** *Gloria*
 
-![approuvé](assets/conflict-approved.png)**parle conflit Figure :** *Ouvrir la tâche*
+![Figure ](assets/conflict-approved.png)
+**approuvée par un conflit:tâche** *ouverte*
 
 **Fonctionnement**
 
-L’action d’envoi dans le questionnaire sur les conflits d’intérêt déclenche un processus qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le Forms Workflow à l’adresse `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-conflict-of-interest.html`
+L’action d’envoi dans le questionnaire sur les conflits d’intérêt déclenche un processus qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le Forms Workflow à `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-conflict-of-interest.html`
 
 ![site de référence-libre-service-employé](assets/employee-self-service-reference-site.png)
 
 **Démonstration**
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Ouvrez la tâche créée pour le questionnaire sur les conflits d’intérêt et approuvez-la.
+Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` et connectez-vous en utilisant `grios/password` comme nom d’utilisateur/mot de passe pour Gloria Rios. Ouvrez la tâche créée pour le questionnaire sur les conflits d’intérêt et approuvez-la.
 
 ## Présentation de la demande de la carte d’entreprise {#corporate-card-application-walkthrough}
 
 Sarah voyage beaucoup pour les affaires et elle a besoin d’une carte de crédit d’entreprise pour payer ses factures lors de ses déplacements. Elle demande une carte d’entreprise via le portail des employés de son entreprise.
 
-### Sarah envoie la demande Carte d’entreprise {#sarah-submits-the-corporate-card-application}
+### Sarah envoie la demande Carte d’entreprise  {#sarah-submits-the-corporate-card-application}
 
 Sarah se rend sur le portail de son entreprise, se connecte et clique sur **[!UICONTROL Employé]** pour accéder au tableau de bord des employés. Elle trouve la demande Carte d’entreprise dans le tableau de bord des employés et clique sur **[!UICONTROL Demander]**.
 
-![we-finance-home-1](assets/we-finance-home-1.png)**Figure :** *Portail d’organisation*
+![we-finance-home-1](assets/we-finance-home-1.png)
+**Figure:Portail** *Organisation*
 
-![employee-tableau de bord-1](assets/employee-dashboard-1.png)**Figure :** *tableau de bord employé*
+![employé-tableau de bord-1](assets/employee-dashboard-1.png)
+**Figure:tableau de bord** *employé*
 
 Elle clique sur **[!UICONTROL Demander]** dans la demande Carte d’entreprise. Une demande d’une page s’ouvre. Elle renseigne toutes les informations et clique sur **[!UICONTROL Demander]** pour envoyer la demande.
 
@@ -105,25 +111,27 @@ Le formulaire adaptatif pour la demande de carte d’entreprise est un formulair
 
 **Démonstration**
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Cliquez sur **[!UICONTROL Employé]** pour accéder au tableau de bord, puis sur **[!UICONTROL Demander]** sur la demande de carte d’entreprise. Renseignez les informations et envoyez la demande.
+Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` et connectez-vous en utilisant `srose/srose` comme nom d’utilisateur/mot de passe pour Sarah. Cliquez sur **[!UICONTROL Employé]** pour accéder au tableau de bord, puis sur **[!UICONTROL Demander]** sur la demande de carte d’entreprise. Renseignez les informations et envoyez la demande.
 
-### Gloria examine et approuve la demande de carte d’entreprise {#gloria-reviews-and-approves-the-corporate-card-application}
+### Gloria examine et approuve la demande de carte d’entreprise  {#gloria-reviews-and-approves-the-corporate-card-application}
 
 La demande de carte d’entreprise envoyée par Sarah est attribuée à Gloria Rios pour examen. Gloria se connecte à sa boîte de réception AEM et passe en revue les tâches qui lui sont assignées. Elle approuve la demande envoyée par Sarah et termine la tâche.
 
-![carte d&#39;entreprise-boîte de réception](assets/corporate-card-inbox.png)**Figure :** *La boîte de réception de Gloria*
+![carte d&#39;entreprise-](assets/corporate-card-inbox.png)
+**inboxFigure:boîte de réception de** *Gloria*
 
-![Carte d&#39;entreprise approuvée](assets/corporate-card-approved.png)**Figure :** *Ouvrir la tâche*
+![carte d&#39;entreprise-](assets/corporate-card-approved.png)
+**approuvéeFigure:tâche** *ouverte*
 
 **Fonctionnement**
 
-Le processus d’envoi dans la demande de carte d’entreprise déclenche un processus Forms qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le Forms Workflow à l’adresse `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-corporate-card.html`
+Le processus d’envoi dans la demande de carte d’entreprise déclenche un processus Forms qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le Forms Workflow à `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-corporate-card.html`
 
 ![carte d&#39;entreprise-workflow-modèle](assets/corporate-card-workflow-model.png)
 
 **Démonstration**
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Ouvrez la tâche créée pour la demande de carte d’entreprise et approuvez-la.
+Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` et connectez-vous en utilisant `grios/password` comme nom d’utilisateur/mot de passe pour Gloria Rios. Ouvrez la tâche créée pour la demande de carte d’entreprise et approuvez-la.
 
 ## Présentation de l’envoi du rapport de dépenses {#expense-report-submission-walkthrough}
 
@@ -133,9 +141,11 @@ Sarah doit envoyer des rapports de dépenses pour approbation car ses déplaceme
 
 Sarah se rend sur le portail de son entreprise, se connecte et clique sur **[!UICONTROL Employé]** pour accéder au tableau de bord des employés. Elle trouve la demande Rapport de dépenses dans le tableau de bord des employés et clique sur **[!UICONTROL Demander]**.
 
-![we-finance-home-2](assets/we-finance-home-2.png)**Figure :** *Portail d’organisation*
+![we-finance-home-2](assets/we-finance-home-2.png)
+**Figure:Portail** *Organisation*
 
-![employee-tableau de bord-2](assets/employee-dashboard-2.png)**Figure :** *tableau de bord employé*
+![employé-tableau de bord-2](assets/employee-dashboard-2.png)
+**Figure:tableau de bord** *employé*
 
 Elle clique sur **[!UICONTROL Demander]** dans la demande Rapport de dépenses. Un formulaire de demande s’ouvre avec deux onglets : Nom du rapport et Détails du rapport. L’icône **+** dans l’onglet Détails du rapport lui permet d’ajouter plus de dépenses dans un rapport.
 
@@ -147,41 +157,45 @@ Le portail de l’entreprise et les demandes sont réactifs et compatibles avec 
 
 Le portail de l’entreprise et le tableau de bord des employés sont des pages de sites AEM. Le tableau de bord répertorie plusieurs options de libre-service, telles que la demande de rapport de dépenses. Le bouton Demander est lié à un formulaire adaptatif.
 
-Les onglets Nom du rapport et Détails du rapport du formulaire adaptatif sont des composants Panneau. Le panneau Détails du rapport contient le panneau Dépenses. Il s’agit d’un panneau répétable qui permet d’ajouter plusieurs dépenses dans le rapport. Consultez le formulaire adaptatif et ses configurations à `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/expense-report.html`.
+Les onglets Nom du rapport et Détails du rapport du formulaire adaptatif sont des composants Panneau. Le panneau Détails du rapport contient le panneau Dépenses. Il s’agit d’un panneau répétable qui permet d’ajouter plusieurs dépenses dans le rapport. Examinez le formulaire adaptatif et ses configurations à l’adresse `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/expense-report.html`.
 
 **Démonstration**
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Cliquez sur **[!UICONTROL Employé]** pour accéder au tableau de bord, puis sur **[!UICONTROL Demander]** sur la demande de rapport de dépenses. Renseignez les informations et envoyez la demande.
+Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` et connectez-vous en utilisant `srose/srose` comme nom d’utilisateur/mot de passe pour Sarah. Cliquez sur **[!UICONTROL Employé]** pour accéder au tableau de bord, puis sur **[!UICONTROL Demander]** sur la demande de rapport de dépenses. Renseignez les informations et envoyez la demande.
 
-### Gloria examine et approuve le rapport de dépenses {#gloria-reviews-and-approves-the-expense-report}
+### Gloria examine et approuve le rapport de dépenses  {#gloria-reviews-and-approves-the-expense-report}
 
 Le rapport de dépenses envoyé par Sarah est attribué à Gloria Rios pour examen. Gloria se connecte à sa boîte de réception AEM et passe en revue les tâches qui lui sont assignées. Elle approuve la demande envoyée par Sarah et termine la tâche.
 
-![notes de frais-boîte de réception](assets/expense-report-inbox.png)**Figure :** *La boîte de réception de Gloria*
+![note de frais-rapport-](assets/expense-report-inbox.png)
+**inboxFigure:boîte de réception de** *Gloria*
 
-![rapport de dépenses approuvé](assets/expense-report-approved.png)**Figure :** *Ouvrir la tâche*
+![rapport de dépenses-](assets/expense-report-approved.png)
+**approuvéFigure:tâche** *ouverte*
 
 **Fonctionnement**
 
-Le processus d’envoi dans la demande de rapport de dépenses déclenche un processus Forms qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le Forms Workflow à l’adresse `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-expense-report-workflow.html`
+Le processus d’envoi dans la demande de rapport de dépenses déclenche un processus Forms qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le Forms Workflow à `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-expense-report-workflow.html`
 
 ![carte d&#39;entreprise-dépense-rapport-workflow-modèle](assets/corporate-card-expense-report-workflow-model.png)
 
 **Démonstration**
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Ouvrez la tâche créée pour la demande de rapport de dépenses et approuvez-la.
+Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` et connectez-vous en utilisant `grios/password` comme nom d’utilisateur/mot de passe pour Gloria Rios. Ouvrez la tâche créée pour la demande de rapport de dépenses et approuvez-la.
 
 ## Présentation de la demande de congés {#leave-application-walkthrough}
 
 Sarah prévoit des vacances en famille le mois prochain et veut demander une semaine de congé.
 
-### Sarah envoie la demande de congés {#sarah-submits-the-leave-application}
+### Sarah envoie la demande de congés  {#sarah-submits-the-leave-application}
 
 Sarah se rend sur le portail de son entreprise, se connecte et clique sur **[!UICONTROL Employé]** pour accéder au tableau de bord des employés. Elle trouve la demande de congés dans le tableau de bord des employés et clique sur **[!UICONTROL Demander]**.
 
-![we-finance-home-3](assets/we-finance-home-3.png)**Figure :** *Portail d’organisation*
+![we-finance-home-3](assets/we-finance-home-3.png)
+**Figure:Portail** *Organisation*
 
-![employee-tableau de bord-3](assets/employee-dashboard-3.png)**Figure :** *tableau de bord employé*
+![employé-tableau de bord-3](assets/employee-dashboard-3.png)
+**Figure:tableau de bord** *employé*
 
 La demande de congés s’ouvre avec le nom de Sarah et son ID d’employée pré-renseignés dans le formulaire. Elle affiche également son nombre de jours de congé et l’historique. Elle remplit les informations du congé et envoie la demande pour approbation.
 
@@ -203,22 +217,24 @@ Vous pouvez consulter le formulaire adaptatif et le modèle de données de formu
 
 **Démonstration**
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Cliquez sur **[!UICONTROL Employé]** pour accéder au tableau de bord, puis sur **[!UICONTROL Demander]** sur la demande de congés. Renseignez les informations et envoyez la demande.
+Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` et connectez-vous en utilisant `srose/srose` comme nom d’utilisateur/mot de passe pour Sarah. Cliquez sur **[!UICONTROL Employé]** pour accéder au tableau de bord, puis sur **[!UICONTROL Demander]** sur la demande de congés. Renseignez les informations et envoyez la demande.
 
-### Gloria examine et approuve la demande de congés {#gloria-reviews-and-approves-the-leave-application}
+### Gloria examine et approuve la demande de congés  {#gloria-reviews-and-approves-the-leave-application}
 
 La demande de congés envoyée par Sarah est attribuée à Gloria Rios pour examen. Gloria se connecte à sa boîte de réception AEM et passe en revue les tâches qui lui sont assignées. Elle approuve la demande envoyée par Sarah et termine la tâche.
 
-![leave-inbox](assets/leave-inbox.png)**Figure :** *La boîte de réception de Gloria*
+![leave-](assets/leave-inbox.png)
+**inboxFigure:boîte de réception de** *Gloria*
 
-![approbation](assets/leave-approved.png)**de congé Figure :** *Ouvrir la tâche*
+![leave-](assets/leave-approved.png)
+**authorizedFigure:** *Open tâche*
 
 **Fonctionnement**
 
-Le processus d’envoi dans la demande de congés déclenche un processus Forms qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le Forms Workflow à l’adresse `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-leave-application.html`
+Le processus d’envoi dans la demande de congés déclenche un processus Forms qui crée une tâche dans la boîte de réception de Gloria pour approbation. Consultez le Forms Workflow à `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-leave-application.html`
 
 ![carte d&#39;entreprise-sortie-application-workflow-modèle](assets/corporate-card-leave-application-workflow-model.png)
 
 **Démonstration**
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Ouvrez la tâche créée pour la demande de congés et approuvez-la.
+Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` et connectez-vous en utilisant `grios/password` comme nom d’utilisateur/mot de passe pour Gloria Rios. Ouvrez la tâche créée pour la demande de congés et approuvez-la.
