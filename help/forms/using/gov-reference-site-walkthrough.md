@@ -42,7 +42,7 @@ Une fois la demande envoyée et les frais payés, le demandeur reçoit un courri
 
 L’organisme We.Gov reçoit la demande. Il fait évaluer la demande et approuve les demandes authentiques.
 
-Une fois la demande approuvée, le demandeur reçoit un courrier électronique de la part du site We.Gov. The **View Document** option in the email links to a document with the enrollment details of the applicant.
+Une fois la demande approuvée, le demandeur reçoit un courrier électronique de la part du site We.Gov. L&#39;option **Document de Vue** du courrier électronique renvoie à un document contenant les détails d&#39;inscription du demandeur.
 
 L’illustration ci-dessous présente le déroulement étape par étape du scénario du site de référence We.Gov.
 
@@ -55,7 +55,7 @@ Le scénario met en scène les personnages suivants :
 * Gloria Rios, la responsable du département des approbations de We.Gov
 * Conrad Simms, l’agent de terrain qui s’occupe de l’évaluation de la demande
 
-## Sarah lance la procédure de vérification de son éligibilité {#sarah-initiates-her-eligibility-check}
+## Sarah lance la procédure de vérification de son éligibilité  {#sarah-initiates-her-eligibility-check}
 
 Un demandeur a la possibilité de vérifier l’éligibilité de sa demande d’allocation familiale. Le site propose aux utilisateurs de répondre à des questions pour leur permettre de déterminer si leur demande est éligible. Sarah, le parent adoptif, est un demandeur potentiel. Le formulaire d’éligibilité est disponible sur la page de demande auprès des services d’aide à l’enfance du site We.Gov. Pour vérifier son éligibilité, Sarah clique sur **[!UICONTROL Allocations familiales]** sur le site Web We.Gov. Sur la page des allocations familiales, Sarah clique sur **[!UICONTROL Vérifiez votre éligibilité]**.
 
@@ -89,7 +89,7 @@ Dans votre navigateur, ouvrez `https://<hostname>:<PublishPort>/content/we-gov/e
 Pour afficher les règles :
 
 1. Ouvrez le formulaire en mode de modification dans l’instance de rédaction. URL: `https://<hostname>:<AuthorPort>/editor.html/content/forms/af/we-gov/child-support/css.html`.
-1. Select a component and click ![edit-rules](assets/edit-rules.png).
+1. Sélectionnez un composant et cliquez sur ![edit-rules](assets/edit-rules.png).
 
    Toutes les règles appliquées dans le formulaire sont répertoriées dans l’éditeur de règles.
 
@@ -112,21 +112,21 @@ Par défaut, Sarah est redirigée vers la section **[!UICONTROL À propos du dem
 
 ![Demande d’allocations familiales sur ordinateur de bureau](assets/desktop.png)
 
-At any time, Sarah can click **[!UICONTROL Come back later]** and resume with her application. When she clicks **[!UICONTROL Come back later]**, her progress is saved as a draft, and she gets an option to email the draft.
+A tout moment, Sarah peut cliquer sur **[!UICONTROL Revenir plus tard]** et reprendre sa demande. Lorsqu’elle clique sur **[!UICONTROL Revenir plus tard]**, sa progression est enregistrée en tant que brouillon et elle a la possibilité de l’envoyer par courrier électronique à la version préliminaire.
 
-When she clicks **[!UICONTROL Send Email]**, she receives an email with a link to the draft of her form.
+Lorsqu’elle clique sur **[!UICONTROL Envoyer un courrier électronique]**, elle reçoit un courrier électronique contenant un lien vers le brouillon de son formulaire.
 
 Le formulaire d’allocation familiale du site We.Gov utilise des formulaires adaptatifs. Elle peut utiliser le lien de son courrier électronique et remplir le formulaire sur son appareil mobile.
 
 >[!NOTE]
 >
->Le processus à partir d’un courrier électronique fonctionne avec les utilisateurs connectés uniquement. Dans le scénario de site de référence, assurez-vous que l’utilisateur Sarah Rose est ajouté. Sarah&#39;s login credentials are `srose/password`.
+>Le processus à partir d’un courrier électronique fonctionne avec les utilisateurs connectés uniquement. Dans le scénario de site de référence, assurez-vous que l’utilisateur Sarah Rose est ajouté. Les informations de connexion de Sarah sont `srose/password`.
 
 ![mob1](assets/mob1.png)
 
 Sarah peut fournir des informations dans n’importe quelle section, mais les frais de dossier sont acceptés uniquement après avoir fourni les informations requises dans toutes les sections. Une demande est incomplète tant que les frais requis ne sont pas réglés, et les champs marqués par un astérisque sont obligatoires.
 
-### <strong>Sarah fournit ses informations</strong> {#strong-sarah-provides-her-information-strong}
+### <strong>Sarah fournit ses informations</strong>  {#strong-sarah-provides-her-information-strong}
 
 Après que Sarah a cliqué sur **[!UICONTROL Commencer la demande]**, elle est redirigée vers la section Informations sur le demandeur de la page de demande d’allocation familiale. Dans Informations sur le demandeur, Sarah parcourt les onglets et fournit ses informations personnelles pour la demande. Elle clique sur **[!UICONTROL Suivant]** pour parcourir les onglets. 
 
@@ -197,7 +197,7 @@ La vérification de l’éligibilité applique les règles indiquées dans le fo
 
 ### Démonstration {#see-it-yourself-1}
 
-In your browser, open `https://<hostname>:<PublishPort>/content/forms/af/we-gov/child-support/css.html` and fill the required information. Lorsque vous envoyez la demande après avoir rempli les informations nécessaires, payé les frais et signé le document, vous recevez le courrier électronique d’accusé de réception.
+Dans votre navigateur, ouvrez `https://<hostname>:<PublishPort>/content/forms/af/we-gov/child-support/css.html` et renseignez les informations requises. Lorsque vous envoyez la demande après avoir rempli les informations nécessaires, payé les frais et signé le document, vous recevez le courrier électronique d’accusé de réception.
 
 Voir le modèle enfant We.Gov ici : `https://<hostname>:<AuthorPort>/editor.html/conf/we-gov/settings/wcm/templates/we-gov-child-template/structure.html`
 
@@ -209,7 +209,7 @@ Pour afficher toutes les règles, effectuez les étapes suivantes :
 
    URL: `https://<hostname>:<AuthorPort>/editor.html/content/forms/af/we-gov/child-support/css.html`
 
-1. Select a component, and tap ![edit-rules](assets/edit-rules.png). Toutes les règles sont répertoriées dans l’éditeur de règles, y compris les règles répertoriées ci-dessus.
+1. Sélectionnez un composant et appuyez sur ![edit-rules](assets/edit-rules.png). Toutes les règles sont répertoriées dans l’éditeur de règles, y compris les règles répertoriées ci-dessus.
 
 ## Gloria reçoit la demande {#gloria-receives-the-application}
 
@@ -221,7 +221,7 @@ Lorsque Sarah remplit et envoie la demande d’allocation familiale, un document
 
 ### Démonstration {#see-it-yourself-2}
 
-Ouvrir la page `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Sur la page, appuyez sur **[!UICONTROL Se connecter]**, cochez la case **[!UICONTROL Se connecter en tant que représentant]** , connectez-vous à la boîte de réception AEM en utilisant grios/password comme nom d’utilisateur/mot de passe pour Gloria Rios. La demande d&#39;allocation familiale s&#39;affiche. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
+Ouvrir la page `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Sur la page, appuyez sur **[!UICONTROL Se connecter]**, cochez la case **[!UICONTROL Se connecter en tant que représentant]**, connectez-vous à la boîte de réception de l’AEM en utilisant grios/password comme nom d’utilisateur/mot de passe pour Gloria Rios. La demande d&#39;allocation familiale s&#39;affiche. Pour plus d’informations sur l’utilisation de AEM boîte de réception pour les tâches de processus centrées sur les formulaires, voir [Gestion des applications et tâches Forms dans AEM Boîte de réception](/help/forms/using/manage-applications-inbox.md).
 
 ![La boîte de réception de Gloria dans le site de référence We.Gov](assets/gloria-inbox.png)
 
@@ -232,24 +232,24 @@ Gloria peut voir, approuver ou refuser la demande à partir du tableau de bord d
 Gloria, responsable des approbations chez We.Gov, ouvre sa boîte de réception AEM. Elle voit une tâche de révision dans sa liste de tâches. Elle ouvre et vue la tâche de révision.
 
 Elle voit un PDF du formulaire rempli avec les informations saisies par Sarah ainsi que les documents que Sarah a téléchargés.\
-Gloria peut approuver ou rejeter la demande. However, Gloria clicks **[!UICONTROL Assessment Required]** to get the application assessed.
+Gloria peut approuver ou rejeter la demande. Cependant, Gloria clique sur **[!UICONTROL Evaluation requise]** pour faire évaluer la demande.
 
 ![gloria-envoie-évaluation](assets/gloria-sends-assessment.png)
 
 La demande de Sarah est un point de départ dans le flux de travaux AEM  Elle lance le flux de travaux AEM  lorsque le formulaire de demande d’allocation familiale est envoyé. Le processus AEM crée une tâche pour Gloria, qui apparaît dans sa boîte de réception AEM. Lorsque Gloria demande une évaluation sur place, une nouvelle tâche est créée pour l’agent de terrain.
 
-### Démonstration {#see-it-yourself-3}
+### Démonstration  {#see-it-yourself-3}
 
 Si la configuration est terminée, le flux de travaux AEM commence immédiatement après l’envoi du formulaire. Connectez-vous à la boîte de réception avec les identifiants de Gloria.
 
-Accédez à la boîte de réception à l’adresse https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-gov/en.html. Sur la page, appuyez sur **[!UICONTROL Se connecter]**, cochez la case **[!UICONTROL Se connecter en tant que représentant]** et utilisez les informations d’identification par défaut de Gloria :
+Accédez à la boîte de réception à l’adresse https://&quot;a0/>hostname ***:&quot;a2/>PublishPort&lt;a3/&quot;/content/we-gov/en.html.********* Sur la page, appuyez sur **[!UICONTROL Se connecter]**, cochez la case **[!UICONTROL Se connecter en tant que représentant]** et utilisez les informations d’identification par défaut de Gloria :
 
 * Nom d’utilisateur : grios
 * Mot de passe : password
 
 Dans sa boîte de réception AEM, la demande de Sarah est ajoutée en tant que tâche de révision. Sélectionnez la tâche puis cliquez sur **Evaluation requise** pour passer à l’étape suivante.
 
-### Conrad obtient la tâche d’évaluation {#conard-assessment-task}
+### Conrad obtient la tâche d’évaluation  {#conard-assessment-task}
 
 Lorsque Gloria clique sur **[!UICONTROL Évaluation requise]**, Conrad obtient la tâche de révision dans sa boîte de réception AEM. La tâche est l’étape suivante du processus AEM défini dans le modèle de processus. Il voit la tâche de révision et l’ouvre.
 
@@ -282,9 +282,9 @@ Les identifiants par défaut de Conrad sont les suivants :
 
 Vous pouvez voir une nouvelle tâche de demande d’évaluation ajoutée dans la boîte de réception. Envoyez l’évaluation terminée, puis passez à l’étape suivante.
 
-### Gloria passe en revue l’évaluation et approuve la demande {#gloria-reviews-the-assessment-and-approves-the-application}
+### Gloria passe en revue l’évaluation et approuve la demande  {#gloria-reviews-the-assessment-and-approves-the-application}
 
-Après que Conrad a envoyé l’évaluation, Gloria voit une tâche de révision dans sa boîte de réception. She selects and opens **[!UICONTROL Review]**.
+Après que Conrad a envoyé l’évaluation, Gloria voit une tâche de révision dans sa boîte de réception. Elle sélectionne et ouvre **[!UICONTROL Révision]**.
 
 ![gloriainbox-1](assets/gloriainbox-1.png)
 
@@ -298,7 +298,7 @@ Après que Conrad a envoyé l’évaluation, Gloria voit une tâche de révision
 
 Gloria approuve la demande.
 
-### Démonstration {#see-it-yourself-5}
+### Démonstration  {#see-it-yourself-5}
 
 Ouvrez la boîte de réception et connectez-vous avec les identifiants de Gloria. Une nouvelle tâche appelée Révision apparaît dans la boîte de réception.
 
@@ -308,7 +308,7 @@ Ouvrez la tâche pour voir le statut de la dernière action effectuée. Approuve
 
 Après que Gloria a approuvé la demande, Sarah reçoit un courrier électronique du site We.Gov lui indiquant que sa demande est approuvée.
 
-The **[!UICONTROL View Document]** button in the email links to her enrollment details. Sarah clicks **[!UICONTROL View Document.]**
+Le bouton **[!UICONTROL Document de Vue]** du courriel renvoie aux détails de son inscription. Sarah clique sur **[!UICONTROL Document de Vue.]**
 
 ![approbation-kit-inscription-courrier électronique](assets/approval-enrolment-kit-email.png)
 
@@ -346,20 +346,20 @@ Les mesures de performances du formulaire de demande de services d’allocation 
 
 Pour que vous puissiez vue et explorer le rapport d’analyse, nous fournissons des données sources pour l’application de services d’aide à l’enfance dans le site de référence. Avant d’utiliser des données source, voir [Configuration d’Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Effectuez les étapes suivantes dans l’instance d’auteur pour afficher le rapport avec les données source :
 
-1. Go to **[!UICONTROL Forms &amp; Documents]** UI at https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
+1. Accédez à **[!UICONTROL Forms &amp; Documents]** UI à l&#39;adresse https://&quot;a2/>hostname&lt;a3/&quot;:&quot;a4/>AuthorPort&lt;a5/&quot;/aem/forms.html/content/dam/formsanddocuments.****
 
-1. Click to open the **We.Gov** Folder.
-1. Sélectionnez **[!UICONTROL Application for Child Support Services]** adaptive form, puis cliquez sur **[!UICONTROL Activer Analytics]** dans la barre d’outils.
+1. Cliquez pour ouvrir le dossier **We.Gov**.
+1. Sélectionnez **[!UICONTROL Application for Child Support Services]** formulaire adaptatif, puis cliquez sur **[!UICONTROL Activer Analytics]** dans la barre d’outils.
 
-1. Sélectionnez de nouveau le formulaire et cliquez sur Rapport **** Analytics dans la barre d’outils pour générer le rapport. Un rapport vierge s’affiche initialement.
+1. Sélectionnez de nouveau le formulaire et cliquez sur **[!UICONTROL Rapport Analytics]** dans la barre d’outils pour générer le rapport. Un rapport vierge s’affiche initialement.
 
 Pour générer un rapport d’analyse avec des données sources :
 
-1. In the address browser of CRXDE lite, type: **/apps/we-gov/demo-artifacts/analyticsTestData/Child support service Analytics Test Data**
+1. Dans le navigateur d’adresses de CRXDE Lite, tapez : **/apps/we-gov/demo-artifacts/analyticsService d&#39;assistance TestData/Child Data Analytics Test Data**
 1. Les données sources sont sélectionnées dans la structure de répertoires du côté gauche.
 1. Cliquez deux fois sur le fichier sélectionné pour ouvrir son contenu dans le panneau de droite.
 1. Copiez tout le contenu du fichier de données de test.
-1. In CRXDE, navigate to: **/content/dam/formsanddocuments/we-gov/child-support/css/jcr:content/analyticsdatanode/lastsevendays**
+1. Dans CRXDE, accédez à : **/content/dam/formsanddocuments/we-gov/child-support/css/jcr:content/analyticsdatanode/lastsevendays**
 1. Dans le champ analyticsdata sous Propriétés, collez le contenu copié du fichier de données de test.
-1. Désormais, générez à nouveau un rapport d’analyse pour **[!UICONTROL Application for Child Support Services]**. Vous pouvez afficher les données sources dans le rapport généré.
+1. Générez à nouveau un rapport d’analyse pour **[!UICONTROL Application for Child Support Services]**. Vous pouvez afficher les données sources dans le rapport généré.
 
