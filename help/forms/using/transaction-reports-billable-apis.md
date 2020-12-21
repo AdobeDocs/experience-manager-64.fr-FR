@@ -17,7 +17,7 @@ ht-degree: 9%
 ---
 
 
-# API facturables des rapports de transaction {#transaction-reports-billable-apis}
+# API facturables des rapports de transactions {#transaction-reports-billable-apis}
 
 Liste de toutes les API comptabilisées en tant que transactions
 
@@ -34,8 +34,8 @@ AEM Forms fournit plusieurs API pour envoyer des formulaires, traiter des docume
 
 Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur d’un document ou d’un formulaire, ni du format final du document rendu. Un rapport de transactions divise les transactions en trois catégories : Documents traités, Documents rendus et Forms envoyés.
 
-* **Forms Soumis :** Lorsque des données sont envoyées à partir de n’importe quel type de formulaire créé avec AEM Forms et que les données sont envoyées à n’importe quel référentiel d’enregistrement de données ou base de données est considérée comme un envoi de formulaire. Par exemple, l’envoi d’un formulaire adaptatif, d’un formulaire HTML5, de PDF forms et d’un jeu de formulaires est comptabilisé comme des formulaires envoyés. Chaque formulaire d’un jeu de formulaires est considéré comme un envoi. Par exemple, si un jeu de formulaires comporte 5 formulaires, lorsque le jeu de formulaires est envoyé, le service de rapports de transactions le compte comme 5 envois.
-* **Documents rendus :** La génération d’un document en combinant un modèle et des données, en signant ou certifiant numériquement un document, en utilisant une API de services de document facturables pour les services de document ou en convertissant un document d’un format à un autre est comptabilisée comme des documents rendus.
+* **Forms Submitted :** lorsque des données sont envoyées à partir de n’importe quel type de formulaire créé avec AEM Forms et que les données sont envoyées à n’importe quel référentiel ou base de données d’enregistrement de données est considéré comme un envoi de formulaire. Par exemple, l’envoi d’un formulaire adaptatif, d’un formulaire HTML5, de PDF forms et d’un jeu de formulaires est comptabilisé comme des formulaires envoyés. Chaque formulaire d’un jeu de formulaires est considéré comme un envoi. Par exemple, si un jeu de formulaires comporte 5 formulaires, lorsque le jeu de formulaires est envoyé, le service de rapports de transactions le compte comme 5 envois.
+* **Documents générés :** Génération d’un document en combinant un modèle et des données, en signant ou certifiant numériquement un document, en utilisant une API de services de document facturables pour les services de document ou en convertissant un document d’un format à un autre sont comptabilisés comme des documents rendus.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
 
 ## API de services de Document facturables {#billable-document-services-apis}
 
-### Generate PDF Service {#generate-pdf-service}
+### Service Generate PDF {#generate-pdf-service}
 
 <table> 
  <tbody>
@@ -110,7 +110,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
  </tbody>
 </table>
 
-### Distiller Service {#distiller-service}
+### Service Distiller {#distiller-service}
 
 <table> 
  <tbody>
@@ -135,7 +135,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
  </tbody>
 </table>
 
-### Service document d&#39;enregistrement (service de DE) {#document-of-record-service-dor-service}
+### Service de document d&#39;enregistrement (service de DE) {#document-of-record-service-dor-service}
 
 <table> 
  <tbody>
@@ -222,7 +222,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
  </tbody>
 </table>
 
-### Convert PDF Service {#convert-pdf-service}
+### Service Conversion PDF {#convert-pdf-service}
 
 <table> 
  <tbody>
@@ -287,7 +287,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
     </ul> </td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">appeler</a></td> 
    <td>Exécute le document DDX spécifié et renvoie un objet <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult</a> contenant les documents résultants. </td> 
    <td>Documents traités</td> 
    <td>Tous les formats de fichier d’entrée pris en charge par les services PDF Generator, Forms et Output, le service Assembler prend en charge tous ces formats en tant que formats de fichier de sortie. </td> 
@@ -310,7 +310,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
 
 
 
-### Service PDF Utility  {#pdf-utility-service}
+### Service d&#39;utilitaire PDF {#pdf-utility-service}
 
 <table> 
  <tbody>
@@ -343,14 +343,14 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a></td> 
    <td>L'API vous permet de sécuriser votre document. Vous pouvez utiliser l’API pour signer, certifier, lire étendre ou chiffrer un document PDF. </td> 
    <td>Documents traités</td> 
-   <td>Seule la signature et la certification de l'opération de <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a> sont facturées.</td> 
+   <td>Seule l'opération de signature et de certification de <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a> est facturée.</td> 
   </tr>
  </tbody>
 </table>
 
 ## API de capture de données facturables {#billable-data-capture-apis}
 
-Tous les événements d’envoi des formulaires adaptatifs, du Forms HTML5 et du jeu de formulaires sont comptabilisés comme des transactions. Par défaut, l’envoi d’un formulaire PDF n’est pas comptabilisé comme une transaction. Utilisez l&#39;API [des rapports de](record-transaction-custom-implementation.md) transactions fournie pour enregistrer un envoi PDF forms en tant que transaction.
+Tous les événements d’envoi des formulaires adaptatifs, du Forms HTML5 et du jeu de formulaires sont comptabilisés comme des transactions. Par défaut, l’envoi d’un formulaire PDF n’est pas comptabilisé comme une transaction. Utilisez l&#39;API [rapports de transactions fournie](record-transaction-custom-implementation.md) pour enregistrer une soumission PDF forms en tant que transaction.
 
 ### Formulaires adaptatifs {#adaptive-forms}
 
@@ -442,7 +442,7 @@ Affectez des étapes de tâche et de services de document des Workflows d&#39;AE
  </tbody>
 </table>
 
-### Interactive Communication - Print Channel {#interactive-communication-print-channel}
+### Communication interactive - Canal d&#39;impression {#interactive-communication-print-channel}
 
 <table> 
  <tbody>
@@ -453,7 +453,7 @@ Affectez des étapes de tâche et de services de document des Workflows d&#39;AE
    <td>Informations supplémentaires</td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convertir en PDF)</td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convertir au format PDF)</td> 
    <td>Génère la version PDF d’une communication interactive.</td> 
    <td>Documents rendus</td> 
    <td>
@@ -494,9 +494,9 @@ Affectez des étapes de tâche et de services de document des Workflows d&#39;AE
 
 ## Enregistrement des API facturables en tant que transactions pour le code personnalisé {#recording-billable-apis-as-transactions-for-custom-code}
 
-Les actions telles que l’envoi d’un formulaire PDF, l’utilisation de l’interface utilisateur de l’agent pour prévisualisation une communication interactive, l’envoi de formulaires non standard et les implémentations personnalisées ne sont pas comptabilisées comme des transactions. AEM Forms fournit une API pour enregistrer des actions telles que des transactions. Vous pouvez appeler l’API à partir de vos implémentations personnalisées pour [enregistrer une transaction](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg).
+Les actions telles que l’envoi d’un formulaire PDF, l’utilisation de l’interface utilisateur de l’agent pour prévisualisation une communication interactive, l’envoi de formulaires non standard et les implémentations personnalisées ne sont pas comptabilisées comme des transactions. AEM Forms fournit une API pour enregistrer des actions telles que des transactions. Vous pouvez appeler l&#39;API depuis vos implémentations personnalisées pour [enregistrer une transaction](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg).
 
-## Related Articles {#related-articles}
+## Articles connexes {#related-articles}
 
 * [Présentation des rapports sur les transactions](/help/forms/using/transaction-reports-overview.md)
 * [Affichage et compréhension des rapports sur les transactions](/help/forms/using/viewing-and-understanding-transaction-reports.md)
