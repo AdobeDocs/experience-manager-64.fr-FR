@@ -17,11 +17,11 @@ ht-degree: 70%
 ---
 
 
-# Ajout de pièces jointes {#adding-attachments}
+# Ajout de pièces jointes  {#adding-attachments}
 
-## Adding attachments in forms synced with AEM Forms Workflow server (AEM Forms on JEE) {#adding-annotations}
+## Ajouter des pièces jointes dans les formulaires synchronisés avec le serveur AEM Forms Workflow (AEM Forms on JEE) {#adding-annotations}
 
-L’application AEM Forms vous permet de joindre des images, des annotations et des notes de texte à votre formulaire synchronisé avec le serveur AEM Forms JEE. Si votre formulaire est chargé depuis un serveur de flux de travail AEM Forms, vos pièces jointes sont ajoutées au formulaire. You can tap the attachment button ![attachments-app](assets/attachments-app.png) to see all the attachments in a form together. La notification rouge indique le nombre de pièces jointes du formulaire. S’il n’y a aucune pièce jointe dans le formulaire, le bouton rouge des notifications ne s’affiche pas. If there are no attachments in the form, when you tap the attachments button ![attch](assets/attch.png), you get options to attach photos or scribbles.
+L’application AEM Forms vous permet de joindre des images, des annotations et des notes de texte à votre formulaire synchronisé avec le serveur AEM Forms JEE. Si votre formulaire est chargé depuis un serveur de flux de travail AEM Forms, vos pièces jointes sont ajoutées au formulaire. Vous pouvez appuyer sur le bouton de pièce jointe ![attachments-app](assets/attachments-app.png) pour afficher toutes les pièces jointes d’un formulaire. La notification rouge indique le nombre de pièces jointes du formulaire. S’il n’y a aucune pièce jointe dans le formulaire, le bouton rouge des notifications ne s’affiche pas. S’il n’y a aucune pièce jointe dans le formulaire, lorsque vous appuyez sur le bouton Pièces jointes ![Joindre](assets/attch.png), vous avez la possibilité de joindre des photos ou des annotations.
 
 Vous avez le choix entre :
 
@@ -29,7 +29,7 @@ Vous avez le choix entre :
 
 * **[!UICONTROL Appareil photo]** : vous permet de prendre une photo et de l’ajouter au formulaire. 
 
-* **[!UICONTROL Notes]** : vous permet d’ajouter une saisie tactile ou une note de texte. Use ![scribble](assets/scribble.png) to add a scribble, and ![keyboard](assets/keyboard.png) to add a text note.
+* **[!UICONTROL Notes]** : vous permet d’ajouter une saisie tactile ou une note de texte. Utilisez ![saisie tactile](assets/scribble.png) pour ajouter une saisie tactile et ![clavier](assets/keyboard.png) pour ajouter une note de texte.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Vous avez le choix entre :
 
 ### L’écran Pièces jointes {#the-attachments-screen}
 
-To see all the attachments in a place, tap ![attachments-app](assets/attachments-app.png). Vous pouvez ajouter, renommer ou supprimer des pièces jointes ici.
+Pour afficher toutes les pièces jointes à un emplacement, appuyez sur ![attachments-app](assets/attachments-app.png). Vous pouvez ajouter, renommer ou supprimer des pièces jointes ici.
 
 ![Toutes les pièces jointes au même endroit](assets/attachments-screen.png)
 
@@ -48,15 +48,15 @@ Vous pouvez utiliser le bouton **+** sur l’écran Pièces jointes pour joindre
 
 Vous pouvez utiliser l’appareil photo de votre périphérique mobile ou des images enregistrées dans votre périphérique pour joindre une photo dans le formulaire.
 
-1. Tap the attachment button ![attch](assets/attch.png) at the bottom of the window.
+1. Appuyez sur le bouton de pièce jointe ![atteler](assets/attch.png) au bas de la fenêtre.
 1. Appuyez sur **[!UICONTROL Galerie]** ou **[!UICONTROL Appareil photo]** dans la fenêtre contextuelle qui s’affiche.
 1. Selon l’option que vous sélectionnez, effectuez ce qui suit :
 
    1. Si vous sélectionnez **[!UICONTROL Appareil photo]**.
 
-      Prenez une photo. Then tap the **[!UICONTROL Use]** ![use-pic](assets/use-pic.png) button.
+      Prenez une photo. Appuyez ensuite sur le bouton **[!UICONTROL Utiliser]** ![utiliser-pic](assets/use-pic.png).
 
-      Or tap the **[!UICONTROL Retake]** ![retake](assets/retake.png) button to retake the photograph.
+      Ou appuyez sur le bouton **[!UICONTROL Reprendre]** ![reprendre](assets/retake.png) pour reprendre la photo.
 
    1. Si vous sélectionnez **[!UICONTROL Galerie]**.
 
@@ -66,19 +66,19 @@ Vous pouvez utiliser l’appareil photo de votre périphérique mobile ou des im
 
 L’option **Notes** vous permet d’ajouter des annotations à main levée et du texte en pièces jointes dans votre formulaire.
 
-1. Tap the attachment button ![attch](assets/attch.png) at the bottom of the window.
+1. Appuyez sur le bouton de pièce jointe ![atteler](assets/attch.png) au bas de la fenêtre.
 1. Appuyez sur **[!UICONTROL Notes]** dans la fenêtre contextuelle qui s’affiche.
 1. Dans l’interface utilisateur de Notes qui est lancée, saisissez des annotations à main levée.
 
    ![Interface de saisie tactile](assets/scribble-ui.png)
-   **Figure :** *Griffonnage*
+   **Figure :** *saisie tactile*
 
    Vous pouvez utiliser les options suivantes dans l’interface de saisie tactile :
 
    * **[!UICONTROL Effacer]** : efface l’écran.
-   * **[!UICONTROL Terminé]**: Joint la saisie tactile actuelle.
-   * **[!UICONTROL Annuler]**: Ignore la saisie tactile actuelle et quitte l’interface utilisateur de saisie tactile.
-   * ![clavier](assets/keyboard.png): Efface la saisie tactile et vous permet d’ajouter une note de texte.
+   * **[!UICONTROL Terminé]** : Joint la saisie tactile actuelle.
+   * **[!UICONTROL Annuler]** : Ignore la saisie tactile actuelle et quitte l’interface utilisateur de saisie tactile.
+   * ![clavier](assets/keyboard.png) : Efface la saisie tactile et vous permet d’ajouter une note de texte.
 
    ![Clavier de saisie tactile de l’application AEM Forms](assets/keyboard-inapp.png)
 
