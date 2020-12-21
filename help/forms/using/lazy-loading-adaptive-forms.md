@@ -24,11 +24,12 @@ Lorsque les formulaires sont volumineux et complexes et qu’ils contiennent des
 
 Découvrons d’abord les exigences et les étapes préparatoires avant de configurer le chargement différé.
 
-## Préparation à la configuration du chargement différé {#preparing-to-configure-lazy-loading}
+## Préparation à la configuration du chargement différé  {#preparing-to-configure-lazy-loading}
 
 Avant de configurer le chargement différé des fragments d’un formulaire adaptatif, il est essentiel de définir des stratégies afin de créer des fragments, d’identifier les valeurs utilisées dans les scripts ou référencées dans d’autres fragments, ou encore de définir des règles de contrôle de la visibilité des champs des fragments chargés.
 
-* **Identifier et créer des fragments** Vous pouvez configurer uniquement des fragments de formulaire adaptatif pour un chargement différé. Un fragment est un segment autonome qui réside en dehors d’un formulaire adaptatif et peut être réutilisé dans plusieurs formulaires. Ainsi, la première étape de l’implémentation du chargement différé consiste à identifier les sections logiques d’un formulaire et à les convertir en fragments. Vous pouvez créer un fragment à partir de zéro ou enregistrer un panneau de formulaire existant en tant que fragment.
+* **Identifier et créer des**
+fragmentsVous pouvez configurer uniquement les fragments de formulaire adaptatif pour un chargement différé. Un fragment est un segment autonome qui réside en dehors d’un formulaire adaptatif et peut être réutilisé dans plusieurs formulaires. Ainsi, la première étape de l’implémentation du chargement différé consiste à identifier les sections logiques d’un formulaire et à les convertir en fragments. Vous pouvez créer un fragment à partir de zéro ou enregistrer un panneau de formulaire existant en tant que fragment.
 
     Pour plus d’informations sur la création de fragments, voir [Fragments de formulaire adaptatif](/help/forms/using/adaptive-form-fragments.md).
 
@@ -40,13 +41,13 @@ Avant de configurer le chargement différé des fragments d’un formulaire adap
 
     Vous pouvez exploiter les règles de visibilité dans les fragments chargés de manière différée de sorte que les champs conditionnels soient affichés uniquement lorsqu’ils sont obligatoires. En outre, marquez le champ conditionnel comme étant global pour vous y référer dans l’expression de visibilité du fragment chargé en différé.
 
-## Configuration du chargement différé {#configuring-lazy-loading}
+## Configuration du chargement différé  {#configuring-lazy-loading}
 
 Suivez les étapes ci-après pour activer le chargement différé sur un fragment de formulaire adaptatif :
 
 1. Ouvrez le formulaire adaptatif en mode création contenant le fragment que vous souhaitez activer pour le chargement différé.
-1. Select the adaptive form fragment and tap ![cmppr](assets/cmppr.png).
-1. In the sidebar, enable **[!UICONTROL Load fragment lazily]** and tap **Done**.
+1. Sélectionnez le fragment de formulaire adaptatif et appuyez sur ![cmppr](assets/cmppr.png).
+1. Dans la barre latérale, activez **[!UICONTROL Charger le fragment en différé]** et appuyez sur **Terminé**.
 
    ![Activer le chargement différé du fragment de formulaire adaptatif](assets/lazy-loading-fragment.png)
 
@@ -61,7 +62,7 @@ Vous pouvez marquer les valeurs des objets du fragment chargé en différé comm
 
    Cette valeur est désormais marquée comme globale et sera disponible dans les scripts même lorsque le fragment contenant est déchargé.
 
-## Éléments à prendre en compte et bonnes pratiques pour la configuration du chargement différé {#considerations-and-best-practices-for-configuring-lazy-loading}
+## Éléments à prendre en compte et bonnes pratiques pour la configuration du chargement différé  {#considerations-and-best-practices-for-configuring-lazy-loading}
 
 Voici certaines restrictions, recommandations et aspects importants à garder à l’esprit lorsque vous travaillez avec le chargement différé :
 
@@ -73,7 +74,7 @@ Voici certaines restrictions, recommandations et aspects importants à garder à
 * Pensez à créer des règles de visibilité pour les fragments qui doivent s’afficher ou être masqués en fonction d’une condition. Par exemple, vous pouvez afficher ou masquer le fragment Conjoint(e) selon la valeur État civil spécifiée par l’utilisateur.
 * Les composants des pièces jointes et des conditions générales ne sont pas pris en charge dans les fragments chargés en différé.
 
-### Script des bonnes pratiques pour la configuration du chargement différé {#scripting-best-practices-for-configuring-lazy-loading}
+### Script des bonnes pratiques pour la configuration du chargement différé  {#scripting-best-practices-for-configuring-lazy-loading}
 
 Voici des aspects importants à garder à l’esprit lors du développement des scripts pour les panneaux de chargement différé :
 
