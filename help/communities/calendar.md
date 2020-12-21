@@ -27,31 +27,31 @@ La fonction Calendrier offre des informations relatives aux événements de la c
 Cette section de la documentation décrit : :
 
 * Ajouter la fonction Calendrier à un site AEM
-* Configuration settings for `Calendar`components
+* Paramètres de configuration des composants `Calendar`pour
 
 ## Ajout d’un calendrier à une page {#adding-a-calendar-to-a-page}
 
-To add a `Calendar` component to a page in author mode, use the component browser to locate
+Pour ajouter un composant `Calendar` à une page en mode création, utilisez l’explorateur de composants pour localiser
 
 * `Communities / Calendar`
 
 et faites glisser le composant sur une page, par exemple à un endroit relatif à la fonction, pour permettre aux utilisateurs de le consulter.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
 
-When the [required client-side libraries](calendar-basics-for-developers.md#essentials-for-client-side) are included, this is how the `Calendar` component will appear.
+Lorsque les [bibliothèques client requises](calendar-basics-for-developers.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Calendar` s&#39;affiche.
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Configuration du calendrier {#configuring-calendar}
 
-Select the placed `Calendar`component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Calendar`placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![chlimage_1-113](assets/chlimage_1-113.png) ![chlimage_1-114](assets/chlimage_1-114.png)
 
 #### Onglet Settings {#settings-tab}
 
-Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to be applied to calendar entries.
+Sous l&#39;onglet **[!UICONTROL Paramètres]**, indiquez si les balises doivent être appliquées ou non aux entrées de calendrier.
 
 * **[!UICONTROL Événements par page]**
 
@@ -71,7 +71,7 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Autoriser le balisage]**
 
-   If checked, allow members to add tag labels to the events they post (see **Tag field** tab). Cette option est cochée par défaut.
+   Si cette option est cochée, autorisez les membres à ajouter des étiquettes de balise aux événements qu’ils publient (voir l’onglet **Champ de balise**). Cette option est cochée par défaut.
 
 * **[!UICONTROL Autoriser les transferts de fichiers]**
 
@@ -83,11 +83,11 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Taille maximale du fichier]**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
+   Ne s&#39;applique que si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **[!UICONTROL Types de fichier autorisés]**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Ne s&#39;applique que si `Allow File Uploads` est coché. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
 * **[!UICONTROL Taille max. du fichier image joint]**
 
@@ -95,7 +95,7 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Types autorisés d’image de couverture]**
 
-   liste séparée par des virgules des extensions de fichiers d’image avec le séparateur &quot;point&quot;. La valeur par défaut est `.jpg,.jpeg,.png,.gif,.bmp`.
+   Liste séparée par des virgules des extensions de fichiers d’image avec le séparateur &quot;point&quot;. La valeur par défaut est `.jpg,.jpeg,.png,.gif,.bmp`.
 
 * **[!UICONTROL Autoriser les réponses à thème]**
 
@@ -119,9 +119,9 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Autoriser le contenu proposé]**
 
-   Si cette option est cochée, l’idée peut être identifiée comme contenu [](featured.md)phare. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, l’idée peut être identifiée comme [contenu incitatif](featured.md). Cette option n’est pas cochée par défaut.
 
-Under the **[!UICONTROL User Moderation]** tab, specify how the posted topics and replies (user generated content) are managed. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
+Sous l’onglet **[!UICONTROL Modération utilisateur]**, spécifiez comment les rubriques publiées et les réponses (contenu généré par l’utilisateur) sont gérées. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
 
 #### Onglet Modération utilisateur {#user-moderation-tab}
 
@@ -159,11 +159,11 @@ Dans l’onglet **[!UICONTROL Champ de balise]**, les balises qui peuvent être 
 
 * **[!UICONTROL Espaces de noms autorisés]**
 
-   Pertinent si `Allow Tagging` est coché sous l’onglet **[!UICONTROL Paramètres]** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
+   Pertinent si `Allow Tagging` est coché sous l&#39;onglet **[!UICONTROL Paramètres]**. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
 
 * **[!UICONTROL Limite de suggestions]**
 
-   Entrez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. Default is `-1` (no limits).
+   Entrez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. La valeur par défaut est `-1` (aucune limite).
 
 >[!NOTE]
 >
@@ -185,7 +185,7 @@ Lorsqu’un événement de calendrier est sélectionné, ses détails, sa descri
 
 Les autres choix varient selon que le visiteur est modérateur, administrateur, membre de la communauté, membre privilégié ou anonyme.
 
-### Modérateurs et administrateurs {#moderators-and-administrators}
+### Modérateurs et administrateurs  {#moderators-and-administrators}
 
 Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut se charger d’[activités de modération](moderate-ugc.md) (autorisées par la configuration du composant) pour tous les événements et commentaires de calendrier publiés pour un événement.
 
@@ -193,7 +193,7 @@ Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’a
 
 ### Membres {#members}
 
-When the signed in user is a community member or [privileged member](users.md#privileged-members-group) (depending on configuration), they are able to select `New Event` to create and post a new calendar event.
+Lorsque l&#39;utilisateur connecté est membre de la communauté ou [membre privilégié](users.md#privileged-members-group) (selon la configuration), il peut sélectionner `New Event` pour créer et publier un nouveau événement de calendrier.
 
 Plus précisément, il est autorisé à :
 
@@ -213,10 +213,10 @@ Les visiteurs non inscrits peuvent lire les événements de calendrier et les tr
 
 ## Informations supplémentaires {#additional-information}
 
-More information may be found on the [Calendar Essentials](calendar-basics-for-developers.md) page for developers.
+Pour plus d&#39;informations, consultez la page [Calendar Essentials](calendar-basics-for-developers.md) destinée aux développeurs.
 
 Pour des informations sur la modération des événements et des commentaires de calendrier, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
 
-For tagging calendar events and comments, see [Tagging User Generated Content](tag-ugc.md).
+Pour baliser les événements calendaires et les commentaires, voir [Balisage du contenu généré par l&#39;utilisateur](tag-ugc.md).
 
-For translation of calendar events and comments, see [Translating User Generated Content](translate-ugc.md).
+Pour la traduction des événements calendaires et des commentaires, voir [Traduction du contenu généré par l&#39;utilisateur](translate-ugc.md).
