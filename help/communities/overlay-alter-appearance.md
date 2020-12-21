@@ -18,20 +18,20 @@ ht-degree: 1%
 ---
 
 
-# Modification de l’aspect {#alter-the-appearance}
+# Modifier l&#39;apparence {#alter-the-appearance}
 
-## Modification du script {#modify-the-script}
+## Modifier le script {#modify-the-script}
 
 Le script comment.hbs est responsable de la création du code HTML global pour chaque commentaire.
 
 Pour ne pas afficher l’avatar en regard de chaque commentaire publié :
 
-1. Copier `comment.hbs`de `libs`vers `apps`
+1. Copier `comment.hbs`de `libs`dans `apps`
    1. Sélectionner `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Sélectionner une **[!UICONTROL copie]**
+   1. Sélectionner **[!UICONTROL Copier]**
    1. Sélectionner `/apps/social/commons/components/hbs/comments/comment`
    1. Sélectionner **[!UICONTROL Coller]**
-1. Ouvrir le recouvrement `comment.hbs`
+1. Ouvrez le `comment.hbs` superposé
    * Doublon-clic sur le noeud `comment.hbs`dans `/apps/social/commons/components/hbs/comments/comment folder`
 1. Recherchez les lignes suivantes et supprimez-les ou placez-les en commentaire :
 
@@ -54,15 +54,15 @@ Poussez le composant de commentaires superposés sur l’instance de publication
 
 >[!NOTE]
 >
->Une forme de réplication plus robuste consisterait à créer un package dans Package Manager et à l’ [activer](../../help/sites-administering/package-manager.md#replicating-packages) . Un package peut être exporté et archivé.
+>Une forme de réplication plus robuste consisterait à créer un package dans Package Manager et à l&#39;[activer](../../help/sites-administering/package-manager.md#replicating-packages). Un package peut être exporté et archivé.
 
-Dans la navigation globale, sélectionnez **[!UICONTROL Outils > Déploiement > Réplication]** , puis **[!UICONTROL activer l’arborescence]**.
+Dans la navigation globale, sélectionnez **[!UICONTROL Outils > Déploiement > Réplication]**, puis **[!UICONTROL Activer l&#39;arborescence]**.
 
-Pour le chemin d’accès au Début, saisissez `/apps/social/commons` et sélectionnez **[!UICONTROL Activer]**.
+Pour le chemin de Début, saisissez `/apps/social/commons` et sélectionnez **[!UICONTROL Activer]**.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-## Résultats de la Vue {#view-results}
+## Résultats de la vue {#view-results}
 
 Si vous vous connectez à l’instance de publication en tant qu’administrateur (http://localhost:4503/crx/de en tant qu’administrateur/administrateur, par exemple), vous pouvez vérifier que les composants superposés sont bien présents.
 
