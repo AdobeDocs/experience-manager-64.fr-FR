@@ -22,29 +22,29 @@ ht-degree: 48%
 
 ## Présentation {#introduction}
 
-The `Social Tag Cloud` component highlights tags applied by community members when posting content. Il permet d’identifier les tendances et de permettre aux visiteurs de localiser rapidement du contenu balisé.
+Le composant `Social Tag Cloud` met en évidence les balises appliquées par les membres de la communauté lors de la publication de contenu. Il permet d’identifier les tendances et de permettre aux visiteurs de localiser rapidement du contenu balisé.
 
 Pour connaître les autres moyens d’identifier les tendances actuelles, reportez-vous à la section [Tendances d’activité](trends.md).
 
-This page documents the `Social Tag Cloud` component dialog settings and describes the user experience.
+Cette page documents les paramètres de la boîte de dialogue du composant `Social Tag Cloud` et décrit l&#39;expérience de l&#39;utilisateur.
 
 Pour plus d’informations pour le développeur, reportez-vous à la section [Notions fondamentales sur les balises](tag.md). 
 
-See [Administering Tags](../../help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
+Voir [Administration des balises](../../help/sites-administering/tags.md) pour plus d&#39;informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
 
 ## Ajout d’un composant Nuage de balises sociales {#adding-a-social-tag-cloud}
 
-Pour ajouter un `Social Tag Cloud` composant à une page en mode création, utilisez l’explorateur de composants pour le localiser `Communities / Social Tag Cloud` et faites-le glisser sur une page sur laquelle le nuage de balises doit apparaître.
+Pour ajouter un composant `Social Tag Cloud` à une page en mode création, utilisez l’explorateur de composants pour localiser `Communities / Social Tag Cloud` et faites-le glisser sur une page sur laquelle le nuage de balises doit apparaître.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
 
-When the [required client-side libraries](tag.md#essentials-for-client-side) are included, this is how the `Social Tag Cloud` component will appear:
+Lorsque les [bibliothèques client requises](tag.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Social Tag Cloud` apparaîtra :
 
 ![chlimage_1-303](assets/chlimage_1-303.png)
 
 ## Configuration du composant Nuage de balises sociales {#configuring-social-tag-cloud}
 
-Select the placed `Social Tag Cloud` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Social Tag Cloud` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![chlimage_1-304](assets/chlimage_1-304.png)
 
@@ -59,19 +59,21 @@ Dans l’onglet **[!UICONTROL Nuage de balises sociales]**, spécifiez les balis
 
    La valeur par défaut est `From page and child pages`, où &quot;page&quot; fait référence au paramètre **Page** ci-dessous.
 
-* **[!UICONTROL Page]**(obligatoire si non 
+* **[!UICONTROL Page]**
+ (obligatoire si non 
 `All tags)` Chemin d’accès à l’UGC pour une page. Par défaut, la page actuelle est laissée vide.
 
 * **[!UICONTROL Aucun lien sur les balises]** Si cette option est sélectionnée, les balises sont affichées dans le nuage de balises en tant que texte brut. Si cette option n’est pas sélectionnée, les balises s’affichent sous forme de liens actifs qui effectuent une recherche sur tout le contenu auquel la balise est appliquée. Par défaut, l’option n’est pas sélectionnée et nécessite que **[!UICONTROL Chemin d’accès aux résultats de recherche]** soit défini.
 
-* **[!UICONTROL Chemin d&#39;accès]** aux résultats de la recherche Chemin d&#39;accès à une page sur laquelle un 
-`Search Result` a été placé, configuré pour référencer l&#39;UGC qui inclut le chemin UGC spécifié par le paramètre **Page** .
+* **[!UICONTROL Chemin d&#39;]**
+accès aux résultats de la rechercheChemin d&#39;accès à une page sur laquelle un 
+`Search Result` a été placé, configuré pour référencer UGC qui inclut le chemin UGC spécifié par le paramètre  **** Pagessetting.
 
 ## Modification de l’affichage du nuage de balises sociales {#change-display-of-social-tag-cloud}
 
-To edit the display of the **Social Tag Cloud**, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double click on the placed `Social Tag Cloud` component to open a dialog with an additional tab.
+Pour modifier l’affichage du **nuage de balises sociales**, saisissez [Mode de conception](../../help/sites-authoring/default-components-designmode.md) et cliquez sur le composant `Social Tag Cloud` placé pour ouvrir une boîte de dialogue avec un onglet supplémentaire.
 
-Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are displayed. Une balise peut être une balise simple, un mot unique dans l’espace de nommage par défaut ou une taxonomie hiérarchique :
+A l’aide de l’onglet **[!UICONTROL Cloud de balises sociales (Conception)]**, spécifiez le mode d’affichage des balises. Une balise peut être une balise simple, un mot unique dans l’espace de nommage par défaut ou une taxonomie hiérarchique :
 
 ![chlimage_1-306](assets/chlimage_1-306.png)
 
@@ -92,10 +94,10 @@ Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are d
 
    `Geometrixx Media: Gadgets / Cars`
 
-   Trois balises peuvent être appliquées : `Geometrixx Media (the namespace)`, `Gadgets`et `Cars`
+   Trois balises peuvent être appliquées : `Geometrixx Media (the namespace)`, `Gadgets` et `Cars`
 
-   * Checked: only `Cars` will display, if applied
-   * Unchecked: `Geometrixx Media` and `Gadgets`as well as `Cars` will display, if applied
+   * Cochée : seul `Cars` s’affichera, s’il est appliqué
+   * Non coché : `Geometrixx Media` et `Gadgets`ainsi que `Cars` s’affichent, le cas échéant
 
    Une balise unique est une balise terminale.
 
@@ -107,6 +109,6 @@ Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are d
 
 ## Informations supplémentaires {#additional-information}
 
-More information may be found on the [Tag Essentials](tag.md) page for developers.
+Pour plus d&#39;informations, consultez la page [Tag Essentials](tag.md) destinée aux développeurs.
 
-See [Tagging User Generated Content](tag-ugc.md) (UGC) for information about creating and managing tags.
+Voir [Balisage du contenu généré par l’utilisateur](tag-ugc.md) (UGC) pour plus d’informations sur la création et la gestion des balises.
