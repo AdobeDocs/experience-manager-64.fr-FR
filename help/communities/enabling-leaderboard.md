@@ -22,25 +22,25 @@ ht-degree: 18%
 
 ## Présentation {#introduction}
 
-La `Leaderboard` composante permet d&#39;obtenir une idée de la façon dont les membres interagissent au sein de la communauté en classant les membres en fonction des points gagnés (note de base) ou de leur expertise (note avancée).
+Le composant `Leaderboard` permet d&#39;obtenir une idée de la façon dont les membres interagissent au sein de la communauté en classant les membres en fonction des points gagnés (note de base) ou de leur expertise (note avancée).
 
-Avant d’inclure le composant de tableau de bord dans une page, il est nécessaire de configurer le score et les badges [des communautés](implementing-scoring.md).
+Avant d’inclure le composant Leadboard sur une page, il est nécessaire de configurer [le score des communautés et les badges](implementing-scoring.md).
 
 Cette section de la documentation décrit :
 
-* Ajouter le `Leaderboard` composant à un site [communautaire](overview.md#community-sites)
+* Ajouter le composant `Leaderboard` à un [site communautaire](overview.md#community-sites)
 
-* Configuration settings for the `Leaderboard` component
+* Paramètres de configuration du composant `Leaderboard`
 
-## Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
+## Ajouter un tableau de bord à une page {#adding-a-leaderboard-to-a-page}
 
-To add a `Leaderboard` component to a page in author mode, locate the component
+Pour ajouter un composant `Leaderboard` à une page en mode création, recherchez le composant.
 
 * `Communities / Leaderboard`
 
 et faites-le glisser sur la page.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
 
 Placé pour la première fois sur une page d’un site de communauté, voici à quoi ressemble le composant :
 
@@ -48,41 +48,49 @@ Placé pour la première fois sur une page d’un site de communauté, voici à 
 
 ## Configuration de Leaderboard {#configuring-leaderboard}
 
-Select the placed `Leaderboard` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Leaderboard` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![chlimage_1-9](assets/chlimage_1-9.png) ![chlimage_1-10](assets/chlimage_1-10.png)
 
 ### Onglet Settings {#settings-tab}
 
-Sous l&#39;onglet **[!UICONTROL Paramètres]** , spécifiez les informations relatives au membre qui s&#39;affichent :
+Sous l&#39;onglet **[!UICONTROL Paramètres]**, indiquez les informations relatives au membre qui s&#39;affichent :
 
-* **[!UICONTROL Nom]** d’affichage Nom descriptif à afficher pour le panorama, reflétant les règles sélectionnées pour l’affichage des badges et des scores.
+* **[!UICONTROL Nom]**
+d’affichageNom descriptif à afficher pour le panorama, reflétant les règles sélectionnées pour l’affichage des badges et des scores.
 
    La valeur par défaut est `Leaderboard`, si rien n’est saisi.
 
-* **[!UICONTROL Badge]** Si cette case est cochée, une colonne pour les icônes de badge est incluse dans le tableau de bord.
+* ****
+BadgeSi cette case est cochée, une colonne pour les icônes de badge est incluse dans le tableau de bord.
 
    Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Nom]** du badge Si cette case est cochée, une colonne correspondant au nom du badge est incluse dans le tableau de bord.
+* **[!UICONTROL Nom du]**
+badgeSi cette case est cochée, une colonne correspondant au nom du badge est incluse dans le tableau de bord.
 
    Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Utiliser l&#39;avatar]** Si cette option est cochée, l&#39;avatar du membre est inclus dans le tableau de bord, en regard du lien de son nom vers son profil membre.
+* **[!UICONTROL Utiliser]**
+AvatarSi cette case est cochée, l&#39;avatar du membre est inclus dans le tableau de bord, en regard du lien de son nom vers son profil membre.
 
    Cette option n’est pas cochée par défaut.
 
 ### Onglet Règles {#rules-tab}
 
-Sous l’onglet **[!UICONTROL Règles]** , le site communautaire et ses règles de notation et de badge
+Sous l&#39;onglet **[!UICONTROL Règles]**, le site communautaire et ses règles de notation et de badge
 
-* **[!UICONTROL Emplacement]** de la règle (requis) Emplacement où la règle Scoring/Badging est configurée.
+* **[!UICONTROL Emplacement]**
+ de la règle (requis) Emplacement où la règle Scoring/Badging est configurée.
 
-* **[!UICONTROL Règle]** de score (obligatoire) Règle spécifique générant les scores à afficher.
+* **[!UICONTROL Règle]**
+ de score (obligatoire) Règle spécifique générant les scores à afficher.
 
-* **[!UICONTROL Règle]** de badge (obligatoire) Règle spécifique générant le badge à afficher.
+* **[!UICONTROL Règle]**
+ de badge (obligatoire) Règle spécifique générant le badge à afficher.
 
-* **[!UICONTROL Nombre limite]** d’affichage de membres à afficher par page.
+* **[!UICONTROL Afficher]**
+LimitNombre de membres à afficher par page.
 
    La valeur par défaut est 10.
 
@@ -101,7 +109,7 @@ Configuration du composant de tableau de bord :
       * Nom du badge
       * Utiliser un avatar
 
-* **[!UICONTROL Onglet Règles]** :
+* **** Onglet Règles :
 
    * Emplacement des règles = `/content/sites/communities/jcr:content`
    * Règle de notation = `/etc/community/scoring/rules/forums-scoring`
@@ -124,7 +132,7 @@ Configuration du composant de tableau de bord :
       * Badge
       * Utiliser un avatar
 
-* **[!UICONTROL Onglet Règles]** :
+* **** Onglet Règles :
 
    * Emplacement des règles = `/content/sites/communities/jcr:content`
    * Règle de notation = `/etc/community/scoring/rules/adv-forums-scoring`
@@ -135,6 +143,6 @@ Configuration du composant de tableau de bord :
 
 ## Informations supplémentaires {#additional-information}
 
-More information may be found on the [Leaderboard Essentials](leaderboard.md) page for developers.
+Pour plus d&#39;informations, consultez la page [Leaderboard Essentials](leaderboard.md) destinée aux développeurs.
 
-Les instructions de création de règles sont fournies sur la page Scores et badges [](implementing-scoring.md) des communautés pour les administrateurs.
+Les instructions de création de règles sont fournies sur la page [Scores et badges des communautés](implementing-scoring.md) à l’intention des administrateurs.
