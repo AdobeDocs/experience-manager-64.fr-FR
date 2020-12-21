@@ -22,19 +22,19 @@ ht-degree: 48%
 
 La fonction des groupes communautaires permet à une sous-communauté d’être créée dynamiquement dans un site communautaire par des utilisateurs autorisés (membres de la communauté et auteurs) à partir des environnements de publication et d’auteur.
 
-This ability is present when the [groups function](functions.md#groups-function) is present in the [community site](sites-console.md) structure.
+Cette capacité est présente lorsque la fonction [groupes ](functions.md#groups-function) est présente dans la structure [site communautaire](sites-console.md).
 
-A [community group template](tools-groups.md) provides the design of the community group page when a community group is dynamically created.
+Un [modèle de groupe de communauté](tools-groups.md) fournit la conception de la page de groupe de communauté lorsqu’un groupe de communauté est créé de manière dynamique.
 
 Un ou plusieurs modèles de groupe sont sélectionnés pour la fonction de groupes lorsque la fonction est ajoutée à la structure d’un site de communauté ou à un modèle de site de communauté. Cette liste de modèles de groupe est présentée au membre ou à l’auteur qui crée dynamiquement un nouveau groupe sur le site de la communauté.
 
 ## Création d’un nouveau groupe {#creating-a-new-group}
 
-The ability to create a new community group relies on the existance of a community site which includes the groups function, such as one created from the ` [Reference Site Template](sites.md)`.
+La possibilité de créer un nouveau groupe communautaire repose sur l&#39;existence d&#39;un site communautaire qui inclut la fonction de groupes, comme celui créé à partir du ` [Reference Site Template](sites.md)`.
 
-The examples that follow use the community site created from the `Reference Site Template` as described in the [Getting Started with AEM Communities](getting-started.md) tutorial.
+Les exemples suivants utilisent le site communautaire créé à partir du `Reference Site Template` comme décrit dans le didacticiel [Prise en main de AEM Communities](getting-started.md).
 
-This is the page that loads on publish when the **[!UICONTROL Groups]** menu item is selected:
+Page chargée lors de la publication lorsque l&#39;option de menu **[!UICONTROL Groupes]** est sélectionnée :
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -52,13 +52,15 @@ Dans l’onglet **[!UICONTROL Paramètres]**, spécifiez les fonctionnalités de
 
 * **[!UICONTROL Nom de l’URL de groupe]** Le nom de la page de groupe qui est intégré à l’URL.
 
-* **[!UICONTROL Ouvrir la sélection de groupe]** 
-`Open Group` indique que tout visiteur de site anonyme peut vue le contenu et se désélectionne `Member Only Group`.
+* **[!UICONTROL Ouvrir]**
+GroupeSélection 
+`Open Group` indique que tout visiteur de site anonyme peut vue le contenu et se désélectionne  `Member Only Group`.
 
-* **[!UICONTROL Sélection de groupe]** de membres uniquement 
-`Member Only Group` indique que seuls les membres du groupe peuvent vue le contenu et se désélectionne `Open Group`.
+* **[!UICONTROL Membre uniquement]**
+GroupeSélection 
+`Member Only Group` indique que seuls les membres du groupe peuvent vue le contenu et se désélectionne  `Open Group`.
 
-Under the **[!UICONTROL Template]** tab is the ability to select from the list of community group templates that were specified when the groups function was included in the community site&#39;s structure or in a community site template.
+Sous l&#39;onglet **[!UICONTROL Modèle]** se trouve la possibilité de sélectionner dans la liste des modèles de groupes de la communauté qui ont été spécifiés lorsque la fonction de groupes a été incluse dans la structure du site de la communauté ou dans un modèle de site de la communauté.
 
 ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -72,16 +74,16 @@ Par exemple, la page Groupes comportant une nouvelle sous-communauté nommée «
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
-Selecting the `Focus Group` link will open the Focus Group page in the browser, which has an initial appearance based on the chosen template, and includes a sub-menu underneath the main community site&#39;s menu:
+La sélection du lien `Focus Group` permet d&#39;ouvrir la page Groupe de discussion dans le navigateur, qui présente un aspect initial en fonction du modèle choisi et comporte un sous-menu sous le menu principal du site communautaire :
 
 ![chlimage_1-241](assets/chlimage_1-241.png)
 
 ## Composant Liste des membres de groupes de communautés {#community-group-member-list-component}
 
-Le `Community Group Member List` composant est destiné aux développeurs de modèles de groupe.
+Le composant `Community Group Member List` est destiné aux développeurs de modèles de groupe.
 
 ## Informations supplémentaires {#additional-information}
 
-More information may be found on the [Community Group Essentials](essentials-groups.md) page for developers.
+Pour plus d&#39;informations, consultez la page [Community Group Essentials](essentials-groups.md) destinée aux développeurs.
 
-For other information related to community groups, visit [Managing Users and User Groups](users.md).
+Pour obtenir d&#39;autres informations sur les groupes communautaires, consultez [Gestion des utilisateurs et des groupes d&#39;utilisateurs](users.md).
