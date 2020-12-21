@@ -56,7 +56,7 @@ Vous pouvez utiliser un schéma dans une mise en page ou dans un fragment de mis
 1. La mise en page et tous les fragments de mise en page utilisés dans une lettre/communication interactive utilisent le même schéma que la lettre/communication interactive.
 1. Tous les champs obligatoires à remplir avec des données sont liés au schéma.
 
-## Création de champs associables {#creating-relatable-fields}
+## Création de champs associables  {#creating-relatable-fields}
 
 Par défaut, tous les champs sont considérés comme pouvant être associés à diverses sources de données. Si votre mise en page contient des champs qui ne sont pas associables à une source de données, nommez ces champs à l’aide d’un suffixe « _int » (interne), par exemple pageCount_int.
 
@@ -80,7 +80,7 @@ Dès lors qu’un champ associable répond aux critères décrits ci-dessus, il 
 
 La configuration de la mise en page des champs est plus flexible que celle des sous-formulaires de zone cible. Mais les champs sont liés à un seul type de valeur. Vous pouvez définir un champ pour qu’il soit grand ou définir le champ avec une hauteur ou une largeur fixes, etc. Le résultat du module ou de la règle est envoyé dans le champ. 
 
-## Quand utiliser des sous-formulaires et des champs de texte {#deciding-when-to-use-subforms-and-text-nbsp-fields}
+## Quand utiliser des sous-formulaires et des champs de texte  {#deciding-when-to-use-subforms-and-text-nbsp-fields}
 
 Utilisez un sous-formulaire si vous voulez capturer plusieurs contenus de module dans une mise en forme de haut en bas à flux vertical (plusieurs paragraphes ou images). Votre mise en page doit gérer le fait que le sous-formulaire se développe en hauteur afin d’accueillir son contenu. Si vous n’êtes pas sûr que la longueur du contenu associé au sous-formulaire/à la cible ne dépassera jamais l’espace réservé dans la mise en page pour le sous-formulaire, créez ce dernier en tant qu’enfant dans un conteneur de sous-formulaires à mise en page souple. Cette procédure garantit que les objets de mise en page situés en dessous du sous-formulaire se déplaceront vers le bas au fur et à mesure que le sous-formulaire s’agrandira.
 
@@ -119,13 +119,13 @@ Utilisez un champ si vous souhaitez capturer dans votre schéma de mise en page 
  </tbody> 
 </table>
 
-## Configuration d’éléments répétitifs {#setting-up-repetitive-elements}
+## Configuration d’éléments répétitifs  {#setting-up-repetitive-elements}
 
 Lorsque des éléments comme le logo et l’adresse de votre organisation figurent sur toutes les pages d’une lettre/communication interactive, créez des champs de formulaire pour ces éléments et placez-les sur la page de gabarit. Utilisez la liaison Nom (Nom du champ) pour ces champs.
 
-## Spécifiez le format de rendu du serveur {#specify-the-server-nbsp-render-format}
+## Spécifiez le format de rendu du serveur  {#specify-the-server-nbsp-render-format}
 
 Utilisez le format de rendu du serveur de la mise en page pour le formulaire XML dynamique, faute de quoi aucune lettre/communication interactive basée sur cette mise en page ne s’affichera correctement. Par défaut, le format de rendu du serveur dans LiveCycle Designer est défini comme formulaire XML dynamique. Pour vous assurer que vous utilisez le format correct :
 
-* In Designer, click **[!UICONTROL File > Form Properties > Default]**, and ensure that the PDF Render/Format setting is set to Dynamic XML Form.
+* Dans Designer, cliquez sur **[!UICONTROL Fichier > Propriétés du formulaire > Par défaut]** et assurez-vous que le paramètre Format/Rendu PDF est défini sur Formulaire XML dynamique.
 
