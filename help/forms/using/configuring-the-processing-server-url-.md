@@ -36,7 +36,7 @@ Voici les étapes pour configurer les **[!UICONTROL paramètres AEM DS]** :
 
    ![aem_web_configuration_console](assets/aem_web_configuration_console.png)
 
-1. In the **[!UICONTROL Adobe Experience Manager Web Console Configuration]** window, locate and click the **[!UICONTROL AEM DS Settings]** option.
+1. Dans la fenêtre **[!UICONTROL Configuration de la console Web de Adobe Experience Manager]**, recherchez **[!UICONTROL AEM Paramètres DS]** et cliquez dessus.
 
    ![ds_settings](assets/ds_settings.png)
 
@@ -48,7 +48,7 @@ Voici les étapes pour configurer les **[!UICONTROL paramètres AEM DS]** :
 
    **[!UICONTROL URL]** du serveur de traitement : Le serveur de traitement est le serveur sur lequel le flux de travail Forms ou AEM doit être déclenché. Elle peut être identique à l’URL de l’instance d’auteur AEM ou de l’autre URL du serveur (c’est-à-dire http://localhost:port/).
 
-   **[!UICONTROL Nom]** d’utilisateur du serveur de traitement : Nom d’utilisateur de l’utilisateur de Workflow [en fonction de l’URL du serveur utilisé]
+   **[!UICONTROL Nom]** d’utilisateur du serveur de traitement : Nom d’utilisateur de l’utilisateur de Workflow  [en fonction de l’URL du serveur utilisé]
 
    **[!UICONTROL Mot de passe du serveur de traitement]** : mot de passe de l’utilisateur du processus
 
