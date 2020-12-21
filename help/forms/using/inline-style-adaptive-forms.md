@@ -24,8 +24,8 @@ Vous pouvez définir l’aspect général et le style d’un formulaire adaptati
 
 Pour ajouter des styles intégrés à un composant :
 
-1. Ouvrez votre formulaire dans l’éditeur de formulaire, puis choisissez le mode Style. To change the mode to styling mode, in the page toolbar, tap ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
-1. Select a component in the page, and tap the edit button ![edit-button](assets/edit-button.png). Les propriétés de style s’ouvrent dans la barre latérale.
+1. Ouvrez votre formulaire dans l’éditeur de formulaire, puis choisissez le mode Style. Pour passer en mode Style, dans la barre d’outils de la page, appuyez sur ![liste déroulante de trame](assets/canvas-drop-down.png) > **Style**.
+1. Sélectionnez un composant dans la page, puis appuyez sur le bouton Modifier ![bouton Modifier](assets/edit-button.png). Les propriétés de style s’ouvrent dans la barre latérale.
 
    Vous pouvez également sélectionner des composants dans l’arborescence de hiérarchie de formulaire dans la barre latérale. L’arborescence de hiérarchie de formulaire est disponible sous forme d’objets de formulaire dans la barre latérale.
 
@@ -43,7 +43,7 @@ Pour ajouter des styles intégrés à un composant :
    * Avancé (permet de saisir un CSS personnalisé pour le composant)
 
 1. De même, vous pouvez appliquer des styles pour d’autres parties d’un composant, tels que Widget, Légende et Aide.
-1. Tap **Done** to confirm the changes or **Cancel** to discard the changes.
+1. Appuyez sur **Terminé** pour confirmer les modifications ou sur **Annuler** pour annuler les modifications.
 
 ## Exemple : styles en ligne pour un composant de champ {#example-inline-styles-for-a-field-component}
 
@@ -96,7 +96,8 @@ Notez la modification du style de la zone de texte comme illustré ci-dessous ap
  </tbody> 
 </table>
 
-![Style de zone de texte après l’application](assets/applied-style.png)**du style intégré Figure :** *Composant de zone de texte après application des propriétés de style intégré*
+![Style de zone de texte après l’](assets/applied-style.png)
+**application du style en ligneFigure:Composant de zone de** *texte après l’application des propriétés de style en ligne*
 
 En suivant les étapes ci-dessus, vous pouvez sélectionner et styliser d’autres composants, tels que les panneaux, les boutons d’envoi et les boutons radio.
 
