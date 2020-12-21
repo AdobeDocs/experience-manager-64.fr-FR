@@ -27,29 +27,29 @@ La fonctionnalité Bibliothèque de fichiers fournit un espace où les visiteurs
 Cette section de la documentation décrit :
 
 * Ajouter la fonction de bibliothèque de fichiers à un site AEM
-* Configuration settings for the `File Library` component
+* Paramètres de configuration du composant `File Library`
 
 ## Ajout d’une bibliothèque de fichiers à une page {#adding-a-file-library-to-a-page}
 
-To add a `File Library` component to a page in author mode, locate the component
+Pour ajouter un composant `File Library` à une page en mode création, recherchez le composant.
 
 * `Communities / File Library`
 
 et faites-le glisser sur la page.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
 
-When the [required client-side libraries](essentials-file-library.md#essentials-for-client-side) are included, this is how the `File Library` component will appear:
+Lorsque les [bibliothèques client requises](essentials-file-library.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `File Library` apparaîtra :
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
 ## Configuration de la bibliothèque de fichiers {#configuring-file-library}
 
-Select the placed `File Library` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `File Library` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![chlimage_1-431](assets/chlimage_1-431.png) ![chlimage_1-432](assets/chlimage_1-432.png)
 
-### Comments tab {#comments-tab}
+### Onglet Commentaires {#comments-tab}
 
 Dans l’onglet **[!UICONTROL Commentaires]**, indiquez si et comment les commentaires pour les fichiers transférés apparaissent :
 
@@ -66,19 +66,24 @@ Dans l’onglet **[!UICONTROL Commentaires]**, indiquez si et comment les commen
 
 * **[!UICONTROL Éditeur de texte enrichi]** Si cette option est activée, les commentaires peuvent être saisis avec une mise en forme. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Supprimer les commentaires]** Si cette option est cochée, les utilisateurs sont autorisés à supprimer leurs propres commentaires. Cette option est cochée par défaut.
+* **[!UICONTROL Supprimer les]**
+commentairesSi cette option est cochée, les utilisateurs sont autorisés à supprimer leurs propres commentaires. Cette option est cochée par défaut.
 
 * **[!UICONTROL Autoriser le balisage]** Si cette option est cochée, une balise peut être ajoutée au fichier. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Espaces de nommage]** autorisés Si l’option Autoriser le balisage est cochée, les balises disponibles seront limitées aux espaces de nommage cochés. Si aucun n&#39;est coché, tous sont autorisés. Par défaut, tous les espaces de noms sont autorisés.
+* **[!UICONTROL Espaces de]**
+noms autorisésSi l&#39;option Autoriser le balisage est cochée, les balises disponibles seront limitées aux espaces de nommage cochés. Si aucun n&#39;est coché, tous sont autorisés. Par défaut, tous les espaces de noms sont autorisés.
 
 * **[!UICONTROL Limite de suggestions]** Si l’option Autoriser le balisage est sélectionnée, ce paramètre limite le nombre de balises suggérées à afficher. Si la valeur est -1, il n’existe aucune limite. La valeur par défaut est -1.
 
-* **[!UICONTROL Autoriser le vote]** Si cette option est cochée, la possibilité d&#39;voter pour un fichier sera activée. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser le]**
+voteSi cette case est cochée, la possibilité d&#39;aller voter pour un fichier sera activée. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Autoriser le suivi]** Si coché, incluez la fonctionnalité suivante pour les articles de blog, ce qui permet aux membres d’être [informés](notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser]**
+le suivi Si cette option est cochée, incluez la fonctionnalité suivante pour les articles de blog, ce qui permet aux membres d’être  [](notifications.md) avertis de nouvelles publications. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Autoriser les réponses]** filetées Si cette option est cochée, autoriser les réponses aux commentaires publiés. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser les]**
+réponses filetéesSi cette case est cochée, autoriser les réponses aux commentaires publiés. Cette option n’est pas cochée par défaut.
 
 ### Onglet Modération utilisateur {#user-moderation-tab}
 
@@ -106,7 +111,7 @@ Dans l’onglet **[!UICONTROL Modération d’utilisateur]**, configurez la mod�
 
 ## Informations supplémentaires {#additional-information}
 
-More information may be found on the [File Library Essentials](essentials-file-library.md) page for developers.
+Pour plus d&#39;informations, consultez la page [File Library Essentials](essentials-file-library.md) destinée aux développeurs.
 
 Pour des informations sur la modération des sujets et des commentaires publiés, reportez-vous à la section [Modération du contenu généré par l’utilisateur](moderate-ugc.md).
 
