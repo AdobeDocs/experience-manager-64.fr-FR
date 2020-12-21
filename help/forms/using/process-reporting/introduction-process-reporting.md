@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Présentation du Rapports de processus {#introduction-to-process-reporting}
+# Introduction au Rapports de processus {#introduction-to-process-reporting}
 
 ![processus-rapports](assets/process-reporting.png)
 
@@ -27,7 +27,7 @@ Le Rapports de processus fournit un ensemble de rapports prêts à l’emploi qu
 
 De plus, Process Rapports fournit une interface permettant d’exécuter des requêtes ad hoc et d’intégrer des vues de rapports personnalisées dans l’interface utilisateur Process Rapports.
 
-Pour la liste des navigateurs pris en charge, voir Plateformes [prises en charge par](/help/forms/using/aem-forms-jee-supported-platforms.md)AEM Forms.
+Pour la liste des navigateurs pris en charge, voir [Plateformes prises en charge par AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Le Rapports de processus repose sur des modules qui :
 
@@ -35,7 +35,7 @@ Le Rapports de processus repose sur des modules qui :
 * Publier les données de processus dans un référentiel de Rapports de processus incorporé
 * Fournit une interface utilisateur basée sur un navigateur pour les rapports de vue
 
-## Key Capabilities {#key-capabilities}
+## Fonctionnalités clés {#key-capabilities}
 
 ### Rapports permanent {#always-on-reporting}
 
@@ -61,7 +61,7 @@ Vous pouvez ensuite enregistrer les filtres de rapports pour qu’ils s’exécu
 
 ![gestion de fichiers](assets/file-management.png)
 
-Les serveurs AEM Forms exécutent de nombreux processus en parallèle. Ces processus continuent de passer d’un état à l’autre. En publiant les données Forms dans le référentiel de Rapports de processus à intervalles réguliers, le Rapports de processus conserve les informations de transition sur les processus en cours d’exécution dans AEM Forms.
+Les serveurs AEM Forms exécutent de nombreux processus en parallèle. Ces processus continuent de passer d’un état à l’autre. En publiant les données Forms dans le référentiel Process Rapports à intervalles réguliers, Process Rapports conserve les informations de transition sur les processus en cours d’exécution dans AEM Forms.
 
 ### Contrôle d’accès {#access-control-br}
 
