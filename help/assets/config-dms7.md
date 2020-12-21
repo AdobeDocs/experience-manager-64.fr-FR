@@ -420,7 +420,7 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 1. Dans le panneau **[!UICONTROL Détails]**, dans le champ [!UICONTROL Nom du paramètre prédéfini], saisissez le nom du paramètre prédéfini.
 1. Dans le menu déroulant **[!UICONTROL Type d’ensemble par lot]**, sélectionnez **[!UICONTROL Visionneuse de fichiers]**.
 1. Dans la liste déroulante **[!UICONTROL Sous-type]**, sélectionnez **[!UICONTROL Visionneuse à 360° multi-axe]**.
-1. Développez **[!UICONTROL Conventions d’affectation de nom]**, puis dans la liste déroulante **[!UICONTROL Affectation de nom de fichier]**, appuyez sur **[!UICONTROL Personnalisé]**.
+1. Développez **[!UICONTROL Conventions d’affectation de nom]**, puis, dans la liste déroulante **[!UICONTROL Affectation de nom de fichier]**, appuyez sur **[!UICONTROL Personnalisé]**.
 1. Utilisez les attributs **[!UICONTROL Correspondance]** et, éventuellement, **[!UICONTROL Nom de base]** pour définir une expression régulière pour nommer les fichiers d’image qui constituent le regroupement.
 
    Par exemple, votre expression régulière de correspondance littérale peut se présenter comme suit :
