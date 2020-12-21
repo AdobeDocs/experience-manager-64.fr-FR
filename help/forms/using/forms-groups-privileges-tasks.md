@@ -18,7 +18,7 @@ ht-degree: 99%
 ---
 
 
-# AEM Forms sur les groupes et privilèges OSGi {#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms sur les groupes et privilèges OSGi  {#aem-forms-on-osgi-groups-and-privileges}
 
 Affecter des utilisateurs aux groupes pour gérer AEM Forms sur OSGi
 
@@ -33,7 +33,7 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
    <td>Tâches</td> 
   </tr>
   <tr>
-   <td>forms-user <sup>[1]</sup></td> 
+   <td>utilisateur de formulaires <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Créer, prévisualiser, publier et soumettre des formulaires adaptatifs</li> 
