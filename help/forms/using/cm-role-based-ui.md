@@ -17,7 +17,7 @@ ht-degree: 28%
 ---
 
 
-# NE PAS PUBLIER L’interface utilisateur basée sur un rôle dans Correspondence Management {#do-not-publish-role-based-user-interface-in-correspondence-management}
+# NE PAS PUBLIER L’interface utilisateur basée sur le rôle dans Correspondence Management {#do-not-publish-role-based-user-interface-in-correspondence-management}
 
 En AEM, l’administrateur peut fournir un accès par rôle à différents groupes d’utilisateurs qui effectuent diverses actions sur différentes ressources. Par exemple, la fonctionnalité de création ou de modification des dictionnaires de données peut être disponible uniquement pour les utilisateurs d’un groupe d’utilisateurs spécifique, tandis que d’autres utilisateurs peuvent uniquement vue et utiliser les dictionnaires de données.
 
@@ -25,19 +25,19 @@ L’interface AEM affiche les options, telles que la création ou la modificatio
 
 Bien que CRX vous permette de configurer les droits d’accès pour les comptes d’utilisateurs et de groupes, cet article traite des droits d’accès basés sur les rôles ou les groupes d’utilisateurs.
 
-Pour plus d’informations sur les groupes, les autorisations, les listes de contrôle d&#39;accès et la gestion des utilisateurs et des groupes, voir Administration et sécurité [des](/help/sites-administering/security.md)utilisateurs.
+Pour plus d’informations sur les groupes, les permissions, les listes de contrôle d&#39;accès et la gestion des utilisateurs et des groupes, voir [Administration utilisateur et sécurité](/help/sites-administering/security.md).
 
 ## Gestion des autorisations {#managing-permissions}
 
 1. Assurez-vous que l’utilisateur pour lequel vous souhaitez gérer les autorisations est ajouté au groupe d’utilisateurs approprié.
 
-   Par exemple, l’utilisateur John Doe est ajouté aux groupes `agents` et `cm-creditcard`. Pour plus d’informations, voir Ajouter des utilisateurs ou des groupes à un groupe. For more information, see [Managing Users and User Groups](/help/communities/users.md).
+   Par exemple, l’utilisateur John Doe est ajouté aux groupes `agents` et `cm-creditcard`. Pour plus d’informations, voir Ajouter des utilisateurs ou des groupes à un groupe. Pour plus d’informations, voir [Gestion des utilisateurs et des groupes d’utilisateurs](/help/communities/users.md).
 
    ![]()
 
 1. Créez les dossiers en fonction des autorisations à accorder.
 
-   Par exemple, si une entreprise possède des divisions du prêt immobilier, de la carte de crédit et de l’assurance, elle peut créer des dossiers nommés `HomeMortgage`et `CreditCard,``Insurance` conserver les actifs concernés et donner accès sélectivement aux agents pour les actifs propres à ses services uniquement.
+   Par exemple, si une entreprise possède des divisions du prêt immobilier, de la carte de crédit et de l&#39;assurance, elle peut créer des dossiers nommés `HomeMortgage`, `CreditCard,`et `Insurance` pour conserver les actifs concernés et donner accès de manière sélective aux agents pour les actifs propres à leur service uniquement.
 
 1. Pour accéder à la sécurité AEM WCM, effectuez l’une des opérations suivantes :
 
@@ -54,7 +54,7 @@ Pour plus d’informations sur les groupes, les autorisations, les listes de con
 
    Pour localiser le nom du groupe, vous pouvez le saisir dans l’espace prévu à cet effet.
 
-1. Dans l’onglet permissions, accédez au chemin d’accès auquel vous souhaitez ajouter des autorisations. Les dossiers Correspondence Management se trouvent sous le `content/apps/cm/` dossier.
+1. Dans l’onglet permissions, accédez au chemin d’accès auquel vous souhaitez ajouter des autorisations. Les dossiers Correspondence Management se trouvent sous le dossier `content/apps/cm/`.
 
    Dans la colonne Membre, cochez la case correspondant aux membres qui doivent disposer d’autorisations au niveau de ce chemin d’accès. Décochez la case correspondant aux membres dont vous souhaitez supprimer les autorisations. Un triangle rouge apparaît dans la cellule à laquelle vous avez apporté des modifications.
 
@@ -64,7 +64,7 @@ Pour plus d’informations sur les groupes, les autorisations, les listes de con
    >
    >Les autorisations spécifiées dans un dossier remplacent les autorisations spécifiées dans ses sous-dossiers.
 
-1. Appuyez sur Save (Enregistrer). 
+1. Appuyez sur Save (Enregistrer).
 1. Texte de l’étape
 1. Texte de l’étape
 1. Texte de l’étape
