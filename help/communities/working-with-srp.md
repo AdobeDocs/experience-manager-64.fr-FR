@@ -26,17 +26,17 @@ Depuis AEM Communities 6.1, le contenu généré par l’utilisateur est stocké
 
 Contrairement aux versions précédentes, il n’existe pas de réplication inverse/avancée de l’UGC entre les instances AEM. Au lieu de cela, le protocole SRP rend l’UGC directement accessible pour créer, lire, mettre à jour et supprimer des opérations CRUD de toutes les instances d’auteur et de publication, à l’exception de JSRP.
 
-Vous trouverez ci-dessous les [caractéristiques de chaque option](#characteristics-of-srp-options)de PRS, qui est une information cruciale pour le processus décisionnel lors du choix du PRS approprié et du déploiement [](topologies.md)sous-jacent.
+Vous trouverez ci-dessous les caractéristiques [de chaque option SRP](#characteristics-of-srp-options), qui sont des informations cruciales pour le processus de décision lors du choix du SRP approprié et du [déploiement sous-jacent](topologies.md).
 
-Pour plus d&#39;informations sur l&#39;utilisation de SRP pour UGC, consultez Présentation [des fournisseurs de ressources](srp.md)d&#39;Enregistrement.
+Pour plus d&#39;informations sur l&#39;utilisation de SRP pour UGC, voir [Enregistrement Resource Provider Overview](srp.md).
 
 >[!NOTE]
 >
->SRP s&#39;applique uniquement au contenu de la communauté. Elle n’affecte pas l’emplacement de stockage du contenu du site (magasin[de](../../help/sites-deploying/data-store-config.md)noeuds) et n’affecte pas la gestion sécurisée de l’enregistrement des utilisateurs, des profils d’utilisateurs et des groupes d’utilisateurs entre les instances d’AEM (voir également [Gestion des données](#managing-user-data)utilisateur).
+>SRP s&#39;applique uniquement au contenu de la communauté. Elle n’affecte pas l’emplacement de stockage du contenu du site ([Node store](../../help/sites-deploying/data-store-config.md)) et n’affecte pas la gestion sécurisée de l’enregistrement des utilisateurs, des profils d’utilisateurs et des groupes d’utilisateurs entre les instances d’AEM (voir également [Gestion des données utilisateur](#managing-user-data)).
 
 >[!CAUTION]
 >
->À partir de AEM 6.1, [UGC n&#39;est jamais répliqué](#ugc-never-replicated).
+>À partir de l&#39;AEM 6.1, [UGC n&#39;est jamais répliqué](#ugc-never-replicated).
 >
 >Lorsque le déploiement n’inclut pas de magasin commun, tel que la topologie [JSRP](topologies.md#jsrp) par défaut, l’UGC n’est visible que sur l’instance de publication ou d’auteur AEM sur laquelle il a été saisi. Ce n’est que si la topologie inclut une grappe de publication que l’UGC sera visible sur toute instance de publication.
 
@@ -86,7 +86,7 @@ Avec l’option par défaut, il n’existe pas de magasin commun. L’UGC n’es
 
 ## Configuration de SRP {#configuring-srp}
 
-La spécification de l’option d’enregistrement par défaut, en fonction du déploiement sous-jacent, est effectuée via la console [Configuration de l’](srp-config.md)Enregistrement.
+La spécification de l&#39;option d&#39;enregistrement par défaut, en fonction du déploiement sous-jacent, est effectuée via la [console de configuration de l&#39;Enregistrement](srp-config.md).
 
 Pour plus d&#39;informations sur la configuration de chaque option, voir :
 
@@ -99,7 +99,7 @@ Si aucune option d’enregistrement n’est activement sélectionnée, JSRP est 
 
 ## Informations supplémentaires {#additional-information}
 
-### UGC jamais répliqué {#ugc-never-replicated}
+### UGC n&#39;a jamais répliqué {#ugc-never-replicated}
 
 Dans l’environnement d’auteur, un auteur crée du contenu de page et le répliquera dans l’environnement de publication. Lorsqu’une page comprend une fonction d’AEM Communities interactive, telle que des commentaires, des révisions, un forum, un blog ou une QnA, l’interaction des membres (connectés en visiteurs de site) sur une instance de publication génère l’entrée de contenu généré par l’utilisateur dans l’environnement de publication.
 
@@ -107,16 +107,16 @@ Auparavant, ce contenu de la communauté était répliqué de manière inversée
 
 À partir de AEM Communities 6.1, la nécessité de reproduire le CU a été éliminée en utilisant l&#39;enregistrement partagé pour le CU, comme indiqué ci-dessus.
 
-Bien que le contenu du site soit répliqué, l’UGC n’est jamais répliqué.
+Bien que le contenu du site soit répliqué, UGC n’est jamais répliqué.
 
 ### Gestion des données utilisateur {#managing-user-data}
 
-Les communautés s’intéressent également aux [*utilisateurs *, aux groupes* d’*utilisateurs et aux profils* d’*](users.md)utilisateurs. Une fois créées et mises à jour dans l’environnement de publication, ces données utilisateur doivent être mises à la disposition d’autres instances de publication lorsque la topologie est une batterie de[publication](../../help/sites-deploying/recommended-deploys.md#tarmk-farm).
+Les communautés s’intéressent également aux [*utilisateurs*, *groupes d’utilisateurs* et *profils d’utilisateurs*](users.md). Ces données utilisateur, lorsqu’elles sont créées et mises à jour dans l’environnement de publication, doivent être mises à la disposition d’autres instances de publication lorsque la topologie est une [batterie de publication](../../help/sites-deploying/recommended-deploys.md#tarmk-farm).
 
-Depuis AEM Communities 6.1, les données relatives aux utilisateurs sont synchronisées à l’aide de la distribution Sling plutôt que de la réplication. Pour plus d’informations, consultez la section Synchronisation [des](sync.md)utilisateurs.
+Depuis AEM Communities 6.1, les données relatives aux utilisateurs sont synchronisées à l’aide de la distribution Sling plutôt que de la réplication. Pour plus d&#39;informations, consultez [Synchronisation des utilisateurs](sync.md).
 
-### Upgrading to AEM Communities 6.2 {#upgrading-to-aem-communities}
+### Mise à niveau vers AEM Communities 6.2 {#upgrading-to-aem-communities}
 
 Lors de la mise à niveau vers AEM Communities 6.3, si des CU préexistants doivent être conservés, des mesures doivent être prises selon que la communauté AEM 5.6.1 ou AEM 6.0 a utilisé l&#39;enregistrement à la demande de l&#39;Adobe ou l&#39;enregistrement local de CU.
 
-Pour plus d’informations, consultez [Mise à niveau vers AEM Communities 6.3](upgrade.md).
+Pour plus d&#39;informations, consultez [Mise à niveau vers AEM Communities 6.3](upgrade.md).
