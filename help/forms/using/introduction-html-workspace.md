@@ -18,7 +18,7 @@ ht-degree: 88%
 ---
 
 
-# Présentation de l’espace de travail AEM Forms {#introduction-to-aem-forms-workspace}
+# Présentation de l’espace de travail AEM Forms  {#introduction-to-aem-forms-workspace}
 
 Le processus des formulaires améliore l’efficacité organisationnelle en automatisant et en fournissant une visibilité des processus métier critiques relatifs aux documents et aux formulaires. À l’aide du module Process Management, vous pouvez construire des processus complets simplifiés incluant des personnes, des systèmes, du contenu et des règles de gestion. L’espace de travail AEM Forms ajoute de nouvelles fonctionnalités pour étendre et intégrer l’espace de travail et le rendre plus convivial.
 
