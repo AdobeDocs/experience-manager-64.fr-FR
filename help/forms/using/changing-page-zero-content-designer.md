@@ -16,7 +16,7 @@ ht-degree: 83%
 ---
 
 
-# Modification du contenu de la page zéro avec Designer {#changing-page-zero-content-in-designer}
+# Modification du contenu de la page zéro avec Designer  {#changing-page-zero-content-in-designer}
 
 Le contenu de la page zéro s’affiche par défaut lorsqu’un lecteur non Adobe PDF, tel que le lecteur PDF par défaut dans Chrome ou Firefox, ne peut pas lire le contenu du formulaire PDF/XFA. Le message par défaut de la page zéro est affiché ci-dessous.
 
@@ -30,7 +30,7 @@ La version AEM Forms Feature Pack 1 de Designer vous permet de modifier le mess
 
 1. Cliquez sur **Fichier > Propriétés du formulaire**.
 
-1. In the Form Properties dialog, click ![plus](assets/plus.png) (Plus icon) to add a custom property.
+1. Dans la boîte de dialogue Propriétés du formulaire, cliquez sur ![plus](assets/plus.png) (icône Plus) pour ajouter une propriété personnalisée.
 
 1. Spécifiez **_pagezerocontent** en tant que nom de propriété.
 1. Ajoutez le nouveau message de la page zéro au format Rich Text, en tant que valeur. Par exemple :
