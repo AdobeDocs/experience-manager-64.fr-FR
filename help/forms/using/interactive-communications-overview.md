@@ -36,9 +36,9 @@ Voici les fonctionnalités principales des communications interactives :
 * L&#39;interface utilisateur de l&#39;agent affiche l&#39;impression et la prévisualisation Web de la communication interactive.
 * Glisser-déposer les composants pour construire rapidement les canaux web et d’impression
 
-## Exemples de cas d’utilisation {#sample-use-case}
+## Exemples de cas d’utilisation  {#sample-use-case}
 
-The [Welcome kit for a credit card customer](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) sample use case showcases the capabilities of an Interactive Communication.
+Le [kit de bienvenue pour un client de carte de crédit](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) exemple de cas d&#39;utilisation présente les fonctionnalités d&#39;une communication interactive.
 
 ## Création de la communication interactive  {#interactive-communication-creation}
 
@@ -46,7 +46,7 @@ The [Welcome kit for a credit card customer](/help/forms/using/finance-reference
 
 ### Workflow {#workflow}
 
-To create an Interactive Communication, have the [building blocks](#buildingblocks) for Interactive Communication ready and then complete the following steps:
+Pour créer une communication interactive, préparez les [blocs de création](#buildingblocks) pour la communication interactive, puis procédez comme suit :
 
 1. Choisissez de [créer une communication interactive](/help/forms/using/create-interactive-communication.md).
 
@@ -56,7 +56,7 @@ To create an Interactive Communication, have the [building blocks](#buildingbloc
 1. Configurez les propriétés suivantes des composants insérés :
 
    1. Images
-   1. [Tableaux](/help/forms/using/create-interactive-communication.md#tables) (y compris les fragments de mise en page)
+   1. [Tableaux](/help/forms/using/create-interactive-communication.md#tables)  (y compris les fragments de mise en page)
    1. [Graphiques](/help/forms/using/chart-component-interactive-communications.md)
    1. [Fragments de document](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
@@ -71,7 +71,7 @@ Les blocs de construction requis pour la création d’une communication interac
 * [Modèles de canaux web et d’impression](/help/forms/using/web-channel-print-channel.md)
 * [Fragments de document](/help/forms/using/document-fragments.md)
 * Images
-* [Thèmes](/help/forms/using/themes.md) pour le canal Web
+* [](/help/forms/using/themes.md) Thèmes du canal Web
 
 ## Comparaison entre les communications interactives et Correspondence Management {#interactive-communications-vs-correspondence-management}
 
