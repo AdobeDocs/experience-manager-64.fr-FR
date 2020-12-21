@@ -38,17 +38,17 @@ Pour suivre le scénario ci-après ou un scénario similaire, vous devez dispose
 * JavaScript
 * Java
 
-## Scénario : Ajoutez une commande à l’interface utilisateur des listes Lettres pour envoyer la version PDF aplatie d’une lettre {#addcommandtoletters}
+## Scénario : Ajoutez une commande à l’interface utilisateur des listes Lettres pour envoyer la version PDF aplatie d’une lettre  {#addcommandtoletters}
 
 Les étapes ci-dessous ajoutent une commande « Télécharger un PDF aplati » à la vue Liste des ressources de lettres et permettent à vos utilisateurs de télécharger le PDF aplati de la lettre sélectionnée. Le suivi de ces étapes à l’aide du code et des paramètres appropriés permet d’ajouter une autre fonctionnalité pour une ressource différente, telle que des dictionnaires de données ou des textes.
 
 Pour personnaliser Correspondence Management et permettre aux utilisateurs de télécharger un fichier PDF aplati ou des lettres, suivez les étapes ci-après :
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Accédez à `https://[server]:[port]/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
 
 1. Dans le dossier d’applications, créez un dossier nommé éléments avec un chemin/une structure similaires au dossier d’éléments situé dans le dossier de sélection, en procédant comme suit :
 
-   1. Right-click the **[!UICONTROL items]** folder at the following path and select **[!UICONTROL Overlay Node]**:
+   1. Cliquez avec le bouton droit sur le dossier **[!UICONTROL items]** à l’emplacement suivant et sélectionnez **[!UICONTROL Noeud d’incrustation]** :
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items`
 
@@ -63,11 +63,11 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **[!UICONTROL Chemin :]** /libs/fd/cm/ma/gui/content/massets/jcr:content/body/content/header/items/selection/items
+      **[!UICONTROL Chemin d’accès :]** /libs/fd/cm/ma/gui/content/massets/jcr:content/body/content/header/items/selection/items
 
-      **[!UICONTROL Emplacement :]** /apps/
+      **[!UICONTROL Emplacement:]** /applications/
 
-      **[!UICONTROL Faire correspondre les types de noeud :]** Sélectionné
+      **[!UICONTROL Faire correspondre les types de noeud:]** Sélectionné
 
       ![Nœud de recouvrement](assets/2_createnodedownloadflatpdf.png)
 
@@ -77,7 +77,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
 1. Dans le dossier d’éléments nouvellement créé, ajoutez un noeud pour le bouton/l’action personnalisé(e) d’une ressource particulière (exemple : downloadFlatPDF) en procédant comme suit :
 
-   1. Right-click the **[!UICONTROL items]** folder and select **[!UICONTROL Create]** > **[!UICONTROL Create Node]**.
+   1. Cliquez avec le bouton droit sur le dossier **[!UICONTROL items]** et sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Créer un noeud]**.
 
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **[!UICONTROL OK]** :
 
@@ -103,7 +103,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
     <tr> 
     <td>foundation-collection-action</td> 
     <td>Chaîne</td> 
-    <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> can be single or multiple to allow selections of single or multiple assets on which the custom action is performed.</p> <p><strong>type</strong> peut être un ou plusieurs (entrées multiples séparées par des virgules) des éléments suivants : LETTRE, TEXTE, LISTE, CONDITION, DATADICTIONNAIRE</p> </td> 
+    <td><p>{"cible" : ".cq-manageasset-admin-childpages", "activeSelectionCount" : "single","type" : "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> peut être unique ou multiple pour autoriser la sélection de ressources uniques ou multiples sur lesquelles l’action personnalisée est exécutée.</p> <p><strong></strong> peut être une ou plusieurs entrées multiples (séparées par des virgules) des éléments suivants : LETTRE, TEXTE, LISTE, CONDITION, DATADICTIONNAIRE</p> </td> 
     </tr> 
     <tr> 
     <td>icône</td> 
@@ -140,23 +140,23 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
 1. Dans le dossier d’applications, créez un dossier nommé js avec un chemin/une structure similaires au dossier d’éléments situé dans le dossier d’administration, en procédant comme suit :
 
-   1. Right-click the **[!UICONTROL js]** folder at the following path and select **[!UICONTROL Overlay Node]**: ``
+   1. Cliquez avec le bouton droit sur le dossier **[!UICONTROL js]** à l’emplacement suivant et sélectionnez **[!UICONTROL Noeud d’incrustation]** : &quot;
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **[!UICONTROL Chemin :]** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
+      **[!UICONTROL Chemin d’accès :]** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **[!UICONTROL Emplacement :]** /apps/
+      **[!UICONTROL Emplacement:]** /applications/
 
-      **[!UICONTROL Faire correspondre les types de noeud :]** Sélectionné
+      **[!UICONTROL Faire correspondre les types de noeud:]** Sélectionné
 
    1. Cliquez sur **[!UICONTROL OK]**. La structure du dossier est créée dans le dossier des applications. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
 1. Dans le dossier js, procédez comme suit pour créer un fichier nommé formaction.js avec le code de traitement d’action du bouton :
 
-   1. Right-click the **[!UICONTROL js]** folder at the following path and select **[!UICONTROL Create > Create File]**:
+   1. Cliquez avec le bouton droit sur le dossier **[!UICONTROL js]** à l’emplacement suivant et sélectionnez **[!UICONTROL Créer > Créer un fichier]** :
 
       `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -167,7 +167,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js/formaction.js`
 
-      Then append the following code at the end in the formaction.js file (under the /apps branch) and click **[!UICONTROL Save All]**:
+      Ajoutez ensuite le code suivant à la fin du fichier formaction.js (sous la branche /apps) et cliquez sur **[!UICONTROL Enregistrer tout]** :
 
       ```
       /* Action url for xml file to be added.*/
@@ -230,17 +230,17 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
 1. Dans le dossier d’applications, créez un dossier nommé éléments avec un chemin/une structure similaires au dossier d’éléments situé dans le dossier actionhandlers. Pour ce faire, procédez comme suit :
 
-   1. Right-click the **[!UICONTROL items]** folder at the following path and select **[!UICONTROL Overlay Node]**:
+   1. Cliquez avec le bouton droit sur le dossier **[!UICONTROL items]** à l’emplacement suivant et sélectionnez **[!UICONTROL Noeud d’incrustation]** :
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **[!UICONTROL Chemin :]** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
+      **[!UICONTROL Chemin d&#39;accès :]** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **[!UICONTROL Emplacement :]** /apps/
+      **[!UICONTROL Emplacement:]** /applications/
 
-      **[!UICONTROL Faire correspondre les types de noeud :]** Sélectionné
+      **[!UICONTROL Faire correspondre les types de noeud:]** Sélectionné
 
    1. Cliquez sur **[!UICONTROL OK]**. La structure du dossier est créée dans le dossier des applications.
 
@@ -252,7 +252,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **[!UICONTROL OK]** :
 
-      **[!UICONTROL Nom :]** letterpdfdownloader (ou le nom que vous souhaitez donner à cette propriété), doit être unique. Si vous utilisez un autre nom ici, spécifiez également le même dans la variable ACTION_URL du fichier formaction.js.)
+      **[!UICONTROL Nom :]** letterpdfdownloader (ou le nom que vous souhaitez donner à cette propriété) doit être unique. Si vous utilisez un autre nom ici, spécifiez également le même dans la variable ACTION_URL du fichier formaction.js.)
 
       **[!UICONTROL Type :]** nt:unstructured
 
@@ -268,7 +268,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. Right-click the **[!UICONTROL admin]** folder at the following path and select **[!UICONTROL Create > Create File]**:
+   1. Cliquez avec le bouton droit sur le dossier **[!UICONTROL admin]** à l’emplacement suivant et sélectionnez **[!UICONTROL Créer > Créer un fichier]** :
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
@@ -279,7 +279,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
       Ce code est spécifique au service de rendu de la lettre. Pour toute autre ressource, ajoutez les bibliothèques Java de la ressource à ce code. Pour plus d’informations sur les API AEM Forms, voir [API AEM Forms](https://adobe.com/go/learn_aemforms_javadocs_63_en).
 
-      For more information on AEM libraries, see AEM [Components](/help/sites-developing/components.md).
+      Pour plus d&#39;informations sur les bibliothèques AEM, voir AEM [Composants](/help/sites-developing/components.md).
 
       ```xml
       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */            
@@ -353,10 +353,10 @@ Après avoir ajouté une fonctionnalité personnalisée pour télécharger le PD
 1. Accédez à `https://[server]:[port]/[ContextPath]/projects.html` et connectez-vous.
 
 1. Sélectionnez **[!UICONTROL Formulaires > Lettres]**. Correspondence Management répertorie les lettres disponibles dans le système.
-1. Click **[!UICONTROL Select]** and then click a letter to select it.
-1. Select **[!UICONTROL More]** > &lt;Download Flat PDF> (The custom functionality created using the instructions this article). La boîte de dialogue Télécharger la lettre en tant que PDF s’affiche.
+1. Cliquez sur **[!UICONTROL Sélectionner]**, puis sur une lettre pour la sélectionner.
+1. Sélectionnez **[!UICONTROL Plus]** > &lt;Télécharger un PDF aplati> (fonctionnalité personnalisée créée à l’aide des instructions de cet article). La boîte de dialogue Télécharger la lettre en tant que PDF s’affiche.
 
-   The menu item name, functionality, and alt-text is according to the customization created in [Scenario: Add a command to the Letters list user interface to download flat PDF version of a letter.](#addcommandtoletters)
+   Le nom, la fonctionnalité et le texte de remplacement de l&#39;élément de menu dépendent de la personnalisation créée dans [Scénario : Ajoutez une commande sur l&#39;interface utilisateur de la liste Lettres pour télécharger la version PDF aplatie d&#39;une lettre.](#addcommandtoletters)
 
    ![Fonctionnalité personnalisée : Télécharger le PDF aplati](assets/5_downloadflatpdf.png)
 
@@ -364,7 +364,7 @@ Après avoir ajouté une fonctionnalité personnalisée pour télécharger le PD
 
    >[!NOTE]
    >
-   >Before downloading the letter as a flat PDF, you can create the XML file with the data in the letter using the **[!UICONTROL Create Report]** option.
+   >Avant de télécharger la lettre au format PDF aplati, vous pouvez créer le fichier XML contenant les données de la lettre à l’aide de l’option **[!UICONTROL Créer un rapport]**.
 
    ![Télécharger la lettre en tant que PDF](assets/6_downloadflatpdf.png)
 
