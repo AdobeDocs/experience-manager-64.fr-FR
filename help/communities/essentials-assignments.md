@@ -20,7 +20,7 @@ ht-degree: 13%
 
 # Affectations Essentials {#assignments-essentials}
 
-Cette page fournit les informations essentielles pour travailler sur les fonctions d&#39;attribution des sites de la communauté [d&#39;](overview.md#enablement-community) activation.
+Cette page fournit les informations essentielles pour travailler sur la fonction d&#39;assignation des sites [de la communauté d&#39;activation](overview.md#enablement-community).
 
 La fonction des affectations permet d’affecter des ressources d’activation et des chemins d’apprentissage aux membres des communautés d’activation.
 
@@ -38,7 +38,7 @@ La fonction des affectations permet d’affecter des ressources d’activation e
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigné<br /><br /> cq.social.enablement.hbs.resource cq.social.enablement.hbs.learnpath</td> 
+   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigné<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learnpath</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -50,12 +50,12 @@ La fonction des affectations permet d’affecter des ressources d’activation e
   </tr>
   <tr>
    <td><strong> properties</strong></td> 
-   <td>Voir Fonction <a href="assignments.md">Affectations</a></td> 
+   <td>Voir <a href="assignments.md">Fonction Affectations</a></td> 
   </tr>
  </tbody>
 </table>
 
-### État d’achèvement et de réussite {#completion-and-success-status}
+### État d&#39;achèvement et de réussite {#completion-and-success-status}
 
 Les états d’achèvement et de réussite sont utilisés dans les rapports ainsi que dans les bannières d’état sur les affectations.
 
@@ -85,12 +85,12 @@ Les seules combinaisons possibles d’achèvement et d’état de réussite sont
 
 ### Fonction Affectations {#assignments-function}
 
-Une structure de site communautaire qui comprend la fonction [](functions.md#assignments-function)Affectations, comprend un ` [assignments](assignments.md)` composant configuré.
+Une structure de site communautaire qui comprend la fonction [Affectations](functions.md#assignments-function), comprend un composant ` [assignments](assignments.md)` configuré.
 
 ### API de référence {#reference-apis}
 
 * [API d&#39;activation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [API Rapports](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
+* [API rapports](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [API d&#39;analyse de Rapports](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [API d&#39;analyse de rapports](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
