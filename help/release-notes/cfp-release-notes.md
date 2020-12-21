@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques aux packs de correctifs cumulés
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e10d53a3912fb21962f1015550bd3a4a118d8834
+source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
 workflow-type: tm+mt
-source-wordcount: '4156'
+source-wordcount: '4217'
 ht-degree: 13%
 
 ---
@@ -158,6 +158,9 @@ Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suiv
 * Vous pouvez suspendre l&#39;[!DNL Live Copy] d&#39;une page et l&#39;héritage est rompu comme dans le mode Editeur. Cependant, dans les propriétés Page, l’icône représentant l’héritage indique à tort que l’héritage existe et n’est pas rompu (NPR-34096).
 * Problème d’affichage des composants autorisés dans la page Modifier le modèle (CQ-4297295).
 * Après la mise à niveau de Chrome et Firefox, les menus contextuels ne fonctionnent plus comme prévu. Lors du chargement des propriétés de la page, le panneau n’apparaît pas lorsqu’il contient des données (CQ-4292995).
+* Plusieurs instances de script intersites dans des composants [!DNL Experience Manager Sites] (NPR-33926).
+* Les entrées utilisateur ne sont pas codées correctement pour divers composants lors de l&#39;envoi d&#39;informations au client (NPR-33696).
+* Une URL qui se termine par `childrenlist.html` affiche une page HTML au lieu d’une réponse 404. Ces URL sont vulnérables aux scripts intersites (NPR-33441).
 
 #### Ressources {#assets-6482}
 
@@ -234,6 +237,8 @@ Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suiv
 * L&#39;action d&#39;envoi **[!UICONTROL Envoyer au point de terminaison REST]** ne fonctionne pas pour un formulaire adaptatif (NPR-34513).
 
 * Accessibilité : Lorsque vous tentez d’envoyer un formulaire adaptatif sans télécharger de pièce jointe pour un champ obligatoire, la cible d’action ne se déplace pas automatiquement vers le champ de pièce jointe (NPR-34511).
+
+* Les entrées utilisateur ne sont pas codées correctement pour les composants [!DNL Forms] lors de l&#39;envoi d&#39;informations au client (NPR-33611).
 
 **Processus**
 
@@ -431,9 +436,9 @@ Pour déterminer la plate-forme certifiée pour l’exécution avec cette versio
 >[!NOTE]
 >Une fois le package installé avec succès, un message d’information s’affiche indiquant que le package de contenu a bien été installé, tel que **&quot;Content Package AEM-6.4-Service-Pack-8 installé avec succès.&quot;**
 
-### Mettre à jour les visionneuses de médias dynamiques (5.10.1) {#update-dynamic-media-viewers}
+### Mettre à jour les visionneuses Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
 
-aem 6.4.8.3 contient la nouvelle version des visionneuses de contenu Contenu multimédia dynamique (5.10.1) qui permet de vérifier les noms des duplicata sur la page Paramètres d’image prédéfinis. Il est conseillé aux utilisateurs de Contenu multimédia dynamique d’exécuter la commande suivante afin de mettre à jour les paramètres prédéfinis de la visionneuse prête à l’emploi.
+aem 6.4.8.3 contient la nouvelle version des visionneuses Dynamic Media (5.10.1) qui permet de vérifier les noms de duplicata sur la page Paramètres d’image prédéfinis. Il est conseillé aux clients de Dynamic Media d’exécuter la commande suivante afin de mettre à jour les paramètres prédéfinis de la visionneuse prête à l’emploi.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
