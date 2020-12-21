@@ -57,39 +57,46 @@ Si vous souhaitez ajouter un blog à une page en mode création, utilisez le nav
 
 Et faites-les glisser sur une page où le blog doit apparaître.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
 
-When the [required client-side libraries](blog-developer-basics.md#essentials-for-client-side) are included, this is how the `Blog`component will appear:
+Lorsque les [bibliothèques client requises](blog-developer-basics.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Blog`s&#39;affiche :
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
-Et comment `Blog Sidebar` apparaîtra :
+Et comment apparaît le `Blog Sidebar` :
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
 ### Configuration du blog {#configuring-blog}
 
-Select the placed `Blog` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Blog` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
-![configurer les paramètres de l&#39;icône](assets/chlimage_1-149.png) ![de blog](assets/Blog-configure.png)
+![configurer les paramètres ](assets/chlimage_1-149.png) ![iconBlog](assets/Blog-configure.png)
 
 #### Onglet Settings {#settings-tab}
 
 Sous l’onglet **[!UICONTROL Paramètres]**, définissez les fonctionnalités de base du blog :
 
-* **[!UICONTROL Autoriser la miniature]** des pièces jointes Si cette case est cochée, une miniature de l’image jointe est créée.
+* **[!UICONTROL Autoriser la miniature des pièces jointesSi cette option est cochée, une miniature de l’image jointe est créée.]**
 
-* **[!UICONTROL Taille]** maximale des miniatures d’attachement (en pixels) Taille maximale de l’image miniature de la pièce jointe. La valeur par défaut est 800 x 800.
 
-* **[!UICONTROL Taille minimale de l’image pour la miniature]** Taille minimale (en octets) de l’image pour la génération de la miniature pour les images insérées. La valeur par défaut est de 100 000 octets (100 Ko).
+* **[!UICONTROL Taille maximale de la miniature]**
+de la pièce jointe Taille maximale (en pixels) de la miniature de la pièce jointe. La valeur par défaut est 800 x 800.
 
-* **[!UICONTROL Taille]** maximale des vignettes Taille maximale (en pixels) de l’image miniature pour l’image intégrée. La valeur par défaut est 800 x 800.
+* **[!UICONTROL Taille minimale de l’image pour la]**
+miniatureTaille minimale (en octets) de l’image pour la génération de la miniature pour les images insérées. La valeur par défaut est de 100 000 octets (100 Ko).
 
-* **[!UICONTROL Autoriser les membres]** privilégiés Si cette case est cochée, seuls les membres privilégiés sont autorisés à créer du contenu.
+* **[!UICONTROL Taille]**
+maximale des vignettesTaille maximale (en pixels) de l’image miniature pour l’image intégrée. La valeur par défaut est 800 x 800.
 
-* **[!UICONTROL Les membres]** privilégiés autorisés Ajoutent les membres privilégiés autorisés à créer du contenu.
+* **[!UICONTROL Autoriser]**
+les membres privilégiésSi cette option est cochée, seuls les membres privilégiés sont autorisés à créer du contenu.
 
-* **[!UICONTROL Bloquer le contenu généré par l’utilisateur en mode]** d’édition Auteur Si cette option est activée, bloque le contenu généré par l’utilisateur lors de la modification en mode Auteur.
+* ****
+Membres autorisés privilégiésAjoutez les membres privilégiés autorisés à créer du contenu.
+
+* **[!UICONTROL Bloquer le contenu généré par l’utilisateur en]**
+mode d’édition AuteurSi cette option est activée, bloque le contenu généré par l’utilisateur lors de la modification en mode Auteur.
 
 * **[!UICONTROL Titre du journal]** Titre du blog visible dans la page.
    >Remarque :
@@ -115,7 +122,7 @@ Sous l’onglet **[!UICONTROL Paramètres]**, définissez les fonctionnalités d
 
 * **[!UICONTROL Autoriser le balisage]**
 
-   If checked, allow members to add tag labels to their post (see **[!UICONTROL Tag field]** tab). Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les membres à ajouter des étiquettes de balise à leur publication (voir **[!UICONTROL onglet Champ de balise]**). Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser les transferts de fichiers]**
 
@@ -123,11 +130,11 @@ Sous l’onglet **[!UICONTROL Paramètres]**, définissez les fonctionnalités d
 
 * **[!UICONTROL Taille maximale du fichier]**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
+   Ne s&#39;applique que si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **[!UICONTROL Types de fichier autorisés]**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Ne s&#39;applique que si `Allow File Uploads` est coché. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
 * **[!UICONTROL Taille max. du fichier image joint]**
 
@@ -143,11 +150,11 @@ Sous l’onglet **[!UICONTROL Paramètres]**, définissez les fonctionnalités d
 
 * **[!UICONTROL Autoriser abonnement]**
 
-   Si cette option est cochée, incluez la fonctionnalité suivante pour les articles de blog, ce qui permet aux membres d&#39;être [informés](notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, incluez la fonctionnalité suivante pour les articles de blog, ce qui permet aux membres d’être [avertis](notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser les abonnements par courrier électronique]**
 
-   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courriel ([abonnement](subscriptions.md)). Nécessite `Allow Following` la vérification et la configuration [du](email.md)courrier électronique. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les membres à être informés des nouvelles publications par courriel ([abonnement](subscriptions.md)). `Allow Following` doit être vérifié et [e-mail configuré](email.md). Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser le vote]**
 
@@ -155,11 +162,11 @@ Sous l’onglet **[!UICONTROL Paramètres]**, définissez les fonctionnalités d
 
 * **[!UICONTROL Afficher les badges]**
 
-   Si cette option est cochée, affichez les [badges](implementing-scoring.md) gagnés et attribués avec l&#39;entrée de blog d&#39;un membre. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, afficher les [badges](implementing-scoring.md) gagnés et attribués avec l&#39;entrée de blog d&#39;un membre. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser le contenu proposé]**
 
-   si cette option est cochée, l’idée peut être identifiée comme contenu [](featured.md)phare. Cette option n’est pas cochée par défaut.
+   si cette option est cochée, l&#39;idée peut être identifiée comme [contenu incitatif](featured.md). Cette option n’est pas cochée par défaut.
 
 #### Onglet Modération utilisateur {#user-moderation-tab}
 
@@ -199,15 +206,15 @@ Dans l’onglet **[!UICONTROL Champ de balise]**, spécifiez les balises qui peu
 
 * **[!UICONTROL Espaces de noms autorisés]**
 
-   Pertinent si `Allow Tagging` est coché sous l’onglet **[!UICONTROL Paramètres]** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
+   Pertinent si `Allow Tagging` est coché sous l&#39;onglet **[!UICONTROL Paramètres]**. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
 
 * **[!UICONTROL Limite de suggestions]**
 
    Entrez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. La valeur -1 signifie qu’aucune limite n’est définie. La valeur par défaut est 0.
 
-### Configuration de la barre latérale de blog {#configuring-blog-sidebar}
+### Configuration de la barre latérale de blog  {#configuring-blog-sidebar}
 
-When you double-click the `Blog Sidebar` component, an edit dialog opens up.
+Lorsque vous cliquez sur le composant `Blog Sidebar` en maintenant le doublon enfoncé, une boîte de dialogue de modification s’ouvre.
 
 Sous l’onglet **[!UICONTROL Paramètres de la barre latérale du journal]**, spécifiez le format de date pour les archives et le type d’entrées à afficher dans la barre latérale :
 
@@ -235,7 +242,7 @@ Sous l’onglet **[!UICONTROL Paramètres de la barre latérale du journal]**, s
 
 * **[!UICONTROL Chemin de composant de journal]**
 
-   *(Facultatif)* Emplacement de la ressource de blog à partir de laquelle les articles de blog doivent être répertoriés. S&#39;il reste vide, utilise le composant de resourceType `social/journal/components/hbs/journal` qui apparaît sur la même page.
+   *(Facultatif)* Emplacement de la ressource de blog à partir de laquelle les articles de blog doivent être répertoriés. Si rien n&#39;est indiqué, utilisez le composant resourceType `social/journal/components/hbs/journal` qui apparaît sur la même page.
 
    * Par exemple, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -253,7 +260,7 @@ Lorsqu’un article de blog est sélectionné, l’article et ses commentaires s
 
 Les autres choix varient selon que le visiteur est modérateur, administrateur, membre de la communauté, membre privilégié ou anonyme.
 
-### Fonctionnement des articles {#working-with-articles}
+### Fonctionnement des articles  {#working-with-articles}
 
 Lors de la création d’un nouvel article de blog, vous avez le choix entre :
 
@@ -263,7 +270,7 @@ Lors de la création d’un nouvel article de blog, vous avez le choix entre :
 
 Les articles de blog sont visibles sous l’onglet correspondant (Publié, Versions préliminaires ou Planifié) pour les membres autorisés à créer ou à publier.
 
-#### Modérateurs et administrateurs {#moderators-and-administrators}
+#### Modérateurs et administrateurs  {#moderators-and-administrators}
 
 Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut se charger d’[activités de modération](moderate-ugc.md) (autorisées par la configuration du composant) pour tous les articles et commentaires de blog publiés sur un blog.
 
@@ -271,7 +278,7 @@ Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’a
 
 ### Membres {#members}
 
-When the signed in user is a community member or [privileged member](users.md#privileged-members-group) (depending on configuration), they are able to select `New Article` to create and post a new blog article.
+Lorsque l&#39;utilisateur connecté est membre de la communauté ou [membre privilégié](users.md#privileged-members-group) (selon la configuration), il peut sélectionner `New Article` pour créer et publier un nouvel article de blog.
 
 Plus précisément, il est autorisé à:
 
