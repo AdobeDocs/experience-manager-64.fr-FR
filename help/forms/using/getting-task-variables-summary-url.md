@@ -17,7 +17,7 @@ ht-degree: 88%
 ---
 
 
-# Obtention de variables de tâche dans l’URL de résumé {#getting-task-variables-in-summary-url}
+# Obtention de variables de tâche dans l’URL de résumé  {#getting-task-variables-in-summary-url}
 
 La page Résumé affiche des informations liées aux tâches. Cet article décrit comment vous pouvez réutiliser les informations liées aux tâches dans la page Résumé.
 
@@ -66,7 +66,7 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 
       Définissez également une variable de sortie **ptoNodePath **qui sera utilisée lors de la définition de l’URL de résumé.
 
-   1. In the **create PTO summary** process, use the **set value** component to set the input details in a **nodeProperty **(**nodeProps**) map.
+   1. Dans le processus **create PTO summary**, utilisez le composant **set value** pour définir les détails d&#39;entrée dans un mappage **nodeProperty **(**nodeProps**).
 
       Les clés de ce mappage doivent être identiques à celles définies dans votre rendu HTML à l’étape précédente.
 
@@ -78,7 +78,7 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 
       * **Chemin d’accès au dossier** : le chemin du dossier dans lequel le nouveau nœud CRX est créé. Définissez le chemin comme **/content**.
       * **Nom de nœud** : affectez la variable d’entrée nodeName à ce champ. Il s’agit d’une chaîne de nom de nœud unique.
-      * **Type** de noeud : Définissez le type **nt:unstructured**. La sortie de ce processus est nodePath. Le nodePath est le chemin CRX du nœud que vous venez de créer. Le nodePath serait la dernière sortie du processus de résumé **create PTO**.
+      * **Type** de noeud : Définissez le type  **nt:unstructured**. La sortie de ce processus est nodePath. Le nodePath est le chemin CRX du nœud que vous venez de créer. Le nodePath serait la dernière sortie du processus de résumé **create PTO**.
    1. Transmettez les données de formulaire envoyées (**employeeName**, **employeeID**, **ptoReason** et **totalDays**) comme entrée du nouveau processus **create PTO summary**. Prenez la sortie comme **ptoSummaryNodePath**.
 
 
