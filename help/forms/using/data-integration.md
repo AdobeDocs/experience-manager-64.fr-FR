@@ -29,7 +29,7 @@ Les applications AEM Forms telles que les formulaires adaptatifs et les communic
 
 Alors qu’un système modulaire distribué a des avantages propres, le défi consiste à intégrer et créer des associations de données dans plusieurs sources de données. L’intégration des données est essentielle au fonctionnement et à l’efficacité d’une infrastructure d’entreprise avec des sources de données distinctes connectées à des applications à des fins d’échange des données d’entreprise.
 
-## Aperçu de l’intégration de données {#data-integration-overview}
+## Aperçu de l’intégration de données  {#data-integration-overview}
 
 ![aem-forms-data-intégration](assets/aem-forms-data-integeration.png)
 
@@ -47,7 +47,7 @@ Une fois que vous avez créé un modèle de données de formulaire, vous pouvez 
 * Appeler des services/opérations de source de données à l’aide de règles de formulaire adaptatif
 * Écrire les données de formulaire adaptatif envoyées dans les sources de données
 
-## Prise en main de l’intégration de données {#get-started-with-data-integration}
+## Prise en main de l’intégration de données  {#get-started-with-data-integration}
 
 La première étape de l’implémentation de l’intégration de données consiste à identifier et configurer les sources de données qui stockent les informations que vous souhaitez exploiter dans les formulaires adaptatifs et les cas d’utilisation de communications interactives. Ensuite, vous créez un modèle de données de formulaire qui utilise un objet, des propriétés et des services de modèle de données provenant d’une ou de plusieurs sources de données. Vous pouvez créer des formulaires adaptatifs et des communications interactives basés sur un modèle de données de formulaire dans lequel les champs de formulaire adaptatif ou les espaces réservés dans les communications interactives sont liés aux propriétés de source de données respectives.
 
