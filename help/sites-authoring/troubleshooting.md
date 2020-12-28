@@ -36,7 +36,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * Vous avez modifié une page et l’avez répliquée sur le site de publication, mais l’*ancienne* version de la page est toujours visible sur le site de publication.
 
-* **Motif** :
+* **Raison**:
 
    * Les raisons peuvent être multiples, mais sont généralement liées à la mémoire cache (de votre navigateur local ou du dispatcher), bien qu’il s’agisse parfois d’un problème de la file d’attente de réplication.
 
@@ -58,7 +58,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * La plage entière des actions de composants applicables n’est pas visible lors de la modification d’une page de contenu dans l’environnement de création.
 
-* **Motif** :
+* **Raison**:
 
    * Dans de rares cas, une action précédente peut avoir un impact sur la barre d’outils.
 
