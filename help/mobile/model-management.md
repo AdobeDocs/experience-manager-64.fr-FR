@@ -25,11 +25,11 @@ ht-degree: 3%
 
 La gestion des modèles implique la création et la gestion de modèles dans le but d&#39;associer des objets de données éventuels. Chaque modèle comprend toutes les propriétés et définitions de champ nécessaires pour faciliter la création et le rendu des objets.
 
-La gestion des modèles implique la création de **modèles**, d&#39; **entités** et d&#39; **espaces**. Le diagramme suivant illustre la relation entre le contenu AEM et les modèles.
+La gestion des modèles implique la création de **modèles**, **entités** et **espaces**. Le diagramme suivant illustre la relation entre le contenu AEM et les modèles.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
-## Le modèle de contenu {#the-content-model}
+## Modèle de contenu {#the-content-model}
 
 Un modèle décrit le type de contenu et indique quelles informations seront disponibles pour l’application native. Il s’agit d’une description de ce qui constitue un élément de contenu. Un modèle de contenu est la règle pour créer un élément de contenu. Le modèle de contenu inclut les données disponibles, les ressources pouvant être utilisées, la relation entre les ressources et les données, la relation avec d’autres modèles de contenu et les métadonnées disponibles.
 
@@ -52,7 +52,7 @@ Les modèles sont utilisés pour déterminer comment les entités sont créées.
 >Un modèle existe en dehors d’une application, car plusieurs applications peuvent l’utiliser.
 
 
-Voir **[Modèles](/help/mobile/administer-mobile-apps.md)**pour créer et gérer des modèles dans le tableau de bord et le référentiel.
+Voir **[Modèles](/help/mobile/administer-mobile-apps.md)** pour créer et gérer des modèles dans le tableau de bord et le référentiel.
 
 ### Entités dans le modèle de contenu {#entities-in-content-model}
 
@@ -60,9 +60,9 @@ Une entité est une instance d’un modèle de contenu. Une entité est exposée
 
 Dans le cas d’un contenu AEM existant, une entité est générée à l’aide d’un modèle et de la source de contenu AEM. Par exemple, une entité de page est un objet indépendant du canal et de la mise en page qui est généré à partir d’une page AEM et du modèle de page.
 
-Les modifications apportées au contenu référencé d&#39;une entité entraînent une modification de l&#39;entité. Par exemple, si une *page cq:page* est mise à jour, toutes les entités basées sur cette page seront également mises à jour.
+Les modifications apportées au contenu référencé d&#39;une entité entraînent une modification de l&#39;entité. Par exemple, si un *cq:page* est mis à jour, toutes les entités basées sur cette page seront également mises à jour.
 
-Voir **[Utilisation d&#39;entités](/help/mobile/spaces-and-entities.md)**pour créer des entités personnalisées à partir de modèles.
+Voir **[Utilisation d&#39;entités](/help/mobile/spaces-and-entities.md)** pour créer des entités personnalisées à partir de modèles.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Du côté AEM, un espace est un moyen pratique de gérer les entités qui sont l
 
 *Par exemple*,
 
-Un utilisateur possède trois classifications générales d&#39;entités. L&#39;une est destinée à un usage interne uniquement, l&#39;autre est approuvée pour un usage public et encore une troisième concerne les entités communes utilisées par de nombreuses applications. Pour faciliter la gestion, l&#39;utilisateur crée trois espaces : *interne*, *public* (avec du contenu en anglais et en français) et *commun* pour la gestion des entités appropriées, comme indiqué ci-dessous :
+Un utilisateur possède trois classifications générales d&#39;entités. L&#39;une est destinée à un usage interne uniquement, l&#39;autre est approuvée pour un usage public et encore une troisième concerne les entités communes utilisées par de nombreuses applications. Pour faciliter la gestion, l’utilisateur crée trois espaces : *internal*, *public* (avec du contenu en anglais et en français) et *common* pour gérer les entités appropriées, comme indiqué ci-dessous :
 
 * /content/entités/internal
 * /content/entités/public/fr
@@ -86,7 +86,7 @@ Un utilisateur possède trois classifications générales d&#39;entités. L&#39;
 
 Un point de terminaison de service sera fourni à l’espace afin que la bibliothèque cliente native puisse demander une liste du contenu d’un espace. Cette &quot;liste&quot; est renvoyée sous la forme d’un objet JSON.
 
-Voir **[Espaces et entités](/help/mobile/spaces-and-entities.md)**pour la création et la publication d’espaces.
+Voir **[Espaces et entités](/help/mobile/spaces-and-entities.md)** pour la création et la publication d’espaces.
 
 >[!NOTE]
 >
@@ -96,4 +96,4 @@ Voir **[Espaces et entités](/help/mobile/spaces-and-entities.md)**pour la créa
 
 Les dossiers permettent aux utilisateurs d&#39;organiser les entités selon les besoins et facilitent un contrôle de liste de contrôle d&#39;accès plus précis. Les espaces peuvent inclure des dossiers pour mieux organiser le contenu et les ressources de l’espace. Un utilisateur peut créer sa propre hiérarchie sous un espace.
 
-Voir **[Utilisation de dossiers dans un espace](/help/mobile/spaces-and-entities.md)**pour créer et gérer des dossiers dans un espace.
+Voir **[Utilisation de dossiers dans un espace](/help/mobile/spaces-and-entities.md)** pour créer et gérer des dossiers dans un espace.
