@@ -1,20 +1,20 @@
 ---
-title: AEM 6.4 Élaboration du Guide de l’utilisateur
-seo-title: AEM 6.4 Élaboration du Guide de l’utilisateur
-description: Ce guide explique comment construire votre instance AEM.
+title: Guide de l’utilisateur pour le développement dans AEM 6.4
+seo-title: Guide de l’utilisateur pour le développement dans AEM 6.4
+description: Ce guide explique comment créer votre instance AEM.
 seo-description: Décrit comment créer votre instance AEM.
 translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 31%
+ht-degree: 45%
 
 ---
 
 
-# AEM 6.4 Élaboration du Guide de l’utilisateur
+# Guide de l’utilisateur pour le développement dans AEM 6.4
 
-Ce guide explique comment construire votre instance AEM.
+Ce guide explique comment créer votre instance AEM.
 
 ## Principaux articles AEM
 
@@ -23,7 +23,7 @@ Ce guide explique comment construire votre instance AEM.
 * [Mises à jour récentes de la documentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Liste de contrôle de la sécurité AEM](/help/sites-administering/security-checklist.md)
 
-## AEM 6.4 guides d’utilisation
+## aem 6.4 guides d’utilisation
 
 | Guide de l’utilisateur | Description |
 |--- |---|
@@ -43,11 +43,11 @@ Ce guide explique comment construire votre instance AEM.
 
 ## Principales ressources AEM
 
-* [AEM didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
+* [aem didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guide de l&#39;utilisateur du répartiteur](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
 * [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Guide de l’utilisateur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
