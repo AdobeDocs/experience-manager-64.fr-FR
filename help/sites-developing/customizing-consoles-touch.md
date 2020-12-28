@@ -32,7 +32,7 @@ AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les cons
 
 * Recouvrements
 
-   Overlays are based on node definitions and allow you to overlay the standard functionality (in `/libs`) with your own customized functionality (in `/apps`). Lors de la création d’un recouvrement, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources Sling prend en compte l’héritage.
+   Les incrustations sont basées sur les définitions de noeud et vous permettent de superposer la fonctionnalité standard (dans `/libs`) avec votre propre fonctionnalité personnalisée (dans `/apps`). Lors de la création d’un recouvrement, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources Sling prend en compte l’héritage.
 
 Ils peuvent être utilisés de différentes manières pour étendre les consoles AEM. Une petite sélection est abordée ci-dessous (à un niveau élevé).
 
@@ -56,7 +56,7 @@ Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.c
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>1. Recréer l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
    >
    >
 1. Apportez les modifications désirées dans `/apps`
@@ -65,7 +65,7 @@ Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.c
 
 
 
-For example, the following locations within the `/libs` structure can be overlaid:
+Par exemple, les emplacements suivants de la structure `/libs` peuvent être superposés :
 
 * Consoles (toutes les consoles basées sur les pages de l’IU Granite), par exemple :
 
@@ -295,7 +295,7 @@ You can find the code of this page on GitHub
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Using properties on this node you can define the `groups` allowed to perform the specific action; for example, `administrators`
+   En utilisant les propriétés de ce noeud, vous pouvez définir l&#39;`groups` autorisé à exécuter l&#39;action spécifique ; par exemple, `administrators`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -368,7 +368,7 @@ You can restrict access to a navigation option using ACLs:
 
 >[!NOTE]
 >
->This feature is optimized for columns of text fields; for other data types it is possible to overlay `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Cette fonction est optimisée pour les colonnes de champs de texte ; pour les autres types de données, il est possible de superposer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` dans `/apps`.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -393,14 +393,14 @@ Pour personnaliser les colonnes en mode Liste :
 
 1. Si vous le souhaitez :
 
-   * If you want to plug additional data, you need to write a ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` with a
+   * Si vous souhaitez ajouter des données supplémentaires, vous devez écrire un ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` avec un
 
       `pageInfoProviderType`.
    Par exemple, voir la classe/le lot (tiré de GitHub) ci-dessous.
 
 1. Vous pouvez maintenant sélectionner la colonne dans le configurateur de colonnes du mode Liste.
 
-## Filtrage des ressources {#filtering-resources}
+## Filtrage des ressources  {#filtering-resources}
 
 Lorsqu’une console est utilisée, un cas d’utilisation fréquent est la nécessité pour l’utilisateur de choisir des ressources (par exemple, des pages, des composants, des ressources, etc.). Cela peut prendre la forme d’une liste dans laquelle l’auteur doit sélectionner un élément.
 
