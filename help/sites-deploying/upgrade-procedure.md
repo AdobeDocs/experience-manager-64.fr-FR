@@ -27,7 +27,7 @@ ht-degree: 97%
 
 Lors de la mise à niveau de vos environnements AEM, vous devez tenir compte des différences d’approche entre les environnements de création et de publication afin de limiter le temps d’interruption pour vos auteurs et vos utilisateurs finaux. Cette page décrit une procédure de haut niveau pour améliorer une topologie AEM en cours d’exécution sur une version d’AEM 6.x. Étant donné que la procédure diffèrent entre les niveaux d’auteur et de publication, ainsi que les déploiements basés sur Mongo et TarMK, chaque niveau et micronoyau a été répertorié dans une section distincte. Lors du déploiement, nous vous conseillons d’abord de mettre à niveau votre environnement de création, de déterminer les critères de réussite, puis de passer aux environnments de publication.
 
-## Niveau d’auteur TarMK {#tarmk-author-tier}
+## Niveau d’auteur TarMK  {#tarmk-author-tier}
 
 ### Démarrage de la topologie {#starting-topology}
 
@@ -44,7 +44,7 @@ La topologie utilisée pour cette section se compose d’un serveur s’exécuta
 1. Désactivez les agents de réplication sur l’auteur
 1. Exécutez les [tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md).
 
-### Exécution de la mise à niveau {#upgrade-execution-1}
+### Exécution de la mise à niveau  {#upgrade-execution-1}
 
 ![execute_upgrade](assets/execute_upgrade.jpg)
 
@@ -120,13 +120,13 @@ La topologie utilisée pour cette section se compose d’un groupe d’auteurs M
 1. Démarrez les instances d’auteur secondaires
 1. Nettoyez les instances d’auteur, le nœud Mongo et l’entrepôt de données mis à niveau.
 
-## Ferme de publication TarMK {#tarmk-publish-farm}
+## Ferme de publication TarMK  {#tarmk-publish-farm}
 
 ### Ferme de publication TarMK {#publish-farm}
 
 La topologie utilisée pour cette section se compose de deux instances de publication TarMK, devancés par des dispatchers, eux-mêmes devancés par un équilibreur de charge. La réplication se produit du serveur de l’auteur à la ferme de publication TarMK.
 
-![tarmk-pub-farmv5](assets/tarmk-pub-farmv5.png)
+![tarmk-pub-agricole v5](assets/tarmk-pub-farmv5.png)
 
 ### Exécution de la mise à niveau {#execution-upgrade}
 
