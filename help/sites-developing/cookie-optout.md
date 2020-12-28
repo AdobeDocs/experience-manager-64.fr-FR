@@ -20,14 +20,14 @@ ht-degree: 81%
 
 # Configuration de l’utilisation de cookies{#configuring-cookie-usage}
 
-AEM fournit un service qui vous permet de configurer et de contrôler l’utilisation des cookies dans vos pages Web :
+aem fournit un service qui vous permet de configurer et de contrôler l’utilisation des cookies dans vos pages Web :
 
 * Un service configurable côté serveur conserve la liste des cookies qui peuvent être utilisés.
 * Une API JavaScript permet à votre code JavaScript de vérifier qu’un cookie peut être utilisé.
 
 Utilisez cette fonctionnalité pour vous assurer que vos pages respectent l’autorisation des utilisateurs concernant l’utilisation des cookies.
 
-## Configuration des cookies autorisés {#configuring-allowed-cookies}
+## Configuration des cookies autorisés  {#configuring-allowed-cookies}
 
 Configuration du service d’exclusion d’Adobe Granite pour indiquer la façon dont les cookies sont utilisés sur vos pages web. Le tableau suivant décrit les propriétés que vous pouvez configurer.
 
@@ -37,7 +37,7 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
 |---|---|---|
 | Cookies d’exclusion | optout.cookies | Nom des cookies qui indiquent, lorsqu’ils sont présents sur le périphérique de l’utilisateur, que celui-ci n’a pas consenti à utiliser les cookies. |
 | En-têtes HTTP d’exclusion | optout.headers | Noms des en-têtes HTTP qui indiquent, lorsqu’ils sont présents, que l’utilisateur n’a pas consenti à utiliser des cookies. |
-| Cookies de Liste blanche | optout.whitelist.cookies | liste de cookies essentiels au fonctionnement du site Web et pouvant être utilisés sans le consentement de l’utilisateur. |
+| Cookies de Liste blanche | optout.whitelist.cookies | Liste de cookies essentiels au fonctionnement du site Web et pouvant être utilisés sans le consentement de l’utilisateur. |
 
 ## Validation de l’utilisation de cookies {#validating-cookie-usage}
 
@@ -65,11 +65,11 @@ function writeCookie(value){
 }
 ```
 
-## Objet JavaScript Granite.OptOutUtil {#the-granite-optoututil-javascript-object}
+## Objet JavaScript Granite.OptOutUtil  {#the-granite-optoututil-javascript-object}
 
 L’objet Granite.OptOutUtil vous permet de déterminer si l’utilisation des cookies est autorisée.
 
-### Fonction getCookieNames() {#getcookienames-function}
+### Fonction getCookieNames()  {#getcookienames-function}
 
 Renvoie les noms des cookies qui indiquent, lorsqu’ils sont présents, que l’utilisateur n’a pas consenti à ce que les cookies soient utilisés.
 
@@ -81,7 +81,7 @@ Aucune.
 
 Tableau de noms de cookies.
 
-#### Fonction getWhitelistCookieNames() {#getwhitelistcookienames-function}
+#### Fonction getWhitelistCookieNames()  {#getwhitelistcookienames-function}
 
 Renvoie les noms des cookies qui peuvent être utilisés indépendamment de l’autorisation de l’utilisateur.
 
@@ -93,7 +93,7 @@ Aucune.
 
 Tableau de noms de cookies.
 
-#### Fonction isOptedOut() {#isoptedout-function}
+#### Fonction isOptedOut()  {#isoptedout-function}
 
 Détermine si le navigateur de l’utilisateur contient des cookies qui indiquent que l’autorisation d’utilisation des cookies n’a pas été accordée.
 
@@ -115,4 +115,4 @@ Détermine si un cookie spécifique peut être utilisé dans le navigateur de l�
 
 **Renvoie**
 
-A boolean value of `true` if `cookieName` can be used, or a value of `false` if `cookieName` cannot be used.
+Valeur booléenne `true` si `cookieName` peut être utilisée, ou valeur `false` si `cookieName` ne peut pas être utilisée.
