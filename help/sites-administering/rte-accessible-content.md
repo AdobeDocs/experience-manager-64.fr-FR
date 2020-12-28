@@ -18,7 +18,7 @@ ht-degree: 75%
 ---
 
 
-# Configuration de l’éditeur de texte enrichi pour produire des sites accessibles {#configuring-rte-for-producing-accessible-sites}
+# Configuration de l’éditeur de texte enrichi pour produire des sites accessibles  {#configuring-rte-for-producing-accessible-sites}
 
 AEM prend en charge à la fois :
 
@@ -33,13 +33,13 @@ AEM prend en charge à la fois :
 
 Les auteurs de contenu peuvent utiliser les fonctions de l’éditeur de texte enrichi afin de fournir des informations d’accessibilité lors de l’ajout de contenu à une page. Cela peut impliquer l’ajout d’informations structurelles via des en-têtes et des éléments de paragraphe.
 
-Vous pouvez [configurer et personnaliser ces fonctions en configurant des modules externes RTE](#configuring-the-plugin-features) pour le composant. For example, the `paraformat` plugin allows you to add additional block level semantic elements, including extending the number of heading levels supported beyond the basic `H1`, `H2` and `H3` provided by default.
+Vous pouvez [configurer et personnaliser ces fonctions en configurant des modules externes RTE](#configuring-the-plugin-features) pour le composant. Par exemple, le module externe `paraformat` vous permet d’ajouter des éléments sémantiques de niveau bloc supplémentaires, y compris l’extension du nombre de niveaux d’en-tête pris en charge au-delà des niveaux de base `H1`, `H2` et `H3` fournis par défaut.
 
 Le RTE est disponible dans divers composants de l&#39;interface utilisateur tactile et classique. Cependant, le composant principal pour l’utilisation de l’éditeur de texte enrichi est le composant **Texte**.
 
-The **Text** component in AEM is available for both the touch-enabled and the classic UIs. Les illustrations suivantes présentent l’éditeur de texte enrichi avec une plage de modules externes activés, y compris `paraformat` :
+Le composant **Texte** de l&#39;AEM est disponible à la fois pour les interfaces utilisateur tactiles et classiques. Les illustrations suivantes présentent l’éditeur de texte enrichi avec une plage de modules externes activés, y compris `paraformat` :
 
-* The **Text** component in the touch-enabled UI:
+* Composant **Texte** dans l’interface utilisateur tactile :
 
    ![Composant de texte (RTE) en mode plein écran dans l’interface utilisateur tactile.](assets/chlimage_1-206.png)
 
@@ -67,7 +67,7 @@ Les instructions complètes sur la configuration de l’éditeur de texte enrich
 * [Activation d’un module externe et configuration de la propriété features](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Configuration d’autres fonctionnalités de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-By configuring a plugin within the appropriate `rtePlugins` sub-branch in CRXDE Lite (see the following image), you can activate either all or specific features for that plugin.
+En configurant un module externe dans la sous-branche `rtePlugins` appropriée en CRXDE Lite (voir l&#39;illustration suivante), vous pouvez activer toutes les fonctionnalités ou certaines fonctionnalités de ce module externe.
 
 ![CRXDE Lite présentant un exemple de rtePlugin.](assets/chlimage_1-208.png)
 
@@ -80,7 +80,7 @@ De nouveaux formats de bloc sémantique peuvent être rendus disponibles pour la
 1. [Spécifiez les formats qui doivent être disponibles dans le champ de sélection Paragraphes](/help/sites-administering/rich-text-editor.md).
 1. Les formats de paragraphe sont ensuite à la disposition de l’auteur du contenu des champs de sélection dans l’éditeur de texte enrichi. Ils sont accessibles :
 
-   * Using the paragraph ([pilcrow](https://en.wikipedia.org/wiki/Pilcrow)) icon in the touch-enabled UI:
+   * Utilisation de l’icône de paragraphe ([pilcrow](https://en.wikipedia.org/wiki/Pilcrow)) dans l’interface utilisateur tactile :
 
    ![Icône de paragraphe (pied-de-mouche).](do-not-localize/chlimage_1-7.png)
 
@@ -89,9 +89,9 @@ De nouveaux formats de bloc sémantique peuvent être rendus disponibles pour la
 
 Avec les éléments structurels disponibles dans l’éditeur de texte enrichi via les options de format de paragraphe, AEM constitue une bonne base pour le développement de contenu accessible. Les auteurs de contenu ne peuvent pas utiliser l’éditeur de texte enrichi pour formater la taille de la police ou les couleurs ou d’autres attributs associés, empêchant la création de formatage en ligne. À la place, ils doivent sélectionner les éléments structurels appropriés comme les en-têtes et utiliser des styles globaux choisis via l’option Styles. Ceci garantit une mise en forme nette, de meilleures options pour les utilisateurs qui naviguent avec leurs propres feuilles de style et un contenu correctement structuré.
 
-## Utilisation de l’option Modification de la source  {#use-of-the-source-edit-feature}
+## Utilisation de l’option Modification de la source   {#use-of-the-source-edit-feature}
 
-Dans certains cas, les auteurs de contenu constateront qu’il est nécessaire d’examiner et d’ajuster le code source HTML créé à l’aide de l’éditeur de texte enrichi. Par exemple, un élément de contenu créé dans l’éditeur de texte enrichi peut nécessiter une mise en forme supplémentaire pour être conforme à la norme WCAG 2.0. Ceci peut s’effectuer avec l’option [Modification de la source](/help/sites-administering/rich-text-editor.md#aboutplugins) de l’éditeur de texte enrichi. You can specify the [ `sourceedit` feature on the `misctools` plugin](/help/sites-administering/rich-text-editor.md#aboutplugins).
+Dans certains cas, les auteurs de contenu constateront qu’il est nécessaire d’examiner et d’ajuster le code source HTML créé à l’aide de l’éditeur de texte enrichi. Par exemple, un élément de contenu créé dans l’éditeur de texte enrichi peut nécessiter une mise en forme supplémentaire pour être conforme à la norme WCAG 2.0. Ceci peut s’effectuer avec l’option [Modification de la source](/help/sites-administering/rich-text-editor.md#aboutplugins) de l’éditeur de texte enrichi. Vous pouvez spécifier la fonction [ `sourceedit` dans le module `misctools` ](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
@@ -101,11 +101,11 @@ Dans certains cas, les auteurs de contenu constateront qu’il est nécessaire d
 
 Pour étendre davantage les fonctions d’accessibilité d’AEM, vous pouvez étendre les composants existants (par exemple, les composants **Text** et **Table**) en fonction de l’éditeur de texte enrichi avec des éléments et attributs supplémentaires.
 
-The following procedure illustrates how to extend the **Table** component with a **Caption** element that provides information about a data table to assistive technology users:
+La procédure suivante illustre comment étendre le composant **Table** avec un élément **Caption** qui fournit des informations sur un tableau de données aux utilisateurs de technologies d&#39;assistance :
 
 ### Exemple - Ajout de la légende à la boîte de dialogue Propriétés du tableau {#example-adding-the-caption-to-the-table-properties-dialog}
 
-Dans le constructeur de l’élément `TablePropertiesDialog`, ajoutez un champ de saisie de texte supplémentaire utilisé pour modifier la légende. Note that `itemId` must be set to `caption` (i.e. the DOM attribute’s name) to automatically handle its content.
+Dans le constructeur de l’élément `TablePropertiesDialog`, ajoutez un champ de saisie de texte supplémentaire utilisé pour modifier la légende. Notez que `itemId` doit être défini sur `caption` (c’est-à-dire le nom de l’attribut DOM) pour gérer automatiquement son contenu.
 
 Dans le composant **Table**, vous devez définir ou supprimer explicitement l’attribut vers/depuis l’élément DOM. La valeur est transmise par la boîte de dialogue dans l’objet `config`. Notez que les attributs DOM doivent être définis/supprimés à l’aide des méthodes `CQ.form.rte.Common` correspondantes (`com` est un raccourci de `CQ.form.rte.Common`) pour éviter les pièges courants des mises en œuvre de navigateur.
 
@@ -113,7 +113,7 @@ Dans le composant **Table**, vous devez définir ou supprimer explicitement l’
 >
 >Cette procédure convient uniquement à l’IU classique.
 
-### Instructions détaillées {#step-by-step-instructions}
+### Instructions détaillées  {#step-by-step-instructions}
 
 1. Démarrez CRXDE Lite. Par exemple : [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Copier :
@@ -162,7 +162,7 @@ Dans le composant **Table**, vous devez définir ou supprimer explicitement l’
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`.
 
-1. Add the following code at the end of the `transferConfigToTable` method:
+1. Ajoutez le code suivant à la fin de la méthode `transferConfigToTable` :
 
    ```
    /**
@@ -197,14 +197,14 @@ Dans le composant **Table**, vous devez définir ou supprimer explicitement l’
    }
    ```
 
-1. Save your changes using **Save All**
+1. Enregistrez vos modifications à l&#39;aide de **Enregistrer tout**
 
 >[!NOTE]
 >
->Le champ de texte brut n’est pas le seul type d’entrée autorisé pour la valeur de l’élément de légende. Any ExtJS widget, that provides the caption’s value through its `getValue()` method, could be used.
+>Le champ de texte brut n’est pas le seul type d’entrée autorisé pour la valeur de l’élément de légende. Tout widget ExtJS, qui fournit la valeur de la légende par le biais de sa méthode `getValue()`, peut être utilisé.
 >
 >Pour ajouter des fonctionnalités de modification pour d’autres éléments et attributs, assurez-vous à la fois :
 >
->* The `itemId` property for each corresponding field is set to the name of the appropriate DOM attribute (`TablePropertiesDialog`).
+>* La propriété `itemId` de chaque champ correspondant est définie sur le nom de l’attribut DOM approprié (`TablePropertiesDialog`).
 >* Que l’attribut est défini et/ou supprimé sur l’élément DOM de manière explicite (`Table`).
 
