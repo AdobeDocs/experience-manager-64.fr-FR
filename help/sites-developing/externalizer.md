@@ -20,20 +20,20 @@ ht-degree: 57%
 
 # Externalisation d’URL{#externalizing-urls}
 
-In AEM, the **Externalizer** is an OSGI service that allows you to programmatically transform a resource path (e.g. `/path/to/my/page`) into an external and absolute URL (for example, `https://www.mycompany.com/path/to/my/page`) by prefixing the path with a pre-configured DNS.
+En AEM, le **Externalizer** est un service OSGI qui vous permet de transformer par programmation un chemin de ressources (ex. `/path/to/my/page`) dans une URL externe et absolue (par exemple, `https://www.mycompany.com/path/to/my/page`) en préfixant le chemin d’accès avec un DNS préconfiguré.
 
 Une instance ne peut pas connaître son URL visible en externe si elle s’exécute derrière une couche web et il arrive qu’un lien doive être créé en dehors d’une étendue de demande. Dès lors, ce service fournit un emplacement centralisé pour configurer ces URL externes et les générer.
 
 Cette page explique comment configurer le service **Externalizer** et l’utiliser. Pour plus d’informations, reportez-vous aux [JavaDocs](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
 
-## Configuration du service Externalizer {#configuring-the-externalizer-service}
+## Configuration du service Externalizer  {#configuring-the-externalizer-service}
 
-The **Externalizer** service allows you to centrally define multiple domains that can be used to programmatically prefix resource paths. Chaque domaine est identifié par un nom unique utilisé pour faire référence au domaine par programmation.
+Le service **Externalizer** vous permet de définir de manière centralisée plusieurs domaines qui peuvent être utilisés pour préfixer par programmation les chemins de ressources. Chaque domaine est identifié par un nom unique utilisé pour faire référence au domaine par programmation.
 
 Pour définir un mappage de domaine pour le service **Externalizer**, procédez comme suit :
 
-1. Accédez au gestionnaire de configuration via **Outils**, puis à la console **** Web, ou saisissez `https://<host>:<port>/system/console/configMgr.`
-1. Click **Day CQ Link Externalizer** to open the configuration dialog box.
+1. Accédez au gestionnaire de configuration par **Outils**, puis **Console Web**, ou entrez `https://<host>:<port>/system/console/configMgr.`
+1. Cliquez sur **Externalisateur de liens Day CQ** pour ouvrir la boîte de dialogue de configuration.
 
    >[!NOTE]
    >
@@ -45,18 +45,18 @@ Pour définir un mappage de domaine pour le service **Externalizer**, procédez 
 
    `<unique-name> [scheme://]server[:port][/contextpath]`, où:
 
-   * **schéma** est généralement http ou https, mais peut aussi être ftp, etc.; utilisez https pour imposer des liens https si nécessaire ; ce protocole est utilisé si le code client ne remplace pas le schéma lors de la demande d’externalisation d’une URL.
-   * **server** est le nom d’hôte (peut être un nom de domaine ou une adresse ip).
-   * **port** (facultatif) est le numéro de port.
+   * **** schémas est généralement http ou https, mais peut aussi être ftp, etc.; utilisez https pour imposer des liens https si nécessaire ; ce protocole est utilisé si le code client ne remplace pas le schéma lors de la demande d’externalisation d’une URL.
+   * **Le** serveur est le nom d’hôte (peut être un nom de domaine ou une adresse ip).
+   * **port**  (facultatif) est le numéro de port.
    * **contextpath** (facultatif) n’est défini que si AEM est installé en tant qu’application web sous un chemin de contexte différent.
 
    Par exemple : `production https://my.production.instance`
 
    Les noms de mappage suivants sont prédéfinis et doivent toujours être définis en fonction de leur utilisation AEM :
 
-   * **local** - instance locale
-   * **auteur** - DNS du système de création
-   * **publish** - DNS du site Web destiné au public
+   * **local**  - instance locale
+   * **auteur**  - DNS du système de création
+   * **publication**  - DNS du site Web destiné au public
 
    >[!NOTE]
    >
@@ -66,7 +66,7 @@ Pour définir un mappage de domaine pour le service **Externalizer**, procédez 
 
 >[!NOTE]
 >
->Adobe recommends that you [add the configuration to the repository](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository).
+>L&#39;Adobe vous recommande [d&#39;ajouter la configuration au référentiel](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository).
 
 ## Utilisation du service Externalizer {#using-the-externalizer-service}
 
@@ -80,18 +80,18 @@ Cette section illustre quelques exemples d’utilisation du service **Externaliz
 
 `String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";`
 
-Assuming the domain mapping &quot; `publish https://www.website.com`&quot;, myExternalizedUrl ends up with the value &quot; `https://www.website.com/contextpath/my/page.html`&quot;.
+En supposant que le mappage de domaine &quot; `publish https://www.website.com`&quot;, myExternalizedUrl se termine par la valeur &quot; `https://www.website.com/contextpath/my/page.html`&quot;.
 
 **Pour externaliser un chemin d’accès avec le domaine « author » :**
 
 `String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";`
 
-Assuming the domain mapping &quot; `author https://author.website.com`&quot;, myExternalizedUrl ends up with the value &quot; `https://author.website.com/contextpath/my/page.html`&quot;.
+En supposant que le mappage de domaine &quot; `author https://author.website.com`&quot;, myExternalizedUrl se termine par la valeur &quot; `https://author.website.com/contextpath/my/page.html`&quot;.
 
 **Pour externaliser un chemin d’accès avec le domaine « local », procédez comme suit :**
 
 `String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";`
 
-Assuming the domain mapping &quot; `local https://publish-3.internal`&quot;, myExternalizedUrl ends up with the value &quot; `https://publish-3.internal/contextpath/my/page.html`&quot;.
+En supposant que le mappage de domaine &quot; `local https://publish-3.internal`&quot;, myExternalizedUrl se termine par la valeur &quot; `https://publish-3.internal/contextpath/my/page.html`&quot;.
 
-Vous trouverez d’autres exemples dans les [Javadocs](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+Vous trouverez d’autres exemples dans les [Javadocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
