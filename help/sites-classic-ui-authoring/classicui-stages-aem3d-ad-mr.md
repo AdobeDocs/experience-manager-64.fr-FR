@@ -41,18 +41,18 @@ ht-degree: 88%
 
 1. Configurez le rendu avec Mental Ray.
 
-   Configure the **[!UICONTROL Render Settings]** with the following suggestions:
+   Configurez les **[!UICONTROL paramètres de rendu]** avec les suggestions suivantes :
 
-   * **[!UICONTROL Onglet courant]**
+   * **** Courant
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all [!UICONTROL Renderable Cameras].
+      Décochez la case **[!UICONTROL canal Alpha (masque)]** pour toutes les [!UICONTROL caméras renouvelables].
 
    * **[!UICONTROL Onglet Qualité]**
 
-      * **[!UICONTROL Qualité]** globale `- 0.5` ou moins
-      * **[!UICONTROL Mode]** Diffuse Indirecte (GI) - `Final Gather`
-      * **[!UICONTROL Taille]** du filtre - `2.0`, `2.0`
-   * Définissez le rendu de la scène selon les tailles de l’image type que vous comptez utiliser. If necessary, refine the lights, or [!UICONTROL Render settings], or do both to achieve the results you want.
+      * **** `- 0.5` Qualité globale ou moins
+      * **[!UICONTROL Mode]**  Diffuse Indirecte (GI) -  `Final Gather`
+      * **[!UICONTROL Taille]**  du filtre -  `2.0`,  `2.0`
+   * Définissez le rendu de la scène selon les tailles de l’image type que vous comptez utiliser. Si nécessaire, affinez les lumières ou [!UICONTROL Render settings], ou effectuez les deux pour obtenir les résultats souhaités.
 
        Gardez à l’esprit que le rendu avec Mental Ray, à l’aide de l’éclairage basé par image, est très lent et nécessite une utilisation importante du processeur. Adobe recommande de configurer les paramètres de qualité au niveau le plus faible, qui sont toujours capables de produire la qualité de rendu souhaité.
 
