@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 6%
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Les actions de Gestion de contenu sont les blocs de création qui aident à créer et à gérer du contenu dans une application. Les actions suivantes sont exécutées sur le contenu de l’application.
+Les actions de gestion de contenu sont les blocs de création qui aident à créer et à gérer du contenu dans une application. Les actions suivantes sont exécutées sur le contenu de l’application.
 
 ## Présentation des bannières {#banners-overview}
 
@@ -43,20 +43,20 @@ Les bannières représentent généralement des liens promotionnels graphiques.
 
 
 
-## Création d’une bannière {#creating-a-banner}
+## Création d&#39;une bannière {#creating-a-banner}
 
-Le processus général de création d’un article se présente comme suit :
+La procédure générale de création d’un article est la suivante :
 
 1. Sélectionnez **Mobile** dans le rail latéral.
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la mosaïque **Gérer les bannières** .
+1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la mosaïque **Gérer les bannières**.
 1. Parcourez chaque étape de l’assistant pour continuer à créer votre nouvelle bannière.
 1. Une fois prêt, cliquez sur **Créer**.
-1. Votre nouvelle bannière s’affiche dans la mosaïque **Gérer les bannières** .
+1. Votre nouvelle bannière apparaît dans la mosaïque **Gérer les bannières**.
 
 ![chlimage_1-6](assets/chlimage_1-6.gif)
 
-## Importation d’une nouvelle bannière {#importing-a-new-banner}
+## Importation d&#39;une nouvelle bannière {#importing-a-new-banner}
 
 Le contenu Mobile On-Demand existant peut être téléchargé (importé) de Mobile On-Demand à AEM. Cela permet la modification et l’affichage du contenu local.
 
@@ -68,14 +68,14 @@ Flux de travail pour importer un nouvel article
 
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
 1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la mosaïque **Gérer les bannières** et sélectionnez Importer des bannières.
-1. Cliquez sur **Importer une bannière** dans la boîte de dialogue, puis sur Fermer.
-1. Vos articles Mobile On-Demand apparaissent désormais dans la mosaïque **Gérer les bannières** .
+1. Cliquez sur **Importer la bannière** dans la boîte de dialogue, puis sur Fermer.
+1. Vos articles Mobile On-Demand apparaissent désormais dans la mosaïque **Gérer les bannières**.
 
 >[!CAUTION]
 >
 >Vous devez d&#39;abord associer une connexion Mobile On-Demand.
 
-## Modification d’une bannière {#editing-a-banner}
+## Modification d&#39;une bannière {#editing-a-banner}
 
 Utilisez l’éditeur de glisser-déplacer d’AEM intégré pour ajouter ou modifier un article. Des composants tels que du texte et des images peuvent être ajoutés/supprimés. Vous pouvez insérer des images à partir de ressources DAM.
 
@@ -92,42 +92,42 @@ Flux de travail pour modifier un article :
 
 ### Affichage et modification des métadonnées dans une bannière {#viewing-and-editing-the-metadata-within-a-banner}
 
-Les bannières ont de nombreuses propriétés telles que des titres, des descriptions, des images. Cette action est utilisée pour vue et modifier ces propriétés. Ces modifications peuvent éventuellement être téléchargées sur Mobile On-Demand lors de l’enregistrement.
+Les bannières ont de nombreuses propriétés, telles que des titres, des descriptions, des images. Cette action est utilisée pour vue et modifier ces propriétés. Ces modifications peuvent éventuellement être téléchargées sur Mobile On-Demand lors de l’enregistrement.
 
 Processus général de vue/modification d’un article :
 
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez une bannière dans la mosaïque **Gérer les bannières** .
+1. Choisissez une bannière dans la mosaïque **Gérer les bannières**.
 
 1. Sélectionnez **Propriétés** dans la barre d’actions.
 1. Vue de toutes les métadonnées disponibles pour cet article.
 1. Modifiez les métadonnées si nécessaire et cliquez sur **Enregistrer** lorsque vous avez terminé.
 1. Si vous le souhaitez, téléchargez immédiatement les modifications sur Mobile On-Demand.
 
-## Téléchargement d’une bannière {#uploading-a-banner}
+## Chargement d&#39;une bannière {#uploading-a-banner}
 
 L&#39;action de téléchargement copie le contenu sélectionné et l&#39;ajoute à un projet Mobile On-Demand. Le contenu Mobile On-Demand existant est déjà remplacé par la nouvelle version.
 
 Processus général de téléchargement d’une bannière :
 
 1. Dans **Mobile**, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Dans la mosaïque **Gérer les bannières** , sélectionnez une bannière à télécharger sur Mobile On-Demand.
+1. Dans la mosaïque **Gérer les bannières**, sélectionnez une bannière à télécharger sur Mobile On-Demand.
 1. Si nécessaire, Ajoutez d&#39;autres bannières à partir de la vue de liste.
 1. Sélectionnez **Télécharger** dans la barre d’actions, puis cliquez sur Télécharger dans la boîte de dialogue.
 1. Vos bannières sont maintenant chargées sur Mobile On-Demand.
 
 ![chlimage_1-7](assets/chlimage_1-7.gif)
 
-## Suppression d’une bannière {#deleting-a-banner}
+## Suppression d&#39;une bannière {#deleting-a-banner}
 
 Cette opération supprime la bannière sélectionnée de Mobile On-Demand et éventuellement de l’instance d’AEM locale.
 
 Processus général de suppression d&#39;une bannière :
 
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez la bannière à supprimer dans la mosaïque **Gérer les bannières** .
+1. Sélectionnez la bannière à supprimer dans la mosaïque **Gérer les bannières**.
 1. Assurez-vous qu’elle est sélectionnée dans la liste (sélectionnez d’autres options à supprimer si nécessaire).
-1. Click **Delete** from the action bar.
+1. Cliquez sur **Supprimer** dans la barre d&#39;actions.
 1. Vérifiez si vous souhaitez supprimer des AEM ainsi que des services Mobile On-Demand.
 1. Cliquez sur **Supprimer**.
 1. Votre bannière est maintenant supprimée de la liste.
