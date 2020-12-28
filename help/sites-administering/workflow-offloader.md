@@ -22,79 +22,79 @@ ht-degree: 31%
 
 Le déchargeur de workflow de ressources permet à plusieurs instances Adobe Experience Manager (AEM) Assets de réduire la charge de traitement sur l’instance principale. La charge de traitement est répartie entre l’instance principale et les différentes instances de déchargement (auxiliaires) que vous y ajoutez. La répartition de la charge de traitement des ressources augmente l’efficacité et la vitesse de traitement des ressources par AEM Assets. De plus, elle contribue à allouer des ressources dédiées pour traiter des ressources d’un type MIME particulier. Par exemple, vous pouvez réserver un nœud spécifique de votre topologie au traitement des ressources InDesign.
 
-## Configuration de la topologie du déchargeur {#configure-offloader-topology}
+## Configuration de la topologie du déchargeur  {#configure-offloader-topology}
 
 Utilisez Configuration Manager pour ajouter l’URL de l’instance de responsable et les noms d’hôte des instances de déchargeur pour les demandes de connexion sur l’instance de responsable.
 
-1. Tap/click the AEM logo, and choose **Tools** > **Operations** > **Web Console** to open Configuration Manager.
-1. From the Web Console, select **Sling** >  **Topology Management**.
+1. Appuyez/cliquez sur le logo de l&#39;AEM et choisissez **Outils** > **Opérations** > **Console Web** pour ouvrir Configuration Manager.
+1. Dans la console Web, sélectionnez **Sling** > **Gestion de la topologie**.
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
-1. In the Topology Management page, tap/click the **Configure Discovery.Oak Service** link.
+1. Dans la page Gestion de la topologie, appuyez/cliquez sur le lien **Configurer le service Discovery.Oak**.
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
-1. In the Discovery Service Configuration page, specify the connector URL for the leader instance in the **Topology Connector URLs** field.
+1. Dans la page Configuration de Discovery Service, spécifiez l&#39;URL du connecteur pour l&#39;instance de filet de conduite dans le champ **URL du connecteur de topologie**.
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. In the **Topology Connector Whitelist** field, specify IP address or host names of offloader instances that are allowed to connect with the leader instance. Appuyez/cliquez sur **Enregistrer**.
+1. Dans le champ **Liste autorisée du connecteur de topologie**, spécifiez l’adresse IP ou les noms d’hôte des instances de déchargeur autorisées à se connecter à l’instance de responsable. Appuyez/cliquez sur **Enregistrer**.
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
 1. Pour afficher les instances de déchargement connectées à l’instance principale, sélectionnez **Tools** > **Deployment** > **Topology** et appuyez/cliquez sur la vue Cluster.
 
-## Désactivation du déchargement {#disable-offloading}
+## Désactivation du déchargement  {#disable-offloading}
 
-1. Tap/click the AEM logo, and choose **Tools** > **Deployment** > **Offloading**. The **Offloading Browser** page displays topics and the server instances that can consume the topics.
+1. Appuyez/cliquez sur le logo de l’AEM, puis choisissez **Outils** > **Déploiement** > **Déchargement**. La page **Déchargement du navigateur** affiche les rubriques et les instances de serveur qui peuvent utiliser les rubriques.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
-1. Disable the *com/adobe/granite/workflow/offloading* topic on the leader instances with which users interact to upload or change AEM assets.
+1. Désactivez la rubrique *com/adobe/granite/workflow/déchargement* sur les instances de filet de conduite avec lesquelles les utilisateurs interagissent pour télécharger ou modifier des ressources AEM.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
 ## Configuration des lanceurs de workflow sur l’instance principale {#configure-workflow-launchers-on-the-leader-instance}
 
-Configure workflow launchers to use the **DAM Update Asset Offloading** workflow on the leader instance instead of the **Dam Update Asset** workflow.
+Configurez les lanceurs de processus pour qu’ils utilisent le flux de travail **DAM Update Asset Offloading** sur l’instance de début plutôt que le flux de travail **Dam Update Asset**.
 
-1. Tap/click the AEM logo, and choose, **Tools** > **Workflow** > **Launchers** to open the **Workflow Launchers** console.
+1. Appuyez/cliquez sur le logo de l&#39;AEM, puis choisissez **Outils** > **Workflow** > **Lanceurs** pour ouvrir la console **Processus des lanceurs**.
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. Locate the two Launcher configurations with event type **Node Created** and **Node Modified** respectively, which run the **DAM Update Asset** workflow.
-1. For each configuration, select the checkbox before it and tap/click the **View Properties** icon from the toolbar to display the **Launcher Properties** dialog.
+1. Localisez les deux configurations de lanceur avec le type d&#39;événement **Node créé** et **Node modifié** respectivement, qui exécutent le flux de travaux **DAM Update Asset**.
+1. Pour chaque configuration, cochez la case qui la précède, puis cliquez sur l&#39;icône **Propriétés de la Vue** de la barre d&#39;outils pour afficher la boîte de dialogue **Propriétés du lanceur**.
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
-1. From the **Workflow** list, choose **DAM Update Asset Offloading** and tap/click **Save**.
+1. Dans la liste **Workflow**, sélectionnez **DAM Update Asset Offloading** et appuyez/cliquez sur **Enregistrer**.
 
    ![chlimage_1-52](assets/chlimage_1-52.png)
 
-1. Tap/click the AEM logo, and choose, **Tools** > **Workflow** > **Models** to open the **Workflow Models** page.
-1. Select the **DAM Update Asset Offloading** workflow, and tap/click **Edit** from the toolbar to display its details.
+1. Appuyez/cliquez sur le logo de l&#39;AEM, puis choisissez **Outils** > **Workflow** > **Modèles** pour ouvrir la page **Modèles de flux de travail**.
+1. Sélectionnez le flux de travail **Déchargement des ressources de mise à jour de gestion des actifs**, puis appuyez/cliquez sur **Modifier** dans la barre d’outils pour afficher ses détails.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
-1. Display the context menu for the **DAM Workflow Offloading** step, and choose **Edit**. Vérifiez la saisie dans le champ **Rubrique de tâche** de l’onglet **Arguments génériques** de la boîte de dialogue de configuration.
+1. Affichez le menu contextuel de l&#39;étape **Déchargement du flux de travaux DAM**, puis choisissez **Modifier**. Vérifiez la saisie dans le champ **Rubrique de tâche** de l’onglet **Arguments génériques** de la boîte de dialogue de configuration.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
 ## Désactivation des lanceurs de workflow sur les instances de déchargement {#disable-the-workflow-launchers-on-the-offloader-instances}
 
-Disable the workflow launchers that run the **DAM Update Asset** workflow on the leader instance.
+Désactivez les lanceurs de processus qui exécutent le workflow **DAM Update Asset** sur l&#39;instance de filet de conduite.
 
-1. Tap/click the AEM logo, and choose, **Tools** > **Workflow** > **Launchers** to open the **Workflow Launchers** console.
+1. Appuyez/cliquez sur le logo de l&#39;AEM, puis choisissez **Outils** > **Workflow** > **Lanceurs** pour ouvrir la console **Processus des lanceurs**.
 
    ![chlimage_1-55](assets/chlimage_1-55.png)
 
-1. Locate the two Launcher configurations with event type **Node Created** and **Node Modified** respectively, which run the **DAM Update Asset** workflow.
-1. For each configuration, select the checkbox before it and tap/click the **View Properties** icon from the toolbar to display the **Launcher Properties** dialog.
+1. Localisez les deux configurations de lanceur avec le type d&#39;événement **Node créé** et **Node modifié** respectivement, qui exécutent le flux de travaux **DAM Update Asset**.
+1. Pour chaque configuration, cochez la case qui la précède, puis cliquez sur l&#39;icône **Propriétés de la Vue** de la barre d&#39;outils pour afficher la boîte de dialogue **Propriétés du lanceur**.
 
    ![chlimage_1-56](assets/chlimage_1-56.png)
 
-1. In the **Activate **section, drag the slider to disable the workflow launcher and tap/click **Save** to disable it.
+1. Dans la section **Activer **, faites glisser le curseur pour désactiver le lanceur de flux de travail et appuyez/cliquez sur **Enregistrer** pour le désactiver.
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
 
