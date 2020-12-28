@@ -22,7 +22,7 @@ ht-degree: 94%
 
 AEM permet de réaliser une mise en page réactive pour vos pages à l’aide du composant **Conteneur de mises en page**.
 
-Vous obtenez ainsi un système de paragraphes qui permet de positionner les composants dans une grille réactive. Cette grille peut réorganiser la mise en page selon l’appareil ou la taille de la fenêtre et le format. Le composant est utilisé avec le mode [**Mise en page **](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), ce qui permet de créer et de modifier votre mise en page réactive en fonction de l’appareil.
+Vous obtenez ainsi un système de paragraphes qui permet de positionner les composants dans une grille réactive. Cette grille peut réorganiser la mise en page selon l’appareil ou la taille de la fenêtre et le format. Le composant est utilisé avec le mode [**Mise en page**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), ce qui permet de créer et de modifier votre mise en page réactive en fonction de l’appareil.
 
 Le conteneur de mises en page présente les caractéristiques suivantes :
 
@@ -41,15 +41,16 @@ L’utilisateur peut ensuite afficher un aperçu du contenu pour des appareils s
 
 AEM effectue une mise en page réactive de vos pages en combinant plusieurs mécanismes :
 
-* Composant [**Conteneur de mises en page **](#adding-a-layout-container-and-its-content-edit-mode)
+* Composant [**Conteneur de mises en page**](#adding-a-layout-container-and-its-content-edit-mode)
 
    Ce composant, qui est disponible dans l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser), fournit un système de paragraphes/grille qui permet d’ajouter et de positionner des composants dans une grille réactive. Il peut également être défini comme le système de paragraphes par défaut de votre page.
 
-* [**Mode Mise en page **](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
+* [**Mode Mise en page**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
    Une fois que le conteneur de mises en page est positionné sur la page, vous pouvez utiliser le mode **Mise en page** pour placer le contenu dans la grille réactive.
 
-* [**Émulateur **](#selecting-a-device-to-emulate)Permet de créer et de modifier des sites web réactifs qui réorganisent la mise en page en fonction de l’appareil ou de la taille de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
+* [**Émulateur**](#selecting-a-device-to-emulate)
+Permet de créer et de modifier des sites web réactifs qui réorganisent la mise en page en fonction de l’appareil ou de la taille de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
 
 À l’aide de ces mécanismes de grille réactive, vous pouvez effectuer les opérations suivantes :
 
@@ -67,7 +68,7 @@ En fonction de votre projet, le conteneur de mises en page peut être utilisé e
 
 >[!NOTE]
 >
->L’utilisation des mécanismes ci-dessus est activée par une configuration du modèle. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.
+>L’utilisation des mécanismes ci-dessus est activée par une configuration du modèle. Voir [Configuration de la mise en page réactive](/help/sites-administering/configuring-responsive-layout.md) pour plus d’informations.
 
 ## Définitions de mise en page, émulation d’appareil et points d’arrêt {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -153,7 +154,7 @@ Un **conteneur de mises en page** est un système de paragraphes qui présente l
 
 >[!NOTE]
 >
->S’il n’est pas déjà disponible, le **conteneur de mises en page** doit être explicitement [activé pour un système de paragraphes ou une page](/help/sites-administering/configuring-responsive-layout.md) (en utilisant le mode de [**conception **, par exemple](/help/sites-authoring/default-components-designmode.md)).
+>S’il n’est pas déjà disponible, le **conteneur de mises en page** doit être explicitement [activé pour un système de paragraphes ou une page](/help/sites-administering/configuring-responsive-layout.md) (en utilisant le mode de [**conception**, par exemple](/help/sites-authoring/default-components-designmode.md)).
 
 1. Le **conteneur de mise en page** est disponible en tant que composant standard dans l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser). De là, vous pouvez le faire glisser vers l’emplacement souhaité sur la page, après lequel vous verrez l’espace réservé **Faire glisser les composants ici**.
 1. Vous pouvez ensuite ajouter des composants au conteneur de mises en page, qui contiendront le contenu proprement dit :
@@ -263,8 +264,9 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
    >
    >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mises en page est imbriqué dans un conteneur de mises en page parent.
 
-   * **Afficher les composants** Sélectionnez les composants parents pour afficher la barre d&#39;outils d&#39;action avec la fonction 
-**Afficher l&#39;option de composants** masqués. Dans cet exemple, deux composants sont masqués.
+   * **Afficher les**
+composantsSélectionnez les composants parents pour afficher la barre d&#39;outils d&#39;action avec la fonction 
+**Afficher l&#39;option** Composants masqués. Dans cet exemple, deux composants sont masqués.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Si vous sélectionnez l’option **Afficher les composants masqués**, les composants actuellement masqués s’affichent en bleu à leur position initiale.
