@@ -1,34 +1,34 @@
 ---
 title: Guide de l’utilisateur des fonctionnalités d’AEM 6.4
 seo-title: Guide de l’utilisateur des fonctionnalités d’AEM 6.4
-description: Présentation des fonctionnalités essentielles d’AEM 6.4
-seo-description: Présentation des fonctionnalités essentielles d’AEM 6.4
+description: Aperçu des capacités essentielles de l'AEM 6.4
+seo-description: Aperçu des capacités essentielles de l'AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 15%
+ht-degree: 52%
 
 ---
 
 
-# Guides de l’utilisateur des fonctionnalités d’AEM 6.4 {#aem-64-capabilities-user-guides}
+# aem 6.4 Fonctionnalités Guides de l&#39;utilisateur {#aem-64-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[En savoir plus sur l’installation, le déploiement et l’architecture de l’Adobe Experience Manager 6.4](/help/sites-deploying/home.md), y compris sur le déploiement en cloud d’Adobes Managed Services.
+[En savoir plus sur l’installation, le déploiement et l’architecture de Adobe Experience Manager 6.4](/help/sites-deploying/home.md), y compris le déploiement en cloud d’Adobe Managed Services.
 
-[Découvrez comment gérer un projet](/help/managing/home.md)AEM.
+[Découvrez comment gérer un projet AEM](/help/managing/home.md).
 
 ## AEM Sites {#aem-sites}
 
-[Découvrez les concepts clés de création de contenu et de création dans AEM](/help/sites-authoring/home.md).
+[Découvrez les principaux concepts de création de contenu dans AEM](/help/sites-authoring/home.md).
 
 [Découvrez comment administrer AEM](/help/sites-administering/home.md).
 
-## AEM Assets {#aem-assets}
+## AEM Assets {#aem-assets}
 
 [Créez, gérez, diffusez et optimisez des ressources numériques.](/help/assets/home.md)
 
