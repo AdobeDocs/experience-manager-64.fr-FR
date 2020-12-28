@@ -30,15 +30,15 @@ Le processus AEM de développement d&#39;applications mobiles reconnaît que des
 
 Cette page contient des informations sur la façon d’exécuter les tâches du marketeur. Pour plus d&#39;informations sur les tâches de développement, consultez Création d&#39;applications PhoneGap.
 
-## La structure des applications mobiles {#the-structure-of-mobile-applications}
+## Structure des applications mobiles {#the-structure-of-mobile-applications}
 
 AEM Mobile fournit le plan directeur de l&#39;application PhoneGap pour la création d&#39;applications mobiles. Le plan définit la structure des applications que vous créez. Les applications se composent des éléments suivants :
 
 * Page racine.
 * Variations de langue de l’application.
-* page d&#39;accueil de la variation de langue.
+* Page d&#39;accueil de la variation de langue.
 
-### La racine d&#39;une application PhoneGap {#the-root-of-a-phonegap-app}
+### Racine d’une application PhoneGap {#the-root-of-a-phonegap-app}
 
 La page racine des applications mobiles que vous créez dans AEM s’affiche dans la console Applications.
 
@@ -69,18 +69,18 @@ La page Page d&#39;accueil, ou index.html, d&#39;une variante de langue d&#39;un
 
 Les applications mobiles sont basées sur un modèle qui définit une structure de page et des propriétés. Vous pouvez configurer les propriétés d’application suivantes :
 
-* **Titre :** Titre de l’application.
-* **Chemin de destination :** Emplacement dans le référentiel dans lequel l’application est stockée. Conservez la valeur par défaut pour créer un chemin d’accès en fonction du nom de l’application.
-* **Nom :** La valeur par défaut est la valeur de la propriété Title (Titre) dont les caractères d’espace sont supprimés. Le nom est utilisé dans CQ pour faire référence à l’application, par exemple pour le noeud de référentiel qui représente l’application.
-* **Description :** Description de l’application.
-* **URL du serveur :** URL qui fournit du contenu en direct (OTA) mis à jour vers l’application. La valeur par défaut est l’URL du serveur de publication de l’instance utilisée pour créer une application (provenant du service externalizer). Remarque : il doit s’agir d’une instance de serveur de publication et non d’un auteur, ce qui nécessite une authentification.
+* **Titre : titre** de l’application.
+* **Chemin d’accès de destination : emplacement** du référentiel dans lequel l’application est stockée. Conservez la valeur par défaut pour créer un chemin d’accès en fonction du nom de l’application.
+* **Nom :** la valeur par défaut est la valeur de la propriété Titre avec des caractères d’espace supprimés. Le nom est utilisé dans CQ pour faire référence à l’application, par exemple pour le noeud de référentiel qui représente l’application.
+* **Description : description** de l’application.
+* **URL du serveur :** URL qui fournit des mises à jour de contenu en direct (OTA) à l’application. La valeur par défaut est l’URL du serveur de publication de l’instance utilisée pour créer une application (provenant du service externalizer). Remarque : il doit s’agir d’une instance de serveur de publication et non d’un auteur, ce qui nécessite une authentification.
 
 Vous pouvez également fournir un fichier image à utiliser comme miniature de l’application, sélectionner la configuration de PhoneGap Build à utiliser et sélectionner la configuration d’analyse des applications mobiles à utiliser. Cette image est uniquement utilisée comme miniature pour représenter votre application mobile dans la console des applications mobiles en Experience Manager.
 
 Il existe d’autres onglets (et facultatifs) pour créer un service cloud et intégrer le module Adobe Mobile Services SDK dans votre application.
 
 * Créer : Cliquez ici pour gérer les configurations et configurer votre service de génération build.phonegap.com. Ensuite, à partir de la liste déroulante, vous pourrez sélectionner le nouveau service PhoneGap build cloud créé.
-* Analytics : Cliquez sur Gérer les configurations et configurez votre service cloud SDK [Mobile Services](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) Adobe. Ensuite, dans la liste déroulante, vous pourrez sélectionner le nouveau service mobile à intégrer à votre application mobile.
+* Analytics : Cliquez sur Gérer les configurations et configurez votre service de cloud [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html). Ensuite, dans la liste déroulante, vous pourrez sélectionner le nouveau service mobile à intégrer à votre application mobile.
 
 >[!NOTE]
 >
@@ -105,11 +105,11 @@ La procédure suivante utilise l’interface utilisateur tactile pour créer une
 1. (Facultatif) Pour fournir une icône d’application, cliquez sur le bouton Parcourir, sélectionnez le fichier image dans votre système de fichiers, puis cliquez sur Ouvrir.
 1. Cliquez sur Créer.
 
-### Modification des propriétés d’une application mobile {#changing-the-properties-of-a-mobile-application}
+### Modification des propriétés d&#39;une application mobile {#changing-the-properties-of-a-mobile-application}
 
 Après avoir créé une application mobile, vous pouvez modifier ses propriétés.
 
-#### Modification du titre, de la description et de l’icône {#change-the-title-description-and-icon}
+#### Modifier le titre, la description et l’icône {#change-the-title-description-and-icon}
 
 1. Dans le rail, cliquez ou appuyez sur Applications.
 1. Sélectionnez l’application à configurer, puis cliquez sur l’icône Propriétés de la page de Vue.
@@ -124,7 +124,7 @@ Après avoir créé une application mobile, vous pouvez modifier ses propriété
 
    ![](do-not-localize/chlimage_1-10.png)
 
-#### Configuration d’une variante de langue de l’application {#configure-a-language-variation-of-the-application}
+#### Configurer une variante de langue de l&#39;application {#configure-a-language-variation-of-the-application}
 
 1. Dans le rail, cliquez ou appuyez sur Applications.
 1. Cliquez sur pour explorer l’application mobile que vous souhaitez modifier dans la console d’administration des applications. Sélectionnez la version linguistique de l’application à configurer, puis cliquez sur l’icône Propriétés de l’application de la Vue.
@@ -158,7 +158,7 @@ Les applications mobiles comportent une commande Mises à jour qui télécharge 
 
 ![chlimage_1-149](assets/chlimage_1-149.png)
 
-Pour rendre le contenu mis à jour disponible pour les applications, vous devez mettre à jour le cache de synchronisation de contenu. Lors de la première mise à jour du cache, tout le contenu publié est ajouté. Les mises à jour suivantes ajoutent uniquement le contenu publié qui a changé depuis la mise à jour précédente.
+Pour rendre le contenu mis à jour disponible pour les applications, vous devez mettre à jour le cache Content Sync. Lors de la première mise à jour du cache, tout le contenu publié est ajouté. Les mises à jour suivantes ajoutent uniquement le contenu publié qui a changé depuis la mise à jour précédente.
 
 Content Sync assure également le suivi des mises à jour. Grâce à ces informations, Content Sync peut déterminer la mise à jour du cache à envoyer à une application mobile.
 
@@ -192,7 +192,7 @@ Procédure de création d’une application à partir d’un modèle d’applica
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Cliquez sur Suivant.
+1. Cliquez sur Next (Suivant).
 1. Indiquez un ID d’application et un titre, mais vous pouvez également inclure un nom et une description.
 
    1. De plus, vous pouvez fournir un fichier PNG (format d’icône PhoneGap pris en charge) en tant qu’icône en parcourant AEM ressources.
@@ -296,10 +296,10 @@ Notez que les images s’affichent dans le carrousel pour les pages associées �
 Configurez le comportement du carrousel :
 
 * Vitesse de lecture : Durée en millisecondes pendant laquelle chaque image est affichée avant d’afficher la prochaine image.
-* Heure de la Transition : Durée, en millisecondes, de l’animation pour les transitions d’images.
+* Heure de la transition : Durée, en millisecondes, de l’animation pour les transitions d’images.
 * Style des contrôles : Type de contrôles fournis pour le déplacement d’une image à l’autre.
 
-**Onglet Propriétés de la Liste**
+**Onglet Propriétés de la liste**
 
 Spécifiez comment la liste de page est générée :
 
@@ -334,15 +334,15 @@ Renseignez la liste à l’aide des résultats d’une recherche de mots-clés. 
 
 **Recherche avancée**
 
-Renseignez la liste à l’aide d’une requête [Querybuilder](/help/sites-developing/querybuilder-api.md) .
+Renseignez la liste à l’aide d’une requête [Querybuilder](/help/sites-developing/querybuilder-api.md).
 
 ### Image {#image}
 
-Ajoutez une image au contenu de votre application.
+Ajoutez une image dans le contenu de votre application.
 
 ### Texte {#text}
 
-Ajoutez du texte enrichi dans le contenu de votre application.
+Ajoutez du texte enrichi au contenu de votre application.
 
 ### Emplacements de magasin {#store-locations}
 
