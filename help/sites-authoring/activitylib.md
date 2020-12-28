@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: adbbccd09fd76418d020b9fd2b6b9c4f585b0924
 workflow-type: tm+mt
 source-wordcount: '2023'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -75,7 +75,7 @@ Quand vous créez une marque avec la console Activités, elle apparaît égaleme
 1. Saisissez le titre de la marque tel qu’il doit apparaître dans les consoles Activités et Offres. Si vous le souhaitez, saisissez ou sélectionnez une ou plusieurs balises à associer à la marque.
 1. Cliquez ou appuyez sur **Créer**. Votre marque apparaît dans la console Activités.
 
-## Ajout/modification d’une activité à l’aide de la console Activités  {#adding-editing-an-activity-using-the-activities-console}
+## Ajout/modification d’une activité à l’aide de la console Activités   {#adding-editing-an-activity-using-the-activities-console}
 
 Ajoutez une activité ou modifiez une activité existante pour concentrer vos efforts marketing sur certaines audiences. Lorsque vous créez/modifiez une activité, vous spécifiez les informations suivantes :
 
@@ -83,7 +83,7 @@ Ajoutez une activité ou modifiez une activité existante pour concentrer vos ef
 * **Moteur de ciblage :**[AEM](/help/sites-authoring/personalization.md#aem) ou [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) comme moteur du contenu ciblé.
 
 * **Sélectionnez une configuration Target :** (Adobe Target uniquement) Configuration du cloud que cette activité doit utiliser pour se connecter à Adobe Target. Cette option s’affiche uniquement lorsque Adobe Target est sélectionné pour le moteur de ciblage.
-* **Type d&#39;Activité :** Type d’activité - Test A/B ou ciblage d’expérience
+* **Type d’Activité :** Type d’activité - Test A/B ou Ciblage d’expérience
 * **Objectif :** (facultatif) description de l’activité.
 * **Expériences :** correspond aux noms d’audience et aux segments marketing que vous ciblez.
 * **Pourcentages de trafic :** si Test A/B est sélectionné, vous pouvez modifier le volume de trafic (en pourcentage) affecté à chaque expérience.
@@ -147,7 +147,7 @@ Vous devez publier les activités afin de les rendre disponibles. À l’inverse
 
 >[!NOTE]
 >
->Lorsque vous annulez la publication d’une activité,   l’état de l’activité ne change que si vous actualisez la page.
+>Lors de l’annulation de la publication d’une activité, l’état de l’activité ne change pas, sauf si vous actualisez la page.
 
 Pour publier des activités ou annuler leur publication :
 
@@ -158,14 +158,14 @@ Pour publier des activités ou annuler leur publication :
 
 1. Pour publier, appuyez ou cliquez sur **Publier**. Pour annuler la publication, appuyez ou cliquez sur **Annuler la publication**. Les activités sont publiées ou leur publication est annulée, et leur état change dans la console Activités (une actualisation peut être nécessaire).
 
-## Activités sur les instances de création et de publication  {#activities-on-author-and-publish-instances}
+## Activités sur les instances de création et de publication   {#activities-on-author-and-publish-instances}
 
 Lorsqu’une activité qui utilise le moteur ciblé Adobe Target est activée, une seconde activité est créée sur l’instance de publication :
 
 * L’activité sur l’instance de création suit l’activité sur l’instance de création et s’avère utile pour simuler l’expérience des visiteurs. Les analyses enregistrées pour cette activité ne reflètent que ce qui se produit sur l’instance de création.
 * L’activité sur l’instance de publication reflète l’activité sur le serveur de publication et y réagit. Il s’agit de l’activité qui s’exécute sur le site web public. Seule l’activité de publication est pertinente pour suivre et analyser l’utilisation du site public.
 
-## Affichage des performances et conversion des expériences gagnantes (test A/B)  {#viewing-performance-and-converting-winning-experiences-a-b-test}
+## Affichage des performances et conversion des expériences gagnantes (test A/B)   {#viewing-performance-and-converting-winning-experiences-a-b-test}
 
 Vous pouvez afficher les performances de n’importe quelle activité Adobe Target (XT ou A/B). Si vous utilisez les tests A/B, vous pouvez également convertir l’expérience gagnante, qui devient alors l’expérience par défaut.
 
@@ -173,7 +173,7 @@ Pour afficher les performances des activités et convertir les expériences gagn
 
 1. Dans **Personnalisation**, cliquez ou appuyez sur **Activités** pour accéder à la console **Activités**.
 1. Cliquez ou appuyez sur la marque dont vous souhaitez voir les activités.
-1. Select the activity and click or tap **View Properties **and click the **Reports** tab and select the activity that you want to view performance for/convert winning experiences for. Les données de performances sont affichées.
+1. Sélectionnez l’activité et cliquez ou appuyez sur **Propriétés de la Vue **et cliquez sur l’onglet **Rapports** et sélectionnez l’activité pour laquelle vous souhaitez vue les performances des expériences gagnantes/convertir. Les données de performances sont affichées.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -190,7 +190,7 @@ Pour afficher les performances des activités et convertir les expériences gagn
 
 1. Cliquez ou appuyez sur **Oui** pour confirmer que vous souhaitez convertir le gagnant, c’est-à-dire désactiver l’expérience actuelle et la remplacer par le contenu de l’expérience gagnante.
 
-## Synchronisation des activités avec Adobe Target  {#synchronizing-activities-with-adobe-target}
+## Synchronisation des activités avec Adobe Target   {#synchronizing-activities-with-adobe-target}
 
 Les activités qui utilisent le moteur de ciblage Adobe Target sont synchronisées avec les campagnes Adobe Target. Une activité est automatiquement synchronisée avec Adobe Target lorsque les conditions suivantes sont réunies :
 
@@ -211,7 +211,7 @@ Les activités _author sont synchronisées immédiatement lorsque l’activité 
 
 Les activités de publication sont synchronisées lorsque l’activité est publiée sur l’instance de publication AEM.
 
-## Résolution des problèmes de synchronisation d’activité  {#troubleshooting-activity-synchronization}
+## Résolution des problèmes de synchronisation d’activité   {#troubleshooting-activity-synchronization}
 
 Lorsque AEM synchronise une activité avec Adobe Target, AEM ajoute une propriété appelée `thirdPartyId`. La valeur de cette propriété est basée sur le chemin de l’activité dans le référentiel AEM. Dans Adobe Target, les campagnes ne peuvent avoir la même valeur pour la propriété `thirdPartyId`. Par conséquent, une activité ne se synchronise pas si une campagne existante (d’un autre type A/B ou XT) dans Adobe Target utilise la même valeur pour `thirdPartyId`.
 
@@ -229,7 +229,7 @@ Pour éviter des problèmes de synchronisation, donnez toujours des noms uniques
 
 >[!NOTE]
 >
->When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. Lorsque vous supprimez la campagne dans Adobe Target, `thirdPartyId` n’est pas supprimé. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Ainsi, les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
+>Lorsque vous créez une campagne en Adobe Target, elle affecte une propriété appelée `thirdPartyId t`à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, `thirdPartyId` n’est pas supprimé. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Ainsi, les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
 >
 >Si vous utilisez le même nom dans le même type de campagne, vous remplacerez la campagne existante.
 >
