@@ -32,7 +32,7 @@ Pour créer une page d’entrée efficace pour votre newsletter, vous devez proc
 >[!NOTE]
 >
 >L&#39;Adobe ne prévoit pas d&#39;améliorer davantage cette capacité (Gestion des pistes et des Listes).\
->La recommandation consiste à tirer parti de l&#39; [Adobe Campaign et de son intégration](/help/sites-administering/campaign.md)AEM.
+>Il est recommandé de tirer parti de [Adobe Campaign et de son intégration AEM](/help/sites-administering/campaign.md).
 
 ## Création d’une liste pour la newsletter {#creating-a-list-for-the-newsletter}
 
@@ -88,7 +88,7 @@ Ajout de teasers pour créer une page d’accueil efficace pour newsletter :
 
 1. Créez une campagne avec les deux teasers -- affectez un avec un tag commercial et un autre sans tag.
 
-## Pousser du contenu vers les abonnés {#pushing-content-to-subscribers}
+## Pousser du contenu vers les abonnés  {#pushing-content-to-subscribers}
 
 Poussez toute modification des pages via la fonctionnalité Newsletter dans MCM. Vous pouvez alors envoyer du contenu mis à jour aux abonnés.
 
