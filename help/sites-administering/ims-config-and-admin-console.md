@@ -26,7 +26,7 @@ ht-degree: 81%
 
 ## Présentation {#introduction}
 
-AEM 6.4.3.0 introduces Admin Console support for AEM instances and Adobe IMS(Identity Management System) based authentication for **AEM Managed Services** customers.
+aem 6.4.3.0 introduit la prise en charge des Admin Console pour les instances AEM et l’authentification basée sur l’Adobe IMS(Identity Management System) pour les **clients &lt;a0/>AEM Managed Services**.
 
 L’intégration d’AEM à l’Admin Console permettra aux clients AEM Managed Services de gérer tous les utilisateurs d’Experience Cloud dans une seule console. Les utilisateurs et les groupes peuvent être affectés à des profils de produits associés à des instances AEM, ce qui leur permet de se connecter à une instance spécifique.
 
@@ -56,7 +56,7 @@ L’intégration du client à l’Admin Console est un prérequis pour utiliser 
 
 Pour commencer, une organisation doit être configurée pour les clients dans Adobe IMS. Les clients Adobe Enterprise sont représentés en tant qu’organisations IMS dans [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html).
 
-AEM clients Managed Services doivent déjà disposer d’une organisation configurée et, dans le cadre de l’attribution de privilèges d’accès IMS, les instances de client seront mises à disposition dans le Admin Console pour la gestion des droits d’utilisateur et de l’accès.
+aem clients Managed Services doivent déjà disposer d’une organisation configurée et, dans le cadre de l’attribution de privilèges d’accès IMS, les instances de client seront mises à disposition dans le Admin Console pour la gestion des droits d’utilisateur et de l’accès.
 
 L’authentification des utilisateurs par IMS sera un travail commun à AMS et les clients, chacun devant mener à bien ses workflows.
 
@@ -76,7 +76,7 @@ Une fois qu’un client est défini en tant qu’organisation IMS et qu’AMS a 
 >
 >Pour plus d’informations sur Enterprise Administration et sur l’Admin Console, voir l’article présenté [sur cette page](https://helpx.adobe.com/fr/enterprise/managing/user-guide.html).
 
-### Intégration d’utilisateurs à l’Admin Console {#onboarding-users-to-the-admin-console}
+### Intégration d’utilisateurs à l’Admin Console  {#onboarding-users-to-the-admin-console}
 
 Il existe trois méthodes d’intégration des utilisateurs en fonction de la taille du client et de ses préférences :
 
@@ -114,7 +114,7 @@ La synchronisation des utilisateurs est distribuée via le référentiel Adobe G
 
 [https://github.com/adobe-apiplatform/user-sync.py/releases/latest](https://github.com/adobe-apiplatform/user-sync.py/releases/latest)
 
-Note that a pre-release version 2.4RC1 is available with dynamic group creation support and can be found here: [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
+Notez qu’une version préliminaire 2.4RC1 est disponible avec la prise en charge de la création de groupe dynamique et se trouve ici : [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
 Cette version a pour principales fonctionnalités la possibilité de mapper de manière dynamique les nouveaux groupes LDAP pour l’appartenance des utilisateurs à Admin Console, ainsi que la création dynamique de groupes d’utilisateurs.
 
@@ -132,7 +132,7 @@ Vous trouverez plus d’informations sur les nouvelles fonctionnalités du group
 >La documentation relative à la console Adobe I/O est disponible [ici](https://www.adobe.io/apis/cloudplatform/console.html).
 >
 >
->The User Management API that is used by the User Sync Tool is covered at this [location](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+>L&#39;API User Management utilisée par l&#39;outil de synchronisation des utilisateurs est traitée à cet [emplacement](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
 
 >[!NOTE]
 >
@@ -198,13 +198,13 @@ Les utilisateurs existants dans le référentiel AEM (provenant localement, via 
 
 Cet utilitaire sera exécuté par votre équipe AMS dans le cadre de la mise en service de l’IMS.
 
-### Gestion des autorisations et des listes de contrôle d’accès dans AEM {#managing-permissions-and-acls-in-aem}
+### Gestion des autorisations et des listes de contrôle d’accès dans AEM  {#managing-permissions-and-acls-in-aem}
 
-Le Contrôle d&#39;accès et les autorisations continueront d’être gérés en AEM, ce qui peut se faire en séparant les groupes d’utilisateurs des IMS (par exemple AEM-GRP-008 dans l’exemple ci-dessous) et des groupes locaux où les autorisations et le contrôle d&#39;accès sont définis. Les groupes d’utilisateurs synchronisés à partir de l’IMS peuvent être attribués aux groupes locaux et hériter des autorisations.
+Le contrôle d&#39;accès et les autorisations continueront d’être gérés en AEM, ce qui peut se faire en séparant les groupes d’utilisateurs des IMS (par exemple AEM-GRP-008 dans l’exemple ci-dessous) et des groupes locaux où les autorisations et le contrôle d&#39;accès sont définis. Les groupes d’utilisateurs synchronisés à partir de l’IMS peuvent être attribués aux groupes locaux et hériter des autorisations.
 
 Dans l’exemple ci-dessous, nous ajoutons des groupes synchronisés au groupe local *Dam_Users* comme exemple.
 
-Dans ce cas, un utilisateur a également été attribué à plusieurs groupes dans l’Admin Console. ( Please note that the users and groups can be synced from LDAP using the user sync tool or created locally, please see the section **Onboarding Users to the Admin Console** above).
+Dans ce cas, un utilisateur a également été attribué à plusieurs groupes dans l’Admin Console. ( Notez que les utilisateurs et les groupes peuvent être synchronisés à partir du protocole LDAP à l&#39;aide de l&#39;outil de synchronisation des utilisateurs ou créés localement, consultez la section **Intégration d&#39;utilisateurs au Admin Console** ci-dessus).
 
 &amp;ast;Notez que les groupes d’utilisateurs ne sont synchronisés que lorsque les utilisateurs se connectent à l’instance, pour les clients qui ont un grand nombre d’utilisateurs et de groupes, un utilitaire de synchronisation de groupes peut être exécuté par AMS pour prérécupérer les groupes pour la gestion des contrôles d&#39;accès et des autorisations décrite ci-dessus.
 
