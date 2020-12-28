@@ -26,7 +26,7 @@ Avant AEM 6.4, le code client était déployé dans des zones imprévisibles du 
 
 Il est possible d’éviter ces conflits en définissant clairement les hiérarchies applicables au code du produit AEM et au code client.
 
-À cette fin, à partir de l&#39;AEM 6.4 et à poursuivre dans les versions futures, le contenu est restructuré à partir de /etc vers d&#39;autres dossiers du référentiel, ainsi que des directives sur le contenu qui va où, en respectant les règles de haut niveau suivantes :
+À cette fin, à partir de l&#39;AEM 6.4 et à poursuivre dans les versions futures, le contenu est restructuré à partir de /etc vers d&#39;autres dossiers du référentiel, ainsi que des lignes directrices sur le contenu qui va où, en respectant les règles de haut niveau suivantes :
 
 * Le code de produit AEM sera toujours placé dans /libs, qui ne peut pas être écrasé par du code personnalisé.
 * Le code personnalisé doit être placé dans /apps, /content et /conf.
@@ -38,7 +38,7 @@ Lors de la mise à niveau vers AEM 6.4, un sous-ensemble important du contenu s
 * Avec la mise à niveau vers la version 6.4 : quelques modifications de restructuration /etc ne sont pas compatibles avec les versions antérieures. Par conséquent, les modifications doivent être planifiées et implémentées dans le cadre de la mise à niveau d’AEM 6.4.
 * Avant la mise à niveau vers la version 6.5 : la grande majorité des modifications de restructuration /etc peuvent être différées dans le futur après la mise à niveau. Comme mentionné précédemment, le code AEM 6.4 continuera à faire référence aux anciens emplacements jusqu’à ce que les modifications soient implémentées dans le cadre d’une version client. Bien qu’il n’y ait pas de calendrier forcé pour lequel les modifications doivent être apportées, il est recommandé de les effectuer avant la mise à niveau vers la version 6.5, car les fonctionnalités futures peuvent s’appuyer sur les nouveaux emplacements référencés. De plus, par convention, la documentation relative à une fonctionnalité donnée référencera les nouveaux emplacements. Cela pourrait donc prêter à confusion si les anciens emplacements sont toujours utilisés.
 
-### Restructuring Guidance {#restructuring-guidance}
+### Guide de restructuration {#restructuring-guidance}
 
 Lors de la planification d’une mise à niveau vers AEM 6.4, les pages suivantes par solution doivent être référencées afin d’évaluer le travail :
 
