@@ -28,5 +28,5 @@ Reportez-vous également à la section [Installation et configuration d’AEM 3
 
 >[!NOTE]
 >
->AEM 3D est uniquement disponible à partir de l’interface utilisateur tactile AEM et non de l’interface utilisateur classique. Pour plus d’informations, voir [Utilisation de ressources 3D](/help/assets/assets-3d.md) dans la documentation de création standard.
+>aem 3D est uniquement disponible à partir de l’interface utilisateur tactile AEM et non de l’interface utilisateur classique. Pour plus d’informations, voir [Utilisation de ressources 3D](/help/assets/assets-3d.md) dans la documentation de création standard.
 
