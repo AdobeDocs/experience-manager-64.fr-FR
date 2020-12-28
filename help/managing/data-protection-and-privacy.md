@@ -18,7 +18,7 @@ ht-degree: 23%
 ---
 
 
-# Réglementation Adobe Experience Manager Readiness pour la protection des données et la confidentialité des données {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager Readiness for Data Protection and Data Privacy Regulations {#aem-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -28,9 +28,9 @@ ht-degree: 23%
 
 >[!NOTE]
 >
->Pour plus d&#39;informations sur la réponse des Adobes aux questions de confidentialité et sur ce que cela signifie pour vous en tant que client Adobe, consultez le Centre [de confidentialité des](https://www.adobe.com/privacy.html)Adobes.
+>Pour plus d&#39;informations sur la réponse des Adobes aux questions de confidentialité et sur ce que cela signifie pour vous en tant que client d&#39;Adobe, voir [Centre de confidentialité des Adobes](https://www.adobe.com/privacy.html).
 
-adobe fournit de la documentation et des procédures (avec des API lorsqu&#39;elles sont disponibles), pour que l&#39;administrateur de la protection des données des clients ou l&#39;administrateur de l&#39;AEM puisse traiter les demandes de protection des données et de confidentialité des données et aider nos clients à se conformer à ces règles. Les procédures documentées permettront aux clients d&#39;exécuter les demandes de réglementation manuellement ou en appelant les API, le cas échéant, à partir d&#39;un portail ou d&#39;un service externe.
+Adobe fournit de la documentation et des procédures (avec des API lorsqu&#39;elles sont disponibles), pour que l&#39;administrateur de la protection des données des clients ou l&#39;administrateur de l&#39;AEM puisse traiter les demandes de protection des données et de confidentialité des données et aider nos clients à se conformer à ces règles. Les procédures documentées permettront aux clients d&#39;exécuter les demandes de réglementation manuellement ou en appelant les API, le cas échéant, à partir d&#39;un portail ou d&#39;un service externe.
 
 >[!CAUTION]
 >
@@ -38,7 +38,7 @@ adobe fournit de la documentation et des procédures (avec des API lorsqu&#39;el
 >
 >Les données provenant d&#39;un autre service à la demande d&#39;Adobe, ainsi que toute demande de confidentialité connexe, exigeront que des mesures soient prises à l&#39;égard de ce service.
 >
->Pour plus d&#39;informations, consultez le Centre [de confidentialité](https://www.adobe.com/privacy.html)des Adobes.
+>Pour plus d&#39;informations, voir [Adobe Privacy Center](https://www.adobe.com/privacy.html).
 
 ## Présentation {#introduction}
 
@@ -80,19 +80,19 @@ Pour Adobe Experience Manager :
 
    * L&#39;Adobe fournira de la documentation et des procédures à l&#39;administrateur de la confidentialité du client et/ou à l&#39;administrateur AEM, leur permettant d&#39;exécuter manuellement les demandes liées à la réglementation sur la confidentialité.
 
-adobe fournit des procédures pour traiter les demandes de confidentialité liées à Access, Delete and Opt-Out for Adobe Experience Manager. Dans certains cas, des API peuvent être appelées à partir d’un portail développé par le client ou de scripts pour faciliter l’automatisation.
+Adobe fournit des procédures pour traiter les demandes de confidentialité liées à Access, Delete and Opt-Out for Adobe Experience Manager. Dans certains cas, des API peuvent être appelées à partir d’un portail développé par le client ou de scripts pour faciliter l’automatisation.
 
 Le diagramme suivant illustre à quoi peut ressembler un processus de demande de confidentialité (illustré à l’aide de Adobe Experience Manager 6.5) :
 
 ![Protection des données et confidentialité](assets/data-protection-and-privacy-01.png)
 
-## Adobe Experience Manager et préparation réglementaire {#aem-and-regulatory-readiness}
+## Adobe Experience Manager et préparation à la réglementation {#aem-and-regulatory-readiness}
 
 Consultez les sections ci-dessous pour obtenir de la documentation sur la réglementation des domaines d&#39;AEM des produits.
 
 ## AEM Foundation {#aem-foundation}
 
-Voir [Traitement des demandes de protection des données et de confidentialité pour la Fondation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)AEM.
+Voir [Traitement des demandes de protection des données et de confidentialité pour la Fondation AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
 ## Souscription à la collecte de statistiques d’utilisation agrégées dans AEM {#aem-opting-into-aggregate-usage-statistics-collection}
 
@@ -100,22 +100,22 @@ Voir [Collecte de statistiques d’utilisation agrégées](/help/sites-deploying
 
 ## AEM Sites {#aem-sites}
 
-Voir [AEM Sites - Protection des données et état de préparation à la confidentialité.](/help/sites-administering/gdpr-compliance-sites.md)
+Voir [AEM Sites - Protection des données et préparation à la confidentialité.](/help/sites-administering/gdpr-compliance-sites.md)
 
 ## AEM Commerce {#aem-commerce}
 
-Reportez-vous à la page [AEM Commerce - Protection des données et état de préparation](/help/sites-administering/gdpr-compliance-commerce.md)à la confidentialité.
+Voir [AEM Commerce - Protection des données et respect de la vie privée](/help/sites-administering/gdpr-compliance-commerce.md).
 
 ## AEM Mobile {#aem-mobile}
 
-Voir [AEM Mobile - Protection des données et état de préparation](/help/mobile/aem-mobile-gdpr-compliance.md)à la confidentialité.
+Voir [AEM Mobile - Data Protection and Privacy Readiness](/help/mobile/aem-mobile-gdpr-compliance.md).
 
 ## Intégration d’AEM à Adobe Target et Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
 Ces intégrations de Adobe Experience Manager s’inscrivent dans le cadre de services de protection des données et de protection de la vie privée (par exemple, RMMD ou ACCP). Aucune donnée personnelle provenant d&#39;Adobe Target ou d&#39;Adobe Analytics n&#39;est stockée en AEM par rapport aux intégrations.
 Pour plus d’informations, voir :
 
-* [adobe target - Présentation de la confidentialité](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)
+* [Adobe Target - Présentation de la confidentialité](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)
 
 * [Processus de confidentialité des données Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html)
 
