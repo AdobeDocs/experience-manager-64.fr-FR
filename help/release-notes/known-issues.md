@@ -1,8 +1,8 @@
 ---
 title: Problèmes connus dans AEM 6.4
 seo-title: Problèmes connus dans AEM 6.4
-description: Problèmes connus dans l'Adobe Experience Manager 6.4
-seo-description: Problèmes connus dans l'Adobe Experience Manager 6.4.
+description: Problèmes connus dans Adobe Experience Manager 6.4
+seo-description: Problèmes connus à Adobe Experience Manager 6.4.
 uuid: 1733f15e-9c4f-4db3-98ee-25c2ea606f0d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -20,7 +20,7 @@ ht-degree: 46%
 
 # Problèmes connus {#known-issues}
 
-Cette page garde une liste des problèmes connus Adobe Experience Manager 6.4 publié en avril 2018. Pour plus d&#39;informations sur les problèmes connus, [contactez l&#39;assistance](https://helpx.adobe.com/fr/support/experience-manager.html).
+Cette page garde une liste des problèmes connus Adobe Experience Manager 6.4 sorti en avril 2018. Pour plus d&#39;informations sur les problèmes connus, [contactez l&#39;assistance](https://helpx.adobe.com/fr/support/experience-manager.html).
 
 ## Appareils hybrides {#hybrid-devices}
 
@@ -28,67 +28,67 @@ Les appareils hybrides ne sont pas pris en charge. Plusieurs problèmes peuvent 
 
 Si vous utilisez Google Chrome comme navigateur :
 
-* Type `chrome://flags/` in the address bar and press Enter.
+* Tapez `chrome://flags/` dans la barre d&#39;adresse et appuyez sur Entrée.
 * Cliquez sur Activer les événements tactiles > Désactivé.
 * Redémarrez le navigateur (l’ensemble des onglets et des fenêtres).
 
 Si vous utilisez Mozilla Firefox comme navigateur :
 
-* Type `about:config` in the address bar and press Enter.
-* Filter the settings to `dom.w3c`.
-* Assurez-vous que les paramètres sont `0` et `false`.
+* Tapez `about:config` dans la barre d&#39;adresse et appuyez sur Entrée.
+* Filtrez les paramètres sur `dom.w3c`.
+* Vérifiez que les paramètres sont `0` et `false`.
 * Redémarrez le navigateur.
 
-Si vous utilisez Microsoft Edge comme navigateur :
+Si vous utilisez Microsoft Edge en tant que navigateur :
 
-* Type `about:flags` in the address bar and press Return.
-* Scroll to Experimental features then **[!UICONTROL Touch]**.
-* Cliquez sur **[!UICONTROL Activer les événements]** tactiles.
-* Select **[!UICONTROL Always Off]**.
+* Tapez `about:flags` dans la barre d&#39;adresse et appuyez sur Retour.
+* Accédez aux fonctionnalités expérimentales puis **[!UICONTROL Touch]**.
+* Cliquez sur **[!UICONTROL Activer les événements tactiles]**.
+* Sélectionnez **[!UICONTROL Toujours désactivé]**.
 * Redémarrez le navigateur.
 
 ## Plate-forme {#platform}
 
 * **Tableau de bord des opérations :** la barre de progression n’apparaît pas lorsque l’extension .zip est manquante dans le fichier de sauvegarde. (GRANITE-10713)
-* **HTL :** Objet Java Use avec un espace de fin dans la déclaration de package fige le SightlyJavaCompilerService (GRANITE-20836)
-* **Apache Felix/Sling :** Fichier de configuration toujours présent dans le référentiel, même après configuration.delete() (GRANITE-20618)
-* **Paramètres du cloud :** La console est rompue après la modification du conteneur de configuration (GRANITE-20726)
-* **Sécurité :** Échec de l&#39;intégration IMS avec le chemin de contexte personnalisé (GRANITE-20639)
-* **Sécurité :** Amélioration du classement JAAS par défaut des modules de connexion SSO, externe et par défaut (GRANITE-20590)
-* **Outils - CRX DE Lite :** La vue de la crête des propriétés continue de progresser (GRANITE-12040)
-* **Outils - CRX DE Lite :** Impossible d&#39;enregistrer les modifications dans les types de valeurs &quot;longs&quot;, sauf si vous cliquez sur le doublon-clic sur le nom de la propriété (GRANITE-12351)
+* **HTL:** Java Use object with trailing whitespace in the package déclaration fige le SightlyJavaCompilerService (GRANITE-20836)
+* **Apache Felix/Sling:** Fichier Config toujours présent dans le référentiel même après configuration.delete() (GRANITE-20618)
+* **Paramètres du cloud :** la console est rompue après la modification du conteneur de configuration (GRANITE-20726)
+* **Sécurité : échec de l’intégration** IMS avec le chemin de contexte personnalisé (GRANITE-20639)
+* **Sécurité :** amélioration du classement JAAS par défaut des modules de connexion SSO, externe et par défaut (GRANITE-20590)
+* **Outils - CRX DE Lite:** Ridge of properties vue continue à progresser (GRANITE-12040)
+* **Outils - CRX DE Lite :** Impossible d&#39;enregistrer les modifications dans les types de valeur &quot;Long&quot; à moins que vous ne cliquiez en doublon sur Nom de propriété (GRANITE-12351)
 
-* **Outils - CRX DE Lite :** ctrl+F sur les fichiers texte ouverts reste bloqué sur la recherche RegExp (GRANITE-5996)
+* **Outil - CRX DE Lite:** ctrl+F sur les fichiers texte ouverts reste bloqué sur la recherche RegExp (GRANITE-5996)
 
-* **Outils - CRX DE Lite :** Propriété de noeud non affichée après le changement de nom du noeud (GRANITE-7160)
-* **IU :** &quot;Plus...&quot; n’affiche pas tous les éléments lorsqu’ils sont ouverts à un élément de substitution dans IE et Firefox (GRANITE-16326).
-* **IU :** L&#39;info-bulle est masquée lors de l&#39;utilisation de la mise en page à colonnes fixes avec 2 colonnes côte à côte (GRANITE-16869)
+* **Outils - CRX DE Lite:** Propriété de noeud non affichée après le changement de nom du noeud (GRANITE-7160)
+* **IU :** suppression de &quot;plus...&quot; n’affiche pas tous les éléments lorsqu’ils sont ouverts à un élément de substitution dans IE et Firefox (GRANITE-16326).
+* **IU : l’info-** bulle d’informations est masquée lors de l’utilisation de la mise en page à colonnes fixes avec 2 colonnes côte à côte (GRANITE-16869)
 * **Interface utilisateur** : erreur non gérée lorsque vous empruntez l’identité d’un utilisateur qui n’existe pas (GRANIT -23228). Solution[ : mise en œuvre d’un gestionnaire d’erreur](/help/sites-developing/customizing-errorhandler-pages.md) pour personnaliser le message d’erreur.
 
-* **Omnisearch :** Recherches avec une exception de cause de barre oblique inverse (GRANITE-11769)
-* **Omnisearch :** L’ouverture de &quot;Paramètres de Vue&quot; dans la vue de liste provoque la modification du filtre de recherche (GRANITE-16524)
-* **Omnisearch :** liste erronée des configurations de colonne affichée lors de la recherche de ressources à partir de sites (GRANITE-16527)
+* **Omnisearch:** Recherches avec une exception de cause de barre oblique inverse (GRANITE-11769)
+* **Omnisearch:** Ouvrir les &quot;paramètres de Vue&quot; dans la vue de liste provoque la modification du filtre de recherche (GRANITE-16524)
+* **Omnisearch :** mauvaise liste des configurations de colonne affichée lors de la recherche de ressources à partir de sites (GRANITE-16527)
 
 * **Omnisearch :** les prédicats de rail gauche s’entendent avec la demande de serveur Omnisearch (GRANITE-20524).
 * **Omnisearch :** Omnisearch ne prend pas en charge les chemins de contexte (GRANITE-16044)
 
 ## Ressources {#assets}
 
-* **Rechercher**: La recherche ne renvoie aucun résultat si la chaîne de recherche début avec un espace blanc [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
+* **Rechercher** : La recherche ne renvoie aucun résultat si la chaîne de recherche début avec un espace blanc  [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
 
-* **Rechercher**: Dans l’interface utilisateur classique et les balises ne sont pas visibles dans la recherche (CQ-4235239)
+* **Rechercher** : Dans l’interface utilisateur classique et les balises ne sont pas visibles dans la recherche (CQ-4235239)
 
-* **IU**: L’interface utilisateur des ressources ne répond plus après Copier-coller et Sélectionner tout (CQ-4236142).
+* **IU** : L’interface utilisateur des ressources ne répond plus après Copier-coller et Sélectionner tout (CQ-4236142).
 
-* **IU**: Impossible de déplacer les ressources après un chargement différé (CQ-4236134)
+* **IU** : Impossible de déplacer les ressources après un chargement différé (CQ-4236134)
 
-* **Rapports**: Erreur lors de la création du rapport Modification des ressources (CQ-4239744)
+* **Rapports** : Erreur lors de la création du rapport Modification des ressources (CQ-4239744)
 
-* **Rapports**: La génération régulière et planifiée de rapports sur les ressources échoue de manière incohérente (certains rapports restent en file d’attente) (CQ-4239089)
+* **Rapports** : La génération régulière et planifiée de rapports sur les ressources échoue de manière incohérente (certains rapports restent en file d’attente) (CQ-4239089)
 
-* **Métadonnées**: Lors de l’ajout d’un champ de texte à plusieurs valeurs au schéma de ressources, la règle de cascade de champ obligatoire ne fonctionne pas (CQ-4239333).
+* **Métadonnées** : Lors de l’ajout d’un champ de texte à plusieurs valeurs au schéma de ressources, la règle de cascade de champ obligatoire ne fonctionne pas (CQ-4239333).
 
-* **BrandPortal**: La publication sur BrandPortal ne fonctionne pas pour les collections (CQ-4238731)
+* **BrandPortal** : La publication sur BrandPortal ne fonctionne pas pour les collections (CQ-4238731)
 
 * **Téléchargement** : lors du téléchargement de ressources dont le nom de fichier contient des caractères spéciaux, le message d’erreur de validation relatif aux caractères non autorisés ne s’affiche pas pour chacune des ressources. Bien que ce message s’affiche uniquement pour la première ressource, l’interface indique clairement à l’utilisateur que le nom de fichier de la ressource fournie n’est pas autorisé. (CQ-4256876)
 
@@ -96,19 +96,19 @@ Si vous utilisez Microsoft Edge comme navigateur :
 
 * **Modération :** impossible de supprimer une publication parente en une seule opération de suppression à partir de l’interface utilisateur de modération en masse (CQ-4236797).
 
-* **Console** - Le lien Nom d’utilisateur ou Mot de passe oublié est redirigé vers la page de connexion au lieu du formulaire de récupération du mot de passe correspondant (CQ-4237682).
+* **Console**  - Le lien Nom d’utilisateur ou Mot de passe oublié est redirigé vers la page de connexion au lieu du formulaire de récupération du mot de passe correspondant (CQ-4237682).
 
 ## Formulaires {#forms}
 
 ### Installation et déploiement
 
 * (AEM Forms JEE uniquement) En cas d’amorçage d’un serveur d’applications JBoss en cours d’exécution, le gestionnaire de configuration renvoie un appel EJB et des erreurs d’échec de l’amorçage. Vous pouvez toutefois les ignorer. (Réf. CQ-4229793)
-* Lorsque le AEM Forms est démarré, l’ `SAX Security Manager could not be setup` avertissement s’affiche. (CQ-4297403)
+* Lorsque AEM Forms est démarré, l&#39;avertissement `SAX Security Manager could not be setup` s&#39;affiche. (CQ-4297403)
 
 ### Communications interactives
 
 * L’interface utilisateur de l’agent prend un certain temps à charger les communications interactives qui incluent des éléments d’images ou de graphiques. (CQ-4236630)
-* The data display format in print preview is dd-mm-yyyy while in the web preview is `dd-mmm-yy` (CQ-4237045)
+* Le format d’affichage des données dans la prévisualisation d’impression est jj-mm-aaaa alors que dans la prévisualisation Web est `dd-mmm-yy` (CQ-4237045)
 * Le canal web de communication interactive (Interactive Communication Web) prend uniquement en charge les listes ordonnées et désordonnées. Dans des fragments de document de liste, la mise en retrait et le listage composites ne sont pas pris en charge pour le canal web de la communication interactive. (CQ-4233672)
 * Les problèmes suivants sont observés lors de la synchronisation du canal web avec le canal d’impression :
 
@@ -136,7 +136,7 @@ Si vous utilisez Microsoft Edge comme navigateur :
 
 ### Intégration d’Adobe Sign
 
-* Le planificateur d’Adobe Sign cesse de fonctionner par moments, ce qui empêche les formulaires en attente de signature de passer à la soumission. To resolve the issue, restart the **Apache Sling Scheduler Support** bundle from AEM web console at https://[*server*]:[*port*]/system/console/bundles.
+* Le planificateur d’Adobe Sign cesse de fonctionner par moments, ce qui empêche les formulaires en attente de signature de passer à la soumission. Pour résoudre ce problème, redémarrez le **module de prise en charge du Planificateur Apache Sling** à partir de AEM console Web à l’adresse https://[*server*]:[*port*]/system/console/bundles.
 
 ### Création de formulaires adaptatifs
 
