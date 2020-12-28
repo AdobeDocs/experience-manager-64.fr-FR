@@ -28,7 +28,7 @@ En arrière-plan, le serveur AEM authentifie votre profil avec la passerelle, pu
 
 >[!NOTE]
 >
->La fonctionnalité de partage de dossiers Adobe Creative Cloud AEM est obsolète. Learn more and find a better method in [AEM and Creative Cloud integration best practices](../assets/aem-cc-integration-best-practices.md). La configuration de la réplication AEM vers Marketing Cloud et l’échange des ressources entre AEM Assets et Marketing Cloud ne sont pas obsolètes.
+>La fonctionnalité de partage de dossiers Adobe Creative Cloud AEM est obsolète. En savoir plus et trouver une meilleure méthode dans [les meilleures pratiques d&#39;intégration AEM et Creative Cloud](../assets/aem-cc-integration-best-practices.md). La configuration de la réplication AEM vers Marketing Cloud et l’échange des ressources entre AEM Assets et Marketing Cloud ne sont pas obsolètes.
 
 ![Flux des données lorsque AEM Assets et Creative Cloud sont intégrés](assets/chlimage_1-287.png)
 
@@ -50,7 +50,7 @@ Flux des données lorsque AEM Assets et Creative Cloud sont intégrés
    >
    >Vous devez disposer de droits d’administrateur pour créer un ID d’application.
 
-1. From the left pane, navigate to **[!UICONTROL Developer Tools]** > **[!UICONTROL Applications]** to view a list of applications.
+1. Dans le volet de gauche, accédez à **[!UICONTROL Outils de développement]** > **[!UICONTROL Applications]** pour vue d&#39;une liste d&#39;applications.
 1. Cliquez sur **[!UICONTROL Ajouter]** ![aem_assets_addcircle_icon](assets/aem_assets_addcircle_icon.png) pour créer une application.
 1. Dans la liste **[!UICONTROL Informations d’identification du client]**, sélectionnez **[!UICONTROL Compte de service (déclaration JWT)]**, qui est un service de communication serveur à serveur pour l’authentification de serveur.
 
@@ -58,7 +58,7 @@ Flux des données lorsque AEM Assets et Creative Cloud sont intégrés
 
 1. Spécifiez le nom de l’application et une description facultative.
 1. Dans la liste **[!UICONTROL Organisation]**, sélectionnez l’organisation pour laquelle vous souhaitez synchroniser les ressources.
-1. From the **[!UICONTROL Scope]** list, select **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]**, and **[!UICONTROL cc-share]**.
+1. Dans la liste **[!UICONTROL Scope]**, sélectionnez **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]** et **[!UICONTROL cc-share]**.
 1. Cliquez sur **[!UICONTROL Créer]**. Un message indique que l’application a été créée.
 
    ![Notification de réussite de création de l’application pour intégrer AEM Assets avec Adobe CC](assets/chlimage_1-289.png)
@@ -73,7 +73,7 @@ Flux des données lorsque AEM Assets et Creative Cloud sont intégrés
 
 1. Cliquez sur le logo AEM sur l’interface utilisateur de votre instance AEM Assets locale et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud hérités]**.
 
-1. Locate the **[!UICONTROL Adobe Marketing Cloud]** service. If no configurations exist, click **[!UICONTROL Configure Now]**. If configurations exist, click **[!UICONTROL Show Configurations]** and click **[!UICONTROL [+]]** to add a new configuration.
+1. Recherchez le service **[!UICONTROL Adobe Marketing Cloud]**. S’il n’existe aucune configuration, cliquez sur **[!UICONTROL Configurer maintenant]**. Si des configurations existent, cliquez sur **[!UICONTROL Afficher les configurations]** et cliquez sur **[!UICONTROL [+]]** pour ajouter une nouvelle configuration.
 
    >[!NOTE]
    >
@@ -87,11 +87,11 @@ Flux des données lorsque AEM Assets et Creative Cloud sont intégrés
 
    >[!CAUTION]
    >
-   >Due to rebranding, if you entered the Tenant URL as **https://&lt;tenant_id>.marketing.adobe.com** you need to change it to **https://&lt;tenant_id>.experiencecloud.adobe.com.** Pour ce faire, procédez comme suit :
+   >En raison d’un changement de marque, si vous avez saisi l’URL du client sous la forme **https://&lt;locataire_id>.marketing.adobe.com**, vous devez la remplacer par **https://&lt;locataire_id>.experience.adobe.com.** Pour ce faire, procédez comme suit :
    1. Accédez à **Outils > Cloud Services > Ancienne version de Cloud Services**.
    1. Sous Adobe Marketing Cloud, cliquez sur **Afficher les configurations**.
    1. Sélectionnez la configuration créée lors de la configuration de la synchronisation AEM-MAC-CC.
-   1. Edit the cloudservice configuration and replace **marketing.adobe.com** in Tenant URL field to **experiencecloud.adobe.com**.
+   1. Modifiez la configuration du service de cloud et remplacez **marketing.adobe.com** dans le champ URL du client par **experience.adobe.com**.
    1. Enregistrez la configuration.
    1. Testez les agents de réplication mac-sync.
 
@@ -100,16 +100,16 @@ Flux des données lorsque AEM Assets et Creative Cloud sont intégrés
 
    ![Indication des valeurs d’ID d’application requises pour intégrer AEM Assets et Creative Cloud](assets/cloudservices_tenant_info.png)
 
-1. Under **[!UICONTROL Synchronization]** select **[!UICONTROL Enabled]** to enable synchronization and click **[!UICONTROL OK]**.
+1. Sous **[!UICONTROL Synchronisation]** sélectionnez **[!UICONTROL Activé]** pour activer la synchronisation et cliquez sur **[!UICONTROL OK]**.
 
    >[!NOTE]
    Si vous sélectionnez **Désactivé**, la synchronisation opère dans une seule direction.
 
-1. Sur la page de configuration, cliquez sur **[!UICONTROL Afficher la clé publique]** afin d’afficher la clé publique générée pour votre instance. Alternatively, click **[!UICONTROL Download Public Key for OAuth Gateway]** to download the file containing the public key. Ouvrez ensuite le fichier pour afficher la clé publique.
+1. Sur la page de configuration, cliquez sur **[!UICONTROL Afficher la clé publique]** afin d’afficher la clé publique générée pour votre instance. Vous pouvez également cliquer sur **[!UICONTROL Télécharger la clé publique pour la passerelle OAuth]** pour télécharger le fichier contenant la clé publique. Ouvrez ensuite le fichier pour afficher la clé publique.
 
-## Activation de la synchronisation {#enable-synchronization}
+## Activation de la synchronisation  {#enable-synchronization}
 
-1. Display the public key using one of the following methods mentioned in the last step of the procedure [Add a new configuration to Marketing Cloud](/help/sites-administering/configure-assets-cc-integration.md#add-a-new-configuration-to-marketing-cloud). Cliquez sur **[!UICONTROL Afficher la clé publique]**.
+1. Affichez la clé publique à l&#39;aide de l&#39;une des méthodes suivantes mentionnées à la dernière étape de la procédure [Ajoutez une nouvelle configuration à Marketing Cloud](/help/sites-administering/configure-assets-cc-integration.md#add-a-new-configuration-to-marketing-cloud). Cliquez sur **[!UICONTROL Afficher la clé publique]**.
 
    ![chlimage_1-292](assets/chlimage_1-292.png)
 
@@ -121,8 +121,8 @@ Flux des données lorsque AEM Assets et Creative Cloud sont intégrés
 
 ## Test de la synchronisation {#test-the-synchronization}
 
-1. Click the AEM logo on the user interface of your local AEM Assets instance and navigate to **[!UICONTROL Tools]**> **[!UICONTROL Deployment]**> **[!UICONTROL Replication]**to locate the replication profiles created for synchronization.
-1. On the **[!UICONTROL Replication]** page, click **[!UICONTROL Agents on author]**.
+1. Cliquez sur le logo de l&#39;AEM dans l&#39;interface utilisateur de votre instance AEM Assets locale et accédez à **[!UICONTROL Outils&lt;a1/&quot;**[!UICONTROL  Déploiement ]****[!UICONTROL Réplication]**pour localiser les profils de réplication créés pour la synchronisation.]**
+1. Sur la page **[!UICONTROL Réplication]**, cliquez sur **[!UICONTROL Agents sur author]**.
 1. Dans la liste des profils, cliquez sur le profil de réplication par défaut de votre organisation pour l’ouvrir.
 1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Tester la connexion]**.
 
@@ -133,7 +133,7 @@ Flux des données lorsque AEM Assets et Creative Cloud sont intégrés
 ## Ajout d’utilisateurs à Marketing Cloud {#add-users-to-marketing-cloud}
 
 1. Connectez-vous à Marketing Cloud avec les informations d’identification de l’administrateur.
-1. From the rails, go to **[!UICONTROL Administration]**and then click/tap **[!UICONTROL Launch Enterprise Dashboard]**.
+1. A partir des rails, accédez à **[!UICONTROL Administration]**puis cliquez/appuyez sur **[!UICONTROL Démarrer Enterprise Tableau de bord]**.
 1. Sur le rail, cliquez sur **[!UICONTROL Utilisateurs]** pour ouvrir la page **[!UICONTROL Gestion des utilisateurs]**.
 1. Dans la barre d’outils, cliquez/appuyez sur **Ajouter** ![aem_assets_add_icon](assets/aem_assets_add_icon.png).
 1. Ajoutez un ou plusieurs utilisateurs auxquels vous souhaitez offrir la possibilité de partager des ressources avec Creative Cloud.
@@ -141,11 +141,11 @@ Flux des données lorsque AEM Assets et Creative Cloud sont intégrés
    >[!NOTE]
    Seuls les utilisateurs que vous ajoutez à Marketing Cloud peuvent partager des ressources depuis AEM Assets vers Creative Cloud.
 
-## Échange de ressources entre AEM Assets et Marketing Cloud {#exchange-assets-between-aem-assets-and-marketing-cloud}
+## Échange de ressources entre AEM Assets et Marketing Cloud  {#exchange-assets-between-aem-assets-and-marketing-cloud}
 
 1. Connectez-vous à AEM Assets.
 1. Dans la console Assets, créez un dossier et téléchargez des ressources vers ce dossier. Par exemple, créez un dossier **mc-demo** et téléchargez une ressource vers ce dossier.
-1. Select the folder and click **Share** ![assets_share](assets/assets_share.png).
+1. Sélectionnez le dossier et cliquez sur **Partager** ![assets_share](assets/assets_share.png).
 1. Dans le menu, sélectionnez **[!UICONTROL Adobe Marketing Cloud]**, puis cliquez sur **[!UICONTROL Partagé]**. Un message indique que le dossier est partagé avec Marketing Cloud.
 
    ![chlimage_1-295](assets/chlimage_1-295.png)
@@ -156,18 +156,18 @@ Flux des données lorsque AEM Assets et Creative Cloud sont intégrés
 1. Actualisez l’interface utilisateur AEM Assets. Le dossier que vous avez créé dans la console Ressources de votre instance AEM Assets locale est copié dans l’interface utilisateur du Marketing Cloud. La ressource que vous téléchargez dans le dossier en AEM Assets s’affiche dans la copie du dossier dans le Marketing Cloud après son traitement par le serveur AEM.
 1. Vous pouvez également télécharger une ressource dans la copie répliquée du dossier dans Marketing Cloud. Une fois qu’elle a été traitée, la ressource s’affiche dans le dossier partagé dans AEM Assets.
 
-## Échange de ressources entre AEM Assets et Creative Cloud {#exchange-assets-between-aem-assets-and-creative-cloud}
+## Échange de ressources entre AEM Assets et Creative Cloud  {#exchange-assets-between-aem-assets-and-creative-cloud}
 
 AEM Assets permet de partager des dossiers comportant des ressources avec les utilisateurs d’Adobe Creative Cloud.
 
 1. Dans la console Assets, sélectionnez le fichier à partager avec Creative Cloud.
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager]** les ![ressources_partager](assets/assets_share.png).
-1. From the list, select the **[!UICONTROL Adobe Creative Cloud]** option.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager]** ![assets_share](assets/assets_share.png).
+1. Dans la liste, sélectionnez l’option **[!UICONTROL Adobe Creative Cloud]**.
 
    >[!NOTE]
    Les options sont disponibles pour les utilisateurs possédant des autorisations de lecture sur la racine. Les utilisateurs doivent bénéficier de l’autorisation requise pour accéder aux informations de l’agent de réplication de Marketing Cloud.
 
-1. In the **[!UICONTROL Creative Cloud Sharing]** page, add the user to share the folder with and choose a role for the user. Click **[!UICONTROL Save]** and click **[!UICONTROL OK]**.
+1. Dans la page **[!UICONTROL Partage de Creative Cloud]**, ajoutez l’utilisateur avec lequel partager le dossier et choisissez un rôle pour l’utilisateur. Cliquez sur **[!UICONTROL Enregistrer]** et sur **[!UICONTROL OK]**.
 
 1. Connectez-vous à Creative Cloud avec les informations d’identification de l’utilisateur avec lequel vous avez partagé le dossier. Le dossier partagé est disponible dans Creative Cloud.
 
