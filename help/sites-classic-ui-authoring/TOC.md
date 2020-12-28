@@ -15,7 +15,7 @@ ht-degree: 85%
 ---
 
 
-# AEM 6.4 Classic UI Authoring User Guide {#classic-ui}
+# aem 6.4 Guide de l’utilisateur de création d’IU classique {#classic-ui}
 
 + [Présentation du guide de création d’interface utilisateur classique](home.md)
 + Présentation de la création d’interface utilisateur classique {#introduction}
@@ -78,7 +78,7 @@ ht-degree: 85%
    + [Utilisation d’Adobe Campaign](classic-personalization-ac.md)
    + [Composants d’Adobe Campaign](classic-personalization-ac-components.md)
    + [Ciblage de votre Adobe Campaign](classic-personalization-ac-target.md)
-+ Création de fichiers dans l’interface utilisateur classique {#assets}
++ Création de ressources dans l’interface utilisateur classique {#assets}
    + [Utilisation des ressources](classicui-assets.md)
    + [Utilisation de scènes IBL](classicui-stages-aem3d-ibl.md)
    + [Rendu de ressources 3D](classicui-rendering-3d.md)
