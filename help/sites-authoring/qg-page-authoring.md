@@ -90,7 +90,7 @@ Avant d’aborder ce thème dans le détail, nous vous offrons quelques conseils
 
 1. Un assistant s’ouvre, qui vous aidera à collecter les informations nécessaires lors de la [création de votre page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Suivez les instructions à l’écran.
 
-## Sélection de la page pour d’autres actions   {#selecting-your-page-for-further-action}
+## Sélection de la page pour d’autres actions    {#selecting-your-page-for-further-action}
 
 Sélectionnez une page pour y effectuer des actions. Ce faisant, la barre d’outils est automatiquement mise à jour afin de présenter les actions appropriées pour cette ressource.
 
@@ -189,7 +189,7 @@ La méthode de sélection d’une page dépend du mode d’affichage dans la con
    >
    >Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode).
 
-## Modification des propriétés de page   {#editing-the-page-properties}
+## Modification des propriétés de page    {#editing-the-page-properties}
 
 Vous pouvez [modifier les propriétés de page](/help/sites-authoring/editing-page-properties.md) de deux (principales) façons :
 
@@ -241,7 +241,7 @@ Il existe deux méthodes principales pour [publier une page](/help/sites-authori
 
    Pour plus d’informations, voir [Publication de pages](/help/sites-authoring/publishing-pages.md#unpublishing-pages).
 
-## Déplacement, copier-coller ou suppression d’une page   {#move-copy-and-paste-or-delete-your-page}
+## Déplacement, copier-coller ou suppression d’une page    {#move-copy-and-paste-or-delete-your-page}
 
 1. [Accédez à la page](#finding-your-page) à déplacer, à copier-coller ou à supprimer.
 1. Sélectionnez l’icône de copie (puis de collage), de déplacement ou de suppression selon vos besoins à l’aide de l’une des méthodes suivantes :
@@ -288,9 +288,9 @@ Un [accès rapide aux références](/help/sites-authoring/author-environment-too
 
 1. Appuyez ou cliquez sur le type de référence requis pour afficher d’autres détails et (le cas échéant) accomplir d’autres actions.
 
-## Création d’une version d’une page   {#creating-a-version-of-your-page}
+## Création d’une version d’une page    {#creating-a-version-of-your-page}
 
-1. Pour ouvrir le rail de la chronologie, sélectionnez la **[Chronologie](/help/sites-authoring/basic-handling.md#timeline)**à l’aide de l’icône de la barre d’outils (avant ou après la[sélection d’une page](#selecting-your-page-for-further-action)) :
+1. Pour ouvrir le rail de la chronologie, sélectionnez la **[Chronologie](/help/sites-authoring/basic-handling.md#timeline)** à l’aide de l’icône de la barre d’outils (avant ou après la [sélection d’une page](#selecting-your-page-for-further-action)) :
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
@@ -304,7 +304,7 @@ Un [accès rapide aux références](/help/sites-authoring/author-environment-too
 
 Le même mécanisme de base est appliqué pour restaurer ou pour comparer des versions d’une page :
 
-1. Sélectionnez la **[Chronologie](/help/sites-authoring/basic-handling.md#timeline)**à l’aide de l’icône de la barre d’outils (avant ou après la[sélection d’une page](#selecting-your-page-for-further-action)) :
+1. Sélectionnez la **[Chronologie](/help/sites-authoring/basic-handling.md#timeline)** à l’aide de l’icône de la barre d’outils (avant ou après la [sélection d’une page](#selecting-your-page-for-further-action)) :
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
