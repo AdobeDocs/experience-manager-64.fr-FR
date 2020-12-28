@@ -46,13 +46,13 @@ Voir [Configuration de la consommation de rubrique](/help/sites-deploying/offloa
 
 Lorsque la structure de déchargement sélectionne un cluster pour effectuer une tâche et que ce cluster est composé de plusieurs instances, Sling Distribution détermine quelle instance du cluster exécute la tâche.
 
-### Charges utiles de la tâche {#job-payloads}
+### Charges utiles de la tâche  {#job-payloads}
 
 La structure de déchargement prend en charge les charges utiles de la tâche qui associent des tâches aux ressources du référentiel. Les charges de la tâche sont utiles lorsque des tâches sont créées pour le traitement des ressources et que la tâche est déchargée sur un autre ordinateur.
 
 Après la création d’une tâche, la charge utile n’a l’assurance que d’être située sur l’instance qui crée la tâche. En déchargeant la tâche, les agents de réplication garantissent que la charge est créée sur l’instance qui va consommer la tâche par la suite. Lorsque l’exécution d’une tâche est terminée, la réplication inverse entraîne la copie de la charge utile sur l’instance qui a créé la tâche.
 
-## Administration des topologies {#administering-topologies}
+## Administration des topologies  {#administering-topologies}
 
 Les topologies sont des clusters Experience Manager légèrement interconnectées qui participent au déchargement. Un cluster est composée d’une ou de plusieurs instances de serveur Experience Manager (une instance unique est considérée comme un cluster).
 
@@ -67,7 +67,7 @@ Le service de recherche de tous les membres du point de topologie pointe vers le
 
 Chaque cluster de la topologie contient une instance qui est identifiée en tant que leader. Le leader du cluster interagit avec la topologie au nom des autres membres du cluster. Lorsque le leader quitte le cluster, un nouveau leader du cluster est automatiquement sélectionné.
 
-### Affichage de la topologie {#viewing-the-topology}
+### Affichage de la topologie  {#viewing-the-topology}
 
 Utilisez le navigateur de topologies pour explorer l’état de la topologie à laquelle l’instance d’Experience Manager participe. Le navigateur de topologies présente les clusters et les instances de la topologie.
 
@@ -75,7 +75,7 @@ Pour chaque cluster, vous voyez une liste des membres du cluster qui indique l�
 
 Pour chaque instance de cluster, vous pouvez voir plusieurs propriétés liées à la topologie :
 
-* liste autorisée de rubriques pour le client de travaux de l’instance.
+* Liste autorisée de rubriques pour le client de travaux de l’instance.
 * Les points de terminaison exposés pour la connexion à la topologie.
 * Les rubriques de tâche pour lesquelles l’instance est enregistrée pour le déchargement.
 * Les rubriques de tâches que l’instance traite.
@@ -148,7 +148,7 @@ Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propri�
    <td>http://localhost:4502/libs/sling/topology/connector</td> 
   </tr> 
   <tr> 
-   <td>liste autorisée du connecteur de topologie</td> 
+   <td>Liste autorisée du connecteur de topologie</td> 
    <td>topologyConnectorWhitelist</td> 
    <td>Liste d’adresses IP ou de noms d’hôtes autorisés par le service Topology Connector dans la topologie. </td> 
    <td><p>localhost</p> <p>127.0.0.1</p> </td> 
@@ -203,7 +203,7 @@ Les tâches sont réparties entre les instances ayant la rubrique associée acti
 
    **Remarque :** Lorsque vous sélectionnez Exclusif pour une rubrique, toutes les autres rubriques sont automatiquement réglées sur Désactivé.
 
-### Consommateurs de tâches installés {#installed-job-consumers}
+### Consommateurs de tâches installés  {#installed-job-consumers}
 
 Plusieurs implémentations de JobConsumer sont installées avec Experience Manager. Les rubriques auxquelles ces JobConsumers sont inscrits sont affichées dans le navigateur de déchargement. Les rubriques supplémentaires qui s’affichent sont celles que les JobConsumers personnalisés ont enregistrées. Le tableau ci-dessous décrit les JobConsumers par défaut.
 
@@ -219,7 +219,7 @@ Le service Apache Sling Job Consumer Manager fournit les propriétés de liste a
 
 **Remarque :** Si l’instance appartient à une topologie, vous pouvez également utiliser le navigateur de déchargement sur tout ordinateur de la topologie pour activer ou désactiver les rubriques.
 
-The logic that creates the list of enabled topics first allows all of the topics that are in the allow list, and then removes topics that are on the block list.By default, all topics are enabled (the allow list value is `*`) and no topics are disabled (the block list has no value).
+La logique qui crée la liste des rubriques activées permet d&#39;abord toutes les rubriques qui se trouvent dans la liste autorisée, puis supprime les rubriques qui se trouvent sur la liste bloquée. Par défaut, toutes les rubriques sont activées (la valeur de liste autorisée est `*`) et aucune rubrique n&#39;est désactivée (la liste bloquée n&#39;a aucune valeur).
 
 Utilisez le console web ou le nœud `sling:OsgiConfig` pour configurer les propriétés suivantes. Pour les nœuds `sling:OsgiConfig`, le paramètre PID du service Job Consumer Manager est org.apache.sling.event.impl.jobs.JobConsumerManager.
 
@@ -254,17 +254,17 @@ Ce modèle de réplication est similaire à celui utilisé entre les instances d
 
 ### Nommage des agents de réplication pour le déchargement {#naming-the-replication-agents-for-offloading}
 
-Use a specific format for the ***Name*** property of the replication agents so that the offloading framework automatically uses the correct agent for specific worker instances.
+Utilisez un format spécifique pour la propriété ***Name*** des agents de réplication afin que la structure de déchargement utilise automatiquement l&#39;agent approprié pour des instances de travail spécifiques.
 
 **Nommer un agent sortant sur l’instance d’auteur :** 
 
-`offloading_<slingid>`, où `<slingid>` est l’identifiant Sling de l’instance de travail.
+`offloading_<slingid>`, où  `<slingid>` est l’identifiant Sling de l’instance de travail.
 
 Exemple: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Nommer l’agent inverse sur l’instance d’auteur :** 
 
-`offloading_reverse_<slingid>`, où `<slingid>` est l’identifiant Sling de l’instance de travail.
+`offloading_reverse_<slingid>`, où  `<slingid>` est l’identifiant Sling de l’instance de travail.
 
 Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
@@ -274,7 +274,7 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Création de l’agent sortant {#creating-the-outgoing-agent}
 
-1. Créez un **agent de réplication** sur l’auteur. (Voir la [documentation sur les agents de réplication](/help/sites-deploying/replication.md)). Specify any **Title**. The **Name** must follow the naming convention.
+1. Créez un **agent de réplication** sur l’auteur. (Voir la [documentation sur les agents de réplication](/help/sites-deploying/replication.md)). Spécifiez un **titre**. Le **nom** doit respecter la convention d&#39;affectation de nom.
 1. Créez un agent en utilisant les propriétés suivantes :
 
    | Propriétés | Valeur |
@@ -288,7 +288,7 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Création de l’agent inverse {#creating-the-reverse-agent}
 
-1. Create a **Reverse Replication Agent** on author. (Voir la [documentation sur les agents de réplication](/help/sites-deploying/replication.md).) Specify any **Title**. The **Name** must follow the naming convention.
+1. Créez un **Agent de réplication inverse** sur l’auteur. (Voir la [documentation sur les agents de réplication](/help/sites-deploying/replication.md).) Spécifiez un **titre**. Le **nom** doit respecter la convention d&#39;affectation de nom.
 1. Créez un agent en utilisant les propriétés suivantes :
 
    | Propriétés | Valeur |
@@ -301,7 +301,7 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Création de l’agent de dossier d’envoi {#creating-the-outbox-agent}
 
-1. Create a **Replication Agent** on the worker instance. (Voir la [documentation sur les agents de réplication](/help/sites-deploying/replication.md).) Specify any **Title**. The **Name** must be `offloading_outbox`.
+1. Créez un **agent de réplication** sur l&#39;instance de travail. (Voir la [documentation sur les agents de réplication](/help/sites-deploying/replication.md).) Spécifiez un **titre**. Le **nom** doit être `offloading_outbox`.
 1. Créez l’agent en utilisant les propriétés suivantes.
 
    | Propriétés | Valeur |
@@ -314,18 +314,18 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 Obtenez l’identifiant Sling d’une instance Experience Manager en utilisant l’une des méthodes suivantes :
 
-* Open the Web Console and, in the Sling Settings, find the value of the Sling ID property ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Cette méthode est utile si l’instance ne fait pas encore partie de la topologie.
+* Ouvrez la console Web et, dans les paramètres Sling, recherchez la valeur de la propriété Sling ID ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Cette méthode est utile si l’instance ne fait pas encore partie de la topologie.
 * Utilisez le navigateur de topologies si l’instance fait déjà partie de la topologie.
 
-## Déchargement du traitement des ressources de gestion des actifs numériques {#offloading-the-processing-of-dam-assets}
+## Déchargement du traitement des ressources de gestion des actifs numériques  {#offloading-the-processing-of-dam-assets}
 
 Configurez les instances d’une topologie de sorte que les instances spécifiques exécutent le traitement en arrière-plan des ressources ajoutées ou mises à jour dans la gestion des actifs numériques.
 
-Par défaut, Experience Manager exécute le workflow Ressource de mise à niveau de gestion des actifs numériques lorsqu’une ressource de gestion des actifs numériques est modifiée ou ajoutée à la gestion des actifs numériques. Modifiez le comportement par défaut, de sorte qu’Experience Manager exécute à la place le workflow Déchargement des ressources de mise à niveau de gestion des actifs numériques. This workflow generates a JobManager job that has a topic of `com/adobe/granite/workflow/offloading`. Ensuite, configurez la topologie de sorte que la tâche soit déchargée sur un programme de travail dédié.
+Par défaut, Experience Manager exécute le workflow Ressource de mise à niveau de gestion des actifs numériques lorsqu’une ressource de gestion des actifs numériques est modifiée ou ajoutée à la gestion des actifs numériques. Modifiez le comportement par défaut, de sorte qu’Experience Manager exécute à la place le workflow Déchargement des ressources de mise à niveau de gestion des actifs numériques. Ce processus génère une tâche JobManager dont la rubrique est `com/adobe/granite/workflow/offloading`. Ensuite, configurez la topologie de sorte que la tâche soit déchargée sur un programme de travail dédié.
 
 >[!CAUTION]
 >
->Aucun workflow ne doit être transitoire lorsqu’il est utilisé avec le déchargement de workflow. Par exemple, le workflow Ressource de mise à jour de gestion des actifs numériques ne doit pas être transitoire lorsqu’il est utilisé pour le déchargement des ressources. To set/unset the transient flag on a workflow, see [Transient Workflows](/help/assets/performance-tuning-guidelines.md#workflows).
+>Aucun workflow ne doit être transitoire lorsqu’il est utilisé avec le déchargement de workflow. Par exemple, le workflow Ressource de mise à jour de gestion des actifs numériques ne doit pas être transitoire lorsqu’il est utilisé pour le déchargement des ressources. Pour définir/désactiver l’indicateur transitoire sur un flux de travail, voir [Workflows transitoires](/help/assets/performance-tuning-guidelines.md#workflows).
 
 La procédure suivante part des fonctionnalités suivantes pour la topologie de déchargement :
 
@@ -334,7 +334,7 @@ La procédure suivante part des fonctionnalités suivantes pour la topologie de 
 
 1. Sur chaque instance Experience Manager, configurez Discovery Service (service de recherche) afin qu’il indique le Topography Connector (connecteur de topographie) racine. (Voir [Configuration de l’appartenance à une topologie](#title4).)
 1. Configurez la racine Topography Connector afin que les instances de connexion soient affichées sur la liste autorisée.
-1. Open Offloading Browser and disable the `com/adobe/granite/workflow/offloading` topic on the instances with which users interact to upload or change DAM assets.
+1. Ouvrez le navigateur de déchargement et désactivez la rubrique `com/adobe/granite/workflow/offloading` sur les instances avec lesquelles les utilisateurs interagissent pour télécharger ou modifier des fichiers DAM.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -351,7 +351,7 @@ La procédure suivante part des fonctionnalités suivantes pour la topologie de 
 
 En plus des informations présentées sur cette page, vous pouvez également lire ce qui suit :
 
-* For information about using Java APIs to create jobs and job consumers, see [Creating and Consuming Jobs for Offloading](/help/sites-developing/dev-offloading.md).
+* Pour plus d’informations sur l’utilisation des API Java pour créer des emplois et des consommateurs d’emplois, voir [Création et consommation d’emplois pour le déchargement](/help/sites-developing/dev-offloading.md).
 * Pour découvrir les directives générales et les meilleures pratiques relatives au déchargement de ressources, voir [Directives générales et meilleures pratiques relatives au déchargement de ressources](/help/assets/assets-offloading-best-practices.md#general-guidance-and-best-practices-for-asset-offloading).
 * Pour savoir comment désactiver la création automatique des agents de déchargement, voir [Désactivation de la gestion automatique des agents](/help/assets/assets-offloading-best-practices.md#turning-off-automatic-agent-management).
 
