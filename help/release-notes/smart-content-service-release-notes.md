@@ -22,7 +22,7 @@ Présentation de Smart Content Service et problèmes connus liés à ce service.
 
 Les entreprises exigent que leurs ressources numériques soient balisées en fonction de la taxonomie utilisée par les employés, les partenaires et les clients pour référencer et rechercher des ressources numériques. Par rapport aux balises génériques, les ressources balisées en fonction de la taxonomie métier sont plus facilement identifiées et récupérées par des recherches basées sur des balises.
 
-Smart Content Service utilise la taxonomie des AEM Assets de votre entreprise pour baliser automatiquement les ressources numériques, ce qui garantit que les ressources les plus pertinentes apparaissent dans les recherches.
+Smart Content Service utilise la taxonomie commerciale d’AEM Assets pour baliser automatiquement les ressources numériques, ce qui garantit que les ressources les plus pertinentes apparaissent dans les recherches.
 
 Vous devez former Smart Content Service à un ensemble organisé d’actifs et de balises AEM afin de reconnaître votre taxonomie professionnelle. Une fois formé, le service peut appliquer ces balises à un ensemble de ressources similaire.
 
@@ -94,5 +94,5 @@ Ces sites sont réservés aux clients. Si vous êtes client et avez besoin d’u
 
 * [Accès aux produits](https://login.marketing.adobe.com)
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/).
-* Mises à jour des produits, correctifs et packages pour des fonctionnalités supplémentaires sur la distribution [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)logiciels.
-* [Assistance clientèle via Admin Console](https://adminconsole.adobe.com/). Pour plus d’informations, voir Expérience [du service clientèle](https://docs.adobe.com/content/help/en/customer-one/using/home.html)Nouveau Adobe.
+* Mises à jour des produits, correctifs et packages pour des fonctionnalités supplémentaires sur [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* [Assistance clientèle via Admin Console](https://adminconsole.adobe.com/). Pour plus d’informations, voir [Nouvelle expérience de l’assistance clientèle d’Adobes](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
