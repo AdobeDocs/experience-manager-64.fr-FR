@@ -22,12 +22,12 @@ ht-degree: 66%
 
 ## Liste des modifications et des corrections {#list-of-changes-and-fixes}
 
-### 1.8.6 (June 2018) {#june}
+### 1.8.6 (juin 2018) {#june}
 
 * OAK-7339 Correction de la rupture de toutes les versions secondaires avec UnsupportedOperationException sur MissingBlobStore en introduisant LoopbackBlobStore
 * Utiliser Oak 1.8.4
 
-### 1.8.4 (April 2018) {#april}
+### 1.8.4 (avril 2018) {#april}
 
 * Utiliser Oak version 1.8.2
 * GRANITE-18104 L&#39;erreur de migration de rebol de 6.3 à 6.4 doit être plus significative
