@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
 workflow-type: tm+mt
 source-wordcount: '2307'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -43,13 +43,13 @@ Vous pouvez également vous aider de [dossiers](#creating-a-new-folder) pour org
 
 La structure d’un site web peut être comparée à celle d’un arbre qui soutient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former des URL qui indiquent les titres lorsque le contenu des pages est affiché.
 
-The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
+Vous trouverez ci-dessous un exemple du site Web We.Retail, où vous pouvez accéder à une page de raccourcis de randonnée ( `desert-sky-shorts`) :
 
-* Author environment: `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+* Environnement de l’auteur : `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Environnement de publication: `http://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
+Selon la configuration de votre instance, l’utilisation de `/content` peut être facultative sur l’environnement de publication.
 
 ```xml
  /content
@@ -111,7 +111,7 @@ Le **Titre** et le **Nom** de la page peuvent être créés séparément, mais i
 >
 >N’oubliez pas que certains navigateurs (par exemple, les anciennes versions d’IE) n’acceptent que les URL n’excédant pas une certaine longueur. C’est pourquoi il existe également une raison technique de garder les noms de pages courts.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.
+Lors de la création d’une page, AEM [valide son nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
 
 Les caractères minimum autorisés sont :
 
@@ -129,7 +129,7 @@ Vous trouverez la liste complète et détaillée des caractères autorisés dans
 
 #### Titre {#title}
 
-Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom**[ de la page de cette chaîne et valide le nom en fonction des conventions imposées par AEM et JCR. ](/help/sites-developing/naming-conventions.md) Un champ **Titre** contenant des caractères non valides sera accepté, mais les caractères non valides seront remplacés pour le nom dérivé. Par exemple :
+Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom** de la page de cette chaîne et [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR. Un champ **Titre** contenant des caractères non valides sera accepté, mais les caractères non valides seront remplacés pour le nom dérivé. Par exemple :
 
 | Titre | Nom dérivé |
 |---|---|
@@ -138,7 +138,7 @@ Si vous n’indiquez qu’un **titre** de page lors de la création d’une page
 
 #### Nom {#name}
 
-Si vous indiquez un **nom** de page lors de la création d’une page, AEM valide le nom en fonction des conventions imposées par AEM et JCR. [](/help/sites-developing/naming-conventions.md) Vous ne pouvez pas utiliser de caractères non valides dans le champ **Nom**. Lorsqu’AEM détecte des caractères incorrects, le champ est mis en surbrillance avec un message d’explication.
+Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR. Vous ne pouvez pas utiliser de caractères non valides dans le champ **Nom**. Lorsqu’AEM détecte des caractères incorrects, le champ est mis en surbrillance avec un message d’explication.
 
 ![screen_shot_2018-03-22at104817](assets/screen_shot_2018-03-22at104817.png)
 
@@ -171,7 +171,7 @@ Liste des modèles utilisables lors de la génération de la nouvelle page.
 
 ### Composants {#components}
 
-Components are the elements provided by AEM so that you can add specific types of content. AEM comes with a range of [out-of-the-box components](/help/sites-authoring/default-components-console.md) that provide comprehensive functionality. These include:
+Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. aem est fourni avec une gamme de [composants prêts à l&#39;emploi](/help/sites-authoring/default-components-console.md) qui offrent des fonctionnalités complètes. Il s&#39;agit notamment :
 
 * Texte
 * Image
@@ -218,7 +218,7 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
 
       * Il est utilisé pour générer l’URI. Si le nom n’est pas spécifié, il est dérivé du titre.
       * Si vous indiquez le **nom** d’une page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
-      * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsque AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
+      * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsqu’AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
 
    >[!NOTE]
    >
@@ -302,7 +302,7 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 
 >[!NOTE]
 >
->Une page peut uniquement être déplacée vers un emplacement où le modèle sur lequel la page est basée est autorisé. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>Une page peut uniquement être déplacée vers un emplacement où le modèle sur lequel la page est basée est autorisé. Pour plus d’informations, voir [Disponibilité des modèles](/help/sites-developing/templates.md#template-availability).
 
 La procédure pour déplacer ou renommer une page est plus ou moins la même et est gérée par le même assistant. Cet assistant permet d’effectuer les opérations suivantes :
 
