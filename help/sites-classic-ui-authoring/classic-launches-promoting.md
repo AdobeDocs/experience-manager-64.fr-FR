@@ -34,7 +34,7 @@ Pour convertir des pages, procédez comme suit lors de la modification de la pag
 1. Ouvrez l’onglet **Page** dans le Sidekick, puis cliquez sur **Convertir le lancement**.
 1. Indiquez les pages à convertir :
 
-   * (Default) To promote only the current page, select **Promote Page Changes To Production Version**.
+   * (Par défaut) Pour promouvoir uniquement la page active, sélectionnez **Promouvoir les modifications de page dans la version de production**.
    * Pour convertir également les pages enfants de la page en cours, sélectionnez **Inclure les sous-pages**.
    * Pour convertir toutes les pages du lancement, sélectionnez **Convertir le lancement complet en version de production**.
 
