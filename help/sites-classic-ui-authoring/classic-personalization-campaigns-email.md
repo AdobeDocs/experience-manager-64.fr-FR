@@ -23,7 +23,7 @@ ht-degree: 94%
 >[!NOTE]
 >
 >Adobe ne prévoit pas d&#39;améliorer davantage les courriers électroniques ouverts/rebondis envoyés par le service SMTP AEM.\
->La recommandation consiste à [tirer parti de l&#39;Adobe Campaign et de son intégration](/help/sites-administering/campaign.md)AEM.
+>La recommandation est de [tirer parti de l&#39;Adobe Campaign et de son intégration AEM](/help/sites-administering/campaign.md).
 
 Le marketing par messagerie électronique (les newsletters, par exemple) constitue une partie importante de toute campagne de marketing, car il vous sert à pousser du contenu vers vos pistes. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
 
@@ -46,7 +46,7 @@ Ce document décrit les notions fondamentales de la création de newsletters dan
 >
 >Si vous mettez à jour vos fournisseurs de messagerie, que vous effectuez un test envoi ou que vous envoyez une newsletter, ces opérations échouent si la newsletter n’est pas au préalable publiée sur l’instance de publication ou si l’instance de publication n’est pas disponible. Veillez à publier votre newsletter et à ce que l’instance de publication soit activée.
 
-## Création d’une expérience Newsletter {#creating-a-newsletter-experience}
+## Création d’une expérience Newsletter  {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ Ce document décrit les notions fondamentales de la création de newsletters dan
 
    * **Liste des destinataires par défaut**
 
-      liste par défaut qui doit recevoir la newsletter.
+      Liste par défaut qui doit recevoir la newsletter.
    Ces segments pourront être mis à jour ultérieurement à partir de la boîte de dialogue **Propriétés...**
 
 1. Cliquez sur **OK** pour enregistrer. 
@@ -146,7 +146,7 @@ Personnalisation d’une newsletter et simulation de son aperçu :
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
+>Avant d’envoyer des bulletins d’information, vérifiez la configuration OSGi pour Day CQ Link Externalizer (Externalisateur de liens Day CQ) à l’adresse `http://localhost:4502/system/console/configMgr`.
 >
 >Par défaut, la valeur du paramètre est `localhost:4502` et l’opération ne peut pas être menée à bien en cas de modification du port d’exécution de l’instance.
 
@@ -229,7 +229,7 @@ Vous pouvez envoyer une newsletter à partir de la newsletter ou à partir de la
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
+>Avant d’envoyer des bulletins d’information, vérifiez la configuration OSGi pour Day CQ Link Externalizer (Externalisateur de liens Day CQ) à l’adresse `http://localhost:4502/system/console/configMgr`.
 >
 >Par défaut, la valeur du paramètre est `localhost:4502` et l’opération ne peut pas être menée à bien en cas de modification du port d’exécution de l’instance.
 
@@ -263,7 +263,7 @@ Envoi d’une newsletter à partir d’une campagne :
    >
    >Assurez-vous que vous êtes l’un des destinataires pour vérifier que la newsletter a bien été reçue.
 
-### Envoi de newsletters à partir d’une liste {#sending-newsletters-from-a-list}
+### Envoi de newsletters à partir d’une liste  {#sending-newsletters-from-a-list}
 
 Envoi d’une newsletter à partir d’une liste :
 
@@ -293,7 +293,7 @@ Envoi d’une newsletter à partir d’une liste :
 
 Cette section décrit comment s’abonner à une newsletter.
 
-### Abonnement à une newsletter {#subscribing-to-a-newsletter-1}
+### Abonnement à une newsletter  {#subscribing-to-a-newsletter-1}
 
 S’abonner à une newsletter (en utilisant le site Web Geometrixx comme exemple) :
 
