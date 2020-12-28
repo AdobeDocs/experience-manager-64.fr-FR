@@ -48,12 +48,12 @@ Vous pouvez modifier une page dans l’éditeur de page. Par exemple :
 
 Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
-* le sélecteur [**Informations sur la page **](/help/sites-authoring/editing-page-properties.md#page-properties)qui vous indique les diapositives d’introduction (comme c’est le cas lors de votre premier accès à l’éditeur) ;
+* le sélecteur [**Informations sur la page**](/help/sites-authoring/editing-page-properties.md#page-properties) qui vous indique les diapositives d’introduction (comme c’est le cas lors de votre premier accès à l’éditeur) ;
 * la boîte de dialogue [Configuration](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) pour des composants spécifiques (au moyen de l’icône ? de la barre d’outils de la boîte de dialogue) qui vous fournit une aide contextuelle.
 
 D’autres [ressources d’aide sont accessibles depuis les consoles](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Explorateur de composants    {#components-browser}
+## Explorateur de composants  {#components-browser}
 
 L’explorateur de composants présente tous les composants que vous pouvez utiliser sur la page active. Faites-les glisser à l’emplacement de votre choix, puis modifiez-les pour ajouter du contenu.
 
@@ -170,7 +170,7 @@ Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeu
 
 ![](do-not-localize/screen_shot_2018-03-22at142448.png)
 
-## Arborescence de contenu    {#content-tree}
+## Arborescence de contenu  {#content-tree}
 
 L’**arborescence de contenu** présente une vue d’ensemble des composants sur la page sous forme de structure hiérarchique pour que vous puissiez visualiser la composition de la page en un seul coup d’œil.
 
@@ -246,7 +246,7 @@ Ouvrez la console appropriée, puis accédez à la ressource requise et ouvrez l
 
 ![screen_shot_2018-03-22at153952](assets/screen_shot_2018-03-22at153952.png)
 
-[Sélectionnez la ressource requise](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), puis **Tout afficher** ou **Activités** afin de répertorier les activités récentes pour les ressources sélectionnées :
+[Sélectionnez la ressource requise](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), puis **Afficher tout** ou **Activités** afin de répertorier les activités récentes pour les ressources sélectionnées :
 
 ![screen_shot_2018-03-22at154130](assets/screen_shot_2018-03-22at154130.png)
 
@@ -258,7 +258,7 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 
 * [Ouvrir les propriétés](/help/sites-authoring/editing-page-properties.md)
 * [Déployer la page](/help/sites-administering/msm.md#msm-from-the-ui)
-* [Démarrer le workflow](/help/sites-authoring/workflows-applying.md#starting-a-workflow-from-the-page-editor)
+* [Démarrer le processus](/help/sites-authoring/workflows-applying.md#starting-a-workflow-from-the-page-editor)
 * [Verrouiller la page](/help/sites-authoring/editing-content.md#locking-a-page)
 * [Publier la page](/help/sites-authoring/publishing-pages.md#publishing-pages)
 * [Annuler la publication de la page](/help/sites-authoring/publishing-pages.md#unpublishing-pages)
@@ -269,18 +269,18 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 Le cas échéant, le menu **Informations sur la page** propose également les options suivantes :
 
 * [Convertir le lancement](/help/sites-authoring/launches-promoting.md) si la page correspond à un lancement.
-* [Modifier le modèle](/help/sites-authoring/templates.md) si la page est basée sur un modèle [modifiable](/help/sites-authoring/templates.md#editable-and-static-templates)
+* [Modifier le ](/help/sites-authoring/templates.md) modèle si la page est basée sur un modèle  [modifiable](/help/sites-authoring/templates.md#editable-and-static-templates)
 
-* [Ouvrir dans l’interface utilisateur](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) classique si cette option a été [activée par un administrateur](/help/sites-administering/enable-classic-ui-editor.md)
+* [Ouvrir dans l’](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interface utilisateur classique si cette option a été  [activée par un administrateur](/help/sites-administering/enable-classic-ui-editor.md)
 
 Le menu **Informations sur la page** peut en outre donner accès à des analyses et recommandations, le cas échéant.
 
-## Modes de page    {#page-modes}
+## Modes de page  {#page-modes}
 
 Lors de la modification d’une page, plusieurs modes permettent d’effectuer différentes actions :
 
 * [Modifier](/help/sites-authoring/editing-content.md) : mode à utiliser lors de la modification du contenu de la page.
-* [Mise en page](/help/sites-authoring/responsive-layout.md) : permet de créer et de modifier une mise en page réactive en fonction du type d’appareil utilisé (si la page est basée sur un conteneur de mises en page).
+* [Disposition](/help/sites-authoring/responsive-layout.md) : permet de créer et de modifier une disposition réactive en fonction du type d’appareil utilisé (si la page est basée sur un conteneur de mises en page).
 
 * [Génération de modèles automatique](/help/sites-authoring/scaffolding.md) : permet de créer un jeu volumineux de pages partageant la même structure, mais avec un contenu différent.
 * [Développeur](/help/sites-developing/developer-mode.md) : permet d’accomplir diverses opérations (certains droits sont requis), notamment la vérification des détails techniques d’une page et de ses composants.
@@ -305,7 +305,7 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* Certains modes peuvent ne pas être disponibles en fonction des caractéristiques de la page.
 >* L’accès à certains modes implique que vous disposiez des droits ou autorisations appropriés.
 >* Le mode Développeur n’est pas accessible sur les appareils mobiles en raison de restrictions d’espace.
->* Utilisez le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Mise en page**, etc.).
+>* Utilisez le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Disposition**, etc.).
 
 >
 
@@ -333,7 +333,7 @@ L’explorateur de chemins d’accès est organisé de la même façon que le [m
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-Lorsqu’une ressource est sélectionnée, le bouton **Sélectionner** situé en haut à droit de la boîte de dialogue devient actif. Cliquez ou appuyez dessus pour confirmer la sélection, ou sur **Annuler** pour annuler.
+Lorsqu’une ressource est sélectionnée, le bouton **Sélectionner** situé en haut à droite de la boîte de dialogue devient actif. Cliquez ou appuyez dessus pour confirmer la sélection, ou sur **Annuler** pour annuler.
 
 Si le contexte permet la sélection de plusieurs ressources, la sélection d’une ressource active également le bouton Sélectionner, mais ajoute également le nombre de ressources sélectionnées en haut à droite de la fenêtre. Cliquez sur le X en regard du nombre pour tout désélectionner.
 
@@ -347,7 +347,7 @@ Vous pouvez à tout moment utiliser le champ de recherche situé en haut de la b
 
 ![chlimage_1-296](assets/chlimage_1-296.png)
 
-Cliquez sur la croix (X) dans le champ de recherche pour effacer la recherche.
+Cliquez sur le X dans le champ de recherche pour effacer la recherche.
 
 Pour affiner votre recherche, vous pouvez afficher les options de filtre et filtrer vos résultats en fonction du chemin d’accès.
 
