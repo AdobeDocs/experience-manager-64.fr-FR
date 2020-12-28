@@ -32,9 +32,9 @@ Voir [Utilisation de scènes dans AEM 3D](/help/sites-classic-ui-authoring/clas
 >
 >Pour visualiser une ressource 3D, votre navigateur de périphérique ou de bureau doit être compatible webGL. En outre, le matériel graphique sous-jacent doit disposer de suffisamment de capacités et de mémoire pour effectuer le rendu des modèles à la taille souhaitée.
 
-## Observations à propos des performances lorsque vous visualisez des ressources 3D {#performance-considerations-when-you-view-d-assets}
+## Observations à propos des performances lorsque vous visualisez des ressources 3D  {#performance-considerations-when-you-view-d-assets}
 
-Le délai nécessaire pour ouvrir une ressource 3D sur la page de détails de la ressource dépend de plusieurs facteurs. Ces facteurs sont, entre autres :
+Le délai nécessaire pour ouvrir une ressource 3D sur la page de détails de la ressource dépend de plusieurs facteurs. Ces facteurs sont notamment :
 
 * Bande passante et latences du serveur
 * Taille du modèle (nombre de faces)
@@ -58,9 +58,9 @@ De plus, les capacités de l’ordinateur client, par exemple un poste de travai
 
    * Dans le coin inférieur droit de la page de détails de la ressource, utilisez la palette de commandes de caméra pour modifier différents affichages de la ressource.
 
-      Si vous utilisez un périphérique d’entrée non tactile sans roulette de défilement, par exemple une souris à un bouton Apple classique, vous pouvez tout de même modifier le zoom ou la perspective d’une ressource 3D dans chaque mode respectif. You accomplish the action by pressing and holding down the `SHIFT`key while depressing the mouse button and dragging up or down.
+      Si vous utilisez un périphérique d’entrée non tactile sans roulette de défilement, par exemple une souris à un bouton Apple classique, vous pouvez tout de même modifier le zoom ou la perspective d’une ressource 3D dans chaque mode respectif. Pour ce faire, appuyez sur la touche `SHIFT`enfoncée tout en appuyant sur le bouton de la souris et en faisant glisser le curseur vers le haut ou vers le bas.
 
-      Lorsque vous utilisez un pavé tactile sur un ordinateur portable classique, il est souvent difficile de contrôler le comportement du zoom ou de la perspective à l’aide du geste à deux doigts. In such cases, you can press and hold down `SHIFT`during the action. Cela réduit la vitesse du geste de pincement et permet d’obtenir plus facilement la perspective ou le facteur de zoom exact que vous souhaitez. Alternately, you can use a one finger drag up or down while the `SHIFT`key is pressed to affect zoom or perspective behaviors.
+      Lorsque vous utilisez un pavé tactile sur un ordinateur portable classique, il est souvent difficile de contrôler le comportement du zoom ou de la perspective à l’aide du geste à deux doigts. Dans de tels cas, vous pouvez appuyer sur `SHIFT`et maintenir la touche enfoncée pendant l’action. Cela réduit la vitesse du geste de pincement et permet d’obtenir plus facilement la perspective ou le facteur de zoom exact que vous souhaitez. Vous pouvez également faire glisser un doigt vers le haut ou vers le bas pendant que la touche `SHIFT`est enfoncée pour modifier les comportements de zoom ou de perspective.
    <table> 
     <tbody> 
       <tr> 
@@ -69,18 +69,18 @@ De plus, les capacités de l’ordinateur client, par exemple un poste de travai
       </tr> 
       <tr> 
       <td><p>Zoom</p> <p>ou</p> <p>Persp</p> </td> 
-      <td><p>Appuyez ou cliquez pour basculer entre les modes Zoom et Perspective.</p> <p>Or, press and hold down the <code>ALT/OPTION</code> key during the action to temporarily toggle to Perspective<br /> mode. Relâchez la touche pour revenir en mode Zoom.</p> 
+      <td><p>Appuyez ou cliquez pour basculer entre les modes Zoom et Perspective.</p> <p>Ou appuyez sur la touche <code>ALT/OPTION</code> et maintenez-la enfoncée pendant l'action pour basculer temporairement en mode Perspective<br />. Relâchez la touche pour revenir en mode Zoom.</p> 
         <ul> 
-        <li><strong>Comportement Zoom</strong>-Dolly en avant et en arrière qui rapproche ou éloigne la caméra de la ressource<br /> que vous visualisez. Zoom est le comportement par défaut de la roulette de défilement d’une souris (le cas échéant) pour les gestes de pincement à deux doigts sur les appareils mobiles ou lorsque vous appuyez de manière prolongée sur la touche Maj tout en faisant glisser vers le haut ou vers le bas à l’aide du bouton gauche de la souris.</li> 
-        <li><strong>Perspective</strong>- Modifie la longueur focale (également appelée champ de vue) de la caméra tout en conservant la taille relative de la ressource dans la vue. Perspective est le comportement alternatif de la roulette de défilement (le cas échéant) pour les gestes de pincement à deux doigts sur les appareils mobiles ou lorsque vous appuyez de manière prolongée sur la touche Maj tout en faisant glisser vers le haut ou vers le bas à l’aide du bouton gauche de la souris.</li> 
+        <li><strong>Comportement Zoom</strong>-Dolly en avant et en arrière qui rapproche ou éloigne la caméra de la <br /> ressource que vous visualisez. Zoom est le comportement par défaut de la roulette de défilement d’une souris (le cas échéant) pour les gestes de pincement à deux doigts sur les appareils mobiles ou lorsque vous appuyez de manière prolongée sur la touche Maj tout en faisant glisser vers le haut ou vers le bas à l’aide du bouton gauche de la souris.</li> 
+        <li><strong>Perspective</strong> - Modifie la longueur focale (également appelée champ de vue) de la caméra tout en conservant la taille relative de la ressource dans la vue. Perspective est le comportement alternatif de la roulette de défilement (le cas échéant) pour les gestes de pincement à deux doigts sur les appareils mobiles ou lorsque vous appuyez de manière prolongée sur la touche Maj tout en faisant glisser vers le haut ou vers le bas à l’aide du bouton gauche de la souris.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td><p>Orbite</p> <p>ou</p> <p>Panoramique</p> </td> 
-      <td><p>Appuyez ou cliquez pour basculer entre les modes Orbite et Panoramique.</p> <p>Or, press and hold the <code>ALT/OPTION</code> key during the action to temporarily toggle to Pan mode. Relâchez la touche pour revenir en mode Orbite.</p> 
+      <td><p>Appuyez ou cliquez pour basculer entre les modes Orbite et Panoramique.</p> <p>Ou appuyez sur la touche <code>ALT/OPTION</code> et maintenez-la enfoncée pendant l'action pour basculer temporairement en mode Panoramique. Relâchez la touche pour revenir en mode Orbite.</p> 
         <ul> 
-        <li><strong>Orbite</strong>- Déplace la caméra d'affichage sur une sphère centrée sur un point de cible situé près du centre de la ressource 3D par défaut. Orbite est le comportement par défaut pour un glisser avec le bouton gauche ou un glisser par un seul toucher sur les appareils mobiles.</li> 
-        <li><strong>Panoramique</strong>: déplace la caméra dans le plan de visualisation. Le point cible est déplacé en conséquence. Ainsi, les actions d’orbite suivantes déplaceront la caméra autour d’un nouveau point cible. Panoramique est le comportement alternatif pour le glisser avec le bouton gauche et le glisser par un seul toucher.</li> 
+        <li><strong>Orbite</strong> - Déplace la caméra d'affichage sur une sphère centrée sur un point de cible situé près du centre de la ressource 3D par défaut. Orbite est le comportement par défaut pour un glisser avec le bouton gauche ou un glisser par un seul toucher sur les appareils mobiles.</li> 
+        <li><strong>Panoramique</strong> : déplace la caméra dans le plan de visualisation. Le point cible est déplacé en conséquence. Ainsi, les actions d’orbite suivantes déplaceront la caméra autour d’un nouveau point cible. Panoramique est le comportement alternatif pour le glisser avec le bouton gauche et le glisser par un seul toucher.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
@@ -88,17 +88,17 @@ De plus, les capacités de l’ordinateur client, par exemple un poste de travai
       <td><p>Appuyez ou cliquez pour basculer entre les modes Examen et Cible.</p> 
         <ul> 
         <li><strong>Examinez</strong>-Appuyez ou cliquez pour passer en mode Cible.</li> 
-        <li><strong>Appuyez sur Cible</strong>ou cliquez n'importe où sur la ressource 3D pour centrer la vue sur cette partie de la ressource.<br /> Les actions d’orbite utilisent le nouveau point cible.</li> 
+        <li><strong>Appuyez sur cible</strong> ou cliquez n'importe où sur la ressource 3D pour centrer la vue sur cette partie de la ressource.<br /> Les actions d’orbite utilisent le nouveau point cible.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td>Réinitialiser</td> 
-      <td>Appuyez ou cliquez pour rétablir le point de cible de vue au centre du modèle. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
+      <td>Appuyez ou cliquez pour rétablir le point de cible de vue au centre du modèle. Reset déplace également la caméra<br /> plus près ou plus loin pour montrer la ressource dans son intégralité et à une taille d'affichage raisonnable.</td> 
       </tr> 
     </tbody> 
     </table>
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon. Sélectionnez un nom de scène avec l’arrière-plan et l’éclairage à appliquer à la ressource 3D.
+1. Près du coin supérieur droit de la page des détails de la ressource, appuyez sur l’icône **[!UICONTROL Sélecteur d’état]**. Sélectionnez un nom de scène avec l’arrière-plan et l’éclairage à appliquer à la ressource 3D.
 
    ![](do-not-localize/chlimage_1-2.png)
 
@@ -106,7 +106,7 @@ De plus, les capacités de l’ordinateur client, par exemple un poste de travai
 
    Voir [Utilisation de scènes dans AEM 3D](/help/sites-classic-ui-authoring/classicui-stages-aem3d.md).
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon, then select a camera view that you want to apply to the 3D asset.
+1. Près du coin supérieur droit de la page des détails de la ressource, appuyez sur l&#39;icône **[!UICONTROL Sélecteur d&#39;appareil photo]**, puis sélectionnez une vue d&#39;appareil photo à appliquer à la ressource 3D.
 
    ![](do-not-localize/chlimage_1-3.png)
 
