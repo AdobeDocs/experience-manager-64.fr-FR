@@ -41,9 +41,9 @@ Une fois un élément positionné sur la page, vous pouvez ouvrir une boîte de 
 * **Édition statique**
 Vous pouvez modifier les composants Texte et Image directement sur la page web sans ouvrir de boîte de dialogue ni procéder à un enregistrement explicite.
 
-* **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**Fenêtre d’inspection flottante qui s’ouvre sur la page à modifier. Depuis cette fenêtre, vous pouvez faire glisser des composants sur la page et procéder à des opérations spécifiques à la page.
+* **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)** Fenêtre d’inspection flottante qui s’ouvre sur la page à modifier. Depuis cette fenêtre, vous pouvez faire glisser des composants sur la page et procéder à des opérations spécifiques à la page.
 
-* **[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**Sur le côté gauche de chaque page à créer, l’outil de recherche de contenu fournit un accès rapide à diverses ressources, y compris des ressources numériques (autres images, éléments Flash et documents, par exemple), d’autres pages et des paragraphes. Ces éléments peuvent être déplacés sur la page, par exemple pour positionner les ressources ou créer des liens vers d’autres pages.
+* **[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)** Sur le côté gauche de chaque page à créer, l’outil de recherche de contenu fournit un accès rapide à diverses ressources, y compris des ressources numériques (autres images, éléments Flash et documents, par exemple), d’autres pages et des paragraphes. Ces éléments peuvent être déplacés sur la page, par exemple pour positionner les ressources ou créer des liens vers d’autres pages.
 
 * **Menu contextuel** Cliquez avec le bouton droit sur la plupart des éléments à l’écran (par exemple, des paragraphes sur la page) pour afficher un menu contextuel avec les options appropriées.
 
