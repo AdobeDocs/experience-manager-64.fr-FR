@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: bdc44635cfb874c5f5f4033debb15799cbafcd5a
 workflow-type: tm+mt
 source-wordcount: '1365'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Le système de style permet à un auteur de modèles de définir des classes de 
 
 Cela rend inutile le développement d’un composant personnalisé pour chaque style ou la personnalisation d’une boîte de dialogue de composant pour activer une telle fonctionnalité de style. On obtient ainsi des composants plus réutilisables, pouvant être adaptés, rapidement et aisément, aux besoins des auteurs de contenu sans développement back-end dans AEM.
 
-## Exemple d’utilisation  {#use-case}
+## Exemple d’utilisation   {#use-case}
 
 Les auteurs de modèles doivent être en mesure de configurer non seulement le mode de fonctionnement des composants pour les auteurs de contenu, mais aussi diverses variantes visuelles d’un composant.
 
@@ -64,7 +64,7 @@ Le diagramme suivant illustre l’architecture du système de style.
 
 ## Utilisation {#use}
 
-Pour démontrer la fonctionnalité, nous utiliserons comme exemple l’implémentation de [WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), [composant de titre](https://www.adobe.com/go/aem_cmp_title_v2_fr) des composants principaux.
+Pour démontrer la fonctionnalité, nous utiliserons comme exemple l’implémentation de [WKND](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), [composant de titre](https://www.adobe.com/go/aem_cmp_title_v2_fr) des composants principaux.
 
 Les sections suivantes, [En tant qu’auteur de contenu](#as-a-content-author) et [En tant qu’auteur de modèles](#as-a-template-author), décrivent comment tester les fonctionnalités du système de style à l’aide du système de style de WKND.
 
@@ -74,7 +74,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 1. Configurez les classes CSS que vous souhaitez rendre disponibles à vos auteurs de contenu, comme décrit dans la section [En tant qu’auteur de modèles](#as-a-template-author).
 1. Les auteurs de contenu peuvent alors utiliser les styles, comme décrit dans la section [En tant qu’auteur de contenu](#as-a-content-author).
 
-### En tant qu’auteur de contenu  {#as-a-content-author}
+### En tant qu’auteur de contenu   {#as-a-content-author}
 
 1. Après avoir installé le projet WKND, accédez à la page d’accueil principale de WKND `http://<host>:<port>/sites.html/content/wknd/language-masters/en` (en anglais) et modifiez la page.
 1. Sélectionnez un composant **Titre** plus bas dans la page
@@ -89,7 +89,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
    >
    >Dans cet exemple, les styles **Couleurs** (**Noir**, **Blanc** et **Gris**) s’excluent mutuellement, tandis que les options **Style** (**Souligné**, **Aligner à droite** et **Mini Espacement**) peuvent être combinées. Vous pouvez [configurer ce paramètre dans le modèle en tant qu’auteur du modèle](#as-a-template-author).
 
-### En tant qu’auteur de modèles  {#as-a-template-author}
+### En tant qu’auteur de modèles   {#as-a-template-author}
 
 1. Alors que vous modifiez la page d’accueil de WKND (`http://<host>:<port>/sites.html/content/wknd/language-masters/en`) (en anglais), modifiez le modèle de la page via **Informations sur la page -> Modifier le modèle**.
 
@@ -112,7 +112,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.
+>Pour pouvoir fonctionner, les classes CSS (ainsi que toute classe JavaScript nécessaire) configurées en tant que propriétés de style d’une stratégie de composants doivent être déployées comme [bibliothèques clientes](/help/sites-developing/clientlibs.md).
 
 ## Configuration {#setup}
 
@@ -142,7 +142,7 @@ L’onglet de la boîte de dialogue Modifier peut être inclus de la même mani�
 >
 >L’onglet Styles de la boîte de dialogue Modifier n’est pas activé par défaut.
 
-### Styles avec noms d’éléments  {#styles-with-element-names}
+### Styles avec noms d’éléments   {#styles-with-element-names}
 
 Les développeurs peuvent aussi configurer une liste de noms d’éléments autorisés pour les styles du composant avec la propriété de table de chaînes `cq:styleElements`. Ensuite, dans l’onglet Styles de la stratégie, dans la boîte de dialogue de conception, l’auteur de modèles peut aussi choisir un nom d’élément pour chaque style. Cela permet de définir le nom de l’élément wrapper.
 
