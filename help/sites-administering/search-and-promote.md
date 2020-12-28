@@ -24,7 +24,7 @@ Pour appeler le service Adobe Search&amp;Promote depuis votre site web, effectue
 
 1. Indiquez l’URL du cloud.
 1. Configurez la connexion au service Search&amp;Promote.
-1. Add Search&amp;Promote components to [!UICONTROL Sidekick].
+1. Ajoutez les composants de Search &amp; Promote à [!UICONTROL Sidekick].
 1. Utilisez les composants pour créer le contenu. (Voir [Ajout de fonctionnalités Search&amp;Promote à une page web](/help/sites-authoring/search-and-promote.md).)
 1. Ajout de bannières à vos pages. Les images de bannière sont sensibles aux données Search&amp;Promote.
 1. Générez un plan du site pour l’utilisation du service Search&amp;Promote.
@@ -42,42 +42,42 @@ Pour appeler le service Adobe Search&amp;Promote depuis votre site web, effectue
 
 ## Modification de l’URL du service Search&amp;Promote {#changing-the-search-promote-service-url}
 
-The default URL that is configured for the Search&amp;Promote service is `https://searchandpromote.omniture.com/px/`. Pour utiliser un autre service, utilisez la console OSGi afin de spécifier une autre URL.
+L’URL par défaut configurée pour le service de Search &amp; Promote est `https://searchandpromote.omniture.com/px/`. Pour utiliser un autre service, utilisez la console OSGi afin de spécifier une autre URL.
 
 **Pour modifier l’URL** du service de Search &amp; Promote :
 
-1. Open the [!UICONTROL OSGi] console and tap the **[!UICONTROL Configuration]** tab. ([http://localhost:4502/system/console/configMgr.](http://localhost:4502/system/console/configMgr))
+1. Ouvrez la console [!UICONTROL OSGi] et appuyez sur l&#39;onglet **[!UICONTROL Configuration]**. ([http://localhost:4502/system/console/configMgr.](http://localhost:4502/system/console/configMgr))
 
-1. Click the **[!UICONTROL Day CQ Search&amp;Promote Configuration]** item.
-1. Dans le champ de texte URI **[!UICONTROL du serveur]** distant, saisissez l’URL, puis appuyez sur **[!UICONTROL Enregistrer]**.
+1. Cliquez sur l’élément **[!UICONTROL Configuration des Search &amp; Promote Day CQ]**.
+1. Dans le champ **[!UICONTROL URI du serveur distant]**, saisissez l’URL, puis appuyez sur **[!UICONTROL Enregistrer]**.
 
 ## Configuration de la connexion à Search&amp;Promote {#configuring-the-connection-to-search-promote}
 
 Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages web puissent interagir avec le service. Pour vous connecter, vous avez besoin du numéro d’identification et de compte du membre de votre compte Search&amp;Promote.
 
-**Pour configurer la connexion au Search &amp; Promote**:
+**Pour configurer la connexion au Search &amp; Promote** :
 
-1. From the **[!UICONTROL Tools]** icon > **[!UICONTROL Deployment]**, select **[!UICONTROL Cloud Services]**.
+1. Dans l&#39;icône **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]**, sélectionnez **[!UICONTROL Cloud Services]**.
 
    Ceci vous amène au tableau de bord Services Cloud. Si vous utilisez un ordinateur local, l’URL du tableau de bord se présente comme suit :
 
    [http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)
 
-1. In the [!UICONTROL Cloud Services] page, tap the **[!UICONTROL Adobe Search&amp;Promote]** link or the **[!UICONTROL Search&amp;Promote]** icon.
+1. Dans la page [!UICONTROL Cloud Services], appuyez sur le lien **[!UICONTROL Search &amp; Promote d&#39;Adobe]** ou sur l&#39;icône **[!UICONTROL Search &amp; Promote]**.
 
-1. If this is the first time you are configuring Adobe Search&amp;Promote, tap **[!UICONTROL Configure Now]** to open the [!UICONTROL Create Configuration] panel.
+1. Si c’est la première fois que vous configurez un Search &amp; Promote d’Adobe, appuyez sur **[!UICONTROL Configurer maintenant]** pour ouvrir le panneau [!UICONTROL Créer une configuration].
 
-   If you would like to learn more about Search&amp;Promote click **[!UICONTROL Learn more]** instead.
+   Si vous souhaitez en savoir plus sur les Search &amp; Promote, cliquez sur **[!UICONTROL En savoir plus]** à la place.
 
    ![chlimage_1-409](assets/chlimage_1-409.png)
 
-1. Enter a **[!UICONTROL Title]** that is recognizable to page authors, and enter a unique **[!UICONTROL Name]**, then tap **[!UICONTROL Create]**.
+1. Saisissez un **[!UICONTROL Titre]** reconnaissable aux auteurs de pages, puis saisissez un **[!UICONTROL Nom]** unique, puis appuyez sur **[!UICONTROL Créer]**.
 
    De plus, la configuration nouvellement créée apparaît sous **[!UICONTROL Configurations disponibles]** dans l’élément de liste Adobe Search&amp;Promote **[!UICONTROL Tableau de bord Services cloud]**.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. Dans la boîte de dialogue [!UICONTROL Modifier le composant] , ajoutez les éléments suivants aux champs :
+1. Dans la boîte de dialogue [!UICONTROL Modifier le composant], ajoutez les éléments suivants aux champs :
 
    * **[!UICONTROL ID de membre]**
    * **[!UICONTROL Numéro de compte]**
@@ -96,11 +96,11 @@ Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages 
    >
    >[https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
-   >Où **XXXXXXXX** correspond à votre ID **** membre et **[!UICONTROL spYYYYYYYY]** correspond à votre numéro de compte.
+   >Où **XXXXXX** correspond à votre **[!UICONTROL identifiant membre]** et **[!UICONTROL spYYYYYYY]** correspond à votre numéro de compte.
 
-1. Tap **[!UICONTROL Connect To Search&amp;Promote]**.
+1. Appuyez sur **[!UICONTROL Se connecter à Search &amp; Promote]**.
 
-   When the connection success message appears, tap **[!UICONTROL OK]**.
+   Lorsque le message de réussite de la connexion s’affiche, appuyez sur **[!UICONTROL OK]**.
 
    (Une fois que vous êtes connecté, le texte du bouton est remplacé par **[!UICONTROL Reconnecter à Search&amp;Promote]**.)
 
@@ -112,23 +112,23 @@ Si votre compte de Search &amp; Promote se trouve en Asie ou en Europe, vous dev
 
 **Pour configurer le centre** de données :
 
-1. Navigate to the Web console at `http://localhost:4502/system/console/configMgr/com.day.cq.searchpromote.impl.SearchPromoteServiceImpl`
+1. Accédez à la console Web à l’adresse `http://localhost:4502/system/console/configMgr/com.day.cq.searchpromote.impl.SearchPromoteServiceImpl`
 
    ![chlimage_1-411](assets/chlimage_1-411.png)
 
 1. En fonction de l’emplacement du serveur, redéfinissez l’URI sur l’une des URI suivantes :
 
-   * North America: [https://center.atomz.com/px/](https://center.atomz.com/px/)
-   * EMEA: [https://center.lon5.atomz.com/px/](https://center.lon5.atomz.com/px/)
-   * APAC: [https://center.sin2.atomz.com/px/](https://center.sin2.atomz.com/px/)
+   * Amérique du Nord : [https://center.atomz.com/px/](https://center.atomz.com/px/)
+   * EMEA : [https://center.lon5.atomz.com/px/](https://center.lon5.atomz.com/px/)
+   * APAC : [https://center.sin2.atomz.com/px/](https://center.sin2.atomz.com/px/)
 
 1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
 
 ## Ajout de composants Search&amp;Promote au sidekick {#adding-search-promote-components-to-sidekick}
 
-In [!UICONTROL Design] mode, edit a **[!UICONTROL par]** component to allow the Search&amp;Promote components in [!UICONTROL Sidekick]. (Voir la documentation [Composants](/help/sites-developing/components.md) pour en savoir plus.)
+En mode [!UICONTROL Conception], modifiez un composant **[!UICONTROL par]** pour autoriser les composants Search &amp; Promote dans le Sidekick]. [!UICONTROL  (Voir la documentation [Composants](/help/sites-developing/components.md) pour en savoir plus.)
 
-For information about using the components, see [Adding Search&amp;Promote features to a Web Page](/help/sites-authoring/search-and-promote.md).
+Pour plus d&#39;informations sur l&#39;utilisation des composants, voir [Ajouter des fonctionnalités de Search &amp; Promote à une page Web](/help/sites-authoring/search-and-promote.md).
 
 ## Spécification du service Search&amp;Promote utilisé par vos pages {#specifying-the-search-promote-service-that-your-pages-use}
 
@@ -148,17 +148,17 @@ Lorsque vous configurez les propriétés Search&amp;Promote d’une page, toutes
 
    ![sandphéritpadlock](assets/sandpinheritpadlock.png)
 
-1. Click **[!UICONTROL Add Service]**, select **[!UICONTROL Adobe Search&amp;Promote]**, then click **[!UICONTROL OK]**.
+1. Cliquez sur **[!UICONTROL Ajouter le service]**, sélectionnez **[!UICONTROL Adobe Search &amp; Promote]**, puis cliquez sur **[!UICONTROL OK]**.
 
-1. Select the connection configuration for your Search&amp;Promote account, then click **[!UICONTROL OK]**.
+1. Sélectionnez la configuration de la connexion pour votre compte de Search &amp; Promote, puis cliquez sur **[!UICONTROL OK]**.
 
 ## Flux de produit {#product-feed}
 
 L’intégration de Search &amp; Promote vous permet d’effectuer les opérations suivantes :
 
-* Use the [!UICONTROL eCommerce] API, independently of the underlying repository structure and commerce platform.
-* Leverage the [!UICONTROL Index Connector] feature of Search&amp;Promote to provide a product feed in XML format.
-* Leverage the [!UICONTROL Remote Control] feature of Search&amp;Promote to perform on-demand or scheduled requests of the product feed.
+* Utilisez l&#39;API [!UICONTROL eCommerce], indépendamment de la structure de référentiel sous-jacente et de la plate-forme commerciale.
+* Tirez parti de la fonction [!UICONTROL Connecteur d’index] de Search &amp; Promote pour fournir un flux de produits au format XML.
+* Tirez parti de la fonction [!UICONTROL Remote Control] du Search &amp; Promote pour effectuer des demandes à la demande ou planifiées du flux de produits.
 * Génération de flux pour différents comptes de Search &amp; Promote, configurés en tant que configurations de services Cloud.
 
-For more information, see [Product Feed](/help/sites-administering/product-feed.md).
+Pour plus d’informations, voir [Flux de produits](/help/sites-administering/product-feed.md).
