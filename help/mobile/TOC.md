@@ -14,10 +14,10 @@ ht-degree: 30%
 ---
 
 
-# Guide de l’utilisateur AEM 6.4 Mobile {#mobile}
+# Guide de l’utilisateur AEM 6.4 Mobile  {#mobile}
 
 + [Guide de l’utilisateur mobile](home.md)
-+ Introduction to AEM Mobile {#introduction}
++ Introduction à l&#39;AEM Mobile {#introduction}
    + [Prise en main d’AEM Mobile](getting-started-aem-mobile.md)
    + [AEM Mobile à la demande](getting-started-aem-mobile-on-demand.md)
    + [Applications mobiles](mobile-apps.md)
@@ -34,7 +34,7 @@ ht-degree: 30%
    + [Chargement des ressources partagées](mobile-on-demand-shared-resources.md)
    + [Configuration du cloud](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [Gestion des bannières](mobile-on-demand-managing-banners.md)
-+ Développement d&#39;une application de services à la demande {#developing}
++ Développement de l&#39;application On-Demand Services {#developing}
    + [AEM Mobile à la demande](aem-mobile-on-demand.md)
    + [Modèles d’application et composants](app-templates-and-components1.md)
    + [Propriétés de contenu et noeuds](content-properties.md)
@@ -48,7 +48,7 @@ ht-degree: 30%
    + [Rendu et Diffusion](rendering-and-delivery.md)
    + [Content Services](developing-content-services.md)
    + [Diffusion de contenu](develop-content-as-a-service.md)
-+ Administration des applications On-Demand Services {#administering}
++ Administration de l&#39;application On-Demand Services {#administering}
    + [AEM Mobile à la demande](aem-mobile.md)
    + [Configuration AEM Mobile](aem-mobile-setup.md)
    + [Configuration d’utilisateurs et de groupes d’utilisateurs](aem-mobile-configure-users.md)
