@@ -24,9 +24,9 @@ Cette section vous donne un aperçu des tâches principales que vous exécuterez
 
 Elle traite des sujets suivants :
 
-* [Prise en main](#getting-started) - Détail de la séquence de événements de base dont vous avez besoin pour créer et publier votre première page.
+* [Prise en main](#getting-started)  - Détail de la séquence de événements de base dont vous avez besoin pour créer et publier votre première page.
 
-* [Autres actions](#further-actions) - Suivez les nombreuses autres actions que vous pouvez utiliser lors de la création.
+* [Autres actions](#further-actions)  - Suivez les nombreuses autres actions que vous pouvez utiliser lors de la création.
 
 ## Présentation {#overview}
 
@@ -44,11 +44,11 @@ Le contenu de votre site web est conservé dans une structure en arborescence. P
 
 Avant de procéder à l’édition, vous devez [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page).
 
-### Ouverture d’une page {#opening-a-page}
+### Ouverture d’une page  {#opening-a-page}
 
 Pour la plupart des opérations (l’édition par exemple), vous devez [ouvrir une page](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 
-### Modification d’une page {#editing-a-page}
+### Modification d’une page  {#editing-a-page}
 
 Si votre instance comprend déjà des pages ou si vous venez d’en créer une, vous pouvez [modifier une page](/help/sites-authoring/editing-content.md) en effectuant l’une des opérations suivantes :
 
@@ -61,11 +61,11 @@ Si votre instance comprend déjà des pages ou si vous venez d’en créer une, 
 * [Utilisation du mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode) (pour avoir un aperçu du contenu avant publication)
 * [Verrouillage d’une page](/help/sites-authoring/editing-content.md#locking-a-page)
 
-### Publication d’une page {#publishing-a-page}
+### Publication d’une page  {#publishing-a-page}
 
 Dès que vous avez fini de modifier la page, vous pouvez [la publier (ou l’activer)](/help/sites-authoring/publishing-pages.md) afin que les visiteurs de votre site web puissent y accéder :
 
-## Autres opérations {#further-actions}
+## Autres opérations  {#further-actions}
 
 Une fois les étapes de base accomplies, de nombreuses autres opérations de création sont à votre disposition.
 
@@ -77,7 +77,7 @@ Il est parfois plus facile de [copier une page](/help/sites-authoring/managing-p
 
 La procédure à appliquer pour [déplacer et renommer des pages](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page) est sensiblement la même.
 
-### Annulation de publication d’une page {#unpublishing-a-page}
+### Annulation de publication d’une page  {#unpublishing-a-page}
 
 Pour faire en sorte que du contenu précédemment publié (ou activé) ne soit plus disponible sur votre site web public, vous devez [annuler la publication de la page (la désactiver)](/help/sites-authoring/publishing-pages.md).
 
@@ -85,14 +85,14 @@ Pour faire en sorte que du contenu précédemment publié (ou activé) ne soit p
 
 Si vous n’avez plus besoin d’une page, vous pouvez [la supprimer](/help/sites-authoring/managing-pages.md#deleting-a-page).
 
-### Configuration des propriétés de page {#setting-the-page-properties}
+### Configuration des propriétés de page  {#setting-the-page-properties}
 
 Chaque [page est dotée de propriétés](/help/sites-authoring/editing-page-properties.md) que vous pouvez définir afin de déterminer les différents aspects de son fonctionnement. Vous pouvez le faire dans l’une ou l’autre des interfaces utilisateur.
 
-### Création d’une version d’une page {#creating-a-version-of-a-page}
+### Création d’une version d’une page  {#creating-a-version-of-a-page}
 
 Vous pouvez [créer une version d’une page](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version), puis [revenir à une version donnée](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version) si nécessaire.
 
-## Informations supplémentaires {#more-information}
+## Informations supplémentaires  {#more-information}
 
 Pour plus d’informations sur la création, reportez-vous aux sections [Création de pages](/help/sites-authoring/author-environment-tools.md) et [Utilisation de l’environnement de création](/help/sites-authoring/home.md).
