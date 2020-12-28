@@ -1,8 +1,8 @@
 ---
-title: Prise en main des applications monopages en AEM - Angular
-seo-title: Prise en main des applications monopages en AEM - Angular
-description: Cet article présente un exemple d’application d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page.
-seo-description: Cet article présente un exemple d’application d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page.
+title: Prise en main des SPA en AEM - Angular
+seo-title: Prise en main des SPA en AEM - Angular
+description: Cet article présente un exemple de SPA, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework Angular.
+seo-description: Cet article présente un exemple de SPA, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework Angular.
 uuid: 29748b0d-c269-4d42-8f89-bd7477d997ad
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
@@ -12,37 +12,37 @@ translation-type: tm+mt
 source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1065'
-ht-degree: 30%
+ht-degree: 84%
 
 ---
 
 
-# Getting Started with SPAs in AEM - Angular {#getting-started-with-spas-in-aem-angular}
+# Prise en main des SPA en AEM - Angular {#getting-started-with-spas-in-aem-angular}
 
-Les applications d’une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
+Les applications sur une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
 
-La fonction de création d’application d’une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente une application SPA simplifiée sur la structure Angular, explique comment elle est mise en place, ce qui vous permet de maîtriser rapidement votre propre application SPA.
+La fonction de création d’application sur une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente une SPA simplifiée dans le framework Angular, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA.
 
 >[!NOTE]
 >
->Cet article est basé sur la structure angulaire. Pour le document correspondant au cadre Réagir, voir [Prise en main des applications monopages dans AEM - Réagir](/help/sites-developing/spa-getting-started-react.md).
+>Cet article repose sur le framework Angular. Pour obtenir le document correspondant au framework React, voir [Prise en main des SPA dans AEM – React](/help/sites-developing/spa-getting-started-react.md).
 
 >[!NOTE]
->La fonctionnalité Editeur d’application monopage (SPA) nécessite AEM Service Pack 2 6.4 ou version ultérieure.
+>La fonction Éditeur d’application à page unique (SPA) nécessite AEM Service Pack 2 6.4 ou version ultérieure.
 >
->L’éditeur d’applications monopages est la solution recommandée pour les projets qui nécessitent un rendu côté client basé sur la structure d’applications monopages (par exemple, Réagir ou Angular).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
 
 ## Présentation {#introduction}
 
-Cet article résume le fonctionnement de base d’une application d’une seule page simple et ce que vous devez savoir pour que la vôtre soit opérationnelle.
+Cet article résume le fonctionnement de base d’une SPA simple et ce que vous devez savoir pour que la vôtre soit opérationnelle.
 
-Pour plus d’informations sur le fonctionnement des applications monopages en AEM, voir les documents suivants :
+Pour plus de détails sur le fonctionnement des SPA dans AEM, consultez les documents suivants :
 
-* [Présentation et présentation des applications monopages](/help/sites-developing/spa-walkthrough.md)
+* [Introduction et présentation des SPA](/help/sites-developing/spa-walkthrough.md)
 
 * [Introduction à la création d’une application d’une seule page](/help/sites-developing/spa-overview.md)
 
-* [Plan directeur d’applications sur une seule page (SPA)](/help/sites-developing/spa-blueprint.md)
+* [Plan directeur d’applications sur une sule page (SPA)](/help/sites-developing/spa-blueprint.md)
 
 >[!NOTE]
 >
@@ -50,15 +50,15 @@ Pour plus d’informations sur le fonctionnement des applications monopages en A
 >
 >Une SPA développée en dehors d’AEM n’est pas modifiable si elle ne respecte pas le contrat de modèle de contenu.
 
-Ce document vous fera découvrir la structure d&#39;une application d&#39;une seule page d&#39;une seule page d&#39;une seule page et vous permettra d&#39;illustrer son fonctionnement afin que vous puissiez appliquer cette compréhension à votre propre application d&#39;une seule page d&#39;une seule page.
+Ce document décrit la structure d’une SPA simplifiée et explique son fonctionnement pour que vous puissiez appliquer cette compréhension à votre propre SPA.
 
 ## Dépendances, configuration et construction {#dependencies-configuration-and-building}
 
-Outre la dépendance angulaire attendue, l’exemple d’application d’une seule page peut tirer parti de bibliothèques supplémentaires pour rendre la création de l’application d’une seule page plus efficace.
+En plus de la dépendance Angular attendue, l’exemple de SPA tire parti de bibliothèques supplémentaires pour optimiser la création de la SPA.
 
 ### Dépendances {#dependencies}
 
-Le `package.json` fichier définit les exigences du pack d’application d’une seule page. Les dépendances AEM minimales requises sont répertoriées ici.
+Le fichier `package.json` définit les exigences du module SPA global. Les dépendances AEM minimales requises sont répertoriées ici.
 
 ```
 "dependencies": {
@@ -68,7 +68,7 @@ Le `package.json` fichier définit les exigences du pack d’application d’une
 }
 ```
 
-The `aem-clientlib-generator` is leveraged to make the creation of client libraries automatic as part of the build process.
+`aem-clientlib-generator` est utilisé pour automatiser la création de bibliothèques clientes dans le cadre du processus de construction.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -76,9 +76,9 @@ Plus de détails à ce sujet sont disponibles [sur GitHub ici](https://github.co
 
 >[!CAUTION]
 >
->La version minimale requise est 1.4.1. `aem-clientlib-generator`
+>La version minimale de `aem-clientlib-generator` requise est 1.4.1.
 
-The `aem-clientlib-generator` is configured in the `clientlib.config.js` file as follows.
+`aem-clientlib-generator` est configuré dans le fichier `clientlib.config.js`comme suit.
 
 ```
 module.exports = {
@@ -107,29 +107,29 @@ module.exports = {
 };
 ```
 
-### Construction {#building}
+### Génération {#building}
 
 En réalité, la construction de l’application utilise [Webpack](https://webpack.js.org/) pour la transpilation, en plus du aem-clientlib-generator pour la création automatique de la bibliothèque cliente. Par conséquent, la commande de construction est similaire à :
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
-Une fois construit, le module peut être téléchargé dans une instance AEM.
+Une fois généré, le module peut être chargé dans une instance AEM.
 
-### Archétype de projet AEM {#aem-project-archetype}
+### Archétype de projet AEM{#aem-project-archetype}
 
-Tout projet AEM doit tirer parti de l’archétype [de projet](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, qui prend en charge les projets d’application d’une seule page à l’aide de React ou d’Angular et qui utilise le SDK d’application d’une seule page.
+Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html), qui prend en charge les projets SPA à l’aide de React ou d’Angular et tire parti du SDK SPA.
 
 ## Structure d’application {#application-structure}
 
-L’inclusion des dépendances et la création de votre application comme décrit précédemment vous laisseront avec un pack d’applications monopages fonctionnel que vous pourrez télécharger sur votre instance AEM.
+Si vous ajoutez les dépendances et que vous construisez votre application comme décrit précédemment, vous disposez d’un module SPA opérationnel que vous pouvez charger dans votre instance AEM.
 
-La section suivante de ce document vous permettra de découvrir comment une application SPA est structurée en AEM, les fichiers importants qui pilotent l&#39;application et comment elle fonctionne ensemble.
+La section suivante de ce document explique comment une SPA est structurée dans AEM et décrit les fichiers importants qui pilotent l’application et leur interfonctionnement.
 
-Un composant d’image simplifié est utilisé comme exemple, mais tous les composants de l’application sont basés sur le même concept.
+Un composant image simplifié est utilisé à titre d’exemple, mais tous les composants de l’application reposent sur le même concept.
 
 ### app.module.ts {#app-module-ts}
 
-The entry point into the SPA is the `app.module.ts` file shown here simplified to focus on the important content.
+Le point d’entrée dans la SPA est le fichier `app.module.ts` présenté ici de manière simplifiée afin que l’accent porte sur le contenu important.
 
 ```javascript
 // app.module.ts
@@ -152,7 +152,7 @@ import { AppRoutingModule } from './app-routing.module';
 export class AppModule {}
 ```
 
-Le `app.module.ts` fichier est le point de départ de l’application et contient la configuration initiale du projet et est utilisé `AppComponent` pour amorcer l’application.
+Le fichier `app.module.ts` constitue le point de départ de l’application, contient la configuration initiale du projet et utilise `AppComponent` pour démarrer l’application.
 
 #### Instanciation statique {#static-instantiation}
 
@@ -160,7 +160,7 @@ Lorsque le composant est instancié de manière statique à l’aide du modèle 
 
 ### app.component.ts {#app-component-ts}
 
-Une fois `app.module.ts` amorcé `AppComponent`, il peut initialiser l’application, qui est présentée ici dans une version simplifiée pour se concentrer sur le contenu important.
+Une fois que `app.module.ts` a amorcé `AppComponent`, il peut ensuite initialiser l’application, qui est présentée ici dans une version simplifiée afin que l’accent porte sur le contenu important.
 
 ```javascript
 // app.component.ts
@@ -194,7 +194,7 @@ export class AppComponent {
 
 ### main-content.component.ts {#main-content-component-ts}
 
-En traitant la page, `app.component.ts` les appels `main-content.component.ts` sont répertoriés ici dans une version simplifiée.
+En traitant la page, `app.component.ts` appelle `main-content.component.ts` répertorié ici dans une version simplifiée.
 
 ```javascript
 import { Component } from '@angular/core';
@@ -225,11 +225,11 @@ export class MainContentComponent {
 }
 ```
 
-`MainComponent` accède à la représentation JSON du modèle de page et traite le contenu pour encapsuler/décorer chaque élément de la page. De plus amples détails sur `Page` sont disponibles dans le document [Plan directeur de SPA](/help/sites-developing/spa-blueprint.md).
+`MainComponent` accède à la représentation JSON du modèle de page et traite le contenu pour encapsuler/décorer chaque élément de la page. De plus amples détails sur la `Page` sont disponibles dans le document [Plan directeur d’applications sur une seule page (SPA)](/help/sites-developing/spa-blueprint.md).
 
 ### image.component.ts {#image-component-ts}
 
-Le `Page` est composé de composants. Une fois le fichier JSON ingéré, il `Page` peut traiter ces composants, comme `image.component.ts` illustré ici.
+L’élément `Page` est composé de composants. Une fois le fichier JSON ingéré, l’élément `Page` peut traiter ces composants, comme `image.component.ts` illustré ici.
 
 ```
 /// image.component.ts
@@ -258,7 +258,7 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-Les applications d’une seule page dans AEM ont comme principale finalité de mapper les composants SPA aux composants AEM et de mettre à jour le composant lorsque le contenu est modifié (et vice versa). See the document [SPA Editor Overview](/help/sites-developing/spa-overview.md) for an summary of this communication model.
+Les SPA dans AEM ont comme principale finalité de mapper les composants SPA aux composants AEM et de mettre à jour le composant lorsque le contenu est modifié (et vice versa). Consultez le document [Aperçu de l’éditeur de SPA](/help/sites-developing/spa-overview.md), qui résume ce modèle de communication.
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
@@ -281,20 +281,20 @@ Enfin, l’image peut être rendue dans `image.component.html`.
 <img [src]="src" [alt]="alt" [title]="title"/>
 ```
 
-## Partage d’informations entre les composants de l’application d’une seule page {#sharing-information-between-spa-components}
+## Partage d’informations entre les composants SPA {#sharing-information-between-spa-components}
 
-Il est régulièrement nécessaire que les composants d’une application d’une seule page partagent des informations. Il existe plusieurs méthodes recommandées pour ce faire, énumérées ci-dessous dans un ordre croissant de complexité.
+Il est régulièrement nécessaire que les composants d’une application sur une seule page partagent des informations. Il existe plusieurs méthodes recommandées pour cela, énumérées ci-dessous dans un ordre de complexité croissant.
 
-* **Option 1 :** Centralisez la logique et diffusez les éléments nécessaires, par exemple en utilisant une classe complète comme solution purement orientée objet.
-* **Option 2 :** Partagez des états de composant en utilisant une bibliothèque d’états telle que NgRx.
-* **Option 3 :** Tirez parti de la hiérarchie d’objets en personnalisant et en étendant le composant de conteneur.
+* **Option 1 :** centralisez la logique et procédez à une diffusion vers les composants nécessaires ; par exemple, en utilisant une classe util comme solution orientée objet pure.
+* **Option 2 :** partagez des états de composant en utilisant une bibliothèque d’états telle que NgRx.
+* **Option 3 :** tirez parti de la hiérarchie d’objets en personnalisant et en étendant le composant de conteneur.
 
 ## Étapes suivantes {#next-steps}
 
-Pour obtenir un guide détaillé sur la création de votre propre application d’une seule page d’accueil, consultez le didacticiel [](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)Prise en main de l’éditeur d’applications d’une seule page d’AEM - Événements WKND.
+Pour obtenir un guide détaillé sur la création de votre propre SPA, consultez le [Guide de prise en main de l’AEM Éditeur de la SPA - Événements WKND ](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 
-Pour plus d’informations sur la manière de vous organiser pour développer des applications monopages pour AEM voir l’article [Developing SPAs for AEM](/help/sites-developing/spa-architecture.md)(Développement d’applications monopages pour).
+Pour plus d&#39;informations sur la façon de vous organiser pour développer SPA pour AEM voir l&#39;article [Développer un SPA pour l&#39;](/help/sites-developing/spa-architecture.md).
 
-Pour plus d’informations sur le mappage du modèle dynamique aux composants et son fonctionnement dans les applications monopages dans AEM, voir l’article Mappage du modèle [dynamique aux composants pour les applications monopages](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Pour plus d&#39;informations sur le mappage modèle dynamique/composant et comment il fonctionne dans SPA dans AEM, consultez l&#39;article [Modèle dynamique/mappage de composants pour le ](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Si vous souhaitez mettre en oeuvre des applications monopages dans AEM pour une structure autre que React ou Angular ou si vous souhaitez simplement plonger dans le fonctionnement du SDK SPA pour AEM, reportez-vous à l’article [SPA Blueprint](/help/sites-developing/spa-blueprint.md) .
+Si vous souhaitez mettre en oeuvre des SPA dans AEM pour un cadre autre que Réagir ou Angular ou tout simplement plonger dans le fonctionnement du SDK SPA pour les , reportez-vous à l&#39;article [Plan directeur du ](/help/sites-developing/spa-blueprint.md).
