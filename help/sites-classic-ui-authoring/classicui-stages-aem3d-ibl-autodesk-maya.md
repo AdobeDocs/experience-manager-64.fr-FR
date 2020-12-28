@@ -26,17 +26,17 @@ ht-degree: 84%
 1. Configurez l’éclairage basé par image.
 
    1. Dans Paramètres de rendu, sélectionnez **[!UICONTROL Rendu avec : Mental Ray]**, puis ouvrez l’onglet Scène.****
-   1. Open the **[!UICONTROL Environment]** accordion, then click **[!UICONTROL Create Image Based Lighting]**.
+   1. Ouvrez l’accordéon **[!UICONTROL Environnement]**, puis cliquez sur **[!UICONTROL Créer un éclairage basé sur l’image]**.
    1. Cliquez sur l’icône de la boîte de dialogue qui présente une flèche vers la droite, située sur le côté gauche de la boîte de dialogue, pour sélectionner le nœud IBL `mentalRayIblShape1`[!UICONTROL , puis quittez les Paramètres de rendu].
-   1. In the **[!UICONTROL Attribute Editor]**, select the transform node `mentalRayIbl1`, then rename the transform node to `AdobeIbl`.
+   1. Dans l’**[!UICONTROL éditeur d’attributs]**, sélectionnez le noeud de transformation `mentalRayIbl1`, puis renommez le noeud de transformation en `AdobeIbl`.
 
-   1. Set the [!UICONTROL Scale] of the node to make the environment sphere significantly larger than the largest 3D object to be shown with this stage (for example, `10000,10000,10000`).
+   1. Définissez l’[!UICONTROL échelle] du noeud pour que la sphère d’environnement soit significativement plus grande que l’objet 3D le plus grand à afficher avec cette étape (par exemple, `10000,10000,10000`).
    1. Sélectionnez le nœud `AdobeIblShape` et configurez-le comme suit :
 
       * **[!UICONTROL Mappage]** : sphérique
       * **[!UICONTROL Type]** : fichier image
       * **[!UICONTROL Émission de lumière]** : vrai
-   1. Attach the desired 32-bit TIFF image to the `AdobeIbl` node.
+   1. Joignez l’image TIFF de 32 bits souhaitée au noeud `AdobeIbl`.
 
 
 1. Configurez le plan de masse.
@@ -50,17 +50,17 @@ ht-degree: 84%
 
 1. Configurez le rendu avec Mental Ray.
 
-   Configure the [!UICONTROL Render Settings] with the following suggestions.
+   Configurez les [!UICONTROL paramètres de rendu] avec les suggestions suivantes.
 
-   * **[!UICONTROL Onglet courant]**
+   * **** Courant
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
+      Décochez la case **[!UICONTROL canal Alpha (masque)]** pour toutes les caméras de rendu.
 
    * **[!UICONTROL Onglet Qualité]**
 
       * **[!UICONTROL Qualité générale]** : `0.5`   ou moins
-      * **[!UICONTROL Mode]** Diffuse Indirecte (GI) - `Final Gather`
-      * **[!UICONTROL Taille]** du filtre - `2.0`, `2.0`
+      * **[!UICONTROL Mode]**  Diffuse Indirecte (GI) -  `Final Gather`
+      * **[!UICONTROL Taille]**  du filtre -  `2.0`,  `2.0`
    * Définissez le rendu de la scène selon les tailles de l’image type que vous comptez utiliser. Si nécessaire, affinez les lumières, les paramètres de rendu ou les deux pour parvenir au résultat souhaité.
 
        Gardez à l’esprit que le rendu avec Mental Ray, à l’aide de l’éclairage basé par image, est très lent et nécessite une utilisation importante du processeur. Adobe recommande de configurer les paramètres de qualité au niveau le plus faible, qui sont toujours capables de produire la qualité de rendu souhaité.
