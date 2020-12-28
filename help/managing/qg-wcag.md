@@ -36,7 +36,7 @@ Par conséquent, la compréhension des objectifs de WCAG 2.0 et de la structure
 
 L’objectif de WCAG 2.0 est de fournir des consignes présentant les caractéristiques suivantes :
 
-* Sont **agnostiques en matière de technologie :**
+* Sont **agnostiques en matière de technologie:**
 
    En d’autres termes, des directives qui peuvent être appliquées à une gamme de formats de contenu Web, et pas seulement au format HTML. Ainsi, WCAG 2.0 peut couvrir le contenu généré par ou fourni au format PDF, Flash, JavaScript, ainsi que d’autres technologies web actuelles et futures. Cela vise à corriger une faiblesse identifiée de WCAG 1.0, dans la mesure où il était axé sur le format HTML au détriment d’autres formats de contenu web.
 
