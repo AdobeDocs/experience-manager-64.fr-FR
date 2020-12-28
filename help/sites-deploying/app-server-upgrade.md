@@ -56,7 +56,7 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
 
 1. Supprimez les propriétés requises du fichier sling.properties en procédant comme suit :
 
-   1. Open the file located at `crx-quickstart/launchpad/sling.properties`
+   1. Ouvrez le fichier situé dans `crx-quickstart/launchpad/sling.properties`.
    1. Supprimez les propriétés suivantes et enregistrez le fichier :
 
       1. `sling.installer.dir`
@@ -71,8 +71,8 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
 1. Supprimez les fichiers et dossiers qui ne sont plus nécessaires. Vous devez précisément supprimer les éléments suivants :
 
    * Le **dossier launchpad/startup**. Vous pouvez le supprimer en exécutant la commande suivante dans le terminal :`rm -rf crx-quickstart/launchpad/startup`
-   * The **base.jar file**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-   * The **BootstrapCommandFile_timestamp.txt file**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * Le fichier **base.jar** : `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * Le **fichier BootstrapCommandFile_timestamp.txt** : `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
 1. Copiez le segmentstore (magasin de segments) nouvellement migré à son emplacement approprié :
 
@@ -98,7 +98,7 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
 
 1. Modifiez les fichiers de configuration pour les rendre prêts à l’emploi. Plus précisément :
 
-   * Add the following line to **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
+   * Ajoutez la ligne suivante sur **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config** :
 
       `customBlobStore=true`
 
