@@ -18,7 +18,7 @@ ht-degree: 67%
 ---
 
 
-# Configuration de LDAP avec AEM 6 {#configuring-ldap-with-aem}
+# Configuration de LDAP avec AEM 6  {#configuring-ldap-with-aem}
 
 LDAP (**L** ightweight **D** irectory **A** ccess **P** rotocol) est un protocole utilisé pour accéder aux services d’annuaire centralisé. Cela permet de réduire l’effort de gestion des comptes utilisateur, car plusieurs applications peuvent accéder à ces comptes. L’un de ces serveurs LDAP est Active Directory. LDAP est souvent utilisé pour appliquer l’authentification unique, qui permet à un utilisateur d’accéder à plusieurs applications après s’être connecté une seule fois.
 
@@ -94,11 +94,11 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
    <td>Durée jusqu’à ce que la recherche expire</td> 
   </tr> 
   <tr> 
-   <td><strong>principal max du pool d’administrateurs</strong></td> 
+   <td><strong>Principal max du pool d’administrateurs</strong></td> 
    <td>Taille principale maximale du pool de connexions d’administration.</td> 
   </tr> 
   <tr> 
-   <td><strong>principal maximal du pool d’utilisateurs</strong></td> 
+   <td><strong>Principal maximal du pool d’utilisateurs</strong></td> 
    <td>Taille principale maximale du pool de connexions utilisateur.</td> 
   </tr> 
   <tr> 
@@ -107,7 +107,7 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
   </tr> 
   <tr> 
    <td><strong>Classes d’objets utilisateur</strong></td> 
-   <td>liste des classes d'objets qu'une entrée utilisateur doit contenir.</td> 
+   <td>Liste des classes d'objets qu'une entrée utilisateur doit contenir.</td> 
   </tr> 
   <tr> 
    <td><strong>Attribut d’ID utilisateur</strong></td> 
@@ -127,7 +127,7 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
   </tr> 
   <tr> 
    <td><strong>Classes d’objets de groupe</strong></td> 
-   <td>liste des classes d'objets qu'une entrée de groupe doit contenir.</td> 
+   <td>Liste des classes d'objets qu'une entrée de groupe doit contenir.</td> 
   </tr> 
   <tr> 
    <td><strong>Attribut de nom de groupe</strong></td> 
@@ -172,7 +172,7 @@ Les options de configuration suivantes sont disponibles pour le gestionnaire de 
   </tr> 
   <tr> 
    <td><strong>Mappage des propriétés utilisateur</strong></td> 
-   <td>Définition de mappage des Listes des propriétés locales par rapport aux propriétés externes.</td> 
+   <td>Définition de mappage des listes des propriétés locales par rapport aux propriétés externes.</td> 
   </tr> 
   <tr> 
    <td><strong>Préfixe de chemin d’accès utilisateur</strong></td> 
@@ -180,7 +180,7 @@ Les options de configuration suivantes sont disponibles pour le gestionnaire de 
   </tr> 
   <tr> 
    <td><strong>Expiration de l’abonnement utilisateur</strong></td> 
-   <td>Heure après laquelle l’adhésion expire.<br /> </td> 
+   <td>Heure après laquelle l'adhésion expire.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Profondeur d'imbrication de l'appartenance des utilisateurs</strong></td> 
@@ -196,7 +196,7 @@ Les options de configuration suivantes sont disponibles pour le gestionnaire de 
   </tr> 
   <tr> 
    <td><strong>Mappage des propriétés du groupe</strong></td> 
-   <td>Définition de mappage des Listes des propriétés locales par rapport aux propriétés externes.</td> 
+   <td>Définition de mappage des listes des propriétés locales par rapport aux propriétés externes.</td> 
   </tr> 
   <tr> 
    <td><strong>Préfixe de chemin de groupe</strong></td> 
@@ -240,13 +240,13 @@ Vous pouvez configurer AEM 6 pour vous authentifier auprès de LDAP via SSL en 
 
 1. Testez la connexion au serveur LDAP.
 
-### Création de certificats SSL {#creating-ssl-certificates}
+### Création de certificats SSL  {#creating-ssl-certificates}
 
 Les certificats auto-signés peuvent être utilisés lors de la configuration d’AEM pour s’authentifier auprès d’AEM via SSL. Voici un exemple de méthode de travail utilisée pour générer des certificats à utiliser avec AEM.
 
 1. Assurez-vous qu’une bibliothèque SSL est installée et fonctionne. Cette procédure utilise OpenSSL comme exemple.
 
-1. Créez un fichier de configuration OpenSSL personnalisée (cnf). Pour ce faire, copiez le fichier de configuration **openssl.cnf **et personnalisez-le. On UNIX systems, it is usually located at `/usr/lib/ssl/openssl.cnf`
+1. Créez un fichier de configuration OpenSSL personnalisée (cnf). Pour ce faire, copiez le fichier de configuration **openssl.cnf **et personnalisez-le. Sur les systèmes UNIX, il se trouve généralement à `/usr/lib/ssl/openssl.cnf`
 
 1. Créez la clé racine CA en exécutant la commande ci-dessous sur un terminal :
 
@@ -271,7 +271,7 @@ Les certificats auto-signés peuvent être utilisés lors de la configuration d�
 
 1. Enfin, ajoutez le certificat au KeyStore Java.
 
-## Activation de la journalisation du débogage {#enabling-debug-logging}
+## Activation de la journalisation du débogage  {#enabling-debug-logging}
 
 Vous pouvez activer la journalisation du débogage pour le fournisseur d’identités LDAP et le module de connexion externe afin de résoudre les problèmes de connexion.
 
