@@ -45,7 +45,7 @@ Content Services peut diffuser le contenu sous la forme de ressources, de code H
 >
 >Voir **[Administration de Content Services](/help/mobile/developing-content-services.md)** pour plus d’informations.
 >
->See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
+>Pour plus d’informations, consultez la [documentation du navigateur de configuration](/help/sites-administering/configurations.md).
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
