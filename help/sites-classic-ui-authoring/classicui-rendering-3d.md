@@ -38,7 +38,7 @@ Le rendu de contenu 3D consomme d’importantes ressources du serveur, notammen
 
 Quelques minutes suffisent généralement au moteur de rendu Rapid Refine pour effectuer le rendu des images de plus grande taille. Cependant, il faut souvent de nombreuses minutes, voire des heures, aux moteurs de rendu tiers lorsqu’ils sont configurés pour une qualité maximale.
 
-Les tâches de conversion, de traitement et de rendu sont placées en file d’attente sur le serveur de sorte à éviter sa surcharge. The message &quot;Waiting for rendering...&quot; is shown on recently uploaded assets in the [!UICONTROL Card View]. Cet état indique que d’autres tâches de traitement ou de rendu doivent se terminer pour que la tâche de rendu en cours puisse commencer.
+Les tâches de conversion, de traitement et de rendu sont placées en file d’attente sur le serveur de sorte à éviter sa surcharge. Message &quot;En attente de rendu...&quot; s’affiche sur les actifs récemment transférés dans la [!UICONTROL Vue de carte]. Cet état indique que d’autres tâches de traitement ou de rendu doivent se terminer pour que la tâche de rendu en cours puisse commencer.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Les tâches de conversion, de traitement et de rendu sont placées en file d’a
 
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon (spotlight), then select a stage name with the background and lighting that you want to apply to the 3D object.
+1. Près du coin supérieur droit de la page des détails de la ressource, appuyez sur l&#39;icône **[!UICONTROL Sélecteur d&#39;état]** (point phare), puis sélectionnez un nom d&#39;étape avec l&#39;arrière-plan et l&#39;éclairage que vous souhaitez appliquer à l&#39;objet 3D.
 
    Voir [Utilisation de scènes dans AEM 3D](/help/sites-classic-ui-authoring/classicui-stages-aem3d.md).
 
@@ -67,7 +67,7 @@ Les tâches de conversion, de traitement et de rendu sont placées en file d’a
 
    [!UICONTROL Icône de sélecteur de scène]
 
-1. On the **[!UICONTROL Render]** drop-down list on the left side of the asset details page, select a renderer.
+1. Dans la liste déroulante **[!UICONTROL Rendu]** sur le côté gauche de la page des détails de la ressource, sélectionnez un rendu.
 
    Le moteur de rendu **[!UICONTROL Rapid Refine]** par défaut est toujours disponible. Si la scène sélectionnée est dans un format natif, le moteur de rendu tiers correspondant est également disponible dans la liste pour sélection.
 
@@ -75,12 +75,12 @@ Les tâches de conversion, de traitement et de rendu sont placées en file d’a
 
 1. Procédez comme suit :
 
-   * In the **[!UICONTROL Width and Height]** fields, enter the pixel width and height that you want your image rendered.
-   * In the **[!UICONTROL Image Name]** field, enter the name of the rendered image.
-   * In the **[!UICONTROL Export Path]** field, enter the path where you want the rendered image stored. Or, tap the **[!UICONTROL Browse]** icon and navigate to a location.
+   * Dans les champs **[!UICONTROL Largeur et Hauteur]**, entrez la largeur et la hauteur en pixels à rendre pour l’image.
+   * Dans le champ **[!UICONTROL Nom de l’image]**, saisissez le nom de l’image rendue.
+   * Dans le champ **[!UICONTROL Chemin d’exportation]**, saisissez le chemin d’accès où vous souhaitez stocker l’image rendue. Ou appuyez sur l&#39;icône **[!UICONTROL Parcourir]** et accédez à un emplacement.
    * (Facultatif) Cochez ou décochez la case **[!UICONTROL Remplacer l’image existante]**.
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon. Sélectionnez une vue caméra à appliquer à l’image dont le rendu a été effectué.
+1. Près du coin supérieur droit de la page des détails de la ressource, appuyez sur l’icône **[!UICONTROL Sélecteur d’appareil photo]**. Sélectionnez une vue caméra à appliquer à l’image dont le rendu a été effectué.
 
    Les barres gauche et droite ou les barres supérieure et inférieure composent un indicateur visuel des parties de la vue dont le rendu sera effectué. Lorsque la caméra est disponible à partir de la scène sélectionnée, vous pouvez choisir une caméra prédéfinie.
 
@@ -90,5 +90,5 @@ Les tâches de conversion, de traitement et de rendu sont placées en file d’a
 
 1. Appuyez sur **[!UICONTROL Démarrer le rendu]** pour lancer le processus de rendu.
 
-   Un message s’affiche temporairement pour indiquer que le rendu a commencé. For convenience, this message also includes a link to the selected [!UICONTROL Output Folder] so you can navigate to it directly.
+   Un message s’affiche temporairement pour indiquer que le rendu a commencé. Pour plus de commodité, ce message comprend également un lien vers le [!UICONTROL dossier de sortie] sélectionné afin que vous puissiez y accéder directement.
 
