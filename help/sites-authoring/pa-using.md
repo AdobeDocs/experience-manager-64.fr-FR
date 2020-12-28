@@ -22,7 +22,7 @@ ht-degree: 93%
 
 Utilisez les données d’analyse de page pour mesurer l’efficacité du contenu de page.
 
-## Les données d’analyse sont visibles à partir de la console {#analytics-visible-from-the-console}
+## Les données d’analyse sont visibles à partir de la console  {#analytics-visible-from-the-console}
 
 ![aa-10](assets/aa-10.png)
 
@@ -76,17 +76,17 @@ Les membres du groupe d’utilisateurs administrateurs d’analyse peuvent confi
 
 ### Ouverture de Content Insights à partir de la console Sites {#opening-content-insights-from-sites}
 
-Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites console to further investigate page effectiveness.
+Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour en savoir plus sur l&#39;efficacité des pages.
 
 1. Dans la console Sites, sélectionnez la page pour laquelle vous souhaitez voir Content Insight.
 1. Sur la barre d’outils, cliquez sur l’icône Analyses et recommandations.
 
    ![](do-not-localize/chlimage_1-16.png)
 
-## Les données d’analyse sont visibles dans l’éditeur de page (carte d’activité) {#analytics-visible-from-the-page-editor-activity-map}
+## Les données d’analyse sont visibles dans l’éditeur de page (carte d’activité)  {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>Le [module externe ActivityMap fourni par Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) doit maintenant être utilisé.
