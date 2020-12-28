@@ -51,7 +51,7 @@ Les pages et la section suivantes fournissent des informations et des consignes�
 
    Adobe Experience Manager (AEM) s’accompagne de nombreuses fonctions et fonctionnalités qui simplifient l’utilisation des formulaires adaptatifs pour cette catégorie d’utilisateurs. Cette solution aide également les auteurs à créer des formulaires adaptatifs accessibles.
 
-## World Wide Web Consortium et WCAG 2.0 {#world-wide-web-consortium-and-wcag}
+## World Wide Web Consortium et WCAG 2.0  {#world-wide-web-consortium-and-wcag}
 
 Le [World Wide Web Consortium (W3C)](https://www.w3.org/) est une communauté internationale dédiée aux normes web. Pour aider les développeurs et concepteurs web à créer des sites web accessibles, la [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) a publié les [Consignes sur l’accessibilité des contenus web (WCAG) 2.0](https://www.w3.org/TR/WCAG20/) en décembre 2008 (mise à jour de la version originale publiée en 1999).
 
@@ -63,16 +63,16 @@ En utilisant Adobe Experience Manager, les auteurs de contenu et/ou les propri
 
 Certains aspects de WCAG 2.0 sont accentués dans notre [guide rapide relatif à WCAG 2.0](/help/managing/qg-wcag.md).
 
-### Niveaux de conformité à l’accessibilité WCAG 2.0 {#wcag-accessibility-conformance-levels}
+### Niveaux de conformité à l’accessibilité WCAG 2.0  {#wcag-accessibility-conformance-levels}
 
 WCAG 2.0 fournit des [consignes (avec les critères de réussite associés) couvrant les niveaux d’accessibilité](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
 
-These, as they relate to AEM, are covered under [Level A and AA Conformance](/help/sites-authoring/creating-accessible-content.md). Lors de la création de votre site, vous devez déterminer à quel niveau général il doit se conformer.
+Celles-ci, en ce qui concerne l&#39;AEM, sont couvertes par [niveau A et une conformité AA](/help/sites-authoring/creating-accessible-content.md). Lors de la création de votre site, vous devez déterminer à quel niveau général il doit se conformer.
 
 >[!NOTE]
 >
 >Étant donné qu’il est impossible de répondre à tous les critères de réussite du niveau AAA pour certains types de contenu, il n’est pas recommandé comme niveau de conformité requis.
 
-## L’accessibilité chez Adobe  {#accessibility-at-adobe}
+## L’accessibilité chez Adobe   {#accessibility-at-adobe}
 
 Pour plus d’informations, consultez le [Centre de ressources sur l’accessibilité Adobe](https://www.adobe.com/accessibility/).
