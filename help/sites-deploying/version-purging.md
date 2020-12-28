@@ -32,7 +32,7 @@ Ces versions n’étant jamais purgées, la taille du référentiel va continuer
 
 AEM est livré avec divers mécanismes vous permettant de gérer le référentiel :
 
-* le Gestionnaire de [versions](#version-manager)
+* [Version Manager](#version-manager)
 
    Vous pouvez configurer cette option pour purger les anciennes versions lors de la création de nouvelles versions.
 
@@ -50,7 +50,7 @@ AEM est livré avec divers mécanismes vous permettant de gérer le référentie
 
        Lorsque l’âge d’une version dépasse cette valeur, elle est purgée du référentiel. 
 
-* the [Version Purge maintenance task](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Par conséquent, cela réduit la nécessité d’utiliser manuellement les outils de purge de version.
+* la [tâche de maintenance de purge de version](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Par conséquent, cela réduit la nécessité d’utiliser manuellement les outils de purge de version.
 
 >[!CAUTION]
 >
@@ -104,7 +104,7 @@ Les options suivantes sont disponibles :
 
 ### Combinaison d’options de conservation {#combining-retention-options}
 
-The options defining how which versions should be retained ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), can be combined depending on your requirements.
+Les options définissant comment les versions doivent être conservées ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`) peuvent être combinées en fonction de vos besoins.
 
 Par exemple, en définissant le nombre maximum de versions à conserver ET la version la plus ancienne à conserver :
 
