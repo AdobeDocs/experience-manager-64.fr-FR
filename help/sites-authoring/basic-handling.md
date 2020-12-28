@@ -48,13 +48,13 @@ Cliquez sur l’une des options pour ouvrir la console appropriée. La console *
 
 Cliquez ou appuyez sur **Sites** pour commencer.
 
-### Navigation dans le produit  {#product-navigation}
+### Navigation dans le produit   {#product-navigation}
 
 La première fois que vous accédez à une console, un didacticiel de navigation du produit démarre. Prenez quelques instants pour cliquer ou appuyer sur divers éléments afin de vous familiariser avec le fonctionnement de base d’AEM.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
 
-Click or tap **Got it!** pour passer à la page suivante de la présentation. Click or tap **Close** or click or tap outside of the overview dialogue to close.
+Cliquez ou appuyez sur **Compris !** pour passer à la page suivante de la présentation. Cliquez ou appuyez sur **Fermer** ou cliquez ou appuyez sur en dehors de la boîte de dialogue d’aperçu pour fermer.
 
 Si vous ne désélectionnez pas l’option **Ne plus afficher ce message**, la présentation redémarrera la prochaine fois que vous accéderez à la console.
 
@@ -110,7 +110,7 @@ Les options disponibles dans ces panneaux sont décrites ci-dessous.
    <td>Cette console permet de créer, de gérer et de traiter vos <a href="/help/forms/using/introduction-aem-forms.md">formulaires et documents</a>&gt;.</td> 
   </tr>
   <tr>
-   <td>Personnalisation  </td> 
+   <td>Personnalisation </td> 
    <td>Cette console propose un <a href="/help/sites-authoring/personalization.md">ensemble d’outils de création de contenu ciblé et de présentation d’expériences personnalisées</a>.</td> 
   </tr>
   <tr>
@@ -190,7 +190,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Cet élément est disponible en mode Liste uniquement. See [list view](#list-view) for more information.
+   Cet élément est disponible en mode Liste uniquement. Voir [liste vue](#list-view) pour plus d&#39;informations.
 
 * Bouton **Créer**
 
@@ -228,7 +228,7 @@ Plusieurs ressources d’aide sont disponibles :
 
    Parcourez cet aperçu comme vous le feriez avec l’[aperçu de navigation du produit](/help/sites-authoring/basic-handling.md#product-navigation) la première fois que vous accédez à une console.
 
-   Dans le menu [**Informations sur la page **, sélectionnez l’option** Aide **](/help/sites-authoring/author-environment-tools.md#accessing-help)pour afficher de nouveau cette présentation à tout moment.
+   Dans le menu [**Informations sur la page**, sélectionnez l’option **Aide**](/help/sites-authoring/author-environment-tools.md#accessing-help) pour afficher de nouveau cette présentation à tout moment.
 
 * **Console Outils**
 
@@ -269,7 +269,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 >
 >Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
 
-## Actions rapides  {#quick-actions}
+## Actions rapides   {#quick-actions}
 
 Dans le [mode Carte](#quick-actions), certaines actions, en plus d’être disponibles dans la barre d’outils, le sont également sous la forme d’icônes d’actions rapides. Les icônes d’actions rapides sont disponibles pour un seul élément à la fois et évitent d’avoir à présélectionner l’action.
 
@@ -292,7 +292,7 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 >
 >Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
 
-### Sélection de ressources  {#selecting-resources}
+### Sélection de ressources   {#selecting-resources}
 
 La sélection d’une ressource en particulier dépend de la combinaison du mode et de l’appareil :
 
@@ -320,13 +320,13 @@ La sélection d’une ressource en particulier dépend de la combinaison du mode
    <td>Mode Carte<br /> </td> 
    <td>
     <ul> 
-     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li> 
+     <li>Bureau :<br /> Pointez sur, puis utilisez la coche action rapide</li> 
      <li>Appareil mobile :<br /> maintenez la carte enfoncée</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li>Desktop:<br /> Click the card</li> 
-     <li>Mobile device:<br /> Tap the card</li> 
+     <li>Bureau : <br /> Cliquez sur la carte</li> 
+     <li>Périphérique mobile : <br /> Appuyez sur la carte</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -363,7 +363,7 @@ Quel que soit le mode, vous pouvez désélectionner tous les éléments en appuy
 
 1. Une fois que vous avez sélectionné une ressource, l’en-tête de premier niveau est couvert par la [barre d’outils Actions](#actions-toolbar), qui permet d’accéder aux actions actuellement applicables à la ressource sélectionnée.
 
-   To exit selection mode select the **X** to the top-right.
+   Pour quitter le mode de sélection, sélectionnez **X** en haut à droite.
 
 ### Mode Colonnes {#column-view}
 
