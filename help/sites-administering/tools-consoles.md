@@ -25,7 +25,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
 * [Outils – IU classique](#tools-classic-ui)
 * [Outils – IU optimisée pour les écrans tactiles](#tools-touch-optimized-ui)
 
-## Outils – IU classique {#tools-classic-ui}
+## Outils – IU classique  {#tools-classic-ui}
 
 <table> 
  <tbody> 
@@ -62,7 +62,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   <tr> 
    <td>Gestion des actifs numériques : outil de vérification d’état<br /> </td> 
    <td> </td> 
-   <td>Compares <code>/var/dam</code> and <code>/content/dam</code> and checks for<br /> any inconsistencies. Les fichiers/dossiers répertoriés peuvent alors être synchronisés ou supprimés. Les types de nœuds pour la comparaison de dossiers peuvent être configurés dans la console web.</td> 
+   <td>Compare <code>/var/dam</code> et <code>/content/dam</code> et recherche <br /> les incohérences éventuelles. Les fichiers/dossiers répertoriés peuvent alors être synchronisés ou supprimés. Les types de nœuds pour la comparaison de dossiers peuvent être configurés dans la console web.</td> 
   </tr> 
   <tr> 
    <td>Gestion des actifs numériques : Adobe InDesign<br /> </td> 
@@ -150,12 +150,12 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>En mode Génération de modèles automatique, vous pouvez créer un formulaire (que l’on désigne sous le nom de modèle automatique) dont les champs représentent la structure souhaitée pour vos pages, puis l’utiliser afin de créer aisément des pages sur la base de cette structure.</td> 
   </tr> 
   <tr> 
-   <td>Security - <a href="/help/sites-administering/notification.md">Self-Service Configuration </a> </td> 
+   <td>Sécurité - <a href="/help/sites-administering/notification.md">Configuration en libre-service </a> </td> 
    <td> </td> 
    <td>Permet de configurer les messages électroniques que les utilisateurs reçoivent automatiquement lorsqu’ils créent un compte ou réinitialisent un mot de passe et pour confirmer qu’un mot de passe a été réinitialisé.</td> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentation</a></td> 
+   <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentation </a></td> 
    <td> </td> 
    <td>Les intérêts et objectifs des visiteurs qui se rendent sur un site sont variés. La compréhension de ces objectifs et la satisfaction de ces attentes constituent un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en caractérisant les détails d’un visiteur.<br /> </td> 
   </tr> 
@@ -197,7 +197,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
  </tbody> 
 </table>
 
-## Outils – IU optimisée pour les écrans tactiles {#tools-touch-optimized-ui}
+## Outils – IU optimisée pour les écrans tactiles  {#tools-touch-optimized-ui}
 
 <table> 
  <tbody> 
@@ -253,7 +253,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-administering/workflows.md">Workflows   </a></td> 
+   <td><a href="/help/sites-administering/workflows.md">Workflows</a></td> 
    <td>Modélisez et gérez les workflows.</td> 
   </tr> 
   <tr> 
@@ -314,7 +314,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   <tr> 
    <td> </td> 
    <td>Image mémoire de la configuration de la console Web<br /> </td> 
-   <td>Téléchargez l’état de la configuration à partir de la console Web.<br /> </td> 
+   <td>Téléchargez l'état de la configuration à partir de la console Web.<br /> </td> 
   </tr> 
   <tr> 
    <td> </td> 
