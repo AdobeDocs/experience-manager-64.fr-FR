@@ -22,7 +22,7 @@ ht-degree: 95%
 
 La console des composants vous permet de parcourir tous les composants définis pour votre instance et d’afficher les informations clés pour chacun d’eux.
 
-It can be accessed from **Tools** -> **General** -> **Components**. Dans la console, les modes Carte et Liste sont disponibles. Comme il n’existe pas de structure d’arborescence pour les composants, le mode Colonnes n’est pas disponible.
+Il est accessible à partir de **Outils** -> **Général** -> **Composants**. Dans la console, les modes Carte et Liste sont disponibles. Comme il n’existe pas de structure d’arborescence pour les composants, le mode Colonnes n’est pas disponible.
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
