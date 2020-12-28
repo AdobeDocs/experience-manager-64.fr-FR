@@ -42,9 +42,9 @@ Pour une référence conviviale aux instances d’AEM incluses dans ces procédu
 
 >[!NOTE]
 >
->Dans le cadre des efforts visant à améliorer la fiabilité des mises à niveau, AEM 6.4 a fait l&#39;objet d&#39;une restructuration complète des dépôts. For more information on how to align with the new structure, see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md)
+>Dans le cadre des efforts visant à améliorer la fiabilité des mises à niveau, AEM 6.4 a fait l&#39;objet d&#39;une restructuration complète des dépôts. Pour plus d&#39;informations sur la façon de s&#39;aligner sur la nouvelle structure, consultez la section [Restructuration du référentiel dans AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
-## What Has Changed? {#what-has-changed}
+## Qu&#39;est-ce qui a changé ? {#what-has-changed}
 
 Voici quelques changements majeurs mis en œuvre avec les dernières versions d’AEM :
 
@@ -52,7 +52,7 @@ AEM 6.0 a introduit le nouveau référentiel Jackrabbit Oak. Les gestionnaires 
 
 Si vous utilisez Asset Insights et que vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.2, les ressources doivent être migrées et doivent posséder des ID générés via un bean JMX. Lors de nos tests internes, 125 000 ressources ont été migrées en 1 heure dans un environnement TarMK, mais les résultats peuvent varier. 
 
-AEM 6.3 introduced a new format for the `SegmentNodeStore`, which is the basis of the TarMK implementation. Si vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.3, une migration du référentiel est nécessaire dans le cadre de la mise à niveau, ce qui implique des interruptions du système.
+aem 6.3 a introduit un nouveau format pour le `SegmentNodeStore`, qui est la base de l&#39;implémentation de TarMK. Si vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.3, une migration du référentiel est nécessaire dans le cadre de la mise à niveau, ce qui implique des interruptions du système.
 
 L’équipe technique d’Adobe estime la durée du processus à environ 20 minutes. Veuillez noter que la réindexation n’est pas requise. En outre, une nouvelle version de l’outil crx2oak a été publiée pour fonctionner avec le nouveau format de référentiel.
 
@@ -82,11 +82,11 @@ La mise à niveau d’AEM consiste en plusieurs étapes et peut parfois se déro
 
 ## Flux de mise à niveau avec améliorations de la mise à niveau 6.4 {#upgrade-overview-1}
 
-Le diagramme ci-dessous illustre le flux recommandé pour la méthode de mise à niveau. Notez la référence aux nouvelles fonctionnalités que nous avons ajoutées. The upgrade should start with the Pattern Detector(see [Assessing the Upgrade Complexity with Pattern Detector](/help/sites-deploying/pattern-detector.md)) which should let you decide the path you want to take for compatibility with AEM 6.4 based on the patterns in the generated report.
+Le diagramme ci-dessous illustre le flux recommandé pour la méthode de mise à niveau. Notez la référence aux nouvelles fonctionnalités que nous avons ajoutées. La mise à niveau doit s’effectuer en début avec le Détecteur de schémas (voir [Évaluation de la complexité de la mise à niveau avec le Détecteur de schémas](/help/sites-deploying/pattern-detector.md)), ce qui vous permet de choisir le chemin que vous souhaitez prendre pour la compatibilité avec AEM 6.4 en fonction des modèles du rapport généré.
 
-There was a big focus in 6.4 to keep all the new features backward compatible, but in cases where you still see some backward compatibility issues, the compatibility mode allows you to temporarily defer development to keep your custom code compliant with 6.4. This approach helps you avoid development effort immediately after the upgrade(see [Backward Compatibility in AEM 6.4](/help/sites-deploying/backward-compatibility.md)).
+La version 6.4 visait principalement à maintenir toutes les nouvelles fonctionnalités rétrocompatibles, mais dans les cas où vous rencontrez encore des problèmes de compatibilité ascendante, le mode de compatibilité vous permet de reporter temporairement le développement pour que votre code personnalisé reste compatible avec la version 6.4. Cette approche vous permet d&#39;éviter les efforts de développement immédiatement après la mise à niveau (voir [Compatibilité descendante dans AEM 6.4](/help/sites-deploying/backward-compatibility.md)).
 
-Finally, in your 6.4 development cycle, features introduced under Sustainable Upgrades(see [Sustainable Upgrades](/help/sites-deploying/sustainable-upgrades.md)) help you follow best practices to make future upgrades even more efficient and seamless.
+Enfin, dans le cycle de développement de la version 6.4, les fonctionnalités introduites sous la section Mises à niveau durables (voir [Mises à niveau durables](/help/sites-deploying/sustainable-upgrades.md)) vous aident à suivre les meilleures pratiques pour rendre les mises à niveau futures encore plus efficaces et homogènes.
 
 ![6_4_upgrade_overviewflechart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
 
