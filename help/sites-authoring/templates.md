@@ -1,6 +1,6 @@
 ---
-title: 'Création de modèles de page   '
-seo-title: 'Création de modèles de page   '
+title: Création de modèles de page
+seo-title: Création de modèles de page
 description: Le modèle définit la structure de la page créée et, à l’aide de l’éditeur de modèles, les tâches de création et de gestion des modèles ne sont plus réservées aux développeurs.
 seo-description: Le modèle définit la structure de la page créée et, à l’aide de l’éditeur de modèles, les tâches de création et de gestion des modèles ne sont plus réservées aux développeurs.
 uuid: ffdc760d-9504-4d13-9f74-a58499632b78
@@ -18,7 +18,7 @@ ht-degree: 97%
 ---
 
 
-# Création de modèles de page    {#creating-page-templates}
+# Création de modèles de page   {#creating-page-templates}
 
 Lors de la création d’une page, vous devez sélectionner un modèle. C’est la base pour la création de la page. Le modèle définit la structure de la page créée, le contenu initial et les composants pouvant être utilisés.
 
@@ -41,7 +41,7 @@ Pour obtenir des informations détaillées sur le fonctionnement des modèles mo
 
 >[!NOTE]
 >
->aem version 6.4.5.0 ou ultérieure est requise pour utiliser des modèles modifiables avec l’éditeur [](/help/sites-developing/spa-overview.md)d’applications monopages.
+>aem 6.4.5.0 ou version ultérieure est nécessaire pour utiliser des modèles modifiables avec l&#39;[SPA Editor](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Pour obtenir des informations détaillées sur le fonctionnement des modèles mo
 
 >[!CAUTION]
 >
->Pages and templates created with the **Templates Console** are not meant to be used with the classic UI and such use is not supported.
+>Les pages et les modèles créés avec la **console Modèles** ne sont pas destinés à être utilisés avec l&#39;interface utilisateur classique et cette utilisation n&#39;est pas prise en charge.
 
 ## Avant de commencer {#before-you-start}
 
@@ -96,7 +96,7 @@ En raison de la nature de certaines tâches (comme la création d’un dossier),
 
 Les tâches détaillées dans ce document sont répertoriées avec le rôle responsable de leur exécution.
 
-### Modèles modifiables et statiques {#editable-and-static-templates}
+### Modèles modifiables et statiques  {#editable-and-static-templates}
 
 AEM comporte maintenant deux types de modèles standard :
 
@@ -112,11 +112,11 @@ AEM comporte maintenant deux types de modèles standard :
    * Ils sont [fournis par les développeurs](/help/sites-developing/page-templates-static.md), et ne peuvent pas être créés ou modifiés par les créateurs.
    * Ils sont copiés pour créer la page. Il n’y a ensuite aucune connexion dynamique (même si le nom du modèle est enregistré pour information).
    * Utilisez le [mode Création](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
-   * Because editing static templates is the exclusive task of a developer, please see the developer document [Page Templates - Static](/help/sites-developing/page-templates-static.md) for more information.
+   * La modification de modèles statiques étant la tâche exclusive d&#39;un développeur, consultez le document de développement [Modèles de page - Static](/help/sites-developing/page-templates-static.md) pour plus d&#39;informations.
 
 Par définition, la console de modèles et l’éditeur de modèles permettent uniquement la création et la modification des modèles modifiables. Par conséquent, ce document décrit exclusivement les modèles modifiables.
 
-### Utilisation d’un modèle pour créer une page {#using-a-template-to-create-a-page}
+### Utilisation d’un modèle pour créer une page  {#using-a-template-to-create-a-page}
 
 Lorsque vous utilisez un modèle pour [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page), il n’existe aucune différence visible ni indication permettant de distinguer les modèles statiques des modèles modifiables. Pour le créateur de pages, le processus est transparent.
 
@@ -157,7 +157,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
 
 ### Création d’un modèle - Créateur de modèles {#creating-a-new-template-template-author}
 
-1. Open the **Templates Console** (via **Tools** -> **General**) then navigate to the required folder.
+1. Ouvrez la **Console de modèles** (par **Outils** -> **Général**), puis accédez au dossier requis.
 
    >[!NOTE]
    >
@@ -184,7 +184,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
    >
    >Lorsque vous créez un modèle, il est marqué comme **Brouillon** dans la console pour indiquer qu’il n’est pas encore actif.
 
-### Définition des propriétés des modèles - Créateur de modèles    {#defining-template-properties-template-author}
+### Définition des propriétés des modèles - Créateur de modèles   {#defining-template-properties-template-author}
 
 Un modèle peut posséder les propriétés suivantes :
 
@@ -229,7 +229,7 @@ Pour définir la miniature du modèle :
 
 1. Lorsque vous êtes satisfait de la miniature, cliquez ou appuyez sur **Enregistrer et Fermer**.
 
-### Activation et autorisation d’un modèle - Créateur de modèles    {#enabling-and-allowing-a-template-template-author}
+### Activation et autorisation d’un modèle - Créateur de modèles   {#enabling-and-allowing-a-template-template-author}
 
 Pour utiliser un modèle lors de la création d’une page, vous devez effectuer les deux tâches suivantes :
 
@@ -272,7 +272,7 @@ Un modèle peut être rendu disponible ou indisponible pour certaines branches d
    >
    >Si la liste **Modèles autorisés** reste vide, l’arborescence est remontée jusqu’à ce qu’une valeur/liste soit détectée.
    >
-   >See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.
+   >Voir [Disponibilité des modèles](/help/sites-developing/templates.md#template-availability) : les principes des modèles autorisés restent identiques.
 
 1. Cliquez sur **Enregistrer** pour enregistrer les modifications apportées aux propriétés de la page.
 
@@ -290,7 +290,7 @@ Dans la mesure où il est référencé lors du rendu d’une page, le modèle (t
 
 1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
 
-## Modification des modèles    - Créateurs de modèles    {#editing-templates-template-authors}
+## Modification des modèles  - Créateurs de modèles   {#editing-templates-template-authors}
 
 Lors de la création ou de la modification d’un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
@@ -316,7 +316,7 @@ Les aspects suivants d’un modèle peuvent être modifiés :
 
 * [Mise en page](#editing-a-template-layout-template-author)
 
-   Vous pouvez prédéfinir la mise en page du modèle pour les formats de dispositif de votre choix. Le mode **Mise en page** pour la création de modèles comporte la même fonctionnalité que le mode **[Mise en page](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)** pour la création de pages.
+   Vous pouvez prédéfinir la mise en page du modèle pour les formats de dispositif de votre choix. Le mode **Disposition** pour la création de modèles comporte la même fonctionnalité que le mode **[Disposition](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)** pour la création de pages.
 
 * [Stratégies de page](#editing-a-template-structure-template-author)
 
@@ -332,11 +332,11 @@ Le sélecteur **Mode** de la barre d’outils permet de sélectionner et de modi
 
 * [Structure](#editing-a-template-structure-template-author)
 * [Contenu initial](#editing-a-template-initial-content-author)
-* [Mise en page](#editing-a-template-layout-template-author)
+* [Disposition](#editing-a-template-layout-template-author)
 
 ![chlimage_1-363](assets/chlimage_1-363.png)
 
-Lorsque l’option **Stratégie de page** du menu **Informations sur la page**, vous pouvez [sélectionner les stratégies de page de votre choix](#editing-a-template-structure-template-author) :
+Tandis que l’option **Stratégie de page** du menu **Informations sur la page**, vous permet de [sélectionner les stratégies de page désirées](#editing-a-template-structure-template-author) :
 
 ![screen_shot_2018-03-23at120604](assets/screen_shot_2018-03-23at120604.png)
 
@@ -452,7 +452,7 @@ En mode **Structure** de l’éditeur de modèles :
    Sous l’en-tête **Propriétés**, vous pouvez définir les paramètres du composant. L’en-tête comporte deux onglets :
 
    * Principal
-   * Fonctionnalités
+   * Fonctions
 
    *Principal*
 
@@ -470,11 +470,11 @@ En mode **Structure** de l’éditeur de modèles :
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-   *Fonctionnalités*
+   *Fonctions*
 
-   L’onglet **Fonctionnalités** permet d’activer ou de désactiver des fonctionnalités supplémentaires du composant.
+   L’onglet **Fonctions** permet d’activer ou de désactiver des fonctions supplémentaires du composant.
 
-   Par exemple, pour un composant d’image, vous pouvez définir les proportions de recadrage, les orientations d’image autorisées et indiquer si les téléchargements sont autorisés.
+   Par exemple, pour un composant d’image, vous pouvez définir les proportions de recadrage, les orientations d’image autorisées et indiquer si les chargements sont autorisés.
 
    ![chlimage_1-373](assets/chlimage_1-373.png)
 
@@ -484,7 +484,7 @@ En mode **Structure** de l’éditeur de modèles :
 
    >[!NOTE]
    >
-   >[](/help/sites-administering/rich-text-editor.md)Les stratégies de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi peuvent uniquement être définies pour les options accessibles par les paramètres de l’interface utilisateur, via ses propres paramètres d’interface utilisateur.
+   >[Les stratégies de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md) peuvent uniquement être définies pour les options accessibles par les paramètres de l’interface utilisateur, via ses propres paramètres d’interface utilisateur.
 
 * **Stratégie et propriétés (conteneur de mises en page)**
 
@@ -597,9 +597,9 @@ Même si l’ensemble du contenu créé en mode **Structure** est visible en mod
 >
 >Le contenu initial est destiné à préparer les composants et la mise en page, point de départ de la création du contenu. Il n’est pas destiné à constituer un contenu réel laissé tel quel. C’est pour cette raison que le contenu initial ne peut pas être traduit.
 
-### Modification d’un modèle - Mise en page - Créateur de modèles {#editing-a-template-layout-template-author}
+### Modification d’un modèle - Disposition - Créateur de modèles {#editing-a-template-layout-template-author}
 
-Vous pouvez définir la mise en page du modèle pour différents appareils. [La mise en page réactive pour les modèles fonctionne de la même manière que pour la création de pages.](/help/sites-authoring/responsive-layout.md)
+Vous pouvez définir la disposition du modèle pour différents appareils. La [mise en page réactive](/help/sites-authoring/responsive-layout.md) pour les modèles fonctionne de la même manière que pour la création de pages.
 
 >[!NOTE]
 >
@@ -613,7 +613,7 @@ La conception de la page, y compris les bibliothèques côté client requises et
 
 Pour accéder à la boîte de dialogue **Conception de page** :
 
-1. From the **Template Editor**, select **Page Information** from the toolbar, then **Page Design** to open the dialog.
+1. Dans l&#39;**Éditeur de modèle**, sélectionnez **Informations sur la page** dans la barre d&#39;outils, puis **Conception de page** pour ouvrir la boîte de dialogue.
 1. La boîte de dialogue **Conception de page** s’ouvre. Elle est divisée en deux sections :
 
    * La moitié gauche définit les [stratégies de page](/help/sites-authoring/templates.md#page-policies).
@@ -650,11 +650,11 @@ Vous pouvez appliquer une stratégie de contenu au modèle ou aux pages créées
 
 #### Propriétés de page {#page-properties}
 
-À l’aide des propriétés de page, vous pouvez définir les bibliothèques côté client requises avec la boîte de dialogue **Conception de page**. Ces bibliothèques côté client incluent des feuilles de style et du code JavaScript à charger avec le modèle et les pages créées avec ce modèle.
+À l’aide des propriétés de page, vous pouvez définir les bibliothèques clientes requises avec la boîte de dialogue **Conception de page**. Ces bibliothèques clientes incluent des feuilles de style et du code JavaScript à charger avec le modèle et les pages créées avec ce modèle.
 
 ![chlimage_1-392](assets/chlimage_1-392.png)
 
-* Spécifiez les bibliothèques côté client à appliquer aux pages créées avec ce modèle. Saisissez le nom d’une bibliothèque dans le champ de la section **Bibliothèques côté client**.
+* Spécifiez les bibliothèques clientes à appliquer aux pages créées avec ce modèle. Saisissez le nom d’une bibliothèque dans le champ de la section **Bibliothèques clientes**.
 
    ![chlimage_1-393](assets/chlimage_1-393.png)
 
@@ -662,7 +662,7 @@ Vous pouvez appliquer une stratégie de contenu au modèle ou aux pages créées
 
    ![chlimage_1-394](assets/chlimage_1-394.png)
 
-   Ajoutez autant de champs que nécessaire pour les bibliothèques côté client.
+   Ajoutez autant de champs que nécessaire pour les bibliothèques clientes.
 
    ![chlimage_1-395](assets/chlimage_1-395.png)
 
@@ -672,7 +672,7 @@ Vous pouvez appliquer une stratégie de contenu au modèle ou aux pages créées
 
 >[!NOTE]
 >
->Bien que le créateur de modèles puisse indiquer la stratégie de page dans le modèle, il doit se procurer les détails relatifs aux bibliothèques concernées côté client auprès du développeur.
+>Bien que le créateur de modèles puisse indiquer la stratégie de page dans le modèle, il doit se procurer les détails relatifs aux bibliothèques clientes concernées auprès du développeur.
 
 ### Modification d’un modèle - Propriétés de page initiales - Créateur {#editing-a-template-initial-page-properties-author}
 
@@ -690,9 +690,9 @@ Vous pouvez appliquer une stratégie de contenu au modèle ou aux pages créées
 
 Lors de la création de modèles, vous devez prendre en compte :
 
-1. l’impact des modifications apportées au modèle une fois que les pages ont été créées à partir de ce modèle.
+1. L’impact des modifications apportées au modèle une fois que les pages ont été créées à partir de ce modèle.
 
-   Vous trouverez ci-dessous une liste des différentes opérations possibles sur les modèles, ainsi que leur répercussion sur les pages créées à partir de ces derniers :
+   Vous trouverez ci-dessous la liste des différentes opérations possibles sur les modèles, ainsi que leur répercussion sur les pages créées à partir de ces derniers :
 
    * Modifications apportées à la structure :
 
