@@ -20,13 +20,13 @@ ht-degree: 96%
 
 # Utilisation des versions de page{#working-with-page-versions}
 
-La création de versions permet de créer un « instantané » d’une page à un moment donné. Avec la création de versions, vous pouvez effectuer les opérations suivantes :
+Le contrôle de version permet de créer un « instantané » d’une page à un moment donné. Avec le contrôle de version, vous pouvez effectuer les opérations suivantes :
 
 * Créer une version d’une page donnée.
 * Restaurer la version précédente d’une page (pour annuler une modification apportée à une page, par exemple).
 * Comparer la version actuelle d’une page avec une version précédente (les différences dans le texte et les images sont mises en évidence).
 
-## Création d’une version   {#creating-a-new-version}
+## Création d’une version    {#creating-a-new-version}
 
 Vous pouvez créer une version de votre ressource depuis :
 
@@ -88,20 +88,20 @@ Pour restaurer une ancienne version, procédez comme suit :
 
 1. Naviguez pour afficher la page pour laquelle restaurer une ancienne version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Ouvrez la colonne **Frise chronologique**, puis sélectionnez **Afficher tout** ou **Versions**. Les versions de la page sélectionnée sont répertoriées.
+1. Ouvrez la colonne **Chronologie**, puis sélectionnez **Afficher tout** ou **Versions**. Les versions de la page sélectionnée sont répertoriées.
 1. Sélectionnez la version à restaurer. Les options possibles s’affichent :
 
    ![screen_shot_2018-03-21at155246](assets/screen_shot_2018-03-21at155246.png)
 
 1. Sélectionnez **Revenir à cette version**. La version sélectionnée est restaurée et les informations dans la frise chronologique sont mises à jour.
 
-## Aperçu d’une version   {#previewing-a-version}
+## Aperçu d’une version    {#previewing-a-version}
 
 Vous pouvez prévisualiser une version spécifique :
 
 1. Accédez à la page à comparer.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Ouvrez la colonne **Frise chronologique**, puis sélectionnez **Afficher tout** ou **Versions**.
+1. Ouvrez la colonne **Chronologie**, puis sélectionnez **Afficher tout** ou **Versions**.
 1. Les versions de la page sont répertoriées. Sélectionnez la version à prévisualiser :
 
    ![screen_shot_2018-03-21at155330](assets/screen_shot_2018-03-21at155330.png)
@@ -120,14 +120,14 @@ Pour comparer la version actuelle de la page avec une version précédente :
 
 1. Accédez à la page à comparer.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Ouvrez la colonne **Frise chronologique**, puis sélectionnez **Afficher tout** ou **Versions**.
+1. Ouvrez la colonne **Chronologie**, puis sélectionnez **Afficher tout** ou **Versions**.
 1. Les versions de la page sont répertoriées. Sélectionnez la version à comparer :
 
    ![screen_shot_2018-03-21at155330](assets/screen_shot_2018-03-21at155330.png)
 
 1. Sélectionnez **Comparer à actuel**. L’[outil de comparaison des pages](/help/sites-authoring/page-diff.md) s’ouvre et affiche les différences.
 
-## Timewarp   {#timewarp}
+## Distorsion du temps Timewarp   {#timewarp}
 
 La fonction de distorsion du temps Timewarp permet de simuler l’état *publié* d’une page à des moments spécifiques dans le passé.
 
