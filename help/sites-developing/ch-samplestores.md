@@ -1,6 +1,6 @@
 ---
-title: Exemples de magasins candidats ContextHub
-seo-title: Exemples de magasins candidats ContextHub
+title: 'Exemples de magasins candidats ContextHub '
+seo-title: 'Exemples de magasins candidats ContextHub '
 description: ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions
 seo-description: ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions
 uuid: feccd813-6077-4e87-a96e-d451114e5527
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 84%
+ht-degree: 95%
 
 ---
 
 
-# Exemples de magasins candidats ContextHub{#sample-contexthub-store-candidates}
+# Exemples de magasins candidats ContextHub {#sample-contexthub-store-candidates}
 
 ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions. Les informations suivantes sont fournies pour chaque exemple :
 
@@ -28,7 +28,7 @@ ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez util
 
 >[!WARNING]
 >
->Les exemples de candidats de magasin sont fournis comme configurations de référence pour vous aider à créer votre propre configuration dédiée pour votre projet et ne doivent donc pas être utilisés directement.
+>Les exemples de magasins candidats sont fournis comme configurations de référence pour vous aider à créer votre propre configuration dédiée pour votre projet. Ils ne doivent donc pas être utilisés directement.
 
 ## Exemple de magasin candidat aem.segmentation {#aem-segmentation-sample-store-candidate}
 
@@ -66,7 +66,7 @@ Le magasin candidat de modèles contexthub.geolocation utilise Google Maps pour 
 
 ### Implémentation de base {#base-implementation-geolocation}
 
-The contexthub.geolocation store candidate extends [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+Le candidat du magasin contexthub.geolocation s&#39;étend [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuration {#configuration-geolocation}
 
@@ -112,9 +112,9 @@ Le magasin utilise une arborescence de données similaire à l’exemple suivant
 
 >[!NOTE]
 >
->Une stratégie de sécurité introduite dans Chrome 50.x exige que tous les appels liés à la géolocalisation soient effectués sur une connexion sécurisée. Par conséquent, AEM force l’utilisation de https pour les appels d’API de géolocalisation si AEM s’exécute également sur https. Sinon, http est utilisé afin de respecter la politique de même origine. Voir [cet article de blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) pour plus de détails sur les changements dans Chrome.
+>Une stratégie de sécurité introduite dans Chrome 50.x requiert que tous les appels liés à la géolocalisation soient effectués via une connexion sécurisée. Par conséquent, AEM force l’utilisation de https pour les appels d’API de géolocalisation si AEM s’exécute également sur https. Sinon, http est utilisé afin de respecter la politique de même origine. Voir [cet article de blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) pour plus de détails sur les changements dans Chrome.
 
-## Exemple de magasin candidat contexthub.surferinfo {#contexthub-surferinfo-sample-store-candidate}
+## Exemple de magasin candidat contexthub.surferinfo   {#contexthub-surferinfo-sample-store-candidate}
 
 Stocke des informations sur l’environnement client actuel, telles que l’appareil, la fenêtre, le navigateur, la date et l’heure.
 
@@ -124,11 +124,11 @@ Stocke des informations sur l’environnement client actuel, telles que l’appa
 
 ### Implémentation de base {#base-implementation-surferinfo}
 
-The contexthub.datetime store candidate extends [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+Le candidat du magasin contexthub.datetime étend [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuration {#configuration-surferinfo}
 
-The default configuration is inherited from `ContextHub.Store.PersistedStore`.
+La configuration par défaut est héritée de `ContextHub.Store.PersistedStore`.
 
 ### Éléments de données {#data-items-surferinfo}
 
@@ -191,11 +191,11 @@ L’exemple de magasin candidat granite.emulators stocke des informations sur le
 
 ### Implémentation de base {#base-implementation-emulators}
 
-The contexthub.geolocation store candidate extends [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+Le candidat du magasin contexthub.geolocation s&#39;étend [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuration {#configuration-emulators}
 
-La configuration par défaut inclut une table nommée `defaultEmulators` qui contient des informations sur différents appareils. Lorsque vous créez un magasin, fournissez des profils d’appareil différents dans la propriété Configuration détaillée selon les besoins, en respectant le format illustré dans l’exemple suivant :
+La configuration par défaut inclut un tableau nommé `defaultEmulators` qui contient des informations sur différents appareils. Lorsque vous créez un magasin, fournissez des profils d’appareil différents dans la propriété Configuration détaillée selon les besoins, en respectant le format illustré dans l’exemple suivant :
 
 ```xml
 {
@@ -314,7 +314,7 @@ L’arborescence de données de magasin est similaire à l’exemple suivant :
 }
 ```
 
-## Exemple de magasin candidat granite.profile {#granite-profile-sample-store-candidate}
+## Exemple de magasin candidat granite.profile   {#granite-profile-sample-store-candidate}
 
 Stocke des informations sur l’utilisateur actuel.
 
@@ -324,7 +324,7 @@ Stocke des informations sur l’utilisateur actuel.
 
 ### Implémentation de base {#base-implementation-profile}
 
-The contexthub.datetime store candidate extends [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+Le candidat du magasin contexthub.datetime étend [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuration {#configuration-profile}
 
