@@ -13,15 +13,15 @@ ht-degree: 47%
 ---
 
 
-# Programme d’installation des correctifs AEM Forms JEE {#aem-forms-jee-patch-installer}
+# Programme d’installation du correctif AEM Forms JEE {#aem-forms-jee-patch-installer}
 
 >[!NOTE]
 >
->[Contactez l&#39;assistance](https://www.adobe.com/fr/account/sign-in.supportportal.html) pour plus d&#39;informations ou pour obtenir le correctif.
+>[Contactez le ](https://www.adobe.com/fr/account/sign-in.supportportal.html) support technique pour plus d&#39;informations ou pour obtenir le correctif.
 
-## A propos du programme d’installation de correctif {#about-the-patch-installer}
+## À propos du programme d’installation de correctif {#about-the-patch-installer}
 
-Le programme d&#39;installation de correctif Forms JEE 6.4 AEM comprend tous les problèmes corrigés pour tous les composants de l&#39;AEM 6.4 Forms JEE disponibles jusqu&#39;à la sortie de ce correctif. Consultez les dernières Notes [de mise à jour](cfp-release-notes.md) Cumulative Fix Pack pour obtenir une liste complète des problèmes résolus.
+Le programme d&#39;installation de correctif Forms JEE 6.4 AEM comprend tous les problèmes corrigés pour tous les composants de l&#39;AEM 6.4 Forms JEE disponibles jusqu&#39;à la sortie de ce correctif. Consultez les [Notes de mise à jour Cumulative Fix Pack](cfp-release-notes.md) les plus récentes pour obtenir une liste complète des problèmes résolus.
 
 ## Conditions préalables à l&#39;installation du correctif {#prerequisites-to-installing-the-patch}
 
@@ -34,11 +34,12 @@ Le programme d&#39;installation de correctif Forms JEE 6.4 AEM comprend tous les
 1. Extrayez le fichier d&#39;archive du programme d&#39;installation du correctif sur votre disque dur.
 1. Dans le répertoire, dont le nom dépend du système d’exploitation que vous utilisez :
 
-   * **Windows** Accédez au répertoire approprié sur le support d’installation ou dans le dossier de votre disque dur où vous avez copié le programme d’installation, puis cliquez sur le doublon 
+   * ****
+WindowsAccédez au répertoire approprié sur le support d&#39;installation ou le dossier de votre disque dur dans lequel vous avez copié le programme d&#39;installation, puis cliquez sur le doublon 
 `aemforms64_cfp_install.exe` approuvé.
 
-      * (Windows 32-bit) `Windows\Disk1\InstData\VM`
-      * (Windows 64-bit) `Windows_64Bit`\ `Disk1\InstData\VM`
+      * (Windows 32 bits) `Windows\Disk1\InstData\VM`
+      * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
    * **Linux, Solaris, AIX** Accédez au répertoire approprié, puis, à partir d’une invite de commande, saisissez 
 `./aem64_cfp_install.bin`.
 
@@ -56,18 +57,18 @@ Le programme d&#39;installation de correctif Forms JEE 6.4 AEM comprend tous les
 
 1. Lisez le résumé du correctif Quick Fix, puis cliquez sur **[!UICONTROL Suivant]**.
 1. Lisez le résumé relatif à la pré-installation, puis cliquez sur **[!UICONTROL Installer]**. 
-1. When the installation is complete, click **[!UICONTROL Next]**to apply the quick fix updates to your installed files.
-1. [Windows effectue uniquement] l’une des étapes suivantes :
+1. Une fois l’installation terminée, cliquez sur **[!UICONTROL Suivant]**pour appliquer les mises à jour de la correction rapide à vos fichiers installés.
+1. [Windows ] uniquementEffectuez l&#39;une des étapes suivantes :
 
-   * Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Exécutez Configuration Manager ultérieurement à l’aide du `ConfigurationManager.bat` fichier situé dans `[aem-forms root]\configurationManager\bin`. L’utilisation de `ConfigurationManager.bat` permet d’éviter la mise à jour manuelle du nom axis.jar dans les fichiers .lax.
-   * Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Avant d’exécuter Configuration Manager à l’aide de **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez au répertoire *&lt;AEMForms_Install_Dir>\configurationManager\bin* et mettez à jour **axis.jar vers axis-1.4.1.1.jar dans les fichiers suivants :******
+   * Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Exécutez Configuration Manager ultérieurement en utilisant le fichier `ConfigurationManager.bat` situé dans `[aem-forms root]\configurationManager\bin`. L&#39;utilisation de `ConfigurationManager.bat` permet d&#39;éviter la mise à jour manuelle du nom axis.jar dans les fichiers .lax.
+   * Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Avant d’exécuter Configuration Manager à l’aide de **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez au répertoire *&lt;AEMForms_Install_Dir>\configurationManager\bin* et mettez à jour **axis.jar** vers **axis-1.4.1.4.1.1.1.4.1.1.1.1.4.1.1.1.1 1.jar** dans les fichiers suivants :
 
       * ConfigurationManager.lax
       * ConfigurationManager_IPv6.lax
 
 1. (Unix uniquement) La case à cocher Configuration Manager Début est activée par défaut. Cliquez sur **[!UICONTROL Terminé]** pour exécuter Configuration Manager.
 
-   Pour exécuter Configuration Manager ultérieurement, désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. You can start Configuration Manager later using the appropriate script in the `[AEM_forms_root]/configurationManager/bin` directory.
+   Pour exécuter Configuration Manager ultérieurement, désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Vous pouvez début Configuration Manager ultérieurement à l’aide du script approprié dans le répertoire `[AEM_forms_root]/configurationManager/bin`.
 
 1. En fonction de votre serveur d’applications, sélectionnez l’un des documents suivants et suivez les instructions de la section *Configuration et déploiement d’AEM Forms*.
 
@@ -89,11 +90,11 @@ Si l’authentification SAML est configurée et que vous rencontrez des problèm
 1. Redémarrez le serveur.
 1. Supprimez les fournisseurs d’authentification SAML existants et ajoutez-les à nouveau pour les domaines existants, comme décrit dans les paramètres SAML.
 
-## Modules affectés {#impacted-modules}
+## Modules touchés {#impacted-modules}
 
-* Services de documents
+* Services de document
 * Protection des documents
 * Foundation JEE
 * Service PDFG
 
-[Contacter le support technique](https://www.adobe.com/fr/account/sign-in.supportportal.html)
+[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
