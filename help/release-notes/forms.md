@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3f592c5a-4e59-436e-b67b-3ed575c6afc3
 translation-type: tm+mt
 source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 
 Cette section présente les principales caractéristiques d’AEM 6.4 Forms. Une description détaillée de toutes les nouvelles fonctionnalités est disponible dans le [Résumé des nouvelles fonctionnalités et améliorations d’AEM 6.4 Forms](/help/forms/using/whats-new.md).
 
-## Communications interactives multicanal {#multi-channel-interactive-communications}
+## Communications interactives multicanal  {#multi-channel-interactive-communications}
 
 * Interface de création multicanal intégrée pour les canaux web et d’impression
 * Création WYSIWYG par glisser-déposer adaptée aux utilisateurs professionnels
@@ -33,7 +36,7 @@ Cette section présente les principales caractéristiques d’AEM 6.4 Forms. Une
 * Possibilité d’utiliser les éléments du modèle de données de formulaire dans les fragments de documents
 * Module de compatibilité prenant en charge la mise à niveau des clients avec les dictionnaires de lettres et de données
 
-## Amélioration de l’intégration des données {#data-integration-enhancements}
+## Amélioration de l’intégration des données  {#data-integration-enhancements}
 
 * Possibilité de créer un modèle de données de formulaire sans source de données
 * Liaison ultérieure d’une source de données à un modèle de données de formulaire afin d’éviter que les auteurs de communications interactives et de formulaires dépendent des sources de données
@@ -43,7 +46,7 @@ Cette section présente les principales caractéristiques d’AEM 6.4 Forms. Une
 * Actualisation des définitions de sources de données du modèle de données de formulaire afin de refléter les changements au niveau de la source de données principale
 * Exploitation de l’interface utilisateur tactile pour la configuration des sources de données
 
-## Modernisation des workflows et prise en charge des employés mobiles {#workflow-modernization-and-mobile-worker-support}
+## Modernisation des workflows et prise en charge des employés mobiles  {#workflow-modernization-and-mobile-worker-support}
 
 * Interface tactile pour concevoir les modèles de workflow
 * Possibilité d’appeler les opérations de modèle de données de formulaire par l’intermédiaire d’une étape de workflow
@@ -51,11 +54,11 @@ Cette section présente les principales caractéristiques d’AEM 6.4 Forms. Une
 * Prise en charge des formulaires adaptatifs avec le modèle de données de formulaire au sein de l’application AEM Forms
 * Utilisation des formulaires adaptatifs avec les fragments chargés de manière différée au sein de l’application AEM Forms
 
-## Prise en charge améliorée des fragments chargés de manière différée {#enhanced-support-of-lazy-loading-fragments}
+## Prise en charge améliorée des fragments chargés de manière différée  {#enhanced-support-of-lazy-loading-fragments}
 
 * Utilisation possible des composants de pièces jointes et de termes et conditions dans les fragments de formulaires chargés de manière différée
 * Prise en charge des fragments de formulaires adaptatifs chargés de manière différée au sein des panneaux pouvant être répétés
 
-## Mise à niveau en un seul bond de LiveCycle vers Experience Manager Forms 6.4 {#single-hop-upgrade-from-livecycle-to-experience-manager-forms}
+## Mise à niveau en un seul bond de LiveCycle vers Experience Manager Forms 6.4  {#single-hop-upgrade-from-livecycle-to-experience-manager-forms}
 
 * Mise à niveau directe de LiveCycle ES4 vers AEM 6.4 Forms JEE
