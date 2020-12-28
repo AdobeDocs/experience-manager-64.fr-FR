@@ -1,8 +1,8 @@
 ---
 title: Configuration de l’environnement du compte
 seo-title: Configuration de l’environnement du compte
-description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création
-seo-description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création
+description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
+seo-description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 uuid: 01e76771-9ac8-4919-9e50-0a63826177d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -22,7 +22,7 @@ ht-degree: 95%
 
 AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 
-Using the [User](/help/sites-authoring/user-properties.md#user-settings) option in the [header](/help/sites-authoring/basic-handling.md#the-header) and the associated [My Preferences](#my-preferences) dialog, you can modify your user options.
+A l&#39;aide de l&#39;option [Utilisateur](/help/sites-authoring/user-properties.md#user-settings) de l&#39;en-tête [](/help/sites-authoring/basic-handling.md#the-header) et de la boîte de dialogue [Mes préférences](#my-preferences) associée, vous pouvez modifier vos options d&#39;utilisateur.
 
 ## Paramètres utilisateur {#user-settings}
 
@@ -77,7 +77,7 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
    Cette opération définit la couleur par défaut utilisée pour les annotations.
 
    * Cliquez sur le bloc de couleurs pour ouvrir le sélecteur d’échantillon afin de choisir une couleur.
-   * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ. 
+   * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ.
 
 * **Présentation de la date relative**
 
