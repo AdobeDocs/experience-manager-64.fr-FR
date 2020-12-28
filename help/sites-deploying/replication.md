@@ -34,7 +34,7 @@ Les demandes[ sont placées en file d’attente](/help/sites-deploying/osgi-conf
 >
 >Pour plusieurs instances de publication, les données utilisateur sont distribués par Sling lorsque[ la synchronisation des utilisateurs](/help/sites-administering/sync.md) est activée.
 
-## Réplication de l’auteur à la publication {#replicating-from-author-to-publish}
+## Réplication de l’auteur à la publication  {#replicating-from-author-to-publish}
 
 La réplication vers une instance de publication ou le dispatcher s’effectue en plusieurs étapes :
 
@@ -59,13 +59,13 @@ La réplication inverse utilise un agent de l’environnement de publication qui
 
 Dans d’autres cas, notamment pour les fonctionnalités de communautés (par exemple, les forums, les blogs, les commentaires et les avis), l’environnement de publication est difficile à synchroniser efficacement à travers les instances AEM utilisant la replicaiton.
 
-AEM [Communities](/help/communities/overview.md) never uses replication for UGC. Au lieu de cela, le déploiement de Communities nécessite un stock commun pour le contenu généré par les utilisateurs (voir [Stockage de contenu des communautés](/help/communities/working-with-srp.md)).
+aem [Communautés](/help/communities/overview.md) n&#39;utilise jamais la réplication pour UGC. Au lieu de cela, le déploiement de Communities nécessite un stock commun pour le contenu généré par les utilisateurs (voir [Stockage de contenu des communautés](/help/communities/working-with-srp.md)).
 
 ## Réplication prête à l’emploi {#replication-out-of-the-box}
 
 Le site web Geometrixx, inclus dans une installation AEM standard, peut être utilisé pour illustrer la réplication.
 
-To follow this example and use the default replication agents you need to [Install AEM](/help/sites-deploying/deploy.md) with:
+Pour suivre cet exemple et utiliser les agents de réplication par défaut, vous devez [installer AEM](/help/sites-deploying/deploy.md) avec :
 
 * l’environnement de création sur le port`4502` 
 * l’environnement de publication sur le port`4503` 
@@ -113,13 +113,13 @@ Cette réplication est effectuée depuis de l’environnement de création par 
 
 Les agents suivants sont disponibles dans une installation AEM standard :
 
-* [Agent](#replication-author-to-publish) par défaut - Utilisé pour la réplication de l’auteur à la publication.
+* [Agent](#replication-author-to-publish)  par défaut - Utilisé pour la réplication de l’auteur à la publication.
 
 * Vidage du répartiteur : il est utilisé pour gérer le cache du répartiteur. Voir [Invalidation du cache du dispatcher depuis l’environnement de création](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) et [Invalidation du cache du dispatcher depuis l’nstance de publication](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) pour plus d’informations.
 
-* [Réplication](#replicating-from-publish-to-author) inversée : utilisée pour la réplication de la publication à l’auteur. La réplication inverse n’est pas utilisée pour les fonctionnalités de communautés, telles que les forums, les blogs et les commentaires. Elle est désactivée, puisque la boîte d’envoi n’est pas activée. L&#39;utilisation de la réplication inverse nécessiterait une configuration personnalisée.
+* [Réplication](#replicating-from-publish-to-author)  inversée : utilisée pour la réplication de la publication à l’auteur. La réplication inverse n’est pas utilisée pour les fonctionnalités de communautés, telles que les forums, les blogs et les commentaires. Elle est désactivée, puisque la boîte d’envoi n’est pas activée. L&#39;utilisation de la réplication inverse nécessiterait une configuration personnalisée.
 
-* Agent statique - Agent qui stocke une représentation statique d&#39;un noeud dans le système de fichiers. For example with the default settings, content pages and dam assets are stored under `/tmp`, either as HTML or the appropriate asset format. See the `Settings` and `Rules` tabs for the configuration. Cette demande a été faite pour que lorsque la page est demandée directement depuis le serveur d’application, le contenu devienne visible. Il s’agit d’un agent spécialisé qui ne sera (probablement) pas nécessaire pour la plupart des instances.
+* Agent statique - Agent qui stocke une représentation statique d&#39;un noeud dans le système de fichiers. Par exemple, avec les paramètres par défaut, les pages de contenu et les ressources de barrage sont stockées sous `/tmp`, soit au format HTML, soit au format approprié. Voir les onglets `Settings` et `Rules` pour la configuration. Cette demande a été faite pour que lorsque la page est demandée directement depuis le serveur d’application, le contenu devienne visible. Il s’agit d’un agent spécialisé qui ne sera (probablement) pas nécessaire pour la plupart des instances.
 
 ## Agents de réplication - Paramètres de configuration {#replication-agents-configuration-parameters}
 
@@ -195,7 +195,7 @@ Lors de la configuration d’un agent de réplication depuis le console Outils, 
 
 * **Mise à jour de l’alias**
 
-   La sélection de cette option active les demandes d’invalidation de chemin de l’alias ou vanity au dispatcher. Also, see [Configuring a Dispatcher Flush Agent](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
+   La sélection de cette option active les demandes d’invalidation de chemin de l’alias ou vanity au dispatcher. Voir aussi [Configuration d&#39;un agent de vidage du répartiteur](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
 
 ### Transfert {#transport}
 
@@ -205,8 +205,8 @@ Lors de la configuration d’un agent de réplication depuis le console Outils, 
 
    Par exemple :
 
-   * A Default Agent may replicate to `http://localhost:4503/bin/receive`
-   * A Dispatcher Flush agent may replicate to `http://localhost:8000/dispatcher/invalidate.cache`
+   * Un agent par défaut peut répliquer sur `http://localhost:4503/bin/receive`
+   * Un agent de vidage du répartiteur peut se répliquer sur `http://localhost:8000/dispatcher/invalidate.cache`
 
    Le protocole spécifié ici (HTTP ou HTTPS) détermine la méthode de transport. 
 
@@ -236,7 +236,7 @@ Lors de la configuration d’un agent de réplication depuis le console Outils, 
 
    Activez cette option si vous voulez que les certificats SSL obsolètes soient acceptés.
 
-### Proxy {#proxy}
+### Proxy  {#proxy}
 
 Les paramètres suivants sont nécessaires uniquement si un proxy est requis :
 
@@ -264,7 +264,7 @@ Les paramètres suivants sont nécessaires uniquement si un proxy est requis :
 
    Le domaine du proxy NTLM.
 
-### Étendu {#extended}
+### Étendu  {#extended}
 
 * **Interface**
 
@@ -349,11 +349,11 @@ Ces paramètres sont utilisés pour définir les déclencheurs pour la réplicat
 
    Si coché, l’agent ne force pas la création de versions différentes des pages activées.
 
-## Configuration de vos agents de réplication  {#configuring-your-replication-agents}
+## Configuration de vos agents de réplication   {#configuring-your-replication-agents}
 
 Pour plus d’informations sur la connexion des agents de réplication à l’instance de publication à l’aide de MSSL, voir [Réplication en utilisant SSL réciproque](/help/sites-deploying/mssl-replication.md)
 
-### Configuration de vos agents de réplication depuis l’environnement de création {#configuring-your-replication-agents-from-the-author-environment}
+### Configuration de vos agents de réplication depuis l’environnement de création  {#configuring-your-replication-agents-from-the-author-environment}
 
 Depuis l’onglet Outils dans l’environnement de création, vous pouvez configurer les agents de réplication résidant dans l’environnement de création (**agents sur l’auteur**) ou l’environnement de publication (**agents à la publication**). Les procédures suivantes montrent la configuration d’un agent pour l’environnement de création, mais peuvent être utilisées pour les deux.
 
@@ -370,7 +370,7 @@ Depuis l’onglet Outils dans l’environnement de création, vous pouvez config
 
    ![chlimage_1-145](assets/chlimage_1-145.png)
 
-1. Les valeurs fournies doivent être suffisantes pour une installation par défaut. If you make changes then click **OK** to save them (see [Replication Agents - Configuration Parameters](#replication-agents-configuration-parameters) for more details of the individual parameters).
+1. Les valeurs fournies doivent être suffisantes pour une installation par défaut. Si vous apportez des modifications, cliquez sur **OK** pour les enregistrer (voir [Agents de réplication - Paramètres de configuration](#replication-agents-configuration-parameters) pour plus d&#39;informations sur les paramètres individuels).
 
 >[!NOTE]
 >
@@ -378,7 +378,7 @@ Depuis l’onglet Outils dans l’environnement de création, vous pouvez config
 >
 >Vous devez utiliser à la place un compte utilisateur de réplication specifique au site disposant des droits de réplication des chemins nécessaires.
 
-### Configuration de la réplication inverse {#configuring-reverse-replication}
+### Configuration de la réplication inverse  {#configuring-reverse-replication}
 
 La réplication inverse est utilisée pour renvoyer le contenu généré par les utilisateurs de l’instance de publication vers une instance d’auteur. Cela est généralement utilisé pour des fonctionnalités telles que les enquêtes et les formulaires d’inscription.
 
@@ -391,11 +391,11 @@ Comme l’environnement de publication se trouve généralement dans la zone dé
 
 >[!NOTE]
 >
->For AEM [Communities](/help/communities/overview.md), replication is not used for user generated content on a publish instance. See [Community Content Storage](/help/communities/working-with-srp.md).
+>Pour AEM [Communautés](/help/communities/overview.md), la réplication n’est pas utilisée pour le contenu généré par l’utilisateur sur une instance de publication. Voir [Enregistrement de contenu communautaire](/help/communities/working-with-srp.md).
 
 Pour cela vous aurez besoin des éléments suivants :
 
-**Agent de réplication inverse dans l’environnement** d’auteur. Il s’agit du composant principal permettant de collecter des informations à partir de la boîte d’envoi dans l’environnement de publication :
+**Agent de réplication inverse dans l&#39;** environnement d&#39;auteur. Il s&#39;agit du composant principal permettant de collecter des informations à partir de la boîte d&#39;envoi dans l&#39;environnement de publication :
 
 Si vous souhaitez utiliser la réplication inverse, vérifiez que cet agent est activé.
 
@@ -411,7 +411,7 @@ Si vous souhaitez utiliser la réplication inverse, vérifiez que cet agent est 
 >
 >Seul le contenu est répliqué- les données utilisateur ne le sont pas (les utilisateurs, les groupes d’utilisateurs et les profils utilisateurs).
 >
->To synchronize user data across multiple publish instances, enable [User Synchronization](/help/sites-administering/sync.md).
+>Pour synchroniser les données utilisateur sur plusieurs instances de publication, activez [Synchronisation utilisateur](/help/sites-administering/sync.md).
 
 Durant l’installation, un agent par défaut est déjà configuré pour la réplication du contenu vers une instance de publication s’exécutant sur le port 4503 de l’hôte local.
 
@@ -430,7 +430,7 @@ Pour configurer la réplication du contenu pour un autre instance de publication
       * Sélectionnez **Activé**.
       * Saisissez une **description**.
       * Définissez l’**intervalle entre deux tentatives** sur `60000`.
-      * Leave the **Serialization Type** as `Default`.
+      * Laissez **Type de sérialisation** comme `Default`.
    * Dans l’onglet **Transport** :
 
       * Saisissez l’URI requis pour la nouvelle instance de publication ; par exemple,
@@ -447,7 +447,7 @@ Vous pouvez ensuite tester l’opération en mettant à jour, puis en publiant u
 
 Les mises à jour s’affichent sur toutes les instances de publication qui ont été configurées comme décrit ci-dessus.
 
-Si vous rencontrez des problèmes, vous pouvez vérifier les journaux sur l’instance d’auteur. Depending on the level of detail required you can also set the **Log Level** to `Debug` using the **Agent Settings** dialog as above.
+Si vous rencontrez des problèmes, vous pouvez vérifier les journaux sur l’instance d’auteur. En fonction du niveau de détail requis, vous pouvez également définir le **Niveau de journal** sur `Debug` à l&#39;aide de la boîte de dialogue **Paramètres de l&#39;agent** comme ci-dessus.
 
 >[!NOTE]
 >
@@ -461,13 +461,13 @@ Si vous rencontrez des problèmes, vous pouvez vérifier les journaux sur l’in
 
 
 
-### Configuration d’un agent de vidage du dispatcher {#configuring-a-dispatcher-flush-agent}
+### Configuration d’un agent de vidage du dispatcher  {#configuring-a-dispatcher-flush-agent}
 
 Les agents par défaut sont inclus dans l’installation. Toutefois, une certaine configuration est nécessaire. Il en va de même si vous définissez un nouvel agent :
 
 1. Ouvrez l’onglet **Outils** dans AEM.
 1. Cliquez sur **Déploiement**.
-1. Select **Replication** and then **Agents on publish**.
+1. Sélectionnez **Réplication**, puis **Agents sur publication**.
 1. Double-cliquez sur **Vidage du dispatcher** pour ouvrir l’aperçu.
 1. Cliquez sur **Modifier**. La boîte de dialogue **Paramètres de l’agent** s’ouvre :
 
@@ -475,8 +475,8 @@ Les agents par défaut sont inclus dans l’installation. Toutefois, une certain
 
       * Sélectionnez **Activé**.
       * Saisissez une **description**.
-      * Leave the **Serialization Type** as `Dispatcher Flush`, or set it as such if creating a new agent.
-      * (optional) Select **Alias update** to enable alias or vanity path invalidation requests to Dispatcher.
+      * Laissez **Type de sérialisation** comme `Dispatcher Flush` ou définissez-le comme tel si vous créez un nouvel agent.
+      * (Facultatif) Sélectionnez **Mise à jour de l&#39;alias** pour activer les demandes d&#39;invalidation d&#39;alias ou de chemin de vanité au répartiteur.
    * Dans l’onglet **Transport** :
 
       * Saisissez l’URI requis pour la nouvelle instance de publication ; par exemple,
@@ -495,7 +495,7 @@ Les agents par défaut sont inclus dans l’installation. Toutefois, une certain
 1. Pour enregistrer les modifications, cliquez sur **OK.**
 1. Retournez à l’onglet **Outils**, d’où vous pouvez **activer** l’agent de **vidage du dispatcher** (**agents sur la publication**).
 
-L’agent de réplication du **vidage du dispatcher** n’est pas actif sur l’auteur. You can access the same page in the publish environment by using the equivalent URI; for example, `http://localhost:4503/etc/replication/agents.publish/flush.html`.
+L’agent de réplication du **vidage du dispatcher** n’est pas actif sur l’auteur. Vous pouvez accéder à la même page dans l’environnement de publication en utilisant l’URI équivalent ; par exemple, `http://localhost:4503/etc/replication/agents.publish/flush.html`.
 
 ### Contrôle de l’accès aux agents de réplication {#controlling-access-to-replication-agents}
 
@@ -509,11 +509,11 @@ L’accès aux pages utilisées pour configurer les agents de réplication peut 
 
 >[REMARQUE!]
 >
->La création d&#39;agents de réplication n&#39;est prise en charge que dans l&#39;emplacement du `/etc/replication` référentiel. Cela est nécessaire pour que les listes ACL associées soient correctement gérées. La création d&#39;un agent de réplication à un autre emplacement de l&#39;arborescence peut conduire à un accès non autorisé.
+>La création d&#39;agents de réplication n&#39;est prise en charge que dans l&#39;emplacement du référentiel `/etc/replication`. Cela est nécessaire pour que les listes ACL associées soient correctement gérées. La création d&#39;un agent de réplication à un autre emplacement de l&#39;arborescence peut conduire à un accès non autorisé.
 
 Divers paramètres de vos agents de réplication peuvent être configurés à l’aide CRXDE Lite.
 
-If you navigate to `/etc/replication` you can see the following three nodes:
+Si vous accédez à `/etc/replication`, vous pouvez voir les trois noeuds suivants :
 
 * `agents.author`
 * `agents.publish`
@@ -569,11 +569,11 @@ L’éditeur décompressera tous les éléments, les enregistrera et en rendra c
 ### Configuration de la réplication par lots {#configuring-batch-replication}
 
 1. Accédez à `http://serveraddress:serverport/siteadmin`
-1. Appuyez sur l’icône **[!UICONTROL Outils]** située dans la partie supérieure de l’écran.
-1. Dans le rail de navigation de gauche, accédez à **[!UICONTROL Réplication - Agents sur l’auteur]** et doublon cliquez sur Agent **** par défaut.
+1. Appuyez sur l&#39;icône **[!UICONTROL Outils]** dans la partie supérieure de l&#39;écran.
+1. Dans le rail de navigation de gauche, accédez à **[!UICONTROL Réplication - Agents sur l’auteur]** et cliquez sur **[!UICONTROL Agent par défaut]** par doublon.
    * Vous pouvez également atteindre l’agent de réplication de publication par défaut en accédant directement à `http://serveraddress:serverport/etc/replication/agents.author/publish.html`
 1. Appuyez sur le bouton **[!UICONTROL Modifier]** au-dessus de la file d&#39;attente de réplication.
-1. In the following window, go to the **[!UICONTROL Batch]** tab:
+1. Dans la fenêtre suivante, accédez à l&#39;onglet **[!UICONTROL Batch]** :
    ![réplication de lots](assets/batchreplication.png)
 1. Configurez l&#39;agent.
 
