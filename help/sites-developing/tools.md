@@ -33,7 +33,7 @@ Les deux outils suivants sont des outils de test Open Source :
 
 Selenium est utilisé pour le test de fonctions dans un navigateur avec un seul utilisateur par activité. Il enregistre les étapes de test (clics) sous la forme de tableaux HTML ou de classes Java.
 
-For more information see [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
+Pour plus d’informations, voir [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **JMeter**
 
@@ -43,7 +43,7 @@ Pour plus d’informations, voir [http://jakarta.apache.org/jmeter/](http://jaka
 
 Il existe également une foule d’outils propriétaires conçus pour automatiser les tests et gérer les plans de test.
 
-## Suivi {#tracking}
+## Suivi  {#tracking}
 
 Les outils suivants sont faciles à obtenir. Il subsiste toutefois un problème fondamental dans tous les cas, à savoir : la disponibilité des données pour l’ensemble des membres de l’équipe du projet, tant le partenaire que le client.
 
