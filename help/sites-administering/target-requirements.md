@@ -20,7 +20,7 @@ ht-degree: 70%
 
 # Conditions préalables à l’intégration à Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
-As part of the [integration of AEM and Adobe Target](/help/sites-administering/target.md), you need to register with Adobe Target, configure the replication agent, and secure activity settings on the publish node.
+Dans le cadre de l&#39;intégration de [AEM et Adobe Target](/help/sites-administering/target.md), vous devez vous enregistrer auprès de Adobe Target, configurer l&#39;agent de réplication et sécuriser les paramètres d&#39;activité sur le noeud de publication.
 
 ## Inscription à Adobe Target {#registering-with-adobe-target}
 
@@ -37,7 +37,7 @@ Le code client identifie le compte client Adobe Target en appelant le serveur A
 
 ## Activation de l’agent de réplication Target {#enabling-the-target-replication-agent}
 
-The Test and Target [replication agent](/help/sites-deploying/replication.md) must be enabled on the author instance. Note that this replication agent is not enabled by default if you used the [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) run mode for installing AEM. Pour plus d’informations sur la sécurisation de votre environnement de production, voir [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md).
+L&#39;agent de réplication [Test et Cible](/help/sites-deploying/replication.md) doit être activé sur l&#39;instance d&#39;auteur. Notez que cet agent de réplication n&#39;est pas activé par défaut si vous avez utilisé le mode d&#39;exécution [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) pour installer AEM. Pour plus d’informations sur la sécurisation de votre environnement de production, voir [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md).
 
 1. Sur la page d’accueil d’AEM, cliquez ou appuyez sur **Outils** > **Déploiement** > **Réplication**.
 1. Cliquez ou appuyez sur **Agents sur l’auteur**.
@@ -46,23 +46,23 @@ The Test and Target [replication agent](/help/sites-deploying/replication.md) mu
 
    >[!NOTE]
    >
-   >Lorsque vous configurez l’agent de réplication Test&amp;Target, sous l’onglet **transport**, l’URI est défini par défaut sur **tnt:///**. Do not replace this URI with **https://admin.testandtarget.omniture.com**.
+   >Lorsque vous configurez l’agent de réplication Test&amp;Target, sous l’onglet **transport**, l’URI est défini par défaut sur **tnt:///**. Ne remplacez pas cet URI par **https://admin.testandtarget.omniture.com**.
    >
-   >Veuillez noter que si vous tentez de tester la connexion avec **tnt:///**, elle renvoie une erreur. This is expected behavior as this URI is for internal use only and should not be used with **Test Connection**.
+   >Veuillez noter que si vous tentez de tester la connexion avec **tnt:///**, elle renvoie une erreur. Ce comportement est attendu car cet URI est destiné à un usage interne uniquement et ne doit pas être utilisé avec **Test Connection**.
 
 ## Sécurisation du nœud de paramètres d’activité {#securing-the-activity-settings-node}
 
 Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 
-The **cq:ActivitySettings** node is available in CRXDE lite under `/content/campaigns/*nameofbrand*`* *under the activities jcr:content node;* *for example `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
+Le noeud **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/campaigns/*nameofbrand*`* *sous le noeud jcr:content des activités ;* *par exemple `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
 
-The **cq:ActivitySettings** node under the activity&#39;s jcr:content is protected by the following ACLs:
+Le noeud **cq:ActivitySettings** sous l’activité jcr:content est protégé par les listes de contrôle d’accès suivantes :
 
 * Tout refuser pour tout le monde
 * Autoriser jcr:read,rep:write pour target-activity-authors (l’auteur est membre de ce groupe par défaut)
 * Autoriser jcr:read,rep:write pour targetservice
 
-Ces paramètres permettent de garantir que les utilisateurs ordinaires n’ont pas accès aux propriétés de nœud. Utilisez les mêmes listes ACL sur les instances de création et de publication. See [User Administration and Security](/help/sites-administering/security.md) for more information.
+Ces paramètres permettent de garantir que les utilisateurs ordinaires n’ont pas accès aux propriétés de nœud. Utilisez les mêmes listes ACL sur les instances de création et de publication. Voir [Administration utilisateur et sécurité](/help/sites-administering/security.md) pour plus d’informations.
 
 ## Configuration de l’externaliseur AEM {#configuring-the-aem-externalizer}
 
@@ -70,7 +70,7 @@ Lors de la modification d’une activité dans Adobe Target, l’URL pointe sur
 
 Pour configurer l’externaliseur AEM :
 
-1. Navigate to the OSGi web console at **https://&lt;server>:&lt;port>/system/console/configMgr.**
+1. Accédez à la console Web OSGi à l’adresse **https://&lt;serveur>:&lt;port>/system/console/configMgr.**
 1. Recherchez **Day CQ Link Externalizer** et saisissez le domaine du nœud de création.
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
