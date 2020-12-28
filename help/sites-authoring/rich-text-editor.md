@@ -18,7 +18,7 @@ ht-degree: 33%
 ---
 
 
-# Using the Rich Text Editor to author content {#using-the-rich-text-editor-to-author-content}
+# Utilisation de l’éditeur de texte enrichi pour créer du contenu {#using-the-rich-text-editor-to-author-content}
 
 L’Editeur de texte enrichi (RTE) est un élément de base pour la création de texte dans AEM pages. De nombreux composants tels que Texte, Texte et Image et Tableau sont basés sur RTE.
 
@@ -28,7 +28,7 @@ L’Editeur de texte enrichi (RTE) est un élément de base pour la création de
 
 ## Modification statique {#in-place-editing}
 
-La sélection d’un composant de type texte à l’aide d’un simple clic ou d’une simple pression permet d’afficher la barre d’outils [du](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)composant.
+La sélection d’un composant texte à l’aide d’un simple clic ou d’un simple clic révèle la barre d’outils du composant [](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste).
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -38,9 +38,9 @@ Appuyez de nouveau/cliquez ou sélectionnez initialement le composant avec un do
 
 Cette barre d’outils propose les options suivantes :
 
-* **Format**: Définissez la mise en forme Gras, Italique et Souligné.
+* **Format** : Définissez la mise en forme Gras, Italique et Souligné.
 
-* **Listes**: Créez des listes à puces ou numérotées ou définissez le retrait.
+* **Listes** : Créez des listes à puces ou numérotées ou définissez le retrait.
 
 * **Lien hypertexte**
 
@@ -52,13 +52,13 @@ Cette barre d’outils propose les options suivantes :
 
 * **Enregistrer**
 
-## Modification en plein écran {#full-screen-editing}
+## Edition en plein écran {#full-screen-editing}
 
 Pour les composants basés sur du texte, la sélection du mode plein écran dans la barre d’outils ouvre l’éditeur de texte enrichi et masque le reste du contenu de la page.
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-Le mode Plein écran affiche toutes les options de votre éditeur de texte enrichi, qui sont configurées par votre administrateur. Elles peuvent varier d’une instance AEM [à l’autre en fonction de la configuration](../sites-administering/rich-text-editor.md) fournie par les administrateurs ou les développeurs AEM. Si une option est manquante, demandez à votre administrateur de la rendre disponible.
+Le mode Plein écran affiche toutes les options de votre éditeur de texte enrichi, qui sont configurées par votre administrateur. Elles peuvent varier selon les instances d&#39;AEM [selon la configuration](../sites-administering/rich-text-editor.md) fournie par les administrateurs ou les développeurs AEM. Si une option est manquante, demandez à votre administrateur de la rendre disponible.
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
