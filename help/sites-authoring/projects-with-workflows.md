@@ -59,7 +59,7 @@ Pour plus d’informations sur l’utilisation des workflows dans AEM, reportez-
 
 Cette section décrit les workflows disponibles pour les projets.
 
-## Workflow de demande de copie   {#request-copy-workflow}
+## Workflow de demande de copie    {#request-copy-workflow}
 
 Ce workflow vous permet de demander un manuscrit à un utilisateur, puis de l’approuver. Pour démarrer le workflow de demande de copie :
 
@@ -80,7 +80,7 @@ Les workflows Séance photo du produit (commerce et sans commerce) sont abordés
 
 Dans le workflow d’approbation de projet, vous attribuez du contenu à un utilisateur et passez en revue ce contenu, puis vous l’approuvez.
 
-1. In your Simple project, select the ****+** sign in the **Workflows** tile and select **Project Approval Workflow**.
+1. Dans votre projet Simple, sélectionnez le signe ****+** dans la mosaïque **Workflows** et sélectionnez **Processus d&#39;approbation de projet**.
 1. Entrez un titre et sélectionnez la personne à laquelle l’affecter dans la liste Équipe. Le cas échéant, entrez une description, le chemin d’accès au contenu, la priorité de tâche et la date d’échéance.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
@@ -111,7 +111,7 @@ Ce workflow vous permet de demander une page d’entrée.
 
 1. Cliquez sur **Créer**. Le workflow commence. La tâche apparaît dans la mosaïque **Tâches**.
 
-## Worfklow de demande d’adresse électronique {#request-email-workflow}
+## Worfklow de demande d’adresse électronique  {#request-email-workflow}
 
 Ce workflow vous permet de demander une adresse électronique. Il s’agit du même workflow que celui qui s’affiche dans la mosaïque **Courriels**.
 
