@@ -46,7 +46,7 @@ Vous pouvez utiliser des fragments d’expérience :
 >
 >Si vous rencontrez des problèmes, contactez votre administrateur système.
 
-## Quand utiliser les fragments d’expérience ?   {#when-should-you-use-experience-fragments}
+## Quand utiliser les fragments d’expérience ?    {#when-should-you-use-experience-fragments}
 
 Les fragments d’expérience doivent être utilisés dans les cas suivants :
 
@@ -90,7 +90,7 @@ La création de dossiers vous permet d’effectuer les opérations suivantes :
    >
    >Vous pouvez utiliser l’[éditeur de modèles](/help/sites-authoring/templates.md) pour créer votre propre modèle.
 
-L’exemple suivant montre les fragments d’expérience structurés en fonction de `Contributors`. La structure utilisée illustre également l’utilisation d’autres fonctionnalités, telles que la gestion multisite (y compris des copies de langue).
+L’exemple suivant montre les fragments d’expérience structurés selon `Contributors`. La structure utilisée illustre également l’utilisation d’autres fonctionnalités, telles que la gestion multisite (y compris des copies de langue).
 
 >[!CAUTION]
 >
@@ -108,7 +108,7 @@ Pour créer et configurer un dossier pour vos fragments d’expérience, il est 
 
 >[!NOTE]
 >
->It is also possible to configure the [Allowed Templates for your instance](#configure-allowed-templates-instance), but this method is **not** recommended as the values may be overwritten upon upgrade.
+>Il est également possible de configurer les [modèles autorisés pour votre instance](#configure-allowed-templates-instance), mais cette méthode est **non** recommandée car les valeurs peuvent être remplacées lors de la mise à niveau.
 
 ### Configuration des modèles autorisés pour votre dossier {#configure-allowed-templates-folder}
 
@@ -133,7 +133,7 @@ Pour créer et configurer un dossier pour vos fragments d’expérience, il est 
 
 >[!CAUTION]
 >
->It is not recommended to change the **[!UICONTROL Allowed Templates]** by this method, as the templates specified may be overwritten upon upgrade.
+>Il n&#39;est pas recommandé de modifier les **[!UICONTROL modèles autorisés]** par cette méthode, car les modèles spécifiés peuvent être remplacés lors de la mise à niveau.
 >
 >Veuillez utiliser cette boîte de dialogue uniquement à titre d’information.
 
@@ -157,7 +157,7 @@ Pour créer un fragment d’expérience :
 
    ![screen_shot_2018-04-05at92221am1](assets/screen_shot_2018-04-05at92221am1.png)
 
-1. Navigate to the required folder and select **[!UICONTROL Create]**.
+1. Accédez au dossier requis et sélectionnez **[!UICONTROL Créer]**.
 
 1. Sélectionnez **[!UICONTROL Fragment d’expérience]** pour ouvrir l’assistant **[!UICONTROL Créer un fragment d’expérience]**.
 
@@ -181,7 +181,7 @@ Pour créer un fragment d’expérience :
 
 ## Modification d’un fragment d’expérience {#editing-your-experience-fragment}
 
-L’éditeur de fragment d’expérience offre des fonctionnalités similaires à l’éditeur de page normal. See [Editing Page Content](/help/sites-authoring/editing-content.md) for more information on how to use it.
+L’éditeur de fragment d’expérience offre des fonctionnalités similaires à l’éditeur de page normal. Voir [Modification du contenu de la page](/help/sites-authoring/editing-content.md) pour plus d&#39;informations sur la manière de l&#39;utiliser.
 
 La procédure suivante explique comment créer un teaser pour un produit :
 
@@ -210,7 +210,7 @@ Vous pouvez créer des variations du fragment d’expérience, selon vos besoins
 
 1. Définissez les propriétés requises :
 
-   * **[!UICONTROL Template (Modèle)]**
+   * **[!UICONTROL Template]**
    * **[!UICONTROL Titre]**
    * **[!UICONTROL Nom]** ; si rien n’est indiqué dans ce champ, le nom est déduit du titre
    * **[!UICONTROL Description]**
@@ -309,7 +309,7 @@ Par exemple :
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
-## Exportation de fragments d’expérience   {#exporting-experience-fragments}
+## Exportation de fragments d’expérience    {#exporting-experience-fragments}
 
 Par défaut, les fragments d’expérience sont fournis au format HTML. Ils peuvent être utilisés à la fois par AEM et les canaux tiers.
 
