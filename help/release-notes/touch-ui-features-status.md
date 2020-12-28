@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: 482b5eb0-1b15-4f10-a9d8-3b72dd74acf8
 translation-type: tm+mt
 source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
+workflow-type: tm+mt
+source-wordcount: '1073'
+ht-degree: 65%
 
 ---
 
 
-# État des fonctionnalités de l’IU tactile {#touch-ui-feature-status}
+# État des fonctionnalités de l’IU tactile  {#touch-ui-feature-status}
 
 >[!CAUTION]
 >
->Avec la version 6.4 d’AEM, l’interface utilisateur [classique est obsolète](/help/release-notes/deprecated-removed-features.md).  Adobe n’envisage pas d’apporter d’autres améliorations à l’interface utilisateur classique et les utilisateurs sont encouragés à tirer parti des nouvelles fonctionnalités puissantes disponibles dans l’interface utilisateur tactile.
+>Avec la version 6.4 de AEM, l’[interface utilisateur classique est obsolète](/help/release-notes/deprecated-removed-features.md). L’Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique et les utilisateurs sont invités à tirer parti des nouvelles fonctionnalités puissantes disponibles dans l’interface utilisateur tactile.
 
 Depuis la version 6.0, AEM est doté d’une nouvelle interface appelée IU optimisée pour les écrans tactiles (ou IU tactile) qui est cohérente avec Adobe Marketing Cloud et les instructions générales concernant les interfaces utilisateur Adobe. Avec la mise en œuvre quasi totale de la parité des fonctionnalités, cette interface est devenue l’interface utilisateur standard d’AEM. L’ancienne interface orientée bureau est dénommée « IU classique ».
 
 Bien que la plupart des fonctionnalités soient déjà présentes dans l’interface utilisateur optimisée pour les écrans tactiles, il en reste certaines à intégrer, qui le seront dans les prochaines mises à jour.
 
-La liste suivante présente l’état actuel des fonctionnalités mises en oeuvre dans AEM 6.4.
+La liste suivante présente l&#39;état actuel des capacités mises en oeuvre dans l&#39;AEM 6.4.
 
-For recommendations for customers that upgrade to AEM 6.4, please see [User Interface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md) for details.
+Pour obtenir des recommandations à l’intention des clients qui effectuent la mise à niveau vers AEM 6.4, voir [User Interface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md) pour plus d’informations.
 
 >[!NOTE]
 >
@@ -39,17 +42,17 @@ For recommendations for customers that upgrade to AEM 6.4, please see [User Inte
 >
 >Cette liste est la plus complète possible, mais ne doit pas être considérée comme exhaustive.
 
-## Légende {#legend}
+## Légende  {#legend}
 
 * **Complète :** la fonctionnalité est entièrement disponible dans l’IU optimisée pour les écrans tactiles.
-* **Surtout**: La fonctionnalité est principalement disponible dans l’interface utilisateur tactile.
+* **Principalement** : Cette fonction est principalement disponible dans l’interface utilisateur tactile.
 * **Absente :** la fonctionnalité n’est pas disponible dans l’IU optimisée pour les écrans tactiles. L’IU classique doit être utilisée pour exécuter cette action.
 * **Remplacée :** la fonctionnalité a été remplacée par une nouvelle implémentation qui fonctionne différemment.
 * **Supprimée :** la fonctionnalité n’existe plus dans l’IU optimisée pour les écrans tactiles et elle ne sera pas remplacée.
 
 ## État des fonctionnalités : Administration de sites {#feature-status-sites-admin}
 
-This is a list of capabilities the classic UI Site Admin ( `/siteadmin`) has and the status in the touch-enabled UI ( `/sites.html`).
+Il s&#39;agit d&#39;une liste de fonctionnalités dont dispose l&#39;administrateur classique du site de l&#39;interface utilisateur ( `/siteadmin`) et l&#39;état dans l&#39;interface utilisateur tactile ( `/sites.html`).
 
 <table> 
  <tbody>
@@ -61,7 +64,7 @@ This is a list of capabilities the classic UI Site Admin ( `/siteadmin`) has and
   <tr>
    <td>Navigation dans l’arborescence du site</td> 
    <td>Complète<br /> </td> 
-   <td>AEM 6.4 a introduit une arborescence <a href="/help/sites-authoring/basic-handling.md#content-tree">de</a>contenu.</td> 
+   <td>aem 6.4 a introduit une vue d'arborescence de contenu <a href="/help/sites-authoring/basic-handling.md#content-tree"></a>.</td> 
   </tr>
   <tr>
    <td>Démarrer le processus</td> 
@@ -99,7 +102,7 @@ This is a list of capabilities the classic UI Site Admin ( `/siteadmin`) has and
    <td> </td> 
   </tr>
   <tr>
-   <td>Recherche</td> 
+   <td>Rechercher</td> 
    <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
@@ -211,14 +214,14 @@ This is a list of capabilities the classic UI Site Admin ( `/siteadmin`) has and
   <tr>
    <td>Références</td> 
    <td>Principalement</td> 
-   <td>L’affichage des liens de page entrants sera ajouté dans la version 2019 d’AEM.</td> 
+   <td>L’affichage des liens de page entrants sera ajouté à la version 2019 de AEM.</td> 
   </tr>
  </tbody>
 </table>
 
 ## État des fonctionnalités : éditeur de page {#feature-status-page-editor}
 
-This is a list of capabilities the classic UI Page Editor ( `/cf#`) has and the status in the touch-enabled ( `/editor.html`).
+Il s&#39;agit d&#39;une liste de fonctionnalités dont dispose l&#39;éditeur de page classique de l&#39;interface utilisateur ( `/cf#`) et de l&#39;état dans l&#39;application tactile ( `/editor.html`).
 
 <table> 
  <tbody>
@@ -268,12 +271,12 @@ This is a list of capabilities the classic UI Page Editor ( `/cf#`) has and the 
    <td> </td> 
   </tr>
   <tr>
-   <td>ode : Modifier et prévisualiser</td> 
+   <td>ode : Modifier et Prévisualisation</td> 
    <td>Terminer</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Responsive Preview<br /> </td> 
+   <td>Prévisualisation réactive<br /> </td> 
    <td>Terminer</td> 
    <td> </td> 
   </tr>
@@ -298,7 +301,7 @@ This is a list of capabilities the classic UI Page Editor ( `/cf#`) has and the 
    <td> </td> 
   </tr>
   <tr>
-   <td>Modifier les propriétés<br /> </td> 
+   <td>Modification des propriétés<br /> </td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
@@ -315,7 +318,7 @@ This is a list of capabilities the classic UI Page Editor ( `/cf#`) has and the 
   <tr>
    <td>Présentation des packages de processus</td> 
    <td>Principalement</td> 
-   <td>Complètement accessible dans l’interface utilisateur tactile. Plusieurs charges utiles de flux de travail sont toujours présentées dans l’interface utilisateur classique.<br /> </td> 
+   <td>Entièrement accessible dans l’interface utilisateur tactile. Plusieurs charges utiles de flux de travail sont toujours présentées dans l’interface utilisateur classique.<br /> </td> 
   </tr>
   <tr>
    <td>Verrouiller/déverrouiller la page</td> 
@@ -432,7 +435,7 @@ This is a list of capabilities the classic UI Page Editor ( `/cf#`) has and the 
 
 ## État des fonctionnalités : éditeurs de texte, d’image et de tableau {#feature-status-text-table-and-image-editors}
 
-Il s’agit d’une liste des fonctionnalités de l’interface utilisateur classique, à savoir l’éditeur de texte, de tableau et d’image, ainsi que l’état de l’interface utilisateur tactile.
+Il s’agit d’une liste des fonctionnalités de l’interface utilisateur classique Texte, Tableau et Editeur d’image et de l’état de l’interface utilisateur tactile.
 
 <table> 
  <tbody>
@@ -444,12 +447,12 @@ Il s’agit d’une liste des fonctionnalités de l’interface utilisateur clas
   <tr>
    <td>Éditeur de texte enrichi</td> 
    <td>Terminer</td> 
-   <td>Utile en place, dans la boîte de dialogue et en plein écran.</td> 
+   <td>Cette option est utilisable en place, dans la boîte de dialogue et en plein écran.</td> 
   </tr>
   <tr>
-   <td>Activation/désactivation des plug-ins RTE</td> 
+   <td>Activation/désactivation des modules externes RTE</td> 
    <td>Complète<br /> </td> 
-   <td>Vous pouvez utiliser l’éditeur <a href="/help/sites-authoring/templates.md">de</a>modèles.</td> 
+   <td>Vous pouvez utiliser l'<a href="/help/sites-authoring/templates.md">éditeur de modèles</a>.</td> 
   </tr>
   <tr>
    <td>Utiliser RTE pour le texte brut</td> 
@@ -457,12 +460,12 @@ Il s’agit d’une liste des fonctionnalités de l’interface utilisateur clas
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe RTE : Liens et ancre</td> 
+   <td>Module externe RTE : Liens et ancrage</td> 
    <td>Terminer</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe RTE : Carte des caractères</td> 
+   <td>Module externe RTE : Zone cliquable</td> 
    <td>Terminer</td> 
    <td> </td> 
   </tr>
@@ -487,7 +490,7 @@ Il s’agit d’une liste des fonctionnalités de l’interface utilisateur clas
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe RTE : Sous-et exposant</td> 
+   <td>Module externe RTE : Sous-et-exposant</td> 
    <td>Terminer</td> 
    <td> </td> 
   </tr>
@@ -497,7 +500,7 @@ Il s’agit d’une liste des fonctionnalités de l’interface utilisateur clas
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe RTE : Listes (puces / nombres)</td> 
+   <td>Module externe RTE : Listes (puces / numéros)</td> 
    <td>Terminer</td> 
    <td> </td> 
   </tr>
@@ -512,7 +515,7 @@ Il s’agit d’une liste des fonctionnalités de l’interface utilisateur clas
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe RTE : Editeur de source (Modifier HTML)<br /> </td> 
+   <td>Module externe RTE : Éditeur de source (Modifier HTML)<br /> </td> 
    <td>Complète<br /> </td> 
    <td>Disponible uniquement dans la boîte de dialogue et en plein écran.<br /> </td> 
   </tr>
@@ -522,7 +525,7 @@ Il s’agit d’une liste des fonctionnalités de l’interface utilisateur clas
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe RTE : Tableau (éditeur de tableau intégré)</td> 
+   <td>Module externe RTE : Tableau (éditeur de tableau incorporé)</td> 
    <td>Terminer</td> 
    <td> </td> 
   </tr>
@@ -532,29 +535,29 @@ Il s’agit d’une liste des fonctionnalités de l’interface utilisateur clas
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe RTE : Autoriser les images intégrées</td> 
+   <td>Module externe RTE : Autoriser les images en ligne</td> 
    <td>Terminer</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Editeur de tableau</td> 
    <td>Terminer</td> 
-   <td>Utile en place, dans la boîte de dialogue et en plein écran.<br /> </td> 
+   <td>Utilisable en place, dans la boîte de dialogue et en plein écran.<br /> </td> 
   </tr>
   <tr>
-   <td>Faire glisser et déposer l’image dans la cellule du tableau<br /> </td> 
+   <td>Faire glisser et déposer l’image dans la cellule de tableau <br /> </td> 
    <td>Terminer</td> 
-   <td>En ligne utilisable</td> 
+   <td>Utilisation en ligne</td> 
   </tr>
   <tr>
    <td>Éditeur d’image<br /> </td> 
    <td>Terminer</td> 
-   <td>Utile en place, dans la boîte de dialogue et en plein écran.<br /> </td> 
+   <td>Utilisable en place, dans la boîte de dialogue et en plein écran.<br /> </td> 
   </tr>
   <tr>
    <td>Activation/désactivation des modules externes IPE</td> 
    <td>Terminer</td> 
-   <td>Il existe désormais une interface utilisateur dans l’éditeur <a href="/help/sites-authoring/templates.md">de</a>modèles.</td> 
+   <td>Il existe désormais une interface utilisateur dans l'<a href="/help/sites-authoring/templates.md">éditeur de modèles</a>.</td> 
   </tr>
   <tr>
    <td>Module externe IPE : Recadrer</td> 
@@ -603,10 +606,10 @@ La liste ci-dessous répertorie divers outils proposés dans l’IU classique et
   <tr>
    <td>Gestion des tâches</td> 
    <td>Remplacé</td> 
-   <td>6.0 Présentation <a href="/help/sites-authoring/projects.md">des projets et des tâches</a>.<br /> </td> 
+   <td>6.0 introduit <a href="/help/sites-authoring/projects.md">Projets et Tâches</a>.<br /> </td> 
   </tr>
   <tr>
-   <td>Boîte de réception du processus<br /> </td> 
+   <td>Boîte de réception de flux de travaux<br /> </td> 
    <td>Terminer</td> 
    <td> </td> 
   </tr>
@@ -616,7 +619,7 @@ La liste ci-dessous répertorie divers outils proposés dans l’IU classique et
    <td>Utiliser l’IU classique.</td> 
   </tr>
   <tr>
-   <td>Interface utilisateur d’administration du balisage<br /> </td> 
+   <td>Balisage de l’interface utilisateur d’administration<br /> </td> 
    <td>Terminer</td> 
    <td> </td> 
   </tr>
@@ -631,17 +634,17 @@ La liste ci-dessous répertorie divers outils proposés dans l’IU classique et
    <td> </td> 
   </tr>
   <tr>
-   <td>Interface utilisateur de configuration de déploiement</td> 
+   <td>Interface utilisateur de configuration de lancement</td> 
    <td>Absente</td> 
    <td>Utiliser l’IU classique.</td> 
   </tr>
   <tr>
-   <td>Utilisateur, groupes et autorisations<br /> </td> 
-   <td>Principalement terminé<br /> </td> 
-   <td>Pour modifier des autorisations avancées, utilisez l’interface utilisateur classique.<br /> </td> 
+   <td>IU des utilisateurs, groupes et autorisations<br /> </td> 
+   <td>Généralement terminé<br /> </td> 
+   <td>Pour modifier les autorisations avancées, utilisez l’interface utilisateur classique.<br /> </td> 
   </tr>
   <tr>
-   <td>Versions de purge (<code>/etc/versioning/purge.html</code>)</td> 
+   <td>Purger des versions (<code>/etc/versioning/purge.html</code>)</td> 
    <td>Absente</td> 
    <td>Utiliser l’IU classique.</td> 
   </tr>
@@ -651,7 +654,7 @@ La liste ci-dessous répertorie divers outils proposés dans l’IU classique et
    <td>Utiliser l’IU classique.<br /> </td> 
   </tr>
   <tr>
-   <td>Editeur en bloc (<code>/etc/importers/bulkeditor.html</code>)</td> 
+   <td>Éditeur en bloc (<code>/etc/importers/bulkeditor.html</code>)</td> 
    <td>Absente<br /> </td> 
    <td>Utiliser l’IU classique.</td> 
   </tr>
