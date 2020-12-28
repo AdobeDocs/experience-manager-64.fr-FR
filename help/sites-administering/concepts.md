@@ -209,7 +209,7 @@ L’emplacement réel peut dépendre de votre mise en œuvre, par exemple, gén�
 
 ## Produits {#products}
 
-### Produit Data versus Marketing Data {#product-data-versus-marketing-data}
+### Produit Données par rapport aux données marketing {#product-data-versus-marketing-data}
 
 #### Catégories structurelles et catégories marketing {#structural-versus-marketing-categories}
 
@@ -217,13 +217,13 @@ Si les deux catégories ci-dessous peuvent être différenciées, vous pouvez cr
 
 * *catégories structurelles
 
-   Arbre de catégories définissant *ce qu&#39;est un produit*; par exemple :
+   Arborescence de catégories définissant *ce qu&#39;est un produit*; par exemple :
 
    `/products/mens/shoes/sneakers`
 
-* *catégories marketing*
+* *Catégories* marketing
 
-   All other categories a *product can belong to*; for example:
+   Toutes les autres catégories d&#39;un produit *peuvent appartenir à*; par exemple :
 
    `/special-offers/christmas/shoes`)
 
@@ -236,7 +236,7 @@ Les données peuvent être :
 * Gérées directement dans AEM (générique).
 * Gérées dans le moteur eCommerce et mises à disposition dans AEM.
 
-   Depending on the data type it is [synchronized](#catalog-maintenance-data-synchronization) as necessary, or accessed directly; for example, highly volatile and critial data such as product prices are retrieved from the ecommerce engine on every page request to ensure they are always up-to-date.
+   Selon le type de données, il est [synchronisé](#catalog-maintenance-data-synchronization) selon les besoins, ou il est directement accessible ; par exemple, des données hautement volatiles et critiques, telles que les prix des produits, sont récupérées à partir du moteur eCommerce sur chaque demande de page afin de s’assurer qu’elles sont toujours à jour.
 
 Dans un cas comme dans l’autre, lorsque les données des produits ont été saisies/importées dans AEM, elles sont visibles dans la console **Produits**. Dans l’exemple ci-dessous, les vues sous forme de carte et de liste fournissent des informations du type suivant :
 
@@ -274,7 +274,7 @@ Les différents attributs de produit peuvent dépendre du moteur eCommerce utili
 
 * **Catégorie de ressources par défaut**
 
-   catégorie par défaut pour les ressources.
+   Catégorie par défaut pour les ressources.
 
 * **Données ERP**
 
@@ -294,7 +294,7 @@ Les différents attributs de produit peuvent dépendre du moteur eCommerce utili
 
    Résumé des fonctionnalités du produit.
 
-* **Fonctionnalités**
+* **Fonctions**
 
    Plus de détails sur les fonctionnalités du produit.
 
@@ -306,15 +306,15 @@ Plusieurs ressources peuvent être disponibles pour différents produits. En gé
 
 Un catalogue regroupe des données sur les produits afin de faciliter la gestion et la présentation à l’acheteur. Généralement, un catalogue est structuré selon des attributs comme la langue, la région géographique, la marque, la saison, le centre d’intérêt, le sport, etc.
 
-### Structure de catalogue {#catalog-structure}
+### Structure de catalogue  {#catalog-structure}
 
 #### Catalogues multilingues {#catalogs-in-multiple-languages}
 
-AEM prend en charge le contenu du produit en plusieurs langues. When requesting data, the integration framework retrieves the language from the current tree (for example, `en_US` for pages under `/content/geometrixx-outdoors/en_US`).
+AEM prend en charge le contenu du produit en plusieurs langues. Lors de la demande de données, la structure d’intégration récupère la langue de l’arborescence actuelle (par exemple, `en_US` pour les pages sous `/content/geometrixx-outdoors/en_US`).
 
 Pour une boutique multilingue, vous pouvez importer un catalogue individuellement pour chaque arborescence de langue (ou le copier avec [MSM](/help/sites-administering/msm.md)).
 
-#### Catalogues multimarque {#catalogs-for-multiple-brands}
+#### Catalogues multimarque  {#catalogs-for-multiple-brands}
 
 Comme pour les langues, les grandes entreprises multinationales peuvent avoir à couvrir plusieurs marques.
 
@@ -329,7 +329,7 @@ En fonction de votre mise en œuvre, vous pouvez importer les données sur les p
 * Fichier CSV (pour la mise en œuvre générique)
 * Moteur eCommerce
 
-### Maintenance du catalogue (synchronisation des données) {#catalog-maintenance-data-synchronization}
+### Maintenance du catalogue (synchronisation des données)  {#catalog-maintenance-data-synchronization}
 
 D’autres modifications apportées aux données du produit sont inévitables :
 
@@ -350,7 +350,7 @@ Cela dépend du type de données :
 
 * Des données très variables, comme des informations sur les prix, sont extraites du moteur de commerce pour chaque demande de page afin de veiller à ce qu’elles soient toujours à jour.
 
-### Catalogues – Performance et évolutivité {#catalogs-performance-and-scaling}
+### Catalogues – Performance et évolutivité  {#catalogs-performance-and-scaling}
 
 L’importation d’un catalogue volumineux contenant de nombreux produits (plus de 100 000 en général) à partir d’un moteur eCommerce (gestion d’informations sur les produits) peut avoir un impact sur le système en raison du grand nombre de nœuds. Elle peut également ralentir l’instance de création si des ressources (images des produits, par exemple) sont associées aux produits. Cela s’explique par l’utilisation intensive du processeur et de la mémoire lors du post-traitement de ces ressources.
 
@@ -363,13 +363,13 @@ Pour contourner ces problèmes, vous pouvez appliquer l’une des stratégies su
 * [Test de performance](#performance-testing)
 * [Performances – Divers](#performance-miscellaneous)
 
-#### Compartimentage {#bucketing}
+#### Compartimentage  {#bucketing}
 
 Si un nœud JCR comporte de nombreux nœuds enfants directs (1 000 et plus, par exemple), des compartiments (dossiers fantômes) sont nécessaires pour s’assurer que les performances ne sont pas affectées. Ils sont créés selon un algorithme lors de l’importation.
 
 Ces compartiments prennent la forme de dossiers fantômes introduits dans la structure du catalogue, mais peuvent être configurés afin d’être invisibles dans les adresses URL publiques.
 
-#### Déchargement du post-traitement des ressources sur une instance dédiée {#offload-asset-post-processing-to-a-dedicated-instance}
+#### Déchargement du post-traitement des ressources sur une instance dédiée  {#offload-asset-post-processing-to-a-dedicated-instance}
 
 Ce scénario consiste à configurer deux instances de création :
 
@@ -398,11 +398,11 @@ En l’absence de ressources (images) à importer pour des produits, vous pouvez
 
 Le test de performances doit être pris en compte dans les mises en œuvre d’AEM eCommerce :
 
-* environnement de l’auteur :
+* Environnement de l’auteur :
 
    L’activité en arrière-plan (par exemple, l’importation) peut se produire en même temps que l’activité normale de l’utilisateur (par exemple, la modification des pages) et même si les performances frontales sont (en général) prioritaires, les mauvaises performances constatées par les auteurs en ligne peuvent entraîner une frustration susceptible de bloquer une décision d’activation.
 
-* environnement de la publication :
+* Environnement de la publication :
 
    La réplication est un processus essentiel pour s’assurer que le contenu est publié rapidement et de manière fiable. qui peut être influencée par la façon dont le créateur regroupe le contenu à publier.
 
@@ -414,7 +414,7 @@ Ces tests des performances impliquent de connaître et d’analyser la cible :
 
 * Volumes de contenu
 
-   * Ressources
+   * Assets
    * Produits internationalisés localisés et codes SKU
 
 * Activité de l’utilisateur
@@ -430,7 +430,7 @@ Ces tests des performances impliquent de connaître et d’analyser la cible :
 
 * Exigences de maintenance (sauvegarde, optimisation TAR PM, nettoyage de l’entrepôt de données, etc.)
 
-#### Performances – Divers {#performance-miscellaneous}
+#### Performances – Divers  {#performance-miscellaneous}
 
 Pour toutes les mises en œuvre, tenez compte des points suivants :
 
@@ -462,7 +462,7 @@ Pour toutes les mises en œuvre, tenez compte des points suivants :
    Par exemple, il est habituellement recommandé de mettre en cache la gestion des attributs, car cela concerne les données mises à jour lors de l’importation des produits.
 * Envisagez d’utiliser des [pages de proxy](/help/sites-administering/concepts.md#proxy-pages).
 
-### Pages de sections du catalogue {#catalog-section-pages}
+### Pages de sections du catalogue  {#catalog-section-pages}
 
 Les sections du catalogue fournissent, par exemple, les éléments suivants :
 
@@ -491,7 +491,7 @@ Ces informations permettent à l’acheteur de sélectionner les éléments ci-d
 * Variantes de couleur et de taille
 * Quantité
 
-#### Pages d’entrée du produit {#product-landing-pages}
+#### Pages d’entrée du produit  {#product-landing-pages}
 
 Ces pages AEM fournissent principalement des informations statiques, par exemple une présentation et un aperçu contenant des liens vers les pages de produit sous-jacentes.
 
@@ -501,13 +501,13 @@ Le composant **Produit** peut être ajouté à une page avec une page parente, q
 
 Le composant **Produit** peut également être personnalisé selon vos exigences.
 
-### Pages de proxy {#proxy-pages}
+### Pages de proxy  {#proxy-pages}
 
 Des pages de proxy sont utilisées pour simplifier la structure du référentiel et optimiser le stockage des catalogues volumineux.
 
 La création d’un catalogue utilise dix nœuds par produit, car elle fournit des composants individuels pour chaque produit, que vous pouvez mettre à jour et personnaliser dans AEM. Ce grand nombre de nœuds peut devenir problématique si votre catalogue contient des centaines, voire des milliers de produits. Pour éviter tout problème, créez le catalogue en utilisant des pages de proxy.
 
-Proxy pages use a two-node structure ( `cq:Page` and `jcr:content`) that does not contain any of the actual product content. Le contenu est généré, au moment de la demande, en référençant les données du produit et la page de modèle.
+Les pages proxy utilisent une structure à deux noeuds ( `cq:Page` et `jcr:content`) qui ne contient aucun du contenu du produit réel. Le contenu est généré, au moment de la demande, en référençant les données du produit et la page de modèle.
 
 Ceci présente cependant un inconvénient : vous ne pourrez pas personnaliser les informations sur les produits dans AEM, car un modèle standard (défini pour votre site) est utilisé.
 
@@ -558,7 +558,7 @@ Tout comme les bons, les promotions permettent d’exécuter des scénarios, com
 
 Généralement, les promotions ne sont pas gérées par les responsables des informations sur les produits, mais par les directeurs marketing :
 
-* Une promotion est un composant basé sur une page, créé/modifié avec la console Sites web. ``
+* Une promotion est un composant basé sur une page, créé/modifié avec la console Sites web. &quot;
 * Diffusion de promotions :
 
    * Une priorité
@@ -650,11 +650,11 @@ Après s’être inscrit, l’acheteur peut se connecter à son compte afin que 
 
 La connexion unique (SSO) est proposée afin que les créateurs soient identifiés dans AEM et sur le système de commerce électronique sans avoir à s’identifier deux fois.
 
-### Mon compte {#myaccount}
+### Mon compte  {#myaccount}
 
 Les données des transactions du moteur eCommerce sont combinées aux informations personnelles sur l’acheteur. AEM utilise certaines de ces données sous forme de données de profil. L’action d’un formulaire dans AEM réécrit les informations dans le moteur eCommerce.
 
-Une page permet de gérer facilement les informations de compte. You can access it by clicking **My Account** at the top of a geometrixx page, or by navigating to `/content/geometrixx-outdoors/en/user/account.html`.
+Une page permet de gérer facilement les informations de compte. Vous pouvez y accéder en cliquant sur **Mon compte** en haut d’une page geometrixx ou en accédant à `/content/geometrixx-outdoors/en/user/account.html`.
 
 ![chlimage_1-176](assets/chlimage_1-176.png)
 
@@ -670,7 +670,7 @@ Ce composant Carnet d’adresses permet ce qui suit :
 
 Vous pouvez choisir l’adresse à définir par défaut.
 
-The address book component is reachable from the **My Account** page by clicking **Address Book** or by navigating to `/content/geometrixx-outdoors/en/user/account/address-book.html`.
+Le composant Carnet d&#39;adresses est accessible à partir de la page **Mon compte** en cliquant sur **Carnet d&#39;adresses** ou en accédant à `/content/geometrixx-outdoors/en/user/account/address-book.html`.
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
@@ -684,16 +684,16 @@ Le carnet d’adresses est utilisé lors du passage en caisse de votre panier :
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
-Les adresses sont conservées ci-dessous `user_home/profile/addresses`.\
+Les adresses sont conservées sous `user_home/profile/addresses`.\
 Par exemple, pour Alison Parker, il se trouverait sous aparker@geometrixx.info/profil/address/home/users/geometrixx//address
 
-Vous pouvez définir l’adresse à sélectionner par défaut. Ces informations sont conservées dans le profil de l’acheteur plutôt qu’avec l’adresse. The profile property `address.default` is set with the path of the selected address for value.
+Vous pouvez définir l’adresse à sélectionner par défaut. Ces informations sont conservées dans le profil de l’acheteur plutôt qu’avec l’adresse. La propriété de profil `address.default` est définie avec le chemin de l&#39;adresse sélectionnée pour la valeur.
 
 ### Tarification spécifique à un client {#customer-specific-pricing}
 
 Le moteur eCommerce utilise le contexte (essentiellement les informations de l’acheteur) afin de déterminer le prix qu’il contient, puis renvoie les informations correctes dans AEM.
 
-## Panier et commandes {#shopping-cart-and-orders}
+## Panier et commandes  {#shopping-cart-and-orders}
 
 Lorsque l’acheteur effectue des achats, il parcourt les pages de produits et sélectionne des articles qu’il place dans son panier. Lorsqu’il passe en caisse, il peut passer une commande.
 
@@ -709,7 +709,7 @@ Un client anonyme peut :
 >
 >Selon la configuration de vos informations d’adresse d’instance, l’enregistrement des clients peut être nécessaire avant le passage en caisse.
 
-### Clients enregistrés {#registered-shoppers}
+### Clients enregistrés  {#registered-shoppers}
 
 Un client enregistré peut :
 
@@ -719,7 +719,7 @@ Un client enregistré peut :
 * passer en caisse pour passer sa commande ;
 * afficher et suivre les commandes précédentes.
 
-### Présentation du contenu du panier {#shopping-cart-content-overview}
+### Présentation du contenu du panier  {#shopping-cart-content-overview}
 
 Le panier fournit :
 
@@ -739,12 +739,12 @@ Le panier est enregistré en fonction du moteur utilisé :
 
 Dans un cas comme dans l’autre, les articles restent dans le panier (et peuvent être restaurés) au-delà de la connexion/déconnexion (mais uniquement sur le même ordinateur/dans le même navigateur). Par exemple :
 
-* browse as `anonymous` and add products to the cart
-* sign in as `Allison Parker` - her cart is empty
+* naviguez sous `anonymous` et ajoutez des produits au panier.
+* se connecter en tant que `Allison Parker` - son panier est vide
 * Ajoutez des produits à son panier.
-* sign out - the cart will show the products for `anonymous`
+* déconnexion : le panier affiche les produits pour `anonymous`
 
-* sign in again as `Allison Parker` - her products are restored
+* reconnectez-vous en tant que `Allison Parker` - ses produits sont restaurés
 
 >[!NOTE]
 >
@@ -752,7 +752,7 @@ Dans un cas comme dans l’autre, les articles restent dans le panier (et peuven
 
 >[!NOTE]
 >
->It is not recommended to test restoring the cart contents with the `admin` account, as this can conflict with the `admin` account of the eCommerce engine (e.g. hybris).
+>Il n&#39;est pas recommandé de tester la restauration du contenu du panier avec le compte `admin`, car cela peut entrer en conflit avec le compte `admin` du moteur de commerce électronique (ex. : hybris).
 
 >[!NOTE]
 >
@@ -760,7 +760,7 @@ Dans un cas comme dans l’autre, les articles restent dans le panier (et peuven
 
 Avant le passage en caisse, les modifications des prix sont répercutées (sur les deux systèmes) dès qu’elles ont lieu.
 
-### Informations sur les commandes {#order-information}
+### Informations sur les commandes  {#order-information}
 
 En fonction de vos informations de mise en œuvre sur une commande contenue dans le moteur eCommerce ou dans AEM, ces informations sont rendues par AEM.
 
@@ -784,7 +784,7 @@ Différentes informations sont stockées, notamment :
 
 * **Eléments de contenu**
 
-   liste des articles commandés.
+   Liste des articles commandés.
 
 * **Sous-total**
 
@@ -828,7 +828,7 @@ Différentes informations sont stockées, notamment :
 
 * **Lien de suivi**
 
-   Lien utilisé pour le suivi de la commande en cours d&#39;expédition.
+   Lien utilisé pour le suivi de la commande lors de son expédition.
 
 >[!NOTE]
 >
@@ -864,13 +864,13 @@ Le passage en caisse est mis en œuvre avec des formulaires AEM standard. Cela 
 
 Le moteur eCommerce gère ensuite le processus de passage en caisse avec les informations saisies dans les formulaires AEM.
 
-### Sécurité du paiement {#payment-security}
+### Sécurité du paiement  {#payment-security}
 
 Les informations de paiement, dont les informations de carte de crédit, sont généralement gérées par le moteur eCommerce. AEM transfère ces informations sur les transactions au moteur (d’où elles sont ensuite transférées à un service de traitement des paiements).
 
 La conformité aux normes de sécurité des données de l&#39;industrie des cartes de paiement peut être obtenue.
 
-### Confirmation de commande {#confirmation-of-order}
+### Confirmation de commande  {#confirmation-of-order}
 
 La commande est confirmée à l’écran et peut être suivie grâce au [suivi des commandes](#order-tracking).
 
