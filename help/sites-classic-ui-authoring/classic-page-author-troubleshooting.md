@@ -36,7 +36,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * Vous avez modifié une page et l’avez répliquée sur le site de publication, mais l’*ancienne* version de la page est toujours visible sur le site de publication.
 
-* **Motif** :
+* **Raison**:
 
    * Les raisons peuvent être multiples, mais sont généralement liées à la mémoire cache (de votre navigateur local ou du dispatcher), bien qu’il s’agisse parfois d’un problème de la file d’attente de réplication.
 
@@ -59,7 +59,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * Le sidekick n’est pas visible lors de la modification d’une page de contenu dans l’environnement de création.
 
-* **Motif** :
+* **Raison**:
 
    * Dans de rares cas, il se peut que vous ayez positionné l’en-tête de votre sidekick en dehors de votre fenêtre active. Ceci signifie que vous ne pouvez pas le repositionner.
 
@@ -71,18 +71,18 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 * **Problème:**
 
-   * When using the **Find &amp; Replace** option it can happen that not all instances of the `find` term are replaced on a page.
+   * Lorsque vous utilisez l&#39;option **Rechercher et remplacer**, il se peut que toutes les instances du terme `find` ne soient pas remplacées sur une page.
 
-* **Motif** :
+* **Raison**:
 
-   * The capability of **Find &amp; Replace** depends on how the content is saved, and whether it can be searched upon. Par exemple, un texte de blog est stocké dans la propriété `jcr:text`, qui n’est pas configurée pour faire l’objet de recherches. L’étendue par défaut du servlet de recherche et de remplacement couvre les propriétés suivantes :
+   * La fonctionnalité **Rechercher et remplacer** dépend de la manière dont le contenu est enregistré et de la possibilité de le rechercher. Par exemple, un texte de blog est stocké dans la propriété `jcr:text`, qui n’est pas configurée pour faire l’objet de recherches. L’étendue par défaut du servlet de recherche et de remplacement couvre les propriétés suivantes :
 
       * `jcr:title`
       * `jcr:description`
       * `jcr:text`
       * `text`
 
-* **Solution**:
+* **Solution** :
 
    * Ces définitions peuvent être modifiées dans la configuration du **servlet Day CQ WCM Find Replace** à l’aide de la **console Web**, par exemple à l’adresse
 
