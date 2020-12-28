@@ -53,11 +53,11 @@ Une fois le téléchargement terminé, vos fichiers 3D sont convertis et un tra
 
 La conversion et le traitement des fichiers 3D consomment généralement d’importantes ressources en termes de processeur et de mémoire sur un serveur. Cela prend également un temps considérable. Les délais de traitement varient souvent considérablement en fonction de la taille du modèle et des capacités du serveur. Par exemple, un petit modèle standard avec moins de 100 000 faces est généralement prêt pour l’affichage en moins d’une minute ; il est entièrement traité en 2 ou 3 minutes. En revanche, un grand modèle avec plus d’un million de faces peut prendre plusieurs dizaines de minutes pour être complètement traité.
 
-Les tâches de conversion, de traitement et de rendu sont placées en file d’attente pour empêcher de trop ralentir le serveur. The message &quot;Waiting for processing...&quot; is sometimes shown in the **[!UICONTROL Card View]** at the time you uploaded assets. Ce statut indique que d’autres tâches de traitement ou de rendu doivent se terminer avant que la ressource actuelle soit traitée.
+Les tâches de conversion, de traitement et de rendu sont placées en file d’attente pour empêcher de trop ralentir le serveur. Message &quot;En attente de traitement...&quot; s’affiche parfois dans la **[!UICONTROL Vue de carte]** au moment où vous avez téléchargé des ressources. Ce statut indique que d’autres tâches de traitement ou de rendu doivent se terminer avant que la ressource actuelle soit traitée.
 
 ## Surveillance de l’état du traitement de vos fichiers 3D chargés {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. Chaque modèle 3D téléchargé subit généralement les quatre ou six étapes de traitement ordonnées suivantes :
+Dans **[!UICONTROL Vue de carte]** uniquement, l’état et la progression du traitement s’affichent sous la forme d’une bannière de progression sur la carte du fichier. Chaque modèle 3D téléchargé subit généralement les quatre ou six étapes de traitement ordonnées suivantes :
 
 <table> 
  <tbody> 
@@ -68,8 +68,8 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   </tr> 
   <tr> 
    <td>1</td> 
-   <td>Traitement en cours</td> 
-   <td>extraction initiale de base du traitement et des métadonnées.</td> 
+   <td>Traitement</td> 
+   <td>Extraction initiale de base du traitement et des métadonnées.</td> 
   </tr> 
   <tr> 
    <td>2</td> 
@@ -101,5 +101,5 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
 
 >[!NOTE]
 >
->You can view a 3D asset in **[!UICONTROL Detail View]** or render it after the Creating preview stage is complete. Il n’est pas nécessaire d’attendre que toutes les étapes de traitement soient terminées.
+>Vous pouvez vue un fichier 3D dans **[!UICONTROL Vue de détails]** ou le rendre une fois l’étape de création de prévisualisation terminée. Il n’est pas nécessaire d’attendre que toutes les étapes de traitement soient terminées.
 
