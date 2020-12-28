@@ -30,18 +30,18 @@ Ils partagent les mêmes propriétés communes que celles qui se trouvent dans c
 
 Les tableaux suivants décrivent les propriétés et les noeuds de contenu.
 
-## Propriétés d’intégration courantes {#common-integration-properties}
+## Propriétés d&#39;intégration communes {#common-integration-properties}
 
 | **Nom de la propriété** | **Type** | **Valeurs par défaut ou attendues** | **Description** |
 |---|---|---|---|
 | dps-id | Chaîne |  | affecté par AEM Mobile et stocké par AEM une fois téléchargé vers AEM Mobile ou importé de AEM Mobile |
 | dps-resourceType | Chaîne | dps:Article | dps:Bannière | dps:Collection | propriété de type d&#39;entité |
 | dps-version | Chaîne |  | version de l’entité AEM Mobile (également incluse dans l’aemm-id complet) |
-| dps-lastSynced | Date    |  | date de la dernière synchronisation/importation d&#39;AEM Mobile vers AEM |
-| dps-lastUploaded | Date    |  | date du dernier transfert de l’AEM vers AEM Mobile |
+| dps-lastSynced | Date |  | date de la dernière synchronisation/importation d&#39;AEM Mobile vers AEM |
+| dps-lastUploaded | Date |  | date du dernier transfert de l’AEM vers AEM Mobile |
 | dps-lastUploadedBy | String:userid |  | ID de l’utilisateur qui a effectué la dernière demande de transfert d’AEM à AEM Mobile |
 
-## Propriétés de métadonnées de base {#core-metadata-properties}
+## Propriétés des métadonnées de base {#core-metadata-properties}
 
 | Nom de la propriété | Type | Valeurs par défaut ou attendues |
 |--- |--- |--- |
