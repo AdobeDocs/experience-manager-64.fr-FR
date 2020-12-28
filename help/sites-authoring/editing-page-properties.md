@@ -84,11 +84,11 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    Permet de saisir une URL Vanity pour cette page. Vous pouvez ainsi disposer d’une URL plus courte et/ou plus explicite.
 
-   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
+   Par exemple, si l’URL de vanité est définie sur w `elcome`pour la page identifiée par le chemin / `v1.0/startpage`pour le site Web h `ttp://example.com,`, h `ttp://example.com/welcome`serait l’URL de vanité de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
-   >L’URL de redirection :
+   >L’URL Vanity :
    >
    >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page.
    >* ne prend pas en charge les modèles d’expression régulière.
@@ -96,7 +96,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Rediriger l’URL Vanity**
 
-   Indique si vous souhaitez que la page utilise l’URL de redirection.
+   Indique si vous souhaitez que la page utilise l’URL Vanity.
 
 ### Avancé {#advanced}
 
@@ -122,7 +122,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    >
    >Par exemple, si vous définissez l’alias `latin-lang` pour le nœud `/content/we-retail/spanish`, cette page est accessible via `/content/we-retail/latin-language`.
    >
-   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names)
+   >Pour plus d&#39;informations, voir [Noms de page localisés sous Optimisation du référencement et meilleures pratiques de gestion des URL](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **Modèles autorisés**
 
@@ -136,7 +136,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    >[!CAUTION]
    >
-   >The **[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)**tab allows editing of CUG configurations based on the presence of the`granite:AuthenticationRequired`mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of cq:cugEnabled property, a warning message will be shown under **Authentication Requirement**and the option will not be editable, nor will the[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)be editable.
+   >L&#39;onglet **[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)** permet de modifier les configurations CUG en fonction de la présence du mixin `granite:AuthenticationRequired`. Si les autorisations de page sont configurées à l’aide de configurations CUG obsolètes, en fonction de la présence de la propriété cq:cugEnabled, un message d’avertissement s’affiche sous **Authentification requise** et l’option ne sera pas modifiable, pas plus que les [Autorisations](/help/sites-authoring/editing-page-properties.md#permissions) ne seront modifiables.
    >
    >
    >Le cas échéant, les autorisations des groupes d’utilisateurs fermés doivent être modifiées dans l’[IU classique](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -149,7 +149,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    Indiquez une configuration d’exportation.
 
-### Miniature  {#thumbnail}
+### Miniature   {#thumbnail}
 
 1. **Miniature de page**
 
@@ -198,14 +198,14 @@ Définit la variation de fragment d’expérience utilisée pour générer les m
 
    >[!CAUTION]
    >
-   >The **Permissions** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. Si les autorisations de page sont configurées à l’aide de configurations des groupes d’utilisateurs fermés obsolètes, basées sur la présence de la propriété `cq:cugEnabled`, un message d’avertissement s’affiche et les autorisations des groupes d’utilisateurs fermés ne sont pas modifiables, non plus que l’option Exigence d’authentification de l’onglet [Avancé](/help/sites-authoring/editing-page-properties.md#advanced).
+   >L&#39;onglet **Permissions** permet de modifier les configurations CUG en fonction de la présence du mixin `granite:AuthenticationRequired`. Si les autorisations de page sont configurées à l’aide de configurations des groupes d’utilisateurs fermés obsolètes, basées sur la présence de la propriété `cq:cugEnabled`, un message d’avertissement s’affiche et les autorisations des groupes d’utilisateurs fermés ne sont pas modifiables, non plus que l’option Exigence d’authentification de l’onglet [Avancé](/help/sites-authoring/editing-page-properties.md#advanced).
    >
    >
    >Le cas échéant, les autorisations des groupes d’utilisateurs fermés doivent être modifiées dans l’[IU classique](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >L’onglet Autorisation ne permet pas la création de groupes d’utilisateurs fermés vides, ce qui peut être utile pour refuser l’accès à tous les utilisateurs de façon simple. Pour ce faire, vous devez utiliser l’explorateur CRX. See the document [User, Group and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) for more information.
+   >L’onglet Autorisation ne permet pas la création de groupes d’utilisateurs fermés vides, ce qui peut être utile pour refuser l’accès à tous les utilisateurs de façon simple. Pour ce faire, vous devez utiliser l’explorateur CRX. Pour plus d&#39;informations, consultez le document [Administration des droits d&#39;utilisateur, de groupe et d&#39;accès](/help/sites-administering/user-group-ac-admin.md).
 
 ### Blueprint {#blueprint}
 
@@ -213,13 +213,13 @@ Définit la variation de fragment d’expérience utilisée pour générer les m
 
    Définissez les propriétés d’une page Blueprint dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Live Copy**
 
    Définissez les propriétés d’une page Live Copy dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur.
 
-### Structure du site  {#site-structure}
+### Structure du site   {#site-structure}
 
 * Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la page **en mode hors ligne**, entre autres.
 
@@ -266,7 +266,7 @@ Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour d
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Select **Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. Les boutons suivants sont également disponibles à droite de la barre d’outils :
+1. Sélectionnez **Ouvrir les propriétés** et une boîte de dialogue s&#39;ouvre pour vous permettre de modifier les propriétés, triées par l&#39;onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
 
    * **Annuler**
    * **Enregistrer et fermer**
@@ -290,7 +290,7 @@ Vous pouvez sélectionner plusieurs pages en vue d’une modification en masse d
 
 ![screen_shot_2018-03-22at100039](assets/screen_shot_2018-03-22at100039.png)
 
-After selecting the pages and then clicking or tapping the **Properties** option, the bulk properties will be shown:
+Après avoir sélectionné les pages, puis cliqué ou appuyé sur l&#39;option **Propriétés**, les propriétés en vrac s&#39;affichent :
 
 ![screen_shot_2018-03-22at100114](assets/screen_shot_2018-03-22at100114.png)
 
