@@ -34,7 +34,7 @@ Par exemple :
 
 MCM vous permet d’accéder aux éléments suivants :
 
-* **[Tableau de bord](#dashboard)**Le tableau de bord se compose de quatre volets :
+* **[Tableau de bord](#dashboard)** Le tableau de bord se compose de quatre volets :
 
    * [Listes](#lists)
 
@@ -49,13 +49,13 @@ MCM vous permet d’accéder aux éléments suivants :
       Lorsque vous sélectionnez un segment spécifique, il s’ouvre dans la page de définition correspondante.
 
    * [Rapports](/help/sites-administering/reporting.md)\
-      AEM fournit différents rapports pour vous aider à analyser et à surveiller l’état de votre instance. Ce volet de MCM répertorie les rapports.
+      aem fournit différents rapports pour vous aider à analyser et à surveiller l’état de votre instance. Ce volet de MCM répertorie les rapports.
 
       Lorsque vous sélectionnez un rapport, sa page s’ouvre.
 
    * [Campagnes](#campaigns)
 
-      This pane lists your campaign experiences such as [newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) and [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
+      Ce volet liste vos expériences de campagne telles que [bulletins](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) et [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
 * **[Pistes](#leads)**
 
@@ -69,7 +69,7 @@ MCM vous permet d’accéder aux éléments suivants :
 
     Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md). 
 
-* **[Campagnes](#campaigns)**Ce volet vous permet de gérer vos marques, campagnes et expériences.
+* **[Campagnes](#campaigns)** Ce volet vous permet de gérer vos marques, campagnes et expériences.
 
 ## Tableau de bord {#dashboard}
 
@@ -136,7 +136,7 @@ Pour accéder aux campagnes existantes, dans le MCM, cliquez sur **Campagnes**.
 
    Vous pouvez double-cliquer sur ces icônes pour ouvrir l’aperçu de la marque.
 
-#### Aperçu de la marque {#brand-overview}
+#### Aperçu de la marque  {#brand-overview}
 
 ![mcm_brandoverview](assets/mcm_brandoverview.png)
 
@@ -154,7 +154,7 @@ Vous pouvez effectuer les opérations suivantes à partir de cette fenêtre :
 
 * Ouvrez l’aperçu de la campagne (double-cliquez sur une campagne dans le volet de droite ou cliquez dans le volet de gauche).
 
-#### Aperçu de la campagne {#campaign-overview}
+#### Aperçu de la campagne  {#campaign-overview}
 
 Deux modes d’affichage sont disponibles pour chaque campagne :
 
@@ -186,7 +186,7 @@ Deux modes d’affichage sont disponibles pour chaque campagne :
 
    Vous pouvez effectuer les opérations suivantes à partir de cette fenêtre :
 
-   * Create a **New...** experience; for example, Adobe Target offers, teasers and newsletters.
+   * Créer un **nouveau...expérience**; par exemple, offres Adobe Target, teasers et bulletins d’information.
    * **Modifier** les détails d’une newsletter ou d’une page de teaser spécifique (vous pouvez également effectuer un double-clic).
    * Définir les **Propriétés...** d’une newsletter ou d’une page de teaser spécifique
    * **Simuler** l’aspect et la fonctionnalité d’une expérience (newsletter ou page de teaser).
@@ -198,7 +198,7 @@ Deux modes d’affichage sont disponibles pour chaque campagne :
    * **Rechercher** votre texte (la recherche porte sur le champ Titre de l’expérience).
    * Utiliser le mode de recherche **Avancé** pour appliquer des filtres à la recherche.
 
-### Simulation de vos expériences de campagne {#simulating-your-campaign-experiences}
+### Simulation de vos expériences de campagne  {#simulating-your-campaign-experiences}
 
 Dans MCM, cliquez sur **Campagnes**. Assurez-vous que le mode Liste est actif, puis sélectionnez l’expérience de campagne requise et cliquez sur **Simuler**. Le point de contact (page de newsletter ou de teaser) s’ouvre. Il affiche l’expérience que vous avez sélectionnée, telle qu’elle sera présentée au visiteur.
 
@@ -206,7 +206,7 @@ Dans MCM, cliquez sur **Campagnes**. Assurez-vous que le mode Liste est actif, p
 
 Vous avez également la possibilité d’ouvrir le sidekick (en cliquant sur la petite flèche vers le bas) pour basculer vers le mode d’édition afin de mettre à jour la page.
 
-### Analyse de vos expériences de campagne {#analyzing-your-campaign-experiences}
+### Analyse de vos expériences de campagne  {#analyzing-your-campaign-experiences}
 
 Dans MCM, cliquez sur **Campagnes**. Assurez-vous que le mode Liste est actif, puis sélectionnez l’expérience de campagne requise et cliquez sur **Analyser...** Un graphique des impressions de page au fil du temps s’affiche alors.
 
