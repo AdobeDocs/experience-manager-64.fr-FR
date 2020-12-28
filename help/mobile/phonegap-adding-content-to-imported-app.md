@@ -19,7 +19,7 @@ ht-degree: 3%
 ---
 
 
-# Votre application hybride est-elle prête pour l&#39;AEM Mobile ?{#is-your-hybrid-app-ready-for-aem-mobile}
+# Votre application hybride est-elle prête pour l’AEM Mobile ?{#is-your-hybrid-app-ready-for-aem-mobile}
 
 >[!NOTE]
 >
@@ -29,13 +29,13 @@ Vous avez donc importé votre application Hybrid PhoneGap ou Cordova en AEM, et 
 
 Le contenu fait référence aux composants, modèles et pages créés dans AEM créé par AEM Developer. Le contenu est classé comme contenu de développement ou comme contenu créé. Les composants, conceptions et modèles de page sont considérés comme du contenu de développement puisqu’ils sont créés par un développeur. author-content sont des pages qui ont été créées à l’aide des composants et des modèles. Elles sont généralement effectuées par un concepteur ou un spécialiste du marketing.
 
-Ajouter les pages d’AEM créées à votre application hybride requiert une coordination entre le développeur de l’application et le développeur AEM. Partout dans l’application où vous souhaitez ajouter du contenu créé, le développeur de l’application doit organiser ces pages dans une structure qui peut être superposée dans AEM. Le développeur de l’application doit être en mesure de fournir au développeur AEM les chemins d’accès vers l’emplacement où le contenu créé AEM doit être ajouté, puis fournir une page d’espace réservé dans l’application hybride qui sera remplacée une fois que le développeur a créé le contenu de la page.
+Pour Ajouter les pages d’AEM créées à votre application hybride, il faut une coordination entre le développeur de l’application et le développeur AEM. Partout dans l’application où vous souhaitez ajouter du contenu créé, le développeur de l’application doit organiser ces pages dans une structure qui peut être superposée dans AEM. Le développeur de l’application doit être en mesure de fournir au développeur AEM les chemins d’accès vers l’emplacement où le contenu créé AEM doit être ajouté, puis fournir une page d’espace réservé dans l’application hybride qui sera remplacée une fois que le développeur a créé le contenu de la page.
 
 Pour faciliter le suivi de l&#39;explication, nous utiliserons l&#39;Marketing Cloud AEM : Référence hybride AEM Mobile pour expliquer les concepts. L’application de référence hybride est composée d’une page de bienvenue avec un menu latéral.
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-Dans cet exemple, nous allons créer la page de bienvenue de l&#39;application. Jetez un oeil à la source [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Nous constatons que le développeur d’applications a défini une page d’accueil et fourni un modèle pour la page rendue par l’application. C’est là que le développeur d’applications et le développeur d’AEM doivent se coordonner. Le chemin d’accès au modèle de page d’accueil dans l’application de référence hybride est défini comme étant &quot;&quot;content/mobileapps/hybrid-reference-app/en/welcome.template.html&quot;. Ce chemin d’accès est extrêmement important car le développeur AEM va créer sa page d’accueil dans le référentiel AEM en utilisant le même chemin d’accès.
+Dans cet exemple, nous allons créer la page de bienvenue de l&#39;application. Examinez la source [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Nous constatons que le développeur d’applications a défini une page d’accueil et fourni un modèle pour la page rendue par l’application. C’est là que le développeur d’applications et le développeur d’AEM doivent se coordonner. Le chemin d’accès au modèle de page d’accueil dans l’application de référence hybride est défini comme étant &quot;&quot;content/mobileapps/hybrid-reference-app/en/welcome.template.html&quot;. Ce chemin d’accès est extrêmement important car le développeur AEM va créer sa page d’accueil dans le référentiel AEM en utilisant le même chemin d’accès.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
