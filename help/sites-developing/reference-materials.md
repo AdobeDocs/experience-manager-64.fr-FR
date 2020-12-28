@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: de04a6c205e4379c7f8a9ab5574985259d6541c3
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 73%
+ht-degree: 84%
 
 ---
 
@@ -35,21 +35,21 @@ AEM fournit plusieurs API pour le développement d’applications. La liste suiv
 
 * [Référence de l’API JavaScript de structure des tests de l’interface utilisateur](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html)
 
-* [Référence de l’API JavaScript de l’éditeur](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
+* [Référence de l’API JavaScript de l’éditeur](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
 Références de l’API JavaScript de structure du SDK de l’éditeur d’application monopage AEM :
 
 * [Mappage de composant](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Gestionnaire de modèle de page](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 * [Composants modifiables React](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [Composants modifiables angulaires](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+* [Composants modifiables Angular](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 API de diffusion et de gestion de contenu AEM :
 
 * Composants principaux (JSON)
 
    * [Exportateur JSON](/help/sites-developing/json-exporter.md) 
-   * [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md) 
+   * [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md)
    * Pour plus d’informations, consultez la [section Composants du Guide de l’utilisateur pour le développement](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js).
 
 * [API HTTP AEM Assets](/help/assets/mac-api-assets.md)
