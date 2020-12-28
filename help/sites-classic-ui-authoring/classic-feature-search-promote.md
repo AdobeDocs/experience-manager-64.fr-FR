@@ -18,9 +18,9 @@ ht-degree: 64%
 ---
 
 
-# Adding Search&amp;Promote features to your page {#adding-search-promote-features-to-your-page}
+# Ajouter des fonctionnalités de Search &amp; Promote à votre page {#adding-search-promote-features-to-your-page}
 
-To integrate Search&amp;Promote capabilities in your web site, use the [!UICONTROL Search&amp;Promote] components to add the following features to your pages:
+Pour intégrer des fonctionnalités de Search &amp; Promote dans votre site Web, utilisez les composants [!UICONTROL Search &amp; Promote] pour ajouter les fonctionnalités suivantes à vos pages :
 
 * Recherche par mot-clé
 * Page des résultats de la recherche
@@ -72,7 +72,7 @@ Les facettes sont configurées sur le serveur Search&amp;Promote, de même que l
  </tbody> 
 </table>
 
-## Création de la page de résultats de la recherche {#creating-the-search-results-page}
+## Création de la page de résultats de la recherche  {#creating-the-search-results-page}
 
 Utilisez la console Sites web WCM pour créer une page qui servira à afficher les résultats de recherche. Les résultats d’une recherche de n’importe quel composant de recherche peuvent apparaître dans cette page si elle utilise le même service Search&amp;Promote. 
 
@@ -84,20 +84,20 @@ Le composant **[!UICONTROL Pagination]** permet aux utilisateurs de naviguer au 
 
 ![srchpagination](assets/srchpagination.png)
 
-You can configure the following component properties in [!UICONTROL Edit] mode to control runtime behavior:
+Vous pouvez configurer les propriétés de composant suivantes en mode [!UICONTROL Modifier] pour contrôler le comportement d’exécution :
 
-* **[!UICONTROL Masquer la page]** de résultats unique : sélectionnez cette option pour masquer les commandes de navigation de la page lorsque la recherche renvoie une seule page de résultats.
-* **[!UICONTROL Masquer le premier/le dernier]** : sélectionnez cette option pour empêcher les utilisateurs d&#39;accéder à la première ou à la dernière page des résultats.
-* **[!UICONTROL Masquer Précédent/Suivant]** : détermine si les utilisateurs peuvent naviguer dans les pages de résultats par rapport à la page active.
-* **[!UICONTROL Masquer toutes les]** vues - Détermine si l&#39;utilisateur peut consolider tous les résultats de recherche sur une seule page. En général, le fait de fournir des données paginées optimise l’utilisation des ressources serveur. Sélectionnez cette option pour empêcher le transfert d’importants jeux de données dans un seul message de réponse.
+* **[!UICONTROL Masquer la page]**  de résultats unique : sélectionnez cette option pour masquer les commandes de navigation de la page lorsque la recherche renvoie une seule page de résultats.
+* **[!UICONTROL Masquer le premier/le dernier]**  : sélectionnez cette option pour empêcher les utilisateurs d&#39;accéder à la première ou à la dernière page des résultats.
+* **[!UICONTROL Masquer Précédent/Suivant]**  : détermine si les utilisateurs peuvent parcourir les pages de résultats par rapport à la page active.
+* **[!UICONTROL Masquer toutes les]**  vues - Détermine si l&#39;utilisateur peut consolider tous les résultats de recherche sur une seule page. En général, le fait de fournir des données paginées optimise l’utilisation des ressources serveur. Sélectionnez cette option pour empêcher le transfert d’importants jeux de données dans un seul message de réponse.
 
-## Activation du filtrage des résultats par le biais de facettes {#enabling-the-filtering-of-results-by-facets}
+## Activation du filtrage des résultats par le biais de facettes  {#enabling-the-filtering-of-results-by-facets}
 
-Vous pouvez autoriser les utilisateurs à filtrer les résultats d’une recherche au moyen de facettes. The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components enable users to select one or more facets for filtering. Lorsque vous utilisez ces composants, vous devez également inclure le composant **[!UICONTROL Chemin de navigation]**. Les chemins de navigation indiquent les filtres actuels qui sont utilisés.
+Vous pouvez autoriser les utilisateurs à filtrer les résultats d’une recherche au moyen de facettes. Les composants **[!UICONTROL Facette de Liste de case à cocher]**, **[!UICONTROL Facette de liste déroulante]** et **[!UICONTROL Facette de Liste de lien]** permettent aux utilisateurs de sélectionner une ou plusieurs facettes pour le filtrage. Lorsque vous utilisez ces composants, vous devez également inclure le composant **[!UICONTROL Chemin de navigation]**. Les chemins de navigation indiquent les filtres actuels qui sont utilisés.
 
-The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
+Les composants **[!UICONTROL Facette de Liste de case à cocher]**, **[!UICONTROL Facette de liste déroulante]** et **[!UICONTROL Facette de Liste de lien]** possèdent chacun les propriétés suivantes que vous configurez en mode **[!UICONTROL Modifier]** :
 
-* **[!UICONTROL Nom]** de la facette : nom de la facette utilisée pour les filtres.
+* **[!UICONTROL Nom]**  de la facette : nom de la facette utilisée pour les filtres.
 
 Le composant **[!UICONTROL Liste des cases à cocher - Facettes]** présente une liste de facettes accompagnée d’une case à cocher. Utilisez **[!UICONTROL Liste des cases à cocher - Facettes]** pour permettre aux utilisateurs d’afficher un sous-ensemble de résultats intégrant les éléments de plusieurs facettes. Par exemple, la facette Marque est appropriée, car plusieurs marques fournissent le même type de produit.
 
@@ -117,7 +117,7 @@ Les membres de facette s’affichent sous la forme d’une liste de liens. Le te
 
 ![sandplinklistcomp](assets/sandplinklistcomp.png)
 
-The links in the list also changes when a filter is applied from a different type of [!UICONTROL Search&amp;Promote] component. L’utilisation de plusieurs types de composants de filtrage peut optimiser le filtrage.
+Les liens de la liste changent également lorsqu’un filtre est appliqué à partir d’un autre type de composant [!UICONTROL Search &amp; Promote]. L’utilisation de plusieurs types de composants de filtrage peut optimiser le filtrage.
 
 Le composant **[!UICONTROL Chemin de navigation]** permet aux utilisateurs de voir les filtres actuellement actifs pour les résultats de la recherche et l’ordre dans lequel ils ont été appliqués. Ils peuvent cliquer sur les éléments du chemin de navigation pour revenir à cette combinaison de filtres.
 
@@ -125,25 +125,25 @@ Le composant **[!UICONTROL Chemin de navigation]** permet aux utilisateurs de vo
 
 En mode d’édition, vous pouvez configurer les propriétés suivantes pour les chemins de navigation afin de personnaliser l’aspect du composant :
 
-* **[!UICONTROL Délimiteur]** : définissez le caractère ou la chaîne de caractères à utiliser comme délimiteur entre chaque chemin de navigation. Le champ Délimiteur accepte toute chaîne de caractères comme entrée. Le paramètre par défaut est : « > » (sans guillemets)
-* **[!UICONTROL Délimiteur]** de fin : définissez un caractère ou une chaîne de caractères à afficher à la fin des chemins de navigation. Le champ Délimiteur de fin accepte toute chaîne de caractères comme entrée. Le paramètre par défaut est &quot;vide&quot; (autrement dit, rien n’est affiché à la fin de la ligne de chemin de navigation).
+* **[!UICONTROL Délimiteur]**  : définissez le caractère ou la chaîne de caractères à utiliser comme délimiteur entre chaque chemin de navigation. Le champ Délimiteur accepte toute chaîne de caractères comme entrée. Le paramètre par défaut est : « > » (sans guillemets)
+* **[!UICONTROL Délimiteur]**  de fin : définissez un caractère ou une chaîne de caractères à afficher à la fin des chemins de navigation. Le champ Délimiteur de fin accepte toute chaîne de caractères comme entrée. Le paramètre par défaut est &quot;vide&quot; (autrement dit, rien n’est affiché à la fin de la ligne de chemin de navigation).
 
 ## Ajout de zones de recherche {#adding-search-boxes}
 
-The **[!UICONTROL Search]** component enables customers to perform keyword searches. Insérez des composants de recherche dans chaque page où un accès à la recherche est nécessaire. 
+Le composant **[!UICONTROL Rechercher]** permet aux clients d&#39;effectuer des recherches de mots-clés. Insérez des composants de recherche dans chaque page où un accès à la recherche est nécessaire. 
 
-Configure the following properties in **[!UICONTROL Edit]** mode to control runtime behavior:
+Configurez les propriétés suivantes en mode **[!UICONTROL Modifier]** pour contrôler le comportement d’exécution :
 
-* **[!UICONTROL Chemin d&#39;accès]** à la page de résultats - Chemin d&#39;accès à la page qui affiche les résultats de la recherche.
-* **[!UICONTROL Activer la saisie semi-automatique]** : sélectionnez cette option pour faire apparaître les mots-clés de recherche suggérés lorsque le client commence à saisir du texte dans la zone de recherche.
+* **[!UICONTROL Chemin]**  de la page de résultats : chemin d&#39;accès à la page qui affiche les résultats de la recherche.
+* **[!UICONTROL Activer la saisie semi-automatique]**  : sélectionnez cette option pour faire apparaître les mots-clés de recherche suggérés lorsque le client commence à saisir du texte dans la zone de recherche.
 
 ![sandpsearchcomp](assets/sandpsearchcomp.png)
 
 ## Ajout de bannières {#adding-banners}
 
-The **[!UICONTROL Banners]** component displays banner advertisements according to the customer&#39;s Search&amp;Promote searches. La logique du serveur Search&amp;Replace détermine la bannière publicitaire qu’il faut diffuser. Par exemple, une recherche sur un pantalon denim peut déclencher l’affichage d’une bannière associée à des articles de mode. Le filtrage par rayon Homme peut affiner davantage le choix de la bannière.
+Le composant **[!UICONTROL Bannières]** affiche les bannières publicitaires en fonction des recherches de Search &amp; Promote du client. La logique du serveur Search&amp;Replace détermine la bannière publicitaire qu’il faut diffuser. Par exemple, une recherche sur un pantalon denim peut déclencher l’affichage d’une bannière associée à des articles de mode. Le filtrage par rayon Homme peut affiner davantage le choix de la bannière.
 
-The **[!UICONTROL Banners]** component provides one configurable property named **[!UICONTROL Banner Area]**. In **[!UICONTROL Edit]** mode, select one of the property values to specify how the banner appears. Le service Search&amp;Promote détermine la liste des valeurs parmi lesquelles choisir.
+Le composant **[!UICONTROL Banners]** fournit une propriété configurable nommée **[!UICONTROL Zone de bannière]**. En mode **[!UICONTROL Modifier]**, sélectionnez l’une des valeurs de propriété pour spécifier comment la bannière s’affiche. Le service Search&amp;Promote détermine la liste des valeurs parmi lesquelles choisir.
 
 ## Exemple de page de recherche Search&amp;Promote {#example-search-promote-search-page}
 
