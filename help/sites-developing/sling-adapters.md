@@ -1,6 +1,6 @@
 ---
-title: 'Utilisation des adaptateurs Sling '
-seo-title: 'Utilisation des adaptateurs Sling '
+title: Utilisation des adaptateurs Sling
+seo-title: Utilisation des adaptateurs Sling
 description: Sling propose un modèle Adaptateur permettant de convertir facilement les objets qui mettent en œuvre l’interface Adaptable
 seo-description: Sling propose un modèle Adaptateur permettant de convertir facilement les objets qui mettent en œuvre l’interface Adaptable
 uuid: 07f66a33-072d-49e1-8e67-8b80a6a9072a
@@ -70,7 +70,7 @@ Cependant, il n’existe pas de règle absolue : l’objet peut soit être une 
 `Adaptable.adaptTo()` peut être implémenté de différentes façons :
 
 * Par l’objet proprement dit ; implémentation de la méthode et mappage sur certains objets.
-* By an [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)`, which can map arbitrary objects.
+* Par un [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)&#39;, qui peut mapper des objets arbitraires.
 
    Les objets doivent cependant implémenter l’interface `Adaptable` et étendre [`SlingAdaptable`](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (qui transmet l’appel `adaptTo` à un gestionnaire d’adaptateur central).
 
@@ -80,7 +80,7 @@ Cependant, il n’existe pas de règle absolue : l’objet peut soit être une 
 
 Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `adaptTo-targets` possibles. Cependant, pour des sous-classes spécifiques, telles que la ressource basée sur JCR, cela s’avère souvent impossible. Dans ce cas, les implémentations de `AdapterFactory` font généralement partie des classes privées d’un lot et ne sont donc pas exposées dans une API cliente ni répertoriées dans les JavaDocs. En théorie, il serait possible d’accéder à toutes les implémentations `AdapterFactory` à partir de l’exécutable de service [OSGi](/help/sites-deploying/configuring-osgi.md) et d’observer leurs configurations « adaptables » (sources et cibles), mais pas de les mapper entre elles. En définitive, cela dépend de la logique interne, qui doit être documentée, d’où cette référence.
 
-## Référence  {#reference}
+## Référence   {#reference}
 
 ### Sling {#sling}
 
@@ -110,7 +110,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
   </tr> 
   <tr> 
    <td><a href="https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td> 
-   <td>Extension de <a href="https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, ce qui permet la prise en compte de la hiérarchie de ressources lors de la recherche de propriétés.</td> 
+   <td>Extension de <a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, ce qui permet la prise en compte de la hiérarchie de ressources lors de la recherche de propriétés.</td> 
   </tr> 
   <tr> 
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/PersistableValueMap.html">PersistableValueMap</a></td> 
@@ -129,7 +129,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
    <td>Session JCR de la requête, s’il s’agit d’un résolveur de ressources basé sur JCR (par défaut).</td> 
   </tr> 
   <tr> 
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -141,7 +141,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
    <td> </td> 
   </tr> 
   <tr> 
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td> 
    <td>Basé sur la session JCR, s’il s’agit d’un résolveur de ressources basé sur JCR.</td> 
   </tr> 
   <tr> 
@@ -149,7 +149,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
    <td>Basé sur la session JCR, s’il s’agit d’un résolveur de ressources basé sur JCR.</td> 
   </tr> 
   <tr> 
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td> 
    <td>Selon la session JCR, s’il s’agit d’un résolveur de ressources basé sur JCR et si l’utilisateur est autorisé à accéder à UserManager.</td> 
   </tr> 
   <tr> 
@@ -177,11 +177,11 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
    <td> </td> 
   </tr> 
   <tr> 
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html">Externalizer</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html">Externalizer</a></td> 
    <td>Pour externaliser des URL absolues, même sans l’objet de requête.<br /> </td> 
   </tr> 
  </tbody> 
@@ -209,15 +209,15 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 <table> 
  <tbody> 
   <tr> 
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><br /> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><br /> </td> 
    <td>Ressource de la page</td> 
   </tr> 
   <tr> 
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td> 
    <td>Ressource étiquetée (== this).</td> 
   </tr> 
   <tr> 
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td> 
+   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Noeud</a></td> 
    <td>Nœud de la page.</td> 
   </tr> 
   <tr> 
@@ -229,7 +229,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 [**Component**](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html) s’adapte à :
 
-| [Resource](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource du composant. |
+| [Ressource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource du composant. |
 |---|---|
 | [LabeledResource](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html) | Ressource étiquetée (== this). |
 | [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud du composant. |
@@ -240,15 +240,15 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 <table> 
  <tbody> 
   <tr> 
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td> 
    <td>Ressource du modèle.</td> 
   </tr> 
   <tr> 
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td> 
    <td>Ressource étiquetée (== this).</td> 
   </tr> 
   <tr> 
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td> 
+   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Noeud</a></td> 
    <td>Nœud de ce modèle.</td> 
   </tr> 
   <tr> 
@@ -260,28 +260,28 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 #### Sécurité {#security}
 
-[**Autorisé**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html), [**utilisateur**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) et [**groupe**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html) s&#39;adapter à :
+[**Autorisé**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html),  [****](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) Utilisateur et  [****](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html) Groupement s&#39;adapter à :
 
-| [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Renvoie le nœud racine utilisateur/groupe. |
+| [Noeud](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Renvoie le nœud racine utilisateur/groupe. |
 |---|---|
 | [ReplicationStatus](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/ReplicationStatus.html) | Renvoie l’état de réplication pour le nœud racine utilisateur/groupe. |
 
-#### Gestion des actifs numériques {#dam}
+#### Gestion des ressources numériques {#dam}
 
 [**Asset**](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html) s’adapte à :
 
-| [Resource](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de l’actif. |
+| [Ressource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de l’actif. |
 |---|---|
-| [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la ressource. |
+| [Noeud](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la ressource. |
 | … | Tous les éléments auxquels la ressource de l’actif peut être adaptée. |
 
 #### Balisage {#tagging}
 
 [**Tag**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html) s’adapte à :
 
-| [Resource](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de la balise. |
+| [Ressource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de la balise. |
 |---|---|
-| [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la balise. |
+| [Noeud](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la balise. |
 | … | Tous les éléments auxquels la ressource de la balise peut être adaptée. |
 
 #### Autres {#other}
