@@ -1,8 +1,8 @@
 ---
 title: Rendu des PDF forms interactifs
 seo-title: Rendu des PDF forms interactifs
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service Forms pour rendre des PDF forms interactifs aux périphériques clients, généralement les navigateurs Web, afin de collecter des informations auprès des utilisateurs. Vous pouvez utiliser le service Forms pour générer des formulaires interactifs à l’aide de l’API Java et de l’API de service Web.
+seo-description: Utilisez le service Forms pour rendre des PDF forms interactifs aux périphériques clients, généralement les navigateurs Web, afin de collecter des informations auprès des utilisateurs. Vous pouvez utiliser le service Forms pour générer des formulaires interactifs à l’aide de l’API Java et de l’API de service Web.
 uuid: df2a4dc8-f19e-49de-850f-85a204102631
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 translation-type: tm+mt
-source-git-commit: d52f9f91f70410e6b09e26967b90fd8c47c4f1d4
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2514'
 ht-degree: 0%
 
 ---
