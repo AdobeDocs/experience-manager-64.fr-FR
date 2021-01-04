@@ -1,8 +1,8 @@
 ---
 title: Détermination de la compatibilité des Documents avec la norme PDF/A
 seo-title: Détermination de la compatibilité des Documents avec la norme PDF/A
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service Assembler pour déterminer si un document PDF est compatible PDF/A à l’aide de l’API Java et de l’API de service Web.
+seo-description: Utilisez le service Assembler pour déterminer si un document PDF est compatible PDF/A à l’aide de l’API Java et de l’API de service Web.
 uuid: 4e9d8c8f-2153-411b-9c4b-2d14b3c8f4bb
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 translation-type: tm+mt
-source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 5%
+source-wordcount: '2109'
+ht-degree: 4%
 
 ---
 
