@@ -1,8 +1,8 @@
 ---
 title: Appel d’AEM Forms utilisant des services Web
 seo-title: Appel d’AEM Forms utilisant des services Web
-description: 'null'
-seo-description: 'null'
+description: Appelez les processus AEM Forms à l’aide de services Web avec une prise en charge complète de la génération WSDL.
+seo-description: Appelez les processus AEM Forms à l’aide de services Web avec une prise en charge complète de la génération WSDL.
 uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '9984'
+source-wordcount: '10008'
 ht-degree: 6%
 
 ---
