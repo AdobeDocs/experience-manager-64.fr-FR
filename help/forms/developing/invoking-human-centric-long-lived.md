@@ -1,8 +1,8 @@
 ---
 title: Appel de processus pour des intervenants humains de longue durée
 seo-title: Appel de processus pour des intervenants humains de longue durée
-description: 'null'
-seo-description: 'null'
+description: Appelez par programmation des processus de longue durée centrés sur l’homme créés dans Workbench à l’aide d’une application cliente Web Java qui utilise l’API Invocation, une application ASP.NET qui utilise les services Web et une application cliente créée avec Flex qui utilise Remoting.
+seo-description: Appelez par programmation des processus de longue durée centrés sur l’homme créés dans Workbench à l’aide d’une application cliente Web Java qui utilise l’API Invocation, une application ASP.NET qui utilise les services Web et une application cliente créée avec Flex qui utilise Remoting.
 uuid: 42269d41-a90f-4ea1-aeb9-d61337bcfa54
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3752'
 ht-degree: 4%
 
 ---
