@@ -1,8 +1,8 @@
 ---
 title: Rendu de HTML Forms avec des barres d’outils personnalisées
 seo-title: Rendu de HTML Forms avec des barres d’outils personnalisées
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service Forms pour personnaliser une barre d’outils générée avec un formulaire HTML. Vous pouvez générer un formulaire HTML avec une barre d’outils personnalisée à l’aide de l’API Java et d’une API de service Web.
+seo-description: Utilisez le service Forms pour personnaliser une barre d’outils générée avec un formulaire HTML. Vous pouvez générer un formulaire HTML avec une barre d’outils personnalisée à l’aide de l’API Java et d’une API de service Web.
 uuid: b9c9464e-ff19-4051-a39b-4ec71c512d10
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2304'
+source-wordcount: '2370'
 ht-degree: 1%
 
 ---
