@@ -1,8 +1,8 @@
 ---
 title: XMP Utilities Service Java APIQuick Début (SOAP)
 seo-title: XMP Utilities Service Java APIQuick Début (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service XMP Utilitaires pour exporter et importer XMP métadonnées.
+seo-description: Utilisez le service XMP Utilitaires pour exporter et importer XMP métadonnées.
 uuid: 5db4c623-75db-4a34-9ad2-3c917619e296
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 2%
+source-wordcount: '251'
+ht-degree: 1%
 
 ---
 
