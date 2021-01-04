@@ -1,8 +1,8 @@
 ---
 title: Assemblage de Documents PDF avec des signets
 seo-title: Assemblage de Documents PDF avec des signets
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service Assembler pour modifier un document PDF qui contient des signets afin d’inclure des signets à l’aide de l’API Java et de l’API du service Web.
+seo-description: Utilisez le service Assembler pour modifier un document PDF qui contient des signets afin d’inclure des signets à l’aide de l’API Java et de l’API du service Web.
 uuid: a306d2a6-0b12-4eb3-bff4-968a33417486
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
-source-git-commit: bc7fa8bd0464b9ae8c93349efb7e392de757c6a3
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2526'
-ht-degree: 3%
+source-wordcount: '2574'
+ht-degree: 2%
 
 ---
 
