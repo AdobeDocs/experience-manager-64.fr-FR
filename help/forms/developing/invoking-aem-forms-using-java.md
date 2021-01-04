@@ -1,8 +1,8 @@
 ---
 title: Appel d’AEM Forms à l’aide de l’API Java
 seo-title: Appel d’AEM Forms à l’aide de l’API Java
-description: 'null'
-seo-description: 'null'
+description: Utilisez l’API Java AEM Forms pour le protocole de transport RMI pour l’appel distant, le transport VM pour l’appel local, SOAP pour l’appel distant, une authentification différente, telle que le nom d’utilisateur et le mot de passe, et les demandes d’appel synchrones et asynchrones.
+seo-description: Utilisez l’API Java AEM Forms pour le protocole de transport RMI pour l’appel distant, le transport VM pour l’appel local, SOAP pour l’appel distant, une authentification différente, telle que le nom d’utilisateur et le mot de passe, et les demandes d’appel synchrones et asynchrones.
 uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '5409'
-ht-degree: 89%
+source-wordcount: '5479'
+ht-degree: 88%
 
 ---
 
