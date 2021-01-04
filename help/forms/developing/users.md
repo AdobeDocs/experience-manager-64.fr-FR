@@ -1,8 +1,8 @@
 ---
 title: Gestion des utilisateurs
 seo-title: Gestion des utilisateurs
-description: 'null'
-seo-description: 'null'
+description: Utilisez l’API User Management pour créer des applications clientes capables de gérer des rôles, des autorisations et des entités (qui peuvent être des utilisateurs ou des groupes), ainsi que d’authentifier des utilisateurs.
+seo-description: Utilisez l’API User Management pour créer des applications clientes capables de gérer des rôles, des autorisations et des entités (qui peuvent être des utilisateurs ou des groupes), ainsi que d’authentifier des utilisateurs.
 uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '6191'
+source-wordcount: '6243'
 ht-degree: 4%
 
 ---
