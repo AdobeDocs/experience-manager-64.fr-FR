@@ -1,8 +1,8 @@
 ---
 title: Préparation de AEM Forms pour la sauvegarde
 seo-title: Préparation de AEM Forms pour la sauvegarde
-description: 'null'
-seo-description: 'null'
+description: Découvrez comment utiliser le service Sauvegarde et restauration pour passer en mode Sauvegarde et quitter le mode Sauvegarde du serveur AEM Forms à l’aide de l’API Java et de l’API Service Web.
+seo-description: Découvrez comment utiliser le service Sauvegarde et restauration pour passer en mode Sauvegarde et quitter le mode Sauvegarde du serveur AEM Forms à l’aide de l’API Java et de l’API Service Web.
 uuid: b8ef2bed-62e2-4000-b55a-30d2fc398a5f
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2540'
 ht-degree: 2%
 
 ---
