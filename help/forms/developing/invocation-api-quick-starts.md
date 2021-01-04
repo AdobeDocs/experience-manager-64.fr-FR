@@ -1,8 +1,8 @@
 ---
 title: Débuts rapides de l’API d’appel
 seo-title: Débuts rapides de l’API d’appel
-description: 'null'
-seo-description: 'null'
+description: Utilisez les Débuts rapides pour appeler par programmation les services AEM Forms.
+seo-description: Utilisez les Débuts rapides pour appeler par programmation les services AEM Forms.
 uuid: acf67177-98a4-4c99-95a5-3086907d7c2c
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1249'
 ht-degree: 6%
 
 ---
