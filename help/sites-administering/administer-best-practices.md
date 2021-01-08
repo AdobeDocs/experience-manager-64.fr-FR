@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 95%
+source-wordcount: '543'
+ht-degree: 91%
 
 ---
 
@@ -37,7 +37,7 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
 
 ## Ressources {#assets}
 
-Les meilleures pratiques concernant les ressources, y compris les fonctionnalités Dynamic Media et l’intégration de Scene 7, sont décrites dans les rubriques suivantes :
+Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Dynamic Media et l’intégration de Dynamic Media Classic, sont décrites dans les rubriques suivantes :
 
 <table> 
  <tbody>
