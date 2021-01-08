@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 2ee45ac0-bc15-403a-93fc-c8592afb967d
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: 0fe74ef5483cf1f577be51c200ab2820d7ed64e5
 workflow-type: tm+mt
 source-wordcount: '3150'
 ht-degree: 81%
@@ -64,7 +64,7 @@ Pour ajouter des objets et des services de modèle de données :
 
    >[!NOTE]
    >
-   >En plus des objets et services de modèle de données, le document de métadonnées de service OData inclut des propriétés de navigation qui définissent l’association entre deux objets de modèle de données. Pour plus d’informations, voir [Utilisation des propriétés de navigation des services OData](#navigation-properties-odata).
+   >En plus des objets et services de modèle de données, le document de métadonnées de service OData inclut des propriétés de navigation qui définissent l’association entre deux objets de modèle de données. Pour plus d’informations, voir [Utilisation des propriétés de navigation des services OData](#work-with-navigation-properties-of-odata-services).
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer l’objet modèle de formulaire.
 
@@ -140,7 +140,7 @@ Pour lire et écrire des données pour un objet de modèle de données, procéde
    >
    >En plus des objets et services de modèle de données, le document de métadonnées de service OData inclut des propriétés de navigation qui définissent l’association entre deux objets de modèle de données. Lorsque vous ajoutez une source de données de service OData à un modèle de données de formulaire, un service est disponible dans Modèle de données de formulaire pour toutes les propriétés de navigation dans un objet de modèle de données. Vous pouvez utiliser ce service pour lire les propriétés de navigation de l’objet de modèle de données correspondant.
    >
-   >Pour plus d’informations sur l’utilisation du service, voir [Utilisation des propriétés de navigation des services OData](#navigation-properties-odata).
+   >Pour plus d’informations sur l’utilisation du service, voir [Utilisation des propriétés de navigation des services OData](#work-with-navigation-properties-of-odata-services).
 
 1. Activez/désactivez **[!UICONTROL Objet de niveau supérieur]** pour spécifier si l’objet de modèle de données est un objet de modèle de niveau supérieur.
 
@@ -182,7 +182,7 @@ Pour ajouter une association :
 
    >[!NOTE]
    >
-   >En plus des objets et services de modèle de données, le document de métadonnées de service OData inclut des propriétés de navigation qui définissent l’association entre deux objets de modèle de données. Vous pouvez utiliser ces propriétés de navigation lors de l’ajout d’associations dans un modèle de données de formulaire. Pour plus d’informations, voir [Utilisation des propriétés de navigation des services OData](#navigation-properties-odata).
+   >En plus des objets et services de modèle de données, le document de métadonnées de service OData inclut des propriétés de navigation qui définissent l’association entre deux objets de modèle de données. Vous pouvez utiliser ces propriétés de navigation lors de l’ajout d’associations dans un modèle de données de formulaire. Pour plus d’informations, voir [Utilisation des propriétés de navigation des services OData](#work-with-navigation-properties-of-odata-services).
 
    La boîte de dialogue Ajouter une association s’ouvre.
 
