@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 6c5b0abd9f19ceddd84e8615f0aedf48b1ef5868
 workflow-type: tm+mt
-source-wordcount: '2044'
-ht-degree: 88%
+source-wordcount: '2170'
+ht-degree: 83%
 
 ---
 
@@ -68,7 +68,15 @@ Le menu déroulant pour la ligne propose également l’opération Modifier pour
 >
 >Alors qu’il est possible d’ajouter un nombre quelconque de lignes à un tableau, le nombre maximal de colonnes que vous pouvez ajouter est de six. En outre, vous ne pouvez pas supprimer la ligne d’en-tête du tableau.
 
-### Ajouter une description de tableau  {#add-table-description}
+### Définir la largeur d&#39;une colonne pour un tableau {#set-column-width}
+
+Exécutez les étapes suivantes pour définir la largeur de colonne d’un tableau :
+
+1. Dans l&#39;onglet **[!UICONTROL Contenu]**, appuyez sur le composant **[!UICONTROL Table]** et appuyez sur l&#39;icône Configurer (![Configurer](assets/configure-icon.svg)).
+
+1. Entrez la liste des valeurs séparées par des virgules dans le champ **[!UICONTROL Largeur de colonne]** pour spécifier la largeur proportionnelle de chaque colonne du tableau. Par exemple, pour un tableau qui comprend 3 colonnes, la spécification de 2,4,6 comme valeur dans le champ **[!UICONTROL Largeur de colonne]** entraîne la définition de la largeur des colonnes comme 2/12 pour la première colonne, 4/12 pour la deuxième colonne et 6/12 pour la troisième colonne. 2/12 car la largeur de la première colonne correspond à un sixième de la largeur du tableau. De même, le 12/4 définit la largeur de la deuxième colonne comme un tiers de la largeur du tableau et le 6/12 comme la largeur de la troisième colonne comme la moitié de la largeur du tableau.
+
+### Ajouter une description de tableau {#add-table-description}
 
 Vous pouvez ajouter une description au tableau pour expliquer comment il organise les informations que les lecteurs peuvent interpréter et lire. Pour ajouter la description :
 
