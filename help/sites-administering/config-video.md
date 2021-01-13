@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 38%
+source-wordcount: '435'
+ht-degree: 37%
 
 ---
 
@@ -24,7 +24,11 @@ Le [composant vidéo](/help/sites-authoring/default-components-foundation.md#vid
 
 Pour que le transcodage se produise correctement, votre administrateur doit [installer FFmpeg et configurer AEM](#install-ffmpeg) séparément. Vous pouvez aussi [configurer vos profils vidéo](#configure-video-profiles) pour les utiliser avec les éléments HTML5.
 
-## Configuration des profils vidéo  {#configure-video-profiles}
+>[!CAUTION]
+>
+>Ce composant ne devrait plus fonctionner de manière prête sans une personnalisation étendue au niveau du projet.
+
+## Configuration des profils vidéo {#configure-video-profiles}
 
 Vous pouvez définir des profils vidéo à utiliser pour les éléments HTML5. Les profils vidéo sélectionnés ici sont utilisés dans l’ordre. Pour y accéder, utilisez le [mode de conception](/help/sites-authoring/default-components-designmode.md) (interface utilisateur classique uniquement) et sélectionnez l’onglet **[!UICONTROL Profils]** :
 
