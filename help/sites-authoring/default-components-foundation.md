@@ -12,10 +12,10 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
 workflow-type: tm+mt
-source-wordcount: '6592'
-ht-degree: 81%
+source-wordcount: '6670'
+ht-degree: 80%
 
 ---
 
@@ -337,6 +337,10 @@ L’application externe est intégrée au système de paragraphes de la page AE
 >[!CAUTION]
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 
+>[!CAUTION]
+>
+>Ce composant ne devrait plus fonctionner de manière prête sans une personnalisation étendue au niveau du projet.
+
 Le composant Flash vous permet de charger une animation Flash. Faites glisser un élément Flash à partir de l’Outil de recherche de contenu ou utilisez la boîte de dialogue :
 
 * **Modèle**
@@ -538,6 +542,10 @@ L’exemple suivant illustre un composant **Liste** affichant une liste de pages
 >[!CAUTION]
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 
+>[!CAUTION]
+>
+>Ce composant ne devrait plus fonctionner de manière prête sans une personnalisation étendue au niveau du projet.
+
 Ces options fournissent les champs de nom d’utilisateur et de mot de passe.
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
@@ -573,6 +581,10 @@ Vous pouvez configurer :
       Texte indiquant que l’utilisateur est déjà connecté.
 
 ### État de la commande {#order-status}
+
+>[!CAUTION]
+>
+>Ce composant ne devrait plus fonctionner de manière prête sans une personnalisation étendue au niveau du projet.
 
 * **Titre**
 
@@ -710,6 +722,10 @@ Si nécessaire, vous pouvez configurer l’option suivante :
 
 >[!CAUTION]
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Carrousel](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/carousel.html).
+
+>[!CAUTION]
+>
+>Ce composant ne devrait plus fonctionner de manière prête sans une personnalisation étendue au niveau du projet.
 
 Ce composant vous permet de charger une série d’images à afficher sous forme de diaporama dans la page. Vous pouvez ajouter ou supprimer des images et leur attribuer un titre. Sous l’onglet Avancé, vous pouvez également spécifier la taille de la zone d’affichage.
 
@@ -879,6 +895,10 @@ L’exemple suivant illustre un composant **Titre** affiché (la conception est 
 ![dc_title_use](assets/dc_title_use.png)
 
 ### Vidéo {#video}
+
+>[!CAUTION]
+>
+>Ce composant ne devrait plus fonctionner de manière prête sans une personnalisation étendue au niveau du projet.
 
 Le composant **Vidéo** permet de placer un élément vidéo prédéfini « prêt à l’emploi » sur une page.
 
@@ -1296,6 +1316,10 @@ Le composant est configuré pour une utilisation immédiate, mais vous pouvez mo
 >[!CAUTION]
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 
+>[!CAUTION]
+>
+>Ce composant ne devrait plus fonctionner de manière prête sans une personnalisation étendue au niveau du projet.
+
 Le composant Captcha requiert que l’utilisateur saisisse une chaîne alphanumérique comme affichée à l’écran. La chaîne est modifiée à chaque actualisation.
 
 ![dc_form_captcha](assets/dc_form_captcha.png)
@@ -1361,7 +1385,7 @@ Ce composant permet de créer un champ masqué. Ceux-ci peuvent être utilisés 
 >
 >Voir [Affichage et masquage de composants de formulaire](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
-### Bouton Image {#image-button}
+### Bouton Image  {#image-button}
 
 Un bouton d’image permet de créer un bouton comportant vos texte et image :
 
