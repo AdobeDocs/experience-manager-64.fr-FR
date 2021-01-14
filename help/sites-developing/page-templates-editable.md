@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
 workflow-type: tm+mt
-source-wordcount: '3231'
-ht-degree: 89%
+source-wordcount: '3298'
+ht-degree: 86%
 
 ---
 
@@ -84,7 +84,7 @@ Lors de la création d’un modèle modifiable :
 
    Pour plus d’informations sur la façon dont un créateur de modèles définit la structure, voir [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
-   Pour connaître les détails techniques de la structure, consultez la section [Structure](/help/sites-developing/page-templates-editable.md#structure) de ce document.
+   Pour les détails techniques de la structure, voir [Structure](/help/sites-developing/page-templates-editable.md#structure) dans ce document.
 
    **Stratégies**
 
@@ -95,7 +95,7 @@ Lors de la création d’un modèle modifiable :
 
    Pour plus d’informations sur la façon dont un créateur de modèles définit des stratégies, voir [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
-   Pour connaître les détails techniques des stratégies, consultez la section [Stratégies de contenu](/help/sites-developing/page-templates-editable.md#content-policies) de ce document.
+   Pour obtenir des informations techniques sur les stratégies, voir [Stratégies de contenu](/help/sites-developing/page-templates-editable.md#content-policies) dans ce document.
 
    **Contenu initial**
 
@@ -122,7 +122,7 @@ Lors de la création d’un modèle modifiable :
 
    Pour plus d’informations sur la façon dont un créateur de modèles active un modèle, voir [Création de modèles de page](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author).
 
-   Pour obtenir des informations techniques sur l’activation d’un modèle, consultez la section [Activation et autorisation d’un modèle à utiliser](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use) dans ce document
+   Pour des détails techniques sur l&#39;activation d&#39;un modèle, voir [Activation et autorisation d&#39;un modèle pour nous](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e dans ce document
 
 1. Utilisez-le pour créer des pages de contenu.
 
@@ -133,6 +133,16 @@ Lors de la création d’un modèle modifiable :
 
    Pour obtenir des informations techniques sur la création de pages à l’aide de modèles modifiables, consultez la section [Pages de contenu créées](/help/sites-developing/page-templates-editable.md#resultant-content-pages) de ce document.
 
+>[!TIP]
+>
+>Ne saisissez jamais d’informations qui doivent être internationalisées dans un modèle. À des fins d&#39;internalisation, il est recommandé d&#39;utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+
+>[!NOTE]
+>
+>Les modèles sont des outils puissants pour rationaliser votre processus de création de page. Cependant, trop de modèles peuvent submerger les auteurs et rendre la création de page déroutante. Une bonne règle générale consiste à garder le nombre de modèles en dessous de 100.
+>
+>L&#39;Adobe ne recommande pas d&#39;avoir plus de 1000 modèles en raison des impacts potentiels sur le rendement.
+
 >[!NOTE]
 >
 >La bibliothèque cliente de l’éditeur suppose que l’espace de noms `cq.shared` existe dans les pages de contenu. Si cet élément est absent, l’erreur JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` est renvoyée.
@@ -141,10 +151,6 @@ Lors de la création d’un modèle modifiable :
 >
 >Pour plus d’informations, voir [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md).
 
->[!CAUTION]
->
->Ne saisissez jamais d’informations qui doivent[ être internationalisées](/help/sites-developing/i18n.md) dans un modèle.
-
 ## Dossiers de modèles {#template-folders}
 
 Pour organiser vos modèles, vous pouvez utiliser les dossiers suivants :
@@ -152,7 +158,7 @@ Pour organiser vos modèles, vous pouvez utiliser les dossiers suivants :
 * **Global**
 * Spécifique au site
 
-   Les dossiers spécifiques au site que vous créez pour organiser vos modèles sont créés avec un compte contenant des privilèges d’administration.
+   Les dossiers spécifiques au site que vous créez pour organiser vos modèles sont créés avec un compte disposant de droits d’administrateur.
 
 >[!NOTE]
 >
@@ -217,7 +223,7 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 
 1. Accédez à **Navigation globale** > **Outils** > **Explorateur de configurations**.
 
-   Les dossiers existants sont répertoriés à gauche, y compris **Global**.
+   Les dossiers existants sont répertoriés à gauche, y compris le dossier **global**.
 
 1. Cliquez sur **Créer**.
 1. Les champs suivants doivent être configurés dans la boîte de dialogue **Créer une configuration** :
