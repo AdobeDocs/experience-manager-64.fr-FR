@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 0959d86c28ee6de7347922af706338f83fe400ef
+source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
 workflow-type: tm+mt
 source-wordcount: '4981'
 ht-degree: 65%
@@ -243,7 +243,7 @@ L’icône ou l’abréviation du composant est définie au moyen des propriét�
    * La couleur recommandée est rgb(112, 112, 112) > #707070
    * L’arrière-plan des icônes de composants standard est transparent.
    * Seuls les fichiers `.png` et `.svg` sont pris en charge.
-   * Si vous importez à partir du système de fichiers via le module externe Eclipse, les noms de fichier doivent être remplacés par `_cq_icon.png` ou `_cq_icon.svg`, par exemple.
+   * Si vous effectuez une importation à partir du système de fichiers via le module externe Eclipse, les noms de fichier doivent être ignorés sous la forme `_cq_icon.png` ou `_cq_icon.svg`, par exemple.
    * `.png` prend le dessus  `.svg` si les deux sont présents
 
 
