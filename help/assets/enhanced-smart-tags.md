@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 translation-type: tm+mt
-source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1577'
-ht-degree: 85%
+source-wordcount: '1567'
+ht-degree: 83%
 
 ---
 
@@ -31,7 +31,7 @@ Une fois une balise entraînée et prête, le service peut appliquer ces balises
 
 En arrière-plan, Smart Content Service utilise la structure d’IA de Adobe Sensei pour former son algorithme de reconnaissance d’image à la structure des balises et à la taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
 
-Le service de contenu dynamique est un service cloud hébergé sur Adobe I/O. Pour l’utiliser dans Adobe Experience Manager (AEM), l’administrateur système doit intégrer votre instance AEM à Adobe I/O.
+Smart Content Service est un service cloud hébergé sur [!DNL Adobe I/O]. Pour l’utiliser dans Adobe Experience Manager (AEM), l’administrateur système doit intégrer votre instance AEM à [!DNL Adobe I/O].
 
 En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
 
@@ -44,14 +44,14 @@ En résumé, voici les principales étapes pour utiliser le service de contenu d
 
 ## Conditions préalables {#prerequisites}
 
-Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respecter les conditions suivantes pour créer une intégration sur Adobe I/O :
+Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respecter les conditions suivantes pour créer une intégration sur [!DNL Adobe I/O]:
 
 * L’organisation doit disposer d’un compte Adobe ID pourvu de droits d’administrateur.
 * Le service de contenu dynamique est activé pour votre organisation.
 
 ## Intégration {#onboarding}
 
-Smart Content Service est disponible à l’achat en tant que module complémentaire pour AEM. Après l’achat, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers les E/S d’Adobe.
+Smart Content Service est disponible à l’achat en tant que module complémentaire pour AEM. Après l’achat, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers [!DNL Adobe I/O].
 
 L’administrateur peut suivre le lien pour intégrer le service de contenu dynamique à AEM. Pour intégrer le service à AEM Assets, voir [Configuration des balises intelligentes](config-smart-tagging.md).
 
