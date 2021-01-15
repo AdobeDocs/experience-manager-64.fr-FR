@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '21621'
+source-wordcount: '21618'
 ht-degree: 25%
 
 ---
@@ -48,7 +48,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * L’intégration du modèle de données de formulaire à l’aide du service Web SOAP prend désormais en charge les groupes de choix ou les attributs sur les éléments.
 
-* AEM Assets est désormais configuré avec le portail de marque via Adobe I/O.
+* AEM Assets est désormais configuré avec le portail de marque via [!DNL Adobe I/O].
 
 * Mise à jour de la version jQuery fournie dans ContextHub à 3.2.1.
 
