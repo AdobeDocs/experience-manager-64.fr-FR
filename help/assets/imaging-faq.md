@@ -10,10 +10,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 98%
+source-wordcount: '1756'
+ht-degree: 95%
 
 ---
 
@@ -53,7 +53,7 @@ Améliorations apportées par la version la plus récente de l’imagerie dynami
 
 ## L’imagerie dynamique entraîne-t-elle des frais de licence ? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-Non. L’imagerie dynamique est incluse dans votre licence Dynamic Media Classic (Scene7) ou AEM Dynamic Media (on-premise, AMS et AEM as a Cloud Service).
+Non. Smart Imaging est inclus avec votre licence existante de Dynamic Media Classic ou de Dynamic Media AEM (On Prem, AMS et AEM en tant que Cloud Service).
 
 >[!NOTE]
 >
@@ -165,7 +165,7 @@ Au cours de la transition initiale, les images non mises en cache accèdent dir
 
 ## Comment puis-je vérifier si l’imagerie dynamique fonctionne comme prévu ? {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. Une fois que l’imagerie dynamique est activée sur votre compte, chargez une URL d’image Dynamic Media Classic (Scene7)/Dynamic Media sur le navigateur.
+1. Une fois votre compte configuré avec l’imagerie intelligente, chargez une URL d’image Dynamic Media Classic/Dynamic Media sur le navigateur.
 1. Ouvrez le volet de Chrome pour les développeurs en cliquant sur **[!UICONTROL Afficher > Développeur > Outils de développement]** dans le navigateur. Vous pouvez également sélectionner l’outil de développement de navigateur de votre choix.
 
 1. Assurez-vous que le cache est désactivé lorsque les outils de développement sont ouverts.
