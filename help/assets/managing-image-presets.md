@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '3851'
+source-wordcount: '3850'
 ht-degree: 79%
 
 ---
@@ -387,7 +387,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
      <li><strong>Appliquer à</strong> : détermine si l’accentuation s’applique à chaque couleur ou à la luminosité.</li> 
     </ul> 
     <div>
-      L’accentuation est décrite dans <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/s7_sharpening_images.pdf">Accentuation des images</a>. 
+      L’accentuation est décrite dans <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/sharpening_images.pdf">Accentuation des images</a>. 
     </div> </td> 
   </tr> 
   <tr> 
