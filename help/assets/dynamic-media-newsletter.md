@@ -6,7 +6,7 @@ seo-title: 'Lettre d''information de l''Adobe Dynamic Media '
 solution: Dynamic Media Classic
 title: Newsletter Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6caef5222b9f2163bfe7f7ded0e989fbc402bfef
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 96%
@@ -52,9 +52,9 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    * En savoir plus sur nos audits Dynamic Media Classic gratuits.
    * Faites la connaissance de John Monroe, responsable de programme senior pour les services de la réussite client.
 
-   >[!IMPORTANT]
-   >
-   >Nous voulons nous assurer que nous n’envoyons la newsletter Dynamic Media qu’à ceux qui veulent la recevoir. Pour continuer à recevoir la newsletter après ce numéro, inscrivez-vous [ici](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
+      >[!IMPORTANT]
+      >
+      >Nous voulons nous assurer que nous n’envoyons la newsletter Dynamic Media qu’à ceux qui veulent la recevoir. Pour continuer à recevoir la newsletter après ce numéro, inscrivez-vous [ici](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
 
 * **[Février 2020, numéro 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -109,7 +109,6 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    * Rencontrez Bridget Roman, responsable principale de marketing produit pour Adobe Experience Manager Assets.
    * Prendre en main Dynamic Media et Dynamic Media Classic dans Experience League.
 
-
 * **[Août 2019, numéro 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
 
    Dans ce numéro :
@@ -119,7 +118,6 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    * Faites vos premiers pas vers une utilisation optimale de Dynamic Media grâce à Experience League.
    * Découvrez en avant-première une puissante intégration prévue pour septembre et qui vous permettra d’analyser la manière dont vos visiteurs utilisent avec vos médias riches.
    * Rencontrez PieterJan Pieper, assistant de support technique Dynamic Media.
-
 
 * **[Juillet 2019, numéro 07](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
 
@@ -158,6 +156,7 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    Bienvenue dans ce numéro d’inauguration de la newsletter Dynamic Media, notre nouvelle newsletter mensuelle pleine d’actualités, d’événements et de ressources pour les utilisateurs de Dynamic Media dans Adobe Experience Manager Assets et Adobe Dynamic Media Classic.
 
    Dans ce numéro :
+
    * Inscrivez-vous au webinaire sur les fonctionnalités cachées de Dynamic Media Classic.
    * Découvrez notre série de webinaires à la demande pour vous aider à développer votre stratégie de médias riches.
    * Découvrez les principaux cas d’utilisation des médias riches et nos solutions dans ce domaine.
