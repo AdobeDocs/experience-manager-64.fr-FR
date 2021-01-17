@@ -1,8 +1,8 @@
 ---
 title: API Java du registre des points de terminaison QuickStart (SOAP)
 seo-title: API Java du registre des points de terminaison QuickStart (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Utilisez l’API Java du registre des points de terminaison pour ajouter un point de terminaison EJB, ajouter un point de terminaison SOAP, ajouter un point de terminaison de dossier de contrôle, ajouter un point de terminaison de courrier électronique, ajouter un point de terminaison distant, ajouter un point de terminaison TaskManager, modifier un point de terminaison, supprimer un point de terminaison et récupérer les informations du connecteur de point de terminaison.
+seo-description: Utilisez l’API Java du registre des points de terminaison pour ajouter un point de terminaison EJB, ajouter un point de terminaison SOAP, ajouter un point de terminaison de dossier de contrôle, ajouter un point de terminaison de courrier électronique, ajouter un point de terminaison distant, ajouter un point de terminaison TaskManager, modifier un point de terminaison, supprimer un point de terminaison et récupérer les informations du connecteur de point de terminaison.
 uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 1%
+source-wordcount: '629'
+ht-degree: 0%
 
 ---
 
