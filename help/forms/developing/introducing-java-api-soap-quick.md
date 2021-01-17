@@ -1,8 +1,8 @@
 ---
 title: Présentation de l’API Java QuickStart
 seo-title: Présentation de l’API Java QuickStart
-description: 'null'
-seo-description: 'null'
+description: Les programmes de Début rapide des API Java vous aident à accélérer le développement de programmes qui interagissent avec les services AEM Forms. Vous pouvez utiliser les programmes de Début rapide de l’API Java dans votre projet comme point de départ et le personnaliser.
+seo-description: Les programmes de Début rapide des API Java vous aident à accélérer le développement de programmes qui interagissent avec les services AEM Forms. Vous pouvez utiliser les programmes de Début rapide de l’API Java dans votre projet comme point de départ et le personnaliser.
 uuid: 480e1809-f789-4ad8-b5d5-2d97aba8411a
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, develop
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 1%
+source-wordcount: '579'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +65,7 @@ La liste des fichiers JAR se trouve dans une section de commentaires située au 
 
 ## Début rapide de plusieurs services {#multiple-services-quick-start}
 
-La plupart des Débuts rapides situés dans *Programmation avec AEM Forms *invoquent un service spécifique pour effectuer une opération. Cependant, certains Débuts rapides appellent plusieurs services AEM Forms pour exécuter un flux de travail donné. La liste suivante fournit des débuts rapides Java qui appellent plusieurs services AEM Forms :
+La plupart des Débuts rapides situés dans *Programmation avec AEM Forms* appellent un service spécifique pour effectuer une opération. Cependant, certains Débuts rapides appellent plusieurs services AEM Forms pour exécuter un flux de travail donné. La liste suivante fournit des débuts rapides Java qui appellent plusieurs services AEM Forms :
 
 [Début rapide (mode SOAP) : Transmission d’un document situé dans le référentiel AEM Forms au service Output à l’aide de l’API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)  Java (invoque le service Repository and Output)
 
