@@ -1,8 +1,8 @@
 ---
 title: Présentation des processus AEM Forms
 seo-title: Présentation des processus AEM Forms
-description: 'null'
-seo-description: 'null'
+description: Découvrez comment utiliser les processus métier AEM Forms pour automatiser les opérations. Activez les processus pour créer un service afin que vous puissiez l’appeler comme d’autres services. Les processus peuvent être de courte ou de longue durée.
+seo-description: Découvrez comment utiliser les processus métier AEM Forms pour automatiser les opérations. Activez les processus pour créer un service afin que vous puissiez l’appeler comme d’autres services. Les processus peuvent être de courte ou de longue durée.
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 3%
+source-wordcount: '855'
+ht-degree: 2%
 
 ---
 
