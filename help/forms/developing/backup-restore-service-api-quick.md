@@ -1,8 +1,8 @@
 ---
 title: Débuts APIQuick du service de sauvegarde et de restauration
 seo-title: Débuts APIQuick du service de sauvegarde et de restauration
-description: 'null'
-seo-description: 'null'
+description: Utilisez l’API Service de sauvegarde et de restauration pour passer en mode de sauvegarde et la quitter à l’aide du Début rapide API Java.
+seo-description: Utilisez l’API Service de sauvegarde et de restauration pour passer en mode de sauvegarde et la quitter à l’aide du Début rapide API Java.
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 2%
+source-wordcount: '274'
+ht-degree: 1%
 
 ---
 
