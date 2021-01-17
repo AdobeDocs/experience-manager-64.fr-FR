@@ -1,8 +1,8 @@
 ---
 title: aem application pour ordinateur de bureau pour AEM Forms
 seo-title: aem application pour ordinateur de bureau pour AEM Forms
-description: 'null'
-seo-description: 'null'
+description: aem application de bureau vous permet de mapper le référentiel Adobe Experience Manager (AEM) Assets et les fichiers binaires AEM Forms à un répertoire réseau sur votre système. En savoir plus sur les ressources prises en charge dans AEM application de bureau et sur la façon d’activer AEM Forms pour AEM application de bureau.
+seo-description: aem application de bureau vous permet de mapper le référentiel Adobe Experience Manager (AEM) Assets et les fichiers binaires AEM Forms à un répertoire réseau sur votre système. En savoir plus sur les ressources prises en charge dans AEM application de bureau et sur la façon d’activer AEM Forms pour AEM application de bureau.
 uuid: 99e0f2fb-8623-45bb-8e2e-5c5d6f482366
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,10 +10,10 @@ topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 translation-type: tm+mt
-source-git-commit: 3995381542c86694bad6ff6d3f726b1e24bf7ddc
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 58%
+source-wordcount: '509'
+ht-degree: 48%
 
 ---
 
