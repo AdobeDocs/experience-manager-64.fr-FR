@@ -1,8 +1,8 @@
 ---
 title: API Java du service Assembler QuickStart (SOAP)
 seo-title: API Java du service Assembler QuickStart (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service Assembler pour assembler un document PDF, désassembler un document PDF, assembler un document PDF chiffré, assembler un document PDF avec une numérotation des bates, assembler un document PDF non interactif, déterminer si un document est compatible PDF/A, valider des documents DDX, assembler des documents PDF avec des signets, créer un  DDX de manière dynamique, assembler des portfolios PDF et assembler plusieurs fragments XDP.
+seo-description: Utilisez le service Assembler pour assembler un document PDF, désassembler un document PDF, assembler un document PDF chiffré, assembler un document PDF avec une numérotation des bates, assembler un document PDF non interactif, déterminer si un document est compatible PDF/A, valider des documents DDX, assembler des documents PDF avec des signets, créer un  DDX de manière dynamique, assembler des portfolios PDF et assembler plusieurs fragments XDP.
 uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
