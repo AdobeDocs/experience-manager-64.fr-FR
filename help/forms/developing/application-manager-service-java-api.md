@@ -1,8 +1,8 @@
 ---
 title: Début rapide sur l’API Java du service Application Manager (SOAP)
 seo-title: Début rapide sur l’API Java du service Application Manager (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service Application Manager pour déployer et supprimer des applications à l’aide du Début rapide de l’API Java.
+seo-description: Utilisez le service Application Manager pour déployer et supprimer des applications à l’aide du Début rapide de l’API Java.
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 2%
+source-wordcount: '234'
+ht-degree: 1%
 
 ---
 
