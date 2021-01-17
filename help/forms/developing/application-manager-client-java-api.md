@@ -1,8 +1,8 @@
 ---
 title: Début rapide de l’API JavaScript client Application Manager (SOAP)
 seo-title: Début rapide de l’API JavaScript client Application Manager (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Utilisez le client Application Manager pour créer une version d’application, exporter des applications, importer des applications, obtenir une application AEM Forms, obtenir des applications, obtenir l’état des applications, prévisualisation AEM Forms et les archives d’applications ultérieures, et supprimer l’archive d’applications AEM Forms.
+seo-description: Utilisez le client Application Manager pour créer une version d’application, exporter des applications, importer des applications, obtenir une application AEM Forms, obtenir des applications, obtenir l’état des applications, prévisualisation AEM Forms et les archives d’applications ultérieures, et supprimer l’archive d’applications AEM Forms.
 uuid: 043f1c08-c7de-4e2d-88ca-b46428b1b551
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 1%
+source-wordcount: '514'
+ht-degree: 0%
 
 ---
 
