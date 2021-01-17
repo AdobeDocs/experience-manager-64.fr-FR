@@ -1,8 +1,8 @@
 ---
 title: Composants et services Java APIQuick Début(SOAP)
 seo-title: Composants et services Java APIQuick Début(SOAP)
-description: 'null'
-seo-description: 'null'
+description: Utilisez le Début rapide API Java Composants et services pour déployer un composant, définir le contexte d’exécution d’un service, désactiver la sécurité du service, début d’un service, modifier les valeurs de configuration du service et supprimer des composants.
+seo-description: Utilisez le Début rapide API Java Composants et services pour déployer un composant, définir le contexte d’exécution d’un service, désactiver la sécurité du service, début d’un service, modifier les valeurs de configuration du service et supprimer des composants.
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 1%
+source-wordcount: '514'
+ht-degree: 0%
 
 ---
 
