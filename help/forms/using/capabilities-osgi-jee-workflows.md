@@ -1,17 +1,17 @@
 ---
 title: 'Actions et fonctionnalités des processus AEM sur OSGi et des processus AEM Forms JEE '
 seo-title: 'Actions et fonctionnalités des processus AEM sur OSGi et des processus AEM Forms JEE '
-description: 'null'
-seo-description: 'null'
+description: En savoir plus sur les différences dans les actions prises en charge par AEM Inbox et HTML Workspace, les différences dans les capacités prises en charge par les Workflows d’AEM orientés formulaires sur les Workflows OSGi et AEM Forms JEE et les différences entre les fonctionnalités de l’application AEM Inbox et AEM Forms.
+seo-description: En savoir plus sur les différences dans les actions prises en charge par AEM Inbox et HTML Workspace, les différences dans les capacités prises en charge par les Workflows d’AEM orientés formulaires sur les Workflows OSGi et AEM Forms JEE et les différences entre les fonctionnalités de l’application AEM Inbox et AEM Forms.
 uuid: ce2a05fe-ba45-42ed-880e-fb1d6efc1d26
 contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 79%
+source-wordcount: '931'
+ht-degree: 72%
 
 ---
 
