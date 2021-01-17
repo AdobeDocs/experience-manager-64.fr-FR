@@ -1,8 +1,8 @@
 ---
 title: Début Java APIQuick du service Forms Barcoded (SOAP)
 seo-title: Début Java APIQuick du service Forms Barcoded (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service Barcoded Forms pour décoder les données de formulaire à code à barres à l’aide du Début rapide de l’API Java.
+seo-description: Utilisez le service Barcoded Forms pour décoder les données de formulaire à code à barres à l’aide du Début rapide de l’API Java.
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 2%
+source-wordcount: '248'
+ht-degree: 1%
 
 ---
 
