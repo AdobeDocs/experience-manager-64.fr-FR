@@ -10,10 +10,10 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '10502'
-ht-degree: 79%
+source-wordcount: '10456'
+ht-degree: 77%
 
 ---
 
@@ -903,19 +903,13 @@ Pour que les rapports vidéo fonctionnent correctement, un identifiant de suite 
 
 1. Dans le tableau qui répertorie les principales vidéos publiées, appuyez sur le nom d’une vidéo pour la lire et afficher également le rapport sur la rétention de l’audience (taux de déperdition) de celle-ci.
 
-### Affichage de rapports vidéo reposant sur une visionneuse de vidéo créée à l’aide du SDK Scene7 HMTL5 Viewer   {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Affichage des rapports vidéo basés sur une visionneuse de vidéos que vous avez créée à l’aide du kit de développement de visionneuse HTML5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Si vous utilisez une visionneuse de vidéos prête à l’emploi fournie par Dynamic Media ou si vous avez créé un paramètre prédéfini de visionneuse personnalisée reposant sur une visionneuse de vidéos prête à l’emploi, aucune autre étape n’est nécessaire pour afficher les rapports vidéo. En revanche, si vous avez créé votre propre visionneuse de vidéos en vous reposant sur le SDK de la visionneuse HTML5 de Scene7, suivez les étapes ci-après pour vous assurer que votre visionneuse de vidéos envoie des événements de suivi aux rapports vidéo Dynamic Media.
+Si vous utilisez une visionneuse de vidéos prête à l’emploi fournie par Dynamic Media ou si vous avez créé un paramètre prédéfini de visionneuse personnalisée à partir d’une visionneuse de vidéos prête à l’emploi, aucune autre procédure n’est nécessaire pour vue des rapports vidéo. Cependant, si vous avez créé votre propre visionneuse de vidéos à partir de l’API du kit de développement de visionneuse HTML5, suivez les étapes ci-après pour vous assurer que la visionneuse de vidéos envoie des événements de suivi aux rapports vidéo Dynamic Media.
 
-Utilisez le guide de référence des visionneuses Scene7 et le SDK de la visionneuse HTML5 de Scene7 pour créer vos visionneuses de vidéos.
+Utilisez le [Guide de référence des visionneuses Dynamic Media Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) et l&#39;[API du kit de développement de visionneuse HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) pour créer vos propres visionneuses de vidéos.
 
-Voir le [Guide de référence des visionneuses Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
-
-Téléchargez le kit Scene7 HTML Viewer SDK à partir d&#39;Adobe Developer Connection.
-
-Voir [Adobe Developer Connection](https://help.adobe.com/fr_FR/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
-
-Pour afficher des rapports vidéo qui reposent sur une visionneuse de vidéos créée à l’aide du SDK Scene7 HTML5 Viewer, procédez comme suit :
+Pour vue des rapports Vidéo basés sur une visionneuse de vidéos que vous avez créée à l’aide de l’API du kit de développement de visionneuse HTML5 :
 
 1. Accédez à une ressource vidéo publiée.
 1. Près du coin supérieur gauche de la page du fichier, sélectionnez **[!UICONTROL Visionneuses]** dans la liste déroulante.
@@ -943,7 +937,7 @@ Pour afficher des rapports vidéo qui reposent sur une visionneuse de vidéos cr
 
 1. Créez le composant TrackingManager en effectuant les opérations suivantes :
 
-   * Après avoir appelé `s7sdk.Utils.init();`, créez une instance TrackingManager pour suivre les événements en ajoutant le code suivant :
+   * Après avoir appelé `s7sdk.Util.init();`, créez une instance TrackingManager pour suivre les événements en ajoutant le code suivant :
 
       `var trackingManager = new s7sdk.TrackingManager();`
 
@@ -971,7 +965,7 @@ Pour afficher des rapports vidéo qui reposent sur une visionneuse de vidéos cr
       ```
    L’objet appMeasurementBridge dispose d’une fonction de suivi intégrée. Vous pouvez toutefois fournir votre propre fonction pour prendre en charge plusieurs systèmes de suivi ou d’autres fonctionnalités.
 
-   Pour plus d’informations, voir *Utilisation du composant TrackingManager* dans le *Guide de l’utilisateur du SDK de la visionneuse HTML5 de Scene7* téléchargeable sur [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+   Pour plus d’informations, voir *Utilisation du composant TrackingManager* dans le *Guide de l’utilisateur du SDK de la visionneuse HTML5 de Scene7* téléchargeable sur [Adobe Developer Connection](https://help.adobe.com/fr_FR/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
 ## Ajout de sous-titres à une vidéo {#adding-captions-to-video}
 
@@ -1040,7 +1034,7 @@ Vous pouvez faciliter la lecture et le parcours de vos vidéos les plus longues 
 >
 >Le lecteur vidéo utilisé doit prendre en charge l’utilisation des marqueurs de chapitre. Les lecteurs vidéo Dynamic Media prennent en charge les marqueurs de chapitre, mais l’utilisation de lecteurs vidéo tiers ne le permet pas.
 
-Si vous le souhaitez, vous pouvez créer votre propre visionneuse personnalisée, et lui donner le nom de votre marque, avec des chapitres au lieu d’utiliser le paramètre prédéfini de la visionneuse de vidéos. Pour obtenir des instructions sur la création de votre propre visionneuse HTML5 avec une navigation par chapitre, dans le Guide du SDK de la visionneuse d’Adobe Scene7, reportez-vous à la section « Personnalisation du comportement à l’aide de modificateurs » sous les classes `s7sdk.video.VideoPlayer` et `s7sdk.video.VideoScrubber`. Le SDK de la visionneuse d’Adobe Scene7 est disponible au téléchargement depuis [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+Si vous le souhaitez, vous pouvez créer votre propre visionneuse personnalisée, et lui donner le nom de votre marque, avec des chapitres au lieu d’utiliser le paramètre prédéfini de la visionneuse de vidéos. Pour obtenir des instructions sur la création de votre propre visionneuse HTML5 avec une navigation de chapitre, dans l’API Adobe du kit de développement de la visionneuse HTML5, consultez l’en-tête &quot;Personnalisation du comportement à l’aide de modificateurs&quot; sous les classes `s7sdk.video.VideoPlayer` et `s7sdk.video.VideoScrubber`. Consultez la [documentation sur l’API du kit de développement de visionneuse HTML5]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)).
 
   Vous créez une liste de chapitres pour votre vidéo un peu de la même façon que vous créez des sous-titres. Autrement dit, vous créez un fichier WebVTT. Notez toutefois que ce fichier doit être distinct de tout fichier de sous-titrage WebVTT que vous pourriez également être amené à utiliser ; vous ne pouvez pas combiner les sous-titres et les chapitres dans un fichier WebVTT.
 
