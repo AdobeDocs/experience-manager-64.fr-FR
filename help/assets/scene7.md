@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
+source-git-commit: 28e552f065d38225226d757c0af00d86d9ed8e07
 workflow-type: tm+mt
-source-wordcount: '2871'
+source-wordcount: '2894'
 ht-degree: 32%
 
 ---
@@ -189,8 +189,8 @@ d’image prédéfiniSélectionnez un paramètre d’image prédéfini existant 
 * **[!UICONTROL Format]**
 de sortieSélectionnez le format de sortie de l’image, par exemple jpeg. Selon le format de sortie que vous sélectionnez, vous pouvez ajouter des options de configuration supplémentaires. Voir [Bonnes pratiques relatives aux paramètres d’image prédéfinis](/help/assets/managing-image-presets.md#image-preset-options).
 
-<!-- * **[!UICONTROL Sharpening]**
-Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options) and [Sharpening best practices](/help/assets/assets/sharpening_images.pdf). -->
+* ****
+AccentuationSélectionnez le mode d’accentuation de l’image. L’accentuation est expliquée en détails dans les rubriques [Bonnes pratiques relatives aux paramètres d’image prédéfinis](/help/assets/managing-image-presets.md#image-preset-options) et [Bonnes pratiques relatives à l’accentuation](/help/assets/assets/sharpening_images.pdf).
 
 * **[!UICONTROL Modificateurs d’URLVous pouvez modifier les effets d’image en fournissant d’autres commandes d’image Dynamic Media Classic.]**
 Ces commandes sont décrites dans la section [Paramètres prédéfinis d’image](/help/assets/managing-image-presets.md) et le [guide de référence des commandes](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
