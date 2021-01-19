@@ -1,17 +1,15 @@
 ---
 title: Gestion des paramètres d’image prédéfinis Dynamic Media
 description: Comprendre les paramètres d’image prédéfinis Dynamic Media et apprendre à créer, modifier et gérer les paramètres d’image prédéfinis
-uuid: 087e6c32-82d5-4645-8dba-0a22c62f891f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
 workflow-type: tm+mt
-source-wordcount: '3850'
+source-wordcount: '3841'
 ht-degree: 79%
 
 ---
@@ -106,31 +104,31 @@ Appuyez sur Adobe Experience Manager dans le coin supérieur gauche de l’éc
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Argument de processus</strong></td> 
-   <td><strong>Paramètre par défaut</strong></td> 
-   <td><strong>Description</strong></td> 
+   <td><strong>Argument de processus</strong></td>
+   <td><strong>Paramètre par défaut</strong></td>
+   <td><strong>Description</strong></td>
   </tr> 
   <tr> 
-   <td>Types MIME</td> 
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td> 
-   <td>Liste des types MIME de documents considérés comme des documents PDF ou Illustrator.<br /> </td> 
+   <td>Types MIME</td>
+   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br/> </p> </td>
+   <td>Liste des types MIME de documents considérés comme des documents PDF ou Illustrator.<br/> </td>
   </tr> 
   <tr> 
-   <td>Largeur max.</td> 
-   <td>2048</td> 
-   <td>Largeur maximale du rendu d’aperçu généré, en pixels.<br /> </td> 
+   <td>Largeur max.</td>
+   <td>2048</td>
+   <td>Largeur maximale du rendu d’aperçu généré, en pixels.<br/> </td>
   </tr> 
   <tr> 
-   <td>Hauteur max.</td> 
-   <td>2048</td> 
-   <td>Hauteur maximale du rendu d’aperçu généré, en pixels.<br /> </td> 
+   <td>Hauteur max.</td>
+   <td>2048</td>
+   <td>Hauteur maximale du rendu d’aperçu généré, en pixels.<br/> </td>
   </tr> 
   <tr> 
-   <td>Résolution</td> 
-   <td>72</td> 
-   <td>Résolution de pixellisation de la première page, en ppp (pixels par pouce).</td> 
-  </tr> 
- </tbody> 
+   <td>Résolution</td>
+   <td>72</td>
+   <td>Résolution de pixellisation de la première page, en ppp (pixels par pouce).</td>
+  </tr>
+ </tbody>
 </table>
 
 À l’aide des arguments de processus par défaut, la première page d’un document PDF/AI est pixellisée à 72 ppp et l’image de prévisualisation générée est dimensionnée à 2 048 x 2 048 pixels. Pour un déploiement standard, vous pouvez augmenter la résolution sur une valeur minimale de 150 ppp ou plus. Par exemple, un document de format Lettre US à 300 ppp doit avoir une largeur et une hauteur maximales de 2 550 x 3 300 pixels, respectivement.
@@ -158,24 +156,24 @@ Les scripts suivants sont utilisés par l’intégration de Dynamic Media :
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Nom du script ExtendScript</strong></td> 
-   <td><strong>Valeur par défaut</strong></td> 
-   <td><strong>Description</strong></td> 
+   <td><strong>Nom du script ExtendScript</strong></td>
+   <td><strong>Valeur par défaut</strong></td>
+   <td><strong>Description</strong></td>
   </tr> 
   <tr> 
-   <td>ThumbnailExport.jsx</td> 
-   <td>Oui</td> 
-   <td>Génère un rendu <code>thumbnail.jpg</code> de 300 ppp optimisé et transformé en rendu PTIFF par le composant de processus <code>Dynamic Media Process Image Assets</code>.<br /> </td> 
+   <td>ThumbnailExport.jsx</td>
+   <td>Oui</td>
+   <td>Génère un rendu <code>thumbnail.jpg</code> de 300 ppp optimisé et transformé en rendu PTIFF par le composant de processus <code>Dynamic Media Process Image Assets</code>.<br/> </td>
   </tr> 
   <tr> 
    <td>JPEGPagesExport.jsx</td> 
    <td>Oui</td> 
-   <td>Génère une sous-ressource JPEG de 300 ppp pour chaque page. Une sous-ressource JPEG est une véritable ressource stockée sous la ressource InDesign. Elle est également optimisée et transformée en PTIFF par le workflow <code>DAM Update Asset</code>.<br /> </td> 
+   <td>Génère une sous-ressource JPEG de 300 ppp pour chaque page. Une sous-ressource JPEG est une véritable ressource stockée sous la ressource InDesign. Elle est également optimisée et transformée en PTIFF par le workflow <code>DAM Update Asset</code>.<br/> </td>
   </tr> 
   <tr> 
-   <td>PDFPagesExport.jsx</td> 
-   <td>Non</td> 
-   <td>Génère une sous-ressource PDF pour chaque page. La sous-ressource PDF est traitée comme indiqué précédemment. Étant donné que le PDF ne contient qu’une seule page, aucune sous-ressource n’est générée.<br /> </td> 
+   <td>PDFPagesExport.jsx</td>
+   <td>Non</td>
+   <td>Génère une sous-ressource PDF pour chaque page. La sous-ressource PDF est traitée comme indiqué précédemment. Étant donné que le PDF ne contient qu’une seule page, aucune sous-ressource n’est générée.<br/> </td>
   </tr> 
  </tbody> 
 </table>
@@ -297,129 +295,129 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Champ</strong></td> 
-   <td><strong>Description</strong></td> 
+   <td><strong>Champ</strong></td>
+   <td><strong>Description</strong></td>
   </tr> 
   <tr> 
-   <td><strong>Nom</strong></td> 
-   <td>Saisissez un nom explicite sans espaces. Ajoutez la spécification de taille de l’image dans le nom pour permettre aux utilisateurs d’identifier ce paramètre d’image prédéfini.</td> 
+   <td><strong>Nom</strong></td>
+   <td>Saisissez un nom explicite sans espaces. Ajoutez la spécification de taille de l’image dans le nom pour permettre aux utilisateurs d’identifier ce paramètre d’image prédéfini.</td>
+  </tr>
+  <tr> 
+   <td><strong>Largeur et hauteur</strong></td>
+   <td>Saisissez la taille (en pixels) à utiliser pour la diffusion de l’image. La largeur et la hauteur doivent être supérieures à 0 pixel. Aucun paramètre prédéfini n’est en effet créé si l’une de ces valeurs est définie sur 0. Si aucune valeur n’est renseignée, un paramètre d’image prédéfini réactif est créé.</td>
   </tr> 
   <tr> 
-   <td><strong>Largeur et hauteur</strong></td> 
-   <td>Saisissez la taille (en pixels) à utiliser pour la diffusion de l’image. La largeur et la hauteur doivent être supérieures à 0 pixel. Aucun paramètre prédéfini n’est en effet créé si l’une de ces valeurs est définie sur 0. Si aucune valeur n’est renseignée, un paramètre d’image prédéfini réactif est créé.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Format</strong></td> 
-   <td><p>Sélectionnez un format dans le menu.</p> <p>La sélection du format <strong>JPEG</strong> présente les options supplémentaires suivantes :</p> 
+   <td><strong>Format</strong></td>
+   <td><p>Sélectionnez un format dans le menu.</p> <p>La sélection du format <strong>JPEG</strong> présente les options supplémentaires suivantes :</p>
     <ul> 
      <li><strong>Qualité</strong> : contrôle le niveau de compression JPEG. Ce paramètre affecte à la fois la taille du fichier et la qualité de l’image. L’échelle de qualité JPEG s’étend de 1 à 100. L’échelle devient visible lorsque vous faites glisser le curseur.</li> 
-     <li><strong>Activer la réduction de la chrominance JPEG</strong> : du fait que l’œil humain est moins sensible aux informations chromatiques à haute fréquence qu’à la luminance à fréquence élevée, les images JPEG divisent les informations graphiques en composantes de luminance et de couleur. Lorsqu’une image JPEG est compressée, la composante de luminance conserve sa pleine résolution, tandis que les composantes de couleur sont sous-échantillonnées par interpolation, c’est-à-dire en calculant la moyenne de groupes de pixels. Le sous-échantillonnage réduit de moitié ou d’un tiers le volume de données, quasiment sans nuire à la qualité perceptible par l’œil humain. Le sous-échantillonnage ne s’applique pas aux images en niveaux de gris. Cette technique réduit le niveau de compression nécessaire pour les images présentant un contraste élevé (par exemple, les images contenant du texte superposé).</li> 
+     <li><strong>Activer la réduction de la chrominance JPEG</strong> : du fait que l’œil humain est moins sensible aux informations chromatiques à haute fréquence qu’à la luminance à fréquence élevée, les images JPEG divisent les informations graphiques en composantes de luminance et de couleur. Lorsqu’une image JPEG est compressée, la composante de luminance conserve sa pleine résolution, tandis que les composantes de couleur sont sous-échantillonnées par interpolation, c’est-à-dire en calculant la moyenne de groupes de pixels. Le sous-échantillonnage réduit de moitié ou d’un tiers le volume de données, quasiment sans nuire à la qualité perceptible par l’œil humain. Le sous-échantillonnage ne s’applique pas aux images en niveaux de gris. Cette technique réduit le niveau de compression nécessaire pour les images présentant un contraste élevé (par exemple, les images contenant du texte superposé).</li>
+    </ul>
+    <div>
+      La sélection de l’option <strong>GIF</strong> ou <strong>GIF avec couche alpha</strong> offre les options <strong>Quantification de couleurs GIF</strong> supplémentaires suivantes :
+    </div>
+    <ul> 
+     <li><strong>Type</strong> : sélectionnez <strong>Adaptatif</strong> (valeur par défaut), <strong>Web</strong> ou <strong>Macintosh</strong>. Si vous sélectionnez l’option <strong>GIF avec couche alpha</strong>, l’option Macintosh n’est pas disponible.</li>
+     <li><strong>Juxtaposition</strong> : sélectionnez <strong>Diffus</strong> ou <strong>Désactivé</strong>.</li>
+     <li><strong>Nombre de couleurs</strong> : saisissez un nombre compris entre 2 et 256.</li>
+     <li><strong>Liste de couleurs</strong> : entrez une liste séparée par des virgules. Par exemple, pour le blanc, le gris et le noir, entrez 000000,888888,ffffff.</li>
     </ul> 
     <div>
-      La sélection de l’option <strong>GIF</strong> ou <strong>GIF avec couche alpha</strong> offre les options <strong>Quantification de couleurs GIF</strong> supplémentaires suivantes : 
-    </div> 
-    <ul> 
-     <li><strong>Type</strong> : sélectionnez <strong>Adaptatif</strong> (valeur par défaut), <strong>Web</strong> ou <strong>Macintosh</strong>. Si vous sélectionnez l’option <strong>GIF avec couche alpha</strong>, l’option Macintosh n’est pas disponible.</li> 
-     <li><strong>Juxtaposition</strong> : sélectionnez <strong>Diffus</strong> ou <strong>Désactivé</strong>.</li> 
-     <li><strong>Nombre de couleurs</strong> : saisissez un nombre compris entre 2 et 256.</li> 
-     <li><strong>Liste de couleurs</strong> : entrez une liste séparée par des virgules. Par exemple, pour le blanc, le gris et le noir, entrez 000000,888888,ffffff.</li> 
-    </ul> 
-    <div>
-      Lorsque vous sélectionnez les options <strong>PDF</strong>, <strong>TIFF</strong> ou <strong>TIFF avec couche alpha</strong>, les autres options suivantes sont proposées : 
-    </div> 
-    <ul> 
-     <li><strong>Compression</strong> : choisissez un algorithme de compression. Les options d’algorithme pour le format PDF sont <strong>Aucun</strong>, <strong>Zip</strong> et <strong>Jpeg</strong>. Les options pour le format TIFF sont <strong>Aucun</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> et <strong>Zip</strong>. Les options pour le format TIFF avec couche alpha sont <strong>Aucun</strong>, <strong>LZW</strong> et <strong>Zip</strong>.</li> 
-    </ul> <p>Aucune option supplémentaire n’est fournie si vous sélectionnez <strong>PNG</strong>, <strong>PNG avec couche alpha</strong> ou <strong>EPS</strong>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Accentuation</strong></td> 
-   <td>Sélectionnez l’option <strong>Activer l’accentuation simple</strong> pour appliquer un filtre d’accentuation de base à l’image à l’issue des opérations de mise à l’échelle. L’accentuation peut compenser le flou produit lors de l’affichage d’une image à une taille différente. </td> 
-  </tr> 
- </tbody> 
+      Lorsque vous sélectionnez les options <strong>PDF</strong>, <strong>TIFF</strong> ou <strong>TIFF avec couche alpha</strong>, les autres options suivantes sont proposées :
+    </div>
+    <ul>
+     <li><strong>Compression</strong> : choisissez un algorithme de compression. Les options d’algorithme pour le format PDF sont <strong>Aucun</strong>, <strong>Zip</strong> et <strong>Jpeg</strong>. Les options pour le format TIFF sont <strong>Aucun</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> et <strong>Zip</strong>. Les options pour le format TIFF avec couche alpha sont <strong>Aucun</strong>, <strong>LZW</strong> et <strong>Zip</strong>.</li>
+    </ul> <p>Aucune option supplémentaire n’est fournie si vous sélectionnez <strong>PNG</strong>, <strong>PNG avec couche alpha</strong> ou <strong>EPS</strong>.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Accentuation</strong></td>
+   <td>Sélectionnez l’option <strong>Activer l’accentuation simple</strong> pour appliquer un filtre d’accentuation de base à l’image à l’issue des opérations de mise à l’échelle. L’accentuation peut compenser le flou produit lors de l’affichage d’une image à une taille différente. </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Options de l’onglet Avancé {#advanced-tab-options}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Champ</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>Espace colorimétrique</strong></td> 
-   <td>Sélectionnez l’espace colorimétrique <strong>RVB, CMJN</strong> ou <strong>Niveaux de gris</strong>.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Profil colorimétrique</strong></td> 
-   <td>Sélectionnez le profil de l’espace colorimétrique de sortie dans lequel doit être convertie la ressource s’il diffère du profil en cours d’utilisation.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Intention de rendu</strong></td> 
-   <td>Vous pouvez remplacer l’intention de rendu par défaut. Les intentions de rendu déterminent ce qu’il advient des couleurs qui ne peuvent pas être reproduites dans le profil colorimétrique cible (hors de la gamme des couleurs). L’intention de rendu est ignorée si elle n’est pas compatible avec le profil ICC. 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Champ</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Espace colorimétrique</strong></td>
+   <td>Sélectionnez l’espace colorimétrique <strong>RVB, CMJN</strong> ou <strong>Niveaux de gris</strong>.</td>
+  </tr>
+  <tr>
+   <td><strong>Profil colorimétrique</strong></td>
+   <td>Sélectionnez le profil de l’espace colorimétrique de sortie dans lequel doit être convertie la ressource s’il diffère du profil en cours d’utilisation.</td>
+  </tr>
+  <tr>
+   <td><strong>Intention de rendu</strong></td>
+   <td>Vous pouvez remplacer l’intention de rendu par défaut. Les intentions de rendu déterminent ce qu’il advient des couleurs qui ne peuvent pas être reproduites dans le profil colorimétrique cible (hors de la gamme des couleurs). L’intention de rendu est ignorée si elle n’est pas compatible avec le profil ICC.
     <ul> 
-     <li>Sélectionnez <strong>Perception</strong> pour compresser toute la gamme des couleurs d’un espace colorimétrique dans un autre lorsqu’une ou plusieurs couleurs de l’image d’origine se situent en dehors de la gamme de l’espace colorimétrique de destination.</li> 
-     <li>Sélectionnez <strong>Colorimétrie relative</strong> si une couleur de l’espace colorimétrique actuel se situe hors de la gamme des couleurs dans l’espace cible et si vous souhaitez la faire correspondre à la couleur la plus proche dans la gamme des couleurs de cet espace cible, sans affecter d’autres couleurs. </li> 
-     <li>Sélectionnez <strong>Saturation</strong> pour reproduire la saturation des couleurs de l’image d’origine lors de sa conversion dans l’espace colorimétrique cible. </li> 
-     <li>Sélectionnez <strong>Colorimétrie absolue</strong> pour faire correspondre exactement les couleurs sans aucun ajustement pour le point blanc ou noir qui altérerait la luminosité de l’image.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Compensation du point noir</strong></td> 
-   <td>Sélectionnez cette option si le profil de sortie prend en charge cette fonction. La compensation du point noir est ignorée si elle n’est pas compatible avec le profil ICC spécifié.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Tramage</strong></td> 
-   <td>Sélectionnez cette option pour réduire les artefacts de bandes de couleurs ou éventuellement les éviter. </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Type d’accentuation</strong></td> 
-   <td><p>Sélectionnez <strong>Aucun</strong>, <strong>Accentuer</strong> ou <strong>Accentuation</strong>. </p> 
+     <li>Sélectionnez <strong>Perception</strong> pour compresser toute la gamme des couleurs d’un espace colorimétrique dans un autre lorsqu’une ou plusieurs couleurs de l’image d’origine se situent en dehors de la gamme de l’espace colorimétrique de destination.</li>
+     <li>Sélectionnez <strong>Colorimétrie relative</strong> si une couleur de l’espace colorimétrique actuel se situe hors de la gamme des couleurs dans l’espace cible et si vous souhaitez la faire correspondre à la couleur la plus proche dans la gamme des couleurs de cet espace cible, sans affecter d’autres couleurs. </li>
+     <li>Sélectionnez <strong>Saturation</strong> pour reproduire la saturation des couleurs de l’image d’origine lors de sa conversion dans l’espace colorimétrique cible. </li>
+     <li>Sélectionnez <strong>Colorimétrie absolue</strong> pour faire correspondre exactement les couleurs sans aucun ajustement pour le point blanc ou noir qui altérerait la luminosité de l’image.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Compensation du point noir</strong></td>
+   <td>Sélectionnez cette option si le profil de sortie prend en charge cette fonction. La compensation du point noir est ignorée si elle n’est pas compatible avec le profil ICC spécifié.</td>
+  </tr>
+  <tr>
+   <td><strong>Tramage</strong></td>
+   <td>Sélectionnez cette option pour réduire les artefacts de bandes de couleurs ou éventuellement les éviter. </td>
+  </tr>
+  <tr>
+   <td><strong>Type d’accentuation</strong></td>
+   <td><p>Sélectionnez <strong>Aucun</strong>, <strong>Accentuer</strong> ou <strong>Accentuation</strong>. </p>
+    <ul>
+     <li>Sélectionnez <strong>Aucun</strong> pour désactiver l’accentuation.</li>
+     <li>Sélectionnez l’option <strong>Accentuer</strong> pour appliquer un filtre d’accentuation de base à l’image à l’issue des opérations de mise à l’échelle. L’accentuation peut compenser le flou produit lors de l’affichage d’une image à une taille différente. </li>
+     <li>Sélectionnez l’option <strong>Accentuation</strong> pour affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, son rayon (mesuré en pixels) et un seuil de contraste qui seront ignorés. Cet effet utilise les mêmes options que le filtre Accentuation de Photoshop.</li>
+    </ul> <p>L’option <strong>Accentuation</strong> propose les options suivantes :</p>
     <ul> 
-     <li>Sélectionnez <strong>Aucun</strong> pour désactiver l’accentuation.</li> 
-     <li>Sélectionnez l’option <strong>Accentuer</strong> pour appliquer un filtre d’accentuation de base à l’image à l’issue des opérations de mise à l’échelle. L’accentuation peut compenser le flou produit lors de l’affichage d’une image à une taille différente. </li> 
-     <li>Sélectionnez l’option <strong>Accentuation</strong> pour affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, son rayon (mesuré en pixels) et un seuil de contraste qui seront ignorés. Cet effet utilise les mêmes options que le filtre Accentuation de Photoshop.</li> 
-    </ul> <p>L’option <strong>Accentuation</strong> propose les options suivantes :</p> 
-    <ul> 
-     <li><strong>Quantité</strong> : contrôle le degré de contraste appliqué aux pixels de contour. La valeur réelle par défaut est de 1,0. Pour les images à haute résolution, vous pouvez l’augmenter jusqu’à 5,0. Envisagez la quantité comme une mesure de l’intensité du filtre.</li> 
-     <li><strong>Rayon</strong> : détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images haute résolution, entrez un nombre réel compris entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image.</li> 
-     <li><strong>Seuil</strong> : détermine la plage de contraste à ignorer lorsque le filtre d’accentuation est appliqué. En d’autres termes, cette option définit l’écart recherché entre les pixels accentués et la zone environnante avant qu’ils ne soient considérés comme des pixels de contour et ne soient accentués. Pour éviter d’introduire du bruit, essayez des valeurs comprises entre 2 et 20. </li> 
-     <li><strong>Appliquer à</strong> : détermine si l’accentuation s’applique à chaque couleur ou à la luminosité.</li> 
-    </ul> 
+     <li><strong>Quantité</strong> : contrôle le degré de contraste appliqué aux pixels de contour. La valeur réelle par défaut est de 1,0. Pour les images à haute résolution, vous pouvez l’augmenter jusqu’à 5,0. Envisagez la quantité comme une mesure de l’intensité du filtre.</li>
+     <li><strong>Rayon</strong> : détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images haute résolution, entrez un nombre réel compris entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image.</li>
+     <li><strong>Seuil</strong> : détermine la plage de contraste à ignorer lorsque le filtre d’accentuation est appliqué. En d’autres termes, cette option définit l’écart recherché entre les pixels accentués et la zone environnante avant qu’ils ne soient considérés comme des pixels de contour et ne soient accentués. Pour éviter d’introduire du bruit, essayez des valeurs comprises entre 2 et 20. </li>
+     <li><strong>Appliquer à</strong> : détermine si l’accentuation s’applique à chaque couleur ou à la luminosité.</li>
+    </ul>
     <div>
-      L’accentuation est décrite dans <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/sharpening_images.pdf">Accentuation des images</a>. 
-    </div> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Mode Rééchantillonnage</strong></td> 
-   <td>Sélectionnez une option <strong>Mode Rééchantillonnage</strong>. Ces options accentuent l’image lorsque sa résolution est réduite : 
-    <ul> 
-     <li><strong>Bilinéaire</strong> : il s’agit de la méthode de rééchantillonnage la plus rapide. Certains artefacts de crénelage sont visibles.</li> 
-     <li><strong>Bicubique</strong> : accroît l’utilisation du processeur, mais produit des images plus nettes avec des artefacts de crénelage plus discrets.</li> 
-     <li><strong>Sharp2</strong> : cette méthode peut produire des images légèrement plus nettes que celles obtenues avec l’option Bicubique, en sollicitant toutefois davantage le processeur.</li> 
-     <li><strong>Bi-Sharp</strong> : permet de sélectionner le rééchantillonneur Photoshop par défaut utilisé pour réduire la taille de l’image ; cette option se nomme <strong>Bicubique plus net</strong> dans Adobe Photoshop.</li> 
-     <li><strong>Chaque couleur</strong> et <strong>Luminosité</strong> : chaque méthode peut être basée sur la couleur ou la luminosité. Par défaut, l’option <strong>Chaque couleur</strong> est sélectionnée.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Résolution d’impression</strong></td> 
-   <td>Choisissez une résolution d’impression pour cette image ; 72 pixels est la valeur par défaut.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Modificateur d’image</strong></td> 
-   <td><p>Au-delà des paramètres d’image courants disponibles dans l’IU, Dynamic Media prend en charge de nombreuses modifications d’image avancées que vous pouvez spécifier dans le champ <strong>Modificateurs d’images</strong>. Ces paramètres sont définis dans la <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">référence des commandes du protocole de serveur d’images</a>.</p> <p>Important : La fonctionnalité suivante répertoriée dans l’API n’est pas prise en charge :</p> 
-    <ul> 
-     <li>Commandes de base de création de modèles et de rendu de texte : <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> et <code>textPs=</code></li> 
-     <li>Commandes de localisation : <code>locale=</code> et <code>req=xlate</code></li> 
-     <li><code>req=set</code> n’est pas disponible pour l’utilisation générale.</li> 
-     <li><code>req=mbrset</code></li> 
-     <li><code>req=saveToFile</code></li> 
-     <li><code>req=targets</code></li> 
-     <li><code>template=</code></li> 
-     <li>Services Dynamic Media non essentiels : SVG, rendu d’image et impression en ligne</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+      L’accentuation est décrite dans * Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices</a>.
+    </div> </td>
+  </tr>
+  <tr>
+   <td><strong>Mode Rééchantillonnage</strong></td>
+   <td>Sélectionnez une option <strong>Mode Rééchantillonnage</strong>. Ces options accentuent l’image lorsque sa résolution est réduite :
+    <ul>
+     <li><strong>Bilinéaire</strong> : il s’agit de la méthode de rééchantillonnage la plus rapide. Certains artefacts de crénelage sont visibles.</li>
+     <li><strong>Bicubique</strong> : accroît l’utilisation du processeur, mais produit des images plus nettes avec des artefacts de crénelage plus discrets.</li>
+     <li><strong>Sharp2</strong> : cette méthode peut produire des images légèrement plus nettes que celles obtenues avec l’option Bicubique, en sollicitant toutefois davantage le processeur.</li>
+     <li><strong>Bi-Sharp</strong> : permet de sélectionner le rééchantillonneur Photoshop par défaut utilisé pour réduire la taille de l’image ; cette option se nomme <strong>Bicubique plus net</strong> dans Adobe Photoshop.</li>
+     <li><strong>Chaque couleur</strong> et <strong>Luminosité</strong> : chaque méthode peut être basée sur la couleur ou la luminosité. Par défaut, l’option <strong>Chaque couleur</strong> est sélectionnée.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Résolution d’impression</strong></td>
+   <td>Choisissez une résolution d’impression pour cette image ; 72 pixels est la valeur par défaut.</td>
+  </tr>
+  <tr>
+   <td><strong>Modificateur d’image</strong></td>
+   <td><p>Au-delà des paramètres d’image courants disponibles dans l’IU, Dynamic Media prend en charge de nombreuses modifications d’image avancées que vous pouvez spécifier dans le champ <strong>Modificateurs d’images</strong>. Ces paramètres sont définis dans la <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">référence des commandes du protocole de serveur d’images</a>.</p> <p>Important : La fonctionnalité suivante répertoriée dans l’API n’est pas prise en charge :</p>
+    <ul>
+     <li>Commandes de base de création de modèles et de rendu de texte : <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> et <code>textPs=</code></li>
+     <li>Commandes de localisation : <code>locale=</code> et <code>req=xlate</code></li>
+     <li><code>req=set</code> n’est pas disponible pour l’utilisation générale.</li>
+     <li><code>req=mbrset</code></li>
+     <li><code>req=saveToFile</code></li>
+     <li><code>req=targets</code></li>
+     <li><code>template=</code></li>
+     <li>Services Dynamic Media non essentiels : SVG, rendu d’image et impression en ligne</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Définition des options de paramètre d’image prédéfini avec des modificateurs d’image {#defining-image-preset-options-with-image-modifiers}
@@ -501,9 +499,6 @@ Si vous exécutez le mode Scene7 de Dynamic Media, les paramètres d’image pr�
 
 ## Suppression des paramètres d’image prédéfinis Dynamic Media {#deleting-image-presets}
 
-**Pour supprimer des paramètres** d’image Dynamic Media prédéfinis :
-
 1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale.
 1. Appuyez sur l’icône **[!UICONTROL Outils]**, puis accédez à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
 1. Sélectionnez un paramètre prédéfini, puis appuyez sur **[!UICONTROL Supprimer]**. Dynamic Media vous invite à confirmer la suppression. Appuyez sur **[!UICONTROL Supprimer]**.
-
