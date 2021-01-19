@@ -10,9 +10,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1681'
 ht-degree: 62%
 
 ---
@@ -137,7 +137,7 @@ Le tableau suivant fournit une comparaison de niveau élevé des fonctions prise
 | Approche | Approche HTML5 en premier lieu. Flash n’est utilisé que pour le secours non HTML5. | Flash sur la plupart des ordinateurs de bureau. HTML5 est utilisé pour les mobiles et les tablettes. |
 | Diffusion | Progressive | Adaptative |
 | Suivi | Oui | Oui |
-| Evolutivité | Oui | Oui (avec kit de développement de visionneuses de Scene7) |
+| Evolutivité | Oui | Oui (avec [Documentation de l’API du kit de développement de visionneuse HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) |
 | Vidéo mobile | Oui | Oui |
 
 ### Configuration  {#setting-up}
