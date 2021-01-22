@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2779'
 ht-degree: 74%
 
 ---
@@ -31,7 +31,7 @@ Lorsque vous ouvrez une newsletter/un courrier électronique configuré de mani�
 * Titre (Campaign)
 * Image (Campaign)
 * Lien (Campaign)
-* Modèle d’image Scene7 (Campaign)
+* Modèle d’image Dynamic Media (Campaign)
 * Référence ciblée (Campaign)
 * Texte et image (Campaign)
 * Texte et personnalisation (Campaign)
