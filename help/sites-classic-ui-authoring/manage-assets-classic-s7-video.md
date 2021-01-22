@@ -1,19 +1,15 @@
 ---
 title: Vidéo
-seo-title: Vidéo
 description: Les ressources fournissent une gestion du contenu vidéo centralisée où vous pouvez télécharger des vidéos directement dans les ressources pour un codage automatique sur Scene7 et accéder aux vidéos Scene7 directement depuis les ressources à des fins de création de page.
-seo-description: Les ressources fournissent une gestion du contenu vidéo centralisée où vous pouvez télécharger des vidéos directement dans les ressources pour un codage automatique sur Scene7 et accéder aux vidéos Scene7 directement depuis les ressources à des fins de création de page.
-uuid: 46da7a0d-d17b-4716-a304-ce5496421b5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 49%
+source-wordcount: '1707'
+ht-degree: 48%
 
 ---
 
@@ -108,7 +104,7 @@ Pour télécharger votre vidéo originale vers Dynamic Media Classic à partir d
    >
    >La génération des miniatures de vidéo peut prendre du temps.
 
-   Faire glisser la vidéo originale DAM sur le composant vidéo accède à *all* des rendus proxy codés Dynamic Media Classic pour la diffusion.
+   Faire glisser la vidéo originale DAM sur le composant vidéo accède à *tous* des rendus proxy codés Dynamic Media Classic pour la diffusion.
 
 ### Composant vidéo de base par rapport au composant vidéo de Dynamic Media Classic {#foundation-video-component-versus-scene-video-component}
 
