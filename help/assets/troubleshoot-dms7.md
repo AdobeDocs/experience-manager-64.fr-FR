@@ -1,24 +1,20 @@
 ---
 title: Dépannage de Dynamic Media – mode Scene7
-seo-title: Dépannage de Dynamic Media – mode Scene7
-description: Dépannage de Dynamic Media en mode d’exécution Scene7.
-seo-description: Dépannage de Dynamic Media en mode d’exécution Scene7.
-uuid: bd9653f7-e4c7-464f-84a8-dc1e8dc37ba2
+description: Dépannage du mode d’exécution Dynamic Media - Scene7.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: eab920f4-b56e-4ed2-9ec1-03f348810ae5
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1295'
 ht-degree: 88%
 
 ---
 
 
-# Dépannage de Dynamic Media – mode Scene7  {#troubleshooting-dynamic-media-scene-mode}
+# Dépannage de Dynamic Media – mode Scene7 {#troubleshooting-dynamic-media-scene-mode}
 
 Le document suivant décrit la résolution des problèmes affectant Dynamic Media en mode d’exécution **dynamicmedia_scene7**.
 
@@ -30,7 +26,7 @@ Assurez-vous que Dynamic Media a été correctement configuré en procédant com
 * Tous les packs de correctifs cumulatifs (CFP) AEM 6.4 ont été installés *avant* tout Feature Pack Dynamic Media disponible.
 * Le Feature Pack 18912 facultatif est installé.
 
-   Ce Feature Pack facultatif est utile pour la prise en charge FTP ou si vous effectuez une migration des ressources de Dynamic Media vers Dynamic Media Classic (Scene7).
+   Ce Feature Pack facultatif est utile pour la prise en charge FTP ou si vous effectuez une migration des ressources de Dynamic Media vers Dynamic Media Classic.
 
 * Accédez à l’interface utilisateur des services cloud et vérifiez que le compte fourni s’affiche sous **[!UICONTROL Configurations disponibles]**.
 * Assurez-vous que l’Activation de réplication **[!UICONTROL Dynamic Media Asset  (scene7)]** est activée.
