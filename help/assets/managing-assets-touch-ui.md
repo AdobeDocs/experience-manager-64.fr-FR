@@ -4,9 +4,9 @@ description: Découvrez les différentes tâches de gestion et de modification d
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
 workflow-type: tm+mt
-source-wordcount: '10030'
+source-wordcount: '10039'
 ht-degree: 66%
 
 ---
@@ -151,8 +151,8 @@ Dynamic Media permet le transfert par lots des ressources par le biais du serveu
 **Pour télécharger des ressources via FTP, procédez comme suit :**
 
 1. Sélectionnez le client FTP de votre choix, puis connectez-vous à l’aide du nom d’utilisateur et du mot de passe FTP qui vous ont été envoyés par courrier électronique. Dans le client FTP, téléchargez les fichiers et/ou dossiers vers le serveur FTP.
-1. [Connectez-vous à Dynamic Media Classic](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) à l’aide des informations de connexion qui vous ont été envoyées par e-mail. Appuyez ou cliquez sur **[!UICONTROL Télécharger]** dans la barre de navigation globale.
-
+1. Ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre compte à l’aide des informations d’identification reçues du courrier électronique de mise en service.
+1. Appuyez ou cliquez sur **[!UICONTROL Télécharger]** dans la barre de navigation globale.
 1. Sur la page **[!UICONTROL Télécharger]**, près du coin supérieur gauche, appuyez sur l&#39;onglet **[!UICONTROL Via FTP]**.
 1. Sélectionnez le dossier FTP source à utiliser pour le transfert des fichiers dans la partie gauche de la page et le dossier de destination dans la partie droite.
 1. Près du coin inférieur droit de la page, appuyez sur **[!UICONTROL Options tâche]**, puis définissez les options souhaitées en fonction des ressources du dossier sélectionné.
