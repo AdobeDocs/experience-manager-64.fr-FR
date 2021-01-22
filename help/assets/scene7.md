@@ -1,18 +1,14 @@
 ---
 title: Ajouter les fonctionnalités de Dynamic Media Classic à votre page
-seo-title: Ajouter les fonctionnalités de Dynamic Media Classic à votre page
-description: Découvrez comment ajouter des fonctionnalités et des composants Dynamic Media Classic à votre page AEM.
-seo-description: Découvrez comment ajouter des fonctionnalités et des composants Dynamic Media Classic à votre page AEM.
-uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
+description: Découvrez les composants Dynamic Media Classic et comment les ajouter à votre page AEM.
 contentOwner: Alva Ware-Bevacqui
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 topic-tags: managing-assets
-discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 28e552f065d38225226d757c0af00d86d9ed8e07
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2873'
 ht-degree: 32%
 
 ---
