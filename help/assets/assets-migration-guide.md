@@ -3,9 +3,9 @@ title: Migration des ressources vers les ressources Adobe Experience Manager en 
 description: Découvrez comment importer des fichiers dans AEM, appliquer des métadonnées, générer des rendus et les activer pour publier des instances.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 976d037d701eb7cc61a62e14e554675961d6179c
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1791'
 ht-degree: 67%
 
 ---
@@ -79,7 +79,7 @@ Lorsque les ressources ne sont pas transmises sur un réseau, les performances g
 
 ### Traitement des rendus {#process-renditions}
 
-Après avoir chargé les ressources dans le système, vous devez les traiter via le workflow Ressources de mise à jour de gestion des actifs numériques, afin d’extraire les métadonnées et de générer les rendus. Avant d’effectuer cette étape, vous devez dupliquer et modifier le workflow Ressources de mise à jour de gestion des actifs numériques pour l’adapter à vos besoins. Certaines étapes du processus par défaut peuvent ne pas être nécessaires pour vous, telles que la génération Scene7 PTIFF ou l’intégration du serveur d’InDesigns.
+Après avoir chargé les ressources dans le système, vous devez les traiter via le workflow Ressources de mise à jour de gestion des actifs numériques, afin d’extraire les métadonnées et de générer les rendus. Avant d’effectuer cette étape, vous devez dupliquer et modifier le workflow Ressources de mise à jour de gestion des actifs numériques pour l’adapter à vos besoins. Certaines étapes du processus par défaut peuvent ne pas être nécessaires pour vous, telles que la génération de PTIFF Dynamic Media Classic ou l’intégration de serveur d’InDesigns.
 
 Une fois que vous avez configuré le processus en fonction de vos besoins, vous disposez de deux options pour l’exécuter :
 
