@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
-source-git-commit: 8a5222c98b4f93ea86b572eaf233f61dec074951
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 90%
+source-wordcount: '300'
+ht-degree: 80%
 
 ---
 
@@ -55,7 +55,7 @@ Les meilleures pratiques concernant les ressources, y compris les fonctionnalit�
   <tr>
    <td>Imagerie dynamique</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Meilleures pratiques en matière d’imagerie dynamique </a></td> 
-   <td><p>Décrit comment affiner une image pour obtenir les meilleurs résultats et la meilleure manière d’optimiser la qualité de vos images si vous utilisez la fonctionnalité de média dynamique ou intégrez Scene 7. </p> </td> 
+   <td><p>Décrit comment accentuer une image pour obtenir de meilleurs résultats et la meilleure façon d’optimiser la qualité de vos images si vous utilisez la fonctionnalité Dynamic Media ou si vous effectuez une intégration avec Dynamic Media.</p> </td> 
   </tr>
   <tr>
    <td>Ressources multilingues</td> 
