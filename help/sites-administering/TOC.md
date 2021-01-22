@@ -3,19 +3,19 @@ cloud: experience-cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: admin-user
-user-guide-title: Guide de l’utilisateur pour l’administration dans AEM 6.4
+user-guide-title: Guide de l’utilisateur pour l’administration dans AEM 6.4
 breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
 translation-type: tm+mt
-source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 97%
+source-wordcount: '623'
+ht-degree: 96%
 
 ---
 
 
-# Guide de l’utilisateur pour l’administration dans AEM 6.4  {#administering}
+# Guide de l’utilisateur pour l’administration dans AEM 6.4  {#administering}
 
 + [Présentation de l’administration du Guide de l’utilisateur](home.md)
 + Fonctionnalités des sites {#introduction}
@@ -135,7 +135,7 @@ ht-degree: 97%
    + [Intégration à Adobe Dynamic Tag Management](dtm.md)
    + [Souscription à Adobe Analytics et Adobe Target](opt-in.md)
    + [Portails et portlets AEM](aem-as-portal.md)
-   + [Intégration à Dynamic Media Classic (Scene7)](scene7.md)
+   + [Intégration à Dynamic Media Classic](scene7.md)
    + [Recettes AEM Livefyre](aem-livefyre-recipes.md)
    + [Résolution des problèmes d’intégration](troubleshooting-integration-issues.md)
    + [Intégration à BrightEdge Content Optimizer](brightedge.md)
