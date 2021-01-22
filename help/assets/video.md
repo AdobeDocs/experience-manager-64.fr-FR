@@ -1,19 +1,15 @@
 ---
 title: Vidéo
-seo-title: Vidéo
-description: Découvrez comment utiliser la vidéo dans Dynamic Media
-seo-description: Découvrez comment utiliser la vidéo dans Dynamic Media
-uuid: 15e89f88-2787-472d-bbb6-d370bbab9228
+description: Découvrez comment utiliser la vidéo dans Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
-discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '10456'
-ht-degree: 77%
+source-wordcount: '10396'
+ht-degree: 76%
 
 ---
 
@@ -162,9 +158,9 @@ Les terminaux Windows qui prennent en charge ce format vidéo sont répertoriés
 * Configurer des lecteurs vidéo pour répondre à vos besoins de stratégie de marque.
 * Intégrer la vidéo à votre site web, site mobile ou application mobile grâce à une simple URL ou à du code intégré.
 
-Voir [Lecture de vidéo dynamique](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480).
+<!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Voir aussi [À propos des visionneuses HTML5](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) dans le guide de référence des visionneuses d’Adobe Scene7.
+Voir aussi [A propos des visionneuses HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only) dans le Guide de référence des visionneuses Dynamic Media Adobe.
 
 ## Bonne pratique : Utilisation de la visionneuse de vidéos HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -176,7 +172,7 @@ En ce qui concerne la lecture, la visionneuse, détecte automatiquement les fonc
 
 En combinant dans un lecteur unique la capacité de concevoir les composants de lecture à l’aide de code HTML5 et CSS, d’avoir accès à la lecture incorporée et d’utiliser les flux continus adaptatifs et progressifs selon la capacité du navigateur, vous pouvez étendre la portée de votre contenu multimédia aux utilisateurs d’appareils mobiles et de postes de travail et garantir ainsi une expérience vidéo rationalisée.
 
-Voir aussi [À propos des visionneuses HTML5](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) dans le guide de référence des visionneuses d’Adobe 
+Voir aussi [À propos des visionneuses HTML5](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) dans le guide de référence des visionneuses d’Adobe 
 
 ### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5   {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -193,76 +189,76 @@ HLS (HTTP Live Streaming) est une norme d’Apple pour la diffusion de vidéo ad
 
 La vidéo progressive est fournie grâce au téléchargement et à l’enregistrement de la vidéo en local sur l’écran du poste de bureau ou de l’appareil mobile de l’utilisateur.
 
-Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lecture des vidéos sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse vidéo Scene7.
+Le tableau suivant décrit la méthode de lecture, de navigateur et de périphérique mobile des vidéos sur les ordinateurs de bureau et les périphériques mobiles à l’aide de la visionneuse vidéo Dynamic Media.
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Appareil</strong></td> 
-   <td><strong>Navigateur</strong></td> 
-   <td><strong>Mode lecture vidéo</strong></td> 
-  </tr> 
+   <td><strong>Appareil</strong></td>
+   <td><strong>Navigateur</strong></td>
+   <td><strong>Mode lecture vidéo</strong></td>
+  </tr>
   <tr> 
-   <td>Poste de travail</td> 
-   <td>Internet Explorer 9 et 10</td> 
-   <td>Téléchargement progressif.</td> 
-  </tr> 
+   <td>Poste de travail</td>
+   <td>Internet Explorer 9 et 10</td>
+   <td>Téléchargement progressif.</td>
+  </tr>
   <tr> 
-   <td>Poste de travail</td> 
-   <td>Internet Explorer 11+</td> 
-   <td>Sous Windows 8 et Windows 10 - Forcer l’utilisation de HTTPS chaque fois que HLS est demandé. Limites connues : HTTP sur HLS ne fonctionne pas avec cette combinaison de navigateur/système d’exploitation<br /> <br /> Sous Windows 7 - Téléchargement progressif. Utilise la logique standard pour sélectionner le protocole HTTP ou HTTPS.</td> 
-  </tr> 
+   <td>Poste de travail</td>
+   <td>Internet Explorer 11+</td>
+   <td>Sous Windows 8 et Windows 10 - Forcer l’utilisation de HTTPS chaque fois que HLS est demandé. Limites connues : HTTP sur HLS ne fonctionne pas avec cette combinaison de navigateur/système d’exploitation<br /> <br /> Sous Windows 7 - Téléchargement progressif. Utilise la logique standard pour sélectionner le protocole HTTP ou HTTPS.</td>
+  </tr>
   <tr> 
-   <td>Poste de travail</td> 
-   <td>Firefox 23 à 44</td> 
-   <td>Téléchargement progressif.</td> 
-  </tr> 
+   <td>Poste de travail</td>
+   <td>Firefox 23 à 44</td>
+   <td>Téléchargement progressif.</td>
+  </tr>
   <tr> 
-   <td>Poste de travail</td> 
-   <td>Firefox 45 ou version ultérieure</td> 
-   <td>HLS diffusion vidéo en flux continu.</td> 
-  </tr> 
+   <td>Poste de travail</td>
+   <td>Firefox 45 ou version ultérieure</td>
+   <td>HLS diffusion vidéo en flux continu.</td>
+  </tr>
   <tr> 
-   <td>Poste de travail</td> 
-   <td>Chrome</td> 
-   <td>HLS diffusion vidéo en flux continu.</td> 
-  </tr> 
+   <td>Poste de travail</td>
+   <td>Chrome</td>
+   <td>HLS diffusion vidéo en flux continu.</td>
+  </tr>
   <tr> 
-   <td>Poste de travail</td> 
-   <td>Safari (Mac)</td> 
-   <td>HLS diffusion vidéo en flux continu.</td> 
-  </tr> 
+   <td>Poste de travail</td>
+   <td>Safari (Mac)</td>
+   <td>HLS diffusion vidéo en flux continu.</td>
+  </tr>
   <tr> 
-   <td>Mobile</td> 
-   <td>Chrome (Android 6 ou version antérieure)</td> 
-   <td>Téléchargement progressif.</td> 
-  </tr> 
+   <td>Mobile</td>
+   <td>Chrome (Android 6 ou version antérieure)</td>
+   <td>Téléchargement progressif.</td>
+  </tr>
   <tr> 
-   <td>Mobile</td> 
-   <td>Chrome (Android 7 ou version ultérieure)</td> 
-   <td>HLS diffusion vidéo en flux continu.</td> 
-  </tr> 
+   <td>Mobile</td>
+   <td>Chrome (Android 7 ou version ultérieure)</td>
+   <td>HLS diffusion vidéo en flux continu.</td>
+  </tr>
   <tr> 
-   <td>Mobile</td> 
-   <td>Android (navigateur par défaut)</td> 
-   <td>Téléchargement progressif.</td> 
-  </tr> 
+   <td>Mobile</td>
+   <td>Android (navigateur par défaut)</td>
+   <td>Téléchargement progressif.</td>
+  </tr>
   <tr> 
-   <td>Mobile</td> 
-   <td>Safari (iOS)</td> 
-   <td>HLS diffusion vidéo en flux continu.</td> 
-  </tr> 
+   <td>Mobile</td>
+   <td>Safari (iOS)</td>
+   <td>HLS diffusion vidéo en flux continu.</td>
+  </tr>
   <tr> 
-   <td>Mobile</td> 
-   <td>Chrome (iOS)</td> 
-   <td>HLS diffusion vidéo en flux continu.</td> 
-  </tr> 
+   <td>Mobile</td>
+   <td>Chrome (iOS)</td>
+   <td>HLS diffusion vidéo en flux continu.</td>
+  </tr>
   <tr> 
-   <td>Mobile</td> 
-   <td>Blackberry</td> 
-   <td>HLS diffusion vidéo en flux continu.</td> 
-  </tr> 
- </tbody> 
+   <td>Mobile</td>
+   <td>Blackberry</td>
+   <td>HLS diffusion vidéo en flux continu.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Architecture de la solution vidéo Dynamic Media   {#architecture-of-dynamic-media-video-solution}
@@ -415,7 +411,7 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
    <td><p>Source</p> </td> 
    <td><p>1 920 x 1 080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codée</p> </td> 
@@ -903,7 +899,7 @@ Pour que les rapports vidéo fonctionnent correctement, un identifiant de suite 
 
 1. Dans le tableau qui répertorie les principales vidéos publiées, appuyez sur le nom d’une vidéo pour la lire et afficher également le rapport sur la rétention de l’audience (taux de déperdition) de celle-ci.
 
-### Affichage des rapports vidéo basés sur une visionneuse de vidéos que vous avez créée à l’aide du kit de développement de visionneuse HTML5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Affichage des rapports vidéo basés sur une visionneuse de vidéos que vous avez créée à l’aide du kit de développement de visionneuse HTML5 de Dynamic Media {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Si vous utilisez une visionneuse de vidéos prête à l’emploi fournie par Dynamic Media ou si vous avez créé un paramètre prédéfini de visionneuse personnalisée à partir d’une visionneuse de vidéos prête à l’emploi, aucune autre procédure n’est nécessaire pour vue des rapports vidéo. Cependant, si vous avez créé votre propre visionneuse de vidéos à partir de l’API du kit de développement de visionneuse HTML5, suivez les étapes ci-après pour vous assurer que la visionneuse de vidéos envoie des événements de suivi aux rapports vidéo Dynamic Media.
 
@@ -965,7 +961,7 @@ Pour vue des rapports Vidéo basés sur une visionneuse de vidéos que vous avez
       ```
    L’objet appMeasurementBridge dispose d’une fonction de suivi intégrée. Vous pouvez toutefois fournir votre propre fonction pour prendre en charge plusieurs systèmes de suivi ou d’autres fonctionnalités.
 
-   Pour plus d’informations, voir *Utilisation du composant TrackingManager* dans le *Guide de l’utilisateur du SDK de la visionneuse HTML5 de Scene7* téléchargeable sur [Adobe Developer Connection](https://help.adobe.com/fr_FR/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+<!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 ## Ajout de sous-titres à une vidéo {#adding-captions-to-video}
 
@@ -979,9 +975,9 @@ Les sous-titres offrent également une meilleure accessibilité en utilisant des
 
 Dynamic Media peut convertir des fichiers de sous-titres au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour permettre de trouver plus facilement les vidéos et fournir aux utilisateurs des informations supplémentaires sur le contenu des vidéos.
 
-Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL, reportez-vous à la section [Service de contenu statique (hors images)](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) dans l’*Aide de l’API de serveur d’images de Scene7*.
+Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL, voir [Diffusion du contenu statique (sans image)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) dans l’*Aide de l’API de diffusion et de rendu d’images de Dynamic Media*.
 
-**Pour ajouter des sous-titres à une vidéo** :
+**Pour ajouter des sous-titres à une vidéo**:
 
 1. Utilisez une application tierce ou un service de création de fichiers de sous-titres de vidéo.
 
@@ -1182,4 +1178,3 @@ Pour configurer l’intervalle par défaut auquel les miniatures vidéo sont cr�
 1. Une fois l’image téléchargée, dans la page **[!UICONTROL Modifier la miniature]**, appuyez sur **[!UICONTROL Enregistrer les modifications]**.
 
    La miniature personnalisée est ajoutée à votre vidéo.
-
