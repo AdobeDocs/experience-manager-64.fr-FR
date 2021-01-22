@@ -1,19 +1,15 @@
 ---
 title: Visionneuses de médias mixtes
-seo-title: Visionneuses de médias mixtes
-description: Découvrez comment travailler avec des visionneuses de supports variés dans Dynamic Media.
-seo-description: Découvrez comment travailler avec des visionneuses de supports variés dans Dynamic Media.
-uuid: e37fa648-74e2-42e3-8611-8509c92ec00d
+description: Découvrez comment utiliser des visionneuses de supports variés (images, visionneuses d’images, visionneuses à 360° et vidéos) dans Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1476'
-ht-degree: 77%
+source-wordcount: '1469'
+ht-degree: 76%
 
 ---
 
