@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '21618'
+source-wordcount: '21617'
 ht-degree: 25%
 
 ---
@@ -71,7 +71,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 ### Ressources {#assets}
 
-* Un dossier sans nom est créé dans SPS (Scene7 Publishing System) lors du déplacement d’un fichier d’un dossier à un autre en Experience Manager avec la configuration Dynamic Media (NPR-32440).
+* Un dossier sans nom est créé dans Dynamic Media Classic lors du déplacement d’une ressource d’un dossier à un autre en Experience Manager avec la configuration Dynamic Media Classic (NPR-32440).
 
 * La page des détails des ressources des fichiers PDF n’affiche pas les boutons d’action dans le Experience Manager s’exécutant en mode Scene7 (NPR-32316).
 
