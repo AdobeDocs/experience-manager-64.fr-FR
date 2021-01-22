@@ -6,10 +6,10 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
-source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1856'
-ht-degree: 91%
+source-wordcount: '1858'
+ht-degree: 90%
 
 ---
 
@@ -33,7 +33,7 @@ Compte tenu de ces facteurs, vous avez besoin d’une méthodologie permettant d
 1. Déterminez la taille et le nombre de ressources qui seront chargées dans le système.
 1. Obtenez un échantillon représentatif des ressources à charger dans AEM. Par exemple, si vous prévoyez de charger des fichiers PSD, JPG, AI et PDF dans le système, vous avez besoin de plusieurs échantillons d’images de chaque format de fichier. En outre, ces échantillons doivent être représentatifs des différentes tailles de fichiers et de la complexité des images.
 1. Définissez les rendus à utiliser.
-1. Créez les rendus dans AEM en utilisant ImageMagick ou les applications Adobe Creative Cloud. En plus des rendus que les utilisateurs spécifient, créez des rendus prêts à l’emploi. Pour les utilisateurs qui mettent en œuvre Scene7, vous pouvez utiliser le fichier binaire IC pour générer les rendus PTIFF à stocker dans AEM.
+1. Créez les rendus dans AEM en utilisant ImageMagick ou les applications Adobe Creative Cloud. En plus des rendus que les utilisateurs spécifient, créez des rendus prêts à l’emploi. Pour les utilisateurs qui implémentent Dynamic Media Classic, vous pouvez utiliser le binaire IC pour générer les rendus PTIFF à stocker dans AEM.
 1. Si vous prévoyez d’utiliser des sous-ressources, générez-les pour les types de fichiers appropriés. Voir la documentation en ligne sur la génération de pages de sous-ressources à partir de fichiers InDesign ou PNG/PDF provenant de calques d’Illustrator.
 1. Comparez la taille des images, rendus et sous-ressources de sortie avec les images d’origine. Cette comparaison permet de générer un facteur de croissance attendu lorsque le système est chargé. Par exemple, si vous générez des rendus et des sous-ressources d’une taille combinée de 3 Go après le traitement de 1 Go de ressources, le facteur de croissance des rendus est de 3.
 1. Déterminez la durée maximale pendant laquelle les versions des ressources doivent être conservées dans le système.
