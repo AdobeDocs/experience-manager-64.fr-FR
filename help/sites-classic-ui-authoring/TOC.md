@@ -7,10 +7,10 @@ user-guide-title: Guide de l’utilisateur de création d’interface utilisateu
 breadcrumb-title: Guide de création d’interface utilisateur classique
 user-guide-description: Ce guide traite des concepts de création dans AEM interface utilisateur classique.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 85%
+source-wordcount: '319'
+ht-degree: 83%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 85%
    + [Diffusion de ressources Dynamic Media](dynamic-media-assets-delivering.md)
    + [Configuration d’une étape standard avec Autodesk Maya et Mental Ray](classicui-stages-aem3d-ad-mr.md)
    + [Ajout de ressources Dynamic Media aux pages](dynamic-media-assets-adding-to-page.md)
-   + [Ajout de fonctionnalités Scene7 à votre page](manage-assets-classic-s7.md)
+   + [Ajouter les fonctionnalités de Dynamic Media Classic (Scene7) à votre page](manage-assets-classic-s7.md)
    + [Utilisation de Dynamic Media](dynamic-media-assets.md)
    + [Utilisation de ressources 3D](classicui-3dassets.md)
    + [Vidéo](manage-assets-classic-s7-video.md)
