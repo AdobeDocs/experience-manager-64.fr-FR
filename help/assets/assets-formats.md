@@ -3,9 +3,9 @@ title: Formats de fichier pris en charge dans AEM Assets
 description: Liste des formats de fichier et des types MIME pris en charge par AEM Assets et des fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1708'
 ht-degree: 62%
 
 ---
@@ -307,6 +307,6 @@ Une liste de types MIME pris en charge est disponible en CRXDE Lite à l&#39;adr
 
 >[!MORELIKETHIS]
 >
->* [Activation de la prise en charge du paramètre de tâche de téléchargement Assets/Scene7 basé sur le type MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+>* [Activez la prise en charge](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) des paramètres de tâche de téléchargement de fichiers/Dynamic Media Classic basés sur le type MIME.
 >* [Configurez le type MIME en fonction de la prise en charge](config-dynamic.md) des paramètres de tâche de téléchargement.
 
