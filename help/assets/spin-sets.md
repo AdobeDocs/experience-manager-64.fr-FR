@@ -1,19 +1,15 @@
 ---
 title: Visionneuses à 360°
-seo-title: Visionneuses à 360°
-description: Découvrez comment travailler avec des visionneuses à 360° dans Dynamic Media.
-seo-description: Découvrez comment travailler avec des visionneuses à 360° dans Dynamic Media.
-uuid: a80a0491-6500-463a-83c4-ff4b90a88182
+description: Découvrez comment utiliser les visionneuses à 360° dans Dynamic Media. Une visionneuse à 360° simule la rotation réelle d’un objet pour l’examiner sous n’importe quel angle.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1838'
-ht-degree: 69%
+source-wordcount: '1843'
+ht-degree: 67%
 
 ---
 
