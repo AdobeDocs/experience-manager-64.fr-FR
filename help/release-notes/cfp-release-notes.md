@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques aux packs de correctifs cumulés
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '4217'
+source-wordcount: '4219'
 ht-degree: 13%
 
 ---
@@ -65,7 +65,7 @@ Adobe Experience Manager 6.4.8.3 fournit des correctifs pour les problèmes suiv
 
 * Dans les paramètres d’image prédéfinie, lorsque l’option [!UICONTROL Activer le sous-échantillonnage chromatique JPG] est désélectionnée dans [!DNL Experience Manager], la modification n’est pas synchronisée avec [!DNL Dynamic Media] (NPR-34284).
 * Dans l’[!UICONTROL éditeur de paramètres prédéfinis de la visionneuse], lors de la modification du paramètre prédéfini [!UICONTROL PanoramicImage/PanoramicImage_VR], dans le composant `PanoramicView`, l’étiquette de modificateur `PANORAMICVIEW_AUTOROTATE` n’est pas disponible (CQ-4302043).
-* L’annulation de la publication d’une vidéo à partir de [!DNL Experience Manager] n’annule pas la publication de la visionneuse de vidéos adaptative sur Scene7 configuré. (CQ-4304405).
+* L’annulation de la publication d’une vidéo à partir de [!DNL Experience Manager] n’annule pas la publication de la visionneuse de vidéos adaptative sur Dynamic Media Classic configuré. (CQ-4304405).
 
 ### Plate-forme {#platform-6483}
 
@@ -187,7 +187,7 @@ Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suiv
 
 * La fonctionnalité de recadrage dynamique échoue avec une erreur lorsque le profil d’image est ajouté à un dossier ayant plusieurs proportions (par exemple, 11) (NPR-34083).
 
-* Les modifications apportées aux paramètres d’image prédéfinis dans [!UICONTROL Adobe Experience Manager] ne sont pas synchronisées avec Scene7 Publishing System (NPR-34284, CQ-4299713).
+* Les modifications apportées aux paramètres d’image prédéfinis dans [!UICONTROL Adobe Experience Manager] ne sont pas synchronisées avec Dynamic Media Classic (NPR-34284, CQ-4299713).
 
 * L’étiquette de modificateur [!UICONTROL PANORAMICVIEW_AUTOROTATE] est absente de l’onglet [!UICONTROL Comportement] de la page [!UICONTROL Éditeur de paramètres prédéfinis de la visionneuse] (CQ-4302043).
 
