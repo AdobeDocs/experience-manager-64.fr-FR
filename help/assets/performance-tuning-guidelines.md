@@ -3,10 +3,10 @@ title: Guide de réglage des performances des ressources
 description: Traite principalement de la configuration d’AEM, ainsi que des modifications du matériel, des logiciels et des composants réseau pour supprimer les goulets d’étranglement et optimiser la performance d’AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '3202'
-ht-degree: 85%
+source-wordcount: '3206'
+ht-degree: 84%
 
 ---
 
@@ -165,7 +165,7 @@ Pour un volume élevé de workflows ou de workflows gourmands en ressources, tel
 
 ### Configuration des ressources de mise à jour de gestion des ressources numériques {#dam-update-asset-configuration}
 
-Le workflow Ressource de mise à jour de gestion des actifs numériques contient plusieurs étapes qui sont configurées pour les tâches, telles que la génération de PTIFF Scene7 et l’intégration du serveur InDesign. Cependant, plusieurs de ces étapes peuvent être inutiles à la plupart des utilisateurs. Adobe vous recommande de créer une copie personnalisée du modèle de workflow Ressource de mise à jour de gestion des actifs numériques, et de supprimer toutes les étapes inutiles. Dans ce cas, mettez à jour les lanceurs pour que les ressources de mise à jour de gestion des ressources numériques pointent vers le nouveau modèle.
+Le flux de travaux de mise à jour des actifs de gestion des actifs contient une suite complète d’étapes qui sont configurées pour les tâches, telles que la génération PTIFF Dynamic Media Classic et l’intégration des InDesigns Server. Cependant, plusieurs de ces étapes peuvent être inutiles à la plupart des utilisateurs. Adobe vous recommande de créer une copie personnalisée du modèle de workflow Ressource de mise à jour de gestion des actifs numériques, et de supprimer toutes les étapes inutiles. Dans ce cas, mettez à jour les lanceurs pour que les ressources de mise à jour de gestion des ressources numériques pointent vers le nouveau modèle.
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ Les clients utilisent des images de tailles et de formats différents sur leur s
 
 De nombreux clients de sites mettent en œuvre un servlet d’image qui redimensionne ou recadre les images lorsque cela est nécessaire, ce qui a pour effet d’appliquer une charge supplémentaire à l’instance de publication. Toutefois, tant que ces images peuvent être mises en cache, le défi peut être plus facilement relevé.
 
-Une autre méthode consiste à utiliser la technologie Scene7 pour transférer entièrement la manipulation de l’image. De plus, vous pouvez déployer le portail de marque qui prend en charge non seulement les responsabilités de génération de rendu de l’infrastructure AEM, mais également l’ensemble du niveau de publication.
+Une autre approche consiste à utiliser la technologie Dynamic Media Classic pour abandonner entièrement la manipulation d&#39;images. De plus, vous pouvez déployer le portail de marque qui prend en charge non seulement les responsabilités de génération de rendu de l’infrastructure AEM, mais également l’ensemble du niveau de publication.
 
 #### ImageMagick {#imagemagick}
 
