@@ -1,19 +1,15 @@
 ---
 title: Bonnes pratiques
-seo-title: Bonnes pratiques
-description: Découvrez les meilleures pratiques compilées par les équipes d’ingénierie et de conseil d’Adobe pour aider les administrateurs à être opérationnels.
-seo-description: Découvrez les meilleures pratiques compilées par les équipes d’ingénierie et de conseil d’Adobe pour aider les administrateurs à être opérationnels.
-uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
+description: Découvrez les meilleures pratiques de Adobe Experience Manager, compilées par les équipes d'ingénierie et de conseil en Adobe pour aider les administrateurs à se familiariser avec les nouvelles pratiques.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 91%
+source-wordcount: '537'
+ht-degree: 81%
 
 ---
 
@@ -52,8 +48,8 @@ Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Dyna
    <td>De nombreux profils de traitement basés sur des dossiers sous formes de vidéo, de métadonnées, de traitement d’image sont toujours appliquées aux dossiers. Ce document sur les meilleures pratiques décrit la procédure à suivre pour définir et configurer votre hiérarchie de dossiers. La hiérarchie a un impact considérable sur la manière dont le contenu est traité. </td> 
   </tr>
   <tr>
-   <td>Intégration de Scene7 avec AEM</td> 
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Meilleures pratiques pour intégrer Scene7 avec AEM</a></td> 
+   <td>Intégration de Dynamic Media Classic et d’AEM</td> 
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Meilleures pratiques pour l’intégration de Dynamic Media Classic avec AEM</a></td> 
    <td><p>Indique quand activer l’importateur d’interrogations, comment tester votre intégration et quand utiliser l’explorateur de contenu plutôt qu’un téléchargement direct dans les ressources.</p> </td> 
   </tr>
   <tr>
@@ -62,8 +58,8 @@ Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Dyna
    <td>Dans le cadre de la documentation sur <a href="/help/assets/managing-image-presets.md">la gestion des paramètres d’image prédéfinis</a>, ces rubriques décrivent ce que sont les paramètres d’image prédéfinis et les meilleures pratiques concernant les options des paramètres d’image prédéfinis.</td> 
   </tr>
   <tr>
-   <td>Dynamic Media par rapport à l’intégration directe avec Scene7</td> 
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Intégration de Scene7/AEM par rapport à Dynamic Media</a></td> 
+   <td>Dynamic Media versus intégration directe avec Dynamic Media Classic</td> 
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Intégration Dynamic Media Classic/AEM par rapport à Dynamic Media</a></td> 
    <td>Indique lorsqu’il est préférable d’utiliser la solution de Dynamic Media, lorsqu’il est préférable d’utiliser l’intégration S7 avec AEM ou lorsqu’il est préférable d’utiliser les deux.</td> 
   </tr>
  </tbody>
