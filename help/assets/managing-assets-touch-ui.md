@@ -4,9 +4,9 @@ description: Découvrez les différentes tâches de gestion et de modification d
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c86c84efeb25673490373273a9f4720381e46454
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '10031'
+source-wordcount: '10030'
 ht-degree: 66%
 
 ---
@@ -161,7 +161,7 @@ Dynamic Media permet le transfert par lots des ressources par le biais du serveu
 
    >[!NOTE]
    >
-   >Lorsque vous téléchargez des fichiers par FTP, les options de tâche de téléchargement que vous définissez dans Dynamic Media Classic (Scene7) ont un précédent par rapport aux paramètres de traitement des fichiers définis dans AEM.
+   >Lorsque vous téléchargez des fichiers par FTP, les options de tâche de téléchargement que vous définissez dans Dynamic Media Classic ont un précédent par rapport aux paramètres de traitement des fichiers définis dans AEM.
 
 1. Dans le coin inférieur droit de la boîte de dialogue **[!UICONTROL Télécharger les options de la tâche]**, appuyez sur **[!UICONTROL Enregistrer]**.
 1. Dans le coin inférieur droit de la page **[!UICONTROL Télécharger]**, appuyez sur **[!UICONTROL Envoyer le téléchargement]**.
