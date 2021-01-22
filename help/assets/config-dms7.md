@@ -1,24 +1,20 @@
 ---
 title: Configuration de Dynamic Media – mode Scene7
-seo-title: Configuration de Dynamic Media – mode Scene7
-description: Informations sur la manière de configurer Dynamic Media – mode Scene7.
-seo-description: Informations sur la manière de configurer Dynamic Media – mode Scene7.
-uuid: 81cc208b-e95d-4a01-9817-2b6d50cfe8b8
+description: Découvrez comment configurer le mode Dynamic Media - Scene7.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
 workflow-type: tm+mt
-source-wordcount: '5577'
-ht-degree: 72%
+source-wordcount: '5596'
+ht-degree: 68%
 
 ---
 
 
-# Configuration de Dynamic Media – mode Scene7  {#configuring-dynamic-media-scene-mode}
+# Configuration de Dynamic Media – mode Scene7 {#configuring-dynamic-media-scene-mode}
 
 Si Adobe Experience Manager est configuré dans des environnements différents, tels que le développement, l’évaluation et la production, vous devez configurer Dynamic Media Cloud Services pour chacun de ces environnements.
 
@@ -88,7 +84,7 @@ Pour configurer les Cloud Services Dynamic Media :
 
    >[!NOTE]
    >
-   >Une fois que vous avez reçu l’e-mail de mise en service avec les informations d’identification Dynamic Media, [connectez-vous](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) à Dynamic Media Classic pour modifier votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que le service cloud Dynamic Media soit configuré avec les informations d’identification correctes.
+   >Après avoir reçu votre courrier électronique de mise en service avec les informations d’identification Dynamic Media, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre compte de société pour modifier votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que le service cloud Dynamic Media soit configuré avec les informations d’identification correctes.
 
 1. Si la connexion est établie, vous pouvez également définir les éléments suivants :
 
@@ -109,7 +105,7 @@ Pour configurer les Cloud Services Dynamic Media :
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 1. Pour afficher l’aperçu du contenu Dynamic Media en toute sécurité avant qu’il ne soit modifié, vous aurez besoin de placer dans une liste autorisée l’instance d’auteur AEM à connecter à Dynamic Media :
 
-   * Connectez-vous à votre compte Dynamic Media Classic : [https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   * Ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre compte. Vos informations d’identification et de connexion ont été fournies par l’Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
    * Dans la barre de navigation située en haut à droite de la page, appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Image Server]**.
    * Sur la page Publication sur hébergeur d’images, dans la liste déroulante Contexte de publication, sélectionnez **[!UICONTROL Test de l’hébergeur d’images]**.
    * Pour l’option Filtre d’adresse client, appuyez sur **[!UICONTROL Ajouter]**.
@@ -133,7 +129,7 @@ Si vous souhaitez personnaliser davantage l’installation et la configuration d
 
 Lorsque vous êtes en mode d’exécution **dynamicmedia_scene7**, vous utilisez l’interface utilisateur Dynamic Media Classic (Scene7) pour apporter des modifications à vos paramètres Dynamic Media.
 
-Certaines des tâches ci-dessus nécessitent que vous vous connectiez à Dynamic Media Classic ici : [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+Certaines des tâches ci-dessus exigent que vous ouvriez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis que vous vous connectiez à votre compte.
 
 Les tâches de configuration et de configuration sont les suivantes :
 
@@ -189,7 +185,7 @@ La gestion des couleurs de Dynamic Media vous permet de corriger les couleurs d
 
 Pour configurer les propriétés de couleur par défaut afin d’activer la correction des couleurs lorsque vous demandez des images :
 
-1. [Connectez-vous à Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) à l’aide des informations d’identification fournies lors de la mise en service. Accédez à **[!UICONTROL Configuration > Configuration de l’application]**.
+1. Ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre compte à l’aide des informations d’identification fournies lors de la mise en service. Accédez à **[!UICONTROL Configuration > Configuration de l’application]**.
 1. Développez la zone **[!UICONTROL Configuration de la publication]** et sélectionnez **[!UICONTROL Image Server]**. Définissez **[!UICONTROL Contexte de publication]** sur **[!UICONTROL Imager Server]** lors de la définition des paramètres par défaut des instances de publication.
 1. Faites défiler l’écran jusqu’à la propriété que vous devez modifier, par exemple, une propriété de la zone **[!UICONTROL Attributs de gestion des couleurs.]**
 
@@ -319,9 +315,9 @@ Deux éléments sont disponibles pour la définition, **[!UICONTROL Correspondan
 
 **Pour configurer l’affectation de nom par défaut:**
 
-1. Connectez-vous à votre compte Dynamic Media Classic (Scene7) : [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre compte.
 
-   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   Vos informations d’identification et de connexion ont été fournies par l’Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
 1. Sur la barre de navigation située en haut de la page, appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres prédéfinis d’ensemble par lot > Affectation de nom par défaut].**
 1. Sélectionnez **[!UICONTROL Afficher le formulaire]** ou **[!UICONTROL Afficher le code]** pour indiquer le mode de visualisation et de saisie des informations sur chaque élément.
@@ -353,9 +349,9 @@ Vous pouvez utiliser la méthode de champ de formulaire pour définir un paramè
 
 **Pour créer un paramètre prédéfini d’ensemble par lot:**
 
-1. Connectez-vous à votre compte Dynamic Media Classic (Scene7) : [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre compte.
 
-   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   Vos informations d’identification et de connexion ont été fournies par l’Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
 1. Dans la barre de navigation située en haut de la page, appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres prédéfinis d’ensemble par lot > Paramètre prédéfini d’ensemble par lot].**
 
@@ -408,9 +404,9 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
 **Pour créer un paramètre prédéfini d’ensemble par lot pour la génération automatique d’une visionneuse à 360° en 2D:**
 
-1. Connectez-vous à votre compte Dynamic Media Classic (Scene7) : [https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html).
+1. Ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre compte.
 
-   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   Vos informations d’identification et de connexion ont été fournies par l’Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
 1. Dans la barre de navigation située en haut de la page, appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres prédéfinis d’ensemble par lot > Paramètre prédéfini d’ensemble par lot]**.
 
