@@ -1,19 +1,15 @@
 ---
 title: Application des paramètres prédéfinis de la visionneuse Dynamic Media
-seo-title: Application des paramètres prédéfinis de la visionneuse Dynamic Media
-description: Découvrez comment appliquer des paramètres prédéfinis de visionneuse dans Dynamic Media.
-seo-description: Découvrez comment appliquer des paramètres prédéfinis de visionneuse dans Dynamic Media.
-uuid: cebad000-2bda-4e62-a0d1-7155151daf6c
+description: Découvrez comment appliquer des paramètres prédéfinis de visionneuse, créés par votre administrateur, à un fichier dans Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 100%
+source-wordcount: '224'
+ht-degree: 92%
 
 ---
 
