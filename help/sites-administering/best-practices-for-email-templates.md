@@ -1,19 +1,15 @@
 ---
 title: Meilleures pratiques des modèles de courrier électronique
-seo-title: Meilleures pratiques des modèles de courrier électronique
-description: Découvrez les meilleures pratiques en matière de création de modèles de courrier électronique dans AEM.
-seo-description: Découvrez les meilleures pratiques en matière de création de modèles de courrier électronique dans AEM.
-uuid: 714090bd-a742-4004-a968-aebd8fd03e04
+description: Trouvez les meilleures pratiques en matière de conception de courrier électronique qui génèrent un modèle de campagne de messagerie bien développé à Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices, integration
-discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 46%
+source-wordcount: '1053'
+ht-degree: 43%
 
 ---
 
@@ -150,7 +146,7 @@ Tous ont un **en-tête**, un **pied de page** et une section **corps**. Sous la 
 | Texte et personnalisation | /libs/mcm/campaign/components/personalization |
 | Textimage | /libs/mcm/campaign/components/textimage |
 | Lien | /libs/mcm/campaign/components/reference |
-| Modèle d’image Scene7 | /libs/mcm/campaign/s7image |
+| Modèle d’image Dynamic Media Classic (anciennement Scene7) | /libs/mcm/campaign/s7image |
 | Référence ciblée | /libs/mcm/campaign/components/reference |
 
 >[!NOTE]
