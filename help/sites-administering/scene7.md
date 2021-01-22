@@ -1,26 +1,22 @@
 ---
-title: Intégration à Dynamic Media Classic (Scene7)
-seo-title: Intégration à Dynamic Media Classic (Scene7)
+title: Intégration à Dynamic Media Classic
 description: Découvrez comment intégrer AEM à Dynamic Media Classic.
-seo-description: Découvrez comment intégrer AEM à Dynamic Media Classic.
-uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '5491'
+source-wordcount: '5456'
 ht-degree: 21%
 
 ---
 
 
-# Intégration à Dynamic Media Classic (Scene7){#integrating-with-dynamic-media-classic-scene}
+# Intégration à Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
-[L’Adobe Dynamic Media ](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Classicis est une solution hébergée permettant de gérer, d’améliorer, de publier et de diffuser des ressources multimédias enrichies sur des écrans et des imprimantes Web, mobiles, électroniques et connectés à Internet.
+Adobe Dynamic Media Classic est une solution hébergée qui permet de gérer, d’améliorer, de publier et de diffuser des fichiers multimédias enrichis sur des écrans et des imprimantes Web, mobiles, électroniques et connectés à Internet.
 
 Pour utiliser Dynamic Media Classic, vous devez configurer la configuration du cloud afin que Dynamic Media Classic et AEM Assets puissent interagir entre eux. Ce document décrit comment configurer AEM et Dynamic Media Classic.
 
@@ -42,7 +38,7 @@ Les utilisateurs AEM ont le choix entre deux solutions pour utiliser les médias
 
 Utilisez les critères suivants pour déterminer la solution à sélectionner :
 
-* Si vous êtes un client **Dynamic Media Classic** existant dont les ressources multimédia riches résident dans Dynamic Media Classic pour publication et diffusion, mais que vous souhaitez intégrer ces ressources à la création et/ou à l’AEM Assets Sites (WCM) pour gestion, utilisez l’[intégration point à point ](#aem-scene-point-to-point-integration) &lt;a2/>AEM/Dynamic Media Classic &lt;a3/.
+* Si vous êtes un client **Dynamic Media Classic** existant dont les ressources multimédia riches résident dans Dynamic Media Classic pour publication et diffusion, mais que vous souhaitez intégrer ces ressources à la création et/ou à l’AEM Assets Sites (WCM) pour gestion, utilisez l’[intégration point à point ](#aem-scene-point-to-point-integration) AEM/Dynamic Media Classic &lt;a3/.
 
 * Si vous êtes un **nouveau** client d’AEM ayant des besoins de diffusion de contenu multimédia enrichi, sélectionnez l’option [Dynamic Media](#aem-dynamic-media). Cette option a plus de sens si vous ne disposez pas d’un compte S7 et que vous avez de nombreuses ressources stockées dans ce système.
 
@@ -363,7 +359,7 @@ Pour l’activer :
 
 ### Ajouter un délai d’attente configurable au flux de travail de transfert Dynamic Media Classic {#adding-configurable-timeout-to-scene-upload-workflow}
 
-Lorsqu’une instance AEM est configurée pour traiter le codage vidéo via Dynamic Media Classic (Scene7), par défaut, les tâches de téléchargement sont soumises à un délai d’expiration de 35 minutes. Pour pouvoir effectuer les tâches de codage vidéo potentiellement plus longues, vous pouvez configurer ce paramètre :
+Lorsqu’une instance AEM est configurée pour gérer le codage vidéo via Dynamic Media Classic, un délai d’attente de 35 minutes s’applique par défaut à toute tâche de téléchargement. Pour pouvoir effectuer les tâches de codage vidéo potentiellement plus longues, vous pouvez configurer ce paramètre :
 
 1. Accédez à **http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl**.
 
