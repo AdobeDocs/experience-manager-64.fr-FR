@@ -1,18 +1,18 @@
 ---
 title: Portail Forms| Gestion des données utilisateur
 seo-title: Portail Forms| Gestion des données utilisateur
-description: 'null'
-seo-description: 'null'
+description: Le portail AEM Forms fournit des composants que vous pouvez utiliser pour répertorier les formulaires adaptatifs, les formulaires HTML5 et d’autres ressources Forms sur la page Sites AEM. Découvrez comment Forms Portal stocke les données pour les formulaires préliminaires et envoyés. Découvrez comment accéder aux données des formulaires préliminaires et envoyés pour les utilisateurs connectés et anonymes dans les entrepôts de données configurés et, si nécessaire, supprimez-les.
+seo-description: Le portail AEM Forms fournit des composants que vous pouvez utiliser pour répertorier les formulaires adaptatifs, les formulaires HTML5 et d’autres ressources Forms sur la page Sites AEM. Découvrez comment Forms Portal stocke les données pour les formulaires préliminaires et envoyés. Découvrez comment accéder aux données des formulaires préliminaires et envoyés pour les utilisateurs connectés et anonymes dans les entrepôts de données configurés et, si nécessaire, supprimez-les.
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 72%
+source-wordcount: '980'
+ht-degree: 68%
 
 ---
 
