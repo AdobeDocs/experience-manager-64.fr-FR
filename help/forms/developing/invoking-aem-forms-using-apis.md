@@ -1,8 +1,8 @@
 ---
 title: Appel d’AEM Forms à l’aide d’API
 seo-title: Appel d’AEM Forms à l’aide d’API
-description: 'null'
-seo-description: 'null'
+description: 'Adobe Experience Manager Forms est un logiciel d’entreprise basé sur J2EE qui comprend des services qui fonctionnent au sein d’une infrastructure partagée. Découvrez comment utiliser des applications clientes pour appeler AEM Forms par programmation à l’aide d’une API Java, de services Web, d’une API Remoting et d’une API REST. '
+seo-description: Adobe Experience Manager Forms est un logiciel d’entreprise basé sur J2EE qui comprend des services qui fonctionnent au sein d’une infrastructure partagée. Découvrez comment utiliser des applications clientes pour appeler AEM Forms par programmation à l’aide d’une API Java, de services Web, d’une API Remoting et d’une API REST.
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
