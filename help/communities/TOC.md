@@ -2,26 +2,26 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide de l’utilisateur d’AEM 6.4 Communities
-breadcrumb-title: Guide Communities
+user-guide-title: Guide de l’utilisateur d’AEM 6.4 Communities
+breadcrumb-title: Guide de Communities
 user-guide-description: Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales.
 translation-type: tm+mt
-source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 30%
+source-wordcount: '506'
+ht-degree: 29%
 
 ---
 
 
-# Guide de l’utilisateur d’AEM 6.4 Communities  {#communities}
+# Guide de l’utilisateur d’AEM 6.4 Communities  {#communities}
 
 + [Présentation d’AEM Communities](home.md)
 + Introduction à l&#39;AEM Communities {#introduction}
    + [Sites des communautés](administer-landing.md)
    + [Présentation d’AEM Communities](overview.md)
    + [Nouveautés des communautés AEM 6.4](whats-new-aem-communities.md)
-   + [Notes de mise à jour d’AEM Communities](/help/release-notes/communities-release-notes.md)
+   + [Notes de mise à jour d’AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/communities-release-notes.html)
    + [Prise en main d’AEM Communities](getting-started.md)
    + [Prise en main d’AEM Communities pour l’activation](getting-started-enablement.md)
    + [Configuration initiale](setup.md)
@@ -39,7 +39,7 @@ ht-degree: 30%
    + [Configuration du répartiteur pour les communautés](dispatcher.md)
 + Administration {#administer}
    + [Service de gestion des utilisateurs et du contenu qu’ils génèrent dans AEM Communities](user-ugc-management-service.md)
-   + [Sites des communautés](administer-landing.md)
+   + [Sites des communautés](https://experienceleague.adobe.com/docs/experience-manager-64/communities/introduction/administer-landing.html)
    + [Consoles de communautés](consoles.md)
    + [Fonctionnalités de configuration d’Analytics pour les communautés](analytics.md)
    + [Fontionnalités Configuration de l’activation](enablement.md)
@@ -166,4 +166,5 @@ ht-degree: 30%
    + [Tendances d’activité](trends.md)
    + [Nuage de balises sociales](tagcloud.md)
    + [Utilisation du composant Vote](voting.md)
-   + [Créer un exemple de page](create-sample-page.md)
+   + [Créer un exemple de page](https://experienceleague.adobe.com/docs/experience-manager-64/communities/develop/create-sample-page.html)
+
