@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '4300'
-ht-degree: 79%
+source-wordcount: '4296'
+ht-degree: 78%
 
 ---
 
@@ -377,9 +377,9 @@ L’intégration revient simplement à supprimer la balise `IMG` et à la rempla
 
 Pour appliquer un recadrage à une image interactive pouvant faire l’objet d’un achat pour un environnement réactif, vous pouvez inclure l’attribut de configuration Image interactive `ZoomView.iscommand` au chemin d’accès, où `ZoomView` est le composant à appeler et `iscommand` est la commande de traitement de l’image de recadrage que vous appliquez.
 
-Voir l’attribut de configuration [ZoomView.iscommand](https://docs.adobe.com/content/help/fr/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
+Voir l’attribut de configuration [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
 
-Voir la commande de service d’images [crop](https://docs.adobe.com/content/help/fr/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html).
+Voir la commande de service d’images [crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html).
 
 Vous êtes désormais prêt à intégrer l’image interactive à un aperçu rapide existant de votre site web.
 
