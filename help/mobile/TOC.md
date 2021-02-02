@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide de l’utilisateur AEM 6.4 Mobile
+user-guide-title: Guide de l’utilisateur AEM 6.4 Mobile
 breadcrumb-title: Guide mobile
 user-guide-description: Créez et gérez du contenu pour les applications mobiles.
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 30%
+source-wordcount: '331'
+ht-degree: 29%
 
 ---
 
 
-# Guide de l’utilisateur AEM 6.4 Mobile  {#mobile}
+# Guide de l’utilisateur AEM 6.4 Mobile  {#mobile}
 
 + [Guide de l’utilisateur mobile](home.md)
 + Introduction à l&#39;AEM Mobile {#introduction}
@@ -82,7 +82,7 @@ ht-degree: 30%
    + [Modèles de page pour les applications mobiles](phonegap-apps-arch-page-templates.md)
    + [Configuration de l’Cloud Service Adobe Target](aem-mobile-configuring-cloud-service.md)
    + [des applications sur une seule page ;](phonegap-single-page-applications.md)
-   + [Modèles dans le référentiel](administer-mobile-apps.md)
+   + [Modèles dans le référentiel](https://experienceleague.adobe.com/docs/experience-manager-64/mobile/administering/administer-mobile-apps.html)
    + [Démarrage AEM PhoneGap](starting-aem-phonegap-app.md)
    + [Test des applications mobiles](develop-mobile-apps-testing.md)
    + [Structure d’une application](phonegap-structure-an-app.md)
