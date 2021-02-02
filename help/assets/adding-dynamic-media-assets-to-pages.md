@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '2829'
-ht-degree: 62%
+source-wordcount: '2825'
+ht-degree: 61%
 
 ---
 
@@ -188,8 +188,8 @@ modificateurs de visionneuseLes modificateurs de visionneuse prennent la forme d
 
    Avec les modificateurs de visionneuse, par exemple, vous pouvez effectuer les opérations suivantes :
 
-   * Associez un fichier de sous-titrage à une vidéo [caption.](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Associez un fichier de navigation à une vidéo [navigation.](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Associez un fichier de sous-titrage à une vidéo [caption.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Associez un fichier de navigation à une vidéo [navigation.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
 Vous pouvez modifier les [!UICONTROL Paramètres avancés] suivants en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
