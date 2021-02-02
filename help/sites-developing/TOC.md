@@ -3,19 +3,19 @@ cloud: experience-cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guide de l’utilisateur pour le développement dans AEM 6.4
+user-guide-title: Guide de l’utilisateur pour le développement dans AEM 6.4
 breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 88%
+source-wordcount: '885'
+ht-degree: 81%
 
 ---
 
 
-# Guide de l’utilisateur pour le développement dans AEM 6.4  {#developing}
+# Guide de l’utilisateur pour le développement dans AEM 6.4  {#developing}
 
 + [Présentation du guide de développement d’utilisateur](home.md)
 + Introduction pour les développeurs{#introduction}
@@ -73,13 +73,13 @@ ht-degree: 88%
       + [Développement avec SAP Commerce Cloud](sap-commerce-cloud.md)
 + Composants{#components}
    + [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-   + [Système de style](/help/sites-authoring/style-system.md)
+   + [Système de style](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/style-system.html)
    + [Aperçu des composants](components.md)
    + [Composants AEM – Principes de base](components-basics.md)
    + [Développement de composants AEM](developing-components.md)
    + [Développement de composants AEM – Échantillons de code](developing-components-samples.md)
    + [Exportateur JSON pour les services de contenu](json-exporter.md)
-   + [Activation de l’exportateur JSON pour un composant](json-exporter-components.md) 
+   + [Activation de l’exportateur JSON pour un composant](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html) 
    + [Éditeur d’image](image-editor.md)
    + [Balise décorative](decoration-tag.md)
    + [Utilisation de conditions de masquage](hide-conditions.md)
@@ -117,9 +117,9 @@ ht-degree: 88%
       + [Intégration de SPA et d’Adobe Experience Platform Launch](spa-launch.md)
       + [SPA et rendu côté serveur](spa-ssr.md)
       + [Documents de référence SPA](spa-reference-materials.md)
-   + API HTTP [ ](/help/assets/mac-api-assets.md)
-   + [Fragments de contenu](/help/assets/content-fragments.md)
-   + [Fragments d’expérience](/help/sites-authoring/experience-fragments.md)
+   + API HTTP [ ](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html)
+   + [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html)
+   + [Fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/experience-fragments.html)
    + [Présentation des fragments de contenu et de Content Services dans AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Outils de développement{#devtools}
    + [Outils de développement](dev-tools.md)
@@ -176,12 +176,12 @@ ht-degree: 88%
       + [Création de mises en correspondance de formulaires personnalisés](extending-campaign-form-mapping.md)
       + [Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign](extending-campaign-custom-template.md)
       + [Script d’analyse des requêtes](analyze-request.md)
-   + [Intégration de services à la console JMX](jmx-integration.md)
-   + [Développement de l’éditeur en masse](dev-bulk-editor.md)
+   + [Intégration de services à la console JMX](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/jmx-integration.html)
+   + [Développement de l’éditeur en masse](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/dev-bulk-editor.html)
    + Extension de l’interface utilisateur classique{#extending-classic-ui}
       + [Personnalisation de la console Sites web (IU classique)](customizing-siteadmin.md)
       + [Personnalisation de la console de bienvenue (IU classique)](customizing-the-welcome-console.md)
-      + [Élaboration de rapports](dev-reports.md)
+      + [Élaboration de rapports](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/dev-reports.html)
 + Tests{#testing}
    + [Planification](planning.md)
    + [Quels environnements de test seront nécessaires ?](test-environments.md)
@@ -194,10 +194,10 @@ ht-degree: 88%
    + [La prochaine version…](the-next-release.md)
    + [Listes de contrôle](checklists.md)
    + [Tough Day](tough-day.md)
-   + [Test de votre interface utilisateur](hobbes.md)
+   + [Test de votre interface utilisateur](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/hobbes.html)
 + Bonnes pratiques{#bestpractices}
    + [Présentation des meilleures pratiques](best-practices.md)
-   + [Lignes directrices AEM développement et bonnes pratiques](dev-guidelines-bestpractices.md)
+   + [Lignes directrices AEM développement et bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/dev-guidelines-bestpractices.html)
    + [Meilleures pratiques de développement](development-practices.md)
    + [Content Architecture](content-architecture.md)
    + [Architecture logicielle](software-architecture.md)
