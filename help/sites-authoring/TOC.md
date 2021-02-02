@@ -3,19 +3,19 @@ cloud: experience-cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.4
+user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.4
 breadcrumb-title: Guide de création
 user-guide-description: Découvrez les principaux concepts de création de contenu dans AEM.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 92%
+source-wordcount: '292'
+ht-degree: 88%
 
 ---
 
 
-# Guide de l’utilisateur pour la création dans AEM 6.4  {#authoring}
+# Guide de l’utilisateur pour la création dans AEM 6.4  {#authoring}
 
 + [Présentation du guide de l’utilisateur de création](home.md)
 + Tâches, outils et concepts essentiels pour la création AEM {#essentials}
@@ -72,9 +72,9 @@ ht-degree: 92%
    + [Utilisation des workflows](workflows.md)
    + [Application de workflows aux pages ](workflows-applying.md)
    + [Participation aux workflows](workflows-participating.md)
-   + [Utilisation des workflows de projet](projects-with-workflows.md)
+   + [Utilisation des workflows de projet](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/projects/projects-with-workflows.html)
 + Performances de la page {#page-performance}
-   + [Content Insight ](content-insights.md)
+   + [Content Insight ](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
    + [Analyse des performances de page](ci-analyze.md)
    + [Affichage des données d’analyse de page](pa-using.md)
    + [Ajout de fonctionnalités Search&amp;Promote à une page](search-and-promote.md)
