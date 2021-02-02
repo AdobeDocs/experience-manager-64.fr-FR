@@ -3,14 +3,14 @@ cloud: experience-cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guide de déploiement d’AEM 6.4
+user-guide-title: Guide de déploiement d’AEM 6.4
 breadcrumb-title: Guide de déploiement
-user-guide-description: En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4, y compris sur le déploiement cloud d’Adobe Managed Services.
+user-guide-description: En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4, y compris sur le déploiement cloud d’Adobe Managed Services.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 95%
+source-wordcount: '356'
+ht-degree: 93%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 95%
    + [Tâches de déchargement](offloading.md)
    + [Connexion unique](single-sign-on.md)
    + [Mappage de ressources](resource-mapping.md)
-   + [Activation de HTTP via SSL](/help/sites-administering/ssl-by-default.md)
+   + [Activation de HTTP via SSL](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/ssl-by-default.html)
    + [Vérifications transversales et contrôles de cohérence](consistency-check.md)
    + [Instructions de performance](performance-guidelines.md)
    + [Optimisation des performances](configuring-performance.md)
