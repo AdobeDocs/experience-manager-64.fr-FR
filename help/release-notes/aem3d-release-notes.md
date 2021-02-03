@@ -1,19 +1,15 @@
 ---
 title: Notes de mise à jour d’AEM 3D
-seo-title: Notes de mise à jour d’AEM 3D
 description: Notes de mise à jour spécifiques au contenu 3D dans Adobe Experience Manager Assets.
-seo-description: Notes de mise à jour spécifiques au contenu 3D dans Adobe Experience Manager Assets.
-uuid: 6675951f-86f0-4ec5-97e4-d247f6faf913
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes, 3D
 content-type: reference
-discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: 9710c9931b4f17073c712f5869a1843c1d99ee8e
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1983'
-ht-degree: 45%
+source-wordcount: '1966'
+ht-degree: 44%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 45%
 
 >[!IMPORTANT]
 >
->Le pack de fonctionnalités 3D AEM dans AEM 6.4 n’est plus pris en charge. L&#39;Adobe vous recommande d&#39;utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou version ultérieure.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>Le pack de fonctionnalités 3D AEM dans AEM 6.4 n’est plus pris en charge. L&#39;Adobe vous recommande d&#39;utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) ou [AEM 6.5.3 ou version ultérieure.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 aem-6.4-DynamicMedia-3D version 3.1.0 (10 octobre 2018)
 
