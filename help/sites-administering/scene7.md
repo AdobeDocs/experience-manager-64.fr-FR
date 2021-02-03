@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '5454'
+source-wordcount: '5440'
 ht-degree: 21%
 
 ---
@@ -422,7 +422,7 @@ Cependant, si vous ne souhaitez pas que les ressources transférées vers Dynami
 Avant de pouvoir transmettre des fichiers à Dynamic Media Classic sans les publier, vous devez configurer les éléments suivants :
 
 1. [Utilisez le Admin Console pour créer un dossier de support.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Dans votre cas d’assistance, demandez que la prévisualisation sécurisée soit activée pour votre compte Dynamic Media Classic.
-1. Suivez les instructions pour [configurer une prévisualisation sécurisée pour votre compte Dynamic Media Classic.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. Suivez les instructions pour [configurer une prévisualisation sécurisée pour votre compte Dynamic Media Classic.](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish)
 
 Il s’agit des mêmes étapes que celles que vous suivez pour créer une configuration de test sécurisée dans Dynamic Media Classic.
 
@@ -452,7 +452,7 @@ Pour définir l’état des ressources transférées vers Dynamic Media Classic 
 1. Appuyez sur l’icône AEM et accédez à **[!UICONTROL Déploiement > Cloud Services]**, appuyez sur **[!UICONTROL Dynamic Media Classic]** et sélectionnez votre configuration dans Dynamic Media Classic.
 1. Sélectionnez l&#39;onglet **[!UICONTROL Avancé.]** Dans le menu déroulant **[!UICONTROL Activer la Vue sécurisée]**, sélectionnez **[!UICONTROL A l’Activation de publication AEM]** pour envoyer les ressources à Dynamic Media Classic sans les publier. (Par défaut, cette valeur est définie sur **[!UICONTROL Immédiatement]**, où les ressources Dynamic Media Classic sont publiées immédiatement.)
 
-   Voir [Documentation de Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html) pour plus d’informations sur le test des ressources avant de les rendre publiques.
+   Voir [Documentation de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish) pour plus d’informations sur le test des ressources avant de les rendre publiques.
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
