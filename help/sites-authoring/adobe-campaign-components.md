@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '2779'
-ht-degree: 74%
+source-wordcount: '2786'
+ht-degree: 73%
 
 ---
 
@@ -180,13 +180,13 @@ L’exemple ci-dessous présente le composant Lien (Campaign) affiché.
 
 ### Modèle d’image Scene7 (Campaign) {#scene-image-template-campaign}
 
-[Les ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) modèles d’image Scene7 sont des fichiers d’image superposés où le contenu et les propriétés peuvent être paramétrés en fonction de la variabilité. Le composant **Modèle d’image** permet d’utiliser des modèles Scene7 dans des newsletters et de modifier les valeurs des paramètres de modèle. En outre, vous pouvez utiliser des variables de métadonnées Adobe Campaign à l’intérieur des paramètres, de sorte que chaque utilisateur expérimente l’image d’une manière personnalisée.
+[Les ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) modèles d’image Scene7 sont des fichiers d’image superposés où le contenu et les propriétés peuvent être paramétrés en fonction de la variabilité. Le composant **Modèle d’image** vous permet d’utiliser des modèles Dynamic Media Classic (anciennement Scene7) dans des bulletins d’information et de modifier les valeurs des paramètres de modèle. En outre, vous pouvez utiliser des variables de métadonnées Adobe Campaign à l’intérieur des paramètres, de sorte que chaque utilisateur expérimente l’image d’une manière personnalisée.
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
-Cliquez sur **Modifier** pour configurer le composant. Vous pouvez configurer les paramètres décrits dans cette section. Ce modèle d’image Scene7 est décrit en détail dans le composant [Modèle d’image Scene7](/help/assets/scene7.md#image-template).
+Cliquez sur **Modifier** pour configurer le composant. Vous pouvez configurer les paramètres décrits dans cette section. Ce modèle d’image Dynamic Media Classic (anciennement Scene7) est décrit en détail dans le [composant Modèle d’image Scene7](/help/assets/scene7.md#image-template).
 
-De plus, le panneau Paramètres répertorie tous les paramètres de modèle définis pour le modèle dans Scene7. Pour chacun de ces paramètres, vous pouvez personnaliser la valeur, insérer des variables ou rétablir leur valeur par défaut.
+En outre, le panneau de paramètres liste tous les paramètres de modèle définis pour le modèle dans Dynamic Media Classic (anciennement Scene7). Pour chacun de ces paramètres, vous pouvez personnaliser la valeur, insérer des variables ou rétablir leur valeur par défaut.
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
