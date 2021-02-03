@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 48%
+source-wordcount: '1683'
+ht-degree: 49%
 
 ---
 
@@ -21,7 +21,7 @@ Les ressources permettent une gestion centralisée des ressources vidéo dans la
 L’intégration vidéo Dynamic Media Classic étend la portée de la vidéo optimisée à tous les écrans (détection de périphériques et de bande passante automatique).
 
 * Le composant vidéo Dynamic Media Classic (Scene7) détecte automatiquement les périphériques et la bande passante afin de lire la vidéo au format et à la qualité appropriés sur les ordinateurs de bureau, tablettes et appareils mobiles.
-* Ressources - Vous pouvez inclure des ensembles de vidéos adaptables au lieu de contenus vidéo uniques. Un ensemble de vidéos adaptables est un conteneur de tous les rendus vidéo requis permettant de lire la vidéo sans heurt sur plusieurs écrans. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. Vous utilisez un ensemble de vidéos adaptables, accompagné d’un composant vidéo S7, pour la diffusion vidéo en continu adaptative sur plusieurs écrans, notamment des ordinateurs de bureau, des téléphones iOS, Android et Blackberry et des appareils mobiles Windows. Pour plus d’informations, voir [Documentation Scene7 sur les ensembles de vidéos adaptables](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
+* Ressources - Vous pouvez inclure des ensembles de vidéos adaptables au lieu de contenus vidéo uniques. Un ensemble de vidéos adaptables est un conteneur de tous les rendus vidéo requis permettant de lire la vidéo sans heurt sur plusieurs écrans. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. Vous utilisez un ensemble de vidéos adaptables, accompagné d’un composant vidéo S7, pour la diffusion vidéo en continu adaptative sur plusieurs écrans, notamment des ordinateurs de bureau, des téléphones iOS, Android et Blackberry et des appareils mobiles Windows. Pour plus d’informations, voir [Documentation Scene7 sur les ensembles de vidéos adaptables](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
 
 ## A propos de FFMPEG et de Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -62,7 +62,7 @@ Si vous avez besoin d’un worfklow ou d’une création de versions pour les re
 
 Si vous n’avez pas besoin d’un flux de travail ou d’un contrôle de version pour vos ressources, téléchargez-les vers Dynamic Media Classic. Vous trouverez ci-dessous le worfklow recommandé :
 
-1. Dans Dynamic Media Classic, [configurez un transfert et un codage FTP planifiés vers Dynamic Media Classic (système automatisé)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html).
+1. Dans Dynamic Media Classic, [configurez un transfert et un codage FTP planifiés vers Dynamic Media Classic (système automatisé)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 1. Dans AEM, accédez aux ressources vidéo dans WCM dans l’onglet **[!UICONTROL Dynamic Media Classic]** de l’outil de recherche de contenu.
 1. Auteur avec le composant vidéo Dynamic Media Classic.
 
@@ -81,7 +81,7 @@ Si vous n’avez pas besoin d’un flux de travail ou d’un contrôle de versio
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur la signification des paramètres vidéo prédéfinis, voir la [documentation Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html).
+   >Pour plus d’informations sur la signification des paramètres vidéo prédéfinis, voir la [documentation Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
    >Adobe recommande de sélectionner les deux ensembles de vidéos adaptables lors de la configuration des paramètres prédéfinis ou de sélectionner l’option **[!UICONTROL Codage vidéo adaptative]**.
 
@@ -104,7 +104,7 @@ Pour télécharger votre vidéo originale vers Dynamic Media Classic à partir d
    >
    >La génération des miniatures de vidéo peut prendre du temps.
 
-   Faire glisser la vidéo originale DAM sur le composant vidéo accède à *tous* des rendus proxy codés Dynamic Media Classic pour la diffusion.
+   Faire glisser la vidéo originale DAM sur le composant vidéo accède à *all* des rendus proxy codés Dynamic Media Classic pour la diffusion.
 
 ### Composant vidéo de base par rapport au composant vidéo de Dynamic Media Classic {#foundation-video-component-versus-scene-video-component}
 
