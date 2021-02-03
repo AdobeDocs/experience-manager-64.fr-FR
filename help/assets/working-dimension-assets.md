@@ -1,18 +1,14 @@
 ---
 title: Utilisation de ressources Adobe Dimension
-seo-title: Utilisation de ressources Adobe Dimension
 description: Utilisation de ressources Adobe Dimension dans AEM 3D.
-seo-description: Utilisation de ressources Adobe Dimension dans AEM 3D.
-uuid: 476e6758-b3a1-42ba-a18d-bfc407c6a72e
 contentOwner: Rick Brough
 topic-tags: 3D
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
-discoiquuid: 4a601c2a-4ea1-4308-8ae8-704155f63c21
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '496'
 ht-degree: 1%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Le pack de fonctionnalités 3D AEM dans AEM 6.4 n’est plus pris en charge. Adobe vous recommande d&#39;utiliser la fonction des actifs 3D dans [AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou supérieur.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) lorsque vous utilisez des ressources Adobe Dimension.
+>Le pack de fonctionnalités 3D AEM dans AEM 6.4 n’est plus pris en charge. Adobe vous recommande d&#39;utiliser la fonction des actifs 3D dans [AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) ou [AEM 6.5.3 ou supérieur.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) lorsque vous utilisez des ressources Adobe Dimension.
 
 Le pack de fonctionnalités 3D AEM fournit la prise en charge des fichiers Adobe Dimension (`.dn` fichiers) dans AEM Assets, AEM Sites et AEM Screens.
 
