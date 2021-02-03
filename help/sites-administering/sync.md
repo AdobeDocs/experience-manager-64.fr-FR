@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
+source-git-commit: 770e435f41102b2d795c88cbb361de510564d319
 workflow-type: tm+mt
 source-wordcount: '2502'
 ht-degree: 75%
@@ -170,7 +170,7 @@ Une fois qu’un utilisateur autorisé, membre du groupe **`administrators`**uti
    * accédez à la [console Web](/help/sites-deploying/configuring-osgi.md)
 
       * par exemple, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
-   * localiser `Adobe Granite Distribution - Encrypted Password Transport Secret Provider`
+   * localiser `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * sélectionnez la configuration existante à ouvrir pour modification (icône de crayon)
 
       Vérifier `property name` : **`socialpubsync-publishUser`**
