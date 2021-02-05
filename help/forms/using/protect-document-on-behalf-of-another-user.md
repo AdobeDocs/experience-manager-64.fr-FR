@@ -1,16 +1,16 @@
 ---
 title: Protection d’un document au nom d’un autre utilisateur
 seo-title: Protection d’un document au nom d’un autre utilisateur
-description: 'null'
-seo-description: 'null'
+description: Découvrez comment utiliser les API pour protéger un document pour le compte d’un autre utilisateur sans disposer des autorisations nécessaires pour modifier le document.
+seo-description: Découvrez comment utiliser les API pour protéger un document pour le compte d’un autre utilisateur sans disposer des autorisations nécessaires pour modifier le document.
 uuid: 76f4b30b-6d0c-4cae-98b3-334efdbf27bb
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 95%
+source-wordcount: '414'
+ht-degree: 84%
 
 ---
 
