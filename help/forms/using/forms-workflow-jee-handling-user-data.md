@@ -1,17 +1,17 @@
 ---
 title: Flux de travail AEM Forms JEE | Gestion des données utilisateur
 seo-title: Flux de travail AEM Forms JEE | Gestion des données utilisateur
-description: 'null'
-seo-description: 'null'
+description: Les workflows AEM Forms JEE fournissent des outils pour concevoir, créer et gérer des processus d’entreprise. Découvrez comment accéder aux données utilisateur et les supprimer, identifier les ID d’instance de processus lorsque l’initiateur ou le participant du processus est connu, identifier les ID d’instance de processus lorsque les données utilisateur sont stockées dans des variables primitives, purger les données utilisateur des instances de processus en fonction des ID d’instance de processus et travailler avec des tâches orphelines.
+seo-description: Les workflows AEM Forms JEE fournissent des outils pour concevoir, créer et gérer des processus d’entreprise. Découvrez comment accéder aux données utilisateur et les supprimer, identifier les ID d’instance de processus lorsque l’initiateur ou le participant du processus est connu, identifier les ID d’instance de processus lorsque les données utilisateur sont stockées dans des variables primitives, purger les données utilisateur des instances de processus en fonction des ID d’instance de processus et travailler avec des tâches orphelines.
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 70%
+source-wordcount: '1493'
+ht-degree: 64%
 
 ---
 
