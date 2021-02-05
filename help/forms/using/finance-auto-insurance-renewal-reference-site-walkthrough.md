@@ -1,17 +1,17 @@
 ---
 title: Présentation du site de référence de renouvellement de l’assurance automobile We.Finance
 seo-title: Présentation du site de référence de renouvellement de l’assurance automobile We.Finance
-description: 'null'
-seo-description: 'null'
+description: Consultez la présentation détaillée du site de référence du cas d'utilisation de l'assurance auto de We.Finance qui montre comment AEM formulaires et son intégration à Microsoft Dynamics permettent de personnaliser l'expérience client dans une société de service financier.
+seo-description: Consultez la présentation détaillée du site de référence du cas d'utilisation de l'assurance auto de We.Finance qui montre comment AEM formulaires et son intégration à Microsoft Dynamics permettent de personnaliser l'expérience client dans une société de service financier.
 uuid: 18676ab4-9f8d-4014-b751-2a722fd152da
 contentOwner: dekalra
 topic-tags: introduction
 discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 34%
+source-wordcount: '821'
+ht-degree: 31%
 
 ---
 
