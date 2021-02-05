@@ -1,17 +1,17 @@
 ---
 title: Intégration à Adobe Sign | Gestion des données utilisateur
 seo-title: Intégration à Adobe Sign | Gestion des données utilisateur
-description: 'null'
-seo-description: 'null'
+description: AEM Forms s’intègre à Adobe Sign pour autoriser les processus de signature électronique dans les formulaires adaptatifs pour traiter des formulaires ou des contrats pour les flux de travail juridiques, commerciaux, de rémunération et de gestion des ressources humaines. Analysez plus précisément les données utilisateur, les entrepôts de données, ainsi que l’accès et la suppression des données utilisateur.
+seo-description: AEM Forms s’intègre à Adobe Sign pour autoriser les processus de signature électronique dans les formulaires adaptatifs pour traiter des formulaires ou des contrats pour les flux de travail juridiques, commerciaux, de rémunération et de gestion des ressources humaines. Analysez plus précisément les données utilisateur, les entrepôts de données, ainsi que l’accès et la suppression des données utilisateur.
 uuid: cb3a455d-2e33-44c8-8f71-3a7ecd939cd8
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 89%
+source-wordcount: '409'
+ht-degree: 84%
 
 ---
 
