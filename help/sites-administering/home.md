@@ -1,6 +1,6 @@
 ---
-title: Guide de l’utilisateur pour l’administration dans AEM 6.4
-seo-title: Guide de l’utilisateur pour l’administration dans AEM 6.4
+title: Guide de l’utilisateur pour l’administration dans AEM 6.4
+seo-title: Guide de l’utilisateur pour l’administration dans AEM 6.4
 description: aem Administration
 seo-description: aem Administration
 translation-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 42%
 ---
 
 
-# Guide de l’utilisateur pour l’administration dans AEM 6.4
+# Guide de l’utilisateur pour l’administration dans AEM 6.4
 
 Ce guide couvre toutes les tâches d&#39;administration AEM.
 
