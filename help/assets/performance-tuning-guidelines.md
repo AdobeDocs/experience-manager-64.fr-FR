@@ -129,7 +129,7 @@ Dans la mesure du possible, définissez le workflow Ressource de mise à jour de
 1. Ouvrez `http://localhost:4502/miscadmin` sur l&#39;instance AEM que vous souhaitez configurer.
 
 1. Dans l’arborescence de navigation, développez **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]** > **[!UICONTROL dam]**.
-1. Double-cliquez sur **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**.
+1. Double-cliquez sur **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]** (DAM).
 1. Depuis le panneau d’outils flottant, basculez vers l’onglet **[!UICONTROL Page]**, puis cliquez sur **[!UICONTROL Propriétés de la page]**.
 1. Sélectionnez **[!UICONTROL Processus transitoire]**, puis cliquez sur **[!UICONTROL OK]**.
 
