@@ -1263,7 +1263,7 @@ Ce composant permet de créer un champ masqué. Ceux-ci peuvent être utilisés 
 >
 >Voir [Affichage et masquage de composants de formulaire](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
-### Bouton Image {#image-button}
+### Bouton Image  {#image-button}
 
 Un bouton d’image permet de créer un bouton comportant vos texte et image :
 
