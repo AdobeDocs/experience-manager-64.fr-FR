@@ -147,11 +147,11 @@ Sous l’onglet **[!UICONTROL Paramètres de tri]**, spécifiez le mode de tri d
 
 * **[!UICONTROL Champ de tri]**
 
-   Appuyez sur la touche `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed` ou `Most Liked` pour sélectionner l’un des &lt;a0/>.
+   Appuyez sur la touche `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed` ou `Most Liked` pour sélectionner l’un des .
 
 * **[!UICONTROL Ordre de tri]**
 
-   Appuyez sur la touche `Ascending` ou `Descending` pour sélectionner l’un des &lt;a0/>.
+   Appuyez sur la touche `Ascending` ou `Descending` pour sélectionner l’un des .
 
 ### Modification d’un type de commentaire personnalisé {#changing-to-a-custom-comment-type}
 
