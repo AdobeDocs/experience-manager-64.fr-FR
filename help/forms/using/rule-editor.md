@@ -122,7 +122,7 @@ Par exemple, une liste comporte quatre options : Rouge, Bleu, Vert et Jaune. Lo
 
 ![multivaluefcdisplaysoptions](assets/multivaluefcdisplaysoptions.png)
 
-Lorsque vous écrivez une règle Lorsque, vous pouvez déclencher l’action Effacer la valeur de. L’action Effacer la valeur de efface la valeur de l’objet spécifié. L’option Clear Value of (Effacer la valeur de) de l’instruction When permet de créer des conditions complexes avec plusieurs champs.
+Lorsque vous écrivez une règle Lorsque, vous pouvez déclencher l’action Effacer la valeur de. L’action Effacer la valeur de efface la valeur de l’objet spécifié. L’option Clear Value of (Effacer la valeur de) de l’instruction Lorsque permet de créer des conditions complexes avec plusieurs champs.
 
 ![claivalueof](assets/clearvalueof.png)
 
