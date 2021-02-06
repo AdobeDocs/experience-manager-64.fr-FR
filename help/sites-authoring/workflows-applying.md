@@ -42,6 +42,7 @@ Vous pouvez démarrer les workflows :
 >
 >* [Application de workflows à des ressources de gestion des ressources numériques](/help/assets/assets-workflow.md).
 >* [Utilisation des workflows de projet](/help/sites-authoring/projects-with-workflows.md).
+
 >
 
 
@@ -108,7 +109,6 @@ Vous pouvez spécifier les détails du workflow :
    * **Titre de module**
 
       * Vous pouvez spécifier un titre pour le module, pour faciliter son identification.
-
    >[!NOTE]
    >
    >L’option **Conserver le module de workflow** est disponible lorsque le workflow a été configuré pour la prise en charge multi-ressource et que plusieurs ressources ont été sélectionnées.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
