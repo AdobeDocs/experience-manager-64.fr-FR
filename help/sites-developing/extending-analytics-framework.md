@@ -110,7 +110,7 @@ Utilisez la procédure suivante pour ajouter des variables à la liste :
 
 >[!CAUTION]
 >
->Certaines variables de cette liste sont **obligatoires** pour que les appels Adobe Analytics fonctionnent correctement (ex. **currencyCode**, **charSet**)
+>Certaines des variables de cette liste sont **mandatory** pour que les appels Adobe Analytics fonctionnent correctement (ex. **currencyCode**, **charSet**)
 >
 >Ainsi, même s’ils sont supprimés du cadre lui-même, ils seront toujours attachés avec une valeur par défaut lorsque l’appel Adobe Analytics est effectué.
 
