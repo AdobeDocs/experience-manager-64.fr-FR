@@ -226,7 +226,7 @@ L&#39;AEM Demo Machine requiert une licence AEM valide.
 
 * Visitez [Déploiement de communautés](deploy-communities.md) pour en savoir plus sur les déploiements recommandés.
 
-* Visitez [Administration des sites des communautés](administer-landing.md) pour en savoir plus sur la création d&#39;un site communautaire, l&#39;ajout de groupes communautaires, la configuration des modèles de site communautaire, la modération du contenu communautaire, la gestion des membres, le balisage, les notifications, la notation et les badges.
+* Visitez [Administration des sites des communautés](administer-landing.md) pour en savoir plus sur la création d&#39;un site communautaire, l&#39;ajout de groupes communautaires, la configuration de modèles de site communautaire, la modération du contenu communautaire, la gestion des membres, le balisage, les notifications, la notation et les badges.
 
 * Visitez [Communautés en développement](communities.md) pour en savoir plus sur le cadre des composants sociaux (SCF) et sur la personnalisation des composants et fonctionnalités des communautés.
 
