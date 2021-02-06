@@ -78,7 +78,7 @@ Les classes principales sont décrites sur la page [Personnalisation côté serv
 
 Visitez [Présentation du fournisseur de ressources d’Enregistrement](srp.md) pour en savoir plus sur l’utilisation de l’UGC.
 
-### API HTTP  {#http-api}
+### API HTTP {#http-api}
 
 L’API HTTP facilite la personnalisation et le choix des plates-formes clientes pour les applications PhoneGap, les applications natives, ainsi que d’autres intégrations et applications hybrides. De plus, l&#39;API HTTP permet à un site communautaire de s&#39;exécuter en tant que service sans client, de sorte que les composants de la structure puissent être intégrés à n&#39;importe quelle page Web construite sur n&#39;importe quelle technologie.
 
