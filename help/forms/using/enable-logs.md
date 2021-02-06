@@ -101,7 +101,7 @@ La configuration du journal comprend le niveau et la catégorie de journalisatio
    <td>ERROR<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>1</td> 
+   <td>3</td> 
    <td>WARN<br type="_moz" /> </td> 
   </tr> 
   <tr> 
