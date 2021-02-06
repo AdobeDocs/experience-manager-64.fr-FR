@@ -26,7 +26,7 @@ ht-degree: 81%
 
 ## Présentation {#introduction}
 
-aem 6.4.3.0 introduit la prise en charge des Admin Console pour les instances AEM et l’authentification basée sur l’Adobe IMS(Identity Management System) pour les **clients &lt;a0/>AEM Managed Services**.
+aem 6.4.3.0 introduit la prise en charge des Admin Console pour les instances AEM et l’authentification basée sur l’Adobe IMS(Identity Management System) pour les **clients AEM Managed Services**.
 
 L’intégration d’AEM à l’Admin Console permettra aux clients AEM Managed Services de gérer tous les utilisateurs d’Experience Cloud dans une seule console. Les utilisateurs et les groupes peuvent être affectés à des profils de produits associés à des instances AEM, ce qui leur permet de se connecter à une instance spécifique.
 
