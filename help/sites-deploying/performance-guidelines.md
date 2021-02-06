@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 949ec23eb548a094425622d68e1dbf4f6ec7581f
 workflow-type: tm+mt
 source-wordcount: '2993'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
@@ -242,7 +242,7 @@ Les options de déploiement disponibles pour l’AEM (faites défiler jusqu’à
    <td><p> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>application de bureau</p> </td> 
+   <td><p>Appli de bureau </p> </td> 
    <td><p> </p> </td> 
    <td><p> </p> </td> 
    <td><p> </p> </td> 
