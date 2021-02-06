@@ -162,7 +162,7 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
    ![customer_details_static_text_fdm](assets/customer_details_static_text_fdm.png)
 
 1. Placez le curseur en regard du champ **Numéro mobile** et cliquez sur la propriété **client** > **mobilenum** en cliquant sur le doublon.
-1. Placez le curseur en regard du champ **Autre numéro de contact** et cliquez sur la propriété **client** > **autre numéro de contact&lt;a1/> en appuyant sur le doublon.**
+1. Placez le curseur en regard du champ **Autre numéro de contact** et cliquez sur la propriété **client** > **autre numéro de contact** en appuyant sur le doublon.
 1. Placez le curseur en regard du champ **Numéro de relation** et cliquez sur la propriété **client** > **numéro de relation** en cliquant sur le doublon.
 1. Sélectionnez l&#39;onglet **Variables**, placez le curseur en regard du champ **Lieu d&#39;approvisionnement** et cliquez sur la variable **Fourniture** en appuyant sur le doublon.
 1. Placez le curseur en regard du champ **Code d’état** et cliquez sur la variable **Code d’état** en maintenant le doublon enfoncé.
