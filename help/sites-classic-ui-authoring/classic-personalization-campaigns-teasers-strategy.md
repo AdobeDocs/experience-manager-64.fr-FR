@@ -141,7 +141,7 @@ qui sont calculés avant d’appliquer la stratégie appropriée :
   </tr> 
   <tr> 
    <td>C1</td> 
-   <td>T1</td> 
+   <td>T3</td> 
    <td>S1, S2</td> 
    <td>Commerce, Marketing</td> 
    <td>Oui</td> 
