@@ -1,6 +1,6 @@
 ---
-title: Guide de l’utilisateur pour la gestion dans AEM 6.4
-seo-title: Guide de l’utilisateur pour la gestion dans AEM 6.4
+title: Guide de l’utilisateur pour la gestion dans AEM 6.4
+seo-title: Guide de l’utilisateur pour la gestion dans AEM 6.4
 description: 'Ce guide explique comment gérer un projet AEM avec succès '
 seo-description: 'Permet de gérer un projet AEM avec succès. '
 translation-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 40%
 ---
 
 
-# Guide de l’utilisateur pour la gestion dans AEM 6.4
+# Guide de l’utilisateur pour la gestion dans AEM 6.4
 
 Ce guide explique comment gérer un projet AEM avec succès
 
