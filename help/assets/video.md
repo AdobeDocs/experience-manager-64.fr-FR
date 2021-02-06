@@ -423,7 +423,7 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
    <td><p>Codée</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codée</p> </td> 
