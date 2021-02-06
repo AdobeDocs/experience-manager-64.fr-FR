@@ -744,7 +744,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
  </thead> 
  <tbody>
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>L’utilisateur accède à un site Web et spécifie un nom d’utilisateur et un mot de passe. Ces informations sont envoyées à un serveur d’applications J2EE hébergeant AEM Forms.</p></td> 
   </tr> 
   <tr> 
@@ -870,7 +870,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
  </thead> 
  <tbody>
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>Une application cliente demande à AEM Forms d’effectuer une opération de synchronisation.</p></td> 
   </tr> 
   <tr> 
@@ -878,7 +878,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
    <td><p>AEM Forms effectue une opération de synchronisation.</p></td> 
   </tr> 
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>Les informations utilisateur sont mises à jour.</p></td> 
   </tr> 
   <tr> 
