@@ -1,5 +1,5 @@
 ---
-title: Guide de Forms Adobe Experience Manager 6.4
+title: Guide de Forms Adobe Experience Manager 6.4
 seo-title: Guide de Forms AEM 6.4
 description: Ce guide couvre toutes les tâches AEM Forms, y compris la création, la gestion, la publication et la mise à jour de formulaires numériques.
 seo-description: couvre toutes les tâches AEM Forms, y compris la création, la gestion, la publication et la mise à jour de formulaires numériques.
@@ -12,7 +12,7 @@ ht-degree: 37%
 ---
 
 
-# Guide de Forms Adobe Experience Manager 6.4
+# Guide de Forms Adobe Experience Manager 6.4
 
 Ce guide couvre toutes les tâches AEM Forms, y compris la création, la gestion, la publication et la mise à jour de formulaires numériques.
 
