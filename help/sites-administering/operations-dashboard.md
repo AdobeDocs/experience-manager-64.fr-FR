@@ -702,7 +702,7 @@ Le **Tableau de bord d&#39;aperçu du système** présente un aperçu général 
 
 >[!NOTE]
 >
->Vous pouvez également [regarder cette vidéo](https://video.tv.adobe.com/v/21340?captions=fre_fr) pour découvrir le Tableau de bord d&#39;aperçu du système.
+>Vous pouvez également [regarder cette vidéo](https://video.tv.adobe.com/v/21340) pour découvrir le Tableau de bord d&#39;aperçu du système.
 
 ### Accès {#how-to-access}
 
