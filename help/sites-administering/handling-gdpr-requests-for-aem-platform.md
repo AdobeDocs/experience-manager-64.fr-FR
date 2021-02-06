@@ -41,7 +41,7 @@ Au niveau AEM Foundation, les données personnelles stockées sont le Profil uti
 
    ![userprofile_small](assets/userprofile_small.png)
 
-### API HTTP  {#http-api}
+### API HTTP {#http-api}
 
 Comme mentionné, Adobe fournit des API pour accéder aux données utilisateur, afin de faciliter l’automatisation. Il existe plusieurs types d’API que vous pouvez utiliser :
 
@@ -108,7 +108,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
-### API HTTP  {#http-api-1}
+### API HTTP {#http-api-1}
 
 Les procédures suivantes utilisent l’outil de ligne de commande `curl` pour illustrer comment désactiver l’utilisateur **[!UICONTROL cavery]** `userId` et supprimer ses profils disponibles à l’emplacement par défaut.
 
