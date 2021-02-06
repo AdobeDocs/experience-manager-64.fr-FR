@@ -251,7 +251,7 @@ Instructions d&#39;installation - Notez les quelques différences pour Solr4 et 
       * Pour Solr4 : Copier *rép_installation_solr*/exemple/solr/collection1/conf/&amp;ast;
       * Pour Solr5 : Copier *rép_installation_solr*/server/solr/configsets/data_led_schéma_configs/&amp;ast;
    1. Copiez **schéma.xml** et **solrconfig.xml** extraits dans *new-config-dir* pour remplacer les fichiers existants.
-   1. Pour Solr5 : Copiez *rép_installation_solr*/server/solr/configsets/sample_techproducts_configs/conf/lang/&amp;ast;.txt&quot; dans *nouveau-config-dir*/lang/&lt;a3/>/lang/
+   1. Pour Solr5 : Copiez *rép_installation_solr*/server/solr/configsets/sample_techproducts_configs/conf/lang/&amp;ast;.txt&quot; dans *nouveau-config-dir*/lang//lang/
    1. Copiez le dossier **stopwords/** extrait dans *new-config-dir*, ce qui entraîne *new-config-dir*/stopwords/&amp;ast;.txt
 
 
