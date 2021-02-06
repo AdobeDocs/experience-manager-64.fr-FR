@@ -1,6 +1,6 @@
 ---
-title: Guide de l’utilisateur d’AEM 6.4 Communities
-seo-title: Guide de l’utilisateur d’AEM 6.4 Communities
+title: Guide de l’utilisateur d’AEM 6.4 Communities
+seo-title: Guide de l’utilisateur d’AEM 6.4 Communities
 description: Ce guide couvre toutes les tâches AEM Communities, telles que la création d’expériences en ligne, telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales.
 seo-description: couvre toutes les tâches AEM Communities, telles que la création d’expériences en ligne, telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales.
 translation-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 36%
 ---
 
 
-# Guide de l’utilisateur d’AEM 6.4 Communities
+# Guide de l’utilisateur d’AEM 6.4 Communities
 
 Ce guide couvre toutes les tâches AEM Communities, telles que la création d’expériences en ligne, telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales.
 
