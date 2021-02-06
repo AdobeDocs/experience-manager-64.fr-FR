@@ -1,6 +1,6 @@
 ---
-title: Guide de l’utilisateur pour le développement dans AEM 6.4
-seo-title: Guide de l’utilisateur pour le développement dans AEM 6.4
+title: Guide de l’utilisateur pour le développement dans AEM 6.4
+seo-title: Guide de l’utilisateur pour le développement dans AEM 6.4
 description: Ce guide explique comment créer votre instance AEM.
 seo-description: Décrit comment créer votre instance AEM.
 translation-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 45%
 ---
 
 
-# Guide de l’utilisateur pour le développement dans AEM 6.4
+# Guide de l’utilisateur pour le développement dans AEM 6.4
 
 Ce guide explique comment créer votre instance AEM.
 
