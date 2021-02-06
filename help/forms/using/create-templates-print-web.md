@@ -241,7 +241,7 @@ Exécutez les étapes suivantes pour créer un modèle pour le canal web dans le
    | summarycharges | Récapitulatif des frais | 2 |
    | itemisedcalls | Appels détaillés | 3 |
    | PayNow | Payez maintenant | 2 |
-   | vas | Services à valeur ajoutée | 1 |
+   | vas | Services à valeur ajoutée | 3 |
 
    L’image suivante illustre l’arborescence de contenu après l’ajout de tous les panneaux au modèle :
 
