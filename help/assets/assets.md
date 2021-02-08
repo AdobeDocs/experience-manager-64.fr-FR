@@ -3,9 +3,9 @@ title: Présentation de  [!DNL Adobe Experience Manager Assets]
 description: Découvrez ce qu’est la gestion des actifs numériques, ses cas d’utilisation et  [!DNL Adobe Experience Manager Asset] l’offre.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1958018f055b288db02baca55f5c2f503c377806
+source-git-commit: 02bf967a829be22ebec90d03ef1397cbe93e3d92
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '851'
 ht-degree: 30%
 
 ---
@@ -93,3 +93,8 @@ Vous pouvez bien sûr aussi appliquer des workflows manuellement. Voir [Gestionn
 ## [!DNL Experience Manager Assets] et [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
 Voir [Ressources et bibliothèque de médias](medialibrary.md) pour plus d’informations sur les différences.
+
+>[!MORELIKETHIS]
+>
+>* [Experience Manager Assets en tant que DAM moderne](https://www.youtube.com/embed/PBwQqZgC-yo)
+
