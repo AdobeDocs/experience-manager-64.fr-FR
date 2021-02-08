@@ -1,57 +1,51 @@
 ---
-title: A propos de AEM Assets
-description: Découvrez ce qu’est la gestion d’actifs numériques, ses cas d’utilisation et l’offre d’actifs AEM Adobe.
+title: Présentation de  [!DNL Adobe Experience Manager Assets]
+description: Découvrez ce qu’est la gestion des actifs numériques, ses cas d’utilisation et  [!DNL Adobe Experience Manager Asset] l’offre.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 077cc39c5ed47371a4e3fae1e991209c7bfe6b80
+source-git-commit: 1958018f055b288db02baca55f5c2f503c377806
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 51%
+source-wordcount: '840'
+ht-degree: 30%
 
 ---
 
 
-# À propos de AEM Assets {#about-assets}
+# À propos de [!DNL Adobe Experience Manager Assets] en tant que solution DAM {#about-assets}
 
-Assets est un outil de gestion des actifs numériques (DAM) entièrement intégré à la plateforme AEM et qui permet à votre entreprise de partager et de distribuer des actifs numériques. Les utilisateurs au sein d’une organisation peuvent gérer, stocker et accéder à des images, des vidéos, des documents, des clips audio et des fichiers multimédias enrichis, tels que des fichiers Flash, en vue de les utiliser sur le web, les imprimer et effectuer une distribution numérique.
+[!DNL Assets] est un outil de gestion des actifs numériques (DAM) qui fait partie intégrante de la  [!DNL Experience Manager] plate-forme et permet à votre entreprise de gérer et de distribuer des actifs numériques. Les utilisateurs d’une organisation peuvent gérer, stocker et accéder à de nombreux types de ressources numériques, tels que des images, des vidéos, des documents, des clips audio, des fichiers 3D et des médias enrichis, qui peuvent être utilisés sur le Web, sur papier et pour la distribution numérique.
 
-## Qu’est-ce que la gestion des actifs numériques (DAM) ? {#what-is-digital-asset-management}
+## Qu’est-ce que la gestion des ressources numériques ? {#what-is-digital-asset-management}
 
-Les ressources permettent le partage et la distribution des ressources numériques principales d’une organisation dans toute l’entreprise. Les utilisateurs d’une organisation peuvent stocker, gérer et accéder à des ressources numériques telles que des images, des graphiques, de l’audio, de la vidéo et des documents via une interface Web (ou un dossier CIFS ou WebDAV).
+[!DNL Assets] permet le partage et la distribution à l’échelle de l’entreprise des principaux actifs numériques d’une organisation. Les utilisateurs d’une organisation peuvent stocker, gérer et accéder à des ressources numériques telles que des images, des graphiques, de l’audio, de la vidéo et des documents via une interface Web (ou un dossier CIFS ou WebDAV).
 
-AME Assets, entièrement intégré dans AEM, vous permet d’effectuer les opérations suivantes :
+[!DNL Assets] permet d’ [!DNL Experience Manager] effectuer les opérations suivantes :
 
 * Ajouter et partager des images, des documents, ainsi que des fichiers audio et vidéo dans divers formats.
-* Gérer les ressources en les regroupant par balises, mosaïques ou étoiles (vos favoris). Annoter les ressources.
+* Gérez les ressources en les regroupant par balises, cadre lumineux ou étoiles (vos favoris). Annoter les ressources.
 * Rechercher des ressources en recherchant des noms de fichier, le texte intégral des documents et en recherchant les dates, le type de document et les balises.
 * Ajouter ou modifier des informations sur les métadonnées pour les ressources. Les métadonnées sont automatiquement versionnées avec la ressource correspondante. Vous pouvez importer ou exporter des métadonnées de ressources.
 * Exercer des fonctions de retouche d’images, telles que la mise à l’échelle et l’ajout de filtres d’image. Importer et exporter simultanément des ressources numériques multiples à l’aide d’un dossier WebDAV ou CIFS.
 * Utiliser les workflows et les notifications pour permettre le traitement et le téléchargement communs de n’importe quel groupe de ressources et gérer les droits d’accès aux ressources.
 
-### AEM Assets est complètement intégré aux fonctionnalités de gestion de contenu Web de AEM {#aem-assets-fully-integrated-in-cq-wcm}
+### [!DNL Experience Manager Assets] est intégré à  [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
 
-AEM Assets est entièrement intégré à la gestion du contenu web CQ, et la fonctionnalité est disponible via l’icône DAM :
+[!DNL Assets] s&#39;intègre complètement avec  [!DNL Sites] et fonctionne de façon transparente pour tous les cas d&#39;utilisation. Par exemple, lors de la création de pages Web, les auteurs [!DNL Sites] peuvent rechercher et utiliser les ressources numériques via l’outil de recherche de contenu. L&#39;interface utilisateur de [!DNL Assets] est identique à celle de [!DNL Sites]. Voir [présentation des sites](/help/sites-authoring/qg-page-authoring.md) pour plus de détails.
 
-<!-- TBD: Update image for branding -->
+<!-- TBD: Update image for branding 
 
-![screen_shot_2012-04-17at15946](assets/screen_shot_2012-04-17at15946pm.png) ![pmscreen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
+![screen_shot_2012-04-17at15946pm](assets/screen_shot_2012-04-17at15946pm.png) ![screen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
 
-Les ressources gérées dans la gestion des actifs numériques CQ sont ensuite accessibles via l’outil de recherche de contenu de la gestion du contenu web :
+Assets managed within [!DNL Experience Manager] DAM can then be accessed via the content finder of WCM:
 
-<!-- TBD: Update image for branding -->
-
-![screen_shot_2012-04-17at20214pm](assets/screen_shot_2012-04-17at20214pm.png)
-
->[!NOTE]
->
->La navigation de base de l&#39;interface utilisateur est la même que le reste de l&#39;AEM : voir [Présentation de la console graphique ](/help/sites-authoring/qg-page-authoring.md) pour plus de détails.
+![screen_shot_2012-04-17at20214pm](assets/screen_shot_2012-04-17at20214pm.png) -->
 
 ### Gestion des actifs numériques par rapport au composant Image {#digital-asset-management-versus-image-component}
 
-Lorsque vous décidez de placer une image en AEM Assets ou d’utiliser le composant Image, tenez compte du cycle de vie de l’image :
+Lorsque vous décidez de placer une image dans le référentiel DAM ou d’utiliser le composant d’image, tenez compte du cycle de vie des images :
 
 * Si l’image a le même cycle de vie que la page, utilisez le composant Image.
-* Si l’image a un cycle de vie distinct, par exemple, si vous utilisez l’image deux fois ou en dehors de la gestion de contenu web, utilisez AEM Assets.
+* Si l’image a un cycle de vie distinct, par exemple, si vous utilisez l’image deux fois ou en dehors de la gestion de contenu web, utilisez [!DNL Assets].
 
 ## Que sont les ressources numériques ? {#what-are-digital-assets}
 
@@ -61,41 +55,41 @@ Une ressource se compose principalement de données binaires + métadonnées + r
 
 >[!CAUTION]
 >
->Le transfert et/ou la modification d’une grande quantité de ressources (en particulier des images) peuvent avoir une incidence sur les performances de votre instance CQ.
+>Le téléchargement et/ou la modification d’un volume important de ressources (en particulier des images) peut avoir un impact sur les performances de votre déploiement [!DNL Experience Manager].
 
-### Terminologie AEM Assets {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] terminologie  {#aem-assets-terminology}
 
-Lorsque vous travaillez avec des ressources numériques dans AEM, vous devez connaître la terminologie suivante :
+Lorsque vous utilisez des ressources numériques dans [!DNL Experience Manager], vous devez comprendre la terminologie suivante :
 
-* **Collection :** collection de fichiers, basée sur l’emplacement physique (dossier), les propriétés communes (dossier de recherche enregistré) ou la sélection d’utilisateurs (dossiers de cadre lumineux).
+* **Collection** : Collection de ressources, basée sur l’emplacement physique (dossier), les propriétés courantes (dossier de recherche enregistré) ou la sélection d’utilisateurs (dossiers de cadre lumineux).
 
-* **Métadonnées :** les ressources comportent des métadonnées ; par exemple, auteur, date d’expiration, informations DRM (Digital Rights Management), etc. Les métadonnées sont sous contrôle d’accès. AEM Assets prend en charge les schémas de métadonnées communs suivants :
+* **** [!DNL Assets] les métadonnées ont des métadonnées ; par exemple, auteur, date d’expiration, informations DRM (Digital Rights Management), etc. Les métadonnées sont sous contrôle d’accès. [!DNL Assets] prend en charge les schémas de métadonnées communs suivants :
 
-   * **Dublin Core** : y compris l’auteur, la description, la date, l’objet, etc.
-   * **IPTC** : y compris le événement, le modèle, l’emplacement, etc.
-   * **WCM** : notamment les propriétés de page, les heures d’ouverture et de fermeture, etc.
+   * Dublin Core : notamment l’auteur, la description, la date, l’objet, etc.
+   * IPTC : notamment l’événement, le modèle, l’emplacement, etc.
+   * WCM : y compris les propriétés de page, [!UICONTROL Heure d’activation] et [!UICONTROL Heure d’activation], etc.
 
-* **Balisage :** les ressources peuvent être balisées et classifiées. Voir Utilisation des balises et Administration des balises.
+* **Balisage** :  [!DNL Assets] peuvent être balisés et classifiés. Voir [organisation des ressources](/help/assets/organize-assets.md).
 
-* **Rendus :** un rendu est la représentation binaire d’une ressource. Une ressource possède toujours une représentation principale, à savoir celle du fichier téléchargé. Elle peut en avoir d’autres qui sont créées par des étapes de workflow personnalisées ou lors du téléchargement de la ressource, par exemple. Les rendus peuvent avoir différentes tailles, différentes résolutions et un filigrane ou d’autres caractéristiques modifiées.
+* **Rendus** : Un rendu est la représentation binaire d’une ressource. [!DNL Assets] toujours avoir une Principale représentation - celle du fichier téléchargé. Elle peut en avoir d’autres qui sont créées par des étapes de workflow personnalisées ou lors du téléchargement de la ressource, par exemple. Les rendus peuvent avoir différentes tailles, différentes résolutions et un filigrane ou d’autres caractéristiques modifiées.
 
-* **Versions:** Versioning crée un instantané des ressources numériques à un moment précis. Vous pouvez restaurer la version précédente des ressources. Voir [versioning en AEM Assets](managing-assets-touch-ui.md#asset-versioning).
+* **Versions** : Le contrôle de version crée un instantané des ressources numériques à un moment donné. Vous pouvez restaurer la version précédente des ressources. Voir [versioning dans [!DNL Assets]](managing-assets-touch-ui.md#asset-versioning).
 
-* **Sous-ressources :** Les sous-ressources sont des ressources qui constituent un actif, par exemple, les calques d’un fichier Adobe Photoshop ou les pages d’un fichier PDF. Dans AEM Assets, vous pouvez gérer les sous-ressources comme les ressources.
+* **Sous-ressources** : Les sous-ressources sont des ressources qui constituent un actif, par exemple, les calques d’un  [!DNL Adobe Photoshop] fichier ou les pages d’un fichier PDF. Dans [!DNL Assets], vous pouvez gérer les sous-ressources comme vous le feriez pour les ressources.
 
-### Utilisation des ressources {#how-to-work-with-assets}
+### Utilisation des ressources numériques {#how-to-work-with-assets}
 
-Vous effectuez une action sur une ressource ou une collection. Les actions peuvent créer ou modifier des ressources, des collections et des rendus. La plupart des actions de base que vous effectuez sur les ressources - transfert, suppression, mise à jour, enregistrement des sous-actifs - déclenchent des workflows préconfigurés. Ils sont automatiquement activés dans AEM Assets et sont décrits en détail dans les gestionnaires de médias AEM Assets.
+Vous effectuez une action sur une ressource ou une collection. Les actions peuvent créer ou modifier des ressources, des collections et des rendus. La plupart des actions de base que vous effectuez sur les ressources (téléchargement, suppression, mise à jour, enregistrement de sous-ressources) déclenchent des workflows préconfigurés. Ils sont automatiquement activés dans [!DNL Assets] et sont décrits en détail dans les gestionnaires de médias [!DNL Assets].
 
-Les tâches que vous pouvez exécuter avec ces workflows préconfigurés :
+Tâches que vous pouvez exécuter avec ces workflows préconfigurés :
 
 * Enregistrez la ressource dans le référentiel ou supprimez-la.
 * Extraire et enregistrer les métadonnées de la ressource ; les éléments de métadonnées individuels sont enregistrés en tant que XMP.
 * Générer des rendus et des miniatures pour la ressource ; y compris le redimensionnement et le recadrage automatiques si nécessaire.
-* Transcodez le fichier si nécessaire. Par exemple, la vidéo destinée aux utilisateurs mobiles et Web est transcodée avec 24 images par seconde, la vidéo téléchargée avec 30 images par seconde. Un fichier audio pour utilisation sur appareils mobiles et sur le web est transcodé avec 128 Kbits/s et téléchargé avec 192 Kbits/s.
+* Transcodez le fichier si nécessaire. Par exemple, la vidéo destinée aux utilisateurs mobiles et Web est transcodée avec 24 images par seconde, la vidéo téléchargée avec 30 images par seconde. L’audio pour l’utilisation mobile et Web est transcodé avec 128 Kbits/s, l’audio pour le téléchargement avec 192 Kbits/s.
 
-Vous pouvez bien sûr aussi appliquer des workflows manuellement. Voir [Gestionnaires de médias AEM Assets](media-handlers.md) pour obtenir une liste des workflows par défaut.
+Vous pouvez bien sûr aussi appliquer des workflows manuellement. Voir [Gestionnaires de médias Assets](media-handlers.md) pour obtenir une liste des workflows par défaut.
 
-## aem DAM et AEM MediaLibrary {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] et [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Voir [AEM DAM et AEM MediaLibrary](medialibrary.md) pour plus d’informations sur les différences.
+Voir [Ressources et bibliothèque de médias](medialibrary.md) pour plus d’informations sur les différences.
