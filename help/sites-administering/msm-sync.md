@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 translation-type: tm+mt
-source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
+source-git-commit: 38c713b2c5aa93805b10bbb60c0dbdfa24872eb1
 workflow-type: tm+mt
-source-wordcount: '2671'
-ht-degree: 80%
+source-wordcount: '2705'
+ht-degree: 79%
 
 ---
 
@@ -29,7 +29,11 @@ Procédez comme suit pour contrôler la façon dont les Live Copies sont synchro
 
 Cette section contient des informations sur les configurations du déploiement installées et les actions de synchronisation qu’elles utilisent, ainsi que sur la création de configurations personnalisées, si nécessaire.
 
-### Déclencheurs de déploiement  {#rollout-triggers}
+>[!CAUTION]
+>
+>Il n&#39;est pas recommandé de mettre à jour ou de modifier une configuration de déploiement prête à l&#39;emploi (installée) **mais**. Si une action active personnalisée est requise, elle doit être ajoutée dans une configuration de déploiement personnalisée.
+
+### Déclencheurs de déploiement {#rollout-triggers}
 
 Chaque configuration du déploiement utilise un déclencheur qui entraîne la survenue du déploiement. Il peut s’agir de l’un des déclencheurs suivants :
 
