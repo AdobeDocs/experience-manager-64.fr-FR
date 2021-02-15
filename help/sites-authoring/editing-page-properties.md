@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: c66c28f138618d6f36c55f8b498f7d2a23732b83
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 89%
+source-wordcount: '1774'
+ht-degree: 84%
 
 ---
 
@@ -51,6 +51,15 @@ Les propriétés sont réparties sur plusieurs onglets.
 * **Masquer dans la navigation**
 
    Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
+
+* **Valorisation de marque**
+
+   Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant une limace de marque à chaque titre de page. Cette fonctionnalité nécessite l&#39;utilisation du composant de page de la version 2.14.0 ou ultérieure des [composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
+
+   * **Remplacer**  : cochez la case pour définir la ligne-bloc de marque sur cette page.
+      * La valeur sera héritée par toutes les pages enfants à moins que leurs valeurs **Override** ne soient également définies.
+   * **Remplacer la valeur**  : texte de la ligne-bloc de marque à ajouter au titre de la page.
+      * La valeur est ajoutée au titre de la page après un caractère barre verticale tel que &quot;Cycling Toscany&quot;. | Toujours prêt pour le WKND&quot;
 
 * **Titre de la page**
 
@@ -149,7 +158,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    Indiquez une configuration d’exportation.
 
-### Miniature   {#thumbnail}
+### Miniature  {#thumbnail}
 
 1. **Miniature de page**
 
@@ -180,7 +189,7 @@ Définit la variation de fragment d’expérience utilisée pour générer les m
 
    Définissez les propriétés des [services cloud](/help/sites-developing/extending-cloud-config.md).
 
-### Personnalisation   {#personalization}
+### Personnalisation  {#personalization}
 
 * **Personnalisation**
 
