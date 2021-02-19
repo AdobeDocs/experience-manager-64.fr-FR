@@ -7,7 +7,7 @@ user-guide-title: Guide de l’utilisateur pour le développement dans AEM 6.4
 breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 translation-type: tm+mt
-source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
+source-git-commit: 5a9cdf29ca7331cdae5c0905b20a76f7124f3dd4
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 81%
@@ -15,11 +15,11 @@ ht-degree: 81%
 ---
 
 
-# Guide de l’utilisateur pour le développement dans AEM 6.4  {#developing}
+# Guide de l’utilisateur pour le développement dans AEM 6.4 {#developing}
 
 + [Présentation du guide de développement d’utilisateur](home.md)
 + Introduction pour les développeurs{#introduction}
-   + [Prise en main du développement d’AEM Sites – Tutoriel WKND](getting-started.md)
+   + [Prise en main du développement d’AEM Sites – Tutoriel WKND](getting-started.md)
    + [Concepts de base d’AEM](the-basics.md)
    + [Structure de l’interface utilisateur tactile d’AEM](touch-ui-structure.md)
    + [Concepts de l’interface utilisateur (IU) tactile d’AEM](touch-ui-concepts.md)
@@ -49,12 +49,12 @@ ht-degree: 81%
    + [Conventions de dénomination](naming-conventions.md)
    + [Création d’un composant de champ d’IU Granite](granite-ui-component.md)
    + Query Builder{#query-builder}
-      + [Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder.](implementing-custom-predicate-evaluator.md)
+      + [Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder](implementing-custom-predicate-evaluator.md)
       + [Référence des prédicats de Query Builder](querybuilder-predicate-reference.md)
       + [API Query Builder](querybuilder-api.md)
    + Balisage{#tagging}
       + [Balisage](tags.md)
-      + [Infrastructure de balisage AEM](framework.md)
+      + [Cadre de balisage AEM](framework.md)
       + [Création du balisage dans une application AEM](building.md)
    + [Personnalisation des pages affichées par le gestionnaire d’erreurs](customizing-errorhandler-pages.md)
    + [Types de nœuds personnalisés](custom-nodetypes.md)
@@ -79,7 +79,7 @@ ht-degree: 81%
    + [Développement de composants AEM](developing-components.md)
    + [Développement de composants AEM – Échantillons de code](developing-components-samples.md)
    + [Exportateur JSON pour les services de contenu](json-exporter.md)
-   + [Activation de l’exportateur JSON pour un composant](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html) 
+   + [Activation de l’exportateur JSON pour un composant](json-exporter-components.md) 
    + [Éditeur d’image](image-editor.md)
    + [Balise décorative](decoration-tag.md)
    + [Utilisation de conditions de masquage](hide-conditions.md)
@@ -98,9 +98,9 @@ ht-degree: 81%
       + [Utilisation et extension de widgets (IU classique)](widgets.md)
       + [Utilisation de xtypes (IU classique)](xtypes.md)
       + [Développement de formulaires (IU classique)](developing-forms.md)
-+ Gestion de l’expérience sans tête{#headless}
++ Gestion de l’expérience découplée{#headless}
    + [Sans affichage et hybride avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [Activation de l’exportateur JSON pour un composant](json-exporter-components.md) 
+   + [Activation de l’exportateur JSON pour un composant](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html) 
    + Applications sur une seule page{#spas}
       + [Introduction et présentation des SPA](spa-walkthrough.md)
       + [Tutoriel sur SPA WKND](spa-wknd.md)
@@ -115,7 +115,7 @@ ht-degree: 81%
       + [Mappage du modèle dynamique avec les composants pour les SPA](spa-dynamic-model-to-component-mapping.md)
       + [Routage du modèle de SPA ](spa-routing.md)
       + [Intégration de SPA et d’Adobe Experience Platform Launch](spa-launch.md)
-      + [SPA et rendu côté serveur](spa-ssr.md)
+      + [SPA et rendu côté serveur ](spa-ssr.md)
       + [Documents de référence SPA](spa-reference-materials.md)
    + API HTTP [ ](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html)
    + [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html)
@@ -136,7 +136,7 @@ ht-degree: 81%
    + [Extension AEM Brackets](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [Outil AEM Repo](aem-repo-tool.md)
-+ Personnalisation {#personlization}
++ Personnalisation{#personlization}
    + [ContextHub](contexthub.md)
    + [Guide de référence pour l’API JavaScript ContextHub](contexthub-api.md)
    + [Extension de ContextHub](ch-extend.md)
