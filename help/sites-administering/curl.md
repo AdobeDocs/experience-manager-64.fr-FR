@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 translation-type: tm+mt
-source-git-commit: f12b12fa80d9b3fa6890aee3d0609b7513f072c6
+source-git-commit: 3fafd4dff6e3cde5e31ef0db797e49c5c64f47af
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 78%
@@ -24,7 +24,7 @@ Les administrateurs ont souvent besoin d’automatiser ou de simplifier des tâc
 
 En raison de la nature RESTful de la structure Sling sur laquelle l’AEM est créée, la plupart des tâches peuvent être effectuées avec un appel d’URL. cURL peut être utilisé pour exécuter ce type d’appel d’adresse URL et peut s’avérer un outil utile pour les administrateurs AEM.
 
-## Qu’est-ce que cURL ?  {#what-is-curl}
+## Qu’est-ce que cURL ? {#what-is-curl}
 
 cURL est un outil de ligne de commande Open Source utilisé pour manipuler des adresses URL. Il prend en charge un large éventail de protocoles Internet, notamment HTTP, HTTPS, FTP, FTPS, SCP, TFTP, LDAP, DAP, DICT, TELNET, FILE, IMAP, POP3, SMTP et RTSP.
 
@@ -219,7 +219,7 @@ curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/group
 
 Voir [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup) pour plus de détails.
 
-### les lots OSGi {#osgi}
+### OSGi {#osgi}
 
 #### Démarrage d’un lot {#starting-a-bundle}
 
@@ -252,8 +252,8 @@ curl -H "CQ-Action: Deactivate" -H "CQ-Handle: /content/test-site/" -H "CQ-Path:
 #### Contrôle de l’état d’un agent {#check-the-status-of-an-agent}
 
 ```shell
-curl -u <user>:<password> "http://localhost:4502/etc/replication/agents.author/publish/jcr:conten t.queue.json?agent=publish"
-http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on?agent=publish
+curl -u <user>:<password> "http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json?agent=publish"
+http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json?agent=publish
 ```
 
 #### Suppression d’un agent {#delete-an-agent}
@@ -271,13 +271,13 @@ curl -u <user>:<password> -F "jcr:primaryType=cq:Page" -F "jcr:content/jcr:title
 #### Suspension d’un agent {#pause-an-agent}
 
 ```shell
-curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
+curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json
 ```
 
 #### Effacement d’une file d’attente d’agent {#clear-an-agent-queue}
 
 ```shell
-curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
+curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json
 ```
 
 ### Communities {#communities}
