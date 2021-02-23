@@ -3,9 +3,9 @@ title: Partager des dossiers AEM Assets avec un Creative Cloud
 description: Configuration et bonnes pratiques pour permettre aux utilisateurs de Adobe Experience Manager Assets d’échanger des dossiers de ressources avec les utilisateurs de Adobe Creative Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1061'
 ht-degree: 44%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 44%
 
 >[!CAUTION]
 >
->La fonction de partage de dossiers entre AEM et Creative Cloud est obsolète. L’Adobe recommande vivement d’utiliser des fonctionnalités plus récentes, telles que [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou [AEM application de bureau](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html). En savoir plus sur les [meilleures pratiques d&#39;intégration AEM et Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La fonction de partage de dossiers entre AEM et Creative Cloud est obsolète. L’Adobe recommande vivement d’utiliser des fonctionnalités plus récentes, telles que [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) ou [AEM application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr). En savoir plus sur les [meilleures pratiques d&#39;intégration AEM et Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 Adobe Experience Manager (AEM) peut être configuré pour permettre aux utilisateurs de AEM Assets de partager des dossiers avec des utilisateurs Creative Cloud, de sorte qu’ils soient disponibles sous forme de dossiers partagés dans le service Creative Cloud Assets. La fonction peut être utilisée pour échanger des fichiers entre les équipes créatives et les utilisateurs AEM Assets, surtout si les créatifs n’ont pas accès à l’instance AEM Assets (ils ne se trouvent pas sur le réseau de l’entreprise).
 
@@ -30,7 +30,7 @@ Ce type d’intégration peut être utilisé dans les deux cas d’utilisation, 
 
 ## Présentation {#overview}
 
-aem au partage de dossiers Creative Cloud repose sur le partage côté serveur de dossiers et de fichiers entre les comptes AEM Assets et les comptes Creative Cloud. Les professionnels de la création, qui utilisent l’application de bureau Creative Cloud sur leurs ordinateurs de bureau, peuvent en outre rendre les dossiers partagés disponibles directement sur leurs disques à l’aide de la technologie Adobe CreativeSync.
+AEM au partage de dossiers Creative Cloud repose sur le partage côté serveur de dossiers et de fichiers entre les comptes AEM Assets et les comptes Creative Cloud. Les professionnels de la création, qui utilisent l’application de bureau Creative Cloud sur leurs ordinateurs de bureau, peuvent en outre rendre les dossiers partagés disponibles directement sur leurs disques à l’aide de la technologie Adobe CreativeSync.
 
 Le diagramme suivant offre une vue d’ensemble du processus d’intégration.
 
