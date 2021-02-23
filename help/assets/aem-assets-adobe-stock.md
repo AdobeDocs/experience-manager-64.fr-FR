@@ -3,10 +3,10 @@ title: Gérer les ressources [!DNL Adobe Stock]  dans [!DNL Adobe Experience Man
 description: Rechercher, récupérer, gérer les licences et gérer les ressources [!DNL Adobe Stock]  dans [!DNL Adobe Experience Manager]. Utiliser les ressources sous licence comme toute autre ressource numérique.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 798fe016f1a1e27cdbb9737709d1f5ea9ef722c9
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 86%
+source-wordcount: '1114'
+ht-degree: 85%
 
 ---
 
@@ -29,7 +29,7 @@ Pour permettre à [!DNL Experience Manager] et [!DNL Adobe Stock] de communiquer
 >
 >Seuls les administrateurs d’[!DNL Experience Manager] et d’[!DNL Admin Console] d’une entreprise peuvent procéder à l’intégration, dans la mesure où elle requiert des privilèges d’administrateur.
 
-### Création d’une configuration d’IMS   {#create-an-ims-configuration}
+### Création d’une configuration d’IMS {#create-an-ims-configuration}
 
 1. Dans [!DNL Experience Manager] l&#39;interface utilisateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations IMS d&#39;Adobe]**. Cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Solution cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Réutilisez un certificat existant ou sélectionnez **[!UICONTROL Créer un certificat]**.
@@ -122,7 +122,7 @@ Les utilisateurs peuvent afficher les propriétés de toutes les ressources, ave
 
 >[!MORELIKETHIS]
 >
->* [Tutoriel visuel sur l’utilisation de ressources Adobe Stock avec Experience Manager Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
->* [Aide d’Adobe Stock pour entreprise](https://helpx.adobe.com/fr/enterprise/using/adobe-stock-enterprise.html)
+>* [Tutoriel visuel sur l’utilisation de ressources Adobe Stock avec Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=fr)
+>* [Aide d’Adobe Stock pour entreprise](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
 >* [FAQ d’Adobe Stock](https://helpx.adobe.com/fr/stock/faq.html)
 
