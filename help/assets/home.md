@@ -3,10 +3,10 @@ title: Guide d’Assets
 description: Ce guide couvre toutes les tâches AEM Assets, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 user-guide-title: Guide d’Assets
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 24%
+source-wordcount: '317'
+ht-degree: 29%
 
 ---
 
@@ -17,12 +17,11 @@ Ce guide couvre toutes les tâches AEM Assets, telles que la création, la gesti
 
 ## Principaux articles AEM
 
-* [Prise en main d’AEM](https://helpx.adobe.com/fr/experience-manager/get-started.html)
-* [Notes de mise à jour d’AEM 6.4](/help/release-notes/home.md)
-* [Mises à jour récentes de la documentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
-* [Liste de contrôle de la sécurité AEM](/help/sites-administering/security-checklist.md)
+* [Notes de mise à jour d’AEM 6.4](/help/release-notes/home.md)
+* [Dernières mises à jour de la documentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=fr)
+* [Liste de contrôle de sécurité AEM](/help/sites-administering/security-checklist.md)
 
-## aem 6.4 guides d’utilisation
+## AEM 6.4 guides d’utilisation
 
 | Guide de l’utilisateur | Description |
 |--- |---|
@@ -41,11 +40,11 @@ Ce guide couvre toutes les tâches AEM Assets, telles que la création, la gesti
 
 ## Principales ressources AEM
 
-* [aem didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM didacticiels](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Guide de l&#39;utilisateur du répartiteur](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
-* [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
-* [Guide de l’utilisateur des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
+* [Guide de l’utilisateur des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [Forum de la communauté AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
