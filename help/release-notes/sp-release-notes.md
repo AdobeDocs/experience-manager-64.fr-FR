@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: a2808c1861b6853b5e9505ad189f296f7ebd2572
 workflow-type: tm+mt
-source-wordcount: '21617'
+source-wordcount: '21579'
 ht-degree: 25%
 
 ---
@@ -26,11 +26,11 @@ ht-degree: 25%
 | Version | 6.4.8.0 |
 | Type | Version du Service Pack |
 | Date | 5 mars 2020 |
-| URL de téléchargement | aem 6.4.8.0 sur [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| URL de téléchargement | AEM 6.4.8.0 sur [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Fonctionnalités présentes dans AEM 6.4.8.0 {#what-s-included-in-aem}
 
-aem 6.4.8.0 est une mise à jour importante qui comprend de nouvelles fonctionnalités, les améliorations et les performances demandées par les clients clés, la stabilité et les améliorations de sécurité, publiée depuis la disponibilité générale de AEM 6.4 en **avril 2018.**
+AEM 6.4.8.0 est une mise à jour importante qui comprend de nouvelles fonctionnalités, les améliorations et les performances demandées par les clients clés, la stabilité et les améliorations de sécurité, publiée depuis la disponibilité générale de AEM 6.4 en **avril 2018.**
 
 Il est également cumulatif, ce qui signifie que la version 6.4.8.0 inclut tous les Service Packs AEM 6.4 qui ont été lancés avant elle.
 
@@ -52,7 +52,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Mise à jour de la version jQuery fournie dans ContextHub à 3.2.1.
 
-## Liste des modifications  {#list-of-changes}
+## Liste des modifications {#list-of-changes}
 
 ### Sites {#sites}
 
@@ -83,7 +83,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Le bouton Enregistrer n’importe pas la visionneuse à distance lorsque l’utilisateur n’a apporté aucune modification à l’éditeur de visionneuses dans le client Dynamic Media (NPR-32178).
 
-* L’ingestion de ressources PSD provoque un pic de l’UC et une instance d’auteur Experience Manager non réactive (NPR-32165).
+* L’assimilation de ressources PSD provoque un pic de l’UC et une instance d’auteur Experience Manager non réactive (NPR-32165).
 
 * Exception de mémoire insuffisante observée lorsqu’un fichier ZIP volumineux est téléchargé dans la gestion des actifs numériques Experience Manager (NPR-32155).
 
@@ -169,7 +169,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 #### AEM 6.4.7.0 {#experience-manager-6470}
 
-aem 6.4.7.0 est une mise à jour importante qui comprend des améliorations et des correctifs concernant les performances, la stabilité, la sécurité et les clients clés publiés depuis la disponibilité générale de AEM 6.4 en **avril 2018.**
+AEM 6.4.7.0 est une mise à jour importante qui comprend des améliorations et des correctifs concernant les performances, la stabilité, la sécurité et les clients clés publiés depuis la disponibilité générale de AEM 6.4 en **avril 2018.**
 
 Il est également cumulatif, ce qui signifie que la version 6.4.7.0 inclut tous les Service Packs AEM 6.4 version antérieure.
 
@@ -359,9 +359,9 @@ Si vous utilisez le package `com.day.cq.dam.handler.standard.msoffice` dans votr
 
 * Impossible de télécharger le fichier de paramètres Adobe PDF téléchargé à l&#39;aide de l&#39;interface utilisateur d&#39;administration (NPR-31273).
 
-#### aem 6.4.6.0 {#experience-manager-6460}
+#### AEM 6.4.6.0 {#experience-manager-6460}
 
-aem 6.4.6.0 est une mise à jour importante qui comprend des améliorations et des correctifs concernant les performances, la stabilité, la sécurité et les clients clés publiés depuis la publication de AEM 6.4 en **avril 2018.**
+AEM 6.4.6.0 est une mise à jour importante qui comprend des améliorations et des correctifs concernant les performances, la stabilité, la sécurité et les clients clés publiés depuis la publication de AEM 6.4 en **avril 2018.**
 
 Il est également cumulatif, ce qui signifie que la version 6.4.6.0 inclut tous les Service Packs AEM 6.4 version antérieure.
 
@@ -511,9 +511,9 @@ Voici quelques-uns des points saillants de l&#39;AEM 6.4.6.0 :
 * Exception refusée lors de l’utilisation du service principal HTML vers PDF via la bibliothèque &quot;phantomjs&quot;. NPR-30456 : correctif pour CQ-4258077
 * maxReuseCount pour le service HTML vers PDF n’est pas affiché avec la console de gestion JBoss. NPR-30303, NPR-30135 : correctif pour CQ-4273763
 
-#### aem 6.4.5.0 {#experience-manager-6450}
+#### AEM 6.4.5.0 {#experience-manager-6450}
 
-aem 6.4.5.0 est une mise à jour importante qui comprend des améliorations et des correctifs concernant les performances, la stabilité, la sécurité et les clients clés publiés depuis la disponibilité générale de AEM 6.4 en **avril 2018.**
+AEM 6.4.5.0 est une mise à jour importante qui comprend des améliorations et des correctifs concernant les performances, la stabilité, la sécurité et les clients clés publiés depuis la disponibilité générale de AEM 6.4 en **avril 2018.**
 
 Il est également cumulatif, ce qui signifie que la version 6.4.5.0 inclut tous les Service Packs AEM 6.4 version antérieure.
 
@@ -603,7 +603,7 @@ Voici quelques-uns des points saillants de l&#39;AEM 6.4.5.0 :
 
 **Social - Rapports**
 
-* aem rapports de la communauté ne s’affichent pas dans AEM instance d’auteur. Correctif pour CQ-4266294
+* AEM rapports de la communauté ne s’affichent pas dans AEM instance d’auteur. Correctif pour CQ-4266294
 
 **Plate-forme**
 
@@ -636,7 +636,7 @@ Voici quelques-uns des points saillants de l&#39;AEM 6.4.5.0 :
 * Augmentation de la limite de pagination du résultat de la recherche à 100 pages pour la vue de cartes et à 200 pages pour la vue de listes. NPR-29332 : correctif pour GRANITE-24644
 * En raison du chargement différé des balises, rien ne s’affiche sur la page de collecte. NPR-29267 : correctif pour GRANITE-24902
 * La modification de la limite de pagination à 100 au lieu de 40 déclenche un chargement différé supplémentaire sans demande de pagination. NPR-29246 : correctif pour GRANITE-25027
-* aem champ de mot de passe granite n&#39;est pas renseigné après le chiffrement. NPR-29245 : correctif pour GRANITE-24908
+* AEM champ de mot de passe granite n&#39;est pas renseigné après le chiffrement. NPR-29245 : correctif pour GRANITE-24908
 
 **Intégration**
 
@@ -712,7 +712,7 @@ Les principaux points forts d&#39;AEM Forms 6.4.5.0 sont les suivants :
 
 * Le composant Webservice d’AEM Forms Workbench ne peut pas appeler un service Web, ce qui nécessite une authentification SSL bidirectionnelle. NPR-29485 : correctif pour CQ-4246794
 * Le gestionnaire de configuration AEM Forms JEE ne fonctionne pas avec plusieurs cartes d’interface réseau. NPR-29236 : correctif pour CQ-4268598
-* aem erreur de démarrage provenant de GemFire : java.lang.IllegalStateException : Une seule connexion AdminDistributedSystem peut être établie en même temps. NPR-29524 : correctif pour CQ-4266295
+* AEM erreur de démarrage provenant de GemFire : java.lang.IllegalStateException : Une seule connexion AdminDistributedSystem peut être établie en même temps. NPR-29524 : correctif pour CQ-4266295
 * NoClassDefFoundError en raison d&#39;une incompatibilité de version de jar. NPR-28834 : correctif pour NPR-28834
 
 **Forms - Services Documents**
@@ -748,9 +748,9 @@ Liste des packages de contenu inclus dans AEM 6.4.5.0
 
 [Obtenir le fichier](assets/6.4.5.0_OSGI.txt)
 
-#### aem 6.4.4.0 {#experience-manager-6440}
+#### AEM 6.4.4.0 {#experience-manager-6440}
 
-aem 6.4.4.0 est une mise à jour importante qui comprend des améliorations et des correctifs concernant les performances, la stabilité, la sécurité et les clients clés publiés depuis la publication de AEM 6.4 en **avril 2018.**
+AEM 6.4.4.0 est une mise à jour importante qui comprend des améliorations et des correctifs concernant les performances, la stabilité, la sécurité et les clients clés publiés depuis la publication de AEM 6.4 en **avril 2018.**
 
 Il est également cumulatif, ce qui signifie que la version 6.4.4.0 inclut tous les Service Packs AEM 6.4 version antérieure.
 
@@ -776,7 +776,7 @@ Voici quelques-uns des points saillants de l&#39;AEM 6.4.4.0 :
 * Après avoir pixellisé le fichier pdf d’entrée, les images manquantes apparaissent dans la sortie. NPR-27929 : correctif pour CTG-4150481
 * L’Assistant Déplacement de ressources affiche un nombre incorrect de pages de référencement pour les pages publiées. NPR-27833 : correctif pour CQ-4258014
 * AssetPicker recherche uniquement la première balise pour filtrer le résultat lors du filtrage avec des balises. NPR-27778 : correctif pour CQ-4257705
-* aem gestionnaire PDF prêtes à l’emploi se bloque lors du traitement du PDF avec des caractères étrangers. NPR-28778 : correctif pour CQ-4254234
+* AEM gestionnaire PDF prêtes à l’emploi se bloque lors du traitement du PDF avec des caractères étrangers. NPR-28778 : correctif pour CQ-4254234
 * Lorsqu’un fichier CSV comporte une valeur séparée par des virgules dans une seule colonne, AEM éditeur CSV n’échappe pas la virgule et la traite comme une colonne distincte. NPR-28801 : correctif pour CQ-4261694
 * Problème avec l’éditeur de Schéma de métadonnées lors de l’utilisation du navigateur de chemins pour sélectionner des données. NPR-28674 : correctif pour CQ-4263005
 * Trop de ressources sont traitées dans Smart Content Service, ce qui se traduit par un temps considérable pour terminer le processus de balisage périodique. NPR-28640 : correctif pour CQ-4262661, CQ-4262644, CQ-4263234
@@ -945,7 +945,7 @@ Les principaux points forts d&#39;AEM Forms 6.4.4.0 sont les suivants :
 
 **Intégration d’Adobe Sign**
 
-* aem 6.4 Forms Client SDK ne contient pas de package adobésité-recipent. NPR-27735 : correctif pour CQ-4259372
+* AEM 6.4 Forms Client SDK ne contient pas de package adobésité-recipent. NPR-27735 : correctif pour CQ-4259372
 
 **Formulaires adaptatifs**
 
@@ -1027,9 +1027,9 @@ Liste des packages de contenu inclus dans AEM 6.4.4.0
 
 [Obtenir le fichier](assets/osgi_package_6_440.txt)
 
-#### aem 6.4.3.0 {#experience-manager-6430}
+#### AEM 6.4.3.0 {#experience-manager-6430}
 
-aem 6.4.3.0 est une mise à jour importante qui comprend des améliorations et correctifs concernant les performances, la stabilité, la sécurité et les clients clés depuis la publication de l’AEM 6.4 en avril 2018.
+AEM 6.4.3.0 est une mise à jour importante qui comprend des améliorations et correctifs concernant les performances, la stabilité, la sécurité et les clients clés depuis la publication de l’AEM 6.4 en avril 2018.
 
 Il est également cumulatif, ce qui signifie que la version 6.4.3.0 inclut tous les Service Packs AEM 6.4 version antérieure.
 
@@ -1078,7 +1078,7 @@ Voici quelques-uns des points saillants de l&#39;AEM 6.4.3.0 :
 Impossible de modifier les balises par balisage. NPR-26957 : correctif pour CQ-4254858
 * Lorsqu’une balise référencée à partir d’un modèle de fragment de contenu structuré est déplacée, les références existantes à la balise dans un fragment de contenu ne sont pas mises à jour. Cela se produit dans l’écran de modification du modèle de fragment de contenu. NPR-26776 : correctif pour CQ-4251805
 * Lorsque vous créez et promouvez un lancement comportant plusieurs pages, plusieurs versions de chaque page sont créées. NPR-26917 : correctif pour CQ-4254663
-* aem siteadmin ne gère pas les chemins tapés dans la barre d&#39;adresse du navigateur. NPR-26780 : correctif pour CQ-4254097
+* AEM siteadmin ne gère pas les chemins tapés dans la barre d&#39;adresse du navigateur. NPR-26780 : correctif pour CQ-4254097
 * Lorsqu&#39;une page est déplacée à un nouvel emplacement sans le renommer, l&#39;historique des versions de la page est perdu. NPR-26706 : correctif pour CQ-4254025
 * Les URL de l’éditeur d’administration des fragments d’expérience n’autorisent pas les incrustations. NPR-26319 : correctif pour CQ-4252156
 * Lorsqu’une page est créée avec un modèle contenant un fragment d’expérience vide et publié, la page ne s’ouvre pas et une erreur DefaultSlingScript se produit. NPR-26305 : correctif pour CQ-4252460
@@ -1282,9 +1282,9 @@ Liste des packages de contenu inclus dans AEM 6.4.3.0
 
 [Obtenir le fichier](assets/6.4.3.0_OSGI.txt)
 
-#### aem 6.4.2.0 {#experience-manager-6420}
+#### AEM 6.4.2.0 {#experience-manager-6420}
 
-aem 6.4.2.0 est une mise à jour importante qui comprend des améliorations et des correctifs concernant les performances, la stabilité, la sécurité et les clients clés depuis la publication de l&#39;AEM 6.4 en **avril 2018.**
+AEM 6.4.2.0 est une mise à jour importante qui comprend des améliorations et des correctifs concernant les performances, la stabilité, la sécurité et les clients clés depuis la publication de l&#39;AEM 6.4 en **avril 2018.**
 Il est également cumulatif, ce qui signifie que la version 6.4.2.0 inclut tous les Service Packs AEM 6.4 version antérieure.
 
 Voici quelques-uns des points saillants de l&#39;AEM 6.4.2.0 :
@@ -1292,7 +1292,7 @@ Voici quelques-uns des points saillants de l&#39;AEM 6.4.2.0 :
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.8.7.
 * Prise en charge Ajoutée des fonctionnalités HTML Template Language (HTL) Specification 1.4
 * Prise en charge Ajoutée de MongoDB Enterprise 3.6.
-* L&#39;éditeur de page Sites ajoute la prise en charge de la modification et de la composition dans le contexte avec des composants côté client créés en React ou Angular en combinaison avec <a href="../sites-developing/spa-walkthrough.md">AEM éditeur SPA SDK JS SDK</a>.
+* L&#39;éditeur de page Sites ajoute la prise en charge de la modification et de la composition dans le contexte avec des composants côté client créés en Réaction ou Angular en combinaison avec <a href="../sites-developing/spa-walkthrough.md">AEM éditeur SPA SDK JS</a>.
 * Améliorations des fragments de contenu : ajout de la capacité d’annoter dans les champs de texte et de comparer côte à côte les versions.
 * Intégration [Ajoutée avec Adobe Stock](/help/assets/aem-assets-adobe-stock.md) afin que les utilisateurs puissent rechercher, prévisualisation, enregistrer et mettre sous licence des actifs Adobe Stock directement à partir de l’interface utilisateur AEM. Pour plus d’informations, voir [Utilisation de ressources Adobe Stock avec AEM Assets](https://docs.adobe.com/content/help/fr/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
 * Les ressources prennent également en charge les métaschémiques conditionnelles dynamiques et permettent de définir un schéma de métadonnées pour les dossiers de ressources.
@@ -1324,7 +1324,7 @@ Voici quelques-uns des points saillants de l&#39;AEM 6.4.2.0 :
 * Le bouton Créer n’est pas disponible lors de la sélection du dossier de ressources sans autorisation de suppression. NPR-25788 : correctif pour CQ-4250140
 * (Backport) Améliorations de l’accessibilité : Duplicata-id : La valeur de l&#39;attribut id doit être unique, Libellé : Les éléments de formulaire doivent avoir des libellés et un nom de lien : Les liens doivent présenter un texte perceptible. NPR-24252 : correctif pour CQ-4250905, CQ-4250906, CQ-4250907
 * Le téléchargement d’un fichier CSV avec des champs séparés par &quot;,&quot; échoue pour les pays européens. NPR-25549 : correctif pour CQ-4249931
-* (Portail de marques) Les sous-ensembles d’un fichier PDF de plusieurs pages ne sont pas publiés lorsqu’un fichier est publié. NPR-25991 : correctif pour CQ-4245162
+* (Portail de marques) Les sous-ensembles d’un fichier pdf de plusieurs pages ne sont pas publiés lorsqu’un fichier est publié. NPR-25991 : correctif pour CQ-4245162
 * Publiez les fonctionnalités ultérieures pour la réplication AEM sur le portail des marques. NPR-25911 : correctif pour CQ-109139
 * La publication et la dépublication de la collection privée par des utilisateurs non administrateurs génèrent un NPE. NPR-25906 : correctif pour CQ-4250594
 * Désactivez la publication de fragments de contenu et de schémas de formulaires sur le portail de marque. NPR-24176, NPR-26004 : correctif pour CQ-4251592, CQ-4252026
@@ -1681,11 +1681,11 @@ Liste des packages de contenu inclus dans AEM 6.4.2.0
 
 [Obtenir le fichier](assets/6_4_2_0content-package-list.txt)
 
-#### aem 6.4.1.0 {#experience-manager-6410}
+#### AEM 6.4.1.0 {#experience-manager-6410}
 
-aem 6.4.1.0 est une mise à jour importante qui comprend des améliorations et correctifs concernant les performances, la stabilité, la sécurité et les clients clés depuis la publication de l’AEM 6.4 en avril 2018.
+AEM 6.4.1.0 est une mise à jour importante qui comprend des améliorations et correctifs concernant les performances, la stabilité, la sécurité et les clients clés depuis la publication de l’AEM 6.4 en avril 2018.
 
-aem 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici les principales caractéristiques du Service Pack 1 :
+AEM 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici les principales caractéristiques du Service Pack 1 :
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.8.3.
 * Ajout de balises actives améliorées.
@@ -1848,7 +1848,7 @@ aem 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici les principales caractér
 
 **DAM - Portail de marque**
 
-* Propriétés de la ressource liste uniquement 3 propriétés sur le premier onglet, toutes les onglets semblent vides. Correctif pour CQ-4242503
+* Propriétés de l’actif liste uniquement 3 propriétés sur le premier onglet ; tous les onglets semblent vides. Correctif pour CQ-4242503
 * Les prédicats de type de fichier et de taille de fichier ne sont pas disponibles dans le formulaire de recherche publié. Correctif pour CQ-4242026
 * La recherche dans le prédicat d&#39;annuaire doit être filtrée/non affichée dans les filtres de recherche. Correctif pour CQ-4241386
 * La recherche par défaut à partir de doit exister après l’annulation de la publication. Correctif pour CQ-4241383, CQ-4241113
@@ -2106,7 +2106,7 @@ Liste des packages de contenu inclus dans AEM 6.4.1.0
 >
 >Utilisateurs ayant installé Feature Packs sur AEM 6.4 : les Feature Packs en option fournis par Adobe ont des dépendances sur la version et le Service Pack. Si vous avez installé un Feature Pack, contactez l’équipe d’assistance clientèle d’AEM pour valider la compatibilité de ces Feature Packs avec ce Service Pack pour AEM 6.4.
 
-* aem 6.4.8.0 requiert AEM 6.4. Pour plus d’informations, voir [documentation de mise à niveau](../sites-deploying/upgrade.md).
+* AEM 6.4.8.0 requiert AEM 6.4. Pour plus d’informations, voir [documentation de mise à niveau](../sites-deploying/upgrade.md).
 * Le téléchargement du Service Pack est disponible sur le [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) pour téléchargement.
 * Lors d’un déploiement avec MongoDB et plusieurs instances, installez AEM 6.4.8.0 sur l’une des instances d’auteur à l’aide du gestionnaire de modules.
 * Avant d’installer le pack de service, veillez à disposer d’un instantané ou d’une nouvelle sauvegarde de votre instance AEM.
@@ -2155,7 +2155,7 @@ Pour déterminer la plate-forme certifiée pour l’exécution avec cette versio
 
 ### Mettre à jour les visionneuses Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">aem 6.4.8.0 contient la nouvelle version des visionneuses Dynamic Media (5.10.1) qui permet de vérifier les noms de duplicata sur la page Paramètres d’image prédéfinis. Il est conseillé aux clients de Dynamic Media d’exécuter la commande suivante afin de mettre à jour les paramètres prédéfinis de la visionneuse prête à l’emploi.
+<p id="Dynamic">AEM 6.4.8.0 contient la nouvelle version des visionneuses Dynamic Media (5.10.1) qui permet de vérifier les noms de duplicata sur la page Paramètres d’image prédéfinis. Il est conseillé aux clients de Dynamic Media d’exécuter la commande suivante afin de mettre à jour les paramètres prédéfinis de la visionneuse prête à l’emploi.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -2200,7 +2200,7 @@ Par défaut, le nombre de files d’attente partagées n’est pas actualisé po
 1. Accédez à Interface utilisateur d’administration -> Services -> Espace de travail -> Administration globale.
 1. Exporter les paramètres globaux.
 1. Dans le fichier XML téléchargé, ajoutez la balise &lt;client_tasksPollingInterval>10&lt;/client_tasksPollingInterval> Ici, 10 est l’exemple de valeur en secondes. Vous pouvez le modifier en conséquence.
-1. Enregistrez le fichier .
+1. Enregistrez le fichier.
 1. Revenez à l’interface utilisateur d’administration -> Services -> Espace de travail -> Administration globale.
 1. Importez le fichier xml dans la section Importer les paramètres globaux.
 1. Vous pouvez maintenant vous déconnecter du système et vous reconnecter.
@@ -2230,21 +2230,16 @@ Cette section répertorie les fonctionnalités qui ont été supprimées ou dés
 | Zone | Fonctionnalité | Remplacement | Version |
 |---|---|---|---|
 | Assets | Gérer l’action de balise pour les sous-ensembles | Aucun remplacement. | AEM 6.4.2.0 |
-| Intégration des Ressources et d’Adobe Creative Cloud | [aem au ](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) partage de dossiers Creative Cloud a été introduit dans AEM 6.2 pour permettre aux utilisateurs créatifs d’accéder aux ressources provenant d’AEM. Adobe Asset Link, nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apportera pas d’améliorations supplémentaires à la fonctionnalité de partage de dossiers. Bien que la fonction soit incluse dans AEM, les clients sont (il est fortement conseillé d’utiliser le remplacement). | Lien de ressources d’Adobe ou application de bureau. Pour plus d’informations, reportez-vous à l’article [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
+| Intégration des Ressources et d’Adobe Creative Cloud | [AEM au ](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) partage de dossiers Creative Cloud a été introduit dans AEM 6.2 pour permettre aux utilisateurs créatifs d’accéder aux ressources provenant d’AEM. Adobe Asset Link, nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apportera pas d’améliorations supplémentaires à la fonctionnalité de partage de dossiers. Bien que la fonction soit incluse dans AEM, les clients sont (il est fortement conseillé d’utiliser le remplacement). | Lien de ressources d’Adobe ou application de bureau. Pour plus d’informations, reportez-vous à l’article [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
 
 ### Problèmes connus {#known-issues}
 
 * Les erreurs et avertissements suivants peuvent s’afficher pendant l’installation :
 
-   * Les erreurs de création d’instance de composant et de renvoi de valeur nulle par Service Factory se produisent en raison du redémarrage du référentiel :
-
-      * com.day.cq.cq-personalization \[com.day.cq.personalization.impl.DefaultProfileProvider(938)\] Impossible de créer une instance de composant en raison d&#39;un échec de liaison de profileManager
-      * org.apache.sling.commons.Planificateur FrameworkEvent ERROR (org.osgi.framework.ServiceException : La fabrique de services a renvoyé la valeur null. (Composant : com.day.cq.tagging.impl.TagGarbageCollector (1687))
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Délai d’attente en attente de la modification de l’enregistrement non enregistrée.
    * `com.adobe.granite.maintenance.impl.TaskScheduler` Aucune fenêtre de maintenance n’a été trouvée sur granite/operations/maintenance
    * `com.adobe.cq.com.adobe.cq.ui.commons bundle com.adobe.cq.com.adobe.cq.ui.commons:1.2.28 (204)[com.adobe.cq.ui.wcm.commons.internal.servlets.rte.RTEFilterServletFactory(573)]`: La méthode unbindAmendment a généré une exception (java.lang.IllegalStateException : Service déjà non enregistré).
 Ces erreurs ne nécessitent aucune action, car elles n’affectent pas votre instance AEM.
-
 
 ### Problèmes résolus {#resolved-issues}
 
