@@ -15,7 +15,7 @@ ht-degree: 93%
 ---
 
 
-# aem 6.4 Déploiement du Guide de l&#39;utilisateur {#deploying}
+# AEM 6.4 Déploiement du Guide de l&#39;utilisateur {#deploying}
 
 + [Guide de l’utilisateur du déploiement](home.md)
 + Présentation de la plateforme AEM {#introduction}
