@@ -14,7 +14,7 @@ ht-degree: 29%
 ---
 
 
-# Guide de l’utilisateur d’AEM 6.4 Communities  {#communities}
+# Guide de l’utilisateur d’AEM 6.4 Communities {#communities}
 
 + [Présentation d’AEM Communities](home.md)
 + Introduction à l&#39;AEM Communities {#introduction}
