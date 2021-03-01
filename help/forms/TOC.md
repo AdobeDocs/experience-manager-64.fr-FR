@@ -15,7 +15,7 @@ ht-degree: 75%
 
 ---
 
-# Guide de Forms Adobe Experience Manager 6.4  {#forms}
+# Guide de Forms Adobe Experience Manager 6.4 {#forms}
 
 + [Guide de Forms AEM 6.4](home.md)
 + Notes de mise à jour {#release-notes-new-features}
@@ -83,7 +83,7 @@ ht-degree: 75%
       + [Configuration de Connector for Microsoft SharePoint](http://help.adobe.com/fr/AEMForms/6.1/SharePointConfig/index.html)
       + [Connexion d’AEM Forms à Adobe LiveCycle](using/aem-livecycle-connector.md)
       + [Configuration d’AEM Forms pour envoyer des données de formulaire aux processus AEM Forms sur JEE](using/submit-form-data-livecycle-process.md)
-      + [aem application pour ordinateur de bureau pour AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
+      + [AEM application pour ordinateur de bureau pour AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
 + Mettre à niveau AEM Forms {#upgrade-aem-forms}
    + [Chemins de mise à niveau disponibles](using/upgrade.md)
    + Mettre à niveau AEM Forms sur OSGi {#aem-forms-osgi-upgrade}
@@ -367,7 +367,7 @@ ht-degree: 75%
    + [Activer AEM pour rechercher des documents PDF protégés par la sécurité documentaire et des documents Microsoft Office](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protection d’un document au nom d’un autre utilisateur](using/protect-document-on-behalf-of-another-user.md)
 + Concepteur Forms {#use-forms-designer}
-   + [Utilisation de Designer](http://www.adobe.com/go/learn_aemforms_designer_64_fr)
+   + [Utilisation de Designer](http://www.adobe.com/go/learn_aemforms_designer_64)
    + [Didacticiels de mise en route de Designer](http://www.adobe.com/go/learn_aemforms_designer_quick_start_64_fr)
    + [Designer – Exemples](http://www.adobe.com/go/learn_aemforms_designer_samples_64_fr)
    + [Concepts de base des scripts de Designer](http://www.adobe.com/go/learn_aemforms_scriptingBasics_64_fr)
