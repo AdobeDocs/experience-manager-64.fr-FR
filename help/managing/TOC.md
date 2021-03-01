@@ -14,13 +14,13 @@ ht-degree: 93%
 ---
 
 
-# Guide de l’utilisateur pour la gestion dans AEM 6.4  {#managing}
+# Guide de l’utilisateur pour la gestion dans AEM 6.4 {#managing}
 
 + [Gestion du guide de l’utilisateur](home.md)
 + Gestion : liste de contrôle des meilleures pratiques {#managing-best-practices-checklist}
    + [Gestion des projets : liste de contrôle des meilleures pratiques](best-practices.md)
    + [La liste de contrôle](best-practices-checklist.md)
-   + [Glossaire ](best-practices-glossary.md)
+   + [Glossaire](best-practices-glossary.md)
    + [La liste de contrôle – Référence supplémentaire](best-practices-further-reference.md)
 + Gestion – Plus de références {#managing-further-reference}
    + [Consignes de dimensionnement du matériel](hardware-sizing-guidelines.md)
