@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
 source-wordcount: '658'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
 
-# Guide de l’utilisateur pour l’administration dans AEM 6.4  {#administering}
+# Guide de l’utilisateur pour l’administration dans AEM 6.4 {#administering}
 
 + [Présentation de l’administration du Guide de l’utilisateur](home.md)
 + Fonctionnalités des sites {#introduction}
@@ -81,7 +81,7 @@ ht-degree: 91%
    + [Réduction des problèmes de sérialisation dans AEM](mitigating-serialization-issues.md)
    + [Synchronisation des utilisateurs](sync.md)
    + [Prise en charge des jetons encapsulés](encapsulated-token.md)
-   + [Connexion unique](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/single-sign-on.html)
+   + [Connexion unique](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/single-sign-on.html?lang=fr)
    + [Contrôle des opérations de gestion des utilisateurs dans AEM](audit-user-management-operations.md)
    + [SSL par défaut](ssl-by-default.md)
    + [Gestionnaire d’authentification SAML 2.0](saml-2-0-authenticationhandler.md)
@@ -94,8 +94,8 @@ ht-degree: 91%
    + [Prise en charge du chiffrement des propriétés de configuration](encryption-support-for-configuration-properties.md)
    + [Traitement des demandes RGPD pour AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [Filtre de disposition du contenu](content-disposition-filter.md)
-+ Personnalisation   {#personalization}
-   + [Personnalisation ](personalization.md)
++ Personnalisation  {#personalization}
+   + [Personnalisation](personalization.md)
    + [Configuration de ContextHub](contexthub-config.md)
    + [Contexte client](client-context.md)
    + [Campagnes](campaigns.md)
