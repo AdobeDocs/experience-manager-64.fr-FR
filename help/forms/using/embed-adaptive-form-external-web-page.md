@@ -1,6 +1,6 @@
 ---
-title: Incorporation d’un formulaire adaptatif dans une page Web externe
-seo-title: Incorporation d’un formulaire adaptatif dans une page Web externe
+title: Incorporation d’un formulaire adaptatif dans une page web externe
+seo-title: Incorporation d’un formulaire adaptatif dans une page web externe
 description: Découvrez comment incorporer un formulaire adaptatif dans une page Web externe
 seo-description: Découvrez comment incorporer un formulaire adaptatif dans une page Web HTML externe
 uuid: c612ca3b-62f7-4021-939b-e0c05dbbf0d7
@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 6b5c051a2487ca9aa66d110e5b792a55eae8e97d
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 66%
@@ -16,7 +16,7 @@ ht-degree: 66%
 ---
 
 
-# Incorporation d’un formulaire adaptatif dans une page Web externe{#embed-adaptive-form-in-external-web-page}
+# Incorporation d’un formulaire adaptatif dans une page web externe{#embed-adaptive-form-in-external-web-page}
 
 Découvrez comment incorporer un formulaire adaptatif dans une page Web externe
 
@@ -166,6 +166,6 @@ Lorsque vous incorporez un formulaire adaptatif dans une page Web, prenez en com
 
 ## Activer AEM Forms pour diffuser des formulaires adaptatifs vers un site interdomaines  {#cross-domain-sites}
 
-1. Sur AEM instance d’auteur, accédez à AEM Web Console Configuration Manager à l’adresse `http://[server]:[port]/system/console/configMgr`.
+1. Sur AEM instance de publication, accédez à AEM Web Console Configuration Manager à l’adresse `http://[server]:[port]/system/console/configMgr`.
 1. Recherchez et ouvrez la configuration de filtre **Apache Sling Parrain**.
 1. Dans le champ **Hôtes autorisés**, spécifiez le domaine dans lequel la page Web se trouve. Cette opération permet à l’hôte de créer des requêtes POST vers le serveur AEM. Vous pouvez également utiliser l’expression régulière pour spécifier une série de domaines d’application externes.
