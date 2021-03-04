@@ -9,9 +9,9 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
 workflow-type: tm+mt
-source-wordcount: '6348'
+source-wordcount: '6352'
 ht-degree: 80%
 
 ---
@@ -37,7 +37,7 @@ L’éditeur de règles remplace les fonctionnalités de script dans AEM version
 
 Les utilisateurs ajoutés au groupe des utilisateurs avancés de formulaires peuvent créer de nouveaux scripts et modifier les scripts existants. Les utilisateurs appartenant au groupe d’utilisateurs de formulaires peuvent utiliser les scripts, mais ne peuvent ni en créer ni en modifier.
 
-## Compréhension d’une règle  {#understanding-a-rule}
+## Compréhension d’une règle {#understanding-a-rule}
 
 Une règle est une combinaison d’actions et de conditions. Dans l’éditeur de règles, les actions incluent des activités telles que masquer, afficher, activer, désactiver ou calculer la valeur d’un objet dans un formulaire. Les conditions sont des expressions booléennes qui sont évaluées en effectuant des vérifications et des opérations sur l’état, la valeur ou la propriété d’un objet de formulaire. Les actions sont exécutées en fonction de la valeur (`True` ou`False` ) ) renvoyée par l’évaluation d’une condition.
 
@@ -330,7 +330,7 @@ Les utilisateurs appartenant au groupe des utilisateurs avancés de formulaires 
 AEM Forms suit le mode Éditeur de règles que vous avez utilisé en dernier pour créer une règle. Lorsque vous lancez l’éditeur de règles la fois suivante, il s’ouvre dans ce mode. Toutefois, vous pouvez également configurer un mode par défaut pour ouvrir l’éditeur de règles dans le mode spécifié. Pour ce faire :
 
 1. Accédez à AEM console Web à l’adresse https://[host]:[port]/system/console/configMgr.
-1. Cliquez pour modifier **[!UICONTROL Service de configuration de formulaire adaptatif]**.
+1. Cliquez pour modifier **[!UICONTROL la configuration du Canal Web de formulaire adaptatif et de communication interactive]**.
 1. Sélectionnez **[!UICONTROL Éditeur visuel]** ou **[!UICONTROL Éditeur de code]** dans la liste déroulante **[!UICONTROL Mode par défaut de l’éditeur de règle]**.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
@@ -504,7 +504,7 @@ Balises `jsdoc` prises en charge :
 
    Une fonction privée n&#39;est pas incluse en tant que fonction personnalisée.
 
-* **Nom**
+* **Name** (Nom)
 
    Syntaxe: `@name funcName <Function Name>`
 
