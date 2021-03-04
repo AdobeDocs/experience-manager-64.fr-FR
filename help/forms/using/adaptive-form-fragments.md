@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4df5ee77-5a77-4efd-b7e1-c78e650673a9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
 workflow-type: tm+mt
-source-wordcount: '2090'
-ht-degree: 94%
+source-wordcount: '2094'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Les formulaires adaptatifs fournissent un mécanisme pratique pour créer un seg
 
 Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enregistrer un panneau dans un formulaire adaptatif existant en tant que fragment.
 
-### Créer un fragment à partir de zéro  {#create-fragment-from-scratch}
+### Créer un fragment à partir de zéro {#create-fragment-from-scratch}
 
 1. Connectez-vous à l’instance d’auteur AEM Forms à l’adresse https://[*hostname*]:[*port*]/aem/forms.html.
 1. Cliquez sur **[!UICONTROL Créer > Fragment de formulaire adaptatif]**.
@@ -112,7 +112,7 @@ Tout fragment que vous insérez dans les formulaires adaptatifs s’affiche en i
 Effectuez les étapes suivantes pour afficher les fragments complets dans les formulaires :
 
 1. Accédez à la page de configuration de la console Web AEM à l’adresse https:[*host*]:[*port*]/system/console/configMgr.
-1. Recherchez et cliquez sur **[!UICONTROL Service de configuration de formulaire adaptatif]** pour l’ouvrir en mode d’édition.
+1. Recherchez **[!UICONTROL Formulaire adaptatif et Configuration du Canal Web de communication interactive]** pour l’ouvrir en mode d’édition.
 1. Décochez la case d’**[!UICONTROL activation de l’espace réservé à la place du fragment]** pour afficher les fragments complets à la place de l’image d’espace réservé.
 
 ### Insertion d’un fragment dans un formulaire adaptatif  {#insert-a-fragment-in-an-adaptive-form}
