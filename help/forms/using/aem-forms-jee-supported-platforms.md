@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
-source-git-commit: ee38d0ebde12a70e3af04254b0c0b4995c45519b
+source-git-commit: 53154f9ada1062dae4bdccc5eac3d3113cd730a2
 workflow-type: tm+mt
-source-wordcount: '3327'
+source-wordcount: '3318'
 ht-degree: 85%
 
 ---
@@ -128,7 +128,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Pris en charge</td> 
   </tr> 
   <tr> 
-   <td><p>Base de données Oracle 12c version 1</p> </td> 
+   <td><p>Oracle de données 12c version 1</p> </td> 
    <td><p>Référentiel Microkernel</p> </td> 
    <td><p>Pris en charge</p> </td> 
   </tr> 
@@ -168,7 +168,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Pris en charge</td> 
   </tr> 
   <tr> 
-   <td><p>Base de données Oracle 12c version 1</p> </td> 
+   <td><p>Oracle de données 12c version 1</p> </td> 
    <td><p>Référentiel Microkernel</p> </td> 
    <td><p>Pris en charge</p> </td> 
    <td><p>Pris en charge</p> </td> 
@@ -309,7 +309,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 >
 >AEM Forms on JEE prend uniquement en charge les systèmes d’exploitation 64 bits.
 
-#### Environnement virtualisé  {#virtualized-environment}
+#### Environnement virtualisé {#virtualized-environment}
 
 Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environnement virtuel. Toutefois, si vous rencontrez un problème avec AEM Forms sur un environnement virtuel, essayez de reproduire le problème sur un ordinateur physique. Si le problème persiste sur l’ordinateur physique, contactez l’assistance Adobe pour obtenir une résolution. Pour les problèmes qui ne sont pas répliqués sur l’ordinateur physique, contactez votre fournisseur d’environnement virtuel.
 
@@ -631,21 +631,17 @@ Pour la configuration requise supplémentaire, voir :
 
 ### Designer {#designer}
 
-**Remarque :** pour installer Designer sous Windows, exécutez le programme d’installation avec les droits d’administrateur.
-
-* Microsoft® Windows® 2012 Server R2, Microsoft® Windows® 2016 Server, Microsoft Windows 10
-
-   * Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
-   * Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
-   * Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
-
+* Microsoft® Windows® 2012 Server R2, Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10
+* Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
+* Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
+* Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
 * Mémoire graphique - 128 Mo de GPU (256 Mo recommandé)
 * 2,35 Go d’espace disponible sur le disque dur
 * Lecteur de DVD-ROM
-* Internet Explorer 10 ou 11 ; Firefox 45.x
 * Résolution d’écran 1 024 X 768 pixels ou plus
 * Accélération matérielle de la vidéo (en option)
-* Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC.
+* Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
+* Droits d’administrateur pour l’installation de Designer
 
 ### Adobe Acrobat et Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -809,4 +805,4 @@ Adobe se réserve le droit de modifier les plateformes de fournisseurs tiers de 
 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site Support Adobe aux entreprises les articles de la base de connaissances relatifs à votre produit.
 
-[**Contacter le support technique**](https://www.adobe.com/fr/account/sign-in.supportportal.html)
+[**Contacter le support technique**](https://www.adobe.com/account/sign-in.supportportal.html)
