@@ -7,10 +7,10 @@ uuid: 847c3351-dc46-4e60-a023-0f4e9e057c7c
 topic-tags: installing
 discoiquuid: 7333641e-8c8c-4b52-a7da-a2976c88592c
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
 workflow-type: tm+mt
-source-wordcount: '1635'
-ht-degree: 55%
+source-wordcount: '1639'
+ht-degree: 57%
 
 ---
 
@@ -100,13 +100,13 @@ Avant de commencer à installer et à configurer un flux de travaux centré sur 
 
 Le package du module complémentaire AEM Forms est une application déployée sur AEM. Le package contient un flux de travaux centré sur Forms sur OSGi et d&#39;autres fonctionnalités. Suivez les étapes ci-après pour installer le package du module complémentaire :
 
-1. Ouvrez [Distribution de logiciels](https://experience.adobe.com/fr/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
-1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** dans le menu d’en-tête.
+1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l&#39;option **[!UICONTROL Rechercher les téléchargements]** pour filtrer les résultats.
 1. Appuyez sur le nom du package correspondant à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur final]**, puis appuyez sur **[!UICONTROL Télécharger]**.
-1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
 1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
    Vous pouvez également télécharger le package via le lien direct répertorié dans l&#39;article [AEM Forms versions](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
@@ -182,7 +182,7 @@ La mise en cache est un mécanisme qui permet de raccourcir les temps d’accès
 Effectuez les étapes suivantes pour configurer le cache de formulaires adaptatifs :
 
 1. Accédez à AEM gestionnaire de configuration de la console Web à l’adresse `https://[server]:[port]/system/console/configMgr`.
-1. Cliquez sur **Service de configuration de formulaire adaptatif** pour modifier ses valeurs de configuration. Dans la boîte de dialogue Modifier les valeurs de configuration, spécifiez le nombre maximal de formulaires ou de documents qu&#39;une instance du serveur AEM Forms peut mettre en cache dans le champ **Nombre de Forms adaptatif**. La valeur par défaut est 100. Cliquez sur **Enregistrer**.
+1. Cliquez sur la **[!UICONTROL configuration de canal web de communication interactive de formulaire adaptatif]** pour éditer ses valeurs de configuration. Dans la boîte de dialogue Modifier les valeurs de configuration, spécifiez le nombre maximal de formulaires ou de documents qu&#39;une instance du serveur AEM Forms peut mettre en cache dans le champ **Nombre de Forms adaptatif**. La valeur par défaut est 100. Cliquez sur **Enregistrer**.
 
    >[!NOTE]
    >
@@ -201,6 +201,6 @@ Pour utiliser Adobe Sign avec AEM Forms, [intégrez Adobe Sign à AEM Forms](/he
 Vous avez configuré un environnement pour utiliser un flux de travail centré sur Forms sur les fonctionnalités OSGi. Les étapes à suivre pour utiliser cette fonctionnalité sont les suivantes :
 
 * [Utilisation d’un flux de travaux centré sur Forms sur OSGi](/help/forms/using/aem-forms-workflow.md)
-* [Référence sur les étapes du workflow](/help/sites-developing/workflows-step-ref.md)
+* [Référence sur les étapes de workflow](/help/sites-developing/workflows-step-ref.md)
 * [Post-traitement des lettres et communications interactives](/help/forms/using/submit-letter-topostprocess.md)
 
