@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 5e418ea537e00dc3b23174a7b1bb01dba0fc6b3a
+source-git-commit: 53154f9ada1062dae4bdccc5eac3d3113cd730a2
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3274'
 ht-degree: 83%
 
 ---
@@ -132,7 +132,7 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 1. Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java SE. Java 9 et 10 ne sont pas des versions de LTS par Oracle (voir [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe assure uniquement la prise en charge des versions LTS de Java pour exécuter AEM en production.
 
 1. IBM JRE est pris en charge uniquement avec WebSphere Application Server.
-1. La prise en charge et la distribution du JDK Oracle Java SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, seront directement prises en charge par Adobe pour tous les clients AEM utilisant la technologie Oracle Java SE. Pour plus d’informations, voir la [prise en charge Java Oracle pour Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf).
+1. La prise en charge et la distribution du JDK Oracle Java SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, seront directement prises en charge par Adobe pour tous les clients AEM utilisant la technologie Oracle Java SE. Pour plus d&#39;informations, consultez l&#39;[Oracle Java de prise en charge de Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf).
 
 ### Stockage et persistance {#storage-persistence}
 
@@ -196,7 +196,7 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
    <td>R : Prise en charge limitée (4)</td> 
   </tr> 
   <tr> 
-   <td>Base de données Oracle 12c (12.1.x)</td> 
+   <td>Base de données des Oracles 12c (12.1.x)</td> 
    <td>Base de données de formulaires et de référentiels</td> 
    <td>R : Prise en charge limitée</td> 
   </tr> 
@@ -261,7 +261,7 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 >
 >**Notez que, pour l’heure, la plupart des bases de données relationnelles bénéficient du niveau de prise en charge R sur AEM 6.4. Cette version s’accompagne des critères et d’un programme de prise en charge, comme indiqué dans la description du niveau R ci-dessus.**
 
-### Moteurs de servlet / Serveurs d’applications  {#servlet-engines-application-servers}
+### Moteurs de servlet / Serveurs d’applications {#servlet-engines-application-servers}
 
 Adobe Experience Manager peut s’exécuter comme serveur autonome (fichier JAR de démarrage rapide) ou comme application web avec un serveur d’applications tiers (fichier WAR).
 
@@ -627,6 +627,20 @@ x86
 >
 
 
+
+### Conditions requises pour AEM Forms Designer {#requirements-for-aem-forms-designer}
+
+* Microsoft® Windows® 2012 Server R2, Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10
+* Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
+* Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
+* Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
+* Mémoire graphique - 128 Mo de GPU (256 Mo recommandé)
+* 2,35 Go d’espace disponible sur le disque dur
+* Lecteur de DVD-ROM
+* Résolution d’écran 1 024 X 768 pixels ou plus
+* Accélération matérielle de la vidéo (en option)
+* Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
+* Droits d’administrateur pour l’installation de Designer
 
 ### Exigences pour l’écriture en différée des métadonnées XMP AEM Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
 
