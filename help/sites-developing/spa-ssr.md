@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 226cd6688a579409371cb17f6ba31548bee312b3
 workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 65%
@@ -18,16 +18,16 @@ ht-degree: 65%
 ---
 
 
-# SPA et rendu côté serveur{#spa-and-server-side-rendering}
+# SPA et rendu côté serveur {#spa-and-server-side-rendering}
 
 >[!NOTE]
 >La fonction Éditeur d&#39;application à page unique (SPA) requiert [AEM Service Pack 2](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html) 6.4 ou plus récent.
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur la structure (par ex. Réaction ou Angular).
 
 >[!NOTE]
 >
->aem version 6.4.5.0 ou ultérieure est requise pour utiliser les fonctions de rendu SPA côté serveur, comme décrit dans ce document.
+>AEM version 6.4.5.0 ou ultérieure est requise pour utiliser les fonctions de rendu SPA côté serveur, comme décrit dans ce document.
 
 ## Présentation {#overview}
 
@@ -37,7 +37,7 @@ Toutefois, cela peut entraîner des temps de chargement initiaux plus longs, en 
 
 ## Quand utiliser le rendu côté serveur {#when-to-use-ssr}
 
-Le rendu côté serveur n’est pas requis pour tous les projets. Bien que AEM appuie pleinement JS SSR pour SPA, l&#39;Adobe ne recommande pas sa mise en oeuvre systématique pour chaque projet.
+Le rendu côté serveur n’est pas requis pour tous les projets. Bien que AEM appuie pleinement la stratégie SSR JS pour SPA, l&#39;Adobe ne recommande pas de la mettre en oeuvre systématiquement pour chaque projet.
 
 Lorsque vous décidez de mettre en œuvre le rendu côté serveur, vous devez d’abord estimer la complexité, les efforts et les coûts supplémentaires que ce rendu représente de manière réaliste pour le projet, y compris la maintenance à long terme. Une architecture SSR ne doit être choisie que lorsque la valeur ajoutée dépasse clairement les coûts estimés.
 
@@ -60,7 +60,7 @@ Pour plus d’informations sur Adobe I/O Runtime, voir
 Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé afin d’implémenter la technologie du rendu côté serveur pour votre SPA dans deux modèles différents :
 
 * [Flux de communication piloté par AEM](#aem-driven-communication-flow)
-* [Flux de communication piloté par Adobe I/O-Runtime](#adobe-io-driven-communication-flow)
+* [Flux de communication piloté par l&#39;Adobe I/O-exécution](#adobe-io-driven-communication-flow)
 
 >[!NOTE]
 >
@@ -114,7 +114,7 @@ Les deux modèles sont valides et pris en charge par AEM. Toutefois, il faut ten
 
 | Démarrage | Avantages | Inconvénients |
 |---|---|---|
-| Via AEM | aem gère les bibliothèques d&#39;injection lorsque cela est nécessaire<br>Les ressources doivent uniquement être conservées sur les AEM | Solution pouvant être peu connue des développeurs de SPA |
+| Via AEM | AEM gère les bibliothèques d&#39;injection lorsque cela est nécessaire<br>Les ressources doivent uniquement être conservées sur les AEM | Solution pouvant être peu connue des développeurs de SPA |
 | Via Adobe I/O Runtime | Solution mieux connue des développeurs SPA | Les ressources de bibliothèque cliente requises par l&#39;application, telles que CSS et JavaScript, devront être mises à disposition par le développeur AEM via la propriété [`allowProxy`](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)<br>Les ressources doivent être synchronisées entre AEM et Adobe I/O Runtime<br>Pour permettre la création de la SPA, un serveur proxy pour Adobe I/O Runtime peut être nécessaire. |
 
 ## Planification du rendu côté serveur {#planning-for-ssr}
