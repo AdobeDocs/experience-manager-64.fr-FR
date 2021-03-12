@@ -3,10 +3,10 @@ title: Traiter les ressources à l’aide de gestionnaires de supports et de wor
 description: En savoir plus sur les différents gestionnaires de médias et sur la façon de les utiliser dans les workflows afin d’effectuer des tâches sur les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: b6342b79e964daf1a05bb9ccfad06d8edaca4312
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 79%
+source-wordcount: '2228'
+ht-degree: 44%
 
 ---
 
@@ -15,24 +15,28 @@ ht-degree: 79%
 
 Adobe Experience Manager Assets fournit un ensemble de workflows et de gestionnaires de médias par défaut pour traiter les ressources. Un processus définit une tâche de gestion et de traitement des ressources standard, puis délègue les tâches spécifiques aux gestionnaires de médias, par exemple la génération de miniatures ou l’extraction de métadonnées.
 
-Un processus peut être défini et s’exécuter automatiquement lorsqu’un fichier d’un type ou d’un format particulier est téléchargé sur le serveur. Les étapes de traitement sont définies comme une série de gestionnaires de médias AEM Assets. AEM fournit certains [gestionnaires intégrés](#default-media-handlers) et des gestionnaires supplémentaires peuvent être [conçus et personnalisés](#creating-a-new-media-handler) ou définis en déléguant le processus à un [outil de ligne de commande](#command-line-based-media-handler).
+Un processus peut être défini et s’exécuter automatiquement lorsqu’un fichier d’un type ou d’un format particulier est téléchargé sur le serveur. Les étapes de traitement sont définies comme une série de gestionnaires de médias Experience ManagerAssets. Adobe Experience Manager fournit des [gestionnaires intégrés,](#default-media-handlers) et d&#39;autres [personnalisés développés](#creating-a-new-media-handler) ou définis en déléguant le processus à un [outil de ligne de commande](#command-line-based-media-handler).
 
-Les gestionnaires de médias sont des services d’AEM Assets qui effectuent des actions spécifiques sur les ressources. Par exemple, lorsqu’un fichier audio MP3 est chargé dans AEM, un workflow déclenche un gestionnaire MP3 qui extrait les métadonnées et génère une miniature. Les gestionnaires de médias sont généralement utilisés conjointement avec des workflows. La plupart des types MIME courants sont pris en charge dans AEM. Il est possible d’effectuer des tâches spécifiques sur les ressources en étendant/créant des workflows, en étendant/créant des gestionnaires de médias ou en désactivant/activant des gestionnaires de médias.
+Les gestionnaires de médias sont des services au sein des ressources Experience Manager qui effectuent des actions spécifiques sur les ressources. Par exemple, lorsqu’un fichier audio MP3 est téléchargé dans le Experience Manager, un processus déclenche un gestionnaire MP3 qui extrait les métadonnées et génère une miniature. Les gestionnaires de médias sont utilisés avec les workflows. La plupart des types MIME courants sont pris en charge dans le Experience Manager. Vous pouvez exécuter des tâches spécifiques sur des ressources en procédant de l’une des manières suivantes :
+
+* Extension ou création de workflows.
+* Extension ou création de gestionnaires de médias.
+* Désactivation ou activation des gestionnaires de médias.
 
 >[!NOTE]
 >
->Reportez-vous à la page [Formats pris en charge par Assets](assets-formats.md) pour une description de tous les formats pris en charge par AEM Assets, ainsi que des fonctionnalités prises en charge pour chaque format.
+>Voir la [page Formats pris en charge par les ressources](assets-formats.md) pour obtenir une description de tous les formats pris en charge par les ressources et fonctionnalités du Experience Manager pris en charge pour chaque format.
 
 ## Gestionnaires de médias par défaut {#default-media-handlers}
 
-Les gestionnaires de médias suivants sont disponibles dans AEM Assets et gèrent les types MIME les plus courants :
+Les gestionnaires de médias suivants sont disponibles dans les ressources du Experience Manager et traitent les types MIME les plus courants :
 
 | Nom du gestionnaire | Nom du service (dans la console système) | Types MIME pris en charge |
 |---|---|---|
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Important</b>  - Lorsque vous téléchargez un fichier MP3, il est  [traité à l’aide d’une bibliothèque](http://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html) tierce. La bibliothèque calcule une longueur approximative non précise si le MP3 a un débit variable (VBR). |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -57,13 +61,13 @@ Il est possible d’afficher les gestionnaires de médias actifs :
 
 ## Utiliser des gestionnaires de médias dans les workflows pour effectuer des tâches sur les ressources {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
-Les gestionnaires de médias sont des services généralement utilisés conjointement avec des workflows.
+Les gestionnaires de médias sont des services utilisés avec des workflows.
 
-AEM comporte des workflows par défaut pour le traitement des ressources. Pour les afficher, ouvrez la console de workflow et cliquez sur l’onglet **[!UICONTROL Modèles]** : les titres de workflow commençant par AEM Assets concernent des ressources.
+Le Experience Manager dispose de certains workflows par défaut pour traiter les ressources. Pour les vue, ouvrez la console de flux de travaux et cliquez sur l&#39;onglet **[!UICONTROL Modèles]** : les titres de processus qui début avec les ressources Experience Manager sont ceux qui sont spécifiques aux ressources.
 
 Les workflows existants peuvent être étendus et de nouveaux workflows peuvent être créés pour gérer les ressources en fonction d’exigences spécifiques.
 
-L’exemple suivant indique comment développer le workflow de **[!UICONTROL synchronisation AEM Assets]**, de sorte que des sous-ressources soient générées pour toutes les ressources, à l’exception des documents PDF.
+L’exemple suivant montre comment améliorer le flux de travaux de synchronisation **[!UICONTROL AEM Assets]** de sorte que les sous-ressources soient générées pour tous les fichiers à l’exception des documents PDF.
 
 ### Désactivation/activation d’un gestionnaire de médias {#disabling-enabling-a-media-handler}
 
@@ -78,9 +82,9 @@ Pour activer/désactiver un gestionnaire de médias :
 
 ### Création d’un gestionnaire de médias {#creating-a-new-media-handler}
 
-Pour prendre en charge un nouveau type de médias ou exécuter des tâches spécifiques sur une ressource, il est nécessaire de créer un gestionnaire de médias. Cette section décrit la procédure à suivre.
+Pour prendre en charge un nouveau type de média ou exécuter des tâches spécifiques sur un fichier, il est nécessaire de créer un gestionnaire de média. Cette section décrit la procédure à suivre.
 
-#### Classes et interfaces importantes   {#important-classes-and-interfaces}
+#### Classes et interfaces importantes  {#important-classes-and-interfaces}
 
 La meilleure façon de démarrer une implémentation est d’hériter d’une implémentation abstraite fournie qui prend en charge l’essentiel du traitement et qui fournit un comportement par défaut raisonnable : à savoir la classe `com.day.cq.dam.core.AbstractAssetHandler`.
 
@@ -98,18 +102,18 @@ Voici un exemple de modèle :
 
 L’interface et les classes sont les suivantes :
 
-* `com.day.cq.dam.api.handler.AssetHandler` : cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. L’ajout d’un nouveau type MIME requiert l’implémentation de cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
+* `com.day.cq.dam.api.handler.AssetHandler` : cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. Pour Ajouter un type MIME, vous devez implémenter cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
 * `com.day.cq.dam.core.AbstractAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes.
 * Classe `com.day.cq.dam.core.AbstractSubAssetHandler` :
    * Cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes, ainsi que la fonctionnalité commune d’extraction de sous-ressources.
    * Le meilleur moyen de début d’une implémentation consiste à hériter d’une implémentation abstraite fournie qui prend en charge la plupart des choses et fournit un comportement par défaut raisonnable : la classe com.day.cq.dam.core.AbstractAssetHandler.
    * Cette classe fournit déjà un descripteur de service abstrait. Donc, si vous héritez de cette classe et que vous utilisez le plug-in maven-sling-plugin, assurez-vous que vous avez défini l’indicateur inherit sur true.
 
-Les méthodes suivantes doivent être implémentées :
+Les méthodes suivantes doivent être mises en oeuvre :
 
 * `extractMetadata()` : cette méthode extrait toutes les métadonnées disponibles.
 * `getThumbnailImage()` : cette méthode crée une miniature de la ressource transmise.
-* `getMimeTypes()` : cette méthode renvoie le(s) type(s) MIME de la ressource.
+* `getMimeTypes()`: cette méthode renvoie les types MIME de ressource.
 
 Voici un exemple de modèle :
 
@@ -117,7 +121,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 L’interface et les classes sont les suivantes :
 
-* `com.day.cq.dam.api.handler.AssetHandler` : cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. L’ajout d’un nouveau type MIME requiert l’implémentation de cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
+* `com.day.cq.dam.api.handler.AssetHandler` : cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. Pour Ajouter un type MIME, vous devez implémenter cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
 * `com.day.cq.dam.core.AbstractAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes, ainsi que la fonctionnalité commune d’extraction de sous-ressources.
 
@@ -129,26 +133,26 @@ Procédez comme suit :
 
 Reportez-vous à [Outils de développement](../sites-developing/dev-tools.md) pour installer et configurer Eclipse avec un module externe Maven et pour configurer les dépendances nécessaires au projet Maven.
 
-Lorsque vous téléchargez un fichier txt dans AEM après avoir effectué la procédure suivante, les métadonnées du fichier sont extraites, et deux miniatures comportant un filigrane sont générées.
+Après avoir effectué la procédure suivante, lorsque vous téléchargez un fichier texte dans le Experience Manager, les métadonnées du fichier sont extraites et deux miniatures avec un filigrane sont générées.
 
 1. Dans Eclipse, créez le projet Maven `myBundle` :
 
    1. Dans la barre de menus, cliquez sur **[!UICONTROL Fichier > Nouveau > Autre]**.
-   1. Dans la boîte de dialogue, développez le dossier expert, sélectionnez Projet expert et cliquez sur **[!UICONTROL Suivant]**.
-   1. Cochez les cases Créer un projet simple et Utiliser les emplacements d’espace de travail par défaut, puis cliquez sur **[!UICONTROL Suivant]**.
-   1. Définissez le projet Maven :
+   1. Dans la boîte de dialogue, développez le dossier expert, sélectionnez Projet expert, puis cliquez sur **[!UICONTROL Suivant]**.
+   1. Cochez la case **[!UICONTROL Créer un projet simple]** et la case **[!UICONTROL Utiliser les emplacements Workspace par défaut]**, puis cliquez sur **[!UICONTROL Suivant]**.
+   1. Définissez le projet expert avec les valeurs suivantes :
 
       * Id de groupe : com.day.cq5.myhandler
       * Id d’artefact : myBundle
-      * Nom : Mon lot AEM
-      * Description : Nom de mon lot AEM
-   1. Cliquez sur **[!UICONTROL Terminer]**.
+      * Nom : Mon lot de Experience Manager
+      * Description : Ceci est mon lot de Experience Manager
+   1. Cliquez sur **[!UICONTROL Finish]** (Terminer). 
 
 
-1. Réglez le compilateur Java sur la version 1.5 :
+1. Réglez le compilateur Java™ sur la version 1.5 :
 
    1. Cliquez avec le bouton droit de la souris sur le projet `myBundle`, puis sélectionnez Propriétés.
-   1. Sélectionnez Compilateur Java et définissez les propriétés suivantes sur 1.5 :
+   1. Sélectionnez Compilateur Java™ et définissez les propriétés suivantes sur 1.5 :
 
       * Niveau de conformité du compilateur
       * Compatibilité des fichiers .class générés
@@ -273,15 +277,15 @@ Lorsque vous téléchargez un fichier txt dans AEM après avoir effectué la pro
     </dependencies>
    ```
 
-1. Créez le package `com.day.cq5.myhandler` contenant les classes Java sous `myBundle/src/main/java` :
+1. Créez le package `com.day.cq5.myhandler` contenant les classes Java™ sous `myBundle/src/main/java` :
 
    1. Sous myBundle, cliquez avec le bouton droit `src/main/java`, sélectionnez New, puis Package.
    1. Nommez-le `com.day.cq5.myhandler` et cliquez sur Terminer.
 
-1. Créez la classe Java `MyHandler`:
+1. Créez la classe Java™ `MyHandler` :
 
    1. Dans Eclipse, sous `myBundle/src/main/java`, cliquez avec le bouton droit sur le package `com.day.cq5.myhandler`, sélectionnez Nouveau, puis Classe.
-   1. Dans la boîte de dialogue, attribuez le nom MyHandler à la classe Java, puis cliquez sur Finish (Terminer). Eclipse crée le fichier MyHandler.java et l’ouvre.
+   1. Dans la boîte de dialogue, nommez la classe Java™ MyHandler et cliquez sur Terminer. Eclipse crée le fichier MyHandler.java et l’ouvre.
    1. Dans `MyHandler.java`, remplacez le code existant par le code suivant, puis enregistrez les modifications :
 
    ```java
@@ -424,20 +428,20 @@ Lorsque vous téléchargez un fichier txt dans AEM après avoir effectué la pro
    }
    ```
 
-1. Compilez la classe Java et créez le lot :
+1. Compilez la classe Java™ et créez le lot :
 
    1. Cliquez avec le bouton droit de la souris sur le projet myBundle, sélectionnez **[!UICONTROL Exécuter en tant que]**, puis **[!UICONTROL Maven Install]**.
    1. Le lot `myBundle-0.0.1-SNAPSHOT.jar` (contenant la classe compilée) est créé sous `myBundle/target`.
 
-1. Dans CRX Explorer, créez un nouveau noeud sous `/apps/myApp`. Nom = `install`, Type = `nt:folder`.
-1. Copiez le lot `myBundle-0.0.1-SNAPSHOT.jar` et stockez-le sous `/apps/myApp/install` (par exemple avec WebDAV). Le nouveau gestionnaire de texte est à présent actif dans AEM.
+1. Dans CRX Explorer, créez un noeud sous `/apps/myApp`. Nom = `install`, Type = `nt:folder`.
+1. Copiez le lot `myBundle-0.0.1-SNAPSHOT.jar` et stockez-le sous `/apps/myApp/install` (par exemple avec WebDAV). Le nouveau gestionnaire de texte est désormais principal en Experience Manager.
 1. Dans votre navigateur, ouvrez la console de gestion web Apache Felix. Sélectionnez l’onglet Composants et désactivez le gestionnaire de texte par défaut `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Gestionnaire de médias en ligne de commande {#command-line-based-media-handler}
 
-AEM vous permet d’exécuter n’importe quel outil de ligne de commande dans un workflow pour convertir des ressources (comme ImageMagick) et ajouter le nouveau rendu à la ressource. Vous avez uniquement besoin d’installer l’outil de ligne de commande sur le disque hébergeant le serveur AEM, puis d’ajouter une étape au workflow et de la configurer. Le processus appelé, `CommandLineProcess`, permet également d’effectuer un filtrage en fonction de types MIME spécifiques et de créer plusieurs miniatures sur la base du nouveau rendu.
+Experience Manager vous permet d’exécuter tout outil de ligne de commande au sein d’un processus pour convertir des ressources (tel que ImageMagick) et ajouter le nouveau rendu à la ressource. Installez l’outil de ligne de commande sur le disque hébergeant le serveur Experience Manager et ajoutez et configurez une étape de processus au processus. Le processus appelé, appelé `CommandLineProcess`, s’filtres en fonction de types MIME spécifiques et crée plusieurs miniatures en fonction du nouveau rendu.
 
-Les conversions suivantes peuvent être automatiquement exécutées et stockées dans AEM Assets :
+Les conversions suivantes peuvent être automatiquement exécutées et stockées dans les ressources du Experience Manager :
 
 * Transformation EPS et AI à l’aide d’[ImageMagick](https://www.imagemagick.org/script/index.php) et de [Ghostscript](https://www.ghostscript.com/)
 * Transcodage vidéo FLV à l’aide de [FFmpeg](https://ffmpeg.org/)
@@ -446,33 +450,33 @@ Les conversions suivantes peuvent être automatiquement exécutées et stockées
 
 >[!NOTE]
 >
->Sur les systèmes autres que Windows, l’outil FFMpeg renvoie une erreur lors de la génération de rendus pour une ressource vidéo dont le nom de fichier contient une apostrophe (’). Si le nom de votre fichier vidéo comprend une apostrophe, supprimez-la avant de charger le fichier dans AEM.
+>Sur les systèmes autres que Windows, l’outil FFMpeg renvoie une erreur lors de la génération de rendus pour une ressource vidéo dont le nom de fichier contient une apostrophe (’). Si le nom de votre fichier vidéo contient un guillemet simple, supprimez-le avant de le télécharger vers le Experience Manager.
 
 Le processus `CommandLineProcess` effectue les opérations suivantes par ordre d’apparition dans la liste :
 
 * Filtre le fichier en fonction des types MIME indiqués, le cas échéant.
-* Crée un répertoire temporaire sur le disque hébergeant le serveur AEM.
+* Crée un répertoire temporaire sur le disque hébergeant le serveur Experience Manager.
 * Diffuse le fichier d’origine vers le répertoire temporaire.
-* Exécute la commande définie par les arguments de l’étape. La commande est exécutée dans le répertoire temporaire avec les autorisations de l’utilisateur exécutant AEM.
-* Renvoie le résultat dans le dossier de rendu du serveur AEM.
+* Exécute la commande définie par les arguments de l’étape. La commande est exécutée dans le répertoire temporaire avec les autorisations de l’utilisateur exécutant le Experience Manager.
+* Rend le résultat en continu dans le dossier de rendu du serveur Experience Manager.
 * Supprime le répertoire temporaire.
 * Crée des miniatures basées sur ces rendus, si spécifié. Le nombre et les dimensions des miniatures sont définis par les arguments de l’étape.
 
 ### Exemple d’utilisation d’ImageMagick {#an-example-using-imagemagick}
 
-L’exemple suivant montre comment configurer l’étape de processus de ligne de commande de sorte qu’à chaque fois qu’une ressource de type MIME gif ou tiff est ajoutée à /content/dam sur le serveur AEM, une image inversée de l’original est créée avec trois miniatures supplémentaires (140x100, 48x48 et 10x250).
+L&#39;exemple suivant montre comment configurer l&#39;étape de processus de ligne de commande. Chaque fois qu’un fichier avec un fichier de type MIME gif ou tiff est ajouté à `/content/dam` sur le serveur Experience Manager, une image inversée de l’original est créée avec trois autres miniatures (140x100, 48x48 et 10x250).
 
-Pour ce faire, utilisez ImageMagick. Installez ImageMagick sur le disque hébergeant le serveur AEM :
+Pour ce faire, utilisez ImageMagick. Installez ImageMagick sur le disque hébergeant le serveur Experience Manager :
 
 1. Installation d’ImageMagick. Pour plus d’informations, consultez la [documentation ImageMagick](https://www.imagemagick.org/script/download.php).
-1. Configurez l’outil afin de pouvoir exécuter convert sur la ligne de commande.
+1. Configurez l&#39;outil de sorte que vous puissiez exécuter `convert` sur la ligne de commande.
 1. Pour vérifier si cet outil est installé correctement, exécutez la commande `convert -h` sur la ligne de commande.
 
-   L’écran d’aide qui s’affiche alors répertorie toutes les options possibles de l’outil convert.
+   Il affiche un écran d’aide contenant toutes les options possibles de l’outil de conversion.
 
    >[!NOTE]
    >
-   >Dans certaines versions de Windows (Windows SE, par exemple), il se peut que la commande convert ne s’exécute pas, car elle est en conflit avec l’utilitaire de conversion natif de Windows. Dans ce cas, indiquez le chemin complet de l’utilitaire ImageMagick utilisé pour convertir les fichiers image en miniatures. Par exemple, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
+   >Dans certaines versions de Windows® (par exemple Windows® SE), la commande convert ne s’exécute pas car elle est en conflit avec l’utilitaire de conversion natif qui fait partie de l’installation de Windows®. Dans ce cas, indiquez le chemin complet de l’utilitaire ImageMagick utilisé pour convertir les fichiers image en miniatures. Par exemple, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
 1. Pour vérifier si l&#39;outil s&#39;exécute correctement, ajoutez une image JPG au répertoire de travail et exécutez la commande `convert <image-name>.jpg -flip <image-name>-flipped.jpg` sur la ligne de commande.
 
@@ -500,15 +504,15 @@ Cette section décrit la procédure à suivre pour définir les **[!UICONTROL Ar
 
 | Argument-Format | Description |
 |---|---|
-| mime:&lt;mime-type> | Argument facultatif. Le processus est appliqué si la ressource a le même type MIME que celui de l’argument. <br>Plusieurs types MIME peuvent être définis. |
+| mime:&lt;mime-type> | Argument facultatif. Le processus est appliqué si la ressource a le même type MIME que l’un des arguments. <br>Plusieurs types MIME peuvent être définis. |
 | tn:&lt;width>:&lt;height> | Argument facultatif. Le processus crée une miniature avec les dimensions définies dans l’argument. <br>Plusieurs miniatures peuvent être définies. |
-| cmd: &lt;command> | Définit la commande qui sera exécutée. La syntaxe dépend de l’outil de ligne de commande. Une seule commande peut être définie. <br>Vous pouvez utiliser les variables suivantes pour créer la commande :<br>`${filename}` : nom du fichier d’entrée, par exemple original.jpg  <br> `${file}`: nom de chemin d’accès complet du fichier d’entrée, par exemple /tmp/cqdam0816.tmp/original.jpg  <br> `${directory}`: du fichier d’entrée, par exemple /tmp/cqdam0816.tmp  <br>`${basename}`: nom du fichier d’entrée sans son extension, par exemple original  <br>`${extension}`: extension du fichier d’entrée, par exemple jpg |
+| cmd: &lt;command> | Définit la commande exécutée. La syntaxe dépend de l’outil de ligne de commande. Une seule commande peut être définie. <br>Vous pouvez utiliser les variables suivantes pour créer la commande :<br>`${filename}` : nom du fichier d’entrée, par exemple original.jpg  <br> `${file}`: nom de chemin d’accès complet du fichier d’entrée, par exemple /tmp/cqdam0816.tmp/original.jpg  <br> `${directory}`: du fichier d’entrée, par exemple /tmp/cqdam0816.tmp  <br>`${basename}`: nom du fichier d’entrée sans son extension, par exemple original  <br>`${extension}`: extension du fichier d’entrée, par exemple jpg |
 
-Par exemple, si ImageMagick est installé sur le disque hébergeant le serveur AEM et que vous créez une étape de processus en utilisant **CommandLineProcess** en tant qu’implémentation et les valeurs suivantes en tant qu’**arguments de processus** :
+Par exemple, si ImageMagick est installé sur le disque hébergeant le serveur Experience Manager et si vous créez une étape de processus en utilisant **CommandLineProcess** comme Implémentation et les valeurs suivantes comme **Traiter Arguments** :
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-alors, lors de l’exécution du workflow, l’étape s’applique uniquement aux ressources dont les types MIME sont image/gif ou mime:image/tiff, elle crée une image inversée de l’original, la convertit en .jpg et génère trois miniatures aux dimensions suivantes : 140x100, 48x48 et 10x250.
+Ensuite, lorsque le flux de travail s’exécute, l’étape s’applique uniquement aux ressources dont les types mime sont `image/gif` ou `mime:image/tiff`. Il crée une image inversée de l’original, la convertit en .jpg et crée trois miniatures ayant les dimensions suivantes : 140x100, 48x48 et 10x250.
 
 Utilisez les [!UICONTROL Arguments de processus] suivants pour créer les trois miniatures standards à l’aide d’ImageMagick :
 
