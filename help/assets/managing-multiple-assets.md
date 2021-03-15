@@ -3,10 +3,10 @@ title: Modification en masse des métadonnées de plusieurs ressources et collec
 description: Découvrez comment modifier simultanément les métadonnées de nombreux fichiers et collections afin de propager rapidement les modifications de métadonnées courantes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
+source-git-commit: 184aa0a7fcd3f89510295ddaff28624b8306b7d2
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 77%
+source-wordcount: '436'
+ht-degree: 60%
 
 ---
 
@@ -32,28 +32,17 @@ Pour personnaliser la page des propriétés de métadonnées, notamment ajouter,
 
 1. Dans l’interface utilisateur Ressources, accédez à l’emplacement des ressources à modifier.
 1. Sélectionnez les ressources dont vous souhaitez modifier les propriétés communes.
-1. Sur la barre d’outils, appuyez/cliquez sur l’icône **[!UICONTROL Propriétés]** pour ouvrir la page des propriétés des ressources sélectionnées.
-
-   >[!NOTE]
-   >
-   >Lorsque vous sélectionnez plusieurs ressources, la plus petite forme parent commune est sélectionnée. En d’autres termes, la page de propriétés affiche uniquement les champs de métadonnées communs aux pages de propriétés de tous les fichiers individuels.
-
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]** pour ouvrir la page des propriétés des ressources sélectionnées.
 1. Modifiez les propriétés de métadonnées des ressources sélectionnées dans les différents onglets.
-1. Pour afficher l’éditeur de métadonnées pour une ressource spécifique, désélectionnez les autres ressources de la liste. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la ressource particulière.
+1. Pour vue des métadonnées d’une ressource spécifique, annulez la sélection des ressources restantes dans la liste. Si vous annulez la sélection de quelques ressources sur la page [!UICONTROL Propriétés], les métadonnées de ces ressources ne sont pas mises à jour.
+1. Pour sélectionner un autre schéma de métadonnées pour les ressources, cliquez sur **[!UICONTROL Paramètres]** dans la barre d’outils, puis sélectionnez un schéma. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes dans les champs contenant plusieurs valeurs, sélectionnez **[!UICONTROL Mode d’ajout]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Cliquez sur **[!UICONTROL Envoyer]**.
 
-   >[!NOTE]
-   >
-   >* Dans la page des propriétés, vous pouvez supprimer des ressources de la liste des ressources en les désélectionnant. La liste des ressources contient toutes les ressources sélectionnées par défaut. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
-   >* En haut de la liste des ressources, cochez la case située en regard de l’option **Titre** pour passer de la sélection des ressources à l’effacement de la liste, et inversement.
+![Le schéma de métadonnées s’applique en bloc à plusieurs fichiers](assets/metadata-schema-bulk-edit.gif)
 
-
-1. Pour sélectionner un schéma de métadonnées différent pour les ressources, appuyez/cliquez sur l’icône **[!UICONTROL Paramètres]** dans la barre d’outils, puis sélectionnez le schéma souhaité.
-1. Enregistrez les modifications.
-1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes dans les champs contenant plusieurs valeurs, sélectionnez **[!UICONTROL Mode d’ajout]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Appuyez/cliquez sur **[!UICONTROL Envoyer]**.
-
-   >[!CAUTION]
-   >
-   >Pour les champs à une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
+>[!CAUTION]
+>
+>Pour les champs à une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
 
 ## Configuration du nombre maximal de paramètres pour la mise à jour des métadonnées en masse {#configure-limit-for-bulk-metadata-update}
 
