@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
+role: Développeur
 translation-type: tm+mt
-source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ Les applications clientes peuvent appeler par programmation les services AEM For
 
 Les exigences de votre entreprise déterminent la méthode d’appel à utiliser. Par exemple, à l’aide de l’API Java, vous pouvez intégrer des fonctionnalités AEM Forms à vos applications d’entreprise Java, telles que les beans d’entité Java et de message. De même, vous pouvez intégrer la fonctionnalité AEM Forms dans des projets .NET (ou d&#39;autres projets développés avec des environnements de développement qui prennent en charge les normes de service Web) à l&#39;aide de services Web.
 
-Les services nécessitent l’exécution d’un conteneur de service, de la même manière que les EJB (Enterprise JavaBeans™) nécessitent un conteneur J2EE. AEM Forms ne comprend qu’une seule implémentation d’un conteneur de service. Le conteneur de service est chargé de gérer la durée de vie d’un service, notamment de le déployer et de s’assurer que toutes les demandes sont envoyées au service approprié. Il gère également les documents qu’un service consomme ou produit.
+Les services nécessitent l’exécution d’un conteneur de service, de la même manière que les EJB (Enterprise JavaBeans™) nécessitent un conteneur J2EE. AEM Forms ne comprend qu’une seule mise en oeuvre d’un conteneur de service. Le conteneur de service est chargé de gérer la durée de vie d’un service, notamment de le déployer et de s’assurer que toutes les demandes sont envoyées au service approprié. Il gère également les documents qu’un service consomme ou produit.
 
 >[!NOTE]
 >
