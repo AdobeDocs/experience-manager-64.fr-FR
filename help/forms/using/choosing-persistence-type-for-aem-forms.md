@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '399'
 ht-degree: 94%
 
 ---
@@ -63,7 +64,7 @@ TarMK est conçu pour les performances, tandis que MongoMK et RDBMK sont conçus
 
 Pour obtenir la liste des Microkernels pris en charge, voir [Exigences techniques d’AEM Forms on OSGi](/help/sites-deploying/technical-requirements.md) ou [Combinaisons de plates-formes prises en charge AEM Forms on JEE](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
-## Mongo ou Microkernel de base de données relationnelle versus TarMK  {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
+## Mongo ou Microkernel de base de données relationnelle versus TarMK {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
 
 Un environnement AEM Forms (en grappes) évolutif est un ensemble de deux instances d’auteur actives ou plus, configurées horizontalement. Vous pouvez choisir d’exécuter plus d’une instance d’auteur si un seul serveur prenant en charge toutes les activités de création simultanées n’est plus fiable.
 
