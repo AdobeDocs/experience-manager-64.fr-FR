@@ -7,16 +7,17 @@ uuid: aa261e65-a1ec-402b-80de-0ba8a294e315
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1547'
 ht-degree: 80%
 
 ---
 
 
-# Configuration de l’action d’envoi  {#configuring-the-submit-action}
+# Configuration de l’action d’envoi {#configuring-the-submit-action}
 
 ## Présentation des actions d’envoi {#introduction-to-submit-actions}
 
@@ -100,7 +101,7 @@ L’action d’envoi **[!UICONTROL Envoyer un courrier électronique]** envoie u
 >[!NOTE]
 Tous les champs de formulaire doivent avoir des noms d’élément différents, même s’ils sont définis sur des panneaux différents, afin d’inclure les données de formulaire dans un message électronique.
 
-## Envoyer un fichier PDF par courrier électronique  {#send-pdf-via-email}
+## Envoyer un fichier PDF par courrier électronique {#send-pdf-via-email}
 
 L’action d’envoi **[!UICONTROL Envoyer le PDF par courrier électronique]** envoie un message électronique avec un fichier PDF contenant des données de formulaire à un ou plusieurs destinataires lors d’un envoi réussi du formulaire.
 
