@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 759068fa-dc1b-4cf5-bc7b-62b8c5464831
+feature: Document Security
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '687'
 ht-degree: 93%
 
 ---
@@ -63,7 +64,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion s
 
    Cliquez sur **Enregistrer**. AEM est activé pour effectuer une recherche de documents PDF protégés par la sécurité documentaire.
 
-### Configurer le groupe de SDK client Adobe LiveCycle à l’aide de l’authentification mutuelle  {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
+### Configurer le groupe de SDK client Adobe LiveCycle à l’aide de l’authentification mutuelle {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
 1. Activez l’authentification mutuelle pour AEM Forms on JEE. Pour plus d’informations, voir [CAC et authentification mutuelle](https://helpx.adobe.com/fr/livecycle/kb/cac-mutual-authentication.html).
 1. Ouvrez la console Web AEM. L’URL est `https://[server]:[port]/system/console/configMgr`.
