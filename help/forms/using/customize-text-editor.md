@@ -8,11 +8,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
+feature: Correspondence Management
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 61%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +36,7 @@ Pour ce faire, vous devez :
 1. [Personnaliser des polices en modifiant le fichier tbxeditor-config.xml dans CRX](#customizefonts)
 1. [Ajouter des polices personnalisées sur l’ordinateur client](#addcustomfonts)
 
-## Personnaliser des polices en modifiant le fichier tbxeditor-config.xml dans CRX  {#customizefonts}
+## Personnaliser des polices en modifiant le fichier tbxeditor-config.xml dans CRX {#customizefonts}
 
 Pour personnaliser des polices en modifiant le fichier tbxeditor-config.xml, procédez comme suit :
 
