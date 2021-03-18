@@ -8,10 +8,11 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6352'
+source-wordcount: '6354'
 ht-degree: 80%
 
 ---
@@ -695,7 +696,7 @@ Pour copier-coller des règles, procédez comme suit :
 
 1. Appuyez sur **Terminé** pour enregistrer la règle.
 
-## Expressions imbriquées  {#nestedexpressions}
+## Expressions imbriquées {#nestedexpressions}
 
 L’éditeur de règles vous permet d’utiliser plusieurs opérateurs ET et OU afin de créer des règles imbriquées. Vous pouvez fusionner plusieurs opérateurs ET et OU dans les règles.
 
