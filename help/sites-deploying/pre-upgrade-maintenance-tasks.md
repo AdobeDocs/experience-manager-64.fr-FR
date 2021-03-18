@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
+feature: Mise à niveau
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2179'
 ht-degree: 76%
 
 ---
@@ -38,7 +39,7 @@ Avant de démarrer la mise à niveau, il est important de suivre les tâches de 
 * [Suppression des utilisateurs susceptibles de gêner la mise à niveau](pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
 * [Effectuez la rotation des fichiers journaux](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
 
-## Vérification de l’espace disque  {#ensure-sufficient-disk-space}
+## Vérification de l’espace disque {#ensure-sufficient-disk-space}
 
 Lors de l’exécution de la mise à niveau, en plus des activités de mise à niveau de contenu et du code, une migration du référentiel doit être effectuée. La migration crée une copie du référentiel dans le nouveau format tar de segment. Par conséquent, vous devez disposer de suffisamment d’espace disque pour conserver une seconde version du référentiel, potentiellement plus grande.
 
