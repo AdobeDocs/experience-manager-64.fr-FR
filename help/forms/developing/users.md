@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
+role: Développeur
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6243'
+source-wordcount: '6244'
 ht-degree: 4%
 
 ---
@@ -381,7 +382,7 @@ Supprimez des utilisateurs à l’aide de l’API Service Directory Manager (ser
 
 [Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Création de groupes   {#creating-groups}
+## Création de groupes  {#creating-groups}
 
 Vous pouvez utiliser l’API Service Directory Manager (Java et le service Web) pour créer par programmation des groupes AEM Forms. Après avoir créé un groupe, vous pouvez l’utiliser pour effectuer une opération de service nécessitant un groupe. Par exemple, vous pouvez affecter un utilisateur au nouveau groupe. (Voir [Gestion des utilisateurs et des groupes](users.md#managing-users-and-groups).)
 
@@ -744,7 +745,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
  </thead> 
  <tbody>
   <tr> 
-   <td><p>3</p></td> 
+   <td><p>1</p></td> 
    <td><p>L’utilisateur accède à un site Web et spécifie un nom d’utilisateur et un mot de passe. Ces informations sont envoyées à un serveur d’applications J2EE hébergeant AEM Forms.</p></td> 
   </tr> 
   <tr> 
@@ -870,7 +871,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
  </thead> 
  <tbody>
   <tr> 
-   <td><p>3</p></td> 
+   <td><p>1</p></td> 
    <td><p>Une application cliente demande à AEM Forms d’effectuer une opération de synchronisation.</p></td> 
   </tr> 
   <tr> 
@@ -878,7 +879,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
    <td><p>AEM Forms effectue une opération de synchronisation.</p></td> 
   </tr> 
   <tr> 
-   <td><p>3</p></td> 
+   <td><p>1</p></td> 
    <td><p>Les informations utilisateur sont mises à jour.</p></td> 
   </tr> 
   <tr> 
