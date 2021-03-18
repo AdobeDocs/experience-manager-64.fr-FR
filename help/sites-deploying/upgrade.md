@@ -10,16 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
+feature: Mise à niveau
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '716'
 ht-degree: 75%
 
 ---
 
 
-# Mise à niveau vers AEM 6.4{#upgrading-to-aem}
+# Mise à niveau vers AEM 6.4{#upgrading-to-aem}
 
 Dans cette section, nous présentons la mise à niveau d’une installation AEM vers AEM 6.4 :
 
@@ -52,7 +53,7 @@ AEM 6.0 a introduit le nouveau référentiel Jackrabbit Oak. Les gestionnaires 
 
 Si vous utilisez Asset Insights et que vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.2, les ressources doivent être migrées et doivent posséder des ID générés via un bean JMX. Lors de nos tests internes, 125 000 ressources ont été migrées en 1 heure dans un environnement TarMK, mais les résultats peuvent varier. 
 
-aem 6.3 a introduit un nouveau format pour le `SegmentNodeStore`, qui est la base de l&#39;implémentation de TarMK. Si vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.3, une migration du référentiel est nécessaire dans le cadre de la mise à niveau, ce qui implique des interruptions du système.
+AEM 6.3 a introduit un nouveau format pour le `SegmentNodeStore`, qui est la base de l&#39;implémentation de TarMK. Si vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.3, une migration du référentiel est nécessaire dans le cadre de la mise à niveau, ce qui implique des interruptions du système.
 
 L’équipe technique d’Adobe estime la durée du processus à environ 20 minutes. Veuillez noter que la réindexation n’est pas requise. En outre, une nouvelle version de l’outil crx2oak a été publiée pour fonctionner avec le nouveau format de référentiel.
 
@@ -70,8 +71,8 @@ Le nettoyage périodique des révisions et de l’entrepôt de données sont dé
 
 Pour plus d’informations sur les autres points modifiés dans les versions récentes d’AEM, consultez les notes de mise à jour complètes :
 
-* [https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html)
-* [https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html)
+* [https://helpx.adobe.com/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html)
+* [https://helpx.adobe.com/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
 * [https://helpx.adobe.com/fr/experience-manager/6-4/release-notes.html ](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes.html )
 
 ## Vue d’ensemble de la mise à niveau {#upgrade-overview}
