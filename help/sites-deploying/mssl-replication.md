@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1457'
 ht-degree: 93%
 
 ---
@@ -45,7 +46,7 @@ Vous avez besoin d’une clé privée et d’un certificat public pour les insta
 * Les certificats doivent être contenus au format pkcs#12 ou JKS. En outre, le certificat contenu dans le format « CER » peut également être ajouté à Granite Truststore.
 * Les certificats peuvent être auto-signés ou signés par une autorité de certification reconnue.
 
-### Format JKS  {#jks-format}
+### Format JKS {#jks-format}
 
 Générez une clé privée et un certificat au format JKS. La clé privée est stockée dans un fichier KeyStore, et le certificat est stocké dans un fichier TrustStore. Utilisez l’utilitaire [Java`keytool` ](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) pour les créer.
 
