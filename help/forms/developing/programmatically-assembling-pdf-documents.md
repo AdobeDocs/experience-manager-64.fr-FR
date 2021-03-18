@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
+role: Développeur
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2139'
 ht-degree: 2%
 
 ---
