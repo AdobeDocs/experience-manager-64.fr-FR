@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
+role: Développeur
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2371'
 ht-degree: 1%
 
 ---
@@ -52,7 +53,7 @@ Vous pouvez également spécifier les emplacements absolus de ces fichiers JS et
 
 >[!NOTE]
 >
->Il n’est pas recommandé de mélanger les méthodes de référencement de ces fichiers. En d’autres termes, tous les URI doivent être référencés à l’aide du mot-clé `FSToolBarURI` ou d’un emplacement absolu.
+>Il n’est pas recommandé de mélanger les méthodes de référencement de ces fichiers. Autrement dit, tous les URI doivent être référencés à l&#39;aide du mot-clé `FSToolBarURI` ou d&#39;un emplacement absolu.
 
 Vous pouvez obtenir les fichiers JS et CSS en ouvrant le fichier adobe-forms-&lt;serveur d’applications>.ear. Dans ce fichier, ouvrez le fichier adobe-forms-res.war. Tous ces fichiers se trouvent dans le fichier WAR. Le fichier adobe-forms-&lt;serveur d’applications>.ear se trouve dans le dossier d’installation AEM forms (C:\ is the installation directory). Vous pouvez ouvrir le fichier adobe-forms-&lt;serveur d’applications>.ear à l’aide d’un outil d’extraction de fichiers tel que WinRAR.
 
