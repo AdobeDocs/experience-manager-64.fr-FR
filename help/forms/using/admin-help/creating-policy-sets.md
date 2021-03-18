@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
+feature: Document Security
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1326'
 ht-degree: 100%
 
 ---
@@ -44,7 +45,7 @@ Lorsque vous créez des jeux de stratégies, vous affectez à des utilisateurs l
 
 L’installation de Document Security crée un jeu de stratégies par défaut, appelé *Jeu de stratégies global*. Ce jeu de stratégies est géré par l’administrateur ayant installé le logiciel ou par le coordinateur de jeux de stratégies désigné pour ce jeu de stratégies.
 
-## Création d’un jeu de stratégies  {#create-a-policy-set}
+## Création d’un jeu de stratégies {#create-a-policy-set}
 
 Le Jeu de stratégies global est le seul jeu de stratégies par défaut créé lors de l’installation. Vous pouvez créer d’autres jeux de stratégies et ajouter des stratégies, des utilisateurs, des coordinateurs de jeux de stratégies et des éditeurs. Après avoir créé un jeu de stratégies, vous pouvez créer des stratégies à l’intérieur du jeu.
 
