@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2804'
 ht-degree: 83%
 
 ---
@@ -46,7 +47,7 @@ Voir [Configuration de la consommation de rubrique](/help/sites-deploying/offloa
 
 Lorsque la structure de déchargement sélectionne un cluster pour effectuer une tâche et que ce cluster est composé de plusieurs instances, Sling Distribution détermine quelle instance du cluster exécute la tâche.
 
-### Charges utiles de la tâche  {#job-payloads}
+### Charges utiles de la tâche {#job-payloads}
 
 La structure de déchargement prend en charge les charges utiles de la tâche qui associent des tâches aux ressources du référentiel. Les charges de la tâche sont utiles lorsque des tâches sont créées pour le traitement des ressources et que la tâche est déchargée sur un autre ordinateur.
 
