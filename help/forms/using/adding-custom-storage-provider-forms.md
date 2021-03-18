@@ -8,11 +8,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
+feature: Portail Formulaires
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 75%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -97,7 +98,7 @@ public interface DraftDataService {
 }
 ```
 
-## Service Submission Data   {#submission-data-service}
+## Service Submission Data  {#submission-data-service}
 
 Pour personnaliser le stockage des données utilisateur pour les envois, vous devez implémenter toutes les méthodes de l’interface `SubmitDataService`. L’exemple de code suivant décrit les méthodes et les arguments.
 
