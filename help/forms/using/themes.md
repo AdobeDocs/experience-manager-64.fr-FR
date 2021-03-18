@@ -8,11 +8,12 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: c5933e2a-fb8d-4d1b-a301-c8a2bc7ee226
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6041'
-ht-degree: 80%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -94,7 +95,7 @@ Liste de propriétés des métadonnées d’un thème (sur la page Propriétés 
   </tr> 
   <tr> 
    <td>1.</td> 
-   <td>Title (Titre)</td> 
+   <td>Titre</td> 
    <td>Oui</td> 
    <td>Nom d’affichage du thème.</td> 
   </tr> 
@@ -193,7 +194,7 @@ Liste de propriétés des métadonnées d’un thème (sur la page Propriétés 
  </tbody> 
 </table>
 
-## A propos de l’éditeur de thème  {#about-the-theme-editor}
+## A propos de l’éditeur de thème {#about-the-theme-editor}
 
 AEM Forms est assorti d’un éditeur de thème. Il s’agit d’une interface conviviale pour les utilisateurs professionnels et les concepteurs Web/développeurs qui fournit les fonctionnalités nécessaires pour spécifier le style de divers formulaires adaptatifs et éléments de communication interactifs facilement. Lorsque vous créez un thème, il est stocké en tant qu’entité distincte telle que les formulaires, les communications interactives, les lettres, les fragments de document et les dictionnaires de données.
 
@@ -398,7 +399,7 @@ Les options de personnalisation des styles d’état varient en fonction des dif
  <tbody> 
   <tr> 
    <td><strong>Propriété</strong></td> 
-   <td><strong>Utilisation</strong></td> 
+   <td><strong>Utilisez</strong></td> 
   </tr> 
   <tr> 
    <td><p>Dimensions et position</p> </td> 
