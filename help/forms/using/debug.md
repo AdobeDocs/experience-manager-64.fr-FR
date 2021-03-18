@@ -9,16 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '832'
 ht-degree: 72%
 
 ---
 
 
-# Débogage des formulaires HTML5  {#debugging-html-forms}
+# Débogage des formulaires HTML5 {#debugging-html-forms}
 
 Ce document comprend plusieurs scénarios de résolution des problèmes. Pour chaque scénario, certaines étapes sont fournies pour résoudre le problème. Procédez comme suit et, si le problème persiste, configurez le journal pour obtenir et parcourir les journaux et rechercher les erreurs/avertissements. Pour plus d’informations sur la journalisation des formulaires HTML5, voir [Génération de journaux pour les formulaires HTML5](/help/forms/using/enable-logs.md).
 
@@ -104,7 +105,7 @@ Vérifiez les paramètres suivants :
 
 1. Si les fichiers mentionnés ne sont pas disponibles, réinstallez le package adobe-lc-forms-runtime-pkg-&lt;version>.zip.
 
-### Problème : erreur inattendue rencontrée  {#problem-unexpected-error-encountered}
+### Problème : erreur inattendue rencontrée {#problem-unexpected-error-encountered}
 
 1. Dans l’URL du formulaire, ajoutez un paramètre de requête debugClientLibs et définissez sa valeur sur true (par exemple : https://&lt;serveur>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;chemin d’accès>&amp;template=&lt;nom du fichier xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. Dans le navigateur de bureau, comme Chrome, accédez à Outils de développement -> Console.
