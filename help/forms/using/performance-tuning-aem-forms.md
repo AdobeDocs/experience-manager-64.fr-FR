@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
+role: Administrator
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '901'
 ht-degree: 79%
 
 ---
 
 
-# Réglage des performances du serveur AEM Forms  {#performance-tuning-of-aem-forms-server}
+# Réglage des performances du serveur AEM Forms {#performance-tuning-of-aem-forms-server}
 
 Cet article explique les stratégies et les recommandations que vous pouvez implémenter pour réduire les ralentissements et optimiser les performances du déploiement d’AEM Forms.
 
@@ -46,7 +47,7 @@ Les paramètres de cache par défaut d’AEM Forms peuvent ne pas suffire pour o
 >
 >Si vous utilisez le répartiteur AEM pour mettre en cache des formulaires adaptatifs, il met également en cache les formulaires adaptatifs contenant des formulaires avec des données préremplies. Si ces formulaires sont diffusés à partir du cache du répartiteur AEM, il se peut que des données préremplies ou obsolètes soient diffusées aux utilisateurs. Par conséquent, utilisez le répartiteur AEM pour mettre en cache des formulaires adaptatifs qui n’utilisent pas de données pré-renseignées. De plus, un cache de répartiteur n’invalide pas automatiquement les fragments mis en cache. Par conséquent, ne l’utilisez pas pour mettre en cache des fragments de formulaire. Pour de tels formulaires et fragments, utilisez le [Cache de formulaires adaptatifs](/help/forms/using/configure-adaptive-forms-cache.md).
 
-## Paramètres JVM     {#jvm-parameters}
+## Paramètres JVM    {#jvm-parameters}
 
 Pour des performances optimales, il est recommandé d’utiliser les arguments `init` JVM suivants pour configurer `Java heap` et `PermGen`.
 
@@ -59,7 +60,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 >[!NOTE]
 >
->Les paramètres recommandés sont pour le JDK Windows 2008 R2 8 Core et Oracle HotSpot 1.7 (64 bits) et doivent être augmentés ou réduits selon votre configuration système.
+>Les paramètres recommandés concernent le JDK Core et HotSpot 1.7 (64 bits) de Windows 2008 R2 8 et Oracle et doivent être augmentés ou réduits selon votre configuration système.
 
 ## Utilisation d’un serveur Web {#using-a-web-server}
 
