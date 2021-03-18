@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1101'
 ht-degree: 5%
 
 ---
@@ -24,7 +25,7 @@ MySQL est une base de données relationnelle principalement utilisée pour le su
 
 Ces instructions décrivent comment se connecter au serveur MySQL, établir la base de données d’activation et renseigner la base de données avec les données initiales.
 
-## Conditions requises {#requirements}
+## Conditions préalables {#requirements}
 
 Avant de configurer la fonction d’activation de MySQL pour les communautés, veillez à
 
@@ -113,8 +114,8 @@ Les scripts SQL sont obtenus à l’aide du CRXDE Lite sur l’instance d’aute
 1. Accéder au CRXDE Lite
    * Par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 1. Développez le dossier `/libs/social/config/scorm/`.
-1. Téléchargement `database_scormengine.sql`
-1. Téléchargement `database_scorm_integration.sql`
+1. Télécharger `database_scormengine.sql`
+1. Télécharger `database_scorm_integration.sql`
 
 ![chlimage_1-331](assets/chlimage_1-331.png)
 
