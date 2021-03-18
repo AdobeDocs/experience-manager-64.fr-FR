@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
+feature: Document Security
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '835'
 ht-degree: 98%
 
 ---
@@ -28,7 +29,7 @@ Vous pouvez utiliser des extensions Reader pour activer des fonctions interactiv
 
 Vous pouvez utiliser la bibliothèque portable de protection pour appliquer des stratégies à des documents, sans avoir recours aux document transitant par le réseau. Seules les informations d’identification de sécurité et les stratégies de protection transitent sur le réseau. Le document ne quitte jamais le client et les stratégies de protection s’appliquent localement sur le client.
 
-## Extension Reader des documents PDF protégés par une stratégie de sécurité documentaire  {#reader-extending-document-security-policy-protected-pdf-documents}
+## Extension Reader des documents PDF protégés par une stratégie de sécurité documentaire {#reader-extending-document-security-policy-protected-pdf-documents}
 
 Les documents protégés par une stratégie sont chiffrés. Il n’est pas possible d’utiliser les API Reader Extension standard pour appliquer, supprimer et rechercher des droits d’utilisation dans des documents PDF protégés par une stratégie. Seul le service Reader Extensions de la bibliothèque portable de protection fournit des API nécessaires à l’exécution d’une telle tâche.
 
