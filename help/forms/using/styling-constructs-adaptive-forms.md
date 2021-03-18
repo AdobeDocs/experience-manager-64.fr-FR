@@ -7,22 +7,23 @@ uuid: 45590fd5-6438-4bb3-8ef8-f0b8f9da3ae9
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 89%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Mise en forme des éléments pour les formulaires adaptatifs  {#styling-constructs-for-adaptive-forms}
+# Mise en forme des éléments pour les formulaires adaptatifs {#styling-constructs-for-adaptive-forms}
 
 ## Conditions préalables {#prerequisites}
 
 Connaissances en matière de CSS et structure LESS.
 
-## Eléments personnalisables  {#what-can-be-customized}
+## Eléments personnalisables {#what-can-be-customized}
 
 Cet article répertorie les classes CSS de formulaires adaptatifs accessibles au public. Vous pouvez exploiter ces classes pour mettre en forme différents composants d’un formulaire adaptatif. La définition de style des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne rentre pas dans le cadre de cet article. Utilisez ces mises en forme des éléments pour créer des styles (en utilisant CSS ou Less) uniquement lorsque vous ne pouvez pas appliquer un style aux composants à l’aide de l’[éditeur de thèmes](themes.md).
 
