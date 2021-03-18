@@ -7,16 +7,17 @@ uuid: 4bc80e2a-3563-48a3-996d-021b701bc2ee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7dff7ef2-80d1-434a-b9b0-ac6654736602
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '348'
 ht-degree: 89%
 
 ---
 
 
-# Utilisation d’expressions SOM dans des formulaires adaptatifs  {#using-som-expressions-in-adaptive-forms}
+# Utilisation d’expressions SOM dans des formulaires adaptatifs {#using-som-expressions-in-adaptive-forms}
 
 Les formulaires adaptatif sont modélisés comme des pages AEM, représentées par des structures de contenu JCR dans le référentiel AEM. L’élément clé de la structure de contenu est le nœud du guideContainer. Sous le guideContainer, il existe un rootPanel pouvant contenir un panneau et des champs imbriqués.
 
