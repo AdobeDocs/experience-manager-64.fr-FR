@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: 4f36f2368a373918902304b5167fe1cb4b899611
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2153'
 ht-degree: 89%
 
 ---
@@ -62,7 +63,7 @@ Selon la configuration spécifique, ces modifications peuvent être effectuées 
 >
 >Certaines modifications peuvent avoir un impact majeur sur la ou les applications. C’est pourquoi vous devez vous assurer de disposer de l’expérience et des connaissances requises avant de commencer à configurer AEM, et apporter uniquement les changements dont vous savez la nécessité. Tout changement effectué via la console OSGi est **immédiatement** appliqué au système en exécution (aucun redémarrage n’est requis).
 
-## Principales considérations en matière de configuration  {#primary-configuration-considerations}
+## Principales considérations en matière de configuration {#primary-configuration-considerations}
 
 Cette liste présente les principaux aspects qui sont généralement configurés pour chaque nouveau projet. Ils ne sont pas tous nécessaires, mais la liste doit être lue et examinée afin de voir ce qui s’applique à votre projet.
 
@@ -143,7 +144,7 @@ La connexion unique permet à l’utilisateur d’accéder à plusieurs système
 
 Voir [Connexion unique](/help/sites-deploying/single-sign-on.md) pour des détails complets.
 
-### Mappage de ressource  {#resource-mapping}
+### Mappage de ressources {#resource-mapping}
 
 Le mappage de ressource permet de définir des redirections, des URL Vanity et des hôtes virtuels pour AEM.
 
