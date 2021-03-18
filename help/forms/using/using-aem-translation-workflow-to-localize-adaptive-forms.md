@@ -8,10 +8,11 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '781'
 ht-degree: 84%
 
 ---
@@ -23,7 +24,7 @@ Les formulaires localisés permettent de servir un public plus large dans plusie
 
 Cet article décrit le processus d’utilisation du processus de traduction AEM avec des formulaires adaptatifs et des documents d’enregistrement.
 
-## Localisation d’un formulaire adaptatif et d’un document d’enregistrement à l’aide de la traduction automatique  {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
+## Localisation d’un formulaire adaptatif et d’un document d’enregistrement à l’aide de la traduction automatique {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
 Le service de traduction automatique traduit directement le contenu de vos formulaires adaptatifs et document d’enregistrement. AEM Forms est préconfiguré pour utiliser une version d’évaluation de Microsoft Translator pour la traduction automatique. Procédez comme suit pour activer la traduction automatique pour les formulaires adaptatifs et le document d’enregistrement :
 
