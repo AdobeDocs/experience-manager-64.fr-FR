@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2788'
 ht-degree: 5%
 
 ---
@@ -65,7 +66,7 @@ Cette section de la documentation décrit la connexion d’une suite de rapports
 
 Pour configurer les fonctionnalités d’Analytics pour les communautés, vous devez travailler avec votre gestionnaire de compte pour configurer un compte Adobe Analytics et une [suite de rapports](#adobe-analytics-report-suite-for-video-reporting). Une fois établies, les informations suivantes devraient être disponibles :
 
-* Nom de la société
+* Nom de l’entreprise
 
    Société associée au compte Adobe Analytics
 * Nom d’utilisateur
@@ -179,7 +180,7 @@ Dans la boîte de dialogue Créer une configuration, les valeurs à saisir ident
 
    Par exemple, saisissez *Activer les analyses de la communauté*.
 
-* **[!UICONTROL Nom]**
+* **[!UICONTROL Name]** (Nom)
 
    (Facultatif) S’il n’est pas spécifié, le nom est défini par défaut sur un nom de noeud valide dérivé du titre.
 
@@ -261,7 +262,7 @@ Après avoir configuré correctement la connexion de base à Adobe Analytics, il
 
    Par exemple, saisissez *Enablement Community Framework*
 
-* **[!UICONTROL Nom]**
+* **[!UICONTROL Name]** (Nom)
 
    (Facultatif) S’il n’est pas spécifié, le nom est défini par défaut sur un nom de noeud valide dérivé du titre.
 
@@ -436,7 +437,7 @@ Si les eVars et événements des communautés remplacent les mappages qui exista
 
 ![chlimage_1-276](assets/chlimage_1-276.png)
 
-#### Exemple d’étape 3 : aem var eventdata.siteId a été mappé à la variable evar14 d’Analytics {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
+#### Exemple d’étape 3 : AEM var eventdata.siteId a été mappé à la variable evar14 d’Analytics {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
 
 ![chlimage_1-277](assets/chlimage_1-277.png)
 
@@ -552,6 +553,6 @@ Adobe Analytics fournit des API qui vous permettent d’accéder, d’exporter e
 ## Ressources {#resources}
 
 * Adobe Marketing Cloud : [Aide et référence d’Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
-* aem : [Intégration à Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
-* aem : [Analyses avec fournisseurs externes](../../help/sites-administering/external-providers.md)
+* AEM : [Intégration à Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
+* AEM : [Analyses avec fournisseurs externes](../../help/sites-administering/external-providers.md)
 
