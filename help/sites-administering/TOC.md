@@ -6,10 +6,13 @@ audience: admin-user
 user-guide-title: Guide de l’utilisateur pour l’administration dans AEM 6.4
 breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
+feature-set: Experience Manager Sites
+feature: Administration
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '660'
 ht-degree: 93%
 
 ---
@@ -66,7 +69,7 @@ ht-degree: 93%
    + [Administration d’instances de workflow](workflows-administering.md)
    + [Configuration du conteneur et du mode de mises en page](configuring-responsive-layout.md)
    + [Activation de l’accès à l’IU classique](enable-classic-ui.md)
-   + [Démarrage de workflows](workflows-starting.md)
+   + [Démarrage d’un workflow](workflows-starting.md)
    + [Configuration des modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md)
    + [Consoles d’administration](enable-classic-ui-admin.md)
 + Sécurité {#security}
@@ -94,7 +97,7 @@ ht-degree: 93%
    + [Prise en charge du chiffrement des propriétés de configuration](encryption-support-for-configuration-properties.md)
    + [Traitement des demandes RGPD pour AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [Filtre de disposition du contenu](content-disposition-filter.md)
-+ Personnalisation  {#personalization}
++ Personnalisation {#personalization}
    + [Personnalisation](personalization.md)
    + [Configuration de ContextHub](contexthub-config.md)
    + [Contexte client](client-context.md)
@@ -103,8 +106,8 @@ ht-degree: 93%
    + [Configuration de la segmentation](campaign-segmentation.md)
    + [Extension et configuration de l’importateur de conception pour les pages d’entrée](extending-the-design-importer-for-landingpages.md)
    + [Intégration des pages d’entrée à Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
-+ Aperçu {#ecommerce}
-   + [Commerce électronique](ecommerce.md)
++ eCommerce {#ecommerce}
+   + [eCommerce](ecommerce.md)
    + [Concepts ](concepts.md)
    + [Administration du commerce électronique générique](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
@@ -121,7 +124,7 @@ ht-degree: 93%
    + [Configuration du suivi des liens pour Adobe Analytics](adobeanalytics-link.md)
    + [Mise en correspondance des données de composant avec les propriétés Adobe Analytics](adobeanalytics-mapping.md)
    + [Configuration du suivi vidéo pour Adobe Analytics](adobeanalytics-video.md)
-   + [FAQ sur la diffusion de contenu HTTP2](scene7-http2faq.md)
+   + [FAQ sur la diffusion de contenu HTTP/2](scene7-http2faq.md)
    + [Résolution des incidents liés à votre intégration Adobe Campaign](troubleshooting-campaignintegration.md)
    + [Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector](sharepoint-connector-licenses.md)
    + [SharePoint Connector](sharepoint-connector.md)
