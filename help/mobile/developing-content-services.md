@@ -1,7 +1,7 @@
 ---
 title: Content Services
 seo-title: Content Services
-description: 'null'
+description: Content Services
 seo-description: 'null'
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
 contentOwner: User
@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 9%
+source-wordcount: '304'
+ht-degree: 10%
 
 ---
 
