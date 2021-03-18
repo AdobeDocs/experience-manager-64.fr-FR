@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
+feature: Mise à niveau
 translation-type: tm+mt
-source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '523'
 ht-degree: 93%
 
 ---
@@ -59,7 +60,7 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
 
 Vous trouverez, ci-dessous, une description détaillée de ces deux méthodes :
 
-## Interface réactive  {#reactive-interface}
+## Interface réactive {#reactive-interface}
 
 L’interface réactive permet de traiter le rapport d’infractions dès que l’on suspecte le moindre problème.
 
