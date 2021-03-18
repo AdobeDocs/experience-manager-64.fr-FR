@@ -7,10 +7,11 @@ uuid: 1c2b5c5b-c655-4559-8748-3e0b343779c2
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
+feature: Communication interactive
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '667'
 ht-degree: 89%
 
 ---
@@ -40,7 +41,7 @@ Une communication interactive comprend les éléments suivants :
 * Des **images stockées dans un référentiel**, tels que des logos et des images de signature. Les images comme les logos de l’entreprise sont présentes dans la majorité ou dans toutes les communications interactives.
 * Des **graphiques et tableaux** nécessaires pour simplifier la représentation de données complexes dans une communication interactive
 
-## Structure de la communication interactive  {#anatomy-of-the-interactive-communication}
+## Structure de la communication interactive {#anatomy-of-the-interactive-communication}
 
 Une fois que vous avez finalisé le contenu et les éléments utilisés pour créer votre communication interactive, vous pouvez créer une structure pour la communication interactive. Les informations de la structure doivent être répertoriées dans la section [Observations relatives à la planification](/help/forms/using/planning-interactive-communications.md#planning-considerations). En fonction de notre cas d’utilisation, voici un exemple de structure de facture mensuelle qu’un opérateur de télécommunications envoie à ses clients.
 
