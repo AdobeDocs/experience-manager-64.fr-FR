@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
+feature: Forms adaptatif, Adobe Sign
 translation-type: tm+mt
-source-git-commit: 12d64aebbe769c0b3fa7c721e7fbac547d320f67
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '3592'
-ht-degree: 69%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -137,7 +138,7 @@ Effectuez les étapes suivantes pour ajouter des champs à un formulaire adaptat
 
    Il est obligatoire de fournir un nom unique pour un champ. Vous pouvez également sélectionner l’option requise pour marquer un champ comme obligatoire. En plus de l’option **Nom** et **Obligatoire**, certains champs Adobe Sign ont plus d’options. Par exemple, masque et multiligne. De plus, spécifiez un nom unique pour chaque champ Adobe Sign que les champs se trouvent dans des blocs Adobe Sign identiques ou différents.
 
-### Activer Adobe Sign pour un formulaire adaptatif  {#enableadobsignforanadaptiveform}
+### Activer Adobe Sign pour un formulaire adaptatif {#enableadobsignforanadaptiveform}
 
 Par défaut, Adobe Sign n’est pas activé pour un formulaire adaptatif. Effectuez les étapes suivantes pour l’activer :
 
