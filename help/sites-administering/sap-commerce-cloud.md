@@ -10,11 +10,12 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
 pagetitle: Administering hybris
+feature: Commerce Integration Framework
 translation-type: tm+mt
-source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1726'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +32,7 @@ Après l’installation, vous pouvez configurer votre instance :
 1. [Configuration de l’importateur de catalogues](#configure-the-catalog-importer)
 1. Utilisation de l’[importateur pour importer le catalogue](#catalog-import) dans un emplacement spécifique dans AEM
 
-## Configuration de la recherche à facette de Geometrixx Outdoors  {#configure-the-facetted-search-for-geometrixx-outdoors}
+## Configuration de la recherche à facette de Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
