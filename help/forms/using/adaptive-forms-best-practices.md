@@ -7,10 +7,11 @@ uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: c5a78d6c2b8a55cad6266e86e9b990cafc038431
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '4146'
+source-wordcount: '4148'
 ht-degree: 85%
 
 ---
@@ -31,7 +32,7 @@ En outre, voici quelques recommandations de lecture concernant les meilleures pr
 * [Meilleures pratiques : administration d’AEM](/help/sites-administering/administer-best-practices.md)
 * [Meilleures pratiques : développement de solutions](/help/sites-developing/best-practices.md)
 
-## Installation et configuration d’AEM Forms  {#set-up-and-configure-aem-forms}
+## Installation et configuration d’AEM Forms {#set-up-and-configure-aem-forms}
 
 ### Installation du projet de développement de formulaires {#setting-up-forms-development-project}
 
