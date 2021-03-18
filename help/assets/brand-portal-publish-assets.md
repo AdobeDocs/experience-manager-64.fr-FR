@@ -2,11 +2,13 @@
 title: Publication de dossiers sur Brand Portal
 description: Découvrez comment publier et annuler la publication de fichiers sur le portail des marques.
 contentOwner: VG
+feature: Brand Portal
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: f09853921dec6602952f369982a1563c7e4a9727
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 52%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -64,6 +66,6 @@ Pour planifier la publication des ressources sur Brand Portal à une date ou un
 
    ![publishworkflow](assets/publishworkflow.png)
 
-Désormais, connectez-vous à Brand Portal pour savoir si les fichiers publiés sont disponibles sur l’interface du portail Marque.
+Désormais, connectez-vous à Brand Portal pour savoir si les fichiers publiés sont disponibles dans l’interface du portail Marque.
 
 ![bp_631_landing_page](assets/bp_landing_page.png)
