@@ -7,10 +7,11 @@ uuid: d7b0d9a5-f5f0-4c21-a6f8-622bf94f4491
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
+feature: Communication interactive
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1834'
 ht-degree: 67%
 
 ---
@@ -36,7 +37,7 @@ Ce didacticiel vous guide pas à pas dans la création de modèles pour les cana
 * Télécharger les modèles XDP sur le serveur AEM Forms
 * Créer et activer des modèles pour le canal web
 
-## Créer un modèle pour le canal d’impression  {#create-template-for-print-channel}
+## Créer un modèle pour le canal d’impression {#create-template-for-print-channel}
 
 Créez et gérez un modèle pour le canal d’impression de la communication interactive à l’aide des tâches suivantes :
 
@@ -158,7 +159,7 @@ Pour créer un fragment de mise en page pour le canal d’impression de la commu
 
    1. Accédez à l’emplacement d’enregistrement du fichier et spécifiez le nom **table_lf**.
    1. Sélectionnez **.xdp** dans la liste déroulante **Type**.
-   1. Appuyez sur **Save** (Enregistrer).
+   1. Appuyez sur **Enregistrer**.
 
    Une fois que vous avez créé un modèle XDP pour le fragment de mise en page à l’aide de Forms Designer, vous devez le [télécharger](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) sur le serveur AEM Forms pour qu’il soit disponible lors de la création des fragments de mise en page.
 
@@ -205,7 +206,7 @@ Toutes les entités telles que des fragments de document, des graphiques, des ta
 Exécutez les étapes suivantes pour créer un modèle pour le canal web dans le dossier **Create_First_IC_templates** :
 
 1. Accédez au dossier de modèles approprié en sélectionnant **Outils** > **Modèles** > **Créer_premiers_modèles_IC**.
-1. Appuyez sur **Créer**. 
+1. Appuyez sur **Créer**.
 1. Dans l&#39;assistant de configuration **Choisir un type de modèle**, sélectionnez **Communication interactive - Canal Web** et appuyez sur **Suivant**.
 1. Dans l’assistant de configuration **Détails du modèle**, spécifiez **Create_First_IC_Web_Template** comme titre de modèle. Spécifiez une description facultative et appuyez sur **Créer**.
 
@@ -237,7 +238,7 @@ Exécutez les étapes suivantes pour créer un modèle pour le canal web dans le
    | Nom | Titre | Nombre de colonnes |
    |---|---|---|
    | customerdetails | Informations sur le client | 1 |
-   | billsummary | Récapitulatif de facturation | 1 |
+   | billsummary | Récapitulatif de facturation | 3 |
    | summarycharges | Récapitulatif des frais | 2 |
    | itemisedcalls | Appels détaillés | 3 |
    | PayNow | Payez maintenant | 2 |
