@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
+role: Administrator
 translation-type: tm+mt
-source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1856'
 ht-degree: 5%
 
 ---
@@ -127,7 +128,7 @@ Cependant, si vous cochez **Question** et **En attente**, vous ne verrez que le 
 
 Lorsque le rail de filtre est ouvert, l’icône Rechercher permet de basculer entre le panneau latéral et le panneau latéral fermé. Cependant, pour fermer le rail de filtre et ne faire que vue au contenu généré par l’utilisateur, cliquez sur l’icône Rechercher et sélectionnez l’option Contenu uniquement.
 
-#### Chemin d’accès au contenu {#content-path}
+#### Content Path{#content-path} (Chemin d’accès au contenu)
 
 Le chemin d’accès au contenu limite la référence de l’UGC affichée aux publications placées dans le référentiel de contenu spécifié.
 
