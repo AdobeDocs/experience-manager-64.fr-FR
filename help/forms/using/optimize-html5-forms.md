@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '299'
 ht-degree: 94%
 
 ---
 
 
-# Optimisation des formulaires HTML5  {#optimizing-html-forms}
+# Optimisation des formulaires HTML5 {#optimizing-html-forms}
 
 Les formulaires HTML5 génèrent des formulaires au format HTML5. Le résultat peut être volumineux en fonction de facteurs comme la taille du formulaire et les images qu’il contient. Pour optimiser le transfert de données, l’approche recommandée consiste à compresser la réponse HTML à l’aide du serveur Web à partir duquel la requête est traitée. Cette approche permet de réduire la taille de la réponse, le trafic réseau et le temps nécessaire pour transmettre les données entre le serveur et le client.
 
