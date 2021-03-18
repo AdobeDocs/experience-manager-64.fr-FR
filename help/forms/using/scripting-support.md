@@ -9,16 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3911'
+source-wordcount: '3913'
 ht-degree: 98%
 
 ---
 
 
-# Prise en charge des scripts pour les formulaires HTML5  {#scripting-support-for-html-forms}
+# Prise en charge des scripts pour les formulaires HTML5 {#scripting-support-for-html-forms}
 
 Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans les formulaires HTML5 se répartissent comme suit :
 
@@ -85,7 +86,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
  </tbody> 
 </table>
 
-### $hôte {#host}
+### $host {#host}
 
 <table> 
  <tbody> 
@@ -493,7 +494,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 |---|---|
 | target | Adresse URL à laquelle les données sont envoyées. L’omission de cet attribut implique que l’application de traitement XFA obtienne l’URI à l’aide d’une technique spécifique au produit, telle que l’accès aux informations spécifiques au produit dans l’objet config. |
 
-## arborescence  {#tree}
+## arborescence {#tree}
 
 <table> 
  <tbody> 
