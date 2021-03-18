@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 901108a1-c0cb-4680-bc71-6266bcde2775
+feature: Mise à niveau
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2451'
+source-wordcount: '2452'
 ht-degree: 93%
 
 ---
@@ -90,7 +91,7 @@ Vous trouverez ci-dessous la liste des domaines qui sont impactés dans un proje
 
 Il est important de vous assurer que votre système d’exploitation, Java Runtime, httpd et la version du dispatcher sont pris en charge. Pour plus d’informations, voir [Critères techniques d’AEM 6.4](/help/sites-deploying/technical-requirements.md). La mise à niveau de ces composants doit être ajoutée à votre plan d’action et exécutée avant la mise à niveau d’AEM.
 
-## Phases du projet  {#project-phases}
+## Phases du projet {#project-phases}
 
 La planification et l’exécution d’une mise à niveau AEM requiert un effort important. En vue de clarifier les différents efforts du processus, nous avons divisé les exercices de planification et d’exécution en des phases distinctes. Dans les sections ci-dessous, chaque phase entraîne la création d’un livrable, souvent exploité lors des étapes suivantes du projet.
 
@@ -122,11 +123,11 @@ Passez en revue les exigences techniques pour AEM 6.4 et vérifiez si votre log
 
 [Tableau de bord des opérations](/help/sites-administering/operations-dashboard.md)
 
-[Meilleures pratiques en matière de surveillance des ressources](/help/assets/assets-monitoring-best-practices.md)
+[Bonnes pratiques en matière de surveillance des ressources](/help/assets/assets-monitoring-best-practices.md)
 
 [Contrôle des ressources de serveur à l’aide de la console JMX](/help/sites-administering/jmx-console.md)
 
-[Nettoyage des révisions](/help/sites-deploying/revision-cleanup.md)
+[Nettoyage de révision](/help/sites-deploying/revision-cleanup.md)
 
 **Sauvegarde/restauration et reprise sur sinistre :**
 
