@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
+role: Développeur
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2110'
 ht-degree: 4%
 
 ---
@@ -246,7 +247,7 @@ Déterminez si un document PDF est compatible PDF/A à l’aide de l’API Assem
 
    * Accédez au champ `documents` de l’objet `AssemblerResult`, qui est un objet `Map` contenant les données XML qui spécifient si le document PDF d’entrée est un document PDF/A.
    * Effectuez une itération dans l&#39;objet `Map` pour obtenir chaque document cible. Ensuite, définissez la valeur de ce membre de tableau sur `BLOB`.
-   * Extrayez les données binaires qui représentent les données XML en accédant au champ `BLOB` `MTOM` de l&#39;objet . Ce champ stocke un tableau d’octets que vous pouvez écrire dans un fichier XML.
+   * Extrayez les données binaires qui représentent les données XML en accédant au champ `BLOB` de l&#39;objet `MTOM` de l&#39;objet. Ce champ stocke un tableau d’octets que vous pouvez écrire dans un fichier XML.
 
 **Voir également**
 
