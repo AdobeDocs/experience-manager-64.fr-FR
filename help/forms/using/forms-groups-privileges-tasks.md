@@ -9,16 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
+role: Administrator
 translation-type: tm+mt
-source-git-commit: f02fde7583da87d48bf72bf569762e9d604d25ce
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# AEM Forms sur les groupes et privilèges OSGi  {#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms sur les groupes et privilèges OSGi {#aem-forms-on-osgi-groups-and-privileges}
 
 Affecter des utilisateurs aux groupes pour gérer AEM Forms sur OSGi
 
