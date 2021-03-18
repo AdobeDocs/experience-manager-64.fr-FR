@@ -1,7 +1,7 @@
 ---
 title: Référence sur les processus de workflow
 seo-title: Référence sur les processus de workflow
-description: 'null'
+description: Référence sur les processus de workflow
 seo-description: 'null'
 uuid: de367aa8-4580-4810-b665-2a7b521e36ca
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 translation-type: tm+mt
-source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1143'
 ht-degree: 84%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 84%
 
 AEM propose plusieurs étapes de processus qui peuvent être utilisées pour créer des modèles de workflow. Des étapes de processus personnalisées peuvent également être ajoutées pour les tâches qui ne sont pas couvertes par les étapes intégrées (voir [Création de modèles de workflow](/help/sites-developing/workflows-models.md)).
 
-## Caractéristiques du processus  {#process-characteristics}
+## Caractéristiques du processus {#process-characteristics}
 
 Les caractéristiques suivantes sont décrites pour chaque étape du processus.
 
