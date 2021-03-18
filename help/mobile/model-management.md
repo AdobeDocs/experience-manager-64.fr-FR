@@ -1,7 +1,7 @@
 ---
 title: Présentation des modèles
 seo-title: Présentation des modèles
-description: 'null'
+description: Présentation des modèles
 seo-description: 'null'
 uuid: e09dac52-9515-43f7-9d3b-6637e2283d59
 contentOwner: Jyotika Syal
@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
 translation-type: tm+mt
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '786'
 ht-degree: 3%
 
 ---
