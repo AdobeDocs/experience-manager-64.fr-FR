@@ -7,10 +7,12 @@ uuid: cb3a455d-2e33-44c8-8f71-3a7ecd939cd8
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
+feature: Adobe Sign
+role: Administrator
 translation-type: tm+mt
-source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '412'
 ht-degree: 84%
 
 ---
@@ -28,7 +30,7 @@ Pour plus d’informations sur l’intégration d’AEM Forms avec Adobe Sign, v
 
 Le formulaire adaptatif activé par Adobe Sign inclut des informations sur les signataires et peut inclure d’autres données utilisateur collectées par le formulaire adaptatif. Le service Adobe Sign enregistre les données de l’utilisateur à l’aide de la signature du contrat. Le contrat est enregistré sur le serveur Adobe Sign configuré dans les services cloud d’AEM Forms. Par ailleurs, si le formulaire adaptatif est configuré pour utiliser l’action d’envoi du portail Forms, les données du contrat sont enregistrées dans le stockage de données du portail Forms avec les données du formulaire.
 
-## Accès et suppression des données utilisateur  {#access-and-delete-user-data}
+## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
 Les données utilisateur sont collectées dans le contrat mais ne sont enregistrées dans aucune des tables de service. Adobe Sign permet aux administrateurs de faire leurs propres choix concernant la gestion des données qu’ils contrôlent dans le service. Les administrateurs de confidentialité sur le service d’Adobe Sign peuvent répertorier ou supprimer des contrats en fonction de l’adresse électronique du demandeur.
 
