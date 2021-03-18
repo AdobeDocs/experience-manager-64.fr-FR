@@ -1,6 +1,6 @@
 ---
-title: Mise à niveau vers AEM 6.4 Forms
-seo-title: Mise à niveau vers AEM 6.4 Forms
+title: Mise à niveau vers AEM 6.4 Forms
+seo-title: Mise à niveau vers AEM 6.4 Forms
 description: 'Vous pouvez effectuer une mise à niveau directe à partir de AEM 6.1 Forms, AEM 6.2 Forms et LiveCycle ES4 SP1 vers AEM 6.3 Forms. '
 seo-description: 'Vous pouvez effectuer une mise à niveau directe à partir de AEM 6.1 Forms, AEM 6.2 Forms et LiveCycle ES4 SP1 vers AEM 6.3 Forms. '
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
+role: Administrator
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1703'
 ht-degree: 80%
 
 ---
@@ -36,7 +37,7 @@ Effectuez la procédure suivante pour mettre à niveau AEM 6.2 Forms on JEE ou
    * [Mise à niveau d’AEM 6.2 Forms ou d’AEM 6.3 Forms vers AEM 6.4 Forms pour WebSphere](assets/upgrade-websphere.pdf)
    * [Mise à niveau d’AEM 6.2 Forms ou d’AEM 6.3 Forms vers AEM 6.4 Forms pour JBoss clé en main](assets/upgrade-turnkey.pdf)
 
-## AEM Forms 6.0 sur JEE > AEM Forms 6.3 sur JEE  {#aem-forms-jee-60-to-63}
+## AEM Forms 6.0 sur JEE > AEM Forms 6.3 sur JEE {#aem-forms-jee-60-to-63}
 
 La mise à niveau directe de LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms vers l&#39;AEM 6.4 Forms n&#39;est pas disponible. Vous pouvez effectuer une mise à niveau intermédiaire vers une ou plusieurs versions de LiveCycle ou AEM Forms, puis effectuer une mise à niveau à partir d’AEM 6.4 Forms. Pour la liste des versions intermédiaires et les instructions de mise à niveau correspondantes, voir [Sélectionner un chemin de mise à niveau](upgrade.md).
 
