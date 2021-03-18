@@ -9,16 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 74%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Activation de la journalisation des formulaires au format HTML5  {#enable-logging-for-html-forms}
+# Activation de la journalisation des formulaires au format HTML5 {#enable-logging-for-html-forms}
 
 Vous pouvez configurer l’utilitaire de journalisation pour créer des journaux pour les formulaires au format HTML5. L’utilitaire de journalisation possède plusieurs niveaux, vous pouvez définir le niveau selon vos besoins. Les formulaires HTML5 ont des composants de serveur et de client. Vous pouvez configurer des journaux pour chaque composant.
 
@@ -49,7 +50,7 @@ Vous pouvez utiliser les méthodes suivantes pour activer la journalisation côt
 * A l’aide du paramètre de requête nommé `log`
 * A l’aide de CQ Configuration Manager
 
-### Activation de la journalisation à l’aide du paramètre de requête  {#enabling-logging-using-request-parameter}
+### Activation de la journalisation à l’aide du paramètre de requête {#enabling-logging-using-request-parameter}
 
 Grâce à cette méthode, vous pouvez générer les journaux d’une requête particulière. Le nom du paramètre de requête est **log**. L’URL du journal est la suivante :
 
@@ -90,10 +91,10 @@ La configuration du journal comprend le niveau et la catégorie de journalisatio
   </tr> 
   <tr> 
    <td>0</td> 
-   <td>OFF<br type="_moz" /> </td> 
+   <td>DÉSACTIVÉ<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>3</td> 
+   <td>1</td> 
    <td>FATAL<br type="_moz" /> </td> 
   </tr> 
   <tr> 
@@ -101,7 +102,7 @@ La configuration du journal comprend le niveau et la catégorie de journalisatio
    <td>ERROR<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>3</td> 
+   <td>1</td> 
    <td>WARN<br type="_moz" /> </td> 
   </tr> 
   <tr> 
