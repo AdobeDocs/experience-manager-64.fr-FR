@@ -10,11 +10,12 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
+role: Développeur
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2185'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -220,7 +221,7 @@ Créez de manière dynamique un document DDX et désassemblez un document PDF à
 1. Créez le document DDX.
 
    * Créez un objet `System.Xml.XmlElement` en utilisant son constructeur.
-   * Créez l’élément racine du document DDX en appelant la méthode `XmlElement` de l’objet `CreateElement`. Cette méthode crée un objet `Element` qui représente l’élément racine. Transmettez une valeur de chaîne représentant le nom de l’élément à la méthode `CreateElement`. Définissez une valeur pour l’élément DDX en appelant sa méthode `SetAttribute`. Enfin, ajoutez l’élément au document DDX en appelant la méthode `XmlElement` de l’objet `AppendChild`. Transmettez l’objet DDX en argument. Les lignes de code suivantes présentent cette logique d’application :
+   * Créez l’élément racine du document DDX en appelant la méthode `XmlElement` de l’objet `CreateElement`. Cette méthode crée un objet `Element` qui représente l’élément racine. Transmettez une valeur de chaîne représentant le nom de l’élément à la méthode `CreateElement`. Définissez une valeur pour l’élément DDX en appelant sa méthode `SetAttribute`. Enfin, ajoutez l’élément au document DDX en appelant la méthode `XmlElement` de l’objet `AppendChild`. Transférez l’objet DDX en argument. Les lignes de code suivantes présentent cette logique d’application :
 
       ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
 
