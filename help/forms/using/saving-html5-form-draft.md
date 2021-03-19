@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '325'
 ht-degree: 66%
 
 ---
 
 
-# Enregistrement d’un formulaire HTML5 en tant que brouillon  {#saving-an-html-form-as-a-draft}
+# Enregistrement d’un formulaire HTML5 en tant que brouillon {#saving-an-html-form-as-a-draft}
 
 Vous pouvez enregistrer un formulaire HTML5 comme brouillon et reprendre le remplissage du formulaire ultérieurement. Le portail des formulaires permet à tout utilisateur d’enregistrer et de restaurer un formulaire HTML5. Pour activer la fonctionnalité Enregistrer en tant que brouillon, ajoutez les configurations suivantes au noeud de profil :
 
@@ -50,7 +51,7 @@ Pour activer la fonctionnalité Enregistrer en tant que brouillon pour votre [pr
  </tbody> 
 </table>
 
-## Stockage et liste des brouillons  {#drafts-storage-and-listing}
+## Stockage et liste des brouillons {#drafts-storage-and-listing}
 
 Après l’activation de la fonctionnalité Enregistrer en tant que brouillon pour un formulaire, lorsque le formulaire est enregistré, il est répertorié dans le [composant Drafts and Submissions](/help/forms/using/draft-submission-component.md). Vous pouvez extraire le formulaire enregistré et commencer son remplissage depuis le composant Drafts and Submissions.
 
