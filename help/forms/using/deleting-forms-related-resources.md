@@ -8,22 +8,23 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
+role: Administrator
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '399'
 ht-degree: 94%
 
 ---
 
 
-# Suppression des formulaires et des ressources associées  {#deleting-forms-and-related-resources}
+# Suppression des formulaires et des ressources associées {#deleting-forms-and-related-resources}
 
 Vous pouvez supprimer des formulaires et des ressources pour supprimer ces dernières du référentiel. L’opération de suppression fonctionne pour tous les types de ressources et les dossiers.
 
 Si vous supprimez une ressource de l’instance Auteur, elle est également supprimée de l’instance Publier. Le serveur AEM Forms se compose des instances Auteur et Publier. L’instance Auteur est destinée à la création et à la gestion des ressources de formulaires. L’instance Publier contient les ressources de formulaire publiées et les ressources associées disponibles pour les utilisateurs finaux.
 
-## Suppression d’un formulaire  {#how-to-delete-a-form}
+## Suppression d’un formulaire {#how-to-delete-a-form}
 
 1. Connectez-vous à l’interface utilisateur AEM Forms en accédant à `https://[hostname]:[portport]/aem/forms.html.`
 1. Recherchez et sélectionnez le formulaire que vous souhaitez supprimer. Cliquez sur Supprimer ![aem6forms_delete2](assets/aem6forms_delete2.png) dans la barre d’outils et confirmez l’opération de suppression.
