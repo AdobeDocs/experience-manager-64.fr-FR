@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2183'
+source-wordcount: '2184'
 ht-degree: 1%
 
 ---
@@ -232,7 +233,7 @@ Suivez les mêmes étapes que pour créer et affecter un utilisateur au rôle de
 
 ### Intégration LDAP {#ldap-integration}
 
-aem prend en charge l’utilisation du protocole LDAP pour l’authentification des utilisateurs ainsi que la création de comptes d’utilisateurs. Ceci est détaillé dans [Configuration de LDAP avec AEM 6](../../help/sites-administering/ldap-config.md).
+AEM prend en charge l’utilisation du protocole LDAP pour l’authentification des utilisateurs ainsi que la création de comptes d’utilisateurs. Ceci est détaillé dans [Configuration de LDAP avec AEM 6](../../help/sites-administering/ldap-config.md).
 
 Voici quelques détails de configuration spécifiques aux membres de la communauté et aux groupes de membres.
 
