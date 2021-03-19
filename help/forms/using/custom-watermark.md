@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: a09e2c83-083d-427a-8336-0567e00c5712
+feature: Correspondence Management
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 58%
+source-wordcount: '353'
+ht-degree: 59%
 
 ---
 
 
-# Filigrane personnalisé dans l’aperçu de la lettre PDF  {#custom-watermark-in-letter-pdf-preview}
+# Filigrane personnalisé dans l’aperçu de la lettre PDF {#custom-watermark-in-letter-pdf-preview}
 
 ## Présentation {#overview}
 
@@ -31,7 +32,7 @@ Pour activer le filigrane dans la prévisualisation PDF, sélectionnez l’optio
 
 Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’apparence du filigrane :
 
-## Personnalisation du filigrane dans l’aperçu PDF dans l’interface utilisateur de création de correspondance  {#customizewatermark-}
+## Personnalisation du filigrane dans l’aperçu PDF dans l’interface utilisateur de création de correspondance {#customizewatermark-}
 
 1. Accédez à `https://[server]:[port]/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
 1. Dans le dossier d’applications, créez un dossier nommé **[!UICONTROL previewwatermark]** avec un chemin/une structure similaires au dossier previewwatermark dans le dossier libs :
