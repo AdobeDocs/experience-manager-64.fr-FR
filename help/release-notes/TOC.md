@@ -5,21 +5,24 @@ audience: end-user
 user-guide-title: Notes de mise à jour de Adobe Experience Manager 6.4
 breadcrumb-title: Notes de mise à jour
 user-guide-description: Découvrez les nouvelles fonctionnalités les plus récentes de AEM 6.4 dans les notes de mise à jour.
+feature-set: Experience Manager
+feature: Informations sur la version
+role: Leader, Architecte, Développeur, Architecte de données, Ingénieur de données, Administrateur, Professionnel
 translation-type: tm+mt
-source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 43%
+source-wordcount: '103'
+ht-degree: 45%
 
 ---
 
 
 # Notes de mise à jour de Adobe Experience Manager 6.4 {#release-notes}
 
-+ [aem 6.4 présentation](home.md)
++ [AEM 6.4 présentation](home.md)
 + [Notes de mise à jour générales](release-notes.md)
 + [Notes de mise à jour du Service Pack ](sp-release-notes.md)
-+ [Notes de mise à jour cumulées du pack de correctifs](cfp-release-notes.md)
++ [Notes de mise à jour du pack de correctifs cumulés ](cfp-release-notes.md)
 + [Notes de mise à jour d’AEM Sites](sites.md)
 + [Notes de mise à jour d’AEM Assets](assets.md)
 + [Notes de mise à jour d’AEM Forms](forms.md)
@@ -28,7 +31,7 @@ ht-degree: 43%
 + [Notes de mise à jour d’AEM 3D](aem3d-release-notes.md)
 + [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
 + [Problèmes connus](known-issues.md)
-+ [aem Foundation et Repository](wcm-platform.md)
++ [AEM Foundation et Repository](wcm-platform.md)
 + [État des fonctionnalités de l’IU tactile](touch-ui-features-status.md)
 + [Outil de migration CRX2OAK](crx2oak.md)
 + [Notes de mise à jour de Smart Content Service](smart-content-service-release-notes.md)
