@@ -8,10 +8,11 @@ contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 155aaf96-1e9c-4e73-8e43-d96878d69b16
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1985'
 ht-degree: 90%
 
 ---
@@ -27,7 +28,7 @@ Par exemple, vous souhaitez que tous les auteurs de formulaire disposent de cert
 * Fournissez le contenu initial pour le formulaire. 
 * Spécifiez un thème, des actions d’envoi.
 
-## Utilisation de modèles  {#working-with-templates}
+## Utilisation de modèles {#working-with-templates}
 
 Vous pouvez accéder à l’éditeur de modèles à partir du menu Outils en accédant à **[!UICONTROL Adobe Experience Manager> Outils> Modèles]**. Ici, les modèles sont organisés dans des dossiers activés pour les modèles modifiables. AEM fournit un dossier global pour organiser les modèles. Cependant, il n’est pas activé par défaut. Vous pouvez demander à votre administrateur d’activer le dossier global ou de créer un nouveau dossier pour les modèles. Pour plus d’informations sur la création de dossiers, voir [Dossiers de modèles](/help/sites-developing/page-templates-editable.md).
 
@@ -172,7 +173,7 @@ Un formulaire fonctionne avec son modèle. Lorsque vous téléchargez un formula
 
 Une fois que vous avez créé et activé un modèle, il est disponible dans Form Manager lorsque vous créez un formulaire adaptatif. Pour utiliser un modèle et créer un formulaire adaptatif, voir [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md).
 
-## Modifier l’option d’affichage des modèles prêts à l’emploi   {#change-display-option-of-out-of-the-box-templates}
+## Modifier l’option d’affichage des modèles prêts à l’emploi  {#change-display-option-of-out-of-the-box-templates}
 
 Vous pouvez créer des modèles personnalisés pour les formulaires adaptatifs afin de définir une structure de base et du contenu initial. AEM Forms fournit également un jeu de modèles prêts à l’emploi pour les formulaires adaptatifs. Vous pouvez afficher ou masquer les modèles.
 
