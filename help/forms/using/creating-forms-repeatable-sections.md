@@ -7,16 +7,17 @@ uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1138'
+source-wordcount: '1140'
 ht-degree: 78%
 
 ---
 
 
-# Création de formulaires avec des sections répétables  {#creating-forms-with-repeatable-sections}
+# Création de formulaires avec des sections répétables {#creating-forms-with-repeatable-sections}
 
 Les sections répétables sont des panneaux qui peuvent être ajoutés ou supprimés dynamiquement dans un formulaire.
 
@@ -24,7 +25,7 @@ Par exemple, lorsqu’elle dépose sa candidature pour un poste, la personne à 
 
 Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthodes suivantes :
 
-## Utilisation du gestionnaire d’instances via des scripts   {#using-instance-manager-via-scripts-nbsp}
+## Utilisation du gestionnaire d’instances via des scripts  {#using-instance-manager-via-scripts-nbsp}
 
 1. En mode d’édition, sélectionnez un panneau, puis appuyez sur ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, activez **Activer la répétition du panneau**. Spécifiez des valeurs pour les champs **[!UICONTROL Maximum]** et **[!UICONTROL Minimum.]**
 
