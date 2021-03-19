@@ -10,16 +10,17 @@ geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
+role: Administrator
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1873'
 ht-degree: 72%
 
 ---
 
 
-# Migration de ressources et de documents AEM Forms  {#migrate-aem-forms-assets-and-documents}
+# Migration de ressources et de documents AEM Forms {#migrate-aem-forms-assets-and-documents}
 
 L’utilitaire de migration convertit les [ressources Forms adaptatives](/help/forms/using/introduction-forms-authoring.md), [configurations de cloud](/help/sites-developing/extending-cloud-config.md) et [ressources Correspondence Management](/help/forms/using/cm-overview.md) du format utilisé dans les versions antérieures au format utilisé dans l’AEM 6.4 Forms. Lorsque vous exécutez l’utilitaire de migration, les éléments suivants sont migrés :
 
@@ -32,7 +33,7 @@ L’utilitaire de migration convertit les [ressources Forms adaptatives](/help/f
 >
 >En cas de mise à niveau dynamique, pour les ressources de Correspondence Management, vous pouvez exécuter la migration à chaque importation des actifs. Pour la migration de Correspondence Management, le package de compatibilité Forms doit être installé.
 
-## Approche de la migration  {#approach-to-migration}
+## Approche de la migration {#approach-to-migration}
 
 Vous pouvez [mettre à niveau](/help/forms/using/upgrade.md) vers la dernière version d&#39;AEM Forms 6.4 à partir de AEM Forms 6.3 ou 6.2 ou effectuer une nouvelle installation. Selon que vous avez mis à niveau votre installation précédente ou procédé à une nouvelle installation, vous devez effectuer l’une des opérations suivantes :
 
