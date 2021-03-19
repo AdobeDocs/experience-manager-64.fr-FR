@@ -1,7 +1,7 @@
 ---
 title: Test des fragments de contenu dans We.Retail
 seo-title: Test des fragments de contenu dans We.Retail
-description: 'null'
+description: Test des fragments de contenu dans We.Retail
 seo-description: 'null'
 uuid: 66daddfe-8e98-47b6-8499-db055887ac17
 contentOwner: User
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '459'
 ht-degree: 79%
 
 ---
