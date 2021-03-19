@@ -8,10 +8,11 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
+feature: PDF Generator
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6146'
+source-wordcount: '6148'
 ht-degree: 82%
 
 ---
@@ -33,7 +34,7 @@ Dans la page Paramètres de type de fichier, vous pouvez effectuer les tâches s
 >
 >les paramètres de type de fichier ne sont pas disponibles pour les convertisseurs de secours, tels que Acrobat pour conversion du format HTML au format PDF, Microsoft PowerPoint, Microsoft Word et Microsoft Excel.
 
-## Création ou modification de paramètres de type de fichier  {#create-or-edit-file-type-settings}
+## Création ou modification de paramètres de type de fichier {#create-or-edit-file-type-settings}
 
 Vous créez ou modifiez un paramètre de type de fichier pour définir la manière dont l’application traite la conversion des types de fichier pris en charge. Sous Windows, vous pouvez définir les paramètres de l’application pour chaque type de fichier pris en charge. Sous UNIX et Linux, vous pouvez définir les paramètres de l’application pour les formats HTML en PDF et OpenOffice.
 
