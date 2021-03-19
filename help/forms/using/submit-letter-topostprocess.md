@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 637342e8-fbdd-4cda-b175-56a805b3b480
+feature: Correspondence Management
 translation-type: tm+mt
-source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '864'
 ht-degree: 66%
 
 ---
@@ -118,7 +119,7 @@ Dans l’interface utilisateur CCR, effectuez les étapes suivantes pour associe
 1. Passez la souris sur une lettre et appuyez sur **Propriétés de la Vue**.
 1. Sélectionnez **Modifier**.
 1. Dans Propriétés de base, sélectionnez le post-traitement à associer à la lettre dans la liste déroulante Post-traitement. Les post-traitements liés aux formulaires et à AEM sont répertoriés dans la liste déroulante.
-1. Appuyez sur **Save** (Enregistrer).
+1. Appuyez sur **Enregistrer**.
 1. Après avoir configuré la lettre avec le post-traitement, publiez la lettre et, sur l’instance de publication, spécifiez éventuellement l’URL de traitement dans le service Paramètres AEM DS. Cela garantit que le post-traitement est exécuté sur une instance de traitement.
 
 ## Rechargement d’une instance de lettre Brouillon{#reloaddraft}
