@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '252'
 ht-degree: 85%
 
 ---
 
 
-# Prise en main des formulaires HTML5  {#getting-started-with-html-forms}
+# Prise en main des formulaires HTML5 {#getting-started-with-html-forms}
 
 Les formulaires HTML5 proposent de nombreuses fonctionnalités compatibles avec les périphériques mobiles. Cette application vous permet d’étendre vos solutions et flux actuels aux tablettes ou smartphones équipés de navigateurs HTML5. Exemple de fonctionnalités disponibles :
 
