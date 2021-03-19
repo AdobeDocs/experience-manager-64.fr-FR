@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
+role: Administrator
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1030'
 ht-degree: 93%
 
 ---
 
 
-# Connexion d’AEM Forms à Adobe LiveCycle  {#connecting-aem-forms-with-adobe-livecycle}
+# Connexion d’AEM Forms à Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 
 Adobe Experience Manager (AEM) LiveCycle Connector permet d’appeler aisément Adobe LiveCycle ES4 Document Services à partir de processus et d’applications Web. LiveCycle fournit un SDK client enrichi, qui permet aux applications clientes de démarrer les services LiveCycle à l’aide d’API Java. AEM LiveCycle Connector simplifie l’utilisation de ces API dans l’environnement OSGi.
 
@@ -44,7 +45,7 @@ Bien que les propriétés soient explicites, les plus importantes sont les suiva
 * **Mot de passe** : indique le mot de passe.
 * **Nom du service** : indique les services démarrés à l’aide des informations d’identification fournies dans les champs Nom d’utilisateur et Mot de passe. Par défaut, aucune information d’identification n’est transmise lors du démarrage des services LiveCycle.
 
-## Démarrage des Services de document  {#starting-document-services}
+## Démarrage des Services de document {#starting-document-services}
 
 Les applications clientes peuvent démarrer des services LiveCycle par programmation en utilisant une API Java, des services Web, Remoting et REST. Pour les clients Java, l’application peut utiliser le kit SDK LiveCycle. Ce kit SDK fournit une API Java permettant de démarrer ces services à distance. Par exemple, pour convertir un document Microsoft Word au format PDF, le client lance GeneratePDFService. Le flux d’appel se compose des étapes suivantes :
 
