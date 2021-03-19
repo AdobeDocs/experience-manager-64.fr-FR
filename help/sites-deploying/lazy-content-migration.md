@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 282a828a-edb2-4643-9bf7-ec30c29dc6ce
+feature: Mise à niveau
 translation-type: tm+mt
-source-git-commit: ba16a6870bc621a585b2b2d7c7536baef05adc72
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '679'
 ht-degree: 93%
 
 ---
@@ -36,7 +37,7 @@ Bien que l’objectif de l’opération soit une mise en œuvre efficace, cette 
 
 Vous trouverez, ci-dessous, la liste complète des `CodeUpgradeTasks` introduites dans la version 6.4 :
 
-| **Nom** | **Convient aux versions AEM antérieures à** | **Type de migration** | **Détails** |
+| **Name** (Nom) | **Convient aux versions AEM antérieures à** | **Type de migration** | **Détails** |
 |---|---|---|---|
 | `Cq561ProjectContentUpgrade` | &lt; 5.6.1 | Immédiat |  |
 | `Cq60MSMContentUpgrade` | &lt; 6.0 | Immédiat | Détecte toutes les `LiveRelationShips` de `VersionStorage` qui ont été supprimées et ajoute une propriété d’exclusion au parent. |
