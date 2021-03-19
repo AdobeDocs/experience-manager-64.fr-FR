@@ -1,6 +1,6 @@
 ---
-title: Console Groupes communautaires
-seo-title: Console Groupes communautaires
+title: Console des groupes communautaires
+seo-title: Console des groupes communautaires
 description: La console Groupes permet de créer des groupes de la communauté.
 seo-description: La console Groupes permet de créer des groupes de la communauté.
 uuid: 7dac2d1b-78fc-4b39-a2cb-100f1e220c23
@@ -10,16 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1642'
-ht-degree: 2%
+source-wordcount: '1643'
+ht-degree: 3%
 
 ---
 
 
-# Console Groupes communautaires {#community-groups-console}
+# Console des groupes communautaires {#community-groups-console}
 
 La console Groupes permet de créer des groupes communautaires lorsque la [structure de modèle](sites-console.md#step1) d&#39;un site communautaire inclut la fonction [groupes](functions.md#groups-function).
 
