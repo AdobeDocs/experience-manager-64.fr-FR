@@ -1,7 +1,7 @@
 ---
 title: Test des modèles modifiables dans We.Retail
 seo-title: Test des modèles modifiables dans We.Retail
-description: 'null'
+description: Test des modèles modifiables dans We.Retail
 seo-description: 'null'
 uuid: 0d4b97cb-efcc-4312-a783-eae3ecd6f889
 contentOwner: User
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '490'
 ht-degree: 86%
 
 ---
@@ -24,7 +24,7 @@ Grâce aux modèles modifiables, les tâches de création et de gestion des mod�
 
 Toutes les pages We.Retail reposent sur des modèles modifiables, ce qui permet aux non-développeurs d’adapter et de personnaliser les modèles.
 
-## Test  {#trying-it-out}
+## Test {#trying-it-out}
 
 1. Modifiez la page Équipement de la branche principale de langue.
 
@@ -54,7 +54,7 @@ Toutes les pages We.Retail reposent sur des modèles modifiables, ce qui permet 
 
 1. De retour dans l’éditeur de modèles, vous pouvez modifier la stratégie du composant de texte dans le conteneur de mises en page.
 
-   Ce permet d’effectuer les opérations suivantes :
+   Vous avez ainsi la possibilité d’effectuer les opérations suivantes :
 
    * Sélectionner une stratégie existante ou en créer une nouvelle pour le conteneur.
    * Définir les fonctionnalités dont dispose le créateur de la page lorsqu’il utilise ce composant :
