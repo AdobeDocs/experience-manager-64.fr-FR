@@ -1,7 +1,7 @@
 ---
 title: Extension AEM Brackets
 seo-title: Extension AEM Brackets
-description: 'null'
+description: Extension AEM Brackets
 seo-description: 'null'
 uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '928'
 ht-degree: 55%
 
 ---
@@ -26,7 +26,7 @@ L’extension AEM Brackets offre un workflow fluide pour modifier les composant
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
-### Fonctions {#features}
+### Fonctionnalités {#features}
 
 Les principales fonctionnalités de l’extension AEM Brackets sont les suivantes :
 
@@ -103,7 +103,7 @@ AEM Brackets Extension fournit les types suivants de synchronisation de contenu 
 
 Ne synchronise que les changements de Brackets vers l’instance d’AEM, mais jamais l’inverse.
 
-### Synchronisation bidirectionnelle manuelle  {#manual-bidirectional-synchronization}
+### Synchronisation bidirectionnelle manuelle {#manual-bidirectional-synchronization}
 
 Dans Project Explorer, ouvrez le menu contextuel en cliquant avec le bouton droit de la souris sur un fichier ou un dossier, et vous pouvez accéder aux options **Exporter vers le serveur** ou **Importer à partir du serveur**.
 
