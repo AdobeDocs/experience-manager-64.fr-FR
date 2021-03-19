@@ -8,10 +8,11 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 6e4e3af5-4260-4f38-9b29-0818e92bc182
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '670'
 ht-degree: 81%
 
 ---
@@ -23,7 +24,7 @@ Traditionnellement, les formulaires web sont configurés à des fins d’envoi s
 
 Lisez la suite pour plus de détails sur l’envoi asynchrone dans les formulaires adaptatifs.
 
-## Configurer l’envoi asynchrone  {#configure}
+## Configurer l’envoi asynchrone {#configure}
 
 Pour configurer la soumission asynchrone pour un formulaire adaptatif :
 
