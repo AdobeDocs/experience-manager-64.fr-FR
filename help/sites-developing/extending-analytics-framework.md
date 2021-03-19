@@ -1,7 +1,7 @@
 ---
 title: Personnalisation du cadre Adobe Analytics
 seo-title: Personnalisation du cadre Adobe Analytics
-description: 'null'
+description: Personnalisation du cadre Adobe Analytics
 seo-description: 'null'
 uuid: 444a29c2-3b4e-4d21-adc0-5f317ece2b77
 contentOwner: User
@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 translation-type: tm+mt
-source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 55%
+source-wordcount: '1624'
+ht-degree: 54%
 
 ---
 
@@ -255,7 +255,7 @@ function s_doPlugins(s) {
 s.doPlugins=s_doPlugins;
 ```
 
-aem installe les modules externes Adobe Analytics suivants, de sorte qu’ils soient disponibles par défaut :
+AEM installe les modules externes Adobe Analytics suivants, de sorte qu’ils soient disponibles par défaut :
 
 * getQueryParam()
 * getPreviousValue()
