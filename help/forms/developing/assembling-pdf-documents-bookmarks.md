@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
+role: Développeur
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2575'
 ht-degree: 2%
 
 ---
@@ -244,7 +245,7 @@ Assemblage d’un document PDF avec des signets à l’aide de l’API Service A
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Assemblage de documents PDF avec des signets à l’aide de l’API de service Web {#assemble-pdf-documents-with-bookmarks-using-the-web-service-api}
+## Assemblage de documents PDF avec des signets à l’aide de l’API du service Web {#assemble-pdf-documents-with-bookmarks-using-the-web-service-api}
 
 Assemblage d’un document PDF avec des signets à l’aide de l’API Assembler Service (service Web) :
 
