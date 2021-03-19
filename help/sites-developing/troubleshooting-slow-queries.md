@@ -1,7 +1,7 @@
 ---
 title: Résolution des problèmes de lenteur des requêtes
 seo-title: Résolution des problèmes de lenteur des requêtes
-description: 'null'
+description: Résolution des problèmes de lenteur des requêtes
 seo-description: 'null'
 uuid: ad09546a-c049-44b2-99a3-cb74ee68f040
 contentOwner: User
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: c4e18cad7bc08638af9dce6ab396554052043e16
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2269'
 ht-degree: 69%
 
 ---
@@ -144,7 +144,7 @@ Définissez des seuils bas pour oak.queryLimitInMemory (par exemple, 10000) et o
 
 Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire non soutenues par un index ou soutenues par un index moins étendu). Par exemple, une requête qui lit 1 million de nœuds générerait un grand nombre d’E/S et aurait un impact négatif sur les performances globales de l’application. Par conséquent, toute requête qui échoue en raison des limites ci-dessus doit être analysée et optimisée.
 
-#### Après le déploiement  {#post-deployment-2}
+#### Après le déploiement {#post-deployment-2}
 
 * Surveillez les journaux à la recherche de requêtes déclenchant une traversée de nœuds importante ou une consommation élevée de mémoire de tas : 
 
@@ -417,7 +417,7 @@ Par conséquent, assurez-vous que les index satisfont aux requêtes, sauf si la 
 
 ### Prise en charge par Adobe {#adobe-supported}
 
-* **Débogueur du créateur de requêtes**
+* **Débogueur Query Builder**
 
    * Interface utilisateur web destinée à exécuter des requêtes Query Builder et à générer le XPath connexe (à utiliser dans l’outil Expliquer la requête ou dans le Générateur de définitions d’index en Oak).
    * Situé sur AEM à [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
