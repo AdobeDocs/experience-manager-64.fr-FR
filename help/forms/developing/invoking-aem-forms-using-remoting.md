@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
+role: Développeur
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '4654'
+source-wordcount: '4655'
 ht-degree: 1%
 
 ---
@@ -443,7 +444,7 @@ Les méthodes `login` et `logout` renvoient un objet AsyncToken. Affectez des ge
 
 ### Utilisation de la connexion unique {#using-single-sign-on}
 
-aem utilisateurs de formulaires peuvent se connecter à plusieurs applications Web AEM Forms pour effectuer une tâche. Lorsque les utilisateurs passent d’une application Web à une autre, il n’est pas efficace de les obliger à se connecter séparément à chaque application Web. Le mécanisme de connexion unique AEM Forms permet aux utilisateurs de se connecter une seule fois, puis d&#39;accéder à toute application Web AEM Forms. Comme les développeurs AEM Forms peuvent créer des applications clientes à utiliser avec AEM Forms, ils doivent également être en mesure de tirer parti du mécanisme de connexion unique.
+AEM utilisateurs de formulaires peuvent se connecter à plusieurs applications Web AEM Forms pour effectuer une tâche. Lorsque les utilisateurs passent d’une application Web à une autre, il n’est pas efficace de les obliger à se connecter séparément à chaque application Web. Le mécanisme de connexion unique AEM Forms permet aux utilisateurs de se connecter une seule fois, puis d&#39;accéder à toute application Web AEM Forms. Les développeurs AEM Forms pouvant créer des applications clientes à utiliser avec AEM Forms, ils doivent également pouvoir tirer parti du mécanisme de connexion unique.
 
 Chaque application Web AEM Forms est incluse dans son propre fichier d’archive Web (WAR), qui est ensuite inclus dans un fichier d’archive Enterprise (EAR). Etant donné qu’un serveur d’applications n’autorise pas le partage de données de session entre différentes applications Web, AEM Forms utilise des cookies HTTP pour stocker les informations d’authentification. Les cookies d’authentification permettent à un utilisateur de se connecter à une application Forms, puis de se connecter à d’autres applications Web AEM Forms. Cette technique est connue sous le nom de connexion unique.
 
