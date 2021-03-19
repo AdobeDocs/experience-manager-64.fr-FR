@@ -1,6 +1,6 @@
 ---
-title: Mise à niveau vers AEM 6.4 Forms
-seo-title: Mise à niveau vers AEM 6.4 Forms
+title: Mise à niveau vers AEM 6.4 Forms
+seo-title: Mise à niveau vers AEM 6.4 Forms
 description: 'Vous pouvez effectuer une mise à niveau directe à partir de AEM 6.1 Forms, AEM 6.2 Forms et LiveCycle ES4 SP1 vers AEM 6.3 Forms. '
 seo-description: 'Vous pouvez effectuer une mise à niveau directe à partir de AEM 6.1 Forms, AEM 6.2 Forms et LiveCycle ES4 SP1 vers AEM 6.3 Forms. '
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 83%
+source-wordcount: '850'
+ht-degree: 86%
 
 ---
 
@@ -31,8 +32,8 @@ Vous pouvez effectuer une mise à niveau directe à partir d’AEM 6.2 Forms o
    1. Installez le dernier Service Pack et les derniers correctifs pour AEM 6.2 Forms ou AEM 6.3 Forms. Pour plus d’informations, voir :
 
       * [Notes de mise à jour d’AEM 6.2](https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html)
-      * [Notes de mise à jour d’AEM 6.3](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html)
-      * [AEM Sustenance Hub](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html)
+      * [Notes de mise à jour d’AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
+      * [AEM Sustenance Hub](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr)
    1. Préparez l’instance source pour la mise à niveau. Pour obtenir des instructions détaillées, reportez-vous à l’article [Mise à niveau vers AEM 6.4](/help/sites-deploying/upgrade.md#preparing%20the%20source%20instance).
    1. Téléchargez [AEM 6.4 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software).
    1. **(Installations Unix/Linux uniquement)** Si vous utilisez UNIX ou Linux en tant que système d’exploitation sous-jacent, ouvrez la fenêtre de terminal, accédez au dossier contenant crx-quickstart et exécutez la commande suivante :
@@ -50,13 +51,13 @@ Vous pouvez effectuer une mise à niveau directe à partir d’AEM 6.2 Forms o
 
 1. Installation du module complémentaire AEM Forms. Les étapes sont énumérées ci-dessous :
 
-   1. Ouvrez [Distribution de logiciels](https://experience.adobe.com/fr/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
-   1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** dans le menu d’en-tête.
+   1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+   1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
    1. Dans la section **[!UICONTROL Filtres]** :
       1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
       1. Sélectionnez la version et le type du package. Vous pouvez également utiliser l&#39;option **[!UICONTROL Rechercher les téléchargements]** pour filtrer les résultats.
    1. Appuyez sur le nom du package correspondant à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur final]**, puis appuyez sur **[!UICONTROL Télécharger]**.
-   1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+   1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
    1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
       Vous pouvez également télécharger le package à l’aide du lien direct répertorié dans l’article [AEM Forms versions](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
