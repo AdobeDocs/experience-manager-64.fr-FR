@@ -8,10 +8,11 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
+role: Administrator
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '7349'
+source-wordcount: '7350'
 ht-degree: 73%
 
 ---
@@ -31,7 +32,7 @@ Cet article décrit des techniques de renforcement à appliquer au cours des ét
 
 AEM Forms sur JEE est hautement personnalisable et compatible avec de nombreux environnements. Il est possible que certains des conseils présentés ici ne soient pas directement applicables à votre entreprise.
 
-## Préinstallation  {#preinstallation}
+## Préinstallation {#preinstallation}
 
 Avant d’installer AEM Forms sur JEE, vous pouvez appliquer des solutions de sécurité à la couche réseau et au système d’exploitation. Cette section décrit certains problèmes et propose des conseils pour réduire les vulnérabilités de la sécurité correspondantes.
 
@@ -787,7 +788,7 @@ Lorsque vous configurez une architecture réseau sécurisée comme décrit dans 
  <thead> 
   <tr> 
    <th><p>Protocole</p> </th> 
-   <th><p>Utilisation</p> </th> 
+   <th><p>Utilisez</p> </th> 
   </tr> 
  </thead> 
  <tbody>
