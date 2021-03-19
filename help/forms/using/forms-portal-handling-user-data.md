@@ -8,10 +8,11 @@ contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '981'
 ht-degree: 68%
 
 ---
@@ -81,7 +82,7 @@ Le tableau suivant explique comment les données de tous les brouillons par `sro
 >
 >Une structure exacte telle que `drafts` est répliquée pour les formulaires envoyés pour `srose` sous le noeud `/content/forms/fp/srose/submit/`.
 >
->Tous les brouillons et les envois des utilisateurs `anonymous` sont stockés sous le noeud `/content/forms/fp/anonymous/`, qui organise les brouillons et les envois pour tous les utilisateurs anonymes sous les noeuds `draft` et `submit`.
+>Tous les brouillons et envois des utilisateurs `anonymous` sont stockés sous le noeud `/content/forms/fp/anonymous/`, qui organise les brouillons et les envois pour tous les utilisateurs anonymes sous les noeuds `draft` et `submit`.
 
 | Node | Description |
 |---|---|
