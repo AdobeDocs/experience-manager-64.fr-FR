@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2886'
 ht-degree: 3%
 
 ---
@@ -215,7 +216,7 @@ Les sous-règles sont des noeuds de type `cq:Page` avec des propriétés sur son
   <tr> 
    <th>Propriété</th> 
    <th>Type</th> 
-   <th> Valeur Description</th> 
+   <th> Description de la valeur</th> 
   </tr> 
   <tr> 
    <td><i><code>VERB</code></i></td> 
@@ -354,7 +355,7 @@ La propriété `scoringRules`d&#39;une règle de badge limite simplement les rè
   <tr> 
    <th>Propriété</th> 
    <th>Type</th> 
-   <th>Valeur Description</th> 
+   <th>Description de la valeur</th> 
   </tr> 
   <tr> 
    <td>seuils</td> 
