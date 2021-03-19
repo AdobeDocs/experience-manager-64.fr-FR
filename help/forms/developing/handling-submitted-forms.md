@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
+role: Développeur
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2922'
 ht-degree: 2%
 
 ---
@@ -88,7 +89,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Une page Web contient un lien qui accède à un servlet Java qui appelle le service Forms.</p></td>
   </tr>
   <tr>
@@ -96,7 +97,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
    <td><p>Le service Forms génère un formulaire PDF interactif dans le navigateur Web client.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>L’utilisateur remplit un formulaire interactif et clique sur un bouton d’envoi. Le formulaire est renvoyé au service Forms en tant que données PDF. Cette option est définie dans Designer.</p></td>
   </tr>
   <tr>
