@@ -1,7 +1,7 @@
 ---
 title: Test des composants principaux dans We.Retail
 seo-title: Test des composants principaux dans We.Retail
-description: 'null'
+description: Test des composants principaux dans We.Retail
 seo-description: 'null'
 uuid: 8d1cea0b-99d9-49b2-b275-41f14864b1ff
 contentOwner: User
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '544'
 ht-degree: 82%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 82%
 
 Les composants principaux sont des composants souples et modernes offrant une grande facilité d’extensibilité et permettant une intégration aisée dans vos projets. Plusieurs principes de conception majeurs ont présidé à l’élaboration des composants principaux : HTL, composants utillisables immédiatement, configurabilité, contrôle de version, extensibilité… We.Retail repose sur des composants principaux.
 
-## Test  {#trying-it-out}
+## Test {#trying-it-out}
 
 1. Démarrez AEM avec l’échantillon de contenu We.Retail, puis ouvrez la [Console Composants](/help/sites-authoring/default-components-console.md).
 
