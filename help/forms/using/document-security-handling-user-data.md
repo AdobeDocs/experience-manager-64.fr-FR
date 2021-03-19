@@ -7,10 +7,11 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1055'
 ht-degree: 60%
 
 ---
@@ -81,7 +82,7 @@ Le tableau suivant montre comment Document Security organise les données dans l
  </tbody> 
 </table>
 
-## Accès et suppression des données utilisateur  {#access-and-delete-user-data}
+## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
 Vous pouvez accéder et exporter les données de Document Security pour les utilisateurs dans les bases de données et, si nécessaire, les supprimer définitivement.
 
@@ -101,7 +102,7 @@ Exécutez les commandes de base de données suivantes pour exporter les données
 
 >[!NOTE]
 >
->Les commandes suivantes utilisent des noms de tables de base de données dans les bases de données MySQL et IBM DB2. Lors de l&#39;exécution de ces commandes dans les bases de données Oracle et MS SQL, remplacez `EdcPolicySetPrincipalEntity` par `EdcPolicySetPrincipalEnt` dans les commandes.
+>Les commandes suivantes utilisent des noms de tables de base de données dans les bases de données MySQL et IBM DB2. Lors de l&#39;exécution de ces commandes sur les bases de données Oracle et MS SQL, remplacez `EdcPolicySetPrincipalEntity` par `EdcPolicySetPrincipalEnt` dans les commandes.
 
 ```sql
 Select * from EdcPrincipalKeyEntity where principalid = '<principal_id>';
