@@ -9,20 +9,21 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
+feature: Designer
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 89%
 
 ---
 
 
-# Utilisation de la signature tactile dans les formulaires HTML5  {#using-scribble-signature-in-html-forms}
+# Utilisation de la signature tactile dans les formulaires HTML5 {#using-scribble-signature-in-html-forms}
 
 Les formulaires HTML5 sont de plus en plus utilisés sur les périphériques tactiles, qui prennent tous en charge les signatures. La saisie tactile, consistant à écrire avec un stylet ou un doigt, devient un moyen accepté de signer des formulaires sur les périphériques mobiles. Les formulaires HTML5 et Forms Designer offrent désormais la possibilité d’afficher un champ de signature tactile dans le formulaire. Lorsque le formulaire est rendu dans le navigateur, vous pouvez signer dans ces champs avec un stylet, la souris ou le doigt.
 
-## Comment créer un formulaire utilisant un champ de signature tactile   {#how-to-design-a-form-using-scribble-signature-field}
+## Comment créer un formulaire utilisant un champ de signature tactile  {#how-to-design-a-form-using-scribble-signature-field}
 
 1. Ouvrez un formulaire dans Forms Designer.
 1. Faites glisser le champ de signature tactile vers la page.
