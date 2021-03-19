@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
+role: Administrator
 translation-type: tm+mt
-source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1142'
 ht-degree: 1%
 
 ---
@@ -157,7 +158,7 @@ Consultez les informations de base pour :
 
 ### Règles et sous-règles de score incluses {#included-scoring-rules-and-sub-rules}
 
-La version bêta comprend deux règles de notation avancées pour la fonction de forum [](functions.md#forum-function) (une pour le forum et les composants de commentaires de la fonction de forum) :
+La version bêta comprend deux règles de notation avancées pour la fonction de forum [](functions.md#forum-function) (une pour chacune des composantes du forum et des commentaires de la fonction de forum) :
 
 1. /etc/community/scoring/rules/pliants-commentaires-score
 
