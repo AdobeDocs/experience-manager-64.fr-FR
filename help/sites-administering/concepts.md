@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: c8ef374a-38d8-4cd4-a86e-69f0a5b4c2bc
+feature: Commerce Integration Framework
 translation-type: tm+mt
-source-git-commit: 89d3edbd11d6a900804908ef13cd53e086e92345
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '4532'
+source-wordcount: '4535'
 ht-degree: 83%
 
 ---
@@ -294,7 +295,7 @@ Les différents attributs de produit peuvent dépendre du moteur eCommerce utili
 
    Résumé des fonctionnalités du produit.
 
-* **Fonctions**
+* **Fonctionnalités**
 
    Plus de détails sur les fonctionnalités du produit.
 
@@ -306,7 +307,7 @@ Plusieurs ressources peuvent être disponibles pour différents produits. En gé
 
 Un catalogue regroupe des données sur les produits afin de faciliter la gestion et la présentation à l’acheteur. Généralement, un catalogue est structuré selon des attributs comme la langue, la région géographique, la marque, la saison, le centre d’intérêt, le sport, etc.
 
-### Structure de catalogue  {#catalog-structure}
+### Structure de catalogue {#catalog-structure}
 
 #### Catalogues multilingues {#catalogs-in-multiple-languages}
 
@@ -599,7 +600,7 @@ Une promotion peut être contenue dans une expérience ou directement dans la ca
 >
 >Les [promotions Hybris](https://www.hybris.com/modules/promotion) et les [bons Hybris](https://www.hybris.com/en/modules/voucher) couvrent tout ce qui influence le panier et est lié au prix. Le contenu marketing spécifique à une promotion (bannières, etc.) ne fait pas partie de la promotion Hybris.
 
-## Personnalisation   {#personalization}
+## Personnalisation  {#personalization}
 
 ### Enregistrement et comptes des clients {#customer-registration-and-accounts}
 
