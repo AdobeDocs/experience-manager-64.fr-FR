@@ -7,16 +7,17 @@ uuid: 19e6ffab-00d2-4084-9ee7-9643b11eb6c6
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 71bba66a-3cac-445b-9941-aa4bcf9b2160
+feature: Communication interactive
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '716'
 ht-degree: 64%
 
 ---
 
 
-# Canal d’impression et canal web  {#print-channel-and-web-channel}
+# Canal d’impression et canal web {#print-channel-and-web-channel}
 
 Importation de modèles de canaux d’impression et création et activation de modèles de canaux web
 
@@ -62,7 +63,7 @@ Pour créer un modèle de canal Web, procédez comme suit :
 1. Accédez au dossier de modèle approprié et créez un modèle web.
 
    1. Accédez au dossier de modèle approprié en sélectionnant **[!UICONTROL Outils]** > **[!UICONTROL Modèles > Dossier]**.
-   1. Appuyez sur **[!UICONTROL Créer]**. 
+   1. Appuyez sur **[!UICONTROL Créer]**.
    1. Sélectionnez **[!UICONTROL Communication interactive - Canal Web]** et appuyez sur **[!UICONTROL Suivant]**.
    1. Entrez un titre et une description de modèle, puis appuyez sur **[!UICONTROL Créer]**.
 
