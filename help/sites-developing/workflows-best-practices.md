@@ -1,7 +1,7 @@
 ---
 title: Meilleures pratiques en matière de workflow
 seo-title: Meilleures pratiques en matière de workflow
-description: 'null'
+description: Meilleures pratiques en matière de workflow
 seo-description: 'null'
 uuid: 79be4055-c2ef-428e-9054-103c6cfde1d2
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 translation-type: tm+mt
-source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1924'
 ht-degree: 91%
 
 ---
@@ -30,7 +30,7 @@ Il est donc vivement conseillé de planifier soigneusement vos implémentations 
 
 Lors de la configuration des processus de workflow (qu’ils soient personnalisés et/ou standard), vous devez tenir compte de plusieurs éléments.
 
-### Workflows transitoires  {#transient-workflows}
+### Workflows transitoires {#transient-workflows}
 
 Pour optimiser les charges d’assimilation élevées, vous pouvez définir un [workflow comme étant transitoire](/help/sites-developing/workflows.md#transient-workflows).
 
@@ -51,7 +51,7 @@ Cela peut se traduire par divers avantages :
 
 Pour obtenir des conseils en matière d’optimisation des performances pour les workflows DAM, reportez-vous au [Guide d’optimisation des performances d’AEM Assets](/help/assets/performance-tuning-guidelines.md).
 
-### Configuration du nombre maximum de workflows simultanés  {#configure-the-maximum-number-of-concurrent-workflows}
+### Configuration du nombre maximum de workflows simultanés {#configure-the-maximum-number-of-concurrent-workflows}
 
 AEM peut autoriser l’exécution simultanée de plusieurs threads de workflow. Par défaut, le nombre de threads est configuré sur la moitié du nombre de cœurs de processeur du système.
 
@@ -59,7 +59,7 @@ Si les workflows en cours d’exécution consomment de nombreuses ressources sys
 
 Pour remédier à ce problème, Adobe recommande de configurer le **nombre maximal de tâches en parallèle** sur une valeur comprise entre 50 % et 75 % du nombre de cœurs de processeur du système. Cela devrait laisser suffisamment de capacité de réaction au système lors du traitement de ces workflows.
 
-Pour configurer **Nombre maximal de tâches parallèles**, vous pouvez :
+Pour configurer **Nombre maximal de tâches parallèles**, vous pouvez effectuer l&#39;une des opérations suivantes :
 
 * Configurez la **[configuration OSGi](/help/sites-deploying/configuring-osgi.md)** à partir de la console Web AEM ; pour **File d&#39;attente : Granite Workflow Queue** (une **configuration de la file d’attente de travaux Apache Sling**).
 
