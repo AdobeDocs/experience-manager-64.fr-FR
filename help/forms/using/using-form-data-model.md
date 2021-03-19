@@ -7,10 +7,11 @@ uuid: 9a8bd44a-34a1-41ef-a57b-d5e3dd0a77ee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 7a1bfd43-39b1-478b-a294-92c78eaebbf2
+feature: Modèle de données de formulaire
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1276'
 ht-degree: 83%
 
 ---
@@ -36,7 +37,7 @@ Un modèle de données de formulaire est une extension du schéma JSON que vous 
 * [Écrire les données de formulaires adaptatifs envoyés dans les sources de données](#write-af)
 * [Appeler les services à l’aide des règles de formulaire adaptatif](#invoke-services)
 
-## Créer des formulaires adaptatifs et des fragments  {#create-af}
+## Créer des formulaires adaptatifs et des fragments {#create-af}
 
 Vous pouvez créer des [formulaires adaptatifs](/help/forms/using/creating-adaptive-form.md) et des [fragments de formulaire adaptatif](/help/forms/using/adaptive-form-fragments.md) en fonction du modèle de données de formulaire. Procédez comme suit pour utiliser un modèle de données du formulaire lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif :
 
