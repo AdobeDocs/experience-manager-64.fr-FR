@@ -8,10 +8,11 @@ content-type: reference
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2044'
 ht-degree: 86%
 
 ---
@@ -71,7 +72,7 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
    >
    >Autorisez les fenêtres indépendantes dans votre navigateur pour ouvrir le formulaire créé dans un nouvel onglet.
 
-## Créer un formulaire adaptatif basé sur un modèle de données de formulaire  {#fdm}
+## Créer un formulaire adaptatif basé sur un modèle de données de formulaire {#fdm}
 
 [L’intégration de données AEM Forms](/help/forms/using/data-integration.md) vous permet d’intégrer plusieurs sources de données et de rassembler leurs entités et services pour créer un modèle de données de formulaire. Il s’agit d’une extension du schéma JSON. Vous pouvez utiliser un modèle de données du formulaire pour créer un formulaire adaptatif. Les entités ou les objets de modèle de données configurés dans un modèle de données de formulaire sont disponibles en tant qu’objets de modèle de données pour la création de formulaire. Ils sont associés à des sources de données respectives et utilisés pour pré-remplir un formulaire et écrire les données envoyées dans les sources de données respectives. Vous pouvez également appeler des services configurés dans un modèle de données de formulaire à l’aide des règles de formulaire adaptatif.
 
