@@ -6,16 +6,19 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur de création d’interface utilisateur classique AEM 6.4
 breadcrumb-title: Guide de création d’interface utilisateur classique
 user-guide-description: Ce guide traite des concepts de création dans AEM interface utilisateur classique.
+feature-set: Experience Manager Sites
+feature: 'Création  '
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 83%
+source-wordcount: '322'
+ht-degree: 82%
 
 ---
 
 
-# aem 6.4 Guide de l’utilisateur de création d’IU classique {#classic-ui}
+# AEM 6.4 Guide de l’utilisateur de création d’IU classique {#classic-ui}
 
 + [Présentation du guide de création d’interface utilisateur classique](home.md)
 + Présentation de la création d’interface utilisateur classique {#introduction}
@@ -38,7 +41,7 @@ ht-degree: 83%
    + [Modification des propriétés de page](classic-page-author-edit-page-properties.md)
    + [Annotations lors de la modification d’une page](classic-page-author-annotations.md)
    + [Résolution des problèmes d’AEM lors de la création](classic-page-author-troubleshooting.md)
-   + [Création d’un contenu accessible (conformité WCAG 2.0)](classic-page-author-accessible-content.md)
+   + [Création de contenu accessible (conformité WCAG 2.0)](classic-page-author-accessible-content.md)
    + [Création d’une page pour les appareils mobiles](classic-feature-mobile.md)
    + [Composants pour la création de page](classic-page-author-edit-mode.md)
    + [Raccourcis clavier lors de la modification de pages](classic-page-author-keyboard-shortcuts.md)
@@ -60,7 +63,7 @@ ht-degree: 83%
    + [Création de lancements](classic-launches-creating.md)
    + [Modification de lancements](classic-launches-editing.md)
    + [Conversion de lancements](classic-launches-promoting.md)
-+ Personnalisation   {#personalization}
++ Personnalisation {#personalization}
    + [Compréhension de la segmentation](classic-personalization-campaigns-segmentation.md)
    + [Gestion de campagnes](classic-personalization-campaigns.md)
    + [Teasers et stratégies](classic-personalization-campaigns-teasers-strategy.md)
@@ -88,7 +91,7 @@ ht-degree: 83%
    + [Ajout de ressources Dynamic Media aux pages](dynamic-media-assets-adding-to-page.md)
    + [Ajouter les fonctionnalités de Dynamic Media Classic (Scene7) à votre page](manage-assets-classic-s7.md)
    + [Utilisation de Dynamic Media](dynamic-media-assets.md)
-   + [Utilisation de ressources 3D](classicui-3dassets.md)
+   + [Utilisation des ressources 3D](classicui-3dassets.md)
    + [Vidéo](manage-assets-classic-s7-video.md)
    + [Conventions de dénomination pour le test des ressources](asset-naming-conventions.md)
    + [À propos du chargement et du traitement de ressources 3D dans AEM](classicui-upload-proc-3d.md)
