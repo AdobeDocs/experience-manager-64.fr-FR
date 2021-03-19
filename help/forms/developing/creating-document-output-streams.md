@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
+role: Développeur
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '19030'
+source-wordcount: '19031'
 ht-degree: 4%
 
 ---
@@ -1997,7 +1998,7 @@ Définissez les options d’exécution PDF suivantes afin que le service Output 
 
 * **URI** du fichier : Indique le nom et l’emplacement du fichier PDF généré par le service Output.
 * **Règles** : Indique les règles que vous avez définies.
-* **LookAHead** : Indique le nombre d’octets à utiliser depuis le début du fichier de données d’entrée pour rechercher les modèles de texte définis. La valeur par défaut est de 500 octets.
+* **LookAHead** : Indique le nombre d’octets à utiliser depuis le début du fichier de données d’entrée pour analyser les modèles de texte définis. La valeur par défaut est de 500 octets.
 
 **Définition des options d’exécution de rendu**
 
