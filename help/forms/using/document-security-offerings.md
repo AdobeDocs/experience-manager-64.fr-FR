@@ -9,10 +9,11 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8e7a8481-b8cd-4f2b-b9d2-7a8132f1d3f6
+feature: Document Security
 translation-type: tm+mt
-source-git-commit: 75c765bf8d8cd5cd06f5eb882f5ca72a2ec8f484
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1217'
 ht-degree: 91%
 
 ---
@@ -40,7 +41,7 @@ Le serveur Document Security fournit une interface Web (page Web) pour créer de
 
 Le serveur est inclus dans l’offre de module complémentaire de Document Security des AEM Forms. Vous pouvez contacter [l’équipe de ventes](https://www.adobe.com/products/request-consultation/marketing-cloud.html?s_osc=70114000002JNwKAAW&amp;s_iid=70114000002JHs3AAG) d’AEM Forms pour acheter le module complémentaire Document Security.
 
-### Protection des documents  {#protect-documents}
+### Protection des documents {#protect-documents}
 
 Document Security d’AEM Forms fournit divers outils qui permettent d’appliquer des stratégies de sécurité. Vous pouvez sélectionner un outil en fonction de vos besoins et de vos spécifications.
 
