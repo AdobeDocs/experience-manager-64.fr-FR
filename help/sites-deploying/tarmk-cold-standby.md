@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: 4ca6d4e59843656d289c0d650a68d8c9cf2ff0a0
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2725'
+source-wordcount: '2726'
 ht-degree: 80%
 
 ---
@@ -73,7 +74,7 @@ En outre, vous pouvez spécifier les instances de secours qui sont autorisées �
 >
 >Il est recommandé d’ajouter un équilibreur de charge entre le dispatcher et les serveurs qui font partie de la configuration Coldy Standby. L’équilibreur de charge doit être configuré pour diriger le trafic des utilisateurs uniquement vers l’instance **principale**, pour assurer la régularité et empêcher la copie du contenu sur l’instance de secours par des moyens autres que le mécanisme Cold Standby.
 
-## Création d’une configuration AEM TarMK Cold Standby  {#creating-an-aem-tarmk-cold-standby-setup}
+## Création d’une configuration AEM TarMK Cold Standby {#creating-an-aem-tarmk-cold-standby-setup}
 
 >[!CAUTION]
 >
@@ -361,7 +362,7 @@ Des informations supplémentaires pour jusqu’à 10 clients (instances de seco
 
 ## Maintenance du référentiel Cold Standby {#cold-standby-repository-maintenance}
 
-### Nettoyage des révisions {#revision-clean}
+### Nettoyage de révision {#revision-clean}
 
 >[!CAUTION]
 >
