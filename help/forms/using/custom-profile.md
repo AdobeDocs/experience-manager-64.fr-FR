@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 62%
 
 ---
 
 
-# Création d’un profil personnalisé pour HTML5 forms  {#creating-a-custom-profile-for-html-forms}
+# Création d’un profil personnalisé pour HTML5 forms {#creating-a-custom-profile-for-html-forms}
 
 Un profil est un noeud de ressources dans [Apache Sling](https://sling.apache.org/). Il représente une version personnalisée du service de rendu HTML5 forms. Vous pouvez utiliser le service de rendu HTML5 forms pour personnaliser l’apparence, le comportement et les interactions des formulaires HTML5. Un noeud de profil existe dans le dossier `/content` du référentiel JCR. Vous pouvez placer le noeud directement sous le dossier `/content` ou tout sous-dossier du dossier `/content`.
 
@@ -41,7 +42,7 @@ Le module config.jsp contient les différentes configurations telles que les ser
 
 Le fichier toolbar.jsp contient le code permettant de créer une barre d’outils colorée. Pour supprimer la barre d’outils, supprimez toolbar.jsp du module HTML.jsp
 
-## formBody.jsp  {#formbody-jsp}
+## formBody.jsp {#formbody-jsp}
 
 Le module formBody.jsp sert à la représentation HTML du formulaire XFA.
 
