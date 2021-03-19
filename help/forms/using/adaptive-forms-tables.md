@@ -7,10 +7,11 @@ uuid: 604cd51f-2a47-4410-b414-9cb13fe63713
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 6c5b0abd9f19ceddd84e8615f0aedf48b1ef5868
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2172'
 ht-degree: 83%
 
 ---
@@ -32,7 +33,7 @@ AEM Forms fournit un composant Tableau dans l’explorateur de composants de la 
 * Prise en charge de l’ajout de lignes ou de cellules à l’aide d’éléments complexes de type XSD
 * Fusion des données à partir d’un fichier XML
 
-## Création d’un tableau  {#create-a-table}
+## Création d’un tableau {#create-a-table}
 
 Pour créer un tableau, faites glisser un composant Tableau à partir de l’explorateur de composants du panneau latéral d’un formulaire adaptatif. Par défaut, le tableau contient deux colonnes et trois lignes, dont la ligne d’en-tête.
 
