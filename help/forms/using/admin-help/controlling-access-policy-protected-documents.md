@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
+feature: Document Security
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2190'
 ht-degree: 85%
 
 ---
@@ -34,7 +35,7 @@ Lorsqu’un document est protégé par une stratégie et que vous révoquez des 
 * Si le document est en ligne, la modification est appliquée immédiatement, sauf si l’utilisateur a ouvert le document. Si tel est le cas, l’utilisateur doit fermer le document pour que la modification soit prise en compte.
 * Si un destinataire utilise le document hors connexion (par exemple, sur un ordinateur portable), la modification prend effet lorsque le destinataire se synchronise avec Document Security en ouvrant un document protégé par une stratégie.
 
-## Affichage des informations sur un document  {#view-information-about-a-document}
+## Affichage des informations sur un document {#view-information-about-a-document}
 
 Pour chacun des documents répertoriés dans la page Documents, vous pouvez voir le nom du document, le nom de l’éditeur, le nom de la stratégie et la date à laquelle le document a été protégé. Si la stratégie qui protégeait un document a été supprimée, son ID apparaît sous le nom de la stratégie.
 
