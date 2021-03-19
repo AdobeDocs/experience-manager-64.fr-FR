@@ -7,10 +7,11 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
+role: Administrator
 translation-type: tm+mt
-source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1068'
 ht-degree: 83%
 
 ---
@@ -30,7 +31,7 @@ Un flux de travail basé sur l’utilisation de Forms peut être déclenché ou 
 
 Pour plus d’informations sur les flux de travail et les fonctionnalités AEM basés sur l’utilisation de Forms, voir [Flux de travail basé sur l’utilisation de Forms sur OSGi](/help/forms/using/aem-forms-workflow.md).
 
-## Données utilisateur et stockage de données  {#user-data-and-data-stores}
+## Données utilisateur et stockage de données {#user-data-and-data-stores}
 
 Lorsqu’un flux de travail est déclenché, une charge utile est générée automatiquement pour l’instance de flux de travail. Chaque instance de flux de travail se voit attribuer un ID d’instance unique et un ID de charge utile associé. La charge utile contient les emplacements de référentiel pour les données d’utilisateur et de formulaire associées à une instance de flux de travail. Par ailleurs, les données d’historique et de brouillon d’une instance de flux de travail sont également stockées dans le référentiel AEM.
 
