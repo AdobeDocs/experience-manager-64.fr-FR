@@ -1,7 +1,7 @@
 ---
 title: Référence sur les étapes de workflow
 seo-title: Référence sur les étapes de workflow
-description: 'null'
+description: Référence sur les étapes de workflow
 seo-description: 'null'
 uuid: 72a64495-d1b1-49e7-8257-d6b2ed36961c
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2833'
 ht-degree: 70%
 
 ---
@@ -35,7 +35,7 @@ Les modèles de workflow se composent d’une série d’étapes de différents 
 
 
 
-## Propriétés des étapes  {#step-properties}
+## Propriétés des étapes {#step-properties}
 
 Chaque composant d’étape comporte une boîte de dialogue **[!UICONTROL Propriétés d’étape]** qui vous permet de définir et de modifier les propriétés requises.
 
@@ -179,7 +179,7 @@ function check(){
 }
 ```
 
-## Division OU  {#or-split}
+## Division OU {#or-split}
 
 La **[!UICONTROL division OU]** crée une division dans le workflow, après quoi seule une branche est active. Cette étape vous permet d’ajouter des chemins de traitement conditionnels dans le workflow. Vous ajoutez des étapes de workflow à chaque branche selon vos besoins.
 
