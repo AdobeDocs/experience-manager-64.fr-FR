@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
+feature: Mise à niveau
 translation-type: tm+mt
-source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1035'
 ht-degree: 62%
 
 ---
@@ -38,7 +39,7 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.4]
 * [Configurations des connexions au réseau social Twitter](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md#twitter-social-login-configurations)
 * [Divers](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md#misc)
 
-## Avec la mise à niveau vers la version 6.4  {#with-upgrade}
+## Avec la mise à niveau vers la version 6.4 {#with-upgrade}
 
 ### Modèles de notification par e-mail {#e-mail-notification-templates}
 
@@ -279,7 +280,7 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.4]
      <li>Créez les configurations à l’emplacement <code>/conf/.../settings</code> <br /> souhaité. </li> 
      <li>La propriété <code>cq:conf </code>du site des communautés doit être définie.
       <ol> 
-       <li>Si aucun <code>cq:conf</code> n'est défini, les règles d'évaluation sont directement lues à partir du chemin d'accès donné pour la propriété "<code>scoringRules</code>" au noeud racine du site, par exemple : <code>/content/we-retail/us/en/community/jcr:content</code></li> 
+       <li>Si <code>cq:conf</code> n'est pas défini, les règles d'évaluation sont directement lues à partir du chemin d'accès donné pour la propriété "<code>scoringRules</code>" au noeud racine du site, par exemple : <code>/content/we-retail/us/en/community/jcr:content</code></li> 
       </ol> </li> 
     </ol> <p>Nettoyage : Supprimer la ressource <code>/etc/community/scoring</code></p> </td> 
   </tr>
