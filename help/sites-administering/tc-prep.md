@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 8bd67d71-bcb7-4ca0-9751-3ff3ee054011
+feature: Copie de la langue
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '694'
 ht-degree: 88%
 
 ---
@@ -78,7 +79,7 @@ La procédure ci-dessous utilise l’interface utilisateur optimisée pour les �
 
 1. Cliquez ou appuyez sur Créer. Dans la boîte de dialogue de confirmation, cliquez ou appuyez sur **Terminé** pour revenir à la console Sites ou sur **Ouvrir** pour ouvrir la copie de langue.
 
-## Affichage de l’état des racines de langue  {#seeing-the-status-of-language-roots}
+## Affichage de l’état des racines de langue {#seeing-the-status-of-language-roots}
 
 L’interface utilisateur optimisée pour les écrans tactiles contient un panneau Références, qui affiche une liste des racines de langue créées.
 
