@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
+feature: Document Security
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '730'
 ht-degree: 100%
 
 ---
@@ -36,7 +37,7 @@ Vous pouvez utiliser les documents protégés par une stratégie que vous receve
 >
 >si vous recevez un document protégé par une stratégie sans recevoir d’invitation d’enregistrement par messagerie électronique, contactez son expéditeur afin d’obtenir plus de détails.
 
-## Enregistrement en tant qu’utilisateur invité  {#register-as-an-invited-user}
+## Enregistrement en tant qu’utilisateur invité {#register-as-an-invited-user}
 
 Si vous êtes utilisateur invité et recevez un message d’enregistrement par messagerie électronique de Document security, vous pouvez vous enregistrer en cliquant sur l’URL contenue dans le message pour ouvrir la page d’enregistrement en ligne. Après l’enregistrement, vous recevez un second avis sur l’activation de votre compte.
 
