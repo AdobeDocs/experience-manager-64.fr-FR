@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
+feature: Correspondence Management
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '207'
 ht-degree: 90%
 
 ---
@@ -35,7 +36,7 @@ Ces erreurs peuvent se produire à cause de l’une des raisons suivantes :
 * Un dictionnaire de données est associé à la lettre, mais n’est pas présent sur le serveur.
 * Un dictionnaire de données est associé à la lettre, mais son nom comporte un caractère de soulignement (_).
 
-### Solution  {#workaround}
+### Solution {#workaround}
 
 Assurez-vous que le dictionnaire de données utilisé dans la lettre est présent sur le serveur et que son nom ne comporte aucun trait de soulignement (_).
 
