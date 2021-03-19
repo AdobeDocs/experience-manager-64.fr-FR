@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '840'
 ht-degree: 87%
 
 ---
@@ -26,7 +27,7 @@ Le rendu HTML5 d’un modèle de formulaire XFA comporte plusieurs éléments HT
 >
 >Dans les classes CSS, ne modifiez pas les attributs de position et de taille, tels que la largeur, la hauteur, l’épaisseur de la bordure, le haut, la gauche, la droite, le bas, le remplissage et la marge. Modifier les attributs de position et de taille modifie la disposition du formulaire.
 
-## Classes CSS pour les éléments  {#css-classes-nbsp-for-elements-nbsp}
+## Classes CSS pour les éléments {#css-classes-nbsp-for-elements-nbsp}
 
 Chaque élément contient des classes CSS bien définies. Vous pouvez modifier ces classes pour modifier l’apparence d’un élément. Chaque élément, à l’exception des éléments de champ et de dessin, comporte deux classes CSS –  Type et Nom.
 
@@ -81,7 +82,7 @@ Outre les classes type et name, le composant de champ contient également une au
    <td><strong>Nom</strong></td> 
   </tr> 
   <tr> 
-   <td>Page </td> 
+   <td>Page</td> 
    <td>page</td> 
    <td>Nom défini par l’utilisateur<br /> ou<br /> Page&lt;pageNumber&gt; (valeur par défaut)</td> 
   </tr> 
@@ -106,14 +107,14 @@ Outre les classes type et name, le composant de champ contient également une au
    <td>Nom défini par l’utilisateur</td> 
   </tr> 
   <tr> 
-   <td>Field (Champ)</td> 
+   <td>Champ</td> 
    <td>field</td> 
    <td>Nom défini par l’utilisateur</td> 
   </tr> 
   <tr> 
    <td>Légende</td> 
    <td>caption</td> 
-   <td>N/A</td> 
+   <td>NA</td> 
   </tr> 
   <tr> 
    <td>Widget</td> 
@@ -140,7 +141,7 @@ Chaque champ contient un widget associé qui représente l’élément de l’in
   </tr> 
   <tr> 
    <td>Bouton<br type="_moz" /> </td> 
-   <td>N/A</td> 
+   <td>NA</td> 
    <td>xfaButton<br type="_moz" /> </td> 
    <td>buttonfieldwidget<br type="_moz" /> </td> 
    <td>input type=button<br type="_moz" /> </td> 
