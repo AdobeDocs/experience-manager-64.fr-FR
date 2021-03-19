@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
+feature: PDF Generator
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1132'
 ht-degree: 95%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 95%
 
 Vous pouvez utiliser les pages Web de PDF Generator pour convertir des fichiers.
 
-## Création d’un fichier PDF  {#create-a-pdf-file}
+## Création d’un fichier PDF {#create-a-pdf-file}
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > Créer un fichier PDF.
 1. Cliquez sur Parcourir pour rechercher et sélectionner le fichier.
