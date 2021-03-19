@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
+feature: Correspondence Management
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '499'
 ht-degree: 78%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 78%
 
 Cet article décrit la méthode d’intégration de la solution de création de correspondance dans votre environnement.
 
-## Appel basé sur une URL  {#url-based-invocation}
+## Appel basé sur une URL {#url-based-invocation}
 
 Il est possible d’appeler l’application de création de correspondance à partir d’un portail personnalisé en préparant une URL selon les paramètres de demande suivants :
 
