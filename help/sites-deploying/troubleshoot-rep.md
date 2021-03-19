@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: e862c8a9-b5b6-4857-a154-03d3ffac3e67
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1283'
 ht-degree: 80%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 80%
 
 Cette page fournit des informations sur la manière de résoudre les problèmes de réplication.
 
-## Problème  {#problem}
+## Problème {#problem}
 
 La réplication (réplication non inversée) échoue pour quelque raison que ce soit.
 
@@ -84,7 +85,7 @@ Il est parfois très utile de programmer toute la journalisation de la réplicat
 
 1. Si vous soupçonnez que le problème est lié de quelque manière que ce soit à sling eventing/jobs, vous pouvez également ajouter ce module Java sous categories:org.apache.sling.event.
 
-### Mise en pause de la file d’attentre des agents de réplication   {#pausing-replication-agent-queue}
+### Mise en pause de la file d’attentre des agents de réplication  {#pausing-replication-agent-queue}
 
 Parfois, il vaut mieux mettre la file d’attente de réplication en pause pour réduire le chargement sur le système de création, sans le désactiver. Actuellement, cela est uniquement possible par le biais d’une configuration temporaire d’un port non valide. À partir de la version 5.4, vous pourrez voir un bouton pause dans la file d’attente des agents de réplication, mais avec certaines limites.
 
