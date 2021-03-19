@@ -1,7 +1,7 @@
 ---
 title: Test de la structure de site globalisée dans We.Retail
 seo-title: Test de la structure de site globalisée dans We.Retail
-description: 'null'
+description: Test de la structure de site globalisée dans We.Retail
 seo-description: 'null'
 uuid: 5e5a809d-578f-4171-8226-cb65aa995754
 contentOwner: User
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 91%
+source-wordcount: '430'
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 91%
 
 We.Retail a été conçu avec une structure de site globalisée qui offre des gabarits de langue pouvant être copiés de manière dynamique (Lice Copy) sur des sites web spécifiques à un pays. Tous les éléments sont configurés en standard pour vous permettre d’expérimenter cette structure et les fonctionnalités de traduction intégrées.
 
-## Test  {#trying-it-out}
+## Test {#trying-it-out}
 
 1. Ouvrez la console Sites à partir de **Navigation globale -> Sites**.
 1. Basculez en mode Colonnes (le cas échéant) et sélectionnez We.Retail. Notez l&#39;exemple de structure de pays avec la Suisse, les Etats-Unis, la France, etc., au côté des Principal linguistiques.
