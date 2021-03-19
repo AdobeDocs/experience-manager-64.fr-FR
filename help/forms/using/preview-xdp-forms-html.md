@@ -7,20 +7,21 @@ uuid: d004e75d-e569-4e85-8dfa-5c411bc959af
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 801941c060e1a912f3969bca1e89962241e7fbe0
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '822'
 ht-degree: 81%
 
 ---
 
 
-# Génération de l’aperçu HTML5 d’un formulaire XDP  {#generate-html-preview-of-an-xdp-form}
+# Génération de l’aperçu HTML5 d’un formulaire XDP {#generate-html-preview-of-an-xdp-form}
 
 Lors de la conception d’un formulaire dans AEM Forms Designer, en plus de la prévisualisation du rendu PDF du formulaire, vous pouvez également prévisualiser un rendu HTML5. Vous pouvez utiliser l’onglet **Aperçu HTML** afin de prévisualiser le formulaire tel qu’il apparaîtra dans un navigateur.
 
-## Activation de l’aperçu HTML pour les formulaires XDP dans Designer  {#html-preview-of-forms-in-forms-designer}
+## Activation de l’aperçu HTML pour les formulaires XDP dans Designer {#html-preview-of-forms-in-forms-designer}
 
 Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, effectuez les procédures suivantes :
 
@@ -116,4 +117,4 @@ L’utilisation d’une source de données d’exemple pour tester votre formula
 
 Dans AEM Forms, vous pouvez prévisualiser des formulaires et documents figurant dans le référentiel. La prévisualisation reflète l’apparence et le comportement des formulaires lorsqu’ils seront utilisés par les utilisateurs finaux.
 
-[**Contacter le support technique**](https://www.adobe.com/fr/account/sign-in.supportportal.html)
+[**Contacter le support technique**](https://www.adobe.com/account/sign-in.supportportal.html)
