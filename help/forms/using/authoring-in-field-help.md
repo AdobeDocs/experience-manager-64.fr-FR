@@ -7,16 +7,17 @@ uuid: 07427ddd-9d35-41f6-a807-0e418aade199
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 893a72c7-d68f-464f-9765-ec2272189e58
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 100%
 
 ---
 
 
-# Création d’une aide contextuelle pour les champs de formulaire  {#authoring-in-context-help-for-form-fields}
+# Création d’une aide contextuelle pour les champs de formulaire {#authoring-in-context-help-for-form-fields}
 
 ## Présentation {#introduction}
 
@@ -24,7 +25,7 @@ Dans certains cas, les utilisateurs finaux qui remplissent un formulaire ne sont
 
 Cet article décrit comment les auteurs de formulaires peuvent ajouter une aide contextuelle lors de la création de formulaires adaptatifs.
 
-## Ajout d’une aide contextuelle  {#add-in-context-help}
+## Ajout d’une aide contextuelle {#add-in-context-help}
 
 Vous pouvez spécifier une aide contextuelle à l’aide des options suivantes dans la section Contenu de l’aide de l’onglet Propriétés de la barre latérale.
 
