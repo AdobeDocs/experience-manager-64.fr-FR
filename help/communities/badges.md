@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 4194278f-5127-4105-b181-60961c7a1def
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 5%
 
 ---
@@ -44,7 +45,7 @@ Cette console affiche les badges actuellement disponibles et à partir desquels 
 
 ## Créer le badge {#create-badge}
 
-Un badge est créé en téléchargeant une image convenablement petite (72 dpi avec une hauteur comprise entre 26 et 32 pixels) et en fournissant un nom. L’image de badge est stockée dans le référentiel à `/etc/community/badging/images` et automatiquement répliquée dans l’environnement de publication.
+Un badge est créé en téléchargeant une image suffisamment petite (72 dpi avec une hauteur comprise entre 26 et 32 pixels) et en fournissant un nom. L’image de badge est stockée dans le référentiel à `/etc/community/badging/images` et automatiquement répliquée dans l’environnement de publication.
 
 Si l’environnement de publication est une batterie d’éditeurs, il est nécessaire de configurer [la synchronisation utilisateur](sync.md).
 
@@ -54,7 +55,7 @@ Si l’environnement de publication est une batterie d’éditeurs, il est néce
 
    (*Obligatoire*) Image de badge d’une taille recommandée de 32 x 32 pixels à 72 ppp, au format JPEG ou PNG.
 
-* **[!UICONTROL Nom]**
+* **[!UICONTROL Name]** (Nom)
 
    (*Obligatoire*) Nom du badge. Il s’agit de la valeur par défaut `Display Name` ainsi que du nom du noeud du référentiel. Si `Name` n&#39;est pas un nom de noeud de référentiel valide, il sera modifié.
 
