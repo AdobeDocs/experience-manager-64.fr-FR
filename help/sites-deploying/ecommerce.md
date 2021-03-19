@@ -9,16 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: cb043066-aefc-4b68-b302-2b5dd710a786
+feature: Commerce Integration Framework
 translation-type: tm+mt
-source-git-commit: 0a7f40dd692985890c0c51c54a153135d39c7bd8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '293'
 ht-degree: 60%
 
 ---
 
 
-# Aperçu  Présentation{#ecommerce-overview}
+# Aperçu du commerce électronique{#ecommerce-overview}
 
 Le commerce électronique générique AEM est disponible dans le cadre de l’installation standard et vous offre toutes les fonctionnalités de la structure de commerce électronique.
 
@@ -36,7 +37,7 @@ Adobe propose deux versions de la structure d’intégration de commerce :
 | Quand utiliser la personnalisation | Cas d&#39;utilisation limités : Dans les cas où de petits catalogues statiques peuvent avoir besoin d’être importés | Solution conseillée dans la plupart des cas d’utilisation |
 
 
-## Déploiement d’autres applications  {#deploying-other-implementations}
+## Déploiement d’autres applications {#deploying-other-implementations}
 
 * [SAP Commerce Cloud](/help/sites-deploying/sap-commerce-cloud.md)
 * [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
