@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
+feature: Correspondence Management
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '594'
 ht-degree: 62%
 
 ---
@@ -59,7 +60,7 @@ L’API suivante recherche les instances de lettre en fonction de l’objet de l
  </tbody> 
 </table>
 
-#### Exemple 1 : récupérer toutes les instances de lettre de type ENVOYEE  {#example-fetch-all-the-letter-instances-of-type-submitted}
+#### Exemple 1 : récupérer toutes les instances de lettre de type ENVOYEE {#example-fetch-all-the-letter-instances-of-type-submitted}
 
 Le code suivant renvoie la liste des instances de lettre envoyées. Pour obtenir uniquement des brouillons, remplacez `LetterInstanceType.COMPLETE.name()` par `LetterInstanceType.DRAFT.name().`.
 
