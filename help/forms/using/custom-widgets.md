@@ -9,16 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '670'
 ht-degree: 64%
 
 ---
 
 
-# Créer des apparences personnalisées dans les formulaires HTML5  {#create-custom-appearances-in-html-forms}
+# Créer des apparences personnalisées dans les formulaires HTML5 {#create-custom-appearances-in-html-forms}
 
 Vous pouvez ajouter des widgets personnalisés aux formulaires pour périphériques mobiles. Vous pouvez étendre les widgets jQuery existants ou développer vos propres widgets personnalisés. Le moteur XFA utilise divers widgets, voir [Structure d’apparence des formulaires adaptatifs et HTML5](/help/forms/using/introduction-widgets.md) pour plus d’informations.
 
@@ -31,7 +32,7 @@ Vous pouvez ajouter des widgets personnalisés aux formulaires pour périphériq
 
 Vous pouvez créer un profil ou choisir un profil existant pour ajouter un widget personnalisé. Pour plus d’informations sur la création de profils, voir [Création d’un profil personnalisé](/help/forms/using/custom-profile.md).
 
-### Création d’un widget  {#create-a-widget}
+### Création d’un widget {#create-a-widget}
 
 Les formulaires HTML5 fournissent une implémentation de la structure de widgets qui peut être étendue pour créer de nouveaux widgets. L’implémentation est un widget jQuery *abstractWidget* qui peut être étendu afin d’écrire un nouveau widget. Le nouveau widget peut être rendu fonctionnel uniquement par l’extension/le remplacement des fonctions mentionnées ci-dessous.
 
