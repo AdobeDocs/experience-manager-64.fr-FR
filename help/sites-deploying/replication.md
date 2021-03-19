@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 6fe1c5c5-deb7-4405-82e4-23e0f90e2bd8
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: 19f6ea07e192294124d5251e31ead93deae57349
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3588'
+source-wordcount: '3589'
 ht-degree: 77%
 
 ---
@@ -34,7 +35,7 @@ Les demandes[ sont placées en file d’attente](/help/sites-deploying/osgi-conf
 >
 >Pour plusieurs instances de publication, les données utilisateur sont distribués par Sling lorsque[ la synchronisation des utilisateurs](/help/sites-administering/sync.md) est activée.
 
-## Réplication de l’auteur à la publication  {#replicating-from-author-to-publish}
+## Réplication de l’auteur à la publication {#replicating-from-author-to-publish}
 
 La réplication vers une instance de publication ou le dispatcher s’effectue en plusieurs étapes :
 
@@ -59,7 +60,7 @@ La réplication inverse utilise un agent de l’environnement de publication qui
 
 Dans d’autres cas, notamment pour les fonctionnalités de communautés (par exemple, les forums, les blogs, les commentaires et les avis), l’environnement de publication est difficile à synchroniser efficacement à travers les instances AEM utilisant la replicaiton.
 
-aem [Communautés](/help/communities/overview.md) n&#39;utilise jamais la réplication pour UGC. Au lieu de cela, le déploiement de Communities nécessite un stock commun pour le contenu généré par les utilisateurs (voir [Stockage de contenu des communautés](/help/communities/working-with-srp.md)).
+AEM [Communautés](/help/communities/overview.md) n&#39;utilise jamais la réplication pour UGC. Au lieu de cela, le déploiement de Communities nécessite un stock commun pour le contenu généré par les utilisateurs (voir [Stockage de contenu des communautés](/help/communities/working-with-srp.md)).
 
 ## Réplication prête à l’emploi {#replication-out-of-the-box}
 
@@ -127,7 +128,7 @@ Lors de la configuration d’un agent de réplication depuis le console Outils, 
 
 ### Paramètres {#settings}
 
-* **Nom**
+* **Name** (Nom)
 
    Un nom unique pour l’agent de réplication.
 
@@ -212,7 +213,7 @@ Lors de la configuration d’un agent de réplication depuis le console Outils, 
 
    Pour les agents de vidage du répartiteur, la propriété URI n&#39;est utilisée que si vous utilisez des entrées d&#39;hôte virtuel basées sur le chemin pour différencier les fermes, vous utilisez ce champ pour cible la batterie à invalider. Par exemple, la ferme de serveurs n°1 dispose d’un hôte virtuel de `www.mysite.com/path1/*` et la ferme de serveurs n°2 d’un hôte virtuel de `www.mysite.com/path2/*`. Vous pouvez utiliser une URL de `/path1/invalidate.cache` pour cibler la première ferme de serveurs et `/path2/invalidate.cache` pour cibler la seconde ferme de serveurs.
 
-* **User**
+* **User** (Utilisateur)
 
    Nom d’utilisateur du compte à utiliser pour accéder à la cible.
 
