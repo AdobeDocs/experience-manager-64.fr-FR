@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '719'
 ht-degree: 72%
 
 ---
@@ -75,7 +76,7 @@ Une fois que les lots sont en place, suivez les étapes ci-dessous en vue de con
       * Accédez à *http://serveraddress:serverport/system/console/bundles*
       * Sélectionnez **Installer/Mettre à jour**
       * Accédez à la sélection du lot extrait de l’archive ZIP téléchargée
-      * Vérifiez que **le pilote JDBC de Oracle Corporation pour MySQLcom.mysql.jdbc** est principal et début-le.
+      * Vérifiez que le pilote JDBC de **Oracle Corporation pour MySQLcom.mysql.jdbc** est principal et début-le.
 
 1. Enfin, début AEM avec les modes d’exécution `crx3` et `crx3rdb` :
 
@@ -97,7 +98,7 @@ Les options de configuration suivantes sont disponibles :
 
    * `org.postgresql.Driver` pour PostgreSQL ;
    * `com.ibm.db2.jcc.DB2Driver` pour DB2 ;
-   * `oracle.jdbc.OracleDriver` pour Oracle ;
+   * `oracle.jdbc.OracleDriver` pour l&#39;Oracle ;
    *  `com.mysql.jdbc.Driver` pour MySQL et MariaDB (expérimentaux) ;
    * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` pour Microsoft SQL Server (expérimental).
 
@@ -112,7 +113,7 @@ Un format de chaîne d’URL différent est utilisé dans la configuration de la
 * `jdbc:postgresql:databasename` pour PostgreSQL ;
 
 * `jdbc:db2://localhost:port/databasename` pour DB2 ;
-* `jdbc:oracle:thin:localhost:port:SID` pour Oracle ;
+* `jdbc:oracle:thin:localhost:port:SID` pour l&#39;Oracle ;
 *  `jdbc:mysql://localhost:3306/databasename` pour MySQL et MariaDB (expérimentaux) ;
 
 * `jdbc:sqlserver://localhost:1453;databaseName=name` pour Microsoft SQL Server (expérimental).
