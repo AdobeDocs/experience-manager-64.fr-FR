@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
+description: Producteur de catalogue
 translation-type: tm+mt
-source-git-commit: c777ad6314fb0a83f574e82aa11cb677eb52b7d6
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '901'
 ht-degree: 40%
 
 ---
@@ -37,7 +38,7 @@ Dans le cadre du processus d’intégration, configurez le flux de travaux **DAM
 >
 >Seuls des fichiers InDesign (.indd) sont utilisés comme modèles. Les fichiers possédant l’extension « .indt » ne sont pas pris en charge.
 
-## Création d’un catalogue  {#creating-a-catalog}
+## Création d’un catalogue {#creating-a-catalog}
 
 Catalog Producer utilise des données de gestion d’informations sur les produits pour mapper les propriétés d’un produit aux propriétés XML affichées dans le modèle. Pour créer un catalogue, procédez comme suit :
 
