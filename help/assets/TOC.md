@@ -6,8 +6,9 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
+feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: c3eeb3d4fc4b6ce7548c6385c21c6e4ed7b2f0e6
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 76%
@@ -109,9 +110,9 @@ ht-degree: 76%
    + [Profils de métadonnées](metadata-profiles.md)
    + [Gestion des droits numériques dans AEM Assets](drm.md)
    + [Utilisation du module de démonstration pour les statistiques sur les ressources](touch-ui-using-demo-package-for-asset-insights.md)
-   + [Meilleures pratiques de déchargement dans Assets](assets-offloading-best-practices.md)
+   + [Bonnes pratiques de déchargement dans Assets](assets-offloading-best-practices.md)
    + [Meilleures pratiques relatives au format de fichier des ressources](assets-file-format-best-practices.md)
-   + [Meilleures pratiques en matière de surveillance des ressources](assets-monitoring-best-practices.md)
+   + [Bonnes pratiques en matière de surveillance des ressources](assets-monitoring-best-practices.md)
    + [Prise en charge de Camera Raw](camera-raw.md)
    + [Détection du type MIME des ressources à l’aide d’Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Bibliothèque de transcodage des images](imaging-transcoding-library.md)
@@ -121,7 +122,7 @@ ht-degree: 76%
    + [Application d’un filigrane  ](watermarking.md)
    + [Importation et exportation de métadonnées en masse](metadata-import-export.md)
    + [Modèles de ressources](asset-templates.md)
-   + [Meilleures pratiques de partage de dossiers entre AEM et Creative Cloud](aem-cc-folder-sharing-best-practices.md)
+   + [Bonnes pratiques de partage de dossiers entre AEM et Creative Cloud](aem-cc-folder-sharing-best-practices.md)
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
    + [Gestion des balises intelligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
@@ -168,8 +169,8 @@ ht-degree: 76%
    + [Rendus vidéo](video-renditions.md)
 + Ressources 3D {#three-d}
    + [Notes de mise à jour AEM 3D](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/aem3d-release-notes.html)
-   + [Utilisation de ressources 3D](assets-3d.md)
-   + [Installation et configuration d’AEM 3D](install-config-3d.md)
+   + [Utilisation des ressources 3D](assets-3d.md)
+   + [Installation et configuration d’AEM 3D](install-config-3d.md)
    + [Paramètres de configuration avancés](advanced-config-3d.md)
    + [Utilisation de ressources Adobe Dimension](working-dimension-assets.md)
    + [À propos du chargement et du traitement de ressources 3D dans AEM](upload-processing-3d-assets.md)
