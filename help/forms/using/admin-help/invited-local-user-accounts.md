@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
+feature: Document Security
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1222'
 ht-degree: 100%
 
 ---
@@ -33,7 +34,7 @@ Vous pouvez également envoyer manuellement des courriers électroniques d’enr
 >
 >Il est également possible d’ajouter des utilisateurs invités directement par l’intermédiaire de l’annuaire LDAP (Lightweight Directory Access Protocol) référencé par Document Security ou lorsqu’un utilisateur ou un administrateur invite un nouvel utilisateur lors de la création ou de la modification d’une stratégie, déclenchant ainsi l’envoi d’un courrier électronique l’invitant à s’enregistrer. Les utilisateurs peuvent ajouter des utilisateurs invités à des stratégies si vous activez l’option correspondante dans la page Enregistrement d’utilisateur invité.
 
-## Ajout d’un utilisateur invité  {#add-an-invited-user}
+## Ajout d’un utilisateur invité {#add-an-invited-user}
 
 Vous pouvez ajouter un ou plusieurs comptes d’utilisateurs invités simultanément dans Document Security. Pour ajouter un compte d’utilisateur invité, vous devez connaître l’adresse électronique de l’utilisateur. Lorsque vous ajoutez un utilisateur, Document Security envoie un courrier électronique invitant l’utilisateur à s’enregistrer.
 
