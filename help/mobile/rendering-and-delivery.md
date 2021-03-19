@@ -1,7 +1,7 @@
 ---
 title: Rendu et Diffusion
 seo-title: Rendu et Diffusion
-description: 'null'
+description: Rendu et Diffusion
 seo-description: 'null'
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
-source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 12%
+source-wordcount: '577'
+ht-degree: 11%
 
 ---
 
@@ -27,7 +27,7 @@ Le contenu AEM peut facilement être rendu via [Sling Default Servlets](https://
 
 Ces rendus prêts à l’emploi parcourent généralement le référentiel et renvoient le contenu tel quel.
 
-aem, via Sling, prend également en charge le développement et le déploiement de rendus sling personnalisés pour prendre le contrôle total du schéma et du contenu rendus.
+AEM, via Sling, prend également en charge le développement et le déploiement de rendus sling personnalisés pour prendre le contrôle total du schéma et du contenu rendus.
 
 Les rendus par défaut de Content Services comblent le fossé entre les valeurs par défaut prêtes à l’emploi et le développement personnalisé, ce qui permet de personnaliser et de contrôler de nombreux aspects du contenu rendu sans développement.
 
