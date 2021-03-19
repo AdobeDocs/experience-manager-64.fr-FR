@@ -6,10 +6,11 @@ seo-description: Apprenez à créer, mettre en page et prévisualiser un formula
 page-status-flag: de-activated
 uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
 discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1418'
 ht-degree: 80%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 80%
 
 Ce didacticiel est une étape de la série [Création de votre premier formulaire adaptatif](/help/forms/using/create-your-first-adaptive-form.md). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
-## À propos du didacticiel  {#about-the-tutorial}
+## À propos du didacticiel {#about-the-tutorial}
 
 Les formulaires adaptatifs sont des formulaires dynamiques et réactifs nouvelle génération. Vous pouvez utiliser des formulaires adaptatifs pour offrir des expériences personnalisées. Vous pouvez également intégrer des formulaires adaptatifs à Adobe Analytics pour les statistiques d’utilisation et Adobe Campaign pour la gestion des campagnes. Pour plus d’informations sur les fonctionnalités des formulaires adaptatifs, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
 
@@ -117,7 +118,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM 
 
    | Propriétés | Valeur |
    |---|---|
-   | Title (Titre) | Code postal |
+   | Titre | Code postal |
    | Nom de l’élément | customer_ZIPCode |
    | Nombre maximal de chiffres | 6 |
    | Champ obligatoire | Activé |
@@ -127,7 +128,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM 
 
    | Propriétés | Valeur |
    |---|---|
-   | Title (Titre) | Courrier électronique |
+   | Titre | Courrier électronique |
    | Nom de l’élément | customer_Email |
    | Champ obligatoire | Activé |
 
@@ -140,7 +141,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM 
    <td>Valeur</td> 
   </tr> 
   <tr> 
-   <td>Title (Titre)</td> 
+   <td>Titre</td> 
    <td>Preuve d’adresse approuvée par le gouvernement<br /> </td> 
   </tr> 
   <tr> 
