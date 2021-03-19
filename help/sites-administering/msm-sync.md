@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
+feature: Gestionnaire de plusieurs sites
 translation-type: tm+mt
-source-git-commit: 38c713b2c5aa93805b10bbb60c0dbdfa24872eb1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2708'
 ht-degree: 79%
 
 ---
@@ -25,7 +26,7 @@ Procédez comme suit pour contrôler la façon dont les Live Copies sont synchro
 * Déterminez si des configurations de déploiement existantes répondent à vos besoins ou si vous devez en créer d’autres.
 * Spécifiez les configurations du déploiement à utiliser avec les Live Copies.
 
-## Configurations du déploiement installées et personnalisées  {#installed-and-custom-rollout-configurations}
+## Configurations du déploiement installées et personnalisées {#installed-and-custom-rollout-configurations}
 
 Cette section contient des informations sur les configurations du déploiement installées et les actions de synchronisation qu’elles utilisent, ainsi que sur la création de configurations personnalisées, si nécessaire.
 
