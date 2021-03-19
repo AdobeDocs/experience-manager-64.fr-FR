@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: d90f80e7-0c5d-4c56-93a2-c3888b1cbf30
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2871'
+source-wordcount: '2873'
 ht-degree: 90%
 
 ---
@@ -31,7 +32,7 @@ Qui plus est, vous pouvez paramétrer les champs communs de différents formulai
 
 Les jeux de formulaires sont également pris en charge dans l’application AEM Forms, ce qui permet à vos collaborateurs sur le terrain de prendre un jeu de formulaires hors ligne, de rendre visite aux clients, d’entrer les données et d’effectuer une synchronisation ultérieurement avec le serveur AEM Forms pour envoyer des données de formulaires aux processus d’entreprise.
 
-## Création et gestion de jeux de formulaires  {#creating-and-managing-form-set}
+## Création et gestion de jeux de formulaires {#creating-and-managing-form-set}
 
 Vous pouvez associer plusieurs XDP ou modèles de formulaire, créés à l’aide de Designer, à un jeu de formulaires. Les jeux de formulaires peuvent ensuite être utilisés pour effectuer un rendu sélectif des fichiers XDP en fonction des valeurs saisies par les utilisateurs dans les formulaires initiaux et leurs profils.
 
