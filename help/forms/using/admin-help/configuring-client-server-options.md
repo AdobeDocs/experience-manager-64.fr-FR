@@ -9,16 +9,17 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
+feature: Document Security
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '10281'
+source-wordcount: '10283'
 ht-degree: 85%
 
 ---
 
 
-# Configuration du serveur Document Security  {#configure-the-document-security-server}
+# Configuration du serveur Document Security {#configure-the-document-security-server}
 
 1. Dans Administration Console, cliquez sur Services > Document Security > Configuration > Configuration du serveur.
 1. Configurez les paramètres et cliquez sur OK.
@@ -70,7 +71,7 @@ Hauteur : minimum = 450 ; maximum = 800
 
 **Activer la mise en cache des informations d’identification du client :** sélectionnez cette option pour permettre aux utilisateurs de mettre en cache leurs informations d’identification (nom d’utilisateur et mot de passe). Lorsque les informations d’identification d’un utilisateur sont mises en cache, il n’a plus à les saisir à chaque fois qu’il ouvre un document ou lorsqu’il clique sur le bouton Actualiser de la page de gestion des stratégies de sécurité dans Adobe Acrobat. Vous pouvez spécifier le nombre de jours à l’issue duquel les utilisateurs doivent à nouveau fournir ces informations. Si le nombre de jours est fixé à 0, les informations sont mises en cache indéfiniment.
 
-## Configuration des utilisateurs et administrateurs de Document Security  {#configuring-document-security-users-and-administrators}
+## Configuration des utilisateurs et administrateurs de Document Security {#configuring-document-security-users-and-administrators}
 
 ### Attribution de rôles Document Security aux administrateurs {#assigning-document-security-roles-to-administrators}
 
