@@ -8,22 +8,23 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '570'
 ht-degree: 79%
 
 ---
 
 
-# Rendu du modèle de formulaire pour des formulaires HTML5  {#rendering-form-template-for-html-forms}
+# Rendu du modèle de formulaire pour des formulaires HTML5 {#rendering-form-template-for-html-forms}
 
 ## Point de fin du rendu {#render-endpoint}
 
 Les formulaires HTML5 ont la notion de **Profils** qui sont exposés en tant que points de terminaison REST pour activer le rendu mobile des modèles de formulaire. Ces Profils ont associé **Profil Renderer**. Il s’agit de pages JSP chargées de générer une représentation HTML du formulaire en appelant le service Forms OSGi. Le chemin d’accès JCR du nœud de profil détermine l’URL du point de fin du rendu. Le point de fin du rendu par défaut du formulaire pointant vers le profil « par défaut» ressemble à :
 
-https://&quot;a0/>hôte *:&quot;a2/>port&lt;a3/&quot;/content/xfaforms/profiles/default.html?contentRoot=&quot;a4/>chemin d’accès du dossier contenant le formulaire xdp&lt;a5/&quot;&amp;template=&quot;a6/>nom de xdp&lt;a7/&quot;*******
+https://&quot;a0/>hôte *:&quot;a2/>port&lt;a3/&quot;/content/xfaforms/profiles/default.html?contentRoot=&quot;a4/>chemin d’accès du dossier contenant le formulaire xdp&lt;a5/&quot;&amp;template=&quot;a6/>nom du fichier xdp&lt;a7/&quot;*******
 
 Par exemple, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
@@ -64,7 +65,7 @@ Les paramètres de requête pris en charge lors du rendu d’un formulaire au fo
  </tbody> 
 </table>
 
-### Fusionner des données avec le modèle de formulaire  {#merge-data-with-form-template}
+### Fusionner des données avec le modèle de formulaire {#merge-data-with-form-template}
 
 | Paramètre | Description |
 |---|---|
