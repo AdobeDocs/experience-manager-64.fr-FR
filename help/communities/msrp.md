@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1203'
 ht-degree: 3%
 
 ---
@@ -26,7 +27,7 @@ Lorsque AEM Communities est configuré pour utiliser MSRP comme magasin commun, 
 
 Voir aussi [Caractéristiques des options SRP](working-with-srp.md#characteristics-of-srp-options) et [Topologies recommandées](topologies.md).
 
-## Conditions requises {#requirements}
+## Conditions préalables {#requirements}
 
 * [MongoDB](https://www.mongodb.org/):
 
@@ -255,7 +256,7 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 
 Pour résoudre l’erreur, lorsque vous suivez les instructions d’[Installation de MLS standard](solr.md#installing-standard-mls), veillez à
 
-* Les fichiers de configuration XML ont été copiés à l&#39;emplacement Solr approprié.
+* Les fichiers de configuration XML ont été copiés à l’emplacement Solr approprié.
 * Solr a été redémarré après que les nouveaux fichiers de configuration ont remplacé les fichiers existants.
 
 ### Échec de la connexion sécurisée à MongoDB {#secure-connection-to-mongodb-fails}
