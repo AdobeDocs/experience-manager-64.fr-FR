@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
+feature: PDF Generator
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '629'
 ht-degree: 97%
 
 ---
@@ -32,7 +33,7 @@ Pour configurer une imprimante réseau PDFG Network Printer, procédez comme sui
 1. Assurez-vous que JRE6 32 est installé sur les ordinateurs de vos utilisateurs.
 1. Installez l’imprimante sur les ordinateurs de vos utilisateurs (voir [Installation de l’imprimante réseau PDFG sur l’ordinateur d’un utilisateur](setting-pdfg-network-printer-windows.md#install-pdfg-network-printer-on-a-user-s-computer)).
 
-## Configuration des paramètres de courrier électronique pour l’imprimante réseau PDFG Network Printer  {#configure-email-settings-for-pdfg-network-printer}
+## Configuration des paramètres de courrier électronique pour l’imprimante réseau PDFG Network Printer {#configure-email-settings-for-pdfg-network-printer}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
 1. Sur la page Gestion des services, cliquez sur provider.email_sendmail_service, spécifiez les paramètres SMTP et cliquez sur Enregistrer.
