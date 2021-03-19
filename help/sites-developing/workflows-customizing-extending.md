@@ -1,7 +1,7 @@
 ---
 title: Extension des fonctionnalités de processus
 seo-title: Extension des fonctionnalités de processus
-description: 'null'
+description: Extension des fonctionnalités de processus
 seo-description: 'null'
 uuid: 9f4ea2a8-8b21-4e7c-ac73-dd37d9ada111
 contentOwner: User
@@ -10,15 +10,15 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3587'
+source-wordcount: '3589'
 ht-degree: 65%
 
 ---
 
 
-# Développement des fonctionnalités de workflow{#extending-workflow-functionality}
+# Extension des fonctionnalités de processus{#extending-workflow-functionality}
 
 Cette rubrique explique comment créer des composants d’étape personnalisée pour des processus et interagir avec eux par programmation.
 
@@ -29,7 +29,7 @@ La création d’une étape personnalisée de processus implique les tâches sui
 
 Vous pouvez également [interagir avec vos processus à partir de vos programmes et scripts](/help/sites-developing/workflows-program-interaction.md).
 
-## Composants d’étape de processus - Notions de base  {#workflow-step-components-the-basics}
+## Composants d’étape de processus - Notions de base {#workflow-step-components-the-basics}
 
 Un composant d’étape de processus définit l’apparence et le comportement de l’étape lors de la création de modèles de processus :
 
