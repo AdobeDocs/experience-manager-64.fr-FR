@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 4%
+source-wordcount: '740'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +25,7 @@ MySQL est une base de données relationnelle qui peut être utilisée pour stock
 
 Ces instructions décrivent comment se connecter au serveur MySQL et établir la base de données UGC.
 
-## Conditions requises {#requirements}
+## Conditions préalables {#requirements}
 
 * [dernier Feature Pack des communautés](deploy-communities.md#latestfeaturepack)
 * [Pilote JDBC pour MySQL](deploy-communities.md#jdbc-driver-for-mysql)
@@ -122,7 +123,7 @@ Le script SQL est obtenu à partir du référentiel AEM :
    * Par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Sélectionnez le dossier /libs/social/config/datastore/dsrp/schéma.
-1. Téléchargement `init-schema.sql`
+1. Télécharger `init-schema.sql`
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
