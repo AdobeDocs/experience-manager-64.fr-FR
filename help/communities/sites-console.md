@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
+role: Administrator
 translation-type: tm+mt
-source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3241'
+source-wordcount: '3242'
 ht-degree: 5%
 
 ---
@@ -558,7 +559,7 @@ Pour rediriger correctement un site, une fois qu’il a été configuré et pous
 
    `/content/sites/<site-name>/path/to/login/page:/content/sites/<site-name>`
 
-   par exemple:
+   par exemple :
 
    `/content/sites/engage/en/signin:/content/sites/engage/en`
 
