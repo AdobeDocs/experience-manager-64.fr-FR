@@ -1,19 +1,20 @@
 ---
 title: Balisage
 seo-title: Balisage
-description: Le balisage permet de catégoriser et d’organiser le contenu.
-seo-description: Balisage permet de classer et d'organiser le contenu
+description: Le balisage permet de catégoriser et d’organiser le contenu
+seo-description: Le balisage permet de catégoriser et d’organiser le contenu
 uuid: fbbce525-ebc4-484b-bec9-2d68314cf15a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 2d0835e0-5602-49a9-b9ad-636ce5a8ad2a
+feature: Balisage
 translation-type: tm+mt
-source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 33%
+source-wordcount: '110'
+ht-degree: 40%
 
 ---
 
