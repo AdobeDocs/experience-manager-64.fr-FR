@@ -9,16 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 273096d0-b0e1-4519-8af6-11b3414cc172
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '503'
 ht-degree: 83%
 
 ---
 
 
-# Différences de caractéristiques entre formulaires HTML5 et formulaires PDF  {#feature-differentiation-between-html-forms-and-pdf-forms}
+# Différences de caractéristiques entre formulaires HTML5 et formulaires PDF {#feature-differentiation-between-html-forms-and-pdf-forms}
 
 Le tableau suivant indique les fonctionnalités prises en charge par les formulaires HTML5 et les formulaires PDF :
 
