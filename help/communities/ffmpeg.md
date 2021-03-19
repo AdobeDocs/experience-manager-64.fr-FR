@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 1%
+source-wordcount: '317'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 1%
 
 ## Présentation {#overview}
 
-FFmpeg est une solution de conversion et de diffusion audio et vidéo en flux continu. Une fois installée, elle est utilisée pour le transcodage correct des [ressources vidéo](../../help/sites-authoring/default-components-foundation.md#video) ainsi que pour la fonction d’activation des communautés AEM.
+FFmpeg est une solution de conversion et de diffusion audio et vidéo en flux continu et, lorsqu’elle est installée, elle est utilisée pour le transcodage correct des [ressources vidéo](../../help/sites-authoring/default-components-foundation.md#video) ainsi que pour la fonction d’activation des communautés AEM.
 
 Le mpeg est utilisé dans l’environnement d’auteur pour obtenir des métadonnées pour les ressources d’activation téléchargées et pour générer une miniature à afficher lors de la mise en vente de la ressource d’activation.
 
