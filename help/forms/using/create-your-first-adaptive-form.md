@@ -7,10 +7,11 @@ page-status-flag: de-activated
 uuid: 62f5222c-c787-46be-95fa-a701aa0e6115
 topic-tags: introduction
 discoiquuid: 4e247e70-c50a-4571-8ac1-fbbb07100262
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: fae6d621ad61a26db99994482c16c9d9a5f88ad9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '969'
 ht-degree: 85%
 
 ---
@@ -39,11 +40,11 @@ Un site Web propose une gamme de produits pour des clients divers. Les clients p
 
 Le site Web est basé sur Adobe Experience Manager (AEM) et utilise AEM Forms pour la capture et le traitement des données. Le formulaire d’ajout et de mise à jour d’adresse est un formulaire adaptatif. Le site Web stocke les coordonnées du client dans une base de données. Ils utilisent le formulaire d&#39;ajout d&#39;adresse et de mise à jour pour récupérer et afficher les adresses disponibles. Il utilise également le formulaire adaptatif pour accepter les adresses mises à jour et les nouvelles adresses.
 
-### Condition requise {#prerequisite}
+### Prérequis {#prerequisite}
 
 * Configurez une instance d’auteur AEM.
 * Installez le [module complémentaire AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) sur une instance de création.
-* Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du didacticiel reposent sur la base de données MySQL et utilisent l’Oracle [pilote de base de données JDBC MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du didacticiel reposent sur la base de données MySQL et utilisent le pilote de base de données JDBC [MySQL ](https://dev.mysql.com/downloads/connector/j/5.1.html) Oracle.
 
 * Configurez une base de données contenant les données client avec les champs affichés ci-dessous. Une base de données n’est pas essentielle pour créer un formulaire adaptatif. Ce didacticiel utilise une base de données pour afficher les fonctionnalités de modèle de données de formulaire et de persistance d’AEM Forms.
 
@@ -55,7 +56,7 @@ Le site Web est basé sur Adobe Experience Manager (AEM) et utilise AEM Forms po
 
 Les formulaires adaptatifs sont de nouvelle génération, attrayants, réactifs, dynamiques et par nature adaptatifs. En utilisant des formulaires adaptatifs, vous pouvez offrir des expériences personnalisées et ciblées. AEM Forms fournit un éditeur WYSIWYG par glisser-déposer pour créer des formulaires adaptatifs. Pour plus d’informations sur les formulaires adaptatifs, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
 
-Goals:
+Objectifs:
 
 * Créer un formulaire adaptatif permettant à un client d’ajouter une adresse de livraison
 * Mettre en forme les champs d’un formulaire adaptatif pour afficher et accepter les informations d’un client
@@ -70,7 +71,7 @@ Goals:
 
 Un modèle de données de formulaire permet de connecter un formulaire adaptatif à des sources de données disparates, par exemple, le profil utilisateur AEM, les services Web RESTful, les services Web basés sur SOAP, les services OData et les bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié des entités et services d’entreprise disponibles dans des sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec un formulaire adaptatif pour extraire, mettre à jour, supprimer et ajouter des données aux sources de données connectées.
 
-Objectifs :
+Objectifs:
 
 * Configurer l’instance de base de données du site Web (base de données MySQL) en tant que source de données
 * Créer le modèle de données de formulaire à l’aide de la base de données MySQL en tant que source de données
@@ -86,7 +87,7 @@ Objectifs :
 
 Les formulaires adaptatifs fournissent un éditeur pour l’écriture de règles sur des objets de formulaire adaptatifs. Ces règles déterminent les actions à déclencher sur des objets de formulaire en fonction des conditions prédéfinies, des saisies de l’utilisateur et des actions de l’utilisateur sur le formulaire.  Cela permet d’assurer la précision et accélère le remplissage des formulaires.
 
-Objectifs :
+Objectifs:
 
 * Créer et appliquer des règles aux champs de formulaires adaptatifs
 * Utiliser des règles pour déclencher des services de modèle de données de formulaire pour mettre à jour les données dans la base de données
@@ -97,7 +98,7 @@ Objectifs :
 
 Les formulaires adaptatifs fournissent des thèmes et un [éditeur](/help/forms/using/themes.md) pour créer des thèmes pour les formulaires adaptatifs. Un thème contient les informations de style pour les composants et les panneaux, et vous pouvez réutiliser un thème dans plusieurs formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème à votre formulaire, le style spécifié se reflète sur des composants correspondants de votre formulaire. Les formulaires adaptatifs prennent également en charge le style en ligne pour les styles spécifiques à un formulaire.
 
-Objectifs :
+Objectifs:
 
 * Appliquer un thème prêt à l’emploi à un formulaire adaptatif
 * Créer un thème pour formulaire adaptatif à l’aide de l’éditeur de thème
@@ -111,7 +112,7 @@ Objectifs :
 
 Les formulaires adaptatifs font partie intégrante de vos interactions avec les clients. Il est important de tester vos formulaires adaptatifs à chaque modification que vous y apportez. Tester tous les champs d’un formulaire est fastidieux. AEM Forms fournit un SDK (Calvin SDK) pour automatiser les tests de formulaires adaptatifs. Calvin vous permet d’automatiser les tests de vos formulaires adaptatifs dans le navigateur Web.
 
-Objectifs :
+Objectifs:
 
 * Installer un Calvin SDK
 * Créer une suite de tests et des cas de test pour modifier le formulaire d’adresse
@@ -124,7 +125,7 @@ Pour en savoir plus sur le SDK, voir [Utilisation de tests automatisés avec AEM
 
 Vous pouvez publier des formulaires adaptatifs sous forme de formulaire autonome (application d’une seule page), les inclure dans une [page des sites](/help/forms/using/embed-adaptive-form-aem-sites.md) AEM ou les répertorier sur un site AEM à l’aide du [portail de formulaires](/help/forms/using/introduction-publishing-forms.md).
 
-Objectifs :
+Objectifs:
 
 * Publier le formulaire adaptatif en tant qu’application d’une seule page
 
