@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 32b56b48-75cb-4cc9-a077-10e335f01a35
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2507'
+source-wordcount: '2508'
 ht-degree: 13%
 
 ---
@@ -96,7 +97,7 @@ La synchronisation des utilisateurs repose sur l’environnement de création po
 
 1. Vérifiez que le code le plus récent a été installé :
 
-   * [Mise à jour de la plateforme AEM](https://helpx.adobe.com/fr/experience-manager/kb/aem62-available-hotfixes.html)
+   * [Mise à jour de la plateforme AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr)
    * [Mises à jour d’AEM Communities](deploy-communities.md#latestfeaturepack)
 
 Les configurations suivantes sont nécessaires pour activer la synchronisation des utilisateurs sur AEM Communities. Assurez-vous que ces configurations sont correctes pour empêcher l’échec de la distribution de contenu sling.
@@ -266,7 +267,7 @@ Sur chaque instance de publication AEM :
    sling:OrderedFolder
 
    Les types de noeud spécifiés dans cette propriété vont se synchroniser et les informations de notification (blogs et configurations suivis) sont synchronisées entre les différents éditeurs.
-1. Ajoutez tous les dossiers à synchroniser dans **[!UICONTROL DistributedFolders]**. Par exemple :
+1. Ajoutez tous les dossiers à synchroniser dans **[!UICONTROL DistributedFolders]**. Par exemple,
 
    segments/scoring
 
@@ -286,7 +287,7 @@ Sur chaque instance de publication AEM :
 
 ### Identifiant Sling unique{#unique-sling-id}.
 
-aem instance d’auteur utilise l’identifiant Sling pour identifier d’où viennent les données et vers quels éditeurs elle doit (ou ne doit pas) renvoyer le package.
+AEM instance d’auteur utilise l’identifiant Sling pour identifier d’où viennent les données et vers quels éditeurs elle doit (ou ne doit pas) renvoyer le package.
 
 Assurez-vous que tous les éditeurs d’une batterie de publication possèdent un identifiant Sling unique. Si l’ID Sling est identique pour plusieurs instances de publication dans une batterie de publication, la synchronisation des utilisateurs échoue. Comme l&#39;auteur ne sait pas où récupérer le pack et où l&#39;installer.
 
@@ -319,7 +320,7 @@ Sur chaque instance de publication :
 
 Répétez ces étapes jusqu’à ce que toutes les instances de publication aient un identifiant Sling unique.
 
-### Fabrique Vault Package Builder  {#vault-package-builder-factory}
+### Fabrique Vault Package Builder {#vault-package-builder-factory}
 
 Pour que les mises à jour soient synchronisées correctement, il est nécessaire de modifier le créateur de packages en chambre forte pour la synchronisation utilisateur.\
 Dans `/home/users`, un noeud `/rep:cache` est créé. Il s&#39;agit d&#39;un cache qui est utilisé pour trouver que si nous requêtes sur le nom principal d&#39;un noeud alors ce cache peut être utilisé directement.
