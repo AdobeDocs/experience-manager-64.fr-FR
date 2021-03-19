@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
+role: Administrator
 translation-type: tm+mt
-source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1520'
 ht-degree: 3%
 
 ---
@@ -40,7 +41,7 @@ La modération de l’UGC est utile pour reconnaître les contributions positive
 
 * [Modération en contexte](in-context.md)
 
-   La modération dans l’environnement de publication peut être effectuée par les administrateurs et les modérateurs de la communauté directement sur la page où le contenu a été publié.
+   La modération dans l’environnement de publication peut être effectuée par les administrateurs et les modérateurs de la communauté directement sur la page sur laquelle le contenu a été publié.
 
 ## Actions de modération {#moderation-actions}
 
