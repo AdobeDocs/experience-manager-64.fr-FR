@@ -1,14 +1,14 @@
 ---
 title: Programme d’installation des correctifs AEM Forms JEE
-description: 'null'
+description: Programme d’installation des correctifs AEM Forms JEE
 uuid: e709871b-c04c-43bb-a7d0-45e89fbd3d44
 content-type: reference
 discoiquuid: 83bace08-1d4f-4192-a634-c7c4879963d8
 translation-type: tm+mt
-source-git-commit: 610e9a54adad3abdfecb8b2c4da67d677f75175e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 47%
+source-wordcount: '544'
+ht-degree: 48%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 47%
 
 >[!NOTE]
 >
->[Contactez le ](https://www.adobe.com/fr/account/sign-in.supportportal.html) support technique pour plus d&#39;informations ou pour obtenir le correctif.
+>[Contactez le ](https://www.adobe.com/account/sign-in.supportportal.html) support technique pour plus d&#39;informations ou pour obtenir le correctif.
 
 ## À propos du programme d’installation de correctif {#about-the-patch-installer}
 
@@ -31,11 +31,11 @@ Le programme d&#39;installation de correctif Forms JEE 6.4 AEM comprend tous les
 
 1. Effectuez une sauvegarde du dossier de déploiement &lt;*AEM_forms_root*>/. Il est nécessaire si vous décidez de désinstaller le Quick Fix.
 1. Arrêtez le serveur d’applications.
-1. Extrayez le fichier d&#39;archive du programme d&#39;installation du correctif sur votre disque dur.
+1. Extrayez le fichier d’archive du programme d’installation de correctif sur votre disque dur.
 1. Dans le répertoire, dont le nom dépend du système d’exploitation que vous utilisez :
 
-   * ****
-WindowsAccédez au répertoire approprié sur le support d&#39;installation ou le dossier de votre disque dur dans lequel vous avez copié le programme d&#39;installation, puis cliquez sur le doublon 
+   * **Windows**
+Accédez au répertoire approprié sur le support d’installation ou dans le dossier de votre disque dur dans lequel vous avez copié le programme d’installation, puis cliquez sur le doublon 
 `aemforms64_cfp_install.exe` approuvé.
 
       * (Windows 32 bits) `Windows\Disk1\InstData\VM`
@@ -56,7 +56,7 @@ WindowsAccédez au répertoire approprié sur le support d&#39;installation ou l
 1. Dans l’écran Choisir le répertoire d’installation, vérifiez que l’emplacement par défaut affiché correspond à votre installation ou cliquez sur **[!UICONTROL Parcourir]** pour sélectionner le dossier dans lequel AEM Forms est actuellement installé, puis cliquez sur **[!UICONTROL Suivant]**.
 
 1. Lisez le résumé du correctif Quick Fix, puis cliquez sur **[!UICONTROL Suivant]**.
-1. Lisez le résumé relatif à la pré-installation, puis cliquez sur **[!UICONTROL Installer]**. 
+1. Lisez le résumé relatif à la pré-installation, puis cliquez sur **[!UICONTROL Installer]**.
 1. Une fois l’installation terminée, cliquez sur **[!UICONTROL Suivant]**pour appliquer les mises à jour de la correction rapide à vos fichiers installés.
 1. [Windows ] uniquementEffectuez l&#39;une des étapes suivantes :
 
@@ -72,9 +72,9 @@ WindowsAccédez au répertoire approprié sur le support d&#39;installation ou l
 
 1. En fonction de votre serveur d’applications, sélectionnez l’un des documents suivants et suivez les instructions de la section *Configuration et déploiement d’AEM Forms*.
 
-   * [Installation et déploiement d’AEM Forms pour JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64_fr)
-   * [Installation et déploiement d’AEM Forms pour WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_fr)
-   * [Installation et déploiement d’AEM Forms pour WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_fr)
+   * [Installation et déploiement d’AEM Forms pour JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64)
+   * [Installation et déploiement d’AEM Forms pour WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64)
+   * [Installation et déploiement d’AEM Forms pour WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64)
 
 1. (JBoss uniquement) Après avoir installé le correctif et configuré le serveur, supprimez les répertoires tmp et work du serveur d’applications JBoss.
 
@@ -93,7 +93,7 @@ Si l’authentification SAML est configurée et que vous rencontrez des problèm
 ## Modules touchés {#impacted-modules}
 
 * Services de document
-* Protection des documents
+* Document Security
 * Foundation JEE
 * Service PDFG
 
