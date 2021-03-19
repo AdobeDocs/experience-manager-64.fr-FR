@@ -7,10 +7,11 @@ uuid: 3ead2b82-f895-4a7b-9683-495fcd94fade
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d570ead9-8f9c-4668-8b23-e8984d9b25e9
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '998'
 ht-degree: 88%
 
 ---
@@ -24,7 +25,7 @@ Lorsque les formulaires sont volumineux et complexes et qu’ils contiennent des
 
 Découvrons d’abord les exigences et les étapes préparatoires avant de configurer le chargement différé.
 
-## Préparation à la configuration du chargement différé  {#preparing-to-configure-lazy-loading}
+## Préparation à la configuration du chargement différé {#preparing-to-configure-lazy-loading}
 
 Avant de configurer le chargement différé des fragments d’un formulaire adaptatif, il est essentiel de définir des stratégies afin de créer des fragments, d’identifier les valeurs utilisées dans les scripts ou référencées dans d’autres fragments, ou encore de définir des règles de contrôle de la visibilité des champs des fragments chargés.
 
