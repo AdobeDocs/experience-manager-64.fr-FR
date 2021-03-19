@@ -1,7 +1,7 @@
 ---
 title: Composants de base
 seo-title: Composants de base
-description: 'null'
+description: Composants de base
 seo-description: 'null'
 uuid: c1eccd51-ee65-4c4d-8c27-c99b52574518
 contentOwner: User
@@ -12,9 +12,9 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6670'
+source-wordcount: '6671'
 ht-degree: 80%
 
 ---
@@ -58,7 +58,7 @@ Les composants sont regroupés dans diverses catégories appelées groupes de co
 
 Les composants de type Général sont des composants de base qui servent à créer du contenu.
 
-### Élément de compte  {#account-item}
+### Élément de compte {#account-item}
 
 >[!CAUTION]
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
@@ -284,11 +284,11 @@ Des [fragments de contenu](/help/sites-authoring/content-fragments.md) sont cré
 
 Cette option permet de transférer un fichier compressé qui contient un bloc de conception.
 
-### Téléchargement {#download}
+### Télécharger {#download}
 
 Le composant Télécharger crée un lien dans la page web sélectionnée pour télécharger un fichier spécifique. Faites glisser un élément à partir de l’Outil de recherche de contenu ou téléchargez un fichier.
 
-* **Téléchargement**
+* **Télécharger**
 
    * **Description**
 
@@ -602,7 +602,7 @@ Vous pouvez configurer :
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
-### Référence   {#reference}
+### Référence  {#reference}
 
 Le composant **Référence** permet de référencer du texte à partir d’une autre page de votre site web AEM (dans l’instance actuelle). Le contenu du paragraphe référencé s’affiche alors comme s’il faisait partie de la page actuelle. Le contenu est mis à jour lorsque le paragraphe source est modifié (peut nécessiter une actualisation de la page).
 
@@ -1166,7 +1166,7 @@ TypeUn formulaire nécessite une action. L’action définit l’opération déc
             Page utilisée lors de la création d’un compte.
       * **Créer le contenu**
 
-         * Chemin d’accès au contenu
+         * Content Path (Chemin d’accès au contenu)
 
             Chemin d’accès à tout type de contenu utilisé par le formulaire. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que, pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement indiqué, par exemple :
 
@@ -1239,7 +1239,7 @@ TypeUn formulaire nécessite une action. L’action définit l’opération déc
             Page utilisée pour modifier le mot de passe.
       * **Stocker le contenu**
 
-         * **Chemin d’accès au contenu**
+         * **Content Path** (Chemin d’accès au contenu)
 
             Chemin d’accès à tout type de contenu utilisé par le formulaire. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que, pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement indiqué, par exemple :
 
