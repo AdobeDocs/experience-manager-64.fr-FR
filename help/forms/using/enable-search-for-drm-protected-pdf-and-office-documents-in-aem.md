@@ -9,10 +9,11 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7eebef08-83b9-4b56-90ec-35ab3b0c27e8
 noindex: true
+feature: Document Security
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '673'
 ht-degree: 80%
 
 ---
@@ -49,7 +50,7 @@ Une connexion sécurisée permet un flux d’informations harmonieux entre AEM F
 
    Cliquez sur **Enregistrer**. AEM est activé pour rechercher des documents PDF protégés par la sécurité documentaire et des documents Microsoft Office.
 
-### Configurer le bundle de SDK client AEM Forms à l’aide de l’authentification mutuelle  {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
+### Configurer le bundle de SDK client AEM Forms à l’aide de l’authentification mutuelle {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
 1. Activez l’authentification mutuelle pour AEM Forms on JEE. Pour plus d’informations, voir [CAC et authentification mutuelle](https://helpx.adobe.com/fr/livecycle/kb/cac-mutual-authentication.html).
 1. Accédez au gestionnaire de configuration et connectez-vous à AEM en tant qu’administrateur. L’URL par défaut est https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
