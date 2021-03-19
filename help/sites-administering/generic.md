@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
+feature: Commerce Integration Framework
 translation-type: tm+mt
-source-git-commit: fc2c7b62960a0a3cb45d595673b8dcfeb990d7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3004'
+source-wordcount: '3007'
 ht-degree: 85%
 
 ---
@@ -37,7 +38,7 @@ La solution AEM générique fournit des méthodes pour gérer les informations c
 >
 >Pour le moment, elle est utilisée à des fins de démonstration ou comme base d’une mise en œuvre personnalisée selon vos besoins.
 
-## Produits et variantes de produit  {#products-and-product-variations}
+## Produits et variantes de produit {#products-and-product-variations}
 
 >[!NOTE]
 >
@@ -304,7 +305,7 @@ Le mécanisme pour sélectionner l’image à afficher se présente comme suit 
 1. Saisissez la **catégorie d’image** choisie (`cat1`, par exemple).
 1. Appuyez/cliquez sur **Terminé.** La page s’actualise et la ressource appropriée doit s’afficher.
 
-#### Catalogue   {#catalog}
+#### Catalogue  {#catalog}
 
 1. Accédez à votre catalogue.
 1. Appuyez/cliquez sur **Afficher les propriétés**.
