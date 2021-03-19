@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '830'
 ht-degree: 4%
 
 ---
@@ -119,7 +120,7 @@ Pour les abonnements des communautés, il est possible d’activer ou de désact
 * **[!UICONTROL Ajouter l’id suivi à l’en-tête]** : La valeur par défaut est  `Reply-To`.
 
 * **[!UICONTROL Longueur maximale du sujet]** : Si l’ID d’outil de suivi est ajouté à la ligne d’objet, il s’agit de la longueur maximale de l’objet, à l’exclusion de l’ID suivi, après quoi il sera coupé. Notez que cette valeur doit être aussi petite que possible pour éviter la perte des informations d’ID de suivi. La valeur par défaut est 200.
-* **[!UICONTROL Adresse]** électronique &quot;De&quot; :  *(obligatoire)* Adresse à partir de laquelle le courrier électronique de notification sera envoyé. Il est probable que le même **utilisateur SMTP** spécifié pour le [service de messagerie par défaut](#configuredefaultmailservice). La valeur par défaut est `no-reply@example.com`.
+* **[!UICONTROL Adresse]** électronique &quot;De&quot; :  *(obligatoire)* Adresse à partir de laquelle le courrier électronique de notification est envoyé. Il est probable que le même **utilisateur SMTP** spécifié pour le [service de messagerie par défaut](#configuredefaultmailservice). La valeur par défaut est `no-reply@example.com`.
 
 * **[!UICONTROL Répondre au délimiteur]** : Si l’ID d’outil de suivi est ajouté à l’en-tête de réponse, ce délimiteur est utilisé. La valeur par défaut est `+` (signe plus).
 
