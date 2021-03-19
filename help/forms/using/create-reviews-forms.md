@@ -8,18 +8,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 85%
 
 ---
 
 
-# Création et gestion de révisions des actifs d’un formulaire  {#creating-and-managing-reviews-for-assets-in-forms}
+# Création et gestion de révisions des actifs d’un formulaire {#creating-and-managing-reviews-for-assets-in-forms}
 
-## Réviser {#review}
+## Révision {#review}
 
 Une révision est un mécanisme permettant à un ou plusieurs réviseurs d’ajouter des commentaires sur un élément disponible dans un formulaire.
 
@@ -36,7 +37,7 @@ Une révision est un mécanisme permettant à un ou plusieurs réviseurs d’ajo
 
 1. Renseignez toutes les informations restantes et cliquez ensuite sur Démarrer.
 
-### Actions survenant lorsqu’une révision est configurée  {#actions-that-occur-when-a-review-is-set-up}
+### Actions survenant lorsqu’une révision est configurée {#actions-that-occur-when-a-review-is-set-up}
 
 Cette section décrit ce qui se produit lorsqu’une révision est créée ou configurée.
 
