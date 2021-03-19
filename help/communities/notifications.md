@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '538'
 ht-degree: 2%
 
 ---
@@ -46,7 +47,7 @@ Ce qui distingue les notifications des activités et des abonnements est
 
 Les futurs canaux sont mobiles et de bureau.
 
-### Conditions requises {#requirements}
+### Conditions préalables {#requirements}
 
 **Configurer le courrier électronique**
 
