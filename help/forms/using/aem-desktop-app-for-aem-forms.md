@@ -1,18 +1,19 @@
 ---
-title: aem application pour ordinateur de bureau pour AEM Forms
-seo-title: aem application pour ordinateur de bureau pour AEM Forms
-description: aem application de bureau vous permet de mapper le référentiel Adobe Experience Manager (AEM) Assets et les fichiers binaires AEM Forms à un répertoire réseau sur votre système. En savoir plus sur les ressources prises en charge dans AEM application de bureau et sur la façon d’activer AEM Forms pour AEM application de bureau.
-seo-description: aem application de bureau vous permet de mapper le référentiel Adobe Experience Manager (AEM) Assets et les fichiers binaires AEM Forms à un répertoire réseau sur votre système. En savoir plus sur les ressources prises en charge dans AEM application de bureau et sur la façon d’activer AEM Forms pour AEM application de bureau.
+title: AEM application pour ordinateur de bureau pour AEM Forms
+seo-title: AEM application pour ordinateur de bureau pour AEM Forms
+description: AEM application de bureau vous permet de mapper le référentiel Adobe Experience Manager (AEM) Assets et les fichiers binaires AEM Forms à un répertoire réseau sur votre système. En savoir plus sur les ressources prises en charge dans AEM application de bureau et sur la façon d’activer AEM Forms pour AEM application de bureau.
+seo-description: AEM application de bureau vous permet de mapper le référentiel Adobe Experience Manager (AEM) Assets et les fichiers binaires AEM Forms à un répertoire réseau sur votre système. En savoir plus sur les ressources prises en charge dans AEM application de bureau et sur la façon d’activer AEM Forms pour AEM application de bureau.
 uuid: 99e0f2fb-8623-45bb-8e2e-5c5d6f482366
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
+role: Administrator
 translation-type: tm+mt
-source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '510'
 ht-degree: 48%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 48%
 
 # Application de bureau AEM pour AEM Forms {#aem-desktop-app-for-aem-forms}
 
-aem application de bureau vous permet de mapper le référentiel Adobe Experience Manager (AEM) Assets et les fichiers binaires AEM Forms à un répertoire réseau sur votre système. Vous pouvez afficher les actifs et les fichiers binaires synchronisés dans un explorateur de fichiers et utiliser différentes applications pour modifier les fichiers selon les besoins. Outre l’affichage des fichiers, vous pouvez également créer, charger et supprimer les fichiers binaires. Vous pouvez également ouvrir, modifier et enregistrer les fichiers directement à partir du logiciel. Par exemple, vous pouvez directement ouvrir et modifier un fichier XDP à partir de Designer. Les modifications apportées aux actifs localement sont répercutés dans le référentiel des actifs AEM et dans l’interface utilisateur AEM Forms.
+AEM application de bureau vous permet de mapper le référentiel Adobe Experience Manager (AEM) Assets et les fichiers binaires AEM Forms à un répertoire réseau sur votre système. Vous pouvez afficher les actifs et les fichiers binaires synchronisés dans un explorateur de fichiers et utiliser différentes applications pour modifier les fichiers selon les besoins. Outre l’affichage des fichiers, vous pouvez également créer, charger et supprimer les fichiers binaires. Vous pouvez également ouvrir, modifier et enregistrer les fichiers directement à partir du logiciel. Par exemple, vous pouvez directement ouvrir et modifier un fichier XDP à partir de Designer. Les modifications apportées aux actifs localement sont répercutés dans le référentiel des actifs AEM et dans l’interface utilisateur AEM Forms.
 
 Vous pouvez télécharger l’application à partir d’une instance AEM. Pour plus d’informations sur le téléchargement de l’application, voir [Notes de mise à jour AEM l’application de bureau](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html).
 
@@ -34,7 +35,7 @@ Vous pouvez utiliser l’application pour synchroniser les fichiers binaires des
 
 ## Activer AEM Forms pour l’application de bureau AEM {#enable-aem-forms-for-aem-desktop-app}
 
-aem application de bureau utilise le protocole WebDAV sous Microsoft Windows et SMB1 sous Mac OS X pour se connecter à un serveur AEM Forms. Le serveur AEM Forms n’est pas activé pour synchroniser les fichiers binaires et autres ressources avec un client WebDAV ou SMB. Suivez les étapes ci-après pour activer AEM Forms pour AEM application de bureau :
+AEM application de bureau utilise le protocole WebDAV sous Microsoft Windows et SMB1 sous Mac OS X pour se connecter à un serveur AEM Forms. Le serveur AEM Forms n’est pas activé pour synchroniser les fichiers binaires et autres ressources avec un client WebDAV ou SMB. Suivez les étapes ci-après pour activer AEM Forms pour AEM application de bureau :
 
 1. Connectez-vous à AEM Forms en tant qu’administrateur.
 1. Dans l’instance d’auteur, cliquez sur ![adobeexperience emanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Outils]** ![marteau](assets/hammer.png) **[!UICONTROL Déploiement > Opérations > Console Web]**. La console Web s’ouvre dans une nouvelle fenêtre.
