@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 379957bf-0634-4182-b269-1b010da4c90f
+feature: Document Security
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '991'
 ht-degree: 74%
 
 ---
@@ -42,7 +43,7 @@ Un événement d’échec est enregistré si un utilisateur non autorisé tente 
 
 Si une stratégie autorise l’accès d’utilisateurs anonymes et si l’administrateur désactive par la suite l’accès anonyme pour Document Security, l’accès anonyme échoue pour les documents protégés par la stratégie et l’événement n’est pas consigné.
 
-## Activation du contrôle des événements  {#enable-event-auditing}
+## Activation du contrôle des événements {#enable-event-auditing}
 
 La configuration requise pour contrôler les événements est la suivante :
 
