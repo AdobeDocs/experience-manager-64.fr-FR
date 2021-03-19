@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction, author
 discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3076'
+source-wordcount: '3078'
 ht-degree: 82%
 
 ---
 
 
-# Présentation de la création de formulaires adaptatifs   {#introduction-to-authoring-adaptive-forms}
+# Présentation de la création de formulaires adaptatifs  {#introduction-to-authoring-adaptive-forms}
 
 ## Présentation {#overview}
 
@@ -36,7 +37,7 @@ Les formulaires adaptatifs créés avec cette option n’utilisent aucun modèle
 
 Pour en savoir plus sur la création d’un formulaire adaptatif, consultez [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md).
 
-## Interface de création de formulaires adaptatifs  {#adaptive-form-authoring-ui}
+## Interface de création de formulaires adaptatifs {#adaptive-form-authoring-ui}
 
 L’interface utilisateur optimisée pour les écrans tactiles permet de créer des formulaires adaptatifs de manière intuitive et offre les avantages suivants :
 
@@ -261,7 +262,7 @@ La barre latérale comprend les explorateurs suivants :
    <td><p>Ajoute une zone de texte dans laquelle un utilisateur peut spécifier les informations nécessaires.. </p> <p>Par défaut, le composant de zone de texte accepte uniquement du texte brut. Vous pouvez activer un composant de zone de texte afin de permettre la prise en charge du texte brut. Un composant de texte compatible avec le texte brut permet d’ajouter des en-têtes, de modifier les styles de caractère (gras, italique, souligné), de créer les listes ordonnées et non ordonnées, de modifier l’arrière-plan et la couleur du texte et d’ajouter des hyperliens. Pour activer le texte enrichi pour une zone de texte, activez l’option <strong> Autoriser le texte enrichi</strong> dans les propriétés du composant.</p> </td> 
   </tr> 
   <tr> 
-   <td>Title (Titre)</td> 
+   <td>Titre</td> 
    <td>Spécifie un titre pour le formulaire adaptatif.</td> 
   </tr> 
   <tr> 
