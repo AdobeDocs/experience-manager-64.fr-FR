@@ -7,10 +7,11 @@ uuid: 91702f41-5c19-4840-a3b5-59d69003fd67
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 39262cb1-1447-469a-9c01-886f66eeec74
+feature: Communication interactive
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2031'
 ht-degree: 60%
 
 ---
@@ -34,7 +35,7 @@ Ce didacticiel vous guide pas à pas dans la création de communications interac
 * Créer une communication interactive pour le canal web
 * Créer des communications interactives pour les versions impression et web avec l’impression comme option principale
 
-## Créer des communications interactives pour les versions impression et web sans aucune synchronisation  {#create-interactive-communications-for-print-and-web-with-no-synchronization}
+## Créer des communications interactives pour les versions impression et web sans aucune synchronisation {#create-interactive-communications-for-print-and-web-with-no-synchronization}
 
 ### Créer une communication interactive pour le canal d’impression {#create-interactive-communication-for-print-channel}
 
@@ -57,7 +58,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
 
    1. Spécifiez **create_first_ic_print_template** comme modèle d’impression et appuyez sur **Sélectionner**. Assurez-vous que la case **Utiliser l&#39;impression comme Principal pour le Canal Web** n&#39;est pas cochée.
    1. Spécifiez le dossier **Create_First_IC_templates** > **Create_First_IC_Web_Template** comme modèle Web et appuyez sur **Sélectionner**.
-   1. Appuyez sur **Créer**. 
+   1. Appuyez sur **Créer**.
 
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
@@ -118,7 +119,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
 
    1. Spécifiez **create_first_ic_print_template** comme modèle d’impression et appuyez sur **Sélectionner**. Assurez-vous que la case **Utiliser l&#39;impression comme Principal pour le Canal Web** n&#39;est pas cochée.
    1. Spécifiez le dossier **Create_First_IC_templates** > **Create_First_IC_Web_Template** comme modèle Web et appuyez sur **Sélectionner**.
-   1. Appuyez sur **Créer**. 
+   1. Appuyez sur **Créer**.
 
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
@@ -200,7 +201,7 @@ Exécutez les étapes suivantes pour dériver le contenu du canal web à l’aid
    1. Spécifiez **create_first_ic_print_template** comme modèle d’impression et appuyez sur **Sélectionner**.
    1. Cochez la case **Utiliser l&#39;impression comme Principal pour le Canal Web**.
    1. Spécifiez le dossier **Create_First_IC_templates** > **Create_First_IC_Web_Template** comme modèle Web et appuyez sur **Sélectionner**.
-   1. Appuyez sur **Créer**. 
+   1. Appuyez sur **Créer**.
 
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
@@ -211,7 +212,7 @@ Exécutez les étapes suivantes pour dériver le contenu du canal web à l’aid
 
    Le contenu du canal d’impression est inséré sous le contenu du modèle de canal web. Pour modifier le contenu du canal web qui a été généré automatiquement à partir du canal d’impression, vous pouvez annuler l’héritage pour toute zone cible.
 
-   Passez la souris sur la zone de cible appropriée dans le canal Web et sélectionnez ![annuler l&#39;héritage](assets/cancelinheritance.png) (Annuler l&#39;héritage), puis dans la boîte de dialogue **Annuler l&#39;héritage**, appuyez sur **Oui**.
+   Passez la souris sur la zone de cible appropriée dans le canal Web et sélectionnez ![annuler l’héritage](assets/cancelinheritance.png) (Annuler l’héritage), puis dans la boîte de dialogue **Annuler l’héritage**, appuyez sur **Oui**.
 
    ![cancel_héritage_web_canal](assets/cancel_inheritance_web_channel.png)
 
