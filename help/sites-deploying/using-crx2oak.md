@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
+feature: Mise à niveau
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1259'
 ht-degree: 63%
 
 ---
@@ -35,7 +36,7 @@ La liste de modifications et correctifs pour la dernière version est disponible
 >
 >Pour en savoir plus sur Apache Oak les conceptes clés de persistence AEM, voir [Introduction à la plateforme AEM](/help/sites-deploying/platform.md).
 
-## Cas d’utilisation de migration  {#migration-use-cases}
+## Cas d’utilisation de migration {#migration-use-cases}
 
 L’outil peut être utilisé pour :
 
@@ -49,7 +50,7 @@ Le diagramme ci-dessous montre toutes les combinaisons de migration possibles pr
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-## Fonctions {#features}
+## Fonctionnalités {#features}
 
 CRX2Oak est appelé durant les mises à niveau d’AEM d’une façon permettant à l’utilisateur de spécifier un profile de migration prédéfini qui automatise la reconfiguration des modes de persistence. Cela s’appelle le mode quickstart.
 
