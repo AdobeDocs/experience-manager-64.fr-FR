@@ -8,10 +8,11 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: b6786321-6e8e-40e2-809b-d117991246c4
+feature: Modèle de données de formulaire
 translation-type: tm+mt
-source-git-commit: 7e1d32127ee82f4353d768e5a2446a4bf4db2f57
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '592'
 ht-degree: 96%
 
 ---
@@ -29,7 +30,7 @@ Les applications AEM Forms telles que les formulaires adaptatifs et les communic
 
 Alors qu’un système modulaire distribué a des avantages propres, le défi consiste à intégrer et créer des associations de données dans plusieurs sources de données. L’intégration des données est essentielle au fonctionnement et à l’efficacité d’une infrastructure d’entreprise avec des sources de données distinctes connectées à des applications à des fins d’échange des données d’entreprise.
 
-## Aperçu de l’intégration de données  {#data-integration-overview}
+## Aperçu de l’intégration de données {#data-integration-overview}
 
 ![aem-forms-data-intégration](assets/aem-forms-data-integeration.png)
 
