@@ -7,10 +7,11 @@ uuid: cd123d42-f7cf-489d-8182-f3a01a2a4799
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 2ee45ac0-bc15-403a-93fc-c8592afb967d
+feature: Modèle de données de formulaire
 translation-type: tm+mt
-source-git-commit: 0fe74ef5483cf1f577be51c200ab2820d7ed64e5
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3150'
+source-wordcount: '3153'
 ht-degree: 81%
 
 ---
@@ -36,7 +37,7 @@ Lisez la suite pour plus de détails sur les diverses tâches et configurations 
 >
 >Vous devez être membre des groupes **fdm-author** et **forms-user** pour pouvoir créer et utiliser le modèle de données de formulaire. Contactez votre administrateur AEM pour devenir membre des groupes.
 
-## Ajouter des objets et des services de modèle de données  {#add-data-model-objects-and-services}
+## Ajouter des objets et des services de modèle de données {#add-data-model-objects-and-services}
 
 Si vous avez créé un modèle de données de formulaire avec des sources de données, vous pouvez utiliser l’éditeur de modèle de données de formulaire pour ajouter des objets et des services de modèle de données, configurer leurs propriétés, créer des associations entre les objets de modèle de données et tester le modèle et les services de données de formulaire.
 
