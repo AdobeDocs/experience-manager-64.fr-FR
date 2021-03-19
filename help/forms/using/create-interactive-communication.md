@@ -7,11 +7,12 @@ uuid: b98e9a49-cef2-42f2-b484-8765b859895b
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c106aa41-cbc0-4daf-9ac6-6c0d23710010
+feature: Communication interactive
 translation-type: tm+mt
-source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3152'
-ht-degree: 61%
+source-wordcount: '3154'
+ht-degree: 62%
 
 ---
 
@@ -33,7 +34,7 @@ Les conditions préalables à la création d’une communication interactive son
 * Vérifiez que vous disposez de [modèles pour l’impression et le canal Web](/help/forms/using/web-channel-print-channel.md).
 * Assurez-vous de disposer du [thème](/help/forms/using/themes.md) requis pour le canal web.
 
-## Créer une communication interactive  {#createic}
+## Créer une communication interactive {#createic}
 
 1. Connectez-vous à l’instance d’auteur AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Appuyez sur **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Communication interactive]**. La page Créer une communication interactive s’affiche.
@@ -312,7 +313,7 @@ Les auteurs sont toutefois autorisés à interrompre l’héritage pour des comp
 ![printweb_2-3](assets/printweb_2-3.png)
 [ Cliquez pour agrandir](assets/printweb_2-3.png)
 
-![Canaux Web et d’impression dans l’éditeur de communication interactive](assets/printweb_2-1.png)
+![Canaux Web et d’impression dans l’éditeur Interactive Communication](assets/printweb_2-1.png)
 
 ### Synchronisation automatique {#auto-sync}
 
