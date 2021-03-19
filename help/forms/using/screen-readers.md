@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '347'
 ht-degree: 71%
 
 ---
 
 
-# Lecteurs d’écran pour les formulaires HTML5  {#screen-readers-for-html-forms}
+# Lecteurs d’écran pour les formulaires HTML5 {#screen-readers-for-html-forms}
 
 Les composants de formulaires HTML5 rendent des modèles de formulaires XFA au format HTML5. Tous les navigateurs standard supportant le format HTML5 peuvent générer ces formulaires. Pour prendre en charge une expérience de capture de données similaire entre les formulaires PDF et HTML5, la mise en page des formulaires PDF est conservée dans les formulaires au format HTML5.
 
@@ -27,7 +28,7 @@ Les formulaires HTML5 utilisent des constructions HTML standard, ce qui permet 
 
 Les formulaires HTML5 sont conformes à la section 508 concernant l’accessibilité avec des exceptions connues. Voir [VPAT pour les formulaires HTML5](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html) pour obtenir des détails.
 
-## Lecteurs d’écran certifiés pour les formulaires HTML5  {#certified-screen-readers-for-html-forms}
+## Lecteurs d’écran certifiés pour les formulaires HTML5 {#certified-screen-readers-for-html-forms}
 
 * JAWS 14.0 sous Microsoft Windows
 * Voix off sous Mac OS X et iPad
