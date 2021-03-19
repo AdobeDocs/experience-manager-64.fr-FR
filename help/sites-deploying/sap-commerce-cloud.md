@@ -1,6 +1,6 @@
 ---
 title: SAP Commerce Cloud
-seo-title: COMMERCE CLOUD SAP
+seo-title: Commerce Cloud SAP
 description: Découvrez comment déployer l’eCommerce avec SAP Commerce Cloud.
 seo-description: Découvrez comment déployer l’eCommerce avec SAP Commerce Cloud.
 uuid: a16ae42b-9c33-4da8-a130-52b72a779ec7
@@ -10,16 +10,17 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
+feature: Commerce Integration Framework
 translation-type: tm+mt
-source-git-commit: 94dbed719c2f3360db6ba5b414230fd3f79f7955
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '734'
 ht-degree: 89%
 
 ---
 
 
-# COMMERCE CLOUD SAP{#sap-commerce-cloud}
+# SAP Commerce Cloud{#sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -44,7 +45,7 @@ Il est disponible sous la branche Anglais (États-Unis) ( `/content/geometrixx-o
 
 * [Accès à la console de gestion Hybris](#accesstothehybrismanagementconsole)
 
-### Exigences techniques – Serveur Hybris  {#technical-requirements-hybris-server}
+### Exigences techniques – Serveur Hybris {#technical-requirements-hybris-server}
 
 L&#39;extension hybris du cadre d&#39;intégration du commerce électronique a été mise à jour pour prendre en charge Hybris 5 (par défaut), tout en maintenant une compatibilité ascendante avec [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
 
