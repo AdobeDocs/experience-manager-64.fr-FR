@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '337'
 ht-degree: 68%
 
 ---
 
 
-# Activation des pièces jointes à un formulaire HTML5  {#enabling-attachments-for-an-html-form}
+# Activation des pièces jointes à un formulaire HTML5 {#enabling-attachments-for-an-html-form}
 
 Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec des formulaires HTML5. Par défaut, la prise en charge des pièces jointes est désactivée. Pour activer la prise en charge des pièces jointes :
 
