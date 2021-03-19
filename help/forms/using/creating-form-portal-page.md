@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 7387dfe8-0029-4ad0-b319-fc519928318b
+feature: Portail Formulaires
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1624'
 ht-degree: 74%
 
 ---
 
 
-# Création d’une page de portail de formulaires  {#creating-a-forms-portal-page}
+# Création d’une page de portail de formulaires {#creating-a-forms-portal-page}
 
 Les composants de Forms Portal fournissent aux développeurs Web des composants pour la création et la personnalisation d’un portail de formulaires sur les sites Web créés à l’aide d’Adobe Experience Manager (AEM). Pour une présentation rapide de Forms Portal, consultez [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md).
 
@@ -226,7 +227,7 @@ Pour lier un formulaire depuis n’importe quel point de la page, utilisez le co
 
 Pour répertorier les formulaires qui sont à l’état Brouillon et ceux qui ont déjà été envoyés, utilisez le composant **[!UICONTROL Drafts &amp; Submissions]**. Pour en savoir plus, consultez la section [Personnalisation du composant Drafts &amp; Submission](/help/forms/using/draft-submission-component.md).
 
-## Compatibilité avec les périphériques mobiles  {#mobile-device-friendliness}
+## Compatibilité avec les périphériques mobiles {#mobile-device-friendliness}
 
 Le composant Search &amp; Lister de Forms Portal est compatible avec les périphériques mobiles et s’adapte en conséquence. Les trois vues par défaut : La grille, la carte, les mises en page du panneau en fonction du périphérique sur lequel le site est ouvert, à condition que la page Web s’adapte également. Search &amp; Lister n’est qu’un simple composant et ne contrôle pas le style au niveau de la page.
 
