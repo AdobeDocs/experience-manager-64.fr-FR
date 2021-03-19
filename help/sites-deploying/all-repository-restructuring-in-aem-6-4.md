@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
+feature: Mise à niveau
 translation-type: tm+mt
-source-git-commit: f6121ad762c4a983d21fa9b6fdd3aa38f80ec0f5
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2718'
+source-wordcount: '2719'
 ht-degree: 83%
 
 ---
@@ -52,7 +53,7 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.4]
 * [Services cloud de connecteur de traduction de fournisseur](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#vendor-translation-connector-cloud-services)
 * [Modèles d’e-mail de notification de workflow](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#workflow-notification-email-templates)
 
-## Avec la mise à niveau vers la version 6.4  {#with-upgrade}
+## Avec la mise à niveau vers la version 6.4 {#with-upgrade}
 
 ### Configurations ContextHub {#contexthub-6.4}
 
@@ -622,7 +623,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
        <li>Hiérarchies de fragments d’expérience AEM via <strong>Fragments d’expérience AEM &gt; Fragment d’expérience &gt; Propriétés &gt; Onglet Services cloud &gt; Configuration cloud</strong>.</li> 
        <li>Hiérarchies des dossiers de fragments d’expérience AEM via <strong>Fragments d’expérience AEM &gt; Dossier &gt; Propriétés &gt; Onglet Services cloud &gt; Configuration cloud</strong>.<br /> </li> 
        <li>AEM Assets Folder hierarchy via <strong>AEM Assets &gt; Folder &gt; Folder Properties &gt; Cloud Services, onglet &gt; Configuration</strong>.</li> 
-       <li>aem Projets via <strong>AEM Projects &gt; Project &gt; Project Properties &gt; Advanced Tab &gt; Cloud Configuration</strong>.</li> 
+       <li>AEM Projets via <strong>AEM Projects &gt; Project &gt; Project Properties &gt; Advanced Tab &gt; Cloud Configuration</strong>.</li> 
       </ol> </li> 
      <li>Dissociez les anciens services cloud de traduction migrés des hiérarchies de contenu AEM mentionnées ci-dessus.</li> 
     </ol> </td> 
@@ -640,7 +641,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
  </tbody>
 </table>
 
-### Langues de traduction  {#translation-languages}
+### Langues de traduction {#translation-languages}
 
 <table> 
  <tbody>
@@ -671,7 +672,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
  </tbody>
 </table>
 
-### Règles de traduction  {#translation-rules}
+### Règles de traduction {#translation-rules}
 
 <table> 
  <tbody>
@@ -778,7 +779,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
        <li>Hiérarchies des fragments d’expérience AEM via <strong>Fragments d’expérience AEM &gt; Fragment d’expérience &gt; Propriétés &gt; Onglet Services cloud &gt; Configuration cloud</strong>.</li> 
        <li>Hiérarchies des dossiers de fragments d’expérience AEM via <strong>Fragments d’expérience AEM &gt; Dossier &gt; Propriétés &gt; Onglet Services cloud &gt; Configuration cloud</strong>.</li> 
        <li>AEM Assets Folder hierarchy via <strong>AEM Assets &gt; Folder &gt; Folder Properties &gt; Cloud Services, onglet &gt; Configuration</strong>.</li> 
-       <li>aem Projets via <strong>AEM Projects &gt; Project &gt; Project Properties &gt; Advanced Tab &gt; Cloud Configuration</strong>.</li> 
+       <li>AEM Projets via <strong>AEM Projects &gt; Project &gt; Project Properties &gt; Advanced Tab &gt; Cloud Configuration</strong>.</li> 
       </ol> </li> 
      <li>Dissociez les anciens services cloud de traduction migrés des hiérarchies de contenu AEM mentionnées ci-dessus.</li> 
     </ol> </td> 
