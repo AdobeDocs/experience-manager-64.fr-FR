@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 6fddb09a-ec60-4235-8ff4-0646f53f38f7
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2534'
+source-wordcount: '2535'
 ht-degree: 79%
 
 ---
 
 
-# Importation et exportation des actifs dans AEM Forms  {#importing-and-exporting-assets-to-aem-forms}
+# Importation et exportation des actifs dans AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
 Vous pouvez déplacer des formulaires et des ressources, thèmes, dictionnaires de données, fragments de document et lettres associés entre différentes instances AEM Forms. Ce déplacement est nécessaire lors de la migration des systèmes ou du déplacement des formulaires d’un serveur d’étape à un serveur de production. En ce qui concerne les actifs pour lesquels le téléchargement et l’importation via l’interface utilisateur AEM Forms sont pris en charge, l’utilisation de l’interface utilisateur Forms est recommandée pour l’exportation ou l’importation. L’utilisation d’AEM Package Manager pour l’exportation ou l’importation de ces actifs n’est pas recommandée.
 
@@ -37,7 +38,7 @@ L’exportation et l’importation via l’interface utilisateur AEM Forms sont 
 
 Pour ces types d’actifs, vous devez utiliser AEM Package Manager pour créer un package CRX sur le serveur AEM source et pour installer le package sur le serveur de destination. Pour plus d’informations sur la création et l’installation des packages, voir [Utilisation des packages](/help/sites-administering/package-manager.md).
 
-### Téléchargement des actifs Formulaires et documents  {#download-forms-amp-documents-assets}
+### Téléchargement des actifs Formulaires et documents {#download-forms-amp-documents-assets}
 
 Pour télécharger des ressources Forms &amp; Documents :
 
