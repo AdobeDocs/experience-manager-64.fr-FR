@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: e0608649-bd49-4f40-bc1b-821c9b208883
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '427'
 ht-degree: 84%
 
 ---
 
 
-# Intégration d’un objet FormBridge à un portail personnalisé pour les formulaires HTML5  {#integrating-form-bridge-with-custom-portal-for-html-forms}
+# Intégration d’un objet FormBridge à un portail personnalisé pour les formulaires HTML5 {#integrating-form-bridge-with-custom-portal-for-html-forms}
 
 FormBridge est une API de « pont logiciel » d’HTML5 qui vous permet d’interagir avec un formulaire. Pour la référence à l’API FormBridge, voir [Référence à l’API FormBridge](/help/forms/using/form-bridge-apis.md).
 
@@ -25,7 +26,7 @@ Vous pouvez utiliser l’API FormBridge pour obtenir ou définir des valeurs de 
 
 Une application HTML existante peut tirer profit de l’API FormBridge pour interagir avec un formulaire et l’intégrer à la page HTML. Vous pouvez utiliser les étapes suivantes pour définir la valeur d’un champ à l’aide de l’API Form Bridge.
 
-## Intégration de formulaires HTML5 à une page Web  {#integrating-html-forms-to-a-web-page}
+## Intégration de formulaires HTML5 à une page Web {#integrating-html-forms-to-a-web-page}
 
 1. **Choix ou création d’un profil**
 
