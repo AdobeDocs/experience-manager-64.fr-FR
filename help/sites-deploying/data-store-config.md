@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d4636434-98a6-4cf7-bb92-4338da17c893
 legacypath: /deploy/platform/data-store-config
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: 8a8e38bc9f34d6a81aa91ba83cf35caa4b03ee3f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3439'
+source-wordcount: '3440'
 ht-degree: 68%
 
 ---
@@ -27,7 +28,7 @@ Dans Adobe Experience Manager (AEM), les données binaires peuvent être stocké
 
 Les entrepôts de données et les magasins de nœuds peuvent être configués en utilisant la configuration OSGi. Chaque configuration OSGi est référencé à l’aide d’un PID (identifiant de persistant).
 
-## Étapes de configuration  {#configuration-steps}
+## Étapes de configuration {#configuration-steps}
 
 Pour configurer le magasin de nœuds et l’entrepôt de données, procédez comme suit :
 
@@ -143,9 +144,9 @@ Voici les options de configuration disponibles :
 
 ## Entrepôt de données S3 Amazon  {#amazon-s-data-store}
 
-aem peut être configuré pour stocker des données dans Amazon Simple Enregistrement Service (S3). Il utilise le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` pour la configuration.
+AEM peut être configuré pour stocker des données dans Amazon Simple Enregistrement Service (S3). Il utilise le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` pour la configuration.
 
-Pour activer la fonctionnalité de l’entrepôt de données S3, un Feature Pack contenant le connecteur d’entrepôt de données S3 doit être téléchargé et installé. Accédez au [référentiel Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/), puis téléchargez la dernière version des versions 1.8.x du Feature Pack (par exemple, com.adobe.granite.oak.s3connector-1.8.0.zip). De plus, vous devez également télécharger et installer le Service Pack le plus récent, tel qu&#39;il est indiqué sur la [page AEM Notes de mise à jour du Service Pack 6.4](https://helpx.adobe.com/experience-manager/6-4/release-notes/feature-packs-release-notes.html).
+Pour activer la fonctionnalité de l’entrepôt de données S3, un Feature Pack contenant le connecteur d’entrepôt de données S3 doit être téléchargé et installé. Accédez au [référentiel Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/), puis téléchargez la dernière version des versions 1.8.x du Feature Pack (par exemple, com.adobe.granite.oak.s3connector-1.8.0.zip). De plus, vous devez également télécharger et installer le Service Pack le plus récent, tel qu&#39;il est indiqué sur la [page AEM Notes de mise à jour du Service Pack 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/release-notes.html?lang=fr).
 
 >[!NOTE]
 >
