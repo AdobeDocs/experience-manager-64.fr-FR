@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 28549db2-e2f2-4a25-b0b1-785237d9d941
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '1996'
 ht-degree: 88%
 
 ---
 
 
-# Gestion des métadonnées de formulaire  {#manage-form-metadata}
+# Gestion des métadonnées de formulaire {#manage-form-metadata}
 
 ## Présentation  {#overview-nbsp}
 
@@ -54,7 +55,7 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
    <td><strong>Description</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td>Title (Titre)</td> 
+   <td>Titre</td> 
    <td>Tout type, à l’exception du type ressource</td> 
    <td>Nom d’affichage du formulaire.<br /> </td> 
   </tr> 
@@ -72,7 +73,7 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
      <li>Formulaire PDF, formulaire PDF (AcroForm) ou formulaire PDF (signé)</li> 
      <li>Document, document (signé)</li> 
      <li>Formulaire adaptatif</li> 
-     <li>Resource</li> 
+     <li>Ressource</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -226,7 +227,7 @@ Vous pouvez modifier les valeurs des propriétés de métadonnées existantes ou
 
    Ces deux actions redirigent l’utilisateur dans le mode lecture seule de la page de propriétés contenant les valeurs mises à jour.
 
-### Mise à jour de la miniature du formulaire   {#update-the-form-thumbnail-nbsp}
+### Mise à jour de la miniature du formulaire  {#update-the-form-thumbnail-nbsp}
 
 Dans la page de propriétés, le panneau de gauche affiche la miniature du formulaire. Par défaut, la miniature affichée est celle qui a été générée au moment de la création du formulaire (formulaire adaptatif) ou du téléchargement du formulaire.
 
