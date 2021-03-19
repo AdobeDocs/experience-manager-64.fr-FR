@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: dd18f7b5-882d-4e81-ab3d-85f1e5d74992
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '312'
 ht-degree: 84%
 
 ---
@@ -29,7 +30,7 @@ Un cache est un mécanisme qui permet de raccourcir les temps d’accès aux don
 >
 >Lors du développement des composants personnalisés, sur le serveur utilisé pour le développement, gardez le cache de formulaires adaptatifs désactivé.
 
-## Configurer le cache  {#configure-the-cache}
+## Configurer le cache {#configure-the-cache}
 
 Effectuez les étapes suivantes pour configurer le cache de formulaires adaptatifs :
 
