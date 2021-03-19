@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 content-type: reference
 discoiquuid: a5eba237-3aad-497a-8f77-061d5d3df371
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: ecfac782540ac6712e11bed9148199561b7e7f79
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1444'
 ht-degree: 89%
 
 ---
@@ -30,7 +31,7 @@ La plupart des périphériques mobiles présentent des capacités de traitement 
 
 Bien que les recommandations abordées dans cet article soient destinées aux formulaires HTML5, elles s’appliquent également aux formulaires PDF basés sur XFA. Ces meilleures pratiques contribuent globalement aux performances globales des formulaires HTML5. Une planification soigneuse permet de développer des formulaires efficaces et productifs. Pour commencer :
 
-## Les nœuds sont la devise des formulaires HTML5, dépensez-les à bon escient.  {#nodes-are-currency-of-html-forms-spend-them-wisely}
+## Les nœuds sont la devise des formulaires HTML5, dépensez-les à bon escient. {#nodes-are-currency-of-html-forms-spend-them-wisely}
 
 En règle générale, un formulaire XFA comporte plusieurs éléments. Par exemple, un tableau, un champ de texte et des images. Un certain nombre de propriétés permettent de contrôler le comportement et l’aspect de chaque élément. Lorsqu’un formulaire XFA est rendu au format HTML5, tous les éléments XFA et les propriétés correspondantes sont convertis en nœuds MODEL ou DOM HTML. Ces nœuds augmentent la taille et la complexité d’un DOM. Le rendu du formulaire HTML5 prend plus de temps.
 
@@ -49,7 +50,7 @@ Par conséquent, la réduction de la taille des ressources externes et l’utili
 * Utilisez l’option de minimisation dans AEM Configuration Manager (Day CQ HTML Library Manager) pour compresser les fichiers JavaScript et CSS. Pour plus de détails, voir [Paramètres de configuration sur OSGi](/help/sites-deploying/osgi-configuration-settings.md).
 * Activez la compression web. Cela réduit la taille des requêtes et des réponses issues d’un formulaire. Pour plus d’informations, voir [Réglage des performances du serveur AEM Forms](https://helpx.adobe.com/fr/aem-forms/6-3/performance-tuning-aem-forms.html).
 
-## Maintenez l’intérêt en affichant uniquement les champs obligatoires   {#keep-the-interest-alive-show-only-required-fields}
+## Maintenez l’intérêt en affichant uniquement les champs obligatoires  {#keep-the-interest-alive-show-only-required-fields}
 
 Un formulaire HTML5 peut s’exécuter dans plusieurs centaines de pages. Un formulaire avec un grand nombre de champs est lent à charger dans le navigateur. Vous pouvez effectuer les optimisations suivantes sur un formulaire XFA pour optimiser les formulaires contenant un grand nombre de champs et de pages.
 
