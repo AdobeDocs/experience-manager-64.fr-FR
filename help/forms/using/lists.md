@@ -7,10 +7,11 @@ uuid: d1baa9eb-dffe-4e02-af95-394e7ee0d6ee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 7bdf1f06-c298-4695-bad1-e402cf472086
+feature: Correspondence Management
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6809'
+source-wordcount: '6811'
 ht-degree: 83%
 
 ---
@@ -140,7 +141,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
    **Figure : valeurs des éléments** *d’espace réservé dans la vue CCR renseignée à partir des variables du dictionnaire de données, comme indiqué dans le fichier de données d’exemple*
 
 1. Vous pouvez utiliser des conditions intégrés et la répétition afin que votre lettre soit hautement contextuelle et parfaitement structurée. Pour plus d’informations sur la condition intégrée et la répétition, voir [Conditions insérées et répétez dans des lettres](/help/forms/using/cm-inline-condition.md).
-1. Appuyez sur **Save** (Enregistrer).
+1. Appuyez sur **Enregistrer**.
 
 #### Recherche et remplacement de texte {#searching-and-replacing-text}
 
@@ -212,7 +213,7 @@ L’implémentation des listes se compose de deux étapes :
 1. Définition des propriétés de base telles que le nom, la description, le dictionnaire de données.
 1. la section du contenu qui fait partie de la liste, puis la définition de propriétés telles que l’ordre de verrouillage et l’accès à la bibliothèque pour la liste.
 
-### Création de liste  {#create-a-list}
+### Création de liste {#create-a-list}
 
 Une liste est un groupe de contenus associés pouvant être utilisés dans un modèle de lettre en tant que même unité. N’importe quel type de contenu peut être ajouté à une liste. Les listes peuvent également être imbriquées. Les modules de liste peuvent être spécifiés comme suit :
 
@@ -268,7 +269,7 @@ Une liste est un groupe de contenus associés pouvant être utilisés dans un mo
    * **Ignorer le style de liste** : Si l’option Numérotation composée est désélectionnée, l’option Ignorer le style de liste est activée. Cette sélection ignore le style de la liste imbriquée et la numérotation continue à partir de la liste extérieure. Par conséquent, les modules de la liste imbriquée sont traités en tant que partie intégrante de la liste extérieure et tous les styles spécifiés dans la liste imbriquée sont ignorés. Si l’option Ignorer le style de liste est désactivée pour une liste imbriquée, les modules qui font partie de cette liste imbriquée ont leur propre style de numérotation.
    * **Sous-formulaire solidaire :** Définit le saut de page des actifs d’une liste. Si vous définissez la propriété Sous-formulaire solidaire pour l’un des actifs d’une liste sur **On**, cet actif et l’actif suivant resteront sur la même page. Le contenu de l’actif sélectionné et de l’actif suivant ne sera pas fractionné sur plusieurs pages.
 
-1. Appuyez sur **Save** (Enregistrer).
+1. Appuyez sur **Enregistrer**.
 
 ### Meilleures pratiques/conseils et astuces {#best-practices-tips-and-tricks}
 
@@ -411,7 +412,7 @@ Pour un exemple détaillé de l’utilisation de tableaux statiques et dynamique
 
    Pour un exemple détaillé de l’utilisation de tableaux statiques et dynamiques dans les fragments de mise en page, voir [Exemple avec des fichiers d’exemple : utilisation de tableaux statiques et dynamiques dans une lettre ](create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them).
 
-1. Appuyez sur **Save** (Enregistrer).
+1. Appuyez sur **Enregistrer**.
 
 ### Télécharger un fichier XDP vers Correspondence Management {#upload-an-xdp-to-correspondence-management}
 
