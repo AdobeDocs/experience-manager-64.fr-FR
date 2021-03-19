@@ -1,7 +1,7 @@
 ---
 title: Développement et outil de comparaison des pages
 seo-title: Développement et outil de comparaison des pages
-description: 'null'
+description: Développement et outil de comparaison des pages
 seo-description: 'null'
 uuid: 48bbeca3-fe16-48ef-bb4d-ac605fe0ca76
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 13e8cbef-698f-4e69-9f8c-f9bee82e9fd1
 translation-type: tm+mt
-source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '484'
 ht-degree: 73%
 
 ---
