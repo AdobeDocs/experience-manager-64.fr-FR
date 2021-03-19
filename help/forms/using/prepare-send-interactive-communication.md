@@ -7,16 +7,17 @@ uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
+feature: Communication interactive
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1360'
 ht-degree: 55%
 
 ---
 
 
-# Préparation et envoi d’une communication interactive à l’aide de l’interface utilisateur de l’agent  {#prepare-and-send-interactive-communication-using-the-agent-ui}
+# Préparation et envoi d’une communication interactive à l’aide de l’interface utilisateur de l’agent {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 L’interface utilisateur de l’agent permet aux agents de préparer et d’envoyer la communication interactive au post-traitement. L’agent apporte les modifications nécessaires dans la mesure du possible et envoie la communication interactive en post-traitement, comme un courrier électronique ou une impression.
 
@@ -88,7 +89,7 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu, tel que des fragments de
 
    Procédez à la gestion des pièces jointes de la communication interactive.
 
-### Gestion des pièces jointes  {#manage-attachments}
+### Gestion des pièces jointes {#manage-attachments}
 
 1. Sélectionnez **[!UICONTROL Pièce jointe]**. L’interface utilisateur de l’agent affiche les pièces jointes disponibles de la manière dont elles ont été configurées lors de la création de la communication interactive.
 
