@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '703'
 ht-degree: 94%
 
 ---
 
 
-# Obtention de documents XDP et PDF dans AEM Forms  {#getting-xdp-and-pdf-documents-in-aem-forms}
+# Obtention de documents XDP et PDF dans AEM Forms {#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Présentation {#overview}
 
@@ -33,7 +34,7 @@ Vous pouvez transférer les types de ressource pris en charge individuellement o
 >
 >Assurez-vous d’être membre du groupe `form-power-users` pour pouvoir télécharger des fichiers XDP. Contactez votre administrateur pour devenir membre du groupe.
 
-## Chargement de formulaires  {#uploading-forms}
+## Chargement de formulaires {#uploading-forms}
 
 1. Connectez-vous à l’interface utilisateur AEM Forms en accédant à `https://[server]:[port]/aem/forms.html`.
 1. Accédez au dossier vers lequel vous souhaitez transférer le formulaire ou le dossier contenant des formulaires.
