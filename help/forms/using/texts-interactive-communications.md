@@ -7,10 +7,11 @@ uuid: b2188d34-14f9-4c4e-bbe0-a2e763ed2958
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
+feature: Communication interactive
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2251'
 ht-degree: 72%
 
 ---
@@ -62,7 +63,7 @@ Le fragment de document de texte dans Interactive Communication prend en charge 
    * [Raccourcis clavier](/help/forms/using/keyboard-shortcuts.md)
 
 
-1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
+1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
    Le texte est créé. Vous pouvez maintenant utiliser le texte comme bloc de création lors de la création d’une communication interactive.
 
@@ -112,7 +113,7 @@ Lors de la création ou de la modification d’un fragment de document texte, vo
 
    ![variable espane](assets/variablespane.png)
 
-1. Appuyez sur **[!UICONTROL Créer]**. 
+1. Appuyez sur **[!UICONTROL Créer]**.
 
    Le volet Créer des variables apparaît.
 
@@ -123,7 +124,7 @@ Lors de la création ou de la modification d’un fragment de document texte, vo
    * **[!UICONTROL Type*]** : sélectionnez un type de variable : Chaîne, Nombre, Valeur booléenne ou Date.
    * **[!UICONTROL Autoriser les valeurs spécifiques uniquement]** : pour les variables de type Chaîne et Nombre, vous pouvez garantir que l’agent choisisse parmi un ensemble spécifique de valeurs pour un espace réservé dans l’interface utilisateur de l’agent. Pour spécifier le jeu de valeurs, sélectionnez cette option, puis spécifiez des valeurs séparées par des virgules qui sont autorisées dans le champ **[!UICONTROL Valeurs]**.
 
-1. Appuyez sur **[!UICONTROL Créer]**. 
+1. Appuyez sur **[!UICONTROL Créer]**.
 
    La variable est créée et répertoriée dans le volet Variables.
 
@@ -133,7 +134,7 @@ Lors de la création ou de la modification d’un fragment de document texte, vo
 
    Les variables sont mises en surbrillance sur fond bleu clair, tandis que les propriétés du modèle de données de formulaire sont mises en surbrillance en brunâtre.
 
-1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
+1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
 ## Créer des règles dans le texte {#rules}
 
@@ -146,7 +147,7 @@ L’éditeur de règles dans un texte permet de créer des règles pour afficher
 * Propriétés du modèle de données de formulaire associé
 * Toute variable que vous avez potentiellement créée dans le texte
 
-### Créer des règles dans le texte  {#create-rules-in-text}
+### Créer des règles dans le texte {#create-rules-in-text}
 
 1. Lors de la création ou de la modification d’un texte, sélectionnez la chaîne de texte, le paragraphe ou le contenu que vous souhaitez conditionner à l’aide de la règle.
 
