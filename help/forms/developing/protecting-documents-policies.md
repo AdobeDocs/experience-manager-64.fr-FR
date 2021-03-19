@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
+role: Développeur
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '15544'
+source-wordcount: '15545'
 ht-degree: 4%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 4%
 
 Le service Document Security permet aux utilisateurs d&#39;appliquer de manière dynamique des paramètres de confidentialité aux documents Adobe PDF et de garder le contrôle sur les documents, quelle que soit leur diffusion.
 
-Le service Document Security empêche la diffusion des informations au-delà de la portée de l’utilisateur en permettant à ce dernier de contrôler la manière dont les destinataires utilisent le document PDF protégé par une stratégie. Un utilisateur peut spécifier qui peut ouvrir un document, limiter son utilisation et contrôler le document une fois distribué. Un utilisateur peut également contrôler dynamiquement l’accès à un document protégé par une stratégie et peut même révoquer dynamiquement l’accès au document.
+Le service Document Security empêche la diffusion des informations au-delà de la portée de l’utilisateur en permettant à ce dernier de contrôler la manière dont les destinataires utilisent le document PDF protégé par une stratégie. Un utilisateur peut spécifier qui peut ouvrir un document, comment l’utiliser et contrôler le document une fois distribué. Un utilisateur peut également contrôler dynamiquement l’accès à un document protégé par une stratégie et peut même révoquer dynamiquement l’accès au document.
 
 Le service Document Security protège également d&#39;autres types de fichiers tels que les fichiers Microsoft Word (fichiers DOC). Vous pouvez utiliser l&#39;API du client Document Security pour utiliser ces types de fichiers. Les versions suivantes sont prises en charge :
 
