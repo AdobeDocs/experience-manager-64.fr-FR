@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 5ca8dd7a-4efd-493e-8022-d2f10903b0a2
+feature: Mise à niveau
 translation-type: tm+mt
-source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '814'
 ht-degree: 86%
 
 ---
@@ -28,7 +29,7 @@ La fonctionnalité Infrastructure de personnalisation est conçue pour vous aide
 
 L’infrastructure de personnalisation comprend deux composants : **Surface d’API** et **Classification du contenu**.
 
-#### Surface d’API  {#api-surface}
+#### Surface d’API {#api-surface}
 
 Dans les versions précédentes d’AEM, de nombreuses API étaient exposées par l’intermédiaire du jar Uber. Bien que certaines de ces API n’étaient pas destinées à être utilisées par les clients, elles étaient exposées afin de prendre en charge la fonctionnalité AEM entre les différents modules. Dorénavant, les API Java seront marquées comme étant publiques ou privées pour indiquer aux utilisateurs lesquelles peuvent être utilisées en toute sécurité dans le cadre des mises à niveau. Voici d’autres observations :
 
