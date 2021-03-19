@@ -7,10 +7,11 @@ uuid: ab948f02-3b41-4304-955b-6dd51d27088e
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '559'
 ht-degree: 88%
 
 ---
@@ -64,7 +65,7 @@ Notez la modification du style de la zone de texte comme illustré ci-dessous ap
    <td><p>Effet</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Field (Champ)</p> </td> 
+   <td><p>Champ</p> </td> 
    <td><p>bordure</p> </td> 
    <td><p>Largeur de la bordure = 2px</p> <p>Style de la bordure = plein</p> <p>Couleur de la bordure = #1111</p> </td> 
    <td><p>Crée une bordure large noire 2px autour du champ</p> </td> 
