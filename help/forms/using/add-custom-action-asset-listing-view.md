@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: b35ea921-182f-4371-90f6-482d22694b42
+feature: Correspondence Management
 translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1383'
 ht-degree: 59%
 
 ---
@@ -34,11 +35,11 @@ Cette personnalisation est illustrée par un scénario qui ajoute une commande �
 
 Pour suivre le scénario ci-après ou un scénario similaire, vous devez disposer des connaissances suivantes :
 
-* CRX
+* CRX 
 * JavaScript
 * Java
 
-## Scénario : Ajoutez une commande à l’interface utilisateur des listes Lettres pour envoyer la version PDF aplatie d’une lettre  {#addcommandtoletters}
+## Scénario : Ajoutez une commande à l’interface utilisateur des listes Lettres pour envoyer la version PDF aplatie d’une lettre {#addcommandtoletters}
 
 Les étapes ci-dessous ajoutent une commande « Télécharger un PDF aplati » à la vue Liste des ressources de lettres et permettent à vos utilisateurs de télécharger le PDF aplati de la lettre sélectionnée. Le suivi de ces étapes à l’aide du code et des paramètres appropriés permet d’ajouter une autre fonctionnalité pour une ressource différente, telle que des dictionnaires de données ou des textes.
 
