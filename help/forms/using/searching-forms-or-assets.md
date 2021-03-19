@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
+role: Administrator
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '714'
 ht-degree: 91%
 
 ---
 
 
-# Recherche de formulaires et de ressources  {#searching-for-forms-and-assets}
+# Recherche de formulaires et de ressources {#searching-for-forms-and-assets}
 
 Vous pouvez rechercher vos formulaires ou ressources de formulaire à l’aide d’une chaîne de texte ou d’une chaîne de texte accompagnée de caractères génériques. Vous pouvez également préciser la recherche à l’aide des critères disponibles dans différentes catégories du panneau Rechercher.
 
@@ -102,7 +103,7 @@ Vous pouvez choisir un grand nombre de types de ressource. La recherche renvoie 
    <td>Recherche dans tous les formulaires adaptatifs.</td> 
   </tr>
   <tr>
-   <td>Resource</td> 
+   <td>Ressource</td> 
    <td>Recherche dans toutes les ressources.<br /> </td> 
   </tr>
  </tbody>
