@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2886'
 ht-degree: 88%
 
 ---
@@ -35,7 +36,7 @@ Si Oak rencontre une requête sans index, un message de journal de niveau WARN s
 *WARN* Traversed 1000 nodes with filter Filter(query=select ...) consider creating an index or changing the query
 ```
 
-## Langages de requête pris en charge  {#supported-query-languages}
+## Langages de requête pris en charge {#supported-query-languages}
 
 Le moteur de requête Oak prend en charge les langages suivants :
 
@@ -245,7 +246,7 @@ Prenez cette structure de nœud comme exemple :
          * **Nom :**`Mapping`
       * **Nom :**`tokenizer`
 
-         * **Nom de la propriété :**`name`
+         * **Nom de la propriété:** `name`
 
             * **Type :** `String`
             * **Valeur:** `Standard`
