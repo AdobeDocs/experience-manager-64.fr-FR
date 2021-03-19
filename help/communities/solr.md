@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
+role: Administrator
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 2%
 
 ---
@@ -28,7 +29,7 @@ Si les deux collections Oak et SRP sont utilisées de façon intensive, un secon
 
 Pour les environnements de production, le [mode SolrCloud](#solrcloud-mode) offre de meilleures performances par rapport au mode autonome (une seule configuration Solr locale).
 
-### Conditions requises {#requirements}
+### Conditions préalables {#requirements}
 
 Téléchargez et installez Apache Solr :
 
@@ -132,7 +133,7 @@ Au total, les 33 langues suivantes sont prises en charge dans Advanced MLS.
 | Arabe | Allemand | Norvégien |
 |---|---|---|
 | Bulgare | Grec | Polonais |
-| Chinois (simplifié) | Créole haïtien | Portugais |
+| Chinois (simplifié) | Créole haïtien | brésilien |
 | Chinois (traditionnel) | Hébreu | Roumain |
 | Tchèque | Hongrois | Russe |
 | Danois | Indonésien | Slovaque |
@@ -144,7 +145,7 @@ Au total, les 33 langues suivantes sont prises en charge dans Advanced MLS.
 
 #### Comparaison de l&#39;AEM 6.1 Solr search, Standard MLS et Advanced MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-**Remarque** : aem 6.1 se rapporte à AEM 6.1 Communautés FP3 et versions antérieures.
+**Remarque** : AEM 6.1 se rapporte à AEM 6.1 Communautés FP3 et versions antérieures.
 
 ![chlimage_1-283](assets/chlimage_1-283.png)
 
