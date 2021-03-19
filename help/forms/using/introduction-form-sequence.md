@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4a51ebc4-e019-4fc5-93a1-d97f695126f5
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '539'
 ht-degree: 100%
 
 ---
 
 
-# Présentation de la séquence de formulaires en plusieurs étapes  {#introduction-to-multi-step-form-sequence}
+# Présentation de la séquence de formulaires en plusieurs étapes {#introduction-to-multi-step-form-sequence}
 
 Les formulaires adaptatifs permettent aux auteurs de formulaires de créer un environnement de capture de données simple d’emploi en plusieurs étapes. Ce module s’accompagne d’une prise en charge intégrée pour la création de plusieurs panneaux et l’association de chacun d’eux à des schémas de navigation différents. Les auteurs de formulaires peuvent regrouper des champs de formulaire dans des sections logiques et représenter un groupe sous la forme d’un panneau. La navigation globale entre les panneaux est contrôlée à l’aide de la disposition des panneaux. Les auteurs peuvent réorganiser les panneaux selon différentes dispositions en les plaçant, par exemple, de manière séquentielle à l’aide de la disposition Assistant ou de manière ad hoc avec la disposition Onglets. Pour plus d’informations sur les dispositions de panneaux, voir [ Fonctionnalités de disposition des formulaires adaptatifs](/help/forms/using/layout-capabilities-adaptive-forms.md).
 
