@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: bc8c9aa2-f669-41f3-a526-6146ff5cf0cd
+feature: Mise à niveau
 translation-type: tm+mt
-source-git-commit: 7e74796c60ffa785b712d21b34a909f373587cd9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1888'
 ht-degree: 91%
 
 ---
@@ -72,7 +73,7 @@ Voici un exemple de rapport affichant un lot n’ayant pas été installé lors 
 
 Le fichier error.log doit être soigneusement passé en revue pendant et après le démarrage d’AEM à l’aide du jar de la version cible. Les avertissements ou les erreurs doivent être vérifiés. En général, il est conseillé de rechercher les problèmes au début du journal. Les erreurs qui surviennent par la suite dans le journal peuvent en réalité être des effets secondaires d’une cause principale signalée tôt au début du fichier. Si des erreurs et des avertissements s’affichent à plusieurs reprises, voir la section ci-dessous [Analyse des problèmes avec la mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-upgrade).
 
-### Vérification des lots OSGi  {#verify-osgi-bundles}
+### Vérification des lots OSGi {#verify-osgi-bundles}
 
 Accédez à la console OSGi `/system/console/bundles` et vérifiez si des lots ne sont pas démarrés. Si des lots sont installés, consultez le fichier `error.log` pour identifier le problème racine.
 
@@ -146,7 +147,7 @@ Si la migration est toujours en échec, vous pouvez déterminer la cause premiè
 
 Avant de lancer les étapes de préparation, assurez-vous d’abord de lancer l’instance **source** en l’exécutant avec la commande Java aem-quickstart.jar. Cela est nécessaire pour vous assurer que le fichier quickstart.properties est généré correctement. Autrement, la mise à niveau ne peut pas fonctionner. Vous pouvez également vérifier si le fichier est présent en regardant sous `crx-quickstart/conf` dans le dossier d’installation de l’instance source. En outre, le démarrage d’AEM pour lancer la mise à niveau doit être exécuté avec la commande Java -jar aem-quickstart.jar. Le lancement à partir d’un script de démarrage ne permettra pas de démarrer AEM en mode de mise à niveau.
 
-### Échec de la mise à jour des modules et des lots   {#packages-and-bundles-fail-to-update-}
+### Échec de la mise à jour des modules et des lots  {#packages-and-bundles-fail-to-update-}
 
 Si l’installation des modules échoue au cours de la mise à niveau, les lots qu’ils contiennent ne sont également pas mis à jour. Ce type d’erreur provient généralement d’une mauvaise configuration du magasin de données. Il apparaît sous la forme de messages nommés **ERROR** et **WARN** dans le journal error.log. Comme, dans la plupart des cas, la connexion par défaut ne fonctionne pas, vous pouvez utiliser CRXDE directement afin d’inspecter et de rechercher les problèmes de configuration.
 
