@@ -7,10 +7,11 @@ uuid: 215d09a6-949c-45ef-b2b0-88cd0cb4b99c
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9b78e2b-af7d-49d7-b37f-c96ec732015e
+feature: Communication interactive
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1697'
 ht-degree: 57%
 
 ---
@@ -55,7 +56,7 @@ Utilisez **FDM_Create_First_IC**, comme décrit dans la section [Créer un modè
 
 Le fragment de document contenant des informations de facturation comprend les champs suivants :
 
-| Field (Champ) | Source de données |
+| Champ | Source de données |
 |---|---|
 | N° de facture | Interface utilisateur de l’agent |
 | Période de facturation | Interface utilisateur de l’agent |
@@ -79,7 +80,7 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
    1. Saisissez **Invoicenumber** comme nom de la variable.
    1. Sélectionnez **Chaîne** comme type.
-   1. Appuyez sur **Créer**. 
+   1. Appuyez sur **Créer**.
 
    ![variable_create_string](assets/variable_create_string.png)
 
@@ -113,7 +114,7 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
 Le fragment de document contenant des informations personnalisées comprend les champs suivants :
 
-| Field (Champ) | Source de données |
+| Champ | Source de données |
 |---|---|
 | Nom du client | Modèle de données de formulaire |
 | Adresse | Modèle de données de formulaire |
@@ -140,7 +141,7 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
    1. Entrez **Fournit** comme nom de la variable.
    1. Sélectionnez **Chaîne** comme type.
-   1. Appuyez sur **Créer**. 
+   1. Appuyez sur **Créer**.
 
    Répétez les étapes 4 et 5 pour créer les variables suivantes :
 
@@ -176,7 +177,7 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
 Le fragment de document de synthèse des factures comprend les champs suivants :
 
-| Field (Champ) | Source de données |
+| Champ | Source de données |
 |---|---|
 | Solde précédent | Interface utilisateur de l’agent |
 | Paiements | Interface utilisateur de l’agent |
@@ -201,7 +202,7 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
    1. Entrez **Prééquilibre** comme nom de la variable.
    1. Sélectionnez **Numéro** comme type.
-   1. Appuyez sur **Créer**. 
+   1. Appuyez sur **Créer**.
 
    Répétez les étapes 4 et 5 pour créer les variables suivantes :
 
@@ -238,7 +239,7 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
 Le fragment Résumé du document des frais inclut les champs suivants :
 
-| Field (Champ) | Source de données |
+| Champ | Source de données |
 |---|---|
 | Frais d’appel | Modèle de données de formulaire |
 | Frais de conférence téléphonique | Modèle de données de formulaire |
