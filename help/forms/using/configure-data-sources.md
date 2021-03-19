@@ -7,10 +7,11 @@ uuid: 292217c2-8110-4232-a78b-edea212765d2
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
+feature: Modèle de données de formulaire
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1421'
 ht-degree: 64%
 
 ---
