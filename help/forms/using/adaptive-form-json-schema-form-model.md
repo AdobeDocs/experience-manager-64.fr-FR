@@ -7,10 +7,11 @@ uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1235'
 ht-degree: 80%
 
 ---
@@ -25,7 +26,7 @@ La création d’un formulaire adaptatif à l’aide d’un schéma JSON en tant
 * [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md)
 * [Schéma JSON](https://json-schema.org/)
 
-## Utilisation d’un schéma JSON comme modèle de formulaire   {#using-a-json-schema-as-form-model}
+## Utilisation d’un schéma JSON comme modèle de formulaire  {#using-a-json-schema-as-form-model}
 
 AEM Forms prend en charge la création d’un formulaire adaptatif en utilisant un schéma JSON existant en tant que modèle de formulaire. Ce schéma JSON représente la structure dans laquelle les données sont générées ou utilisées par le système principal de votre organisation. Le schéma JSON que vous utilisez doit être compatible avec les [spécifications v4](https://json-schema.org/draft-04/schema).
 
@@ -286,7 +287,7 @@ Vous trouverez ci-dessous un exemple de schéma JSON.
 }
 ```
 
-### Définitions de schéma réutilisables  {#reusable-schema-definitions}
+### Définitions de schéma réutilisables {#reusable-schema-definitions}
 
 Les touches de définition sont utilisées pour identifier les schémas réutilisables. Les définitions de schéma réutilisables sont utilisées pour créer des fragments. Il est semblable à l’identification des types complexes dans XSD. Un exemple de schéma JSON dont la définition est fournie ci-dessous :
 
