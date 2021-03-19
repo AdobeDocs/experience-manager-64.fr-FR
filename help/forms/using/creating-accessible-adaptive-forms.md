@@ -7,16 +7,17 @@ uuid: eceb3282-0b90-4e0a-8b89-137d27029747
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 96d9ad52-074b-4084-b818-abce79282776
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '926'
 ht-degree: 86%
 
 ---
 
 
-# Création de formulaires adaptatifs accessibles  {#creating-accessible-adaptive-forms}
+# Création de formulaires adaptatifs accessibles {#creating-accessible-adaptive-forms}
 
 ## Présentation {#introduction}
 
@@ -31,7 +32,7 @@ Lors de la création d’un formulaire adaptatif, l’auteur doit tenir compte d
 * Fournir un contraste de couleur suffisant
 * S’assurer que les commandes de formulaire sont accessibles à l’aide du clavier
 
-## Fournir des libellés appropriés pour les commandes de formulaire  {#provide-proper-labels-for-form-controls}
+## Fournir des libellés appropriés pour les commandes de formulaire {#provide-proper-labels-for-form-controls}
 
 Le libellé ou le titre d’un composant de formulaire identifie ce qu’il représente. Par exemple, le texte « Prénom » indique à l’utilisateur qu’il doit saisir son prénom dans une zone de texte. Pour être accessible sur des lecteurs d’écran, le libellé est associé, par programmation, à un composant de formulaire. La commande de formulaire peut également être assortie d’informations d’accessibilité supplémentaires.
 
