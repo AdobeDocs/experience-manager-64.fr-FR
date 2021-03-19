@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
+feature: Copie de la langue
 translation-type: tm+mt
-source-git-commit: ec8492b5190ea9006d80269aa97849a5ee3af95e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '618'
 ht-degree: 81%
 
 ---
@@ -43,7 +44,7 @@ La procédure suivante utilise l’interface utilisateur optimisée pour les éc
 1. Cliquez sur Créer.
 1. Dans la boîte de dialogue qui s’affiche, saisissez les valeurs des propriétés et cliquez sur OK.
 
-## Exemples de configurations du service cloud Microsoft Translator  {#sample-microsoft-translator-cloud-service-configurations}
+## Exemples de configurations du service cloud Microsoft Translator {#sample-microsoft-translator-cloud-service-configurations}
 
 Les configurations suivantes du service cloud Microsoft Translator sont installées avec les exemples de Geometrixx. Certains exemples de configuration utilisent un compte Microsoft Translation d&#39;évaluation qui permet de traduire gratuitement jusqu&#39;à 2 000 000 caractères par mois.
 
