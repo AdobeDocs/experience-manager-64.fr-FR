@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e975e026-e815-4445-be3e-b1237ed3f6b2
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -107,7 +108,7 @@ Auparavant, ce contenu de la communauté était répliqué de manière inversée
 
 À partir de AEM Communities 6.1, la nécessité de reproduire le CU a été éliminée en utilisant l&#39;enregistrement partagé pour le CU, comme indiqué ci-dessus.
 
-Bien que le contenu du site soit répliqué, UGC n’est jamais répliqué.
+Bien que le contenu du site soit répliqué, l’UGC n’est jamais répliqué.
 
 ### Gestion des données utilisateur {#managing-user-data}
 
