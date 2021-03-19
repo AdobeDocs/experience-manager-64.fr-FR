@@ -1,7 +1,7 @@
 ---
 title: Diffusion de contenu
 seo-title: Diffusion de contenu
-description: 'null'
+description: Diffusion de contenu
 seo-description: 'null'
 uuid: 1e7bea34-ca50-41ed-8295-fa182c27fa69
 contentOwner: User
@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 3d65cc6b-5721-472f-a805-588d50f3571b
 translation-type: tm+mt
-source-git-commit: 8cfe5ba1682bf67b26845a8b083c2fbe84af3637
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 3%
+source-wordcount: '971'
+ht-degree: 4%
 
 ---
 
@@ -113,7 +113,7 @@ Pour obtenir le binaire de l’image &quot;panier&quot;, la bibliothèque client
 
 Le contenu HTML est nécessaire pour les clients qui doivent conserver la disposition du contenu. Cela s&#39;avère utile pour les applications natives qui utilisent un conteneur Web (tel qu&#39;une vue Web Cordova), pour afficher le contenu.
 
-aem Content Services pourra fournir du contenu HTML à l’application mobile via l’API. Les clients qui souhaitent exposer AEM contenu au format HTML créent une entité de page HTML pointant vers la source de contenu AEM.
+AEM Content Services pourra fournir du contenu HTML à l’application mobile via l’API. Les clients qui souhaitent exposer AEM contenu au format HTML créent une entité de page HTML pointant vers la source de contenu AEM.
 
 Les options suivantes sont prises en compte :
 
