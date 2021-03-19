@@ -8,10 +8,11 @@ content-type: reference
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 601108d8-f432-4a6b-9ec9-831cf054e52f
+feature: Correspondence Management
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '4460'
+source-wordcount: '4462'
 ht-degree: 68%
 
 ---
@@ -33,7 +34,7 @@ Les scénarios suivants indiquent comment vous pouvez ajouter des propriétés/o
 
 En ajustant les propriétés, chemins et valeurs de ces scénarios, vous pouvez ajouter des propriétés et des onglets personnalisés à un jeu différent de ressources selon vos besoins.
 
-### Scénario : ajout d’un champ commun (propriété) à tous les types de ressources  {#scenario-adding-a-common-field-property-to-all-the-asset-types}
+### Scénario : ajout d’un champ commun (propriété) à tous les types de ressources {#scenario-adding-a-common-field-property-to-all-the-asset-types}
 
 Ce scénario vous indique comment ajouter une propriété personnalisée à tous les types de ressources (texte, liste, condition et fragments de disposition) et aux lettres. Ce scénario vous permet d’ajouter une propriété, Emplacement des destinataires, à toutes les ressources et lettres. L’emplacement de la propriété destinataire permet d’identifier la zone géographique de diffusion à laquelle un actif ou une lettre est pertinent.
 
