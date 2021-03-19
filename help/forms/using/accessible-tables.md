@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: e12b8e370badfa0eb0d549cff18dc2ef43226758
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '292'
 ht-degree: 82%
 
 ---
