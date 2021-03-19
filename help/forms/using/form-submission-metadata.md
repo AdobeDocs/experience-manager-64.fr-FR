@@ -7,16 +7,17 @@ uuid: b33ad1c8-d6c9-421d-8a3a-a29d17acfb18
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 93961c9c-b46c-4233-b070-7343245255d1
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '712'
 ht-degree: 88%
 
 ---
 
 
-# Ajout d’informations issues de données utilisateur aux métadonnées d’envoi de formulaire  {#adding-information-from-user-data-to-form-submission-metadata}
+# Ajout d’informations issues de données utilisateur aux métadonnées d’envoi de formulaire {#adding-information-from-user-data-to-form-submission-metadata}
 
 Vous pouvez utiliser des valeurs saisies dans un élément de votre formulaire pour calculer les champs de métadonnées d’un brouillon ou d’un envoi de formulaire. Les métadonnées vous permettent de filtrer le contenu en fonction des données utilisateur. Par exemple, un utilisateur entre John Doe dans le champ de nom du formulaire. Vous pouvez utiliser ces informations pour calculer les métadonnées pouvant classer cet envoi par catégorie sous les initiales JD.
 
@@ -26,7 +27,7 @@ Par exemple, une compagnie d’assurance maladie publie un formulaire. Dans ce f
 
 Prenons un autre exemple d’un formulaire qui capture l’ID d’adresse électronique et le numéro de téléphone. Lorsqu’un utilisateur visite ce formulaire de manière anonyme et abandonne le formulaire, l’auteur peut configurer le formulaire afin que l’ID d’adresse électronique et le numéro de téléphone soient automatiquement enregistrés. Ce formulaire est enregistré automatiquement et le numéro de téléphone et l’ID d’adresse électronique sont stockés dans le nœud de métadonnées du brouillon. Un cas illustrant cette configuration est le tableau de bord de gestion des prospects.
 
-## Ajout d’éléments de formulaire aux métadonnées  {#adding-form-elements-to-metadata}
+## Ajout d’éléments de formulaire aux métadonnées {#adding-form-elements-to-metadata}
 
 Pour ajouter un élément aux métadonnées, procédez comme suit :
 
