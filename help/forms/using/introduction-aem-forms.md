@@ -8,20 +8,21 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: a976a854-4bf2-49f8-871e-28bc597ac496
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '945'
 ht-degree: 99%
 
 ---
 
 
-# Présentation d’AEM Forms  {#introduction-to-aem-forms}
+# Présentation d’AEM Forms {#introduction-to-aem-forms}
 
 Pour en savoir plus sur les nouvelles fonctions et améliorations d’AEM Forms, voir [Les nouveautés d’AEM Forms](/help/forms/using/whats-new.md).
 
-## A propos d’AEM Forms  {#about-aem-forms}
+## A propos d’AEM Forms {#about-aem-forms}
 
 Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gérer, publier et mettre à jour des formulaires numériques complexes tout en s’intégrant aux processus principaux, aux règles métier et aux données.
 
