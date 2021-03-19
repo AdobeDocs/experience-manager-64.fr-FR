@@ -7,10 +7,11 @@ uuid: 2f976de3-2cdf-4bbb-acd1-048a498930f0
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '702'
 ht-degree: 87%
 
 ---
@@ -227,7 +228,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
  </tbody>
 </table>
 
-### Validations  {#validations}
+### Validations {#validations}
 
 Le tableau suivant capture la manière dont les validations XFA sont associées aux validations dans les formulaires adaptatifs.   
 
