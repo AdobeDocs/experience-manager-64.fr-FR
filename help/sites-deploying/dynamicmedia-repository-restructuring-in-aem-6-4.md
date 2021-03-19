@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
+feature: Mise à niveau
 translation-type: tm+mt
-source-git-commit: 5dce4bcf4b10cce65798fd142a3eeb1956caf726
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '441'
 ht-degree: 68%
 
 ---
@@ -29,7 +30,7 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.4]
 * [Dynamic Media - Configuration du service cloud YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
 * [Divers](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#misc)
 
-## Avant de procéder à la mise à niveau vers la version 6.5  {#prior-to-upgrade}
+## Avant de procéder à la mise à niveau vers la version 6.5 {#prior-to-upgrade}
 
 ### Configurations de codage de vidéo adaptative personnalisées {#custom-adaptive-video-encoding-configurations}
 
