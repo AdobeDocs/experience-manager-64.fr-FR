@@ -2,10 +2,12 @@
 title: Publication de dossiers sur Brand Portal
 description: Découvrez comment publier des dossiers ou en annuler la publication sur Brand Portal.
 contentOwner: VG
+feature: Brand Portal
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '575'
 ht-degree: 58%
 
 ---
