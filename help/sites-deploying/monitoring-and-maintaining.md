@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '5889'
+source-wordcount: '5890'
 ht-degree: 82%
 
 ---
@@ -64,7 +65,7 @@ Une sauvegarde complète est souvent effectuée à intervalles réguliers (par e
 >
 >Pour plus d’informations sur les performances de sauvegarde, consultez la section [Performance de sauvegarde](/help/sites-deploying/configuring-performance.md#backup-performance).
 
-### Prise en charge de votre installation logicielle  {#backing-up-your-software-installation}
+### Prise en charge de votre installation logicielle {#backing-up-your-software-installation}
 
 Après l’installation de votre configuration ou des modifications importantes au sein de celle-ci, effectuez une sauvegarde de votre installation logicielle. 
 
@@ -740,7 +741,7 @@ Des tests doivent être effectués pour déterminer le nombre d’utilisations s
 
 ### Utilisation de rlog.jar pour trouver des demandes avec de longues durées  {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-aem comprend divers outils d&#39;assistance situés dans :\
+AEM comprend divers outils d&#39;assistance situés dans :\
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 L’un de ces outils, `rlog.jar` , , peut être utilisé pour trier rapidement `request.log` de sorte que les demandes soient affichées selon la durée, c’est-à-dire de la plus longue à la plus courte.
