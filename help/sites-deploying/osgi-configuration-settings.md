@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: 6ac5f288de51e39bccd080123ba9e094406263f8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3806'
 ht-degree: 60%
 
 ---
@@ -44,13 +45,13 @@ Les paramètres de configuration OSGi suivants (répertoriés selon le lot) sont
 >
 >D’autres lots peuvent être nécessaires pour des zones spécifiques de fonctionnalité dans AEM. Dans ce cas, les informations de configuration figurent sur la page liée à la fonctionnalité en question.
 
-**aem Événement de réplication** ListenerConfigurer :
+**AEM Événement de réplication** ListenerConfigurer :
 
 * **Exécuter les modes**, dans lesquels les événements de réplication seront distribués aux auditeurs. Par exemple, s’il est défini comme auteur, il s’agit du système qui &quot;lance&quot; la réplication.
 
 * Le mode d&#39;exécution **publish** doit être ajouté si le code du projet traite les événements de réplication (réplication inverse) dans un environnement de publication. Par exemple, lorsque le répartiteur est utilisé pour vider de l’environnement de publication ou lorsque la réplication standard vers d’autres instances de publication se produit.
 
-**aem Repository change** listenerConfigure :
+**AEM Repository change** listenerConfigure :
 
 * Les **Chemins**, emplacements où écouter les événements de référentiel prêts à être distribués.
 
@@ -365,7 +366,7 @@ Différentes propriétés de configuration sont disponibles :
 * **La carte utilisateur** Pour les utilisateurs sélectionnés, le nom d’utilisateur extrait de la requête HTTP peut être remplacé par un nom différent dans l’objet des informations d’authentification. Le mappage est défini ici. Si le nom d’utilisateur 
 `admin` s’affiche de chaque côté de la carte, le mappage est ignoré. N’oubliez pas que le caractère « = » doit être précédé de « \ ».
 
-* **Format** indique le format dans lequel l’identifiant utilisateur est fourni. Utilisation:
+* **Format** indique le format dans lequel l’identifiant utilisateur est fourni. Utilisez:
 
    * `Basic` si l’identifiant utilisateur est codé au format d’authentification HTTP de base. 
    * `AsIs` si l’identifiant utilisateur est fourni en texte brut ou si une valeur appliquée d’expression régulière doit être utilisée telle quelle ou une expression régulière
