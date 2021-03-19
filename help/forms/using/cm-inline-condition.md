@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: interactive-communications, correspondence-management
 discoiquuid: f376b8c1-e176-4fe6-b298-f3d493c59319
+feature: Correspondence Management
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1717'
 ht-degree: 90%
 
 ---
 
 
-# Condition intégrée et répétition dans les communications interactives et les lettres  {#inline-condition-and-repeat-in-interactive-communications-and-letters}
+# Condition intégrée et répétition dans les communications interactives et les lettres {#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
 La condition intégrée et la répétition dans les communications interactives et les lettres permettent de créer des communications hautement contextuelles et parfaitement structurées.
 
@@ -33,7 +34,7 @@ Pour en savoir plus, voir:
 * [Présentation de Correspondence Management](/help/forms/using/cm-overview.md)
 * [Texte dans les communications interactives](/help/forms/using/texts-interactive-communications.md)
 
-### Exemple : utilisation de règles pour conditionner le texte intégré dans la communication interactive  {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
+### Exemple : utilisation de règles pour conditionner le texte intégré dans la communication interactive {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
 
 Pour conditionner une phrase, un paragraphe ou une chaîne de texte dans une communication interactive, vous pouvez créer une règle dans le fragment de document texte approprié. L’exemple suivant utilise une règle pour afficher un numéro sans frais uniquement pour les destinataires des États-Unis de la communication interactive.
 
@@ -213,7 +214,7 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
    >
    >Vous pouvez insérer la condition et la répétition uniquement lors de la création ou de la modification du module de texte approprié. Lors de la prévisualisation de la lettre, bien que vous puissiez apporter des modifications au module de texte, vous ne pouvez pas insérer une condition ou une répétition.
 
-## Utilisation de la condition intégrée et de la répétition : plusieurs cas d’utilisation   {#using-inline-condition-and-repeat-some-use-cases}
+## Utilisation de la condition intégrée et de la répétition : plusieurs cas d’utilisation  {#using-inline-condition-and-repeat-some-use-cases}
 
 ### Répétition dans la condition {#repeat-within-condition}
 
