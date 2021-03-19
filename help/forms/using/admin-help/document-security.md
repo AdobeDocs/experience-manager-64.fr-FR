@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 46847c9f-c66d-46fa-8ff5-a99d2462c099
+feature: Document Security
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2548'
 ht-degree: 99%
 
 ---
@@ -60,7 +61,7 @@ Etapes représentées dans le schéma :
 1. Le destinataire du document ouvre le document dans l’application cliente voulue. Le destinataire peut utiliser le document conformément à sa stratégie.
 1. Le propriétaire du document, le coordinateur de jeux de stratégies ou l’administrateur peut suivre les documents et modifier l’accès à ces derniers à l’aide des pages Web.
 
-## À propos des utilisateurs de Document Security  {#about-document-security-users}
+## À propos des utilisateurs de Document Security {#about-document-security-users}
 
 Divers types d’utilisateurs recourent à Document Security pour accomplir différentes tâches :
 
