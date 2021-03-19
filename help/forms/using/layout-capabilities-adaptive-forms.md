@@ -7,20 +7,21 @@ uuid: 7df2d234-e2e3-432a-9720-e73296424302
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 10bf1d44-9660-44d9-b2c3-dd9a252efc3a
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1174'
 ht-degree: 71%
 
 ---
 
 
-# Fonctionnalités de disposition des formulaires adaptatifs  {#layout-capabilities-of-adaptive-forms}
+# Fonctionnalités de disposition des formulaires adaptatifs {#layout-capabilities-of-adaptive-forms}
 
 Adobe Experience Manager (AEM) vous permet de créer des formulaires adaptatifs simples d’emploi qui offrent des expériences dynamiques aux utilisateurs finaux. La disposition détermine l’affichage des ressources et composants sur un formulaire adaptatif.
 
-## Connaissances préalables  {#prerequisite-knowledge}
+## Connaissances préalables {#prerequisite-knowledge}
 
 Avant de découvrir les différentes fonctionnalités de disposition des formulaires adaptatifs, consultez les articles suivants pour en savoir plus sur les formulaires de ce type.
 
