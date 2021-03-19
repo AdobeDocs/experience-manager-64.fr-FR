@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
+feature: Gestionnaire de plusieurs sites
 translation-type: tm+mt
-source-git-commit: 9710c9931b4f17073c712f5869a1843c1d99ee8e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1533'
 ht-degree: 63%
 
 ---
@@ -127,7 +128,7 @@ MSM peut aider à la création de sites web multilingues de deux façons :
 
 Pour plus d’informations, voir [Traduction du contenu des sites multilingues](/help/sites-administering/translation.md) et [Meilleures pratiques de traduction](/help/sites-administering/tc-bp.md).
 
-## Modifications de structure et déploiements  {#structure-changes-and-rollouts}
+## Modifications de structure et déploiements {#structure-changes-and-rollouts}
 
 Les modifications apportées à la structure du contenu dans un plan directeur/une arborescence source sont répercutées différemment dans une Live Copy. Cela dépend du type de modification :
 
