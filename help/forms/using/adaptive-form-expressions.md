@@ -7,10 +7,11 @@ uuid: 4f33c10f-e862-4113-9d5a-67e6208e1e66
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9f3ba207-b5a3-43a2-b59c-0d74d62c03fc
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2759'
+source-wordcount: '2761'
 ht-degree: 77%
 
 ---
@@ -22,7 +23,7 @@ Les formulaires adaptatifs facilitent et optimisent le remplissage des formulair
 
 JavaScript est le langage d’expression utilisé pour les formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)
 
-## Recommandations relatives à l’écriture d’expressions  {#best-practices-for-writing-expressions}
+## Recommandations relatives à l’écriture d’expressions {#best-practices-for-writing-expressions}
 
 * Lors de l’écriture d’expressions, pour accéder aux champs et aux panneaux, vous pouvez utiliser le nom du champ ou du panneau. Pour accéder à la valeur d’un champ, utilisez la propriété de la valeur. Par exemple, `field1.value`
 * Utilisez des noms uniques pour l’ensemble des champs et des panneaux du formulaire. Vous éviterez ainsi les conflits possibles créés à cause des noms de champs lors de l’écriture d’expressions.
