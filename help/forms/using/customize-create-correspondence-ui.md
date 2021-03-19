@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 3efd8f5a-9f38-4d9b-88d6-d8fde6c9a644
+feature: Correspondence Management
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1108'
 ht-degree: 67%
 
 ---
@@ -48,7 +49,7 @@ La branche /apps (structure de dossiers) :
 
 * Garantit que vos fichiers sont sûrs en cas de mise à jour du système. En cas de mise à niveau, de feature pack ou de correctif logiciel, la branche /libs est mise à jour et si vous hébergez vos modifications dans la branche /libs, elles sont remplacées.
 * Vous aide à ne pas toucher au système/à la branche actuels, que vous pouvez ébranler par erreur si vous utilisez les emplacements par défaut pour enregistrer les fichiers personnalisés.
-* Aide vos ressources pour obtenir une priorité plus élevée si AEM recherche des ressources. aem est configuré pour rechercher d&#39;abord la branche /apps, puis la branche /libs pour trouver une ressource. Ce mécanisme signifie que le système utilise votre recouvrement (et les personnalisations qui y sont définies).
+* Aide vos ressources pour obtenir une priorité plus élevée si AEM recherche des ressources. AEM est configuré pour rechercher d&#39;abord la branche /apps, puis la branche /libs pour trouver une ressource. Ce mécanisme signifie que le système utilise votre recouvrement (et les personnalisations qui y sont définies).
 
 Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans la branche /apps :
 
@@ -147,7 +148,7 @@ Suivez les étapes ci-dessous pour télécharger le fichier du logo personnalis�
 
 1. Cliquez sur **Enregistrer tout**.
 
-## Créer le CSS pour intégrer le logo à l&#39;interface utilisateur  {#createcss}
+## Créer le CSS pour intégrer le logo à l&#39;interface utilisateur {#createcss}
 
 L&#39;image de logo nécessite une feuille de style supplémentaire à charger dans le contexte du contenu.
 
