@@ -6,11 +6,12 @@ seo-description: 'Installez et configurez les communications interactives AEM Fo
 uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
 topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 75%
+source-wordcount: '1421'
+ht-degree: 77%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 75%
 
 ## Présentation {#introduction}
 
-aem Form a la capacité de centraliser la création, l&#39;assemblage, la gestion et la diffusion de documents sécurisés et interactifs tels que les correspondances d&#39;entreprise, les documents, les relevés, les avis d&#39;avantages, les courriels marketing, les factures et les kits de bienvenue. Cette fonctionnalité est appelée communication interactive. Cette fonctionnalité est incluse dans le package du module complémentaire AEM Forms. Le package du module complémentaire est déployé sur une instance de création ou de publication d’AEM.
+AEM Form a la capacité de centraliser la création, l&#39;assemblage, la gestion et la diffusion de documents sécurisés et interactifs tels que les correspondances d&#39;entreprise, les documents, les relevés, les avis d&#39;avantages, les courriels marketing, les factures et les kits de bienvenue. Cette fonctionnalité est appelée communication interactive. Cette fonctionnalité est incluse dans le package du module complémentaire AEM Forms. Le package du module complémentaire est déployé sur une instance de création ou de publication d’AEM.
 
 Vous pouvez utiliser la fonctionnalité de communication interactive pour produire une communication dans plusieurs formats, par exemple, Web et PDF. Vous pouvez intégrer la communication interactive au processus AEM pour traiter et fournir la communication assemblée aux clients sur le canal de leur choix. Par exemple, l’envoi d’une communication à l’utilisateur final par email.
 
@@ -88,13 +89,13 @@ Avant de commencer à installer et à configurer les fonctionnalités interactiv
 
 Le package du module complémentaire AEM Forms est une application déployée sur AEM. Le package contient des fonctionnalités de communication interactive AEM Forms, de gestion de la correspondance et d’autres fonctionnalités. Suivez les étapes ci-après pour installer le package du module complémentaire :
 
-1. Ouvrez [Distribution de logiciels](https://experience.adobe.com/fr/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
-1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** dans le menu d’en-tête.
+1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l&#39;option **[!UICONTROL Rechercher les téléchargements]** pour filtrer les résultats.
 1. Appuyez sur le nom du package correspondant à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur final]**, puis appuyez sur **[!UICONTROL Télécharger]**.
-1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
 1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
    Vous pouvez également télécharger le package via le lien direct répertorié dans l&#39;article [AEM Forms versions](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
