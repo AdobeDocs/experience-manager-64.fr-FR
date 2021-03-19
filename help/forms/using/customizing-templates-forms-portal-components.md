@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 842d3a5a-8e09-4a21-b9a2-a8f4f5b699bd
+feature: Portail Formulaires
 translation-type: tm+mt
-source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1249'
 ht-degree: 73%
 
 ---
 
 
-# Personnalisation de modèles pour les composants Forms Portal  {#customizing-templates-for-forms-portal-components}
+# Personnalisation de modèles pour les composants Forms Portal {#customizing-templates-for-forms-portal-components}
 
 ## Conditions préalables {#prerequisites}
 
@@ -33,7 +34,7 @@ Forms Portal permet d’utiliser des métadonnées personnalisées dans les list
 
 Pour créer un modèle personnalisé pour divers composants de Forms Portal, suivez la procédure ci-après.
 
-## Création d’un modèle personnalisé  {#creating-a-nbsp-custom-template}
+## Création d’un modèle personnalisé {#creating-a-nbsp-custom-template}
 
 1. Créez un noeud sling:Folder sous */apps *
 
@@ -147,7 +148,7 @@ Prise en charge de la localisation et du tri et utilisation des propriétés de 
 
 1. Pour l’option de suppression dans la section Brouillons sous le composant Brouillons et envois, appelez la classe CSS &quot;__FP_deleteDraft&quot;. En outre, incluez l’attribut &quot;draftID&quot; avec la valeur **${draftID}**, qui est l’ID de brouillon du brouillon correspondant.
 
-1. Lors de la création de liens pour ouvrir des brouillons et des envois, vous pouvez spécifier **$path.html** comme valeur de l&#39;attribut **href** pour la balise d&#39;ancrage.
+1. Lors de la création de liens pour ouvrir des brouillons et des envois, vous pouvez spécifier **$path.html** comme valeur de l’attribut **href** pour la balise d’ancrage.
 
 ![Nœud Drafts and Submission](assets/raw-image-with-index.png)
 
