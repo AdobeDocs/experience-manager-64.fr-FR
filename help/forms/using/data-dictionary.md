@@ -7,10 +7,11 @@ uuid: cc976dff-f243-4807-a92c-81b78476a744
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
+feature: Correspondence Management
 translation-type: tm+mt
-source-git-commit: 48ea1c456e6f43fb5b348aa65f2380ee0b72a3f1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3866'
+source-wordcount: '3868'
 ht-degree: 88%
 
 ---
@@ -37,7 +38,7 @@ En règle générale, les utilisateurs professionnels n’ont pas besoin de conn
 1. Il peut télécharger le fichier XML de données d’exemple, qui repose sur le schéma d’un dictionnaire de données. L’auteur peut modifier le fichier XML de données d’exemple, qui peut être associé en tant que données de test au dictionnaire de données. Le même nœud est utilisé pendant l’aperçu de la lettre.
 1. Durant [l’aperçu d’une lettre](/help/forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), un auteur choisit de prévisualiser la lettre avec des données (Aperçu personnalisé). La lettre s’ouvre préremplie avec les données que l’auteur a fournies. Elle s’ouvre dans l’interface de création de correspondance. L’agent qui prévisualise cette lettre peut modifier le contenu, les données, les pièces jointes de la lettre et envoyer la lettre finale. Pour plus d’informations sur la création de lettres, voir[ Création de correspondance](/help/forms/using/create-letter.md).
 
-## Condition requise {#prerequisite}
+## Prérequis {#prerequisite}
 
 Installez le [package de compatibilité](https://helpx.adobe.com/fr/in/experience-manager/6-4/forms/using/compatibility-package.html) pour vue l&#39;option **dictionnaires de données** sur la page **Forms**.
 
@@ -110,7 +111,7 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
    >Une suppression d’un élément composite ou de collection avec des nœuds enfant supprime également les nœuds enfant.
 
 1. (Facultatif) Sélectionnez un élément dans le volet Structure du dictionnaire de données et dans le volet Liste des champs et des variables. Modifiez ou ajoutez n’importe quels attributs requis associés à l’élément.
-1. Appuyez sur **Save** (Enregistrer).
+1. Appuyez sur **Enregistrer**.
 
 ### Créer des copies d’un ou de plusieurs dictionnaires de données {#create-copies-of-one-or-more-data-dictionary}
 
@@ -207,7 +208,7 @@ Au cours de la modification ou de l’affichage d’un dictionnaire de données,
 
 Les exemples de code suivants illustrent les détails d’implémentation pour le Dictionnaire de données.
 
-### Exemple de schéma pouvant être chargé dans le Dictionnaire de données  {#sample-schema-that-can-be-uploaded-to-the-data-dictionary}
+### Exemple de schéma pouvant être chargé dans le Dictionnaire de données {#sample-schema-that-can-be-uploaded-to-the-data-dictionary}
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
