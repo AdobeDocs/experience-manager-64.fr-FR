@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: 949ec23eb548a094425622d68e1dbf4f6ec7581f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '2994'
 ht-degree: 86%
 
 ---
@@ -74,7 +75,7 @@ Les options de déploiement disponibles pour l’AEM (faites défiler jusqu’à
    <td><p>Analyses</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Communautés</p> </td> 
+   <td><p>Communities</p> </td> 
    <td><p>Author-CS </p> </td> 
    <td><p>Red Hat </p> </td> 
    <td><p>WebSphere</p> </td> 
@@ -242,7 +243,7 @@ Les options de déploiement disponibles pour l’AEM (faites défiler jusqu’à
    <td><p> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>Appli de bureau </p> </td> 
+   <td><p>Appli de bureau  </p> </td> 
    <td><p> </p> </td> 
    <td><p> </p> </td> 
    <td><p> </p> </td> 
@@ -262,7 +263,7 @@ Les options de déploiement disponibles pour l’AEM (faites défiler jusqu’à
 >
 >Les directives de performance s’appliquent principalement à AEM Sites.
 
-## Quand utiliser les conseils de performance ?  {#when-to-use-the-performance-guidelines}
+## Quand utiliser les conseils de performance ? {#when-to-use-the-performance-guidelines}
 
 Utilisez les conseils de performance dans les situations suivantes :
 
