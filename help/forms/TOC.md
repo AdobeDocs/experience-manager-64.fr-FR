@@ -7,13 +7,16 @@ audience: end-user
 user-guide-title: Guide de Forms Adobe Experience Manager 6.4
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
+feature-set: Experience Manager Forms
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: e7603d481720b368c6976674205bb523ac0df3d0
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '3730'
+source-wordcount: '3732'
 ht-degree: 75%
 
 ---
+
 
 # Guide de Forms Adobe Experience Manager 6.4 {#forms}
 
@@ -66,9 +69,9 @@ ht-degree: 75%
       + [Installation et déploiement d’AEM Forms on JEE à l’aide de JBoss clé en main](http://www.adobe.com/go/learn_aemforms_installTurnkey_64_fr)
       + [Installation et configuration du serveur AEM Forms Document Security](using/installing-and-configuring-the-document-security-server.md)
       + [Préparation à l’installation d’AEM Forms (serveur unique)](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_fr)
-      + [Installation et déploiement d’Adobe Experience Manager Forms on JEE pour JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64_fr)
-      + [Installation et déploiement d’AEM Forms on JEE pour WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_fr)
-      + [Installation et déploiement d’Adobe Experience Manager Forms on JEE pour WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_fr)
+      + [Installation et déploiement d’Adobe Experience Manager Forms on JEE pour JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64)
+      + [Installation et déploiement d’AEM Forms on JEE pour WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64)
+      + [Installation et déploiement d’Adobe Experience Manager Forms on JEE pour WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64)
       + [Installation de AEM Forms Workbench](http://help.adobe.com/fr/AEMForms/6.1/InstallWorkbench/index.html)
       + [Installation et configuration de Designer](using/installing-configuring-designer.md)
       + [Préparation à l’installation d’AEM Forms (grappe de serveurs)](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64_fr)
@@ -145,7 +148,7 @@ ht-degree: 75%
    + [Création de formulaires adaptatifs accessibles](using/creating-accessible-adaptive-forms.md)
    + [Création de formulaires avec des sections répétables](using/creating-forms-repeatable-sections.md)
    + [Incorporation d’un formulaire adaptatif ou d’une communication interactive dans une page des sites AEM](using/embed-adaptive-form-aem-sites.md)
-   + [Incorporation d’un formulaire adaptatif dans une page Web externe](using/embed-adaptive-form-external-web-page.md)
+   + [Incorporation d’un formulaire adaptatif dans une page web externe](using/embed-adaptive-form-external-web-page.md)
    + [Styles intégrés des composants de formulaire adaptatif](using/inline-style-adaptive-forms.md)
    + [Présentation de la séquence de formulaires en plusieurs étapes](using/introduction-form-sequence.md)
    + [Fonctionnalités de disposition des formulaires adaptatifs](using/layout-capabilities-adaptive-forms.md)
