@@ -1,5 +1,5 @@
 ---
-title: 'Aperçu '
+title: eCommerce
 seo-title: eCommerce
 description: 'AEM eCommerce aide les spécialistes du marketing à offrir des expériences d’achat personnalisées sur le web, les appareils mobiles et les médias sociaux. '
 seo-description: 'AEM eCommerce aide les spécialistes du marketing à offrir des expériences d’achat personnalisées sur le web, les appareils mobiles et les médias sociaux. '
@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
+feature: Commerce Integration Framework
 translation-type: tm+mt
-source-git-commit: eb1ae2b4910e7adef48865996db4837175f588d9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '779'
 ht-degree: 79%
 
 ---
@@ -122,11 +123,11 @@ AEM eCommerce fournit ce qui suit :
    * Historique des commandes exhaustif
    * Mise à jour rapide du catalogue
 
-## Structure  {#the-framework}
+## Structure {#the-framework}
 
 La section [Concepts](/help/sites-administering/concepts.md) couvre la structure plus en détail. Vous trouverez ci-dessous un aperçu de la structure :
 
-### Quoi ?  {#what}
+### Quoi ? {#what}
 
 * La structure d’intégration fournit l’API, une série de composants illustrant les fonctionnalités et différentes extensions pour fournir des exemples de méthodes de connexion.
 * La structure fournit la structure de base nécessaire à la mise en œuvre d’un projet.
