@@ -9,16 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
+feature: Copie de la langue
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3431'
 ht-degree: 86%
 
 ---
 
 
-# Gestion de projets de traduction{#managing-translation-projects}
+# Gestion des projets de traduction{#managing-translation-projects}
 
 Après avoir préparé le contenu à traduire, vous devez compléter la structure de langue en créant des copies de langue manquantes et créer des projets de traduction.
 
@@ -57,7 +58,7 @@ Par exemple, la racine de la langue /content/geometrixx/fr est créée pour la t
 * Un projet de traduction est créé pour la page /content/geometrixx/en/products et toutes les pages enfants, ciblant la copie de langue française. La copie de langue n’incluant pas la page /content/geometrixx/fr/products, AEM copie immédiatement la page /content/geometrixx/fr/products et toutes les pages enfants dans la copie de langue française. Les copies sont également incluses dans le projet de traduction.
 * Un projet de traduction est créé pour la page /content/geometrixx/fr et toutes les pages enfants, en ciblant la copie en français. Dans la mesure où la copie de langue inclut la page qui correspond à la page /content/geometrixx/fr (la racine de la langue), AEM copie la page /content/geometrixx/fr et toutes les pages enfants et les ajoute à un lancement. Les copies sont également incluses dans le projet de traduction.
 
-## Création de projets de traduction à l’aide du panneau Références  {#creating-translation-projects-using-the-references-panel}
+## Création de projets de traduction à l’aide du panneau Références {#creating-translation-projects-using-the-references-panel}
 
 Créez des projets de traduction afin de pouvoir exécuter et gérer le processus pour traduire les ressources de votre gabarit de langue. Lorsque vous créez des projets, vous spécifiez la page du gabarit de langue que vous traduisez et les copies de langue pour lesquelles vous effectuez la traduction :
 
