@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2014'
 ht-degree: 73%
 
 ---
@@ -86,7 +87,7 @@ Pour mettre à jour une configuration avec la console web :
 
    * Ouvrant la console web à partir du lien du menu **Outil -> Opérations**. Après vous être connecté à la console, vous pouvez utiliser le menu déroulant de :
 
-      **les lots OSGi >**
+      **OSGi >**
 
    * L&#39;URL directe ; par exemple :
 
@@ -157,7 +158,7 @@ La console web n’indique pas à quel emplacement les modifications ont été e
 
 1. Vous pouvez maintenant créer un module de contenu comportant ce nœud et l’utiliser comme requis dans vos autres instances.
 
-## Configuration OSGi dans le référentiel  {#osgi-configuration-in-the-repository}
+## Configuration OSGi dans le référentiel {#osgi-configuration-in-the-repository}
 
 Outre l’utilisation de la console web, vous pouvez également définir des détails de la configuration dans le référentiel. Vous pouvez ainsi configurer facilement les différents modes d’exécution.
 
@@ -255,7 +256,7 @@ Pour ajouter la nouvelle configuration au référentiel :
 
 >[!CAUTION]
 >
->Vous ne devez rien modifier dans le chemin `/libs`.
+>Vous ne devez rien modifier dans le chemin `/libs`. 
 
 >[!CAUTION]
 >
