@@ -1,7 +1,7 @@
 ---
 title: Test des applications mobiles
 seo-title: Test des applications mobiles
-description: 'null'
+description: Test des applications mobiles
 seo-description: 'null'
 uuid: 3b402d34-5cab-4280-b8b9-88ad9f8fc5e4
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 translation-type: tm+mt
-source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1029'
 ht-degree: 2%
 
 ---
