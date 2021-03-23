@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: ce24fdb79fe7636951490ea01967787fa28d712e
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3586'
 ht-degree: 65%
 
 ---
@@ -1039,7 +1039,7 @@ L&#39;exemple `_cq_dialog/.content.xml` utilisé dans cet exemple :
 >
 >Les boîtes de dialogue classiques de l’éditeur de modèle de l’IU classique continuent de fonctionner avec celui de l’IU standard tactile.
 >
->AEM possède un [outil de conversion de boîte de dialogue](/help/sites-developing/dialog-conversion.md) pour mettre à niveau vos boîtes de dialogue de l’IU classique vers des boîtes de dialogue de l’IU tactile. Une fois la conversion terminée, vous devez apporter quelques améliorations manuelles à la boîte de dialogue pour certains cas.
+>AEM dispose d&#39;[outils de modernisation](/help/sites-developing/modernization-tools.md) si vous souhaitez mettre à niveau vos boîtes de dialogue d&#39;étape classiques de l&#39;interface utilisateur vers des boîtes de dialogue standard. Une fois la conversion terminée, vous devez apporter quelques améliorations manuelles à la boîte de dialogue pour certains cas.
 >
 >* Dans les cas où une boîte de dialogue mise à niveau est vide, vous pouvez consulter les boîtes de dialogue de `/libs` qui offrent des fonctionnalités similaires à des exemples de comment fournir une solution. Par exemple :
    >
