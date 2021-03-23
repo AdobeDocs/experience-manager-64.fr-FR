@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
 workflow-type: tm+mt
 source-wordcount: '2844'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 80%
 | Version | 6.4 |
 | Type | Version majeure |
 | Date de disponibilité générale | 4 avril 2018 |
-| Mises à jour recommandées | Voir [AEM versions et mises à jour](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html) |
+| Mises à jour recommandées | Consultez les [versions et mises à jour d’AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr) |
 
 ### Trivia {#trivia}
 
@@ -41,7 +41,7 @@ Adobe Experience Manager 6.4 est disponible depuis le 4 avril 2018.
 
 ## Nouveautés {#what-s-new}
 
-Adobe Experience Manager 6.4 est une mise à niveau de la base de code d’Adobe Experience Manager 6.3. Cette version comporte de nouvelles fonctionnalités améliorées, des correctifs clés de bogues signalés par des clients, des améliorations prioritaires demandées par les clients et des correctifs de bogues généraux destinés à améliorer la stabilité du produit. Elle comprend également la majorité des packs de fonctionnalités, correctifs et Service Pack de Adobe Experience Manager 6.3.
+Adobe Experience Manager 6.4 est une mise à niveau de la base de code d’Adobe Experience Manager 6.3. Cette version comporte de nouvelles fonctionnalités améliorées, des correctifs clés de bugs signalés par des clients, des améliorations prioritaires demandées par les clients et des correctifs de bugs généraux destinés à améliorer la stabilité du produit. Elle comprend également la majorité des packs de fonctionnalités, correctifs et Service Pack de Adobe Experience Manager 6.3.
 
 La liste ci-dessous fournit un aperçu, tandis que les pages suivantes liste tous les détails.
 
@@ -95,7 +95,7 @@ Pour plus d’informations, voir la [page de documentation](/help/sites-deployin
 * Une nouvelle [vue d&#39;ensemble du système](/help/sites-administering/operations-dashboard.md#system-overview) fournit une vue d&#39;instantané sur l&#39;état et les activités de tous les systèmes liés aux performances.
 * Un nouvel ensemble de [contrôles de l’intégrité](/help/sites-administering/operations-dashboard.md#health-checks) concernant l’indexation, les requêtes et la maintenance.
 
-#### Projets et workflows  {#projects-and-workflows}
+#### Projets et workflows {#projects-and-workflows}
 
 * Un nouvel [éditeur de processus pour créer et modifier les modèles de workflows](/help/sites-developing/workflows-models.md).
 
@@ -196,7 +196,7 @@ Pour plus d’informations sur cette fonctionnalité, les conditions préalables
 
 **Application de bureau AEM**
 
-aem application de bureau a été mise à jour vers la version 1.8, ce qui est compatible avec AEM 6.4. La liste complète des modifications pour l&#39;application de bureau est fournie dans un document [de mise à jour de l&#39;application de bureau ](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html) dédié.
+AEM application de bureau a été mise à jour vers la version 1.8, ce qui est compatible avec AEM 6.4. La liste complète des modifications pour l&#39;application de bureau est fournie dans un document [de mise à jour de l&#39;application de bureau ](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/release-notes.html) dédié.
 
 Les améliorations introduites depuis la version 6.3 d’AEM incluent la possibilité de télécharger les fichiers hiérarchiques en arrière-plan, une nouvelle interface utilisateur pour contrôler les tâches associées aux actifs en arrière-plan, l’optimisation de la mise en cache, de la mise en réseau et de la connexion réseau, ainsi que des améliorations de stabilité. La documentation comprend également un [guide de meilleures pratiques](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html).
 
@@ -307,7 +307,7 @@ Ce processus de hiérarchisation a généré plus de 500 modifications axées s
    * [Italien](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
    * [Français](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
-* [Outil de conversion de boîte de dialogue](/help/sites-developing/dialog-conversion.md) pour faire migrer les composants de l’interface utilisateur classique vers Coral 3
+* [AEM ](/help/sites-developing/modernization-tools.md) Outils de modernisation pour migrer les composants de l’interface utilisateur classique vers Coral 3
 
 **Ressources**
 
@@ -317,7 +317,7 @@ Ce processus de hiérarchisation a généré plus de 500 modifications axées s
 
 * Module pour ajouter la prise en charge étendue des images RAW ([plus d’infos](/help/assets/camera-raw.md))
 
-**Formulaires**
+**Forms**
 
 * Packages des fonctionnalités d’AEM Forms :
 
@@ -336,7 +336,7 @@ L’interface utilisateur est disponible dans les langues suivantes :
 * Français
 * Espagnol
 * Italien
-* Brésilien Portugais
+* Portugais brésilien
 * Japonais
 * Chinois simplifié
 * Chinois traditionnel (prise en charge limitée)
