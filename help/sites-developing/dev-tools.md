@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 translation-type: tm+mt
-source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 73%
@@ -38,7 +38,7 @@ Adobe a sorti les extensions suivantes :
 * [Extension AEM Brackets](/help/sites-developing/aem-brackets.md)
 * [Extension AEM IntelliJ (de Headwire)](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf)
 
-### Autres outils  {#other-tools}
+### Autres outils {#other-tools}
 
 AEM est livré avec d’autres outils qui facilitent le développement :
 
@@ -50,7 +50,7 @@ AEM est livré avec d’autres outils qui facilitent le développement :
 * [Développement de projets AEM à l’aide de IntelliJ IDEA](/help/sites-developing/ht-intellij.md)
 * [Utilisation de l’outil VLT](/help/sites-developing/ht-vlttool.md)
 * [Utilisation de l’outil de serveur proxy](/help/sites-developing/ht-proxy-server.md)
-* [Outil de conversion de boîte de dialogue](/help/sites-developing/dialog-conversion.md)
+* [Outils de modernisation d’AEM](/help/sites-developing/modernization-tools.md)
 * [Outil AEM Repo](/help/sites-developing/aem-repo-tool.md)
 
 Outils facilitant la création de projets :
@@ -62,4 +62,3 @@ Outils facilitant la création de projets :
 >
 >Le didacticiel suivant peut être intéressant pour le démarrage d’un nouveau projet AEM :\
 >[Prise en main de AEM Sites Partie 1 - Configuration du projet](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
-
