@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 655c576f-d6e3-40a5-ab1f-6382a0c7443c
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: 6d07c570ce596871daa246a20c238432e4f8e67a
+source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
 workflow-type: tm+mt
 source-wordcount: '3525'
-ht-degree: 87%
+ht-degree: 93%
 
 ---
 
@@ -57,13 +57,13 @@ En fonction du composant que vous souhaitez implémenter, il est possible d’é
 
 Lors de l’extension ou de la personnalisation d’un composant ou d’une boîte de dialogue, vous pouvez copier ou répliquer la totalité de la structure ou seulement la structure nécessaire pour la boîte de dialogue avant d’apporter vos modifications.
 
-### Extension d’un composant existant  {#extending-an-existing-component}
+### Extension d’un composant existant {#extending-an-existing-component}
 
 L’extension d’un composant existant peut être réalisée grâce à la [hiérarchie des types de ressource](/help/sites-developing/components-basics.md#component-hierarchy-and-inheritance) et aux mécanismes d’héritage associés.
 
 >[!NOTE]
 >
->Les composants peuvent également être redéfinis avec une superposition basée sur la logique du chemin de recherche. Cependant, dans ce cas, la fusion de ressources [Sling](/help/sites-developing/sling-resource-merger.md) ne sera pas déclenchée et `/apps` doit définir l&#39;ensemble de l&#39;incrustation.
+>Il est également possible de redéfinir les composants avec une superposition en fonction de la logique du chemin de recherche. Cependant, dans ce cas, le [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) n’est pas déclenché et `/apps` doit définir la superposition en entier.
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ Le mécanisme permettant de séparer la logique de l’aspect aide à définir c
 
 ### Utilisation de Java  {#using-java}
 
-[L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée.](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) Cela permet d’utiliser le code Java pour implémenter la logique de sélection et de configuration du contenu du composant.
+[L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée.](https://helpx.adobe.com/fr/experience-manager/htl/using/use-api-java.html) Cela permet d’utiliser le code Java pour implémenter la logique de sélection et de configuration du contenu du composant.
 
 ### Utilisation de JavaScript  {#using-javascript}
 
@@ -119,7 +119,7 @@ La [configuration du comportement de modification d’un composant](/help/sites-
 
 ## Configuration du comportement de prévisualisation {#configuring-the-preview-behavior}
 
-Le cookie [WCM Mode ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html)est défini lors du passage en mode **Aperçu** même lorsque la page n’est pas rafraîchie.
+Le cookie [WCM Mode ](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html)est défini lors du passage en mode Aperçu même lorsque la page n’est pas rafraîchie.****
 
 Pour les composants dont le rendu est sensible au mode WCM, ils doivent être définis de manière à s’actualiser eux-mêmes, puis s’appuyer sur la valeur du cookie.
 
@@ -187,7 +187,7 @@ newComponent (cq:Component)
 
 La personnalisation d’une boîte de dialogue est similaire au développement d’un composant dans la mesure où la boîte de dialogue est elle-même un composant (c’est-à-dire un balisage rendu par un script de composant avec le comportement/style fourni par une bibliothèque cliente).
 
-Pour consulter des exemples, reportez-vous à :
+Pour consulter des exemples, voir :
 
 * `/libs/foundation/components/text/cq:dialog`
 * `/libs/foundation/components/download/cq:dialog`
@@ -252,7 +252,7 @@ Selon vos besoins, vous pouvez :
 * Étendre un champ de l’IU Granite par héritage de composant ( `sling:resourceSuperType`)
 * Étendre un widget à partir de la bibliothèque de widgets sous-jacente (dans le cas de l’IU Granite, il s’agit de l’IU Coral), en suivant l’API de la bibliothèque de widgets (héritage JS/CSS)
 
-#### Accès aux champs de boîte de dialogue  {#access-to-dialog-fields}
+#### Accès aux champs de boîte de dialogue {#access-to-dialog-fields}
 
 Vous pouvez également utiliser les conditions de rendu (`rendercondition`) pour contrôler qui a accès à des onglets/champs spécifiques dans votre boîte de dialogue. Par exemple :
 
@@ -291,11 +291,11 @@ La structure du contenu décrit la structure sémantique ; elle ne devrait (doi
 
 #### Détection de la disponibilité de la boîte de dialogue {#dialog-ready}
 
-Si vous disposez d’un script JavaScript personnalisé qui doit être exécuté uniquement lorsque la boîte de dialogue est disponible et prête, vous devez écouter le événement `dialog-ready`.
+Si vous utilisez un script JavaScript personnalisé qui doit être exécuté uniquement lorsque la boîte de dialogue est disponible et prête, vous devez écouter l’événement `dialog-ready`.
 
-Ce événement est déclenché chaque fois que la boîte de dialogue se charge (ou se recharge) et est prêt à l’emploi, ce qui signifie chaque fois qu’il y a une modification (création/mise à jour) dans le DOM de la boîte de dialogue.
+Ce événement est déclenché chaque fois que la boîte de dialogue se charge (ou se recharge) et est prête à l’emploi, soit chaque fois qu’une modification (création ou mise à jour) a lieu dans le DOM de la boîte de dialogue.
 
-`dialog-ready` peut être utilisé pour associer du code personnalisé JavaScript qui effectue des personnalisations sur les champs d’une boîte de dialogue ou de tâches similaires.
+`dialog-ready` peut être utilisé pour associer du code personnalisé JavaScript qui effectue des personnalisations dans les champs d’une boîte de dialogue ou pour des tâches similaires.
 
 ### Validation de champ {#field-validation}
 
@@ -314,9 +314,9 @@ Pour consulter un exemple, reportez-vous à la section :
 
 #### Validation de champ (IU Granite)  {#field-validation-granite-ui}
 
-La validation du champ dans l’IU Granite et les composants de l’IU Granite (équivalent aux widgets) est effectuée à l’aide de l’API `foundation-validation`. [Consultez la documentation  `foundation-valdiation` Granite pour plus de détails.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
+La validation du champ dans l’IU Granite et les composants de l’IU Granite (équivalent aux widgets) est effectuée à l’aide de l’API `foundation-validation`. [Voir la `foundation-valdiation`documentation de Granite pour plus de détails.](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
 
-Pour consulter des exemples, reportez-vous à :
+Pour consulter des exemples, voir :
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield/js/validations.js`
 
@@ -471,10 +471,10 @@ Lors de la migration d’un composant de l’IU classique vers un composant pouv
 * Boîtes de dialogue
 
    * Vous devrez créer une boîte de dialogue à utiliser dans l’IU tactile. Pour des raisons de compatibilité, l’IU tactile peut utiliser la définition d’une boîte de dialogue d’IU classique, si aucune boîte de dialogue n’a été définie pour l’IU tactile.
-   * L’[outil de conversion de boîte de dialogue](/help/sites-developing/dialog-conversion.md) permet d’étendre les composants existants.
+   * Les [AEM outils de modernisation](/help/sites-developing/modernization-tools.md) sont fournis pour vous aider à étendre les composants existants.
    * Le [mappage d’ExtJS aux composants de l’IU Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fournit une présentation pratique des xtypes ExtJS et des types de nœud avec les types de ressources équivalents dans l’IU Granite.
    * Pour plus d’informations sur la personnalisation des champs, reportez-vous à la session AEM Gems sur la [personnalisation des champs de boîte de dialogue](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
-   * Migration de vtypes vers la [validation dans l’IU Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
+   * Migration de vtypes vers la [validation dans l’IU Granite](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
    * À l’aide d’écouteurs JS. Pour plus d’informations, voir [Gestion des événements de champ](#handling-field-events) et la session AEM Gems sur la [personnalisation des champs de boîte de dialogue](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
 ### Migration du code cq:listener  {#migrating-cq-listener-code}
@@ -499,8 +499,8 @@ if (Granite.author) {
 
 Pour les développeurs, il est préférable d’accéder facilement à la documentation des composants afin de pouvoir comprendre rapidement :
 
-* Description
-* leur utilisation prévue ;
+* sa description ;
+* son utilisation prévue ;
 * la structure de contenu et les propriétés ;
 * les API exposées et les points d’extension.
 * etc.
@@ -511,4 +511,4 @@ Il suffit de placer un fichier `README.md` dans la structure du composant. Ce Ma
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-Le balisage pris en charge est identique à celui des fragments de contenu [](/help/assets/content-fragments-markdown.md).
+Le MarkDown pris en charge est le même que pour les [fragments de contenu](/help/assets/content-fragments-markdown.md).
