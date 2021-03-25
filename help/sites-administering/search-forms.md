@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: ea5b226756711489aaf316022adb746d7f1be696
 workflow-type: tm+mt
-source-wordcount: '2062'
-ht-degree: 79%
+source-wordcount: '2044'
+ht-degree: 77%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 79%
 
 Utilisez des **formulaires de recherche** pour personnaliser la sélection des prédicats de recherche utilisés dans les panneaux de recherche disponibles dans différents panneaux ou consoles AEM de l’environnement de création. La personnalisation de ces panneaux permet d’adapter la fonctionnalité de recherche à vos besoins.
 
-Une [plage de prédicats](#predicates-and-their-settings) prête à l’emploi est disponible. Vous pouvez ajouter plusieurs prédicats, dont (entre autres) le prédicat Texte intégral pour les recherches en texte intégral, le prédicat Propriété pour rechercher des ressources correspondant à une propriété unique que vous avez spécifiée ou le prédicat Options pour rechercher des ressources correspondant à une ou plusieurs valeurs que vous spécifiez pour une propriété donnée.
+Une [plage de prédicats](#predicates-and-their-settings) prête à l’emploi est disponible. Vous pouvez ajouter plusieurs prédicats, y compris (entre autres) le prédicat Propriété pour rechercher des ressources qui correspondent à une propriété unique que vous avez définie, ou le prédicat Options pour rechercher des ressources qui correspondent à une ou plusieurs valeurs que vous spécifiez pour une propriété particulière.
 
 Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-forms) utilisés dans différentes consoles et l’explorateur des ressources (lors de la modification des pages). Les [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) sont accessibles en sélectionnant :
 
@@ -136,7 +136,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Date    </td> 
+   <td>Date </td> 
    <td>Recherche de fichiers à l’aide de curseurs basée sur une propriété de date.</td> 
    <td> 
     <ul> 
@@ -146,7 +146,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Date    Plage </td> 
+   <td>Date Plage </td> 
    <td>Rechercher des ressources créées dans une plage spécifiée pour une propriété de date. Dans le panneau Rechercher, vous pouvez spécifier des dates de début et de fin.</td> 
    <td> 
     <ul> 
@@ -180,18 +180,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Texte intégral </td> 
-   <td>Prédicat de recherche pour les recherches en texte intégral..</td> 
-   <td> 
-    <ul> 
-     <li>Libellé du champ</li> 
-     <li>Espace réservé</li> 
-     <li>Nom de la propriété</li> 
-     <li>Description</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Masqué   Filtrer</td> 
+   <td>Masqué Filtrer</td> 
    <td>Filtrez selon la propriété et la valeur, invisible pour l’utilisateur.</td> 
    <td> 
     <ul> 
@@ -201,7 +190,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Options  </td> 
+   <td>Options </td> 
    <td><p>Les options sont des nœuds de contenu créés par l’utilisateur.</p> <p>Pour plus d’informations, voir <a href="#addinganoptionspredicate">Ajout d’un prédicat Options</a>.</p> </td> 
    <td> 
     <ul> 
@@ -210,11 +199,11 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
      <li>Nom de la propriété*</li> 
      <li>Sélection simple</li> 
      <li>Chemin d’accès aux options</li> 
-     <li>Description</li> 
+     <li>sa description ;</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Options, propriété </td> 
+   <td>Propriété des options </td> 
    <td>Recherchez une propriété de l’option.</td> 
    <td> 
     <ul> 
@@ -226,7 +215,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Page   État </td> 
+   <td>Page État </td> 
    <td>Rechercher des pages en fonction de leur état.</td> 
    <td> 
     <ul> 
@@ -237,7 +226,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Chemin    </td> 
+   <td>Chemin </td> 
    <td>Recherche de fichiers situés sous un chemin d’accès spécifique.</td> 
    <td> 
     <ul> 
@@ -272,7 +261,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Plage Options  </td> 
+   <td>Plage Options </td> 
    <td>Prédicat de recherche spécifique pour les ressources et identique à Prédicat de curseur commun. Il reste disponible en raison de problèmes de rétrocompatibilité.</td> 
    <td> 
     <ul> 
@@ -434,7 +423,7 @@ Libellés des cases à cocher Publication et Live Copy pour le prédicat spéci
 Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs paramètres :
 
 1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
-1. Si vous souhaitez ajouter un nouveau champ, ouvrez l’onglet **Sélectionner le prédicat** et faites glisser le prédicat souhaité vers l’emplacement souhaité. Par exemple, le **prédicat de plage de dates** :
+1. Si vous souhaitez ajouter un nouveau champ, ouvrez l’onglet **Sélectionner le prédicat** et faites glisser le prédicat souhaité vers l’emplacement souhaité. Par exemple, le **prédicat de période** :
 
    ![chlimage_1-375](assets/chlimage_1-375.png)
 
@@ -447,7 +436,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
    * Vous souhaitiez ou non mettre à jour un prédicat existant :
 
       Sélectionnez le champ de prédicat (à droite), puis ouvrez l’onglet **Paramètres**.
-   Par exemple, les paramètres du **prédicat de plage de dates** :
+   Par exemple, les paramètres du **prédicat de période** :
 
    ![chlimage_1-376](assets/chlimage_1-376.png)
 
@@ -465,7 +454,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
 1. **Fermez** l’aperçu pour terminer la configuration.
 
-### Suppression d’un champ de prédicat    {#deleting-a-predicate-field}
+### Suppression d’un champ de prédicat {#deleting-a-predicate-field}
 
 1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
 1. Sélectionnez le champ de prédicat (à droite), ouvrez l’onglet **Paramètres**, puis sélectionnez l’icône **Supprimer** (dans le coin inférieur gauche).
@@ -486,13 +475,13 @@ Une fois que vous avez personnalisé une configuration, cette option remplace le
 
 Les configurations personnalisées doivent être supprimées à partir de la console :
 
-1. Sélectionnez une configuration (par exemple, **Éditeur de page (Recherche sur des paragraphes)**), puis cliquez sur l’icône **Supprimer** de la barre d’outils :
+1. Sélectionnez une configuration (par exemple, **Éditeur de page (Recherche de paragraphes)**), puis cliquez sur l’icône **Supprimer** de la barre d’outils :
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
 1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (le symbole de cadenas réapparaît dans la console).
 
-### Ajout de prédicats d’options    {#adding-options-predicates}
+### Ajout de prédicats d’options  {#adding-options-predicates}
 
 Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils servent généralement à rechercher un élément directement sous la page, par exemple, une propriété sur le nœud de page.
 
