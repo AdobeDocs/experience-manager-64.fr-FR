@@ -2,10 +2,12 @@
 title: Utiliser des profils de métadonnées pour appliquer des métadonnées par défaut à tous les fichiers d’un dossier
 description: Découvrez les profils de métadonnées pour les ressources. Apprenez à créer un profil de métadonnées et à l’appliquer aux ressources d’un dossier.
 contentOwner: AG
+feature: 'Métadonnées  '
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: af1955ab1fdcf16dd9a9d3ad36336e6c1aac9312
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1236'
 ht-degree: 64%
 
 ---
@@ -153,6 +155,6 @@ Pour supprimer un profil de métadonnées des dossiers via l’interface utilisa
 
 1. Appuyez sur le logo AEM, puis accédez à **[!UICONTROL Ressources]** et au dossier duquel vous souhaitez supprimer un profil de métadonnées.
 1. Dans le dossier, appuyez sur la coche pour le sélectionner, puis sur **[!UICONTROL Propriétés]**.
-1. Sélectionnez l’onglet **[!UICONTROL Profils de métadonnées]**, puis **[!UICONTROL Aucun]** dans le menu déroulant. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
+1. Sélectionnez l’onglet **[!UICONTROL Profils de métadonnées]**, puis **[!UICONTROL Aucun]** dans le menu déroulant. Appuyez sur **[!UICONTROL Enregistrer]**.
 
 Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
