@@ -2,10 +2,12 @@
 title: Intégration de AEM Assets avec Adobe InDesign Server
 description: Découvrez comment intégrer AEM Assets à InDesign Server.
 contentOwner: AG
+feature: Publication
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 13d33d0474d2a29226747aa77bf0bc0a51142209
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1704'
 ht-degree: 64%
 
 ---
@@ -75,7 +77,7 @@ L’InDesign Server peut être intégré à AEM Assets de sorte que les fichiers
    * Le texte et les fichiers extraits sont stockés dans AEM Assets.
    * Tous les rendus sont stockés dans des AEM Assets, dans la ressource même.
 
-## Intégration d’InDesign Server à AEM    {#integrating-the-indesign-server-with-aem}
+## Intégration d’InDesign Server à AEM   {#integrating-the-indesign-server-with-aem}
 
 Pour intégrer InDesign Server afin de l’utiliser avec AEM Assets, après la configuration de votre proxy, vous devez :
 
