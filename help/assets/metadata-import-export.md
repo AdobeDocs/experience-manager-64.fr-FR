@@ -2,11 +2,13 @@
 title: Importation et exportation de métadonnées en masse
 description: Cet article explique comment importer et exporter des métadonnées en masse.
 contentOwner: AG
+feature: 'Métadonnées  '
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 254a9dec248255f8f76db3531c65b54fb4ebff0c
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 75%
+source-wordcount: '645'
+ht-degree: 77%
 
 ---
 
@@ -15,7 +17,7 @@ ht-degree: 75%
 
 AEM Assets permet d’importer des métadonnées de ressources par lot à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour par lot pour les ressources récemment transférées ou les ressources existantes en important un fichier CSV. Vous pouvez également assimiler des métadonnées de ressources par lot à partir d’un système tiers au format CSV.
 
-## Importation de métadonnées   {#import-metadata}
+## Importation de métadonnées {#import-metadata}
 
 L’importation de métadonnées est asynchrone et ne nuit pas aux performances du système. La mise à jour simultanée des métadonnées pour plusieurs ressources peut être gourmande en ressources en raison de l’activité d’écriture différée XMP si l’indicateur de workflow est coché. Planifiez une telle importation lors d’une utilisation allégée du serveur afin d’éviter un impact sur les performances des autres utilisateurs.
 
@@ -55,7 +57,7 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées par lot
 * Test ou contrôle des métadonnées pour la conformité.
 * Externalisation des métadonnées pour une localisation distincte.
 
-Vous pouvez exporter des métadonnées pour plusieurs fichiers au format CSV. Les métadonnées sont exportées de manière asynchrone et n’ont aucun impact sur les performances du système. Pour exporter des métadonnées, AEM parcourt les propriétés du nœud de ressource `jcr:content/metadata` et de ses nœuds enfants et exporte les propriétés de métadonnées dans un fichier CSV.
+Vous pouvez exporter des métadonnées pour plusieurs ressources au format CSV. Les métadonnées sont exportées de manière asynchrone et n’ont aucun impact sur les performances du système. Pour exporter des métadonnées, AEM parcourt les propriétés du nœud de ressource `jcr:content/metadata` et de ses nœuds enfants et exporte les propriétés de métadonnées dans un fichier CSV.
 
 Pour exporter en bloc des métadonnées de plusieurs fichiers, procédez comme suit :
 
