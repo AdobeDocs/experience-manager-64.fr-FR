@@ -2,10 +2,12 @@
 title: Traiter les ressources pour exécuter des processus d’entreprise, effectuer des audits, assurer la conformité et préserver les fondamentaux de la santé mentale
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des workflows.
 contentOwner: AG
+feature: Workflow,Rendus
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 73d440198028bfa6b47e9fde13f3a354a1b8445f
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1052'
 ht-degree: 28%
 
 ---
@@ -37,7 +39,7 @@ Utilisez les workflows dans les ressources numériques pour activer les ressourc
 
 >[!NOTE]
 >
->Si un processus disponible dans l’interface utilisateur classique n’est pas disponible dans l’interface utilisateur tactile, par exemple [!UICONTROL Demande d’activation] et [!UICONTROL Demande de désactivation], voir [créer des modèles de processus](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui).
+>Si un processus disponible dans l’interface utilisateur classique n’est pas disponible dans l’interface utilisateur tactile, comme [!UICONTROL Demande d’activation] et [!UICONTROL Demande de désactivation], voir [créer des modèles de flux de travaux](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui).
 
 ## Application d’un workflow à une ressource AEM {#apply-a-workflow-to-an-aem-asset}
 
