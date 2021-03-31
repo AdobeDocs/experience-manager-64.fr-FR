@@ -2,22 +2,24 @@
 title: Meilleures pratiques relatives au format de fichier des ressources
 description: Meilleures pratiques relatives à la prise en charge des fichiers dans AEM Assets.
 contentOwner: AG
+feature: Gestion des ressources,Outils de développement
+role: Administrator
 translation-type: tm+mt
-source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 92%
+source-wordcount: '438'
+ht-degree: 91%
 
 ---
 
 
-# Meilleures pratiques relatives au format de fichier des ressources  {#assets-file-format-best-practices}
+# Meilleures pratiques relatives au format de fichier des ressources {#assets-file-format-best-practices}
 
 AEM Assets prend en charge de nombreuses bibliothèques de formats de fichiers propriétaires et tierces pour gérer les divers besoins des utilisateurs en matière de prise en charge des fichiers. Les bibliothèques Adobe prises en charge comprennent Adobe Camera Raw, Gibson, Adobe PDF Rasterizer et Adobe InDesign Server. En outre, AEM Assets prend en charge les bibliothèques tierces, y compris ImageMagick, TwelveMonkeys, etc.
 
 Pour les formats de fichiers pris en charge, voir [Formats pris en charge par AEM Assets](assets-formats.md).
 
-## Bibliothèque Adobe Camera Raw  {#adobe-camera-raw-library}
+## Bibliothèque Adobe Camera Raw {#adobe-camera-raw-library}
 
 Pour des performances optimales, Adobe recommande d’utiliser la bibliothèque Adobe Camera Raw pour :
 
