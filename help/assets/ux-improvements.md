@@ -2,24 +2,26 @@
 title: Améliorations de l’expérience utilisateur dans Assets
 description: Cet article décrit les améliorations de l’expérience utilisateur dans AEM 6.4 Assets.
 contentOwner: AG
+feature: Informations sur la version
+role: Leader, Professionnel
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '651'
 ht-degree: 73%
 
 ---
 
 
-# Améliorations de l’expérience utilisateur dans Assets  {#user-experience-enhancements-in-assets}
+# Améliorations de l’expérience utilisateur dans Assets {#user-experience-enhancements-in-assets}
 
-aem 6.4 Ressources comprend plusieurs améliorations de convivialité qui offrent une expérience utilisateur transparente et améliorent la productivité. L’augmentation de la vitesse à laquelle vous pouvez créer/gérer votre contenu marketing accroît la vélocité du contenu de l’entreprise.
+AEM 6.4 Ressources comprend plusieurs améliorations de convivialité qui offrent une expérience utilisateur transparente et améliorent la productivité. L’augmentation de la vitesse à laquelle vous pouvez créer/gérer votre contenu marketing accroît la vélocité du contenu de l’entreprise.
 
 L’interface est plus réactive, ce qui vous permet de gérer efficacement un large portefeuille de ressources. Vous pouvez rapidement rechercher, afficher, trier et faire défiler en toute fluidité une longue liste d’éléments.
 
 Vous pouvez personnaliser les différents modes : Carte, Liste et Colonnes. Par exemple, vous pouvez configurer la taille des miniatures que vous souhaitez afficher dans la vue Carte. Pour le mode Liste, vous pouvez configurer le niveau de détail que vous voulez afficher pour les ressources dans la liste. AEM 6.4 Assets comprend une nouvelle arborescence qui permet de parcourir le référentiel des ressources et de rechercher vos ressources.
 
-## Chargement différé  {#lazy-loading}
+## Chargement différé {#lazy-loading}
 
 Lorsque vous parcourez/recherchez des ressources dans AEM 6.4 Assets, jusqu’à 200 ressources sont affichées à la fois. Vous pouvez faire défiler les résultats plus rapidement, ce qui est particulièrement utile si vous naviguez dans une longue liste de résultats. Puisqu’un nombre considérable de ressources sont chargées à la fois, la navigation est fluide.
 
