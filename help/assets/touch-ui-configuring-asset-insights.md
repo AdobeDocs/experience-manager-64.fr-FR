@@ -2,16 +2,18 @@
 title: Configuration des statistiques sur les ressources
 description: Découvrez comment configurer les statistiques sur les ressources dans AEM Assets.
 contentOwner: AG
+feature: Statistiques sur les ressources,Rapports sur les ressources
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 97%
+source-wordcount: '244'
+ht-degree: 95%
 
 ---
 
 
-# Configuration des statistiques sur les ressources  {#configuring-asset-insights}
+# Configuration des statistiques sur les ressources {#configuring-asset-insights}
 
 Adobe Experience Manager (AEM) Assets récupère les données d’utilisation des ressources AEM utilisées par les sites web tiers à partir d’Adobe Analytics. Pour permettre à la fonction Statistiques sur les ressources de récupérer ces données et de générer des informations, commencez par la configurer afin qu’elle s’intègre à Adobe Analytics.
 
