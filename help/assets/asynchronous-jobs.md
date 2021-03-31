@@ -2,10 +2,12 @@
 title: Configurez des opérations asynchrones dans  [!DNL Adobe Experience Manager].
 description: Exécutez de manière asynchrone certaines tâches gourmandes en ressources pour optimiser les performances dans  [!DNL Experience Manager Assets].
 contentOwner: AG
+feature: Gestion des ressources
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: f6aa1ab2c7a0ddeda1504e95ce4bd57fe74a65fd
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '632'
 ht-degree: 18%
 
 ---
@@ -27,7 +29,7 @@ Vous pouvez vue l’état des tâches asynchrones à partir de la page **[!UICON
 
 ## Contrôler l&#39;état des opérations asynchrones {#monitoring-the-status-of-asynchronous-operations}
 
-Chaque fois que [!DNL Assets] traite une opération de manière asynchrone, vous recevez une notification dans votre [!DNL Experience Manager] [boîte de réception](/help/sites-authoring/inbox.md) et par courriel. Pour afficher l’état des opérations asynchrones en détail, accédez à la page **[!UICONTROL État des tâches asynchrones]**.
+Chaque fois que [!DNL Assets] traite une opération de manière asynchrone, vous recevez une notification dans votre [!DNL Experience Manager] [boîte de réception](/help/sites-authoring/inbox.md) et par courrier électronique. Pour afficher l’état des opérations asynchrones en détail, accédez à la page **[!UICONTROL État des tâches asynchrones]**.
 
 1. Dans l&#39;interface [!DNL Experience Manager], cliquez sur **[!UICONTROL Opérations]** > **[!UICONTROL Tâches]**.
 
