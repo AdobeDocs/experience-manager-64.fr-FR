@@ -2,11 +2,13 @@
 title: Bonnes pratiques d’intégration d’AEM et de Creative Cloud
 description: Meilleures pratiques pour intégrer un déploiement AEM à Adobe Creative Cloud afin de rationaliser les workflows de transfert d’actifs et d’optimiser l’efficacité
 contentOwner: AG
+feature: Collaboration,Lien de ressources d’Adobe,Application de bureau Experience Manager
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '3572'
-ht-degree: 84%
+source-wordcount: '3583'
+ht-degree: 85%
 
 ---
 
@@ -113,7 +115,7 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 
 * Voir [meilleures pratiques relatives aux applications de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
 * Voir [Intégration Adobe Stock](aem-assets-adobe-stock.md)
-* Voir [Lien d’actif d’Adobe](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+* Voir la section [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
 Il s’agit d’un bref résumé des meilleures pratiques en matière d’intégration des Experience Manager et des Creative Cloud. Lisez la suite de ce document pour obtenir une description détaillée des points suivants.
 
@@ -200,7 +202,7 @@ Dans ce cas, vous pouvez tirer parti de l’intégration AEM/Creative Cloud pou
 
 Utilisez les stratégies suivantes pour fournir un accès aux ressources finales/approuvées :
 
-* Pour donner accès à un grand nombre de ressources : Utilisez [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=en) ou l&#39;implémentation de [Asset Share](assets-finder-editor.md) par le client sur AEM infrastructure de publication
+* Pour donner accès à un grand nombre de ressources : Utilisez [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=fr) ou l&#39;implémentation de [Asset Share](assets-finder-editor.md) par le client sur AEM infrastructure de publication
 
 * Pour donner accès à quelques ressources : Le partage de dossiers AEM avec Adobe Creative Cloud peut être utilisé en plus de AEM Assets Brand Portal ou de Asset Share. Veuillez noter que certaines limitations liées à cette intégration sont décrites plus en détail dans cet article.
 
