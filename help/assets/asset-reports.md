@@ -2,10 +2,12 @@
 title: Rapports sur l’utilisation et le partage de vos ressources numériques.
 description: Des rapports sur vos ressources dans  [!DNL Adobe Experience Manager Assets]  vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
+feature: Rapports de ressources,Gestion des ressources
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 6faa69ee1d38ad16add95263c53f18ea0a413fd2
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1068'
 ht-degree: 89%
 
 ---
@@ -23,7 +25,7 @@ L’interface de gestion de rapports est intuitive et inclut des options et des 
 
 Si un rapport est généré, vous êtes averti par un courrier électronique (facultatif) et une notification dans la boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
 
-## Condition requise {#prerequisite-for-reporting}
+## Prérequis {#prerequisite-for-reporting}
 
 Pour générer des rapports, veillez à ce que :
 
@@ -112,7 +114,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    Cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils pour télécharger le rapport au format CSV.
 
-## Ajout de colonnes personnalisées  {#add-custom-columns}
+## Ajout de colonnes personnalisées {#add-custom-columns}
 
 Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour afficher davantage de données en fonction de vos besoins :
 
