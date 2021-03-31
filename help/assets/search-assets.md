@@ -2,16 +2,18 @@
 title: Recherche de ressources dans AEM
 description: Découvrez comment rechercher les ressources souhaitées dans AEM à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 contentOwner: AG
+feature: Rechercher,Métadonnées
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '556'
 ht-degree: 88%
 
 ---
 
 
-# Recherche de ressources dans AEM  {#search-assets-in-aem}
+# Recherche de ressources dans AEM {#search-assets-in-aem}
 
 Découvrez comment rechercher les ressources souhaitées dans AEM à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 
