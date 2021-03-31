@@ -2,10 +2,12 @@
 title: Guide de réglage des performances des ressources
 description: Traite principalement de la configuration d’AEM, ainsi que des modifications du matériel, des logiciels et des composants réseau pour supprimer les goulets d’étranglement et optimiser la performance d’AEM Assets.
 contentOwner: AG
+feature: Gestion des ressources
+role: Architecte, Administrateur
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '3206'
+source-wordcount: '3210'
 ht-degree: 84%
 
 ---
@@ -27,7 +29,7 @@ Voici quelques éléments principaux essentiels pour lesquels vous devez identif
 
 Bien qu’AEM soit pris en charge sur plusieurs plates-formes, Adobe a trouvé le meilleur moyen de prendre en charge les outils natifs sous Linux et Windows, ce qui contribue à offrir des performances optimales et à faciliter l’implémentation. Dans l’idéal, vous devez déployer un système d’exploitation 64 bits pour répondre aux besoins de stockage du déploiement AEM Assets. A l’instar de tout déploiement AEM, vous devez mettre en œuvre TarMK dans la mesure du possible. Bien que TarMK ne puisse pas mesurer au-delà d’une instance d’auteur simple, il semble offrir de meilleurs résultats que MongoMK. Vous pouvez ajouter des instances de déchargement TarMK pour améliorer la capacité de traitement des workflows de votre déploiement d’AEM Assets.
 
-### Dossier temp     {#temp-folder}
+### Dossier temp    {#temp-folder}
 
 Afin de réduire les délais de chargement des ressources, utilisez un stockage haute performance pour le répertoire temporaire Java. Sous Linux et Windows, un disque SSD ou RAM peut être utilisé. Dans des environnements cloud, un type de stockage à grande vitesse équivalent peut être utilisé. Par exemple, dans Amazon EC2, un lecteur [éphémère](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) peut être utilisé pour le dossier temporaire.
 
@@ -157,7 +159,7 @@ Par défaut, AEM exécute un nombre maximal de tâches parallèles qui est égal
 
 Configurer une file d’attente à la moitié des processeurs disponibles est une solution exploitable pour commencer. Cependant, vous pouvez être amené à augmenter ou à réduire ce nombre pour atteindre un débit maximal et l’ajuster selon l’environnement. Il existe des files d’attente distinctes pour les workflows transitoires et non transitoires, ainsi que d’autres processus, tels que les workflows externes. Si plusieurs files d’attente configurées à 50 % des processeurs sont activées simultanément, le système peut devenir rapidement surchargé. Les files d’attente utilisées varient considérablement selon les différentes implémentations de l’utilisateur. Par conséquent, vous devrez peut-être les configurer de manière réfléchie pour un maximum d’efficacité sans sacrifier la stabilité des serveurs.
 
-### Déchargement  {#offloading}
+### Déchargement {#offloading}
 
 Pour un volume élevé de workflows ou de workflows gourmands en ressources, tels que le transcodage vidéo, vous pouvez décharger les workflows de mise à jour des actifs de gestion des actifs numériques vers une deuxième instance d’auteur. Un problème récurrent avec le déchargement est que tout chargement enregistré via le déchargement du traitement des workflows est compensé par le coût de la réplication du contenu dans les deux sens entre les instances.
 
@@ -419,4 +421,4 @@ Afin de réduire au maximum la latence et d’obtenir un débit élevé grâce �
 * Optimiser la configuration de l&#39;index Lucene.
 * Optimisez les index avec les derniers Service Pack et correctifs. Vérifiez auprès du service à la clientèle Adobe si d’autres optimisations d’index sont disponibles.
 * Utilisez `guessTotal` pour optimiser les performances des requêtes.
-* Si vous configurez AEM pour détecter les types de fichiers à partir du contenu des fichiers (en configurant [!UICONTROL Service de type MIME DAM Jour CQ] dans la [!UICONTROL AEM Web Console]), téléchargez de nombreux fichiers en vrac pendant les heures creuses, car l&#39;opération est gourmande en ressources.
+* Si vous configurez AEM pour détecter les types de fichiers à partir du contenu des fichiers (en configurant [!UICONTROL Service de type MIME DAM Jour CQ] dans la [!UICONTROL AEM Web Console]), chargez de nombreux fichiers en vrac pendant les heures creuses, car l&#39;opération est gourmande en ressources.
