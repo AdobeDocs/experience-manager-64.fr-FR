@@ -5,11 +5,13 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: fd3eedf0-f222-45bf-aac7-90da6b7b7087
 contentOwner: AG
 discoiquuid: 3394b56a-3054-419b-9547-5740f8c35071
+feature: Balises actives, Balisage, Rechercher
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 7771cbb218d80247f65e92cbe7e8cdfd9720b75e
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 85%
+source-wordcount: '464'
+ht-degree: 84%
 
 ---
 
@@ -30,7 +32,7 @@ Vous pouvez également attribuer un rang supérieur à une balise afin d’accro
 1. Cliquez/appuyez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]** pour fermer la boîte de dialogue de réussite.
 1. Accédez à la page Propriétés de l’image. Remarquez que la balise que vous avez convertie se voit attribuer une pertinence élevée et apparaît donc plus haut dans les résultats de la recherche.
 
-## Comprendre les résultats de recherche AEM avec des balises dynamiques  {#understand-search-results-with-smart-tags}
+## Comprendre les résultats de recherche AEM avec les balises dynamiques {#understand-search-results-with-smart-tags}
 
 Par défaut, la recherche AEM associe les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Cependant, un fichier balisé avec `woman` ou `running` à l’aide de balises actives apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
 
