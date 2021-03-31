@@ -2,10 +2,12 @@
 title: Préparation des ressources en vue de la traduction
 description: Créez des dossiers racines de langues pour préparer la traduction de ressources multilingues.
 contentOwner: AG
+feature: Projets,Traduction
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '455'
 ht-degree: 92%
 
 ---
@@ -42,7 +44,7 @@ Procédez comme suit pour préparer la traduction de vos ressources :
 1. Ajoutez des ressources à votre gabarit de langue.
 1. Créez la racine de langue de chaque langue cible pour laquelle vous avez besoin d’une copie de langue.
 
-## Création d’une racine de langue  {#creating-a-language-root}
+## Création d’une racine de langue {#creating-a-language-root}
 
 Pour créer la racine de langue, créez un dossier, puis utilisez le code de langue ISO comme valeur de la propriété Nom. Après avoir créé la racine de langue, vous pouvez créer une copie de langue à n’importe quel niveau dans la racine de langue.
 
