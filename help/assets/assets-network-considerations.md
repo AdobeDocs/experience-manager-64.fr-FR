@@ -2,11 +2,13 @@
 title: Considérations sur le réseau d’Assets
 description: Décrit les considérations concernant le réseau lors de la conception d’un déploiement d’AEM Assets.
 contentOwner: AG
+feature: Outils de développement
+role: Architecte, Administrateur
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 100%
+source-wordcount: '1019'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +42,7 @@ Le coin inférieur gauche du graphique présente deux périphériques connectés
 
 L’ordinateur présenté à droite, connecté au réseau d’entreprise via un VPN, a un débit limité, avec une vitesse de 1 Mbps. L’expérience utilisateur est totalement différente avec une connexion de 1 Mbps et avec une connexion de 1 Gbps. En fonction de la taille des ressources que les utilisateurs manipulent, leur liaison VPN peut s’avérer insuffisante pour la tâche.
 
-## La topologie du réseau d’entreprise   {#topology-of-the-corporate-network}
+## La topologie du réseau d’entreprise  {#topology-of-the-corporate-network}
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
