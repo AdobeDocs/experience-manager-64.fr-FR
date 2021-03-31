@@ -1,11 +1,13 @@
 ---
-title: Gérer les ressources [!DNL Adobe Stock]  dans [!DNL Adobe Experience Manager Assets].
-description: Rechercher, récupérer, gérer les licences et gérer les ressources [!DNL Adobe Stock]  dans [!DNL Adobe Experience Manager]. Utiliser les ressources sous licence comme toute autre ressource numérique.
+title: Gérer les ressources [!DNL Adobe Stock] dans [!DNL Adobe Experience Manager Assets].
+description: Rechercher, récupérer, gérer les licences et gérer les ressources [!DNL Adobe Stock] dans [!DNL Adobe Experience Manager]. Utiliser les ressources sous licence comme toute autre ressource numérique.
 contentOwner: AG
+feature: Recherche, Adobe Stock
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1120'
 ht-degree: 85%
 
 ---
@@ -29,7 +31,7 @@ Pour permettre à [!DNL Experience Manager] et [!DNL Adobe Stock] de communiquer
 >
 >Seuls les administrateurs d’[!DNL Experience Manager] et d’[!DNL Admin Console] d’une entreprise peuvent procéder à l’intégration, dans la mesure où elle requiert des privilèges d’administrateur.
 
-### Création d’une configuration d’IMS {#create-an-ims-configuration}
+### Création d’une configuration IMS {#create-an-ims-configuration}
 
 1. Dans [!DNL Experience Manager] l&#39;interface utilisateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations IMS d&#39;Adobe]**. Cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Solution cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Réutilisez un certificat existant ou sélectionnez **[!UICONTROL Créer un certificat]**.
