@@ -2,10 +2,12 @@
 title: Création de projets de traduction
 description: Apprenez à créer des projets de traduction dans AEM.
 contentOwner: AG
+feature: Traduction
+role: Architecte, Administrateur
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1937'
 ht-degree: 97%
 
 ---
@@ -39,7 +41,7 @@ Vous utilisez le processus Créer et traduire afin de générer des copies de la
 * Créer un projet de traduction
 * Ajouter à un projet de traduction existant
 
-### Créer uniquement la structure   {#create-structure-only}
+### Créer uniquement la structure {#create-structure-only}
 
 Utilisez l’option **Créer uniquement la structure** pour créer une hiérarchie de dossiers cible au niveau de la racine de la langue cible semblable à celle du dossier source au sein de la racine de la langue source. Dans ce cas, les fichiers source sont copiés dans le dossier de destination. Cependant, aucun projet de traduction n’est généré.
 
