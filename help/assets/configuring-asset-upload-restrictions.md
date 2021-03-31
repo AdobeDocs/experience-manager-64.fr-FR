@@ -2,11 +2,13 @@
 title: Configuration des restrictions de transfert de ressources
 description: Découvrez comment configurer Adobe Experience Manager (AEM) Assets de sorte que le type de ressources (fichiers) que les utilisateurs peuvent télécharger soit limité.
 contentOwner: AG
+feature: Développeur
+role: Administrateur,Architecte
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 92%
+source-wordcount: '222'
+ht-degree: 91%
 
 ---
 
