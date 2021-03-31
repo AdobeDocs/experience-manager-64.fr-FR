@@ -2,10 +2,12 @@
 title: Prise en charge de Camera Raw
 description: Découvrez comment activer la prise en charge Camera Raw dans Adobe Experience Manager Assets.
 contentOwner: AG
+feature: Outils de développement
+role: Administrator
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '407'
 ht-degree: 45%
 
 ---
@@ -70,7 +72,7 @@ Vous pouvez désormais importer des fichiers Camera Raw dans AEM Assets. Après 
 
 Après avoir enregistré les modifications apportées à une image Camera Raw, un nouveau rendu `AdjustedPreview.jpg` est généré pour cette image. Pour les types d’images autres que Camera Raw, les modifications sont répercutées dans tous les rendus.
 
-## Bonnes pratiques, problèmes connus et limites  {#best-practices}
+## Bonnes pratiques, problèmes connus et limites {#best-practices}
 
 La fonctionnalité présente les limites suivantes :
 
