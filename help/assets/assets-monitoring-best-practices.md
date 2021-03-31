@@ -1,11 +1,13 @@
 ---
-title: Meilleures pratiques en matière de surveillance des ressources
+title: Bonnes pratiques en matière de surveillance des ressources
 description: Meilleures pratiques pour surveiller l’environnement et la performance de votre instance AEM après son déploiement.
 contentOwner: AG
+feature: Gestion des ressources
+role: Administrateur,Architecte
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1769'
 ht-degree: 88%
 
 ---
@@ -56,7 +58,7 @@ Ces outils vous permettent d’obtenir une vue globale des performances de votre
 
 La surveillance à long terme d’une instance consiste à surveiller pendant une longue période les mêmes portions de l’instance surveillées en temps réel. Cela implique également de définir des alertes spécifiques à votre environnement.
 
-### Agrégation des journaux et création de rapports  {#log-aggregation-and-reporting}
+### Agrégation des journaux et création de rapports {#log-aggregation-and-reporting}
 
 Plusieurs outils sont disponibles pour l’agrégation des journaux, par exemple, Splunk(TM) et Elastic Search/Logstash/Kabana (ELK). Pour évaluer la disponibilité de votre instance AEM, il est important de comprendre les événements de journal spécifiques à votre système et de créer des alertes basées sur ces événements. Une bonne connaissance de vos pratiques de développement et d&#39;exploitation peut vous aider à mieux comprendre comment ajuster votre processus d&#39;agrégation des journaux pour générer des alertes critiques.
 
@@ -184,7 +186,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
    * Seuil d’alarme : lorsque l’état n’est pas OK.
    * Définition de l’alarme : les fichiers journaux comportent des erreurs. Vérifiez l’attribut de journal pour en savoir plus sur l’origine du problème.
 
-## Problèmes courants et solutions   {#common-issues-and-resolutions}
+## Problèmes courants et solutions  {#common-issues-and-resolutions}
 
 Si vous rencontrez des problèmes lors du processus de surveillance, voici quelques solutions permettant de résoudre les problèmes courants des instances AEM :
 
