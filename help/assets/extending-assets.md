@@ -2,16 +2,18 @@
 title: Personnalisation et extension de ressources
 description: Découvrez les moyens par lesquels vous pouvez personnaliser et étendre le Partage de ressources et l’Éditeur de ressources, qui proposent aux utilisateurs une interface et un ensemble de fonctionnalités spécialement adaptés.
 contentOwner: AG
+feature: Outils de développement
+role: Développeur
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '264'
 ht-degree: 94%
 
 ---
 
 
-# Personnalisation et extension de ressources  {#customizing-and-extending-assets}
+# Personnalisation et extension de ressources {#customizing-and-extending-assets}
 
 L’Éditeur de ressources est le point d’accès principal que les utilisateurs d’un site web Adobe Enterprise Manager (AEM) utiliseront pour rechercher, afficher et manipuler les ressources numériques dans votre référentiel.
 
@@ -26,7 +28,7 @@ Les aspects suivants de la fonctionnalité peuvent être adaptés ou développé
 * [Développement d’un proxy Assets](proxy.md)
 * [Pratiques recommandées pour la configuration d’ImageMagick](best-practices-for-imagemagick.md)
 
-## Personnalisation de l’apparence et du comportement  {#customizing-the-look-and-feel}
+## Personnalisation de l’apparence et du comportement {#customizing-the-look-and-feel}
 
 Les aspects suivants de l’aspect de l’éditeur de ressources peuvent être personnalisés :
 
