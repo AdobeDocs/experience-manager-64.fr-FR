@@ -2,10 +2,12 @@
 title: Recherche de texte intégral GQL
 description: Explorez la fonction de recherche de texte intégral GQL dans AEM Assets. Utilisez-la afin de rechercher des ressources selon des métadonnées spécifiques telles que le titre, la description et le nom de l’auteur.
 contentOwner: AG
+feature: Rechercher,Métadonnées
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '889'
 ht-degree: 74%
 
 ---
@@ -21,7 +23,7 @@ Pour rechercher un fichier en fonction de ses métadonnées, par exemple le titr
 
 Pour rechercher, par exemple, les ressources dont le titre est « Cible », suivez ces étapes :
 
-## Recherche de ressources  {#searching-assets}
+## Recherche de ressources {#searching-assets}
 
 1. Dans la barre d&#39;outils de l&#39;interface utilisateur Ressources, cliquez ou appuyez sur l&#39;icône **[!UICONTROL Rechercher]** pour afficher la zone Omnisearch.
 
