@@ -6,11 +6,13 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
+feature: Balises dynamiques, Rechercher
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1567'
-ht-degree: 83%
+source-wordcount: '1572'
+ht-degree: 84%
 
 ---
 
@@ -35,7 +37,7 @@ Smart Content Service est un service cloud hébergé sur [!DNL Adobe I/O]. Pour 
 
 En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
 
-* Intégration
+* Intégration 
 * Passage en revue des ressources et des balises (définition de la taxonomie)
 * Entraînement du service de contenu dynamique
 * Balisage automatique
@@ -79,7 +81,7 @@ Ajoutez les ressources à un dossier, puis appliquez les balises à chaque resso
 
 
 
-## Entraînement du service de contenu dynamique  {#training-the-smart-content-service}
+## Entraînement du service de contenu dynamique {#training-the-smart-content-service}
 
 Pour que le service de contenu dynamique reconnaisse votre taxonomie métier, exécutez-la sur une série de ressources qui incluent déjà des balises correspondant à votre entreprise. Après l’entraînement, le service peut appliquer la même taxonomie sur un ensemble de ressources similaire.
 
@@ -187,6 +189,6 @@ Vous pouvez déclencher le workflow de balisage à partir des emplacements suiva
 >
 >Dans les cycles de balisage suivants, seules les ressources modifiées sont balisées à nouveau avec les balises qui viennent d’être entraînées.
 >
->Cependant, même les ressources non modifiées sont balisées si l’écart entre le dernier cycle de balisage et le cycle de balisage actuel du processus de balisage dépasse 24 heures.
+>Toutefois, même les ressources non modifiées sont balisées si l’intervalle entre le dernier cycle de balisage et l’actuel pour le workflow de balisage dépasse 24 heures.
 >
 >Pour les workflows de balisage périodiques, les ressources non modifiées sont balisées lorsque l’intervalle dépasse 6 mois.
