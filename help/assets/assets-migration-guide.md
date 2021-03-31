@@ -2,10 +2,12 @@
 title: Migration des ressources vers les ressources Adobe Experience Manager en bloc
 description: Découvrez comment importer des fichiers dans AEM, appliquer des métadonnées, générer des rendus et les activer pour publier des instances.
 contentOwner: AG
+feature: Migration, Rendus, Gestion des ressources
+role: Architecte, Administrateur
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1797'
 ht-degree: 67%
 
 ---
