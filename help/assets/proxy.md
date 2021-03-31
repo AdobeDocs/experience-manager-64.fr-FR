@@ -2,16 +2,18 @@
 title: Développement d’un proxy Assets
 description: 'Un proxy est une instance AEM qui utilise des programmes de travail par proxy pour le traitement des tâches. Découvrez comment configurer un proxy AEM, les opérations prises en charge et les composants de proxy, ainsi que comment développer un programme de travail par proxy personnalisé. '
 contentOwner: AG
+feature: Traitement des ressources
+role: Administrateur, architecte
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 74%
+source-wordcount: '904'
+ht-degree: 73%
 
 ---
 
 
-# Développement d’un proxy Assets  {#assets-proxy-development}
+# Développement d’un proxy Assets {#assets-proxy-development}
 
 Adobe Experience Manager (AEM) Assets utilise un proxy pour distribuer le traitement de certaines tâches.
 
@@ -77,7 +79,7 @@ Un worker de proxy est un processeur chargé de gérer une tâche et de produire
 >
 >Le worker doit mettre en œuvre [sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) pour être reconnu en tant que worker de proxy.
 
-### API client  {#client-api}
+### API client {#client-api}
 
 [`JobService`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) est disponible en tant que service OSGi qui prévoit des méthodes pour créer des tâches, supprimer des tâches et obtenir des résultats de ces tâches. La mise en œuvre par défaut de ce service (`JobServiceImpl`) utilise le client HTTP pour communiquer avec le servlet de proxy à distance.
 
