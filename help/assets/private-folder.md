@@ -2,10 +2,12 @@
 title: Partage de dossiers privés
 description: Apprenez à créer un dossier privé dans Adobe Experience Manager (AEM) Assets, à le partager avec d’autres utilisateurs et à attribuer à ces derniers différents privilèges.
 contentOwner: AG
+feature: Collaboration
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '452'
 ht-degree: 100%
 
 ---
