@@ -1,11 +1,13 @@
 ---
 title: Révision de collections et de ressources situées dans un dossier
-description: Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez ce workflow avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
+description: Mettez en place des workflow de révision pour les ressources dans un dossier ou une collection et partagez ce processus avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 contentOwner: AG
+feature: Collaboration, collections
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '818'
 ht-degree: 98%
 
 ---
@@ -19,7 +21,7 @@ Adobe Experience Manager (AEM) Assets permet de configurer un workflow de rév
 
 Vous pouvez associer le workflow de révision à un projet ou créer une tâche de révision indépendante.
 
-Une fois que vous avez partagé les ressources, les réviseurs peuvent les approuver ou les rejeter. Les notifications sont envoyées à différentes étapes du workflow pour informer les destinataires voulus de la fin des diverses tâches. Par exemple, lorsque vous partagez un dossier ou une collection, le réviseur reçoit une notification lui indiquant qu’un dossier/une collection a été partagé(e) pour la révision.
+Une fois que vous avez partagé les ressources, les réviseurs peuvent les approuver ou les rejeter. Les notifications sont envoyées à différentes étapes du workflow pour informer les destinataires voulus de la fin des diverses tâches. Par exemple, lorsque vous partagez un dossier ou une collection, le réviseur reçoit une notification lui indiquant qu’un dossier/une collection a été partagé pour la révision.
 
 Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ressources), vous recevez une notification de fin de révision.
 
