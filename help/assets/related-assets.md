@@ -2,11 +2,13 @@
 title: Ressources liées
 description: Découvrez comment mettre en relation des ressources qui partagent des attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources.
 contentOwner: AG
+feature: Gestion des ressources,Collaboration
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 100%
+source-wordcount: '618'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +19,7 @@ Adobe Experience Manager (AEM) Assets vous permet de mettre en relation manuel
 
 De cette manière, vous avez la possibilité de partager un fichier basse résolution (par exemple au format PDF/JPG) avec les fournisseurs/agences et de transmettre le fichier haute résolution (par exemple au format INDD) sur demande uniquement.
 
-## Mise en relation de ressources  {#relating-assets}
+## Mise en relation de ressources {#relating-assets}
 
 1. À partir de l’interface d’Assets, ouvrez la page Propriétés d’une ressource que vous souhaitez mettre en relation.
 
