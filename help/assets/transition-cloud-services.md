@@ -2,22 +2,24 @@
 title: Application de services cloud de traduction à des dossiers
 description: Application de services cloud de traduction à des dossiers
 contentOwner: AG
+feature: Traduction
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '399'
 ht-degree: 100%
 
 ---
 
 
-# Application de services cloud de traduction à des dossiers  {#applying-translation-cloud-services-to-folders}
+# Application de services cloud de traduction à des dossiers {#applying-translation-cloud-services-to-folders}
 
 Adobe Experience Manager (AEM) vous offre des services de traduction basés sur le cloud du fournisseur de traduction de votre choix afin de vous assurer que vos ressources sont traduites en fonction de vos besoins.
 
 Vous pouvez appliquer le service cloud de traduction directement à votre dossier de ressources afin qu’elles puissent être utilisées au cours des processus de traduction.
 
-## Application des services de traduction  {#applying-the-translation-services}
+## Application des services de traduction {#applying-the-translation-services}
 
 L’application de services cloud directement à votre dossier de ressources élimine le besoin de configurer des services de traduction lorsque vous créez ou mettez à jour les workflows de traduction.
 
@@ -37,7 +39,7 @@ L’application de services cloud directement à votre dossier de ressources él
 
 1. Depuis la barre d’outils, cliquez ou appuyez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]** pour fermer la boîte de dialogue. Le service de traduction est appliqué au dossier.
 
-## Application du connecteur de traduction personnalisé   {#applying-custom-translation-connector}
+## Application du connecteur de traduction personnalisé  {#applying-custom-translation-connector}
 
 Si vous souhaitez appliquer un connecteur personnalisé pour les services de traduction que vous souhaitez utiliser dans les workflows. Pour appliquer un connecteur personnalisé, installez d’abord le connecteur à partir de Package Manager. Configurez ensuite le connecteur depuis la console Cloud Services. Une fois le connecteur configuré, il est disponible dans la liste des connecteurs de l’onglet Cloud Services décrits dans la section [Application des services de traduction](transition-cloud-services.md#applying-the-translation-services). Une fois que vous avez appliqué le connecteur personnalisé et exécuté des workflows de traduction, la mosaïque **[!UICONTROL Résumé de traduction]** du projet de traduction affiche les détails du connecteur dans les sections **[!UICONTROL Fournisseur]** et **[!UICONTROL Méthode]**.
 
