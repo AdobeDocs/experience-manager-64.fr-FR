@@ -2,10 +2,12 @@
 title: Métadonnées en cascade
 description: Cet article décrit comment définir des métadonnées en cascade pour des ressources.
 contentOwner: AG
+feature: 'Métadonnées  '
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 452c90bc72c8d71af4b6c4ca2243024b459f53d9
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '984'
 ht-degree: 95%
 
 ---
@@ -32,7 +34,7 @@ Voici quelques cas d’utilisation pour lesquels vous pouvez définir des métad
 * Modifier les options affichées pour un champ particulier en fonction de la valeur spécifiée dans un autre champ.
 * Définir la valeur de métadonnées par défaut dans un domaine spécifique en fonction de la valeur spécifiée dans un autre champ.
 
-## Configuration des métadonnées en cascade dans AEM    {#configure-cascading-metadata-in-aem}
+## Configuration des métadonnées en cascade dans AEM   {#configure-cascading-metadata-in-aem}
 
 Supposons que vous souhaitiez afficher les métadonnées en cascade en fonction du type de ressource sélectionné. Quelques exemples
 
@@ -114,8 +116,8 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    ![Métadonnées en cascade pour une ressource vidéo](assets/video_asset.png)
 
-   *Figure : Métadonnées en cascade pour une ressource vidéo*
+   *Figure : Métadonnées en cascade pour une ressource vidéo*
 
    ![Métadonnées en cascade pour une ressource de document](assets/doc_type_fields.png)
 
-   *Figure : Métadonnées en cascade pour une ressource de document*
+   *Figure : Métadonnées en cascade pour une ressource de document*
