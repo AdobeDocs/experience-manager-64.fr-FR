@@ -2,10 +2,12 @@
 title: Meilleures pratiques de gestion des ressources à l’aide de AEM
 description: Identifiez et respectez les meilleures pratiques qui améliorent la stabilité et les performances du système en charge, en fonction du déploiement AEM Assets et des fonctionnalités utilisées pour assimiler et traiter les ressources.
 contentOwner: AG
+feature: Gestion des ressources
+role: Architecte, Administrateur
 translation-type: tm+mt
-source-git-commit: 0e0e2aa693c30c8e1ef1033b936b82d83e5b348e
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '655'
 ht-degree: 45%
 
 ---
@@ -31,7 +33,7 @@ considérations relatives au réseauLors de la gestion du déploiement AEM, il e
 guide de surveillance des ressourcesUne fois votre déploiement AEM déployé, vous devez surveiller certaines tâches et le système en général afin d&#39;assurer l&#39;intégrité et l&#39;efficacité du système. Le Guide de surveillance comprend les bonnes pratiques pour contrôler les différents aspects de votre système.
 * (Obsolète) [Guide de déchargement des ressources](assets-offloading-best-practices.md)
 La gestion de fichiers volumineux et l&#39;exécution de workflows en AEM Assets peuvent nécessiter des ressources considérables en UC, en mémoire et en E/S. Le déchargement de ces tâches peut réduire les surcharges d’unité centrale, de mémoire et d’E/S. Le Guide de déchargement Assets inclut les cas d’utilisation recommandés et les meilleures pratiques pour le déchargement dans Assets.
-* [aem meilleures ](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app-best-practices.html)
+* [AEM meilleures ](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app-best-practices.html)
 pratiques pour les applications de bureauL&#39;application de bureau AEM associe votre solution de gestion des actifs numériques (DAM) à votre bureau afin que vous puissiez ouvrir les fichiers disponibles dans l&#39;interface utilisateur Web AEM directement sur le bureau. Le workflow convivial de l’application de bureau AEM est activé à l’aide de la technologie de partage réseau fournie par les systèmes d’exploitation de bureau. Ce guide décrit les fonctionnalités essentielles et l’utilisation recommandée de l’application de bureau AEM.
 * [Meilleures ](aem-cc-integration-best-practices.md)
 pratiques d&#39;intégration AEM et Creative CloudVous pouvez intégrer votre déploiement AEM à Creative Cloud de plusieurs manières. En suivant les bonnes pratiques pour simplifier votre intégration et vos workflows de transfert des ressources, vous bénéficiez d’une efficacité maximale. Ce guide inclut les bonnes pratiques concernant l’intégration d’AEM Assets à Adobe Creative Cloud.
