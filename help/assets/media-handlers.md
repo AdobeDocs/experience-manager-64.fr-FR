@@ -2,10 +2,12 @@
 title: Traiter les ressources à l’aide de gestionnaires de supports et de workflows
 description: En savoir plus sur les différents gestionnaires de médias et sur la façon de les utiliser dans les workflows afin d’effectuer des tâches sur les ressources.
 contentOwner: AG
+feature: Workflow,Rendus
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: b6342b79e964daf1a05bb9ccfad06d8edaca4312
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2232'
 ht-degree: 44%
 
 ---
