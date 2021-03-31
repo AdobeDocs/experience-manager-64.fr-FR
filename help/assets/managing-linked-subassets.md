@@ -3,10 +3,10 @@ title: Gérez des ressources composées et générez des sous-ressources.
 description: Découvrez comment créer des références à des ressources AEM à partir de fichiers InDesign, Adobe Illustrator et Photoshop. Découvrez également comment utiliser la fonction Visionneuse de page pour afficher les pages individuelles de fichiers de plusieurs pages, y compris les fichiers PDF, INDD, PPT, PPTX et AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: dc9ba70161f81578899416064bd03fdabe0bed5a
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 53%
+source-wordcount: '1410'
+ht-degree: 47%
 
 ---
 
@@ -21,14 +21,14 @@ AEM Assets prend en charge le **référencement bidirectionnel**. Vous trouverez
 
 Les références sont résolues sur la base du chemin d’accès, du document et de l’ID d’instance des ressources référencées.
 
-## Ajout de ressources AEM Assets en tant que références dans Adobe Illustrator    {#refai}
+## Adobe Illustrator : Ajouter des ressources en tant que références {#refai}
 
 Vous pouvez référencer des ressources AEM existantes dans un fichier Adobe Illustrator.
 
-1. Utilisez l’[application de bureau AEM](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html) pour monter le référentiel AEM Assets en tant que lecteur sur votre ordinateur local. Dans le lecteur monté, accédez à l’emplacement de la ressource à référencer.
+1. Utilisez l’[application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) pour monter le référentiel AEM Assets en tant que lecteur sur votre ordinateur local. Dans le lecteur monté, accédez à l’emplacement de la ressource à référencer.
 1. Faites glisser la ressource du volume monté jusqu’au fichier Illustrator.
 1. Enregistrez le fichier Illustrator sur le lecteur monté ou [chargez-le](managing-assets-touch-ui.md#uploading-assets) dans le référentiel AEM.
-1. Une fois le processus terminé, accédez à la page des détails de la ressource. Les références à des ressources AEM existantes sont répertoriées sous **[!UICONTROL Dépendances]** dans la colonne **[!UICONTROL Références]**.
+1. Une fois le workflow terminé, accédez à la page des détails de la ressource. Les références à des ressources AEM existantes sont répertoriées sous **[!UICONTROL Dépendances]** dans la colonne **[!UICONTROL Références]**.
 
    ![chlimage_1-258](assets/chlimage_1-258.png)
 
@@ -40,7 +40,7 @@ Vous pouvez référencer des ressources AEM existantes dans un fichier Adobe Il
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
-## Ajout de ressources AEM Assets en tant que références dans Adobe InDesign {#add-aem-assets-as-references-in-adobe-indesign}
+## Adobe InDesign : Ajouter des ressources en tant que références {#add-aem-assets-as-references-in-adobe-indesign}
 
 Pour référencer des ressources AEM dans un fichier InDesign, faites-les glisser jusqu’au fichier ou exportez le fichier InDesign en tant que fichier ZIP.
 
@@ -50,27 +50,28 @@ Les ressources référencées existent déjà dans AEM Assets. Vous pouvez extra
 >
 >Si le serveur InDesign est soumis à un proxy, l’aperçu des fichiers InDesign est intégré à leurs métadonnées XMP. Dans ce cas, l’extraction de miniature n’est pas explicitement requise. Toutefois, si le serveur InDesign n’est pas soumis à un proxy, les miniatures doivent être explicitement extraites pour les fichiers InDesign.
 
-### Création de références en faisant glisser des ressources AEM    {#create-references-by-dragging-aem-assets}
+Lorsqu’un fichier INDD est téléchargé, les références sont récupérées en interrogeant des ressources dont les propriétés `xmpMM:InstanceID` et `xmpMM:DocumentID` se trouvent dans le référentiel.
 
-Cette procédure est similaire à l’[ajout de ressources AEM en tant que références dans Adobe Illustrator](#refai).
+### Création de références en faisant glisser des ressources {#create-references-by-dragging-aem-assets}
 
-### Création de références aux ressources AEM en exportant un fichier ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
+Cette procédure est similaire à [Ajouter des ressources en tant que références dans Adobe Illustrator](#refai).
+
+### Création de références aux ressources en exportant un fichier ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Suivez les étapes décrites dans [Création de modèles de flux de travail](/help/sites-developing/workflows-models.md) pour créer un nouveau flux de travail.
-1. Utilisez l’option Assemblage d’Adobe InDesign pour exporter le document.
-Adobe InDesign peut exporter un document et les ressources liées sous la forme d’un assemblage. Dans ce cas, le dossier exporté contient un dossier Links contenant des sous-ressources dans le fichier InDesign.
+1. Utilisez la fonction [Package d’Adobe InDesign](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) pour exporter le document. Adobe InDesign peut exporter un document et les actifs liés sous la forme d’un package. Dans ce cas, le dossier exporté contient un dossier `Links` contenant des sous-ressources dans le fichier d’InDesign. Le dossier `Links` se trouve dans le même dossier que le fichier INDD.
 1. Créez un fichier ZIP et transférez-le dans le référentiel AEM.
 1. Commencez le workflow de désarchivage.
 1. Une fois le workflow terminé, les références contenues dans le dossier Liens sont automatiquement référencées en tant que sous-ressources. Pour afficher la liste des ressources référencées, accédez à la page des détails de la ressource InDesign et fermez le [rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## Ajout de ressources AEM Assets en tant que références dans Adobe Photoshop {#refps}
+## Adobe Photoshop : Ajouter des ressources en tant que références {#refps}
 
 1. À l’aide d’un client WebDAV, montez AEM Assets comme lecteur.
 1. Pour créer des références à des ressources AEM dans un fichier Photoshop, accédez aux ressources correspondantes sur le volume monté à l’aide de l’option Importer et lier dans Photoshop.
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Enregistrez le fichier Photoshop sur le lecteur monté ou [chargez-le](managing-assets-touch-ui.md#uploading-assets) dans le référentiel AEM.
+1. Enregistrez dans le fichier Photoshop sur le lecteur monté ou [téléchargez](managing-assets-touch-ui.md#uploading-assets) dans le référentiel AEM.
 1. Une fois le workflow terminé, les références aux ressources AEM existantes sont répertoriées dans la page des détails de la ressource.
 
    Pour afficher les ressources référencées, fermez le [rail](/help/sites-authoring/basic-handling.md#rail-selector) dans la page des détails de la ressource.
@@ -107,7 +108,7 @@ Les sous-ressources s’affichent uniquement si elles sont générées et dispon
 
 ![Sous-ressources de vue pour une ressource de plusieurs pages](assets/view_subassets_simulation.gif)
 
-## Affichage des pages d’un fichier multipage    {#view-pages-of-a-multi-page-file}
+## Affichage des pages d’un fichier multipage   {#view-pages-of-a-multi-page-file}
 
 Vous pouvez vue un fichier de plusieurs pages, tel que PDF, INDD, PPT, PPTX et AI, à l’aide de la fonction Page Viewer d’AEM Assets. Ouvrez un fichier de plusieurs pages et cliquez sur **[!UICONTROL Pages de Vue]** dans le coin supérieur gauche de la page. La visionneuse de pages qui s’ouvre affiche les pages du fichier et les commandes permettant de parcourir et de zoomer chaque page.
 
@@ -133,5 +134,5 @@ Les options suivantes sont disponibles dans la barre d’outils, dans le rail de
 
 >[!MORELIKETHIS]
 >
->* [Utilisation de l’appli de bureau Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Utilisation de l’appli de bureau Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr)
 
