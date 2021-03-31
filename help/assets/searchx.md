@@ -2,16 +2,18 @@
 title: Extension de la recherche de ressources
 description: Découvrez comment étendre la recherche dans AEM Assets au-delà des recherches prêtes à l’emploi de ressources par chaînes.
 contentOwner: AG
+feature: Rechercher
+role: Développeur
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '832'
 ht-degree: 92%
 
 ---
 
 
-# Extension de la recherche de ressources  {#extending-assets-search}
+# Extension de la Recherche des ressources {#extending-assets-search}
 
 Vous pouvez étendre la recherche dans Adobe Experience Manager (AEM) Assets. AEM Assets propose des recherches prêtes à l’emploi de ressources par chaînes.
 
@@ -55,7 +57,7 @@ La création de prédicats personnalisés nécessite des connaissances de base s
 
 La pratique recommandée consiste à copier un prédicat existant, puis à le modifier. Les exemples de prédicats se trouvent dans `/libs/cq/search/components/predicates`.
 
-### Exemple : création d’un prédicat de propriété simple    {#example-build-a-simple-property-predicate}
+### Exemple : création d’un prédicat de propriété simple   {#example-build-a-simple-property-predicate}
 
 Pour créer un prédicat de propriété, procédez comme suit :
 
