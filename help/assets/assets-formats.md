@@ -2,10 +2,12 @@
 title: Formats de fichier pris en charge dans AEM Assets
 description: Liste des formats de fichier et des types MIME pris en charge par AEM Assets et des fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
+feature: Gestion des ressources,Rendus
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1654'
 ht-degree: 64%
 
 ---
@@ -226,7 +228,7 @@ Les formats d’archives pris en charge et l’applicabilité des flux de travai
 
 **†** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle. `Deflate64`Les archives ZIP créées à l’aide de l’algorithme sont prises en charge de manière limitée dans AEM. Les opérations d’archivage et de désarchivage ne sont pas prises en charge. Cependant, les opérations comme le chargement, la consultation et le téléchargement sont prises en charge.
 
-## Autres formats pris en charge  {#other-supported-formats}
+## Autres formats pris en charge {#other-supported-formats}
 
 Le tableau ci-dessous décrit l’applicabilité des processus de gestion des actifs numériques courants pour d’autres formats de fichier.
 
@@ -243,7 +245,7 @@ Le tableau ci-dessous décrit l’applicabilité des processus de gestion des ac
 
 ## Types MIME pris en charge {#supported-mime-types}
 
-Par défaut, AEM détecte le type de fichier à l’aide de l’extension de fichier. aem peut le détecter à partir du contenu des fichiers. Pour plus de détails, sélectionnez [!UICONTROL Détecter MIME à partir de l&#39;option content] dans [!UICONTROL Service de type MIME DAM DAM Day CQ] dans la console Web AEM.
+Par défaut, AEM détecte le type de fichier à l’aide de l’extension de fichier. AEM peut le détecter à partir du contenu des fichiers. Pour plus de détails, sélectionnez [!UICONTROL Détecter MIME à partir de l&#39;option content] dans [!UICONTROL Service de type MIME DAM DAM Day CQ] dans la console Web AEM.
 
 Une liste de types MIME pris en charge est disponible en CRXDE Lite à l&#39;adresse `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
