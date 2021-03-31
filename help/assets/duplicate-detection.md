@@ -2,16 +2,18 @@
 title: Activation de la détection des doublons
 description: Découvrez comment activer la détection des ressources en double dans AEM.
 contentOwner: AG
+feature: Gestion des ressources,Rapports sur les ressources
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 26e860cd513d70d748f872e2ce445a042d075bc6
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 61%
+source-wordcount: '161'
+ht-degree: 60%
 
 ---
 
 
-# Activation de la détection des doublons  {#enabling-duplicate-detection}
+# Activation de la détection des doublons {#enabling-duplicate-detection}
 
 Si vous essayez de transférer une ressource qui existe dans Adobe Experience Manager (AEM) Assets, la fonctionnalité de détection des doublons l’identifie comme un doublon. La fonctionnalité de détection des doublons est désactivée par défaut. Pour l’activer, procédez comme suit :
 
