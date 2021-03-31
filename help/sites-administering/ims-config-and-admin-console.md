@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: e672f4edf87bd4d3af985e2ea598feb4e26d1553
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 81%
+source-wordcount: '1769'
+ht-degree: 82%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 81%
 
 ## Présentation {#introduction}
 
-aem 6.4.3.0 introduit la prise en charge des Admin Console pour les instances AEM et l’authentification basée sur l’Adobe IMS(Identity Management System) pour les **clients AEM Managed Services**.
+AEM 6.4.3.0 introduit la prise en charge des Admin Console pour les instances AEM et l’authentification basée sur l’Adobe IMS(Identity Management System) pour les **clients AEM Managed Services**.
 
 L’intégration d’AEM à l’Admin Console permettra aux clients AEM Managed Services de gérer tous les utilisateurs d’Experience Cloud dans une seule console. Les utilisateurs et les groupes peuvent être affectés à des profils de produits associés à des instances AEM, ce qui leur permet de se connecter à une instance spécifique.
 
@@ -56,7 +56,7 @@ L’intégration du client à l’Admin Console est un prérequis pour utiliser 
 
 Pour commencer, une organisation doit être configurée pour les clients dans Adobe IMS. Les clients Adobe Enterprise sont représentés en tant qu’organisations IMS dans [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html).
 
-aem clients Managed Services doivent déjà disposer d’une organisation configurée et, dans le cadre de l’attribution de privilèges d’accès IMS, les instances de client seront mises à disposition dans le Admin Console pour la gestion des droits d’utilisateur et de l’accès.
+AEM clients Managed Services doivent déjà disposer d’une organisation configurée et, dans le cadre de l’attribution de privilèges d’accès IMS, les instances de client seront mises à disposition dans le Admin Console pour la gestion des droits d’utilisateur et de l’accès.
 
 L’authentification des utilisateurs par IMS sera un travail commun à AMS et les clients, chacun devant mener à bien ses workflows.
 
@@ -76,7 +76,7 @@ Une fois qu’un client est défini en tant qu’organisation IMS et qu’AMS a 
 >
 >Pour plus d’informations sur Enterprise Administration et sur l’Admin Console, voir l’article présenté [sur cette page](https://helpx.adobe.com/fr/enterprise/managing/user-guide.html).
 
-### Intégration d’utilisateurs à l’Admin Console  {#onboarding-users-to-the-admin-console}
+### Intégration d’utilisateurs à l’Admin Console {#onboarding-users-to-the-admin-console}
 
 Il existe trois méthodes d’intégration des utilisateurs en fonction de la taille du client et de ses préférences :
 
@@ -206,7 +206,9 @@ Dans l’exemple ci-dessous, nous ajoutons des groupes synchronisés au groupe l
 
 Dans ce cas, un utilisateur a également été attribué à plusieurs groupes dans l’Admin Console. ( Notez que les utilisateurs et les groupes peuvent être synchronisés à partir du protocole LDAP à l&#39;aide de l&#39;outil de synchronisation des utilisateurs ou créés localement, consultez la section **Intégration d&#39;utilisateurs au Admin Console** ci-dessus).
 
-&amp;ast;Notez que les groupes d’utilisateurs ne sont synchronisés que lorsque les utilisateurs se connectent à l’instance, pour les clients qui ont un grand nombre d’utilisateurs et de groupes, un utilitaire de synchronisation de groupes peut être exécuté par AMS pour prérécupérer les groupes pour la gestion des contrôles d&#39;accès et des autorisations décrite ci-dessus.
+>[!NOTE]
+>
+>Les groupes d’utilisateurs ne sont synchronisés que lorsque les utilisateurs se connectent à l’instance.
 
 ![screen_shot_2018-09-17at94207pm](assets/screen_shot_2018-09-17at94207pm.png)
 
