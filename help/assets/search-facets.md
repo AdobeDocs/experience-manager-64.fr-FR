@@ -2,10 +2,12 @@
 title: Facettes de recherche
 description: Cet article décrit comment créer, modifier et utiliser les facettes de recherche dans AEM.
 contentOwner: AG
+feature: Rechercher
+role: Administrateur, développeur
 translation-type: tm+mt
-source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '2537'
+source-wordcount: '2540'
 ht-degree: 94%
 
 ---
@@ -23,7 +25,7 @@ En résumé, les facettes de recherche permettent de rechercher des ressources d
 
 Par exemple, si vous recherchez une image, vous pouvez indiquer si vous souhaitez une image bitmap ou vectorielle. Vous pouvez réduire davantage le champ de recherche en spécifiant le type MIME de l’image. De la même façon, si vous recherchez des documents, vous pouvez spécifier le format, par exemple PDF ou MS Word.
 
-## Ajout d’un prédicat  {#adding-a-predicate}
+## Ajout d’un prédicat {#adding-a-predicate}
 
 Les facettes de recherche qui apparaissent dans le panneau Filtres sont définies dans le formulaire de recherche sous-jacent à l’aide de prédicats. Pour afficher d’autres facettes, ajoutez des prédicats au formulaire par défaut ou utilisez un formulaire personnalisé qui comprend les facettes de votre choix.
 
@@ -172,7 +174,7 @@ Le prédicat Balise vous permet d’effectuer des recherches de ressources basé
 
 1. Sélectionnez **[!UICONTROL Correspondre à tous les critères]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
-## Ajout d’autres prédicats    {#adding-other-predicates}
+## Ajout d’autres prédicats  {#adding-other-predicates}
 
 Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous pouvez ajouter les autres prédicats suivants au panneau Rechercher :
 
