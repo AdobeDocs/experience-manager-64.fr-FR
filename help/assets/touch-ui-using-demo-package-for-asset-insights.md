@@ -2,11 +2,13 @@
 title: Utilisation du module de démonstration pour les statistiques sur les ressources
 description: Utilisez le module de démonstration afin de permettre à la fonction Statistiques sur les ressources d’Adobe de capturer les données d’une page web et de générer des informations pour cette page.
 contentOwner: AG
+feature: Statistiques sur les ressources,Rapports sur les ressources
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 93%
+source-wordcount: '172'
+ht-degree: 91%
 
 ---
 
@@ -15,7 +17,7 @@ ht-degree: 93%
 
 À l’aide du module de démonstration, vous pouvez permettre à Adobe Asset Insights de capturer les données d’un exemple de page web et de générer des informations pour cette page.
 
-## Utilisation d’AEM Assets Insights avec un exemple de page web   {#using-aem-assets-insights-with-sample-web-page}
+## Utilisation d’AEM Assets Insights avec un exemple de page web  {#using-aem-assets-insights-with-sample-web-page}
 
 1. Configurez Asset Insights en suivant les instructions de la section [Configuration de Asset Insights](touch-ui-configuring-asset-insights.md).
 1. Téléchargez le module d’exemple AEM Assets ci-dessous et installez-le à partir du gestionnaire de modules CRXDE.
