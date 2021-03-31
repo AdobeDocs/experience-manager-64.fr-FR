@@ -2,11 +2,13 @@
 title: Flux d’activité dans la chronologie
 description: 'Cet article décrit comment afficher les journaux d’activité pour les ressources de la chronologie. '
 contentOwner: AG
+feature: Gestion des ressources
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 99%
+source-wordcount: '221'
+ht-degree: 98%
 
 ---
 
