@@ -2,10 +2,12 @@
 title: Recherche de ressources vidéo
 description: Utilisez des mots-clés, des propriétés de fichiers telles qu’un type MIME, la taille ou l’horodatage de modification récente pour retrouver rapidement vos fichiers dans AEM Assets.
 contentOwner: AG
+feature: Vidéo,Rechercher
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '582'
 ht-degree: 68%
 
 ---
@@ -34,7 +36,7 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 | Codec vidéo | x264.La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 | Débit vidéo | Spécifié comme valeur minimale et maximale.La valeur est stockée dans les métadonnées des rendus vidéo uniquement. |
 | Codec audio | Libvorbis, Lame Mp3, AAC Encoding.Value est stocké uniquement dans les métadonnées des rendus vidéo. |
-| Débit audio  | Spécifié comme valeur minimale et maximale.La valeur est stockée dans les métadonnées des rendus vidéo uniquement. |
+| Débit audio | Spécifié comme valeur minimale et maximale.La valeur est stockée dans les métadonnées des rendus vidéo uniquement. |
 
 1. Dans la page **[!UICONTROL Experience Manager]**, appuyez sur **[!UICONTROL Ressources]** dans le rail gauche.
 
@@ -58,4 +60,4 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 
       Saisissez un mot-clé, mais au lieu d’appuyer sur Entrée, développez une liste de propriétés vidéo ou audio, puis définissez les valeurs de votre choix.
 
-1. (Facultatif) Dans la partie inférieure de la page, appuyez sur **[!UICONTROL Enregistrer la collecte dynamique]**, puis saisissez un nom pour la recherche. Cochez l’option **[!UICONTROL Public]** si vous souhaitez que la recherche enregistrée soit disponible pour les autres utilisateurs du compte Adobe Experience Manager. Ne cochez pas cette option si vous souhaitez être le seul à avoir accès à la recherche lorsque vous êtes connecté à votre compte. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
+1. (Facultatif) Dans la partie inférieure de la page, appuyez sur **[!UICONTROL Enregistrer la collecte dynamique]**, puis saisissez un nom pour la recherche. Cochez l’option **[!UICONTROL Public]** si vous souhaitez que la recherche enregistrée soit disponible pour les autres utilisateurs du compte Adobe Experience Manager. Ne cochez pas cette option si vous souhaitez être le seul à avoir accès à la recherche lorsque vous êtes connecté à votre compte. Appuyez sur **[!UICONTROL Enregistrer]**.
