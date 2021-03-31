@@ -1,17 +1,19 @@
 ---
-title: Meilleures pratiques de déchargement dans Assets
+title: Bonnes pratiques de déchargement dans Assets
 description: Cas d’utilisation recommandés et meilleures pratiques pour le déchargement des workflows d’assimilation et de réplication des ressources dans AEM Assets.
 contentOwner: AG
+feature: Gestion des ressources
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1823'
 ht-degree: 80%
 
 ---
 
 
-# Meilleures pratiques de déchargement dans Assets  {#assets-offloading-best-practices}
+# Bonnes pratiques de déchargement dans Assets {#assets-offloading-best-practices}
 
 >[!WARNING]
 >
@@ -43,11 +45,11 @@ Le gestionnaire des tâches distribue les nouvelles tâches aux instances de pro
 
 Le structure de déchargement identifie les tâches de déchargement des workflows affectées aux instances de programme de travail et utilise la réplication pour les transporter physiquement, y compris leur charge utile (par exemple, les images à intégrer), vers les programmes de travail.
 
-### Consommateur de tâche du déchargement des workflows  {#workflow-offloading-job-consumer}
+### Consommateur de tâche du déchargement des workflows {#workflow-offloading-job-consumer}
 
 Une fois qu’une tâche est écrite sur le collaborateur, le gestionnaire de tâches appelle le client responsable de la rubrique *com/adobe/granite/workflow/déchargement*. Le consommateur de tâche exécute alors le workflow Ressources de mise à jour de gestion des actifs numériques sur la ressource.
 
-## Topologie Sling  {#sling-topology}
+## Topologie Sling {#sling-topology}
 
 La topologie Sling regroupe les instances AEM et leur permet de se connaître mutuellement, indépendamment de la persistance sous-jacente. Cette caractéristique de la topologie Sling permet de créer des topologies pour des scénarios sans cluster, en cluster et mixtes. Une instance peut présenter des propriétés à l’ensemble de la topologie. La structure fournit des rappels permettant d’écouter les modifications de la topologie (instances et propriétés). La topologie Sling fournit la base des tâches distribuées Sling.
 
