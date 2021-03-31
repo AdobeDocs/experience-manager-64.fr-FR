@@ -2,10 +2,12 @@
 title: Création et configuration des pages de l’éditeur de ressources
 description: Découvrez comment créer des pages Éditeur de ressources personnalisées et modifier plusieurs ressources simultanément.
 contentOwner: AG
+feature: Outils de développement,Gestion des ressources
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3321'
 ht-degree: 79%
 
 ---
@@ -181,7 +183,7 @@ Pour ajouter des prédicats :
 | **[!UICONTROL Prédicat du chemin d’accès]** | Permet aux utilisateurs de définir le chemin d’accès et les sous-dossiers, le cas échéant. |
 | **[!UICONTROL Prédicat de la propriété]** | Le propriétaire du site spécifie une propriété à rechercher, par exemple tiff:ImageLength, et l&#39;utilisateur peut alors entrer une valeur, par exemple 800. Cette opération renvoie toutes les images d&#39;une hauteur de 800 pixels. Ce prédicat est utile si votre propriété peut comporter des valeurs arbitraires. |
 
-Pour plus d’informations, voir la [documentation Javadoc sur les prédicats](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
+Pour plus d’informations, voir la [documentation Javadoc sur les prédicats](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
 
 1. Pour configurer davantage le prédicat, double-cliquez dessus. Par exemple, lorsque vous ouvrez le prédicat du chemin d’accès, vous devez affecter le chemin racine.
 
@@ -294,7 +296,7 @@ Le Formulaire de métadonnées est un formulaire incluant une action de début e
 
 Sur la page Éditeur de ressources, les utilisateurs peuvent ensuite saisir des valeurs dans les champs de métadonnées (s’ils sont modifiables) et effectuer l’action de fin (par exemple, envoyer les modifications).
 
-#### Sous-ressources  {#sub-assets}
+#### Sous-ressources {#sub-assets}
 
 Le composant Sous-ressources permet d’afficher et de sélectionner des sous-ressources. Vous pouvez déterminer les noms qui apparaissent dans la [ressources principale](assets.md#what-are-digital-assets) et les sous-ressources.
 
@@ -378,7 +380,7 @@ Pour ajouter des actions à la page Éditeur de ressources :
 
    | Action | Description |
    |---|---|
-   | [!UICONTROL Téléchargement] | Permet aux utilisateurs de télécharger les éléments sélectionnés   sur leurs ordinateurs. |
+   | [!UICONTROL Télécharger] | Permet aux utilisateurs de télécharger les éléments sélectionnés   sur leurs ordinateurs. |
    | [!UICONTROL Editeurs] | permet aux utilisateurs de modifier une image.   (édition interactive) |
    | [!UICONTROL Lightbox] | Enregistre les actifs dans une   &quot;lightbox&quot; où vous pouvez exécuter d’autres actions sur ces objets. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. |
    | [!UICONTROL Verrouillage] | Permet aux utilisateurs de verrouiller un fichier. Cette fonctionnalité n’est pas activée par défaut et doit être activée dans la liste des composants. |
