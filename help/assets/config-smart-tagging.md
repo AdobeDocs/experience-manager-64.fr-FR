@@ -2,10 +2,12 @@
 title: Configurez le balisage des ressources à l’aide de Smart Content Service.
 description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans  [!DNL Adobe Experience Manager], à l’aide de Smart Content Service.
 contentOwner: AG
+feature: Balises actives, balisage
+role: Administrator
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1216'
 ht-degree: 48%
 
 ---
@@ -35,7 +37,7 @@ Avant d’utiliser Smart Content Service, vérifiez les éléments suivants pour
 
 * Le de contenu dynamique est activé pour votre organisation.
 
-Pour activer les balises actives améliorées, en plus de ce qui précède, installez également le dernier [Service Pack du Experience Manager](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html).
+Pour activer les balises actives améliorées, en plus de ce qui précède, installez également le Service Pack le plus récent [Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
 
 ## Créer une configuration de Smart Content Service pour obtenir un certificat public {#obtain-public-certificate}
 
