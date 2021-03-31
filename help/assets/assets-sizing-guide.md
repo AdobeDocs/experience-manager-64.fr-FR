@@ -5,10 +5,12 @@ uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
+feature: Gestion des ressources
+role: Architecte, Administrateur
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1862'
 ht-degree: 90%
 
 ---
@@ -18,7 +20,7 @@ ht-degree: 90%
 
 Lors du dimensionnement de l’environnement pour une mise en œuvre d’Adobe Experience Manager (AEM) Assets, il est important de s’assurer que les ressources disponibles sont suffisantes en termes de disque, de processeur, de mémoire, d’entrée/de sortie et de débit réseau. Pour dimensionner la plupart de ces ressources, vous devez comprendre leur mode de chargement dans le système. Si aucune meilleure mesure n’est disponible, vous pouvez diviser la taille de la bibliothèque existante par l’âge de la bibliothèque pour trouver la fréquence de création des ressources.
 
-## Disque  {#disk}
+## Disque {#disk}
 
 ### Banque de données {#datastore}
 
