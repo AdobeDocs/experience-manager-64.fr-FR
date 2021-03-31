@@ -5,16 +5,18 @@ uuid: 56a8c221-409f-4605-97b1-a054dd2abfab
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
+feature: Gestion des ressources,Vidéo
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 2a24d7b9232f39d47d79d995251a14beb0c0f666
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '800'
 ht-degree: 52%
 
 ---
 
 
-# Gestion des ressources vidéo   {#managing-video-assets}
+# Gestion des ressources vidéo {#managing-video-assets}
 
 Découvrez comment gérer et modifier les ressources vidéo dans Adobe Experience Manager (AEM) Assets. De plus, si vous possédez une licence d’utilisation Dynamic Media, reportez-vous à la [documentation vidéo sur Dynamic Media](video.md).
 
@@ -65,7 +67,7 @@ Pour configurer une limite de taille de fichier supérieure, procédez comme sui
 1. Dans AEM, appuyez sur **[!UICONTROL Outils > Opérations > Console web]**.
 1. Sur la page **[!UICONTROL Bundles de la console Web Adobe Experience Manager]**, sous la colonne **[!UICONTROL Nom]** du tableau, recherchez et appuyez sur **[!UICONTROL Adobe Granite Workflow External Process Handler]**.
 1. Dans la page **[!UICONTROL Adobe Granite Workflow External Process Handler]**, définissez les secondes pour les champs **[!UICONTROL Default Timeout]** et **[!UICONTROL Max Timeout]** sur `18000` (cinq heures).
-1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
+1. Appuyez sur **[!UICONTROL Enregistrer]**.
 1. Dans AEM, appuyez sur **[!UICONTROL Outils > Processus > Modèles]**.
 1. Sur la page **[!UICONTROL Modèles de processus]**, sélectionnez **[!UICONTROL Dynamic Media Encode Video]**, puis appuyez sur **[!UICONTROL Modifier]**.
 1. Sur la page **[!UICONTROL Workflow]**, appuyez sur le composant **[!UICONTROL Processus du service vidéo Dynamic Media]** en appuyant sur le doublon.
