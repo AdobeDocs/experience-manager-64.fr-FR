@@ -1,11 +1,13 @@
 ---
 title: Gestion des droits numériques dans [!DNL Adobe Experience Manager Assets].
-description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans [!DNL Experience Manager].
+description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans  [!DNL Experience Manager] .
 contentOwner: AG
+feature: DRM,Gestion des ressources
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: fe99869df5616f8f483ab8a9517e850e45c7a117
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1436'
 ht-degree: 89%
 
 ---
@@ -93,7 +95,7 @@ Pour que la console [!DNL Assets] affiche les ressources composites référencé
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
-1. Pour exécuter la tâche périodiquement, décochez l’option de **[!UICONTROL planificateur basé sur le temps]** et modifiez la périodicité en secondes dans le champ du **[!UICONTROL planificateur de périodicité]**. Par exemple, l’expression « 0 0 0 * * ? » déclenche la tâche à 00 heures.
+1. Pour exécuter la tâche périodiquement, décochez l’option de **[!UICONTROL planificateur basé sur le temps]** et modifiez la périodicité en secondes dans le champ du **[!UICONTROL planificateur de périodicité]**. Par exemple, l’expression « 0 0 0 &amp;ast; &amp;ast; ? » déclenche la tâche à 00 heures.
 1. Sélectionnez **[!UICONTROL Envoyer un courrier électronique]** pour être averti, par e-mail, de l’expiration d’une ressource.
 
    >[!NOTE]
