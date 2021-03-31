@@ -3,10 +3,12 @@ title: Gérer vos ressources numériques à l’aide de AEM Assets
 description: Découvrez les différentes tâches de gestion et de modification des ressources que vous pouvez réaliser à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
+feature: Gestion des ressources, Recherche, Rendus, Collaboration
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '10039'
+source-wordcount: '10046'
 ht-degree: 66%
 
 ---
@@ -33,7 +35,7 @@ Lorsque vous organisez une collection de ressources, comme toutes les images `Na
 1. Dans le champ **[!UICONTROL Titre]**, indiquez le nom du dossier. Par défaut, DAM utilise le titre que vous avez fourni comme nom du dossier. Une fois le dossier créé, vous pouvez remplacer le nom par défaut et entrer un autre nom de dossier.
 1. Cliquez sur **[!UICONTROL Créer]**. Le dossier apparaît dans le dossier Ressources numériques.
 
-Les caractères suivants (liste de ceux-ci séparés par des espaces) ne sont pas pris en charge :
+Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici et séparés par des espaces) :
 
 * Le nom du fichier de ressource ne doit pas contenir  `* / : [ \ \ ] | # % { } ? &`
 * Le nom du dossier de ressources ne doit pas contenir  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
@@ -151,7 +153,7 @@ Dynamic Media permet le transfert par lots des ressources par le biais du serveu
 **Pour télécharger des ressources via FTP, procédez comme suit :**
 
 1. Sélectionnez le client FTP de votre choix, puis connectez-vous à l’aide du nom d’utilisateur et du mot de passe FTP qui vous ont été envoyés par courrier électronique. Dans le client FTP, téléchargez les fichiers et/ou dossiers vers le serveur FTP.
-1. Ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre compte à l’aide des informations d’identification reçues du courrier électronique de mise en service.
+1. Ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à votre compte à l’aide des informations d’identification reçues du courrier électronique de mise en service.
 1. Appuyez ou cliquez sur **[!UICONTROL Télécharger]** dans la barre de navigation globale.
 1. Sur la page **[!UICONTROL Télécharger]**, près du coin supérieur gauche, appuyez sur l&#39;onglet **[!UICONTROL Via FTP]**.
 1. Sélectionnez le dossier FTP source à utiliser pour le transfert des fichiers dans la partie gauche de la page et le dossier de destination dans la partie droite.
@@ -189,7 +191,7 @@ Dynamic Media permet le transfert par lots des ressources par le biais du serveu
 |  | Options PDF | Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens, générer automatiquement un catalogue électronique, définir la résolution et choisir un espace de couleurs.<br> Notez que les catalogues électroniques ne sont pas pris en charge dans AEM. <br> Voir [Définition des options de téléchargement PDF](#setting-pdf-upload-options). |
 |  | Options Illustrator | Vous pouvez pixelliser les fichiers Adobe Illustrator®, conserver l’arrière-plan transparent, choisir une résolution et sélectionner un espace de couleurs.<br> Voir [Définition des options de téléchargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Options eVideo | Vous pouvez transcoder un fichier vidéo en sélectionnant un paramètre vidéo prédéfini.<br> Voir [Définition des options de téléchargement eVideo](#setting-evideo-upload-options). |
-|  | Paramètres prédéfinis d’ensemble par lot | Pour créer automatiquement une visionneuse d’images ou une visionneuse à 360° à partir de fichiers téléchargés, cliquez sur la colonne Actif correspondant au paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. Les paramètres prédéfinis sont créés sur la page Configuration de l’application/Paramètres prédéfinis d’ensemble par lot de Dynamic Media Classic.<br>Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, voir [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Voir [Définition de paramètres prédéfinis d’ensemble par lot lors du téléchargement](#setting-batch-set-presets-at-upload). |
+|  | Paramètres prédéfinis de lot | Pour créer automatiquement une visionneuse d’images ou une visionneuse à 360° à partir de fichiers téléchargés, cliquez sur la colonne Actif correspondant au paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. Les paramètres prédéfinis sont créés sur la page Configuration de l’application/Paramètres prédéfinis d’ensemble par lot de Dynamic Media Classic.<br>Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, voir [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Voir [Définition de paramètres prédéfinis d’ensemble par lot lors du téléchargement](#setting-batch-set-presets-at-upload). |
 
 #### Définissez les options d’édition d’images au téléchargement {#setting-image-editing-options-at-upload}
 
@@ -634,7 +636,7 @@ Le format CUG est un moyen supplémentaire de restreindre l’accès à vos ress
 1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
 1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’AEM vous a authentifié.
 
-## Recherche de ressources  {#searching-assets}
+## Recherche de ressources {#searching-assets}
 
 Les recherches de base sont décrites dans la section [Rechercher et filtrer. ](/help/sites-authoring/search.md#search-and-filter) Utilisez le panneau **[!UICONTROL Rechercher]** pour rechercher des ressources, des balises et des métadonnées. Vous pouvez rechercher des parties d’une chaîne en utilisant le caractère générique astérisque. En outre, vous pouvez personnaliser le panneau **[!UICONTROL Rechercher]** à l’aide de [facettes de recherche](search-facets.md).
 
@@ -661,7 +663,7 @@ Dans la vue de liste, **[!UICONTROL Sélectionner]** apparaît lorsque vous plac
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
-Tout comme la vue de liste, **[!UICONTROL Select]** apparaît lorsque vous placez le pointeur de la souris sur la miniature avant les noms des ressources ou du dossier dans la vue de colonne.
+Tout comme la vue de liste, **[!UICONTROL Sélectionner]** apparaît lorsque vous placez le pointeur de la souris sur la miniature avant les noms des ressources ou du dossier dans la vue de colonne.
 
 ![select_quick_in_columnview](assets/select_quick_in_columnview.png)
 
