@@ -3,11 +3,13 @@ title: Réutilisation de ressources à l’aide de MSM
 description: Utilisez des ressources sur plusieurs pages/dossiers qui sont dérivées des ressources parents et liées à celles-ci. Les ressources restent synchronisées avec une copie Principale et, en quelques clics, reçoivent les mises à jour des ressources parents.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Gestion des ressources,Gestionnaire de sites multiples
+role: Professionnel, Administrateur, Architecte
 translation-type: tm+mt
-source-git-commit: d2372ebabf92fd83cff31d4f0b37c020756f03c1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '3167'
-ht-degree: 80%
+source-wordcount: '3176'
+ht-degree: 79%
 
 ---
 
@@ -181,7 +183,7 @@ Vous pouvez également lancer une action de déploiement à partir du rail [!UIC
 
 Une action de synchronisation récupère les modifications d’une source uniquement pour la Live Copy sélectionnée. L’action de synchronisation respecte et gère les modifications locales effectuées après l’annulation de l’héritage. Les modifications locales ne sont pas remplacées et l’héritage annulé n’est pas rétabli. Vous pouvez lancer une action de synchronisation de trois manières différentes.
 
-| Emplacement dans l&#39;interface [!DNL Experience Manager] | Utilisation : à quel moment et pourquoi | Utilisation |
+| Emplacement dans l&#39;interface [!DNL Experience Manager] | Utilisation : à quel moment et pourquoi | Mode d’emploi |
 |---|---|---|
 | [!UICONTROL Rail Références] | Effectuez rapidement une synchronisation lorsque la source est déjà sélectionnée. | Voir [Actions rapides pour la source depuis le rail Références](#quick-actions-from-references-rail-for-source) |
 | Barre d’outils de la page [!UICONTROL Propriétés] | Lancez une synchronisation lorsque les propriétés de la Live Copy sont déjà ouvertes. | Voir [Synchronisation d’une Live Copy](#synchronize-live-copy) |
