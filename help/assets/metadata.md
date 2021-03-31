@@ -2,10 +2,12 @@
 title: Gestion des métadonnées des ressources numériques dans  [!DNL Adobe Experience Manager].
 description: Découvrez les types de métadonnées ainsi que l’organisation et le traitement des fichiers par  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] en fonction de leurs métadonnées.
 contentOwner: AG
+feature: Balisage, Métadonnées
+role: Architecte, Leader
 translation-type: tm+mt
-source-git-commit: 7f8f35b9f62f61f5bb8c175062e76ba5f4966dbe
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1399'
 ht-degree: 99%
 
 ---
@@ -124,10 +126,10 @@ Les schémas de métadonnées pris en charge sont répertoriés ci-dessous.
 
 Les métadonnées spécifiques à l’application englobent des métadonnées techniques et descriptives. Si vous utilisez ces types de métadonnées, il se peut que d’autres applications ne soient pas en mesure de les exploiter. Par exemple, il est possible qu’une autre application de rendu d’image ne puisse pas accéder aux métadonnées [!DNL Adobe Photoshop]. Vous pouvez créer une étape de workflow qui transforme une propriété spécifique à l’application en propriété standard.
 
-* ACDSee – métadonnées gérées par le programme [!DNL ACDSee]. Voir [www.acdsee.com/](https://www.acdsee.com/).
+* ACDSee – Métadonnées gérées par le programme [!DNL ACDSee]. Voir [www.acdsee.com/](https://www.acdsee.com/).
 * Album – [!DNL Adobe Photoshop Album].
-* CQ – utilisées par [!DNL Experience Manager Assets].
-* DAM – utilisées par [!DNL Experience Manager Assets].
+* CQ – Utilisées par [!DNL Experience Manager Assets].
+* DAM – Utilisées par [!DNL Experience Manager Assets].
 * DEX – [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) est une collection d’outils pour la gestion des métadonnées et des fichiers pour les systèmes d’exploitation Windows.
 * CRS – [Adobe Photoshop Camera Raw](https://helpx.adobe.com/fr/camera-raw/using/introduction-camera-raw.html).
 * LR – [!DNL Adobe Lightroom].
@@ -144,14 +146,14 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 * PRISM – [Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)](https://www.idealliance.org/prism-metadata).
 * PRL – PRISM Rights Language.
 * PUR – PRISM Usage Rights.
-* `xmpPlus` – intégration de PLUS avec XMP.
+* `xmpPlus` – Intégration de PLUS avec XMP.
 
 ### Métadonnées spécifiques à la photographie {#photography-specific-metadata}
 
-* Exif – de nombreuses informations techniques issues de l’appareil photo, notamment la position GPS.
-* CRS – [!DNL Camera Raw] schéma.
+* Exif – De nombreuses informations techniques issues de l’appareil photo, notamment la position GPS.
+* CRS – Schéma [!DNL Camera Raw].
 * `iptc4xmpCore` et `iptc4xmpExt`.
-* TIFF – métadonnées d’image (pas seulement pour les images TIFF).
+* TIFF – Métadonnées d’image (pas seulement pour les images TIFF).
 
 ### Métadonnées spécifiques à l’impression {#print-specific-metadata}
 
