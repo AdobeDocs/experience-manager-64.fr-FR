@@ -2,16 +2,18 @@
 title: Expérience de la page d’accueil d’AEM Assets
 description: Personnalisez la page d’accueil d’AEM Assets afin d’enrichir l’expérience de l’écran de bienvenue, avec notamment un instantané des activités récentes concernant les ressources.
 contentOwner: AG
+feature: Outils de développement,Gestion des ressources
+role: Administrateur, Professionnel
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '581'
 ht-degree: 56%
 
 ---
 
 
-# Expérience de la page d’accueil d’AEM Assets  {#aem-assets-home-page-experience}
+# Expérience de la page d’accueil d’AEM Assets {#aem-assets-home-page-experience}
 
 Personnalisez la page d’accueil d’AEM Assets afin d’enrichir l’expérience de l’écran de bienvenue, avec notamment un instantané des activités récentes concernant les ressources.
 
