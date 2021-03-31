@@ -2,10 +2,12 @@
 title: Archivage et extraction de vos ressources numériques pour modification
 description: Découvrez comment extraire des fichiers pour les modifier et les réarchiver une fois les modifications terminées.
 contentOwner: AG
+feature: Gestion des ressources
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '403'
 ht-degree: 66%
 
 ---
