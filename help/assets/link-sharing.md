@@ -2,11 +2,13 @@
 title: Partage de fichiers à l’aide d’un lien
 description: Partagez des fichiers, des dossiers et des collections sous la forme d’une URL.
 contentOwner: AG
+feature: Partage de liens, gestion des ressources
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: f17d54315516fcf9d24c720f097db9de73517f21
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 39%
+source-wordcount: '1063'
+ht-degree: 40%
 
 ---
 
@@ -25,7 +27,7 @@ ht-degree: 39%
 
 Pour générer l’URL des fichiers que vous souhaitez partager avec les utilisateurs, utilisez la boîte de dialogue Partage de liens. Les utilisateurs disposant de privilèges d’administrateur ou avec des autorisations de lecture à l’emplacement `/var/dam/share` peuvent afficher les liens partagés avec eux.
 
-1. Dans l&#39;interface utilisateur [!DNL Assets], sélectionnez la ressource à partager en tant que lien.
+1. Dans l’interface utilisateur [!DNL Assets], sélectionnez la ressource à partager sous forme de lien.
 1. Dans la barre d’outils, cliquez sur l’icône **[!UICONTROL Partager le lien]** ![partager les ressources](assets/assets_share.png).
 
    Le lien qui sera créé après avoir cliqué sur [!UICONTROL Partager] s’affiche à l’avance dans le champ [!UICONTROL Partager le lien]. Le délai d’expiration par défaut du lien est de 1 jour.
@@ -103,7 +105,7 @@ Pour générer l’URL des fichiers que vous souhaitez partager avec les utilisa
 
 1. Cliquez/appuyez sur **[!UICONTROL Enregistrer]**.
 
-## Configuration de la taille maximale des données    {#configure-maximum-data-size}
+## Configuration de la taille maximale des données   {#configure-maximum-data-size}
 
 Lorsque vous téléchargez des ressources à partir du lien partagé à l’aide de la fonction de partage de liens, [!DNL Experience Manager] compresse la hiérarchie des ressources à partir du référentiel, puis renvoie la ressource dans un fichier ZIP. Toutefois, en l’absence de limite à la quantité de données pouvant être compressées dans un fichier ZIP, il est possible que des volumes de données considérables à compresser entraînent des erreurs d’insuffisance de mémoire dans JVM. Afin de protéger le système contre une potentielle attaque par déni de service (DoS) résultant de cette situation, configurez la taille maximale à l’aide du paramètre **[!UICONTROL Taille max. de contenu (sans compression)]** pour le servlet proxy du partage de ressource adhoc de la gestion des ressources numériques Day CQ dans le gestionnaire de configuration. **** Si la taille non compressée de la ressource dépasse la valeur configurée, les demandes de téléchargement sont rejetées. La valeur par défaut est de 100 Mo.
 
