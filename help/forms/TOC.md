@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience manager
 sub-product: formulaires
 solution: Experience Manager, Experience Manager Forms
@@ -10,7 +10,7 @@ user-guide-description: Créez, gérez, publiez et mettez à jour des formulaire
 feature-set: Experience Manager Forms
 role: Professionnel
 translation-type: tm+mt
-source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
+source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt
 source-wordcount: '3732'
 ht-degree: 75%
