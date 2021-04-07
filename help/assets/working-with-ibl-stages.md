@@ -9,16 +9,18 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
+exl-id: 074ab20f-02df-4f9e-9512-93a76f5d234f
+feature: Ressources 3D
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '850'
 ht-degree: 58%
 
 ---
 
-
-# Utilisation de scènes IBL  {#about-working-with-ibl-stages}
+# Utilisation de scènes IBL {#about-working-with-ibl-stages}
 
 AEM 3D prend en charge l’éclairage par image (IBL, Image-based lighting) pour l’affichage et le rendu interactifs avec le convertisseur intégré Adobe Rapid Refine™ et les convertisseurs tiers. Vous pouvez créer des scènes IBL avec des outils de création courants tels qu’Autodesk® Maya® ou Autodesk® 3ds Max®.
 
@@ -43,7 +45,7 @@ Bien qu’une seule image HDR soit souvent suffisante pour les scènes IBL, AEM�
 >
 >L’algorithme de conversion peut rencontrer des difficultés avec certaines images IBL. Par conséquent, certains arrière-plans peuvent être trop lumineux ou saturés en mode Aperçu ou lors du rendu avec Rapid Refine. Dans ces circonstances, Adobe vous recommande d’utiliser Photoshop ou un outil similaire pour convertir manuellement l’image IBL en image RVB 8 bits. Chargez cette image séparément et joignez-la à la scène en tant qu’image d’environnement d’arrière-plan. Les images d’environnement d’éclairage diffus et de reflet doivent toujours être au format TIFF 32 bits.
 
-## Modification de l’aspect de la scène IBL  {#adjusting-the-ibl-stage-appearance}
+## Modification de l’aspect de la scène IBL {#adjusting-the-ibl-stage-appearance}
 
 Vous pouvez modifier l’aspect de la scène IBL grâce aux propriétés de scène suivantes :
 
@@ -83,7 +85,7 @@ Les étapes IBL utilisent des images d&#39;arrière-plan sphériques de 20 mètr
 
 **Pour augmenter le diamètre d&#39;arrière-plan sphérique d&#39;une scène** IBL :
 
-1. En CRXDE Lite, accédez à la scène dont vous souhaitez augmenter le diamètre d’arrière-plan sphérique. Par exemple :
+1. En CRXDE Lite, accédez à la scène dont vous souhaitez augmenter le diamètre d’arrière-plan sphérique. Par exemple,
 
    `/content/dam/test3d/stage-helipad.fbx`
 
@@ -95,4 +97,3 @@ Les étapes IBL utilisent des images d&#39;arrière-plan sphériques de 20 mètr
    Par exemple, un modèle d&#39;avion de 20 mètres de long s&#39;affiche bien si `dam:gPlaneRadius=20000`.
 
 1. Près du coin supérieur gauche de la page du CRXDE Lite, appuyez sur **[!UICONTROL Enregistrer tout]**.
-
