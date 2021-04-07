@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 6198e613-a867-49a8-b9a5-a05e7889821c
+exl-id: f9bb59f6-39a5-4804-8abe-12783d4162c9
+feature: Configuration
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 15%
+source-wordcount: '429'
+ht-degree: 16%
 
 ---
-
 
 # Installation de Feature Pack 18912 pour la migration des ressources en vrac {#installing-feature-pack}
 
@@ -41,7 +43,7 @@ Voir aussi [Configuration du mode Dynamic Media - Scene7](https://helpx.adobe.co
 1. Contactez [Adobe Enterprise Support pour Experience Manager](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) pour demander l&#39;accès à Feature Pack 18912 pour le téléchargement. Vous aurez peut-être besoin des informations suivantes lorsque vous contactez l&#39;assistance :
 
    * Adresse IP du serveur de votre instance d’auteur, y compris le numéro de port (par défaut, le numéro de port est 4502).
-   * aem nom d’utilisateur et mot de passe du service de maintenance de l’étape précédente.
+   * AEM nom d’utilisateur et mot de passe du service de maintenance de l’étape précédente.
 
 1. Adobe Enterprise Support for AEM fournit les informations d’identification FTP et l’accès à Feature Pack 18912.
 
