@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: a87c7562-0d61-403e-9e8e-e706cac9b7c5
+feature: Gestion des ressources
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 100%
+source-wordcount: '120'
+ht-degree: 98%
 
 ---
-
 
 # À propos de la gestion des ressources Dynamic Media {#managing-assets}
 
@@ -25,7 +27,6 @@ Pour des informations générales sur la gestion des ressources, consultez [Gest
 Les rubriques suivantes décrivent les tâches que vous devez effectuer pour gérer des ressources Dynamic Media :
 
 * [Bonnes pratiques relatives à l’optimisation de la qualité des images](best-practices-for-optimizing-the-quality-of-your-images.md)
-* [Prévisualisation de ressources Dynamic Media](previewing-assets.md)
+* [Aperçu de ressources Dynamic Media](previewing-assets.md)
 * [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md)
 * [Utilisation des sélecteurs](working-with-selectors.md)
-
