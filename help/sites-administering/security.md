@@ -2,6 +2,7 @@
 title: Administration et sécurité des utilisateurs
 seo-title: Administration et sécurité des utilisateurs
 description: Pour en savoir plus sur l’administration et la sécurité des utilisateurs dans AEM.
+feature: Sécurité
 seo-description: Pour en savoir plus sur l’administration et la sécurité des utilisateurs dans AEM.
 uuid: f14619a1-d21f-465c-b79b-c98da1f1c016
 contentOwner: msm-service
@@ -9,20 +10,20 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: a67b9e56-944d-424d-a64a-025f369faa5b
+exl-id: 1dd54d3f-419c-4c83-8cd8-4ae0e7feead2
 translation-type: tm+mt
-source-git-commit: ae4942dce6536f670b0f3013a489671a42225bd6
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '5434'
+source-wordcount: '5435'
 ht-degree: 79%
 
 ---
-
 
 # Administration et sécurité des utilisateurs{#user-administration-and-security}
 
 Ce chapitre décrit comment configurer et gérer l’autorisation de l’utilisateur et décrit également la théorie sous-jacente au fonctionnement de l’authentification et des autorisations dans AEM.
 
-## Utilisateurs et groupes dans AEM  {#users-and-groups-in-aem}
+## Utilisateurs et groupes dans AEM {#users-and-groups-in-aem}
 
 Cette section traite des différentes entités et des concepts associés plus en détail pour vous aider à définir un concept de gestion des utilisateurs simple.
 
@@ -150,7 +151,7 @@ Vous pouvez modifier les autorisations accordées/refusées à un utilisateur do
 
 L’emplacement de la coche sur la grille indique également de quelles autorisations les utilisateurs disposent et à quels endroits dans AEM (c’est-à-dire, les chemins d’accès).
 
-### Actions   {#actions}
+### Actions  {#actions}
 
 Les actions peuvent être effectuées sur une page (ressource). Pour chaque page dans la hiérarchie, vous pouvez spécifier quelle action l’utilisateur est autorisé à effectuer sur cette page. [Vous pouvez ](#permissions-and-acls) autoriser ou refuser une action.
 
@@ -204,7 +205,7 @@ Les actions peuvent être effectuées sur une page (ressource). Pour chaque page
 
 >[!NOTE]
 >
->aem génère automatiquement des groupes d’utilisateurs pour l’affectation de rôles (propriétaire, éditeur, visionneuse) dans [Collections](/help/assets/managing-collections-touch-ui.md). Cependant, ajouter manuellement des listes de contrôle d’accès pour ces groupes peut introduire des vulnérabilités en matière de sécurité dans AEM. Adobe recommande d’éviter d’ajouter des listes de contrôle d’accès manuellement.
+>AEM génère automatiquement des groupes d’utilisateurs pour l’affectation de rôles (propriétaire, éditeur, visionneuse) dans [Collections](/help/assets/managing-collections-touch-ui.md). Cependant, ajouter manuellement des listes de contrôle d’accès pour ces groupes peut introduire des vulnérabilités en matière de sécurité dans AEM. Adobe recommande d’éviter d’ajouter des listes de contrôle d’accès manuellement.
 
 ### Listes de contrôle d’accès et leur méthode d’évaluation  {#access-control-lists-and-how-they-are-evaluated}
 
@@ -237,8 +238,8 @@ Les listes de contrôle d’accès sont composées d’autorisations spécifique
 
 | **Action** | **Description** |
 |---|---|
-| Autoriser (coche) | aem WCM permet à l’utilisateur d’effectuer l’action sur cette page ou sur n’importe quelle page enfant. |
-| Refuser (aucune coche) | aem WCM ne permet pas à l’utilisateur d’effectuer l’action sur cette page ni sur aucune page enfant. |
+| Autoriser (coche) | AEM WCM permet à l’utilisateur d’effectuer l’action sur cette page ou sur n’importe quelle page enfant. |
+| Refuser (aucune coche) | AEM WCM ne permet pas à l’utilisateur d’effectuer l’action sur cette page ni sur aucune page enfant. |
 
 Les autorisations sont également appliquées à toutes les pages enfants.
 
