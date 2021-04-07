@@ -9,16 +9,18 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
+exl-id: ecb489e2-fd6f-4163-9739-5d7ff497d305
+feature: Ressources 3D
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '543'
 ht-degree: 78%
 
 ---
 
-
-# Configuration d’une étape IBL avec Autodesk Maya et Mental Ray  {#setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray}
+# Configuration d’une étape IBL avec Autodesk Maya et Mental Ray {#setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray}
 
 1. Dans Maya, créez une nouvelle scène vide.
 
@@ -27,7 +29,7 @@ ht-degree: 78%
 
    1. Dans **[!UICONTROL Paramètres de rendu]**, sélectionnez **[!UICONTROL Rendu avec : rayon mental]**, puis ouvrez l’onglet Scène.
    1. Ouvrez l’accordéon **[!UICONTROL Render Environnement]** et cliquez sur **[!UICONTROL Render Create Image Based Lighting]**.
-   1. Cliquez sur l’icône de zone contenant une flèche vers la droite sur le côté gauche de la zone pour sélectionner le noeud IBL `mentalRayIblShape1`, puis quittez **[!UICONTROL Paramètres de rendu]**.
+   1. Cliquez sur l’icône de la zone contenant une flèche vers la droite sur le côté gauche de la zone pour sélectionner le noeud IBL `mentalRayIblShape1`, puis quittez **[!UICONTROL Paramètres de rendu]**.
    1. Dans l’**[!UICONTROL éditeur d’attributs]**, sélectionnez le noeud de transformation `mentalRayIbl1`, puis renommez le noeud de transformation en `AdobeIbl`.
    1. Définissez l’Échelle du nœud pour agrandir la sphère d’environnement afin que celle-ci soit bien plus grande que l’objet 3D le plus grand à afficher avec cette étape (par exemple, `10000,10000,10000`).
    1. Sélectionnez le nœud `AdobeIblShape` et configurez-le comme suit :
@@ -82,4 +84,3 @@ ht-degree: 78%
 1. Ouvrez les Propriétés de ressource dans AEM. Définissez **[!UICONTROL Title]** sur une chaîne appropriée qui apparaîtra dans la liste déroulante **[!UICONTROL Sélecteur d’état]**. Vérifiez que **[!UICONTROL Classe]** est définie sur **[!UICONTROL Étape 3D]**. Enregistrez et fermez.
 
 1. Ouvrez une ressource 3D, sélectionnez la nouvelle étape, et vérifiez qu’elle affiche un aperçu et présente un rendu comme prévu.
-
