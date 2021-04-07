@@ -7,16 +7,18 @@ uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
+exl-id: dd43de7b-8556-4e3f-9d90-14f0f5bd13e7
+feature: Configuration
+role: Administrator,Business Practitioner,Developer
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '275'
 ht-degree: 74%
 
 ---
 
-
-# Configuration de Dynamic Media   {#setting-up-dynamic-media}
+# Configuration de Dynamic Media {#setting-up-dynamic-media}
 
 [Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) facilite la gestion des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
@@ -44,3 +46,4 @@ Voir aussi les rubriques suivantes :
 >**Si vous effectuez une mise à niveau :**
 >
 >* Après la mise en service d’AEM, toutes les ressources que vous chargez sont automatiquement activées pour Dynamic Media (à moins que cela n’ait été explicitement désactivé par votre administrateur système). Si vous utilisez une instance mise à niveau d’AEM et que Dynamic Media est nouveau pour vous, vous devrez peut-être retraiter vos ressources pour les rendre compatibles avec Dynamic Media.
+
