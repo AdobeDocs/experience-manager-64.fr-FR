@@ -7,16 +7,18 @@ uuid: de88f68f-4697-4ff0-8008-3ae6a4684a84
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
+exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
+feature: Configuration, mode hybride
+role: Administrator,Business Practitioner,Developer
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '7793'
+source-wordcount: '7796'
 ht-degree: 54%
 
 ---
 
-
-# Configuration de Dynamic Media – mode hybride  {#configuring-dynamic-media-hybrid-mode}
+# Configuration de Dynamic Media – mode hybride {#configuring-dynamic-media-hybrid-mode}
 
 Dynamic Media - Hybrid doit être activé et configuré pour être utilisé. Selon l’utilisation que vous souhaitez en faire, Dynamic Media prend en charge [plusieurs configurations](#supported-dynamic-media-configurations).
 
@@ -58,7 +60,7 @@ Les tâches de configuration suivantes font référence aux termes suivants :
 | **Terme** | **Dynamic Media activé** | **Description** |
 |---|---|---|
 | Noeud d’auteur AEM | Coche blanche dans un cercle vert | Noeud d’auteur que vous déployez sur site ou via Managed Services. |
-| aem noeud de publication | &quot;X&quot; blanc dans un carré rouge. | Noeud de publication que vous déployez sur site ou via Managed Services. |
+| AEM noeud de publication | &quot;X&quot; blanc dans un carré rouge. | Noeud de publication que vous déployez sur site ou via Managed Services. |
 | Noeud de publication Image Service | Coche blanche en cercle vert. | Noeud de publication que vous exécutez sur les centres de données gérés par Adobe. Renvoie à l’URL du service d’images. |
 
 Vous pouvez choisir d’implémenter Dynamic Media uniquement pour les images, uniquement pour les vidéos ou à la fois pour les images et les vidéos. Pour déterminer les étapes à suivre pour configurer Dynamic Media pour votre scénario, reportez-vous au tableau suivant.
@@ -192,7 +194,7 @@ Dans un déploiement AEM QuickStart WAR, le numéro de port et le chemin de cont
 >[!NOTE]
 Dans un [déploiement autonome Quickstart AEM](/help/sites-deploying/deploy.md), un domaine **self** n’a généralement pas besoin d’être configuré, car le numéro de port et le chemin d’accès au contexte peuvent s’autoconfigurer. Si toutefois toutes les interfaces réseau sont désactivées, vous devez configurer le domaine **self**.
 
-## Désactivation de Dynamic Media   {#disabling-dynamic-media}
+## Désactivation de Dynamic Media  {#disabling-dynamic-media}
 
 Dynamic Media est désactivé par défaut. Toutefois, si vous l’avez activé, vous voudrez peut-être le désactiver.
 
@@ -284,7 +286,7 @@ Vous devez configurer l’authentification de la réplication sur l’auteur afi
 
    Vous devez ensuite [configurer l’agent de réplication.](#configuring-the-replication-agent)
 
-### Configuration de l’agent de réplication  {#configuring-the-replication-agent}
+### Configuration de l’agent de réplication {#configuring-the-replication-agent}
 
 1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale, puis appuyez sur **[!UICONTROL Outils > Déploiement > Réplication  > Agents sur l’auteur]**.
 1. Dans la page Agents sur l’auteur, appuyez ou cliquez sur **[!UICONTROL Réplication des images hybrides Dynamic Media (s7delivery)]**.
@@ -333,7 +335,7 @@ Vous pouvez aussi procéder de l’une des manières suivantes :
 
 Lors de la configuration de l’authentification, voici certains problèmes que vous pourriez rencontrer, ainsi que leurs solutions. Avant de commencer, vérifiez que vous avez configuré la réplication.
 
-#### Problème : Code d’état HTTP 401 avec message - Autorisation requise  {#problem-http-status-code-with-message-authorization-required}
+#### Problème : Code d’état HTTP 401 avec message - Autorisation requise {#problem-http-status-code-with-message-authorization-required}
 
 Ce problème peut être dû à l’échec de la configuration du KeyStore pour l’utilisateur `dynamic-media-replication`.
 
@@ -548,7 +550,7 @@ Assurez-vous que le package prédéfini [!DNL Video Analytics] du premier noeud 
    * **Vérifiez le  [!DNL Video Analytics] paramètre prédéfini au moyen du**
 JCRTou vérifiez le  [!DNL Video Analytics] paramètre prédéfini au moyen du JCR, vous devez avoir accès au  **[!UICONTROL CRXDE Lite]**.
 
-      aem - Dans **[!UICONTROL CRXDE Lite]**, accédez à `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata  `
+      AEM - Dans **[!UICONTROL CRXDE Lite]**, accédez à `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata  `
 
       C&#39;est `http://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
 
@@ -605,7 +607,7 @@ Les propriétés des paramètres prédéfinis sont les suivantes :
 * **[!UICONTROL trackingNamespace]**
 * **[!UICONTROL marketingCloudOrgId]**  (non présent dans les anciennes versions AEM)
 
-aem 6.4 et les versions ultérieures enregistrent ce paramètre prédéfini à `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
+AEM 6.4 et les versions ultérieures enregistrent ce paramètre prédéfini à `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
 ## Réplication des paramètres de catalogue {#replicating-catalog-settings}
 
@@ -858,7 +860,7 @@ Dynamic Media fonctionne [dès qu&#39;il est activé](#enabling-dynamic-media). 
  </tbody> 
 </table>
 
-1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
+1. Appuyez sur **[!UICONTROL Enregistrer]**.
 1. Dans la liste des lots, à droite de **[!UICONTROL Adobe CQ Scene7 PlatformServer]**, appuyez sur l&#39;icône **[!UICONTROL Modifier]**.
 1. Dans la boîte de dialogue **[!UICONTROL Scene7 PlatformServer]** de Adobe CQ, définissez les options de valeur par défaut suivantes :
 
