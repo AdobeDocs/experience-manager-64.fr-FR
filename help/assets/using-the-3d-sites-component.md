@@ -9,18 +9,20 @@ topic-tags: 3D
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 9017ab55-6d4a-4306-922f-223ab1b2504b
+exl-id: bf87b470-08c8-44b4-95d9-1251586b0610
+feature: Ressources 3D
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1043'
 ht-degree: 36%
 
 ---
 
-
 # Utilisation du composant Sites 3D {#working-with-the-d-sites-component}
 
-aem 3D comprend un composant AEM Sites que vous pouvez utiliser pour implémenter l&#39;affichage interactif de modèles 3D sur des pages Web.
+AEM 3D comprend un composant AEM Sites que vous pouvez utiliser pour implémenter l&#39;affichage interactif de modèles 3D sur des pages Web.
 
 Une fois que vous avez ajouté votre composant 3D, vous pouvez [afficher la ressource 3D dans ce composant.](viewing-3d-assets.md)
 
@@ -134,7 +136,7 @@ Vous devez activer le composant 3D dans la page avant de pouvoir le placer sur u
    Outre les paramètres disponibles dans la boîte de dialogue de configuration des composants, un certain nombre de paramètres de configuration globale peuvent être modifiés par le CRXDE Lite.
 Voir [Paramètres de configuration avancée](advanced-config-3d.md) pour plus d’informations sur ces paramètres globaux.
 
-## Attribution d’un modèle 3D au composant  {#assigning-a-d-model-to-the-component}
+## Attribution d’un modèle 3D au composant {#assigning-a-d-model-to-the-component}
 
 1. Dans l’éditeur de page AEM Sites, cliquez sur l’icône **[!UICONTROL Ressources]** pour ouvrir la liste Ressources dans le panneau latéral.
 
@@ -172,4 +174,3 @@ Voir [Publication de ressources](managing-assets-touch-ui.md) pour obtenir des 
 >L&#39;utilisation de l&#39;option de menu **[!UICONTROL Publier la page]** du menu **[!UICONTROL Informations sur la page]** permet de publier la page et toutes les dépendances Principales de la page. Les dépendances secondaires qui peuvent être référencées par le modèle 3D et/ou la scène 3D, telles que les textures plaquées et les images IBL, ne sont pas publiées lorsque vous publiez la page de cette manière.
 >
 >Adobe vous recommande de publier tous les actifs 3D et leurs dépendances directement depuis AEM Assets, avant de publier la page Web qui les référence.
-
