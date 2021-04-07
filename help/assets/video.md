@@ -5,20 +5,22 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
+exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
+feature: Vidéo
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '10392'
-ht-degree: 76%
+source-wordcount: '10393'
+ht-degree: 77%
 
 ---
-
 
 # Vidéo {#video}
 
 Cette section décrit l’utilisation de vidéos dans Dynamic Media.
 
-## Démarrage rapide : vidéos   {#quick-start-videos}
+## Démarrage rapide : vidéos {#quick-start-videos}
 
 Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapidement les opérations liées aux visionneuses de vidéos adaptatives dans Dynamic Media. Chaque étape comporte des renvois à des rubriques contenant de plus amples informations.
 
@@ -55,14 +57,14 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 
 1. **Gérez les vidéos Dynamic Media** en effectuant les opérations suivantes :
 
-   * Organiser, parcourir et rechercher des ressources vidéo
+   * Organisez, parcourez et recherchez des ressources vidéo
 
       * [Organisation des ressources numériques](organize-assets.md)
 
          En savoir plus sur les [bonnes pratiques relatives à l’organisation des ressources numériques en vue de l’utilisation de profils de traitement](organize-assets.md#organize-using-folders)
 
       * [Recherche de ressources vidéo](search-video-assets.md) ou [Recherche de ressources](managing-assets-touch-ui.md#searching-assets)
-   * Prévisualiser et publier des ressources vidéo
+   * Prévisualisez et publiez des ressources vidéo
 
       * Affichez la vidéo source et les rendus codés de la vidéo avec les miniatures associées :
 
@@ -115,7 +117,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 
 
 
-## Utilisation de vidéo dans Dynamic Media   {#working-with-video-in-dynamic-media}
+## Utilisation de vidéo dans Dynamic Media  {#working-with-video-in-dynamic-media}
 
 La vidéo dans Dynamic Media est une solution complète qui facilite la publication de vidéos adaptatives haute qualité pour la diffusion sur plusieurs écrans, notamment les postes de travail et les appareils mobiles iOS, Android, Blackberry et Windows. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. L’ordinateur de bureau ou l’appareil mobile détecte la bande passante disponible.
 
@@ -144,7 +146,7 @@ Pour la gestion des visionneuses de vidéos adaptative et unique, les fonctions 
 * Organiser, parcourir et effectuer des recherches dans la vidéo avec une prise en charge complète des métadonnées pour une gestion efficace des ressources vidéo.
 * Proposer des visionneuses de vidéos adaptatives en ligne ainsi que sur des postes de travail et des appareils mobiles (iPhone, iPad, Android, Blackberry et Windows Phone notamment).
 
-La diffusion de vidéo adaptative en flux continu est prise en charge sur diverses plates-formes iOS. Consultez le [Guide de référence des visionneuses d’Adobes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+La diffusion de vidéo adaptative en flux continu est prise en charge sur diverses plates-formes iOS. Consultez le [Guide de référence des visionneuses d’Adobes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=fr).
 
 Dynamic Media prend en charge la lecture vidéo pour mobiles au format vidéo MP4 H.264. Les appareils Blackberry qui prennent en charge ce format vidéo sont répertoriés dans la liste : [Formats vidéo pris en charge sur Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -174,7 +176,7 @@ En combinant dans un lecteur unique la capacité de concevoir les composants de 
 
 Voir aussi [À propos des visionneuses HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) dans le guide de référence des visionneuses d’Adobe 
 
-### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5   {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5  {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 Pour la diffusion en flux continu de la vidéo adaptative sur un poste de travail et un appareil mobile, les vidéos utilisées pour le changement de débit reposent sur toutes les vidéos MP4 dans la visionneuse de vidéos adaptative.
 
@@ -189,7 +191,7 @@ HLS (HTTP Live Streaming) est une norme d’Apple pour la diffusion de vidéo ad
 
 La vidéo progressive est fournie grâce au téléchargement et à l’enregistrement de la vidéo en local sur l’écran du poste de bureau ou de l’appareil mobile de l’utilisateur.
 
-Le tableau suivant décrit la méthode de lecture, de navigateur et de périphérique mobile des vidéos sur les ordinateurs de bureau et les périphériques mobiles à l’aide de la visionneuse vidéo Dynamic Media.
+Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lecture des vidéos sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos Dynamic Media.
 
 <table> 
  <tbody> 
@@ -206,7 +208,7 @@ Le tableau suivant décrit la méthode de lecture, de navigateur et de périphé
   <tr> 
    <td>Poste de travail</td>
    <td>Internet Explorer 11+</td>
-   <td>Sous Windows 8 et Windows 10 - Forcer l’utilisation de HTTPS chaque fois que HLS est demandé. Limites connues : HTTP sur HLS ne fonctionne pas avec cette combinaison de navigateur/système d’exploitation<br /> <br /> Sous Windows 7 - Téléchargement progressif. Utilise la logique standard pour sélectionner le protocole HTTP ou HTTPS.</td>
+   <td>Sous Windows 8 et Windows 10 – Forcer l’utilisation de HTTPS chaque fois que HLS est demandé. Limites connues : HTTP sur HLS ne fonctionne pas avec cette combinaison de navigateur/système d’exploitation<br /> <br /> Sous Windows 7 – Téléchargement progressif. Utilise la logique standard pour sélectionner le protocole HTTP ou HTTPS.</td>
   </tr>
   <tr> 
    <td>Poste de travail</td>
@@ -221,7 +223,7 @@ Le tableau suivant décrit la méthode de lecture, de navigateur et de périphé
   <tr> 
    <td>Poste de travail</td>
    <td>Chrome</td>
-   <td>HLS diffusion vidéo en flux continu.</td>
+   <td>Diffusion vidéo en flux continu HLS.</td>
   </tr>
   <tr> 
    <td>Poste de travail</td>
@@ -261,7 +263,7 @@ Le tableau suivant décrit la méthode de lecture, de navigateur et de périphé
  </tbody>
 </table>
 
-## Architecture de la solution vidéo Dynamic Media   {#architecture-of-dynamic-media-video-solution}
+## Architecture de la solution vidéo Dynamic Media  {#architecture-of-dynamic-media-video-solution}
 
 Le graphique suivant montre le processus global de création de vidéos qui sont téléchargées et codées par le biais de DMGateway et mises à disposition pour une consommation publique.
 
@@ -280,7 +282,7 @@ Vous trouverez ci-dessous quelques conseils sur les bonnes pratiques de codage d
 Pour obtenir plus de conseils sur le codage vidéo, voir :
 
 * Article : *Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution: (« Diffusion en continu : notions fondamentales - codecs, bande passante, débit de données et résolution »)*[www.adobe.com/go/learn_s7_streaming101_fr](https://www.adobe.com/go/learn_s7_streaming101_fr).
-* Vidéo : *Video Encoding Basics (« Principes de base du codage vidéo ») :*[www.adobe.com/go/learn_s7_encoding_fr](https://www.adobe.com/go/learn_s7_encoding_fr)
+* Vidéo : *Video Encoding Basics (« Principes de base du codage vidéo ») :*[www.adobe.com/go/learn_s7_encoding_fr](https://www.adobe.com/go/learn_s7_encoding_en)
 
 ### Fichiers vidéo source {#source-video-files}
 
@@ -321,7 +323,7 @@ Ce tableau décrit la façon dont les résultats de la formule se traduisent en 
 
 Par exemple, une vidéo qui a une largeur de 1440 pour une hauteur de 1080 a un format de 1440/1080, soit 1,33. Dans ce cas, vous choisissez un paramètre prédéfini de codage vidéo avec un format de 4:3 pour le codage du fichier vidéo.
 
-### Débit binaire   {#bitrate}
+### Débit binaire  {#bitrate}
 
 Le débit correspond à la quantité de données encodées pour produire une seule seconde de lecture vidéo. Le débit de données est mesuré en kilobits par seconde (kbit/s).
 
@@ -354,7 +356,7 @@ Ce tableau décrit le débit de données associé à des vitesses de connexion c
 
 ### Résolution {#resolution}
 
-La **résolution** décrit la hauteur et la largeur d’un fichier vidéo, exprimée en pixels. La plupart des vidéos sources sont stockées à une résolution élevée (par exemple, 1 920 x 1 080). À des fins de diffusion en flux continu, la vidéo source est compressée à une résolution inférieure (640 x 480, voire moins).
+La **résolution** décrit la hauteur et la largeur d’un fichier vidéo, exprimée en pixels. La plupart des vidéos sources sont stockées à une résolution élevée (par exemple, 1 920 x 1 080). À des fins de diffusion en flux continu, la vidéo source est compressée à une résolution inférieure (640 x 480, voire moins).
 
 La résolution et le débit de données sont deux facteurs étroitement liés qui déterminent la qualité de la vidéo. Pour maintenir la même qualité vidéo, plus le nombre de pixels (c’est-à-dire la résolution) est élevé dans un fichier vidéo, plus le débit de données doit l’être également. Par exemple, considérez le nombre de pixels par image dans un fichier vidéo d’une résolution de 320 x 240 pixels et dans un fichier vidéo d’une résolution de 640 x 480 pixels :
 
@@ -411,7 +413,7 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
    <td><p>Source</p> </td> 
    <td><p>1 920 x 1 080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codée</p> </td> 
@@ -438,7 +440,7 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
 
 Dynamic Media recommande d’utiliser les paramètres prédéfinis MP4 H.264 de codage vidéo. Comme les fichiers MP4 utilisent le codec vidéo H.264, la vidéo est de haute qualité mais dans un fichier au volume compressé.
 
-## Publication de vidéos sur YouTube   {#publishing-videos-to-youtube}
+## Publication de vidéos sur YouTube  {#publishing-videos-to-youtube}
 
 Vous pouvez publier des ressources vidéo AEM on-premise directement sur une chaîne YouTube que vous avez précédemment créée.
 
@@ -460,7 +462,7 @@ Pour garantir une authentification serveur à serveur sécurisée avec YouTube, 
 
 Vous pouvez également [annuler la publication de vidéos pour les supprimer de YouTube](#unpublishing-videos-to-remove-them-from-youtube).
 
-### Configuration des paramètres de Google Cloud   {#configuring-google-cloud-settings}
+### Configuration des paramètres de Google Cloud  {#configuring-google-cloud-settings}
 
 Pour effectuer une publication sur YouTube, vous avez besoin d’un compte Google. Si vous avez un compte GMAIL, vous avez déjà un compte Google. Si vous n&#39;avez pas de compte Google, vous pouvez facilement en créer un. Un compte est nécessaire, car vous avez besoin des informations d’identification pour publier des ressources vidéo sur YouTube. Si vous avez déjà créé un compte, ignorez cette tâche et passez à [Création d’un canal YouTube](#creating-a-youtube-channel).
 
@@ -482,14 +484,14 @@ Pour effectuer une publication sur YouTube, vous avez besoin d’un compte Googl
 1. Dans la boîte de dialogue **[!UICONTROL Nouveau projet]**, entrez un nom de projet.
 
      Notez que votre ID de projet est basé sur le nom du projet. Par conséquent, choisissez soigneusement le nom du projet ; il ne peut pas être modifié une fois créé. Vous devrez également saisir à nouveau le même ID de projet lorsque vous aurez configuré YouTube à Adobe Experience Manager ultérieurement. Il est conseillé de conserver l’ID de projet sur une feuille de papier.
-1. Appuyez sur **[!UICONTROL Créer]**. 
+1. Appuyez sur **[!UICONTROL Créer]**.
 
 1. Sur le **[!UICONTROL Tableau de bord]** de votre projet, dans la carte **[!UICONTROL Prise en main]**, appuyez sur **[!UICONTROL Activer les API et obtenez des informations d’identification telles que clés]**.
 1. Près du haut de la page **[!UICONTROL Tableau de bord]**, appuyez sur **[!UICONTROL Activer l’API]**.
 1. Sur la page **[!UICONTROL Bibliothèque]**, sous API YouTube, appuyez sur **[!UICONTROL API de données YouTube]**.
 1. Près du haut de la page **[!UICONTROL API de données YouTube v3]**, appuyez sur **[!UICONTROL Activer]** pour l’activer.
 1. Pour utiliser l’API, vous aurez peut-être besoin d’identifiants. Si nécessaire, appuyez sur **[!UICONTROL Créer des informations d’identification]**.
-1. Depuis la liste déroulante **[!UICONTROL Depuis où appellerez-vous l’API ?]**, sélectionnez **[!UICONTROL Serveur web (par exemple, node.js, Tomcat)]**.
+1. Depuis la liste déroulante **[!UICONTROL Quelle plate-forme utilisez-vous pour appeler l’API ?]**, sélectionnez **[!UICONTROL Serveur web (exemple : node.js, Tomcat)]**.
 1. Sous **[!UICONTROL À quelles données aurez-vous accès ?]** sélectionnez **[!UICONTROL Données utilisateur]**.
 1. Appuyez sur **[!UICONTROL De quels identifiants ai-je besoin ?]**.
 1. Sous l’en-tête **[!UICONTROL Créer un ID client OAuth 2.0]**, saisissez un nom unique.
@@ -568,7 +570,7 @@ Ou, si vous prévoyez d’utiliser les balises par défaut dans AEM, vous pouvez
 1. Dans le coin supérieur gauche de l’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils > Déploiement > Cloud Services]**.
 1. Sous l’en-tête **[!UICONTROL Services tiers]**, sous YouTube, appuyez sur **[!UICONTROL Configurer maintenant]**.
 1. Dans la boîte de dialogue **[!UICONTROL Créer une configuration]**, entrez un titre (obligatoire) et un nom (facultatif) dans les champs respectifs.
-1. Appuyez sur **[!UICONTROL Créer]**. 
+1. Appuyez sur **[!UICONTROL Créer]**.
 1. Dans la boîte de dialogue **[!UICONTROL Paramètres du compte YouTube]**, dans le champ **[!UICONTROL Nom de l’application]**, saisissez l’identifiant de projet Google.
 
    Vous avez spécifié l’ID de projet lorsque vous avez précédemment configuré les paramètres de Google Cloud.
@@ -681,7 +683,7 @@ Pour créer le profil de traitement des métadonnées, vous allez d’abord copi
 
    Voir [Profils de métadonnées](metadata-profiles.md) et [Profils vidéo](video-profiles.md).
 
-### Publication de vidéos sur votre chaîne YouTube   {#publishing-videos-to-your-youtube-channel}
+### Publication de vidéos sur votre chaîne YouTube  {#publishing-videos-to-your-youtube-channel}
 
 Vous devez maintenant associer les balises que vous avez précédemment ajoutées aux ressources vidéo. Ce processus permet à AEM de déterminer les ressources à publier sur votre chaîne YouTube.
 
@@ -730,7 +732,7 @@ L’URL YouTube ne peut pas être copiée tant que vous n’avez pas publié la 
 1. Sélectionnez l&#39;onglet **[!UICONTROL Avancé]**.
 1. Sous l’en-tête **[!UICONTROL Publication YouTube]**, dans la Liste **[!UICONTROL URL YouTube]**, sélectionnez et copiez le texte de l’URL dans votre navigateur Web pour prévisualisation de la ressource ou pour l’ajouter à votre page de contenu Web.
 
-### Annulation de la publication d’une vidéo pour la supprimer de YouTube   {#unpublishing-videos-to-remove-them-from-youtube}
+### Annulation de la publication d’une vidéo pour la supprimer de YouTube  {#unpublishing-videos-to-remove-them-from-youtube}
 
 Lorsque vous annulez la publication d’une ressource vidéo dans AEM, la vidéo est supprimée de YouTube.
 
@@ -748,7 +750,7 @@ Voir [Surveillance du codage vidéo et de la progression de la publication sur Y
 1. Dans un mode de sélection de ressource, sélectionnez une ou plusieurs ressources vidéo publiées.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Annuler la publication > Annuler la publication]**.
 
-## Surveillance du codage vidéo et de la progression de la publication sur YouTube   {#monitoring-video-encoding-and-youtube-publishing-progress}
+## Surveillance du codage vidéo et de la progression de la publication sur YouTube  {#monitoring-video-encoding-and-youtube-publishing-progress}
 
 Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage vidéo a été appliqué ou que vous publiez votre vidéo sur YouTube, vous pouvez contrôler la manière dont votre codage vidéo/publication YouTube progresse (ou échoue) de plusieurs façons. La progression de la publication YouTube réelle est uniquement disponible via les journaux mais sa réussite ou son échec sont également répertoriés et décrits dans la procédure suivante. En outre, vous pouvez recevoir des notifications par courrier électronique lorsqu’un processus de publication YouTube ou un codage vidéo est terminé ou interrompu.
 
@@ -899,9 +901,9 @@ Pour que les rapports vidéo fonctionnent correctement, un identifiant de suite 
 
 1. Dans le tableau qui répertorie les principales vidéos publiées, appuyez sur le nom d’une vidéo pour la lire et afficher également le rapport sur la rétention de l’audience (taux de déperdition) de celle-ci.
 
-### Affichage des rapports vidéo basés sur une visionneuse de vidéos que vous avez créée à l’aide du kit de développement de visionneuse HTML5 de Dynamic Media {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Affichage de rapports vidéo reposant sur une visionneuse de vidéos créée à l’aide du SDK Dynamic Media HTML5 Viewer {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Si vous utilisez une visionneuse de vidéos prête à l’emploi fournie par Dynamic Media ou si vous avez créé un paramètre prédéfini de visionneuse personnalisée à partir d’une visionneuse de vidéos prête à l’emploi, aucune autre procédure n’est nécessaire pour vue des rapports vidéo. Cependant, si vous avez créé votre propre visionneuse de vidéos à partir de l’API du kit de développement de visionneuse HTML5, suivez les étapes ci-après pour vous assurer que la visionneuse de vidéos envoie des événements de suivi aux rapports vidéo Dynamic Media.
+Si vous utilisez une visionneuse de vidéos prête à l’emploi fournie par Dynamic Media ou si vous avez créé un paramètre prédéfini de visionneuse personnalisée reposant sur une visionneuse de vidéos prête à l’emploi, aucune autre étape n’est nécessaire pour afficher les rapports vidéo. Cependant, si vous avez créé votre propre visionneuse de vidéos à partir de l’API du kit de développement de visionneuse HTML5, suivez les étapes ci-après pour vous assurer que la visionneuse de vidéos envoie des événements de suivi aux rapports vidéo Dynamic Media.
 
 Utilisez le [Guide de référence des visionneuses Dynamic Media Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) et l&#39;[API du kit de développement de visionneuse HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) pour créer vos propres visionneuses de vidéos.
 
@@ -975,7 +977,7 @@ Les sous-titres offrent également une meilleure accessibilité en utilisant des
 
 Dynamic Media peut convertir des fichiers de sous-titres au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour permettre de trouver plus facilement les vidéos et fournir aux utilisateurs des informations supplémentaires sur le contenu des vidéos.
 
-Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL, voir [Diffusion du contenu statique (sans image)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) dans l’*Aide de l’API de diffusion et de rendu d’images de Dynamic Media*.
+Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL, voir [Diffusion du contenu statique (sans image)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=fr#image-serving-api) dans l’*Aide de l’API de diffusion et de rendu d’images de Dynamic Media*.
 
 **Pour ajouter des sous-titres à une vidéo**:
 
@@ -1032,9 +1034,9 @@ Vous pouvez faciliter la lecture et le parcours de vos vidéos les plus longues 
 
 Si vous le souhaitez, vous pouvez créer votre propre visionneuse personnalisée, et lui donner le nom de votre marque, avec des chapitres au lieu d’utiliser le paramètre prédéfini de la visionneuse de vidéos. Pour obtenir des instructions sur la création de votre propre visionneuse HTML5 avec une navigation de chapitre, dans l’API Adobe du kit de développement de la visionneuse HTML5, consultez l’en-tête &quot;Personnalisation du comportement à l’aide de modificateurs&quot; sous les classes `s7sdk.video.VideoPlayer` et `s7sdk.video.VideoScrubber`. Consultez la [documentation sur l’API du kit de développement de visionneuse HTML5]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)).
 
-  Vous créez une liste de chapitres pour votre vidéo un peu de la même façon que vous créez des sous-titres. Autrement dit, vous créez un fichier WebVTT. Notez toutefois que ce fichier doit être distinct de tout fichier de sous-titrage WebVTT que vous pourriez également être amené à utiliser ; vous ne pouvez pas combiner les sous-titres et les chapitres dans un fichier WebVTT.
+Vous créez une liste de chapitres pour votre vidéo un peu de la même façon que vous créez des sous-titres. Autrement dit, vous créez un fichier WebVTT. Notez toutefois que ce fichier doit être distinct de tout fichier de sous-titrage WebVTT que vous pourriez également être amené à utiliser ; vous ne pouvez pas combiner les sous-titres et les chapitres dans un fichier WebVTT.
 
-  Vous pouvez utiliser l’exemple suivant comme un exemple du format que vous pouvez utiliser pour créer un fichier WebVTT avec une navigation par chapitre :
+Vous pouvez utiliser l’exemple suivant comme un exemple du format que vous pouvez utiliser pour créer un fichier WebVTT avec une navigation par chapitre :
 
 ### Fichier WebVTT avec navigation par chapitre vidéo {#webvtt-file-with-video-chapter-navigation}
 
@@ -1056,7 +1058,7 @@ Cost-efficient access to rapidly evolving technology.
 
 Dans l’exemple ci-dessus, le `Chapter 1` est l’identifiant de repère et il est facultatif. La période de repère `00:00:000 --> 01:04:364` indique l’heure de début et l’heure de fin du chapitre au format `00:00:000`. Les trois derniers chiffres sont les millisecondes et peuvent être laissés sur `000`, selon vos préférences. Le titre du chapitre `The bicycle store behind it all` est la description réelle du contenu du chapitre. L’identifiant de repère, l’heure de départ du repère, ainsi que le titre du chapitre apparaissent tous dans une fenêtre contextuelle du lecteur vidéo lorsqu’un utilisateur pointe la souris sur un point de repère visuel dans la chronologie de la vidéo.
 
-  Étant donné que vous utilisez une visionneuse de vidéos HTML5, assurez-vous que le fichier de chapitres que vous créez est conforme à la norme WebVTT (Web Video Text Tracks). L’extension de nom de fichier de chapitres est .vtt. D’autres informations sur la norme de sous-titrage WebVTT sont disponibles.
+Étant donné que vous utilisez une visionneuse de vidéos HTML5, assurez-vous que le fichier de chapitres que vous créez est conforme à la norme WebVTT (Web Video Text Tracks). L’extension de nom de fichier de chapitres est .vtt. D’autres informations sur la norme de sous-titrage WebVTT sont disponibles.
 
 Reportez-vous à la section [WebVTT : The web video text tracks format](https://dev.w3.org/html5/webvtt/)
 
@@ -1068,7 +1070,7 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
 
 1. Enregistrez le fichier `.vtt` dans l’encodage UTF8 afin d’éviter tout problème de rendu de caractères dans le texte du titre du chapitre.
 
-     En règle générale, vous attribuez au fichier de chapitres VTT le même nom que celui du fichier vidéo et lui ajoutez le mot « chapitres ». Ainsi, vous pouvez automatiser aisément la génération des URL de vidéo avec le système de gestion de contenu web existant.
+   En règle générale, vous attribuez au fichier de chapitres VTT le même nom que celui du fichier vidéo et lui ajoutez le mot « chapitres ». Ainsi, vous pouvez automatiser aisément la génération des URL de vidéo avec le système de gestion de contenu web existant.
 1. Dans AEM, chargez votre fichier de chapitres WebVTT.
 
    Voir la section [Chargement des ressources](managing-assets-touch-ui.md#uploading-assets).
@@ -1124,7 +1126,7 @@ Si vous préférez, vous pouvez charger une miniature personnalisée pour repré
 1. En mode de sélection des ressources, appuyez sur la ressource vidéo, soit à partir de la **[!UICONTROL Vue de Liste]**, soit à partir de la **[!UICONTROL Vue de carte]**.
 1. Dans la barre d’outils, appuyez sur l’icône **[!UICONTROL Afficher les propriétés]** (icône en forme de cercle avec un « i » à l’intérieur).
 1. Sur la page **[!UICONTROL Propriétés]** de la vidéo, appuyez sur **[!UICONTROL Modifier la miniature]**.
-1. Sur la page **[!UICONTROL Modifier la miniature]**, sur la barre d’outils, appuyez sur **[!UICONTROL Sélectionner l’image]**.
+1. Sur la page **[!UICONTROL Modifier la miniature]**, dans la barre d’outils, appuyez sur **[!UICONTROL Sélectionner l’image]**.
 
    Dynamic Media génère une série de miniatures de votre vidéo, en fonction de l’intervalle par défaut ou personnalisé.
 
