@@ -9,16 +9,18 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 05b7410b-82a1-4267-ac07-2edbc29e9ee8
+exl-id: 088d32a8-a47e-4ae6-a171-8d327d3dac64
+feature: Ressources 3D
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 47%
+source-wordcount: '350'
+ht-degree: 48%
 
 ---
 
-
-# Résolution des dépendances de fichier  {#resolving-file-dependencies}
+# Résolution des dépendances de fichier {#resolving-file-dependencies}
 
 Les dépendances des principaux fichiers de modèle 3D, tels que les fichiers de mappage de texture, sont résolues automatiquement, lorsque cela s’avère possible. Pour exécuter cette fonctionnalité, AEM recherche dans les dossiers d’éléments voisins les fichiers ayant les mêmes noms que ceux figurant dans le fichier 3D. Si une ou plusieurs dépendances ne peuvent pas être résolues au cours de l’étape de traitement Création de la prévisualisation, la carte du fichier affiche le message de bannière rouge suivant dans la **[!UICONTROL Vue de carte]** :
 
@@ -58,4 +60,3 @@ Les dépendances des principaux fichiers de modèle 3D, tels que les fichiers d
 1. Appuyez sur **[!UICONTROL Fermer]****[!UICONTROL pour revenir au mode Carte]**.
 
    La ressource est automatiquement traitée à nouveau avec les dépendances qui viennent d’être résolues.
-
