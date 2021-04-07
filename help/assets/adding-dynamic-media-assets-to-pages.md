@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
+exl-id: bb97b649-a50d-49c8-97aa-18c32f18d527
+feature: Composants
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '2825'
-ht-degree: 61%
+source-wordcount: '2826'
+ht-degree: 62%
 
 ---
-
 
 # Ajout de ressources Dynamic Media aux pages {#adding-dynamic-media-assets-to-pages}
 
@@ -28,7 +30,7 @@ Vous pouvez ajouter directement des fichiers multimédias dynamiques à la page 
 >
 >Vous devez publier les ressources avant de les ajouter aux pages d’AEM. Voir [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md).
 
-## Ajout d’un composant Dynamic Media à une page  {#adding-a-dynamic-media-component-to-a-page}
+## Ajout d’un composant Dynamic Media à une page {#adding-a-dynamic-media-component-to-a-page}
 
 Ajouter un composant Dynamic Media à une page revient à ajouter un composant à une page. Les composants Dynamic Media sont décrits en détail dans les sections suivantes.
 
@@ -66,8 +68,8 @@ Si aucun composant Dynamic Media n’est disponible pour ajouter une page, cela 
 
    ![Composants autorisés](/help/assets/assets-dm/allowed-components.png)
 
-1. Faites défiler l’écran jusqu’à ce que vous voyiez **[!UICONTROL Dynamic Media]**.
-1. Appuyez sur l’icône > située à gauche de **[!UICONTROL Dynamic Media]** pour développer la liste, puis sélectionnez les composants Dynamic Media à activer.
+1. Faites défiler l’écran jusqu’à ce que vous voyiez **[!UICONTROL Média dynamique]**.
+1. Appuyez sur l’icône > située à gauche de **[!UICONTROL Média dynamique]** pour développer la liste, puis sélectionnez les composants Dynamic Media à activer.
 
    ![Liste de composants Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
@@ -111,7 +113,7 @@ Le composant Dynamic Media est intelligent ; selon que vous ajoutez une image ou
 
 >[!NOTE]
 >
->Si vous ajoutez le composant Dynamic Media et si l’option **[!UICONTROL Paramètres de média dynamique]** est vide ou s’il est impossible d’ajouter correctement une ressource, vérifiez les points suivants :
+>Si vous ajoutez le composant Média dynamique et si l’option **[!UICONTROL Paramètres de média dynamique]** est vide ou s’il est impossible d’ajouter correctement une ressource, vérifiez les points suivants :
 >
 >* Vous avez [activé Dynamic Media](config-dynamic.md). Par défaut, ce module complémentaire est désactivé.
 >* L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media ne possèdent pas de fichier pyramid tiff.
@@ -122,7 +124,7 @@ Le composant Dynamic Media est intelligent ; selon que vous ajoutez une image ou
 
 #### En cas d’utilisation d’images  {#when-working-with-images}
 
-Le composant Dynamic Media permet d’ajouter des images dynamiques, notamment des visionneuses d’images, à 360 ° et de supports variés. Vous pouvez effectuer un zoom avant et arrière, faire pivoter une image dans une visionneuse à 360° ou sélectionner une image dans un autre type de visionneuse.
+Le composant Média dynamique permet d’ajouter des images dynamiques, notamment des visionneuses d’images, à 360 ° et de supports variés. Vous pouvez effectuer un zoom avant et arrière, faire pivoter une image dans une visionneuse à 360° ou sélectionner une image dans un autre type de visionneuse.
 
 Vous pouvez également configurer directement dans le composant les paramètres prédéfinis de la visionneuse ou de l’image ou le format de l’image. Pour rendre une image réactive, vous pouvez définir les points d’arrêt ou appliquer un paramètre prédéfini d’image réactive.
 
@@ -170,7 +172,7 @@ HauteurSaisissez la valeur en pixels si vous souhaitez que l’image soit d’un
 
 #### En cas d’utilisation de vidéos {#when-working-with-video}
 
-Le composant Dynamic Media permet d’ajouter une vidéo dynamique à vos pages web. Lorsque vous modifiez le composant, vous pouvez choisir d’utiliser un paramètre prédéfini de la visionneuse de vidéos pour lire la vidéo sur la page.
+Le composant Média dynamique permet d’ajouter une vidéo dynamique à vos pages web. Lorsque vous modifiez le composant, vous pouvez choisir d’utiliser un paramètre prédéfini de la visionneuse de vidéos pour lire la vidéo sur la page.
 
 ![chlimage_1-540](assets/chlimage_1-540.png)
 
@@ -188,8 +190,8 @@ modificateurs de visionneuseLes modificateurs de visionneuse prennent la forme d
 
    Avec les modificateurs de visionneuse, par exemple, vous pouvez effectuer les opérations suivantes :
 
-   * Associez un fichier de sous-titrage à une vidéo [caption.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Associez un fichier de navigation à une vidéo [navigation.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Associez un fichier de sous-titrage à une vidéo [caption.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=fr)
+   * Associez un fichier de navigation à une vidéo [navigation.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=fr)
 
 Vous pouvez modifier les [!UICONTROL Paramètres avancés] suivants en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
@@ -201,7 +203,7 @@ HauteurSaisissez une valeur en pixels si vous souhaitez que la vidéo soit d’u
 
 #### Lorsque vous utilisez le recadrage intelligent {#when-working-with-smart-crop}
 
-Utilisez le composant Dynamic Media pour ajouter des ressources d’images avec recadrage intelligent à vos pages web. Lorsque vous modifiez le composant, vous pouvez choisir d’utiliser un paramètre prédéfini de la visionneuse de vidéos pour lire la vidéo sur la page.
+Utilisez le composant Média dynamique pour ajouter des ressources d’images avec recadrage intelligent à vos pages web. Lorsque vous modifiez le composant, vous pouvez choisir d’utiliser un paramètre prédéfini de la visionneuse de vidéos pour lire la vidéo sur la page.
 
 Voir aussi [Profils d’image](image-profiles.md).
 
