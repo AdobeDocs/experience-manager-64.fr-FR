@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
+exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
+feature: Fragments de contenu
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1764'
 ht-degree: 92%
 
 ---
-
 
 # Variations – création de contenu de fragment {#variations-authoring-fragment-content}
 
@@ -28,10 +30,10 @@ Les [variations](content-fragments.md#constituent-parts-of-a-content-fragment) s
 
 À partir de l’onglet **variations**, vous pouvez :
 
-* [saisir le contenu](#authoring-your-content) de votre fragment ;
+* [saisir le contenu](#authoring-your-content) de votre fragment
 * [créer et gérer les variations](#managing-variations) du contenu **maître**.
 
-Vous pouvez effectuer diverses autres actions selon le type de données que vous modifiez ; par exemple :
+effectuer diverses autres actions selon le type de données que vous modifiez, par exemple :
 
 * [Insertion de ressources visuelles dans votre fragment](#inserting-assets-into-your-fragment) (images)
 * Sélection entre [Texte enrichi](#rich-text), [Texte brut](#plain-text) et [Texte (Markdown)](#markdown) pour la modification
@@ -51,7 +53,7 @@ Vous pouvez effectuer diverses autres actions selon le type de données que vous
 
 Lorsque vous ouvrez votre fragment de contenu pour le modifier, l’onglet **Variations** est ouvert par défaut. Vous pouvez y saisir le contenu, pour le maître ou toutes les variations de votre choix. Vous pouvez :
 
-* effectuer des modifications directement dans l’onglet **Variations** ;
+* effectuer des modifications directement dans l’onglet **Variations**.
 * ouvrir l’[éditeur plein écran](#full-screen-editor) afin de :
 
    * sélectionner le [format](#formats) ;
@@ -83,7 +85,7 @@ L’éditeur plein écran fournit :
 * l’accès à diverses [actions](#actions) ;
 * selon le [format](#formats), des options de mise en forme supplémentaires ([texte enrichi](#rich-text)).
 
-### Actions   {#actions}
+### Actions {#actions}
 
 Les actions suivantes sont également disponibles (pour tous les [formats](#formats)) lorsque l’éditeur plein écran (c’est-à-dire pour le texte sur plusieurs lignes) est ouvert :
 
@@ -277,8 +279,8 @@ Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mi
 
 1. Dans la boîte de dialogue, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Accéder à la ressource souhaitée dans la gestion des actifs numériques
-   * Rechercher la ressource dans la gestion des actifs numériques
+   * Accéder à la ressource souhaitée dans la gestion des actifs numériques (DAM)
+   * Rechercher la ressource dans la gestion des actifs numériques (DAM)
 
    Une fois la ressource souhaitée localisée, sélectionnez-la en cliquant sur la miniature.
 
@@ -292,7 +294,7 @@ Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mi
    >* **Markdown** : le fichier ne sera pas visible, mais il sera toujours présent lorsque vous reviendrez au **texte enrichi**.
 
 
-## Gestion des variations   {#managing-variations}
+## Gestion des variations  {#managing-variations}
 
 ### Création d’une variation {#creating-a-variation}
 
@@ -304,13 +306,13 @@ Pour créer une variation, procédez comme suit :
 1. Sélectionnez **[!UICONTROL Variations]** dans la barre d’icônes du panneau latéral.
 1. Sélectionnez **[!UICONTROL Créer une variation]**.
 1. Une boîte de dialogue s’ouvre. Spécifiez le **[!UICONTROL titre]** et la **[!UICONTROL description]** correspondant à la nouvelle variante.
-1. Sélectionnez **[!UICONTROL Ajouter]** et le **[!UICONTROL Gabarit]**[ du fragment sera copié dans la nouvelle variation, qui est maintenant ouverte pour modification](#editing-a-variation).
+1. Sélectionnez **[!UICONTROL Ajouter]** et le **[!UICONTROL Gabarit]** du fragment sera copié dans la nouvelle variation, qui est maintenant ouverte pour [modification](#editing-a-variation).
 
    >[!NOTE]
    >
    >Lors de la création d’une variation, c’est toujours le **Maître** qui est copié et non pas la variation ouverte.
 
-### Modification d’une variation   {#editing-a-variation}
+### Modification d’une variation  {#editing-a-variation}
 
 Vous pouvez apporter des modifications au contenu de la variation après avoir :
 
@@ -335,7 +337,7 @@ Pour renommer une variation existante :
 >
 >Cette opération concerne uniquement le **Titre** de la variation.
 
-### Suppression d’une variation   {#deleting-a-variation}
+### Suppression d’une variation  {#deleting-a-variation}
 
 Pour supprimer une variation existante :
 
@@ -373,10 +375,9 @@ Lors de la modification d’une variation, vous pouvez accéder à l’action de
 
 3. Le maître et la variation seront affichés côte à côte :
 
-   * le contenu ajouté figure en vert  (ajouté à la variation) ;
+   * le contenu ajouté figure en vert (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
 
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 4. Sélectionnez **[!UICONTROL Synchroniser]**. La variation est alors mise à jour et affichée.
-
