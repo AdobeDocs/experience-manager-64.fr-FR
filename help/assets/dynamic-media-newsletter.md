@@ -5,14 +5,16 @@ seo-description: Ce bulletin d'information à guichet unique contient des ressou
 seo-title: 'Lettre d''information de l''Adobe Dynamic Media '
 solution: Dynamic Media Classic
 title: Newsletter Dynamic Media
+exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
+feature: Collaboration,Dynamic Media Classic
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1210'
 ht-degree: 95%
 
 ---
-
 
 # ![Logo de la newsletter Dynamic Media](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
@@ -74,7 +76,7 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    * Cinq nouveaux webinaires Skill Builder pour perfectionner vos compétences dans Dynamic Media Classic.
    * Un audit gratuit pour vous aider à tirer le meilleur parti de Dynamic Media Classic.
    * Une saison record d’achats des fêtes pour nos clients utilisant les médias riches.
-   * Votre guide d’orientation pour la sélection d’une solution de gestion des ressources numériques qui réponde à vos besoins dès aujourd’hui et vous prépare pour le futur avec les médias riches.
+   * Votre guide d’orientation pour la sélection d’une solution de gestion des ressources numériques (DAM) qui réponde à vos besoins dès aujourd’hui et vous prépare pour le futur avec les médias riches.
    * Faites la connaissance de Mark Dean, spécialiste des médias numériques.
 
 * **[Novembre 2019, numéro 11](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
@@ -92,7 +94,7 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    Dans ce numéro :
 
    * Comment obtenir des analyses avancées sur les actions des visiteurs dans vos visionneuses de contenu Dynamic Media.
-   * Infographie et conseils sur la manière d’obtenir des résultats étonnants de la diffusion d’images et de vidéos de haute qualité
+   * Infographie et conseils sur la manière d’obtenir des résultats étonnants de la diffusion d’images et de vidéos de haute qualité.
    * Article CMSwire qui vous aide à comprendre comment mettre à jour votre stratégie de médias riches pour répondre aux attentes des clients actuels.
    * Accès au webinaire de la série Skill Builder, portant sur Dynamic Media et disponible à la demande.
    * Rencontre avec Nick Peters, directeur de la section Ingénierie de la fiabilité du site pour Adobe Experience Manager.
@@ -115,7 +117,7 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
 
    * Découvrez les fonctionnalités disponibles uniquement lorsque vous effectuez une mise à niveau vers Dynamic Media.
    * Découvrez une série de webinaires conçus pour vous aider à maîtriser rapidement Adobe Experience Manager Assets et Dynamic Media.
-   * Faites vos premiers pas vers une utilisation optimale de Dynamic Media grâce à Experience League.
+   * Faites vos premiers pas vers une utilisation optimale de Dynamic Media grâce à Experience League.
    * Découvrez en avant-première une puissante intégration prévue pour septembre et qui vous permettra d’analyser la manière dont vos visiteurs utilisent avec vos médias riches.
    * Rencontrez PieterJan Pieper, assistant de support technique Dynamic Media.
 
