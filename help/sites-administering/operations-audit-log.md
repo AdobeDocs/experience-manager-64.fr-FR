@@ -2,6 +2,7 @@
 title: Maintenance du journal d’audit dans AEM 6
 seo-title: Maintenance du journal d’audit dans AEM 6
 description: Découvrez comment tenir à jour le journal d’audit dans AEM.
+feature: Opérations
 seo-description: Découvrez comment tenir à jour le journal d’audit dans AEM.
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
+exl-id: bcbdab55-4871-4c7f-b82a-b7d8280e82e3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '616'
 ht-degree: 81%
 
 ---
-
 
 # Maintenance du journal d’audit dans AEM 6{#audit-log-maintenance-in-aem}
 
@@ -76,7 +77,7 @@ Dans AEM 6.3, si la fenêtre de maintenance planifiée se ferme avant que la tâ
 >
 >L’arrêt de la tâche de maintenance consiste à suspendre son exécution sans perdre la trace de la tâche déjà en cours.
 
-## Configuration de la purge du journal d’audit de la gestion des actifs numériques  {#configure-dam-audit-log-purging}
+## Configuration de la purge du journal d’audit de la gestion des actifs numériques {#configure-dam-audit-log-purging}
 
 1. Accédez à System Console à l’adresse *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. Recherchez la règle **Purge du journal d’audit de la gestion des actifs numériques** et cliquez sur le résultat.
@@ -89,7 +90,7 @@ Dans AEM 6.3, si la fenêtre de maintenance planifiée se ferme avant que la tâ
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre configuration.
 
-## Configuration de la purge du journal d’audit de réplication   {#configure-replication-audit-log-purging}
+## Configuration de la purge du journal d’audit de réplication  {#configure-replication-audit-log-purging}
 
 1. Accédez à System Console à l’adresse *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. Recherchez le **planificateur de purge du journal d’audit de réplication** et cliquez sur le résultat.
@@ -101,4 +102,3 @@ Dans AEM 6.3, si la fenêtre de maintenance planifiée se ferme avant que la tâ
    * **Types d’événements de journal d’audit de réplication :** types d’événements à purger.
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre configuration.
-
