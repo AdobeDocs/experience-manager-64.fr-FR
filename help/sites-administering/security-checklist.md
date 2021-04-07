@@ -2,6 +2,7 @@
 title: Liste de contrôle de sécurité
 seo-title: Liste de contrôle de sécurité
 description: Découvrez les différents aspects de la sécurité lors de la configuration et du déploiement d’AEM.
+feature: Sécurité
 seo-description: Découvrez les différents aspects de la sécurité lors de la configuration et du déploiement d’AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: a91e1264-8441-42f8-aa83-1d9c983d214a
+exl-id: 0be6d031-f8b8-458b-a910-ff05d2b1a155
 translation-type: tm+mt
-source-git-commit: 6ac5f288de51e39bccd080123ba9e094406263f8
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '2843'
-ht-degree: 86%
+source-wordcount: '2844'
+ht-degree: 87%
 
 ---
-
 
 # Liste de contrôle de sécurité{#security-checklist}
 
@@ -48,7 +49,7 @@ Pour une instance sécurisée, il est obligatoire d’activer la couche de trans
 
 Assurez-vous d’avoir installé les derniers [correctifs de sécurité fournis par Adobe](https://helpx.adobe.com/fr/experience-manager/kb/aem63-available-hotfixes.html).
 
-### Modification des mots de passe par défaut pour les comptes administrateur d’AEM et de la console OSGi  {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
+### Modification des mots de passe par défaut pour les comptes administrateur d’AEM et de la console OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
 L&#39;Adobe recommande vivement, après l&#39;installation, de modifier le mot de passe des comptes [**AEM** `admin` privilégiés ](#changing-the-aem-admin-password) (sur toutes les instances).
 
@@ -109,7 +110,7 @@ Adobe recommande de définir des pages de gestionnaire d’erreur personnalisé,
 
 ### Liste de contrôle de sécurité de Dispatcher {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher est un élément essentiel de votre infrastructure. Adobe recommande vivement de compléter la [liste de contrôle de sécurité de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html).
+AEM Dispatcher est un élément essentiel de votre infrastructure. Adobe recommande vivement de compléter la [liste de contrôle de sécurité de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=fr#getting-started).
 
 >[!CAUTION]
 >
