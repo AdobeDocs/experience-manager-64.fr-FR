@@ -9,14 +9,16 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
+exl-id: e2804707-7b75-4fae-937e-9e258481878f
+feature: Fragments de contenu
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '2004'
 ht-degree: 98%
 
 ---
-
 
 # Utilisation de fragments de contenu {#working-with-content-fragments}
 
@@ -66,7 +68,7 @@ Les fragments de contenu vous permettent de :
 
 Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses expériences sur de multiples canaux.
 
-## Fragments de contenu et Content Services     {#content-fragments-and-content-services}
+## Fragments de contenu et Content Services    {#content-fragments-and-content-services}
 
 AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web.
 
@@ -160,20 +162,20 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
 * **Contenu associé**
 
    * Sont connectés à un fragment ; mais pas à une partie fixe du fragment (voir [Parties constituantes d’un fragment de contenu](#constituent-parts-of-a-content-fragment)).
-   * Permet une certaine souplesse de positionnement.
+   * Permettent une certaine souplesse de positionnement.
    * Sont disponibles et pratiques (en tant que contenu intermédiaire) lorsque vous utilisez le fragment sur une page.
    * Voir [Contenu associé](content-fragments-assoc-content.md) pour plus d’informations.
 
 * Ressources disponibles dans le **navigateur Ressources** de l’éditeur de page
 
-   * Permet une flexibilité totale pour la sélection d’une ressource.
-   * Permet une certaine souplesse de positionnement.
-   * N’applique pas le concept d’approbation pour un fragment spécifique.
+   * Permettent une flexibilité totale pour la sélection d’une ressource.
+   * Permettent une certaine souplesse de positionnement.
+   * N’appliquent pas le concept d’approbation pour un fragment spécifique.
    * Voir le [navigateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser) pour plus d’informations.
 
 ### Parties constituantes d’un fragment de contenu {#constituent-parts-of-a-content-fragment}
 
-Les actifs de fragment de contenu se composent des parties suivantes (directement ou indirectement) :
+Les ressources de fragment de contenu se composent des parties suivantes (directement ou indirectement) :
 
 * **Éléments de fragment**
 
@@ -197,7 +199,7 @@ Les actifs de fragment de contenu se composent des parties suivantes (directemen
 * **Ressources insérées dans un fragment (fragments de supports variés)**
 
    * Ressources (images) insérées dans le fragment et utilisées en tant que contenu interne d’un fragment.
-   * Sont intégrés dans le système de paragraphe du fragment.
+   * Sont intégrées dans le système de paragraphe du fragment.
    * Peuvent être formatées lorsque le [fragment est utilisé/référencé sur une page](/help/sites-authoring/content-fragments.md).
    * Ne peuvent pas être ajoutées, supprimées ni déplacées dans un fragment à l’aide de l’éditeur de fragment. Ces actions ne peuvent pas être effectuées dans l’éditeur de page.
    * Peuvent uniquement être ajoutées, supprimées ou déplacées dans un fragment en utilisant le format [texte enrichi de l’éditeur de fragment](content-fragments-variations.md#inserting-assets-into-your-fragment).
@@ -275,11 +277,11 @@ Contenu intermédiaire :
 
 Pour créer, modifier et utiliser des fragments de contenu, vous aurez également besoin des éléments suivants :
 
-* **Modèle de contenu**
+* **Modèles de contenu**
 
    * Il est [activé, puis créé à l’aide d’outils](content-fragments-models.md).
    * Obligatoire pour [créer un fragment structuré](content-fragments-managing.md#creating-content-fragments).
-   * Définit la structure d’un fragment (titre, éléments de contenu et définitions de balise).
+   * Définissent la structure d’un fragment (titre, éléments de contenu et définitions de balise).
    * Les définitions de modèles de contenu requièrent un titre et un élément de données ; tous les autres attributs sont facultatifs. En outre, le modèle définit une portée minimale du fragment et du contenu par défaut, le cas échéant. Les auteurs ne peuvent pas modifier la structure définie lors de la création du contenu d’un fragment.
 
 * **Modèle de fragment**
@@ -297,7 +299,7 @@ Pour créer, modifier et utiliser des fragments de contenu, vous aurez égalemen
    * Les fragments ont besoin d’un ou de plusieurs composants dédiés pour définir la mise en page, ainsi que diffuser tous les éléments/variations et le contenu associé.
    * Faire glisser un fragment sur une page en mode Création permet d’associer automatiquement le composant requis.
 
-## Cas d’utilisation     {#example-usage}
+## Exemple d’utilisation  {#example-usage}
 
 Un fragment, avec ses éléments et ses variations, peut être utilisé afin de créer du contenu homogène sur plusieurs canaux. Lors de la conception d’un fragment, vous devez prendre en compte où vous utiliserez chacun de ses éléments.
 
@@ -306,4 +308,3 @@ Un fragment, avec ses éléments et ses variations, peut être utilisé afin de 
 Un exemple de fragment est visible à l’adresse :
 
 [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
-
