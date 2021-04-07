@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 3d063268-17d7-4db6-8028-682537645377
+exl-id: 52ecbf81-0953-4c44-bc2c-d40e507b8d98
+feature: Ressources 3D
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '876'
 ht-degree: 36%
 
 ---
-
 
 # Intégration de l&#39;AEM 3D avec Autodesk Maya {#integrating-aem-d-with-autodesk-maya}
 
@@ -24,7 +26,7 @@ ht-degree: 36%
 >
 >Cette tâche est facultative et concerne Windows uniquement.
 
-Vous pouvez éventuellement intégrer AEM 3D au logiciel Autodesk® Maya® pour activer la prise en charge des fichiers Maya natifs (`.MA` et `.MB`) et pour vous permettre de générer des ressources 3D en AEM avec tout rendu Maya disponible.
+Vous pouvez éventuellement intégrer AEM 3D au logiciel Autodesk® Maya® afin d&#39;activer la prise en charge des fichiers Maya natifs (`.MA` et `.MB`) et de vous permettre de générer des ressources 3D en AEM avec tout rendu Maya disponible.
 
 *Cette intégration est réservée à Windows uniquement*.
 
@@ -73,7 +75,7 @@ Voir aussi [Intégration de AEM 3D avec AutoDesk 3ds Max](integrating-aem-3d-wit
 
    Maya est désormais activé comme moteur de rendu.
 
-## Test de l’intégration de AEM 3D avec Autodesk Maya  {#testing-the-integration-of-aem-d-with-autodesk-maya}
+## Test de l’intégration de AEM 3D avec Autodesk Maya {#testing-the-integration-of-aem-d-with-autodesk-maya}
 
 1. Ouvrez AEM Assets, puis téléchargez les fichiers `.MA` situés dans `sample-3D-content/models` vers le dossier `test3d`.
 
@@ -128,4 +130,3 @@ Voir [Formats d’importation de données pris en charge | Maya](https://knowled
 La capture d&#39;écran suivante illustre un format de fichier ajouté, à l&#39;aide de COLLADA DAE comme exemple :
 
 ![image2018-6-22_12-50-39](assets/image2018-6-22_12-50-39.png)
-
