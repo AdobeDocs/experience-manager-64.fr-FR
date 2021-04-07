@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
+feature: Résolution des incidents
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1296'
 ht-degree: 88%
 
 ---
-
 
 # Dépannage de Dynamic Media – mode Scene7 {#troubleshooting-dynamic-media-scene-mode}
 
@@ -68,7 +70,7 @@ Lorsque vous remplacez un fichier Dynamic Media existant (même nom et emplaceme
 
 * La création d’une version n’est pas prise en charge dans le cadre de la diffusion en mode Scene7 de Dynamic Media. La nouvelle version remplace la ressource existante dans la diffusion.
 
-## Images et visionneuses   {#images-and-sets}
+## Images et visionneuses {#images-and-sets}
 
 Si des problèmes surviennent avec les images et les visionneuses, reportez-vous aux conseils de dépannage ci-dessous.
 
@@ -117,12 +119,12 @@ Si des problèmes surviennent avec les images et les visionneuses, reportez-vous
   </tr> 
   <tr> 
    <td>La ressource téléchargée n’apparaît pas dans le sélecteur de ressources.</td> 
-   <td><p>Vérifiez que la ressource présente la propriété <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite)</p> </td> 
+   <td><p>Vérifiez que la ressource présente la propriété <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite)</p> </td> 
    <td><p>Vérifiez que le traitement de toutes les ressources est terminé.</p> </td> 
   </tr> 
   <tr> 
    <td>La bannière en mode Carte affiche <strong>Nouveau</strong> lorsque la ressource n’a pas commencé le traitement.</td> 
-   <td>Vérifiez que la ressource <code>jcr:content</code> &gt; <code>dam:assetState</code> = if <code>unprocessed</code> n’a pas été sélectionnée par le workflow.</td> 
+   <td>Vérifiez que la ressource <code>jcr:content</code> &gt; <code>dam:assetState</code> = if <code>unprocessed</code> n’a pas été sélectionnée par le workflow.</td> 
    <td>Attendez que la ressource soit sélectionnée par le workflow.</td> 
   </tr> 
   <tr> 
@@ -258,4 +260,3 @@ Si vous rencontrez des problèmes avec les visionneuses, reportez-vous aux conse
   </tr> 
  </tbody> 
 </table>
-
