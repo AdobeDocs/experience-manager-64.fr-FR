@@ -9,20 +9,22 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
+exl-id: 4b8b0247-0978-40b5-92e2-319cfa44b34e
+feature: Ressources 3D
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '868'
 ht-degree: 74%
 
 ---
 
-
-# À propos du chargement et du traitement de ressources 3D dans AEM  {#about-the-uploading-and-processing-of-d-assets-in-aem}
+# À propos du chargement et du traitement de ressources 3D dans AEM {#about-the-uploading-and-processing-of-d-assets-in-aem}
 
 >[!IMPORTANT]
 >
->aem 3D dans AEM 6.4 n’est plus pris en charge. L&#39;Adobe vous recommande d&#39;utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) ou [AEM 6.5.3 ou supérieur.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic).
+>AEM 3D dans AEM 6.4 n’est plus pris en charge. L&#39;Adobe vous recommande d&#39;utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) ou [AEM 6.5.3 ou supérieur.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic).
 
 Utilisez les mécanismes de synchronisation ou de chargement standard pour importer des ressources 3D et leurs fichiers référencés associés dans AEM Assets.
 
@@ -61,7 +63,7 @@ Les tâches de conversion, de traitement et de rendu sont placées en file d’a
 
 Des mécanismes sont disponibles pour limiter l’utilisation du processeur pour le traitement de l’assimilation de la gestion et du rendu. Voir la section [Paramètres de configuration avancés](advanced-config-3d.md) pour plus d’informations sur la configuration des limites du processeur.
 
-## Surveillance de l’état du traitement de vos fichiers 3D chargés  {#monitoring-the-processing-status-of-your-uploaded-d-files}
+## Surveillance de l’état du traitement de vos fichiers 3D chargés {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
 Dans **[!UICONTROL Vue de carte]** uniquement, l’état et la progression du traitement s’affichent sous la forme d’une bannière de progression sur la carte du fichier. Chaque modèle 3D téléchargé subit généralement les quatre ou six étapes de traitement ordonnées suivantes :
 
@@ -113,4 +115,3 @@ Dans **[!UICONTROL Vue de carte]** uniquement, l’état et la progression du tr
 >[!NOTE]
 >
 >Vous pouvez vue un fichier 3D dans **[!UICONTROL Vue de détails]** ou le rendre une fois l’étape de création de prévisualisation terminée. Il n’est pas nécessaire d’attendre que toutes les étapes de traitement soient terminées.
-
