@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 topic-tags: 3D
 discoiquuid: 0d7fefc0-6923-4ac3-9e90-335c08fa56f0
+exl-id: 2edecd53-0a2d-44bb-968a-d988c780e142
+feature: Ressources 3D
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '539'
 ht-degree: 8%
 
 ---
-
 
 # Intégration de AEM 3D avec Autodesk 3ds Max {#integrating-aem-d-with-autodesk-ds-max}
 
@@ -48,7 +50,7 @@ Voir aussi [Intégration de AEM 3D avec AutoDesk Maya](integrate-maya-with-3d.md
 
 1. Mettez à jour le script de conversion.
 
-   aem utilise un script de ligne de commande pour appeler l&#39;utilitaire de ligne de commande 3ds Max `3dsmaxcmd.exe`. Vous devez modifier ce script si vous avez installé une version autre que 3ds Max 2016, ou si vous avez installé 3ds Max à un emplacement non standard, ou si vous avez installé AEM sur une partition ou un lecteur différent.
+   AEM utilise un script de ligne de commande pour appeler l&#39;utilitaire de ligne de commande 3ds Max `3dsmaxcmd.exe`. Vous devez modifier ce script si vous avez installé une version autre que 3ds Max 2016, ou si vous avez installé 3ds Max à un emplacement non standard, ou si vous avez installé AEM sur une partition ou un lecteur différent.
 
    1. Ouvrez le CRXDE Lite et accédez à `/libs/settings/dam/v3D/scripts/max`.
    1. Cliquez sur `export-fbx.bat` doublon pour l’ouvrir.
@@ -89,4 +91,3 @@ Voir aussi [Intégration de AEM 3D avec AutoDesk Maya](integrate-maya-with-3d.md
 1. Une fois le traitement terminé, ouvrez `logo-sphere.max` dans la vue **[!UICONTROL Détails]**.
 
    L’expérience de Prévisualisation est la même que pour `logo_sphere.fbx`.
-
