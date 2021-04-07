@@ -2,20 +2,21 @@
 title: Administration des utilisateurs, des groupes et des droits d’accès
 seo-title: Administration des utilisateurs, des groupes et des droits d’accès
 description: Découvrez l’administration des utilisateurs, des groupes et des droits d’accès dans AEM.
+feature: Sécurité
 seo-description: Découvrez l’administration des utilisateurs, des groupes et des droits d’accès dans AEM.
 uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: cc0637ef-4a9e-454f-899d-655c9caebe2b
+exl-id: 9c14e57b-019e-45ae-9e96-40424fa609c2
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3138'
 ht-degree: 81%
 
 ---
-
 
 # Administration des utilisateurs, des groupes et des droits d’accès{#user-group-and-access-rights-administration}
 
@@ -67,7 +68,7 @@ CRX permet de configurer les droits d’accès pour des comptes utilisateur et d
 >
 >L’installation standard du référentiel CRX est configurée de manière à utiliser des listes de contrôle d’accès dépendant des ressources. Il s’agit d’une mise en œuvre possible du contrôle d’accès JSR-283 et l’une des mises en œuvre présentes avec Jackrabbit.
 
-### Sujets et entités  {#subjects-and-principals}
+### Sujets et entités {#subjects-and-principals}
 
 CRX utilise deux concepts clés lors de l’évaluation des droits d’accès :
 
@@ -633,4 +634,3 @@ L’ordre dans la liste indique l’ordre dans lequel les stratégies sont appli
 1. Cliquez sur **Test** pour afficher les résultats de votre sélection :
 
    ![crx_accesscontrol_test](assets/crx_accesscontrol_test.png)
-
