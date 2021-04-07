@@ -1,6 +1,6 @@
 ---
-title: Prévisualisation de ressources Dynamic Media
-seo-title: Prévisualisation de ressources Dynamic Media
+title: Aperçu de ressources Dynamic Media
+seo-title: Aperçu de ressources Dynamic Media
 description: Découvrez comment prévisualiser des ressources dans Dynamic Media
 seo-description: Découvrez comment prévisualiser des ressources dans Dynamic Media
 uuid: f0ff2fc4-a263-4dbe-ba46-b07077b49ae0
@@ -9,16 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 77296bff-8429-4240-af93-26076ae431ec
+exl-id: ec05569a-6449-4430-9b9f-7ab051f44970
+feature: Gestion des ressources,Rendus
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1031'
 ht-degree: 90%
 
 ---
 
-
-# Prévisualisation de ressources Dynamic Media {#previewing-assets}
+# Aperçu de ressources Dynamic Media {#previewing-assets}
 
 Vous pouvez utiliser **[!UICONTROL Prévisualisation]** pour voir à quoi ressemble un fichier numérique Dynamic Media lorsqu’il est affiché par un client dans son propre navigateur Web. La visionneuse multipériphériques incorporée par défaut affectée à la ressource est utilisée pour la **[!UICONTROL Prévisualisation]**.
 
@@ -110,4 +112,3 @@ Outre l’utilisation de la fonction de prévisualisation dédiée pour la vidé
   </tr>
  </tbody>
 </table>
-
