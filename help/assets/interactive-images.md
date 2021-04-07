@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
+exl-id: 4d3299e2-269b-4a41-a979-c884c707666d
+feature: Images interactives
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '4296'
-ht-degree: 78%
+source-wordcount: '4298'
+ht-degree: 79%
 
 ---
-
 
 # Images interactives {#interactive-images}
 
@@ -69,7 +71,7 @@ Le tutoriel permet d’illustrer les étapes d’intégration d’images interac
 
 1. **Ajouter une image interactive à votre site Web ou à votre site Web en AEM**
 
-   * Si vous utilisez AEM Sites, ou AEM eCommerce, ou les deux, vous pouvez ajouter l’image interactive directement à une page Web dans AEM en faisant glisser le composant Interactive Media sur la page. Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](adding-dynamic-media-assets-to-pages.md).
+   * Si vous utilisez AEM Sites, ou AEM eCommerce, ou les deux, vous pouvez ajouter l’image interactive directement à une page Web dans AEM en faisant glisser le composant Interactive Media sur la page. Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](adding-dynamic-media-assets-to-pages.md).
    * Si vous utilisez des instances autonomes d’AEM Assets et de Dynamic Media, vous devez copier le code intégré sur votre site web, puis l’intégrer à votre aperçu rapide existant. Voir [Intégration d’une image interactive à votre site web](#integrating-an-interactive-image-with-your-website).
    * Si vous utilisez un gestionnaire de contenu web (WCM) tiers, vous devez intégrer la nouvelle vidéo interactive à l’aperçu rapide existant utilisé sur votre site web. Reportez-vous à la section [Intégration d’une image interactive dans un aperçu rapide existant](#integrating-an-interactive-image-with-an-existing-quickview).
 
@@ -183,7 +185,7 @@ Sur la base de cette analyse, vous utiliseriez `categoryId` et `SKU` pour les zo
 
 Vous êtes à présent prêt à charger une bannière d’image et à y ajouter des zones réactives à l’aide de la fonctionnalité d’images interactives Shoppable d’AEM Assets.
 
-## (Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives   {#optional-creating-an-interactive-image-viewer-preset}
+## (Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives  {#optional-creating-an-interactive-image-viewer-preset}
 
 Vous pouvez choisir d’utiliser le paramètre prédéfini de visionneuse d’images interactives prêt à l’emploi **[!UICONTROL Shoppable_Banner]** fourni avec AEM Assets. Vous pouvez également créer votre propre paramètre prédéfini de visionneuse personnalisé à utiliser avec les images interactives.
 
@@ -199,7 +201,7 @@ Une fois le paramètre prédéfini de visionneuse enregistré, il est automatiqu
 
    Titre qui apparaîtra dans la page de liste **[!UICONTROL Paramètres prédéfinis de la visionneuse]** après l’enregistrement.
 1. Dans le menu déroulant **[!UICONTROL Type de média enrichi]**, sélectionnez **[!UICONTROL Image interactive]**.
-1. Appuyez sur **Créer**. 
+1. Appuyez sur **Créer**.
 1. Sur la page **[!UICONTROL Modifier le paramètre prédéfini de visionneuse]**, appuyez sur l’onglet **[!UICONTROL Apparence]**.
 1. Utilisez l’une des méthodes suivantes :
 
@@ -214,7 +216,7 @@ Une fois le paramètre prédéfini de visionneuse enregistré, il est automatiqu
 
    Vous êtes désormais prêt à charger une bannière d’image.
 
-## Chargement d’une bannière d’image   {#uploading-an-image-banner}
+## Chargement d’une bannière d’image  {#uploading-an-image-banner}
 
 Si vous avez déjà chargé les images que vous souhaitez utiliser, passez à l’étape suivante [Ajout de zones réactives à une bannière d’image](#adding-hotspots-to-an-image-banner).
 
@@ -226,7 +228,7 @@ Si vous avez déjà chargé les images que vous souhaitez utiliser, passez à l�
 
    Vous êtes maintenant prêt à ajouter des zones réactives à la bannière d’image. Reportez-vous à la tâche suivante ci-dessous.
 
-## Ajout de zones réactives à une bannière d’image   {#adding-hotspots-to-an-image-banner}
+## Ajout de zones réactives à une bannière d’image  {#adding-hotspots-to-an-image-banner}
 
 Vous pouvez ajouter des zones réactives à une bannière d’image à l’aide de l’éditeur de la page **[!UICONTROL Gestion des zones réactives]**.
 
@@ -236,14 +238,13 @@ Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
->N’oubliez pas que les outils de partage sur les médias sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience.
-Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+>N’oubliez pas que les outils de partage sur les médias sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
 **[!UICONTROL Les options Annuler et Rétablir, proches du coin supérieur droit de la page, sont prises en charge au cours de la session de création/modification actuelle.]******
 
 Lorsque vous avez terminé de créer votre image interactive, vous pouvez utiliser **[!UICONTROL Prévisualisation]** pour voir comment votre image interactive apparaîtra aux clients.
 
-Reportez-vous à la section [(Facultatif) Aperçu des images interactives ](#optional-previewing-interactive-images).
+Reportez-vous à la section [(Facultatif) Aperçu des images interactives](#optional-previewing-interactive-images).
 
 >[!NOTE]
 >
@@ -299,8 +300,7 @@ d. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la sur l’imag
 
          Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
          >[!NOTE]
-         >N’oubliez pas que les outils de partage sur les médias sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience.
-Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+         >N’oubliez pas que les outils de partage sur les médias sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
       * Indiquez la largeur et la hauteur du fragment d’expérience tel qu’il apparaît dans la bannière.
 
@@ -319,7 +319,7 @@ Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres pr�
    >
    >Si vous modifiez des images interactives avec des zones réactives et que vous recadrez l’image, les zones réactives sont supprimées.
 
-### (Facultatif) Aperçu des images interactives   {#optional-previewing-interactive-images}
+### (Facultatif) Aperçu des images interactives  {#optional-previewing-interactive-images}
 
 Vous pouvez utiliser la prévisualisation pour afficher une représentation de votre image interactive, telle qu’elle s’affichera pour les clients, et tester les zones réactives de l’image pour vous assurer qu’elles se comportent de la façon escomptée.
 
@@ -377,13 +377,13 @@ L’intégration revient simplement à supprimer la balise `IMG` et à la rempla
 
 Pour appliquer un recadrage à une image interactive pouvant faire l’objet d’un achat pour un environnement réactif, vous pouvez inclure l’attribut de configuration Image interactive `ZoomView.iscommand` au chemin d’accès, où `ZoomView` est le composant à appeler et `iscommand` est la commande de traitement de l’image de recadrage que vous appliquez.
 
-Voir l’attribut de configuration [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
+Voir l’attribut de configuration [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html?lang=fr).
 
-Voir la commande de service d’images [crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html).
+Voir la commande de service d’images [crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=fr).
 
 Vous êtes désormais prêt à intégrer l’image interactive à un aperçu rapide existant de votre site web.
 
-## Intégration d’une image interactive dans un aperçu rapide existant   {#integrating-an-interactive-image-with-an-existing-quickview}
+## Intégration d’une image interactive dans un aperçu rapide existant  {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 >
