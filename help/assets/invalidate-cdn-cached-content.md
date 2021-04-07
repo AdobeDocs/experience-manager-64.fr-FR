@@ -2,23 +2,25 @@
 title: 'Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)  '
 seo-title: 'Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)  '
 description: L’annulation de la validité du contenu CDN en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
-seo-description: L’annulation de la validité du contenu CDN en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
+seo-description: L’invalidation du contenu de réseau de diffusion de continu (CDN) en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
 uuid: 0fd88e31-9745-4c98-a245-9f5d0766cad4
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
+exl-id: 335c7a78-a00f-451b-8e53-225830d429c6
+feature: Gestion des ressources,Cache CDN
+role: Administrator,Business Practitioner,Developer
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 93%
+source-wordcount: '676'
+ht-degree: 92%
 
 ---
 
-
-# Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)    {#invalidating-your-cdn-cached-content}
+# Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)   {#invalidating-your-cdn-cached-content}
 
 Les ressources Dynamic Media sont mises en cache par le réseau CDN en vue d’une diffusion rapide. Cependant, lorsque vous appliquez des mises à jour à une ressource, vous pouvez faire en sorte qu’elles soient prises immédiatement en compte. L’invalidation du contenu de réseau de diffusion de continu (CDN) en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
 
@@ -32,7 +34,7 @@ Voir aussi [Présentation du cache dans Dynamic Media Classic](https://helpx.a
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
-1.  Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
+1. Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
 1. Recherchez la zone de texte **[!UICONTROL Modèle d’invalidation sur le réseau de diffusion de contenu]** dans la section Serveurs de la page Paramètres généraux de l’application.
 
 1. Précisez le modèle utilisé pour invalider le cache du réseau de diffusion de contenu (CDN).
@@ -61,4 +63,3 @@ Voir aussi [Présentation du cache dans Dynamic Media Classic](https://helpx.a
    >Lorsque vous sélectionnez des ressources, puis cliquez sur **[!UICONTROL Fichier > Invalider sur le réseau de diffusion de contenu]**, Dynamic Media utilise un modèle d’invalidation pour créer automatiquement des URL à invalider dans le réseau de diffusion de contenu. Si rien n’est renseigné dans la zone de texte **[!UICONTROL Modèle d’invalidation sur le réseau de diffusion de contenu]**, la liste d’URL renvoyée est vide. La mise en cache sur le réseau de diffusion de contenu n’est pas basée sur les ressources ; elle est basée sur des URL. Il est donc nécessaire de connaître les URL complètes qui se trouvent sur votre site web. Dès que vous avez déterminé ces URL, vous pouvez les ajouter dans la zone de texte **[!UICONTROL Modèle d’invalidation sur le réseau de diffusion de contenu]** (voir les étapes précédentes). Vous pouvez ensuite sélectionner ces ressources et invalider les URL en une seule étape.
    >
    >Une autre option consiste à ajouter des URL complètes dans la liste **[!UICONTROL Invalider sur le réseau de diffusion de contenu]**. Si vous optez pour cette méthode, il n’est pas nécessaire de sélectionner des ressources dans Dynamic Media Classic avant d’accéder à l’option **[!UICONTROL Fichier > Invalider sur le réseau de diffusion de contenu]**.
-
