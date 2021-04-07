@@ -9,14 +9,16 @@ topic-tags: dynamic-media
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
+exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
+feature: Services dynamiques
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 95%
+source-wordcount: '1758'
+ht-degree: 96%
 
 ---
-
 
 # Imagerie dynamique {#smart-imaging}
 
@@ -71,7 +73,7 @@ L’imagerie dynamique utilise Adobe Sensei pour convertir automatiquement les i
 
 Si la taille de l’image d’origine est inférieure à celle produite par l’imagerie dynamique, l’image d’origine est diffusée.
 
-## Quels sont les formats d’image pris en charge ?   {#what-image-formats-are-supported}
+## Quels sont les formats d’image pris en charge ? {#what-image-formats-are-supported}
 
 Les formats suivants sont pris en charge dans le cadre de l’imagerie dynamique :
 * JPEG
@@ -110,7 +112,7 @@ Pour pouvoir utiliser l’imagerie dynamique, le compte Dynamic Media Classic ou
 * Utiliser le réseau de diffusion de contenu (CDN) fourni par Adobe dans le cadre de votre licence.
 * Utiliser un domaine dédié (par exemple, `images.company.com` ou `mycompany.scene7.com`), plutôt qu’un domaine générique (par exemple, `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`).
 
-Pour rechercher vos domaines, connectez-vous à votre (vos) compte(s) d’entreprise.
+Pour rechercher vos domaines, connectez-vous à votre ou vos comptes d’entreprise.
 
 Appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition lorsque vous soumettez un ticket de support technique.
 
@@ -120,15 +122,15 @@ Votre premier domaine personnalisé n’entraîne aucun coût supplémentaire av
 
 Vous devez envoyer la demande d’utilisation de l’imagerie dynamique ; elle n’est pas activée automatiquement.
 
-1. [Utilisez le Admin Console pour créer un dossier de support.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
-1. Fournissez les informations suivantes dans votre dossier de support :
+1. [Utilisez Admin Console pour créer un dossier d’assistance.](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. Indiquez les informations suivantes dans votre dossier d’assistance :
 
    1. nom, adresse électronique et numéro de téléphone du contact principal.
    1. Tous les domaines à activer pour l’imagerie dynamique (c’est-à-dire images.company.com ou mycompany.scene7.com).
 
       Pour rechercher vos domaines, connectez-vous à votre (vos) compte(s) d’entreprise.
 
-       Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
+      Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
 
       Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**.
    1. Vérifiez que vous utilisez le CDN via Adobe et non le CDN géré avec une relation directe.
@@ -136,14 +138,14 @@ Vous devez envoyer la demande d’utilisation de l’imagerie dynamique ; elle 
 
       Pour rechercher vos domaines, connectez-vous à votre (vos) compte(s) d’entreprise.
 
-       Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
+      Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
 
       Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine Dynamic Media Classic générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
    1. Indiquez s’il doit également fonctionner sur HTTP/2.
 
 1. Le support technique vous inscrira sur la liste d’attente des clients de l’imagerie dynamique en se basant sur l’ordre dans lequel les demandes ont été envoyées.
 1. Dès qu’Adobe est prêt à traiter votre demande, vous serez contacté par le support technique afin de programmer une date cible.
-1. **Facultatif** : vous avez la possibilité de tester l’imagerie dynamique dans le cadre de l’évaluation avant qu’Adobe ne mette la nouvelle fonctionnalité en production.
+1. **Facultatif** : Vous avez la possibilité de tester l’imagerie dynamique dans le cadre de l’évaluation avant qu’Adobe ne mette la nouvelle fonctionnalité en production.
 1. Une fois la procédure achevée, vous en serez informé par l’équipe de support.
 1. Pour tirer pleinement parti des améliorations de performances de l’imagerie dynamique, Adobe recommande de définir le délai d’expiration (TTL) sur 24 heures ou plus. Ce paramètre définit la période pendant laquelle les ressources sont mises en cache par le réseau de diffusion de contenu. Pour modifier ce paramètre :
 
