@@ -5,14 +5,16 @@ contentOwner: Alva Ware-Bevacqui
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 topic-tags: managing-assets
+exl-id: b11b19c1-712d-4698-aefc-930ff8cacbc1
+feature: Dynamic Media Classic
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '2826'
+source-wordcount: '2829'
 ht-degree: 32%
 
 ---
-
 
 # Ajouter les fonctionnalités de Dynamic Media Classic à votre page {#adding-scene-features-to-your-page}
 
@@ -48,7 +50,7 @@ Vous pouvez publier des ressources numériques dans Dynamic Media Classic comme 
 
 >[!NOTE]
 >
->aem publie dans Dynamic Media Classic de manière asynchrone. Une fois que vous avez cliqué sur **[!UICONTROL Publier]**, la publication de votre fichier dans Dynamic Media Classic peut prendre plusieurs secondes.
+>AEM publie dans Dynamic Media Classic de manière asynchrone. Une fois que vous avez cliqué sur **[!UICONTROL Publier]**, la publication de votre fichier dans Dynamic Media Classic peut prendre plusieurs secondes.
 
 
 ## Composants Dynamic Media Classic {#scene-components}
@@ -364,4 +366,3 @@ ConfigurationSi plusieurs configurations Dynamic Media Classic sont définies en
 Statut de publicationVous pouvez filtrer les fichiers en fonction de l’état de publication :  **** Unpublishedor  **[!UICONTROL Published]**. Si vous ne sélectionnez aucun **[!UICONTROL Etat de publication]**, AEM recherche par défaut tous les états de publication.
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
-
