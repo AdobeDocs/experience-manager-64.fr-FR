@@ -2,6 +2,7 @@
 title: Utilisateurs de services dans AEM
 seo-title: Utilisateurs de services dans AEM
 description: Apprenez-en plus sur les utilisateurs de services dans AEM.
+feature: Sécurité
 seo-description: Apprenez-en plus sur les utilisateurs de services dans AEM.
 uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
 contentOwner: User
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
+exl-id: b6e77f61-5c7b-4e40-881c-057177e7ea6d
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '1788'
+source-wordcount: '1789'
 ht-degree: 77%
 
 ---
-
 
 # Utilisateurs de services dans AEM{#service-users-in-aem}
 
@@ -36,7 +37,7 @@ Il peut y avoir des cas où la session administrateur n’est pas utilisée, ou 
 
 Lorsque cela est possible, refactorisez votre fonction de sorte que la session de requête authentifiée donnée puisse être utilisée pour écrire ou lire du contenu. Si ce n’est pas possible, elle peut fréquemment être obtenue en appliquant les priorités comme ci-dessous.
 
-### Priorité 2 : restructurez le contenu  {#priority-restructure-content}
+### Priorité 2 : restructurez le contenu {#priority-restructure-content}
 
 De nombreux problèmes peuvent être résolus en restructurant le contenu. Gardez ces règles simples à l’esprit lors de la restructuration :
 
@@ -66,7 +67,7 @@ En outre, assurez-vous que toutes les nouvelles fonctions que vous développez s
 
 * **Respectez les paramètres de confidentialité.**
 
-   * Dans le cas des profils privés, par exemple, ne pas exposer l&#39;image du profil, le courriel ou le nom complet figurant sur le noeud privé `/profile`.
+   * Dans le cas des profils privés, un exemple consisterait à ne pas exposer l&#39;image du profil, le courriel ou le nom complet figurant sur le noeud privé `/profile`.
 
 ## Contrôle d’accès strict {#strict-access-control}
 
@@ -88,7 +89,7 @@ Si ce qui précède échoue, Sling 7 offre un service de mappage utilisateur de 
 * Elles permettent de mettre en correspondance les services avec les utilisateurs.
 * Elles permettent de définir des utilisateurs de sous-services.
 * Le point central de configuration est le suivant : `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl`
-* `service-id` =  `service-name` [ &quot;:&quot; sous-service-name  ] 
+* `service-id` =  `service-name` [ &quot;:&quot; sous-service-name  ]
 
 * `service-id` est mis en correspondance avec un résolveur de ressource et/ou un ID d’utilisateur de référentiel JCR pour l’authentification.
 * `service-name` est le nom symbolique du lot qui fournit le service.
