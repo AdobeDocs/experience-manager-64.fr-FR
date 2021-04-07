@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: f0cd3a75-03ed-40a9-b336-8a782f3cfe69
+feature: Jeux de règles
+role: Administrator,Business Practitioner,Developer
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 90%
+source-wordcount: '763'
+ht-degree: 96%
 
 ---
-
 
 # Utilisation d’ensembles de règles pour transformer des URL {#using-rulesets-to-transform-urls}
 
@@ -21,11 +23,11 @@ Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transfor
 * Ajout d’un suffixe de type MIME. De nombreux services et sites web ont besoin de suffixes d’image, comme l’ajout de `.jpg` à une URL.
 * Création d’un chemin de dossier vers l’URL pour le SEO (Search Engine Optimization, ou optimisation du moteur de recherche).
 
-   Voir [Comment Adobe Dynamic Media Classic prend en charge le référencement](/help/assets/assets/s7_seo.pdf).
+   Consultez [Comment Adobe Dynamic Media Classic prend en charge le SEO](/help/assets/assets/s7_seo.pdf).
 
-* Ajout de métadonnées vers l’URL pour le SEO (Search Engine Optimization, ou optimisation du moteur de recherche).
+* Ajout de métadonnées vers l’URL pour le SEO (Search Engine Optimization ou optimisation du moteur de recherche).
 
-   Voir [Comment Adobe Dynamic Media Classic prend en charge le référencement](/help/assets/assets/s7_seo.pdf).
+   Consultez [Comment Adobe Dynamic Media Classic prend en charge le SEO](/help/assets/assets/s7_seo.pdf).
 
 * Définition de la mise en page du contenu pour déclencher le téléchargement.
 * Simplifiez le service d’images pour la création de modèles d’URL pour la personnalisation. Par exemple, transformez `rgb{XX,YY,ZZ}` en `\redXX\greenYY\blueZZ` qui est conforme RTF.
@@ -41,7 +43,7 @@ Dans le cadre de Dynamic Media, les sites web qui utilisent un système XML pou
 >Utilisez les ensembles de règles avec prudence ; ceux-ci peuvent empêcher l’affichage du contenu Dynamic Media sur votre site.
 
 Il existe des exemples d’ensembles de règles disponibles afin de vous aider à créer votre propre ensemble de règles.\
-Voir la section [Référence d’ensemble de règles](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
+Voir la section [Référence d’ensemble de règles](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html?lang=fr).
 
 À l’instar de la création de tous les ensembles de règles, assurez-vous que votre fichier XML est valide avant de le charger à l’aide d’un programme de validation XML tel que xmlvalid.\
 Voir également la section [Résolution des problèmes liés aux ensembles de règles](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
@@ -49,7 +51,7 @@ Voir également la section [Résolution des problèmes liés aux ensembles de r�
 En outre, assurez-vous d’abord de tester votre ensemble de règles dans un environnement intermédiaire qui n’affecte pas votre environnement de production.\
 Les environnements de production et les environnements intermédiaires nécessitent en général des identifiants différents.
 
-Voir l&#39;application de bureau [Adobe Dynamic Media Classic pour obtenir des informations de connexion](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+Consultez l’[application de bureau Adobe Dynamic Media Classic pour obtenir des informations de connexion](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#sign-in-dmc-app).
 
 <!-- * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -83,4 +85,3 @@ Consultez également la section [Utilisation de « ressource » au lieu d’un
    Les conditions d’ensemble de règles sont appliquées aux demandes aux serveurs d’images Dynamic Media en ligne.
 
    Si vous apportez des modifications au fichier d’ensemble de règles, celles-ci sont immédiatement appliquées lorsque vous rechargez et publiez à nouveau le fichier d’ensemble de règles mis à jour.
-
