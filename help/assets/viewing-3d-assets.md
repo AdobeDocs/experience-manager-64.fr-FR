@@ -5,24 +5,26 @@ contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+exl-id: 71f89564-a413-49f6-8d6e-c5305bf92c75
+feature: Ressources 3D
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1780'
 ht-degree: 62%
 
 ---
 
-
-# Affichage de ressources 3D  {#viewing-d-assets}
+# Affichage de ressources 3D {#viewing-d-assets}
 
 >[!IMPORTANT]
 >
->aem 3D dans AEM 6.4 n’est plus pris en charge. Adobe vous recommande d&#39;utiliser la fonction des actifs 3D dans [AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) ou [AEM 6.5.3 ou supérieur.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) aux ressources 3D de vue.
+>AEM 3D dans AEM 6.4 n’est plus pris en charge. Adobe vous recommande d&#39;utiliser la fonction des actifs 3D dans [AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) ou [AEM 6.5.3 ou supérieur.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) aux ressources 3D de vue.
 
 Ce document décrit comment afficher les ressources 3D sur la page Détails de l’actif et comment afficher les ressources qui se trouvent dans le composant Sites 3D.
 
-## Affichage des ressources 3D sur la page Détails de l’actif  {#viewing-d-assets-in-the-asset-details-page}
+## Affichage des ressources 3D sur la page Détails de l’actif {#viewing-d-assets-in-the-asset-details-page}
 
 La visionneuse 3D interactive est disponible sur la page de détails de la ressource dans AEM. La visionneuse comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
 
@@ -117,7 +119,7 @@ De plus, les capacités de l’ordinateur client, par exemple un poste de travai
 
    Voir [Utilisation de scènes dans AEM 3D](about-the-use-of-stages-in-aem-3d.md).
 
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
+1. Dans l’angle supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
 1. Utilisez l’une des méthodes suivantes :
 
    * Effectuez le rendu de la ressource 3D.
@@ -183,4 +185,3 @@ Pour utiliser des composants 3D avec des périphériques dotés d’une souris 
 1. Faites glisser tout en maintenant la touche **ALT/option** enfoncée et le bouton gauche de la souris pour effectuer un panoramique sur la caméra. Cette action déplace la caméra latéralement afin de vous permettre de visualiser différentes parties de l’objet au cours d’un zoom avant. Vous pouvez également cliquer sur le bouton **[!UICONTROL Orbite/Panoramique]** pour passer en mode **[!UICONTROL Panoramique]**, puis faire glisser tout en maintenant le bouton gauche de la souris enfoncé pour faire défiler la caméra. Cliquez de nouveau sur le **[!UICONTROL basculement orbite/panoramique]** pour revenir au mode **[!UICONTROL orbite]**.
 1. Cliquez sur **[!UICONTROL Réinitialiser la visionneuse]** pour réinitialiser la caméra. Cette action replace l’objet en plein écran et, si elle est activée, reprend la rotation automatique.
 1. Cliquez sur **[!UICONTROL Plein écran]** pour passer en mode plein écran. Utilisez la touche **[!UICONTROL Echap]** de votre clavier ou cliquez de nouveau sur **[!UICONTROL Plein écran]** pour rétablir le mode intégré à la page de la visionneuse 3D.
-
