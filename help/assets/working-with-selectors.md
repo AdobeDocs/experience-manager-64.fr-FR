@@ -9,16 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
+exl-id: 6bd68afe-bd54-4482-bd6e-cb318868c8d0
+feature: Sélecteurs
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '740'
 ht-degree: 99%
 
 ---
 
-
-# Utilisation des sélecteurs  {#working-with-selectors}
+# Utilisation des sélecteurs {#working-with-selectors}
 
 Lorsque vous utilisez une image interactive, une vidéo interactive ou une bannière de carrousel, vous sélectionnez des ressources, ainsi que des sites et des produits auxquels relier les zones réactives et les zones cliquables. Lorsque vous travaillez avec des visionneuses d’images, des visionneuses à 360° et de contenu multimédia, vous devez également sélectionner les ressources à l’aide du sélecteur de ressources.
 
@@ -111,11 +113,10 @@ Reportez-vous également à la section [Sélecteur de ressources](asset-selector
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Appuyez sur **[!UICONTROL Afficher comme]** pour changer l’affichage des produits (en mode **[!UICONTROL Liste]**, en mode **[!UICONTROL Colonne]** ou en mode **[!UICONTROL Carte]**).
+   Appuyez sur **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (en mode **[!UICONTROL Liste]**, en mode **[!UICONTROL Colonne]** ou en mode **[!UICONTROL Carte]**).
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. Activez sur la coche pour sélectionner la ressource. La ressource s’affiche.
+1. Cochez la ressource pour la sélectionner. La ressource s’affiche.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
-
