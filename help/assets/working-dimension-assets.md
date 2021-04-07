@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 topic-tags: 3D
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
+exl-id: be8f6361-607d-4529-aef0-e8978dfd04b4
+feature: Ressources 3D
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
-
 
 # Utilisation de ressources Adobe Dimension {#working-with-adobe-dimension-assets}
 
@@ -26,7 +28,7 @@ Une nouvelle visionneuse 3D basée sur la norme ouverte glTF offre des fonctionn
 
 ## À propos du service de conversion basé sur le cloud {#about-the-cloud-based-conversion-service}
 
-Lorsqu’un fichier de Dimension est téléchargé vers AEM, une copie du fichier est transférée vers un service cloud géré par Adobe hébergé dans Amazon AWS. Ce service convertit du format de fichier de Dimension propriétaire de l’Adobe au format glTF standard ouvert. Le modèle 3D converti est conditionné en tant que glTF binaire (`.glb`). aem stocke le modèle converti avec la ressource de Dimension Principale en tant que rendu.
+Lorsqu’un fichier de Dimension est téléchargé vers AEM, une copie du fichier est transférée vers un service cloud géré par Adobe hébergé dans Amazon AWS. Ce service convertit du format de fichier de Dimension propriétaire de l’Adobe au format glTF standard ouvert. Le modèle 3D converti est conditionné en tant que glTF binaire (`.glb`). AEM stocke le modèle converti avec la ressource de Dimension Principale en tant que rendu.
 
 Vous pouvez configurer le format de conversion `.glb` de l’une des deux façons suivantes (voir [Installation et configuration de l’AEM 3D](install-config-3d.md) pour obtenir des instructions) :
 
@@ -49,7 +51,6 @@ Notez que l’interface utilisateur du lecteur glTF est quelque peu différente 
 
 #### Consultez également les informations suivantes : {#see-also-the-following}
 
-* [aem de mise à jour 3D ](/help/release-notes/aem3d-release-notes.md) note les restrictions et limitations applicables aux ressources Dn et à la visionneuse glTF.
+* [AEM de mise à jour 3D ](/help/release-notes/aem3d-release-notes.md) note les restrictions et limitations applicables aux ressources Dn et à la visionneuse glTF.
 * [Utilisation du ](using-the-3d-sites-component.md) composant Sites 3D pour les propriétés de composants spécifiques aux ressources Adobe Dimension.
 * [Installation et configuration d’AEM 3](install-config-3d.md) Dpour configurer le service de conversion basé sur le cloud.
-
