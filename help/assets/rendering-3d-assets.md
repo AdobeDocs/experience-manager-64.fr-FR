@@ -9,16 +9,18 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5b044519-d034-4f05-98c5-f1b299a3ea37
+exl-id: 3eecec53-0b39-4783-8730-f08705183941
+feature: Ressources 3D
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '702'
 ht-degree: 80%
 
 ---
 
-
-# Rendu de ressources 3D  {#rendering-d-assets}
+# Rendu de ressources 3D {#rendering-d-assets}
 
 Vous pouvez effectuer le rendu des ressources 3D manipulées et enregistrées dans AEM afin de créer des images 2D à utiliser dans vos pages de contenu web.
 
@@ -90,4 +92,3 @@ Les tâches de conversion, de traitement et de rendu sont placées en file d’a
 1. Appuyez sur **[!UICONTROL Démarrer le rendu]** pour lancer le processus de rendu.
 
    Un message s’affiche temporairement pour indiquer que le rendu a commencé. Pour des raisons pratiques, ce message comporte également un lien vers le dossier de sortie sélectionné afin que vous puissiez y accéder directement.
-
