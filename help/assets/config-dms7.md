@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
+feature: Configuration, mode Scene7
+role: Administrator,Business Practitioner,Developer
 translation-type: tm+mt
-source-git-commit: 4027bf6905d2e1d07c7f6adb70cbd249f8ee06a4
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '5590'
+source-wordcount: '5593'
 ht-degree: 54%
 
 ---
-
 
 # Configuration de Dynamic Media – mode Scene7 {#configuring-dynamic-media-scene-mode}
 
@@ -656,4 +658,3 @@ Si vous utilisez Dynamic Media pour l’imagerie, la vidéo ou les deux, vous po
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
    Si vous souhaitez uniquement répliquer l’original, vous devez saisir `+original`.
-
