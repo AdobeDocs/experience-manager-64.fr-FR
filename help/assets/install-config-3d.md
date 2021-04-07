@@ -1,6 +1,6 @@
 ---
-title: Installation et configuration d’AEM 3D
-seo-title: Installation et configuration d’AEM 3D
+title: Installation et configuration d’AEM 3D
+seo-title: Installation et configuration d’AEM 3D
 description: Découvrez comment installer et configurer AEM 3D
 seo-description: Découvrez comment installer et configurer AEM 3D
 uuid: a60732ff-fd66-4f29-b901-42a3cfd58b65
@@ -9,20 +9,22 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
+exl-id: 5baaef61-5c70-4796-8ae2-44053e855ad9
+feature: Ressources 3D
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1681'
 ht-degree: 32%
 
 ---
 
-
-# Installation et configuration d’AEM 3D {#installing-and-configuring-aem-d}
+# Installation et configuration d’AEM 3D {#installing-and-configuring-aem-d}
 
 >[!IMPORTANT]
 >
->aem 3D dans AEM 6.4 n’est plus pris en charge. L&#39;Adobe vous recommande d&#39;utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) ou [AEM 6.5.3 ou version ultérieure.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
+>AEM 3D dans AEM 6.4 n’est plus pris en charge. L&#39;Adobe vous recommande d&#39;utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) ou [AEM 6.5.3 ou version ultérieure.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 L&#39;installation et la configuration de AEM 3D (version 3.0) impliquent les opérations suivantes :
 
@@ -102,7 +104,7 @@ Voir également [Paramètres de configuration avancés](advanced-config-3d.md).
 
    Le fichier `sample-3D-content.zip` est placé dans le dossier racine **[!UICONTROL Assets]**. Pour plus d’informations, voir [Validation de la configuration d’AEM 3D](#validating-the-setup-of-aem-d).
 
-## Configuration du processus d’assimilation des ressources 3D et redémarrage d’AEM  {#configuring-the-d-asset-ingestion-workflow-and-restarting-aem}
+## Configuration du processus d’assimilation des ressources 3D et redémarrage d’AEM {#configuring-the-d-asset-ingestion-workflow-and-restarting-aem}
 
 **Pour configurer le processus** d&#39;assimilation des ressources 3D :
 
