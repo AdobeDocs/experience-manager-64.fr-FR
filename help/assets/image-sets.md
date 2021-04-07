@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
+exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
+feature: Visionneuses d’images
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2066'
 ht-degree: 81%
 
 ---
-
 
 # Visionneuses d’images {#image-sets}
 
@@ -36,7 +38,7 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](managing-assets-touch-ui.md).
 
-## Démarrage rapide : Visionneuses d’images   {#quick-start-image-sets}
+## Démarrage rapide : Visionneuses d’images {#quick-start-image-sets}
 
 Pour démarrer rapidement :
 
@@ -114,7 +116,7 @@ Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’i
 
 
 
-## Création d’une visionneuse d’images   {#creating-image-sets}
+## Création d’une visionneuse d’images  {#creating-image-sets}
 
 Vous pouvez créer des visionneuses d’images par le biais de l’interface utilisateur ou de l’API. Cette section décrit comment créer des visionneuses d’images dans l’interface utilisateur.
 
@@ -172,7 +174,7 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**. La nouvelle visionneuse d’images apparaît dans le dossier dans lequel vous l’avez créée.
 
-## Affichage de visionneuses d’images   {#viewing-image-sets}
+## Affichage de visionneuses d’images  {#viewing-image-sets}
 
 Vous pouvez créer des visionneuses d’images dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
@@ -198,7 +200,7 @@ Notez toutefois que les visionneuses créées à l’aide de paramètres prédé
 >
 >Vous pouvez afficher les visionneuses par le biais de l’interface utilisateur, comme indiqué dans la section [Modification d’une visionneuse d’images](#editing-image-sets).
 
-## Modification d’une visionneuse d’images   {#editing-image-sets}
+## Modification d’une visionneuse d’images  {#editing-image-sets}
 
 Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’images, comme suit :
 
@@ -236,10 +238,10 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
 
-## Aperçu d’une visionneuse d’images   {#previewing-image-sets}
+## Aperçu d’une visionneuse d’images  {#previewing-image-sets}
 
 Voir aussi [Aperçu des ressources](previewing-assets.md).
 
-## Publication de visionneuses d’images   {#publishing-image-sets}
+## Publication de visionneuses d’images  {#publishing-image-sets}
 
 Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
