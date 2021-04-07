@@ -2,6 +2,7 @@
 title: Tableau de bord des opérations
 seo-title: Tableau de bord des opérations
 description: Découvrez comment utiliser le tableau de bord des opérations.
+feature: Opérations
 seo-description: Découvrez comment utiliser le tableau de bord des opérations.
 uuid: f1a6dcdc-307b-45f4-ade5-cedc58f0c7cf
 contentOwner: Guillaume Carlino
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
+exl-id: a0cb6a30-fdd4-4806-a5fa-45c98ad15d11
 translation-type: tm+mt
-source-git-commit: d72f86b167e3e9003ad2cd2e7628f95502cf9a33
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '6200'
+source-wordcount: '6201'
 ht-degree: 77%
 
 ---
-
 
 # Tableau de bord des opérations {#operations-dashboard}
 
@@ -210,7 +211,7 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
     <ul> 
      <li>renvoie l’état Avertir si l’une des limites est égale ou supérieure à la valeur <code>Integer.MAX_VALUE</code></li> 
      <li>« Avertissement » si l’une des limites est inférieure à 10 000 (paramètre recommandé d’Oak) ;</li> 
-     <li>renvoie l'état Critique si l'élément <code>QueryEngineSettings</code> ou l'une des limites ne peut pas être récupéré</li> 
+     <li>renvoie l'état Critique si <code>QueryEngineSettings</code> ou l'une des limites ne peut pas être récupérée</li> 
     </ul> <p>Le Mbean pour cette vérification d'intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.health-check:name=queryTraversalLimitsBundle,type=HealthCheck</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -325,7 +326,7 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
  </tbody> 
 </table>
 
-## Surveillance à l’aide de Nagios  {#monitoring-with-nagios}
+## Surveillance à l’aide de Nagios {#monitoring-with-nagios}
 
 Le tableau de bord des contrôles de l’intégrité peut être intégré à Nagios par le biais des MBeans JMX Granite. L’exemple ci-dessous indique comment ajouter un contrôle qui affiche la mémoire utilisée sur le serveur qui exécute AEM.
 
@@ -486,7 +487,7 @@ Oak tente de déterminer la meilleure façon d’exécuter une requête donnée 
 
 L’outil Expliquer la requête explique la façon dont Oak exécute une requête. Pour y accéder, sélectionnez **Outils > Opérations > Diagnostic** dans l’écran d’accueil d’AEM, puis cliquez sur **Performances des requêtes** et accédez à l’onglet **Expliquer la requête**.
 
-**Fonctions**
+**Fonctionnalités**
 
 * Prend en charge les langages de requête Xpath, JCR-SQL et JCR-SQL2.
 * Indique le temps d’exécution réel de la requête spécifiée.
@@ -586,7 +587,7 @@ Vous pouvez accéder à la tâche de nettoyage des fichiers binaires Lucene à p
 
 Pour plus d’informations sur ce sujet, consultez cette [page de la documentation](/help/sites-administering/data-store-garbage-collection.md).
 
-### Purge du workflow {#workflow-purge}
+### Purge du workflow  {#workflow-purge}
 
 Il est possible également de purger les workflows à partir du tableau de bord de maintenance. Pour exécuter la tâche de purge du workflow, procédez comme suit :
 
@@ -910,4 +911,3 @@ Vous pouvez également télécharger un fichier `JSON` résumant les information
   </tr> 
  </tbody> 
 </table>
-
