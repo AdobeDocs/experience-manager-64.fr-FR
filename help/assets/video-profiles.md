@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
+exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
+feature: Profils vidéo,Vidéo
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '3068'
+source-wordcount: '3071'
 ht-degree: 73%
 
 ---
-
 
 # profils vidéo Dynamic Media {#video-profiles}
 
@@ -42,7 +44,7 @@ Une fois le profil vidéo créé, vous l’appliquez à un ou à plusieurs dossi
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, consultez la section [Configuration du traitement des ressources](config-dms7.md#configuring-asset-processing).
 
-## Paramètres prédéfinis de codage vidéo adaptatif  {#adaptive-video-encoding-presets}
+## Paramètres prédéfinis de codage vidéo adaptatif {#adaptive-video-encoding-presets}
 
 Le tableau ci-après identifie les profils de codage recommandés pour la diffusion en continu de vidéo adaptative sur les appareils mobiles, les tablettes et les postes de travail. Vous pouvez utiliser ces paramètres prédéfinis pour n’importe quel rapport largeur/hauteur.
 
@@ -50,13 +52,13 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
  <tbody> 
   <tr> 
    <td><strong>Codec du format vidéo</strong></td> 
-   <td><strong>Taille de la vidéo - Largeur (px)</strong></td> 
-   <td><strong>Taille de la vidéo - Hauteur (px)</strong></td> 
+   <td><strong>Taille de la vidéo – Largeur (px)</strong></td> 
+   <td><strong>Taille de la vidéo – Hauteur (px)</strong></td> 
    <td><strong>Conserver les proportions ?</strong></td> 
    <td><strong>Débit vidéo (kbit/s)</strong></td> 
    <td><strong>Taux de rafraîchissement vidéo (i/s)</strong></td> 
    <td><strong>Codec audio</strong></td> 
-   <td><strong>Débit audio  (kbit/s)</strong></td> 
+   <td><strong>Débit audio (kbit/s)</strong></td> 
   </tr> 
   <tr> 
    <td><p>MP4 H.264 (mp4)</p> </td> 
@@ -286,7 +288,7 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 
    Appuyez sur l&#39;icône **[!UICONTROL Information]** en regard de chaque option dans les onglets **[!UICONTROL Basic]** et **[!UICONTROL Advanced]** pour obtenir des descriptions supplémentaires ou des paramètres recommandés en fonction du codec de format vidéo sélectionné.
 
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
+1. Dans l’angle supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
 
 ### Copie d’un profil de codage vidéo Dynamic Media {#copying-a-video-encoding-profile}
 
@@ -301,7 +303,7 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 
    Appuyez sur l&#39;icône **[!UICONTROL Information]** en regard de chaque option dans les onglets **[!UICONTROL Basic]** et **[!UICONTROL Advanced]** pour connaître les paramètres et descriptions recommandés.
 
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
+1. Dans l’angle supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
 
 ### Suppression d’un profil de codage vidéo Dynamic Media {#deleting-a-video-encoding-profile}
 
@@ -373,4 +375,3 @@ Vous pouvez supprimer un profil vidéo d’un dossier à partir du menu **[!UICO
 1. Appuyez sur le logo de l&#39;AEM et accédez à **[!UICONTROL Assets]**, puis au dossier dans lequel vous souhaitez supprimer un profil vidéo.
 1. Dans le dossier, appuyez sur la coche pour le sélectionner, puis sur **[!UICONTROL Propriétés]**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils vidéo]** et sélectionnez **[!UICONTROL Aucun]** dans le menu déroulant et appuyez sur **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
-
