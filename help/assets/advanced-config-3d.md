@@ -9,16 +9,18 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: e43fd002-2954-4ef1-ac2b-e8d45afa75be
+exl-id: fdc82bca-e676-4052-b3e9-a198c685df96
+feature: Ressources 3D
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1385'
 ht-degree: 61%
 
 ---
 
-
-# Paramètres de configuration avancés  {#advanced-configuration-settings}
+# Paramètres de configuration avancés {#advanced-configuration-settings}
 
 Bien que les paramètres de configuration par défaut soient adaptés aux cas d’utilisation standard, il est parfois nécessaire d’effectuer des modifications.
 
@@ -34,7 +36,7 @@ Tous les paramètres sont accessibles à l’aide de **CRXDE Lite** dans AEM (**
 >
 >La modification des paramètres qui ne sont pas répertoriés dans le tableau ci-dessous peuvent entraîner un dysfonctionnement du programme.
 
-## Configuration des types de ressources  {#asset-types-configuration}
+## Configuration des types de ressources {#asset-types-configuration}
 
 Dans **CRXDE Lite** en AEM (**[!UICONTROL Outils > Général > CRXDE Lite]**), accédez aux configurations suivantes :
 
@@ -149,4 +151,3 @@ Dans **CRXDE Lite** en AEM (**[!UICONTROL Outils > Général > CRXDE Lite]**), a
 | `/libs/settings/dam/v3D/WebGLSites/fadeCurtains` | Lorsqu&#39;il est défini sur **[!UICONTROL true]**, le rideau de charge disparaît progressivement au cours des dernières parties du chargement et de l&#39;initialisation. Lorsqu’il est défini sur **[!UICONTROL false]**, le rideau reste opaque jusqu’à ce que le chargement et l’initialisation soient terminés. |
 | `/libs/settings/dam/v3D/WebGLSites/showCurtains` | Définissez sur **[!UICONTROL true]** ou **[!UICONTROL false]** pour activer ou désactiver le rideau de charge pour le composant Sites 3D. |
 | `/libs/settings/dam/v3D/WebGLSites/spinHeight` | Lorsque la rotation automatique est active, la position verticale de la caméra est ajustée automatiquement par rapport à la hauteur de l’objet 3D. Lorsqu’elle est définie sur 0,5, la caméra sera placée verticalement à la moitié de la hauteur de l’objet, ce qui permet d’obtenir un centrage vertical de l’horizon dans la fenêtre. Avec des valeurs plus élevées, la caméra regarde vers le bas sur l’objet et la hauteur de l’horizon rendu augmente ; avec des valeurs plus petites, la caméra regarde vers le haut sur l’objet et l’horizon est abaissé. |
-
