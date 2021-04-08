@@ -5,20 +5,22 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: introduction
 content-type: reference
+exl-id: 3cee9b4f-c4be-4ffc-970c-5680c8ebba47
+feature: Ressources 3D
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1177'
 ht-degree: 76%
 
 ---
-
 
 # Utilisation de ressources 3D AEM {#working-with-d-assets}
 
 >[!IMPORTANT]
 >
->aem 3D dans AEM 6.4 n’est plus pris en charge. L&#39;Adobe vous recommande d&#39;utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou version ultérieure.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
+>AEM 3D dans AEM 6.4 n’est plus pris en charge. L&#39;Adobe vous recommande d&#39;utiliser la fonction de ressources 3D dans [AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou version ultérieure.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 AEM 3D (Adobe Experience Manager 3D) est conçu pour le téléchargement, la gestion, l’affichage et le rendu du contenu 3D. La prise en charge de l’affichage et du rendu est optimisée pour les objets individuels.
 
@@ -26,7 +28,7 @@ Reportez-vous également à la section [Notes de mise à jour d’AEM 3D](/help/
 
 Reportez-vous également à la section [Installation et configuration d’AEM 3D](install-config-3d.md).
 
-## À propos des modèles et des scènes dans AEM 3D  {#about-models-and-stages-in-aem-d}
+## À propos des modèles et des scènes dans AEM 3D {#about-models-and-stages-in-aem-d}
 
 AEM 3D permet l’affichage et la création de rendus de modèles 3D autonomes et statiques de haute qualité dans des environnements prédéfinis appelés Scènes. Plus simplement, une scène permet un « éclairage » de l’objet 3D et fournit les paramètres de rendu dans une application native, par exemple, Autodesk® Maya® ou Autodesk 3ds Max®. Par ailleurs, une scène peut inclure en option des caméras, des arrière-plans et une géométrie de plan de sol prédéfinis.
 
@@ -162,4 +164,3 @@ Voir [Rendu des ressources 3D](rendering-3d-assets.md).
 ## Nommage des matériaux dans un fichier de modèle 3D principal {#naming-materials-in-a-primary-d-model-file}
 
 Une *surface* est définie comme la zone de la surface d’un modèle 3D couverte par le même matériau. Ce matériau fournit aussi le nom de la surface. Adobe recommande donc de nommer les matériaux inclus dans les fichiers de modèles 3D principaux en fonction de ce qu’ils représentent. Par exemple, l&#39;utilisation de noms spécifiques tels que &quot;Corps&quot;, &quot;Windows&quot;, &quot;Pneumatiques&quot; ou &quot;Rims&quot; est préférée à l&#39;utilisation de noms vagues tels que &quot;Rouge&quot;, &quot;Verre&quot;, &quot;Caoutchouc&quot;, &quot;Aluminium&quot;.
-
