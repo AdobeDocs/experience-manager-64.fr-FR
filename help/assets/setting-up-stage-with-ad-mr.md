@@ -9,16 +9,18 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: da8fc33b-84ae-4ead-87bb-5a7870a38b1f
+exl-id: facd0411-8a3c-4b1a-af9d-0d59e0399b2c
+feature: Ressources 3D
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '433'
 ht-degree: 91%
 
 ---
 
-
-# Configuration d’une étape standard avec Autodesk Maya et Mental Ray  {#setting-up-a-standard-stage-with-autodesk-maya-and-mental-ray}
+# Configuration d’une étape standard avec Autodesk Maya et Mental Ray {#setting-up-a-standard-stage-with-autodesk-maya-and-mental-ray}
 
 1. Dans Maya, créez une nouvelle scène vide.
 1. Créez une référence (temporaire) à un modèle représentatif. Ceci permet de faciliter l’évaluation de l’éclairage, la configuration des caméras, ainsi que celle du convertisseur.
@@ -68,4 +70,3 @@ ht-degree: 91%
 
 1. Ouvrez les Propriétés de ressource dans AEM. Définissez **[!UICONTROL Title]** sur une chaîne appropriée qui apparaîtra dans la liste déroulante **[!UICONTROL Sélecteur d’état]**. Vérifiez que **[!UICONTROL Classe]** est définie sur **[!UICONTROL Étape 3D]**. Enregistrez et fermez.
 1. Ouvrez une ressource 3D, sélectionnez la nouvelle étape, et vérifiez qu’elle affiche un aperçu et présente un rendu comme prévu.
-
