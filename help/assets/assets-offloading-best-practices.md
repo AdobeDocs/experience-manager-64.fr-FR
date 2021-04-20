@@ -2,8 +2,8 @@
 title: Bonnes pratiques de déchargement dans Assets
 description: Cas d’utilisation recommandés et meilleures pratiques pour le déchargement des workflows d’assimilation et de réplication des ressources dans AEM Assets.
 contentOwner: AG
-feature: Gestion des ressources
-role: Professionnel, administrateur
+feature: Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

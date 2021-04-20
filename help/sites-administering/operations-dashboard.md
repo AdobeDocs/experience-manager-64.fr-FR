@@ -2,7 +2,7 @@
 title: Tableau de bord des opérations
 seo-title: Tableau de bord des opérations
 description: Découvrez comment utiliser le tableau de bord des opérations.
-feature: Opérations
+feature: Operations
 seo-description: Découvrez comment utiliser le tableau de bord des opérations.
 uuid: f1a6dcdc-307b-45f4-ade5-cedc58f0c7cf
 contentOwner: Guillaume Carlino

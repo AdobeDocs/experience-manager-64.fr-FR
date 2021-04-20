@@ -2,8 +2,8 @@
 title: Meilleures pratiques de gestion des ressources à l’aide de AEM
 description: Identifiez et respectez les meilleures pratiques qui améliorent la stabilité et les performances du système en charge, en fonction du déploiement AEM Assets et des fonctionnalités utilisées pour assimiler et traiter les ressources.
 contentOwner: AG
-feature: Gestion des ressources
-role: Architecte, Administrateur
+feature: Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

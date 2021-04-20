@@ -2,8 +2,8 @@
 title: Création et configuration des pages de l’éditeur de ressources
 description: Découvrez comment créer des pages Éditeur de ressources personnalisées et modifier plusieurs ressources simultanément.
 contentOwner: AG
-feature: Outils de développement,Gestion des ressources
-role: Professionnel, administrateur
+feature: Developer Tools,Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

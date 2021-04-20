@@ -2,8 +2,8 @@
 title: Intégration des ressources avec Flux d’activités
 description: Décrit les fonctionnalités d’enregistrement d’AEM ainsi que la procédure de configuration d’AEM pour enregistrer des événements spécifiques.
 contentOwner: AG
-feature: Gestion des ressources
-role: Développeur
+feature: Asset Management
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

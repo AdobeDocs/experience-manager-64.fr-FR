@@ -3,7 +3,7 @@ title: Publication de dossiers sur Brand Portal
 description: Découvrez comment publier et annuler la publication de fichiers sur le portail des marques.
 contentOwner: VG
 feature: Brand Portal
-role: Professionnel
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt

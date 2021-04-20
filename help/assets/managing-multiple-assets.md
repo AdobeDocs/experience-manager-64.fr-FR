@@ -2,8 +2,8 @@
 title: Modification en masse des métadonnées de plusieurs ressources et collections
 description: Découvrez comment modifier simultanément les métadonnées de nombreux fichiers et collections afin de propager rapidement les modifications de métadonnées courantes.
 contentOwner: AG
-feature: Gestion des ressources,Métadonnées,Collections
-role: Professionnel
+feature: Asset Management,Metadata,Collections
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

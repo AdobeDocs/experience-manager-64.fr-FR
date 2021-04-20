@@ -2,8 +2,8 @@
 title: Formats de fichier pris en charge dans AEM Assets
 description: Liste des formats de fichier et des types MIME pris en charge par AEM Assets et des fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
-feature: Gestion des ressources,Rendus
-role: Professionnel, administrateur
+feature: Asset Management,Renditions
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

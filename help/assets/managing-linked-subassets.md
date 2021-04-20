@@ -2,8 +2,8 @@
 title: Gérez des ressources composées et générez des sous-ressources.
 description: Découvrez comment créer des références à des ressources AEM à partir de fichiers InDesign, Adobe Illustrator et Photoshop. Découvrez également comment utiliser la fonction Visionneuse de page pour afficher les pages individuelles de fichiers de plusieurs pages, y compris les fichiers PDF, INDD, PPT, PPTX et AI.
 contentOwner: AG
-feature: Gestion des ressources
-role: Professionnel, administrateur
+feature: Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: e46a27a1ba11b4a5973eb1ece02c8594b2ae0fc9
 workflow-type: tm+mt

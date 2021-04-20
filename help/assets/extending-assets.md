@@ -2,8 +2,8 @@
 title: Personnalisation et extension de ressources
 description: Découvrez les moyens par lesquels vous pouvez personnaliser et étendre le Partage de ressources et l’Éditeur de ressources, qui proposent aux utilisateurs une interface et un ensemble de fonctionnalités spécialement adaptés.
 contentOwner: AG
-feature: Outils de développement
-role: Développeur
+feature: Developer Tools
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

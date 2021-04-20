@@ -2,7 +2,7 @@
 title: Bonnes pratiques d’intégration d’AEM et de Creative Cloud
 description: Meilleures pratiques pour intégrer un déploiement AEM à Adobe Creative Cloud afin de rationaliser les workflows de transfert d’actifs et d’optimiser l’efficacité
 contentOwner: AG
-feature: Collaboration,Lien de ressources d’Adobe,Application de bureau
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Business Practitioner,Administrator
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
 translation-type: tm+mt

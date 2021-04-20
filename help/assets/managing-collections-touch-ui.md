@@ -4,7 +4,7 @@ description: Découvrez les tâches de gestion des collections de ressources, te
 contentOwner: AG
 mini-toc-levels: 1
 feature: Collections
-role: Professionnel
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

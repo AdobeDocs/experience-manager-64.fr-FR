@@ -2,7 +2,7 @@
 title: Liste de contrôle de sécurité
 seo-title: Liste de contrôle de sécurité
 description: Découvrez les différents aspects de la sécurité lors de la configuration et du déploiement d’AEM.
-feature: Sécurité
+feature: Security
 seo-description: Découvrez les différents aspects de la sécurité lors de la configuration et du déploiement d’AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service

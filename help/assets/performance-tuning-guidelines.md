@@ -2,8 +2,8 @@
 title: Guide de réglage des performances des ressources
 description: Traite principalement de la configuration d’AEM, ainsi que des modifications du matériel, des logiciels et des composants réseau pour supprimer les goulets d’étranglement et optimiser la performance d’AEM Assets.
 contentOwner: AG
-feature: Gestion des ressources
-role: Architecte, Administrateur
+feature: Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

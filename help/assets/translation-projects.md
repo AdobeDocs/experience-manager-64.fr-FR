@@ -2,8 +2,8 @@
 title: Création de projets de traduction
 description: Apprenez à créer des projets de traduction dans AEM.
 contentOwner: AG
-feature: Traduction
-role: Architecte, Administrateur
+feature: Translation
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

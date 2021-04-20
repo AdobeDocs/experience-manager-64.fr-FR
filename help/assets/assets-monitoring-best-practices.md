@@ -2,8 +2,8 @@
 title: Bonnes pratiques en matière de surveillance des ressources
 description: Meilleures pratiques pour surveiller l’environnement et la performance de votre instance AEM après son déploiement.
 contentOwner: AG
-feature: Gestion des ressources
-role: Administrateur,Architecte
+feature: Asset Management
+role: Administrator,Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

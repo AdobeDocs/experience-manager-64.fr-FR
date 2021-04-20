@@ -2,8 +2,8 @@
 title: Utiliser des profils de métadonnées pour appliquer des métadonnées par défaut à tous les fichiers d’un dossier
 description: Découvrez les profils de métadonnées pour les ressources. Apprenez à créer un profil de métadonnées et à l’appliquer aux ressources d’un dossier.
 contentOwner: AG
-feature: 'Métadonnées  '
-role: Professionnel, administrateur
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

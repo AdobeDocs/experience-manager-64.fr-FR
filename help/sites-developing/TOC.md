@@ -7,8 +7,8 @@ user-guide-title: Guide de l’utilisateur pour le développement dans AEM 6.4
 breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 feature-set: Experience Manager Sites
-feature: Développement
-role: Développeur
+feature: Developing
+role: Developer
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

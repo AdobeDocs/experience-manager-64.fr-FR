@@ -2,8 +2,8 @@
 title: Préparation des ressources en vue de la traduction
 description: Créez des dossiers racines de langues pour préparer la traduction de ressources multilingues.
 contentOwner: AG
-feature: Projets,Traduction
-role: Professionnel, administrateur
+feature: Projects,Translation
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

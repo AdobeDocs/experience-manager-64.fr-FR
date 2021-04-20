@@ -7,7 +7,7 @@ breadcrumb-title: Guide mobile
 user-guide-description: Créez et gérez du contenu pour les applications mobiles.
 feature-set: Experience Manager Sites
 feature: Mobile
-role: Professionnel
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

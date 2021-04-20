@@ -2,8 +2,8 @@
 title: Traiter les ressources pour exécuter des processus d’entreprise, effectuer des audits, assurer la conformité et préserver les fondamentaux de la santé mentale
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des workflows.
 contentOwner: AG
-feature: Workflow,Rendus
-role: Professionnel, administrateur
+feature: Workflow,Renditions
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

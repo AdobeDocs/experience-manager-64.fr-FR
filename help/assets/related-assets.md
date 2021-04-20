@@ -2,8 +2,8 @@
 title: Ressources liées
 description: Découvrez comment mettre en relation des ressources qui partagent des attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources.
 contentOwner: AG
-feature: Gestion des ressources,Collaboration
-role: Professionnel
+feature: Asset Management,Collaboration
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

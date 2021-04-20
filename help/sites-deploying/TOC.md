@@ -7,8 +7,8 @@ user-guide-title: Guide de déploiement d’AEM 6.4
 breadcrumb-title: Guide de déploiement
 user-guide-description: En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4, y compris sur le déploiement cloud d’Adobe Managed Services.
 feature-set: Experience Manager Sites
-feature: Déploiement
-role: Architecte
+feature: Deploying
+role: Architect
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

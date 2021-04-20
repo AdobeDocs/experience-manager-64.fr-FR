@@ -3,7 +3,7 @@ title: Gérer vos ressources numériques à l’aide de AEM Assets
 description: Découvrez les différentes tâches de gestion et de modification des ressources que vous pouvez réaliser à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
-feature: Gestion des ressources, Recherche, Rendus, Collaboration
+feature: Asset Management,Search,Renditions,Collaboration
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
 translation-type: tm+mt

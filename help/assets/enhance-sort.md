@@ -2,8 +2,8 @@
 title: Tri optimisé des ressources dans AEM
 description: Découvrez comment AEM Assets déploie le tri côté serveur de façon à trier les ressources d’un dossier ou une requête de recherche en une seule fois au lieu de les trier par lots du côté client.
 contentOwner: AG
-feature: Rechercher
-role: Professionnel
+feature: Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

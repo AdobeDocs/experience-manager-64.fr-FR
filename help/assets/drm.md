@@ -2,8 +2,8 @@
 title: Gestion des droits numériques dans [!DNL Adobe Experience Manager Assets].
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans  [!DNL Experience Manager] .
 contentOwner: AG
-feature: DRM,Gestion des ressources
-role: Professionnel, administrateur
+feature: DRM,Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

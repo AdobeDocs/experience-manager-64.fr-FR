@@ -2,8 +2,8 @@
 title: Utilisation du module de démonstration pour les statistiques sur les ressources
 description: Utilisez le module de démonstration afin de permettre à la fonction Statistiques sur les ressources d’Adobe de capturer les données d’une page web et de générer des informations pour cette page.
 contentOwner: AG
-feature: Statistiques sur les ressources,Rapports sur les ressources
-role: Professionnel, administrateur
+feature: Asset Insights,Asset Reports
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

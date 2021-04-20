@@ -2,7 +2,7 @@
 title: Meilleures pratiques relatives au format de fichier des ressources
 description: Meilleures pratiques relatives à la prise en charge des fichiers dans AEM Assets.
 contentOwner: AG
-feature: Gestion des ressources,Outils de développement
+feature: Asset Management,Developer Tools
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633

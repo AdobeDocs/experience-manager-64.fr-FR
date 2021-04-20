@@ -2,8 +2,8 @@
 title: Sélecteur de ressources
 description: Découvrez comment utiliser le sélecteur de ressources pour rechercher, filtrer, parcourir et récupérer les métadonnées des ressources dans Adobe Experience Manager (AEM) Assets. Découvrez également comment personnaliser l’interface du sélecteur de ressources.
 contentOwner: AG
-feature: Gestion des ressources,Métadonnées,Rechercher
-role: Professionnel
+feature: Asset Management,Metadata,Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

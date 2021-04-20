@@ -2,8 +2,8 @@
 title: Révision de collections et de ressources situées dans un dossier
 description: Mettez en place des workflow de révision pour les ressources dans un dossier ou une collection et partagez ce processus avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 contentOwner: AG
-feature: Collaboration, collections
-role: Professionnel
+feature: Collaboration, Collections
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

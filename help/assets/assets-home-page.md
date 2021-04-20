@@ -2,8 +2,8 @@
 title: Expérience de la page d’accueil d’AEM Assets
 description: Personnalisez la page d’accueil d’AEM Assets afin d’enrichir l’expérience de l’écran de bienvenue, avec notamment un instantané des activités récentes concernant les ressources.
 contentOwner: AG
-feature: Outils de développement,Gestion des ressources
-role: Administrateur, Professionnel
+feature: Developer Tools,Asset Management
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

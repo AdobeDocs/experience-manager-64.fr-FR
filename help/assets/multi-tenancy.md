@@ -3,7 +3,7 @@ title: Multiplénitude pour les collections, les fragments et les modèles de fr
 description: Séparez le contenu du référentiel CRX en fonction de l’entreprise cliente afin d’empêcher tout accès non autorisé.
 contentOwner: AG
 feature: Collections
-role: Architecte, Administrateur, Leader
+role: Architect,Administrator,Leader
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

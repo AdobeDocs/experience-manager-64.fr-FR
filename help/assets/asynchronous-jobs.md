@@ -2,8 +2,8 @@
 title: Configurez des opérations asynchrones dans  [!DNL Adobe Experience Manager].
 description: Exécutez de manière asynchrone certaines tâches gourmandes en ressources pour optimiser les performances dans  [!DNL Experience Manager Assets].
 contentOwner: AG
-feature: Gestion des ressources
-role: Professionnel
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

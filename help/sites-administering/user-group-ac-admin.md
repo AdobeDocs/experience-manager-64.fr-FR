@@ -2,7 +2,7 @@
 title: Administration des utilisateurs, des groupes et des droits d’accès
 seo-title: Administration des utilisateurs, des groupes et des droits d’accès
 description: Découvrez l’administration des utilisateurs, des groupes et des droits d’accès dans AEM.
-feature: Sécurité
+feature: Security
 seo-description: Découvrez l’administration des utilisateurs, des groupes et des droits d’accès dans AEM.
 uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
 products: SG_EXPERIENCEMANAGER/6.4/SITES

@@ -2,8 +2,8 @@
 title: Recherche de texte intégral GQL
 description: Explorez la fonction de recherche de texte intégral GQL dans AEM Assets. Utilisez-la afin de rechercher des ressources selon des métadonnées spécifiques telles que le titre, la description et le nom de l’auteur.
 contentOwner: AG
-feature: Rechercher,Métadonnées
-role: Professionnel
+feature: Search,Metadata
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

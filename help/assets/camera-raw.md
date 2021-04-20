@@ -2,7 +2,7 @@
 title: Prise en charge de Camera Raw
 description: Découvrez comment activer la prise en charge Camera Raw dans Adobe Experience Manager Assets.
 contentOwner: AG
-feature: Outils de développement
+feature: Developer Tools
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759

@@ -2,8 +2,8 @@
 title: Activation de la détection des doublons
 description: Découvrez comment activer la détection des ressources en double dans AEM.
 contentOwner: AG
-feature: Gestion des ressources,Rapports sur les ressources
-role: Professionnel, administrateur
+feature: Asset Management,Asset Reports
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

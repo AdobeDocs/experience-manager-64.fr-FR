@@ -2,8 +2,8 @@
 title: Extension de la recherche de ressources
 description: Découvrez comment étendre la recherche dans AEM Assets au-delà des recherches prêtes à l’emploi de ressources par chaînes.
 contentOwner: AG
-feature: Rechercher
-role: Développeur
+feature: Search
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

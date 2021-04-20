@@ -2,7 +2,7 @@
 title: Maintenance du journal d’audit dans AEM 6
 seo-title: Maintenance du journal d’audit dans AEM 6
 description: Découvrez comment tenir à jour le journal d’audit dans AEM.
-feature: Opérations
+feature: Operations
 seo-description: Découvrez comment tenir à jour le journal d’audit dans AEM.
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User

@@ -2,8 +2,8 @@
 title: Meilleures pratiques pour une traduction efficace des ressources
 description: Meilleures pratiques pour une gestion efficace des ressources afin de synchroniser les diverses versions traduites et de rationaliser les workflows de traduction.
 contentOwner: AG
-feature: Traduction
-role: Professionnel, administrateur
+feature: Translation
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

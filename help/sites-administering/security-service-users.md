@@ -2,7 +2,7 @@
 title: Utilisateurs de services dans AEM
 seo-title: Utilisateurs de services dans AEM
 description: Apprenez-en plus sur les utilisateurs de services dans AEM.
-feature: Sécurité
+feature: Security
 seo-description: Apprenez-en plus sur les utilisateurs de services dans AEM.
 uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
 contentOwner: User

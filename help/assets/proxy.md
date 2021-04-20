@@ -2,8 +2,8 @@
 title: Développement d’un proxy Assets
 description: 'Un proxy est une instance AEM qui utilise des programmes de travail par proxy pour le traitement des tâches. Découvrez comment configurer un proxy AEM, les opérations prises en charge et les composants de proxy, ainsi que comment développer un programme de travail par proxy personnalisé. '
 contentOwner: AG
-feature: Traitement des ressources
-role: Administrateur, architecte
+feature: Asset Processing
+role: Administrator, Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

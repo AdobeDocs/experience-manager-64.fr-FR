@@ -2,8 +2,8 @@
 title: Recherche de ressources vidéo
 description: Utilisez des mots-clés, des propriétés de fichiers telles qu’un type MIME, la taille ou l’horodatage de modification récente pour retrouver rapidement vos fichiers dans AEM Assets.
 contentOwner: AG
-feature: Vidéo,Rechercher
-role: Professionnel
+feature: Video,Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
