@@ -7,10 +7,10 @@ user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 76%
+source-wordcount: '627'
+ht-degree: 78%
 
 ---
 
@@ -166,20 +166,3 @@ ht-degree: 76%
    + [Partage de dossiers privés](private-folder.md)
    + [Instructions d’entraînement sur le service de contenu dynamique](smart-tags-training-guidelines.md)
    + [Rendus vidéo](video-renditions.md)
-+ Ressources 3D {#three-d}
-   + [Notes de mise à jour AEM 3D](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/aem3d-release-notes.html)
-   + [Utilisation des ressources 3D](assets-3d.md)
-   + [Installation et configuration d’AEM 3D](install-config-3d.md)
-   + [Paramètres de configuration avancés](advanced-config-3d.md)
-   + [Utilisation de ressources Adobe Dimension](working-dimension-assets.md)
-   + [À propos du chargement et du traitement de ressources 3D dans AEM](upload-processing-3d-assets.md)
-   + [Résolution des dépendances de fichier](resolve-file-dependencies.md)
-   + [Affichage de ressources 3D](viewing-3d-assets.md)
-   + [Rendu de ressources 3D](rendering-3d-assets.md)
-   + [À propos de l’utilisation des scènes dans AEM 3D](about-the-use-of-stages-in-aem-3d.md)
-   + [Configuration d’une étape standard avec Autodesk Maya et Mental Ray](setting-up-stage-with-ad-mr.md)
-   + [Utilisation du composant Sites 3D](using-the-3d-sites-component.md)
-   + [Intégration de l&#39;AEM 3D avec Autodesk Maya](integrate-maya-with-3d.md)
-   + [Utilisation de scènes IBL](working-with-ibl-stages.md)
-   + [Intégration de AEM 3D avec Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
-   + [Configuration d’une étape IBL avec Autodesk Maya et Mental Ray](setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray.md)
