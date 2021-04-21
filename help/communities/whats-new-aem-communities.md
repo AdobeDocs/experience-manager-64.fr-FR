@@ -1,25 +1,23 @@
 ---
 title: Nouveautés des communautés AEM 6.4
-seo-title: Nouveautés des communautés AEM 6.4
-description: 'null'
-seo-description: 'null'
+description: AEM Communities offre un cadre de collaboration entre ses partenaires, ses clients et ses employés.
 uuid: e4bf343c-59cd-48ac-bee4-85db109e4c65
 contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
+exl-id: fcdc65c9-929d-4a87-8ff7-5e3cf5711fd9
 translation-type: tm+mt
-source-git-commit: 4a1be7a5a233557dff0e7cd3796380532f23d5eb
+source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1040'
 ht-degree: 1%
 
 ---
-
 
 # Nouveautés de AEM 6.4 Communautés {#what-s-new-in-aem-communities}
 
 AEM Communities offre un cadre de collaboration entre ses partenaires, ses clients et ses employés. Il confère des capacités sociales à la structure du site Web et aide les entreprises à mobiliser et à transmettre des connaissances à leurs parties prenantes, afin d’améliorer la valeur de leur marque à leur manière.
 
-aem 6.4 Les collectivités mettent en oeuvre des fonctionnalités pour améliorer les expériences des utilisateurs de la communauté et faciliter les tâches quotidiennes des administrateurs, des modérateurs et des gestionnaires de la communauté.
+AEM 6.4 Les collectivités mettent en oeuvre des fonctionnalités pour améliorer les expériences des utilisateurs de la communauté et faciliter les tâches quotidiennes des administrateurs, des modérateurs et des gestionnaires de la communauté.
 
 Lisez la suite pour découvrir rapidement les nouvelles fonctionnalités et améliorations. Voir aussi l&#39;AEM 6.4 Communautés [notes de mise à jour](../release-notes/communities-release-notes.md). Pour obtenir la documentation sur AEM 6.4 Communautés, consultez le [AEM 6.4 Community User Guide](home.md).
 
@@ -37,7 +35,7 @@ Pour créer de tels groupes, les utilisateurs peuvent simplement accéder à la 
 
 ### Supprimer des groupes communautaires de la console de groupes {#delete-community-groups-from-groups-console}
 
-aem 6.4 Communautés fournit l&#39;icône Supprimer le groupe sur les groupes communautaires existants, dans la collection Groupes communautaires de la console Sites communautaires. Ceci active la [suppression de groupe](groups.md#deleting-the-group) en un seul clic, ainsi que la suppression de tous les éléments associés au groupe (tels que le contenu et les abonnements utilisateur).
+AEM 6.4 Communautés fournit l&#39;icône Supprimer le groupe sur les groupes communautaires existants, dans la collection Groupes communautaires de la console Sites communautaires. Ceci active la [suppression de groupe](groups.md#deleting-the-group) en un seul clic, ainsi que la suppression de tous les éléments associés au groupe (tels que le contenu et les abonnements utilisateur).
 
 ![deletegrp](assets/deletegrp.png)
 
@@ -49,7 +47,7 @@ Le contenu d’apprentissage peut désormais être créé, géré et publié pou
 
 ## Modération du contenu généré par l’utilisateur {#moderating-user-generated-content}
 
-aem 6.4 Collectivités offres peu d&#39;améliorations à la modération, qui sont essentielles pour faciliter la vie quotidienne des modérateurs communautaires.
+AEM 6.4 Collectivités offres peu d&#39;améliorations à la modération, qui sont essentielles pour faciliter la vie quotidienne des modérateurs communautaires.
 
 ### Détection automatique du contenu indésirable  {#automatic-spam-detection}
 
@@ -63,7 +61,7 @@ Le nouveau moteur de détection du spam permet de filtrer le contenu généré p
 
 ### Nouveaux filtres (réponses/sans réponse) pour QnA {#new-answered-unanswered-filters-for-qna}
 
-aem 6.4 ajoute deux [nouveaux filtres](moderation.md#filter-rail), nommés Répondu et Non répondu pour les questions QnA, à la console de modération en bloc. Ces filtres sont disponibles sous Statut dans le rail de filtre.
+AEM 6.4 ajoute deux [nouveaux filtres](moderation.md#filter-rail), nommés Répondu et Non répondu pour les questions QnA, à la console de modération en bloc. Ces filtres sont disponibles sous Statut dans le rail de filtre.
 
 ![états](assets/statuses.png)
 
@@ -77,7 +75,7 @@ Les utilisateurs doivent simplement sélectionner les filtres de leur choix dans
 
 ## Gestion des sites communautaires {#managing-community-sites}
 
-aem 6.4 Communautés apporte des améliorations à la gestion du site, ce qui permet aux administrateurs du site de créer, gérer et supprimer facilement de nombreux sites communautaires dans une langue différente.
+AEM 6.4 Communautés apporte des améliorations à la gestion du site, ce qui permet aux administrateurs du site de créer, gérer et supprimer facilement de nombreux sites communautaires dans une langue différente.
 
 ### Créez des sites de communauté à plusieurs paramètres régionaux en une seule étape {#create-multi-locale-community-sites-in-one-step}
 
@@ -89,7 +87,7 @@ Les utilisateurs peuvent sélectionner simultanément des dossiers de configurat
 
 ### Supprimer les sites de la communauté de la console de sites {#delete-community-sites-from-sites-console}
 
-aem 6.4 Communautés fournit l&#39;icône Supprimer le site sur les sites communautaires existants, dans la console Sites communautaires. Cela permet la [suppression du site](create-site.md) et des éléments associés en un seul clic.
+AEM 6.4 Communautés fournit l&#39;icône Supprimer le site sur les sites communautaires existants, dans la console Sites communautaires. Cela permet la [suppression du site](create-site.md) et des éléments associés en un seul clic.
 
 ![siteactions](assets/siteactions.png)
 
