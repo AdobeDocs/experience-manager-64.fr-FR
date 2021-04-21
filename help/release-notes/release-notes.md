@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
+exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
 translation-type: tm+mt
-source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
+source-git-commit: eb55489da5e390578b2ae71be424930e9bf3efd3
 workflow-type: tm+mt
-source-wordcount: '2844'
-ht-degree: 79%
+source-wordcount: '2813'
+ht-degree: 80%
 
 ---
-
 
 # Notes de mise à jour générales d’Adobe Experience Manager 6.4 {#general-release-notes-for-adobe-experience-manager}
 
@@ -122,7 +122,7 @@ Les nouveautés de la version 6.4 incluent un éditeur de [modèle de contenu](
 
 **Fragments d’expérience**
 
-La création de variations au sein d’un fragment avec le même contenu, mais une disposition différente, est maintenant plus efficace, grâce à la fonctionnalité de blocs de création. En plus d’envoyer des fragments d’expérience à Facebook et à Pinterest, il est désormais possible de les envoyer en offre à Adobe Target.
+La création de variations au sein d’un fragment avec le même contenu, mais une disposition différente, est maintenant plus efficace, grâce à la fonctionnalité de blocs de création. En plus d’envoyer des fragments d’expérience à Facebook et Pinterest, il est maintenant possible de les envoyer à Adobe Target en tant qu’offre.
 
 **Content Services**
 
@@ -247,14 +247,6 @@ Voir [Imagerie dynamique](/help/assets/imaging-faq.md) pour plus d’information
 De nouvelles visionneuses, notamment panoramique et VR, vous permettent de fournir des expériences plus immersives.
 
 Voir la documentation [Images panoramiques](/help/assets/panoramic-images.md) pour plus d’informations.
-
-**Ressources 3D**
-
-Nouvelle intégration avec [Adobe Dimension CC](https://www.adobe.com/fr/products/dimension.html), une application Creative Cloud pour la création d’expériences 3D.
-
-Voir la documentation [Utilisation d’actifs 3D](/help/assets/assets-3d.md) pour plus d’informations.
-
-![ne pas localiser/3d](assets/do-not-localize/3d.png)
 
 ### Experience Manager Forms {#experience-manager-forms}
 
