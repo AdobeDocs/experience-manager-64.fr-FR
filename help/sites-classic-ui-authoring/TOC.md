@@ -9,10 +9,10 @@ user-guide-description: Ce guide traite des concepts de création dans AEM inter
 feature: 'Création  '
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 83%
+source-wordcount: '273'
+ht-degree: 80%
 
 ---
 
@@ -82,17 +82,9 @@ ht-degree: 83%
    + [Ciblage de votre Adobe Campaign](classic-personalization-ac-target.md)
 + Création de ressources dans l’interface utilisateur classique {#assets}
    + [Utilisation des ressources](classicui-assets.md)
-   + [Utilisation de scènes IBL](classicui-stages-aem3d-ibl.md)
-   + [Rendu de ressources 3D](classicui-rendering-3d.md)
-   + [Affichage de ressources 3D](classicui-view-3d-assets.md)
    + [Diffusion de ressources Dynamic Media](dynamic-media-assets-delivering.md)
-   + [Configuration d’une étape standard avec Autodesk Maya et Mental Ray](classicui-stages-aem3d-ad-mr.md)
    + [Ajout de ressources Dynamic Media aux pages](dynamic-media-assets-adding-to-page.md)
    + [Ajouter les fonctionnalités de Dynamic Media Classic (Scene7) à votre page](manage-assets-classic-s7.md)
    + [Utilisation de Dynamic Media](dynamic-media-assets.md)
-   + [Utilisation des ressources 3D](classicui-3dassets.md)
    + [Vidéo](manage-assets-classic-s7-video.md)
    + [Conventions de dénomination pour le test des ressources](asset-naming-conventions.md)
-   + [À propos du chargement et du traitement de ressources 3D dans AEM](classicui-upload-proc-3d.md)
-   + [À propos de l’utilisation des scènes dans AEM 3D](classicui-stages-aem3d.md)
-   + [Résolution des dépendances de fichier](classicui-upload-proc-3d-resolve-dependencies.md)
