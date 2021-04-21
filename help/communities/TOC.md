@@ -5,13 +5,12 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur d’AEM 6.4 Communities
 breadcrumb-title: Guide de Communities
 user-guide-description: Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales.
-feature-set: Experience Manager
 feature: Communities
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
+source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '507'
 ht-degree: 30%
 
 ---
