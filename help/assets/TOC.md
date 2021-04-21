@@ -6,9 +6,8 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
-feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: 8caaa2000a179fd2bbefd70b316f96bd8c67aca5
+source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 76%
