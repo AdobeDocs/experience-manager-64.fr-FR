@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
+exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 59%
+source-wordcount: '1657'
+ht-degree: 60%
 
 ---
-
 
 # AEM Assets Notes de mise à jour {#aem-assets-release-notes}
 
@@ -30,16 +30,16 @@ Pour en savoir plus sur la fonctionnalité, les conditions préalables et commen
 
 ## Balises dynamiques améliorées (optimisées par Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
-aem 6.4 introduit la fonctionnalité Balises intelligentes améliorées basée sur l&#39;intelligence artificielle en plus des Balises intelligentes qui a été lancée dans AEM 6.3.
+AEM 6.4 introduit la fonctionnalité Balises intelligentes améliorées basée sur l&#39;intelligence artificielle en plus des Balises intelligentes qui a été lancée dans AEM 6.3.
 
 * Smart Content Service identifie la taxonomie commerciale du client et l’utilise pour baliser automatiquement les ressources numériques avec les balises pertinentes du client, en plus des balises génériques. Il améliore considérablement la visibilité des ressources et réduit le délai de mise sur le marché.
 * Adobe Sensei alimente Smart Content Service, ce qui vous permet de former l’algorithme de reconnaissance d’images à votre taxonomie professionnelle. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur les ressources similaires.
 
-Pour utiliser les balises actives AEM Assets Enhanced, installez le [dernier Service Pack de l’AEM 6.4](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html).
+Pour utiliser les balises actives AEM Assets Enhanced, installez le [dernier Service Pack de l’AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
 
 ## Recherche de traduction intelligente (optimisée par Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
 
-aem 6.4 introduit la fonctionnalité de recherche Smart Translation pour prendre en charge les scénarios de recherche multilingues. Les clients disposant d’équipes dispersées dans le monde et parlant différentes langues ont désormais accès à la recherche dans différentes langues sans passer par des workflows de traduction coûteux et fastidieux.
+AEM 6.4 introduit la fonctionnalité de recherche Smart Translation pour prendre en charge les scénarios de recherche multilingues. Les clients disposant d’équipes dispersées dans le monde et parlant différentes langues ont désormais accès à la recherche dans différentes langues sans passer par des workflows de traduction coûteux et fastidieux.
 
 * La requête de recherche est traduite sans intervention manuelle.
 * Les balises actives sont générées en anglais et sont automatiquement traduites dans d’autres langues.
@@ -47,7 +47,7 @@ aem 6.4 introduit la fonctionnalité de recherche Smart Translation pour prendre
 
 ## Expérience utilisateur {#user-experience}
 
-aem 6.4 offre des améliorations significatives de l’expérience utilisateur dans les domaines de la navigation, de la recherche, des ressources de plusieurs pages et des outils d’administration. Détails ci-dessous :
+AEM 6.4 offre des améliorations significatives de l’expérience utilisateur dans les domaines de la navigation, de la recherche, des ressources de plusieurs pages et des outils d’administration. Détails ci-dessous :
 
 Améliorations de la navigation
 
@@ -87,7 +87,7 @@ AEM 6.4 comprend plusieurs fonctionnalités avancées de gestion des métadonn�
 
 ## Rapports {#reports}
 
-aem 6.4 présente des améliorations importantes du rapports des ressources :
+AEM 6.4 présente des améliorations importantes du rapports des ressources :
 
 * Nouveau framework de rapports extensibles (pour les référentiels de grande taille) au niveau de l’entreprise appliquant des tâches Sling pour le traitement asynchrone des demandes de rapports. Vous pouvez planifier un rapport à une date et une heure précises. Vous pouvez également ajouter des colonnes personnalisées à un rapport.
 * Les nouveaux rapports prêtes à l’emploi sont le plus souvent demandés par les clients, tels que l’utilisation des disques, les fichiers, les partages de liens, la publication sur le portail de la marque et la formation sur les balises actives.
@@ -106,7 +106,7 @@ aem 6.4 présente des améliorations importantes du rapports des ressources :
 
 ## Application de bureau AEM {#aem-desktop-app}
 
-aem application de bureau est mise à jour vers la version 1.8, qui est compatible avec AEM 6.4. La liste complète des modifications pour l&#39;application de bureau de l&#39;AEM est fournie dans un document [de mise à jour de l&#39;application de bureau ](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html) dédié.\
+AEM application de bureau est mise à jour vers la version 1.8, qui est compatible avec AEM 6.4. La liste complète des modifications pour l&#39;application de bureau de l&#39;AEM est fournie dans un document [de mise à jour de l&#39;application de bureau ](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/release-notes.html) dédié.\
 Voici une liste des mises en évidence des applications de bureau AEM depuis la sortie d&#39;AEM 6.3 :
 
 * Possibilité de télécharger des dossiers hiérarchiques en arrière-plan.
@@ -119,7 +119,7 @@ Voici une liste des mises en évidence des applications de bureau AEM depuis la 
 Pour accéder plus facilement à la documentation et aux meilleures pratiques, la documentation suivante est disponible :
 
 * [Guide](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html) d’utilisation destiné aux utilisateurs finaux travaillant avec l’application.
-* [Guide](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/install-upgrade.html) d&#39;installation destiné aux administrateurs configurant AEM et AEM applications de bureau pour travailler ensemble
+* [Guide](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/install-upgrade.html) d&#39;installation destiné aux administrateurs configurant AEM et AEM applications de bureau pour travailler ensemble
 
 ## Stockage à plusieurs niveaux {#tiered-storage}
 
@@ -139,7 +139,7 @@ Pour une présentation des plates-formes prises en charge, consultez la [documen
 
 Dans la version 6.4, Dynamic Media prend en charge un nouveau mode, dans lequel l’actif original est téléchargé et géré à l’aide de l’interface utilisateur web d’AEM Assets, tandis que les rendus dynamiques et autres fonctions de médias dynamiques sont traités en arrière-plan par le service de livraison sur le cloud de Dynamic Media.
 
-Dans ce mode (introduit en premier avec la sortie de [AEM 6.3 Feature Packs 14410 et 18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), les utilisateurs bénéficient de la gestion de ressources de bout en bout et de fonctionnalités de médias dynamiques à l’aide de l’interface utilisateur Web AEM Assets moderne, tout en exploitant les services de diffusion rétrocompatibles avec Dynamic Media (Scene7), sont inchangées.
+Dans ce mode (introduit en premier avec la sortie de [AEM 6.3 Feature Packs 14410 et 18912](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), les utilisateurs bénéficient de la gestion de ressources de bout en bout et de fonctionnalités de médias dynamiques à l’aide de l’interface utilisateur Web AEM Assets moderne, tout en exploitant les services de diffusion rétrocompatibles avec Dynamic Media (Scene7), sont inchangées.
 
 En outre, AEM 6.4 introduit de nouvelles fonctions reposant sur Adobe Sensei pour les médias émergents, tels que VR et 3D, les visionneuses Dynamic Media et la prise en charge des fragments d’expérience au sein des images interactives et des bannières de carrousel.
 
@@ -168,7 +168,3 @@ Voir [Imagerie dynamique](../assets/imaging-faq.md) pour plus d’informations.
 * VR Viewer offre une expérience immersive pour les propriétés, les emplacements et les paysages.
 * La visionneuse d’image verticale est optimisée pour l’imagerie produit.
 * Amélioration de l’accessibilité du clavier.
-
-### 3D et intégration avec Dimension CC {#d-and-integration-with-dimension-cc}
-
-L&#39;intégration à [Adobe Dimension CC](https://www.adobe.com/fr/products/dimension.html) a été introduite pour un flux de travaux 3D plus transparent. Pour en savoir plus, consultez la documentation [Utilisation de ressources 3D](../assets/assets-3d.md).
