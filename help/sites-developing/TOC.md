@@ -6,14 +6,13 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur pour le développement dans AEM 6.4
 breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
-feature-set: Experience Manager Sites
-feature: Developing
+feature: Développement
 role: Developer
 translation-type: tm+mt
-source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
+source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 82%
+source-wordcount: '886'
+ht-degree: 83%
 
 ---
 
@@ -200,7 +199,7 @@ ht-degree: 82%
    + [Test de votre interface utilisateur](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/hobbes.html)
 + Bonnes pratiques{#bestpractices}
    + [Présentation des meilleures pratiques](best-practices.md)
-   + [Lignes directrices AEM développement et bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/dev-guidelines-bestpractices.html)
+   + [Lignes directrices AEM développement et bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/dev-guidelines-bestpractices.html?lang=fr)
    + [Meilleures pratiques de développement](development-practices.md)
    + [Content Architecture](content-architecture.md)
    + [Architecture logicielle](software-architecture.md)
