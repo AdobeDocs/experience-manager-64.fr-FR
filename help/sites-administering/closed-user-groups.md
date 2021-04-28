@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
+exl-id: 71dfaea7-2fae-4feb-bb1d-ad0da573f910
 translation-type: tm+mt
-source-git-commit: 7dc90299b7a0e5166c30702323f1678353fe39b3
+source-git-commit: 3ee650d0810a03878b4b0a58708ea3600fa28ff2
 workflow-type: tm+mt
-source-wordcount: '6889'
+source-wordcount: '6884'
 ht-degree: 66%
 
 ---
-
 
 # Groupes d’utilisateurs fermés dans AEM{#closed-user-groups-in-aem}
 
@@ -37,7 +37,7 @@ L’objectif de la nouvelle mise en oeuvre est de couvrir les fonctionnalités e
 * Extension de type de nœud dédiée pour marquer l’exigence d’authentification
 * Chemin de connexion facultatif associé à l’exigence d’authentification
 
-### La nouvelle mise en œuvre personnalisée de groupe d’utilisateurs  {#the-new-custom-user-group-implementation}
+### La nouvelle mise en œuvre personnalisée de groupe d’utilisateurs {#the-new-custom-user-group-implementation}
 
 Dans le contexte d’AEM, un CUG comprend les étapes suivantes :
 
@@ -132,7 +132,7 @@ Il en va de même pour la propriété `granite:loginPath`. Elle n’est respect�
 
 La configuration AEM par défaut utilise désormais cette configuration en permettant de définir le mixin en mode d’exécution Auteur, mais n’a d’effet que lors de la réplication sur l’instance de publication. Voir [cette page](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) pour savoir comment Sling applique les exigences d’authentification.
 
-Si vous Ajoutez le type de mixin `granite:AuthenticationRequired` dans les chemins d&#39;accès pris en charge configurés, l&#39;enregistrement OSGi du gestionnaire responsable sera mis à jour et contient une nouvelle entrée supplémentaire avec la propriété `sling.auth.requirements`. Si une exigence d&#39;authentification donnée spécifie la propriété facultative `granite:loginPath`, la valeur est en outre enregistrée auprès de l&#39;Authentificateur avec un préfixe &quot;-&quot; afin d&#39;être exclue des exigences d&#39;authentification.
+Si vous Ajoutez le type de mixin `granite:AuthenticationRequired` dans les chemins d&#39;accès pris en charge configurés, l&#39;enregistrement OSGi du gestionnaire responsable sera mis à jour, contenant une nouvelle entrée supplémentaire avec la propriété `sling.auth.requirements`. Si une exigence d&#39;authentification donnée spécifie la propriété facultative `granite:loginPath`, la valeur est en outre enregistrée auprès de l&#39;Authentificateur avec un préfixe &quot;-&quot; afin d&#39;être exclue des exigences d&#39;authentification.
 
 #### Évaluation et héritage de l&#39;exigence d&#39;authentification {#evaluation-and-inheritance-of-the-authentication-requirement}
 
@@ -569,7 +569,7 @@ Les deux composants OSGi suivants ont été ajoutés pour définir les exigences
   </tr> 
   <tr> 
    <td>Références</td> 
-   <td>N/A</td> 
+   <td>NA</td> 
   </tr> 
  </tbody> 
 </table>
@@ -654,7 +654,7 @@ Les deux composants OSGi suivants ont été ajoutés pour définir les exigences
 | Description | `RequirementHandler` implémentation qui met à jour les exigences d’authentification Apache Sling et l’exclusion correspondante pour les chemins d’accès associés. |
 | Propriétés de configuration | `supportedPaths` |
 | Stratégie de configuration | `ConfigurationPolicy.REQUIRE` |
-| Références | N/A |
+| Références | NA |
 
 #### Options de configuration {#configuration-options-1}
 
@@ -764,14 +764,14 @@ Cela a été réglé de façon à rendre la référence à `CugSupport` facultat
 
 ### AEM LiveCopy {#aem-livecopy}
 
-La configuration des CUG en accord avec LiveCopy est représentée dans le référentiel par l’ajout d’un nœud et d’une propriété supplémentaires comme suit :
+La configuration de CUG en association avec LiveCopy est représentée dans le référentiel par l’ajout d’un noeud supplémentaire et d’une propriété supplémentaire, comme suit :
 
 * `/content/we-retail/us/en/blueprint/rep:cugPolicy`
 * `/content/we-retail/us/en/LiveCopy@granite:loginPath`
 
 Ces deux éléments sont créés sous `cq:Page`. Avec la conception actuelle, MSM traite uniquement les noeuds et les propriétés qui se trouvent sous le noeud `cq:PageContent` (`jcr:content`).
 
-Par conséquent, les groupes CUG ne peuvent pas être récupérés d’un plan directeur vers une Live Copy. Veuillez prendre en compte ce paramètre lors de la configuration d’une Live Copy.
+Par conséquent, les groupes CUG ne peuvent pas être déployés sur Live Copies à partir de Blueprints. Veuillez en tenir compte lors de la configuration de Live Copy.
 
 ## Modifications avec la nouvelle mise en œuvre CUG {#changes-with-the-new-cug-implementation}
 
@@ -882,4 +882,3 @@ Adobe fournit un outil pour migrer vers la nouvelle mise en œuvre CUG. Pour l�
 >[!NOTE]
 >
 >Si vous rencontrez des problèmes, il est possible de configurer une journalisation spécifique au niveau **DEBUG** sur `com.day.cq.auth.impl.cug` pour obtenir la sortie de l&#39;outil de migration. Consultez la rubrique [Connexion](/help/sites-deploying/configure-logging.md) pour en savoir plus sur la procédure à suivre.
-
