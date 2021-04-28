@@ -1,18 +1,18 @@
 ---
 title: Création de projets AEM à l’aide d’Apache Maven
 description: Ce document explique comment configurer un projet AEM basé sur Apache Maven.
+exl-id: 6ae0e387-468b-4cea-9e3f-0816d67b7621
 translation-type: tm+mt
-source-git-commit: 5bc6f63922f7f63d60f0048b167a08e4190a8f92
+source-git-commit: 88cef11d2407d2f05027b38b4eb9fef6493ec055
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 32%
+ht-degree: 49%
 
 ---
 
+# Création de projets AEM à l’aide d’Apache Maven {#how-to-build-aem-projects-using-apache-maven}
 
-# Création de projets AEM à l’aide d’Apache Maven  {#how-to-build-aem-projects-using-apache-maven}
-
-aem 6.5 respecte les meilleures pratiques en matière de gestion des paquets et de structure des projets, telles qu&#39;elles sont mises en oeuvre par le dernier AEM Project Archetype pour les mises en oeuvre sur site et AMS.
+AEM 6.4 respecte les bonnes pratiques de gestion des modules et de structure des projets, telles qu’elles sont mises en œuvre par le dernier archétype de projet AEM pour les implémentations On-Premise et AMS.
 
 >[!TIP]
 >
