@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: ba73e267-598d-4c70-a1a8-71bcfcfbf9e5
+exl-id: 3a052270-b3ea-4d17-915c-be2b51cdc482
 translation-type: tm+mt
-source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
+source-git-commit: 3ee650d0810a03878b4b0a58708ea3600fa28ff2
 workflow-type: tm+mt
 source-wordcount: '808'
-ht-degree: 82%
+ht-degree: 80%
 
 ---
-
 
 # Création d’un groupe d’utilisateurs fermé{#creating-a-closed-user-group}
 
@@ -39,7 +39,7 @@ Pour configurer ce type de zone dans votre site web :
 >
 >L’impact des groupes d’utilisateurs fermés doit toujours être pris en compte lorsque vous effectuez des tests de performances.
 
-## Création du groupe d’utilisateurs à utiliser  {#creating-the-user-group-to-be-used}
+## Création du groupe d’utilisateurs à utiliser {#creating-the-user-group-to-be-used}
 
 Pour créer un groupe d’utilisateurs fermé :
 
@@ -84,7 +84,7 @@ Pour appliquer le groupe d’utilisateurs fermé à une page :
 
    >[REMARQUE!]
    >
-   > Notez que les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être restaurés depuis les plans directeurs vers les Live Copies. Veuillez en tenir compte lors de la configuration de Live Copy.
+   > Notez que les CUG de l&#39;onglet Autorisations ne peuvent pas être déployés sur des Live Copies à partir de Blueprints. Veuillez en tenir compte lors de la configuration de Live Copy.
    >
    > Pour plus d’informations, consultez [cette page](closed-user-groups.md#aem-livecopy).
 
@@ -143,4 +143,3 @@ Configurez la gestion de session [dans le fichier dispatcher.any](https://helpx.
    ```
 
 1. Définissez [/allowAuthorized](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) sur `0`.
-
