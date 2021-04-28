@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 8e568c59-5455-422f-94a6-baf6d2aae070
+exl-id: eebc10fa-1d49-4797-a9e6-b6615bfe0173
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: 9b2cf8887f799aff316f720ab173087e14692120
 workflow-type: tm+mt
-source-wordcount: '5365'
-ht-degree: 86%
+source-wordcount: '4037'
+ht-degree: 82%
 
 ---
-
 
 # Utilisation des modules{#how-to-work-with-packages}
 
@@ -30,7 +30,7 @@ Les modules sont accessibles et/ou conservés à partir des pages suivantes :
 
 Vous pouvez transférer des modules entre le gestionnaire de modules, le partage de modules et le système de fichiers.
 
-## Que sont les modules ?  {#what-are-packages}
+## Que sont les modules ? {#what-are-packages}
 
 Un module est un fichier ZIP contenant le contenu d’un référentiel sous forme de sérialisation de système de fichiers (appelé sérialisation « coffre-fort »). Il offre une représentation facile à utiliser et à modifier des fichiers et des dossiers.
 
@@ -78,7 +78,7 @@ La boîte de dialogue **Paramètres du module** est accessible à l’aide du bo
 
 ![packagesedit](assets/packagesedit.png)
 
-| **Field (Champ)** | **Description** |
+| **Champ** | **Description** |
 |---|---|
 | Nom | Nom du package. |
 | Groupe | Nom du groupe auquel ajouter le package, pour l’organisation des packages. Saisissez le nom d’un nouveau groupe ou sélectionnez un groupe existant. |
@@ -143,9 +143,9 @@ La boîte de dialogue **Paramètres du module** est accessible à l’aide du bo
 
 ![packages-dépendances](assets/packagesdependencies.png)
 
-| **Field (Champ)** | **Description** | **Format/Exemple** |
+| **Champ** | **Description** | **Format/Exemple** |
 |---|---|---|
-| Testé avec | Nom du produit et version avec lesquels ce pack est ciblé ou compatible. | *AEM 6* |
+| Testé avec | Nom du produit et version avec lesquels ce pack est ciblé ou compatible. | *AEM6* |
 | Problèmes/bogues résolus | Un champ de texte vous permettant de liste des détails des bogues corrigés avec ce paquet. Répertoriez chaque bogue sur une ligne distincte. | résumé de bug-nr |
 | Dépend de | Liste les informations de dépendance qui doivent être respectées chaque fois que d&#39;autres paquets sont nécessaires pour laisser le paquet actuel s&#39;exécuter comme prévu. Ce champ est important lorsque vous utilisez des correctifs. | groupId:name:version |
 | Remplace | Liste de packages obsolètes que ce package remplace. Avant de procéder à l’installation, assurez-vous que ce module contient tout le contenu nécessaire des modules obsolètes afin qu’aucun contenu ne soit remplacé. | groupId:name:version |
@@ -219,7 +219,7 @@ Feature Packs officiels :
 
 ![](do-not-localize/chlimage_1-29.png)
 
-## Gestionnaire de modules  {#package-manager}
+## Gestionnaire de modules {#package-manager}
 
 Le Gestionnaire de modules gère les modules dans l’installation locale d’AEM. Après avoir [affecté les autorisations nécessaires](#permissions-needed-for-using-the-package-manager), vous pouvez utiliser le Gestionnaire de modules pour différentes actions, dont la configuration, la création, le téléchargement et l’installation des modules. Les principaux éléments à configurer sont les suivants :
 
@@ -269,7 +269,7 @@ Pour créer une définition de module :
        Champ de texte permettant d’indiquer une version. Il sera ajouté au nom du module pour former le nom du fichier ZIP.
    Cliquez sur **OK** pour créer le module.
 
-1. aem liste le nouveau package dans le dossier de groupe approprié.
+1. AEM liste le nouveau package dans le dossier de groupe approprié.
 
    ![packagesitem](assets/packagesitem.png)
 
@@ -407,7 +407,7 @@ Cette section décrit comment télécharger un module d’AEM vers votre systèm
 
 1. Cliquez sur le lien formé par le nom du fichier ZIP (souligné) pour le module à télécharger, par exemple, `export-for-offline.zip`.
 
-   aem télécharge le package sur votre ordinateur (à l’aide d’une boîte de dialogue de téléchargement standard du navigateur).
+   AEM télécharge le package sur votre ordinateur (à l’aide d’une boîte de dialogue de téléchargement standard du navigateur).
 
 ### Chargement des modules à partir du système de fichiers {#uploading-packages-from-your-file-system}
 
@@ -490,7 +490,7 @@ Ces options sont détaillées ci-dessous.
 
    **Résolution d’erreurs**
 
-   Pour résoudre ce problème, le responsable de la gestion du fichier d’incrustation dans `/apps` doit examiner les modifications apportées au fichier d’incrustation dans `/libs` et incorporer les modifications nécessaires dans l’incrustation ( `/apps`), puis redéployer le fichier d’incrustation.
+   Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/apps` doit examiner les modifications apportées au fichier superposé dans `/libs` et incorporer les modifications nécessaires dans le fichier de recouvrement ( `/apps`), puis redéployer le fichier superposé.
 
    >[!NOTE]
    >
@@ -646,7 +646,7 @@ Si votre instance est en cours d’exécution, l’ajout d’un module au dossie
 
 ### Désinstallation des modules  {#uninstalling-packages}
 
-aem vous permet de désinstaller des packages. Cette action renvoie le contenu concerné du référentiel vers l’instantané enregistré juste avant l’installation des modules.
+AEM vous permet de désinstaller des packages. Cette action renvoie le contenu concerné du référentiel vers l’instantané enregistré juste avant l’installation des modules.
 
 >[!NOTE]
 >
@@ -675,7 +675,7 @@ Pour supprimer un module dans les listes du Gestionnaire de modules :
 
    ![packagesdelete](assets/packagesdelete.png)
 
-1. aem demande de confirmer que vous souhaitez supprimer le package. Cliquez sur **OK** pour confirmer la suppression.
+1. AEM demande de confirmer que vous souhaitez supprimer le package. Cliquez sur **OK** pour confirmer la suppression.
 
 >[!CAUTION]
 >
@@ -692,206 +692,16 @@ Répliquez le contenu d’un module afin de l’installer dans l’instance de p
 
 ## Partage de modules {#package-share}
 
-Le partage de modules est un serveur centralisé disponible publiquement pour partager des modules de contenu.
+Le partage de package était un serveur centralisé rendu public pour partager Content-Packages.
 
-Avec le partage de modules, vous pouvez télécharger ces modules, qui peuvent inclure des correctifs officiels, des ensembles de fonctionnalités, des mises à jour ou des exemples de contenu générés par d’autres utilisateurs.
+Il a été remplacé par [Distribution de logiciels.](#software-distribution)
 
-Vous pouvez également charger et partager des modules au sein de votre entreprise.
+## Distribution de logiciels {#software-distribution}
 
-### Accès au partage de modules  {#access-to-package-share}
+[Software ](https://downloads.experiencecloud.adobe.com) Distributionest la nouvelle interface utilisateur conçue pour simplifier la recherche et le téléchargement de paquets AEM.
 
-Il n’y a pas d’accès anonyme au partage de modules. En d’autres termes, seuls les utilisateurs enregistrés ont l’autorisation d’afficher, de télécharger et de charger des modules.
-
-L’accès au partage de modules est disponible pour nos partenaires et nos clients. Les détails d’enregistrement doivent être envoyés pour que des droits d’accès soient affectés.
-
-Pour accéder au partage de modules :
-
-* Utilisez la [Page de connexion](#signing-in-to-package-share).
-* La première fois que vous utilisez la page de connexion :
-
-   * Vous devez vous [enregistrer pour obtenir un Adobe ID](#registering-for-package-share) et/ou [valider votre Adobe ID existant](#validating-your-adobe-id)
-   * afin de pouvoir créer votre [compte de partage de modules](#package-share-account).
-
->[!NOTE]
->
->Tout utilisateur de Package Share qui n’a pas été affecté à un client doit rejoindre une communauté pour voir ces ressources en cliquant sur **Rejoindre** en regard de la connexion au partage de package.
-
-#### Connexion au partage de modules {#signing-in-to-package-share}
-
-1. Dans l’écran d’accueil AEM, cliquez sur **Outils** -> **Déploiement**
-1. Ensuite, sélectionnez **Partage de modules**. Vous devrez :
-
-   * vous connecter à l’aide de votre Adobe ID ;
-   * [ou créer un Adobe ID](#registering-for-package-share).
-
-   >[!NOTE]
-   >
-   >La première fois que vous vous connectez avec votre Adobe ID, vous devez faire [valider votre adresse électronique](#validating-your-adobe-id).
-
-   >[!NOTE]
-   >
-   >Si vous avez oublié votre mot de passe, utilisez **Problème de connexion ?** dans la boîte de dialogue de connexion.
-
-#### Validation de votre Adobe ID {#validating-your-adobe-id}
-
-La première fois que vous vous connectez au partage de modules avec votre Adobe ID, votre adresse électronique est validée.
-
-1. Vous recevez un courrier électronique contenant un lien.
-1. Vous devez cliquer sur ce lien.
-1. Une page web s’affiche.
-
-   L’affichage de cette page web est considéré comme validation.
-
-1. La connexion se poursuit.
-
-1. Vous recevez un courrier électronique contenant un lien.
-1. Vous devez cliquer sur ce lien.
-1. Une page web s’affiche. L’affichage de cette page web est considéré comme validation.
-1. La connexion se poursuit.
-
-#### Enregistrement pour le partage de modules  {#registering-for-package-share}
-
-Si vous devez accéder au partage de modules, vous devez vous enregistrer afin d’obtenir un Adobe ID :
-
-* La [page de connexion du partage de modules](#signing-in-to-package-share) contient un lien pour enregistrer un Adobe ID.
-* Vous pouvez vous enregistrer pour obtenir un Adobe ID à partir de certains logiciels de bureau Adobe.
-* Vous pouvez également vous enregistrer en ligne dans la [page de connexion d’Adobe](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&amp;nl=1).
-
-Il est possible de créer un Adobe ID en indiquant :
-
-* votre adresse électronique
-* le mot de passe de votre choix
-* des informations supplémentaires, comme votre nom et votre pays de résidence
-
-#### Compte de partage de modules {#package-share-account}
-
-La validité de votre application est vérifiée avant que :
-
-* votre compte utilisateur soit créé avec les autorisations exigées/admises ;
-* votre compte soit ajouté au groupe de votre entreprise.
-
->[!NOTE]
->
->Un utilisateur de l’une de nos entreprises partenaire peut également être membre des groupes de ses clients.
-
-#### Considérations relatives au réseau  {#network-considerations}
-
-**IPv6**
-
-Vous pouvez rencontrer des problèmes lors de la tentative d’accès au partage de modules dans un environnement IPv6 exclusif.
-
-Cela est dû au fait que le partage de modules est un service hébergé sur un serveur, ce qui signifie que votre connexion est établie par le biais de différents réseaux sur Internet. Il n’est pas garanti que tous les réseaux prennent en charge le protocole IPv6. S’ils ne le prennent pas en charge, la connexion peut échouer.
-
-Pour éviter ce problème, vous pouvez accéder au partage de modules à partir d’un réseau IPv4, télécharger le module, puis le charger dans l’environnement IPv6.
-
-**Serveur proxy HTTP**
-
-Le partage de modules est actuellement indisponible si votre entreprise exécute un serveur proxy HTTP nécessitant une authentification.
-
-Le partage de modules n’est disponible que lorsque votre serveur AEM a accès à Internet sans avoir à s’authentifier. Pour configurer le serveur proxy pour tous les services qui utilisent le client HTTP (dont le partage de modules), utilisez la [configuration OSGi du lot Day Commons HTTP Client 3.1](/help/sites-deploying/osgi-configuration-settings.md).
-
-### À l’intérieur du partage de modules {#inside-package-share}
-
-Dans le partage de modules, les modules sont organisés en sous-arborescences de l’arborescence :
-
-* Modules Adobe fournis par Adobe.
-* Modules partagés fournis par d’autres entreprises et conversions publiques par Adobe.
-* Modules d’entreprise, qui sont privés.
-
-![chlimage_1-346](assets/chlimage_1-346.png)
-
-### Recherche et filtrage des modules {#searching-and-filtering-packages}
-
-Le partage de modules comporte une barre de recherche, que vous pouvez utiliser pour chercher des mots-clés ou/et des balises spécifiques. Les mots-clés et les balises prennent en charge les valeurs multiples.
-
-* Pour rechercher plusieurs mots-clés, vous devez les séparer par un espace.
-* Pour rechercher plusieurs balises, vous devez toutes les sélectionner dans les arborescences de modules.
-
-Vous pouvez également remplacer l’opérateur conditionnel OU par ET à droite de la barre de récapitulatif des filtres.
-
-### Téléchargement et installation de modules à partir du partage de modules {#downloading-and-installing-packages-from-package-share}
-
-Pour télécharger des modules à partir du partage de modules et les installer sur votre instance locale, il est plus facile d’accéder au partage de modules de votre instance AEM. Le module est alors téléchargé et enregistré immédiatement dans votre Gestionnaire de modules, à partir duquel vous pouvez l’installer.
-
-1. Dans l’écran d’accueil d’AEM, cliquez sur **Outils**, puis sélectionnez **Partage de modules** pour ouvrir la page Partage de modules.
-1. À l’aide des informations de votre compte, connectez-vous au partage de modules. La page d’entrée, qui contient le dossier Adobe, le dossier partagé et un dossier propre à votre entreprise, s’affiche.
-
-   >[!NOTE]
-   >
-   >Avant de commencer à télécharger des modules du partage de modules, assurez-vous que vous disposez des droits d’[accès exigés](#access-to-package-share).
-
-1. Accédez au module à télécharger et cliquez sur **Télécharger**.
-
-1. Revenez en arrière ou accédez au **Gestionnaire de modules** sur votre instance AEM. Ensuite, accédez au module que vous venez de télécharger.
-
-   >[!NOTE]
-   >
-   >Pour trouver le module que vous avez téléchargé, suivez le chemin d’accès utilisé dans le partage de modules. Par exemple, si vous avez téléchargé un module à partir du chemin d’accès ci-dessous dans le partage de modules :
-   >
-   >**Modules** > **Public** > **Correctifs**
-   Ensuite, dans le Gestionnaire de modules sur votre instance locale, le module s’affiche également sous :
-   **Modules** > **Public** > **Correctifs**
-
-1. Cliquez sur **Installer** pour installer le module sur votre installation AEM locale.
-
-   >[!NOTE]
-   Si le module a déjà été installé sur votre instance, l’indicateur **Installé** s’affiche en regard du module à la place du bouton **Installer**.
-
-   >[!CAUTION]
-   L’installation d’un module peut remplacer le contenu existant dans le référentiel. Par conséquent, il est recommandé de commencer par effectuer un **test de l’installation**. Cela vous permet de vérifier si le contenu du module contient des conflits avec le contenu existant.
-
-### Téléchargement des modules du partage de modules vers votre système de fichiers  {#downloading-packages-to-your-file-system-from-package-share}
-
-Le [téléchargement et l’installation](#downloading-and-installing-packages-from-package-share) sont très pratiques, mais, si nécessaire, vous pouvez également télécharger le module et l’enregistrer dans votre système de fichiers local :
-
-1. Dans le partage de modules, cliquez sur l’icône de module ou le nom du module.
-1. Cliquez sur l’onglet **Actifs**.
-1. Cliquez sur **Télécharger sur le disque**.
-
-### Chargement d’un module  {#uploading-a-package}
-
-Avec le partage de modules, vous pouvez charger des modules dans la zone interne de votre entreprise dans le partage de modules. Cela permet de les mettre à disposition pour les partager au sein de votre entreprise.
-
-Ces modules ne sont *pas* disponibles pour la communauté AEM générale, mais sont disponibles pour tous les utilisateurs enregistrés dans votre entreprise.
-
-Pour charger des modules dans le partage de modules interne de votre entreprise :
+Pour plus d&#39;informations, consultez la [documentation sur la distribution de logiciels.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
 >[!CAUTION]
-Pour charger un module dans le partage de modules, vous devez d’abord créer un dossier de groupe qui porte le même nom que votre entreprise sur le Gestionnaire de modules local. Par exemple, geometrixx. Tous les modules à charger pour le partage doivent être placés dans ce dossier de groupe.
-Les modules de la liste principale du gestionnaire de modules ou dans d’autres dossiers ne peuvent pas être partagés.
-
-1. Ouvrez le **gestionnaire de modules** et accédez au module à charger.
-
-1. Cliquez sur l’icône de module pour ouvrir le module.
-1. Cliquez sur **Partager** pour afficher la boîte de dialogue pour charger le module dans le partage de modules.
-1. Si vous n’êtes pas encore connecté au partage de modules, vous devez saisir vos informations d’identification de connexion.
-
-   Lorsque vous êtes connecté, AEM affiche les détails du module à télécharger :
-
-   ![chlimage_1-347](assets/chlimage_1-347.png)
-
-1. Pour charger le module dans le partage de modules interne de votre entreprise, cliquez sur **Partager**.
-
-   AEM affiche le statut et indique lorsque le chargement du module est terminé, après quoi vous pouvez cliquer sur **x** (coin supérieur droit) pour fermer la fenêtre **Partager un module**.
-
-1. Une fois le chargement terminé, vous pouvez accéder au dossier interne de votre entreprise pour afficher le module que vous venez de partager.
-
->[!NOTE]
-Pour modifier un module disponible dans le partage de modules, vous devez le télécharger, le recréer, puis le recharger dans le partage de modules.
-
-### Suppression d’un module  {#deleting-a-package}
-
-Vous ne pouvez supprimer que les modules que vous avez téléchargés en procédant comme suit :
-
-1. Dans l’arborescence de votre entreprise, examinez le groupe de modules contenant le module.
-1. Cliquez sur le module.
-1. Cliquez sur le bouton Supprimer.
-
-   ![](do-not-localize/chlimage_1-30.png)
-
-1. Cliquez sur **Supprimer** pour confirmer que vous souhaitez supprimer le package.
-
-### Définition des modules comme modules semi-privés {#making-packages-semi-private}
-
-Vous pouvez partager des modules en dehors de votre entreprise, mais pas publiquement. Ces modules sont considérés comme des modules semi-privés. Pour partager ces modules semi-privés, vous avez besoin de l’aide du support Adobe. À cet effet, ouvrez un ticket auprès du support Adobe en demandant qu’un module soit disponible en dehors de votre entreprise. Ils vous demanderont une liste de Adobe ID que vous voulez accorder l&#39;accès à vos paquets.
-
+>
+>AEM gestionnaire de packages n&#39;est actuellement pas utilisable avec Software Distribution. Vous téléchargez vos paquets sur votre disque local.
