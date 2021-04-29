@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
+exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 361964df6c25cbcfadb45dbf8fc10d5ab1258e6d
 workflow-type: tm+mt
-source-wordcount: '2793'
-ht-degree: 83%
+source-wordcount: '2815'
+ht-degree: 82%
 
 ---
 
-
-# Création de rapports  {#reporting}
+# Création de rapports {#reporting}
 
 Pour vous aider à analyser et surveiller l’état de votre instance, AEM propose une sélection de rapports par défaut, qui peuvent être configurés en fonction de vos besoins :
 
@@ -30,6 +30,10 @@ Pour vous aider à analyser et surveiller l’état de votre instance, AEM propo
 * [Rapport de l’utilisateur](#user-report)
 * [Rapport d’instance de workflow](#workflow-instance-report)
 * [Rapport de workflow](#workflow-report)
+
+>[!NOTE]
+>
+>Ces rapports ne sont disponibles que dans l’interface utilisateur classique. Pour la surveillance et le rapports du système dans l&#39;interface utilisateur moderne, consultez le [Tableau de bord d&#39;exploitation.](/help/sites-administering/operations-dashboard.md)
 
 Tous ces rapports sont accessibles à partir de la console **Tools**. Sélectionnez **Rapports** dans le panneau de gauche, puis double-cliquez sur le rapport dans le panneau de droite pour l’ouvrir afin de l’afficher et/ou de le configurer.
 
@@ -198,7 +202,7 @@ Lorsque des instantanés sont en cours de collecte, vous pouvez :
 
 >[!NOTE]
 >
->Les rapports préconfigurés ne sont pas exigeants en termes de performances, mais il est toujours recommandé d’utiliser des instantanés quotidiens sur un environnement de production. Si possible, exécutez ces instantanés quotidiens à une heure où l&#39;activité sur votre site Web est faible ; cela peut être défini avec le paramètre `Daily snapshots (repconf.hourofday)` pour **Configuration du Rapports Day CQ**; voir [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour plus d&#39;informations sur la façon de configurer ceci.
+>Les rapports préconfigurés n&#39;exigent pas beaucoup de performances, mais il est toujours recommandé d&#39;utiliser des instantanés quotidiens sur un environnement de production. Si possible, exécutez ces instantanés quotidiens à une heure où l&#39;activité sur votre site Web est faible ; cela peut être défini avec le paramètre `Daily snapshots (repconf.hourofday)` pour **Configuration du Rapports Day CQ**; voir [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour plus d&#39;informations sur la façon de configurer ceci.
 
 #### Limites d’affichage {#display-limits}
 
@@ -303,7 +307,7 @@ Le rapport de composants fournit des informations sur la façon dont votre site 
 * Chemin de composant
 * Type de composant
 * Dernière modification
-* Page 
+* Page
 
 Signifient que vous pouvez voir, par exemple :
 
@@ -377,7 +381,7 @@ Le rapport d’activité de la page répertorie les pages et les actions effectu
 
 [Colonnes d’informations](#selecting-and-positioning-the-data-columns) sur :
 
-* Page 
+* Page
 * Heure
 * Type
 * User
@@ -402,7 +406,7 @@ Ce rapport fournit des informations sur le contenu généré par l’utilisateur
 
 * Date
 * Adresse IP
-* Page 
+* Page
 * Référent
 * Type
 * Identifiant de l’utilisateur
