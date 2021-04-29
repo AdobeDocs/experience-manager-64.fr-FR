@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
+exl-id: 80442184-212a-424d-b320-5b301a54f974
 translation-type: tm+mt
-source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+source-git-commit: 204b28653c8771fead77c484aec40d6ec6629b6c
 workflow-type: tm+mt
 source-wordcount: '1923'
-ht-degree: 53%
+ht-degree: 51%
 
 ---
-
 
 # Jour difficile{#tough-day}
 
@@ -166,7 +166,7 @@ tests:
   - add : CreateAssetTreeTest
 ```
 
-### Ajout de plusieurs instances du même test   {#adding-multiple-instances-of-the-same-test}
+### Ajout de plusieurs instances du même test  {#adding-multiple-instances-of-the-same-test}
 
 Vous pouvez également ajouter et exécuter plusieurs instances du même test, mais chaque instance doit avoir un nom unique. Les exemples ci-dessous montrent comment ajouter deux instances du même test en utilisant des paramètres de ligne de commande ou un fichier de configuration yaml.
 
@@ -190,7 +190,7 @@ tests:
       name : SecondAssetTree
 ```
 
-### Modification des propriétés de test  {#changing-the-test-properties}
+### Modification des propriétés de test {#changing-the-test-properties}
 
 Si vous devez modifier une ou plusieurs propriétés de test, vous pouvez ajouter cette propriété à la ligne de commande ou au fichier de configuration yaml. Pour afficher toutes les propriétés de test disponibles, ajoutez le paramètre `--help <TestClass/PublisherClass>` à la ligne de commande, par exemple :
 
@@ -221,7 +221,7 @@ tests:
 
 ### Utilisation de suites de tests prédéfinies  {#working-with-predefined-test-suites}
 
-Les exemples ci-dessous montrent comment ajouter un test à une suite prédéfinie et reconfigurer et exclure un test existant d’une suite prédéfinie.
+Les exemples ci-dessous montrent comment ajouter un test à une suite prédéfinie et comment reconfigurer et exclure un test existant d’une suite prédéfinie.
 
 Vous pouvez ajouter un nouveau test à une suite prédéfinie en utilisant le paramètre `add` et en spécifiant la suite prédéfinie ciblée.
 
@@ -351,7 +351,7 @@ Tough Day 2 génère à la fois des métriques de test et des journaux. Pour pl
 
 Tough Day 2 fait actuellement état de 9 métriques de test que vous pouvez évaluer. Les mesures avec le symbole **&amp;ast;** ne sont reportées qu’après des exécutions réussies :
 
-| **Nom** | **Description** |
+| **Name** (Nom) | **Description** |
 |---|---|
 | Timestamp | Horodatage de la dernière exécution de test terminée. |
 | Transmis | Nombre d&#39;exécutions réussies. |
