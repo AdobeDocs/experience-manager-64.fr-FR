@@ -8,14 +8,14 @@ contentOwner: khsingh
 topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
 role: Administrator
+exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: 4598602f75c0cd477e4d898700735c6cd5be175a
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1836'
 ht-degree: 86%
 
 ---
-
 
 # Installation et configuration des fonctionnalités de capture de données {#install-and-configure-data-capture-capabilities}
 
@@ -98,7 +98,7 @@ Le package du module complémentaire AEM Forms est une application déployée s
    1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l&#39;option **[!UICONTROL Rechercher les téléchargements]** pour filtrer les résultats.
 1. Appuyez sur le nom du package correspondant à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur final]**, puis appuyez sur **[!UICONTROL Télécharger]**.
-1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
 1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
    Vous pouvez également télécharger le package via le lien direct répertorié dans l&#39;article [AEM Forms versions](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
@@ -173,7 +173,7 @@ La mise en cache est un mécanisme qui permet de raccourcir les temps d’accès
 
 Effectuez les étapes suivantes pour configurer le cache de formulaires adaptatifs :
 
-1. Accédez à AEM gestionnaire de configuration de la console Web à l’adresse `https://[server]:[port]/system/console/configMgr`.
+1. Accédez à la page de configuration de la console web AEM à l’adresse `https://[server]:[port]/system/console/configMgr`.
 1. Cliquez sur la **[!UICONTROL configuration de canal web de communication interactive de formulaire adaptatif]** pour éditer ses valeurs de configuration. Dans la boîte de dialogue Modifier les valeurs de configuration, spécifiez le nombre maximal de formulaires ou de documents qu&#39;une instance du serveur AEM Forms peut mettre en cache dans le champ **[!UICONTROL Nombre de Forms adaptatif]**. La valeur par défaut est 100. Cliquez sur **[!UICONTROL Enregistrer]**.
 
    >[!NOTE]
@@ -213,4 +213,3 @@ Vous avez configuré un environnement pour utiliser les fonctionnalités de capt
 * [Création de votre premier formulaire adaptatif](/help/forms/using/create-your-first-adaptive-form.md)
 * [Création de votre premier formulaire PDF](https://helpx.adobe.com/fr/content/dam/help/en/experience-manager/6-4/forms/pdf/designer-quickstart.pdf)
 * [Présentation des formulaires HTML5](/help/forms/using/introduction.md)
-
