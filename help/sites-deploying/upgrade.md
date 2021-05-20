@@ -10,15 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Mise à niveau
+exl-id: 791da16c-bf2c-47a9-86a4-0a601a1b017e
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 75%
+ht-degree: 71%
 
 ---
-
 
 # Mise à niveau vers AEM 6.4{#upgrading-to-aem}
 
@@ -26,12 +25,12 @@ Dans cette section, nous présentons la mise à niveau d’une installation AEM 
 
 * [Planification de la mise à niveau](/help/sites-deploying/upgrade-planning.md)
 * [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](/help/sites-deploying/pattern-detector.md)
-* [Compatibilité descendante dans AEM 6.4](/help/sites-deploying/backward-compatibility.md)
-* [Processus de mise à niveau](/help/sites-deploying/upgrade-procedure.md)
-* [Code et personnalisations de la mise à niveau](/help/sites-deploying/upgrading-code-and-customizations.md)
+* [Compatibilité descendante dans AEM 6.4](/help/sites-deploying/backward-compatibility.md)
+* [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md)
+* [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [Tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-* [Réalisation d’une mise à niveau statique](/help/sites-deploying/in-place-upgrade.md)
-* [Vérifications et dépannage après la mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+* [Exécution d’une mise à niveau statique](/help/sites-deploying/in-place-upgrade.md)
+* [Vérifications et dépannage après une mise à niveau ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
 * [Mises à niveau possibles](/help/sites-deploying/sustainable-upgrades.md)
 * [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md)
 * [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md)
@@ -51,7 +50,7 @@ Voici quelques changements majeurs mis en œuvre avec les dernières versions d�
 
 AEM 6.0 a introduit le nouveau référentiel Jackrabbit Oak. Les gestionnaires de persistence ont été remplacés par les [micronoyaux](/help/sites-deploying/recommended-deploys.md). À partir de la version 6.1, CRX2 n’est plus pris en charge. L’outil de migration crx2oak doit être exécuté pour migrer les référentiels CRX2 à partir des instances 5.6.1. Pour plus d’informations, voir [Utilisation de l’outil de migration CRX2OAK](/help/sites-deploying/using-crx2oak.md). 
 
-Si vous utilisez Asset Insights et que vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.2, les ressources doivent être migrées et doivent posséder des ID générés via un bean JMX. Lors de nos tests internes, 125 000 ressources ont été migrées en 1 heure dans un environnement TarMK, mais les résultats peuvent varier. 
+Si Assets Insights doit être utilisé et que vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.2, les ressources doivent être migrées et les ID doivent être générés par le biais d’un bean JMX. Lors de nos tests internes, 125 000 ressources ont été migrées en 1 heure dans un environnement TarMK, mais les résultats peuvent varier. 
 
 AEM 6.3 a introduit un nouveau format pour le `SegmentNodeStore`, qui est la base de l&#39;implémentation de TarMK. Si vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.3, une migration du référentiel est nécessaire dans le cadre de la mise à niveau, ce qui implique des interruptions du système.
 
@@ -71,9 +70,9 @@ Le nettoyage périodique des révisions et de l’entrepôt de données sont dé
 
 Pour plus d’informations sur les autres points modifiés dans les versions récentes d’AEM, consultez les notes de mise à jour complètes :
 
-* [https://helpx.adobe.com/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html)
-* [https://helpx.adobe.com/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
-* [https://helpx.adobe.com/fr/experience-manager/6-4/release-notes.html ](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes.html )
+* [https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html)
+* [https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
+* [https://helpx.adobe.com/fr/experience-manager/6-4/release-notes.html ](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes.html)
 
 ## Vue d’ensemble de la mise à niveau {#upgrade-overview}
 
@@ -90,4 +89,3 @@ La version 6.4 visait principalement à maintenir toutes les nouvelles fonctionn
 Enfin, dans le cycle de développement de la version 6.4, les fonctionnalités introduites sous la section Mises à niveau durables (voir [Mises à niveau durables](/help/sites-deploying/sustainable-upgrades.md)) vous aident à suivre les meilleures pratiques pour rendre les mises à niveau futures encore plus efficaces et homogènes.
 
 ![6_4_upgrade_overviewflechart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
-
