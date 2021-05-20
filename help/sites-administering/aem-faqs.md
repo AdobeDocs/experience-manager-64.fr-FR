@@ -6,14 +6,13 @@ seo-description: Utilisez ces FAQ pour comprendre, configurer, et résoudre les 
 uuid: af197bcc-2c61-4c64-b781-f24d83c27c82
 contentOwner: jsyal
 discoiquuid: c66b65af-443f-4fc2-b775-9f4e3c60285a
-translation-type: tm+mt
-source-git-commit: f5b45b2c8bfcf9d82ddc08b05b5fff22937fa9fd
+exl-id: 76110cf4-0fd8-4203-b256-c0818a1b64d2
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 49%
 
 ---
-
 
 # FAQ sur AEM{#aem-faqs}
 
@@ -21,7 +20,7 @@ Suivez cette page pour obtenir des réponses à certains problèmes AEM de dépa
 
 ## Sites {#sites}
 
-### Comment configurer la distribution sans binaire ? {#how-do-i-configure-binary-less-distribution}
+### Comment configurer une distribution sans fichier binaire ? {#how-do-i-configure-binary-less-distribution}
 
 La distribution sans fichier binaire est prise en charge pour les déploiements dans un entrepôt de données partagé et implique des agents qui exploitent le créateur de modules de l’exportateur de modules de distribution basé sur le coffre-fort (PID d’usine : `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`).
 
@@ -48,7 +47,7 @@ Si les auteurs doivent également gérer des projets, la solution consiste à aj
 
 Avant de créer un projet de traduction, créez une racine de langue et une copie de langue dans la racine.
 
-Par exemple :\
+Par exemple,\
 Créez une racine de langue à `/content/geometrixx` avec le nom `fr_LU` (et le titre en français (Luxembourg)). Par la suite, créez une copie de langue de la page à partir du panneau des références et accédez à l&#39;option `Create structure only` dans `Create & Translate`. Enfin, créez un projet de traduction, puis ajoutez la copie de langue à la tâche de traduction.
 
 Pour plus d’informations, reportez-vous aux ressources supplémentaires ci-dessous :
@@ -56,7 +55,7 @@ Pour plus d’informations, reportez-vous aux ressources supplémentaires ci-des
 * [Préparation du contenu à traduire](/help/sites-administering/tc-prep.md)
 * [Gestion des projets de traduction](/help/sites-administering/tc-manage.md)
 
-### Comment auditer les fonctionnalités d’AEM telles que les tentatives de connexion et ACL ou les modifications d’autorisation ?  {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
+### Comment contrôler les fonctionnalités AEM telles que les tentatives de connexion et les modifications d&#39;ACL ou d&#39;autorisation ? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
 AEM permet de consigner les modifications administratives pour améliorer les audits et la résolution des problèmes. Par défaut, les informations sont enregistrées dans le fichier `error.log`. Pour faciliter la surveillance, il est recommandé de les rediriger vers un fichier journal distinct.\
 Pour rediriger la sortie vers un fichier journal distinct, consultez [Comment auditer les opérations de gestion des utilisateurs dans AEM](/help/sites-administering/audit-user-management-operations.md).
@@ -105,7 +104,7 @@ Vous devez modifier la propriété de configuration par défaut du processeur JS
 
 ## Ressources {#assets}
 
-### Pourquoi le flux de travaux Ressources se répète-t-il lors du téléchargement de fichiers MP4 (par exemple, en utilisant la méthode glisser-déposer) ? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
+### Pourquoi le workflow des ressources se répète-t-il lors du chargement de fichiers MP4 (par exemple, par glisser-déposer) ?  {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
 
 Lorsqu’un utilisateur charge les fichiers vidéo, s’il ne dispose pas des autorisations de suppression sous le nœud des actifs, la suppression des nœuds de bloc échoue et le chargement recommence.
 
@@ -132,13 +131,13 @@ Comme solution, vous pouvez également désactiver manuellement le composant via
 
 `curl -u admin:$(pass CQ_Admin) 'http://localhost:4502/system/console/components/com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporter' --data 'action=disable'`
 
-### Comment configurer Asset Insights avec l’instance AEM 6.4 ? {#how-to-configure-asset-insights-with-aem-instance}
+### Comment configurer Assets Insights avec l’instance AEM 6.4 ? {#how-to-configure-asset-insights-with-aem-instance}
 
-Pour configurer et configurer Asset Insights pour un Experience Manager déployé via Adobe Activation (DTM), reportez-vous à la section [Configuration de Asset Insights avec AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
+Pour configurer et configurer Assets Insights pour un Experience Manager déployé via Adobe Activation (DTM), reportez-vous à la section [Configuration Assets Insights with AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
 
 ### Comment personnaliser les consoles d’administration ? {#how-to-customize-admin-consoles}
 
-aem fournit divers mécanismes permettant de personnaliser les consoles et les fonctionnalités de création de page de votre instance de création.
+AEM fournit divers mécanismes permettant de personnaliser les consoles et les fonctionnalités de création de page de votre instance de création.
 Pour savoir comment créer une console personnalisée et personnaliser une vue par défaut pour une console, voir [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md).
 
 ### Quelle est la différence entre les composants basés sur CoralUI 2 et CoralUI 3 ? {#what-is-the-difference-between-coralui-and-coralui-based-components}
@@ -155,11 +154,11 @@ La mise en œuvre de recherche simple est le matériel du Summit Lab AEM Search 
 
 ### Si un client achète uniquement la licence Sites dans AEM, a-t-il toujours accès aux ressources ? {#if-a-customer-buys-only-sites-license-in-aem-do-they-still-have-access-to-assets}
 
-Non, le client ne peut pas accéder aux ressources (ou à tout autre élément que Sites). Même si tous les éléments Adobe Experience Manager (AEM) sur site sont inclus dans le JAR, le client n’est autorisé à accéder qu’aux composants du JAR pour lesquels il est titulaire d’une licence dans son contrat. S&#39;ils veulent explorer d&#39;autres composants, ils peuvent utiliser le programme d&#39;évaluation AEM pendant 45 jours au maximum ou signer une commande client de 0 € qui les autorise à évaluer (sans utilisation de production) des composants nommés tels que Actifs.
+Non, le client ne peut pas accéder aux ressources (ou à tout autre élément que Sites). Même si tous les éléments de Adobe Experience Manager (AEM) sur site sont inclus dans le JAR, le client n&#39;est autorisé à accéder qu&#39;aux composants du JAR pour lesquels il est titulaire d&#39;une licence dans son contrat. S&#39;ils veulent explorer d&#39;autres composants, ils peuvent utiliser le programme d&#39;évaluation AEM pendant 45 jours au maximum ou signer une commande client de 0 € qui les autorise à évaluer (sans utilisation de production) des composants nommés tels que Actifs.
 
 Consultez les ressources suivantes pour en savoir plus sur les logiciels AEM sur site et les services gérés Adobe :
 
-* [Logiciel Adobe Experience Manager sur site](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+* [Logiciel sur site Adobe Experience Manager](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
 
 * [Adobe Experience Manager](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
 
