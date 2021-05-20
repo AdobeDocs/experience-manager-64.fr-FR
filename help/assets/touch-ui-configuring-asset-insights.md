@@ -1,21 +1,20 @@
 ---
-title: Configuration des statistiques sur les ressources
-description: Découvrez comment configurer les statistiques sur les ressources dans AEM Assets.
+title: Configuration des statistiques des ressources
+description: Découvrez comment configurer Assets Insights en AEM Assets.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: Statistiques sur les ressources,Rapports sur les ressources
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 95%
+source-wordcount: '241'
+ht-degree: 70%
 
 ---
 
+# Configuration des informations sur les ressources {#configuring-asset-insights}
 
-# Configuration des statistiques sur les ressources {#configuring-asset-insights}
-
-Adobe Experience Manager (AEM) Assets récupère les données d’utilisation des ressources AEM utilisées par les sites web tiers à partir d’Adobe Analytics. Pour permettre à la fonction Statistiques sur les ressources de récupérer ces données et de générer des informations, commencez par la configurer afin qu’elle s’intègre à Adobe Analytics.
+Adobe Experience Manager (AEM) Assets récupère les données d’utilisation des ressources AEM utilisées par les sites web tiers à partir d’Adobe Analytics. Pour permettre à Assets Insights de récupérer ces données et de générer des statistiques, configurez d’abord la fonction à intégrer à Adobe Analytics.
 
 >[!NOTE]
 >
@@ -31,7 +30,7 @@ Adobe Experience Manager (AEM) Assets récupère les données d’utilisation de
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. Cliquez/appuyez sur **[!UICONTROL Authentifier]**.
-1. Une fois qu’AEM authentifie vos informations d’identification, dans la liste **[!UICONTROL Suite de rapports]**, sélectionnez une suite de rapports Adobe Analytics à partir de laquelle la fonction Statistiques sur les ressources doit récupérer les données. Cliquez sur **[!UICONTROL Ajouter]**.
+1. Une fois AEM authentifié vos informations d’identification, dans la liste **[!UICONTROL Report Suite]**, choisissez une suite de rapports Adobe Analytics à partir de laquelle vous souhaitez que Assets Insights récupère les données. Cliquez sur **[!UICONTROL Ajouter]**.
 1. Une fois qu’AEM configure votre suite de rapports, appuyez/cliquez sur **[!UICONTROL Terminé]**.
 
 ## Suivi de page {#page-tracker}
