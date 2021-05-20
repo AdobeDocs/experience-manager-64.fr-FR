@@ -6,11 +6,10 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
-translation-type: tm+mt
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 78%
+source-wordcount: '625'
+ht-degree: 76%
 
 ---
 
@@ -39,13 +38,13 @@ ht-degree: 78%
    + [Utilisation de Dynamic Media](dynamic-media.md)
    + [Configuration de Dynamic Media – mode Scene7](config-dms7.md)
    + [Configuration de Dynamic Media – mode hybride](config-dynamic.md)
-   + [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md)
+   + [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md)
    + [Gestion des ressources Dynamic Media](managing-assets.md)
    + [Bonnes pratiques relatives à l’optimisation de la qualité des images](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Gestion des paramètres prédéfinis de la visionneuse Dynamic Media](managing-viewer-presets.md)
    + [Application des paramètres prédéfinis de la visionneuse Dynamic Media](viewer-presets.md)
    + [Gestion des paramètres prédéfinis d’image Dynamic Media](managing-image-presets.md)
-   + [Application des paramètres prédéfinis d’image Dynamic Media](image-presets.md)
+   + [Application de paramètres d’image prédéfinis Dynamic Media](image-presets.md)
    + [Profils vidéo Dynamic Media](video-profiles.md)
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
@@ -70,15 +69,15 @@ ht-degree: 78%
    + [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md)
    + [Utilisation de jeux de règles de transformation d’URL](using-rulesets-to-transform-urls.md)
    + [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md)
-   + [Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)](invalidate-cdn-cached-content.md)
+   + [Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)  ](invalidate-cdn-cached-content.md)
    + [Installation de Feature Pack 18912 pour la migration des ressources en vrac](bulk-ingest-migrate.md)
    + [Utilisation des sélecteurs](working-with-selectors.md)
 + Étendre les actifs {#extending}
    + [Personnalisation et extension de ressources](extending-assets.md)
    + [Traitement des fichiers à l’aide de gestionnaires de médias et de workflows](media-handlers.md)
-   + [Extension de la Recherche des ressources](searchx.md)
+   + [Extension de la recherche de ressources](searchx.md)
    + [Installation et configuration d’ImageMagick pour une utilisation avec AEM Assets](best-practices-for-imagemagick.md)
-   + [Intégration de ressources avec le Flux d’activités](extending-activity-stream.md)
+   + [Intégration des ressources avec Flux d’activités](extending-activity-stream.md)
    + [Extension de l’Éditeur de ressources](asseteditorx.md)
    + [API HTTP Assets](mac-api-assets.md)
    + [Développement d’un proxy Assets](proxy.md)
@@ -101,20 +100,20 @@ ht-degree: 78%
    + [Guide de migration des ressources](assets-migration-guide.md)
    + [Métadonnées XMP](xmp.md)
    + [Considérations sur le réseau d’Assets](assets-network-considerations.md)
-   + [AEM Assets par rapport à AEM MediaLibrary](medialibrary.md)
+   + [Différence entre AEM Assets et AEM Media Library](medialibrary.md)
    + [Utilisation du pixelliseur PDF](aem-pdf-rasterizer.md)
    + [Configuration des restrictions de transfert de fichier](configuring-asset-upload-restrictions.md)
    + [Bonnes pratiques d’intégration d’AEM et de Creative Cloud](aem-cc-integration-best-practices.md)
    + [Intégration d’AEM Assets avec un serveur d’InDesign](indesign.md)
    + [Profils de métadonnées](metadata-profiles.md)
    + [Gestion des droits numériques dans AEM Assets](drm.md)
-   + [Utilisation du module de démonstration pour les statistiques sur les ressources](touch-ui-using-demo-package-for-asset-insights.md)
+   + [Utilisation du package de démonstration pour Assets Insights](touch-ui-using-demo-package-for-asset-insights.md)
    + [Bonnes pratiques de déchargement dans Assets](assets-offloading-best-practices.md)
    + [Meilleures pratiques relatives au format de fichier des ressources](assets-file-format-best-practices.md)
    + [Bonnes pratiques en matière de surveillance des ressources](assets-monitoring-best-practices.md)
    + [Prise en charge de Camera Raw](camera-raw.md)
-   + [Détection du type MIME des ressources à l’aide d’Apache Tika](detect-asset-mime-type-with-tika.md)
-   + [Bibliothèque de transcodage des images](imaging-transcoding-library.md)
+   + [Détection du type MIME des ressources à l’aide d’Apache Tika](detect-asset-mime-type-with-tika.md)
+   + [Bibliothèque ITL](imaging-transcoding-library.md)
    + [Prise en charge des métadonnées IPTC](iptc-support.md)
    + [Schémas de métadonnées](metadata-schemas.md)
    + [Fonction multiclient pour les collections, les fragments de code et les modèles de fragments de code](multi-tenancy.md)
@@ -125,7 +124,7 @@ ht-degree: 78%
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
    + [Gestion des balises intelligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Publication de ressources sur Brand Portal](brand-portal-publish-assets.md)
    + [Publication de collections sur Brand Portal](brand-portal-publish-collection.md)
    + [Publication de dossiers sur Brand Portal](brand-portal-publish-folder.md)
@@ -155,13 +154,13 @@ ht-degree: 78%
    + [Téléchargement de ressources à partir d’AEM](download-assets-from-aem.md)
    + [Opérations asynchrones](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
-   + [Activation des statistiques sur les ressources via DTM](touch-ui-using-dtm-for-asset-insights.md)
-   + [Configuration des statistiques sur les ressources](touch-ui-configuring-asset-insights.md)
+   + [Activation de Assets Insights via DTM](touch-ui-using-dtm-for-asset-insights.md)
+   + [Configuration des statistiques des ressources](touch-ui-configuring-asset-insights.md)
    + [Application de services cloud de traduction à des dossiers](transition-cloud-services.md)
    + [Utilisation du dispositif de suivi de page et du code intégré sur les pages web](touch-ui-using-page-tracker.md)
    + [Gestion de ressources composites](managing-linked-subassets.md)
    + [Ressources liées](related-assets.md)
-   + [Statistiques sur les ressources](touch-ui-asset-insights.md)
+   + [Assets Insights](touch-ui-asset-insights.md)
    + [Recherche de ressources vidéo](search-video-assets.md)
    + [Partage de dossiers privés](private-folder.md)
    + [Instructions d’entraînement sur le service de contenu dynamique](smart-tags-training-guidelines.md)
