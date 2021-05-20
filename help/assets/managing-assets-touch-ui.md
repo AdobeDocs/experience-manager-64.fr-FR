@@ -3,11 +3,10 @@ title: Gérer vos ressources numériques à l’aide de AEM Assets
 description: Découvrez les différentes tâches de gestion et de modification des ressources que vous pouvez réaliser à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Search,Renditions,Collaboration
+feature: Gestion des ressources, Recherche, Rendus, Collaboration
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-translation-type: tm+mt
-source-git-commit: fd79ac0694d5b7af0422c546cc4a94fdf2326d37
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '10083'
 ht-degree: 65%
@@ -368,7 +367,7 @@ La fonctionnalité présente certaines limites :
 
 1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez le nom de la balise dans la zone et appuyez sur **[!UICONTROL Entrée]**. La nouvelle balise est enregistrée dans AEM.
 
-   YouTube requiert la publication de balises et la présence d’un lien vers YouTube (si un lien approprié est trouvé).
+   YouTube exige que les balises soient publiées et qu’elles disposent d’un lien vers YouTube (si un lien approprié est trouvé).
 Pour créer des balises, vous devez disposer de l’autorisation d’écriture pour `/content/cq:tags/default` dans le référentiel CRX.
 
 1. Pour attribuer une évaluation à la ressource, appuyez sur l&#39;onglet **[!UICONTROL Avancé]**, puis appuyez sur l&#39;étoile à la position appropriée pour attribuer la note souhaitée.
@@ -385,9 +384,9 @@ Pour créer des balises, vous devez disposer de l’autorisation d’écriture p
    * Les canaux/périphériques via lesquels la ressource a été utilisée.
    * Des solutions de création où la ressource a été récemment utilisée.
 
-   Pour plus d’informations, reportez-vous à la section [Informations sur les ressources](touch-ui-asset-insights.md).
+   Pour plus de détails, voir [Assets Insights](touch-ui-asset-insights.md).
 
-1. Appuyez sur **[!UICONTROL Save &amp; Close]** (Enregistrer et fermer). 
+1. Appuyez sur **[!UICONTROL Enregistrer et fermer]**.
 1. Accédez à l’IU Assets. Les propriétés de métadonnées modifiées, y compris le titre, la description, les évaluations, etc., sont affichées sur la carte de ressources dans la vue de carte et sous les colonnes appropriées dans la vue de liste.
 
 ## Copie de ressources {#copying-assets}
@@ -586,7 +585,7 @@ Pour plus d’informations sur [!DNL Dynamic Media], voir [publication [!DNL Dyn
    ![Action Annuler la publication](assets/unpublish_action.png)
    *Figure : Options de publication et d’annulation de publication et option de planification.*
 
-1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou **[!UICONTROL Plus tard]** pour planifier l&#39;action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]**. Cliquez sur **[!UICONTROL Next]** (Suivant).
+1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou **[!UICONTROL Plus tard]** pour planifier l&#39;action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]**. Cliquez sur **[!UICONTROL Suivant]**.
 
 1. Lors de la publication, si une ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’assistant. Seules les références affichées, qui sont soit non publiées, soit modifiées depuis la dernière publication. Sélectionnez les références que vous souhaitez publier.
 
