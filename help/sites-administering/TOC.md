@@ -8,28 +8,27 @@ breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
 feature: Administration
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 93%
+source-wordcount: '649'
+ht-degree: 94%
 
 ---
 
 
 # Guide de l’utilisateur pour l’administration dans AEM 6.4 {#administering}
 
-+ [Présentation de l’administration du Guide de l’utilisateur](home.md)
++ [Guide de l’utilisateur d’administration - Aperçu](home.md)
 + Fonctionnalités des sites {#introduction}
-   + [Administration de site web](msm-and-translation.md) 
-   + [Réutilisation de contenu : Multi Site Manager et Live Copy](msm.md)
-   + [Console Aperçu de la Live Copy](msm-livecopy-overview.md)
+   + [Administration de sites web](msm-and-translation.md)
+   + [Réutilisation de contenu : Multi Site Manager et Live Copy](msm.md)
+   + [Console Aperçu de Live Copy](msm-livecopy-overview.md)
    + [Configuration de la synchronisation des Live Copies](msm-sync.md)
    + [Création et synchronisation de Live Copies](msm-livecopy.md)
-   + [Conflits de déploiement dans MSM](msm-rollout-conflicts.md)
-   + [Meilleures pratiques MSM](msm-best-practices.md)
+   + [Conflits de déploiement de MSM](msm-rollout-conflicts.md)
+   + [Bonnes pratiques MSM](msm-best-practices.md)
    + [Traduction de contenu pour les sites multilingues](translation.md)
-   + [Gestion des projets de traduction](tc-manage.md)
+   + [Gestion de projets de traduction](tc-manage.md)
    + [Identification du contenu à traduire](tc-rules.md)
    + [Préparation du contenu à traduire](tc-prep.md)
    + [Création d’une racine de langue à l’aide de l’interface utilisateur classique](tc-lroot-classic.md)
@@ -37,8 +36,8 @@ ht-degree: 93%
    + [Configuration de la structure d’intégration de traduction](tc-tic.md)
    + [Assistant Copie de la langue](tc-wizard.md)
    + [Amélioration des traductions](tc-enhancements.md)
-   + [Meilleures pratiques de traduction](tc-bp.md)
-   + [Configurations et navigateur de configuration](configurations.md)
+   + [Bonnes pratiques de traduction](tc-bp.md)
+   + [Configurations et l’explorateur de configurations](configurations.md)
    + [FAQ sur AEM](aem-faqs.md)
 + Opérations {#operations}
    + [Tableaux de bord](dashboards.md)
@@ -99,7 +98,7 @@ ht-degree: 93%
 + Personnalisation {#personalization}
    + [Personnalisation](personalization.md)
    + [Configuration de ContextHub](contexthub-config.md)
-   + [Contexte client](client-context.md)
+   + [ClientContext](client-context.md)
    + [Campagnes](campaigns.md)
    + [Configuration de la segmentation avec ContextHub](segmentation.md)
    + [Configuration de la segmentation](campaign-segmentation.md)
@@ -108,7 +107,7 @@ ht-degree: 93%
 + eCommerce {#ecommerce}
    + [eCommerce](ecommerce.md)
    + [Concepts ](concepts.md)
-   + [Administration du commerce électronique générique](generic.md)
+   + [Administration d’eCommerce générique](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
@@ -118,19 +117,19 @@ ht-degree: 93%
    + [Intégration à Salesforce](salesforce.md)
    + [Intégration à Adobe Target](target.md)
    + [Intégration à Livefyre](livefyre.md)
-   + [Intégration à Adobe Analytics](adobeanalytics.md)
-   + [Connexion à Adobe Analytics et création de structures](adobeanalytics-connect.md)
-   + [Configuration du suivi des liens pour Adobe Analytics](adobeanalytics-link.md)
-   + [Mise en correspondance des données de composant avec les propriétés Adobe Analytics](adobeanalytics-mapping.md)
-   + [Configuration du suivi vidéo pour Adobe Analytics](adobeanalytics-video.md)
+   + [Intégration à Adobe Analytics](adobeanalytics.md)
+   + [Connexion à Adobe Analytics et création de structures](adobeanalytics-connect.md)
+   + [Configuration du suivi des liens Adobe Analytics](adobeanalytics-link.md)
+   + [Mappage des données de composant aux propriétés Adobe Analytics](adobeanalytics-mapping.md)
+   + [Configuration du suivi vidéo pour Adobe Analytics](adobeanalytics-video.md)
    + [FAQ sur la diffusion de contenu HTTP/2](scene7-http2faq.md)
-   + [Résolution des incidents liés à votre intégration Adobe Campaign](troubleshooting-campaignintegration.md)
+   + [Résolution des incidents liés à votre intégration Adobe Campaign](troubleshooting-campaignintegration.md)
    + [Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector](sharepoint-connector-licenses.md)
-   + [SharePoint Connector](sharepoint-connector.md)
+   + [SharePoint Connector](sharepoint-connector.md)
    + [FAQ sur la fin de prise en charge de la visionneuse DHTML](dhtml-viewer-endoflifefaqs.md)
    + [Intégration à Adobe Campaign Classic](campaignonpremise.md)
    + [Articles associés de la communauté](related-community-articles.md)
-   + [Intégration à Adobe Campaign Standard](campaignstandard.md)
+   + [Intégration à Adobe Campaign Standard](campaignstandard.md)
    + [Notification de fin de prise en charge de la visionneuse Flash](flash-viewers-eol.md)
    + [Intégration à Adobe Creative Cloud](https://docs.adobe.com/content/help/fr-FR/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
    + [Flux de produit](product-feed.md)
@@ -142,23 +141,22 @@ ht-degree: 93%
    + [Résolution des problèmes d’intégration](troubleshooting-integration-issues.md)
    + [Intégration à BrightEdge Content Optimizer](brightedge.md)
    + [Meilleures pratiques des modèles de courrier électronique](best-practices-for-email-templates.md)
-   + [Producteur de catalogue](catalog-producer.md)
-   + [Configuration de l’intégration d’AEM Assets avec Experience Cloud et Creative Cloud](configure-assets-cc-integration.md)
+   + [Catalog Producer](catalog-producer.md)
    + [Intégration à Silverpop Engage](silverpop.md)
    + [Intégration à Adobe Campaign](campaign.md)
    + [Intégration à ExactTarget](exacttarget.md)
-   + [Analytics avec fournisseurs externes](external-providers.md)
+   + [Analytics avec des fournisseurs externes](external-providers.md)
    + [Intégration à Adobe Marketing Cloud](marketing-cloud.md)
    + [Configuration manuelle de l’intégration à Adobe Target](target-configuring.md)
    + [Conditions préalables à l’intégration à Adobe Target](target-requirements.md)
-   + [Classifications Adobe](adobeanalytics-classifications.md)
+   + [Adobe Classifications](adobeanalytics-classifications.md)
    + [Intégration à Adobe Search&amp;Promote](search-and-promote.md)
    + [Intégration de solutions](integration.md)
    + [Intégration de fragments d’expérience dans Adobe Target](experience-fragments-target.md)
 + Bonnes pratiques {#bestpractices}
    + [Bonnes pratiques](administer-best-practices.md)
-   + [Meilleures pratiques de traduction](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/tc-bp.html)
-   + [Meilleures pratiques MSM](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/msm-best-practices.html)
+   + [Bonnes pratiques de traduction](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/tc-bp.html)
+   + [Bonnes pratiques MSM](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/msm-best-practices.html)
    + [AEM Sites – Préparation pour le RGPD](gdpr-compliance-sites.md)
    + [Traitement des demandes RGPD pour AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [AEM Commerce – Préparation pour le RGPD](https://experienceleague.adobe.com/docs/experience-manager-64/administering/ecommerce/gdpr-compliance-commerce.html)
@@ -167,6 +165,6 @@ ht-degree: 93%
    + [Déchargeur de workflow de ressources](workflow-offloader.md)
    + [Administration des balises](tags.md)
    + [Exportateur de page](page-exporter.md)
-   + [Console Balisage de l’interface utilisateur classique](classic-console.md)
+   + [Console Balisage de l’interface utilisateur (IU) classique](classic-console.md)
    + [Gestion du contenu pour Screens](content-management-screens.md)
    + [Accès WebDAV](webdav-access.md)
