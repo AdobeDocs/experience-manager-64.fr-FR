@@ -9,23 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: b5ff918d-08ab-4307-a807-693468fc083b
-translation-type: tm+mt
-source-git-commit: 08e0b5c1cbb05a110bfbec72ce0f89986a0fcf74
+exl-id: 1ee7ccbd-8654-4d03-8a67-2c41863ae951
+source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '121'
 ht-degree: 100%
 
 ---
-
 
 # Intégration de solutions{#solutions-integration}
 
 * [Intégration à Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md)
 * [Intégration à des services tiers](/help/sites-administering/third-party-services.md)
-* [Analytics avec fournisseurs externes](/help/sites-administering/external-providers.md)
-* [Producteur de catalogue](/help/sites-administering/catalog-producer.md)
-* [Configuration de l’intégration d’AEM Assets à Marketing Cloud et Creative Cloud](/help/sites-administering/configure-assets-cc-integration.md)
-* [SharePoint Connector](/help/sites-administering/sharepoint-connector.md)
+* [Analytics avec des fournisseurs externes](/help/sites-administering/external-providers.md)
+* [Catalog Producer](/help/sites-administering/catalog-producer.md)
+* [SharePoint Connector](/help/sites-administering/sharepoint-connector.md)
 
 Les informations suivantes sont disponibles sur l’intégration d’AEM à d’autres services Adobe ou services tiers :
 
@@ -35,7 +33,7 @@ Les informations suivantes sont disponibles sur l’intégration d’AEM à d’
 >
 >* La version 3.x est configurée avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
->
 
+>
 
 
