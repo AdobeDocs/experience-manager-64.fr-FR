@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Correspondence Management
+exl-id: 82a35d81-13d0-435f-875e-6fd0a6d574d5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 90%
 
 ---
-
 
 # Correspondence Management : dépannage {#correspondence-management-troubleshooting}
 
@@ -46,7 +45,7 @@ Assurez-vous que le dictionnaire de données utilisé dans la lettre est présen
 
 Lors de la prévisualisation d’une lettre, l’erreur « Erreur lors du chargement de la lettre : importation de l’actif impossible depuis l’entrée XML » apparaît même lorsqu’un actif de texte précédemment non publié dans la lettre est publié.
 
-### Solution  {#workaround-1}
+### Solution {#workaround-1}
 
 Réinitialisez le cache de lettre sur l’instance de publication en suivant les étapes ci-après, puis réessayez d’afficher la lettre :
 
@@ -55,4 +54,3 @@ Réinitialisez le cache de lettre sur l’instance de publication en suivant les
 1. Dans **Configurations de Correspondence Management**, désactivez l’option **Activer le cache de lettre**, puis cliquez sur **Enregistrer**.
 1. Activez **Activer le cache de lettre**, puis cliquez sur **Enregistrer**.
 1. Réessayez d’afficher la lettre.
-
