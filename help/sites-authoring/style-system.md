@@ -8,14 +8,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
-translation-type: tm+mt
-source-git-commit: bdc44635cfb874c5f5f4033debb15799cbafcd5a
+exl-id: 8d7282dd-1e21-4862-af04-0daaea431e2c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 98%
 
 ---
-
 
 # Système de style{#style-system}
 
@@ -23,7 +22,7 @@ Le système de style permet à un auteur de modèles de définir des classes de 
 
 Cela rend inutile le développement d’un composant personnalisé pour chaque style ou la personnalisation d’une boîte de dialogue de composant pour activer une telle fonctionnalité de style. On obtient ainsi des composants plus réutilisables, pouvant être adaptés, rapidement et aisément, aux besoins des auteurs de contenu sans développement back-end dans AEM.
 
-## Exemple d’utilisation   {#use-case}
+## Exemple d’utilisation  {#use-case}
 
 Les auteurs de modèles doivent être en mesure de configurer non seulement le mode de fonctionnement des composants pour les auteurs de contenu, mais aussi diverses variantes visuelles d’un composant.
 
@@ -62,7 +61,7 @@ Le diagramme suivant illustre l’architecture du système de style.
 
 ![aem-style-system](assets/aem-style-system.png)
 
-## Utilisation {#use}
+## Utilisez {#use}
 
 Pour démontrer la fonctionnalité, nous utiliserons comme exemple l’implémentation de [WKND](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), [composant de titre](https://www.adobe.com/go/aem_cmp_title_v2_fr) des composants principaux.
 
@@ -131,7 +130,7 @@ Une fois le composant configuré, les styles définis par les auteurs de pages s
 
 ### Activer l’onglet Styles dans la boîte de dialogue Modifier {#enable-styles-tab-edit}
 
-Depuis AEM version 6.4.7.0, un onglet Styles en option de la boîte de dialogue Modifier est désormais disponible. Contrairement à l’onglet de la boîte de dialogue Conception, celui de la boîte de dialogue Modifier n’est pas essentiel pour le fonctionnement du système de style. Il s’agit d’une autre interface facultative, utilisable par un auteur de contenu pour définir des styles.
+Depuis AEM version 6.4.7.0, un onglet Styles facultatif dans la boîte de dialogue Modifier est désormais disponible. Contrairement à l’onglet de la boîte de dialogue Conception, celui de la boîte de dialogue Modifier n’est pas essentiel pour le fonctionnement du système de style. Il s’agit d’une autre interface facultative, utilisable par un auteur de contenu pour définir des styles.
 
 L’onglet de la boîte de dialogue Modifier peut être inclus de la même manière que celui de la boîte de dialogue Conception :
 
