@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 4817d150-9bfe-4cb9-8f06-6ff4eaaa6f55
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 86%
 
 ---
-
 
 # Principes de base de la gestion des certificats et des informations d’identification {#basics-of-managing-certificates-and-credentials}
 
@@ -54,4 +53,3 @@ Si vous pensez que votre clé est perdue ou a été compromise, procédez comme 
 1. Avertissez l’autorité de certification afin qu’elle ajoute la clé compromise à la liste de révocation de certificats et retire la clé.
 1. Demandez une nouvelle clé et ses certificats à l’autorité de certification.
 1. Signez de nouveau les documents qui ont été signés avec la clé compromise à l’aide de la nouvelle clé.
-
