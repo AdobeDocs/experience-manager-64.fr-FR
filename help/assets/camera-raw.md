@@ -2,49 +2,48 @@
 title: Prise en charge de Camera Raw
 description: Découvrez comment activer la prise en charge Camera Raw dans Adobe Experience Manager Assets.
 contentOwner: AG
-feature: Developer Tools
+feature: Outils de développement
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: 637c57ae-55a6-4032-9821-b55839b3e567
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '406'
 ht-degree: 45%
 
 ---
 
+# Utilisez Camera Raw pour traiter les images {#camera-raw-support}
 
-# Utiliser Camera Raw pour traiter les images {#camera-raw-support}
-
-Vous pouvez activer la prise en charge Camera Raw pour traiter les formats de fichier bruts, tels que CR2, NEF et RAF, et effectuer le rendu des images au format JPEG. La fonctionnalité est prise en charge dans Adobe Experience Manager Assets en utilisant le [package Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponible dans Software Distribution.
+Vous pouvez activer la prise en charge Camera Raw pour traiter les formats de fichiers bruts, tels que CR2, NEF et RAF, et effectuer le rendu des images au format JPEG. La fonctionnalité est prise en charge dans Adobe Experience Manager Assets à l’aide du [package Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponible dans Distribution logicielle.
 
 >[!NOTE]
 >
 >La fonctionnalité ne prend en charge que les rendus JPEG. Il est pris en charge sous Windows 64 bits, Mac OS et RHEL 7.x.
 
-Pour activer la prise en charge Camera Raw des ressources Adobe Experience Manager, procédez comme suit :
+Pour activer la prise en charge Camera Raw dans Adobe Experience Manager Assets, procédez comme suit :
 
-1. Téléchargez le [package Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) à partir de la distribution de logiciels.
+1. Téléchargez le [package Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) à partir de la Distribution logicielle.
 
-1. Accédez à l’adresse `https://[aem_server]:[port]/workflow`. Ouvrez le workflow **[!UICONTROL DAM Update Asset]**.
+1. Accédez à l’adresse `https://[aem_server]:[port]/workflow`. Ouvrez le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** .
 
-1. Ouvrez l’étape **[!UICONTROL Traiter les miniatures]**.
+1. Ouvrez l’étape **[!UICONTROL Miniatures des processus]** .
 
-1. Fournissez la configuration suivante dans l’onglet **[!UICONTROL Miniatures]** :
+1. Indiquez la configuration suivante dans l’onglet **[!UICONTROL Miniatures]** :
 
    * **[!UICONTROL Miniatures]** :  `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL Types MIME ignorés]**: `skip:image/dng, skip:image/x-raw-(.*)`
 
-   ![limage](assets/chlimage_1-334.png)
+   ![chlimage](assets/chlimage_1-334.png)
 
-1. Dans l&#39;onglet **[!UICONTROL Image activée pour le Web]**, dans le champ **[!UICONTROL Ignorer la Liste]**, spécifiez `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
+1. Dans l’onglet **[!UICONTROL Image Web]**, dans le champ **[!UICONTROL Liste à ignorer]**, spécifiez `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
-   ![limage](assets/chlimage_1-335.png)
+   ![chlimage](assets/chlimage_1-335.png)
 
-1. Dans le panneau latéral, ajoutez l’étape **[!UICONTROL Gestionnaire Camera Raw/DNG]** sous l’étape **[!UICONTROL Création de miniature]**.
+1. Dans le panneau latéral, ajoutez l’étape **[!UICONTROL Gestionnaire Camera Raw/DNG]** sous l’étape **[!UICONTROL Création de miniature]** .
 
-1. À l’étape **[!UICONTROL Gestionnaire Camera Raw/DNG]**, ajoutez la configuration suivante dans l’onglet **[!UICONTROL Arguments]** :
+1. À l’étape **[!UICONTROL Gestionnaire Camera Raw/DNG]** , ajoutez la configuration suivante dans l’onglet **[!UICONTROL Arguments]** :
 
-   * **[!UICONTROL Types]** MIME :  `image/dng` et  `image/x-raw-(.*)`
+   * **[!UICONTROL Types MIME]** :  `image/dng` et  `image/x-raw-(.*)`
    * **[!UICONTROL Commande]**:
 
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
@@ -60,15 +59,15 @@ Pour activer la prise en charge Camera Raw des ressources Adobe Experience Manag
 >
 >Vérifiez que la configuration ci-dessus est identique à la configuration **[!UICONTROL Exemple de ressources de mise à jour de gestion des actifs numériques avec l&#39;étape de manipulation Camera RAW et DNG]**.
 
-Vous pouvez désormais importer des fichiers Camera Raw dans AEM Assets. Après avoir installé le pack Camera Raw et configuré le flux de travaux requis, l’option **[!UICONTROL Ajustement de l’image]** apparaît dans la liste des volets latéraux.
+Vous pouvez désormais importer des fichiers Camera Raw dans AEM Assets. Une fois que vous avez installé le package Camera Raw et configuré le workflow requis, l’option **[!UICONTROL Réglage de l’image]** apparaît dans la liste des volets latéraux.
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
-*Figure : Options dans le volet latéral*
+*Figure : Options du volet latéral*
 
 ![chlimage_1-338](assets/chlimage_1-338.png)
 
-*Figure : Utilisez cette option pour apporter des modifications légères à vos images*
+*Figure : Utilisez cette option pour apporter des modifications légères à vos images.*
 
 Après avoir enregistré les modifications apportées à une image Camera Raw, un nouveau rendu `AdjustedPreview.jpg` est généré pour cette image. Pour les types d’images autres que Camera Raw, les modifications sont répercutées dans tous les rendus.
 
@@ -78,4 +77,4 @@ La fonctionnalité présente les limites suivantes :
 
 * La fonctionnalité ne prend en charge que les rendus JPEG. Elle est prise en charge sous Windows 64 bits, Mac OS et RHEL 7.x.
 * L’écriture différée des métadonnées n’est pas prise en charge pour les formats RAW et DNG.
-* La bibliothèque Camera Raw présente des limitations quant au nombre total de pixels qu’elle peut traiter à la fois. Actuellement, il peut traiter un maximum de 65 000 pixels sur le côté long d’un fichier ou 512 MP, quels que soient les critères rencontrés en premier.
+* La bibliothèque Camera Raw présente des limitations quant au nombre total de pixels qu’elle peut traiter à la fois. Actuellement, il peut traiter un maximum de 6 500 pixels sur le long du côté d’un fichier ou 512 MP, quels que soient les critères rencontrés en premier.
