@@ -2,20 +2,19 @@
 title: Installation et configuration d’ImageMagick pour une utilisation avec AEM Assets
 description: Découvrez le logiciel ImageMagick, comment l’installer, configurer l’étape de processus de ligne de commande et l’utiliser pour modifier, composer et générer des miniatures à partir d’images.
 contentOwner: AG
-feature: Renditions,Developer Tools
+feature: Rendus,Outils de développement
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '782'
 ht-degree: 59%
 
 ---
 
-
 # Installation et configuration d’ImageMagick pour une utilisation avec AEM Assets {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
-ImageMagick est un module logiciel qui permet de créer, modifier, composer ou convertir des images bitmap. Il peut lire et écrire des images dans divers formats (plus de 200), notamment PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF et SVG. Utilisez ImageMagick pour redimensionner, réaliser une symétrie, effectuer un miroir, faire pivoter, déformer, cisailler et transformer des images. Vous pouvez également régler les couleurs des images, ainsi qu’appliquer divers effets spéciaux, ou tracer du texte, des lignes, des polygones, des ellipses et des courbes à l’aide d’ImageMagick.
+ImageMagick est un module externe logiciel permettant de créer, modifier, composer ou convertir des images bitmap. Il peut lire et écrire des images dans différents formats (plus de 200), y compris PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF et SVG. Utilisez ImageMagick pour redimensionner, réaliser une symétrie, effectuer un miroir, faire pivoter, déformer, cisailler et transformer des images. Vous pouvez également régler les couleurs des images, ainsi qu’appliquer divers effets spéciaux, ou tracer du texte, des lignes, des polygones, des ellipses et des courbes à l’aide d’ImageMagick.
 
 Utilisez le gestionnaire de médias d’Adobe Experience Manager (AEM) à partir de la ligne de commande afin de traiter les images via ImageMagick. Pour utiliser plusieurs formats de fichiers avec ImageMagick, voir [Meilleures pratiques relatives au format de fichier des ressources](assets-file-format-best-practices.md). Pour connaître tous les formats de fichiers pris en charge, voir [Formats de ressources pris en charge](assets-formats.md).
 
@@ -23,7 +22,7 @@ Pour traiter des fichiers volumineux à l’aide d’ImageMagick, veuillez tenir
 
 >[!NOTE]
 >
->Si vous utilisez AEM sur Adobe Managed Services (AMS), contactez le service à la clientèle Adobe si vous prévoyez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Le Experience Manager ne peut pas traiter de fichiers PSB à très haute résolution de plus de 3 000 x 2 3 000 pixels.
+>Si vous utilisez AEM sur Adobe Managed Services (AMS), contactez l’assistance clientèle d’Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Experience Manager peut ne pas traiter de fichiers PSB à très haute résolution de plus de 3 000 x 2 3000 pixels.
 
 ## Installation d’ImageMagick {#installing-imagemagick}
 
@@ -37,11 +36,11 @@ Plusieurs versions des fichiers d’installation d’ImageMagic sont disponibles
 
 ## Configuration de l’étape de processus de ligne de commande {#set-up-the-command-line-process-step}
 
-Vous pouvez configurer l’étape de processus de ligne de commande en fonction de votre cas d’utilisation. Effectuez les étapes suivantes pour générer une image retournée et des vignettes (140x100, 48x48, 319x319 et 1280x1280) chaque fois que vous ajoutez un fichier d’image JPEG à `/content/dam` sur le serveur AEM :
+Vous pouvez configurer l’étape de processus de ligne de commande en fonction de votre cas d’utilisation. Effectuez les étapes suivantes pour générer une image inversée et des miniatures (140x100, 48x48, 319x319 et 1280x1280) chaque fois que vous ajoutez un fichier image JPEG à `/content/dam` sur le serveur AEM :
 
-1. Sur le serveur AEM, accédez à la console Workflow (`https://[aem_server]:[Port]/workflow`) et ouvrez le modèle de workflow **[!UICONTROL DAM Update Asset]**.
-1. Dans le modèle de flux de travaux **[!UICONTROL DAM Update Asset]**, ouvrez les miniatures **[!UICONTROL EPS (optimisées par ImageMagick)]**.
-1. Dans l&#39;onglet **[!UICONTROL Arguments]**, ajoutez `image/jpeg` à la liste **[!UICONTROL Mime Types]**.
+1. Sur le serveur AEM, accédez à la console Processus (`https://[aem_server]:[Port]/workflow`) et ouvrez le modèle de processus **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** .
+1. Dans le modèle de workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**, ouvrez l’étape **[!UICONTROL Miniatures EPS (optimisées par ImageMagick)]** .
+1. Dans l’onglet **[!UICONTROL Arguments]**, ajoutez `image/jpeg` à la liste **[!UICONTROL Types MIME]**.
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)
 
@@ -49,11 +48,11 @@ Vous pouvez configurer l’étape de processus de ligne de commande en fonction 
 
    `convert ./${filename} -flip ./${basename}.flipped.jpg`
 
-1. Sélectionnez les indicateurs **[!UICONTROL Supprimer le rendu généré]** et **[!UICONTROL Générer le rendu Web]**.
+1. Sélectionnez les indicateurs **[!UICONTROL Supprimer le rendu généré]** et **[!UICONTROL Générer le rendu web]** .
 
    ![select_flags](assets/select_flags.png)
 
-1. Sous l’onglet **[!UICONTROL Image web]**, spécifiez les détails du rendu avec des dimensions de 1 280 x 1 280 pixels. En outre, spécifiez i *Image/jpeg* dans la zone **[!UICONTROL Mimetype]**.
+1. Sous l’onglet **[!UICONTROL Image web]**, spécifiez les détails du rendu avec des dimensions de 1 280 x 1 280 pixels. En outre, spécifiez i *image/jpeg* dans la zone **[!UICONTROL Type MIME]**.
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
@@ -61,15 +60,15 @@ Vous pouvez configurer l’étape de processus de ligne de commande en fonction 
 
    >[!NOTE]
    >
-   >La commande `convert` ne peut pas s&#39;exécuter avec certaines versions de Windows (par exemple Windows SE), car elle est en conflit avec l&#39;utilitaire natif `convert` qui fait partie de l&#39;installation de Windows. Dans ce cas, précisez le chemin complet de l’utilitaire ImageMagick. Par exemple, spécifiez :
+   >La commande `convert` peut ne pas s’exécuter avec certaines versions de Windows (par exemple, Windows SE), car elle est en conflit avec l’utilitaire `convert` natif qui fait partie de l’installation de Windows. Dans ce cas, précisez le chemin complet de l’utilitaire ImageMagick. Par exemple, spécifiez :
    >
    >`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ./${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`
 
-1. Ouvrez l’étape **[!UICONTROL Traiter les miniatures]** et ajoutez le type MIME `image/jpeg` sous **[!UICONTROL Ignorer les types MIME]**.
+1. Ouvrez l’étape **[!UICONTROL Miniatures des processus]** et ajoutez le type MIME `image/jpeg` sous **[!UICONTROL Ignorer les types MIME]**.
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. Dans l&#39;onglet **[!UICONTROL Image activée pour le Web]**, ajoutez le type MIME `image/jpeg` sous **[!UICONTROL Ignorer la Liste]**. Pour enregistrer les modifications, appuyez/cliquez sur **[!UICONTROL OK]**.
+1. Dans l’onglet **[!UICONTROL Image Web]**, ajoutez le type MIME `image/jpeg` sous la **[!UICONTROL Liste à ignorer]**. Pour enregistrer les modifications, appuyez/cliquez sur **[!UICONTROL OK]**.
 
    ![web_enabled](assets/web_enabled.png)
 
@@ -80,19 +79,19 @@ Vous pouvez configurer l’étape de processus de ligne de commande en fonction 
 
 Il existe plusieurs vulnérabilités de sécurité liées à l’utilisation d’ImageMagick pour traiter les images. Par exemple, le traitement d’images envoyées par l’utilisateur entraîne un risque d’exécution de code à distance (RCE).
 
-En outre, divers modules externes de traitement d’images dépendent de la bibliothèque ImageMagick, y compris, mais sans s’y limiter, l’imagerie de PHP, le rmagick et le trombone de Ruby, et l’imagerie de Node.js.
+En outre, divers modules externes de traitement d’images dépendent de la bibliothèque ImageMagick, notamment, mais sans s’y limiter, imagick de PHP, rmagick et paperclip de Ruby et imagemagick de Node.js.
 
 Si vous utilisez ImageMagick ou une bibliothèque affectée, Adobe vous recommande de limiter les vulnérabilités connues en réalisant au moins l’une des tâches suivantes (de préférence les deux) :
 
-1. Vérifiez que tous les fichiers image commencent par les [ &quot;octets magiques&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) attendus correspondant aux types de fichiers image que vous prenez en charge avant de les envoyer à ImageMagick pour traitement.
-1. Utilisez un fichier de stratégie pour désactiver les codeurs ImageMagick vulnérables. La stratégie globale pour ImageMagick est disponible à l&#39;adresse `/etc/ImageMagick`.
+1. Vérifiez que tous les fichiers image commencent par les [&quot;octets magiques&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) attendus correspondant aux types de fichiers image que vous prenez en charge avant de les envoyer à ImageMagick pour traitement.
+1. Utilisez un fichier de stratégie pour désactiver les codeurs ImageMagick vulnérables. La stratégie globale pour ImageMagick se trouve à l’adresse `/etc/ImageMagick`.
 
 >[!MORELIKETHIS]
 >
 >* [Meilleures pratiques concernant le traitement de divers formats de fichiers à l’aide d’AEM Assets](assets-file-format-best-practices.md)
->* [Options de ligne de commande pour ImageMagick](https://www.imagemagick.org/script/command-line-options.php)
->* [Exemples de base et avancés d’utilisation d’ImageMagick](https://www.imagemagick.org/Usage/)
->* [Réglage des performances d’AEM Assets pour ImageMagick](performance-tuning-guidelines.md)
->* [Liste complète des formats de fichiers pris en charge par AEM Assets](assets-formats.md)
->* [Explication des formats de fichiers et du coût mémoire des images](https://www.scantips.com/basics1d.html)
+* [Options de ligne de commande pour ImageMagick](https://www.imagemagick.org/script/command-line-options.php)
+* [Exemples de base et avancés d’utilisation d’ImageMagick](https://www.imagemagick.org/Usage/)
+* [Réglage des performances d’AEM Assets pour ImageMagick](performance-tuning-guidelines.md)
+* [Liste complète des formats de fichiers pris en charge par AEM Assets](assets-formats.md)
+* [Explication des formats de fichiers et du coût mémoire des images](https://www.scantips.com/basics1d.html)
 
