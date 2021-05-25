@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 86a31407-96a4-467c-9468-da4095ca38d5
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 311ffab4-8bc9-486b-9ca5-a958f13f16f8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 89%
 
 ---
-
 
 # Teasers et stratégies{#teasers-and-strategies}
 
@@ -26,9 +25,9 @@ Les campagnes se servent souvent des teasers comme d’un mécanisme pour incite
 >
 >Le composant Teaser a été abandonné dans AEM 6.2.
 
-* **Les** pages de marque sont stockées dans la section Campagnes du site Web. Une marque contient les différentes campagnes.
+* **Les** pages de marque sont stockées dans la section Campagnes du site web. Une marque contient les différentes campagnes.
 
-* **Les** pages Campaign sont stockées dans la section Campagnes du site Web. Chaque campagne possède une page individuelle, où sont conservées les définitions de teaser. La page de conteneur ou d’aperçu présente également certaines informations et statistiques concernant les pages de teaser individuelles.
+* **Les** pages de campagne sont stockées dans la section Campagnes du site web. Chaque campagne possède une page individuelle, où sont conservées les définitions de teaser. La page de conteneur ou d’aperçu présente également certaines informations et statistiques concernant les pages de teaser individuelles.
 
 Dans AEM, les teasers sont constitués de plusieurs parties :
 
@@ -38,18 +37,18 @@ Dans AEM, les teasers sont constitués de plusieurs parties :
 * Les **paragraphes de teaser** sont de véritables instances de votre teaser au sein d’une page de contenu. Ceux-ci incitent un segment de visiteurs à consulter du contenu centré sur leurs intérêts.
 * Les pages qui présentent le contenu de la campagne centré sur un segment de visiteurs spécifique. Généralement, les paragraphes de teaser dirigent le visiteur jusqu’à des pages de ce type.
 
-## Stratégies  {#strategies}
+## Stratégies {#strategies}
 
-Lorsque vous ajoutez un paragraphe de teaser à une page, vous devez définir la **Stratégie**.
+Lors de l’ajout d’un paragraphe de teaser à une page, vous devez définir la **Stratégie**.
 
 C’est pour le cas où plusieurs teasers sont disponibles pour être sélectionnés alors que leurs segments affectés sont tous résolus avec succès. La **stratégie** indique alors un critère supplémentaire utilisé pour sélectionner le teaser affiché :
 
 * **Score Clickstream** est basé sur les balises et les accès aux balises associés conservés dans le ClientContext du visiteur (indique la fréquence à laquelle un visiteur clique sur les pages contenant la balise respective). Les taux de fréquence d’accès aux balises définis sur la page de teaser sont comparés.
-* **Aléatoire**, pour la sélection &quot;aléatoire&quot;; utilise le facteur aléatoire généré pour une page, ce qui est visible avec le contexte [ ](/help/sites-administering/client-context.md)client.
+* **Aléatoire**, pour une sélection &quot;aléatoire&quot;; utilise le facteur aléatoire généré pour une page, cela est visible avec le contexte  [client](/help/sites-administering/client-context.md).
 
 * **** Commencez la liste des segments résolus. L’ordre est celui des teasers dans la page conteneur de campagne.
 
-Le [facteur d&#39;accélération](/help/sites-administering/campaign-segmentation.md#boost-factor) du segment a également un impact sur la sélection. Il s’agit d’un facteur de pondération ajouté à une définition de segment pour augmenter ou réduire la possibilité relative qu’elle soit sélectionnée.
+Le [facteur d’amplification](/help/sites-administering/campaign-segmentation.md#boost-factor) du segment a également un impact sur la sélection. Il s’agit d’un facteur de pondération ajouté à une définition de segment pour augmenter ou réduire la possibilité relative qu’elle soit sélectionnée.
 
 Le worfklow et les interrelations des divers critères de sélection sont mieux illustrés par un exemple (une méthode qui peut également être utilisée pour assurer que vos teasers atteignent le public requis).
 
@@ -115,7 +114,7 @@ Et nous utilisons les définitions de teaser suivantes :
 
 Ensuite, si nous appliquons ceci à un visiteur quand :
 
-* **S1**,  **S2** et  **S6** résolus avec succès
+* **S1**,  **S2** et  **S6**  sont résolus avec succès.
 
 * la balise **marketing** est accédée 3 fois
 * la balise **commerce** est accédée 6 fois
@@ -272,4 +271,3 @@ A l’instar de la vue de campagne dans MCM, la page de campagne fournit des inf
    Vous accédez alors à un aperçu de la définition du teaser et des statistiques de visionnage :
 
    ![chlimage_1-8](assets/chlimage_1-8.png)
-
