@@ -2,7 +2,7 @@
 title: Contrôle des opérations de gestion des utilisateurs dans AEM
 seo-title: Contrôle des opérations de gestion des utilisateurs dans AEM
 description: Découvrez comment contrôler les opérations de gestion des utilisateurs dans AEM.
-feature: Operations
+feature: Opérations
 seo-description: Découvrez comment contrôler les opérations de gestion des utilisateurs dans AEM.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User
@@ -11,7 +11,6 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 exl-id: f987c4f5-64dd-491b-aafe-cb98acf0b1eb
-translation-type: tm+mt
 source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
 source-wordcount: '320'
@@ -37,7 +36,7 @@ Par défaut, les entrées sont écrites dans le fichier `error.log`. Pour facili
 
 Pour rediriger la sortie de la journalisation vers un fichier journal distinct, vous devez créer une configuration **Enregistreur de journalisation Apach Sling**. Dans l’exemple ci-dessous, nous utilisons `useraudit.log` comme nom de fichier distinct.
 
-1. Accédez à la console Web en accédant à `https://<serveraddress>:<serverport>/system/console/configMgr`
+1. Accédez à la console web en accédant à `https://<serveraddress>:<serverport>/system/console/configMgr`
 1. Recherchez la **Configuration de l’enregistreur de journalisation Apache Sling**. Ensuite, appuyez sur « + » dans la partie droite de l’entrée afin de créer une configuration d’usine.
 1. Créez la configuration suivante :
 
