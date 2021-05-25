@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Mise à niveau
+exl-id: 1c72093e-82c8-49ad-bd3c-d61904aaab28
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 96%
 
 ---
-
 
 # Procédure de mise à niveau pour les installations de serveur d’applications{#upgrade-steps-for-application-server-installations}
 
@@ -57,7 +56,7 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
 
 1. Supprimez les propriétés requises du fichier sling.properties en procédant comme suit :
 
-   1. Ouvrez le fichier situé dans `crx-quickstart/launchpad/sling.properties`.
+   1. Ouvrez le fichier situé à l’emplacement `crx-quickstart/launchpad/sling.properties`.
    1. Supprimez les propriétés suivantes et enregistrez le fichier :
 
       1. `sling.installer.dir`
@@ -72,8 +71,8 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
 1. Supprimez les fichiers et dossiers qui ne sont plus nécessaires. Vous devez précisément supprimer les éléments suivants :
 
    * Le **dossier launchpad/startup**. Vous pouvez le supprimer en exécutant la commande suivante dans le terminal :`rm -rf crx-quickstart/launchpad/startup`
-   * Le fichier **base.jar** : `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-   * Le **fichier BootstrapCommandFile_timestamp.txt** : `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * Le **fichier base.jar** : `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * Fichier **BootstrapCommandFile_timestamp.txt** : `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
 1. Copiez le segmentstore (magasin de segments) nouvellement migré à son emplacement approprié :
 
@@ -99,7 +98,7 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
 
 1. Modifiez les fichiers de configuration pour les rendre prêts à l’emploi. Plus précisément :
 
-   * Ajoutez la ligne suivante sur **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config** :
+   * Ajoutez la ligne suivante à **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config** :
 
       `customBlobStore=true`
 
@@ -150,4 +149,3 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
    ```shell
    cp temp/aem62.war jboss-install-folder/standalone/deployments/aem61.war
    ```
-
