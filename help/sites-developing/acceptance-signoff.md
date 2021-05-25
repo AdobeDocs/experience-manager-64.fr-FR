@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: d8da194f-f161-4ba7-b8cc-c2c282dc9c83
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: e6dd95d2-9444-40e6-a83a-2c4f9e4cfcef
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 100%
 
 ---
-
 
 # Acceptation et approbation{#acceptance-and-sign-off}
 
@@ -32,4 +31,3 @@ C’est la raison pour laquelle :
 * Ils doivent être définis dès que possible.
 * Ils doivent être mis à jour lorsque cela s’avère nécessaire.
 * Toute modification doit être formellement acceptée et signée par les deux parties (partenaire et client).
-
