@@ -8,19 +8,18 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formulaires adaptatifs
+exl-id: 5f6d23b2-ab8b-48fd-b853-eea7d6c9d651
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
-
 # Création de formulaires adaptatifs à l’aide d’un schéma XML {#creating-adaptive-forms-using-xml-schema}
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 La création d’un formulaire adaptatif à l’aide d’un schéma XML en tant que modèle de formulaire requiert des connaissances de base en matière de schémas XML. Il est également recommandé de lire le contenu suivant avant cet article.
 
@@ -64,7 +63,7 @@ Cette mise en correspondance des éléments XML avec les composants de formulair
         </code></li> 
      <li>Tous les types de valeurs numériques</li> 
     </ul> </td> 
-   <td>Champ numérique</td> 
+   <td>Zone numérique</td> 
   </tr> 
   <tr> 
    <td><code>xs:date</code></td> 
@@ -143,7 +142,7 @@ Vous pouvez ajouter les attributs suivants aux éléments de schéma XML pour aj
   </tr> 
   <tr> 
    <td><code>use=required </code></td> 
-   <td>Indique un champ obligatoire.<br />  </td> 
+   <td>Indique un champ obligatoire.<br /> </td> 
    <td>Attribut</td> 
   </tr> 
   <tr> 
@@ -174,7 +173,7 @@ Vous pouvez ajouter les attributs suivants aux éléments de schéma XML pour aj
 
 >
 >
-Par exemple, si vous ajoutez l’élément de schéma `userFirstName`, la légende générée dans le formulaire adaptatif est `User First Name`.
+Par exemple, si vous ajoutez l’élément de schéma `userFirstName` , la légende générée dans le formulaire adaptatif est `User First Name`.
 
 ## Valeurs possibles de limite pour un composant de formulaire adaptatif {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -194,7 +193,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
    <td><p>Spécifie le nombre maximal de chiffres autorisés dans un composant. Le nombre de chiffres spécifié doit être supérieur à zéro.</p> </td> 
    <td> 
     <ul> 
-     <li>Champ numérique</li> 
+     <li>Zone numérique</li> 
      <li>Procédure pas à pas numérique</li> 
     </ul> </td> 
   </tr> 
@@ -204,7 +203,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
    <td><p>Spécifie la limite supérieure pour les valeurs numériques et les dates. Par défaut, la valeur maximale est incluse.</p> </td> 
    <td> 
     <ul> 
-     <li>Champ numérique</li> 
+     <li>Zone numérique</li> 
      <li>Procédure pas à pas numérique<br /> </li> 
      <li>Sélecteur de date</li> 
     </ul> </td> 
@@ -215,7 +214,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
    <td><p>Définit la limite inférieure pour les valeurs numériques et les dates. Par défaut, la valeur minimale est incluse.</p> </td> 
    <td> 
     <ul> 
-     <li>Champ numérique</li> 
+     <li>Zone numérique</li> 
      <li>Procédure pas à pas numérique</li> 
      <li>Sélecteur de date</li> 
     </ul> </td> 
@@ -226,7 +225,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
    <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être inférieure à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit inférieure ou égale à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> </td> 
    <td> 
     <ul> 
-     <li>Champ numérique</li> 
+     <li>Zone numérique</li> 
      <li>Procédure pas à pas numérique</li> 
      <li>Sélecteur de date</li> 
     </ul> </td> 
@@ -237,7 +236,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
    <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure ou égale à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> </td> 
    <td> 
     <ul> 
-     <li>Champ numérique</li> 
+     <li>Zone numérique</li> 
      <li>Procédure pas à pas numérique</li> 
      <li>Sélecteur de date</li> 
     </ul> </td> 
@@ -275,7 +274,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
    <td><p>Spécifie le nombre maximal de décimales autorisées dans un composant. La valeur de fractionDigits doit être égale ou supérieure à zéro.</p> </td> 
    <td> 
     <ul> 
-     <li> Boîte numérique avec type de données flottant ou décimal</li> 
+     <li> Zone numérique avec type de données flottant ou décimal</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -294,11 +293,11 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
 
 **Comment savoir quel élément de l’arborescence est associé à quel élément XML ?**
 
-Lorsque vous cliquez sur un élément dans l’Outil de recherche de contenu en maintenant la touche doublon enfoncée, une fenêtre contextuelle affiche un nom de champ et une propriété appelée `bindRef`. Cette propriété met en correspondance l’élément de l’arborescence avec l’élément ou l’attribut du schéma.
+Lorsque vous double-cliquez sur un élément dans l’outil de recherche de contenu, une fenêtre contextuelle affiche un nom de champ et une propriété appelée `bindRef`. Cette propriété met en correspondance l’élément de l’arborescence avec l’élément ou l’attribut du schéma.
 
 ![Champ bindref d’un élément de schéma XML](assets/dblclick.png)
 
-Le champ bindRef</code> affiche l’association entre un élément d’arborescence et un élément ou attribut d’un schéma.
+Le champ bindRef</code> affiche l’association entre un élément de l’arborescence et un élément ou un attribut d’un schéma.
 
 >[!NOTE]
 >
@@ -312,7 +311,7 @@ Dans un sous-formulaire répétable, vous devez utiliser le sous-formulaire comp
 
 Vous disposez de deux options :
 
-* Parcourez la structure de l’arborescence. 
+* Parcourez la structure de l’arborescence.
 * Utilisez la zone Rechercher pour rechercher un élément.
 
 **Qu’est-ce qu’un bindRef ?**
