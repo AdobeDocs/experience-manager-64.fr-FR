@@ -9,34 +9,33 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
-translation-type: tm+mt
-source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
+exl-id: 4cd44f33-1bf9-4ec6-868f-0db60bfc56c0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 74%
 
 ---
 
-
 # Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
 Cette section répertorie l’ensemble des licences, des notices de copyright et des clauses de non-responsabilité qui doivent être présentées explicitement avec Day JCR Connector for Microsoft SharePoint.
 
-## Présentation des bibliothèques Connector tierces  {#overview-of-connector-rd-party-libraries}
+## Présentation des bibliothèques Connector tierces {#overview-of-connector-rd-party-libraries}
 
 Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les bibliothèques de base SharePoint Connector, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les prennent en charge :
 
 | Bibliothèque | Type de licence |
 |---|---|
-| annogène | [Apache ](#apache) |
+| annogen | [Apache ](#apache) |
 | axiom-api | [Apache ](#apache) |
-| axiome-dom | [Apache ](#apache) |
-| axiome-impl | [Apache ](#apache) |
+| axiom-dom | [Apache ](#apache) |
+| axiom-impl | [Apache ](#apache) |
 | axis2-adb | [Apache ](#apache) |
 | axis2-kernel | [Apache ](#apache) |
-| Backport-util-simultané | Domaine public |
+| Backport-util-concurrent | Domaine public |
 | commons-codec | [Apache ](#apache) |
-| communs-collections | [Apache ](#apache) |
+| commons-collections | [Apache ](#apache) |
 | commons-fileupload | [Apache ](#apache) |
 | commons-httpclient | [Apache ](#apache) |
 | commons-io | [Apache ](#apache) |
@@ -52,7 +51,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les
 | jaxen | BSD |
 | log4j | [Apache ](#apache) |
 | lucene-core | [Apache ](#apache) |
-| Néthi | [Apache ](#apache) |
+| nuthi | [Apache ](#apache) |
 | slf4j-api | [SLF4J.ORG](#slf-j-org) |
 | slf4j-jdk14 | [SLF4J.ORG](#slf-j-org) |
 | stax-api | [Apache ](#apache) |
@@ -60,7 +59,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les
 | wstx-asl | [Apache ](#apache) |
 | xalan | [Apache ](#apache) |
 | xbean | [Apache ](#apache) |
-| xml-apis | [Apache](#apache)  (contient des portions couvertes par les licences de domaine public et de logiciel W3C) |
+| xml-apis | [Apache](#apache)  (contient des portions couvertes par les licences de domaine public et de logiciels W3C) |
 | XmlSchema | [Apache ](#apache) |
 
 ## Présentation des bibliothèques CRX tierces {#overview-of-crx-rd-party-libraries}
@@ -97,8 +96,8 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans CRX
    <td><a href="#apache">Apache </a></td> 
   </tr> 
   <tr> 
-   <td>simultané-1.3.4.jar</td> 
-   <td><a href="#concurrent">Concurrent</a></td> 
+   <td>concurrent-1.3.4.jar</td> 
+   <td><a href="#concurrent">Contextuel</a></td> 
   </tr> 
   <tr> 
    <td>derby-10.1.2.1.jar</td> 
@@ -174,7 +173,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
    <td><a href="#apache">Apache </a></td> 
   </tr> 
   <tr> 
-   <td>géronimo-spec-j2ee-connector-1.0-M1.jar</td> 
+   <td>geronimo-spec-j2ee-connector-1.0-M1.jar</td> 
    <td><a href="#apache">Apache </a></td> 
   </tr> 
   <tr> 
@@ -426,7 +425,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      limitations under the License.
 ```
 
-## Concurrent {#concurrent}
+## Contextuel {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
@@ -438,7 +437,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      <a href="https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf" TARGET="_blank" >https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf</a>
 ```
 
-## Day JCR {#day-jcr}
+## Day JCR  {#day-jcr}
 
 ```xml
      Day Management AG ("Licensor") is willing to license this 
@@ -744,7 +743,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      2000-05-05
 ```
 
-## SLF4J.ORG {#slf-j-org}
+## SLF4J.ORG  {#slf-j-org}
 
 ```xml
      Copyright (c) 2004-2007 QOS.ch
@@ -1290,4 +1289,3 @@ database. Title to copyright in this software, database and any associated
 documentation shall at all times remain with Princeton University and 
 LICENSEE agrees to preserve same.
 ```
-
