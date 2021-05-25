@@ -1,8 +1,8 @@
 ---
-title: Débuts rapides de l’API Repository Service
-seo-title: Débuts rapides de l’API Repository Service
-description: Utilisez le service AEM Forms Repository pour créer un dossier, écrire une ressource, des ressources de liste, lire une ressource, mettre à jour une ressource, rechercher des ressources, créer des relations entre les ressources, verrouiller une ressource, gérer des listes de contrôle d'accès et supprimer une ressource.
-seo-description: Utilisez le service AEM Forms Repository pour créer un dossier, écrire une ressource, des ressources de liste, lire une ressource, mettre à jour une ressource, rechercher des ressources, créer des relations entre les ressources, verrouiller une ressource, gérer des listes de contrôle d'accès et supprimer une ressource.
+title: Démarrages rapides de l’API Repository Service
+seo-title: Démarrages rapides de l’API Repository Service
+description: Utilisez le service AEM Forms Repository pour créer un dossier, écrire une ressource, répertorier des ressources, lire une ressource, mettre à jour une ressource, rechercher des ressources, créer des relations entre les ressources, verrouiller une ressource, gérer les listes de contrôle d’accès et supprimer une ressource.
+seo-description: Utilisez le service AEM Forms Repository pour créer un dossier, écrire une ressource, répertorier des ressources, lire une ressource, mettre à jour une ressource, rechercher des ressources, créer des relations entre les ressources, verrouiller une ressource, gérer les listes de contrôle d’accès et supprimer une ressource.
 uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
 contentOwner: admin
 content-type: reference
@@ -10,60 +10,59 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 859a2b57-df90-4030-9061-c454d07cb753
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
 
+# Démarrages rapides de l’API Repository Service {#repository-service-api-quick-starts}
 
-# Débuts rapides de l’API Repository Service {#repository-service-api-quick-starts}
+Les Quick Starts suivants sont disponibles pour le service AEM Forms Repository.
 
-Les Débuts rapides suivants sont disponibles pour le service AEM Forms Repository.
+[Démarrage rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
-[Début rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
+[Démarrage rapide (mode SOAP) : Écriture d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
-[Début rapide (mode SOAP) : Écriture d&#39;une ressource à l&#39;aide de l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[Démarrage rapide (mode SOAP) : Liste des ressources à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
-[Début rapide (mode SOAP) : Liste des ressources à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
+[Démarrage rapide (mode SOAP) : Lecture d&#39;une ressource à l&#39;aide de l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
 
-[Début rapide (mode SOAP) : Lecture d&#39;une ressource à l&#39;aide de l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
+[Démarrage rapide (mode SOAP) : Mise à jour d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
 
-[Début rapide (mode SOAP) : Mise à jour d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
+[Démarrage rapide (mode SOAP) : Recherche de ressources à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
-[Début rapide (mode SOAP) : Recherche de ressources à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
+[Démarrage rapide (mode SOAP) : Création de relations entre les ressources à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
-[Début rapide (mode SOAP) : Création de relations entre les ressources à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
+[Démarrage rapide (mode SOAP) : Verrouillage d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
-[Début rapide (mode SOAP) : Verrouillage d&#39;une ressource à l&#39;aide de l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
+[Démarrage rapide (mode SOAP) : Gestion des listes de contrôle d’accès à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-managing-access-control-lists-using-the-java-api)
 
-[Début rapide (mode SOAP) : Gestion des listes de contrôle d&#39;accès à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-managing-access-control-lists-using-the-java-api)
+[Démarrage rapide (mode SOAP) : Suppression d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
 
-[Début rapide (mode SOAP) : Suppression d&#39;une ressource à l&#39;aide de l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
-
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms fortement typée et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 **Applications/FormsApplication**
 
-La plupart des débuts rapides du service de référentiel AEM Forms interagissent avec une application nommée `Applications/FormsApplication,`, comme le montre l&#39;illustration suivante.
+La plupart des démarrages rapides du service de référentiel AEM Forms interagissent avec une application nommée `Applications/FormsApplication,` comme illustré ci-dessous.
 
-Le dossier FormsFolder est un emplacement du référentiel AEM Forms. Vous pouvez, par exemple, ajouter ce dossier par programmation à `Applications/FormsApplication`. (Voir [Début rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
+Le dossier FormsFolder est un emplacement du référentiel AEM Forms. Vous pouvez, par exemple, ajouter ce dossier par programmation à `Applications/FormsApplication`. (Voir [Démarrage rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
 
-Le chemin d&#39;accès à une ressource située dans le référentiel AEM Forms est :
+Le chemin d’accès à une ressource située dans le référentiel AEM Forms est le suivant :
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
 >[!NOTE]
 >
->Vous pouvez parcourir le référentiel AEM Forms à l’aide d’un navigateur Web. Pour parcourir le référentiel, saisissez l’URL suivante dans un navigateur Web https://[nom du serveur]:[port du serveur]/repository. Vous pouvez vérifier rapidement les résultats des débuts à l’aide d’un navigateur Web. Par exemple, si vous ajoutez du contenu au référentiel AEM Forms, vous pouvez afficher le contenu dans un navigateur Web.
+>Vous pouvez parcourir le référentiel AEM Forms à l’aide d’un navigateur web. Pour parcourir le référentiel, saisissez l’URL suivante dans un navigateur Web https://[nom du serveur]:[port du serveur]/repository. Vous pouvez vérifier les résultats de démarrage rapide à l’aide d’un navigateur web. Par exemple, si vous ajoutez du contenu au référentiel AEM Forms, vous pouvez afficher le contenu dans un navigateur web.
 
 >[!NOTE]
 >
->Applications/FormsApplication n&#39;existe pas par défaut. Pour suivre les débuts rapides, créez cette application à l’aide de Workbench. Pour plus d’informations sur la création d’une application à l’aide de Workbench, voir [Prise en main de la conception de processus](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html).
+>Applications/FormsApplication n’existe pas par défaut. Pour suivre les démarrages rapides, créez cette application à l’aide de Workbench. Pour plus d’informations sur la création d’une application à l’aide de Workbench, voir [Prise en main de la conception de processus](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html).
 
-## Début rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
 L’exemple de code Java suivant crée un dossier appelé *FormsFolder* à l’emplacement suivant `/Applications/FormsApplication/1.0/`. (Voir [Création de dossiers](/help/forms/developing/aem-forms-repository.md#creating-folders).)
 
@@ -169,9 +168,9 @@ L’exemple de code Java suivant crée un dossier appelé *FormsFolder* à l’e
  }
 ```
 
-## Début rapide (mode SOAP) : Écriture d&#39;une ressource à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Écriture d’une ressource à l’aide de l’API Java {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
 
-L’exemple de code Java suivant écrit une ressource appelée *loan.xdp* dans le référentiel. La ressource est ajoutée à l&#39;emplacement `/Applications/FormsApplication/1.0/FormsFolder`. (Voir [Writing Resources](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+L’exemple de code Java suivant écrit une ressource appelée *loan.xdp* dans le référentiel. La ressource est ajoutée à l’emplacement `/Applications/FormsApplication/1.0/FormsFolder` . (Voir [Écriture de ressources](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 ```as3
  /* 
@@ -297,9 +296,9 @@ L’exemple de code Java suivant écrit une ressource appelée *loan.xdp* dans l
  
 ```
 
-## Début rapide (mode SOAP) : Liste des ressources à l’aide de l’API Java {#quick-start-soap-mode-listing-resources-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Liste des ressources à l’aide de l’API Java {#quick-start-soap-mode-listing-resources-using-the-java-api}
 
-L&#39;exemple de code Java suivant liste les ressources situées dans `Applications/FormsApplication/1.0/FormsFolder`. (Voir [Liste des ressources](/help/forms/developing/aem-forms-repository.md#listing-resources).)
+L’exemple de code Java suivant répertorie les ressources qui se trouvent dans `Applications/FormsApplication/1.0/FormsFolder`. (Voir [Liste des ressources](/help/forms/developing/aem-forms-repository.md#listing-resources).)
 
 ```as3
  /* 
@@ -396,9 +395,9 @@ L&#39;exemple de code Java suivant liste les ressources situées dans `Applicati
  }
 ```
 
-## Début rapide (mode SOAP) : Lecture d&#39;une ressource à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Lecture d’une ressource à l’aide de l’API Java {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
 
-L&#39;exemple de code Java suivant lit une ressource appelée *Loan.xdp* du référentiel. Le fichier XDP se trouve dans `/Applications/FormsApplication/1.0/FormsFolder/`. (Voir [Reading Resources](/help/forms/developing/aem-forms-repository.md#reading-resources).)
+L’exemple de code Java suivant lit une ressource appelée *Loan.xdp* du référentiel. Le fichier XDP se trouve dans `/Applications/FormsApplication/1.0/FormsFolder/`. (Voir [Ressources de lecture](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
 ```as3
  /* 
@@ -497,9 +496,9 @@ L&#39;exemple de code Java suivant lit une ressource appelée *Loan.xdp* du réf
  
 ```
 
-## Début rapide (mode SOAP) : Mise à jour d&#39;une ressource à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Mise à jour d’une ressource à l’aide de l’API Java {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
 
-L&#39;exemple de code Java suivant est mis à jour `/Applications/FormsApplication/1.0/FormsFolder` en modifiant sa description. (Voir [Mise à jour des ressources](/help/forms/developing/aem-forms-repository.md#updating-resources).)
+L’exemple de code Java suivant met à jour `/Applications/FormsApplication/1.0/FormsFolder` en modifiant sa description. (Voir [Mise à jour des ressources](/help/forms/developing/aem-forms-repository.md#updating-resources).)
 
 ```as3
  /* 
@@ -609,9 +608,9 @@ L&#39;exemple de code Java suivant est mis à jour `/Applications/FormsApplicati
  
 ```
 
-## Début rapide (mode SOAP) : Recherche de ressources à l’aide de l’API Java {#quick-start-soap-mode-searching-for-resources-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Recherche de ressources à l’aide de l’API Java {#quick-start-soap-mode-searching-for-resources-using-the-java-api}
 
-L&#39;exemple de code Java suivant recherche Loan.xdp dans `Applications/FormsApplication/1.0/FormsFolder`. (Voir [Recherche de ressources](/help/forms/developing/aem-forms-repository.md#searching-for-resources).)
+L’exemple de code Java suivant recherche Loan.xdp dans `Applications/FormsApplication/1.0/FormsFolder`. (Voir [Recherche de ressources](/help/forms/developing/aem-forms-repository.md#searching-for-resources).)
 
 ```as3
  /* 
@@ -733,7 +732,7 @@ L&#39;exemple de code Java suivant recherche Loan.xdp dans `Applications/FormsAp
  }
 ```
 
-## Début rapide (mode SOAP) : Création de relations entre les ressources à l’aide de l’API Java {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Création de relations entre les ressources à l’aide de l’API Java {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
 L’exemple de code Java suivant crée une relation entre deux ressources dans le référentiel AEM Forms. (Voir [Création de relations de ressources](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships).)
 
@@ -874,9 +873,9 @@ L’exemple de code Java suivant crée une relation entre deux ressources dans l
  }
 ```
 
-## Début rapide (mode SOAP) : Verrouillage d&#39;une ressource à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-locking-a-resource-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Verrouillage d’une ressource à l’aide de l’API Java {#quick-start-soap-mode-locking-a-resource-using-the-java-api}
 
-L’exemple de code Java suivant verrouille /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp. (Voir [Verrouillage des ressources](/help/forms/developing/aem-forms-repository.md#locking-resources).)
+L’exemple de code Java suivant verrouille /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp. (Voir [Verrouillage de ressources](/help/forms/developing/aem-forms-repository.md#locking-resources).)
 
 ```as3
  /* 
@@ -985,9 +984,9 @@ L’exemple de code Java suivant verrouille /Applications/FormsApplication/1.0/F
  }
 ```
 
-## Début rapide (mode SOAP) : Gestion des listes de contrôle d&#39;accès à l’aide de l’API Java {#quick-start-soap-mode-managing-access-control-lists-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Gestion des listes de contrôle d’accès à l’aide de l’API Java {#quick-start-soap-mode-managing-access-control-lists-using-the-java-api}
 
-L&#39;exemple de code Java suivant lit et crée des listes de contrôle d&#39;accès (ACL) dans le référentiel.
+L’exemple de code Java suivant lit et crée des listes de contrôle d’accès (ACL) dans le référentiel.
 
 ```as3
  /* 
@@ -1100,9 +1099,9 @@ L&#39;exemple de code Java suivant lit et crée des listes de contrôle d&#39;ac
  }
 ```
 
-## Début rapide (mode SOAP) : Suppression d&#39;une ressource à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Suppression d’une ressource à l’aide de l’API Java {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}
 
-L&#39;exemple de code Java suivant supprime Loan.xdp de `Applications/FormsApplication/1.0/FormsFolder`. Si ce fichier XDP n’est pas situé dans ce dossier, une exception est générée. (Voir [Suppression de ressources](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
+L’exemple de code Java suivant supprime Loan.xdp de `Applications/FormsApplication/1.0/FormsFolder`. Si ce fichier XDP ne se trouve pas dans ce dossier, une exception est générée. (Voir [Suppression de ressources](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
 
 ```as3
  /* 
@@ -1214,4 +1213,3 @@ L&#39;exemple de code Java suivant supprime Loan.xdp de `Applications/FormsAppli
   
  
 ```
-
