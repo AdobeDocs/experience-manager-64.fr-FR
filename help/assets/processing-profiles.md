@@ -5,18 +5,17 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-feature: Workflow,Asset Management,Renditions
+feature: Workflow,Gestion des ressources,Rendus
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1382'
 ht-degree: 95%
 
 ---
 
-
-# A propos des profils de traitement des métadonnées, des images et des vidéos {#profiles-for-processing-metadata-images-and-videos}
+# Profils de traitement des métadonnées, des images et des vidéos {#profiles-for-processing-metadata-images-and-videos}
 
 Un profil est une recette indiquant les options à appliquer aux ressources qui sont chargées dans un dossier. Par exemple, vous pouvez spécifier le profil de métadonnées et le profil de codage vidéo à appliquer aux ressources vidéo que vous chargez, ou le profil d’image à appliquer aux ressources image afin de les recadrer correctement.
 
@@ -30,7 +29,7 @@ Vous devez disposer de droits d’administrateur pour créer, modifier et suppri
 
 Une fois votre profil vidéo, de métadonnées ou d’image créé, vous pouvez l’affecter à un ou plusieurs dossiers utilisés comme destination des ressources qui viennent d’être chargées.
 
-Un élément à connaître lorsque l’on utilise les profils dans AEM Assets est qu’ils sont attribués aux dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Aussi, la façon dont vous nommez les fichiers ou les dossiers, organisez les sous-dossiers ou gérez les fichiers au sein des dossiers a un impact significatif sur le traitement des ressources par les profils. Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohérentes et adéquates et à une bonne pratique en matière de métadonnées, vous pouvez tirer pleinement parti de votre collection de ressources numériques et vous assurer que les bons fichiers sont traités par le profil adéquat. Pour un exemple, voir [organisation des fichiers à l’aide de dossiers](organize-assets.md#organize-using-folders).
+Un élément à connaître lorsque l’on utilise les profils dans AEM Assets est qu’ils sont attribués aux dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Aussi, la façon dont vous nommez les fichiers ou les dossiers, organisez les sous-dossiers ou gérez les fichiers au sein des dossiers a un impact significatif sur le traitement des ressources par les profils. Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohérentes et adéquates et à une bonne pratique en matière de métadonnées, vous pouvez tirer pleinement parti de votre collection de ressources numériques et vous assurer que les bons fichiers sont traités par le profil adéquat. Pour obtenir un exemple, voir [organisation des ressources à l’aide de dossiers](organize-assets.md#organize-using-folders).
 
 >[!NOTE]
 >
@@ -42,7 +41,7 @@ Un élément à connaître lorsque l’on utilise les profils dans AEM Assets es
 
 >[!NOTE]
 >
->S’applique à *Dynamic Media - mode Scene7* uniquement dans AEM 6.4.7.0 ou version ultérieure.
+>S’applique à *Dynamic Media - mode Scene7* uniquement dans AEM version 6.4.7.0 ou ultérieure.
 
 Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil de traitement existant que vous avez modifié ultérieurement.
 
@@ -104,7 +103,7 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
    ![Composant Transfert par lots Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Dans la boîte de dialogue **[!UICONTROL Transfert par lot vers les propriétés Scene7-Step]**, définissez les éléments suivants :
+1. Dans la boîte de dialogue **[!UICONTROL Transfert par lots vers les propriétés Scene7-Step]**, définissez les éléments suivants :
    * Dans les zones de texte **[!UICONTROL Titre]** et **[!UICONTROL Description]**, saisissez un titre et une description pour la tâche, le cas échéant.
    * Sélectionnez **[!UICONTROL Avance du gestionnaire]** si votre gestionnaire doit passer à l’étape suivante.
    * Dans le champ **[!UICONTROL Délai d’expiration]**, saisissez le délai d’expiration du processus externe (en secondes).
@@ -116,7 +115,7 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
 1. Dans le coin supérieur droit de la boîte de dialogue **[!UICONTROL Transfert par lots vers Scene7 – Propriétés des étapes]**, appuyez sur **[!UICONTROL Terminé]**.
 
-1. Dans le coin supérieur droit de la page du modèle de workflow Scene7 : Retraiter les ressources, appuyez sur **[!UICONTROL Synchroniser]**. Lorsque **[!UICONTROL Synchronisé]** s’affiche, le modèle d’exécution du flux de travail est correctement synchronisé et prêt à retraiter la ressource dans un dossier.
+1. Dans le coin supérieur droit de la page du modèle de workflow Scene7 : Retraiter les ressources, appuyez sur **[!UICONTROL Synchroniser]**. Lorsque **[!UICONTROL Synchronisé]** s’affiche, le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter la ressource dans un dossier.
 
    ![Synchronisation du modèle de workflow](/help/assets/assets-dm/reprocess-assets1.png)
 
