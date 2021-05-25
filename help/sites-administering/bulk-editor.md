@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 4da555b4-7fb2-4d55-b29f-8bd21f474c1a
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 61d85393-2764-447d-afcc-3af1d99e8dbb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 79%
 
 ---
-
 
 # Éditeur en bloc{#the-bulk-editor}
 
@@ -61,7 +60,7 @@ L’éditeur en bloc permet ce qui suit :
 
 * [d’importer le contenu d’une feuille de calcul de données séparées par des tabulations.](#importing-content)
 
-### Recherche et modification du contenu  {#searching-and-editing-content}
+### Recherche et modification du contenu {#searching-and-editing-content}
 
 Pour utiliser l’éditeur en bloc pour modifier simultanément différents éléments, procédez comme suit :
 
@@ -72,28 +71,28 @@ Pour utiliser l’éditeur en bloc pour modifier simultanément différents él�
 <table> 
  <tbody> 
   <tr> 
-   <td>Field (Champ)</td> 
+   <td>Champ</td> 
    <td>Propriété</td> 
   </tr> 
   <tr> 
    <td>Chemin racine</td> 
-   <td>Indique le chemin racine recherché par l’éditeur en bloc.<br /> Par exemple, <code>/content/geometrixx/en</code>. L’éditeur en bloc effectue une recherche dans tous les nœuds enfants.</td> 
+   <td>Indique le chemin racine que recherche l’éditeur en bloc.<br /> Par exemple, <code>/content/geometrixx/en</code>. L’éditeur en bloc effectue une recherche dans tous les nœuds enfants.</td> 
   </tr> 
   <tr> 
    <td>Paramètres de requête</td> 
-   <td>A l’aide des paramètres GQL, entrez la chaîne de recherche que l’éditeur en vrac doit rechercher dans le référentiel ; par exemple, <code>type:Page</code> recherche toutes les pages du chemin racine, <code>text:professional</code> recherche toutes les pages qui contiennent le mot "professionnel" et <code>"jcr:title":English</code> recherche toutes les pages dont le titre est "anglais". Vous pouvez rechercher uniquement des chaînes.</td> 
+   <td>À l’aide des paramètres GQL, saisissez la chaîne de recherche que l’éditeur en masse doit rechercher dans le référentiel. par exemple, <code>type:Page</code> recherche toutes les pages du chemin racine, <code>text:professional</code> recherche toutes les pages qui contiennent le mot "professionnel" et <code>"jcr:title":English</code> recherche toutes les pages dont le titre est "anglais". Vous pouvez rechercher uniquement des chaînes.</td> 
   </tr> 
   <tr> 
-   <td>Case à cocher Mode de contenu</td> 
-   <td>Activez cette case à cocher pour lire les propriétés dans le sous-noeud <code>jcr:content</code> des résultats de la recherche, le cas échéant. À utiliser uniquement pour des pages. Les noms de propriété sont précédés du préfixe <code>"jcr:content/"</code></td> 
+   <td>Case à cocher Mode contenu</td> 
+   <td>Cochez cette case pour lire les propriétés dans le sous-noeud <code>jcr:content</code> des résultats de la recherche, le cas échéant. À utiliser uniquement pour des pages. Les noms de propriété comportent le préfixe <code>"jcr:content/"</code></td> 
   </tr> 
   <tr> 
    <td>Propriétés / Colonnes</td> 
-   <td>Cochez les cases correspondant aux propriétés que l’éditeur en vrac doit renvoyer. Les propriétés que vous sélectionnez sont les titres de colonne dans le volet de résultats. Par défaut, le chemin d’accès au nœud est affiché dans les résultats.</td> 
+   <td>Cochez les cases correspondant aux propriétés que l’éditeur en bloc doit renvoyer. Les propriétés que vous sélectionnez sont les titres de colonne dans le volet de résultats. Par défaut, le chemin d’accès au nœud est affiché dans les résultats.</td> 
   </tr> 
   <tr> 
    <td>Propriétés / Colonnes personnalisées</td> 
-   <td>Entrez toute autre propriété qui n'est pas répertoriée dans le champ <strong>Propriétés/Colonnes</strong>. Ces propriétés personnalisées s’affichent dans le volet de résultats. Vous pouvez ajouter plusieurs propriétés en les séparant par des virgules. <i>Remarque : </i> si vous ajoutez une propriété personnalisée qui n’existe pas encore, AEM WCM affiche une cellule vide. Lorsque vous modifiez la cellule vide et que vous l’enregistrez, la propriété est ajoutée au nœud. La propriété qui vient d’être créée doit respecter les contraintes de type de nœud et les espaces de noms des propriétés.</td> 
+   <td>Saisissez d’autres propriétés qui ne sont pas répertoriées dans le champ <strong>Propriétés/Colonnes</strong>. Ces propriétés personnalisées s’affichent dans le volet de résultats. Vous pouvez ajouter plusieurs propriétés en les séparant par des virgules. <i>Remarque :</i> si vous ajoutez une propriété personnalisée qui n’existe pas encore, AEM WCM affiche une cellule vide. Lorsque vous modifiez la cellule vide et que vous l’enregistrez, la propriété est ajoutée au nœud. La propriété qui vient d’être créée doit respecter les contraintes de type de nœud et les espaces de noms des propriétés.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -120,10 +119,10 @@ Par exemple :
 
 #### Paramètres de requête GQL supplémentaires {#additional-gql-query-parameters}
 
-* **path:** uniquement les noeuds de recherche sous ce chemin. Si vous spécifiez plusieurs termes avec un préfixe de chemin d’accès, seul le dernier terme sera pris en compte.
-* **type : renvoie** uniquement les noeuds des types de noeud donnés. Cela inclut le type principal, ainsi que les types Mixin. Vous pouvez spécifier plusieurs types de nœuds séparés par des virgules. GQL renvoie les nœuds correspondant à l’un des types spécifiés.
-* **order :** trier le résultat selon les propriétés données. Vous pouvez spécifier plusieurs noms de propriété séparés par des virgules. Pour contrôler le résultat dans l’ordre descendant, ajoutez simplement le préfixe « - » (moins) au nom de la propriété. Par exemple : order:-name. Si vous utilisez un signe « + » (plus), le résultat est renvoyé dans l’ordre ascendant, qui est également le paramètre par défaut.
-* **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple : limit:10.20 Veuillez noter que l&#39;intervalle est de base zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier un intervalle ouvert : limit:10.. ou limite :..20 Si les points sont omis et qu&#39;une seule valeur est spécifiée, GQL renvoie au maximum ce nombre de résultats. Par exemple, limit:10 (renverra les 10 premiers résultats)
+* **path :** recherchez uniquement les noeuds sous ce chemin d’accès. Si vous spécifiez plusieurs termes avec un préfixe de chemin d’accès, seul le dernier terme sera pris en compte.
+* **type :** renvoie uniquement les noeuds des types de noeuds donnés. Cela inclut le type principal, ainsi que les types Mixin. Vous pouvez spécifier plusieurs types de nœuds séparés par des virgules. GQL renvoie les nœuds correspondant à l’un des types spécifiés.
+* **order :** ordonnez le résultat selon les propriétés données. Vous pouvez spécifier plusieurs noms de propriété séparés par des virgules. Pour contrôler le résultat dans l’ordre descendant, ajoutez simplement le préfixe « - » (moins) au nom de la propriété. Par exemple : order:-name. Si vous utilisez un signe « + » (plus), le résultat est renvoyé dans l’ordre ascendant, qui est également le paramètre par défaut.
+* **limit :**  limite le nombre de résultats à l’aide d’un intervalle. Par exemple : limit:10..20 Notez que l’intervalle est basé sur zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier un intervalle ouvert : limit:10.. ou limit:..20 Si les points sont omis et qu’une seule valeur est spécifiée, GQL renverra au plus ce nombre de résultats. Par exemple, limit:10 (renverra les 10 premiers résultats)
 
 ### Exportation de contenu {#exporting-content}
 
@@ -156,10 +155,9 @@ Par défaut, la fonctionnalité d’importation est masquée lorsque vous ouvrez
 Pour importer du contenu, procédez comme suit :
 
 1. Ouvrez l’éditeur en bloc.
-1. Ajouter `?hib=false` à l’URL, par exemple :
+1. Ajoutez `?hib=false` à l’URL, par exemple :
 
    `http://localhost:4502/etc/importers/bulkeditor.html?hib=false`
 
 1. Cliquez sur **Importer**.
-1. Sélectionnez le fichier `.tsv`. Les données sont importées dans le référentiel.
-
+1. Sélectionnez le fichier `.tsv` . Les données sont importées dans le référentiel.
