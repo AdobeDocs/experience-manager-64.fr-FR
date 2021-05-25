@@ -9,20 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 8c205d1d-d17e-4810-8ef9-a8bdcd9aa1c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 95%
 
 ---
 
-
 # Approvisionnement juste à temps {#just-in-time-user-provisioning}
 
 AEM Forms prend en charge l’approvisionnement juste à temps des utilisateurs n’existant pas encore dans Gestion des utilisateurs. Grâce à la fonction d’approvisionnement juste à temps, les utilisateurs sont automatiquement ajoutés à User Management une fois leurs informations d’identification authentifiées. En outre, les rôles et les groupes appropriés sont affectés de manière dynamique au nouvel utilisateur.
 
-## Fonction de l’approvisonnement juste à temps  {#need-for-just-in-time-user-provisioning}
+## Fonction de l’approvisonnement juste à temps {#need-for-just-in-time-user-provisioning}
 
 Voici comment l’authentification traditionnelle fonctionne :
 
@@ -32,7 +31,7 @@ Voici comment l’authentification traditionnelle fonctionne :
 
    **Existe :** si l’utilisateur est en cours et déverrouillé, User Management renvoie la réussite de l’authentification. Toutefois, si l’utilisateur n’est pas en cours ou s’il est verrouillé, User Management signale un échec d’authentification.
 
-   **N’existe pas :** User Management renvoie un échec d’authentification.
+   **N’existe pas :** User Management renvoie l’échec de l’authentification.
 
    **Non valide :** User Management renvoie l’échec d’authentification.
 
@@ -112,4 +111,3 @@ Supposons qu’un utilisateur essaie de se connecter à AEM Forms et qu’un fou
 >[!NOTE]
 >
 >la fonction d’approvisionnement juste à temps comprend une mise en œuvre par défaut de `IdentityCreator` que vous pouvez utiliser pour créer des utilisateurs de manière dynamique. Les utilisateurs sont créés avec les informations associées aux annuaires dans ce domaine.
-
