@@ -7,14 +7,13 @@ uuid: 65d4233c-8dad-4e5e-8e39-22eb4f145adc
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: cef8f597-7935-4d98-aacf-9981470ab620
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 92ad5d8b-fc8c-4502-ab62-d27eb9784b65
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 75%
 
 ---
-
 
 # Présentation de la loi sur l’accès à l’information pour le site de référence We.Gov {#we-gov-reference-site-foia-walkthrough}
 
@@ -22,7 +21,7 @@ ht-degree: 75%
 
 Installez le site de référence We.Gov comme décrit dans [Installation et configuration des sites de référence d’AEM Forms](/help/forms/using/setup-reference-sites.md).
 
-## Scénario de la loi sur l’accès à l’information pour le site de référence  {#reference-site-freedom-of-information-act-scenario}
+## Scénario de la loi sur l’accès à l’information pour le site de référence {#reference-site-freedom-of-information-act-scenario}
 
 We.Gov est un organisme dépendant de l’État qui permet aux parents adoptifs de s’inscrire pour obtenir une allocation familiale s’ils ont adopté un enfant. We.Gov permet également aux parents de demander des informations auprès des ministères suivants en vertu de la loi sur l’accès à l’information :
 
@@ -32,7 +31,7 @@ We.Gov est un organisme dépendant de l’État qui permet aux parents adoptifs 
 * Département de la Marine
 * Agence de protection de l’environnement
 
-Pour plus d&#39;informations sur la loi sur l&#39;accès à l&#39;information, voir [www.foia.gov](https://www.foia.gov).
+Pour plus d’informations sur la loi sur l’accès à l’information, voir [www.foia.gov](https://www.foia.gov).
 
 Le scénario implique les personnages suivants :
 
@@ -42,22 +41,22 @@ Le scénario implique les personnages suivants :
 
 ## Sarah lance la demande d’informations dans le cadre de la loi sur l’accès à l’information  {#sarah-initiates-request-for-information-under-foia}
 
-En vertu de la loi sur la liberté d&#39;information, Sarah demande une copie des dossiers de l&#39;Administration pour les enfants et les familles pour les années 2013 à 2016. Sarah envoie cette demande au bureau de la stratégie des informations du Ministère de la Justice et indique également qu’elle est prête à payer jusqu’à 100 dollars américains pour les frais d’impression et d’envoi.
+En vertu de la loi sur l’accès à l’information, Sarah demande une copie des registres des cas de l’Administration pour les enfants et les familles pour les années 2013 à 2016. Sarah envoie cette demande au bureau de la stratégie des informations du Ministère de la Justice et indique également qu’elle est prête à payer jusqu’à 100 dollars américains pour les frais d’impression et d’envoi.
 
 ### Fonctionnement {#how-it-works}
 
 ### Démonstration {#see-it-yourself}
 
-Dans votre navigateur, ouvrez `https://<hostname>:<PublishPort>/wegov`. Sur le site We.Gov, appuyez sur Applications> Toutes les applications. Dans la page Toutes les applications, appuyez sur Appliquer sous Demande de demande de FOIA.
+Dans votre navigateur, ouvrez `https://<hostname>:<PublishPort>/wegov`. Sur le site We.Gov, appuyez sur Applications> Toutes les applications. Dans la page Toutes les applications, appuyez sur Appliquer sous Demande d’accès à l’information (FOIA Request).
 
 ## Sarah commence sa demande d’informations dans le cadre de la loi sur l’accès à l’information {#sarah-starts-her-application-for-information-under-foia}
 
-Sarah clique sur **Appliquer** et, dans la page Formulaire de demande de la loi sur l’accès à l’information, Sarah saisit les informations suivantes :
+Sarah clique sur **Appliquer** et dans la page Formulaire de demande de la loi sur l’accès à l’information, Sarah saisit les informations suivantes :
 
 * **Agence :** Sarah indique l’agence à laquelle la demande a été adressée en tant que Ministère de la Justice - Bureau de la politique de l’information.
 
 * **Versera jusqu’à** : Sarah indique qu’elle est prête à payer jusqu’à 100 dollars américains pour les frais d’impression et d’envoi.
-* **Décrivez la demande en détail** : Sarah indique &quot;Demande de copie des dossiers de l’Administration pour les enfants et les familles pour les exercices 2013 à 2016&quot;.
+* **Décrivez la requête en détail** : Sarah indique &quot;Demande de copie des registres des cas de l’Administration pour les enfants et les familles pour les années fiscales 2013 à 2016&quot;.
 
 ![Demande de copie des registres des cas de l’Administration pour les enfants et les familles pour les années 2013 à 2016](assets/sarahfiosform.png)
 
@@ -79,13 +78,13 @@ Lorsque Sarah remplit et envoie la demande dans le cadre de la loi sur l’accè
 
 ### Démonstration {#see-it-yourself-1}
 
-Vous pouvez accéder à la boîte de réception AEM à l’adresse https://&quot;a0/>hostname ***:&quot;a2/>PublishPort&lt;a3/&quot;/content/we-finance/global/en/login.html?resource=/aem/inbox.html.********* Connectez-vous à la boîte de réception AEM, en utilisant jjacobs/password comme nom d’utilisateur/mot de passe pour John Jacobs, puis consultez l’application FOIA. Pour plus d’informations sur l’utilisation de AEM boîte de réception pour les tâches de processus centrées sur les formulaires, voir [Gestion des applications et tâches Forms dans AEM Boîte de réception](/help/forms/using/manage-applications-inbox.md).
+Vous pouvez accéder à la boîte de réception d’AEM à l’adresse https://&quot;a0/>hostname ***:&quot;a2/>PublishPort&lt;a3/&quot;/content/we-finance/global/en/login.html?resource=/aem/inbox.html.********* Connectez-vous à la boîte de réception d’AEM, à l’aide de jjacobs/password comme nom d’utilisateur/mot de passe pour John Jacobs, et consultez l’application FOIA. Pour plus d’informations sur l’utilisation de la boîte de réception AEM pour les tâches de flux de travail centrées sur les formulaires, voir [Gestion des applications et des tâches Forms dans AEM boîte de réception](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
 John Jacobs peut voir, approuver ou refuser la demande à partir du tableau de bord des demandes. John Jacobs sélectionne et ouvre les détails de la demande et, après avoir examiné la demande, l’approuve.
 
-![johnjacobstaskdetail-1](assets/johnjacobstaskdetail-1.png)
+![johnjacobaskdetail-1](assets/johnjacobstaskdetail-1.png)
 
 ### <strong>Sarah reçoit un courrier électronique d’accusé de réception</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
@@ -105,15 +104,14 @@ Lorsque John Jacobs approuve la demande dans le cadre de la loi sur l’accès �
 
 ### Jugez-en par vous-même {#see-for-yourself}
 
-Vous pouvez accéder à la boîte de réception AEM à l’adresse https://&quot;a0/>hostname ***:&quot;a2/>PublishPort&lt;a3/&quot;/content/we-finance/global/en/login.html?resource=/aem/inbox.html.********* Connectez-vous à la boîte de réception AEM à l’aide de grios/password en tant que nom d’utilisateur/mot de passe pour Gloria Rios et consultez la demande FOIS.
+Vous pouvez accéder à la boîte de réception d’AEM à l’adresse https://&quot;a0/>hostname ***:&quot;a2/>PublishPort&lt;a3/&quot;/content/we-finance/global/en/login.html?resource=/aem/inbox.html.********* Connectez-vous à la boîte de réception d’AEM à l’aide de grios/password comme nom d’utilisateur/mot de passe pour Gloria Rios, puis consultez la demande FOIS.
 
 Gloria ouvre la demande et examine les détails de la demande dans le cadre de la loi sur l’accès à l’information. Après avoir consulté les détails de la demande et vérifié la possibilité de fournir les documents requis, Gloria approuve la demande.
 
-![gloriosapprouve](assets/gloriariosapproves.png)
+![gloriariosapprove](assets/gloriariosapproves.png)
 
 ## Sarah reçoit la notification que sa demande est approuvée {#sarah-receives-notification-that-her-request-is-approved}
 
 Après que Gloria a approuvé la demande dans le cadre de la loi sur l’accès à l’information, Sarah reçoit un courriel l’informant que sa demande est approuvée. Le courrier électronique comprend également des informations sur le délai d’attente attendu pour la fourniture du document et des coordonnées pour le suivi de la demande.
 
-![sarahroseemailapproval](assets/sarahroseemailapproval.png)
-
+![sarahroseemailvalidation](assets/sarahroseemailapproval.png)
