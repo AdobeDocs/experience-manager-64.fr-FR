@@ -1,22 +1,21 @@
 ---
 title: '"Didacticiel : créer un modèle de données de formulaire "'
 seo-title: Didacticiel de création d’un modèle de données de formulaire
-description: Le module d’intégration des données AEM Forms vous permet de créer un modèle de données de formulaire à partir de sources de données dorsales disparates, telles que le profil d’utilisateur AEM, les services Web RESTful, les services Web SOAP, les services OData et les bases de données relationnelles. Découvrez comment configurer la base de données MySQL en tant que source de données, créer, configurer et tester un modèle de données de formulaire.
-seo-description: Le module d’intégration des données AEM Forms vous permet de créer un modèle de données de formulaire à partir de sources de données dorsales disparates, telles que le profil d’utilisateur AEM, les services Web RESTful, les services Web SOAP, les services OData et les bases de données relationnelles. Découvrez comment configurer la base de données MySQL en tant que source de données, créer, configurer et tester un modèle de données de formulaire.
+description: Le module d’intégration des données AEM Forms vous permet de créer un modèle de données de formulaire à partir de sources de données principales disparates, telles que le profil utilisateur AEM, les services Web RESTful, les services Web SOAP, les services OData et les bases de données relationnelles. Découvrez comment configurer la base de données MySQL comme source de données, créer, configurer et tester un modèle de données de formulaire.
+seo-description: Le module d’intégration des données AEM Forms vous permet de créer un modèle de données de formulaire à partir de sources de données principales disparates, telles que le profil utilisateur AEM, les services Web RESTful, les services Web SOAP, les services OData et les bases de données relationnelles. Découvrez comment configurer la base de données MySQL comme source de données, créer, configurer et tester un modèle de données de formulaire.
 page-status-flag: de-activated
 uuid: 81d40278-4df9-4b61-93ad-eae2fce0a35c
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 31e97723-d637-4a18-999d-36e00fbd031a
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formulaires adaptatifs
+exl-id: 2f83e853-2468-4ea2-85f6-8cf7fe9de6a8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1546'
 ht-degree: 72%
 
 ---
-
 
 # Didacticiel : créer un modèle de données de formulaire  {#tutorial-create-form-data-model}
 
@@ -26,7 +25,7 @@ Ce didacticiel est une étape de la série [Création de votre premier formulair
 
 ## À propos du didacticiel {#about-the-tutorial}
 
-Le module d’intégration des données AEM Forms vous permet de créer un modèle de données de formulaire à partir de sources de données dorsales disparates, telles que le profil d’utilisateur AEM, les services Web RESTful, les services Web SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet du modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
+Le module d’intégration des données AEM Forms vous permet de créer un modèle de données de formulaire à partir de sources de données principales disparates, telles que le profil utilisateur AEM, les services Web RESTful, les services Web SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet du modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
 
 Pour plus d’informations sur l’intégration des données de formulaire et sur le modèle de données du formulaire, voir [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
 
@@ -41,15 +40,15 @@ Le modèle de données de formulaire se présentera comme ceci :
 
 ![form-data-model_l](assets/form-data-model_l.png)
 
-**A.Sources de données** configurées  **B.** schémas de source de données  **C.** Services disponibles  **D.** Objets de modèle de données E.Services configurés ****
+**A.** Sources de données configurées  **B.**  Schémas de sources de données  **C.** Services disponibles  **D.** Objets de modèle de données  **E.** Services configurés
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Avant de commencer, vérifiez que vous disposez des éléments suivants :
 
 * Base de données MySQL avec des exemples de données comme indiqué dans la section Conditions préalables de [Création de votre premier formulaire adaptatif](/help/forms/using/create-your-first-adaptive-form.md)
-* Groupe OSGi pour le pilote JDBC MySQL, comme expliqué dans la section [Liaison du pilote de base de données JDBC](/help/sites-developing/jdbc.md#bundling-the-jdbc-database-driver)
-* Formulaire adaptatif comme expliqué dans le premier didacticiel [Créer un formulaire adaptatif](/help/forms/using/create-adaptive-form.md)
+* Groupe OSGi pour le pilote JDBC MySQL, comme expliqué dans la section [Regroupement du pilote de base de données JDBC](/help/sites-developing/jdbc.md#bundling-the-jdbc-database-driver)
+* Formulaire adaptatif comme expliqué dans le premier tutoriel [Créer un formulaire adaptatif](/help/forms/using/create-adaptive-form.md)
 
 ## Étape 1 : Configurer la base de données MySQL comme source de données {#config-database}
 
@@ -61,9 +60,9 @@ Procédez comme suit pour configurer votre base de données MySQL :
 
    1. Connectez-vous à l’instance d’auteur AEM Forms en tant qu’administrateur et accédez aux bundles de la console web d’AEM. L’URL par défaut est [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 
-   1. Appuyez sur **Installer/Mettre à jour**. Une boîte de dialogue **Télécharger/installer les bundles** s’affiche.
+   1. Appuyez sur **Install/Update**. Une boîte de dialogue **Télécharger/installer les bundles** s’affiche.
 
-   1. Appuyez sur **Choisir un fichier** pour rechercher et sélectionner le bundle OSGi du pilote JDBC MySQL. Sélectionnez **Groupe de Débuts** et **Actualiser les packages**, puis appuyez sur **Installer ou Mettre à jour**. Assurez-vous que le pilote JDBC d’Oracle Corporation pour MySQL est actif. Le pilote est installé.
+   1. Appuyez sur **Choisir un fichier** pour rechercher et sélectionner le bundle OSGi du pilote JDBC MySQL. Sélectionnez **Démarrer le bundle** et **Actualiser les packages**, puis appuyez sur **Installer ou Mettre à jour**. Assurez-vous que le pilote JDBC d’Oracle Corporation pour MySQL est actif. Le pilote est installé.
 
 1. Configurer la base de données MySQL comme source de données :
 
@@ -74,7 +73,7 @@ Procédez comme suit pour configurer votre base de données MySQL :
       * **Nom de la source de données :** vous pouvez spécifier un nom. Spécifiez par exemple **WeRetailMySQL**.
       * **Nom de la propriété de service de source de données** : spécifiez le nom de la propriété de service contenant le nom de la source de données. Il est spécifié lors de l’enregistrement de l’instance de source de données en tant que service OSGi. Par exemple, **datasource.name**.
       * **Classe de pilote JDBC** : spécifiez le nom de la classe Java du pilote JDBC. Pour la base de données MySQL, spécifiez **com.mysql.jdbc.Driver**.
-      * **URI de connexion JDBC** : spécifiez l’URL de connexion de la base de données. Pour la base de données MySQL s’exécutant sur le port 3306 et le schéma weretail, l’URL est : `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **URI de connexion JDBC** : spécifiez l’URL de connexion de la base de données. Pour la base de données MySQL s’exécutant sur le port 3306 et le schéma weretail, l’URL est la suivante : `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **Nom d’utilisateur :** nom d’utilisateur de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
       * **Mot de passe :** mot de passe de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
       * **Test lors de l’emprunt :** activez l’option **Test lors de l’emprunt.**
@@ -82,10 +81,10 @@ Procédez comme suit pour configurer votre base de données MySQL :
       * **Requête de validation :** spécifiez une requête SQL SELECT pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. Par exemple, **sélectionnez &amp;ast; de customerdetails**.
       * **Isolation de transaction** : définissez la valeur sur **READ_COMMITTED**.
 
-      Laissez les autres propriétés avec les [valeurs](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) par défaut et appuyez sur **Enregistrer**.
+      Laissez les autres propriétés avec les [valeurs par défaut](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) et appuyez sur **Enregistrer**.
    Une configuration similaire à la suivante est créée.
 
-   ![relationnel-base-de-données-source-configuration](assets/relational-database-data-source-configuration.png)
+   ![relational-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
 
 ## Étape 2 : Créer un modèle de données de formulaire {#create-fdm}
 
@@ -95,10 +94,10 @@ Procédez comme suit pour créer un modèle de données de formulaire :
 
 1. Dans AEM instance d’auteur, accédez à **Forms** > **Intégration de données** s.
 1. Appuyez sur **Create** (Créer) > **Form Data Model** (Modèle de données de formulaire).
-1. Dans la boîte de dialogue Créer un modèle de données de formulaire, spécifiez un **nom** pour le modèle de données de formulaire. Par exemple, **customer-shipping-billing-details**. Appuyez sur **Next** (Suivant).
+1. Dans la boîte de dialogue Créer un modèle de données de formulaire, spécifiez un **nom** pour le modèle de données de formulaire. Par exemple, **customer-shipping-billing-details**. Appuyez sur **Suivant**.
 1. L’écran Sélectionner la source de données répertorie toutes les sources de données configurées. Sélectionnez la source de données **WeRetailMySQL** et appuyez sur **Créer**.
 
-   ![source de données-sélection](assets/data-source-selection.png)
+   ![data-source-selection](assets/data-source-selection.png)
 
 Le modèle de données de formulaire **customer-shipping-billing-details** est créé.
 
@@ -118,7 +117,7 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Développez l’arborescence de la source de données WeRailMySQL. Sélectionnez les objets et services de modèle de données suivants dans le schéma **weretail** > **customerdetails** pour former le modèle de données :
+1. Développez l’arborescence de la source de données WeRailMySQL. Sélectionnez les objets et services de modèle de données suivants à partir du schéma **weretail** > **customerdetails** pour former le modèle de données :
 
    * **Objets de modèle de données**:
 
@@ -135,11 +134,11 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
 
    Appuyez sur **Ajouter la sélection** pour ajouter des objets et des services de modèle de données sélectionnés au modèle de données de formulaire.
 
-   ![schéma-réseau](assets/weretail-schema.png)
+   ![weretail-schema](assets/weretail-schema.png)
 
    >[!NOTE]
    >
-   >Les services get, update et insert par défaut pour les sources de données JDBC sont fournis prêts à l’emploi avec le modèle de données de formulaire.
+   >Les services get, update et insert par défaut pour les sources de données JDBC sont fournis prêts à l’emploi avec le modèle de données de formulaire .
 
 1. Configurez les services de lecture et d’écriture pour les objets de modèle de données.
 
@@ -156,7 +155,7 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
 
       ![id-arg](assets/id-arg.png)
 
-   1. Appuyez sur **Terminé** pour enregistrer les propriétés de l’objet de modèle de données. Appuyez ensuite sur **Enregistrer** pour enregistrer le modèle de données de formulaire.
+   1. Appuyez sur **Terminé** pour enregistrer les propriétés de l’objet de modèle de données. Ensuite, appuyez sur **Enregistrer** pour enregistrer le modèle de données de formulaire.
 
       Les services **get** et **update** sont ajoutés en tant que services par défaut pour l’objet de modèle de données.
 
@@ -170,17 +169,17 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
       * **Titre** : spécifiez le titre du service. Par exemple : extraire l’adresse d’expédition.
       * **Description** : spécifiez la description contenant le fonctionnement détaillé du service. Par exemple :
 
-         Ce service récupère l’adresse d’expédition et les autres détails du client dans la base de données MySQL.
+         Ce service récupère l’adresse de livraison et les autres détails du client de la base de données MySQL.
 
       * **Objet de modèle de sortie** : sélectionnez le schéma contenant les données du client. Par exemple :
 
-         schéma d&#39;informations personnalisées
+         schéma customerdetail
       * **Revenir au tableau** : désactivez l’option **Revenir au tableau**.
       * **Arguments** : sélectionnez l’argument nommé **ID**.
 
-      Appuyez sur **Done** (Terminé). Le service de récupération des détails des clients de la base de données MySQL est configuré.
+      Appuyez sur **Terminé**. Le service de récupération des détails des clients de la base de données MySQL est configuré.
 
-      ![expédition-récupération-adresse](assets/shiiping-address-retrieval.png)
+      ![shiiping-address-retrieval](assets/shiiping-address-retrieval.png)
 
    1. Sélectionnez le service **update** et appuyez sur **Modifier les propriétés**. La boîte de dialogue Propriétés s’ouvre.
 
@@ -194,14 +193,14 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
 
       * **Objet de modèle d’entrée** : sélectionnez le schéma contenant les données du client. Par exemple :
 
-         schéma d&#39;informations personnalisées
+         schéma customerdetail
 
       * **Type de sortie** : sélectionnez **VALEUR BOOLEENNE**.
       * **Arguments** : sélectionnez l’argument nommé **ID** et **customerdetails**.
 
-      Appuyez sur **Done** (Terminé). Le service **update** permettant de mettre à jour les détails du client dans la base de données MySQL est configuré.
+      Appuyez sur **Terminé**. Le service **update** permettant de mettre à jour les détails du client dans la base de données MySQL est configuré.
 
-      ![envoi-adresse-mise à jour](assets/shiiping-address-update.png)
+      ![shiiping-address-update](assets/shiiping-address-update.png)
 
 
 
@@ -229,5 +228,4 @@ Procédez comme suit pour effectuer le test :
 
    À présent, si vous testez à nouveau le service de lecture de modèle pour l’ID 7107215, il récupérera et affichera les détails du client mis à jour comme indiqué ci-dessous.
 
-   ![read-update](assets/read-updated.png)
-
+   ![read-updated](assets/read-updated.png)
