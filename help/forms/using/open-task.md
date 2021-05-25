@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: c87a35d5-3371-472d-af28-14d3412d6ebe
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 100%
 
 ---
 
-
-# Ouverture d’une tâche  {#opening-a-task}
+# Ouverture d’une tâche {#opening-a-task}
 
 Si l’application AEM Forms se synchronise avec un serveur AEM Forms, vous pouvez travailler avec des tâches qui vous sont assignées. Les tâches sont des étapes du flux de travail défini dans le Workbench ou dans l’éditeur de flux de travail AEM. Par exemple, voir [Conrad obtient la tâche d’évaluation sur le site de référence Geometrixx Gov](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task). Vous pouvez apporter des modifications à une tâche qui vous est actuellement assignée. Toutes les tâches sont disponibles dans l’onglet Tâches. Les tâches enregistrées en tant que brouillons restent dans l’onglet Tâches.
 
