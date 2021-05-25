@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 93f98f7b-7ab8-4d9c-b179-dc99b80ffc91
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: af6c383b-f8fd-442c-8fc5-3cdd40657c6a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 91%
 
 ---
-
 
 # Configuration de composants en mode de conception{#configuring-components-in-design-mode}
 
@@ -29,7 +28,7 @@ D’autres composants sont également disponibles. Vous pouvez utiliser le mode 
 >
 >Soyez prudent lors de la modification de ces composants. Les paramètres de conception font souvent partie intégrante du site web. Ils ne doivent donc être modifiés que par une personne disposant des privilèges (et de l’expérience) appropriés, généralement un administrateur ou un développeur. Pour plus d’informations, reportez-vous à la section [Développement de composants](/help/sites-developing/components.md).
 
-Cela implique en fait d&#39;ajouter, ou de supprimer, les composants autorisés dans le système de paragraphes pour la page. Le système de paragraphes (`parsys`) est un composant composite qui contient tous les autres composants de paragraphes. Il permet aux auteurs d’ajouter des composants de différents types à une page, car il contient tous les autres composants de paragraphes. Chaque type de paragraphe est représenté en tant que composant.
+Cela implique en fait d’ajouter ou de supprimer les composants autorisés dans le système de paragraphes de la page. Le système de paragraphes (`parsys`) est un composant composite qui contient tous les autres composants de paragraphes. Il permet aux auteurs d’ajouter des composants de différents types à une page, car il contient tous les autres composants de paragraphes. Chaque type de paragraphe est représenté en tant que composant.
 
 Par exemple, le contenu d’une page des produits peut contenir un système de paragraphes avec les éléments suivants :
 
@@ -64,7 +63,7 @@ En mode de conception, le sidekick est réduit et vous avez la possibilité de c
 
    ![](do-not-localize/sidekick-collapsed.png)
 
-## Configuration de la conception d’un composant  {#configuring-the-design-of-a-component}
+## Configuration de la conception d’un composant {#configuring-the-design-of-a-component}
 
 En mode de conception, vous pouvez également configurer des attributs pour les différents composants. Chaque composant possède ses propres paramètres. L’exemple suivant illustre le composant **Image** :
 
@@ -74,7 +73,7 @@ En mode de conception, vous pouvez également configurer des attributs pour les 
 
 1. Vous pouvez configurer la conception des composants.
 
-   Par exemple, si vous cliquez sur **Modifier** sur le composant Image (**Conception de l’image**), vous pouvez configurer les paramètres spécifiques au composant :
+   Par exemple, si vous cliquez sur **Modifier** sur le composant Image (**Conception d’image**), vous pouvez configurer les paramètres spécifiques au composant :
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
@@ -83,4 +82,3 @@ En mode de conception, vous pouvez également configurer des attributs pour les 
 1. Le sidekick se réduit en mode de conception. Vous pouvez agrandir le sidekick en cliquant sur la flèche et revenir ainsi au mode Modifier :
 
    ![](do-not-localize/sidekick-collapsed-1.png)
-
