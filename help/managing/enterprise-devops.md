@@ -1,6 +1,6 @@
 ---
-title: Opérations de développement d’entreprise
-seo-title: Opérations de développement d’entreprise
+title: Opérations de développement d’entreprise (DevOps)
+seo-title: Opérations de développement d’entreprise (DevOps)
 description: Découvrez les processus, les méthodes et les communications requis pour faciliter le déploiement et simplifier la collaboration.
 seo-description: Découvrez les processus, les méthodes et les communications requis pour faciliter le déploiement et simplifier la collaboration.
 uuid: ca4806d2-c845-4c18-9498-4b66f0980a5e
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 7d1145e8-d7f7-4cc7-9dd9-ee8ce04e43d4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 98%
 
 ---
 
-
-# Opérations de développement d’entreprise{#enterprise-devops}
+# Opérations de développement d’entreprise (DevOps){#enterprise-devops}
 
 Les opérations de développement couvrent les processus, les méthodes et les communications requis pour :
 
@@ -63,9 +62,9 @@ Selon l’échelle de votre système, l’environnement de développement peut c
 
 ### Assurance qualité {#quality-assurance}
 
-Cet environnement est utilisé par l&#39;équipe d&#39;assurance de la qualité pour [tester](/help/sites-developing/test-plan.md) votre nouveau système de manière exhaustive; conception et fonction. Il devrait comprendre des environnements de création et de publication, avec le contenu approprié, et fournir tous les services nécessaires pour réaliser une suite complète de tests.
+Cet environnement est utilisé par l’équipe d’assurance qualité pour tester entièrement [votre nouveau système. conception et fonction. ](/help/sites-developing/test-plan.md) Il devrait comprendre des environnements de création et de publication, avec le contenu approprié, et fournir tous les services nécessaires pour réaliser une suite complète de tests.
 
-### Évaluation   {#staging}
+### Évaluation  {#staging}
 
 L’environnement intermédiaire doit être un miroir de l’environnement de production, en matière de configuration, de code et de contenu :
 
@@ -73,7 +72,7 @@ L’environnement intermédiaire doit être un miroir de l’environnement de pr
 * Il peut servir pour les tests finaux (de conception, des fonctionnalités et des interfaces) avant le déploiement sur les environnements de production.
 * L’environnement intermédiaire ne peut pas toujours être identique à l’environnement de production ; toutefois, il doit s’en rapprocher le plus possible afin de permettre les tests de performance et de charge.
 
-### Production : création et publication   {#production-author-and-publish}
+### Production : création et publication  {#production-author-and-publish}
 
 L’environnement de production est constitué des environnements requis pour [créer et publier](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) votre mise en œuvre.
 
@@ -97,7 +96,7 @@ Le contenu qui a été activé est regroupé en module et placé dans la file d�
 
 De façon à répliquer à l’inverse les données dans un environnement de publication vers l’environnement de création, un écouteur de réplication dans l’environnement de création interroge l’environnement de publication et récupère le contenu dans la boîte d’envoi de la réplication inverse de l’environnement de publication.
 
-#### Publication   {#publish}
+#### Publication  {#publish}
 
 L’environnement de publication est généralement situé dans la zone démilitarisée (DMZ). Il s’agit de l’environnement dans lequel les visiteurs accèdent à votre contenu (par exemple, par le biais d’un site web ou sous forme d’application mobile) et interagissent avec lui, qu’il soit public ou se trouve sur votre réseau intranet. Un environnement de publication :
 
