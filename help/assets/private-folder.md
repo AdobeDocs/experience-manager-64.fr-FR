@@ -4,14 +4,13 @@ description: Apprenez à créer un dossier privé dans Adobe Experience Manage
 contentOwner: AG
 feature: Collaboration
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '450'
 ht-degree: 100%
 
 ---
-
 
 # Partage de dossiers privés {#private-folder-sharing}
 
@@ -60,4 +59,3 @@ Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager
 >[!NOTE]
 >
 >Pour pouvoir créer un dossier privé, vous devez disposer d’autorisations ACL en lecture et en modification au niveau du dossier parent dans lequel vous souhaitez créer un dossier privé. Si vous n’êtes pas administrateur, ces autorisations ne sont pas activées pour vous par défaut au niveau de */content/dam*. Dans ce cas, commencez par obtenir ces autorisations pour votre ID utilisateur/groupe avant d’essayer de créer des dossiers privés ou d’afficher les paramètres de dossier.
-
