@@ -6,9 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: f0cd3a75-03ed-40a9-b336-8a782f3cfe69
-feature: Rulesets
+feature: Jeux de règles
 role: Administrator,Business Practitioner,Developer
-translation-type: tm+mt
 source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
 source-wordcount: '763'
@@ -63,7 +62,7 @@ Consultez également la section [Utilisation de « ressource » au lieu d’un
 
 1. Connectez-vous à votre [application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
-   Vos informations d’identification et de connexion ont été fournies par l’Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   Vos informations d’identification et votre connexion ont été fournies par Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
 1. Téléchargez votre fichier d’ensemble de règles en procédant comme suit :
 
