@@ -9,28 +9,27 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 3be35bb8-3485-42a6-8195-c3e95d097856
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 89%
 
 ---
 
-
 # Suivi des messages rejetés{#tracking-bounced-emails}
 
 >[!NOTE]
 >
->Adobe ne prévoit pas d&#39;améliorer davantage le suivi des courriers électroniques ouverts/rebondis envoyés par AEM service SMTP.
+>Adobe ne prévoit pas d&#39;améliorer davantage le suivi des emails ouverts/rebonds envoyés par AEM service SMTP.
 >
->La recommandation est de [tirer parti de l&#39;Adobe Campaign et de son intégration AEM](/help/sites-administering/campaign.md).
+>La recommandation consiste à [tirer parti d’Adobe Campaign et de son intégration AEM](/help/sites-administering/campaign.md).
 
 Lorsque vous envoyez une newsletter à de nombreux utilisateurs, la liste de diffusion comporte généralement plusieurs adresses électroniques non valides. Les newsletters envoyées à ces adresses sont rejetées. AEM est en mesure de gérer ces rebonds et d’arrêter l’envoi de newsletters vers ces adresses après le dépassement du compteur de rebonds. Par défaut, le taux de rebonds est défini sur 3, mais cette valeur est configurable.
 
 Pour configurer AEM en vue du suivi des messages rejetés, vous devez faire en sorte que le logiciel sonde une boîte aux lettres existante dans laquelle les messages rejetés sont reçus (il s’agit généralement de l’adresse indiquée pour l’envoi de la newsletter). AEM sonde cette boîte aux lettres et importe tous les messages sous le chemin indiqué dans la configuration de sondage. Un workflow est ensuite déclenché pour rechercher les adresses électroniques rejetées parmi les utilisateurs. La valeur de la propriété bounceCounter de l’utilisateur est mise à jour en conséquence. Une fois le nombre maximum de rebonds atteint, l’utilisateur est supprimé de la liste des newsletters.
 
-## Configuration de Feed Importer  {#configuring-the-feed-importer}
+## Configuration de Feed Importer {#configuring-the-feed-importer}
 
 Feed Importer vous permet d’importer, dans votre référentiel, du contenu provenant de sources externes et ce, de manière itérative. Lorsque Feed Importer est configuré de la sorte, AEM recherche des messages rejetés dans la boîte aux lettres de l’expéditeur.
 
@@ -66,9 +65,9 @@ Pour configurer Feed Importer en vue du suivi des messages rejetés, procédez c
 
    Permet de définir des indicateurs pour la recherche.
 
-   `imap.flag.SEEN`: Définit false pour le message nouveau/invisible, true pour les messages déjà lus
+   `imap.flag.SEEN`: définissez false pour le message nouveau/invisible, true pour les messages déjà lus.
 
-   Voir [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) pour la liste complète des indicateurs.
+   Voir [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) pour obtenir la liste complète des indicateurs.
 
    **Exemples IMAP** :
 
@@ -85,7 +84,7 @@ Après avoir configuré Feed Importer, vous devez configurer l’adresse de l’
 
 Pour configurer le service de newsletter, procédez comme suit :
 
-1. Dans la console OSGi à `<host>:<port>/system/console/configMgr` et accédez à **MCM Newsletter**.
+1. Dans la console OSGi à l’adresse `<host>:<port>/system/console/configMgr` et accédez à **Newsletter MCM**.
 
 1. Configurez le service et enregistrez les modifications une fois cette opération terminée.
 
