@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
-translation-type: tm+mt
-source-git-commit: 04a369c5eb4c0cb87f3dae8cd4360678315ebe2a
+exl-id: 865f524d-6b54-43c8-9b28-86a766e010a1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 88%
 
 ---
-
 
 # Routage du modèle de SPA {#spa-model-routing}
 
@@ -24,9 +23,9 @@ Concernant les applications sur une seule page (SPA) dans AEM, c’est l’appli
 
 >[!NOTE]
 >
->La fonction Éditeur d’application à page unique (SPA) nécessite AEM Service Pack 2 6.4 ou version ultérieure.
+>La fonction Éditeur d’application sur une seule page (SPA) requiert AEM Service Pack 2 ou version ultérieure.
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
 ## Routage du projet {#project-routing}
 
@@ -46,7 +45,7 @@ Lorsque l’option `ModelRouter` est activée, les fonctions de l’API d’hist
 
 >[!NOTE]
 >
->Actuellement, le projet d&#39;exemple de Journal We.Retail React illustre l&#39;approche automatisée tandis que le projet Angular illustre l&#39;approche manuelle. Une approche semi-automatisée serait également un cas d&#39;utilisation valable.
+>Actuellement, l’exemple de projet React de We.Retail Journal illustre l’approche automatisée, tandis que le projet Angular illustre l’approche manuelle. Une approche semi-automatisée serait également un cas d’utilisation valide.
 
 >[!CAUTION]
 >
