@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: cf140483-470f-4bff-8870-304207508aab
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: acce13aa-864c-4999-be5c-6d49b99d5459
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 64%
 
 ---
-
 
 # Fichiers journaux {#log-files}
 
@@ -28,15 +27,14 @@ Les événements, comme les erreurs d’exécution ou de démarrage, sont enregi
 * server.log.*[aaaa-mm-jj]*
 * server.log
 
-(WebLogic) Les fichiers journaux de domaine se trouvent dans le répertoire *[domaine du serveur d’applications]* et les fichiers journaux de serveur se trouvent dans le répertoire *[domaine du serveur d’applications]/servers/[nom du serveur d’applications]/logs *:
+(WebLogic) Les fichiers journaux de domaine se trouvent dans le répertoire *[domaine du serveur d’applications]* et les fichiers journaux du serveur dans le répertoire *[domaine du serveur d’applications]/servers/[nom du serveur d’applications]/logs *:
 
 * access.log
-* *[appserver name]*.log
-* *[appserver name]*.out.*[incremental number]*
+* *[nom du serveur d’applications]*.log
+* *[nom du serveur d’applications]*.out.*[numéro incrémentiel]*
 
-(WebSphere) Les fichiers journaux suivants se trouvent dans le répertoire *[racine du serveur d’applications]*/profils/default/logs/*[nom du serveur d’applications]* :
+(WebSphere) Les fichiers journaux suivants se trouvent dans le répertoire *[racine du serveur d’applications]*/profiles/default/logs/*[nom du serveur d’applications]* :
 
 * SystemErr.log
 * SystemOut.log
 * StartServer.log
-
