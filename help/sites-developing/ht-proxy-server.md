@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
-translation-type: tm+mt
-source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+exl-id: 63f3a172-b551-433a-aad5-58c6bfda82bb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 91%
 
 ---
-
 
 # Utilisation de l’outil de serveur proxy{#how-to-use-the-proxy-server-tool}
 
@@ -79,7 +78,7 @@ Chaque connexion active est mise en retrait pour une plus grande lisibilité. La
 
 ### Format du journal {#log-format}
 
-Les entrées de journal produites par proxy-2.1.jar ont toutes le format suivant :
+Les entrées de journal générées par proxy-2.1.jar ont toutes le format suivant :
 
 `[timestamp (optional)] [Client|Server]-[ConnectionNumber]-[BytePosition] ->[Character Stream]`
 
@@ -115,7 +114,7 @@ avec un fichier image situé dans
 
 `/content/test.jpg`
 
-Le contenu de `test.html` est :
+Le contenu de `test.html` est le suivant :
 
 ```xml
 <html>
@@ -129,11 +128,11 @@ Le contenu de `test.html` est :
 </html>
 ```
 
-En supposant que l’instance AEM s’exécute sur `localhost:4502`, nous débuts le proxy comme suit :
+En supposant que l’instance AEM s’exécute sur `localhost:4502`, nous démarrons le proxy comme suit :
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-L’instance CQ/CRX est désormais accessible par le biais du proxy à `localhost:4444` et toutes les communications via ce port sont enregistrées dans `test.log`.
+L’instance CQ/CRX est désormais accessible via le proxy à `localhost:4444` et toutes les communications via ce port sont consignées dans `test.log`.
 
 La sortie du proxy montre l’interaction entre le navigateur et l’instance AEM.
 
@@ -148,7 +147,7 @@ Nous ouvrons ensuite un navigateur et nous accédons à la page de test :
 
 `http://localhost:4444/content/test.html`
 
-et nous voyons le navigateur faire une demande `GET` pour la page :
+et nous voyons le navigateur effectuer une requête `GET` pour la page :
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -233,4 +232,3 @@ Si, de temps en temps, des demandes sont en suspens :
 * Démarrez le proxy.
 * Patientez ou écrivez le journal des accès dans un fichier en horodatant chaque entrée.
 * Lorsque la demande est suspendue, vous pouvez déterminer le nombre de connexions ouvertes et la demande à la source du problème.
-
