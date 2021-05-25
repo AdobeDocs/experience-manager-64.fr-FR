@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 6fe1c5c5-deb7-4405-82e4-23e0f90e2bd8
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Configuration
+exl-id: b4a56f59-dc5e-40c3-a024-ee9df10949d8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3589'
 ht-degree: 77%
 
 ---
-
 
 # Réplication{#replication}
 
@@ -60,7 +59,7 @@ La réplication inverse utilise un agent de l’environnement de publication qui
 
 Dans d’autres cas, notamment pour les fonctionnalités de communautés (par exemple, les forums, les blogs, les commentaires et les avis), l’environnement de publication est difficile à synchroniser efficacement à travers les instances AEM utilisant la replicaiton.
 
-AEM [Communautés](/help/communities/overview.md) n&#39;utilise jamais la réplication pour UGC. Au lieu de cela, le déploiement de Communities nécessite un stock commun pour le contenu généré par les utilisateurs (voir [Stockage de contenu des communautés](/help/communities/working-with-srp.md)).
+AEM [Communities](/help/communities/overview.md) n’utilise jamais la réplication pour le contenu généré par l’utilisateur. Au lieu de cela, le déploiement de Communities nécessite un stock commun pour le contenu généré par les utilisateurs (voir [Stockage de contenu des communautés](/help/communities/working-with-srp.md)).
 
 ## Réplication prête à l’emploi {#replication-out-of-the-box}
 
@@ -80,8 +79,8 @@ Pour suivre cet exemple et utiliser les agents de réplication par défaut, vous
 >
 désactivé par défaut (depuis AEM 6.1) :
 >
->* Agents sur l&#39;auteur : Agent de réplication inverse (publish_reverse)
->* Agents en publication : Réplication inverse (boîte d’envoi)
+>* Agents sur l’auteur : Agent de réplication inverse (publish_reverse)
+>* Agents sur publication : Réplication inverse (boîte d’envoi)
 
 >
 >
@@ -96,7 +95,7 @@ Pour vérifier l’état de l’agent ou de la file d’attente, utilisez la con
 
 1. Modifier la page pour ajouter du nouveau texte.
 1. **Activez la page** pour publier les modifications.
-1. Ouvrez la page d’assistance sur l’environnement de publication :
+1. Ouvrez la page d’assistance dans l’environnement de publication :
 
    `http://localhost:4503/content/geometrixx/en/support.html`
 
@@ -106,7 +105,7 @@ Cette réplication est effectuée depuis de l’environnement de création par 
 
 * **L’agent par défaut (publication)** Cet agent reproduit le contenu vers l’instance de publication par défaut.
 
-   Les détails de cette opération (configuration et journaux) sont accessibles à partir de la console Outils de l&#39;environnement auteur ; ou :
+   Les détails de cette opération (configuration et journaux) sont accessibles à partir de la console Outils de l’environnement de création ; ou :
 
    `http://localhost:4502/etc/replication/agents.author/publish.html`.
 
@@ -114,13 +113,13 @@ Cette réplication est effectuée depuis de l’environnement de création par 
 
 Les agents suivants sont disponibles dans une installation AEM standard :
 
-* [Agent](#replication-author-to-publish)  par défaut - Utilisé pour la réplication de l’auteur à la publication.
+* [Agent par défaut](#replication-author-to-publish)  : utilisé pour la réplication de l’auteur à la publication.
 
-* Vidage du répartiteur : il est utilisé pour gérer le cache du répartiteur. Voir [Invalidation du cache du dispatcher depuis l’environnement de création](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) et [Invalidation du cache du dispatcher depuis l’nstance de publication](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) pour plus d’informations.
+* Purge du Dispatcher : il est utilisé pour gérer le cache du Dispatcher. Voir [Invalidation du cache du dispatcher depuis l’environnement de création](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) et [Invalidation du cache du dispatcher depuis l’nstance de publication](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) pour plus d’informations.
 
-* [Réplication](#replicating-from-publish-to-author)  inversée : utilisée pour la réplication de la publication à l’auteur. La réplication inverse n’est pas utilisée pour les fonctionnalités de communautés, telles que les forums, les blogs et les commentaires. Elle est désactivée, puisque la boîte d’envoi n’est pas activée. L&#39;utilisation de la réplication inverse nécessiterait une configuration personnalisée.
+* [Réplication inverse](#replicating-from-publish-to-author)  : utilisé pour la réplication de la publication vers l’auteur. La réplication inverse n’est pas utilisée pour les fonctionnalités de communautés, telles que les forums, les blogs et les commentaires. Elle est désactivée, puisque la boîte d’envoi n’est pas activée. L’utilisation de la réplication inverse nécessiterait une configuration personnalisée.
 
-* Agent statique - Agent qui stocke une représentation statique d&#39;un noeud dans le système de fichiers. Par exemple, avec les paramètres par défaut, les pages de contenu et les ressources de barrage sont stockées sous `/tmp`, soit au format HTML, soit au format approprié. Voir les onglets `Settings` et `Rules` pour la configuration. Cette demande a été faite pour que lorsque la page est demandée directement depuis le serveur d’application, le contenu devienne visible. Il s’agit d’un agent spécialisé qui ne sera (probablement) pas nécessaire pour la plupart des instances.
+* Agent statique : il s’agit d’un &quot;agent qui stocke une représentation statique d’un noeud dans le système de fichiers&quot;. Par exemple, avec les paramètres par défaut, les pages de contenu et les ressources dam sont stockées sous `/tmp`, au format HTML ou au format de ressource approprié. Voir les onglets `Settings` et `Rules` pour la configuration. Cette demande a été faite pour que lorsque la page est demandée directement depuis le serveur d’application, le contenu devienne visible. Il s’agit d’un agent spécialisé qui ne sera (probablement) pas nécessaire pour la plupart des instances.
 
 ## Agents de réplication - Paramètres de configuration {#replication-agents-configuration-parameters}
 
@@ -184,7 +183,7 @@ Lors de la configuration d’un agent de réplication depuis le console Outils, 
 
    Indique le niveau de précision à utiliser pour les messages de journal.
 
-   * `Error`: seules les erreurs seront consignées
+   * `Error`: seules les erreurs seront consignées.
    * `Info` : les erreurs, les avertissements et autres messages informatifs y figureront
    * `Debug`: un niveau élevé de détails sera utilisé dans les messages, principalement à des fins de débogage
 
@@ -196,7 +195,7 @@ Lors de la configuration d’un agent de réplication depuis le console Outils, 
 
 * **Mise à jour de l’alias**
 
-   La sélection de cette option active les demandes d’invalidation de chemin de l’alias ou vanity au dispatcher. Voir aussi [Configuration d&#39;un agent de vidage du répartiteur](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
+   La sélection de cette option active les demandes d’invalidation de chemin de l’alias ou vanity au dispatcher. Voir également [Configuration d’un agent de purge de Dispatcher](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
 
 ### Transfert {#transport}
 
@@ -207,11 +206,11 @@ Lors de la configuration d’un agent de réplication depuis le console Outils, 
    Par exemple :
 
    * Un agent par défaut peut répliquer sur `http://localhost:4503/bin/receive`
-   * Un agent de vidage du répartiteur peut se répliquer sur `http://localhost:8000/dispatcher/invalidate.cache`
+   * Un agent de purge de Dispatcher peut se répliquer sur `http://localhost:8000/dispatcher/invalidate.cache`
 
    Le protocole spécifié ici (HTTP ou HTTPS) détermine la méthode de transport. 
 
-   Pour les agents de vidage du répartiteur, la propriété URI n&#39;est utilisée que si vous utilisez des entrées d&#39;hôte virtuel basées sur le chemin pour différencier les fermes, vous utilisez ce champ pour cible la batterie à invalider. Par exemple, la ferme de serveurs n°1 dispose d’un hôte virtuel de `www.mysite.com/path1/*` et la ferme de serveurs n°2 d’un hôte virtuel de `www.mysite.com/path2/*`. Vous pouvez utiliser une URL de `/path1/invalidate.cache` pour cibler la première ferme de serveurs et `/path2/invalidate.cache` pour cibler la seconde ferme de serveurs.
+   Pour les agents de purge de Dispatcher, la propriété URI n’est utilisée que si vous utilisez des entrées virtualhost basées sur un chemin pour différencier les fermes de serveurs, vous utilisez ce champ pour cibler la ferme de serveurs à invalider. Par exemple, la ferme de serveurs n°1 dispose d’un hôte virtuel de `www.mysite.com/path1/*` et la ferme de serveurs n°2 d’un hôte virtuel de `www.mysite.com/path2/*`. Vous pouvez utiliser une URL de `/path1/invalidate.cache` pour cibler la première ferme de serveurs et `/path2/invalidate.cache` pour cibler la seconde ferme de serveurs.
 
 * **User** (Utilisateur)
 
@@ -237,7 +236,7 @@ Lors de la configuration d’un agent de réplication depuis le console Outils, 
 
    Activez cette option si vous voulez que les certificats SSL obsolètes soient acceptés.
 
-### Proxy  {#proxy}
+### Proxy {#proxy}
 
 Les paramètres suivants sont nécessaires uniquement si un proxy est requis :
 
@@ -265,7 +264,7 @@ Les paramètres suivants sont nécessaires uniquement si un proxy est requis :
 
    Le domaine du proxy NTLM.
 
-### Étendu  {#extended}
+### Étendu {#extended}
 
 * **Interface**
 
@@ -291,7 +290,7 @@ Les paramètres suivants sont nécessaires uniquement si un proxy est requis :
 
    Elles sont utilisées, si nécessaire, pour indiquer l’action à utiliser lors du vidage du gestionnaire ou du chemin. Les sous-paramètres sont dynamiques :
 
-   * `{action}` indique une action de réplication
+   * `{action}` indique une action de réplication ;
    * `{path}` indique un chemin
 
    Ils sont remplacés par le chemin ou l’action adapté à la demande. Par conséquent, ils n’ont pas besoin d’être codés en dur :
@@ -371,7 +370,7 @@ Depuis l’onglet Outils dans l’environnement de création, vous pouvez config
 
    ![chlimage_1-145](assets/chlimage_1-145.png)
 
-1. Les valeurs fournies doivent être suffisantes pour une installation par défaut. Si vous apportez des modifications, cliquez sur **OK** pour les enregistrer (voir [Agents de réplication - Paramètres de configuration](#replication-agents-configuration-parameters) pour plus d&#39;informations sur les paramètres individuels).
+1. Les valeurs fournies doivent être suffisantes pour une installation par défaut. Si vous apportez des modifications, cliquez sur **OK** pour les enregistrer (voir [Agents de réplication - paramètres de configuration](#replication-agents-configuration-parameters) pour plus de détails sur les paramètres individuels).
 
 >[!NOTE]
 >
@@ -392,17 +391,17 @@ Comme l’environnement de publication se trouve généralement dans la zone dé
 
 >[!NOTE]
 >
->Pour AEM [Communautés](/help/communities/overview.md), la réplication n’est pas utilisée pour le contenu généré par l’utilisateur sur une instance de publication. Voir [Enregistrement de contenu communautaire](/help/communities/working-with-srp.md).
+>Pour AEM [Communities](/help/communities/overview.md), la réplication n’est pas utilisée pour le contenu généré par l’utilisateur sur une instance de publication. Voir [Stockage de contenu de la communauté](/help/communities/working-with-srp.md).
 
 Pour cela vous aurez besoin des éléments suivants :
 
-**Agent de réplication inverse dans l&#39;** environnement d&#39;auteur. Il s&#39;agit du composant principal permettant de collecter des informations à partir de la boîte d&#39;envoi dans l&#39;environnement de publication :
+**Un agent de réplication inverse dans l’** environnement de création. Il agit comme le composant principal pour collecter des informations à partir de la boîte d’envoi dans l’environnement de publication :
 
 Si vous souhaitez utiliser la réplication inverse, vérifiez que cet agent est activé.
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
-**Agent de réplication inverse dans l’environnement de publication (une boîte d’envoi)** Il s’agit de l’élément passif puisqu’il agit comme une &quot;boîte d’envoi&quot;. L’entrée de l’utilisateur est placée ici, d’où elle est collectée par l’agent dans l’environnement de création.
+**Un agent de réplication inverse dans l’environnement de publication (une boîte d’envoi)**  Il s’agit de l’élément passif, car il agit comme une &quot;boîte d’envoi&quot;. L’entrée de l’utilisateur est placée ici, d’où elle est collectée par l’agent dans l’environnement de création.
 
 ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 
@@ -412,7 +411,7 @@ Si vous souhaitez utiliser la réplication inverse, vérifiez que cet agent est 
 >
 >Seul le contenu est répliqué- les données utilisateur ne le sont pas (les utilisateurs, les groupes d’utilisateurs et les profils utilisateurs).
 >
->Pour synchroniser les données utilisateur sur plusieurs instances de publication, activez [Synchronisation utilisateur](/help/sites-administering/sync.md).
+>Pour synchroniser les données utilisateur sur plusieurs instances de publication, activez la [synchronisation des utilisateurs](/help/sites-administering/sync.md).
 
 Durant l’installation, un agent par défaut est déjà configuré pour la réplication du contenu vers une instance de publication s’exécutant sur le port 4503 de l’hôte local.
 
@@ -431,10 +430,10 @@ Pour configurer la réplication du contenu pour un autre instance de publication
       * Sélectionnez **Activé**.
       * Saisissez une **description**.
       * Définissez l’**intervalle entre deux tentatives** sur `60000`.
-      * Laissez **Type de sérialisation** comme `Default`.
+      * Laissez **Type de sérialisation** sur `Default`.
    * Dans l’onglet **Transport** :
 
-      * Saisissez l’URI requis pour la nouvelle instance de publication ; par exemple,
+      * Saisissez l’URI requise pour la nouvelle instance de publication ; par exemple,
 
          `http://localhost:4504/bin/receive`.
 
@@ -448,7 +447,7 @@ Vous pouvez ensuite tester l’opération en mettant à jour, puis en publiant u
 
 Les mises à jour s’affichent sur toutes les instances de publication qui ont été configurées comme décrit ci-dessus.
 
-Si vous rencontrez des problèmes, vous pouvez vérifier les journaux sur l’instance d’auteur. En fonction du niveau de détail requis, vous pouvez également définir le **Niveau de journal** sur `Debug` à l&#39;aide de la boîte de dialogue **Paramètres de l&#39;agent** comme ci-dessus.
+Si vous rencontrez des problèmes, vous pouvez vérifier les journaux sur l’instance d’auteur. Selon le niveau de détail requis, vous pouvez également définir le **Niveau de journal** sur `Debug` à l’aide de la boîte de dialogue **Paramètres de l’agent** comme ci-dessus.
 
 >[!NOTE]
 >
@@ -468,7 +467,7 @@ Les agents par défaut sont inclus dans l’installation. Toutefois, une certain
 
 1. Ouvrez l’onglet **Outils** dans AEM.
 1. Cliquez sur **Déploiement**.
-1. Sélectionnez **Réplication**, puis **Agents sur publication**.
+1. Sélectionnez **Réplication** puis **Agents sur la publication**.
 1. Double-cliquez sur **Vidage du dispatcher** pour ouvrir l’aperçu.
 1. Cliquez sur **Modifier**. La boîte de dialogue **Paramètres de l’agent** s’ouvre :
 
@@ -476,18 +475,18 @@ Les agents par défaut sont inclus dans l’installation. Toutefois, une certain
 
       * Sélectionnez **Activé**.
       * Saisissez une **description**.
-      * Laissez **Type de sérialisation** comme `Dispatcher Flush` ou définissez-le comme tel si vous créez un nouvel agent.
-      * (Facultatif) Sélectionnez **Mise à jour de l&#39;alias** pour activer les demandes d&#39;invalidation d&#39;alias ou de chemin de vanité au répartiteur.
+      * Laissez **Type de sérialisation** sur `Dispatcher Flush` ou définissez-le comme tel lors de la création d’un nouvel agent.
+      * (Facultatif) Sélectionnez **Mise à jour d’alias** pour activer les demandes d’invalidation de chemin d’alias ou de redirection vers un microsite à Dispatcher.
    * Dans l’onglet **Transport** :
 
-      * Saisissez l’URI requis pour la nouvelle instance de publication ; par exemple,
+      * Saisissez l’URI requise pour la nouvelle instance de publication ; par exemple,
 
          `http://localhost:80/dispatcher/invalidate.cache`.
 
       * Saisissez le compte utilisateur spécifique au site utilisé pour la réplication.
       * Vous pouvez configurer les autres paramètres selon vos besoins.
 
-   Pour les agents de vidage du répartiteur, la propriété URI n&#39;est utilisée que si vous utilisez des entrées d&#39;hôte virtuel basées sur le chemin pour différencier les fermes, vous utilisez ce champ pour cible la batterie à invalider. Par exemple, la ferme de serveurs n°1 dispose d’un hôte virtuel de `www.mysite.com/path1/*` et la ferme de serveurs n°2 d’un hôte virtuel de `www.mysite.com/path2/*`. Vous pouvez utiliser une URL de `/path1/invalidate.cache` pour cibler la première ferme de serveurs et `/path2/invalidate.cache` pour cibler la seconde ferme de serveurs.
+   Pour les agents de purge de Dispatcher, la propriété URI n’est utilisée que si vous utilisez des entrées virtualhost basées sur un chemin pour différencier les fermes de serveurs, vous utilisez ce champ pour cibler la ferme de serveurs à invalider. Par exemple, la ferme de serveurs n°1 dispose d’un hôte virtuel de `www.mysite.com/path1/*` et la ferme de serveurs n°2 d’un hôte virtuel de `www.mysite.com/path2/*`. Vous pouvez utiliser une URL de `/path1/invalidate.cache` pour cibler la première ferme de serveurs et `/path2/invalidate.cache` pour cibler la seconde ferme de serveurs.
 
    >[!NOTE]
    >
@@ -496,7 +495,7 @@ Les agents par défaut sont inclus dans l’installation. Toutefois, une certain
 1. Pour enregistrer les modifications, cliquez sur **OK.**
 1. Retournez à l’onglet **Outils**, d’où vous pouvez **activer** l’agent de **vidage du dispatcher** (**agents sur la publication**).
 
-L’agent de réplication du **vidage du dispatcher** n’est pas actif sur l’auteur. Vous pouvez accéder à la même page dans l’environnement de publication en utilisant l’URI équivalent ; par exemple, `http://localhost:4503/etc/replication/agents.publish/flush.html`.
+L’agent de réplication du **vidage du dispatcher** n’est pas actif sur l’auteur. Vous pouvez accéder à la même page dans l’environnement de publication à l’aide de l’URI équivalent ; par exemple, `http://localhost:4503/etc/replication/agents.publish/flush.html`.
 
 ### Contrôle de l’accès aux agents de réplication {#controlling-access-to-replication-agents}
 
@@ -510,7 +509,7 @@ L’accès aux pages utilisées pour configurer les agents de réplication peut 
 
 >[REMARQUE!]
 >
->La création d&#39;agents de réplication n&#39;est prise en charge que dans l&#39;emplacement du référentiel `/etc/replication`. Cela est nécessaire pour que les listes ACL associées soient correctement gérées. La création d&#39;un agent de réplication à un autre emplacement de l&#39;arborescence peut conduire à un accès non autorisé.
+>La création d’agents de réplication n’est prise en charge que dans l’emplacement du référentiel `/etc/replication`. Cela est nécessaire pour que les listes de contrôle d’accès associées soient correctement gérées. La création d’un agent de réplication à un autre emplacement de l’arborescence peut entraîner un accès non autorisé.
 
 Divers paramètres de vos agents de réplication peuvent être configurés à l’aide CRXDE Lite.
 
@@ -561,28 +560,28 @@ Pour surveiller un agent de réplication :
 
 ## Réplication par lots {#batch-replication}
 
-La réplication par lot ne reproduit pas les pages ou ressources individuelles, mais attend que le premier seuil des deux, en fonction du temps ou de la taille, soit déclenché.
+La réplication par lots ne reproduit pas les pages ou les ressources individuelles, mais attend que le premier seuil des deux, en fonction de l’heure ou de la taille, soit déclenché.
 
-Il regroupe ensuite tous les éléments de réplication dans un package, qui est ensuite répliqué en un seul fichier à l’éditeur.
+Il regroupe ensuite tous les éléments de réplication dans un module, qui est ensuite répliqué en tant que fichier unique vers l’éditeur.
 
-L’éditeur décompressera tous les éléments, les enregistrera et en rendra compte à l’auteur.
+L’éditeur décompressera tous les éléments, les enregistrera et renverra à l’auteur.
 
 ### Configuration de la réplication par lots {#configuring-batch-replication}
 
 1. Accédez à `http://serveraddress:serverport/siteadmin`
-1. Appuyez sur l&#39;icône **[!UICONTROL Outils]** dans la partie supérieure de l&#39;écran.
-1. Dans le rail de navigation de gauche, accédez à **[!UICONTROL Réplication - Agents sur l’auteur]** et cliquez sur **[!UICONTROL Agent par défaut]** par doublon.
-   * Vous pouvez également atteindre l’agent de réplication de publication par défaut en accédant directement à `http://serveraddress:serverport/etc/replication/agents.author/publish.html`
-1. Appuyez sur le bouton **[!UICONTROL Modifier]** au-dessus de la file d&#39;attente de réplication.
-1. Dans la fenêtre suivante, accédez à l&#39;onglet **[!UICONTROL Batch]** :
-   ![réplication de lots](assets/batchreplication.png)
-1. Configurez l&#39;agent.
+1. Appuyez sur l’icône **[!UICONTROL Outils]** dans la partie supérieure de l’écran.
+1. Dans le rail de navigation de gauche, accédez à **[!UICONTROL Réplication - Agents sur l’auteur]** et double-cliquez sur **[!UICONTROL Agent par défaut]**.
+   * Vous pouvez également accéder à l’agent de réplication de publication par défaut en accédant directement à `http://serveraddress:serverport/etc/replication/agents.author/publish.html`
+1. Appuyez sur le bouton **[!UICONTROL Modifier]** au-dessus de la file d’attente de réplication.
+1. Dans la fenêtre suivante, accédez à l’onglet **[!UICONTROL Lot]** :
+   ![batchreplication](assets/batchreplication.png)
+1. Configurez l’agent.
 
 ### Paramètres {#parameters}
 
-* `[!UICONTROL Enable Batch Mode]` - active ou désactive le mode de réplication par lots
-* `[!UICONTROL Max Wait Time]` - Temps d&#39;attente maximal jusqu&#39;au démarrage d&#39;une demande de traitement par lot, en secondes. La valeur par défaut est de 2 secondes.
-* `[!UICONTROL Trigger Size]` - Début la réplication par lots lorsque cette limite de taille est atteinte, en Mo. La valeur par défaut est 5 Mo.
+* `[!UICONTROL Enable Batch Mode]` : active ou désactive le mode de réplication par lots.
+* `[!UICONTROL Max Wait Time]` - Durée d’attente maximale avant le démarrage d’une requête par lots, en secondes. La valeur par défaut est de 2 secondes.
+* `[!UICONTROL Trigger Size]` - Commence la réplication par lots lorsque cette taille limite est atteinte, en Mo. La valeur par défaut est 5 Mo.
 
 ## Ressources supplémentaires {#additional-resources}
 
