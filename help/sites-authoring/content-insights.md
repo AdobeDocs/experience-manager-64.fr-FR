@@ -1,22 +1,21 @@
 ---
 title: Content Insight
 seo-title: 'Content Insight '
-description: Content Insight fournit des informations sur les performances des pages à l’aide des analyses Web et des recommandations d’optimisation du référencement.
-seo-description: Content Insight fournit des informations sur les performances des pages à l’aide des analyses Web et des recommandations d’optimisation du référencement.
+description: Content Insight fournit des informations sur les performances des pages à l’aide de l’analyse web et de la recommandation d’optimisation pour les moteurs de recherche.
+seo-description: Content Insight fournit des informations sur les performances des pages à l’aide de l’analyse web et de la recommandation d’optimisation pour les moteurs de recherche.
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 54ec1b84-bee2-4c1f-acbc-8e6bd0d76c87
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 92%
 
 ---
-
 
 # Content Insight {#content-insight}
 
@@ -99,4 +98,3 @@ Le rapport Recommandations d’optimisation pour les moteurs de recherche contie
 Le rapport vous permet de créer des tâches de sorte que des améliorations soient effectuées pour améliorer la repérabilité de page. Les recommandations indiquent que des tâches ont été créées pour mettre en œuvre la recommandation. Reportez-vous à [Affectation de tâches pour les recommandations d’optimisation pour les moteurs de recherche](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
-
