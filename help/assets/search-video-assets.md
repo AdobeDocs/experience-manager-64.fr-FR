@@ -2,16 +2,15 @@
 title: Recherche de ressources vidéo
 description: Utilisez des mots-clés, des propriétés de fichiers telles qu’un type MIME, la taille ou l’horodatage de modification récente pour retrouver rapidement vos fichiers dans AEM Assets.
 contentOwner: AG
-feature: Video,Search
+feature: Vidéo,Recherche
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: d5f0beb2-e59f-47cd-8e83-698d8a1dcec3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '580'
 ht-degree: 68%
 
 ---
-
 
 # Recherche de ressources vidéo {#searching-video-assets}
 
@@ -30,13 +29,13 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 | [!UICONTROL État d’approbation] | Accepté ou Rejeté. |
 | [!UICONTROL Orientation] | Horizontal, Vertical ou Carré. |
 | [!UICONTROL Style] | Couleur ou Noir et blanc |
-| Hauteur de la vidéo | Spécifié comme valeur minimale et maximale.La valeur est stockée dans les métadonnées des rendus vidéo uniquement. |
-| Largeur de la vidéo | Spécifié comme valeur minimale et maximale.La valeur est stockée dans les métadonnées des rendus vidéo uniquement. |
-| Format vidéo | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media.Value est stocké dans les métadonnées de la vidéo source et dans tous les rendus. |
+| Hauteur de la vidéo | Spécifié en tant que valeur minimale et maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
+| Largeur de la vidéo | Spécifié en tant que valeur minimale et maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
+| Format vidéo | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media.Value sont stockés dans les métadonnées de la vidéo source et dans les rendus. |
 | Codec vidéo | x264.La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
-| Débit vidéo | Spécifié comme valeur minimale et maximale.La valeur est stockée dans les métadonnées des rendus vidéo uniquement. |
+| Débit vidéo | Spécifié en tant que valeur minimale et maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 | Codec audio | Libvorbis, Lame Mp3, AAC Encoding.Value est stocké uniquement dans les métadonnées des rendus vidéo. |
-| Débit audio | Spécifié comme valeur minimale et maximale.La valeur est stockée dans les métadonnées des rendus vidéo uniquement. |
+| Débit audio | Spécifié en tant que valeur minimale et maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 
 1. Dans la page **[!UICONTROL Experience Manager]**, appuyez sur **[!UICONTROL Ressources]** dans le rail gauche.
 
@@ -46,15 +45,15 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 1. Dans la barre d’outils, appuyez sur l’icône Rechercher (loupe).
 1. Recherchez des ressources vidéo en effectuant l’une des opérations suivantes :
 
-   * Recherche à l&#39;aide de mots-clés
+   * Recherche à l’aide de mots-clés
 
-      Dans le champ Entrer les mots-clés, tapez un début, puis appuyez sur Entrée.
+      Dans le champ Entrer les mots-clés , commencez à saisir du texte, puis appuyez sur Entrée.
 
       La vue actuelle est filtrée selon les mots-clés saisis. Des fichiers sont affichés comme résultats de la recherche si vos mots-clés correspondent aux noms de fichier, à des balises de métadonnées ou à d’autres propriétés.
 
    * Recherche à l’aide des propriétés
 
-      Pour rechercher un fichier vidéo basé sur une propriété telle que le type de la vidéo, vous pouvez restreindre la recherche en sélectionnant une propriété vidéo ou audio. Par exemple, développez la liste déroulante Format vidéo, puis cochez une ou plusieurs valeurs. Certaines propriétés exigent la saisie d’une valeur minimale et d’une valeur maximale.
+      Pour rechercher un fichier vidéo en fonction d’une propriété telle que le type de la vidéo, vous pouvez affiner la recherche en sélectionnant une propriété vidéo ou audio. Par exemple, développez la liste déroulante Format vidéo, puis cochez une ou plusieurs valeurs. Certaines propriétés exigent la saisie d’une valeur minimale et d’une valeur maximale.
 
    * Recherche à l’aide de mots-clés et de propriétés
 
