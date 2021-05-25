@@ -9,18 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 80a70f5c-dcc4-425f-9971-9e0feec094d6
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 4831abe0-7d82-4cdd-8579-9736aa6a94d6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1784'
 ht-degree: 84%
 
 ---
 
+# Introduction à la personnalisation de l’espace de travail AEM Forms {#introduction-to-customizing-aem-form-workspace}
 
-# Introduction à la personnalisation de l’espace de travail AEM Forms  {#introduction-to-customizing-aem-form-workspace}
-
-L’espace de travail de formulaire AEM permet de modifier la sémantique de présentation et les fonctionnalités de son interface. Les types de personnalisations pour modifier le style, la mise en page, le formatage, la marque et les principales fonctionnalités sont décrits ci-dessous.
+AEM espace de travail de formulaire permet de modifier la sémantique de la présentation et les fonctionnalités de son interface. Les types de personnalisations pour modifier le style, la mise en page, le formatage, la marque et les principales fonctionnalités sont décrits ci-dessous.
 
 ![cu_custom_workspace_example](assets/cu_customized_workspace_example.png)
 
@@ -36,7 +35,7 @@ L’espace de travail AEM Forms prend en charge un large éventail de personnali
 
 Vous pouvez modifier l’aspect, la mise en page et la sémantique d’une autre présentation de l’espace de travail AEM Forms. Modifiez l’espace de travail en personnalisant le CSS, les modèles HTML et les fichiers JavaScript™. Tous les fichiers par défaut sont fournis dans l’installation par défaut.
 
-Les étapes les plus couramment applicables sont décrites dans [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md). Pour des exemples spécifiques de ces personnalisations, y compris les étapes détaillées, voir les articles connexes à la fin de cet article.
+Les étapes les plus courantes sont décrites dans la section [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md). Pour des exemples spécifiques de ces personnalisations, y compris les étapes détaillées, voir les articles connexes à la fin de cet article.
 
 #### Présentation de la feuille de style  {#understanding-the-style-sheet}
 
@@ -127,11 +126,11 @@ Les étapes de niveau supérieur pour une personnalisation CSS sont les suivante
 * Ajoutez des éléments de style dans ce fichier CSS. Voir Description des styles CSS pour plus d’informations.
 * Mettez à jour ses références dans `html.jsp`.
 
-Pour connaître les étapes exactes de ces personnalisations, voir [Procédure générique de personnalisation de l&#39;espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md). Le fichier CSS fourni avec l’espace de travail AEM Forms se trouve dans /libs/ws/css/. Pour les personnalisations CSS, utilisez la commande [Ship Package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Vous trouverez des exemples spécifiques de personnalisations CSS dans les rubriques d’aide connexes à la fin de cet article.
+Pour connaître les étapes exactes pour effectuer ces personnalisations, voir [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md). Le fichier CSS fourni avec l’espace de travail AEM Forms se trouve à l’emplacement /libs/ws/css/. Pour les personnalisations CSS, utilisez la commande [Ship Package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Vous trouverez des exemples spécifiques de personnalisations CSS dans les rubriques d’aide connexes à la fin de cet article.
 
 #### Image {#image}
 
-Vous pouvez personnaliser l’espace de travail AEM Forms pour ajouter des avatars d’utilisateurs ou pour ajouter le logo de votre organisation. Pour ces personnalisations, utilisez la commande [Ship Package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+Vous pouvez personnaliser l’espace de travail AEM Forms pour ajouter des avatars d’utilisateurs ou pour ajouter le logo de votre entreprise. Pour ces personnalisations, utilisez la commande [Ship Package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
 
 Les étapes de niveau supérieur pour des personnalisations des images sont les suivantes :
 
@@ -158,7 +157,7 @@ Vous trouverez des exemples spécifiques de ces personnalisations dans les rubri
 
 Pour modifier la fonctionnalité de l’espace de travail AEM Forms, modifiez le code source JavaScript. Les modifications dans les principales fonctionnalités ne sont pas libellées comme modifications sémantiques. Vous modifiez des modèles, des vues et des contrôleurs fournis en tant que partie intégrante du code source de l’espace de travail AEM Forms.
 
-Les étapes de niveau supérieur permettant d’effectuer des modifications sémantiques pour modifier les fonctionnalités de l’espace de travail AEM Forms sont les suivantes :
+Les étapes de niveau supérieur pour effectuer des modifications sémantiques afin de modifier les fonctionnalités de l’espace de travail AEM Forms sont les suivantes :
 
 * Dans un dossier créé par l’utilisateur, effectuez des copies des fichiers par défaut appropriés.
 * Ajoutez de nouveaux modèles et de nouvelles vues dans le dossier défini par l’utilisateur.
@@ -169,15 +168,15 @@ Pour plus d’informations conceptuelles sur les composants qui font partie du c
 
 ### Composants réutilisables {#reusable-components}
 
-Comme AEM Forms Workspace est un logiciel basé sur des composants, il peut être facilement personnalisé et réutilisé. Vous pouvez intégrer facilement les composants de l’espace de travail avec vos applications Web.
+Comme l’espace de travail AEM Forms est un logiciel basé sur des composants, il peut être facilement personnalisé et réutilisé. Vous pouvez intégrer facilement les composants de l’espace de travail avec vos applications Web.
 
-Pour plus d’informations conceptuelles, voir la [Description des composants réutilisables](/help/forms/using/description-reusable-components.md) et pour obtenir des instructions sur l’utilisation des composants, voir [Intégration des composants de l’espace de travail AEM Forms dans les applications Web](/help/forms/using/description-reusable-components.md).
+Pour plus d’informations conceptuelles, voir [Description des composants réutilisables](/help/forms/using/description-reusable-components.md) et pour obtenir des instructions sur l’utilisation des composants, voir [Intégration des composants de l’espace de travail AEM Forms dans les applications web](/help/forms/using/description-reusable-components.md).
 
 ## Conception de code de l’espace de travail AEM Forms {#building-html-workspace-code}
 
 ### Paquet SDK {#sdk-package}
 
-Le paquet contient le code source de l’espace de travail AEM Forms. Le package est disponible à l&#39;adresse `[*LC root*]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
+Le paquet contient le code source de l’espace de travail AEM Forms. Le package est disponible à l’adresse `[*LC root*]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
 
 Il est essentiellement destiné aux personnalisations, car il permet de générer les éléments suivants :
 
@@ -216,7 +215,7 @@ Il est essentiellement destiné aux personnalisations, car il permet de génére
             * views - contient les vues Backbone de tous les composants dans l’espace de travail AEM Forms.
          * main.js
          * router.js
-      * libs/ws : pdf.html et pluginPing.pdf sont utilisés pour charger des PDF forms dans l’espace de travail AEM Forms et WSNextAdapter.swf est utilisé pour charger des formulaires SWF et des guides dans l’espace de travail AEM Forms.
+      * libs/ws : pdf.html et pluginPing.pdf sont utilisés pour le chargement de PDF forms dans l’espace de travail AEM Forms et WSNextAdapter.swf est utilisé pour charger des formulaires SWF et des guides dans l’espace de travail AEM Forms.
       * locales :
 
          * de-DE : contient translation.json pour l’allemand.
@@ -232,7 +231,7 @@ Il est essentiellement destiné aux personnalisations, car il permet de génére
 
 ### Package CRX  {#crx-package}
 
-Le paquet CRX peut être déployé sur le référentiel CRX™. Il est disponible à `[*LC root*]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
+Le paquet CRX peut être déployé sur le référentiel CRX™. Elle est disponible à l’adresse `[*LC root*]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
 
 Ce paquet peut être créé à l’aide des trois profils décrits ci-dessous.
 
@@ -247,7 +246,7 @@ Ce paquet peut être créé à l’aide des trois profils décrits ci-dessous.
 #### Commande {#command}
 
 * mvn clean -P Ship install sur le dossier client-pkg du package Source fourni au client.
-* L’exécution de la commande Ship profil fonctionne uniquement sur une JVM 64 bits.
+* L’exécution de la commande de profil Ship fonctionne uniquement sur une JVM 64 bits.
 
 #### Contenu du dossier WS {#ws-content-1}
 
@@ -259,7 +258,7 @@ Ce paquet peut être créé à l’aide des trois profils décrits ci-dessous.
 
       * require : contient require.js.
       * jqueryui : contient jquery.ui.datepicker.ja.js.
-   * runtime :
+   * runtime:
 
       * templates - contient tous les modèles, c’est-à-dire les fichiers HTML de tous les composants dans l’espace de travail AEM Forms.
    * main.js (combiné, minifié, et utilisé avec Uglifier).
@@ -304,7 +303,7 @@ Ce paquet peut être créé à l’aide des trois profils décrits ci-dessous.
 
       * require : contient require.js.
       * jqueryui : contient jquery.ui.datepicker.ja.js.
-   * runtime :
+   * runtime:
 
       * templates - contient tous les modèles, c’est-à-dire les fichiers HTML de tous les composants dans l’espace de travail AEM Forms.
    * main.js (combiné).
@@ -347,7 +346,7 @@ mvn clean -P Dev install sur client-pkg
    * libs - contient toutes les bibliothèques utilisées dans l’espace de travail AEM Forms.
    * require : contient require.js.
    * jqueryui : contient jquery.ui.datepicker.ja.js
-   * runtime :
+   * runtime:
 
       * initializer : contient initializer.js et modelcontrollerpath.js.
       * models : contient les modèles de tous les composants de l’espace de travail AEM Forms.
@@ -380,4 +379,3 @@ mvn clean -P Dev install sur client-pkg
 * html.jsp
 * content.xml
 * _rep_policy.xml
-
