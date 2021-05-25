@@ -7,16 +7,15 @@ uuid: 9649157c-fe28-43bf-a7d3-52ed55a0bf4f
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f2bde2e8-da95-48ac-a652-85ead87f2cd3
-translation-type: tm+mt
-source-git-commit: 3c67867637cb3fdcdce77a5d494b9b150f128a20
+exl-id: 4df9a16c-0853-4bbf-81bb-1856ab55c5ee
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 86%
 
 ---
 
-
-# Intégration d’applications tierces à l’espace de travail AEM Forms  {#integrating-third-party-applications-in-aem-forms-workspace}
+# Intégration d’applications tierces à l’espace de travail AEM Forms {#integrating-third-party-applications-in-aem-forms-workspace}
 
 L’espace de travail AEM Forms prend en charge la gestion d’affectation de tâches et d’activités d’exécution pour les formulaires et les documents. Ces formulaires et documents peuvent être des formulaires XDP, Flex®, ou des guides (déconseillé) qui ont été rendus aux formats XDP, PDF, HTML ou Flex.
 
@@ -26,9 +25,9 @@ Par exemple, considérons Correspondence Management comme exemple de candidat po
 
 ## Création d’actifs de Correspondence Management {#create-correspondence-management-assets}
 
-Début en créant un exemple de modèle Correspondence Management qui est rendu dans l’espace de travail AEM Forms. Pour plus d’informations, voir [Création d’un modèle de lettre](/help/forms/using/create-letter.md).
+Commencez par créer un exemple de modèle Correspondence Management rendu dans l’espace de travail AEM Forms. Pour plus d’informations, voir [Création d’un modèle de lettre](/help/forms/using/create-letter.md).
 
-Accédez au modèle Correspondence Management à l’adresse URL correspondante pour vérifier si le modèle Correspondence Management peut être rendu correctement. L’URL a un modèle similaire à `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Accédez au modèle Correspondence Management à son URL pour vérifier si le rendu du modèle Correspondence Management peut être effectué avec succès. L’URL a un modèle similaire à `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 où `encodedLetterId` correspond à l’ID de lettre codé URL. Spécifiez le même identifiant de lettre lors de la définition du processus de rendu pour une tâche d’espace de travail dans Workbench.
 
@@ -117,4 +116,3 @@ FileDownload DSC : Un exemple de DSC est disponible dans le  `DSCSample.zip` fic
    >[!NOTE]
    >
    >Le bouton d’envoi n’est pas activé tant que toutes les variables requises dans la lettre ne sont renseignées.
-
