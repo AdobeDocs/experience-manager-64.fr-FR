@@ -6,16 +6,15 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
-feature: Smart Tags,Search
+feature: Balises intelligentes, Recherche
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1570'
 ht-degree: 84%
 
 ---
-
 
 # Balises intelligentes améliorées {#enhanced-smart-tags}
 
@@ -31,20 +30,20 @@ Pour que le service de contenu dynamique applique les balises adéquates, vous d
 
 Une fois une balise entraînée et prête, le service peut appliquer ces balises sur les ressources par un workflow de balisage.
 
-En arrière-plan, Smart Content Service utilise la structure d’IA de Adobe Sensei pour former son algorithme de reconnaissance d’image à la structure des balises et à la taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
+En arrière-plan, le service de contenu dynamique utilise la structure d’intelligence artificielle d’Adobe Sensei pour entraîner son algorithme de reconnaissance d’image sur votre structure de balises et votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
 
-Smart Content Service est un service cloud hébergé sur [!DNL Adobe I/O]. Pour l’utiliser dans Adobe Experience Manager (AEM), l’administrateur système doit intégrer votre instance AEM à [!DNL Adobe I/O].
+Le service de contenu dynamique est un service cloud hébergé sur [!DNL Adobe I/O]. Pour l’utiliser dans Adobe Experience Manager (AEM), l’administrateur système doit intégrer votre instance AEM à [!DNL Adobe I/O].
 
 En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
 
-* Intégration 
+* Intégration
 * Passage en revue des ressources et des balises (définition de la taxonomie)
 * Entraînement du service de contenu dynamique
 * Balisage automatique
 
 ![organigramme](assets/flowchart.gif)
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respecter les conditions suivantes pour créer une intégration sur [!DNL Adobe I/O]:
 
@@ -53,7 +52,7 @@ Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respe
 
 ## Intégration {#onboarding}
 
-Smart Content Service est disponible à l’achat en tant que module complémentaire pour AEM. Après l’achat, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers [!DNL Adobe I/O].
+Le service de contenu dynamique est disponible à l’achat sous la forme d’un module complémentaire d’AEM. Une fois l’achat effectué, un courrier électronique est envoyé à l’administrateur de votre entreprise avec un lien vers [!DNL Adobe I/O].
 
 L’administrateur peut suivre le lien pour intégrer le service de contenu dynamique à AEM. Pour intégrer le service à AEM Assets, voir [Configuration des balises intelligentes](config-smart-tagging.md).
 
@@ -61,7 +60,7 @@ Le processus d’intégration est terminé lorsque l’administrateur configure 
 
 >[!NOTE]
 >
->Si vous utilisez AEM version 6.3 ou antérieure et avez besoin du service de balisage automatique pour vos ressources, voir [Balises dynamiques](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Les balises actives n’utilisent pas les fonctionnalités d’IA et sont moins précises que la fonctionnalité de balisage intelligent améliorée.
+>Si vous utilisez AEM version 6.3 ou antérieure et avez besoin d’un service de balisage automatique pour vos ressources, voir [Balises intelligentes](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Les balises intelligentes n’utilisent pas les fonctionnalités d’IA et sont moins précises que la fonctionnalité Balisage intelligent amélioré .
 
 ## Passage en revue des ressources et des balises {#reviewing-assets-and-tags}
 
@@ -74,7 +73,7 @@ Ajoutez les ressources à un dossier, puis appliquez les balises à chaque resso
 >[!NOTE]
 >
 >1. L’entraînement est un processus irrévocable. Adobe recommande de bien passer en revue les balises dans la série de ressources sélectionnée bien avant d’entraîner le service de contenu dynamique sur les balises.
->1. Veuillez lire les [directives de formation de Smart Content Service](smart-tags-training-guidelines.md) avant de commencer la formation pour toute balise.
+>1. Lisez les [instructions d’entraînement du service de contenu dynamique](smart-tags-training-guidelines.md) avant de commencer l’entraînement pour n’importe quelle balise.
 >1. Lorsque vous entraînez le service de contenu dynamique pour la première fois, Adobe recommande de réaliser l’entraînement sur au moins deux balises distinctes.
 
 >
@@ -95,7 +94,7 @@ Vous pouvez entraîner le service de contenu dynamique périodiquement ou en fon
 
 ### Entraînement périodique  {#periodic-training}
 
-Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne périodiquement sur les ressources et les balises associées au sein d’un dossier. Ouvrez la page de propriétés de votre dossier de ressources, sélectionnez **[!UICONTROL Activer les balises actives]** sous l&#39;onglet **[!UICONTROL Détails]**, puis enregistrez les modifications.
+Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne périodiquement sur les ressources et les balises associées au sein d’un dossier. Ouvrez la page des propriétés de votre dossier de ressources, sélectionnez **[!UICONTROL Activer les balises intelligentes]** sous l’onglet **[!UICONTROL Détails]**, puis enregistrez les modifications.
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
@@ -114,7 +113,7 @@ Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est 
 
 >[!NOTE]
 >
->Une fois que les ressources d’un dossier sont traitées pour la formation, seules les ressources modifiées sont traitées au cours des cycles de formation suivants.
+>Une fois que les ressources d’un dossier sont traitées pour formation, seules les ressources modifiées sont traitées au cours des cycles de formation suivants.
 
 ### Affichage des rapports d’entraînement {#viewing-training-reports}
 
@@ -127,7 +126,7 @@ Pour vérifier que le service de contenu dynamique est entraîné sur vos balise
 1. Dans la page **[!UICONTROL Rapports de ressources]**, sélectionnez le rapport que vous avez généré. Pour afficher le rapport, appuyez/cliquez sur l’icône **[!UICONTROL Afficher]** dans la barre d’outils.
 1. Passez en revue les détails du rapport.
 
-   Le rapport affiche l’état d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de contenu dynamique est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le workflow d’entraînement pour l’entraînement complet du service sur la balise.
+   Le rapport affiche le statut d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de contenu dynamique est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le workflow d’entraînement pour l’entraînement complet du service sur la balise.
 
    Si vous ne voyez pas vos balises dans ce rapport, lancez à nouveau le workflow d’entraînement pour ces balises.
 
@@ -145,9 +144,9 @@ Vous pouvez exécuter le workflow de balisage périodiquement ou au besoin.
 
 ### Balisage périodique  {#periodic-tagging}
 
-Vous pouvez activer le service de contenu dynamique de façon à ce qu’il balise périodiquement les ressources au sein d’un dossier. Ouvrez la page de propriétés de votre dossier de ressources, sélectionnez **[!UICONTROL Activer les balises actives]** sous l&#39;onglet **[!UICONTROL Détails]**, puis enregistrez les modifications.
+Vous pouvez activer le service de contenu dynamique de façon à ce qu’il balise périodiquement les ressources au sein d’un dossier. Ouvrez la page des propriétés de votre dossier de ressources, sélectionnez **[!UICONTROL Activer les balises intelligentes]** sous l’onglet **[!UICONTROL Détails]**, puis enregistrez les modifications.
 
-Une fois cette option sélectionnée pour un dossier, Smart Content Service balise automatiquement les fichiers qu’il contient. Par défaut, le processus de balisage s’exécute tous les jours à 12h00.
+Une fois cette option sélectionnée pour un dossier, le service de contenu dynamique balise automatiquement les ressources qu’il contient. Par défaut, le workflow de balisage s’exécute tous les jours à 00h00.
 
 ### Balisage à la demande {#on-demand-tagging}
 
@@ -182,7 +181,7 @@ Vous pouvez déclencher le workflow de balisage à partir des emplacements suiva
 
    ![start_workflow](assets/start_workflow.png)
 
-1. Sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques)]** et spécifiez un titre pour le workflow.
+1. Sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques (DAM))]** et spécifiez un titre pour le workflow.
 1. Appuyez/cliquez sur **[!UICONTROL Démarrer]**. Le workflow applique vos balises aux ressources. Accédez au dossier de ressources et passez en revue les balises pour vérifier que le service de contenu dynamique a correctement balisé vos ressources. Pour plus d’informations, voir [Gestion des balises intelligentes](managing-smart-tags.md).
 
 >[!NOTE]
