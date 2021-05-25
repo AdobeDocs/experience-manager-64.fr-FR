@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: d363eec3-172b-413e-9743-ed51804ea1e9
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: f726cb73-732c-4893-bdb5-10ddcf4a340a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 81%
 
 ---
-
 
 # Interaction de Backbone {#backbone-interaction}
 
@@ -23,11 +22,11 @@ Backbone est une bibliothèque qui permet de créer et de suivre une architectur
 
 Voici quelques concepts clés :
 
-**Backbone** modelContient des données et la plupart de la logique associée à ces données.
+**Backbone** modelContient des données et la plupart de la logique liée à ces données.
 
 **Backbone** viewUtilisé pour représenter l’état du modèle correspondant. Une vue Backbone se comporte en fait comme un contrôleur, écoutant les événements de l’interface utilisateur comme les clics de l’utilisateur, ou les événements de modèle (comme les modifications de données), et modifie l’interface utilisateur en fonction des besoins.
 
-**** modèle HTMLModèle d’enveloppe contenant des espaces réservés renseignés par le modèle.
+**Modèle HTML** : modèle d’élément wrapper contenant des espaces réservés renseignés par le modèle.
 
 **AEM Forms** workspaceContient plusieurs composants individuels. Chaque composant :
 
@@ -54,9 +53,8 @@ Exemple :
 1. L’utilisateur clique sur un modèle de tâche dans la liste des tâches.
 1. La vue Tâches écoute le clic et appelle la fonction de rendu sur le modèle de tâche.
 1. Le modèle de tâche appelle ensuite le service qui est un point commun pour toute communication avec le serveur AEM Forms.
-1. La classe de service appelle le point de terminaison AEM Forms REST pour la méthode de rendu via ajax.
+1. La classe de service appelle le point de terminaison REST AEM Forms pour la méthode de rendu via ajax.
 1. Le rappel réussi de cette invocation Ajax est défini dans le modèle de la tâche.
 1. Le modèle de tâche déclenche un événement Backbone comme une notification indiquant que l’appel de rendu est terminé.
 1. Une autre vue, la vue des détails de la tâche écoute cet événement du modèle de la tâche.
 1. La vue des détails de la tâche modifie ensuite le modèle de détails de la tâche pour afficher la tâche générée (formulaire, détails, pièces jointes, notes, etc.) à l’utilisateur.
-
