@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: ef9352c7-c164-4cbf-8f18-5b97aa5f56be
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 81%
 
 ---
-
 
 # Utilisation des points de départ {#working-with-startpoints}
 
