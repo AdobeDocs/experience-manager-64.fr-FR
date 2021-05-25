@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
 pagetitle: Administering hybris
 feature: Commerce Integration Framework
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 27537d62-f032-4fb5-b2cf-003579b61ea8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1729'
+ht-degree: 91%
 
 ---
-
 
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
@@ -46,7 +45,7 @@ Après l’installation, vous pouvez configurer votre instance :
 1. **Ouvrez l’éditeur** sur **Sample Solr Configuration for clothescatalog**.
 
 1. Sous **Catalog versions**, utilisez **Add Catalog version** pour ajouter `outdoors-Staged` et `outdoors-Online` à la liste.
-1. **Enregistrez la configuration.**
+1. **enregistrez la configuration.**
 1. Ouvrez **SOLR Item types** pour ajouter **SOLR Sorts** à `ClothesVariantProduct` :
 
    * relevance (« Pertinence », score)
@@ -59,7 +58,7 @@ Après l’installation, vous pouvez configurer votre instance :
    >
    >Utilisez le menu contextuel (généralement clic droit) pour sélectionner `Create Solr sort`.
    >
-   >Pour Hybris 5.0.0, ouvrez l&#39;onglet `Indexed Types`, cliquez en doublon sur `ClothesVariantProduct`, puis l&#39;onglet `SOLR Sort`.
+   >Pour Hybris 5.0.0, ouvrez l’onglet `Indexed Types`, double-cliquez sur `ClothesVariantProduct`, puis l’onglet `SOLR Sort`.
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
@@ -103,7 +102,7 @@ Après l’installation, vous pouvez configurer votre instance :
 1. **Enregistrez** les modifications.
 1. Ouvrez **System**, **Facet search**, puis **Indexer operation wizard**. Commencez une tâche cronjob :
 
-   * **Opération** d&#39;indexation :  `full`
+   * **Opération** de l’indexeur :  `full`
    * **Configuration** Solr :  `Sample Solr Config for Clothes`
 
 ## Configuration de la version du catalogue {#configure-the-catalog-version}
@@ -206,7 +205,7 @@ Les propriétés ci-dessous indiquent le lien avec Hybris :
 
 >[!NOTE]
 >
->La mise en oeuvre de l&#39;hybris (c.-à-d. `geometrixx-outdoors/en_US`) ne stocke que les ID de produit et d&#39;autres informations de base sous `/etc/commerce`.
+>Mise en oeuvre d’Hybris (c.-à-d. `geometrixx-outdoors/en_US`) stocke uniquement les ID de produit et d’autres informations de base sous `/etc/commerce`.
 >
 >Le serveur Hybris est référencé chaque fois que des informations sur un produit sont demandées.
 
@@ -214,7 +213,7 @@ Les propriétés ci-dessous indiquent le lien avec Hybris :
 
 1. Si nécessaire, supprimez toutes les données existantes d’un produit à l’aide de CRXDE Lite.
 
-   1. Accédez à la sous-arborescence contenant les données du produit :
+   1. Accédez à la sous-arborescence contenant les données de produit :
 
       `/etc/commerce/products`
 
@@ -393,12 +392,12 @@ Pour supprimer un ou plusieurs produits du catalogue, procédez comme suit :
 
       [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
 
-   * Déploiement du catalogue `Hybris Base`
+   * Déployer le catalogue `Hybris Base`
    * Ouvrez :
 
       [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-   * Le produit `Cajamara` a été supprimé de la catégorie `Bike`
+   * Le produit `Cajamara` a été supprimé de la catégorie `Bike`.
 
 1. Pour réinstaller le produit :
 
@@ -415,7 +414,7 @@ Pour ajouter un historique de commandes à [ClientContext](/help/sites-developin
 
 1. Ouvrez la [page de conception de ClientContext](/help/sites-administering/client-context.md) selon l’une des méthodes suivantes :
 
-   * Ouvrez une page pour modification, puis ouvrez le contexte client à l’aide de **Ctrl-Alt-c** (windows) ou **control-option-c** (Mac). À l’aide de l’icône de crayon dans le coin supérieur gauche de ClientContext, **ouvrez la page de conception de ClientContext**.
+   * Ouvrez une page à modifier, puis ouvrez ClientContext à l’aide de **Ctrl-Alt-c** (Windows) ou **Ctrl-option-c** (Mac). À l’aide de l’icône de crayon dans le coin supérieur gauche de ClientContext, **ouvrez la page de conception de ClientContext**.
    * Accédez directement à [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html).
 
 1. [Ajoutez le composant **Historique de commandes**](/help/sites-administering/client-context.md#adding-a-property-component) au composant **Panier** de ClientContext.
