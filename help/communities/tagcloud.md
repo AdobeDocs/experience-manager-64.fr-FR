@@ -1,22 +1,21 @@
 ---
 title: Nuage de balises sociales
 seo-title: Nuage de balises sociales
-description: Ajouter un composant Social Tag Cloud à une page
-seo-description: Ajouter un composant Social Tag Cloud à une page
+description: Ajout d’un composant Nuage de balises sociales à une page
+seo-description: Ajout d’un composant Nuage de balises sociales à une page
 uuid: 8c400030-976c-457a-bb5f-e473909647a9
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
-translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+exl-id: 3f55a02c-2733-4f69-8112-7c6c4c98938c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 48%
 
 ---
-
 
 # Nuage de balises sociales {#using-social-tag-cloud}
 
@@ -26,25 +25,25 @@ Le composant `Social Tag Cloud` met en évidence les balises appliquées par les
 
 Pour connaître les autres moyens d’identifier les tendances actuelles, reportez-vous à la section [Tendances d’activité](trends.md).
 
-Cette page documents les paramètres de la boîte de dialogue du composant `Social Tag Cloud` et décrit l&#39;expérience de l&#39;utilisateur.
+Cette page documente les paramètres de la boîte de dialogue du composant `Social Tag Cloud` et décrit l’expérience utilisateur.
 
 Pour plus d’informations pour le développeur, reportez-vous à la section [Notions fondamentales sur les balises](tag.md). 
 
-Voir [Administration des balises](../../help/sites-administering/tags.md) pour plus d&#39;informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
+Voir [Administration des balises](../../help/sites-administering/tags.md) pour plus d’informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
 
 ## Ajout d’un composant Nuage de balises sociales {#adding-a-social-tag-cloud}
 
-Pour ajouter un composant `Social Tag Cloud` à une page en mode création, utilisez l’explorateur de composants pour localiser `Communities / Social Tag Cloud` et faites-le glisser sur une page sur laquelle le nuage de balises doit apparaître.
+Pour ajouter un composant `Social Tag Cloud` à une page en mode création, utilisez l’explorateur de composants pour localiser `Communities / Social Tag Cloud` et faites-le glisser sur une page où le nuage de balises doit apparaître.
 
-Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
+Pour plus d’informations, voir [Principes de base des composants des communautés](basics.md).
 
-Lorsque les [bibliothèques client requises](tag.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Social Tag Cloud` apparaîtra :
+Lorsque les [bibliothèques côté client requises](tag.md#essentials-for-client-side) sont incluses, voici comment le composant `Social Tag Cloud` apparaîtra :
 
 ![chlimage_1-303](assets/chlimage_1-303.png)
 
 ## Configuration du composant Nuage de balises sociales {#configuring-social-tag-cloud}
 
-Sélectionnez le composant `Social Tag Cloud` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Social Tag Cloud` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![chlimage_1-304](assets/chlimage_1-304.png)
 
@@ -61,19 +60,19 @@ Dans l’onglet **[!UICONTROL Nuage de balises sociales]**, spécifiez les balis
 
 * **[!UICONTROL Page]**
  (obligatoire si non 
-`All tags)` Chemin d’accès à l’UGC pour une page. Par défaut, la page actuelle est laissée vide.
+`All tags)` Chemin d’accès au contenu généré par l’utilisateur pour une page. Par défaut, la page actuelle est laissée vide.
 
 * **[!UICONTROL Aucun lien sur les balises]** Si cette option est sélectionnée, les balises sont affichées dans le nuage de balises en tant que texte brut. Si cette option n’est pas sélectionnée, les balises s’affichent sous forme de liens actifs qui effectuent une recherche sur tout le contenu auquel la balise est appliquée. Par défaut, l’option n’est pas sélectionnée et nécessite que **[!UICONTROL Chemin d’accès aux résultats de recherche]** soit défini.
 
-* **[!UICONTROL Chemin d&#39;]**
-accès aux résultats de la rechercheChemin d&#39;accès à une page sur laquelle un 
-`Search Result` a été placé, configuré pour référencer UGC qui inclut le chemin UGC spécifié par le paramètre  **** Pagessetting.
+* **[!UICONTROL Chemin d’]**
+accès aux résultats de recherche Chemin d’accès à une page sur laquelle un 
+`Search Result` Le composant a été placé, configuré pour référencer le contenu généré par l’utilisateur qui inclut le chemin d’accès généré par l’utilisateur spécifié par le paramètre  **** Page.
 
 ## Modification de l’affichage du nuage de balises sociales {#change-display-of-social-tag-cloud}
 
-Pour modifier l’affichage du **nuage de balises sociales**, saisissez [Mode de conception](../../help/sites-authoring/default-components-designmode.md) et cliquez sur le composant `Social Tag Cloud` placé pour ouvrir une boîte de dialogue avec un onglet supplémentaire.
+Pour modifier l’affichage du **Nuage de balises sociales**, saisissez [Mode de conception](../../help/sites-authoring/default-components-designmode.md) et double-cliquez sur le composant `Social Tag Cloud` inséré pour ouvrir une boîte de dialogue avec un onglet supplémentaire.
 
-A l’aide de l’onglet **[!UICONTROL Cloud de balises sociales (Conception)]**, spécifiez le mode d’affichage des balises. Une balise peut être une balise simple, un mot unique dans l’espace de nommage par défaut ou une taxonomie hiérarchique :
+À l’aide de l’onglet **[!UICONTROL Nuage de balises sociales (Conception)]**, indiquez comment les balises sont affichées. Une balise peut être une balise simple, un seul mot dans l’espace de noms par défaut ou une taxonomie hiérarchique :
 
 ![chlimage_1-306](assets/chlimage_1-306.png)
 
@@ -90,13 +89,13 @@ A l’aide de l’onglet **[!UICONTROL Cloud de balises sociales (Conception)]**
 
 * **[!UICONTROL Afficher uniquement les balises terminales]** Si cette option est cochée, elle affiche uniquement les balises appliquées ne contenant aucune autre balise.
 
-   Par exemple, à partir de l’ID de balise
+   Par exemple, étant donné l’ID de balise de
 
    `Geometrixx Media: Gadgets / Cars`
 
    Trois balises peuvent être appliquées : `Geometrixx Media (the namespace)`, `Gadgets` et `Cars`
 
-   * Cochée : seul `Cars` s’affichera, s’il est appliqué
+   * Cochée : seul `Cars` s’affiche, s’il est appliqué
    * Non coché : `Geometrixx Media` et `Gadgets`ainsi que `Cars` s’affichent, le cas échéant
 
    Une balise unique est une balise terminale.
@@ -109,6 +108,6 @@ A l’aide de l’onglet **[!UICONTROL Cloud de balises sociales (Conception)]**
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d&#39;informations, consultez la page [Tag Essentials](tag.md) destinée aux développeurs.
+Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur les balises](tag.md) pour les développeurs.
 
-Voir [Balisage du contenu généré par l’utilisateur](tag-ugc.md) (UGC) pour plus d’informations sur la création et la gestion des balises.
+Voir [Balisage de contenu généré par l’utilisateur](tag-ugc.md) (UGC) pour plus d’informations sur la création et la gestion des balises.
