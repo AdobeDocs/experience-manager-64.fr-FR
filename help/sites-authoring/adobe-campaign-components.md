@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
-translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+exl-id: 02641496-188b-465c-9256-b2e377eb685c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2786'
 ht-degree: 73%
 
 ---
 
-
 # Composants d’Adobe Campaign{#adobe-campaign-components}
 
 Lorsque vous procédez à l’intégration à Adobe Campaign, des composants sont disponibles pour l’utilisation de newsletters et de formulaires. Ils sont tous deux décrits dans ce document.
 
-## Composant Newsletter Adobe Campaign  {#adobe-campaign-newsletter-components}
+## Composant Newsletter Adobe Campaign {#adobe-campaign-newsletter-components}
 
 Tous les composants d’Adobe Campaign appliquent les méthodes recommandées décrites dans les [bonnes pratiques pour les modèles de courrier électronique](/help/sites-administering/best-practices-for-email-templates.md) et dépendent du langage de balisage [HTL](https://helpx.adobe.com/fr/experience-manager/htl/using/overview.html) d’Adobe.
 
@@ -76,15 +75,15 @@ Vous pouvez faire glisser et déposer une image à partir de l’[explorateur de
 
 >[!NOTE]
 >
->Vous devez entrer des informations dans le champ **Alt Text**, sinon l&#39;image ne peut pas être enregistrée.
+>Vous devez saisir des informations dans le champ **Texte de remplacement**, sinon l’image ne peut pas être enregistrée.
 
-Une fois l’image téléchargée (et pas avant), vous pouvez utiliser [l’édition statique](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) pour recadrer/faire pivoter l’image selon les besoins :
+Une fois l’image téléchargée (et pas avant), vous pouvez utiliser l’[édition statique](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) pour recadrer/faire pivoter l’image selon les besoins :
 
 ![](do-not-localize/chlimage_1-10.png)
 
 >[!NOTE]
 >
->L’éditeur statique utilise la taille d’origine et les proportions de l’image lors de la modification. Vous pouvez également spécifier les propriétés de hauteur et de largeur. Les restrictions de taille et de format définies dans les propriétés sont appliquées lorsque vous enregistrez vos modifications.
+>L’éditeur statique utilise la taille d’origine et les proportions de l’image lors de la modification. Vous pouvez également spécifier les propriétés de hauteur et de largeur. Toutes les restrictions de taille et de format définies dans les propriétés sont appliquées lorsque vous enregistrez vos modifications.
 >
 >Selon votre instance, des restrictions minimales et maximales peuvent aussi être imposées par la [conception de la page](/help/sites-developing/designer.md). Ces restrictions sont développées lors de la mise en œuvre du projet.
 
@@ -96,7 +95,7 @@ Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
 * **Map**
 
-   Pour mapper une image, sélectionnez Zone cliquable. Vous pouvez spécifier comment créer la zone cliquable (rectangle, polygone, etc.) et où la zone doit pointer.
+   Pour mapper une image, sélectionnez Mappage. Vous pouvez indiquer comment créer la zone cliquable (rectangle, polygone, etc.) et où la zone doit pointer.
 
 * **Recadrer**
 
@@ -104,7 +103,7 @@ Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
 * **Rotation**
 
-   Pour faire pivoter une image, sélectionnez Pivoter. Utilisez-le à plusieurs reprises jusqu’à ce que l’image soit pivotée comme vous le souhaitez.
+   Pour faire pivoter une image, sélectionnez Rotation. Utilisez plusieurs fois jusqu’à ce que l’image soit pivotée comme vous le souhaitez.
 
 * **Effacer**
 
@@ -120,11 +119,11 @@ Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
 * **Texte de remplacement**
 
-   Texte alternatif à utiliser lors de la création de contenu accessible.
+   Texte de remplacement à utiliser lors de la création de contenu accessible.
 
 * **Lier à**
 
-   Créez un lien vers des ressources ou d’autres pages de votre site Web.
+   Créez un lien vers des ressources ou d’autres pages de votre site web.
 
 * **Description**
 
@@ -155,9 +154,9 @@ Vous pouvez configurer les éléments ci-dessous sur les onglets **Affichage**, 
 
    Légende du lien. Il s’agit du texte que les utilisateurs voient.
 
-* **Info-bulle de lien**
+* **Info-bulle des liens**
 
-   Ajoute des informations supplémentaires sur la manière d’utiliser le lien.
+   Ajoute des informations supplémentaires sur l’utilisation du lien.
 
 * **LinkType**
 
@@ -169,7 +168,7 @@ Vous pouvez configurer les éléments ci-dessous sur les onglets **Affichage**, 
 
 >[!NOTE]
 >
->Vous devez entrer des informations dans le champ **Type de lien** de l&#39;onglet **Informations sur l&#39;URL**, sinon le composant ne peut pas enregistrer et vous voyez le message d&#39;erreur suivant :
+>Vous devez saisir des informations dans le champ **Type de lien** de l’onglet **Informations sur l’URL**. Sinon, le composant ne peut pas enregistrer et le message d’erreur suivant s’affiche :
 >
 >`Validation failed. Verify the values of the marked fields.`
 
@@ -180,13 +179,13 @@ L’exemple ci-dessous présente le composant Lien (Campaign) affiché.
 
 ### Modèle d’image Scene7 (Campaign) {#scene-image-template-campaign}
 
-[Les ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) modèles d’image Scene7 sont des fichiers d’image superposés où le contenu et les propriétés peuvent être paramétrés en fonction de la variabilité. Le composant **Modèle d’image** vous permet d’utiliser des modèles Dynamic Media Classic (anciennement Scene7) dans des bulletins d’information et de modifier les valeurs des paramètres de modèle. En outre, vous pouvez utiliser des variables de métadonnées Adobe Campaign à l’intérieur des paramètres, de sorte que chaque utilisateur expérimente l’image d’une manière personnalisée.
+[Les ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) modèles d’image Scene7 sont des fichiers d’image superposés, où le contenu et les propriétés peuvent être paramétrés pour la variabilité. Le composant **Modèle d’image** permet d’utiliser des modèles Dynamic Media Classic (anciennement Scene7) dans des newsletters et de modifier les valeurs des paramètres du modèle. En outre, vous pouvez utiliser des variables de métadonnées Adobe Campaign dans les paramètres, de sorte que chaque utilisateur expérimente l’image d’une manière personnalisée.
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
-Cliquez sur **Modifier** pour configurer le composant. Vous pouvez configurer les paramètres décrits dans cette section. Ce modèle d’image Dynamic Media Classic (anciennement Scene7) est décrit en détail dans le [composant Modèle d’image Scene7](/help/assets/scene7.md#image-template).
+Cliquez sur **Modifier** pour configurer le composant. Vous pouvez configurer les paramètres décrits dans cette section. Ce modèle d’image Dynamic Media Classic (anciennement Scene7) est décrit en détail dans la section [Composant Modèle d’image Scene7](/help/assets/scene7.md#image-template).
 
-En outre, le panneau de paramètres liste tous les paramètres de modèle définis pour le modèle dans Dynamic Media Classic (anciennement Scene7). Pour chacun de ces paramètres, vous pouvez personnaliser la valeur, insérer des variables ou rétablir leur valeur par défaut.
+En outre, le panneau des paramètres répertorie tous les paramètres de modèle définis pour le modèle dans Dynamic Media Classic (anciennement Scene7). Pour chacun de ces paramètres, vous pouvez personnaliser la valeur, insérer des variables ou rétablir leur valeur par défaut.
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
@@ -226,7 +225,7 @@ Comme pour les composants Texte et personnalisation (Campaign) et Image (Campaig
 
    Faites glisser une image à partir de l’Outil de recherche de contenu ou cliquez pour accéder à une image. Recadrez ensuite l’image ou faites-la pivoter.
 
-* **Propriétés**  de l’image (Propriétés **de l’image** avancée)
+* **Propriétés de l’image**  (**Propriétés avancées de l’image**)
 
    Sous cet onglet, vous pouvez spécifier les paramètres suivants :
 
@@ -240,7 +239,7 @@ Comme pour les composants Texte et personnalisation (Campaign) et Image (Campaig
 
    * **Lier à**
 
-      Créez un lien vers des ressources ou d’autres pages de votre site Web.
+      Créez un lien vers des ressources ou d’autres pages de votre site web.
 
    * **Description**
 
@@ -263,13 +262,13 @@ L’exemple ci-dessous présente le composant Texte et image (Campaign) affiché
 
 ### Texte et personnalisation (Campaign) {#text-personalization-campaign}
 
-Le composant Texte et personnalisation (Campaign) vous permet de saisir un bloc de texte à l’aide d’un éditeur WYSIWYG, avec les fonctionnalités fournies par l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md). De plus, ce composant permet d’utiliser des champs de contexte et des blocs de personnalisation, disponibles dans Adobe Campaign. Reportez-vous également à la section [Insertion d’une personnalisation](/help/sites-authoring/campaign.md#inserting-personalization).
+Le composant Texte et personnalisation (Campaign) permet de saisir un bloc de texte à l’aide d’un éditeur WYSIWYG, avec les fonctionnalités fournies par l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md). De plus, ce composant permet d’utiliser des champs de contexte et des blocs de personnalisation, disponibles dans Adobe Campaign. Reportez-vous également à la section [Insertion d’une personnalisation](/help/sites-authoring/campaign.md#inserting-personalization).
 
-Une série d’icônes permet de mettre en forme le texte (attributs de police, alignement, liens, listes et retrait). La fonctionnalité est essentiellement la même dans [les deux interfaces](/help/sites-authoring/editing-content.md), bien que l&#39;apparence soit différente :
+Une série d’icônes permet de mettre en forme le texte (attributs de police, alignement, liens, listes et retrait). La fonctionnalité est essentiellement la même dans les [deux interfaces utilisateur](/help/sites-authoring/editing-content.md), bien que l’aspect soit différent :
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
-Dans l’éditeur statique, vous pouvez ajouter du texte, modifier l’alignement, ajouter et supprimer des liens, ajouter des champs de contexte ou des blocs de personnalisation et passer en mode Plein écran. Une fois que vous avez fini d’ajouter du texte/une personnalisation, sélectionnez la coche pour enregistrer vos modifications (ou cliquez sur « x » pour annuler). Pour plus d’informations, voir [Modification en place](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste).
+Dans l’éditeur statique, vous pouvez ajouter du texte, modifier l’alignement, ajouter et supprimer des liens, ajouter des champs de contexte ou des blocs de personnalisation et passer en mode Plein écran. Une fois que vous avez fini d’ajouter du texte/une personnalisation, sélectionnez la coche pour enregistrer vos modifications (ou cliquez sur « x » pour annuler). Voir [Modification statique](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) pour plus d’informations.
 
 >[!NOTE]
 >
@@ -292,7 +291,7 @@ Vous utilisez des composants Adobe Campaign pour créer un formulaire que les ut
 
 Chaque champ d’un composant peut être associé à un champ de base de données Adobe Campaign. Les champs disponibles varient selon le type de données qu’ils contiennent, comme indiqué dans la section [Composants et type de données](#components-and-data-type). Si vous étendez le schéma de destinataire dans Adobe Campaign, les nouveaux champs sont disponibles dans les composants dont les types de données concordent.
 
-Lorsque vous ouvrez un formulaire configuré pour l’intégration à Adobe Campaign, vous voyez les composants suivants dans la section **Adobe Campaign** :
+Lorsque vous ouvrez un formulaire configuré pour s’intégrer à Adobe Campaign, les composants suivants s’affichent dans la section **Adobe Campaign** :
 
 * Case à cocher (Campaign)
 * Champ de date (Campaign) et champ de date/HTML5 (Campaign)
@@ -361,7 +360,7 @@ Dans la plupart des composants, vous pouvez configurer les éléments suivants 
 
 * **Titre**
 
-   Si vous souhaitez utiliser un nom autre que le nom de l’élément, entrez-le ici.
+   Si vous souhaitez utiliser un autre nom que le nom de l&#39;élément, saisissez-le ici.
 
 * **Masquer le titre**
 
@@ -373,7 +372,7 @@ Dans la plupart des composants, vous pouvez configurer les éléments suivants 
 
 * **N’afficher que la valeur**
 
-   Affiche uniquement la valeur, s’il y en a une
+   Affiche uniquement la valeur, s’il en existe une
 
 #### Adobe Campaign {#adobe-campaign}
 
@@ -393,11 +392,11 @@ Vous pouvez configurer les éléments suivants :
 
 * **Requis**
 
-   Activez cette case à cocher pour que ce composant soit requis ; autrement dit, les utilisateurs doivent saisir une valeur.
+   Cochez cette case pour que ce composant soit requis ; en d’autres termes, les utilisateurs doivent saisir une valeur.
 
 * **Message obligatoire**
 
-   Vous pouvez éventuellement ajouter un message indiquant que le champ est requis.
+   Vous pouvez éventuellement ajouter un message stipulant que le champ est obligatoire.
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -423,16 +422,16 @@ Utilisez le champ de date pour permettre aux destinataires d’indiquer une date
 
 Outre les [paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components), vous pouvez configurer les éléments suivants :
 
-* **Contraintes -** Liste déroulante Contraintes
+* **Contraintes - Liste déroulante** Contraintes
 
-   Vous pouvez sélectionner - **Aucun** ou **Date**- pour ajouter la contrainte d&#39;une date ou aucune contrainte. Si vous sélectionnez la date, la réponse que les utilisateurs renseignent dans le champ doit correspondre à un format de date.
+   Vous pouvez sélectionner - **Aucun** ou **Date**- pour ajouter la contrainte d’une date ou aucune contrainte. Si vous sélectionnez la date, la réponse que les utilisateurs renseignent dans le champ doit correspondre à un format de date.
 
 * **Message de contrainte**
 
    En outre, vous pouvez ajouter un message de contrainte pour que les utilisateurs sachent comment formater correctement leurs réponses.
-* **Style -**
-LargeurAjustez la largeur du champ en cliquant ou en appuyant sur le bouton 
-**+** et  **-** icônes ou saisie d’un nombre.
+* **Style :**
+LargeurAjustez la largeur du champ en cliquant ou en appuyant sur l’icône 
+**Les icônes +**  et  **-**  ou la saisie d’un nombre.
 
 L’exemple ci-dessous présente le composant Champ de date (Campaign), dont la largeur ajustée, affiché.
 
@@ -448,7 +447,7 @@ Vous pouvez configurer les éléments ci-dessous dans le composant Clé primaire
 
 * **Titre et texte - Nom de l’élément**
 
-   Par défaut, la valeur de encryptedPK est définie. Il suffit de modifier le nom d’élément lorsqu’il crée un conflit avec le nom d’un autre élément sur le formulaire. Deux champs de formulaire ne peuvent pas porter le même nom d’élément.
+   La valeur par défaut est encryptedPK. Il suffit de modifier le nom d’élément lorsqu’il crée un conflit avec le nom d’un autre élément sur le formulaire. Deux champs de formulaire ne peuvent pas porter le même nom d’élément.
 * **Adobe Campaign – Paramètre d’URL** Ajoutez le paramètre d’URL de l’EPK. Par exemple, vous pouvez utiliser la valeur 
 **epk**.
 
@@ -466,7 +465,7 @@ L’exemple ci-dessous présente le composant Affichage d’une erreur (Campaign
 
 ### Clé de réconciliation masquée (Campaign) {#hidden-reconciliation-key-campaign}
 
-Le composant Clé de réconciliation masquée (Campaign) vous permet d’ajouter des champs masqués dans le cadre de la clé de réconciliation à un formulaire.
+Le composant Clé de réconciliation masquée (Campaign) permet d&#39;ajouter des champs masqués dans le cadre de la clé de réconciliation d&#39;un formulaire.
 
 Vous pouvez configurer les éléments ci-dessous dans le composant Clé de réconciliation masquée (Campaign) :
 
@@ -485,16 +484,16 @@ Utilisez le champ numérique pour permettre aux destinataires de saisir des nomb
 
 Outre les [paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components), vous pouvez configurer les éléments suivants :
 
-* **Contraintes -** Liste déroulante Contraintes
+* **Contraintes - Liste déroulante** Contraintes
 
-   Vous pouvez sélectionner - **Aucun** ou **Numérique** - pour ajouter la contrainte d’un nombre ou d’aucune contrainte. Si vous sélectionnez Nombre, la réponse saisie par les utilisateurs dans le champ doit être numérique.
+   Vous pouvez sélectionner - **Aucun** ou **Numérique** - pour ajouter la contrainte d’un nombre ou aucune contrainte. Si vous sélectionnez Nombre, la réponse saisie par les utilisateurs dans le champ doit être numérique.
 
 * **Message de contrainte**
 
    En outre, vous pouvez ajouter un message de contrainte pour que les utilisateurs sachent comment formater correctement leurs réponses.
-* **Style -**
-LargeurAjustez la largeur du champ en cliquant ou en appuyant sur le bouton 
-**+** et  **-** icônes ou saisie d’un nombre.
+* **Style :**
+LargeurAjustez la largeur du champ en cliquant ou en appuyant sur l’icône 
+**Les icônes +**  et  **-**  ou la saisie d’un nombre.
 
 L’exemple ci-dessous présente le composant Champ numérique (Campaign), dont la largeur est configurée, affiché.
 
@@ -516,7 +515,7 @@ L’exemple ci-dessous présente le composant Champ d’option (Campaign) affich
 
 Utilisez le composant **Liste de contrôle d’abonnements (Campaign)** pour modifier les abonnements associés à un profil Adobe Campaign.
 
-Lorsque vous ajoutez ce composant à un formulaire, il affiche tous les abonnements disponibles sous forme de cases à cocher et permet à l’utilisateur de sélectionner les abonnements souhaités. Lorsque les utilisateurs envoient le formulaire, ce composant abonne l’utilisateur ou le désabonne des services sélectionnés en fonction du type d’action de formulaire (**Adobe Campaign: Abonnez-vous à Services** ou **Adobe Campaign : Désabonnez-vous des Services**).
+Lorsque vous ajoutez ce composant à un formulaire, il affiche tous les abonnements disponibles sous forme de cases à cocher et permet à l’utilisateur de sélectionner les abonnements souhaités. Lorsque les utilisateurs envoient le formulaire, ce composant abonne l’utilisateur aux services sélectionnés ou le désabonne des services sélectionnés en fonction du type d’action de formulaire (**Adobe Campaign : Abonnez-vous à Services** ou **Adobe Campaign : Désabonnez-vous des Services**).
 
 >[!NOTE]
 >
@@ -534,9 +533,9 @@ Le composant Champ de texte (Campaign) qui vous permet de saisir des données de
 
 Outre les [paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components), vous pouvez configurer les éléments suivants :
 
-* **Contraintes -** Liste déroulante Contraintes
+* **Contraintes - Liste déroulante** Contraintes
 
-   Vous pouvez sélectionner - **Aucun, E-mail,** ou **Nom (sans umlauts)**- pour ajouter la contrainte d&#39;une adresse électronique, d&#39;un nom ou d&#39;aucune contrainte. Si vous sélectionnez l’option Courrier électronique, la réponse saisie par les utilisateurs dans le champ doit correspondre à une adresse électronique. Si vous sélectionnez Nom, il doit s’agit d’un nom (les trémas ne sont pas autorisés).
+   Vous pouvez sélectionner - **Aucun, Email,** ou **Nom (aucun nombre)** - pour ajouter la contrainte d’une adresse électronique, d’un nom ou d’une aucune contrainte. Si vous sélectionnez l’option Courrier électronique, la réponse saisie par les utilisateurs dans le champ doit correspondre à une adresse électronique. Si vous sélectionnez Nom, il doit s’agit d’un nom (les trémas ne sont pas autorisés).
 
 * **Message de contrainte**
 
@@ -549,4 +548,3 @@ Outre les [paramètres communs à la plupart des composants Adobe Campaign](#set
 L’exemple ci-dessous présente le composant Champ de texte (Campaign) affiché.
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
-
