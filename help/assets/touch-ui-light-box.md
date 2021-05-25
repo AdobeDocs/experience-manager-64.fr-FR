@@ -2,16 +2,15 @@
 title: Lightbox
 description: 'Découvrez Lightbox dans AEM Assets. '
 contentOwner: AG
-feature: Developer Tools,Renditions
+feature: Outils de développement,Rendus
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: acb61924-9b71-474a-833d-e441c0b83cc7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '257'
 ht-degree: 98%
 
 ---
-
 
 # Lightbox {#lightbox}
 
@@ -42,4 +41,3 @@ Si vous êtes un utilisateur Adobe Experience Manager (AEM) Assets, Lightbox e
 1. Sélectionnez les ressources à supprimer.
 1. Dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
 1. Dans la boîte de dialogue, appuyez/cliquez sur **[!UICONTROL Supprimer]** pour confirmer la suppression. Les ressources sont supprimées de Lightbox.
-
