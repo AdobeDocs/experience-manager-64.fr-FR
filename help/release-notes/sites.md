@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 40225441-7cfe-4395-ac71-60504b42e764
-translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+exl-id: 19ec5c00-eae5-4e7f-9dc5-c7a88b06fd2a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 80%
 
 ---
-
 
 # Notes de mise à jour d’AEM Sites {#aem-sites-release-notes}
 
@@ -24,7 +23,7 @@ ht-degree: 80%
 
 Voir la documentation suivante pour une description détaillée des améliorations d’AEM Sites 6.4 :
 
-### Administration de sites  {#site-administration}
+### Administration de sites {#site-administration}
 
 * Nouveau rail d’arborescence de contenu pour naviguer rapidement au sein d’une hiérarchie de site. Conjointement avec le mode Liste, cela restaure le modèle d’interaction de l’interface utilisateur classique afin de parcourir un site.
 * Défilement optimisé en modes Carte et Liste au sein de dossiers volumineux.
@@ -58,16 +57,16 @@ Voir la documentation suivante pour une description détaillée des amélioratio
 
 >[!CAUTION]
 >
->aem inclut la version 1.12.4 de la bibliothèque jQuery afin de fournir une compatibilité maximale avec le code personnalisé existant. Adobe a procédé à des modifications de façon à résoudre les problèmes de sécurité connus.
+>AEM inclut la version 1.12.4 de la bibliothèque jQuery afin de fournir une compatibilité maximale avec le code personnalisé existant. Adobe a procédé à des modifications de façon à résoudre les problèmes de sécurité connus.
 
-### Fragments de contenu et éditeur  {#content-fragments-amp-editor}
+### Fragments de contenu et éditeur {#content-fragments-amp-editor}
 
 * Introduction des modèles de contenu structurés comme base des fragments de contenu
 
    * Interface utilisateur de l’éditeur de modèles
    * Éléments de données préconfigurés pour les modèles de fragments de contenu (texte sur une seule ligne, texte sur plusieurs lignes, nombre, booléen, date et heure, énumération, référence de contenu, balises)
 
-* Amélioration de l&#39;utilisation de l&#39;éditeur AEM de fragments de contenu
+* Amélioration de l’utilisation de l’éditeur de fragment de contenu AEM
 
    * Aperçu comprenant tous les éléments
    * Modification d’éléments uniques en plein écran
@@ -82,14 +81,14 @@ Voir la documentation suivante pour une description détaillée des amélioratio
 
 * Introduction des blocs de création de fragments d’expérience, de façon à faciliter la réutilisation du contenu entre les variations de fragments d’expérience en regroupant les composants et facilitant les références au sein des variations.
 * Ajout de la possibilité d’ajouter des fragments d’expérience aux projets de traduction via le rail de référence
-* Ajouté la capacité de début de workflows avec des fragments d’expérience via le rail de chronologie
+* Ajout de la possibilité de démarrer des workflows avec des fragments d’expérience via le rail de frise chronologique.
 * Le rail de référence indique maintenant où un fragment d’expérience est utilisé dans AEM
-* La configuration des emplacements de modèles permet désormais aux auteurs de définir au niveau global ou de dossier ce que les modèles de fragments d’expérience sont autorisés à utiliser
+* La configuration des emplacements de modèles permet désormais aux auteurs de définir au niveau global ou au niveau du dossier ce que les modèles de fragments d’expérience sont autorisés à utiliser.
 * La recherche à facettes prend désormais en charge le filtrage avancé, par exemple, publié, non publié, exporté sur les réseaux sociaux et Adobe Target
 * Ajout de la connexion unique aux réseaux sociaux lors de l’exportation de fragments de contenu vers Pinterest ou Facebook
 * Intégration des fragments de contenu AEM à Adobe Target. La synchronisation des fragments d’expérience avec Adobe Target créera dans ce dernier des offres utilisables avec son outil de composition d’expérience visuelle afin de l’incorporer dans n’importe quelle expérience optimisée par Target.
 
-### Traduction  {#translation}
+### Traduction {#translation}
 
 * Utilisation améliorée des projets de traduction AEM :
 
@@ -101,7 +100,7 @@ Voir la documentation suivante pour une description détaillée des amélioratio
 * Introduction de la mise à jour des mémoires de traduction inverse afin de mettre à jour les mémoires de traduction dans un système de gestion des traductions tiers suite à des modifications du contenu local dans AEM.
 * Les workflows de traduction prennent désormais en charge les racines de langues groupées
 * Ajout de la possibilité d’affecter des noms arbitraires aux racines de langues et d’utiliser la propriété JCR pour mapper avec le code ISO
-* Les mises à jour de traduction intelligente reconnaissent désormais les nouvelles pages ajoutées à une branche de gabarit de langue
+* Les mises à jour de traduction dynamique reconnaissent désormais les nouvelles pages ajoutées à une branche principale de langue
 * Introduction de la création de rapports d’état dans le mode Liste de l’administration de site
 
 ### Gestion multisite (MSM, Multi-Site Management)  {#multi-site-management-msm}
@@ -112,23 +111,23 @@ Voir la documentation suivante pour une description détaillée des amélioratio
 
 * Amélioration des performances des lancements contenant une grande arborescence de site et lorsque de nombreux lancements sont actifs.
 * Amélioration de l’autopromotion et de la publication des lancements avec plusieurs pages racines.
-* Correction d’un problème qui empêchait la prévisualisation de périphérique réactive de fonctionner avec les pages modifiées dans le contexte d’un lancement.
+* Correction d’un problème qui empêchait l’aperçu réactif de fonctionner avec les pages modifiées dans le contexte d’un lancement.
 
 ### Ciblage et simulation de contenu {#content-targeting-simulation}
 
-* Dossiers de prise en charge pour organiser les segments en fonction du site/contexte (CQ-94620)
+* Dossiers d’assistance pour l’organisation des segments en fonction du site/contexte (CQ-94620)
 * Emplacement par défaut des segments déplacé dans /conf pour disposer de listes de segments spécifiques en fonction du site/contexte.
 
 ### AEM et Adobe Target   {#aem-amp-adobe-target-nbsp}
 
 * Intégration des fragments de contenu AEM à Adobe Target. La synchronisation des fragments d’expérience avec Adobe Target créera dans ce dernier des offres utilisables avec son outil de composition d’expérience visuelle afin de l’incorporer dans n’importe quelle expérience optimisée par Target.
-* La version 63 de mbox.js Adobe Target est désormais incluse. Adobe recommande de choisir at.js pour la mise en œuvre.
-* Version 1.2.2 de at.js désormais intégrée. Adobe recommande d’utiliser la gestion dynamique des balises (DTM) ou [Adobe Experience Platform Launch](https://www.adobe.com/fr/enterprise/cloud-platform/launch.html) pour configurer at.js dans le site.
+* Adobe Target mbox.js version 63 est désormais inclus. Adobe recommande de choisir at.js pour la mise en œuvre.
+* Version 1.2.2 de at.js désormais intégrée. Adobe recommande d’utiliser Dynamic Tag Management (DTM) ou [Adobe Experience Platform Launch](https://www.adobe.com/fr/enterprise/cloud-platform/launch.html) pour provisionner at.js dans le site.
 
 ### AEM et Adobe Analytics {#aem-amp-adobe-analytics}
 
-* s_code.js H.27.5 est désormais inclus. L’Adobe recommande de basculer l’implémentation vers AppMeasurement.js
-* AppMeasurement.js 1.8.0 est désormais inclus. L’Adobe recommande d’utiliser la gestion dynamique des balises (DTM) ou [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) pour configurer AppMeasurement.js dans le site.
+* s_code.js H.27.5 désormais inclus. Adobe recommande de passer à la mise en oeuvre du fichier AppMeasurement.js .
+* AppMeasurement.js 1.8.0 désormais inclus. Adobe recommande d’utiliser Dynamic Tag Management (DTM) ou [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) pour provisionner AppMeasurement.js dans le site.
 
 ## Module complémentaire Communities {#communities-add-on}
 
@@ -141,5 +140,5 @@ Voir la [page de notes de mise à jour sur Communities](/help/release-notes/comm
 * Les affectations des canaux ont désormais une date de début et de fin.
 * Le tableau de bord du périphérique affiche désormais la version de shell et de micrologiciel du lecteur.
 * Le tableau de bord du périphérique affiche l’état de connexion du lecteur.
-* Prise en charge Ajoutée de Google Chrome OS pour AEM Screens Player
-* Microsoft Windows 10 Ajouté pour AEM Screens Player
+* Ajout de la prise en charge de Google Chrome OS pour AEM Screens Player
+* Ajout de Microsoft Windows 10 pour le lecteur AEM Screens
