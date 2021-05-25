@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 5e76fe09-4d37-4c8c-8baf-97e75689bd26
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Mise à niveau
+exl-id: 5798100a-e03a-43f8-9189-ae51c06e192b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 77%
 
 ---
-
 
 # Compatibilité descendante dans AEM 6.4{#backward-compatibility-in-aem}
 
@@ -25,13 +24,13 @@ ht-degree: 77%
 
 >[!NOTE]
 >
->Pour obtenir une liste des modifications de contenu et de configuration qui ne relèvent pas du package de compatibilité, voir la section [Restructuration du référentiel dans AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+>Pour obtenir la liste des modifications de contenu et de configuration qui ne font pas partie du package de compatibilité, voir [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
 Dans AEM 6.4, toutes les fonctionnalités ont été développées en tenant compte de la compatibilité ascendante.
 
-Dans la majorité des cas, les utilisateurs qui exécutent AEM 6.3 ne doivent pas changer le code ni les personnalisations lorsqu’ils effectuent la mise à niveau. Pour les clients AEM 6.1 et 6.2, il n&#39;y a pas de changement de rupture supplémentaire qui pourrait survenir lors d&#39;une mise à niveau vers la version 6.3.
+Dans la majorité des cas, les utilisateurs qui exécutent AEM 6.3 ne doivent pas changer le code ni les personnalisations lorsqu’ils effectuent la mise à niveau. Pour les clients AEM 6.1 et 6.2, il n’y a pas de modifications de rupture supplémentaires qui seraient rencontrées lors d’une mise à niveau vers la version 6.3.
 
-Dans les cas où la compatibilité descendante des fonctionnalités ne peut pas être conservée, il est possible de garantir la rétrocompatibilité des lots et du contenu en installant un module de compatibilité pour 6.3 (pour savoir où télécharger ce module, consultez la procédure de configuration ci-dessous). Ce package de compatibilité rétablira la compatibilité des applications conformes à AEM 6.3.
+Dans les cas où la compatibilité descendante des fonctionnalités ne peut pas être conservée, il est possible de garantir la rétrocompatibilité des lots et du contenu en installant un module de compatibilité pour 6.3 (pour savoir où télécharger ce module, consultez la procédure de configuration ci-dessous). Ce package de compatibilité rétablit la compatibilité des applications conformes à AEM 6.3.
 
 Le module de compatibilité vous permet d’exécuter AEM en mode de compatibilité et de différer le développement personnalisé par rapport à de nouvelles fonctionnalités d’AEM :
 
@@ -63,7 +62,7 @@ Le mode hérité s’adresse aux utilisateurs qui possèdent des interfaces pers
 
 ## Méthode de configuration {#how-to-set-up}
 
-Le package de compatibilité AEM 6.3 peut être installé en tant que package à l’aide de Package Manager. Vous pouvez télécharger le package de compatibilité [AEM 6.3 à partir du site Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
+Le package de compatibilité AEM 6.3 peut être installé en tant que package à l’aide du gestionnaire de modules. Vous pouvez télécharger le [module de compatibilité AEM 6.3 à partir du site Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
 
 Une fois le module de compatibilité installé, le routage peut être activé ou désactivé à l’aide d’un commutateur dans la configuration OSGI, comme indiqué ci-dessous :
 
