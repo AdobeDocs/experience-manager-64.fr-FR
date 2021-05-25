@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: c6e5c19a-9d93-470f-916e-7ef06c3de141
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '713'
 ht-degree: 91%
 
 ---
-
 
 # Recherche de formulaires et de ressources {#searching-for-forms-and-assets}
 
@@ -30,7 +29,7 @@ Cliquez sur ![aem6forms_search](assets/aem6forms_search.png) pour afficher ou ma
 
 La recherche de base constitue le type de recherche par défaut. Elle s’exécute sans spécifier aucun filtre. Une recherche de texte intégral sur des propriétés de métadonnées est effectuée par AEM Forms.
 
-Pour effectuer une recherche de base, entrez la requête dans le champ de texte et appuyez ensuite sur Entrée. Vous pouvez également entrer le caractère générique (&amp;ast;) pour faire correspondre n’importe quel nombre de caractères.
+Pour effectuer une recherche de base, entrez la requête dans le champ de texte et appuyez ensuite sur Entrée. Vous pouvez également saisir le caractère générique (&amp;ast;) pour faire correspondre n’importe quel nombre de caractères.
 
 Adobe Experience Manager recherche le texte saisi dans les propriétés de métadonnées et renvoie les résultats correspondants. Si vous entrez plusieurs mots, l’opération de recherche correspond à la totalité du texte.
 
@@ -40,8 +39,8 @@ Tenez compte des points suivants au sujet de la recherche de base :
 * Si vous entrez plusieurs mots, l’opération de recherche correspond à la totalité du texte.
 * La recherche ne respecte pas la casse. Par exemple, lorsque vous tapez `geometrixx`, les ressources dont les titres sont `Geometrixx`, `GEOMETRIXX` et `GeoMetRixx` s’affichent dans les résultats de la recherche.
 
-* Les correspondances partielles d’un mot ne sont pas prises en charge. Pour effectuer une recherche en utilisant des chaînes partielles, utilisez &amp;ast; générique. Toutefois, si la requête correspond à un mot complet, le formulaire ou la ressource correspondant s’affiche.
-* Les espaces supplémentaires sont respectés et ne sont pas coupés lors de la recherche. Par exemple, `My form` n&#39;est pas la même requête de recherche que `My form`.
+* Les correspondances partielles d’un mot ne sont pas prises en charge. Pour effectuer une recherche à l’aide de chaînes partielles, utilisez &amp;ast; caractère générique. Toutefois, si la requête correspond à un mot complet, le formulaire ou la ressource correspondant s’affiche.
+* Les espaces supplémentaires sont respectés et ne sont pas coupés lors de la recherche. Par exemple, `My form` n’est pas la même requête de recherche que `My form`.
 
 * Si les données et les valeurs d’affichage des champs dans les propriétés de métadonnées sont différentes, vous ne pouvez pas utiliser ces valeurs comme paramètres de recherche. Par exemple, vous ne pouvez effectuer une recherche sur la base de l’état, tel que Modifié ou Publié, car ces propriétés sont stockées dans un format différent.
 
