@@ -2,34 +2,33 @@
 title: Développement d’un proxy Assets
 description: 'Un proxy est une instance AEM qui utilise des programmes de travail par proxy pour le traitement des tâches. Découvrez comment configurer un proxy AEM, les opérations prises en charge et les composants de proxy, ainsi que comment développer un programme de travail par proxy personnalisé. '
 contentOwner: AG
-feature: Asset Processing
+feature: Traitement des ressources
 role: Administrator, Architect
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 73%
+source-wordcount: '902'
+ht-degree: 74%
 
 ---
-
 
 # Développement d’un proxy Assets {#assets-proxy-development}
 
 Adobe Experience Manager (AEM) Assets utilise un proxy pour distribuer le traitement de certaines tâches.
 
-Un proxy est une instance AEM spécifique (et parfois distincte) qui utilise des workers de proxy comme processeurs chargés de gérer une tâche et de produire un résultat. Un worker de proxy peut être utilisé pour de nombreuses tâches. Dans le cas d’un proxy AEM Assets, il peut être utilisé pour charger des ressources pour le rendu dans AEM Assets. Par exemple, le [worker de proxy IDS](indesign.md) utilise un serveur InDesign pour traiter les fichiers à utiliser dans AEM Assets.
+Un proxy est une instance AEM spécifique (et parfois distincte) qui utilise des workers de proxy comme processeurs chargés de gérer une tâche et de produire un résultat. Un worker de proxy peut être utilisé pour de nombreuses tâches. Dans le cas d’un proxy AEM Assets, cette méthode peut être utilisée pour charger des ressources à des fins de rendu dans AEM Assets. Par exemple, le [worker de proxy IDS](indesign.md) utilise un serveur InDesign pour traiter les fichiers à utiliser dans AEM Assets.
 
-Lorsque le proxy est une instance AEM distincte, il contribue à réduire la charge sur la ou les instances de création AEM. Par défaut, AEM Assets exécute les tâches de traitement des fichiers dans la même JVM (externalisée par proxy) afin de réduire la charge sur l’instance de création AEM.
+Lorsque le proxy est une instance AEM distincte, il contribue à réduire la charge sur la ou les instances de création AEM. Par défaut, AEM Assets exécute les tâches de traitement des ressources dans la même JVM (externalisée via proxy) afin de réduire la charge sur l’instance de création AEM.
 
 ## Proxy (Accès HTTP) {#proxy-http-access}
 
-Un proxy est disponible via le servlet HTTP lorsqu’il est configuré pour accepter des tâches de traitement à l’adresse suivante : `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Elle est ensuite ajoutée à la file d’attente des tâches du proxy et connectée au worker de proxy approprié.
+Un proxy est disponible via le servlet HTTP lorsqu’il est configuré pour accepter des tâches de traitement à l’adresse : `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Elle est ensuite ajoutée à la file d’attente des tâches du proxy et connectée au worker de proxy approprié.
 
 ### Opérations prises en charge {#supported-operations}
 
 * `job`
 
-   **Exigences** : le paramètre `jobevent` doit être défini en tant que correspondance de valeur en série. Il est utilisé pour créer un `Event` pour un processeur de travaux.
+   **Exigences** : le paramètre `jobevent` doit être défini en tant que correspondance de valeur en série. Il est utilisé pour créer une `Event` pour un traitement de tâche.
 
    **Résultat** : ajoute une nouvelle tâche. Si l’opération réussit, un identifiant de tâche unique est renvoyé.
 
@@ -40,7 +39,7 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
 
 * `result`
 
-   **Exigences** : le paramètre  `jobid` doit être défini.
+   **Conditions requises** : le paramètre  `jobid` doit être défini.
 
    **Résultat** : renvoie une représentation JSON du nœud de résultats tel que créé par le processeur de tâches.
 
@@ -111,7 +110,7 @@ Voici un exemple d’utilisation d’API :
 >
 >La documentation de référence pour l’API de proxy est disponible sous [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 
-Les configurations de proxy et de proxy worker sont disponibles par le biais des configurations de services Cloud comme accessibles à partir de la console **Outils** AEM Assets ou sous `/etc/cloudservices/proxy`. Chaque agent proxy doit ajouter un noeud sous `/etc/cloudservices/proxy` pour les détails de configuration spécifiques au programme de travail (par exemple, `/etc/cloudservices/proxy/workername`).
+Les configurations de worker de proxy et de proxy sont disponibles via les configurations de services cloud comme accessibles à partir de la console **Outils** AEM Assets ou sous `/etc/cloudservices/proxy`. Chaque worker de proxy doit ajouter un noeud sous `/etc/cloudservices/proxy` pour les détails de configuration spécifiques au worker (par exemple, `/etc/cloudservices/proxy/workername`).
 
 >[!NOTE]
 >
@@ -134,9 +133,9 @@ Voici un exemple d’utilisation d’API :
 
 ### Développement d’un worker de proxy personnalisé {#developing-a-customized-proxy-worker}
 
-Le [service de proxy IDS](indesign.md) est un exemple de service de proxy AEM Assets qui est déjà fourni prêt à l&#39;emploi pour sous-traiter le traitement des ressources Indesign.
+Le [worker de proxy IDS](indesign.md) est un exemple de worker de proxy AEM Assets qui est déjà fourni prêt à l’emploi pour externaliser le traitement des ressources InDesign.
 
-Vous pouvez également développer et configurer votre propre collaborateur proxy AEM Assets pour créer un collaborateur spécialisé qui répartira et externalisera vos tâches de traitement AEM Assets.
+Vous pouvez également développer et configurer votre propre worker de proxy AEM Assets afin de créer un worker spécialisé pour distribuer et externaliser vos tâches de traitement AEM Assets.
 
 Pour configurer votre propre worker de proxy personnalisé, vous devez effectuer les opérations suivantes :
 
@@ -178,9 +177,9 @@ Le schéma et les étapes ci-dessous détaillent la procédure à suivre :
 
 >[!NOTE]
 >
->Ce que le cadre proxy AEM Assets ne fournit pas prêt à l&#39;emploi est le mécanisme de pool.
+>Le mécanisme de pool n’est pas fourni par la structure de proxy AEM Assets prête à l’emploi.
 >
->L’intégration InDesign autorise l’accès à un pool de serveurs InDesign (IDSPool). Ce pool est spécifique à l’intégration d’Indesign et ne fait pas partie de la structure proxy AEM Assets.
+>L’intégration InDesign autorise l’accès à un pool de serveurs InDesign (IDSPool). Ce pool est spécifique à l’intégration InDesign et ne fait pas partie de la structure de proxy AEM Assets.
 
 >[!NOTE]
 >
