@@ -7,9 +7,8 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 exl-id: 36bb526c-a6d9-4296-8318-97ac72d6b3ba
-feature: Publishing
+feature: Publication
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '335'
@@ -41,7 +40,7 @@ Voir aussi [Liaison d’URL à une application web.](linking-urls-to-yourwebappl
    >
    >La ressource sélectionnée *et* le paramètre d’image prédéfini ou le paramètre de visionneuse prédéfini sélectionné doivent être publiés pour que le bouton **[!UICONTROL URL]** ou **[!UICONTROL RESS]** soit disponible.
    >
-   >Dynamic Media - Le mode hybride nécessite la publication des paramètres d’image prédéfinis ; Dynamic Media - Le mode Scene7 publie automatiquement les paramètres d’image prédéfinis.
+   >Dynamic Media - Le mode hybride requiert la publication de paramètres d’image prédéfinis ; Dynamic Media : le mode Scene7 publie automatiquement les paramètres d’image prédéfinis.
 
 1. Appuyez sur **[!UICONTROL RESS]**.
 
