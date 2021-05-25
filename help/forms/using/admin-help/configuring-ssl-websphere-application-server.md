@@ -9,20 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 653daaa4-9e35-40eb-a61e-274109f5f0d2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 93%
 
 ---
 
-
 # Configuration de SSL pour WebSphere Application Server {#configuring-ssl-for-websphere-application-server}
 
 Cette section décrit la procédure permettant de configurer SSL sur IBM WebSphere Application Server.
 
-## Création d’un compte d’utilisateur local sur WebSphere  {#creating-a-local-user-account-on-websphere}
+## Création d’un compte d’utilisateur local sur WebSphere {#creating-a-local-user-account-on-websphere}
 
 Pour activer SSL, WebSphere doit accéder à un compte d’utilisateur dans le registre utilisateur du système d’exploitation local, qui soit autorisé à administrer le système :
 
@@ -42,11 +41,11 @@ Pour activer SSL, WebSphere doit accéder à un compte d’utilisateur dans le r
 
    >[!NOTE]
    >
-   >(Linux et Solaris) pour que le registre de sécurité du système d’exploitation local du serveur d’applications WebSphere soit opérationnel, le fichier des mots de passe cachés doit exister. Le fichier de mot de passe instantané est généralement nommé **/etc/shadow*** et est basé sur le fichier /etc/passwd. S’il n’existe pas, une erreur se produit après l’activation de la sécurité globale et la configuration du registre de l’utilisateur comme système d’exploitation local.*
+   >(Linux et Solaris) pour que le registre de sécurité du système d’exploitation local du serveur d’applications WebSphere soit opérationnel, le fichier des mots de passe cachés doit exister. Le fichier de mot de passe fantôme est généralement nommé **/etc/shadow*** et est basé sur le fichier /etc/passwd . S’il n’existe pas, une erreur se produit après l’activation de la sécurité globale et la configuration du registre de l’utilisateur comme système d’exploitation local.*
 
 1. Ouvrez le fichier de groupe du répertoire /etc dans un éditeur de texte.
 1. Ajoutez l’utilisateur créé à l’étape 2 au groupe `root`.
-1. Enregistrez et fermez le fichier 
+1. Enregistrez et fermez le fichier.
 1. (UNIX avec SSL activé) Démarrez et arrêtez WebSphere en tant qu’utilisateur root.
 
 ### Création d’un utilisateur Windows pour WebSphere  {#create-a-windows-user-for-websphere}
@@ -73,7 +72,7 @@ Pour activer SSL, WebSphere doit accéder à un compte d’utilisateur dans le r
 1. Sous Administrative Security, sélectionnez les **rôles utilisateurs administratifs**.
 1. Cliquez sur Add et effectuez les opérations suivantes :
 
-   1. Tapez **&amp;ast;** dans la zone de recherche et cliquez sur search.
+   1. Saisissez **&amp;ast;** dans la zone de recherche, puis cliquez sur Rechercher.
    1. Cliquez sur le rôle **Administrator**.
    1. Ajoutez l’utilisateur nouvellement créé dans la zone Mapped to role et mappez-le à Administrator.
 
@@ -84,10 +83,10 @@ Pour activer SSL, WebSphere doit accéder à un compte d’utilisateur dans le r
 
 1. Dans la console d’administration WebSphere, sélectionnez **Security > Global Security**.
 1. Cliquez sur **Security Configuration Wizard**.
-1. Assurez-vous que la case à cocher **Enable Application Security** est activée. Cliquez sur **Next** (Suivant).
+1. Assurez-vous que la case à cocher **Enable Application Security** est activée. Cliquez sur **Suivant**.
 1. Sélectionnez **Federated Repositories** et cliquez sur **Next**.
 1. Spécifiez les informations d’identification que vous souhaitez configurer et cliquez sur **Next**.
-1. Cliquez sur **Terminer**.
+1. Cliquez sur **Finish** (Terminer). 
 1. Redémarrez le profil WebSphere.
 
    WebSphere commencera à utiliser le fichier de stockage de clés et le fichier de magasin d’approbations (Trust Store) par défaut.
@@ -183,4 +182,3 @@ Effectuez les étapes suivantes pour faire en sorte que le port soit dynamique e
    ```
 
 1. Enregistrez le fichier et redémarrez le serveur.
-
