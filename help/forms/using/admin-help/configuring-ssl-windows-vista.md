@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 667645a0-53d0-4f9b-a0ba-cc7e366a23a1
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 8eee2ed2-8263-47f2-b928-214fd9ab5f6e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 63%
 
 ---
-
 
 # Configuration de SSL sous Windows Vista {#configuring-ssl-on-windows-vista}
 
@@ -32,11 +31,10 @@ Vous pouvez exécuter l’outil keytool en saisissant une seule commande qui com
 
 1. Dans une invite de commande, accédez à *[JAVA HOME]*/bin et saisissez la commande suivante pour créer le certificat et le fichier de stockage des clés :
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Nom* `, OU=`*d&#39;hôte* `, O=`*Nom du groupe* `,L=`*Nom de la sociétéVille*****Nom* Code `, S=`** `, C=`** `" -alias`*ÉtatPays&quot;Cert LC&quot;* `-keypass` `*key*`*_*mot de passe nom_stockage *`.keystore`**`-keystore`*
+   `keytool -genkey -keyalg RSA -dname "CN=`*Host* `, OU=`*NameGroup* `, O=`*NameCompany* `,L=`*NameCity******Name*  `, S=`** `, C=`*StateCountry Code* `" -alias`*&quot;LC Cert&quot;* `-keypass` `*key*`*_*** `-keystore`*passwordkeystorename* `.keystore`
 
    >[!NOTE]
    >
    >Remplacez *[JAVA_HOME] par le répertoire dans lequel le JDK est installé, puis remplacez le texte en italique par les valeurs correspondant à votre environnement.*
 
-1. Tapez `changeit` comme mot de passe. Il s’agit du mot de passe par défaut d’une installation Java, mais l’administrateur système peut l’avoir modifié.
-
+1. Saisissez `changeit` comme mot de passe. Il s’agit du mot de passe par défaut d’une installation Java, mais l’administrateur système peut l’avoir modifié.
