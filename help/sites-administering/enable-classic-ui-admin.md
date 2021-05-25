@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 98ba3093-1edb-4891-abbe-47cf6e4f1feb
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: f3c03562-aaeb-4d43-aee1-d92d661ee329
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 72%
 
 ---
-
 
 # Consoles d’administration{#admin-consoles}
 
@@ -24,11 +23,11 @@ Par défaut, la possibilité de basculer vers l’IU classique via les consoles 
 
 ![screen_shot_2018-03-23at111956](assets/screen_shot_2018-03-23at111956.png)
 
-Chaque console disposant d’une version d’interface utilisateur classique dans `/libs/cq/core/content/nav` peut être réactivée individuellement afin que l’option **IU classique** s’affiche de nouveau sur l’icône de console lorsqu’elle est remplacée.
+Chaque console disposant d’une version d’IU classique dans `/libs/cq/core/content/nav` peut être réactivée individuellement afin que l’option **IU classique** s’affiche une fois de plus sur l’icône de console lorsqu’elle est pointée sur celle-ci.
 
 Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
-1. A l’aide de CRXDE Lite, recherchez le noeud correspondant à la console d’administration pour laquelle vous souhaitez réactiver l’interface utilisateur classique. Il se trouve sous :
+1. À l’aide de CRXDE Lite, recherchez le noeud correspondant à la console d’administration pour laquelle vous souhaitez réactiver l’interface utilisateur classique. Il se trouve sous :
 
    `/libs/cq/core/content/nav`
 
@@ -40,7 +39,7 @@ Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
    `/libs/cq/core/content/nav/sites`
 
-1. Créez une incrustation à l’aide de l’option **Noeud d’incrustation** ; par exemple :
+1. Créez une superposition à l’aide de l’option **Noeud de recouvrement** ; par exemple :
 
    * **Chemin**: `/apps/cq/core/content/nav/sites`
    * **Emplacement du recouvrement**: `/apps/`
