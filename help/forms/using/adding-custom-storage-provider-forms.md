@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
-feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Portail Formulaires
+exl-id: 22f78940-de5f-4e16-b1f8-c3762d81802b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '333'
+ht-degree: 75%
 
 ---
-
 
 # Stockage personnalisé pour les composants Drafts et Submissions {#custom-storage-for-drafts-and-submissions-component}
 
@@ -26,12 +25,12 @@ AEM Forms vous permet d’enregistrer un formulaire sous forme de brouillon. La 
 
 Par défaut, AEM Forms stocke les données utilisateur associées au brouillon et à l’envoi d’un formulaire dans le noeud `/content/forms/fp` de l’instance de publication. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Par exemple, vous pouvez stocker des données utilisateur dans un magasin de données.
 
-## Conditions préalables  {#prerequisites}
+## Prérequis  {#prerequisites}
 
-* Activer [les composants du portail de formulaires](/help/forms/using/enabling-forms-portal-components.md)
-* Créer une [page du portail de formulaires](/help/forms/using/creating-form-portal-page.md)
-* Activer [les formulaires adaptatifs pour Forms Portal](/help/forms/using/draft-submission-component.md)
-* Découvrez [les détails d&#39;implémentation de l&#39;enregistrement personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Activation des [composants Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
+* Créer une [page Forms Portal](/help/forms/using/creating-form-portal-page.md)
+* Activation de [formulaires adaptatifs pour le portail de formulaires](/help/forms/using/draft-submission-component.md)
+* Découvrez les [détails de mise en oeuvre du stockage personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Service de données de brouillon {#draft-data-service}
 
@@ -185,7 +184,7 @@ public interface SubmitDataService {
 }
 ```
 
-Le portail Forms utilise le concept d’identificateur unique universel (UUID) pour générer un identificateur unique pour chaque brouillon et formulaire envoyé. Vous pouvez également générer un identifiant unique de votre choix. Vous pouvez implémenter l’interface FPKeyGeneratorService, remplacer ses méthodes et développer une logique personnalisée pour générer un identifiant unique personnalisé pour chaque brouillon et formulaire envoyé. En outre, définissez le rang de service de l’implémentation de génération d’ID personnalisé sur une valeur supérieure à 0. Cela garantit que l’implémentation personnalisée est utilisée à la place de l’implémentation par défaut.
+Le portail Forms utilise le concept d’identificateur unique universel (UUID) pour générer un identificateur unique pour chaque brouillon et formulaire envoyé. Vous pouvez également générer un identifiant unique de votre choix. Vous pouvez mettre en oeuvre l’interface FPKeyGeneratorService, remplacer ses méthodes et développer une logique personnalisée afin de générer un identifiant unique personnalisé pour chaque brouillon et formulaire envoyé. En outre, définissez le rang de service de l’implémentation de génération d’ID personnalisé sur une valeur supérieure à 0. Cela garantit que l’implémentation personnalisée est utilisée à la place de l’implémentation par défaut.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -204,10 +203,9 @@ Vous pouvez utiliser l’annotation ci-dessous pour augmenter le classement du s
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-Pour utiliser l’annotation ci-dessus, importe les éléments suivants dans votre projet :
+Pour utiliser l’annotation ci-dessus, importez les éléments suivants dans votre projet :
 
 ```
 import org.apache.felix.scr.annotations.Properties;
  import org.apache.felix.scr.annotations.Property;
 ```
-
