@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Correspondence Management
+exl-id: 8b1bbd85-66ba-4e96-917a-d768d84a417f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 78%
 
 ---
-
 
 # Intégration de l’interface utilisateur de création de correspondance dans votre portail personnalisé {#integrating-create-correspondence-ui-with-your-custom-portal}
 
@@ -33,8 +32,8 @@ Il est possible d’appeler l’application de création de correspondance à pa
 * l’URL des données XML extraites à partir de la source de données sélectionnée (à l’aide du paramètre cmDataUrl).
 
 Par exemple, le portail personnalisé prépare l’URL en tant que\
-`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, qui peut être la valeur href d’un lien sur le portail.\
-Si le nom du modèle de lettre est disponible sur le portail, l’URL peut être\
+`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, qui peut être la balise href d’un lien sur le portail.\
+Si le nom du modèle de lettre est à portée de main sur le portail, l’URL peut être\
 `https://[server]:[port]/content/cm/createcorrespondence.html?cmLetterName=[letter name]&cmDataUrl=[data URL]`.
 
 >[!NOTE]
@@ -47,7 +46,7 @@ Si le nom du modèle de lettre est disponible sur le portail, l’URL peut être
 
 ## Appel inséré basé sur les données  {#inline-data-based-invocation}
 
-Un autre moyen (et plus sécurisé) d&#39;appeler l&#39;application de création de correspondance peut consister à simplement accéder à l&#39;URL `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, tout en envoyant les paramètres et les données pour appeler l&#39;application de création de correspondance en tant que demande de POST (en les masquant de l&#39;utilisateur final). En outre, vous pouvez désormais transmettre les données XML à l’application de création de correspondance en mode POST (dans le cadre de la même demande à l’aide du paramètre cmData), ce qui n’était pas possible (ou idéal) dans l’approche précédente.
+Un autre moyen (plus sécurisé) d’appeler l’application de création de correspondance consiste à accéder simplement à l’URL à l’adresse `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, tout en envoyant les paramètres et les données pour appeler l’application de création de correspondance en tant que demande de POST (en les masquant à l’utilisateur final). En outre, vous pouvez désormais transmettre les données XML à l’application de création de correspondance en mode POST (dans le cadre de la même demande à l’aide du paramètre cmData), ce qui n’était pas possible (ou idéal) dans l’approche précédente.
 
 ### Paramètres de définition de lettre  {#parameters-for-specifying-letter}
 
@@ -61,7 +60,7 @@ Un autre moyen (et plus sécurisé) d&#39;appeler l&#39;application de création
   <tr>
    <td>cmLetterInstanceId</td> 
    <td>Chaîne</td> 
-   <td>Identificateur de l’instance de lettre.</td> 
+   <td>Identifiant de l’instance de lettre.</td> 
   </tr>
   <tr>
    <td>cmLetterName</td> 
@@ -129,4 +128,4 @@ L’ordre des paramètres du tableau indique la préférence de paramètres util
  </tbody>
 </table>
 
-Si vous utilisez le protocole http ou cq pour cmDataURL, l’URL de http/cq doit être accessible anonymement.
+Si vous utilisez le protocole http ou cq pour cmDataURL, l’URL de http/cq doit être accessible de manière anonyme.
