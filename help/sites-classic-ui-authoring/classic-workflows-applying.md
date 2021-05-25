@@ -1,6 +1,6 @@
 ---
-title: 'Application de workflows aux pages  '
-seo-title: 'Application de workflows aux pages  '
+title: Application de workflows aux pages
+seo-title: Application de workflows aux pages
 description: Les workflows peuvent être démarrés à partir de la console Sites web ou, lors de la modification d’une page, à partir du sidekick.
 seo-description: Les workflows peuvent être démarrés à partir de la console Sites web ou, lors de la modification d’une page, à partir du sidekick.
 uuid: 55f6f1d7-da54-4732-b9ff-b7479622db51
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: f10680e5-e8ae-49a0-ae52-3aa1f22b2d3e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 86%
 
 ---
 
-
-# Application de workflows aux pages  {#applying-workflows-to-pages}
+# Application de workflows aux pages{#applying-workflows-to-pages}
 
 Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes :
 
@@ -34,13 +33,13 @@ Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes 
 >
 >Les administrateurs AEM peuvent commencer des workflows à l’aide de [plusieurs autres méthodes](/help/sites-administering/workflows-starting.md).
 
-## Application de workflows  {#applying-workflows}
+## Application de workflows {#applying-workflows}
 
 Les workflows peuvent être démarrés à partir de la console Sites web ou, lors de la modification d’une page, à partir du sidekick.
 
-La colonne **État** de la console **Sites Web** indique si un processus a été appliqué à une page :
+La colonne **État** de la console **Sites Web** indique si un workflow a été appliqué à une page :
 
-![workflow status](assets/workflowstatus.png)
+![workflowstatus](assets/workflowstatus.png)
 
 ### Démarrage d’un workflow à partir de la console Sites web {#starting-a-workflow-from-the-websites-console}
 
@@ -54,9 +53,8 @@ La colonne **État** de la console **Sites Web** indique si un processus a été
 1. Ouvrez la console Sites web.
 1. Ouvrez la page requise.
 1. Sélectionnez l’onglet Worfklow dans le sidekick.
-1. Développez la boîte de dialogue **Workflow**, ce qui vous permet de sélectionner **Workflow** et éventuellement de saisir **Workflow Title** et **Comment**.
+1. Développez la boîte de dialogue **Workflow**, ce qui vous permet de sélectionner le **Workflow** et éventuellement de saisir le **Titre du workflow** et **Commentaire**.
 
-   ![workflow startsidekick](assets/workflowstartsidekick.png)
+   ![workflowstartsidekick](assets/workflowstartsidekick.png)
 
 1. Cliquez sur **Démarrer le workflow** pour démarrer une nouvelle instance de workflow avec les propriétés que vous avez configurées et la page actuelle comme charge utile. Le workflow s’exécute à présent.
-
