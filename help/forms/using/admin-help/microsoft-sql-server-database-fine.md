@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.4/FORMS, SG_AEMFORMS
 discoiquuid: 70559a94-42ea-411a-a32f-5f38bc17ff96
-translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+exl-id: 5392027c-eb5a-49c4-bf9b-fe7d399ae0a1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 100%
 
 ---
-
 
 # Base de données SQL Server : réglage précis de la configuration {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
@@ -30,7 +29,7 @@ Augmentez autant que possible l’allocation de mémoire minimale. Si la base de
 
 Modifiez les paramètres de processeur et, surtout, cochez la case Forcer la priorité de SQL Server sous Windows, de sorte que le serveur exploite autant de cycles que possible. Le paramètre Utiliser les fibres Windows NT est moins important, mais vous pouvez également le sélectionner.
 
-## Paramètres de base de données  {#database-settings}
+## Paramètres de base de données {#database-settings}
 
 Modifiez les paramètres de base de données. Le paramètre le plus important est Intervalle de récupération, qui spécifie le délai d’attente maximal après un blocage. Le paramètre par défaut est d’une minute. L’augmentation de ce délai (entre 5 et 15 minutes) améliore les performances en donnant plus de temps au serveur pour écrire dans les fichiers de la base de données les changements stockés dans le journal de la base de données.
 
