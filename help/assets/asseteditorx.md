@@ -1,19 +1,18 @@
 ---
-title: Étendre l’éditeur de fichiers
+title: Étendre l’Éditeur de ressources
 description: Découvrez comment étendre les fonctionnalités de l’Éditeur de ressources en utilisant des composants personnalisés.
 contentOwner: AG
-feature: Developer Tools
+feature: Outils de développement
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '703'
 ht-degree: 98%
 
 ---
 
-
-# Étendre l’éditeur de ressources {#extending-asset-editor}
+# Étendre l’Éditeur de ressources {#extending-asset-editor}
 
 L’Éditeur de ressources est la page qui s’ouvre lorsque l’utilisateur clique sur une ressource trouvée par le biais du partage de ressources, ce qui lui permet de modifier certains aspects de la ressource, tels que les métadonnées, la miniature, le titre et les balises.
 
