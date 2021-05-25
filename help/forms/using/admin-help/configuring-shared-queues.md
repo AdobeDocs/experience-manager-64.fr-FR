@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fc403a60-b635-4334-9bf8-2f3d2036b2f3
-translation-type: tm+mt
-source-git-commit: 6a2455cb377a68254a5c58c6627c59716d284144
+exl-id: 40890db3-240c-4021-967a-b6b3eb1d4b7c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 97%
 
 ---
-
 
 # Configuration des files d’attente partagées{#configuring-shared-queues}
 
@@ -30,7 +29,7 @@ Vous pouvez gérer l’accès à la file d’attente d’utilisateur sélectionn
 
 Vous pouvez gérer les files d’attente partagées affectées à un utilisateur sélectionné à l’aide de cette option.
 
-## Gestion de l’accès à une file d’attente d’utilisateur sélectionnée  {#managing-access-to-a-selected-user-queue}
+## Gestion de l’accès à une file d’attente d’utilisateur sélectionnée {#managing-access-to-a-selected-user-queue}
 
 L’option Gérer l’accès à un utilisateur permet de gérer l’accès à une file d’attente d’utilisateur sélectionnée. Vous pouvez accorder ou révoquer l’accès à une file d’attente d’utilisateur à d’autres utilisateurs au sein de votre société. Par exemple, Kara Bowman est absente du bureau. La fonction Gérer l’accès à un utilisateur permet de partager sa file d’attente avec Akira Tanaka et John Jacobs pour qu’elle puisse être terminée. Une fois que Kara Bowman revient au bureau, vous pouvez alors révoquer à Akira Tanaka et John Jacobs l’accès à sa file d’attente.
 
@@ -85,4 +84,3 @@ Une fois affectées, ces tâches peuvent être exécutées par l’utilisateur �
 1. Sous l’onglet Gérer l’accès par un utilisateur, recherchez et sélectionnez l’utilisateur dont vous souhaitez gérer la file d’attente.
 1. Le volet inférieur droit affiche la liste des files d’attente d’utilisateur affectées à l’utilisateur sélectionné. Sélectionnez la file d’attente d’utilisateur et cliquez sur Révoquer.
 1. Cliquez sur Enregistrer pour terminer l’opération.
-
