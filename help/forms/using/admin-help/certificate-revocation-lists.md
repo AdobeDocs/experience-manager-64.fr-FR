@@ -9,20 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9744cc2d-5e6b-4341-9270-43d479bdca04
-translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+exl-id: 45741270-2d57-4d6d-92ef-65b6c1deb448
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 100%
 
 ---
 
-
 # Gestion des listes de révocation des certificats{#managing-certificate-revocationlists}
 
 Trust Store Management vous permet d’importer, de modifier et de supprimer des listes de révocation des certificats (CRL). Les listes de révocation des certificats codées Base64 et DER sont prises en charge.
 
-## Importation d’une CRL  {#import-a-crl}
+## Importation d’une CRL {#import-a-crl}
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Listes de révocation des certificats, puis sur Importer.
 1. Dans la zone Alias, saisissez un identificateur pour la liste CRL.
@@ -39,4 +38,3 @@ Trust Store Management vous permet d’importer, de modifier et de supprimer des
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Listes de révocation des certificats.
 1. Cochez la case correspondant aux listes CRL à supprimer, cliquez sur Supprimer, puis sur OK.
-
