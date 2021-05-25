@@ -8,14 +8,13 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 495031fb-b559-4071-abc4-93d238ce136d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 100%
 
 ---
-
 
 # Suppression des sites Geometrixx{#removing-the-geometrixx-sites}
 
@@ -46,4 +45,3 @@ Vous disposez à présent d’une instance AEM « vide », sans aucun site de
 >[!NOTE]
 >
 >Lors de la mise à niveau, les sites geometrixx sont automatiquement réinstallés. Si vous n’avez pas besoin de ces exemples, vous pourrez supprimer les sites web geometrixx après la mise à niveau.
-
