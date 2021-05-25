@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: a2adc825-2a18-42b8-a639-c48243b2279c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '490'
+ht-degree: 86%
 
 ---
-
 
 # Rendu de modèle adaptatif{#adaptive-template-rendering}
 
@@ -45,7 +44,7 @@ Les sélecteurs de rendu adaptatif peuvent être configurés pour les groupes d�
 
 Dans cet exemple, nous allons configurer le groupe d’appareils existant **Smart Phones** pour qu’il dispose d’un sélecteur de rendu adaptatif dans le modèle **Experience Page** sur We.Retail.
 
-1. Modifiez le groupe de périphériques nécessitant un sélecteur adaptatif dans `http://localhost:4502/miscadmin#/etc/mobile/groups`
+1. Modifiez le groupe d’appareils qui nécessite un sélecteur adaptatif dans `http://localhost:4502/miscadmin#/etc/mobile/groups`
 
    Définissez l’option **Désactiver l’émulateur** et enregistrez.
 
@@ -65,7 +64,7 @@ Dans cet exemple, nous allons configurer le groupe d’appareils existant **Smar
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. À l’aide de CRX DE Lite, autorisez l’utilisation du groupe de périphériques sur votre site en l’ajoutant à la propriété de chaîne à plusieurs valeurs `cq:deviceGroups` sur la structure de votre site.
+1. À l’aide de CRX DE Lite, autorisez l’utilisation du groupe d’appareils sur votre site en l’ajoutant à la propriété de chaîne à plusieurs valeurs `cq:deviceGroups` sur la structure de votre site.
 
    `/content/<your-site>/jcr:content`
 
@@ -77,9 +76,8 @@ Dans cet exemple, nous allons configurer le groupe d’appareils existant **Smar
 
 À présent, lorsque vous utilisez l’[émulateur](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) dans l’éditeur de pages (par exemple pour [modifier la mise en page ](/help/sites-authoring/responsive-layout.md)) et que vous choisissez un appareil du groupe d’appareils configuré, la page est rendue avec un sélecteur dans l’URL.
 
-Dans notre exemple, lors de la modification d’une page basée sur le modèle **Page d’expérience** et du choix de l’iPhone 4 dans l’émulateur, la page est rendue, y compris le sélecteur sous la forme `arctic-surfing-in-lofoten.smart.html` au lieu de `arctic-surfing-in-lofoten.html`
+Dans notre exemple, lors de la modification d’une page basée sur le modèle **Page d’expérience** et du choix de l’iPhone 4 dans l’émulateur, la page est rendue, y compris le sélecteur `arctic-surfing-in-lofoten.smart.html` au lieu de `arctic-surfing-in-lofoten.html`.
 
 La page peut également être appelée directement à l’aide de ce sélecteur.
 
 ![chlimage_1-161](assets/chlimage_1-161.png)
-
