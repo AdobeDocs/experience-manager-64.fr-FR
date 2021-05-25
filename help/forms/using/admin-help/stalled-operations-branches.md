@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 04a832d5-1ab5-4db3-b185-57fba21eb839
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 89%
 
 ---
-
 
 # Utilisation d’opérations et de branches bloquées {#working-with-stalled-operations-and-branches}
 
@@ -29,15 +28,15 @@ Quand un processus bloque, l’exécution de toutes les opérations suivantes es
 
 Pour chaque élément bloqué, la liste présente les informations suivantes :
 
-**Nom de l&#39;opération ou Nom de la branche : nom** de l&#39;opération ou de la branche.
+**Nom de l’opération ou nom de la branche :** nom de l’opération ou de la branche.
 
-**Statut :** Toujours BLOQUE pour les éléments bloqués.
+**État :** toujours bloqué pour les éléments bloqués.
 
 **Erreur :** brève description du problème.
 
-**ID de processus : entier positif attribué par** le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance un processus). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
+**ID de processus :** entier positif attribué par le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance un processus). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
 
-**Nom du processus - Version : nom** du processus affecté dans Workbench.
+**Nom du processus - Version :** nom du processus affecté dans Workbench.
 
 **Date bloquée :** date et heure auxquelles l’opération ou la branche est bloquée.
 
@@ -46,7 +45,7 @@ Vous pouvez exécuter les tâches suivantes dans la page Opérations bloquées o
 * Sélectionner une erreur pour afficher des informations détaillées sur cette erreur. Si vous sélectionnez une erreur, la page Détails d’erreur s’affiche.
 * Arrêter ou essayer de relancer les opérations bloquées ou essayer de relancer les branches bloquées.
 
-## Arrêt ou nouvelle tentative d’opérations ou de branches bloquées  {#terminating-or-retrying-stalled-operations-or-branches}
+## Arrêt ou nouvelle tentative d’opérations ou de branches bloquées {#terminating-or-retrying-stalled-operations-or-branches}
 
 Dans la page Opérations bloquées, vous pouvez arrêter les instances de processus affichées.
 
