@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8f8367fe-a8e9-46ee-a980-1633be02932d
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 3609ad29-f5b4-4426-8bbc-7c2e38f9b140
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 98%
 
 ---
-
 
 # Configuration des extensions d’Acrobat Reader DC pour la capture de données {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 
@@ -26,7 +25,7 @@ Si les utilisateurs de votre installation AEM Forms utilisent la fonctionnalité
 
 La capture des données nécessite d’affecter un rôle utilisateur pour l’accès à SampleReaderExtensionsCredential. Vous pouvez affecter le rôle Trust Administrator standard mais n’oubliez pas que ce rôle confère à des utilisateurs type, non administrateurs, de puissants privilèges d’administrateur capables de contrôler les paramètres d’approbation PKI et de gérer les informations d’identification PKI. Cela peut compromettre la sécurité de votre installation AEM Forms dans un environnement de production. Il est recommandé que l’administrateur système AEM Forms crée un nouveau rôle qui accorde un accès en lecture seule uniquement à Trust Store et affecte ce nouveau rôle à des utilisateurs non administrateurs utilisant la capture des données.
 
-## Création d’un rôle destiné aux utilisateurs qui capturent des données  {#create-a-role-for-data-capture-users}
+## Création d’un rôle destiné aux utilisateurs qui capturent des données {#create-a-role-for-data-capture-users}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des rôles, puis sur Nouveau rôle.
 1. Saisissez le nom du rôle (par exemple Utilisateur capturant des données), ainsi qu’une description dans les champs appropriés, puis cliquez sur Suivant.
@@ -40,4 +39,3 @@ La capture des données nécessite d’affecter un rôle utilisateur pour l’ac
 1. Dans l’onglet Utilisateurs/groupes de rôle, cliquez sur Rechercher des utilisateurs/groupes.
 1. Dans l’écran Rechercher des utilisateurs et des groupes, cliquez sur Rechercher, sélectionnez les utilisateurs nécessitant un rôle de capture de données, puis cliquez sur OK.
 1. Dans l’écran Modifier le rôle, cliquez sur Enregistrer.
-
