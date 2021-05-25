@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: f073c876-94cd-405d-885f-bfe433817ff4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 89%
 
 ---
-
 
 # Création – Environnement et outils{#authoring-the-environment-and-tools}
 
@@ -61,7 +60,7 @@ Utilisez l’outil de recherche de contenu pour localiser une plage de ressource
 * [Images](#finding-images)
 * [Documents](#finding-documents)
 * [Films](#finding-movies)
-* [Navigateur Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Explorateur Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [Pages](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
 * [Paragraphes](#referencing-paragraphs-from-other-pages)
 * [Produits](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#products)
@@ -101,7 +100,7 @@ Cet onglet répertorie tous les produits. Après avoir créé un paragraphe appr
 
 ### Trouver des pages {#finding-pages}
 
-Cet onglet affiche toutes les pages. Cliquez avec le doublon sur une page pour l’ouvrir en vue de la modifier.
+Cet onglet affiche toutes les pages. Double-cliquez sur une page pour l’ouvrir en vue de la modifier.
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -157,20 +156,20 @@ Pour afficher les références de page directes :
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Sélectionnez **Afficher les références...** AEM ouvre la fenêtre Références et affiche les pages qui font référence à la page sélectionnée, y compris leurs chemins.
+1. Sélectionnez **Afficher les références...** AEM ouvre la fenêtre Références et affiche les pages qui font référence à la page sélectionnée, y compris leurs chemins d’accès.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
 Dans certains cas, le sidekick permet d’exécuter d’autres actions, notamment :
 
 * [Lancements](/help/sites-classic-ui-authoring/classic-launches.md)
-* [Live Copies](/help/sites-administering/msm.md)
+* [Live Copies](/help/sites-administering/msm.md)
 
 * [Blueprint](/help/sites-administering/msm-best-practices.md)
 
 D’autres [relations entre pages sont visibles dans la console Sites web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
-## Journal d’audit  {#audit-log}
+## Journal d’audit {#audit-log}
 
 Le **journal d’audit** est accessible depuis l’onglet **Informations** du sidekick. Il répertorie les actions récentes ayant eu lieu sur la page active ; par exemple :
 
@@ -178,7 +177,7 @@ Le **journal d’audit** est accessible depuis l’onglet **Informations** du si
 
 ## Informations sur la page {#page-information}
 
-La console de site Web [fournit également des informations sur l&#39;état actuel de la page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), telles que la publication, la modification, le verrouillage, la livecopy, etc.
+La console Sites Web [fournit également des informations sur l’état actuel de la page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), telles que la publication, la modification, le verrouillage, la Live Copy, etc.
 
 ## Modes de page  {#page-modes}
 
@@ -205,9 +204,9 @@ La rangée d’icônes située au bas du sidekick permet de changer de mode pour
 >D’autres options sont également disponibles :
 >
 >* [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
->* [Contexte client](/help/sites-administering/client-context.md)
->* Sites web - Ouvre la console Sites web.
->* Recharger - Actualise la page.
+* [Contexte client](/help/sites-administering/client-context.md)
+* Sites web : ouvre la console Sites web .
+* Recharger - Actualise la page.
 
 
 ## Raccourcis clavier {#keyboard-shortcuts}
