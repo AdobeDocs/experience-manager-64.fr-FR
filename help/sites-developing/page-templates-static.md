@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: a483ac24-cfe7-4156-a3a8-c0f14282490c
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: f313b955-c561-4827-aefc-850e45922f26
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1662'
 ht-degree: 66%
 
 ---
-
 
 # Modèles de page - Statiques{#page-templates-static}
 
@@ -29,7 +28,7 @@ Chaque modèle présente une sélection de composants disponibles.
 
 >[!NOTE]
 >
->[Les ](/help/sites-developing/page-templates-editable.md) modèles modifiables sont également disponibles et sont le type recommandé pour la plus grande flexibilité et les nouvelles fonctionnalités.
+>[Les ](/help/sites-developing/page-templates-editable.md) modèles modifiables sont également disponibles. Il s’agit du type de modèle recommandé pour la plus grande flexibilité et pour les fonctionnalités les plus récentes.
 
 ## Propriétés et nœuds enfants d’un modèle {#properties-and-child-nodes-of-a-template}
 
@@ -48,19 +47,19 @@ Un modèle est un nœud de type cq:Template et possède les propriétés et les 
    <td>Modèle actuel. Un modèle possède le type de noeud cq:Template.<br /> </td> 
   </tr> 
   <tr> 
-   <td> allowChildren </td> 
+   <td> allowedChildren </td> 
    <td> Chaîne[]</td> 
-   <td>Chemin d'accès d'un modèle autorisé pour être un enfant de ce modèle.<br /> </td> 
+   <td>Chemin d’accès d’un modèle autorisé à être un enfant de ce modèle.<br /> </td> 
   </tr> 
   <tr> 
-   <td> allowParents</td> 
+   <td> allowedParents</td> 
    <td> Chaîne[]</td> 
-   <td>Chemin d'accès d'un modèle autorisé à être un parent de ce modèle.<br /> </td> 
+   <td>Chemin d’accès d’un modèle autorisé à être un parent de ce modèle.<br /> </td> 
   </tr> 
   <tr> 
-   <td> allowPaths</td> 
+   <td> allowedPaths</td> 
    <td> Chaîne[]</td> 
-   <td>Chemin d'accès d'une page autorisée à être basée sur ce modèle.<br /> </td> 
+   <td>Chemin d’accès d’une page autorisée à partir de ce modèle.<br /> </td> 
   </tr> 
   <tr> 
    <td> jcr:created</td> 
@@ -78,7 +77,7 @@ Un modèle est un nœud de type cq:Template et possède les propriétés et les 
    <td>Titre du modèle.<br /> </td> 
   </tr> 
   <tr> 
-   <td> classement</td> 
+   <td> ranking</td> 
    <td> Long</td> 
    <td>Classement du modèle. Utilisé pour afficher le modèle dans l’interface utilisateur.<br /> </td> 
   </tr> 
@@ -102,11 +101,11 @@ Un modèle est un nœud de type cq:Template et possède les propriétés et les 
 
 Un modèle sert de fondement pour une page.
 
-Pour créer une page, le modèle doit être copié (node-tree `/apps/<myapp>/template/<mytemplate>`) à la position correspondante dans l&#39;arborescence du site : c&#39;est ce qui se produit si une page est créée à l&#39;aide de l&#39;onglet **Sites Web**.
+Pour créer une page, le modèle doit être copié (node-tree `/apps/<myapp>/template/<mytemplate>`) à la position correspondante dans l’arborescence du site : c’est ce qui se passe si une page est créée à l’aide de l’onglet **Sites web** .
 
 Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling: resourceType, le chemin d’accès au composant de page utilisé pour rendre la page (tout ce qui est présent dans le nœud enfant jcr:content).
 
-## Structuration des modèles  {#how-templates-are-structured}
+## Structuration des modèles {#how-templates-are-structured}
 
 Il y a deux aspects à considérer :
 
@@ -134,7 +133,7 @@ Ce composant est utilisé pour définir la structure et la conception du contenu
 
 ### Contenu produit par un modèle {#the-content-produced-by-a-template}
 
-Les modèles servent à créer des pages de type `cq:Page`(comme mentionné précédemment, une page est un type spécial de composant). Chaque page AEM a un noeud structuré `jcr:content`. Cela :
+Les modèles servent à créer des pages de type `cq:Page`(comme mentionné précédemment, une page est un type spécial de composant). Chaque page AEM comporte un noeud structuré `jcr:content`. Cela :
 
 * est de type cq:PageContent
 * est un type de nœud structuré contenant une définition de contenu définie
@@ -167,45 +166,45 @@ Pour voir la liste de tous les modèles disponibles dans le référentiel, proc�
 
 Dans la plupart des cas, c’est à partir d’un modèle existant que vous élaborerez un nouveau modèle pour votre usage personnel. Pour plus d’informations, voir [Développement de modèles de page](#developing-page-templates).
 
-Pour activer un modèle existant pour votre site Web et l&#39;afficher dans la boîte de dialogue **Créer une page** lors de la création d&#39;une page juste sous **Sites Web** à partir de la console **Sites Web**, définissez la propriété allowedPaths du noeud de modèle sur : **/content(/.&amp;ast;)?**
+Pour activer un modèle existant pour votre site web et l’afficher dans la boîte de dialogue **Créer une page** lors de la création d’une page juste sous **Sites web** à partir de la console **Sites web**, définissez la propriété allowedPaths du noeud de modèle sur : **/content(/.&amp;ast;)?**
 
 ## Application des conceptions de modèle {#how-template-designs-are-applied}
 
-Lorsque des styles sont définis dans l’interface utilisateur à l’aide de [Mode de conception](/help/sites-authoring/default-components-designmode.md), la conception est conservée à l’emplacement exact du noeud de contenu pour lequel le style est défini.
+Lorsque des styles sont définis dans l’interface utilisateur à l’aide du [mode de conception](/help/sites-authoring/default-components-designmode.md), la conception est conservée à l’emplacement exact du noeud de contenu pour lequel le style est défini.
 
 >[!CAUTION]
 >
->L’Adobe recommande de n’appliquer que les conceptions en [Mode de conception](/help/sites-authoring/default-components-designmode.md).
+>Adobe recommande d’appliquer uniquement des conceptions par [mode de conception](/help/sites-authoring/default-components-designmode.md).
 >
 >La modification de conceptions dans CRX DE, par exemple, n’est pas recommandée et l’application de ces conceptions risque de provoquer un comportement imprévu.
 
-Si les conceptions sont appliquées uniquement en mode Création, les sections suivantes, [Résolution du chemin de conception](/help/sites-developing/page-templates-static.md#design-path-resolution), [Arbre de décision](/help/sites-developing/page-templates-static.md#decision-tree) et [Exemple](/help/sites-developing/page-templates-static.md#example) ne sont pas applicables.
+Si les conceptions ne sont appliquées qu’en mode de conception, les sections suivantes, [Résolution du chemin de conception](/help/sites-developing/page-templates-static.md#design-path-resolution), [Arborescence de décision](/help/sites-developing/page-templates-static.md#decision-tree) et [Exemple](/help/sites-developing/page-templates-static.md#example) ne sont pas applicables.
 
 >[!NOTE]
 >
->Cette section décrit le comportement de la résolution du chemin de conception à partir de AEM 6.4.2.0.
+>Cette section décrit le comportement de la résolution du chemin de conception à partir d’AEM 6.4.2.0.
 
 ### Résolution du chemin de conception {#design-path-resolution}
 
 Lors du rendu du contenu à partir d’un modèle statique, AEM tentera d’appliquer la conception et les styles les plus pertinents au contenu en fonction d’une traversée de la hiérarchie du contenu.
 
-aem détermine le style le plus pertinent pour un noeud de contenu dans l’ordre suivant :
+AEM détermine le style le plus pertinent pour un noeud de contenu dans l’ordre suivant :
 
-* S’il existe une conception pour le chemin d’accès complet et exact du noeud de contenu (comme lorsque la conception est définie en mode Création), utilisez cette conception.
+* S’il existe une conception pour le chemin d’accès complet et exact du noeud de contenu (comme lorsque la conception est définie en mode de conception), utilisez cette conception.
 * S’il existe une conception pour le noeud de contenu du parent, utilisez-la.
-* S’il existe une conception pour un noeud sur le chemin du noeud de contenu, utilisez cette conception.
+* S’il existe une conception pour n’importe quel noeud sur le chemin du noeud de contenu, utilisez-la.
 
-Dans les deux derniers cas, s’il existe plusieurs conceptions applicables, utilisez celle qui est la plus proche du noeud de contenu.
+Dans les deux derniers cas, s’il existe plusieurs conceptions applicables, utilisez celle la plus proche du noeud de contenu.
 
 ### Arborescence de décision {#decision-tree}
 
-Il s’agit d’une représentation graphique de la logique [Design Path Resolution](/help/sites-developing/page-templates-static.md#design-path-resolution).
+Il s’agit d’une représentation graphique de la logique [Design Path Resolution](/help/sites-developing/page-templates-static.md#design-path-resolution) .
 
 ![design_path_resolution](assets/design_path_resolution.png)
 
 ### Exemple {#example}
 
-Considérez une structure de contenu simple comme suit, où une conception peut s’appliquer à l’un des noeuds :
+Tenez compte d’une structure de contenu simple comme suit, où une conception peut s’appliquer à l’un des noeuds :
 
 `/root/branch/leaf`
 
@@ -230,7 +229,7 @@ Le tableau suivant décrit comment AEM choisira une conception.
    <td><code>leaf</code></td> 
    <td><p><code>root</code></p> <p><code>branch</code></p> </td> 
    <td><code>branch</code></td> 
-   <td>Revenez à la correspondance la plus proche plus bas dans l'arbre.</td> 
+   <td>Revenez à la correspondance la plus proche dans l’arborescence.</td> 
   </tr> 
   <tr> 
    <td><code>leaf</code></td> 
@@ -263,7 +262,7 @@ Le tableau suivant décrit comment AEM choisira une conception.
    <td><p><code>root</code></p> <p><code class="code">leaf
        </code></p> </td> 
    <td><code>root</code></td> 
-   <td><p>S'il n'y a pas de correspondance exacte, prenez celle plus bas dans l'arbre.</p> <p>L'hypothèse est que cela sera toujours applicable, mais plus haut l'arbre peut être trop spécifique.<br /> </p> </td> 
+   <td><p>S’il n’y a pas de correspondance exacte, prenez celle située plus bas dans l’arborescence.</p> <p>L’hypothèse est que cela sera toujours applicable, mais plus haut dans l’arborescence peut être trop spécifique.<br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -317,10 +316,9 @@ Pour plus d’informations, voir [Utilisation des bibliothèques côté client](
 
 ## Mise à disposition d’un modèle existant {#making-an-existing-template-available}
 
-Cet exemple illustre comment autoriser l’utilisation d’un modèle pour certains chemins de contenu. Les modèles disponibles pour l&#39;auteur de la page lors de la création de nouvelles pages sont déterminés par la logique définie dans [Disponibilité des modèles](/help/sites-developing/templates.md#template-availability).
+Cet exemple illustre comment autoriser l’utilisation d’un modèle pour certains chemins de contenu. Les modèles disponibles pour l’auteur de la page lors de la création de pages sont déterminés par la logique définie dans [Disponibilité des modèles](/help/sites-developing/templates.md#template-availability).
 
 1. Dans CRXDE Lite, accédez au modèle que vous souhaitez utiliser pour votre page, par exemple, le modèle Newsletter.
-1. Modifiez la propriété `allowedPaths` et les autres propriétés utilisées pour la [disponibilité du modèle](/help/sites-developing/templates.md#template-availability). Par exemple, `allowedPaths` : `/content/geometrixx-outdoors/[^/]+(/.*)?` signifie que ce modèle est autorisé dans n&#39;importe quel chemin sous `/content/geometrixx-outdoors`.
+1. Modifiez la propriété `allowedPaths` et les autres propriétés utilisées pour la [disponibilité du modèle](/help/sites-developing/templates.md#template-availability). Par exemple, `allowedPaths` : `/content/geometrixx-outdoors/[^/]+(/.*)?` signifie que ce modèle est autorisé dans n’importe quel chemin sous `/content/geometrixx-outdoors`.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
-
