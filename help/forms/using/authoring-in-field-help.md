@@ -7,21 +7,20 @@ uuid: 07427ddd-9d35-41f6-a807-0e418aade199
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 893a72c7-d68f-464f-9765-ec2272189e58
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formulaires adaptatifs
+exl-id: 0c761c0c-fbe4-4129-8a90-c4ef1127a762
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 100%
 
 ---
 
-
 # Création d’une aide contextuelle pour les champs de formulaire {#authoring-in-context-help-for-form-fields}
 
 ## Présentation {#introduction}
 
-Dans certains cas, les utilisateurs finaux qui remplissent un formulaire ne sont pas toujours sûrs des informations qu’ils doivent fournir dans un champ spécifique. Pour résoudre ce problème, les formulaires adaptatifs prennent en charge l’ajout de texte ou d’une aide contextuelle riche à un champ de formulaire. Cela permet d’améliorer l’expérience de remplissage du formulaire et d’éviter toute ambiguïté pour les utilisateurs finaux.
+Dans certains cas, les utilisateurs finaux qui remplissent un formulaire ne sont pas toujours sûrs des informations qu’ils doivent indiquer dans un champ spécifique. Pour résoudre ce problème, les formulaires adaptatifs prennent en charge l’ajout de texte ou d’une aide contextuelle riche à un champ de formulaire. Cela permet d’améliorer l’expérience de remplissage du formulaire et d’éviter toute ambiguïté pour les utilisateurs finaux.
 
 Cet article décrit comment les auteurs de formulaires peuvent ajouter une aide contextuelle lors de la création de formulaires adaptatifs.
 
@@ -42,7 +41,7 @@ Vous pouvez spécifier une aide contextuelle à l’aide des options suivantes d
 
 Le champ Description courte permet de fournir des conseils courts et rapides pour le remplissage d’un champ de formulaire. Le texte saisi dans le champ Description courte s’affiche sous forme d’info-bulle lorsque le pointeur de la souris est placé sur le champ.
 
-![Description courte pour l’ajout d’une aide contextuelle pour les champs de formulaire](assets/tooltip.png)
+![Description courte pour l’ajout d’une aide contextuelle pour des champs de formulaire](assets/tooltip.png)
 
 >[!NOTE]
 >
@@ -52,9 +51,9 @@ Le champ Description courte permet de fournir des conseils courts et rapides pou
 
 ### Description longue {#long-description}
 
-Vous pouvez utiliser le champ Description longue pour saisir un texte long ou incorporer du contenu multimédia enrichi, notamment des vidéos, pour fournir une aide contextuelle. Par exemple, l’illustration suivante montre comment incorporer une vidéo pour fournir une aide contextuelle.
+Vous pouvez utiliser le champ Description longue pour saisir un texte long ou incorporer du contenu multimédia enrichi, dont des vidéos, pour apporter une aide contextuelle. Par exemple, l’illustration ci-dessous montre comment incorporer une vidéo pour apporter une aide contextuelle.
 
-![Ajout de contenu multimédia enrichi en tant qu’aide contextuelle pour les champs de formulaire](assets/long-descriptions.png)
+![Ajout de contenu multimédia enrichi comme aide contextuelle pour les champs de formulaire](assets/long-descriptions.png)
 
 L’ajout d’une description longue affiche une icône **?** en regard du champ. Un clic sur l’icône affiche le contenu ajouté à la section Description longue.
 
@@ -68,5 +67,4 @@ Outre l’aide contextuelle pour les champs de formulaire, vous pouvez spécifie
 
 L’ajout d’une aide pour un panneau affiche une icône **?** en regard de la description du panneau. Un clic sur l’icône affiche le contenu ajouté dans la section Contenu de l’aide du panneau Modifier.
 
-![Exemple d’une aide contextuelle au niveau d’un panneau](assets/photoshop-1.png)
-
+![Exemple d’aide contextuelle au niveau d’un panneau](assets/photoshop-1.png)
