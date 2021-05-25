@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
-translation-type: tm+mt
-source-git-commit: 280c2b3cc8026988472d4ad0cf6649fa8a7c9c38
+exl-id: c29472c8-9a93-4cb1-9cb1-05fc155ba736
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 89%
 
 ---
-
 
 # 10 plus grands risques OWASP{#owasp-top}
 
@@ -24,13 +23,13 @@ Le projet [Open Web Application Security Project](https://www.owasp.org) (OWASP)
 
 Ces risques sont répertoriés ci-dessous, avec une explication sur la manière dont ils sont gérés par CRX.
 
-## 1. Injection  {#injection}
+## 1. Injection {#injection}
 
 * SQL -Empêché par défaut : La configuration de référentiel par défaut ne comprend ni ne requiert de base de données traditionnelle et toutes les données sont stockées dans le référentiel de contenu. Tous les accès sont limités aux utilisateurs authentifiés et ne peuvent avoir lieu que via l’API JCR. SQL est pris en charge pour les requêtes de recherche uniquement (SELECT). SQL offre en outre une prise en charge de la valeur de liaison.
 * LDAP : L’injection LDAP est impossible, car le module d’authentification filtre l’entrée et exécute l’importation des utilisateurs à l’aide de la méthode de liaison.
 * OS : Aucune exécution shell n’est effectuée dans l’application.
 
-## 2. Cross-Site Scripting (XSS)  {#cross-site-scripting-xss}
+## 2. Cross-Site Scripting (XSS) {#cross-site-scripting-xss}
 
 La solution générale consiste à coder toutes les sorties du contenu créé par l’utilisateur avec une bibliothèque de protection XSS côté serveur basée sur [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) et [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
@@ -46,9 +45,9 @@ Tous les accès aux objets de données sont arbitrés par le référentiel et do
 
 ## 5. Cross-Site Request Forgery (CSRF)  {#cross-site-request-forgery-csrf}
 
-La fonctionnalité CSRF (Cross-Site Request Forgery) est atténuée en injectant automatiquement un jeton cryptographique dans tous les formulaires et demandes d’AJAX et en vérifiant ce jeton sur le serveur pour chaque POST.
+La falsification de requête intersite (CSRF) est atténuée en injectant automatiquement un jeton cryptographique dans tous les formulaires et requêtes d’AJAX et en vérifiant ce jeton sur le serveur pour chaque POST.
 
-En outre, AEM fournit un filtre basé sur les en-têtes de parrain, qui peut être configuré sur *uniquement* pour autoriser les requêtes POST provenant d&#39;hôtes spécifiques (définies dans une liste).
+En outre, AEM est fourni avec un filtre basé sur l’en-tête référent, qui peut être configuré sur *uniquement* pour autoriser les requêtes de POST provenant d’hôtes spécifiques (définis dans une liste).
 
 ## 6. Configuration incorrecte de la sécurité {#security-misconfiguration}
 
@@ -73,4 +72,3 @@ Atténué par la configuration du serveur (par exemple, utilisez HTTPS uniquemen
 ## 10. Redirections et transferts non validés {#unvalidated-redirects-and-forwards}
 
 Atténué en restreignant toutes les redirections à des destinations fournies par l’utilisateur vers des emplacements internes.
-
