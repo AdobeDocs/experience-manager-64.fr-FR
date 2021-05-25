@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Correspondence Management
+exl-id: 102e4f39-192e-4cc1-a249-4b6bc641919d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 97%
 
 ---
-
 
 # Propriétés de configuration de Correspondence Management {#correspondence-management-configuration-properties}
 
@@ -244,7 +243,7 @@ Correspondence Management possède les propriétés de configuration suivantes 
   </tr> 
   <tr> 
    <td><p>CM User Root</p> </td> 
-   <td><p>URL du dossier contenant tous les actifs utilisateur de Correspondence Management</p> </td> 
+   <td><p>URL du dossier contenant toutes les ressources utilisateur de Correspondence Management</p> </td> 
    <td><p>—</p> </td> 
    <td><p>Emplacement de dossier valide</p> </td> 
   </tr> 
