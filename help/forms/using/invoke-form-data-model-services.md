@@ -7,23 +7,22 @@ uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formulaires adaptatifs
+exl-id: 0653b0e4-a697-472a-8093-5ed48ede3c75
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 64%
+ht-degree: 92%
 
 ---
-
 
 # API pour appeler le service de modèle de données de formulaire à partir de formulaires adaptatifs {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## Présentation {#overview}
 
-AEM Forms permet aux auteurs de formulaires de simplifier et améliorer le remplissage de formulaire en appelant les services configurés dans un modèle de données de formulaire depuis un champ de formulaire adaptatif. Pour appeler un service de modèle de données, vous pouvez créer une règle dans l’éditeur visuel ou spécifier un code JavaScript à l’aide de l’API `guidelib.dataIntegrationUtils.executeOperation` dans l’éditeur de code de l’[éditeur de règles](/help/forms/using/rule-editor.md).
+AEM Forms permet aux auteurs de formulaires de simplifier et améliorer le remplissage de formulaire en appelant les services configurés dans un modèle de données de formulaire depuis un champ de formulaire adaptatif. Pour appeler un service de modèle de données, vous pouvez créer une règle dans l’éditeur visuel ou spécifier un script JavaScript en utilisant l’API `guidelib.dataIntegrationUtils.executeOperation` dans l’éditeur de code de l’[éditeur de règles](/help/forms/using/rule-editor.md).
 
-Ce document aborde la manière d’écrire un script Javascript en utilisant l’API `guidelib.dataIntegrationUtils.executeOperation` pour appeler un service.
+Ce document se concentre sur l’écriture d’un script JavaScript en utilisant l’API `guidelib.dataIntegrationUtils.executeOperation` pour appeler un service.
 
 ## Utilisation de l’API {#using-the-api}
 
@@ -38,10 +37,10 @@ L’API requiert les paramètres suivants.
 | Paramètre | Description |
 |---|---|
 | `operationInfo` | Structure permettant de spécifier l’identifiant du modèle de données de formulaire, le titre de l’opération et le nom de l’opération |
-| `inputs` | Structure permettant de spécifier les objets de formulaire dont les valeurs sont entrées dans l’opération de service |
-| `outputs` | Structure permettant de spécifier les objets de formulaire qui seront renseignés avec les valeurs renvoyées par l’opération de service |
+| `inputs` | Structure pour spécifier les objets de formulaire dont les valeurs sont saisies dans l’opération de service |
+| `outputs` | Structure pour spécifier les objets de formulaire qui seront renseignés avec les valeurs renvoyées par l’opération de service |
 
-La structure de l&#39;API `guidelib.dataIntegrationUtils.executeOperation` spécifie les détails de l&#39;opération de service. La syntaxe de la structure se présente comme suit.
+La structure de l’API `guidelib.dataIntegrationUtils.executeOperation` spécifie les détails sur l’opération de service. La syntaxe de la structure se présente comme suit.
 
 ```
 var operationInfo = {
@@ -88,9 +87,9 @@ La structure de l’API spécifie les détails suivants concernant l’opératio
 
 ## Exemple de script pour appeler un service {#sample-script-to-invoke-a-service}
 
-L’exemple de script suivant utilise l’API `guidelib.dataIntegrationUtils.executeOperation` pour appeler l’opération de service `getAccountById` configurée dans le modèle de données de formulaire `employeeAccount`.
+L’exemple de script suivant utilise l’API `guidelib.dataIntegrationUtils.executeOperation` pour appeler l’opération de service `getAccountById` configurée dans le modèle de données de formulaire `employeeAccount`.
 
-L&#39;opération `getAccountById` prend la valeur du champ de formulaire `employeeID` comme entrée pour l&#39;argument `empId` et renvoie le nom de l&#39;employé, le numéro de compte et le solde du compte pour l&#39;employé correspondant. Les valeurs de sortie sont renseignées dans les champs de formulaire spécifiés. Par exemple, la valeur de l’argument `name` est renseignée dans l’élément de formulaire `fullName` et la valeur de l’argument `accountNumber` dans l’élément de formulaire `account`.
+L’opération `getAccountById` utilise la valeur du champ de formulaire `employeeID` comme entrée pour l’argument `empId` et renvoie le nom de l’employé, le numéro de compte et le solde du compte pour l’employé correspondant. Les valeurs de sortie sont renseignées dans les champs de formulaire spécifiés. Par exemple, la valeur de l’argument `name` est renseignée dans l’élément de formulaire `fullName` et la valeur de l’argument `accountNumber`, dans l’élément de formulaire `account`.
 
 ```
 var operationInfo = {
@@ -107,4 +106,3 @@ var outputs = {
 };
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 ```
-
