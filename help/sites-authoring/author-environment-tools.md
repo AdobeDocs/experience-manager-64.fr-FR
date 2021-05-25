@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 5bb5f984-f741-4185-acb0-ffcf7e116875
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 93%
 
 ---
-
 
 # Environnement et outils de création{#authoring-the-environment-and-tools}
 
@@ -53,7 +52,7 @@ Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
 D’autres [ressources d’aide sont accessibles depuis les consoles](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Explorateur de composants  {#components-browser}
+## Explorateur de composants {#components-browser}
 
 L’explorateur de composants présente tous les composants que vous pouvez utiliser sur la page active. Faites-les glisser à l’emplacement de votre choix, puis modifiez-les pour ajouter du contenu.
 
@@ -71,15 +70,15 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 
 * **Appareils mobiles (p. ex. iPad)**
 
-   Le navigateur de composants couvre complètement la page en cours de modification.
+   L’explorateur de composants couvre entièrement la page en cours de modification.
 
-   Pour ajouter des composants à votre page, maintenez le composant requis enfoncé et déplacez-le vers la droite - l’explorateur de composants se ferme pour afficher à nouveau la page - où vous pouvez positionner le composant.
+   Pour ajouter un composant à votre page, maintenez appuyé le composant requis et déplacez-le vers la droite (l’explorateur de composants se ferme pour afficher à nouveau la page) où vous pouvez positionner le composant.
 
    ![screen_shot_2018-03-22at141752](assets/screen_shot_2018-03-22at141752.png)
 
 * **Poste de travail**
 
-   Le navigateur de composants s&#39;ouvre sur le côté gauche de la fenêtre.
+   L’explorateur de composants s’ouvre sur le côté gauche de la fenêtre.
 
    Pour ajouter un composant à votre page, cliquez sur le composant souhaité et faites-le glisser vers l’emplacement requis.
 
@@ -230,7 +229,7 @@ Sélectionnez le type de référence approprié pour en savoir plus. Dans certai
 * Instances du composant Référence (par ex. lorsque vous naviguez jusqu’à la page de référence/référencée)
 * [Références aux pages de produit](/help/sites-administering/generic.md#showing-product-references) (depuis la console Commerce – Produits)
 * [Lancements](/help/sites-authoring/launches.md)
-* [](/help/sites-administering/msm.md)Live Copies affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée.
+* [Live Copies](/help/sites-administering/msm.md) affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée.
 * [Blueprint](/help/sites-administering/msm-best-practices.md)
 * [Copies de langue](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel)
 
@@ -259,10 +258,10 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 * [Ouvrir les propriétés](/help/sites-authoring/editing-page-properties.md)
 * [Déployer la page](/help/sites-administering/msm.md#msm-from-the-ui)
 * [Démarrer le processus](/help/sites-authoring/workflows-applying.md#starting-a-workflow-from-the-page-editor)
-* [Verrouiller la page](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Verrouillage de la page](/help/sites-authoring/editing-content.md#locking-a-page)
 * [Publier la page](/help/sites-authoring/publishing-pages.md#publishing-pages)
 * [Annuler la publication de la page](/help/sites-authoring/publishing-pages.md#unpublishing-pages)
-* [Afficher comme publié(e) ](/help/sites-authoring/editing-content.md#view-as-published)
+* [Afficher comme publié(e)](/help/sites-authoring/editing-content.md#view-as-published)
 * [Afficher en administrateur](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Aide](/help/sites-authoring/basic-handling.md#accessing-help)
 
@@ -271,7 +270,7 @@ Le cas échéant, le menu **Informations sur la page** propose également les op
 * [Convertir le lancement](/help/sites-authoring/launches-promoting.md) si la page correspond à un lancement.
 * [Modifier le ](/help/sites-authoring/templates.md) modèle si la page est basée sur un modèle  [modifiable](/help/sites-authoring/templates.md#editable-and-static-templates)
 
-* [Ouvrir dans l’](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interface utilisateur classique si cette option a été  [activée par un administrateur](/help/sites-administering/enable-classic-ui-editor.md)
+* [Ouvrir dans l’](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interface utilisateur classique si cette option a été  [activée par un administrateur.](/help/sites-administering/enable-classic-ui-editor.md)
 
 Le menu **Informations sur la page** peut en outre donner accès à des analyses et recommandations, le cas échéant.
 
@@ -290,8 +289,8 @@ Lors de la modification d’une page, plusieurs modes permettent d’effectuer d
 * [Ciblage](/help/sites-authoring/content-targeting-touch.md) : optimise la pertinence du contenu grâce au ciblage et aux mesures à l’échelle de tous les canaux.
 * [Activity Map](/help/sites-authoring/pa-using.md) : affiche les données d’analyse de la page.
 
-* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) : permet d’afficher l’état d’une page à un moment donné.
-* [État de Live Copy](/help/sites-authoring/editing-content.md#live-copy-status) : donne un aperçu rapide de l’état de la live copy et des composants qui sont ou non hérités.
+* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) : permet d’afficher le statut d’une page à un moment donné.
+* [Statut de la Live Copy](/help/sites-authoring/editing-content.md#live-copy-status) : donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités.
 * [Aperçu](/help/sites-authoring/editing-content.md#previewing-pages) : permet d’afficher la page comme elle sera présentée dans l’environnement de publication ou de naviguer au moyen des liens figurant dans le contenu.
 
 * [Annoter](/help/sites-authoring/annotations.md) : permet d’ajouter ou d’afficher des annotations sur la page.
