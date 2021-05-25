@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 980c9f64-7972-499d-b0e4-63a1a1d49e49
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '9195'
 ht-degree: 90%
 
 ---
 
-
-# Création d’un contenu accessible (conformité WCAG 2.0){#creating-accessible-content-wcag-conformance}
+# Création de contenu accessible (conformité WCAG 2.0){#creating-accessible-content-wcag-conformance}
 
 WCAG 2.0 regroupe un ensemble de consignes et de critères de réussite, qui ne sont pas associés à une technologie particulière, visant à rendre les contenus web plus accessibles aux personnes en situation de handicap.
 
@@ -59,15 +58,15 @@ La section suivante présente les [règles WCAG 2.0](https://www.w3.org/TR/WCAG
 
 
 
-## Principe 1 : perceptible   {#principle-perceivable}
+## Principe 1 : perceptible  {#principle-perceivable}
 
 [Principe 1 : perceptible – Les informations et les composants de l’interface utilisateur doivent être présentés aux utilisateurs sous des formes qu’ils peuvent percevoir.](https://www.w3.org/TR/WCAG20/#perceivable)
 
-### Équivalents textuels (1.1)   {#text-alternatives}
+### Équivalents textuels (1.1)  {#text-alternatives}
 
 [Règle 1.1 – Les équivalents textuels : proposer des équivalents textuels à tout contenu non textuel qui pourra alors être présenté sous d’autres formes selon les besoins de l’utilisateur : grands caractères, braille, synthèse vocale, symboles ou langage simplifié.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
-### Contenu non textuel (1.1.1)   {#non-text-content}
+### Contenu non textuel (1.1.1)  {#non-text-content}
 
 * Critère de réussite 1.1.1
 * Niveau A
@@ -79,35 +78,35 @@ Le contenu d’une page web peut être proposé dans différents formats non tex
 
 Autre avantage utile : les équivalents textuels permettent aux moteurs de recherche d’indexer le contenu non textuel.
 
-#### Comment procéder – Contenu non textuel (1.1.1)   {#how-to-meet-non-text-content}
+#### Comment procéder – Contenu non textuel (1.1.1)  {#how-to-meet-non-text-content}
 
 Pour les images statiques, la règle de base consiste à fournir un équivalent textuel, appelé texte secondaire. Vous pouvez pour ce faire utiliser le champ **Texte secondaire** :
 
 >[!NOTE]
 >
->Certains composants prêts à l’emploi, tels que **Carrousel** et **Diaporama**, ne permettent pas d’ajouter des descriptions d’images sous forme de texte de remplacement. Lors de l’implémentation de ces versions pour votre instance AEM, votre équipe de développement devra configurer ces composants pour prendre en charge l’attribut `alt`[ afin que les auteurs puissent l’ajouter au contenu (voir Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Certains composants prêts à l’emploi, tels que **Carrousel** et **Diaporama**, ne permettent pas d’ajouter des descriptions d’images sous forme de texte de remplacement. Lors de l’implémentation de ces versions pour votre instance AEM, votre équipe de développement devra configurer ces composants pour prendre en charge l’attribut `alt` afin que les auteurs puissent l’ajouter au contenu (voir [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 Le champ **Texte de remplacement** est disponible dans l’onglet des propriétés d’image **Avancées** de la boîte de dialogue du composant **Image** :
 
 ![Boîte de dialogue de modification du composant Image dans l’interface utilisateur classique ; présente le champ Texte de remplacement.](assets/chlimage_1-17.png)
 
-Par défaut, AEM ajoute un **texte de remplacement** à vos images. Pour l’interface utilisateur classique, il existe deux scénarios différents pour la création de l’attribut par défaut (bien que la valeur par défaut ne soit pas suffisante en tant qu’alternative et qu’elle doive probablement être modifiée dans l’onglet **Advanced** propriétés d’image) :
+Par défaut, AEM ajoute un **texte de remplacement** à vos images. Pour l’IU classique, il existe deux scénarios différents pour la création de l’attribut par défaut (bien que la valeur par défaut puisse ne pas être suffisante en tant qu’alternative et devra probablement être modifiée dans l’onglet **Propriétés d’image avancées**) :
 
 * File:
 
-   Une image est téléchargée à partir du disque dur de l’utilisateur. Si vous ajoutez un composant d’image à une page, puis choisissez une image sur votre disque dur ou une autre source, la valeur par défaut de **Alt Text** est `file`. Cette modification doit être effectuée dans l&#39;onglet **Propriétés avancées** des images. Là encore, cette valeur n’est pas affichée dans le champ **Alt Text**, mais lorsque la valeur est modifiée, la nouvelle valeur s’affiche dans le champ.
+   Une image est téléchargée à partir du disque dur de l’utilisateur. Si vous ajoutez un composant d’image à une page, puis choisissez une image sur votre disque dur ou une autre source, la valeur par défaut de **Texte de remplacement** est `file`. Cela doit être modifié dans l’onglet **Propriétés d’image avancées** . Encore une fois, cette valeur n’est pas affichée dans le champ **Texte de remplacement**, mais lorsque la valeur est modifiée, la nouvelle valeur est affichée dans le champ.
 
 * Asset:
 
-   Une image est ajoutée à partir du référentiel de ressources numériques. Si vous faites glisser une image du référentiel de ressources numériques vers une page Web, les valeurs **Title** et **Alt Text** de cette image sont extraites des métadonnées de cette image.
+   Une image est ajoutée à partir du référentiel de ressources numériques. Si vous faites glisser une image du référentiel de ressources numériques vers une page web, les valeurs **Titre** et **Texte de remplacement** de cette image seront extraites des métadonnées de cette image.
 
 >[!NOTE]
 >
->Dans les deux scénarios ci-dessus, la valeur par défaut **Alt Text** n&#39;est pas visible dans l&#39;onglet **Advanced Image Properties**. Pour modifier la valeur par défaut, il vous suffit de saisir une nouvelle valeur dans le champ **Alt Text**.
+>Dans les deux scénarios ci-dessus, la valeur par défaut **Texte de remplacement** n’est pas visible dans l’onglet **Propriétés d’image avancées**. Pour modifier la valeur par défaut, il vous suffit de saisir une nouvelle valeur dans le champ **Texte de remplacement**.
 
 >[!NOTE]
 >
->Si votre image est purement décorative (voir [Création de bonnes variantes de texte](#creating-good-text-alternatives)), vous pouvez saisir un espace dans le champ **Texte de remplacement** à l’aide de la barre d’espace. Un attribut `alt` vide est alors créé, ce qui invite un lecteur d’écran à ignorer l’image.
+>Si votre image est purement décorative (voir [Création d’équivalents textuels appropriés](#creating-good-text-alternatives)), vous pouvez saisir un espace dans le champ **Texte de remplacement** à l’aide de la barre d’espace. Un attribut `alt` vide est ainsi créé, ce qui invite un lecteur d’écran à ignorer l’image.
 
 #### Création d’un texte secondaire adapté {#creating-good-text-alternatives}
 
@@ -128,17 +127,17 @@ L’ébauche du document [W3C: HTML5 Techniques for providing useful text altern
 
 Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte secondaire doit être associé :
 
-* Illustration :
+* Illustrations :
 
    Ce sont des images de personnes, d&#39;objets ou de lieux. Pensez au rôle de la photo sur la page ; un équivalent textuel approprié est probablement *Photo de [objet]*, mais peut dépendre du texte environnant.
 
 * Icônes :
 
-   Il s&#39;agit de petits pictogrammes (graphiques) qui transmettent des informations spécifiques. Elles doivent être utilisées de manière cohérente sur une page et un site. Toutes les instances de l&#39;icône sur une page ou sur un site doivent avoir la même option de texte court et succinct, à moins que cela n&#39;entraîne une duplication inutile du texte adjacent.
+   Il s’agit de petits pictogrammes (graphiques) véhiculant des informations spécifiques. Ils doivent être utilisés de manière cohérente sur une page et un site. Toutes les instances de l’icône sur une page ou un site doivent avoir le même équivalent textuel court et succinct, sauf si cela entraîne une duplication inutile du texte adjacent.
 
 * Graphiques et graphiques :
 
-   Il s’agit généralement de données numériques. Ainsi, une option permettant de fournir une alternative textuelle pourrait consister à inclure un bref résumé des principales tendances affichées dans le graphique ou le graphique. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide du champ **Description** de l’onglet **Propriétés avancées** des images. De plus, vous pouvez fournir les données source sous forme de tableau ailleurs dans la page ou le site.
+   Elles représentent généralement des données numériques. Ainsi, une option permettant de fournir un texte secondaire peut être d’inclure un bref résumé des principales tendances affichées dans le graphique ou le graphique. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide du champ **Description** dans l’onglet **Propriétés d’image avancées** . En outre, vous pouvez fournir les données source sous forme tabulaire ailleurs dans la page ou le site.
 
    ![Exemple d’un graphique. La meilleure approche pour fournir un équivalent est présentée ci-dessous.](assets/chlimage_1-2.jpeg)
 
@@ -152,19 +151,19 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 
    >[!NOTE]
    >
-   >Le fragment de code ci-dessus n&#39;est utilisé que pour illustrer la commande. Il est recommandé d’utiliser le composant **Image** (plutôt que la référence `img src` utilisée ci-dessus.
+   >Le fragment de code ci-dessus n’est utilisé que pour illustrer la commande. Il est recommandé d’utiliser le composant **Image** (plutôt que la référence `img src` utilisée ci-dessus.
 
    Dans AEM, ce résultat peut être obtenu à l’aide d’une combinaison des champs **Texte de remplacement** et **Description** de la boîte de dialogue de configuration de l’image, comme dans [Compatibilité - Contenu non textuel (1.1.1)](#how-to-meet-non-text-content).
 
 * Cartes, diagrammes, organigrammes :
 
-   Pour les graphiques fournissant des données spatiales (par exemple. pour prendre en charge la description des relations entre des objets ou un processus), assurez-vous que le message clé est fourni au format texte. Dans le cas des cartes, il est probable que l’utilisation d’un équivalent en texte intégral ne soit pas pratique. Toutefois, si la carte est fournie pour aider les gens à trouver leur chemin vers un emplacement donné, le texte de remplacement de l’image de carte peut indiquer brièvement *Carte de X*, puis donner des indications vers cet emplacement dans le texte à un autre endroit, dans la page ou dans le champ **Description** de l’onglet **Avancé** du composant **Image**.
+   Pour les graphiques fournissant des données spatiales (par exemple, pour prendre en charge la description des relations entre des objets ou un processus), assurez-vous que le message clé est fourni au format texte. Dans le cas des cartes, il est probable que l’utilisation d’un équivalent en texte intégral ne soit pas pratique. Toutefois, si la carte est fournie pour aider les gens à trouver leur chemin vers un emplacement donné, le texte de remplacement de l’image de carte peut indiquer brièvement *Carte de X*, puis donner des indications vers cet emplacement dans le texte à un autre endroit, dans la page ou dans le champ **Description** de l’onglet **Avancé** du composant **Image**.
 
 * CAPTCHA :
 
-   Un CAPTCHA est un *test de Turing public entièrement automatisé pour dire Computers and Humans Apart*. Il s&#39;agit d&#39;un contrôle de sécurité utilisé sur les pages Web pour distinguer les humains des logiciels malveillants, mais qui peut causer des obstacles à l&#39;accessibilité. Il s’agit d’images qui demandent aux utilisateurs de décrire ce qu’ils voient afin de réussir un test de sécurité. Il n&#39;est évidemment pas possible de fournir un texte alternatif à l&#39;image, il vous faudra donc envisager d&#39;autres solutions non graphiques.
+   Un CAPTCHA est un *test de Turing public entièrement automatisé pour informer Computers and Humans Separ/*. Il s’agit d’un contrôle de sécurité utilisé sur les pages web pour distinguer les humains des logiciels malveillants, mais qui peut entraîner des barrières à l’accessibilité. Il s’agit d’images qui demandent aux utilisateurs de décrire ce qu’ils voient pour réussir un test de sécurité. Il n’est évidemment pas possible de fournir un texte de remplacement à l’image. Vous devrez donc envisager d’autres solutions non graphiques.
 
-   Le W3C propose un certain nombre de suggestions, telles que : chacune de ces approches présente ses propres mérites et inconvénients.
+   Le W3C propose un certain nombre de suggestions, telles que : chacune de ces approches présente ses avantages et ses inconvénients.
 
    * Énigmes logiques
    * Utilisation d’une sortie audio plutôt que d’images
@@ -172,22 +171,22 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 
 * Images d’arrière-plan :
 
-   Elles sont réalisées à l’aide de feuilles de style en cascade (CSS) plutôt qu’en HTML. Cela signifie qu’il n’est pas possible de spécifier une autre valeur de texte. Par conséquent, les images d’arrière-plan ne doivent pas fournir d’informations textuelles importantes. Si tel est le cas, ces informations doivent également être fournies dans le texte de la page.
+   Pour ce faire, utilisez des feuilles de style en cascade (CSS) plutôt que du code HTML. Cela signifie qu’il n’est pas possible de spécifier une autre valeur de texte. Par conséquent, les images d’arrière-plan ne doivent pas fournir d’informations textuelles importantes. Si elles le font, ces informations doivent également être fournies dans le texte de la page.
 
-   Cependant, il est important qu’un autre arrière-plan s’affiche lorsque l’image ne peut pas être affichée.
+   Cependant, il est important qu’un arrière-plan alternatif s’affiche lorsque l’image ne peut pas être affichée.
 
    >[!NOTE]
    >
    >Le niveau de contraste entre l’arrière-plan et le texte au premier plan doit être suffisant. Cela est décrit de manière plus détaillée à la section [Contraste (minimum) (1.4.3)](#contrast-minimum).
 
-#### En savoir plus – Contenu non textuel (1.1.1)   {#more-information-non-text-content}
+#### En savoir plus – Contenu non textuel (1.1.1)  {#more-information-non-text-content}
 
 * [Compréhension du critère de réussite 1.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
 * [Comment remplir le critère de réussite 1.1.1](https://www.w3.org/WAI/WCAG20/quickref/#text-equiv)
 * [W3C: HTML5 Techniques for providing useful text alternatives (techniques pour spécifier des équivalents textuels utiles ; ébauche, en anglais)](https://dev.w3.org/html5/alt-techniques/)
 * [Explication des CAPTCHA et alternatives par le W3C](https://www.w3.org/TR/turingtest/)
 
-### Média temporel (1.2)   {#time-based-media}
+### Média temporel (1.2)  {#time-based-media}
 
 [Règle 1.2 – Média temporel : proposer des versions de remplacement aux médias temporels.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
@@ -218,9 +217,9 @@ En proposant ces informations dans un autre format (texte par exemple, ou audio 
 
 * Si le contenu est un contenu audio pré-enregistré sans vidéo (podcast par exemple) :
 
-   * Fournissez un lien juste avant ou après le contenu vers une transcription texte du contenu audio.
+   * Fournissez un lien juste avant ou après le contenu vers une transcription textuelle du contenu audio.
 
-      La transcription doit être une page HTML avec un texte équivalant à tout contenu non parlé important et oral, plus une indication de qui parle, une description du paramètre, des expressions vocales et une description de tout autre contenu audio significatif.
+      La transcription doit être une page HTML avec un équivalent textuel de tout le contenu non parlé important et parlé, plus une indication de qui parle, une description du décor, des expressions vocales et une description de tout autre contenu audio significatif.
 
 * Si le contenu est une animation ou une vidéo pré-enregistrée sans audio :
 
@@ -310,13 +309,13 @@ Les détails exacts de la création de vidéos avec description audio ne sont pa
 * [Comment remplir le critère de réussite 1.2.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc)
 * [Adobe Encore CS5](https://www.adobe.com/fr/products/premiere/encore/)
 
-### Sous-titres (en direct) (1.2.4)     {#captions-live}
+### Sous-titres (en direct) (1.2.4)    {#captions-live}
 
 * Critère de réussite 1.2.4
 * Niveau AA
 * Sous-titres (en direct) : fournir des sous-titres pour tout contenu audio en direct, sous forme de média synchronisé.
 
-#### Objectif – Sous-titres (en direct) (1.2.4)   {#purpose-captions-live}
+#### Objectif – Sous-titres (en direct) (1.2.4)  {#purpose-captions-live}
 
 Ce critère de réussite est identique aux [Sous-titres (pré-enregistrés)](#captions-pre-recorded), du fait qu’il résout les obstacles à l’accessibilité pour les personnes sourdes ou malentendantes ; toutefois, ce critère de réussite traite des présentations en direct du type webcasts.
 
@@ -353,7 +352,7 @@ Suivez les instructions de la section [Audio-description ou version de remplacem
 * [Compréhension du critère de réussite 1.2.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html)
 * [Comment remplir le critère de réussite 1.2.5](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc-only)
 
-### Adaptable (1.3)   {#adaptable}
+### Adaptable (1.3) {#adaptable}
 
 [Règle 1.3 – Adaptable : créer un contenu qui puisse être présenté de différentes manières sans perte d’information ni de structure (par exemple avec une mise en page simplifiée).](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
@@ -369,7 +368,7 @@ Cette règle couvre les exigences nécessaires pour aider les personnes qui :
 * Niveau A
 * Informations et relations : l’information, la structure et les relations véhiculées par la présentation peuvent être déterminées par un programme informatique ou sont disponibles sous forme de texte.
 
-#### Objectif – Informations et relations (1.3.1)   {#purpose-info-and-relationships}
+#### Objectif – Informations et relations (1.3.1)  {#purpose-info-and-relationships}
 
 Nombre des technologies d’assistance auxquelles ont recours les personnes en situation de handicap ont recours à des informations structurelles pour afficher ou restituer efficacement le contenu. Ces informations structurelles peuvent se présenter sous forme de titres de page, de titres de lignes et de colonnes de tableau et de types de liste. Par exemple, un utilisateur peut recourir à un lecteur d’écran pour parcourir une page d’un titre à un autre. Si, toutefois, le contenu d’une page semble avoir une structure de style visuel uniquement, plutôt qu’un code HTML sous-jacent, aucune information structurelle n’est disponible pour les technologies d’assistance, ce qui limite leur capacité à faciliter la navigation.
 
@@ -387,7 +386,7 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
 * **Utilisation de titres :**
 
-   Tant que les fonctions d&#39;accessibilité du RTE sont activées (voir [AEM et Accessibilité](/help/sites-administering/rte-accessible-content.md)), AEM offres 3 niveaux d&#39;en-tête de page. Vous pouvez les utiliser pour identifier les sections et sous-sections de contenu. L&#39;en-tête 1 est le plus haut niveau de l&#39;en-tête, l&#39;en-tête 3 le plus bas. L’administrateur système peut configurer le système pour autoriser l’utilisation de niveaux d’en-tête plus élevés.
+   Tant que les fonctions d’accessibilité de l’éditeur de texte enrichi sont activées (voir [AEM et Accessibilité](/help/sites-administering/rte-accessible-content.md)), AEM offre 3 niveaux d’en-tête de page. Vous pouvez les utiliser pour identifier les sections et sous-sections de contenu. En-tête 1 est le niveau d’en-tête le plus élevé, En-tête 3 le plus bas. L’administrateur système peut configurer le système pour autoriser l’utilisation d’un plus grand nombre de niveaux d’en-tête.
 
    L’image suivante illustre un exemple des différents types de titres.
 
@@ -398,7 +397,7 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
    Mettez le texte en évidence à l’aide des éléments &lt;strong> ou &lt;em>. N’utilisez pas de titres au sein des paragraphes.
 
    * Surlignez le texte à mettre en évidence.
-   * Cliquez sur l&#39;icône **B** (pour &lt;strong>) ou l&#39;icône **I** (pour &lt;em>) affichée dans le panneau **Propriétés** (assurez-vous que HTML est sélectionné).
+   * Cliquez sur l’icône **B** (pour &lt;strong>) ou **I** (pour &lt;em>) affichée dans le panneau **Propriétés** (assurez-vous que HTML est sélectionné).
 
    >[!NOTE]
    >
@@ -413,7 +412,7 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
    * L’élément `<ul>` est utilisé pour les listes *non triées* (à puces). Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`. 
 
-      dans l’ETC, utilisez l’icône **Liste à puces**.
+      dans l’éditeur de texte enrichi, utilisez l’icône **Liste à puces** .
 
    * L’élément `<ol>` est utilisé pour les listes *numérotées*. Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`. 
 
@@ -442,7 +441,7 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
    * L’attribut `scope` de l’élément `<th>` sert à indiquer si une cellule représente un en-tête pour une ligne ou une colonne particulière. Une approche similaire consiste à utiliser les attributs header et id dans des tableaux complexes, où les cellules de données peuvent être associées à un ou plusieurs en-têtes.
 
    >[!NOTE]
-   Par défaut, ces éléments et attributs ne sont pas directement disponibles, mais l’administrateur du système peut ajouter la prise en charge de ces valeurs dans la boîte de dialogue **Propriétés du tableau**[ (voir Ajout de la prise en charge des éléments et attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+   Par défaut, ces éléments et attributs ne sont pas directement disponibles, mais l’administrateur du système peut ajouter la prise en charge de ces valeurs dans la boîte de dialogue **Propriétés du tableau[ (voir** Ajout de la prise en charge des éléments et attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
    Lorsque vous ajoutez un **Tableau**, configurez ses propriétés dans la boîte de dialogue **Propriétés du tableau**.
 
@@ -457,7 +456,7 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
 * **Tableaux de données complexes :** 
 
-   Dans certains cas, lorsqu&#39;il existe des tableaux complexes comportant deux niveaux ou plus d&#39;en-têtes, les propriétés de base du tableau peuvent ne pas suffire à fournir toutes les informations structurelles nécessaires. Pour ce type de tableaux complexes, des relations directes doivent être créées entre les en-têtes et leurs cellules associées à l’aide des attributs **header** et **id**. Par exemple, dans le tableau ci-dessous, les en-têtes et les identifiants correspondent pour créer une association programmatique pour les utilisateurs de technologies d’assistance.
+   Dans certains cas, lorsqu’il existe des tableaux complexes comportant deux niveaux ou plus d’en-têtes, les propriétés de base du tableau peuvent ne pas suffire à fournir toutes les informations structurelles nécessaires. Pour ce type de tableaux complexes, des relations directes doivent être créées entre les en-têtes et leurs cellules associées à l’aide des attributs **header** et **id**. Par exemple, dans le tableau ci-dessous, les en-têtes et les identifiants correspondent afin de créer une association de programmation pour les utilisateurs de technologies d’assistance.
 
    >[!NOTE]
    L’attribut id n’est pas disponible dans une installation prête à l’emploi. Il peut être activé en configurant les règles HTML et le sérialiseur dans l’éditeur de texte enrichi.
@@ -508,7 +507,7 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 * Niveau A
 * Caractéristiques sensorielles : les instructions données pour la compréhension et l’utilisation du contenu ne doivent pas reposer uniquement sur les caractéristiques sensorielles des éléments comme la forme, la taille, l’emplacement visuel, l’orientation ou le son.
 
-#### Objectif – Caractéristiques sensorielles (1.3.3)   {#purpose-sensory-characteristics}
+#### Objectif – Caractéristiques sensorielles (1.3.3)  {#purpose-sensory-characteristics}
 
 Les concepteurs concentrent généralement leurs efforts sur le côté visuel (couleur, forme, style du texte ou position absolue ou relative d’un élément du contenu) de la présentation des informations. Même s’il peut s’agir de techniques de conception très efficaces pour véhiculer l’information, les personnes aveugles ou malvoyantes peuvent ne pas être en mesure d’accéder à l’information nécessitant une identification visuelle des attributs (position, couleur ou forme, par exemple).
 
@@ -517,7 +516,7 @@ De même, les informations qui impliquent de distinguer différents sons (conten
 >[!NOTE]
 Pour connaître les conditions requises en rapport avec les alternatives aux couleurs, voir [Utilisation de la couleur](#use-of-color).
 
-#### Comment procéder – Caractéristiques sensorielles (1.3.3)   {#how-to-meet-sensory-characteristics}
+#### Comment procéder – Caractéristiques sensorielles (1.3.3)  {#how-to-meet-sensory-characteristics}
 
 Veillez à ce que les informations qui reposent sur des caractéristiques visuelles du contenu de la page soient également présentées dans un autre format.
 
@@ -532,11 +531,11 @@ L’utilisation de termes descriptifs est acceptable s’ils ont une significati
 * [Compréhension du critère de réussite 1.3.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
 * [Comment remplir le critère de réussite 1.3.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding)
 
-### Distinguable (1.4)   {#distinguishable}
+### Perceptible (1.4) {#distinguishable}
 
-[Règle 1.4 – Distinguable : faciliter la perception visuelle et auditive du contenu par l’utilisateur, notamment en séparant le premier plan de l’arrière-plan.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
+[Règle 1.4 – Perceptible : faciliter la perception visuelle et auditive du contenu par l’utilisateur, notamment en séparant le premier plan de l’arrière-plan.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
 
-### Utilisation de la couleur (1.4.1)     {#use-of-color}
+### Utilisation de la couleur (1.4.1)   {#use-of-color}
 
 * Critère de réussite 1.4.1
 * Niveau A
@@ -545,7 +544,7 @@ L’utilisation de termes descriptifs est acceptable s’ils ont une significati
 >[!NOTE]
 Ce critère de réussite traite spécifiquement de la perception des couleurs. Les autres formes de perception sont traitées à la règle [Adaptable (1.3)](#adaptable), comme l’accès à la couleur par programme informatique et les autres formes de codage de la présentation visuelle.
 
-#### Objectif – Utilisation de la couleur (1.4.1)   {#purpose-use-of-color}
+#### Objectif – Utilisation de la couleur (1.4.1)  {#purpose-use-of-color}
 
 La couleur est un moyen évidemment efficace d’améliorer l’aspect esthétique des pages web ; elle est également utile pour véhiculer l’information. Toutefois, en raison de différentes déficiences visuelles (de la cécité au daltonisme), certaines personnes ne sont pas capables de distinguer certaines couleurs. Par conséquent, le codage en couleurs ne constitue pas un moyen fiable de véhiculer l’information.
 
@@ -608,13 +607,13 @@ Les personnes avec certaines déficiences visuelles peuvent ne pas être en mesu
 >[!NOTE]
 Le texte simplement décoratif est exclu de ce critère de réussite.
 
-#### Comment procéder – Contraste (minimum) (1.4.3)   {#how-to-meet-contrast-minimum}
+#### Comment procéder – Contraste (minimum) (1.4.3)  {#how-to-meet-contrast-minimum}
 
 Veillez à ce que le texte soit suffisamment contrasté par rapport à son arrière-plan. Les rapports de contraste dépendent de la taille et du style du texte en question :
 
 * Pour le texte de moins de 18 points (ou 14 points en gras), le rapport de contraste entre le texte/les images de texte et l’arrière-plan doit être d’au moins 4.5:1.
 * Pour le texte de 18 points (ou 14 points en gras) au moins, le rapport de contraste doit être d’au moins 3:1.
-* Si un arrière-plan a un motif, l’arrière-plan autour du texte doit être ombré, de sorte que le rapport de 4,5:1 ou 3:1 soit préservé.
+* Si un arrière-plan a un motif, l’arrière-plan autour du texte doit être ombré, de sorte que le rapport de 4.5:1 ou 3:1 soit préservé.
 
 Pour vérifier les rapports de contraste, utilisez un outil de contraste des couleurs, tel que l’[analyseur de contraste des couleurs du groupe Paciello](https://www.paciellogroup.com/resources/contrast-analyser.html) ou l’[outil de vérification du contraste des couleurs de webAIM](https://www.webaim.org/resources/contrastchecker/), afin de vérifier les paires de couleurs et de signaler les éventuels problèmes de contraste.
 
@@ -622,7 +621,7 @@ Par ailleurs, si l’aspect de votre page n’est pas un souci majeur, vous avez
 
 S’il n’est pas possible d’obtenir les niveaux de contraste recommandés, vous devez fournir un lien vers une version équivalente alternative de la page (qui ne présente aucun problème de contraste des couleurs) ou permettre à l’utilisateur de régler le contraste du jeu de couleurs de la page selon ses besoins.
 
-#### En savoir plus – Contraste (minimum) (1.4.3)   {#more-information-contrast-minimum}
+#### En savoir plus – Contraste (minimum) (1.4.3)  {#more-information-contrast-minimum}
 
 * [Compréhension du critère de réussite 1.4.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
 * [Comment remplir le critère de réussite 1.4.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-contrast)
@@ -639,11 +638,11 @@ S’il n’est pas possible d’obtenir les niveaux de contraste recommandés, v
 >[!NOTE]
 Les logotypes (le texte qui fait partie d’un logo ou d’un nom de marque) sont considérés comme essentiels.
 
-#### Objectif – Texte sous forme d’image (1.4.5)   {#purpose-images-of-text}
+#### Objectif – Texte sous forme d’image (1.4.5)  {#purpose-images-of-text}
 
 Le texte sous forme d’image est souvent utilisé lorsqu’un style particulier de texte est nécessaire, tel un logotype ou si le texte a été généré à partir d’une autre source (par exemple la copie numérisée d’un document papier). Toutefois, par rapport au texte présenté en code HTML ou stylisé à l’aide d’une feuille de style CSS, il n’est pas possible de modifier la taille ou l’aspect du texte sous forme d’image, ce qui peut être nécessaire pour les personnes malvoyantes ou ayant des difficultés de lecture.
 
-#### Comment procéder – Texte sous forme d’image (1.4.5)   {#how-to-meet-images-of-text}
+#### Comment procéder – Texte sous forme d’image (1.4.5)  {#how-to-meet-images-of-text}
 
 Si vous devez utiliser du texte sous forme d’image, utilisez une feuille de style CSS pour remplacer le texte sous forme d’image par un équivalent textuel HTML, de sorte que le texte puisse être personnalisé. Pour en savoir plus à ce sujet, voir [C30: Using CSS to replace text with images of text and providing user interface controls to switch](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30) (Utilisation d’une feuille de style CSS pour remplacer du texte par du texte sous forme d’image et fournir des commandes d’interface utilisateur à permuter ; en anglais).
 
@@ -652,7 +651,7 @@ Si vous devez utiliser du texte sous forme d’image, utilisez une feuille de st
 * [Compréhension du critère de réussite 1.4.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html)
 * [Comment remplir le critère de réussite 1.4.5](https://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-presentation)
 
-## Principe 2 : utilisable   {#principle-operable}
+## Principe 2 : utilisable  {#principle-operable}
 
 [Principe 2 : utilisable – Les composants de l’interface utilisateur et de navigation doivent être utilisables.](https://www.w3.org/TR/WCAG20/#operable)
 
@@ -672,7 +671,7 @@ Remarques :
 1. Il n’est pas exigé que le contenu mis à jour périodiquement par logiciel ou diffusé en flux à l’agent utilisateur conserve ou présente l’information générée ou reçue entre la mise en pause et la reprise de la présentation, puisque cela peut ne pas être techniquement possible et s’avérer trompeur dans beaucoup de situations.
 1. Une animation survenant dans une phase de pré-chargement ou dans une situation similaire peut être considérée comme essentielle si aucune interaction n’est permise à tous les utilisateurs durant cette phase et si l’absence d’indication de progression est susceptible de perturber les utilisateurs ou de leur faire croire que le contenu est figé ou défectueux.
 
-#### Objectif – Mettre en pause, arrêter, masquer (2.2.2)   {#purpose-pause-stop-hide}
+#### Objectif – Mettre en pause, arrêter, masquer (2.2.2)  {#purpose-pause-stop-hide}
 
 Certains utilisateurs peuvent être distraits par le contenu en mouvement et avoir du mal à se concentrer sur d’autres parties de la page. En outre, un tel contenu peut s’avérer difficile à lire par les personnes qui ont du mal à suivre le texte en mouvement.
 
@@ -691,7 +690,7 @@ Selon la nature du contenu, appliquez une ou plusieurs des suggestions ci-après
 * [Compréhension du critère de réussite 2.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html)
 * [Comment remplir le critère de réussite 2.2.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-pause)
 
-### Crises (2.3)       {#seizures}
+### Crises (2.3)      {#seizures}
 
 [Règle 2.3 – Crises : ne pas concevoir de contenu susceptible de provoquer des crises.](https://www.w3.org/TR/WCAG20/#seizure)
 
@@ -708,7 +707,7 @@ Puisque tout contenu ne satisfaisant pas ce critère de réussite peut interfér
 
 Il arrive que le contenu qui flashe provoque des crises de photosensibilité. En appliquant ce critère de réussite, les utilisateurs concernés peuvent accéder au contenu et en prendre connaissance sans inquiétude quant au contenu qui flashe.
 
-#### Comment procéder – Pas plus de trois flashs ou sous le seuil critique (2.3.1)   {#how-to-meet-three-flashes-or-below-threshold}
+#### Comment procéder – Pas plus de trois flashs ou sous le seuil critique (2.3.1)  {#how-to-meet-three-flashes-or-below-threshold}
 
 Veillez à ce que les techniques ci-après soient appliquées :
 
@@ -726,15 +725,15 @@ Veillez à ce que les techniques ci-après soient appliquées :
 * Niveau A
 * Titre de page : les pages web présentent un titre qui décrit leur sujet ou leur but.
 
-#### Objectif – Titre de page (2.4.2)   {#purpose-page-titled}
+#### Objectif – Titre de page (2.4.2)  {#purpose-page-titled}
 
 Ce critère de réussite aide quiconque, en situation de handicap ou non, à identifier rapidement le contenu d’une page web sans avoir à lire la page entière. Cela s’avère particulièrement utile lorsque plusieurs pages web sont ouvertes dans des onglets de navigateur, puisque le titre de la page s’affiche dans l’onglet et est donc facile à trouver.
 
-#### Comment procéder – Titre de page (2.4.2)   {#how-to-meet-page-titled}
+#### Comment procéder – Titre de page (2.4.2)  {#how-to-meet-page-titled}
 
 Si une page HTML est créée dans AEM, vous pouvez en spécifier le titre. Veillez à ce qu’il décrive adéquatement le contenu de la page, de sorte que les visiteurs puissent rapidement identifier si le contenu est réellement adapté à leurs besoins.
 
-Vous pouvez également modifier le titre d&#39;une page lors de sa modification, accessible par **Sidekick** - **onglet Page** - **Propriétés de la page...**
+Vous pouvez également modifier le titre d’une page lors de sa modification, accessible par **Sidekick** - **onglet Page** - **Propriétés de la page...**
 
 #### En savoir plus – Titre de page (2.4.2) {#more-information-page-titled}
 
@@ -747,7 +746,7 @@ Vous pouvez également modifier le titre d&#39;une page lors de sa modification,
 * Niveau A
 * Fonction du lien (selon le contexte) : la fonction de chaque lien est déterminée par le texte du lien seul ou par le texte du lien associé à un contexte du lien déterminé par un programme informatique, sauf si la fonction du lien est ambiguë pour tout utilisateur.
 
-#### Objectif – Fonction du lien (selon le contexte) (2.4.4)   {#purpose-link-purpose-in-context}
+#### Objectif – Fonction du lien (selon le contexte) (2.4.4)  {#purpose-link-purpose-in-context}
 
 Pour tous les utilisateurs, en situation de handicap ou non, il est essentiel d’indiquer clairement la destination d’un lien par l’intermédiaire d’un texte de lien approprié. Les utilisateurs peuvent ainsi décider s’ils souhaitent suivre ce lien. Pour les utilisateurs voyants, un texte de lien significatif est extrêmement utile s’il existe plusieurs liens sur une page (en particulier si la page contient énormément de texte), car il indique clairement la fonctionnalité de la page cible. D’un autre côté, les utilisateurs de technologies d’assistance peuvent générer une liste de tous les liens sur une seule page, et ainsi comprendre plus facilement le texte du lien hors contexte.
 
@@ -811,21 +810,21 @@ Toutefois, il est possible d’utiliser des scripts de sorte qu’un texte minim
 
 [Principe 3 : compréhensible – Les informations et l’utilisation de l’interface utilisateur doivent être compréhensibles.](https://www.w3.org/TR/WCAG20/#understandable)
 
-### Rendre le contenu textuel lisible et compréhensible (3.1)   {#make-text-content-readable-and-understandable}
+### Rendre le contenu textuel lisible et compréhensible (3.1)  {#make-text-content-readable-and-understandable}
 
 [Règle 3.1 – Lisible : rendre le contenu textuel lisible et compréhensible](https://www.w3.org/TR/WCAG20/#meaning)
 
-### Langue de la page (3.1.1)   {#language-of-page}
+### Langue de la page (3.1.1)  {#language-of-page}
 
 * Critère de réussite 3.1.1
 * Niveau A
 * Langue de la page : la langue par défaut de chaque page web peut être déterminée par un programme informatique.
 
-#### Objectif – Langue de la page (3.1.1)   {#purpose-language-of-page}
+#### Objectif – Langue de la page (3.1.1)  {#purpose-language-of-page}
 
 Ce critère de réussite garantit que ce texte et tout autre contenu linguistique est correctement restitué. Pour les utilisateurs de lecteur d’écran, il garantit que le contenu est correctement prononcé, tandis que les navigateurs visuels sont plus susceptibles d’afficher correctement certains jeux de caractères.
 
-#### Comment procéder – Langue de la page (3.1.1)   {#how-to-meet-language-of-page}
+#### Comment procéder – Langue de la page (3.1.1)  {#how-to-meet-language-of-page}
 
 Pour que ce critère de réussite soit satisfait, la langue par défaut d’une page web peut être identifiée à l’aide de l’attribut `lang` dans l’élément `<html>` en haut de la page. Par exemple :
 
@@ -845,13 +844,13 @@ Dans AEM, la langue par défaut de la page est définie lors de sa création, ma
 * [Comment remplir le critère de réussite 3.1.1](https://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-doc-lang-id)
 * Les codes reposent sur la norme ISO 639-1. Vous trouverez une liste de codes plus complète pour chaque langue sur le site [W3Schools.com](https://www.w3schools.com/tags/ref_language_codes.asp).
 
-### Langue d’un passage (3.1.2)     {#language-of-parts}
+### Langue d’un passage (3.1.2)   {#language-of-parts}
 
 * Critère de réussite 3.1.2
 * Niveau AA
 * Langue d’un passage : la langue de chaque passage ou expression du contenu peut être déterminée par un programme informatique sauf pour un nom propre, pour un terme technique, pour un mot dont la langue est indéterminée ou pour un mot ou une expression faisant partie du langage courant de la langue utilisée dans le contexte immédiat.
 
-#### Objectif – Langue d’un passage (3.1.2)   {#purpose-language-of-parts}
+#### Objectif – Langue d’un passage (3.1.2)  {#purpose-language-of-parts}
 
 Ce critère de réussite vise le même objectif que le critère de réussite [Langue de la page](#language-of-page), mais il s’applique aux pages web avec du contenu en plusieurs langues sur une seule page (par exemple, en raison de citations ou de mots empruntés peu courants).
 
@@ -861,7 +860,7 @@ Si une page applique ce critère de réussite, alors :
 * Les lecteurs d’écran peuvent prononcer correctement les mots qui sont dans une autre langue que la langue par défaut.
 * Les outils de traduction du type Google Translate peuvent correctement traduire les mots d’une langue à une autre.
 
-#### Comment procéder – Langue d’un passage (3.1.2)   {#how-to-meet-language-of-parts}
+#### Comment procéder – Langue d’un passage (3.1.2)  {#how-to-meet-language-of-parts}
 
 L’attribut `lang` peut être utilisé pour identifier les modifications dans la langue du contenu. Par exemple, une citation en allemand (code ISO 639-1 &quot;de&quot;) peut s’afficher comme suit :
 
@@ -883,7 +882,7 @@ De même, le navigateur peut restituer correctement un mot ou une expression emp
 >[!NOTE]
 Il n’est pas nécessaire d’adhérer à ce critère de réussite pour les noms ou villes dans différentes langues ou lors de l’utilisation de mots ou d’expressions empruntés qui sont devenus courants dans la langue par défaut (tel que *diktat* en français).
 
-Pour ajouter l’élément span, avec un langage approprié, vous pouvez modifier manuellement votre balisage HTML en mode d’édition source de l’éditeur de texte enrichi afin qu’il se lise comme ci-dessus. Vous pouvez également inclure l’attribut `lang`[ dans l’éditeur de texte enrichi par un administrateur système (voir Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+Pour ajouter l’élément span, avec un langage approprié, vous pouvez modifier manuellement votre balisage HTML en mode d’édition source de l’éditeur de texte enrichi afin qu’il se lise comme ci-dessus. Vous pouvez également inclure l’attribut `lang` dans l’éditeur de texte enrichi par un administrateur système (voir [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 #### En savoir plus – Langue d’un passage (3.1.2) {#more-information-language-of-parts}
 
@@ -900,7 +899,7 @@ Pour ajouter l’élément span, avec un langage approprié, vous pouvez modifie
 * Niveau A
 * Étiquettes ou instructions : des étiquettes sont présentées ou des instructions sont fournies quand un contenu requiert une saisie utilisateur.
 
-#### Objectif – Étiquettes ou instructions (3.3.2)   {#purpose-labels-or-instructions}
+#### Objectif – Étiquettes ou instructions (3.3.2)  {#purpose-labels-or-instructions}
 
 La fourniture d’instructions pour aider les utilisateurs à remplir des formulaires est l’un des éléments essentiels pour rendre une interface conviviale. Ceci s’avère particulièrement utile pour les personnes ayant des déficiences visuelles ou cognitives qui risquent autrement d’avoir du mal à comprendre la mise en page d’un formulaire et le tri des données à fournir dans un champ particulier du formulaire.
 
@@ -924,7 +923,7 @@ Lorsqu’il existe un groupe de commandes associées, comme **Groupe de cases d�
 
 ![Ajout d’élément au groupe de cases d’option. Le titre du groupe est « Contactez-moi avant le », défini dans le champ Titre.](assets/chlimage_1-24.png)
 
-Cependant, il n’existe aucune association par programmation entre le titre du groupe et les boutons radio eux-mêmes. Les éditeurs de modèles doivent placer le titre dans les balises `fieldset` et `legend` nécessaires afin de créer cette association. Pour ce faire, il suffit de modifier le code source de la page. Un administrateur système peut également ajouter la prise en charge de ces éléments afin qu’ils apparaissent dans la boîte de dialogue **Propriétés du champ**[ (voir Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+Cependant, il n’existe aucune association par programmation entre le titre du groupe et les boutons radio eux-mêmes. Les éditeurs de modèles doivent placer le titre dans les balises `fieldset` et `legend` nécessaires afin de créer cette association. Pour ce faire, il suffit de modifier le code source de la page. Un administrateur système peut également ajouter la prise en charge de ces éléments afin qu’ils apparaissent dans la boîte de dialogue **Propriétés du champ** (voir [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 #### Considérations supplémentaires pour les formulaires {#additional-considerations-for-forms}
 
@@ -938,11 +937,11 @@ Le positionnement des libellés est également important, car ils permettent de 
 
 * Cases à cocher ou boutons radio :
 
-   Les étiquettes sont placées immédiatement à droite du champ.
+   Les libellés sont positionnés immédiatement à droite du champ.
 
-* Tous les autres composants de formulaire (par exemple, les zones de texte, les zones de liste modifiable) :
+* Tous les autres composants de formulaire (zones de texte, zones de liste modifiable, par exemple) :
 
-   Les étiquettes sont placées immédiatement au-dessus ou immédiatement à gauche du champ.
+   Les libellés sont positionnés immédiatement au-dessus ou à gauche du champ.
 
 Dans les formulaires simples avec des fonctionnalités très limitées, un bouton `Submit` approprié peut servir de libellé pour le champ adjacent (par exemple `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
 
@@ -950,4 +949,3 @@ Dans les formulaires simples avec des fonctionnalités très limitées, un bouto
 
 * [Compréhension du critère de réussite 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
 * [Comment remplir le critère de réussite 3.3.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues)
-
