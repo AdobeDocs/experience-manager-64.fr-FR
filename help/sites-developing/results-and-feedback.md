@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 2fff5f64-d330-4b32-a861-1f5315363b69
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 976f00d0-0b7a-4d5e-bfbc-44c2504ca2f6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 100%
 
 ---
-
 
 # Suivi des résultats et formulation de commentaires{#tracking-results-and-providing-feedback}
 
@@ -33,4 +32,3 @@ Cependant, quel que soit l’outil ou la méthode que vous choisissez, les infor
 * Ne doivent pas être :
 
    * Étendues pour inclure des informations de suivi, qu’il s’agisse de bogues, de nouvelles fonctions ou encore d’actions de suivi. Ces informations doivent être conservées ailleurs. Pour rappel, de nombreux outils sont disponibles à cet effet.
-
