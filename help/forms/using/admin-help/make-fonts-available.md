@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f58a6c4-3190-49d4-800c-4a55dca7c296
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 33d63ec9-b100-48b4-b84d-a9de82c24f86
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 100%
 
 ---
-
 
 # Rendre les polices disponibles {#make-fonts-available}
 
@@ -34,4 +33,3 @@ Pour plus d’informations sur les paramètres de police supplémentaires, consu
 >[!NOTE]
 >
 >Les polices sont sélectionnées à partir du cache des polices du système Windows et un redémarrage du système est requis pour mettre à jour le cache. Après avoir spécifié le répertoire des polices du client, assurez-vous de redémarrer le système sur lequel AEM forms est installé.
-
