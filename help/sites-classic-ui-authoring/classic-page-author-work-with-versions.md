@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: ba74d3fb-063d-4bd6-a551-8e71ad6559e3
-translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+exl-id: 407287cf-8096-40ee-971c-006d876ba4e4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 91%
 
 ---
-
 
 # Utilisation des versions de page{#working-with-page-versions}
 
@@ -26,7 +25,7 @@ Le contrôle de version permet de créer un « instantané » d’une page à 
 * Restaurer la version précédente d’une page (pour annuler une modification apportée à une page, par exemple).
 * Comparer la version actuelle d’une page avec une version précédente (les différences dans le texte et les images sont mises en évidence).
 
-## Création d’une version    {#creating-a-new-version}
+## Création d’une version   {#creating-a-new-version}
 
 Pour créer une version d’une page :
 
@@ -36,8 +35,8 @@ Pour créer une version d’une page :
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Entrez un commentaire dans la zone **Commenter** (facultatif).
-1. Pour définir une étiquette sur la version (facultatif), cliquez sur le bouton **Plus &quot;** et définissez **Label** pour nommer la version. Si le libellé n’est pas défini, la version est un nombre incrémenté automatiquement.
-1. Cliquez sur **Créer une version**. Un message grisé apparaît sur la page, indiquant par exemple :
+1. Pour définir un libellé sur la version (facultatif), cliquez sur le bouton **Plus &quot;** et définissez le **libellé** pour nommer la version. Si le libellé n’est pas défini, la version est un nombre incrémenté automatiquement.
+1. Cliquez sur **Créer la version**. Un message grisé apparaît sur la page, indiquant par exemple :
 
    Version 1.2 créée pour : Chemises.
 
@@ -65,7 +64,7 @@ Appliquez cette méthode pour restaurer une version de page. Vous pouvez égalem
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Sélection de** Restaurer la version...** liste des versions des documents dans le dossier actuel. Même si une page a été supprimée, la dernière version est répertoriée :
+1. Sélectionnez ** Restaurer la version...** répertorie les versions des documents dans le dossier actif. Même si une page a été supprimée, la dernière version est répertoriée :
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
@@ -88,12 +87,12 @@ Appliquez cette méthode pour restaurer une version de page. Vous pouvez égalem
 Pour comparer la version actuelle de la page avec une version précédente :
 
 1. Dans votre navigateur, ouvrez la page pour laquelle vous souhaitez effectuer une comparaison avec une version précédente.
-1. Dans le Sidekick, sélectionnez l&#39;onglet **Versioning**, puis le sous-onglet **Restore Versio** n.
+1. Dans le sidekick, sélectionnez l’onglet **Création de versions**, puis le sous-onglet **Restaurer la version** n.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
 1. Sélectionnez la version pour laquelle effectuer la comparaison, puis cliquez sur le bouton **Diff**.
-1. Les différences entre la version actuelle et la version sélectionnée s’affichent comme suit :
+1. Les différences entre la version actuelle et la version sélectionnée sont affichées comme suit :
 
    * Le texte qui a été supprimé apparaît en rouge et est barré.
    * Le texte qui été ajouté apparaît en vert et est souligné.
@@ -103,7 +102,7 @@ Pour comparer la version actuelle de la page avec une version précédente :
 
 1. Dans le sidekick, sélectionnez le sous-onglet **Restaurer la version**, puis cliquez sur le bouton **&lt;&lt;Précédent** pour afficher la version actuelle.
 
-## Distorsion du temps Timewarp   {#timewarp}
+## Distorsion du temps Timewarp {#timewarp}
 
 La fonction de distorsion du temps Timewarp permet de simuler l’état ***publié*** d’une page à des moments spécifiques dans le passé.
 
@@ -194,4 +193,4 @@ Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutef
 
 >[!CAUTION]
 >
->Timewarp est conçu comme un outil permettant aux auteurs de comprendre et de créer leur contenu. Il ne s’agit pas d’un journal d’audit et il n’est pas destiné à des fins juridiques.
+>Timewarp est un outil conçu pour aider les auteurs à comprendre et à créer leur contenu. Il ne s’agit pas d’un journal d’audit et il n’est pas destiné à des fins juridiques.
