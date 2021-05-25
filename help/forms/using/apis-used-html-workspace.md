@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
-translation-type: tm+mt
-source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
+exl-id: 1d74fdb9-c118-45f7-93c6-116cacb2f1c4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
 ---
 
-
-# API utilisées dans l’espace de travail AEM Forms  {#apis-used-in-aem-forms-workspace}
+# API utilisées dans l’espace de travail AEM Forms {#apis-used-in-aem-forms-workspace}
 
 Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
 
@@ -146,13 +145,13 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   <tr>
    <td>consult</td> 
    <td>ProcessManagementTaskService</td> 
-   <td>consulter</td> 
+   <td>consult</td> 
    <td>Elle consulte une tâche avec un autre utilisateur.</td> 
   </tr>
   <tr>
    <td>claim</td> 
    <td>ProcessManagementTaskService</td> 
-   <td>revendication</td> 
+   <td>request</td> 
    <td>Elle demande une tâche disponible dans la file d’attente partagée.</td> 
   </tr>
   <tr>
@@ -164,7 +163,7 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   <tr>
    <td>lock</td> 
    <td>ProcessManagementTaskService</td> 
-   <td>verrouiller</td> 
+   <td>lock</td> 
    <td>Elle verrouille une tâche ; la tâche ne peut plus être demandée par un autre utilisateur si elle est partagée.</td> 
   </tr>
   <tr>
@@ -176,7 +175,7 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   <tr>
    <td>abandon</td> 
    <td>ProcessManagementTaskService</td> 
-   <td>abandonner</td> 
+   <td>abandon</td> 
    <td>Elle supprime une tâche.</td> 
   </tr>
   <tr>
@@ -224,7 +223,7 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   <tr>
    <td>revokeQueueAccess</td> 
    <td>ProcessManagementQueueService</td> 
-   <td>cancelQueueAccess</td> 
+   <td>révocationQueueAccess</td> 
    <td>Elle supprime un utilisateur de la liste des utilisateurs qui ont accès à la file d’attente de l’utilisateur connecté.</td> 
   </tr>
   <tr>
@@ -344,7 +343,7 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   <tr>
    <td>rejectTaskOfDirectReport</td> 
    <td>ProcessManagementTeamTasksService</td> 
-   <td>rejeterTâcheDeDirectReport</td> 
+   <td>rejectTaskOfDirectReport</td> 
    <td>Elle renvoie une tâche d’un rapport direct à l’utilisateur précédent.</td> 
   </tr>
   <tr>
@@ -403,6 +402,3 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   </tr>
  </tbody>
 </table>
-
-
-
