@@ -9,32 +9,31 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 70be208d-185b-4b27-8e01-74e62f656344
-translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+exl-id: 358b70b8-8122-4eda-baa7-d9a58d6901f9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 1%
 
 ---
 
+# Modifier l’aspect (HBS) {#alter-the-appearance-hbs}
 
-# Modifier l&#39;apparence (HBS) {#alter-the-appearance-hbs}
+Maintenant que les composants du système de commentaires personnalisé dans le répertoire de l’application (/apps) sont en place, avec un resourceSuperType référençant le système de commentaires par défaut et le modèle/affichage personnalisé enregistré, il est possible de modifier l’implémentation.
 
-Maintenant que les composants du système de commentaires personnalisés dans le répertoire de l&#39;application (/apps) sont en place, avec un resourceSuperType référençant le système de commentaires par défaut et le modèle/Vue personnalisé enregistré, il est possible de modifier l&#39;implémentation.
-
-Pour une simple démonstration, une fonction visuelle, l’avatar affiché par l’utilisateur connecté qui publie un commentaire, est supprimée.
+Pour une démonstration simple, l’avatar affiché pour l’utilisateur connecté qui publie un commentaire est supprimé.
 
 >[!NOTE]
 >
->Pour utiliser l&#39;extension, l&#39;instance du système de commentaires d&#39;un site Web à affecter (/content) doit définir resourceType comme système de commentaires personnalisé.
+>Pour utiliser l’extension , l’instance du système de commentaires d’un site web à affecter (/content) doit définir son resourceType comme système de commentaires personnalisé.
 
 ## Modification des scripts HBS {#modify-the-hbs-scripts}
 
 Utilisation de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) :
 
-* Ouvrir [/apps/custom/components/comments/comment/comment.hbs](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Ouvrez [/apps/custom/components/comments/comment/comment.hbs](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
-   * Mettez en commentaire la balise qui contient l’avatar pour un commentaire (~ ligne 21) :
+   * Commentez la balise qui contient l’avatar d’une publication de commentaire (~ ligne 21) :
 
       ```
       <!--
@@ -42,7 +41,7 @@ Utilisation de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-li
        -->
       ```
 
-* Ouvrir [/apps/custom/components/comments/comments.hbs](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Ouvrez [/apps/custom/components/comments/comments.hbs](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * Mettez en commentaire la balise qui contient l’avatar pour la prochaine entrée de commentaire (~ ligne 44) :
 
@@ -52,30 +51,30 @@ Utilisation de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-li
        -->
       ```
 
-* Sélectionner **Enregistrer tout**
+* Sélectionnez **Enregistrer tout**.
 
 ## Répliquer l’application personnalisée {#replicate-custom-app}
 
-Une fois l’application modifiée, il est nécessaire de reproduire à nouveau le composant personnalisé.
+Une fois l’application modifiée, il est nécessaire de répliquer à nouveau le composant personnalisé.
 
-Une façon de le faire est
+Pour ce faire, une méthode consiste à
 
-* Dans le menu principal
+* À partir du menu principal
 
    * Sélectionnez **[!UICONTROL Outils > Opérations > Réplication]**
    * Sélectionner `Activate Tree`
    * Définissez `Start Path` : à `/apps/custom`
-   * Désélectionner `Only Modified`
+   * Décochez `Only Modified`
    * Bouton Sélectionner `Activate`
 
-## Commentaire modifié de la vue sur l’exemple de page publié {#view-modified-comment-on-published-sample-page}
+## Afficher le commentaire modifié sur l’exemple de page publié {#view-modified-comment-on-published-sample-page}
 
-[En poursuivant l’](extend-sample-page.md#publish-sample-page) expérience de l’instance de publication, toujours connectée en tant que même utilisateur, il est maintenant possible d’actualiser la page dans l’environnement de publication afin de vue la modification de suppression de l’avatar :
+[En poursuivant l’](extend-sample-page.md#publish-sample-page) expérience sur l’instance de publication, toujours connecté en tant qu’utilisateur identique, il est désormais possible d’actualiser la page dans l’environnement de publication pour afficher la modification afin de supprimer l’avatar :
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
-## Exemple de package d&#39;extension de commentaire {#sample-comment-extension-package}
+## Exemple de module d’extension de commentaire {#sample-comment-extension-package}
 
-Vous trouverez ci-joint un package de l&#39;application de commentaires personnalisés créée dans ce didacticiel.
+Vous trouverez ci-joint un package de l’application de commentaires personnalisés créée dans ce tutoriel.
 
 [Obtenir le fichier](assets/sample-comment-extension-6-1-fp3.zip)
