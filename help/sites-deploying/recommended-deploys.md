@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 5e903df9-6591-46e8-9251-45170c78aa21
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: aa4ec854-e32b-4136-a6d4-a42deb2afb18
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1801'
 ht-degree: 94%
 
 ---
-
 
 # Déploiements recommandés{#recommended-deployments}
 
@@ -28,7 +27,7 @@ Les micronoyaux fonctionnent comme des gestionnaires de persistance dans AEM 6.
 
 Les exemples ci-dessous ont pour objectif de vous donner une indication des utilisations recommandées pour les configurations d’AEM les plus courantes.
 
-## Scénarios de déploiement  {#deployment-scenarios}
+## Scénarios de déploiement {#deployment-scenarios}
 
 ### Instance TarMK unique {#single-tarmk-instance}
 
@@ -76,7 +75,7 @@ Les inconvénients :
 
 >[!NOTE]
 >
->Le déploiement du mécanisme Cold Standby dans cet exemple de TarMK exige que les instances principales et de secours disposent de licences distinctes, en raison de la réplication constante vers le serveur de basculement. Pour plus d&#39;informations sur les licences, consultez les [Conditions générales de licence de l&#39;Adobe](https://www.adobe.com/fr/legal/terms/enterprise-licensing.html).
+>Le déploiement du mécanisme Cold Standby dans cet exemple de TarMK exige que les instances principales et de secours disposent de licences distinctes, en raison de la réplication constante vers le serveur de basculement. Pour plus d’informations sur les licences, consultez les [Conditions générales de licence de l’Adobe](https://www.adobe.com/fr/legal/terms/enterprise-licensing.html).
 
 ### La ferme TarMK {#tarmk-farm}
 
@@ -115,7 +114,7 @@ Les inconvénients :
 
 Cette approche implique que plusieurs instances Oak accèdent à un ensemble de réplications MongoDB défini sur plusieurs data centers, créant ainsi un cluster actif-actif pour l’environnement de création AEM. Avec plusieurs data centers, la réplication MongoDB fournit le même niveau élevé de disponibilité et de redondance, mais inclut désormais la capacité de gérer une éventuelle panne de courant du data center.
 
-![oakclustermongofailover2datacenters](assets/oakclustermongofailover2datacenters.png)
+![oakclustermongofailover2datacenter](assets/oakclustermongofailover2datacenters.png)
 
 Les avantages :
 
@@ -124,7 +123,7 @@ Les avantages :
 
 >[!NOTE]
 >
->Dans le diagramme ci-dessus, AEM Server 3 et AEM Server 4 sont présentés avec un état inactif en supposant une latence réseau entre les serveurs de l&#39;AEM dans le centre de données 2 et le noeud Principal MongoDB dans le centre de données 1 qui est supérieure à la demande documentée [ici](/help/sites-deploying/aem-with-mongodb.md#checklists). Si la latence maximum est compatible avec les exigences, par exemple en utilisant les zones de disponibilité, les serveurs AEM dans le data center 2 peuvent être actifs également, créant un cluster AEM actif-actif dans plusieurs data centers.
+>Dans le diagramme ci-dessus, AEM serveur 3 et AEM serveur 4 sont présentés avec un état inactif en supposant une latence réseau entre les serveurs d’accès à l’instance d’accès entre les serveurs d’accès à l’instance de données 2 et le noeud Principal de MongoDB dans le centre de données 1 qui est supérieure à l’exigence documentée [ici](/help/sites-deploying/aem-with-mongodb.md#checklists). Si la latence maximum est compatible avec les exigences, par exemple en utilisant les zones de disponibilité, les serveurs AEM dans le data center 2 peuvent être actifs également, créant un cluster AEM actif-actif dans plusieurs data centers.
 
 >[!NOTE]
 >
@@ -145,7 +144,7 @@ La raison principale pour choisir la persistance MongoMK plutôt que TarMK est s
 Il est pratiquement impossible de prévoir quel sera le modèle exact de concurrence après le lancement du nouveau site. Par conséquent, Adobe vous recommande de tenir compte des critères suivants lorsque vous considérez d’utiliser MongoMK et au moins deux nœuds actifs d’auteur :
 
 1. Nombre d’utilisateurs nommés connectés au cours de la journée : des milliers ou plus.
-1. Nombre d&#39;utilisateurs simultanés : par centaines ou plus.
+1. Nombre d’utilisateurs simultanés : par centaines ou plus.
 1. Volume d’assimilation de ressources par jour : des centaines de milliers, voire plus.
 1. Volume de modifications de pages par jour : des centaines de milliers (y compris les mises à jour automatisées via le gestionnaire multi-site ou des assimilations de flux d’actualité, par exemple).
 1. Volume de recherches par jour : des dizaines de milliers, voire plus.
@@ -183,7 +182,7 @@ Certaines conditions préalables et des recommandations sont disponibles si vous
 1. Les architectures et infrastructures d’ensemble d’AEM et de MongoDB doivent être correctement configurées et validées par un architecte Adobe AEM ; 
 1. Vous devez passer en revue le modèle de prise en charge des déploiements AEM qui incluent MongoDB.
 
-**Recommandations strictes pour les déploiements de MongoDB :**
+**Recommandations strictes pour les déploiements MongoDB :**
 
 * Consultez l’article sur MongoDB pour [Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager) ;
 * Passez en revue la liste de contrôle de production [MongoDB](https://docs.mongodb.org/manual/administration/production-checklist/) ;
@@ -220,4 +219,3 @@ Vous trouverez ci-dessous un ensemble de matrices décisionnelles pour vous aide
 >Si vous souhaitez créer des déploiements de création et de publication sur MongoDB, vous devez acheter deux licences distinctes.
 >
 >Pour plus d’informations, consultez la page [MongoDB pour Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
-
