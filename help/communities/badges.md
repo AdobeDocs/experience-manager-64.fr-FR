@@ -1,8 +1,8 @@
 ---
-title: Console de badges
-seo-title: Console de badges
-description: La console Badges de communautés vous permet d'ajouter des badges personnalisés qui peuvent être affichés pour les membres lorsqu'ils sont gagnés (attribués) ou lorsqu'ils assument un rôle spécifique dans la communauté (affectés).
-seo-description: La console Badges de communautés vous permet d'ajouter des badges personnalisés qui peuvent être affichés pour les membres lorsqu'ils sont gagnés (attribués) ou lorsqu'ils assument un rôle spécifique dans la communauté (affectés).
+title: Console Badges
+seo-title: Console Badges
+description: La console Badges de communauté vous permet d’ajouter des badges personnalisés qui peuvent être affichés pour les membres lorsqu’ils sont gagnés (attribués) ou lorsqu’ils assument un rôle spécifique dans la communauté (affecté).
+seo-description: La console Badges de communauté vous permet d’ajouter des badges personnalisés qui peuvent être affichés pour les membres lorsqu’ils sont gagnés (attribués) ou lorsqu’ils assument un rôle spécifique dans la communauté (affecté).
 uuid: 9eeba240-f0d4-4937-baba-8bac0e0b2a36
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,24 +10,23 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4194278f-5127-4105-b181-60961c7a1def
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: b6aa9d73-4e20-446a-a1fc-78f8968d6844
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '319'
 ht-degree: 5%
 
 ---
-
 
 # Console Badges {#badges-console}
 
 ## À propos des badges {#about-badges}
 
-La console Badges communautaires permet d&#39;ajouter des badges personnalisés qui peuvent être affichés pour un membre lorsqu&#39;il est gagné (attribué) ou lorsqu&#39;il assume un rôle spécifique dans la communauté (attribué).
+La console Badges de communauté permet d’ajouter des badges personnalisés qui peuvent être affichés pour un membre lorsqu’il est gagné (attribué) ou lorsqu’il occupe un rôle spécifique dans la communauté (affecté).
 
 ### Visibilité du badge {#badge-visibility}
 
-Actuellement, les badges gagnés ou attribués à un membre de la communauté apparaissent avec son nom et son avatar aux emplacements suivants :
+Actuellement, les badges qu’un membre de la communauté gagne ou se voit attribuer s’affichent avec son nom et son avatar aux emplacements suivants :
 
 * Profils
 * [Forums](forum.md)
@@ -35,9 +34,9 @@ Actuellement, les badges gagnés ou attribués à un membre de la communauté ap
 * [Tableaux de bord](enabling-leaderboard.md)
 * [Conceptualisation](ideation-feature.md)
 
-Dans l&#39;environnement auteur, pour accéder à la console Badges
+Dans l’environnement de création, pour accéder à la console Badges
 
-* A partir de la navigation globale : **[!UICONTROL Outils > Communautés > Badges]**
+* À partir de la navigation globale : **[!UICONTROL Outils > Communautés > Badges]**
 
 Cette console affiche les badges actuellement disponibles et à partir desquels de nouveaux badges peuvent être ajoutés.
 
@@ -45,23 +44,23 @@ Cette console affiche les badges actuellement disponibles et à partir desquels 
 
 ## Créer le badge {#create-badge}
 
-Un badge est créé en téléchargeant une image suffisamment petite (72 dpi avec une hauteur comprise entre 26 et 32 pixels) et en fournissant un nom. L’image de badge est stockée dans le référentiel à `/etc/community/badging/images` et automatiquement répliquée dans l’environnement de publication.
+Un badge est créé en téléchargeant une image de petite taille (72 dpi avec une hauteur comprise entre 26 et 32 pixels) et en fournissant un nom. L’image de badge est stockée dans le référentiel à l’emplacement `/etc/community/badging/images` et est automatiquement répliquée dans l’environnement de publication.
 
-Si l’environnement de publication est une batterie d’éditeurs, il est nécessaire de configurer [la synchronisation utilisateur](sync.md).
+Si l’environnement de publication est une ferme d’éditeurs, il est nécessaire de configurer la [synchronisation des utilisateurs](sync.md).
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
 * **[!UICONTROL Télécharger l’image]**
 
-   (*Obligatoire*) Image de badge d’une taille recommandée de 32 x 32 pixels à 72 ppp, au format JPEG ou PNG.
+   (*Obligatoire*) Image de badge d’une taille recommandée de 32 x 32 pixels à 72 ppp au format JPEG ou PNG.
 
 * **[!UICONTROL Name]** (Nom)
 
-   (*Obligatoire*) Nom du badge. Il s’agit de la valeur par défaut `Display Name` ainsi que du nom du noeud du référentiel. Si `Name` n&#39;est pas un nom de noeud de référentiel valide, il sera modifié.
+   (*Obligatoire*) Nom du badge. Il s’agit de la valeur par défaut `Display Name` ainsi que du nom du noeud de référentiel. Si `Name` n’est pas un nom de noeud de référentiel valide, il sera modifié.
 
 * **[!UICONTROL Nom d’affichage]**
 
-   (*Facultatif*) Nom à afficher pour le badge dans l’interface utilisateur. La valeur par défaut est le texte non modifié saisi pour le `Name`.
+   (*Facultatif*) Nom à afficher pour le badge dans l’interface utilisateur. La valeur par défaut est le texte non modifié saisi pour la balise `Name`.
 
 * **[!UICONTROL Description]**
 
@@ -69,6 +68,6 @@ Si l’environnement de publication est une batterie d’éditeurs, il est néce
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d’informations sur la configuration des règles de notation et de badge, voir [Scoring and Badges](implementing-scoring.md).
+Pour plus d’informations sur la configuration des règles de notation et de badge, voir [Notation et badges](implementing-scoring.md).
 
 Pour la gestion des badges pour les membres, voir [Console Membres](members.md).
