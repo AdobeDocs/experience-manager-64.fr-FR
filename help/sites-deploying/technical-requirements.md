@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
-translation-type: tm+mt
-source-git-commit: 95b5e70c1b474d4d207a5a33e8d1ab8ef39685b6
+exl-id: 21c10b39-ca37-4085-86f8-063c30a180ed
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3272'
 ht-degree: 83%
 
 ---
-
 
 # Exigences techniques{#technical-requirements}
 
@@ -28,16 +27,16 @@ Pour tout problème relatif à la plateforme proprement dite, contactez directem
 >
 >Selon le plateforme sur lequel vous avez installé AEM, il peut exister différents ensembles de critères d’exigences pour la gestion des utilisateurs. 
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Configuration minimale requise pour installer Adobe Experience Manager :
 
-* Installation de la plateforme Java, du JDK Standard Edition ou d’autres [machines virtuelles Java ](#java-virtual-machines) prises en charge
+* Installation de Java Platform, Standard Edition JDK ou autres [machines virtuelles Java ](#java-virtual-machines) prises en charge
 * Fichier de démarrage rapide Experience Manager (JAR autonome ou WAR de déploiement de l’application web)
 
 ### Configuration minimale requise en matière d’espace disque et de mémoire {#minimum-sizing-requirements}
 
-Configuration minimale requise pour l’exécution de Adobe Experience Manager :
+Configuration minimale requise pour l’exécution d’Adobe Experience Manager :
 
 * 5 Go d’espace disque disponible dans le répertoire d’installation
 * Mémoire de 2 Go
@@ -51,7 +50,7 @@ Configuration minimale requise pour l’exécution de Adobe Experience Manager :
 
 
 
-Pour plus d&#39;informations, consultez les [directives de dimensionnement du matériel](/help/managing/hardware-sizing-guidelines.md).
+Pour plus d’informations, voir [Instructions de dimensionnement du matériel](/help/managing/hardware-sizing-guidelines.md) .
 
 ### Niveaux de prise en charge {#support-levels}
 
@@ -129,10 +128,10 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
  </tbody> 
 </table>
 
-1. Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java SE. Java 9 et 10 ne sont pas des versions de LTS par Oracle (voir [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe assure uniquement la prise en charge des versions LTS de Java pour exécuter AEM en production.
+1. Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java SE. Java 9 et 10 sont des versions non-LTS par Oracle (voir [Feuille de route de la prise en charge de Java SE par Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe assure uniquement la prise en charge des versions LTS de Java pour exécuter AEM en production.
 
 1. IBM JRE est pris en charge uniquement avec WebSphere Application Server.
-1. La prise en charge et la distribution du JDK Oracle Java SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, seront directement prises en charge par Adobe pour tous les clients AEM utilisant la technologie Oracle Java SE. Pour plus d&#39;informations, consultez l&#39;[Oracle Java de prise en charge de Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf).
+1. La prise en charge et la distribution du JDK Oracle Java SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, seront directement prises en charge par Adobe pour tous les clients AEM utilisant la technologie Oracle Java SE. Pour plus d’informations, voir [Prise en charge Java d’Oracle pour Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) .
 
 ### Stockage et persistance {#storage-persistence}
 
@@ -173,12 +172,12 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
   <tr> 
    <td>MongoDB Enterprise 3.6  [5, 6]</td> 
    <td>Référentiel</td> 
-   <td>A : Pris en charge  avec limites</td> 
+   <td>A : Pris en charge  avec des limites</td> 
   </tr> 
   <tr> 
    <td>MongoDB Enterprise 3.4 [2, 3, 6]</td> 
    <td>Référentiel</td> 
-   <td>A : Pris en charge  avec limites</td> 
+   <td>A : Pris en charge  avec des limites</td> 
   </tr> 
   <tr> 
    <td>MySQL 5.7</td> 
@@ -196,7 +195,7 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
    <td>R : Prise en charge limitée (4)</td> 
   </tr> 
   <tr> 
-   <td>Base de données des Oracles 12c (12.1.x)</td> 
+   <td>Oracle de données 12c (12.1.x)</td> 
    <td>Base de données de formulaires et de référentiels</td> 
    <td>R : Prise en charge limitée</td> 
   </tr> 
@@ -233,7 +232,7 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 1. Seule le moteur de stockage MongoDB WiredTiger est prise en charge. 
 1. AEM Forms n’est pas pris en charge.
 1. MongoDB Enterprise 3.6 est pris en charge à partir d’AEM version 6.4.2.0.
-1. La prise en charge de MongoDB 3.4 a atteint la fin de vie (EOL), tandis que MongoDB 3.6 devrait atteindre EOL le 30 avril 2021. Veuillez noter que l&#39;Adobe ne fournira qu&#39;un soutien pour AEM problèmes liés aux produits.
+1. La prise en charge de MongoDB 3.4 a atteint la fin de vie (EOL), tandis que MongoDB 3.6 devrait atteindre la fin de vie le 30 avril 2021. Veuillez noter qu’Adobe ne fournira une assistance que pour AEM problèmes liés aux produits à l’avenir.
 
 >[!NOTE]
 >
@@ -243,7 +242,7 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 >
 >MongoDB est un logiciel tiers qui n’est pas inclus dans le pack de licences AEM. Pour plus d’informations, consultez la page relative à la stratégie de gestion des licences MongoDB ([MongoDB licensing policy](https://www.mongodb.org/about/licensing/)).
 >
->Pour tirer pleinement parti de votre déploiement AEM avec MongoDB, Adobe conseille d’utiliser la version MongoDB Enterprise sous licence afin de bénéficier d’une assistance professionnelle. Voir [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) pour plus d&#39;informations.
+>Pour tirer pleinement parti de votre déploiement AEM avec MongoDB, Adobe conseille d’utiliser la version MongoDB Enterprise sous licence afin de bénéficier d’une assistance professionnelle. Voir [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) pour plus d’informations.
 >
 >La licence comprend un ensemble de répliques, composé d’une instance principale et de deux instances secondaires qui peuvent être utilisées pour les déploiements de création ou de publication.
 >
@@ -320,7 +319,7 @@ Adobe Experience Manager fonctionne avec les plates-formes serveur suivantes 
  </tbody> 
 </table>
 
-1. Linux Kernel 2.6, 3.x et 4.x inclut des dérivés de la distribution Red Hat, y compris Red Hat Enterprise Linux, CentOS, Oracle Linux et Amazon Linux. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7 et Red Hat Enterprise Linux 7.
+1. Linux Kernel 2.6, 3.x et 4.x comprend des dérivés de la distribution Red Hat, notamment Red Hat Enterprise Linux, CentOS, Oracle Linux et Amazon Linux. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7 et Red Hat Enterprise Linux 7.
 1. AEM Assets : Veuillez consulter la section [Prise en charge pour l’écriture différée des métadonnées XMP](#requirements-for-aem-assets-xmp-metadata-write-back)
 1. AEM Assets : Pas de prise en charge pour l’imagerie Dynamic Media. Le service vidéo de média dynamique est pris en charge.
 1. AEM Forms est pris en charge uniquement sur Ubuntu 16.04 LTS.
@@ -476,7 +475,7 @@ Cela signifie que lorsqu’une adresse IP doit être indiquée, vous avez le ch
 
    par exemple `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* une adresse IPv4
+* une adresse IPv4 ;
 
    par exemple `https://123.1.1.4:4502`
 
@@ -484,7 +483,7 @@ Cela signifie que lorsqu’une adresse IP doit être indiquée, vous avez le ch
 
    par exemple, `https://www.yourserver.com:4502`
 
-* la casse par défaut de `localhost` sera interprétée pour les installations réseau IPv4 et IPv6.
+* le cas par défaut de `localhost` sera interprété pour les installations réseau IPv4 et IPv6.
 
    par exemple, `http://localhost:4502`
 
@@ -492,10 +491,10 @@ Cela signifie que lorsqu’une adresse IP doit être indiquée, vous avez le ch
 
 Par défaut, AEM Dynamic Media est désactivé. Voir [Activation de Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
-Lorsque Dynamic Media est activé, les autres configurations requises suivantes s’appliquent :
+Lorsque Dynamic Media est activé, la configuration système requise supplémentaire suivante s’applique :
 >[!NOTE]
 >
->La configuration requise suivante s&#39;applique **_uniquement_** si vous utilisez le mode Dynamic Media - Hybrid ; Dynamic Media - Le mode hybride est doté d’un serveur d’images intégré, qui est uniquement certifié sur certains systèmes d’exploitation.
+>La configuration requise suivante s’applique **_uniquement_** si vous utilisez le mode Dynamic Media - Hybride ; Dynamic Media - Le mode hybride comporte un serveur d’images intégré, qui est certifié uniquement sur certains systèmes d’exploitation.
 >
 >Pour les clients Dynamic Media qui exécutent le mode Dynamic Media – Scene7 (mode d’exécution **dynamicmedia_scene7**), il n’existe aucune exigence système supplémentaire spécifique ; la configuration requise est donc la même que pour AEM. L’architecture du mode Dynamic Media – Scene7 utilise le service d’images basé sur le cloud, et non celui intégré dans AEM.
 
@@ -508,7 +507,7 @@ Les exigences matérielles suivantes s’appliquent aux systèmes d’exploitati
 
 #### Linux {#linux}
 
-L’utilisation de Dynamic Media sous Linux requiert les conditions préalables suivantes :
+L’utilisation de Dynamic Media sous Linux requiert les prérequis suivants :
 
 * RedHat Enterprise 7 ou CentOS 7 et versions ultérieures avec les derniers correctifs
 * Système d’exploitation 64 bits
@@ -544,19 +543,19 @@ L’utilisation de Dynamic Media sous Linux requiert les conditions préalables 
 * Microsoft Windows Server 2016
 * Espace d’échange égal à au moins deux fois la quantité de mémoire physique (RAM).
 
-Pour utiliser Dynamic Media sous Windows, Microsoft Visual Studio 2010, 2013 et 2015 redistributables pour x64 et x86 doit être installé.
+Pour utiliser Dynamic Media sous Windows, les redistribuables Microsoft Visual Studio 2010, 2013 et 2015 pour x64 et x86 doivent être installés.
 
 x64
 
-* La redistribuable de Microsoft Visual Studio 2010 se trouve à l&#39;adresse [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/fr-fr/download/details.aspx?id=13523)
-* La redistribuable de Microsoft Visual Studio 2013 peut être consultée à l’adresse [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/fr-fr/download/details.aspx?id=40784)
-* La redistribuable de Microsoft Visual Studio 2015 se trouve à l&#39;adresse [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/fr-fr/download/details.aspx?id=48145)
+* Le redistribuable Microsoft Visual Studio 2010 est disponible à l’adresse [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/fr-fr/download/details.aspx?id=13523)
+* Le redistribuable Microsoft Visual Studio 2013 est disponible à l’adresse [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/fr-fr/download/details.aspx?id=40784)
+* Le redistribuable Microsoft Visual Studio 2015 est disponible à l’adresse [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/fr-fr/download/details.aspx?id=48145)
 
 x86
 
-* La redistribuable de Microsoft Visual Studio 2010 se trouve à l&#39;adresse [https://www.microsoft.com/en-in/download/details.aspx?id=5555](https://www.microsoft.com/en-in/download/details.aspx?id=5555)
-* La redistribuable de Microsoft Visual Studio 2013 peut être consultée à l’adresse [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* La redistribuable de Microsoft Visual Studio 2015 se trouve à l&#39;adresse [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/fr-fr/download/details.aspx?id=52685)
+* Le redistribuable Microsoft Visual Studio 2010 est disponible à l’adresse [https://www.microsoft.com/en-in/download/details.aspx?id=5555](https://www.microsoft.com/en-in/download/details.aspx?id=5555)
+* Le redistribuable Microsoft Visual Studio 2013 est disponible à l’adresse [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
+* Le redistribuable Microsoft Visual Studio 2015 est disponible à l’adresse [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/fr-fr/download/details.aspx?id=52685)
 
 #### Mac OS {#macos}
 
@@ -601,11 +600,11 @@ x86
   </tr> 
   <tr> 
    <td>OpenOffice 4.1.2</td> 
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC, HTML, HTM RTF et TXT</td> 
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX2, J2K, J2C, JPC, HTML, HTM RTF et TXT</td> 
   </tr> 
   <tr> 
    <td><p>OpenOffice 3.4</p> </td> 
-   <td><p>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC, HTML, HTM RTF et TXT</p> </td> 
+   <td><p>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX2, J2K, J2C, JPC, HTML, HTM RTF et TXT</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -622,7 +621,7 @@ x86
 >* Le service HTML2PDF est obsolète sous AIX.
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows, Linux et Solaris.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
->* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d&#39;informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([Sur site](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;.
+>* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 
 >
 
@@ -634,7 +633,7 @@ x86
 * Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
 * Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
 * Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
-* Mémoire graphique - 128 Mo de GPU (256 Mo recommandé)
+* Mémoire graphique – 128 Mo de GPU (256 Mo recommandé)
 * 2,35 Go d’espace disponible sur le disque dur
 * Résolution d’écran 1 024 X 768 pixels ou plus
 * Accélération matérielle de la vidéo (en option)
@@ -647,7 +646,7 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 **Systèmes d’exploitation**
 
-* Linux (32 bits, prise en charge des applications 32 bits nécessaire sur les systèmes 64 bits). Pour connaître les étapes d’installation des bibliothèques clientes 32 bits, voir [Comment activer l’extraction XMP et la réécriture sur RedHat Linux 64 bits](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+* Linux (32 bits, prise en charge des applications 32 bits nécessaire sur les systèmes 64 bits). Pour connaître les étapes d’installation des bibliothèques clientes 32 bits, voir [Comment activer l’extraction XMP et l’écriture différée sur RedHat Linux 64 bits](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 
 * Windows Server
 * Oracle Solaris
@@ -669,6 +668,6 @@ Le lecteur AEM Screens version 3.3.x prend en charge les systèmes d’exploit
 
 * Microsoft Windows 10 Enterprise LTSB
 * Google Chrome OS 62+
-* Google Android 5.1.1 avec mise à jour d&#39;Android System WebView version 52+
+* Google Android 5.1.1 avec Android System WebView Version 52+ mise à jour
 * Apple iOS 10.3+
 * Apple macOS 10.12+
