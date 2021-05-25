@@ -2,16 +2,15 @@
 title: Gestion des droits numériques dans [!DNL Adobe Experience Manager Assets].
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans  [!DNL Experience Manager] .
 contentOwner: AG
-feature: DRM,Asset Management
+feature: DRM,Gestion des ressources
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 3eea4983-9dd5-4d69-ad93-3cd37a656d22
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1433'
 ht-degree: 89%
 
 ---
-
 
 # Gestion des droits numériques des ressources {#digital-rights-management-in-assets}
 
@@ -21,17 +20,17 @@ Les ressources numériques sont souvent associées à une licence qui prévoit l
 
 L’expiration de ressources est un moyen efficace de faire respecter les exigences en matière de licence. Elle garantit que la ressource qui est publiée ne l’est plus lorsqu’elle arrive à expiration, ce qui évite tout risque de violation de licence. Sans autorisations d’administration, un utilisateur ne peut pas modifier, copier, déplacer, publier ni télécharger une ressource arrivée à expiration.
 
-Vous pouvez vue l’état d’expiration d’un fichier dans la console [!DNL Assets] dans les vues de carte et de liste.
+Vous pouvez afficher l’état d’expiration d’une ressource dans la console [!DNL Assets] en mode Carte et Liste.
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-*Figure : Dans la vue de carte, un indicateur sur la carte indique un fichier expiré.*
+*Figure : En mode Carte, un indicateur sur la carte indique la ressource expirée.*
 
-![expired_flag_liste](assets/expired_flag_list.png)
+![expired_flag_list](assets/expired_flag_list.png)
 
-*Figure : Dans liste vue, la colonne   Etat affiche la bannière   Expiration.*
+*Figure : En mode Liste, la colonne   État affiche la bannière   Expiré.*
 
-Vous pouvez vue l’état d’expiration d’une ressource dans le [!UICONTROL journal] du rail de gauche.
+Vous pouvez afficher l’état d’expiration d’une ressource dans la [!UICONTROL chronologie] du rail de gauche.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -39,7 +38,7 @@ Vous pouvez vue l’état d’expiration d’une ressource dans le [!UICONTROL j
 >
 >La date d’expiration d’une ressource s’affiche différemment pour les utilisateurs de différents fuseaux horaires.
 
-Vous pouvez également vue l’état d’expiration des ressources dans le rail **[!UICONTROL Références]**. Il gère les états d’expiration des ressources et les relations entre les ressources composites et les sous-ressources, les collections et les projets référencés.
+Vous pouvez également afficher l’état d’expiration des ressources dans le rail **[!UICONTROL Références]**. Il gère les états d’expiration des ressources et les relations entre les ressources composites et les sous-ressources, les collections et les projets référencés.
 
 1. Accédez à la ressource pour laquelle vous souhaitez voir les pages web de référencement et les ressources composites.
 1. Sélectionnez la ressource, puis cliquez sur le logo [!DNL Experience Manager].
@@ -74,7 +73,7 @@ Vous pouvez rechercher des ressources arrivées à expiration, y compris les sou
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-1. Cliquez sur l’option **[!UICONTROL Statut d’expiration]** pour développer l’option.
+1. Cliquez sur l’option **[!UICONTROL État d’expiration]** pour la développer.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -100,7 +99,7 @@ Pour que la console [!DNL Assets] affiche les ressources composites référencé
 
    >[!NOTE]
    >
-   >Seul le créateur d’actifs (la personne qui télécharge un actif particulier vers [!DNL Assets]) reçoit un courrier électronique à l’expiration de l’actif. Voir [comment configurer la notification par courrier électronique](/help/sites-administering/notification.md) pour plus d&#39;informations sur la configuration des notifications par courrier électronique au niveau [!DNL Experience Manager] global.
+   >Seul le créateur de la ressource (la personne qui charge une ressource spécifique dans [!DNL Assets]) reçoit un courrier électronique à l’expiration de la ressource. Voir [Configuration de la notification électronique](/help/sites-administering/notification.md) pour plus d’informations sur la configuration des notifications électroniques au niveau [!DNL Experience Manager] global.
 
 1. Dans le champ **[!UICONTROL Notification préalable en secondes]** indiquez l’intervalle de temps, en secondes, qui précède le moment auquel une ressource expire et pendant lequel vous souhaitez recevoir une notification concernant l’expiration. Si vous êtes administrateur ou l’auteur de la ressource, vous recevez un message avant son expiration vous informant qu’elle va expirer une fois le délai spécifié écoulé.
 
@@ -131,9 +130,9 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 
 1. Dans l’onglet Avancé, définissez une date d’expiration pour la ressource dans le champ **[!UICONTROL Date d’expiration]**.
 
-   ![définir la date et l’heure d’expiration de l’actif dans le champ Expire](assets/chlimage_1-159.png)
+   ![Définition de la date et de l’heure d’expiration des ressources dans le champ Expiration](assets/chlimage_1-159.png)
 
-   *Figure :  [!UICONTROL Onglet ] avancé dans   Propriétés de la ressource pour définir l’expiration de la ressource.*
+   *Figure :   Onglet avancé dans   Propriétés de la ressource pour définir l’expiration de la ressource.*
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL Fermer]** pour afficher la console Ressources.
 1. L’état de publication de la ressource indique qu’elle a expiré au bas de sa miniature en mode d’affichage Carte. En mode Liste, l’état de la ressource s’affiche comme étant **[!UICONTROL arrivée à expiration]**.
