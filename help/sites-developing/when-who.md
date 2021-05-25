@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 6148f8e6-ab62-4eb8-8a2d-c431b8318000
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: cba4a814-052b-4b9f-96f2-8c80b2766ecc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 45%
 
 ---
-
 
 # Test - quand et avec qui ?{#testing-when-and-with-whom}
 
@@ -25,30 +24,29 @@ Divers rôles peuvent participer aux tests et aux différentes étapes du dével
 <table> 
  <tbody> 
   <tr> 
-   <td>Equipe de test</td> 
+   <td>Équipe de test</td> 
    <td>Responsable de... </td> 
    <td>Quand...</td> 
   </tr> 
   <tr> 
    <td>Équipe de développement</td> 
-   <td>L'équipe de développement est responsable de vos tests unitaires et de certains tests d'intégration.</td> 
+   <td>L’équipe de développement est responsable de vos tests unitaires et de certains tests d’intégration.</td> 
    <td>Ces tests sont les premiers de la chaîne, mais ils seront répétés/étendus au cours du développement.</td> 
   </tr> 
   <tr> 
-   <td>Équipe d'assurance qualité</td> 
-   <td><p>Vous aurez besoin d'une équipe d'assurance de la qualité (de toute taille appropriée) pour les tests de fonctionnement et de performance.</p> <p>Ce sont des testeurs neutres et dédiés. Dans le domaine du développement, la règle d’or veut que le développeur ne doit jamais tester son propre travail.</p> <p>Les membres de cette équipe peuvent être issus de l’équipe du projet Jour, l’équipe du partenaire et/ou celle de votre client.</p> </td> 
-   <td><p>La première fonction doit être mise à la disposition des testeurs (dès que possible). Bien qu’une version intermédiaire puisse générer de nombreux bogues, elle permet néanmoins de faire le point sur des problèmes majeurs.</p> </td> 
+   <td>Équipe d’assurance qualité</td> 
+   <td><p>Vous aurez besoin d’une équipe d’assurance qualité (de la taille appropriée) pour les tests fonctionnels et de performance.</p> <p>Ce sont des testeurs neutres et dédiés. Dans le domaine du développement, la règle d’or veut que le développeur ne doit jamais tester son propre travail.</p> <p>Les membres de cette équipe peuvent être issus de l’équipe du projet Jour, l’équipe du partenaire et/ou celle de votre client.</p> </td> 
+   <td><p>La première version de la fonction doit être mise à la disposition des testeurs (dès que cela est réalisablement possible). Bien qu’une version intermédiaire puisse générer de nombreux bogues, elle permet néanmoins de faire le point sur des problèmes majeurs.</p> </td> 
   </tr> 
   <tr> 
    <td>Équipe de test du client</td> 
-   <td><p>Selon le modèle de projet sélectionné, il peut être prévu que des membres de l'équipe client participent aux tests, en particulier des auteurs du site client.</p> <p>Le est avantageux :</p> 
+   <td><p>Selon le modèle de projet sélectionné, il peut être prévu que des membres de l’équipe client participent aux tests, en particulier les auteurs du site client.</p> <p>Les avantages sont les suivants :</p> 
     <ul> 
-     <li><p>Fournit au client une expérience du projet en cours de développement.</p> </li> 
-     <li><p>Fournit des commentaires précoces du client.</p> </li> 
-     <li><p>Les utilisateurs expriment souvent leurs besoins en termes d'expérience passée ; impliquer les clients dans les tests le plus tôt possible augmente leur expérience du nouveau projet en termes d'expérience <i>pratique</i>.</p> </li> 
+     <li><p>Offre au client une expérience du projet en cours de développement.</p> </li> 
+     <li><p>Fournit des commentaires anticipés du client.</p> </li> 
+     <li><p>Les utilisateurs expriment souvent leurs besoins en termes d'expérience passée. impliquer les clients dans les tests dès que possible augmente leur expérience du nouveau projet en termes d’expérience <i>pratique</i>.</p> </li> 
     </ul> </td> 
-   <td><p>Encore une fois, une participation précoce est bonne, bien que toute version utilisée par les clients devrait être stable, avec des fonctionnalités raisonnables.</p> <p>Les premières impressions sont toujours importantes.</p> </td> 
+   <td><p>Là encore, une participation précoce est une bonne chose, bien que toute version que les clients utilisent doive être stable, avec des fonctionnalités raisonnables.</p> <p>Les premières impressions sont toujours importantes.</p> </td> 
   </tr> 
  </tbody> 
 </table>
-
