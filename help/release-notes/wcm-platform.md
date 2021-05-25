@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: e5dd9d0d-6d67-4430-aeb3-2be91356f624
-translation-type: tm+mt
-source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+exl-id: 6f131247-d35e-4298-958f-35b94ff08c58
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 81%
 
 ---
 
-
-# AEM Foundation et référentiel  {#aem-foundation-repository}
+# AEM Foundation et référentiel {#aem-foundation-repository}
 
 ## Liste des modifications  {#list-of-changes}
 
@@ -36,7 +35,7 @@ ht-degree: 81%
    * Le nettoyage des révisions en continu pour MongoMK remplace la maintenance de nettoyage planifiée.
 
 * Efficacité accrue du nettoyage des·révisions sur les magasins de nœuds de documents
-* Veuillez consulter [Apache Jackrabbit Oak Jira v. 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) et [Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt) pour un aperçu complet des problèmes résolus.
+* Voir [Apache Jackrabbit Oak Jira v. 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) et [Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt) pour un aperçu complet des problèmes résolus.
 
 >[!CAUTION]
 >
@@ -72,7 +71,7 @@ ht-degree: 81%
 
 >[!CAUTION]
 >
->* Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique. AEM 6.4 inclut l’interface utilisateur classique, et les clients effectuant une mise à niveau à partir de versions antérieures peuvent continuer à l’utiliser en l’état. Notez que l’interface utilisateur classique reste entièrement prise en charge tout en étant obsolète [Lire la suite ](/help/sites-deploying/ui-recommendations.md).
+>* Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique. AEM 6.4 inclut l’interface utilisateur classique, et les clients effectuant une mise à niveau à partir de versions antérieures peuvent continuer à l’utiliser en l’état. Notez que l’interface utilisateur classique reste entièrement prise en charge tout en étant obsolète [En savoir plus](/help/sites-deploying/ui-recommendations.md).
 
 >
 
@@ -86,7 +85,7 @@ ht-degree: 81%
 
 ### Surveillance {#monitoring}
 
-* Une nouvelle vue d&#39;ensemble du système fournit une vue d&#39;instantané sur l&#39;état et les activités de tous les systèmes liés aux performances.
+* Une nouvelle présentation du système fournit une vue instantanée de tous les états et activités du système liés aux performances.
 * Nouveaux contrôles d’intégrité :
 
    * Détection d’index Lucene de grande taille
@@ -108,17 +107,17 @@ ht-degree: 81%
 * La configuration de purge de version permet de conserver un nombre minimal de versions.
 * La purge de version s’arrête à la fin d’une fenêtre de maintenance. Elle peut également être démarrée et arrêtée manuellement, et continuera progressivement au démarrage suivant.
 
-### Mise à niveau  {#upgrade}
+### Mise à niveau {#upgrade}
 
 * Compatibilité descendante : grâce aux fonctions de la version 6.4 compatibles avec les versions antérieures, votre code personnalisé reste compatible dans la plupart des cas, et les efforts de mise à niveau sont réduits.
 * Évaluation de la complexité de la mise à niveau : le nouvel outil de détection des motifs évalue la complexité de vos mises à niveau avant que vous ne les effectuiez.
 * Mises à niveau possibles : l’introduction de la surface d’API et de la classification du contenu vous permet de suivre facilement les meilleures pratiques pour une mise à niveau efficace et transparente vers la prochaine version tout au long du cycle de développement.
-* Restructuration du référentiel : Une restructuration importante (principalement /etc) pour faciliter les mises à niveau et promouvoir les meilleures pratiques d&#39;implémentation. [En savoir plus.](/help/sites-deploying/repository-restructuring.md)
-* Consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md) pour plus de détails sur ces fonctionnalités.
+* Restructuration des référentiels : Une restructuration significative (principalement /etc) pour faciliter les mises à niveau et promouvoir les bonnes pratiques de mise en oeuvre. [En savoir plus.](/help/sites-deploying/repository-restructuring.md)
+* Pour plus d’informations sur ces fonctionnalités, voir la [documentation sur la mise à niveau](/help/sites-deploying/upgrade.md) .
 
 ### Cloud Services {#cloud-services}
 
-* De nombreux Cloud Services peuvent désormais être configurés via l’interface utilisateur tactile ; le reste peut être configuré sous la carte Cloud Services héritée.
+* De nombreux Cloud Services peuvent désormais être configurés via l’interface utilisateur tactile ; le reste peut être configuré sous la carte Cloud Services hérités .
 * Les dossiers Sites et Ressources peuvent être configurés avec des Cloud Services chargés selon le contexte.
 
 ### Sécurité {#security}
@@ -130,4 +129,3 @@ ht-degree: 81%
 
 * Éditeur de workflow basé sur l’interface utilisateur tactile pour gérer les modèles de workflow de manière plus structurée.
 * Prise en charge de la purge des tâches de projets dans les tâches de maintenance.
-
