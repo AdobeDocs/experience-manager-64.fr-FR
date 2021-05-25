@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 2791c9a1-38a2-4154-8bea-2f7c564b46c8
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 42da25de-7ad0-4e9a-8139-149954f9bd8e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 89%
 
 ---
-
 
 # Proxy de service de formulaires HTML5 {#html-forms-service-proxy}
 
@@ -46,7 +45,7 @@ Les formulaires HTML5 se connectent aux serveurs AEM pour exécuter les scripts,
 
 ### Exécuter les scripts et services Web côté serveur {#execute-server-sided-scripts-and-web-services}
 
-Les scripts destinés à s’exécuter sur le serveur sont appelés scripts côté serveur. Le tableau suivant liste tous les paramètres utilisés dans les scripts côté serveur et les services Web.
+Les scripts destinés à s’exécuter sur le serveur sont appelés scripts côté serveur. Le tableau suivant répertorie tous les paramètres utilisés dans les scripts et services web côté serveur.
 
 <table> 
  <tbody> 
@@ -63,7 +62,7 @@ Les scripts destinés à s’exécuter sur le serveur sont appelés scripts côt
    <td><p>Le paramètre contextSom contient l’expression SOM de l’objet où des événements ont été exécutés.</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Template</p> </td> 
+   <td><p>Modèle</p> </td> 
    <td><p>Le paramètre Template contient le modèle utilisé pour générer le formulaire.</p> </td> 
   </tr> 
   <tr> 
@@ -133,7 +132,6 @@ Si submiturl ne figure pas dans le paramètre de requête, le proxy de service d
 Si submiturl figure dans le paramètre de requête, le proxy de service d’envoi sélectionne une topologie.
 
 * Si les serveurs AEM publient les données, le service de proxy agit comme une passerelle. Il envoie la requête à l’extrémité //bin/xfaforms/submitaction et la réponse à l’exécution XFA.
-* Si le proxy publie les données, le service proxy transmet tous les paramètres, à l’exception de submitUrl, au point de terminaison */bin/xfaforms/submitaction* et reçoit des octets xml dans le flux de réponse. Ensuite, le service de proxy publie les octets XML de données au paramètre submitUrl pour traitement.
+* Si le proxy publie les données, le service de proxy transmet tous les paramètres, à l’exception de submitUrl, à l’extrémité */bin/xfaforms/submitaction* et reçoit des octets XML dans le flux de réponse. Ensuite, le service de proxy publie les octets XML de données au paramètre submitUrl pour traitement.
 
-* Avant d’envoyer des données (demande de post-traitement) sur un serveur, les formulaires HTML5 vérifient la connectivité et la disponibilité du serveur. Pour vérifier la connectivité et la disponibilité, les formulaires HTML envoient une première demande vide au serveur. Si le serveur est disponible, les formulaires HTML5 envoie les données (demande de post-traitement) au serveur. Si le serveur n&#39;est pas disponible, un message d&#39;erreur, *Impossible de se connecter au serveur,* s&#39;affiche. La détection anticipée prévient les problèmes lors du remplissage du formulaire par les utilisateurs. La servlet proxy traite la demande de tête et ne lance pas d&#39;exception.
-
+* Avant d’envoyer des données (demande de post-traitement) sur un serveur, les formulaires HTML5 vérifient la connectivité et la disponibilité du serveur. Pour vérifier la connectivité et la disponibilité, les formulaires HTML envoient une première demande vide au serveur. Si le serveur est disponible, les formulaires HTML5 envoie les données (demande de post-traitement) au serveur. Si le serveur n’est pas disponible, un message d’erreur *Impossible de se connecter au serveur,* s’affiche. La détection anticipée prévient les problèmes lors du remplissage du formulaire par les utilisateurs. Le servlet proxy gère la requête head et ne lance pas d’exception.
