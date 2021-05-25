@@ -9,14 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: fb1e0bec-c943-4468-920d-8ef360a01365
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 58%
 
 ---
-
 
 # Personnalisation du thème {#theme-customization}
 
@@ -26,9 +25,9 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 * nombre d’itinéraires d’affichage
 * dégradé de couleur d’arrière-plan
 
-## Étapes  {#steps}
+## Étapes {#steps}
 
-1. Ouvrez le projet.
+1. Ouvrez votre projet.
 
    * Pour iOS, ouvrez `Capture.xcodeproj` dans Xcode.
    * Pour Android, ouvrez le projet Android dans Eclipse.
@@ -36,9 +35,9 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 
 1. Naviguez jusqu’au dossier des modèles.
 
-   * Dans Xcode, accédez au dossier **Capture > www > wsmobile > js > runtime > templates**.
-   * Dans Eclipse, accédez au dossier **assets > www > wsmobile > js > runtime > templates**.
-   * Dans Visual Studio, accédez au dossier **MWSWindows > www > wsmobile > js > runtime > templates**.
+   * Dans Xcode, accédez au dossier **Capture > www > wsmobile > js > runtime > modèles** .
+   * Dans Eclipse, accédez au dossier **ressources > www > wsmobile > js > runtime > modèles** .
+   * Dans Visual Studio, accédez au dossier **MWSWindows > www > wsmobile > js > runtime > templates** .
 
 1. Ouvrez le fichier `template.html` pour le modifier.
 1. Recherchez la chaîne suivante :
@@ -85,4 +84,3 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 1. Ouvrez l’application AEM Forms.
 
    L’application AEM Forms affiche maintenant les instructions à la place de la description.
-
