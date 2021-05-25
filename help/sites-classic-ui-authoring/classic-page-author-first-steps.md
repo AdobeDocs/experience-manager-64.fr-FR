@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction, page-authoring
 content-type: reference
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
-translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+exl-id: 88976f08-c003-4b8f-87c5-38b592fc9921
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 93%
 
 ---
-
 
 # Premières étapes pour les auteurs{#first-steps-for-authors}
 
@@ -40,7 +39,7 @@ Le contenu de votre site web est conservé dans une structure en arborescence. P
 
 Avant de procéder à l’édition, vous devez [créer une page](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
 
-### Ouverture d’une page  {#opening-a-page}
+### Ouverture d’une page {#opening-a-page}
 
 Pour la plupart des opérations (l’édition par exemple), vous devez [ouvrir une page](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#opening-a-page-for-editing).
 
@@ -55,10 +54,10 @@ Si votre instance comprend déjà des pages ou si vous venez d’en créer une, 
 * [Couper/Copier/Coller un composant](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
 * [Annulation et rétablissement des modifications de page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
 * [Utilisation du mode Aperçu](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (pour avoir un aperçu du contenu avant publication)
-* [Verrouillage d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
+* [Verrouillage d’une page   ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Déverrouillage d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
-### Publication d’une page  {#publishing-a-page}
+### Publication d’une page {#publishing-a-page}
 
 Dès que vous avez fini de modifier la page, vous pouvez [la publier (ou l’activer)](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10) afin que les visiteurs de votre site web puissent y accéder :
 
