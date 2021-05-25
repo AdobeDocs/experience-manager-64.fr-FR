@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
-translation-type: tm+mt
-source-git-commit: 02d043aaa51389aff658c287e11fe639b74fdcd0
+exl-id: 8249fd48-38af-4bf7-8dcc-2f63db6750b6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 98%
 
 ---
-
 
 # Raccourcis clavier pour les consoles  {#keyboard-shortcuts-for-consoles}
 
@@ -32,7 +31,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Commerce, Scre
 
 | Emplacement | Raccourci | Description |
 |---|---|---|
-| Général | `Ctrl+Click` | Sélection multiple sur un périphérique de bureau |
+| Général | `Ctrl+Click` | Sélection multiple sur un ordinateur de bureau |
 | Console : vue Colonnes et Contenu | `Right Arrow` | Naviguer vers le bas de la structure du site web/développer le nœud d’arborescence |
 |  | `Left Arrow` | Naviguer vers le haut de la structure de l’arborescence/réduire le nœud d’arborescence |
 |  | `Down Arrow` | Se déplacer vers le bas d’une liste de pages au même niveau |
@@ -96,4 +95,3 @@ Vous pouvez désactiver les raccourcis clavier à deux emplacements :
 >[!NOTE]
 >
 >Les touches de raccourci de navigation du mode Colonnes et de l’arborescence du contenu sont toujours actives.
-
