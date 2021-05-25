@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: dfe0ad66-9df5-4ea3-9e66-543b5ccd594a
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 1ab81235-2627-4304-bbf2-71598de948db
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 93%
 
 ---
-
 
 # Création d’une page d’entrée efficace pour une newsletter{#creating-an-effective-newsletter-landing-page}
 
@@ -31,8 +30,8 @@ Pour créer une page d’entrée efficace pour votre newsletter, vous devez proc
 
 >[!NOTE]
 >
->L&#39;Adobe ne prévoit pas d&#39;améliorer davantage cette capacité (Gestion des pistes et des Listes).\
->Il est recommandé de tirer parti de [Adobe Campaign et de son intégration AEM](/help/sites-administering/campaign.md).
+>Adobe ne prévoit pas d’améliorer davantage cette fonctionnalité (Gestion des pistes et des listes).\
+>Il est recommandé d’utiliser [Adobe Campaign et son intégration AEM](/help/sites-administering/campaign.md).
 
 ## Création d’une liste pour la newsletter {#creating-a-list-for-the-newsletter}
 
@@ -88,7 +87,7 @@ Ajout de teasers pour créer une page d’accueil efficace pour newsletter :
 
 1. Créez une campagne avec les deux teasers -- affectez un avec un tag commercial et un autre sans tag.
 
-## Pousser du contenu vers les abonnés  {#pushing-content-to-subscribers}
+## Pousser du contenu vers les abonnés {#pushing-content-to-subscribers}
 
 Poussez toute modification des pages via la fonctionnalité Newsletter dans MCM. Vous pouvez alors envoyer du contenu mis à jour aux abonnés.
 
