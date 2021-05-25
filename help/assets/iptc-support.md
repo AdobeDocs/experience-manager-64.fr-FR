@@ -2,16 +2,15 @@
 title: Prise en charge des métadonnées IPTC
 description: Découvrez comment Adobe Experience Manager (AEM) Assets prend en charge les métadonnées IPTC, les évaluations des créations et les mots-clés ajoutés aux ressources par Adobe Bridge et d’autres applications de création.
 contentOwner: AG
-feature: Metadata
+feature: 'Métadonnées  '
 role: Business Practitioner,Administrator,Leader
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '370'
 ht-degree: 100%
 
 ---
-
 
 # Prise en charge des métadonnées IPTC {#support-for-iptc-metadata}
 
@@ -49,4 +48,3 @@ Notez toutefois que cette propriété n’est pas indexée pour l’instant et c
 L’onglet **[!UICONTROL IPTC]** de la page Propriétés affiche également les mots-clés ajoutés aux ressources au moyen d’Adobe Bridge et d’autres applications Creative. Vous pouvez aussi modifier ces mots-clés et en ajouter d’autres à partir de l’onglet **[!UICONTROL IPTC]**.
 
 ![mots-clés](assets/keywords.png)
-
