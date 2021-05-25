@@ -1,5 +1,5 @@
 ---
-title: Editeur de texte enrichi
+title: Éditeur de texte enrichi
 seo-title: Éditeur de texte enrichi
 description: L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM.
 seo-description: L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM.
@@ -9,21 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 44cd0092-de40-4a72-a682-1e8f5906b2e5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 88%
 
 ---
 
-
 # Éditeur de texte enrichi{#rich-text-editor}
 
 L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM. Il constitue la base de divers composants, dont :
 
-* Text (Texte)
-* Texte et Image
+* Texte
+* Texte Image
 * Tableau
 
 ## Éditeur de texte enrichi {#rich-text-editor-2}
@@ -44,7 +43,7 @@ Cliquez deux fois sur un paragraphe (double-clic lent) pour passer en mode d’�
 
 Vous aurez la possibilité de modifier directement le texte sur la page, au lieu de passer par une boîte de dialogue. Il vous suffit d’effectuer vos modifications pour qu’elles soient enregistrées automatiquement.
 
-![cq55_rte_inlineedit](assets/cq55_rte_inlineediting.png)
+![cq55_rte_inlineediting](assets/cq55_rte_inlineediting.png)
 
 >[!NOTE]
 >
@@ -58,9 +57,9 @@ Pour l’heure, le mode Modifier statique est activé pour les éléments de pag
 >
 >Le composant **Titre** a été conçu pour contenir un texte court sans saut de ligne. Lorsque vous modifiez un titre en mode d’édition statique, saisir un saut de ligne entraîne l’ouverture d’un nouveau composant **Texte** sous le titre.
 
-## Fonctions de l’Editeur de texte enrichi  {#features-of-the-rich-text-editor}
+## Fonctions de l’Editeur de texte enrichi {#features-of-the-rich-text-editor}
 
-L’Editeur de texte enrichi fournit une gamme de fonctionnalités, qui [dépendent de la configuration](/help/sites-administering/rich-text-editor.md) du composant individuel. Les fonctionnalités sont disponibles pour l’interface utilisateur classique et optimisée pour les écrans tactiles.
+L’éditeur de texte enrichi fournit diverses fonctions, [selon la configuration](/help/sites-administering/rich-text-editor.md) du composant individuel. Les fonctionnalités sont disponibles dans les interfaces utilisateur classique et optimisée pour les écrans tactiles.
 
 ### Formats de caractères de base {#basic-character-formats}
 
@@ -80,7 +79,7 @@ Toutes ces options fonctionnent selon le principe de bascule, ce qui signifie qu
 
 ### Styles et formats prédéfinis  {#predefined-styles-and-formats}
 
-![cq55_rte_stylesparagraphe](assets/cq55_rte_stylesparagraph.png)
+![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
 Votre installation peut inclure des styles et des mises en forme prédéfinis. Ils sont disponibles dans les listes déroulantes **Style** et **Format**, et peuvent être appliqués au texte que vous avez sélectionné.
 
@@ -90,7 +89,7 @@ Un style peut être appliqué à une chaîne spécifique (un style est mis en co
 
 Tandis qu’une mise en forme est appliquée à l’intégralité d’un paragraphe texte (une mise en forme est basée sur le langage HTML) :
 
-![cq55_rte_paragraphe_use](assets/cq55_rte_paragraph_use.png)
+![cq55_rte_paragraph_use](assets/cq55_rte_paragraph_use.png)
 
 Une mise en forme spécifique peut uniquement être modifiée (la valeur par défaut est **Paragraphe**).
 
@@ -140,7 +139,7 @@ AEM conserve un historique des 50 dernières actions effectuées dans le compos
 
 Le texte peut être aligné à gauche, au centre ou à droite.
 
-![cq55_rte_alignement_use](assets/cq55_rte_alignment_use.png)
+![cq55_rte_align_use](assets/cq55_rte_alignment_use.png)
 
 ### Indentation {#indentation}
 
@@ -148,7 +147,7 @@ Le texte peut être aligné à gauche, au centre ou à droite.
 
 La mise en retrait d’un paragraphe peut être augmentée ou réduite. Lorsque le paragraphe sélectionné est mis en retrait, tout nouveau texte saisi conserve le niveau de mise en retrait actuel.
 
-![cq55_rte_indentation_use](assets/cq55_rte_indent_use.png)
+![cq55_rte_indent_use](assets/cq55_rte_indent_use.png)
 
 ### Listes {#lists}
 
@@ -160,7 +159,7 @@ Vous pouvez créer des listes imbriquées en mettant en retrait un ou plusieurs 
 
 Vous pouvez modifier le style d’une liste en positionnant simplement le curseur dans la liste, puis en sélectionnant un autre style. Une sous-liste peut également présenter un style différent de sa liste parent ; vous pouvez lui appliquer ce style après l’avoir créée (par mise en retrait).
 
-![cq55_rte_listes_use](assets/cq55_rte_lists_use.png)
+![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
 
 ### Liens {#links}
 
@@ -178,20 +177,20 @@ Vous pouvez :
 
 * saisir directement une URI ;
 * utiliser un plan de site (sitemap) pour sélectionner une page de votre site Web ;
-* saisissez l’URI, puis ajoutez l’ancre de cible ; par ex. `www.TargetUri.org#AnchorName`
-* entrer une ancre uniquement (pour faire référence à &quot;la page active&quot;); par ex. `#anchor`
+* saisissez l’URI, puis ajoutez l’ancre cible ; Par exemple : `www.TargetUri.org#AnchorName`
+* saisir une ancre uniquement (pour faire référence à &quot;la page en cours&quot;) ; Par exemple : `#anchor`
 * rechercher une page dans Content Finder, puis faire glisser son icône dans la boîte de dialogue Lien hypertexte.
 
 >[!NOTE]
 >
->Vous pouvez faire précéder l’URI de l’un des protocoles configurés pour votre installation. Dans une installation standard, il s&#39;agit de `https://`, `ftp://` et `mailto:`. Les protocoles non configurés pour votre installation seront refusés et marqués comme non valides.
+>Vous pouvez faire précéder l’URI de l’un des protocoles configurés pour votre installation. Dans une installation standard, ces valeurs sont `https://`, `ftp://` et `mailto:`. Les protocoles non configurés pour votre installation seront refusés et marqués comme non valides.
 
 
 Pour rompre le lien, placez le curseur dans le texte du lien et cliquez ensuite sur l’icône **Rompre le lien** : 
 
 ![](do-not-localize/chlimage_1-13.png)
 
-### Ancres  {#anchors}
+### Ancres {#anchors}
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
@@ -245,7 +244,7 @@ Toute faute d’orthographe est mise en surbrillance :
 >
 >Le correcteur orthographique fonctionne dans la langue du site web soit en prenant la propriété de langue de la sous-arborescence, soit en extrayant la langue de l’URL ;  d’autres termes, la vérification sera effectuée en anglais pour la branche `en`en, en allemand pour la branche `de`, etc.
 
-### Tables {#tables}
+### Tableaux {#tables}
 
 Des tableaux sont disponibles :
 
@@ -259,7 +258,7 @@ Des tableaux sont disponibles :
 
    >[!NOTE]
    >
-   >Bien que les tables soient disponibles dans le RTE, il est recommandé d&#39;utiliser le composant **Table** lors de la création de tableaux.
+   >Bien que les tableaux soient disponibles dans l’éditeur de texte enrichi, il est recommandé d’utiliser le composant **Tableau** lors de la création de tableaux.
 
 Dans les composants **Texte** et **Tableau**, la fonctionnalité de tableau est accessible par le biais du menu contextuel (qui s’ouvre généralement à l’aide du bouton droit de la souris) ; par exemple :
 
@@ -319,7 +318,7 @@ Les propriétés de base du tableau peuvent être configurées avant de cliquer 
 
    Hauteur totale du tableau.
 
-* **de la bordure**
+* **Bordure**
 
    Taille de la bordure du tableau.
 
@@ -354,8 +353,8 @@ Les propriétés d’une cellule spécifique ou d’une série de cellules peuve
 * **Largeur**
 * **Hauteur**
 * **Alignement**  horizontal - Gauche, Centre ou Droite
-* **Alignement**  vertical - Haut, Moyen, Bas ou Ligne de base
-* **Type**  de cellule - Données ou En-tête
+* **Alignement vertical**  - Haut, Milieu, Bas ou Ligne de base
+* **Type de cellule**  - Données ou En-tête
 * **Appliquer à :**
    * Une seule cellule
    * Ligne entière
@@ -449,4 +448,3 @@ Se présentera comme suit dans le mode source (la source étant bien souvent plu
 >[!CAUTION]
 >
 >Lors de la sortie du mode source, AEM effectue certains contrôles de validation (pour s’assurer, par exemple, que le texte est contenu/imbriqué correctement dans des blocs). Cela peut avoir une incidence sur les modifications que vous avez effectuées.
-
