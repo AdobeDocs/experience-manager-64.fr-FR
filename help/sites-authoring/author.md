@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
-translation-type: tm+mt
-source-git-commit: b009abd8b3d55bd7dd030d7b4828aec72d9fa9ff
+exl-id: 23e30de9-1a30-484a-b370-f9f0d45b4e41
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 85%
 
 ---
-
 
 # Concept de création et de publication{#authoring}
 
@@ -66,7 +65,7 @@ Certaines tâches administratives peuvent aussi vous aider à gérer votre conte
 
 ## Environnement de publication {#publish-environment}
 
-Une fois prêt, le contenu du site AEM est publié sur l&#39;**environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
+Une fois prêt, le contenu du site AEM est publié dans l’ **environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
 
 Dans le cas d’un site web ordinaire, l’environnement de publication est situé à l’intérieur de la zone DMZ ; en d’autres termes, il est disponible sur Internet, mais il ne bénéficie plus de la protection absolue de votre réseau interne.
 
@@ -81,11 +80,11 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
    >
    >
 * **Activer/Désactiver**
-   >  Ces termes sont synonymes de publication/annulation de la publication. Elles sont plus courantes dans l’interface utilisateur classique.
+   >  Ces termes sont synonymes de publication/annulation de la publication. Elles sont plus courantes dans l’IU classique.
    >
    >
 * **Répliquer/Réplication**
-   >  Il s&#39;agit des termes techniques utilisés pour indiquer le mouvement des données (par exemple, le contenu des pages, les fichiers, le code, les commentaires des utilisateurs) d&#39;un environnement à l&#39;autre ; c’est-à-dire lors de la publication ou de la réplication inversée des commentaires d’utilisateur.
+   >  Il s’agit des termes techniques utilisés pour indiquer le mouvement des données (contenu de page, fichiers, code, commentaires utilisateur, etc.) d’un environnement à un autre. c’est-à-dire lors de la publication ou de la réplication inverse des commentaires utilisateur.
 >
 
 
