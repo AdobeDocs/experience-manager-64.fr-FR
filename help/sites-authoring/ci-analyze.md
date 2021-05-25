@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: ead74e39-3b07-488e-aeb1-fcb4aa6ff200
-translation-type: tm+mt
-source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
+exl-id: dc24edaf-ca1d-4a6b-a2dc-86677267e18d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 95%
 
 ---
 
-
 # Analyse des performances de page{#analyzing-page-performance}
 
 Ouvrez la page [Content Insight](/help/sites-authoring/content-insights.md) pour analyser les performances de la page que vous créez. Configurez la période de création de rapports afin de cibler votre analyse.
 
-## Ouverture de l’analyse et des recommandations relatives à une page  {#opening-analytics-and-recommendations-for-a-page}
+## Ouverture de l’analyse et des recommandations relatives à une page {#opening-analytics-and-recommendations-for-a-page}
 
 Utilisez la procédure suivante afin de voir les analyses et les recommandations pour une page :
 
@@ -86,7 +85,7 @@ L’état de la recommandations d’optimisation pour les moteurs de recherche i
 
 ![chlimage_1-253](assets/chlimage_1-253.png)
 
-Une fois créée, la tâche apparaît dans la liste Tâches de l’utilisateur. Pour plus d’informations sur les tâches, voir [Utilisation de Tâches](/help/sites-authoring/task-content.md).
+Une fois créée, la tâche apparaît dans la liste Tâches de l’utilisateur. Pour plus d’informations sur les tâches, voir [Utilisation des tâches](/help/sites-authoring/task-content.md).
 
 Utilisez la procédure suivante afin de créer une tâche pour une recommandation d’optimisation pour les moteurs de recherche.
 
@@ -111,4 +110,4 @@ Utilisez la procédure suivante afin de créer une tâche pour une recommandatio
 
 >[!NOTE]
 >
->La tâche créée inclut également le chemin d’accès à la page à laquelle s’applique la recommandation d’optimisation du référencement.
+>La tâche créée inclut également le chemin d’accès à la page à laquelle s’applique la recommandation d’optimisation pour les moteurs de recherche.
