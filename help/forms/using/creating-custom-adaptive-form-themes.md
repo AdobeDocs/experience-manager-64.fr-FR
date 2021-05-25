@@ -8,28 +8,27 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
-translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+exl-id: e6aa866f-3483-4db1-abaa-01ee585928dc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 82%
 
 ---
 
-
 # Création de thèmes de formulaires adaptatifs personnalisés {#creating-custom-adaptive-form-themes}
 
 >[!CAUTION]
 >
->AEM Forms fournit la fonctionnalité [Éditeur de thème](/help/forms/using/themes.md) permettant de créer et de modifier des formulaires adaptatifs [thèmes](/help/forms/using/themes.md). Exécutez les étapes répertoriées dans cet article, uniquement si vous avez effectué une mise à niveau à partir d’une version qui ne comporte pas [Éditeur de thème](/help/forms/using/themes.md) et si vous disposez d’un investissement existant dans des thèmes créés à l’aide de fichiers Less/CSS (méthode d’éditeur de pré-thème).
+>AEM Forms fournit la fonctionnalité [Éditeur de thème](/help/forms/using/themes.md) pour créer et modifier des formulaires adaptatifs [themes](/help/forms/using/themes.md). Exécutez les étapes répertoriées dans cet article, uniquement si vous avez effectué une mise à niveau à partir d’une version qui ne dispose pas de l’[éditeur de thème](/help/forms/using/themes.md) et si vous avez déjà investi dans des thèmes créés à l’aide de fichiers less/CSS (méthode d’éditeur de pré-thème).
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
-* Connaissance du cadre LESS (allégé CSS)
+* Connaissance de la structure LESS (moins CSS)
 * Comment créer une bibliothèque cliente dans Adobe Experience Manager
 * [Création d’un modèle de formulaire adaptatif](/help/forms/using/custom-adaptive-forms-templates.md) pour utiliser le thème que vous créez
 
-## Thème de formulaire adaptatif  {#adaptive-form-theme}
+## Thème de formulaire adaptatif {#adaptive-form-theme}
 
 Un **thème de formulaire adaptatif** est une bibliothèque cliente AEM utilisée pour définir les styles, c’est-à-dire l’apparence d’un formulaire adaptatif.
 
@@ -45,8 +44,8 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
 >
 >Si vous procédez comme suit en utilisant les noms, le modèle résultant ressemble normalement à l’instantané suivant : 
 
-![Exemple de ](assets/thumbnail.png)
-**capture d&#39;écran d&#39;un formulaire adaptatif sur le thème ForêtFigure:Modèle de thème** *Forêt*
+![Diagramme de ](assets/thumbnail.png)
+**cliché du formulaire adaptatif avec thème ForêtFigure :** *Exemple de thème Forêt*
 
 1. Créez un noeud de type `cq:ClientLibraryFolder` sous le noeud `/apps`.
 
@@ -97,7 +96,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
 
    Pour remplacer les variables `less`:
 
-   1. Importer les variables de formulaire adaptatif par défaut :
+   1. Importez les variables de formulaire adaptatif par défaut :
 
       `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
 
@@ -235,4 +234,3 @@ Après avoir créé un thème de formulaire adaptatif, effectuez les étapes sui
    ![Instantané du référentiel CRX](assets/2-1.png)
 
 1. Créez un formulaire adaptatif en utilisant le modèle créé à l’étape précédente. L’apparence du formulaire adaptatif est définie par le thème créé dans la section Création d’un formulaire adaptatif de cet article.
-
