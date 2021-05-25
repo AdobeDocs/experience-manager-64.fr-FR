@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: 6b62b280-d101-410a-ba8c-02940f766c32
-translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+exl-id: 364dd7f3-9009-440e-8aff-28e2dac08fe7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 93%
 
 ---
-
 
 # Mesure et amélioration de l’efficacité et de la conversion des formulaires {#measure-and-improve-effectiveness-and-conversion-of-forms}
 
@@ -33,7 +32,7 @@ Pour optimiser le retour sur investissement, les entreprises doivent contrôler 
 
 ## La solution {#the-solution}
 
-AEM Forms s’intègre aux solutions [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) et [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - qui peuvent vous aider à surveiller et analyser les performances de vos formulaires et vous permettre d’expérimenter et d’identifier l’expérience qui mène à un meilleur taux de conversion.
+AEM Forms s’intègre aux solutions [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) et [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - qui peuvent vous aider à surveiller et analyser les performances de vos formulaires et vous permettent d’expérimenter et d’identifier l’expérience qui conduit à un meilleur taux de conversion.
 
 ## Le flux de travail {#the-workflow}
 
@@ -44,7 +43,7 @@ Voyons en détail la façon dont vous pouvez mesurer les performances et amélio
 * Clients professionnels et analystes responsables des stratégies marketing et de leur réussite
 * Personnel IT chargé de la configuration et de la maintenance des infrastructures et des solutions
 
-### Composants et fonctions d’AEM Forms impliqués  {#aem-forms-components-and-features-involved}
+### Composants et fonctions d’AEM Forms impliqués {#aem-forms-components-and-features-involved}
 
 * Formulaires adaptatifs
 * Intégration à Adobe Analytics pour collecter, organiser et générer un rapport des interactions client avec vos formulaires adaptatifs
@@ -73,7 +72,7 @@ Pour obtenir des instructions détaillées, voir [Configuration des analyses et 
 
 **Configuration de Target**
 
-Pour créer et exécuter des tests A/B pour vos formulaires adaptatifs, configurez la Cible dans AEM Forms comme décrit dans [Configuration et intégration de la Cible dans AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
+Pour créer et exécuter des tests A/B pour vos formulaires adaptatifs, configurez Target dans AEM Forms comme décrit dans [Configuration et intégration de Target dans AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
 #### Etape 2 : Afficher le rapport d’analyse {#step-view-analytics-report-br}
 
@@ -159,4 +158,3 @@ Voici quelques recommandations à propos de la conception des formulaires et l�
 * Formulez une hypothèse et identifiez les mesures de réussite avant d’exécuter les tests A/B.
 * Effectuez des variations minimales (dans l’idéal, une à la fois) de votre expérience alternative pour savoir ce qui a influé le taux de conversion.
 * Effectuez fréquemment des tests pour éliminer les modifications qui ne fonctionnent pas.
-
