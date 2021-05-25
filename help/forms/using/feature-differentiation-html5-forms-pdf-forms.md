@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 273096d0-b0e1-4519-8af6-11b3414cc172
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 2b82e68c-ec11-417d-a8e2-769da9b35140
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 83%
 
 ---
-
 
 # Différences de caractéristiques entre formulaires HTML5 et formulaires PDF {#feature-differentiation-between-html-forms-and-pdf-forms}
 
@@ -53,7 +52,7 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   <tr>
    <td>Pagination<br /> </td> 
    <td><p>Un formulaire HTML5 est divisé en panneaux et en zones pour lui donner un aspect similaire aux formulaires PDF. La taille d’une page est calculée de façon dynamique. Si tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge est masquée et un espace vide (espace blanc) ne s’affiche pas entre les pages, au-dessus et au-dessous de la page vierge.</p> <p>Si la fusion des données ou des scripts ajoutent du contenu à une page, la longueur de la page s’ajuste au contenu qui vient d’être ajouté. Aucune nouvelle page n’est ajoutée au formulaire pour s’ajuster au contenu qui vient d’être ajouté. </p> <p><strong>Remarque :</strong> lorsque tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge (espace blanc) reste visible entre la 1ère et 2e page mais pas entre les autres pages.</p> </td> 
-   <td>La pagination dans le fichier PDF dépend du contenu des données fusionné ou du contenu de l’utilisateur et le nombre de pages est augmenté/réduit en fonction de ce contenu.</td> 
+   <td>La pagination dans le PDF dépend du contenu des données fusionnées ou du contenu de l’utilisateur et le nombre de pages est augmenté/réduit en fonction de ce contenu.</td> 
   </tr>
   <tr>
    <td>En-têtes/pieds de page </td> 
@@ -67,7 +66,7 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   </tr>
   <tr>
    <td>API de script XFA</td> 
-   <td>Prend en charge les éléments de script XFA les plus couramment utilisés. Pour plus d’informations sur la liste des éléments pris en charge, voir <a href="/help/forms/using/scripting-support.md">Prise en charge des scripts</a>.</td> 
+   <td>Prend en charge les éléments de script XFA les plus couramment utilisés. Pour obtenir la liste détaillée des éléments pris en charge, voir <a href="/help/forms/using/scripting-support.md">Prise en charge des scripts</a>.</td> 
    <td>Prend en charge tous les éléments de script XFA.</td> 
   </tr>
   <tr>
@@ -83,5 +82,4 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
  </tbody>
 </table>
 
-Suivez les bonnes pratiques pour activer un modèle de formulaire pour les rendus HTML5 et vous assurer que le comportement et l’aspect des formulaires HTML5 et des fichiers PDF XFA sont cohérents. Vous pouvez consulter la liste détaillée des recommandations à la page [Recommandations de conception d’un formulaire HTML5.](/help/forms/using/best-practices-for-html5-forms.md)
-
+Suivez les bonnes pratiques pour activer un modèle de formulaire pour les rendus HTML5 et vous assurer que le comportement et l’aspect des formulaires HTML5 et des PDF basés sur XFA sont cohérents. Vous pouvez consulter la liste détaillée des recommandations à la page [Recommandations de conception d’un formulaire HTML5.](/help/forms/using/best-practices-for-html5-forms.md)
