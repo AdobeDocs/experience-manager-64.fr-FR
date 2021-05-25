@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 6942b6fc-8d04-429f-8433-1ab74c68fcc1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 70%
 
 ---
-
 
 # Configuration des polices de remplacement {#configuring-fallback-fonts}
 
@@ -47,5 +46,4 @@ Cette section explique comment configurer manuellement le fichier FontManagerRes
 
 >[!NOTE]
 >
->N’utilisez pas Configuration Manager pour recompresser le fichier adobe-livecycle-[appserver].ear, car il remplacera vos modifications par les valeurs par défaut des formulaires AEM.
-
+>N’utilisez pas Configuration Manager pour recompresser le fichier adobe-livecycle-[appserver].ear, car il remplacera vos modifications par les valeurs par défaut d’AEM forms.
