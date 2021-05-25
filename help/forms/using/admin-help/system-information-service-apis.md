@@ -1,22 +1,21 @@
 ---
 title: API du service d’informations système
 seo-title: API du service d’informations système
-description: Ce document fournit des informations détaillées sur les API fournies par le service d'information système.
-seo-description: Ce document fournit des informations détaillées sur les API fournies par le service d'information système.
+description: Ce document fournit des informations détaillées sur les API fournies par le service d’informations système.
+seo-description: Ce document fournit des informations détaillées sur les API fournies par le service d’informations système.
 uuid: 7f624216-56e6-4d49-b9a1-3c9af045dabe
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
-translation-type: tm+mt
-source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+exl-id: 7eee8103-8d6c-4397-acaf-dd662cc09a56
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 68%
 
 ---
-
 
 # API du service d’informations système {#system-information-service-apis}
 
@@ -111,4 +110,3 @@ Le service d’informations système fournit un ensemble d’API REST pour récu
   </tr> 
  </tbody> 
 </table>
-
