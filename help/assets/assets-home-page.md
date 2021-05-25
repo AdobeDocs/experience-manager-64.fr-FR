@@ -2,16 +2,15 @@
 title: Expérience de la page d’accueil d’AEM Assets
 description: Personnalisez la page d’accueil d’AEM Assets afin d’enrichir l’expérience de l’écran de bienvenue, avec notamment un instantané des activités récentes concernant les ressources.
 contentOwner: AG
-feature: Developer Tools,Asset Management
+feature: Outils de développement, Gestion des ressources
 role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '578'
 ht-degree: 56%
 
 ---
-
 
 # Expérience de la page d’accueil d’AEM Assets {#aem-assets-home-page-experience}
 
@@ -21,28 +20,28 @@ La page d’accueil d’Adobe Experience Manager (AEM) Assets offre une expér
 
 La page d’accueil d’Assets est désactivée par défaut. Pour l’activer, procédez comme suit :
 
-1. Pour accéder à AEM Configuration Manager, cliquez sur **[!UICONTROL Outils > Opération > Console Web]**.
-1. Ouvrez le service **Day CQ DAM Événement Recorder**.
-1. Sélectionnez **[!UICONTROL Activer ce service]** pour activer l&#39;enregistrement des activités.
+1. Pour accéder à AEM Configuration Manager, cliquez sur **[!UICONTROL Outils > Opération > Console web]**.
+1. Ouvrez le service **Enregistreur d’événements de la gestion des actifs numériques Day CQ** .
+1. Sélectionnez le **[!UICONTROL Activer ce service]** pour activer l’enregistrement des activités.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Dans la liste **Types d&#39;événement**, sélectionnez les événements à enregistrer et enregistrez les modifications.
+1. Dans la liste **Types d’événement**, sélectionnez les événements à enregistrer et enregistrez les modifications.
 
    >[!CAUTION]
    >
    >Activer les options Ressource affichée, Projets affichés et Collections affichées augmente significativement le nombre d’événements enregistrés.
 
-1. Ouvrez le service **[!UICONTROL DAM Asset Page d&#39;accueil Feature Flag]** à partir de Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
-1. Sélectionnez l&#39;option **[!UICONTROL isEnabled.name]** pour activer la fonction Page d&#39;accueil des ressources. Enregistrez les modifications.
+1. Ouvrez le service **[!UICONTROL Indicateur de fonction de page d’accueil des ressources de gestion des actifs numériques]** à partir de Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Sélectionnez l’option **[!UICONTROL isEnabled.name]** pour activer la fonction Page d’accueil des ressources. Enregistrez les modifications.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Ouvrez la boîte de dialogue **[!UICONTROL Préférences utilisateur]**, puis sélectionnez **[!UICONTROL Activer la Page d&#39;accueil des ressources]**. Enregistrez les modifications.
+1. Ouvrez la boîte de dialogue **[!UICONTROL Préférences utilisateur]**, puis sélectionnez **[!UICONTROL Activer la page d’accueil des ressources]**. Enregistrez les modifications.
 
-   ![user_préférences](assets/user_preferences.png)
+   ![user_preferences](assets/user_preferences.png)
 
-Après avoir activé la Page d&#39;accueil Ressources, accédez à l’interface utilisateur Ressources à partir de la page Navigation.
+Après avoir activé la page d’accueil des ressources, accédez à l’interface utilisateur d’Assets à partir de la page Navigation .
 
 ![home_page](assets/home_page.png)
 
@@ -67,19 +66,19 @@ Cette section s’affiche sous la section Bienvenue et contient des widgets prê
 * Récent
 * Découvrez
 
-**Activité** : Sous cette section, le  **widget** Mon activité affiche les récentes activités effectuées par l’utilisateur connecté avec des ressources (y compris des ressources sans rendus), par exemple les téléchargements, les téléchargements, la création de ressources, les modifications, les commentaires, les annotations et les partages.
+**Activité** : Dans cette section, le widget  **Mon** activité affiche les activités récentes effectuées par l’utilisateur connecté avec des ressources (y compris des ressources sans rendus), par exemple les chargements de ressources, les téléchargements, la création de ressources, les modifications, les commentaires, les annotations et les partages.
 
 **Récent** : Le widget  **Récemment** affiché sous cette section affiche les entités récemment consultées par l’utilisateur connecté, y compris les dossiers, les collections et les projets.
 
-**Discover** : Le  **** widget de cette section affiche les ressources et les rendus récemment transférés vers l’instance AEM Assets.
+**Discover** : Le  **** widget situé sous cette section affiche les ressources et les rendus récemment transférés vers l’instance AEM Assets.
 
-Pour activer la purge des données d’activité utilisateur, activez le **service de purge de Événement DAM** à partir de Configuration Manager. Une fois que vous avez activé ce service, les activités de l’utilisateur connecté dépassant le nombre spécifié sont supprimées par le système.
+Pour activer la purge des données d’activité de l’utilisateur, activez le **service de purge des événements de gestion des actifs numériques** à partir de Configuration Manager. Une fois que vous avez activé ce service, les activités de l’utilisateur connecté dépassant le nombre spécifié sont supprimées par le système.
 
 L’écran de bienvenue fournit des outils d’aide à la navigation, comme des icônes sur la barre d’outils afin d’accéder aux dossiers, aux collections et aux catalogues.
 
 >[!NOTE]
 >
->L’activation de l’enregistreur de Événement DAM Day CQ et des services de purge de Événement DAM augmente les opérations d’écriture sur le JCR et l’indexation de la recherche, ce qui augmente considérablement la charge sur le serveur AEM. La charge supplémentaire sur le serveur AEM peut affecter les performances.
+>L’activation des services Enregistreur d’événements de la gestion des actifs numériques Day CQ et Purge des événements de la gestion des actifs numériques augmente les opérations d’écriture sur JCR et l’indexation de recherche, ce qui augmente considérablement la charge sur le serveur AEM. La charge supplémentaire sur le serveur AEM peut affecter les performances.
 
 >[!CAUTION]
 >
