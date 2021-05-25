@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: b4c1cb82-865b-48dd-b5c0-946e6610ce8e
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 201e2b57-17c0-4454-9b0e-026e2c95ac63
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 93%
 
 ---
-
 
 # Utilisation des journaux{#working-with-logs}
 
@@ -56,7 +55,7 @@ Les niveaux de journalisation sont les suivants :
 
 ## Option d’informations détaillées utilisée pour la résolution des incidents {#verbose-option-used-for-troubleshooting}
 
-Lorsque vous début CRX, vous pouvez ajouter l’option -v (verbose) à la ligne de commande comme dans : &quot;
+Lorsque vous démarrez CRX, vous pouvez ajouter l’option -v (verbose) à la ligne de commande, comme dans : &quot;
 
 ` java -jar crx-<*version*>-<*edition*>.jar -v`
 
