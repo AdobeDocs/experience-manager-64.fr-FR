@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 9e381e71-63ff-41ab-a6ec-9f92447b65a0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 87%
 
 ---
-
 
 # Création de styles CSS pour des formulaires HTML5 {#creating-css-styles-for-html-forms}
 
@@ -114,7 +113,7 @@ Outre les classes type et name, le composant de champ contient également une au
   <tr> 
    <td>Légende</td> 
    <td>caption</td> 
-   <td>NA</td> 
+   <td>s.o.</td> 
   </tr> 
   <tr> 
    <td>Widget</td> 
@@ -141,7 +140,7 @@ Chaque champ contient un widget associé qui représente l’élément de l’in
   </tr> 
   <tr> 
    <td>Bouton<br type="_moz" /> </td> 
-   <td>NA</td> 
+   <td>s.o.</td> 
    <td>xfaButton<br type="_moz" /> </td> 
    <td>buttonfieldwidget<br type="_moz" /> </td> 
    <td>input type=button<br type="_moz" /> </td> 
@@ -158,21 +157,21 @@ Chaque champ contient un widget associé qui représente l’élément de l’in
    <td>datefield<br type="_moz" /> </td> 
    <td>dateField<br type="_moz" /> </td> 
    <td>datefieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
+   <td>inputtype = text<br type="_moz" /> </td> 
   </tr> 
   <tr> 
    <td>DateTimeField<br type="_moz" /> </td> 
    <td>textfield<br type="_moz" /> </td> 
    <td>textField<br type="_moz" /> </td> 
    <td>textfieldwidget</td> 
-   <td>input type=text<br type="_moz" /> </td> 
+   <td>inputtype = text<br type="_moz" /> </td> 
   </tr> 
   <tr> 
    <td>DecimalField<br type="_moz" /> </td> 
    <td>numericfield<br type="_moz" /> </td> 
    <td>numericInput<br type="_moz" /> </td> 
    <td>numericfieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
+   <td>inputtype = text<br type="_moz" /> </td> 
   </tr> 
   <tr> 
    <td>DropDown<br type="_moz" /> </td> 
@@ -193,7 +192,7 @@ Chaque champ contient un widget associé qui représente l’élément de l’in
    <td>numericfield<br type="_moz" /> </td> 
    <td>numericInput<br type="_moz" /> </td> 
    <td>numericfieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
+   <td>inputtype = text<br type="_moz" /> </td> 
   </tr> 
   <tr> 
    <td>PasswordField<br type="_moz" /> </td> 
@@ -214,14 +213,14 @@ Chaque champ contient un widget associé qui représente l’élément de l’in
    <td>textfield<br type="_moz" /> </td> 
    <td>textField<br type="_moz" /> </td> 
    <td>textfieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
+   <td>inputtype = text<br type="_moz" /> </td> 
   </tr> 
   <tr> 
    <td>TimeField<br type="_moz" /> </td> 
    <td>textfield<br type="_moz" /> </td> 
    <td>textField<br type="_moz" /> </td> 
    <td>textfieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
+   <td>inputtype = text<br type="_moz" /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -232,7 +231,7 @@ Vous pouvez insérer des éléments statiques de dessin comme un texte et des im
 
 | **Type de dessin** | **Classe CSS** |
 |---|---|
-| Text (Texte) | text |
+| Texte | text |
 | Image | image |
 | Rectangle | rectangle |
 | Ligne | line |
@@ -251,4 +250,4 @@ Lorsque la validation d’un champ résulte en un avertissement, un avertissemen
 
 `Styling Fields with Validation Errors`
 
-Lorsque la fonction de validation d’un champ échoue, le style du widget change. Ce changement de style est effectué en appliquant une classe CSS **widgetError** au composant widget. Pour modifier le style par défaut, remplacez la classe **widgetError**.
+Lorsque la fonction de validation d’un champ échoue, le style du widget change. Ce changement de style est effectué en appliquant une classe CSS **widgetError** au composant de widget. Pour modifier le style par défaut, remplacez la classe **widgetError** .
