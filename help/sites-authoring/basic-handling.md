@@ -1,22 +1,21 @@
 ---
 title: Manipulation de base
 seo-title: Manipulation de base
-description: Se familiariser avec la navigation dans AEM et l’utilisation des fonctionnalités de base
-seo-description: Se familiariser avec la navigation dans AEM et l’utilisation des fonctionnalités de base
+description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
+seo-description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
 uuid: 12958209-6a49-41ad-8a8e-b112503d26b1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
-translation-type: tm+mt
-source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
+exl-id: 9abef452-b435-4419-895c-083cae6cd7d2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2764'
 ht-degree: 94%
 
 ---
-
 
 # Manipulation de base {#basic-handling}
 
@@ -48,13 +47,13 @@ Cliquez sur l’une des options pour ouvrir la console appropriée. La console *
 
 Cliquez ou appuyez sur **Sites** pour commencer.
 
-### Navigation dans le produit   {#product-navigation}
+### Navigation dans le produit {#product-navigation}
 
 La première fois que vous accédez à une console, un didacticiel de navigation du produit démarre. Prenez quelques instants pour cliquer ou appuyer sur divers éléments afin de vous familiariser avec le fonctionnement de base d’AEM.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
 
-Cliquez ou appuyez sur **Compris !** pour passer à la page suivante de la présentation. Cliquez ou appuyez sur **Fermer** ou cliquez ou appuyez sur en dehors de la boîte de dialogue d’aperçu pour fermer.
+Cliquez ou appuyez sur **Compris !** pour passer à la page suivante de la présentation. Cliquez ou appuyez sur **Fermer** ou cliquez ou appuyez en dehors de la boîte de dialogue de présentation pour fermer.
 
 Si vous ne désélectionnez pas l’option **Ne plus afficher ce message**, la présentation redémarrera la prochaine fois que vous accéderez à la console.
 
@@ -72,7 +71,7 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
-* **Navigation** : représenté par une boussole 
+* **Navigation** : représenté par une boussole
 * **Outils** : représenté par un marteau
 
 Les options disponibles dans ces panneaux sont décrites ci-dessous.
@@ -110,7 +109,7 @@ Les options disponibles dans ces panneaux sont décrites ci-dessous.
    <td>Cette console permet de créer, de gérer et de traiter vos <a href="/help/forms/using/introduction-aem-forms.md">formulaires et documents</a>&gt;.</td> 
   </tr>
   <tr>
-   <td>Personnalisation </td> 
+   <td>Personnalisation</td> 
    <td>Cette console propose un <a href="/help/sites-authoring/personalization.md">ensemble d’outils de création de contenu ciblé et de présentation d’expériences personnalisées</a>.</td> 
   </tr>
   <tr>
@@ -190,7 +189,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Cet élément est disponible en mode Liste uniquement. Voir [liste vue](#list-view) pour plus d&#39;informations.
+   Cet élément est disponible en mode Liste uniquement. Voir [vue de liste](#list-view) pour plus d’informations.
 
 * Bouton **Créer**
 
@@ -246,7 +245,7 @@ Ressources et téléchargements pour les développeurs.
    >Pour une présentation de tous les raccourcis clavier, reportez-vous à la documentation suivante :
    >
    >* [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   >* [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
+   * [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## Barre d’outils d’actions {#actions-toolbar}
@@ -266,10 +265,9 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 ![screen_shot_2018-03-23at104827](assets/screen_shot_2018-03-23at104827.png)
 
 >[!NOTE]
->
->Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
+Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
 
-## Actions rapides   {#quick-actions}
+## Actions rapides  {#quick-actions}
 
 Dans le [mode Carte](#quick-actions), certaines actions, en plus d’être disponibles dans la barre d’outils, le sont également sous la forme d’icônes d’actions rapides. Les icônes d’actions rapides sont disponibles pour un seul élément à la fois et évitent d’avoir à présélectionner l’action.
 
@@ -289,10 +287,9 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 * [Mode Liste](#list-view)
 
 >[!NOTE]
->
->Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
+Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
 
-### Sélection de ressources   {#selecting-resources}
+### Sélection de ressources  {#selecting-resources}
 
 La sélection d’une ressource en particulier dépend de la combinaison du mode et de l’appareil :
 
@@ -320,13 +317,13 @@ La sélection d’une ressource en particulier dépend de la combinaison du mode
    <td>Mode Carte<br /> </td> 
    <td>
     <ul> 
-     <li>Bureau :<br /> Pointez sur, puis utilisez la coche action rapide</li> 
+     <li>Bureau :<br /> pointez, puis utilisez l’action rapide en forme de coche.</li> 
      <li>Appareil mobile :<br /> maintenez la carte enfoncée</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li>Bureau : <br /> Cliquez sur la carte</li> 
-     <li>Périphérique mobile : <br /> Appuyez sur la carte</li> 
+     <li>Bureau :<br /> cliquez sur la carte</li> 
+     <li>Appareil mobile :<br /> Appuyez sur la carte</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -363,7 +360,7 @@ Quel que soit le mode, vous pouvez désélectionner tous les éléments en appuy
 
 1. Une fois que vous avez sélectionné une ressource, l’en-tête de premier niveau est couvert par la [barre d’outils Actions](#actions-toolbar), qui permet d’accéder aux actions actuellement applicables à la ressource sélectionnée.
 
-   Pour quitter le mode de sélection, sélectionnez **X** en haut à droite.
+   Pour quitter le mode de sélection, sélectionnez le **X** en haut à droite.
 
 ### Mode Colonnes {#column-view}
 
@@ -441,7 +438,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
       * Cliquez ou appuyez à nouveau sur la case à cocher pour tout désélectionner.
 
 
-* Sélectionnez les colonnes à afficher à l&#39;aide de l&#39;option **Paramètres de Vue **située sous le bouton Vues. Les colonnes suivantes peuvent être affichées :
+* Sélectionnez les colonnes à afficher à l’aide de l’option **Paramètres d’affichage** située sous le bouton Vues. Les colonnes suivantes peuvent être affichées :
 
    * **Nom** : nom de la page ; cela peut s’avérer utile dans un environnement de création multilingue, dans la mesure où il fait partie de l’URL de la page et où il ne change pas, quelle que soit la langue.
    * **Modifié** : date de la dernière modification et nom de l’utilisateur responsable de la modification.
@@ -458,8 +455,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
 * Modifiez l’ordre des éléments à l’aide de la barre verticale en pointillés tout à droite de chaque élément de la liste.
 
 >[!NOTE]
->
->La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
+La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
 
 ![screen_shot_2018-03-23at110113](assets/screen_shot_2018-03-23at110113.png)
 
@@ -484,8 +480,7 @@ Par exemple, dans la console Sites, vous pouvez sélectionner le contenu uniquem
 Si Contenu uniquement est sélectionné, alors seule l’icône de rail s’affiche. Si n’importe quelle autre option est sélectionnée, le nom des options apparaît en regard de l’icône de rail.
 
 >[!NOTE]
->
->Des [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) sont disponibles pour basculer rapidement entre les options d’affichage du rail.
+Des [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) sont disponibles pour basculer rapidement entre les options d’affichage du rail.
 
 ### Arborescence de contenu {#content-tree}
 
@@ -496,10 +491,8 @@ En utilisant le panneau latéral d’arborescence de contenu en même temps qu�
 ![screen_shot_2018-03-21at100858](assets/screen_shot_2018-03-21at100858.png)
 
 >[!NOTE]
->
->Une fois qu’une entrée est sélectionnée dans la vue hiérarchique, les touches fléchées peuvent être utilisées pour naviguer rapidement au sein de la hiérarchie.
->
->Voir les [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) pour plus d’informations.
+Une fois qu’une entrée est sélectionnée dans la vue hiérarchique, les touches fléchées peuvent être utilisées pour naviguer rapidement au sein de la hiérarchie.
+Voir les [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) pour plus d’informations.
 
 ### Chronologie {#timeline}
 
@@ -549,4 +542,3 @@ Les **références** affichent toutes les connexions avec la ressource sélectio
 Cette action ouvre un panneau similaire à [Rechercher](/help/sites-authoring/search.md) avec les filtres d’emplacement correspondants déjà définis, ce qui permet de filtrer davantage le contenu que vous souhaitez afficher.
 
 ![screen_shot_2018-03-23at111509](assets/screen_shot_2018-03-23at111509.png)
-
