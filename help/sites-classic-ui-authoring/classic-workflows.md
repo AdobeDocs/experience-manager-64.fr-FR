@@ -1,6 +1,6 @@
 ---
-title: 'Utilisation des workflows  '
-seo-title: 'Utilisation des workflows  '
+title: Utilisation des workflows
+seo-title: Utilisation des workflows
 description: AEM Workflows vous permet d’automatiser une série d’étapes effectuées sur une page ou une ressource. Par exemple, lors de la publication, un éditeur doit réviser le contenu, avant qu’un administrateur du site active la page. Un worfklow qui automatise cet exemple avertit chaque participant lorsqu’il est temps qu’il effectue sa tâche.
 seo-description: AEM Workflows vous permet d’automatiser une série d’étapes effectuées sur une page ou une ressource. Par exemple, lors de la publication, un éditeur doit réviser le contenu, avant qu’un administrateur du site active la page. Un worfklow qui automatise cet exemple avertit chaque participant lorsqu’il est temps qu’il effectue sa tâche.
 uuid: 3eb6e790-6589-414a-8e51-33c358f47a73
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: b11f0e4c-4dec-4b66-9f54-a0aa13ac77b9
-translation-type: tm+mt
-source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+exl-id: 843cf933-d8a1-407d-9468-1a6409110f81
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 100%
 
 ---
 
-
-# Utilisation des workflows  {#working-with-workflows}
+# Utilisation des workflows{#working-with-workflows}
 
 AEM Workflows vous permet d’automatiser une série d’étapes effectuées sur une page ou une ressource. Par exemple, lors de la publication, un éditeur doit réviser le contenu, avant qu’un administrateur du site active la page. Un worfklow qui automatise cet exemple avertit chaque participant lorsqu’il est temps qu’il effectue sa tâche :
 
@@ -33,6 +32,5 @@ En général :
 
 Les pages suivantes couvrent :
 
-* [Application de workflows aux pages ](/help/sites-classic-ui-authoring/classic-workflows-applying.md)
+* [Application de workflows aux pages](/help/sites-classic-ui-authoring/classic-workflows-applying.md)
 * [Participation aux workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md)
-
