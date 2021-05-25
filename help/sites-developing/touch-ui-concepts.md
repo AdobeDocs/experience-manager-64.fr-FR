@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8c7e5667-14c5-40f3-968a-c574b04671e3
-translation-type: tm+mt
-source-git-commit: da7f86f36de0688ebe234d813959000068ef67ff
+exl-id: a89cf964-cc9f-46d7-afd8-150d48948513
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2218'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
-
 
 # Concepts de l’interface utilisateur (IU) tactile d’AEM{#concepts-of-the-aem-touch-enabled-ui}
 
@@ -26,7 +25,7 @@ Cette interface utilisateur tactile remplace l’interface classique. Il s’agi
 
 >[!NOTE]
 >
->L’interface utilisateur tactile est l’interface utilisateur standard pour AEM, bien que l’interface utilisateur classique soit toujours prise en charge.
+>L’IU tactile est l’IU standard pour AEM, bien que l’IU classique soit toujours prise en charge.
 
 L’interface utilisateur tactile se compose des éléments suivants :
 
@@ -78,7 +77,7 @@ Les principes de base dans l’IU tactile sont les suivants :
 * Inclure des tests intégrés
 * Approche ascendante pour garantir l’application de ces principes à tous les éléments et composants
 
-Pour un aperçu plus complet de la structure de l’interface utilisateur tactile, voir l’article [Structure de l’interface utilisateur tactile AEM](/help/sites-developing/touch-ui-structure.md).
+Pour un aperçu plus complet de la structure de l’IU tactile, consultez l’article [Structure de l’IU tactile AEM](/help/sites-developing/touch-ui-structure.md).
 
 ## Pile technologique AEM {#aem-technology-stack}
 
@@ -138,7 +137,7 @@ L’IU Granite :
 
 * [Composants d’administration de l’IU Granite](#granite-ui-administration-components)
 
-### Côté client / côté serveur  {#client-side-vs-server-side}
+### Côté client / côté serveur {#client-side-vs-server-side}
 
 La communication client-serveur au sein de l’IU Granite est constituée d’éléments hypertexte, et non d’objets. Il n’est donc pas nécessaire pour le client de comprendre la logique métier.
 
@@ -186,31 +185,31 @@ Il est aussi intéressant d’examiner les différences entre l’IU Granite et 
    <td><strong>IU Granite</strong></td> 
   </tr> 
   <tr> 
-   <td>Appel de procédure distante<br /> </td> 
-   <td>Transmissions d'État</td> 
+   <td>Appel de procédure à distance<br /> </td> 
+   <td>Transmissions d’état</td> 
   </tr> 
   <tr> 
    <td>Objets de transfert de données</td> 
    <td>Hypermédia</td> 
   </tr> 
   <tr> 
-   <td>Le client connaît les serveurs internes</td> 
+   <td>Le client connaît les paramètres internes du serveur</td> 
    <td>Le client ne connaît pas les informations internes</td> 
   </tr> 
   <tr> 
-   <td>"Grand client"</td> 
+   <td>"Client gros"</td> 
    <td>"Client léger"</td> 
   </tr> 
   <tr> 
    <td>Bibliothèques clientes spécialisées</td> 
-   <td>Bibliothèques clientes universelles</td> 
+   <td>Bibliothèques client universelles</td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Composants de base de l’IU Granite {#granite-ui-foundation-components}
 
-Les [composants de base de l’IU Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) fournissent les éléments nécessaires à la création d’une interface utilisateur. Ils comprennent, entre autres, les éléments suivants :
+Les [composants de base de l’IU Granite](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) fournissent les éléments nécessaires à la création d’une interface utilisateur. Ils comprennent, entre autres, les éléments suivants :
 
 * Bouton
 * Lien hypertexte
@@ -240,7 +239,7 @@ Cette bibliothèque de composants de base (Foundation) peut être utilisée ou �
 
 Lors de la mise à niveau du code ExtJS afin d’utiliser l’IU Granite, la liste ci-dessous fournit un aperçu des types de nœud et xtypes ExtJS, accompagnés des types de ressources IU Granite équivalents.
 
-| **ExtJS xtype** | **Type de ressource de l’interface utilisateur Granit** |
+| **ExtJS xtype** | **Type de ressource de l’IU Granite** |
 |---|---|
 | `button` | `granite/ui/components/foundation/form/button` |
 | `checkbox` | `granite/ui/components/foundation/form/checkbox` |
@@ -259,7 +258,7 @@ Lors de la mise à niveau du code ExtJS afin d’utiliser l’IU Granite, la li
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
-| **Type de noeud** | **Type de ressource de l’interface utilisateur Granit** |
+| **Type de noeud** | **Type de ressource de l’IU Granite** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
 | `cq:TabPanel` | `granite/ui/components/foundation/container` `granite/ui/components/foundation/layouts/tabs` |
@@ -283,7 +282,7 @@ Mise en œuvre:
 * Composants prédéfinis à l’aide des composants de base.
 * Les composants peuvent être personnalisés.
 
-## IU Coral  {#coral-ui}
+## IU Coral {#coral-ui}
 
 L’interface utilisateur (IU) Coral est une implémentation du style visuel d’Adobe pour l’interface utilisateur tactile. Elle a été conçue par Adobe pour garantir une expérience utilisateur homogène entre plusieurs produits. Elle comprend tout ce dont vous avez besoin pour adopter le style visuel utilisé dans l’environnement de création.
 
@@ -375,7 +374,7 @@ Plusieurs des éléments HTML devront se comporter de façon dynamique ; en ouv
 
 Un module externe est soit :
 
-* Conçu pour fonctionner sur un élément DOM spécifique. Par exemple, un module externe dialog s’attend à trouver `DIV class=dialog`
+* Conçu pour fonctionner sur un élément DOM spécifique. Par exemple, un module externe de boîte de dialogue s’attend à trouver `DIV class=dialog`
 * Générique par nature. Par exemple, un gestionnaire de mises en page fournit la disposition pour toute liste d’éléments `DIV` ou `LI`.
 
 Le comportement du module externe peut être personnalisé en utilisant l’une des méthodes suivantes :
@@ -385,10 +384,10 @@ Le comportement du module externe peut être personnalisé en utilisant l’une 
 
 Bien que le développeur puisse choisir la méthode la mieux adaptée à chaque module externe, le principe de base consiste à utiliser :
 
-* `data-*` pour les options liées à la mise en page HTML. pour indiquer le nombre de colonnes, par exemple.
+* `data-*` attributs pour les options liées à la mise en page HTML. pour indiquer le nombre de colonnes, par exemple.
 * Des options/classes API pour les fonctionnalités liées aux données ; pour créer la liste des éléments à afficher, par exemple.
 
-Le même concept est utilisé pour implémenter la validation de formulaire. Pour un élément que vous souhaitez valider, vous devez spécifier le formulaire d’entrée requis sous la forme d’un attribut personnalisé `data-*`. Cet attribut est ensuite utilisé comme option pour un module externe de validation.
+Le même concept est utilisé pour implémenter la validation de formulaire. Pour un élément que vous souhaitez valider, vous devez spécifier le formulaire de saisie requis sous la forme d’un attribut `data-*` personnalisé. Cet attribut est ensuite utilisé comme option pour un module externe de validation.
 
 >[!NOTE]
 >
@@ -404,9 +403,9 @@ Objectif:
 Mise en œuvre:
 
 * Module externe jQuery, lié à un ou plusieurs éléments DOM spécifiques.
-* Utilisation des attributs `data-*` pour personnaliser le comportement
+* Utilisation d’attributs `data-*` pour personnaliser le comportement
 
-Un extrait d&#39;exemple de balisage (notez les options spécifiées comme data-&amp;amp ; ast ; attributs) :
+Extrait d’exemples de balisage (notez les options spécifiées en tant que data-&amp;ast; Attributs) :
 
 ```xml
 <ul data-column-width="220" data-layout="card" class="cards">
@@ -512,4 +511,3 @@ Objectif:
 Mise en œuvre:
 
 * Modules externes jQuery ou modules JavaScript compatibles AMD
-
