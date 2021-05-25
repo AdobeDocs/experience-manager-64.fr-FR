@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: f8c6f4e3-4c2d-4843-8f29-6d3297e57c89
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 98%
 
 ---
-
 
 # Gestion des informations d’identification locales {#managing-local-credentials}
 
@@ -28,7 +27,7 @@ Vous pouvez en importer et en exporter autant que vous le souhaitez. Si vous sou
 
 Pour obtenir des informations et des instructions concernant les extensions d’Acrobat Reader DC, consultez la section [Configuration des informations d’identification à utiliser avec les extensions d’Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
 
-## Importation d’informations d’identification  {#import-a-credential}
+## Importation d’informations d’identification {#import-a-credential}
 
 1. Dans Administration Console, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
 1. Cliquez sur Importer, puis, sous Type de Trust Store, sélectionnez l’une des options suivantes :
@@ -72,4 +71,3 @@ Une fois que des informations d’identification ont été importées, vous pouv
 1. Dans Administration Console, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
 1. Cochez les cases correspondant aux informations d’identification à supprimer.
 1. Cliquez sur Supprimer, puis sur OK.
-
