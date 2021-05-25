@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 977a3dda-4292-4bd2-bfa5-af4d789d9ef9
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 2a790f7d-03a1-4f60-a59e-0a5f15c44fa5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 98%
 
 ---
-
 
 # Conversion de lancements{#promoting-launches}
 
@@ -25,11 +24,11 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 
 * Faut-il convertir l’intégralité du lancement ou uniquement la page en cours ?
 * Faut-il convertir les pages enfants de la page en cours ?
-* Conversion de l’intégralité du lancement ou uniquement des pages qui ont été modifiées.
+* Faut-il convertir l’intégralité du lancement ou uniquement des pages qui ont été modifiées ?
 
 >[!NOTE]
 >
->Après avoir converti les pages de lancement en pages cibles (de **production**), vous pouvez activer les pages de **production** sous la forme d’une entité (pour accélérer le processus de rendu). Ajoutez les pages à un module de workflow et utilisez ce dernier comme charge utile pour un workflow qui active un module de pages. Vous devez créer le module de workflow avant la conversion du lancement Voir [Traitement de pages converties à l’aide du worfklow AEM](#processing-promoted-pages-using-aem-workflow).
+>Après avoir converti les pages de lancement en pages cibles (de **production**), vous pouvez activer les pages de **production** sous la forme d’une entité (pour accélérer le processus de rendu). Ajoutez les pages à un module de workflow et utilisez ce dernier comme charge utile pour un workflow qui active un module de pages. Vous devez créer le module de workflow avant la conversion du lancement Voir [Traitement de pages converties à l’aide du workflow AEM](#processing-promoted-pages-using-aem-workflow).
 
 >[!CAUTION]
 >
@@ -91,7 +90,7 @@ Vous pouvez convertir des lancements à partir de la console de **sites** ou de 
 
 1. Sélectionnez **Convertir**.
 
-## Conversion de pages de lancement lors de leur modification    {#promoting-launch-pages-when-editing}
+## Conversion de pages de lancement lors de leur modification {#promoting-launch-pages-when-editing}
 
 Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement** est également disponible dans les **informations sur la page**. Cette action ouvre l’assistant pour collecter les informations nécessaires.
 
@@ -101,7 +100,7 @@ Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement
 >
 >Cette option est disponible pour les lancements simples et [imbriqués](#promoting-a-nested-launch).
 
-## Promotion d’un lancement imbriqué    {#promoting-a-nested-launch}
+## Promotion d’un lancement imbriqué  {#promoting-a-nested-launch}
 
 Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages source, y compris la source racine (production).
 
@@ -114,7 +113,7 @@ Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages so
 
    * **Promotion cible**
 
-      Vous pouvez faire la promotion auprès de n’importe quelle source.
+      Vous pouvez convertir des ressources en n’importe quelle source.
 
    * **Domaine** Ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement ou uniquement les pages qui ont été modifiées. Dans le second cas, vous pouvez choisir d’inclure/exclure des sous-pages. La configuration par défaut consiste à convertir uniquement les changements de page pour la page active :
 
@@ -151,4 +150,3 @@ Pour lancer automatiquement un workflow lors de la conversion de pages, [configu
 Vous pouvez, par exemple, générer automatiquement des demandes d’activation de page lorsque les auteurs convertissent des pages Lancements. Configurez un lanceur de workflow pour démarrer le workflow « Demander l’activation » lors de la modification du nœud de module.
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
-
