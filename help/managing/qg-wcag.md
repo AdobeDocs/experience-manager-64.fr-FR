@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing-accessibility
 content-type: reference
 discoiquuid: 3cac0e34-7514-48ce-a93b-592bbdbcd252
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 80edcd53-bc3c-4f61-8dfb-c592e7e51f60
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 92%
 
 ---
-
 
 # Guide rapide relatif à WCAG 2.0{#quick-guide-to-wcag}
 
@@ -36,17 +35,17 @@ Par conséquent, la compréhension des objectifs de WCAG 2.0 et de la structure
 
 L’objectif de WCAG 2.0 est de fournir des consignes présentant les caractéristiques suivantes :
 
-* Sont **agnostiques en matière de technologie:**
+* sont **agnostiques en matière de technologie:**
 
-   En d’autres termes, des directives qui peuvent être appliquées à une gamme de formats de contenu Web, et pas seulement au format HTML. Ainsi, WCAG 2.0 peut couvrir le contenu généré par ou fourni au format PDF, Flash, JavaScript, ainsi que d’autres technologies web actuelles et futures. Cela vise à corriger une faiblesse identifiée de WCAG 1.0, dans la mesure où il était axé sur le format HTML au détriment d’autres formats de contenu web.
+   En d’autres termes, des consignes qui peuvent être appliquées à divers formats de contenu web, et pas seulement au format HTML. Ainsi, WCAG 2.0 peut couvrir le contenu généré par ou fourni au format PDF, Flash, JavaScript, ainsi que d’autres technologies web actuelles et futures. Cela vise à corriger une faiblesse identifiée de WCAG 1.0, dans la mesure où il était axé sur le format HTML au détriment d’autres formats de contenu web.
 
-* Sont **testables :**
+* Sont **testable:**
 
-   Chaque ligne directrice est rédigée de façon à pouvoir être vérifiée objectivement afin de s&#39;assurer qu&#39;un groupe d&#39;experts en accessibilité convienne généralement que la ligne directrice a été respectée. L’un des défis des consignes d’accessibilité est que, alors que certaines peuvent être testées par des moyens techniques, d’autres requièrent un jugement humain afin de vérifier si la consigne a été respectée. WCAG 2.0 a été écrit dans le but de réduire la subjectivité de certaines consignes et certains points de contrôle de WCAG 1.0.
+   Chaque consigne est écrite de manière à pouvoir être testée objectivement pour s’assurer qu’un groupe d’experts en accessibilité conviendrait généralement que la consigne a été respectée. L’un des défis des consignes d’accessibilité est que, alors que certaines peuvent être testées par des moyens techniques, d’autres requièrent un jugement humain afin de vérifier si la consigne a été respectée. WCAG 2.0 a été écrit dans le but de réduire la subjectivité de certaines consignes et certains points de contrôle de WCAG 1.0.
 
 * Prise en charge de l’implémentation **hiérarchisée et contextuelle :**
 
-   Comme dans le cas de WCAG 1.0, les lignes directrices de WCAG 2.0 se voient attribuer des priorités, en ce qui a trait à l&#39;impact probable du fait de ne pas suivre une ligne directrice sur un groupe particulier d&#39;utilisateurs handicapés. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, la notion d’ *accessibilité prise en charge* est introduite. Cela permet aux auteurs de prendre des décisions sur la meilleure manière d’utiliser les technologies web qui peuvent ne pas présenter l’accessibilité totale, ou peut exiger des utilisateurs qu’ils disposent de technologies d’assistance et/ou de navigateurs spécifiques, permettant ainsi de tirer profit des fonctions d’accessibilité.
+   Comme pour WCAG 1.0, les consignes WCAG 2.0 reçoivent des priorités, en fonction de l’impact probable du manquement à cette consigne sur un groupe particulier d’utilisateurs présentant un handicap. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, la notion d’ *accessibilité prise en charge* est introduite. Cela permet aux auteurs de prendre des décisions sur la meilleure manière d’utiliser les technologies web qui peuvent ne pas présenter l’accessibilité totale, ou peut exiger des utilisateurs qu’ils disposent de technologies d’assistance et/ou de navigateurs spécifiques, permettant ainsi de tirer profit des fonctions d’accessibilité.
 
 Ces objectifs ont considérablement influencé la structure de WCAG 2.0.
 
@@ -62,7 +61,7 @@ Ces objectifs ont considérablement influencé la structure de WCAG 2.0.
 
 WCAG 2.0 présente les concepts de création de contenu web accessible d’une manière progressivement détaillée. Cela peut donner l’impression que WCAG 2.0 est un ensemble très complexe de documents liés, mais le but est de fournir (progressivement) des informations plus détaillées à mesure que les auteurs en ont besoin, plutôt que de fournir l’ensemble dans un document très volumineux.
 
-WCAG 2.0 est constitué de quatre principes clés pour la conception accessible. à savoir :
+WCAG 2.0 est constitué de quatre principes clés de conception accessible. à savoir :
 
 1. **Perceptible** : l’utilisateur peut-il percevoir le contenu web en question ?
 1. **Utilisable** : l’utilisateur peut-il saisir des données, ainsi que parcourir le contenu web ou encore interagir avec le contenu web ?
