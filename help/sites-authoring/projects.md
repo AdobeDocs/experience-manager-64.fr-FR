@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: 42b224e5-1256-44b6-9b46-4cd6de5927fb
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 70a70f56-1d33-4d8a-984a-a3e6f8deedeb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 95%
 
 ---
-
 
 # Projets{#projects}
 
@@ -24,7 +23,7 @@ Les projets permettent de regrouper des ressources dans une seule entité. Un en
 
 >[!CAUTION]
 >
->Pour que les utilisateurs des projets voient d’autres utilisateurs/groupes lors de l’utilisation de la fonctionnalité Projets, comme la création de projets, la création de tâches/workflows, la consultation et la gestion de l’équipe, ces utilisateurs doivent avoir accès en lecture à **/home/users** et **/home/groups**. Pour ce faire, le plus facile consiste à octroyer au groupe **projects-users** un accès en lecture à **/home/users** et à **/home/groups**.
+>Pour que les utilisateurs participant à des projets voient d’autres utilisateurs/groupes lorsqu’ils utilisent des fonctionnalités de la console Projets comme créer des projets, créer des tâches/workflows, afficher et gérer l’équipe, ils doivent disposer d’un accès en lecture à **/home/users** et **/home/groups**. Pour ce faire, le plus facile consiste à octroyer au groupe **projects-users** un accès en lecture à **/home/users** et à **/home/groups**.
 
 En tant qu’utilisateur, vous pouvez effectuer les opérations suivantes :
 
@@ -36,7 +35,7 @@ En tant qu’utilisateur, vous pouvez effectuer les opérations suivantes :
 Reportez-vous aux rubriques supplémentaires suivantes :
 
 * [Gestion de projets](/help/sites-authoring/touch-ui-managing-projects.md)
-* [Utilisation des tâches](/help/sites-authoring/task-content.md)
+* [Utilisation de tâches](/help/sites-authoring/task-content.md)
 * [Utilisation des workflows de projet](/help/sites-authoring/projects-with-workflows.md)
 * [Projet de création et intégration à PIM](/help/sites-authoring/managing-product-information.md)
 
@@ -52,7 +51,7 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 * L’option **Activer/désactiver les projets actifs** vous permet de basculer entre tous les projets et uniquement ceux qui sont actifs.
 * L’option **Afficher la vue Statistiques** permet d’afficher les statistiques de projet relatives à la réalisation de tâches.
 
-## Mosaïques de projet  {#project-tiles}
+## Mosaïques de projet {#project-tiles}
 
 Dans la console Projets, vous devez associer différents types d’informations à vos projets. Elles sont connues sous le nom de **mosaïques**. Toutes les mosaïques, ainsi que le type d’informations qu’elles contiennent, sont décrites dans cette section.
 
@@ -69,7 +68,7 @@ Vous pouvez associer les mosaïques suivantes à votre projet. Chacune d’elles
 * Lancements
 * Tâches
 
-### Ressources {#assets}
+### Ressources   {#assets}
 
 Dans la mosaïque **Ressources**, vous pouvez regrouper tous les éléments dont vous avez besoin pour un projet particulier.
 
@@ -87,7 +86,7 @@ Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/
 
 Ajoutez une collection en cliquant sur **Ajouter une collection** et en sélectionnant la collection appropriée dans la liste.
 
-### Expériences {#experiences}
+### Expériences   {#experiences}
 
 La mosaïque **Expériences** permet d’ajouter au projet une application mobile, un site web ou une publication.
 
@@ -111,7 +110,7 @@ Vous pouvez donner au lien un nom facile à reconnaître et changer de miniature
 
 ### Informations sur le projet {#project-info}
 
-La mosaïque Informations sur le projet fournit des informations générales sur le projet, notamment sa description, son état (actif ou inactif), son échéance et ses membres. En outre, vous pouvez ajouter une miniature de projet qui sera visible dans la page principale Projets.
+La mosaïque Informations sur le projet fournit des informations générales sur le projet, notamment sa description, son statut (actif ou inactif), son échéance et ses membres. En outre, vous pouvez ajouter une miniature de projet qui sera visible dans la page principale Projets.
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
@@ -121,7 +120,7 @@ Des membres d’équipe peuvent être attribués et supprimés de cette mosaïqu
 
 ### Tâche de traduction {#translation-job}
 
-La mosaïque Tâche de traduction est l’endroit où vous commencez une traduction et où vous pouvez voir l’état de toutes vos traductions. Pour configurer votre traduction, consultez [Création de projets de traduction](/help/assets/translation-projects.md).
+La mosaïque Tâche de traduction est l’endroit où vous commencez une traduction et où vous pouvez voir le statut de toutes vos traductions. Pour configurer votre traduction, consultez [Création de projets de traduction](/help/assets/translation-projects.md).
 
 ![chlimage_1-179](assets/chlimage_1-179.png)
 
@@ -147,7 +146,7 @@ La mosaïque **Pages d’entrée** vous permet de demander une nouvelle page d�
 
 Ce workflow est décrit à la section [Création d’un workflow de page d’entrée](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow).
 
-### Courriels  {#emails}
+### Courriels {#emails}
 
 La mosaïque **Courriels** permet de gérer les demandes de courrier électronique. Elle lance le workflow de demande de courrier électronique.
 
@@ -157,7 +156,7 @@ Pour plus d’informations, se reporter à [Worfklow de demande de courrier éle
 
 ### Workflows {#workflows}
 
-Vous pouvez configurer votre projet pour qu’il suive certains workflows. Si des workflows sont actifs, leur état s’affiche dans la mosaïque **Workflows** de la console Projets.
+Vous pouvez configurer votre projet pour qu’il suive certains workflows. Si des workflows sont actifs, leur statut s’affiche dans la mosaïque **Workflows** de la console Projets.
 
 ![chlimage_1-185](assets/chlimage_1-185.png)
 
@@ -173,7 +172,7 @@ La mosaïque Lancements présente tous les programmes qui ont été demandés av
 
 ### Tâches {#tasks}
 
-Les tâches vous permettent de surveiller l’état de toutes les activités associées à un projet, y compris des workflows. Les tâches sont décrites en détail à la section [Utilisation des tâches](/help/sites-authoring/task-content.md).
+Les tâches vous permettent de surveiller le statut de toutes les activités associées à un projet, y compris des workflows. Les tâches sont décrites en détail à la section [Utilisation des tâches](/help/sites-authoring/task-content.md).
 
 ![chlimage_1-187](assets/chlimage_1-187.png)
 
@@ -183,12 +182,12 @@ AEM est fourni avec trois modèles prêts à l’emploi :
 
 * Un projet simple : un modèle de référence pour tous les projets auxquels les autres catégories ne sont pas adaptées. Il comprend trois rôles de base (propriétaires, éditeurs et observateurs) et quatre workflows (Approbation de projet, Demander un lancement, Demander la page d’entrée et Demander un courrier électronique).
 * Un projet de média : un modèle de référence pour des activités multimédias. Il comprend plusieurs rôles de projet relatifs aux médias (photographes, éditeurs, rédacteurs, concepteurs, propriétaires et observateurs). Il comprend également deux workflows liés au contenu multimédia : Demander la copie (pour demander et réviser du texte) et Projet de séance photo du produit (pour gérer des photos relatives à des produits).
-* [Projet](/help/sites-authoring/managing-product-information.md)  de prise de vue de photos de produit - Un échantillon de référence pour la gestion de la photographie de produit liée au commerce électronique. Il comprend les rôles suivants : photographes, éditeurs, retoucheurs de photos, propriétaires, directeurs créatifs, marketeurs de réseaux sociaux, directeurs marketing, réviseurs et observateurs.
-* [Un projet de traduction](/help/sites-administering/translation.md) : modèle de référence pour gérer des activités liées à la traduction. Il prévoit trois rôles de base (propriétaires, éditeurs et observateurs). Il comprend deux workflows accessibles dans l’interface utilisateur Workflows.
+* [Projet de séance photo du produit](/help/sites-authoring/managing-product-information.md)  : un exemple de référence pour gérer la photographie de produit liée au commerce électronique. Il comprend les rôles suivants : photographes, éditeurs, retoucheurs de photos, propriétaires, directeurs créatifs, marketeurs de réseaux sociaux, directeurs marketing, réviseurs et observateurs.
+* [Un projet de traduction](/help/sites-administering/translation.md) : modèle de référence pour gérer des activités liées à la traduction. Il prévoit trois rôles de base (propriétaires, éditeurs et observateurs). Il comprend deux workflows accessibles dans l’interface utilisateur Workflows.
 
 En fonction du modèle sélectionné, plusieurs options s’offrent à vous, notamment en termes de rôles utilisateur et de workflows.
 
-## Rôles utilisateur dans un projet   {#user-roles-in-a-project}
+## Rôles utilisateur dans un projet  {#user-roles-in-a-project}
 
 Différents rôles utilisateur sont définis dans un modèle de projet et utilisés pour deux principales raisons :
 
@@ -207,7 +206,7 @@ Pour vous permettre de gérer les autorisations de sécurité et de contrôle, t
   </tr> 
   <tr> 
    <td><p>Observateur</p> </td> 
-   <td><p>Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son état.</p> </td> 
+   <td><p>Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son statut.</p> </td> 
    <td><p>Droits en lecture seule sur un projet</p> </td> 
    <td><p>Groupe workflow-users</p> </td> 
   </tr> 
@@ -232,8 +231,8 @@ Pour vous permettre de gérer les autorisations de sécurité et de contrôle, t
     </ul> </td> 
    <td> 
     <ul> 
-     <li>Groupe d’utilisateurs DAM (pour pouvoir créer un projet)</li> 
-     <li>groupe d’administrateurs de projet (pour pouvoir déplacer des ressources)</li> 
+     <li>Groupe DAM-users (pour pouvoir créer un projet)</li> 
+     <li>groupe project-administrators (pour pouvoir déplacer des ressources)</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -244,4 +243,3 @@ Pour des projets créatifs, des rôles supplémentaires, par exemple, de photogr
 >[!NOTE]
 >
 >Lorsque vous créez le projet et ajoutez des utilisateurs aux différents rôles, les groupes associés au projet sont automatiquement créés pour gérer les autorisations associées. Par exemple, un projet appelé Myproject aurait trois groupes **Myproject Owners**, **Myproject Editors**, **Myproject Observators**. Toutefois, si le projet est supprimé, ces groupes ne sont pas automatiquement supprimés. Un administrateur doit supprimer manuellement les groupes dans **Outils** > **Sécurité** > **Groupes**.
-
