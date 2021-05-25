@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 63bf891c-572a-40e0-945f-d20a0a029224
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 95%
 
 ---
-
 
 # Utilisation de Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
 
@@ -49,13 +48,13 @@ MCM vous permet d’accéder aux éléments suivants :
       Lorsque vous sélectionnez un segment spécifique, il s’ouvre dans la page de définition correspondante.
 
    * [Rapports](/help/sites-administering/reporting.md)\
-      aem fournit différents rapports pour vous aider à analyser et à surveiller l’état de votre instance. Ce volet de MCM répertorie les rapports.
+      AEM fournit différents rapports pour vous aider à analyser et surveiller l’état de votre instance. Ce volet de MCM répertorie les rapports.
 
       Lorsque vous sélectionnez un rapport, sa page s’ouvre.
 
    * [Campagnes](#campaigns)
 
-      Ce volet liste vos expériences de campagne telles que [bulletins](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) et [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
+      Ce volet répertorie vos expériences de campagne, telles que [newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) et [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
 * **[Pistes](#leads)**
 
@@ -75,7 +74,7 @@ MCM vous permet d’accéder aux éléments suivants :
 
 Le tableau de bord se compose de quatre volets qui vous donnent un aperçu des listes (de pistes), segments, rapports et campagnes. L’accès aux fonctionnalités de base est également possible à partir de ce tableau de bord.
 
-![mcm_tableau de bord](assets/mcm_dashboard.png)
+![mcm_dashboard](assets/mcm_dashboard.png)
 
 ## Pistes {#leads}
 
@@ -136,7 +135,7 @@ Pour accéder aux campagnes existantes, dans le MCM, cliquez sur **Campagnes**.
 
    Vous pouvez double-cliquer sur ces icônes pour ouvrir l’aperçu de la marque.
 
-#### Aperçu de la marque  {#brand-overview}
+#### Aperçu de la marque {#brand-overview}
 
 ![mcm_brandoverview](assets/mcm_brandoverview.png)
 
@@ -186,7 +185,7 @@ Deux modes d’affichage sont disponibles pour chaque campagne :
 
    Vous pouvez effectuer les opérations suivantes à partir de cette fenêtre :
 
-   * Créer un **nouveau...expérience**; par exemple, offres Adobe Target, teasers et bulletins d’information.
+   * Créer un **nouveau...** expérience; par exemple, les offres Adobe Target, les teasers et les newsletters.
    * **Modifier** les détails d’une newsletter ou d’une page de teaser spécifique (vous pouvez également effectuer un double-clic).
    * Définir les **Propriétés...** d’une newsletter ou d’une page de teaser spécifique
    * **Simuler** l’aspect et la fonctionnalité d’une expérience (newsletter ou page de teaser).
@@ -210,5 +209,4 @@ Vous avez également la possibilité d’ouvrir le sidekick (en cliquant sur la 
 
 Dans MCM, cliquez sur **Campagnes**. Assurez-vous que le mode Liste est actif, puis sélectionnez l’expérience de campagne requise et cliquez sur **Analyser...** Un graphique des impressions de page au fil du temps s’affiche alors.
 
-![mcm_campaign analyser](assets/mcm_campaignanalyze.png)
-
+![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)
