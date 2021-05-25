@@ -9,26 +9,25 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 8d3374ac-51dd-4ff5-84c9-495c937ade12
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 19df20a9-7c89-4dfa-8eca-81c4a14c21ff
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 89%
 
 ---
 
-
 # Lots OSGi{#osgi-bundles}
 
 ## Utilisez le contrôle de version sémantique.{#use-semantic-versioning}
 
-Les meilleures pratiques en matière de numérotation des versions sémantiques sont convenues à l’adresse [https://semver.org/](https://semver.org/).
+Les bonnes pratiques pour la numérotation des versions sémantiques sont disponibles à l’adresse [https://semver.org/](https://semver.org/).
 
 ## N’incorporez pas d’autres classes et fichiers JAR que ceux strictement nécessaires dans les lots OSGi.{#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
 Les bibliothèques courantes doivent être factorisées dans des lots distincts. Cela leur permet d’être réutilisées dans vos lots. Lorsque vous encapsulez un fichier *JAR* dans un lot OSGi, prenez soin de vérifier dans les sources en ligne si quelqu’un a effectué cette opération auparavant. Voici certains des principaux lieux dans lesquels vous pouvez trouver les wrappers de lots existants : Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes et le référentiel SpringSource Enterprise Bundle Repository.
 
-## Dépendez des plus anciennes versions de lots nécessaires.  {#depend-on-the-lowest-needed-bundle-versions}
+## Dépendez des plus anciennes versions de lots nécessaires. {#depend-on-the-lowest-needed-bundle-versions}
 
 Pour les dépendances au moment de la compilation dans les fichiers POM, utilisez toujours la plus ancienne version nécessaire qui expose l’API requise. Cela permet davantage de compatibilité ascendante et facilite les correctifs de rétroportage des versions plus anciennes.
 
@@ -44,4 +43,4 @@ Cela permet aux consommateurs de votre API d’évoluer avec vous. Lorsque vous 
 
 ## Incluez les informations de métatype lorsqu’elles sont exposées.{#include-metatype-information-where-exposed}
 
-En spécifiant des informations de métatype pertinentes, vos services et composants sont plus faciles à comprendre dans la console Felix. Vous trouverez une liste des annotations et des attributs SCR à l&#39;adresse suivante : [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
+En spécifiant des informations de métatype pertinentes, vos services et composants sont plus faciles à comprendre dans la console Felix. Vous trouverez une liste des annotations et attributs SCR à l’adresse : [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
