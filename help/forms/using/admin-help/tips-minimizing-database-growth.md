@@ -9,20 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 89441336-babc-4d1f-9053-d1566cd42d22
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 7b266170-c7e2-42e7-8ee0-153e1e73a901
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 100%
 
 ---
 
-
 # Conseils pour minimiser la croissance de la base de données {#tips-for-minimizing-database-growth}
 
 Les processus de longue durée stockent des données de processus dans la base de données AEM Forms. La croissance de la base de données AEM forms peut être minimisée grâce à quelques stratégies simples de configuration de produit et de conception de processus.
 
-## Conseils pour la conception de processus  {#process-design-tips}
+## Conseils pour la conception de processus {#process-design-tips}
 
 Dans la mesure du possible, utilisez des processus de longue durée. Les processus de courte durée ne stockent pas de données le concernant dans la base de données. L’inconvénient des processus de courte durée réside dans le fait que leur statut et leur état ne font pas l’objet d’un suivi dans Administration Console et que le système ne stocke aucun historique.
 
