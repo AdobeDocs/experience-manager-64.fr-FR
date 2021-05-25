@@ -2,16 +2,15 @@
 title: Ressources multilingues
 description: Découvrez comment automatiser les workflows de traduction des ressources, y compris les fichiers binaires, les métadonnées et les balises, dans plusieurs langues.
 contentOwner: AG
-feature: Asset Management
+feature: Gestion des ressources
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: 8e065137-3599-48af-a040-6923b7b5e1d9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '176'
 ht-degree: 84%
 
 ---
-
 
 # Ressources multilingues {#multilingual-assets}
 
@@ -31,6 +30,6 @@ La traduction des ressources inclut les éléments suivants :
 1. [Application de services cloud de traduction à des dossiers](transition-cloud-services.md)
 1. [Création de projets de traduction](translation-projects.md)
 
-Si votre prestataire de traduction ne fournit pas de connecteur à intégrer à AEM, utilisez un [autre processus](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+Si votre fournisseur de services de traduction ne fournit pas de connecteur à intégrer à AEM, utilisez un [autre processus](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
 Voir aussi [Création de projets de traduction pour les fragments de contenu](creating-translation-projects-for-content-fragments.md).
