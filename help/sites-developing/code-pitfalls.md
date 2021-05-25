@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 01362026-a696-4a5d-94e9-ea784eaa6e4b
-translation-type: tm+mt
-source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+exl-id: f39910cf-1875-43fc-bfb5-259b9d8f135d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 94%
 
 ---
-
 
 # Les pièges du codage{#code-pitfalls}
 
@@ -24,10 +23,10 @@ ht-degree: 94%
 
 Les liaisons Sling constituent un moyen inapproprié d’accéder à un service dans 90 % des cas. À la place, il faut utiliser les annotations *@Reference* ou *@Inject*.
 
-## Eviter Thread.interrupt dans le code Java {#avoid-thread-interrupt-in-java-code}
+## Éviter Thread.interrupt dans le code Java {#avoid-thread-interrupt-in-java-code}
 
 *Thread.interrupt* est dangereux car il peut fermer des fichiers, y compris des fichiers Lucene et des fichiers cache persistants, s’il est appelé au mauvais moment.
 
-## Éviter de mélanger la synchronisation Java avec ReadWriteLocks  {#avoid-mixing-java-synchronization-with-readwritelocks}
+## Éviter de mélanger la synchronisation Java avec ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
 
 Cela peut aboutir à une condition de concurrence dans laquelle le code finit par être bloqué.
