@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
-translation-type: tm+mt
-source-git-commit: b3d81da17c2de68d6ba3306bb35543eb0788e308
+exl-id: 65e534ec-7f73-4333-b225-7adf082f66d5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 97%
 
 ---
-
 
 # Annotations lors de la modification d’une page{#annotations-when-editing-a-page}
 
@@ -53,9 +52,7 @@ Un [mode](/help/sites-authoring/author-environment-tools.md#page-modes) spécial
 >Vous pouvez annoter un large éventail de ressources :
 >
 >* [Annotation de ressources](/help/assets/managing-assets-touch-ui.md#annotating)
->* [Annotation de ressources vidéo](/help/assets/managing-video-assets.md#annotating-video-assets)
-
->
+* [Annotation de ressources vidéo](/help/assets/managing-video-assets.md#annotating-video-assets)
 
 
 
@@ -70,14 +67,12 @@ Le mode Annoter permet de créer, de modifier, de déplacer ou de supprimer des 
    Vous pouvez maintenant afficher les annotations existantes.
 
    >[!NOTE]
-   >
-   >Pour quitter le mode Annotation, appuyez ou cliquez sur l’icône Annoter (symbole x) à droite de la barre d’outils supérieure.
+   Pour quitter le mode Annotation, appuyez ou cliquez sur l’icône Annoter (symbole x) à droite de la barre d’outils supérieure.
 
 1. Cliquez/appuyez sur l’icône Ajouter une annotation (symbole plus à gauche de la barre d’outils) pour commencer à ajouter des annotations.
 
    >[!NOTE]
-   >
-   >Pour mettre un terme à l’ajout d’annotations (et revenir à l’affichage), appuyez/cliquez sur l’icône Annuler (symbole x dans un cercle blanc) à gauche de la barre d’outils supérieure.
+   Pour mettre un terme à l’ajout d’annotations (et revenir à l’affichage), appuyez/cliquez sur l’icône Annuler (symbole x dans un cercle blanc) à gauche de la barre d’outils supérieure.
 
 1. Cliquez/appuyez sur le composant requis (les composants qui peuvent être annotés sont encadrés en bleu) pour ajouter l’annotation et ouvrir la boîte de dialogue :
 
@@ -88,7 +83,7 @@ Le mode Annoter permet de créer, de modifier, de déplacer ou de supprimer des 
    * Entrez le texte de l’annotation.
    * Créez une esquisse (traits et formes) pour mettre en surbrillance une zone du composant.
 
-      Le curseur prend la forme d&#39;un fil croisé lorsque vous créez une esquisse. Vous pouvez tracer plusieurs lignes distinctes. La ligne d’esquisse reflète la couleur de l’annotation et peut être une flèche, un cercle ou un ovale.
+      Le curseur prend la forme d’un trait croisé lors de la création d’une esquisse. Vous pouvez tracer plusieurs lignes distinctes. La ligne d’esquisse reflète la couleur de l’annotation et peut être une flèche, un cercle ou un ovale.
    ![](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Choisissez/changez la couleur :
@@ -118,11 +113,10 @@ Le mode Annoter permet de créer, de modifier, de déplacer ou de supprimer des 
 1. Pour quitter le mode Annotation et revenir au mode précédemment affiché, appuyez ou cliquez sur l’icône Annoter (symbole x) à droite de la barre d’outils supérieure.
 
 >[!NOTE]
->Les annotations ne peuvent pas être ajoutées à une page verrouillée par un autre utilisateur.
+Les annotations ne peuvent pas être ajoutées à une page verrouillée par un autre utilisateur.
 
 ### Indicateur d’annotations {#annotation-indicator}
 
 Les annotations n’apparaissent pas en mode d’édition, mais le badge en haut à droite de la barre d’outils indique le nombre d’annotations figurant sur la page active. Le badge remplace l’icône Annotations par défaut ; il fonctionne comme un lien rapide pour activer/désactiver le mode Annotation :
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
-
