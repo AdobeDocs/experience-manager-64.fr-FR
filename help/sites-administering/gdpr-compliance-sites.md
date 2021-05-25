@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+exl-id: 38bae0d7-9544-42d0-9766-45c66f254e5c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 91%
 
 ---
 
-
 # AEM Sites – Préparation pour le RGPD{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
->Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations relatives à la protection des données et à la protection de la vie privée ; comme le RGPD, l&#39;ACCP, etc.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité ; comme le RGPD, le CCPA, etc.
 
 Le règlement général sur la protection des données (RGPD) de l’Union européenne sur les droits de confidentialité des données entre en vigueur en mai 2018.
 
@@ -46,7 +45,7 @@ Par défaut, les composants AEM Sites ne stockent pas les données de formulair
 
 ## Souscription/exclusion {#opt-in-opt-out}
 
-aem dispose d’un [service d’exclusion des cookies](/help/sites-developing/cookie-optout.md) qui peut être utilisé pour gérer l’inclusion/exclusion des utilisateurs.
+AEM a un [service d’exclusion des cookies](/help/sites-developing/cookie-optout.md) qui peut être utilisé pour gérer l’inclusion/exclusion des utilisateurs.
 
 ## Enhanced Insights by Analytics {#enhanced-insights-by-analytics}
 
@@ -54,7 +53,7 @@ AEM Sites comprend une intégration facultative à Enhanced Insights by Analytic
 
 Pour plus d’informations sur la gestion des requêtes RGPD des personnes titulaires de ces données liées à Adobe Analytics, voir [Adobe Analytics et RGPD](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
 
-## Enhanced Personalization by Target  {#enhanced-personalization-by-target}
+## Enhanced Personalization by Target {#enhanced-personalization-by-target}
 
 AEM Sites comprend une intégration facultative à Enhanced Personalization by Target utilisant la fonctionnalité incluse dans le service On-demand Adobe Target.
 
@@ -62,7 +61,7 @@ Pour plus d’informations sur la gestion des requêtes RGPD des personnes titul
 
 ## ContextHub {#contexthub}
 
-aem fournit une couche de données facultative avec [ContextHub](/help/sites-developing/contexthub.md). Cette option conserve les données spécifiques aux visiteurs dans le navigateur, afin qu’elles soient utilisées pour la personnalisation basée sur des règles.
+AEM fournit une couche de données facultative avec [ContextHub](/help/sites-developing/contexthub.md). Cette option conserve les données spécifiques aux visiteurs dans le navigateur, afin qu’elles soient utilisées pour la personnalisation basée sur des règles.
 
 Par défaut, ces données sur les visiteurs ne sont pas stockées dans AEM ; AEM envoie des règles à la couche de données de façon à prendre des décisions de personnalisation dans le navigateur.
 
@@ -110,21 +109,21 @@ Pour afficher un aperçu de la persistance utilisée par ContextHub, l’utilisa
 
 * utiliser la console du navigateur, par exemple :
 
-   * Chrome :
+   * Chrome:
 
       * Ouvrez Outils de développement > Application > Stockage :
 
          * Stockage local > (site web) > ContextHubPersistence
          * Stockage de session > (site web) > ContextHubPersistence
          * Cookies > (site web) > SessionPersistence
-   * Firefox :
+   * Firefox:
 
       * Ouvrez Outils de développement > Stockage :
 
          * Stockage local > (site web) > ContextHubPersistence
          * Stockage de session > (site web) > ContextHubPersistence
          * Cookies > (site web) > SessionPersistence
-   * Safari :
+   * Safari:
 
       * Ouvrez Préférences > Avancé > Afficher le menu Développement dans la barre de menus
       * Ouvrez Développement > Afficher la console JavaScript
@@ -226,4 +225,3 @@ Pour effacer la persistance de ContextHub :
    * ContextHub.Utils.Persistence.Modes.SESSION
    * ContextHub.Utils.Persistence.Modes.COOKIE
    * ContextHub.Utils.Persistence.Modes.WINDOW
-
