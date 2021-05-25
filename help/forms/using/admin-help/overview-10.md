@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2d6f90bb-62f7-4805-9250-1b913fe7d2b3
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: f33f9ef9-95a7-47cb-8d13-19f24f1b463e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 100%
 
 ---
-
 
 # Présentation de l’espace de travail {#overview-of-workspace}
 
@@ -35,4 +34,3 @@ Dans les pages Workspace de Administration Console, vous pouvez exécuter les t�
 >[!NOTE]
 >
 >Vous devez utiliser les méthodes de navigation disponibles dans Administration Console. N’utilisez pas les boutons Précédent, Suivant ou Actualiser du navigateur Web. Si vous utilisez ces boutons, des problèmes de capture et d’affichage de données risquent de survenir.
-
