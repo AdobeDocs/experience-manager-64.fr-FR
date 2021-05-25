@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
-translation-type: tm+mt
-source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+exl-id: 11b791f6-b14f-4f50-a64a-27a9501adeb7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 79%
 
 ---
-
 
 # Personnalisation de la console de bienvenue (IU classique){#customizing-the-welcome-console-classic-ui}
 
@@ -35,7 +34,7 @@ Il est possible de configurer les liens qui sont visibles. Cela peut être défi
 * [Consoles principales](#links-in-main-console-left-pane) : liens de la console principale (volet de gauche)
 * [Ressources, documentation et ressources, fonctionnalités](#links-in-sidebar-right-pane) : liens de la barre latérale (volet de droite)
 
-## Liens de la console principale (volet de gauche)  {#links-in-main-console-left-pane}
+## Liens de la console principale (volet de gauche) {#links-in-main-console-left-pane}
 
 Liste des consoles principales d’AEM.
 
@@ -63,7 +62,7 @@ Les autorisations au niveau du nœud déterminent si les liens sont visibles ou 
 
 Par exemple :
 
-* Pour limiter l&#39;accès aux **outils**, supprimez l&#39;accès en lecture de
+* Pour restreindre l’accès à **Outils**, supprimez l’accès en lecture à partir de
 
    `/libs/wcm/core/content/misc`
 
@@ -164,21 +163,21 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
 
 Il est possible de masquer un lien pour des utilisateurs ou des groupes spécifiques en supprimant l’accès aux nœuds qui le représentent.
 
-* Ressources - supprimer l&#39;accès à :
+* Ressources : supprimez l’accès à :
 
    `/libs/cq/core/content/welcome/resources/<link-target>`
 
-* Documents - supprimer l&#39;accès à :
+* Documents - supprimez l’accès à :
 
    `/libs/cq/core/content/welcome/docs/<link-target>`
 
-* Fonctionnalités - supprimer l&#39;accès à :
+* Fonctionnalités : supprimez l’accès à :
 
    `/libs/cq/core/content/welcome/features/<link-target>`
 
 Par exemple :
 
-* Pour supprimer le lien vers **Rapports**, supprimez l’accès en lecture de
+* Pour supprimer le lien vers **Reports**, supprimez l’accès en lecture de
 
    `/libs/cq/core/content/welcome/resources/reports`
 
@@ -190,7 +189,7 @@ Pour plus d’informations sur la définition des autorisations souhaitées, con
 
 ### Mécanisme de sélection de liens  {#link-selection-mechanism}
 
-Dans `/libs/cq/core/components/welcome/welcome.jsp`, l&#39;utilisation est faite de [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), qui exécute une requête sur les noeuds qui possèdent la propriété :
+Dans `/libs/cq/core/components/welcome/welcome.jsp` , l’utilisation est faite de [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), qui exécute une requête sur les noeuds possédant la propriété :
 
 * `jcr:mixinTypes` avec la valeur :  `cq:Console`
 
@@ -213,4 +212,3 @@ Vous pouvez utiliser le [mécanisme de sélection de liens](#link-selection-mech
 Ajoutez votre élément personnalisé à la liste en ajoutant le mixin `cq:Console` à votre widget ou ressource. Pour ce faire, vous devez définir la propriété suivante :
 
 * `jcr:mixinTypes` avec la valeur :  `cq:Console`
-
