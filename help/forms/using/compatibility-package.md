@@ -10,14 +10,13 @@ topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '387'
 ht-degree: 87%
 
 ---
-
 
 # Installer le package de compatibilité {#compatibility-package}
 
@@ -49,11 +48,11 @@ Vérifiez que le [package de compatibilité AEM](/help/sites-deploying/backward-
 1. Une fois les journaux stabilisés, redémarrez le serveur.
 1. Utilisez l’utilitaire de migration pour rendre vos actifs compatibles avec la version 6.4.
 
-   Pour plus d’informations, voir [utilitaire de migration](/help/forms/using/migration-utility.md).
+   Pour plus d’informations, voir [Utilitaire de migration](/help/forms/using/migration-utility.md).
 
 ## Actifs devenus compatibles avec AEM Forms 6.4 après l’installation du package de compatibilité {#assetsmadecompatible}
 
-En installant le package Compatibilité, vous pouvez rendre les actifs et modèles suivants compatibles avec AEM Forms 6.4 :
+En installant le package de compatibilité, vous pouvez rendre les actifs et modèles suivants compatibles avec AEM Forms 6.4 :
 
 * Actifs de Correspondence Management d’AEM 6.3 et versions antérieures
 
@@ -78,4 +77,3 @@ En installant le package Compatibilité, vous pouvez rendre les actifs et modèl
    * /libs/fd/af/components/page/survey
    * /libs/fd/af/components/page/tabbedenrollment
    * /libs/fd/afaddon/components/page/advancedenrollment
-
