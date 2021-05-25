@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8906b3ab-cb08-4b3e-8796-334e36b1e491
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 90%
 
 ---
-
 
 # Fragments d’expérience{#experience-fragments}
 
@@ -94,7 +93,7 @@ L’exemple suivant montre les fragments d’expérience structurés selon `Cont
 
 >[!CAUTION]
 >
->La capture d&#39;écran suivante a été tirée du site WKND en utilisant Adobe Experience Manager comme Cloud Service.
+>La capture d’écran suivante a été tirée du site WKND à l’aide d’Adobe Experience Manager en tant que Cloud Service.
 
 ![Dossiers des fragments d’expérience](assets/xf-folders.png)
 
@@ -108,7 +107,7 @@ Pour créer et configurer un dossier pour vos fragments d’expérience, il est 
 
 >[!NOTE]
 >
->Il est également possible de configurer les [modèles autorisés pour votre instance](#configure-allowed-templates-instance), mais cette méthode est **non** recommandée car les valeurs peuvent être remplacées lors de la mise à niveau.
+>Il est également possible de configurer les [modèles autorisés pour votre instance](#configure-allowed-templates-instance), mais cette méthode est **non** recommandée, car les valeurs peuvent être remplacées lors de la mise à niveau.
 
 ### Configuration des modèles autorisés pour votre dossier {#configure-allowed-templates-folder}
 
@@ -133,7 +132,7 @@ Pour créer et configurer un dossier pour vos fragments d’expérience, il est 
 
 >[!CAUTION]
 >
->Il n&#39;est pas recommandé de modifier les **[!UICONTROL modèles autorisés]** par cette méthode, car les modèles spécifiés peuvent être remplacés lors de la mise à niveau.
+>Il n’est pas recommandé de modifier les **[!UICONTROL Modèles autorisés]** par cette méthode, car les modèles spécifiés peuvent être remplacés lors de la mise à niveau.
 >
 >Veuillez utiliser cette boîte de dialogue uniquement à titre d’information.
 
@@ -181,7 +180,7 @@ Pour créer un fragment d’expérience :
 
 ## Modification d’un fragment d’expérience {#editing-your-experience-fragment}
 
-L’éditeur de fragment d’expérience offre des fonctionnalités similaires à l’éditeur de page normal. Voir [Modification du contenu de la page](/help/sites-authoring/editing-content.md) pour plus d&#39;informations sur la manière de l&#39;utiliser.
+L’éditeur de fragment d’expérience offre des fonctionnalités similaires à l’éditeur de page normal. Voir [Modification du contenu de la page](/help/sites-authoring/editing-content.md) pour plus d’informations sur son utilisation.
 
 La procédure suivante explique comment créer un teaser pour un produit :
 
@@ -210,7 +209,7 @@ Vous pouvez créer des variations du fragment d’expérience, selon vos besoins
 
 1. Définissez les propriétés requises :
 
-   * **[!UICONTROL Template]**
+   * **[!UICONTROL Modèle]**
    * **[!UICONTROL Titre]**
    * **[!UICONTROL Nom]** ; si rien n’est indiqué dans ce champ, le nom est déduit du titre
    * **[!UICONTROL Description]**
@@ -313,5 +312,4 @@ Par exemple :
 
 Par défaut, les fragments d’expérience sont fournis au format HTML. Ils peuvent être utilisés à la fois par AEM et les canaux tiers.
 
-Pour l’exportation vers Adobe Target, le code HTML est utilisé. Pour obtenir des informations complètes, voir [Intégration de Target aux ](/help/sites-administering/experience-fragments-target.md)Fragments d’expérience.
-
+Pour l’exportation vers Adobe Target, du code HTML est utilisé. Pour obtenir des informations complètes, voir [Intégration de Target aux ](/help/sites-administering/experience-fragments-target.md)Fragments d’expérience.
