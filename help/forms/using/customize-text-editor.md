@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Correspondence Management
+exl-id: 5e9f8e0f-209e-4613-b230-2b826b46ba6b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '616'
+ht-degree: 63%
 
 ---
-
 
 # Personnalisation de l’éditeur de texte {#customize-text-editor}
 
@@ -38,12 +37,12 @@ Pour ce faire, vous devez :
 
 ## Personnaliser des polices en modifiant le fichier tbxeditor-config.xml dans CRX {#customizefonts}
 
-Pour personnaliser des polices en modifiant le fichier tbxeditor-config.xml, procédez comme suit :
+Pour personnaliser des polices en modifiant le fichier fichier tbxeditor-config.xml, procédez comme suit :
 
 1. Accédez à `https://[server]:[port]/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
-1. Dans le dossier d’applications, créez un dossier nommé config dont le chemin d’accès/la structure est similaire au dossier de configuration, qui se trouve dans libs/fd/cm/config, en procédant comme suit :
+1. Dans le dossier d’applications, créez un dossier nommé config dont le chemin/la structure est similaire au dossier de configuration, qui se trouve sous libs/fd/cm/config, en procédant comme suit :
 
-   1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud d’incrustation** :
+   1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
 
       `/libs/fd/cm/config`
 
@@ -53,9 +52,9 @@ Pour personnaliser des polices en modifiant le fichier tbxeditor-config.xml, pro
 
       **Chemin d’accès :** /libs/fd/cm/config
 
-      **Emplacement:** /applications/
+      **Emplacement :** /apps/
 
-      **Faire correspondre les types de noeud:** Sélectionné
+      **Faire correspondre les types de noeud :** Sélectionné
 
       ![Nœud de recouvrement](assets/2-2.png)
 
@@ -72,9 +71,9 @@ Pour personnaliser des polices en modifiant le fichier tbxeditor-config.xml, pro
 
    1. Par défaut, le nom du fichier collé est `copy of tbxeditor-config.xml.` Renommez le fichier en `tbxeditor-config.xml` et cliquez sur **Enregistrer tout**.
 
-1. Ouvrez le fichier tbxeditor-config.xml dans apps/fd/cm/config, puis effectuez les modifications requises.
+1. Ouvrez le fichier tbxeditor-config.xml dans apps/fd/cm/config , puis effectuez les modifications requises.
 
-   1. Cliquez avec le doublon sur le fichier tbxeditor-config.xml dans apps/fd/cm/config. Le fichier s’ouvre.
+   1. Double-cliquez sur le fichier tbxeditor-config.xml dans apps/fd/cm/config. Le fichier s’ouvre.
 
       ```xml
       <editorConfig>
@@ -168,14 +167,14 @@ Pour personnaliser des polices en modifiant le fichier tbxeditor-config.xml, pro
       * Valeurs par défaut des familles et des tailles de police, de la hauteur, de l’interlettrage et du format de date
       * Retraits de puces
 
-      Par exemple, pour ajouter une police japonaise appelée Sazanami Mincho Medium, vous devez effectuer l’entrée suivante dans Fichier XML : `<font>Sazanami Mincho Medium</font>`. Vous devez également installer cette police sur l’ordinateur client utilisé pour accéder à la personnalisation de la police et l’utiliser. Pour plus d’informations, reportez-vous à la section [Ajouter des polices personnalisées sur l’ordinateur client](#addcustomfonts).
+      Par exemple, pour ajouter une police japonaise appelée Sazanami Mincho Medium, vous devez effectuer l’entrée suivante dans Fichier XML : `<font>Sazanami Mincho Medium</font>`. Cette police doit également être installée sur l’ordinateur client utilisé pour accéder à la personnalisation de la police et l’utiliser. Pour plus d’informations, reportez-vous à la section [Ajouter des polices personnalisées sur l’ordinateur client](#addcustomfonts).
 
       Vous pouvez également modifier les valeurs par défaut de divers aspects du texte et, en supprimant les entrées, supprimer les polices de l’éditeur de texte.
 
    1. Cliquez sur **Enregistrer tout**.
 
 
-## Ajouter des polices personnalisées sur l’ordinateur client  {#addcustomfonts}
+## Ajouter des polices personnalisées sur l’ordinateur client {#addcustomfonts}
 
 Lorsque vous accédez à une police dans l’éditeur de texte de Correspondence Management, elle doit se trouver sur l’ordinateur client que vous utilisez pour accéder à Correspondence Management. Pour pouvoir utiliser une police personnalisée dans l’éditeur de texte, vous devez d’abord l’installer sur l’ordinateur client.
 
@@ -188,11 +187,10 @@ Pour plus d’informations sur l’installation des polices, consultez les artic
 
 Après avoir apporté des modifications aux polices dans le fichier tbxeditor-config.xml dans CRX et installé les polices requises sur l’ordinateur client utilisé pour accéder à AEM Forms, les modifications apparaissent dans l’éditeur de texte.
 
-Par exemple, la police Sazanami Mincho Medium ajoutée dans la procédure [Personnaliser les polices en modifiant le fichier tbxeditor-config.xml dans CRX](#customizefonts) apparaît dans l’interface utilisateur de l’éditeur de texte comme suit :
+Par exemple, la police Sazanami Mincho Medium ajoutée dans la section [Personnaliser les polices en modifiant le fichier tbxeditor-config.xml dans CRX](#customizefonts) apparaît dans l’interface utilisateur de l’éditeur de texte comme suit :
 
 ![sazanamiminchointext](assets/sazanamiminchointext.png)
 
 >[!NOTE]
 >
 >Pour voir le texte en japonais, vous devez au préalable saisir du texte en caractères japonais. L’application d’une police japonaise personnalisée ne formate le texte que d’une certaine manière. Elle ne transforme pas le français ou les autres caractères en caractères japonais.
-
