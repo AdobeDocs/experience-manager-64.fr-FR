@@ -6,14 +6,13 @@ seo-description: 'Modèles de courrier électronique personnalisés pour les not
 uuid: bc2af94d-d4ad-417e-b3d2-bcfffc1b306d
 topic-tags: publish
 discoiquuid: c447fc39-c0f3-4932-ac6c-465d1fb83f8c
-translation-type: tm+mt
-source-git-commit: 8b5a3e1f6616c3a07da91e4347596961ac4a8e22
+exl-id: 5af73823-2c32-41b3-9ab8-a7ad9fd9532f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 96%
 
 ---
-
 
 # Utilisation des modèles de courrier électronique personnalisés dans une étape Affecter une tâche {#use-custom-email-templates-in-an-assign-task-step}
 
@@ -45,7 +44,7 @@ AEM Forms fournit un modèle prêt à l’emploi pour les notifications électro
 
    Un modèle de notification électronique est un [courrier électronique HTML](https://en.wikipedia.org/wiki/HTML_email). Vous pouvez remplacer le code HTML existant par votre code personnalisé pour modifier l’aspect du modèle.
 
-1. Enregistrez le fichier . Désormais, le modèle personnalisé est opérationnel.
+1. Enregistrez le fichier. Désormais, le modèle personnalisé est opérationnel.
 
 ## Création d’un modèle de courrier électronique {#create-an-email-template}
 
@@ -61,15 +60,15 @@ AEM Forms fournit un modèle prêt à l’emploi pour les notifications électro
 
    Un modèle de notification électronique est un [courrier électronique HTML](https://en.wikipedia.org/wiki/HTML_email). Vous pouvez ajouter du code HTML personnalisé au fichier pour créer un nouveau modèle.
 
-1. Enregistrez le fichier . Le modèle est prêt à être utilisé dans l’étape Affecter une tâche.
+1. Enregistrez le fichier. Le modèle est prêt à être utilisé dans l’étape Affecter une tâche.
 
 ## Utilisation d’un modèle de courrier électronique dans une étape Affecter une tâche {#use-an-email-template-in-an-assign-task-step}
 
 L’étape Affecter une tâche prête à l’emploi est configurée pour utiliser le modèle par défaut, htmlEmailTemplate.txt. Vous pouvez choisir d’utiliser un modèle personnalisé. Pour modifier le modèle :
 
-1. Ouvrez l’étape **[!UICONTROL Attribuer la Tâche]**.
+1. Ouvrez l’étape **[!UICONTROL Affecter une tâche]** .
 
-1. Accédez à **[!UICONTROL Destinataire > Modèle de courrier électronique HTML]**.
+1. Accédez à **[!UICONTROL Cessionnaire > Modèle de courrier électronique HTML]**.
 
 1. Sélectionnez le modèle de courrier électronique HTML nouvellement créé.
 
