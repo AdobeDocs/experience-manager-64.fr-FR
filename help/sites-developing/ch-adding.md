@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: ac8f44df-39fb-44ea-ae17-ead0dbd1f6c0
-translation-type: tm+mt
-source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+exl-id: 99efe308-bf8a-41ad-8203-b57fce20820c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 96%
 
 ---
 
-
-# Ajout de ContextHub à des pages et accès à des magasins  {#adding-contexthub-to-pages-and-accessing-stores}
+# Ajout de ContextHub à des pages et accès à des magasins {#adding-contexthub-to-pages-and-accessing-stores}
 
 Ajoutez ContextHub à vos pages pour activer les fonctionnalités ContextHub et créer un lien vers les bibliothèques JavaScript ContextHub
 
@@ -168,7 +167,7 @@ Les règles utilisées pour résoudre ces segments sont résumées comme suit :
 * Le genre « Homme » ou « Femme » est déterminé à partir de l’élément de données `gender` du magasin [profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate).
 
 * L’âge est déterminé à partir de l’élément de données « age » du magasin « profile ».
-* La saison est déterminée à partir de l&#39;élément de données de latitude du magasin [geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) et de l&#39;élément de données de mois du magasin surferinfo.
+* La saison est déterminée à partir de l’élément de données de latitude du magasin [geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) et de l’élément de données du mois du magasin surferinfo.
 
 >[!WARNING]
 >
@@ -178,7 +177,7 @@ Les règles utilisées pour résoudre ces segments sont résumées comme suit :
 
 Configurez le service OSGi ContextHub d’Adobe Granite (PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`) pour consigner des messages de débogage détaillés qui s’avèrent utiles dans le cadre du développement.
 
-Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou un noeud [JCR dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) :
+Pour configurer le service, vous pouvez utiliser la [console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou utiliser un noeud [JCR dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) :
 
 * Console web : pour consigner des messages de débogage, sélectionnez la propriété Debug.
 * Nœud JCR : pour consigner des messages de débogage, définissez la propriété booléenne `com.adobe.granite.contexthub.debug` sur `true`.
