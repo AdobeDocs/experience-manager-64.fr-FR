@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
-source-git-commit: 361964df6c25cbcfadb45dbf8fc10d5ab1258e6d
+source-git-commit: 5dd282cc91721a3d53bdf29d5fbb978a52c3704e
 workflow-type: tm+mt
-source-wordcount: '2815'
-ht-degree: 82%
+source-wordcount: '2871'
+ht-degree: 80%
 
 ---
 
@@ -326,6 +326,11 @@ Tous les composants sont inclus, ceux standard produit comme ceux spécifiques a
 ![](assets/reportcomponent.png) ![reportcomponentreportcompentall](assets/reportcompentall.png)
 
 ### Utilisation du disque {#disk-usage}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_diskusage"
+>title="Rapport Utilisation du disque"
+>abstract="En tant qu’entrée du calculateur CTT, les utilisateurs peuvent estimer la taille du référentiel AEM en exécutant le rapport Utilisation du disque sous &quot;http://HOST:PORT/etc/reports/diskusage.html&#39;&quot;. Les utilisateurs peuvent également estimer la taille des chemins de référentiel spécifiques à l’aide du paramètre &quot;path&quot;, tel que : &#39;http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam&#39;."
 
 Le rapport d’utilisation du disque affiche des informations sur les données stockées dans votre référentiel.
 
