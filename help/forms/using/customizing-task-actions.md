@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
-translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+exl-id: 3534864b-3d1c-42ca-96a0-5becbfbc8ce6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 63%
 
 ---
 
-
-# Personnalisation des actions de tâche  {#customizing-task-actions}
+# Personnalisation des actions de tâche {#customizing-task-actions}
 
 L’espace de travail AEM Forms permet aux utilisateurs de personnaliser les actions de tâche. Avant de personnaliser les actions de tâche, vous devez suivre les étapes indiquées dans [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
@@ -134,11 +133,11 @@ Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichi
 
 ## Affichage des images pour des actions uniquement  {#showing-only-images-for-actions}
 
-Pour afficher uniquement des images pour des actions, personnalisez les images utilisées dans les actions d’acheminement. Pour plus d&#39;informations, voir [Images pour les actions d&#39;itinéraire](/help/forms/using/images-route-actions.md).
+Pour afficher uniquement des images pour des actions, personnalisez les images utilisées dans les actions d’acheminement. Pour plus d’informations, voir [Images pour actions d’itinéraire](/help/forms/using/images-route-actions.md).
 
 ### Menu contextuel de l’action de tâche Liste de tâches {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Vous avez besoin du paquet de développement pour personnaliser les éléments du menu contextuel de l’action de tâche Liste de tâches de l’espace de travail AEM Forms. Pour plus d’informations sur la création d’un paquet de développement, voir [Création du code de l’espace de travail AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. Vous avez besoin du paquet de développement pour personnaliser les éléments du menu contextuel de l’action de tâche Liste de tâches de l’espace de travail AEM Forms. Pour plus d’informations sur la création d’un module de développement, voir [Création du code de l’espace de travail AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copiez /libs/ws/js/runtime/templates/task.html dans `/apps/ws/js/runtime/templates/task.html`remplacez le fragment de code suivant :
 
@@ -213,7 +212,7 @@ Pour afficher uniquement des images pour des actions, personnalisez les images u
        </div>
    ```
 
-1. Supprimez la largeur fixe affectée à une balise d&#39;ancrage dans le fichier `/apps/ws/css/newStyle.css` :
+1. Supprimez la largeur fixe affectée à une balise d’ancrage dans le fichier `/apps/ws/css/newStyle.css` :
 
    ```css
    .task .taskActionsPopUp ul{
@@ -265,7 +264,7 @@ Pour afficher uniquement des images pour des actions, personnalisez les images u
 
 ### Menu contextuel de l’action de tâche Détails de la tâche {#task-details-task-action-pop-up-menu}
 
-Effectuez les étapes suivantes pour personnaliser le menu contextuel Actions de la tâche Détails :
+Effectuez les étapes suivantes pour personnaliser le menu contextuel des actions de tâche Détails :
 
 * Copiez le fichier /libs/ws/js/runtime/templates/taskdetails.html dans le dossier `/apps/ws/js/runtime/templates/` :
 * Encapsulez la balise de l’icône dans la balise d’ancrage au lieu du texte. Par exemple, le *nouveau code *répertorié ci-dessous encapsule la balise d’icône dans la balise d’ancrage :
@@ -361,6 +360,6 @@ Effectuez les étapes suivantes pour personnaliser le menu contextuel Actions de
 
 * Ouvrez le fichier /apps/ws/js/registry.js pour le modifier.
 * Recherchez le texte suivant :  `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
-* Remplacez le texte situé par le texte suivant : `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
+* Remplacez le texte localisé par le texte suivant : `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
 
-[**Contacter le support technique**](https://www.adobe.com/fr/account/sign-in.supportportal.html)
+[**Contacter le support technique**](https://www.adobe.com/account/sign-in.supportportal.html)
