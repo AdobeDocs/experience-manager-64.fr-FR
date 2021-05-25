@@ -1,8 +1,8 @@
 ---
-title: Outils des communautés
-seo-title: Outils des communautés
-description: Accès à la console Outils des communautés
-seo-description: Accès à la console Outils des communautés
+title: Outils Communities
+seo-title: Outils Communities
+description: Accès à la console Outils de communautés
+seo-description: Accès à la console Outils de communautés
 uuid: 3172fe00-7132-4cee-9fd1-b6f96eb43200
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,28 +11,26 @@ content-type: reference
 discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: de11be58-b576-4d06-b446-52b4013aae9a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 1%
+source-wordcount: '110'
+ht-degree: 0%
 
 ---
 
+# Outils Communities {#communities-tools}
 
-# Outils des communautés {#communities-tools}
+Sur l’instance de création, pour accéder à la console des outils Communities :
 
-Sur author, pour accéder à la console des outils des communautés :
-
-* A partir de la navigation globale : **[!UICONTROL Outils > Communautés]**
+* À partir de la navigation globale : **[!UICONTROL Outils > Communautés]**
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-* [Modèles](sites.md)  de site - Console pour la création et la gestion de modèles de site
-* [Modèles](tools-groups.md) de groupe - Console pour la création et la gestion de modèles de groupe
-* [Fonctions](functions.md) communautaires - Console pour la création et la gestion de fonctions communautaires
-* [Configuration](srp-config.md)  de l&#39;Enregistrement - Console pour la configuration et la sélection du  [SRP par défaut](working-with-srp.md)
+* [Modèles de site](sites.md)  : console pour la création et la gestion de modèles de site
+* [Modèles de groupe](tools-groups.md) - Console pour la création et la gestion de modèles de groupe
+* [Fonctions de communauté](functions.md) - Console pour la création et la gestion de fonctions de communauté
+* [Configuration de stockage](srp-config.md)  : console pour la configuration et la sélection du SRP  [par défaut.](working-with-srp.md)
 
-* [Guide](components-guide.md)  des composants - Ouvre un site interactif qui permet d&#39;expérimenter comment fonctionnent les composants SCF et comment ils peuvent être configurés ou personnalisés.
-* [Badges](badges.md)  - Console à partir de laquelle des badges personnalisés peuvent être ajoutés pour être utilisés dans les règles de  [notation et de badge](implementing-scoring.md)
-
+* [Guide des composants](components-guide.md)  : ouvre un site interactif qui permet d’expérimenter le fonctionnement des composants SCF et leur configuration ou personnalisation.
+* [Badges](badges.md)  : console à partir de laquelle des badges personnalisés peuvent être ajoutés pour une utilisation dans les règles de  [notation et de badge](implementing-scoring.md)
