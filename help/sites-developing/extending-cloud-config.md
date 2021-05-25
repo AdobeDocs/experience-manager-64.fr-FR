@@ -5,14 +5,13 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: d2b8503e-8ac1-4617-ad76-b05d1e80a6b6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 65%
 
 ---
-
 
 # Configurations du service cloud{#cloud-service-configurations}
 
@@ -20,7 +19,7 @@ Les configurations apportent la logique et la structure de stockage des configur
 
 Vous pouvez étendre les instances existantes pour créer vos propres configurations.
 
-## Concepts {#concepts}
+## Concepts  {#concepts}
 
 Les principes suivis dans le développement des configurations sont basés sur les concepts ci-après :
 
@@ -28,8 +27,8 @@ Les principes suivis dans le développement des configurations sont basés sur l
 * Les configurations (par exemple les propriétés/paragraphes) sont héritées du ou des parents.
 * Référencées à partir du(des) nœud(s) analytique(s) par chemin.
 * Facilement extensibles.
-* Dispose de la flexibilité nécessaire pour répondre à des configurations plus complexes, telles que [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Prise en charge des dépendances (p. ex. [Les modules externes Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ont besoin d&#39;une configuration [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)).
+* Dispose de la possibilité de prendre en charge des configurations plus complexes, telles que [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
+* Prise en charge des dépendances (par ex. [Les modules externes Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ont besoin d’une configuration [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
 
 ## Structure {#structure}
 
@@ -39,9 +38,9 @@ Le chemin de base des configurations est :
 
 Pour chaque type de configuration, un modèle et un composant sont fournis. Ainsi, une fois personnalisés, les modèles de configuration peuvent répondre à la plupart des besoins.
 
-Pour configurer un nouveau service, vous devez effectuer les opérations suivantes :
+Pour fournir une configuration à un nouveau service, vous devez :
 
-* créez une page de service dans
+* création d’une page de service dans
 
    `/etc/cloudservices`
 
@@ -62,7 +61,7 @@ Le fournisseur de services doit également fournir la page de service :
 
 `/etc/cloudservices/<service-name>`
 
-### Template {#template}
+### Modèle {#template}
 
 Votre modèle étendra le modèle de base :
 
@@ -105,9 +104,9 @@ Après avoir configuré votre modèle et votre composant, vous pouvez ajouter vo
 
 `/etc/cloudservices/<service-name>`
 
-### Modèle de contenu {#content-model}
+### Modèles de contenu {#content-model}
 
-Le modèle de contenu est stocké sous `cq:Page` sous :
+Le modèle de contenu est stocké sous la forme `cq:Page` sous :
 
 `/etc/cloudservices/<service-name>(/*)`
 
@@ -138,7 +137,7 @@ Pour la documentation de référence sur l’API, voir [com.day.cq.wcm.webservic
 
 ### Intégration d’AEM {#aem-integration}
 
-Les services disponibles sont répertoriés dans l&#39;onglet **Cloud Services** de la boîte de dialogue **Propriétés de la page** (de toute page héritant de `foundation/components/page` ou `wcm/mobile/components/page`).
+Les services disponibles sont répertoriés dans l’onglet **Cloud Services** de la boîte de dialogue **Propriétés de la page** (de toute page qui hérite de `foundation/components/page` ou `wcm/mobile/components/page`).
 
 L’onglet contient également :
 
@@ -149,7 +148,7 @@ L’onglet contient également :
 
 Lorsque vous stockez des informations d’identification d’utilisateur pour le service, tous les mots de passe doivent être chiffrés.
 
-Pour cela, il faut ajouter un champ de formulaire masqué. Ce champ doit avoir l&#39;annotation `@Encrypted` dans le nom de la propriété ; Par exemple, pour le champ `password`, le nom serait écrit comme suit :
+Pour cela, il faut ajouter un champ de formulaire masqué. Ce champ doit comporter l’annotation `@Encrypted` dans le nom de la propriété ; En d’autres termes, pour le champ `password`, le nom serait écrit comme suit :
 
 `password@Encrypted`
 
@@ -161,7 +160,7 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
 
 >[!NOTE]
 >
->Par défaut, `EcryptionPostProcessor` ne chiffre que les demandes `POST` envoyées à `/etc/cloudservices`.
+>Par défaut, `EcryptionPostProcessor` ne chiffre que les demandes `POST` effectuées à `/etc/cloudservices`.
 
 #### Propriétés supplémentaires pour les nœuds jcr:content de page de service {#additional-properties-for-service-page-jcr-content-nodes}
 
@@ -173,7 +172,7 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
   </tr> 
   <tr> 
    <td>componentReference</td> 
-   <td>Chemin d’accès de référence à un composant à inclure automatiquement dans la page.<br /> Ceci est utilisé pour des fonctionnalités supplémentaires et des inclusions JS.<br /> Cela inclut le composant sur la page <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> où est incluse (normalement avant la  <code>body</code> balise).<br /> Dans le cas de Google Analytics et Target, nous utilisons ceci pour insérer des fonctionnalités supplémentaires, telles que des appels JavaScript, afin de suivre le comportement des visiteurs.</td> 
+   <td>Chemin d’accès de référence à un composant à inclure automatiquement dans la page.<br /> Ceci est utilisé pour des fonctionnalités supplémentaires et des inclusions JS.<br /> Cela inclut le composant sur la page <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> où est inclus (normalement avant la  <code>body</code> balise ).<br /> Dans le cas de Google Analytics et Target, nous utilisons ceci pour insérer des fonctionnalités supplémentaires, telles que des appels JavaScript, afin de suivre le comportement des visiteurs.</td> 
   </tr> 
   <tr> 
    <td>description</td> 
@@ -184,24 +183,24 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
    <td>Description étendue du service.</td> 
   </tr> 
   <tr> 
-   <td>classement</td> 
-   <td>Classement des services à utiliser dans les annonces.</td> 
+   <td>ranking</td> 
+   <td>Classement des services à utiliser dans les listes.</td> 
   </tr> 
   <tr> 
    <td>selectableChildren</td> 
-   <td>Filtre permettant d’afficher les configurations dans la boîte de dialogue des propriétés de page.</td> 
+   <td>Filtre pour l’affichage des configurations dans la boîte de dialogue des propriétés de page.</td> 
   </tr> 
   <tr> 
    <td>serviceUrl</td> 
-   <td>URL vers le site Web du service.</td> 
+   <td>URL du site Web du service.</td> 
   </tr> 
   <tr> 
    <td>serviceUrlLabel</td> 
-   <td>Libellé de l’URL de service.</td> 
+   <td>Libellé de l’URL du service.</td> 
   </tr> 
   <tr> 
    <td>thumbnailPath</td> 
-   <td>Chemin d’accès à la miniature pour le service.</td> 
+   <td>Chemin d’accès à la miniature du service.</td> 
   </tr> 
   <tr> 
    <td>visible</td> 
@@ -223,4 +222,3 @@ Ces services sont fournis par défaut :
 >[!NOTE]
 >
 >Voir aussi [Création d’un service cloud personnalisé](/help/sites-developing/extending-cloud-config-custom-cloud.md).
-
