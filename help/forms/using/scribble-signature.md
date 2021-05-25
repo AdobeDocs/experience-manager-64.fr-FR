@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 feature: Designer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8b6b151d-2422-4261-9edb-66efe3d33f8b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 89%
 
 ---
-
 
 # Utilisation de la signature tactile dans les formulaires HTML5 {#using-scribble-signature-in-html-forms}
 
@@ -39,13 +38,13 @@ Les formulaires HTML5 sont de plus en plus utilisés sur les périphériques tac
    Par défaut, le champ de signature tactile marque les informations de géolocalisation comme étant obligatoires au cours du processus de signature sur iPad (elles sont facultatives pour les autres périphériques). Ce comportement par défaut peut être remplacé en modifiant la valeur de la propriété `geoLocMandatoryOnIpad`. Cette propriété est exposée en tant qu’extras dans le champ de signature tactile. Les étapes permettant de modifier ce champ sont les suivantes :
 
    1. Dans le formulaire, sélectionnez le champ de signature tactile.
-   1. Sélectionnez l’onglet **Source XML**.
+   1. Sélectionnez l’onglet **Source XML** .
 
       >[!NOTE]
       >
-      >Pour ouvrir l’onglet Source XML, cliquez sur **Vue** > **Source XML**.
+      >Pour ouvrir l’onglet Source XML, cliquez sur **Afficher** > **Source XML**.
 
-   1. Localisez la balise `<ui>` dans la balise `<field>` et modifiez le code source pour qu’il ressemble à ce qui suit :
+   1. Recherchez la balise `<ui>` dans la balise `<field>` et modifiez le code source pour qu’il ressemble à ce qui suit :
 
       ```xml
       <extras name="x-scribble-add-on">
@@ -60,13 +59,13 @@ Les formulaires HTML5 sont de plus en plus utilisés sur les périphériques tac
 
 ## Utilisation de l&#39;interface des signatures tactiles {#interfacing-with-the-scribble-signatures}
 
-### Signature {#signing}
+### Signing {#signing}
 
 Une fois qu’un champ de signature tactile a été ajouté au formulaire et généré, cliquer ou tapoter le champ ouvre une boîte de dialogue. L’utilisateur peut apposer une signature tactile dans la zone de dessin représentée par un rectangle en pointillés à l’aide d’une souris, d’un doigt ou d’un stylet.
 
 ![géolocalisation](assets/geolocation.png)
 
-**A.** Brosse  **B.** Gomme  **C.** Géolocalisation  **D.** Informations de géolocalisation
+**A.** Pinceau  **B.** Gomme  **C.** Géolocalisation  **D.** Informations de géolocalisation
 
 ### Géo-marquage {#geo-tagging}
 
@@ -84,7 +83,7 @@ Pour les iPad, ce paramètre peut être modifié en remplaçant la valeur du par
 
 ### Effacement d’une signature  {#clearing-a-signature}
 
-Lors de l’utilisation de cette fonctionnalité, un utilisateur peut cliquer sur l’icône **Gomme** pour effacer le champ et effectuer un début. Si des informations de géolocalisation ont été ajoutées, elles sont également effacées.
+Lors de l’utilisation de cette fonction, un utilisateur peut cliquer sur l’icône **Gomme** pour effacer le champ et recommencer. Si des informations de géolocalisation ont été ajoutées, elles sont également effacées.
 
 ### Enregistrement d’une signature  {#saving-a-signature}
 
