@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 759068fa-dc1b-4cf5-bc7b-62b8c5464831
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: c405c69b-3588-4701-8f36-1ea0680e056d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
-
 
 # Activer AEM pour rechercher des documents PDF protégés par la sécurité documentaire {#enable-aem-to-search-document-security-protected-pdf-documents}
 
@@ -26,7 +25,7 @@ La recherche AEM peut rechercher et localiser des ressources AEM et effectuer un
 1. Créez une connexion sécurisée
 1. Indexer un document PDF protégé par un exemple de stratégie
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 * Si vous utilisez AEM Forms sur OSGi :
 
@@ -86,4 +85,3 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion s
 1. Créez un dossier dans AEM Digital Asset Manager et téléchargez les documents PDF protégés par une stratégie vers le dossier que vous venez de créer.
 
    Désormais, vous pouvez effectuer une recherche portant sur les documents protégés par une stratégie à l’aide de la recherche AEM.
-
