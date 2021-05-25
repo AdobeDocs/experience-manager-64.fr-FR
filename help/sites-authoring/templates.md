@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
-translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+exl-id: 2af8eaed-3963-4016-9efa-a630d16a982b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4811'
 ht-degree: 97%
 
 ---
 
-
-# Création de modèles de page   {#creating-page-templates}
+# Création de modèles de page {#creating-page-templates}
 
 Lors de la création d’une page, vous devez sélectionner un modèle. C’est la base pour la création de la page. Le modèle définit la structure de la page créée, le contenu initial et les composants pouvant être utilisés.
 
@@ -41,7 +40,7 @@ Pour obtenir des informations détaillées sur le fonctionnement des modèles mo
 
 >[!NOTE]
 >
->aem 6.4.5.0 ou version ultérieure est nécessaire pour utiliser des modèles modifiables avec l&#39;[SPA Editor](/help/sites-developing/spa-overview.md).
+>AEM version 6.4.5.0 ou ultérieure est requise pour utiliser des modèles modifiables avec l’ [Éditeur SPA](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -49,7 +48,7 @@ Pour obtenir des informations détaillées sur le fonctionnement des modèles mo
 
 >[!CAUTION]
 >
->Les pages et les modèles créés avec la **console Modèles** ne sont pas destinés à être utilisés avec l&#39;interface utilisateur classique et cette utilisation n&#39;est pas prise en charge.
+>Les pages et les modèles créés avec la **console Modèles** ne sont pas destinés à être utilisés avec l’interface utilisateur classique et cette utilisation n’est pas prise en charge.
 
 ## Avant de commencer {#before-you-start}
 
@@ -112,7 +111,7 @@ AEM comporte maintenant deux types de modèles standard :
    * Ils sont [fournis par les développeurs](/help/sites-developing/page-templates-static.md), et ne peuvent pas être créés ou modifiés par les créateurs.
    * Ils sont copiés pour créer la page. Il n’y a ensuite aucune connexion dynamique (même si le nom du modèle est enregistré pour information).
    * Utilisez le [mode Création](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
-   * La modification de modèles statiques étant la tâche exclusive d&#39;un développeur, consultez le document de développement [Modèles de page - Static](/help/sites-developing/page-templates-static.md) pour plus d&#39;informations.
+   * La modification des modèles statiques étant la tâche exclusive d’un développeur, reportez-vous au document destiné aux développeurs [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md) pour plus d’informations.
 
 Par définition, la console de modèles et l’éditeur de modèles permettent uniquement la création et la modification des modèles modifiables. Par conséquent, ce document décrit exclusivement les modèles modifiables.
 
@@ -157,7 +156,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
 
 ### Création d’un modèle - Créateur de modèles {#creating-a-new-template-template-author}
 
-1. Ouvrez la **Console de modèles** (par **Outils** -> **Général**), puis accédez au dossier requis.
+1. Ouvrez la **console Modèles** (via **Outils** -> **Général**), puis accédez au dossier requis.
 
    >[!NOTE]
    >
@@ -229,7 +228,7 @@ Pour définir la miniature du modèle :
 
 1. Lorsque vous êtes satisfait de la miniature, cliquez ou appuyez sur **Enregistrer et Fermer**.
 
-### Activation et autorisation d’un modèle - Créateur de modèles   {#enabling-and-allowing-a-template-template-author}
+### Activation et autorisation d’un modèle - Créateur de modèles  {#enabling-and-allowing-a-template-template-author}
 
 Pour utiliser un modèle lors de la création d’une page, vous devez effectuer les deux tâches suivantes :
 
@@ -290,7 +289,7 @@ Dans la mesure où il est référencé lors du rendu d’une page, le modèle (t
 
 1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
 
-## Modification des modèles  - Créateurs de modèles   {#editing-templates-template-authors}
+## Modification des modèles - Créateurs de modèles  {#editing-templates-template-authors}
 
 Lors de la création ou de la modification d’un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
@@ -332,7 +331,7 @@ Le sélecteur **Mode** de la barre d’outils permet de sélectionner et de modi
 
 * [Structure](#editing-a-template-structure-template-author)
 * [Contenu initial](#editing-a-template-initial-content-author)
-* [Disposition](#editing-a-template-layout-template-author)
+* [Mise en page](#editing-a-template-layout-template-author)
 
 ![chlimage_1-363](assets/chlimage_1-363.png)
 
@@ -470,7 +469,7 @@ En mode **Structure** de l’éditeur de modèles :
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-   *Fonctions*
+   *Fonctionnalités*
 
    L’onglet **Fonctions** permet d’activer ou de désactiver des fonctions supplémentaires du composant.
 
@@ -613,7 +612,7 @@ La conception de la page, y compris les bibliothèques côté client requises et
 
 Pour accéder à la boîte de dialogue **Conception de page** :
 
-1. Dans l&#39;**Éditeur de modèle**, sélectionnez **Informations sur la page** dans la barre d&#39;outils, puis **Conception de page** pour ouvrir la boîte de dialogue.
+1. Dans l’**éditeur de modèles**, sélectionnez **Informations sur la page** dans la barre d’outils, puis **Conception de page** pour ouvrir la boîte de dialogue.
 1. La boîte de dialogue **Conception de page** s’ouvre. Elle est divisée en deux sections :
 
    * La moitié gauche définit les [stratégies de page](/help/sites-authoring/templates.md#page-policies).
@@ -724,4 +723,3 @@ Lors de la création de modèles, vous devez prendre en compte :
 
 1. [Création de vos propres dossiers](#creating-a-template-folder-admin) pour les modèles spécifiques à un site.
 1. [Publiez vos modèles](#publishing-a-template-template-author) à partir de la **console des modèles**.
-
