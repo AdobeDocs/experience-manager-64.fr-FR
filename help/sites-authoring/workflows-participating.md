@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 37c8b1bd-0e60-42d2-80ed-dece3f5c2342
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 7b645497-ddbf-403c-9e78-5e845f6bda50
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 100%
 
 ---
-
 
 # Participation aux workflows  {#participating-in-workflows}
 
@@ -29,7 +28,7 @@ Les workflows incluent généralement les étapes qu’une personne doit suivre 
 * [Ouverture d’un élément de workflow pour afficher les détails (et réaliser des actions)](#opening-a-workflow-item-to-view-details-and-take-actions)
 * [Affichage de la charge utile de workflow (plusieurs ressources)](#viewing-the-workflow-payload-multiple-resources)
 
-## Notifications d’actions de workflow disponibles    {#notifications-of-available-workflow-actions}
+## Notifications d’actions de workflow disponibles   {#notifications-of-available-workflow-actions}
 
 Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**), diverses alertes et/ou notifications s’affichent :
 
@@ -286,4 +285,3 @@ Pour afficher la charge utile et les ressources de l’instance de workflow :
    ![wf-78](assets/wf-78.png)
 
 1. Les liens peuvent être utilisés pour ouvrir les pages individuelles.
-
