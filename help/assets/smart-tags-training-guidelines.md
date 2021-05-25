@@ -1,30 +1,29 @@
 ---
 title: Instructions d’entraînement sur le service de contenu dynamique
-description: Former le service AI à l’application de balises actives aux ressources
+description: Formation du service AI pour appliquer des balises intelligentes aux ressources
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
-feature: Tagging,Metadata,Smart Tags
+feature: Balisage, Métadonnées, Balises intelligentes
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 90%
 
 ---
 
-
 # Instructions d’entraînement sur le service de contenu dynamique {#smart-content-service-training-guidelines}
 
-Pour pouvoir marquer efficacement vos images de marque, Smart Content Service exige que les images de formation soient conformes à certaines directives.
+Pour pouvoir baliser efficacement vos images de marque, le service de contenu dynamique exige que les images d’entraînement respectent certaines instructions.
 
 ## Instructions d’entraînement {#guidelines-for-training}
 
 Pour un résultat optimal, les images de votre corpus d’entraînement doivent respecter les instructions suivantes :
 
-**Quantité et taille :** minimum  **30 images par balise**. Minimum 500 pixels sur le côté le plus long.
+**Quantité et taille :**  **30 images au minimum par balise**. Minimum 500 pixels sur le côté le plus long.
 
 **Cohérence** : les images associées à une même balise doivent être visuellement similaires.
 
@@ -63,4 +62,3 @@ Pour rechercher des ressources avec des balises intelligentes (standard ou amél
 >La capacité du service de contenu dynamique à s’entraîner à partir de vos balises et à les appliquer à d’autres images dépend de la qualité des images que vous utilisez pour l’entraînement.
 >
 >Pour obtenir des résultats optimaux, Adobe recommande d’utiliser des images visuellement similaires afin d’entraîner le service pour chaque balise.
-
