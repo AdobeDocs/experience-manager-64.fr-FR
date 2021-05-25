@@ -7,15 +7,14 @@ uuid: ab948f02-3b41-4304-955b-6dd51d27088e
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formulaires adaptatifs
+exl-id: 8e7ba9d2-207f-419b-bcd5-74ba9b14ab92
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
-
 
 # Styles intégrés des composants de formulaire adaptatif {#inline-styling-of-adaptive-form-components}
 
@@ -25,8 +24,8 @@ Vous pouvez définir l’aspect général et le style d’un formulaire adaptati
 
 Pour ajouter des styles intégrés à un composant :
 
-1. Ouvrez votre formulaire dans l’éditeur de formulaire, puis choisissez le mode Style. Pour passer en mode Style, dans la barre d’outils de la page, appuyez sur ![liste déroulante de trame](assets/canvas-drop-down.png) > **Style**.
-1. Sélectionnez un composant dans la page, puis appuyez sur le bouton Modifier ![bouton Modifier](assets/edit-button.png). Les propriétés de style s’ouvrent dans la barre latérale.
+1. Ouvrez votre formulaire dans l’éditeur de formulaires, puis choisissez le mode Style. Pour choisir le mode Style, dans la barre d’outils de la page, appuyez sur ](assets/canvas-drop-down.png)canvas-drop-down![ > **Style**.
+1. Sélectionnez un composant dans la page, puis appuyez sur le bouton Modifier ![edit-button](assets/edit-button.png). Les propriétés de style s’ouvrent dans la barre latérale.
 
    Vous pouvez également sélectionner des composants dans l’arborescence de hiérarchie de formulaire dans la barre latérale. L’arborescence de hiérarchie de formulaire est disponible sous forme d’objets de formulaire dans la barre latérale.
 
@@ -43,10 +42,10 @@ Pour ajouter des styles intégrés à un composant :
    * Effets (ombre, opacité)
    * Avancé (permet de saisir un CSS personnalisé pour le composant)
 
-1. De même, vous pouvez appliquer des styles pour d’autres parties d’un composant, tels que Widget, Légende et Aide.
+1. De même, vous pouvez appliquer des styles pour d’autres parties d’un composant tels que Widget, Légende et Aide.
 1. Appuyez sur **Terminé** pour confirmer les modifications ou sur **Annuler** pour annuler les modifications.
 
-## Exemple : styles en ligne pour un composant de champ {#example-inline-styles-for-a-field-component}
+## Exemple : styles intégrés pour un composant de champ {#example-inline-styles-for-a-field-component}
 
 Les images suivantes illustrent une zone de texte avant et après l’application des styles intégrés.
 
@@ -97,12 +96,11 @@ Notez la modification du style de la zone de texte comme illustré ci-dessous ap
  </tbody> 
 </table>
 
-![Style de zone de texte après l’](assets/applied-style.png)
-**application du style en ligneFigure:Composant de zone de** *texte après l’application des propriétés de style en ligne*
+![Style de zone de texte après l’application du style intégré](assets/applied-style.png) 
+**Figure : Composant de zone de texte** *après application des propriétés de style intégré*
 
 En suivant les étapes ci-dessus, vous pouvez sélectionner et styliser d’autres composants, tels que les panneaux, les boutons d’envoi et les boutons radio.
 
 >[!NOTE]
 >
 >Les propriétés de style varient en fonction du composant sélectionné.
-
