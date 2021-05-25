@@ -10,9 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 exl-id: 43b11355-ee21-421c-8809-cd8a0443a03a
-feature: Content Fragments
+feature: Fragments de contenu
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '470'
@@ -92,9 +91,9 @@ Les conditions requises pour autoriser un utilisateur et/ou un groupe spécifiqu
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` et `jcr:removeChildNodes`, `jcr:removeNode`
 
-Ces privilèges `remove` doivent être [administrés à l&#39;aide de Listes de Contrôle d&#39;accès, dans CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Ces privilèges `remove` doivent être [administrés à l’aide des listes de contrôle d’accès, dans CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-Les privilèges `add` et `modify` peuvent également être administrés en CRXDE Lite ou à l&#39;aide de la console User Management.
+Les privilèges `add` et `modify` peuvent également être gérés en CRXDE Lite ou à l’aide de la console de gestion des utilisateurs.
 
 Par exemple, la définition des privilèges `remove` pour un groupe `content-authors-no-delete` :
 
