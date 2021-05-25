@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: fbb9044a-a737-45f6-8062-0ef5424a92f8
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f60beaae-4082-4165-8a37-9d9c94e360b2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '257'
 ht-degree: 70%
 
 ---
-
 
 # Configuration des paramètres AEM DS {#configuring-aem-ds-settings}
 
@@ -37,7 +36,7 @@ Voici les étapes pour configurer les **[!UICONTROL paramètres AEM DS]** :
 
    ![aem_web_configuration_console](assets/aem_web_configuration_console.png)
 
-1. Dans la fenêtre **[!UICONTROL Configuration de la console Web de Adobe Experience Manager]**, recherchez **[!UICONTROL AEM Paramètres DS]** et cliquez dessus.
+1. Dans la fenêtre **[!UICONTROL Configuration de la console Web Adobe Experience Manager]** , recherchez l’option **[!UICONTROL AEM Paramètres DS]** et cliquez dessus.
 
    ![ds_settings](assets/ds_settings.png)
 
@@ -47,9 +46,9 @@ Voici les étapes pour configurer les **[!UICONTROL paramètres AEM DS]** :
 
 1. Ajoutez les informations suivantes dans les champs respectifs :
 
-   **[!UICONTROL URL]** du serveur de traitement : Le serveur de traitement est le serveur sur lequel le flux de travail Forms ou AEM doit être déclenché. Elle peut être identique à l’URL de l’instance d’auteur AEM ou de l’autre URL du serveur (c’est-à-dire http://localhost:port/).
+   **[!UICONTROL URL]** du serveur de traitement : Le serveur de traitement est le serveur sur lequel le workflow Forms ou AEM doit être déclenché. Elle peut être identique à l’URL de l’instance d’auteur AEM ou de l’autre URL du serveur (c’est-à-dire http://localhost:port/).
 
-   **[!UICONTROL Nom]** d’utilisateur du serveur de traitement : Nom d’utilisateur de l’utilisateur de Workflow  [en fonction de l’URL du serveur utilisé]
+   **[!UICONTROL Nom d’utilisateur du serveur de traitement]** : Nom d’utilisateur de l’utilisateur du workflow  [en fonction de l’URL du serveur utilisé]
 
    **[!UICONTROL Mot de passe du serveur de traitement]** : mot de passe de l’utilisateur du processus
 
