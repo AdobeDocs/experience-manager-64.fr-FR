@@ -1,22 +1,21 @@
 ---
 title: Création de pages
 seo-title: Création de pages
-description: Il existe deux aperçus de la création avec AEM. (1) Premiers pas pour les auteurs - une introduction pour les nouveaux auteurs, et (2) Guide rapide de création de pages - un guide rapide (de haut niveau) des principales actions.
-seo-description: Il existe deux aperçus de la création avec AEM. (1) Premiers pas pour les auteurs - une introduction pour les nouveaux auteurs, et (2) Guide rapide de création de pages - un guide rapide (de haut niveau) des principales actions.
+description: 'La création avec AEM offre deux vues d’ensemble. (1) Premières étapes pour les auteurs : introduction pour les nouveaux auteurs et (2) Guide rapide pour la création de pages : guide rapide (de haut niveau) sur les principales actions.'
+seo-description: 'La création avec AEM offre deux vues d’ensemble. (1) Premières étapes pour les auteurs : introduction pour les nouveaux auteurs et (2) Guide rapide pour la création de pages : guide rapide (de haut niveau) sur les principales actions.'
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
-translation-type: tm+mt
-source-git-commit: 040f776ee6a164cec57685f8a010ec82fd8bb48b
+exl-id: be2465a5-8875-4c9c-bd0d-32631b0fe294
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 78%
 
 ---
-
 
 # Création de pages{#authoring-pages}
 
@@ -49,4 +48,3 @@ Vous pouvez modifier les composants Texte et Image directement sur la page web s
 
 * **Recherche en cours de frappe**
 Dans certains cas (par exemple, lors de la sélection d’un chemin d’accès dans les boîtes de dialogue de modification), la recherche de contenu dans l’interface d’AEM présente des correspondances dynamiques en cours de saisie de la requête.
-
