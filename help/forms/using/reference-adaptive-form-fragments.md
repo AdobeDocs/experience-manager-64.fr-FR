@@ -7,14 +7,13 @@ uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
-translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+exl-id: cceea4d1-8fc2-4118-b22e-91f27e69c7e4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 97%
 
 ---
-
 
 # Fragments de formulaires adaptatifs de référence {#reference-adaptive-form-fragments}
 
@@ -33,7 +32,7 @@ Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fo
 * Conditions générales
 * Conditions générales avec Scribble
 
-Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé sous Formulaires et documents. Pour installer un package, voir [Comment utiliser les packages](/help/sites-administering/package-manager.md).
+Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé sous Formulaires et documents. Pour installer un package, voir [Comment utiliser des packages](/help/sites-administering/package-manager.md).
 
 ![Tous les fragments répertoriés](assets/ootb-frags.png)
 
