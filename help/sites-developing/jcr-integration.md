@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: e6647a11-a36e-4808-bb61-29b2895c6b1d
-translation-type: tm+mt
-source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+exl-id: 3e9727a5-32f8-40ad-aa06-619f50d109b2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 87%
 
 ---
-
 
 # Intégration JCR{#jcr-integration}
 
@@ -24,9 +23,9 @@ ht-degree: 87%
 
 L’API Sling fonctionne à un niveau plus avancé et plus abstrait que l’API JCR. Ainsi, votre code est plus réutilisable et indépendant du stockage sous-jacent. Cela facilite l’ajout de données virtuelles externes via le mécanisme ResourceProvider si nécessaire.
 
-## Éviter les requêtes autant que possible  {#avoid-queries-wherever-possible}
+## Éviter les requêtes autant que possible {#avoid-queries-wherever-possible}
 
-Pour récupérer des données, il est toujours plus simple de naviguer dans le référentiel plutôt que d’exécuter une requête. Dans certains cas, les requêtes sont nécessaires, par exemple, une requête d’utilisateur final ou s’il faut trouver du contenu structuré à travers le référentiel entier, mais pour toutes les autres situations, il est préférable de naviguer jusqu’aux nœuds demandés. Les requêtes doivent toujours être évitées dans la logique de rendu telle que les composants de navigation, une &quot;liste d’éléments récente&quot;, le nombre d’éléments, etc. Dans ces cas, il est préférable de parcourir la hiérarchie ou de pré-mettre en cache le résultat afin qu’il puisse être utilisé directement lors du rendu.
+Pour récupérer des données, il est toujours plus simple de naviguer dans le référentiel plutôt que d’exécuter une requête. Dans certains cas, les requêtes sont nécessaires, par exemple, une requête d’utilisateur final ou s’il faut trouver du contenu structuré à travers le référentiel entier, mais pour toutes les autres situations, il est préférable de naviguer jusqu’aux nœuds demandés. Les requêtes doivent toujours être évitées dans la logique de rendu, comme les composants de navigation, une &quot;liste d’éléments récents&quot;, le nombre d’éléments, etc. Dans ces cas, il est préférable de parcourir la hiérarchie ou de pré-mettre en cache le résultat afin qu’il puisse être utilisé directement lors du rendu.
 
 ## Limiter la portée de l’observation JCR  {#restrict-the-scope-of-jcr-observation}
 
