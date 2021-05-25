@@ -2,16 +2,15 @@
 title: Extension de la recherche de ressources
 description: Découvrez comment étendre la recherche dans AEM Assets au-delà des recherches prêtes à l’emploi de ressources par chaînes.
 contentOwner: AG
-feature: Search
+feature: Rechercher
 role: Developer
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '831'
 ht-degree: 92%
 
 ---
-
 
 # Extension de la Recherche des ressources {#extending-assets-search}
 
@@ -45,7 +44,7 @@ Vous pouvez ajouter des onglets de recherche supplémentaires en les configurant
 
    >[!NOTE]
    >
-   >Lorsque vous créez un second panneau siteadminsearch, veillez à définir une propriété `id` afin d’éviter les conflits de formulaires.
+   >Lorsque vous créez un deuxième panneau siteadminsearchpanel, veillez à définir une propriété `id` afin d’éviter les conflits de formulaire.
 
 ## Création de prédicats personnalisés {#creating-custom-predicates}
 
@@ -259,44 +258,44 @@ Pour créer un prédicat de groupe, procédez comme suit :
 
 Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigurés.
 
-### FulltextPredicate    {#fulltextpredicate}
+### FulltextPredicate   {#fulltextpredicate}
 
-| Propriétés | Type | Description |
+| Propriété | Type | Description |
 |---|---|---|
 | predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `fulltext` |
-| searchCallback | Fonction | Rappel pour le déclenchement de la recherche sur le événement `keyup`. La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch` |
+| searchCallback | Fonction | Rappel pour déclencher une recherche sur l’événement `keyup`. La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
-| Propriétés | Type | Description |
+| Propriété | Type | Description |
 |---|---|---|
-| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `property` |
+| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `property` |
 | propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:title` |
 | defaultValue | Chaîne | Valeur par défaut préremplie. |
 
 ### PathPredicate {#pathpredicate}
 
-| Propriétés | Type | Description |
+| Propriété | Type | Description |
 |---|---|---|
-| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `path` |
+| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `path` |
 | rootPath | Chaîne | Chemin racine du prédicat. La valeur par défaut est `/content/dam` |
 | pathFieldPredicateName | Chaîne | La valeur par défaut est `folder` |
 | showFlatOption | Booléen | Indicateur pour afficher la case à cocher `search in subfolders`. La valeur par défaut est « true ». |
 
 ### DatePredicate {#datepredicate}
 
-| Propriétés | Type | Description |
+| Propriété | Type | Description |
 |---|---|---|
-| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
+| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
 | propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:content/jcr:lastModified` |
 | defaultValue | Chaîne | Valeur par défaut préremplie |
 
 ### OptionsPredicate {#optionspredicate}
 
-| Propriétés | Type | Description |
+| Propriété | Type | Description |
 |---|---|---|
 | titre | Chaîne | Ajoute un titre supérieur supplémentaire |
-| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
+| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
 | propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:content/metadata/cq:tags` |
 | collapse | Chaîne | Réduire par niveau. La valeur par défaut est `level1` |
 | triggerSearch | Booléen | Indicateur de déclenchement de la recherche lors de la vérification. Par défaut : « false » |
