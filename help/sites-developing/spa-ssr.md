@@ -10,34 +10,33 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 exl-id: 89e45231-885a-4d35-839b-2b50239503ad
-translation-type: tm+mt
 source-git-commit: cc31f2fa2f79154749776260f7621f6631e9db4a
 workflow-type: tm+mt
 source-wordcount: '1781'
-ht-degree: 61%
+ht-degree: 62%
 
 ---
 
 # SPA et rendu côté serveur {#spa-and-server-side-rendering}
 
 >[!NOTE]
->La fonction Éditeur d&#39;application à page unique (SPA) requiert [AEM Service Pack 2](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html) 6.4 ou plus récent.
+>La fonction Éditeur d’application sur une seule page (SPA) requiert [AEM Service Pack 2](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html) ou une version plus récente.
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur la structure (par ex. Réaction ou Angular).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
 >[!NOTE]
 >
->AEM version 6.4.5.0 ou ultérieure est requise pour utiliser les fonctions de rendu SPA côté serveur, comme décrit dans ce document.
+>AEM version 6.4.5.0 ou ultérieure est requise pour utiliser les fonctionnalités de rendu SPA côté serveur comme décrit dans ce document.
 
 ## Présentation {#overview}
 
-Les applications d’une seule page (SPA) peuvent offre à l’utilisateur une expérience riche et dynamique qui réagit et se comporte de manière familière, souvent comme les applications natives. [À cette fin, le client doit charger le contenu à l’avance, puis se charger de la lourde tâche consistant à gérer l’interaction utilisateur](/help/sites-developing/spa-walkthrough.md#how-does-a-spa-work), réduisant ainsi le volume de communication nécessaire entre le client et le serveur, ce qui rend l’application plus réactive.
+Les applications d’une seule page (SPA) peuvent offrir à l’utilisateur des expériences riches et dynamiques qui réagissent et se comportent de manière familière, souvent tout comme les applications natives. [À cette fin, le client doit charger le contenu à l’avance, puis se charger de la lourde tâche consistant à gérer l’interaction utilisateur](/help/sites-developing/spa-walkthrough.md#how-does-a-spa-work), réduisant ainsi le volume de communication nécessaire entre le client et le serveur, ce qui rend l’application plus réactive.
 
 Toutefois, cela peut entraîner des temps de chargement initiaux plus longs, en particulier si la SPA est volumineuse et riche en contenu. Pour optimiser les temps de chargement, une partie du contenu peut être rendue côté serveur. L’utilisation du rendu côté serveur (SSR) peut accélérer le chargement initial de la page, puis transmettre plus de rendu au client.
 
 ## Quand utiliser le rendu côté serveur {#when-to-use-ssr}
 
-Le rendu côté serveur n’est pas requis pour tous les projets. Bien que AEM appuie pleinement la stratégie SSR JS pour SPA, l&#39;Adobe ne recommande pas de la mettre en oeuvre systématiquement pour chaque projet.
+Le rendu côté serveur n’est pas requis pour tous les projets. Bien qu’AEM prenne pleinement en charge le rendu côté serveur JS pour les SPA, Adobe ne recommande pas de le mettre en œuvre systématiquement pour chaque projet.
 
 Lorsque vous décidez de mettre en œuvre le rendu côté serveur, vous devez d’abord estimer la complexité, les efforts et les coûts supplémentaires que ce rendu représente de manière réaliste pour le projet, y compris la maintenance à long terme. Une architecture SSR ne doit être choisie que lorsque la valeur ajoutée dépasse clairement les coûts estimés.
 
@@ -46,11 +45,11 @@ Le rendu côté serveur fournit habituellement une certaine valeur lorsque la r�
 * **SEO :** est-il toujours nécessaire d’utiliser le rendu côté serveur pour que votre site soit correctement indexé par les moteurs de recherche qui génèrent du trafic ? Gardez à l’esprit que les principaux robots de moteur de recherche évaluent désormais JS.
 * **Vitesse de la page :** le rendu côté serveur améliore-t-il la vitesse de façon mesurable dans les environnements réels et ajoute-t-il à l’expérience globale de l’utilisateur ?
 
-Ce n&#39;est que lorsqu&#39;au moins une de ces deux questions reçoit une réponse avec un &quot;oui&quot; clair pour votre projet que l&#39;Adobe recommande la mise en oeuvre de la SSR. Les sections suivantes décrivent comment utiliser Adobe I/O Runtime.
+Ce n’est que lorsqu’au moins une de ces deux questions reçoit une réponse &quot;oui&quot; claire pour votre projet que l’Adobe recommande la mise en oeuvre du rendu côté serveur. Les sections suivantes décrivent comment utiliser Adobe I/O Runtime.
 
 ## Adobe I/O Runtime {#adobe-io-runtime}
 
-Si vous êtes [certain que votre projet nécessite la mise en oeuvre de SSR](#when-to-use-ssr), la solution recommandée par l’Adobe est d’utiliser Adobe I/O Runtime.
+Si vous êtes [certain que votre projet nécessite la mise en oeuvre du rendu côté serveur](#when-to-use-ssr), la solution recommandée par l’Adobe est d’utiliser Adobe I/O Runtime.
 
 Pour plus d’informations sur Adobe I/O Runtime, voir
 
@@ -60,19 +59,19 @@ Pour plus d’informations sur Adobe I/O Runtime, voir
 Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé afin d’implémenter la technologie du rendu côté serveur pour votre SPA dans deux modèles différents :
 
 * [Flux de communication piloté par AEM](#aem-driven-communication-flow)
-* [Flux de communication piloté par l&#39;Adobe I/O-exécution](#adobe-io-driven-communication-flow)
+* [Flux de communication piloté par l’Adobe I/O-exécution](#adobe-io-driven-communication-flow)
 
 >[!NOTE]
 >
->Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (stage, prod, testing, etc.). Cela permet de créer des modèles de cycle de vie de développement de systèmes (SDLC) standard avec différentes versions d’une application unique déployée sur différents environnements. Pour plus d&#39;informations, consultez le document [CI/CD pour Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md).
+>Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Cela permet d’obtenir des modèles de cycle de vie de développement de systèmes classiques avec différentes versions d’une seule application déployée dans différents environnements. Pour plus d’informations, consultez le document [CI/CD pour les applications Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) .
 >
->Un espace de travail distinct n’est pas nécessaire par instance (auteur, publication), sauf s’il existe des différences dans l’implémentation d’exécution par type d’instance.
+>Un espace de travail distinct n’est pas nécessaire par instance (auteur, publication), sauf s’il existe des différences dans l’implémentation du runtime par type d’instance.
 
-## Configuration du rendu de contenu distant {#remote-content-renderer-configuration}
+## Configuration du moteur de rendu de contenu distant {#remote-content-renderer-configuration}
 
-AEM doit savoir à quel emplacement le contenu rendu distant peut être récupéré. [quel que soit le modèle que vous choisissiez d&#39;implémenter pour SSR](#adobe-io-runtime), vous devez spécifier pour AEM comment accéder à ce service de rendu à distance.
+AEM doit savoir à quel emplacement le contenu rendu distant peut être récupéré. Quel que soit le [modèle que vous choisissiez d’implémenter pour SSR](#adobe-io-runtime), vous devrez indiquer pour AEM comment accéder à ce service de rendu distant.
 
-Cela s’effectue via le **** service RemoteContentRenderer – Configuration d’usine OSGi . Recherchez la chaîne « RemoteContentRenderer » dans la console de configuration de la console web à `http://<host>:<port>/system/console/configMgr`.
+Cela s’effectue via le **** service RemoteContentRenderer – Configuration d’usine OSGi. Recherchez la chaîne « RemoteContentRenderer » dans la console de configuration de la console web à `http://<host>:<port>/system/console/configMgr`.
 
 ![](assets/rendererconfig.png)
 
@@ -87,28 +86,28 @@ Les champs suivants sont disponibles pour la configuration :
 
 >[!NOTE]
 >
->Que vous choisissiez d&#39;implémenter le [flux de communication AEM dirigé](#aem-driven-communication-flow) ou le [flux dirigé par Adobe I/O Runtime](#adobe-io-driven-communication-flow), vous devez définir une configuration de rendu de contenu distant.
+>Que vous choisissiez de mettre en oeuvre le [flux de communication AEM](#aem-driven-communication-flow) ou le [flux piloté par Adobe I/O Runtime](#adobe-io-driven-communication-flow), vous devez définir une configuration de moteur de rendu de contenu distant.
 >
 >Cette configuration doit également être définie si vous choisissez [d’utiliser un serveur Node.js personnalisé](#using-node-js).
 
 >[!NOTE]
 >
->Cette configuration exploite le [Remote Content Renderer](#remote-content-renderer), qui dispose d&#39;options d&#39;extension et de personnalisation supplémentaires.
+>Cette configuration exploite le moteur [Remote Content Renderer](#remote-content-renderer), qui dispose d’options d’extension et de personnalisation supplémentaires.
 
 ## Flux de communication piloté par AEM {#aem-driven-communication-flow}
 
-Lors de l’utilisation de la technologie SSR, le processus d’interaction de composant [](/help/sites-developing/spa-overview.md#workflow) de SPA dans AEM inclut une phase au cours de laquelle le contenu initial de l’application est généré par Adobe I/O Runtime.
+Lors de l’utilisation du rendu côté serveur, le [processus d’interaction des composants](/help/sites-developing/spa-overview.md#workflow) de SPA dans AEM inclut une phase au cours de laquelle le contenu initial de l’application est généré par Adobe I/O Runtime.
 
 1. Le navigateur demande le contenu du rendu côté serveur à AEM.
 1. AEM publie le modèle dans Adobe I/O Runtime.
 1. Adobe I/O Runtime renvoie le contenu généré
 1. AEM traite le code HTML renvoyé par Adobe I/O Runtime via le modèle HTL du composant de page de serveur principal.
 
-![rendu côté serveur-cms-drivenaemnode](assets/server-side-rendering-cms-drivenaemnode-adobeio.png)
+![server-side-rendering-cms-drivenaemnode](assets/server-side-rendering-cms-drivenaemnode-adobeio.png)
 
 ### Flux de communication piloté par Adobe I/O Runtime {#adobe-io-driven-communication-flow}
 
-La section [Flux de communication AEM](#aem-driven-communication-flow) décrit l&#39;implémentation standard et recommandée du rendu côté serveur en ce qui concerne SPA dans l&#39;AEM, où l&#39; effectue le démarrage et la diffusion du contenu.
+La section [Flux de communication piloté par l’AEM](#aem-driven-communication-flow) décrit l’implémentation standard et recommandée du rendu côté serveur en ce qui concerne SPA dans l’, où l’ effectue le démarrage et la diffusion du contenu.
 
 Une autre solution consiste à mettre en œuvre le rendu côté serveur de sorte qu’Adobe I/O Runtime soit responsable du démarrage, ce qui inverse le flux de communication.
 
@@ -116,14 +115,14 @@ Les deux modèles sont valides et pris en charge par AEM. Toutefois, il faut ten
 
 | Démarrage | Avantages | Inconvénients |
 |---|---|---|
-| Via AEM | AEM gère les bibliothèques d&#39;injection lorsque cela est nécessaire<br>Les ressources doivent uniquement être conservées sur les AEM | Solution pouvant être peu connue des développeurs de SPA |
-| Via Adobe I/O Runtime | Solution mieux connue des développeurs SPA | Les ressources de bibliothèque cliente requises par l&#39;application, telles que CSS et JavaScript, devront être mises à disposition par le développeur AEM via la propriété [`allowProxy`](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)<br>Les ressources doivent être synchronisées entre AEM et Adobe I/O Runtime<br>Pour permettre la création de la SPA, un serveur proxy pour Adobe I/O Runtime peut être nécessaire. |
+| Via AEM | AEM gère les bibliothèques d’injection lorsque cela est nécessaire<br>Les ressources ne doivent être conservées que sur AEM | Solution pouvant être peu connue des développeurs de SPA |
+| Via Adobe I/O Runtime | Solution mieux connue des développeurs SPA | Les ressources clientlib requises par l’application, telles que CSS et JavaScript, doivent être mises à disposition par le développeur de l’AEM via la [`allowProxy` propriété](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)<br>Les ressources doivent être synchronisées entre AEM et Adobe I/O Runtime<br>Pour permettre la création de la version de la base, un serveur proxy pour Adobe I/O Runtime peut être nécessaire. |
 
 ## Planification du rendu côté serveur {#planning-for-ssr}
 
-En règle générale, seule une partie d’une application doit être rendue côté serveur. L’exemple courant est le contenu qui s’affichera au-dessus du pli lors du chargement initial de la page doit être rendu côté serveur. Cela permet de gagner du temps en diffusant vers le contenu déjà rendu du client. Lorsque l’utilisateur interagit avec la SPA, le contenu supplémentaire est rendu par le client.
+En règle générale, seule une partie d’une application doit être rendue côté serveur. L’exemple courant est que le contenu qui s’affichera au-dessus du pli lors du chargement initial de la page doit être rendu côté serveur. Cela permet de gagner du temps en diffusant vers le contenu déjà rendu du client. Lorsque l’utilisateur interagit avec la SPA, le contenu supplémentaire est rendu par le client.
 
-Lorsque vous envisagez d’implémenter le rendu côté serveur pour votre SPA, vous devez examiner les parties de l’application qui nécessiteront une SSR.
+Lorsque vous envisagez d’implémenter le rendu côté serveur pour votre SPA, vous devez examiner les parties de l’application qui nécessiteront un rendu côté serveur.
 
 ## Développement d’une SPA avec le rendu côté serveur {#developing-an-spa-using-ssr}
 
@@ -137,28 +136,28 @@ Le rendu côté serveur pour les SPA dans AEM nécessite Adobe I/O Runtime, qui 
 
 Tout comme AEM prend en charge les frameworks SPA Angular et React clé en main, le rendu côté serveur est également pris en charge pour les applications Angular et React. Pour plus d’informations, consultez la documentation NPM relative aux deux frameworks.
 
-* Réagir : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
+* React : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 * Angular : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
-Pour un exemple simpliste, reportez-vous à l&#39;[application de Journal We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Il rend l’intégralité du côté serveur d’applications. Bien qu&#39;il ne s&#39;agisse pas d&#39;un exemple concret, il illustre bien ce qui est nécessaire pour mettre en oeuvre la RSS.
+Pour un exemple simpliste, reportez-vous à l’[application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Il effectue le rendu de l’ensemble du serveur d’applications. Bien qu’il ne s’agisse pas d’un exemple concret, il illustre ce qui est nécessaire à la mise en oeuvre du rendu côté serveur.
 
 >[!CAUTION]
->L&#39;application de Journal [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) n&#39;est utilisée qu&#39;à des fins de démonstration et utilise donc Node.js comme exemple simple au lieu du Adobe I/O Runtime recommandé. Cet exemple ne doit être utilisé pour aucun travail de projet.
+>[L’application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) est destinée uniquement à des fins de démonstration et utilise donc Node.js comme exemple simple au lieu de la version Adobe I/O Runtime recommandée. Cet exemple ne doit être utilisé pour aucun travail de projet.
 
 >[!NOTE]
 >Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html), qui prend en charge les projets SPA à l’aide de React ou d’Angular et tire parti du SDK SPA.
 
 ## Utilisation de Node.js {#using-node-js}
 
-Adobe I/O Runtime est la solution recommandée pour la mise en oeuvre de la technologie SSR pour SPA en AEM.
+Adobe I/O Runtime est la solution recommandée pour la mise en oeuvre du rendu côté serveur pour SPA dans AEM.
 
-Pour les instances d’AEM prédéfinie, il est également possible d’implémenter une SSR à l’aide d’une instance personnalisée de Node.js de la même manière que décrit ci-dessus. Bien que cet aspect soit pris en charge par l’Adobe, il n’est pas recommandé.
+Pour les instances d’AEM sur site, il est également possible d’implémenter le rendu côté serveur à l’aide d’une instance Node.js personnalisée de la même manière que décrit ci-dessus. Bien que cette fonctionnalité soit prise en charge par Adobe, elle n’est pas recommandée.
 
 Node.js n’est pas pris en charge pour les instances d’AEM hébergées par Adobe.
 
 >[!NOTE]
 >
->Si SSR doit être implémenté via Node.js, l’Adobe recommande une instance distincte de Node.js pour chaque environnement AEM (auteur, publication, étape, etc.).
+>Si le rendu côté serveur doit être implémenté via Node.js, Adobe recommande une instance Node.js distincte pour chaque environnement AEM (auteur, publication, évaluation, etc.).
 
 ## Moteur de rendu de contenu distant {#remote-content-renderer}
 
