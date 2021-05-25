@@ -9,14 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
-translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+exl-id: ab5233dd-182e-4871-997f-b2142901bce7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 87%
 
 ---
-
 
 # Utiliser HSM pour signer ou certifier des documents numériquement {#use-hsm-to-digitally-sign-or-certify-documents}
 
@@ -29,7 +28,7 @@ Adobe Experience Manager Forms peut utiliser les informations d’identification
 1. Créez un alias pour le module HSM ou etoken dans la console Web AEM.
 1. Utilisez les API du service DocAssurance pour signer ou certifier les documents avec les clés numériques stockées sur le module.
 
-## Avant de configurer les modules HSM ou etoken avec AEM Forms{#configurehsmetoken} 
+## Avant de configurer les modules HSM ou etoken avec AEM Forms  {#configurehsmetoken}
 
 * Installez le [module complémentaire AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
 * Installez et configurez le logiciel client du HSM ou etoken sur le même ordinateur que le serveur AEM Le logiciel client est requis pour communiquer avec les modules HSM et etoken.
@@ -40,7 +39,7 @@ Adobe Experience Manager Forms peut utiliser les informations d’identification
 >
 >Sous Microsoft Windows, les clients à 32 bits uniquement de LunaSA ou EToken sont pris en charge.
 
-## Activer le service DocAssurance  {#configuredocassurance}
+## Activer le service DocAssurance {#configuredocassurance}
 
 Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes suivantes pour activer le service :
 
@@ -50,7 +49,7 @@ Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes 
 
    >[!NOTE]
    >
-   >Si vous avez utilisé le fichier [AEM_root]\crx-quickstart\bin\start.bat pour début de l’instance AEM, ouvrez le fichier [AEM_root]\crx-quickstart\sling.properties pour le modifier.
+   >Si vous avez utilisé le fichier [AEM_root]\crx-quickstart\bin\start.bat pour démarrer l’instance AEM, ouvrez le fichier [racine_de_l’AEM]\crx-quickstart\sling.properties pour le modifier.
 
 1. Ajoutez ou remplacez les propriétés suivantes au fichier sling.properties :
 
@@ -76,13 +75,13 @@ Effectuez les étapes suivantes pour configurer des certificats :
 
 1. Sur la page **Modifier les paramètres utilisateur**, cliquez sur **Gérer le KeyStore**.
 
-1. Dans la boîte de dialogue Gestion du KeyStore, développez l&#39;option **Ajouter la clé privée à partir du fichier Key Store** et fournissez un alias. L’alias est utilisé pour effectuer l’opération Reader Extensions.
-1. Pour télécharger le fichier de certificat, cliquez sur **Sélectionner le fichier de stockage de clés** et téléchargez un fichier `.pfx`.
+1. Dans la boîte de dialogue Gestion du KeyStore, développez l’option **Ajouter la clé privée à partir du fichier de magasin de clés** et fournissez un alias. L’alias est utilisé pour effectuer l’opération Reader Extensions.
+1. Pour charger le fichier de certificat, cliquez sur **Sélectionner le fichier de magasin de clés** et chargez un fichier `.pfx`.
 1. Ajoutez les **mot de passe du magasin de clés**, **mot de passe de la clé privée** et **alias de la clé privée** associés au certificat dans les champs respectifs. Cliquez sur **Envoyer**.
 
    >[!NOTE]
    >
-   >Pour déterminer l&#39;alias de clé privée P **d&#39;un certificat, vous pouvez utiliser la commande Java keytool : `keytool -list -v -keystore [keystore-file] -storetype pkcs12`**
+   >Pour déterminer le P **alias de clé privée** d’un certificat, vous pouvez utiliser la commande Java keytool : `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
    >[!NOTE]
    >
@@ -94,13 +93,13 @@ Effectuez les étapes suivantes pour configurer des certificats :
 
 >[!NOTE]
 >
->Pour passer à l’environnement de production, remplacez les informations d’identification d’évaluation par celles de production. Veillez à supprimer vos anciennes informations d’identification d’extensions de Reader avant de mettre à jour des informations d’identification expirées ou d’évaluation.
+>Pour passer à l’environnement de production, remplacez les informations d’identification d’évaluation par celles de production. Veillez à supprimer vos anciennes informations d’identification Reader Extensions avant de mettre à jour des informations d’identification expirées ou d’évaluation.
 
-## Création d’un alias pour le périphérique{#configuredeviceinaemconsole} 
+## Création d’un alias pour le périphérique  {#configuredeviceinaemconsole}
 
 L’alias contient l’ensemble des paramètres dont a besoin un périphérique HSM ou etoken. Suivez les instructions ci-dessous pour créer un alias pour les informations d’identification de chaque module HSM ou etoken qu’utilisent eSign ou les signatures numériques :
 
-1. Ouvrez la console AEM. L’URL par défaut de la console AEM est https://&lt;hôte>:&lt;port>/system/console/configMgr
+1. Ouvrez la console AEM. L’URL par défaut de la console AEM est https://&lt;host>:&lt;port>/system/console/configMgr
 1. Ouvrez le **Service de configuration des informations d’identification HSM** et spécifiez les valeurs des champs suivants :
 
    * **Alias d’authentification** : spécifiez une chaîne utilisée pour identifier l’alias. Cette valeur est utilisée en tant que propriété pour certaines opérations de signatures numériques, comme l’opération de saisie du champ de signature.
@@ -115,7 +114,7 @@ L’alias contient l’ensemble des paramètres dont a besoin un périphérique 
 
    Cliquez sur **Enregistrer**. Le module de sécurité matérielle est configuré pour AEM Forms. Désormais, vous pouvez utiliser le module de sécurité matérielle avec AEM Forms pour signer ou certifier des documents.
 
-## Utiliser les API du service DocAssurance pour signer ou certifier un document avec des clés numériques stockées sur le module   {#programatically}
+## Utiliser les API du service DocAssurance pour signer ou certifier un document avec des clés numériques stockées sur le module  {#programatically}
 
 L’exemple de code suivant utilise HSM ou etoken pour signer ou certifier un document.
 
