@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9086b14c-cd75-4fc9-928e-81c8ad6b6292
-translation-type: tm+mt
-source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
+exl-id: c4b0211f-aaaf-44e5-89bb-6b951dbdb98f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 93%
 
 ---
-
 
 # Premières étapes pour les auteurs{#first-steps-for-authors}
 
@@ -24,9 +23,9 @@ Cette section vous donne un aperçu des tâches principales que vous exécuterez
 
 Elle traite des sujets suivants :
 
-* [Prise en main](#getting-started)  - Détail de la séquence de événements de base dont vous avez besoin pour créer et publier votre première page.
+* [Prise en main](#getting-started)  - Détails de la séquence de base des événements dont vous avez besoin pour créer et publier votre première page.
 
-* [Autres actions](#further-actions)  - Suivez les nombreuses autres actions que vous pouvez utiliser lors de la création.
+* [Autres actions](#further-actions)  : exécutez sur les nombreuses autres actions que vous pouvez utiliser lors de la création.
 
 ## Présentation {#overview}
 
@@ -44,7 +43,7 @@ Le contenu de votre site web est conservé dans une structure en arborescence. P
 
 Avant de procéder à l’édition, vous devez [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page).
 
-### Ouverture d’une page  {#opening-a-page}
+### Ouverture d’une page {#opening-a-page}
 
 Pour la plupart des opérations (l’édition par exemple), vous devez [ouvrir une page](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 
@@ -59,9 +58,9 @@ Si votre instance comprend déjà des pages ou si vous venez d’en créer une, 
 
 * [Annulation et rétablissement des modifications de page](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Utilisation du mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode) (pour avoir un aperçu du contenu avant publication)
-* [Verrouillage d’une page](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Verrouillage d’une page   ](/help/sites-authoring/editing-content.md#locking-a-page)
 
-### Publication d’une page  {#publishing-a-page}
+### Publication d’une page {#publishing-a-page}
 
 Dès que vous avez fini de modifier la page, vous pouvez [la publier (ou l’activer)](/help/sites-authoring/publishing-pages.md) afin que les visiteurs de votre site web puissent y accéder :
 
