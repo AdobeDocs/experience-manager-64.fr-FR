@@ -9,7 +9,6 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
-translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 workflow-type: tm+mt
 source-wordcount: '783'
@@ -24,9 +23,9 @@ Dans une SPA, le composant de page ne fournit pas les éléments HTML de ses com
 
 >[!NOTE]
 >
->La fonction Éditeur d’application à page unique (SPA) nécessite AEM Service Pack 2 6.4 ou version ultérieure.
+>La fonction Éditeur d’application sur une seule page (SPA) requiert AEM Service Pack 2 ou version ultérieure.
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
 ## Présentation {#introduction}
 
@@ -93,9 +92,9 @@ Propriétés des ressources de métadonnées qui décrivent le contenu SPA :
 
 >[!CAUTION]
 >
->Ce document utilise l&#39;application de Journal We.Retail à des fins de démonstration uniquement. Ce dernier ne doit pas être utilisé dans le cadre d’un projet.
+>Ce document utilise l’application We.Retail Journal à des fins de démonstration uniquement. Ce dernier ne doit pas être utilisé dans le cadre d’un projet.
 >
->Tout projet AEM doit tirer parti de l&#39;archétype de projet [AEM ](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html), qui prend en charge les projets SPA à l&#39;aide de React ou d&#39;Angular et qui exploite le SDK . Tous les projets  sur l&#39; doivent être basés sur l&#39;archétype Maven pour le kit de démarrage de l&#39;.
+>Tout projet AEM doit tirer parti de l’[AEM archétype de projet](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html), qui prend en charge les projets SPA à l’aide de React ou de l’Angular et tire parti du SDK . Tous les projets  sur doivent être basés sur l’ archétype Maven pour le kit de démarrage de.
 
 ## Synchronisation des recouvrements de l’éditeur de page {#page-editor-overlay-synchronization}
 
@@ -108,4 +107,4 @@ Lorsque les fonctionnalités de routage sont activées, on part du principe que 
 * `structureDepth` : nombre correspondant à la profondeur de l’arborescence exportée
 * `structurePatterns` : regex ou tableau de regex correspondant à la page à exporter
 
-Cela peut être indiqué dans l&#39;exemple de contenu SPA dans `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`.
+Cela peut être illustré dans l’exemple de contenu SPA dans `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`.
