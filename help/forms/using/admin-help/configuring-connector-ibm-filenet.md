@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
-translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+exl-id: 3a3d59c2-6811-4513-8384-aa77fdc38686
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 94%
 
 ---
-
 
 # Configuration de Connector for IBM FileNet {#configuring-connector-for-ibm-filenet}
 
@@ -26,7 +25,7 @@ Le connecteur pour IBM FileNet permet la communication entre AEM forms et IBM Fi
 >
 >Dans les versions précédentes, il était possible de stocker des actifs dans un référentiel ECM. Dans cette version, les actifs sont stockés dans le référentiel natif d’AEM forms et les services du fournisseur de référentiel sont ignorés. La migration d’actifs d’un référentiel ECM vers le référentiel AEM forms s’effectue lors de la mise à niveau vers AEM forms. Pour plus d’informations, consultez le guide de mise à niveau d’AEM forms correspondant à votre serveur d’applications.
 
-## Configuration de la connexion à Content Engine  {#configure-the-connection-to-the-content-engine}
+## Configuration de la connexion à Content Engine {#configure-the-connection-to-the-content-engine}
 
 IBM FileNet P8 Content Engine fournit des services logiciels permettant de gérer le contenu d’entreprise et les objets commerciaux définis par les clients dans les référentiels de contenu FileNet.
 
@@ -81,11 +80,11 @@ Vous pouvez configurer le fournisseur de services de référentiel à utiliser a
 
 Les options suivantes sont disponibles :
 
-**Nom du fournisseur de référentiel actuel :** nom du prestataire de référentiel actuel
+**Nom du fournisseur de référentiel actuel :** nom du fournisseur de services de référentiel actuel.
 
-**Fournisseur du référentiel IBM FileNet :** fait du fournisseur du référentiel FileNet le fournisseur du référentiel pour le référentiel. Cette option est obsolète.
+**Fournisseur du référentiel IBM FileNet :** fait du fournisseur du référentiel FileNet le fournisseur du référentiel. Cette option est obsolète.
 
-**fournisseur de référentiel :** fait du fournisseur de référentiel natif le fournisseur de référentiel pour le référentiel
+**fournisseur de référentiel :** fait du fournisseur de référentiel natif le fournisseur du référentiel.
 
 >[!NOTE]
 >
