@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: d6b2f389-bff4-481d-93bf-87f56114a91b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 97%
 
 ---
-
 
 # Synchronisation d’annuaires {#synchronizing-directories}
 
@@ -40,7 +39,7 @@ Vous pouvez également indiquer s’il convient d’envoyer des informations rel
 >
 >Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Pour savoir comment configurer Content Services (obsolète), consultez [Administration de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
-## Activation de la synchronisation d’annuaires Delta  {#enable-delta-directory-synchronization}
+## Activation de la synchronisation d’annuaires Delta {#enable-delta-directory-synchronization}
 
 La synchronisation différentielle des annuaires améliore l’efficacité de la synchronisation des annuaires. Lorsque la synchronisation différentielle des annuaires est activée, User Management synchronise uniquement les utilisateurs et les groupes qui ont été ajoutés et mis à jour depuis la dernière synchronisation.
 
@@ -100,4 +99,3 @@ L’utilisation de l’expression cron est basée sur le système de planificati
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Abandonner. Ce bouton apparaît uniquement lorsqu’une synchronisation d’annuaires est en cours.
-
