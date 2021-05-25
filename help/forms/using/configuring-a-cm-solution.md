@@ -1,22 +1,21 @@
 ---
 title: Configuration de la solution Correspondence Management
 seo-title: Configuration de la solution Correspondence Management
-description: Découvrez comment définir une URL d’instance d’auteur pour la restauration de la version de l’instance d’auteur et définir l’URL d’instance de publication pour le gestionnaire d’activations d’instances publiques.
-seo-description: Découvrez comment définir une URL d’instance d’auteur pour la restauration de la version de l’instance d’auteur et définir l’URL d’instance de publication pour le gestionnaire d’activations d’instances publiques.
+description: Découvrez comment définir une URL d’instance d’auteur pour la restauration de la version de l’instance d’auteur et définir l’URL de l’instance de publication pour le gestionnaire d’activation de l’instance publique.
+seo-description: Découvrez comment définir une URL d’instance d’auteur pour la restauration de la version de l’instance d’auteur et définir l’URL de l’instance de publication pour le gestionnaire d’activation de l’instance publique.
 uuid: 76b25004-fe47-44d7-9bed-7c0fd963306b
 topic-tags: correspondence-management
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Correspondence Management
+exl-id: a062957d-a526-4c4b-bbc5-0cda8ab007a3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 66%
 
 ---
-
 
 # Configuration de la solution Correspondence Management {#configuring-a-correspondence-management-solution}
 
@@ -24,9 +23,9 @@ ht-degree: 66%
 
 Procédez aux étapes suivantes pour définir une URL d’instance d’auteur pour la restauration de la version de l’instance d’auteur :
 
-1. Accédez à *https://:&lt;hôte de publication>:&lt;port de publication>/lc/system/console/configMgr*. Connectez-vous avec les informations d’identification d’utilisateur de la console de gestion OSGi. Les informations d’identification d’administrateur par défaut sont/admin.
+1. Accédez à *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Connectez-vous avec les informations d’identification d’utilisateur de la console de gestion OSGi. Les informations d’identification d’administrateur par défaut sont/admin.
 1. Recherchez l’icône **[!UICONTROL Modifier]** située en regard du paramètre **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]** et cliquez dessus.
-1. Dans le champ **[!UICONTROL VersionRestoreManager Author URL]**, spécifiez l’URL de l’instance d’auteur de VersionRestoreManager.
+1. Dans le champ **[!UICONTROL VersionRestoreManager Author URL]** , spécifiez l’URL de l’instance d’auteur de VersionRestoreManager.
 
    **Chaîne** d’URL :
 
@@ -34,7 +33,7 @@ Procédez aux étapes suivantes pour définir une URL d’instance d’auteur po
 
    >[!NOTE]
    >
-   >S’il existe plusieurs instances d’auteur (en grappe) devant un équilibreur de charge, spécifiez l’URL de l’équilibreur de charge dans le champ **[!UICONTROL VersionRestoreManager Author URL]**.
+   >S’il existe plusieurs instances d’auteur (en grappe) derrière un équilibreur de charge, spécifiez l’URL de l’équilibreur de charge dans le champ **[!UICONTROL VersionRestoreManager Author URL]** .
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
