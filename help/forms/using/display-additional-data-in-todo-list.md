@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b74a0933-2b96-4a88-9995-6fb21df141aa
-translation-type: tm+mt
-source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+exl-id: 42d8472d-0eab-4cf9-a7c3-bf2775ee6bec
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 90%
 
 ---
 
-
-# Affichage de données supplémentaires dans la liste Tâches  {#displaying-additional-data-in-todo-list}
+# Affichage de données supplémentaires dans la liste Tâches {#displaying-additional-data-in-todo-list}
 
 Par défaut, la liste des tâches de l’espace de travail AEM Forms affiche le nom d’affichage et la description des tâches. Cependant, vous pouvez ajouter d’autres informations, telles que la date de création, la date d’échéance. Vous pouvez également ajouter des icônes et modifier le style de l’affichage.
 
@@ -36,7 +35,7 @@ Pour plus d’informations sur la description de l’objet JSON, voir [cet](/hel
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Pour afficher des informations supplémentaires pour une tâche, les paires clé-valeur correspondantes doivent être ajoutées dans le bloc de tâche de `translation.json`.
 
-   Par exemple, changez `/apps/ws/locales/en-US/translation.json` pour l’anglais :
+   Par exemple, modifiez `/apps/ws/locales/en-US/translation.json` pour l’anglais :
 
    ```
    "task" : {
