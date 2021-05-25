@@ -10,21 +10,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: e9e53b6d-6403-4d37-bac1-efaff0317f34
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 64%
 
 ---
 
-
 # Créer des apparences personnalisées dans les formulaires HTML5 {#create-custom-appearances-in-html-forms}
 
-Vous pouvez ajouter des widgets personnalisés aux formulaires pour périphériques mobiles. Vous pouvez étendre les widgets jQuery existants ou développer vos propres widgets personnalisés. Le moteur XFA utilise divers widgets, voir [Structure d’apparence des formulaires adaptatifs et HTML5](/help/forms/using/introduction-widgets.md) pour plus d’informations.
+Vous pouvez ajouter des widgets personnalisés aux formulaires pour périphériques mobiles. Vous pouvez étendre les widgets jQuery existants ou développer vos propres widgets personnalisés. Le moteur XFA utilise divers widgets, voir [Structure de l’apparence pour les formulaires adaptatifs et HTML5](/help/forms/using/introduction-widgets.md) pour plus d’informations.
 
 ![Exemple de ](assets/custom-widgets.jpg)
-**widget par défaut et personnaliséFigure :** *Exemple de widget par défaut et de widget personnalisé*
+**widgetFigure par défaut et personnalisé :** *exemple de widget par défaut et personnalisé.*
 
 ## Intégration de widgets personnalisés dans des formulaires HTML5 {#integrating-custom-widgets-with-html-forms}
 
@@ -44,19 +43,19 @@ Les formulaires HTML5 fournissent une implémentation de la structure de widgets
   </tr> 
   <tr> 
    <td>render</td> 
-   <td>La fonction de rendu renvoie l’objet jQuery à l’élément HTML par défaut du widget. L’élément HTML par défaut doit être d’un type pouvant être actif. Par exemple, &lt;a&gt;, &lt;input&gt; et &lt;li&gt;. L’élément renvoyé est utilisé comme $userControl. Si $userControl spécifie la contrainte ci-dessus, les fonctions de la classe AbstractWidget fonctionnent comme prévu, sinon certaines des API communes (focus, clic) nécessitent des modifications. </td> 
+   <td>La fonction de rendu renvoie l’objet jQuery à l’élément HTML par défaut du widget. L’élément HTML par défaut doit être d’un type pouvant être actif. Par exemple, &lt;a&gt;, &lt;input&gt; et &lt;li&gt;. L’élément renvoyé est utilisé comme $userControl. Si le $userControl spécifie la contrainte ci-dessus, les fonctions de la classe AbstractWidget fonctionnent comme prévu, sinon certaines des API communes (focus, clic) nécessitent des modifications. </td> 
   </tr> 
   <tr> 
    <td>getEventMap</td> 
-   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> {<br /> blur: XFA_EXIT_ÉVÉNEMENT,<br /> }<br /> Cet exemple montre que le flou est un événement HTML et que XFA_EXIT_ÉVÉNEMENT correspond au événement XFA. </td> 
+   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> {<br /> blur: XFA_EXIT_EVENT,<br /> }<br /> Cet exemple montre que le flou est un événement HTML et que XFA_EXIT_EVENT est l’événement XFA correspondant. </td> 
   </tr> 
   <tr> 
    <td>getOptionsMap</td> 
-   <td>Renvoie un mappage qui fournit des détails sur l’action à exécuter lors de la modification d’une option. Les clés sont les options fournies au widget et les valeurs sont les fonctions qui sont appelées chaque fois qu'une modification de cette option est détectée. Le widget fournit des gestionnaires pour toutes les options courantes (à l’exception de value et displayValue)</td> 
+   <td>Renvoie un mappage qui fournit des détails sur l’action à exécuter lors de la modification d’une option. Les clés sont les options fournies au widget et les valeurs sont les fonctions qui sont appelées chaque fois qu’une modification de cette option est détectée. Le widget fournit des gestionnaires pour toutes les options courantes (à l’exception de value et displayValue)</td> 
   </tr> 
   <tr> 
    <td>getCommitValue</td> 
-   <td>La structure de Widget charge la fonction à chaque fois que la valeur du widget est enregistrée dans XFAModel (par exemple sur l’événement de sortie d’un objet textField). L’implémentation doit renvoyer la valeur enregistrée dans le widget. Le gestionnaire est fourni avec la nouvelle valeur de l’option.</td> 
+   <td>La structure de Widget charge la fonction à chaque fois que la valeur du widget est enregistrée dans XFAModel (par exemple sur l’événement de sortie d’un objet textField). L’implémentation doit renvoyer la valeur enregistrée dans le widget. Le gestionnaire reçoit la nouvelle valeur de l’option.</td> 
   </tr> 
   <tr> 
    <td>showValue</td> 
@@ -77,7 +76,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Enregistrement du widget personnalisé avec le moteur de script XFA   {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Lorsque le code de widget personnalisé est prêt, enregistrez le widget avec le moteur de script en utilisant `registerConfig`API pour [Form Bridge](/help/forms/using/form-bridge-apis.md). widgetConfigObject est utilisé comme entrée.
+Lorsque le code de widget personnalisé est prêt, enregistrez le widget avec le moteur de script à l’aide de l’API `registerConfig`pour [Form Bridge](/help/forms/using/form-bridge-apis.md). widgetConfigObject est utilisé comme entrée.
 
 ```
 window.formBridge.registerConfig("widgetConfig",
@@ -87,7 +86,7 @@ window.formBridge.registerConfig("widgetConfig",
     );
 ```
 
-#### widgetConfigObject  {#widgetconfigobject}
+#### widgetConfigObject {#widgetconfigobject}
 
 La configuration du widget est fournie sous la forme d’un objet JSON (ensemble de paires clé/valeur) où la clé identifie les champs et la valeur représente le widget à utiliser avec ces champs. Voici un exemple de configuration :
 
@@ -100,10 +99,10 @@ La configuration du widget est fournie sous la forme d’un objet JSON (ensemble
 }*
 ```
 
-où &quot;identifier&quot; est un sélecteur CSS jQuery qui représente un champ particulier, un ensemble de champs d’un type particulier ou tous les champs. Les listes suivantes indiquent la valeur de l’identifiant dans différents cas :
+où &quot;identifier&quot; est un sélecteur CSS jQuery qui représente un champ particulier, un ensemble de champs d’un type particulier ou tous les champs. La valeur de l&#39;identifiant est listée ci-dessous dans différents cas :
 
 | Type d’identificateur | formulaire | Description |
 |---|---|---|
 | Champ particulier avec le nom fieldname | Identificateur : « div.fieldname » | Toutes les zones appelées « fieldname » sont générées à l’aide du widget. |
 | Tous les champs de type &quot;type&quot; (où type est NumericField, DateField, etc.) : | Identificateur : « div.type » | Pour Timefield et DateTimeField, le type est textfield, car ces champs ne sont pas pris en charge. |
-| Tous les champs | Identificateur : &quot;div.field&quot; |  |
+| Tous les champs | Identifiant : &quot;div.field&quot; |  |
