@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 793c44fa-9dd1-45f2-b1ab-219b436fcb54
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 96%
 
 ---
-
 
 # Conversion de lancements{#promoting-launches}
 
@@ -25,7 +24,7 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 
 * Faut-il convertir l’intégralité du lancement ou uniquement la page en cours ?
 * Faut-il convertir les pages enfants de la page en cours ?
-* Conversion de l’intégralité du lancement ou uniquement des pages qui ont été modifiées.
+* Faut-il convertir l’intégralité du lancement ou uniquement des pages qui ont été modifiées ?
 
 ## Conversion de pages de lancement {#promoting-launch-pages}
 
@@ -34,7 +33,7 @@ Pour convertir des pages, procédez comme suit lors de la modification de la pag
 1. Ouvrez l’onglet **Page** dans le Sidekick, puis cliquez sur **Convertir le lancement**.
 1. Indiquez les pages à convertir :
 
-   * (Par défaut) Pour promouvoir uniquement la page active, sélectionnez **Promouvoir les modifications de page dans la version de production**.
+   * (Par défaut) Pour convertir uniquement la page active, sélectionnez **Convertir les modifications de page en version de production**.
    * Pour convertir également les pages enfants de la page en cours, sélectionnez **Inclure les sous-pages**.
    * Pour convertir toutes les pages du lancement, sélectionnez **Convertir le lancement complet en version de production**.
 
@@ -54,4 +53,3 @@ Pour lancer automatiquement un workflow lors de la conversion de pages, [configu
 Vous pouvez, par exemple, générer automatiquement des demandes d’activation de page lorsque les auteurs convertissent des pages Lancements. Configurez un lanceur de workflow pour démarrer le workflow « Demander l’activation » lors de la modification du nœud de module.
 
 ![chlimage_1-136](assets/chlimage_1-136.png)
-
