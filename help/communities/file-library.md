@@ -1,22 +1,21 @@
 ---
 title: Fonctionnalité Bibliothèque de fichiers
 seo-title: Fonctionnalité Bibliothèque de fichiers
-description: La fonction Bibliothèque de fichiers permet aux visiteurs de site connectés de télécharger, gérer et télécharger des fichiers.
-seo-description: La fonction Bibliothèque de fichiers permet aux visiteurs de site connectés de télécharger, gérer et télécharger des fichiers.
+description: La fonctionnalité Bibliothèque de fichiers permet aux visiteurs connectés du site de télécharger, gérer et télécharger des fichiers.
+seo-description: La fonctionnalité Bibliothèque de fichiers permet aux visiteurs connectés du site de télécharger, gérer et télécharger des fichiers.
 uuid: 7da94703-8334-4c02-ba2a-55b5cde22e6c
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: cdcae09f-c3cb-471e-863f-b33130e9df0f
-translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+exl-id: c72b246d-442e-4841-810d-1045e83f60f9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 65%
 
 ---
-
 
 # Fonctionnalité Bibliothèque de fichiers {#file-library-feature}
 
@@ -26,26 +25,26 @@ La fonctionnalité Bibliothèque de fichiers fournit un espace où les visiteurs
 
 Cette section de la documentation décrit :
 
-* Ajouter la fonction de bibliothèque de fichiers à un site AEM
+* Ajout de la fonction Bibliothèque de fichiers à un site AEM
 * Paramètres de configuration du composant `File Library`
 
 ## Ajout d’une bibliothèque de fichiers à une page {#adding-a-file-library-to-a-page}
 
-Pour ajouter un composant `File Library` à une page en mode création, recherchez le composant.
+Pour ajouter un composant `File Library` à une page en mode création, localisez le composant .
 
 * `Communities / File Library`
 
 et faites-le glisser sur la page.
 
-Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
+Pour plus d’informations, voir [Principes de base des composants des communautés](basics.md).
 
-Lorsque les [bibliothèques client requises](essentials-file-library.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `File Library` apparaîtra :
+Lorsque les [bibliothèques côté client requises](essentials-file-library.md#essentials-for-client-side) sont incluses, voici comment le composant `File Library` apparaîtra :
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
 ## Configuration de la bibliothèque de fichiers {#configuring-file-library}
 
-Sélectionnez le composant `File Library` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `File Library` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![chlimage_1-431](assets/chlimage_1-431.png) ![chlimage_1-432](assets/chlimage_1-432.png)
 
@@ -62,7 +61,7 @@ Dans l’onglet **[!UICONTROL Commentaires]**, indiquez si et comment les commen
 
 * **[!UICONTROL Longueur de message max.]** Nombre maximal de caractères qui peuvent être saisis dans la zone de texte. La valeur par défaut est de 4 096 caractères.
 
-* **[!UICONTROL Types de fichier autorisés]** Une liste d’extensions de fichier séparées par des virgules avec le séparateur « point ». Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+* **[!UICONTROL Types de fichier autorisés]** Une liste d’extensions de fichier séparées par des virgules avec le séparateur « point ». Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
 * **[!UICONTROL Éditeur de texte enrichi]** Si cette option est activée, les commentaires peuvent être saisis avec une mise en forme. Cette option n’est pas cochée par défaut.
 
@@ -72,20 +71,20 @@ commentairesSi cette option est cochée, les utilisateurs sont autorisés à sup
 * **[!UICONTROL Autoriser le balisage]** Si cette option est cochée, une balise peut être ajoutée au fichier. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Espaces de]**
-noms autorisésSi l&#39;option Autoriser le balisage est cochée, les balises disponibles seront limitées aux espaces de nommage cochés. Si aucun n&#39;est coché, tous sont autorisés. Par défaut, tous les espaces de noms sont autorisés.
+noms autorisés Si l’option Autoriser le balisage est cochée, les balises disponibles sont limitées aux espaces de noms cochés. Si aucun n’est coché, tous sont autorisés. Par défaut, tous les espaces de noms sont autorisés.
 
 * **[!UICONTROL Limite de suggestions]** Si l’option Autoriser le balisage est sélectionnée, ce paramètre limite le nombre de balises suggérées à afficher. Si la valeur est -1, il n’existe aucune limite. La valeur par défaut est -1.
 
 * **[!UICONTROL Autoriser le]**
-voteSi cette case est cochée, la possibilité d&#39;aller voter pour un fichier sera activée. Cette option n’est pas cochée par défaut.
+vote Si cette option est cochée, la possibilité de voter pour un fichier est activée. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Autoriser]**
-le suivi Si cette option est cochée, incluez la fonctionnalité suivante pour les articles de blog, ce qui permet aux membres d’être  [](notifications.md) avertis de nouvelles publications. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser l’]**
+action suivante Si cette option est cochée, la fonction suivante est ajoutée aux articles de blog, ce qui permet aux membres d’être  [](notifications.md) informés des nouvelles publications. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser les]**
-réponses filetéesSi cette case est cochée, autoriser les réponses aux commentaires publiés. Cette option n’est pas cochée par défaut.
+réponses à thème Si cette option est cochée, les réponses aux commentaires publiés sont autorisées. Cette option n’est pas cochée par défaut.
 
-### Onglet Modération utilisateur {#user-moderation-tab}
+### Onglet Modération d’utilisateur {#user-moderation-tab}
 
 Dans l’onglet **[!UICONTROL Modération d’utilisateur]**, configurez la modération des commentaires, si les commentaires sont autorisés :
 
@@ -111,7 +110,7 @@ Dans l’onglet **[!UICONTROL Modération d’utilisateur]**, configurez la mod�
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d&#39;informations, consultez la page [File Library Essentials](essentials-file-library.md) destinée aux développeurs.
+Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur la bibliothèque de fichiers](essentials-file-library.md) pour les développeurs.
 
 Pour des informations sur la modération des sujets et des commentaires publiés, reportez-vous à la section [Modération du contenu généré par l’utilisateur](moderate-ugc.md).
 
