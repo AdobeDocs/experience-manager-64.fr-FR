@@ -9,20 +9,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 discoiquuid: 3a1817cd-357b-473d-9a09-e18bbfc60dfd
-translation-type: tm+mt
-source-git-commit: eb3ac73ebe3189c144dafa02a2596ea5d512ffba
+exl-id: 07f89673-125b-4205-bc54-c90287a1e9a5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 81%
 
 ---
 
-
 # SSL par défaut{#ssl-by-default}
 
 Dans un effort d’améliorer continuellement la sécurité d’AEM, Adobe a introduit la fonctionnalité SSL par défaut. L’objectif est d’inciter à utiliser le protocole HTTPS pour se connecter aux instances AEM.
 
-## Activation de SSL par défaut  {#enabling-ssl-by-default}
+## Activation de SSL par défaut {#enabling-ssl-by-default}
 
 Vous pouvez commencer à configurer la fonctionnalité SSL par défaut en cliquant sur le message correspondant dans la boîte de réception de l’écran d’accueil d’AEM. Pour accéder à la boîte de réception, appuyez sur l’icône de cloche dans le coin supérieur droit de l’écran. Ensuite, cliquez sur **Afficher tout**. Une liste ordonnée de toutes les alertes s’affiche.
 
@@ -32,11 +31,11 @@ Dans la liste, sélectionnez et ouvrez l’alerte **Configurer HTTPS** :
 
 >[REMARQUE!]
 >
->Si l&#39;alerte **Configurer HTTPS** n&#39;est pas présente dans la boîte de réception, vous pouvez accéder directement à l&#39;Assistant HTTPS en accédant à *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
+>Si l’alerte **Configurer HTTPS** n’est pas présente dans la boîte de réception, vous pouvez accéder directement à l’assistant HTTPS en accédant à *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
 Un utilisateur du service appelé « **ssl-service** » a été créé pour cette fonctionnalité. Une fois que vous avez ouvert l’alerte, vous êtes guidé dans les étapes de l’assistant de configuration suivantes :
 
-1. Tout d’abord, configurez les informations d’identification du magasin. Il s&#39;agit des informations d&#39;identification du magasin de clés de l&#39;utilisateur système **ssl-service** qui contiendra la clé privée et le Trust Store pour l&#39;écouteur HTTPS.
+1. Tout d’abord, configurez les informations d’identification du magasin. Il s’agit des informations d’identification pour le magasin de clés de l’utilisateur système **ssl-service** qui contiendra la clé privée et le Trust Store pour l’écouteur HTTPS.
 
    ![chlimage_1-342](assets/chlimage_1-342.png)
 
@@ -97,7 +96,7 @@ Le servlet, comme tout servlet POST Sling, répond avec un code de statut 200 O
 
 Voici des exemples de réponse en cas d’opération réussie et en cas d’erreur.
 
-**EXEMPLE**  DE RÉUSSITE (état = 200) :
+**EXEMPLE DE SUCCÈS**  (statut = 200) :
 
 ```xml
 <!DOCTYPE html>
@@ -128,7 +127,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-**EXEMPLE**  D’ERREUR (status = 500) :
+**EXEMPLE D’ERREUR**  (statut = 500) :
 
 ```xml
 <!DOCTYPE html>
@@ -196,34 +195,34 @@ Enfin, chargez la clé privée **localhostprivate.der** et le certificat SSL **
 
 >[!NOTE]
 >
->Voir [Utilisation de cURL avec AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) pour obtenir une liste centralisée de commandes cURL utiles en AEM.
+>Voir [Utilisation de cURL avec AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) pour obtenir une liste centralisée des commandes cURL utiles dans AEM.
 
 Vous pouvez également automatiser la configuration SSL à l’aide de l’outil cURL. À cet effet, publiez les paramètres de configuration à cette adresse URL :
 
-*https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
+*https://&lt;serveraddress> : &lt;serverport>/libs/granite/security/post/sslSetup.html*
 
 Voici les paramètres que vous pouvez utiliser pour modifier les différents paramètres de l’assistant de configuration :
 
-* `-F "keystorePassword=password"` - le mot de passe du fichier de stockage des clés ;
+* `-F "keystorePassword=password"` - le mot de passe du KeyStore ;
 
-* `-F "keystorePasswordConfirm=password"` - confirmer le mot de passe du fichier de stockage des clés ;
+* `-F "keystorePasswordConfirm=password"` - confirmez le mot de passe du KeyStore ;
 
-* `-F "truststorePassword=password"` - le mot de passe Trust Store ;
+* `-F "truststorePassword=password"` - le mot de passe truststore ;
 
-* `-F "truststorePasswordConfirm=password"` - confirmer le mot de passe truststore ;
+* `-F "truststorePasswordConfirm=password"` - confirmez le mot de passe truststore ;
 
 * `-F "privatekeyFile=@localhostprivate.der"` - spécifier la clé privée ;
 
-* `-F "certificateFile=@localhost.crt"` - préciser le certificat ;
+* `-F "certificateFile=@localhost.crt"` - spécifier le certificat ;
 
-* `-F "httpsHostname=host.example.com"`- indiquer le nom d&#39;hôte ;
-* `-F "httpsPort=8443"` - port sur lequel l&#39;écouteur HTTPS fonctionne.
+* `-F "httpsHostname=host.example.com"`- indiquez le nom d’hôte ;
+* `-F "httpsPort=8443"` : port sur lequel l’écouteur HTTPS fonctionne.
 
 >[!NOTE]
 >
 >Pour exécuter cURL afin d’automatiser la configuration SSL, le plus rapide est de partir du dossier dans lequel se trouvent les fichiers DER et CRT. Vous pouvez également spécifier le chemin d’accès dans les arguments `privatekeyFile` et certificatFile.
 >
->Vous devez également être authentifié pour effectuer la mise à jour. Veillez donc à ajouter la commande cURL avec le paramètre `-u user:passeword`.
+>Vous devez également être authentifié pour effectuer la mise à jour. Veillez donc à ajouter la commande cURL avec le paramètre `-u user:passeword` .
 >
 >Une commande POST cURL appropriée doit se présenter comme suit :
 
@@ -237,5 +236,5 @@ Vous pouvez envoyer au servlet une série de certificats en répétant le param�
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Une fois la commande exécutée, vérifiez que tous les certificats ont été ajoutés au KeyStore. Vérifiez le fichier de stockage des clés à partir de :\
+Une fois la commande exécutée, vérifiez que tous les certificats ont été ajoutés au KeyStore. Vérifiez le KeyStore à partir de :\
 [http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)
