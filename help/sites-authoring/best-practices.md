@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: 84db73b0-1bc3-4c39-9bc2-0840e24832b0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 80%
 
 ---
-
 
 # Bonnes pratiques{#best-practices}
 
@@ -24,14 +23,14 @@ Les meilleures pratiques en matière de création décrivent comment utiliser AE
 
 Une documentation sur les meilleures pratiques est disponible pour les aspects suivants :
 
-* [Ressources](#assets)
+* [Assets](#assets)
 * [Sites](#sites)
 * [Formulaires](#forms)
 
 Pour connaître les meilleures pratiques en matière d’administration, de déploiement, de maintenance ou de développement, reportez-vous à l’une des ressources suivantes :
 
-* [Administration des meilleures pratiques](/help/sites-administering/administer-best-practices.md)
-* [Développement de meilleures pratiques](/help/sites-developing/best-practices.md)
+* [Meilleures pratiques d’administration](/help/sites-administering/administer-best-practices.md)
+* [Meilleures pratiques de développement](/help/sites-developing/best-practices.md)
 * [Déploiement de meilleures pratiques](/help/sites-deploying/best-practices.md)
 
 Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
@@ -55,7 +54,7 @@ Les meilleures pratiques concernant les ressources, y compris les fonctionnalit�
   <tr>
    <td>Imagerie dynamique</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Meilleures pratiques en matière d’imagerie dynamique </a></td> 
-   <td><p>Décrit comment accentuer une image pour obtenir de meilleurs résultats et la meilleure façon d’optimiser la qualité de vos images si vous utilisez la fonctionnalité Dynamic Media ou si vous effectuez une intégration avec Dynamic Media.</p> </td> 
+   <td><p>Décrit comment accentuer une image pour obtenir de meilleurs résultats et la meilleure manière d’optimiser la qualité de vos images si vous utilisez la fonctionnalité Dynamic Media ou effectuez une intégration avec Dynamic Media.</p> </td> 
   </tr>
   <tr>
    <td>Ressources multilingues</td> 
@@ -72,7 +71,7 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
 |  |  |  |
 |---|---|---|
 | Outils de création | [Environnement et outils de création](/help/sites-authoring/author-environment-tools.md)  | Fournit un aperçu des outils utilisés pour créer des pages. |
-| Organisation des pages | [Création et organisation des pages](/help/sites-authoring/managing-pages.md) | Fournit un aperçu de la meilleure façon d&#39;organiser vos pages, y compris les conventions d&#39;affectation de nom. |
+| Organisation des pages | [Création et organisation des pages](/help/sites-authoring/managing-pages.md) | Fournit une vue d’ensemble de la meilleure organisation de vos pages, y compris les conventions de dénomination. |
 
 ## Formulaires {#forms}
 
