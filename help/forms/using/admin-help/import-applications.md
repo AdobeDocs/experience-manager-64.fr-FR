@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
-translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+exl-id: 81a48c01-8052-47b1-be39-e126c37c7f0f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 98%
 
 ---
-
 
 # Importation et gestion des applications{#import-and-manage-applications}
 
@@ -37,7 +36,7 @@ Importez et gérez les applications créées avec Workbench dans l’onglet Appl
 * les paramètres de configuration du point de fin ;
 * les paramètres de sécurité.
 
-## Importation d’une application ou d’une archive  {#import-an-application-or-archive}
+## Importation d’une application ou d’une archive {#import-an-application-or-archive}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
 1. Cliquez sur Importer.
@@ -111,8 +110,7 @@ Vous pouvez également utiliser un outil de déploiement par scripts pour déplo
 
 Le déploiement par script vous évite d’avoir à reconfigurer manuellement les paramètres dans l’environnement de production avant d’exécuter les applications déployées.
 
-1. Ouvrez une invite de commande et accédez à *[la racine aem-forms]*/sdk/misc/Foundation/ArchiveManagement.
+1. Ouvrez une invite de commande, puis accédez à la *[racine aem-forms]*/sdk/misc/Foundation/ArchiveManagement.
 1. Pour des instructions plus détaillées, lisez le fichier ReadMe.txt.
 1. Modifiez manuellement les fichiers scriptedDeploy.bat et sample-files/settings.xml, tel qu’indiqué dans le fichier ReadMe.txt.
 1. Exécutez le fichier scriptedDeploy.bat. Cette action déploie le fichier d’archives AEM forms avec les paramètres de remplacement.
-
