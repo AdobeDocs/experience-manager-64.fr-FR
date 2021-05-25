@@ -9,32 +9,31 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 2c0dab68-d77e-46fb-832d-90edea510750
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 52%
 
 ---
 
-
-# Procédure générique de personnalisation de l’espace de travail AEM Forms  {#generic-steps-for-aem-forms-workspace-customization}
+# Procédure générique de personnalisation de l’espace de travail AEM Forms {#generic-steps-for-aem-forms-workspace-customization}
 
 Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 
-1. Connectez-vous au CRXDE Lite en accédant à `https://[server]:[port]/lc/crx/de/index.jsp`.
-1. Créez un dossier nommé `ws`à `/apps`, s&#39;il n&#39;existe pas. Cliquez sur **[!UICONTROL Enregistrer tout]**.
-1. Accédez à `/apps/ws` et accédez à l&#39;onglet **[!UICONTROL Contrôle d&#39;accès]**.
-1. Dans la liste **[!UICONTROL Contrôle d&#39;accès]**, cliquez sur **[!UICONTROL +]** pour ajouter une nouvelle entrée. Cliquez de nouveau sur **[!UICONTROL +]**.
-1. Recherchez et sélectionnez l&#39;entité de sécurité **[!UICONTROL PERM_WORKSPACE_USER]**.
+1. Connectez-vous à CRXDE Lite en accédant à `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Créez un dossier nommé `ws`à `/apps`, s’il n’existe pas. Cliquez sur **[!UICONTROL Enregistrer tout]**.
+1. Accédez à `/apps/ws` et accédez à l’onglet **[!UICONTROL Contrôle d’accès]**.
+1. Dans la liste **[!UICONTROL Contrôle d’accès]** , cliquez sur **[!UICONTROL +]** pour ajouter une nouvelle entrée. Cliquez de nouveau sur **[!UICONTROL +]**.
+1. Recherchez et sélectionnez l’entité de sécurité **[!UICONTROL PERM_WORKSPACE_USER]**.
 
    ![Sélectionnez l’entité de sécurité PERM_WORKSPACE_USER dans le cadre des étapes génériques de personnalisation de Workspace HTML](assets/perm_workspace_user.png)
 
-1. Attribuez le privilège `jcr:read` à l&#39;entité de sécurité.
+1. Octroyez le privilège `jcr:read` à l’entité de sécurité.
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 1. Copiez les fichiers `GET.jsp` et `html.jsp`du dossier `/libs/ws`dans le dossier `/apps/ws`.
-1. Copiez le dossier `/libs/ws/locales` dans le dossier `/apps/ws`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
-1. Mettez à jour les références et les chemins relatifs dans le fichier `GET.jsp`, comme indiqué ci-dessous, puis cliquez sur **[!UICONTROL Enregistrer tout]**.
+1. Copiez le dossier `/libs/ws/locales` dans le dossier `/apps/ws` . Cliquez sur **[!UICONTROL Enregistrer tout]**.
+1. Mettez à jour les références et les chemins d’accès relatifs dans le fichier `GET.jsp`, comme illustré ci-dessous, puis cliquez sur **[!UICONTROL Enregistrer tout]**.
 
    ```
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
@@ -42,9 +41,9 @@ Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 
 1. Procédez comme suit pour des personnalisations CSS :
 
-   1. Accédez au dossier `/apps/ws` et créez un nouveau dossier nommé `css`.
+   1. Accédez au dossier `/apps/ws` et créez un dossier nommé `css`.
    1. Dans le dossier `css`,  , créez un fichier nommé `newStyle.css`.
-   1. Ouvrez `/apps/ws/html`.jsp et changez de
+   1. Ouvrez `/apps/ws/html`.jsp et changez à partir de
 
    ```css
    <link lang="en" rel="stylesheet" type="text/css" href="css/style.css" />
@@ -91,5 +90,4 @@ Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**, effacez le cache et actualisez l’espace de travail AEM Forms.
 
-   Accédez à l’URL `https://[server]:[port]/lc/ws` et connectez-vous avec les informations d’identification d’administrateur/de mot de passe. Le navigateur redirige vers `https://[server]:[port]/lc/apps/ws/index.html`.
-
+   Accédez à l’URL `https://[server]:[port]/lc/ws` et connectez-vous avec les informations d’identification administrateur/mot de passe. Le navigateur redirige vers `https://[server]:[port]/lc/apps/ws/index.html`.
