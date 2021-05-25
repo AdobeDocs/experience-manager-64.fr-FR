@@ -8,14 +8,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: c8a505ab-a075-47da-8007-43645a8c3ce5
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: b85fc608-9653-4491-8557-f66a0a7da5ea
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 98%
 
 ---
-
 
 # Indexation par l’intermédiaire du fichier Jar d’Oak-run{#indexing-via-the-oak-run-jar}
 
@@ -51,7 +50,7 @@ Vous trouverez, ci-dessous, la liste des scénarios d’utilisation qui peuvent 
 
 ![image2017-12-19_9-47-40](assets/image2017-12-19_9-47-40.png)
 
-## Arbre de décision d&#39;approche de réindexation {#reindexingapproachdecisiontree}
+## Arborescence de décision de la méthode de réindexation {#reindexingapproachdecisiontree}
 
 Ce diagramme illustre une arborescence de décision concernant l’utilisation des diverses méthodes de réindexation.
 
@@ -63,7 +62,7 @@ Ce diagramme illustre une arborescence de décision concernant l’utilisation d
 >
 >Pour obtenir des informations détaillées sur ce scénario, voir [Cas d’utilisation 3 – Réindexation](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing).
 
-### Pré-extraction de texte pour SegmentNodeStore et DocumentNodeStore  {#textpre-extraction}
+### Pré-extraction de texte pour SegmentNodeStore et DocumentNodeStore {#textpre-extraction}
 
 La [pré-extraction de texte](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (une fonctionnalité qui existait déjà dans AEM 6.3) permet de réduire la durée de réindexation. Elle peut être utilisée avec toutes les méthodes de réindexation.
 
@@ -182,4 +181,3 @@ Si l’exécution d’une réindexation à l’aide de méthodes autres que `oak
 Si l’exécution d’une réindexation à l’aide de méthodes autres que `oak-run.jar` s’avère trop pénalisante sur le plan de la durée et des performances, vous pouvez adopter l’approche suivante basée sur `oak-run.jar` pour importer et réindexer des définitions d’index Lucene dans des installations AEM basées sur MongoMK.
 
 ![11](assets/11.png)
-
