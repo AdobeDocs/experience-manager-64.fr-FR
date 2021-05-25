@@ -1,5 +1,5 @@
 ---
-title: 'Aperçu '
+title: eCommerce
 seo-title: eCommerce
 description: Le framework d’intégration comporte une couche d’intégration avec une API
 seo-description: Le framework d’intégration comporte une couche d’intégration avec une API
@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: a8c0cd0f-268f-4b37-83de-0ccbd819a016
-translation-type: tm+mt
-source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
+exl-id: a5f36d26-1be4-4e06-9237-3943e903d850
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 62%
+ht-degree: 65%
 
 ---
 
-
 # eCommerce{#ecommerce}
 
-La structure d’intégration comprend une couche d’intégration avec une API. Ce permet d’effectuer les opérations suivantes :
+La structure d’intégration comprend une couche d’intégration avec une API. Cela vous permet de :
 
 * connecter un système eCommerce et d’extraire les données produit vers AEM ;
 * créer des composants AEM afin de disposer de fonctionnalités de commerce indépendantes du moteur eCommerce spécifique.
@@ -32,15 +31,15 @@ Pour en savoir plus, voir:
 
 >[!NOTE]
 >
->Comme le cadre eCommerce peut être utilisé avec n&#39;importe quelle solution eCommerce, voir [Développement (générique)](/help/sites-developing/generic.md) pour plus d&#39;informations sur le développement de possibilités avec Intershop, Elastic Path ou IBM Websphere Commerce.
+>Comme la structure eCommerce peut être utilisée avec n’importe quelle solution eCommerce, voir [Développement (générique)](/help/sites-developing/generic.md) pour plus d’informations sur le développement de possibilités avec Intershop, Elastic Path ou IBM WebSphere Commerce.
 
 >[!NOTE]
 >
->Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, voir [Déploiement du commerce électronique](/help/sites-deploying/ecommerce.md).
+>Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, voir [Déploiement d’eCommerce](/help/sites-deploying/ecommerce.md).
 >
 >Pour plus d’informations sur les concepts et l’administration des implémentations eCommerce, consultez [Administration d’eCommerce](/help/sites-administering/ecommerce.md).
 
-## Documentation d’API  {#api-documentation}
+## Documentation d’API {#api-documentation}
 
 L’API eCommerce est fournie par les modules :
 
@@ -50,5 +49,4 @@ Pour plus d’informations, voir la [documentation de l’API](https://helpx.ado
 
 >[!NOTE]
 >
->Pour un article complet décrivant toutes les étapes de création d&#39;un fournisseur de commerce électronique, voir [Création de fournisseurs de commerce électronique Adobe Experience Manager 6.2 personnalisés](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
-
+>Pour un article complet détaillant toutes les étapes de création d’un fournisseur eCommerce, voir [Création de fournisseurs eCommerce Adobe Experience Manager 6.2 personnalisés](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
