@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
-translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+exl-id: 25a01630-47ec-4823-ad11-9a636697f3dc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 98%
 
 ---
-
 
 # Recherche d’instances de processus{#searching-for-process-instances}
 
@@ -24,7 +23,7 @@ Utilisez la page Recherche de processus pour entrer les critères de recherche q
 
 Vous pouvez entrer des critères de base pour effectuer une recherche générale, des attributs spécifiques pour effectuer une recherche détaillée, ou une combinaison de critères de base et d’attributs spécifiques pour effectuer une recherche combinée.
 
-## Exécution d’une recherche générale  {#perform-a-general-search}
+## Exécution d’une recherche générale {#perform-a-general-search}
 
 Si vous souhaitez rechercher un processus, utilisez une recherche générale si vous connaissez l’identificateur de processus de l’instance du processus, si vous recherchez un groupe d’instances de processus liées, ou si seulement quelques instances de processus sont en cours d’exécution.
 
@@ -58,7 +57,7 @@ Vous pouvez entrer des attributs spécifiques pour effectuer une recherche déta
 
 [A propos des états d’instances de processus](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)
 
-## Exécution d’une recherche de processus combinée  {#perform-a-combined-search-for-a-process}
+## Exécution d’une recherche de processus combinée {#perform-a-combined-search-for-a-process}
 
 Pour créer une recherche basée à la fois sur une recherche générale et une recherche détaillée, avec un ET implicite entre les champs, entrez vos critères de recherche dans les champs Recherche générale et Recherche détaillée de la page Recherche de processus.
 
