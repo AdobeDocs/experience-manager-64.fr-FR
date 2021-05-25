@@ -2,16 +2,15 @@
 title: Référence des schémas de métadonnées
 description: 'Découvrez les conventions standard permettant de décrire les métadonnées des ressources, y compris Dublin Core, IPTC et d’autres schémas de métadonnées. '
 contentOwner: AG
-feature: Metadata
+feature: 'Métadonnées  '
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '395'
 ht-degree: 97%
 
 ---
-
 
 # Référence des schémas de métadonnées {#metadata-schemata-reference}
 
@@ -32,7 +31,7 @@ Outre le DCMES, il existe d’autres éléments de métadonnées créés par le 
 | creator | Personne ou entreprise chargée de la création du contenu. |
 | date | Date ou période associée à la ressource. |
 | description | Informations supplémentaires sur la ressource. |
-| format | Format de fichier, support physique ou dimensions de la ressource. AEM utilise le format dc:format pour indiquer le type mime de la ressource. |
+| format | Format de fichier, support physique ou dimensions de la ressource. AEM utilise dc:format pour représenter le type MIME de la ressource. |
 | identifier | Référence unique à la ressource. |
 | language | Langue de la ressource (« en » pour l’anglais, par exemple). |
 | publisher | Personne ou entreprise chargée de rendre la ressource disponible. |
