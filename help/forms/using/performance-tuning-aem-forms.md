@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: bc750571-08a5-414c-aed5-4e839f6695ae
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '900'
 ht-degree: 79%
 
 ---
-
 
 # Réglage des performances du serveur AEM Forms {#performance-tuning-of-aem-forms-server}
 
@@ -49,7 +48,7 @@ Les paramètres de cache par défaut d’AEM Forms peuvent ne pas suffire pour o
 
 ## Paramètres JVM    {#jvm-parameters}
 
-Pour des performances optimales, il est recommandé d’utiliser les arguments `init` JVM suivants pour configurer `Java heap` et `PermGen`.
+Pour des performances optimales, il est recommandé d’utiliser les arguments `init` JVM suivants pour configurer les `Java heap` et `PermGen`.
 
 ```java
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -60,7 +59,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 >[!NOTE]
 >
->Les paramètres recommandés concernent le JDK Core et HotSpot 1.7 (64 bits) de Windows 2008 R2 8 et Oracle et doivent être augmentés ou réduits selon votre configuration système.
+>Les paramètres recommandés concernent Windows 2008 R2 8 Core et Oracle HotSpot 1.7 (64 bits) JDK et doivent être augmentés ou réduits selon votre configuration système.
 
 ## Utilisation d’un serveur Web {#using-a-web-server}
 
@@ -70,7 +69,7 @@ Par exemple, suivez les étapes ci-dessous pour activer la compression sur Apach
 
 >[!NOTE]
 >
->Les instructions suivantes ne s&#39;appliquent à aucun autre serveur que le serveur Web Apache 2.0 32 bits. Pour obtenir des instructions spécifiques à un autre serveur, reportez-vous à la documentation correspondante.
+>Les instructions suivantes ne s’appliquent à aucun autre serveur que le serveur web Apache 2.0 32 bits. Pour obtenir des instructions spécifiques à un autre serveur, reportez-vous à la documentation correspondante.
 
 Les étapes suivantes présentent les modifications à effectuer pour activer la compression avec le serveur Web Apache.
 
@@ -139,7 +138,7 @@ Apache peut communiquer avec CRX via le protocole HTTP. Les configurations conce
    </Location>
    ```
 
-   Pour accéder au serveur crx, utilisez `https://[server]:80`, où `server` est le nom du serveur sur lequel le serveur Apache s’exécute.
+   Pour accéder au serveur crx, utilisez `https://[server]:80`, où `server` est le nom du serveur sur lequel le serveur Apache est exécuté.
 
 ## À l’aide d’un antivirus sur un serveur exécutant AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
 
@@ -149,9 +148,9 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 
 * Répertoire d’installation d’AEM. S’il n’est pas possible d’exclure le répertoire complet, excluez les fichiers suivants :
 
-   * [Répertoire] d’installation AEM \crx-repository\temp
-   * [Répertoire] d’installation AEM \crx-repository\repository
-   * [Répertoire] d’installation AEM \crx-repository\launchpad
+   * [AEM répertoire d’installation]\crx-repository\temp
+   * [AEM répertoire d’installation]\crx-repository\repository
+   * [AEM répertoire d’installation]\crx-repository\launchpad
 
 * Répertoire temporaire du serveur d’applications. L’emplacement par défaut est :
 
@@ -172,9 +171,8 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 
 >[!NOTE]
 >
->* Si vous utilisez un autre emplacement pour le répertoire de stockage global de documents et le répertoire temporaire, ouvrez AdminUI à `https://[server]:[port]/adminui)`, accédez à **Accueil > Paramètres > Paramètres de Core System > Configurations de base** pour confirmer l’emplacement utilisé.
+>* Si vous utilisez un autre emplacement pour le répertoire de stockage global de documents et le répertoire temporaire, ouvrez l’interface utilisateur d’administration à l’adresse `https://[server]:[port]/adminui)`, accédez à **Accueil > Paramètres > Paramètres de Core System > Configurations de base** pour confirmer l’emplacement utilisé.
 
-* Si le serveur AEM Forms fonctionne lentement même après avoir exclu les répertoires suggérés, excluez également le fichier exécutable Java (java.exe).
-
+* Si le serveur AEM Forms est lent, même après avoir exclu les répertoires suggérés, excluez également le fichier exécutable Java (java.exe).
 
 
