@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 71f16254-336f-41bf-bf75-f69ba1051d59
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: e7111c21-1f38-4d0d-ac4b-c83133c0d8d6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 95%
 
 ---
-
 
 # Votre boîte de réception  {#your-inbox}
 
@@ -25,7 +24,7 @@ Vous pouvez recevoir des notifications de diverses sections d’AEM, comme des n
 Ces notifications arrivent dans deux boîtes de réception, en fonction de leur type :
 
 * Une boîte de réception dans laquelle parviennent les notifications liées à des abonnements, décrite à la section suivante.
-* Une boîte de réception spécialisée pour les éléments de processus est décrite dans le document [Participation aux Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md).
+* Une boîte de réception spécialisée pour les éléments de workflow est décrite dans le document [Participation aux workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) .
 
 ## Viewing Your Notifications {#viewing-your-notifications}
 
@@ -43,7 +42,7 @@ Pour afficher vos notifications, procédez comme suit :
 
 1. Vos notifications sont répertoriées. Vous pouvez agir comme suit :
 
-   * [S’abonner aux notifications](#subscribing-to-notifications)
+   * [Abonnement aux notifications](#subscribing-to-notifications)
    * [Traitement des notifications](#processing-your-notifications)
 
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
@@ -91,7 +90,7 @@ Pour souscrire à des notifications :
 1. Définissez les chemins d’accès des pages pour lesquelles vous recevrez une notification :
 
    * Cliquez sur **Ajouter** pour ajouter une nouvelle ligne au tableau.
-   * Cliquez sur la cellule de tableau **Chemin** et entrez le chemin, par ex. `/content/docs`.
+   * Cliquez sur la cellule de tableau **Chemin** et saisissez le chemin, par exemple : `/content/docs`.
    * Si vous souhaitez être averti pour toutes les pages appartenant à la sous-arborescence, définissez **Exact ?** sur **Non**.
 
       Si vous souhaitez n’être averti que pour les actions sur la page définie par le chemin d’accès, définissez **Exact ?** sur **Oui**.
@@ -102,7 +101,7 @@ Pour souscrire à des notifications :
 
 1. Cliquez sur **OK** pour enregistrer la configuration.
 
-## Traitement des notifications  {#processing-your-notifications}
+## Traitement des notifications {#processing-your-notifications}
 
 Si vous avez choisi cette option, les notifications seront reçues et stockées dans votre boîte de réception AEM. Vous pouvez [afficher vos notifications](#viewing-your-notifications), puis sélectionner celles qui s’appliquent :
 
@@ -111,4 +110,3 @@ Si vous avez choisi cette option, les notifications seront reçues et stockées 
 * supprimée en cliquant sur **Supprimer**.
 
 ![chlimage_1-9](assets/chlimage_1-9.jpeg)
-
