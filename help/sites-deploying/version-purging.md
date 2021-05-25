@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Configuration
+exl-id: 357d5f23-3e75-44e3-905f-4efe960858bf
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 64%
 
 ---
-
 
 # Purge de version{#version-purging}
 
@@ -33,11 +32,11 @@ Ces versions n’étant jamais purgées, la taille du référentiel va continuer
 
 AEM est livré avec divers mécanismes vous permettant de gérer le référentiel :
 
-* [Version Manager](#version-manager)
+* [Gestionnaire de versions](#version-manager)
 
-   Vous pouvez configurer cette option pour purger les anciennes versions lors de la création de nouvelles versions.
+   Il peut être configuré pour purger les anciennes versions lors de la création de nouvelles versions.
 
-* l&#39;outil [Purger les versions](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
+* l’outil [Purge des versions](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
 
    Il est utilisé dans le cadre de la surveillance et de la maintenance de votre référentiel.
 
@@ -51,7 +50,7 @@ AEM est livré avec divers mécanismes vous permettant de gérer le référentie
 
        Lorsque l’âge d’une version dépasse cette valeur, elle est purgée du référentiel. 
 
-* la [tâche de maintenance de purge de version](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Par conséquent, cela réduit la nécessité d’utiliser manuellement les outils de purge de version.
+* la [tâche de maintenance Purge de version](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Par conséquent, cela réduit la nécessité d’utiliser manuellement les outils de purge de version.
 
 >[!CAUTION]
 >
@@ -67,45 +66,45 @@ Pour installer le gestionnaire de version, créez une configuration pour :
 
 Les options suivantes sont disponibles :
 
-* `versionmanager.createVersionOnActivation` (Boolean, par défaut : true)
+* `versionmanager.createVersionOnActivation` (booléen, valeur par défaut : true)
 
    si vous souhaitez créer une version lorsque des pages sont activées.
 
-   Une version est créée à moins que l&#39;agent de réplication ne soit configuré pour supprimer la création de versions, ce qui est respecté par Version Manager.
+   Une version est créée, sauf si l’agent de réplication est configuré pour supprimer la création de versions, qui est honorée par le gestionnaire de versions.
 
-   Une version n&#39;est créée que si l&#39;activation se produit sur des chemins contenus dans versionmanager.ivPaths (voir ci-dessous).
+   Une version n’est créée que si l’activation se produit sur un chemin contenu dans versionmanager.ivPaths (voir ci-dessous).
 
-* `versionmanager.ivPaths` (Chaîne[], par défaut : {&quot;/&quot;})
+* `versionmanager.ivPaths` (Chaîne[], valeur par défaut : {&quot;/&quot;})
 
-   chemins d’accès sur lesquels les versions sont implicitement créées sur l’activation si versionmanager.createVersionOnActivation a la valeur true.
+   chemins d’accès sur lesquels les versions sont implicitement créées lors de l’activation si versionmanager.createVersionOnActivation a la valeur true.
 
-* `versionmanager.purgingEnabled` (Boolean, par défaut : false)
+* `versionmanager.purgingEnabled` (booléen, valeur par défaut : false)
 
-   l’activation de la purge lors de la création de nouvelles versions
+   l’activation ou non de la purge lors de la création de nouvelles versions
 
-* `versionmanager.purgePaths` (Chaîne[], par défaut : {&quot;/content&quot;})
+* `versionmanager.purgePaths` (Chaîne[], valeur par défaut : {&quot;/content&quot;})
 
-   sur les chemins de purge des versions lors de la création de nouvelles versions.
+   sur les chemins d’accès pour purger les versions lors de la création de nouvelles versions.
 
-* `versionmanager.maxAgeDays` (int, par défaut : 30)
+* `versionmanager.maxAgeDays` (int, valeur par défaut : 30)
 
-   lors de la purge, toute version antérieure à cette valeur sera supprimée. Si cette valeur est inférieure à 1, la purge n’est pas effectuée en fonction de l’âge de la version.
+   lors de la purge, toute version antérieure à cette valeur est supprimée. Si cette valeur est inférieure à 1, la purge n’est pas effectuée en fonction de l’âge de la version.
 
-* `versionmanager.maxNumberVersions` (int, 5 par défaut)
+* `versionmanager.maxNumberVersions` (int, valeur par défaut 5)
 
-   lors de la purge, toute version antérieure à la n-ième version la plus récente sera supprimée. Si cette valeur est inférieure à 1, la purge n’est pas effectuée en fonction du nombre de versions.
+   lors de la purge, toute version antérieure à la n dernière version est supprimée. Si cette valeur est inférieure à 1, la purge n’est pas effectuée en fonction du nombre de versions.
 
 * `versionmanager.minNumberVersions` (int, 0 par défaut)
 
-   Nombre minimum de versions à conserver, quel que soit l’âge. Si cette valeur est définie sur une valeur inférieure à 1, aucun nombre minimum de versions n’est conservé.
+   Nombre minimum de versions à conserver, indépendamment de l’âge. Si cette valeur est définie sur une valeur inférieure à 1, aucun nombre minimum de versions n’est conservé.
 
 >[!NOTE]
 >
->Il n’est pas recommandé de conserver un grand nombre de versions dans le référentiel. Par conséquent, lors de la configuration de l’opération de purge de version, veillez à ne pas exclure un trop grand nombre de versions de la purge, faute de quoi la taille du référentiel ne sera pas correctement optimisée. Si vous conservez un grand nombre de versions en raison d&#39;un besoin commercial, contactez l&#39;assistance Adobe pour trouver d&#39;autres moyens d&#39;optimiser la taille du référentiel.
+>Il n’est pas recommandé de conserver un grand nombre de versions dans le référentiel. Par conséquent, lors de la configuration de l’opération de purge de version, veillez à ne pas exclure un trop grand nombre de versions de la purge, faute de quoi la taille du référentiel ne sera pas correctement optimisée. Si vous conservez un grand nombre de versions en raison de besoins de l’entreprise, contactez l’assistance Adobe pour trouver d’autres moyens d’optimiser la taille du référentiel.
 
 ### Combinaison d’options de conservation {#combining-retention-options}
 
-Les options définissant comment les versions doivent être conservées ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`) peuvent être combinées en fonction de vos besoins.
+Les options définissant la manière dont les versions doivent être conservées ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`) peuvent être combinées selon vos besoins.
 
 Par exemple, en définissant le nombre maximum de versions à conserver ET la version la plus ancienne à conserver :
 
