@@ -1,32 +1,31 @@
 ---
-title: Test de fragments d'expérience dans We.Retail
-seo-title: Test de fragments d'expérience dans We.Retail
-description: Test de fragments d'expérience dans We.Retail
-seo-description: Test de fragments d'expérience dans We.Retail
+title: Test des fragments d’expérience dans We.Retail
+seo-title: Test des fragments d’expérience dans We.Retail
+description: Test des fragments d’expérience dans We.Retail
+seo-description: Test des fragments d’expérience dans We.Retail
 uuid: 43a6df77-9dd3-4316-b749-0ef059370f7d
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: cdde702e-34b7-4f5d-93db-d9a4b1a94d09
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 40%
 
 ---
 
+# Test des fragments d’expérience dans We.Retail{#trying-out-experience-fragments-in-we-retail}
 
-# Test de fragments d’expérience dans We.Retail{#trying-out-experience-fragments-in-we-retail}
-
-Test de fragments d&#39;expérience dans We.Retail
+Test des fragments d’expérience dans We.Retail
 
 Un [fragment d’expérience](/help/sites-authoring/experience-fragments.md) est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages. Il peut contenir n’importe quel composant.
 
 Ils permettent à un auteur de réutiliser des parties d’une page (un fragment d’une expérience), sans avoir à copier et coller le contenu.
 
-Cela prend en charge la casse d’utilisation du système de Gestion de contenu sans tête (CMS), où les auteurs veulent utiliser l’AEM uniquement pour la création, mais pas pour la livraison au client. Un système tiers/point de contact peut alors consommer cette expérience, puis la diffuser à l’utilisateur final.
+Cela prend en charge le cas d’utilisation CMS (Content Management System) sans interface utilisateur, où les auteurs souhaitent utiliser AEM uniquement pour la création, mais pas pour la diffusion au client. Un système tiers/point de contact peut ensuite utiliser cette expérience, puis la diffuser à l’utilisateur final.
 
 >[!NOTE]
 >
@@ -39,17 +38,16 @@ Cela prend en charge la casse d’utilisation du système de Gestion de contenu 
 >
 Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 
-## Où créer des fragments d&#39;expérience dans We.Retail {#where-to-create-experience-fragments-in-we-retail}
+## Où créer des fragments d’expérience dans We.Retail {#where-to-create-experience-fragments-in-we-retail}
 
-Sélectionnez **Fragments d’expérience** dans la navigation globale. Vous configurez ici [créez](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) et [modifiez](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) vos fragments d’expérience, ainsi que les [variations ](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation) associées.
+Sélectionnez **Fragments d’expérience** dans la navigation globale. Vous configurez ici [créer](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) et [modifier](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) vos fragments d’expérience, ainsi que toutes les [variations ](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation) associées.
 
-## Où utiliser les fragments d&#39;expérience dans We.Retail {#where-to-use-experience-fragments-in-we-retail}
+## Où utiliser les fragments d’expérience dans We.Retail {#where-to-use-experience-fragments-in-we-retail}
 
-Vous pouvez utiliser vos [fragments d’expérience](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (comme tout autre composant) sur [n’importe quelle page](/help/sites-authoring/editing-content.md) sous **Sites** dans la navigation globale.
+Vous pouvez utiliser vos [fragments d’expérience](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (comme pour tout autre composant) sur [n’importe quelle page](/help/sites-authoring/editing-content.md) sous **Sites** dans la navigation globale.
 
 ## Informations supplémentaires {#further-information}
 
 Pour plus d’informations, voir :
 
 * [Fragments d’expérience](/help/sites-authoring/experience-fragments.md)
-
