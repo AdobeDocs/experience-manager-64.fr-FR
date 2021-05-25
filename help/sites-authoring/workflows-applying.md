@@ -1,5 +1,5 @@
 ---
-title: 'Application de workflows aux pages  '
+title: Application de workflows aux pages
 seo-title: Application de workflows aux pages
 description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
 seo-description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 8556d20a-99bd-4942-b7b8-2db69f64e67c
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 05c52802-adfd-4b5f-a273-d6a261a00659
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 100%
 
 ---
-
 
 # Application de workflows aux pages  {#applying-workflows-to-pages}
 
@@ -42,6 +41,7 @@ Vous pouvez démarrer les workflows :
 >
 >* [Application de workflows à des ressources de gestion des ressources numériques](/help/assets/assets-workflow.md).
 >* [Utilisation des workflows de projet](/help/sites-authoring/projects-with-workflows.md).
+
 >
 
 
@@ -61,7 +61,7 @@ Dans les deux cas, vous aurez besoin d’effectuer les opérations suivantes :
 
 * [Spécifier les détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Démarrage d’un workflow à partir de la barre d’outils Sites    {#starting-a-workflow-from-the-sites-toolbar}
+### Démarrage d’un workflow à partir de la barre d’outils Sites   {#starting-a-workflow-from-the-sites-toolbar}
 
 Vous pouvez démarrer un workflow à partir de la barre d’outils de la console **Sites** :
 
@@ -108,7 +108,6 @@ Vous pouvez spécifier les détails du workflow :
    * **Titre de module**
 
       * Vous pouvez spécifier un titre pour le module, pour faciliter son identification.
-
    >[!NOTE]
    >
    >L’option **Conserver le module de workflow** est disponible lorsque le workflow a été configuré pour la prise en charge multi-ressource et que plusieurs ressources ont été sélectionnées.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
@@ -148,4 +147,3 @@ Vous pouvez spécifier les détails du workflow :
 Lors de la modification d’une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant contient l’option **Démarrer dans le workflow**. Cette option ouvre une boîte de dialogue dans laquelle vous pouvez spécifier le workflow requis, ainsi qu’un titre si nécessaire :
 
 ![wf-54](assets/wf-54.png)
-
