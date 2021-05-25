@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 2c8cea3c-8d8b-41d4-8ef9-a0ada8f86be6
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 7f1c4bac-accf-43e4-9439-89c5420d50f2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '306'
 ht-degree: 79%
 
 ---
-
 
 # Configuration du planificateur de synchronisation {#configuring-the-synchronization-scheduler}
 
@@ -34,7 +33,7 @@ Suivez les étapes suivantes pour modifier l’intervalle du planificateur de sy
 
    Les unités de fréquence se comptent en minutes. Par exemple, pour configurer une exécution du planificateur toutes les 60 minutes, entrez 60.
 
-## Synchronisation des ressources {#synchronizing-assets}
+## Synchronisation des ressources  {#synchronizing-assets}
 
 Vous pouvez utiliser l’option **Synchroniser les ressources à partir du référentiel** pour synchroniser manuellement les ressources. Effectuez les opérations suivantes pour synchroniser manuellement les actifs :
 
@@ -42,23 +41,22 @@ Vous pouvez utiliser l’option **Synchroniser les ressources à partir du réf�
 
    ![Interface utilisateur d’AEM Forms](assets/aem_forms_ui.png)
 
-   **Figure:interface utilisateur** *AEM Forms*
+   **Figure : Interface utilisateur d’** *AEM Forms*
 
-1. Cliquez sur l&#39;icône ![aem6forms_sync](assets/aem6forms_sync.png) dans la barre d&#39;outils. Si vous ne disposez d’aucune ressource dans le dernier chemin configuré, la boîte de dialogue s’affiche comme ci-dessous. Cliquez sur **Démarrer** pour lancer la synchronisation.
+1. Cliquez sur l’icône ![aem6forms_sync](assets/aem6forms_sync.png) dans la barre d’outils. Si vous ne disposez d’aucune ressource dans le dernier chemin configuré, la boîte de dialogue s’affiche comme ci-dessous. Cliquez sur **Démarrer** pour lancer la synchronisation.
 
    ![Boîte de dialogue de synchronisation](assets/migrate-and-syncronize.png)
 
-   **Figure:boîte de dialogue** *Synchronisation*
+   **Figure :** *Boîte de dialogue de synchronisation*
 
 ## Dépannage des erreurs de synchronisation {#troubleshooting-synchronization-error}
 
 Vous pouvez créer de nouvelles applications dans le Concepteur de flux de travaux (LiveCycle Workbench).
 
-Si l’application nouvellement créée et un dossier situé dans /content/dam/formsanddocuments portent le même nom, une erreur &quot;*Une ressource portant le même nom que cette application existe déjà au niveau racine.*&quot; est enregistrée.
+Si l’application nouvellement créée et un dossier situé à l’emplacement /content/dam/formsanddocuments portent le même nom, une erreur &quot;*Une ressource portant le même nom que cette application existe déjà au niveau racine.*&quot; est consigné.
 
 Pour résoudre le conflit, renommez l’application puis synchronisez manuellement les actifs.
 
 ![Conflits dans la boîte de dialogue de synchronisation des ressources](assets/sync-conflict.png)
 
-**Figure:** *Conflits dans la boîte de dialogue de synchronisation des ressources*
-
+**Figure :** *Conflits dans la boîte de dialogue de synchronisation des ressources*
