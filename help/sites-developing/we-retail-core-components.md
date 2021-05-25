@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: b77d0e6b-3005-4dba-8e88-70b4d04b1eba
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 82%
 
 ---
-
 
 # Test des composants principaux dans We.Retail{#trying-out-core-components-in-we-retail}
 
@@ -40,7 +39,7 @@ Les composants principaux sont des composants souples et modernes offrant une gr
 1. Notez que tous les composants principaux sont nommés **v1** pour indiquer qu’il s’agit de la première version. Des versions seront publiées régulièrement. Elles seront compatibles avec la version d’AEM et permettront une mise à niveau aisée, de sorte que vous puissiez tirer parti des fonctionnalités les plus récentes.
 1. Cliquez sur **Texte (v1)**.
 
-   Voir que le **type de ressource** du composant est `/apps/core/wcm/components/text/v1/text`. Les composants principaux se trouvent sous `/apps/core/wcm/components` et sont versionnés par composant.
+   Vérifiez que le **type de ressource** du composant est `/apps/core/wcm/components/text/v1/text`. Les composants principaux se trouvent sous `/apps/core/wcm/components` et sont versionnés par composant.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -49,11 +48,11 @@ Les composants principaux sont des composants souples et modernes offrant une gr
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
 1. Revenez à la console de composants. Effectuez un filtrage sur le groupe **We.Retail** et sélectionnez ensuite le composant **Texte**.
-1. Vous pouvez voir que le **Type de ressource** pointe vers un composant comme prévu sous `/apps/weretail`, mais que le **Super type de ressource** renvoie au composant principal `/apps/core/wcm/components/text/v1/text`.
+1. Vérifiez que le **Type de ressource** pointe vers un composant comme prévu sous `/apps/weretail`, mais que le **Type de super-ressource** pointe vers le composant principal `/apps/core/wcm/components/text/v1/text`.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Cliquez sur l&#39;onglet **Utilisation en direct** pour savoir sur quelles pages ce composant est actuellement utilisé. Cliquez sur la première **page de remerciement** pour modifier la page.
+1. Cliquez sur l’onglet **Utilisation en direct** pour voir sur quelles pages ce composant est actuellement utilisé. Cliquez sur la première **page de remerciement** pour modifier la page.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -90,4 +89,4 @@ Les composants principaux sont des composants souples et modernes offrant une gr
 
 Pour plus d’informations sur les composants principaux, consultez le document de création [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html), afin d’obtenir un aperçu des fonctionnalités des composants principaux, et le document de développement [Développement de composants principaux](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) pour une présentation technique.
 
-Vous pouvez également effectuer des recherches approfondies sur les [modèles modifiables](/help/sites-developing/we-retail-editable-templates.md). Pour plus d&#39;informations sur les modèles modifiables, consultez le document de création [Création de modèles de page](/help/sites-authoring/templates.md) ou la page du document du développeur [Modèles - modifiables](/help/sites-developing/page-templates-editable.md).
+Vous pouvez également effectuer des recherches approfondies sur les [modèles modifiables](/help/sites-developing/we-retail-editable-templates.md). Pour plus d’informations sur les modèles modifiables, reportez-vous au document de création [Création de modèles de page](/help/sites-authoring/templates.md) ou au document destiné aux développeurs Page [Modèles - Modifiables](/help/sites-developing/page-templates-editable.md) .
