@@ -2,16 +2,15 @@
 title: Préparation des ressources en vue de la traduction
 description: Créez des dossiers racines de langues pour préparer la traduction de ressources multilingues.
 contentOwner: AG
-feature: Projects,Translation
+feature: Projets, traduction
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 92%
+source-wordcount: '452'
+ht-degree: 96%
 
 ---
-
 
 # Préparation des ressources en vue de la traduction {#preparing-assets-for-translation}
 
@@ -19,7 +18,7 @@ Les ressources multilingues sont des ressources comportant des fichiers binaires
 
 Dans Adobe Experience Manager (AEM) Assets, les ressources multilingues se trouvent dans des dossiers, chaque dossier contenant les ressources dans une langue différente.
 
-Chaque dossier de langue est appelé une copie de langue. Le dossier racine d’une copie de langue, nommé racine de langue, identifie la langue du contenu de la copie de langue. Par exemple, */content/dam/it* est la racine de langue italienne pour la copie de langue italienne. Les copies de langue doivent utiliser une [racine de langue correctement configurée](preparing-assets-for-translation.md#creating-a-language-root) pour que la langue correcte soit ciblée lors de la traduction des ressources source.
+Chaque dossier de langue est appelé une copie de langue. Le dossier racine d’une copie de langue, nommé racine de langue, identifie la langue du contenu de la copie de langue. Par exemple, */content/dam/it* est la racine de langue italienne de la copie en italien. Les copies de langue doivent utiliser une [racine de langue correctement configurée](preparing-assets-for-translation.md#creating-a-language-root) pour que la langue correcte soit ciblée lors de la traduction des ressources source.
 
 La copie de langue pour laquelle vous ajoutez initialement des ressources est le gabarit de langue. Le gabarit de langue est la source qui est traduite dans d’autres langues.
 
@@ -39,7 +38,7 @@ L’exemple de hiérarchie de dossiers comporte plusieurs racines de langue :
 
 Procédez comme suit pour préparer la traduction de vos ressources :
 
-1. Créez la racine de langue de votre gabarit de langue. Par exemple, la racine de langue de la copie en anglais dans l’exemple de hiérarchie de dossiers est `/content/dam/en`. Assurez-vous que la racine de la langue est correctement configurée en fonction des informations de [Création d’une racine de langue](preparing-assets-for-translation.md#creating-a-language-root).
+1. Créez la racine de langue de votre gabarit de langue. Par exemple, la racine de langue de la copie en anglais dans l’exemple de hiérarchie de dossiers est `/content/dam/en`. Vérifiez que la racine de langue est configurée conformément aux informations de la section [Création d’une racine de langue](preparing-assets-for-translation.md#creating-a-language-root).
 
 1. Ajoutez des ressources à votre gabarit de langue.
 1. Créez la racine de langue de chaque langue cible pour laquelle vous avez besoin d’une copie de langue.
@@ -72,4 +71,3 @@ L’IU optimisée pour les écrans tactiles propose un panneau Références qui 
 1. Dans le panneau Références, cliquez ou appuyez sur **[!UICONTROL Copies de langue]**. Le panneau Copies de langue affiche les copies de langue des ressources.
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
-
