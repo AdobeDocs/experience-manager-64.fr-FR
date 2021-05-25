@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
-translation-type: tm+mt
-source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+exl-id: 1b1fa592-a145-4abe-a455-df24d551b937
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 96%
 
 ---
-
 
 # Outil de comparaison des pages{#page-diff}
 
@@ -28,22 +27,22 @@ De fait, l’outil de comparaison des pages permet d’afficher côte à côte d
 
 >[!CAUTION]
 >
->Si vous exécutez une version antérieure à AEM 6.4.3, l’utilisateur doit disposer de l’autorisation **Modifier/Créer/Supprimer** sur le noeud `/content/versionhistory` pour pouvoir utiliser la fonction.
+>Si vous exécutez une version antérieure à AEM 6.4.3, l’utilisateur doit disposer de l’autorisation **Modify/Create/Delete** sur le noeud `/content/versionhistory` pour pouvoir utiliser la fonctionnalité.
 >
 >Consultez la section consacrée à l’[outil de comparaison des pages](/help/sites-developing/pagediff.md#operation-details) pour plus d’informations sur cette fonction.
 
-## Utilisation {#use}
+## Utilisez {#use}
 
 L’outil de comparaison côte à côte permet de comparer les éléments suivants :
 
 * [Versions](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) : la version actuelle d’une page et sa version antérieure.
-* [](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copies : une Live Copy et son plan directeur
+* [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) : une Live Copy et son plan directeur
 * [Lancements](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) : un lancement et sa source
-* [](/help/sites-administering/tc-manage.md#comparing-language-copies)Copies de langue : une page avant et après (re)traduction
+* [Copies de langue](/help/sites-administering/tc-manage.md#comparing-language-copies) : une page avant et après (re)traduction
 
 Reportez-vous aux rubriques correspondantes afin de connaître la procédure de comparaison pour ces différents éléments.
 
-### Présentation des différences  {#presentation-of-differences}
+### Présentation des différences {#presentation-of-differences}
 
 La présentation des différences reste la même, quel que soit le contenu à comparer.
 
@@ -111,4 +110,3 @@ Dans certaines situations, l’outil de comparaison des pages peut ne pas détec
 >[!NOTE]
 >
 >Pour plus d’informations sur le fonctionnement de l’outil de comparaison des pages, ainsi que les limites pouvant affecter cette comparaison, consultez la [documentation du développeur](/help/sites-developing/pagediff.md) liée à cette fonctionnalité.
-
