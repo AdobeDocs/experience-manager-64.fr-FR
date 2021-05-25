@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
-translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+exl-id: 9c588691-0649-4d59-ab97-ebadfcd1252c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 91%
 
 ---
-
 
 # Gestion de l’accès aux workflows{#managing-access-to-workflows}
 
@@ -26,7 +25,7 @@ Configurez les listes de contrôle d’accès en fonction des comptes utilisateu
 
 Il est possible d’agir sur les workflows dans les cas suivants :
 
-* vous travaillez avec le compte `admin`
+* vous utilisez le compte `admin`
 * le compte a été affecté au groupe par défaut `workflow-users` :
 
    * Ce groupe contient toutes les autorisations nécessaires pour que les utilisateurs agissent sur les workflows.
@@ -41,7 +40,7 @@ Il est possible d’agir sur les workflows dans les cas suivants :
 >
 >Il s’agit des conditions requises minimales. Pour effectuer des actions spécifiques, votre compte doit également correspondre au participant affecté ou à un membre du groupe affecté pour prendre des mesures spécifiques.
 
-## Configuration de l’accès aux workflows  {#configuring-access-to-workflows}
+## Configuration de l’accès aux workflows {#configuring-access-to-workflows}
 
 Les modèles de workflows héritent d’une liste de contrôle d’accès par défaut pour contrôler les interactions possibles des utilisateurs avec les workflows. Pour personnaliser l’accès utilisateur d’un workflow, modifiez la liste de contrôle d’accès dans le référentiel du dossier contenant le nœud de modèles de workflows :
 
@@ -54,7 +53,7 @@ Les modèles de workflows héritent d’une liste de contrôle d’accès par d�
 
 ### Appliquez une liste de contrôle d’accès pour le modèle spécifique de workflow sous /var/workflow/models.  {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-Si le modèle de flux de travail est stocké dans `/var/workflow/models`, vous pouvez affecter une liste de contrôle d&#39;accès spécifique, pertinente uniquement pour ce flux de travail, au dossier :
+Si le modèle de workflow est stocké dans `/var/workflow/models`, vous pouvez affecter une liste de contrôle d’accès spécifique, correspondant uniquement à ce workflow, au dossier :
 
 1. Ouvrez CRXDE Lite dans votre navigateur web (par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Dans l’arborescence des nœuds, sélectionnez le nœud correspondant au dossier des modèles de workflow :
@@ -119,4 +118,3 @@ Vous pouvez alors ajouter une liste de contrôle d’accès dans le dossier prop
 1. Cliquez sur **Enregistrer tout**.
 
    Les modèles du dossier `prototypes` ne sont plus disponibles pour les membres du groupe `content-authors`.
-
