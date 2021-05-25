@@ -1,8 +1,8 @@
 ---
-title: Gestion par programmation des préférencesNodes
-seo-title: Gestion par programmation des préférencesNodes
-description: Utilisez l’API de service Preferences Manager (Java) pour gérer par programmation les noeuds Preferences.
-seo-description: Utilisez l’API de service Preferences Manager (Java) pour gérer par programmation les noeuds Preferences.
+title: Gestion par programmation des PreferencesNodes
+seo-title: Gestion par programmation des PreferencesNodes
+description: Utilisez l’API Preferences Manager Service (Java) pour gérer par programmation les noeuds Preferences.
+seo-description: Utilisez l’API Preferences Manager Service (Java) pour gérer par programmation les noeuds Preferences.
 uuid: f0cb117a-a6cc-4ca5-8511-b3bc9f6738e9
 contentOwner: admin
 content-type: reference
@@ -10,35 +10,34 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9d4dba7f-49d8-4112-bc8a-04dafc99a936
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: d580b32c-a344-4a8c-bd61-0949da76d981
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
 
-
 # Gestion par programmation des noeuds de préférences {#programmatically-managing-the-preferencesnodes}
 
-Cette rubrique décrit comment vous pouvez utiliser l’API de service Preferences Manager (Java) pour gérer par programmation les noeuds Preferences.
+Cette rubrique décrit comment utiliser l’API Preferences Manager Service (Java) pour gérer par programmation les noeuds Preferences.
 
-Vous pouvez modifier manuellement les paramètres de configuration à partir de l’interface utilisateur de l’administrateur. Pour modifier les options, accédez à `Home>Settings>User Management> Configuration>Manual Configuration`. Importez `config.xml` après avoir apporté les modifications, vous remarquerez que toutes les modifications, à l&#39;exception des modifications apportées au noeud `/Adobe/Adobe Experience Manager Forms/Config/UM persist`, sont perdues. La prévisualisation de l’importation et de l’exportation User Management ne prend pas en charge la modification des paramètres de configuration pour les autres composants. Désormais, ces modifications peuvent être effectuées à l’aide des API `PreferencesManagerServiceClient`.
+Vous pouvez modifier manuellement les paramètres de configuration à partir de l’interface utilisateur de l’administrateur. Pour modifier les options, accédez à `Home>Settings>User Management> Configuration>Manual Configuration`. Importez `config.xml` après avoir apporté les modifications, vous remarquerez que toutes les modifications, à l’exception des modifications apportées au noeud `/Adobe/Adobe Experience Manager Forms/Config/UM persist`, sont perdues. L’aperçu de l’importation et de l’exportation User Management ne prend pas en charge la modification des paramètres de configuration pour d’autres composants. Désormais, ces modifications peuvent être effectuées à l’aide des API `PreferencesManagerServiceClient`.
 
-**Résumé des**&#x200B;étapes Pour gérer par programmation les noeuds de préférences, effectuez les étapes suivantes :
+**Résumé des**&#x200B;étapes Pour gérer par programmation les noeuds de préférences, procédez comme suit :
 
-1. Incluez des fichiers de projet.
+1. Inclure les fichiers de projet.
 1. Création d’un client PreferencesManagerService
-1. Appeler le rôle approprié ou les opérations d’autorisation
+1. Appeler les opérations de rôle ou d’autorisation appropriées
 
 **Inclure les fichiers de projet**
 
-Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
+Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
 **Création d’un client PreferencesManagerService**
 
-Avant de pouvoir exécuter par programmation une opération User Management PreferencesManagerService, vous devez créer un client PreferencesManagerService. Avec l’API Java, cela se fait en créant un objet PreferencesManagerServiceClient.
+Avant d’effectuer par programmation une opération User Management PreferencesManagerService, vous devez créer un client PreferencesManagerService. Avec l’API Java, cela se fait en créant un objet PreferencesManagerServiceClient .
 
-**Appeler le rôle approprié ou les opérations d’autorisation**
+**Appeler les opérations de rôle ou d’autorisation appropriées**
 
 Une fois le client de service créé, vous pouvez appeler les opérations du Gestionnaire de préférences. Le client de service vous permet de lire et de définir des autorisations.
