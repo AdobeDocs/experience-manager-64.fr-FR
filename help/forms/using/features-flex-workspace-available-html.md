@@ -9,18 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: d3125110-1098-413b-ba09-50c182797d27
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 96%
 
 ---
 
+# Fonctions de l’espace de travail Flex non disponibles dans l’espace de travail AEM Forms {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
 
-# Fonctions de l’espace de travail Flex non disponibles dans l’espace de travail AEM Forms  {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
-
-L’espace de travail AEM Forms est tout nouveau. Les caractéristiques suivantes de l’espace de travail basé sur Flex ne sont pas disponibles dans l’espace de travail AEM Forms.
+L’espace de travail AEM Forms est le nouvel espace de travail. Les caractéristiques suivantes de l’espace de travail basé sur Flex ne sont pas disponibles dans l’espace de travail AEM Forms.
 
 * La page d’accueil n’est pas disponible. Vous pouvez définir les pages Démarrer le processus, Tâches, Suivi et Favoris comme première page à afficher lorsque vous vous connectez à l’espace de travail.
 * Les messages et notifications des événements système ne s’affichent pas dans l’espace de travail AEM Forms. Tous les paramètres correspondant aux messages (tels que Durée d’affichage de la notification de message) ne sont pas non plus applicables à l’espace de travail AEM Forms.
@@ -29,4 +28,3 @@ L’espace de travail AEM Forms est tout nouveau. Les caractéristiques suivante
 * L’option Gérer les en-têtes de colonne pour la page Suivi n’est pas disponible dans l’espace de travail AEM Forms.
 * La définition d’un conteneur d’approbation ou personnalisé pour une tâche d’utilisateur n’est pas respectée dans l’espace de travail AEM Forms.
 * Une option de recherche de modèles est disponible dans l’onglet Suivi mais pas dans l’onglet Tâches.
-
