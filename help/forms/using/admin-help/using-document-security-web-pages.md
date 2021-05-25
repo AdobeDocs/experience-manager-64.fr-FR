@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f93d496e-6bd3-462a-b57a-80085647a636
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 96%
 
 ---
-
 
 # Utilisation des pages Web de Document Security {#using-the-document-security-webpages}
 
@@ -49,7 +48,7 @@ A l’intention des administrateurs, un compte de super-administrateur par défa
 
 1. Saisissez l’URL dans votre navigateur :
 
-   URL de sécurité du document : `https://`*[hôte ]*`:`*[port]* `/edc`
+   URL de Document Security : `https://`*[hôte ]*`:`*[port]* `/edc`
 
    ou URL d’Administration Console : `https://`*[hôte ]*`:`*[port]* `/adminui`
 
@@ -107,4 +106,3 @@ Fermez votre session lorsque vous avez fini d’utiliser les pages Web, afin d�
 
 1. Dans l’angle supérieur droit de la page, cliquez sur Fermeture de la session.
 1. Si un message apparaît dans la page Fermeture de la session, refermez la fenêtre du navigateur pour fermer totalement la session. Dans le cas contraire, vous pouvez continuer à utiliser votre navigateur pour d’autres activités.
-
