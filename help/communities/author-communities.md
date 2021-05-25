@@ -1,22 +1,21 @@
 ---
 title: Composants d’AEM Communities
 seo-title: Composants d’AEM Communities
-description: 'Ajouter des fonctionnalités de la communauté à tout site AEM '
-seo-description: 'Ajouter des fonctionnalités de la communauté à tout site AEM '
+description: 'Ajout de fonctionnalités de communauté à n’importe quel site AEM '
+seo-description: 'Ajout de fonctionnalités de communauté à n’importe quel site AEM '
 uuid: 676abcda-3021-498d-a6eb-b60004315349
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: dc149196-fa56-494e-975c-b11ca1ef193b
-translation-type: tm+mt
-source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
+exl-id: 7118dbca-e9b4-4b69-b4c3-34bb52008168
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 67%
 
 ---
-
 
 # Composants d’AEM Communities {#communities-components}
 
@@ -32,7 +31,7 @@ Pour en savoir plus sur la création d’un site de communauté, voir :
 
 >[!NOTE]
 >
->Si l’environnement de création ne vous est pas familier, vue la documentation sur la [gestion de base](../../help/sites-authoring/basic-handling.md) et un [guide rapide de création de pages](../../help/sites-authoring/qg-page-authoring.md).
+>Si vous ne connaissez pas l’environnement de création, consultez la documentation sur la [gestion de base](../../help/sites-authoring/basic-handling.md) et un guide rapide [pour créer des pages](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Composants d’AEM Communities disponibles {#available-communities-components}
 
@@ -42,7 +41,7 @@ Voir aussi le [Guide des composants de la communauté](components-guide.md) inte
 
 >[!NOTE]
 >
->Lisez [Community Components Basics](basics.md) car il contient les informations nécessaires à la création avec les composants Communities.
+>Lisez la section [Principes de base des composants des communautés](basics.md), car elle contient des informations nécessaires à la création avec des composants des communautés.
 
 | **Libellé du composant**  | **Fonctionnalité** |
 |---|---|
@@ -62,7 +61,7 @@ Voir aussi le [Guide des composants de la communauté](components-guide.md) inte
 | Abonnement | [Graphique des réseaux sociaux](socialgraph.md) |
 | Forum | [Forum](forum.md) |
 | Conceptualisation | [Conceptualisation](ideation-feature.md) |
-| Classement | [Scores et insignes](enabling-leaderboard.md) |
+| Classement | [Notation et badges](enabling-leaderboard.md) |
 | Aimer | [Aimer](liking.md) |
 | Message | [Message](configure-messaging.md) |
 | Liste des messages | [Message](configure-messaging.md) |
@@ -79,7 +78,7 @@ Voir aussi le [Guide des composants de la communauté](components-guide.md) inte
 
 >[!NOTE]
 >
->Le composant Sondage n’est plus disponible et n’est plus pris en charge dans les communautés Experience Manager.
+>Le composant Sondage n’est plus disponible et pris en charge dans les communautés de Experience Manager.
 
 ## Documentation sur les communautés associée {#related-communities-documentation}
 
@@ -87,5 +86,4 @@ Voir aussi le [Guide des composants de la communauté](components-guide.md) inte
 
 * Reportez-vous à la section [Administration des sites de communauté](administer-landing.md) pour en savoir plus sur la création d’un site de communauté, la configuration de modèles de sites de communauté, la modération du contenu de communauté, la gestion des membres et la configuration de la messagerie.
 
-* Visitez [Communautés en développement](communities.md) pour en savoir plus sur le cadre des composants sociaux (SCF) et sur la personnalisation des composants et fonctionnalités des communautés.
-
+* Visitez [Développement de communautés](communities.md) pour en savoir plus sur la structure de composants sociaux (SCF) et la personnalisation des composants et fonctionnalités de communautés.
