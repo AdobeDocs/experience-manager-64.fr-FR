@@ -2,16 +2,15 @@
 title: Révision de collections et de ressources situées dans un dossier
 description: Mettez en place des workflow de révision pour les ressources dans un dossier ou une collection et partagez ce processus avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 contentOwner: AG
-feature: Collaboration, Collections
+feature: Collaboration, collections
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '816'
 ht-degree: 98%
 
 ---
-
 
 # Révision de collections et de ressources situées dans un dossier {#review-folder-assets-and-collections}
 
@@ -25,7 +24,7 @@ Une fois que vous avez partagé les ressources, les réviseurs peuvent les appro
 
 Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ressources), vous recevez une notification de fin de révision.
 
-## Créer une tâche de révision pour les dossiers {#creating-a-review-task-for-folders}
+## Création d’une tâche de révision pour les dossiers {#creating-a-review-task-for-folders}
 
 1. Dans l’interface utilisateur Assets, sélectionnez le dossier pour lequel vous souhaitez créer une tâche de révision.
 1. Dans la barre d’outils, appuyez/cliquez sur l’icône **[!UICONTROL Créer une tâche de révision]** pour ouvrir la page **[!UICONTROL Tâche de révision]**. Si l’icône n’apparaît pas dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Plus]**, puis sélectionnez l’icône.
@@ -73,7 +72,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
    ![review_status_listview](assets/review_status_listview.png)
 
-## Créer une tâche de révision pour les collections {#creating-a-review-task-for-collections}
+## Création d’une tâche de révision pour les collections {#creating-a-review-task-for-collections}
 
 1. Sur la page Collections, sélectionnez la collection pour laquelle vous souhaitez créer une tâche de révision.
 1. Dans la barre d’outils, appuyez/cliquez sur l’icône **[!UICONTROL Créer une tâche de révision]** pour ouvrir la page **[!UICONTROL Tâche de révision]**. Si l’icône n’apparaît pas dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Plus]**, puis sélectionnez l’icône.
