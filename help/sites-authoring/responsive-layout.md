@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 788bb439-fb8a-4ab9-b367-cea6a17c0c43
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1798'
 ht-degree: 94%
 
 ---
-
 
 # Mise en page réactive  {#responsive-layout}
 
@@ -229,11 +228,11 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
    * **Flotter sur une nouvelle ligne**
 
-      Le composant sera déplacé sur une nouvelle ligne, en fonction de l’espace disponible dans la grille.
+      Le composant est déplacé vers une nouvelle ligne, selon l’espace disponible dans la grille.
 
    * **Masquer le composant**
 
-      Le composant sera rendu invisible (il peut être restauré à partir de la barre d’outils du conteneur de mise en page).
+      Le composant devient invisible (il peut être restauré à partir de la barre d’outils du conteneur de mises en page).
    ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * En mode **Mise en page**, appuyez ou cliquez sur **Faire glisser les composants ici** pour sélectionner l’intégralité du composant. La barre d’outils pour ce mode s’affiche.
@@ -265,8 +264,8 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
    >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mises en page est imbriqué dans un conteneur de mises en page parent.
 
    * **Afficher les**
-composantsSélectionnez les composants parents pour afficher la barre d&#39;outils d&#39;action avec la fonction 
-**Afficher l&#39;option** Composants masqués. Dans cet exemple, deux composants sont masqués.
+composants : sélectionnez les composants parents pour afficher la barre d’outils d’action avec le 
+**Afficher les** composants masqués . Dans cet exemple, deux composants sont masqués.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Si vous sélectionnez l’option **Afficher les composants masqués**, les composants actuellement masqués s’affichent en bleu à leur position initiale.
@@ -274,4 +273,3 @@ composantsSélectionnez les composants parents pour afficher la barre d&#39;outi
    ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
 
    Sélectionnez **Restaurer tout** pour afficher tous les composants masqués.
-
