@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 46d0513c-04b2-41ed-bb56-e0778fa5fd10
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 
 ---
-
 
 # Intégration à BrightEdge Content Optimizer{#integrating-with-brightedge-content-optimizer}
 
@@ -36,7 +35,7 @@ Lorsque vous créez la configuration, vous spécifiez un titre. Le titre doit ê
 1. Saisissez un titre pour la configuration. Éventuellement, saisissez un nom pour le nœud utilisé afin de stocker la configuration dans le référentiel. Cliquez sur Créer.
 1. Dans la boîte de dialogue Configuration de BrightEdge Content Optimizer, saisissez le nom d’utilisateur et le mot de passe du compte BrightEdge, puis cliquez sur OK.
 
-## Modification d’une configuration BrightEdge  {#editing-a-brightedge-configuration}
+## Modification d’une configuration BrightEdge {#editing-a-brightedge-configuration}
 
 Modifiez le nom d’utilisateur et le mot de passe d’une configuration BrightEdge, au besoin. Les modifications affectent toutes les pages qui utilisent la configuration.
 
@@ -72,4 +71,3 @@ Activez une configuration BrightEdge pour la répliquer sur l’instance de publ
 1. Dans la liste des configurations qui s’affichent, assurez-vous que la configuration BrightEdge est sélectionnée, puis cliquez sur Publier.
 
    ![chlimage_1-8](assets/chlimage_1-8.png)
-
