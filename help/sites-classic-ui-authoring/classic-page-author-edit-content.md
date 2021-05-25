@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 2d0f11ac-f24b-431e-9076-3e6099eab4ac
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 99%
 
 ---
 
-
-# Modification du contenu de la page{#editing-page-content}
+# Modification du contenu de la page {#editing-page-content}
 
 Une fois la page créée (une nouvelle page ou dans le cadre d’un lancement ou d’une Live Copy), vous pouvez modifier le contenu pour effectuer toute mise à jour dont vous avez besoin.
 
@@ -28,16 +27,16 @@ Le contenu est ajouté à l’aide de composants (appropriés au type de contenu
 >
 >Vous devez disposer des [droits d’accès](/help/sites-administering/security.md) et des [autorisations appropriés](/help/sites-administering/security.md#permissions) sur votre compte pour modifier les pages ; par exemple, pour ajouter, modifier ou supprimer des composants, ou pour les annotations et le déverrouillage.
 >
->En cas de problèmes, contactez votre administrateur système.
+>En cas de problème, contactez votre administrateur système.
 
-## Sidekick  {#sidekick}
+## Sidekick {#sidekick}
 
 Le sidekick est un outil clé lors de la création de pages. Il est toujours visible (dans une fenêtre flottante) pendant la création d’une page.
 
 Plusieurs onglets et icônes sont disponibles, notamment :
 
 * Composants
-* Page 
+* Page
 * Informations
 * Contrôle de version
 * Workflow
@@ -86,7 +85,7 @@ Pour insérer un nouveau composant :
 
 1. Insérez le composant de votre choix sur la page. Double-cliquez ensuite sur le paragraphe. Une fenêtre s’ouvre alors pour vous permettre de configurer votre paragraphe et d’ajouter du contenu.
 
-### Insertion d’un composant à l’aide de l’Outil de recherche de contenu  {#inserting-a-component-using-the-content-finder}
+### Insertion d’un composant à l’aide de l’Outil de recherche de contenu {#inserting-a-component-using-the-content-finder}
 
 Vous pouvez également ajouter un nouveau composant sur la page en faisant glisser un élément à partir de l’[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Un nouveau composant du type approprié (et contenant l’élément) est ainsi créé automatiquement.
 
@@ -95,7 +94,7 @@ Ceci est valide pour les types de ressources suivants (certains dépendent du sy
 | Type de ressource | Type de composant résultant |
 |---|---|
 | Image | Image |
-| Document | Téléchargement |
+| Document | Télécharger |
 | Produit | Produit |
 | Vidéo | Modèle  |
 
@@ -174,7 +173,7 @@ Comme pour la [Suppression d’un composant](#deleting-a-component), vous pouvez
 
 Les composants hérités peuvent être le produit de divers scénarios, notamment :
 
-* [Gestion de plusieurs sites](/help/sites-administering/msm.md) ; également associé au mode [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
+* [Gestion de plusieurs sites](/help/sites-administering/msm.md); également en combinaison avec [scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * Des [lancements](/help/sites-classic-ui-authoring/classic-launches.md) (quand basés sur une live copy)
 * Des composants spécifiques ; par exemple le système de paragraphes hérité dans Geometrixx.
@@ -307,4 +306,3 @@ Aucune valeur n’est censée être spécifiée pour les champs de formulaire do
 >[!NOTE]
 >
 >Des autorisations spéciales sont nécessaires pour annuler et rétablir des modifications affectant des fichiers et des images. Ajoutons encore que l’historique des annulations relatif aux modifications apportées aux fichiers et aux images a une durée de vie minimale de dix heures. Au-delà de cette limite, l’annulation des modifications n’est plus garantie. Votre administrateur peut fournir des autorisations et modifier la durée par défaut de dix heures.
-
