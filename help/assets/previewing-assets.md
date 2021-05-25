@@ -10,9 +10,8 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 77296bff-8429-4240-af93-26076ae431ec
 exl-id: ec05569a-6449-4430-9b9f-7ab051f44970
-feature: Asset Management,Renditions
+feature: Gestion des ressources,Rendus
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
 source-wordcount: '1031'
@@ -22,14 +21,14 @@ ht-degree: 90%
 
 # Aperçu de ressources Dynamic Media {#previewing-assets}
 
-Vous pouvez utiliser **[!UICONTROL Prévisualisation]** pour voir à quoi ressemble un fichier numérique Dynamic Media lorsqu’il est affiché par un client dans son propre navigateur Web. La visionneuse multipériphériques incorporée par défaut affectée à la ressource est utilisée pour la **[!UICONTROL Prévisualisation]**.
+Vous pouvez utiliser **[!UICONTROL Aperçu]** pour voir à quoi ressemble une ressource numérique Dynamic Media lorsqu’elle est affichée par un client dans son propre navigateur web. La visionneuse multi-appareils incorporée par défaut qui est affectée à la ressource est utilisée pour l’ **[!UICONTROL aperçu]**.
 
 Une visionneuse est un ensemble de paramètres ou de « paramètres prédéfinis », tels que la taille d’affichage de la visionneuse, le comportement du zoom, les modèles de couleurs, les bordures et les polices, qui déterminent la manière dont les utilisateurs voient le contenu multimédia enrichi sur leurs écrans d’ordinateur et appareils mobiles.
 
-Outre l’utilisation de la fonction de prévisualisation dédiée pour la vidéo, les visionneuses à 360° et les visionneuses d’images, vous pouvez également prévisualisation d’un fichier à l’aide des paramètres prédéfinis de visionneuse que vous avez créés. Vous pouvez également utiliser des paramètres d’image prédéfinis pour prévisualisation des rendus d’images.
+Outre l’utilisation de la fonction d’aperçu dédiée pour la vidéo, les visionneuses à 360° et les visionneuses d’images, vous pouvez également prévisualiser une ressource à l’aide des paramètres prédéfinis de visionneuse que vous avez créés. Vous pouvez également utiliser des paramètres d’image prédéfinis pour prévisualiser les rendus des images.
 
 * [Application de paramètres d’image prédéfinis](image-presets.md)
-* [Application de paramètres prédéfinis de la visionneuse](viewer-presets.md)
+* [Application de paramètres prédéfinis de visionneuse](viewer-presets.md)
 
 >[!NOTE]
 >
@@ -37,7 +36,7 @@ Outre l’utilisation de la fonction de prévisualisation dédiée pour la vidé
 
 **Prévisualisation d’une ressource**:
 
-1. À partir de **Adobe Experience Manager**, sur la page **[!UICONTROL Navigation]**, appuyez sur **[!UICONTROL Asset]s**, puis **[!UICONTROL Files]** pour accéder aux ressources.
+1. Dans **Adobe Experience Manager**, sur la page **[!UICONTROL Navigation]**, appuyez sur **[!UICONTROL Ressource]s**, puis sur **[!UICONTROL Fichiers]** pour accéder aux ressources.
 1. Dans le coin supérieur droit de la page, dans la liste déroulante **[!UICONTROL Afficher]**, appuyez sur **[!UICONTROL Mode Liste]**.
 1. (Facultatif) Utilisez la colonne **[!UICONTROL Type]** pour trier les ressources en fonction du type que vous souhaitez prévisualiser.
 1. Sous la colonne **[!UICONTROL Titre]**, cliquez sur le nom du titre (et non sur l’image miniature) de la ressource à prévisualiser.
@@ -46,7 +45,7 @@ Outre l’utilisation de la fonction de prévisualisation dédiée pour la vidé
 <table> 
  <tbody>
   <tr>
-   <td><strong>Type de ressource que vous avez sélectionné</strong><br /> </td> 
+   <td><strong>Type de ressource sur lequel vous avez appuyé</strong><br /> </td> 
    <td><strong>Est-il possible d’afficher un aperçu de la ressource dans un rendu particulier ?</strong></td> 
    <td><strong>Est-il possible d’afficher un aperçu de la ressource dans une visionneuse particulière ?</strong></td> 
   </tr>
