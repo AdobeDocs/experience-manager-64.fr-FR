@@ -1,24 +1,23 @@
 ---
-title: Gestion des balises actives
-description: Mettez à jour ou supprimez les balises actives inexactes afin d’améliorer la pertinence des balises.
+title: Gestion des balises intelligentes
+description: Mettre à jour ou supprimer les balises intelligentes inexactes pour améliorer la pertinence des balises
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: fd3eedf0-f222-45bf-aac7-90da6b7b7087
 contentOwner: AG
 discoiquuid: 3394b56a-3054-419b-9547-5740f8c35071
-feature: Smart Tags,Tagging,Search
+feature: Balises intelligentes, Balisage, Recherche
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 05f43e43-ac72-4ab1-a373-687c137d2bed
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '462'
 ht-degree: 84%
 
 ---
 
-
 # Gestion des balises intelligentes {#managing-smart-tags}
 
-Vous pouvez traiter les balises actives pour supprimer les balises inexactes qui ont pu être attribuées à vos images de marque afin que seules les balises les plus pertinentes s’affichent.
+Vous pouvez organiser les balises intelligentes pour supprimer les balises inexactes qui peuvent avoir été affectées à vos images de marque afin que seules les balises les plus pertinentes s’affichent.
 
 La modération de balises intelligentes contribue également à affiner les résultats des recherches d’images basées sur des balises, en garantissant que votre image apparaisse dans les résultats de la recherche pour les balises les plus pertinentes. Essentiellement, cela réduit les risques que des images non pertinentes apparaissent dans les résultats de la recherche.
 
@@ -34,9 +33,9 @@ Vous pouvez également attribuer un rang supérieur à une balise afin d’accro
 
 ## Comprendre les résultats de recherche AEM avec les balises dynamiques {#understand-search-results-with-smart-tags}
 
-Par défaut, la recherche AEM associe les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Cependant, un fichier balisé avec `woman` ou `running` à l’aide de balises actives apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
+Par défaut, la recherche AEM associe les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Cependant, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
 
-* actifs avec les deux mots-clés, `woman` et `running` dans les métadonnées.
+* ressources avec les deux mots-clés `woman` et `running` dans les métadonnées.
 * ressources avec balise dynamique avec l’un des mots-clés.
 
 Les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats de recherche correspondant à l’un des termes de recherche des balises dynamiques. Dans l’exemple ci-dessus, l’ordre approximatif de l’affichage des résultats de recherche est le suivant :
