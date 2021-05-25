@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 3f592c5a-4e59-436e-b67b-3ed575c6afc3
-translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+exl-id: 94989316-02df-4cfa-bb2e-c0d357dff728
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 
 ---
 
-
-# AEM Forms {#aem-forms}
+# AEM Forms {#aem-forms}
 
 Cette section présente les principales caractéristiques d’AEM 6.4 Forms. Une description détaillée de toutes les nouvelles fonctionnalités est disponible dans le [Résumé des nouvelles fonctionnalités et améliorations d’AEM 6.4 Forms](/help/forms/using/whats-new.md).
 
