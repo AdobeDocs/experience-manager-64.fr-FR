@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 17a6397b-0089-4fd1-b44a-686fdf60d7a9
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f069ecea-1b68-4ca9-bb56-8a205a3c00ec
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 100%
 
 ---
-
 
 # Activation de la prise en charge de PDF/A {#enable-pdf-a-support}
 
@@ -27,4 +26,3 @@ PDF Generator prend en charge la création de fichiers compatibles PDF/A issus d
 1. Cliquez sur Créer ou sélectionnez un paramètre de type de fichier existant.
 1. Cliquez sur Microsoft Excel, Microsoft PowerPoint ou Microsoft Word, puis sélectionnez Créer un fichier compatible avec le format PDF/A-1a et enregistrez vos modifications.
 1. Dans l’application native (telle que Microsoft Word), cliquez sur Adobe PDF > Modifier les paramètres de conversion, puis sélectionnez PDF/A-1b.
-
