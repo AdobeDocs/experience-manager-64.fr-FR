@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: b8465471-0458-42d6-8209-8ba90f41154a
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 2374a719-b3d2-4bc5-b1b0-aac7083d61e2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 100%
 
 ---
-
 
 # Langues écrites de droite à gauche dans les formulaires HTML5 {#right-to-left-languages-in-html-forms}
 
@@ -25,4 +24,3 @@ Les formulaires HTML5 prennent en charge les langues écrites de droite à gauch
 **Restrictions**
 
 Les formulaires mobiles prennent en charge les langues écrites de droite à gauche dans tous les navigateurs à l’exception d’Internet Explorer.
-
