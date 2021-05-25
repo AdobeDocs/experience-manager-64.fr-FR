@@ -9,19 +9,18 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: aab9d622-d76b-4100-9ca6-e5b86f543381
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: d8e31f99-0558-4634-ae35-f4a09f34ad6d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 67%
 
 ---
 
-
 # Configuration des points de fin Remoting {#configuring-remoting-endpoints}
 
 Un point de fin Remoting permet à une application créée avec Flex d’appeler le service qui utilise AEM forms Remoting (obsolète pour AEM forms). Un point de fin Remoting est automatiquement créé pour chaque service activé. Une destination Flex portant le même nom que le point de fin est créée, ce qui permet aux clients Flex de créer des objets distants pointant vers cette destination afin d’appeler des opérations sur le service adéquat.
 
-## Paramètres des points de fin Remoting  {#remoting-endpoint-settings}
+## Paramètres des points de fin Remoting {#remoting-endpoint-settings}
 
-**Méthode d’authentification du client Flex :** détermine le type de réponse que le serveur renvoie au client lorsque la sécurité du service appelé est activée, l’opération appelée ne prend pas en charge les appels anonymes et le client transmet des informations d’identification non valides ou non valides.
+**Méthode d’authentification du client Flex :** détermine le type de réponse que le serveur renvoie au client lorsque le service appelé est activé pour la sécurité, l’opération appelée ne prend pas en charge les appels anonymes et le client transmet des informations d’identification non valides ou aucune information d’identification non valide.
