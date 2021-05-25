@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 55a0b70e-5212-408b-8560-6e758bd8bb10
-translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+exl-id: 3a341e72-01c5-4c63-8942-6320e5b08440
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 86%
 
 ---
-
 
 # AEM Communities Notes de mise à jour {#aem-communities-release-notes}
 
@@ -61,12 +60,12 @@ Modération :
 
 Compatibilité d’ensemble avec les modifications de base apportées à AEM 6.4.
 
-Remarque : toutes ces fonctionnalités sont également disponibles pour AEM 6.3. Consultez les notes de mise à jour de AEM Communities pour [6.3](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html).
+Remarque : toutes ces fonctionnalités sont également disponibles pour AEM 6.3. Veuillez consulter les notes de mise à jour d’AEM Communities pour [6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html).
 
 ## Problèmes connus {#known-issues}
 
 * **Modération :** impossible de supprimer une publication parente en une seule opération de suppression à partir de l’interface utilisateur de modération en masse (CQ-4236797).
-* **Console**  - Le lien Nom d’utilisateur ou Mot de passe oublié est redirigé vers la page de connexion au lieu du formulaire de récupération du mot de passe correspondant (CQ-4237682).
+* **Console**  : le lien Nom d’utilisateur ou Mot de passe oublié redirige vers la page de connexion au lieu du formulaire de récupération de mot de passe correspondant (CQ-4237682).
 
 ## Fonctionnalités mises en avant {#select-features}
 
