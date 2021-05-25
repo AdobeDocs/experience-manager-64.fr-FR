@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 52eb9c2f-ce29-4622-8726-802ac40246d4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 79%
 
 ---
-
 
 # Exporter au format CSV  {#export-to-csv}
 
@@ -56,17 +55,16 @@ Vous pouvez ouvrir le fichier `export.csv` obtenu dans Excel (ou toute autre app
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-L’option create **CSV Export** est disponible lorsque vous accédez à la console **Sites** (dans la vue de Liste) : il s’agit d’une option du menu déroulant **Créer** :
+L’option Créer **Exportation CSV** est disponible lorsque vous parcourez la console **Sites** (en mode Liste) : il s’agit d’une option du menu déroulant **Créer** :
 
 ![screen_shot_2018-03-21at154719](assets/screen_shot_2018-03-21at154719.png)
 
 Pour créer une exportation CSV :
 
 1. Ouvrez la console **Sites**, puis, le cas échéant, accédez à l’emplacement requis.
-1. Dans la barre d’outils, sélectionnez **Créer**, puis **Exportation CSV** pour ouvrir l’assistant :
+1. Dans la barre d’outils, sélectionnez **Créer** puis **Exportation CSV** pour ouvrir l’assistant :
 
    ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)
 
 1. Sélectionnez les propriétés requises à exporter.
 1. Sélectionnez **Créer**.
-
