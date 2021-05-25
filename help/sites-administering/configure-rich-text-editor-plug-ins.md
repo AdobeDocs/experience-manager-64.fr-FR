@@ -2,16 +2,15 @@
 title: Configuration des modules externes d’éditeur de texte enrichi
 description: Apprenez à configurer les modules externes d’éditeur de texte enrichi d’AEM afin d’activer différentes fonctionnalités.
 contentOwner: AG
-translation-type: tm+mt
-source-git-commit: 2236d029dc463930e6bbdc1e1aed89e761f0cd89
+exl-id: c9ab462d-b7d4-42c1-a4cf-80d16722910b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4204'
 ht-degree: 94%
 
 ---
 
-
-# Configuration des modules externes d’éditeur de texte enrichi   {#configure-the-rich-text-editor-plug-ins}
+# Configuration des modules externes d’éditeur de texte enrichi  {#configure-the-rich-text-editor-plug-ins}
 
 Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features afin d’activer ou de désactiver une ou plusieurs fonctions de l’éditeur de texte enrichi. Cet article décrit comment configurer spécifiquement les modules externes d’éditeur de texte enrichi.
 
@@ -29,7 +28,7 @@ Par défaut, les modules externes `format`, `link`, `list`, `justify` et `contro
 
 >[!NOTE]
 >
->Le noeud rtePlugins correspondant est appelé &quot;a0/>rtePlugins-node&lt;a1/&quot; pour éviter la duplication dans cet article.**
+>Le noeud rtePlugins respectif est appelé &quot;a0/>rtePlugins-node&lt;a1/&quot; pour éviter la duplication dans cet article.**
 
 1. À l’aide de CRXDE Lite, cherchez le composant Texte pour votre projet.
 1. Créez le nœud parent `<rtePlugins-node>` s’il n’existe pas, avant de configurer tout module externe d’éditeur de texte enrichi :
@@ -52,7 +51,7 @@ Par défaut, les modules externes `format`, `link`, `list`, `justify` et `contro
    * **Nom** `rtePlugins`
    * **Type** `nt:unstructured`
 
-1. Créez un noeud pour chaque module externe à activer :
+1. Créez un noeud pour chaque module externe que vous souhaitez activer :
 
    * **Type** `nt:unstructured`
    * **Nom** ID du module externe requis
@@ -70,8 +69,8 @@ Après activation d’un module externe, suivez ces instructions pour configurer
   <tr> 
    <td><strong>Nom</strong></td> 
    <td>features</td> 
-   <td>fonctionnalités</td> 
-   <td>fonctionnalités</td> 
+   <td>features</td> 
+   <td>features</td> 
   </tr> 
   <tr> 
    <td><strong>Type</strong></td> 
@@ -354,7 +353,7 @@ Lorsque le module externe Formats des paragraphes est activé pour la première 
 
 Pour les configurations ultérieures, par exemple, afin d’ajouter davantage de formats, suivez uniquement la partie correspondante des instructions.
 
-### Activation du sélecteur de liste déroulante Format   {#formatselectorlist}
+### Activation du sélecteur de liste déroulante Format  {#formatselectorlist}
 
 Commencez d’abord par activer le module externe paraformat :
 
@@ -422,7 +421,7 @@ Vous pouvez configurer l’éditeur de texte enrichi de manière à mettre à di
 >[!CAUTION]
 Si vous ajoutez vos propres caractères spéciaux, ils remplacent la sélection par défaut. Si nécessaire, définissez ou redéfinissez ces caractères dans votre sélection.
 
-### Définition d’un caractère unique   {#definesinglechar}
+### Définition d’un caractère unique  {#definesinglechar}
 
 1. Dans votre composant, accédez au nœud `<rtePlugins-node>/misctools`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Créez la propriété `features` sur le nœud `misctools` :
@@ -456,7 +455,7 @@ Si vous ajoutez vos propres caractères spéciaux, ils remplacent la sélection 
 
 1. Enregistrez les modifications.
 
-Une fois la propriété enregistrée, le caractère représenté s’affiche dans CRXDE. Voir l’exemple de la moitié ci-dessous. Répétez les étapes ci-dessus pour rendre des caractères plus spéciaux accessibles aux auteurs.
+Une fois la propriété enregistrée, le caractère représenté s’affiche dans CRXDE. Voir l’exemple de la moitié ci-dessous. Répétez les étapes ci-dessus pour mettre davantage de caractères spéciaux à la disposition des auteurs.
 
 ![Ajout d’un caractère unique dans CRXDE pour qu’il soit disponible dans la barre d’outils d’éditeur de texte enrichi](assets/chlimage_1-412.png)
 
@@ -556,7 +555,7 @@ La copie et le collage de tableaux dans ou à partir d’un composant d’édite
 
 Répétez les étapes ci-dessus pour chaque style requis.
 
-### Configuration d’en-têtes masqués dans les tableaux pour l’accessibilité  {#hiddenheader}
+### Configuration d’en-têtes masqués dans les tableaux pour l’accessibilité {#hiddenheader}
 
 Dans certains cas, vous pouvez créer des tableaux de données sans texte visuel dans un en-tête de colonne en supposant que l’objectif de l’en-tête est induit par la relation visuelle de la colonne avec d’autres colonnes. Dans ce cas, il est nécessaire d’indiquer un texte masqué à l’intérieur de la cellule d’en-tête pour permettre aux lecteurs d’écran et aux autres dispositifs d’assistance d’aider les utilisateurs, indépendamment de leur validité, à comprendre l’objectif de la colonne.
 
@@ -574,23 +573,23 @@ Pour aider les créateurs à appliquer la feuille de style CSS à des en-têtes
 
 Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe CSS prévaut sur la chaîne Style et peut remplacer les modifications apportées à la configuration en raison de la chaîne Style.
 
-## Ajout de dictionnaires au vérificateur orthographique  {#adddict}
+## Ajout de dictionnaires au vérificateur orthographique {#adddict}
 
 Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de texte enrichi utilise les dictionnaires de chaque langue appropriée. Ils sont sélectionnés en fonction de la langue du site web, d’après la propriété language de la sous-arborescence ou à partir de la langue de l’adresse URL, par exemple. Pour la branche `/en/`, la vérification est effectuée pour l’anglais ; pour la branche `/de/`, pour l’allemand.
 
 >[!NOTE]
-Le message `Spell checking failed` s&#39;affiche si une vérification est effectuée pour une langue qui n&#39;est pas installée. Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
+Le message `Spell checking failed` s’affiche si une vérification est effectuée pour une langue qui n’est pas installée. Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
 
-Une installation AEM standard inclut les dictionnaires pour l’anglais américain (`en_us`) et l’anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, procédez comme suit.
+Une installation d’AEM standard inclut les dictionnaires pour l’anglais américain (`en_us`) et l’anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, procédez comme suit.
 
 1. Accédez à la page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
 1. Effectuez l’une des opérations suivantes pour trouver un dictionnaire de votre choix de langue :
 
-   * Recherchez le dictionnaire de votre choix de langue. Sur la page du dictionnaire, recherchez le lien vers la source d’origine ou la page Web de l’auteur. Localisez les fichiers de dictionnaire pour v2.x sur une telle page.
+   * Recherchez le dictionnaire de votre choix de langue. Sur la page du dictionnaire, recherchez le lien vers la source originale ou la page Web de l’auteur. Recherchez les fichiers de dictionnaire pour v2.x sur une telle page.
    * Recherchez des fichiers de dictionnaire v2.x à l’adresse [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
 
-1. Téléchargez l&#39;archive avec les définitions orthographiques. Extrayez le contenu de l’archive dans votre système de fichiers.
+1. Téléchargez l’archive avec les définitions d’orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
 
    >[!CAUTION]
    Seuls les dictionnaires au format `MySpell` pour OpenOffice.org v2.0.1 ou version inférieure, sont pris en charge. Comme les dictionnaires sont désormais des fichiers archives, il est recommandé de les vérifier après les avoir téléchargés.
@@ -599,8 +598,8 @@ Une installation AEM standard inclut les dictionnaires pour l’anglais américa
 1. Chargez les fichiers .aff et.dic dans le référentiel à l’emplacement `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte. Pour exécuter la vérification orthographique, cliquez sur [!UICONTROL Vérificateur orthographique] dans la barre d’outils. RTE vérifie l&#39;orthographe des mots et met en évidence les mots mal orthographiés.
-Si vous incorporez une modification suggérée par le vérificateur orthographique, l’état du texte change et les mots mal orthographiés ne sont plus surlignés. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
+Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte. Pour exécuter le vérificateur orthographique, cliquez sur [!UICONTROL Vérificateur orthographique] dans la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et met en surbrillance les mots mal orthographiés.
+Si vous incorporez une modification suggérée par le vérificateur orthographique, l’état des changements de texte et des mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
 
 ## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
 
@@ -618,7 +617,7 @@ L’éditeur de texte enrichi permet aux auteurs d’annuler ou de rétablir que
 
 1. Enregistrez les modifications.
 
-## Configuration de la taille de tabulation  {#tabsize}
+## Configuration de la taille de tabulation {#tabsize}
 
 Lorsque le caractère de tabulation est activé dans un texte, un nombre prédéfini d’espaces est inséré. Par défaut, il s’agit de trois espaces insécables et d’un espace. Pour définir la taille de la tabulation :
 
@@ -631,7 +630,7 @@ Lorsque le caractère de tabulation est activé dans un texte, un nombre prédé
 
 1. Enregistrez les modifications.
 
-## Définition de la marge de retrait  {#indentmargin}
+## Définition de la marge de retrait {#indentmargin}
 
 Lorsque la mise en retrait est activée (par défaut), vous pouvez définir la taille du retrait :
 
@@ -706,7 +705,7 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
       * **Nom** `cssExternal`
       * **Type** `String`
       * **Valeur** Nom de la classe CSS (non précédé d’un point « . »  ; par exemple, `cssClass` au lieu de `.cssClass`)
-   * Tableau de **protocoles** valides. Les protocoles pris en charge sont `http://`, `https://`, `file://` et `mailto:`.
+   * Tableau des **protocoles** valides. Les protocoles pris en charge sont `http://`, `https://`, `file://` et `mailto:`.
 
       * **Nom** `protocols`
       * **Type** `String[]`
