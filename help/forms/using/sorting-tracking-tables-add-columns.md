@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 5f925f47-3123-4a27-aea1-0a1c1fba7bb6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 79%
 
 ---
-
 
 # Personnalisation des tableaux de suivi{#customize-tracking-tables}
 
@@ -26,7 +25,7 @@ L’onglet de suivi de l’espace de travail AEM Forms est utilisé pour affiche
 * Instructions ( `instructions`)
 * Action sélectionnée ( `selectedRoute`)
 * Heure de création ( `createTime`)
-* Heure d&#39;achèvement ( `completeTime`)
+* Heure d’achèvement ( `completeTime`)
 * Propriétaire ( `currentAssignment.queueOwner`)
 
 Les attributs restants dans le modèle de tâche disponibles à l’affichage dans le tableau de la tâche sont les suivants :
@@ -116,7 +115,7 @@ Les attributs restants dans le modèle de tâche disponibles à l’affichage da
  </tbody> 
 </table>
 
-Pour les personnalisations suivantes dans le tableau de la tâche, vous devez effectuer des modifications sémantiques dans le code source. Voir [Introduction à la personnalisation de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) pour savoir comment effectuer des modifications sémantiques à l’aide du SDK de l’espace de travail et créer un package minifié à partir de la source modifiée.
+Pour les personnalisations suivantes dans le tableau de la tâche, vous devez effectuer des modifications sémantiques dans le code source. Voir [Présentation de la personnalisation de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) pour savoir comment effectuer des modifications sémantiques à l’aide du SDK de l’espace de travail et créer un module minifié à partir de la source modifiée.
 
 ## Modification des colonnes du tableau et de leur tri {#changing-table-columns-and-their-order}
 
@@ -154,7 +153,7 @@ Pour les personnalisations suivantes dans le tableau de la tâche, vous devez ef
    </table>
    ```
 
-## Tri d’un tableau de suivi  {#sorting-a-tracking-table}
+## Tri d’un tableau de suivi {#sorting-a-tracking-table}
 
 Pour trier le tableau de la liste de tâches lorsque vous cliquez sur l’en-tête de la colonne :
 
