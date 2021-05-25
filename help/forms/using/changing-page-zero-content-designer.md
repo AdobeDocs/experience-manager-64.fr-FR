@@ -7,19 +7,18 @@ uuid: 5697f203-bb24-437d-a692-bc4bc2609b88
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f458054e-885c-4c7a-afcd-ad1e4465e0c1
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formulaires adaptatifs
+exl-id: 0ae34ddd-9a8d-48df-af2d-80c3fe6abd62
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '276'
-ht-degree: 83%
+ht-degree: 88%
 
 ---
 
-
 # Modification du contenu de la page zéro avec Designer {#changing-page-zero-content-in-designer}
 
-Le contenu de la page zéro s’affiche par défaut lorsqu’un lecteur non Adobe PDF, tel que le lecteur PDF par défaut dans Chrome ou Firefox, ne peut pas lire le contenu du formulaire PDF/XFA. Le message par défaut de la page zéro est affiché ci-dessous.
+Le contenu de la page zéro s’affiche par défaut lorsqu’une visionneuse non Adobe PDF, telle que la visionneuse PDF par défaut dans Chrome ou Firefox, ne peut pas lire le contenu du formulaire PDF/XFA. Le message par défaut de la page zéro est affiché ci-dessous.
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
@@ -31,7 +30,7 @@ La version AEM Forms Feature Pack 1 de Designer vous permet de modifier le mess
 
 1. Cliquez sur **Fichier > Propriétés du formulaire**.
 
-1. Dans la boîte de dialogue Propriétés du formulaire, cliquez sur ![plus](assets/plus.png) (icône Plus) pour ajouter une propriété personnalisée.
+1. Dans la boîte de dialogue Propriétés du formulaire, cliquez sur le signe ![plus](assets/plus.png) (icône plus) pour ajouter une propriété personnalisée.
 
 1. Spécifiez **_pagezerocontent** en tant que nom de propriété.
 1. Ajoutez le nouveau message de la page zéro au format Rich Text, en tant que valeur. Par exemple :
@@ -40,11 +39,10 @@ La version AEM Forms Feature Pack 1 de Designer vous permet de modifier le mess
 
 1. Enregistrez le formulaire au format PDF.
 
-1. Affichez le formulaire PDF dans le navigateur pour vous assurer que le message a été mis à jour. La valeur d’exemple évoquée ci-dessus apparaît comme suit : 
+1. Affichez le formulaire PDF dans le navigateur pour vous assurer que le message a été mis à jour. La valeur d’exemple évoquée ci-dessus apparaît comme suit :
 
    ![changedmessage](assets/changedmessage.png)
 
 >[!NOTE]
 >
 >La propriété personnalisée créée peut ne pas s’afficher correctement dans la boîte de dialogue Propriétés du formulaire lors de la réouverture du formulaire. Toutefois, le formulaire fonctionne correctement et affiche le message mis à jour sur la page zéro.
-
