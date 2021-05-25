@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Configuration
+exl-id: d94b776d-db06-4f46-ac7f-c3b8e4160b69
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 93%
 
 ---
-
 
 # Journalisation{#logging}
 
@@ -25,7 +24,7 @@ AEM vous offre la possibilité de configurer :
 
 * les paramètres généraux du service de journalisation central ;
 * la journalisation des données de requête (une configuration de journalisation spécialisée pour les informations de requête) :
-* les paramètres spécifiques des services individuels; par exemple, un fichier journal individuel et un format pour les messages du journal
+* les paramètres spécifiques des services individuels; par exemple, un fichier journal individuel et le format des messages du journal
 
 Il s’agit toutes de [configurations OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -72,13 +71,13 @@ Ces éléments sont liés par les paramètres suivants pour les éléments appro
 
    Définissez le ou les services qui génèrent les messages.
 
-* **Fichier journal (Journalisation)**
+* **Fichier journal (enregistreur de journalisation)**
 
    Définissez le fichier physique pour stocker les messages du journal.
 
    Ceci est utilisé pour lier un enregistreur de journalisation à un rédacteur de journalisation. La valeur doit être identique au même paramètre de la configuration du rédacteur de journalisation pour que la connexion s’effectue.
 
-* **Fichier journal (enregistreur de journalisation)**
+* **Fichier journal (rédacteur de journalisation)**
 
    Définissez le fichier physique dans lequel les messages du journal seront écrits.
 
@@ -150,4 +149,3 @@ Vous pouvez définir votre propre paire Enregistrer/Rédacteur :
 >[!NOTE]
 >
 >Dans certaines circonstances, vous pouvez créer un [fichier journal personnalisé](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
-
