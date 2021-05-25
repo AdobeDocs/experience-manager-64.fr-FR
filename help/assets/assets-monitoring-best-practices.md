@@ -2,18 +2,17 @@
 title: Bonnes pratiques en matière de surveillance des ressources
 description: Meilleures pratiques pour surveiller l’environnement et la performance de votre instance AEM après son déploiement.
 contentOwner: AG
-feature: Asset Management
+feature: Gestion des ressources
 role: Administrator,Architect
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1767'
 ht-degree: 88%
 
 ---
 
-
-# Meilleures pratiques de surveillance des ressources {#assets-monitoring-best-practices}
+# Bonnes pratiques relatives à la surveillance des ressources {#assets-monitoring-best-practices}
 
 La surveillance dans Adobe Experience Manager (AEM) Assets implique l’observation et le suivi des technologies et processus suivants :
 
@@ -34,7 +33,7 @@ Typiquement, la surveillance des ressources AEM peut être effectuée de deux fa
 
 La surveillance en temps réel est conseillée lors de la phase de test des performances de votre développement ou en cas de charges élevées afin de comprendre les caractéristiques de performance de votre environnement. Typiquement, différents outils peuvent être utilisés pour la surveillance en temps réel. Voici quelques recommandations :
 
-* [Visual VM](https://visualvm.github.io/) : Visual VM vous permet de vue des informations détaillées sur la machine virtuelle Java, y compris l&#39;utilisation du processeur et de la mémoire Java. En outre, il vous permet de tester et d’évaluer le code exécuté sur une instance.
+* [Visual VM](https://visualvm.github.io/) : Visual VM vous permet d’afficher des informations détaillées sur la machine virtuelle Java, y compris l’utilisation du processeur et de la mémoire Java. En outre, il vous permet de tester et d’évaluer le code exécuté sur une instance.
 * [Top](http://man7.org/linux/man-pages/man1/top.1.html) : Top est une commande Linux ouvrant un tableau de bord qui affiche des statistiques d’utilisation, notamment sur le processeur, la mémoire et les E/S. Vous obtenez ainsi une vue d’ensemble de ce qui se produit sur une instance.
 * [Htop](https://hisham.hm/htop/) : Htop est un utilitaire qui permet de visualiser les processus de manière interactive. Il permet de disposer d’informations détaillées sur l’utilisation du processeur et de la mémoire en plus des informations fournies par Top. Htop peut être installé sur la plupart des systèmes Linux en utilisant `yum install htop` ou `apt-get install htop`.
 
@@ -42,8 +41,8 @@ La surveillance en temps réel est conseillée lors de la phase de test des perf
 
 * [Iftop](http://www.ex-parrot.com/pdw/iftop/) : Iftop affiche des informations détaillées sur l’utilisation des ports ethernet et réseau. Iftop affiche des statistiques par canal de communication sur les entités utilisant Ethernet et la quantité de bande passante utilisée. Iftop peut être installé sur la plupart des systèmes Linux en utilisant `yum install iftop` ou `apt-get install iftop`.
 
-* Java Flight Recorder (JFR) : JFR est un outil Oracle pouvant être utilisé gratuitement dans les environnements qui ne sont pas destinés à la production. Pour plus d&#39;informations, voir [Comment utiliser l&#39;enregistreur de vol Java pour diagnostiquer les problèmes d&#39;exécution CQ](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
-* Fichier AEM error.log : vous pouvez consulter le fichier AEM error.log pour obtenir plus de détails sur les erreurs enregistrées par le système. Utilisez la commande `tail -F quickstart/logs/error.log` pour identifier les erreurs que vous devez rechercher.
+* Java Flight Recorder (JFR) : JFR est un outil Oracle pouvant être utilisé gratuitement dans les environnements qui ne sont pas destinés à la production. Pour plus d’informations, voir [Comment utiliser l’enregistreur de vol Java pour diagnostiquer les problèmes d’exécution CQ](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
+* Fichier AEM error.log : vous pouvez consulter le fichier AEM error.log pour obtenir plus de détails sur les erreurs enregistrées par le système. Utilisez la commande `tail -F quickstart/logs/error.log` pour identifier les erreurs que vous devez étudier.
 * [Console d’administration des workflow](../sites-administering/workflows.md) : utilisez la console d’administration des workflow pour suivre les workflow en retard ou bloqués.
 
 Ces outils vous permettent d’obtenir une vue globale des performances de votre instance AEM.
@@ -60,7 +59,7 @@ La surveillance à long terme d’une instance consiste à surveiller pendant un
 
 ### Agrégation des journaux et création de rapports {#log-aggregation-and-reporting}
 
-Plusieurs outils sont disponibles pour l’agrégation des journaux, par exemple, Splunk(TM) et Elastic Search/Logstash/Kabana (ELK). Pour évaluer la disponibilité de votre instance AEM, il est important de comprendre les événements de journal spécifiques à votre système et de créer des alertes basées sur ces événements. Une bonne connaissance de vos pratiques de développement et d&#39;exploitation peut vous aider à mieux comprendre comment ajuster votre processus d&#39;agrégation des journaux pour générer des alertes critiques.
+Plusieurs outils sont disponibles pour l’agrégation des journaux, par exemple, Splunk(TM) et Elastic Search/Logstash/Kabana (ELK). Pour évaluer la disponibilité de votre instance AEM, il est important de comprendre les événements de journal spécifiques à votre système et de créer des alertes basées sur ces événements. Une bonne connaissance de vos pratiques de développement et d’exploitation peut vous aider à mieux comprendre comment optimiser votre processus d’agrégation des journaux pour générer des alertes critiques.
 
 ### Surveillance de l’environnement {#environment-monitoring}
 
@@ -87,7 +86,7 @@ Souvent, il faut une valeur de référence pour que la surveillance des statisti
 
 Comme toutes les piles d’application basées sur Java, AEM dépend des ressources qui lui sont fournies via la machine virtuelle Java sous-jacente. Vous pouvez suivre l’état de ces ressources via les MXBeans de plateforme présentés par JVM. Pour plus d’informations sur les MXBeans, reportez-vous à la section [Utilisation du serveur MBean de plateforme et des MXBeans de plateforme](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
 
-Voici quelques paramètres de base que vous pouvez surveiller pour la JVM :
+Voici quelques paramètres de base que vous pouvez surveiller pour JVM :
 
 Mémoire
 
@@ -122,7 +121,7 @@ Agents de réplication
 
 * Définition de l’alarme : une file d’attente est bloquée dans le système, indiquant que la cible de réplication n’est pas active ou qu’elle est hors d’atteinte. Très souvent, les problèmes d’infrastructure ou de réseau provoquent la mise en attente d’un nombre excessif d’entrées, ce qui peut affecter les performances du système.
 
-**Remarque** : Pour les paramètres MBean et URL, remplacez  `<AGENT_NAME>` par le nom de l&#39;agent de réplication à surveiller.
+**Remarque** : Pour les paramètres MBean et URL, remplacez  `<AGENT_NAME>` par le nom de l’agent de réplication que vous souhaitez surveiller.
 
 Décompte du nombre de sessions
 
@@ -190,11 +189,11 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 Si vous rencontrez des problèmes lors du processus de surveillance, voici quelques solutions permettant de résoudre les problèmes courants des instances AEM :
 
-* Si vous utilisez TarMK, exécutez souvent la compression Tar. Pour plus de détails, voir [Maintenance du référentiel](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Vérifiez les journaux `OutOfMemoryError`. Pour plus d’informations, reportez-vous à la section [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
-* Consultez les journaux pour vérifier les références aux requêtes non indexées, ou aux parcours d’arborescence ou d’index. Ils signalent les requêtes non indexées ou indexées de façon inappropriée. Pour connaître les meilleures pratiques relatives à l’optimisation des performances de requête et d’indexation, voir [Bonnes pratiques relatives aux Requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+* Si vous utilisez TarMK, exécutez souvent la compression Tar. Pour plus d’informations, voir [Maintenance du référentiel](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
+* Vérifiez les `OutOfMemoryError` logs. Pour plus d’informations, reportez-vous à la section [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
+* Consultez les journaux pour vérifier les références aux requêtes non indexées, ou aux parcours d’arborescence ou d’index. Ils signalent les requêtes non indexées ou indexées de façon inappropriée. Pour connaître les bonnes pratiques relatives à l’optimisation des performances des requêtes et de l’indexation, voir [Bonnes pratiques relatives aux requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilisez la console d’administration des workflow pour vérifier que vos workflow se comportent comme prévu. Si possible, regroupez plusieurs workflow en un seul.
 * Revoyez la surveillance en temps réel et recherchez toute congestion supplémentaire ou recherchez les processus fortement consommateurs de certaines ressources spécifiques.
 * Vérifiez les points de sortie du réseau client et les points d’entrée au réseau de l’instance AEM, Dispatcher compris. Ce sont souvent des zones de congestion. Pour plus d’informations, reportez-vous à la section [Considérations relatives aux ressources réseau](assets-network-considerations.md).
-* Augmentez la capacité de votre serveur AEM. Il est possible que la capacité de votre instance AEM ne soit pas adaptée. Le service à la clientèle d’Adobe peut vous aider à déterminer si votre serveur est sous-dimensionné.
+* Augmentez la capacité de votre serveur AEM. Il est possible que la capacité de votre instance AEM ne soit pas adaptée. L’assistance clientèle d’Adobe peut vous aider à déterminer si votre serveur est de taille inférieure.
 * Consultez les fichiers `access.log` et `error.log` pour trouver les entrées situées autour du moment où le problème est survenu. Recherchez des indices susceptibles d’indiquer la présence d’anomalies au niveau du code personnalisé. Ajoutez-les à la liste d’événements à surveiller.
