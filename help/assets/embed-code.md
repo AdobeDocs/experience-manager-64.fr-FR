@@ -2,7 +2,7 @@
 title: Intégration de la visionneuse de vidéos ou d’images Dynamic Media dans une page web
 seo-title: Intégration de la visionneuse de vidéos ou d’images Dynamic Media dans une page web
 description: Découvrez comment intégrer des images ou des vidéos Dynamic Media dans une page web
-seo-description: Découvrez comment incorporer des vidéos ou des images de médias dynamiques sur une page Web
+seo-description: Découvrez comment incorporer des vidéos ou des images Dynamic Media dans une page web
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,9 +10,8 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 exl-id: bff564a8-e982-4e1a-a9b5-05e44e3e4d46
-feature: Components
+feature: Composants
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '395'
