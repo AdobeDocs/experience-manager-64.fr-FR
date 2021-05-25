@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 8469b063-ea22-4706-ad02-1477d5f9d6c5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 95%
 
 ---
-
 
 # Récupération des données AEM Forms {#recovering-the-aem-forms-data}
 
@@ -50,7 +49,7 @@ Lorsque vous effectuez une restauration à partir d’une sauvegarde sur un nouv
 
 Si un nœud unique d’une grappe multinœud a échoué et si les nœuds restants de la grappe fonctionnent correctement, effectuez une récupération du nœud unique de la grappe.
 
-## Récupération des données AEM Forms  {#recover-the-aem-forms-data}
+## Récupération des données AEM Forms {#recover-the-aem-forms-data}
 
 1. Arrêtez les services AEM Forms et le serveur d’applications en cours d’exécution.
 1. Au besoin, recréez le système physique à partir d’une image système. Par exemple, cette étape peut ne pas être nécessaire si la raison de la récupération est un serveur de bases de données déficient.
@@ -109,11 +108,11 @@ Si un nœud unique d’une grappe multinœud a échoué et si les nœuds restant
       Pour la restauration dans un environnement organisé en grappes, consultez la section [Stratégie de sauvegarde et de restauration dans un environnement organisé en grappes](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. Supprimez tous les fichiers temporaires AEM forms créés dans le répertoire java.io.temp ou dans le répertoire temporaire Adobe.
-1. Formulaires d&#39;AEM début (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
+1. Démarrez AEM forms (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## Modification de l’emplacement du stockage global de documents durant la récupération {#changing-the-gds-location-during-recovery}
 
-Si votre répertoire de stockage global de documents est restauré à un emplacement différent de son emplacement d’origine, exécutez le script LCSetGDS pour définir le répertoire de stockage global de documents sur le nouvel emplacement. Le script se trouve dans le dossier `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline`. Le script utilise deux paramètres, `defaultGDS` et `newGDS`. Voir le fichier `ReadMe.txt` dans le même dossier pour obtenir des instructions sur la façon d’exécuter le script.
+Si votre répertoire de stockage global de documents est restauré à un emplacement différent de son emplacement d’origine, exécutez le script LCSetGDS pour définir le répertoire de stockage global de documents sur le nouvel emplacement. Le script se trouve dans le dossier `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline` . Le script utilise deux paramètres, `defaultGDS` et `newGDS`. Voir le fichier `ReadMe.txt` dans le même dossier pour obtenir des instructions sur la façon d’exécuter le script.
 
 >[!NOTE]
 >
@@ -134,4 +133,3 @@ Pour modifier l’emplacement du stockage global de documents dans un environnem
 >[!NOTE]
 >
 >si vous ne pouvez pas vous assurer du démarrage complet d’un nœud avant le démarrage des autres nœuds, vous devez exécuter le script LCSetGDS sur chacun des nœuds avant de démarrer la grappe.
-
