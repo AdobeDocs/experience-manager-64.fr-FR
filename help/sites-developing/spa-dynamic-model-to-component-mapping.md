@@ -9,23 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
-translation-type: tm+mt
-source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
+exl-id: 2bbbfbaa-b0a1-4f8a-9445-51325d80e368
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 88%
 
 ---
 
-
 # Mappage du modèle dynamique avec les composants pour les SPA{#dynamic-model-to-component-mapping-for-spas}
 
 Ce document décrit le fonctionnement du mappage du modèle dynamique avec les composants dans le SDK JavaScript SPA pour AEM.
 
 >[!NOTE]
->La fonction Éditeur d’application à page unique (SPA) nécessite AEM Service Pack 2 6.4 ou version ultérieure.
+>La fonction Éditeur d’application sur une seule page (SPA) requiert AEM Service Pack 2 ou version ultérieure.
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
 ## Module ComponentMapping {#componentmapping-module}
 
@@ -58,4 +57,3 @@ Chaque composant est étendu grâce aux capacités de la fonction [ `ModelProvid
 1. Les fragments du modèle sont finalement propagés à chaque composant enfant.
 
 ![app_model_initialization](assets/app_model_initialization.png)
-
