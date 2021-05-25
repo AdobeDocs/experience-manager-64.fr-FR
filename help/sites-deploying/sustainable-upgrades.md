@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 5ca8dd7a-4efd-493e-8022-d2f10903b0a2
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Mise à niveau
+exl-id: 765efa8d-1548-4db3-ba87-baa02075eaf6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 86%
 
 ---
-
 
 # Mises à niveau possibles{#sustainable-upgrades}
 
@@ -37,7 +36,7 @@ Dans les versions précédentes d’AEM, de nombreuses API étaient exposées pa
 
 * Les API publiques seront rétrocompatibles avec l’installation d’un module de compatibilité.
 * Le module de compatibilité contiendra un jar Uber de compatibilité pour garantir la compatibilité descendante.
-* Les API Java marquées `Private` ne doivent être utilisées que par AEM lots internes et ne doivent pas l&#39;être par des lots personnalisés.
+* Les API Java marquées comme `Private` sont destinées uniquement à être utilisées par AEM lots internes et ne doivent pas être utilisées par des lots personnalisés.
 
 >[!NOTE]
 >
@@ -53,7 +52,7 @@ Pour permettre aux utilisateurs de mieux comprendre les zones de **/libs** qui p
 
 * **Public (granite:PublicArea)** : définit un nœud comme étant public afin qu’il puisse être superposé, hérité (`sling:resourceSuperType`) ou utilisé directement ( `sling:resourceType`). Les nœuds situés sous /libs marqués comme étant publics peuvent être mis à niveau en toute sécurité avec l’ajout d’un module de compatibilité. En règle générale, les utilisateurs doivent uniquement exploiter les nœuds publics.
 
-* **Résumé (granite:AbstractArea)** : définit un nœud en tant que résumé. Les noeuds peuvent être superposés ou hérités ( `sling:resourceSupertype`) mais ne doivent pas être utilisés directement ( `sling:resourceType`).
+* **Résumé (granite:AbstractArea)** : définit un nœud en tant que résumé. Les noeuds peuvent être superposés ou hérités ( `sling:resourceSupertype`), mais ne doivent pas être utilisés directement ( `sling:resourceType`).
 
 * **Final (granite:FinalArea)** : définit un nœud comme étant final. Les nœuds classés dans la catégorie Final ne peuvent pas être remplacés, ni hérités. Les noeuds finaux peuvent être utilisés directement via `sling:resourceType`. Par défaut, les nœuds secondaires placés sous le nœud final sont considérés comme internes
 
@@ -63,11 +62,11 @@ Pour permettre aux utilisateurs de mieux comprendre les zones de **/libs** qui p
 
 >[!NOTE]
 >
->Ces stratégies ne sont appliquées que par rapport à des mécanismes basés sur un chemin de recherche Sling. D&#39;autres zones de **/libs** comme une bibliothèque côté client peuvent être marquées comme `Internal`, mais peuvent toujours être utilisées avec l&#39;inclusion clientlib standard. Dans ce cas, il est essentiel que le client continue de respecter la classification Interne.
+>Ces stratégies ne sont appliquées que par rapport à des mécanismes basés sur un chemin de recherche Sling. D’autres zones de **/libs** comme une bibliothèque côté client peuvent être marquées comme `Internal`, mais peuvent toujours être utilisées avec l’inclusion clientlib standard. Dans ce cas, il est essentiel que le client continue de respecter la classification Interne.
 
-#### Indicateurs de type de contenu CRXDE Lite  {#crxde-lite-content-type-indicators}
+#### Indicateurs de type de contenu CRXDE Lite {#crxde-lite-content-type-indicators}
 
-Les mixins appliqués dans le CRXDE Lite affichent les noeuds de contenu et les arbres marqués comme `INTERNAL` grisés. Pour la classification `FINAL`, seule l’icône est grisée. Les enfants de ces nœuds apparaissent également en grisé. Dans les deux cas, la fonctionnalité Nœud de recouvrement est désactivée.
+Les mixins appliqués dans CRXDE Lite affichent les noeuds de contenu et les arborescences marqués comme `INTERNAL` grisés. Pour la classification `FINAL`, seule l’icône est grisée. Les enfants de ces nœuds apparaissent également en grisé. Dans les deux cas, la fonctionnalité Nœud de recouvrement est désactivée.
 
 **Public**
 
@@ -98,10 +97,10 @@ Pour pouvoir accéder à ce nouveau contrôle d’intégrité, vous devez procé
 
 Une fois l’analyse terminée, une liste d’avertissements s’affiche pour informer l’utilisateur final du nœud protégé qui est référencé de manière incorrecte :
 
-![capture d&#39;écran-2018-2-5health reports](assets/screenshot-2018-2-5healthreports.png)
+![capture d’écran-2018-2-5healthreports](assets/screenshot-2018-2-5healthreports.png)
 
 Une fois que les problèmes ont été corrigés, l’état vert est rétabli :
 
-![capture d&#39;écran-2018-2-5health reports-violations](assets/screenshot-2018-2-5healthreports-violations.png)
+![capture d’écran-2018-2-5healthreports-violations](assets/screenshot-2018-2-5healthreports-violations.png)
 
 Le contrôle d’intégrité affiche des informations collectées par un service en arrière-plan qui vérifie, de manière asynchrone, si un type de ressource ou d’incrustation est utilisé dans tous les chemins de recherche Sling. Si des mixins de contenu sont utilisés de manière incorrecte, une infraction est signalée.
