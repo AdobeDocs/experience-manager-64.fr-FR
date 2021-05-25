@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: a79e863e-c316-422e-a565-b0ffdeffcc00
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '272'
+ht-degree: 99%
 
 ---
-
 
 # AEM Forms sur les groupes et privilèges OSGi {#aem-forms-on-osgi-groups-and-privileges}
 
@@ -34,7 +33,7 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
    <td>Tâches</td> 
   </tr>
   <tr>
-   <td>utilisateur de formulaires <sup>[1]</sup></td> 
+   <td>forms-user <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Créer, prévisualiser, publier et soumettre des formulaires adaptatifs</li> 
@@ -44,7 +43,7 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
     </ul> </td> 
   </tr>
   <tr>
-   <td>utilisateurs de formulaires-puissance</td> 
+   <td>forms-power-users</td> 
    <td>
     <ul> 
      <li>Créer, prévisualiser, publier et soumettre des formulaires adaptatifs</li> 
@@ -52,7 +51,7 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
      <li>Créer des scripts pour les formulaires adaptatifs à l’aide de l’éditeur de code</li> 
      <li>Charger des ressources, y compris des scripts</li> 
      <li>Créer des thèmes</li> 
-     <li>Importer des packages contenant des données XDP</li> 
+     <li>Importer des modules contenant des données XDP</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -64,7 +63,7 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
     </ul> </td> 
   </tr>
   <tr>
-   <td>template-authors <sup>[2]</sup></td> 
+   <td>template-authors <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>Créer et prévisualiser des formulaires adaptatifs ou des modèles de communication interactive</li> 
@@ -114,4 +113,3 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
 
 1. L’utilisateur disposant des privilèges du groupe forms-user ne peut pas écrire de scripts pour les formulaires adaptatifs.
 1. L’utilisateur disposant des privilèges template-authors ne peut pas écrire de scripts pour les modèles.
-
