@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
-translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+exl-id: 0c989965-c6cc-4ec7-a90f-6c52e8362485
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 67%
 
 ---
-
 
 # Console Balisage de l’interface utilisateur (IU) classique{#classic-ui-tagging-console}
 
@@ -28,11 +27,11 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
 
 * en mode de création
 * Connectez-vous avec des droits d’administrateur.
-* accéder à la console
+* Accédez à la console
 
    par exemple, [http://localhost:4502/tagging](http://localhost:4502/tagging)
 
-![managing_tags_usingthetagasAdministration Console-1](assets/managing_tags_usingthetagasministrationconsole-1.png)
+![managing_tags_usingthetagasationconsole-1](assets/managing_tags_usingthetagasministrationconsole-1.png)
 
 ## Créations de balises et d’espaces de noms {#creating-tags-and-namespaces}
 
@@ -44,22 +43,22 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
 
    Si vous sélectionnez un espace de noms (**Demo**, par exemple), vous pouvez y créer une balise :
 
-   ![creating_tags_andnamespacesinnewnamespace](assets/creating_tags_andnamespacesinnewnamespace.png)
+   ![creating_tags_andnamespace_innewnamespace](assets/creating_tags_andnamespacesinnewnamespace.png)
 
 1. Dans les deux cas, saisissez
 
    * **Titre**
 (
-*Obligatoire*) Titre d’affichage de la balise. Bien que n&#39;importe quel caractère puisse être saisi,
+*Obligatoire*) Titre affiché pour la balise. Tout caractère peut être saisi,
 
       il est recommandé de ne pas utiliser ces caractères spéciaux :
 
-      * `colon (:)` - Délimiteur d&#39;espace de nommage
+      * `colon (:)` - délimiteur d’espace de noms
       * `forward slash (/)` - délimiteur de sous-balises
 
       Si vous saisissez ces caractères, ils ne s’affichent pas.
 
-   * **Nom**
+   * **Name** (Nom)
 
       (*Obligatoire*) Nom du noeud pour la balise.
 
@@ -70,14 +69,14 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
    * Sélectionnez **Créer**.
 
 
-## Modification de balises  {#editing-tags}
+## Modification de balises {#editing-tags}
 
 1. Dans le volet de droite, sélectionnez la balise à modifier.
 1. Cliquez sur **Modifier**.
 1. Vous pouvez modifier le **Titre** et la **Description**.
 1. Cliquez sur **Enregistrer** pour fermer la boîte de dialogue.
 
-## Suppression de tags  {#deleting-tags}
+## Suppression des balises {#deleting-tags}
 
 1. Dans le volet de droite, sélectionnez la balise à supprimer.
 1. Cliquez sur **Supprimer**.
@@ -94,7 +93,7 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
 
 L’option **Liste** ouvre une nouvelle fenêtre qui présente les chemins d’accès de toutes les pages utilisant la balise mise en surbrillance :
 
-![liste_show_wheretagsarereferenced](assets/list_showing_wheretagsarereferenced.png)
+![list_show_wheretagsarereferounded](assets/list_showing_wheretagsarereferenced.png)
 
 ## Déplacement des balises {#moving-tags}
 
@@ -144,14 +143,14 @@ Pour afficher le nombre d’utilisations d’un tag :
 
 ## Gestion de tags dans diverses langues  {#managing-tags-in-different-languages}
 
-La propriété facultative `title`   d’une balise peut être traduite en plusieurs langues. La balise `titles` peut ensuite être affichée en fonction de la langue de l’utilisateur ou de la langue de la page.
+La propriété facultative `title`   d’une balise peut être traduite en plusieurs langues. La balise `titles` peut alors s’afficher en fonction de la langue de l’utilisateur ou de la langue de la page.
 
 ### Définition de titres de balises dans plusieurs langues {#defining-tag-titles-in-multiple-languages}
 
-La procédure suivante montre comment traduire la balise `title`Animals **en anglais, allemand et français :**
+La procédure suivante montre comment traduire la balise `title`Animals **en anglais, en allemand et en français :**
 
 1. Accédez à la console **Balisage**.
-1. Modifiez la balise **Animaux** ci-dessous **Balises** > **Images photographiques**.
+1. Modifiez la balise **Animals** sous **Balises** > **Images de photothèque**.
 1. Ajoutez les traductions dans les langues suivantes :
 
    * **Anglais** : Animals
@@ -170,22 +169,21 @@ Pour ajouter une nouvelle langue à la boîte de dialogue, reportez-vous à la s
 
 ### Affichage des titres des balises dans les propriétés de page dans une langue spécifiée {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
-Par défaut, la balise `titles`dans les propriétés de la page s’affiche dans la langue de la page. La boîte de dialogue des balises dans les propriétés de la page comporte un champ de langue qui permet l’affichage de la balise `titles`dans une autre langue. La procédure suivante décrit comment afficher la balise `titles`en français :
+Par défaut, la balise `titles`dans les propriétés de page s’affiche dans la langue de la page. La boîte de dialogue de balise dans les propriétés de page comporte un champ de langue qui permet d’afficher la balise `titles`dans une autre langue. La procédure suivante décrit l’affichage de la balise `titles`en français :
 
-1. Reportez-vous à la section précédente pour ajouter la traduction française aux **Animaux** ci-dessous **Balises** > **Images photographiques**.
+1. Reportez-vous à la section précédente pour ajouter la traduction française à la section **Animals** sous **Balises** > **Images de photothèque**.
 1. Ouvrez les propriétés de la page **Produits** dans la branche English (Anglais) du site **Geometrixx**.
-1. Ouvrez la boîte de dialogue **Balises/Mots-clés** (en sélectionnant le menu déroulant à droite de la zone d&#39;affichage Balises/Mots-clés) et sélectionnez la langue **française** dans le menu déroulant dans le coin inférieur droit.
-1. Faites défiler la page à l’aide des flèches gauche et droite jusqu’à ce que vous puissiez sélectionner l’onglet **Images photographiques**.
+1. Ouvrez la boîte de dialogue **Balises/Mots-clés** (en sélectionnant le menu déroulant à droite de la zone d’affichage Balises/Mots-clés) et sélectionnez la langue **Français** dans le menu déroulant dans le coin inférieur droit.
+1. Faites défiler l’écran à l’aide des flèches gauche-droite jusqu’à ce que vous puissiez sélectionner l’onglet **Images de photothèque** .
 
-   Sélectionnez la balise **Animaux** (**Animaux**) et sélectionnez-la en dehors de la boîte de dialogue pour la fermer et ajouter la balise aux propriétés de la page.
+   Sélectionnez la balise **Animals** (**Animaux**) et cliquez en dehors de la boîte de dialogue pour la fermer et ajouter la balise aux propriétés de la page.
 
    ![French_tag](assets/french_tag.png)
 
-Par défaut, la boîte de dialogue Propriétés de la page affiche la balise `titles`selon la langue de la page.
+Par défaut, la boîte de dialogue Propriétés de la page affiche la balise `titles`en fonction de la langue de la page.
 
 En général, la langue de la balise est celle de la page si elle est disponible. Lorsque le [widget](/help/sites-developing/building.md#tagging-on-the-client-side) balise est utilisé dans d’autres cas (formulaires ou boîtes de dialogue, par exemple), la langue da la balise dépend du contexte.
 
 >[!NOTE]
 >
->Le nuage de balises et les mots-clés de métadonnées dans le composant de page standard utilisent la balise localisée `titles`en fonction de la langue de page, le cas échéant.
-
+>Le nuage de balises et les méta-mots-clés dans le composant de page standard utilisent la balise localisée `titles`en fonction de la langue de la page, le cas échéant.
