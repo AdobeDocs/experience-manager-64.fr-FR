@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Configuration
+exl-id: 3551d25c-c852-4f59-84fe-5e62f57ae63f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 95%
 
 ---
-
 
 # Expiration des objets statiques{#expiration-of-static-objects}
 
@@ -76,7 +75,7 @@ Tous les fichiers, qui ne sont pas dynamiques et qui ne changent pas au fil du t
    </Location>
    ```
 
-   Cela permet au cache intermédiaire (par exemple le cache du navigateur) de stocker des fichiers CSS, Javascript, PNG et GIF pendant un jour au maximum dans les caches clients. Bien que cet exemple illustre les paramètres globaux pour tout ce qui se trouve en dessous de `/content` et `/etc/designs`, vous devez le rendre plus granulaire.
+   Cela permet au cache intermédiaire (par exemple le cache du navigateur) de stocker des fichiers CSS, Javascript, PNG et GIF pendant un jour au maximum dans les caches clients. Bien que cet exemple illustre les paramètres globaux pour tout ce qui se trouve sous `/content` et `/etc/designs`, vous devez le rendre plus granulaire.
 
    Selon la fréquence de mise à jour de votre site, vous pouvez également envisager de mettre en cache les pages HTML. Un intervalle de temps raisonnable serait d’une heure :
 
