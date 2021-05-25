@@ -7,25 +7,24 @@ uuid: 45590fd5-6438-4bb3-8ef8-f0b8f9da3ae9
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formulaires adaptatifs
+exl-id: 8d7d4a7a-8899-4ad5-9ca8-b961f3f15528
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2186'
+ht-degree: 96%
 
 ---
 
-
 # Mise en forme des éléments pour les formulaires adaptatifs {#styling-constructs-for-adaptive-forms}
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Connaissances en matière de CSS et structure LESS.
 
-## Eléments personnalisables {#what-can-be-customized}
+## Éléments personnalisables {#what-can-be-customized}
 
-Cet article répertorie les classes CSS de formulaires adaptatifs accessibles au public. Vous pouvez exploiter ces classes pour mettre en forme différents composants d’un formulaire adaptatif. La définition de style des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne rentre pas dans le cadre de cet article. Utilisez ces mises en forme des éléments pour créer des styles (en utilisant CSS ou Less) uniquement lorsque vous ne pouvez pas appliquer un style aux composants à l’aide de l’[éditeur de thèmes](themes.md).
+Cet article répertorie les classes CSS de formulaires adaptatifs accessibles au public. Vous pouvez utiliser ces classes pour mettre en forme différents composants d’un formulaire adaptatif. La définition de style des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne rentre pas dans le cadre de cet article. Utilisez ces mises en forme des éléments pour créer des styles (en utilisant CSS ou Less) uniquement lorsque vous ne pouvez pas appliquer un style aux composants à l’aide de l’[éditeur de thèmes](themes.md).
 
 ## Personnalisation des styles dans les formulaires adaptatifs {#customizing-styles-in-adaptive-forms}
 
@@ -40,11 +39,11 @@ Vous pouvez personnaliser les styles des formulaires adaptatifs des manières su
 
 Vous pouvez modifier le thème d’un formulaire adaptatif pour vous assurer que son aspect est cohérent avec les pages Web sur lesquelles le formulaire adaptatif est incorporé.
 
-Les modifications de l’aspect général du formulaire adaptatif via les propriétés CSS font généralement partie des modifications du thème. Les modifications majeures apportées au &quot;ok and entiment&quot; du formulaire adaptatif, telles que les modifications de la disposition et du placement des composants, ne sont pas considérées comme des modifications de thème.
+Les modifications de l’aspect général du formulaire adaptatif via les propriétés CSS font généralement partie des modifications du thème. Les modifications majeures apportées à la convivialité du formulaire adaptatif, telles que les modifications apportées à la disposition et au positionnement des composants, ne sont pas considérées comme des modifications de thème.
 
 Selon l’amorçage, l’ensemble suivant de propriétés CSS définit le thème d’une page Web :
 
-* Couleur de fond
+* Couleur d’arrière-plan
 * Bordure (type, couleur, épaisseur)
 * Couleur de la police
 * Remplissage
@@ -54,9 +53,9 @@ Selon l’amorçage, l’ensemble suivant de propriétés CSS définit le thème
 
 Actuellement, les variables LESS sont définies uniquement pour ces propriétés des différents éléments dans un formulaire adaptatif.
 
-## Modification du style de composant  {#changing-component-style}
+## Modification du style de composant {#changing-component-style}
 
-Vous pouvez modifier l’apparence, la disposition, le positionnement et la visibilité des éléments. Pour obtenir cette tâche, créez ou mettez à jour vos fichiers .css personnalisés afin d’inclure les éléments de style répertoriés dans cet article.
+Vous pouvez modifier l’apparence, la disposition, le positionnement et la visibilité des éléments. Pour réaliser cette tâche, créez ou mettez à jour vos fichiers .css personnalisés pour inclure les mises en forme répertoriées dans cet article.
 
 Pour appliquer un style à un formulaire adaptatif, ouvrez le formulaire adaptatif pour l’édition, ouvrez les propriétés du conteneur de formulaires adaptatifs et spécifiez le chemin du fichier CSS personnalisé dans l’onglet de base. Mises en forme par défaut du formulaire adaptatif remplacé par les mises en forme répertoriées dans le fichier .css personnalisé.
 
@@ -104,7 +103,7 @@ Un conteneur est le composant de niveau supérieur. D’autres panneaux et champ
 
 ## Définition de style du champ {#field-styling}
 
-Les formulaires adaptatifs incluent divers types de champs. Chaque champ a un nom de classe unique, qui est le nom du champ. Le champ a également un nom de classe commun `guideFieldNode`.
+Les formulaires adaptatifs incluent divers types de champs. Chaque champ a un nom de classe unique, qui est le nom du champ. Le champ possède également un nom de classe commun `guideFieldNode`.
 
 Les champs incluent des libellés, des widgets, des descriptions d’aide (descriptions longues et courtes), ainsi que des icônes d’aide de champ (point d’interrogation).
 
@@ -140,7 +139,7 @@ Les champs incluent des libellés, des widgets, des descriptions d’aide (descr
 
 ## Définition de style de libellé {#label-styling}
 
-L’élément HTML **label** utilisé pour le champ comprend les classes **left** ou **top** selon que l’étiquette se trouve en haut ou à gauche.
+L’élément HTML **label** utilisé pour le champ inclut les classes **left** ou **top** selon que le libellé se trouve en haut ou à gauche.
 
 <table> 
  <tbody> 
@@ -180,7 +179,7 @@ L’élément HTML **label** utilisé pour le champ comprend les classes **left*
  </tbody> 
 </table>
 
-Les règles CSS de l’étiquette sont appliquées à l’aide de l’étiquette **guideFieldLabel**. Si vous êtes un auteur, remplacez cette règle pour que vos modifications personnalisées soient visibles.
+Les règles CSS pour le libellé sont appliquées à l’aide de la classe **guideFieldLabel**. Si vous êtes un auteur, remplacez cette règle pour que vos modifications personnalisées soient visibles.
 
 ## Définition de style des widgets {#widgets-styling}
 
@@ -286,11 +285,11 @@ Selon leur type, les widgets contiennent également des classes. En règle gén�
 
 ### Restrictions de la définition de style de widget  {#limitations-in-widget-styling}
 
-La définition du style des champs ciblés, obligatoires et désactivés est limitée à l’aide de variables. Toutefois, vous pouvez le modifier en remplaçant les styles. La restriction à l’aide de variables est fournie principalement pour garder un œil sur le nombre de variables. La restriction peut être assouplie si l’apparence d’un champ change radicalement car elle se trouve dans l’un des états décrits précédemment.
+La définition du style des champs ciblés, obligatoires et désactivés est limitée à l’aide de variables. Toutefois, vous pouvez le modifier en remplaçant les styles. La restriction à l’aide de variables est fournie principalement pour garder un œil sur le nombre de variables. La restriction peut être relâchée si l’aspect d’un champ change considérablement car il est dans l’un des états décrits précédemment.
 
 ## Description d’aide {#help-description}
 
-Un auteur peut spécifier le contenu d’aide dans les champs à l’aide de composants de descriptions longue et courte. Les deux composants ont une classe commune `.guideHelpDescription` et une autre classe `.long`/ `.short`, selon le type de description. Le contenu d’aide est intégré dans un élément de paragraphe pour remplacer la définition de style de la description. La description d’aide (longue et courte) est modifiée à l’aide de variables commençant par widgetshelp, comme indiqué dans le tableau suivant :
+Un auteur peut spécifier le contenu d’aide dans les champs à l’aide de composants de descriptions longue et courte. Les deux composants ont une classe commune `.guideHelpDescription` et une autre classe `.short`/`.long`, en fonction du type de description. Le contenu d’aide est intégré dans un élément de paragraphe pour remplacer la définition de style de la description. La description d’aide (longue et courte) est modifiée à l’aide de variables commençant par widgetshelp, comme indiqué dans le tableau suivant :
 
 <table> 
  <tbody> 
@@ -520,7 +519,7 @@ Vous pouvez modifier le thème de couleur de l’en-tête et des rangées de con
   </tr> 
   <tr> 
    <td><p><code>table-header-bg-color</code></p> </td> 
-   <td><p>Couleur d’arrière-plan de la barre d’en-tête. La valeur par défaut est <code>#333</code>.<br /> </p> </td> 
+   <td><p>Couleur d’arrière-plan de la ligne d’en-tête. La valeur par défaut est <code>#333</code>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p><code>table-odd-row-bg-color</code></p> </td> 
@@ -641,7 +640,7 @@ Voici le code HTML pour l’élément de navigateur d’onglet (similaire aux on
 
 `</div>`
 
-Vous pouvez modifier la définition de style du navigateur à l’aide des règles CSS qui sélectionnent les éléments à l’aide de sélecteurs **descendants.** Par exemple, pour ajouter un style textdecoration à la balise d’ancrage :
+Vous pouvez modifier la définition de style du navigateur à l’aide des règles CSS qui sélectionnent les éléments à l’aide de sélecteurs **descendants**. Par exemple, pour ajouter un style de décoration de texte à la balise d’ancrage :
 
 Navigateur d’onglets en haut :
 
@@ -763,11 +762,11 @@ La classe guideNavIcon fournit une icône par défaut aux navigateurs d’onglet
   </tr> 
   <tr> 
    <td><p><code>tabs-completed-bg-color</code></p> </td> 
-   <td><p>Couleur d’arrière-plan lorsque l’expression d’achèvement du panneau renvoie true (vrai) </p> </td> 
+   <td><p>Couleur d’arrière-plan lorsque l’expression d’achèvement du panneau renvoie true (vrai)</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-completed-font-color</code></p> </td> 
-   <td><p>Couleur de police lorsque l’expression d’achèvement du panneau renvoie true (vrai) </p> </td> 
+   <td><p>Couleur de police lorsque l’expression d’achèvement du panneau renvoie true (vrai)</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-stepped-bg-color</code></p> </td> 
@@ -835,15 +834,15 @@ La classe guideNavIcon fournit une icône par défaut aux navigateurs d’onglet
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-completed-bg-color</code></p> </td> 
-   <td><p>Couleur d’arrière-plan lorsque l’expression d’achèvement du panneau renvoie true (vrai) </p> </td> 
+   <td><p>Couleur d’arrière-plan lorsque l’expression d’achèvement du panneau renvoie true (vrai)</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-completed-font-color</code></p> </td> 
-   <td><p>Couleur de police lorsque l’expression d’achèvement du panneau renvoie true (vrai) </p> </td> 
+   <td><p>Couleur de police lorsque l’expression d’achèvement du panneau renvoie true (vrai)</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-stepped-bg-color</code></p> </td> 
-   <td>Couleur d’arrière-plan lorsque le panneau a été activé une fois mais que l’expression d’achèvement renvoie false (faux) </td> 
+   <td>Couleur d’arrière-plan lorsque le panneau a été activé une fois mais que l’expression d’achèvement renvoie false (faux)</td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-stepped-font-color</code></p> </td> 
@@ -944,7 +943,7 @@ Un panneau comporte une barre d’outils facultative et son contenu.
 
 Le nœud du panneau est divisé en navigateurs et contenu. Il `` ``n’y a pas de composant de définition du style séparé pour le contenu. Les variables décrites sont appliquées sur le navigateur ainsi que sur le contenu.
 
-&amp;ast ; Le panneau supérieur (RootPanel) ne possède pas cette classe.
+&amp;ast;Le panneau le plus haut (RootPanel) ne dispose pas de cette classe.
 
 ## Styles mobiles {#mobile-styling}
 
@@ -1073,4 +1072,3 @@ Ces variables dans le tableau suivant influent sur la disposition de la barre d�
   </tr> 
  </tbody> 
 </table>
-
