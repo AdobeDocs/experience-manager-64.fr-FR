@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 525c4afc-e109-4546-b78c-1efee63edc43
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 991418fd-5ff8-491e-834e-2324e029e499
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 89%
 
 ---
-
 
 # Remarques concernant l’exécution d’Administration Console {#considerations-when-running-administrationconsole}
 
@@ -31,4 +30,3 @@ Il existe plusieurs éléments à prendre en compte lors de l’exécution d’A
    Il est conseillé d’exécuter Administration Console depuis un autre navigateur, tel que Mozilla Firefox, pour éviter que des liens n’échouent.
 
 * N’utilisez pas de barres obliques inverses (\) lorsque vous exécutez des recherches dans Administration Console.
-
