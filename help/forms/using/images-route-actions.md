@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
-translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+exl-id: 7b1f60e7-c8fa-43b6-bef4-88b42e7bbc36
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 51%
 
 ---
 
-
-# Personnalisation des images utilisées dans les actions d’itinéraire  {#customize-images-used-in-route-actions}
+# Personnalisation des images utilisées dans les actions d’itinéraire {#customize-images-used-in-route-actions}
 
 Pour personnaliser les images utilisées dans les actions d’itinéraire, suivez les étapes décrites dans [Procédure générique de personnalisation](/help/forms/using/generic-steps-html-workspace-customization.md), puis la procédure décrite dans cet article.
 
@@ -51,7 +50,7 @@ Pour personnaliser les images utilisées dans les actions d’itinéraire, suive
 
 1. Copiez `/libs/ws/js/runtime/templates/task.html` dans `/apps/ws/js/runtime/templates/task.html`.
 
-1. Si le nom du style CSS est identique à celui de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/task.html` :
+1. Si le nom du style CSS est identique au nom de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/task.html` :
 
    ```
    <%if(routeList == null){%>
@@ -81,7 +80,7 @@ Pour personnaliser les images utilisées dans les actions d’itinéraire, suive
                <%}%>
    ```
 
-1. Si le nom du style CSS est différent du nom de l&#39;action d&#39;itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/task.html`. Il ajoute une pile des conditions de servlet `if-else` pour mapper le style avec le nom de l’action d’itinéraire.
+1. Si le nom du style CSS est différent du nom de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/task.html`. Il ajoute une pile des conditions de servlet `if-else` pour mapper le style avec le nom de l’action d’itinéraire.
 
 ```
 <%if(routeList == null){%>
@@ -121,7 +120,7 @@ To
 
 1. Copiez `/libs/ws/js/runtime/templates/taskdetails.html` dans `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-1. Si le nom du style CSS est identique à celui de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/taskdetails.html` :
+1. Si le nom du style CSS est identique au nom de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/taskdetails.html` :
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -141,7 +140,7 @@ To
                        <%}%>
    ```
 
-1. Si le nom du style CSS est différent du nom de l&#39;action d&#39;itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/taskdetails.html`. Il ajoute une pile des conditions de servlet `if-else` pour mapper le style avec le nom de l’action d’itinéraire.
+1. Si le nom du style CSS est différent du nom de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/taskdetails.html`. Il ajoute une pile des conditions de servlet `if-else` pour mapper le style avec le nom de l’action d’itinéraire.
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -172,6 +171,5 @@ To
 1. Ouvrez `/apps/ws/js/registry.js` pour le modifier et recherchez le texte suivant :\
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
-1. Remplacez le texte par le texte suivant :\
+1. Remplacez le texte par ce qui suit :\
    `"text!/lc/apps/ws/js/runtime/templates/taskdetails.html"`
-
