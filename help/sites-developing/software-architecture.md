@@ -10,7 +10,6 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 exl-id: 4c5896a4-d3f4-4278-9af3-538ab10cd210
-translation-type: tm+mt
 source-git-commit: b7d1a2435e33d4fdd1d030d81ff1ca1b65700fa6
 workflow-type: tm+mt
 source-wordcount: '622'
@@ -36,23 +35,23 @@ En définissant les composants qui peuvent être inclus dans chaque système de 
 
 SOLID est un acronyme qui décrit cinq principes architecturaux qu’il convient de respecter :
 
-* **Principe de responsabilité** unique - chaque module, classe, méthode, etc., ne devrait avoir qu&#39;une seule responsabilité.
-* **Principe** ouvert/fermé - les modules doivent être ouverts pour extension et fermés pour modification.
-* **Principe de substitution** Liskov - les types doivent être remplaçables par leurs sous-types.
-* **Principe de** segmentation de l&#39;interface - aucun client ne doit être contraint de dépendre de méthodes qu&#39;il n&#39;utilise pas.
-* **Principe d&#39;inversion de** dépendance - Les modules de haut niveau ne doivent pas dépendre de modules de bas niveau. Les deux doivent dépendre d’abstractions. Les abstractions ne doivent pas dépendre des détails. Les détails doivent dépendre des abstractions.
+* **** Principe de responsabilité unique : chaque module, classe, méthode, etc., ne doit avoir qu’une seule responsabilité.
+* **** Principe ouvert/fermé : les modules doivent être ouverts pour extension et fermés pour modification.
+* **** Principe de substitution Liskov : les types doivent pouvoir être remplacés par leurs sous-types.
+* **** Principe de segmentation de l’interface : aucun client ne doit être contraint à dépendre de méthodes qu’il n’utilise pas.
+* **** Principe d’inversion des dépendances : les modules de haut niveau ne doivent pas dépendre des modules de bas niveau. Les deux doivent dépendre d’abstractions. Les abstractions ne doivent pas dépendre des détails. Les détails doivent dépendre des abstractions.
 
 Vous devez vous efforcer de respecter ces cinq principes pour élaborer un système offrant une stricte séparation des préoccupations.
 
 >[!TIP]
 >
->SOLID est un concept couramment utilisé dans la programmation orientée objet et chaque élément est largement discuté dans la littérature de l&#39;industrie.
+>SOLID est un concept couramment utilisé dans la programmation orientée objet et chaque élément est largement discuté dans la littérature industrielle.
 >
->Ce n&#39;est qu&#39;un bref résumé présenté pour la sensibilisation et nous vous encourageons à vous familiariser davantage avec ces concepts.
+>Ce n&#39;est qu&#39;un bref résumé présenté pour la prise de conscience et nous vous encourageons à vous familiariser davantage avec ces concepts.
 
 ### Observation du principe de robustesse {#follow-the-robustness-principle}
 
-Le principe de robustesse stipule qu’il faut être tolérant dans ce que l’on accepte, et pointilleux dans ce que l’on envoie. En d&#39;autres termes, lors de l&#39;envoi de messages à un tiers, nous devrions nous conformer entièrement aux spécifications, mais lorsque nous recevons des messages d&#39;un tiers, nous devrions accepter des messages non conformes tant que la signification du message est claire.
+Le principe de robustesse stipule qu’il faut être tolérant dans ce que l’on accepte, et pointilleux dans ce que l’on envoie. En d’autres termes, lors de l’envoi de messages à un tiers, nous devons nous conformer entièrement aux spécifications, mais lors de la réception de messages d’un tiers, nous devons accepter les messages non conformes tant que la signification du message est claire.
 
 ### Mise en œuvre de spikes dans leurs propres modules {#implement-spikes-in-their-own-modules}
 
