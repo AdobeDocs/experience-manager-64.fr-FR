@@ -1,6 +1,6 @@
 ---
-title: Forum Essentials
-seo-title: Forum Essentials
+title: Notions fondamentales sur le forum
+seo-title: Notions fondamentales sur le forum
 description: Présentation du forum
 seo-description: Présentation du forum
 uuid: 68849582-8742-40be-9e7e-0b574ae38815
@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
-translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+exl-id: 6562a440-887e-4a48-a14e-64dc36c70793
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 2%
 
 ---
 
+# Principes de base du forum {#forum-essentials}
 
-# Forum Essentials {#forum-essentials}
+Cette page fournit les informations essentielles pour utiliser la fonction de forum.
 
-Cette page fournit les informations essentielles pour travailler avec le forum.
-
-## Essentials for Client-Side {#essentials-for-client-side}
+## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -31,12 +30,12 @@ Cette page fournit les informations essentielles pour travailler avec le forum.
    <td>social/forum/components/hbs/forum<br /> social/forum/components/hbs/topic<br /> social/forum/components/hbs/post</td> 
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclus</strong></a></td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluable</strong></a></td> 
    <td>Non</td> 
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.vote<br /> cq.social.hbs.forum</td> 
+   <td>cq.ckeditor<br /> cq.social.hbs.votes<br /> cq.social.hbs.forum</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -48,14 +47,14 @@ Cette page fournit les informations essentielles pour travailler avec le forum.
   </tr>
   <tr>
    <td><strong> properties</strong></td> 
-   <td>Voir <a href="forum.md">Fonction du forum</a></td> 
+   <td>Voir <a href="forum.md">Fonctionnalité du forum</a></td> 
   </tr>
  </tbody>
 </table>
 
 * [Personnalisations côté client](client-customize.md)
 
-## Essentials for Server-Side {#essentials-for-server-side}
+## Principes élémentaires côté serveur {#essentials-for-server-side}
 
 * [API du forum](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
@@ -65,21 +64,20 @@ Cette page fournit les informations essentielles pour travailler avec le forum.
 
 ### Fonction Forum {#forum-function}
 
-Une structure de site communautaire qui comprend la fonction [Forum](functions.md#forum-function), comprend un composant `forum` configuré, ainsi que des paramètres affectant la modération, le balisage et la traduction.
+Une structure de site de communauté qui inclut la [fonction Forum](functions.md#forum-function), inclut un composant `forum` configuré, ainsi que des paramètres affectant la modération, le balisage et la traduction.
 
 ### Accès aux publications du forum (UGC) {#accessing-forum-posts-ugc}
 
-L’UGC doit être modéré à l’aide de l’une des méthodes standard de modération.\
-Voir [Modération du contenu généré par l’utilisateur](moderate-ugc.md).
+Le contenu généré par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.\
+Voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-À partir de AEM 6.1 Communautés, l&#39;utilisation d&#39;un [magasin commun](working-with-srp.md) pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
+Depuis AEM 6.1 Communities, l’utilisation d’un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
 
-**L&#39;emplacement et le format de l&#39;UGC dans le référentiel peuvent être modifiés sans avertissement**.
+**L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement**.
 
 Voir :
 
-* [Présentation](srp.md)  du fournisseur de ressources d&#39;Enregistrement - présentation et utilisation du référentiel
-* [SRP et UGC Essentials](srp-and-ugc.md)  - Exemples et méthodes d&#39;utilitaire SRP
-* [Accès à l&#39;UGC avec des directives de codage SRP](accessing-ugc-with-srp.md) 
-* [SocialUtils Refactoring](socialutils.md)  - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles
-
+* [Présentation du fournisseur de ressources de stockage](srp.md)  - Présentation et utilisation du référentiel
+* [Notions fondamentales relatives à la SRP et au contenu généré par l’utilisateur](srp-and-ugc.md)  - Exemples et méthodes d’utilitaire SRP
+* [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md)  - Instructions de codage
+* [Refactorisation](socialutils.md)  de SocialUtils : mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
