@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
-translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+exl-id: 86cc01f0-b6c0-4beb-a203-96dc1989d8f0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 95%
 
 ---
-
 
 # Configuration de Connector for EMC Documentum {#configuring-connector-for-emc-documentum}
 
@@ -28,7 +27,7 @@ La configuration de Connector for EMC Documentum requiert de configurer la conne
 >
 >Dans les versions précédentes, il était possible de stocker des actifs dans un référentiel ECM. Dans la version actuelle, les actifs sont stockés dans le référentiel natif d’AEM forms et les services du fournisseur de référentiel sont ignorés. La migration d’actifs d’un référentiel ECM vers le référentiel AEM forms s’effectue lors de la mise à niveau vers AEM forms. Pour plus d’informations, consultez le guide de mise à niveau d’AEM forms correspondant à votre serveur d’applications.
 
-## Configuration de la connexion au serveur  {#configuring-the-server-connection}
+## Configuration de la connexion au serveur {#configuring-the-server-connection}
 
 Cette rubrique décrit les tâches de Connector for EMC Documentum que vous pouvez effectuer à partir de la page Paramètres de configuration.
 
@@ -62,11 +61,11 @@ Si vous saisissez un nom d’utilisateur ou un mot de passe incorrect, vous obti
 
 Vous pouvez configurer le fournisseur de services de référentiel à utiliser avec Documentum. Les appels des services de référentiel sont délégués au fournisseur que vous configurez. Les options suivantes sont disponibles :
 
-**Nom du Prestataire de référentiel actuel :** nom du prestataire de référentiel actuel
+**Nom du fournisseur de services de référentiel actuel :** nom du fournisseur de services de référentiel actuel.
 
-**Fournisseur de référentiel ECM Documentum :** fait du fournisseur de référentiel Documentum le fournisseur de référentiel pour le référentiel. Cette option est obsolète.
+**Fournisseur du référentiel ECM Documentum :** fait du fournisseur du référentiel Documentum le fournisseur du référentiel. Cette option est obsolète.
 
-**fournisseur de référentiel :** fait du fournisseur de référentiel natif le fournisseur de référentiel pour le référentiel
+**fournisseur de référentiel :** fait du fournisseur de référentiel natif le fournisseur du référentiel.
 
 >[!NOTE]
 >
@@ -117,4 +116,3 @@ Certaines tâches manuelles sont requises pour vérifier que la fonction de dema
 1. Dans l’affichage Variables, ouvrez les propriétés de la variable « theForm » et spécifiez dans l’URI le répertoire où vous avez placé le fichier QueueSharing.swf à l’étape 5.
 1. Enregistrez le processus.
 1. Migrez le processus vers l’environnement de production, conformément à la stratégie de votre entreprise.
-
