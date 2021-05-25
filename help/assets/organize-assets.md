@@ -1,76 +1,75 @@
 ---
 title: Organisez vos ressources numériques.
-description: Organisez vos fichiers numériques, images, fichiers, dossiers, etc. à l’aide du Experience Manager.
+description: Organisez vos ressources numériques, images, fichiers, dossiers, etc. à l’aide de Experience Manager.
 contentOwner: AG
-feature: Asset Management,Search
+feature: Gestion des ressources, Recherche
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 20%
+source-wordcount: '809'
+ht-degree: 19%
 
 ---
 
-
 # Organisez vos ressources numériques.{#organize-digital-assets}
 
-L’ensemble des ressources numériques, des métadonnées et du contenu des documents Microsoft Office et PDF sont extraits et rendus utilisables dans une requête. Les recherches permettent un filtrage élaboré des ressources et respectent entièrement les autorisations. Les métadonnées sont traitées en détail dans les métadonnées de la gestion des ressources numériques.
+L’ensemble des ressources numériques, des métadonnées et du contenu des documents Microsoft Office et PDF sont extraits et rendus utilisables dans une requête. Les recherches permettent un filtrage élaboré des ressources et respectent entièrement les autorisations. Les métadonnées sont décrites en détail dans la section Métadonnées de la gestion des ressources numériques.
 
-AEM Assets prend en charge plusieurs manières d’organiser le contenu. Vous pouvez les organiser de manière hiérarchique à l’aide de dossiers ou vous pouvez les organiser de manière ad hoc et non ordonnée, à l’aide de balises, par exemple. Les utilisateurs peuvent modifier les balises dans l’éditeur de ressources de gestion des actifs numériques où les sous-ressources, rendus et métadonnées sont affichés.
+AEM Assets prend en charge plusieurs manières d’organiser le contenu. Vous pouvez les organiser de manière hiérarchique à l’aide de dossiers ou les organiser de manière ad hoc et non ordonnée à l’aide de balises, par exemple. Les utilisateurs peuvent modifier les balises dans l’éditeur de ressources de gestion des actifs numériques où les sous-ressources, rendus et métadonnées sont affichés.
 
-## Organiser les fichiers dans des dossiers {#organize-using-folders}
+## Organisation des ressources dans les dossiers {#organize-using-folders}
 
-La méthode la plus élémentaire pour organiser les fichiers consiste à les enregistrer dans des dossiers. Il est analogue à l&#39;organisation de fichiers dans des dossiers de notre système de fichiers local. Pour plus d’informations sur la création et la gestion des dossiers, voir [Gestion des fichiers](managing-assets-touch-ui.md). La manière dont vous nommez les fichiers et les dossiers, dont vous disposez les sous-dossiers et dont vous traitez les fichiers dans ces dossiers peut avoir un impact significatif sur la manière dont ces fichiers sont traités. En appliquant des stratégies cohérentes et appropriées de nommage de fichiers et de dossiers, ainsi que de bonnes pratiques de métadonnées, vous pouvez tirer le meilleur parti de votre référentiel de ressources numériques.
+La méthode la plus simple pour organiser les ressources consiste à les enregistrer dans des dossiers. C’est analogue à l’organisation de fichiers dans des dossiers de notre système de fichiers local. Pour plus d’informations sur la création et la gestion des dossiers, voir [Gestion des ressources](managing-assets-touch-ui.md). La manière dont vous nommez les fichiers et les dossiers, organisez les sous-dossiers et gérez les fichiers dans ces dossiers peut avoir un impact significatif sur la manière dont ces ressources sont traitées. Grâce à des stratégies d’attribution de noms de fichiers et de dossiers cohérentes et appropriées, ainsi qu’à de bonnes pratiques de métadonnées, vous pouvez tirer le meilleur parti de votre référentiel de ressources numériques.
 
-* Dans la plupart des cas, votre référentiel de ressources numériques est toujours en croissance. Par conséquent, il est important de formaliser l’utilisation des métadonnées, la structure des dossiers et le nommage des fichiers au début du cycle de création de contenu.
-* Utilisez les dossiers uniquement pour imposer une structure de stockage cohérente pour vos ressources numériques. Cette cohérence permet de mieux traiter et gérer vos ressources. Par exemple, les ressources placées dans les types de dossiers suivants peuvent vous aider à utiliser les [profils appropriés pour le traitement des ressources](processing-profiles.md) :
+* Dans la plupart des cas, votre référentiel de ressources numériques est toujours en croissance. Il est donc important de formaliser l’utilisation des métadonnées, la structure des dossiers et l’attribution de noms aux fichiers au début du cycle de création de contenu.
+* Utilisez les dossiers uniquement pour imposer une structure de stockage cohérente pour vos ressources numériques. Cette cohérence aide votre processus et à mieux gérer vos ressources. Par exemple, les ressources placées dans les types de dossiers suivants peuvent vous aider à utiliser les [profils appropriés à utiliser pour le traitement des ressources](processing-profiles.md) :
 
    * **Dossiers de développement** : contiennent les ressources numériques que vous utilisez actuellement.
    * **Dossiers de clients** : contiennent des ressources numériques en fonction des clients ou des noms de projet.
-   * **Dossiers**  Principal - contient des ressources numériques source d’origine.
+   * **Dossiers**  Principal : contiennent les ressources numériques sources originales.
    * **Dossiers de rendus** : contiennent les rendus et les copies des ressources numériques sources originales.
    * **Dossiers de taille de fichier** : contiennent des ressources numériques en fonction des tailles de fichier petite, moyenne et volumineuse.
    * **Dossiers intermédiaires** : contiennent les ressources numériques qui sont prêtes à être publiées sur votre site web.
-   * **Dossiers**  de type MIME : contient des ressources numériques spécifiques à des types MIME tels que les images, les documents et les supports multimédia.
+   * **Dossiers de type MIME**  : contiennent des ressources numériques spécifiques à des types MIME tels que des images, des documents et des fichiers multimédia.
    * **Dossiers d’archives** : contiennent les ressources numériques retirées.
    * **Dossiers reposant sur une date** : contiennent des ressources numériques en fonction d’une date de création ou d’une date de dernière modification.
 
-* Créez un répertoire de dossiers qui ne sont pas susceptibles d’être modifiés de sorte que toute personnalisation ou automatisation continue de fonctionner. Par exemple, les profils de traitement affectés continuent de fonctionner.
-* Si un fichier est déjà publié, vous utilisez AEM pour déplacer le fichier vers un autre dossier et pour le republier depuis son nouvel emplacement, l’emplacement du fichier publié d’origine est toujours disponible, ainsi que le fichier récemment republié. Toutefois, l’actif publié d’origine est *perdu* à l’AEM et ne peut pas être annulé. Par conséquent, il est recommandé d’abord d’annuler la publication d’un fichier, puis de le déplacer vers un autre dossier.
+* Créez un répertoire de dossiers susceptibles de ne pas changer, de sorte que toute personnalisation ou automatisation continue de fonctionner. Par exemple, les profils de traitement affectés continuent à fonctionner.
+* Si une ressource est déjà publiée, utilisez AEM pour la déplacer vers un autre dossier et la republier à partir de son nouvel emplacement, l’emplacement d’origine de la ressource publiée est toujours disponible, ainsi que la ressource qui vient d’être republiée. Toutefois, la ressource publiée d’origine est *perdue* à AEM et ne peut pas être annulée. Par conséquent, il est recommandé d’abord d’annuler la publication d’une ressource, puis de la déplacer vers un autre dossier.
 
-## Organiser les fichiers à l’aide de balises {#use-tags-to-organize-assets}
+## Organisation des ressources à l’aide des balises {#use-tags-to-organize-assets}
 
-Grâce aux balises, en tant que métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de la recherche, augmenter le classement des recherches pour certains fichiers et tirer parti des algorithmes d’IA Adobe Sensei pour la découverte de fichiers.
+À l’aide de balises, en tant que métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de recherche, améliorer le classement de certaines ressources et utiliser les algorithmes d’IA Adobe Sensei pour la découverte de ressources.
 
-Adobe Experience Manager Assets utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, notre intelligence artificielle et notre système d&#39;apprentissage automatique, qui peut être formé pour reconnaître et appliquer des balises standard et commerciales à l&#39;imagerie. Les balises actives peuvent également identifier le contenu, les mots individuels ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
+Adobe Experience Manager Assets utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, notre intelligence artificielle et notre structure d’apprentissage automatique, qui peuvent être formés pour reconnaître et appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots individuels ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
 
-Pour plus d’informations, reportez-vous aux articles suivants :
+Pour plus d’informations, voir les articles suivants :
 
-* [A propos des balises dans AEM](/help/sites-authoring/tags.md)
-* [Modification des métadonnées de fichier](meta-edit.md)
-* [Amélioration des balises actives dans les ressources](enhanced-smart-tags.md)
+* [À propos des balises dans AEM](/help/sites-authoring/tags.md)
+* [Modification des métadonnées de ressource](meta-edit.md)
+* [Balises intelligentes améliorées dans Assets](enhanced-smart-tags.md)
 
-## Organiser en tant que collections {#organize-as-collections}
+## Organisation en tant que collections {#organize-as-collections}
 
-Grâce aux collections de ressources dans les ressources des Experience Manager, vous pouvez rationaliser la possibilité de créer, de modifier et de partager des ressources entre utilisateurs. Créez plusieurs types de collections en fonction de leur utilisation, y compris des collections qui contiennent une liste de référence statique de ressources, de dossiers et de collections, ainsi que des collections qui extraient des ressources en fonction de critères de recherche.  Vous pouvez également créer des collections avec des ressources provenant de différents emplacements et les partager avec plusieurs utilisateurs avec différents niveaux d’accès, d’affichage et de modification des privilèges.
+Avec les collections de ressources dans Experience Manager Assets, vous pouvez rationaliser la création, la modification et le partage de ressources entre les utilisateurs. Créez plusieurs types de collections en fonction de leur utilisation, y compris des collections contenant une liste de référence statique de ressources, dossiers et collections, ainsi que des collections qui extraient des ressources en fonction de critères de recherche.  Vous pouvez également créer des collections avec des ressources provenant de différents emplacements et les partager avec plusieurs utilisateurs disposant de différents niveaux d’accès, d’affichage et de modification des privilèges.
 
-Pour plus d’informations, voir [gestion des collections](managing-collections-touch-ui.md).
+Pour plus d’informations, voir [Gestion des collections](managing-collections-touch-ui.md)
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
 Add back links to blog posts by marketing?
 -->
 
-## Organiser vos ressources pour utiliser des profils {#organize-to-use-profiles}
+## Organiser vos ressources pour utiliser les profils {#organize-to-use-profiles}
 
-Un profil de traitement contient des commandes de traitement des ressources qui s’appliquent aux ressources qui sont transférées vers des dossiers prédéfinis. Les profils sont utilisés pour automatiser le traitement du contenu d’un dossier ou des ressources fraîchement téléchargées. Vous pouvez tirer parti des profils pour mieux organiser vos ressources.
+Un profil de traitement contient des commandes de traitement des ressources qui s’appliquent aux ressources qui sont chargées dans des dossiers prédéfinis. Les profils sont utilisés pour automatiser le traitement du contenu d’un dossier ou de ressources fraîchement chargées. Vous pouvez tirer parti des profils pour mieux organiser vos ressources.
 
-La normalisation de l’utilisation des métadonnées, du nommage de fichiers et de la structure des dossiers permet d’appliquer des profils de traitement aux dossiers avec plus de précision et de cohérence à mesure que votre pool de ressources numériques s’accroît.
+La normalisation de l’utilisation des métadonnées, de l’attribution des noms de fichiers et de la structure des dossiers vous permet d’appliquer des profils de traitement à vos dossiers avec une précision et une cohérence accrues.
 
-Pour plus d’informations sur les différents profils que vous pouvez créer et gérer pour traiter des ressources, voir
+Pour plus d’informations sur les différents profils que vous pouvez créer et gérer pour traiter des ressources, voir :
 
 * [Profils de traitement des métadonnées, des images et des vidéos](processing-profiles.md)
 * [Profils de métadonnées](metadata-profiles.md)
 * [Profils vidéo](video-profiles.md)
-* [profils d’image Dynamic Media](image-profiles.md)
+* [Profils d’image Dynamic Media](image-profiles.md)
