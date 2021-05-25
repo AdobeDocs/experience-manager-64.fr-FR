@@ -7,19 +7,18 @@ uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formulaires adaptatifs
+exl-id: 42c41625-7441-479c-bd07-7e96e867cc0a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1235'
-ht-degree: 80%
+ht-degree: 83%
 
 ---
 
-
 # Création de formulaires adaptatifs à l’aide d’un schéma JSON {#creating-adaptive-forms-using-json-schema}
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 La création d’un formulaire adaptatif à l’aide d’un schéma JSON en tant que modèle de formulaire requiert des connaissances de base en matière de schémas JSON. Il est recommandé de lire le contenu suivant avant cet article.
 
@@ -47,7 +46,7 @@ Cette mise en correspondance des éléments JSON avec les composants de formulai
    <th><strong>Composant de formulaire adaptatif</strong></th> 
   </tr> 
   <tr> 
-   <td><p>Propriétés de chaîne avec les contraintes enum et enumNames.</p> <p>Syntaxe,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td> 
+   <td><p>Propriétés de chaînes avec contrainte d’énumération et enumNames.</p> <p>Syntaxe,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td> 
    <td><p>Composant de liste déroulante :</p> 
     <ul> 
      <li>Les valeurs énumérées dans enumNames s’affichent dans la boîte de dialogue.</li> 
@@ -93,17 +92,17 @@ Cette mise en correspondance des éléments JSON avec les composants de formulai
 
 Le formulaire adaptatif utilise les informations disponibles dans le schéma JSON pour mapper chaque champ généré. En particulier :
 
-* La propriété title sert de libellé pour les composants du formulaire adaptatif.
-* La propriété description est définie en tant que description longue pour un composant de formulaire adaptatif.
-* La propriété par défaut sert de valeur initiale à un champ de formulaire adaptatif.
-* La propriété maxLength est définie sous la forme d’un attribut maxlength du composant de champ de texte.
-* Les propriétés minimales, maximales, exclusivesMinimum et exclusivesMaximum sont utilisées pour le composant de zone numérique.
-* Pour prendre en charge la plage du composant DatePicker, d’autres propriétés de Schéma JSON minDate et maxDate sont fournies.
-* Les propriétés minItems et maxItems permettent de limiter le nombre d’éléments/de champs qui peuvent être ajoutés ou supprimés d’un composant de panneau.
+* La propriété title sert de libellé pour les composants de formulaire adaptatif.
+* La propriété description est définie comme description longue pour un composant de formulaire adaptatif.
+* La propriété par défaut sert de valeur initiale d’un champ de formulaire adaptatif.
+* La propriété maxLength est définie en tant qu’attribut maxlength du composant de champ de texte.
+* Les propriétés minimum, maximum, exclusiveMinimum et exclusiveMaximum sont utilisées pour le composant de zone numérique.
+* Pour prendre en charge la plage pour le composant DatePicker, d’autres propriétés de schéma JSON minDate et maxDate sont fournies.
+* Les propriétés minItems et maxItems permettent de limiter le nombre d’éléments/de champs pouvant être ajoutés ou supprimés d’un composant de panneau.
 * La propriété readOnly définit l’attribut readonly d’un composant de formulaire adaptatif.
-* La propriété requise marque le champ du formulaire adaptatif comme obligatoire alors que dans le cas d’un panneau (où le type est un objet), les données JSON envoyées finales comportent des champs avec une valeur vide correspondant à cet objet.
-* La propriété pattern est définie en tant que modèle de validation (expression régulière) dans le formulaire adaptatif.
-* L’extension du fichier de Schéma JSON doit être conservée dans .schéma.json. Par exemple, &lt;nom_fichier>.schéma.json.
+* La propriété requise marque le champ de formulaire adaptatif comme étant obligatoire, tandis que dans le cas du panneau (où le type est objet), les données JSON finales envoyées ont des champs avec une valeur vide correspondant à cet objet.
+* La propriété pattern est définie comme modèle de validation (expression régulière) dans le formulaire adaptatif.
+* L’extension du fichier de schéma JSON doit être conservée dans .schema.json. Par exemple, &lt;nom_fichier>.schéma.json.
 
 ## Exemple de schéma JSON {#sample-json-schema}
 
@@ -289,7 +288,7 @@ Vous trouverez ci-dessous un exemple de schéma JSON.
 
 ### Définitions de schéma réutilisables {#reusable-schema-definitions}
 
-Les touches de définition sont utilisées pour identifier les schémas réutilisables. Les définitions de schéma réutilisables sont utilisées pour créer des fragments. Il est semblable à l’identification des types complexes dans XSD. Un exemple de schéma JSON dont la définition est fournie ci-dessous :
+Les clés de définition sont utilisées pour identifier les schémas réutilisables. Les définitions de schéma réutilisables sont utilisées pour créer des fragments. Il est semblable à l’identification des types complexes dans XSD.  Un exemple de schéma JSON dont la définition est fournie ci-dessous :
 
 ```
 {
@@ -318,9 +317,9 @@ Les touches de définition sont utilisées pour identifier les schémas réutili
 
 L’exemple ci-dessus définit un enregistrement de client dans lequel chaque client dispose d’une expédition et d’une adresse de facturation. La structure des deux adresses est la même : les adresses indiquent une rue, la ville et un état. Il est donc préférable de ne pas dupliquer les adresses. Cela simplifie également l’ajout et la suppression de champs simples pour toutes les nouvelles modifications.
 
-## Préconfiguration des champs dans la définition du schéma JSON  {#pre-configuring-fields-in-json-schema-definition}
+## Préconfiguration des champs dans la définition du schéma JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le champ de Schéma JSON en vue de le mapper à un composant de formulaire adaptatif personnalisé. Un exemple est répertorié ci-dessous :
+Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le champ de schéma JSON afin de le mapper à un composant de formulaire adaptatif personnalisé. Un exemple est répertorié ci-dessous :
 
 ```
 {
@@ -342,7 +341,7 @@ Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le 
 
 ## Valeurs possibles de limite pour un composant de formulaire adaptatif  {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Vous pouvez ajouter les restrictions suivantes aux éléments de Schéma JSON pour limiter les valeurs acceptables pour un composant de formulaire adaptatif :
+Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON pour limiter les valeurs acceptables pour un composant de formulaire adaptatif :
 
 <table> 
  <tbody> 
@@ -358,7 +357,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de Schéma JSON po
    <td><p>Spécifie la limite supérieure pour les valeurs numériques et les dates. Par défaut, la valeur maximale est incluse.</p> </td> 
    <td> 
     <ul> 
-     <li>Champ numérique</li> 
+     <li>Zone numérique</li> 
      <li>Procédure pas à pas numérique<br /> </li> 
      <li>Sélecteur de date</li> 
     </ul> </td> 
@@ -369,7 +368,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de Schéma JSON po
    <td><p>Définit la limite inférieure pour les valeurs numériques et les dates. Par défaut, la valeur minimale est incluse.</p> </td> 
    <td> 
     <ul> 
-     <li>Champ numérique</li> 
+     <li>Zone numérique</li> 
      <li>Procédure pas à pas numérique</li> 
      <li>Sélecteur de date</li> 
     </ul> </td> 
@@ -380,7 +379,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de Schéma JSON po
    <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être inférieure à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit inférieure ou égale à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> </td> 
    <td> 
     <ul> 
-     <li>Champ numérique</li> 
+     <li>Zone numérique</li> 
      <li>Procédure pas à pas numérique</li> 
      <li>Sélecteur de date</li> 
     </ul> </td> 
@@ -391,7 +390,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de Schéma JSON po
    <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure ou égale à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> </td> 
    <td> 
     <ul> 
-     <li>Champ numérique</li> 
+     <li>Zone numérique</li> 
      <li>Procédure pas à pas numérique</li> 
      <li>Sélecteur de date</li> 
     </ul> </td> 
@@ -457,6 +456,5 @@ Dans un sous-formulaire répétable, vous devez utiliser le sous-formulaire comp
 
 Vous disposez de deux options :
 
-* Parcourez la structure de l’arborescence. 
+* Parcourez la structure de l’arborescence.
 * Utilisez la zone Rechercher pour rechercher un élément.
-
