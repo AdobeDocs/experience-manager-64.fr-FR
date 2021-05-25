@@ -1,22 +1,21 @@
 ---
 title: 'Authentification Adobe IMS et prise en charge de l’Admin Console pour AEM Managed Services '
 seo-title: 'Authentification Adobe IMS et prise en charge de l’Admin Console pour AEM Managed Services '
-description: Apprenez à utiliser le Admin Console en AEM.
-seo-description: Apprenez à utiliser le Admin Console en AEM.
+description: Découvrez comment utiliser le Admin Console dans AEM.
+seo-description: Découvrez comment utiliser le Admin Console dans AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
-translation-type: tm+mt
-source-git-commit: e672f4edf87bd4d3af985e2ea598feb4e26d1553
+exl-id: 38bbad03-aead-43d3-a28c-cc716955ddfb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1769'
 ht-degree: 82%
 
 ---
-
 
 # Authentification Adobe IMS et prise en charge de l’Admin Console pour AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
@@ -26,9 +25,9 @@ ht-degree: 82%
 
 ## Présentation {#introduction}
 
-AEM 6.4.3.0 introduit la prise en charge des Admin Console pour les instances AEM et l’authentification basée sur l’Adobe IMS(Identity Management System) pour les **clients AEM Managed Services**.
+AEM 6.4.3.0 introduit la prise en charge des Admin Console pour les instances AEM et l’authentification par Adobe IMS (système Identity Management) pour les clients **Managed Services**.
 
-L’intégration d’AEM à l’Admin Console permettra aux clients AEM Managed Services de gérer tous les utilisateurs d’Experience Cloud dans une seule console. Les utilisateurs et les groupes peuvent être affectés à des profils de produits associés à des instances AEM, ce qui leur permet de se connecter à une instance spécifique.
+L’intégration d’AEM à l’Admin Console permettra aux clients AEM Managed Services de gérer tous les utilisateurs d’Experience Cloud dans une seule console. Les utilisateurs et les groupes peuvent être affectés à des profils de produit associés à des instances AEM, ce qui leur permet de se connecter à une instance spécifique.
 
 ## Principales caractéristiques {#key-highlights}
 
@@ -56,7 +55,7 @@ L’intégration du client à l’Admin Console est un prérequis pour utiliser 
 
 Pour commencer, une organisation doit être configurée pour les clients dans Adobe IMS. Les clients Adobe Enterprise sont représentés en tant qu’organisations IMS dans [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html).
 
-AEM clients Managed Services doivent déjà disposer d’une organisation configurée et, dans le cadre de l’attribution de privilèges d’accès IMS, les instances de client seront mises à disposition dans le Admin Console pour la gestion des droits d’utilisateur et de l’accès.
+AEM clients Managed Services doivent déjà avoir une organisation configurée. Dans le cadre de la mise en service IMS, les instances de client seront mises à disposition dans le Admin Console pour gérer les droits et accès des utilisateurs.
 
 L’authentification des utilisateurs par IMS sera un travail commun à AMS et les clients, chacun devant mener à bien ses workflows.
 
@@ -64,11 +63,11 @@ Une fois qu’un client est défini en tant qu’organisation IMS et qu’AMS a 
 
 ![image2018-9-23_23-33-25](assets/image2018-9-23_23-33-25.png)
 
-1. L&#39;administrateur système désigné reçoit une invitation à se connecter au Admin Console.
+1. L’administrateur système désigné reçoit une invitation à se connecter au Admin Console.
 1. L’administrateur système désigne le domaine pour confirmer la propriété du nom de domaine (dans cet exemple acme.com)
 1. L’administrateur système configure les répertoires utilisateur
 1. L’administrateur système configure le fournisseur d’identité (IDP) dans l’Admin Console pour la configuration SSO.
-1. L’administrateur AEM gère les groupes locaux, les autorisations et les droits comme d’habitude. Voir Synchronisation des utilisateurs et des groupes
+1. L’administrateur AEM gère les groupes locaux, les autorisations et les droits comme d’habitude. Voir Synchronisation des utilisateurs et des groupes .
 
 >[!NOTE]
 >
@@ -114,7 +113,7 @@ La synchronisation des utilisateurs est distribuée via le référentiel Adobe G
 
 [https://github.com/adobe-apiplatform/user-sync.py/releases/latest](https://github.com/adobe-apiplatform/user-sync.py/releases/latest)
 
-Notez qu’une version préliminaire 2.4RC1 est disponible avec la prise en charge de la création de groupe dynamique et se trouve ici : [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
+Notez qu’une version préliminaire 2.4RC1 avec prise en charge de la création de groupe dynamique est disponible ici : [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
 Cette version a pour principales fonctionnalités la possibilité de mapper de manière dynamique les nouveaux groupes LDAP pour l’appartenance des utilisateurs à Admin Console, ainsi que la création dynamique de groupes d’utilisateurs.
 
@@ -132,7 +131,7 @@ Vous trouverez plus d’informations sur les nouvelles fonctionnalités du group
 >La documentation relative à la console Adobe I/O est disponible [ici](https://www.adobe.io/apis/cloudplatform/console.html).
 >
 >
->L&#39;API User Management utilisée par l&#39;outil de synchronisation des utilisateurs est traitée à cet [emplacement](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+>L’API User Management utilisée par l’outil de synchronisation des utilisateurs est traitée à cet [emplacement](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
 
 >[!NOTE]
 >
@@ -194,17 +193,17 @@ Une fois l’authentification terminée, l’utilisateur est redirigé vers AEM 
 
 Pour les instances AEM existantes qui utilisent une autre méthode d’authentification et qui sont désormais migrées vers IMS, une étape de migration est nécessaire.
 
-Les utilisateurs existants dans le référentiel AEM (provenant localement, via LDAP ou SAML) peuvent être migrés pour pointer vers IMS en tant que IDP à l’aide de l’utilitaire de migration d’utilisateur.
+Les utilisateurs existants dans le référentiel AEM (source locale, via LDAP ou SAML) peuvent être migrés pour pointer vers IMS en tant que fournisseur d’identité à l’aide de l’utilitaire de migration des utilisateurs.
 
 Cet utilitaire sera exécuté par votre équipe AMS dans le cadre de la mise en service de l’IMS.
 
 ### Gestion des autorisations et des listes de contrôle d’accès dans AEM  {#managing-permissions-and-acls-in-aem}
 
-Le contrôle d&#39;accès et les autorisations continueront d’être gérés en AEM, ce qui peut se faire en séparant les groupes d’utilisateurs des IMS (par exemple AEM-GRP-008 dans l’exemple ci-dessous) et des groupes locaux où les autorisations et le contrôle d&#39;accès sont définis. Les groupes d’utilisateurs synchronisés à partir de l’IMS peuvent être attribués aux groupes locaux et hériter des autorisations.
+Le contrôle d’accès et les autorisations continueront à être gérés dans AEM. Pour ce faire, vous pouvez séparer les groupes d’utilisateurs issus d’IMS (par exemple AEM-GRP-008 dans l’exemple ci-dessous) et les groupes locaux dans lesquels les autorisations et le contrôle d’accès sont définis. Les groupes d’utilisateurs synchronisés à partir de l’IMS peuvent être attribués aux groupes locaux et hériter des autorisations.
 
 Dans l’exemple ci-dessous, nous ajoutons des groupes synchronisés au groupe local *Dam_Users* comme exemple.
 
-Dans ce cas, un utilisateur a également été attribué à plusieurs groupes dans l’Admin Console. ( Notez que les utilisateurs et les groupes peuvent être synchronisés à partir du protocole LDAP à l&#39;aide de l&#39;outil de synchronisation des utilisateurs ou créés localement, consultez la section **Intégration d&#39;utilisateurs au Admin Console** ci-dessus).
+Dans ce cas, un utilisateur a également été attribué à plusieurs groupes dans l’Admin Console. ( Notez que les utilisateurs et les groupes peuvent être synchronisés à partir de LDAP à l’aide de l’outil de synchronisation des utilisateurs ou créés localement, consultez la section **Intégration des utilisateurs au Admin Console** ci-dessus).
 
 >[!NOTE]
 >
@@ -227,4 +226,3 @@ Dans AEM, les groupes d’utilisateurs synchronisés à partir de l’IMS peuven
 Comme illustré ci-dessous, le groupe *AEM-GRP_008* hérite des autorisations et droits des utilisateurs DAM. C’est un moyen efficace de gérer des autorisations pour les groupes synchronisés. Il est généralement utilisé dans les méthodes d’authentification par LDAP.
 
 ![screen_shot_2018-09-17at110505pm](assets/screen_shot_2018-09-17at110505pm.png)
-
