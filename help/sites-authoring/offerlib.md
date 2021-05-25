@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 889b5ffc-3652-47d8-b576-128f3cee513a
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 5c7c1cda-0e9c-454f-91c4-8e1f37a155c3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 100%
 
 ---
-
 
 # Création et gestion d’offres  {#creating-and-managing-offers}
 
@@ -27,7 +26,7 @@ Utilisez la console Offres pour créer des offres que vous pourrez [utiliser dan
 
 La console Offres trie les offres par marque. Chaque marque contient une bibliothèque d’offres qui peuvent être utilisées dans les expériences d’une marque. Utilisez des dossiers pour organiser hiérarchiquement les offres dans chaque bibliothèque. Une structure de dossiers logique permet aux auteurs de retrouver facilement des offres en les parcourant. Les outils de balisage et de recherche permettent également aux auteurs de retrouver des offres pertinentes.
 
-## Ajout d’une marque dans la console Offres    {#add-a-brand-using-the-offers-console}
+## Ajout d’une marque dans la console Offres   {#add-a-brand-using-the-offers-console}
 
 Créez une marque à laquelle vos offres sont associées. Ouvrez une marque dans la console Offres pour accéder à la bibliothèque d’offres dans laquelle vous pouvez créer des dossiers et des offres.
 
@@ -110,4 +109,3 @@ Pour rechercher des offres :
 
 1. En haut de la console Offres, cliquez ou appuyez sur l’icône en forme de loupe. Par défaut, la recherche se limite aux offres.
 1. Entrez un mot-clé pour rechercher des offres. Faites votre choix parmi les résultats.
-
