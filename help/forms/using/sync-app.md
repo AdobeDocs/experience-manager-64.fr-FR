@@ -9,16 +9,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: b5681fe5-69ba-4fc0-95e3-6ffdcdd95382
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 96%
 
 ---
 
-
-# Synchronisation de l’application  {#synchronizing-the-app}
+# Synchronisation de l’application {#synchronizing-the-app}
 
 ## Synchronisation de l’application {#synchronizing-the-app-1}
 
@@ -30,7 +29,7 @@ Lorsque vous êtes connecté avec le serveur AEM Forms, votre application est s
 
 **Synchronisation manuelle de l’application**
 
-Appuyez sur le bouton Synchroniser ![sync-app](assets/sync-app.png) dans l’angle inférieur droit de l’écran d’accueil.
+Appuyez sur le bouton Synchroniser ![sync-app](assets/sync-app.png) dans le coin inférieur droit de l’écran d’accueil.
 
 **Modification de la fréquence de synchronisation**
 
@@ -48,4 +47,3 @@ Appuyez sur le bouton Synchroniser ![sync-app](assets/sync-app.png) dans l’ang
 * Dans le fichier .js, l’appel de la fonction processOfflineSubmittedSavedTasks(...) envoie vers le serveur les tâches enregistrées/envoyées. Il gère également les erreurs ou les conflits dans le processus de synchronisation. En cas d’échec de l’envoi de la tâche, la tâche est marquée comme en échec dans l’application. En outre, la tâche reste dans votre Outbox.
 * Les fonctions syncSubmittedTask() et syncSavedTask() effectuent des opérations sur des tâches individuelles.
 * L’appel de la fonction processOfflineSubmittedSavedTasks() est lancé par le composant de la liste des tâches après que l’utilisateur a sélectionné la synchronisation de l’état hors connexion avec le serveur ou la synchronisation automatique par le thread en arrière-plan.
-
