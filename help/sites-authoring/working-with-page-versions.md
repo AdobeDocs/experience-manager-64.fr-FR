@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: fa331c03-5587-452d-ab96-ac2926ae0da3
-translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+exl-id: 2df7c08f-db17-4666-ba39-e81cc2e656d7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 96%
 
 ---
-
 
 # Utilisation des versions de page{#working-with-page-versions}
 
@@ -26,14 +25,14 @@ Le contrôle de version permet de créer un « instantané » d’une page à 
 * Restaurer la version précédente d’une page (pour annuler une modification apportée à une page, par exemple).
 * Comparer la version actuelle d’une page avec une version précédente (les différences dans le texte et les images sont mises en évidence).
 
-## Création d’une version    {#creating-a-new-version}
+## Création d’une version   {#creating-a-new-version}
 
 Vous pouvez créer une version de votre ressource depuis :
 
 * le [rail de la frise chronologique](#creating-a-new-version-timeline)
 * l’option [Créer](#creating-a-new-version-create-with-a-selected-resource) (lorsqu’une ressource est sélectionnée).
 
-### Création d’une version - Frise chronologique{#creating-a-new-version-timeline}
+### Création d’une version – Frise chronologique {#creating-a-new-version-timeline}
 
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -51,7 +50,7 @@ Vous pouvez créer une version de votre ressource depuis :
 
    Les informations dans la frise chronologique sont mises à jour pour indiquer la nouvelle version.
 
-### Création d’une version - Création avec une ressource sélectionnée {#creating-a-new-version-create-with-a-selected-resource}
+### Création d’une version – Création avec une ressource sélectionnée {#creating-a-new-version-create-with-a-selected-resource}
 
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -127,7 +126,7 @@ Pour comparer la version actuelle de la page avec une version précédente :
 
 1. Sélectionnez **Comparer à actuel**. L’[outil de comparaison des pages](/help/sites-authoring/page-diff.md) s’ouvre et affiche les différences.
 
-## Distorsion du temps Timewarp   {#timewarp}
+## Distorsion du temps Timewarp {#timewarp}
 
 La fonction de distorsion du temps Timewarp permet de simuler l’état *publié* d’une page à des moments spécifiques dans le passé.
 
@@ -168,4 +167,4 @@ Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutef
 
 >[!CAUTION]
 >
->Timewarp est conçu comme un outil permettant aux auteurs de comprendre et de créer leur contenu. Il ne s’agit pas d’un journal d’audit et il n’est pas destiné à des fins juridiques.
+>Timewarp est un outil conçu pour aider les auteurs à comprendre et à créer leur contenu. Il ne s’agit pas d’un journal d’audit et il n’est pas destiné à des fins juridiques.
