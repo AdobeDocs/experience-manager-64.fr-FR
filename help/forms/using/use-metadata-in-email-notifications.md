@@ -6,14 +6,13 @@ seo-description: Utilisation des métadonnées pour renseigner les informations 
 uuid: 17e018c9-6bf8-4042-bba9-4ebe449304ac
 topic-tags: publish
 discoiquuid: bdf13893-630a-43cd-aaeb-c7c16bf4f8a6
-translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+exl-id: 248c5adf-23e9-463f-9f29-869ae2426c22
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
-
 
 # Utilisation de métadonnées dans une notification électronique  {#use-metadata-in-an-email-notification}
 
@@ -98,7 +97,7 @@ message=<html><body>\n\
 </html>\n\
 ```
 
-## Utilisation des métadonnées générées par le système dans une notification électronique  {#using-system-generated-metadata-in-an-email-notification}
+## Utilisation des métadonnées générées par le système dans une notification électronique {#using-system-generated-metadata-in-an-email-notification}
 
 Une application AEM Forms fournit plusieurs variables de métadonnées (paires clé-valeur) prêtes à l’emploi. Vous pouvez utiliser ces variables dans un modèle de courrier électronique. La valeur de la variable est basée sur une application de formulaires associés. Le tableau suivant répertorie toutes les variables de métadonnées disponibles prêtes à l’emploi :
 
@@ -153,7 +152,7 @@ Une application AEM Forms fournit plusieurs variables de métadonnées (paires c
 
 ## Utilisation des métadonnées personnalisées dans une notification électronique {#using-custom-metadata-in-an-email-notification}
 
-Vous pouvez également utiliser des métadonnées personnalisées dans une notification électronique. Les métadonnée personnalisées contiennent des informations en plus des métadonnées générées par le système ; par exemple, les informations de stratégie récupérées à partir d’une base de données. Vous pouvez utiliser un lot ECMAScript ou OSGi pour ajouter des métadonnées personnalisées dans crx-repository :
+Vous pouvez également utiliser des métadonnées personnalisées dans une notification électronique. Les métadonnée personnalisées contiennent des informations en plus des métadonnées générées par le système ; par exemple, les informations de stratégie récupérées à partir d’une base de données. Vous pouvez utiliser un lot ECMAScript ou OSGi pour ajouter des métadonnées personnalisées dans le référentiel crx :
 
 ### Utilisation de ECMAScript pour ajouter des métadonnées personnalisées  {#use-ecmascript-to-add-custom-metadata}
 
@@ -202,11 +201,11 @@ Vous pouvez utiliser l’interface Java WorkitemUserMetadataService pour ajouter
 
 Pour créer un bundle OSGi avec une interface Java, ajoutez les fichiers .jar [SDK client AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) et [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
 
-1. Ouvrez l’IDE Eclipse. Accédez à Fichier > Nouveau projet.
+1. Ouvrez l’IDE Eclipse. Accédez à Fichier  Nouveau projet.
 
 1. Sur l’écran de sélection de l’assistant, sélectionnez Projet Maven puis cliquez sur Suivant.
 
-1. Sur le nouveau projet Maven, conservez les valeurs par défaut, puis cliquez sur Suivant. Sélectionnez un archétype et cliquez sur Suivant. Par exemple, maven-archetype-quickstart. Spécifiez l’ID du groupe, l’ID de l’artefact, la version et le package pour le projet et cliquez sur Terminer. La du projet est créée.
+1. Sur le nouveau projet Maven, conservez les valeurs par défaut, puis cliquez sur Suivant. Sélectionnez un archétype et cliquez sur Suivant. Par exemple, maven-archetype-quickstart. Spécifiez l’ID du groupe, l’ID de l’artefact, la version et le package pour le projet et cliquez sur Terminer. Le projet est créé.
 
 1. Ouvrez le fichier pom.xml pour modifier et remplacer tout le contenu du fichier par ce qui suit :
 
