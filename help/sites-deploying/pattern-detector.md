@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Mise à niveau
+exl-id: 375e202c-21d4-41f1-a2d5-592ac95c8f25
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 93%
 
 ---
-
 
 # Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs{#assessing-the-upgrade-complexity-with-the-pattern-detector}
 
@@ -49,14 +48,14 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
 
 * **Via la console Felix Inventory :**
 
-1. Accédez à AEM Web Console en accédant à : https://<i></i>adresse du serveur:serverport/system/console/configMgr
+1. Accédez à la console web d’AEM en accédant à : https://<i></i>serveraddress:serverport/system/console/configMgr
 1. Sélectionnez **État – Outil de détection des motifs**, comme illustré ci-dessous :
 
-   ![capture d&#39;écran-2018-2-5détecteur à motifs](assets/screenshot-2018-2-5pattern-detector.png)
+   ![capture d’écran-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Via une interface JSON standard ou une interface en mode texte réactive**
 
-* **Au moyen d’une interface** de lignes JSON réactives, qui génère un document JSON distinct dans chaque ligne.
+* **Via une interface** de lignes JSON réactive, qui génère un document JSON distinct dans chaque ligne.
 
 Vous trouverez, ci-dessous, une description détaillée de ces deux méthodes :
 
@@ -222,4 +221,3 @@ Actuellement, l’outil de détection des motifs permet de vérifier :
 * les définitions des index Oak (compatibilité) ;
 * les modules VLT (surutilisation) ;
 * la compatibilité des nœuds rep:User (dans le contexte de la configuration OAuth).
-
