@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: e1431ad9-3bae-4ac3-97e2-96dcbfce1f71
-translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+exl-id: a57bd3c4-2d50-4089-8279-1e403e9469bf
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 89%
+ht-degree: 92%
 
 ---
-
 
 # Personnalisation de la disposition et de la position des messages d’erreur d’un formulaire adaptatif {#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
@@ -26,7 +25,7 @@ Vous pouvez personnaliser la disposition et la position des messages d’erreur 
 * Personnalisation du contenu d’un indicateur d’aide dynamique
 * Personnaliser la position des composants de champ (légende, widget, brève description, longue description et composants d’indicateur d’aide) sans apporter de modifications aux propriétés CSS correspondantes
 
-## Personnalisation de la disposition des champs  {#customize-layout-of-fields}
+## Personnalisation de la disposition des champs {#customize-layout-of-fields}
 
 Vous pouvez personnaliser la disposition d’un champ spécifique ou de tous les champs pour modifier la position de la légende et des messages d’erreur. Effectuez les étapes suivantes pour appliquer une disposition personnalisée à un champ :
 
@@ -34,8 +33,8 @@ Vous pouvez personnaliser la disposition d’un champ spécifique ou de tous les
 
 Effectuez les étapes suivantes pour appliquer une disposition personnalisée à un champ spécifique :
 
-1. Ouvrez le formulaire en mode **Style**. Pour ouvrir le formulaire en mode style, dans la barre d’outils de la page, appuyez sur ![liste déroulante de trame](assets/canvas-drop-down.png) > **Style**.
-1. Dans la barre latérale, sous **Objets de formulaire**, sélectionnez le champ et appuyez sur le bouton Modifier ![bouton-modifier](assets/edit-button.png).
+1. Ouvrez le formulaire en mode **Style**. Pour ouvrir le formulaire en mode Style, dans la barre d’outils de la page, appuyez sur ![menu déroulant de la zone de travail](assets/canvas-drop-down.png) > **Style**.
+1. Dans la barre latérale, sous **Objets de formulaire**, sélectionnez le champ et appuyez sur le bouton Modifier ![edit-button](assets/edit-button.png).
 1. Sélectionnez l’état du champ que vous souhaitez personnaliser, puis spécifiez le style de cet état.
 
    ![Spécification du style intégré d’un champ](assets/edit-error-state.png)
@@ -47,7 +46,7 @@ Avec AEM Forms, vous pouvez désormais créer un thème et l’appliquer à votr
 Créez un thème à l’aide de l’éditeur de thèmes pour personnaliser la mise en forme de tous les champs du formulaire. Après avoir créé un thème, effectuez les étapes suivantes pour l’appliquer à un formulaire :
 
 1. Ouvrez votre formulaire en mode d’édition.
-1. En mode d’édition, sélectionnez un composant, puis appuyez sur ![niveau champ](assets/field-level.png) > **Conteneur de formulaire adaptatif**, puis sur ![cmppr](assets/cmppr.png).
+1. En mode d’édition, sélectionnez un composant, puis appuyez sur ![field-level](assets/field-level.png) > **Conteneur de formulaires adaptatifs**, puis appuyez sur ![cmppr](assets/cmppr.png).
 1. Dans la barre latérale, sous Thème de formulaire adaptatif, sélectionnez le thème que vous avez créé à l’aide de l’éditeur de thèmes.
 
 ## Création d’une disposition de champ personnalisée  {#create-a-custom-field-layout}
