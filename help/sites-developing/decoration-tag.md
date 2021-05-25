@@ -1,16 +1,15 @@
 ---
 title: Balise décorative
 description: Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés.
-translation-type: tm+mt
-source-git-commit: 7b5cae8aea49b3fd4200bd902d07e1c0fe1090ce
+exl-id: b5edfd56-8e21-44b9-9ea4-3bbdcdb23b50
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 93%
 
 ---
 
-
-# Balise décorative  {#decoration-tag}
+# Balise décorative {#decoration-tag}
 
 Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Dans ce cas, l’objectif est double :
 
@@ -45,7 +44,7 @@ Les propriétés et nœuds suivants peuvent être appliqués aux composants pour
 
 ## Contrôles de script  {#script-controls}
 
-Le comportement de l’enveloppe diffère toutefois selon que [HTL](/help/sites-developing/decoration-tag.md#htl) ou [JSP](/help/sites-developing/decoration-tag.md#jsp) est utilisé pour inclure l’élément.
+Le comportement de l’élément wrapper diffère toutefois selon que [HTL](/help/sites-developing/decoration-tag.md#htl) ou [JSP](/help/sites-developing/decoration-tag.md#jsp) est utilisé pour inclure l’élément.
 
 ### HTL {#htl}
 
@@ -145,7 +144,6 @@ Lors de l’inclusion d’un composant à l’aide de `cq:includ`e ou `sling:inc
 
 ### Arborescence de décision {#decision-tree-1}
 
-L&#39;arborescence de décision suivante illustre comment `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` et `decorationTagName` affectent le comportement de l&#39;enveloppe.
+L’arborescence de décision suivante illustre la manière dont `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` et `decorationTagName` affectent le comportement de l’élément wrapper.
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
-
