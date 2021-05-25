@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 10e6177a-8228-4515-aba9-bbe59bede449
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 45e5b682-3d21-4843-8f62-9d0d493d91c0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 100%
 
 ---
-
 
 # Gestion des utilisateurs {#user-management}
 
@@ -24,7 +23,7 @@ Le gestionnaire des utilisateurs vous permet également d’activer l’authenti
 
 Pour plus d’informations sur l’amélioration des performances de synchronisation de la base de données et de l’annuaire pour DB2, voir [Base de données IBM DB2 : exécution des commandes pour des opérations de maintenance standard](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
-## Configuration de User Management pour un serveur LDAP compatible SSL  {#configuring-user-management-for-an-ssl-enabled-ldap-server}
+## Configuration de User Management pour un serveur LDAP compatible SSL {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
 Si vous disposez d’un serveur LDAP compatible SSL, configurez User Management en conséquence (voir [Configuration de User Management pour un serveur LDAP compatible SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)).
 
@@ -57,4 +56,3 @@ Pour des raisons de sécurité, les utilisateurs disposant de certains types de 
 >[!NOTE]
 >
 >Flex Workspace est obsolète pour la version d’AEM forms.
-
