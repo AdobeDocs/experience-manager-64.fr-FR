@@ -1,38 +1,37 @@
 ---
-title: Accéder aux fonctionnalités du périphérique
-seo-title: Accéder aux fonctionnalités du périphérique
-description: Suivez cette page pour en savoir plus sur la création de composants AEM qui accèdent aux fonctionnalités des périphériques. Le référentiel AEM PhoneGap Kitchen Sink Github fournit aux développeurs une application AEM fonctionnelle qui illustre l'utilisation d'un certain nombre d'API Cordova de base.
-seo-description: Suivez cette page pour en savoir plus sur la création de composants AEM qui accèdent aux fonctionnalités des périphériques. Le référentiel AEM PhoneGap Kitchen Sink Github fournit aux développeurs une application AEM fonctionnelle qui illustre l'utilisation d'un certain nombre d'API Cordova de base.
+title: Accès aux fonctionnalités du périphérique
+seo-title: Accès aux fonctionnalités du périphérique
+description: Consultez cette page pour en savoir plus sur la création AEM composants qui accèdent aux fonctionnalités des périphériques. Le référentiel PhoneGap Kitchen Sink Github AEM fournit aux développeurs une application AEM fonctionnelle qui illustre l’utilisation de plusieurs API Cordova de base.
+seo-description: Consultez cette page pour en savoir plus sur la création AEM composants qui accèdent aux fonctionnalités des périphériques. Le référentiel PhoneGap Kitchen Sink Github AEM fournit aux développeurs une application AEM fonctionnelle qui illustre l’utilisation de plusieurs API Cordova de base.
 uuid: 1996f017-21d3-4d90-9f55-95c626bc4c60
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 0019e367-8edc-4a23-bfa4-5beda266ace6
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 7f3a5081-9640-49ce-a8e7-8061fc080ec1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 10%
 
 ---
 
-
-# Fonctionnalités du périphérique d&#39;accès{#access-device-features}
+# Accéder aux fonctionnalités du périphérique{#access-device-features}
 
 >[!NOTE]
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-## Création de composants AEM qui accèdent aux fonctionnalités de l&#39;appareil {#building-aem-components-that-access-device-features}
+## Création de composants AEM qui accèdent aux fonctionnalités de l’appareil {#building-aem-components-that-access-device-features}
 
-Le [AEM référentiel Github PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) fournit aux développeurs une application fonctionnelle AEM qui illustre l&#39;utilisation d&#39;un certain nombre d&#39;API Cordova de base. Lorsqu’elle est exécutée sur iOS ou Android via l’interface de ligne de commande PhoneGap, l’application s’ouvre sur la page suivante, qui comprend un lien vers chaque API de périphérique illustrée ci-dessous :
+Le [référentiel Github AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) fournit aux développeurs une application d’AEM fonctionnelle qui illustre l’utilisation de plusieurs API Cordova de base. Lorsqu’elle est exécutée sur iOS ou Android via l’interface de ligne de commande de PhoneGap, l’application s’ouvre sur la page suivante qui comprend un lien vers chaque API d’appareil illustrée :
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-Le code source de chacun de ces composants d&#39;API de périphérique est [disponible sur Github](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
+Le code source de chacun de ces composants de l’API d’appareil est [disponible sur Github](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
 
-Pour plus d&#39;informations sur l&#39;utilisation de chaque API, je vous recommande de consulter la [documentation du plug-in Cordova](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html).
+Pour plus d’informations sur l’utilisation de chaque API, je vous recommande de consulter la [documentation du module externe Cordova](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html).
 
 ## Étapes suivantes {#the-next-steps}
 
