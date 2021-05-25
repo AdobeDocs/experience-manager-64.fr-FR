@@ -2,16 +2,15 @@
 title: Meilleures pratiques relatives au format de fichier des ressources
 description: Meilleures pratiques relatives à la prise en charge des fichiers dans AEM Assets.
 contentOwner: AG
-feature: Asset Management,Developer Tools
+feature: Gestion des ressources,Outils de développement
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '437'
 ht-degree: 91%
 
 ---
-
 
 # Meilleures pratiques relatives au format de fichier des ressources {#assets-file-format-best-practices}
 
@@ -42,7 +41,7 @@ Les miniatures et les aperçus générés à l’aide de l’interpréteur de PD
 
 ## Serveur Adobe InDesign  {#adobe-indesign-cc-server}
 
-Adobe vous recommande d’utiliser le serveur Adobe InDesign pour extraire des rendus spécifiques à Adobe InDesign, tels que IDML et HTML. Pour plus d’informations, voir [Ajouter des ressources AEM en tant que références dans Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
+Adobe vous recommande d’utiliser le serveur Adobe InDesign pour extraire des rendus spécifiques à Adobe InDesign, tels que IDML et HTML. Pour plus d’informations, voir [Ajout d’AEM ressources en tant que références dans Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
 
 ## Dynamic Media  {#dynamic-media}
 
@@ -59,7 +58,7 @@ Adobe recommande d’utiliser la bibliothèque ImageMagick dans les cas suivants
 * Pour conserver la transparence
 * Pour traiter des fichiers PSD et PSB
 
-Pour savoir comment configurer la bibliothèque ImageMagic en AEM, voir [Utilisation d’ImageMagick](media-handlers.md#an-example-using-imagemagick). Pour une utilisation optimale, voir [Bonnes pratiques pour configurer ImageMagick](best-practices-for-imagemagick.md).
+Pour savoir comment configurer la bibliothèque ImageMagic dans AEM, voir [Utilisation d’ImageMagick](media-handlers.md#an-example-using-imagemagick). Pour une utilisation optimale, voir [Bonnes pratiques pour configurer ImageMagick](best-practices-for-imagemagick.md).
 
 ## Bibliothèque de transcodage d’imagerie (ITL)  {#image-transcoding-library}
 
@@ -75,4 +74,4 @@ La bibliothèque de transcodage d’imagerie (ITL) prend en charge les types MIM
 * ICO
 * ICN
 
-Pour plus d’informations, voir [Bibliothèque de transcodage d’images](imaging-transcoding-library.md).
+Pour plus d’informations, voir [Bibliothèque de transcodage d’imagerie](imaging-transcoding-library.md).
