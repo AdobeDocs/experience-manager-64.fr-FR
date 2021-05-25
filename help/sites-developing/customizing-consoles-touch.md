@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
-translation-type: tm+mt
-source-git-commit: 1dc15f323dc30d5730e2af6c0e762d623523870d
+exl-id: 31bced35-4845-40d1-9bfd-5c75d54e1a83
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 79%
 
 ---
-
 
 # Personnalisation des consoles{#customizing-the-consoles}
 
@@ -32,7 +31,7 @@ AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les cons
 
 * Recouvrements
 
-   Les incrustations sont basées sur les définitions de noeud et vous permettent de superposer la fonctionnalité standard (dans `/libs`) avec votre propre fonctionnalité personnalisée (dans `/apps`). Lors de la création d’un recouvrement, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources Sling prend en compte l’héritage.
+   Les superpositions sont basées sur des définitions de noeud et vous permettent de superposer la fonctionnalité standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’un recouvrement, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources Sling prend en compte l’héritage.
 
 Ils peuvent être utilisés de différentes manières pour étendre les consoles AEM. Une petite sélection est abordée ci-dessous (à un niveau élevé).
 
@@ -56,7 +55,7 @@ Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.c
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréer l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
+>1. Recréez l’élément requis (c’est-à-dire tel qu’il existe dans `/libs`) sous `/apps`
    >
    >
 1. Apportez les modifications désirées dans `/apps`
@@ -65,7 +64,7 @@ Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.c
 
 
 
-Par exemple, les emplacements suivants de la structure `/libs` peuvent être superposés :
+Par exemple, les emplacements suivants dans la structure `/libs` peuvent être superposés :
 
 * Consoles (toutes les consoles basées sur les pages de l’IU Granite), par exemple :
 
@@ -197,7 +196,7 @@ Vous pouvez personnaliser le mode par défaut (colonnes, carte ou liste) pour un
 
    La première entrée est la valeur par défaut.
 
-   Les noeuds disponibles correspondent aux options de vue disponibles :
+   Les noeuds disponibles correspondent aux options d’affichage disponibles :
 
    * `column`
    * `card`
@@ -295,7 +294,7 @@ You can find the code of this page on GitHub
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   En utilisant les propriétés de ce noeud, vous pouvez définir l&#39;`groups` autorisé à exécuter l&#39;action spécifique ; par exemple, `administrators`
+   En utilisant les propriétés sur ce noeud, vous pouvez définir la balise `groups` autorisée à exécuter l’action spécifique. par exemple, `administrators`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -368,7 +367,7 @@ You can restrict access to a navigation option using ACLs:
 
 >[!NOTE]
 >
->Cette fonction est optimisée pour les colonnes de champs de texte ; pour les autres types de données, il est possible de superposer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` dans `/apps`.
+>Cette fonctionnalité est optimisée pour les colonnes de champs de texte ; pour les autres types de données, il est possible de superposer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` dans `/apps`.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -393,14 +392,14 @@ Pour personnaliser les colonnes en mode Liste :
 
 1. Si vous le souhaitez :
 
-   * Si vous souhaitez ajouter des données supplémentaires, vous devez écrire un ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` avec un
+   * Si vous souhaitez ajouter des données supplémentaires, vous devez écrire une balise ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` avec une balise
 
-      `pageInfoProviderType`.
+      `pageInfoProviderType` property.
    Par exemple, voir la classe/le lot (tiré de GitHub) ci-dessous.
 
 1. Vous pouvez maintenant sélectionner la colonne dans le configurateur de colonnes du mode Liste.
 
-## Filtrage des ressources  {#filtering-resources}
+## Filtrage des ressources {#filtering-resources}
 
 Lorsqu’une console est utilisée, un cas d’utilisation fréquent est la nécessité pour l’utilisateur de choisir des ressources (par exemple, des pages, des composants, des ressources, etc.). Cela peut prendre la forme d’une liste dans laquelle l’auteur doit sélectionner un élément.
 
