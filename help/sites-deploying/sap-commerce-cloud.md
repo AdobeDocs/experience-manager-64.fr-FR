@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
 feature: Commerce Integration Framework
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 71d0a249-8ad1-416e-ad78-d651b413e5c3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 89%
 
 ---
-
 
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
@@ -26,7 +25,7 @@ ht-degree: 89%
 >
 >Cette page contient des liens vers le site web d’Hybris. Pour certaines pages, vous devrez disposer d’un compte pour vous connecter.
 
-## Déploiement du commerce électronique avec le Commerce Cloud SAP {#deploying-ecommerce-with-sap-commerce-cloud}
+## Déploiement d’eCommerce avec le Commerce Cloud SAP {#deploying-ecommerce-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -36,7 +35,7 @@ ht-degree: 89%
 
 Le déploiement des [modules eCommerce nécessaires](#packages-needed-for-ecommerce-with-hybris) met à disposition la fonctionnalité complète de la structure eCommerce avec une implémentation de référence de la fonctionnalité eCommerce fournie avec une implémentation Hybris (dont un catalogue de démonstration).
 
-Il est disponible sous la branche Anglais (États-Unis) ( `/content/geometrixx-outdoors/en_US`) du site Geometrixx Outdoors :
+Elle est disponible sous la branche Anglais (US) ( `/content/geometrixx-outdoors/en_US`) du site Geometrixx Outdoors :
 
 * [Informations sur le produit](#productinformationwithcolorvariants) (avec des variantes de couleur, le cas échéant)
 
@@ -47,7 +46,7 @@ Il est disponible sous la branche Anglais (États-Unis) ( `/content/geometrixx-o
 
 ### Exigences techniques – Serveur Hybris {#technical-requirements-hybris-server}
 
-L&#39;extension hybris du cadre d&#39;intégration du commerce électronique a été mise à jour pour prendre en charge Hybris 5 (par défaut), tout en maintenant une compatibilité ascendante avec [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
+L’extension hybris de la structure d’intégration eCommerce a été mise à jour afin de prendre en charge Hybris 5 (par défaut), tout en maintenant une compatibilité ascendante avec [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
 
 >[!NOTE]
 >
@@ -59,11 +58,11 @@ L&#39;extension hybris du cadre d&#39;intégration du commerce électronique a �
 
 
 
-### Modules nécessaires à eCommerce avec Hybris  {#packages-needed-for-ecommerce-with-hybris}
+### Modules nécessaires à eCommerce avec Hybris {#packages-needed-for-ecommerce-with-hybris}
 
 Pour installer la fonctionnalité eCommerce, vous devez disposer des éléments suivants :
 
-* Votre serveur hybris
+* Votre serveur Hybris
 * Structure d’AEM eCommerce :
 
    * fait partie d’une installation AEM standard
@@ -77,7 +76,7 @@ Pour installer la fonctionnalité eCommerce, vous devez disposer des éléments 
    * `cq-hybris-content-6.3.2`
    * Implémentation de l’API spécifique à Hybris
    * `cq-geometrixx-hybris-content-6.3.2`
-   * une implémentation de référence pour illustrer l&#39;utilisation de l&#39;hybris ( `geometrixx-outdoors/en_US`)
+   * une implémentation de référence pour illustrer l’utilisation d’hybris ( `geometrixx-outdoors/en_US`) ;
 
 ### Installation d’eCommerce avec Hybris {#installation-of-ecommerce-with-hybris}
 
@@ -144,14 +143,14 @@ Les étapes de cette procédure consistent à télécharger et à créer le serv
    >
    >Appuyez sur `Return` si nécessaire.
 
-1. Téléchargez les fichiers suivants dans le dossier racine de votre distribution d&#39;hybris extraite,
+1. Téléchargez les fichiers suivants dans le dossier racine de votre distribution Hybris extraite,
 
    ```
        <hybris-root-directory>
    ```
 
 
-   [Obtenir le fichier](assets/setup.groovy)
+[Obtenir le fichier](assets/setup.groovy)
 
    >[!NOTE]
    >
@@ -159,7 +158,7 @@ Les étapes de cette procédure consistent à télécharger et à créer le serv
 
    5.6.0 et version ultérieure
 
-   [Obtenir le fichier](assets/setup-1.groovy)
+[Obtenir le fichier](assets/setup-1.groovy)
 
 1. Dans la ligne de commande, exécutez la commande ci-dessous pour :
 
@@ -208,7 +207,7 @@ Cette procédure permet de transférer et de configurer le magasin de démonstra
 1. À partir de la navigation de la barre latérale, développez **Système** (System) et **Outils** (Tools). Ensuite, sélectionnez **Importer** (Import) pour ouvrir la fenêtre **Assistant : Importation d’un fichier CSV** (Wizard: CSV Import).
 1. Dans l’onglet **Configuration**, **transférez** le **fichier d’importation** suivant :
 
-   [Obtenir le fichier](assets/geometrixx-outdoors-export.csv)
+[Obtenir le fichier](assets/geometrixx-outdoors-export.csv)
 
 1. Définissez le **paramètre régional** sur :
 
@@ -217,7 +216,7 @@ Cette procédure permet de transférer et de configurer le magasin de démonstra
 1. Ouvrez l’onglet **Ressources**.
 1. **Transférez** le fichier **Media-Zip** suivant :
 
-   [Obtenir le fichier](assets/geometrixx-outdoors-images.zip)
+[Obtenir le fichier](assets/geometrixx-outdoors-images.zip)
 
 1. Pour importer les fichiers spécifiés, cliquez sur **Démarrer**. L’onglet **Résultat** affiche des entrées de journal.
 
@@ -227,11 +226,11 @@ Cette procédure permet de transférer et de configurer le magasin de démonstra
 
 1. **Transférez** le **fichier d’importation** suivant :
 
-   [Obtenir le fichier](assets/base-store.csv)
+[Obtenir le fichier](assets/base-store.csv)
 
    Pour Hybris 5.7, utilisez le fichier suivant :
 
-   [Obtenir le fichier](assets/base-store-5_7.csv)
+[Obtenir le fichier](assets/base-store-5_7.csv)
 
 1. Définissez le **paramètre régional** sur :
 
@@ -244,4 +243,3 @@ Cette procédure permet de transférer et de configurer le magasin de démonstra
 1. À présent, vous pouvez utiliser le cockpit du produit pour afficher les catalogues et les produits importés :
 
    [http://localhost:9002/productcockpit](http://localhost:9002/productcockpit)
-
