@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 13e8cbef-698f-4e69-9f8c-f9bee82e9fd1
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 365e944d-d8a3-4f4e-8925-88629845232f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 73%
 
 ---
-
 
 # Développement et outil de comparaison des pages{#developing-and-page-diff}
 
@@ -40,25 +39,25 @@ Lorsque le contenu est comparé, l’ensemble de l’arborescence jusqu’à la 
 
 `/content/versionhistory/<userId>/<site structure>`
 
-Parce que, lors de l&#39;utilisation du mécanisme de différences de page, AEM recrée la version précédente de la page, pour utiliser la fonction, l&#39;utilisateur doit disposer de certaines autorisations JCR.
+En effet, lors de l’utilisation du mécanisme de comparaison des pages, AEM recrée la version précédente de la page afin d’utiliser la fonction, l’utilisateur doit disposer de certaines autorisations JCR.
 
 >[!CAUTION]
 >
->Pour utiliser la fonction de différenciation de page, l’utilisateur doit disposer de l’autorisation **Modifier/Créer/Supprimer** sur le noeud `/content/versionhistory`.
+>Pour utiliser la fonction de comparaison des pages, l’utilisateur doit disposer de l’autorisation **Modifier/Créer/Supprimer** sur le noeud `/content/versionhistory`.
 
-### À partir de l&#39;AEM 6.4.3 {#as-of-aem}
+### À partir de AEM 6.4.3 {#as-of-aem}
 
 Lorsque le contenu est comparé, l’ensemble de l’arborescence jusqu’à la page à comparer est recréé à l’emplacement suivant :
 
 `/tmp/versionhistory/`
 
-Ce contenu est créé par un utilisateur de service avec des autorisations limitant la visibilité pour l’utilisateur actuel. Pour cette raison, aucune autorisation spéciale n’est requise.
+Ce contenu est créé par un utilisateur de service avec des autorisations limitant la visibilité de l’utilisateur actuel. Pour cette raison, aucune autorisation spéciale n’est requise.
 
 Une tâche de nettoyage s’exécute automatiquement pour nettoyer ce contenu temporaire.
 
 ## Limitations de développeur {#developer-limitations}
 
-Auparavant, dans l’interface utilisateur classique, une attention particulière devait être accordée au développement afin de faciliter la modification AEM (par exemple en utilisant `cq:text` tag lib ou en intégrant le service `DiffService` OSGi dans les composants). Cela n’est plus nécessaire pour la nouvelle fonction de comparaison (diff), puisque cela s’effectue du côté client via la comparaison DOM.
+Auparavant, dans l’interface utilisateur classique, une attention particulière devait être accordée au développement afin de faciliter la AEM (par exemple, en utilisant la bibliothèque de balises `cq:text` ou en intégrant personnalisé le service OSGi `DiffService` dans les composants). Cela n’est plus nécessaire pour la nouvelle fonction de comparaison (diff), puisque cela s’effectue du côté client via la comparaison DOM.
 
 Cependant, il subsiste un certain nombre de restrictions qui doivent être prises en compte par le développeur.
 
@@ -76,4 +75,3 @@ Cependant, il subsiste un certain nombre de restrictions qui doivent être prise
    * Composants qui utilisent AJAX pour intégrer du contenu
    * Applications sur une seule page
    * Composants basés sur JavaScript qui manipulent le DOM lors d’une interaction de l’utilisateur
-
