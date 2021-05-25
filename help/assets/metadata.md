@@ -2,16 +2,15 @@
 title: Gestion des métadonnées des ressources numériques dans  [!DNL Adobe Experience Manager].
 description: Découvrez les types de métadonnées ainsi que l’organisation et le traitement des fichiers par  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] en fonction de leurs métadonnées.
 contentOwner: AG
-feature: Tagging, Metadata
+feature: Balisage, métadonnées
 role: Architect, Leader
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1399'
+source-wordcount: '1397'
 ht-degree: 99%
 
 ---
-
 
 # Gestion des métadonnées des ressources numériques {#managing-metadata-for-digital-assets}
 
@@ -19,7 +18,7 @@ ht-degree: 99%
 
 * [Métadonnées XMP](xmp.md).
 * [Modification ou ajout de métadonnées](meta-edit.md).
-* [Référence](meta-ref.md) des schémas de métadonnées.
+* [Référence des schémas de métadonnées](meta-ref.md).
 
 ## Pourquoi les métadonnées sont nécessaires {#why-we-need-metadata}
 
