@@ -1,29 +1,28 @@
 ---
 title: Archivage et extraction de vos ressources numériques pour modification
-description: Découvrez comment extraire des fichiers pour les modifier et les réarchiver une fois les modifications terminées.
+description: Découvrez comment extraire des ressources pour les modifier et les archiver à nouveau une fois les modifications terminées.
 contentOwner: AG
-feature: Asset Management
+feature: Gestion des ressources
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '401'
 ht-degree: 66%
 
 ---
 
-
 # Archivage et extraction de fichiers dans AEM Assets {#check-in-and-check-out-files-in-assets}
 
-Adobe Experience Manager (AEM) Assets vous permet d’extraire des fichiers en vue de les modifier et de les réarchiver une fois les modifications effectuées. Après avoir extrait un fichier, vous seul pouvez le modifier, l’annoter, le publier, le déplacer ou le supprimer. Le fait d’extraire une ressource entraîne son verrouillage. D’autres utilisateurs ne peuvent pas effectuer l’une de ces opérations sur la ressource tant que vous ne la réarchivez pas dans AEM Assets. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
+Adobe Experience Manager (AEM) Assets vous permet d’extraire des ressources pour les modifier et de les archiver à nouveau une fois les modifications effectuées. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent effectuer aucune de ces opérations sur la ressource tant que vous ne l’avez pas archivée dans AEM Assets. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
 
-Pour pouvoir extraire ou archiver des ressources, vous devez disposer d&#39;un accès en écriture sur celles-ci.
+Pour pouvoir extraire ou archiver des ressources, vous devez disposer d’un accès en écriture sur ces ressources.
 
 Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser les modifications apportées par un auteur lorsque plusieurs utilisateurs issus de plusieurs équipes collaborent à la modification des workflows.
 
 ## Extraction de ressources {#checking-out-assets}
 
-1. Dans l’interface utilisateur Ressources, sélectionnez la ressource que vous souhaitez extraire. Vous pouvez également sélectionner plusieurs fichiers à extraire.
+1. Dans l’interface utilisateur d’Assets, sélectionnez la ressource à extraire. Vous pouvez également sélectionner plusieurs ressources à extraire.
 
    ![chlimage_1-468](assets/chlimage_1-468.png)
 
@@ -61,9 +60,9 @@ Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser
 
    La ressource modifiée est archivée dans AEM Assets et peut être modifiée par les autres utilisateurs.
 
-## Enregistrement forcé {#forced-check-in}
+## Archivage forcé {#forced-check-in}
 
-Les administrateurs peuvent archiver des fichiers extraits par d’autres utilisateurs.
+Les administrateurs peuvent archiver des ressources extraites par d’autres utilisateurs.
 
 1. Connectez-vous à AEM Assets en tant qu’administrateur.
 1. Dans l’interface utilisateur d’Assets, sélectionnez une ou plusieurs ressources extraites par d’autres utilisateurs.
