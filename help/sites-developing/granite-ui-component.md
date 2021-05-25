@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
-translation-type: tm+mt
-source-git-commit: 26b7692b839e8395d090137e4f85b008171bbfc0
+exl-id: 9a6cc25e-e54e-4b8a-8fdd-bcd65d8fe601
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 89%
 
 ---
-
 
 # Création d’un composant de champ d’IU Granite{#creating-a-new-granite-ui-field-component}
 
@@ -47,14 +46,14 @@ Utilisez la structure de base de l’IU Granite pour développer et/ou étendre 
 
    * Une collection de clientlibs fournissant un certain vocabulaire (c’est-à-dire une extension du langage HTML) pour obtenir des motifs génériques d’interaction via une IU pilotée par hypermédia.
 
-Le composant générique de l’interface utilisateur Granite `field` est composé de deux fichiers présentant un intérêt :
+Le composant d’IU Granite générique `field` est composé de deux fichiers ciblés :
 
 * `init.jsp` : gère le traitement générique ; le balisage et la description, et fournit la valeur de formulaire dont vous aurez besoin lors du rendu du champ.
 * `render.jsp` : il s’agit de l’emplacement où le rendu du champ est effectué et doit être remplacé pour votre champ personnalisé ; il est inclus par `init.jsp`.
 
 Reportez-vous à la [documentation de l’IU Granite – champ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) si vous souhaitez plus de détails.
 
-Pour consulter des exemples, reportez-vous à :
+Pour consulter des exemples, voir :
 
 * `cqgems/customizingfield/components/colorpicker`
 
@@ -90,22 +89,21 @@ Le champ personnalisé doit remplacer uniquement le script `render.jsp`, où vou
    vm.get("value, String.class"); 
    ```
 
-   Pour plus de détails, reportez-vous à la mise en oeuvre des champs d’interface utilisateur Granite prêts à l’emploi ; par exemple, `/libs/granite/ui/components/foundation/form/textfield`.
+   Pour plus d’informations, reportez-vous à la mise en oeuvre des champs d’interface utilisateur Granite prêts à l’emploi ; par exemple, `/libs/granite/ui/components/foundation/form/textfield`.
 
    >[!NOTE]
    >
    >Pour le moment, JSP est la méthode de script préférée, car il n’est pas aisé de transmettre des informations d’un composant à l’autre (ce qui est assez fréquent dans le cadre du formulaire/des champs) en HTL.
 
-## Création de la bibliothèque cliente pour le composant  {#creating-the-client-library-for-the-component}
+## Création de la bibliothèque cliente pour le composant {#creating-the-client-library-for-the-component}
 
 Pour ajouter un comportement côté client spécifique à votre composant :
 
 1. Créez une bibliothèque cliente de la catégorie `cq.authoring.dialog`.
-1. Créez une bibliothèque cliente de catégorie `cq.authoring.dialog` et définissez votre `JS`/ `CSS` à l&#39;intérieur.
+1. Créez une bibliothèque cliente de la catégorie `cq.authoring.dialog` et définissez vos `JS`/ `CSS` à l’intérieur.
 
    Définissez votre `JS`/ `CSS` dans la bibliothèque cliente.
 
    >[!NOTE]
    >
    >Actuellement, l’IU Granite ne propose aucun écouteur ou crochet de dialogue prêt à l’emploi que vous pouvez utiliser directement pour ajouter un comportement JS. Ainsi, pour ajouter un comportement JS supplémentaire à votre composant, vous devez mettre en œuvre un crochet JS sur une classe personnalisée que vous attribuez ensuite à votre composant lors de la génération du balisage.
-
