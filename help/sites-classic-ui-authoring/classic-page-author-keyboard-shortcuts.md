@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
-translation-type: tm+mt
-source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
+exl-id: 04075ed1-3a52-4371-aa4e-0c3d61c878ef
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 91%
 
 ---
-
 
 # Raccourcis clavier lors de la modification de pages{#keyboard-shortcuts-when-editing-pages}
 
@@ -24,7 +23,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 >[!NOTE]
 >
->Dans les tableaux suivants, pour les combinaisons de touches de la colonne **Raccourci**, les touches Ctrl et Commande fonctionnent sur macOS.
+>Dans les tableaux suivants, pour les combinaisons de touches de la colonne **Raccourci** , les touches Ctrl et Commande fonctionnent toutes deux sous macOS.
 
 >[!NOTE]
 >
@@ -157,7 +156,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 Lors de l’utilisation des [consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md), plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau.
 
-## Raccourcis clavier pour les développeurs  {#keyboard-shortcuts-for-development}
+## Raccourcis clavier pour les développeurs {#keyboard-shortcuts-for-development}
 
 Des raccourcis clavier supplémentaires sont disponibles pour les développeurs qui utilisent l’éditeur de page.
 
@@ -170,9 +169,8 @@ Des raccourcis clavier supplémentaires sont disponibles pour les développeurs 
   </tr> 
   <tr> 
    <td>Mode d’édition</td> 
-   <td>Définissez le suffixe suivant dans l’URL : <br /> <code>?debugClientLibs=true</code><br /> Puis utilisez :<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Définissez le suffixe suivant dans l’URL :<br /> <code>?debugClientLibs=true</code><br /> Puis utilisez :<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>Afficher les statistiques de synchronisation pour le chargement de page.</td> 
   </tr> 
  </tbody> 
 </table>
-
