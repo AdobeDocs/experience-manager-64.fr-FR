@@ -9,16 +9,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
-translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+exl-id: 8c45f145-1729-4e5c-b391-6b1bbd50494b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 82%
 
 ---
 
-
-# Prise en main de l’espace de travail AEM Forms  {#getting-started-with-aem-forms-workspace}
+# Prise en main de l’espace de travail AEM Forms {#getting-started-with-aem-forms-workspace}
 
 Vous pouvez utiliser l’espace de travail AEM Forms pour effectuer les tâches suivantes :
 
@@ -28,9 +27,9 @@ Vous pouvez utiliser l’espace de travail AEM Forms pour effectuer les tâches 
 
 ## Navigation dans l’espace de travail AEM Forms  {#navigating-html-workspace}
 
-Différents éléments de l’interface utilisateur de l’espace de travail AEM Forms s’affichent en fonction du processus et de la tâche sur lesquels vous travaillez. Vous pouvez afficher ou masquer les onglets Résumé, Formulaires, Détails, Historique, Pièces jointes ou Notes, ou l’ensemble des boutons décrits dans cette aide à tout moment.
+Les différents éléments de l’interface utilisateur de l’espace de travail AEM Forms s’affichent en fonction du processus et de la tâche sur lesquels vous travaillez. Vous pouvez afficher ou masquer les onglets Résumé, Formulaires, Détails, Historique, Pièces jointes ou Notes, ou l’ensemble des boutons décrits dans cette aide à tout moment.
 
-Vous pouvez parcourir l’interface utilisateur principale de l’espace de travail AEM Forms en utilisant l’une des méthodes suivantes :
+Vous pouvez naviguer dans l’interface utilisateur de l’espace de travail AEM Forms principale à l’aide de l’une des méthodes suivantes :
 
 * Cliquez sur les éléments de la barre de navigation supérieure pour accéder à Démarrer le processus, liste Tâches, Préférences, Suivi, Aide et à l’option de déconnexion.
 * Cliquez sur l’onglet Démarrer le processus, Tâches ou Suivi pour accéder aux trois zones de travail principales.
@@ -42,12 +41,12 @@ Vous pouvez parcourir l’interface utilisateur principale de l’espace de trav
 
 ## Utilisation de l’espace de travail AEM Forms avec des lecteurs d’écran {#using-html-workspace-with-screen-readers}
 
-AEM Forms Workspace est une application HTML Web compatible avec les lecteurs d’écran. Vous pouvez naviguer dans l’interface de l’espace de travail AEM Forms à l’aide du clavier.
+L’espace de travail AEM Forms est une application HTML web compatible avec les lecteurs d’écran. Vous pouvez naviguer dans l’interface de l’espace de travail AEM Forms à l’aide du clavier.
 
-Pour utiliser l’espace de travail AEM Forms avec un lecteur d’écran, gardez à l’esprit les points suivants :
+Pour utiliser l’espace de travail AEM Forms avec un lecteur d’écran, tenez compte des points suivants :
 
-* AEM Forms Workspace est une application HTML standard conforme à tout outil de lecteur d’écran standard. Vous n’avez pas besoin de script spécifique pour exécuter un outil de lecteur d’écran.
-* Toute la navigation dans l’espace de travail AEM Forms se fait par le biais de balises d’ancrage, qui peuvent être facilement accessibles via des onglets.
+* L’espace de travail AEM Forms est une application HTML standard conforme à tout outil de lecteur d’écran standard. Vous n’avez pas besoin de script spécifique pour exécuter un outil de lecteur d’écran.
+* Dans l’espace de travail AEM Forms, toute la navigation se fait par le biais de balises d’ancrage, qui sont facilement accessibles via des onglets.
 * Le chargement des formulaires peut prendre quelques secondes. Le lecteur d’écran ne vous informe pas de manière audible que le formulaire est en cours de chargement et que vous devez attendre.
 
 ## Navigation dans l’espace de travail AEM Forms à l’aide du clavier  {#navigating-html-workspace-using-a-keyboard}
@@ -81,4 +80,3 @@ Définissez les préférences de l’interface utilisateur dans l’onglet Préf
 * **Notifier les événements de tâche par courrier électronique :** indique si vous recevez un courrier électronique de notification pour les événements de tâche, y compris les affectations de tâche, les rappels et les échéances pour les tâches de votre liste Tâches et des listes Tâches de groupe auxquelles vous appartenez.
 * **Joindre les formulaires dans un courrier électronique :** définit si une copie du formulaire est attachée aux courriers électroniques de notification. Les pièces jointes sont uniquement prises en charge pour les formulaires PDF et XDP.
 * **Enregistrer régulièrement le brouillon :** définit si les brouillons de formulaires sont régulièrement enregistrés ou non, et ce de manière automatique. Pour enregistrer vos brouillons régulièrement, activez cette option et définissez la durée d’enregistrement automatique entre 1 à 30 minutes. Lorsque l’enregistrement automatique est activé et qu’un utilisateur travaille sur un brouillon, ce dernier est enregistré régulièrement après le nombre spécifié de minutes. Le brouillon n’est enregistré automatiquement que lorsqu’il a été modifié depuis le dernier enregistrement ou le enregistrement automatique. Lorsque le brouillon est enregistré, un message d’alerte s’affiche à l’écran.
-
