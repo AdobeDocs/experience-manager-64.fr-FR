@@ -9,16 +9,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 133d93b0-512c-46db-b5f9-f981d77b565f
-translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+exl-id: 6eb00c31-6806-478a-99d1-55912798ea69
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 75%
 
 ---
 
-
-# Utilisation de l’enregistrement automatique dans l’application AEM Forms  {#using-autosave-in-aem-forms-app}
+# Utilisation de l’enregistrement automatique dans l’application AEM Forms {#using-autosave-in-aem-forms-app}
 
 Lorsqu’un utilisateur saisit des données dans l’application Adobe Experience Manager Forms, la fonction d’enregistrement automatique les enregistre à intervalles réguliers. La fonction d’enregistrement automatique de l’application AEM Forms vous permet d’éviter la perte de données si l’application se ferme accidentellement.
 
@@ -37,11 +36,10 @@ Vous pouvez spécifier les intervalles auxquels l’application enregistre les d
 Suivez les étapes ci-après pour utiliser la fonction d’enregistrement automatique de l’application AEM Forms :
 
 1. Connectez-vous à l’application et accédez à **[!UICONTROL Paramètres > Général]**.
-1. Dans l’écran Général, utilisez l’option **[!UICONTROL Fréquence d’enregistrement automatique]** pour sélectionner les intervalles auxquels l’application doit enregistrer les données saisies.
+1. Dans l’écran Général, utilisez l’option **[!UICONTROL Fréquence d’enregistrement automatique]** pour sélectionner les intervalles auxquels vous souhaitez que l’application enregistre les données saisies.
    [ ![Définition de la fréquence d’enregistrement automatique](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
-1. Lorsque vous redémarrez l’application et que vous vous connectez avec le même nom d’utilisateur, vous êtes invité à restaurer votre tâche à l’aide de la boîte de dialogue de récupération de la tâche non enregistrée. Cliquez sur **[!UICONTROL OK]** dans la boîte de dialogue Récupérer la Tâche non enregistrée pour reprendre l&#39;utilisation de la tâche enregistrée. Vous pouvez cliquer sur **[!UICONTROL Annuler]** pour supprimer les données enregistrées correspondant au dernier enregistrement automatique déclenché et commencer à travailler sur une nouvelle tâche.
+1. Lorsque vous redémarrez l’application et que vous vous connectez avec le même nom d’utilisateur, vous êtes invité à restaurer votre tâche à l’aide de la boîte de dialogue de récupération de la tâche non enregistrée. Cliquez sur **[!UICONTROL OK]** dans la boîte de dialogue Récupérer la tâche non enregistrée pour reprendre l’utilisation de la tâche enregistrée. Vous pouvez cliquer sur **[!UICONTROL Annuler]** pour supprimer les données enregistrées correspondant au dernier enregistrement automatique déclenché et commencer à travailler sur une nouvelle tâche.
 
-   Si vous cliquez sur **[!UICONTROL OK]**, la tâche est restaurée avec les données correspondant au dernier enregistrement automatique déclenché avant que l’application ne s’arrête. Il comprend les données du formulaire et toutes les pièces jointes associées à la tâche.
-   [ ![Obtention d&#39;une tâche ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**récupéréeA.** Un formulaire de travail en cours  **B.** App fermé avec force  **C.** App redémarré avec la boîte de dialogue Récupérer une Tâche non enregistrée  **D.Formulaire restauré avec les données d&#39;origine**
-
+   Si vous cliquez sur **[!UICONTROL OK]**, la tâche est restaurée avec les données correspondant au dernier enregistrement automatique déclenché avant que l’application ne s’arrête. Il inclut les données du formulaire et toutes les pièces jointes associées à la tâche.
+   [ ![Obtention d’une tâche ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**récupéréeA.** Formulaire de travail en cours  **B.** Fermeture forcée de l’application  **C.** L’application a redémarré avec la boîte de dialogue Récupérer la tâche non enregistrée  **D.** Formulaire restauré avec les données d’origine
