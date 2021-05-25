@@ -8,14 +8,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f855d3f9-cf3c-4883-b82b-d607250c3dae
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 81%
 
 ---
-
 
 # Génération de l’aperçu HTML5 d’un formulaire XDP {#generate-html-preview-of-an-xdp-form}
 
@@ -33,7 +32,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
 1. Accédez à `https://[server]:[port]/system/console/configMgr` sur AEM Forms s’exécutant sur OSGi ou
 
-   `https://[server]:[port]/lc/system/console/configMgr` sur AEM Forms s’exécutant sur JEE.
+   `https://[server]:[port]/lc/system/console/configMgr` sur AEM Forms exécuté sur JEE.
 
 1. Localisez et cliquez sur la boîte de configuration **Service d’authentification Apache Sling** pour l’ouvrir en mode d’édition.
 
@@ -53,15 +52,15 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
    >N’effectuez pas de copier-coller de la valeur spécifiée dans le champ des conditions d’authentification requises, car ceci risquerait d’endommager les caractères spéciaux dans la valeur. Saisissez plutôt la valeur spécifiée dans le champ.
 
 1. Indiquez un nom d’utilisateur et un mot de passe respectivement dans les champs **[!UICONTROL Nom d’utilisateur anonyme]** et **[!UICONTROL Mot de passe utilisateuranonyme]**. Les informations d’identification spécifiées sont utilisées pour gérer l’authentification anonyme et autoriser l’accès aux utilisateurs anonymes.
-1. Cliquez sur **Enregistrer** pour enregistrer la configuration 
+1. Cliquez sur **Enregistrer** pour enregistrer la configuration.
 
 ### Désactiver le mode Protégé {#disable-protected-mode}
 
-Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé par défaut. Laissez-le activé pour les environnements de production. Vous pouvez la désactiver pour un environnement de développement afin de prévisualiser les formulaires HTML5 dans Designer. Pour la désactiver, procédez comme suit :
+Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé par défaut. Laissez-le activé pour les environnements de production. Vous pouvez la désactiver pour un environnement de développement afin de prévisualiser les formulaires HTML5 dans Designer. Pour le désactiver, procédez comme suit :
 
 1. Connectez-vous à la console Web AEM en tant qu’administrateur. 
 
-   * L’URL de AEM Forms sur OSGi est `https://[server]:[port]/system/console/configMgr`
+   * L’URL d’AEM Forms sur OSGi est `https://[server]:[port]/system/console/configMgr`
    * L’URL d’AEM Forms on JEE est `https://[server]:[port]/lc/system/console/configMgr`
 
 1. Ouvrez les **[!UICONTROL configurations de Mobile Forms]** à des fins d’édition.
@@ -70,11 +69,11 @@ Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé 
 ### Spécification des détails sur le serveur AEM Forms  {#provide-details-of-aem-forms-server}
 
 1. Dans Designer, cliquez sur **Tools**> **Options**.
-1. Dans la fenêtre Options, sélectionnez la page **Options serveur**, fournissez les détails suivants, puis cliquez sur **OK**.
+1. Dans la fenêtre Options, sélectionnez la page **Options du serveur**, fournissez les détails suivants, puis cliquez sur **OK**.
 
    * **URL de serveur** : URL du serveur de AEM Forms.
    * **Numéro de port HTTP** : port du serveur AEM. La valeur par défaut est 4502.
-   * **Contexte de la Prévisualisation HTML :** chemin du profil pour le rendu des formulaires XFA. Les profils par défaut suivants permettent de prévisualisation du formulaire dans Designer. Cependant, vous pouvez également spécifier un chemin vers un profil personnalisé.
+   * **Contexte de l’aperçu HTML :** chemin du profil pour le rendu des formulaires XFA. Les profils par défaut suivants sont utilisés pour prévisualiser le formulaire dans Designer. Cependant, vous pouvez également spécifier un chemin vers un profil personnalisé.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
@@ -83,13 +82,13 @@ Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé 
       * `/aem/forms` (AEM Forms on OSGi)
       * `/lc/forms` (AEM Forms on JEE)
 
-   **Remarque :***assurez-vous que le serveur AEM Forms est en cours d’exécution. La prévisualisation HTML se connecte au serveur CRX pour* générer *une prévisualisation.*
+   **Remarque :***assurez-vous que le serveur AEM Forms est en cours d’exécution. L’aperçu HTML se connecte au serveur CRX pour* générer *un aperçu.*
 
    ![Options d’AEM Forms Designer ](assets/server_options.png)
 
    Options d’AEM Forms Designer
 
-1. Pour prévisualisation d’un formulaire au format HTML, cliquez sur l’onglet **Prévisualisation HTML**.
+1. Pour prévisualiser un formulaire au format HTML, cliquez sur l’onglet **Aperçu HTML** .
 
    >[!NOTE]
    >
