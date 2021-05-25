@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 73e57f20-4022-46ab-aa5c-ec866298b645
-translation-type: tm+mt
-source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+exl-id: c7e37599-0712-44cf-8191-d444d12f95c4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 72%
 
 ---
-
 
 # Personnalisation de la console Sites web (IU classique){#customizing-the-websites-console-classic-ui}
 
@@ -120,13 +119,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 ### Test du nouveau service {#testing-the-new-service}
 
-Lorsque vous ouvrez la console Administration de sites web et parcourez votre site, le navigateur génère un appel ajax pour obtenir l’objet JSON qui est utilisé pour créer la console. Par exemple, lorsque vous accédez au dossier `/content/geometrixx`, la requête suivante est envoyée au serveur AEM pour créer la console :
+Lorsque vous ouvrez la console Administration de sites web et parcourez votre site, le navigateur génère un appel ajax pour obtenir l’objet JSON qui est utilisé pour créer la console. Par exemple, lorsque vous accédez au dossier `/content/geometrixx` , la requête suivante est envoyée au serveur AEM pour créer la console :
 
 [http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 Pour vous assurer que le nouveau service s’exécute après le déploiement du lot où il réside, procédez comme suit :
 
-1. Pointez votre navigateur sur l’URL suivante :
+1. Pointez votre navigateur vers l’URL suivante :
 
    [http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
@@ -136,9 +135,9 @@ Pour vous assurer que le nouveau service s’exécute après le déploiement du 
 
 ### Affichage de la nouvelle colonne {#displaying-the-new-column}
 
-La dernière étape consiste à adapter la structure des noeuds de la console d&#39;administration des sites Web pour afficher la nouvelle propriété pour toutes les pages de Geometrixx en superposant `/libs/wcm/core/content/siteadmin`. Procédez comme suit :
+La dernière étape consiste à adapter la structure des noeuds de la console Administration des sites web afin d’afficher la nouvelle propriété pour toutes les pages de Geometrixx en superposant `/libs/wcm/core/content/siteadmin`. Procédez comme suit :
 
-1. En CRXDE Lite, créez la structure des noeuds `/apps/wcm/core/content` avec des noeuds de type `sling:Folder` pour refléter la structure `/libs/wcm/core/content`.
+1. Dans CRXDE Lite, créez la structure des noeuds `/apps/wcm/core/content` avec des noeuds de type `sling:Folder` pour refléter la structure `/libs/wcm/core/content`.
 
 1. Copiez le noeud `/libs/wcm/core/content/siteadmin` et collez-le sous `/apps/wcm/core/content`.
 
@@ -159,17 +158,17 @@ La dernière étape consiste à adapter la structure des noeuds de la console d&
 
 1. Ajoutez un noeud `starred` (de type **nt:unstructured**) sous `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` avec les propriétés suivantes :
 
-   * **dataIndex** :  `starred` de type chaîne
-   * **en-tête** :  `Starred` de type chaîne
-   * **xtype** :  `gridcolumn` de type chaîne
+   * **dataIndex** :  `starred` de type Chaîne
+   * **header** :  `Starred` de type Chaîne
+   * **xtype**:  `gridcolumn` de type Chaîne
 
 1. (Facultatif) Déposez les colonnes que vous ne souhaitez pas afficher à `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
-1. `/siteadmin` est un chemin de vanité qui, par défaut, pointe vers  `/libs/wcm/core/content/siteadmin`.
+1. `/siteadmin` est un chemin de redirection vers un microsite qui, par défaut, pointe vers  `/libs/wcm/core/content/siteadmin`.
 
-   Pour rediriger ceci vers votre version de siteadmin sur `/apps/wcm/core/content/siteadmin`, définissez la propriété `sling:vanityOrder` pour qu&#39;elle ait une valeur supérieure à celle définie sur `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300 ; toute valeur plus élevée est donc acceptable.
+   Pour la rediriger vers votre version de siteadmin sur `/apps/wcm/core/content/siteadmin`, définissez la propriété `sling:vanityOrder` pour qu’elle ait une valeur supérieure à celle définie sur `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300 ; toute valeur plus élevée est donc acceptable.
 
-1. Accédez à la console d’administration des sites Web et accédez au site Geometrixx :
+1. Accédez à la console Administration de sites web et accédez au site Geometrixx :
 
    [http://localhost:4502/siteadmin#/content/geometrixx](http://localhost:4502/siteadmin#/content/geometrixx).
 
@@ -181,6 +180,6 @@ La dernière étape consiste à adapter la structure des noeuds de la console d&
 >
 >Si plusieurs configurations de grille correspondent au chemin d’accès demandé défini par la propriété **pathRegex**, c’est la première qui est utilisée, et non la plus spécifique. Cela signifie que l’ordre des configurations est important.
 
-### Exemple de module  {#sample-package}
+### Exemple de module {#sample-package}
 
-Le résultat de ce didacticiel est disponible dans le package [Personnalisation du module Administration Console](http://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) des sites Web sur le partage de package.
+Le résultat de ce tutoriel est disponible dans le package [Personnalisation de la console d’administration des sites web](http://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) du partage de modules.
