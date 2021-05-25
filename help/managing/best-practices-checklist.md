@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
-translation-type: tm+mt
-source-git-commit: a1709aa10d480e7509665f3f7a791348d8323076
+exl-id: d85fa478-8192-42b9-a5fc-a38a87cfc7dd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 82%
 
 ---
-
 
 # La liste de contrôle{#the-checklist}
 
@@ -24,9 +23,9 @@ Les listes de contrôle de projet sont conçues comme un ensemble de meilleures 
 
 Il existe des listes de contrôle pour chaque personnage (rôle) impliqué dans votre projet. Elles répertorient les éléments livrables, classés par phase et jalon. Elles indiquent également les documents requis pour générer les éléments livrables. En suivant l’état et la qualité de vos documents, vous pouvez contrôler l’état du projet dans son ensemble, ce qui garantit transparence et responsabilisation.
 
-## Téléchargement {#download}
+## Télécharger {#download}
 
-Liste de contrôle des bonnes pratiques AEM Project v2
+Liste de contrôle des bonnes pratiques du projet AEM v2
 
 [Obtenir le fichier](assets/aem_project_bp_checklistv2-64.xlsx)
 
@@ -40,16 +39,16 @@ Les feuilles de calcul suivantes sont fournies :
 * **[État par rôle](/help/managing/best-practices.md#status-by-role)**
 * Série de listes de contrôle, selon le [personnage](/help/managing/best-practices.md#persona), la [phase et le jalon](/help/managing/best-practices.md#phases-and-milestones)
 * **Glossaire**
-   * Le glossaire liste les détails de tous les documents livrables figurant dans la liste de contrôle du projet.
+   * Le glossaire répertorie les détails de tous les documents livrables de la liste de contrôle du projet.
    * Le [glossaire](/help/managing/best-practices-glossary.md) est également disponible dans le cadre de la documentation.
 * **[Définition des personnages](/help/managing/best-practices.md#persona)**
 
-## Utilisation des listes de contrôle  {#using-the-checklists}
+## Utilisation des listes de contrôle {#using-the-checklists}
 
 Pour livrer un projet de grande qualité, vous devez suivre tous les éléments affichés dans les listes de contrôle, de préférence dans l’ordre :
 
-1. Les listes de contrôle sont définies en fonction de la **[personnalité](/help/managing/best-practices.md#persona)** (rôle) impliquée. Chaque personne devrait utiliser la liste de contrôle correspondant à son rôle dans le projet.
-1. Les listes de contrôle couvrent les **[Documents requis](/help/managing/best-practices.md#required-documents)** et **[Produits livrables](/help/managing/best-practices.md#deliverables)** pour chaque jalon - la personne concernée doit définir les champs d&#39;état et de qualité appropriés.
+1. Les listes de contrôle sont définies en fonction de **[Persona](/help/managing/best-practices.md#persona)** (rôle) impliqué. Chaque personne doit utiliser la liste de contrôle appropriée à son rôle dans le projet.
+1. Les listes de contrôle couvrent les **[Documents requis](/help/managing/best-practices.md#required-documents)** et **[Livrables](/help/managing/best-practices.md#deliverables)** pour chaque jalon : le personnage concerné doit définir les champs de statut et de qualité appropriés.
 
    >[!NOTE]
    >
