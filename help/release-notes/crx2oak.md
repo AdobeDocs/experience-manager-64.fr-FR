@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: cfdaceac-a5b3-4070-ad4c-f1457b1e2e4b
-translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+exl-id: 441c8ba0-f8b2-4c2c-b7be-cfdad9e1e498
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 66%
 
 ---
-
 
 # Outil de migration CRX2OAK {#crx-oak-migration-tool}
 
@@ -24,26 +23,26 @@ ht-degree: 66%
 
 ### 1.8.6 (juin 2018) {#june}
 
-* OAK-7339 Correction de la rupture de toutes les versions secondaires avec UnsupportedOperationException sur MissingBlobStore en introduisant LoopbackBlobStore
-* Utiliser Oak 1.8.4
+* OAK-7339 Correction de toutes les ruptures avec UnsupportedOperationException sur MissingBlobStore en introduisant LoopbackBlobStore
+* Utilisation d’Oak 1.8.4
 
 ### 1.8.4 (avril 2018) {#april}
 
-* Utiliser Oak version 1.8.2
-* GRANITE-18104 L&#39;erreur de migration de rebol de 6.3 à 6.4 doit être plus significative
+* Utilisation d’Oak version 1.8.2
+* GRANITE-18104 L’erreur de migration de Repo de 6.3 à 6.4 doit être plus significative
 * GRANITE-16571 Remplacer l’utilisation de SHA-1
 
-   * La somme de contrôle de l&#39;outil est désormais SHA-512 lors de l&#39;utilisation de l&#39;option —version
+   * La somme de contrôle de l’outil est désormais SHA-512 lors de l’utilisation de l’option —version
 
-* GRANITE-17601 Incorporer la mise à niveau du chêne dans CRX2Oak avec le chêne-blob-cloud
-* GRANITE-18553 crx2oak laisse les propriétés de version sur le noeud même lorsque les versions ne sont pas migrées
+* GRANITE-17601 Incorporer oak-upgrade dans CRX2Oak avec oak-blob-cloud
+* GRANITE-18553 crx2oak laisse les propriétés de version sur le noeud même lorsque les versions ne sont pas migrées.
 
 ### Version 1.6.8 (mars 2017) {#version-march}
 
 * Passage à la version 1.6.1 d’Oak
 * CQ-61847 Fusionner crx2oak-quickstart-extension avec crx2oak (profils de migration ajoutés)
 * CQ-97488 Promotion et suppression des modes d’exécution d’AEM (en réécrivant sling.options.file)
-* GRANITE-12798/OAK-4260 Capacité à évaluer de côté le segment de chêne au goudron de segment de chêne
+* GRANITE-12798/OAK-4260 Possibilité de passer d’un segment Oak à un segment Oak Tar
 
 ### Version 1.4.2 (mars 2016) {#version-march-1}
 
