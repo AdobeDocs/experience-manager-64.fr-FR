@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
-translation-type: tm+mt
-source-git-commit: adbbccd09fd76418d020b9fd2b6b9c4f585b0924
+exl-id: 269eee08-5fca-4621-a56e-93db9361fa64
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2023'
 ht-degree: 95%
 
 ---
-
 
 # Gestion des activités {#managing-activities}
 
@@ -75,7 +74,7 @@ Quand vous créez une marque avec la console Activités, elle apparaît égaleme
 1. Saisissez le titre de la marque tel qu’il doit apparaître dans les consoles Activités et Offres. Si vous le souhaitez, saisissez ou sélectionnez une ou plusieurs balises à associer à la marque.
 1. Cliquez ou appuyez sur **Créer**. Votre marque apparaît dans la console Activités.
 
-## Ajout/modification d’une activité à l’aide de la console Activités   {#adding-editing-an-activity-using-the-activities-console}
+## Ajout/modification d’une activité à l’aide de la console Activités  {#adding-editing-an-activity-using-the-activities-console}
 
 Ajoutez une activité ou modifiez une activité existante pour concentrer vos efforts marketing sur certaines audiences. Lorsque vous créez/modifiez une activité, vous spécifiez les informations suivantes :
 
@@ -83,7 +82,7 @@ Ajoutez une activité ou modifiez une activité existante pour concentrer vos ef
 * **Moteur de ciblage :**[AEM](/help/sites-authoring/personalization.md#aem) ou [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) comme moteur du contenu ciblé.
 
 * **Sélectionnez une configuration Target :** (Adobe Target uniquement) Configuration du cloud que cette activité doit utiliser pour se connecter à Adobe Target. Cette option s’affiche uniquement lorsque Adobe Target est sélectionné pour le moteur de ciblage.
-* **Type d’Activité :** Type d’activité - Test A/B ou Ciblage d’expérience
+* **Type d’activité :** type d’activité - Test A/B ou Ciblage d’expérience.
 * **Objectif :** (facultatif) description de l’activité.
 * **Expériences :** correspond aux noms d’audience et aux segments marketing que vous ciblez.
 * **Pourcentages de trafic :** si Test A/B est sélectionné, vous pouvez modifier le volume de trafic (en pourcentage) affecté à chaque expérience.
@@ -111,7 +110,7 @@ Pour ajouter une activité :
 1. Ajoutez une ou plusieurs expériences à l’activité. Cliquez ou appuyez sur **Ajouter une expérience**.
 1. Si vous utilisez le ciblage AEM ou le ciblage d’expérience Adobe Target :
 
-   1. Cliquez ou appuyez sur **Sélectionner une Audience **et sélectionnez le segment qui cible votre expérience.
+   1. Cliquez ou appuyez sur **Sélectionner l’audience **et sélectionnez le segment ciblé par votre expérience.
    1. Appuyez ou cliquez sur **Ajouter une expérience**, saisissez un nom, puis appuyez ou cliquez sur **OK**.
    1. Appuyez ou cliquez sur **Suivant**.
 
@@ -147,7 +146,7 @@ Vous devez publier les activités afin de les rendre disponibles. À l’inverse
 
 >[!NOTE]
 >
->Lors de l’annulation de la publication d’une activité, l’état de l’activité ne change pas, sauf si vous actualisez la page.
+>Lors de l’annulation de la publication d’une activité, son état ne change pas, sauf si vous actualisez la page.
 
 Pour publier des activités ou annuler leur publication :
 
@@ -173,7 +172,7 @@ Pour afficher les performances des activités et convertir les expériences gagn
 
 1. Dans **Personnalisation**, cliquez ou appuyez sur **Activités** pour accéder à la console **Activités**.
 1. Cliquez ou appuyez sur la marque dont vous souhaitez voir les activités.
-1. Sélectionnez l’activité et cliquez ou appuyez sur **Propriétés de la Vue **et cliquez sur l’onglet **Rapports** et sélectionnez l’activité pour laquelle vous souhaitez vue les performances des expériences gagnantes/convertir. Les données de performances sont affichées.
+1. Sélectionnez l’activité, cliquez ou appuyez sur **Afficher les propriétés **, cliquez sur l’onglet **Rapports** et sélectionnez l’activité pour laquelle vous souhaitez afficher les performances ou convertir des expériences gagnantes. Les données de performances sont affichées.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -229,9 +228,8 @@ Pour éviter des problèmes de synchronisation, donnez toujours des noms uniques
 
 >[!NOTE]
 >
->Lorsque vous créez une campagne en Adobe Target, elle affecte une propriété appelée `thirdPartyId t`à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, `thirdPartyId` n’est pas supprimé. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Ainsi, les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
+>Lorsque vous créez une campagne dans Adobe Target, elle affecte la propriété `thirdPartyId t`à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, `thirdPartyId` n’est pas supprimé. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Ainsi, les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
 >
 >Si vous utilisez le même nom dans le même type de campagne, vous remplacerez la campagne existante.
 >
 >Lors de la synchronisation, si le message d’erreur « Échec de la demande. `thirdPartyId` existe déjà » s’affiche, modifiez le nom de la campagne et resynchronisez-la.
-
