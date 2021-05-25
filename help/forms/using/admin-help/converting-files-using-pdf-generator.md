@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 3eecff45-405f-482f-b0de-acf6557a7813
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 95%
 
 ---
-
 
 # Conversion de fichiers à l’aide de PDF Generator{#converting-files-using-pdf-generator}
 
@@ -106,7 +105,7 @@ Vous pouvez exporter des fichiers PDF dans différents formats de fichiers, comm
 
    La durée de conversion affichée une fois le fichier converti peut être supérieure à la valeur spécifiée ici. En effet, elle inclut le temps passé à attendre le thread ou le processus, la durée de conversion du fichier et le temps pris par le convertisseur de secours (le cas échéant). time. La valeur du paramètre Spécifier un délai d’expiration ne reflète que le temps de conversion du fichier.
 
-1. (Facultatif) Dans l’option **Spécifier le profil de contrôle en amont personnalisé**, cliquez sur Parcourir et sélectionnez un [profil de contrôle en amont personnalisé](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Les profils de contrôle en amont ne sont utilisés que lors de la conversion de documents au format d’archive PDF (PDF/A).
+1. (Facultatif) Dans l’option **Spécifiez le profil de contrôle en amont personnalisé**, cliquez sur Parcourir, puis sélectionnez un [profil de contrôle en amont personnalisé](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Les profils de contrôle en amont ne sont utilisés que lors de la conversion de documents au format d’archive PDF (PDF/A).
 1. Cliquez sur Exporter. Lorsque la conversion est terminée, un lien renvoyant au fichier exporté s’affiche.
 1. Cliquez sur ce lien pour afficher le fichier converti.
 
@@ -126,4 +125,3 @@ PDF Generator permet de réduire la taille des fichiers PDF.
    * Pour utiliser un fichier de paramètres existant, sélectionnez Télécharger le fichier de paramètres et cliquez sur Parcourir pour accéder au fichier.
 
 1. Cliquez sur Créer.
-
