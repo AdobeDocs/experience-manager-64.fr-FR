@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 282a828a-edb2-4643-9bf7-ec30c29dc6ce
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Mise à niveau
+exl-id: 8dc2dfb8-037f-40ae-a962-ced89dd3fdd0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 93%
 
 ---
-
 
 # Migration différée du contenu{#lazy-content-migration}
 
@@ -60,4 +59,4 @@ Vous trouverez, ci-dessous, la liste complète des `CodeUpgradeTasks` introduite
 | `CQ64CommunitiesConfigsCleanupTask` | &lt; 6=&quot;&quot;> | Différé | Déplace les configurations cloud SRP et les configurations de mots-clés communautaires, nettoie **/etc/social** et **/etc/enablement** (toutes les références et données, le cas échéant, doivent être modifiées lors de l’exécution de la migration différée ; plus aucune partie de l’application ne doit désormais dépendre de cette structure). |
 | `CQ64LegacyCloudSettingsCleanupTask` | &lt; 6.4 | Différé | Nettoie **/etc/cloudsettings** (contenant la configuration ContextHub). La migration de la configuration est effectuée automatiquement lors du premier accès. Si la migration différée du contenu est lancée avec la mise à niveau, le contenu de **/etc/cloudsettings** doit être conservé via le package avant la mise à niveau et réinstallé pour que la transformation implicite soit lancée, avec une désinstallation ultérieure du package une fois la procédure terminée. |
 | `CQ64UsersTitleFixTask` | &lt; 6=&quot;&quot;> | Différé | Définit la structure de titre héritée sur le titre du nœud de profil utilisateur. |
-| `CQ64CommerceMigrationTask` | &lt; 6=&quot;&quot;> | Différé | Migrez le contenu commercial de **/etc/commerce** à **/var/commerce**. Lors de la migration, le contenu est déplacé et les références au contenu déplacé sont mises à jour pour refléter le nouvel emplacement. |
+| `CQ64CommerceMigrationTask` | &lt; 6=&quot;&quot;> | Différé | Migrez le contenu commercial de **/etc/commerce** vers **/var/commerce**. Lors de la migration, le contenu est déplacé et les références au contenu déplacé sont mises à jour pour refléter le nouvel emplacement. |
