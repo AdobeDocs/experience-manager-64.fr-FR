@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 87a1f27a-765e-4882-9c06-5909e1610e1d
-translation-type: tm+mt
-source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+exl-id: ad529be3-9d31-492f-943f-ef3e99e13586
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 77%
 
 ---
-
 
 # Définition de cas de test{#defining-your-test-cases}
 
@@ -40,7 +39,7 @@ Les tests devraient définir clairement :
 
 L’idée d’automatiser les cas de test est évidemment intéressante car on peut ainsi éliminer les tâches répétitives.
 
-## Tests manuels ou tests automatisés  {#manual-versus-automated-tests}
+## Tests manuels ou tests automatisés {#manual-versus-automated-tests}
 
 Cependant, l’automatisation des cas de test est un lourd investissement. Il faut donc prendre en compte certains aspects :
 
@@ -49,18 +48,18 @@ Cependant, l’automatisation des cas de test est un lourd investissement. Il fa
 * Réellement réalisable pour les projets de grande taille seulement.
 * Intéressant si plusieurs versions sont générées pour les tests ou dans le plan de diffusion de versions à long terme.
 
-## Test d&#39;aspects spécifiques {#testing-specific-aspects}
+## Test d’aspects spécifiques {#testing-specific-aspects}
 
-Lors des tests AEM quelques détails spécifiques présentent un intérêt particulier :
+Lors du test AEM certains détails spécifiques présentent un intérêt particulier :
 
 Environnements de création et de publication
 
-Bien qu&#39;il soit indiqué dans les [Environnements](/help/sites-developing/the-basics.md#environments), il convient de souligner un facteur décisif d&#39;AEM en ce qui concerne les tests.
+Bien qu’il soit décrit dans la section [Environnements](/help/sites-developing/the-basics.md#environments), il convient de souligner un facteur décisif d’AEM en ce qui concerne les tests.
 
 Vous devez considérer AEM comme deux applications :
 
 * l&#39;environnement **Auteur**
-Cette instance permet aux auteurs d’entrer et de publier du contenu.
+Cette instance permet aux auteurs de saisir et de publier du contenu.
 Elle comporte un plus petit nombre prévisible d’utilisateurs, pour qui des fonctionnalités et des performances spécifiques sont indispensables.
 * l’environnement de **publication**
 Cette instance affiche le site web sous sa forme publiée pour que les visiteurs puissent y accéder.
@@ -88,18 +87,18 @@ La plupart des projets installent le dispatcher pour la mise en cache et l’éq
 
 Les tests sont difficiles (la mise en cache se fait à différents niveaux et à divers endroits) et doivent être réalisés en boîte noire. Les aspects clés à tester sont les suivants :
 
-* **Précision** ; s’assurer que les mises à jour de contenu sont affichées par le visiteur du site Web.
-* **la continuité**; assurez-vous que le site Web est toujours disponible lorsqu’un serveur est arrêté.
-* **** ClustersLes grappes sont utilisées pour fournir :
+* **Précision**; s’assurer que les mises à jour du contenu sont visibles par le visiteur du site web.
+* **la continuité**; vérifiez que le site web est toujours disponible lorsqu’un serveur est arrêté.
+* **** ClustersClusters est utilisé pour fournir :
    * ****
-BasculementSi un serveur échoue, d&#39;autres serveurs de la grappe prennent le relais du traitement.
-   * **L’équilibrage**
-PerformanceLoad avec basculement complet augmente les performances d’une grappe.
+Basculement : si un serveur échoue, les autres serveurs de la grappe prennent le relais.
+   * ****
+L’équilibrage PerformanceLoad avec basculement complet améliore les performances d’une grappe.
 
 Lorsqu’il est utilisé pour un projet client, le cluster doit être testé pour confirmer le bon fonctionnement de la configuration.
 
 ## Test de logiciels tiers {#testing-third-party-software}
 
-Tout logiciel tiers relié à AEM sera référencé dans les Spécifications détaillées des besoins.
+Les logiciels tiers interfaces avec AEM seront référencés dans les spécifications détaillées des exigences.
 
 Il faut analyser tous les tests nécessaires (en fonction de la portée définie) et obtenir des résultats satisfaisants.
