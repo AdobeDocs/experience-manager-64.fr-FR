@@ -2,16 +2,15 @@
 title: Recherche de ressources dans AEM
 description: Découvrez comment rechercher les ressources souhaitées dans AEM à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 contentOwner: AG
-feature: Search,Metadata
+feature: Recherche, métadonnées
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '554'
 ht-degree: 88%
 
 ---
-
 
 # Recherche de ressources dans AEM {#search-assets-in-aem}
 
@@ -36,12 +35,12 @@ Vous pouvez effectuer une recherche selon les options suivantes (prédicats) :
 
 Vous pouvez personnaliser le panneau Filtres et ajouter/supprimer des prédicats de recherche à l’aide des [facettes de recherche](search-facets.md). Pour afficher le panneau Filtres, procédez comme suit :
 
-1. Dans l’interface utilisateur Ressources, appuyez/cliquez sur ![icône_de_recherche](assets/search_icon.png) dans la barre d’outils pour afficher la zone Omnisearch.
+1. Dans l’interface utilisateur d’Assets, appuyez/cliquez sur ![search_icon](assets/search_icon.png) dans la barre d’outils pour afficher la zone Omni-recherche.
 1. Saisissez le terme à rechercher et appuyez ensuite sur Entrée. Vous pouvez également appuyer sur la touche Entrée, sans saisir aucun terme à rechercher. Ne saisissez aucun espace avant le terme, sans quoi la recherche ne fonctionnera pas.
 
 1. Appuyez/cliquez sur l’icône de navigation globale. Le panneau Filtres s’affiche.
 
-   ![filtres_panel-1](assets/filters_panel-1.png)
+   ![filters_panel-1](assets/filters_panel-1.png)
 
    Selon le type d’éléments que vous recherchez, le nombre de correspondances est indiqué en haut des résultats de la recherche.
 
@@ -49,7 +48,7 @@ Vous pouvez personnaliser le panneau Filtres et ajouter/supprimer des prédicats
 
 ## Recherche de types de fichiers {#search-for-file-types}
 
-Le panneau Filtres permet d’augmenter la granularité de votre expérience de recherche et rend la fonctionnalité de recherche plus polyvalente. Vous pouvez facilement approfondir l’analyse jusqu’au niveau de détail souhaité.
+Le panneau Filtres permet d’augmenter la granularité de votre expérience de recherche et rend la fonctionnalité de recherche plus polyvalente. Vous pouvez facilement descendre dans la hiérarchie jusqu’au niveau de détail souhaité.
 
 Par exemple, si vous recherchez une image, utilisez le prédicat **[!UICONTROL Type de fichier]** pour indiquer si vous souhaitez obtenir une image bitmap ou vectorielle.
 
@@ -73,7 +72,7 @@ Utilisez le prédicat **Taille de fichier** pour rechercher des ressources en fo
 
 Si vous gérez des ressources en cours de travail ou surveillez un workflow de révision, vous pouvez rechercher le·moment où une ressource a été modifiée pour la dernière fois en fonction d’horodatages précis. Par exemple, spécifiez les dates avant ou après lesquelles les ressources ont été modifiées.
 
-![last_changed_dates](assets/last_modified_dates.png)
+![last_modified_dates](assets/last_modified_dates.png)
 
 Vous pouvez également utiliser les options suivantes pour obtenir un niveau de granularité supérieur dans votre recherche :
 
@@ -102,4 +101,4 @@ Utilisez le prédicat **Statistiques** pour rechercher des ressources en fonctio
 * Clics
 * Canaux de médias où les ressources apparaissent
 
-![statistiques](assets/insights.png)
+![insights](assets/insights.png)
