@@ -8,29 +8,28 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
-translation-type: tm+mt
-source-git-commit: a2f6deda8b3a34aa5893843a442241920edd6718
+exl-id: 3a32f578-23b1-4c76-bd85-dd3d812c6c28
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '346'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
+# Remplissage dynamique des listes déroulantes  {#dynamically-populating-drop-down-lists}
 
-# Remplissage dynamique des listes déroulantes   {#dynamically-populating-drop-down-lists}
+## Prérequis {#prerequisites}
 
-## Conditions préalables {#prerequisites}
-
-* [Création de lots OSGI](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
+* [Création de lots OSGI](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
 * [Développement de composants AEM](/help/sites-developing/components.md)
 * [Création de formulaires adaptatifs](/help/forms/using/creating-adaptive-form.md)
 * [Création d’un formulaire adaptatif](/help/forms/using/introduction-forms-authoring.md)
 
-## Procédure pour remplir de façon dynamique des listes déroulantes  {#procedure-to-dynamically-populate-drop-down-lists}
+## Procédure pour remplir de façon dynamique des listes déroulantes {#procedure-to-dynamically-populate-drop-down-lists}
 
 Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d’une valeur que vous sélectionnez dans la liste déroulante **Pays**. Si vous sélectionnez Australie dans la liste déroulante **Pays**, la liste déroulante **Etat** affiche les états de l’Australie. La procédure ci-dessous décrit la marche à suivre.
 
-1. Créez un projet avec les modules suivants :
+1. Créez un projet avec les modules suivants :
 
    * Le lot contenant la logique pour remplir la liste déroulante, en l’occurrence une servlet.
    * Le contenu, qui incorpore le fichier .jar et possède une ressource de liste déroulante. La servlet pointe vers cette ressource.
@@ -146,7 +145,7 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
    }
    ```
 
-1. Créez un noeud de liste déroulante sous une hiérarchie de dossiers spécifique dans les applications (par exemple, créez un noeud sous /apps/myfolder/demo). Assurez-vous que le paramètre `sling:resourceType` pour le noeud est identique à celui vers lequel pointe la servlet (/apps/populatedropdown).
+1. Créez un nœud de liste déroulante sous une hiérarchie de dossiers spécifique dans les applications (par exemple, créez un nœud sous /apps/myfolder/demo). Veillez à ce que le paramètre `sling:resourceType` du nœud soit identique à celui vers lequel la servlet pointe (/apps/populatedropdown).
 
    ![Création d’un nœud de liste déroulante](assets/dropdown-node.png)
 
@@ -155,7 +154,7 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
 
    Ajoutez les noms des pays à afficher dans la liste Pays. Dans la liste Etat, ajoutez un script pour la remplir selon le nom du pays de la liste Pays.
 
-   ![Ajouter les ](assets/country-dropdown.png) ![noms de paysAjout d&#39;un script pour renseigner les ](assets/state-dropdown.png) ![noms d&#39;étatlistes déroulantes Pays et Etat pour rassembler](assets/2dropdowns.png)
+   ![Ajout de noms de pays](assets/country-dropdown.png) ![Ajout d’un script pour renseigner les noms d’état](assets/state-dropdown.png) ![Listes déroulantes Pays et États ensemble ](assets/2dropdowns.png)
 
    ```
    JSON.parse(
