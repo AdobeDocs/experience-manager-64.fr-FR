@@ -2,16 +2,15 @@
 title: Facettes de recherche
 description: Cet article décrit comment créer, modifier et utiliser les facettes de recherche dans AEM.
 contentOwner: AG
-feature: Search
+feature: Rechercher
 role: Administrator,Developer
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2538'
 ht-degree: 94%
 
 ---
-
 
 # Facettes de recherche {#search-facets}
 
@@ -40,10 +39,10 @@ Pour des recherches de texte intégral, ajoutez le prédicat Texte intégral au 
 
    >[!NOTE]
    >
-   >Pour utiliser la fonctionnalité de recherche de dossiers du **rail de recherche d&#39;administration des ressources** préconfiguré à partir d&#39;une version AEM antérieure, effectuez les opérations suivantes :
+   >Pour utiliser la fonctionnalité de recherche de dossiers du **Rail de recherche d’administrateurs de ressources** préconfiguré à partir d’une version d’AEM antérieure, procédez comme suit :
    > 
    >1. Accédez à */conf/global/settings/dam/search/facets/assets/jcr:content/items* dans CRX-DE.
-   >1. Supprimez le noeud **type**.
+   >1. Supprimez le noeud **type** .
    >1. Dans le chemin */libs/settings/dam/search/facets/assets/jcr:content/items*, copiez les nœuds **asset, directory, typeor, excludepaths** et **search type** dans le chemin d’accès mentionné à l’étape 1.
    >1. Enregistrez les modifications.
 
@@ -125,7 +124,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 1. Utilisez l’une des méthodes suivantes :
 
    * Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez le chemin du fichier JSON où sont définis les nœuds des options et spécifiez les paires clé-valeur correspondantes.
-   * Appuyez sur ![Ajouter l&#39;icône](assets/do-not-localize/aem_assets_add_icon.png) en regard du champ Options pour spécifier le texte d&#39;affichage et la valeur des options à fournir dans le panneau Filtres. Pour ajouter une autre option, appuyez/cliquez sur ![Ajouter l’icône](assets/do-not-localize/aem_assets_add_icon.png) et répétez l’étape.
+   * Appuyez sur ![Ajouter une icône](assets/do-not-localize/aem_assets_add_icon.png) en regard du champ Options pour spécifier le texte affiché et la valeur pour les options que vous souhaitez fournir dans le panneau Filtres. Pour ajouter une autre option, appuyez/cliquez sur ![Ajouter une icône](assets/do-not-localize/aem_assets_add_icon.png) et répétez l’étape.
 
 1. Assurez-vous que l’option **[!UICONTROL Sélection simple]** est désactivée pour permettre à l’utilisateur de sélectionner plusieurs options à la fois pour les types de fichiers (Images, Documents, Multimédia et Archives, par exemple). Si vous choisissez **[!UICONTROL Sélection simple]**, l’utilisateur ne peut sélectionner qu’une seule option à la fois pour les types de fichiers.
 
@@ -168,9 +167,9 @@ Le prédicat Balise vous permet d’effectuer des recherches de ressources basé
 1. Accédez au panneau Rechercher. Le prédicat **[!UICONTROL Balises]** est ajouté au panneau Rechercher.
 1. Indiquez les balises sur la base desquelles vous souhaitez rechercher des ressources ou faites votre sélection dans la liste des suggestions.
 
-   ![Suggestion AEM lors de la saisie du nom de la balise](assets/chlimage_1-419.png)
+   ![Suggestion fournie AEM lors de la saisie du nom de la balise](assets/chlimage_1-419.png)
 
-   Suggestion AEM lors de la saisie du nom de la balise
+   Suggestion fournie AEM lors de la saisie du nom de la balise
 
 1. Sélectionnez **[!UICONTROL Correspondre à tous les critères]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
@@ -206,7 +205,7 @@ L’icône de cadenas en regard d’une option de la page Formulaires de recherc
 Pour restaurer la facette de recherche par défaut, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]** sur la page **[!UICONTROL Formulaires de recherche]**.
-1. Appuyez sur **[!UICONTROL Supprimer]** ![deleteoutline](assets/deleteoutline.png) dans la barre d’outils.
+1. Appuyez sur **[!UICONTROL Supprimer]** ![supprimer ](assets/deleteoutline.png) dans la barre d’outils.
 1. Dans la boîte de dialogue de confirmation, appuyez sur **[!UICONTROL Supprimer]** pour supprimer les modifications personnalisées.
 
    Après avoir supprimé les modifications personnalisées apportées aux facettes de recherche, l’icône représentant un cadenas réapparaît devant **[!UICONTROL Rail de recherche d’administrateurs de ressources]** sur la page **[!UICONTROL Formulaires de recherche]**.
@@ -219,11 +218,11 @@ Si le rôle d’administrateur ne vous a pas été attribué, voici la liste des
 |---|---|
 | [!UICONTROL Modifier] | Autorisations de lecture et d&#39;écriture sur le nœud /apps dans CRX. |
 | [!UICONTROL Supprimer] | Autorisations de lecture, d’écriture et de suppression sur le noeud /apps dans CRX |
-| [!UICONTROL Aperçu] | Autorisations de lecture, d’écriture et de suppression sur le noeud /var/dam/content dans CRX. En outre, les autorisations de lecture et d’écriture sur le noeud /apps. |
+| [!UICONTROL Aperçu] | Autorisations de lecture, d’écriture et de suppression sur le noeud /var/dam/content dans CRX. En outre, les autorisations de lecture et d’écriture sur le noeud /apps . |
 
 >[!MORELIKETHIS]
 >
 >* [Extension de la recherche des ressources](searchx.md)
->* [Recherche de ressources](search-assets.md)
->* [Recherche de ressources vidéo](search-video-assets.md)
+* [Recherche de ressources](search-assets.md)
+* [Recherche de ressources vidéo](search-video-assets.md)
 
