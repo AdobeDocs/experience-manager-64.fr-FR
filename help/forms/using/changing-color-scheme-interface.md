@@ -9,18 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: efbb9a9e-0ddf-49f2-bcb8-14cd0c6de5ee
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 76%
 
 ---
 
+# Modification des couleurs de l’interface {#changing-the-color-scheme-of-the-interface}
 
-# Modification des couleurs de l’interface  {#changing-the-color-scheme-of-the-interface}
-
-Vous pouvez modifier les couleurs des différentes parties de l’interface utilisateur de l’espace de travail AEM Forms selon vos besoins. Voici quelques exemples de personnalisation des couleurs. Outre les étapes décrites dans cet article, voir [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+Vous pouvez modifier les couleurs des différentes parties de l’interface utilisateur de l’espace de travail AEM Forms selon vos besoins. Voici quelques exemples de personnalisation des couleurs. Outre les étapes décrites dans cet article, reportez-vous à la section [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Barre de navigation supérieure {#top-navigation-bar}
 
@@ -54,9 +53,9 @@ Pour mettre à jour la barre de navigation en haut de l’espace de travail AEM 
    }
    ```
 
-## Composant de catégories {#category-component}
+## Composant de catégories  {#category-component}
 
-Le composant de catégories affiche les différentes catégories de tâches dans le volet de gauche. Pour modifier sa couleur, définissez la couleur d’arrière-plan dans l’élément `.category` du fichier CSS.
+Le composant de catégories affiche les différentes catégories de tâches dans le volet de gauche. Pour modifier sa couleur, définissez la couleur de fond dans l’élément `.category` du fichier CSS.
 
 ## Composant de tâches {#task-component}
 
