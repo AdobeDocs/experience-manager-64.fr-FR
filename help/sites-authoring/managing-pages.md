@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
-translation-type: tm+mt
-source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
+exl-id: 0182155a-0156-458c-b89b-35ab3e27819e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2307'
 ht-degree: 95%
 
 ---
-
 
 # Création et organisation des pages{#creating-and-organizing-pages}
 
@@ -43,13 +42,13 @@ Vous pouvez également vous aider de [dossiers](#creating-a-new-folder) pour org
 
 La structure d’un site web peut être comparée à celle d’un arbre qui soutient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former des URL qui indiquent les titres lorsque le contenu des pages est affiché.
 
-Vous trouverez ci-dessous un exemple du site Web We.Retail, où vous pouvez accéder à une page de raccourcis de randonnée ( `desert-sky-shorts`) :
+Vous trouverez ci-dessous un exemple tiré du site We.Retail, sur lequel vous pouvez accéder à une page de shorts de randonnée ( `desert-sky-shorts`) :
 
-* Environnement de l’auteur : `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+* Environnement de création : `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Environnement de publication: `http://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Selon la configuration de votre instance, l’utilisation de `/content` peut être facultative sur l’environnement de publication.
+Selon la configuration de votre instance, l’utilisation de `/content` peut être facultative dans l’environnement de publication.
 
 ```xml
  /content
@@ -171,7 +170,7 @@ Liste des modèles utilisables lors de la génération de la nouvelle page.
 
 ### Composants {#components}
 
-Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. aem est fourni avec une gamme de [composants prêts à l&#39;emploi](/help/sites-authoring/default-components-console.md) qui offrent des fonctionnalités complètes. Il s&#39;agit notamment :
+Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM est fourni avec un éventail de [composants prêts à l’emploi](/help/sites-authoring/default-components-console.md) qui offrent des fonctionnalités complètes. Il s’agit notamment :
 
 * Texte
 * Image
@@ -265,7 +264,7 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 >
 >L’accès à d’autres pages à partir de l’Éditeur de page n’est possible qu’en mode Aperçu, car les liens ne sont pas actifs dans le mode d’édition.
 
-### Copier et coller une page   {#copying-and-pasting-a-page}
+### Copier et coller une page {#copying-and-pasting-a-page}
 
 Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplacement :
 
@@ -381,7 +380,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
    * **Voulez-vous archiver les pages avant la suppression ?** – Si cette case est cochée, les versions des pages sélectionnées pour suppression seront créées lors de la suppression.
       * [Il est possible de restaurer les versions ultérieurement.](/help/sites-authoring/working-with-page-versions.md)
       * Les pages supprimées sans les versions précédentes ne peuvent pas être restaurées.
-      * Cette option est disponible uniquement à partir de AEM version 6.4.7.0.
+      * Cette option est disponible uniquement depuis AEM version 6.4.7.0.
    * **Annuler** pour abandonner l’action
    * **Supprimer** pour confirmer l’action :
 
@@ -423,4 +422,3 @@ Vous pouvez créer des dossiers pour classer vos fichiers et vos pages.
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
 1. Pour créer le dossier, sélectionnez **Créer**.
-
