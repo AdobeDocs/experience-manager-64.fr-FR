@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: a4f0f0c4-3050-4348-8d51-2ca91839208c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 98%
 
 ---
-
 
 # Participation aux workflows{#participating-in-workflows}
 
@@ -44,7 +43,7 @@ Vous pouvez effectuer les actions suivantes pour traiter un élément de travail
 
    Si vous vous rendez compte qu’une étape ou qu’une série d’étapes doit être répétée, vous pouvez revenir en arrière. Cela vous permet de sélectionner une étape qui s’est produite plus tôt dans le workflow pour la traiter à nouveau. Le workflow retourne à l’étape spécifiée et poursuit à partir de là.
 
-## Participation aux workflows  {#participating-in-a-workflow}
+## Participation aux workflows {#participating-in-a-workflow}
 
 ### Notifications d’actions de workflow attribués {#notifications-of-assigned-workflow-actions}
 
@@ -52,11 +51,11 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
 
 * La colonne **État** de la console Sites web indique quand une page fait partie d’un workflow :
 
-   ![workflow status-1](assets/workflowstatus-1.png)
+   ![workflowstatus-1](assets/workflowstatus-1.png)
 
 * Lorsque vous ou un groupe auquel vous appartenez vous voyez attribuer un élément de travail dans le cadre d’un workflow, l’élément de travail apparaît dans votre boîte de réception Worfklow AEM.
 
-   ![workfleinbox](assets/workflowinbox.png)
+   ![workflowinbox](assets/workflowinbox.png)
 
 ### Réalisation d’une étape de participant {#completing-a-participant-step}
 
@@ -65,7 +64,7 @@ Lorsque vous avez suivi l’étape qui vous a été attribuée, vous pouvez fina
 1. Sélectionnez l’étape du workflow et cliquez sur **Terminé** dans la barre de navigation supérieure.
 1. Dans la boîte de dialogue qui s’ouvre, sélectionnez **Étape suivante**, c’est-à-dire l’étape à exécuter par la suite. Une liste déroulante affiche toutes les destinations correspondantes. Un **commentaire** peut également être rédigé.
 
-   ![workflow complete](assets/workflowcomplete.png)
+   ![workflowcomplete](assets/workflowcomplete.png)
 
    Le nombre d’étapes indiqué dépend de la structure du modèle de workflow.
 
@@ -78,7 +77,7 @@ Procédez comme suit pour déléguer un élément de travail.
 1. Cliquez sur le bouton **Déléguer** dans la barre de navigation supérieure.
 1. Dans la boîte de dialogue, utilisez la liste déroulante pour sélectionner **l’utilisateur** auquel vous souhaitez déléguer l’élément de travail. Vous pouvez également rédiger un **commentaire**.
 
-   ![workflow delegate](assets/workflowdelegate.png)
+   ![workflowdelegate](assets/workflowdelegate.png)
 
 1. Cliquez sur **OK** pour confirmer l’action.
 
@@ -92,4 +91,3 @@ Procédez comme suit pour revenir en arrière.
    ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
 
 1. Cliquez sur OK pour confirmer l’action.
-
