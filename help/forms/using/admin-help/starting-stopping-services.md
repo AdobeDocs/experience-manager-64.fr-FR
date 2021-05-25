@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 6e0607d6-171c-4119-95a1-373b30fb63c1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 82%
 
 ---
-
 
 # Démarrage et arrêt des services {#starting-and-stopping-services}
 
@@ -25,7 +24,7 @@ Il existe deux types de services faisant partie d’AEM Forms :
 * Services qui contrôlent le serveur d’applications et la base de données AEM forms.
 * Services qui contrôlent les modules AEM forms
 
-## Démarrage ou arrêt des services associés aux modules AEM forms  {#start-or-stop-the-services-associated-with-aem-forms-modules}
+## Démarrage ou arrêt des services associés aux modules AEM forms {#start-or-stop-the-services-associated-with-aem-forms-modules}
 
 Les modules AEM forms (par exemple, Forms, Rights Management et Output) fonctionnent comme des services. Vous devrez parfois arrêter ou démarrer les services de ces modules AEM forms. Par exemple, vous devez arrêter puis redémarrer un service AEM forms après avoir procédé à une modification sur un paramètre de ce service.
 
@@ -39,7 +38,7 @@ Une implémentation complète d’AEM forms comprend des services de serveur d�
 * *`[application server]`* pour les formulaires AEM
 * *`[database]`* pour les formulaires AEM
 
-Sous Windows, ces services sont accessibles via le **panneau** Outils d’administration > **Services**. Par exemple, si vous avez installé AEM forms sur JBoss à l’aide de la méthode clé en main, les services suivants sont disponibles :
+Sous Windows, ces services sont accessibles via **Outils d’administration** > **Panneau Services**. Par exemple, si vous avez installé AEM forms sur JBoss à l’aide de la méthode clé en main, les services suivants sont disponibles :
 
 * JBoss pour Adobe Experience Manager forms
 * MySQL pour Adobe Experience Manager forms
@@ -51,4 +50,3 @@ Sous UNIX® ou Linux, saisissez le texte suivant à partir d’une ligne de comm
 ```as3
      ps -A | grep [service name]
 ```
-
