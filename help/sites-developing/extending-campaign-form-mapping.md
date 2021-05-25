@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
-translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+exl-id: 3270a279-13ef-4bbf-aafe-539df388c652
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 92%
 
 ---
-
 
 # Création de mappages de formulaires personnalisés{#creating-custom-form-mappings}
 
@@ -24,14 +23,14 @@ Lorsque vous créez un tableau personnalisé dans Adobe Campaign, vous pouvez c
 
 Ce document vous explique comment créer des mappages de formulaire personnalisés. Dès que vous aurez accompli les étapes de ce document, vous proposerez à vos utilisateurs une page sur laquelle ils pourront s’inscrire pour un événement à venir. Vous suivrez ensuite ces utilisateurs via Adobe Campaign.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Les éléments suivants doivent être installés :
 
-* Adobe Experience Manager 
+* Adobe Experience Manager
 * Adobe Campaign Classic
 
-Voir [Intégration de l&#39;AEM à Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) pour plus d&#39;informations.
+Voir [Intégration d’AEM à Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) pour plus d’informations.
 
 ## Création de mappages de formulaires personnalisés {#creating-custom-form-mappings-2}
 
@@ -44,9 +43,9 @@ Pour créer des mappages de formulaire personnalisés, vous devez suivre ces ét
 1. Générez, dans AEM, le formulaire qui utilisera la distribution créée.
 1. Envoyez le formulaire pour le tester.
 
-### Création du tableau personnalisé dans Adobe Campaign  {#creating-the-custom-table-in-adobe-campaign}
+### Création du tableau personnalisé dans Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
 
-Commencez par créer un tableau personnalisé dans Adobe Campaign. Dans cet exemple, nous utilisons la définition suivante pour créer un tableau de événement :
+Commencez par créer un tableau personnalisé dans Adobe Campaign. Dans cet exemple, nous utilisons la définition suivante pour créer un tableau d’événements :
 
 ```xml
 <element autopk="true" label="Event" labelSingular="Event" name="event">
@@ -65,7 +64,7 @@ Dans Adobe Campaign, appuyez/cliquez sur **Ajouter** pour créer une extension 
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-Désormais, utilisez les champs de la table **événement** pour étendre la table **seed** :
+Maintenant, utilisez les champs de la table **event** pour étendre la table **seed** :
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -122,11 +121,10 @@ Vous pouvez à présent envoyer le formulaire et vérifier si les valeurs sont e
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
-## Résolution des incidents {#troubleshooting}
+## Résolution des problèmes {#troubleshooting}
 
 **&quot;Invalid type for value &#39;02/02/2015&#39; from element &#39;@eventdate&#39; (document of type &#39;Event ([adb:event])&#39;)&quot;**
 
 Lorsque vous envoyez le formulaire, cette erreur est consignée dans le fichier **error.log** d’AEM.
 
 Cela est dû à un format non valide pour le champ de date. La solution consiste à indiquer la valeur au format **aaaa-mm-jj**.
-
