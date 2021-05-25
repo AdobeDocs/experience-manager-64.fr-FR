@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 901108a1-c0cb-4680-bc71-6266bcde2775
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Mise à niveau
+exl-id: a3cf6d27-c99f-43f7-a557-b14e88cc921e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2452'
 ht-degree: 93%
 
 ---
-
 
 # Planification de la mise à niveau{#planning-your-upgrade}
 
@@ -29,7 +28,7 @@ Cet article permet d’établir des objectifs clairs, et d’identifier les phas
 
 Le processus de mise à niveau d’AEM nécessite une planification soigneuse, une analyse et des phases d’exécution avec des livrables clés définis pour chaque phase.
 
-Notez qu&#39;il est possible de mettre à niveau directement AEM versions 6.0 et jusqu&#39;à 6.4. Les clients exécutant la version 5.6.x et antérieure doivent d&#39;abord effectuer la mise à niveau vers la version 6.0 ou ultérieure, avec la version 6.0(SP3) recommandée. Veuillez également noter que le nouveau format OAK Segment Tar est utilisé pour l’entrepôt de nœuds de segments depuis la version 6.3. Une migration du référentiel vers ce nouveau format est obligatoire, même pour les versions 6.0, 6.1 et 6.2.
+Notez qu’il est possible de mettre à niveau directement AEM versions 6.0 et jusqu’à 6.4. Les clients utilisant la version 5.6.x et antérieure doivent d’abord effectuer la mise à niveau vers la version 6.0 ou ultérieure, avec la version 6.0 (SP3) recommandée. Veuillez également noter que le nouveau format OAK Segment Tar est utilisé pour l’entrepôt de nœuds de segments depuis la version 6.3. Une migration du référentiel vers ce nouveau format est obligatoire, même pour les versions 6.0, 6.1 et 6.2.
 
 >[!CAUTION]
 >
@@ -95,7 +94,7 @@ Il est important de vous assurer que votre système d’exploitation, Java Runti
 
 La planification et l’exécution d’une mise à niveau AEM requiert un effort important. En vue de clarifier les différents efforts du processus, nous avons divisé les exercices de planification et d’exécution en des phases distinctes. Dans les sections ci-dessous, chaque phase entraîne la création d’un livrable, souvent exploité lors des étapes suivantes du projet.
 
-### Planification pour la formation des auteurs  {#planning-for-author-training}
+### Planification pour la formation des auteurs {#planning-for-author-training}
 
 À chaque nouvelle version, de potentielles modifications de l’IU et des workflows de l’utilisateur peuvent être introduites. En outre, les nouvelles versions introduisent de nouvelles fonctionnalités dont l’entreprise peut tirer parti. Nous vous recommandons de passer en revue les modifications fonctionnelles qui ont été introduites et d’organiser un plan de formation des utilisateurs pour leurs permettre de les utiliser à bon escient. 
 
@@ -139,7 +138,7 @@ Passez en revue les exigences techniques pour AEM 6.4 et vérifiez si votre log
 
 #### Observations relatives à la restructuration du contenu {#content-restructuring-considerations}
 
-AEM 6.4 s’accompagne de modifications au niveau de la structure du référentiel pour rendre les mises à niveau encore plus transparentes. Cela consiste notamment à déplacer le contenu du dossier /etc vers les dossiers /libs, /apps et /content, selon que le contenu appartient à Adobe ou à un client, ce qui limite les risques d’écrasement du contenu au cours des publications. La restructuration du référentiel a été effectuée de telle sorte qu&#39;elle ne nécessite pas de modifications du code au moment de la mise à niveau 6.4, bien qu&#39;il soit recommandé de consulter les détails à l&#39;adresse [Restructuration du référentiel dans AEM 6.4](/help/sites-deploying/repository-restructuring.md) lors de la planification d&#39;une mise à niveau.
+AEM 6.4 s’accompagne de modifications au niveau de la structure du référentiel pour rendre les mises à niveau encore plus transparentes. Cela consiste notamment à déplacer le contenu du dossier /etc vers les dossiers /libs, /apps et /content, selon que le contenu appartient à Adobe ou à un client, ce qui limite les risques d’écrasement du contenu au cours des publications. La restructuration du référentiel a été effectuée de manière à ne pas nécessiter de modifications du code au moment de la mise à niveau vers la version 6.4, bien qu’il soit recommandé de consulter les détails à la section [Restructuration du référentiel dans AEM 6.4](/help/sites-deploying/repository-restructuring.md) lors de la planification d’une mise à niveau.
 
 ### Évaluation de la complexité de la mise à niveau {#assessing-upgrade-complexity}
 
@@ -151,13 +150,13 @@ Une fois l’évaluation initiale terminée, une procédure plus approfondie con
 
 ![screen_shot_2018-04-04at120912](assets/screen_shot_2018-04-04at120912.png)
 
-L’outil de détection des motifs introduit dans la version 6.4 devrait vous donner une idée assez précise de ce à quoi vous devez vous attendre au cours d’une mise à niveau. Cependant, pour des personnalisations et déploiements plus complexes où vous avez des modifications incompatibles, vous pouvez mettre à niveau une instance de développement vers AEM 6.4 conformément aux instructions de [Mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Une fois l’opération terminée, effectuez un test de vérification de haut niveau dans cet environnement. L’objectif de cet exercice n’est pas d’épuiser l’inventaire exhaustif des scénarios de tests et de développer un inventaire formel des éléments défectueux, mais de donner une estimation approximative de la quantité de travail requise pour mettre à niveau le code pour assurer la compatibilité avec la version 6.4. Lorsque vous combinez l’[outil de détection des motifs](/help/sites-deploying/pattern-detector.md) avec les modifications architecturales identifiées dans la section précédente, une estimation approximative peut être fournie à l’équipe chargée de la direction du projet pour la planification de la mise à niveau.
+L’outil de détection des motifs introduit dans la version 6.4 devrait vous donner une idée assez précise de ce à quoi vous devez vous attendre au cours d’une mise à niveau. Cependant, pour les personnalisations et déploiements plus complexes où vous avez des modifications incompatibles, vous pouvez mettre à niveau une instance de développement vers AEM 6.4 conformément aux instructions de la section [Exécution d’une mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Une fois l’opération terminée, effectuez un test de vérification de haut niveau dans cet environnement. L’objectif de cet exercice n’est pas d’épuiser l’inventaire exhaustif des scénarios de tests et de développer un inventaire formel des éléments défectueux, mais de donner une estimation approximative de la quantité de travail requise pour mettre à niveau le code pour assurer la compatibilité avec la version 6.4. Lorsque vous combinez l’[outil de détection des motifs](/help/sites-deploying/pattern-detector.md) avec les modifications architecturales identifiées dans la section précédente, une estimation approximative peut être fournie à l’équipe chargée de la direction du projet pour la planification de la mise à niveau.
 
 ### Développement de la mise à niveau et du runbook de restauration {#building-the-upgrade-and-rollback-runbook}
 
 Même si la documentation du processus de mise à niveau d’une instance AEM est disponible, la structure de réseau, l’architecture de déploiement et les personnalisations de chaque client nécessitent une mise au point et une adaptation de cette approche. Ainsi, nous vous encourageons à passer en revue toute la documentation mise à votre disposition et à l’utiliser pour documenter un runbook spécifique au projet, exposant les procédures de restauration et de mise à niveau spécifiques à suivre dans votre environnement. Si vous effectuez une mise à niveau à partir de CRX2, assurez-vous d’evaluer le temps nécessaire pour passer de CRX2 à Oak. Cela peut prendre beaucoup de temps pour les grands référentiels.
 
-![schéma du Runbook](assets/runbook-diagram.png)
+![runbook-diagramme](assets/runbook-diagram.png)
 
 Nous vous présentons les procédures de restauration et de mise à niveau dans la section [Procédure de mise à niveau ](/help/sites-deploying/upgrade-procedure.md), ainsi que la marche à suivre pour appliquer la mise à niveau lorsque vous effectuez une [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Veuillez prendre connaissance de ces instructions en prenant en compte la structure de votre système, vos personnalisations, et votre tolérance vis-à-vis des temps d’arrêt, en établissant les procédures de restauration et de mise en marche que vous exécuterez durant la mise à niveau. Toutes les modifications relatives à la taille du seveur ou de l’architecture doivent être incluses lors de la création de votre runbook personnalisé. It est important de noter que cela doit être traité comme une version préliminaire. Pendant que votre équipe termine le contrôle qualité et les cycles de développement, et déploie la mise à niveau sur l’environnement d’évaluation, il est problable que vous ayez besoin de prendre des mesures supplémentaires. Ce document doit en principe contenir suffisamment d’informations pour permettre à tout membre du personnel d’exploitation d’effectuer une mise à niveau intégrale en s’y référant uniquement. 
 
@@ -165,7 +164,7 @@ Nous vous présentons les procédures de restauration et de mise à niveau dans 
 
 Nous pouvons utiliser les résultats des exercices précédents pour développer un plan du projet qui couvre le calendrier prévu pour nos tests ou les efforts de développement, la formation et l’exécution de la mise à niveau. 
 
-![plan-projet-développement](assets/develop-project-plan.png)
+![development-project-plan](assets/develop-project-plan.png)
 
 Un plan de projet complet doit comprendre :
 
@@ -187,7 +186,7 @@ Un plan de projet complet doit comprendre :
 
 ### Réalisation du développement et du contrôle qualité  {#performing-development-and-qa}
 
-Nous proposons des procédures pour que la[ mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) soit compatible avec AEM 6.4. Pendant l’exécution de ce processus itératif, le runbook doit être modifié selon les besoins. Voir aussi [Compatibilité ascendante dans AEM 6.4](/help/sites-deploying/backward-compatibility.md) pour plus d&#39;informations sur la manière dont vos personnalisations peuvent rester rétrocompatibles dans la plupart des cas sans nécessiter de développement immédiatement après la mise à niveau.
+Nous proposons des procédures pour que la[ mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) soit compatible avec AEM 6.4. Pendant l’exécution de ce processus itératif, le runbook doit être modifié selon les besoins. Voir également la section [Compatibilité descendante dans AEM 6.4](/help/sites-deploying/backward-compatibility.md) pour plus d’informations sur la manière dont vos personnalisations peuvent rester rétrocompatibles dans la plupart des cas sans nécessiter de développement immédiatement après la mise à niveau.
 
 ![screen_shot_2018-04-04at154829](assets/screen_shot_2018-04-04at154829.png)
 
@@ -205,6 +204,6 @@ Cette étape est cruciale, car c’est la seule fois où vous êtes en mesure de
 
 Une fois que l’authorisation finale a été donnée par toutes les parties prenantes, il est temps d’exécuter les procédures définies dans le runbook. Les étapes de mise à niveau et de restauration ont été présentées dans la section [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md)et les étapes d’installation lors de la réalisation d’une [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Cela sert de point de référence.
 
-![exécution-mise à niveau](assets/perform-upgrade.png)
+![performance-upgrade](assets/perform-upgrade.png)
 
 Nous avons fourni quelques étapes dans les instructions de mise à niveau pour la validation de l’environnement. Celles-ci comprennent des vérifications de base, comme l’analyse des journaux de mise à niveau et la vérification du démarrage correct des lots OSGi. Cependant, nous recommandons de procéder à la validation également à l’aide de vos propres scénarios de test basés sur vos processus opérationnels. Nous recommandons aussi de vérifier le programme de nettoyage des révisions en ligne d’AEM, ainsi que d’autres routines associées, pour garantir qu’ils auront lieu durant une période calme pour votre organisation. Ces routines sont indispensables à la performance d’AEM sur le long terme.
