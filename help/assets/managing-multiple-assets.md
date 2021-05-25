@@ -1,19 +1,18 @@
 ---
 title: Modification en masse des métadonnées de plusieurs ressources et collections
-description: Découvrez comment modifier simultanément les métadonnées de nombreux fichiers et collections afin de propager rapidement les modifications de métadonnées courantes.
+description: Découvrez comment modifier simultanément les métadonnées de nombreuses ressources et collections afin de propager rapidement les modifications de métadonnées courantes.
 contentOwner: AG
-feature: Asset Management,Metadata,Collections
+feature: Gestion des ressources,Métadonnées,Collections
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '440'
 ht-degree: 59%
 
 ---
 
-
-# Gérer plusieurs ressources et collections {#managing-multiple-assets-and-collections}
+# Gestion de plusieurs ressources et collections {#managing-multiple-assets-and-collections}
 
 Découvrez comment modifier les métadonnées de plusieurs ressources et collections simultanément pour propager rapidement les modifications courantes des métadonnées.
 
@@ -28,19 +27,19 @@ Pour personnaliser la page des propriétés de métadonnées, notamment ajouter,
 
 >[!NOTE]
 >
->Les méthodes de modification en masse fonctionnent pour les ressources disponibles dans un dossier ou une collection. Pour les fichiers disponibles dans plusieurs dossiers ou qui correspondent à un critère commun, il est possible de mettre à jour les métadonnées en bloc à partir des résultats de la recherche de ressources.
+>Les méthodes de modification en masse fonctionnent pour les ressources disponibles dans un dossier ou une collection. Pour les ressources disponibles dans plusieurs dossiers ou correspondant à un critère commun, il est possible de mettre à jour les métadonnées en masse à partir des résultats de la recherche de ressources.
 
-## Modifier les propriétés de métadonnées de plusieurs fichiers {#editing-metadata-properties-of-multiple-assets}
+## Modification des propriétés de métadonnées de plusieurs ressources {#editing-metadata-properties-of-multiple-assets}
 
 1. Dans l’interface utilisateur Ressources, accédez à l’emplacement des ressources à modifier.
 1. Sélectionnez les ressources dont vous souhaitez modifier les propriétés communes.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]** pour ouvrir la page des propriétés des ressources sélectionnées.
 1. Modifiez les propriétés de métadonnées des ressources sélectionnées dans les différents onglets.
-1. Pour vue des métadonnées d’une ressource spécifique, annulez la sélection des ressources restantes dans la liste. Si vous annulez la sélection de quelques ressources sur la page [!UICONTROL Propriétés], les métadonnées de ces ressources ne sont pas mises à jour.
+1. Pour afficher les métadonnées d’une ressource spécifique, annulez la sélection des ressources restantes dans la liste. Si vous annulez la sélection de quelques ressources sur la page [!UICONTROL Propriétés] , les métadonnées de ces ressources ne sont pas mises à jour.
 1. Pour sélectionner un autre schéma de métadonnées pour les ressources, cliquez sur **[!UICONTROL Paramètres]** dans la barre d’outils, puis sélectionnez un schéma. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes dans les champs contenant plusieurs valeurs, sélectionnez **[!UICONTROL Mode d’ajout]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Cliquez sur **[!UICONTROL Envoyer]**.
 
-![Le schéma de métadonnées s’applique en bloc à plusieurs fichiers](assets/metadata-schema-bulk-edit.gif)
+![Le schéma de métadonnées s’applique en bloc à plusieurs ressources.](assets/metadata-schema-bulk-edit.gif)
 
 >[!CAUTION]
 >
@@ -52,8 +51,9 @@ Pour éviter une situation similaire à DOS, AEM limite le nombre de paramètres
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Pour modifier la limite, accédez à **[!UICONTROL Outils > Opérations > Console Web]** et modifiez la valeur de [!UICONTROL Paramètres de POST maximum] dans [!UICONTROL Gestion des paramètres de requête Apache Sling] configuration OSGi.
+Pour modifier cette limite, accédez à **[!UICONTROL Outils > Opérations > Console web]** et modifiez la valeur de [!UICONTROL Paramètres POST max.] dans la [!UICONTROL Gestion des paramètres de requête Sling Apache] configuration OSGi.
 
 >[!MORELIKETHIS]
 >
->* [Modification des métadonnées de plusieurs collections en bloc](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+>* [Modification en masse des métadonnées de plusieurs collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+
