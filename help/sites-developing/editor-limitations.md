@@ -1,28 +1,27 @@
 ---
 title: Limites de l’éditeur
 seo-title: Limites de l’éditeur
-description: 'L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. '
-seo-description: 'L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. '
+description: L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs.
+seo-description: L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs.
 uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
-translation-type: tm+mt
-source-git-commit: 9b1b0bd53d6c9e0c2c2857ef34b3409fff8485d2
+exl-id: ce860880-5954-4f72-8ec6-60209c1ec659
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 94%
 
 ---
 
-
 # Limites de l’éditeur{#editor-limitations}
 
 L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions lorsque cela s’avère possible.
 
-## Limites fonctionnelles   {#functional-limitations}
+## Limites fonctionnelles  {#functional-limitations}
 
 Un auteur peut être confronté aux limites fonctionnelles suivantes lors de l’utilisation de l’éditeur pour créer des pages.
 
@@ -56,7 +55,7 @@ Il est possible que les images d’arrière-plan fixes ne puissent pas être aff
 
 * Sélectionnez **Afficher la page comme publiée** dans les actions de la barre d’en-tête pour afficher correctement la page.
 
-### Hauteur de 100 %{#height}
+### Hauteur de 100 % {#height}
 
 La hauteur de 100 % n’est pas prise en charge sur l’élément de corps d’une page.
 
@@ -84,4 +83,3 @@ body:before, body:after{
     display: table;
 }
 ```
-
