@@ -8,61 +8,60 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formulaires adaptatifs
+exl-id: 7cd73bdf-6717-4923-91ca-e8b6d44429ca
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '6354'
-ht-degree: 80%
+ht-degree: 94%
 
 ---
-
 
 # Éditeur de règles de formulaires adaptatifs {#adaptive-forms-rule-editor}
 
 ## Présentation {#overview}
 
-La fonctionnalité d’éditeur de règles dans Adobe Experience Manager Forms permet aux utilisateurs et aux développeurs professionnels de formulaires de créer des règles sur des objets de formulaire adaptatif. Ces règles déterminent les actions à déclencher sur des objets de formulaire en fonction des conditions prédéfinies, des saisies de l’utilisateur et des actions de l’utilisateur sur le formulaire.  Cela permet de rationaliser davantage l’expérience de remplissage du formulaire en assurant précision et vitesse.
+La fonctionnalité d’éditeur de règles dans Adobe Experience Manager Forms permet aux utilisateurs et aux développeurs professionnels de formulaires de créer des règles sur des objets de formulaire adaptatif. Ces règles déterminent les actions à déclencher sur des objets de formulaire en fonction des conditions prédéfinies, des saisies de l’utilisateur et des actions de l’utilisateur sur le formulaire. Cela permet de rationaliser davantage l’expérience de remplissage du formulaire en assurant précision et vitesse.
 
-L’éditeur de règles fournit une interface utilisateur intuitive et simplifiée pour la création de règles. L’éditeur de règles offre un éditeur visuel à tous les utilisateurs. En outre, l’éditeur de règles fournit un éditeur de code permettant d’écrire des règles et des scripts, mais seulement aux utilisateurs avancés des formulaires. Les principales actions que vous pouvez exécuter sur des objets de formulaire adaptatif utilisant des règles sont :
+L’éditeur de règles fournit une interface utilisateur intuitive et simplifiée pour la création de règles. L’éditeur de règles met un éditeur visuel à disposition de tous les utilisateurs. En outre, l’éditeur de règles fournit un éditeur de code permettant d’écrire des règles et des scripts, mais seulement aux utilisateurs avancés des formulaires. Les principales actions que vous pouvez exécuter sur des objets de formulaire adaptatif utilisant des règles sont :
 
-* Afficher ou masquer un objet 
+* Afficher ou masquer un objet
 * Activer ou désactiver un objet
-* Définir une valeur pour un objet 
-* Valider la valeur d’un objet 
-* Exécuter les fonctions pour calculer la valeur d’un objet 
+* Définir une valeur pour un objet
+* Valider la valeur d’un objet
+* Exécuter les fonctions de calcul de la valeur d’un objet
 * Appeler un service de modèle de données de formulaire et effectuer une opération
-* Définir la propriété d’un objet 
+* Définir la propriété d’un objet
 
-L’éditeur de règles remplace les fonctionnalités de script dans AEM version Forms 6.1 et les versions antérieures. Toutefois, les scripts existants sont conservés dans le nouvel éditeur de règles.  Pour plus d’informations sur l’utilisation des scripts existants dans l’éditeur de règles, reportez-vous à la section[ Impact de l’éditeur de règles sur les scripts existants](/help/forms/using/rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p).
+L’éditeur de règles remplace les fonctionnalités de script dans AEM Forms 6.1 et les versions antérieures. Toutefois, les scripts existants sont conservés dans le nouvel éditeur de règles.  Pour plus d’informations sur l’utilisation des scripts existants dans l’éditeur de règles, reportez-vous à la section[ Impact de l’éditeur de règles sur les scripts existants](/help/forms/using/rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p).
 
 Les utilisateurs ajoutés au groupe des utilisateurs avancés de formulaires peuvent créer de nouveaux scripts et modifier les scripts existants. Les utilisateurs appartenant au groupe d’utilisateurs de formulaires peuvent utiliser les scripts, mais ne peuvent ni en créer ni en modifier.
 
 ## Compréhension d’une règle {#understanding-a-rule}
 
-Une règle est une combinaison d’actions et de conditions. Dans l’éditeur de règles, les actions incluent des activités telles que masquer, afficher, activer, désactiver ou calculer la valeur d’un objet dans un formulaire. Les conditions sont des expressions booléennes qui sont évaluées en effectuant des vérifications et des opérations sur l’état, la valeur ou la propriété d’un objet de formulaire. Les actions sont exécutées en fonction de la valeur (`True` ou`False` ) ) renvoyée par l’évaluation d’une condition.
+Une règle est une combinaison d’actions et de conditions. Dans l’éditeur de règles, les actions incluent des activités telles que masquer, afficher, activer, désactiver ou calculer la valeur d’un objet dans un formulaire. Les conditions sont des expressions booléennes qui sont évaluées en effectuant des vérifications et des opérations sur l’état, la valeur ou la propriété d’un objet de formulaire. Les actions sont exécutées en fonction de la valeur (`True` ou `False`) renvoyée par l’évaluation d’une condition.
 
-L’éditeur de règles fournit un ensemble de types de règle prédéfinis, tels que Lorsque, Afficher, Masquer, Activer, Désactiver, Définir la valeur de et Valider pour vous aider à créer des règles.  Chaque type de règle vous permet de définir des conditions et des actions dans une règle. Le document décrit plus loin chaque type de règle en détail. 
+L’éditeur de règles fournit un ensemble de types de règle prédéfinis, tels que Lorsque, Afficher, Masquer, Activer, Désactiver, Définir la valeur de et Valider pour vous aider à créer des règles.  Chaque type de règle vous permet de définir des conditions et des actions dans une règle. Le document décrit de façon plus détaillée chaque type de règle.
 
-Une règle suit généralement l’un des concepts suivants : 
+Une règle suit généralement l’un des concepts suivants :
 
-**Condition-** ActionDans ce concept, une règle définit d&#39;abord une condition suivie d&#39;une action à déclencher. Le concept est comparable à l’instruction de cause à effet des langages de programmation.
+**Condition-action** Dans ce concept, une règle définit d’abord une condition suivie d’une action à déclencher. Le concept est comparable à l’instruction if-then des langages de programmation.
 
 Dans l’éditeur de règles, le type de règle **Lorsque** applique le concept de condition-action.
 
-**Action-** ConditionDans ce concept, une règle définit d&#39;abord une action à déclencher suivie de conditions d&#39;évaluation. Une autre variante de ce concept est une action alternative d’action-condition, qui définit également une action alternative à déclencher si la condition renvoie la valeur False.
+**Action-condition** Dans ce concept, une règle définit d’abord une action à déclencher suivie de conditions d’évaluation. Une autre variante de ce concept est une action alternative d’action-condition, qui définit également une action alternative à déclencher si la condition renvoie la valeur False.
 
-Les types de règles Afficher, Masquer, Activer, Désactiver, Définir la valeur de et Valider de l’éditeur de règles appliquent le concept de règle d’action-condition.  Par défaut, l’action alternative d’Afficher est Masquer et l’action alternative d’Activer est Désactiver, et inversement.  Vous ne pouvez pas modifier l’action alternative par défaut.
+Les types de règles Afficher, Masquer, Activer, Désactiver, Définir la valeur de et Valider de l’éditeur de règles appliquent le concept de règle d’action-condition. Par défaut, l’action alternative d’Afficher est Masquer et l’action alternative d’Activer est Désactiver, et inversement.  Vous ne pouvez pas modifier l’action alternative par défaut.
 
 >[!NOTE]
 >
->Les types de règle disponibles, y compris les conditions et les actions que vous définissez dans l’éditeur de règles, dépendent également du type de l’objet de formulaire pour lequel vous créez une règle. L’éditeur de règles affiche uniquement les types de règle et les options valides lors de la création des instructions de condition et d’action pour un type particulier d’objet de formulaire.  Par exemple, les types de règle Valider, Définir la valeur de, Activer et Désactiver ne s’affichent pas pour un objet de panneau. 
+>Les types de règle disponibles, y compris les conditions et les actions que vous définissez dans l’éditeur de règles, dépendent également du type de l’objet de formulaire pour lequel vous créez une règle. L’éditeur de règles affiche uniquement les types de règle et les options valides lors de la création des instructions de condition et d’action pour un type particulier d’objet de formulaire.  Par exemple, les types de règle Valider, Définir la valeur de, Activer et Désactiver ne s’affichent pas pour un objet de panneau.
 
-Pour plus d’informations sur les types de règles disponibles dans l’éditeur de règles, reportez-vous à la section [Types de règles disponibles dans l’éditeur de règles](/help/forms/using/rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Pour plus d’informations sur les types de règle disponibles dans l’éditeur de règles, reportez-vous à la section [Types de règle disponibles dans l’éditeur de règles](/help/forms/using/rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
-### Directives pour choisir un concept de règle {#guidelines-for-choosing-a-rule-construct}
+### Recommandations pour la sélection d’un concept de règle {#guidelines-for-choosing-a-rule-construct}
 
-Bien que vous puissiez obtenir la plupart des cas d’utilisation avec n’importe quel concept de règle, voici quelques recommandations pour choisir un concept plus qu’un autre. Pour plus d’informations sur les règles disponibles dans l’éditeur de règles, voir [Types de règle disponibles dans l’éditeur de règles](/help/forms/using/rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Même si vous pouvez obtenir la plupart des cas d’utilisation avec n’importe quel concept de règle, voici quelques recommandations pour sélectionner un concept plutôt qu’un autre. Pour plus d’informations sur les règles disponibles dans l’éditeur de règles, reportez-vous à la section [Types de règles disponibles dans l’éditeur de règles](/help/forms/using/rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
 * Lors de la création d’une règle, un des principes de base consiste à penser à cette règle dans le contexte de l’objet pour lequel vous créez une règle. Imaginons que vous souhaitez masquer ou afficher le champ B selon la valeur qu’un utilisateur indique dans le champ A. Dans ce cas, vous évaluez une condition du champ A, et en fonction de la valeur qu’elle renvoie, vous déclenchez une action sur le champ B.
 
@@ -75,8 +74,8 @@ Bien que vous puissiez obtenir la plupart des cas d’utilisation avec n’impor
 * Pour déclencher une action selon plusieurs conditions, il est recommandé d’utiliser le concept d’action-condition. Par exemple, pour afficher et masquer le champ A en évaluant les conditions des champs B, C et D, utilisez le type de règle Afficher ou Masquer sur le champ A.
 * Utilisez le concept de condition-action ou d’action-condition si la règle contient une action pour une condition.
 * Si une règle vérifie une condition et exécute immédiatement une action lorsqu’une valeur est indiquée dans un champ ou lorsqu’un champ est quitté, il est recommandé de créer une règle avec le concept de condition-action ou le type de règle Lorsque pour le champ pour lequel la condition est évaluée.
-* La condition dans la règle Lorsque est évaluée lorsqu’un utilisateur modifie la valeur de l’objet pour lequel la règle Lorsque est appliquée.  Toutefois, si vous souhaitez déclencher l’action lorsque la valeur change du côté serveur, comme dans le cas d’un pré-remplissage de la valeur, il est recommandé de créer une règle Lorsque qui déclenche l’action lorsque le champ est initialisé.
-* Lors de la création de règles pour les objets de listes déroulantes, de boutons radio ou de cases à cocher, les options ou valeurs de ces objets de formulaire dans le formulaire sont prérenseignées dans l’éditeur de règles.
+* La condition dans la règle Lorsque est évaluée lorsqu’un utilisateur modifie la valeur de l’objet pour lequel la règle Lorsque est appliquée. Toutefois, si vous souhaitez déclencher l’action lorsque la valeur change du côté serveur, comme dans le cas d’un pré-remplissage de la valeur, il est recommandé de créer une règle Lorsque qui déclenche l’action lorsque le champ est initialisé.
+* Lorsque vous créez des règles pour les menus déroulants, les boutons radio ou les cases à cocher, les options ou les valeurs de ces objets de formulaire sont préremplies dans l’éditeur de règles.
 
 ## Types d’opérateur et événements disponibles dans l’éditeur de règles {#available-operator-types-and-events-in-rule-editor}
 
@@ -89,9 +88,9 @@ L’éditeur de règles fournit les opérateurs logiques et les événements sui
 * **Contient**
 * **Est vide**
 * **N’est pas vide**
-* **A sélectionné :** renvoie True lorsque l’utilisateur sélectionne une option donnée pour une case à cocher, une liste déroulante, un bouton radio.
-* **Est initialisé (événement) :** renvoie True si un objet de formulaire est généré dans le navigateur.
-* **Est modifié (événement) :** renvoie True si l’utilisateur modifie la valeur saisie ou l’option sélectionnée pour un objet de formulaire.
+* **A sélectionné :** renvoie la valeur True lorsque l’utilisateur sélectionne une option donnée pour une case à cocher, une liste déroulante, un bouton radio.
+* **Est initialisé (événement) :** renvoie la valeur True si un objet de formulaire est généré dans le navigateur.
+* **Est modifié (événement) :** renvoie la valeur True si l’utilisateur modifie la valeur saisie ou l’option sélectionnée pour un objet de formulaire.
 
 ## Types de règle disponibles dans l’éditeur de règles {#available-rule-types-in-rule-editor}
 
@@ -99,7 +98,7 @@ L’éditeur de règles fournit un ensemble de types de règle prédéfinis que 
 
 ### Quand {#when}
 
-Le type de règle **Lorsque** suit le concept de règle d’**action alternative de condition-action**, ou parfois, simplement le concept de **condition-action**. Dans ce type de règle, vous spécifiez d’abord une condition à évaluer puis une action à déclencher si la condition est remplie ( `True`). Lors de l’utilisation du type de règle Quand, vous pouvez utiliser plusieurs opérateurs ET et OU afin de créer des [expressions imbriquées](#nestedexpressions).
+Le type de règle **Lorsque** suit le concept de règle d’**action alternative de condition-action** ou parfois simplement le concept de **condition-action**. Dans ce type de règle, vous spécifiez d’abord une condition à évaluer, puis une action à déclencher si la condition est remplie (`True`). Lors de l’utilisation du type de règle Lorsque, vous pouvez utiliser plusieurs opérateurs ET et OU afin de créer des [expressions imbriquées](#nestedexpressions).
 
 Avec le type de règle Lorsque, vous pouvez évaluer une condition sur un objet de formulaire et exécuter des actions sur un ou plusieurs objets.
 
@@ -117,69 +116,69 @@ AND
 Action 3 on Object C;
 ```
 
-Lorsque vous disposez d’un composant à plusieurs valeurs, tel que des boutons radio ou des listes, lors de la création d’une règle pour ce composant, les options sont automatiquement récupérées et mises à la disposition du créateur de règles. Vous n’avez pas besoin de saisir à nouveau les valeurs de l’option.
+Lorsque vous avez un composant à valeurs multiples, comme des boutons radio ou une liste, les options sont récupérées automatiquement et mises à disposition du créateur de la règle lorsque vous créez une règle pour ce composant. Vous n’avez pas besoin de saisir à nouveau les valeurs de l’option.
 
 Par exemple, une liste comporte quatre options : Rouge, Bleu, Vert et Jaune. Lors de la création de la règle, les options (boutons radio) sont automatiquement récupérées et mises à disposition du créateur de la règle comme suit :
 
 ![multivaluefcdisplaysoptions](assets/multivaluefcdisplaysoptions.png)
 
-Lorsque vous écrivez une règle Lorsque, vous pouvez déclencher l’action Effacer la valeur de. L’action Effacer la valeur de efface la valeur de l’objet spécifié. L’option Clear Value of (Effacer la valeur de) de l’instruction Lorsque permet de créer des conditions complexes avec plusieurs champs.
+Lorsque vous créez une règle Lorsque, vous pouvez déclencher l’action Effacer la valeur de. L’action Effacer la valeur de efface la valeur de l’objet spécifié. L’option Effacer la valeur de dans l’instruction Lorsque permet de créer des conditions complexes comportant plusieurs champs.
 
-![claivalueof](assets/clearvalueof.png)
+![clearvalue](assets/clearvalueof.png)
 
-**** HideHides l’objet spécifié.
+**Masquer** Masque l’objet spécifié.
 
-**** ShowAffiche l&#39;objet spécifié.
+**Afficher** Affiche l’objet spécifié.
 
-**** EnableActive l&#39;objet spécifié.
+**Activer** Active l’objet spécifié.
 
-**** DésactiverDésactive l&#39;objet spécifié.
+**Désactiver** Désactive l’objet spécifié.
 
-**Invoke** serviceAppelle un service configuré dans un modèle de données de formulaire. Lorsque vous sélectionnez l’opération Appel du service, un champ apparaît. Lorsque vous touchez le champ, il affiche tous les services configurés dans tous les modèles de données de formulaire de votre instance AEM. Lorsque vous choisissez un service de modèle de données de formulaire, des champs supplémentaires permettant de mapper les objets de formulaires avec des paramètres d’entrée et de sortie pour le service spécifié apparaissent. Voir l’exemple de règle pour appeler des services de modèle de données de formulaire.
+**Appel du service** Appel un service configuré dans un modèle de données de formulaire. Lorsque vous sélectionnez l’opération Appel du service, un champ s’affiche. Lorsque vous touchez le champ, il affiche tous les services configurés dans tous les modèles de données de formulaire de votre instance AEM. Lorsque vous choisissez un service de modèle de données de formulaire, des champs supplémentaires permettant de mapper les objets de formulaires avec des paramètres d’entrée et de sortie pour le service spécifié apparaissent. Voir l’exemple de règle pour appeler des services de modèle de données de formulaire.
 
 En plus du service de modèle de données de formulaire, vous pouvez spécifier une URL WSDL directe pour appeler un service Web. Cependant, un service de modèle de données de formulaire possède de nombreux avantages et l’approche recommandée permettant d’appeler un service.
 
-Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire, voir [Intégration des données AEM Forms](/help/forms/using/data-integration.md).
+Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire, voir [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
 
-**Définissez la valeur** de Computes et la valeur de l’objet spécifié. Vous pouvez définir la valeur de l’objet sur une chaîne, la valeur d’un autre objet, la valeur calculée à l’aide d’une expression ou d’une fonction mathématique, la valeur d’une propriété d’un objet ou la valeur de sortie d’un service de modèle de données de formulaire configuré. Lorsque vous sélectionnez l’option de service Web, elle affiche tous les services configurés dans tous les modèles de données de formulaire sur votre instance AEM. Lorsque vous choisissez un service de modèle de données de formulaire, des champs supplémentaires permettant de mapper les objets de formulaires avec des paramètres d’entrée et de sortie pour le service spécifié apparaissent.
+**Définir la valeur de** Calcule et définit la valeur de l’objet spécifié. Vous pouvez définir la valeur de l’objet sur une chaîne, la valeur d’un autre objet, la valeur calculée à l’aide d’une expression ou d’une fonction mathématique, la valeur d’une propriété d’un objet ou la valeur de sortie d’un service de modèle de données de formulaire configuré. Lorsque vous choisissez l’option de service Web, elle affiche tous les services configurés dans tous les modèles de données de formulaire sur votre instance AEM. Lorsque vous choisissez un service de modèle de données de formulaire, des champs supplémentaires permettant de mapper les objets de formulaires avec des paramètres d’entrée et de sortie pour le service spécifié apparaissent.
 
-Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire, voir [Intégration des données AEM Forms](/help/forms/using/data-integration.md).
+Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire, voir [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
 
-**Set** propertyDéfinit la valeur d&#39;une propriété de l&#39;objet spécifié.
+**Set** propertyDéfinit la valeur d’une propriété de l’objet spécifié.
 
-**Clear Value** OfEfface la valeur de l’objet spécifié.
+**Effacer la valeur de** : efface la valeur de l’objet spécifié.
 
-**Définissez** FocusSets sur l&#39;objet spécifié.
+**Définir la cible d’action**: définit la cible d’action sur l’objet spécifié.
 
-**Enregistrer le** formulaireEnregistre le formulaire.
+**Enregistrer le formulaire** : enregistre le formulaire.
 
-**Envoyer** FormsEnvoie le formulaire.
+**Envoyer les formulaires** : envoie le formulaire.
 
-**Réinitialiser** FormRéinitialise le formulaire.
+**Réinitialiser le formulaire** : réinitialise le formulaire.
 
-**Valider** FormValide le formulaire.
+**Valider le formulaire** : valide le formulaire.
 
-**Ajouter** InstanceAjoute une instance du panneau ou de la ligne de tableau répétable spécifiée.
+**Ajouter une instance** : ajoute une instance de la ligne de panneau ou de tableau répétable spécifiée.
 
-**Supprimer** InstanceSupprime une instance du panneau ou de la ligne de tableau répétable spécifiée.
+**Supprimer une instance** : supprime une instance de la ligne de panneau ou de tableau répétable spécifiée.
 
 ### Définir la valeur de {#set-value-of}
 
-Le type de règle **[!UICONTROL Définir la valeur de]** vous permet de définir la valeur d’un objet de formulaire selon que la condition spécifiée est remplie ou non. La valeur peut être définie sur la valeur d’un autre objet, d’une chaîne littérale, la valeur dérivée d’une expression ou d’une fonction mathématique, la valeur d’une propriété d’un autre objet ou la sortie d’un service de modèle de données de formulaire. De même, vous pouvez vérifier la condition d’un composant, d’une chaîne, d’une propriété ou les valeurs provenant d’une fonction ou d’une expression mathématique.
+Le type de règle **[!UICONTROL Définir la valeur de]** permet de définir la valeur d’un objet de formulaire selon que la condition spécifiée est remplie ou non. La valeur peut être définie sur la valeur d’un autre objet, d’une chaîne littérale, la valeur dérivée d’une expression ou d’une fonction mathématique, la valeur d’une propriété d’un autre objet ou la sortie d’un service de modèle de données de formulaire. De même, vous pouvez vérifier la condition d’un composant, d’une chaîne, d’une propriété ou les valeurs dérivées d’une fonction ou d’une expression mathématique.
 
-Notez que le type de règle Définir la valeur de n’est pas disponible pour tous les objets de formulaire, tels que les boutons de panneaux et de barres d’outils. Une règle Définir la valeur de standard présente la structure suivante :
+Notez que le type de règle Définir la valeur de n’est pas disponible pour tous les objets de formulaire, tels que les boutons de panneaux et de barres d’outils. Une règle Définir la valeur de standard possède la structure suivante :
 
-Définir la valeur de Objet A sur : 
+Définir la valeur de Objet A sur :
 
 (chaîne ABC) OU\
 (propriété d’objet X de Objet C) OU\
 (valeur d’une fonction) OU\
 (valeur d’une expression mathématique) OU\
-(valeur de sortie d&#39;un service de modèle de données ou d&#39;un service Web);
+(valeur de sortie d’un service de modèle de données ou d’un service Web) ;
 
 Lorsque (facultatif) :
 
-(Condition 1 ET Condition 2 ET Condition 3) est TRUE ; 
+(Condition 1 ET Condition 2 ET Condition 3) est TRUE ;
 
 L’exemple suivant prend la valeur du champ `dependentid` comme valeur d’entée et définit la valeur du champ `Relation` comme valeur de sortie de l’argument `Relation` du service de modèle de données de formulaire `getDependent`.
 
@@ -191,9 +190,9 @@ Exemple de règle Définir la valeur à l’aide du service de modèle de donné
 >
 >En outre, vous pouvez utiliser la règle Définir la valeur de pour remplir toutes les valeurs d’un composant de type liste déroulante à partir de la sortie d’un service de modèle de données de formulaire ou d’un service Web. Cependant, assurez-vous que l’argument de sortie que vous choisissez est de type Tableau. Toutes les valeurs renvoyées dans un tableau sont disponibles dans la liste déroulante spécifiée.
 
-### Afficher  {#show}
+### Afficher {#show}
 
-Avec le type de règle **Afficher**, vous pouvez créer une règle pour afficher ou masquer un objet de formulaire selon si une condition est remplie ou non. Le type de règle Afficher déclenche également l’action Masquer au cas où la condition ne serait pas remplie ou renvoyée`False` .
+Le type de règle **Afficher** permet de créer une règle pour afficher ou masquer un objet de formulaire selon qu’une condition est remplie ou non. Le type de règle Afficher déclenche également l’action Masquer au cas où la condition ne serait pas remplie ou renverrait `False`.
 
 Une règle standard Afficher est structurée comme suit :
 
@@ -209,7 +208,7 @@ Une règle standard Afficher est structurée comme suit :
 
 ### Masquer {#hide}
 
-De la même manière que pour le type de règle Afficher, vous pouvez utiliser le type de règle **Masquer** pour afficher ou masquer un objet de formulaire selon qu’une condition est remplie ou non.  Le type de règle Masquer déclenche également l’action Afficher au cas où la condition ne serait pas remplie ou renvoyée`False` .
+De la même manière que pour le type de règle Afficher, vous pouvez utiliser le type de règle **Masquer** pour afficher ou masquer un objet de formulaire selon qu’une condition est remplie ou non. Le type de règle Masquer déclenche également l’action Afficher au cas où la condition ne serait pas remplie ou renverrait `False`.
 
 Une règle standard Masquer est structurée comme suit :
 
@@ -225,7 +224,7 @@ Une règle standard Masquer est structurée comme suit :
 
 ### Activer {#enable}
 
-Le type de règle **Activer** vous permet d’activer ou de désactiver un objet de formulaire selon si une condition est remplie ou non. Le type de règle Activer déclenche également l’action Désactiver au cas où la condition ne serait pas remplie ou serait renvoyée`False` .
+Le type de règle **Activer** permet d’activer ou de désactiver un objet de formulaire selon qu’une condition est remplie ou non. Le type de règle Activer déclenche également l’action Désactiver au cas où la condition ne serait pas remplie ou renverrait `False`.
 
 Une règle Activer standard est structurée comme suit :
 
@@ -241,7 +240,7 @@ Une règle Activer standard est structurée comme suit :
 
 ### Désactiver {#disable}
 
-De la même manière que le type de règle Activer, le type de règle **Désactiver** vous permet d’activer ou de désactiver un objet de formulaire selon qu’une condition est remplie ou non.  Le type de règle Désactiver déclenche également l’action Activer au cas où la condition ne serait pas remplie ou serait renvoyée `False` .
+De la même manière que le type de règle Activer, le type de règle **Désactiver** permet d’activer ou de désactiver un objet de formulaire selon qu’une condition est remplie ou non. Le type de règle Désactiver déclenche également l’action Activer au cas où la condition ne serait pas remplie ou renverrait `False`.
 
 Une règle Désactiver standard est structurée comme suit :
 
@@ -269,28 +268,28 @@ Une règle Valider standard est structurée comme suit :
 
 >[!NOTE]
 >
->Si la valeur spécifiée n’est pas conforme à la règle Valider, vous pouvez afficher un message de validation à l’utilisateur.  Vous pouvez spécifier le message dans le champ **[!UICONTROL Message de validation du script]** dans les propriétés de composant dans la zone latérale.
+>Si la valeur spécifiée n’est pas conforme à la règle Valider, vous pouvez afficher un message de validation à l’intention de l’utilisateur. Vous pouvez spécifier le message dans le champ **[!UICONTROL Message de validation du script]** dans les propriétés de composant dans la barre latérale.
 
 ![script-validation](assets/script-validation.png)
 
-## Compréhension de l’interface utilisateur de l’éditeur de règles {#understanding-the-rule-editor-user-interface}
+## Présentation de l’interface utilisateur de l’éditeur de règles {#understanding-the-rule-editor-user-interface}
 
-L’éditeur de règles fournit une interface utilisateur exhaustive et néanmoins simple qui permet de créer et de gérer des règles.  Vous pouvez lancer l’interface utilisateur de l’éditeur de règles depuis un formulaire adaptatif en mode Création.
+L’éditeur de règles offre une interface utilisateur exhaustive et néanmoins simple, qui permet de créer et de gérer des règles. Vous pouvez lancer l’interface utilisateur de l’éditeur de règles depuis un formulaire adaptatif en mode Création.
 
 Pour lancer l’interface utilisateur de l’éditeur de règles :
 
 1. Ouvrez un formulaire adaptatif en mode Création.
-1. Appuyez sur l’objet de formulaire pour lequel vous souhaitez écrire une règle, et dans la barre d’outils des composants, appuyez sur ![edit-rules](assets/edit-rules.png). L’interface utilisateur de l’éditeur de règles s’affiche.
+1. Appuyez sur l’objet de formulaire pour lequel vous voulez créer une règle, puis sur ![edit-rules](assets/edit-rules.png) de la barre d’outils Composant. L’interface utilisateur de l’éditeur de règles s’affiche.
 
-   ![créer des règles](assets/create-rules.png)
+   ![create-rules](assets/create-rules.png)
 
-   Toutes les règles existantes pour les objets de formulaire sélectionnés sont répertoriées dans cet écran.  Pour plus d’informations sur la gestion des règles existantes, reportez-vous à la section[ Gestion des règles](/help/forms/using/rule-editor.md#p-manage-rules-p).
+   Toutes les règles existantes pour les objets de formulaire sélectionnés sont répertoriées dans cet écran.  Pour plus d’informations sur la gestion des règles existantes, voir [Gestion des règles](/help/forms/using/rule-editor.md#p-manage-rules-p).
 
-1. Appuyez sur **[!UICONTROL Créer]** pour écrire une nouvelle règle. L’éditeur visuel de l’interface utilisateur de l’éditeur de règles s’ouvre par défaut lorsque vous lancez l’éditeur de règles la première fois.
+1. Appuyez sur **[!UICONTROL Créer]** pour créer une règle. L’éditeur visuel de l’interface utilisateur de l’éditeur de règles s’affiche par défaut la première fois que vous lancez l’éditeur de règles.
    ![Interface utilisateur de l’éditeur de règles](assets/rule-editor-ui.png)
 
    [Cliquez pour ](assets/rule-editor-ui-1.png)
-  agrandirExaminons en détail chaque composant de l&#39;interface utilisateur de l&#39;éditeur de règles.
+  agrandir. Examinons en détail chaque composant de l’interface utilisateur de l’éditeur de règles.
 
 ### A. Affichage composant-règle {#a-component-rule-display}
 
@@ -298,23 +297,23 @@ Affiche le titre de l’objet d’un formulaire adaptatif depuis lequel vous ave
 
 ### B. Objets de formulaire et fonctions {#b-form-objects-and-functions-br}
 
-Le volet situé à gauche de l’interface utilisateur de l’éditeur de règles comporte deux onglets — **[!UICONTROL Objets de formulaire]** et **[!UICONTROL Fonctions]**.
+Le volet situé à gauche de l’interface utilisateur de l’éditeur de règles comporte deux onglets: **[!UICONTROL Objets de formulaire]** et **[!UICONTROL Fonctions]**.
 
-L’onglet Objets de formulaire affiche une vue hiérarchique de tous les objets contenus dans le formulaire adaptatif. Il affiche le titre et le type des objets. Lors de la création d’une règle, vous pouvez glisser-déposer les objets de formulaire dans l’éditeur de règles. Lors de la création ou de la modification d’une règle lorsque vous faites glisser un objet ou une fonction dans un espace réservé, celui-ci prend automatiquement le type de valeur approprié.
+L’onglet Objets de formulaire affiche une vue hiérarchique de tous les objets contenus dans le formulaire adaptatif. Il affiche le titre et le type des objets. Lors de la création d’une règle, vous pouvez faire glisser-déposer les objets de formulaire dans l’éditeur de règles. Lorsque vous créez ou modifiez une règle en faisant glisser et en déposant un objet ou une fonction dans un espace réservé, cet espace prend automatiquement le type de valeur approprié.
 
-Les objets de formulaire contenant une ou plusieurs règles valides appliquées sont identifiés par un point vert. Si l’une des règles appliquées à un objet de formulaire n’est pas valide, l’objet de formulaire est identifié par un point jaune.
+Les objets de formulaire contenant une ou plusieurs règles valides appliquées sont désignés par un point vert. Si l’une des règles appliquées à un objet de formulaire n’est pas valide, l’objet de formulaire est identifié par un point jaune.
 
-L’onglet Fonctions inclut un jeu de fonctions intégrées, telles que Somme de, Minimum de, Maximum de, Moyenne de, Nombre de et Valider le formulaire. Vous pouvez utiliser ces fonctions pour calculer des valeurs dans des panneaux et des lignes de tableau répétables et les utiliser dans des instructions d’action et de condition lors de l’écriture de règles. Vous pouvez toutefois créer des fonctions [personnalisées](/help/forms/using/rule-editor.md#custom-functions) également.
+L’onglet Fonctions comporte un jeu de fonctions intégrées, comme Somme de, Minimum de, Maximum de, Moyenne de, Nombre de et Valider le formulaire. Vous pouvez utiliser ces fonctions pour calculer des valeurs dans les panneaux et les lignes de tableau répétables et pour les instructions d’action et de condition lors de la création de règles. Cependant, vous pouvez créer des [fonctions personnalisées](/help/forms/using/rule-editor.md#custom-functions).
 
 ![L’onglet Fonctions](assets/functions.png)
 
 >[!NOTE]
 >
->Vous pouvez effectuer une recherche de texte dans les noms et titres des objets et des fonctions depuis les onglets Objets de formulaire et Fonctions. 
+>Vous pouvez effectuer une recherche de texte dans les noms et titres des objets et des fonctions à partir des onglets Objets de formulaire et Fonctions.
 
 Dans l’arborescence de gauche des objets de formulaire, vous pouvez appuyer sur les objets de formulaire pour afficher les règles appliquées à chacun des objets. Vous pouvez non seulement parcourir les règles des différents objets de formulaire mais également copier-coller des règles entre les objets du formulaire.  Pour plus d’informations, reportez-vous à la section[ Règles de Copier-coller](/help/forms/using/rule-editor.md#p-copy-paste-rules-p).
 
-### C. Basculement entre les objets de formulaire et les fonctions{#c-form-objects-and-functions-toggle-br} 
+### C. Basculement entre les objets de formulaire et les fonctions {#c-form-objects-and-functions-toggle-br}
 
 Le bouton Basculer, lorsqu’il est sélectionné, permet de basculer entre le volet des objets de formulaire et celui des fonctions.
 
@@ -322,7 +321,7 @@ Le bouton Basculer, lorsqu’il est sélectionné, permet de basculer entre le v
 
 Lorsque l’interface utilisateur de l’éditeur de règles est en mode éditeur visuel, l’éditeur de règles visuel est la zone dans laquelle vous créez des règles.  Il vous permet de sélectionner un type de règle et de définir en conséquence des conditions et des actions.  Lors de la définition des conditions et des actions dans une règle, vous pouvez glisser-déposer des objets de formulaire et des fonctions depuis le volet Objets de formulaire et Fonctions.
 
-Pour plus d’informations sur l’utilisation de l’éditeur de règles visuel, reportez-vous à la section[ Création de règles](/help/forms/using/rule-editor.md#p-write-rules-p). 
+Pour plus d’informations sur l’utilisation de l’éditeur de règles visuel, voir [Création de règles](/help/forms/using/rule-editor.md#p-write-rules-p).
 
 ### E. Sélecteur des modes éditeur visuel-éditeur de code {#e-visual-code-editors-switcher}
 
@@ -330,15 +329,15 @@ Les utilisateurs appartenant au groupe des utilisateurs avancés de formulaires 
 
 AEM Forms suit le mode Éditeur de règles que vous avez utilisé en dernier pour créer une règle. Lorsque vous lancez l’éditeur de règles la fois suivante, il s’ouvre dans ce mode. Toutefois, vous pouvez également configurer un mode par défaut pour ouvrir l’éditeur de règles dans le mode spécifié. Pour ce faire :
 
-1. Accédez à AEM console Web à l’adresse https://[host]:[port]/system/console/configMgr.
-1. Cliquez pour modifier **[!UICONTROL la configuration du Canal Web de formulaire adaptatif et de communication interactive]**.
+1. Accédez à AEM console web à l’adresse https://[host]:[port]/system/console/configMgr.
+1. Cliquez pour modifier la **[!UICONTROL Configuration du canal web du formulaire adaptatif et de la communication interactive]**.
 1. Sélectionnez **[!UICONTROL Éditeur visuel]** ou **[!UICONTROL Éditeur de code]** dans la liste déroulante **[!UICONTROL Mode par défaut de l’éditeur de règle]**.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 ### F. Boutons Terminé et Annuler  {#f-done-and-cancel-buttons}
 
-Le bouton **[!UICONTROL Terminé]** est utilisé pour enregistrer une règle. Vous pouvez enregistrer une règle incomplète. Toutefois, les règles incomplètes ne sont pas valides et ne s’exécutent pas. Les règles enregistrées sur un objet de formulaire sont répertoriées lorsque vous lancez l’éditeur de règles à l’ouverture suivante du même objet de formulaire. Vous pouvez gérer les règles existantes dans cette vue. Pour plus d’informations, consultez la section [Gérer les règles](/help/forms/using/rule-editor.md#p-manage-rules-p).
+Le bouton **[!UICONTROL Terminé]** permet d’enregistrer une règle. Vous pouvez enregistrer une règle incomplète. Toutefois, les règles incomplètes ne sont pas valides et ne s’exécutent pas. Les règles enregistrées sur un objet de formulaire sont répertoriées lorsque vous lancez l’éditeur de règles à l’ouverture suivante du même objet de formulaire. Vous pouvez gérer les règles existantes dans cette vue. Pour plus d’informations, consultez la section [Gérer les règles](/help/forms/using/rule-editor.md#p-manage-rules-p).
 
 Le bouton **[!UICONTROL Annuler]** annule tous les changements apportés à une règle et ferme l’éditeur de règles.
 
@@ -363,7 +362,7 @@ Effectuez les étapes suivantes pour créer les règles :
 
 1. Tout d’abord, créez la règle pour contrôler la visibilité du champ Salaire du conjoint en fonction de l’option de l’utilisateur pour le bouton radio État civil.
 
-   Ouvrez le formulaire de demande de prêt en mode Création. Appuyez sur le composant **État civil** et appuyez sur ![modifier-règles](assets/edit-rules.png). Ensuite, appuyez sur **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
+   Ouvrez le formulaire de demande de prêt en mode Création. Appuyez sur le composant **État civil** et appuyez sur ![edit-rules](assets/edit-rules.png). Ensuite, appuyez sur **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
 
@@ -371,15 +370,15 @@ Effectuez les étapes suivantes pour créer les règles :
 
    Alors que vous ne pouvez pas changer ou modifier l’objet sélectionné, vous pouvez utiliser la liste déroulante de règles, comme indiqué ci-dessous, pour sélectionner un autre type de règle. Si vous souhaitez créer une règle sur un autre objet, appuyez sur Annuler pour quitter l’éditeur de règles et relancez-le depuis l’objet de formulaire de votre choix.
 
-1. Appuyez sur la liste déroulante **[!UICONTROL Sélectionner l’état]** et sélectionnez **[!UICONTROL est égal à]**. Le champ **[!UICONTROL Saisissez une chaîne]** apparaît.
+1. Appuyez sur le menu déroulant **[!UICONTROL Sélectionner l’état]** et sélectionnez **[!UICONTROL est égal à]**. Le champ **[!UICONTROL Saisissez une chaîne]** s’affiche.
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
-   Dans le bouton radio État civil, les options **Marié** et **Célibataire** sont respectivement affectées aux valeurs **0** et **1**. Vous pouvez vérifier les valeurs assignées dans l’onglet Titre de la boîte de dialogue Modifier le bouton radio comme illustré ci-dessous.
+   Pour le bouton radio État civil, les options **Marié(e)** et **Célibataire** sont définies respectivement sur les valeurs **0** et **1**. Vous pouvez vérifier les valeurs affectées sur l’onglet Titre de la boîte de dialogue Modifier le bouton radio, comme indiqué ci-dessous.
 
    ![Valeurs de bouton radio dans l’éditeur de règles](assets/radio-button-values.png)
 
-1. Dans le champ **Entrer une chaîne** dans la règle, indiquez **0**.
+1. Dans le champ **Saisissez une chaîne** dans la règle, indiquez **0**.
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4.png)
 
@@ -389,7 +388,7 @@ Effectuez les étapes suivantes pour créer les règles :
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Faites glisser et déposez le champ **Salaire du conjoint** de l’onglet Objets de formulaire sur le champ **Déposez l’objet ou sélectionnez ici**. Vous pouvez également appuyer sur le champ **Déposer l’objet ou sélectionner ici** et sélectionner le champ **Salaire du conjoint** dans le menu contextuel, qui liste tous les objets de formulaire dans le formulaire.
+1. Faites glisser et déposez le champ **Salaire du conjoint** de l’onglet Objets de formulaire vers le champ **Déposez l’objet ou sélectionnez ici**. Vous pouvez également appuyer sur le champ **Déposez l’objet ou sélectionnez ici** et sélectionner le champ **Salaire du conjoint** dans le menu contextuel, qui répertorie tous les objets de formulaire dans le formulaire.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -405,19 +404,19 @@ Effectuez les étapes suivantes pour créer les règles :
 
    >[!NOTE]
    >
-   >Vous pouvez également créer une règle Afficher sur le champ Salaire du conjoint, au lieu de deux règles Lorsque sur le champ État civil, pour implémenter le même comportement.
+   >Vous pouvez également créer une règle Afficher dans le champ Salaire du conjoint, au lieu de deux règles Lorsque dans le champ État civil pour mettre en œuvre le même comportement.
 
    ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9.png)
 
-1. Ensuite, créez une règle afin de calculer le niveau d’éligibilité de prêt, qui est de 50 % du salaire total, puis affichez-la dans le champ Éligibilité de prêt. Pour ce faire, créez les règles **Définir la valeur de** sur le champ Éligibilité de prêt.
+1. Ensuite, créez une règle pour calculer le niveau d’éligibilité de prêt, à hauteur de 50 % du salaire total, puis affichez-la dans le champ Éligibilité de prêt. Pour ce faire, créez les règles **Définir la valeur de** sur le champ Éligibilité de prêt.
 
-   En mode création, appuyez sur le champ **[!UICONTROL Éligibilité de prêt]** et appuyez sur ![modifier-les](assets/edit-rules.png). Ensuite, appuyez sur **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
+   En mode Création, appuyez sur le champ **[!UICONTROL Éligibilité de prêt]** et appuyez sur ![edit-rules](assets/edit-rules.png). Ensuite, appuyez sur **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
 
 1. Sélectionnez la règle **[!UICONTROL Définir la valeur de]** dans la liste déroulante des règles.
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Appuyez sur **[!UICONTROL Sélectionnez Option]** et sélectionnez **[!UICONTROL Expression mathématique]**. Un champ permettant de saisir l’expression mathématique s’ouvre.
+1. Appuyez sur **[!UICONTROL Sélectionner l’option]** et sélectionnez **[!UICONTROL Expression mathématique]**. Un champ permettant de saisir l’expression mathématique s’ouvre.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -425,11 +424,11 @@ Effectuez les étapes suivantes pour créer les règles :
 
    * Sélectionnez ou glissez-déposez depuis l’onglet Objets de formulaire le champ **Salaire** dans le premier champ **Déposez l’objet ou sélectionnez ici**.
    * Sélectionnez **Plus** dans le champ **Sélectionner un opérateur**.
-   * Sélectionnez ou faites glisser et déposez depuis l’onglet Objet Forms le champ **Salaire du conjoint** de l’autre champ **Déposez l’objet ou sélectionnez ici**.
+   * Sélectionnez ou faites glisser et déposez depuis le champ **Salaire du conjoint** de l’onglet Objets de formulaire vers l’autre champ **Déposez l’objet ou sélectionnez ici**.
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. Ensuite, appuyez sur dans la zone en surbrillance autour du champ expression et appuyez sur **Étendre l’Expression**.
+1. Ensuite, appuyez dans la zone en surbrillance autour du champ Expression et appuyez sur **Étendre l’expression**.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
@@ -443,7 +442,7 @@ Effectuez les étapes suivantes pour créer les règles :
 
    Créez ensuite une condition qui fait que, lorsque True est renvoyé, l’expression s’exécute.
 
-1. Appuyez sur **Ajouter la condition** pour ajouter une instruction Lorsque.
+1. Appuyez sur **Ajouter une condition** pour ajouter une instruction Lorsque.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
 
@@ -451,13 +450,13 @@ Effectuez les étapes suivantes pour créer les règles :
 
    * Sélectionnez ou glissez-déposez depuis l’onglet Objets de formulaire le champ **État civil** dans le premier champ **Déposez l’objet ou sélectionnez ici**.
    * Sélectionnez **est égal à** depuis le champ **Sélectionner un opérateur**.
-   * Sélectionnez Chaîne dans l’autre champ **Déposez l’objet ou sélectionnez ici** et indiquez **Marié** dans le champ **Entrez une chaîne**.
+   * Sélectionnez Chaîne dans l’autre champ **Déposez l’objet ou sélectionnez ici** et spécifiez **Marié(e)** dans le champ **Saisissez la chaîne**.
 
-   La règle s’affiche finalement comme suit dans l’éditeur de règles.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
+   Enfin, la règle s’affiche comme suit dans l’éditeur de règles.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
    Appuyez sur **Terminé** pour enregistrer la règle.
 
-1. Répétez les étapes 7 à 12 pour définir une autre règle pour calculer le montant d’éligibilité si la valeur d’état civil est Célibataire. La règle s’affiche comme suit dans l’éditeur de règles.
+1. Répétez les étapes 7 à 12 pour définir une autre règle pour calculer le montant d’éligibilité si la valeur d’état civil est Célibataire. La règle s’affiche comme suit dans l’éditeur de règles.
 
    ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17.png)
 
@@ -473,7 +472,7 @@ Effectuez les étapes suivantes pour créer les règles :
 
 Les utilisateurs ajoutés au groupe des utilisateurs avancés de formulaires peuvent utiliser l’éditeur de code. L’éditeur de règles génère automatiquement le code javascript pour toute règle que vous créez à l’aide de l’éditeur visuel. Vous pouvez basculer de l’éditeur visuel à l’éditeur de code pour afficher le code généré. Cependant, si vous modifiez le code de règle dans l’éditeur de code, vous ne pouvez pas revenir à l’éditeur visuel. Si vous préférez les règles d’écriture de l’éditeur de code plutôt que celles de l’éditeur visuel, vous avez la possibilité de définir de nouvelles règles dans l’éditeur de code. Le bouton bascule des éditeurs visuel-code vous permet de passer d’un mode à l’autre.
 
-L’éditeur de code JavaScript est le langage d’expression des formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/fr/experience-manager/6-4/forms/javascript-api/index.html)
+Le code JavaScript de l’éditeur de code est le langage d’expression des formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/fr/experience-manager/6-4/forms/javascript-api/index.html)
 
 Pour plus d’informations sur la création de règles dans l’éditeur de code, reportez-vous à la section[ Expressions de formulaire adaptatif](/help/forms/using/adaptive-form-expressions.md).
 
@@ -488,22 +487,22 @@ Lorsque vous écrivez du code en JavaScript dans l’éditeur de règle, les rep
 
 #### Fonctions personnalisées dans l’éditeur de règles {#custom-functions}
 
-Outre les fonctions prêtes à l&#39;emploi telles que *Somme de, *qui sont répertoriées sous Fonctions Output, vous pouvez écrire des fonctions personnalisées dont vous avez fréquemment besoin. Assurez-vous que la fonction que vous créez est accompagnée du `jsdoc` au-dessus.
+Outre les fonctions prêtes à l’emploi telles que *Somme de,* répertoriées sous Fonctions Output, vous pouvez créer des fonctions personnalisées dont vous avez fréquemment besoin. Assurez-vous de la présence de la balise `jsdoc` au-dessus de la fonction que vous créez.
 
-`jsdoc` est requis pour l&#39;accompagnement :
+La balise `jsdoc` associée est nécessaire :
 
 * Si vous souhaitez personnaliser la configuration et la description.
-* Comme il existe plusieurs façons de déclarer une fonction dans `JavaScript,` et que les commentaires vous permettent de garder un suivi des fonctions.
+* Parce qu’il y a plusieurs façons de déclarer une fonction dans`JavaScript,` et que les commentaires permettent de conserver une trace des fonctions.
 
 Pour plus d’informations, voir [usejsdoc.org](https://usejsdoc.org/).
 
-Balises `jsdoc` prises en charge :
+Balises `jsdoc` prises en charge :
 
 * **Confidentiel**
 
    Syntaxe: `@private`
 
-   Une fonction privée n&#39;est pas incluse en tant que fonction personnalisée.
+   Une fonction privée n’est pas incluse comme fonction personnalisée.
 
 * **Name** (Nom)
 
@@ -511,7 +510,7 @@ Balises `jsdoc` prises en charge :
 
    Vous pouvez également utiliser `,` : `@function funcName <Function Name>` **ou** `@func` `funcName <Function Name>`.
 
-   `funcName` est le nom de la fonction (aucun espace autorisé).
+   `funcName` est le nom de la fonction (les espaces ne sont pas autorisés).
 
    `<Function Name>` est le nom d’affichage de la fonction.
 
@@ -519,7 +518,7 @@ Balises `jsdoc` prises en charge :
 
    Syntaxe: `@memberof namespace`
 
-   Attache un espace de nommage à la fonction.
+   Associe un espace de noms à la fonction.
 
 * **Paramètre**
 
@@ -529,7 +528,7 @@ Balises `jsdoc` prises en charge :
 
    Affiche les paramètres utilisés par la fonction. Une fonction peut comporter plusieurs balises de paramètre, une balise pour chaque paramètre dans l’ordre d’occurrence.
 
-   `{type}` représente le type de paramètre. Les types de paramètre sont les suivants : 
+   `{type}` représente le type de paramètre. Les types de paramètre sont les suivants :
 
    1. chaîne
    1. nombre
@@ -543,9 +542,9 @@ Balises `jsdoc` prises en charge :
 
    Vous pouvez également utiliser `@returns {type}`.
 
-   Ajoute des informations sur la fonction, telles que son objectif.
+   Ajoute des informations sur la fonction, comme son objectif.
 
-   {type} représente le type de retour de la fonction. Les types de retour autorisés sont les suivants : 
+   {type} représente le type de valeur renvoyée de la fonction. Les types de valeur renvoyée autorisés sont les suivants :
 
    1. chaîne
    1. nombre
@@ -559,35 +558,35 @@ Balises `jsdoc` prises en charge :
 >
 >Les commentaires avant une fonction personnalisée sont utilisés pour le résumé. Le résumé peut s’étendre sur plusieurs lignes jusqu’à ce qu’une balise soit trouvée. Limitez la taille à une seule pour une description concise dans le créateur de règles.
 
-**Ajout d’une fonction personnalisée** 
+**Ajout d’une fonction personnalisée**
 
 Par exemple, vous voulez ajouter une fonction personnalisée qui calcule la surface d’un carré. La longueur du côté est la valeur entrée par l’utilisateur à la fonction personnalisée, qui est acceptée à l’aide d’une zone numérique dans le formulaire. La sortie calculée s’affiche dans une autre zone numérique dans le formulaire. Pour ajouter une fonction personnalisée, vous devez d’abord créer une bibliothèque cliente, puis l’ajouter au référentiel CRX.
 
 Exécutez les étapes suivantes pour créer une bibliothèque cliente et l’ajouter dans le référentiel CRX.
 
-1. Créez une bibliothèque cliente. Pour en savoir plus, voir [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md).
-1. Dans CRXDE, ajoutez une propriété `categories`avec une valeur de type chaîne `customfunction` au dossier `clientlib`.
+1. Créez une bibliothèque cliente. Pour plus d’informations, voir [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md).
+1. Dans CRXDE, ajoutez une propriété `categories`catégories possédant une valeur de type chaîne telle que `customfunction` au dossier `clientlib`.
 
    >[!NOTE]
    >
    >`customfunction`est un exemple de catégorie. Vous pouvez choisir n’importe quel nom pour la catégorie que vous créez dans le dossier `clientlib`.
 
-Une fois que vous avez ajouté votre bibliothèque client dans le référentiel CRX, utilisez-la dans votre formulaire adaptatif. Cela vous permet d’utiliser votre fonction personnalisée comme règle dans votre formulaire. Effectuez les étapes suivantes pour ajouter la bibliothèque cliente dans votre formulaire adaptatif.
+Une fois que vous avez ajouté votre bibliothèque client dans le référentiel CRX, utilisez-la dans votre formulaire adaptatif. Cela vous permet d’utiliser votre fonction personnalisée comme règle dans votre formulaire. Effectuez les étapes suivantes pour ajouter la bibliothèque cliente à votre formulaire adaptatif.
 
 1. Ouvrez votre formulaire en mode d’édition.
 
-   Pour ouvrir un formulaire en mode d’édition, sélectionnez un formulaire et appuyez sur **Ouvrir**.
+   Pour ouvrir un formulaire en mode d’édition, sélectionnez un formulaire, puis appuyez sur **Ouvrir**.
 
-1. En mode d’édition, sélectionnez un composant, puis appuyez sur ![niveau champ](assets/field-level.png) > **Conteneur de formulaire adaptatif**, puis sur ![cmppr](assets/cmppr.png).
-1. Dans la zone latérale, sous Nom de bibliothèque cliente, ajoutez votre bibliothèque cliente. ( `customfunction` dans l&#39;exemple.)
+1. En mode d’édition, sélectionnez un composant, puis appuyez sur ![field-level](assets/field-level.png) > **Conteneur de formulaires adaptatifs**, puis appuyez sur ![cmppr](assets/cmppr.png).
+1. Dans la barre latérale, sous Nom de bibliothèque cliente, ajoutez votre bibliothèque cliente. (`customfunction` dans l’exemple).
 
    ![Ajout de la bibliothèque cliente de fonction personnalisée](assets/clientlib.png)
 
-1. Sélectionnez la zone numérique d’entrée, puis appuyez sur ![edit-rules](assets/edit-rules.png) pour ouvrir l’éditeur de règles.
+1. Sélectionnez la zone numérique d’entrée, et appuyez sur ![edit-rules](assets/edit-rules.png) pour ouvrir l’éditeur de règles.
 1. Appuyez sur **Créer une règle**. À l’aide des options indiquées ci-dessous, créez une règle pour enregistrer la valeur carrée de l’entrée dans le champ Sortie de votre formulaire.
    [ ![Utilisation de fonctions personnalisées pour créer une ](assets/add-custom-rule.png)](assets/add-custom-rule-1.png)règleAppuyez sur  **Terminé**. Votre fonction personnalisée est ajoutée.
 
-#### Types pris en charge de déclaration de fonction {#function-declaration-supported-types}
+#### Types pris en charge pour la déclaration de fonction {#function-declaration-supported-types}
 
 **Instruction de fonction**
 
@@ -599,7 +598,7 @@ function area(len) {
 
 Cette fonction est incluse sans commentaires `jsdoc`.
 
-**Expression de fonction** 
+**Expression de fonction**
 
 ```
 var area;
@@ -610,7 +609,7 @@ area = function(len) {
 };
 ```
 
-**Expression et instruction de fonction** 
+**Expression et instruction de fonction**
 
 ```
 var b={};
@@ -620,7 +619,7 @@ b.area = function(len) {
 }
 ```
 
-**Déclaration de fonction en tant que variable** 
+**Déclaration de fonction en tant que variable**
 
 ```
 /** */
@@ -633,7 +632,7 @@ var x1,
 
 Limite : la fonction personnalisée prend uniquement la première déclaration de fonction de la liste des variables, si elles sont ensemble. Vous pouvez utiliser l’expression de fonction pour chaque fonction déclarée.
 
-**Déclaration de fonction en tant qu’objet** 
+**Déclaration de fonction en tant qu’objet**
 
 ```
 var c = {
@@ -648,29 +647,29 @@ var c = {
 
 >[!NOTE]
 >
->Assurez-vous que vous utilisez`jsdoc`   pour chaque fonction personnalisée. Bien que les `jsdoc`commentaires soient encouragés, incluez un commentaire `jsdoc`vide pour marquer votre fonction comme fonction personnalisée. Cela permet la manipulation par défaut de votre fonction personnalisée.
+>Assurez-vous que vous utilisez `jsdoc` pour chaque fonction personnalisée. Même si les commentaires `jsdoc` sont recommandés, incluez un commentaire `jsdoc` vide pour marquer votre fonction comme fonction personnalisée. Cela permet la manipulation par défaut de votre fonction personnalisée.
 
 ## Gestion des règles {#manage-rules}
 
-Toutes les règles existantes sur un objet de formulaire sont répertoriées lorsque vous appuyez sur l’objet et appuyez sur ![edit-rules1](assets/edit-rules1.png). Vous pouvez afficher le titre et un aperçu du résumé de la règle. En outre, l’interface utilisateur vous permet de développer et d’afficher le résumé complet de la règle, de changer l’ordre des règles, de modifier les règles et de supprimer des règles.
+Les règles existantes sur un objet de formulaire sont répertoriées lorsque vous appuyez sur l’objet et sur ![edit-rules1](assets/edit-rules1.png). Vous pouvez afficher le titre et un aperçu du résumé de la règle. En outre, l’interface utilisateur vous permet de développer et d’afficher le résumé complet de la règle, de changer l’ordre des règles, de modifier les règles et de supprimer des règles.
 
-![liste-règles](assets/list-rules.png)
+![list-rules](assets/list-rules.png)
 
 Vous pouvez effectuer les actions suivantes sur les règles :
 
-* **Développer/Réduire** : la colonne Contenu dans la liste des règles affiche le contenu des règles. Si le contenu complet de la règle n’est pas visible dans la vue par défaut, appuyez sur ![développer-rule-content](assets/expand-rule-content.png) pour le développer.
+* **Développer/Réduire** : la colonne Contenu dans la liste des règles affiche le contenu des règles. Si le contenu entier des règles n’est pas visible dans la vue par défaut, appuyez sur ![expand-rule-content](assets/expand-rule-content.png) pour le développer.
 
 * **Réorganiser** : toute nouvelle règle que vous créez est empilée au bas de la liste des règles. Les règles sont exécutées de haut en bas. La règle en haut s’exécute en premier suivie des autres règles du même type. Par exemple, si vous avez les règles Lorsque, Afficher, Activer et Lorsque en première, deuxième, troisième et quatrième position depuis le haut respectivement, la règle Lorsque du haut est exécutée en premier suivie de la règle Lorsque à la quatrième position. Ensuite, les règles Afficher et Activer seront exécutées.
 
-   Vous pouvez modifier l’ordre d’une règle en appuyant sur ![sort-rules](assets/sort-rules.png) ou en la faisant glisser dans l’ordre souhaité dans la liste.
+   Vous pouvez modifier l’ordre d’une règle en appuyant sur ![sort-rules](assets/sort-rules.png) en regard ou la faire glisser et la déposer dans l’ordre souhaité dans la liste.
 
-* **Modifier** : pour modifier une règle, cochez la case située en regard du titre de la règle. D’autres options de modification et de suppression de la règle s’affichent. Appuyez sur **Modifier** pour ouvrir la règle sélectionnée dans l’éditeur de règles en mode visuel ou éditeur de code, selon le mode utilisé pour créer la règle.
+* **Modifier** : pour modifier une règle, cochez la case située en regard du titre de la règle. D’autres options de modification et de suppression de la règle s’affichent. Appuyez sur **Modifier** pour ouvrir la règle sélectionnée dans l’éditeur de règles en mode visuel ou éditeur de code, selon le mode utilisé pour créer la règle.
 
-* **Supprimer** : Pour supprimer une règle, sélectionnez-la et appuyez sur  **Supprimer**.
+* **Supprimer** : pour supprimer une règle, sélectionnez-la et appuyez sur **Supprimer**.
 
-* **Activer/Désactiver** : vous devrez peut-être suspendre temporairement l’utilisation d’une règle. Vous pouvez sélectionner une ou plusieurs règles puis appuyer sur Désactiver dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas au moment de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner puis appuyer sur Activer dans la barre d’outils Actions. La colonne État de la règle indique si la règle est activée ou désactivée.
+* **Activer/Désactiver** : vous devrez peut-être suspendre temporairement l’utilisation d’une règle. Vous pouvez sélectionner une ou plusieurs règles puis appuyer sur Désactiver dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner puis appuyer sur Activer dans la barre d’outils Actions. La colonne État de la règle indique si la règle est activée ou désactivée.
 
-![désablerule](assets/disablerule.png)
+![disablerule](assets/disablerule.png)
 
 ## Règles de copier-coller {#copy-paste-rules}
 
@@ -678,17 +677,17 @@ Vous pouvez copier-coller une règle d’un champ à d’autres champs similaire
 
 Pour copier-coller des règles, procédez comme suit :
 
-1. Appuyez sur l’objet de formulaire à partir duquel vous souhaitez copier une règle, puis, dans la barre d’outils du composant, appuyez sur ![editrule](assets/editrule.png). L’interface utilisateur de l’éditeur de règles s’affiche avec l’objet de formulaire sélectionné et les règles existantes s’affichent.
+1. Appuyez sur l’objet de formulaire à partir duquel vous souhaitez copier une règle, puis, dans la barre d’outils du composant, appuyez sur ![editrule](assets/editrule.png). L’interface utilisateur de l’éditeur de règles s’affiche avec l’objet de formulaire sélectionné, et les règles existantes s’affichent.
 
    ![copyrule](assets/copyrule.png)
 
-   Pour plus d’informations sur la gestion des règles existantes, consultez la section [Gestion des règles](/help/forms/using/rule-editor.md#p-manage-rules-p).
+   Pour plus d’informations sur la gestion des règles existantes, voir [Gestion des règles](/help/forms/using/rule-editor.md#p-manage-rules-p).
 
 1. Cochez la case en regard du titre de la règle. D’autres options de gestion des règles s’affichent. Appuyez sur **Copier**.
 
    ![copyrule2](assets/copyrule2.png)
 
-1. Sélectionnez un autre objet de formulaire auquel vous souhaitez coller la règle et appuyez sur **Coller**. De plus, vous pouvez modifier la règle pour y apporter des modifications.
+1. Sélectionnez un autre objet de formulaire dans lequel vous souhaitez coller la règle et appuyez sur **Coller**. De plus, vous pouvez modifier la règle pour y apporter des modifications.
 
    >[!NOTE]
    >
@@ -700,39 +699,39 @@ Pour copier-coller des règles, procédez comme suit :
 
 L’éditeur de règles vous permet d’utiliser plusieurs opérateurs ET et OU afin de créer des règles imbriquées. Vous pouvez fusionner plusieurs opérateurs ET et OU dans les règles.
 
-Voici un exemple de règle imbriquée qui affiche un message à l’utilisateur au sujet de l’éligibilité pour un droit de garde lorsque les conditions nécessaires sont remplies.
+Voici un exemple de règle imbriquée qui affiche un message concernant l’éligibilité pour un droit de garde lorsque les conditions nécessaires sont remplies à l’intention de l’utilisateur.
 
 ![expression complexe](assets/complexexpression.png)
 
-Vous pouvez également faire glisser et déposer des conditions dans une règle pour la modifier. Appuyez et passez la souris sur la poignée ( ![handle](assets/handle.png)) avant une condition. Une fois le pointeur affiché sous forme de main comme illustré ci-dessous, faites glisser la condition et déposez-la n’importe où dans la règle. La structure de la règle change.
+Vous pouvez également faire glisser et déposer des conditions dans une règle pour la modifier. Appuyez et passez le curseur sur la poignée (![handle](assets/handle.png)) avant une condition. Une fois le pointeur affiché sous forme de main comme illustré ci-dessous, faites glisser la condition et déposez-la n’importe où dans la règle. La structure de la règle change.
 
 ![glisser-déposer](assets/drag-and-drop.png)
 
 ## Conditions d’expression de date {#dateexpression}
 
-L’éditeur de règles vous permet d’utiliser des comparaisons de dates afin de créer des conditions.
+L’éditeur de règles permet d’utiliser des comparaisons de dates afin de créer des conditions.
 
-Voici un exemple de condition qui affiche un objet de texte statique si l&#39;hypothèque sur la maison est déjà prise, ce que l&#39;utilisateur signifie en remplissant le champ de date.
+Voici un exemple de condition qui contient un objet de texte statique si le prêt hypothécaire sur la maison est déjà utilisé, ce que l’utilisateur indique en remplissant le champ de date.
 
-Lorsque la date du prêt hypothécaire de la propriété indiquée par l’utilisateur est déjà dépassée, le formulaire adaptatif affiche une remarque concernant le calcul des revenus. La règle suivante compare la date indiquée par l’utilisateur avec la date actuelle et si la date indiquée par l’utilisateur est antérieure à la date actuelle, le formulaire affiche le message texte (appelé Revenu).
+Lorsque la date du prêt hypothécaire de la propriété indiquée par l’utilisateur est déjà dépassée, le formulaire adaptatif affiche une remarque concernant le calcul des revenus. La règle ci-dessous compare la date indiquée par l’utilisateur à la date actuelle et si la date indiquée par l’utilisateur est antérieure à la date actuelle, le formulaire affiche le message texte (appelé « Revenu »).
 
 ![dateexpressioncondition](assets/dateexpressioncondition.png)
 
-Lorsque la date remplie est antérieure à la date actuelle, le formulaire affiche le message texte (Revenu) comme suit :
+Lorsque la date remplie est antérieure à la date actuelle, le formulaire affiche le message texte (Revenu), comme suit :
 
-![dateexpressionconditions](assets/dateexpressionconditionmet.png)
+![dateexpression.condition](assets/dateexpressionconditionmet.png)
 
 ## Conditions de comparaison des nombres {#number-comparison-conditions}
 
-L’éditeur de règles vous permet de créer des conditions qui comparent deux nombres.
+L’éditeur de règles permet de créer des conditions qui comparent deux nombres.
 
-Voici un exemple de condition qui affiche un objet de texte statique si le nombre de mois pendant lesquels un demandeur reste à son adresse actuelle est inférieur à 36.
+Vous trouverez ci-dessous un exemple de condition qui affiche un objet de texte statique si le nombre de mois pendant lesquels un demandeur reste à son adresse actuelle est inférieur à 36.
 
-![numbercomparisoncondition](assets/numbercomparisoncondition.png)
+![numbercompare isoncondition](assets/numbercomparisoncondition.png)
 
 Lorsque l’utilisateur indique qu’il habite à son adresse résidentielle actuelle depuis moins de 36 mois, le formulaire affiche une notification indiquant qu’un justificatif de domicile supplémentaire peut être demandé.
 
-![supplémentaire - demande](assets/additionalproofrequested.png)
+![additionalproofrequests](assets/additionalproofrequested.png)
 
 ## Impact de l’éditeur de règles sur les scripts existants {#impact-of-rule-editor-on-existing-scripts}
 
@@ -744,13 +743,13 @@ Tous les scripts ou expressions que vous deviez saisir dans l’onglet Scripts s
 
 ### Appeler le service de modèle de données de formulaire {#invoke}
 
-Imaginons un service Web `GetInterestRates` prenant le montant du prêt, la durée et la cote de solvabilité du demandeur comme valeurs d’entrée et renvoyant un régime de prêt incluant le montant des mensualités et le taux d’intérêt. Créez un modèle de données de formulaire en utilisant le service Web comme source de données. Vous ajoutez des objets de modèle de données et un service `get` au modèle de formulaire. Le service apparaît dans l’onglet Services du modèle de données de formulaire. Ensuite, créez un formulaire adaptatif incluant des champs à partir d’objets du modèle de données pour capturer les entrées utilisateurs pour le montant du prêt, la durée et la cote de solvabilité. Ajoutez un bouton qui demande au service Web d’extraire les détails du plan. La sortie est renseignée dans les champs appropriés.
+Imaginons un service Web `GetInterestRates` prenant le montant du prêt, la durée et la cote de solvabilité du demandeur comme valeurs d’entrée et renvoyant un plan de prêt incluant le montant des mensualités et le taux d’intérêt. Créez un modèle de données de formulaire en utilisant le service Web comme source de données. Ajoutez des objets de modèle de données et un service `get` au modèle de formulaire. Le service s’affiche sur l’onglet Services du modèle de données de formulaire. Ensuite, créez un formulaire adaptatif incluant des champs à partir d’objets du modèle de données pour capturer les entrées utilisateurs pour le montant du prêt, la durée et la cote de solvabilité. Ajoutez un bouton qui demande au service Web d’extraire les détails du plan. La sortie est renseignée dans les champs appropriés.
 
 La règle suivante indique comment configurer l’action Appel du service pour accomplir l’exemple de scénario.
 
 ![example-invoke-services](assets/example-invoke-services.png)
 
-### Déclenchement de plusieurs actions, à l’aide de la règle Lorsque {#triggering-multiple-actions-using-the-when-rule}
+### Déclenchement de plusieurs actions à l’aide de la règle Lorsque {#triggering-multiple-actions-using-the-when-rule}
 
 Dans un formulaire de demande de prêt, vous voulez savoir si le demandeur de prêt est un client existant ou non. En fonction des informations fournies par l’utilisateur, le champ ID du client doit s’afficher ou se masquer. En outre, vous souhaitez placer le focus sur le champ d’ID de client si l’utilisateur est un client existant. Le formulaire de demande de prêt est composé des éléments suivants :
 
@@ -758,25 +757,25 @@ Dans un formulaire de demande de prêt, vous voulez savoir si le demandeur de pr
 
 * Un champ de texte,**ID de client Geometrixx**, pour indiquer l’ID du client.
 
-Lorsque vous entrez une règle Lorsque sur le bouton radio pour implémenter ce comportement, la règle s’affiche comme suit dans l’éditeur de règles visuel.  ![exemple de règle-quand](assets/when-rule-example.png)
+Lorsque vous entrez une règle Lorsque sur le bouton radio pour implémenter ce comportement, la règle s’affiche comme suit dans l’éditeur de règles visuel.  ![when-rule-example](assets/when-rule-example.png)
 
 Dans l’exemple de règle, l’instruction suivante dans la section Lorsque est la condition qui, si elle renvoie True, exécute les actions spécifiées dans la section Alors.
 
 La règle s’affiche comme suit dans l’éditeur de code.
 
-![quand-règle-exemple-code](assets/when-rule-example-code.png)
+![when-rule-example-code](assets/when-rule-example-code.png)
 
-### Utilisation d’une sortie de fonction au sein d’une règle {#using-a-function-output-in-a-rule}
+### Utilisation d’une sortie de fonction dans une règle {#using-a-function-output-in-a-rule}
 
 Dans un formulaire de bon de commande, vous avez le tableau suivant, dans lequel les utilisateurs rempliront leurs commandes. Dans le tableau ci-dessous :
 
 * La première ligne est répétable, de sorte que les utilisateurs peuvent commander plusieurs produits et spécifier différentes quantités. Son nom d’élément est `Row1`.
-* Le titre de la cellule dans la colonne Quantité de produit de la ligne répétable est Quantité. Le nom de l’élément pour cette cellule est`productquantity` .
-* La deuxième ligne du tableau est non répétable et le titre de la cellule dans la colonne Quantité de produit dans cette ligne est Quantité totale.
+* Le titre de la cellule dans la colonne Quantité de produit de la ligne répétable est Quantité. Le nom de l’élément pour cette cellule est `productquantity`.
+* La deuxième ligne du tableau est non répétable, et le titre de la cellule dans la colonne Quantité de produit sur cette ligne est Quantité totale.
 
-![exemple-fonction-table](assets/example-function-table.png)
+![example-function-table](assets/example-function-table.png)
 
-**A.** Row1  **B.** Quantity  **C.** Quantité totale
+**A.** Ligne1 **B.** Quantité **C.** Quantité totale
 
 Maintenant, vous souhaitez ajouter des quantités spécifiées dans la colonne Quantité de produit pour tous les produits et afficher la somme dans la cellule Quantité totale. Vous pouvez obtenir ce résultat en saisissant une règle Définir la valeur de sur la cellule Quantité totale, comme illustré ci-dessous.
 
@@ -786,9 +785,8 @@ Maintenant, vous souhaitez ajouter des quantités spécifiées dans la colonne Q
 
 ### Validation d’une valeur de champ à l’aide d’une expression {#validating-a-field-value-using-expression}
 
-Dans le formulaire de bon de commande décrit dans l’exemple précédent, vous souhaitez empêcher l’utilisateur de commander plus d’une quantité de n’importe quel produit dont le prix est supérieur à 10 000. Pour ce faire, vous pouvez rédiger pour une règle Valider comme illustré ci-dessous.
+Dans le formulaire de bon de commande décrit dans l’exemple précédent, vous souhaitez empêcher l’utilisateur de commander plus d’une quantité d’un produit dont le prix est supérieur à 10 000. Pour ce faire, vous pouvez rédiger pour une règle Valider comme illustré ci-dessous.
 
 ![example-validate](assets/example-validate.png)
 
 ![example-validate-code](assets/example-validate-code.png)
-
