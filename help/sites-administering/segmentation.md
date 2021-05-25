@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 83e73a5d-c6fa-426a-8476-78769ae7a8c1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1459'
 ht-degree: 97%
 
 ---
 
-
-# Configuration de la segmentation avec ContextHub{#configuring-segmentation-with-contexthub}
+# Configuration de la segmentation avec ContextHub {#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
 >
@@ -29,7 +28,7 @@ La segmentation est un élément clé de la création d’une campagne. Voir [Ge
 
 En fonction des informations que vous avez déjà collectées sur les visiteurs de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies requis pour votre contenu ciblé.
 
-Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Personnalisation](/help/sites-authoring/personalization.md) du site Web. Les [activités](/help/sites-authoring/activitylib.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
+Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Personnalisation](/help/sites-authoring/personalization.md) du site web. Les [activités](/help/sites-authoring/activitylib.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
 
 AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs. Il vous permet également de vérifier les résultats de vos définitions de segment.
 
@@ -155,7 +154,7 @@ Pour définir votre nouveau segment :
 1. Cliquez sur **OK** pour enregistrer votre définition :
 1. Ajoutez d’autres composants, en fonction de vos besoins. Vous pouvez formuler des expressions booléennes à l’aide des composants de conteneur pour des comparaisons ET et OU (voir la rubrique [Utilisation des conteneurs ET et OU](/help/sites-administering/segmentation.md#using-and-and-or-containers) ci-dessous). Avec l’éditeur de segment, vous pouvez supprimer les composants qui ne sont plus utiles ou les faire glisser vers un nouvel emplacement dans l’instruction.
 
-### Utilisation des conteneurs ET et OU  {#using-and-and-or-containers}
+### Utilisation des conteneurs ET et OU {#using-and-and-or-containers}
 
 Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Cette tâche sera plus facile si vous tenez compte de certains aspects élémentaires :
 
@@ -170,7 +169,7 @@ OU
 
 Femme et entre 30 et 59 ans
 
-Commencez par placer un composant de conteneur OU dans le conteneur ET par défaut. Dans le conteneur OU, vous ajoutez deux conteneurs ET et dans ces deux , vous pouvez ajouter la propriété ou les composants de référence.
+Commencez par placer un composant de conteneur OU dans le conteneur ET par défaut. Dans le conteneur OU, vous ajoutez deux conteneurs ET ; dans ces deux conteneurs, vous pouvez ajouter la propriété ou les composants de référence.
 
 ![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145am.png)
 
@@ -230,8 +229,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 Une fois le segment défini, les résultats potentiels peuvent être testés avec **[ContextHub](/help/sites-authoring/ch-previewing.md).**
 
-1. Affichage de l’aperçu d’une page
-1. Cliquez sur l’icône ContextHub pour afficher la barre d’outils ContextHub
+1. Affichez l’aperçu d’une page.
+1. Cliquez sur l’icône ContextHub pour afficher la barre d’outils ContextHub.
 1. Sélectionnez une personne qui correspond au segment que vous avez créé.
 1. ContextHub permet de résoudre les segments applicables pour la personne sélectionnée.
 
