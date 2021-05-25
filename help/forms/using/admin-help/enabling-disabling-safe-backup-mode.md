@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9fda71e4-78a1-4581-9d02-bf06a75c3bcb
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 309a8cef-e84d-485b-9a7c-786a93e83c85
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 100%
 
 ---
-
 
 # Activation et désactivation du mode de sauvegarde sécurisé {#enabling-and-disabling-safe-backup-mode}
 
@@ -28,7 +27,7 @@ En mode de sauvegarde sécurisé, AEM forms fonctionne normalement, mais sans su
 >
 >la définition de cette option ne sauvegarde pas le système, mais le prépare à cette opération.
 
-## Activation du mode de sauvegarde sécurisé  {#enable-safe-backup-mode}
+## Activation du mode de sauvegarde sécurisé {#enable-safe-backup-mode}
 
 1. Dans Administration Console, cliquez sur Paramètres > Paramètres de Core System > Paramètres de sauvegarde.
 1. Dans la page Paramètres de sauvegarde, sélectionnez Fonctionner en mode de sauvegarde sécurisé et cliquez sur OK.
@@ -41,4 +40,3 @@ En mode de sauvegarde sécurisé, AEM forms fonctionne normalement, mais sans su
 
 1. Dans Administration Console, cliquez sur Paramètres > Paramètres de Core System > Paramètres de sauvegarde.
 1. Dans la page Paramètres de sauvegarde, désélectionnez Fonctionner en mode de sauvegarde sécurisé et cliquez sur OK.
-
