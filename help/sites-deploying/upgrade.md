@@ -42,17 +42,17 @@ Pour une référence conviviale aux instances d’AEM incluses dans ces procédu
 
 >[!NOTE]
 >
->Dans le cadre des efforts visant à améliorer la fiabilité des mises à niveau, AEM 6.4 a fait l&#39;objet d&#39;une restructuration complète des dépôts. Pour plus d&#39;informations sur la façon de s&#39;aligner sur la nouvelle structure, consultez la section [Restructuration du référentiel dans AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+>Dans le cadre des efforts visant à améliorer la fiabilité des mises à niveau, AEM 6.4 a subi une restructuration complète du référentiel. Pour plus d’informations sur l’alignement avec la nouvelle structure, voir [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md)
 
-## Qu&#39;est-ce qui a changé ? {#what-has-changed}
+## Qu’est-ce qui a changé ? {#what-has-changed}
 
 Voici quelques changements majeurs mis en œuvre avec les dernières versions d’AEM :
 
 AEM 6.0 a introduit le nouveau référentiel Jackrabbit Oak. Les gestionnaires de persistence ont été remplacés par les [micronoyaux](/help/sites-deploying/recommended-deploys.md). À partir de la version 6.1, CRX2 n’est plus pris en charge. L’outil de migration crx2oak doit être exécuté pour migrer les référentiels CRX2 à partir des instances 5.6.1. Pour plus d’informations, voir [Utilisation de l’outil de migration CRX2OAK](/help/sites-deploying/using-crx2oak.md). 
 
-Si Assets Insights doit être utilisé et que vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.2, les ressources doivent être migrées et les ID doivent être générés par le biais d’un bean JMX. Lors de nos tests internes, 125 000 ressources ont été migrées en 1 heure dans un environnement TarMK, mais les résultats peuvent varier. 
+Si vous souhaitez utiliser Assets Insights et que vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.2, les ressources doivent être migrées et leurs identifiants doivent être générés via un bean JMX. Lors de nos tests internes, 125 000 ressources ont été migrées en 1 heure dans un environnement TarMK, mais les résultats peuvent varier. 
 
-AEM 6.3 a introduit un nouveau format pour le `SegmentNodeStore`, qui est la base de l&#39;implémentation de TarMK. Si vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.3, une migration du référentiel est nécessaire dans le cadre de la mise à niveau, ce qui implique des interruptions du système.
+AEM 6.3 a introduit un nouveau format pour `SegmentNodeStore`, qui est la base de l’implémentation de TarMK. Si vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.3, une migration du référentiel est nécessaire dans le cadre de la mise à niveau, ce qui implique des interruptions du système.
 
 L’équipe technique d’Adobe estime la durée du processus à environ 20 minutes. Veuillez noter que la réindexation n’est pas requise. En outre, une nouvelle version de l’outil crx2oak a été publiée pour fonctionner avec le nouveau format de référentiel.
 
@@ -82,10 +82,10 @@ La mise à niveau d’AEM consiste en plusieurs étapes et peut parfois se déro
 
 ## Flux de mise à niveau avec améliorations de la mise à niveau 6.4 {#upgrade-overview-1}
 
-Le diagramme ci-dessous illustre le flux recommandé pour la méthode de mise à niveau. Notez la référence aux nouvelles fonctionnalités que nous avons ajoutées. La mise à niveau doit s’effectuer en début avec le Détecteur de schémas (voir [Évaluation de la complexité de la mise à niveau avec le Détecteur de schémas](/help/sites-deploying/pattern-detector.md)), ce qui vous permet de choisir le chemin que vous souhaitez prendre pour la compatibilité avec AEM 6.4 en fonction des modèles du rapport généré.
+Le diagramme ci-dessous illustre le flux recommandé pour la méthode de mise à niveau. Notez la référence aux nouvelles fonctionnalités que nous avons ajoutées. La mise à niveau doit commencer par le détecteur de motifs (voir [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](/help/sites-deploying/pattern-detector.md)), qui doit vous permettre de choisir le chemin que vous souhaitez prendre pour des raisons de compatibilité avec AEM 6.4 en fonction des modèles du rapport généré.
 
-La version 6.4 visait principalement à maintenir toutes les nouvelles fonctionnalités rétrocompatibles, mais dans les cas où vous rencontrez encore des problèmes de compatibilité ascendante, le mode de compatibilité vous permet de reporter temporairement le développement pour que votre code personnalisé reste compatible avec la version 6.4. Cette approche vous permet d&#39;éviter les efforts de développement immédiatement après la mise à niveau (voir [Compatibilité descendante dans AEM 6.4](/help/sites-deploying/backward-compatibility.md)).
+Dans la version 6.4, nous avons mis l’accent sur la compatibilité descendante de toutes les nouvelles fonctionnalités. Cependant, lorsque des problèmes de compatibilité descendante se produisent, le mode de compatibilité vous permet de différer temporairement le développement pour que votre code personnalisé reste compatible avec la version 6.4. Cette approche vous permet d’éviter les efforts de développement immédiatement après la mise à niveau (voir [Compatibilité descendante dans AEM 6.4](/help/sites-deploying/backward-compatibility.md)).
 
-Enfin, dans le cycle de développement de la version 6.4, les fonctionnalités introduites sous la section Mises à niveau durables (voir [Mises à niveau durables](/help/sites-deploying/sustainable-upgrades.md)) vous aident à suivre les meilleures pratiques pour rendre les mises à niveau futures encore plus efficaces et homogènes.
+Enfin, dans votre cycle de développement 6.4, les fonctionnalités introduites sous Mises à niveau possibles (voir [Mises à niveau possibles](/help/sites-deploying/sustainable-upgrades.md)) vous aident à suivre les bonnes pratiques pour rendre les mises à niveau futures encore plus efficaces et transparentes.
 
-![6_4_upgrade_overviewflechart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
+![6_4_upgrade_overviewflowchart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
