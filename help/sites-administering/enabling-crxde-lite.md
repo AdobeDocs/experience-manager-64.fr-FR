@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 72df3ece-badf-466b-8f9a-0ec985d87741
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 3d8dc987-2ff9-4f71-bc07-48018caa3af4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 87%
 
 ---
-
 
 # Activation de CRXDE Lite dans AEM{#enabling-crxde-lite-in-aem}
 
@@ -24,7 +23,7 @@ Pour vous assurer que les installations AEM sont aussi sécurisées que possible
 
 Toutefois, comme CRXDE Lite dépend du lot `org.apache.sling.jcr.davex` pour fonctionner correctement, désactiver WebDAV aura pour effet de désactiver CRXDE Lite également.
 
-Dans ce cas, l’accès à `https://serveraddress:4502/crx/de/index.jsp` affichera un noeud racine vide et toutes les requêtes HTTP aux ressources du CRXDE Lite échoueront :
+Dans ce cas, la navigation vers `https://serveraddress:4502/crx/de/index.jsp` affichera un noeud racine vide, et toutes les requêtes HTTP aux ressources du CRXDE Lite échoueront :
 
 ```xml
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
@@ -34,7 +33,7 @@ Bien que cette recommandation vise à réduire les surfaces d’attaque autant q
 
 Si cette option est désactivée, vous pouvez activer CRXDE Lite en suivant la procédure ci-dessous :
 
-1. Accédez à la console Composants OSGi à l&#39;adresse `http://localhost:4502/system/console/components`
+1. Accédez à la console Composants OSGi à l’adresse `http://localhost:4502/system/console/components`
 1. Recherchez le composant suivant :
 
    * `org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`
@@ -56,10 +55,9 @@ Vous pouvez également activer CRXDE Lite via cURL, en exécutant la commande su
 curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
 ```
 
-## Autres ressources  {#other-resources}
+## Autres ressources {#other-resources}
 
 Pour plus d’informations sur les fonctions de sécurité d’AEM 6, voir les pages suivantes :
 
 * [Liste de contrôle de sécurité AEM](/help/sites-administering/security-checklist.md)
 * [Exécution d’AEM en mode Prêt pour la production](/help/sites-administering/production-ready.md)
-
