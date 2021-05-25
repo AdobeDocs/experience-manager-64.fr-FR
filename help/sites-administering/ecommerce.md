@@ -10,14 +10,13 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
 feature: Commerce Integration Framework
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 3c046e16-5f54-4a16-aa5b-256b679808fa
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 79%
 
 ---
-
 
 # eCommerce{#ecommerce}
 
@@ -32,13 +31,13 @@ Adobe propose deux versions de la structure d’intégration de Commerce :
 |  | CIF sur site | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versions d’AEM prises en charge | AEM sur site ou AMS 6.x | AEM AMS 6.4 et 6.5 |
-| Back-end | - AEM, Java <br> - Intégration monolithique, mappage de pré-génération (modèle)<br> - référentiel JCR | - Magento <br>- Java et JavaScript <br>- Aucune donnée Commerce stockée dans le référentiel JCR |
+| Back-end | - AEM, Java <br> - Intégration monolithique, mappage de pré-génération (modèle)<br> - référentiel JCR | - Magento <br> - Java et JavaScript <br> - Aucune donnée Commerce stockée dans le référentiel JCR |
 | Frontal | Pages rendues côté serveur AEM | Application de page mixte (rendu hybride) |
-| Catalogue de produits | - Importateur de produits, éditeur, mise en cache dans AEM <br> - Catalogues réguliers avec des pages AEM ou proxy | - Aucune importation de produit <br>- Modèles génériques <br>- Données à la demande via un connecteur |
-| Évolutivité | - Peut prendre en charge jusqu&#39;à quelques millions de produits (selon le cas d&#39;utilisation) <br> - Mise en cache du répartiteur | - Aucune limitation de volume <br> - Mise en cache sur le répartiteur ou le CDN |
-| Modèle de données normalisé | Non | Oui, schéma Magento GraphQL |
-| Disponibilité | Oui : <br> - Commerce Cloud SAP (Extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et conserve la compatibilité avec Hybris 4 <br> - Commerce Cloud Salesforce (Connector open-source pour prendre en charge AEM 6.4) | Oui via open source via GitHub. <br> Magento Commerce (prend en charge Magento 2.3.2 (par défaut) et compatible avec Magento 2.3.1). |
-| Quand utiliser la personnalisation | Cas d&#39;utilisation limités : Dans les cas où de petits catalogues statiques peuvent avoir besoin d’être importés | Solution conseillée dans la plupart des cas d’utilisation |
+| Catalogue de produits | - Importateur de produits, éditeur, mise en cache dans AEM <br> - Catalogues réguliers avec AEM ou pages proxy | - Aucun import de produit <br> - Modèles génériques <br> - Données à la demande via le connecteur |
+| Évolutivité | - Peut prendre en charge jusqu’à quelques millions de produits (selon le cas d’utilisation) <br> - Mise en cache sur Dispatcher | - Aucune limitation de volume <br> - Mise en cache sur Dispatcher ou CDN |
+| Modèle de données normalisé | Non | Oui, schéma GraphQL Magento |
+| Disponibilité | Oui :<br> - Commerce Cloud SAP (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4 <br> - Commerce Cloud Salesforce (Connector open source pour prendre en charge AEM 6.4) | Oui via open source via GitHub. <br> Magento Commerce (prend en charge Magento 2.3.2 (par défaut) et compatible avec Magento 2.3.1). |
+| Quand utiliser la personnalisation | Cas d’utilisation limités : Dans les cas où de petits catalogues statiques peuvent avoir besoin d’être importés | Solution conseillée dans la plupart des cas d’utilisation |
 
 Conjointement avec la gestion d’informations sur les produits, eCommerce gère les activités d’un site web de vente de produits dans une boutique en ligne :
 
@@ -64,15 +63,15 @@ La mise en œuvre d’eCommerce permet d’accéder en temps réel à des inform
 
 >[!NOTE]
 >
->Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, voir [Déploiement du commerce électronique](/help/sites-deploying/ecommerce.md).
+>Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, voir [Déploiement d’eCommerce](/help/sites-deploying/ecommerce.md).
 >
->Pour plus d&#39;informations sur l&#39;extension des capacités de commerce électronique, voir [Développement de l&#39;eCommerce](/help/sites-developing/ecommerce.md).
+>Pour plus d’informations sur l’extension des fonctionnalités d’eCommerce, voir [Développement d’eCommerce](/help/sites-developing/ecommerce.md).
 
 ## Principales fonctionnalités {#main-features}
 
 AEM eCommerce fournit ce qui suit :
 
-* Un certain nombre de **composants d&#39;AEM prêts à l&#39;emploi** pour illustrer ce qui peut être réalisé pour votre projet :
+* Un certain nombre de **composants d’AEM prêts à l’emploi** pour illustrer ce qui peut être réalisé pour votre projet :
 
    * Affichage des produits
    * Panier
@@ -96,7 +95,7 @@ AEM eCommerce fournit ce qui suit :
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-* Utilise la capacité AEM **présenter votre contenu sur plusieurs canaux**, que ce soit sur la fenêtre complète du navigateur ou sur un périphérique mobile. Ainsi, vous proposez votre contenu au format nécessaire pour vos visiteurs.
+* Utilise la possibilité de **présenter votre contenu sur plusieurs canaux**, que ce soit sur la fenêtre de navigateur complète ou sur un appareil mobile. Ainsi, vous proposez votre contenu au format nécessaire pour vos visiteurs.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -134,9 +133,8 @@ La section [Concepts](/help/sites-administering/concepts.md) couvre la structure
 * La structure est extensible.
 * La structure ne fournit pas de site prêt à l’emploi. Un certain travail de développement reste nécessaire pour adapter la structure à vos spécifications.
 
-### Pourquoi ? {#why}
+### Pourquoi ? {#why}
 
 * Fournir les mécanismes de base nécessaires à la création rapide d’un site de commerce électronique personnalisé.
 * Offrir la flexibilité nécessaire pour développer un site de commerce électronique réel.
 * Illustrer les pratiques recommandées.
-
