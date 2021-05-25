@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
-translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+exl-id: 5057b3d6-bf0c-4bb2-9085-f9add3f1c716
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 83%
 
 ---
 
-
 # Obtention d’informations sur la page au format JSON{#obtaining-page-information-in-json-format}
 
 Pour obtenir des informations sur la page, envoyez une requête au servlet PageInfo afin d’obtenir les métadonnées de page au format JSON.
 
-Le servlet PageInfo renvoie des informations sur les ressources dans le référentiel. La servlet est liée à l&#39;URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` et utilise le paramètre `path` pour identifier la ressource. L’exemple d’URL suivant renvoie des informations sur le noeud `/content/we-retail/us/en` :
+Le servlet PageInfo renvoie des informations sur les ressources dans le référentiel. Le servlet est lié à l’URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` et utilise le paramètre `path` pour identifier la ressource. L’exemple d’URL suivant renvoie des informations sur le noeud `/content/we-retail/us/en` :
 
 ```shell
 http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retail/us/en
@@ -55,7 +54,7 @@ Les composants de page peuvent être associés à un ou plusieurs services `com.
 >
 >À l’instar des PageInfoProviders, utilisez des ListInfoProviders pour mettre à jour des listes d’informations au format JSON (voir [Personnalisation de la console d’administration des sites web](/help/sites-developing/customizing-siteadmin.md)).
 
-## Fournisseurs d’informations de page par défaut  {#default-page-information-providers}
+## Fournisseurs d’informations de page par défaut {#default-page-information-providers}
 
 Le composant `/libs/foundation/components/page` est associé aux services PageInfoProvider suivants :
 
@@ -67,7 +66,7 @@ Le composant `/libs/foundation/components/page` est associé aux services PageIn
 * **Fournisseur d’informations sur l’émulateur** : informations sur les émulateurs de terminaux mobiles disponibles pour cette ressource. Si le composant de page n’effectue pas le rendu des terminaux mobiles, aucun émulateur n’est disponible.
 * **Fournisseur d’informations sur les annotations** : informations sur les annotations figurant sur la page.
 
-Par exemple, la servlet PageInfo renvoie la réponse JSON suivante pour le noeud `/content/we-retail/us/en` :
+Par exemple, le servlet PageInfo renvoie la réponse JSON suivante pour le noeud `/content/we-retail/us/en` :
 
 ```
 {
@@ -474,7 +473,7 @@ Par exemple, la servlet PageInfo renvoie la réponse JSON suivante pour le noeud
 
 ## Filtrage des informations sur le module de processus {#filtering-workflow-package-information}
 
-Configurez le service Day CQ WCM Workflow Package Info Provider de sorte qu’il renvoie des informations uniquement sur les packages de processus qui vous intéressent. Par défaut, le service Fournisseur d’informations de package de flux de travaux renvoie des informations sur chaque package de processus dans le référentiel. Itérer sur un sous-ensemble de modules de processus utilise moins de ressources du serveur.
+Configurez le service Day CQ WCM Workflow Package Info Provider afin qu’il renvoie des informations uniquement sur les modules de processus qui vous intéressent. Par défaut, le service Fournisseur d’informations sur les modules de processus renvoie des informations sur chaque module de processus dans le référentiel. Itérer sur un sous-ensemble de modules de processus utilise moins de ressources du serveur.
 
 >[!NOTE]
 >
@@ -520,7 +519,7 @@ Pour configurer le service dans la source de votre projet, procédez comme suit�
 
 1. Recherchez ou créez le dossier de configuration de votre application AEM dans la source du projet.
 
-   Par exemple, si vous avez utilisé l’archétype multimodule du module externe Content Package Maven pour créer votre projet, le chemin d’accès au dossier est `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
+   Par exemple, si vous avez utilisé l’archétype multimodule du module externe Content Package Maven pour créer votre projet, le chemin du dossier est `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
 1. Dans le dossier de configuration, créez un fichier texte nommé com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml.
 1. Copiez le texte suivant dans le fichier :
 
@@ -532,7 +531,7 @@ Pour configurer le service dans la source de votre projet, procédez comme suit�
     workflowpackageinfoprovider.filter="[]"/>
    ```
 
-1. Dans les crochets (`[]`) entourant la propriété `workflowpackageinfoprovider.filter`, saisissez une liste de valeurs de filtre séparées par des virgules, semblable à l’exemple suivant :
+1. Dans les crochets (`[]`) qui entourent la propriété `workflowpackageinfoprovider.filter`, saisissez une liste de valeurs de filtre séparées par des virgules, comme dans l’exemple suivant :
 
    `workflowpackageinfoprovider.filter="[-/etc/workflow/packages(/.*)?,+/etc/workflow/packages/Editions(/.*)?]"/>`
 
@@ -616,4 +615,3 @@ Le service PageUrlInfoProvider renvoie les données suivantes pour le noeud `/co
     "publishURL": "http://localhost:4503/content/we-retail/us/en"
 }
 ```
-
