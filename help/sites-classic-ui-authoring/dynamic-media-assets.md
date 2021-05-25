@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 2a60cacf-0551-44d4-9965-705a715d44c5
-translation-type: tm+mt
-source-git-commit: 4ae3c1dc9af8a9d4a3cdb8a30ed8d898e1079ce6
+exl-id: 3db8153c-eb0c-4767-b7cf-10fb858468b7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 90%
 
 ---
 
-
-# Utilisation de Dynamic Media{#working-with-dynamic-media}
+# Utilisation de Dynamic Media {#working-with-dynamic-media}
 
 [Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) fournit des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
@@ -28,5 +27,4 @@ L’utilisation de Dynamic Media n’est pas disponible dans l’IU classique. 
 
 >[!NOTE]
 >
->Si vous utilisez Dynamic Media, vous ne pouvez pas utiliser simultanément les téléchargements automatiques disponibles si [intègre Dynamic Media Classic dans AEM](/help/sites-administering/scene7.md). Voir [activation de Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Par défaut, ce module complémentaire est désactivé.
-
+>Si vous utilisez Dynamic Media, vous ne pouvez pas utiliser simultanément les téléchargements automatiques disponibles si [intégrez Dynamic Media Classic à AEM](/help/sites-administering/scene7.md). Voir [Activation de Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Par défaut, ce module complémentaire est désactivé.
