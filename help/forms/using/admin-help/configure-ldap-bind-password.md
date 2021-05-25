@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
-translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+exl-id: eaa2c889-d116-4209-9063-0c0b32dd8849
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 91%
 
 ---
-
 
 # Configuration du mot de passe de liaison LDAP{#configure-the-ldap-bind-password}
 
@@ -56,4 +55,3 @@ Pour éviter les risques de sécurité, le champ du mot de passe de liaison n’
 
 1. Pour importer le fichier mis à jour, dans User Management, cliquez sur Configuration > Importer et exporter des fichiers de configuration.
 1. Cliquez sur Parcourir pour rechercher le fichier, sur Importer, puis sur OK.
-
