@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: bf8fd156-4be9-43f8-8948-cf7f91c25f1b
-translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+exl-id: 6d906c2b-c8bc-4d54-9887-8aaeb6cc83d3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 78%
 
 ---
 
-
 # Analytics avec des fournisseurs externes{#analytics-with-external-providers}
 
 Analytics peut vous apporter des informations importantes et intéressantes sur l’utilisation de votre site web.
 
-Diverses configurations prêtes à l&#39;emploi sont disponibles pour l&#39;intégration au service approprié, par exemple :
+Diverses configurations d&#39;usine sont disponibles pour l&#39;intégration au service approprié, par exemple :
 
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
@@ -56,10 +55,10 @@ Ces fragments de code permettent de collecter des données et de générer des r
 
 >[!CAUTION]
 >
->Le site de démonstration Geometrixx-Outdoors est configuré de sorte que les attributs fournis dans les Propriétés de la page soient ajoutés au code source html (juste au-dessus de la balise de fin `</html>`) dans le script `js` correspondant.
+>Le site de démonstration Geometrixx-Outdoors est configuré de sorte que les attributs fournis dans les Propriétés de la page soient ajoutés au code source HTML (juste au-dessus de la balise de fin `</html>` ) dans le script `js` correspondant.
 >
 >
->Si votre propre `/apps` n&#39;hérite pas du composant de page par défaut ( `/libs/foundation/components/page`), vous (ou vos développeurs) devez vous assurer que les scripts `js` correspondants sont inclus, par exemple en incluant `cq/cloudserviceconfigs/components/servicescomponents`, ou en utilisant un mécanisme similaire.
+>Si votre propre `/apps` n’hérite pas du composant de page par défaut ( `/libs/foundation/components/page`), vous (ou vos développeurs) devez vous assurer que les scripts `js` correspondants sont inclus, par exemple en incluant `cq/cloudserviceconfigs/components/servicescomponents` ou en utilisant un mécanisme similaire.
 >
 >
 >Autrement, aucun des services (Générique, Analytics, Target, etc.) ne fonctionne.
@@ -100,7 +99,7 @@ Après avoir créé la configuration de service, vous devez maintenant configure
 
 1. Cliquez sur **OK** pour enregistrer.
 
-1. Vous revenez sur l’onglet **Services cloud**. Le **extrait de code Analytics générique** est désormais répertorié avec le message `Configuration reference missing`. Utilisez la liste déroulante pour sélectionner votre instance de service spécifique, par exemple, « google-analytics » :
+1. Vous revenez sur l’onglet **Services cloud**. Le **fragment de code Analytics générique** est désormais répertorié avec le message `Configuration reference missing`. Utilisez la liste déroulante pour sélectionner votre instance de service spécifique, par exemple, « google-analytics » :
 
    ![analytics_selectspecific service](assets/analytics_selectspecificservice.png)
 
@@ -113,4 +112,3 @@ Après avoir créé la configuration de service, vous devez maintenant configure
    >[!NOTE]
    >
    >Si la configuration est associée à une page qui contient des pages enfants, ces pages héritent elles aussi du service.
-
