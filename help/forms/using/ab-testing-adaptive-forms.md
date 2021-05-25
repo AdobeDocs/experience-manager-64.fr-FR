@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: a69ff832-7955-4b10-b47f-287ac385b786
-translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+exl-id: e330a8e8-4d55-4723-921b-812cb243f420
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1569'
 ht-degree: 92%
 
 ---
-
 
 # Créer et gérer des tests A/B pour les formulaires adaptatifs {#create-and-manage-a-b-test-for-adaptive-forms}
 
@@ -27,7 +26,7 @@ AEM Forms s’intègre à Adobe Target, une solution Adobe Marketing Cloud qui 
 
 Avec AEM Forms, vous pouvez configurer et exécuter des tests A/B sur des formulaires adaptatifs en temps réel. Le module propose également des fonctionnalités personnalisables de rapport et prêtes à l’emploi afin de visualiser les performances de vos expériences de formulaire en temps réel et d’identifier celle qui optimise l’engagement et la conversion de l’utilisateur.
 
-## Installation et intégration de Target dans AEM Forms  {#set-up-and-integrate-target-in-aem-forms}
+## Installation et intégration de Target dans AEM Forms {#set-up-and-integrate-target-in-aem-forms}
 
 Avant de commencer à créer et analyser les tests A/B pour les formulaires adaptatifs, vous devez installer votre serveur Target et l’intégrer à AEM Forms.
 
@@ -41,10 +40,10 @@ Le code client identifie le compte client Adobe Target et est utilisé comme un 
 
 Pour intégrer un serveur Target en cours d’exécution avec AEM Forms, procédez comme suit :
 
-1. Sur AEM serveur, accédez à https://*nom_hôte*:&quot;a2/>port&lt;a3/&quot;/libs/cq/core/content/tools/cloudservices.html.**
+1. Sur AEM serveur, accédez à https://&quot;a0/>hostname *:&quot;a2/>port&lt;a3/&quot;/libs/cq/core/content/tools/cloudservices.html.***
 1. Dans la section **Adobe Target**, cliquez sur **Afficher les configurations** puis sur l’icône **+** pour ajouter une nouvelle configuration.
 
-   Si vous configurez la cible pour la première fois, cliquez sur **Configurer maintenant**.
+   Si vous configurez Target pour la première fois, cliquez sur **Configurer maintenant**.
 
 1. Dans la boîte de dialogue Créer une configuration, spécifiez un **titre** et éventuellement un **nom** pour la configuration.
 1. Cliquez sur **Créer**. La boîte de dialogue Modifier le composant s’ouvre.
@@ -52,10 +51,10 @@ Pour intégrer un serveur Target en cours d’exécution avec AEM Forms, procéd
 1. Sélectionnez **Rest** dans la liste déroulante Type d’API.
 1. Cliquez sur **Se connecter à Adobe Target** pour lancer la connexion à Target. Si la connexion est établie, le message Connexion réussie s’affiche. Cliquez sur **OK** dans le message et **OK** dans la boîte de dialogue. Le compte Target est configuré.
 1. Créez une structure Target, comme décrit à la section [Ajout d’une structure](/help/sites-administering/target.md).
-1. Accédez à https://&quot;a0/>hostname *:&quot;a2/>port&lt;a3/&quot;/system/console/configMgr.***
+1. Accédez à https://&quot;a0/>hostname *:&quot;a2/>port*/system/console/configMgr.**
 1. Cliquez sur **AEM Forms Target Configuration**.
 1. Sélectionnez **Target Framework**.
-1. Dans le champ **Target URLs**, spécifiez toutes les URL où les tests A/B seront exécutés. Par exemple, https://&quot;a0/>hostname *:&quot;a2/>port&lt;a3/&quot;/ pour le serveur AEM Forms sur OSGi ou https://&quot;a4/>hostname&lt;a5/&quot;:&quot;a6/>port&lt;a7/&quot;/lc/ pour le serveur AEM Forms sur JEE.*******
+1. Dans le champ **Target URLs**, spécifiez toutes les URL où les tests A/B seront exécutés. Par exemple, https://&quot;a0/>hostname *:* port */ pour le serveur AEM Forms sur OSGi ou https://&quot;a4/>hostname*:*port*/lc/ pour le serveur AEM Forms sur JEE.**
 
     Si vous souhaitez configurer une URL Target pour une instance de publication à laquelle vos clients peuvent accéder à l’aide du nom d’hôte ou de l’adresse IP, vous devez configurer les deux comme des URL Target (via le nom d’hôte ainsi que l’adresse IP). Si vous configurez uniquement une des URL, votre test A/B ne s’exécutera pas pour les clients provenant de l’autre URL. Cliquez sur le signe **+** pour spécifier plusieurs URL.
 
@@ -88,8 +87,8 @@ AEM vous permet de créer un public et de les utiliser pour un test A/B. Le publ
 1. Dans la boîte de dialogue Configuration d’Adobe Target, sélectionnez une configuration Cible et cliquez sur **Ok**.
 1. Sur la page Créer un public, créez des règles. Les règles vous permettent de classer le public par catégorie. Par exemple, vous pouvez trier les publics par catégorie en fonction du système d’exploitation. Le public A provient de Windows et le public B de linux.
 
-   * Pour classer les audiences en fonction de Windows, dans la règle 1, sélectionnez le type d’attribut **OS**. Dans la liste déroulante, sélectionnez **Windows**.
-   * Pour classer les audiences selon Linux, dans la règle n° 2, sélectionnez le type d’attribut **OS**. Dans la liste déroulante Lorsque, sélectionnez **Linux**, puis cliquez sur **Suivant**.
+   * Pour classer l’audience en fonction de Windows, dans la règle #1, sélectionnez le type d’attribut **OS**. Dans la liste déroulante, sélectionnez **Windows**.
+   * Pour classer l’audience selon Linux, dans la règle #2, sélectionnez le type d’attribut **OS**. Dans la liste déroulante Lorsque , sélectionnez **Linux**, puis cliquez sur **Suivant**.
 
 1. Spécifiez un nom pour le public créé, puis cliquez sur **Enregistrer**.
 
@@ -99,13 +98,13 @@ Vous pouvez sélectionner le public lorsque vous configurez le test A/B d’un f
 
 Effectuez les étapes suivantes pour créer un test A/B pour un formulaire adaptatif.
 
-1. Accédez à **Forms &amp; Documents** à l&#39;adresse https://&quot;a2/>hostname&lt;a3/&quot;:&quot;a4/>port&lt;a5/&quot;/aem/forms.html/content/dam/formsanddocuments.****
+1. Accédez à **Forms &amp; Documents** à l’adresse https://&quot;a2/>hostname *:* port&lt;a5/&quot;/aem/forms.html/content/dam/formsanddocuments.**
 
 1. Accédez au dossier contenant le formulaire adaptatif.
 1. Cliquez sur l’outil **Sélection** dans la barre d’outils et sélectionnez le formulaire adaptatif.
 1. Cliquez sur le bouton **Plus** dans la barre d’outils et sélectionnez **Configurer les tests A/B**. La page de configuration des tests A/B s’ouvre.
 
-   [ ![Page de configuration du test A/B pour les formulaires adaptatifs](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
+[ ](assets/ab-test-configure-1.png)
 
 1. Spécifiez un **nom d’activité** pour le test A/B.
 
@@ -117,7 +116,7 @@ Effectuez les étapes suivantes pour créer un test A/B pour un formulaire adapt
 
    * CSS ou style
    * Ordre des champs dans différents panneaux ou le sur même panneau
-   * Disposition du panneau
+   * Disposition de panneau
    * Titres des panneaux
    * Description, libellé et texte d’aide pour un champ
    * Scripts qui n’affectent pas ou n’interrompent pas le flux d’envoi
@@ -145,7 +144,7 @@ Une fois que vous avez activé l’exécution du test A/B pendant la période so
 
 1. Sélectionnez le formulaire adaptatif, cliquez sur le bouton **Plus**, puis cliquez sur **Rapport du test A/B**. Le rapport s’affiche.
 
-   [ ![Rapport du test A/B](assets/ab-test-report.png)](assets/ab-test-report-1.png)
+[ ](assets/ab-test-report-1.png)
 
 1. Analysez le rapport et voyez si vous disposez de suffisamment de points de données pour décider quelle expérience a le mieux fonctionné. Vous pouvez choisir de continuer le même test A/B pendant plus longtemps ou de désigner une expérience probante et terminer le test A/B.
 1. Pour déclarer qu’une expérience est probante et terminer les tests A/B, cliquez sur le bouton **Terminer le test A/B** sur le tableau de bord de génération de rapports. Une boîte de dialogue vous invite à choisir celle des deux expériences qui obtient les meilleurs résultats. Sélectionnez l’expérience la plus probante et confirmez la fin du test A/B.
