@@ -10,14 +10,13 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: ef486673-30fe-410a-83cf-c55be6064ce4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 94%
 
 ---
-
 
 # Choix d’un type de persistance pour l’installation d’AEM Forms {#choosing-a-persistence-type-for-an-aem-forms-installation}
 
@@ -29,7 +28,7 @@ La persistance est la méthode de stockage du contenu sur les stockages physique
 >
 >LiveCycle ES4 SP1 utilise le format de persistance TarPM pour stocker du contenu.
 
-Le tableau suivant liste tous les types de persistance pris en charge avec divers paramètres afin de vous aider à choisir un type de persistance pour votre environnement :
+Le tableau suivant répertorie tous les types de persistance pris en charge, ainsi que divers paramètres, pour vous aider à choisir un type de persistance pour votre environnement :
 
 <table> 
  <tbody>
