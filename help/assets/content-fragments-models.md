@@ -9,13 +9,12 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 exl-id: 39ed07ec-54a6-4387-8435-e891726c411c
-feature: Content Fragments
+feature: Fragments de contenu
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '706'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -31,7 +30,7 @@ Les modèles de fragment de contenu définissent la structure du contenu pour vo
 
 >[!CAUTION]
 >
->Si vous n’activez pas **[!UICONTROL Modèles de fragment de contenu]**, l’option **[!UICONTROL Créer]** ne sera pas disponible pour la création de nouveaux modèles.
+>Si vous n’activez pas **[!UICONTROL Modèles de fragment de contenu]**, l’option **[!UICONTROL Créer]** ne sera pas disponible pour la création de modèles.
 
 Pour activer les modèles de fragment de contenu, vous devez :
 
@@ -43,7 +42,7 @@ Pour activer les modèles de fragment de contenu, vous devez :
 Pour [créer un nouveau modèle de fragment de contenu](#creating-a-content-fragment-model), vous **devez** d’abord activer ces modèles à l’aide du gestionnaire de configuration :
 
 1. Accédez à **[!UICONTROL Outils]**, **[!UICONTROL Général]**, puis ouvrez l’**[!UICONTROL explorateur de configurations]**.
-   * Pour plus d’informations, consultez la [documentation du navigateur de configuration](/help/sites-administering/configurations.md).
+   * Pour plus d’informations, consultez la documentation relative au [](/help/sites-administering/configurations.md)Navigateur de configuration.
 1. Sélectionnez l’emplacement approprié pour votre site web.
 1. Utilisez le bouton **[!UICONTROL Créer]** pour ouvrir la boîte de dialogue.
 
@@ -96,7 +95,7 @@ Le modèle de fragment de contenu définit la structure des fragments de contenu
 
    >[!NOTE]
    >
-   >Lorsqu&#39;un champ est **Obligatoire**, le **libellé** indiqué dans le volet de gauche est marqué d&#39;un astérisque (**&amp;ast;**).
+   >Lorsqu’un champ est **Obligatoire**, le **Libellé** indiqué dans le volet de gauche sera marqué d’un astérisque (**&amp;ast;**).
 
    ![cfm-6420-12](assets/cfm-6420-12.png)
 
