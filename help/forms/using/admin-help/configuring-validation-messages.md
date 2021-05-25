@@ -9,20 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 2016ac85-12a1-42cb-bc03-fced94947010
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
 
 ---
 
-
 # Configuration des messages de validation {#configuring-validation-messages}
 
 Pour les formulaires rendus au format HTML, les erreurs de validation de formulaire qui surviennent s’affichent pour consultation par l’utilisateur. Vous pouvez personnaliser le type d’affichage des messages de validation. Selon l’endroit où les messages de validation sont affichés, vous pouvez également contrôler l’emplacement du message dans le formulaire et la taille du cadre.
 
-## Définition du type d’affichage des messages de validation  {#specify-how-validation-messages-are-displayed}
+## Définition du type d’affichage des messages de validation {#specify-how-validation-messages-are-displayed}
 
 1. Dans Administration Console, cliquez sur Services > Formulaires.
 1. Sous Sortie de validation, dans la liste Rapport, sélectionnez l’une des options suivantes :
@@ -66,4 +65,3 @@ Lorsque l’option Rapport est définie sur Cadre, vous pouvez indiquer la taill
    La taille de la bordure doit être égale ou supérieure à 0. La valeur par défaut est 1.
 
 1. Cliquez sur Enregistrer.
-
