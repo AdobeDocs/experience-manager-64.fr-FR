@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: ca9c6fd1-7f2e-4c99-ba6e-0a064274ac24
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 71%
 
 ---
-
 
 # Offres Target{#target-offers}
 
@@ -28,7 +27,7 @@ ht-degree: 71%
    ![](do-not-localize/chlimage_1-11.png)
 
 1. Cliquez sur **Nouveau ...**
-1. Vous pouvez spécifier le **titre**, **nom** et le type d’expérience à créer ; dans ce cas, Offre de Test&amp;Cible.
+1. Vous pouvez spécifier le **Titre**, **Nom** et le type d’expérience à créer ; dans ce cas, offre Test&amp;Target.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -40,4 +39,4 @@ ht-degree: 71%
 
 ## Intégration à Adobe Target {#integrating-with-adobe-target}
 
-Voir [Intégration à l&#39;Adobe](/help/sites-administering/target.md) [Cible](/help/sites-administering/target.md) pour plus de détails.
+Voir [Intégration à Adobe](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) pour plus d’informations.
