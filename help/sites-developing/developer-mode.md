@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
-translation-type: tm+mt
-source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
+exl-id: 733eddf1-48f9-45c2-a1b4-138cf32b4b59
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 86%
 
 ---
-
 
 # Mode Développeur{#developer-mode}
 
@@ -39,7 +38,7 @@ Ils aident les développeurs à :
 >* est uniquement disponible dans l’IU compatible avec les écrans tactiles (lors de la modification des pages) ;
 >* n’est pas disponible sur les périphériques mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
    >   * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
->* N&#39;est disponible que pour les utilisateurs membres du groupe `administrators`.
+>* N’est disponible que pour les utilisateurs qui sont membres du groupe `administrators`.
 
 
 >[!CAUTION]
@@ -63,7 +62,7 @@ Il doit être désactivé à nouveau après utilisation.
 >* Session AEM Gems concernant le [mode Développeur d’AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
 
 
-## Ouverture du mode Développeur  {#opening-developer-mode}
+## Ouverture du mode Développeur {#opening-developer-mode}
 
 Le mode Développeur est mis en œuvre sous la forme d’un panneau latéral dans l’éditeur de page. Pour ouvrir le panneau, sélectionnez **Développeur** dans le sélecteur de mode au niveau de la barre d’outils de l’éditeur de page :
 
@@ -71,7 +70,7 @@ Le mode Développeur est mis en œuvre sous la forme d’un panneau latéral dan
 
 Le panneau est divisé en deux onglets :
 
-* **[Composants](/help/sites-developing/developer-mode.md#components)**  : affiche une arborescence de composants, similaire à l&#39;arborescence de  [contenu ](/help/sites-authoring/author-environment-tools.md#content-tree) pour les auteurs.
+* **[Composants](/help/sites-developing/developer-mode.md#components)**  : affiche une arborescence de composants, similaire à l’arborescence de  [contenu ](/help/sites-authoring/author-environment-tools.md#content-tree) pour les auteurs.
 
 * **[Erreurs](/help/sites-developing/developer-mode.md#errors)** : lorsque des problèmes se produisent, les détails sont affichés pour chaque composant.
 
@@ -120,7 +119,7 @@ Chaque entrée de composant peut afficher (par exemple) :
 
 >[!CAUTION]
 >
->Certains liens pointent sur des scripts sous `/libs`. Cependant, il s&#39;agit uniquement de référence, vous **ne devez pas** modifier quoi que ce soit sous `/libs`, car toutes les modifications que vous apportez peuvent être perdues. Cela est dû au fait que cette branche est exposée aux modifications à chaque mise à niveau ou application d’un correctif/Feature Pack. Toute modification requise doit être effectuée sous `/apps`, voir [Overlays and Overrides](/help/sites-developing/overlays.md).
+>Certains liens pointent sur des scripts sous `/libs`. Toutefois, ces modifications sont proposées à des fins de référence uniquement. Vous **ne devez pas** modifier quoi que ce soit sous `/libs`, car toute modification que vous apportez peut être perdue. Cela est dû au fait que cette branche est exposée aux modifications à chaque mise à niveau ou application d’un correctif/Feature Pack. Toutes les modifications dont vous avez besoin doivent être apportées sous `/apps`, voir [Recouvrements et remplacements](/help/sites-developing/overlays.md).
 
 ### Erreurs {#errors}
 
@@ -137,10 +136,10 @@ Par exemple, dans l’éventualité où une méthode non définie est appelée, 
 
 L’entrée du composant dans l’arborescence de l’onglet Composants sera également marquée à l’aide d’un indicateur lorsqu’une erreur se produit.
 
-### Tests  {#tests}
+### Tests {#tests}
 
 >[!CAUTION]
 >
->Dans AEM 6.2, les fonctionnalités de test du mode développeur ont été réimplémentées en tant qu’application Outils autonome.
+>Dans AEM 6.2, les fonctionnalités de test du mode Développeur ont été réimplémentées en tant qu’application Outils autonome.
 >
->Pour plus d&#39;informations, voir [Test de votre interface utilisateur](/help/sites-developing/hobbes.md).
+>Pour plus d’informations, voir [Test de votre interface utilisateur](/help/sites-developing/hobbes.md).
