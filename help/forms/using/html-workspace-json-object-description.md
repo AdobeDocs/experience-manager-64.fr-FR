@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 8c7e1ee2-0f7f-427e-aca2-d4bf523fd7f1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 93%
 
 ---
 
-
-# Description de l’objet JSON de l’espace de travail AEM Forms  {#aem-forms-workspace-json-object-description}
+# Description de l’objet JSON de l’espace de travail AEM Forms {#aem-forms-workspace-json-object-description}
 
 Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-dessous.
 
@@ -443,7 +442,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>dateRanges<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Contient des objets de tableau des plannings d’absences du bureau d’un utilisateur. Dans chaque objet de planification, le champ startDate contient la date de début de la planification et le champ endDate contient la date de fin de la planification. Si endDate est nul dans la planification, cela signifie que l'utilisateur n'a pas planifié la date de fin de la planification d'absence du bureau.<br type="_moz" /> </td> 
+   <td>Contient des objets de tableau des plannings d’absences du bureau d’un utilisateur. Dans chaque objet de planning, le champ startDate contient la date de début du planning et le champ endDate contient la date de fin du planning. Si endDate est nul dans le planning, cela implique que l'utilisateur n'a pas programmé la date de fin du planning d'absence du bureau.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td> 
@@ -463,7 +462,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Contient un tableau d’objets pour la désignation d’absence du bureau propre à un processus. Dans chaque objet de désignation propre au processus, processName contient le nom du processus, isNotDesignated est true si aucun utilisateur n'est affecté au processus correspondant et userDesignated est null si aucun utilisateur n'a affecté d'autres détails à l'utilisateur affecté au processus correspondant.<br type="_moz" /> </td> 
+   <td>Contient un tableau d’objets pour la désignation d’absence du bureau propre à un processus. Dans chaque objet de désignation spécifique au processus, processName contient le nom du processus, isNotDesignated est true si aucun utilisateur n’est affecté pour le processus correspondant et userDesignated est null si aucun utilisateur n’a affecté d’autres détails de l’utilisateur affecté au processus correspondant.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processus<br type="_moz" /> </td> 
@@ -542,7 +541,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>processVariables<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Tableau d’objets de variables de processus. Chaque objet de variable de processus contient le nom de la variable de processus, la valeur de la variable de processus et le type de la variable de processus.<br type="_moz" /> </td> 
+   <td>Tableau d’objets de variables de processus. Chaque objet de variable de processus contient le nom qui est le nom de la variable de processus, la valeur qui est la valeur de la variable de processus et le type qui est le type de variable de processus.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>tasklist<br type="_moz" /> </td> 
@@ -731,7 +730,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>autorisations ;<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Autorisations associées à une pièce jointe. Le champ allowRead est utilisé pour l'autorisation de lecture, allowWrite est utilisé pour l'autorisation d'écriture, allowDelete est utilisé pour l'autorisation de suppression.<br type="_moz" /> </td> 
+   <td>Autorisations associées à une pièce jointe. Le champ allowRead sert à l’autorisation de lecture, allowWrite est pour l’autorisation d’écriture, allowDelete est pour l’autorisation de suppression.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>size<br type="_moz" /> ; </td> 
