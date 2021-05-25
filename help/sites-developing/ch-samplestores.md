@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 7f813b59-d904-49b6-994c-be3badf74464
-translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+exl-id: 776ceb9f-f835-4dbb-9100-f456a36b6dcd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 95%
 
 ---
-
 
 # Exemples de magasins candidats ContextHub {#sample-contexthub-store-candidates}
 
@@ -66,7 +65,7 @@ Le magasin candidat de modèles contexthub.geolocation utilise Google Maps pour 
 
 ### Implémentation de base {#base-implementation-geolocation}
 
-Le candidat du magasin contexthub.geolocation s&#39;étend [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+Le magasin candidat contexthub.geolocation étend [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuration {#configuration-geolocation}
 
@@ -114,7 +113,7 @@ Le magasin utilise une arborescence de données similaire à l’exemple suivant
 >
 >Une stratégie de sécurité introduite dans Chrome 50.x requiert que tous les appels liés à la géolocalisation soient effectués via une connexion sécurisée. Par conséquent, AEM force l’utilisation de https pour les appels d’API de géolocalisation si AEM s’exécute également sur https. Sinon, http est utilisé afin de respecter la politique de même origine. Voir [cet article de blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) pour plus de détails sur les changements dans Chrome.
 
-## Exemple de magasin candidat contexthub.surferinfo   {#contexthub-surferinfo-sample-store-candidate}
+## Exemple de magasin candidat contexthub.surferinfo  {#contexthub-surferinfo-sample-store-candidate}
 
 Stocke des informations sur l’environnement client actuel, telles que l’appareil, la fenêtre, le navigateur, la date et l’heure.
 
@@ -124,7 +123,7 @@ Stocke des informations sur l’environnement client actuel, telles que l’appa
 
 ### Implémentation de base {#base-implementation-surferinfo}
 
-Le candidat du magasin contexthub.datetime étend [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+Le magasin candidat contexthub.datetime étend [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuration {#configuration-surferinfo}
 
@@ -191,7 +190,7 @@ L’exemple de magasin candidat granite.emulators stocke des informations sur le
 
 ### Implémentation de base {#base-implementation-emulators}
 
-Le candidat du magasin contexthub.geolocation s&#39;étend [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+Le magasin candidat contexthub.geolocation étend [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuration {#configuration-emulators}
 
@@ -324,7 +323,7 @@ Stocke des informations sur l’utilisateur actuel.
 
 ### Implémentation de base {#base-implementation-profile}
 
-Le candidat du magasin contexthub.datetime étend [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+Le magasin candidat contexthub.datetime étend [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuration {#configuration-profile}
 
