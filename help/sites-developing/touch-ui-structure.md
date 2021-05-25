@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 9eeb3203-e27a-4960-a4ec-58dd9dd098a2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 96%
 
 ---
-
 
 # Structure de l’interface utilisateur tactile d’AEM{#structure-of-the-aem-touch-enabled-ui}
 
@@ -149,7 +148,7 @@ AEM s’accompagne de plusieurs calques qui sont déjà implémentés pour la cr
 >
 >Les calques constituent une puissante solution qui affecte la manière dont l’utilisateur affiche le contenu de la page et interagit avec celui-ci. Lorsque vous développez vos propres calques, vous devez veiller à ce qu’ils soient effacés lorsque vous les quittez.
 
-### Sélecteur de calques   {#layer-switcher}
+### Sélecteur de calques  {#layer-switcher}
 
 Le sélecteur de calques vous permet de choisir le calque à utiliser. Lorsqu’il est fermé, il indique le calque en cours d’utilisation.
 
@@ -167,7 +166,6 @@ En fonction de l’espace disponible, les barres d’outils de composant sont pl
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d&#39;informations sur les concepts relatifs à l&#39;interface utilisateur tactile, consultez l&#39;article [Concepts de l&#39;interface utilisateur tactile AEM](/help/sites-developing/touch-ui-concepts.md).
+Pour plus d’informations sur les concepts relatifs à l’IU tactile, reportez-vous à l’article [Concepts de l’IU tactile AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Pour plus d’informations techniques, voir la [documentation JS set](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) pour l’éditeur de page tactile.
-
+Pour plus d’informations techniques, reportez-vous à la [documentation JS](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) de l’éditeur de page tactile.
