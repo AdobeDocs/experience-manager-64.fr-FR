@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 3f4c17cf-6f77-4a87-b27b-f13a6a976523
-translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+exl-id: 7b9f21eb-22f6-42f7-8dc7-770601ef51fc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2199'
 ht-degree: 83%
 
 ---
-
 
 # Développement de SPA pour AEM{#developing-spas-for-aem}
 
@@ -26,11 +25,11 @@ Cet article présente des questions importantes à prendre en compte lorsqu’un
 
 >[!NOTE]
 >
->La fonction Éditeur d’application à page unique (SPA) nécessite AEM Service Pack 2 6.4 ou version ultérieure.
+>La fonction Éditeur d’application sur une seule page (SPA) requiert AEM Service Pack 2 ou version ultérieure.
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
-## Archétype de projet AEM{#aem-project-archetype}
+## Archétype de projet AEM {#aem-project-archetype}
 
 Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html), qui prend en charge les projets SPA à l’aide de React ou d’Angular et tire parti du SDK SPA.
 
@@ -38,10 +37,10 @@ Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://docs.ad
 
 Le développement d’applications sur une seule page sur AEM suppose que le développeur front-end respecte les bonnes pratiques standard lors de la création d’une SPA. Si le développeur front-end respecte ces bonnes pratiques générales, ainsi que certains principes spécifiques à AEM, sa SPA sera fonctionnelle avec [AEM et ses fonctionnalités de création de contenu](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
 
-* **[Portabilité](/help/sites-developing/spa-architecture.md#portability)  -** Comme pour tout composant, les composants doivent être construits pour être aussi portables que possible. Le SPA doit être créé avec des composants portatifs et réutilisables, en évitant les chemins statiques qui font référence à la structure de contenu.
-* **[aem pilote la structure](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)**  du site : le développeur principal crée des composants et possède leur structure interne, mais s&#39;appuie sur AEM pour définir la structure de contenu du site.
-* **[Rendu](/help/sites-developing/spa-architecture.md#dynamic-rendering)  dynamique -** Tout rendu doit être dynamique.
-* **[Routage](#dynamic-routing)  dynamique-** Le SPA est responsable du routage et AEM l&#39;écoute et récupère les données du composant en fonction de celui-ci. Tout routage devrait également être dynamique.
+* **[Portabilité](/help/sites-developing/spa-architecture.md#portability)  :** comme pour tout composant, les composants doivent être conçus pour être aussi portables que possible. Le SPA doit être créé avec des composants portables et réutilisables, en évitant les chemins statiques qui font référence à la structure de contenu.
+* **[AEM détermine la structure du site](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)**  : le développeur front-end crée des composants et possède leur structure interne, mais s’appuie sur AEM pour définir la structure de contenu du site.
+* **[Rendu dynamique](/help/sites-developing/spa-architecture.md#dynamic-rendering)  :** tout le rendu doit être dynamique.
+* **[Routage dynamique](#dynamic-routing)  -** Le SPA est responsable du routage et AEM l’écoute et récupère les données du composant en fonction de celui-ci. Tout routage devrait également être dynamique.
 
 Si vous gardez ces principes à l’esprit pendant le déploiement de votre SPA, elle sera aussi flexible et évolutive que possible et permettra d’utiliser toutes les fonctionnalités de création d’AEM prises en charge.
 
@@ -51,7 +50,7 @@ Si vous n’avez pas besoin de prendre en charge les fonctionnalités de créati
 
 Comme lors du développement de tout composant, vous devez créer vos composants de manière à optimiser leur portabilité. Il convient d’éviter tout modèle qui va à l’encontre de la portabilité ou de la capacité de réutilisation des composants afin de garantir la compatibilité, la flexibilité et la maintenabilité à l’avenir.
 
-Le développeur doit éviter d’utiliser des chemins statiques faisant référence à la structure de contenu, car les chemins peuvent être modifiés à tout moment par les auteurs de contenu. Cela limite également la réutilisation de la bibliothèque et empêche l’AEM Éditeur de modèles d’être utilisé car sa structure se trouve à un autre emplacement que le contenu.
+Le développeur doit éviter d’utiliser des chemins statiques qui font référence à la structure de contenu, car les chemins peuvent être modifiés à tout moment par les auteurs de contenu. Cela limite également la réutilisation de la bibliothèque et empêche l’utilisation de l’éditeur de modèles d’AEM, car sa structure se trouve à un autre emplacement que le contenu.
 
 Les SPA doivent être créées avec des composants hautement portables et réutilisables.
 
@@ -128,7 +127,7 @@ Respectez les étapes suivantes pour préparer l’utilisation de votre SPA exis
 
 ## Instructions destinées aux développeurs front-end {#instructions-for-front-end-developers}
 
-La principale tâche de la mise en oeuvre d’un développeur frontal pour créer un SPA pour AEM consiste à convenir des composants et de leurs modèles JSON.
+La principale tâche de l’activation d’un développeur front-end pour créer un SPA pour AEM consiste à convenir des composants et de leurs modèles JSON.
 
 Vous trouverez ci-dessous un aperçu des étapes que doit suivre un développeur front-end lors du développement d’une SPA pour AEM.
 
@@ -144,7 +143,7 @@ Vous trouverez ci-dessous un aperçu des étapes que doit suivre un développeur
 
 1. **Mettre en œuvre la méthode `render()` du composant**
 
-   Le développeur frontal implémente la méthode `render()` comme il le voit et peut utiliser les champs de la propriété `cqModel`. Cela permet de générer le DOM et les fragments HTML qui seront insérés dans la page. Il s’agit de la méthode standard de création d’une application dans React.
+   Le développeur front-end met en oeuvre la méthode `render()` à sa convenance et peut utiliser les champs de la propriété `cqModel`. Cela permet de générer le DOM et les fragments HTML qui seront insérés dans la page. Il s’agit de la méthode standard de création d’une application dans React.
 
 1. **Faire correspondre le composant au type de ressource AEM via`MapTo()`**
 
@@ -172,7 +171,7 @@ Vous trouverez ci-dessous un aperçu des étapes que doit suivre un développeur
 
 ## Indépendance par rapport à AEM {#aem-agnostic}
 
-Ces blocs de code illustrent comment vos composants Réagir et Angular n&#39;ont besoin de rien qui soit spécifique à l&#39;Adobe ou à l&#39;AEM.
+Ces blocs de code illustrent la manière dont vos composants React et Angular n’ont besoin de rien qui soit spécifique à l’Adobe ou à l’AEM.
 
 * Tout ce qui se trouve à l’intérieur du composant JavaScript est indépendant d’AEM.
 * Toutefois, ce qui est spécifique à AEM est que le composant JS doit être mappé à un composant AEM avec l’assistant MapTo.
@@ -186,8 +185,8 @@ L’assistant `MapTo` est la « colle » qui permet de faire correspondre les 
 
 Pour plus d’informations sur l’utilisation de `MapTo` et la création de SPA pour AEM en général, consultez le Guide de prise en main du framework choisi.
 
-* [Prise en main des SPA dans AEM - Réagir](/help/sites-developing/spa-getting-started-react.md)
-* [Prise en main des SPA en AEM - Angular](/help/sites-developing/spa-getting-started-angular.md)
+* [Prise en main de SPA dans AEM - React](/help/sites-developing/spa-getting-started-react.md)
+* [Prise en main de SPA dans AEM - Angular](/help/sites-developing/spa-getting-started-angular.md)
 
 ## Architecture d’AEM et SPA {#aem-architecture-and-spas}
 
@@ -231,10 +230,10 @@ L’architecture générale d’AEM, y compris les environnements de développem
 
 ## Étapes suivantes {#next-steps}
 
-Pour une vue d&#39;ensemble de la structure d&#39;un SPA simple en AEM et de son fonctionnement, consultez le guide de prise en main pour [Réagir](/help/sites-developing/spa-getting-started-react.md) et [Angular](/help/sites-developing/spa-getting-started-angular.md).
+Pour un aperçu de la structure d’un SPA simple dans AEM et de son fonctionnement, consultez le guide de prise en main pour [React](/help/sites-developing/spa-getting-started-react.md) et [Angular](/help/sites-developing/spa-getting-started-angular.md).
 
-Pour obtenir un guide détaillé sur la création de votre propre SPA, consultez le [Guide de prise en main de l’AEM Éditeur de la SPA - Événements WKND ](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
+Pour obtenir un guide détaillé sur la création de votre propre SPA, reportez-vous à la section [Prise en main d’AEM Éditeur - WKND Events Tutoriel](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 
-Pour plus d&#39;informations sur le mappage modèle dynamique/composant et comment il fonctionne dans SPA dans AEM, consultez l&#39;article [Modèle dynamique/mappage de composants pour le ](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Pour plus d’informations sur le mappage du modèle dynamique sur le composant et son fonctionnement dans SPA dans AEM, consultez l’article [Mappage du modèle dynamique sur le composant pour la ](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Si vous souhaitez mettre en oeuvre des SPA dans AEM pour un cadre autre que Réagir ou Angular ou tout simplement plonger dans le fonctionnement du SDK SPA pour les , reportez-vous à l&#39;article [Plan directeur du ](/help/sites-developing/spa-blueprint.md).
+Si vous souhaitez mettre en oeuvre SPA dans AEM pour un framework autre que React ou Angular ou souhaitez simplement découvrir en détail le fonctionnement du kit SDK de l’, reportez-vous à l’article [Plan directeur de ](/help/sites-developing/spa-blueprint.md) .
