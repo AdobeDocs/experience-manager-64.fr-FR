@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
-translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+exl-id: 8b83e8d2-09ad-4010-a69a-2af1907a1ca6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 92%
 
 ---
-
 
 # Composants{#components}
 
@@ -30,7 +29,7 @@ Les composants sont disponibles lors de la [modification d’une page](/help/sit
 >
 >En fonction de votre instance, vous disposez peut-être de composants personnalisés développés explicitement pour vos besoins. Ces composants peuvent même avoir le même nom que certains composants traités ici.
 
-## Utilisation générale    {#general-usage}
+## Utilisation générale   {#general-usage}
 
 Les composants sont disponibles dans l’onglet **Composants** du panneau latéral de l’éditeur de page lors de la [modification d’une page](/help/sites-authoring/editing-content.md).
 
@@ -60,9 +59,9 @@ Les pages suivantes fournissent des liens vers des informations supplémentaires
 
 * [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) - Les composants principaux offrent une fonctionnalité de création souple et complète, qui fournit des types de contenu essentiels à la création de pages.
 
-* [Communautés](/help/communities/author-communities.md) - Ces composants fournissent des fonctionnalités interactives pour un site web, tel que des forums et des commentaires. La plupart de ces composants sont inclus lors de la création d&#39;un [site communautaire](/help/communities/overview.md).
+* [Communautés](/help/communities/author-communities.md) - Ces composants fournissent des fonctionnalités interactives pour un site web, tel que des forums et des commentaires. La plupart de ces composants sont inclus lors de la création d’un [site communautaire](/help/communities/overview.md).
 
-* [eCommerce](/help/sites-administering/ecommerce.md)  - La fonctionnalité eCommerce de l&#39;AEM comprend également une gamme de composants. L&#39;utilisation réelle peut dépendre du moteur de commerce utilisé.
+* [eCommerce](/help/sites-administering/ecommerce.md)  : la fonctionnalité eCommerce d’AEM comprend également divers composants. L’utilisation réelle peut dépendre du moteur de commerce utilisé.
 
 ### Configuration des composants {#configuring-components}
 
@@ -70,4 +69,3 @@ Outre les composants auxquels les auteurs peuvent avoir accès dans une installa
 
 * Si votre page est basée sur un modèle modifiable recommandé, vous pouvez [modifier le modèle](/help/sites-authoring/templates.md) pour activer/désactiver ces composants et modifier les paramètres d’éléments spécifiques.
 * Si votre page est basée sur un modèle statique, vous pouvez utiliser le [mode de conception](/help/sites-authoring/default-components-designmode.md#enable-disable-components) pour activer/désactiver ces composants et modifier les paramètres d’éléments spécifiques.
-
