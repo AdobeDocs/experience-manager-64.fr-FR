@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 0e0a9b6b-fd2f-4cec-b233-500c940ee4d5
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: d8f60be3-474a-4dd1-aaa5-7b6a97e1a9bd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 100%
 
 ---
 
-
-# Ajout d’une action personnalisée sur des éléments de liste de formulaire  {#adding-custom-action-on-form-lister-items}
+# Ajout d’une action personnalisée sur des éléments de liste de formulaire {#adding-custom-action-on-form-lister-items}
 
 Dans AEM Forms, vous pouvez créer une page de portail qui répertorie les formulaires disponibles. Par défaut, vous pouvez rechercher des formulaires et les répertorier sur une page de portail. Vous pouvez ouvrir des formulaires en vue de les compléter et envoyer vos informations. Seules les actions de rendu sont disponibles, prêtes à l’emploi, pour les formulaires répertoriés sur une page de portail. Pour plus d’informations sur les actions disponibles sur une page de portail, reportez-vous à la section [Création d’une page de portail de formulaires](/help/forms/using/creating-form-portal-page.md). 
 
@@ -51,4 +50,3 @@ Vous pouvez ajouter des actions semblables dans votre modèle personnalisé. Pou
 Une fois les modifications apportées au modèle, la page d’exemple du portail contient un bouton permettant d’envoyer le lien du formulaire par courrier électronique, comme illustré ci-dessous.
 
 ![email](assets/email.png)
-
