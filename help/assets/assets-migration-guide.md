@@ -1,29 +1,28 @@
 ---
-title: Migration des ressources vers les ressources Adobe Experience Manager en bloc
-description: Découvrez comment importer des fichiers dans AEM, appliquer des métadonnées, générer des rendus et les activer pour publier des instances.
+title: Migration des ressources vers Adobe Experience Manager Assets en bloc
+description: Comment importer des ressources dans AEM, appliquer des métadonnées, générer des rendus et les activer pour publier des instances.
 contentOwner: AG
-feature: Migration,Renditions,Asset Management
+feature: Migration,Rendus,Gestion des ressources
 role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1795'
 ht-degree: 67%
 
 ---
 
-
 # Guide de migration des ressources {#assets-migration-guide}
 
-Lors de la migration des ressources dans AEM, il existe plusieurs étapes à prendre en compte. L’extraction de fichiers et de métadonnées hors de leur domicile actuel n’entre pas dans le cadre de ce document, car il varie considérablement d’une mise en oeuvre à l’autre. Ce document décrit plutôt comment importer ces ressources dans AEM, appliquer leurs métadonnées, générer des rendus et activer ou publier les ressources.
+Lors de la migration des ressources dans AEM, il existe plusieurs étapes à prendre en compte. L’extraction de ressources et de métadonnées en dehors de leur page d’accueil actuelle ne fait pas partie du cadre de ce document, car il varie considérablement d’une mise en oeuvre à l’autre. Au lieu de cela, ce document décrit comment importer ces ressources dans AEM, appliquer leurs métadonnées, générer des rendus et activer ou publier les ressources.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
-Avant d&#39;exécuter l&#39;une des étapes décrites ci-dessous, passez en revue et implémentez les instructions dans [Conseils d&#39;optimisation des performances des ressources](performance-tuning-guidelines.md). De nombreuses étapes, telles que la configuration du nombre maximal de tâches simultanées, améliorent la stabilité et les performances du serveur sous charge. D’autres étapes, telles que la configuration du stockage de données de fichiers, sont difficiles à exécuter une fois que le système a été chargé avec des ressources.
+Avant d’exécuter l’une des étapes décrites ci-dessous, passez en revue et appliquez les instructions dans [Conseils d’optimisation des performances des ressources](performance-tuning-guidelines.md). De nombreuses étapes, telles que la configuration de tâches simultanées maximales, améliorent la stabilité et les performances du serveur en charge. D’autres étapes, telles que la configuration de l’entrepôt de données basé sur les fichiers, sont difficiles à exécuter une fois le système chargé avec des ressources.
 
 >[!NOTE]
 >
->Les outils de migration d’actifs suivants ne font pas partie de Adobe Experience Manager. Le service à la clientèle Adobe ne prend pas en charge ces outils.
+>Les outils de migration de ressources suivants ne font pas partie d’Adobe Experience Manager. L’assistance clientèle d’Adobe ne prend pas en charge ces outils.
 >
 >* Tools Tag Maker d’ACS AEM
 >* Tools CSV Asset Importer d’ACS AEM
@@ -50,15 +49,15 @@ La migration des ressources vers AEM se déroule en plusieurs étapes et doit ê
 
 ### Désactivez les workflows {#disable-workflows}
 
-Avant de début d’une migration, désactivez les lanceurs pour le flux de travaux `DAM Update Asset`. Il est préférable d’assimiler tous les actifs dans le système, puis d’exécuter les workflows par lots. Si vous êtes déjà en direct pendant la migration, vous pouvez planifier l’exécution de ces activités pendant les heures creuses.
+Avant de démarrer une migration, désactivez les lanceurs pour le workflow `DAM Update Asset`. Il est préférable d’ingérer toutes les ressources dans le système, puis d’exécuter les workflows par lots. Si vous êtes déjà en ligne pendant la migration, vous pouvez planifier l’exécution de ces activités en dehors des heures de bureau.
 
 ### Chargement des balises {#load-tags}
 
-Vous avez peut-être déjà mis en place une taxonomie de balises que vous appliquez à vos images. Des outils tels que l’importateur de ressources CSV et la fonctionnalité de profils de métadonnées peuvent aider à automatiser l’application de balises aux ressources. Auparavant, ajoutez les balises en Experience Manager. La fonctionnalité [Tools Tag Maker d’ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permet de renseigner les balises à l’aide d’une feuille de calcul Microsoft Excel chargée dans le système.
+Vous avez peut-être déjà mis en place une taxonomie de balises que vous appliquez à vos images. Des outils tels que l’importateur de ressources CSV et la fonctionnalité de profils de métadonnées peuvent aider à automatiser l’application de balises aux ressources. Avant cela, ajoutez les balises dans Experience Manager. La fonctionnalité [Tools Tag Maker d’ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permet de renseigner les balises à l’aide d’une feuille de calcul Microsoft Excel chargée dans le système.
 
 ### Ingestion des ressources {#ingest-assets}
 
-Les performances et la stabilité sont des préoccupations importantes lors de l’intégration des ressources dans le système. Lorsque vous chargez un grand nombre de données dans le Experience Manager, assurez-vous que le système fonctionne correctement. Cela a réduit le temps nécessaire à l’ajout des données et permet d’éviter la surcharge du système. Cela permet d&#39;éviter les blocages du système, en particulier dans les systèmes déjà en production.
+Les performances et la stabilité sont des préoccupations importantes lors de l’intégration des ressources dans le système. Lors du chargement de nombreuses données dans Experience Manager, assurez-vous que le système fonctionne correctement. Cela a réduit le temps nécessaire à l’ajout des données et permet d’éviter de surcharger le système. Cela permet d’éviter les blocages du système, en particulier dans les systèmes déjà en production.
 
 Il existe deux approches pour charger les ressources dans le système : une approche basée sur le push utilisant le protocole HTTP ou une approche basée sur l’extraction utilisant les API JCR.
 
@@ -73,24 +72,24 @@ L’utilisation de l’approche Push à l’aide du protocole HTTPS présente d
 
 L’autre approche de l’intégration des ressources consiste à extraire les ressources du système de fichiers local. Toutefois, si vous ne parvenez pas à obtenir un lecteur externe ou un partage réseau monté sur le serveur pour effectuer une approche par extraction, la publication des ressources en utilisant HTTP est la meilleure option.
 
-#### Extraire du système de fichiers local {#pull-from-the-local-file-system}
+#### Extraction à partir du système de fichiers local {#pull-from-the-local-file-system}
 
-L&#39;[outil d&#39;AEM ACS CSV Asset Importer](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrait les fichiers du système de fichiers et les métadonnées des fichiers d&#39;un fichier CSV pour l&#39;importation de fichiers. L’API AEM Asset Manager est utilisée pour importer les ressources dans le système et appliquer les propriétés des métadonnées configurées. Idéalement, les ressources sont montées sur le serveur via un montage de fichiers réseau ou via un lecteur externe.
+[L’outil ACS AEM Tools CSV Asset Importer](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrait les ressources du système de fichiers et les métadonnées des ressources d’un fichier CSV pour l’importation des ressources. L’API AEM Asset Manager est utilisée pour importer les ressources dans le système et appliquer les propriétés des métadonnées configurées. Idéalement, les ressources sont montées sur le serveur via un montage de fichiers réseau ou via un lecteur externe.
 
-Lorsque les ressources ne sont pas transmises sur un réseau, les performances globales s’améliorent considérablement. Cette méthode est généralement la méthode la plus efficace pour charger des actifs dans le référentiel. En outre, vous pouvez importer tous les fichiers et métadonnées en une seule étape, car l’outil prend en charge l’assimilation des métadonnées. Aucune autre étape n’est nécessaire pour appliquer les métadonnées, par exemple à l’aide d’un outil distinct.
+Lorsque les ressources ne sont pas transmises sur un réseau, les performances globales s’améliorent considérablement. Cette méthode est généralement la méthode la plus efficace pour charger des ressources dans le référentiel. En outre, vous pouvez importer toutes les ressources et métadonnées en une seule étape, car l’outil prend en charge l’ingestion des métadonnées. Aucune autre étape n’est nécessaire pour appliquer les métadonnées, par exemple à l’aide d’un outil distinct.
 
 ### Traitement des rendus {#process-renditions}
 
-Après avoir chargé les ressources dans le système, vous devez les traiter via le workflow Ressources de mise à jour de gestion des actifs numériques, afin d’extraire les métadonnées et de générer les rendus. Avant d’effectuer cette étape, vous devez dupliquer et modifier le workflow Ressources de mise à jour de gestion des actifs numériques pour l’adapter à vos besoins. Certaines étapes du processus par défaut peuvent ne pas être nécessaires pour vous, telles que la génération de PTIFF Dynamic Media Classic ou l’intégration de serveur d’InDesigns.
+Après avoir chargé les ressources dans le système, vous devez les traiter via le workflow Ressources de mise à jour de gestion des actifs numériques, afin d’extraire les métadonnées et de générer les rendus. Avant d’effectuer cette étape, vous devez dupliquer et modifier le workflow Ressources de mise à jour de gestion des actifs numériques pour l’adapter à vos besoins. Certaines étapes du workflow par défaut peuvent ne pas être nécessaires, comme la génération PTIFF Dynamic Media Classic ou l’intégration du serveur d’InDesign.
 
-Une fois que vous avez configuré le processus en fonction de vos besoins, vous disposez de deux options pour l’exécuter :
+Après avoir configuré le workflow en fonction de vos besoins, vous disposez de deux options pour l’exécuter :
 
 1. L’approche la plus simple consiste à utiliser l’outil [Bulk Workflow Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Cet outil permet d’exécuter une requête et de traiter les résultats de la requête via un workflow. Il existe également des options permettant de définir la taille des lots.
 1. Vous pouvez utiliser l’outil [Fast Action Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) en association avec [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Bien que cette approche soit beaucoup plus impliquée, elle vous permet de supprimer la surcharge du moteur de processus AEM, tout en optimisant l’utilisation des ressources du serveur. De plus, Fast Action Manager améliore les performances en surveillant de manière dynamique les ressources du serveur et en réduisant la charge placée sur le système. Des exemples de scripts ont été fournis sur la page de fonctionnalités d’ACS Commons.
 
 ### Activation des ressources {#activate-assets}
 
-Pour les déploiements disposant d’un niveau de publication, vous devez activer les ressources dans la ferme de serveurs de publication. Bien qu’Adobe recommande d’exécuter plusieurs instances de publication, il est plus efficace de répliquer toutes les ressources sur une seule instance de publication, puis de cloner cette instance. Lorsque vous activez un grand nombre de ressources, après le déclenchement d’une activation d’arborescence, vous devrez peut-être intervenir. Voici pourquoi : Lors du déclenchement d’activations, des éléments sont ajoutés aux tâches/files d&#39;événements Sling. Une fois que la taille de cette file d’attente commence à dépasser environ 40 000 éléments, le traitement ralentit considérablement. Lorsque la taille de cette file d’attente dépasse 100 000 éléments, la stabilité du système commence à souffrir.
+Pour les déploiements disposant d’un niveau de publication, vous devez activer les ressources dans la ferme de serveurs de publication. Bien qu’Adobe recommande d’exécuter plusieurs instances de publication, il est plus efficace de répliquer toutes les ressources sur une seule instance de publication, puis de cloner cette instance. Lorsque vous activez un grand nombre de ressources, après le déclenchement d’une activation d’arborescence, vous devrez peut-être intervenir. Voici pourquoi : Lors du déclenchement des activations, des éléments sont ajoutés à la file d’attente des tâches/événements Sling. Une fois que la taille de cette file d’attente commence à dépasser environ 40 000 éléments, le traitement ralentit considérablement. Lorsque la taille de cette file d’attente dépasse 100 000 éléments, la stabilité du système commence à souffrir.
 
 Pour contourner ce problème, vous pouvez utiliser l’outil [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) pour gérer la réplication des ressources. Il fonctionne sans utiliser les files d’attente Sling, réduisant les surcharges, tout en régulant la charge de travail pour éviter que le serveur ne soit surchargé. Un exemple d’utilisation de cet outil pour gérer la réplication est présenté sur la page de documentation de FAM.
 
@@ -108,7 +107,7 @@ Une fois les ressources activées, vous pouvez cloner votre instance de publicat
 
 1. Sauvegardez l’instance source et la banque de données.
 1. Restaurez la sauvegarde de l’instance et de la banque de données à l’emplacement cible. Les étapes suivantes se rapportent toutes à cette nouvelle instance.
-1. Exécutez une recherche de système de fichiers sous `crx-quickstart/launchpad/felix` pour `sling.id`. Supprimez ce fichier.
+1. Recherchez `crx-quickstart/launchpad/felix` dans `sling.id` le système de fichiers. Supprimez ce fichier.
 1. Sous le chemin d’accès racine du magasin de données, recherchez et supprimez les fichiers `repository-XXX`.
 1. Modifiez `crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` et `crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config` pour qu’ils pointent sur l’emplacement du magasin de données sur le nouvel environnement.
 1. Démarrez l’environnement.
@@ -118,23 +117,23 @@ Une fois les ressources activées, vous pouvez cloner votre instance de publicat
 
 Une fois la migration terminée, les lanceurs des workflows Ressources de mise à jour de gestion des actifs numériques doivent être réactivés pour prendre en charge la génération des rendus et l’extraction des métadonnées pour une utilisation quotidienne continue du système.
 
-## Migration des ressources entre les déploiements AEM {#migrate-between-aem-instances}
+## Migration des ressources entre les déploiements d’AEM {#migrate-between-aem-instances}
 
 Bien que ce ne soit pas aussi courant, vous devez parfois migrer de grandes quantités de données d’une instance AEM à une autre, par exemple, lorsque vous effectuez une mise à niveau d’AEM, que vous mettez à niveau votre matériel ou que vous migrez vers un nouveau centre de données, comme avec une migration AMS.
 
 Dans ce cas, les ressources sont déjà renseignées avec les métadonnées et les rendus déjà générés. Il ne vous reste plus qu’à vous concentrer sur le déplacement des ressources d’une instance à une autre. Lors de la migration entre instances AEM, procédez comme suit :
 
-1. Désactiver les workflows : Puisque vous migrez des rendus avec nos ressources, vous souhaitez désactiver les lanceurs de processus pour DAM Update Asset.
+1. Désactiver les workflows : Puisque vous migrez des rendus avec nos ressources, vous souhaitez désactiver les lanceurs de workflow pour les ressources de mise à jour de gestion des actifs numériques.
 
-1. Migrer les balises : Les balises étant déjà chargées dans l’instance d’AEM source, vous pouvez les créer dans un package de contenu et installer le package sur l’instance d’cible.
+1. Migration des balises : Comme des balises sont déjà chargées dans l’instance d’AEM source, vous pouvez les créer dans un module de contenu et installer le module sur l’instance cible.
 
-1. Migration des ressources : Il existe deux outils recommandés pour déplacer des ressources d’une instance AEM à une autre :
+1. Migration des ressources : Deux outils sont recommandés pour déplacer des ressources d’une instance AEM vers une autre :
 
-   * **Vault Remote Copy**, ou  `vlt rcp`, vous permet d&#39;utiliser vlt sur un réseau. Vous pouvez indiquer des répertoires source et de destination pour que vlt télécharge toutes les données du référentiel d’une instance et les charge dans l’autre. Vlt rcp est documenté à l’adresse [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
+   * **Vault Remote Copy**, ou  `vlt rcp`, vous permet d’utiliser vlt sur un réseau. Vous pouvez indiquer des répertoires source et de destination pour que vlt télécharge toutes les données du référentiel d’une instance et les charge dans l’autre. Vlt rcp est documenté à l’adresse [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
    * **Grabbit** est un outil de synchronisation de contenu Open Source développé par Time Warner Cable dans le cadre de la mise en œuvre d’AEM. Comme il utilise des flux de données continus, en comparaison avec vlt rcp, sa latence est inférieure et il annonce une vitesse de deux à dix fois plus rapide que vlt rcp. Grabbit prend également en charge la synchronisation du contenu delta uniquement, ce qui lui permet de synchroniser les modifications après l’achèvement d’une passe de migration initiale.
 
-1. Activer les ressources : Suivez les instructions pour [activer les ressources](#activate-assets) documentées pour la migration initiale vers AEM.
+1. Activation des ressources : Suivez les instructions de [activation des ressources](#activate-assets) documentées pour la migration initiale vers AEM.
 
-1. Cloner la publication : Comme pour une nouvelle migration, le chargement d’une instance de publication unique et le clonage sont plus efficaces que l’activation du contenu sur les deux noeuds. Voir [Clonage de la publication](#clone-publish).
+1. Cloner la publication : Comme pour une nouvelle migration, le chargement d’une instance de publication unique et son clonage sont plus efficaces que l’activation du contenu sur les deux noeuds. Voir [Clonage de la publication](#clone-publish).
 
-1. Activation des workflows : Une fois la migration terminée, réactivez les lanceurs pour les workflows de mise à jour des actifs DAM afin de prendre en charge la génération de rendus et l’extraction des métadonnées pour une utilisation courante du système.
+1. Activation des workflows : Une fois la migration terminée, réactivez les lanceurs pour les workflows Ressources de mise à jour de gestion des actifs numériques afin de prendre en charge la génération de rendus et l’extraction de métadonnées pour une utilisation quotidienne continue du système.
