@@ -9,34 +9,33 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: 7de7b2f9-770e-4af3-8a31-c7b4de64fd43
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 8da27ef5-bb61-4246-8a13-96a60188ebbb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 70%
+ht-degree: 80%
 
 ---
 
-
 # Outil AEM Repo{#aem-repo-tool}
 
-L’outil AEM Repo est une solution simple pour transférer du contenu JCR entre votre système de fichiers local et le serveur AEM via une ligne de commande comparable à FTP. L&#39;outil AEM Repo est semblable à l&#39;outil [Jackrabbit FileVault](/help/sites-developing/ht-vlttool.md), mais il est plus rapide, avec des dépendances minimales et est un script bash simple.
+L’outil AEM Repo est une solution simple pour transférer du contenu JCR entre votre système de fichiers local et le serveur AEM via une ligne de commande comparable à FTP. L’outil Repo d’AEM est similaire à l’outil [Jackrabbit FileVault](/help/sites-developing/ht-vlttool.md), mais il est plus rapide, avec des dépendances minimales et un script bash simple.
 
 Cet outil simplifie les transferts de fichiers qu’effectuent le développeur et peut également être intégré à IntelliJ et Eclipse pour optimiser l’activité de développement.
 
 ## Présentation {#overview}
 
-Pour un chemin d&#39;accès donné dans une structure de fichier `jcr_root` sur le système de fichiers, AEM Repo Tool crée un package avec un filtre unique pour l&#39;ensemble de la sous-arborescence et le transmet au serveur (semblable à FTP `put`), le récupère du serveur ( `get`) ou compare les différences ( `status` et `diff`).
+Pour un chemin donné à l’intérieur d’une structure de fichier `jcr_root` sur le système de fichiers, AEM Repo Tool crée un package avec un seul filtre pour la sous-arborescence entière et le transmet au serveur (similaire au FTP `put`), le récupère sur le serveur ( `get`) ou compare les différences ( `status` et `diff`).
 
-L&#39;outil ne prend pas en charge plusieurs chemins de filtre ou l&#39;élément `filter.xml` de FileVault.
+Cet outil ne prend pas en charge les chemins de filtre multiples ou `filter.xml` de FileVault.
 
 >[!CAUTION]
 >
 >Veuillez noter que l’outil Repo AEM écrase toujours le fichier ou le répertoire spécifié dans son intégralité.
 
-## Téléchargement et documentation  {#download-and-documentation}
+## Téléchargement et documentation {#download-and-documentation}
 
-L&#39;[AEM Repo Tool est disponible sur GitHub via ce lien](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) ainsi que des instructions détaillées d&#39;installation et d&#39;utilisation.
+L’outil [AEM Repo Tool est disponible sur GitHub via ce lien](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) et s’accompagne d’instructions d’installation et d’utilisation détaillées.
 
 Si vous souhaitez télécharger la source de l’outil Repo AEM, reportez-vous au projet GitHub ci-dessous.
 
@@ -44,6 +43,5 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Projet d&#39;outils ouverts sur GitHub](https://github.com/Adobe-Marketing-Cloud/tools)
+* [Ouvrir le projet outils sur GitHub](https://github.com/Adobe-Marketing-Cloud/tools)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/tools/archive/master.zip).
-
