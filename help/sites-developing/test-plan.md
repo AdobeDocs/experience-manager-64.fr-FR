@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 3a8302e8-bc61-402c-a9f2-5db3dfa6dd6d
-translation-type: tm+mt
-source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+exl-id: 913e1fee-b071-4152-94c3-dd7b8900e5ed
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 100%
 
 ---
-
 
 # Élaboration d’un plan de tests{#compiling-your-test-plan}
 
