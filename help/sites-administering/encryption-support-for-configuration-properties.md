@@ -9,20 +9,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 077a940d-19de-4d19-ad99-61f465e68205
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 87%
 
 ---
 
-
 # Prise en charge du chiffrement des propriétés de configuration{#encryption-support-for-configuration-properties}
 
 ## Présentation {#overview}
 
-Cette fonction permet à toutes les propriétés de configuration OSGi d’être stockées sous une forme chiffrée et protégée, préférable au texte en clair. Le formulaire de l&#39;interface utilisateur de la console Web est utilisé pour créer du texte chiffré à partir de texte clair à l&#39;aide de la clé principale de chiffrement à l&#39;échelle du système.
+Cette fonction permet à toutes les propriétés de configuration OSGi d’être stockées sous une forme chiffrée et protégée, préférable au texte en clair. Le formulaire de l’interface utilisateur de la console web est utilisé pour créer du texte chiffré à partir de texte en clair à l’aide de la clé principale de chiffrement à l’échelle du système.
 
 La prise en charge du module de configuration OSGi a été ajoutée afin de déchiffrer la propriété avant qu’elle ne soit utilisée par un service.
 
@@ -34,7 +33,7 @@ La prise en charge du module de configuration OSGi a été ajoutée afin de déc
 
 Ces étapes indiquent comment chiffrer le mot de passe SMTP pour le service de messagerie. Vous pouvez effectuer ces étapes pour une propriété OSGI que vous souhaitez chiffrer.
 
-1. Accédez à la console Web AEM à l’adresse *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Accédez à la console web d’AEM à l’adresse *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. Dans le coin supérieur gauche, accédez à **Prise en charge du chiffrement principal**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
