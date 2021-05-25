@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
-translation-type: tm+mt
-source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
+exl-id: 6509c0ce-fc3a-4248-8dc7-db10602c30d6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 93%
 
 ---
 
-
 # Affichage des données d’analyse de page{#seeing-page-analytics-data}
 
 Utilisez les données d’analyse de page pour mesurer l’efficacité du contenu de page.
 
-## Les données d’analyse sont visibles à partir de la console  {#analytics-visible-from-the-console}
+## Les données d’analyse sont visibles à partir de la console {#analytics-visible-from-the-console}
 
 ![aa-10](assets/aa-10.png)
 
@@ -76,7 +75,7 @@ Les membres du groupe d’utilisateurs administrateurs d’analyse peuvent confi
 
 ### Ouverture de Content Insights à partir de la console Sites {#opening-content-insights-from-sites}
 
-Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour en savoir plus sur l&#39;efficacité des pages.
+Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour en savoir plus sur l’efficacité des pages.
 
 1. Dans la console Sites, sélectionnez la page pour laquelle vous souhaitez voir Content Insight.
 1. Sur la barre d’outils, cliquez sur l’icône Analyses et recommandations.
@@ -89,4 +88,4 @@ Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de
 >
 >En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
 >
->Le [module externe ActivityMap fourni par Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) doit maintenant être utilisé.
+>Le [module ActivityMap fourni par Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) doit maintenant être utilisé.
