@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8d2b5294-9763-4348-b927-706ebac90b95
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 94%
 
 ---
-
 
 # Optimisation des formulaires HTML5 {#optimizing-html-forms}
 
@@ -85,4 +84,3 @@ Apache peut communiquer avec JBoss à l’aide du protocole HTTP ou AJP.
    ```
 
 1. Pour accéder au serveur AEM, utilisez https://[Apache_server]:80.
-
