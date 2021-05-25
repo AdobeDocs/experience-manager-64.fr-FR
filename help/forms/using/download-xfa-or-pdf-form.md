@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 68d881c6-7507-4018-b40e-205604221d0c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 85%
+source-wordcount: '340'
+ht-degree: 88%
 
 ---
-
 
 # Téléchargement d’un modèle de formulaire XFA ou PDF {#download-an-xfa-or-a-pdf-form-template}
 
@@ -30,11 +29,11 @@ Dans AEM Forms, l’opération de téléchargement est prise en charge pour les 
 
 AEM Forms prend en charge le téléchargement de ces types de ressource de manière individuelle ou dans un dossier contenant un ou plusieurs formulaires pris en charge.
 
-Outre ces ressources, vous pouvez télécharger le type de fichier `Resource` s’il est présent dans un dossier. L’objectif de cette fonctionnalité est de vous permettre de télécharger la ressource à laquelle fait référence un formulaire XFA, ainsi que le formulaire proprement dit.
+Outre ces ressources, vous pouvez télécharger le type de ressource `Resource` s’il est présent dans un dossier. L’objectif de cette fonctionnalité est de vous permettre de télécharger la ressource à laquelle fait référence un formulaire XFA, ainsi que le formulaire proprement dit.
 
 ## Téléchargement d’un ou de plusieurs formulaires {#download-one-or-more-forms}
 
-1. Connectez-vous à l’interface utilisateur AEM Forms à l’adresse `https://<server>:<port>/aem/forms.html`.
+1. Connectez-vous à l’interface utilisateur d’AEM Forms à l’adresse `https://<server>:<port>/aem/forms.html`.
 
 1. Accédez à l’emplacement de la ressource que vous souhaitez télécharger.
 
@@ -57,4 +56,3 @@ Outre ces ressources, vous pouvez télécharger le type de fichier `Resource` s�
 * Vous pouvez transférer un fichier ZIP vers tout autre emplacement dans le même référentiel ou dans un autre.
 * La hiérarchie des ressources d’un dossier est conservée pendant l’opération de transfert.
 * Toute modification des métadonnées apportée aux ressources téléchargées avant le téléchargement est répercutée lors du transfert. 
-
