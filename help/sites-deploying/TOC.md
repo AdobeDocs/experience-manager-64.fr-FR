@@ -8,7 +8,6 @@ breadcrumb-title: Guide de déploiement
 user-guide-description: En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4, y compris sur le déploiement cloud d’Adobe Managed Services.
 feature: Déploiement
 role: Architect
-translation-type: tm+mt
 source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
 source-wordcount: '357'
@@ -17,13 +16,13 @@ ht-degree: 93%
 ---
 
 
-# AEM 6.4 Déploiement du Guide de l&#39;utilisateur {#deploying}
+# Guide de l’utilisateur pour le déploiement d’AEM 6.4 {#deploying}
 
 + [Guide de l’utilisateur du déploiement](home.md)
 + Présentation de la plateforme AEM {#introduction}
-   + [Présentation de la plateforme AEM](platform.md)
+   + [Introduction à la plateforme AEM](platform.md)
    + [Exigences techniques](technical-requirements.md)
-   + [Éléments de stockage dans AEM 6.4](storage-elements-in-aem-6.md)
+   + [Éléments de stockage dans AEM 6.4](storage-elements-in-aem-6.md)
    + [AEM avec MongoDB](aem-with-mongodb.md)
 + Déploiement d’AEM {#deploying}
    + [Déploiement et maintenance](deploy.md)
@@ -40,7 +39,7 @@ ht-degree: 93%
    + [Indexation du fichier Oak-run.jar – Scénarios d’utilisation](oak-run-indexing-usecases.md)
    + [Dépannage des index Oak](troubleshooting-oak-indexes.md)
    + [Souscription à la collecte de statistiques d’utilisation agrégées](opt-in-aggregated-usage-statistics.md)
-   + [Résolution des incidents](troubleshooting.md)
+   + [Résolution des problèmes](troubleshooting.md)
 + Configuration d’AEM {#configuring}
    + [Concepts de configuration de base](configuring.md)
    + [Journalisation](configure-logging.md)
@@ -50,13 +49,13 @@ ht-degree: 93%
    + [Console web](web-console.md)
    + [Réplication](replication.md)
    + [Réplication à l’aide du SSL mutuel](mssl-replication.md)
-   + [Réplication de dépannage](troubleshoot-rep.md)
+   + [Résolution des problèmes liés à la réplication](troubleshoot-rep.md)
    + [Expiration des objets statiques](expiration-static-objects.md)
    + [Purge de version](version-purging.md)
    + [Contrôle et maintien de votre instance AEM](monitoring-and-maintaining.md)
    + [Tâches de déchargement](offloading.md)
    + [Connexion unique](single-sign-on.md)
-   + [Mappage de ressources](resource-mapping.md)
+   + [Mappage de ressource](resource-mapping.md)
    + [Activation de HTTP via SSL](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/ssl-by-default.html)
    + [Vérifications transversales et contrôles de cohérence](consistency-check.md)
    + [Instructions de performance](performance-guidelines.md)
@@ -64,22 +63,22 @@ ht-degree: 93%
    + [Guide de performances des ressources](assets-performance-sizing.md)
    + [Articles sur la procédure de configuration](ht-deploy.md)
    + [Suppression des sites Geometrixx](removing-the-geometrixx-sites.md)
-   + [Configuration de la console Web](configuring-web-console.md)
+   + [Configuration de la console web](configuring-web-console.md)
 + Mise à niveau vers AEM 6.4 {#upgrading}
    + [Mise à niveau vers AEM 6.4](upgrade.md)
    + [Planification de la mise à niveau](upgrade-planning.md)
    + [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](pattern-detector.md)
-   + [Compatibilité descendante dans AEM 6.4](backward-compatibility.md)
-   + [Processus de mise à niveau](upgrade-procedure.md)
-   + [Utilisation de la réindexation hors connexion pour réduire les temps d’inactivité lors d’une mise à niveau](upgrade-offline-reindexing.md)
-   + [Réalisation d’une mise à niveau statique](in-place-upgrade.md)
+   + [Compatibilité descendante dans AEM 6.4](backward-compatibility.md)
+   + [Procédure de mise à niveau](upgrade-procedure.md)
+   + [Utilisation de la réindexation hors ligne pour réduire les temps d’arrêt pendant une mise à niveau](upgrade-offline-reindexing.md)
+   + [Exécution d’une mise à niveau statique](in-place-upgrade.md)
    + [Migration différée du contenu](lazy-content-migration.md)
    + [Utilisation de l’outil de migration CRX2OAK](using-crx2oak.md)
    + [Tâches de maintenance avant la mise à niveau](pre-upgrade-maintenance-tasks.md)
-   + [Vérifications et dépannage après la mise à niveau](post-upgrade-checks-and-troubleshooting.md)
+   + [Vérifications et dépannage après une mise à niveau ](post-upgrade-checks-and-troubleshooting.md)
    + [Mise à niveau des formulaires de recherche personnalisée](upgrading-custom-search-forms.md)
    + [Mises à niveau possibles](sustainable-upgrades.md)
-   + [Code et personnalisations de la mise à niveau](upgrading-code-and-customizations.md)
+   + [Mise à niveau du code et des personnalisations](upgrading-code-and-customizations.md)
    + [Procédure de mise à niveau pour les installations de serveur d’applications](app-server-upgrade.md)
    + [Liste des lots obsolètes désinstallés après la mise à niveau ](obsolete-bundles.md)
 + Restructuration des référentiels {#restructuring}
@@ -99,7 +98,7 @@ ht-degree: 93%
 + Bonnes pratiques {#practices}
    + [Meilleures pratiques de déploiement](best-practices.md)
    + [Arborescence de la performance](performance-tree.md)
-   + [Meilleures pratiques pour le test de la performance](best-practices-for-performance-testing.md)
+   + [Bonnes pratiques pour les tests de performance](best-practices-for-performance-testing.md)
    + [Bonnes pratiques relatives aux requêtes et à l’indexation](best-practices-for-queries-and-indexing.md)
    + [Recommandations d’interfaces utilisateur aux clients](ui-recommendations.md)
    + [Performance et évolutivité](performance.md)
