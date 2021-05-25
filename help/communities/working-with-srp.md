@@ -1,8 +1,8 @@
 ---
-title: SRP - Enregistrement de contenu communautaire
-seo-title: SRP - Enregistrement de contenu communautaire
-description: Depuis AEM Communities 6.1, le contenu généré par l’utilisateur est stocké dans un seul magasin commun fourni par un fournisseur de ressources d’enregistrement (SRP).
-seo-description: Depuis AEM Communities 6.1, le contenu généré par l’utilisateur est stocké dans un seul magasin commun fourni par un fournisseur de ressources d’enregistrement (SRP).
+title: SRP - Stockage de contenu de la communauté
+seo-title: SRP - Stockage de contenu de la communauté
+description: Depuis AEM Communities 6.1, le contenu généré par l’utilisateur est stocké dans un seul magasin commun fourni par un fournisseur de ressources de stockage (SRP).
+seo-description: Depuis AEM Communities 6.1, le contenu généré par l’utilisateur est stocké dans un seul magasin commun fourni par un fournisseur de ressources de stockage (SRP).
 uuid: 651af1d7-70e8-4b56-8c01-871cb397678e
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,114 +10,113 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e975e026-e815-4445-be3e-b1237ed3f6b2
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 4ff530ae-c676-4259-86f2-a3881843b642
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
 
-
-# SRP - Enregistrement de contenu communautaire {#srp-community-content-storage}
+# SRP - Stockage de contenu de la communauté {#srp-community-content-storage}
 
 ## Présentation {#introduction}
 
-Depuis AEM Communities 6.1, le contenu généré par l’utilisateur est stocké dans un seul magasin commun fourni par un fournisseur de ressources d’enregistrement (SRP). Il existe plusieurs options SRP à partir desquelles choisir, telles que ASRP, MSRP et JSRP.
+Depuis AEM Communities 6.1, le contenu généré par l’utilisateur est stocké dans un seul magasin commun fourni par un fournisseur de ressources de stockage (SRP). Il existe plusieurs options de SRP que vous pouvez sélectionner, telles que ASRP, MSRP et JSRP.
 
-Contrairement aux versions précédentes, il n’existe pas de réplication inverse/avancée de l’UGC entre les instances AEM. Au lieu de cela, le protocole SRP rend l’UGC directement accessible pour créer, lire, mettre à jour et supprimer des opérations CRUD de toutes les instances d’auteur et de publication, à l’exception de JSRP.
+Contrairement aux versions précédentes, il n’existe pas de réplication inverse/transfert du contenu créé par l’utilisateur entre les instances AEM. Au lieu de cela, la SRP rend le contenu créé par l’utilisateur directement accessible pour les opérations CRUD (création, lecture, mise à jour et suppression) de toutes les instances d’auteur et de publication, à l’exception de JSRP.
 
-Vous trouverez ci-dessous les caractéristiques [de chaque option SRP](#characteristics-of-srp-options), qui sont des informations cruciales pour le processus de décision lors du choix du SRP approprié et du [déploiement sous-jacent](topologies.md).
+Vous trouverez ci-dessous les [caractéristiques de chaque option de SRP](#characteristics-of-srp-options), qui sont des informations cruciales pour le processus de décision lors du choix de la SRP appropriée et du [déploiement sous-jacent](topologies.md).
 
-Pour plus d&#39;informations sur l&#39;utilisation de SRP pour UGC, voir [Enregistrement Resource Provider Overview](srp.md).
+Pour plus d’informations sur l’utilisation de la SRP pour le contenu généré par l’utilisateur, voir [Présentation du fournisseur de ressources de stockage](srp.md).
 
 >[!NOTE]
 >
->SRP s&#39;applique uniquement au contenu de la communauté. Elle n’affecte pas l’emplacement de stockage du contenu du site ([Node store](../../help/sites-deploying/data-store-config.md)) et n’affecte pas la gestion sécurisée de l’enregistrement des utilisateurs, des profils d’utilisateurs et des groupes d’utilisateurs entre les instances d’AEM (voir également [Gestion des données utilisateur](#managing-user-data)).
+>La SRP s’applique uniquement au contenu de la communauté. Cela n’a aucune incidence sur l’emplacement de stockage du contenu du site ([node store](../../help/sites-deploying/data-store-config.md)) et n’affecte pas la gestion sécurisée de l’enregistrement des utilisateurs, des profils utilisateur et des groupes d’utilisateurs entre les instances d’AEM (voir aussi [Gestion des données utilisateur](#managing-user-data)).
 
 >[!CAUTION]
 >
->À partir de l&#39;AEM 6.1, [UGC n&#39;est jamais répliqué](#ugc-never-replicated).
+>À compter de la version AEM 6.1, le contenu généré par l’utilisateur n’est jamais répliqué ](#ugc-never-replicated).[
 >
->Lorsque le déploiement n’inclut pas de magasin commun, tel que la topologie [JSRP](topologies.md#jsrp) par défaut, l’UGC n’est visible que sur l’instance de publication ou d’auteur AEM sur laquelle il a été saisi. Ce n’est que si la topologie inclut une grappe de publication que l’UGC sera visible sur toute instance de publication.
+>Lorsque le déploiement n’inclut pas de magasin commun, tel que la topologie [JSRP](topologies.md#jsrp) par défaut, le contenu généré par l’utilisateur n’est visible que sur l’instance de publication ou d’auteur AEM sur laquelle il a été saisi. Ce n’est que si la topologie inclut une grappe de publication que le contenu généré par l’utilisateur sera visible sur n’importe quelle instance de publication.
 
 ## Caractéristiques des options SRP {#characteristics-of-srp-options}
 
-[ASRP - Fournisseur de ressources d&#39;Enregistrement d&#39;Adobe](asrp.md)\
-Avec cette option, l’UGC est conservé à distance dans un service cloud hébergé et géré par Adobe. Il nécessite une licence supplémentaire et travaille avec un gestionnaire de compte pour configurer le compte pour cette licence spécifique.
+[ASRP - Fournisseur de ressources de stockage d’Adobe](asrp.md)\
+Avec cette option, le contenu créé par l’utilisateur est conservé à distance dans un service cloud hébergé et géré par Adobe. Il nécessite une licence supplémentaire et l’utilisation d’un gestionnaire de compte pour configurer le compte pour cette licence spécifique.
 
-* Nécessite un service cloud associé fourni et pris en charge par l’Adobe pour stocker le contenu de la communauté
-* Nécessite le choix d&#39;un centre de données dans une zone géographique spécifique (Etats-Unis, EMEA, APAC)
-* Nécessite l&#39;accès programmatique à l&#39;UGC par le biais de l&#39;API SRP
-* Adapté à la batterie de publication TarMK
-* Approprié lorsqu&#39;il n&#39;y a pas d&#39;intention d&#39;investir dans l&#39;enregistrement local
+* Nécessite un service cloud associé fourni et pris en charge par Adobe pour stocker le contenu de la communauté
+* Nécessite le choix d’un centre de données dans une zone géographique spécifique (États-Unis, EMEA, APAC)
+* Nécessite tout accès programmatique au contenu généré par l’utilisateur via l’API SRP
+* Adaptable à la ferme de publication TarMK
+* Convient lorsqu’il n’y a aucune intention d’investir dans le stockage local
 
 >[!NOTE]
 >
 >Le téléchargement des pièces jointes aux publications (ou commentaires) dans ASRP est limité à 50 Mo.
 
-[MSRP - Fournisseur de ressources d&#39;Enregistrement MongoDB](msrp.md)\
-Avec cette option, l’UGC est conservé directement dans une instance MongoDB locale.
+[MSRP - Fournisseur de ressources de stockage MongoDB](msrp.md)\
+Avec cette option, le contenu généré par l’utilisateur est conservé directement dans une instance MongoDB locale.
 
 * Nécessite une installation locale sous licence de MongoDB pour stocker le contenu de la communauté
-* Nécessite une installation locale d&#39;Apache Solr
-* Nécessite l&#39;accès programmatique à l&#39;UGC par le biais de l&#39;API SRP
-* Adapté à une batterie de publication TarMK existante
+* Nécessite une installation locale d’Apache Solr
+* Nécessite tout accès programmatique au contenu généré par l’utilisateur via l’API SRP
+* Adaptable à une ferme de publication TarMK existante
 * Adapté à un cluster MongoMK ou RdbMK
-* Convient lorsque vous attendez de gros volumes de contenu de la communauté
+* Adaptable lorsque vous attendez de gros volumes de contenu de communauté
 
-[DSRP - Fournisseur de ressources d&#39;Enregistrement de données relationnelles](dsrp.md)\
-Avec cette option, l’UGC est conservé directement dans une instance de base de données MySQL locale.
+[DSRP - Fournisseur de ressources de stockage de la base de données relationnelle](dsrp.md)\
+Avec cette option, le contenu généré par l’utilisateur est conservé directement dans une instance de base de données MySQL locale.
 
 * Nécessite une installation locale de MySQL pour stocker le contenu de la communauté
-* Nécessite une installation locale d&#39;Apache Solr
-* Nécessite l&#39;accès programmatique à l&#39;UGC par le biais de l&#39;API SRP
-* Adapté à une batterie de publication TarMK existante
+* Nécessite une installation locale d’Apache Solr
+* Nécessite tout accès programmatique au contenu généré par l’utilisateur via l’API SRP
+* Adaptable à une ferme de publication TarMK existante
 * Adapté à un cluster MongoMK ou RdbMK
-* Convient lorsque vous attendez de gros volumes de contenu de la communauté
+* Adaptable lorsque vous attendez de gros volumes de contenu de communauté
 
-[JSRP - Fournisseur de ressources d’Enregistrement JCR](jsrp.md)\
-Avec l’option par défaut, il n’existe pas de magasin commun. L’UGC n’est conservé que dans le même référentiel JCR que l’instance AEM dans laquelle il a été entré.
+[JSRP - Fournisseur de ressources de stockage JCR](jsrp.md)\
+Avec l’option par défaut, il n’y a pas de boutique courante. Le contenu généré par l’utilisateur n’est conservé que dans le même référentiel JCR que l’instance AEM dans laquelle il a été saisi.
 
 * Stocke le contenu de la communauté dans le référentiel JCR de l’instance d’auteur ou de publication AEM à laquelle il a été publié.
-* Nécessite l&#39;accès programmatique à l&#39;UGC par le biais de l&#39;API SRP
-* Nécessite une grappe de publication si plusieurs instances de publication sont déployées (il n’existe aucun mécanisme de réplication parmi les instances de publication dans une batterie TarMK)
-* La modération est exécutée uniquement dans l’environnement de publication (il n’existe aucun mécanisme de réplication inverse/transfert entre l’auteur et la publication).
-* Généralement le meilleur pour le développement, les démonstrations et la formation
+* Nécessite tout accès programmatique au contenu généré par l’utilisateur via l’API SRP
+* Nécessite une grappe de publication si plusieurs instances de publication sont déployées (il n’existe pas de mécanisme de réplication entre les instances de publication dans une ferme TarMK).
+* La modération est effectuée uniquement dans l’environnement de publication (il n’existe pas de mécanisme de réplication inverse/transfert entre l’auteur et la publication).
+* Généralement meilleur pour le développement, les démonstrations et la formation
 
-## Configuration de SRP {#configuring-srp}
+## Configuration de la SRP {#configuring-srp}
 
-La spécification de l&#39;option d&#39;enregistrement par défaut, en fonction du déploiement sous-jacent, est effectuée via la [console de configuration de l&#39;Enregistrement](srp-config.md).
+La spécification de l’option de stockage par défaut, en fonction du déploiement sous-jacent, est effectuée via la [console Configuration de stockage](srp-config.md).
 
-Pour plus d&#39;informations sur la configuration de chaque option, voir :
+Pour plus d’informations sur la configuration de chaque option, voir :
 
-* [ASRP - Fournisseur de ressources d&#39;Enregistrement d&#39;Adobe](asrp.md)
-* [MSRP - Fournisseur de ressources d&#39;Enregistrement MongoDB](msrp.md)
-* [DSRP - Fournisseur de ressources d&#39;Enregistrement de données relationnelles](dsrp.md)
-* [JSRP - Fournisseur de ressources d’Enregistrement JCR](jsrp.md)
+* [ASRP - Fournisseur de ressources de stockage d’Adobe](asrp.md)
+* [MSRP - Fournisseur de ressources de stockage MongoDB](msrp.md)
+* [DSRP - Fournisseur de ressources de stockage de la base de données relationnelle](dsrp.md)
+* [JSRP - Fournisseur de ressources de stockage JCR](jsrp.md)
 
-Si aucune option d’enregistrement n’est activement sélectionnée, JSRP est activé par défaut.
+Si aucune option de stockage n’est activement sélectionnée, JSRP est activé par défaut.
 
 ## Informations supplémentaires {#additional-information}
 
-### UGC n&#39;a jamais répliqué {#ugc-never-replicated}
+### UGC jamais répliqué {#ugc-never-replicated}
 
-Dans l’environnement d’auteur, un auteur crée du contenu de page et le répliquera dans l’environnement de publication. Lorsqu’une page comprend une fonction d’AEM Communities interactive, telle que des commentaires, des révisions, un forum, un blog ou une QnA, l’interaction des membres (connectés en visiteurs de site) sur une instance de publication génère l’entrée de contenu généré par l’utilisateur dans l’environnement de publication.
+Dans l’environnement de création, un auteur crée du contenu de page et le réplique dans l’environnement de publication. Lorsqu’une page comprend une fonction AEM Communities interactive (commentaires, révisions, forum, blog ou Q&amp;R, par exemple), l’interaction des membres (connectés aux visiteurs du site) sur une instance de publication génère du contenu généré par l’utilisateur (UGC) entré dans l’environnement de publication.
 
-Auparavant, ce contenu de la communauté était répliqué de manière inversée aux instances d’auteur et répliqué par l’auteur aux instances de publication. Il était problématique de maintenir la cohérence entre les instances AEM avec la réplication inverse et à terme.
+Auparavant, ce contenu de communauté était répliqué par inverse vers les instances d’auteur et répliqué par l’auteur vers les instances de publication. Il était problématique de maintenir la cohérence entre les instances AEM avec la réplication inverse et vers l’avant.
 
-À partir de AEM Communities 6.1, la nécessité de reproduire le CU a été éliminée en utilisant l&#39;enregistrement partagé pour le CU, comme indiqué ci-dessus.
+À partir d’AEM Communities 6.1, le besoin de réplication du contenu créé par l’utilisateur a été éliminé en utilisant le stockage partagé pour le contenu créé par l’utilisateur, comme décrit ci-dessus.
 
-Bien que le contenu du site soit répliqué, l’UGC n’est jamais répliqué.
+Bien que le contenu du site soit répliqué, le contenu généré par l’utilisateur n’est jamais répliqué.
 
 ### Gestion des données utilisateur {#managing-user-data}
 
-Les communautés s’intéressent également aux [*utilisateurs*, *groupes d’utilisateurs* et *profils d’utilisateurs*](users.md). Ces données utilisateur, lorsqu’elles sont créées et mises à jour dans l’environnement de publication, doivent être mises à la disposition d’autres instances de publication lorsque la topologie est une [batterie de publication](../../help/sites-deploying/recommended-deploys.md#tarmk-farm).
+Les [*utilisateurs*, *groupes d’utilisateurs* et *profils d’utilisateurs*](users.md) intéressent également les communautés. Ces données liées à l’utilisateur, lorsqu’elles sont créées et mises à jour dans l’environnement de publication, doivent être mises à la disposition d’autres instances de publication lorsque la topologie est une [ferme de publication](../../help/sites-deploying/recommended-deploys.md#tarmk-farm).
 
-Depuis AEM Communities 6.1, les données relatives aux utilisateurs sont synchronisées à l’aide de la distribution Sling plutôt que de la réplication. Pour plus d&#39;informations, consultez [Synchronisation des utilisateurs](sync.md).
+Depuis AEM Communities 6.1, les données liées à l’utilisateur sont synchronisées à l’aide de la distribution Sling plutôt que de la réplication. Pour plus d’informations, voir [Synchronisation des utilisateurs](sync.md).
 
 ### Mise à niveau vers AEM Communities 6.2 {#upgrading-to-aem-communities}
 
-Lors de la mise à niveau vers AEM Communities 6.3, si des CU préexistants doivent être conservés, des mesures doivent être prises selon que la communauté AEM 5.6.1 ou AEM 6.0 a utilisé l&#39;enregistrement à la demande de l&#39;Adobe ou l&#39;enregistrement local de CU.
+Lors de la mise à niveau vers AEM Communities 6.3, si le contenu créé par l’utilisateur préexistant doit être conservé, des étapes doivent être prises selon que la communauté AEM 5.6.1 ou AEM 6.0 a utilisé le stockage Adobe à la demande ou le stockage on-premise du contenu créé par l’utilisateur.
 
-Pour plus d&#39;informations, consultez [Mise à niveau vers AEM Communities 6.3](upgrade.md).
+Pour plus d’informations, voir [Mise à niveau vers AEM Communities 6.3](upgrade.md).
