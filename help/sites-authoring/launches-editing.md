@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 9f208b13-08eb-4305-b712-379e9b9b041e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 100%
 
 ---
-
 
 # Modification de lancements{#editing-launches}
 
@@ -28,7 +27,7 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
 1. Accédez à [Lancement à partir des références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) pour afficher les actions disponibles.
 1. Sélectionnez **Aller à la page** pour ouvrir la page d’édition.
 
-### Modification de l’objet des pages de lancement en Live Copy    {#editing-launch-pages-subject-to-a-live-copy}
+### Modification de l’objet des pages de lancement en Live Copy   {#editing-launch-pages-subject-to-a-live-copy}
 
 Si votre lancement est basé sur une [Live Copy](/help/sites-administering/msm.md), vous :
 
@@ -60,7 +59,7 @@ Pour suivre les modifications que vous avez apportées, vous pouvez afficher le 
 
 ## Modification des pages source utilisées {#changing-the-source-pages-used}
 
-Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage de pages source pour un lancement : 
+Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage de pages source pour un lancement :
 
 1. Accédez au lancement et sélectionnez-le depuis, au choix :
 
@@ -69,7 +68,7 @@ Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage d
       * Sélectionnez **Modifier**.
    * [Références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) pour afficher les actions disponibles :
 
-      * Sélectionnez **Modifier le lancement**. 
+      * Sélectionnez **Modifier le lancement**.
 
    Les pages source s’affichent.
 
@@ -79,9 +78,9 @@ Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage d
    >
    >Pour ajouter des pages à un lancement, celles-ci doivent se trouver sous une racine de langue commune (c’est-à-dire, sur un seul site).
 
-## Modification d’une configuration de lancement    {#editing-a-launch-configuration}
+## Modification d’une configuration de lancement  {#editing-a-launch-configuration}
 
-Vous pouvez à tout moment modifier les propriétés d’un lancement : 
+Vous pouvez à tout moment modifier les propriétés d’un lancement :
 
 1. Accédez au lancement et sélectionnez-le depuis, au choix :
 
@@ -90,7 +89,7 @@ Vous pouvez à tout moment modifier les propriétés d’un lancement :
       * Sélectionnez **Propriétés**.
    * [Références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) pour afficher les actions disponibles :
 
-      * Sélectionnez **Modifier les propriétés**. 
+      * Sélectionnez **Modifier les propriétés**.
 
    Les détails s’affichent.
 
@@ -98,9 +97,8 @@ Vous pouvez à tout moment modifier les propriétés d’un lancement :
 
    Consultez [Lancements - Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour plus d’informations sur l’objectif et l’interaction des champs **Date de lancement** et **Prêt pour la production**.
 
-## Identification de l’état de lancement d’une page    {#discovering-the-launch-status-of-a-page}
+## Identification du statut de lancement d’une page  {#discovering-the-launch-status-of-a-page}
 
-L’état s’affiche lorsque vous sélectionnez un lancement spécifique dans l’onglet Références (voir [Lancements dans les références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
+Le statut s’affiche lorsque vous sélectionnez un lancement spécifique dans l’onglet Références (voir [Lancements dans les références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
-
