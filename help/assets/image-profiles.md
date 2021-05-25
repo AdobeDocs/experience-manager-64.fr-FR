@@ -1,8 +1,8 @@
 ---
-title: profils d’image Dynamic Media
-seo-title: profils d’image Dynamic Media
-description: Créez des profils d’image qui contiennent des paramètres de masquage flou et de recadrage intelligent ou d’échantillon dynamique, ou les deux, puis appliquez le profil à un dossier de fichiers d’image.
-seo-description: Créez des profils d’image qui contiennent des paramètres de masquage flou et de recadrage intelligent ou d’échantillon dynamique, ou les deux, puis appliquez le profil à un dossier de fichiers d’image.
+title: Profils d’image Dynamic Media
+seo-title: Profils d’image Dynamic Media
+description: Créez des profils d’image qui contiennent des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillon intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’image.
+seo-description: Créez des profils d’image qui contiennent des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillon intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’image.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,9 +10,8 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
-feature: Image Profiles
+feature: Profils d’image
 role: Administrator,Business Practitioner
-translation-type: tm+mt
 source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
 source-wordcount: '2715'
@@ -20,7 +19,7 @@ ht-degree: 92%
 
 ---
 
-# profils d’image Dynamic Media {#image-profiles}
+# Profils d’image Dynamic Media {#image-profiles}
 
 Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en appliquant un profil d’image au dossier.
 
@@ -78,11 +77,11 @@ Vous avez le choix entre deux options de recadrage d’image. Vous avez égaleme
 
 ## Accentuation {#unsharp-mask}
 
-Vous utilisez **Masque d’accentuation** pour affiner l’effet d’un filtre d’accentuation sur l’image finale sous-échantillonnée. Vous pouvez contrôler l’intensité de l’effet, le rayon de l’effet (mesuré en pixels) et un seuil de contraste qui sera ignoré. Cet effet utilise les mêmes options que le filtre &quot;Masque flou&quot; d’Adobe Photoshop.
+Vous utilisez **Masquage flou** pour affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, son rayon (mesuré en pixels) et un seuil de contraste qui sera ignoré. Cet effet utilise les mêmes options que le filtre &quot;Masquage flou&quot; d’Adobe Photoshop.
 
 >[!NOTE]
 >
->Le masque flou est appliqué uniquement aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. Cela signifie que les rendus de la plus grande taille au sein du PTIFF ne sont pas affectés par le masquage flou alors que les rendus de la plus petite taille, tels que les miniatures, sont modifiés (et montreront le masque flou).
+>Le masque flou est appliqué uniquement aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. En d’autres termes, les rendus de plus grande taille dans le fichier PTIFF ne sont pas affectés par le masquage flou, tandis que les rendus de plus petite taille, tels que les miniatures, sont modifiés (et affichent le masque flou).
 
 L’option **Accentuation** propose les options de filtre suivantes :
 
@@ -117,7 +116,7 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image]**.
 1. Appuyez sur **[!UICONTROL Créer]** pour ajouter un nouveau profil d’image.
-1. Saisissez un nom de profil et les valeurs pour un masquage flou, un recadrage et/ou un échantillon.
+1. Saisissez un nom de profil et les valeurs pour une accentuation, un recadrage et un échantillon.
 
    Il est parfois utile d’utiliser un nom de profil spécifique à sa finalité prévue. Par exemple, si vous souhaitez créer un profil qui génère des échantillons uniquement (en d’autres termes, le recadrage intelligent est désactivé, et l’échantillon de couleurs et d’images est activé), vous pouvez utiliser le nom de profil « Échantillons intelligents ».
 
@@ -127,7 +126,7 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**. Le profil nouvellement créé apparaît dans la liste des profils disponibles.
 
-## Modification ou suppression de profils d&#39;image Dynamic Media {#editing-or-deleting-image-profiles}
+## Modification ou suppression de profils d’image Dynamic Media {#editing-or-deleting-image-profiles}
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image]**.
 1. Sélectionnez le profil de l’image que vous souhaitez modifier ou supprimer. Pour le modifier, sélectionnez **[!UICONTROL Modifier le profil de traitement d’image]**. Pour le supprimer, sélectionnez **[!UICONTROL Supprimer le ou les profils de traitement des images]**.
@@ -179,7 +178,7 @@ En plus d’appliquer un profil à un dossier, vous pouvez en appliquer un de fa
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * Accédez à **https://&lt;AEM serveur>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam** et appliquez le profil approprié et appuyez sur **Enregistrer**.
+   * Accédez à **https://&lt;AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam** et appliquez le profil approprié, puis appuyez sur **Enregistrer**.
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
@@ -257,7 +256,7 @@ Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des rec
    * Déplacez la zone de recadrage intelligent. Effectuez l’une des opérations suivantes :
 
       * Si l’image comporte un recadrage intelligent ou un échantillon intelligent uniquement, faites glisser sur celle-ci la zone de recadrage vers un nouvel emplacement.
-      * Si l’image comporte à la fois un recadrage intelligent et un échantillon intelligent, faites glisser sur celle-ci la zone de recadrage intelligent vers un nouvel emplacement. Vous pouvez également appuyer sur l’échantillon dynamique situé sous l’image (les nuances de couleur sont statiques), puis faire glisser la zone de recadrage de l’échantillon dynamique vers un nouvel emplacement.
+      * Si l’image comporte à la fois un recadrage intelligent et un échantillon intelligent, faites glisser sur celle-ci la zone de recadrage intelligent vers un nouvel emplacement. Ou appuyez sur l’échantillon intelligent sous l’image (les échantillons de couleurs sont statiques), puis faites glisser la zone de recadrage d’échantillon intelligent vers un nouvel emplacement.
 
       ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
 
