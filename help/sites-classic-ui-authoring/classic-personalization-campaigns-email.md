@@ -9,21 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 5e97f7bd-d668-423d-9f65-7dcc8fb1943a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 94%
 
 ---
 
-
 # Marketing par messagerie électronique{#e-mail-marketing}
 
 >[!NOTE]
 >
->Adobe ne prévoit pas d&#39;améliorer davantage les courriers électroniques ouverts/rebondis envoyés par le service SMTP AEM.\
->La recommandation est de [tirer parti de l&#39;Adobe Campaign et de son intégration AEM](/help/sites-administering/campaign.md).
+>Adobe ne prévoit pas d&#39;améliorer davantage les emails ouverts/rebonds envoyés par le service SMTP AEM.\
+>La recommandation consiste à [tirer parti d’Adobe Campaign et de son intégration AEM](/help/sites-administering/campaign.md).
 
 Le marketing par messagerie électronique (les newsletters, par exemple) constitue une partie importante de toute campagne de marketing, car il vous sert à pousser du contenu vers vos pistes. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
 
@@ -39,14 +38,14 @@ Ce document décrit les notions fondamentales de la création de newsletters dan
 
 * [Création d’une page d’entrée efficace pour une newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
 * [Gestion des abonnements](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
-* [Publication d’un courrier électronique sur des services de messagerie](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
+* [Publication d’un message électronique sur des services de messagerie](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
 * [Suivi des messages rejetés](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
 
 >[!NOTE]
 >
 >Si vous mettez à jour vos fournisseurs de messagerie, que vous effectuez un test envoi ou que vous envoyez une newsletter, ces opérations échouent si la newsletter n’est pas au préalable publiée sur l’instance de publication ou si l’instance de publication n’est pas disponible. Veillez à publier votre newsletter et à ce que l’instance de publication soit activée.
 
-## Création d’une expérience Newsletter  {#creating-a-newsletter-experience}
+## Création d’une expérience Newsletter {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
@@ -146,7 +145,7 @@ Personnalisation d’une newsletter et simulation de son aperçu :
 
 >[!NOTE]
 >
->Avant d’envoyer des bulletins d’information, vérifiez la configuration OSGi pour Day CQ Link Externalizer (Externalisateur de liens Day CQ) à l’adresse `http://localhost:4502/system/console/configMgr`.
+>Avant d’envoyer des newsletters, vérifiez la configuration OSGi pour Day CQ Link Externalizer à l’adresse `http://localhost:4502/system/console/configMgr`.
 >
 >Par défaut, la valeur du paramètre est `localhost:4502` et l’opération ne peut pas être menée à bien en cas de modification du port d’exécution de l’instance.
 
@@ -229,7 +228,7 @@ Vous pouvez envoyer une newsletter à partir de la newsletter ou à partir de la
 
 >[!NOTE]
 >
->Avant d’envoyer des bulletins d’information, vérifiez la configuration OSGi pour Day CQ Link Externalizer (Externalisateur de liens Day CQ) à l’adresse `http://localhost:4502/system/console/configMgr`.
+>Avant d’envoyer des newsletters, vérifiez la configuration OSGi pour Day CQ Link Externalizer à l’adresse `http://localhost:4502/system/console/configMgr`.
 >
 >Par défaut, la valeur du paramètre est `localhost:4502` et l’opération ne peut pas être menée à bien en cas de modification du port d’exécution de l’instance.
 
@@ -257,7 +256,7 @@ Envoi d’une newsletter à partir d’une campagne :
 
 1. La fin de la configuration est confirmée. Cliquez sur **Envoyer** pour envoyer réellement la newsletter.
 
-   ![mcm_newslettersendverify](assets/mcm_newslettersendconfirm.png)
+   ![mcm_newslettersendconfirm](assets/mcm_newslettersendconfirm.png)
 
    >[!NOTE]
    >
@@ -302,4 +301,3 @@ S’abonner à une newsletter (en utilisant le site Web Geometrixx comme exemple
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
 1. Dans le champ **Sign Up** (S’inscrire) de la Newsletter Geometrixx, saisissez votre adresse électronique, puis cliquez sur **Sign Up**. Vous êtes maintenant abonné à la newsletter.
-
