@@ -9,14 +9,13 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
-translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+exl-id: ead4306a-6337-4dae-8839-14fada0ae0e5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 95%
 
 ---
-
 
 # Exportateur JSON pour Content Services{#json-exporter-for-content-services}
 
@@ -32,9 +31,9 @@ Comme les fragments de contenu utilisent du contenu structuré, vous pouvez four
 
 >[!NOTE]
 >
->La fonctionnalité décrite ici est disponible pour tous les composants principaux depuis la version [1.1.0 des composants principaux](https://docs.adobe.com/content/docs/fr/core-components/v1.html).
+>La fonctionnalité décrite ici est disponible pour tous les composants principaux depuis la [version 1.1.0 des composants principaux](https://docs.adobe.com/content/docs/fr/core-components/v1.html).
 
-## Exportateur JSON avec les composants principaux des fragments de contenu  {#json-exporter-with-content-fragment-core-components}
+## Exportateur JSON avec les composants principaux des fragments de contenu {#json-exporter-with-content-fragment-core-components}
 
 Grâce à l’exportateur JSON AEM, vous pouvez diffuser le contenu des pages AEM au format du modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
 
@@ -105,4 +104,3 @@ Pour plus d’informations, voir :
 * [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md)
 
 * [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
-
