@@ -1,55 +1,54 @@
 ---
 title: Fonction Forum Q&R
 seo-title: Fonction Forum Q&R
-description: Ajouter la fonction de forum QnA à une page
-seo-description: Ajouter la fonction de forum QnA à une page
+description: Ajout de la fonction Forum Q&R à une page
+seo-description: Ajout de la fonction Forum Q&R à une page
 uuid: 006c0bf0-c230-4890-8080-65651f4b4dac
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: bbbe32bb-9d97-461e-822f-a7ddc6c9f9ef
-translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+exl-id: af16f4df-ed8e-40e4-b117-3d612e122947
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 54%
 
 ---
 
-
 # Fonction Forum Q&amp;R {#q-a-forum-feature}
 
 ## Présentation {#introduction}
 
-La fonction de forum QnA (questions et réponses) offre aux membres de la communauté un espace où poser et répondre aux questions :
+La fonction de forum Q&amp;R (questions et réponses) offre aux membres de la communauté un espace où poser leurs questions et y répondre :
 
 * Créer de nouvelles questions
 * Images intégrées (avec glisser-déposer)
-* Vue et réponses aux questions
-* Rechercher une question
-* Aider à modérer le contenu de QnA
+* Afficher et répondre aux questions
+* Recherche d’une question
+* Aider à modérer le contenu Q&amp;R
 * Identifier les meilleures réponses
-* Déplacer les questions QnA d&#39;une page à une autre
+* Déplacer des questions Q&amp;R d’une page vers une autre
 
 Cette section de la documentation décrit :
 
-* Ajouter la fonction de forum QnA à un site AEM
+* Ajout de la fonction Forum Q&amp;R à un site AEM
 * Paramètres de configuration du composant `QnA`
 
 ## Ajout d’un forum Q&amp;R à une page {#adding-a-q-a-forum-to-a-page}
 
-Pour ajouter un composant `QnA` à une page en mode création, utilisez l&#39;explorateur de composants pour localiser `Communities / QnA` et faites-le glisser sur une page sur laquelle le forum QnA doit apparaître.
+Pour ajouter un composant `QnA` à une page en mode création, utilisez l’explorateur de composants pour localiser `Communities / QnA` et faites-le glisser sur une page où le forum Q&amp;R doit apparaître.
 
-Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
+Pour plus d’informations, voir [Principes de base des composants des communautés](basics.md).
 
-Lorsque les [bibliothèques client requises](qna-essentials.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `QnA` apparaîtra :
+Lorsque les [bibliothèques côté client requises](qna-essentials.md#essentials-for-client-side) sont incluses, voici comment le composant `QnA` apparaîtra :
 
 ![chlimage_1-280](assets/chlimage_1-280.png)
 
 ### Configuration de Q&amp;R {#configuring-qna}
 
-Sélectionnez le composant `QnA` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `QnA` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![chlimage_1-281](assets/chlimage_1-281.png) ![chlimage_1-282](assets/chlimage_1-282.png)
 
@@ -69,25 +68,25 @@ Sous l’onglet **[!UICONTROL Paramètres]**, spécifiez les paramètres pour le
 
 * **[!UICONTROL Autoriser les chargements de fichiers]** Si cette option est cochée, des fichiers joints peuvent être ajoutés à une question ou à un commentaire. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Taille]**
-de fichier maximaleRelevant uniquement si 
+* **[!UICONTROL Taille max. de fichier]**
+Relevant uniquement si 
 `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * ****
-Types de fichiers autorisésPertinent uniquement si 
-`Allow File Uploads` est cochée. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+Types de fichiers autorisés Paramètre à définir uniquement si 
+`Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
-* **[!UICONTROL Taille maximale du fichier image jointPertinente uniquement si l’option Autoriser les téléchargements de fichiers est cochée.]**
-Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
-
-* **[!UICONTROL Autoriser]**
-le suivi Si cette case est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être  [](notifications.md) avertis de nouvelles publications. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Max Attach Image File]**
+SizeRelevant uniquement si l’option Autoriser les chargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
 
 * **[!UICONTROL Autoriser l’]**
-épinglage Si cette option est cochée, les sujets du forum peuvent être épinglés en haut de la liste des sujets. Cette option n’est pas cochée par défaut.
+action suivante Si cette option est cochée, la fonction suivante est ajoutée aux publications de forum, ce qui permet aux membres d’être  [](notifications.md) informés des nouvelles publications. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Autoriser]**
-les abonnements au courrielSi cette option est cochée, autorisez les membres à être avertis des nouvelles publications par courriel ([abonnement](subscriptions.md)). `Allow Following` doit être vérifié et [e-mail configuré](email.md). Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser l’]**
+épinglage Si cette option est cochée, les rubriques des forums peuvent être collées en haut de la liste des rubriques. Cette option n’est pas cochée par défaut.
+
+* **[!UICONTROL Autoriser les]**
+abonnements par e-mailSi cette option est cochée, les membres ont la possibilité d’être informés des nouvelles publications par e-mail ([abonnement](subscriptions.md)). `Allow Following` doit être vérifié et [email configuré](email.md). Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser les réponses]** Si cette option est cochée, les réponses aux commentaires sont publiées pour la question. Cette option n’est pas cochée par défaut.
 
@@ -98,21 +97,21 @@ les abonnements au courrielSi cette option est cochée, autorisez les membres à
 * **[!UICONTROL Déplacer la réponse sélectionnée vers le haut]** Si cette option est cochée, la première réponse qui s’affiche est la réponse sélectionnée. Cette option est cochée par défaut.
 
 * **[!UICONTROL Afficher les]**
-badgesSi cette case est cochée, afficher les  [](implementing-scoring.md) badges gagnés et attribués avec l&#39;entrée de blog d&#39;un membre. Cette option n’est pas cochée par défaut.
+badges : si cette option est cochée, les  [](implementing-scoring.md) badges gagnés et attribués sont affichés avec l’entrée de blog d’un membre. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Si l’option Autoriser la]**
-conservation des éléments en vedette est cochée, l’idée peut être identifiée comme contenu [ ](featured.md)présenté. Cette option n’est pas cochée par défaut.
+conservation des en-têtes est cochée, l’idée peut être identifiée en tant que contenu [ ](featured.md)en vedette. Cette option n’est pas cochée par défaut.
 
-#### Onglet Modération utilisateur {#user-moderation-tab}
+#### Onglet Modération d’utilisateur {#user-moderation-tab}
 
-Sous l’onglet **[!UICONTROL Modération utilisateur]**, spécifiez comment les rubriques publiées (questions) et les réponses (contenu généré par l’utilisateur) sont gérées. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
+Sous l’onglet **[!UICONTROL Modération d’utilisateur]** , indiquez comment les sujets publiés (questions) et les réponses (contenu généré par l’utilisateur) sont gérés. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
 
 * **[!UICONTROL Refuser les réponses]** Si cette option est cochée, les membres modérateurs autorisés ont le droit de refuser des réponses et, par conséquent, d’empêcher leur publication sur le forum Q&amp;R. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Fermer/rouvrir les sujets]** Si cette option est cochée, les membres modérateurs autorisés ont le droit de fermer une question (un sujet) pour empêcher la publication d’autres modifications et réponses, puis de le rouvrir. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Déplacer des]**
-rubriquesSi cette option est cochée, autorisez les modérateurs côté publication à déplacer les questions. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Déplacer les]**
+rubriques Si cette option est cochée, les modérateurs côté publication peuvent déplacer les questions. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Marquer les publications]** Si cette option est cochée, les membres ont le droit de marquer les questions ou réponses d’autres membres comme étant inappropriées. Cette option n’est pas cochée par défaut.
 
@@ -128,38 +127,38 @@ rubriquesSi cette option est cochée, autorisez les modérateurs côté publicat
 
 Dans l’onglet **[!UICONTROL Champ de balise]**, les balises qui peuvent être appliquées, si l’option est activée dans l’onglet **[!UICONTROL Paramètres]**, sont limitées selon les espaces de noms sélectionnés.
 
-* **[!UICONTROL Allowed]**
-NamespacesRelevant si 
-`Allow Tagging` est cochée sous  **** Paramètres. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
+* **[!UICONTROL Espaces de]**
+noms autorisés Paramètre à définir si 
+`Allow Tagging` est coché sous l’onglet  **** Paramètres . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (l’espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
 * **[!UICONTROL Limite de suggestions]** Entrez le nombre de balises à afficher comme suggestion destinée au membre qui publie sur le forum. Une valeur de 
 `-1` signifie pas de limites. La valeur par défaut est 0.
 
 #### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous l’onglet **[!UICONTROL Paramètres de tri]**, spécifiez le mode de tri des commentaires publiés lorsqu’ils s’affichent.
+Sous l’onglet **[!UICONTROL Paramètres de tri]**, indiquez comment les commentaires publiés sont triés lorsqu’ils sont affichés.
 
 * **[!UICONTROL Trier]**
-parVérifier toutes les sélections de tri autorisées : 
+par coche toutes les sélections de tri autorisées : 
 `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. La valeur par défaut est `Newest, Oldest, Last Updated`.
 
 * **[!UICONTROL Définissez comme]**
-DefaultPull down pour sélectionner l’une des options de tri cochées pour apparaître comme valeur par défaut. La valeur par défaut est 
+DefaultPull pour sélectionner l’une des options de tri cochées à afficher comme valeur par défaut. La valeur par défaut est 
 `Newest`.
 
-* **[!UICONTROL Sélectionnez les options d’heure pour Analytics]**
-TriPull vers le bas pour sélectionner l’une des options suivantes : 
+* **[!UICONTROL Sélectionnez Options de temps pour Analytics]**
+TriPull afin de sélectionner l’une des options suivantes : 
 `All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
 ### Identification des réponses {#identifying-answers}
 
-Une réponse peut être marquée comme une réponse correcte ou utile à l&#39;aide du bouton `Select Answer`. Une fois qu&#39;une question est marquée comme Réponse, une autre réponse ne peut pas être sélectionnée tant que la première n&#39;a pas été désélectionnée à l&#39;aide du bouton `Unmark Chosen Answer`.
+Une réponse peut être indiquée comme réponse correcte ou utile à l&#39;aide du bouton `Select Answer`. Une fois qu&#39;une question est marquée comme &quot;A répondre&quot;, une autre réponse ne peut pas être sélectionnée tant que la première question n&#39;a pas été désélectionnée à l&#39;aide du bouton `Unmark Chosen Answer`.
 
-Une fois sélectionnée comme réponse viable, elle peut être désélectionnée à l&#39;aide du bouton `Unmark Chosen Answer`.
+Une fois sélectionnée comme réponse viable, elle peut être désélectionnée à l’aide du bouton `Unmark Chosen Answer`.
 
-Une fois qu&#39;une réponse est sélectionnée comme réponse viable, une indication que la question a été `Answered`s&#39;affiche en regard de la rubrique de la question sur la page principale QnA.
+Une fois qu’une réponse est sélectionnée comme réponse viable, une indication que la question a été `Answered`s’affiche en regard du sujet de la question sur la page principale Q&amp;R.
 
 ### Modérateurs et administrateurs {#moderators-and-administrators}
 
@@ -167,14 +166,14 @@ Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’a
 
 Il peut également identifier les réponses.
 
-### Membres  {#members}
+### Membres {#members}
 
 Lorsque le visiteur est connecté, selon la configuration, il peut :
 
-* Publication d’une nouvelle question
-* Modifier ou supprimer les questions qu&#39;ils ont créées
-* Peut aussi signaler les questions ou réponses d&#39;autres personnes
-* Peut identifier les réponses aux questions qu&#39;ils ont rédigées
+* Poser une nouvelle question
+* Modifier ou supprimer les questions qu’ils ont créées
+* Peut également marquer les questions ou réponses d’autres utilisateurs
+* Peut identifier les réponses aux questions qu’ils ont créées
 
 ### Anonyme {#anonymous}
 
