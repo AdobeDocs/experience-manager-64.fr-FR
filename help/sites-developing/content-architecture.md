@@ -1,22 +1,21 @@
 ---
 title: Architecture de contenu
 seo-title: Architecture de contenu
-description: Conseils pour l’architecture de votre contenu (conseil - tout est du contenu)
-seo-description: Conseils pour l’architecture de votre contenu en Adobe Experience Manager (AEM). (conseil - tout est contenu)
+description: 'Conseils pour la conception de votre contenu (conseil : tout est contenu)'
+seo-description: Conseils pour la conception de votre contenu dans Adobe Experience Manager (AEM). (indice - tout est contenu)
 uuid: fef2bf0f-70ec-4621-8479-a62b7e1fbc07
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
-translation-type: tm+mt
-source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+exl-id: 9fff10fb-4b65-459a-a7a7-6ee9c0c26bf5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 83%
 
 ---
-
 
 # Content Architecture{#content-architecture}
 
@@ -24,21 +23,21 @@ ht-degree: 83%
 
 Le modèle de David a été élaboré par David Nuescheler il y a quelques années. Cependant, les principes sont toujours valables aujourd’hui. Les principaux principes du modèle de David sont les suivants :
 
-* Les données arrivent en premier, la structure plus tard. Normalement…
+* Les données viennent en premier, la structure plus tard. Normalement…
 * Prenez le contrôle de la hiérarchie de contenu, ne la laissez pas vous diriger.
 * Les espaces de travail sont pour `clone()`, `merge()` et `update()`.
 * Méfiez-vous des SNS (Same Name Siblings).
 * Les références sont considérées comme dangereuses.
 * Les fichiers sont des fichiers, et rien d’autre.
-* Les papiers d&#39;identité sont mauvais.
+* Les identifiants sont mauvais.
 
-David’s Model se trouve sur le wiki de Jackrabbit à l’adresse [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+Le modèle de David est disponible sur le wiki Jackrabbit à l’adresse [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### Tout est contenu {#everything-is-content}
 
 Vous devez tout stocker dans le référentiel plutôt que dans des sources de données tierces, telles que des bases de données. Cela s’applique aussi bien au contenu généré qu’aux données binaires comme les images, le code, les configurations, etc. Il nous est ainsi possible d’utiliser un seul ensemble d’API pour gérer tout le contenu, ainsi que pour gérer la promotion de ce contenu par le biais de la réplication. Nous disposons également d’une source unique de sauvegarde, de journalisation, etc.
 
-### Utilisez le principe de conception « Le modèle de contenu d’abord »  {#use-the-content-model-first-design-principle}
+### Utilisez le principe de conception « Le modèle de contenu d’abord » {#use-the-content-model-first-design-principle}
 
 Lors de la mise au point d’une fonctionnalité, commencez toujours par concevoir la structure du contenu JCR, puis tâchez de lire et d’écrire votre contenu à l’aide des servlets Sling par défaut. Vous pouvez ainsi vous assurer que votre implémentation fonctionne bien avec des mécanismes de contrôle d’accès standard. Cela vous évite également de générer des servlets de type CRUD inutiles.
 
@@ -52,7 +51,7 @@ Les types de nœud fonctionnent à un niveau inférieur du calque d’infrastruc
 
 ### Respectez les conventions d’affectation de noms dans le JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-Le respect des conventions d’affectation de noms ajoute de l’homogénéité à votre codebase en réduisant le taux d’incidence des défauts et en augmentant la vitesse des développeurs qui travaillent sur le système. Les conventions ci-après sont utilisées par l&#39;Adobe pour développer l&#39;AEM :
+Le respect des conventions d’affectation de noms ajoute de l’homogénéité à votre codebase en réduisant le taux d’incidence des défauts et en augmentant la vitesse des développeurs qui travaillent sur le système. Les conventions suivantes sont utilisées par Adobe dans le développement d’AEM :
 
 * Noms des nœuds
 
@@ -67,4 +66,3 @@ Le respect des conventions d’affectation de noms ajoute de l’homogénéité 
 
    * Tout en minuscules
    * Séparation des mots à l’aide de tirets
-
