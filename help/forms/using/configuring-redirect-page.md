@@ -1,43 +1,41 @@
 ---
-title: Configuration de la page de redirection
-seo-title: Configuration de la page de redirection
+title: Configuration d’une page de redirection
+seo-title: Configuration d’une page de redirection
 description: Après avoir complété un formulaire adaptatif, les utilisateurs peuvent être redirigés vers une page Web que les auteurs de formulaires peuvent configurer lors de la phase de création.
 seo-description: Après avoir complété un formulaire adaptatif, les utilisateurs peuvent être redirigés vers une page Web que les auteurs de formulaires peuvent configurer lors de la phase de création.
 uuid: 5a5f912a-9696-4bc1-af3f-ead78f767e02
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c51817aa-193a-4d4f-bd83-06518ddfb395
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formulaires adaptatifs
+exl-id: bbe10952-d6a7-4adc-bab9-388c1ee8e56a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 72%
+ht-degree: 79%
 
 ---
 
-
-# Configuration de la page de redirection {#configuring-redirect-page}
+# Configuration d’une page de redirection {#configuring-redirect-page}
 
 Pour chaque formulaire, les auteurs peuvent configurer une page vers laquelle les utilisateurs seront redirigés après l’envoi du formulaire.
 
-1. En mode d’édition, sélectionnez un composant, puis cliquez sur ![niveau champ](assets/field-level.png) > **Conteneur de formulaire adaptatif**, puis sur ![cmppr](assets/cmppr.png).
+1. En mode d’édition, sélectionnez un composant, puis cliquez sur ![field-level](assets/field-level.png) > **Conteneur de formulaires adaptatifs**, puis cliquez sur ![cmppr](assets/cmppr.png).
 
-1. Dans la barre latérale, cliquez sur **Envoi**. 
+1. Dans la barre latérale, cliquez sur **Envoi**.
 
 1. Indiquez L’URL de la page de redirection sous Page de remerciement dans la section Envoyer. 
 1. Sous Action Envoyer, vous pouvez éventuellement configurer le paramètre à transmettre à la page de redirection pour l’action Envoyer vers le point de fin REST.
 
-![Redirection de la page ](assets/thank-you-setting-1.png)
-**configurationFigure:** *Configuration de la page de redirection*
+![Configuration de la page de redirection](assets/thank-you-setting-1.png) 
+**Figure :** *Configuration de la page de redirection*
 
 Les auteurs de formulaires peuvent utiliser les paramètres suivants qui sont transmis à la page de remerciement. Pour toutes les actions d’envoi disponibles, les paramètres `status` et `owner` sont transmis. Outre ces deux paramètres, des paramètres supplémentaires sont transmis pour les actions d’envoi suivantes :
 
-* **Action**  Stocker le contenu (obsolète) :  `contentPath`—le chemin d’accès du noeud dans le référentiel où sont stockées les données envoyées est transmis.
+* **Action**  Stocker le contenu (obsolète) :  `contentPath`: le chemin d’accès du noeud dans le référentiel où sont stockées les données envoyées est transmis.
 
-* **Action**  Stocker le PDF (obsolète) :  `contentPath`—des données envoyées et du chemin d’accès au noeud qui stocke le fichier PDF dans le référentiel—est transmis.
+* **Action Stocker le PDF**  (obsolète) :  `contentPath`—des données envoyées et du chemin d’accès au noeud stockant le fichier PDF dans le référentiel—est transmis.
 
 * **Flux de travail Envoyer aux formulaires** : les paramètres de sortie renvoyés à partir du flux de travail des formulaires sont transmis.
 
-* **Envoyer vers le point de fin REST** : les paramètres ajoutés pour la correspondance entre le champ et le paramètre sont transmis. Les paramètres `status` et `owner` ne sont pas transmis à cette action d’envoi. Pour en savoir plus, consultez [Configuration de l’action d’envoi Envoyer vers le point de fin REST](/help/forms/using/configuring-submit-actions.md). 
-
+* **Envoyer vers le point d’entrée REST** : les paramètres ajoutés pour la correspondance entre le champ et le paramètre sont transmis. Les paramètres `status` et `owner` ne sont pas transmis à cette action d’envoi. Pour en savoir plus, consultez [Configuration de l’action d’envoi Envoyer vers le point de fin REST](/help/forms/using/configuring-submit-actions.md). 
