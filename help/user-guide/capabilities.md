@@ -1,24 +1,23 @@
 ---
 title: Guide de l’utilisateur des fonctionnalités d’AEM 6.4
 seo-title: Guide de l’utilisateur des fonctionnalités d’AEM 6.4
-description: Aperçu des capacités essentielles de l'AEM 6.4
-seo-description: Aperçu des capacités essentielles de l'AEM 6.4
+description: Présentation des fonctionnalités essentielles d’AEM 6.4
+seo-description: Présentation des fonctionnalités essentielles d’AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+exl-id: f4dea584-3cd1-4d9f-ae3c-2573726dde95
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 52%
 
 ---
 
-
-# aem 6.4 Fonctionnalités Guides de l&#39;utilisateur {#aem-64-capabilities-user-guides}
+# Guides de l’utilisateur des fonctionnalités d’AEM 6.4 {#aem-64-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[En savoir plus sur l’installation, le déploiement et l’architecture de Adobe Experience Manager 6.4](/help/sites-deploying/home.md), y compris le déploiement en cloud d’Adobe Managed Services.
+[En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4](/help/sites-deploying/home.md), y compris sur notre déploiement cloud Adobe Managed Services.
 
 [Découvrez comment gérer un projet AEM](/help/managing/home.md).
 
@@ -36,9 +35,9 @@ ht-degree: 52%
 
 [Créez, gérez, publiez et mettez à jour des formulaires numériques.](/help/forms/home.md)
 
-## Guide des bonnes pratiques {#aem-screens}
+## AEM Screens {#aem-screens}
 
-[Découvrez la solution d’affichage numérique pour publier des expériences dynamiques et interactives.](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html)
+[Découvrez la solution de signalétique digitale pour publier des expériences dynamiques et interactives.](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
@@ -48,6 +47,6 @@ ht-degree: 52%
 
 [Partagez du contenu généré par l’utilisateur avec AEM Livefyre.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 
-## AEM Mobile {#aem-mobile}
+## AEM  Mobile {#aem-mobile}
 
 [Créez et gérez du contenu pour les applications mobiles.](/help/mobile/home.md)
