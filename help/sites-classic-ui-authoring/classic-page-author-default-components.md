@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
-translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+exl-id: d552cbcc-8f71-48a3-9685-eba1ab8805c3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 81%
 
 ---
-
 
 # Composants{#components}
 
@@ -37,11 +36,10 @@ Vous trouverez, aux pages suivantes, des liens rapides vers certains des princip
 
    Les composants utilisés pour créer le contenu de page standard sont principalement contenus dans les groupes **Général**, **Colonnes** et **Forms**.
 
-* [Commerce électronique](/help/sites-administering/ecommerce.md)
+* [eCommerce](/help/sites-administering/ecommerce.md)
 
-   La fonctionnalité eCommerce de AEM comprend également une gamme de composants contenus dans le groupe **Commerce**. L&#39;utilisation réelle peut dépendre du moteur de commerce utilisé.
+   La fonctionnalité eCommerce d’AEM comprend également un éventail de composants, contenus dans le groupe **Commerce**. L’utilisation réelle peut dépendre du moteur de commerce utilisé.
 
 ## Utilisation du mode de conception pour configurer des composants {#using-design-mode-to-configure-components}
 
 Outre les composants auxquels les créateurs peuvent accéder par le biais du sidekick dans une installation standard, d’autres sont également disponibles. Vous pouvez utiliser le [mode de conception](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) pour activer/désactiver ces composants et modifier les paramètres de composants spécifiques.
-
