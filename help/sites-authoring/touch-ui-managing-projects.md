@@ -1,22 +1,21 @@
 ---
 title: Gestion de projets
 seo-title: Gestion de projets
-description: Les projets vous permettent d'organiser votre projet en regroupant les ressources en une seule entité accessible et gérée dans la console Projets.
-seo-description: Les projets vous permettent d'organiser votre projet en regroupant les ressources en une seule entité accessible et gérée dans la console Projets.
+description: La console Projets vous permet d’organiser votre projet en regroupant les ressources dans une seule entité accessible et gérée dans la console Projets.
+seo-description: La console Projets vous permet d’organiser votre projet en regroupant les ressources dans une seule entité accessible et gérée dans la console Projets.
 uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: 5066e2a2-9904-4203-914f-b0d4da2c88e4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 92%
 
 ---
-
 
 # Gestion de projets{#managing-projects}
 
@@ -38,7 +37,7 @@ Dans la console Projets, vous pouvez créer un projet, lui associer des ressourc
 
 >[!CAUTION]
 >
->Pour que les utilisateurs des projets voient d’autres utilisateurs/groupes lors de l’utilisation de la fonctionnalité Projets, comme la création de projets, la création de tâches/workflows, la consultation et la gestion de l’équipe, ces utilisateurs doivent avoir accès en lecture à **/home/users** et **/home/groups**. Pour ce faire, le plus facile consiste à octroyer au groupe **projects-users** un accès en lecture à **/home/users** et à **/home/groups**.
+>Pour que les utilisateurs participant à des projets voient d’autres utilisateurs/groupes lorsqu’ils utilisent des fonctionnalités de la console Projets comme créer des projets, créer des tâches/workflows, afficher et gérer l’équipe, ils doivent disposer d’un accès en lecture à **/home/users** et **/home/groups**. Pour ce faire, le plus facile consiste à octroyer au groupe **projects-users** un accès en lecture à **/home/users** et à **/home/groups**.
 
 ## Création d’un projet {#creating-a-project}
 
@@ -62,7 +61,7 @@ Les étapes de création d’un projet sont identiques d’un projet à l’autr
 
 1. Cliquez/appuyez sur **Créer**. Le message de confirmation vous demande si vous voulez ouvrir votre projet ou revenir à la console.
 
-### Association de ressources à un projet    {#associating-resources-with-your-project}
+### Association de ressources à un projet   {#associating-resources-with-your-project}
 
 Dans la mesure où les projets permettent de regrouper les ressources dans une seule entité, il convient d’associer des ressources à votre projet. Ces ressources sont connues sous le nom de **mosaïques**. Les types de ressources que vous pouvez ajouter sont décrits dans la section [Mosaïques de projet](/help/sites-authoring/projects.md#project-tiles).
 
@@ -164,4 +163,3 @@ Pour activer/désactiver un projet :
    ![chlimage_1-267](assets/chlimage_1-267.png)
 
 1. Cliquez/appuyez sur **Terminé** pour enregistrer vos modifications.
-
