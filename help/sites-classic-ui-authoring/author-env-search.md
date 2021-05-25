@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: b20e0f78-9ae4-47ba-8e9a-452a0a78b663
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: 9c1d8969-6aa6-41b9-a797-3e6431475fc6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 87%
 
 ---
-
 
 # Recherche{#search-features}
 
@@ -32,7 +31,7 @@ Pour accéder au panneau de recherche, cliquez sur l’onglet **Rechercher** dan
 
 ![chlimage_1-140](assets/chlimage_1-140.png)
 
-Le panneau de recherche vous permet de rechercher sur toutes les pages de votre site Web. Il contient des champs et des widgets pour les éléments suivants :
+Le panneau de recherche vous permet de rechercher sur toutes les pages de votre site web. Il contient des champs et des widgets pour les éléments suivants :
 
 * **Texte intégral** : recherche du texte indiqué
 * **Modifié après/avant** : la recherche porte uniquement sur les pages qui ont été modifiées entre les dates spécifiées.
@@ -81,7 +80,7 @@ Dans la console **Sites web**, l’option de menu **Rechercher et remplacer** pe
    * indiquer si la recherche doit être sensible à la casse ;
    * indiquer si la recherche doit uniquement porter sur des mots entiers (dans le cas contraire, elle porte également sur des sous-chaînes).
 
-   Cliquez sur **Prévisualisation** listes où le terme a été trouvé. Vous pouvez sélectionner/effacer des instances spécifiques à remplacer :
+   Cliquer sur **Aperçu** répertorie l’endroit où le terme a été trouvé. Vous pouvez sélectionner/effacer les instances spécifiques à remplacer :
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -94,11 +93,10 @@ L’étendue par défaut du servlet de recherche et de remplacement couvre les p
 * `jcr:text`
 * `text`
 
-La portée peut être modifiée à l&#39;aide de la console de gestion Web Apache Felix (par exemple, à `http://localhost:4502/system/console/configMgr`). Sélectionnez `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` et configurez l’étendue selon les besoins.
+La portée peut être modifiée à l’aide de la console de gestion web Apache Felix (par exemple, à l’adresse `http://localhost:4502/system/console/configMgr`). Sélectionnez `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` et configurez la portée selon les besoins.
 
 >[!NOTE]
 >
 >Dans une installation AEM standard, la fonction « Rechercher et remplacer » utilise Lucene comme fonctionnalité de recherche.
 >
 >Lucene indexe les propriétés de chaîne d’une longueur pouvant atteindre 16k. La recherche ne porte pas sur les chaînes dont la longueur est supérieure à cette valeur.
-
