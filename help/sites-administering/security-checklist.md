@@ -2,7 +2,7 @@
 title: Liste de contrôle de sécurité
 seo-title: Liste de contrôle de sécurité
 description: Découvrez les différents aspects de la sécurité lors de la configuration et du déploiement d’AEM.
-feature: Security
+feature: Sécurité
 seo-description: Découvrez les différents aspects de la sécurité lors de la configuration et du déploiement d’AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service
@@ -11,7 +11,6 @@ topic-tags: Security
 content-type: reference
 discoiquuid: a91e1264-8441-42f8-aa83-1d9c983d214a
 exl-id: 0be6d031-f8b8-458b-a910-ff05d2b1a155
-translation-type: tm+mt
 source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
 source-wordcount: '2844'
@@ -51,17 +50,17 @@ Assurez-vous d’avoir installé les derniers [correctifs de sécurité fournis 
 
 ### Modification des mots de passe par défaut pour les comptes administrateur d’AEM et de la console OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-L&#39;Adobe recommande vivement, après l&#39;installation, de modifier le mot de passe des comptes [**AEM** `admin` privilégiés ](#changing-the-aem-admin-password) (sur toutes les instances).
+Adobe recommande vivement, après l’installation, de modifier le mot de passe des comptes [**AEM** `admin` ](#changing-the-aem-admin-password) privilégiés (sur toutes les instances).
 
 Ces comptes sont les suivants :
 
-* Le compte AEM `admin`
+* Compte `admin` AEM
 
-   Une fois que vous avez modifié le mot de passe du compte d’administration AEM, vous devez utiliser le nouveau mot de passe lors de l’accès à CRX.
+   Une fois que vous avez modifié le mot de passe du compte administrateur AEM, vous devez utiliser le nouveau mot de passe lors de l’accès à CRX.
 
-* Mot de passe `admin` pour la console Web OSGi
+* Mot de passe `admin` de la console web OSGi
 
-   Cette modification sera également appliquée au compte d&#39;administration utilisé pour accéder à la console Web. Vous devrez donc utiliser le même mot de passe pour y accéder.
+   Cette modification sera également appliquée au compte administrateur utilisé pour accéder à la console web. Vous devrez donc utiliser le même mot de passe lors de l’accès à ce compte.
 
 Ces deux comptes utilisent des informations d’identification distinctes. Il est essentiel d’utiliser des mots de passe sécurisés distincts pour un déploiement sécurisé.
 
@@ -69,7 +68,7 @@ Ces deux comptes utilisent des informations d’identification distinctes. Il es
 
 Le mot de passe du compte administrateur d’AEM peut être modifié par le biais de la console [Opérations Granite – Users](/help/sites-administering/granite-user-group-admin.md).
 
-Vous pouvez ici modifier le compte `admin` et [modifier le mot de passe](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user).
+Ici, vous pouvez modifier le compte `admin` et [modifier le mot de passe](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user).
 
 >[!NOTE]
 >
@@ -77,7 +76,7 @@ Vous pouvez ici modifier le compte `admin` et [modifier le mot de passe](/help/s
 
 #### Importance la modification du mot de passe de la console web OSGi {#importance-of-changing-the-osgi-web-console-password}
 
-Outre le compte d&#39;AEM `admin`, le fait de ne pas modifier le mot de passe par défaut du mot de passe de la console Web OSGi peut conduire à :
+Outre le compte `admin` AEM, le fait de ne pas modifier le mot de passe par défaut du mot de passe de la console web OSGi peut entraîner :
 
 * l’affichage du serveur avec un mot de passe par défaut au démarrage et à l’arrêt (opération qui peut prendre quelques minutes sur les serveurs importants) ;
 * l’exposition du serveur lorsque le référentiel est en panne/redémarre un lot (et qu’OSGI est en cours d’exécution).
@@ -86,15 +85,15 @@ Pour plus d’informations sur la modification du mot de passe de la console web
 
 #### Modification du mot de passe administrateur de la console web OSGi  {#changing-the-osgi-web-console-admin-password}
 
-Vous devez également modifier le mot de passe utilisé pour accéder à la console web. Pour ce faire, configurez les propriétés suivantes de la [console de gestion Apache Felix OSGi ](/help/sites-deploying/osgi-configuration-settings.md) :
+Vous devez également modifier le mot de passe utilisé pour accéder à la console web. Pour ce faire, configurez les propriétés suivantes de la [console de gestion OSGi Apache Felix](/help/sites-deploying/osgi-configuration-settings.md) :
 
 **Nom d’utilisateur** et **mot de passe**, les informations d’identification pour accéder à la console de gestion web Apache Felix.\
 Le mot de passe doit être modifié après l’installation initiale pour garantir la sécurité de votre instance. 
 
 Pour ce faire :
 
-1. Accédez à la console Web à l’adresse `<server>:<port>/system/console/configMgr`.
-1. Accédez à** Apache Felix OSGi Management Console** et modifiez le **nom d’utilisateur** et **mot de passe**.
+1. Accédez à la console web à l’adresse `<server>:<port>/system/console/configMgr`.
+1. Accédez à** Console de gestion OSGi Apache Felix** et modifiez le **nom d’utilisateur** et **mot de passe**.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -172,9 +171,9 @@ Le service de filtre de référent est un service OSGi qui permet de configurer�
 
 * les méthodes HTTP à filtrer ;
 * si un en-tête de référent vide est permis ;
-* et une liste de serveurs à autoriser en plus de l’hôte du serveur.
+* et une liste des serveurs à autoriser en plus de l’hôte du serveur.
 
-   Par défaut, toutes les variations de localhost et les noms d’hôte actuels auxquels le serveur est lié se trouvent dans la liste.
+   Par défaut, toutes les variantes de localhost et les noms d’hôte actuels auxquels le serveur est lié figurent dans la liste.
 
 Pour configurer le service de filtrage de référent :
 
@@ -187,9 +186,9 @@ Pour configurer le service de filtrage de référent :
 
    `Apache Sling Referrer Filter`
 
-1. Dans le champ `Allow Hosts`, saisissez tous les hôtes autorisés en tant que parrain. Chaque entrée doit se trouver dans le formulaire
+1. Dans le champ `Allow Hosts` , saisissez tous les hôtes autorisés en tant que référent. Chaque entrée doit se trouver dans le formulaire.
 
-   &lt;protocol>://&lt;server>:&lt;port>
+   &lt;protocol>://&lt;server> :&lt;port>
 
    Par exemple :
 
@@ -197,13 +196,13 @@ Pour configurer le service de filtrage de référent :
    * Si vous souhaitez également autoriser les demandes https, vous devez saisir une seconde ligne.
    * Si vous autorisez tous les ports de ce serveur, vous pouvez utiliser `0` comme numéro de port.
 
-1. Cochez le champ `Allow Empty` si vous souhaitez autoriser les en-têtes de parrain vides/manquants.
+1. Cochez le champ `Allow Empty` si vous souhaitez autoriser les en-têtes de référent vides/manquants.
 
    >[!CAUTION]
    >
    >Il est recommandé de fournir un référent lors de l’utilisation des outils de ligne de commande, comme `cURL` au lieu d’autoriser une valeur vide, car cela peut exposer votre système à des attaques CSRF.
 
-1. Modifiez les méthodes que ce filtre doit utiliser pour les vérifications avec le champ `Filter Methods`.
+1. Editez les méthodes que ce filtre doit utiliser pour les contrôles avec le champ `Filter Methods`.
 
 1. Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
@@ -294,15 +293,15 @@ Pour vous aider à prévenir toute utilisation abusive en raison d’une attaque
 
    * Notamment, l’outil de rendu JSON, qui peut traverser l’arborescence sur plusieurs des niveaux.
 
-      Par exemple, la demande :
+      Par exemple, la requête :
 
       `http://localhost:4502/.json`
 
-      peut vider l’ensemble du référentiel dans une représentation JSON. Cela entraînerait des problèmes importants au niveau du serveur. Ainsi, Sling définit une limite de nombre maximal de résultats. Pour limiter la profondeur du rendu JSON, vous pouvez définir la valeur pour :
+      peut vider l’ensemble du référentiel dans une représentation JSON. Cela entraînerait des problèmes importants au niveau du serveur. Ainsi, Sling définit une limite de nombre maximal de résultats. Pour limiter la profondeur du rendu JSON, vous pouvez définir la valeur de :
 
-      **Résultats**  max JSON(  `json.maximumresults`)
+      **Résultats JSON max** (  `json.maximumresults`)
 
-      dans la configuration du [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md). Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est `200`.
+      dans la configuration du [servlet de GET Apache Sling](/help/sites-deploying/osgi-configuration-settings.md). Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est `200`.
 
    * À titre de mesure préventive, désactivez les autres outils de rendu par défaut (HTML, texte brut, XML). Là encore, en configurant le [servlet Sling GET d’Apache](/help/sites-deploying/osgi-configuration-settings.md).
    >[!CAUTION]
@@ -319,11 +318,11 @@ Pour vous aider à prévenir toute utilisation abusive en raison d’une attaque
 >
 >Cette réduction ne doit être effectuée que sur les environnements AEM qui n’utilisent pas Forms.
 
-Comme AEM ne fournit pas d’index prêts à l’emploi pour `FormChooserServlet`, l’utilisation de sélecteurs de formulaire dans les requêtes déclenche une traversée coûteuse du référentiel, ce qui entraîne généralement l’arrêt de l’instance AEM. Les sélecteurs de formulaire peuvent être détectés par la présence de **&amp;ast;.form.&amp;ast;** chaîne dans les requêtes.
+Comme AEM ne fournit pas d’index prêts à l’emploi pour `FormChooserServlet`, l’utilisation de sélecteurs de formulaire dans les requêtes déclenche une traversée coûteuse du référentiel, ce qui entraîne généralement l’arrêt de l’instance AEM. Les sélecteurs de formulaire peuvent être détectés par la présence de **&amp;ast;.form.Chaîne &amp;ast;** dans les requêtes.
 
 Pour atténuer ce problème, veuillez procéder comme suit :
 
-1. Accédez à la console Web en pointant votre navigateur vers *https://&lt;adresse du serveur>:&lt;serverport>/system/console/configMgr*.
+1. Accédez à la console web en pointant votre navigateur vers *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 
 1. Recherchez **Day CQ WCM Form Chooser Servlet**
 1. Après avoir cliqué sur l’entrée, désactivez la **Recherche avancée requise** dans la fenêtre suivante.
@@ -374,7 +373,7 @@ Aucune configuration ne doit être effectuée pour l’activer, car il s’agit 
 
 Même si cela n’est pas recommandé, vous pouvez la désactiver au cas où vous auriez besoin de l’ancienne mise en œuvre pour des raisons de rétrocompatibilité avec vos applications existantes. À cet effet, vous devez effectuer les opérations suivantes :
 
-1. Accédez à la console Web et supprimez l’entrée ** org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName*** de la propriété **requiredServicePids** dans **Apache Jackrabbit Oak SecurityProvider**.
+1. Accédez à la console web et supprimez l’entrée ** org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** de la propriété **requiredServicePids** dans **Apache Jackrabbit Oak SecurityProvider**.
 
    Vous pouvez également trouver Oak Security Provider en cherchant le PID **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** dans les configurations OSGi.
 
@@ -436,12 +435,12 @@ Plus spécifiquement, vous devez effectuer les opérations suivantes :
 
 #### Réplication des clés pour AEM 6.2 et versions antérieures {#replicating-keys-for-aem-and-older-versions}
 
-Dans AEM 6.2 et les versions antérieures, les clés sont stockées dans le référentiel sous le noeud `/etc/key`.
+Dans AEM version 6.2 et antérieure, les clés sont stockées dans le référentiel sous le noeud `/etc/key` .
 
 La méthode recommandée pour répliquer en toute sécurité les clés sur toutes les instances est de ne répliquer que ce nœud. Vous pouvez répliquer les nœuds de façon sélective à l’aide de CRXDE Lite :
 
-1. Ouvrez le CRXDE Lite en accédant à *https://&lt;adresse du serveur>:4502/crx/de/index.jsp*
-1. Sélectionnez le noeud `/etc/key`.
+1. Ouvrez le CRXDE Lite en accédant à *https://&lt;serveraddress>:4502/crx/de/index.jsp*
+1. Sélectionnez le noeud `/etc/key` .
 1. Cliquez sur l’onglet **Réplication**.
 1. Appuyez sur le bouton **Réplication**.
 
