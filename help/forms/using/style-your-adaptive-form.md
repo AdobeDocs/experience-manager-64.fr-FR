@@ -7,15 +7,14 @@ page-status-flag: de-activated
 uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formulaires adaptatifs
+exl-id: 0ccf43eb-f0c6-4204-8325-f891caa8f5af
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2071'
 ht-degree: 72%
 
 ---
-
 
 # Application d’un style à votre formulaire adaptatif {#do-not-publish-style-your-adaptive-form}
 
@@ -61,11 +60,11 @@ L’éditeur de formulaires adaptatifs fournit plusieurs thèmes prêts à l’e
 
 ![Formulaire adaptatif avec le thème par défaut](assets/default-adaptive-form.png)
 
-**Figure:formulaire** *adaptatif avec le thème par défaut*
+**Figure :** *Formulaire adaptatif avec le thème par défaut*
 
 ![Formulaire adaptatif avec le thème Enquête](assets/adaptive-form-with-survey-theme.png)
 
-**Figure : formulaire** *adaptatif avec le thème Questionnaire*
+**Figure :** *Formulaire adaptatif avec le thème Enquête*
 
 ## Étape 2 : mettre à jour votre formulaire adaptatif {#step-update-your-adaptive-form}
 
@@ -77,20 +76,20 @@ La conception présentée ci-dessus nécessite des modifications du texte et du 
 
       [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-   1. Appuyez sur l’image de logo dans le composant d’en-tête et appuyez sur les propriétés ![cmppr](assets/cmppr.png). Dans la propriété d’image, appuyez sur X pour supprimer l’image du logo existant.
-   1. Appuyez sur télécharger, sélectionnez le fichier logo.png, puis appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications. L&#39;image a été téléchargée dans la section [Avant votre début](/help/forms/using/style-your-adaptive-form.md#before-you-start).
-   1. Appuyez sur le texte de l’en-tête `We.Retail`, puis sur ![aem_6_3_edit](assets/aem_6_3_edit.png) **edit**. Remplacez le texte de l’en-tête par `we retail`. Applique la mise en forme en gras uniquement à `we`dans `we retail`.
+   1. Appuyez sur l’image de logo dans le composant d’en-tête et appuyez sur les propriétés ![cmppr](assets/cmppr.png) . Dans la propriété d’image, appuyez sur X pour supprimer l’image du logo existant.
+   1. Appuyez sur Télécharger, sélectionnez le fichier logo.png, puis appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications. L’image a été téléchargée dans la section [Avant de commencer](/help/forms/using/style-your-adaptive-form.md#before-you-start).
+   1. Appuyez sur le texte de l’en-tête, `We.Retail`, puis sur ![aem_6_3_edit](assets/aem_6_3_edit.png) **edit**. Remplacez le texte de l’en-tête par `we retail`. Appliquez la mise en forme en gras uniquement à `we`dans `we retail`.
 
-   ![nous-vente-détail-logo-texte](assets/we-retail-logo-text.png)
+   ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Supprimez le titre et ajouter un texte d’espace réservé :
 
-   1. Appuyez sur le champ ID de client et sur les propriétés ![cmppr](assets/cmppr.png).
+   1. Appuyez sur le champ ID de client et appuyez sur les propriétés ![cmppr](assets/cmppr.png) .
    1. Copiez le contenu du champ **Titre** dans le champ **Texte d’espace réservé**.
    1. Supprimez le contenu du champ **Titre** et appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Répétez les trois étapes précédentes pour toutes les zones de texte, la zone numérique et le champ d’adresse électronique du formulaire.
 
-   ![update-adaptive-form](assets/updated-adaptive-form.png)
+   ![updated-adaptive-form](assets/updated-adaptive-form.png)
 
 ## Étape 3 : créer un thème personnalisé pour votre formulaire adaptatif {#step-create-a-custom-theme-for-your-adaptive-form}
 
@@ -108,25 +107,25 @@ Dans ce didacticiel, vous allez appliquer un style aux en-têtes et aux pieds de
    * **Titre :** indiquez le titre du thème. Par exemple, **Thème global.** Le titre vous permet d’identifier le thème dans la liste des thèmes.
    * **Nom :** indiquez le nom du thème. Par exemple, **Thème-global.** Un nœud portant le nom indiqué est alors créé dans le référentiel. Lorsque vous commencez à saisir un titre, une valeur pour le champ de nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ de nom peut contenir uniquement des caractères alphanumériques, des traits d’union et des tirets bas. Toutes les entrées non valides sont remplacées par un tiret.
 
-1. Appuyez sur **Create** (Créer). Un thème est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche. Appuyez sur **Ouvrir** pour ouvrir le thème nouvellement créé dans un nouvel onglet. Le thème s’ouvre dans l’éditeur de thèmes. Pour le style, l’éditeur de thèmes utilise un formulaire adaptatif prêt à l’emploi fourni avec AEM Forms.
+1. Appuyez sur **Créer**. Un thème est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche. Appuyez sur **Ouvrir** pour ouvrir le thème nouvellement créé dans un nouvel onglet. Le thème s’ouvre dans l’éditeur de thèmes. Pour le style, l’éditeur de thèmes utilise un formulaire adaptatif prêt à l’emploi fourni avec AEM Forms.
 
-   Pour plus d’informations sur l’utilisation de l’interface utilisateur de l’éditeur de thème, voir [A propos de l’éditeur de thème](/help/forms/using/themes.md#aboutthethemeeditor).
+   Pour plus d’informations sur l’utilisation de l’interface utilisateur de l’éditeur de thèmes, voir [À propos de l’éditeur de thèmes](/help/forms/using/themes.md#aboutthethemeeditor).
 
-1. Appuyez sur **Options de thème** ![options de thème](assets/theme-options.png) > **Configurer**. Dans le champ **Formulaire de Prévisualisation**, sélectionnez le **formulaire adaptatif**, appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), appuyez sur **Enregistrer**. L’éditeur de thème est maintenant configuré pour utiliser votre propre formulaire adaptatif au lieu du formulaire adaptatif par défaut. Appuyez sur **Annuler** pour revenir à l’éditeur de thèmes.
+1. Appuyez sur **Options du thème** ![theme-options](assets/theme-options.png) > **Configurer**. Dans le champ **Aperçu du formulaire**, sélectionnez le formulaire adaptatif **shipping-address-add-update-form**, appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), appuyez sur **Enregistrer**. L’éditeur de thème est maintenant configuré pour utiliser votre propre formulaire adaptatif au lieu du formulaire adaptatif par défaut. Appuyez sur **Annuler** pour revenir à l’éditeur de thèmes.
 
-   ![thème personnalisé](assets/custom-theme.png)
+   ![custom-theme](assets/custom-theme.png)
 
-   **Figure : éditeur de** *thème avec le formulaire adaptatif expédition-address-add-update-form*
+   **Figure :** *Éditeur de thème avec le formulaire adaptatif shipping-address-add-update-form*
 
-   ![créer un thème](assets/create-a-theme.png)
+   ![create-a-theme](assets/create-a-theme.png)
 
-   **Figure:formulaire** *adaptatif avec le formulaire par défaut*
+   **Figure :** *Formulaire adaptatif avec le formulaire par défaut*
 
 ### Application d’un style à l’en-tête et au pied de page {#style-header-and-footer}
 
 L’en-tête et le pied de page donnent un aspect cohérent et distinctif à un formulaire adaptatif. En général, l’en-tête contient le logo et le nom de l’organisation, le pied de page contient des informations de copyright. Ces éléments restent identiques dans plusieurs formulaires d’une organisation. Pour appliquer un style à l’en-tête et au pied de page du formulaire adaptatif shipping-address-add-update-form :
 
-1. Accédez à l’option **En-tête** > **Texte** dans le panneau Sélecteurs. Le panneau Sélecteurs se trouve à gauche de l’éditeur de thèmes. Si le panneau n’est pas visible, appuyez sur ![Basculer le panneau latéral](assets/toggle-side-panel.png) Basculer le panneau latéral.
+1. Accédez à l’option **En-tête** > **Texte** dans le panneau Sélecteurs. Le panneau Sélecteurs se trouve à gauche de l’éditeur de thèmes. Si le panneau n’est pas visible, appuyez sur ![Activer/désactiver le panneau latéral](assets/toggle-side-panel.png) Activer/désactiver le panneau latéral.
 
 1. Définissez les propriétés suivantes dans l’accordéon **Texte** et appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -136,18 +135,18 @@ L’en-tête et le pied de page donnent un aspect cohérent et distinctif à un 
    | Couleur de la police | FFFFFF |
    | Taille de la police | 54px |
 
-1. Appuyez sur le widget d’en-tête, puis sur **En-tête**. Les options permettant d’appliquer un style au widget En-tête s’affichent à gauche. Développez l’accordéon **Dimensions et position**, définissez **Hauteur** sur `120px`, puis appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Appuyez sur le widget d’en-tête, puis sur **En-tête**. Les options permettant d’appliquer un style au widget En-tête s’affichent à gauche. Développez l’accordéon **Dimensions et position**, définissez la **hauteur** sur `120px`, puis appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Développez l’accordéon Arrière-plan du widget d’en-tête, définissez la **couleur d’arrière-plan** sur `F6921E.`
 
-   Passez la souris sur **Image et dégradé** > **+ Ajoute**, puis appuyez sur **Image**. Définissez les propriétés suivantes et appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   Pointez sur **Image et dégradé** > **+ Ajouter**, appuyez sur **Image**. Définissez les propriétés suivantes et appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Propriétés | Valeur |
    |---|---|
-   | image | Téléchargez le fichier header-style.png. L&#39;image a été téléchargée dans la section [Avant votre début](/help/forms/using/style-your-adaptive-form.md#before-you-start). |
+   | image | Téléchargez le fichier header-style.png. L’image a été téléchargée dans la section [Avant de commencer](/help/forms/using/style-your-adaptive-form.md#before-you-start). |
    | Position | En bas à droite |
    | Mosaïque | Pas de répétition |
 
-1. Dans l’éditeur de thème, appuyez sur le logo dans l’en-tête puis appuyez sur **Logo de l’en-tête**. Développez l’accordéon Dimensions &amp; Position, définissez les propriétés suivantes et appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Dans l’éditeur de thème, appuyez sur le logo dans l’en-tête puis appuyez sur **Logo de l’en-tête**. Développez l’accordéon Dimensions et position , définissez les propriétés suivantes, puis appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 <table> 
  <tbody> 
@@ -175,7 +174,7 @@ L’en-tête et le pied de page donnent un aspect cohérent et distinctif à un 
 
 ### Application d’un style au composant de capture de données et application d’un arrière-plan au formulaire adaptatif {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
-Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capturer des données. Par exemple, zone de texte et zone numérique. Vous pouvez fournir un style identique à tous les composants de capture de données ou un style distinct pour chaque composant. Dans ce didacticiel, un style identique est appliqué aux zones numériques (ID client, Code postal) et aux zones de texte (ID client, Nom, Adresse de livraison, État, Adresse électronique). Pour mettre en forme les composants de capture de données :
+Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capturer des données. Par exemple, zone de texte et zone numérique. Vous pouvez fournir un style identique à tous les composants de capture de données ou un style distinct pour chaque composant. Dans ce didacticiel, un style identique est appliqué aux zones numériques (ID client, Code postal) et aux zones de texte (ID client, Nom, Adresse de livraison, État, Adresse électronique). Pour appliquer un style aux composants de capture de données :
 
 1. Appuyez sur le champ ID de client et sur l’option **Widget de champ**. Définissez les propriétés suivantes et appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -187,12 +186,12 @@ Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capt
    <td>Valeur</td> 
   </tr> 
   <tr> 
-   <td> de la bordure</td> 
+   <td>Bordure</td> 
    <td>Couleur de la bordure</td> 
    <td>A7A9AC</td> 
   </tr> 
   <tr> 
-   <td> de la bordure</td> 
+   <td>Bordure</td> 
    <td>Rayon de bordure </td> 
    <td> 
     <ul> 
@@ -203,17 +202,17 @@ Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capt
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Text (Texte)</td> 
+   <td>Texte</td> 
    <td>Famille de polices</td> 
    <td>Arial</td> 
   </tr> 
   <tr> 
-   <td>Text (Texte)</td> 
+   <td>Texte</td> 
    <td>Couleur de la police</td> 
    <td>939598<br /> </td> 
   </tr> 
   <tr> 
-   <td>Text (Texte)</td> 
+   <td>Texte</td> 
    <td>Taille de la police</td> 
    <td>18px</td> 
   </tr> 
@@ -239,7 +238,7 @@ Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capt
 
 ### Application d’un style aux boutons {#style-the-buttons}
 
-Vous pouvez utiliser un thème personnalisé pour appliquer un style identique à tous les boutons du formulaire adaptatif et [le style intégré](/help/forms/using/inline-style-adaptive-forms.md) pour appliquer un style à un bouton spécifique. Pour appliquer un style aux boutons :
+Vous pouvez utiliser un thème personnalisé pour appliquer un style identique à tous les boutons du formulaire adaptatif et un [style intégré](/help/forms/using/inline-style-adaptive-forms.md) pour appliquer un style à un bouton spécifique. Pour appliquer un style aux boutons :
 
 1. Appuyez sur le bouton **Envoyer** et appuyez sur l’option **Bouton**. Définissez les propriétés suivantes et appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -256,12 +255,12 @@ Vous pouvez utiliser un thème personnalisé pour appliquer un style identique �
    <td>F6921E</td> 
   </tr> 
   <tr> 
-   <td> de la bordure<br /> </td> 
+   <td>Bordure<br /> </td> 
    <td>Couleur de la bordure</td> 
    <td>F6921E</td> 
   </tr> 
   <tr> 
-   <td> de la bordure</td> 
+   <td>Bordure</td> 
    <td>Rayon de bordure </td> 
    <td> 
     <ul> 
@@ -277,14 +276,14 @@ Vous pouvez utiliser un thème personnalisé pour appliquer un style identique �
    <td>Arial</td> 
   </tr> 
   <tr> 
-   <td>Text (Texte)</td> 
+   <td>Texte</td> 
    <td>Couleur de la police</td> 
    <td>FFFFFF</td> 
   </tr> 
   <tr> 
-   <td>Text (Texte)</td> 
+   <td>Texte</td> 
    <td>Taille de la police</td> 
-   <td>18 px</td> 
+   <td>18px</td> 
   </tr> 
  </tbody> 
 </table>
@@ -302,14 +301,14 @@ Certains styles ne s’appliquent qu’à un composant spécifique. Un style est
 
    ![style-option](assets/style-option.png)
 
-1. Appuyez sur le bouton **Joindre** et appuyez sur l’icône ![aem_6_3_edit](assets/aem_6_3_edit.png). Définissez les propriétés suivantes dans les Dimensions **et Position** en accordéon :
+1. Appuyez sur le bouton **Joindre** et appuyez sur l’icône ![aem_6_3_edit](assets/aem_6_3_edit.png). Définissez les propriétés suivantes dans l’accordéon **Dimensions et position** :
 
    | Propriétés | Valeur |
    |---|---|
    | Flottant | Gauche |
    | Largeur | 10% |
 
-1. Appuyez sur l&#39;option **BAT d&#39;adresse approuvé par le gouvernement** et appuyez sur l&#39;icône ![aem_6_3_edit](assets/aem_6_3_edit.png). Définissez les propriétés suivantes :
+1. Appuyez sur l’option **Preuve d’adresse approuvée par le gouvernement** et appuyez sur l’icône ![aem_6_3_edit](assets/aem_6_3_edit.png). Définissez les propriétés suivantes :
 
 <table> 
  <tbody> 
@@ -356,49 +355,49 @@ Certains styles ne s’appliquent qu’à un composant spécifique. Un style est
    <td>FFFFFF</td> 
   </tr> 
   <tr> 
-   <td> de la bordure</td> 
+   <td>Bordure</td> 
    <td>Largeur de bordure</td> 
    <td>1px</td> 
   </tr> 
   <tr> 
-   <td> de la bordure</td> 
+   <td>Bordure</td> 
    <td>Style de la bordure</td> 
    <td>Pleine</td> 
   </tr> 
   <tr> 
-   <td> de la bordure</td> 
+   <td>Bordure</td> 
    <td>Couleur de la bordure</td> 
    <td>A7A9AC</td> 
   </tr> 
   <tr> 
-   <td> de la bordure</td> 
+   <td>Bordure</td> 
    <td>Rayon de bordure</td> 
    <td>7px</td> 
   </tr> 
   <tr> 
-   <td>Text (Texte)</td> 
+   <td>Texte</td> 
    <td>Famille de polices</td> 
    <td>Arial</td> 
   </tr> 
   <tr> 
-   <td>Text (Texte)</td> 
+   <td>Texte</td> 
    <td>Couleur de la police</td> 
    <td>BCBEC0</td> 
   </tr> 
   <tr> 
-   <td>Text (Texte)</td> 
+   <td>Texte</td> 
    <td>Taille de la police</td> 
-   <td>18 px</td> 
+   <td>18px</td> 
   </tr> 
   <tr> 
-   <td>Text (Texte)</td> 
+   <td>Texte</td> 
    <td>Hauteur de ligne</td> 
    <td>2</td> 
   </tr> 
  </tbody> 
 </table>
 
-1. Appuyez sur le bouton **Envoyer** et appuyez sur l&#39;icône ![aem_6_3_edit](assets/aem_6_3_edit.png). Définissez les propriétés suivantes :
+1. Appuyez sur le bouton **Submit** et appuyez sur l’icône ![aem_6_3_edit](assets/aem_6_3_edit.png). Définissez les propriétés suivantes :
 
 <table> 
  <tbody> 
@@ -429,7 +428,7 @@ Certains styles ne s’appliquent qu’à un composant spécifique. Un style est
    <td>F6921E</td> 
   </tr> 
   <tr> 
-   <td> de la bordure</td> 
+   <td>Bordure</td> 
    <td>Couleur de la bordure</td> 
    <td>F6921E</td> 
   </tr> 
@@ -440,20 +439,19 @@ Certains styles ne s’appliquent qu’à un composant spécifique. Un style est
 
 ## Étape 5 : section bonus : utilisation des polices web dans un thème personnalisé {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
-Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif. Tous les périphériques sur lesquels le formulaire adaptatif est visualisé peuvent ne pas utiliser les polices pour concevoir le formulaire adaptatif. Vous pouvez utiliser un service de polices Web pour fournir les polices requises au périphérique de la cible.
+Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif. Tous les périphériques sur lesquels le formulaire adaptatif est visualisé peuvent ne pas utiliser les polices pour concevoir le formulaire adaptatif. Vous pouvez utiliser un service de polices web pour fournir les polices requises au périphérique cible.
 
 Adobe Typekit est un service de polices web d’Adobe. Vous pouvez configurer et utiliser le service avec les formulaires adaptatifs. Pour utiliser Adobe Typekit dans un formulaire adaptatif :
 
 >[!NOTE]
 >
->![typekit-to-adobe-](assets/typekit-to-adobe-fonts.png) fontsTypekit est désormais appelé Adobe Fonts et est inclus avec Creative Cloud et autres abonnements. [En savoir plus](https://fonts.adobe.com/).
+>![typekit-to-adobe-](assets/typekit-to-adobe-fonts.png) fontsTypekit est désormais appelé Adobe Fonts et est fourni avec Creative Cloud et d’autres abonnements. [En savoir plus](https://fonts.adobe.com/).
 
 1. Créez un compte [Adobe Typekit](https://typekit.com/), créez un kit, ajoutez la police Myriad Pro au kit, publiez le kit et obtenez l’identifiant du kit. Il est nécessaire d’utiliser les polices Adobe Typekit (polices web) dans un formulaire adaptatif.
-1. Dans le serveur AEM Forms, accédez à ![adobeexperience emanager](assets/adobeexperiencemanager.png) **Adobe Experience Manager** > **Outils** ![marteau](assets/hammer.png) > **Déploiement** > **Cloud Services**. Sur la page Cloud Services, accédez à **Services tiers** > **Typekit**, puis cliquez sur **Configurer** Maintenant sous Typekit. Si une configuration est déjà disponible, cliquez sur le bouton + pour créer une nouvelle instance.
+1. Dans le serveur AEM Forms, accédez à ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **Adobe Experience Manager** > **Outils** ![marteau](assets/hammer.png) > **Déploiement** > **Cloud Services**. Sur la page Cloud Services, accédez à **Services tiers** > **Typekit**, puis cliquez sur **Configurer** Maintenant sous Typekit. Si une configuration est déjà disponible, cliquez sur le bouton + pour créer une nouvelle instance.
 
-   Dans la boîte de dialogue Créer une configuration, spécifiez un **Titre** pour la configuration, puis cliquez sur **Créer**. Vous êtes redirigé sur la page de configuration. Dans la boîte de dialogue Modifier le composant qui s’affiche, fournissez votre **ID de kit** et cliquez sur **OK**.
+   Dans la boîte de dialogue Créer une configuration, spécifiez un **titre** pour la configuration, puis cliquez sur **Créer**. Vous êtes redirigé sur la page de configuration. Dans la boîte de dialogue Modifier le composant qui s’affiche, indiquez votre **identifiant du kit** et cliquez sur **OK**.
 
-1. Configurez un thème de sorte qu’il utilise la configuration Typekit. Sur l’instance d’auteur, ouvrez **Thème global** dans l’éditeur de thème. Dans l’éditeur de thème, accédez à Options du thème ![options-thème](assets/theme-options.png) > Configurer. Dans le champ **Typekit Configuration**, sélectionnez le kit, puis cliquez sur **Enregistrer**.
+1. Configurez un thème de sorte qu’il utilise la configuration Typekit. Sur l’instance d’auteur, ouvrez **Thème global** dans l’éditeur de thème. Dans l’éditeur de thèmes, cliquez sur Options du thème![ theme-options](assets/theme-options.png) > Configurer. Dans le champ **Configuration de Typekit**, sélectionnez le kit, puis cliquez sur **Enregistrer**.
 
-   Les polices ajoutées au Typekit peuvent être sélectionnées dans l&#39;accordéon **Texte** de tous les composants.
-
+   Les polices ajoutées au Typekit peuvent être sélectionnées dans l’accordéon **Texte** de tous les composants.
