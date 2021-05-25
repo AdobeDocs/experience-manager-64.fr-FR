@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 163a4887-7c33-4305-8c48-882630f2caa1
-translation-type: tm+mt
-source-git-commit: a87e078e1a8f49dc899ce9b160d789cb254338e2
+exl-id: c63e44e7-cc89-4fa0-8ba4-460d682df601
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 96%
 
 ---
-
 
 # Guide rapide pour la création de pages{#quick-guide-to-authoring-pages}
 
@@ -57,7 +56,7 @@ Avant d’aborder ce thème dans le détail, nous vous offrons quelques conseils
    * ***Les liens ne sont pas disponibles pour la navigation*** lorsque vous êtes en mode d’**édition**. Pour naviguer à l’aide de liens, vous devez [afficher un aperçu de la page](/help/sites-authoring/editing-content.md#previewing-pages) à l’aide de l’une des fonctionnalités suivantes :
 
       * [Mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode)
-      * [Afficher comme publié(e) ](/help/sites-authoring/editing-content.md#view-as-published)
+      * [Afficher comme publié(e)](/help/sites-authoring/editing-content.md#view-as-published)
 
 * Les workflows et les versions ne sont plus démarrés/créés à partir de l’editeur de page, mais à partir de la [Chronologie](/help/sites-authoring/basic-handling.md#timeline) (accessible depuis la console).
 
@@ -66,7 +65,7 @@ Avant d’aborder ce thème dans le détail, nous vous offrons quelques conseils
 >Il existe plusieurs raccourcis clavier qui peuvent faciliter l’expérience de création.
 >
 >* [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
->* [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
+* [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## Recherche de votre page {#finding-your-page}
@@ -90,7 +89,7 @@ Avant d’aborder ce thème dans le détail, nous vous offrons quelques conseils
 
 1. Un assistant s’ouvre, qui vous aidera à collecter les informations nécessaires lors de la [création de votre page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Suivez les instructions à l’écran.
 
-## Sélection de la page pour d’autres actions    {#selecting-your-page-for-further-action}
+## Sélection de la page pour d’autres actions   {#selecting-your-page-for-further-action}
 
 Sélectionnez une page pour y effectuer des actions. Ce faisant, la barre d’outils est automatiquement mise à jour afin de présenter les actions appropriées pour cette ressource.
 
@@ -107,8 +106,7 @@ La méthode de sélection d’une page dépend du mode d’affichage dans la con
 
       * Une coche apparaît sur la carte afin d’indiquer que la page a été sélectionnée.
    >[!NOTE]
-   >
-   >En mode de sélection, l’icône **Sélectionner** (coche) est transformée en icône **Désélectionner** (croix).
+   En mode de sélection, l’icône **Sélectionner** (coche) est transformée en icône **Désélectionner** (croix).
 
 1. Mode Liste :
 
@@ -168,8 +166,7 @@ La méthode de sélection d’une page dépend du mode d’affichage dans la con
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Copier** puis **Coller** suivant vos besoins.
       >[!NOTE]
-      >
-      >Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
+      Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
 
    * [Supprimer](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un composant :
 
@@ -186,8 +183,7 @@ La méthode de sélection d’une page dépend du mode d’affichage dans la con
    * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide du sélecteur déroulant **Modifier**.
 
    >[!NOTE]
-   >
-   >Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode).
+   Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode).
 
 ## Modification des propriétés de page    {#editing-the-page-properties}
 
@@ -259,8 +255,7 @@ Il existe deux méthodes principales pour [publier une page](/help/sites-authori
 
       * Vous serez alors invité à confirmer l’opération.
    >[!NOTE]
-   >
-   >La suppression n’est pas proposée comme action rapide.
+   La suppression n’est pas proposée comme action rapide.
 
 ## Verrouillage d’une page (puis déverrouillage) {#locking-your-page-then-unlocking}
 
@@ -318,5 +313,3 @@ Le même mécanisme de base est appliqué pour restaurer ou pour comparer des ve
    * **Afficher les différences**
 
       * La page s’ouvre avec les différences (entre les deux versions) surlignées.
-
-
