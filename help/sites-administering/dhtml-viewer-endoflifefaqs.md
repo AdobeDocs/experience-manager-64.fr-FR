@@ -1,25 +1,24 @@
 ---
 title: FAQ sur la fin de prise en charge de la visionneuse DHTML
-description: A compter du 31 janvier 2014, la plate-forme de la visionneuse DHTML prendra officiellement fin.
+description: À compter du 31 janvier 2014, la plateforme de la visionneuse DHTML prendra officiellement fin de vie.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: 7a9d6e97-2592-43cb-b5ab-4238409bd7f3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '42'
-ht-degree: 9%
+ht-degree: 80%
 
 ---
 
+# Fin de prise en charge de la visionneuse DHTML {#dhtml-viewer-end-of-life-}
 
-# Fin de vie de la visionneuse DHTML {#dhtml-viewer-end-of-life-}
+Depuis le 31 janvier 2014, la plateforme de la visionneuse DHTML n’est officiellement plus prise en charge.
 
-Depuis le 31 janvier 2014, la plate-forme de la visionneuse DHTML est officiellement en fin de vie.
-
-Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) pour connaître les dernières visionneuses prises en charge.
+Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=fr) pour connaître les dernières visionneuses prises en charge.
 
 <!-- **What is the change?**
 
