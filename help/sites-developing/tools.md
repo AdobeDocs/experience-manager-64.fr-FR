@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 0f977264-fe58-4478-bd38-aca5c75f36aa
-translation-type: tm+mt
-source-git-commit: 60f36a33471dbbd9ca877dbbedc82ade606a125c
+exl-id: 9387cdb4-f8de-4229-90d1-59218ac17561
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 93%
 
 ---
-
 
 # Outils de test et de suivi{#testing-and-tracking-tools}
 
@@ -43,7 +42,7 @@ Pour plus d’informations, voir [http://jakarta.apache.org/jmeter/](http://jaka
 
 Il existe également une foule d’outils propriétaires conçus pour automatiser les tests et gérer les plans de test.
 
-## Suivi  {#tracking}
+## Suivi {#tracking}
 
 Les outils suivants sont faciles à obtenir. Il subsiste toutefois un problème fondamental dans tous les cas, à savoir : la disponibilité des données pour l’ensemble des membres de l’équipe du projet, tant le partenaire que le client.
 
