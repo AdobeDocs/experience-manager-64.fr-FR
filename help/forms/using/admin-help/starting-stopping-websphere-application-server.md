@@ -9,20 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcd16691-67ab-4694-9e6b-c9d3e0c7bf0b
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 8e3bb77f-b187-42c8-a90e-fe0fee50dc34
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 79%
 
 ---
 
-
 # Démarrage et arrêt de WebSphere Application Server {#starting-and-stopping-websphere-application-server}
 
 Plusieurs procédures nécessitent d’arrêter ou de démarrer l’instance de WebSphere sur laquelle vous souhaitez déployer les produits AEM forms. Si vous ne savez pas si le serveur d’applications a déjà été démarré, vous pouvez commencer par vérifier l’état de WebSphere Application Server.
 
-## Affichage de l’état de WebSphere Application Server  {#view-the-status-of-websphere-application-server}
+## Affichage de l’état de WebSphere Application Server {#view-the-status-of-websphere-application-server}
 
 1. Ouvrez une invite de commande et accédez au répertoire *[racine du serveur d’applications]*/bin.
 1. Saisissez la commande suivante en remplaçant *nom_serveur* par le nom de WebSphere Application Server :
@@ -45,4 +44,3 @@ Plusieurs procédures nécessitent d’arrêter ou de démarrer l’instance de 
 
    * (Windows) `stopServer.bat`*nom_serveur*
    * (Linux, UNIX) ./ `stopServer.sh`*nom_serveur*
-
