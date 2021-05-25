@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
-translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+exl-id: 37d6187f-4f91-4ad4-b0d6-eaae165abe64
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 97%
 
 ---
-
 
 # Répertoire de stockage global de documents{#global-document-storage-directory}
 
@@ -70,7 +69,7 @@ Les données d’application AEM forms résident dans le répertoire de stockage
  </tbody> 
 </table>
 
-## Configuration du répertoire de stockage global de document  {#configuring-the-gds-directory}
+## Configuration du répertoire de stockage global de document {#configuring-the-gds-directory}
 
 L’emplacement du répertoire de stockage global de documents peut être configuré manuellement pendant la procédure d’installation d’AEM forms. Si le paramètre d’emplacement du stockage global de documents n’est pas défini pendant l’installation, l’emplacement par défaut utilisé est un sous-répertoire de l’emplacement d’installation du serveur d’applications :
 
@@ -99,11 +98,10 @@ AEM forms est constitué de deux types de fichiers de déploiement : les conten
 * adobe-core-*[appserver]*.ear
 * adobe-core-*[appserver]*-*[OS]*.ear
 
-L’implémentation d’AEM forms implique le déploiement des fichiers EAR assemblés et des fichiers de prise en charge sur le serveur d’applications sur lequel vous envisagez d’exécuter la solution AEM forms. Si vous avez configuré et assemblé plusieurs modules, les modules déployables sont contenus dans les fichiers EAR déployables. Pour déployer ces fichiers, copiez-les dans le répertoire d’accueil *[du serveur d’applications]*\server\all\deploy directory.
+L’implémentation d’AEM forms implique le déploiement des fichiers EAR assemblés et des fichiers de prise en charge sur le serveur d’applications sur lequel vous envisagez d’exécuter la solution AEM forms. Si vous avez configuré et assemblé plusieurs modules, les modules déployables sont contenus dans les fichiers EAR déployables. Pour déployer ces fichiers, copiez-les sur la *[page d’accueil du serveur d’applications]*\server\all\deploy directory.
 
 Les modules et les fichiers d’archive d’AEM forms sont compressés dans des fichiers JAR. Comme ce ne sont pas des fichiers J2EE, ils ne sont pas déployés sur le serveur d’applications. Ils sont copiés dans le répertoire de stockage global de documents et une référence à leur emplacement est stockée dans la base de données AEM forms. C’est pourquoi le répertoire de stockage global de documents doit être partagé par tous les nœuds de la grappe. Ces derniers doivent avoir accès au répertoire de stockage central des DSC.
 
 >[!NOTE]
 >
 >avant de déployer les conteneurs de service, vérifiez que vous avez créé et configuré le répertoire de stockage global de documents (voir [Configuration du répertoire de stockage global de documents](global-document-storage-directory.md#configuring-the-gds-directory)).
-
