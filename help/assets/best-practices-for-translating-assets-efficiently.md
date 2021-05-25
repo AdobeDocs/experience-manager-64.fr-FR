@@ -2,18 +2,17 @@
 title: Meilleures pratiques pour une traduction efficace des ressources
 description: Meilleures pratiques pour une gestion efficace des ressources afin de synchroniser les diverses versions traduites et de rationaliser les workflows de traduction.
 contentOwner: AG
-feature: Translation
+feature: Traduction
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '502'
 ht-degree: 98%
 
 ---
 
-
-# Meilleures pratiques pour traduire efficacement les ressources {#best-practices-for-translating-assets-efficiently}
+# Bonnes pratiques pour traduire les ressources efficacement {#best-practices-for-translating-assets-efficiently}
 
 Adobe Experience Manager (AEM) Assets prend en charge des workflow multilingues permettant de traduire les fichiers binaires, les métadonnées et les balises des ressources numériques en plusieurs paramètres régionaux et de gérer les ressources traduites. Pour plus d’informations, voir [Ressources multilingues](multilingual-assets.md).
 
@@ -48,4 +47,3 @@ Vous pouvez également apporter des modifications de configuration à quelques w
 
 1. [Configurez la structure d’intégration de traduction](/help/sites-administering/tc-tic.md) pour arrêter la traduction des fichiers binaires des ressources. Désactivez l’option « Traduire les ressources » dans l’onglet « Ressources » pour arrêter la traduction des fichiers binaires des ressources.
 1. Traduisez les métadonnées/balises des ressources à l’aide des [workflow des ressources multilingues](multilingual-assets.md).
-
