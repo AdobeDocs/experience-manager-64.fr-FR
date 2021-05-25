@@ -9,34 +9,33 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
-translation-type: tm+mt
-source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+exl-id: e45b56e9-2fd1-4c29-9384-350e1376c193
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 72%
 
 ---
 
-
 # Implémentation de l’appellation des pages côté serveur pour Analytics{#implementing-server-side-page-naming-for-analytics}
 
 Adobe Analytics utilise la propriété `s.pageName` pour identifier les pages de façon unique et pour associer les données qui sont collectées pour les pages. En règle générale, vous effectuez les tâches suivantes dans AEM afin d’attribuer à cette propriété une valeur qu’AEM envoie à Analytics :
 
-* Utilisez la structure de service cloud Analytics pour mapper une variable CQ sur la propriété `s.pageName` d’Analytics (Voir [Mappage des données des composants avec les propriétés Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md).)
+* Utilisez la structure de service cloud Analytics pour mapper une variable CQ sur la propriété `s.pageName` d’Analytics (Voir [Mappage des données de composant avec les propriétés Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md).)
 
-* Créez le composant de page de sorte qu’il contienne la variable CQ que vous mappez sur la propriété `s.pageName` (Voir [Mise en oeuvre du suivi des Adobe Analytics pour les composants personnalisés](/help/sites-developing/extending-analytics-components.md).)
+* Créez le composant de page de sorte qu’il contienne la variable CQ que vous mappez sur la propriété `s.pageName` (Voir [Mise en oeuvre du suivi Adobe Analytics pour les composants personnalisés](/help/sites-developing/extending-analytics-components.md).)
 
-Pour afficher les données de rapport Analytics dans la console Sites et dans Content Insight, AEM nécessite la valeur de la propriété `s.pageName` pour chaque page. L’API Java d’AEM Analytics définit l’interface `AnalyticsPageNameProvider` que vous implémentez pour fournir à la console Sites et à Content Insights la valeur de la propriété `s.pageName`. Votre service `AnaltyicsPageNameProvider` résout la propriété pageName du serveur à des fins de rapports, car elle peut être définie de manière dynamique à l’aide de JavaScript sur le client à des fins de suivi.
+Pour afficher les données de rapport Analytics dans la console Sites et dans Content Insight, AEM nécessite la valeur de la propriété `s.pageName` pour chaque page. L’API Java Analytics AEM définit l’interface `AnalyticsPageNameProvider` que vous implémentez pour fournir à la console Sites et à Content Insights la valeur de la propriété `s.pageName`. Votre service `AnaltyicsPageNameProvider` résout la propriété pageName sur le serveur à des fins de création de rapports, car elle peut être définie dynamiquement à l’aide de JavaScript sur le client à des fins de suivi.
 
 ## Service Fournisseur de noms de page Analytics par défaut {#the-default-analytics-page-name-provider-service}
 
-Le service `DefaultPageNameProvider` est le service par défaut qui détermine la valeur de la propriété `s.pageName` à utiliser pour récupérer les données Analytics d’une page. Le service fonctionne conjointement avec le composant de page de fondation AEM ( `/libs/foundation/components/page`). Ce composant de page définit les variables CQ suivantes qui sont censées être mappées sur la propriété `s.pageName` :
+Le service `DefaultPageNameProvider` est le service par défaut qui détermine la valeur de la propriété `s.pageName` à utiliser pour récupérer les données Analytics d’une page. Le service fonctionne conjointement avec le composant de page de base AEM ( `/libs/foundation/components/page`). Ce composant de page définit les variables CQ suivantes qui sont censées être mappées sur la propriété `s.pageName` :
 
 * `pagedata.path` : la valeur est définie sur le chemin d’accès de la page.
 * `pagedata.title` : la valeur est définie sur le titre de la page.
 * `pagedata.navTitle` : la valeur est définie sur le titre de navigation de la page.
 
-Le service `DefaultPageNameProvider` détermine laquelle de ces variables CQ est mappée à la propriété `s.pageName` dans la structure de service cloud d’Analytics. Il détermine ensuite la propriété de page appropriée à utiliser pour récupérer les données de rapport Analytics :
+Le service `DefaultPageNameProvider` détermine laquelle de ces variables CQ est mappée à la propriété `s.pageName` dans la structure de service cloud Analytics. Il détermine ensuite la propriété de page appropriée à utiliser pour récupérer les données de rapport Analytics :
 
 * `pagedata.path`: Le service utilise  `page.getPath()`
 
@@ -44,9 +43,9 @@ Le service `DefaultPageNameProvider` détermine laquelle de ces variables CQ est
 
 * `pagedata.navTitle`: Le service utilise  `page.getNavigationTitle()`
 
-L&#39;objet `page` est l&#39;objet Java [ `com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) de la page.
+L’objet `page` est l’objet Java [ `com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) de la page.
 
-Si vous ne mappez pas une variable CQ à la propriété `s.pageName` dans la structure, la valeur de `s.pageName` est générée à partir du chemin de page. Par exemple, la page avec le chemin `/content/geometrixx/en` utilise la valeur `content:geometrixx:en` pour `s.pageName`.
+Si vous ne mappez pas de variable CQ avec la propriété `s.pageName` dans l’infrastructure, la valeur de `s.pageName` est générée à partir du chemin de la page. Par exemple, la page avec le chemin `/content/geometrixx/en` utilise la valeur `content:geometrixx:en` pour `s.pageName`.
 
 >[!NOTE]
 >
@@ -83,7 +82,7 @@ L’interface AnalyticsPageNameProvider définit deux méthodes que vous devez m
 
 * `getPageName`: Renvoie une  `String` valeur qui représente la valeur à utiliser comme  `s.pageName` propriété.
 
-* `getResource`: Renvoie un  `org.apache.sling.api.resource.Resource` objet qui représente la page associée à la  `s.pageName` propriété.
+* `getResource`: Renvoie un  `org.apache.sling.api.resource.Resource` objet qui représente la page associée à la  `s.pageName` propriété .
 
 Les deux méthodes utilisent un objet `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameContext` comme paramètre. La classe `AnalyticsPageNameContext` fournit des informations sur le contexte des appels Analytics :
 
@@ -94,7 +93,7 @@ Les deux méthodes utilisent un objet `com.day.cq.analytics.sitecatalyst.Analyti
 
 La classe fournit également un setter pour le nom de la page.
 
-### Exemple d’implémentation de l’interface AnalyticsPageNameProvider  {#example-analyticspagenameprovider-implementation}
+### Exemple d’implémentation de l’interface AnalyticsPageNameProvider {#example-analyticspagenameprovider-implementation}
 
 L’exemple d’implémentation `AnalyticsPageNameProvider` suivant prend en charge un composant de page personnalisé :
 
@@ -251,4 +250,3 @@ public class ExamplePageNameProvider implements AnalyticsPageNameProvider {
     }
 }
 ```
-
