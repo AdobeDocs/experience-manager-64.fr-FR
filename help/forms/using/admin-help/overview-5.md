@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 207c6335-f700-48f1-814b-992692534f6c
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 217f0f80-fce6-4671-9853-633691d447f5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 89%
 
 ---
-
 
 # Introduction à l’utilisation de PDF Generator {#introduction-to-working-with-pdf-generator}
 
@@ -28,6 +27,5 @@ PDF Generator convertit de nombreux formats de fichier en PDF. Il convertit éga
 Vous pouvez envoyer des fichiers à traiter à PDF Generator de trois façons différentes :
 
 * Les administrateurs peuvent accéder aux pages PDFG dans Administration Console (voir [Conversion de fichiers à l’aide de PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)).
-* Les utilisateurs peuvent accéder aux pages d’utilisateur final de PDFG en se connectant à `http(s)://[server]:[port]/pdfgui`. De là, ils ont accès aux pages des services PDFG Network Printer, Create PDF, HTML to PDF, Export PDF et Optimize PDF.
-* Vous pouvez configurer les points de fin de ce service (Voir <!--Fix broken link Managing Endpoints and --> [Recommandations relatives au service Generate PDF](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).)
-
+* Les utilisateurs peuvent accéder aux pages des utilisateurs finaux de PDFG en se connectant à `http(s)://[server]:[port]/pdfgui`. De là, ils ont accès aux pages des services PDFG Network Printer, Create PDF, HTML to PDF, Export PDF et Optimize PDF.
+* Vous pouvez configurer les points de fin de ce service (Voir la section <!--Fix broken link Managing Endpoints and --> [Recommandations relatives au service Generate PDF](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).)
