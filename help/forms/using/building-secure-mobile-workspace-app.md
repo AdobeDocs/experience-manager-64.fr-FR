@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
-translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+exl-id: 7efc657e-b662-47db-8e70-62a37f3a3051
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 81%
 
 ---
 
-
-# Création d’une application AEM Forms sécurisée pour iOS  {#building-a-secure-aem-forms-app-for-ios}
+# Création d’une application AEM Forms sécurisée pour iOS {#building-a-secure-aem-forms-app-for-ios}
 
 Vous devez archiver le projet Xcode pour l’application AEM Forms afin de générer le programme d’installation (un fichier .ipa) et une liste de propriétés (un fichier .plist). Le fichier de liste de propriétés contient les informations de configuration de l’application interne hébergée, telles que le nom de l’application et l’emplacement où elle est hébergée. Pour en savoir plus sur le fichier de liste de propriétés, consultez [A propos des fichiers de liste de propriétés d’informations](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 
@@ -35,8 +34,8 @@ Vous devez archiver le projet Xcode pour l’application AEM Forms afin de gén�
 1. Téléchargez le profil d’approvisionnement et ajoutez-le à Xcode et à l’iPad.
 1. Ouvrez une session sur l’ordinateur Mac sur lequel Xcode et le SDK iOS sont installés et configurés.
 1. Ouvrez le projet `AEM Forms.xcodeproj` dans Xcode.
-1. Cliquez sur **[!UICONTROL AEM Forms]**, sous **[!UICONTROL TARGETS]**, sélectionnez **[!UICONTROL AEM Forms]**. Sélectionnez l’onglet **[!UICONTROL Créer des paramètres]**, recherchez la section **[!UICONTROL Droits de signature de code]** et, dans la liste déroulante Droits, sélectionnez l’option **[!UICONTROL LC Enterprise]**.
-1. Trouvez et ouvrez le fichier `LC Enterprise.entitlements` dans Xcode pour le modifier. Sous les droits **XCode, **ajoutez la même paire clé-valeur que dans votre profil de mise en service.
+1. Cliquez sur **[!UICONTROL AEM Forms]**, sous **[!UICONTROL TARGETS]**, sélectionnez **[!UICONTROL AEM Forms]**. Sélectionnez l’onglet **[!UICONTROL Paramètres de génération]**, recherchez la section **[!UICONTROL Droit de signature de code]** et, dans la liste déroulante Droits, sélectionnez l’option **[!UICONTROL LC Enterprise]**.
+1. Trouvez et ouvrez le fichier `LC Enterprise.entitlements` dans Xcode pour le modifier. Sous les droits **XCode, **ajoutez la même paire clé-valeur que celle présente dans votre profil d’approvisionnement.
 1. Sous l’onglet **[!UICONTROL Paramètres de génération]**, cliquez sur **[!UICONTROL Tous]**, puis sur **[!UICONTROL Combiné]**.
 1. Dans la liste des **[!UICONTROL Paramètres]**, développez **[!UICONTROL Signature de code]**. 
 1. Pour **[!UICONTROL Identité de signature de code]**, sélectionnez la signature appropriée. Vérifiez que la même signature est sélectionnée pour **[!UICONTROL Débogage]**, **[!UICONTROL Version finale]** et **[!UICONTROL N’importe quel SDK iOS]**.
