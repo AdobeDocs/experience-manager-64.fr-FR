@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: a7be7d33-9d06-4d07-b7a0-e23251e26cb8
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 706ffc8b-3004-4413-aeb5-d97c0da78040
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 100%
 
 ---
-
 
 # La prochaine version…{#the-next-release}
 
