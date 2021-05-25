@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: e30e5a21-ac86-4653-bd1f-7351852db3f3
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 41727155-2a67-44b6-b925-22001891a348
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2289'
 ht-degree: 98%
 
 ---
-
 
 # Configuration d’une campagne{#setting-up-your-campaign}
 
@@ -64,7 +63,7 @@ Pour créer une marque, procédez comme suit :
 
 1. Cliquez sur **Créer**. Votre nouvelle marque s’affiche alors dans MCM (avec une icône par défaut).
 
-### Définition des propriétés de votre nouvelle marque  {#defining-the-properties-for-your-new-brand}
+### Définition des propriétés de votre nouvelle marque {#defining-the-properties-for-your-new-brand}
 
 1. A partir de **Campagnes**, dans le volet de gauche, sélectionnez l’icône de votre nouvelle marque dans le volet de droite, puis cliquez sur **Propriétés...**
 
@@ -187,7 +186,7 @@ Création manuelle d’une piste :
 
    ![screen_shot_2012-02-21at115045am](assets/screen_shot_2012-02-21at115045am.png)
 
-1. Saisissez les informations de l’adresse, si nécessaire. Cliquez sur **Enregistrer** pour enregistrer la piste. Si vous devez ajouter d&#39;autres pistes, cliquez sur** Enregistrer et nouveau**.
+1. Saisissez les informations de l’adresse, si nécessaire. Cliquez sur **Enregistrer** pour enregistrer la piste. Si vous devez ajouter d’autres pistes, cliquez sur** Enregistrer et nouveau**.
 
    La nouvelle piste s’affiche dans le volet Pistes. Lorsque vous cliquez sur l’entrée, toutes les informations saisies s’affichent dans le volet de droite. Une fois une piste créée, vous pouvez l’ajouter à une liste.
 
@@ -232,7 +231,7 @@ Importation de pistes à partir d’une liste de valeurs séparées par des virg
    >
    >La première ligne de la liste CSV contient des étiquettes dont la formulation doit être parfaitement identique à l’exemple ci-dessous :
    >
-   >`email,givenName,familyName` - s&#39;il est écrit comme  `givenname`par exemple, le système ne le reconnaîtra pas.
+   >`email,givenName,familyName` - s’il est écrit en tant que  `givenname`, par exemple, le système ne le reconnaîtra pas.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
@@ -256,7 +255,7 @@ Ajout de pistes à des listes préexistantes :
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. Dans le menu **Outils**, sélectionnez **Ajouter à la liste.** La **Ajoute à la Liste **fenêtre s&#39;ouvre.
+1. Dans le menu **Outils**, sélectionnez **Ajouter à la liste.** La fenêtre **Ajouter à la liste **s’affiche.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -400,4 +399,3 @@ Affichage des pistes qui appartiennent à une liste :
    ![screen_shot_2012-02-21at10828pm](assets/screen_shot_2012-02-21at10828pm.png)
 
 1. Cliquez sur **Fermer** pour revenir au MCM.
-
