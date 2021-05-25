@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
-translation-type: tm+mt
-source-git-commit: 363f084e086c2afd5585caa08d5b55c0e02bd4b2
+exl-id: 76e36d3b-4a8a-45ee-bb4e-28b150ec089c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 95%
 
 ---
-
 
 # Annotations lors de la modification d’une page{#annotations-when-editing-a-page}
 
@@ -39,7 +38,7 @@ Une annotation place une note autocollante colorée sur la page. L’annotation 
 
 >[!NOTE]
 >
->En fonction de vos besoins, vous pouvez également développer un processus d’envoi de notifications lorsque des annotations sont ajoutées, mises à jour ou supprimées.
+>Selon vos besoins, vous pouvez également développer un workflow pour envoyer des notifications lorsque des annotations sont ajoutées, mises à jour ou supprimées.
 
 ## Annotations {#annotations}
 
@@ -53,7 +52,7 @@ Vous pouvez déplacer l’annotation dans une nouvelle position sur la page. Cli
 
 Les annotations (y compris les schémas qui leur sont associés) sont également comprises dans toute action de copie, de découpe ou de suppression affectant le paragraphe auquel elles sont jointes ; pour les actions de copie et de découpe, la position de l’annotation (et des schémas qui lui sont associés) est conservée par rapport au paragraphe d’origine.
 
-La taille de l&#39;annotation peut également être augmentée ou diminuée en faisant glisser le coin inférieur droit.
+La taille de l’annotation peut également être augmentée ou réduite en faisant glisser le coin inférieur droit.
 
 À des fins de suivi, la ligne de pied de page indique l’utilisateur qui a créé l’annotation et la date. Les auteurs consécutifs peuvent modifier la même annotation (le pied de page est alors mis à jour), ou créer une nouvelle annotation pour le même paragraphe.
 
@@ -107,4 +106,3 @@ Les schémas sont une fonctionnalité des annotations qui vous permet de créer 
 
 * Si vous déplacez ou copiez un paragraphe, toutes les annotations qui lui sont associées, ainsi que leurs schémas, sont également déplacés ou copiés ; leur position par rapport au paragraphe demeure inchangée.
 * Si vous supprimez une annotation, tous les schémas qui lui sont associés sont également supprimés.
-
