@@ -10,7 +10,6 @@ discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 exl-id: dd43de7b-8556-4e3f-9d90-14f0f5bd13e7
 feature: Configuration
 role: Administrator,Business Practitioner,Developer
-translation-type: tm+mt
 source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
 source-wordcount: '275'
@@ -24,17 +23,17 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->Cette documentation décrit les fonctionnalités de Dynamic Media, qui sont intégrées directement dans AEM. Si vous utilisez Dynamic Media Classic intégré dans AEM, consultez la [documentation relative à l’intégration de Dynamic Media Classic](/help/sites-administering/scene7.md).
+>Cette documentation décrit les fonctionnalités de Dynamic Media, qui sont intégrées directement dans AEM. Si vous utilisez Dynamic Media Classic intégré à AEM, consultez la [documentation sur l’intégration de Dynamic Media Classic](/help/sites-administering/scene7.md).
 >
->Voir [Scénario à double usage](/help/sites-administering/scene7.md#dual-use-scenario) pour connaître les moments où vous pouvez vouloir utiliser AEM intégré à Dynamic Media Classic avec Dynamic Media.
+>Voir [Scénario à double utilisation](/help/sites-administering/scene7.md#dual-use-scenario) pour connaître les cas où vous pouvez utiliser AEM intégré à Dynamic Media Classic avec Dynamic Media.
 
 Si vous administrez des médias dynamiques, les rubriques suivantes peuvent vous intéresser :
 
-* [Configuration du mode](config-dms7.md)  Dynamic Media-Scene7 - Utilisez cette configuration si vous êtes un nouveau client Dynamic Media.
-* [Configuration du mode](config-dynamic.md)  Dynamic Media-Hybrid - Utilisez cette configuration si vous êtes un utilisateur Dynamic Media existant qui effectue une mise à niveau AEM.
+* [Configuration du mode](config-dms7.md)  Dynamic Media-Scene7 : utilisez cette configuration si vous êtes un nouveau client Dynamic Media.
+* [Configuration du mode](config-dynamic.md)  hybride Dynamic Media : utilisez cette configuration si vous êtes déjà un client Dynamic Media effectuant une mise à niveau AEM.
 * [Gestion des paramètres d’image prédéfinis](managing-image-presets.md)
 * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
-* [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md)
+* [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md)
 
 Voir aussi les rubriques suivantes :
 
