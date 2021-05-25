@@ -2,16 +2,15 @@
 title: Métadonnées en cascade
 description: Cet article décrit comment définir des métadonnées en cascade pour des ressources.
 contentOwner: AG
-feature: Metadata
+feature: 'Métadonnées  '
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: ea6187e8-075d-4666-afc5-01c97deccc11
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '981'
 ht-degree: 95%
 
 ---
-
 
 # Métadonnées en cascade {#cascading-metadata}
 
@@ -50,7 +49,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. (Facultatif) Dans l’éditeur de schéma de métadonnées, créez un champ pour l’application de conditions. Spécifiez un nom et un chemin de propriété sous l’onglet **[!UICONTROL Paramètres.]**
 
-   Pour créer un nouvel onglet, appuyez/cliquez sur **[!UICONTROL +]** pour ajouter un onglet, puis ajoutez un champ de métadonnées.
+   Pour créer un onglet, appuyez/cliquez sur **[!UICONTROL +]** pour ajouter un onglet, puis ajoutez un champ de métadonnées.
 
    ![add_tab](assets/add_tab.png)
 
@@ -73,7 +72,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    >[!NOTE]
    >
-   >Lorsque vous ajoutez des choix, si vous cliquez sur le champ de liste déroulante, l’interface se déforme et l’icône de suppression des choix cesse de fonctionner. Lorsque vous ajoutez les options à la liste déroulante, ne cliquez pas sur Précédent dans la liste déroulante tant que vous n’avez pas enregistré les modifications. Si vous rencontrez ce problème, enregistrez le schéma et rouvrez-le pour poursuivre l’édition.
+   >Lorsque vous ajoutez des choix, si vous cliquez sur le champ de liste déroulante, l’interface se déforme et l’icône de suppression des choix cesse de fonctionner. Lorsque vous ajoutez des choix à la liste déroulante, ne cliquez pas de nouveau sur la liste déroulante tant que vous n’avez pas enregistré les modifications. Si vous rencontrez ce problème, enregistrez le schéma et rouvrez-le pour poursuivre l’édition.
 
 1. (Facultatif) Ajoutez les autres champs requis ; par exemple, le format, le codec et la durée de la ressource de type vidéo.
 
