@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 9e93b28b-627d-4676-82a6-d719de4d152a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 94%
 
 ---
-
 
 # Recherche{#search-features}
 
@@ -114,10 +113,9 @@ Outre la recherche selon diverses facettes, vous pouvez également enregistrer u
 
 1. Une fois enregistrée, vous pouvez :
 
-   * Cliquer sur la **croix** (à côté du nom de la recherche enregistrée) pour lancer une nouvelle requête (la recherche enregistrée elle-même ne sera pas supprimée).
-   * **Modifier la recherche enregistrée**, modifier les critères de recherche, puis **enregistrer** la recherche une nouvelle fois.
+   * cliquer sur la **croix** (à côté du nom de la recherche enregistrée) pour lancer une nouvelle requête (la recherche enregistrée elle-même ne sera pas supprimée) ;
+   * **modifier la recherche enregistrée**, modifier les critères de recherche, puis **enregistrer** la recherche une nouvelle fois.
 
 Les recherches enregistrées peuvent être modifiées en sélectionnant la recherche enregistrée et en cliquant sur **Modifier la recherche enregistrée** au bas du panneau de recherche.
 
 ![screen_shot_2018-03-23at102213](assets/screen_shot_2018-03-23at102213.png)
-
