@@ -2,16 +2,15 @@
 title: Métadonnées XMP
 description: Découvrez le standard de métadonnées XMP (Extensible Metadata Platform) utilisé par AEM Assets pour la gestion des métadonnées. XMP offre un format standard pour la création, le traitement et l’échange de métadonnées pour une multitude d’applications.
 contentOwner: AG
-feature: Metadata
+feature: 'Métadonnées  '
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 84%
+source-wordcount: '816'
+ht-degree: 83%
 
 ---
-
 
 # Métadonnées XMP {#xmp-metadata}
 
@@ -21,9 +20,9 @@ En plus d’un codage de métadonnées universel qui peut être incorporé dans 
 
 La [spécification XMP](https://www.adobe.com/devnet/xmp.html) est disponible auprès d’Adobe.
 
-## Qu&#39;est-ce que XMP ? {#what-is-xmp}
+## Qu&#39;est-ce XMP ? {#what-is-xmp}
 
-AEM Assets prend nativement en charge le XMP - la plateforme de métadonnées extensible pilotée par l&#39;Adobe. XMP est une norme de traitement et de stockage des métadonnées normalisées et propriétaires dans les ressources numériques. XMP est conçu pour être la norme commune qui permet à plusieurs applications de travailler efficacement avec les métadonnées.
+AEM Assets prend en charge de manière native le XMP : la plateforme de métadonnées extensible pilotée par Adobe. XMP est une norme de traitement et de stockage de métadonnées normalisées et propriétaires dans les ressources numériques. XMP est conçu pour être la norme commune qui permet à plusieurs applications de fonctionner efficacement avec les métadonnées.
 
 Les professionnels de la production, par exemple, utilisent la prise en charge du format XMP intégré au sein des applications d’Adobe pour communiquer les informations entre divers formats de fichier. Le référentiel AEM Assets extrait les métadonnées XMP et les utilise pour gérer le cycle de vie du contenu. Il offre également la possibilité de créer des workflows d’automatisation.
 
@@ -31,8 +30,8 @@ XMP normalise la façon dont les métadonnées sont définies, créées et trait
 
 Toutes les métadonnées héritées d’EXIF, d’ID3 ou de Microsoft Office sont automatiquement converties au format XMP, qui peut être étendu pour prendre en charge le schéma de métadonnées spécifiques au client comme les catalogues de produits.
 
-Les métadonnées XMP sont composées d’un ensemble de propriétés. Ces propriétés sont toujours associées à un\
-une entité particulière appelée ressource ; c&#39;est-à-dire que les propriétés sont &quot;environ&quot; la ressource. Dans le cas de XMP, il s’agit toujours de la ressource (ou actif).
+Les métadonnées de XMP se composent d’un ensemble de propriétés. Ces propriétés sont toujours associées à une propriété\
+une entité particulière appelée ressource ; en d’autres termes, les propriétés portent sur la ressource. Dans le cas de XMP, il s’agit toujours de la ressource (ou actif).
 
 ### Adobe {#adobe}
 
@@ -67,8 +66,8 @@ Les sections ci-après décrivent les notions fondamentales relatives à XMP, no
 
 ### Espaces de noms et schémas {#namespaces-and-schemata}
 
-Un schéma XMP est un ensemble de noms de propriété dans un espace de nommage XML commun qui inclut\
-le type de données et les informations descriptives. Un schéma XMP est identifié par son URI d’espace de nommage XML. L’utilisation d’espaces de nommage empêche les conflits entre les propriétés de différents schémas portant le même nom mais une signification différente.
+Un schéma XMP est un ensemble de noms de propriété dans un espace de noms XML commun qui comprend\
+le type de données et des informations descriptives. Un schéma XMP est identifié par son URI d’espace de noms XML. L’utilisation d’espaces de noms empêche les conflits entre les propriétés de différents schémas qui portent le même nom mais ont une signification différente.
 
 Par exemple, la propriété **Créateur** de deux schémas conçus indépendamment peut signifier la personne ayant créé la ressource ou l’application l’ayant créée (Adobe Photoshop, par exemple).
 
