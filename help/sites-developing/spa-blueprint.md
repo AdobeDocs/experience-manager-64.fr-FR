@@ -8,24 +8,23 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
-translation-type: tm+mt
-source-git-commit: 67712638f9e35b8a6b4b3b9cdd5c507a91222dfd
+exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2124'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
+# Plan directeur d’applications sur une seule page (SPA) {#spa-blueprint}
 
-# Plan directeur d’applications sur une seule page (SPA){#spa-blueprint}
-
-Pour permettre à l’auteur d’utiliser l’AEM SPA Editor pour modifier le contenu d’un SPA, le  doit respecter certaines exigences, qui sont décrites dans ce document.
+Pour permettre à l’auteur d’utiliser l’éditeur SPA d’AEM afin de modifier le contenu d’un , des exigences doivent être respectées, qui sont décrites dans ce document.
 
 >[!NOTE]
 >
->La fonction Éditeur d’application à page unique (SPA) nécessite AEM Service Pack 2 6.4 ou version ultérieure.
+>La fonction Éditeur d’application sur une seule page (SPA) requiert AEM Service Pack 2 ou version ultérieure.
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
 ## Présentation {#introduction}
 
@@ -39,7 +38,7 @@ Ce document décrit le contrat général que tout framework de SPA devrait respe
 
 >[!CAUTION]
 >
->Bien que les capacités SPA de AEM soient indépendantes de la structure, seules les structures React et Angular sont actuellement prises en charge.
+>Bien que les fonctionnalités SPA d’AEM soient indépendantes de la structure, seules les structures React et Angular sont actuellement prises en charge.
 
 Pour que l’auteur puisse utiliser l’éditeur de page AEM pour modifier les données exposées par un framework d’applications sur une seule page, un projet doit être en mesure d’interpréter la structure du modèle qui représente la sémantique des données stockées pour une application dans le référentiel AEM. Pour atteindre cet objectif, deux bibliothèques indépendantes du framework sont fournies : `PageModelManager` et `ComponentMapping`.
 
@@ -77,9 +76,9 @@ Le reste de ce document, supposé être indépendant du framework, décrit les e
 
 La structure de contenu de la page est stockée dans AEM. Le modèle de la page est utilisé pour mapper et instancier les composants de l’application sur une seule page (SPA). Les développeurs d’applications sur une seule page créent des composants SPA qu’ils mappent sur des composants AEM. Ils utilisent pour cela le type de ressource (ou le chemin d’accès au composant AEM) comme clé unique.
 
-Les composants SPA doivent être synchronisés avec le modèle de page et être mis à jour en fonction des modifications apportées à son contenu. Un modèle qui a recours à des composants dynamiques doit être utilisé pour instancier des composants à la volée, suivant la structure de modèle de page fournie.
+Les composants de la SPA doivent être synchronisés avec le modèle de page et mis à jour avec toute modification apportée au contenu. Un modèle qui a recours à des composants dynamiques doit être utilisé pour instancier des composants à la volée, suivant la structure de modèle de page fournie.
 
-### Champs Meta   {#meta-fields}
+### Champs Meta {#meta-fields}
 
 Le modèle de page utilise l’outil d’exportation de modèle JSON, lui-même basé sur l’API [Sling Model](https://sling.apache.org/documentation/bundles/models.html). Les modèles Sling exportables exposent la liste de champs suivante afin de permettre aux bibliothèques sous-jacentes d’interpréter le modèle de données :
 
@@ -110,7 +109,7 @@ Module npm : [@adobe/aem-response-editable-components](https://www.npmjs.com/pa
 
 #### Angular {#angular}
 
-module npm : à venir
+module npm : bientôt disponible
 
 ## Services et composants principaux {#main-services-and-components}
 
@@ -156,7 +155,7 @@ Le conteneur obtient dynamiquement les composants enfants à partir du magasin d
 
 ### Page {#page}
 
-Le composant `Page` étend le composant `Container`. Un conteneur est un composant conçu pour contenir des composants enfants et effectuer le rendu des composants enfants, y compris les pages enfants. Pour ce faire, le conteneur effectue une itération sur les propriétés `:itemsOrder`, `:items` et `:children` de son modèle. Le composant `Page` obtient dynamiquement les composants enfants à partir du magasin de la bibliothèque [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping). `Page` assure l’instanciation des composants enfants.
+Le composant `Page` étend le composant `Container`. Un conteneur est un composant conçu pour contenir des composants enfants et effectuer le rendu des composants enfants, y compris les pages enfants. Pour ce faire, le conteneur effectue une itération sur les propriétés `:itemsOrder`, `:items` et `:children` de son modèle. Le composant `Page` récupère dynamiquement les composants enfants à partir du magasin de la bibliothèque [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping). `Page` assure l’instanciation des composants enfants.
 
 ### Grille réactive {#responsive-grid}
 
@@ -169,9 +168,9 @@ Le composant Grille réactive doit être fourni prémappé à son homologue AEM,
 * `gridClassNames:` noms de classes fournis pour la grille réactive
 * `columnClassNames:` noms de classes fournis pour la colonne réactive
 
-Voir aussi la ressource npm [@adobe/aem-response-editable-components#srccomponentsResponvegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
+Voir aussi la ressource npm [@adobe/aem-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
-#### Espace réservé de la grille de réponse {#placeholder-of-the-reponsive-grid}
+#### Espace réservé de la grille réactive {#placeholder-of-the-reponsive-grid}
 
 Le composant SPA est mappé sur un conteneur graphique, tel que Grille réactive, et doit ajouter un espace réservé enfant virtuel lorsque la création du contenu est en cours. Lorsque le contenu de l’application sur une seule page est créé par l’éditeur de page, il est incorporé dans ce dernier à l’aide d’un iFrame et l’attribut `data-cq-editor` est ajouté au nœud de document de ce contenu. Lorsque l’attribut `data-cq-editor` est présent, le conteneur doit inclure un HTMLElement pour représenter la zone avec laquelle l’auteur interagit lors de l’insertion d’un nouveau composant dans la page.
 
@@ -280,7 +279,7 @@ L’application assure le routage. Le développeur front-end doit commencer par 
 
 La bibliothèque [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) sous-jacente et son module [`ModelRouter`](/help/sites-developing/spa-routing.md) (activé par défaut) assurent la prérécupération et l’accès au modèle associé à un chemin de ressource donné.
 
-Les deux entités se rapportent à la notion de routage, mais [`ModelRouter`](/help/sites-developing/spa-routing.md) n&#39;est responsable que du chargement de [`PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) avec un modèle de données structuré en synchronisation avec l&#39;état actuel de l&#39;application.
+Les deux entités se rapportent à la notion de routage, mais [`ModelRouter`](/help/sites-developing/spa-routing.md) est uniquement responsable du chargement de [`PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) avec un modèle de données structuré en synchronisation avec l’état actuel de l’application.
 
 Consultez l’article [Routage de modèle de SPA](/help/sites-developing/spa-routing.md) pour plus d’informations.
 
