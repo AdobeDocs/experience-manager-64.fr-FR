@@ -1,7 +1,7 @@
 ---
 title: Gestion des audiences
 seo-title: Gestion des audiences
-description: La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub. ou contexte client
+description: La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub. ou ClientContext
 seo-description: 'La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub ou ClientContext :'
 uuid: 7112a192-5f58-47ce-95fa-90638c7cdb18
 contentOwner: msm-service
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 0e842725-57be-4a16-b972-f5677eaad8cb
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+exl-id: dcd54a52-f610-4c68-8547-39562c062d84
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 94%
 
 ---
-
 
 # Gestion des audiences{#managing-audiences}
 
@@ -25,7 +24,7 @@ La console Audiences vous permet de créer, d’organiser et de gérer les audie
 * Ajouter des audiences (audiences d’Adobe Target ou segments ContextHub).
 * Gérer des audiences.
 
-Une Audience, appelée *segment* dans ContextHub et Client Context, est une classe de visiteurs définie par des critères spécifiques, qui détermine ensuite qui voit une activité ciblée. Lorsque vous ciblez une activité, vous pouvez sélectionner des audiences directement dans le processus de ciblage ou en créer de nouvelles dans la console Audiences.
+Une audience, appelée *segment* dans ContextHub et ClientContext, est une classe de visiteurs définie selon des critères spécifiques, qui détermine qui voit une activité ciblée. Lorsque vous ciblez une activité, vous pouvez sélectionner des audiences directement dans le processus de ciblage ou en créer de nouvelles dans la console Audiences.
 
 Dans la console Audiences, les audiences sont organisées par marque.
 
@@ -37,7 +36,7 @@ Les audiences sont accompagnées d’un libellé qui décrit le type d’audienc
 * CC - segment ClientContext
 * AT - audience Adobe Target
 
-## Création d’un segment ContextHub dans la console Audiences   {#creating-a-contexthub-segment-in-the-audiences-console}
+## Création d’un segment ContextHub dans la console Audiences  {#creating-a-contexthub-segment-in-the-audiences-console}
 
 Vous pouvez créer un segment ContextHub dans la console Audiences ou durant le processus de ciblage.
 
@@ -66,7 +65,7 @@ Lorsque vous utilisez plusieurs règles, elles sont combinées par l’opérateu
 
 >[!NOTE]
 >
->Si vous ne voyez pas l’option **Créer le public cible** dans le menu **Créer**, cela signifie que vous ne disposez pas des autorisations nécessaires pour créer une audience. Vous devez disposer d’autorisations d’écriture sous **/etc/segmentation** pour pouvoir créer des audiences. Le groupe content-authors dispose par défaut d’autorisations d’écriture.
+>Si vous ne voyez pas l’option **Créer le public cible** dans le menu **Créer**, cela signifie que vous ne disposez pas des autorisations nécessaires pour créer une audience. Vous avez besoin d’autorisations d’écriture sous **/etc/segmentation** pour pouvoir créer des audiences. Le groupe content-authors dispose par défaut d’autorisations d’écriture.
 
 Pour créer une audience Adobe Target :
 
@@ -110,4 +109,3 @@ Vous pouvez modifier n’importe quelle audience ContextHub ou ClientContext à 
 1. Dans la console Navigation, cliquez ou appuyez sur **Personnalisation**. Cliquez ou appuyez sur **Audiences**.
 1. Cliquez ou appuyez sur l’icône en regard du segment ContextHub ou ClientContext à modifier, puis cliquez ou appuyez sur **Modifier**.
 1. Apportez toutes les modifications dans l’éditeur de segment. Reportez-vous à la documentation relative à [ClientContext](/help/sites-administering/campaign-segmentation.md) ou à [ContextHub](/help/sites-administering/contexthub-config.md).
-
