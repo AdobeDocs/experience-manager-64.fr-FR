@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 49c9c9ab-632a-40f7-8c30-d6a8c0f1b420
-translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+exl-id: 92302067-3500-41ca-9855-87f36148bfbc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 76%
 
 ---
-
 
 # Configuration de la segmentation{#configuring-segmentation}
 
@@ -28,19 +27,19 @@ La segmentation est un élément clé de la création d’une campagne. Voir le 
 
 En fonction des informations que vous avez déjà collectées sur les visiteurs de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies requis pour votre contenu ciblé.
 
-Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Campagnes](/help/sites-authoring/personalization.md) du site Web. Les pages de teaser définies ici peuvent être ajoutées en tant que paragraphes de teaser à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
+Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Campagnes](/help/sites-authoring/personalization.md) du site web. Les pages de teaser définies ici peuvent être ajoutées en tant que paragraphes de teaser à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
 
 AEM vous permet de facilement créer et mettre à jour des segments, des teasers et des campagnes. Il vous permet également de vérifier les résultats de vos définitions de 
 
-L&#39;**éditeur de segments** vous permet de définir facilement un segment :
+L’ **éditeur de segment** vous permet de définir facilement un segment :
 
 ![segmenteditor-1](assets/segmenteditor-1.png)
 
 Vous pouvez **Modifier** chaque segment pour spécifier un facteur **Titre**, **Description** et **Amplifier**. Avec le sidekick, vous pouvez ajouter des conteneurs **ET** et **OU** pour définir la **Logique de segment**, puis ajouter des **Caractéristiques de segment** pour définir les critères de sélection.
 
-## Facteur d’amplification  {#boost-factor}
+## Facteur d’amplification {#boost-factor}
 
-Chaque segment possède un paramètre **Boost** qui est utilisé comme facteur de pondération ; un nombre plus élevé indique que le segment sera sélectionné de préférence à un segment dont le nombre est inférieur.
+Chaque segment possède un paramètre **Amplifier** utilisé comme facteur de pondération. un nombre plus élevé indique que le segment sera sélectionné de préférence à un segment dont le nombre est plus faible.
 
 * Valeur minimale : `0`
 * Valeur maximale : `1000000`
@@ -70,7 +69,7 @@ Les caractéristiques de segment suivantes sont disponibles clé en main ; elle
  <tbody> 
   <tr> 
    <td> Plage d’adresses IP<br /> </td> 
-   <td>Définit une plage d'adresses IP que le visiteur peut avoir.<br /> </td> 
+   <td>Définit une plage d’adresses IP que le visiteur peut avoir.<br /> </td> 
   </tr> 
   <tr> 
    <td> Accès à la page<br /> </td> 
@@ -82,7 +81,7 @@ Les caractéristiques de segment suivantes sont disponibles clé en main ; elle
   </tr> 
   <tr> 
    <td> Mots-clés de référence<br /> </td> 
-   <td>Mots-clés pour correspondre aux informations du site Web référent. <br /> </td> 
+   <td>Mots-clés à associer aux informations du site web de référence. <br /> </td> 
   </tr> 
   <tr> 
    <td> Script</td> 
@@ -94,11 +93,11 @@ Les caractéristiques de segment suivantes sont disponibles clé en main ; elle
   </tr> 
   <tr> 
    <td> Nuage de tags<br /> </td> 
-   <td>Balises à mettre en correspondance avec celles des pages visitées.<br /> </td> 
+   <td>Balises à associer à celles des pages visitées.<br /> </td> 
   </tr> 
   <tr> 
    <td> Âge de l’utilisateur<br /> </td> 
-   <td>Comme extrait du profil utilisateur.<br /> </td> 
+   <td>Extrait du profil utilisateur.<br /> </td> 
   </tr> 
   <tr> 
    <td> Propriété de l’utilisateur<br /> </td> 
@@ -107,7 +106,7 @@ Les caractéristiques de segment suivantes sont disponibles clé en main ; elle
  </tbody> 
 </table>
 
-Vous pouvez combiner ces caractéristiques à l’aide des opérateurs booléens OU et ET (voir [Création d’un segment](#creating-a-new-segment)) pour définir le scénario exact de sélection de ce segment.
+Vous pouvez combiner ces caractéristiques à l’aide des opérateurs booléens OR et AND (voir [Création d’un segment](#creating-a-new-segment)) pour définir le scénario exact de sélection de ce segment.
 
 Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été résolu. Si plusieurs segments sont applicables, le facteur **[Amplifier](/help/sites-administering/campaign-segmentation.md#boost-factor)** est également utilisé.
 
@@ -117,9 +116,9 @@ Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été
 
 >[!NOTE]
 >
->Les propriétés avec le suffixe **_i18n** sont définies par un script qui fait partie de l’interface utilisateur clientlib de la personnalisation. Toutes les bibliothèques clientes liées à l’interface utilisateur sont chargées à la création uniquement, car l’interface utilisateur n’est pas nécessaire lors de la publication.
+>Les propriétés comportant le suffixe **_i18n** sont définies par un script faisant partie de la bibliothèque cliente de l’interface utilisateur de la personnalisation. Toutes les bibliothèques clientes liées à l’interface utilisateur sont chargées à la création uniquement, car l’interface utilisateur n’est pas nécessaire lors de la publication.
 >
->Par conséquent, lors de la création d’un segment avec de telles propriétés, est-il normalement nécessaire de s’appuyer sur **browserFamily** par exemple au lieu de **browserFamily_i18n**.
+>Par conséquent, lors de la création d’un segment avec ces propriétés, il est normalement nécessaire de s’appuyer sur **browserFamily** par exemple au lieu de **browserFamily_i18n**.
 
 ## Création d’un segment {#creating-a-new-segment}
 
@@ -168,11 +167,11 @@ Puisque l’opérateur principal est OU, vous devez commencer par le **Conteneur
 Une fois le segment défini, les résultats potentiels peuvent être testés avec l’aide du **[ClientContext](/help/sites-administering/client-context.md)** :
 
 1. Sélectionnez le segment à tester.
-1. Appuyez sur les touches **[Ctrl-Alt-C](/help/sites-authoring/keyboard-shortcuts.md)** pour ouvrir le **[ClientContext](/help/sites-administering/client-context.md)**, qui affiche les données collectées. À des fins de test, vous pouvez **modifier** certaines valeurs ou **charger** un autre profil pour voir l&#39;impact.
+1. Appuyez sur les touches **[Ctrl-Alt-C](/help/sites-authoring/keyboard-shortcuts.md)** pour ouvrir le **[ClientContext](/help/sites-administering/client-context.md)**, qui affiche les données collectées. À des fins de test, vous pouvez **Modifier** certaines valeurs ou **Charger** un autre profil pour voir l’impact.
 
 1. En fonction des caractéristiques définies, les données disponibles pour la page en cours peuvent ou non correspondre à la définition de segment. Le statut de la correspondance s’affiche sous la définition.
 
-Par exemple, une seule définition de segment peut être fonction de l’âge et du sexe de l’utilisateur. Le chargement d’un profil spécifique montre que le segment a été résolu avec succès :
+Par exemple, une seule définition de segment peut être fonction de l’âge et du sexe de l’utilisateur. Le chargement d’un profil spécifique indique que le segment a été résolu avec succès :
 
 ![screen_shot_2012-02-02at105926am-1](assets/screen_shot_2012-02-02at105926am-1.png)
 
@@ -184,7 +183,7 @@ Ou non :
 >
 >Toutes les caractéristiques sont résolues immédiatement, bien que la plupart ne soient modifiées qu’au rechargement de la page. Les modifications apportées à la position de la souris sont visibles immédiatement, ce qui est utile à des fins de test.
 
-Ces tests peuvent également être effectués sur les pages de contenu et en association avec des composants **Teaser**.
+Ces tests peuvent également être effectués sur les pages de contenu et en combinaison avec les composants **Teaser**.
 
 Survoler la photographie d’un teaser avec la souris affiche les segments appliqués et indique s’ils sont actuellement résolus et, par conséquent, pourquoi l’instance de teaser actuelle a été sélectionnée :
 
