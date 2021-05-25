@@ -1,6 +1,6 @@
 ---
 title: Adobe Classifications
-seo-title: Classifications d’Adobes
+seo-title: Adobe des classifications
 description: Découvrez Adobe Classifications.
 seo-description: Découvrez Adobe Classifications.
 uuid: 57fb59f4-da90-4fe7-a5b1-c3bd51159a16
@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
-translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+exl-id: 25e58c68-5c67-4894-9a54-1717d90d7831
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 71%
 
 ---
 
-
 # Classifications Adobe{#adobe-classifications}
 
-Les classifications d&#39;Adobe exportent les données de classification vers [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de manière planifiée. L’exportateur est une implémentation de **com.adobe.cq.scheduled.exporter.Exporter**.
+Adobe Classifications exporte les données de classification vers [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de manière planifiée. L’exportateur est une implémentation de **com.adobe.cq.scheduled.exporter.Exporter**.
 
 Pour configurer cela :
 
@@ -35,13 +34,13 @@ Pour configurer cela :
 
    Les propriétés sont par exemple les suivantes :
 
-   | **Field (Champ)** | **Description** |
+   | **Champ** | **Description** |
    |---|---|
    | Activé | Sélectionnez **Oui** pour activer les paramètres d’Adobe Classifications. |
    | Remplacer en cas de conflit | Sélectionnez **Oui** pour remplacer toute collision de données. Par défaut, cette option est définie sur **Non**. |
    | Suppression traitée | Si elle est définie sur **Oui**, supprime les nœuds traités après leur exportation. La valeur par défaut est **Faux**. |
    | Description de la tâche d’exportation | Saisissez une description pour la tâche d’Adobe Classifications. |
-   | Message de notification | Entrez une adresse électronique pour la notification des classifications d’Adobes. |
+   | Message de notification | Saisissez une adresse électronique pour la notification Classifications d’Adobe. |
    | Suite de rapports | Saisissez la suite de rapports pour laquelle exécuter la tâche d’importation. |
    | Ensemble de données | Saisissez l’ID de relation de l’ensemble de données pour lequel exécuter la tâche d’importation. |
    | Transformateur | Dans le menu déroulant, sélectionnez une mise en œuvre de transformateur. |
@@ -50,29 +49,29 @@ Pour configurer cela :
 
 1. Cliquez sur **OK** pour enregistrer vos paramètres.
 
-## Modification de la taille des pages  {#modifying-page-size}
+## Modification de la taille des pages {#modifying-page-size}
 
-Les enregistrements sont traités par pages. Par défaut, les classifications d’Adobes créent des pages d’un format de page de 1 000.
+Les enregistrements sont traités par pages. Par défaut, Adobe Classifications crée des pages d’une taille de page de 1 000.
 
-Une page peut avoir une taille maximale de 25 000 par définition dans les Classifications d&#39;Adobe et peut être modifiée à partir de la console Felix. Au cours de l’exportation, les classifications d’Adobes verrouillent le noeud source afin d’éviter les modifications simultanées. Le nœud est déverrouillé après l’exportation, en cas d’erreur, ou lorsque la session est fermée.
+Une page peut avoir une taille maximale de 25 000 par définition dans les classifications d’Adobe et peut être modifiée à partir de la console Felix. Pendant l’exportation, Adobe Classifications verrouille le noeud source pour empêcher les modifications simultanées. Le nœud est déverrouillé après l’exportation, en cas d’erreur, ou lorsque la session est fermée.
 
 Pour modifier la taille de page :
 
-1. Accédez à la console OSGI à l’adresse **https://&lt;hôte>:&lt;port>/system/console/configMgr** et sélectionnez **Exportateur de classifications d’AEM d’Adobes**.
+1. Accédez à la console OSGI à l’adresse **https://&lt;host>:&lt;port>/system/console/configMgr** et sélectionnez **Adobe de l’exportateur de classifications AEM**.
 
    ![aa-26](assets/aa-26.png)
 
 1. Mettez à jour **Export Page Size** (Exporter la taille de page) selon les besoins, puis cliquez sur **Save** (Enregistrer).
 
-## SAINTDefaultTransformer  {#saintdefaulttransformer}
+## SAINTDefaultTransformer {#saintdefaulttransformer}
 
 >[!NOTE]
 >
 >Auparavant, Adobe Classifications était appelé exportateur SAINT.
 
-Un exportateur peut utiliser un transformateur pour transformer les données d’exportation vers un format spécifique. Pour les classifications d&#39;Adobe, une sous-interface `SAINTTransformer<String[]>` implémentant l&#39;interface Transformer a été fournie. Cette interface est utilisée pour limiter le type de données à `String[]` utilisé par l&#39;API de SAINT et pour disposer d&#39;une interface de marqueur pour trouver ces services à des fins de sélection.
+Un exportateur peut utiliser un transformateur pour transformer les données d’exportation vers un format spécifique. Pour les classifications d’Adobe, une sous-interface `SAINTTransformer<String[]>` mettant en oeuvre l’interface de transformateur a été fournie. Cette interface permet de limiter le type de données à `String[]` utilisé par l’API SAINT et de disposer d’une interface de marquage pour trouver ces services à sélectionner.
 
-Dans l’implémentation par défaut SAINTDefaultTransformer, les ressources enfants de la source d’exportation sont traitées comme des enregistrements avec des noms de propriété comme clés et des valeurs de propriété comme valeurs. La colonne **Clé** est automatiquement ajoutée en tant que première colonne ; sa valeur est le nom du nœud. Les propriétés espacées de noms (contenant :) ne sont pas prises en compte.
+Dans l’implémentation par défaut SAINTDefaultTransformer, les ressources enfants de la source de l’exportateur sont traitées comme des enregistrements avec des noms de propriété comme clés et des valeurs de propriété comme valeurs. La colonne **Clé** est automatiquement ajoutée en tant que première colonne ; sa valeur est le nom du nœud. Les propriétés d’espace de noms (contenant :) ne sont pas prises en compte.
 
 *Structure de nœud :*
 
@@ -88,7 +87,7 @@ Dans l’implémentation par défaut SAINTDefaultTransformer, les ressources enf
 
 **En-tête et enregistrement SAINT :**
 
-| **Clé** | **Produit** | **Prix** | **Taille** | **Couleur** | **Couleur^Code** |
+| **Clé** | **Produit** | **Prix** | **Taille** | **Couleur** | **Color^Code** |
 |---|---|---|---|---|---|
 | 1 | Mon nom de produit | 120,90 | M | black | 101 |
 
