@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e5f17ba8-8aab-4449-811a-20ad33de1c6f
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: f38057d7-b500-448a-8664-a45374d4cfea
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 99%
 
 ---
-
 
 # Gestion des informations d’identification HSM {#managing-hsm-credentials}
 
@@ -30,12 +29,12 @@ AEM Forms Digital Signatures peut utiliser les informations d’identification s
 >
 >Après avoir modifié votre configuration HSM, redémarrez le serveur AEM Forms.
 
-## Création d’un alias pour des informations d’identification HSM lorsque le périphérique HSM est en ligne  {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
+## Création d’un alias pour des informations d’identification HSM lorsque le périphérique HSM est en ligne {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification HSM, puis sur Ajouter.
 1. Dans la zone Nom du profil, saisissez une chaîne utilisée pour identifier l’alias. Cette valeur est utilisée en tant que propriété pour certaines opérations de Digital Signatures, comme l’opération de saisie du champ de signature.
 1. Dans la zone Bibliothèque PKCS11, saisissez le chemin d’accès complet à votre bibliothèque cliente HSM sur le serveur. Par exemple, `c:\Program Files\LunaSA\cryptoki.dll`. Dans un environnement organisé en grappe, ce chemin d’accès doit être identique pour l’ensemble des serveurs de la grappe.
-1. Cliquez sur Tester la connectivité du HSM. Si AEM Forms est en mesure de se connecter au périphérique HSM, un message s’affiche, indiquant que le module HSM est disponible. Cliquez sur Next (Suivant).
+1. Cliquez sur Tester la connectivité du HSM. Si AEM Forms est en mesure de se connecter au périphérique HSM, un message s’affiche, indiquant que le module HSM est disponible. Cliquez sur Suivant.
 1. Utilisez Nom du jeton, ID d’emplacement ou Index de liste d’emplacements pour identifier l’emplacement de stockage des informations d’identification dans le module HSM.
 
    * **Nom du jeton :** correspond au nom de la partition HSM à utiliser (par exemple, HSMPART1).
@@ -50,7 +49,7 @@ AEM Forms Digital Signatures peut utiliser les informations d’identification s
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification HSM, puis sur Ajouter.
 1. Dans la zone Nom du profil, saisissez une chaîne utilisée pour identifier l’alias. Cette valeur est utilisée en tant que propriété pour certaines opérations de Digital Signatures, comme l’opération de saisie du champ de signature.
 1. Dans la zone Bibliothèque PKCS11, saisissez le chemin d’accès complet à votre bibliothèque cliente HSM sur le serveur. Par exemple, `c:\Program Files\LunaSA\cryptoki.dll`. Dans un environnement organisé en grappe, ce chemin d’accès doit être identique pour l’ensemble des serveurs de la grappe.
-1. Activez la case à cocher Création de profil hors connexion. Cliquez sur Next (Suivant).
+1. Activez la case à cocher Création de profil hors connexion. Cliquez sur Suivant.
 1. Dans la liste Périphérique HSM, sélectionnez l’éditeur du périphérique HSM dans lequel les informations d’identification sont stockées.
 1. Dans la liste Type d’emplacement, sélectionnez Id d’emplacement, Index d’emplacement ou Nom du jeton et indiquez une valeur dans le champ Informations d’emplacement. AEM Forms utilise ces paramètres pour déterminer à quel endroit les informations d’identification sont stockées sur le HSM.
 
@@ -106,4 +105,3 @@ Ce mécanisme ne prend pas en charge la création en ligne de profils HSM ou les
 
 * Créez des informations d’identification client pour AEM Forms en lui transmettant le certificat du signataire. Suivez les étapes mentionnées dans la rubrique [Configuration de la prise en charge HSM pour AEM Forms ES à l’aide du JDK Sun sur une plateforme Windows 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html) pour plus d’informations. L’emplacement du service Web est transmise sous forme de propriété des informations d’identification. Les profils HSM créés à l’aide d’un certificat DER ou d’un certificat SHA-1 hex sont également pris en charge. Toutefois, si vous avez effectué la mise à niveau vers AEM forms à partir d’une version antérieure d’AEM forms, effectuez les modifications de client car les informations d’identification portent des données de certificat et de service Web.
 * L’emplacement du service Web est spécifié dans Administration Console pour le service Signature (voir [Paramètres du service Signature](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)). Ici, le client porte uniquement l’alias du profil HSM dans le Trust Store. Vous pouvez utiliser cette option directement sans modifications de client, même si vous avez effectué la mise à niveau vers AEM Forms à partir d’une version antérieure d’AEM Forms. Cette option ne prend pas en charge les profils HSM créés à l’aide d’un certificat SHA-1.
-
