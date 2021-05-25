@@ -9,28 +9,27 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 content-type: reference
 discoiquuid: 940e45b4-dbf1-4207-bd4a-cf677d645fb4
-translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+exl-id: a4cee2e6-a56f-4355-8176-b3ed7478a775
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 75%
 
 ---
 
-
 # Affichage des composants en fonction du modèle utilisé {#displaying-components-based-on-the-template-used}
 
 Lorsqu’un auteur de formulaire crée un formulaire adaptatif à l’aide d’un [modèle](/help/forms/using/template-editor.md), il peut consulter et utiliser des composants spécifiques en fonction de la stratégie de modèle. Vous pouvez spécifier une stratégie de contenu de modèle qui vous permet de sélectionner un groupe de composants visible par l’auteur de formulaire lors de la création de formulaires.
 
-## Modification de la stratégie de contenu d’un modèle  {#changing-the-content-policy-of-a-template}
+## Modification de la stratégie de contenu d’un modèle {#changing-the-content-policy-of-a-template}
 
-Lorsque vous créez un modèle, il est créé sous `/conf` dans le référentiel de contenu. En fonction des dossiers que vous avez créés dans le répertoire `/conf`, le chemin d’accès à votre modèle est le suivant : `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
+Lorsque vous créez un modèle, il est créé sous `/conf` dans le référentiel de contenu. En fonction des dossiers que vous avez créés dans le répertoire `/conf` , le chemin d’accès à votre modèle est le suivant : `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
 Effectuez les étapes suivantes pour afficher les composants dans la barre latérale en fonction de la stratégie de contenu d’un modèle :
 
 1. Ouvrez CRXDE Lite.
 
-   URL: `https://<server>:<port>/crx/de/index.jsp`
+   URL : `https://<server>:<port>/crx/de/index.jsp`
 
 1. Dans CRXDE, accédez au dossier dans lequel le modèle est créé.
 
@@ -58,9 +57,8 @@ Effectuez les étapes suivantes pour afficher les composants dans la barre laté
 
    Pour modifier la stratégie, dans CRXDE, accédez à `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/guideContainer/rootPanel/items`.
 
-   Dans la propriété `cq:policy`, remplacez `default` par le nouveau nom de la stratégie ( `myPolicy`).
+   Dans la propriété `cq:policy` , remplacez `default` par le nouveau nom de la stratégie ( `myPolicy`).
 
    ![Stratégie de contenu de modèle mise à jour](assets/updated-policy.png)
 
    Lorsque vous créez un formulaire à l’aide du modèle, vous pouvez voir les composants supplémentaires dans la barre latérale.
-
