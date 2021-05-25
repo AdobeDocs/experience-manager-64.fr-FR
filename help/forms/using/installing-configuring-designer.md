@@ -11,14 +11,13 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 36560809-dba9-49cf-a8ee-23c6766382ef
 noindex: true
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 9791ffd5-04c4-4eed-8e99-b390e539197d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '165'
 ht-degree: 92%
 
 ---
-
 
 # Installation et configuration de Designer {#installing-and-configuring-designer}
 
@@ -32,8 +31,7 @@ Designer est disponible sous la forme d’un programme autonome et est égalemen
 
 1. Lancez le programme d’installation de Designer en cliquant deux fois sur setup.exe.
 1. Continuez et fournissez vos détails ainsi que le numéro de série dans la boîte de dialogue Personnalisation.
-1. Si vous acceptez les termes du contrat de licence, cliquez sur Suivant pour continuer.
-1. (Facultatif) Modifiez le chemin d’installation par défaut, si vous voulez installer Designer à l’emplacement de votre choix. Cliquez sur Next (Suivant).
+1. Si vous acceptez les termes du contrat de licence, appuyez sur Suivant pour continuer.
+1. (Facultatif) Modifiez le chemin d’installation par défaut, si vous voulez installer Designer à l’emplacement de votre choix. Cliquez sur Suivant.
 1. Cliquez sur Précédent pour modifier les préférences. Pour installer Designer, cliquez sur Installer.
 1. Cliquez sur Terminer à la fin de l’installation.
-
