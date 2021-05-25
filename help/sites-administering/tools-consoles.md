@@ -1,18 +1,17 @@
 ---
 title: Consoles Outils
-description: Découvrez les différentes consoles d'outils de Adobe Experience Manager.
+description: Découvrez les différentes consoles d’outils dans Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: 7566e1bc-8571-4b3c-b420-4324026bd4dd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 94%
 
 ---
-
 
 # Consoles Outils{#tools-consoles}
 
@@ -21,7 +20,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
 * [Outils – IU classique](#tools-classic-ui)
 * [Outils – IU optimisée pour les écrans tactiles](#tools-touch-optimized-ui)
 
-## Outils – IU classique  {#tools-classic-ui}
+## Outils – IU classique {#tools-classic-ui}
 
 <table> 
  <tbody> 
@@ -58,7 +57,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   <tr> 
    <td>Gestion des actifs numériques : outil de vérification d’état<br /> </td> 
    <td> </td> 
-   <td>Compare <code>/var/dam</code> et <code>/content/dam</code> et recherche <br /> les incohérences éventuelles. Les fichiers/dossiers répertoriés peuvent alors être synchronisés ou supprimés. Les types de nœuds pour la comparaison de dossiers peuvent être configurés dans la console web.</td> 
+   <td>Compare <code>/var/dam</code> et <code>/content/dam</code> et recherche toutes les incohérences <br />. Les fichiers/dossiers répertoriés peuvent alors être synchronisés ou supprimés. Les types de nœuds pour la comparaison de dossiers peuvent être configurés dans la console web.</td> 
   </tr> 
   <tr> 
    <td>Gestion des actifs numériques : Adobe InDesign<br /> </td> 
@@ -193,7 +192,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
  </tbody> 
 </table>
 
-## Outils – IU optimisée pour les écrans tactiles  {#tools-touch-optimized-ui}
+## Outils – IU optimisée pour les écrans tactiles {#tools-touch-optimized-ui}
 
 <table> 
  <tbody> 
@@ -214,7 +213,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-authoring/launches.md">Les lancements  </a></td> 
+   <td><a href="/help/sites-authoring/launches.md">Lancements</a></td> 
    <td>Gérez vos lancements marketing</td> 
   </tr> 
   <tr> 
@@ -255,7 +254,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   <tr> 
    <td> </td> 
    <td><a href="/help/sites-deploying/replication.md">Réplication</a></td> 
-   <td>Créez et gérez plusieurs sites Web.</td> 
+   <td>Créez et gérez plusieurs sites web.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -310,7 +309,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   <tr> 
    <td> </td> 
    <td>Image mémoire de la configuration de la console Web<br /> </td> 
-   <td>Téléchargez l'état de la configuration à partir de la console Web.<br /> </td> 
+   <td>Téléchargez l’état de configuration à partir de la console web.<br /> </td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -343,4 +342,3 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
 >[!NOTE]
 >
 >Certaines des options ci-dessus conduisent réellement vers l’interface utilisateur classique.
-
