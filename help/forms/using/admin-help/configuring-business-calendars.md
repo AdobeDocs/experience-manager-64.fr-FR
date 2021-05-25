@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: d29e1b1e-62df-4b0d-aa64-ad98568cf4a6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1934'
 ht-degree: 94%
 
 ---
-
 
 # Configuration des calendriers professionnels {#configuring-business-calendars}
 
@@ -28,7 +27,7 @@ Par exemple, un rappel de tâche est configuré pour se produire trois jours ouv
 >
 >Lors du calcul des dates et heures à l’aide des calendriers professionnels, AEM Forms utilise la date et l’heure de la zone géographique dans laquelle se trouve le serveur et n’effectue aucune modification en fonction des fuseaux horaires. Par exemple, si un rappel de tâche est planifié pour 10 h 00 sur un serveur situé à Londres et si le destinataire du rappel se trouve à New York, celui-ci reçoit le rappel à 5 h 00, heure locale.
 
-## Utilisation du calendrier professionnel par défaut  {#using-the-default-business-calendar}
+## Utilisation du calendrier professionnel par défaut {#using-the-default-business-calendar}
 
 AEM Forms fournit un calendrier professionnel par défaut (*le calendrier intégré*) qui désigne les samedis et dimanches en tant que jours non ouvrés. Si les jours non ouvrés sont identiques pour l’ensemble des utilisateurs de votre organisation, vous pouvez mettre le calendrier professionnel par défaut à jour pour l’adapter à vos besoins. Si seul le calendrier professionnel par défaut est utilisé, il est inutile d’activer les calendriers professionnels dans User Management et de définir des associations. Lorsqu’aucun autre calendrier professionnel n’est défini, AEM Forms utilise le calendrier professionnel par défaut.
 
@@ -40,11 +39,11 @@ Si certains utilisateurs de votre entreprise ont des jours non ouvrés différen
 
 1. Choisissez la méthode appropriée d’association du calendrier professionnel à un utilisateur, parmi les deux suivantes :
 
-   **Appartenance à un groupe :** vous pouvez affecter un calendrier professionnel à un utilisateur en fonction de son appartenance à un groupe. Dans ce cas, chaque utilisateur du groupe utilise le même calendrier professionnel. 
+   **Appartenance à un groupe :** vous pouvez attribuer un calendrier professionnel à un utilisateur en fonction de son appartenance à un groupe. Dans ce cas, chaque utilisateur du groupe utilise le même calendrier professionnel. 
 
    Si un utilisateur est membre de deux groupes et si ces groupes sont associés à deux calendriers professionnels différents, AEM Forms utilise le premier calendrier qui s’affiche dans les résultats de recherche. Vous devez alors envisager d’utiliser des clés de calendriers professionnels pour associer les utilisateurs aux calendriers professionnels.
 
-   **Clés de calendrier professionnel :** vous pouvez affecter un calendrier professionnel à un utilisateur en fonction d’une clé de calendrier professionnel, paramètre défini dans User Management. Associez ensuite la clé de calendrier professionnel à un calendrier professionnel dans le processus des formulaires. 
+   **Clés de calendrier professionnel :** vous pouvez attribuer un calendrier professionnel à un utilisateur en fonction d’une clé de calendrier professionnel, paramètre défini dans User Management. Associez ensuite la clé de calendrier professionnel à un calendrier professionnel dans le processus des formulaires. 
 
     Les clés de calendrier professionnel sont attribuées à des utilisateurs en fonction du domaine utilisé, tel que le domaine d’entreprise, local ou hybride Pour plus d’informations sur la configuration de domaines, voir [Ajout de domaines](/help/forms/using/admin-help/adding-domains.md#adding-domains). 
 
@@ -74,7 +73,7 @@ Si votre organisation comprend différents groupes d’utilisateurs pour lesquel
    Pour modifier un calendrier professionnel existant, sélectionnez-le dans la liste déroulante.
 
 1. Sous Jours non ouvrés par défaut, sélectionnez les jours non ouvrés par défaut de votre choix dans la semaine (week-ends, par exemple).
-1. [] FacultatifSélectionnez Utiliser les heures de bureau et spécifiez les heures de début et de fin pour les jours ouvrés.
+1. [] Facultatif : sélectionnez Utiliser les heures de bureau et spécifiez les heures de début et de fin pour les jours ouvrés.
 
    Si vous sélectionnez cette option, un événement qui se produit avant la plage horaire définie est déplacé au début de la plage horaire et un événement qui se produit après est déplacé à l’heure de début du prochain jour ouvré.
 
@@ -82,7 +81,7 @@ Si votre organisation comprend différents groupes d’utilisateurs pour lesquel
 
 1. Dans le calendrier de gauche, cliquez deux fois sur un autre jour non ouvré, comme congés. Vous ne pouvez pas sélectionner de jours sur des périodes antérieures. Les jours non ouvrés sélectionnés apparaissent dans une liste sur la droite et la date s’affiche deux fois sur une seule ligne. Sélectionnez la date sur la gauche pour pouvoir taper le nom ou la description du jour non ouvré.
 
-   Pour retirer un jour non ouvré de la liste, cliquez sur ![bus_cal_trash](assets/bus_cal_trash.png) en regard de ce jour.
+   Pour supprimer un jour non ouvré de la liste, cliquez sur ![bus_cal_trash](assets/bus_cal_trash.png) en regard du jour.
 
 1. [] FacultatifSi ce calendrier doit être le calendrier par défaut, sélectionnez Calendrier par défaut. Le calendrier par défaut est utilisé lorsqu’il n’existe aucune autre association de calendrier pour des événements utilisateur ou si aucun calendrier professionnel n’est spécifié pour l’événement de temporisation ou le service d’attente. Vous ne pouvez pas supprimer le calendrier par défaut.
 1. La définition des jours non ouvrés terminée, sélectionnez Calendrier activé pour activer le calendrier, puis cliquez sur Enregistrer.
@@ -149,4 +148,3 @@ Vous pouvez supprimer tous les calendriers professionnels devenus inutiles. Si v
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Calendriers professionnels.
 1. Sélectionnez le calendrier.
 1. Cliquez sur Supprimer.
-
