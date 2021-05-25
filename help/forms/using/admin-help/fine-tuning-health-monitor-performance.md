@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
-translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+exl-id: b2814b0d-e843-4aba-8c74-a3be0a96f726
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 88%
 
 ---
-
 
 # Réglage précis des performances de Health Monitor{#fine-tuning-health-monitor-performance}
 
@@ -64,15 +63,15 @@ La collecte des statistiques système qui remplissent Health Monitor a une incid
  </tbody> 
 </table>
 
-## Ajout d’options Java à JBoss  {#add-java-options-to-jboss}
+## Ajout d’options Java à JBoss {#add-java-options-to-jboss}
 
 1. Arrêtez le serveur d’applications JBoss.
-1. Ouvrez *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez les options Java requises.
+1. Ouvrez la *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez l’une des options Java nécessaires.
 1. Redémarrez le serveur.
 
 ## Ajout d’options Java à WebLogic  {#add-java-options-to-weblogic}
 
-1. Début de WebLogic Administration Console en saisissant https://[nom d’hôte]:[port]/console dans la ligne d’adresse d’un navigateur Web.
+1. Démarrez WebLogic Administration Console en saisissant https://[nom d’hôte]:[port]/console dans la ligne d’adresse d’un navigateur Web.
 1. Saisissez le nom d’utilisateur et le mot de passe créés pour le domaine WebLogic Server, puis cliquez sur Log. Sous Change Center, cliquez sur Lock &amp; Edit.
 1. Sous Domain Structure, cliquez sur Environment > Servers et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
@@ -93,4 +92,3 @@ La collecte des statistiques système qui remplissent Health Monitor a une incid
 1. Sous Additional Properties, cliquez sur Java Virtual Machine.
 1. Dans la zone Generic JVM arguments, saisissez les arguments souhaités.
 1. Cliquez sur OK ou sur Apply, puis sur Save directly to master configuration.
-
