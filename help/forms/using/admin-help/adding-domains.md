@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
-translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+exl-id: f2bafa0c-072c-4599-92bc-4eaafece5b4f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 97%
 
 ---
-
 
 # Ajout de domaines {#adding-domains}
 
@@ -36,7 +35,7 @@ ht-degree: 97%
 
 Après avoir créé un domaine d’entreprise, synchronisez manuellement l’annuaire ou créez un déclencheur à cet effet pour que User Management puisse l’utiliser. Vous pouvez ensuite configurer un calendrier de synchronisation des annuaires et effectuer une synchronisation manuelle, si nécessaire. Voir [Synchronisation des annuaires](/help/forms/using/admin-help/synchronizing-directories.md#synchronizing-directories).
 
-## Ajout d’un domaine local  {#add-a-local-domain}
+## Ajout d’un domaine local {#add-a-local-domain}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine local.
@@ -87,4 +86,3 @@ Lors de l’utilisation de MySQL comme base de données AEM forms, les restricti
    * Recherchez le nom de domaine contenant des caractères étendus ou multi-octet et définissez son statut sur OBSOLETE.
 
 1. Importez le fichier de configuration mis à jour, comme indiqué dans la section [Importation et exportation du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).
-
