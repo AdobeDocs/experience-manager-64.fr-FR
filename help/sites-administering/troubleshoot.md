@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 1bc19f9a-fa3f-43e3-813e-23ab0b708d43
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 34b509d5-4e80-4229-b155-40004856e87e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 78%
 
 ---
-
 
 # Résolution des incidents liés à AEM{#troubleshooting-aem}
 
@@ -30,7 +29,7 @@ La section ci-dessous traite de certains problèmes susceptibles d’être renco
 >
 >Si vous rencontrez des problèmes, il est également intéressant de consulter les [problèmes connus](/help/release-notes/known-issues.md) relatifs à votre instance (packs de version et service packs).
 
-## Scénarios de résolution des incidents pour les administrateurs  {#troubleshooting-scenarios-for-administrators}
+## Scénarios de résolution des incidents pour les administrateurs {#troubleshooting-scenarios-for-administrators}
 
 Le tableau ci-dessous contient une présentation des incidents que les administrateurs peuvent avoir à résoudre :
 
@@ -50,14 +49,14 @@ Le tableau ci-dessous contient une présentation des incidents que les administr
   </tr> 
   <tr> 
    <td><p>Administrateur système</p> </td> 
-   <td><p>L’écran de bienvenue AEM ne s’affiche pas dans le navigateur après avoir cliqué sur l’doublon AEM CM Quickstart</p> </td> 
+   <td><p>L’écran de bienvenue AEM ne s’affiche pas dans le navigateur après avoir double-cliqué sur AEM démarrage rapide de CM</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Administrateur système</p> <p>utilisateur admin</p> </td> 
+   <td><p>Administrateur système</p> <p>utilisateur administrateur</p> </td> 
    <td><p>Création d’une image mémoire des threads</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Administrateur système</p> <p>utilisateur admin</p> </td> 
+   <td><p>Administrateur système</p> <p>utilisateur administrateur</p> </td> 
    <td><p>Contrôle des sessions JCR non fermées</p> </td> 
   </tr> 
  </tbody> 
@@ -79,9 +78,9 @@ L’image mémoire des threads est une liste de toutes les unités d’exécutio
 
 ### Utilisation du programme d’image mémoire des threads Sling  {#using-sling-thread-dumper}
 
-1. Ouvrez **AEM Web Console**; par exemple à `http://localhost:4502/system/console/`.
+1. Ouvrez la **console Web AEM**; par exemple, à `http://localhost:4502/system/console/`.
 
-1. Sélectionnez l&#39;onglet **Threads** sous **État**.
+1. Sélectionnez l’onglet **Threads** sous **État** .
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -99,7 +98,7 @@ L’image mémoire des threads est une liste de toutes les unités d’exécutio
 
 >[!NOTE]
 >
->Vous pouvez ajouter des vidages de threads à un fichier journal en utilisant la redirection de sortie `>>` :
+>Vous pouvez ajouter les images mémoire de threads à un fichier journal à l’aide de la redirection de sortie `>>` :
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
@@ -110,7 +109,7 @@ Pour plus d’informations, voir [Comment utiliser les images mémoire des threa
 Lorsque la fonctionnalité est développée pour AEM WCM, il est possible d’ouvrir des sessions JCR (cela s’apparente à l’ouverture d’une connexion de base de données). Si les sessions ouvertes ne sont jamais fermées, votre système peut rencontrer les symptômes suivants :
 
 * Le système est ralenti.
-* Vous pouvez voir beaucoup de CacheManager : resizeToutes les entrées du fichier journal ; le nombre suivant (size=&lt;x>) indique le nombre de caches ; chaque session ouvre plusieurs caches.
+* Vous pouvez voir beaucoup de CacheManager : resizeAll entrées dans le fichier journal ; le nombre suivant (size=&lt;x>) indique le nombre de caches. chaque session ouvre plusieurs caches.
 * Parfois, la mémoire du système est saturée (après quelques heures, jours ou semaines, selon la gravité).
 
 Pour analyser les sessions non fermées et découvrir le code qui ne ferme pas une session, consulter l’article [Analyse des sessions non fermées](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html) de la base de connaissances.
@@ -119,9 +118,9 @@ Pour analyser les sessions non fermées et découvrir le code qui ne ferme pas u
 
 Le statut des lots OSGi peut également fournir une indication précoce de problèmes éventuels.
 
-1. Ouvrez **AEM Web Console**; par exemple à `http://localhost:4502/system/console/`.
+1. Ouvrez la **console Web AEM**; par exemple, à `http://localhost:4502/system/console/`.
 
-1. Sélectionnez **Bundles** sous l&#39;onglet **OSGI**.
+1. Sélectionnez **Lots** sous l’onglet **OSGI**.
 
 1. Vérifiez :
 
@@ -129,4 +128,3 @@ Le statut des lots OSGi peut également fournir une indication précoce de probl
    * Si l’un des lots possède des dépendances manquantes. Ces informations peuvent être affichées en cliquant sur le nom de chaque lot, qui est un lien (l’exemple ci-dessous ne comporte aucun problème) :
 
 ![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)
-
