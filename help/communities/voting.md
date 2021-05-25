@@ -1,58 +1,57 @@
 ---
 title: Utilisation du composant Vote
 seo-title: Utilisation du composant Vote
-description: Ajouter le composant Voting à une page
-seo-description: Ajouter le composant Voting à une page
+description: Ajout du composant Vote à une page
+seo-description: Ajout du composant Vote à une page
 uuid: 56e6cced-2f2d-434a-8fde-92a6c2478a04
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
-translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+exl-id: 660a7106-0c21-4073-8319-4d6d20b9bc49
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 26%
 
 ---
 
-
 # Utilisation du composant Vote {#using-voting}
 
-Le composant `Voting` est un outil utile qui permet aux membres de la communauté d’évaluer un élément de contenu particulier, tel qu’une réponse dans un composant QnA. Avec le composant `Voting`, les membres sélectionnent des flèches vers le haut ou vers le bas pour indiquer leur opinion.
+Le composant `Voting` est un outil utile qui permet aux membres de la communauté d’évaluer un élément de contenu particulier, comme une réponse dans un composant Q&amp;R. Avec le composant `Voting` , les membres sélectionnent les flèches haut ou bas pour indiquer leur opinion.
 
 ## Ajout d’un composant Vote à une page {#adding-voting-to-a-page}
 
-Pour ajouter un composant `Voting` à une page en mode création, utilisez l&#39;explorateur de composants pour localiser `Communities / Voting` et faites-le glisser sur une page, par exemple une position relative à la fonction sur laquelle les utilisateurs peuvent voter.
+Pour ajouter un composant `Voting` à une page en mode création, utilisez l’explorateur de composants pour localiser `Communities / Voting` et faites-le glisser sur une page, par exemple à une position relative à la fonction sur laquelle les utilisateurs peuvent voter.
 
-Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
+Pour plus d’informations, voir [Principes de base des composants des communautés](basics.md).
 
-Lorsque les [bibliothèques client requises](essentials-voting.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Voting` s&#39;affiche.
+Lorsque les [bibliothèques côté client requises](essentials-voting.md#essentials-for-client-side) sont incluses, voici comment le composant `Voting` apparaîtra.
 
 ![chlimage_1-307](assets/chlimage_1-307.png)
 
 ## Configuration du composant Vote {#configuring-voting}
 
-Sélectionnez le composant `Voting` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Voting` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![chlimage_1-308](assets/chlimage_1-308.png)
 
-Sous l&#39;onglet **[!UICONTROL Textes et étiquettes]**, spécifiez les propriétés utilisées pour enregistrer les votes.
+Sous l’onglet **[!UICONTROL Textes et libellés]** , spécifiez les propriétés utilisées pour enregistrer les votes.
 
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
 * **[!UICONTROL Etiquette de réponse positive]**
 (
-*Obligatoire*) Nom de propriété interne pour une réponse positive.
+*Obligatoire*) Nom de propriété interne d’une réponse positive.
 
 * **[!UICONTROL Etiquette de réponse négative]**
 (
-*Obligatoire*) Nom de propriété interne pour une réponse négative.
+*Obligatoire*) Nom de propriété interne d’une réponse négative.
 
 * **[!UICONTROL Nom Tally]**
 (
-*Obligatoire*) Nom de propriété interne identifiable pour cette instance d&#39;un composant de vote.
+*Obligatoire*) Nom de propriété interne identifiable pour cette instance d’un composant Vote.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
@@ -60,10 +59,10 @@ Sous l&#39;onglet **[!UICONTROL Textes et étiquettes]**, spécifiez les propri�
 
 Les membres ne peuvent voter qu’une seule fois, mais peuvent changer leur vote à tout moment.
 
-### Anonyme  {#anonymous}
+### Anonyme {#anonymous}
 
 Le vote anonyme n’est pas possible. Les visiteurs du site doivent s’enregistrer (devenir membres) et se connecter pour participer au vote.
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d&#39;informations, consultez la page [Voting Essentials](essentials-voting.md) destinée aux développeurs.
+Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur le vote](essentials-voting.md) pour les développeurs.
