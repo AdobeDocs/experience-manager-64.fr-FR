@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: f3683696-663d-4de5-a388-1709f44d58c1
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 8a8b9ca3-c917-4407-9ed2-12dbfe039e5d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 100%
 
 ---
-
 
 # Activation de l’accès à l’IU classique{#enabling-access-to-classic-ui}
 
@@ -28,4 +27,3 @@ Avec la fonctionnalité tactile désormais au même niveau, voire dépassant l�
 >[!NOTE]
 >
 >Pour plus d’informations sur l’état de parité des fonctionnalités avec l’IU classique, voir le document [Parité des fonctionnalités de l’IU tactile](/help/release-notes/touch-ui-features-status.md).
-
