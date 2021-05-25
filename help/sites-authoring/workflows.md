@@ -1,6 +1,6 @@
 ---
-title: 'Utilisation des workflows  '
-seo-title: 'Utilisation des workflows  '
+title: Utilisation des workflows
+seo-title: Utilisation des workflows
 description: Dans AEM, les workflows permettent d’automatiser une série d’étapes effectuées sur une page ou une ressource.
 seo-description: Dans AEM, les workflows permettent d’automatiser une série d’étapes effectuées sur une page ou une ressource.
 uuid: c4442d2a-c6b0-49d4-a1ce-384017c45bf0
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 7cb99618-d903-4cfb-b0d9-b23d189f6e78
-translation-type: tm+mt
-source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+exl-id: 8d318fd5-3d8f-4144-95c8-d90685378a91
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 100%
 
 ---
-
 
 # Utilisation des workflows  {#working-with-workflows}
 
@@ -35,6 +34,5 @@ En général :
 
 Les pages suivantes couvrent :
 
-* [Application de workflows aux pages ](/help/sites-authoring/workflows-applying.md)
+* [Application de workflows aux pages](/help/sites-authoring/workflows-applying.md)
 * [Participation aux workflows](/help/sites-authoring/workflows-participating.md)
-
