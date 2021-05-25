@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
-translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+exl-id: 7933efeb-618a-4c38-8e5e-593be8ebb00c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2657'
 ht-degree: 90%
 
 ---
-
 
 # Configuration des paramètres du serveur {#configuring-server-settings}
 
@@ -26,7 +25,7 @@ La page Paramètres du serveur donne accès aux différents paramètres du proce
 * Les **Paramètres de notification de tâche** permettent d’activer, de désactiver ou de modifier les messages envoyés dans les notifications électroniques aux utilisateurs finaux et aux groupes concernant leurs tâches (voir [Configuration des notifications destinées aux utilisateurs et aux groupes](configuring-server-settings.md#configuring-notifications-for-users-and-groups)).
 * Les **Paramètres de notification de l’administrateur** permettent d’activer, de désactiver ou de modifier les messages envoyés dans les notifications électroniques pour les tâches administratives (voir [Configuration des notifications destinées aux administrateurs](configuring-server-settings.md#configuring-notifications-for-administrators)).
 
-## Configuration des paramètres de courrier électronique  {#configuring-email-settings}
+## Configuration des paramètres de courrier électronique {#configuring-email-settings}
 
 Vous pouvez indiquer un compte de courrier électronique pour le serveur Forms, par l’intermédiaire duquel il envoie des courriers électroniques aux utilisateurs et aux administrateurs et en reçoit de la part de ces mêmes utilisateurs et administrateurs. Ces courriers électroniques sont utilisés pour notifier aux utilisateurs les tâches qu’ils sont tenus d’exécuter, les leur rappeler, les notifier lorsque les tâches arrivées à échéance et notifier à l’administrateur toute erreur de processus survenue.
 
@@ -58,7 +57,7 @@ Si les processus que vous utilisez sont conçus et implémentés sans avoir à u
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour AEM version de formulaires.
+>Flex Workspace est obsolète pour la version d’AEM forms.
 
 Par défaut, les courriers électroniques envoyés par AEM forms contiennent des liens vers Flex Workspace (obsolète pour AEM forms on JEE). Vous pouvez configurer AEM forms pour envoyer des courriers électroniques contenant des liens vers l’espace de travail AEM Forms. Pour en savoir plus sur les avantages de l’espace de travail AEM Forms par rapport à Flex Workspace (obsolète pour AEM forms on JEE), consultez [cet](/help/forms/using/features-html-workspace-available-flex.md) article.
 
@@ -194,45 +193,45 @@ Pour les notifications de tâche uniquement, le processus des formulaires inclut
 >
 >Flex Workspace est obsolète pour la version d’AEM Forms.
 
-Si votre solution est déployée dans un environnement organisé en grappes, remplacez `@@notification-host@@` par l’adresse du cluster.
+Si votre solution est déployée dans un environnement organisé en grappes, remplacez `@@notification-host@@` par l’adresse de la grappe.
 
 `<`** `>` PORTest le numéro de port de l’écouteur HTTP pour le serveur d’applications. Les ports d’écouteur HTTP par défaut pour les serveurs d’applications pris en charge sont les suivants :
 
 **JBoss :** 8080
 
-**Oracle WebLogic Server:** 7001
+**Oracle WebLogic Server :** 7001
 
-**IBM WebSphere:** 9080
+**IBM WebSphere :** 9080
 
-Pour que ces URL fonctionnent correctement, remplacez `<`*PORT* `>` par le numéro de port approprié pour votre environnement.
+Pour que ces URL fonctionnent correctement, remplacez `<`*PORT* `>` par le numéro de port approprié à votre environnement.
 
 >[!NOTE]
 >
 >si vous utilisez une application Web personnalisée autre que Forms pour permettre aux utilisateurs d’accéder aux tâches, vous devez utiliser le format d’URL approprié pour votre application personnalisée.
 
-### Sélecteur de variables  {#variable-picker}
+### Sélecteur de variables {#variable-picker}
 
-La liste Sélectionneur de variables fournit des variables utiles que vous pouvez faire glisser vers les champs Objet ou Modèle de notification. Lorsque vous déposez une variable dans les zones Objet ou Modèle de notification, elle se transforme en nom de variable de processus des formulaires réel avec deux symboles @ de chaque côté, par exemple `@@taskid@@`.
+La liste Sélectionneur de variables fournit des variables utiles que vous pouvez faire glisser vers les champs Objet ou Modèle de notification. Lorsque vous déposez une variable dans les zones Objet ou Modèle de notification, elle se transforme en nom réel de variable de processus des formulaires avec deux symboles @ de chaque côté, par exemple `@@taskid@@`.
 
 Pour les rappels, affectations de tâche et échéances des utilisateurs et des groupes, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
-**** descriptionContenu de la propriété Description, tel que défini dans l’étape utilisateur (point de début, opération d’affectation de Tâche ou opération d’affectation de plusieurs Tâches) du processus dans Workbench.
+**** descriptionContenu de la propriété Description, tel que défini dans l’étape utilisateur (point de départ, opération Assign Task ou opération Assign Multiple Tasks) du processus dans Workbench.
 
-**** instructionsContenu de la propriété Instructions de la Tâche, tel que défini dans l’étape utilisateur du processus dans Workbench.
+**** instructionsContenu de la propriété Task Instructions, tel que défini dans l’étape utilisateur du processus dans Workbench.
 
-**notification-** hostNom d’hôte du serveur d’applications AEM forms.
+**notification-** hostNom d’hôte du serveur d’applications AEM forms .
 
 **process-** nameNom du processus.
 
 **operation-** nameNom de l’étape.
 
-**** taskidIdentificateur unique de la tâche active.
+**** taskidIdentifiant unique de la tâche en cours.
 
-**** actionsGénère une liste numérotée de routes valides (par exemple, Approuver, Rejeter) sur lesquelles le destinataire peut cliquer.
+**** actionsGénère une liste numérotée d’itinéraires valides (par exemple, Approuver, Rejeter) sur lesquels le destinataire peut cliquer.
 
 De plus, pour les rappels, affectations de tâche et échéances de groupe, vous pouvez aussi utiliser les variables suivantes :
 
-**group-** nameNom du groupe auquel est affectée la tâche.
+**group-** nameNom du groupe auquel l’élément de travail est affecté.
 
 >[!NOTE]
 >
@@ -244,17 +243,17 @@ Pour les branches bloquées, vous pouvez utiliser les variables suivantes dans l
 
 **process-** idIdentifiant de l’instance de processus.
 
-**notification-** hostNom d’hôte du serveur d’applications AEM forms.
+**notification-** hostNom d’hôte du serveur d’applications AEM forms .
 
 Pour les opérations bloquées, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
-**action-** idIdentifiant de l&#39;opération.
+**action-** idIdentifiant de l’opération.
 
 **branch-** idIdentifiant de branche.
 
 **process-** idIdentifiant de l’instance de processus.
 
-**notification-** hostNom d’hôte du serveur d’applications AEM forms.
+**notification-** hostNom d’hôte du serveur d’applications AEM forms .
 
 ### Utilisation d’une variable dans la zone Objet {#using-a-variable-in-the-subject-box}
 
@@ -272,7 +271,7 @@ Si vous saisissez le texte suivant dans le champ Modèle de notification pour de
 
 `Branch @@branch-id@@ has stalled! You have received this notification from @@notification-host@@.`
 
-L’administrateur reçoit un courrier électronique contenant le contenu suivant si le numéro de la branche est 4868 et que le nom du serveur est `ServerXYZ` :
+L’administrateur reçoit un courrier électronique contenant le contenu suivant si le numéro de branche est le 4868 et que le nom du serveur est `ServerXYZ` :
 
 `Branch 4868 has stalled! You have received this notification from ServerXYZ.`
 
@@ -289,4 +288,3 @@ Dans la page Paramètres de configuration BAM, vous définissez les connexions a
 1. Dans le champ Port du serveur, saisissez le numéro de port utilisé par le serveur Forms.
 1. Dans les champs Nom d’utilisateur et Mot de passe, saisissez l’ID utilisateur et le mot de passe permettant d’accéder au serveur BAM. Le nom d’utilisateur par défaut est CognosNowAdmin et le mot de passe par défaut est manager.
 1. Cliquez sur Enregistrer.
-
