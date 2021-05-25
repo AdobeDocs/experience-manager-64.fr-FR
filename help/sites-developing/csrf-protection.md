@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
-translation-type: tm+mt
-source-git-commit: 97db2126a4a20d82f964102d9ae3afcac94d830c
+exl-id: 533c348e-517f-4d70-a89c-bfc87f71a633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 72%
 
 ---
-
 
 # Le framework de protection CSRF{#the-csrf-protection-framework}
 
@@ -44,6 +43,6 @@ Pour utiliser les jetons, vous devez répliquer le binaire `/etc/keys/hmac` sur 
 
 >[!NOTE]
 >
->Si vous utilisez le cache de manifeste avec votre application Web, veillez à ajouter &quot;**&amp;ast;**&quot; au manifeste afin de vous assurer que le jeton n’effectue pas l’appel de génération de jeton CSRF hors ligne. Pour plus d’informations, consultez ce [lien](https://www.w3.org/TR/offline-webapps/).
+>Si vous utilisez le cache de manifeste avec votre application web, veillez à ajouter &quot;**&amp;ast;**&quot; au manifeste afin de vous assurer que le jeton ne prend pas l’appel de génération de jeton CSRF hors ligne. Pour plus d’informations, consultez ce [lien](https://www.w3.org/TR/offline-webapps/).
 >
 >Pour plus d’informations sur les attaques CSRF et les moyens de s’en protéger, consultez la page [Cross-Site Request Forgery OWASP](https://owasp.org/www-community/attacks/csrf).
