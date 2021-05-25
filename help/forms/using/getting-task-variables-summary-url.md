@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
-translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+exl-id: f80d006b-6970-4448-aa38-3ffec8b08c18
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 88%
 
 ---
 
-
-# Obtention de variables de tâche dans l’URL de résumé  {#getting-task-variables-in-summary-url}
+# Obtention de variables de tâche dans l’URL de résumé {#getting-task-variables-in-summary-url}
 
 La page Résumé affiche des informations liées aux tâches. Cet article décrit comment vous pouvez réutiliser les informations liées aux tâches dans la page Résumé.
 
@@ -34,7 +33,7 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 
    >[!NOTE]
    >
-   >Ce rendu est le modèle de page de résumé.
+   >Ce moteur de rendu est le modèle de page de résumé.
 
    L’exemple de code suivant pour ce rendu est contenu dans :
 
@@ -66,7 +65,7 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 
       Définissez également une variable de sortie **ptoNodePath **qui sera utilisée lors de la définition de l’URL de résumé.
 
-   1. Dans le processus **create PTO summary**, utilisez le composant **set value** pour définir les détails d&#39;entrée dans un mappage **nodeProperty **(**nodeProps**).
+   1. Dans le processus **create PTO summary** , utilisez le composant **set value** pour définir les détails d’entrée dans une carte **nodeProperty **(**nodeProps**).
 
       Les clés de ce mappage doivent être identiques à celles définies dans votre rendu HTML à l’étape précédente.
 
@@ -89,4 +88,3 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 Dans l’espace de travail AEM Forms, lorsque vous ouvrez une tâche, l’URL de résumé accède au nœud CRX et le rendu HTML affiche le résumé.
 
 Il est possible de modifier la mise en page du résumé sans modifier le processus. Le rendu HTML affiche le résumé correctement.
-
