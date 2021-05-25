@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e4f31377-ccc9-4986-a3bf-ef2e83d12448
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 07671470-59dd-4290-be9a-465fcd89ac2d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 100%
 
 ---
-
 
 # Mise à jour du type de licence pour le déploiement {#update-the-license-type-for-the-deployment}
 
@@ -35,7 +34,7 @@ La page Changer de licence contient des informations relatives à la licence :
 >
 >le changement de licence s’applique à tous les modules déployés. Avant de changer de type de licence, annulez le déploiement de tous les modules ne possédant pas de licence. Ne sélectionnez pas le type de licence Production si la liste des modules déployés contient des modules autres que ceux acquis auprès d’Adobe.
 
-## Mise à jour du type de licence  {#update-the-license-type}
+## Mise à jour du type de licence {#update-the-license-type}
 
 1. Dans Administration Console, cliquez sur Obtention de la licence.
 1. Lisez le contrat de licence de l’utilisateur final d&#39;AEM forms, sélectionnez J’accepte si vous en acceptez les termes, puis cliquez sur Suivant.
@@ -49,4 +48,3 @@ La page Changer de licence contient des informations relatives à la licence :
 
 1. Sélectionnez Oui, le changement de licence concerne tous les modules déployés.
 1. Cliquez sur Confirmer le changement de licence. Une fois la licence mise à jour, un message vous confirme la réussite de l’opération.
-
