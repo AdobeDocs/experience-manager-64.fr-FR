@@ -1,6 +1,6 @@
 ---
-title: Groupe communautaire Essentials
-seo-title: Groupe communautaire Essentials
+title: Notions fondamentales sur les groupes de communautés
+seo-title: Notions fondamentales sur les groupes de communautés
 description: Création dynamique de sites communautaires
 seo-description: Création dynamique de sites communautaires
 uuid: 168e7aeb-6e9a-468d-8ac4-274007cea252
@@ -9,30 +9,29 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
-translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+exl-id: 357a130a-af60-4e86-9161-5dc7056aa052
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 2%
 
 ---
 
+# Notions fondamentales sur les groupes de communautés {#community-group-essentials}
 
-# Community Group Essentials {#community-group-essentials}
+La fonctionnalité de groupes de communautés permet à une sous-communauté d’être créée dynamiquement dans un site de communauté par des utilisateurs autorisés à partir des environnements de publication et de création.
 
-La fonction des groupes communautaires permet à une sous-communauté d’être créée dynamiquement dans un site communautaire par des utilisateurs autorisés à partir des environnements de publication et d’auteur.
+À partir de Communities [feature pack 1](deploy-communities.md#latestfeaturepack), il est possible d’imbriquer des groupes dans d’autres groupes.
 
-A compter de la section Communautés [Feature Pack 1](deploy-communities.md#latestfeaturepack), il est possible d’imbriquer des groupes dans d’autres groupes.
+## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
-## Essentials for Client-Side {#essentials-for-client-side}
-
-### Groupes communautaires Liste membre {#community-groups-member-list}
+### Liste des membres des groupes communautaires {#community-groups-member-list}
 
 <table> 
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td> 
-   <td>social/groupe/composants/hbs/community/groupmembellist</td> 
+   <td>social/group/components/hbs/community/groupmemberlist</td> 
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
@@ -59,7 +58,7 @@ A compter de la section Communautés [Feature Pack 1](deploy-communities.md#late
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td> 
-   <td>social/groupe/composants/hbs/groupes communautaires</td> 
+   <td>social/group/components/hbs/community-groups</td> 
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
@@ -78,7 +77,7 @@ A compter de la section Communautés [Feature Pack 1](deploy-communities.md#late
 
 * [Personnalisations côté client](client-customize.md)
 
-## Essentials for Server-Side {#essentials-for-server-side}
+## Principes élémentaires côté serveur {#essentials-for-server-side}
 
 * [API du groupe de communautés](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
@@ -88,22 +87,22 @@ A compter de la section Communautés [Feature Pack 1](deploy-communities.md#late
 
 ### Fonction Groupes {#groups-function}
 
-Une structure de site communautaire qui inclut une fonction [Groupes](functions.md#groups-function) va permettre la création de `community groups` à partir des environnements de publication et d&#39;auteur. Le groupe de communauté créé comprendra un composant `community groups member list` qui liste les membres du groupe.
+Une structure de site de communauté qui comprend une [fonction Groupes](functions.md#groups-function) prend en charge la création de `community groups` à partir des environnements de publication et de création. Le groupe de communauté créé comprend un composant `community groups member list` qui répertorie les membres du groupe.
 
-Un ou plusieurs [modèles de groupe de communauté](tools-groups.md), qui fournissent la conception des pages de groupe de communauté, peuvent être configurés pour la fonction Groupes lorsque la fonction est ajoutée à un [modèle de site de communauté](sites.md) ou imbriquée dans un modèle de groupe de communauté.
+Un ou plusieurs [modèles de groupe de communautés](tools-groups.md), qui fournissent la conception des pages de groupe de communautés, peuvent être configurés pour la fonction Groupes lorsque la fonction est ajoutée à un [modèle de site de communauté](sites.md) ou imbriqué dans un modèle de groupe de communautés.
 
-L&#39;inclusion de plusieurs modèles de groupes communautaires donne lieu à un choix de conception présenté à l&#39;utilisateur autorisé au moment de la création d&#39;un nouveau groupe communautaire pour le site communautaire, comme le montre la section [groupes communautaires](creating-groups.md) pour les auteurs.
+L’inclusion de plusieurs modèles de groupes de communautés entraîne la présentation d’une conception à l’utilisateur autorisé au moment de la création d’un groupe de communautés pour le site de la communauté, comme illustré dans la section [groupes de communautés](creating-groups.md) pour les auteurs.
 
 ### Groupes imbriqués {#nested-groups}
 
-En ce qui concerne les communautés [FP1](deploy-communities.md#latestfeaturepack), il est possible qu&#39;une fonction Groupes soit incluse dans un modèle de groupe, ce qui permet d&#39;inclure des groupes imbriqués (sous-communautés).
+À partir de Communities [FP1](deploy-communities.md#latestfeaturepack), il est possible qu’une fonction Groupes soit incluse dans un modèle de groupe, ce qui permet d’inclure des groupes imbriqués (sous-communautés).
 
-Lorsqu’un site communautaire ou un modèle de groupe inclut la fonction Groupes, il est possible de
+Lorsqu’un site de communauté ou un modèle de groupe comprend la fonction Groupes , il est possible de
 
-* Créer une sous-communauté dans l’environnement d’auteur
+* Création d’une sous-communauté dans l’environnement de création
 * Créez un groupe dans l’environnement de publication, lorsqu’il est configuré pour l’autoriser.
 
-Lors de la création d’un groupe dans l’environnement d’auteur, il est nécessaire de publier d’abord le site de la communauté, puis le groupe. La publication du site de la communauté publiera les pages du groupe, sans créer les groupes de membres de la sous-communauté pour lesquels des ACL sont définies. Ainsi, un groupe restreint (secret) peut être visible jusqu’à ce que le groupe soit explicitement publié.
+Lors de la création d’un groupe dans l’environnement de création, vous devez d’abord publier le site de la communauté, puis publier le groupe. La publication du site de la communauté permet de publier les pages du groupe, sans créer les groupes de membres de la sous-communauté auxquels des listes de contrôle d’accès sont définies. Ainsi, un groupe restreint (secret) peut être visible jusqu’à ce que le groupe soit publié explicitement.
 
 ## Liens et informations connexes {#links-and-related-information}
 
@@ -111,4 +110,3 @@ Lors de la création d’un groupe dans l’environnement d’auteur, il est né
 * [Console Groupes de communautés](groups.md)
 * [Fonction Groupes](functions.md#groups-function)
 * [Modèles de groupe](tools-groups.md)
-
