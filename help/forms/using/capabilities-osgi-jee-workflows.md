@@ -1,31 +1,30 @@
 ---
 title: 'Actions et fonctionnalités des processus AEM sur OSGi et des processus AEM Forms JEE '
 seo-title: 'Actions et fonctionnalités des processus AEM sur OSGi et des processus AEM Forms JEE '
-description: En savoir plus sur les différences dans les actions prises en charge par AEM Inbox et HTML Workspace, les différences dans les capacités prises en charge par les Workflows d’AEM orientés formulaires sur les Workflows OSGi et AEM Forms JEE et les différences entre les fonctionnalités de l’application AEM Inbox et AEM Forms.
-seo-description: En savoir plus sur les différences dans les actions prises en charge par AEM Inbox et HTML Workspace, les différences dans les capacités prises en charge par les Workflows d’AEM orientés formulaires sur les Workflows OSGi et AEM Forms JEE et les différences entre les fonctionnalités de l’application AEM Inbox et AEM Forms.
+description: Découvrez les différences dans les actions prises en charge par AEM boîte de réception et HTML Workspace, les différences dans les fonctionnalités prises en charge par les processus d’AEM basés sur l’utilisation de Forms on OSGi et AEM Forms JEE et les différences entre les fonctionnalités de la boîte de réception et de l’application AEM Forms.
+seo-description: Découvrez les différences dans les actions prises en charge par AEM boîte de réception et HTML Workspace, les différences dans les fonctionnalités prises en charge par les processus d’AEM basés sur l’utilisation de Forms on OSGi et AEM Forms JEE et les différences entre les fonctionnalités de la boîte de réception et de l’application AEM Forms.
 uuid: ce2a05fe-ba45-42ed-880e-fb1d6efc1d26
 contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
-translation-type: tm+mt
-source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
+exl-id: 6172d936-9348-4f3f-a437-6465dd156f3b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 72%
 
 ---
 
-
 # Actions et fonctionnalités des processus AEM sur OSGi et des processus AEM Forms JEE  {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
 ## Boîte de réception AEM et espace de travail HTML {#aem-inbox-and-html-workspace}
 
-La boîte de réception AEM est utilisée pour exécuter et surveiller les Workflows AEM centrés sur Forms sur OSGi. L’espace de travail permet d’exécuter et de contrôler les processus AEM Forms JEE. Le tableau suivant liste les actions importantes disponibles dans AEM boîte de réception pour les Workflows AEM centrés sur Forms sur OSGi et dans HTML Workspace pour les Workflows AEM Forms JEE.
+AEM Boîte de réception est utilisée pour exécuter et surveiller les processus d’AEM Forms sur OSGi. L’espace de travail permet d’exécuter et de contrôler les processus AEM Forms JEE. Le tableau suivant répertorie les actions importantes disponibles dans AEM boîte de réception pour les processus d’AEM Forms sur OSGi et dans HTML Workspace pour les processus AEM Forms JEE.
 
 <table> 
  <tbody>
   <tr>
-   <td>Actions </td> 
+   <td>Actions</td> 
    <td>Boîte de réception AEM</td> 
    <td>Espace de travail HTML</td> 
   </tr>
@@ -97,9 +96,9 @@ La boîte de réception AEM est utilisée pour exécuter et surveiller les Workf
  </tbody>
 </table>
 
-## Processus AEM de formulaire sur OSGi et processus AEM Forms JEE  {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+## Processus AEM de formulaire sur OSGi et processus AEM Forms JEE {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion des processus AEM Forms on JEE) ont un ensemble de fonctionnalités différent. Le tableau suivant liste d’importantes fonctionnalités et la prise en charge des fonctionnalités des Workflows d’AEM orientés formulaires sur OSGi et AEM Forms on JEE :
+Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion des processus AEM Forms on JEE) ont un ensemble de fonctionnalités différent. Le tableau suivant répertorie les fonctionnalités importantes et la prise en charge des fonctionnalités des processus d’AEM basés sur l’utilisation de Forms on OSGi et des processus AEM Forms on JEE :
 
 <table> 
  <tbody>
@@ -209,7 +208,7 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
    <td>Pris en charge</td> 
   </tr>
   <tr>
-   <td>Rapports de workflow </td> 
+   <td>Rapports de workflow</td> 
    <td>Pas de prise en charge<br /> </td> 
    <td>Pris en charge<br /> </td> 
   </tr>
@@ -260,7 +259,7 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
   </tr>
   <tr>
    <td>Intégration à des applications tierces</td> 
-   <td><sup>[6]</sup> pris en charge</td> 
+   <td>Pris en charge <sup>[6]</sup></td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
@@ -285,7 +284,7 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
   </tr>
   <tr>
    <td>Envoyer un courrier électronique à la fin du processus</td> 
-   <td><sup>[7]</sup> pris en charge</td> 
+   <td>Pris en charge <sup>[7]</sup></td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
@@ -295,7 +294,7 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
   </tr>
   <tr>
    <td>Appeler un service Web à partir d’un processus</td> 
-   <td><sup>[6]</sup> pris en charge</td> 
+   <td>Pris en charge <sup>[6]</sup></td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
@@ -304,12 +303,12 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
    <td>Pris en charge</td> 
   </tr>
   <tr>
-   <td>Portes, PAS D'ATTENTE</td> 
+   <td>Jetons, PAS D'ATTENTE</td> 
    <td>Pris en charge </td> 
    <td>Pris en charge </td> 
   </tr>
   <tr>
-   <td>OU, ET fractionné</td> 
+   <td>Division OU ET</td> 
    <td>Pas de prise en charge</td> 
    <td>Pris en charge</td> 
   </tr>
@@ -321,27 +320,27 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
  </tbody>
 </table>
 
-1. Vous pouvez utiliser des Workflows d’AEM orientés Formulaire sur OSGi pour signer un formulaire adaptatif déjà rempli. Les processus AEM de formulaire sur OSGi prennent en charge la signature hors du formulaire. L’expérience de [signature dans le formulaire](/help/forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) n’est pas prise en charge.
+1. Vous pouvez utiliser des processus d’AEM basés sur l’utilisation de Forms sur OSGi pour signer un formulaire adaptatif déjà rempli. Les processus AEM de formulaire sur OSGi prennent en charge la signature hors du formulaire. L’expérience de [signature dans le formulaire](/help/forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) n’est pas prise en charge.
 
 1. Vous devez avoir accès à la boîte de réception AEM pour exécuter et surveiller les processus AEM Forms OSGi et à l’espace de travail HTML pour exécuter et surveiller les processus AEM Forms JEE.
-1. Les services documentaires AEM Forms natifs sont disponibles pour les processus AEM de formulaire sur OSGi et les processus AEM Forms on JEE. aem Workflow utilise les services de document natifs pour les Workflows d’AEM orientés formulaires sur OSGi et AEM Forms JEE (Process Management) Workflows.
+1. Les services documentaires AEM Forms natifs sont disponibles pour les processus AEM de formulaire sur OSGi et les processus AEM Forms on JEE. AEM Workflow utilise des services de document natifs pour les processus d’AEM basés sur l’utilisation de Forms on OSGi et AEM Forms JEE (Process Management).
 1. Les processus AEM Forms JEE peuvent uniquement rendre un formulaire adaptatif. Ils ne prennent pas en charge le rendu d’un formulaire adaptatif comme document PDF.
 1. Les processus AEM Forms JEE n’ont pas d’étape distincte pour Adobe Sign. Vous avez besoin d’un formulaire adaptatif Adobe Sign pour les processus AEM forms JEE. Pour plus d’informations, voir la [documentation d’Adobe Sign](/help/forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
-1. Vous pouvez utiliser l’étape [Appeler le service de modèle de données de formulaire](/help/forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) pour appeler un service Web et publier ou récupérer des données d’une application tierce.
-1. Vous pouvez utiliser l’étape [Envoyer un courriel](/help/forms/using/aem-forms-workflow-step-reference.md#send-email-step) pour envoyer des courriers électroniques.
+1. Vous pouvez utiliser l’étape [Invoquer le service de modèle de données de formulaire](/help/forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) pour appeler un service Web et publier ou récupérer des données d’une application tierce.
+1. Vous pouvez utiliser l’étape [Envoyer un email](/help/forms/using/aem-forms-workflow-step-reference.md#send-email-step) pour envoyer des emails.
 
 ## Différences entre les fonctionnalités de la boîte de réception AEM et l’application AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Deux des principaux moyens de lancer un flux de travaux centré sur Forms sont d’utiliser [AEM Boîte de réception](/help/forms/using/manage-applications-inbox.md) et l’application AEM Forms. Les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms sont cependant différentes. aem boîte de réception fonctionne uniquement avec [workflows centrés sur le Forms](/help/forms/using/aem-forms-workflow.md) tandis que l’application AEM Forms fonctionne avec des workflows centrés sur le Forms et avec la gestion des processus.
+Deux des méthodes principales pour lancer un workflow centré sur Forms utilisent [AEM Boîte de réception](/help/forms/using/manage-applications-inbox.md) et l’application AEM Forms. Les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms sont cependant différentes. AEM boîte de réception fonctionne uniquement avec les [workflows centrés sur Forms](/help/forms/using/aem-forms-workflow.md) tandis que l’application AEM Forms fonctionne avec les workflows centrés sur Forms et la gestion des processus.
 
 La table suivante répertorie les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms :
 
 <table> 
  <tbody>
   <tr>
-   <td><p><strong>Actions </strong></p> </td> 
+   <td><p><strong>Actions</strong></p> </td> 
    <td><p><strong>Boîte de réception AEM</strong></p> </td> 
-   <td><p><strong>Application AEM Forms</strong></p> </td> 
+   <td><p><strong>Application AEM Forms</strong></p> </td> 
   </tr>
   <tr>
    <td><p>Démarrage d’une application de formulaire</p> </td> 
@@ -390,4 +389,3 @@ La table suivante répertorie les fonctionnalités de la boîte de réception AE
   </tr>
  </tbody>
 </table>
-
