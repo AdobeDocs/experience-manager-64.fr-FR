@@ -6,9 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
-feature: Asset Management,Renditions
+feature: Gestion des ressources,Rendus
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
 source-wordcount: '1466'
@@ -44,11 +43,11 @@ Pour le dimensionnement des images, il est recommandé d’utiliser `&wid=<value
 
 ## Bonnes pratiques relatives à l’accentuation des images {#best-practices-for-image-sharpening}
 
-L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou en AEM en vous reportant au guide [Qualité des images classiques de Dynamic Media Adobe et Bonnes pratiques d’accentuation](/help/assets/assets/sharpening_images.pdf) qui s’applique également à AEM.
+L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou dans AEM en vous référant au guide [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) qui s’applique également à AEM.
 
-Voir aussi [Accentuation d’une image avec un masque flou ](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+Voir aussi [Accentuation d’une image avec un masque flou](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
-Avec AEM, vous pouvez accentuer les images lors de l’assimilation, lors de la distribution, ou les deux. Néanmoins, dans la plupart des cas, vous devez accentuer les images à l’aide d’une seule méthode et non des deux. L’accentuation des images lors de la distribution, sur une URL, produit généralement les meilleurs résultats.
+Avec AEM, vous pouvez accentuer les images lors de l’ingestion, lors de la distribution, ou les deux. Néanmoins, dans la plupart des cas, vous devez accentuer les images à l’aide d’une seule méthode et non des deux. L’accentuation des images lors de la distribution, sur une URL, produit généralement les meilleurs résultats.
 
 Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
@@ -66,7 +65,7 @@ Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
              Ce paramètre définit l’écart recherché entre les pixels accentués et la zone environnante avant qu’ils ne soient considérés comme des pixels de contour et que le filtre les accentue. Le paramètre **[!UICONTROL seuil]** permet d’éviter l’accentuation excessive de zones aux couleurs similaires, telles que les tons chair. Par exemple, une valeur de seuil de 12 permet d’ignorer les légères variations de la luminosité de la peau pour éviter d’ajouter du « bruit », tout en ajoutant un contraste sur les bords dans les zones à fort contraste, comme l’endroit où les cils rencontrent la peau.
          
-         Pour plus d’informations sur la manière dont vous définissez ces trois paramètres, y compris les meilleures pratiques à utiliser avec le filtre, voir le guide [Qualité des images Dynamic Media Classic Adobe et Bonnes pratiques d’accentuation](/help/assets/assets/sharpening_images.pdf) (s’applique également à Dynamic Media sur AEM).
+         Pour plus d’informations sur la définition de ces trois paramètres, y compris les bonnes pratiques à utiliser avec le filtre, consultez le guide [Adobe de la qualité d’image Dynamic Media Classic et des bonnes pratiques d’accentuation](/help/assets/assets/sharpening_images.pdf) (s’applique également à Dynamic Media sur AEM).
    * AEM permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0, ou à la luminosité/intensité de l’image en utilisant la valeur 1.
 
 
@@ -81,7 +80,7 @@ Augmentez graduellement la valeur de 1,75 à 4. Si l’accentuation ne correspon
 
 Laissez le paramètre monochrome sur 0.
 
-### Recommandations relatives à la compression JPEG (&amp;qlt=) {#best-practices-for-compression-qlt}
+### Bonnes pratiques relatives à la compression JPEG (&amp;qlt=) {#best-practices-for-compression-qlt}
 
 * Ce paramètre contrôle la qualité du codage JPG. Une valeur élevée produit une image de meilleure qualité, mais un fichier plus volumineux ; en revanche, une valeur faible signifie une image de qualité inférieure mais un fichier plus petit. Ce paramètre est compris entre 0 et 100.
 * Pour optimiser la qualité, ne définissez pas la valeur du paramètre sur 100. La différence entre une valeur de 90, 95 ou 100 est presque imperceptible. Par contre, la valeur 100 augmente de manière inutile la taille du fichier image. En conséquence, pour optimiser la qualité, mais éviter que les fichiers image deviennent trop volumineux, définissez `qlt=<value>` sur 90 ou 95.
