@@ -7,24 +7,23 @@ uuid: 27e456ba-3c08-4c43-ad54-1ba0070995ad
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: f07e3786-d396-47de-83cb-fc7afc423d09
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1452'
 ht-degree: 90%
 
 ---
 
-
 # Recrutement des employés présentation du site de référence {#employee-recruitment-reference-site-walkthrough}
 
-## Condition requise {#prerequisite}
+## Condition préalable {#prerequisite}
 
 Installez les sites de référence comme décrit dans [Installation et configuration des sites de référence d’AEM Forms](/help/forms/using/setup-reference-sites.md).
 
 ## Présentation {#overview}
 
-We.Finance est une entreprise qui permet à des candidats de postuler à des offres d’emploi via le portail du site de référence. L&#39;organisation utilise également le portail pour gérer la planification des entrevues des candidats, les listes courtes et les communications internes. Le site gère les éléments suivants :
+We.Finance est une entreprise qui permet à des candidats de postuler à des offres d’emploi via le portail du site de référence. L’organisation utilise également le portail pour gérer la planification des entretiens, les présélections et la communication interne des candidats. Le site gère les éléments suivants :
 
 * Recherche d’emploi des candidats et présentation de candidature
 * Sélection et affichage des candidats
@@ -37,12 +36,12 @@ We.Finance est une entreprise qui permet à des candidats de postuler à des off
 >
 >Les cas d’utilisation de recrutement des employés sont disponibles sur les sites de référence de We.Finance et de We.Gov. Les images, descriptions et exemples utilisés dans les présentations se basent sur le site de référence We.Finance. Cependant, vous pouvez exécuter ces cas d’utilisation et consulter les artefacts également via We.Gov. Pour ce faire, remplacez **we-finance** par **we-gov** dans les adresses URL mentionnées.
 
-### Modèles de processus impliqués  {#workflow-models-involved}
+### Modèles de processus impliqués {#workflow-models-involved}
 
 Le cas d’utilisation du recrutement des employés implique deux processus :
 
-* Avant l&#39;entrevue - Nous finançons le processus de recrutement des employés
-* Après l&#39;entrevue - Nous finançons le processus de recrutement des employés après l&#39;entrevue
+* Avant l’entretien - Processus de recrutement des employés de We Finance
+* Après l’entretien - Processus de post-entretien de recrutement des employés de We Finance
 
 Ces entretiens sont créés dans AEM et sont disponibles à l’adresse :
 
@@ -52,13 +51,13 @@ Ces entretiens sont créés dans AEM et sont disponibles à l’adresse :
 
 Voici le modèle du processus de recrutement des employés de We Finance suivi dans ce document.
 
-![nous-finances-employés-recrutement-workflow](assets/we-finance-employee-recruiting-workflow.png)
+![we-finance-employee-recrutement-workflow](assets/we-finance-employee-recruiting-workflow.png)
 
 #### Processus après l’entretien de recrutement des employés We Finance {#we-finance-employee-recruiting-post-interview-workflow}
 
 Voici le modèle de processus de recrutement après l’entretien des employés de We Finance suivi dans ce document.
 
-![nous-finances-employés-recrutement-post-entretien-workflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
+![we-finance-employee-recrutement-post-entretien-workflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
 
 ### Personnages {#personas}
 
@@ -73,11 +72,11 @@ Le scénario implique les personnages suivants :
 
 Sarah Rose recherche un emploi dans l’entreprise. Elle visite le portail web de l’entreprise et parcourt les offres d’emploi répertoriées sur la page Carrières. Elle trouve un emploi qui lui convient et postule.
 
-![page d&#39;accueil](assets/home-page.png)
+![home-page](assets/home-page.png)
 
 Page d’accueil de We.Finance
 
-![page carrière](assets/career-page.png)
+![page de carrière](assets/career-page.png)
 
 Page Carrières de We.Finance
 
@@ -103,7 +102,7 @@ L’entreprise reçoit la candidature envoyée par Sarah. John Jacobs, un recrut
 
 Boîte de réception AEM de John
 
-![liste de candidats-raccourcis](assets/candidate-shortlist.png)
+![liste-candidat](assets/candidate-shortlist.png)
 
 John Jacobs présélectionne le profil de Sarah Rose pour la sélection de la responsable des recrutements
 
@@ -145,7 +144,7 @@ John Doe reçoit la tâche de planification d’un entretien dans sa boîte de r
 
 Boîte de réception AEM de John Doe
 
-![Johndoescheduleinterview](assets/johndoescheduleinterview.png)
+![johndoescheduleinterviewer](assets/johndoescheduleinterview.png)
 
 John Doe planifie l’entretien et envoie les détails à Sarah Rose
 
@@ -173,7 +172,7 @@ Gloria Rios sélectionne Sarah Rose après les entretiens
 
 Avant de demander à un candidat de rejoindre l’entreprise, son parcours doit être vérifié. John Doe ouvre et consulte les informations du demandeur sélectionné et découvre que certaines informations relatives à ses études et son parcours professionnel ne sont pour le moment pas renseignées. John Doe clique sur Besoin de plus d’informations.
 
-![](assets/johndoeinbox.png) ![johndoeinboxjohndoeneedmore information](assets/johndoeneedmoreinformation.png)
+![](assets/johndoeinbox.png) ![johndoeinboxjohndoeneedmore](assets/johndoeneedmoreinformation.png)
 
 John Doe demande plus d’informations à Sarah Rose sur ses études et son expérience professionnelle
 
@@ -187,11 +186,11 @@ Sarah Rose reçoit un courrier électronique lui indiquant que des informations 
 
 Sarah clique sur le lien Fournir des détails dans le courrier électronique. Un formulaire s’affiche. Sarah renseigne les informations requises relatives à ses études et son parcours professionnel comme demandé par John Doe et clique sur Envoyer.
 
-![information supplémentaire1](assets/additionalinformation1.png)
+![additionalinformation1](assets/additionalinformation1.png)
 
 Sarah ouvre le formulaire d’informations supplémentaires en cliquant sur le lien dans le courrier électronique
 
-![information supplémentaire2](assets/additionalinformation2.png)
+![additionalinformation2](assets/additionalinformation2.png)
 
 Sarah renseigne les informations supplémentaires comme demandé par John Doe et clique sur Envoyer
 
@@ -203,7 +202,7 @@ John Doe sélectionne la demande de consultation de la candidate et l’ouvre. J
 
 Boîte de réception AEM de John Doe
 
-![johndoeadditionalinformation review-copy](assets/johndoeadditionalinformationreview-copy.png)
+![johndoeadditionalinformationreview-copy](assets/johndoeadditionalinformationreview-copy.png)
 
 John Doe consulte les informations supplémentaires fournies par Sarah et les approuve
 
@@ -215,7 +214,7 @@ John Jacobs voit la demande de vérification de parcours dans la boîte de réce
 
 Boîte de réception AEM de John Jacobs
 
-![johnjacobsbackgroundcheckgoahead](assets/johnjacobsbackgroundcheckgoahead.png)
+![johnjacobsbackcheckforward](assets/johnjacobsbackgroundcheckgoahead.png)
 
 Après avoir vérifié le parcours, John Jacobs clique sur Avancer
 
@@ -223,11 +222,11 @@ Après avoir vérifié le parcours, John Jacobs clique sur Avancer
 
 John Doe reçoit une demande dans sa boîte de réception AEM pour l’envoi de la lettre de recrutement. John ouvre la demande et affiche les détails. John Doe ajoute le fichier PDF de lettre de recrutement et clique sur Joindre et envoyer la lettre de recrutement.
 
-![johndoejointingletterinbox](assets/johndoejoiningletterinbox.png)
+![johndoejointes ingletterinbox](assets/johndoejoiningletterinbox.png)
 
 Boîte de réception AEM de John Doe
 
-![johndoejointingletterattachandsend](assets/johndoejoiningletterattachandsend.png)
+![johndoejointe ingletterattachandsend](assets/johndoejoiningletterattachandsend.png)
 
 John Doe envoie la lettre de recrutement pour signature
 
@@ -235,17 +234,16 @@ John Doe envoie la lettre de recrutement pour signature
 
 Sarah Rose reçoit la lettre de recrutement pour signature. Sarah clique sur Cliquez ici pour consulter et signer la lettre de recrutement. Le fichier PDF de lettre de recrutement s’ouvre avec un champ pour signer le document.
 
-![sarahrosejoiningletemail](assets/sarahrosejoiningletteremail.png)
+![sarahrosejointes ingletteremail](assets/sarahrosejoiningletteremail.png)
 
 Sarah Rose reçoit la lettre de recrutement pour signature
 
-Sarah peut choisir entre la saisie, la fonction d’écriture à la main, l’insertion d’une image de signature ou l’utilisation de l’écran tactile de son appareil mobile pour dessiner sa signature. Sarah saisit son nom, clique sur Cliquer pour signer et télécharge la copie signée de la lettre de jonction.
+Sarah peut choisir entre la saisie, la fonction d’écriture à la main, l’insertion d’une image de signature ou l’utilisation de l’écran tactile de son appareil mobile pour dessiner sa signature. Sarah saisit son nom, clique sur Cliquer pour signer et télécharge la copie signée de la lettre de recrutement.
 
-![sarahrosejoiningletsign](assets/sarahrosejoininglettersign.png)
+![sarahrosejoint inglettersign](assets/sarahrosejoininglettersign.png)
 
 Sarah saisit son nom pour signer la lettre de recrutement
 
-![sarahrosejointinglettersign2](assets/sarahrosejoininglettersign2.png)
+![sarahrosejoint inglettersign2](assets/sarahrosejoininglettersign2.png)
 
 Sarah clique sur Cliquer pour signer pour terminer la procédure de signature de la lettre de recrutement
-
