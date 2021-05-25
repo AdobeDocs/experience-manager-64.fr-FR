@@ -1,14 +1,13 @@
 ---
 title: Dépannage de Dynamic Media – mode Scene7
-description: Dépannage du mode d’exécution Dynamic Media - Scene7.
+description: Résolution des problèmes liés au mode d’exécution Dynamic Media - Scene7.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
-feature: Troubleshooting
+feature: Résolution des problèmes
 role: Administrator,Business Practitioner
-translation-type: tm+mt
 source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
 source-wordcount: '1296'
@@ -24,18 +23,18 @@ Le document suivant décrit la résolution des problèmes affectant Dynamic Medi
 
 Assurez-vous que Dynamic Media a été correctement configuré en procédant comme suit :
 
-* La commande début up contient l&#39;argument `-r dynamicmedia_scene7` runmode.
+* La commande Start up contient l’argument `-r dynamicmedia_scene7` runmode.
 * Tous les packs de correctifs cumulatifs (CFP) AEM 6.4 ont été installés *avant* tout Feature Pack Dynamic Media disponible.
 * Le Feature Pack 18912 facultatif est installé.
 
    Ce Feature Pack facultatif est utile pour la prise en charge FTP ou si vous effectuez une migration des ressources de Dynamic Media vers Dynamic Media Classic.
 
 * Accédez à l’interface utilisateur des services cloud et vérifiez que le compte fourni s’affiche sous **[!UICONTROL Configurations disponibles]**.
-* Assurez-vous que l’Activation de réplication **[!UICONTROL Dynamic Media Asset  (scene7)]** est activée.
+* Assurez-vous que l’agent de réplication **[!UICONTROL Dynamic Media Asset Activation (scene7)]** est activé.
 
-   Cet agent de réplication se trouve sous **[!UICONTROL Agents]** sur l&#39;auteur.
+   Cet agent de réplication se trouve sous **[!UICONTROL Agents]** sur l’auteur.
 
-## Général (tous les actifs) {#general-all-assets}
+## Général (toutes les ressources) {#general-all-assets}
 
 Vous trouverez ci-après quelques astuces et conseils généraux concernant toutes les ressources.
 
@@ -52,7 +51,7 @@ Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE L
 
 ### Journalisation de la synchronisation {#synchronization-logging}
 
-Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur AEM `/crx-quickstart/logs/`). Une journalisation suffisante est disponible pour déterminer la cause première de la plupart des problèmes. Cependant, vous pouvez augmenter la journalisation dans DEBUG sur le package `com.adobe.cq.dam.ips` via la console Sling ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) afin de collecter plus d’informations.
+Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur AEM `/crx-quickstart/logs/`). La journalisation est suffisante pour déterminer la cause de la plupart des problèmes. Vous pouvez toutefois augmenter la journalisation sur DEBUG sur le module `com.adobe.cq.dam.ips` via la console Sling ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) pour collecter plus d’informations.
 
 ### Déplacer, copier ou supprimer {#move-copy-delete}
 
@@ -62,11 +61,11 @@ Avant d’effectuer une opération de déplacement, de copie ou de suppression, 
 * Pour les paramètres prédéfinis de visionneuse et d’image, vérifiez qu’il existe une valeur `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` avant d’effectuer des opérations de déplacement, de copie ou de suppression.
 * Si la valeur de métadonnées ci-dessus est absente, vous devez transférer à nouveau les ressources avant les opérations de déplacement, de copie ou de suppression.
 
-### Contrôle de version {#version-control}
+### Gestion des versions {#version-control}
 
-Lorsque vous remplacez un fichier Dynamic Media existant (même nom et emplacement), vous avez la possibilité de conserver les deux fichiers ou de remplacer ou de créer une version :
+Lorsque vous remplacez une ressource Dynamic Media existante (même nom et emplacement), vous avez la possibilité de conserver les deux ressources ou de remplacer ou de créer une version :
 
-* Si vous conservez ces deux éléments, vous créerez un nouveau fichier avec un nom unique pour l’URL du fichier publié. Par exemple, **[!UICONTROL image.jpg]** est la ressource d’origine et **[!UICONTROL image1.jpg]** la ressource nouvellement chargée.
+* Si vous conservez les deux, une nouvelle ressource est créée avec un nom unique pour l’URL de la ressource publiée. Par exemple, **[!UICONTROL image.jpg]** est la ressource d’origine et **[!UICONTROL image1.jpg]** est la ressource qui vient d’être chargée.
 
 * La création d’une version n’est pas prise en charge dans le cadre de la diffusion en mode Scene7 de Dynamic Media. La nouvelle version remplace la ressource existante dans la diffusion.
 
