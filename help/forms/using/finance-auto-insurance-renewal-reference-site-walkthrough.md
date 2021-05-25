@@ -1,89 +1,88 @@
 ---
 title: Présentation du site de référence de renouvellement de l’assurance automobile We.Finance
 seo-title: Présentation du site de référence de renouvellement de l’assurance automobile We.Finance
-description: Consultez la présentation détaillée du site de référence du cas d'utilisation de l'assurance auto de We.Finance qui montre comment AEM formulaires et son intégration à Microsoft Dynamics permettent de personnaliser l'expérience client dans une société de service financier.
-seo-description: Consultez la présentation détaillée du site de référence du cas d'utilisation de l'assurance auto de We.Finance qui montre comment AEM formulaires et son intégration à Microsoft Dynamics permettent de personnaliser l'expérience client dans une société de service financier.
+description: Consultez la présentation détaillée du site de référence du cas d’utilisation de l’assurance automobile We.Finance qui présente comment AEM forms et son intégration à Microsoft Dynamics permettent de personnaliser l’expérience client dans une société de services financiers.
+seo-description: Consultez la présentation détaillée du site de référence du cas d’utilisation de l’assurance automobile We.Finance qui présente comment AEM forms et son intégration à Microsoft Dynamics permettent de personnaliser l’expérience client dans une société de services financiers.
 uuid: 18676ab4-9f8d-4014-b751-2a722fd152da
 contentOwner: dekalra
 topic-tags: introduction
 discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
-translation-type: tm+mt
-source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
+exl-id: db416cbc-27a7-4a2c-b4b3-43e8963faf22
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 31%
 
 ---
 
-
 # Présentation du site de référence de renouvellement de l’assurance automobile We.Finance {#we-finance-auto-insurance-renewal-reference-site-walkthrough}
 
-## Conditions préalables {#pre-requisites}
+## Prérequis {#pre-requisites}
 
-Configurez le site de référence comme décrit dans [Configuration et configuration du site de référence de Forms 6.4 AEM](/help/forms/using/setup-reference-sites.md).
+Configurez le site de référence comme décrit dans [Configuration et configuration du site de référence Forms d’AEM 6.4](/help/forms/using/setup-reference-sites.md).
 
 ## Exemple d’utilisation du site de référence We.Finance  {#we-finance-reference-site-scenario}
 
-Le site Web de We.Finance est un site de services financiers conçu pour vous aider à découvrir les capacités de communication interactives de l&#39;AEM Forms.
+Le site We.Finance est un site de services financiers conçu pour vous aider à découvrir les fonctionnalités de communication interactive d’AEM Forms.
 
-Lisez la présentation détaillée du cas d&#39;utilisation de l&#39;assurance auto de We.Finance qui montre comment AEM formulaires et son intégration à Microsoft Dynamics permettent de personnaliser l&#39;expérience client dans une société de service financier. La présentation interactive est conçue pour faciliter la mise en oeuvre de transactions numériques complexes et la communication client dans une société financière.
+Lisez la présentation détaillée du cas d’utilisation de l’assurance automobile We.Finance qui explique comment AEM forms et son intégration à Microsoft Dynamics permettent de personnaliser l’expérience client dans une société de services financiers. La présentation interactive est conçue pour faciliter la mise en oeuvre de transactions numériques complexes et la communication client dans une société financière.
 
 **La présentation commence par le cas d’utilisation :**
 
 Sarah Rose est déjà cliente chez We.Finance et a acheté une police d’assurance automobile. Elle doit renouveler sa police d’assurance aujourd’hui. Gloria Rios, courtier d’assurance chez We.Finance, envoie un rappel à Sarah concernant le renouvellement de sa police. Sarah suit les instructions figurant dans le courrier électronique et effectue la procédure.
 
-## Présentation de la demande d’assurance automobile  {#auto-insurance-application-walkthrough}
+## Présentation de la demande d’assurance automobile {#auto-insurance-application-walkthrough}
 
-Le scénario de l&#39;application d&#39;assurance auto-assurance We.Finance est une narration visuelle pour l&#39;utilisateur et repose sur deux personnages :
+Le scénario de demande d’assurance automobile We.Finance est une narration visuelle pour l’utilisateur et repose sur deux personnages :
 
 * Sarah Rose, une cliente chez We.Finance
 * Gloria Rios, courtier d’assurance chez We.Finance
 
 ### Gloria envoie une notification de renouvellement de police d’assurance à partir de We.Finance  {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria se connecte à l’instance AEM, clique sur **Renouvellement de l’assurance automatique,**, puis sur **Ouvrir l’interface utilisateur de l’agent.** Le clic préremplit le document d’assurance avec les détails de la police de Sarah Rose. Gloria clique sur **Envoyer** et un message s’affiche à l’écran &quot;Envoi initié&quot;, puis en quelques secondes &quot;Envoi réussi&quot;.
+Gloria se connecte à l’instance AEM, clique sur **Renouvellement d’assurance automobile,**, puis sur **Ouvrir l’interface utilisateur de l’agent.** Le clic préremplit le document d’assurance avec les informations de police de Sarah Rose. Gloria clique sur **Envoyer** et un message s’affiche à l’écran &quot;Envoi commencé&quot;, puis en quelques secondes &quot;Envoyé avec succès&quot;.
 
-Sarah reçoit un courrier électronique contenant le sujet &quot;Votre renouvellement d’assurance automatique&quot;.
+Sarah reçoit un courrier électronique contenant le sujet &quot;Votre renouvellement d’assurance automobile&quot;.
 
 ![agent_ui_email](assets/agent_ui_email.png)
 
 #### Démonstration {#see-it-yourself}
 
-Accédez à **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents** > **We.Finance** > **Auto Insurance**. Sélectionnez la communication interactive **Renouvellement d&#39;assurance automatique** et cliquez sur **Ouvrir l&#39;interface utilisateur de l&#39;agent**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Entrez une adresse électronique valide pour recevoir le courrier électronique contenant le document de stratégie joint, puis cliquez sur Envoyer.
+Accédez à **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents** > **We.Finance** > **Assurance automobile**. Sélectionnez la communication interactive **Renouvellement d’assurance automobile** et cliquez sur **Ouvrir l’interface utilisateur de l’agent**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Saisissez une adresse électronique valide pour recevoir le courrier électronique contenant le document de stratégie joint, puis cliquez sur Envoyer.
 
-Vous pouvez accéder à la communication interactive Renouvellement d&#39;assurance et la consulter directement à partir de `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
+Vous pouvez accéder à la communication interactive Renouvellement d’assurance automobile et la consulter directement à partir de `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
 ### Sarah reçoit une notification de renouvellement de police d’assurance de We.Finance et décide d’effectuer le renouvellement.{#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
-Sarah reçoit un courrier électronique accompagné d’une pièce jointe de We.Finance qui lui rappelle que sa police d’assurance auto est sur le point d’expirer. La pièce jointe est la version imprimée de sa lettre d&#39;assurance auto.
+Sarah reçoit un courrier électronique contenant une pièce jointe de We.Finance qui lui rappelle que sa police d’assurance automobile est sur le point d’expirer. La pièce jointe est la version imprimée de sa lettre d’assurance automobile.
 
-Sarah clique sur **Renouveler maintenant** et est redirigée vers la version Web de sa lettre d’assurance automatique. En plus de cette lettre, Sarah trouve le nombre de jours restants pour l’expiration de sa stratégie. La page fournit à Sarah un aperçu de base des détails de sa police d’assurance, tels que le numéro de police, le montant dû et d’autres informations, telles que les offres d’escompte et les récompenses de fidélité. Sarah clique à nouveau sur **Renouveler maintenant** au bas de la stratégie.
+Sarah clique sur **Renouveler maintenant** et est redirigée vers la version web de sa lettre d’assurance automobile. En plus de cette lettre, Sarah trouve le nombre de jours restants pour l’expiration de sa stratégie. La page fournit à Sarah un aperçu de base des détails de sa police d’assurance, tels que le numéro de la police, le montant dû et d’autres informations, telles que les offres de remise et les récompenses de fidélité. Sarah clique à nouveau sur **Renouveler maintenant** au bas de la stratégie.
 
 ![ref1](assets/ref1.png)
 
 #### Fonctionnement {#how-it-works}
 
-La sortie Web et imprimée de votre lettre d&#39;assurance automatique est créée à l&#39;aide des fonctionnalités multi-canaux d&#39;Interactive Communications.
+Les sorties web et imprimée de votre lettre d’assurance automobile sont créées à l’aide des fonctionnalités multicanaux des communications interactives.
 
 Le bouton Renouveler maintenant dans le courrier électronique est lié à la demande de renouvellement d’assurance automobile qui se présente sous forme de communication interactive sur une instance de publication.
 
 #### Démonstration  {#see-it-yourself-1}
 
-Vous devriez recevoir un courrier électronique avec un fichier PDF joint. Le PDF est une version imprimée de votre lettre d&#39;assurance auto. Cliquez sur **Renouveler maintenant** pour accéder à la version Web de la stratégie. Vérifiez vos informations personnelles et les détails de votre stratégie et cliquez sur **Renouveler maintenant** pour accéder à une autre communication interactive.
+Vous devriez recevoir un courrier électronique avec un fichier PDF joint. Le PDF est une version imprimée de votre lettre d’assurance automobile. Cliquez sur **Renouveler maintenant** pour accéder à la version web de la stratégie. Vérifiez vos informations personnelles et vos informations de politique, puis cliquez sur **Renouveler maintenant** pour accéder à une autre communication interactive.
 
-Le bouton **Renouveler maintenant** du courrier électronique dirige Sarah vers la version Web de la stratégie. Vous pouvez consulter l’URL suivante :
+Le bouton **Renouveler maintenant** dans le courrier électronique redirige Sarah vers la version web de la stratégie. Vous pouvez consulter l’URL suivante :
 
 `https://[authorServer]:[authorPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=1`
 
-Vous pouvez consulter le résumé détaillé de votre renouvellement d&#39;assurance automatique et cliquer sur **Renouveler maintenant** en bas de la page.
+Vous pouvez consulter le résumé détaillé de votre renouvellement d’assurance automobile et cliquer sur **Renouveler maintenant** au bas de la page.
 
 ### Sarah accède à la page de paiement {#sarah-reaches-the-payment-page}
 
-We.Finance redirige Sarah vers la page de paiement. Sarah vérifie à nouveau son numéro de stratégie et sa date d’expiration avec ses enregistrements. Sur le côté droit de la page, elle vérifie le Sommaire des paiements de son renouvellement avec une remise de 10 % sur le montant total.
+We.Finance redirige Sarah vers la page de paiement. Sarah vérifie à nouveau son numéro de police et sa date d’expiration avec ses enregistrements. Sur le côté droit de la page, elle vérifie le récapitulatif des paiements de son renouvellement avec une remise de 10 % sur le montant total.
 
 #### Fonctionnement {#how-it-works-1}
 
-Le bouton Renouveler maintenant dirige Sarah vers la page de paiement. La page de paiement est un formulaire adaptatif.
+Le bouton Renouveler maintenant redirige Sarah vers la page de paiement. La page de paiement est un formulaire adaptatif.
 
 #### Démonstration {#see-it-yourself-2}
 
@@ -103,6 +102,6 @@ Lorsque Sarah remplit les informations de carte de crédit et clique sur le bout
 
 #### Démonstration  {#see-it-yourself-3}
 
-Vous pouvez vue le message de confirmation après avoir cliqué sur Effectuer le paiement à l’adresse
+Vous pouvez afficher le message de confirmation après avoir cliqué sur Effectuer le paiement à l’adresse
 
 `https://[authorServer]:[authorPort]/content/forms/af/we-finance/credit-card/ccbillpayment/jcr:content/guideContainer.guideThankYouPage.html?owner=admin&status=Submitted`
