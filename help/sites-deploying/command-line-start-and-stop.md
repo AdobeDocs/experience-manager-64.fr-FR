@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
-translation-type: tm+mt
-source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
+exl-id: 9d2682c2-6360-402e-a020-0021f5051a2d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 93%
 
 ---
-
 
 # Début et arrêt d’AEM à partir de la ligne de commande{#command-line-start-and-stop}
 
@@ -24,7 +23,7 @@ ht-degree: 93%
 
 Le script `start` est disponible dans le répertoire *&lt;cq-installation>/bin*. Des versions sont fournies pour Unix et Windows. Le script démarre l’instance installée dans le répertoire *&lt;cq-installation>*.
 
-Ces deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour début et régler l’instance AEM.
+Ces deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour démarrer et ajuster l’instance AEM.
 
 <table> 
  <tbody> 
@@ -71,7 +70,7 @@ Ces deux versions prennent en charge une liste de variables d’environnement qu
 >
 >Remarque : Certains modes d’exécution, comme création et publication, doivent être définis avant le premier démarrage d’AEM. Ils ne peuvent pas être modifiés par la suite. Avant de configurer une instance AEM à utiliser en production, consultez la [documentation sur les modes d’exécution](/help/sites-deploying/configure-runmodes.md) pour plus d’informations.
 
-### Exemple de script start.bat pour la plateforme Windows  {#windows-platform-start-bat-script-example}
+### Exemple de script start.bat pour la plateforme Windows {#windows-platform-start-bat-script-example}
 
 ```shell
 SET CQ_PORT=1234 & ./start.bat
