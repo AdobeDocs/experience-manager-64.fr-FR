@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 0089394f-0107-49eb-ad73-52e9cabe71b1
-translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+exl-id: ca11bfcd-06d1-4ca9-9069-afa91d8a6610
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 94%
 
 ---
-
 
 # Intégration à Adobe Analytics{#integrating-with-adobe-analytics}
 
@@ -34,10 +33,10 @@ Les données incluent la page et les données sur l’utilisateur, par exemple 
 
 Les pages suivantes vous aident à configurer l’intégration :
 
-* [Connexion à Adobe Analytics et création de structures](/help/sites-administering/adobeanalytics-connect.md)
-* [Configuration du suivi des liens pour Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
-* [Mise en correspondance des données de composant avec les propriétés Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
-* [Configuration du suivi vidéo pour Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
+* [Connexion à Adobe Analytics et création de structures](/help/sites-administering/adobeanalytics-connect.md)
+* [Configuration du suivi des liens Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
+* [Mappage des données de composant aux propriétés Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
+* [Configuration du suivi vidéo pour Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 
 Vous pouvez également utiliser l’[assistant de souscription](/help/sites-administering/opt-in.md) pour exécuter facilement l’intégration.
 
@@ -64,4 +63,3 @@ Voir :
 >
 >  
 par exemple, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
