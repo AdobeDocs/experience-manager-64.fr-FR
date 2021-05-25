@@ -1,22 +1,21 @@
 ---
 title: Fonction Blog
 seo-title: Fonction Blog
-description: Information de la communauté dans un format de journalisation
-seo-description: Information de la communauté dans un format de journalisation
+description: Informations de la communauté dans un format de journalisation
+seo-description: Informations de la communauté dans un format de journalisation
 uuid: 01f1a547-d22b-4da6-a69c-ab420e5a9e19
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: d5519211-8a04-4699-97bc-e162ec0f3781
-translation-type: tm+mt
-source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+exl-id: 12ae8b4c-73c5-4ec9-beea-b682b55ebdfd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1604'
 ht-degree: 46%
 
 ---
-
 
 # Fonction Blog {#blog-feature}
 
@@ -39,7 +38,7 @@ La fonction Blog comporte les éléments suivants :
 
 Cette section de la documentation décrit :
 
-* Ajouter la fonction de blog à un site AEM
+* Ajout de la fonction de blog à un site AEM
 * Paramètres de configuration des composants de blog
 
 >[!NOTE]
@@ -50,67 +49,67 @@ Cette section de la documentation décrit :
 
 ## Ajout de composants de blog à une page {#adding-blog-components-to-a-page}
 
-Si vous souhaitez ajouter un blog à une page en mode création, utilisez le navigateur de composants pour localiser
+Si vous souhaitez ajouter un blog à une page en mode création, utilisez l’explorateur de composants pour accéder à :
 
 * `Communities / Blog`
 * `Communities / Blog Sidebar`
 
-Et faites-les glisser sur une page où le blog doit apparaître.
+Faites-les glisser sur une page où le blog doit apparaître.
 
-Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
+Pour plus d’informations, voir [Principes de base des composants des communautés](basics.md).
 
-Lorsque les [bibliothèques client requises](blog-developer-basics.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Blog`s&#39;affiche :
+Lorsque les [bibliothèques côté client requises](blog-developer-basics.md#essentials-for-client-side) sont incluses, voici comment le composant `Blog`apparaîtra :
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
-Et comment apparaît le `Blog Sidebar` :
+Et comment le `Blog Sidebar` apparaîtra :
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
 ### Configuration du blog {#configuring-blog}
 
-Sélectionnez le composant `Blog` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Blog` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
-![configurer les paramètres ](assets/chlimage_1-149.png) ![iconBlog](assets/Blog-configure.png)
+![configuration des paramètres ](assets/chlimage_1-149.png) ![iconBlog](assets/Blog-configure.png)
 
 #### Onglet Settings {#settings-tab}
 
 Sous l’onglet **[!UICONTROL Paramètres]**, définissez les fonctionnalités de base du blog :
 
-* **[!UICONTROL Autoriser la miniature des pièces jointesSi cette option est cochée, une miniature de l’image jointe est créée.]**
+* **[!UICONTROL Autoriser la]**
+miniature des pièces jointes Si cette option est cochée, une miniature de l’image jointe est créée.
 
+* **[!UICONTROL Taille max. de la miniature de la pièce jointe]**
+: taille maximale (en pixels) de la miniature de la pièce jointe. La valeur par défaut est 800 x 800.
+
+* **[!UICONTROL Taille d’image min. pour la]**
+miniature Taille minimale (en octets) de l’image pour générer une miniature pour les images intégrées. La valeur par défaut est 100000bytes (100 Ko).
 
 * **[!UICONTROL Taille maximale de la miniature]**
-de la pièce jointe Taille maximale (en pixels) de la miniature de la pièce jointe. La valeur par défaut est 800 x 800.
+: taille maximale (en pixels) de la miniature de l’image intégrée. La valeur par défaut est 800 x 800.
 
-* **[!UICONTROL Taille minimale de l’image pour la]**
-miniatureTaille minimale (en octets) de l’image pour la génération de la miniature pour les images insérées. La valeur par défaut est de 100 000 octets (100 Ko).
+* **[!UICONTROL Autoriser les]**
+membres privilégiés Si cette option est cochée, seuls les membres privilégiés sont autorisés à créer du contenu.
 
-* **[!UICONTROL Taille]**
-maximale des vignettesTaille maximale (en pixels) de l’image miniature pour l’image intégrée. La valeur par défaut est 800 x 800.
-
-* **[!UICONTROL Autoriser]**
-les membres privilégiésSi cette option est cochée, seuls les membres privilégiés sont autorisés à créer du contenu.
-
-* ****
-Membres autorisés privilégiésAjoutez les membres privilégiés autorisés à créer du contenu.
+* **[!UICONTROL Autorisé]**
+Membres privilégiés Ajoutez les membres privilégiés autorisés à créer du contenu.
 
 * **[!UICONTROL Bloquer le contenu généré par l’utilisateur en]**
-mode d’édition AuteurSi cette option est activée, bloque le contenu généré par l’utilisateur lors de la modification en mode Auteur.
+mode d’édition de l’auteur Si cette option est activée, bloque le contenu généré par l’utilisateur lors de la modification en mode d’auteur.
 
 * **[!UICONTROL Titre du journal]** Titre du blog visible dans la page.
    >Remarque :
-   >Le titre du Journal permet de créer automatiquement l&#39;URL du blog. Le titre du journal que vous spécifiez ici permet d&#39;utiliser au maximum 50 caractères (avec 5 caractères supplémentaires pour l&#39;unicité) pour créer l&#39;URL du blog.
+   >Le titre du journal permet de créer automatiquement l’URL du blog. 50 caractères maximum (avec 5 caractères supplémentaires pour l’unicité) sont utilisés à partir du titre du journal que vous indiquez ici pour créer l’URL du blog.
 
 * **[!UICONTROL Description du journal]** Description du blog.
 
 * **[!UICONTROL Sujets par page]**
 
-   Définit le nombre d&#39;entrées/commentaires de blog affichés par page. La valeur par défaut est 10.
+   Définit le nombre d’entrées/de commentaires de blog affichés par page. La valeur par défaut est 10.
 
 * **[!UICONTROL Modéré]**
 
-   Si cette case est cochée, la publication des entrées et commentaires du blog doit être approuvée avant d&#39;apparaître sur un site de publication. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, la publication des entrées et des commentaires de blog doit être approuvée avant d’apparaître sur un site de publication. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Fermé]**
 
@@ -118,87 +117,87 @@ mode d’édition AuteurSi cette option est activée, bloque le contenu génér�
 
 * **[!UICONTROL Éditeur de texte enrichi]**
 
-   Si cette case est cochée, les entrées et commentaires de blog peuvent être saisis avec une annotation. Cette option est cochée par défaut.
+   Si cette case est cochée, les entrées et les commentaires de blog peuvent être saisis avec des balises. Cette option est cochée par défaut.
 
 * **[!UICONTROL Autoriser le balisage]**
 
-   Si cette option est cochée, autorisez les membres à ajouter des étiquettes de balise à leur publication (voir **[!UICONTROL onglet Champ de balise]**). Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leur publication (voir l’onglet **[!UICONTROL Champ de balise]** ). Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser les transferts de fichiers]**
 
-   Si cette option est cochée, autorisez l&#39;ajout de pièces jointes à une entrée ou un commentaire de blog. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, les fichiers joints peuvent être ajoutés à une entrée ou à un commentaire de blog. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Taille maximale du fichier]**
 
-   Ne s&#39;applique que si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
+   Convient uniquement si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **[!UICONTROL Types de fichier autorisés]**
 
-   Ne s&#39;applique que si `Allow File Uploads` est coché. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Convient uniquement si `Allow File Uploads` est coché. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
 * **[!UICONTROL Taille max. du fichier image joint]**
 
-   N’est pertinent que si l’option Autoriser les téléchargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
+   À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
 
 * **[!UICONTROL Permettre des réponses]**
 
-   Si cette option est cochée, autorisez les réponses aux commentaires publiés sur l&#39;entrée de blog. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, les réponses aux commentaires sont publiées dans l’entrée de blog. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser les utilisateurs à supprimer les commentaires et sujets]**
 
-   Si cette option est cochée, autorisez les membres à supprimer les commentaires et les entrées de blog qu&#39;ils ont publiés. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, autorisez les membres à supprimer les commentaires et les entrées de blog qu’ils ont publiés. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser abonnement]**
 
-   Si cette option est cochée, incluez la fonctionnalité suivante pour les articles de blog, ce qui permet aux membres d’être [avertis](notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [informés](notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser les abonnements par courrier électronique]**
 
-   Si cette option est cochée, autorisez les membres à être informés des nouvelles publications par courriel ([abonnement](subscriptions.md)). `Allow Following` doit être vérifié et [e-mail configuré](email.md). Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par e-mail ([subscription](subscriptions.md)). `Allow Following` doit être vérifié et [email configuré](email.md). Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser le vote]**
 
-   Si cette case est cochée, incluez la fonction de vote avec une entrée de blog. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, la fonction de vote est ajoutée à une entrée de blog. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Afficher les badges]**
 
-   Si cette case est cochée, afficher les [badges](implementing-scoring.md) gagnés et attribués avec l&#39;entrée de blog d&#39;un membre. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, affichez les [badges](implementing-scoring.md) gagnés et attribués avec l’entrée de blog d’un membre. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser le contenu proposé]**
 
-   si cette option est cochée, l&#39;idée peut être identifiée comme [contenu incitatif](featured.md). Cette option n’est pas cochée par défaut.
+   si cette case est cochée, l’idée peut être identifiée en tant que [contenu présenté](featured.md). Cette option n’est pas cochée par défaut.
 
-#### Onglet Modération utilisateur {#user-moderation-tab}
+#### Onglet Modération d’utilisateur {#user-moderation-tab}
 
 Sous l’onglet **[!UICONTROL Modération d’utilisateur]**, définissez les paramètres de modération :
 
 * **[!UICONTROL Refuser les publications]**
 
-   Si cette option est cochée, les modérateurs membres de confiance seront autorisés à refuser les publications et à empêcher que la publication ne s&#39;affiche sur le forum public. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les modérateurs membres approuvés sont autorisés à refuser des publications et à empêcher que la publication ne s’affiche sur le forum public. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Fermer/rouvrir les sujets]**
 
-   Si cette option est cochée, les modérateurs membres approuvés peuvent fermer une rubrique pour apporter d’autres modifications et commentaires et peuvent également rouvrir une rubrique. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les membres modérateurs autorisés peuvent fermer une rubrique pour ajouter d’autres modifications et commentaires et rouvrir une rubrique. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Marquer les publications]**
 
-   Si cette option est cochée, autorisez les membres à signaler les sujets ou commentaires d&#39;autres personnes comme inappropriés. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les membres ont le droit de marquer les sujets ou commentaires d’autres personnes comme étant inappropriés. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Marquer la liste de motifs]**
 
-   Si cette option est cochée, permettez aux membres de choisir, dans une liste déroulante, la raison pour laquelle ils signalent une rubrique ou un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les membres ont le droit de choisir dans une liste déroulante la raison pour laquelle ils ont marqué un sujet ou un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Motif de la marque personnalisée]**
 
-   Si cette option est cochée, autorisez les membres à entrer leur propre raison de signaler une rubrique ou un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, autorisez les membres à indiquer leur propre motif de signalement d’un sujet ou d’un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Seuil de modération]**
 
-   Indiquez le nombre de fois où une rubrique ou un commentaire doit être marqué par les membres avant que les modérateurs ne soient avertis. La valeur par défaut est 1 (une fois).
+   Saisissez le nombre de fois qu’un sujet ou un commentaire doit être marqué par les membres avant que les modérateurs ne soient informés. La valeur par défaut est 1 (une fois).
 
 * **[!UICONTROL Limite de marquage]**
 
-   Saisissez le nombre de fois où une rubrique ou un commentaire doit être marqué avant d’être masqué dans la vue publique. Si la valeur est -1, le sujet ou le commentaire marqué est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
+   Saisissez le nombre de fois qu’un sujet ou un commentaire doit être marqué avant qu’il ne soit plus visible pour le public. Si la valeur est -1, le sujet ou le commentaire marqué est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
 
 #### Onglet Champ de balise {#tag-field-tab}
 
@@ -206,15 +205,15 @@ Dans l’onglet **[!UICONTROL Champ de balise]**, spécifiez les balises qui peu
 
 * **[!UICONTROL Espaces de noms autorisés]**
 
-   Pertinent si `Allow Tagging` est coché sous l&#39;onglet **[!UICONTROL Paramètres]**. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
+   Convient si `Allow Tagging` est coché sous l’onglet **[!UICONTROL Paramètres]**. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (l’espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
 * **[!UICONTROL Limite de suggestions]**
 
-   Entrez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. La valeur -1 signifie qu’aucune limite n’est définie. La valeur par défaut est 0.
+   Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. Une valeur de -1 signifie qu’aucune limite n’est définie. La valeur par défaut est 0.
 
-### Configuration de la barre latérale de blog  {#configuring-blog-sidebar}
+### Configuration de la barre latérale de blog {#configuring-blog-sidebar}
 
-Lorsque vous cliquez sur le composant `Blog Sidebar` en maintenant le doublon enfoncé, une boîte de dialogue de modification s’ouvre.
+Lorsque vous double-cliquez sur le composant `Blog Sidebar`, une boîte de dialogue de modification s’ouvre.
 
 Sous l’onglet **[!UICONTROL Paramètres de la barre latérale du journal]**, spécifiez le format de date pour les archives et le type d’entrées à afficher dans la barre latérale :
 
@@ -222,7 +221,7 @@ Sous l’onglet **[!UICONTROL Paramètres de la barre latérale du journal]**, s
 
 * **[!UICONTROL Format de la date]**
 
-   Format utilisé pour afficher les archives des entrées de blog. Ce format utilise des espaces réservés conformes à la convention Java.
+   Format utilisé pour l’affichage des archives des entrées de blog. Ce format utilise des espaces réservés conformes à la convention Java.
 
    * yyyy : année à 4 chiffres, par exemple « 2015 »
    * yy : année à 2 chiffres, par exemple « 15 »
@@ -230,7 +229,7 @@ Sous l’onglet **[!UICONTROL Paramètres de la barre latérale du journal]**, s
    * MMM : mois abrégé, par exemple juil.
    * MM : numéro du mois, par exemple 06
 
-   La valeur par défaut est &quot;yyy MMMM&quot; qui s’affichera, par exemple, &quot;juin 2015&quot;.
+   La valeur par défaut est &quot;yyy MMMM&quot;, qui afficherait, par exemple, &quot;2015 June&quot;.
 
 * **[!UICONTROL Type d&#39;affichage]**
 
@@ -242,13 +241,13 @@ Sous l’onglet **[!UICONTROL Paramètres de la barre latérale du journal]**, s
 
 * **[!UICONTROL Chemin de composant de journal]**
 
-   *(Facultatif)* Emplacement de la ressource de blog à partir de laquelle les articles de blog doivent être répertoriés. Si rien n&#39;est indiqué, utilisez le composant resourceType `social/journal/components/hbs/journal` qui apparaît sur la même page.
+   *(Facultatif)* Emplacement de la ressource de blog à partir de laquelle les articles de blog doivent être répertoriés. Si rien n’est indiqué, utilisez le composant resourceType `social/journal/components/hbs/journal` qui apparaît sur la même page.
 
    * Par exemple, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **[!UICONTROL Limite de suggestions]**
 
-   Nombre d&#39;articles de blog à afficher. La valeur -1 signifie aucune limite. La valeur par défaut est -1.
+   Nombre d’articles de blog à afficher. Une valeur de -1 signifie aucune limite. La valeur par défaut est -1.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
@@ -278,16 +277,16 @@ Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’a
 
 ### Membres {#members}
 
-Lorsque l&#39;utilisateur connecté est membre de la communauté ou [membre privilégié](users.md#privileged-members-group) (selon la configuration), il peut sélectionner `New Article` pour créer et publier un nouvel article de blog.
+Lorsque l’utilisateur connecté est membre de la communauté ou [membre privilégié](users.md#privileged-members-group) (selon la configuration), il peut sélectionner `New Article` pour créer et publier un nouvel article de blog.
 
 Plus précisément, il est autorisé à:
 
-* Création d’un article de blog
-* Publier un nouvel article de blog pour le compte d&#39;un autre membre
+* Créer un article de blog
+* Publier un nouvel article de blog au nom d’un autre membre
 * Publication d’un commentaire sur un article de blog
-* Modifier leur propre article ou commentaire de blog
-* Supprimer leur propre article ou commentaire de blog
-* Signaler les articles ou commentaires sur le blog d&#39;autres internautes
+* Modifier son propre article ou commentaire de blog
+* Supprimer son propre article ou commentaire de blog
+* Marquer les articles ou commentaires de blog d’autres
 
 ![chlimage_1-153](assets/chlimage_1-153.png) ![chlimage_1-154](assets/chlimage_1-154.png)
 
