@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c1636537-f7dc-48d8-a3f0-9052bcd28b62
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: dbad776a-60fd-4fcc-ba2a-a2f379f5462c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 100%
 
 ---
-
 
 # Importation et exportation du fichier de configuration {#importing-and-exporting-the-configuration-file}
 
@@ -37,4 +36,3 @@ Pour éviter tout risque de sécurité, la valeur du mot de passe de liaison du 
 
 1. Dans Administration Console, cliquez sur Paramètres > User Management > Configuration > Importer et exporter des fichiers de configuration.
 1. Cliquez sur Parcourir pour rechercher le fichier de configuration, sur Importer, puis sur OK.
-
