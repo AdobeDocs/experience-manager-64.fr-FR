@@ -4,26 +4,25 @@ description: Découvrez comment publier des dossiers ou en annuler la publicatio
 contentOwner: VG
 feature: Brand Portal
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f41ab750-5780-42ae-a131-5bc748280215
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '573'
 ht-degree: 58%
 
 ---
-
 
 # Publication de dossiers sur Brand Portal {#publish-folders-to-brand-portal}
 
 En tant qu’administrateur d’Adobe Experience Manager (AEM) Assets, vous pouvez publier des ressources et des dossiers sur l’instance AEM Assets Brand Portal (ou planifier le workflow de planification à une date/heure ultérieure) pour votre organisation. Cependant, vous devez d’abord intégrer AEM Assets à Brand Portal. Pour plus de détails, voir [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md).
 
-Une fois que vous avez publié un fichier ou un dossier, il est disponible pour les utilisateurs dans le portail de marque.
+Une fois que vous avez publié une ressource ou un dossier, il est disponible pour les utilisateurs dans Brand Portal.
 
-Si vous apportez des modifications ultérieures à la ressource ou au dossier d’origine dans AEM Assets, les modifications ne sont pas répercutées dans le portail des marques tant que vous n’avez pas republié la ressource ou le dossier. Cette fonction assure que les modifications en cours ne sont pas disponibles dans Brand Portal. Seules les modifications approuvées publiées par un administrateur sont disponibles dans Brand Portal.
+Si vous apportez des modifications ultérieures à la ressource ou au dossier d’origine dans AEM Assets, les modifications ne sont pas répercutées dans Brand Portal tant que vous n’avez pas republié la ressource ou le dossier. Cette fonction assure que les modifications en cours ne sont pas disponibles dans Brand Portal. Seules les modifications approuvées publiées par un administrateur sont disponibles dans Brand Portal.
 
 ## Publication de dossiers sur Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Dans l’interface AEM Assets, passez la souris sur le dossier de votre choix et sélectionnez l’option **[!UICONTROL Publier]** dans les actions rapides.
+1. Dans l’interface d’AEM Assets, passez la souris sur le dossier souhaité et sélectionnez l’option **[!UICONTROL Publier]** dans les actions rapides.
 
    Vous pouvez aussi sélectionner le dossier souhaité et suivre les étapes supplémentaires.
 
@@ -33,25 +32,25 @@ Si vous apportez des modifications ultérieures à la ressource ou au dossier d�
 
    Pour publier les dossiers sélectionnés sur Brand Portal, effectuez l’une des opérations suivantes :
 
-   * Dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**. Ensuite, dans le menu, sélectionnez **[!UICONTROL Publier sur le portail de marque]**.
+   * Dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**. Ensuite, dans le menu, sélectionnez **[!UICONTROL Publier sur Brand Portal]**.
    * Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**.
 
-3. Ensuite, à partir de **[!UICONTROL Action]** sélectionnez **[!UICONTROL Publier sur le portail de la marque]**, et dans **[!UICONTROL Planification]** sélectionnez **[!UICONTROL Maintenant]**. Appuyez sur **[!UICONTROL Next] (Suivant).**
-4. Dans **[!UICONTROL Scope]**, confirmez votre sélection et appuyez sur **[!UICONTROL Publier sur le portail de la marque]**.
+3. Ensuite, à partir de **[!UICONTROL Action]** sélectionnez **[!UICONTROL Publier sur Brand Portal]**, puis, dans **[!UICONTROL Planification]** sélectionnez **[!UICONTROL Maintenant]**. Appuyez sur **[!UICONTROL Suivant].**
+4. Dans **[!UICONTROL Portée]**, confirmez votre sélection et appuyez sur **[!UICONTROL Publier sur Brand Portal]**.
 
    Un message indique que le dossier a été placé en file d’attente pour publication sur Brand Portal. Connectez-vous à l’interface Brand Portal pour voir le dossier publié.
 
    **Publication ultérieure de dossiers**
 
-   Pour programmer la publication sur le flux de travaux du portail de marques des dossiers de fichiers à une date ou une heure ultérieure :
+   Pour planifier le workflow de publication sur Brand Portal des dossiers de ressources à une date ou une heure ultérieure :
 
-   1. Une fois que vous avez sélectionné les fichiers/dossiers à publier, sélectionnez **[!UICONTROL Gérer la publication]** dans la barre d’outils située en haut de l’écran.
-   2. Sur la **[!UICONTROL page Gérer la publication]**, sélectionnez **[!UICONTROL Publier sur le portail de la marque]** dans **[!UICONTROL Action]** et **[!UICONTROL Plus tard]** dans **[!UICONTROL Planification]**.
+   1. Une fois que vous avez sélectionné les ressources/dossiers à publier, sélectionnez **[!UICONTROL Gérer la publication]** dans la barre d’outils supérieure.
+   2. Sur la page **[!UICONTROL Gérer la publication]**, sélectionnez **[!UICONTROL Publier sur Brand Portal]** dans **[!UICONTROL Action]** et sélectionnez **[!UICONTROL Plus]** dans **[!UICONTROL Planification]**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   3. Sélectionnez une **[!UICONTROL Date d’activation]** et spécifiez l’heure. Appuyez sur **[!UICONTROL Next]** (Suivant).
-   4. Confirmez votre sélection dans **[!UICONTROL Portée]**. Appuyez sur **[!UICONTROL Next]** (Suivant).
+   3. Sélectionnez une **[!UICONTROL Date d’activation]** et spécifiez l’heure. Appuyez sur **[!UICONTROL Suivant]**.
+   4. Confirmez votre sélection dans **[!UICONTROL Portée]**. Appuyez sur **[!UICONTROL Suivant]**.
    5. Spécifiez un titre de workflow sous **[!UICONTROL Processus]**. Appuyez sur **[!UICONTROL Publier ultérieurement]**.
 
       ![manageschedulepub](assets/manageschedulepub.png)
@@ -72,24 +71,24 @@ Vous avez la possibilité d’annuler rapidement la publication de dossiers sur 
 
    Pour annuler rapidement la publication du dossier désiré sur Brand Portal :
 
-   1. Sur la **[!UICONTROL page Gérer la publication]**, dans **[!UICONTROL Action]** sélectionnez **[!UICONTROL Annuler la publication à partir du portail de marque]** et dans **[!UICONTROL Planification]** sélectionnez **[!UICONTROL Maintenant]**.
+   1. Sur la **[!UICONTROL page Gérer la publication]**, à partir de **[!UICONTROL Action]** sélectionnez **[!UICONTROL Annuler la publication à partir de Brand Portal]** et à partir de **[!UICONTROL Planification]** sélectionnez **[!UICONTROL Maintenant]**.
    2. Appuyez/cliquez sur **[!UICONTROL Suivant].**
-   3. Dans **[!UICONTROL Scope]**, confirmez votre sélection et appuyez sur **[!UICONTROL Annuler la publication de la marque Portal]**.
+   3. Dans **[!UICONTROL Portée]**, confirmez votre sélection et appuyez sur **[!UICONTROL Annuler la publication à partir de Brand Portal]**.
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
-   **Annulation de la publication à partir du portail de marque ultérieurement**
+   **Annulation ultérieure de la publication à partir de Brand Portal**
 
    Pour planifier l’annulation de la publication d’un dossier sur Brand Portal à une date et à une heure ultérieures :
 
-   1. Sur la **[!UICONTROL page Gérer la publication]**, dans **[!UICONTROL Action]** sélectionnez **[!UICONTROL Annuler la publication à partir du portail de marque]** et dans **[!UICONTROL Planification]** sélectionnez **[!UICONTROL Ultérieurement].**
-   2. Sélectionnez une **[!UICONTROL Date d’activation]** et spécifiez l’heure. Appuyez sur **[!UICONTROL Next]** (Suivant).
-   3. Dans **[!UICONTROL Scope]**, confirmez votre sélection et appuyez sur **[!UICONTROL Next]**.
-   4. Spécifiez un **[!UICONTROL titre de flux de travail]** sous **[!UICONTROL Workflows]**. Appuyez sur **[!UICONTROL Annuler la publication ultérieurement].**
+   1. Sur la **[!UICONTROL page Gérer la publication]**, à partir de **[!UICONTROL Action]** sélectionnez **[!UICONTROL Annuler la publication à partir de Brand Portal]** et à partir de **[!UICONTROL Planification]** sélectionnez **[!UICONTROL Plus tard].**
+   2. Sélectionnez une **[!UICONTROL Date d’activation]** et spécifiez l’heure. Appuyez sur **[!UICONTROL Suivant]**.
+   3. Dans **[!UICONTROL Portée]**, confirmez votre sélection et appuyez sur **[!UICONTROL Suivant]**.
+   4. Spécifiez un **[!UICONTROL Titre du workflow]** sous **[!UICONTROL Workflows]**. Appuyez sur **[!UICONTROL Annuler la publication ultérieurement].**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
 
 >[!NOTE]
 >
->La procédure de publication/annulation de la publication d’un fichier depuis/vers le portail des marques est similaire à la procédure correspondante pour un dossier.
+>La procédure de publication/annulation de la publication d’une ressource vers/depuis Brand Portal est similaire à la procédure correspondante pour un dossier.
