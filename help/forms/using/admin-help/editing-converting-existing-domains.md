@@ -9,20 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
-translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+exl-id: 07ca7715-f7b3-40e0-95bc-e05f0662ed08
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 100%
 
 ---
 
-
 # Modification et conversion de domaines{#editing-and-converting-existing-domains}
 
 Vous pouvez modifier les paramètres des domaines existants à partir de la page Gestion des domaines. Vous avez également la possibilité de convertir un domaine d’entreprise existant en domaine hybride.
 
-## Modification d’un domaine  {#edit-an-existing-domain}
+## Modification d’un domaine {#edit-an-existing-domain}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur le nom du domaine à modifier.
@@ -50,4 +49,3 @@ Vous pouvez modifier les paramètres des domaines existants à partir de la page
 1. Cliquez sur Convertir en domaine d’entreprise.
 1. Vérifiez les informations affichées concernant les données des utilisateurs et des groupes ainsi que l’authentification des utilisateurs, puis cliquez sur OK.
 1. Cliquez sur Ajouter un annuaire et configurez les informations requises sur l’annuaire. Voir [Ajout d’annuaires ou d’interfaces SPI personnalisées](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).
-
