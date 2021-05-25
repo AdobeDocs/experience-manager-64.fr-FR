@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 272d3ec1-7f92-4f4a-9e98-954136b20b27
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 91%
 
 ---
 
-
-# Structure de l’apparence des formulaires adaptatifs et HTML5  {#appearance-framework-for-adaptive-and-html-forms}
+# Structure de l’apparence des formulaires adaptatifs et HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
 Les formulaires (formulaires adaptatifs et HTML5) utilisent [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) et [Underscore.js](https://underscorejs.org/) pour l’apparence et les scripts. Les formulaires utilisent également l’architecture des [jQuery UI](https://jqueryui.com/) **widgets** pour tous les éléments interactifs (comme les champs ou les boutons) qu’ils contiennent. Cette architecture permet aux développeurs de formulaires d’utiliser un riche ensemble de widgets et modules externes jQuery disponibles dans les formulaires. Vous pouvez également implémenter une logique spécifique au formulaire lors de l’acquisition des données des utilisateurs comme les restrictions leadDigits/trailDigits ou l’implémentation de clauses d’image. Les développeurs de formulaires peuvent créer et utiliser des apparences personnalisées pour améliorer l’expérience d’acquisition des données et la rendre plus conviviale.
 
@@ -53,7 +52,7 @@ Vous trouverez ci-après une définition des options globales. Ces options sont 
   </tr>
   <tr>
    <td>screenReaderText</td> 
-   <td>Les lecteurs d’écran utilisent cette valeur pour fournir des informations sur le champ. Le formulaire fournit la valeur et vous pouvez remplacer la valeur.<br /> </td> 
+   <td>Les lecteurs d’écran utilisent cette valeur pour fournir des informations sur le champ. Le formulaire fournit la valeur et vous pouvez la remplacer.<br /> </td> 
   </tr>
   <tr>
    <td>tabIndex</td> 
@@ -135,10 +134,10 @@ La structure de l’apparence appelle certaines fonctions du widget qui sont imp
   </tr>
   <tr>
    <td>click:function()</td> 
-   <td>Place l’accent sur le champ et appelle XFA_CLICK_ÉVÉNEMENT.</td> 
+   <td>Place l’accent sur le champ et appelle XFA_CLICK_EVENT.</td> 
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: chaîne </em>représentant l'erreur<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Remarque</strong> : applicable uniquement aux formulaires HTML5.</p> </td> 
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: chaîne </em>représentant l’erreur<br /> <em>errorType : string ("warning"/"error")</em></p> <p><strong>Remarque</strong> : applicable uniquement aux formulaires HTML5.</p> </td> 
    <td>Envoie le message d’erreur et le type d’erreur au widget. Le widget affiche l’erreur.</td> 
   </tr>
   <tr>
@@ -231,7 +230,7 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
 
 ### NumericEdit : champ numérique, champ décimal  {#numericedit-numericfield-decimalfield}
 
-| Options  | Description |
+| Options | Description |
 |---|---|
 | dataType | Chaîne représentant le type de données du champ (entier/décimal). |
 | leadDigits | Nombre maximal de chiffres autorisés dans le nombre décimal. |
@@ -244,7 +243,7 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
 <table> 
  <tbody>
   <tr>
-   <th>Options </th> 
+   <th>Options</th> 
    <th>Description</th> 
   </tr>
   <tr>
@@ -253,11 +252,11 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
   </tr>
   <tr>
    <td>states</td> 
-   <td><p>Nombre d’états autorisés. </p> <p>Deux pour les formulaires adaptatifs (Activé, Désactivé) et trois pour les formulaires HTML5 (Activé, Désactivé, Neutre).</p> </td> 
+   <td><p>Nombre d’états autorisés. </p> <p>Deux pour les formulaires adaptatifs (activé, désactivé) et trois pour les formulaires HTML5 (activé, désactivé, neutre).</p> </td> 
   </tr>
   <tr>
    <td>state</td> 
-   <td><p>État actuel de l’élément.</p> <p>Deux pour les formulaires adaptatifs (Activé, Désactivé) et trois pour les formulaires HTML5 (Activé, Désactivé, Neutre).</p> </td> 
+   <td><p>État actuel de l’élément.</p> <p>Deux pour les formulaires adaptatifs (activé, désactivé) et trois pour les formulaires HTML5 (activé, désactivé, neutre).</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -270,4 +269,3 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
 | months | Nom localisé des mois pour ce champ. |
 | zero | Texte localisé pour le nombre 0. |
 | clearText | Texte localisé pour le bouton Effacer. |
-
