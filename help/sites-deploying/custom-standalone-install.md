@@ -9,7 +9,6 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: c9e51008-6009-49a2-9c74-1c610cef2e7f
-translation-type: tm+mt
 source-git-commit: b7e5c42009acb5044d1112e66b8e65b528355736
 workflow-type: tm+mt
 source-wordcount: '1523'
@@ -22,15 +21,15 @@ ht-degree: 77%
 
 Cette section décrit les options disponibles lors de l’installation d’une instance AEM autonome. Vous pouvez également consulter [Éléments de stockage](/help/sites-deploying/storage-elements-in-aem-6.md) pour plus d’informations sur le choix du type de stockage principal après avoir installé AEM 6.
 
-## Modification du numéro de port en renommant le fichier  {#changing-the-port-number-by-renaming-the-file}
+## Modification du numéro de port en renommant le fichier {#changing-the-port-number-by-renaming-the-file}
 
-Le port par défaut pour AEM est 4502. Si ce port n&#39;est pas disponible ou est déjà utilisé, Quickstart se configure automatiquement pour utiliser le premier numéro de port disponible comme suit : 4502, 8080, 8081, 8082, 8083, 8084, 8085, 8888, 9362, `<random>`.
+Le port par défaut pour AEM est 4502. Si ce port n’est pas disponible ou est déjà utilisé, Quickstart se configure automatiquement pour utiliser le premier numéro de port disponible comme suit : 4502, 8080, 8081, 8082, 8083, 8084, 8085, 8888, 9362, `<random>`.
 
 Vous pouvez également définir le numéro de port en renommant le fichier jar de démarrage rapide, de sorte que le nom du fichier inclut le numéro de port ; par exemple, `cq5-publish-p4503.jar` ou `cq5-author-p6754.jar`.
 
 Les différentes règles suivantes s’appliquent lorsque vous renommez le fichier jar de démarrage rapide :
 
-* Lorsque vous renommez le fichier, il doit être début avec `cq;` comme dans `cq5-publish-p4503.jar`.
+* Lorsque vous renommez le fichier, il doit commencer par `cq;` comme dans `cq5-publish-p4503.jar`.
 
 * Nous vous recommandons d’ajouter *systématiquement* un préfixe au numéro de port sous la forme suivante : « -p », par exemple cq5-publish-p4503.jar ou cq5-author-p6754.jar.
 
@@ -49,7 +48,7 @@ Les différentes règles suivantes s’appliquent lorsque vous renommez le fichi
 
 >[!NOTE]
 >
->Vous pouvez également modifier le numéro de port en utilisant l&#39;option `-port` de la commande début.
+>Vous pouvez également modifier le numéro de port à l’aide de l’option `-port` de la commande start.
 
 ## Modes d’exécution {#run-modes}
 
@@ -57,7 +56,7 @@ Les **modes d’exécution** (runmode) permettent d’ajuster l’instance AEM �
 
 * [Modes d’exécution](/help/sites-deploying/configure-runmodes.md)
 
-## Ajout d’un utilitaire d’installation de fichiers  {#adding-a-file-install-provider}
+## Ajout d’un utilitaire d’installation de fichiers {#adding-a-file-install-provider}
 
 Par défaut, le dossier `crx-quickstart/install` est surveillé pour les fichiers.\
 Ce dossier n’existe pas, mais peut être simplement créé au moment de l’exécution.
@@ -73,7 +72,7 @@ Cette méthode est tout particulièrement intéressante dans plusieurs cas d’e
 
 >[!NOTE]
 >
->Voir aussi [Comment installer automatiquement les packages CRX au démarrage du serveur](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) pour obtenir des exemples.
+>Voir aussi [Comment installer automatiquement les packages CRX au démarrage du serveur](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) pour des exemples.
 
 ## Installation et démarrage d’Adobe Experience Manager en tant que service Windows {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
@@ -86,12 +85,12 @@ Cette méthode est tout particulièrement intéressante dans plusieurs cas d’e
 Pour installer et démarrer AEM en tant que service Windows :
 
 1. Ouvrez le fichier crx-quickstart\opt\helpers\instsrv.bat dans un éditeur de texte.
-1. Si vous configurez un serveur Windows 64 bits, remplacez toutes les instances de prunsrv par l’une des commandes suivantes, selon votre système d’exploitation :
+1. Si vous configurez un serveur Windows 64 bits, remplacez toutes les instances de prunsrv par l’une des commandes suivantes, en fonction de votre système d’exploitation :
 
    * prunsrv_amd64 
    * prunsrv_ia64 
 
-   Cette commande appelle le script approprié qui début le démon de service Windows dans Java 64 bits au lieu de Java 32 bits.
+   Cette commande appelle le script approprié qui démarre le démon du service Windows en Java 64 bits au lieu de Java 32 bits.
 
 1. Pour empêcher le processus de se diviser en plusieurs processus, augmentez la taille maximale du tas ainsi que les paramètres JVM PermGen. Recherchez la commande `set jvm_options` et définissez la valeur comme suit :
 
@@ -123,7 +122,7 @@ Pour installer et démarrer AEM en tant que service Windows :
 
 >[!NOTE]
 >
->Lors de l’installation d’AEM en tant que service, vous devez indiquer le chemin d’accès absolu au répertoire des journaux dans `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` à partir de Configuration Manager.
+>Lors de l’installation d’AEM en tant que service, vous devez fournir le chemin d’accès absolu au répertoire des journaux dans `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` à partir de Configuration Manager.
 
 Pour désinstaller le service, cliquez sur **Arrêter** dans le panneau de commande **Services** ou dans la ligne de commande, accédez au dossier et saisissez `instsrv.bat -uninstall cq5`. Le service est supprimé de la liste du panneau de commande **Services** ou de la liste de la ligne de commande lorsque vous saisissez `net start`.
 
@@ -131,7 +130,7 @@ Pour désinstaller le service, cliquez sur **Arrêter** dans le panneau de comma
 
 L’emplacement par défaut du dossier temporaire de la machine java est `/tmp`. AEM utilise également ce dossier, par exemple lors de la création de modules.
 
-Si vous souhaitez modifier l’emplacement du dossier temporaire (par exemple, si vous avez besoin d’un répertoire avec plus d’espace libre), définissez un `<new-tmp-path>` en ajoutant le paramètre JVM :
+Si vous souhaitez modifier l’emplacement du dossier temporaire (par exemple, si vous avez besoin d’un répertoire avec plus d’espace libre), définissez une balise `<new-tmp-path>` en ajoutant le paramètre JVM :
 
 `-Djava.io.tmpdir="/<new-tmp-path>"`
 
@@ -142,7 +141,7 @@ Si vous souhaitez modifier l’emplacement du dossier temporaire (par exemple, s
 
 ## Autres options disponibles à partir du fichier de démarrage rapide  {#further-options-available-from-the-quickstart-file}
 
-D&#39;autres options et conventions de changement de nom sont décrites dans le fichier d&#39;aide Quickstart, disponible via l&#39;option -help. Pour accéder à l’aide, tapez :
+D’autres options et conventions de changement de nom sont décrites dans le fichier d’aide de Quickstart, disponible via l’option -help. Pour accéder à l’aide, tapez :
 
 * `java -jar cq5-<version>.jar -help`
 
@@ -233,7 +232,7 @@ Log files
 
 ## Installation d’AEM dans l’environnement Amazon EC2 {#installing-aem-in-the-amazon-ec-environment}
 
-Lors de l’installation de l’AEM sur une instance Amazon Elastic Compute Cloud (EC2), si vous installez à la fois l’auteur et la publication sur l’instance EC2, l’instance d’auteur est correctement installée en suivant la procédure d’installation [d’une instance d’AEM](/help/sites-deploying/custom-standalone-install.md) ; toutefois, l’instance de publication devient Auteur.
+Lors de l’installation d’AEM sur une instance Amazon Elastic Compute Cloud (EC2), si vous installez à la fois l’instance de création et l’instance de publication sur l’instance EC2, l’instance de création est installée correctement en suivant la procédure d’[installation d’une instance d’AEM](/help/sites-deploying/custom-standalone-install.md). cependant, l’instance de publication devient Auteur.
 
 Avant d’installer l’instance de publication sur l’environnement EC2, procédez comme suit :
 
@@ -287,13 +286,13 @@ Vous pouvez utiliser les liens suivants afin de vérifier que l’installation f
 
 * `http://localhost:8080/system/console`
 
-   Console Web.
+   Console web.
 
 ## Actions après l’installation {#actions-after-installation}
 
 Bien qu’il existe de nombreuses possibilités pour configurer la gestion de contenu web d’AEM, certaines actions doivent être entreprises ou, au moins, vérifiées immédiatement après l’installation :
 
-* Consultez la [liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) pour connaître les tâches nécessaires pour vous assurer que votre système reste sécurisé.
+* Consultez la [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) pour connaître les tâches requises pour s’assurer que votre système reste sécurisé.
 * Vérifiez la liste des utilisateurs et groupes par défaut qui sont installés avec la gestion de contenu web d’AEM. Vérifiez si vous souhaitez entreprendre des actions sur d’autres comptes - voir [Sécurité et administration des utilisateurs](/help/sites-administering/security.md) pour plus d’informations.
 
 ## Accès à CRXDE Lite et à la console Web  {#accessing-crxde-lite-and-the-web-console}
@@ -305,20 +304,20 @@ Une fois que vous avez démarré la gestion de contenu web d’AEM, vous pouvez 
 
 ### Accès à CRXDE Lite  {#accessing-crxde-lite}
 
-Pour ouvrir le CRXDE Lite, vous pouvez sélectionner **CRXDE Lite** dans l’écran de bienvenue ou utiliser votre navigateur pour naviguer jusqu’à
+Pour ouvrir CRXDE Lite, vous pouvez sélectionner **CRXDE Lite** dans l’écran de bienvenue ou utiliser votre navigateur pour accéder à
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
 ```
 
 Par exemple :\
-`http://localhost:4502/crx/de/index.jsp` &quot;
+`http://localhost:4502/crx/de/index.jsp` ``
 
 ![installcq_crxdelite](assets/installcq_crxdelite.png)
 
 ### Accès à la console Web {#accessing-the-web-console}
 
-Pour accéder à la console Web Adobe CQ, vous pouvez sélectionner **Console OSGi** à partir de l’écran de bienvenue ou utiliser votre navigateur pour accéder à
+Pour accéder à la console web Adobe CQ, vous pouvez sélectionner **Console OSGi** dans l’écran de bienvenue ou utiliser votre navigateur pour accéder à
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/system/console
@@ -326,20 +325,20 @@ Pour accéder à la console Web Adobe CQ, vous pouvez sélectionner **Console OS
 
 Par exemple :\
 `http://localhost:4502/system/console`\
-ou pour la page Bundles\
+ou pour la page Lots\
 `http://localhost:4502/system/console/bundles`
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
 Pour plus d’informations, voir [Configuration OSGi avec la console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console).
 
-## Résolution des incidents {#troubleshooting}
+## Résolution des problèmes {#troubleshooting}
 
 Pour plus d’informations sur la résolution des problèmes qui peuvent survenir en cours d’installation, voir :
 
-* [Résolution des incidents](/help/sites-deploying/troubleshooting.md)
+* [Résolution des problèmes](/help/sites-deploying/troubleshooting.md)
 
-## Désinstallation d’Adobe Experience Manager  {#uninstalling-adobe-experience-manager}
+## Désinstallation d’Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
 Dans la mesure où AEM est installé dans un seul répertoire, un utilitaire de désinstallation n’est pas nécessaire. La désinstallation peut consister uniquement à supprimer l’intégralité du répertoire d’installation, bien que la désinstallation d’AEM dépende du résultat que vous souhaitez obtenir et du type de stockage persistent utilisé.
 
