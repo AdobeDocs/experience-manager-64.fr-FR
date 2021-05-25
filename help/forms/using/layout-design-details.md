@@ -2,21 +2,20 @@
 title: Conception de la mise en page
 seo-title: Conception de la mise en page
 description: Détails de conception de la mise en page explique comment créer des mises en page à utiliser pour vos lettres ou vos communications interactives.
-seo-description: Conception de la mise en page Les détails expliquent comment créer des mises en page à utiliser pour vos lettres ou communications interactives.
+seo-description: Conception de la mise en page Détails explique comment créer des mises en page à utiliser pour vos lettres ou communications interactives.
 uuid: b21af474-07f5-4bfe-af7d-0c322e2452ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, interactive-communications
 discoiquuid: 046b1bf9-1ac7-4e2e-ab37-6fe5422dfa20
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Correspondence Management
+exl-id: 92f90e7f-2869-4201-a927-47de1fc08f5c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 93%
 
 ---
-
 
 # Conception de la mise en page {#layout-design}
 
@@ -27,7 +26,7 @@ Les modèles de formulaire XFA ou XDP sont ceux de :
 
 * Fragments de mise en page
 
-Les XDP sont conçus dans Adobe Forms Designer. Cet article fournit des détails sur la conception de vos fichiers XDP pour créer des correspondances/communications interactives efficaces, comme l’emplacement d’utilisation des champs de formulaire ou des zones de cible et le moment d’utilisation des fragments de mise en page.
+Les XDP sont conçus dans Adobe Forms Designer. Cet article fournit des détails sur la conception de vos fichiers XDP pour créer des correspondances/communications interactives efficaces, comme où utiliser des champs de formulaire ou des zones cible et quand utiliser des fragments de mise en page.
 
 ## Création d’une mise en page pour des lettres ou pour le canal d’impression des communications interactives {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
@@ -63,7 +62,7 @@ Par défaut, tous les champs sont considérés comme pouvant être associés à 
 
 Un champ associable doit :
 
-* être un XFA &lt;field> ou &lt;exclGroup>
+* être un &lt;champ> XFA ou &lt;exclGroup>
 * disposer d’une référence de liaison XFA ;
 * s’il s’agit d’un champ &lt;exclGroup>, il doit contenir au moins un champ de bouton radio enfant, faute de quoi son type de valeur ne pourra pas être déterminé.
 
@@ -128,5 +127,4 @@ Lorsque des éléments comme le logo et l’adresse de votre organisation figure
 
 Utilisez le format de rendu du serveur de la mise en page pour le formulaire XML dynamique, faute de quoi aucune lettre/communication interactive basée sur cette mise en page ne s’affichera correctement. Par défaut, le format de rendu du serveur dans LiveCycle Designer est défini comme formulaire XML dynamique. Pour vous assurer que vous utilisez le format correct :
 
-* Dans Designer, cliquez sur **[!UICONTROL Fichier > Propriétés du formulaire > Par défaut]** et assurez-vous que le paramètre Format/Rendu PDF est défini sur Formulaire XML dynamique.
-
+* Dans Designer, cliquez sur **[!UICONTROL Fichier > Propriétés du formulaire > Valeur par défaut]**, puis assurez-vous que le paramètre PDF Render/Format est défini sur Formulaire XML dynamique.
