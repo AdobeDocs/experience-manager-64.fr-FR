@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
-translation-type: tm+mt
-source-git-commit: 13e1da76d72277687f35d783de6d887ab7c1b52d
+exl-id: 0aefe8c0-662e-4177-a369-feab174fa510
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 88%
 
 ---
 
-
-# Configuration d’une page pour la modification en masse des propriétés de page  {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Configuration d’une page pour la modification en masse des propriétés de page {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 La [modification des propriétés de page](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) vous permet de modifier les propriétés de plusieurs pages à la fois.
 
@@ -27,7 +26,7 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 * Certains champs sont généralement uniques, par exemple un titre de page. Vous devez décider s’il est utile d’activer ces champs pour la modification en masse, lorsqu’une valeur sera appliquée.
 * Certains champs peuvent posséder plusieurs valeurs, ce qui nécessite une représentation significative lors du rendu.
 
-   Par exemple, une case à cocher indiquant « Prêt pour publication ». Il peut y avoir plusieurs valeurs avant la modification en bloc (par exemple, prêtes, en révision, en cours).
+   Par exemple, une case à cocher indiquant « Prêt pour publication ». Il peut y avoir plusieurs valeurs avant la modification en masse (par exemple, prête, en cours de révision, en cours).
 
 >[!CAUTION]
 >
@@ -43,7 +42,7 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 
 >[!NOTE]
 >
->La modification en masse est également disponible pour les actifs. Elle est très similaire, mais diffère en quelques points. Pour plus d’informations, voir [Modification des propriétés de plusieurs actifs.](/help/assets/managing-multiple-assets.md) Vous pouvez personnaliser les champs de l’éditeur de métadonnées en bloc pour les ressources à l’aide de l’[éditeur de Schéma](/help/assets/metadata-schemas.md).
+>La modification en masse est également disponible pour les actifs. Elle est très similaire, mais diffère en quelques points. Pour plus d’informations, voir [Modification des propriétés de plusieurs actifs.](/help/assets/managing-multiple-assets.md) Vous pouvez personnaliser les champs de l’éditeur de métadonnées en bloc pour les ressources à l’aide de l’[éditeur de schémas](/help/assets/metadata-schemas.md).
 
 ## Activation d’un champ {#enabling-a-field}
 
@@ -95,9 +94,8 @@ Les champs sont activés sur le composant de page (et *non* sur le modèle) :
    >
    >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
    >
-   >    1. Recréer l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
+   >    1. Recréez l’élément requis (c’est-à-dire tel qu’il existe dans `/libs`) sous `/apps`
    >    1. Apportez les modifications désirées dans `/apps`
 
 
 1. Sélectionnez **Enregistrer tout** pour conserver vos mises à jour.
-
