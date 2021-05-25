@@ -2,16 +2,15 @@
 title: Tri optimisé des ressources dans AEM
 description: Découvrez comment AEM Assets déploie le tri côté serveur de façon à trier les ressources d’un dossier ou une requête de recherche en une seule fois au lieu de les trier par lots du côté client.
 contentOwner: AG
-feature: Search
+feature: Rechercher
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '442'
 ht-degree: 96%
 
 ---
-
 
 # Tri optimisé des ressources dans AEM {#enhanced-sorting-of-assets-in-aem}
 
@@ -52,7 +51,7 @@ AEM Assets vous permet de trier les ressources de dossier sur la base des champ
 
 >[!NOTE]
 >
->Pour trier les valeurs des colonnes `Name` ou `Title`, superposez `/libs/dam/gui/content/commons/availablecolumns` et remplacez la valeur `sortable` par `True`.
+>Pour trier les valeurs des colonnes `Name` ou `Title`, recouvrez `/libs/dam/gui/content/commons/availablecolumns` et remplacez la valeur de `sortable` par `True`.
 
 ## Tri des ressources dans les résultats de la recherche {#sorting-assets-in-search-results}
 
@@ -90,4 +89,3 @@ AEM Assets vous permet de trier les entrées de la frise (annotations, versions
 1. Cliquez/appuyez sur l’icône **[!UICONTROL Trier]** en regard du libellé **[!UICONTROL Date]**. En fonction de votre sélection, les annotations sont répertoriées dans l’ordre dans lequel elles ont été ajoutées à la ressource ou dans l’ordre chronologique inverse.
 
    ![chlimage_1-401](assets/chlimage_1-401.png)
-
