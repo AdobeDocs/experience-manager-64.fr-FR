@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: dfc6a660-e6b3-4395-a555-f4cf8f3fed91
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 92%
 
 ---
-
 
 # Arborescence de la performance{#performance-tree}
 
@@ -58,7 +57,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
  <tbody> 
   <tr> 
    <td><strong>Étape</strong></td> 
-   <td><strong>Title (Titre)</strong></td> 
+   <td><strong>Titre</strong></td> 
    <td><strong>Ressources</strong></td> 
   </tr> 
   <tr> 
@@ -289,7 +288,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr> 
    <td><strong>Étapes 45<br /> et 47</strong><br /> </td> 
    <td>Utilisation de HTTP/2</td> 
-   <td>Voir la session des étapes 37,38 et 39. Consultez également <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">cette</a> publication du forum sur la prise en charge HTTP/2.<br /> </td> 
+   <td>Voir la session des étapes 37,38 et 39. Consultez également <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">cette </a> publication de forum sur la prise en charge HTTP/2.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Étape 49</strong></td> 
@@ -314,7 +313,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
      <li>Concaténez les ressources (images, sprite CSS, JSON, etc.)<br /> </li> 
      <li>Incorporation de Clientlibs : 
       <ol> 
-       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Création de dossiers</a>  de bibliothèque client - voir Utilisation de l’en-tête Utilisation de l’incorporation pour réduire les requêtes</li> 
+       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Création de dossiers de bibliothèque cliente</a>  - voir la section Utilisation de l’incorporation pour réduire les requêtes</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
@@ -330,4 +329,3 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   </tr> 
  </tbody> 
 </table>
-
