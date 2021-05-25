@@ -9,20 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
-translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+exl-id: 759cff3e-960a-4c38-a731-9fff21e739cf
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 95%
 
 ---
 
-
 # Work Manager et le ralentissement{#work-manager-and-throttling}
 
 AEM Forms (et les versions antérieures) utilisaient les files d’attente JMS pour exécuter des opérations de façon asynchrone. Dans AEM Forms, les files d’attente JMS ont été remplacées par Work Manager. Ce document fournit des informations sur Work Manager, ainsi que des instructions sur la configuration des options de ralentissement de Work Manager.
 
-## A propos des opérations de longue durée (asynchrones)  {#about-long-lived-asynchronous-operations}
+## A propos des opérations de longue durée (asynchrones) {#about-long-lived-asynchronous-operations}
 
 Dans AEM Forms, les opérations effectuées par les services peuvent être de longue (asynchrones) ou de courte durée (synchrones). Les opérations de courte durée sont achevées simultanément sur le même thread que celui qui les a appelées. Ces opérations attendent une réponse avant de continuer.
 
@@ -82,12 +81,12 @@ Vous pouvez configurer le ralentissement de Work Manager, de façon que les tâc
 **Ajout d’options Java à JBoss**
 
 1. Arrêtez le serveur d’applications JBoss.
-1. Ouvrez *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez les options Java nécessaires, au format `-Dproperty=value`.
+1. Ouvrez la *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez l’une des options Java requises, au format `-Dproperty=value`.
 1. Redémarrez le serveur.
 
 **Ajout d’options Java à WebLogic**
 
-1. Début de WebLogic Administration Console en saisissant `https://`*[nom d’hôte ]*`:`*[port]* `/console` dans un navigateur Web.
+1. Ouvrez WebLogic Administration Console en saisissant `https://`*[nom d’hôte ]*`:`*[port]* `/console` dans un navigateur Web.
 1. Saisissez le nom d’utilisateur et le mot de passe créés pour le domaine WebLogic Server, puis cliquez sur Log. Sous Change Center, cliquez sur Lock &amp; Edit.
 1. Sous Domain Structure, cliquez sur Environment > Servers et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
@@ -106,4 +105,3 @@ Vous pouvez configurer le ralentissement de Work Manager, de façon que les tâc
 1. Sous Additional Properties, cliquez sur Java Virtual Machine.
 1. Dans la zone Generic JVM arguments, saisissez les arguments souhaités.
 1. Cliquez sur OK ou sur Apply, puis sur Save directly to master configuration.
-
