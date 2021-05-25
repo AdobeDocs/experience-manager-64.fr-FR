@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 4c83694c-b00f-40be-9ac4-f5785cd60741
-translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+exl-id: 0bde7192-9d21-40b4-9164-314c9a30153b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 80%
 
 ---
-
 
 # Définition des polices à incorporer {#specifying-fonts-to-embed}
 
@@ -28,6 +27,5 @@ Vous pouvez spécifier les polices qui sont toujours ou jamais incorporées dans
 
 1. Dans Administration Console, cliquez sur **[!UICONTROL Services > Forms]**.
 1. Sous **[!UICONTROL Paramètres d’incorporation des polices]**, dans la zone **[!UICONTROL Toujours incorporer les polices]**, saisissez les noms des polices à incorporer aux formulaires, séparés par des virgules. Les polices spécifiées ne sont incorporées au formulaire généré que si elles sont effectivement utilisées dans le formulaire. Ce paramètre est ignoré si l’option d’incorporation des polices a été activée dans le fichier XCI transmis au service car, dans ce cas, toutes les polices utilisées dans le PDF sont systématiquement incorporées.
-1. Dans la zone **[!UICONTROL Ne jamais incorporer les polices]**, tapez les noms des polices à ne pas incorporer aux formulaires, séparés par des virgules. Les polices spécifiées ne sont pas incorporées au PDF, même si elles sont utilisées dans le PDF généré. Ce paramètre est ignoré si l’option d’incorporation des polices a été désactivée dans le fichier XCI transmis au service car, dans ce cas, aucune des polices utilisées dans le PDF n’est incorporée.
+1. Dans la zone **[!UICONTROL Ne jamais incorporer les polices]**, saisissez les noms des polices à ne pas incorporer aux formulaires, séparés par des virgules. Les polices spécifiées ne sont pas incorporées au PDF, même si elles sont utilisées dans le PDF généré. Ce paramètre est ignoré si l’option d’incorporation des polices a été désactivée dans le fichier XCI transmis au service car, dans ce cas, aucune des polices utilisées dans le PDF n’est incorporée.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
-
