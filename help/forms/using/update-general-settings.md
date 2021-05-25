@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: a3aac07e-7d67-4a4f-b941-ff25a981092f
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 5ca6212f-d3c7-4239-beba-9a0bdac4b1ec
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 85%
 
 ---
 
-
-# Mise à jour des paramètres généraux  {#updating-general-settings}
+# Mise à jour des paramètres généraux {#updating-general-settings}
 
 Les paramètres généraux de l’application AEM Forms vous permettent de définir des paramètres tels que la récupération des pièces jointes, le mode hors connexion, l’écran d’accueil, la catégorie par défaut et la fréquence d’enregistrement automatique.
 
@@ -25,7 +24,7 @@ Les paramètres généraux de l’application AEM Forms vous permettent de défi
 
 Lorsque vous synchronisez votre application avec le serveur AEM Forms, les formulaires et les tâches définies sont téléchargés sur votre périphérique mobile.
 
-La solution d’application AEM Forms prête à l’emploi ne télécharge pas les pièces jointes associées à chaque formulaire lorsque votre application est synchronisée.
+La solution d’application AEM Forms prête à l’emploi ne télécharge pas les pièces jointes associées à chaque formulaire lors de la synchronisation de votre application.
 
 Dans l’onglet Général, modifiez les pièces jointes de téléchargement, le mode hors connexion, l’écran d’entrée, les enregistrements automatiques et les paramètres de synchronisation. Vous pouvez modifier [l’écran d’accueil](/help/forms/using/home-screen.md) de l’application.
 
@@ -58,7 +57,7 @@ Vous pouvez apporter les modifications suivantes aux paramètres de votre applic
 
 * **Catégorie par défaut** : permet de sélectionner une catégorie de formulaires à afficher dans l’écran d’accueil. La sélection Tous affiche tous les formulaires dans l’écran d’accueil. Les catégories sont renseignées en fonction des formulaires chargés dans l’application. Les formulaires sont disponibles dans l’application en fonction des paramètres spécifiés dans le serveur AEM Forms.
 
-* **Fréquence** d&#39;enregistrement automatique : Pour définir la fréquence à laquelle votre application  [mobile enregistre les formulaires de ](/help/forms/using/autosave-data-app.md) manière locale.
+* **Fréquence d’enregistrement** automatique : Pour définir la fréquence à laquelle votre application  [mobile enregistre les formulaires de ](/help/forms/using/autosave-data-app.md) manière locale.
 
 * **Fréquence** de synchronisation : Pour définir la fréquence de  [synchronisation de votre application ](/help/forms/using/sync-app.md) mobile avec le serveur AEM Forms en mode en ligne.
 
