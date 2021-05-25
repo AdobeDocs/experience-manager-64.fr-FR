@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 85d655bb-1b6b-4b4d-ae39-eca3ef9b7fd7
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f0441588-7c16-40ab-841f-e89576a0d292
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 
 ---
-
 
 # Activation des conversions de fichiers multithreads {#enabling-multi-threaded-file-conversions}
 
@@ -117,4 +116,3 @@ Si vous exécutez OpenOffice, Microsoft Word ou Microsoft PowerPoint sous Window
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > Comptes utilisateur.
 1. Cliquez sur le nom d’utilisateur, puis saisissez et confirmez le nouveau mot de passe. Ce mot de passe doit correspondre au mot de passe système de l’utilisateur.
-
