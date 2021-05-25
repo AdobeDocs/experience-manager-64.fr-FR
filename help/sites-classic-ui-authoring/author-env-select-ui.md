@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: dcac2a3a-3241-47de-96ce-982ab0bc05eb
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: 997040d4-cf8f-4240-8423-a98d562aae02
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 59%
 
 ---
 
-
 # Choix de l’interface utilisateur{#selecting-your-ui}
 
-Comme l’interface utilisateur tactile remplace l’interface utilisateur classique, l’utilisateur ou l’administrateur de l’instance AEM doit prendre une principale décision de continuer à utiliser l’interface utilisateur classique. L’interface utilisateur classique n’étant plus conservée, l’utilisateur auteur ne peut plus simplement passer de l’interface utilisateur classique à l’équivalent dans l’interface utilisateur tactile.
+Comme l’IU tactile remplace l’IU classique, l’utilisateur ou l’administrateur de l’instance AEM doit prendre une principale décision de continuer à utiliser l’IU classique. L’IU classique n’étant plus gérée, il n’est plus possible pour l’utilisateur de création de simplement passer de l’IU classique à l’IU équivalente dans l’IU tactile.
 
 Pour offrir davantage de confort à ces utilisateurs, l’IU destinée aux écrans tactiles permet de basculer vers l’IU classique lorsque cela s’avère nécessaire. Pour plus d’informations, voir [Choix de l’interface utilisateur](/help/sites-authoring/select-ui.md) dans la documentation de création standard.
 
@@ -28,7 +27,7 @@ Pour offrir davantage de confort à ces utilisateurs, l’IU destinée aux écra
 >
 >Les instances mises à niveau à partir d’une version précédente conservent l’IU classique pour la création de pages.
 >
->Après la mise à niveau, la création de pages ne sera pas automatiquement basculée vers l’interface utilisateur tactile, mais vous pouvez la configurer à l’aide du [service de configuration OSGi](/help/sites-deploying/configuring-osgi.md) du **service de mode d’interface utilisateur de création WCM** (service `AuthoringUIMode`). Voir [IU par défaut en fonction de l’éditeur](#uioverridesfortheeditor).
+>Après la mise à niveau, la création de pages ne passe pas automatiquement à l’interface utilisateur tactile, mais vous pouvez la configurer à l’aide de la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) du **service WCM Authoring UI Mode** (service `AuthoringUIMode`). Voir [IU par défaut en fonction de l’éditeur](#uioverridesfortheeditor).
 
 ## Configuration de l’IU par défaut pour votre instance {#configuring-the-default-ui-for-your-instance}
 
