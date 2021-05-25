@@ -1,8 +1,8 @@
 ---
-title: Notifications des communautés
-seo-title: Notifications des communautés
-description: AEM Communities dispose de notifications qui affichent les événements d'intérêt pour le membre de la communauté connecté
-seo-description: AEM Communities dispose de notifications qui affichent les événements d'intérêt pour le membre de la communauté connecté
+title: Notifications de communautés
+seo-title: Notifications de communautés
+description: AEM Communities comporte des notifications qui affichent des événements présentant un intérêt pour le membre de la communauté connecté
+seo-description: AEM Communities comporte des notifications qui affichent des événements présentant un intérêt pour le membre de la communauté connecté
 uuid: d6ef12f1-7367-49a5-b891-56800a38b2ab
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,100 +10,99 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f6c6619e-b386-4d34-9d17-654d7c97aedd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 2%
 
 ---
 
-
-# Notifications des communautés {#communities-notifications}
+# Notifications de communautés {#communities-notifications}
 
 ## Présentation {#overview}
 
 AEM Communities fournit une section de notifications qui affiche les événements d’intérêt pour les membres de la communauté connectés.
 
-Les notifications sont similaires aux [activités](essentials-activities.md) et [abonnements](subscriptions.md), car elles peuvent provenir de
+Les notifications sont similaires aux [activités](essentials-activities.md) et aux [abonnements](subscriptions.md), car ils peuvent provenir de
 
 * Le membre qui publie du contenu
 * Le membre qui choisit de suivre un autre membre
-* Le membre choisissant de suivre des rubriques spécifiques, des articles et d&#39;autres threads de contenu
+* Le membre choisit de suivre des rubriques, des articles et d’autres threads de contenu spécifiques.
 
 Ce qui distingue les notifications des activités et des abonnements est
 
-* Un lien vers la section des notifications est toujours présent dans l’en-tête d’un site communautaire.
-   * Les Activités exigent que la fonction de flux d&#39;activité [](functions.md#activity-stream-function) soit incluse dans la structure du site communautaire.
-   * Les Abonnements requièrent [la configuration de l&#39;adresse électronique](email.md)
-* La mise en oeuvre des notifications s’effectue au moyen de canaux évolutives et enfichables.
-   * Les Activités ne sont disponibles que sur le Web
-   * Les Abonnements ne sont disponibles que par courrier électronique
+* Un lien vers la section des notifications est toujours présent dans l’en-tête d’un site de la communauté.
+   * Les activités nécessitent que la [fonction de flux d’activité](functions.md#activity-stream-function) soit incluse dans la structure du site de la communauté.
+   * Les abonnements requièrent [la configuration de l&#39;email](email.md)
+* La mise en oeuvre des notifications s’effectue par le biais de canaux évolutives et enfichables.
+   * Les activités ne sont disponibles que sur le web
+   * Les abonnements ne sont disponibles que par email.
 
-À partir de Communautés [FP1](deploy-communities.md#latestfeaturepack), les canaux de notification disponibles sont
+À partir de Communities [FP1](deploy-communities.md#latestfeaturepack), les canaux de notification disponibles sont
 
-* Canal Web, accessible à l’aide du lien `Notifications`
-* Le canal de messagerie, disponible lorsque le courrier électronique est correctement configuré
+* Le canal web, accessible à l’aide du lien `Notifications`
+* Canal email, disponible lorsque l&#39;email est correctement configuré
 
-Les futurs canaux sont mobiles et de bureau.
+Les futurs canaux seront mobiles et de bureau.
 
-### Conditions préalables {#requirements}
+### Conditions requises {#requirements}
 
 **Configurer le courrier électronique**
 
-Le courrier électronique doit être configuré pour que le canal de courrier électronique pour que les notifications fonctionnent.
+Pour que les notifications soient fonctionnelles, le canal Email doit être configuré.
 
-Pour obtenir des instructions sur la configuration du courrier électronique, voir [Configuration du courrier électronique](analytics.md).
+Pour plus d’informations sur la configuration de l’e-mail, voir [Configuration de l’e-mail](analytics.md).
 
-**Activer le suivi**
+**Enable Follow**
 
-Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent ce qui suit sont [blog](blog-feature.md), [forum](forum.md), [QnA](working-with-qna.md), [calendar](calendar.md), [filelibrary](file-library.md) et [commentaires](comments.md).
+Les composants doivent être configurés pour activer les éléments suivants. Les fonctions qui permettent ce qui suit sont [blog](blog-feature.md), [forum](forum.md), [Qa](working-with-qna.md), [calendar](calendar.md), [filelibrary](file-library.md) et [commentaires](comments.md).
 
 Notez que
 
-* Les composants utilisés dans la communauté [modèles de site](sites.md) et [modèles de groupe](tools-groups.md) peuvent déjà être configurés pour autoriser les éléments suivants
+* Les composants utilisés dans les [modèles de site](sites.md) et [modèles de groupe](tools-groups.md) de la communauté peuvent déjà être configurés pour autoriser les éléments suivants :
 
-* Les profils membres sont déjà configurés pour permettre aux autres membres de suivre
+* Les profils de membre sont déjà configurés pour permettre aux autres membres de suivre
 
-## Notifications de l&#39;utilisateur suivant {#notifications-from-following}
+## Notifications à partir de {#notifications-from-following}
 
 ![chlimage_1-254](assets/chlimage_1-254.png)
 
-Le bouton **Suivre** permet de suivre les entrées comme activités, abonnements et/ou notifications. Chaque fois que le bouton **Suivre** est sélectionné, il est possible d&#39;activer ou de désactiver une sélection. La sélection `Email Subscriptions` n&#39;est présente que lorsqu&#39;elle est configurée.
+Le bouton **Suivre** permet de suivre les entrées en tant qu’activités, abonnements et/ou notifications. Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection. La sélection `Email Subscriptions` n’est présente que lorsqu’elle est configurée.
 
-Si une méthode de suivi est sélectionnée, le texte du bouton devient **Suivant**. Pour plus de commodité, il est possible de sélectionner `Unfollow All` pour désactiver toutes les méthodes.
+Si l’une des méthodes suivantes est sélectionnée, le texte du bouton passe à **Suivant**. Pour des raisons pratiques, il est possible de sélectionner `Unfollow All` pour désactiver toutes les méthodes.
 
-Le bouton **Suivre** apparaît.
+Le bouton **Suivre** s’affiche.
 
-* Lors de l&#39;affichage du profil d&#39;un autre membre
-* Sur une page de présentation principale, telle que les forums, la qualité de vie et les blogs
-   * Suit toutes les activités de cette fonction générale
-* Pour une entrée spécifique, telle qu’un sujet de forum, une question QnA ou un article de blog
-   * Suit toutes les activités de cette entrée spécifique
+* Lors de l’affichage du profil d’un autre membre
+* Sur une page principale, telle que les forums, les Q&amp;R et les blogs
+   * Suit toutes les activités pour cette fonction générale
+* Pour une entrée spécifique, telle qu’un sujet de forum, une question Q&amp;R ou un article de blog.
+   * Suit toutes les activités pour cette entrée spécifique
 
 ## Gestion des paramètres de notification {#managing-notification-settings}
 
-En sélectionnant le lien Paramètres de notification dans la page Notifications, chaque membre peut gérer le mode de réception des notifications.
+En sélectionnant le lien Paramètres de notification sur la page Notifications, chaque membre peut gérer le mode de réception des notifications.
 
-Le canal Web est toujours activé.
+Le canal web est toujours activé.
 
 ![chlimage_1-255](assets/chlimage_1-255.png)
 
-Le canal de courrier électronique, qui repose sur la configuration [correcte de l’adresse électronique](email.md), fournit les mêmes paramètres que pour le canal Web.
+Le canal email, qui repose sur une [configuration correcte de email](email.md), fournit les mêmes paramètres que pour le canal web.
 
-Le canal de messagerie est désactivé par défaut.
+Le canal email est désactivé par défaut.
 
 ![chlimage_1-256](assets/chlimage_1-256.png)
 
-Il peut être activé par un membre, mais dépend toujours de la configuration du courrier électronique.
+Il peut être activé par un membre, mais dépend toujours de la configuration de l&#39;email.
 
 ![chlimage_1-257](assets/chlimage_1-257.png)
 
 ## Affichage des notifications {#viewing-notifications}
 
-### Notifications Web {#web-notifications}
+### Notifications web {#web-notifications}
 
-Un [assistant a créé un site communautaire](sites-console.md) comprend désormais un lien vers la fonction `Notifications` dans la barre d&#39;en-tête du site au-dessus de la bannière. Contrairement aux messages, les notifications sont créées pour chaque site de la communauté, tandis que les messages doivent être activés pendant le processus de création du site.
+Un [assistant a créé un site communautaire](sites-console.md) inclut désormais un lien vers la fonction `Notifications` dans la barre d’en-tête du site au-dessus de la bannière. Contrairement aux messages, les notifications sont créées pour chaque site de la communauté, tandis que les messages doivent être activés pendant le processus de création du site.
 
 Lors de la visite du site publié, la sélection du lien `Notifications` affiche toutes les notifications pour le membre.
 
@@ -111,7 +110,6 @@ Lors de la visite du site publié, la sélection du lien `Notifications` affiche
 
 ### Notifications par e-mail {#email-notifications}
 
-Lorsque le canal de messagerie est activé, le membre reçoit un courrier électronique contenant un lien vers le contenu sur le Web.
+Lorsque le canal Email est activé, le membre reçoit un email contenant un lien vers le contenu sur le web.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
-
