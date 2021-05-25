@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: a6dca5d7-21b5-4a7f-9e83-b0f5ea77bc88
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 99%
 
 ---
-
 
 # Présentation des lancements{#launches}
 
@@ -42,7 +41,7 @@ Cette section explique comment créer, modifier et convertir (et, le cas échéa
 * [Modification de lancements](/help/sites-authoring/launches-editing.md)
 * [Conversion de lancements](/help/sites-authoring/launches-promoting.md)
 
-## Lancements - Ordre des événements {#launches-the-order-of-events}
+## Lancements – Ordre des événements {#launches-the-order-of-events}
 
 La fonction Lancements vous permet de développer efficacement le contenu en vue d’une publication future d’une ou de plusieurs pages web activées.
 
@@ -76,7 +75,7 @@ La fonction Lancements vous permet de :
 
       * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
       * L’indicateur **Prêt pour la production** : cette option n’est sélectionnable que lors de la modification d’un lancement.
-      * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la date de **lancement** (**En direct**) spécifiée ****. Après la promotion, les pages de production sont automatiquement publiées.
+      * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la **date** de **lancement** (**En direct**) spécifiée. Après la promotion, les pages de production sont automatiquement publiées.
 
          Si aucune date n’a été définie, l’indicateur n’a aucun effet.
 
@@ -107,7 +106,7 @@ La fonction Lancements vous permet de :
 
 ### Console de lancements {#the-launches-console}
 
-La console de lancements fournit un aperçu de vos lancements et permet d’appliquer des actions sur les lancements répertoriés. Vous pouvez accéder à la console via :
+La console Lancements fournit un aperçu de vos lancements et permet d’appliquer des actions sur les lancements répertoriés. Vous pouvez accéder à la console via :
 
 * La console **Outils** : **Outils**, **Sites**, **Lancements**.
 
@@ -124,4 +123,3 @@ La console de lancements fournit un aperçu de vos lancements et permet d’appl
 1. Appuyez/cliquez sur le lancement qui vous intéresse. La liste des actions possibles s’affiche :
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
-
