@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 8787ffa9-9ddc-439d-9934-8913d1ed459e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 96%
 
 ---
-
 
 # Configuration des paramètres d’absence du bureau {#configuring-out-of-office-settings}
 
@@ -24,7 +23,7 @@ La fonction d’absence du bureau permet aux utilisateurs ou aux administrateurs
 
 Lors de la création d’un processus, l’utilisateur de Workbench peut spécifier si une tâche peut être redirigée en fonction de paramètres d’absence du bureau.
 
-## Affichage des informations d’absence du bureau d’un utilisateur  {#view-a-user-s-out-of-office-information}
+## Affichage des informations d’absence du bureau d’un utilisateur {#view-a-user-s-out-of-office-information}
 
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Absence du bureau.
 1. Dans la zone adjacente à la page Absence du bureau, vous pouvez effectuer l’une des actions suivantes :
@@ -71,4 +70,3 @@ Vous pouvez affecter l’exécution des tâches d’un utilisateur absent du bur
 
    1. Si certains processus ne doivent pas être envoyés à l’utilisateur par défaut, cliquez sur Ajouter une exception, puis sélectionnez le processus et un autre utilisateur dans la liste. Vous pouvez également sélectionner Ne pas affecter pour que la tâche reste attribuée à l’utilisateur absent du bureau.
    1. Cliquez sur Enregistrer.
-
