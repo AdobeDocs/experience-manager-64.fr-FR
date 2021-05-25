@@ -2,16 +2,15 @@
 title: Application de services cloud de traduction à des dossiers
 description: Application de services cloud de traduction à des dossiers
 contentOwner: AG
-feature: Translation
+feature: Traduction
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: 87883a3f-db95-41f4-b0aa-cdaeb7e6f555
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 100%
 
 ---
-
 
 # Application de services cloud de traduction à des dossiers {#applying-translation-cloud-services-to-folders}
 
