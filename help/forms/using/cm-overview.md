@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1291b395-a981-4ef9-b4f0-c0d3026c5f19
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Correspondence Management
+exl-id: 3cda92c9-5f3e-4704-a52b-55eda3b3fd2a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 91%
 
 ---
-
 
 # Présentation de Correspondence Management {#correspondence-management-overview}
 
@@ -31,7 +30,7 @@ Correspondence Management centralise et gère la création, l’assemblage et la
 Elle facilite le traitement en vous permettant :
 
 * de déployer et gérer les modèles et le contenu dans une interface intuitive conçue pour les utilisateurs professionnels ;
-* Assemblage rapide de la correspondance à partir de contenu préapprouvé et personnalisé
+* assembler rapidement la correspondance à partir de contenu prévalidé et personnalisé ;
 
 ### Gérée {#managed}
 
@@ -40,13 +39,12 @@ Elle améliore la qualité des communications en vous permettant :
 * de gérer les règles métier et le contenu approuvé dans un référentiel de contenu centralisé ;
 * utilisez AEM DAM pour les images de gestion ;
 * de créer des fichiers Adobe PDF à des fins d’archivage et d’audit ;
-* Créez des messages conformes à l’organisation à l’aide de contenu préapprouvé par le biais de règles métier intégrées.
+* Créez des messages conformes sur le plan organisationnel à l’aide de contenu préapprouvé par le biais de règles métier intégrées.
 
-### Etendue {#extensive}
+### Étendue {#extensive}
 
 Elle améliore l’interaction avec la clientèle en vous permettant :
 
 * d’ajouter des technologies interactives pour activer un canal bidirectionnel, réduisant les envois au format papier ;
 * de protéger les informations sensibles grâce à une sécurité des documents intégrée de bout en bout ;
 * d’envoyer de la correspondance en utilisant le canal de communication privilégié par le client (électronique, courrier, mobile ou fax)..
-
