@@ -9,20 +9,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: e7eae36b-39e0-4550-b18b-a1ac1a5c3015
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 95%
 
 ---
 
-
 # Suivi des processus {#tracking-processes}
 
 La page Suivi vous permet de rechercher les processus actifs ou terminés que vous avez démarrés ou modifiés et d’afficher les détails. Les détails du processus indiquent les tâches, les affectations et les formulaires qui faisaient partie du processus. Vous pouvez également démarrer de nouveaux processus à l’aide des données de formulaire provenant d’un processus lancé précédemment.
 
-## Recherche de processus et de tâches  {#search-for-processes-and-tasks}
+## Recherche de processus et de tâches {#search-for-processes-and-tasks}
 
 Vous pouvez rechercher des instances de processus et des tâches associées en fonction des noms de processus ou en utilisant des modèles de recherche définis par l’administrateur de l’espace de travail AEM Forms.
 
@@ -46,7 +45,7 @@ Vous pouvez définir les colonnes qui s’affichent dans les résultats de reche
 
 Sur la page Suivi, vous pouvez sélectionner un processus et afficher ses détails. Vous pouvez effectuer une recherche portant sur les processus en fonction de divers paramètres pour afficher les détails de la tâche. Vous pouvez également afficher l’onglet Etat pour les processus qui présentent plusieurs utilisateurs recevant des tâches en parallèle où les outils pour la révision de documents sont activés.
 
-**Etat :** l&#39;état des tâches d&#39;un processus s&#39;affiche dans la colonne Action sélectionnée lorsque vous cliquez sur une tâche. Toutefois, l’état du processus n’est pas disponible.
+**Etat :** l&#39;état des tâches dans un processus est affiché dans la colonne &#39;Action sélectionnée&#39; lorsque vous cliquez sur une tâche. Toutefois, l’état du processus n’est pas disponible.
 
 1. Sélectionnez l’instance du processus dans la liste des résultats de la recherche, pour afficher les détails des tâches qui font partie de l’instance du processus.
 1. Pour afficher plus d’informations sur une tâche, effectuez une ou plusieurs des actions suivantes :
@@ -54,4 +53,3 @@ Sur la page Suivi, vous pouvez sélectionner un processus et afficher ses détai
    * Pour afficher les notes et les pièces jointes d’une tâche, cliquez sur l’onglet Pièces jointes.
    * Pour afficher les détails de l’affectation de la tâche, cliquez sur l’onglet Affectation.
    * Pour afficher le formulaire associé, cliquez sur le bouton de formulaire.
-
