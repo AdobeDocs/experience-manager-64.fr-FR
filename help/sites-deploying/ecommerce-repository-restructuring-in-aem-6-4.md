@@ -8,19 +8,18 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Mise à niveau
+exl-id: 6adcc1a4-eb0f-4410-8219-dbd7e6bbe469
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 85%
 
 ---
 
-
 # Restructuration des référentiels e-Commerce dans AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
-Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.4](/help/sites-deploying/repository-restructuring.md), les clients qui effectuent la mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer l&#39;effort de travail associé aux modifications du référentiel qui affectent la solution de commerce électronique de l&#39;AEM. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
+Comme décrit sur la page parente [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution de commerce électronique d’AEM. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
 
 ## Avec la mise à niveau vers la version 6.4 {#with-upgrade}
 
@@ -58,4 +57,3 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.4]
   </tr>
  </tbody>
 </table>
-
