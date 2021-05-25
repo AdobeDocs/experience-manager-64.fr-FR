@@ -2,16 +2,15 @@
 title: API HTTP Assets  dans [!DNL Adobe Experience Manager].
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-feature: APIs,Assets HTTP API,Developer Tools
+feature: API,API HTTP Assets,outils de développement
 role: Developer
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 3d7d078c-5046-489a-a8e0-258acaea7191
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1558'
 ht-degree: 86%
 
 ---
-
 
 # API HTTP Assets {#assets-http-api}
 
@@ -28,7 +27,7 @@ Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne 
 
 >[!CAUTION]
 >
->[L’API HTTP met à jour les ](#update-asset-metadata) propriétés de métadonnées dans l’ `jcr` espace de nommage. Toutefois, l’interface utilisateur du Experience Manager met à jour les propriétés de métadonnées dans l’espace de nommage `dc`.
+>[L’API HTTP met à jour les ](#update-asset-metadata) propriétés de métadonnées dans l’ `jcr` espace de noms. Cependant, l’interface utilisateur du Experience Manager met à jour les propriétés de métadonnées dans l’espace de noms `dc`.
 
 ## Modèle de données {#data-model}
 
@@ -55,9 +54,9 @@ Les dossiers **Liens** présentent trois liens :
 * `parent` : lien vers le dossier parent.
 * `thumbnail` : (facultatif) lien vers une miniature de dossier.
 
-### Ressources {#assets}
+### Assets {#assets}
 
-En Experience Manager, un fichier contient les éléments suivants :
+En Experience Manager, une ressource contient les éléments suivants :
 
 * Propriétés et métadonnées de la ressource.
 * Plusieurs rendus tels que le rendu d’origine (qui est la ressource chargée initialement), une miniature et divers autres rendus. Les rendus supplémentaires peuvent être des images de tailles différentes, différents codages vidéo ou des pages extraites de fichiers PDF ou Adobe InDesign.
@@ -71,17 +70,17 @@ Dans [!DNL Experience Manager], un dossier comprend les composants suivants :
 
 L’API Assets HTTP offre les fonctionnalités suivantes :
 
-* [Récupérer une liste de dossiers](#retrieve-a-folder-listing).
+* [Récupérer une liste de dossiers](#retrieve-a-folder-listing)
 * [Créer un dossier](#create-a-folder)
 * [Créer une ressource](#create-an-asset).
 * [Mettre à jour le fichier binaire d’une ressource](#update-asset-binary).
-* [Mettre à jour les métadonnées d’une ressource](#update-asset-metadata).
-* [Créer un rendu de ressource](#create-an-asset-rendition).
-* [Mettre à jour un rendu de ressource](#update-an-asset-rendition).
-* [Créer un commentaire de ressource](#create-an-asset-comment).
-* [Copier un dossier ou une ressource](#copy-a-folder-or-asset).
-* [Déplacer un dossier ou une ressource](#move-a-folder-or-asset).
-* [Supprimer un dossier, une ressource ou un rendu](#delete-a-folder-asset-or-rendition).
+* [Mettre à jour les métadonnées d’une ressource](#update-asset-metadata)
+* [Créer un rendu de ressource](#create-an-asset-rendition)
+* [Mettre à jour un rendu de ressource](#update-an-asset-rendition)
+* [Créer un commentaire de ressource](#create-an-asset-comment)
+* [Copier un dossier ou une ressource](#copy-a-folder-or-asset)
+* [Déplacer un dossier ou une ressource](#move-a-folder-or-asset)
+* [Supprimer un dossier, une ressource ou un rendu](#delete-a-folder-asset-or-rendition)
 
 >[!NOTE]
 >
@@ -129,9 +128,9 @@ Un appel d’API échoue avec un code de réponse `500` si le nœud parent du ch
 
 ## Créer une ressource {#create-an-asset}
 
-Placez le fichier fourni à l’emplacement indiqué pour créer un actif dans le référentiel DAM. Si un `*` est fourni à la place d&#39;un nom de noeud, la servlet utilise le nom du paramètre ou le nom du fichier comme nom du noeud.
+Placez le fichier fourni à l’emplacement indiqué pour créer une ressource dans le référentiel DAM. Si `*` est fourni à la place d’un nom de noeud, le servlet utilise le nom du paramètre ou le nom du fichier comme nom de noeud.
 
-**Paramètres** : Les paramètres sont  `name` pour le nom du fichier et  `file` pour la référence au fichier.
+**Paramètres** : Les paramètres sont  `name` pour le nom de la ressource et  `file` pour la référence au fichier.
 
 **Requête**
 
@@ -140,14 +139,14 @@ Placez le fichier fourni à l’emplacement indiqué pour créer un actif dans l
 
 **Codes de réponse** : les codes de réponse sont les suivants :
 
-* 201 - CRÉÉ - si la création de l’actif a réussi.
-* 409 - CONFLIT - si l&#39;actif existe déjà.
+* 201 - CRÉÉ - si la ressource a été créée avec succès.
+* 409 - CONFLIT - si Asset existe déjà.
 * 412 – ÉCHEC DE LA PRÉCONDITION – si la collection racine est introuvable ou inaccessible.
 * 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
 
 ## Mettre à jour un fichier binaire de ressource {#update-asset-binary}
 
-Met à jour le binaire d’un fichier (rendu avec le nom original). Une mise à jour déclenche l’exécution du processus de traitement des ressources par défaut, s’il est configuré.
+Met à jour le binaire d’une ressource (rendu portant le nom original). Une mise à jour déclenche l’exécution du workflow de traitement des ressources par défaut, s’il est configuré.
 
 **Requête** : `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
@@ -171,9 +170,9 @@ Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez 
 * 412 – ÉCHEC DE LA PRÉCONDITION – si la collection racine est introuvable ou inaccessible.
 * 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
 
-### Mise à jour des métadonnées de synchronisation entre `dc` et `jcr` espace de nommage {#sync-metadata-between-namespaces}
+### Mise à jour des métadonnées de synchronisation entre `dc` et l’espace de noms `jcr` {#sync-metadata-between-namespaces}
 
-La méthode API met à jour les propriétés de métadonnées dans l&#39;espace de nommage `jcr`. Les mises à jour effectuées à l’aide de Touch-UI modifient les propriétés de métadonnées dans l’espace de nommage `dc`. Pour synchroniser les valeurs de métadonnées entre `dc` et `jcr` espace de nommage, vous pouvez créer un processus et configurer le Experience Manager pour qu’il exécute le processus lors de la modification des ressources. Utilisez un script ECMA pour synchroniser les propriétés de métadonnées requises. L’exemple de script suivant synchronise la chaîne de titre entre `dc:title` et `jcr:title`.
+La méthode API met à jour les propriétés de métadonnées dans l’espace de noms `jcr`. Les mises à jour effectuées à l’aide de l’interface utilisateur tactile modifient les propriétés de métadonnées dans l’espace de noms `dc`. Pour synchroniser les valeurs des métadonnées entre l’espace de noms `dc` et `jcr`, vous pouvez créer un workflow et configurer Experience Manager pour exécuter le workflow lors de la modification de la ressource. Utilisez un script ECMA pour synchroniser les propriétés de métadonnées requises. L’exemple de script suivant synchronise la chaîne de titre entre `dc:title` et `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
