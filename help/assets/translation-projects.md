@@ -2,16 +2,15 @@
 title: Création de projets de traduction
 description: Apprenez à créer des projets de traduction dans AEM.
 contentOwner: AG
-feature: Translation
+feature: Traduction
 role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1935'
 ht-degree: 97%
 
 ---
-
 
 # Création de projets de traduction {#creating-translation-projects}
 
@@ -191,7 +190,7 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
-   Pour plus de détails, voir [Surveillance de l’état d’une tâche de traduction](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
+   Pour plus d’informations, voir [Surveillance de l’état d’une tâche de traduction](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
 1. Une fois la traduction terminée, l’état devient Prêt pour la révision. Accédez à l’interface utilisateur d’Assets et ouvrez la page Propriétés de chacune des ressources traduites afin d’afficher les métadonnées traduites.
 
@@ -204,7 +203,7 @@ Exécutez ce processus pour traduire un ensemble de ressources supplémentaire e
 
 ### Créer un projet de traduction {#create-a-new-translation-project-1}
 
-Si vous utilisez cette option, un projet de traduction est créé pour l’ensemble de fichiers pour lesquels vous souhaitez mettre à jour une copie de langue.
+Si vous utilisez cette option, un projet de traduction est créé pour l’ensemble de ressources pour lequel vous souhaitez mettre à jour une copie de langue.
 
 1. Dans l’interface utilisateur d’Assets, sélectionnez le dossier source auquel vous avez ajouté une ressource.
 1. Ouvrez le volet **[!UICONTROL Références]**, puis cliquez/appuyez sur **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]** pour afficher la liste des copies de langue.
@@ -314,4 +313,4 @@ Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie d
 
 1. Accédez à la console Ressources et ouvrez la page Propriétés de chacune des ressources traduites afin d’afficher les métadonnées traduites.
 
-Pour obtenir des conseils sur la traduction efficace des métadonnées des ressources, voir [5 Procédure de traduction efficace des métadonnées](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+Pour obtenir des conseils sur la traduction efficace des métadonnées des ressources, reportez-vous à la section [5 Procédure de traduction efficace des métadonnées](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
