@@ -2,24 +2,23 @@
 title: Intégration des ressources avec Flux d’activités
 description: Décrit les fonctionnalités d’enregistrement d’AEM ainsi que la procédure de configuration d’AEM pour enregistrer des événements spécifiques.
 contentOwner: AG
-feature: Asset Management
+feature: Gestion des ressources
 role: Developer
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: c25a4da7-1c58-41cf-9ff6-c094b50208e6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 76%
 
 ---
 
-
 # Intégration des ressources avec Flux d’activités {#integrating-assets-with-activity-stream}
 
-Adobe Experience Manager (AEM) Les utilisateurs de ressources effectuent de nombreuses actions, telles que la création, le téléchargement et la suppression de ressources. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes actions réalisées par un utilisateur. Cette section décrit les fonctionnalités d’enregistrement d’AEM ainsi que la procédure de configuration d’AEM pour enregistrer des événements spécifiques.
+Les utilisateurs d’Adobe Experience Manager (AEM) Assets effectuent de nombreuses actions, telles que la création, le chargement et la suppression de ressources. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes actions réalisées par un utilisateur. Cette section décrit les fonctionnalités d’enregistrement d’AEM ainsi que la procédure de configuration d’AEM pour enregistrer des événements spécifiques.
 
 ## Performances et comportement par défaut {#performance-considerations-and-default-behavior}
 
-Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’importation en bloc. C’est pourquoi l’intégration AEM Assets au flux d’Activité est désactivée par défaut.
+Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’importation en bloc. Pour ces raisons, l’intégration d’AEM Assets au flux d’activités est désactivée par défaut.
 
 ## Événements d’actions pris en charge {#supported-action-events}
 
@@ -43,7 +42,7 @@ Il est possible de configurer l’enregistrement des événements suivants :
 
 ## Configuration de l’enregistrement d’événements AEM Assets {#configuring-aem-assets-events-recording}
 
-La [console Web](/help/sites-deploying/configuring-osgi.md) permet d&#39;accéder au réglage de l&#39;enregistreur de Événement AEM Assets. Pour configurer l’enregistreur de Événements AEM Assets, procédez comme suit :
+La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder au réglage de l’enregistreur d’événements AEM Assets. Pour configurer l’enregistreur d’événements AEM Assets, procédez comme suit :
 
 1. Accédez à la **[!UICONTROL console web]**.
 
