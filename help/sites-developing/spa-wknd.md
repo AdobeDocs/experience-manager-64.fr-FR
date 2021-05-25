@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 2dbe18c1-8d79-4685-911b-3c6fe87d7e2c
-translation-type: tm+mt
-source-git-commit: bb200d5361b8927c37683ec1cc0534d1d99176c7
+exl-id: 6ec7f037-3582-49ce-9297-6acd01283949
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 72%
 
 ---
-
 
 # Tutoriel sur SPA WKND{#spa-wknd-tutorial}
 
@@ -24,9 +23,9 @@ Découvrez le développement d’applications sur une seule page (SPA) grâce à
 
 ## Tutoriels {#tutorials}
 
-Pour un exemple de bout en bout de création d’une application d’une seule page modifiable avec AEM démarrage de la configuration du projet via le routage d’application, voir les SPA Tutorials WKND :
+Pour obtenir un exemple complet de création de votre propre application d’une seule page modifiable avec AEM commençant par la configuration du projet par le routage de l’application, reportez-vous aux Tutorials WKND SPA :
 
 * [Prise en main de l’Éditeur AEM SPA et d’Angular](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-angular-tutorial/overview.html)
 * [Prise en main de l’Éditeur AEM SPA et de React](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-react-tutorial/overview.html)
 
-Toutefois, avant de commencer votre propre projet SPA pour AEM, veillez également à consulter le document [Développer des SPA pour l&#39;](/help/sites-developing/spa-architecture.md).
+Toutefois, avant de commencer votre propre projet SPA pour AEM, veillez également à consulter le document [Développement de la solution de développement de l’SPA](/help/sites-developing/spa-architecture.md) .
