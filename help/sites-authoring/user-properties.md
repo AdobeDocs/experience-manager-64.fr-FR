@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
-translation-type: tm+mt
-source-git-commit: cfa09d2f1a78eac609cb6df7817234559c8d26dc
+exl-id: f620e85e-8c77-41a3-a238-9b93c819909d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 95%
 
 ---
 
-
 # Configuration de l’environnement du compte{#configuring-your-account-environment}
 
 AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 
-A l&#39;aide de l&#39;option [Utilisateur](/help/sites-authoring/user-properties.md#user-settings) de l&#39;en-tête [](/help/sites-authoring/basic-handling.md#the-header) et de la boîte de dialogue [Mes préférences](#my-preferences) associée, vous pouvez modifier vos options d&#39;utilisateur.
+À l’aide de l’option [Utilisateur](/help/sites-authoring/user-properties.md#user-settings) de l’en-tête [](/help/sites-authoring/basic-handling.md#the-header) et de la boîte de dialogue [Mes préférences](#my-preferences) associée, vous pouvez modifier vos options utilisateur.
 
 ## Paramètres utilisateur {#user-settings}
 
@@ -108,4 +107,3 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 * **Activer la page d’accueil des ressources**
 
    Cette option est disponible uniquement si l’administrateur système a activé l’environnement Page d’accueil des ressources pour l’ensemble de l’entreprise.
-
