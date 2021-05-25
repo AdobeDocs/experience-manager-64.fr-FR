@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: dcf60604-c401-4c74-95c7-e7d4457fdfe5
-translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+exl-id: 47d16792-c418-45fe-aa79-e66876d6d352
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 93%
 
 ---
-
 
 # Service Barcoded Forms {#barcoded-forms-service}
 
@@ -91,7 +90,7 @@ Après le décodage des codes à barres, le service Barcoded Forms renvoie le do
 </xb:scanned_image>
 ```
 
-## Remarques sur le service  {#considerations}
+## Remarques sur le service {#considerations}
 
 ### Flux de production utilisant des formulaires à code à barres {#workflows-that-use-barcoded-forms}
 
@@ -123,7 +122,7 @@ Lorsque vous utilisez les API BCF, tenez compte des restrictions suivantes :
 
 ### Autres restrictions {#other-limitations}
 
-Tenez également compte des restrictions suivantes lors de l’utilisation du service Forms Barcoded :
+Tenez également compte des &quot;restrictions suivantes lors de l’utilisation du service Barcoded Forms :
 
 * Le service prend entièrement en charge AcroForms et les formulaires statiques contenant des codes à barres 2D qui sont enregistrés avec Adobe Reader ou Acrobat. Toutefois, pour les codes à barres 1D, aplatissez le formulaire ou fournissez-le sous forme de document PDF ou TIFF numérisé.
 * Les formulaires XFA dynamiques ne sont pas entièrement pris en charge. Pour décoder correctement les codes à barres 1D et 2D dans un formulaire dynamique, aplatissez le formulaire ou fournissez-le sous forme de document PDF ou TIFF numérisé.
@@ -132,7 +131,7 @@ En outre, le service peut décoder tout code à barres qui utilise une symbologi
 
 ## Configurer les propriétés du service   {#configureproperties}
 
-Vous pouvez utiliser le **service AEMFD Barcoded Forms** dans la console AEM pour configurer les propriétés de ce service. L’URL par défaut de la console AEM est `https://[host]:[port]/system/console/configMgr`.
+Vous pouvez utiliser le **service AEMFD Barcoded Forms** dans la console AEM pour configurer les propriétés de ce service. L’URL par défaut de AEM console est `https://[host]:[port]/system/console/configMgr`.
 
 ## Utilisation du service {#using}
 
@@ -304,4 +303,3 @@ function saveW3CDocument(inputDoc, filePath) {
    os.close();
 }
 ```
-
