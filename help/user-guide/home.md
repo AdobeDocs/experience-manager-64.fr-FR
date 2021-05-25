@@ -1,51 +1,50 @@
 ---
-title: Hub du guide d’utilisateur d’AEM 6.4
-seo-title: Hub du guide d’utilisateur d’AEM 6.4
-description: Un aperçu de toutes les ressources essentielles pour comprendre, installer, gérer et utiliser les  6.4
-seo-description: Un aperçu de toutes les ressources essentielles pour comprendre, installer, gérer et utiliser les  6.4
+title: Hub du guide de l’utilisateur d’AEM 6.4
+seo-title: Hub du guide de l’utilisateur d’AEM 6.4
+description: Présentation de toutes les ressources essentielles pour comprendre, installer, gérer et utiliser AEM 6.4
+seo-description: Présentation de toutes les ressources essentielles pour comprendre, installer, gérer et utiliser AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
+exl-id: dbeb093b-489b-46c3-b136-e33a430793e0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 31%
 
 ---
 
-
-# aem 6.4 Hub du Guide de l&#39;utilisateur {#aem-64-user-guide}
+# Hub du guide de l’utilisateur d’AEM 6.4 {#aem-64-user-guide}
 
 ## Présentation {#introduction}
 
 | [Premiers pas](https://helpx.adobe.com/fr/experience-manager/get-started.html) | [Vidéos sur les fonctionnalités](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-5-videos.html) | [Notes de mise à jour](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes.html ) |
 |:-:|:-:|:-:|
-| Découvrez des didacticiels et des articles pour commencer avec AEM | Une sélection de vidéos présentant les nouvelles fonctionnalités de la version 6.4 | Découvrez les nouveautés de AEM 6.4 |
+| Découvrez des tutoriels et des articles pour commencer à utiliser AEM | Une sélection de vidéos présentant les nouvelles fonctionnalités de la version 6.4 | Découvrez les nouveautés d’AEM 6.4 |
 
-## Guides de l&#39;utilisateur et ressources {#user-guides-and-resources}
+## Guides de l’utilisateur et ressources {#user-guides-and-resources}
 
-* [aem Fonctionnalités Guides de l’utilisateur](capabilities.md)
-* [Guides de l’utilisateur de la mise en oeuvre AEM](implementation.md)
+* [AEM Guides de l’utilisateur sur les fonctionnalités](capabilities.md)
+* [AEM Guides de l’utilisateur de mise en oeuvre](implementation.md)
 * [Ressources AEM](resources.md)
 
 ## Dépannage et aide {#troubleshooting-and-help}
 
 * [Vous ne connaissez pas AEM ?](new.md)
 * [En savoir plus sur les fonctionnalités AEM](learn.md)
-* [Bonnes pratiques, instructions et formation pour AEM](best-practice.md)
+* [Bonnes pratiques, procédures et formation pour AEM](best-practice.md)
 * [AEM Community](community.md)
 * [Résolution de problèmes dans AEM](troubleshooting.md)
 
 ## Options de contact {#contact-options}
 
-Les délégués de l&#39;assistance peuvent obtenir de l&#39;aide via :
+Les délégués de l’assistance peuvent obtenir de l’aide via :
 
-* Web : Portail d&#39;assistance Experience Manager
+* Web : Portail d’assistance pour les Experience Manager
 * Téléphone : [Recherchez le numéro de téléphone de votre région.](https://helpx.adobe.com/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)
 
 >[!NOTE]
 >
->Vous ne savez pas si vous êtes un **délégué du support** ? Découvrez si ce [type d&#39;utilisateur s&#39;applique à vous](https://helpx.adobe.com/experience-cloud/supported-users.html) et découvrez nos [termes de support d&#39;entreprise](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
+>Vous ne savez pas si vous êtes un **délégué du support** ? Découvrez si ce [type d’utilisateur s’applique à vous](https://helpx.adobe.com/experience-cloud/supported-users.html) et découvrez les [conditions de prise en charge de l’entreprise](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
 
 ## Communauté {#community}
 
