@@ -10,12 +10,11 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 exl-id: e5110a90-ddc9-4244-8466-f91adfca8469
-feature: Asset Management
+feature: Gestion des ressources
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '330'
 ht-degree: 91%
 
 ---
@@ -39,14 +38,14 @@ Avec Dynamic Media, vous disposez de plusieurs options :
 
 Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
-* [Ajouter les ressources Dynamic Media aux pages Web](adding-dynamic-media-assets-to-pages.md)
-* [Incorporation de la visionneuse de vidéos ou d’images sur une page Web](embed-code.md)
+* [Ajout de ressources Dynamic Media aux pages web](adding-dynamic-media-assets-to-pages.md)
+* [Incorporation de la visionneuse de vidéos ou d’images dans une page web](embed-code.md)
 * [Activation de la protection de lien dynamique dans Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/hotlink-protection.html?lang=fr#dynamic)
-* Intégration du filigrane numérique non visible (Digimarc) à Dynamic Media (à venir)
+* Intégration du filigrane numérique non visible (Digimarc) à Dynamic Media (bientôt disponible)
 * [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md)
 * [Diffusion d’images optimisées pour un site réactif](responsive-site.md)
 * [Diffusion de contenu HTTP2](http2.md)
-* [Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)](invalidate-cdn-cached-content.md)
+* [Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)  ](invalidate-cdn-cached-content.md)
 * [Utilisation de jeux de règles de transformation d’URL](using-rulesets-to-transform-urls.md)
 
 ## Diffusion de ressources Dynamic Media via HTTP/2 {#http-delivery-of-dynamic-media-assets}
