@@ -2,16 +2,15 @@
 title: Recherche de texte intégral GQL
 description: Explorez la fonction de recherche de texte intégral GQL dans AEM Assets. Utilisez-la afin de rechercher des ressources selon des métadonnées spécifiques telles que le titre, la description et le nom de l’auteur.
 contentOwner: AG
-feature: Search,Metadata
+feature: Recherche, métadonnées
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '887'
 ht-degree: 74%
 
 ---
-
 
 # Recherche de texte intégral GQL {#gql-full-text-search}
 
@@ -19,18 +18,18 @@ Explorez la fonction de recherche de texte intégral GQL dans AEM Assets. Utilis
 
 La fonctionnalité de recherche en texte intégral GQL permet de rechercher des ressources selon des métadonnées spécifiques telles que le titre, la description, l’auteur, etc.
 
-Pour rechercher un fichier en fonction de ses métadonnées, par exemple le titre, spécifiez le mot-clé de métadonnées suivi de sa valeur dans le panneau de recherche. La fonction de recherche de texte intégral de GQL récupère uniquement les fichiers dont les métadonnées correspondent exactement à la valeur correspondante saisie.
+Pour rechercher une ressource en fonction de ses métadonnées, par exemple le titre, spécifiez le mot-clé de métadonnées suivi de sa valeur dans le panneau de recherche. La fonction de recherche en texte intégral GQL récupère uniquement les ressources dont les métadonnées correspondent exactement à la valeur saisie.
 
 Pour rechercher, par exemple, les ressources dont le titre est « Cible », suivez ces étapes :
 
 ## Recherche de ressources {#searching-assets}
 
-1. Dans la barre d&#39;outils de l&#39;interface utilisateur Ressources, cliquez ou appuyez sur l&#39;icône **[!UICONTROL Rechercher]** pour afficher la zone Omnisearch.
+1. Dans la barre d’outils de l’interface utilisateur Assets, cliquez ou appuyez sur l’icône **[!UICONTROL Rechercher]** pour afficher la zone Omni-recherche.
 
    ![](assets/do-not-localize/chlimage_1.png)
 
 1. Le curseur étant situé dans la zone de recherche, appuyez sur la touche Entrée.
-1. Cliquez ou appuyez sur l’icône GlobalNav pour afficher le panneau **[!UICONTROL Filtres]**.
+1. Cliquez ou appuyez sur l’icône de navigation globale pour afficher le panneau **[!UICONTROL Filtres]**.
 1. Indiquez la valeur « Cible » dans le champ de recherche. Pour limiter la recherche à un dossier spécifique, cliquez ou appuyez sur l’icône Parcourir dans le panneau Filtres et sélectionnez le dossier. Dans ce cas, la correspondance est recherchée uniquement dans le dossier et les sous-dossiers.
 
    >[!NOTE]
@@ -39,15 +38,15 @@ Pour rechercher, par exemple, les ressources dont le titre est « Cible », su
 
    ![gql_search](assets/gql_search.png)
 
-1. Appuyez sur **[!UICONTROL Entrée]**. L’interface utilisateur AEM Assets affiche uniquement les ressources dont le titre correspond exactement à &quot;Cible&quot;.
+1. Appuyez sur **[!UICONTROL Entrée]**. L’interface utilisateur d’AEM Assets affiche uniquement les ressources dont le titre correspond exactement à &quot;Target&quot;.
 
-La fonction de recherche en texte intégral de GQL vous permet de rechercher des fichiers en fonction des éléments suivants :
+La fonction de recherche de texte intégral GQL vous permet de rechercher des ressources en fonction des éléments suivants :
 
 * Requête complexe créée en combinant les valeurs spécifiées pour plusieurs champs de métadonnées (propriétés) par une opération ET
 * Plusieurs valeurs pour un seul champ de métadonnées
 * Correspondances avec des sous-chaînes
 
-La fonction de recherche en texte intégral de GQL vous permet de rechercher des fichiers en fonction des propriétés de métadonnées suivantes. Les noms des propriétés (par exemple auteur, titre, etc.) ainsi que les valeurs sont sensibles à la casse.
+La fonction de recherche en texte intégral GQL vous permet de rechercher des ressources en fonction des propriétés de métadonnées suivantes. Les noms des propriétés (auteur, titre, etc.) ainsi que les valeurs sont sensibles à la casse.
 
 >[!NOTE]
 >
@@ -62,27 +61,27 @@ La fonction de recherche en texte intégral de GQL vous permet de rechercher des
 | [!UICONTROL Description] | description:&quot;Sample Image&quot; |
 | [!UICONTROL Outil créateur] | creatortool:&quot;Adobe Photoshop 7.0&quot; |
 | [!UICONTROL Détenteur de copyright] | copyrightowner:&quot;Adobe Systems&quot; |
-| [!UICONTROL Contributeur] | contributeur:John |
+| [!UICONTROL Contributeur] | contributor:John |
 | [!UICONTROL Conditions d’utilisation] | usageterms:&quot;CopyRights Reserved&quot; |
-| [!UICONTROL Créé] | créé:AAAA-MM-DTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
-| [!UICONTROL Date d’expiration] | expire : AAAA-MM-DTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
-| [!UICONTROL Heure d’activation] | ontime:YYYY-MM-DTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
-| [!UICONTROL Heure de désactivation] | off-time:AAAA-MM-DTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
-| [!UICONTROL Plage de temps]  (expire la date, l’heure, l’heure d’arrêt) | facet field : lowerboundupperbound |
+| [!UICONTROL Créé] | created:YYYY-MM-DDTHH:MM:SS.000+05:30.AAAA-MM-JJTHH:MM:SS.000+05:30 |
+| [!UICONTROL Date d’expiration] | expires:AAAA-MM-JJTHH:MM:SS.000+05:30..AAAA-MM-JJTHH:MM:SS.000+05:30 |
+| [!UICONTROL Heure d’activation] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-JJTHH:MM:SS.000+05:30 |
+| [!UICONTROL Heure de désactivation] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30.AAAA-MM-JJTHH:MM:SS.000+05:30 |
+| [!UICONTROL Plage de temps]  (date d’expiration, heure d’arrêt) | facet field : lowerboundupperbound |
 | [!UICONTROL Chemin] | /content/dam/&lt;nom_dossier> |
 | [!UICONTROL Titre du PDF] | pdftitle:&quot;Adobe Document&quot; |
 | [!UICONTROL Objet] | subject:&quot;Training&quot; |
 | [!UICONTROL Balises] | tags:&quot;Location And Travel&quot; |
 | [!UICONTROL Type] | type:&quot;image\png&quot; |
-| [!UICONTROL Largeur de l’image] | width:lowerboundsupérieur |
-| [!UICONTROL Hauteur de l’image] | height:lowerboundsupérieur |
+| [!UICONTROL Largeur de l’image] | width:lowerboundupperbound |
+| [!UICONTROL Hauteur de l’image] | height:lowerboundupperbound |
 | [!UICONTROL Personne] | person:John |
 
 Voici quelques exemples de formats de recherche pour des requêtes complexes :
 
 * Pour afficher toutes les ressources avec plusieurs champs de facettes (par exemple : title=John Doe et creator tool=Adobe Photoshop) :
 
-tiltle : &quot;John Doe&quot;, outil de création : Adobe&amp;amp ; ast;
+tiltle:&quot;John Doe&quot; creatortool : Adobe&amp;ast;
 
 * Pour afficher toutes les ressources lorsque la valeur de la facette est une expression et non un seul mot (par exemple : title=Scott Reynolds) :
 
@@ -94,19 +93,19 @@ title:&quot;Scott Reynolds&quot; OR &quot;John Doe&quot;
 
 * Pour afficher les ressources avec des valeurs de propriété commençant par une chaîne spécifique (par exemple : title is Scott Reynolds) :
 
-titre : &quot;Scott&quot;
+title:&quot;Scott&quot;
 
 * Pour afficher les ressources avec des valeurs de propriété se terminant par une chaîne spécifique (par exemple : title is Scott Reynolds) :
 
-titre : &quot;Reynolds&quot;
+title:&quot;Reynolds&quot;
 
 * Pour afficher les ressources avec une valeur de propriété contenant une chaîne spécifique (par exemple : title = Basel Meeting Room) :
 
-titre : &quot;Réunion&quot;;
+title:&quot;Meeting&quot;;
 
 * Pour afficher les ressources qui contiennent une chaîne spécifique et qui possèdent une valeur de propriété en particulier (par exemple : search for string Adobe in assets having title=John Doe) :
 
-&amp;ast;Adobe&amp;ast; titre : &quot;John Doe &quot;OR title:&quot;John Doe&quot; &amp;ast;Adobe&amp;ast;
+&amp;ast;Adobe&amp;ast; title:&quot;John Doe &quot;OR title:&quot;John Doe&quot; &amp;ast;Adobe&amp;ast;
 
 >[!NOTE]
 >
@@ -128,7 +127,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources données
 1. Depuis l’interface utilisateur Ressources, ouvrez la page des propriétés de la ressource pour lequelle vous souhaitez promouvoir un mot-clé.
 1. Basculez sur l’onglet **[!UICONTROL Avancé]**, puis cliquez/appuyez sur **[!UICONTROL Ajouter]** sous **[!UICONTROL Élever pour les mots-clés de recherche]**.
 
-   ![height_for_search](assets/elevate_for_search.png)
+   ![elevate_for_search](assets/elevate_for_search.png)
 
 1. Dans la boîte de dialogue **[!UICONTROL Rechercher une promotion]**, indiquez un mot-clé pour lequel vous souhaitez améliorer la recherche d’image, puis cliquez/appuyez sur **[!UICONTROL Ajouter]**. Si nécessaire, indiquez plusieurs mots-clés de la même manière.
 
