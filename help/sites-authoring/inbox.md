@@ -45,9 +45,9 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 >Pour plus d’informations sur les types d’éléments, voir aussi :
 >
 >* [Projets](/help/sites-authoring/touch-ui-managing-projects.md)
-* [Projets – Utilisation des tâches](/help/sites-authoring/task-content.md)
-* [Workflows](/help/sites-authoring/workflows.md)
-* [Formulaires](/help/forms/home.md)
+>* [Projets – Utilisation des tâches](/help/sites-authoring/task-content.md)
+>* [Workflows](/help/sites-authoring/workflows.md)
+>* [Formulaires](/help/forms/home.md)
 
 
 
@@ -58,7 +58,8 @@ Dans les deux consoles, le nombre actuel d’éléments présents dans votre bo�
 ![wf-80](assets/wf-80.png)
 
 >[!NOTE]
-Certaines opérations sont également répertoriées en [mode Carte de la ressource appropriée](/help/sites-authoring/basic-handling.md#card-view).
+>
+>Certaines opérations sont également répertoriées en [mode Carte de la ressource appropriée](/help/sites-authoring/basic-handling.md#card-view).
 
 ## Tâches administratives prêtes à l’emploi  {#out-of-the-box-administrative-tasks}
 
@@ -83,7 +84,8 @@ Pour ouvrir la boîte de réception des notifications AEM :
    ![wf-79](assets/wf-79.png)
 
 >[!NOTE]
-La boîte de réception fonctionne comme une console. Vous pouvez ainsi utiliser la [navigation globale](/help/sites-authoring/basic-handling.md#global-navigation) ou la fonction de [recherche](/help/sites-authoring/search.md) pour accéder à un autre emplacement lorsque vous avez terminé.
+>
+>La boîte de réception fonctionne comme une console. Vous pouvez ainsi utiliser la [navigation globale](/help/sites-authoring/basic-handling.md#global-navigation) ou la fonction de [recherche](/help/sites-authoring/search.md) pour accéder à un autre emplacement lorsque vous avez terminé.
 
 ### Boîte de réception – Mode Liste {#inbox-list-view}
 
@@ -151,8 +153,9 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
    * Créer un projet à partir de l’élément.
 
    >[!NOTE]
-   Pour plus d’informations, voir :
-   * Éléments de workflow – [Participation aux workflows](/help/sites-authoring/workflows-participating.md)
+   >
+   >Pour plus d’informations, voir :
+   >* Éléments de workflow – [Participation aux workflows](/help/sites-authoring/workflows-participating.md)
 
 
 1. Une action démarre en fonction de l’élément sélectionné ; par exemple :
@@ -207,8 +210,9 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-authoring/pro
 1. Sélectionnez la tâche appropriée en appuyant/cliquant sur la miniature.
 
    >[!NOTE]
-   Seules les tâches créées à l’aide de l’option **Créer** de la **boîte de réception** peuvent être utilisées pour créer un projet.
-   Les éléments de travail (d’un workflow) ne peuvent pas être utilisés pour créer un projet.
+   >
+   >Seules les tâches créées à l’aide de l’option **Créer** de la **boîte de réception** peuvent être utilisées pour créer un projet.
+   >Les éléments de travail (d’un workflow) ne peuvent pas être utilisés pour créer un projet.
 
 1. Sélectionnez **Créer un projet** depuis la barre d’outils pour ouvrir l’assistant.
 1. Sélectionnez le modèle approprié, puis **Suivant**.
@@ -224,8 +228,10 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-authoring/pro
    * **Avancé**
 
       * **Nom**
+
    >[!NOTE]
-   Pour plus d’informations, voir [Création d’un projet](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project).
+   >
+   >Pour plus d’informations, voir [Création d’un projet](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project).
 
 1. Sélectionnez **Créer** pour confirmer l’action.
 
@@ -244,4 +250,5 @@ Vous pouvez filtrer les éléments répertoriés :
    ![wf-89](assets/wf-89.png)
 
    >[!NOTE]
-   En [mode Liste](#inbox-view-settings), vous pouvez également configurer l’ordre de tri dans les [paramètres d’affichage](#inbox-list-view).
+   >
+   >En [mode Liste](#inbox-view-settings), vous pouvez également configurer l’ordre de tri dans les [paramètres d’affichage](#inbox-list-view).

@@ -29,7 +29,6 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 >
 >* Voir [Configuration des services cloud Dynamic Media dans Configuration de Dynamic Media – mode hybride.](/help/assets/config-dynamic.md)
 >* Voir [Configuration de Dynamic Media – mode Scene7](config-dms7.md) et [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md).
-
 >
 
 
@@ -783,7 +782,6 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
    >* Configuration de la file d’attente des tâches Apache Sling
    >* Gestionnaire des tâches du processus externe de processus Adobe Granite
    >* File d’attente des délais d’attente des processus Granite
-
    > 
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
@@ -816,7 +814,6 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
    >* Configuration de la file d’attente des tâches Apache Sling
    >* Gestionnaire des tâches du processus externe de processus Adobe Granite
    >* File d’attente des délais d’attente des processus Granite
-
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
@@ -959,6 +956,7 @@ Pour afficher des rapports vidéo basés sur une visionneuse de vidéos que vous
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
+
    L’objet appMeasurementBridge dispose d’une fonction de suivi intégrée. Vous pouvez toutefois fournir votre propre fonction pour prendre en charge plusieurs systèmes de suivi ou d’autres fonctionnalités.
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->

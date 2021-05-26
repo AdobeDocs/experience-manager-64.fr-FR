@@ -32,12 +32,13 @@ Cette page vous explique comment étendre les fonctionnalités de Multi Site Man
 >Cette page doit être lue conjointement avec :
 >* [Réutilisation de contenu : Multi Site Manager](/help/sites-administering/msm.md).
 >* Restructuration des référentiels dans AEM 6.4:
-   >   * [Configurations Blueprint de Multi-site Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
+>   * [Configurations Blueprint de Multi-site Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
    * [Configurations du déploiement de Multi-site Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
 
 
 >[!CAUTION]
-Le Multi Site Manager et son API sont utilisés lors de la création d’un site Web. Ils sont donc destinés exclusivement à l’environnement de création.
+>
+>Le Multi Site Manager et son API sont utilisés lors de la création d’un site Web. Ils sont donc destinés exclusivement à l’environnement de création.
 
 ## Vue d’ensemble de l’API Java {#overview-of-the-java-api}
 
@@ -146,7 +147,8 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 ```
 
 >[!NOTE]
-Les arguments `Resource` peuvent être des objets `null` ou `Resources` qui ne s’adaptent pas aux objets `Node`, tels que les objets [`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html).
+>
+>Les arguments `Resource` peuvent être des objets `null` ou `Resources` qui ne s’adaptent pas aux objets `Node`, tels que les objets [`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html).
 
 ## Création d’une configuration de déploiement {#creating-a-new-rollout-configuration}
 
@@ -158,7 +160,8 @@ Créez une configuration de déploiement lorsque celles installées ne réponden
 La nouvelle configuration de déploiement est disponible quand vous définissez des configurations de déploiement sur une page Plan directeur ou Live Copy.
 
 >[!NOTE]
-Voir aussi les [bonnes pratiques de personnalisation des déploiements](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
+>
+>Voir aussi les [bonnes pratiques de personnalisation des déploiements](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
 
 ### Créer la configuration du déploiement  {#create-the-rollout-configuration}
 
@@ -171,12 +174,16 @@ Pour créer une configuration de déploiement :
    `/apps/msm/<your-project>/rolloutconfigs`
 
    >[!NOTE]
-Il s’agit de la version personnalisée de votre projet de :
-   `/libs/msm/wcm/rolloutconfigs`
+   >
+   >Il s’agit de la version personnalisée de votre projet de :
+   >`/libs/msm/wcm/rolloutconfigs`
+
 Doit être créé s’il s’agit de votre première configuration.
 
    >[!NOTE]
-   Vous ne devez rien modifier dans le chemin /libs.
+   >
+   >Vous ne devez rien modifier dans le chemin /libs.
+
 En effet, le contenu de /libs est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
 La méthode recommandée pour la configuration et d’autres modifications est la suivante :
    * Recréez l’élément requis (c’est-à-dire tel qu’il existe dans /libs) sous /apps
@@ -687,7 +694,9 @@ Lorsque `cq-msm-lockable` a été défini, la rupture/le verrouillage de la cha�
 
 
 >[!NOTE]
-cq-msm-lockable s’applique au premier niveau enfant de la ressource à éditer et il n’est fonctionnel sur aucun ancêtre de niveau plus profond, que la valeur soit définie comme absolue ou relative.
+>
+>cq-msm-lockable s’applique au premier niveau enfant de la ressource à éditer et il n’est fonctionnel sur aucun ancêtre de niveau plus profond, que la valeur soit définie comme absolue ou relative.
 
 >[!NOTE]
-Lorsque vous réactivez l’héritage, la propriété de page de la Live Copy n’est pas automatiquement synchronisée avec la propriété source. Vous pouvez demander manuellement une synchronisation si nécessaire.
+>
+>Lorsque vous réactivez l’héritage, la propriété de page de la Live Copy n’est pas automatiquement synchronisée avec la propriété source. Vous pouvez demander manuellement une synchronisation si nécessaire.

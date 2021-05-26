@@ -39,25 +39,27 @@ Cela signifie que :
 >La structure de commerce électronique peut être utilisée avec :
 >
 >* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-   >
-   >
-* [SAP Commerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
+>
+>* [SAP Commerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
 
 * [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
 
 
 
 >[!CAUTION]
-La [structure d’intégration du commerce électronique](https://www.adobe.com/solutions/web-experience-management/commerce.html) est un module complémentaire d’AEM.
-Le représentant commercial peut vous donner plus de détails, en fonction du moteur approprié.
+>
+>La [structure d’intégration du commerce électronique](https://www.adobe.com/solutions/web-experience-management/commerce.html) est un module complémentaire d’AEM.
+>Le représentant commercial peut vous donner plus de détails, en fonction du moteur approprié.
 
 >[!CAUTION]
-La structure fournit les exigences de base de votre propre projet.
-Un certain travail de développement reste nécessaire pour adapter la structure à vos spécifications.
+>
+>La structure fournit les exigences de base de votre propre projet.
+>Un certain travail de développement reste nécessaire pour adapter la structure à vos spécifications.
 
 >[!CAUTION]
-L’installation standard d’AEM inclut une mise en œuvre générique d’eCommerce (JCR) AEM.
-Pour le moment, elle est utilisée à des fins de démonstration ou comme base d’une mise en œuvre personnalisée selon vos besoins.
+>
+>L’installation standard d’AEM inclut une mise en œuvre générique d’eCommerce (JCR) AEM.
+>Pour le moment, elle est utilisée à des fins de démonstration ou comme base d’une mise en œuvre personnalisée selon vos besoins.
 
 Pour optimiser le fonctionnement, AEM et le moteur eCommerce se concentrent chacun sur leur propre champ d’expertise. Les informations sont transférées entre les deux en temps réel. Par exemple :
 
@@ -92,7 +94,8 @@ Pour optimiser le fonctionnement, AEM et le moteur eCommerce se concentrent chac
 
 
 >[!NOTE]
-Les détails exacts dépendent du moteur eCommerce et de la mise en œuvre du projet.
+>
+>Les détails exacts dépendent du moteur eCommerce et de la mise en œuvre du projet.
 
 Un certain nombre de composants d’AEM prêts à l’emploi sont fournis pour utiliser la couche d’intégration. Pour le moment, par exemple :
 
@@ -121,10 +124,11 @@ AEM eCommerce est mis en œuvre avec un moteur eCommerce :
 
 
 >[!NOTE]
-L’installation standard d’AEM inclut une mise en œuvre générique d’eCommerce (JCR) AEM.
-Pour le moment, elle est utilisée à des fins de démonstration ou comme base d’une mise en œuvre personnalisée selon vos besoins.
-AEM eCommerce mis en œuvre dans AEM à l’aide du développement générique reposant sur JCR est :
-* Un exemple d’instance AEM eCommerce native autonome illustrant l’utilisation de l’API, qui peut être utilisée pour contrôler des données des produits, les paniers et le passage en caisse conjointement à l’affichage des données existantes et aux campagnes marketing. Dans ce cas, la base de données de produits est stockée dans le référentiel natif à AEM (mise en œuvre [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) d’Adobe).\
+>
+>L’installation standard d’AEM inclut une mise en œuvre générique d’eCommerce (JCR) AEM.
+>Pour le moment, elle est utilisée à des fins de démonstration ou comme base d’une mise en œuvre personnalisée selon vos besoins.
+>AEM eCommerce mis en œuvre dans AEM à l’aide du développement générique reposant sur JCR est :
+>* Un exemple d’instance AEM eCommerce native autonome illustrant l’utilisation de l’API, qui peut être utilisée pour contrôler des données des produits, les paniers et le passage en caisse conjointement à l’affichage des données existantes et aux campagnes marketing. Dans ce cas, la base de données de produits est stockée dans le référentiel natif à AEM (mise en œuvre [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) d’Adobe).\
    L’installation standard d’AEM contient les éléments de base de la [mise en œuvre générique eCommerce](/help/sites-administering/generic.md).
 
 
@@ -146,7 +150,8 @@ Deux exemples de fournisseurs de commerce sont disponibles actuellement pour AEM
 Généralement, un projet doit développer son propre fournisseur de commerce personnalisé spécifique à sa gestion d’informations sur les produits et à son schéma de données sur les produits.
 
 >[!NOTE]
-Les importateurs geometrixx utilisent des fichiers CSV. Les commentaires précédant la mise en œuvre décrivent le schéma accepté (avec les propriétés personnalisées autorisées).
+>
+>Les importateurs geometrixx utilisent des fichiers CSV. Les commentaires précédant la mise en œuvre décrivent le schéma accepté (avec les propriétés personnalisées autorisées).
 
 [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) conserve (par le biais d’[OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) une liste des mises en œuvre des interfaces [ProductImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) et [CatalogBlueprintImporter. ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) Celles-ci sont répertoriées dans le champ de liste déroulante **Importateur/Fournisseur de commerce** de l’assistant d’importation (à l’aide de la propriété `commerceProvider` comme nom).
 
@@ -495,8 +500,9 @@ Les pages de proxy utilisent une structure à deux noeuds ( `cq:Page` et `jcr:co
 Ceci présente cependant un inconvénient : vous ne pourrez pas personnaliser les informations sur les produits dans AEM, car un modèle standard (défini pour votre site) est utilisé.
 
 >[!NOTE]
-Vous ne rencontrerez aucun problème si vous importez un catalogue volumineux sans pages de proxy.
-Vous pouvez passer d’une méthode à l’autre à tout moment. Vous pouvez également convertir une sous-section de votre catalogue.
+>
+>Vous ne rencontrerez aucun problème si vous importez un catalogue volumineux sans pages de proxy.
+>Vous pouvez passer d’une méthode à l’autre à tout moment. Vous pouvez également convertir une sous-section de votre catalogue.
 
 ## Promotions et bons {#promotions-and-vouchers}
 
@@ -524,7 +530,8 @@ Dans AEM :
 * Les bons ne comportent pas leurs propres dates/périodes de validité ; ils utilisent celles de leurs campagnes parentes.
 
 >[!NOTE]
-AEM utilise le terme **bon**, synonyme de **coupon**.
+>
+>AEM utilise le terme **bon**, synonyme de **coupon**.
 
 ### Promotions {#promotions}
 
@@ -576,7 +583,8 @@ Une promotion peut être contenue dans une expérience ou directement dans la ca
    se trouve en dehors d’une expérience et ne se déclenche donc jamais automatiquement (par exemple : selon la segmentation). Il est toutefois référencé par les bons qui se trouvent dans plusieurs expériences de la campagne d’article. La saisie de ces codes de bon dans le panier déclenche la promotion.
 
 >[!NOTE]
-Les [promotions Hybris](https://www.hybris.com/modules/promotion) et les [bons Hybris](https://www.hybris.com/en/modules/voucher) couvrent tout ce qui influence le panier et est lié au prix. Le contenu marketing spécifique à une promotion (bannières, etc.) ne fait pas partie de la promotion Hybris.
+>
+>Les [promotions Hybris](https://www.hybris.com/modules/promotion) et les [bons Hybris](https://www.hybris.com/en/modules/voucher) couvrent tout ce qui influence le panier et est lié au prix. Le contenu marketing spécifique à une promotion (bannières, etc.) ne fait pas partie de la promotion Hybris.
 
 ## Personnalisation {#personalization}
 
@@ -604,8 +612,9 @@ Le mécanisme exact peut dépendre du scénario :
 Lorsque vous utilisez un moteur eCommerce, AEM stocke uniquement l’ID de compte et le mot de passe (éventuellement, un groupe d’utilisateurs). Toutes les autres informations sont stockées dans le moteur eCommerce.
 
 >[!NOTE]
-Lorsque vous utilisez un moteur eCommerce, vous devez vous assurer que les comptes créés pour les utilisateurs qui se connectent à une instance AEM sont répliqués (par le biais de workflows, par exemple) sur les autres instances AEM qui communiquent avec ce moteur.
-Autrement, ces autres instances AEM essaient également de créer des comptes pour les mêmes utilisateurs dans le moteur. Ces actions échouent avec une exception `DuplicateUidException` générée par le moteur.
+>
+>Lorsque vous utilisez un moteur eCommerce, vous devez vous assurer que les comptes créés pour les utilisateurs qui se connectent à une instance AEM sont répliqués (par le biais de workflows, par exemple) sur les autres instances AEM qui communiquent avec ce moteur.
+>Autrement, ces autres instances AEM essaient également de créer des comptes pour les mêmes utilisateurs dans le moteur. Ces actions échouent avec une exception `DuplicateUidException` générée par le moteur.
 
 ### Inscription des clients {#customer-sign-up}
 
@@ -614,7 +623,8 @@ Pour que l’acheteur ait accès au panier, il doit généralement s’inscrire.
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
 >[!NOTE]
-Un panier et un passage en caisse anonymes sont également pris en charge.
+>
+>Un panier et un passage en caisse anonymes sont également pris en charge.
 
 ### Connexion des clients {#customer-sign-in}
 
@@ -653,7 +663,8 @@ Le composant Carnet d’adresses est accessible à partir de la page **Mon compt
 Cliquez sur **Ajouter une nouvelle adresse…** pour ajouter une nouvelle adresse à votre carnet d’adresses. Un formulaire à remplir s’affiche. Cliquez ensuite sur **Ajouter une adresse**.
 
 >[!NOTE]
-Vous pouvez saisir plusieurs adresses dans votre carnet d’adresses.
+>
+>Vous pouvez saisir plusieurs adresses dans votre carnet d’adresses.
 
 Le carnet d’adresses est utilisé lors du passage en caisse de votre panier :
 
@@ -681,7 +692,8 @@ Un client anonyme peut :
 * passer en caisse pour passer sa commande.
 
 >[!NOTE]
-Selon la configuration de vos informations d’adresse d’instance, l’enregistrement des clients peut être nécessaire avant le passage en caisse.
+>
+>Selon la configuration de vos informations d’adresse d’instance, l’enregistrement des clients peut être nécessaire avant le passage en caisse.
 
 ### Clients enregistrés  {#registered-shoppers}
 
@@ -721,13 +733,16 @@ Dans un cas comme dans l’autre, les articles restent dans le panier (et peuven
 * reconnectez-vous en tant que `Allison Parker` - ses produits sont restaurés
 
 >[!NOTE]
-Un panier anonyme peut être restauré uniquement sur le même ordinateur/dans le même navigateur.
+>
+>Un panier anonyme peut être restauré uniquement sur le même ordinateur/dans le même navigateur.
 
 >[!NOTE]
-Il n’est pas recommandé de tester la restauration du contenu du panier avec le compte `admin`, car cela peut entrer en conflit avec le compte `admin` du moteur eCommerce (Hybris, par exemple).
+>
+>Il n’est pas recommandé de tester la restauration du contenu du panier avec le compte `admin`, car cela peut entrer en conflit avec le compte `admin` du moteur eCommerce (Hybris, par exemple).
 
 >[!NOTE]
-Hybris peut être configuré de manière à supprimer les paniers en attente après une certaine période.
+>
+>Hybris peut être configuré de manière à supprimer les paniers en attente après une certaine période.
 
 Avant le passage en caisse, les modifications des prix sont répercutées (sur les deux systèmes) dès qu’elles ont lieu.
 
@@ -802,8 +817,9 @@ Différentes informations sont stockées, notamment :
    Lien utilisé pour le suivi de la commande en cours d’expédition.
 
 >[!NOTE]
-Les champs utilisés dans l’assistant de création de commande dépendent de la génération de modèles automatique optimisée pour les écrans tactiles définie pour le lieu. Dans l’exemple générique, vous trouverez ce qui suit :\
-`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
+>
+>Les champs utilisés dans l’assistant de création de commande dépendent de la génération de modèles automatique optimisée pour les écrans tactiles définie pour le lieu. Dans l’exemple générique, vous trouverez ce qui suit :\
+>`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
 Lorsque la commande est conservée dans AEM, la console Commande affiche les informations ci-dessous pour chaque commande :
 
