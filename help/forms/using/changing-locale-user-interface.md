@@ -9,18 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: e4ca8188-fb9a-44bf-8437-a98abaa7521a
-translation-type: tm+mt
-source-git-commit: 1b6f00462cc0d7b90af033d59e68fbaabe020064
+exl-id: 9968f399-454b-4cb2-b6af-2c16428ca7b4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 59%
 
 ---
 
+# Modification des paramètres régionaux de l’interface utilisateur de l’espace de travail AEM Forms {#changing-the-locale-of-aem-forms-workspace-user-interface}
 
-# Modification des paramètres régionaux de l’interface utilisateur de l’espace de travail AEM Forms  {#changing-the-locale-of-aem-forms-workspace-user-interface}
-
-L’espace de travail AEM Forms offre une prise en charge immédiate de l’anglais, du français, de l’allemand et du japonais. Il permet également de localiser l’interface utilisateur de l’espace de travail AEM Forms dans n’importe quelle autre langue.
+L’espace de travail AEM Forms fournit une prise en charge prête à l’emploi de l’anglais, du français, de l’allemand et du japonais. Il permet également de localiser l’interface utilisateur de l’espace de travail AEM Forms dans n’importe quelle autre langue.
 
 Pour localiser l’interface utilisateur de l’espace de travail AEM Forms dans la langue de votre choix :
 
@@ -28,7 +27,7 @@ Pour localiser l’interface utilisateur de l’espace de travail AEM Forms dans
 * Localisez les catégories réduites, les files d’attente et les processus.
 * Localisez le sélecteur de date.
 
-Avant d’exécuter les étapes ci-dessus, veillez à suivre les étapes répertoriées dans [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+Avant d’effectuer les étapes ci-dessus, veillez à suivre les étapes répertoriées dans [Étapes génériques pour la personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 >[!NOTE]
 >
@@ -36,14 +35,14 @@ Avant d’exécuter les étapes ci-dessus, veillez à suivre les étapes répert
 
 ## Localisation du texte  {#localizing-text}
 
-Effectuez les étapes suivantes pour ajouter la prise en charge d’une langue *New* et du code de paramètres régionaux du navigateur *nw*.
+Effectuez les étapes suivantes pour ajouter la prise en charge d’une langue *Nouvelle* et du code de paramètres régionaux du navigateur *nw*.
 
 1. Connectez-vous à CRXDE Lite.
 
    L’URL par défaut du CRXDE Lite est `https://[server]:[port]/lc/crx/de/index.jsp`.
 
-1. Accédez à l’emplacement `apps/ws/locales` et créez un dossier `nw.`.
-1. Copiez le fichier `translation.json`de l&#39;emplacement `/apps/ws/locales/en-US` vers l&#39;emplacement `/apps/ws/locales/nw`.
+1. Accédez à l’emplacement `apps/ws/locales` et créez un dossier `nw.`
+1. Copiez le fichier `translation.json`de l’emplacement `/apps/ws/locales/en-US` vers l’emplacement `/apps/ws/locales/nw`.
 1. Accédez à `/apps/ws/locales/nw` et ouvrez `translation.json` pour le modifier. Effectuez des modifications spécifiques aux paramètres régionaux dans le fichier translation.json.
 
    Les exemples suivants contiennent le fichier translation.json pour les environnements locaux en anglais et en français de l’espace de travail AEM Forms.
@@ -52,7 +51,7 @@ Effectuez les étapes suivantes pour ajouter la prise en charge d’une langue *
 
 ## Localisation des catégories réduites, des files d’attente et des processus {#localizing-collapsed-categories-queues-and-processes}
 
-L’espace de travail AEM Forms utilise des images pour afficher les en-têtes des catégories, des files d’attente et des processus. Vous avez besoin d’un progiciel de développement pour localiser ces en-têtes. Pour plus d’informations sur la création d’un paquet de développement, voir [Création du code de l’espace de travail AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+L’espace de travail AEM Forms utilise des images pour afficher les en-têtes des catégories, des files d’attente et des processus. Vous avez besoin d’un progiciel de développement pour localiser ces en-têtes. Pour plus d’informations sur la création d’un module de développement, voir [Création du code de l’espace de travail AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 Dans les étapes suivantes, on considère que les nouveaux fichiers image localisés sont *Categories_nw.png*, *Queue_nw.png* et *Processes_nw.png*. La largeur recommandée des images est de 19 px.
 
@@ -60,7 +59,7 @@ Dans les étapes suivantes, on considère que les nouveaux fichiers image locali
 >
 >Pour trouver le code de paramètres régionaux de la langue du navigateur de votre navigateur. Ouvrez `https://[server]:[port]/lc/libs/ws/Locale.html`.
 
-![collapse_panneaux_image](assets/collapsing_panels_image.png)
+![collapse_panels_image](assets/collapsing_panels_image.png)
 
 Effectuez les étapes suivantes pour localiser les images :
 
@@ -81,9 +80,9 @@ Effectuez les étapes suivantes pour localiser les images :
    }
    ```
 
-1. Effectuez toutes les modifications sémantiques répertoriées dans l’article [Personnalisation de l’espace de travail](/help/forms/using/introduction-customizing-html-workspace.md).
+1. Effectuez toutes les modifications sémantiques répertoriées dans l’article [Personnalisation de l’espace de travail](/help/forms/using/introduction-customizing-html-workspace.md) .
 1. Accédez au dossier *js/runtime/utility* et ouvrez le fichier* usersession.js* pour le modifier.
-1. Recherchez le code figurant dans le bloc de code original et ajoutez la condition *lang !== &#39;nw&#39;* à l&#39;instruction if :
+1. Recherchez le code figurant dans le bloc de code original et ajoutez la condition *lang !== &#39;nw&#39;* à l’instruction if :
 
    ```
    // Orignal code
@@ -111,18 +110,18 @@ Effectuez les étapes suivantes pour localiser les images :
 
 ## Localisation du sélecteur de date {#localizing-date-picker}
 
-Vous avez besoin du paquet de développement pour localiser l’*API du datepicker *API. Pour plus d’informations sur la création d’un paquet de développement, voir [Création du code de l’espace de travail AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
+Vous avez besoin d’un package de développement pour localiser l’API *datepicker*. Pour plus d’informations sur la création d’un module de développement, voir [Création du code de l’espace de travail AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
 1. Téléchargez et ouvrez le [progiciel d’interface utilisateur jQuery](https://jqueryui.com/download/all/), naviguez jusqu’à *&lt;progiciel d’interface utilisateur jQuery extrait>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copiez le fichier jquery.ui.datepicker-nw.js du nouveau code de paramètres régionaux dans apps/ws/js/libs/jqueryui et apportez les modifications propres aux paramètres locaux dans le fichier.
 1. Accédez à `apps/ws/js` et ouvrez le fichier `jquery.ui.datepicker-nw.js` pour le modifier.
-1. Dans le fichier main.js, créez un alias pour `jquery.ui.datepicker-nw.js.` Le code permettant de créer un alias pour le fichier `jquery.ui.datepicker-nw.js` est le suivant :
+1. Dans le fichier main.js , créez un alias pour `jquery.ui.datepicker-nw.js.` Le code permettant de créer un alias pour le fichier `jquery.ui.datepicker-nw.js` est le suivant :
 
    ```
    jqueryuidatepickernw : pathprefix + 'libs/jqueryui/jquery.ui.datepicker-nw'
    ```
 
-1. Utilisez l&#39;alias `jqueryuidatepickernw` pour inclure le fichier `jquery.ui.datepicker-nw.js` dans tous les fichiers qui utilisent le sélecteur de données. L’API datepicker est utilisée dans les fichiers suivants :
+1. Utilisez l’alias `jqueryuidatepickernw` pour inclure le fichier `jquery.ui.datepicker-nw.js` dans tous les fichiers qui utilisent le sélecteur de données. L’API datepicker est utilisée dans les fichiers suivants :
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`
