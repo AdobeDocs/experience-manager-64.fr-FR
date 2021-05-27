@@ -33,7 +33,7 @@ Cette page vous explique comment étendre les fonctionnalités de Multi Site Man
 >* [Réutilisation de contenu : Multi Site Manager](/help/sites-administering/msm.md).
 >* Restructuration des référentiels dans AEM 6.4:
 >   * [Configurations Blueprint de Multi-site Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
-   * [Configurations du déploiement de Multi-site Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
+>   * [Configurations du déploiement de Multi-site Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
 
 
 >[!CAUTION]
@@ -177,17 +177,15 @@ Pour créer une configuration de déploiement :
    >
    >Il s’agit de la version personnalisée de votre projet de :
    >`/libs/msm/wcm/rolloutconfigs`
-
-Doit être créé s’il s’agit de votre première configuration.
+   >Doit être créé s’il s’agit de votre première configuration.
 
    >[!NOTE]
    >
    >Vous ne devez rien modifier dans le chemin /libs.
-
-En effet, le contenu de /libs est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
-La méthode recommandée pour la configuration et d’autres modifications est la suivante :
-   * Recréez l’élément requis (c’est-à-dire tel qu’il existe dans /libs) sous /apps
-   * Le cas échéant, effectuez des modifications dans /apps.
+   >En effet, le contenu de /libs est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
+   >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
+   >* Recréez l’élément requis (c’est-à-dire tel qu’il existe dans /libs) sous /apps
+   >* Le cas échéant, effectuez des modifications dans /apps.
 
 
 1. Sous cette balise **Créez** un noeud avec les propriétés suivantes :
