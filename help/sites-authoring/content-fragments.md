@@ -169,9 +169,9 @@ Dans le cas du contenu intermédiaire, plusieurs possibilités vous sont offerte
 >Une fois le contenu intermédiaire ajouté à un fragment de votre page, la modification de la structure du fragment de contenu sous-jacent (c’est-à-dire dans l’éditeur de fragment de contenu) risque de donner lieu à des résultats erronés/inattendus.
 >Si cela se produit, le contenu intermédiaire est conservé tel quel :
 >* Les composants intermédiaires occupent une position absolue dans la séquence de composants du flux de fragments. Cette position ne varie pas, même en cas de modification du contenu des paragraphes dans le fragment.\
-   Cela peut donner l’impression que le positionnement relatif a changé, dans la mesure où les paragraphes intermédiaires n’ont aucune relation contextuelle avec les paragraphes (de fragment) près desquels ils sont placés.
-* À moins que ces deux structures de paragraphes ne soient en conflit ; dans ce cas, le contenu intermédiaire n’est pas affiché (bien qu’il soit toujours présent en interne).
-
+>  Cela peut donner l’impression que le positionnement relatif a changé, dans la mesure où les paragraphes intermédiaires n’ont aucune relation contextuelle avec les paragraphes (de fragment) près desquels ils sont placés.
+>* À moins que ces deux structures de paragraphes ne soient en conflit ; dans ce cas, le contenu intermédiaire n’est pas affiché (bien qu’il soit toujours présent en interne).
+>
 
 
 ## Utilisation de contenu associé    {#using-associated-content}
