@@ -62,27 +62,29 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
          En savoir plus sur les [bonnes pratiques relatives à l’organisation des ressources numériques en vue de l’utilisation de profils de traitement](organize-assets.md#organize-using-folders)
 
       * [Recherche de ressources vidéo](search-video-assets.md) ou [Recherche de ressources](managing-assets-touch-ui.md#searching-assets)
+      
    * Prévisualisez et publiez des ressources vidéo
 
       * Affichez la vidéo source et les rendus codés de la vidéo avec les miniatures associées :
 
-         [Prévisualisation de vidéos](managing-video-assets.md#uploading-and-previewing-video-assets) ou [Prévisualisation de ressources](previewing-assets.md)
+        [Prévisualisation de vidéos](managing-video-assets.md#uploading-and-previewing-video-assets) ou [Prévisualisation de ressources](previewing-assets.md)
 
-         [Affichage des rendus vidéo](video-renditions.md)
+        [Affichage des rendus vidéo](video-renditions.md)
 
-[Gestion des rendus vidéo](managing-assets-touch-ui.md#managing-renditions)
+        [Gestion des rendus vidéo](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
       * [Publier des ressources](publishing-dynamicmedia-assets.md)
+      
    * Utiliser des métadonnées vidéo
 
       * Affichez les propriétés d’un rendu vidéo codé, telles que la fréquence d’image, le débit audio et vidéo et le codec :
 
-         [Affichage des propriétés de rendu vidéo](video-renditions.md)
+        [Affichage des propriétés de rendu vidéo](video-renditions.md)
 
       * Modifiez les propriétés de la vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisés :
 
-[Modification des propriétés vidéo](managing-assets-touch-ui.md#editing-properties)
+        [Modification des propriétés vidéo](managing-assets-touch-ui.md#editing-properties)
 
       * [Gestion des métadonnées des ressources numériques](metadata.md)
       * [Schémas de métadonnées](metadata-schemas.md)
