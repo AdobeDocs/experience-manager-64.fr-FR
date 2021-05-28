@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Statistiques sur les ressources, rapports sur les ressources
 role: Business Practitioner,Administrator
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: af2d14f92efb88143ccefe7fe29f83ae515e5981
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '798'
 ht-degree: 59%
 
 ---
@@ -22,7 +22,7 @@ La fonction Statistiques sur les ressources capture les détails de l’activit�
 
 Pour que la fonction Statistiques sur les ressources capture les statistiques d’utilisation des ressources à partir d’un site web, vous devez inclure le code intégré de la ressource dans le code du site web.
 
-Pour permettre à Assets Insights d’afficher les statistiques d’utilisation des ressources, configurez d’abord la fonction pour récupérer les données de rapport à partir de [!DNL Adobe Analytics]. Pour plus d’informations, voir [Configuration des statistiques sur les ressources](touch-ui-configuring-asset-insights.md). Pour utiliser cette fonctionnalité, achetez la licence [!DNL Adobe Analytics] séparément. Les clients sur [!DNL Managed Services] reçoivent la licence [!DNL Analytics] inclue avec [!DNL Experience Manager]. Voir [Description du produit Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Pour permettre à Assets Insights d’afficher les statistiques d’utilisation des ressources, configurez d’abord la fonction pour récupérer les données de rapport à partir de [!DNL Adobe Analytics]. Pour plus d’informations, voir [Configuration des statistiques sur les ressources](touch-ui-configuring-asset-insights.md). Pour utiliser cette fonctionnalité dans une installation on-premise, achetez la licence [!DNL Adobe Analytics] séparément. Les clients sur [!DNL Managed Services] reçoivent la licence [!DNL Analytics] inclue avec [!DNL Experience Manager]. Voir [Description du produit Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
