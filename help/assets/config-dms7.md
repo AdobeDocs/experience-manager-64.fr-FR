@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration, mode Scene7
 role: Administrator,Business Practitioner,Developer
-source-git-commit: a9ae157512127f27dd54063fe4e3c61b5f83b74e
+source-git-commit: f4fe70a58ded345f06f0a65809612a55e7ddfb4e
 workflow-type: tm+mt
 source-wordcount: '5596'
 ht-degree: 55%
@@ -35,9 +35,9 @@ Avec la nouvelle architecture, Experience Manager est responsable des ressources
 
 [Par défaut, ce module complémentaire est désactivé. ](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) Pour tirer parti des fonctionnalités de Dynamic Media, vous devez l’activer.
 
->[!NOTE]
+>[!WARNING]
 >
->Dynamic Media : le mode Scene7 est réservé à l’instance d’auteur du Experience Manager. Par conséquent, vous devez configurer `runmode=dynamicmedia_scene7`sur l’instance d’auteur du Experience Manager, et non sur l’instance de publication du Experience Manager.
+>Dynamic Media : le mode Scene7 est réservé à l’instance *Auteur Experience Manager*. Par conséquent, vous devez configurer `runmode=dynamicmedia_scene7`sur l’instance d’auteur du Experience Manager, *et non* l’instance de publication du Experience Manager.
 
 Pour activer Dynamic Media, vous devez démarrer le Experience Manager à l’aide du mode d’exécution `dynamicmedia_scene7` à partir de la ligne de commande en saisissant ce qui suit dans une fenêtre de terminal (l’exemple de port utilisé est 4502) :
 
@@ -77,7 +77,7 @@ Modifiez le mot de passe avant de configurer les Cloud Services Dynamic Media. U
 
 **Pour configurer les Cloud Services Dynamic Media :**
 
-1. Dans Experience Manager, appuyez sur le logo du Experience Manager pour accéder à la console de navigation globale, puis appuyez sur l’icône Outils, puis sur **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuration Dynamic Media]**.
+1. Dans votre instance d’auteur de Experience Manager, appuyez sur le logo du Experience Manager pour accéder à la console de navigation globale, puis appuyez sur l’icône Outils , puis sur **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuration Dynamic Media]**.
 1. Sur la page du navigateur de configuration Dynamic Media, dans le volet de gauche, appuyez sur **[!UICONTROL global]** et appuyez sur **[!UICONTROL Créer]**. N’appuyez ou ne sélectionnez pas l’icône de dossier située à gauche de [!UICONTROL global].
 1. Sur la page [!UICONTROL Créer une configuration Dynamic Media] , saisissez un titre, l’adresse électronique du compte Dynamic Media et un mot de passe. Sélectionnez votre région. Ces informations vous sont fournies par Adobe dans votre e-mail de mise en service. Contactez l’assistance clientèle d’Adobe si vous n’avez pas reçu l’e-mail.
 
@@ -266,7 +266,7 @@ Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris e
 
 1. Entrez `DWG=image/vnd.dwg` dans le champ de texte vide que vous venez d’ajouter.
 
-   L’exemple `DWG=image/vnd.dwg` est fourni à titre d’illustration uniquement. Le type MIME que vous ajoutez ici peut être tout autre format non pris en charge.
+   L’exemple `DWG=image/vnd.dwg` est fourni à des fins de démonstration uniquement. Le type MIME que vous ajoutez ici peut être tout autre format non pris en charge.
 
    ![Exemple d’ajout de type MIME](assets/2019-08-02_16-36-36.png)
 
@@ -444,7 +444,7 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
    `\w+-\w+-C(\d+)`
 
-   N’oubliez pas que ces expressions sont des exemples à titre d’illustration uniquement. Vous pouvez créer votre expression régulière comme bon vous semble, en fonction de vos besoins.
+   N’oubliez pas que ces expressions sont des exemples à des fins de démonstration uniquement. Vous pouvez créer votre expression régulière comme bon vous semble, en fonction de vos besoins.
 
    >[!NOTE]
    >
