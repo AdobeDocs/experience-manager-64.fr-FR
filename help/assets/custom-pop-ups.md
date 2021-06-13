@@ -1,5 +1,5 @@
 ---
-title: Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées
+title: Création de fenêtres contextuelles personnalisées à l’aide d’aperçus rapides
 seo-title: Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées
 description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles.
 seo-description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles.
@@ -12,14 +12,14 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
 feature: Configuration
 role: Administrator,Business Practitioner,Developer
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 99%
+source-wordcount: '1047'
+ht-degree: 97%
 
 ---
 
-# Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées {#using-quickviews-to-create-custom-pop-ups}
+# Créer des fenêtres contextuelles personnalisées à l’aide d’aperçus rapides {#using-quickviews-to-create-custom-pop-ups}
 
 L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. Selon la visionneuse que vous utilisez, cette fonctionnalité permet aux utilisateurs de cliquer sur une zone réactive, une image miniature ou une zone cliquable pour afficher des informations ou du contenu connexe.
 
@@ -31,7 +31,7 @@ Les aperçus rapides sont pris en charge par les visionneuses suivantes dans Dyn
 
 Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus de création d’un aperçu rapide est identique pour les trois visionneuses prises en charge.
 
-**Pour utiliser des aperçus rapides en vue de la création de fenêtres contextuelles,**
+**Pour créer des fenêtres contextuelles personnalisées à l’aide d’aperçus rapides :**
 
 1. Créez un aperçu rapide pour une ressource téléchargée.
 
