@@ -8,10 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 17%
+source-wordcount: '528'
+ht-degree: 16%
 
 ---
 
@@ -91,7 +91,7 @@ Le service de contenu dynamique est disponible pour les paramètres régionaux s
 
 Ces sites sont réservés aux clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
 
-* [Accès aux produits](https://login.marketing.adobe.com)
+* [Accès aux produits](https://login.experiencecloud.adobe.com/exc-content/login.html)
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/).
 * Mises à jour de produit, correctifs et packages pour des fonctionnalités supplémentaires sur [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 * [Assistance clientèle via Admin Console](https://adminconsole.adobe.com/). Pour plus d’informations, voir [Nouvelle expérience du service clientèle Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
