@@ -10,10 +10,10 @@ discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
 feature: Vidéos interactives, Vidéo
 role: Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '6011'
-ht-degree: 91%
+source-wordcount: '5975'
+ht-degree: 90%
 
 ---
 
@@ -33,7 +33,7 @@ Pour voir une vidéo interactive Shoppable en action, cliquez sur [Démonstratio
 
 * Cliquez sur la vignette pour suspendre la vidéo et ouvrez l’aperçu rapide du produit. Par exemple, cliquez sur la miniature du KitchenAid dans la vidéo pour afficher le mixeur avec une option de rotation à 360 degrés ou utilisez le zoom pour afficher les détails du mixeur.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![Image d’une ](assets/chlimage_1-126.png) *vidéo interactive ShoppableCapture d’images vidéo d’une vidéo interactive pouvant faire l’objet d’un achat.*
 
@@ -59,13 +59,13 @@ La description du workflow étape par étape qui suit est conçue pour vous aide
 
 Recherchez le titre **Exemple** dans certaines tâches de démarrage rapide. Il contient un court tutoriel reposant sur cette page web de démonstration de démarrage qui n’est *pas encore* interactive:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Les **exemples** permettent d’illustrer les étapes d’intégration de vidéos interactives à votre site web.
 
 Lorsque vous avez terminé le tutoriel dans la dernière section Exemple, la page web de démonstration finale avec la vidéo interactive complètement intégrée ressemble à ce qui suit :
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 **Workflow** vidéo interactif :
 
@@ -192,7 +192,7 @@ Consultez ci-dessous les exemples d’URL d’aperçu rapide et les variables de
 
 Lorsque l’approche ci-dessus est appliquée à notre site web d’exemple, nous disposons d’une page web avec plusieurs miniatures de produit, chacune disposant d’un bouton **[!UICONTROL VOIR PLUS]** :
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Une fois que vous avez activé l’aperçu rapide de tous les produits disponibles dans la page, vous obtenez la liste de demandes d’aperçu rapide exécutées en arrière-plan ci-dessous :
 
@@ -536,7 +536,7 @@ Toutefois, si vous avez ajouté l’interactivité pour déclencher un aperçu r
 
 En vous servant du site web de démonstration comme exemple, procédez comme suit :
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Notez qu’il s’agit du code intégré d’une vidéo standard :
 
@@ -567,7 +567,7 @@ Notez qu’il s’agit du code intégré d’une vidéo standard :
 
 L’intégration est aussi simple que la suppression du code intégré de la vidéo et son remplacement par le code intégré de la vidéo interactive à partir d’AEM. Vous pouvez afficher le résultat à l’adresse URL suivante : Même si la page contient une vidéo interactive, celle-ci n’est pas encore intégrée aux aperçus rapides existants :
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## Intégration d’une vidéo interactive avec un aperçu rapide existant  {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -770,7 +770,7 @@ Le code source complet se présente comme suit :
 
 Le dernier site web de démonstration avec la vidéo interactive totalement intégrée se présente comme suit :
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées {#using-quickviews-to-create-custom-pop-ups}
 
