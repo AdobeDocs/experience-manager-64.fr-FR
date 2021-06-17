@@ -9,9 +9,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2123'
 ht-degree: 91%
 
 ---
@@ -279,7 +279,7 @@ L’application assure le routage. Le développeur front-end doit commencer par 
 
 La bibliothèque [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) sous-jacente et son module [`ModelRouter`](/help/sites-developing/spa-routing.md) (activé par défaut) assurent la prérécupération et l’accès au modèle associé à un chemin de ressource donné.
 
-Les deux entités se rapportent à la notion de routage, mais [`ModelRouter`](/help/sites-developing/spa-routing.md) est uniquement responsable du chargement de [`PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) avec un modèle de données structuré en synchronisation avec l’état actuel de l’application.
+Les deux entités se rapportent à la notion de routage, mais [`ModelRouter`](/help/sites-developing/spa-routing.md) n’est responsable que du chargement de [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) avec un modèle de données structuré en synchronisation avec l’état actuel de l’application.
 
 Consultez l’article [Routage de modèle de SPA](/help/sites-developing/spa-routing.md) pour plus d’informations.
 
