@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Gestion des ressources
 role: Administrator,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1766'
 ht-degree: 88%
 
 ---
@@ -139,7 +139,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * Contrôles système
 
-   * MBean : `org.apache.sling.healthcheck:name=systemchecks,type=HealthChec`k 
+   * MBean : `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
    * URL : */system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck*
    * Instances : un auteur, tous les serveurs de publication
    * Seuil d’alarme : lorsque l’état n’est pas OK.
@@ -147,7 +147,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * File d’attente de réplication
 
-   * MBean : `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean : `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL : */system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck*
    * Instances : un auteur, tous les serveurs de publication
    * Seuil d’alarme : lorsque l’état n’est pas OK.
@@ -155,7 +155,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * Performances des réponses
 
-   * MBean : `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck `
+   * MBean : `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
    * URL : */system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck*
    * Instances : tous les serveurs
    * Durée de l’alarme : lorsque l’état n’est pas OK.
@@ -163,7 +163,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * Performances des requêtes
 
-   * MBean : `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck `
+   * MBean : `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
    * URL : */system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck*
    * Instances : un auteur, tous les serveurs de publication
    * Seuil d’alarme : lorsque l’état n’est pas OK.
@@ -171,7 +171,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * Lots actifs
 
-   * MBean : org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck 
+   * MBean : org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck
    * URL : */system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck*
    * Instances : tous les serveurs
    * Seuil d’alarme : lorsque l’état n’est pas OK.
@@ -179,7 +179,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * Erreurs de journal
 
-   * MBean : `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck `
+   * MBean : `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
    * URL : */system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck*
    * Instances : tous les serveurs
    * Seuil d’alarme : lorsque l’état n’est pas OK.
