@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 exl-id: 7eee8103-8d6c-4397-acaf-dd662cc09a56
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 68%
@@ -32,7 +32,7 @@ Le service d’informations système fournit un ensemble d’API REST pour récu
  <tbody>
   <tr>
    <td><p>SystemInfo.properties</p></td> 
-   <td><p>https://[serveur]:[port]/rest/services/SystemInfo.properties`</p></td> 
+   <td><p>https://[serveur]:[port]/rest/services/SystemInfo.properties</p></td> 
    <td><p>Cette API est un wrapper pour l’API Java <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a>. Elle récupère la configuration de l’environnement de travail actif. </p></td> 
   </tr> 
   <tr>
