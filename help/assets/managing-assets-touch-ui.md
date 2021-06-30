@@ -6,20 +6,20 @@ mini-toc-levels: 1
 feature: Gestion des ressources,Recherche,Rendus,Collaboration
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 04f14a57fcdc5890fe78118536cc52988a2124c3
 workflow-type: tm+mt
-source-wordcount: '10083'
-ht-degree: 65%
+source-wordcount: '10131'
+ht-degree: 67%
 
 ---
 
-# Gestion de vos ressources numériques {#managing-assets-with-the-touch-optimized-ui}
+# Gestion des ressources numériques {#managing-assets-with-the-touch-optimized-ui}
 
 Découvrez les différentes tâches de gestion et de modification des ressources que vous pouvez réaliser à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’AEM Assets.
 
 Cet article décrit comment gérer et modifier des ressources à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’Adobe Experience Manager (AEM) Assets. Pour une connaissance élémentaire de l’interface utilisateur, voir [Gestion de base de l’interface utilisateur tactile](/help/sites-authoring/basic-handling.md). Pour gérer les fragments de contenu, voir [Gestion des fragments de contenu](content-fragments-managing.md) ressources.
 
-## Création de dossiers {#create-folders}
+## Création de dossiers   {#create-folders}
 
 Lorsque vous organisez une collection de ressources, comme toutes les images `Nature`, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. AEM Assets ne nécessite pas de classer les ressources dans des dossiers pour mieux fonctionner.
 
@@ -39,7 +39,7 @@ Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici 
 * Le nom du fichier de ressource ne doit pas contenir  `* / : [ \ \ ] | # % { } ? &`
 * Le nom du dossier de ressources ne doit pas contenir  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
-## Chargement des ressources {#uploading-assets}
+## Charger des ressources {#uploading-assets}
 
 Vous pouvez transférer différents types de ressource (dont des images, des fichiers PDF, des fichiers RAW, etc.) de votre dossier local ou d’un lecteur réseau vers AEM Assets.
 
@@ -125,7 +125,7 @@ Avant de charger une ressource, vérifiez qu’elle est dans un [format pris en 
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
-   Si vous annulez le transfert avant la fin de l’opération, AEM Assets arrête le transfert du fichier en cours et actualise le contenu. Toutefois, les fichiers déjà téléchargés ne sont pas supprimés.
+   Si vous annulez le transfert avant la fin de l’opération, AEM Assets arrête le transfert du fichier en cours et actualise le contenu. Toutefois, les fichiers déjà chargés ne sont pas supprimés.
 
 ### Transferts en série {#serial-uploads}
 
@@ -216,7 +216,7 @@ Lors du téléchargement de fichiers image, y compris des fichiers AI, EPS et PS
 |  | Méthode de remplissage | Requis.<br> Contrôle la transparence des pixels à partir du coin que vous avez défini.<br>Vous pouvez choisir parmi les méthodes de remplissage suivantes : <ul><li>**Remplissage par diffusion** : rend transparents tous les pixels qui correspondent au coin que vous avez spécifié et qui y sont rattachés.</li><li>**Correspondance des pixels** : rend transparents tous les pixels correspondants, quel que soit leur emplacement dans l’image.</li></ul> |
 |  | Tolérance | Facultatif.<br> Contrôle le degré de variation autorisé dans la couleur des pixels correspondante d’après l’emplacement du coin que vous avez défini.<br> Utilisez une valeur de 0,0 pour établir une correspondance exacte avec les couleurs des pixels ou une valeur de 1,0 pour permettre une plus grande variation. |
 
-#### Définition des options de chargement PostScript et Illustrator {#setting-postscript-and-illustrator-upload-options}
+#### Définition des options de téléchargement PostScript et Illustrator {#setting-postscript-and-illustrator-upload-options}
 
 Lorsque vous transférez des fichiers d’image PostScript (EPS) ou Illustrator (AI), vous pouvez les formater de différentes manières. Vous pouvez pixelliser les fichiers, conserver l’arrière-plan transparent, choisir une résolution et sélectionner un espace colorimétrique. Les options de formatage des fichiers PostScript et Illustrator sont disponibles dans les sections Options PostScript et Options Illustrator de la boîte de dialogue Télécharger les options de la tâche.
 
@@ -231,7 +231,7 @@ Lorsque vous transférez des fichiers d’image PostScript (EPS) ou Illustrator 
 |  | Forcer comme CMJN | Applique l’espace colorimétrique CMJN. |
 |  | Forcer comme Niveaux de gris | Applique l’espace colorimétrique Niveaux de gris. |
 
-#### Définition des options de chargement de Photoshop {#setting-photoshop-upload-options}
+#### Définition des options de transfert Photoshop {#setting-photoshop-upload-options}
 
 Les fichiers PSD (Photoshop Document) sont généralement utilisés pour créer des modèles d’image. Lorsque vous transférez un fichier PSD, vous pouvez créer automatiquement un modèle d’image à partir de celui-ci (sélectionnez l’option Créer un modèle sur l’écran Télécharger).
 
@@ -278,7 +278,7 @@ Faites votre choix parmi les options suivantes :
 |  | Forcer comme CMJN | Applique l’espace colorimétrique CMJN. |
 |  | Forcer comme Niveaux de gris | Applique l’espace colorimétrique Niveaux de gris. |
 
-#### Définition des options de téléchargement eVideo {#setting-evideo-upload-options}
+#### Définition des options de transfert eVideo {#setting-evideo-upload-options}
 
 Vous pouvez transcoder un fichier vidéo en sélectionnant une option parmi divers paramètres vidéo prédéfinis.
 
@@ -290,7 +290,7 @@ Vous pouvez transcoder un fichier vidéo en sélectionnant une option parmi dive
 |  | Mobile | Créez un fichier MP4 à diffuser sur des appareils mobiles iPhone ou Android. Sélectionnez un ou plusieurs proportions avec la taille de résolution et le débit de données cible de votre choix. |
 |  | Tablette | Créez un fichier MP4 à diffuser sur des tablettes iPad ou Android. Sélectionnez un ou plusieurs proportions avec la taille de résolution et le débit de données cible de votre choix. |
 
-#### Définir des paramètres prédéfinis d’ensemble par lot lors du chargement {#setting-batch-set-presets-at-upload}
+#### Définition de paramètres prédéfinis d’ensemble par lot au chargement {#setting-batch-set-presets-at-upload}
 
 Si vous souhaitez créer automatiquement une visionneuse d’images ou une visionneuse à 360° à partir des images téléchargées, cliquez sur la colonne **[!UICONTROL Principal]** du paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. 
 
@@ -474,7 +474,7 @@ Pour déplacer des ressources ou des dossiers :
 
    Si vous ne mettez pas à jour les références, elles continuent à pointer vers le chemin précédent de la ressource. Si vous adaptez les références, elles sont mises à jour avec le nouveau chemin de la ressource.
 
-### Déplacer des ressources à l’aide de l’opération de glisser-déposer {#move-using-drag}
+### Déplacer des ressources à l’aide de l’opération de glisser {#move-using-drag}
 
 Vous pouvez déplacer des ressources (ou des dossiers) vers un dossier frère en les faisant glisser vers l’emplacement cible, au lieu d’utiliser l’option [!UICONTROL Déplacer] dans l’interface utilisateur. Toutefois, cette opération n’est possible que dans le mode Liste.
 
@@ -558,7 +558,7 @@ Pour pouvoir supprimer une ressource, vous devez disposer des autorisations appr
    * **** Supprimez pour confirmer l’action en fonction des éléments suivants :
 
       * Si la ressource ne comporte aucune référence, elle est supprimée.
-      * Si la ressource comporte des références, un message d’erreur vous informe qu’**[!UICONTROL une ou plusieurs ressources sont référencées]**. Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
+      * Si la ressource comporte des références, un message d’erreur vous informe qu’**[!UICONTROL une ou plusieurs ressources sont référencées.]** Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
 
    >[!NOTE]
    >
@@ -576,29 +576,29 @@ Après avoir chargé, traité ou modifié vos ressources sur [!DNL Experience Ma
 
 Pour plus d’informations spécifiques à [!DNL Dynamic Media], voir [publication [!DNL Dynamic Media] ressources](publishing-dynamicmedia-assets.md).
 
-1. Accédez à l’emplacement de la ressource ou du dossier de ressources que vous souhaitez publier ou que vous souhaitez supprimer de l’environnement de publication (annuler la publication).
+1. Accédez à l’emplacement de la ressource ou du dossier de ressources que vous souhaitez publier ou que vous souhaitez supprimer dans l’environnement de publication (annuler la publication).
 
 1. Sélectionnez la ressource ou le dossier dont vous souhaitez annuler la publication, puis cliquez sur **[!UICONTROL Gérer la publication]** ![option gérer la publication](assets/do-not-localize/globe-publication.png) dans la barre d’outils. Pour publier rapidement, vous pouvez également sélectionner l’option **[!UICONTROL Publication rapide]** dans la barre d’outils. Si le dossier que vous souhaitez publier comprend un sous-dossier vide, ce dernier n’est pas publié.
 
-1. Sélectionnez l’option **[!UICONTROL Publier]** ou **[!UICONTROL Annuler la publication]** selon les besoins.
+1. Sélectionnez l’option **[!UICONTROL Modifier]** ou **[!UICONTROL Annuler la publication]** selon vos besoins.
 
    ![Action Annuler la publication](assets/unpublish_action.png)
-   *Figure : les options Publier et Annuler la publication et l’option de planification.*
+   *Figure : options Publier et Annuler la publication et option de planification.*
 
-1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou sélectionnez **[!UICONTROL Plus tard]** pour planifier l’action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]** . Cliquez sur **[!UICONTROL Suivant]**.
+1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou sélectionnez **[!UICONTROL Plus tard]** pour planifier l’action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]**. Cliquez sur **[!UICONTROL Suivant]**.
 
-1. Lors de la publication, si une ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’assistant. Seules les références qui ne sont pas publiées ou modifiées depuis la dernière publication s’affichent. Sélectionnez les références que vous souhaitez publier.
+1. Lors d’une publication, si la ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’Assistant. Seules les références qui ne sont pas publiées ou modifiées depuis la dernière publication s’affichent. Choisissez les références que vous souhaitez publier.
 
 1. Lors de l’annulation de la publication, si une ressource fait référence à d’autres ressources, sélectionnez les références dont vous souhaitez annuler la publication. Cliquez sur **[!UICONTROL Annuler la publication]**. Dans la boîte de dialogue de confirmation, cliquez sur **[!UICONTROL Annuler]** pour arrêter l’action ou sur **[!UICONTROL Annuler la publication]** pour confirmer que les ressources doivent être dépubliées à la date spécifiée.
 
-Découvrez les limites et conseils suivants liés à la publication ou à l’annulation de la publication de ressources ou de dossiers :
+Gardez à l’esprit les limites et conseils suivants liés à la publication ou à l’annulation de la publication de ressources ou de dossiers :
 
-* L’option [!UICONTROL Gérer la publication] est disponible uniquement pour les comptes d’utilisateurs disposant d’autorisations de réplication.
-* Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Évitez d’annuler la publication des références, car celles-ci peuvent être référencées par d’autres ressources publiées.
+* L’option [!UICONTROL Gérer la publication] n’est disponible que pour les comptes d’utilisateurs disposant d’autorisations de réplication.
+* Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Évitez d’annuler la publication des références car elles peuvent être référencées par d’autres ressources publiées.
 * Les dossiers vides ne sont pas publiés.
 * Si vous publiez une ressource qui est en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Vous pouvez attendre la fin du traitement avant de publier ou republier la ressource une fois le traitement terminé.
 
-## Créer un groupe d’utilisateurs fermé {#closed-user-group}
+## Création d’un groupe d’utilisateurs fermé {#closed-user-group}
 
 Un groupe d’utilisateurs fermé (CUG) est utilisé pour limiter l’accès à des dossiers de ressources spécifiques publiés à partir d’AEM. Si vous créez un groupe d’utilisateurs fermé pour un fichier, l’accès au dossier (y compris aux ressources du dossier et à ses sous-dossiers) est limité aux membres ou aux groupes attribués. Pour accéder au dossier, ils doivent se connecter à l’aide de leurs informations d’identification de sécurité.
 
@@ -637,7 +637,7 @@ Les icônes d’action rapide sont disponibles pour une ressource à la fois. Se
 * Appareils tactiles : appuyez longuement. Par exemple, sur un iPad, vous pouvez appuyer longuement sur une ressource pour afficher les actions rapides.
 * Appareils non tactiles : survolez avec le pointeur. Par exemple, sur un poste de travail, la barre d’actions rapides s’affiche si vous survolez la miniature de la ressource avec le pointeur de la souris.
 
-### Accédez à et sélectionnez des ressources {#navigating-and-selecting-assets}
+### Accès aux ressources et sélection de ces ressources {#navigating-and-selecting-assets}
 
 Vous pouvez afficher, parcourir et sélectionner les ressources avec l’un des modes disponibles (carte, colonne, liste) à l’aide de l’icône **[!UICONTROL Sélectionner]**. **** La sélection s’affiche sous la forme d’une action rapide en mode Carte.
 
@@ -748,7 +748,7 @@ Vous pouvez également ajouter des annotations à une collection. Toutefois, si 
 1. Appuyez sur l’icône **[!UICONTROL Annoter]** à partir de l’une des options suivantes :
 
    * [Actions rapides](managing-assets-touch-ui.md#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource ou avoir accédé à la page de la ressource
+   * Dans la barre d’outils, après avoir sélectionné la ressource   ou avoir accédé à la page de la ressource
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
@@ -781,6 +781,14 @@ Vous pouvez également ajouter des annotations à une collection. Toutefois, si 
 
 ### Affichage des annotations enregistrées {#viewing-saved-annotations}
 
+Vous ne pouvez afficher qu’une seule annotation à la fois.
+
+>[!NOTE]
+>
+>Si vous sélectionnez plusieurs annotations, la dernière en date est visible dans l’interface utilisateur.
+>
+>La sélection multiple est prise en charge uniquement pour l’impression de la ressource annotée au format PDF.
+
 1. Pour afficher les annotations enregistrées pour une ressource, accédez à l’emplacement de la ressource et ouvrez la page de la ressource.
 
 1. Appuyez sur l’icône **[!UICONTROL Navigation globale]**, puis sur **[!UICONTROL Chronologie]** dans la liste.
@@ -802,6 +810,10 @@ Vous pouvez également ajouter des annotations à une collection. Toutefois, si 
 Si une ressource comporte des annotations ou si elle a fait l’objet d’un workflow de révision, vous pouvez l’imprimer avec les annotations et l’état de révision sous la forme d’un fichier PDF en vue d’effectuer une révision hors ligne.
 
 Vous pouvez également choisir de n’imprimer que les annotations ou l’état de révision.
+
+>[!NOTE]
+>
+>Vous pouvez sélectionner plusieurs annotations lors de l’impression de la ressource annotée au format PDF.
 
 Il se peut que les annotations trop longues ne s’affichent pas correctement dans le fichier PDF. Pour un rendu optimal, Adobe recommande de limiter la taille des annotations à 50 mots.
 
@@ -876,7 +888,7 @@ Vous trouverez ci-dessous un exemple de configuration des AEM pour imprimer des 
 1. Configurez le fichier PDF d’annotation en définissant le paramètre font-family sur `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Cette configuration est disponible par défaut et fonctionne pour l’ensemble des langues européennes, ainsi que pour le chinois, le japonais et le coréen (CJC).
 1. Si la langue de votre choix est différente de celles mentionnées à l’étape 2, ajoutez une entrée appropriée (séparée par des virgules) à la famille de polices font-family par défaut.
 
-## Création d’un contrôle de version des ressources {#asset-versioning}
+## Création de versions de ressources {#asset-versioning}
 
 Le contrôle de version permet de créer un instantané des ressources numériques à un moment donné. De plus, il aide à restaurer ultérieurement des ressources dans leur état précédent. Par exemple, si vous souhaitez annuler une modification apportée à une ressource, restaurez la version non modifiée de la ressource.
 
@@ -938,7 +950,7 @@ La création de versions permet d’effectuer les opérations suivantes :
 
    ![compare_versions](assets/compare_versions.png)
 
-### Démarrer un workflow sur une ressource {#starting-a-workflow-on-an-asset}
+### Démarrage d’un workflow sur une ressource {#starting-a-workflow-on-an-asset}
 
 Voir [appliquer un workflow à une ressource AEM](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset).
 
