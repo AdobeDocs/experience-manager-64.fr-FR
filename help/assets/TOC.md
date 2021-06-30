@@ -1,15 +1,15 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets, Experience Manager 6.4
 audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 76%
+ht-degree: 75%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 76%
    + [Newsletter sur Dynamic Media par Experience League](dynamic-media-newsletter.md)
    + [Configuration de Dynamic Media](administering-dynamic-media.md)
    + [Utilisation de Dynamic Media](dynamic-media.md)
-   + [Configuration de Dynamic Media – mode Scene7](config-dms7.md)
+   + [Configuration de Dynamic Media - Mode Scene7](config-dms7.md)
    + [Configuration de Dynamic Media – mode hybride](config-dynamic.md)
    + [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md)
    + [Gestion des ressources Dynamic Media](managing-assets.md)
