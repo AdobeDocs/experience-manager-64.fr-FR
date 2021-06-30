@@ -2,13 +2,12 @@
 cloud: Experience Cloud
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-64.fr-FR
-solution: Experience Manager
+solution: Experience Manager, Experience Manager 6.4
 feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites, Experience Manager Forms
 version: 6.4
 type: Documentation
 index: y
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 74%
@@ -23,16 +22,16 @@ Le fichier metadata.md comprend des métadonnées de niveau référentiel qui tr
 | metadata | effets |
 |--- |--- |
 | solution-title | Utilisé dans l’en-tête de l’article en tant que lien.. |
-| solution-hub-url | Ouvre la page hub Formation et support. |
+| solution-hub-url | Ouvre la page hub Formation et assistance. |
 | solution-icon | Affiche l’icône de solution en regard du titre de la solution. Pas encore implémenté.. |
 | getting-started-url | Lien vers la page de prise en main. |
-| tutorials-url | Lien vers les didacticiels vidéo. |
-| mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail droit. La valeur par défaut est 2. |
-| git-repo | Spécifie l&#39;emplacement du repo principal pour une utilisation interne. |
+| tutorials-url | Lien vers les tutoriels vidéo. |
+| mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail droit. La valeur par défaut est 2.  |
+| git-repo | Spécifie l’emplacement du référentiel principal pour une utilisation interne. |
 
 Dans le fichier TOC.md
 
 | metadata | effets |
 |--- |--- |
 | user-guide-title | Utilisé dans l’en-tête de l’article en tant que lien.. |
-| user-guide-url | Ouvre la page hub Formation et support. |
+| user-guide-url | Ouvre la page hub Formation et assistance. |
