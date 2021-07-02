@@ -8,10 +8,10 @@ breadcrumb-title: Guide de déploiement
 user-guide-description: En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4, y compris sur le déploiement cloud d’Adobe Managed Services.
 feature: Déploiement
 role: Architect
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+source-git-commit: 19c3ecc20d78f40a2fa49f804baf232db7483afc
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 93%
+source-wordcount: '373'
+ht-degree: 89%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 93%
    + [Vérifications transversales et contrôles de cohérence](consistency-check.md)
    + [Instructions de performance](performance-guidelines.md)
    + [Optimisation des performances](configuring-performance.md)
-   + [Guide de performances des ressources](assets-performance-sizing.md)
+   + [Guide de performances des ressources](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)
    + [Articles sur la procédure de configuration](ht-deploy.md)
    + [Suppression des sites Geometrixx](removing-the-geometrixx-sites.md)
    + [Configuration de la console web](configuring-web-console.md)
@@ -85,7 +85,7 @@ ht-degree: 93%
    + [Restructuration des référentiels dans AEM 6.4](repository-restructuring.md)
    + [Restructuration des référentiels dans AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Restructuration des référentiels dans AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
-   + [Restructuration des référentiels d’Assets dans AEM 6.4](assets-repository-restructuring-in-aem-6-4.md)
+   + [Restructuration des référentiels d’Assets dans AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
    + [Restructuration des référentiels Dynamic Media dans AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Restructuration des référentiels de Forms dans AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Restructuration des référentiels e-Commerce dans AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
