@@ -10,9 +10,9 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
 exl-id: 34e4edd5-9e67-44ed-8c4c-bcdd3e161a35
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2850'
 ht-degree: 75%
 
 ---
@@ -68,7 +68,7 @@ Environnement de test de créationPour vérifier les modifications. Le nombre d�
 
 En outre, les environnements peuvent varier, d’un système à un serveur exécutant AEM et un serveur d’application, à un ensemble d’instances organisées en grappes multiserveur et multiprocesseur hautement évoluées. Nous vous recommandons d’utiliser un ordinateur distinct pour chaque système de production et de ne pas exécuter d’autres applications sur ces ordinateurs.
 
-## Remarques génériques concernant le dimensionnement du matériel  {#generic-hardware-sizing-considerations}
+## Remarques génériques concernant le dimensionnement du matériel {#generic-hardware-sizing-considerations}
 
 Les sections suivantes fournissent des instructions pour calculer les configurations matérielles requises, en prenant en compte plusieurs points. Pour les systèmes de grande taille, nous suggérons que vous réalisiez un simple jeu de tests d’évaluation des performances en interne sur une configuration de référence.
 
@@ -80,7 +80,7 @@ Les exigences de dimensionnement du matériel pour les cas d’utilisation plus 
 * usage intensif de code personnalisé, de workflows personnalisés ou de bibliothèques de logiciels tiers ;
 * intégration à des systèmes externes non pris en charge.
 
-### Disque dur/espace disque  {#disk-space-hard-drive}
+### Disque dur/espace disque {#disk-space-hard-drive}
 
 L’espace disque requis dépend largement du volume et du type de votre application web. Les calculs doivent prendre en compte les éléments suivants :
 
@@ -101,9 +101,9 @@ Envisagez une configuration de baies redondantes composée de disques indépenda
 
 AEM s’exécute correctement dans les environnements virtualisés, mais certains facteurs tels que l’unité centrale ou les E/S peuvent ne pas correspondre directement au matériel physique. Nous vous recommandons de sélectionner une vitesse d’E/S accrue (en général), car il s’agit d’un facteur déterminant dans la plupart des cas. L’évaluation des performances de votre environnement est nécessaire pour obtenir une idée précise des ressources requises.
 
-### Mise en parallèle d’instances AEM  {#parallelization-of-aem-instances}
+### Mise en parallèle d’instances AEM {#parallelization-of-aem-instances}
 
-#### Absence de sécurité {#fail-safeness}
+#### Échec de la sécurité {#fail-safeness}
 
 Un site web doté de la prévention de défaillance est déployé sur au moins deux systèmes distincts. Si un système tombe en panne, un autre système peut prendre la relève de façon à compenser la défaillance du système.
 
@@ -199,7 +199,7 @@ Les tests comparatifs à Adobe ont été réalisés à l’aide du système d’
 
 Les instances AEM fonctionnaient avec une taille de tas minimale de 256 Mo et une taille maximale de 1 024 Mo.
 
-## Calculs spécifiques à l’environnement de publication  {#publish-environment-specific-calculations}
+## Calculs spécifiques à l’environnement de publication {#publish-environment-specific-calculations}
 
 ### Efficacité de la mise en mémoire cache et trafic {#caching-efficiency-and-traffic}
 
@@ -220,7 +220,7 @@ L’efficacité de la mise en mémoire cache est cruciale pour la vitesse du sit
 
 Le rapport de cache est le pourcentage de pages que le Dispatcher peut renvoyer sans devoir accéder à AEM. 100 % indique que le Dispatcher répond à toutes les requêtes, 0 % signifie qu’AEM calcule chaque page.
 
-### Complexité des modèles et des applications  {#complexity-of-templates-and-applications}
+### Complexité des modèles et des applications {#complexity-of-templates-and-applications}
 
 Si vous utilisez des modèles complexes, AEM aura besoin de plus de temps pour effectuer le rendu d’une page. Les pages extraites du cache ne sont pas affectées, mais la taille de la page est toujours pertinente en ce qui concerne le délai de réponse global. Le rendu d’une page complexe peut aisément prendre dix fois plus longtemps que le rendu d’une seule page.
 
@@ -290,7 +290,7 @@ Si vous possédez un site web plus complexe, vous avez également besoin de serv
 
 En plus du calcul pour une application web par défaut, il est possible que vous deviez tenir compte de facteurs spécifiques pour les cas d’utilisation suivants. Les valeurs calculées doivent être ajoutées au calcul par défaut.
 
-### Considérations spécifiques aux ressources  {#assets-specific-considerations}
+### Considérations spécifiques aux ressources {#assets-specific-considerations}
 
 Le traitement étendu des ressources numériques nécessite des ressources matérielles optimisées. Les facteurs les plus pertinents sont la taille des images et le débit maximal des images traitées.
 
@@ -304,9 +304,9 @@ Allouez au moins 16 Go de segment de mémoire et configurez le workflow Ressour
 
 >[!NOTE]
 >
->Voir aussi le [guide de performance des ressources](/help/sites-deploying/assets-performance-sizing.md).
+>Voir aussi le [guide de performance des ressources](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html).
 
-### Gestionnaire multisite  {#multi-site-manager}
+### Gestionnaire multisite {#multi-site-manager}
 
 La consommation de ressources lors de l’utilisation du gestionnaire multisite AEM dans un environnement de création dépend en grande partie des cas d’utilisation spécifiques. Les facteurs de base sont les suivants :
 
@@ -319,7 +319,7 @@ Le test du cas d’utilisation prévu avec un extrait de contenu représentatif 
 
 Tenez compte également du fait que les auteurs travaillant en parallèle subiront des effets secondaires au niveau des performances si les cas d’utilisation AEM MSM consomment davantage de ressources que prévu.
 
-### Considérations de dimensionnement pour AEM Communities  {#aem-communities-sizing-considerations}
+### Considérations de dimensionnement pour AEM Communities {#aem-communities-sizing-considerations}
 
 Les sites AEM qui incluent des fonctions AEM Communities (des sites de communauté) connaissent un haut niveau d’interaction des visiteurs du site (membres) dans l’environnement de publication.
 
