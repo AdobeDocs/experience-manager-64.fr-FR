@@ -10,10 +10,10 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 feature: Mise à niveau
 exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 58%
+source-wordcount: '1139'
+ht-degree: 53%
 
 ---
 
@@ -23,19 +23,19 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
 
 **Avec la mise à niveau vers la version 6.4**
 
-* [Divers](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc)
+* [Divers](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
 **Avant de procéder à la mise à niveau vers la version 6.5**
 
-* [Modèle de notification par e-mail d’événement de ressource/collection](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#asset-collection-event-e-mail-notification-template)
-* [Conceptions classiques de partage de ressources](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#classic-asset-share-designs)
-* [Modèle de notification par e-mail de téléchargement de ressource](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#download-asset-e-mail-notification-template)
-* [Exemple de licences DRM](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#example-drm-licenses)
+* [Modèle de notification par e-mail d’événement de ressource/collection](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Conceptions classiques de partage de ressources](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Modèle de notification par e-mail de téléchargement de ressource](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Exemple de licences DRM](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
-* [Modèle de notification par e-mail de lien de partage](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#link-share-e-mail-notification-template)
-* [Scripts de workflow InDesign](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
-* [Configurations de transcodage vidéo](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#video-transcoding-configurations)
-* [Divers](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc2)
+* [Modèle de notification par e-mail de lien de partage](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Scripts de workflow InDesign](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Configurations de transcodage vidéo](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Divers](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
 ## Avec la mise à niveau vers la version 6.4 {#with-upgrade}
 
@@ -97,7 +97,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
  </tbody> 
 </table>
 
-### Conceptions classiques de partage de ressources  {#classic-asset-share-designs}
+### Conceptions classiques de partage de ressources {#classic-asset-share-designs}
 
 <table> 
  <tbody> 
@@ -127,7 +127,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
  </tbody> 
 </table>
 
-### Modèle de notification par e-mail de téléchargement de ressource  {#download-asset-e-mail-notification-template}
+### Modèle de notification par e-mail de téléchargement de ressource {#download-asset-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -160,7 +160,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
  </tbody> 
 </table>
 
-### Exemple de licences DRM  {#example-drm-licenses}
+### Exemple de licences DRM {#example-drm-licenses}
 
 | **Emplacement précédent** | `/etc/dam/drm/licenses/` |
 |---|---|
@@ -168,7 +168,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
 | **Conseil de restructuration** | N/A |
 | **Remarques** | N/A |
 
-### Modèle de notification par e-mail de lien de partage  {#link-share-e-mail-notification-template}
+### Modèle de notification par e-mail de lien de partage {#link-share-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -201,7 +201,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
  </tbody> 
 </table>
 
-### Scripts de workflow InDesign  {#indesign-workflow-scripts}
+### Scripts de workflow InDesign {#indesign-workflow-scripts}
 
 <table> 
  <tbody> 
@@ -262,7 +262,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
  </tbody> 
 </table>
 
-### Configurations des paramètres prédéfinis de la visionneuse  {#viewer-preset-configurations}
+### Configurations des paramètres prédéfinis de la visionneuse {#viewer-preset-configurations}
 
 <table> 
  <tbody> 
