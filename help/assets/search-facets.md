@@ -3,9 +3,9 @@ title: Facettes de recherche
 description: Cet article décrit comment créer, modifier et utiliser les facettes de recherche dans AEM.
 contentOwner: AG
 feature: Rechercher
-role: Administrator,Developer
+role: Admin,Developer
 exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2538'
 ht-degree: 94%
@@ -81,7 +81,7 @@ Pour des recherches de texte intégral, ajoutez le prédicat Texte intégral au 
 1. Accédez au panneau Rechercher dans l’interface utilisateur d’Assets. Le prédicat Propriété est ajouté au panneau.
 1. Dans la zone de texte, saisissez une description de la ressource à rechercher. Saisissez par exemple « Adobe ». Lorsque vous effectuez une recherche, les ressources dont la description correspond à « Adobe » sont répertoriées dans les résultats de la recherche.
 
-## Ajout d’un prédicat Options  {#adding-an-options-predicate}
+## Ajout d’un prédicat Options {#adding-an-options-predicate}
 
 Le prédicat Options permet d’ajouter des options de recherche multiples dans le panneau Filtres. Vous pouvez choisir une ou plusieurs options dans le panneau Filtres pour rechercher des ressources. Par exemple, pour rechercher des actifs en fonction du type de fichier, configurez des options telles que Images, Multimédia, Documents et Archives dans le formulaire de recherche. Une fois ces options configurées, la recherche est effectuée sur les ressources de type GIF, JPEG, PNG, etc. lorsque vous sélectionnez l’option Images dans le panneau Filtres.
 
@@ -133,9 +133,9 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
    Champs disponibles dans le prédicat Options
 
 1. Dans le champ **Description**, saisissez une description facultative, puis cliquez sur **[!UICONTROL Terminé]**.
-1. Accédez au panneau Rechercher. Le prédicat Options est ajouté au panneau **Rechercher**. Les options proposées pour **[!UICONTROL Types de fichiers]** sont présentées sous la forme de cases à cocher.
+1. Accédez au panneau Rechercher. Le prédicat Options est ajouté au panneau **Rechercher**. Les options proposées pour **[!UICONTROL Type de fichier]** sont présentées sous la forme de cases à cocher.
 
-## Ajout d’un prédicat de propriété à plusieurs valeurs  {#adding-a-multi-value-property-predicate}
+## Ajout d’un prédicat de propriété à plusieurs valeurs {#adding-a-multi-value-property-predicate}
 
 Le prédicat de propriété à plusieurs valeurs vous permet de rechercher plusieurs valeurs dans des ressources. Supposons que vous disposiez des images de plusieurs produits dans AEM Assets et que les métadonnées de chaque image comprennent un numéro de SKU qui est associé au produit. Vous pouvez utiliser ce prédicat pour rechercher des images de produit sur la base de plusieurs numéros de SKU.
 
@@ -148,7 +148,7 @@ Le prédicat de propriété à plusieurs valeurs vous permet de rechercher plusi
 1. Accédez au panneau Filtres dans l’interface utilisateur d’Assets. Le prédicat **[!UICONTROL Propriété à plusieurs valeurs]** est ajouté au panneau.
 1. Indiquez plusieurs valeurs dans le champ Valeur multiple, en les séparant par des délimiteurs, puis effectuez la recherche. Le prédicat récupère une correspondance de texte exacte pour les valeurs que vous avez spécifiées.
 
-## Ajout d’un prédicat Balises  {#adding-a-tags-predicate}
+## Ajout d’un prédicat Balises {#adding-a-tags-predicate}
 
 Le prédicat Balise vous permet d’effectuer des recherches de ressources basées sur des balises. Par défaut, AEM Assets recherche une ou plusieurs correspondances de balise dans les ressources en fonction des balises que vous avez spécifiées. En d’autres termes, la requête de recherche effectue une opération OR à l’aide des balises indiquées. Cependant, vous pouvez utiliser l’option de correspondance de toutes les balises pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
@@ -194,7 +194,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
 | [!UICONTROL État d’expiration] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur état d’expiration. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Description</li></ul> |
 | [!UICONTROL Masqué] | Prédicat de recherche permettant de définir une propriété de champ masqué pour rechercher des ressources. | <ul><li>Nom de la propriété</li><li>Valeur de la propriété</li><li>Description</li></ul> |
 
-## Restauration de facettes de recherche par défaut  {#restoring-default-search-facets}
+## Restauration de facettes de recherche par défaut {#restoring-default-search-facets}
 
 Par défaut, une icône représentant un cadenas s’affiche devant **[!UICONTROL Rail de recherche d’administrateurs de ressources]** sur la page **[!UICONTROL Formulaires de recherche]**. L’icône représentant un cadenas disparaît lorsque vous ajoutez des facettes de recherche au formulaire, ce qui indique que le formulaire par défaut a été modifié.
 
