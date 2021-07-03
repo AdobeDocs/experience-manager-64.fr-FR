@@ -7,11 +7,11 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
 feature: Résolution des problèmes
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ Assurez-vous que Dynamic Media a été correctement configuré en procédant com
 
 Vous trouverez ci-après quelques astuces et conseils généraux concernant toutes les ressources.
 
-### Propriétés d’état de synchronisation des ressources {#asset-synchronization-status-properties}
+### Propriétés de l’état de synchronisation des ressources {#asset-synchronization-status-properties}
 
 Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE Lite pour vérifier que la synchronisation de la ressource depuis AEM vers Dynamic Media s’est déroulée correctement :
 
@@ -53,7 +53,7 @@ Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE L
 
 Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur AEM `/crx-quickstart/logs/`). La journalisation est suffisante pour déterminer la cause de la plupart des problèmes. Vous pouvez toutefois augmenter la journalisation sur DEBUG sur le module `com.adobe.cq.dam.ips` via la console Sling ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) pour collecter plus d’informations.
 
-### Déplacer, copier ou supprimer {#move-copy-delete}
+### Déplacement, copie ou suppression {#move-copy-delete}
 
 Avant d’effectuer une opération de déplacement, de copie ou de suppression, procédez comme suit :
 
@@ -67,9 +67,9 @@ Lorsque vous remplacez une ressource Dynamic Media existante (même nom et empla
 
 * Si vous conservez les deux, une nouvelle ressource est créée avec un nom unique pour l’URL de la ressource publiée. Par exemple, **[!UICONTROL image.jpg]** est la ressource d’origine et **[!UICONTROL image1.jpg]** est la ressource qui vient d’être chargée.
 
-* La création d’une version n’est pas prise en charge dans le cadre de la diffusion en mode Scene7 de Dynamic Media. La nouvelle version remplace la ressource existante dans la diffusion.
+* La création d’une version n’est pas prise en charge dans le cadre de la diffusion en mode Scene7 de Dynamic Media. La nouvelle version remplace la ressource existante lors de la diffusion.
 
-## Images et visionneuses {#images-and-sets}
+## Images et visionneuses  {#images-and-sets}
 
 Si des problèmes surviennent avec les images et les visionneuses, reportez-vous aux conseils de dépannage ci-dessous.
 
@@ -253,7 +253,7 @@ Si vous rencontrez des problèmes avec les visionneuses, reportez-vous aux conse
       </ol> </li> 
      <li>Sous Cloud Services, accédez à la page Configuration Dynamic Media, puis ouvrez la boîte de dialogue de configuration correspondant à la configuration S7 de Dynamic Media. 
       <ul> 
-       <li>N’effectuez aucune modification, cliquez sur <strong>Enregistrer</strong>. Cela a pour effet de déclencher à nouveau la logique pour créer et synchroniser les exemples de ressources, la feuille CSS du paramètre prédéfini de la visionneuse et l’illustration.<br />  <br /> </li> 
+       <li>N’effectuez aucune modification, cliquez sur <strong>Enregistrer</strong>. Cela a pour effet de déclencher à nouveau la logique pour créer et synchroniser les exemples de ressources, la feuille CSS du paramètre prédéfini de la visionneuse et l’illustration.<br /> <br /> </li> 
       </ul> </li> 
     </ol> </td> 
   </tr> 
