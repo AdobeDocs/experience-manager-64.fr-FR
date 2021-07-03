@@ -3,9 +3,9 @@ title: Formats de fichier pris en charge dans AEM Assets
 description: Liste des formats de fichiers et des types MIME pris en charge par AEM Assets et des fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 feature: Gestion des ressources,Rendus
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 64%
@@ -26,7 +26,7 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 | * | Prise en charge avec des fonctionnalités de composant additionnel |
 | - | Non applicable |
 
-## Formats d’image pixellisée {#supported-raster-image-formats}
+## Formats d’image pixellisés {#supported-raster-image-formats}
 
 Les formats d’image pixellisés pris en charge pour les fonctionnalités de gestion des ressources sont les suivants :
 
@@ -101,7 +101,7 @@ La bibliothèque Adobe PDF Rasterizer génère des miniatures de haute qualit�
 
 Voir [Utilisation de PDF Rasterizer](aem-pdf-rasterizer.md).
 
-## Bibliothèque de transcodage d’imagerie (ITL){#supported-image-transcoding-library}
+## Bibliothèque de transcodage d’imagerie (ITL) {#supported-image-transcoding-library}
 
 La bibliothèque ITL est une solution de traitement des images qui exécute des fonctions essentielles de gestion des images, telles que le codage, le transcodage, le rééchantillonnage et le redimensionnement.
 
