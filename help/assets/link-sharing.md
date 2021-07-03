@@ -3,16 +3,16 @@ title: Partage de ressources à l’aide d’un lien
 description: Partagez des ressources, des dossiers et des collections sous la forme d’une URL.
 contentOwner: AG
 feature: Partage de liens et gestion des ressources
-role: Business Practitioner
+role: User
 exl-id: bf4b0acf-4103-4da1-8666-c6d9fe80c41f
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 38%
 
 ---
 
-# Partager une ressource via un lien {#asset-link-sharing}
+# Partage d’une ressource via un lien {#asset-link-sharing}
 
 [!DNL Adobe Experience Manager Assets] vous permet de partager des ressources, des dossiers et des collections sous forme d’URL avec des collaborateurs dans l’entreprise et des tiers, notamment des partenaires et des fournisseurs. Le partage de ressources au moyen d’un lien est très pratique dans la mesure où il permet à des tiers d’y accéder sans avoir besoin de se connecter au préalable à [!DNL Assets].
 
