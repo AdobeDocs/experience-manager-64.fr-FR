@@ -3,9 +3,9 @@ title: Traiter les ressources pour exécuter les processus d’entreprise, réal
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des workflows.
 contentOwner: AG
 feature: Workflow,Rendus
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 28%
@@ -20,7 +20,7 @@ ht-degree: 28%
 
 Pour le traitement des ressources, [!DNL Experience Manager] utilise des workflows. Les workflows permettent d’automatiser la logique commerciale ou les activités. Les étapes granulaires permettant d’accomplir des tâches spécifiques sont fournies par défaut et les développeurs peuvent créer leurs propres étapes personnalisées. Ces étapes peuvent être combinées dans un ordre logique pour créer des workflows. Par exemple, un workflow peut automatiquement appliquer un filigrane sur les images téléchargées en fonction d’un critère spécifique, comme les métadonnées incorporées dans l’image, le dossier dans lequel elle est téléchargée, la résolution de l’image, etc. Un autre exemple est un workflow configuré pour filigrane des images de cette manière et répondant simultanément à plusieurs besoins de gestion des ressources, tels que l’ajout de métadonnées, la création de rendus, l’ajout de balises intelligentes pour la découverte de ressources, la publication dans une banque de données, la définition d’autorisations d’accès utilisateur, etc.
 
-## Workflows par défaut disponibles dans le Experience Manager {#default-workflows}
+## Workflows par défaut disponibles dans Experience Manager {#default-workflows}
 
 Par défaut, toutes les ressources chargées sont traitées à l’aide du workflow [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] . Le workflow s’exécute pour chaque ressource chargée et exécute les tâches de gestion des ressources de base telles que la génération de rendu, l’écriture différée des métadonnées, l’extraction de page, l’extraction de médias et le transcodage.
 
