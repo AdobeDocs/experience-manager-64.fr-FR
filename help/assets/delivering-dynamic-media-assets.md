@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 exl-id: e5110a90-ddc9-4244-8466-f91adfca8469
 feature: Gestion des ressources
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 91%
@@ -48,7 +48,7 @@ Pour plus d’informations, reportez-vous aux rubriques suivantes :
 * [Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)  ](invalidate-cdn-cached-content.md)
 * [Utilisation de jeux de règles de transformation d’URL](using-rulesets-to-transform-urls.md)
 
-## Diffusion de ressources Dynamic Media via HTTP/2 {#http-delivery-of-dynamic-media-assets}
+## Diffusion de ressources Dynamic Media via HTTP/2  {#http-delivery-of-dynamic-media-assets}
 
 AEM prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré dans toute application acceptant une ressource hébergée. Cette ressource publiée est alors distribuée par le biais du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
 
