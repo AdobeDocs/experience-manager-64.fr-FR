@@ -4,10 +4,10 @@ description: Cet article explique comment créer un schéma de métadonnées pou
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 286a4f26-c0ad-4691-80d8-d17ba1a2dfe0
 discoiquuid: 92eacea5-7511-48ce-8a72-ff4552ebb07d
-feature: 'Métadonnées  '
-role: Business Practitioner,Administrator
+feature: Métadonnées
+role: User,Admin
 exl-id: 1bc72dac-41f7-4593-aaea-d48ebd94b43e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Adobe Experience Manager (AEM) Assets vous permet de créer des schémas de m�
 >
 >Pour utiliser cette fonctionnalité, il faut qu’AEM 6.4 avec Service Pack 2 au minimum soit déployé. Pour plus d’informations sur les Service Packs d’AEM 6.4, consultez ces [notes de mise à jour](/help/release-notes/sp-release-notes.md).
 
-## Ajout d’un formulaire de schéma de métadonnées de dossier {#add-a-folder-metadata-schema-form}
+## Ajout d’un formulaire de schéma de métadonnées de dossier  {#add-a-folder-metadata-schema-form}
 
 Utilisez l’éditeur Formulaires de schéma de métadonnées de dossier pour créer et modifier des schémas de métadonnées pour les dossiers.
 
