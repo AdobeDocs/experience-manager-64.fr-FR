@@ -7,11 +7,11 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration, mode Scene7
-role: Administrator,Business Practitioner,Developer
-source-git-commit: 9e9108bbfcd1c71004e494e73891d3ab0afd4d74
+role: Admin,User,Developer
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '5594'
-ht-degree: 55%
+ht-degree: 56%
 
 ---
 
@@ -61,7 +61,7 @@ Pour toutes les mises à niveau, avec ou sans le module de compatibilité, vous 
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
-## (Facultatif) Installation du Feature Pack 18912 pour la migration en masse de ressources {#installing-feature-pack}
+## (Facultatif) Installation du Feature Pack 18912 pour la migration de ressources en masse {#installing-feature-pack}
 
 Le Feature Pack 18912 vous permet soit d’ingérer des ressources par FTP en masse, soit de migrer des ressources de Dynamic Media en mode hybride ou de Dynamic Media Classic vers Dynamic Media en mode Scene7 sur Experience Manager. Il est disponible à partir de Adobe Professional Services.
 
@@ -195,7 +195,7 @@ La gestion des couleurs de Dynamic Media vous permet de corriger les couleurs d
    * [!UICONTROL Espace colorimétrique CMJN par défaut] : nom du profil de couleurs CMJN par défaut.
    * [!UICONTROL Espace colorimétrique de niveaux de gris par défaut] : nom du profil de niveaux de gris par défaut.
    * [!UICONTROL Espace colorimétrique RVB par défaut] : nom du profil de couleurs RVB par défaut.
-   * [!UICONTROL Intention de rendu de conversion de couleurs] : indique l’intention de rendu. Les valeurs acceptables sont `perceptual`, `relative` `colometric`, `saturation` et `absolute colometric`. Adobe recommande `relative` comme valeur par défaut.
+   * [!UICONTROL Intention de rendu de conversion de couleurs] : indique l’intention de rendu. Les valeurs acceptables sont `perceptual`, `relative` `colometric`, `saturation` et `absolute colometric`. Adobe recommande d’utiliser `relative`colorimétrie   comme valeur par défaut.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
@@ -461,7 +461,7 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
    L’activation du paramètre prédéfini garantit que, lorsque vous chargez des ressources vers Dynamic Media, le paramètre prédéfini d’ensemble par lot est appliqué pour générer la visionneuse.
 
-### (Facultatif) Optimisation des performances du mode Scene7 de Dynamic Media  {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
+### (Facultatif) Optimisation des performances du mode Scene7 de Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Pour que le mode Dynamic Media - Scene7 fonctionne correctement, Adobe recommande les conseils d’optimisation des performances/évolutivité de la synchronisation suivants :
 
@@ -472,9 +472,9 @@ Pour que le mode Dynamic Media - Scene7 fonctionne correctement, Adobe recommand
 
 #### Mise à jour des paramètres de tâche prédéfinis pour le traitement de différents formats de fichier
 
-Vous pouvez régler les paramètres de tâche pour accélérer le traitement des fichiers lors du chargement. Par exemple, si vous chargez des fichiers PSD, mais que vous ne souhaitez pas les traiter comme modèles, vous pouvez définir l’extraction du calque sur false (désactivé). Dans ce cas, le paramètre de tâche affiné se présente comme suit : `process=None&createTemplate=false`.
+Vous pouvez régler les paramètres de tâche pour accélérer le traitement des fichiers lors du chargement. Par exemple, si vous téléchargez des fichiers PSD, mais que vous ne souhaitez pas les traiter en tant que modèles, vous pouvez définir l’extraction du calque sur false (désactivé). Dans ce cas, le paramètre de tâche affiné se présente comme suit : `process=None&createTemplate=false`.
 
-Si vous souhaitez activer la création de modèles, utilisez les paramètres suivants : `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`.
+Si vous souhaitez activer la création de modèles, utilisez les paramètres suivants : `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`.
 
 <!-- REMOVED BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
@@ -498,7 +498,7 @@ Pour mettre à jour l’un de ces paramètres, procédez comme indiqué dans la 
 
 La file d’attente de workflows Granite est utilisée pour le workflow **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques (DAM)]**. Dans Dynamic Media, elle est utilisée pour l’intégration et le traitement des images.
 
-**Pour mettre à jour la file d’attente de workflows transitoires Granite:**
+**Pour mettre à jour la file d’attente de workflows transitoires Granite :**
 
 1. Accédez à [https://&lt;serveur>/system/console/configMgr](http://localhost:4502/system/console/configMgr) et recherchez **[!UICONTROL Queue: Granite Transient Workflow Queue]** (File d’attente : file d’attente de workflows transitoires Granite).
 
