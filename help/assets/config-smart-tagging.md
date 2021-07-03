@@ -3,9 +3,9 @@ title: Configurez le balisage des ressources à l’aide du service de contenu d
 description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans [!DNL Adobe Experience Manager], à l’aide du service de contenu dynamique.
 contentOwner: AG
 feature: Balises intelligentes, Balisage
-role: Administrator
+role: Admin
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 49%
@@ -92,7 +92,7 @@ Une fois qu’un certificat a expiré, il n’est plus approuvé. Vous ne pouvez
 
 1. Accédez à [https://console.adobe.io](https://console.adobe.io) et accédez aux services de contenu intelligent existants sur la page **[!UICONTROL Intégrations]**. Téléchargez le nouveau certificat. Pour plus d’informations, voir les instructions de la section [Création de l’intégration d’Adobe Developer Console](#create-adobe-i-o-integration).
 
-## Création de l’intégration de Developer Console Adobe {#create-adobe-i-o-integration}
+## Création de l’intégration Adobe Developer Console {#create-adobe-i-o-integration}
 
 Pour utiliser les API de service de contenu dynamique, créez une intégration dans Adobe Developer Console afin d’obtenir la [!UICONTROL clé API] (générée dans le champ [!UICONTROL ID CLIENT] de l’intégration d’Adobe Developer Console), [!UICONTROL ID DE COMPTE TECHNIQUE], [!UICONTROL ID ORGANIZATION] et [!UICONTROL SECRET CLIENT] pour [!UICONTROL Paramètres du service de balisage intelligent des ressources] de la configuration cloud dans [!DNL Experience Manager].
 
@@ -149,7 +149,7 @@ Une fois la configuration terminée, utilisez un MBean JMX pour la valider. Pour
 
    Les résultats de la validation s’affichent dans la même boîte de dialogue.
 
-## Activez le balisage intelligent dans le workflow Ressources de mise à jour de gestion des actifs numériques (facultatif) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
+## Activation du balisage intelligent dans le workflow Ressources de mise à jour de gestion des actifs numériques (facultatif) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
 1. Dans [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 
