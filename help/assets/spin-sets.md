@@ -7,15 +7,15 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: Visionneuses à 360°
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1845'
 ht-degree: 67%
 
 ---
 
-# Visionneuses à 360 {#spin-sets}
+# Visionneuses à 360° {#spin-sets}
 
 Une visionneuse à 360° simule l’action consistant à faire pivoter un objet pour l’examiner. Les visionneuses à 360° permettent de voir des éléments depuis tous les angles, révélant les détails visuels clés depuis chaque angle.
 
@@ -35,9 +35,9 @@ Pour démarrer rapidement, procédez comme suit :
 
 1. [Chargez les images pour plusieurs vues.](#uploading-assets-for-spin-sets)
 
-   Vous avez besoin au minimum de 8 à 12 prises de vue d’un élément pour pouvoir utiliser une visionneuse à 360° unidimensionnelle et de 16 à 24 prises de vue pour pouvoir utiliser une visionneuse à 360° bidimensionnelle. Les prises de vue doivent être réalisées à intervalles réguliers pour donner l’impression que l’objet est en rotation et retourné. Par exemple, si une visionneuse unidimensionnelle comprend 12 prises de vue, faites pivoter l’objet de 30 degrés (360/12) pour chaque prise de vue.
+   Au minimum, vous avez besoin de 8 à 12 prises de vue d’un élément pour une visionneuse à 360° unidimensionnelle et de 16 à 24 prises de vue pour une visionneuse à 360° bidimensionnelle. Les prises de vue doivent être effectuées à intervalles réguliers afin de donner l’impression que l’élément pivote et s’incline. Par exemple, si une visionneuse unidimensionnelle inclut 12 prises de vue, faites pivoter l’élément de 30° (360/12) pour chacune d’elles.
 
-1. [Créez une visionneuse à 360°.](#creating-spin-sets)
+1. [Création d’une visionneuse à 360°.](#creating-spin-sets)
 
    Pour créer une visionneuse à 360°, sélectionnez **[!UICONTROL Créer > Visionneuse à 360°]**, attribuez un nom à la visionneuse, sélectionnez les ressources, puis triez les images dans l’ordre dans lequel elles apparaîtront.
 
@@ -61,11 +61,11 @@ Pour démarrer rapidement, procédez comme suit :
 
    Vous pouvez afficher les visionneuses créées par le biais des paramètres prédéfinis d’ensemble par lot et y accéder de trois manières différentes. Les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot ne s’affichent *pas* dans l’interface utilisateur.
 
-1. [Prévisualisez une visionneuse à 360°.](previewing-assets.md)
+1. [Aperçu d’une visionneuse à 360°.](previewing-assets.md)
 
    Sélectionnez la visionneuse à 360° pour pouvoir la prévisualiser. Faites pivoter la visionneuse à 360°. Vous pouvez choisir différentes visionneuses dans le menu **[!UICONTROL Visionneuses]** disponible dans le menu déroulant du rail gauche.
 
-1. [Publiez une visionneuse à 360°.](publishing-dynamicmedia-assets.md)
+1. [Publication d’une visionneuse à 360°.](publishing-dynamicmedia-assets.md)
 
    La publication d’une visionneuse à 360° active l’ordre dans lequel les images apparaissent dans la visionneuse à 360°. Veillez à les mettre dans le bon ordre afin que la rotation soit une vue à 360° parfaite.**** URLet  **** chaîne incorporée. Vous devez, en outre, [publier le paramètre prédéfini de la visionneuse](managing-viewer-presets.md).
 
@@ -79,13 +79,13 @@ Pour démarrer rapidement, procédez comme suit :
 
 Le cas échéant, vous pouvez [modifier les visionneuses à 360°](#editing-spin-sets). En outre, vous pouvez afficher et modifier les [propriétés de la visionneuse à 360°](managing-assets-touch-ui.md#editing-properties).
 
-## Chargement de ressources pour les visionneuses à 360° {#uploading-assets-for-spin-sets}
+## Chargement de ressources pour les visionneuses à 360°  {#uploading-assets-for-spin-sets}
 
-Vous avez besoin au minimum de 8 à 12 prises de vue d’un élément pour pouvoir utiliser une visionneuse à 360° unidimensionnelle et de 16 à 24 prises de vue pour pouvoir utiliser une visionneuse à 360° bidimensionnelle. Les prises de vue doivent être réalisées à intervalles réguliers pour donner l’impression que l’objet est en rotation et retourné. Par exemple, si une visionneuse unidimensionnelle comprend 12 prises de vue, faites pivoter l’objet de 30 degrés (360/12) pour chaque prise de vue.
+Au minimum, vous avez besoin de 8 à 12 prises de vue d’un élément pour une visionneuse à 360° unidimensionnelle et de 16 à 24 prises de vue pour une visionneuse à 360° bidimensionnelle. Les prises de vue doivent être effectuées à intervalles réguliers afin de donner l’impression que l’élément pivote et s’incline. Par exemple, si une visionneuse unidimensionnelle inclut 12 prises de vue, faites pivoter l’élément de 30° (360/12) pour chacune d’elles.
 
 Vous pouvez charger des images pour les visionneuses à 360° comme vous le [feriez pour n’importe quelle autre ressource dans AEM Assets](managing-assets-touch-ui.md).
 
-### Instructions pour prendre des prises de vue dans la visionneuse à 360°{#guidelines-for-shooting-spin-set-images}
+### Instructions pour prendre des prises de vue dans la visionneuse à 360° {#guidelines-for-shooting-spin-set-images}
 
 Vous trouverez ci-dessous des bonnes pratiques relatives aux images de la visionneuse à 360°. En général, plus vous avez d’images dans la visionneuse à 360°, plus l’effet de rotation est réussi. Néanmoins, l’inclusion de nombreuses images dans la visionneuse augmente également la durée de chargement de ces dernières. AEM recommande de suivre les instructions suivantes pour les prises de vue à utiliser dans les visionneuses à 360° :
 
@@ -95,7 +95,7 @@ Vous trouverez ci-dessous des bonnes pratiques relatives aux images de la vision
 * Assurez-vous que les détails du produit sont bien éclairés et que leur mise au point est nette.
 * Utilisez un mannequin ou un modèle pour la prise de vue d’articles de mode. Souvent, le mannequin est complètement masqué (en utilisant un mannequin transparent) ou bien un mannequin stylisé est présenté dans l’image. Vous pouvez créer une visionneuse à 360° « sur modèle » en définissant le nombre d’angles. Marquez chaque angle avec du ruban adhésif sur le sol afin de guider le modèle à regarder dans la direction de chaque prise de vue.
 
-## Création d’une visionneuse à 360°  {#creating-spin-sets}
+## Création d’une visionneuse à 360° {#creating-spin-sets}
 
 L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a une importance. Veillez à les mettre dans le bon ordre afin que la rotation soit une vue à 360° parfaite.
 
@@ -199,10 +199,10 @@ Si vous supprimez l’image qu’AEM utilise pour la miniature en la remplaçant
 
 1. Lorsque vous avez terminé les modifications, cliquez sur **[!UICONTROL Enregistrer]**.
 
-## Aperçu d’une visionneuse à 360°  {#previewing-spin-sets}
+## Aperçu d’une visionneuse à 360° {#previewing-spin-sets}
 
 Voir aussi [Aperçu des ressources](previewing-assets.md).
 
-## Publication d’une visionneuse à 360°  {#publishing-spin-sets}
+## Publication d’une visionneuse à 360° {#publishing-spin-sets}
 
 Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
