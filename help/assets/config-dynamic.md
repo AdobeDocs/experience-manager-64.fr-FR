@@ -9,11 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
 feature: Configuration, mode hybride
-role: Administrator,Business Practitioner,Developer
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: Admin,User,Developer
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '7796'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
@@ -175,7 +175,7 @@ Pour activer Dynamic Media, vous devez activer le mode d’exécution Dynamic Me
    * s7access-&lt;yyy>&lt;mm>&lt;dd>.log - Le journal s7access enregistre chaque demande envoyée à Dynamic Media par `/is/image` et `/is/content`.
    Ces journaux sont utilisés uniquement lorsque Dynamic Media est activé. Ils ne sont pas inclus dans le package **Télécharger complet** généré à partir de la page **[!UICONTROL system/console/status-Bundlelist]** ; lorsque vous appelez le service clientèle si vous rencontrez un problème Dynamic Media, ajoutez ces deux journaux au problème.
 
-### Si vous avez installé AEM sur un autre port ou chemin d’accès au contexte.. {#if-you-installed-aem-to-a-different-port-or-context-path}
+### Si vous avez installé AEM sur un port ou un chemin d’accès au contexte différent... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
 Si vous déployez [AEM sur un serveur d’applications](/help/sites-deploying/application-server-install.md) et que Dynamic Media est activé, vous devez configurer le domaine **self** dans l’externaliseur. Dans le cas contraire, la fonctionnalité de génération de miniature pour les ressources ne fonctionnera pas correctement pour les ressources de média dynamique.
 
@@ -215,7 +215,7 @@ Pour désactiver Dynamic Media après l’avoir activé, supprimez l’indicateu
    Une fois le mode d’exécution Dynamic Media désactivé, l’étape de workflow qui génère le rendu `qdam.pyramid.tiff` est automatiquement ignorée. La prise en charge du rendu dynamique est également désactivée, ainsi que d’autres fonctionnalités Dynamic Media.
    Notez également que lorsque le mode d’exécution Dynamic Media est désactivé après configuration du serveur AEM, tous les actifs qui ont été téléchargés sous ce mode d’exécution son alors invalides.
 
-## (Facultatif) Migration des paramètres prédéfinis et des configurations Dynamic Media de la version 6.3 vers la version 6.4 sans interruption {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## (Facultatif) Migration des paramètres prédéfinis et des configurations Dynamic Media de 6.3 à 6.4 sans interruption {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
 Si vous effectuez une mise à niveau AEM Dynamic Media de la version 6.3 vers la version 6.4, qui inclut désormais la possibilité de réaliser des déploiements sans interruption (également appelés &quot;Opt-in&quot;), vous devez exécuter la commande curl suivante pour migrer tous vos paramètres prédéfinis et configurations de `/etc` vers `/conf` en CRXDE Lite.
 
@@ -229,7 +229,7 @@ Pour toutes les mises à niveau, avec ou sans le module de compatibilité, vous 
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
-## Configuration de la réplication d’image {#configuring-image-replication}
+## Configuration de la réplication d’images {#configuring-image-replication}
 
 La diffusion d’images Dynamic Media fonctionne en publiant des ressources d’image, y compris des miniatures vidéo, à partir de l’auteur AEM et en les répliquant vers le service de réplication à la demande de l’Adobe (l’URL du service de réplication). Les ressources sont ensuite diffusées via le service de diffusion d’images à la demande (URL du service d’images).
 
@@ -375,7 +375,7 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 
 **Solution** : vérifiez le mot de passe. Le mot de passe enregistré dans l’agent de réplication n’est pas le même mot de passe que celui utilisé pour créer le KeyStore.
 
-#### Problème : InvalidAlgorithmParameterException  {#problem-invalidalgorithmparameterexception}
+#### Problème : InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
 Ce problème est causé par une erreur de configuration dans votre instance Auteur AEM. Le `javax.net.ssl.trustStore` obtenu par le processus java sur l’auteur n’est pas correct. L’erreur est visible dans le journal de réplication :
 
@@ -411,7 +411,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 02.08.2016 14:37:44 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1470173864834, userId='admin', revision='null'}. com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised key store for user dynamic-media-replication
 ```
 
-**Solution**:
+**Solution** :
 
 1. Accédez à la page **[!UICONTROL Gestion utilisateur]** :
 
@@ -426,7 +426,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 1. Appuyez sur **[!UICONTROL Tester la connexion]** pour vous assurer que la configuration est valide.
 
-#### Problème : L’agent de publication utilise SSL à la place d’OAuth  {#problem-publish-agent-is-using-ssl-instead-of-oauth}
+#### Problème : L’agent de publication utilise SSL à la place d’OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
 Le problème peut être dû à un correctif ou à un Feature Pack qui ne s’est pas installé correctement ou qui a écrasé les paramètres.
 
@@ -482,7 +482,7 @@ Pour tester votre configuration :
 
 Une autre façon de vérifier que vos ressources ont bien été diffusées est d’ajouter req=exists à votre URL.
 
-## Configuration de Dynamic Media Cloud Services  {#configuring-dynamic-media-cloud-services}
+## Configuration de Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
 
 Dynamic Media Cloud Services fournit la prise en charge des services cloud comme la publication hybride et la diffusion d’images et de vidéos, d’analyses vidéo, d’encodage vidéo, etc.
 
@@ -518,7 +518,7 @@ Vous pouvez configurer les rapports vidéo pour plusieurs installations d’AEM 
 
 1. Vérifiez et déboguez l’installation du module.
 
-### Création d’un module [!DNL Video Analytics] prédéfini après la configuration du premier noeud Auteur {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
+### Création d’un package de paramètres prédéfinis [!DNL Video Analytics] après la configuration du premier noeud Auteur {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
 Une fois cette tâche terminée, vous disposez d’un fichier de module contenant les paramètres prédéfinis [!DNL Video Analytics]. Ces paramètres prédéfinis comportent une suite de rapports, le serveur de suivi, les espaces de nom de suivi et l’ID d’organisation Marketing Cloud, le cas échéant.
 
@@ -532,7 +532,7 @@ Une fois cette tâche terminée, vous disposez d’un fichier de module contenan
 1. Créez le module.
 1. Téléchargez ou partagez le module [!DNL Video Analytics] prédéfini afin qu’il puisse être partagé avec les nouveaux noeuds d’auteur suivants.
 
-### Installation du package de paramètres prédéfinis [!DNL Video Analytics] avant de configurer d’autres noeuds d’auteur {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
+### Installation du package de paramètres prédéfinis [!DNL Video Analytics] avant de configurer des noeuds d’auteur supplémentaires {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
 Assurez-vous d’avoir effectué cette tâche _avant_**[!UICONTROL de configurer Configuration Dynamic Media (version antérieure à 6.3)]**. Sinon, une autre suite de rapports inutilisée est créée. En outre, même si les rapports vidéo continueront à fonctionner correctement, la collecte des données n’est pas optimisée.
 
@@ -595,7 +595,7 @@ JCRTpour vérifier le  [!DNL Video Analytics] paramètre prédéfini au moyen du
 * Si vous n’installez pas d’abord le module [!DNL Video Analytics] prédéfini, il se peut qu’une nouvelle suite de rapports soit créée.
 * La mise à niveau d’AEM 6.3 vers AEM 6.4 ou 6.4.1, puis la configuration de **[!UICONTROL Configuration de Dynamic Media (version antérieure à 6.3)]**, crée toujours une suite de rapports. Ce problème est connu et sa réparation est prévue pour AEM 6.4.2.
 
-### À propos du [!DNL Video Analytics] paramètre prédéfini {#about-the-video-analytics-preset}
+### À propos du paramètre prédéfini [!DNL Video Analytics] {#about-the-video-analytics-preset}
 
 Le paramètre prédéfini [!DNL Video Analytics], parfois appelé simplement paramètre prédéfini d’analyse, est stocké en regard des paramètres prédéfinis de la visionneuse dans Dynamic Media. Il s’agit presque de la même chose que les paramètres prédéfinis de la visionneuse mais avec des informations utilisées pour configurer les rapports AppMeasurement et Video Heartbeat.
 
@@ -709,7 +709,7 @@ Si vous utilisez Dynamic Media pour la vidéo uniquement, suivez les étapes sui
 
 Cette opération permet de configurer l’instance de publication AEM pour qu’elle fournisse l’image d’affiche et les métadonnées de la vidéo, qui sont nécessaires pour la lecture, tandis que la vidéo elle-même est fournie par le service cloud Dynamic Media. Le filtre exclut également de la réplication la vidéo originale et les rendus de miniature statiques, qui ne sont pas nécessaires sur l’instance de publication.
 
-### Configuration de filtres de ressources pour l’imagerie dans les déploiements hors production {#setting-up-asset-filters-for-imaging-in-non-production-deployments}
+### Configuration des filtres de ressources pour l’imagerie dans les déploiements hors production {#setting-up-asset-filters-for-imaging-in-non-production-deployments}
 
 Si vous utilisez Dynamic Media pour les images dans des déploiements hors production, suivez les étapes suivantes pour configurer les filtres de ressource pour la réplication :
 
@@ -948,7 +948,7 @@ Tableau des paramètres du manifeste et leurs valeurs par défaut :
  </tbody> 
 </table>
 
-## Configuration de la gestion des couleurs Dynamic Media  {#configuring-dynamic-media-color-management}
+## Configuration de la gestion des couleurs Dynamic Media {#configuring-dynamic-media-color-management}
 
 La gestion des couleurs Dynamic Media vous permet de corriger les couleurs des ressources pour leur prévisualisation.
 
