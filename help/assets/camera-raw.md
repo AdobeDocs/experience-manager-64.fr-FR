@@ -3,16 +3,16 @@ title: Prise en charge de Camera Raw
 description: Découvrez comment activer la prise en charge Camera Raw dans Adobe Experience Manager Assets.
 contentOwner: AG
 feature: Outils de développement
-role: Administrator
+role: Admin
 exl-id: 637c57ae-55a6-4032-9821-b55839b3e567
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 45%
 
 ---
 
-# Utilisez Camera Raw pour traiter les images {#camera-raw-support}
+# Utilisation de Camera Raw pour traiter les images {#camera-raw-support}
 
 Vous pouvez activer la prise en charge Camera Raw pour traiter les formats de fichiers bruts, tels que CR2, NEF et RAF, et effectuer le rendu des images au format JPEG. La fonctionnalité est prise en charge dans Adobe Experience Manager Assets à l’aide du [package Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponible dans Distribution logicielle.
 
