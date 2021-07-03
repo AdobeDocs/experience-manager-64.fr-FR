@@ -2,10 +2,10 @@
 title: Bonnes pratiques d’intégration d’AEM et de Creative Cloud
 description: Bonnes pratiques pour intégrer un déploiement AEM à Adobe Creative Cloud afin de rationaliser les workflows de transfert de ressources et d’obtenir un maximum d’efficacité
 contentOwner: AG
-feature: Collaboration,Adobe Asset Link,application de bureau
-role: Business Practitioner,Administrator
+feature: Collaboration,Adobe Asset Link,Application de bureau
+role: User,Admin
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3576'
 ht-degree: 85%
@@ -103,7 +103,7 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 * **Travail en cours ou travail créatif en cours (WIP) :** phase dans le cycle de vie des ressources où une ressource est soumise à de multiples modifications et n’est généralement pas encore prête à être partagée avec les équipes élargies.
 * **Ressources prêtes après création :** ressources prêtes à être partagées avec l’équipe élargie ou sélectionnées/approuvées par l’équipe créative pour le partage avec les équipes marketing ou métier.
 * **Approbation des ressources :** processus d’approbation traitant des ressources déjà transférées dans la gestion des ressources numériques (DAM), qui inclut généralement les approbations de marque, les validations juridiques, etc.
-* **Ressource finale :** ressource qui a passé l’ensemble des approbations/balisages de métadonnées et qui est prête à être utilisée par l’équipe élargie. Une telle ressource est stockée dans la gestion des ressources numériques (DAM) et est accessible à tous les utilisateurs (ou à tous les utilisateurs intéressés). Il peut être utilisé dans les canaux marketing ou par des équipes créatives pour créer des conceptions.
+* **Ressource finale :** ressource qui a passé l’ensemble des   approbations/balisages de métadonnées et qui est prête à être utilisée par l’équipe élargie. Une telle ressource est stockée dans la gestion des ressources numériques (DAM) et est accessible à tous les utilisateurs (ou à tous les utilisateurs intéressés). Il peut être utilisé dans les canaux marketing ou par des équipes créatives pour créer des conceptions.
 * **Mise à jour/modification mineure des ressources :** modification rapide et petite d’une ressource numérique. Cette opération est souvent effectuée en réponse à une demande de retouche ou de modification mineure, de révision ou d’approbation de fichier (par exemple, repositionnement, modification de la taille du texte, ajustement de la saturation/luminosité, couleur, etc.).
 * **Mise à jour/modification majeure des ressources :** modification d’une ressource numérique qui nécessite un travail considérable et qui doit parfois être effectuée sur une plus longue période de temps. Celle-ci implique généralement plusieurs modifications. La ressource doit être enregistrée plusieurs fois lors de la mise à jour. En règle générale, les mises à jour majeures de la ressource entraînent le passage à une étape en cours.
 * **DAM :** gestion des ressources numériques (en anglais, Digital Asset Management). Dans ce document, celle-ci est synonyme des ressources d’AEM Experience Manager, sauf mention contraire spécifique.
@@ -142,11 +142,11 @@ Les ressources d’Adobe Stock sous licence et enregistrées dans AEM sont acce
 TBD: A condensed version of the below content is better placed in the Adobe DAM article.
 -->
 
-## À propos du stockage de ressources dans un système de gestion des ressources numériques (DAM) {#about-storing-assets-in-a-dam}
+## À propos du stockage de ressources dans un système de gestion des ressources numériques (DAM)  {#about-storing-assets-in-a-dam}
 
 Pour établir un workflow efficace entre les équipes créatives et marketing/métier, et sélectionner les meilleures fonctionnalités de prise en charge, il est important de comprendre quand et pourquoi les ressources sont stockées dans la gestion des ressources numériques (DAM).
 
-### Pourquoi les ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ? {#why-assets-are-stored-in-dam}
+### Pourquoi les ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ?  {#why-assets-are-stored-in-dam}
 
 Le stockage des ressources dans la gestion des ressources numériques (DAM) permet d’en faciliter l’accès et de les retrouver plus aisément. Cela garantit que les ressources peuvent être exploitées par de nombreux utilisateurs au sein de votre organisation ou écosystème, qui comprend les partenaires, les clients, etc.
 
@@ -183,7 +183,7 @@ Voici quelques exemples de mises à jour qui ne sont généralement pas pertinen
 * Les premières versions des ressources transférées avant qu’elles ne soient prêtes pour révision par le marketing
 * Les modifications fréquentes de la ressource par l’équipe créative pendant la phase de travail en cours et avant que l’équipe créative ne décide que la ressource est prête
 
-### Accès des utilisateurs à la gestion des ressources numériques (DAM) {#user-access-to-dam}
+### Accès des utilisateurs à la gestion des ressources numériques (DAM)  {#user-access-to-dam}
 
 AEM Assets prend en charge deux types d’utilisateurs selon leur accès au déploiement d’AEM Assets. En règle générale, les utilisateurs à l’intérieur du réseau d’entreprise (pare-feu) ont un accès direct à la gestion des actifs numériques. D’autres utilisateurs à l’extérieur du réseau d’entreprise n’auront pas un accès direct. Le type d’utilisateur détermine les intégrations qui peuvent être utilisées du point de vue technique.
 
@@ -193,7 +193,7 @@ En règle générale, les équipes créatives internes, de même que les agences
 
 Dans ce cas, l’appli de bureau AEM permet d’accéder facilement aux ressources finales/approuvées et d’enregistrer les ressources prêtes pour les créatifs dans la gestion des ressources numériques.
 
-#### Utilisateurs créatifs sans accès à la gestion des ressources numériques (DAM) {#creative-users-without-access-to-dam}
+#### Utilisateurs créatifs sans accès à la gestion des ressources numériques (DAM)  {#creative-users-without-access-to-dam}
 
 Les agences externes et les indépendants sans accès direct à l’instance de la gestion des ressources numériques peuvent avoir besoin de l’accès aux ressources approuvées ou souhaiter ajouter leurs nouvelles créations dans la gestion des ressources numériques (DAM).
 
@@ -209,7 +209,7 @@ Utilisez les stratégies suivantes pour fournir un accès aux ressources finales
 
 Les cas d’utilisation suivants décrivent les différents types de workflow entre la gestion des actifs numériques et l’ordinateur de bureau du concepteur.
 
-#### Création de conceptions à l’aide de ressources de la gestion des ressources numériques {#creating-new-designs-using-assets-from-dam}
+#### Création de conceptions à l’aide de ressources de DAM {#creating-new-designs-using-assets-from-dam}
 
 Le schéma suivant illustre le cycle de vie des ressources numériques. Il montre comment les utilisateurs créatifs et les utilisateurs de la gestion des actifs numériques (marketeurs et utilisateurs métier) mettent à profit les ressources existantes et les utilisent pour créer d’autres ressources, puis les envoient pour approbation.
 
@@ -230,7 +230,7 @@ Voici quelques recommandations générales concernant la façon de gérer les re
 * Utilisez une zone/un système de stockage dédié, tel que le dossier synchronisé Adobe Creative Cloud Assets pour les fichiers de travail en cours : les mises à jour fréquentes qui ne sont pas pertinentes pour les utilisateurs de la gestion des actifs numériques sont mieux gérées par un système dédié, et non AEM Assets. Les ressources de travail en cours peuvent être synchronisées sur le disque local à l’aide de l’application de bureau Adobe Creative Cloud, enregistrées sur le stockage local, etc.
 * Utilisez des dossiers/partages distincts pour les ressources finales et les ressources qui sont transférées dans la gestion des actifs numériques : par souci de clarté, les ressources finales doivent avoir leur propre dossier mappé/partagé (ex. « Final » ci-dessus) et les ressources à retransférer vers la gestion des actifs numériques devraient avoir leur propre dossier (« Pour les créatifs »).
 
-#### Modifier les ressources existantes gérées dans la gestion des ressources numériques {#changing-existing-assets-managed-in-dam}
+#### Modification des ressources existantes gérées dans la gestion des ressources numériques {#changing-existing-assets-managed-in-dam}
 
 Dans certains cas, les ressources de la gestion des actifs numériques peuvent nécessiter des modifications. Voici quelques exemples :
 
@@ -270,7 +270,7 @@ Voici quelques recommandations générales concernant la façon de gérer des re
 
 Dans certains cas, il est possible que vous deviez charger simultanément un plus grand nombre de fichiers dans la gestion des ressources numériques (DAM), par exemple :
 
-* Chargement des résultats de séances photo ou projets de plus grande envergure
+* Chargement des résultats de  séances photo ou projets de plus grande envergure
 * Chargement de ressources fournies par les agences de création
 * Transfert de ressources sélectionnées à partir d’un plus grand ensemble si la sélection est effectuée en dehors de la gestion des actifs numériques
 
@@ -285,7 +285,7 @@ Vous pouvez exploiter les fonctionnalités suivantes si vous voulez télécharge
 >
 >En fonction des besoins de votre entreprise, vous pouvez également utiliser un outil de chargement personnalisé.
 
-#### Gestion directe des ressources numériques à partir du bureau {#managing-digital-assets-directly-from-desktop}
+#### Gestion directe des ressources numériques depuis l’ordinateur de bureau {#managing-digital-assets-directly-from-desktop}
 
 Si vous utilisez des partages de fichiers réseau pour gérer les ressources numériques, le fait d’utiliser uniquement un partage réseau mappé par l’application de bureau AEM peut être considéré comme une alternative pratique. Si vous choisissez de ne plus utiliser les partages de fichiers réseau, n’oubliez pas que l’interface utilisateur web d’AEM propose un large éventail de fonctionnalités de gestion des actifs numériques qui vont bien au-delà des possibilités qu’offre un partage réseau (recherche, collections, métadonnées, collaboration, aperçus, etc.). L’application de bureau AEM fournit un lien pratique pour connecter le référentiel de gestion des actifs numériques côté serveur aux tâches réalisées sur l’ordinateur de bureau.
 
