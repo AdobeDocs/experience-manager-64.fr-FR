@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
 feature: Vidéos interactives, Vidéo
-role: Business Practitioner
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '5975'
 ht-degree: 90%
@@ -25,7 +25,7 @@ Une fois la vidéo terminée, un récapitulatif visuel de toutes les offres s’
 
 Voir aussi [Images interactives](interactive-images.md).
 
-## Vidéos interactives à l’œuvre {#interactive-video-in-action}
+## Vidéos interactives à l’œuvre  {#interactive-video-in-action}
 
 Pour voir une vidéo interactive Shoppable en action, cliquez sur [Démonstrations en direct](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), faites défiler la page jusqu’à l’en-tête **[!UICONTROL Médias Shoppable]**, puis cliquez sur la vidéo Shoppable.
 
@@ -46,7 +46,7 @@ Pour voir une vidéo interactive Shoppable en action, cliquez sur [Démonstratio
 Visionnez une présentation vidéo de 7 minutes 30 sur la [création des vidéos interactives](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).\
 (Même si la présentation vidéo est personnalisée grâce à Assets on Demand, les principes et les étapes restent compatibles avec les vidéos interactives dans AEM Assets.)
 
-## Webinaire « Succès des clients Adobe » {#adobe-customer-success-webinar}
+## Webinaire « Succès des clients Adobe »  {#adobe-customer-success-webinar}
 
 Le webinaire « Utilisation de la vidéo interactive, du partage de liens et du partage sur YouTube dans AEM Assets » explique comment utiliser la vidéo interactive et d’autres fonctionnalités pour lier des événements dépendant de la conversion dans votre contenu marketing vidéo.
 
@@ -97,7 +97,7 @@ Voir [Création d’un paramètre prédéfini de visionneuse](managing-viewer-pr
 
    Si vous utilisez AEM Sites, ou AEM eCommerce, ou les deux, vous pouvez ajouter la vidéo interactive directement à une page web dans AEM en faisant glisser le composant Interactive Media sur la page. Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages.](adding-dynamic-media-assets-to-pages.md)
 
-   Utilisez le code intégré ou l’URL pour intégrer votre vidéo interactive aux expériences de votre site web. Reportez-vous à la section [Intégration d’une vidéo interactive à votre site web](#integrating-an-interactive-video-with-your-website).
+   Utilisez le code intégré ou l’URL pour intégrer votre vidéo interactive aux expériences de votre site web. Reportez-vous à [Intégration d’une vidéo interactive à votre site web](#integrating-an-interactive-video-with-your-website).
 
    Si vous utilisez un gestionnaire de contenu web (WCM) tiers, vous devez intégrer la nouvelle vidéo interactive à l’aperçu rapide existant utilisé sur votre site web. Voir [Intégration d’une vidéo interactive dans un aperçu rapide existant](#integrating-an-interactive-video-with-an-existing-quickview).
 
@@ -443,10 +443,10 @@ Une fois votre vidéo interactive enregistrée, elle s’ouvre immédiatement da
       </tr> 
       <tr> 
       <td>Pour modifier le libellé de texte d’une image miniature</td> 
-      <td><p>Par défaut, le libellé de texte utilise le champ de métadonnées <code>Title</code> de l’image miniature. En l’absence de <code>Title</code>, le nom de fichier de l’image miniature est utilisé à la place, mais sans l’extension.</p> <p>Pour modifier le libellé de texte d’une vignette, sous l’onglet <strong>Actions</strong>, directement sous la ressource image qui s’affiche, entrez le texte de votre choix. Reportez-vous à l’illustration ci-dessous.</p> <p>Notez que le nouveau libellé n’est utilisé que par la visionneuse vidéo proprement dite et le texte des vignettes affiché dans le segment de la chronologie. La modification du libellé n’affecte pas le champ Titre des métadonnées de la vignette ni son nom de fichier.</p> </td> 
+      <td><p>Par défaut, le libellé de texte utilise le champ de métadonnées <code>Title</code> de l’image miniature. En l’absence de <code>Title</code>, le nom de fichier de l’image miniature est utilisé à la place, mais sans l’extension.</p> <p>Pour modifier le libellé de texte d’une vignette, sous l’onglet <strong>Actions</strong>, directement sous la ressource image qui s’affiche, entrez le texte de votre choix. Reportez-vous à l’illustration ci-dessous.</p> <p>Notez que le nouveau libellé n’est utilisé que par la visionneuse vidéo proprement dite et le texte des vignettes affiché dans le segment de la chronologie. La modification du libellé n’affecte pas le champ Titre des métadonnées de la miniature ni son nom de fichier.</p> </td> 
       </tr> 
       <tr> 
-      <td>Pour annuler une modification que vous avez effectuée</td> 
+      <td>Pour rétablir une modification vous avez créé</td> 
       <td>Près de l’angle droit supérieur de la page, appuyez sur <strong>Annuler</strong> ou <strong>Rétablir</strong>.</td> 
       </tr> 
     </tbody> 
@@ -501,7 +501,7 @@ Une fois votre vidéo interactive enregistrée, elle s’ouvre immédiatement da
    >[!NOTE]
    Pour publier une vidéo commerciale avec des aperçus rapides, veillez également à publier séparément chaque ressource image liée à la vidéo dans votre espace commercial.
 
-   Une fois les segments de chronologie ajoutés et la vidéo interactive publiée, vous êtes prêt à l’ajouter à la page d’entrée de votre site Web existant. Reportez-vous à la section [Intégration d’une vidéo interactive à votre site web](#integrating-an-interactive-video-with-your-website).
+   Une fois les segments de chronologie ajoutés et la vidéo interactive publiée, vous êtes prêt à l’ajouter à la page d’entrée de votre site web existant. Reportez-vous à la section [Intégration d’une vidéo interactive à votre site web](#integrating-an-interactive-video-with-your-website).
 
 ## Publication de ressources vidéo interactives {#publishing-interactive-video-assets}
 
@@ -569,7 +569,7 @@ L’intégration est aussi simple que la suppression du code intégré de la vid
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## Intégration d’une vidéo interactive avec un aperçu rapide existant  {#integrating-an-interactive-video-with-an-existing-quickview}
+## Intégration d’une vidéo interactive avec un aperçu rapide existant {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 Cette tâche ne s’applique que si vous êtes un client AEM Assets autonome.
