@@ -2,13 +2,13 @@
 title: Métadonnées XMP
 description: Découvrez le standard de métadonnées XMP (Extensible Metadata Platform) utilisé par AEM Assets pour la gestion des métadonnées. XMP offre un format standard pour la création, le traitement et l’échange de métadonnées pour une multitude d’applications.
 contentOwner: AG
-feature: 'Métadonnées  '
-role: Business Practitioner,Administrator
+feature: Métadonnées
+role: User,Admin
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '816'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -20,7 +20,7 @@ En plus d’un codage de métadonnées universel qui peut être incorporé dans 
 
 La [spécification XMP](https://www.adobe.com/devnet/xmp.html) est disponible auprès d’Adobe.
 
-## Qu&#39;est-ce XMP ? {#what-is-xmp}
+## Présentation de la norme XMP {#what-is-xmp}
 
 AEM Assets prend en charge de manière native le XMP : la plateforme de métadonnées extensible pilotée par Adobe. XMP est une norme de traitement et de stockage de métadonnées normalisées et propriétaires dans les ressources numériques. XMP est conçu pour être la norme commune qui permet à plusieurs applications de fonctionner efficacement avec les métadonnées.
 
@@ -43,7 +43,7 @@ XMP définit un modèle de [métadonnées](https://fr.wikipedia.org/wiki/Métado
 
 XMP est le plus souvent sérialisé et stocké à l’aide d’un sous-ensemble du [W3C](https://fr.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://fr.wikipedia.org/wiki/Resource_Description_Framework) (RDF), exprimé à son tour en format [XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language).
 
-## Avantages du mode XMP {#advantages-of-xmp}
+## Avantages du mode XMP  {#advantages-of-xmp}
 
 La norme XMP présente les avantages suivants par rapport aux autres normes de codage et schémas :
 
@@ -60,7 +60,7 @@ La norme XMP a été conçue pour être extensible, ce qui vous permet d’ajout
 >
 >En règle générale, XMP ne permet pas l’incorporation des types de données binaires. Pour gérer des données binaires dans XMP, comme des images miniatures, celles-ci doivent être codées dans un format XML tel que Base64.
 
-## Notions fondamentales relatives à XMP  {#xmp-core-concepts}
+## Notions fondamentales relatives à XMP {#xmp-core-concepts}
 
 Les sections ci-après décrivent les notions fondamentales relatives à XMP, notamment les espaces de noms et les schémas, les propriétés et les valeurs, ainsi que les variantes linguistiques.
 
@@ -71,7 +71,7 @@ le type de données et des informations descriptives. Un schéma XMP est identif
 
 Par exemple, la propriété **Créateur** de deux schémas conçus indépendamment peut signifier la personne ayant créé la ressource ou l’application l’ayant créée (Adobe Photoshop, par exemple).
 
-### Propriétés et valeurs  {#properties-and-values}
+### Propriétés et valeurs {#properties-and-values}
 
 XMP peut inclure des propriétés de l’un ou de plusieurs des schémas.
 
