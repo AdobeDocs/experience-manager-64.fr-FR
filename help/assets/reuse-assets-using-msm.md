@@ -4,9 +4,9 @@ description: Utilisez des ressources sur plusieurs pages/dossiers qui sont déri
 contentOwner: AG
 mini-toc-levels: 1
 feature: Gestion des ressources, Multi Site Manager
-role: Business Practitioner,Administrator,Architect
+role: User,Admin,Architect
 exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 80%
@@ -102,7 +102,7 @@ Vous pouvez afficher les informations et les états associés à MSM d’une Liv
 >
 >Pour vérifier l’état de quelques Live Copies distinctes, utilisez la première méthode pour vérifier la page **[!UICONTROL Propriétés]**. Pour vérifier les états de plusieurs Live Copies, utilisez la deuxième méthode pour vérifier la page **[!UICONTROL État de la relation]**.
 
-### Informations et état d’une Live Copy     {#information-status-of-one-lc}
+### Informations et état d’une Live Copy    {#information-status-of-one-lc}
 
 Pour vérifier les informations et les états d’une ressource ou d’un dossier de Live Copy, procédez comme suit :
 
@@ -144,7 +144,7 @@ Pour une Live Copy spécifique, cliquez sur **[!UICONTROL Modifier la Live Copy]
 
 ![Pour une Live Copy spécifique, l’option permettant de suspendre la relation ou de modifier la configuration du déploiement est accessible à partir du rail Références lorsque la ressource source est sélectionnée.](assets/lc_edit_referencerail.png)
 
-### Actions rapides pour une Live Copy depuis le rail Références     {#quick-actions-from-references-rail-for-live-copy}
+### Actions rapides pour une Live Copy depuis le rail Références    {#quick-actions-from-references-rail-for-live-copy}
 
 Pour une ressource ou un dossier de Live Copy, vous pouvez afficher les informations et effectuer les actions suivantes directement depuis le rail Références :
 
@@ -156,7 +156,7 @@ Sélectionnez une ressource ou un dossier de Live Copy, ouvrez le rail gauche, p
 
 ![Actions disponibles dans le rail Références pour la Live Copy sélectionnée](assets/lc_referencerail.png)
 
-## Propagation des modifications de la source vers les Live Copies     {#propagate-modifications-from-source-to-live-copies}
+## Propagation des modifications de la source vers les Live Copies    {#propagate-modifications-from-source-to-live-copies}
 
 Une fois une source modifiée, les modifications peuvent être propagées aux Live Copies à l’aide d’une action de synchronisation ou de déploiement. Pour comprendre la différence entre les deux actions, voir le [glossaire](#glossary-msm-for-assets).
 
@@ -188,7 +188,7 @@ Une action de synchronisation récupère les modifications d’une source unique
 | Barre d’outils de la page [!UICONTROL Propriétés] | Lancez une synchronisation lorsque les propriétés de la Live Copy sont déjà ouvertes. | Voir [Synchronisation d’une Live Copy](#synchronize-live-copy) |
 | [!UICONTROL Console Aperçu de la Live Copy] | Synchronisez rapidement plusieurs ressources (pas nécessairement toutes) lorsque le dossier source est sélectionné ou que la console [!UICONTROL Aperçu de la Live Copy] est déjà ouverte. L’action de synchronisation est lancée pour une ressource à la fois. Il s’agit toutefois d’une méthode plus rapide pour synchroniser plusieurs ressources simultanément. | Voir [Actions sur plusieurs ressources dans un dossier de Live Copy](#take-actions-on-many-assets-in-lcfolder) |
 
-### Synchronisation d’une Live Copy     {#synchronize-live-copy}
+### Synchronisation d’une Live Copy    {#synchronize-live-copy}
 
 Pour démarrer une action de synchronisation, ouvrez la page **[!UICONTROL Propriétés]** d’une Live Copy, cliquez sur **[!UICONTROL Live Copy]**, puis sur l’action souhaitée dans la barre d’outils.
 
@@ -218,7 +218,7 @@ Vous pouvez annuler toutes les modifications locales et rétablir l’état de l
 
 ![L’action de réinitialisation remplace les modifications locales et apporte une partie de la Live Copy avec sa source](assets/lc_reset.png)
 
-## Suppression d’une relation dynamique     {#remove-live-relationship}
+## Suppression d’une relation dynamique    {#remove-live-relationship}
 
 Vous pouvez supprimer complètement la relation entre une source et une Live Copy à l’aide d’une action de désolidarisation. La Live Copy devient une ressource ou un dossier autonome après sa désolidarisation. Elle s’affiche en tant que nouvelle ressource dans l’interface AEM, immédiatement après la désolidarisation. Pour désolidariser une Live Copy de sa source, procédez comme suit :
 
