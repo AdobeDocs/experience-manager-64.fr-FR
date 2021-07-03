@@ -3,12 +3,12 @@ title: Configuration des statistiques sur les ressources
 description: Découvrez comment configurer les statistiques sur les ressources dans AEM Assets.
 contentOwner: AG
 feature: Statistiques sur les ressources, rapports sur les ressources
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 70%
+ht-degree: 72%
 
 ---
 
