@@ -3,12 +3,12 @@ title: Recherche de ressources vidéo
 description: Utilisez des mots-clés, des propriétés de fichiers telles qu’un type MIME, la taille ou l’horodatage de modification récente pour retrouver rapidement vos fichiers dans AEM Assets.
 contentOwner: AG
 feature: Vidéo,Recherche
-role: Business Practitioner
+role: User
 exl-id: d5f0beb2-e59f-47cd-8e83-698d8a1dcec3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '580'
-ht-degree: 68%
+ht-degree: 66%
 
 ---
 
@@ -32,7 +32,7 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 | Hauteur de la vidéo | Spécifié en tant que valeur minimale et maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 | Largeur de la vidéo | Spécifié en tant que valeur minimale et maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 | Format vidéo | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media.Value sont stockés dans les métadonnées de la vidéo source et dans les rendus. |
-| Codec vidéo | x264.La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
+| Codec vidéo | x264.Value est stocké uniquement dans les métadonnées des rendus vidéo. |
 | Débit vidéo | Spécifié en tant que valeur minimale et maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 | Codec audio | Libvorbis, Lame Mp3, AAC Encoding.Value est stocké uniquement dans les métadonnées des rendus vidéo. |
 | Débit audio | Spécifié en tant que valeur minimale et maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
