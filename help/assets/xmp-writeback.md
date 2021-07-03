@@ -2,13 +2,13 @@
 title: Écriture différée XMP sur les rendus
 description: Découvrez comment la fonctionnalité d’écriture différée XMP propage les modifications apportées aux métadonnées d’une ressource à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux.
 contentOwner: AG
-feature: 'Métadonnées  '
-role: Business Practitioner,Administrator
+feature: Métadonnées
+role: User,Admin
 exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 65%
+ht-degree: 69%
 
 ---
 
