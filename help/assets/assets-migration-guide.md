@@ -3,9 +3,9 @@ title: Migration des ressources vers Adobe Experience Manager Assets en bloc
 description: Comment importer des ressources dans AEM, appliquer des métadonnées, générer des rendus et les activer pour publier des instances.
 contentOwner: AG
 feature: Migration,Rendus,Gestion des ressources
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1795'
 ht-degree: 67%
@@ -47,7 +47,7 @@ La migration des ressources vers AEM se déroule en plusieurs étapes et doit ê
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
-### Désactivez les workflows {#disable-workflows}
+### Désactivation des workflows {#disable-workflows}
 
 Avant de démarrer une migration, désactivez les lanceurs pour le workflow `DAM Update Asset`. Il est préférable d’ingérer toutes les ressources dans le système, puis d’exécuter les workflows par lots. Si vous êtes déjà en ligne pendant la migration, vous pouvez planifier l’exécution de ces activités en dehors des heures de bureau.
 
@@ -55,7 +55,7 @@ Avant de démarrer une migration, désactivez les lanceurs pour le workflow `DAM
 
 Vous avez peut-être déjà mis en place une taxonomie de balises que vous appliquez à vos images. Des outils tels que l’importateur de ressources CSV et la fonctionnalité de profils de métadonnées peuvent aider à automatiser l’application de balises aux ressources. Avant cela, ajoutez les balises dans Experience Manager. La fonctionnalité [Tools Tag Maker d’ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permet de renseigner les balises à l’aide d’une feuille de calcul Microsoft Excel chargée dans le système.
 
-### Ingestion des ressources {#ingest-assets}
+### Assimilation des ressources {#ingest-assets}
 
 Les performances et la stabilité sont des préoccupations importantes lors de l’intégration des ressources dans le système. Lors du chargement de nombreuses données dans Experience Manager, assurez-vous que le système fonctionne correctement. Cela a réduit le temps nécessaire à l’ajout des données et permet d’éviter de surcharger le système. Cela permet d’éviter les blocages du système, en particulier dans les systèmes déjà en production.
 
@@ -101,7 +101,7 @@ Pour toutes ces approches, notez que les ressources de l’instance de création
 >
 >Adobe ne prend pas en charge Grabbit.
 
-### Cloner la publication {#clone-publish}
+### Clonage de la publication {#clone-publish}
 
 Une fois les ressources activées, vous pouvez cloner votre instance de publication afin de créer autant de copies que nécessaire pour le déploiement. Le clonage d’un serveur est relativement simple, mais il existe quelques étapes importantes à retenir. Pour cloner la publication :
 
