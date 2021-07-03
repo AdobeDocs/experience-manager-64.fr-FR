@@ -7,8 +7,8 @@ topic-tags: Dynamic-Media
 content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Vidéo
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '10393'
 ht-degree: 77%
@@ -19,7 +19,7 @@ ht-degree: 77%
 
 Cette section décrit l’utilisation de vidéos dans Dynamic Media.
 
-## Démarrage rapide : vidéos {#quick-start-videos}
+## Démarrage rapide : vidéos  {#quick-start-videos}
 
 Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapidement les opérations liées aux visionneuses de vidéos adaptatives dans Dynamic Media. Chaque étape comporte des renvois à des rubriques contenant de plus amples informations.
 
@@ -29,6 +29,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 >
 >* Voir [Configuration des services cloud Dynamic Media dans Configuration de Dynamic Media – mode hybride.](/help/assets/config-dynamic.md)
 >* Voir [Configuration de Dynamic Media – mode Scene7](config-dms7.md) et [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md).
+
 >
 
 
@@ -62,29 +63,27 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
          En savoir plus sur les [bonnes pratiques relatives à l’organisation des ressources numériques en vue de l’utilisation de profils de traitement](organize-assets.md#organize-using-folders)
 
       * [Recherche de ressources vidéo](search-video-assets.md) ou [Recherche de ressources](managing-assets-touch-ui.md#searching-assets)
-      
    * Prévisualisez et publiez des ressources vidéo
 
       * Affichez la vidéo source et les rendus codés de la vidéo avec les miniatures associées :
 
-        [Prévisualisation de vidéos](managing-video-assets.md#uploading-and-previewing-video-assets) ou [Prévisualisation de ressources](previewing-assets.md)
+         [Prévisualisation de vidéos](managing-video-assets.md#uploading-and-previewing-video-assets) ou [Prévisualisation de ressources](previewing-assets.md)
 
-        [Affichage des rendus vidéo](video-renditions.md)
+         [Affichage des rendus vidéo](video-renditions.md)
 
-        [Gestion des rendus vidéo](managing-assets-touch-ui.md#managing-renditions)
+[Gestion des rendus vidéo](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
       * [Publier des ressources](publishing-dynamicmedia-assets.md)
-      
    * Utiliser des métadonnées vidéo
 
       * Affichez les propriétés d’un rendu vidéo codé, telles que la fréquence d’image, le débit audio et vidéo et le codec :
 
-        [Affichage des propriétés de rendu vidéo](video-renditions.md)
+         [Affichage des propriétés de rendu vidéo](video-renditions.md)
 
       * Modifiez les propriétés de la vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisés :
 
-        [Modification des propriétés vidéo](managing-assets-touch-ui.md#editing-properties)
+[Modification des propriétés vidéo](managing-assets-touch-ui.md#editing-properties)
 
       * [Gestion des métadonnées des ressources numériques](metadata.md)
       * [Schémas de métadonnées](metadata-schemas.md)
@@ -384,7 +383,7 @@ Lorsque vous choisissez (ou créez) un paramètre prédéfini de codage vidéo p
 | 720p | 720 | Grand écran |
 | 1 080p | 1080 | Grand écran haute définition |
 
-### Images par seconde {#fps-frames-per-second}
+### Images par seconde  {#fps-frames-per-second}
 
 Aux États-Unis et au Japon, la plupart des vidéos sont tournées à 29,97 ips (images par seconde) ; en Europe, la plupart des vidéos le sont à 25 ips. Un film est tourné à 24 ips.
 
@@ -412,7 +411,7 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
    <td><p>Source</p> </td> 
    <td><p>1 920 x 1 080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codée</p> </td> 
@@ -424,7 +423,7 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
    <td><p>Codée</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codée</p> </td> 
@@ -564,7 +563,7 @@ Ou, si vous prévoyez d’utiliser les balises par défaut dans AEM, vous pouvez
 
    Vous allez maintenant installer YouTube dans AEM.
 
-### Configuration de YouTube dans AEM   {#setting-up-youtube-in-aem}
+### Configuration de YouTube dans AEM  {#setting-up-youtube-in-aem}
 
 1. Dans le coin supérieur gauche de l’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils > Déploiement > Cloud Services]**.
 1. Sous l’en-tête **[!UICONTROL Services tiers]**, sous YouTube, appuyez sur **[!UICONTROL Configurer maintenant]**.
@@ -784,6 +783,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
    >* Configuration de la file d’attente des tâches Apache Sling
    >* Gestionnaire des tâches du processus externe de processus Adobe Granite
    >* File d’attente des délais d’attente des processus Granite
+
    > 
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
@@ -816,6 +816,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
    >* Configuration de la file d’attente des tâches Apache Sling
    >* Gestionnaire des tâches du processus externe de processus Adobe Granite
    >* File d’attente des délais d’attente des processus Granite
+
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
@@ -828,7 +829,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
 1. Vous pouvez recevoir des notifications par courrier électronique sur les tâches de processus annulées ou qui ont échoué. Ces notifications peuvent être configurées par un administrateur.
 Voir [Configuration des notifications par courrier électronique](#configuring-e-mail-notifications).
 
-#### Configuration des notifications par courrier électronique  {#configuring-e-mail-notifications}
+#### Configuration des notifications par courrier électronique {#configuring-e-mail-notifications}
 
 Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
 
@@ -868,7 +869,7 @@ Les rapports vidéo affichent plusieurs mesures agrégées sur une période spé
 
 Un tableau de toutes les vidéos *publiées* est également fourni pour vous permettre de suivre les vidéos les plus visionnées sur votre site web en fonction du total des lancements de vidéo.
 
-Lorsque vous appuyez sur le nom d’une vidéo dans la liste, le rapport sur la rétention de l’audience (taux de déperdition) de la vidéo s’affiche sous la forme d’un graphique en courbes. Le graphique affiche le nombre de visionnages à tout moment de la lecture vidéo. Lorsque vous lisez la vidéo, la barre verticale effectue un suivi en synchronisation avec l’indicateur temporel du lecteur. Des baisses dans les données du graphique en courbes indiquent où le désintérêt de votre audience augmente.
+Lorsque vous appuyez sur le nom d&#39;une vidéo dans la liste, le rapport sur la rétention de l&#39;audience (taux de déperdition) de la vidéo s&#39;affiche sous la forme d&#39;un graphique en courbes. Le graphique affiche le nombre de visionnages à tout moment de la lecture vidéo. Lorsque vous lisez la vidéo, la barre verticale effectue un suivi en synchronisation avec l&#39;indicateur temporel du lecteur. Des baisses dans les données du graphique en courbes indiquent où le désintérêt de votre audience augmente.
 
 Si la vidéo a été codée en dehors d’Adobe Experience Manager Dynamic Media, le graphique sur la rétention de l’audience (taux de déperdition) et les données de pourcentage de lecture du tableau ne sont pas disponibles.
 
@@ -958,7 +959,6 @@ Pour afficher des rapports vidéo basés sur une visionneuse de vidéos que vous
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
-
    L’objet appMeasurementBridge dispose d’une fonction de suivi intégrée. Vous pouvez toutefois fournir votre propre fonction pour prendre en charge plusieurs systèmes de suivi ou d’autres fonctionnalités.
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
@@ -1137,7 +1137,7 @@ Si vous préférez, vous pouvez charger une miniature personnalisée pour repré
 
    Voir [Configuration de l’intervalle par défaut auquel les miniatures de vidéo sont créées](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
 
-#### Configuration de l’intervalle par défaut auquel les miniatures de vidéo sont créées  {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
+#### Configuration de l’intervalle par défaut auquel les miniatures de vidéo sont créées {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
 Lorsque vous configurez et enregistrez le nouvel intervalle par défaut, votre modification s’applique automatiquement et uniquement aux vidéos que vous chargerez par la suite. Il n’applique pas automatiquement le nouveau paramètre par défaut aux vidéos que vous avez précédemment chargées. Pour les vidéos existantes, vous devez de nouveau générer les miniatures.
 
