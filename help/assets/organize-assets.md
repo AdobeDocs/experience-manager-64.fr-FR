@@ -3,22 +3,22 @@ title: Organisez vos ressources numériques.
 description: Organisez vos ressources numériques, images, fichiers, dossiers, etc. à l’aide de Experience Manager.
 contentOwner: AG
 feature: Gestion des ressources, Recherche
-role: Business Practitioner
+role: User
 exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 19%
 
 ---
 
-# Organisez vos ressources numériques.{#organize-digital-assets}
+# Organisez vos ressources numériques. {#organize-digital-assets}
 
 L’ensemble des ressources numériques, des métadonnées et du contenu des documents Microsoft Office et PDF sont extraits et rendus utilisables dans une requête. Les recherches permettent un filtrage élaboré des ressources et respectent entièrement les autorisations. Les métadonnées sont décrites en détail dans la section Métadonnées de la gestion des ressources numériques.
 
 AEM Assets prend en charge plusieurs manières d’organiser le contenu. Vous pouvez les organiser de manière hiérarchique à l’aide de dossiers ou les organiser de manière ad hoc et non ordonnée à l’aide de balises, par exemple. Les utilisateurs peuvent modifier les balises dans l’éditeur de ressources de gestion des actifs numériques où les sous-ressources, rendus et métadonnées sont affichés.
 
-## Organisation des ressources dans les dossiers {#organize-using-folders}
+## Organisation des ressources dans des dossiers {#organize-using-folders}
 
 La méthode la plus simple pour organiser les ressources consiste à les enregistrer dans des dossiers. C’est analogue à l’organisation de fichiers dans des dossiers de notre système de fichiers local. Pour plus d’informations sur la création et la gestion des dossiers, voir [Gestion des ressources](managing-assets-touch-ui.md). La manière dont vous nommez les fichiers et les dossiers, organisez les sous-dossiers et gérez les fichiers dans ces dossiers peut avoir un impact significatif sur la manière dont ces ressources sont traitées. Grâce à des stratégies d’attribution de noms de fichiers et de dossiers cohérentes et appropriées, ainsi qu’à de bonnes pratiques de métadonnées, vous pouvez tirer le meilleur parti de votre référentiel de ressources numériques.
 
@@ -38,7 +38,7 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
 * Créez un répertoire de dossiers susceptibles de ne pas changer, de sorte que toute personnalisation ou automatisation continue de fonctionner. Par exemple, les profils de traitement affectés continuent à fonctionner.
 * Si une ressource est déjà publiée, utilisez AEM pour la déplacer vers un autre dossier et la republier à partir de son nouvel emplacement, l’emplacement d’origine de la ressource publiée est toujours disponible, ainsi que la ressource qui vient d’être republiée. Toutefois, la ressource publiée d’origine est *perdue* à AEM et ne peut pas être annulée. Par conséquent, il est recommandé d’abord d’annuler la publication d’une ressource, puis de la déplacer vers un autre dossier.
 
-## Organisation des ressources à l’aide des balises {#use-tags-to-organize-assets}
+## Organisation des ressources à l’aide de balises {#use-tags-to-organize-assets}
 
 À l’aide de balises, en tant que métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de recherche, améliorer le classement de certaines ressources et utiliser les algorithmes d’IA Adobe Sensei pour la découverte de ressources.
 
@@ -61,7 +61,7 @@ Any hints/recommendations of when to use what method of organizing? Some example
 Add back links to blog posts by marketing?
 -->
 
-## Organiser vos ressources pour utiliser les profils {#organize-to-use-profiles}
+## Organisation de vos ressources pour utiliser des profils {#organize-to-use-profiles}
 
 Un profil de traitement contient des commandes de traitement des ressources qui s’appliquent aux ressources qui sont chargées dans des dossiers prédéfinis. Les profils sont utilisés pour automatiser le traitement du contenu d’un dossier ou de ressources fraîchement chargées. Vous pouvez tirer parti des profils pour mieux organiser vos ressources.
 
