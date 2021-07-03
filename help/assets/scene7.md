@@ -7,8 +7,8 @@ content-type: reference
 topic-tags: managing-assets
 exl-id: b11b19c1-712d-4698-aefc-930ff8cacbc1
 feature: Dynamic Media Classic
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2829'
 ht-degree: 32%
@@ -241,7 +241,7 @@ Le texte reflète le nom de l’utilisateur actuellement connecté. Vous pouvez 
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-#### Définition du modèle d’image Dynamic Media Classic comme lien {#making-the-scene-image-template-a-link}
+#### Création d’un lien avec le modèle d’image Dynamic Media Classic {#making-the-scene-image-template-a-link}
 
 1. Sur la page avec le composant Dynamic Media Classic **[!UICONTROL Modèle d’image]**, appuyez sur **[!UICONTROL Modifier]**.
 1. Dans le champ **[!UICONTROL URL]** , saisissez l’URL à laquelle les utilisateurs accèdent lorsqu’ils cliquent sur l’image. Dans le champ **[!UICONTROL Ouvrir dans]**, choisissez où vous souhaitez que la cible s’ouvre (une nouvelle fenêtre ou la même fenêtre).
@@ -286,7 +286,7 @@ Si vous disposez de plusieurs configurations, AEM affiche la [configuration par 
    >   * Vidéo F4V simple
 
 
-### Navigation dans le contenu de l’IU optimisée pour les écrans tactiles {#browsing-content-in-the-touch-optimized-ui}
+### Navigation dans le contenu de l’interface utilisateur optimisée pour les écrans tactiles {#browsing-content-in-the-touch-optimized-ui}
 
 Vous pouvez accéder au navigateur de contenu depuis l’interface utilisateur optimisée pour les écrans tactiles ou l’interface utilisateur classique. A l’heure actuelle, l’interface utilisateur optimisée pour les écrans comporte la limitation suivante :
 
@@ -312,7 +312,7 @@ En outre, vous pouvez parcourir les informations de résolution, de taille, de n
 * Pour les ensembles de vidéos adaptables et les modèles, aucune information sur la taille n’est générée pour les miniatures.
 * Pour les ensembles de vidéos adaptables, aucune résolution n’est générée pour les miniatures.
 
-### Recherche de ressources Dynamic Media Classic avec l’explorateur de contenu {#searching-for-scene-assets-with-the-content-browser}
+### Recherche de ressources Dynamic Media Classic à l’aide de l’explorateur de contenu {#searching-for-scene-assets-with-the-content-browser}
 
 La recherche de ressources Dynamic Media Classic est similaire à la recherche de ressources AEM, sauf que lorsque vous effectuez une recherche, une vue distante des ressources s’affiche dans le système Dynamic Media Classic, plutôt que de les importer directement dans AEM.
 
