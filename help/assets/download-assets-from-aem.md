@@ -3,9 +3,9 @@ title: Téléchargez des ressources numériques à partir de  [!DNL Adobe Experi
 description: Découvrez comment télécharger des ressources à partir de [!DNL Adobe Experience Manager] et activer ou désactiver la fonctionnalité de téléchargement.
 contentOwner: AG
 feature: Gestion des ressources, distribution des ressources
-role: Business Practitioner
+role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 75%
