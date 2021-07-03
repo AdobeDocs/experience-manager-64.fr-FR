@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 feature: Balises intelligentes, Recherche
-role: Business Practitioner
+role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1570'
 ht-degree: 84%
@@ -92,7 +92,7 @@ Vous pouvez entraîner le service de contenu dynamique périodiquement ou en fon
 >
 >Le workflow d’entraînement s’exécute sur les dossiers uniquement.
 
-### Entraînement périodique  {#periodic-training}
+### Entraînement périodique {#periodic-training}
 
 Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne périodiquement sur les ressources et les balises associées au sein d’un dossier. Ouvrez la page des propriétés de votre dossier de ressources, sélectionnez **[!UICONTROL Activer les balises intelligentes]** sous l’onglet **[!UICONTROL Détails]**, puis enregistrez les modifications.
 
@@ -100,7 +100,7 @@ Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne p
 
 Lorsque cette option est sélectionnée pour un dossier, AEM exécute automatiquement un workflow d’entraînement afin d’entraîner le service de contenu dynamique sur les ressources du dossier et leurs balises. Par défaut, le workflow d’entraînement s’exécute sur une base hebdomadaire à 0 h 30 le samedi.
 
-### Entraînement à la demande  {#on-demand-training}
+### Entraînement à la demande {#on-demand-training}
 
 Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est nécessaire à partir de la console Processus.
 
@@ -132,7 +132,7 @@ Pour vérifier que le service de contenu dynamique est entraîné sur vos balise
 
 1. Pour télécharger le rapport, sélectionnez-le dans la liste, puis appuyez/cliquez sur l’icône **[!UICONTROL Télécharger]** de la barre d’outils. Le rapport est téléchargé sous la forme d’un fichier Excel.
 
-## Balisage automatique des ressources  {#tagging-assets-automatically}
+## Balisage automatique des ressources {#tagging-assets-automatically}
 
 Après avoir entraîné le service de contenu dynamique, vous pouvez déclencher le workflow de balisage pour appliquer automatiquement les balises appropriées sur une autre série de ressources similaire.
 
@@ -142,7 +142,7 @@ Vous pouvez exécuter le workflow de balisage périodiquement ou au besoin.
 >
 >Le workflow de balisage s’exécute sur les ressources et les dossiers.
 
-### Balisage périodique  {#periodic-tagging}
+### Balisage périodique {#periodic-tagging}
 
 Vous pouvez activer le service de contenu dynamique de façon à ce qu’il balise périodiquement les ressources au sein d’un dossier. Ouvrez la page des propriétés de votre dossier de ressources, sélectionnez **[!UICONTROL Activer les balises intelligentes]** sous l’onglet **[!UICONTROL Détails]**, puis enregistrez les modifications.
 
@@ -159,7 +159,7 @@ Vous pouvez déclencher le workflow de balisage à partir des emplacements suiva
 >
 >Si vous exécutez le workflow de balisage à partir de la chronologie, vous pouvez appliquer des balises sur un maximum de 15 ressources à la fois.
 
-#### Balisage des actifs de la console de processus  {#tagging-assets-from-the-workflow-console}
+#### Balisage des actifs de la console de processus {#tagging-assets-from-the-workflow-console}
 
 1. Appuyez/cliquez sur le logo AEM et accédez à **[!UICONTROL Outils > Workflow > Modèles]**.
 1. Dans la page **[!UICONTROL Modèles de processus]**, sélectionnez le processus **[!UICONTROL Ressources de balises dynamiques DAM]**, puis appuyez/cliquez sur **[!UICONTROL Démarrer le processus]** dans la barre d’outils.
