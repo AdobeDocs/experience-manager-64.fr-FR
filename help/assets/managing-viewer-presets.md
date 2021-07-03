@@ -12,8 +12,8 @@ discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
 feature: Paramètres prédéfinis de la visionneuse
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '4236'
 ht-degree: 76%
@@ -37,7 +37,7 @@ Cette section décrit comment créer, modifier et gérer les paramètres prédé
 >
 >Notez que la modification des *paramètres prédéfinis de visionneuse prêts à l’emploi* n’est pas un scénario pris en charge. Si vous tentez de modifier un paramètre de visionneuse prédéfini de base, vous serez invité à enregistrer ce paramètre de visionneuse prédéfini en utilisant un nouveau nom.
 
-## Accessibilité clavier pour les visionneuses {#keyboard-accessibility-for-viewers}
+## Accessibilité clavier pour les visionneuses  {#keyboard-accessibility-for-viewers}
 
 Toutes les visionneuses prêtes à l’emploi prennent en charge l’accessibilité clavier.
 
@@ -64,7 +64,7 @@ Voir [Bibliothèque d’images réactives](https://experienceleague.adobe.com/do
 >Notez que vous devez publier toutes les visionneuses prêtes à l’emploi avant de les utiliser pour la première fois.\
 >Voir [Publication de paramètres de visionneuse prédéfinis](#publishing-viewer-presets).
 
-## Compatibilité du système de paramètres prédéfinis de visionneuse {#viewer-preset-system-compatibility}
+## Compatibilité du système de paramètres prédéfinis de visionneuse  {#viewer-preset-system-compatibility}
 
 Tous les paramètres de visionneuse prédéfinis fournis avec Dynamic Media sont entièrement compatibles avec les systèmes suivants :
 
@@ -159,7 +159,7 @@ Le tableau suivant répertorie les gestes pris en charge dans les visionneuses m
 | **Balayage** | Fait défiler la barre d’échantillons | Fait défiler les images | Rotation |
 | **Glissement rapide** | Fait défiler la barre d’échantillons | Fait défiler les images | Rotation |
 
-## Augmentation du nombre de paramètres prédéfinis de visionneuse Dynamic Media qui affichent {#increasing-the-number-of-viewer-presets-that-display}
+## Augmentation du nombre de paramètres prédéfinis de visionneuse Dynamic Media qui s’affichent {#increasing-the-number-of-viewer-presets-that-display}
 
 AEM affiche une grande variété de paramètres prédéfinis de visionneuse lors de l’affichage de ressources à partir de **[!UICONTROL Affichage des détails > Visionneuses]**. Vous pouvez augmenter ou diminuer le nombre de visionneuses qui s’affichent.
 
