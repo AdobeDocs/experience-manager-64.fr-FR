@@ -7,8 +7,8 @@ topic-tags: managing-assets
 content-type: reference
 exl-id: 081e7db0-95cc-4260-8f08-318cd7d9d5b4
 feature: Vidéo
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1604'
 ht-degree: 32%
@@ -93,13 +93,13 @@ Pour configurer les paramètres prédéfinis universaux :
 
 1. Les profils de codage sélectionnés sont automatiquement appliqués à toutes les vidéos téléchargées dans le dossier cible de la gestion des actifs numériques CQ que vous avez défini pour cette configuration de cloud Scene7. Vous pouvez définir plusieurs configurations de cloud Scene7 avec différents dossiers cibles afin d’appliquer différents profils de codage, selon vos besoins.
 
-## Mise à jour de la visionneuse et des paramètres prédéfinis de codage  {#updating-viewer-and-encoding-presets}
+## Mise à jour de la visionneuse et des paramètres prédéfinis de codage {#updating-viewer-and-encoding-presets}
 
 Si les paramètres prédéfinis ont été mis à jour dans Scene7, il est nécessaire de mettre à jour la visionneuse et les paramètres prédéfinis de codage pour la vidéo en Experience Manager. Dans ce cas, accédez à la configuration Scene7 dans la configuration cloud et cliquez sur **[!UICONTROL Mettre à jour la visionneuse et les paramètres prédéfinis de codage]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Chargement de la vidéo originale vers Scene7 à partir de la gestion des actifs numériques Adobes {#uploading-your-master-video}
+## Chargement de la vidéo originale vers Scene7 à partir de la gestion des ressources numériques Adobe {#uploading-your-master-video}
 
 1. Accédez au dossier cible de la gestion des actifs numériques CQ dans lequel vous avez défini la configuration de cloud avec les profils de codage Scene7.
 1. Cliquez sur **[!UICONTROL Télécharger]** pour télécharger la vidéo maître. Le chargement et le codage des vidéos sont terminés une fois que le workflow Ressources de mise à jour de gestion des actifs numériques est terminé et que la fonction **[!UICONTROL Publier sur Scene7]** comporte une coche.
@@ -140,7 +140,7 @@ Le tableau suivant fournit une comparaison de haut niveau des fonctionnalités p
 | Evolutivité | Oui | Oui (avec [Documentation de l’API du kit de développement de visionneuse HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) |
 | Vidéo mobile | Oui | Oui |
 
-### Configuration  {#setting-up}
+### Configuration {#setting-up}
 
 #### Création de profils vidéo {#creating-video-profiles}
 
