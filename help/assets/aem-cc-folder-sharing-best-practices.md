@@ -3,9 +3,9 @@ title: Partage de dossiers AEM Assets avec Creative Cloud
 description: Configuration et bonnes pratiques pour permettre aux utilisateurs d’Adobe Experience Manager Assets d’échanger des dossiers de ressources avec les utilisateurs de Adobe Creative Cloud.
 contentOwner: AG
 feature: Collaboration
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 7e2adfcc-410d-4574-8f7e-39aceecfdd4b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 44%
