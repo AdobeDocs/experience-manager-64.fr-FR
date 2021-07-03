@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 exl-id: d2fdad3f-513b-4147-a7c6-a3c1b64dd6e3
 feature: Bannières de carrousel
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '4789'
 ht-degree: 88%
@@ -90,7 +90,7 @@ Pour démarrer rapidement :
    * [Ajoutez une bannière de carrousel à votre page web.](#adding-a-carousel-banner-to-your-website-page) Vous pouvez ajouter le code intégré ou l’URL de la bannière de carrousel que vous avez copié sur la page web.
 
       * [Intégrez la bannière de carrousel à un aperçu rapide existant](#integrating-the-carousel-banner-with-an-existing-quickview). Si vous utilisez un système de gestion de contenu web externe, vous devez intégrer la nouvelle bannière de carrousel à la mise en œuvre de l’aperçu rapide existant sur votre site web.
-   * [Ajoutez une bannière de carrousel à votre site web dans AEM. ](adding-dynamic-media-assets-to-pages.md) Si vous êtes client AEM Sites, vous pouvez ajouter le carrousel défini directement à la page dans AEM, à l’aide du composant Interactive Media.
+   * [Ajout d’une bannière de carrousel à votre site web dans AEM](adding-dynamic-media-assets-to-pages.md) Si vous êtes un client AEM Sites, vous pouvez ajouter l’ensemble de carrousel directement sur la page dans AEM à l’aide du composant Interactive Media.
 
 
 Si vous devez modifier des ensembles de carrousels, voir [Modification d’ensembles de carrousels](#editing-carousel-sets). De plus, vous pouvez afficher et modifier les [propriétés d’un ensemble de carrousel](/help/assets/managing-assets-touch-ui.md#editing-properties).
@@ -183,13 +183,13 @@ Si vous avez déjà chargé les images à utiliser, passez à l’étape suivant
 
 Pour charger des bannières d’image, voir [Chargement de ressources](managing-assets-touch-ui.md).
 
-## Création d’ensembles de carrousels {#creating-carousel-sets}
+## Création d’ensembles de carrousels  {#creating-carousel-sets}
 
 >[!NOTE]
 >
 >Les utilisateurs non administrateurs doivent être ajoutés au groupe **[!UICONTROL dam-users]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification des bannières, contactez votre administrateur système pour qu’il vous ajoute au groupe **dam-users**.
 
-**Pour créer un ensemble de carrousel**:
+**Pour créer un ensemble de carrousel** :
 
 1. Dans Ressources, cherchez le dossier dans lequel vous souhaitez créer l’ensemble de carrousel, puis appuyez sur **[!UICONTROL Créer > Ensemble de carrousel]**.
 1. Sur la page **[!UICONTROL Éditeur de bannière de carrousel]** , appuyez sur **[!UICONTROL Appuyez pour ouvrir le sélecteur de ressources]** afin de sélectionner l’image de votre première diapositive.
@@ -447,6 +447,6 @@ Reportez-vous à la section [Identification des variables de zone réactive et d
 
 La dernière étape permettant de déclencher l’URL d’aperçu rapide et d’activer le panneau d’aperçu rapide requiert très probablement l’aide d’un expert informatique. Ce type d’expert sait comment déclencher avec précision l’implémentation d’aperçus rapides à partir de l’étape appropriée, en disposant d’une URL d’aperçu rapide prête à l’emploi.
 
-## Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées {#using-quickviews-to-create-custom-pop-ups}
+## Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées  {#using-quickviews-to-create-custom-pop-ups}
 
 Voir [Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées](custom-pop-ups.md).
