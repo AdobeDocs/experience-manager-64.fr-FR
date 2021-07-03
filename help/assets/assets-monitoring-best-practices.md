@@ -3,9 +3,9 @@ title: Bonnes pratiques en matière de surveillance des ressources
 description: Meilleures pratiques pour surveiller l’environnement et la performance de votre instance AEM après son déploiement.
 contentOwner: AG
 feature: Gestion des ressources
-role: Administrator,Architect
+role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 88%
@@ -74,7 +74,7 @@ La surveillance de l’environnement implique de surveiller les éléments suiva
 
 Des outils externes sont nécessaires, par exemple NewRelic(TM) et AppDynamics(TM) pour la surveillance de chaque élément. Vous pouvez, avec ces outils, définir des alertes spécifiques à votre système, par exemple, en cas d’utilisation intensive du système, pour la sauvegarde des workflow, en cas d’échec des contrôles de l’intégrité ou d’accès non authentifiés à votre site web. Adobe ne recommande pas un outil plutôt qu’un autre. Choisissez l’outil qui correspond le plus à vos besoins et utilisez-le pour la surveillance des éléments indiqués ici.
 
-#### Surveillance des applications internes  {#internal-application-monitoring}
+#### Surveillance des applications internes {#internal-application-monitoring}
 
 La surveillance des applications internes consiste à surveiller les composants d’application qui constituent la pile AEM, notamment JVM et le référentiel de contenu. Elle inclut également la surveillance via le code d’application personnalisé intégré à la plateforme. En général, elle se fait via les Mbeans JMX qui peuvent être contrôlés directement par de nombreuses et solutions de contrôle populaires telles que SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) et bien d’autres encore. Pour les systèmes ne prenant pas en charge une connexion directe avec JMX, vous pouvez écrire des scripts shell pour extraire les données JMX et les présenter à ces systèmes dans un format intelligible pour eux.
 
