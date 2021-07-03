@@ -3,9 +3,9 @@ title: Considérations sur le réseau d’Assets
 description: Décrit les considérations concernant le réseau lors de la conception d’un déploiement d’AEM Assets.
 contentOwner: AG
 feature: Outils de développement
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 100%
@@ -47,7 +47,7 @@ L’ordinateur présenté à droite, connecté au réseau d’entreprise via un 
 
 Le diagramme présente des vitesses de liaison plus élevées au sein du réseau d’entreprise que ce qui est généralement utilisé. Ces canaux sont des ressources partagées. Si le commutateur partagé est censé gérer 50 clients, il peut se transformer en goulot d’étranglement. Dans le diagramme initial, seuls deux ordinateurs partagent la connexion.
 
-## Liaison à Internet à partir du réseau d’entreprise et de l’environnement d’AEM   {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Liaison à Internet à partir du réseau d’entreprise et de l’environnement d’AEM  {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -63,7 +63,7 @@ C’est le plus petit goulot d’étranglement axé sur le client. Cependant, vo
 
 Les exemples de diagrammes vous permettent de conclure que six périphériques partagent un canal conceptuel de 10 Mbps. Selon la taille des ressources exploitées, cela peut s’avérer insuffisant pour répondre aux attentes de l’utilisateur.
 
-## La topologie de l’environnement AEM   {#topology-of-the-aem-environment}
+## La topologie de l’environnement AEM  {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
