@@ -3,16 +3,16 @@ title: Ressources liées
 description: Découvrez comment mettre en relation des ressources qui partagent des attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources.
 contentOwner: AG
 feature: Gestion des ressources, Collaboration
-role: Business Practitioner
+role: User
 exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 99%
 
 ---
 
-# Ressources liées{#related-assets}
+# Ressources liées {#related-assets}
 
 Adobe Experience Manager (AEM) Assets vous permet de mettre en relation manuellement des ressources en fonction des besoins de votre organisation à l’aide de la fonctionnalité Ressources associées. Par exemple, vous pouvez mettre en relation un fichier de licence avec une ressource ou une image/vidéo portant sur un sujet similaire. Vous pouvez mettre en relation des ressources qui partagent certains attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources. Par exemple, si un fichier PDF est généré à partir d’un fichier INDD, vous pouvez mettre en relation le fichier PDF avec son fichier INDD source.
 
@@ -63,7 +63,7 @@ De cette manière, vous avez la possibilité de partager un fichier basse résol
 
 1. Cliquez/appuyez sur **[!UICONTROL OK]** pour fermer la boîte de dialogue. Les ressources pour lesquelles vous avez supprimé des relations sont supprimées de la liste des ressources mises en relation dans la section **[!UICONTROL En relation]**.
 
-## Traduction de ressources associées  {#translating-related-assets}
+## Traduction de ressources associées {#translating-related-assets}
 
 La création de relations source/dérivés entre des ressources à l’aide de la fonctionnalité Ressources mises en relation est également utile dans les processus de traduction. Lorsque vous exécutez un processus de traduction sur une ressource dérivée, AEM Assets récupère automatiquement toute ressource référencée par le fichier source et la soumet pour traduction. De cette manière, la ressource référencée par la ressource source est traduite avec les ressources source et dérivées. Par exemple, supposons que votre copie de langue anglaise inclut une ressource dérivée et son fichier source, comme indiqué sur l’image ci-dessous.
 
