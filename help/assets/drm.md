@@ -3,9 +3,9 @@ title: Gestion des droits numériques dans [!DNL Adobe Experience Manager Assets
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans  [!DNL Experience Manager] .
 contentOwner: AG
 feature: DRM,Gestion des ressources
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 3eea4983-9dd5-4d69-ad93-3cd37a656d22
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 89%
@@ -107,7 +107,7 @@ Pour que la console [!DNL Assets] affiche les ressources composites référencé
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-## États d’une ressource {#asset-states}
+## États d’un élément {#asset-states}
 
 La console [!DNL Assets] peut afficher différents états des ressources. En fonction de l’état actuel d’une ressource donnée, le mode Carte affiche un libellé décrivant son état (par exemple, expiré, modifié, approuvé, rejeté, etc.).
 
