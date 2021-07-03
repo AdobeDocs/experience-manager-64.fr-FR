@@ -3,16 +3,16 @@ title: Préparation des ressources en vue de la traduction
 description: Créez des dossiers racines de langues pour préparer la traduction de ressources multilingues.
 contentOwner: AG
 feature: Projets, traduction
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 96%
 
 ---
 
-# Préparation des ressources en vue de la traduction {#preparing-assets-for-translation}
+# Préparation des ressources en vue de la traduction  {#preparing-assets-for-translation}
 
 Les ressources multilingues sont des ressources comportant des fichiers binaires, des métadonnées et des balises dans plusieurs langues. En règle générale, les fichiers binaires, les métadonnées et les balises d’une ressource existent dans une langue, et sont ensuite traduits dans d’autres langues pour être utilisés dans des projets multilingues.
 
