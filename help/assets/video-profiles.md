@@ -7,8 +7,8 @@ topic-tags: administering
 content-type: reference
 exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
 feature: Profils vidéo,Vidéo
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3071'
 ht-degree: 74%
@@ -41,7 +41,7 @@ Consultez également la section [Bonnes pratiques en matière de codage vidéo](
 
 Une fois le profil vidéo créé, vous l’appliquez à un ou à plusieurs dossiers. Voir [Application d’un profil vidéo à des dossiers.](#applying-a-video-profile-to-folders)
 
-Pour définir des paramètres de traitement avancés pour d’autres types de ressources, consultez la section [Configuration du traitement des ressources](config-dms7.md#configuring-asset-processing).
+Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](config-dms7.md#configuring-asset-processing).
 
 ## Paramètres prédéfinis de codage vidéo adaptatif {#adaptive-video-encoding-presets}
 
@@ -57,7 +57,7 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
    <td><strong>Débit vidéo (kbit/s)</strong></td> 
    <td><strong>Taux de rafraîchissement vidéo (i/s)</strong></td> 
    <td><strong>Codec audio</strong></td> 
-   <td><strong>Débit audio (kbit/s)</strong></td> 
+   <td><strong>Débit audio  (kbit/s)</strong></td> 
   </tr> 
   <tr> 
    <td><p>MP4 H.264 (mp4)</p> </td> 
@@ -148,7 +148,7 @@ Une fois le profil vidéo créé, vous l’appliquez à un ou plusieurs dossiers
    * Répétez les étapes 5 à 10 pour créer d’autres paramètres de codage prédéfinis. (La diffusion vidéo adaptative en continu nécessite plusieurs paramètres prédéfinis vidéo.)
    * Dans le coin supérieur droit de la page, appuyez à nouveau sur **[!UICONTROL Enregistrer]** pour enregistrer le profil.
 
-## Contrôle de la progression d’une tâche de codage  {#monitoring-the-progress-of-an-encoding-job}
+## Contrôle de la progression d’une tâche de codage {#monitoring-the-progress-of-an-encoding-job}
 
 Un indicateur (ou barre) de progression s’affiche afin que vous puissiez surveiller visuellement la progression d’une tâche de codage vidéo.
 
@@ -323,7 +323,7 @@ Les dossiers auxquels un profil est affecté sont indiqués dans l’interface u
 
 Vous pouvez appliquer des profils vidéo à des dossiers spécifiques ou à l’ensemble des ressources.
 
-### Application de profils vidéo à des dossiers spécifiques  {#applying-video-profiles-to-specific-folders}
+### Application de profils vidéo à des dossiers spécifiques {#applying-video-profiles-to-specific-folders}
 
 Vous pouvez appliquer un profil vidéo à un dossier depuis le menu **[!UICONTROL Outils]** ou, si vous vous trouvez dans le dossier, depuis **[!UICONTROL Propriétés]**. Cette section décrit comment appliquer des profils vidéo aux dossiers de deux manières.
 
@@ -335,7 +335,7 @@ Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profi
 1. Sélectionnez le profil vidéo à appliquer à un ou plusieurs dossiers.
 1. Appuyez sur **[!UICONTROL Appliquer le profil au(x) dossier(s)]** et sélectionnez le ou les dossiers que vous voulez voir recevoir les ressources récemment chargées, puis appuyez sur **[!UICONTROL Appliquer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
-#### Application de profils vidéo Dynamic Media à des dossiers à partir des propriétés {#applying-video-profiles-to-folders-from-properties}
+#### Application de profils vidéo Dynamic Media aux dossiers à partir des propriétés {#applying-video-profiles-to-folders-from-properties}
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]** , puis au dossier auquel vous souhaitez appliquer un profil vidéo.
 1. Dans le dossier, appuyez sur la coche pour la sélectionner, puis sur **[!UICONTROL Propriétés]**.
@@ -355,7 +355,7 @@ En plus d’appliquer un profil à un dossier, vous pouvez en appliquer un de fa
 
 ![chlimage_1-519](assets/chlimage_1-519.png)
 
-## Suppression d’un profil vidéo Dynamic Media des dossiers {#removing-a-video-profile-from-folders}
+## Suppression d’un profil vidéo Dynamic Media d’un dossier {#removing-a-video-profile-from-folders}
 
 Lorsque vous supprimez un profil vidéo d’un dossier, les sous-dossiers héritent automatiquement de la suppression du profil de leur dossier parent. Cependant, le traitement des fichiers qui s’est produit dans les dossiers reste intact.
 
@@ -369,7 +369,7 @@ Vous pouvez supprimer un profil vidéo d’un dossier à partir du menu **[!UICO
 
    Le fait que le nom du profil n’apparaît plus sous celui du dossier indique que le profil vidéo n’est plus appliqué à un dossier.
 
-### Suppression de profils vidéo Dynamic Media des dossiers au moyen des propriétés {#removing-video-profiles-from-folders-via-properties}
+### Suppression de profils vidéo Dynamic Media des dossiers à l’aide des propriétés {#removing-video-profiles-from-folders-via-properties}
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]** , puis au dossier duquel vous souhaitez supprimer un profil vidéo.
 1. Dans le dossier, appuyez sur la coche pour le sélectionner, puis sur **[!UICONTROL Propriétés]**.
