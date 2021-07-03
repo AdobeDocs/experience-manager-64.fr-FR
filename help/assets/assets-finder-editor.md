@@ -3,16 +3,16 @@ title: Création et configuration de pages Éditeur de ressources
 description: Découvrez comment créer des pages Éditeur de ressources personnalisées et modifier plusieurs ressources simultanément.
 contentOwner: AG
 feature: Outils de développement, Gestion des ressources
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 12899f61-9ceb-4bde-a501-6c50c93e3276
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3318'
 ht-degree: 79%
 
 ---
 
-# Créer et configurer des pages Éditeur de ressources {#creating-and-configuring-asset-editor-pages}
+# Création et configuration de pages Éditeur de ressources {#creating-and-configuring-asset-editor-pages}
 
 Ce document répond aux questions suivantes :
 
@@ -24,7 +24,7 @@ Ce document répond aux questions suivantes :
 >
 >Asset Share est disponible en tant qu’implémentation de référence en source libre. Voir [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) . Il n’est pas officiellement pris en charge.
 
-## Pourquoi créer et configurer des pages Éditeur de ressources ? {#why-create-and-configure-asset-editor-pages}
+## Pourquoi créer et configurer des pages Éditeur de ressources personnalisées ? {#why-create-and-configure-asset-editor-pages}
 
 La gestion des actifs numériques est utilisée dans un nombre toujours plus grand de scénarios. Lorsque vous passez d’une solution à petite échelle pour un petit groupe d’utilisateurs formés (par exemple des photographes ou des taxonomistes) à des groupes d’utilisateurs plus vastes et plus diversifiés (par exemple, des utilisateurs de l’entreprise, des auteurs de gestion de contenu web, des journalistes, etc.), l’interface utilisateur puissante d’Adobe Experience Manager (AEM) destinée aux utilisateurs professionnels peut fournir trop d’informations et les parties prenantes commencent à demander des interfaces utilisateur ou des applications spécifiques pour accéder aux ressources numériques qui les concernent.
 
@@ -45,7 +45,7 @@ Voici quelques cas d’utilisation de création d’une page Partage de ressourc
 * Base de données d’images pour les utilisateurs du site web
 * Interface de balisage des données multimédias pour les éditeurs de métadonnées
 
-### Créer une page Partage de ressources {#creating-an-asset-share-page}
+### Création d’une page Partage de ressources {#creating-an-asset-share-page}
 
 Vous pouvez créer une page Partage de ressources lorsque vous travaillez sur des sites web ou à partir du gestionnaire des actifs numériques.
 
@@ -159,7 +159,7 @@ Pour personnaliser Query Builder :
 
    ![screen_shot_2012-04-23at15300pm](assets/screen_shot_2012-04-23at15300pm.png)
 
-#### Ajouter des prédicats {#adding-predicates}
+#### Ajout de prédicats {#adding-predicates}
 
 AEM Assets inclut un certain nombre de prédicats que vous pouvez ajouter à la page Partage de ressources. Ils permettent à vos utilisateurs de restreindre les recherches. Dans certains cas, ils peuvent remplacer un paramètre de Query Builder (par exemple, le paramètre Chemin).
 
@@ -196,7 +196,7 @@ Personnalisez l’Éditeur de ressources pour déterminer comment les utilisateu
 >
 >Si vous souhaitez ajouter des champs personnalisés à l’Éditeur de ressources du gestionnaire des actifs numériques, ajoutez les nouveaux nœuds cq:Widget à `/apps/dam/content/asseteditors.`
 
-### Créer la page Éditeur de ressources {#creating-the-asset-editor-page}
+### Création de la page Éditeur de ressources {#creating-the-asset-editor-page}
 
 Lors de la création de la page Éditeur de ressources, il est recommandé de créer la page directement sous la page Partage de ressources.
 
@@ -216,7 +216,7 @@ Pour personnaliser votre page Éditeur de ressources, utilisez les éléments du
 
 ![assetshare6](assets/assetshare6.bmp)
 
-#### Définissez l’Éditeur de ressources qui s’ouvre à partir de la page Partage de ressources {#setting-which-asset-editor-opens-from-an-asset-share-page}
+#### Définition de l’Éditeur de ressources qui s’ouvre à partir d’une page Partage de ressources {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
 Après avoir créé la page Éditeur de ressources personnalisée, vous devez vous assurer que, lorsque vous double-cliquez sur des ressources, le Partage de ressources personnalisé que vous avez créé ouvre les ressources dans la page Éditeur personnalisée.
 
@@ -232,7 +232,7 @@ Pour définir la page Éditeur de ressources :
 
    ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
-#### Ajouter des composants Éditeur de ressources {#adding-asset-editor-components}
+#### Ajout de composants Éditeur de ressources {#adding-asset-editor-components}
 
 Vous déterminez les fonctionnalités d’un Éditeur de ressources en ajoutant des composants à la page.
 
@@ -365,7 +365,7 @@ Voici un exemple de composant Titre renseigné :
 
 ![chlimage_1-392](assets/chlimage_1-392.png)
 
-#### Ajout d’actions Éditeur de ressources {#adding-asset-editor-actions}
+#### Ajout d’actions à Asset Editor {#adding-asset-editor-actions}
 
 Vous pouvez déterminer les actions que les utilisateurs peuvent effectuer sur des ressources numériques sélectionnées à partir d’une sélection d’actions prédéfinies.
 
@@ -395,7 +395,7 @@ Pour ajouter des actions à la page Éditeur de ressources :
 Avec AEM Assets, vous pouvez apporter des modifications à plusieurs ressources à la fois. Après avoir sélectionné les ressources, vous pouvez simultanément modifier leurs :
 
 * Balises
-* Métadonnées  
+* Métadonnées
 
 Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeur de ressources :
 
