@@ -3,16 +3,16 @@ title: Utilisation du module de démonstration pour les statistiques sur les res
 description: Utilisez le module de démonstration pour permettre à Adobe Assets Insights de capturer des données à partir de et de générer des informations pour une page web.
 contentOwner: AG
 feature: Statistiques sur les ressources, rapports sur les ressources
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: c6d321f5-4c48-47f2-bff1-c4da988c0e84
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 59%
+ht-degree: 62%
 
 ---
 
-# Utilisation du module de démonstration pour Assets Insights {#using-demo-package-for-asset-insights}
+# Utilisation du module de démonstration pour les statistiques sur les ressources {#using-demo-package-for-asset-insights}
 
 À l’aide du module de démonstration, vous pouvez activer Adobe Assets Insights pour capturer des données à partir de et générer des informations pour un exemple de page web.
 
