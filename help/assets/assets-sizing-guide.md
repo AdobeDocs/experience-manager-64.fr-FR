@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 feature: Gestion des ressources
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1860'
 ht-degree: 90%
@@ -75,13 +75,13 @@ La mise en œuvre d’une banque de données partagée introduit un point de dé
 
 La mise en œuvre du service AWS S3 pour les banques de données partagées est préférable, car il réduit considérablement la probabilité de défaillance par rapport aux architectures de disque normales.
 
-#### Complexité accrue  {#increased-complexity}
+#### Complexité accrue {#increased-complexity}
 
 Les banques de données partagées augmentent également la complexité des opérations, telles que le nettoyage de la mémoire. Normalement, le nettoyage de la mémoire pour une banque de données autonome peut être lancé d’un seul clic. Cependant, les banques de données partagées requièrent des opérations de balayage des repères sur chaque membre utilisant la banque de données, en plus de l’exécution du nettoyage réel sur un seul nœud.
 
 Pour les opérations AWS, la mise en œuvre d’un emplacement central unique (via S3) plutôt que la création d’une matrice RAID de volumes EBS peut considérablement limiter la complexité et les risques opérationnels du système.
 
-#### Problèmes de performances  {#performance-concerns}
+#### Problèmes de performances {#performance-concerns}
 
 Une banque de données partagée nécessite que les fichiers binaires soient stockés sur un lecteur monté sur le réseau partagé entre toutes les instances. Comme ces fichiers binaires sont accessibles sur un réseau, les performances du système sont affectées. Vous pouvez partiellement atténuer cet impact en utilisant une connexion réseau rapide à une matrice rapide de disques. Toutefois, il s’agit d’une proposition coûteuse. Dans le cas des opérations AWS, tous les disques sont distants et nécessitent une connectivité réseau. Les volumes éphémères perdent des données lorsque l’instance démarre ou s’arrête.
 
@@ -89,7 +89,7 @@ Une banque de données partagée nécessite que les fichiers binaires soient sto
 
 La latence dans les mises en œuvre S3 est introduite par les threads d’écriture en arrière-plan. Les procédures de sauvegarde doivent prendre en compte cette latence, ainsi que les procédures de déchargement. La ressource S3 peut ne pas être présente dans S3 lorsqu’une tâche de déchargement démarre. De plus, les index Lucene peuvent rester incomplets lors d’une sauvegarde. Cela s’applique à tout fichier sensible au temps écrit dans la banque de données S3 et accessible depuis une autre instance.
 
-### Magasin de nœuds/Banque de documents  {#node-store-document-store}
+### Magasin de nœuds/Banque de documents {#node-store-document-store}
 
 Il est difficile d’obtenir des chiffres de dimensionnement précis pour un magasin de nœuds ou une banque de documents en raison des ressources utilisées par les éléments suivants :
 
@@ -144,6 +144,6 @@ Si les rendus ne sont pas générés correctement, utilisez la bibliothèque Cam
 
 Il est difficile d’estimer avec précision la taille du fichier TIFF pris en charge prêt à l’emploi avec un tas spécifique pour AEM en raison de facteurs supplémentaires, tels que la taille des pixels, qui influence le traitement. Il est possible qu’AEM puisse traiter un fichier prêt à l’emploi d’une taille de 255 Mo, mais ne puisse pas traiter un fichier de 18 Mo, parce que ce dernier comprend un nombre inhabituellement plus élevé de pixels par rapport au premier.
 
-## Taille des ressources  {#size-of-assets}
+## Taille des ressources {#size-of-assets}
 
 Par défaut, AEM vous permet de charger des ressources d’une taille de fichier allant jusqu’à 2 Go. Pour charger des ressources très volumineuses dans AEM, voir [Configuration pour charger des ressources très volumineuses](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).
