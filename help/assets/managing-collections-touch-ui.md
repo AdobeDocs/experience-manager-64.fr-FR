@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des collections de ressources, te
 contentOwner: AG
 mini-toc-levels: 1
 feature: Collections
-role: Business Practitioner
+role: User
 exl-id: cadfc569-5725-4012-9f73-864243ba7743
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2329'
 ht-degree: 84%
@@ -165,7 +165,7 @@ Les métadonnées de collection incluent les données sur la collection, notamme
 1. Sur la page **[!UICONTROL Métadonnées de collection]**, affichez les métadonnées de collection à partir des onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]**.
 1. Modifiez les métadonnées suivant les besoins, puis appuyez/cliquez sur l’icône **[!UICONTROL Enregistrer et fermer]** de la barre d’outils pour enregistrer les modifications.
 
-### Modification des métadonnées de plusieurs collections en bloc {#editing-collection-metadata-in-bulk}
+### Modification en masse des métadonnées de plusieurs collections {#editing-collection-metadata-in-bulk}
 
 Vous pouvez modifier simultanément les métadonnées de plusieurs collections. Cette fonctionnalité vous aide à répliquer rapidement des métadonnées communes dans plusieurs collections.
 
@@ -254,7 +254,7 @@ Vous pouvez ajouter une collection à une autre collection, créant ainsi une co
 >
 >Les collections dynamiques ne peuvent pas être imbriquées. En d’autres termes, elles ne peuvent pas comporter d’autres collections.
 
-## Recherches enregistrées {#saved-searches}
+## Recherches enregistrées  {#saved-searches}
 
 Dans l’interface utilisateur d’Assets, vous pouvez rechercher ou filtrer des ressources selon des règles, critères de recherche ou facettes de recherche personnalisées. Si vous enregistrez ces éléments en tant que **[!UICONTROL recherches enregistrées]**, vous pouvez y accéder ultérieurement à partir de la liste **[!UICONTROL Recherches enregistrées]** du panneau Filtrer. La création d’une recherche enregistrée entraîne celle d’une collection dynamique.
 
@@ -268,11 +268,11 @@ Les recherches enregistrées sont créées lorsque vous créez une collection dy
 >
 >Vous pouvez partager les collections dynamiques comme s’il s’agissait de collections statiques.
 
-### Modifier les recherches enregistrées {#editing-saved-searches}
+### Modification des recherches enregistrées {#editing-saved-searches}
 
 La modification des recherches enregistrées est identique à celle des collections dynamiques. Pour plus d’informations, voir [Modification d’une collection dynamique](/help/assets/managing-collections-touch-ui.md#editing-a-smart-collection).
 
-### Supprimer les recherches enregistrées {#deleting-saved-searches}
+### Suppression de recherches enregistrées {#deleting-saved-searches}
 
 1. Dans l’interface utilisateur Assets, appuyez/cliquez sur l’icône de recherche de la barre d’outils.
 
