@@ -3,9 +3,9 @@ title: Gérez des ressources composites et générez des sous-ressources.
 description: Découvrez comment créer des références à AEM ressources à partir de fichiers InDesign, Adobe Illustrator et Photoshop. Découvrez également comment utiliser la fonction Visionneuse de page pour afficher les pages individuelles de fichiers de plusieurs pages, y compris les fichiers PDF, INDD, PPT, PPTX et AI.
 contentOwner: AG
 feature: Gestion des ressources
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 47%
@@ -83,7 +83,7 @@ Cette procédure est similaire à [Ajouter des ressources en tant que référenc
 >
 >Les ressources contenues dans des ressources composites peuvent également être référencées par ID de document et ID d’instance. Cette fonctionnalité est disponible avec les versions d’Adobe Illustrator et d’Adobe Photoshop uniquement. Pour les autres, le référencement s’effectue sur la base du chemin d’accès relatif des ressources liées dans la ressource composite principale, comme dans les versions précédentes d’AEM.
 
-## Créer des sous-ressources {#generate-subassets}
+## Création de sous-ressources {#generate-subassets}
 
 Pour les ressources prises en charge avec des formats multi-pages (fichiers PDF, AI, Microsoft PowerPoint et Apple Keynote et fichiers Adobe InDesign), AEM peut générer des sous-ressources qui correspondent à chaque page de la ressource d’origine. Ces sous-ressources sont liées à la ressource *parent* et facilitent l’affichage de plusieurs pages. Pour tous les autres usages, les sous-ressources sont traitées comme des ressources normales dans AEM.
 
