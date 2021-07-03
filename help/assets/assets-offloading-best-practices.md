@@ -3,9 +3,9 @@ title: Bonnes pratiques de déchargement dans Assets
 description: Cas d’utilisation recommandés et meilleures pratiques pour le déchargement des workflows d’assimilation et de réplication des ressources dans AEM Assets.
 contentOwner: AG
 feature: Gestion des ressources
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 80%
@@ -52,7 +52,7 @@ Une fois qu’une tâche est écrite sur le programme de travail, le gestionnair
 
 La topologie Sling regroupe les instances AEM et leur permet de se connaître mutuellement, indépendamment de la persistance sous-jacente. Cette caractéristique de la topologie Sling permet de créer des topologies pour des scénarios sans cluster, en cluster et mixtes. Une instance peut présenter des propriétés à l’ensemble de la topologie. La structure fournit des rappels permettant d’écouter les modifications de la topologie (instances et propriétés). La topologie Sling fournit la base des tâches distribuées Sling.
 
-### Tâches distribuées Sling  {#sling-distributed-jobs}
+### Tâches distribuées Sling {#sling-distributed-jobs}
 
 Les tâches distribuées Sling facilitent la distribution des tâches parmi un ensemble d’instances membres de la topologie. Les tâches Sling reposent sur le concept de fonctionnalités. Une tâche est définie par sa rubrique de tâche. Pour exécuter une tâche, une instance doit fournir un consommateur de tâche pour une rubrique de tâche spécifique. La rubrique de tâche est le pilote principal correspondant au mécanisme de distribution.
 
@@ -60,7 +60,7 @@ Les tâches sont uniquement distribuées aux instances qui fournissent un consom
 
 Dans ce contexte, le terme « distribution » signifie l’affectation d’une tâche à une instance spécifique qui fournit un consommateur de tâche. L’affectation à une instance est enregistrée dans le référentiel. En d’autres termes, les tâches distribuées Sling peuvent être affectées à n’importe quelle instance de la topologie par défaut. Cependant, les autres tâches ne peuvent être exécutées que par des instances partageant le même référentiel. Cela signifie que ces tâches peuvent uniquement être exécutées par les instances faisant partie du même cluster. Les tâches affectées à des instances d’un autre cluster ne sont pas exécutées.
 
-### Structure de déchargement Granite  {#granite-offloading-framework}
+### Structure de déchargement Granite {#granite-offloading-framework}
 
 La structure de déchargement Granite complète la distribution des tâches Sling afin d’exécuter les tâches affectées aux instances qui ne sont pas en cluster. Elle n’effectue aucune distribution (affectation d’instances). Toutefois, elle identifie les tâches Sling qui ont été distribuées à des instances sans cluster et les transporte vers l’instance cible pour exécution. Actuellement, le déchargement utilise la réplication pour effectuer ce transport de tâches. Pour exécuter une tâche, le déchargement définit l’entrée et la sortie, qui sont ensuite combinées avec la tâche pour créer la charge utile de cette dernière.
 
@@ -70,7 +70,7 @@ En plus du transport, la structure de déchargement fournit une extension du mot
 
 La structure de déchargement fournit également une interface utilisateur (IU) permettant de visualiser et de contrôler l’activation des rubriques de tâche sur l’ensemble de la topologie. L’interface utilisateur permet de configurer facilement l’activation des rubriques des tâches Sling distribuées. Vous pouvez également configurer le déchargement sans l’interface utilisateur.
 
-## Conseils généraux et meilleures pratiques pour le déchargement des ressources  {#general-guidance-and-best-practices-for-asset-offloading}
+## Conseils généraux et meilleures pratiques pour le déchargement des ressources {#general-guidance-and-best-practices-for-asset-offloading}
 
 Chaque mise en œuvre est unique et, en tant que telle, il n’y a pas de configuration de déchargement unique. Les sections suivantes présentent des conseils et les meilleures pratiques concernant le déchargement de l’assimilation des ressources.
 
@@ -87,7 +87,7 @@ Si vous estimez que le déchargement des ressources est une approche adaptée à
 * Le déchargement des ressources basé sur TarMK n’est pas conçu pour la mise à l’échelle horizontale étendue
 * Assurez-vous que les performances du réseau entre l’auteur et les programmes de travail sont satisfaisantes
 
-### Déploiement recommandé du déchargement des ressources  {#recommended-assets-offloading-deployment}
+### Déploiement recommandé du déchargement des ressources {#recommended-assets-offloading-deployment}
 
 Avec AEM et Oak, il existe plusieurs scénarios de déploiement possibles. Pour le déchargement des ressources, un déploiement basé sur TarMK avec une banque de données partagée est recommandé. Le diagramme ci-dessous décrit le déploiement recommandé :
 
@@ -95,7 +95,7 @@ Avec AEM et Oak, il existe plusieurs scénarios de déploiement possibles. Pour 
 
 Pour plus d’informations sur la configuration d’une banque de données, voir [Configuration des magasins de nœuds et des banques de données dans AEM](../sites-deploying/data-store-config.md).
 
-### Désactivation de la gestion automatique des agents  {#turning-off-automatic-agent-management}
+### Désactivation de la gestion automatique des agents {#turning-off-automatic-agent-management}
 
 Adobe recommande de désactiver la gestion automatique des agents car elle ne prend pas en charge la réplication sans fichier binaire et peut entraîner une confusion lors de la configuration d’une nouvelle topologie de déchargement. De plus, il ne prend pas automatiquement en charge le flux de réplication vers l’avant requis par la réplication sans fichier binaire.
 
@@ -103,7 +103,7 @@ Adobe recommande de désactiver la gestion automatique des agents car elle ne pr
 1. Ouvrez la configuration pour `OffloadingAgentManager` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager`).
 1. Désactivez la gestion automatique des agents.
 
-### Utilisation de la réplication vers l’avant  {#using-forward-replication}
+### Utilisation de la réplication vers l’avant {#using-forward-replication}
 
 Par défaut, le transport du déchargement utilise la réplication inverse pour transférer les ressources déchargées du programme de travail vers l’instance principale. Les agents de réplication inverse ne prennent pas en charge la réplication sans fichier binaire. Vous devez configurer le déchargement afin d’utiliser la réplication de transfert pour transférer les ressources déchargées du programme de travail vers l’instance principale.
 
@@ -142,7 +142,7 @@ Pour désactiver le transport du modèle de workflow, modifiez le workflow Déch
 1. Ouvrez l’onglet Arguments et désélectionnez les options Ajouter un modèle à l’entrée et Ajouter un modèle à la sortie .
 1. Enregistrez les modifications apportées au modèle.
 
-### Optimisation de la fréquence d’interrogation  {#optimizing-the-polling-interval}
+### Optimisation de la fréquence d’interrogation {#optimizing-the-polling-interval}
 
 Le déchargement des workflows est mis en oeuvre à l’aide d’un workflow externe sur la Principale, qui interroge la fin du workflow déchargé sur le programme de travail. La fréquence d’interrogation par défaut pour les workflows externes est de cinq secondes. Adobe recommande d’augmenter la fréquence d’interrogation de l’étape de déchargement des ressources à au moins 15 secondes afin de réduire la surcharge de déchargement sur l’instance principale.
 
@@ -154,7 +154,7 @@ Le déchargement des workflows est mis en oeuvre à l’aide d’un workflow ext
 1. Ouvrez l’onglet Commons et ajustez la valeur de la propriété Period.
 1. Enregistrez les modifications apportées au modèle.
 
-## Autres ressources  {#more-resources}
+## Autres ressources {#more-resources}
 
 Ce document aborde le déchargement des ressources. Documentation supplémentaire sur le déchargement :
 
