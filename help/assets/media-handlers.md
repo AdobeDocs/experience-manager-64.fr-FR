@@ -3,16 +3,16 @@ title: Traitement des ressources à l’aide des workflows et des gestionnaires 
 description: En savoir plus sur les différents gestionnaires de médias et sur la façon de les utiliser dans les workflows afin d’effectuer des tâches sur les ressources.
 contentOwner: AG
 feature: Workflow,Rendus
-role: Business Practitioner
+role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 44%
 
 ---
 
-# Traitement des ressources à l’aide de gestionnaires de médias et de workflows {#processing-assets-using-media-handlers-and-workflows}
+# Traitement des ressources à l’aide des workflows et des gestionnaires de médias {#processing-assets-using-media-handlers-and-workflows}
 
 Adobe Experience Manager Assets fournit un ensemble de workflows et de gestionnaires de médias par défaut pour traiter les ressources. Un workflow définit une tâche type de gestion et de traitement des ressources, puis délègue les tâches spécifiques aux gestionnaires de médias, par exemple la génération de miniatures ou l’extraction de métadonnées.
 
@@ -60,7 +60,7 @@ Il est possible d’afficher les gestionnaires de médias actifs :
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## Utilisez les gestionnaires de médias dans les workflows pour effectuer des tâches sur Assets {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Utilisation des gestionnaires de médias dans les workflows pour effectuer des tâches sur Assets {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 Les gestionnaires de médias sont des services utilisés avec des workflows.
 
