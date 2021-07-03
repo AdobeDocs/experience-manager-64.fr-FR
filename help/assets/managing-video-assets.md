@@ -8,10 +8,10 @@ discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: Gestion des ressources, vidéo
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1795b0faed0570e8130c1ba60de07bda49db8fde
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 52%
+ht-degree: 51%
 
 ---
 
@@ -44,7 +44,7 @@ Par défaut, AEM Assets ne vous permet pas de charger des ressources de plus de 
 Outre la configuration AEM Assets, modifiez les configurations suivantes pour charger des ressources volumineuses :
 
 * Augmentez le délai d’expiration du jeton. Voir [!UICONTROL Adobe du servlet CSRF Granite] dans la console web à l’adresse `https://[aem_server]:[port]/system/console/configMgr`. Pour plus d’informations, voir [Protection CSRF](/help/sites-developing/csrf-protection.md).
-* Augmentez la configuration `receiveTimeout` du répartiteur. Pour plus d’informations, voir [Configuration du répartiteur Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
+* Augmentez la configuration `receiveTimeout` du répartiteur. Pour plus d’informations, voir [Configuration du répartiteur Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#renders-options).
 
 >[!NOTE]
 >
