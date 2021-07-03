@@ -3,9 +3,9 @@ title: Bibliothèque ITL
 description: Apprenez à configurer et à utiliser la bibliothèque de transcodage de l’imagerie (ou ITL, de l’anglais Imaging Transcoding Library) d’Adobe, une solution de traitement des images qui peut réaliser des fonctions essentielles de manipulation graphique, y compris le codage, le transcodage, le rééchantillonnage et le redimensionnement des images.
 contentOwner: AG
 feature: Rendus,Outils de développement,Traitement des ressources
-role: Administrator
+role: Admin
 exl-id: 0314626d-e846-4f10-950e-6c1ceb7f4c06
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 37%
@@ -32,7 +32,7 @@ Outre la prise en charge d’un large éventail de formats de fichiers et de pro
 * **Débit élevé :** le temps de réponse est inférieur et le débit est systématiquement supérieur à celui d’ImageMagick. Par conséquent, la bibliothèque ITL doit réduire le temps d’attente des utilisateurs et le coût de l’hébergement.
 * **Optimiser l’échelle avec un chargement simultané :**  la bibliothèque ITL fonctionne de manière optimale dans des conditions de chargement simultanées. La bibliothèque offre un débit élevé avec une performance du processeur et une utilisation de la mémoire optimaux, et un temps de réponse faible, ce qui permet de réduire le coût de l’hébergement.
 
-## Plateformes prises en charge {#supported-platforms}
+## Platesformes prises en charge {#supported-platforms}
 
 La bibliothèque ITL est disponible uniquement pour les distributions RHEL 7 et CentOS 7.
 
@@ -74,7 +74,7 @@ Vous pouvez configurer les options suivantes pour le paramètre `-resize` :
 
 Pour configurer le traitement ITL, créez un fichier de configuration et mettez à jour le workflow pour l’exécuter.
 
-### Créer un fichier de configuration pour le lot extrait {#create-conf-file}
+### Création d’un fichier de configuration pour le lot extrait {#create-conf-file}
 
 Pour configurer la bibliothèque, créez un fichier .conf pour indiquer les bibliothèques en procédant comme suit. Vous avez besoin d’autorisations d’administrateur ou de root.
 
