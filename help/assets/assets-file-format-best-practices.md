@@ -3,9 +3,9 @@ title: Meilleures pratiques relatives au format de fichier des ressources
 description: Meilleures pratiques relatives à la prise en charge des fichiers dans AEM Assets.
 contentOwner: AG
 feature: Gestion des ressources,Outils de développement
-role: Administrator
+role: Admin
 exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 91%
@@ -39,7 +39,7 @@ Pour des résultats optimaux, Adobe recommande d’utiliser la bibliothèque Ado
 
 Les miniatures et les aperçus générés à l’aide de l’interpréteur de PDF sont de qualité supérieure par rapport à la sortie de trame prête à l’emploi. La bibliothèque PDF Rasterizer d’Adobe ne prend en charge aucune conversion d’espace colorimétrique. Quel que soit l’espace colorimétrique du fichier PDF source, l’interpréteur de PDF Adobe génère la sortie RVB uniquement.
 
-## Serveur Adobe InDesign  {#adobe-indesign-cc-server}
+## Serveur Adobe InDesign {#adobe-indesign-cc-server}
 
 Adobe vous recommande d’utiliser le serveur Adobe InDesign pour extraire des rendus spécifiques à Adobe InDesign, tels que IDML et HTML. Pour plus d’informations, voir [Ajout d’AEM ressources en tant que références dans Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
 
@@ -60,7 +60,7 @@ Adobe recommande d’utiliser la bibliothèque ImageMagick dans les cas suivants
 
 Pour savoir comment configurer la bibliothèque ImageMagic dans AEM, voir [Utilisation d’ImageMagick](media-handlers.md#an-example-using-imagemagick). Pour une utilisation optimale, voir [Bonnes pratiques pour configurer ImageMagick](best-practices-for-imagemagick.md).
 
-## Bibliothèque de transcodage d’imagerie (ITL)  {#image-transcoding-library}
+## Bibliothèque de transcodage d’imagerie (ITL) {#image-transcoding-library}
 
 La bibliothèque Adobe Imaging Transcoding Library est une solution de traitement des images qui exécute des fonctions essentielles de manipulation graphique, y compris le codage, le transcodage, le rééchantillonnage, le redimensionnement des images, etc.
 
