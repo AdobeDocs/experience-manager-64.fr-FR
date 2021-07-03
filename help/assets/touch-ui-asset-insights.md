@@ -3,12 +3,12 @@ title: Utilisez la fonction Statistiques sur les ressources pour effectuer le su
 description: La fonction Statistiques sur les ressources vous permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création d’Adobe.
 contentOwner: AG
 feature: Statistiques sur les ressources, rapports sur les ressources
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: af2d14f92efb88143ccefe7fe29f83ae515e5981
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 59%
+ht-degree: 63%
 
 ---
 
@@ -26,7 +26,7 @@ Pour permettre à Assets Insights d’afficher les statistiques d’utilisation 
 
 >[!NOTE]
 >
->Les statistiques sont prises en charge et fournies uniquement pour les images.
+>Les statistiques sont uniquement prises en charge et fournies pour les images.
 
 ## Affichage des statistiques pour une ressource {#viewing-statistics-for-an-asset}
 
@@ -61,7 +61,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
    >
    >Contrairement aux données de la section solutions , la section Statistiques de performances affiche les données les plus récentes.
 
-1. Pour obtenir le code incorporé de la ressource que vous incluez sur les sites web afin d’obtenir les données de performances, cliquez sur **[!UICONTROL Obtenir le code intégré]** sous la miniature de la ressource. Pour plus d’informations sur la manière d’inclure votre code intégré dans des pages web tierces, voir [Utilisation du dispositif de suivi de page et du code intégré dans les pages web](touch-ui-using-page-tracker.md).
+1. Pour obtenir le code intégré de la ressource que vous incluez sur les sites web afin d’obtenir les données de performances, cliquez sur **[!UICONTROL Obtenir le code intégré]** au-dessous de la vignette de la ressource. Pour plus d’informations sur la manière d’inclure votre code intégré dans des pages web tierces, voir [Utilisation du dispositif de suivi de page et du code intégré dans les pages web](touch-ui-using-page-tracker.md).
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
