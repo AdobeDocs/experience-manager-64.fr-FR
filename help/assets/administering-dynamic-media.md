@@ -9,11 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 exl-id: dd43de7b-8556-4e3f-9d90-14f0f5bd13e7
 feature: Configuration
-role: Administrator,Business Practitioner,Developer
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User,Developer
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 74%
+ht-degree: 73%
 
 ---
 
@@ -33,7 +33,7 @@ Si vous administrez des médias dynamiques, les rubriques suivantes peuvent vous
 * [Configuration du mode](config-dynamic.md)  hybride Dynamic Media : utilisez cette configuration si vous êtes déjà un client Dynamic Media effectuant une mise à niveau AEM.
 * [Gestion des paramètres d’image prédéfinis](managing-image-presets.md)
 * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
-* [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md)
+* [Résolution des problèmes liés à Dynamic Media - Mode Scene7](troubleshoot-dms7.md)
 
 Voir aussi les rubriques suivantes :
 
