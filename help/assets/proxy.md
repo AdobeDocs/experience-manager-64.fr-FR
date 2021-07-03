@@ -3,12 +3,12 @@ title: Développement d’un proxy Assets
 description: 'Un proxy est une instance AEM qui utilise des programmes de travail par proxy pour le traitement des tâches. Découvrez comment configurer un proxy AEM, les opérations prises en charge et les composants de proxy, ainsi que comment développer un programme de travail par proxy personnalisé. '
 contentOwner: AG
 feature: Traitement des ressources
-role: Administrator, Architect
+role: Admin, Architect
 exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '902'
-ht-degree: 74%
+ht-degree: 75%
 
 ---
 
@@ -22,7 +22,7 @@ Lorsque le proxy est une instance AEM distincte, il contribue à réduire la cha
 
 ## Proxy (Accès HTTP) {#proxy-http-access}
 
-Un proxy est disponible via le servlet HTTP lorsqu’il est configuré pour accepter des tâches de traitement à l’adresse : `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Elle est ensuite ajoutée à la file d’attente des tâches du proxy et connectée au worker de proxy approprié.
+Un proxy est disponible via le servlet HTTP lorsqu’il est configuré de sorte à accepter les tâches de traitement dans le répertoire suivant : `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Elle est ensuite ajoutée à la file d’attente des tâches du proxy et connectée au worker de proxy approprié.
 
 ### Opérations prises en charge {#supported-operations}
 
@@ -104,7 +104,7 @@ Voici un exemple d’utilisation d’API :
  proxyJobService.removeJob(jobId);
 ```
 
-### Configurations du service cloud {#cloud-service-configurations}
+### Configurations du service cloud  {#cloud-service-configurations}
 
 >[!NOTE]
 >
