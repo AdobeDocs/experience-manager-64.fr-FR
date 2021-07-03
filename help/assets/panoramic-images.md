@@ -7,8 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 exl-id: 51150d51-865e-4b8e-9990-ca755e4c7778
 feature: Images panoramiques
-role: Business Practitioner
-source-git-commit: 489a4b42bdd5895186ba885b9a1dc33b49427e8d
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 46%
@@ -82,6 +82,6 @@ Si vous avez déposé une image dans le composant **[!UICONTROL Média panoramiq
 
 Voir [Aperçu des ressources](previewing-assets.md).
 
-## Publication des images panoramiques {#publishing-panoramic-images}
+## Publication des images panoramiques  {#publishing-panoramic-images}
 
 Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
