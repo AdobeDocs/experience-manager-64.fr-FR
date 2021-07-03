@@ -8,11 +8,11 @@ content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
 feature: Paramètres d’image prédéfinis
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3839'
-ht-degree: 80%
+source-wordcount: '3838'
+ht-degree: 79%
 
 ---
 
@@ -96,7 +96,7 @@ Vous accédez aux options du composant de processus **[!UICONTROL Pixelliser le 
 
 Appuyez sur Adobe Experience Manager dans le coin supérieur gauche de l’écran, puis accédez à **[!UICONTROL Outils > Processus > Modèles]**. Sur la page **[!UICONTROL Modèles de processus]**, sélectionnez **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**, puis, sur la barre d’outils, appuyez sur **[!UICONTROL Modifier]**. Sur la page **[!UICONTROL Processus de mise à jour des ressources de gestion des actifs numériques]** , appuyez deux fois sur le composant de processus **[!UICONTROL Pixelliser le rendu d’aperçu d’image PDF/AI]** pour ouvrir sa boîte de dialogue **[!UICONTROL Propriétés de l’étape]** .
 
-### Pixelliser les options de rendu d’aperçu d’image PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
+### Options de rendu d’aperçu d’image PDF/AI pixellisé {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![Arguments pour pixelliser le workflow PDF ou AI](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -185,7 +185,7 @@ Vous pouvez définir la taille des miniatures en configurant ces paramètres dan
 
 Avec l’étape **[!UICONTROL Ressources d’image du processus Dynamic Media]**, les miniatures sont générées par le serveur d’images et cette configuration est indépendante de la configuration appliquée à l’étape des **[!UICONTROL miniatures de processus]**. La génération de miniatures en passant par l’étape **[!UICONTROL Miniatures des processus]** constitue la méthode la plus lente et la plus gourmande en mémoire.
 
-Le dimensionnement des miniatures est défini au format suivant : **width:height:center** (largeur:hauteur:centrer), par exemple *80:80:false*. La largeur et la hauteur déterminent la taille en pixels de la miniature. La valeur « centrer » est soit false soit true. Si elle est définie sur true, elle indique que la miniature a exactement la taille spécifiée dans la configuration. Si l’image redimensionnée est plus petite, elle est centrée dans la miniature.
+Le dimensionnement des miniatures est défini au format suivant : **width:height:center**, par exemple *80:80:false*. La largeur et la hauteur déterminent la taille en pixels de la miniature. La valeur « centrer » est soit false soit true. Si elle est définie sur true, elle indique que la miniature a exactement la taille spécifiée dans la configuration. Si l’image redimensionnée est plus petite, elle est centrée dans la miniature.
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ Le dimensionnement des miniatures est défini au format suivant : **width:heigh
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications apportées au workflow.
 
-### Augmentation ou diminution du nombre de paramètres d’image prédéfinis Dynamic Media qui affichent {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### Augmentation ou diminution du nombre de paramètres d’image prédéfinis Dynamic Media affichés {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 Les paramètres d’image prédéfinis que vous créez sont disponibles sous la forme de rendus dynamiques lorsque vous prévisualisez des ressources. AEM affiche une grande variété de rendus dynamiques lors de l’affichage de ressources à partir de **[!UICONTROL Affichage des détails > Rendus]**. Vous pouvez augmenter ou diminuer la limite des rendus affichés.
 
@@ -422,7 +422,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
  </tbody>
 </table>
 
-## Définition des options de paramètre d’image prédéfini avec des modificateurs d’image {#defining-image-preset-options-with-image-modifiers}
+## Définition des options de paramètre d’image prédéfini à l’aide de modificateurs d’image {#defining-image-preset-options-with-image-modifiers}
 
 Outre les options disponibles dans les onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]**, vous pouvez définir des modificateurs d’image pour vous donner plus d’options lorsque vous définissez des paramètres d’image prédéfinis. Le rendu des images repose sur l’API de rendu d’images de Dynamic Media. L’API est définie en détail dans la [Référence du protocole HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html).
 
