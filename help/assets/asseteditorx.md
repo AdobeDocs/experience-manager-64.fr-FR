@@ -3,9 +3,9 @@ title: Étendre l’Éditeur de ressources
 description: Découvrez comment étendre les fonctionnalités de l’Éditeur de ressources en utilisant des composants personnalisés.
 contentOwner: AG
 feature: Outils de développement
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 98%
@@ -58,11 +58,11 @@ Certains composants d’AEM Assets utilisent la bibliothèque de widgets d’AE
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Feuille de style Geometrixx   {#geometrixx-style-sheet}
+### Feuille de style Geometrixx  {#geometrixx-style-sheet}
 
 Les exemples de composants de page nécessitent que tous les sélecteurs commencent par `.asseteditor` dans `static.css` (`/etc/designs/geometrixx/static.css`). Bonne pratique : copiez tous les sélecteurs `.asseteditor` dans votre feuille de style et ajustez les règles en fonction de vos besoins.
 
-### FormChooser : réglages pour les ressources chargées par la suite.{#formchooser-adjustments-for-eventually-loaded-resources}
+### FormChooser : réglages pour les ressources chargées par la suite. {#formchooser-adjustments-for-eventually-loaded-resources}
 
 L’Éditeur de ressources utilise le sélecteur de formulaire, qui permet de modifier les ressources sur la même page de formulaire. Pour cela, il suffit d’ajouter un sélecteur de formulaire et le chemin du formulaire vers l’URL de la ressource.
 
@@ -121,7 +121,7 @@ Dans la partie HTML, utilisez l’ensemble de titre précédent (titre de la res
 <title><%= title %></title>
 ```
 
-## Création d’un composant de champ de formulaire simple   {#creating-a-simple-form-field-component}
+## Création d’un composant de champ de formulaire simple  {#creating-a-simple-form-field-component}
 
 Cet exemple illustre comment créer un composant qui affiche les métadonnées d’une ressource chargée.
 
@@ -202,7 +202,7 @@ Cet exemple illustre comment créer un composant qui affiche les métadonnées d
 
 1. En mode d’**édition**, le nouveau composant (par exemple, **Exemple de métadonnées**) est désormais disponible dans le sidekick (qui se trouve dans le groupe **Éditeur de ressources**). Insérez le composant. Pour pouvoir stocker les métadonnées, celles-ci doivent être ajoutées au formulaire de métadonnées.
 
-## Modification des options de métadonnées   {#modifying-metadata-options}
+## Modification des options de métadonnées  {#modifying-metadata-options}
 
 Vous pouvez modifier les espaces de noms disponibles [sous forme de métadonnées](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
 
