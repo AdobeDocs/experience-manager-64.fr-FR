@@ -3,9 +3,9 @@ title: Guide d’optimisation des performances des ressources
 description: Traite principalement de la configuration d’AEM, ainsi que des modifications du matériel, des logiciels et des composants réseau pour supprimer les goulets d’étranglement et optimiser la performance d’AEM Assets.
 contentOwner: AG
 feature: Gestion des ressources
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3208'
 ht-degree: 84%
@@ -53,7 +53,7 @@ Une fois que le volume temporaire haute performance est prêt, définissez le pa
 
 Étant donné qu’Oracle a cessé de publier des mises à jour de Java 7 depuis avril 2015, Adobe vous recommande de déployer AEM Assets sous Java 8. Dans certains cas, une amélioration des performances a été constatée.
 
-### Paramètres JVM     {#jvm-parameters}
+### Paramètres JVM    {#jvm-parameters}
 
 Vous devez définir les paramètres JVM suivants :
 
@@ -69,7 +69,7 @@ Vous devez définir les paramètres JVM suivants :
 
 Nous recommandons à tous les utilisateurs d’AEM Assets de séparer l’entrepôt de données et l’entrepôt de segments. En outre, la configuration des paramètres `maxCachedBinarySize` et `cacheSizeInMB` peut vous aider à optimiser les performances. Définissez le paramètre `maxCachedBinarySize` selon la plus petite taille de fichier pouvant être contenue dans le cache. Spécifiez la taille du cache en mémoire à utiliser pour l’entrepôt de données dans `cacheSizeInMB`. Adobe vous recommande de définir cette valeur entre 2 et 10 % de la taille totale du tas. Toutefois, le chargement ou le test des performances peuvent vous aider à déterminer le paramètre idéal.
 
-### Configuration de la taille maximale du cache d’images mis en mémoire tampon     {#configure-the-maximum-size-of-the-buffered-image-cache}
+### Configuration de la taille maximale du cache d’images mis en mémoire tampon    {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 Lors du chargement d’un grand nombre de ressources vers Adobe Experience Manager, réduisez la taille maximale configurée du cache d’images mis en mémoire tampon. De cette façon, vous tiendrez compte des pics inattendus de consommation de la mémoire et éviterez l’échec de JVM avec des erreurs de mémoire insuffisante. Prenez l’exemple d’un système présentant un tas maximal (paramètre -`Xmx`) de 5 Go, un BlobCache Oak défini sur 1 Go et un cache de documents défini sur 2 Go. Dans ce cas, le cache mis en mémoire tampon prendrait au maximum 1,25 Go, ce qui laisserait seulement 0,75 Go pour les pics inattendus.
 
@@ -77,7 +77,7 @@ Configurez la taille du cache mis en mémoire tampon dans la console web OSGi. �
 
 À compter d’AEM 6.1 SP1, si vous utilisez un nœud `sling:osgiConfig` pour configurer cette propriété, veillez à définir le type de données sur Long. Pour plus de détails, voir [CQBufferedImageCache utilise le tas pendant le téléchargement des ressources](https://helpx.adobe.com/fr/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
 
-### Entrepôts de données partagés     {#shared-data-stores}
+### Entrepôts de données partagés    {#shared-data-stores}
 
 La mise en œuvre d’un entrepôt de données basé sur les fichiers, partagé ou S3, peut vous aider à économiser de l’espace disque et à augmenter le débit réseau dans des implémentations à grande échelle. Pour plus d’informations sur les avantages et inconvénients de l’utilisation d’une banque de données partagée, voir [Guide de dimensionnement des ressources](assets-sizing-guide.md).
 
@@ -148,7 +148,7 @@ Dans la mesure du possible, définissez le workflow Ressource de mise à jour de
 
    Par exemple, après l’exécution d’un grand nombre de workflows transitoires (ce qui crée des nœuds d’instance de workflow), vous pouvez exécuter l’[outil de suppression de workflow ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) sur une base ponctuelle. Il supprime les instances de workflow terminées et redondantes immédiatement sans attendre l’exécution du planificateur de purge de workflow d’Adobe Granite.
 
-### Tâches parallèles maximales     {#maximum-parallel-jobs}
+### Tâches parallèles maximales    {#maximum-parallel-jobs}
 
 Par défaut, AEM exécute un nombre maximal de tâches parallèles qui est égal au nombre de processeurs sur le serveur. Le problème avec ce paramètre est que pendant les périodes de charge importante, tous les processeurs sont occupés par des workflows Ressource de mise à jour de gestion des actifs numériques, ce qui ralentit la réactivité de l’interface utilisateur et empêche AEM d’exécuter d’autres processus qui assurent la stabilité et les performances du serveur. En tant que bonne pratique, définissez cette valeur sur la moitié des processeurs disponibles sur le serveur en procédant comme suit :
 
@@ -289,7 +289,7 @@ L’importation d’une grande quantité de métadonnées peut entraîner une ac
 
 Lors de la réplication des ressources vers un grand nombre d’instances de publication (par exemple, dans une implémentation de sites), Adobe vous recommande d’utiliser la réplication par chaîne. Dans ce cas, l’instance d’auteur est répliquée vers une instance de publication unique qui est répliquée à son tour vers d’autres instances de publication, ce qui libère l’instance d’auteur.
 
-### Configuration de la réplication en chaîne     {#configure-chain-replication}
+### Configuration de la réplication en chaîne    {#configure-chain-replication}
 
 1. Sélectionnez l’instance de publication vers laquelle vous souhaitez effectuer les réplications en chaîne
 1. Sur cette instance de publication, ajoutez des agents de réplication qui pointent vers d’autres instances de publication
@@ -299,7 +299,7 @@ Lors de la réplication des ressources vers un grand nombre d’instances de pub
 >
 >Adobe ne recommande pas d’activer automatiquement les ressources. Cependant, si nécessaire, Adobe recommande d’effectuer cette opération en tant que dernière étape d’un workflow, généralement Ressource de mise à jour de gestion des actifs numériques.
 
-## Recherche des index     {#search-indexes}
+## Recherche des index    {#search-indexes}
 
 Veillez à mettre en œuvre les derniers Service Packs et les correctifs liés aux performances étant donné qu’ils contiennent souvent des mises à jour des index du système. Voir [Conseils de réglage des performances | 6.x](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html) pour connaître certaines optimisations d’index qui peuvent être appliquées en fonction de votre version d’AEM.
 
@@ -388,7 +388,7 @@ De même, lorsque les fichiers atteignent 2 Go lors de l’utilisation d’un e
 
 Pour chaque déploiement AEM, créez un régime de tests de performances qui permet d’identifier et de résoudre les goulots d’étranglement rapidement. Voici quelques points clés.
 
-### Test réseau     {#network-testing}
+### Test réseau    {#network-testing}
 
 Pour tous les problèmes liés aux performances du réseau du client, effectuez les tâches suivantes :
 
@@ -398,14 +398,14 @@ Pour tous les problèmes liés aux performances du réseau du client, effectuez 
 * En utilisant un outil localisateur de réseau
 * Tester par rapport au Dispatcher
 
-### Test de l’instance AEM     {#aem-instance-testing}
+### Test de l’instance AEM    {#aem-instance-testing}
 
 Afin de réduire au maximum la latence et d’obtenir un débit élevé grâce à l’utilisation efficace du processeur et au partage de charge, surveillez régulièrement les performances de votre instance AEM. En particulier :
 
 * Exécuter des tests de charge par rapport à l’instance AEM
 * Surveiller les performances de chargement et la réactivité de l’interface utilisateur
 
-## Liste de contrôle des performances d’AEM Assets     {#aem-assets-performance-checklist}
+## Liste de contrôle des performances d’AEM Assets    {#aem-assets-performance-checklist}
 
 * Autoriser HTTPS à contourner tous les renifleurs de trafic HTTP d’entreprise.
 * Utiliser une connexion câblée pour le chargement de ressources volumineuses.
