@@ -3,9 +3,9 @@ title: Améliorations de l’expérience utilisateur dans Assets
 description: Cet article décrit les améliorations de l’expérience utilisateur dans AEM 6.4 Assets.
 contentOwner: AG
 feature: Informations sur la version
-role: Leader,Business Practitioner
+role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 73%
