@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 exl-id: 07a4f315-a60e-456b-b02d-035b3f6ad9ad
 feature: Paramètres d’image prédéfinis
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 90%
@@ -21,7 +21,7 @@ ht-degree: 90%
 
 # Application de paramètres d’image prédéfinis Dynamic Media {#applying-image-presets}
 
-Les paramètres d’image prédéfinis permettent aux ressources d’afficher dynamiquement des images dans des tailles et des formats différents, ou avec d’autres propriétés d’image générées dynamiquement. Vous pouvez choisir un paramètre prédéfini lorsque vous exportez des images, ce qui modifie également le format des images selon les spécifications définies par l’administrateur.
+Les préréglages d’image permettent aux ressources de fournir dynamiquement des images de différentes tailles, dans différents formats ou avec d’autres propriétés d’image qui sont générées dynamiquement. Vous pouvez choisir un paramètre prédéfini lorsque vous exportez des images, ce qui modifie également le format des images selon les spécifications définies par l&#39;administrateur.
 
 Vous pouvez en outre sélectionner un paramètre d’image prédéfini qui est réactif (désigné par le bouton **[!UICONTROL RESS]** une fois que vous l’avez sélectionné).
 
