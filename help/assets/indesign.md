@@ -3,9 +3,9 @@ title: Intégration d’AEM Assets à Adobe InDesign Server
 description: Découvrez comment intégrer AEM Assets à InDesign Server.
 contentOwner: AG
 feature: Publication
-role: Administrator
+role: Admin
 exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 64%
@@ -87,7 +87,7 @@ Pour intégrer InDesign Server afin de l’utiliser avec AEM Assets, après la
 
 1. Configurer un [programme de traitement du proxy pour InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### Configuration de InDesign Server    {#installing-the-indesign-server}
+### Configuration de InDesign Server   {#installing-the-indesign-server}
 
 Pour installer et démarrer InDesign Server afin de l’utiliser avec AEM :
 
@@ -146,7 +146,7 @@ Le script `ThumbnailExport.jsx` exécuté par l’étape du workflow Extraction 
 
 Vous pouvez configurer l’étape du workflow Miniatures des processus de manière à générer des rendus statiques de différentes tailles. Assurez-vous de ne pas supprimer les valeurs par défaut, car elles sont requises par l’interface utilisateur d’AEM Assets. Enfin, l’étape Processus de suppression du rendu d’aperçus d’image efface le rendu miniature .jpg, car il n’est plus nécessaire.
 
-#### Extraction de page    {#page-extraction}
+#### Extraction de page   {#page-extraction}
 
 Cette opération crée une page AEM à partir des éléments extraits. Un gestionnaire d’extraction est utilisé pour extraire les données d’un rendu (actuellement HTML ou IDML). Ces données sont ensuite utilisées pour créer une page avec PageBuilder.
 
@@ -185,7 +185,7 @@ Par défaut, le gestionnaire d’extraction d’exportation IDML est disponible.
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer.
 
-### Configuration de l’externaliseur de liens DAY CQ {#configuring-day-cq-link-externalizer}
+### Configuration de l’externaliseur de liens DAY CQ  {#configuring-day-cq-link-externalizer}
 
 Si l’InDesign Server et l’AEM se trouvent sur des hôtes différents ou si l’une de ces applications ne fonctionne pas sur les ports par défaut, configurez **l’externaliseur de liens Day CQ** pour définir le nom d’hôte, le port et le chemin d’accès au contenu de l’InDesign Server.
 
