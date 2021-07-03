@@ -2,13 +2,13 @@
 title: Recherche de texte intégral GQL
 description: Explorez la fonction de recherche de texte intégral GQL dans AEM Assets. Utilisez-la afin de rechercher des ressources selon des métadonnées spécifiques telles que le titre, la description et le nom de l’auteur.
 contentOwner: AG
-feature: Recherche, métadonnées
-role: Business Practitioner
+feature: Recherche, Métadonnées
+role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 74%
+source-wordcount: '879'
+ht-degree: 75%
 
 ---
 
@@ -63,10 +63,10 @@ La fonction de recherche en texte intégral GQL vous permet de rechercher des re
 | [!UICONTROL Détenteur de copyright] | copyrightowner:&quot;Adobe Systems&quot; |
 | [!UICONTROL Contributeur] | contributor:John |
 | [!UICONTROL Conditions d’utilisation] | usageterms:&quot;CopyRights Reserved&quot; |
-| [!UICONTROL Créé] | created:YYYY-MM-DDTHH:MM:SS.000+05:30.AAAA-MM-JJTHH:MM:SS.000+05:30 |
-| [!UICONTROL Date d’expiration] | expires:AAAA-MM-JJTHH:MM:SS.000+05:30..AAAA-MM-JJTHH:MM:SS.000+05:30 |
+| [!UICONTROL Créé] | created:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-JJTHH:MM:SS.000+05:30 |
+| [!UICONTROL Date d’expiration] | expires:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-JJTHH:MM:SS.000+05:30 |
 | [!UICONTROL Heure d’activation] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-JJTHH:MM:SS.000+05:30 |
-| [!UICONTROL Heure de désactivation] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30.AAAA-MM-JJTHH:MM:SS.000+05:30 |
+| [!UICONTROL Heure de désactivation] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-JJTHH:MM:SS.000+05:30 |
 | [!UICONTROL Plage de temps]  (date d’expiration, heure d’arrêt) | facet field : lowerboundupperbound |
 | [!UICONTROL Chemin] | /content/dam/&lt;nom_dossier> |
 | [!UICONTROL Titre du PDF] | pdftitle:&quot;Adobe Document&quot; |
