@@ -3,9 +3,9 @@ title: Multi-location pour les collections, les fragments et les modèles de fra
 description: Segmentez du contenu dans le référentiel CRX en fonction de l’organisation du client afin d’empêcher tout accès non autorisé.
 contentOwner: AG
 feature: Collections
-role: Architect,Administrator,Leader
+role: Architect,Admin,Leader
 exl-id: d00a671a-6707-4941-868d-fa13510b7b60
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 35%
