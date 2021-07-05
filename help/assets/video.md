@@ -71,7 +71,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 
          [Affichage des rendus vidéo](video-renditions.md)
 
-[Gestion des rendus vidéo](managing-assets-touch-ui.md#managing-renditions)
+         [Gestion des rendus vidéo](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
       * [Publier des ressources](publishing-dynamicmedia-assets.md)
@@ -83,7 +83,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 
       * Modifiez les propriétés de la vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisés :
 
-[Modification des propriétés vidéo](managing-assets-touch-ui.md#editing-properties)
+         [Modification des propriétés vidéo](managing-assets-touch-ui.md#editing-properties)
 
       * [Gestion des métadonnées des ressources numériques](metadata.md)
       * [Schémas de métadonnées](metadata-schemas.md)
