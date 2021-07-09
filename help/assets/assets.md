@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Gestion des ressources
 role: Leader,Architect,User
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-source-git-commit: 1795b0faed0570e8130c1ba60de07bda49db8fde
+source-git-commit: cd9ffec186c5ab4c5f0e0996043724797e0516d1
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '865'
 ht-degree: 31%
 
 ---
@@ -52,7 +52,7 @@ Lorsque vous déterminez si vous souhaitez placer une image dans le référentie
 
 Une ressource est un document, une image, une vidéo ou de l’audio numérique (en tout ou en partie) qui peut comporter plusieurs rendus et des sous-ressources (par exemple, les calques d’un fichier photoshop, les diapositives d’un fichier PowerPoint, les pages d’un pdf, les fichiers d’un ZIP).
 
-Une ressource se compose principalement de données binaires + métadonnées + rendus + sous-ressources. Consultez le [Guide de performance DAM](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html) pour plus d’informations.
+Une ressource se compose principalement de données binaires + métadonnées + rendus + sous-ressources. Consultez le [Guide de performance DAM](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en) pour plus d’informations.
 
 >[!CAUTION]
 >
