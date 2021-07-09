@@ -8,9 +8,9 @@ breadcrumb-title: Guide de déploiement
 user-guide-description: En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4, y compris sur le déploiement cloud d’Adobe Managed Services.
 feature: Déploiement
 role: Architect
-source-git-commit: 19c3ecc20d78f40a2fa49f804baf232db7483afc
+source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '375'
 ht-degree: 89%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 89%
    + [Vérifications transversales et contrôles de cohérence](consistency-check.md)
    + [Instructions de performance](performance-guidelines.md)
    + [Optimisation des performances](configuring-performance.md)
-   + [Guide de performances des ressources](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)
+   + [Guide de performances des ressources](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en)
    + [Articles sur la procédure de configuration](ht-deploy.md)
    + [Suppression des sites Geometrixx](removing-the-geometrixx-sites.md)
    + [Configuration de la console web](configuring-web-console.md)
