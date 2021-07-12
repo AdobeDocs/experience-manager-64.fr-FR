@@ -6,12 +6,12 @@ seo-description: 'Utilisez Document Security pour distribuer en toute sécurité
 uuid: 04c67a84-01ad-45b7-a590-822b1c067d52
 contentOwner: khsingh
 discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
-role: Administrator
+role: Admin
 exl-id: 9ce5e89b-76c9-464d-9caf-26a387c698fa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '636'
-ht-degree: 42%
+ht-degree: 43%
 
 ---
 
