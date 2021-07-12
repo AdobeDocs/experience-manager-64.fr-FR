@@ -9,22 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
-role: Administrator
+role: Admin
 exl-id: 2d0154b3-4cd7-439a-869d-cb116f60b69d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 4%
 
 ---
 
-# Consoles de gestion des membres et groupes {#members-groups-management-consoles}
+# Consoles de gestion des membres et des groupes {#members-groups-management-consoles}
 
 ## Présentation {#overview}
 
 Les fonctionnalités AEM Communities nécessitent souvent que les visiteurs du site soient enregistrés et connectés avant de participer à une communauté dans l’environnement de publication. Leur enregistrement d’utilisateur n’a besoin d’exister que dans l’environnement de publication et ils sont généralement appelés *membres* pour les distinguer des *utilisateurs* enregistrés dans l’environnement de création.
 
-### Membres (utilisateurs) sur Publier {#members-users-on-publish}
+### Membres (utilisateurs) sur la publication {#members-users-on-publish}
 
 À l’aide des consoles Membres et groupes des communautés , les membres et les groupes de membres enregistrés dans l’environnement *publish* peuvent être créés et gérés à partir de l’environnement *author*. Cela n’est possible que lorsque le [service tunnel](deploy-communities.md#tunnel-service-on-author) est activé.
 
@@ -51,7 +51,7 @@ Dans l’environnement de création, pour accéder à la console Membres afin de
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
-### Recherche {#search-features}
+### Rechercher {#search-features}
 
 Sélectionnez l’icône du panneau latéral sur le côté gauche de l’en-tête `Members` pour ouvrir le panneau latéral de recherche.
 
