@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
-role: Administrator
+role: Admin
 exl-id: b8cbc429-b0c3-4f6e-a15f-4aef54733c8e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 2%
@@ -156,6 +156,6 @@ Lorsque les pages sont automatiquement traduites dans la langue préférée de l
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
-### Paramètre de site de la communauté {#community-site-setting}
+### Paramètre du site de communauté {#community-site-setting}
 
 Lorsqu’un site communautaire est créé, l’option de traduction peut être activée et configurée. Le paramètre de traduction est appliqué au contenu que les visiteurs anonymes du site peuvent afficher, mais il est remplacé par le paramètre de profil de l’utilisateur.
