@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
-role: Administrator
+role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 72%
@@ -171,7 +171,7 @@ Après avoir exécuté l’utilitaire de migration, effectuez les tâches de mai
 1. Assurez-vous que la version XFA des mises en page et des mises en page de fragments est version 3.3 ou ultérieure. Si vous utilisez des mises en page et des mises en page de fragments d’une ancienne version, des problèmes de rendu de la lettre peuvent se produire. Pour mettre à jour la version d’un XFA antérieur vers la dernière version, procédez comme suit :
 
    1. [Téléchargez XFA sous la forme d’un fichier zip](/help/forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) depuis l’interface utilisateur de Forms.
-   1. Extrayez le fichier.
+   1. Extrayez le fichier .
    1. Ouvrez le fichier XFA dans la dernière version de Designer et enregistrez-le. La version de XFA est mise à jour vers la version la plus récente.
    1. Téléchargez le fichier XFA dans l’interface utilisateur de Forms.
 
