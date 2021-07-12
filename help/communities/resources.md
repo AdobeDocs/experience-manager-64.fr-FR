@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
-role: Administrator
+role: Admin
 exl-id: 67d80ec9-64c9-43a5-8cb1-9da819471797
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 6%
 
 ---
 
-# Console Ressources d’activation{#enablement-resources-console} 
+# Console Ressources d’activation  {#enablement-resources-console}
 
 Pour AEM Communities, la console Ressources est l’emplacement où les [responsables de l’activation](users.md) créent, gèrent et assignent des ressources aux membres d’un site de la communauté d’activation.
 
@@ -69,9 +69,9 @@ Pour les [communautés d’engagement](overview.md#egagementcommunity), il est r
 
 Pour les [communautés d’activation](overview.md#enablement-community), il est recommandé de rendre le site privé, ce qui nécessite ensuite qu’un administrateur ajoute des utilisateurs au groupe de membres.
 
-## Accès aux ressources d’activation d’un site communautaire {#accessing-a-community-site-s-enablement-resources}
+## Accès aux ressources d’activation d’un site de la communauté {#accessing-a-community-site-s-enablement-resources}
 
-### Accédez aux Ressources de la communauté {#navigate-to-communities-resources}
+### Accédez aux ressources de Communities {#navigate-to-communities-resources}
 
 Dans l’environnement de création, pour accéder à la console Ressources
 
@@ -79,7 +79,7 @@ Dans l’environnement de création, pour accéder à la console Ressources
 
 ![chlimage_1-163](assets/chlimage_1-163.png)
 
-### Sélectionnez un site communautaire {#select-a-community-site}
+### Sélection d’un site communautaire {#select-a-community-site}
 
 La console Ressources des communautés affiche tous les sites de la communauté.
 
@@ -89,7 +89,7 @@ Une fois qu’un site de communauté spécifique est sélectionné, toutes les r
 
 ![chlimage_1-164](assets/chlimage_1-164.png)
 
-#### Recherche {#search-features}
+#### Rechercher {#search-features}
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
@@ -103,7 +103,7 @@ Pour sélectionner plusieurs ressources d’activation, sélectionnez-les en pre
 
 ![chlimage_1-167](assets/chlimage_1-167.png)
 
-## Créer une ressource {#create-a-resource}
+## Création d’une ressource {#create-a-resource}
 
 ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -288,7 +288,7 @@ personnes à affecterUtilisez le menu déroulant pour sélectionner parmi les  [
 
 La création réussie de la ressource d’activation renvoie à la console Ressources avec la ressource nouvellement créée sélectionnée. Dans cette console, il est possible de [gérer la ressource](#managing-a-resource).
 
-## Créer un parcours d’apprentissage {#create-a-learning-path}
+## Création d’un parcours d’apprentissage {#create-a-learning-path}
 
 ![chlimage_1-176](assets/chlimage_1-176.png)
 
