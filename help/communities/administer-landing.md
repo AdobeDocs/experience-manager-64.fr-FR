@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
-role: Administrator
+role: Admin
 exl-id: b5d20819-3a3f-4b9e-99a3-e7ae5ae28baf
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 9%
@@ -32,7 +32,7 @@ Pour une présentation et des tutoriels de prise en main, rendez-vous sur :
 
 ## Rubriques d’administration et de configuration {#administration-and-configuration-topics}
 
-### Création et gestion du site des communautés {#communities-site-creation-and-management}
+### Création et gestion de sites communautaires {#communities-site-creation-and-management}
 
 * Communautés [consoles](consoles.md)
 
