@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
-role: Administrator
+role: Admin
 exl-id: 766711ea-f3d3-49ab-8346-4e4477c261bd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 8%
 
 ---
 
-# Console Rapports{#reports-console} 
+# Console Rapports  {#reports-console}
 
 ## Présentation {#overview}
 
@@ -36,7 +36,7 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
 
 ## Consoles de création de rapports {#reporting-consoles}
 
-### Rapports pour les sites communautaires {#reports-for-community-sites}
+### Rapports pour les sites de la communauté {#reports-for-community-sites}
 
 * À partir de la navigation globale : **[!UICONTROL Navigation > Communautés > Rapports]**
 * Choisir parmi
