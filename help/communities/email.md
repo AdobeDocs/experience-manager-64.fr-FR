@@ -10,16 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
-role: Administrator
+role: Admin
 exl-id: 0a0222e7-ca30-4603-94ad-582005b2de11
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 4%
 
 ---
 
-# Configuration de l’adresse électronique {#configuring-email}
+# Configuration du courrier électronique {#configuring-email}
 
 AEM Communities utilise le courrier électronique pour
 
@@ -103,7 +103,7 @@ Cette configuration ne doit pas être modifiée.
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
-### Configuration pour les abonnements {#configuration-for-subscriptions}
+### Configuration des abonnements {#configuration-for-subscriptions}
 
 Pour les abonnements Communities, il est possible d’activer ou de désactiver la possibilité pour un membre de publier du contenu en répondant à un email.
 
@@ -133,7 +133,7 @@ Pour les abonnements Communities, il est possible d’activer ou de désactiver 
 
 * **[!UICONTROL Chemin d’accès]** racine des modèles : L’email est créé à l’aide d’un modèle stocké dans ce chemin racine. La valeur par défaut est `/etc/community/templates/subscriptions-email`.
 
-## Configurer l’importateur d’interrogations {#configure-polling-importer}
+## Configuration de l’importateur d’interrogations {#configure-polling-importer}
 
 Pour que le courrier électronique soit importé dans le référentiel, il est nécessaire de configurer un importateur d’interrogations et de configurer ses propriétés manuellement dans le référentiel.
 
