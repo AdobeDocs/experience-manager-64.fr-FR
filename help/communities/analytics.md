@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
-role: Administrator
+role: Admin
 exl-id: cb2f61df-73bb-47f7-86ce-feda4772c8d0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2787'
 ht-degree: 5%
@@ -155,7 +155,7 @@ Lorsque l’analyse de pulsation vidéo est activée, le code JavaScript (JS) du
 
 Si cette option n’est pas activée, le code de pulsation vidéo n’est jamais instancié et seul le suivi de progression et de reprise de la vidéo est conservé à la SRP pour la création de rapports.
 
-## Configuration AEM service Analytics Cloud {#aem-analytics-cloud-service-configuration}
+## Configuration du service Analytics Cloud AEM {#aem-analytics-cloud-service-configuration}
 
 Pour créer une intégration Analytics, qui intègre Adobe Analytics au site de la communauté AEM, à l’aide de l’interface utilisateur standard sur l’instance de création :
 
@@ -199,7 +199,7 @@ La création initiale d’une nouvelle configuration Analytics entraîne l’aff
 
 ![chlimage_1-267](assets/chlimage_1-267.png)
 
-* **[!UICONTROL Entreprise]**
+* **[!UICONTROL Société]**
 
    Société associée au compte Adobe Analytics
 
@@ -290,7 +290,7 @@ Si une suite de rapports n’a pas encore été créée ou n’a pas été corre
 
 Le sidekick n’est pas nécessaire et peut être réduit afin de ne pas entraver l’accès aux paramètres des suites de rapports.
 
-#### Boîte de dialogue Suites de rapports avant et après avoir sélectionné &quot;Ajouter un élément&quot; {#report-suites-dialog-before-and-after-selecting-add-item}
+#### Boîte de dialogue Suites de rapports avant et après la sélection de l’option &quot;Ajouter un élément&quot; {#report-suites-dialog-before-and-after-selecting-add-item}
 
 ![chlimage_1-271](assets/chlimage_1-271.png)
 
@@ -304,9 +304,9 @@ Le sidekick n’est pas nécessaire et peut être réduit afin de ne pas entrave
 
 Le service et la structure cloud Analytics sont désormais terminés. Les mappages seront définis une fois qu’un site de communauté a été créé avec ce service Analytics activé.
 
-## Activation d’Analytics pour un site communautaire {#enable-analytics-for-a-community-site}
+## Activation d’Analytics pour un site de la communauté {#enable-analytics-for-a-community-site}
 
-### Activer pour le nouveau site de la communauté {#enable-for-new-community-site}
+### Activation pour le nouveau site de la communauté {#enable-for-new-community-site}
 
 Pour ajouter le service cloud Analytics lors de la [création d’un site de communauté](sites-console.md) :
 
@@ -335,7 +335,7 @@ Pour ajouter le service cloud Analytics à un [site communautaire existant](site
 
 * Si vous le souhaitez, revenez à la configuration de la structure Analytics pour ajuster les mappages des variables.
 
-### Activé pour les sites personnalisés {#enable-for-customized-sites}
+### Activation pour les sites personnalisés {#enable-for-customized-sites}
 
 Pour que le suivi et l’importation Analytics fonctionnent correctement pour un site de communauté, un élément de page avec les attributs `scf-js-site-title` et  doit être présent. Un seul élément de ce type doit exister sur la page, comme c’est le cas dans un script `sitepage.hbs` non modifié pour un site communautaire. La valeur de `siteUrl` est extraite et envoyée à Adobe Analytics en tant que *chemin du site*.
 
@@ -428,7 +428,7 @@ Si les eVars et événements de Communities remplacent les mappages qui existaie
 >
 >Il est important de procéder à une recodification avant que le site de la communauté soit [publié](#publishing-the-community-site) avec Analytics activé, faute de quoi il existe un risque de perte de données.
 
-#### Exemple d’étape 1 : Faire glisser Analytics evar14 vers la table de mappage {#example-step-dragging-analytics-evar-into-mapping-table}
+#### Exemple d’étape 1 : Déplacement d’Analytics evar14 dans la table de mappage {#example-step-dragging-analytics-evar-into-mapping-table}
 
 ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -436,13 +436,13 @@ Si les eVars et événements de Communities remplacent les mappages qui existaie
 
 ![chlimage_1-276](assets/chlimage_1-276.png)
 
-#### Exemple d’étape 3 : AEM var eventdata.siteId a été remplacé par Analytics evar14 {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
+#### Exemple d’étape 3 : AEM var eventdata.siteId mappé sur Analytics evar14 {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
 
 ![chlimage_1-277](assets/chlimage_1-277.png)
 
 ## Publication du site de la communauté {#publishing-the-community-site}
 
-### Vérification d’Analytics pour AEM mappage de variables {#verify-analytics-to-aem-variable-mapping}
+### Vérification d’Analytics pour AEM mappage des variables {#verify-analytics-to-aem-variable-mapping}
 
 Il est conseillé de vérifier le mappage des variables avant de publier le site de la communauté, qui publie également le service et la structure cloud Analytics.
 
@@ -478,7 +478,7 @@ Pour obtenir des instructions spécifiques, reportez-vous à la section Principa
 >
 >Il est important que l’éditeur Principal soit configuré pour empêcher l’interrogation de plusieurs instances de publication.
 
-### Répliquer la clé de chiffrement {#replicate-the-crypto-key}
+### Réplication de la clé de chiffrement {#replicate-the-crypto-key}
 
 Les informations d’identification Adobe Analytics sont chiffrées. Pour faciliter la réplication ou la transmission des informations d’identification d’analyse chiffrées entre l’auteur et les éditeurs, toutes les instances AEM doivent partager la même clé de chiffrement Principale.
 
