@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
-role: Administrator
+role: Admin
 exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1642'
 ht-degree: 2%
@@ -108,7 +108,7 @@ Il est possible de sélectionner un thème qui diffère du thème du site parent
 
 Une fois le site de la communauté publié, il est possible de [modifier les propriétés](#modifying-group-properties) et sélectionner un autre thème.
 
-#### MARQUE DU GROUPE COMMUNAUTAIRE {#community-group-branding}
+#### MARQUE DES GROUPES COMMUNAUTAIRES {#community-group-branding}
 
 ![chlimage_1-135](assets/chlimage_1-135.png)
 
@@ -182,13 +182,13 @@ Une fois le processus terminé, la carte du nouveau site (groupe) de sous-commun
 >
 >Le groupe est créé dans toutes les langues, comme indiqué à l’ [étape 1 : Modèle de groupe de communautés](groups.md#step1communitygrouptemplate) dans Langues de groupe de communautés disponibles supplémentaires, dans la console Groupes de communautés des sites de communautés respectifs.
 
-## Contenu du groupe de création {#authoring-group-content}
+## Création de contenu de groupe {#authoring-group-content}
 
 ![chlimage_1-141](assets/chlimage_1-141.png)
 
 Le contenu de la page d’un groupe peut être créé avec les mêmes outils que toute autre page AEM. Pour ouvrir le groupe à des fins de création, sélectionnez l’icône Ouvrir le site qui s’affiche lorsque vous pointez sur la carte du groupe.
 
-## Modification des propriétés du groupe {#modifying-group-properties}
+## Modification des propriétés de groupe {#modifying-group-properties}
 
 Les propriétés d’un site de sous-communauté existant, spécifiées pendant le processus de création du groupe de la communauté, peuvent être modifiées en sélectionnant l’icône Modifier le site qui s’affiche lorsque vous pointez sur la carte du groupe :
 
@@ -198,7 +198,7 @@ Les détails des propriétés suivantes correspondent aux descriptions fournies 
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
-### Modifier de base {#modify-basic}
+### Modification de base {#modify-basic}
 
 Le panneau BASIC permet de modifier les
 
