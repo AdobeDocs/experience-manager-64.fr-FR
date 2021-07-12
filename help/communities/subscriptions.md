@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
-role: Administrator
+role: Admin
 exl-id: 8a756328-0405-49b7-b94d-3dd5a87c782a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 3%
@@ -44,7 +44,7 @@ Pour plus d’informations sur la configuration de l’e-mail, voir [Configurati
 
 Les composants doivent être configurés pour activer les abonnements *et* suivants. Les fonctionnalités qui autorisent les abonnements sont [blog](blog-feature.md), [forum](forum.md) et [QnA](working-with-qna.md).
 
-## Abonnements à partir de la balise {#subscriptions-from-following}
+## Abonnements à partir de {#subscriptions-from-following}
 
 ![chlimage_1-5](assets/chlimage_1-5.png)
 
@@ -62,7 +62,7 @@ Le bouton **Suivre** comprend l’option `Email Subscriptions` uniquement lorsqu
 
    * Envoie un courrier électronique lorsqu’il y a une activité pour cette entrée spécifique.
 
-## Réponse par courriel {#reply-by-email}
+## Répondre par email {#reply-by-email}
 
 Lorsque l’adresse électronique est [configurée pour répondre par adresse électronique](email.md#configure-polling-importer), le membre qui s’est abonné recevra un courrier électronique contenant le contenu publié et un lien vers le contenu en ligne.
 
