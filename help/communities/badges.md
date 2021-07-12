@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 4194278f-5127-4105-b181-60961c7a1def
-role: Administrator
+role: Admin
 exl-id: b6aa9d73-4e20-446a-a1fc-78f8968d6844
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 5%
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 # Console Badges {#badges-console}
 
-## À propos des badges {#about-badges}
+## A propos des badges {#about-badges}
 
 La console Badges de communauté permet d’ajouter des badges personnalisés qui peuvent être affichés pour un membre lorsqu’il est gagné (attribué) ou lorsqu’il occupe un rôle spécifique dans la communauté (affecté).
 
