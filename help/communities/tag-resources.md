@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
-role: Administrator
+role: Admin
 exl-id: 89ca201e-23ad-4038-8f3e-7c9cd04f52e2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 2%
 
 ---
 
-# Balisage des ressources d’activation{#tagging-enablement-resources} 
+# Balisage des ressources d’activation  {#tagging-enablement-resources}
 
 ## Présentation {#overview}
 
@@ -65,7 +65,7 @@ Voici comment il apparaît dans CRXDE lorsqu’un administrateur applique des au
 
 ![chlimage_1-420](assets/chlimage_1-420.png)
 
-## Espaces de noms de balise de catalogue {#catalog-tag-namespaces}
+## Espaces de noms des balises du catalogue {#catalog-tag-namespaces}
 
 La fonction Catalogue utilise des balises pour se définir. Lors de la configuration de la fonction de catalogue dans un site de la communauté, l’ensemble d’espaces de noms de balise parmi lesquels choisir est défini par la portée des espaces de noms de balise définis pour le site de la communauté.
 
