@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 discoiquuid: f564759f-fb56-4f70-a7b1-286a223755c6
-role: Administrator
+role: Admin
 exl-id: f4adc53d-6809-4d89-a3dd-5d783e938a63
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 38%
@@ -40,7 +40,7 @@ Cependant, vous pouvez également créer une IU (interface utilisateur) pour gé
 
 Ces API permettent de remplir les fonctions suivantes.
 
-## Récupération du contenu généré par un utilisateur  {#retrieve-the-ugc-of-a-user}
+## Récupération du contenu généré par un utilisateur {#retrieve-the-ugc-of-a-user}
 
 `getUserUgc(ResourceResolver resourceResolver, String user, OutputStream outputStream)` permet d’exporter tout le contenu généré par un utilisateur à partir du système.
 
@@ -62,7 +62,7 @@ Par exemple, pour supprimer le contenu généré par un utilisateur disposant d�
 * user= weston.mccall@dodgit.com
 * operation= deleteUgc
 
-### Supprimer le contenu généré par l’utilisateur d’Adobe Analytics {#delete-ugc-from-analytics}
+### Suppression du contenu généré par l’utilisateur d’Adobe Analytics {#delete-ugc-from-analytics}
 
 Pour supprimer les données utilisateur d’Adobe Analytics, suivez le processus d’analyse en vertu du RGPD ; car l’API ne supprime pas les données utilisateur d’Adobe Analytics.
 
