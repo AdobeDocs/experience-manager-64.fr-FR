@@ -3,9 +3,9 @@ title: Configuration d’AEM Assets avec Brand Portal
 description: 'Découvrez comment configurer AEM Assets avec Brand Portal pour publier des ressources et des collections dans Brand Portal. '
 contentOwner: VG
 feature: Brand Portal
-role: Administrator
+role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 52%
@@ -288,7 +288,7 @@ Effectuez les étapes suivantes dans l’ordre indiqué pour mettre à niveau le
 1. [Suppression des configurations existantes](#delete-existing-configuration)
 1. [Création d’une configuration](#configure-new-integration-64)
 
-### Vérifier les tâches en cours {#verify-jobs}
+### Vérification des tâches en cours {#verify-jobs}
 
 Assurez-vous qu’aucune tâche de publication n’est en cours d’exécution sur votre instance d’auteur AEM Assets avant d’apporter des modifications. Pour ce faire, vous pouvez vérifier les quatre agents de réplication et vous assurer que la file d’attente est idéale/vide.
 
@@ -310,7 +310,7 @@ Assurez-vous qu’aucune tâche de publication n’est en cours d’exécution s
 
    ![](assets/test-integration3.png)
 
-### Supprimer les configurations existantes {#delete-existing-configuration}
+### Suppression des configurations existantes {#delete-existing-configuration}
 
 Vous devez exécuter la liste de contrôle suivante lors de la suppression de la configuration existante.
 * Suppression des quatre agents de réplication
