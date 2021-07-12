@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
-role: Administrator
+role: Admin
 exl-id: f1408709-5402-4f55-bd37-9943fe828af0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '3241'
 ht-degree: 5%
@@ -122,7 +122,7 @@ Lorsqu’il est sélectionné, le thème est recouvert d’une coche bleue opaqu
 
 Une fois le site de la communauté publié, il est possible de [modifier les propriétés](#modifying-site-properties) et sélectionner un autre thème.
 
-#### MARQUE DU SITE COMMUNAUTAIRE {#community-site-branding}
+#### MARQUE DU SITE DE LA COMMUNAUTÉ {#community-site-branding}
 
 ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -361,7 +361,7 @@ Les paramètres `ENABLEMENT`s’appliquent lorsque le modèle de site de communa
 
 Sélectionnez **[!UICONTROL Suivant]**.
 
-### Étape 4 : Créer un site Communities {#step-create-communities-site}
+### Étape 4 : Créer un site de communautés {#step-create-communities-site}
 
 Si des ajustements sont nécessaires, utilisez le bouton **Précédent** pour les effectuer.
 
@@ -408,7 +408,7 @@ Les propriétés d’un site existant, spécifiées pendant le processus de cré
 
 ![chlimage_1-463](assets/chlimage_1-463.png)
 
-### Modifier de base {#modify-basic}
+### Modification de base {#modify-basic}
 
 Le panneau BASIC permet de modifier les
 
@@ -541,7 +541,7 @@ Pour plus d’informations, voir [Gestion des utilisateurs et des groupes d’ut
 
 est créé, le [service cloud Facebook](social-login.md#createafacebookcloudservice) appliqué doit être configuré pour ajouter des utilisateurs à ce groupe.
 
-## Configurer pour l’erreur d’authentification {#configure-for-authentication-error}
+## Configuration d’une erreur d’authentification {#configure-for-authentication-error}
 
 Par défaut, un site de la communauté redirige vers un exemple de page de connexion lorsque l’utilisateur saisit des informations d’identification erronées et ne parvient pas à se connecter. Cet exemple de connexion ne sera pas présent sur un [serveur de production](../../help/sites-administering/production-ready.md).
 
@@ -566,7 +566,7 @@ Pour rediriger correctement, une fois qu’un site a été configuré et envoyé
 
 ![chlimage_1-468](assets/chlimage_1-468.png)
 
-### Tester la redirection d’authentification {#test-authentication-redirection}
+### Tester la redirection de l’authentification {#test-authentication-redirection}
 
 Sur la même instance de publication AEM configurée avec un mappage de page de connexion pour le site de la communauté :
 
