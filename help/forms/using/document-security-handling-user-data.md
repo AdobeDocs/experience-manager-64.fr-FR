@@ -7,9 +7,9 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
-role: Administrator
+role: Admin
 exl-id: eeffd886-8955-46eb-aa6d-dd4da5e8570c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 60%
@@ -81,7 +81,7 @@ Le tableau suivant montre comment Document Security organise les données dans l
  </tbody> 
 </table>
 
-## Accès et suppression des données utilisateur  {#access-and-delete-user-data}
+## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
 Vous pouvez accéder et exporter les données de Document Security pour les utilisateurs dans les bases de données et, si nécessaire, les supprimer définitivement.
 
@@ -95,7 +95,7 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 Une fois que vous connaissez l’ID principal, vous pouvez exporter ou supprimer les données de l’utilisateur.
 
-### Exportation des données utilisateur  {#export-user-data}
+### Exportation des données utilisateur {#export-user-data}
 
 Exécutez les commandes de base de données suivantes pour exporter les données utilisateur d’un ID principal à partir des tables de base de données. Dans la commande `select`, remplacez `<principal_id>` par l’ID principal de l’utilisateur dont vous souhaitez exporter les données.
 
