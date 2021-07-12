@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
-role: Administrator
+role: Admin
 exl-id: a7678273-81f6-4089-ac73-2458d940e374
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Rebekah Larsen (rebekah.larsen@trashymail.com) peut être ajouté en tant que me
 
 Pour plus d’informations sur les groupes d’utilisateurs de la communauté, voir [Gestion des utilisateurs et des groupes d’utilisateurs](users.md).
 
-### Création de publications du forum {#create-the-forum-posts}
+### Création de publications de forum {#create-the-forum-posts}
 
 * Connectez-vous en tant que Rebekah Larsen (rebekah.larsen@trashymail.com)
 
