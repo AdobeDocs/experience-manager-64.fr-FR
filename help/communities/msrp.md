@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
-role: Administrator
+role: Admin
 exl-id: 65d37adc-d5fa-4171-bb7f-05b631cad180
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # MSRP - Fournisseur de ressources de stockage MongoDB {#msrp-mongodb-storage-resource-provider}
 
-## À propos de MSRP {#about-msrp}
+## A propos de MSRP {#about-msrp}
 
 Lorsqu’AEM Communities est configuré pour utiliser MSRP comme magasin commun, le contenu généré par l’utilisateur est accessible à partir de toutes les instances d’auteur et de publication sans avoir besoin de synchronisation ni de réplication.
 
@@ -49,7 +49,7 @@ Voir aussi [Caractéristiques des options SRP](working-with-srp.md#characteristi
 
 ## Configuration de MongoDB {#mongodb-configuration}
 
-### Sélectionnez MSRP {#select-msrp}
+### Sélectionner MSRP {#select-msrp}
 
 La [console Configuration du stockage](srp-config.md) permet de sélectionner la configuration du stockage par défaut, qui identifie l’implémentation de la SRP à utiliser.
 
@@ -109,7 +109,7 @@ Pour en savoir plus sur les jeux de réplications, consultez la documentation [R
 
 Pour utiliser des jeux de réplications et apprendre à définir des connexions entre les applications et les instances MongoDB, consultez la documentation [Format URI de chaîne de connexion](https://docs.mongodb.org/manual/reference/connection-string/) de MongoDB.
 
-#### Exemple d’URL pour se connecter à un jeu de Secondaires {#example-url-for-connecting-to-a-replica-set}
+#### Exemple d’URL pour la connexion à un jeu de Secondaires  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -239,11 +239,11 @@ Un outil Open Source est disponible sur GitHub à cet effet :
 
 L’outil de migration peut être personnalisé pour exporter le contenu créé par l’utilisateur à partir de versions antérieures d’AEM communautés sociales pour l’importer dans AEM Communities 6.1 ou une version ultérieure.
 
-### Erreur : champ non défini provider_id {#error-undefined-field-provider-id}
+### Error - champ non défini provider_id {#error-undefined-field-provider-id}
 
 Si l’erreur suivante s’affiche dans les journaux, elle indique que le fichier de schéma Solr n’est pas correctement configuré.
 
-#### JsonMappingException : champ non défini provider_id {#jsonmappingexception-undefined-field-provider-id}
+#### JsonMappingException : provider_id de champ non défini {#jsonmappingexception-undefined-field-provider-id}
 
 ```xml
 Caused by: com.fasterxml.jackson.databind.JsonMappingException: undefined field provider_id
