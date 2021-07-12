@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 86349e4d-29ff-4baa-9fcd-c0ab1f0753e9
-role: Administrator
+role: Admin
 exl-id: 136c0913-c8b8-451d-bb28-3c3285c172a1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # ASRP - Fournisseur de ressources de stockage d’Adobe {#asrp-adobe-storage-resource-provider}
 
-## À propos d’ASRP {#about-asrp}
+## A propos d’ASRP {#about-asrp}
 
 Lorsqu’AEM Communities est configuré pour utiliser ASRP comme magasin commun, le contenu généré par l’utilisateur est accessible à partir de toutes les instances d’auteur et de publication sans avoir besoin de synchronisation ni de réplication.
 
@@ -41,7 +41,7 @@ Les clés client et secrète sont partagées dans toutes les suites de rapports 
 
 ## Configuration {#configuration}
 
-### Sélectionnez ASRP {#select-asrp}
+### Sélectionner ASRP {#select-asrp}
 
 La [console Configuration du stockage](srp-config.md) permet de sélectionner la configuration du stockage par défaut, qui identifie l’implémentation de la SRP à utiliser.
 
@@ -84,7 +84,7 @@ pour chaque instance d’auteur et de publication, testez la connexion au centre
 
 * Enfin, assurez-vous que les URL du site pour les données de profil sont routables à partir du centre de données en [externalisant les liens](#externalize-links).
 
-### Répliquer la clé de chiffrement {#replicate-the-crypto-key}
+### Réplication de la clé de chiffrement {#replicate-the-crypto-key}
 
 La clé du client et la clé secrète sont chiffrées. Pour que les clés soient chiffrées/déchiffrées correctement, la Principale clé Crypto Granite doit être la même sur toutes les instances AEM.
 
