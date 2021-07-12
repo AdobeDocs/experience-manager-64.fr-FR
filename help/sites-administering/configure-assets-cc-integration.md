@@ -2,16 +2,16 @@
 title: Configuration de l’intégration AEM Assets avec Experience Cloud
 description: Découvrez comment configurer l’intégration d’AEM Assets avec Experience Cloud.
 feature: Gestion des ressources
-role: Business Practitioner, Architect, Administrator
+role: User, Architect, Admin
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 43%
 
 ---
 
-# Configurer l’intégration AEM Assets avec l’Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
+# Configuration de l’intégration AEM Assets avec Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
 Si vous êtes client Adobe Experience Cloud, vous pouvez synchroniser vos ressources dans Adobe Experience Manager Assets avec Adobe Creative Cloud, et vice versa. Vous pouvez également synchroniser vos ressources avec Experience Cloud et vice versa. Vous pouvez configurer cette synchronisation via [!DNL Adobe I/O]. Le nom mis à jour de [!DNL Adobe Marketing Cloud] est [!DNL Adobe Experience Cloud].
 
@@ -62,7 +62,7 @@ En arrière-plan, le serveur authentifie votre profil avec la passerelle, puis s
    >
    >Assurez-vous de ne pas copier par inadvertance le **[!UICONTROL secret d’application]** au lieu de l’**[!UICONTROL ID d’application.]**.
 
-## Ajouter une nouvelle configuration à {#add-a-new-configuration} Experience Cloud
+## Ajouter une nouvelle configuration à Experience Cloud {#add-a-new-configuration}
 
 1. Cliquez sur le logo AEM sur l’interface utilisateur de votre instance AEM Assets locale et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud hérités]**.
 
@@ -123,7 +123,7 @@ En arrière-plan, le serveur authentifie votre profil avec la passerelle, puis s
    >
    >Seuls les utilisateurs que vous ajoutez à Experience Cloud peuvent partager des ressources d’AEM Assets vers Creative Cloud.
 
-## Échange de ressources entre AEM Assets et l’Experience Cloud {#exchange-assets-between-aem-and-experience-cloud}
+## Échange de ressources entre AEM Assets et Experience Cloud {#exchange-assets-between-aem-and-experience-cloud}
 
 1. Connectez-vous à AEM Assets.
 1. Dans la console Assets, créez un dossier et téléchargez des ressources vers ce dossier. Par exemple, créez un dossier **mc-demo** et téléchargez une ressource vers ce dossier.
