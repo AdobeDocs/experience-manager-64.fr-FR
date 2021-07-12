@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
-role: Administrator
+role: Admin
 exl-id: c9406aae-288e-4cdf-ac01-cb26b423639e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 1%
@@ -118,7 +118,7 @@ Il n’est pas prévu que ce fichier soit modifié.
 
 Si le fichier des mots-clés est manquant, le moteur de notation avancé renvoie une erreur.
 
-## Règles de badge avancé {#advanced-badging-rules}
+## Règles de badge avancées {#advanced-badging-rules}
 
 Les propriétés avancées des règles de badge diffèrent des [propriétés de base des règles de badge](implementing-scoring.md#badging-rules).
 
