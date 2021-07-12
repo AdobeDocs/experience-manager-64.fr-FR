@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
-role: Administrator
+role: Admin
 exl-id: 9865b366-b9e5-40f3-8863-789ccfb792f5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 3%
 
 ---
 
-# Modération du contenu de la communauté {#moderating-community-content}
+# Modération de contenu de la communauté {#moderating-community-content}
 
 ## Présentation {#overview}
 
@@ -154,7 +154,7 @@ Lorsque vous sélectionnez l’action Couper , le contenu est copié dans le Pre
 
 Un modérateur peut interdire au contenu créé par l’utilisateur de rester visible sur le site publié. Pour les administrateurs et les modérateurs de la communauté, la publication est toujours disponible et annotée comme spam.
 
-### Fermer / rouvrir {#close-reopen}
+### Fermer/rouvrir {#close-reopen}
 
 L&#39;action Fermer fonctionne sur l&#39;ensemble du fil de conversation (un sujet de forum ou le commentaire initial) et inclut toutes les publications ou réponses suivantes.
 
@@ -188,7 +188,7 @@ Lorsque le contenu généré par l’utilisateur est prémodéré, la publicatio
 
 * [Forum](forum.md),  [idéation](ideation-feature.md),  [Q&amp;R](working-with-qna.md) et  [](calendar.md) calendrier dans l’onglet  **** Paramètres, cochez  **[!UICONTROL Modéré]**
 
-### Détection du spam {#spam-detection}
+### Détection des messages indésirables {#spam-detection}
 
 La détection des messages indésirables est une fonctionnalité d’auto-modération qui filtre les éléments indésirables du contenu généré par les utilisateurs envoyés en les marquant comme spam. Une fois activé, il identifie si le contenu généré par l’utilisateur est du spam ou non en fonction d’un ensemble préconfiguré de mots-clés indésirables. Les mots de spam par défaut sont fournis à l’adresse
 
