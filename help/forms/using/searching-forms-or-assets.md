@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
-role: Administrator
+role: Admin
 exl-id: c6e5c19a-9d93-470f-916e-7ef06c3de141
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 91%
@@ -50,7 +50,7 @@ Dans les critères de recherche, outre la requête, vous pouvez spécifier certa
 
 ![Champ de recherche et paramètres ou filtres du formulaire AEM et de recherche de ressources](assets/search_forms_assets.png)
 
-### Chemin d’accès à la ressource {#asset-path}
+### Chemin d’accès à l’actif {#asset-path}
 
 Le filtre de chemin d’accès aux ressources vous permet de limiter les résultats de la recherche au répertoire actuel. Si l’option Rechercher dans le répertoire actuel n’est pas sélectionnée, les résultats de la recherche contiennent des ressources provenant du répertoire de base. Si la page en cours n’est pas un répertoire et que l’option Rechercher dans le répertoire actuel est sélectionnée, la recherche renvoie les éléments figurant dans le répertoire parent.
 
