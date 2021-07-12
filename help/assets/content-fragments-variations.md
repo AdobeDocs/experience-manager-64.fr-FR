@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
 feature: Fragments de contenu
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 92%
@@ -27,7 +27,7 @@ ht-degree: 92%
 
 Les [variations](content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonction importante des fragments de contenu, car elles permettent de créer et de modifier des copies du contenu maître pour une utilisation sur des canaux spécifiques et/ou dans des cas spécifiques.
 
-À partir de l’onglet **variations**, vous pouvez :
+À partir de l’onglet **Variations**, vous pouvez :
 
 * [saisir le contenu](#authoring-your-content) de votre fragment
 * [créer et gérer les variations](#managing-variations) du contenu **maître**.
@@ -374,7 +374,7 @@ Lors de la modification d’une variation, vous pouvez accéder à l’action de
 
 3. Le maître et la variation seront affichés côte à côte :
 
-   * le contenu ajouté figure en vert (ajouté à la variation) ;
+   * le contenu ajouté figure en vert  (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
 
    ![cfm-6420-27](assets/cfm-6420-27.png)
