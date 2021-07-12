@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
-role: Administrator
+role: Admin
 exl-id: f40674c1-a1dd-41ef-8a19-82ece3103bcc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 93%
@@ -44,7 +44,7 @@ Bien que les propriétés soient explicites, les plus importantes sont les suiva
 * **Mot de passe** : indique le mot de passe.
 * **Nom du service** : indique les services démarrés à l’aide des informations d’identification fournies dans les champs Nom d’utilisateur et Mot de passe. Par défaut, aucune information d’identification n’est transmise lors du démarrage des services LiveCycle.
 
-## Démarrage des Services de document  {#starting-document-services}
+## Démarrage des Services de document {#starting-document-services}
 
 Les applications clientes peuvent démarrer des services LiveCycle par programmation en utilisant une API Java, des services Web, Remoting et REST. Pour les clients Java, l’application peut utiliser le kit SDK LiveCycle. Ce kit SDK fournit une API Java permettant de démarrer ces services à distance. Par exemple, pour convertir un document Microsoft Word au format PDF, le client lance GeneratePDFService. Le flux d’appel se compose des étapes suivantes :
 
@@ -58,7 +58,7 @@ AEM LiveCycle Connector simplifie ce flux en exposant ces instances de client c
 * Propagation des informations d’identification : les détails de connexion requis pour la connexion au serveur LiveCycle sont gérés de manière centralisée.
 * Service ServiceClientFactory : pour démarrer les processus, l’application cliente peut accéder à l’instance ServiceClientFactory.
 
-### Démarrage via les références des services depuis le registre des services OSGi  {#starting-via-service-references-from-osgi-service-registry}
+### Démarrage via les références des services depuis le registre des services OSGi {#starting-via-service-references-from-osgi-service-registry}
 
 Pour démarrer un service exposé à partir d’AEM, procédez comme suit :
 
@@ -156,7 +156,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 La plupart des Services de document de LiveCycle nécessitent une authentification. Vous pouvez utiliser l’une des options suivantes pour démarrer ces services sans fournir d’informations d’identification explicites dans le code :
 
-### Configuration de liste blanche  {#allowlist-configuration}
+### Configuration de liste blanche {#allowlist-configuration}
 
 La configuration du SDK client LiveCycle contient un paramètre sur les noms de service. Il s’agit d’une liste de services pour lesquels la logique d’appel utilise des informations d’identification prêtes à l’emploi. Si vous ajoutez, par exemple, des services DirectoryManager (qui font partie de l’API de gestion d’utilisateur) à cette liste, tout code client peut utiliser directement le service et la couche d’appel transmet automatiquement les informations d’identification configurées dans le cadre de la demande envoyée au serveur LiveCycle.
 
@@ -192,7 +192,7 @@ List<Component> components = runAsManager.doPrivileged(new PrivilegedAction<List
 },credential);
 ```
 
-### Propriété InvocationRequest  {#invocationrequest-property}
+### Propriété InvocationRequest {#invocationrequest-property}
 
 Si vous appelez un processus ou utilisez directement la classe ServiceClientFactory et créez une InvocationRequest, vous pouvez spécifier une propriété pour indiquer que cette couche d’appel doit utiliser des informations d’identification configurées.
 
