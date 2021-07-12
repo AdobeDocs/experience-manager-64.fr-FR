@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
 feature: Fragments de contenu
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 98%
@@ -154,7 +154,7 @@ Pour ouvrir votre fragment à des fins de modification :
    * Variations : [Modification du contenu](#editing-the-content-of-your-fragment) et [Gestion des variations](#creating-and-managing-variations-within-your-fragment)
    * [Annotations](content-fragments-variations.md#annotating-a-content-fragment)
    * [Contenu associé](#associating-content-with-your-fragment)
-   * [Métadonnées  ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+   * [Métadonnées](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 
    ![cfm-10](assets/cfm-10.png)
 
@@ -164,7 +164,7 @@ Pour ouvrir votre fragment à des fins de modification :
    >
    >Les options **[!UICONTROL Enregistrer]** et **[!UICONTROL Annuler]** vous font quitter l’éditeur. Pour plus d’informations sur le fonctionnement des deux options avec les fragments de contenu, voir [Enregistrer, Annuler et Versions](#save-cancel-and-versions).
 
-## Enregistrer, Annuler et Versions  {#save-cancel-and-versions}
+## Enregistrer, Annuler et Versions {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -279,11 +279,11 @@ Cette opération va ouvrir :
 
 Elles seront affichées côte à côte, où :
 
-* Les différences sont mises en surbrillance.
+* les différences sont mises en surbrillance ;
 
-   * Le texte supprimé est en rouge
-   * Le texte inséré est en vert
-   * Le texte remplacé est en bleu
+   * le texte supprimé est en rouge ;
+   * le texte inséré est en vert ;
+   * le texte remplacé est en bleu.
 
 * L’icône en plein écran permet d’ouvrir l’une ou l’autre version seule, puis de revenir en mode parallèle.
 * Vous pouvez **[!UICONTROL rétablir]** la version spécifique
@@ -295,7 +295,7 @@ Elles seront affichées côte à côte, où :
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## Restauration vers une version spécifique {#reverting-to-a-version}
+## Restauration vers une version spécifique   {#reverting-to-a-version}
 
 Vous pouvez restaurer vers une version spécifique de votre fragment :
 
