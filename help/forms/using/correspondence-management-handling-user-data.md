@@ -7,9 +7,9 @@ uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
-role: Administrator
+role: Admin
 exl-id: 4a6b3403-2941-4098-bb30-769281adedc2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 82%
@@ -71,7 +71,7 @@ Sous le noeud [letter-instance-name] , la structure de noeud suivante est créé
 
 Vous pouvez accéder aux données de correspondances sous forme de brouillons et envoyées dans les stockages de données configurés et, si nécessaire, les supprimer.
 
-### Accès aux données utilisateur  {#access-user-data}
+### Accès aux données utilisateur {#access-user-data}
 
 Correspondence Management fournit des API que vous pouvez utiliser pour rechercher et accéder à des instances de lettres envoyées et sous forme de brouillons. Grâce aux API vous pouvez rechercher et ouvrir des instances de lettre à l’aide de l’ID de l’instance de lettre ou de l’utilisateur qui a enregistré ou envoyé la correspondance. Pour plus d’informations, voir [API pour accéder aux instances de lettre](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
