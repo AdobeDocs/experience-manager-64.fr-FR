@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
-role: Administrator
+role: Admin
 exl-id: 54109f64-eb30-47cc-bf7a-756843d2da02
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 1%
@@ -69,7 +69,7 @@ Les [consoles Membres et groupes des communautés](members.md) ont pour seul obj
 
 Pour gérer les utilisateurs et les groupes d’utilisateurs enregistrés dans l’environnement de création, utilisez la [console de sécurité](../../help/sites-administering/security.md)
 
-### Rôles du groupe d’auteur {#author-group-roles}
+### Rôles du groupe de création {#author-group-roles}
 
 | Si Membre du groupe... | Rôle Principal |
 |---|---|
@@ -108,7 +108,7 @@ Dans l’environnement de publication, en fonction des [paramètres](sites-conso
 >
 >Si un visiteur du site s’inscrit en tant que membre d’un site communautaire ouvert, il devient automatiquement membre d’autres sites communautaires ouverts dans le même environnement de publication.
 
-### Publier les rôles du groupe {#publish-group-roles}
+### Rôles du groupe de publication {#publish-group-roles}
 
 | Si Membre du groupe... | Rôle Principal |
 |---|---|
