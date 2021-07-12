@@ -2,22 +2,22 @@
 title: Plateformes prises en charge pour AEM Forms on JEE
 seo-title: Plateformes prises en charge pour AEM Forms on JEE
 description: Liste des composants d’infrastructure requis et pris en charge pour installer AEM Forms on JEE
-seo-description: Liste des composants d’infrastructure requis et pris en charge pour installer AEM Forms on JEE
+seo-description: Liste des composants d’infrastructure requis et pris en charge pour installer AEM Forms sur JEE
 uuid: 22f05fd4-f9fc-423e-8a86-1e75df4b2b44
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
-role: Administrator
+role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '3316'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
-# Plateformes prises en charge pour AEM Forms on JEE {#supported-platforms-for-aem-forms-on-jee}
+# Plateformes prises en charge pour AEM Forms sur JEE {#supported-platforms-for-aem-forms-on-jee}
 
 ## Plateformes prises en charge {#supported-platforms}
 
@@ -442,7 +442,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
  </tbody> 
 </table>
 
-### Prise en charge de Cordova  {#support-for-cordova}
+### Prise en charge de Cordova {#support-for-cordova}
 
 L’application AEM Forms prend désormais en charge Apache Cordova. Vous trouverez ci-dessous les versions Cordova prises en charge pour chaque plateforme :
 
@@ -451,7 +451,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Vous trouve
 * Cordova Android 6.0.0
 * Cordova Windows 4.4.3
 
-### Prise en charge logicielle de PDF Generator {#software-support-for-pdf-generator}
+### Prise en charge logicielle de PDF Generator {#software-support-for-pdf-generator}
 
 <table> 
  <tbody> 
@@ -642,7 +642,7 @@ Pour la configuration requise supplémentaire, voir :
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
 * Droits d’administrateur pour l’installation de Designer
 
-### Adobe Acrobat et Adobe Reader {#adobe-acrobat-and-adobe-reader}
+### Adobe Acrobat et Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
 <table> 
  <tbody> 
@@ -747,9 +747,9 @@ Pour la configuration requise supplémentaire, voir :
 
 
 
-### Application AEM Forms {#aem-forms-workspace-app}
+### Application AEM Forms {#aem-forms-workspace-app}
 
-#### Prise en charge de périphériques mobiles {#mobile-device-support}
+#### Prise en charge des appareils mobiles {#mobile-device-support}
 
 L’application AEM Forms est disponible sur les plateformes suivantes :
 
@@ -788,7 +788,7 @@ Microsoft® Windows® 2012 n’est pas pris en charge pour tous les logiciels c
 
 AEM Forms on JEE prend également en charge les mises à jour, les correctifs et les packs de correctifs en plus des versions majeures et mineures spécifiées du logiciel pris en charge. Toutefois, la mise à jour à la version majeure ou mineure suivante n’est pas prise en charge sauf indication contraire.
 
-## Règles de prise en charge des correctifs de fournisseurs tiers  {#third-party-patch-support-policy}
+## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
 La configuration requise pour l’installation de logiciels de fournisseurs tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Toute la documentation est accessible à partir de [https://adobe.com/go/learn_aemforms_documentation_64](https://adobe.com/go/learn_aemforms_documentation_64_fr) .
 
