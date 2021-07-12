@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
-role: Administrator
+role: Admin
 exl-id: 1dfb55c2-41cb-445f-9bf8-f12ab6b8e9d8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 5%
@@ -146,7 +146,7 @@ Veillez à installer le schéma avant d’installer les données.
 
 
 
-#### Étape 1 : ouvrir le fichier SQL {#step-open-sql-file}
+#### Étape 1 : Ouvrir le fichier SQL {#step-open-sql-file}
 
 Dans MySQL Workbench
 
