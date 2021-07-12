@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
-role: Administrator
+role: Admin
 exl-id: 50bf178d-7a3c-41df-9d13-99c74d944700
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 94%
@@ -33,7 +33,7 @@ Vous pouvez charger les types de ressource pris en charge individuellement ou so
 >
 >Assurez-vous d’être membre du groupe `form-power-users` pour pouvoir télécharger des fichiers XDP. Contactez votre administrateur pour devenir membre du groupe.
 
-## Chargement de formulaires  {#uploading-forms}
+## Chargement de formulaires {#uploading-forms}
 
 1. Connectez-vous à l’interface utilisateur d’AEM Forms en accédant à `https://[server]:[port]/aem/forms.html`.
 1. Accédez au dossier vers lequel vous souhaitez transférer le formulaire ou le dossier contenant des formulaires.
@@ -61,7 +61,7 @@ Vous pouvez charger les types de ressource pris en charge individuellement ou so
 
 Une fois le transfert terminé, un processus d’arrière-plan génère des vignettes pour chaque ressource, en fonction de l’aperçu de cette dernière. Les nouvelles versions des ressources, si elles ont été transférées, écrasent les ressources existantes.
 
-### Mode Protégé  {#protected-mode}
+### Mode Protégé {#protected-mode}
 
 Le serveur AEM Forms vous permet d’exécuter du code JavaScript. Du code JavaScript malveillant peut endommager un environnement AEM Forms. Le mode Protégé restreint AEM Forms afin d’exécuter les fichiers XDP uniquement à partir de ressources et d’emplacements approuvés. Tous les XDP disponibles dans l’interface utilisateur d’AEM Forms sont considérés comme des ressources approuvées.
 
