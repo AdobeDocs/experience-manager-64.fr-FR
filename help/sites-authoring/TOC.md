@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.4
 breadcrumb-title: Guide de création
 user-guide-description: Découvrez les principaux concepts de création de contenu dans AEM.
-feature: 'Création  '
-role: Business Practitioner
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+feature: 'Création '
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 88%
+ht-degree: 87%
 
 ---
 
@@ -26,8 +26,8 @@ ht-degree: 88%
    + [Manipulation de base](basic-handling.md)
    + [Rechercher](search.md)
    + [Configuration de l’environnement du compte](user-properties.md)
-   + [Votre boîte de réception  ](inbox.md)
-   + [Raccourcis clavier pour les consoles  ](keyboard-shortcuts.md)
+   + [Votre boîte de réception ](inbox.md)
+   + [Raccourcis clavier pour les consoles](keyboard-shortcuts.md)
    + [Choix de l’interface utilisateur](select-ui.md)
 + Création {#authoring}
    + [Environnement et outils de création](author-environment-tools.md)
@@ -39,7 +39,7 @@ ht-degree: 88%
    + [Publication de pages](publishing-pages.md)
    + [Création de page à partir de fragments de contenu](content-fragments.md)
    + [Fragments d’expérience](experience-fragments.md)
-   + [Exporter au format CSV  ](csv-export.md)
+   + [Exporter au format CSV](csv-export.md)
    + [Composants](default-components.md)
    + [Création d’une page pour les appareils mobiles](mobile.md)
    + [Résolution des problèmes d’AEM lors de la création](troubleshooting.md)
@@ -47,12 +47,12 @@ ht-degree: 88%
    + [Bonnes pratiques](best-practices.md)
 + Fonctions de site et de page {#siteandpage}
    + [Utilisation des balises](tags.md)
-   + [Création de modèles de page](templates.md)
+   + [Création de modèles de page ](templates.md)
    + [Système de style](style-system.md)
    + [Utilisation des versions de page](working-with-page-versions.md)
    + [Outil de comparaison des pages](page-diff.md)
    + [Console des composants](default-components-console.md)
-   + [Mise en page réactive  ](responsive-layout.md)
+   + [Mise en page réactive ](responsive-layout.md)
    + [Content Insight ](content-insights.md)
    + [Création d’un contenu accessible (conformité WCAG 2.0)](creating-accessible-content.md)
    + [Génération de modèles automatique](scaffolding.md)
@@ -79,15 +79,15 @@ ht-degree: 88%
    + [Analyse des performances de page](ci-analyze.md)
    + [Affichage des données d’analyse de page](pa-using.md)
    + [Ajout de fonctionnalités Search&amp;Promote à une page](search-and-promote.md)
-+ Personnalisation {#personalization}
-   + [Personnalisation](personalization.md)
++ Personnalisation  {#personalization}
+   + [Personnalisation ](personalization.md)
    + [Aperçu des pages à l’aide des données ContextHub](ch-previewing.md)
    + [Création de contenu ciblé en mode Ciblage](content-targeting-touch.md)
    + [Utilisation de contenu ciblé sur plusieurs sites](multisite-support-targeted-content.md)
    + [Structuration de la gestion multisite du contenu ciblé](technical-multisite-targeted.md)
    + [Gestion des activités](activitylib.md)
    + [Gestion des audiences](managing-audiences.md)
-   + [Création et gestion d’offres  ](offerlib.md)
+   + [Création et gestion d’offres ](offerlib.md)
    + [Compréhension de la segmentation](segmentation-overview.md)
 + AEM et Adobe Campaign {#aem-adobe-campaign}
    + [Utilisation d’Adobe Campaign](adobe-campaign.md)
