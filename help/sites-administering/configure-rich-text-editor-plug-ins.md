@@ -1,14 +1,15 @@
 ---
-title: Configuration des modules externes d’éditeur de texte enrichi
-description: Apprenez à configurer les modules externes d’éditeur de texte enrichi d’AEM afin d’activer différentes fonctionnalités.
+title: 'Configuration des modules externes d’éditeur de texte enrichi '
+description: Découvrez comment configurer les modules externes de l’éditeur de texte enrichi Adobe Experience Manager pour activer des fonctionnalités individuelles.
 contentOwner: AG
 exl-id: c9ab462d-b7d4-42c1-a4cf-80d16722910b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: ec5154eb517740f5888dc44ad0e932d9ee469be6
 workflow-type: tm+mt
-source-wordcount: '4204'
-ht-degree: 94%
+source-wordcount: '4216'
+ht-degree: 93%
 
 ---
+
 
 # Configuration des modules externes d’éditeur de texte enrichi  {#configure-the-rich-text-editor-plug-ins}
 
@@ -18,7 +19,7 @@ Pour plus d’informations sur les autres configurations d’éditeur de texte e
 
 >[!NOTE]
 >
->Lorsque vous utilisez CRXDE Lite, il est conseillé d’enregistrer régulièrement les modifications à l’aide de la commande Tout enregistrer.
+>Lorsque vous utilisez CRXDE Lite, il est conseillé d’enregistrer régulièrement les modifications à l’aide de l’option [!UICONTROL Enregistrer tout].
 
 ## Activation d’un module externe et configuration de la propriété features {#activateplugin}
 
@@ -28,7 +29,7 @@ Par défaut, les modules externes `format`, `link`, `list`, `justify` et `contro
 
 >[!NOTE]
 >
->Le noeud rtePlugins respectif est appelé &quot;a0/>rtePlugins-node&lt;a1/&quot; pour éviter la duplication dans cet article.**
+>Le nœud `rtePlugins` respectif est désigné sous le nom de `<rtePlugins-node>` pour éviter les doublons dans cet article.
 
 1. À l’aide de CRXDE Lite, cherchez le composant Texte pour votre projet.
 1. Créez le nœud parent `<rtePlugins-node>` s’il n’existe pas, avant de configurer tout module externe d’éditeur de texte enrichi :
@@ -51,7 +52,7 @@ Par défaut, les modules externes `format`, `link`, `list`, `justify` et `contro
    * **Nom** `rtePlugins`
    * **Type** `nt:unstructured`
 
-1. Créez un noeud pour chaque module externe que vous souhaitez activer :
+1. Voici comment créer un nœud pour chaque module externe à activer :
 
    * **Type** `nt:unstructured`
    * **Nom** ID du module externe requis
@@ -101,11 +102,11 @@ Lors de l’utilisation de l’éditeur de texte enrichi, les auteurs peuvent co
 
 * **Mode Navigateur** : collage de texte avec la mise en œuvre de collage par défaut du navigateur. Il ne s’agit pas d’une méthode recommandée, car elle peut introduire des balises indésirables.
 
-* **Mode Texte brut** : collage du contenu du Presse-papiers en tant que texte brut. Cela supprime tous les éléments de style et de mise en forme du contenu copié avant insertion dans le composant AEM.
+* **Mode Texte brut** : collage du contenu du Presse-papiers en tant que texte brut. Cela supprime tous les éléments de style et de mise en forme du contenu copié avant insertion dans le composant [!DNL Experience Manager].
 
 * **Mode MS Word** : collage du texte, y compris des tableaux, avec la mise en forme lors de la copie à partir de MS Word. La copie et le collage de texte depuis une autre source, telle qu’une page web ou MS Excel ne sont pas pris en charge et conservent uniquement une mise en forme partielle.
 
-### Configuration des options de collage disponibles sur la barre d’outils de l’éditeur de texte enrichi {#configure-paste-options-available-on-the-rte-toolbar}
+### Configuration des options de collage disponibles sur la barre d’outils de l’éditeur de texte enrichi   {#configure-paste-options-available-on-the-rte-toolbar}
 
 Les trois icônes ci-dessous peuvent être mises à la disposition des auteurs dans la barre d’outils de l’éditeur de texte enrichi :
 
@@ -117,10 +118,7 @@ Les trois icônes ci-dessous peuvent être mises à la disposition des auteurs d
 
 Pour configurer l’éditeur de texte enrichi afin qu’il affiche les icônes requises, procédez comme suit.
 
-1. Accédez à votre composant ; par exemple :
-
-   `/apps/<myProject>/components/text`
-
+1. Accédez à votre composant, par exemple `/apps/<myProject>/components/text`.
 1. Accédez au nœud `rtePlugins/edit`. Voir [Activation d’un module externe](#activateplugin) si le nœud n’existe pas.
 1. Créez la propriété `features` sur le nœud `edit` et ajoutez une ou plusieurs des fonctions. Enregistrez toutes les modifications.
 
@@ -178,55 +176,21 @@ Pour configurer les formats autorisés afin de coller du texte dans AEM à parti
    Toutes les propriétés sont de **type** `Boolean`. Ainsi, dans la **valeur** appropriée, vous pouvez cocher ou désélectionner la case pour activer/désactiver les fonctionnalités.
 
    >[!NOTE]
-   Si le format n’est pas défini explicitement, la valeur par défaut true est utilisée et le format est admis.
+   >
+   >Si le format n’est pas défini explicitement, la valeur par défaut true est utilisée et le format est admis.
 
-1. D’autres formats peuvent également être définis à l’aide de différentes propriétés ou de différents nœuds, également appliqués au nœud `htmlPasteRules` :
+1. D’autres formats peuvent également être définis à l’aide de différentes propriétés ou de différents noeuds, également appliqués au noeud `htmlPasteRules`. Enregistrez toutes les modifications.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Propriété</strong></td> 
-   <td><strong>Type</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>allowBlockTags</td> 
-   <td>Chaîne[]</td> 
-   <td><p>Définit la liste des balises block autorisées.</p> <p>Les balises block possibles incluent (entre autres) :</p> 
-    <ul> 
-     <li>Titres (h1, h2, h3)</li> 
-     <li>Paragraphes (p)</li> 
-     <li>Listes (ol, ul)</li> 
-     <li>Tableaux (table)</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>fallbackBlockTag</td> 
-   <td>Chaîne</td> 
-   <td><p>Définit la balise block utilisée pour tout bloc contenant une balise block ne figurant pas dans allowBlockTags.</p> <p> p est suffisant dans la plupart des cas.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>table</td> 
-   <td>nt:unstructured</td> 
-   <td><p>Définit le comportement lors du collage de tableaux.<br /> </p> <p>Ce nœud doit comporter la propriété <code>allow</code> (de type <code>Boolean</code>) pour définir s’il est autorisé de coller des tableaux.</p> <p>Si <code>allow</code> est défini sur <code>false</code>, vous devez spécifier la propriété <code>ignoreMode</code> (de type <code> String</code>) pour définir comment le contenu du tableau collé est géré. Les valeurs valides pour <code>ignoreMode</code> sont les suivantes :</p> 
-    <ul> 
-     <li><code>remove</code>: supprime le contenu du tableau.</li> 
-     <li><code>paragraph</code>: transforme les cellules de tableau en paragraphes.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>list</td> 
-   <td>nt:unstructured</td> 
-   <td><p>Définit le comportement lors du collage de listes.<br /> </p> <p>Doit comporter la propriété <code>allow</code> (de type <code>Boolean</code>) pour définir s’il est autorisé de coller des listes.</p> <p>Si <code>allow</code> est défini sur <code>false</code>, vous devez spécifier la propriété <code>ignoreMode</code> (de type <code>String</code>) pour définir comment gérer le contenu d’une liste collée. Les valeurs valides pour <code>ignoreMode</code> sont les suivantes :</p> 
-    <ul> 
-     <li><code>remove</code>: supprime le contenu de la liste.</li> 
-     <li><code>paragraph</code>: transforme les éléments de la liste en paragraphes.</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
+Vous pouvez utiliser les propriétés suivantes pour `htmlPasteRules`.
 
-Exemple de structure `htmlPasteRules` valide :
+| Propriété | Type | Description |
+|---|---|---|
+| `allowBlockTags` | Chaîne | Définit la liste des balises block autorisées. Voici quelques balises block possibles : <ul> <li>Titres (h1, h2, h3)</li> <li>Paragraphes (p)</li> <li>Listes (ol, ul)</li> <li>Tableaux (table)</li> </ul> |
+| `fallbackBlockTag` | Chaîne | Définit la balise block utilisée pour tout bloc contenant une balise block ne figurant pas dans `allowBlockTags`. `p` suffit dans la plupart des cas. |
+| table | nt:unstructured | Définit le comportement lors du collage de tableaux. Ce nœud doit comporter la propriété `allow` (de type Boolean) pour définir s’il est autorisé de coller des tableaux. Si allow est défini sur `false`, vous devez spécifier la propriété `ignoreMode` (de type String) pour définir comment le contenu du tableau collé est géré. Les valeurs valides pour `ignoreMode` sont les suivantes : <ul> <li>`remove`: supprime le contenu du tableau.</li> <li>`paragraph`: transforme les cellules de tableau en paragraphes.</li> </ul> |
+| list | nt:unstructured | Définit le comportement lors du collage de listes. Doit comporter la propriété `allow` (de type Boolean) pour définir s’il est autorisé de coller des listes. Si `allow` est défini sur `false`, vous devez spécifier la propriété `ignoreMode` (de type String) pour définir comment gérer le contenu d’une liste collée. Les valeurs valides pour `ignoreMode` sont les suivantes : <ul><li> `remove`: supprime le contenu de la liste.</li> <li>`paragraph`: transforme les éléments de la liste en paragraphes.</li> </ul> |
+
+Vous trouverez ci-dessous un exemple de structure `htmlPasteRules` valide.
 
 ```xml
 "htmlPasteRules": {
@@ -248,13 +212,9 @@ Exemple de structure `htmlPasteRules` valide :
 }
 ```
 
-1. Enregistrez toutes les modifications.
-
 ## Configuration des styles de texte {#textstyles}
 
-Les auteurs peuvent appliquer des styles pour modifier l’apparence d’une portion de texte. Les styles reposent sur les classes CSS que vous prédéfinissez dans votre feuille de style CSS. Le contenu stylisé est inclus dans les balises `span` à l’aide de l’attribut `class` pour faire référence à la classe CSS. Par exemple :
-
-`<span class=monospaced>Monospaced Text Here</span>`
+Les auteurs peuvent appliquer des styles pour modifier l’apparence d’une portion de texte. Les styles reposent sur les classes CSS que vous prédéfinissez dans votre feuille de style CSS. Le contenu stylisé est inclus dans les balises `span` à l’aide de l’attribut `class` pour faire référence à la classe CSS. Par exemple, `<span class=monospaced>Monospaced Text Here</span>`.
 
 Lorsque le module externe Styles est activé pour la première fois, aucun style n’est disponible par défaut. La liste contextuelle est vide. Pour fournir des styles aux auteurs, procédez comme suit :
 
@@ -262,10 +222,11 @@ Lorsque le module externe Styles est activé pour la première fois, aucun style
 * Spécifiez l’emplacement de la ou des feuilles de style.
 * Spécifiez les différents styles qui peuvent être sélectionnés dans la liste déroulante Style.
 
-Pour les configurations ultérieures (par exemple, afin d’ajouter davantage de styles), suivez les instructions pour faire référence à une nouvelle feuille de style et spécifier les styles supplémentaires.
+Pour les configurations ultérieures, par exemple pour ajouter d’autres styles, suivez uniquement les instructions pour référencer une nouvelle feuille de style et spécifier les styles supplémentaires.
 
 >[!NOTE]
-Des styles peuvent également être définis pour [des tableaux ou des cellules de tableau](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Ces configurations nécessitent des procédures distinctes.
+>
+>Vous pouvez définir des styles pour les [tableaux ou les cellules de tableau](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Ces configurations nécessitent des procédures distinctes.
 
 ### Activation de la liste du sélecteur de liste déroulante Style {#styleselectorlist}
 
@@ -281,7 +242,8 @@ Cette opération et effectuée en activant le module externe Styles.
 1. Enregistrez toutes les modifications.
 
 >[!NOTE]
-Une fois que le module externe Styles est activé, la liste déroulante Style s’affiche dans la boîte de dialogue de modification. Cependant, la liste est vide lorsqu’aucun style n’est configuré.
+>
+>Une fois que le module externe Styles est activé, la liste déroulante Style s’affiche dans la boîte de dialogue de modification. Cependant, la liste est vide lorsqu’aucun style n’est configuré.
 
 ### Spécification de l’emplacement de la feuille de style {#locationofstylesheet}
 
@@ -295,17 +257,22 @@ Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référenc
    * **Valeur(s)** Chemin d’accès et nom de fichier de chaque feuille de style à inclure. Utilisez les chemins de référentiel.
 
    >[!NOTE]
-   Vous pouvez ajouter des références à d’autres feuilles de style ultérieurement.
+   >
+   >Vous pouvez ajouter des références à d’autres feuilles de style ultérieurement.
 
 1. Enregistrez toutes les modifications.
 
 >[!NOTE]
-Lors de l’utilisation de l’éditeur de texte enrichi dans une boîte de dialogue (IU classique), vous pouvez spécifier des feuilles de style optimisées pour la modification de texte enrichi. En raison de restrictions techniques, le contexte CSS est perdu dans l’éditeur. Vous devrez peut-être émuler ce contexte afin d’améliorer l’expérience WYSIWYG.
-L’éditeur de texte enrichi utilise un élément DOM de conteneur avec un ID de `CQrte`, qui peut être utilisé afin de fournir différents styles pour l’affichage et la modification :
-`#CQ td {`
-` // defines the style for viewing }`
-`#CQrte td {`
-` // defines the style for editing }`
+>
+>Lors de l’utilisation de l’éditeur de texte enrichi dans une boîte de dialogue (IU classique), vous pouvez spécifier des feuilles de style optimisées pour la modification de texte enrichi. En raison de restrictions techniques, le contexte CSS est perdu dans l’éditeur. Vous devrez peut-être émuler ce contexte afin d’améliorer l’expérience WYSIWYG.
+>
+>L’éditeur de texte enrichi utilise un élément DOM de conteneur avec un ID de `CQrte`, qui peut être utilisé afin de fournir différents styles pour l’affichage et la modification :
+>
+>`#CQ td {`
+>` // defines the style for viewing }`
+>
+>`#CQrte td {`
+>` // defines the style for editing }`
 
 ### Spécification des styles disponibles dans la liste contextuelle {#stylesindropdown}
 
@@ -341,10 +308,12 @@ L’éditeur de texte enrichi utilise un élément DOM de conteneur avec un ID d
 Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise block dont la valeur par défaut est `<p>`. En activant le module externe `paraformat`, vous spécifiez d’autres balises block, qui peuvent être affectées à des paragraphes, à l’aide d’une liste déroulante de sélection. Les formats de paragraphe déterminent le type de paragraphe en affectant la balise block appropriée. L’auteur peut les sélectionner et les affecter à l’aide du sélecteur Format. Les balises block comprennent, par exemple, le paragraphe standard &lt;p> et les titres standard &lt;h1>, &lt;h2> et ainsi de suite.
 
 >[!CAUTION]
-Ce module externe n’est pas adapté au contenu présentant une structure complexe, tel que les listes et les tableaux.
+>
+>Ce module externe n’est pas adapté au contenu présentant une structure complexe, tel que les listes et les tableaux.
 
 >[!NOTE]
-Si une balise block, par exemple une balise &lt;hr>, ne peut pas être affectée à un paragraphe, ce n’est pas un cas d’utilisation valide pour un module externe paraformat.
+>
+>Si une balise block, par exemple une balise &lt;hr>, ne peut pas être affectée à un paragraphe, ce n’est pas un cas d’utilisation valide pour un module externe paraformat.
 
 Lorsque le module externe Formats des paragraphes est activé pour la première fois, aucun format de paragraphe n’est disponible par défaut. La liste contextuelle est vide. Pour fournir des formats de paragraphes aux auteurs, procédez comme suit :
 
@@ -457,9 +426,9 @@ Si vous ajoutez vos propres caractères spéciaux, ils remplacent la sélection 
 
 Une fois la propriété enregistrée, le caractère représenté s’affiche dans CRXDE. Voir l’exemple de la moitié ci-dessous. Répétez les étapes ci-dessus pour mettre davantage de caractères spéciaux à la disposition des auteurs.
 
-![Ajout d’un caractère unique dans CRXDE pour qu’il soit disponible dans la barre d’outils d’éditeur de texte enrichi](assets/chlimage_1-412.png)
+![Dans CRXDE, ajoutez un caractère unique pour qu’il soit disponible dans la barre d’outils d’éditeur de texte enrichi](assets/chlimage_1-412.png " Dans CRXDE, ajoutez un caractère unique pour qu’il soit disponible dans la barre d’outils d’éditeur de texte enrichi")
 
-Ajout d’un caractère unique dans CRXDE pour qu’il soit disponible dans la barre d’outils d’éditeur de texte enrichi
+
 
 ### Définition d’une série de caractères {#definerangechar}
 
@@ -578,7 +547,7 @@ Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe 
 Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de texte enrichi utilise les dictionnaires de chaque langue appropriée. Ils sont sélectionnés en fonction de la langue du site web, d’après la propriété language de la sous-arborescence ou à partir de la langue de l’adresse URL, par exemple. Pour la branche `/en/`, la vérification est effectuée pour l’anglais ; pour la branche `/de/`, pour l’allemand.
 
 >[!NOTE]
-Le message `Spell checking failed` s’affiche si une vérification est effectuée pour une langue qui n’est pas installée. Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
+Le message `Spell checking failed` s’affiche si une vérification est effectuée pour une langue non installée. Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
 
 Une installation d’AEM standard inclut les dictionnaires pour l’anglais américain (`en_us`) et l’anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, procédez comme suit.
 
@@ -738,7 +707,7 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
 
          * **Nom** `targetInternal`
          * **Type** `String`
-         * **Valeur** Cible des liens internes (utilisé uniquement lorsque le mode est `auto`)
+         * **Valeur** Cible des liens internes (utilisée uniquement lorsque le mode est `auto`)
       * Cible des liens externes :
 
          * **Nom** `targetExternal`
