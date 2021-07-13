@@ -3,10 +3,10 @@ title: 'Configuration des modules externes d’éditeur de texte enrichi '
 description: Découvrez comment configurer les modules externes de l’éditeur de texte enrichi Adobe Experience Manager pour activer des fonctionnalités individuelles.
 contentOwner: AG
 exl-id: c9ab462d-b7d4-42c1-a4cf-80d16722910b
-source-git-commit: ec5154eb517740f5888dc44ad0e932d9ee469be6
+source-git-commit: 9d1d6357c79e864e1fef89f713534dd074cf20ab
 workflow-type: tm+mt
-source-wordcount: '4216'
-ht-degree: 93%
+source-wordcount: '4210'
+ht-degree: 92%
 
 ---
 
@@ -76,7 +76,7 @@ Après activation d’un module externe, suivez ces instructions pour configurer
   <tr> 
    <td><strong>Type</strong></td> 
    <td>Chaîne</td> 
-   <td>String[] (multichaîne ; définissez le type sur chaîne et cliquez sur Multi dans CRXDE Lite)</td> 
+   <td>Chaîne (multichaîne ; définissez le type sur chaîne et cliquez sur Multi dans CRXDE Lite)</td> 
    <td>Chaîne</td> 
   </tr> 
   <tr> 
@@ -88,7 +88,7 @@ Après activation d’un module externe, suivez ces instructions pour configurer
  </tbody> 
 </table>
 
-## Compréhension du module externe findreplace {#understand--findreplace-plugin}
+## Compréhension du module externe findreplace {#understand-findreplace-plugin}
 
 Le module externe `findreplace` n’a pas besoin de configuration. Il est prêt à l’emploi.
 
@@ -96,7 +96,7 @@ Lors de l’utilisation de la fonctionnalité de remplacement, la chaîne à rem
 
 La boîte de dialogue de recherche et de remplacement devient transparente lorsque l’utilisateur clique sur Rechercher et devient opaque lorsque l’utilisateur clique sur Remplacer. Cela permet à l’auteur de vérifier le texte qui sera remplacé. Si les utilisateurs cliquent sur Tout remplacer, la boîte de dialogue se ferme et affiche le nombre de remplacements effectués.
 
-## Configuration des modes de collage {#pastemodes}
+## Configuration des modes de collage {#paste-modes}
 
 Lors de l’utilisation de l’éditeur de texte enrichi, les auteurs peuvent copier le contenu selon l’un des trois modes suivants :
 
@@ -106,7 +106,7 @@ Lors de l’utilisation de l’éditeur de texte enrichi, les auteurs peuvent co
 
 * **Mode MS Word** : collage du texte, y compris des tableaux, avec la mise en forme lors de la copie à partir de MS Word. La copie et le collage de texte depuis une autre source, telle qu’une page web ou MS Excel ne sont pas pris en charge et conservent uniquement une mise en forme partielle.
 
-### Configuration des options de collage disponibles sur la barre d’outils de l’éditeur de texte enrichi   {#configure-paste-options-available-on-the-rte-toolbar}
+### Configuration des options de collage disponibles sur la barre d’outils de l’éditeur de texte enrichi   {#configure-paste-options-toolbar}
 
 Les trois icônes ci-dessous peuvent être mises à la disposition des auteurs dans la barre d’outils de l’éditeur de texte enrichi :
 
@@ -122,7 +122,7 @@ Pour configurer l’éditeur de texte enrichi afin qu’il affiche les icônes r
 1. Accédez au nœud `rtePlugins/edit`. Voir [Activation d’un module externe](#activateplugin) si le nœud n’existe pas.
 1. Créez la propriété `features` sur le nœud `edit` et ajoutez une ou plusieurs des fonctions. Enregistrez toutes les modifications.
 
-### Configuration du comportement de l’icône Coller (Ctrl + V) et du raccourci {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
+### Configuration du comportement de l’icône Coller (Ctrl + V) et du raccourci {#configure-paste-icon-shortcut}
 
 Vous pouvez préconfigurer le comportement de l’icône **[!UICONTROL Coller (Ctrl + V)]** en procédant comme suit. Cette configuration définit également le comportement du raccourci clavier Ctrl + V que les auteurs utilisent pour coller du contenu.
 
@@ -141,14 +141,14 @@ Cette configuration permet trois scénarios d’utilisation, à savoir :
    * **Type** `String`
    * **Valeur** Un des modes de collage requis : `browser`, `plaintext` ou `wordhtml`.
 
-### Configuration des formats autorisés lors du collage de contenu {#pasteformats}
+### Configuration des formats autorisés lors du collage de contenu {#paste-formats}
 
 Le mode Coller comme élément Microsoft Word (`paste-wordhtml`) peut être configuré de manière plus détaillée de manière à pouvoir définir explicitement les styles autorisés pour coller un élément dans AEM à partir d’un autre programme, comme Microsoft Word.
 
 Par exemple, s’il n’est possible de coller que des formats gras et des listes dans AEM, vous pouvez écarter les autres formats en les filtrant. Il s’agit du filtrage du collage configurable, qui peut être effectué pour les deux types de filtrage :
 
-* [Texte](#pastemodes)
-* [Liens](#linkstyles)
+* [Texte](#paste-modes)
+* [Liens](#link-styles)
 
 Pour les liens, vous pouvez également définir les protocoles acceptés automatiquement.
 
@@ -212,7 +212,7 @@ Vous trouverez ci-dessous un exemple de structure `htmlPasteRules` valide.
 }
 ```
 
-## Configuration des styles de texte {#textstyles}
+## Configuration des styles de texte {#text-styles}
 
 Les auteurs peuvent appliquer des styles pour modifier l’apparence d’une portion de texte. Les styles reposent sur les classes CSS que vous prédéfinissez dans votre feuille de style CSS. Le contenu stylisé est inclus dans les balises `span` à l’aide de l’attribut `class` pour faire référence à la classe CSS. Par exemple, `<span class=monospaced>Monospaced Text Here</span>`.
 
@@ -226,9 +226,9 @@ Pour les configurations ultérieures, par exemple pour ajouter d’autres styles
 
 >[!NOTE]
 >
->Vous pouvez définir des styles pour les [tableaux ou les cellules de tableau](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Ces configurations nécessitent des procédures distinctes.
+>Vous pouvez définir des styles pour les [tableaux ou les cellules de tableau](/help/sites-administering/configure-rich-text-editor-plug-ins.md#table-styles). Ces configurations nécessitent des procédures distinctes.
 
-### Activation de la liste du sélecteur de liste déroulante Style {#styleselectorlist}
+### Activation de la liste du sélecteur de liste déroulante Style {#style-selector-list}
 
 Cette opération et effectuée en activant le module externe Styles.
 
@@ -245,7 +245,7 @@ Cette opération et effectuée en activant le module externe Styles.
 >
 >Une fois que le module externe Styles est activé, la liste déroulante Style s’affiche dans la boîte de dialogue de modification. Cependant, la liste est vide lorsqu’aucun style n’est configuré.
 
-### Spécification de l’emplacement de la feuille de style {#locationofstylesheet}
+### Spécification de l’emplacement de la feuille de style {#location-stylesheet}
 
 Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référencer :
 
@@ -262,21 +262,19 @@ Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référenc
 
 1. Enregistrez toutes les modifications.
 
->[!NOTE]
->
->Lors de l’utilisation de l’éditeur de texte enrichi dans une boîte de dialogue (IU classique), vous pouvez spécifier des feuilles de style optimisées pour la modification de texte enrichi. En raison de restrictions techniques, le contexte CSS est perdu dans l’éditeur. Vous devrez peut-être émuler ce contexte afin d’améliorer l’expérience WYSIWYG.
->
->L’éditeur de texte enrichi utilise un élément DOM de conteneur avec un ID de `CQrte`, qui peut être utilisé afin de fournir différents styles pour l’affichage et la modification :
->
->`#CQ td {`
->` // defines the style for viewing }`
->
->`#CQrte td {`
->` // defines the style for editing }`
+Lors de l’utilisation de l’éditeur de texte enrichi dans une boîte de dialogue (IU classique), vous pouvez spécifier des feuilles de style optimisées pour la modification de texte enrichi. En raison de restrictions techniques, le contexte CSS est perdu dans l’éditeur. Vous pouvez émuler ce contexte afin d’améliorer l’expérience WYSIWYG. L’éditeur de texte enrichi utilise un élément DOM de conteneur avec un ID `CQrte` qui peut être utilisé pour fournir différents styles d’affichage et de modification :
 
-### Spécification des styles disponibles dans la liste contextuelle {#stylesindropdown}
+```TXT
+#CQ td {
+// defines the style for viewing }
 
-1. Dans la définition du composant, accédez au nœud `<rtePlugins-node>/styles` tel que créé dans [Activation du sélecteur de liste déroulante Style](#styleselectorlist).
+#CQrte td {
+// defines the style for editing }
+```
+
+### Spécification des styles disponibles dans la liste contextuelle {#styles-popup-list}
+
+1. Dans la définition du composant, accédez au nœud `<rtePlugins-node>/styles` tel que créé dans [Activation du sélecteur de liste déroulante Style](#style-selector-list).
 1. Sous le nœud `styles`, créez un nœud (également appelé `styles`) destiné à contenir la liste mise à disposition :
 
    * **Nom** `styles`
@@ -303,7 +301,7 @@ Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référenc
 
    Répétez les étapes ci-dessus pour chaque style requis.
 
-## Configuration des formats de paragraphe {#paraformats}
+## Configuration des formats de paragraphe {#para-formats}
 
 Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise block dont la valeur par défaut est `<p>`. En activant le module externe `paraformat`, vous spécifiez d’autres balises block, qui peuvent être affectées à des paragraphes, à l’aide d’une liste déroulante de sélection. Les formats de paragraphe déterminent le type de paragraphe en affectant la balise block appropriée. L’auteur peut les sélectionner et les affecter à l’aide du sélecteur Format. Les balises block comprennent, par exemple, le paragraphe standard &lt;p> et les titres standard &lt;h1>, &lt;h2> et ainsi de suite.
 
@@ -322,9 +320,9 @@ Lorsque le module externe Formats des paragraphes est activé pour la première 
 
 Pour les configurations ultérieures, par exemple, afin d’ajouter davantage de formats, suivez uniquement la partie correspondante des instructions.
 
-### Activation du sélecteur de liste déroulante Format  {#formatselectorlist}
+### Activation du sélecteur de liste déroulante Format  {#format-selector-list}
 
-Commencez d’abord par activer le module externe paraformat :
+Commencez par activer le module externe `paraformat` :
 
 1. Dans votre composant, accédez au nœud `<rtePlugins-node>/paraformat`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Créez la propriété `features` sur le nœud `paraformat` :
@@ -345,11 +343,11 @@ Si le module externe n’est pas configuré davantage, les formats par défaut s
 >[!CAUTION]
 Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. Si la balise &lt;p> est supprimée, l’auteur du contenu ne peut pas sélectionner l’option **Formats des paragraphes**, même si d’autres formats sont configurés.
 
-### Spécification des formats de paragraphe disponibles {#paraformatsindropdown}
+### Spécification des formats de paragraphe disponibles {#para-formats-popup}
 
 Les formats de paragraphe peuvent être mis à disposition pour être sélectionnés :
 
-1. Dans la définition du composant, accédez au nœud `<rtePlugins-node>/paraformat`, tel que créé dans [Activation du sélecteur de liste déroulante Format](#styleselectorlist).
+1. Dans la définition du composant, accédez au nœud `<rtePlugins-node>/paraformat`, tel que créé dans [Activation du sélecteur de liste déroulante Format](#style-selector-list).
 1. Sous le nœud `paraformat`, créez un nœud destiné à contenir la liste de formats :
 
    * **Nom** `formats`
@@ -381,7 +379,7 @@ Les formats de paragraphe peuvent être mis à disposition pour être sélection
 >[!CAUTION]
 Si vous définissez des formats personnalisés, les formats par défaut (`<p>`, `<h1>`, `<h2>` et `<h3>`) sont supprimés. Recréez le format `<p>`, car il s’agit du format par défaut.
 
-## Configuration des caractères spéciaux {#spchar}
+## Configuration des caractères spéciaux {#special-char}
 
 Dans une installation AEM standard, lorsque le module externe `misctools` est activé pour les caractères spéciaux (`specialchars`), une sélection par défaut est disponible immédiatement. Par exemple, les symboles de copyright et de marque.
 
@@ -390,7 +388,7 @@ Vous pouvez configurer l’éditeur de texte enrichi de manière à mettre à di
 >[!CAUTION]
 Si vous ajoutez vos propres caractères spéciaux, ils remplacent la sélection par défaut. Si nécessaire, définissez ou redéfinissez ces caractères dans votre sélection.
 
-### Définition d’un caractère unique  {#definesinglechar}
+### Définition d’un caractère unique  {#define-single-char}
 
 1. Dans votre composant, accédez au nœud `<rtePlugins-node>/misctools`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Créez la propriété `features` sur le nœud `misctools` :
@@ -430,9 +428,9 @@ Une fois la propriété enregistrée, le caractère représenté s’affiche dan
 
 
 
-### Définition d’une série de caractères {#definerangechar}
+### Définition d’une série de caractères {#define-range-char}
 
-1. Utilisez les étapes 1 à 3 de la section [Définition d’un caractère unique](#definesinglechar).
+1. Utilisez les étapes 1 à 3 de la section [Définition d’un caractère unique](#define-single-char).
 1. Sous `chars`, ajoutez un nouveau nœud destiné à contenir la définition de la plage de caractères :
 
    * **Nom** Vous pouvez spécifier le nom, mais il doit refléter la plage de caractères, par exemple, « crayons ».
@@ -462,7 +460,7 @@ Une fois la propriété enregistrée, le caractère représenté s’affiche dan
 
          *Affichage dans une fenêtre contextuelle des caractères spéciaux disponibles pour les auteurs dans l’éditeur de texte enrichi*
 
-## Configuration des styles de tableau {#tablestyles}
+## Configuration des styles de tableau {#table-styles}
 
 Les styles sont généralement appliqués au texte, mais un jeu de styles distinct peut également être appliqué à un tableau ou à certaines cellules de tableau. Ces styles sont à la disposition des auteurs au niveau de la boîte du sélecteur de style dans la boîte de dialogue de propriétés de la cellule ou du tableau. Les styles sont disponibles lors de la modification d’un tableau dans un composant Texte (ou dérivé), et non dans le composant Tableau standard.
 
@@ -488,12 +486,12 @@ La copie et le collage de tableaux dans ou à partir d’un composant d’édite
       * `cellprops` pour permettre de modifier les propriétés des cellules, dont les styles.
 
 
-1. Définissez l’emplacement des feuilles de style CSS pour y faire référence. Voir [Spécification de l’emplacement d’une feuille de style](#locationofstylesheet), car il s’agit de la même procédure que lorsque vous définissez des [styles de texte](#textstyles). L’emplacement peut être défini si vous avez défini d’autres styles.
+1. Définissez l’emplacement des feuilles de style CSS pour y faire référence. Voir [Spécification de l’emplacement d’une feuille de style](#location-stylesheet), car il s’agit de la même procédure que lorsque vous définissez des [styles de texte](#text-styles). L’emplacement peut être défini si vous avez défini d’autres styles.
 1. Sous le nœud `table`, créez les nœuds suivants (au besoin) :
 
    * Pour définir des styles pour le tableau entier (disponibles sous **Propriétés du tableau**) :
 
-      * **Nom** `tableStyles`
+      * **Nom** `table-styles`
       * **Type** `cq:WidgetCollection`
    * Pour définir des styles pour des cellules individuelles (disponibles sous **Propriétés de la cellule**) :
 
@@ -501,7 +499,7 @@ La copie et le collage de tableaux dans ou à partir d’un composant d’édite
       * **Type** `cq:WidgetCollection`
 
 
-1. Créez un nœud (sous le nœud `tableStyles` ou `cellStyles`, selon ce qui est approprié) pour représenter un style individuel :
+1. Créez un nœud (sous le nœud `table-styles` ou `cellStyles`, selon ce qui est approprié) pour représenter un style individuel :
 
    * **Nom** Vous pouvez spécifier le nom, mais il doit refléter le style.
    * **Type** `nt:unstructured`
@@ -524,25 +522,25 @@ La copie et le collage de tableaux dans ou à partir d’un composant d’édite
 
 Répétez les étapes ci-dessus pour chaque style requis.
 
-### Configuration d’en-têtes masqués dans les tableaux pour l’accessibilité {#hiddenheader}
+### Configuration d’en-têtes masqués dans les tableaux pour l’accessibilité {#hidden-header}
 
 Dans certains cas, vous pouvez créer des tableaux de données sans texte visuel dans un en-tête de colonne en supposant que l’objectif de l’en-tête est induit par la relation visuelle de la colonne avec d’autres colonnes. Dans ce cas, il est nécessaire d’indiquer un texte masqué à l’intérieur de la cellule d’en-tête pour permettre aux lecteurs d’écran et aux autres dispositifs d’assistance d’aider les utilisateurs, indépendamment de leur validité, à comprendre l’objectif de la colonne.
 
 Pour améliorer l’accessibilité dans de telles situations, l’éditeur de texte enrichi prend en charge les cellules d’en-tête masquées. De plus, il fournit des paramètres de configuration associés aux en-têtes masqués dans les tableaux. Ces paramètres permettent d’appliquer des styles CSS à des en-têtes masqués en mode modification et aperçu. Pour aider les auteurs à identifier les en-têtes masqués en mode modification, incluez les paramètres ci-dessous dans votre code :
 
-* `hiddenHeaderEditingCSS` : spécifie le nom de la classe CSS appliquée à la cellule hidden-header lorsque l’éditeur de texte enrichi est modifié.
-* `hiddenHeaderEditingStyle` : spécifie une chaîne Style appliquée à la cellule hidden-header lorsque l’éditeur de texte enrichi est modifié.
+* `hidden-headerEditingCSS` : spécifie le nom de la classe CSS appliquée à la cellule hidden-header lorsque l’éditeur de texte enrichi est modifié.
+* `hidden-headerEditingStyle` : spécifie une chaîne Style appliquée à la cellule hidden-header lorsque l’éditeur de texte enrichi est modifié.
 
 Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe CSS prévaut sur la chaîne Style et peut remplacer les modifications apportées à la configuration en raison de la chaîne Style.
 
 Pour aider les créateurs à appliquer la feuille de style CSS à des en-têtes masqués en mode aperçu, vous pouvez inclure les paramètres ci-dessous dans votre code :
 
-* `hiddenHeaderClassName` : spécifie le nom de la classe CSS appliquée à la cellule d’en-tête masqué en mode aperçu.
-* `hiddenHeaderStyle` : spécifie une chaîne Style appliquée à la cellule d’en-tête masqué en mode aperçu.
+* `hidden-headerClassName` : spécifie le nom de la classe CSS appliquée à la cellule d’en-tête masqué en mode aperçu.
+* `hidden-headerStyle` : spécifie une chaîne Style appliquée à la cellule d’en-tête masqué en mode aperçu.
 
 Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe CSS prévaut sur la chaîne Style et peut remplacer les modifications apportées à la configuration en raison de la chaîne Style.
 
-## Ajout de dictionnaires au vérificateur orthographique {#adddict}
+## Ajout de dictionnaires au vérificateur orthographique {#add-dict}
 
 Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de texte enrichi utilise les dictionnaires de chaque langue appropriée. Ils sont sélectionnés en fonction de la langue du site web, d’après la propriété language de la sous-arborescence ou à partir de la langue de l’adresse URL, par exemple. Pour la branche `/en/`, la vérification est effectuée pour l’anglais ; pour la branche `/de/`, pour l’allemand.
 
@@ -570,7 +568,7 @@ Une installation d’AEM standard inclut les dictionnaires pour l’anglais amé
 Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte. Pour exécuter le vérificateur orthographique, cliquez sur [!UICONTROL Vérificateur orthographique] dans la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et met en surbrillance les mots mal orthographiés.
 Si vous incorporez une modification suggérée par le vérificateur orthographique, l’état des changements de texte et des mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
 
-## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
+## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undo-history}
 
 L’éditeur de texte enrichi permet aux auteurs d’annuler ou de rétablir quelques-unes des dernières modifications. Par défaut, 50 modifications sont stockées dans l’historique. Vous pouvez configurer cette valeur, au besoin.
 
@@ -586,20 +584,20 @@ L’éditeur de texte enrichi permet aux auteurs d’annuler ou de rétablir que
 
 1. Enregistrez les modifications.
 
-## Configuration de la taille de tabulation {#tabsize}
+## Configuration de la taille de tabulation {#tab-size}
 
 Lorsque le caractère de tabulation est activé dans un texte, un nombre prédéfini d’espaces est inséré. Par défaut, il s’agit de trois espaces insécables et d’un espace. Pour définir la taille de la tabulation :
 
 1. Dans votre composant, accédez au nœud `<rtePlugins-node>/keys`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Sur le nœud `keys`, créez la propriété :
 
-   * **Nom** `tabSize`
+   * **Nom** `tab-size`
    * **Type** `String`
    * **Valeur** Nombre d’espaces à utiliser pour le tabulateur
 
 1. Enregistrez les modifications.
 
-## Définition de la marge de retrait {#indentmargin}
+## Définition de la marge de retrait {#indent-margin}
 
 Lorsque la mise en retrait est activée (par défaut), vous pouvez définir la taille du retrait :
 
@@ -613,7 +611,7 @@ Cette taille de retrait n’est appliquée qu’aux paragraphes (blocs) de texte
    * **Type** : `Long`
    * **Valeur** Nombre de pixels nécessaires pour la marge en retrait
 
-## Configuration de la hauteur de l’espace modifiable {#editablespace}
+## Configuration de la hauteur de l’espace modifiable {#editable-space}
 
 Vous pouvez définir la hauteur de l’espace modifiable affiché dans la boîte de dialogue du composant :
 
@@ -631,7 +629,7 @@ Vous pouvez définir la hauteur de l’espace modifiable affiché dans la boîte
 >[!NOTE]
 Cela ne s’applique que lors de l’utilisation de l’éditeur de texte enrichi dans une boîte de dialogue (et non lors de la modification statique dans l’interface utilisateur classique).
 
-## Configuration des styles et des protocoles pour les liens {#linkstyles}
+## Configuration des styles et des protocoles pour les liens {#link-styles}
 
 Lorsque vous ajoutez des liens dans AEM, vous pouvez définir les éléments suivants :
 
