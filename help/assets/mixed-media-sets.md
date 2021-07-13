@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 252c1a50-17ac-4412-88d6-49bb6850658d
-feature: Combiner des visionneuses de médias
+feature: Visionneuses de médias mixtes
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 99df7edd60fad155ae7d9c0765bc32d5c517d723
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 78%
