@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Traduction
 role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1935'
-ht-degree: 97%
+source-wordcount: '1942'
+ht-degree: 96%
 
 ---
 
@@ -313,4 +313,4 @@ Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie d
 
 1. Accédez à la console Ressources et ouvrez la page Propriétés de chacune des ressources traduites afin d’afficher les métadonnées traduites.
 
-Pour obtenir des conseils sur la traduction efficace des métadonnées des ressources, reportez-vous à la section [5 Procédure de traduction efficace des métadonnées](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+Pour obtenir des conseils sur la traduction efficace des métadonnées des ressources, consultez cette page archivée sur les [5 étapes de traduction efficace des métadonnées](https://web.archive.org/web/20181217033517/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
