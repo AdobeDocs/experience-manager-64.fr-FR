@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Workflow,Rendus
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1035'
 ht-degree: 28%
 
 ---
@@ -114,5 +114,4 @@ Pour un modèle de workflow, les utilisateurs peuvent créer un lanceur de workf
 * [Création de modèles de workflow et extension de la fonctionnalité de workflow](/help/sites-developing/workflows.md)
 * [Méthodes d’exécution de workflows](/help/sites-administering/workflows-starting.md)
 * [Bonnes pratiques relatives aux workflows](/help/sites-developing/workflows-best-practices.md)
-* [Article de la communauté sur la modification d’une ressource à l’aide d’un workflow](https://helpx.adobe.com/fr/experience-manager/using/modify_asset_workflow.html)
 
