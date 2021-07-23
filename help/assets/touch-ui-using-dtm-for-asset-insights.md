@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Statistiques sur les ressources, rapports sur les ressources
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 39%
+source-wordcount: '688'
+ht-degree: 36%
 
 ---
 
@@ -115,4 +115,4 @@ Effectuez les étapes suivantes pour activer Assets Insights via DTM :
    * L’objet AppMeasurement est récupéré en interrogeant `satelliteLib` pour tous les moteurs SiteCatalyst disponibles. Si plusieurs balises sont configurées, modifiez l’index du sélecteur de tableau de manière appropriée. Les entrées du tableau sont triées en fonction des outils SiteCatalyst disponibles dans l’interface de gestion dynamique des balises.
 
 1. Enregistrez et fermez la fenêtre Éditeur de code, puis enregistrez les modifications dans la configuration de l’outil.
-1. Dans l&#39;onglet **[!UICONTROL Validations]** , validez les deux validations en attente. La balise DTM est prête à être insérée sur votre page web. Pour plus d’informations sur la façon d’insérer des balises DTM sur des pages web, reportez-vous à la section [Intégration de DTM dans des modèles de page personnalisés](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/).
+1. Dans l&#39;onglet **[!UICONTROL Validations]** , validez les deux validations en attente. La balise DTM est prête à être insérée sur votre page web. Pour plus d’informations sur l’insertion de balises DTM dans les pages web, voir la page archivée sur [l’intégration de DTM dans les modèles de page personnalisés](https://web.archive.org/web/20180816221834/https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template).
