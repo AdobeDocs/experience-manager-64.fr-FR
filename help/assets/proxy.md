@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Traitement des ressources
 role: Admin, Architect
 exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 75%
@@ -108,7 +108,7 @@ Voici un exemple d’utilisation d’API :
 
 >[!NOTE]
 >
->La documentation de référence pour l’API de proxy est disponible sous [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
+>La documentation de référence pour l’API de proxy est disponible sous [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/commons/proxy/package-summary.html).
 
 Les configurations de worker de proxy et de proxy sont disponibles via les configurations de services cloud comme accessibles à partir de la console **Outils** AEM Assets ou sous `/etc/cloudservices/proxy`. Chaque worker de proxy doit ajouter un noeud sous `/etc/cloudservices/proxy` pour les détails de configuration spécifiques au worker (par exemple, `/etc/cloudservices/proxy/workername`).
 
