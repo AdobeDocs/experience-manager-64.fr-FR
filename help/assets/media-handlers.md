@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Workflow,Rendus
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
+source-git-commit: e7fdddadff41f8b03dc466da531f850d45bcee9d
 workflow-type: tm+mt
-source-wordcount: '2230'
-ht-degree: 44%
+source-wordcount: '2227'
+ht-degree: 45%
 
 ---
 
@@ -442,7 +442,7 @@ Après avoir exécuté la procédure suivante, lorsque vous téléchargez un fic
 
 Experience Manager vous permet d’exécuter n’importe quel outil de ligne de commande dans un workflow pour convertir des ressources (comme ImageMagick) et ajouter le nouveau rendu à la ressource. Installez l’outil de ligne de commande sur le disque hébergeant le serveur Experience Manager et ajoutez et configurez une étape de processus au workflow. Le processus appelé, appelé `CommandLineProcess`, filtre en fonction de types MIME spécifiques et crée plusieurs miniatures en fonction du nouveau rendu.
 
-Les conversions suivantes peuvent être automatiquement exécutées et stockées dans Experience Manager Assets :
+Les conversions suivantes peuvent être automatiquement exécutées et stockées dans [!DNL Experience Manager Assets]:
 
 * Transformation EPS et AI à l’aide d’[ImageMagick](https://www.imagemagick.org/script/index.php) et de [Ghostscript](https://www.ghostscript.com/)
 * Transcodage vidéo FLV à l’aide de [FFmpeg](https://ffmpeg.org/)
