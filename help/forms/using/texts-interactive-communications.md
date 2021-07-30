@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
 feature: Communication interactive
 exl-id: a689aead-7b39-4d66-8922-ae8910c5e9ef
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '2251'
 ht-degree: 72%
@@ -87,8 +87,6 @@ Si vous avez spécifié un modèle de données de formulaire lors de la créatio
 * Pour insérer une propriété FDM dans du texte, placez le curseur à l’endroit où vous souhaitez insérer la propriété, puis sélectionnez la propriété **`[A]`** dans le volet de gauche en appuyant dessus, et appuyez sur **`[B]`** **[!UICONTROL Ajouter la sélection]**. Vous pouvez également appuyer deux fois sur la propriété pour l’insérer à la position du curseur **`[C]`**. Les propriétés du modèle de données de formulaire sont mises en surbrillance dans une couleur d’arrière-plan brunâtre.
 
 * Pour permettre aux agents de modifier la valeur d’une propriété FDM dans l’interface utilisateur de l’agent tout en [Préparant et envoyant une communication interactive](/help/forms/using/prepare-send-interactive-communication.md) à l’aide de l’interface utilisateur de l’agent, appuyez sur l’icône de verrouillage **`[D]`** pour cette propriété et assurez-vous qu’elle est à l’état déverrouillé. L’état par défaut de la propriété est verrouillé et un agent ne peut pas modifier la propriété dans l’interface utilisateur de l’agent.
-
-* 
 
 Vous pouvez également utiliser les propriétés du modèle de données de formulaire pour construire des règles d’affichage ou de masquage de parties du contenu. Pour en savoir plus, consultez [Créer des règles dans le texte](#rules).
 
