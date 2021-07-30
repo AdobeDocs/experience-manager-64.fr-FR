@@ -10,7 +10,7 @@ topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: 5c78edf8-148f-41a3-8b11-c1dada34090e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 59%
@@ -170,7 +170,7 @@ Une fois que les informations nécessaires ont été saisies :
 
 * Sélectionnez **Créer**.
 
-### Modification de balises  {#editing-tags}
+### Modification de balises {#editing-tags}
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
@@ -204,10 +204,9 @@ Lorsqu’un espace de noms ou une autre balise est sélectionné, la sélection 
 en affiche initialement la valeur actuelle 
 `name`de la balise . Un nouveau `name`peut être saisi.
 
-* 
 * Sélectionnez **Enregistrer**.
 
-### Fusion des balises  {#merging-tags}
+### Fusion des balises {#merging-tags}
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
