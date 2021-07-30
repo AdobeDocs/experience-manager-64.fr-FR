@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 exl-id: 5e97f7bd-d668-423d-9f65-7dcc8fb1943a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 94%
@@ -189,8 +189,6 @@ Personnalisation des paramètres de newsletter :
 
    ![mcm_newsletter_settings](assets/mcm_newsletter_settings.png)
 
-1. 
-
    1. Saisissez l’adresse électronique **De**.
    1. Modifiez l’**Objet** du courrier électronique, le cas échéant.
    1. Sélectionnez une **Liste des destinataires par défaut** dans la liste déroulante.
@@ -262,7 +260,7 @@ Envoi d’une newsletter à partir d’une campagne :
    >
    >Assurez-vous que vous êtes l’un des destinataires pour vérifier que la newsletter a bien été reçue.
 
-### Envoi de newsletters à partir d’une liste  {#sending-newsletters-from-a-list}
+### Envoi de newsletters à partir d’une liste {#sending-newsletters-from-a-list}
 
 Envoi d’une newsletter à partir d’une liste :
 
@@ -292,7 +290,7 @@ Envoi d’une newsletter à partir d’une liste :
 
 Cette section décrit comment s’abonner à une newsletter.
 
-### Abonnement à une newsletter  {#subscribing-to-a-newsletter-1}
+### Abonnement à une newsletter {#subscribing-to-a-newsletter-1}
 
 S’abonner à une newsletter (en utilisant le site Web Geometrixx comme exemple) :
 
