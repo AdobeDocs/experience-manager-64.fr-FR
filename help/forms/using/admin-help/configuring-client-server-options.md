@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '10283'
 ht-degree: 85%
@@ -78,7 +78,7 @@ Votre environnement AEM forms contient un ou plusieurs administrateurs disposant
 
 Les administrateurs doivent également bénéficier du rôle Utilisateur dans Administration Console pour pouvoir accéder à Administration Console (voir [Création et configuration de rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)).
 
-### Configuration des utilisateurs et des groupes visibles  {#configuring-visible-users-and-groups}
+### Configuration des utilisateurs et des groupes visibles {#configuring-visible-users-and-groups}
 
 Pour afficher les utilisateurs et les groupes des domaines sélectionnés lors des recherches d’utilisateurs de stratégies, un super-administrateur ou un administrateur de jeux de stratégies doit sélectionner et ajouter des domaines (créés dans User Management) à la liste des utilisateurs et groupes visibles pour chaque jeu de stratégies créé.
 
@@ -94,7 +94,7 @@ La liste des utilisateurs et des groupes visibles est accessible au coordinateur
 1. Naviguez jusqu’à Services > Document Security > Configuration > Mes stratégies et cliquez sur l’onglet Utilisateurs et groupes visibles.
 1. Cliquez sur Ajouter des domaines et ajoutez les domaines nécessaires.
 
-## Ajout du fournisseur d’authentification étendue  {#add-the-extended-authentication-provider}
+## Ajout du fournisseur d’authentification étendue {#add-the-extended-authentication-provider}
 
 AEM forms fournit un exemple de configuration que vous pouvez personnaliser en fonction de votre environnement. Exécutez les étapes suivantes :
 
@@ -107,7 +107,7 @@ AEM forms fournit un exemple de configuration que vous pouvez personnaliser en f
 1. Activation de l’authentification étendue à partir de la page de configuration du serveur. Voir [Paramètres de configuration du serveur](configuring-client-server-options.md#server-configuration-settings).
 1. Ajout d’URL obligatoire de redirection d’authentification unique dans le fichier de configuration de User Management. Voir [Ajout d’URL de redirection d’authentification unique pour l’authentification étendue](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
-### Ajout d’URL de redirection d’authentification unique pour l’authentification étendue  {#add-sso-redirect-urls-for-extended-authentication}
+### Ajout d’URL de redirection d’authentification unique pour l’authentification étendue {#add-sso-redirect-urls-for-extended-authentication}
 
 Lorsque l’authentification étendue est activée, une boîte de dialogue d’authentification s’affiche pour les utilisateurs qui ouvrent un document protégé par une stratégie dans Acrobat XI ou Reader XI. Cette boîte de dialogue charge la page HTML que vous avez indiquée comme URL d’accueil de l’authentification étendue dans les paramètres du serveur Document Security. Voir [Paramètres de configuration du serveur](configuring-client-server-options.md#server-configuration-settings).
 
@@ -136,7 +136,7 @@ A l’issue de la période d’ouverture hors connexion, le destinataire doit re
 
 Comme les documents qui autorisent un accès hors connexion utilisent également une clé de chiffrement mise en cache sur l’ordinateur sur lequel les fichiers sont stockés hors connexion, les documents peuvent être compromis si un utilisateur non autorisé se procure la clé. Pour vous protéger contre ce risque, des options de roulement manuel et programmé des clés sont fournies. Il vous suffit de les configurer pour empêcher un utilisateur non autorisé d’accéder au document.
 
-### Définition d’une période d’ouverture hors connexion par défaut  {#set-a-default-offline-lease-period}
+### Définition d’une période d’ouverture hors connexion par défaut {#set-a-default-offline-lease-period}
 
 Les destinataires de documents protégés par une stratégie peuvent mettre ces documents hors connexion pendant le nombre de jours spécifiés dans la stratégie. Après la synchronisation initiale du document avec Document Security, le destinataire peut l’utiliser hors connexion jusqu’à la fin de la période d’ouverture hors connexion. A l’issue de cette période, il doit remettre le document en ligne et ouvrir une session pour le synchroniser avec Document Security et continuer à l’utiliser.
 
@@ -146,7 +146,7 @@ Vous pouvez configurer une période d’ouverture hors connexion par défaut. Ce
 1. Dans le champ Période d’ouverture hors connexion par défaut, indiquez un nombre de jours.
 1. Cliquez sur OK.
 
-### Gestion des roulements de clés  {#manage-key-rollovers}
+### Gestion des roulements de clés {#manage-key-rollovers}
 
 Document Security protège les documents à l’aide d’algorithmes de chiffrement et de licences. Lorsqu’il chiffre un document, Document Security génère et gère une clé de déchiffrement, appelée *DocKey*, qu’il transmet à l’application cliente. Si la stratégie qui protège un document autorise un accès hors connexion, une clé hors connexion, appelée *clé principale*, est également générée pour chaque utilisateur disposant d’un accès hors connexion au document.
 
@@ -186,7 +186,7 @@ Vous devez rouler deux fois les clés principales avant que les clés précéden
 1. Cliquez sur Exécuter le roulement des clés maintenant, puis sur OK.
 1. Attendez 10 minutes environ.
 
-## Configuration des options de contrôle et de confidentialité des événements  {#configuring-event-auditing-and-privacy-settings}
+## Configuration des options de contrôle et de confidentialité des événements {#configuring-event-auditing-and-privacy-settings}
 
 Document Security peut contrôler et enregistrer des informations sur les événements liés aux interactions avec des documents protégés par une stratégie, des stratégies, des administrateurs et le serveur. Vous pouvez configurer le contrôle des événements et spécifier les types d’événements à contrôler. Pour contrôler les événements d’un document particulier, l’option de contrôle doit également être activée dans la stratégie.
 
@@ -199,7 +199,7 @@ Les événements qu’il est possible de contrôler sont les suivants :
 * les événements concernant les utilisateurs, comme les invitations et les enregistrements d’utilisateurs externes, les comptes d’utilisateurs activés et désactivés, les modifications des mots de passe et les mises à jour de profils ;
 * les événements AEM forms, tels que les versions incohérentes, le serveur d’annuaire et les fournisseurs d’autorisations indisponibles, et les modifications apportées à la configuration du serveur.
 
-### Activation ou désactivation du contrôle des événements  {#enable-or-disable-event-auditing}
+### Activation ou désactivation du contrôle des événements {#enable-or-disable-event-auditing}
 
 Vous pouvez activer et désactiver le contrôle des événements concernant le serveur, les documents protégés par une stratégie, les stratégies, les jeux de stratégies et les utilisateurs. Lorsque vous activez le contrôle des événements, vous pouvez choisir de contrôler tous les événements ou sélectionner certains événements à contrôler.
 
@@ -220,7 +220,7 @@ Lorsque vous activez le contrôle du serveur, vous pouvez afficher les élément
 >
 >lorsque vous travaillez sur des pages Web, évitez d’utiliser les boutons du navigateur, tels que le bouton Précédent, le bouton Actualiser, ainsi que les flèches permettant d’afficher la page précédente ou suivante, car cette opération risque de capturer des données non souhaitées et d’entraîner des problèmes d’affichage.
 
-### Activation ou désactivation de la notification de confidentialité  {#enable-or-disable-privacy-notification}
+### Activation ou désactivation de la notification de confidentialité {#enable-or-disable-privacy-notification}
 
 Vous pouvez activer ou désactiver le message de la notification de confidentialité. Lorsque vous activez la notification de confidentialité, un message apparaît lorsqu’un destinataire tente d’ouvrir un document protégé par une stratégie. Cette notification informe l’utilisateur que le document fait l’objet d’un contrôle. Vous pouvez également spécifier une URL permettant à l’utilisateur d’afficher la page de votre stratégie de confidentialité si elle est disponible.
 
@@ -238,7 +238,7 @@ Vous pouvez activer ou désactiver le message de la notification de confidential
 >
 >La désactivation de la notification de confidentialité ne désactive pas le contrôle d’utilisation du document. Des actions de contrôle hors champ et des actions personnalisées gérées via le suivi des utilisations étendues peuvent toujours collecter des informations sur le comportement des utilisateurs.
 
-### Importation d’un type d’événement de contrôle personnalisé  {#import-a-custom-audit-event-type}
+### Importation d’un type d’événement de contrôle personnalisé {#import-a-custom-audit-event-type}
 
 Si vous utilisez une application compatible Document Security qui gère le contrôle d’événements supplémentaires, tels que les événements propres à un certain type de fichier, un partenaire Adobe peut vous fournir des événements de contrôle personnalisés à importer dans Document Security. N’utilisez cette fonction que si un partenaire Adobe vous a fourni des types d’événements personnalisés.
 
@@ -247,13 +247,13 @@ Si vous utilisez une application compatible Document Security qui gère le contr
 1. L’importation remplace les types d’événements de contrôle personnalisés existant sur le serveur si des combinaisons d’espace de nom et de code d’événement identiques sont détectées.
 1. Cliquez sur OK.
 
-### Suppression d’un type d’événement de contrôle personnalisé  {#delete-a-custom-audit-event-type}
+### Suppression d’un type d’événement de contrôle personnalisé {#delete-a-custom-audit-event-type}
 
 1. Dans Administration Console, cliquez sur Services > Document Security > Configuration > Gestion des événements.
 1. Désélectionnez la case à cocher correspondant au type d’événement de contrôle personnalisé à supprimer, puis cliquez sur Supprimer.
 1. Cliquez sur OK.
 
-### Exportation d’événements de contrôle  {#export-audit-events}
+### Exportation d’événements de contrôle {#export-audit-events}
 
 Vous pouvez exporter des événements de contrôle vers un fichier dans un but d’archivage.
 
@@ -268,7 +268,7 @@ Vous pouvez exporter des événements de contrôle vers un fichier dans un but d
 
 1. Cliquez sur Exporter. Si vous souhaitez annuler l’exportation, cliquez sur Annuler l’exportation. Si un autre utilisateur a planifié une exportation, le bouton Annuler l’exportation n’est pas disponible avant la fin de l’exportation. Le bouton Annuler l’exportation n’est pas disponible si un autre utilisateur a planifié une exportation. Pour vérifier si une opération d’exportation ou de suppression planifiée a démarré ou est terminée, cliquez sur Actualiser.
 
-### Suppression d’événements de contrôle  {#delete-audit-events}
+### Suppression d’événements de contrôle {#delete-audit-events}
 
 Vous pouvez supprimer les événements de contrôle dont la date est antérieure au nombre de jours spécifié.
 
@@ -276,7 +276,7 @@ Vous pouvez supprimer les événements de contrôle dont la date est antérieure
 1. Sous Supprimer les événements de contrôle, indiquez le nombre de jours dans la zone Supprimer les événements de contrôle antérieurs à.
 1. Cliquez sur Supprimer. Cliquez sur Exporter. Si vous souhaitez annuler la suppression, cliquez sur Annuler la suppression. Si un autre utilisateur a planifié une suppression, le bouton Annuler la suppression n’est pas disponible avant la fin de l’exportation. Le bouton Annuler la suppression n’est pas disponible si un autre utilisateur a planifié une exportation. Pour vérifier si une opération de suppression planifiée a démarré ou est terminée, cliquez sur Actualiser.
 
-### Options de contrôle des événements  {#event-auditing-options}
+### Options de contrôle des événements {#event-auditing-options}
 
 Vous pouvez activer et désactiver le contrôle des événements et spécifier les types d’événements à contrôler.
 
@@ -372,7 +372,7 @@ Vous pouvez activer et désactiver le contrôle des événements et spécifier l
 
 **Modification de la configuration du serveur :** modification de la configuration du serveur effectuée soit par le biais des pages web, soit manuellement via l’importation d’un fichier config.xml. Ceci inclut les modifications de l’URL de base, les délais d’expiration des sessions, les ouvertures de session verrouillées, les paramètres d’annuaire, les roulements de clés, les paramètres du serveur SMTP pour l’enregistrement externe, la configuration des filigranes, les options d’affichage, etc.
 
-## Configuration du suivi de l’utilisation étendue  {#configuring-extended-usage-tracking}
+## Configuration du suivi de l’utilisation étendue {#configuring-extended-usage-tracking}
 
 Document Security peut suivre divers événements personnalisés qui peuvent survenir sur un document protégé. Vous pouvez activer le suivi des événements depuis le serveur Document Security au niveau global ou au niveau stratégique. Vous pouvez ensuite configurer un JavaScript pour capturer les actions spécifiques effectuées dans un fichier PDF protégé tel qu’un clic sur un bouton ou l’enregistrement du document. Ces données d’utilisation sont envoyées sous la forme d’un fichier XML de paires clé/valeur, que vous pouvez utiliser pour une analyse ultérieure. Les utilisateurs finaux accédant aux documents protégés peuvent autoriser ou refuser un tel suivi à partir de l’application cliente.
 
@@ -380,7 +380,7 @@ Si le suivi est activé au niveau global, vous pouvez remplacer ce paramètre au
 
 Une fois que vous avez activé le suivi, l’ensemble des stratégies créées par la suite comporteront cette option activée par défaut. Les stratégies créées avant l’activation du suivi sur le serveur doivent être mises à jour manuellement.
 
-### Activation ou désactivation du suivi des utilisations étendues  {#enable-or-disable-extended-usage-tracking}
+### Activation ou désactivation du suivi des utilisations étendues {#enable-or-disable-extended-usage-tracking}
 
 Avant de commencer, assurez-vous que le contrôle du serveur est activé. Voir [Configuration des options de contrôle et de confidentialité des événements](configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings) pour plus d’informations sur le contrôle.
 
@@ -390,7 +390,7 @@ Avant de commencer, assurez-vous que le contrôle du serveur est activé. Voir [
 
 Pour afficher les événements suivis vous pouvez utiliser le filtre des événements de document sur la page Evénements. Les événements faisant l’objet d’un suivi à l’aide de JavaScript sont étiquetés comme faisant l’objet d’un suivi détaillé de l’utilisation. Voir [Contrôle des événements](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) pour plus d’informations sur les événements.
 
-## Configuration des paramètres d’affichage de Document Security  {#configure-document-security-display-settings}
+## Configuration des paramètres d’affichage de Document Security {#configure-document-security-display-settings}
 
 1. Dans Administration Console, cliquez sur Services > Document Security > Configuration > Options d’affichage.
 1. Configurez les paramètres et cliquez sur OK.
@@ -423,7 +423,7 @@ Ces paramètres contrôlent le texte affiché dans la boîte de dialogue d’aut
 
 **Afficher uniquement les émetteurs d’informations d’identification de confiance :** lorsque cette option est sélectionnée, l’application cliente ne présente à l’utilisateur que les certificats des émetteurs d’informations d’identification d’AEM que forms est configuré pour approuver (voir Gestion des certificats et des informations d’identification). Lorsque cette option n’est pas sélectionnée, l’utilisateur voit apparaître la liste de tous les certificats présents sur le système de l’utilisateur.
 
-## Configuration des filigranes dynamiques  {#configure-dynamic-watermarks}
+## Configuration des filigranes dynamiques {#configure-dynamic-watermarks}
 
 Document Security vous permet de configurer les paramètres par défaut des filigranes dynamiques que vous appliquez lors de la création des stratégies. Un *filigrane* est une image qui se superpose au texte d’un document. Il permet d’assurer le suivi du contenu d’un document et de détecter une utilisation illégale de ce contenu.
 
@@ -435,7 +435,7 @@ Le filigrane spécifié par une stratégie apparaît dans le document protégé 
 
 Notez que les filigranes dynamiques diffèrent des filigranes que les utilisateurs peuvent ajouter directement au document dans Acrobat. Un document protégé par une stratégie peut donc contenir deux filigranes.
 
-### Remarques concernant la création de filigranes  {#considerations-when-creating-watermarks}
+### Remarques concernant la création de filigranes {#considerations-when-creating-watermarks}
 
 Vous pouvez créer un filigrane dynamique avec plusieurs éléments de filigrane, chaque élément étant défini au format texte ou PDF. Vous pouvez inclure jusqu’à cinq éléments dans un filigrane.
 
@@ -458,7 +458,7 @@ Lorsque vous configurez un filigrane, tenez compte des points suivants :
 * Lorsque vous définissez l’emplacement des éléments du filigrane, assurez-vous qu’à chaque élément correspond un emplacement différent. Si deux éléments de filigrane ont le même emplacement (centre par exemple), ils apparaîtront l’un sur l’autre dans le document, dans l’ordre auquel ils ont été ajoutés au filigrane.
 * Lorsque vous définissez la taille et le type de police, assurez-vous que tout le texte apparaît dans la page. Le texte est restructuré en de nouvelles lignes, donc il est possible que le contenu du filigrane que vous souhaitez voir apparaître dans les marges chevauche la zone de texte dans certaines pages. Toutefois, si le document est ouvert à l’aide d’Acrobat 9, le texte allant au-delà d’une ligne est tronqué.
 
-### Limite des filigranes dynamiques  {#limitations-of-dynamic-watermarks}
+### Limite des filigranes dynamiques {#limitations-of-dynamic-watermarks}
 
 Certaines applications clientes ne gèrent pas les filigranes dynamiques Consultez l’Aide des extensions d’Acrobat Reader DC appropriée. En outre, gardez à l’esprit les points suivants concernant les versions d’Acrobat prenant en charge en charge les filigranes dynamiques :
 
@@ -472,7 +472,7 @@ Certaines applications clientes ne gèrent pas les filigranes dynamiques Consult
 
 * Acrobat 9.0 et versions antérieures : Acrobat 9.0 et les versions antérieures ne prennent pas en charge les noms de stratégie dans les filigranes dynamiques. Si Acrobat 9.0 ouvre un document protégé par une stratégie avec un filigrane dynamique qui contient un nom de stratégie et d’autres données dynamiques, le filigrane est affiché sans le nom de la stratégie. Si le filigrane dynamique inclut uniquement le nom de la stratégie, Acrobat affiche un message d’erreur
 
-### Ajout d’un modèle de filigrane dynamique  {#add-a-dynamic-watermark-template}
+### Ajout d’un modèle de filigrane dynamique {#add-a-dynamic-watermark-template}
 
 Vous pouvez créer des modèles de filigrane dynamique. Ces modèles restent disponibles comme options de configuration pour les stratégies que les administrateurs ou les utilisateurs créent.
 
@@ -520,14 +520,14 @@ Vous pouvez créer des modèles de filigrane dynamique. Ces modèles restent dis
 1. Dans Eléments du filigrane, cliquez sur **Nouveau** pour ajouter un élément de filigrane le cas échéant.
 1. Cliquez sur OK.
 
-### Modification d’un modèle de filigrane dynamique  {#edit-a-dynamic-watermark-template}
+### Modification d’un modèle de filigrane dynamique {#edit-a-dynamic-watermark-template}
 
 1. Dans Administration Console, cliquez sur Services > Document Security > Configuration > Filigranes.
 1. Sélectionnez le filigrane approprié dans la liste.
 1. Dans la page Modifier filigranes, modifiez les paramètres.
 1. Cliquez sur OK.
 
-### Suppression d’un modèle de filigrane dynamique  {#delete-a-dynamic-watermark-template}
+### Suppression d’un modèle de filigrane dynamique {#delete-a-dynamic-watermark-template}
 
 Lorsque vous supprimez un filigrane dynamique, il n’est plus disponible et ne peut plus être ajouté à une nouvelle stratégie. Toutefois, il est conservé sur les stratégies existantes qui l’utilisent et les documents qui sont actuellement protégés par cette stratégie continuent à afficher le filigrane dynamique jusqu’à ce que vous ou un utilisateur modifiez la stratégie qui contient le filigrane supprimé. Après la modification de la stratégie, le filigrane n’est plus appliqué. Un message s’affiche alors pour signaler que le filigrane existant a été supprimé de la stratégie et qu’il est possible d’en sélectionner un autre.
 
@@ -535,7 +535,7 @@ Lorsque vous supprimez un filigrane dynamique, il n’est plus disponible et ne 
 1. Sélectionnez la case à cocher correspondant au filigrane approprié, puis cliquez sur Supprimer.
 1. Cliquez sur OK.
 
-## Configuration de l’enregistrement d’utilisateur invité  {#configuring-invited-user-registration}
+## Configuration de l’enregistrement d’utilisateur invité {#configuring-invited-user-registration}
 
 Les utilisateurs externes à votre entreprise peuvent s’enregistrer dans Document Security. Les utilisateurs invités qui s’enregistrent et activent leur compte peuvent ouvrir une session dans Document Security en indiquant l’adresse électronique et le mot de passe qu’ils ont créés lors de l’enregistrement. Les utilisateurs invités enregistrés peuvent utiliser les documents protégés par une stratégie pour lesquels ils disposent d’autorisations.
 
@@ -573,7 +573,7 @@ Par défaut, le processus d’enregistrement des utilisateurs invités est désa
 1. (Facultatif) Pour activer l’Enregistrement intégré, sélectionnez Oui. Si vous n’activez pas l’enregistrement intégré, vous devez configurer votre propre système d’enregistrement des utilisateurs.
 1. Cliquez sur OK.
 
-### Exclusion ou inclusion d’un utilisateur ou d’un groupe externe  {#exclude-or-include-an-external-user-or-group}
+### Exclusion ou inclusion d’un utilisateur ou d’un groupe externe {#exclude-or-include-an-external-user-or-group}
 
 Vous pouvez limiter la possibilité d’enregistrement dans Document Security à certains utilisateurs ou groupes d’utilisateurs externes. Cette option se révèle notamment utile si vous souhaitez autoriser l’accès à un groupe d’utilisateurs, mais exclure certains membres de ce groupe.
 
@@ -627,7 +627,7 @@ Si votre hôte SMTP vous y invite, saisissez les informations requises dans les
 >
 >si vous modifiez l’option Enregistrement d’utilisateur invité, le fichier config.xml est remplacé et le protocole TLS est désactivé. Si vous écrasez les modifications, vous devez exécuter l’étape précédente pour activer à nouveau la prise en charge du protocole TLS de l’option Enregistrement d’utilisateur invité.
 
-### Paramètres des courriers électroniques d’invitation à effectuer un enregistrement  {#registration-invitation-email-settings}
+### Paramètres des courriers électroniques d’invitation à effectuer un enregistrement {#registration-invitation-email-settings}
 
 Document Security envoie automatiquement un courrier électronique d’invitation à l’enregistrement lorsque vous créez un compte d’utilisateur invité ou lorsqu’un utilisateur existant ajoute à une stratégie un destinataire externe qui n’est pas encore enregistré ou qui a été invité à s’enregistrer. Ce courrier électronique contient un lien permettant au destinataire d’accéder à la page d’enregistrement et de saisir les références de son compte, telles que son nom d’utilisateur et son mot de passe. Le mot de passe doit contenir huit caractères, quels qu’ils soient.
 
@@ -663,7 +663,7 @@ Les paramètres suivants se trouvent dans la zone Configuration du message élec
 
 **Message :** texte qui apparaît dans le corps du message, et qui indique que le compte utilisateur du destinataire doit être activé. Vous pouvez également inclure d’autres informations, comme la marche à suivre pour contacter un administrateur afin d’obtenir un nouveau mot de passe.
 
-### Configuration d’un courrier électronique de réinitialisation de mot de passe  {#configure-a-password-reset-email}
+### Configuration d’un courrier électronique de réinitialisation de mot de passe {#configure-a-password-reset-email}
 
 Si vous devez réinitialiser le mot de passe d’un utilisateur invité, un courrier électronique invitant l’utilisateur à choisir un nouveau mot de passe est généré. Il n’existe aucun moyen de récupérer le mot de passe d’un utilisateur. Si l’utilisateur l’oublie, vous devez le réinitialiser.
 
@@ -685,7 +685,7 @@ La page Configuration comprend un lien vers la page Mes stratégies, à partir d
 
 Avant d’octroyer aux utilisateurs l’autorisation de créer des stratégies personnalisées, déterminez le niveau d’accès ou de contrôle que vous souhaitez accorder à chaque utilisateur. Déterminez également le niveau d’exposition de vos utilisateurs et groupes lorsqu’ils sont visibles dans les recherches.
 
-### Désignation des utilisateurs et groupes autorisés à créer des stratégies  {#specify-users-and-groups-who-can-create-policies}
+### Désignation des utilisateurs et groupes autorisés à créer des stratégies {#specify-users-and-groups-who-can-create-policies}
 
 En tant qu’administrateur, vous déterminez les utilisateurs et les groupes autorisés à créer des stratégies personnalisées. Cette autorisation peut être configurée au niveau de l’utilisateur et au niveau du groupe. La fonctionnalité de recherche recherche les utilisateurs et les groupes dans la base de données User Management.
 
@@ -701,14 +701,14 @@ En tant qu’administrateur, vous déterminez les utilisateurs et les groupes au
 
 Les utilisateurs et groupes sélectionnés sont alors autorisés à créer des stratégies personnalisées.
 
-### Retrait de l’autorisation à créer des stratégies personnalisées pour un utilisateur ou un groupe  {#remove-the-create-custom-policies-permission-from-a-user-or-group}
+### Retrait de l’autorisation à créer des stratégies personnalisées pour un utilisateur ou un groupe {#remove-the-create-custom-policies-permission-from-a-user-or-group}
 
 1. Dans la page Document Security, cliquez sur Configuration > Mes stratégies.
 1. Dans la page Mes stratégies, cliquez sur l’onglet Créer des stratégies, Les utilisateurs et les groupes qui possèdent l’autorisation de créer des stratégies personnalisées sont affichés.
 1. Cochez les cases correspondant aux utilisateurs et groupes pour lesquels vous souhaitez supprimer cette autorisation.
 1. Cliquez sur Supprimer, puis sur OK.
 
-### Désignation des utilisateurs et des groupes visibles dans les recherches  {#specify-users-and-groups-that-are-visible-in-searches}
+### Désignation des utilisateurs et des groupes visibles dans les recherches {#specify-users-and-groups-that-are-visible-in-searches}
 
 Pour gérer leurs stratégies personnalisées, les utilisateurs peuvent rechercher des utilisateurs et des groupes à ajouter à leurs stratégies. Vous devez spécifier les domaines à partir desquels les utilisateurs et les groupes sont visibles dans ces recherches.
 
@@ -716,7 +716,7 @@ Pour gérer leurs stratégies personnalisées, les utilisateurs peuvent recherch
 1. Dans la page Mes stratégies, cliquez sur l’onglet Utilisateurs et groupes visibles,
 1. Pour rendre les utilisateurs et les groupes d’un domaine visibles, cliquez sur Ajouter des domaines, sélectionnez les domaines, puis cliquez sur Ajouter. Pour supprimer un domaine, cochez la case en regard du nom de domaine, puis cliquez sur Supprimer.
 
-## Modification manuelle du fichier de configuration de Document Security  {#manually-editing-the-document-security-configuration-file}
+## Modification manuelle du fichier de configuration de Document Security {#manually-editing-the-document-security-configuration-file}
 
 Vous pouvez importer et exporter les informations de configuration stockées dans la base de données Document Security. Vous pouvez par exemple effectuer cette opération si vous souhaitez procéder à une copie de sauvegarde des informations de configuration lorsque vous passez d’un environnement d’installation à un environnement de production ou si vous souhaitez modifier des options avancées qui ne peuvent être configurées qu’en modifiant ce fichier.
 
@@ -749,12 +749,7 @@ Vous pouvez procéder aux modifications suivantes dans le fichier de configurati
 1. Cliquez sur Parcourir pour trouver le fichier de configuration, puis cliquez sur Importer. Vous ne pouvez pas directement saisir le chemin dans le champ Nom du fichier.
 1. Cliquez sur OK.
 
-1. 
-1. 
-1. 
-1. 
-
-### Définition d’un délai d’expiration pour la synchronisation hors connexion  {#specify-a-timeout-period-for-offline-synchronization}
+### Définition d’un délai d’expiration pour la synchronisation hors connexion {#specify-a-timeout-period-for-offline-synchronization}
 
 Document Security permet aux utilisateurs d’ouvrir et d’utiliser un document protégé lorsqu’ils sont connectés au serveur Document Security. L’application cliente de l’utilisateur doit régulièrement se synchroniser avec le serveur pour que les documents soient toujours valides pour une utilisation hors connexion. La première fois qu’un utilisateur ouvre un document protégé, il lui est demandé si sa machine doit être autorisée à effectuer une synchronisation périodique avec le client.
 
@@ -772,7 +767,7 @@ Dans le fichier de configuration de Document Security, vous pouvez définir la f
 
 1. Importez le fichier de configuration (voir [Modification manuelle du fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)).
 
-### Refus d’accès aux services Document Security pour des applications spécifiques  {#denying-document-security-services-for-specific-applications}
+### Refus d’accès aux services Document Security pour des applications spécifiques {#denying-document-security-services-for-specific-applications}
 
 Vous pouvez configurer Document Security pour que l’accès aux services soit refusé à des applications répondant à des critères précis. Les critères peuvent préciser un attribut unique, comme le nom d’une plateforme, ou plusieurs jeux d’attributs. Cette fonction peut vous aider à contrôler les demandes traitées par Document Security. Voici quelques exemples d’application de cette fonction :
 
@@ -947,7 +942,7 @@ Dans cet exemple, toutes les requêtes émanant d’une installation Microsoft P
  </node
 ```
 
-### Modification des paramètres de configuration des filigranes  {#change-the-watermark-configuration-parameters}
+### Modification des paramètres de configuration des filigranes {#change-the-watermark-configuration-parameters}
 
 Par défaut, vous pouvez définir un maximum de cinq éléments dans un filigrane. Par ailleurs, la taille maximale des documents PDF que vous voulez utiliser en filigrane est de 100 Ko. Vous pouvez modifier ces paramètres dans le fichier config.xml.
 
@@ -968,7 +963,7 @@ Par défaut, vous pouvez définir un maximum de cinq éléments dans un filigran
 
 1. Importez le fichier de configuration (voir [Modification manuelle du fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)).
 
-### Désactivation des liens externes  {#disabling-external-links}
+### Désactivation des liens externes {#disabling-external-links}
 
 De nombreux utilisateurs de Document Security n’ont pas accès aux liens externes, tels que **www.adobe.com**, lorsqu’ils utilisent les interfaces utilisateur de Rights Management :
 
@@ -987,7 +982,7 @@ Les modifications suivantes apportées au fichier config.xml désactivent tous l
 
 1. Importez le fichier de configuration (voir [Modification manuelle du fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)).
 
-### Configuration d’activation du protocole TLS (Transport Layer Security).  {#configuration-to-enable-smtp-for-transport-layer-security-tls}
+### Configuration d’activation du protocole TLS (Transport Layer Security). {#configuration-to-enable-smtp-for-transport-layer-security-tls}
 
 Les modifications suivantes apportées au fichier config.xml activent la prise en charge du protocole TLS pour la fonction Enregistrement d’utilisateur invité.
 
@@ -1004,12 +999,12 @@ Les modifications suivantes apportées au fichier config.xml activent la prise e
 1. Enregistrez le `config.xml`.
 1. Importez le fichier de configuration (voir [Modification manuelle du fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)).
 
-### Désactivation des points de fin SOAP pour les documents Document Security  {#disable-soap-endpoints-for-document-security-documents}
+### Désactivation des points de fin SOAP pour les documents Document Security {#disable-soap-endpoints-for-document-security-documents}
 
 Les modifications suivantes apportées au fichier config.xml désactivent les points de fin SOAP pour les documents Document Security.
 
 1. Exportez le fichier de configuration de Document Security (voir [Modification manuelle du fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)).
-1. Ouvrez le fichier de configuration dans un éditeur et localisez le nœud suivant :  `<node name="DRM">`
+1. Ouvrez le fichier de configuration dans un éditeur et localisez le nœud suivant : `<node name="DRM">`
 
    ```as3
    <node name="DRM">
