@@ -12,10 +12,10 @@ discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 exl-id: d2fdad3f-513b-4147-a7c6-a3c1b64dd6e3
 feature: Bannières de carrousel
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 76592d2714106f96184196b9e8db012801bf7c28
 workflow-type: tm+mt
-source-wordcount: '4789'
-ht-degree: 88%
+source-wordcount: '4749'
+ht-degree: 84%
 
 ---
 
@@ -33,9 +33,9 @@ Sur votre site web, la bannière de carrousel peut se présenter comme suit :
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-Vous pouvez parcourir les images (en cliquant sur les numéros). De plus, les diapositives alternent automatiquement selon un intervalle personnalisable. Les images que vous ajoutez à la bannière de carrousel prennent en charge les zones réactives et les zones cliquables, qui permettent aux utilisateurs d’appuyer sur un lien hypertexte ou d’accéder à une fenêtre d’aperçu rapide.
+Vous pouvez parcourir les images (en cliquant sur les numéros). De plus, les diapositives alternent automatiquement selon un intervalle personnalisable. Les images que vous ajoutez dans la bannière de carrousel prennent en charge les zones réactives et les zones cliquables, où les utilisateurs peuvent appuyer ou accéder à un lien hypertexte ou accéder à une fenêtre d’aperçu rapide.
 
-Dans cet exemple, un utilisateur a tapé ou cliqué sur une zone cliquable et a accédé à la fenêtre d’aperçu rapide pour les gants :
+Dans cet exemple, un utilisateur a appuyé ou cliqué sur une zone cliquable et a accédé à la fenêtre d’aperçu rapide pour les gants :
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
@@ -53,7 +53,7 @@ Pour démarrer rapidement :
 
 1. [Identifiez les variables de zone réactive et de zone cliquable](#identifying-hotspot-and-image-map-variables) (seulement pour les clients qui utilisent AEM Assets et Dynamic Media).
 
-   Commencez par identifier les variables dynamiques utilisées par la mise en œuvre de l’aperçu rapide existant afin de pouvoir entrer correctement les données des zones réactives et des zones cliquables lors de la création de la bannière de carrousel dans AEM Assets.
+   Commencez par identifier les variables dynamiques utilisées par l’implémentation de l’aperçu rapide existant afin que vous puissiez entrer correctement les données des zones réactives et des zones cliquables lors de la création de bannières de carrousel dans AEM Assets.
 
    >[!NOTE]
    >
@@ -97,9 +97,9 @@ Si vous devez modifier des ensembles de carrousels, voir [Modification d’ensem
 
 ## Identification des variables de zone réactive et de zone cliquable {#identifying-hotspot-and-image-map-variables}
 
-Commencez par identifier les variables dynamiques utilisées par la mise en œuvre de l’aperçu rapide existant afin de pouvoir entrer les données des zones réactives et des zones cliquables lors de la création d’un ensemble de carrousel dans AEM Assets.
+Commencez par identifier les variables dynamiques utilisées par l’implémentation de l’aperçu rapide existant afin que vous puissiez entrer correctement les données des zones réactives ou des zones cliquables lors du processus de création d’ensembles de carrousels dans AEM Assets.
 
-Lorsque vous ajoutez des zones réactives ou des zones cliquables à une bannière d’image dans AEM Assets, vous devez affecter une SKU et des variables supplémentaires facultatives à chaque zone réactive ou zone cliquable. Ces variables sont utilisées, par la suite, pour faire correspondre les zones réactives ou les zones cliquables au contenu de l’aperçu rapide.
+Lorsque vous ajoutez des zones réactives ou des zones cliquables à une bannière d’image dans AEM Assets, vous devez affecter une SKU et des variables supplémentaires facultatives à chaque zone réactive ou zone cliquable. Ces variables sont utilisées ultérieurement pour faire correspondre les zones réactives ou les zones cliquables au contenu de l’aperçu rapide.
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Il est important d’identifier correctement le nombre et le type des variables 
 
 Il existe différentes façons d’identifier une série de variables à utiliser pour les données de zone réactive ou de zone cliquable.
 
-Parfois, il s’avère suffisant de consulter des spécialistes de l’informatique responsables de l’implémentation d’aperçus rapides existante car il est probable qu’ils connaissent le jeu minimal de données requis pour identifier un aperçu rapide dans le système. Néanmoins, dans la plupart des cas, il est également possible d’analyser simplement le comportement existant du code frontal.
+Il peut parfois être nécessaire de consulter les spécialistes informatiques responsables de l’implémentation d’aperçu rapide existante, car ils connaissent probablement le jeu minimum de données nécessaires pour identifier l’aperçu rapide dans le système. Cependant, dans la plupart des cas, il est également possible d’analyser le comportement existant du code frontal.
 
 La majorité des implémentations d’aperçu rapide utilisent le paradigme suivant :
 
@@ -129,15 +129,15 @@ Normalement, il n’est pas nécessaire d’utiliser des outils de débogage sp�
 
 Lorsque la surveillance de réseau est activée dans le navigateur, déclenchez l’aperçu rapide sur la page.
 
-Recherchez maintenant l’URL Ajax d’aperçu rapide dans le journal réseau et copiez l’URL enregistrée pour une analyse ultérieure. Dans la plupart des cas, lorsque vous déclenchez l’aperçu rapide, de nombreuses requêtes sont envoyées au serveur. En règle générale, l’URL Ajax d’aperçu rapide est l’une des premières de la liste. Elle possède une partie de chaîne de requête complexe ou un chemin d’accès, et son type de réponse MIME est `text/html`, `text/xml` ou `text/javascript`.
+Vous trouvez maintenant l’URL Ajax d’aperçu rapide dans le journal réseau. Copiez l’URL enregistrée pour l’analyse ultérieure. Dans la plupart des cas, lorsque vous déclenchez l’aperçu rapide, plusieurs requêtes sont envoyées au serveur. En règle générale, l’URL Ajax d’aperçu rapide est l’une des premières dans la liste. Elle possède une partie de chaîne de requête complexe ou un chemin d’accès, et son type de réponse MIME est `text/html`, `text/xml` ou `text/javascript`.
 
-Au cours de ce processus, il est important de visiter différentes zones de votre site web, avec différentes catégories et différents types de produits. En effet, les URL d’aperçu rapide peuvent comporter des parties qui sont communes à une catégorie du site web donnée mais qui ne changent que si vous visitez une zone différente du site web.
+Au cours de ce processus, il est important de parcourir différentes zones de votre site web, avec différentes catégories et types de produits. C’est pourquoi les URL d’aperçu rapide peuvent avoir des parties communes pour une catégorie de site web donnée, mais ne changent que si vous visitez une autre zone du site web.
 
-Dans le cas le plus simple, la seule partie variable dans l’URL de l’aperçu rapide est la SKU du produit. Dans ce cas, la valeur de la SKU est la seule donnée dont vous avez besoin pour ajouter des zones réactives ou des zones cliquables à l’image de bannière.
+Dans le cas le plus simple, la seule partie variable dans l’URL de l’aperçu rapide est le SKU du produit. Dans ce cas, la valeur de la SKU est la seule donnée dont vous avez besoin pour ajouter des zones réactives ou des zones cliquables à l’image de bannière.
 
-Cependant, dans les cas complexes, l’URL d’aperçu rapide comporte différents éléments variables en complément de la SKU, comme l’identifiant de la catégorie, le code couleur, le code taille, etc. Dans ce cas, chaque élément est une variable distincte dans la définition des données de zone réactive ou de zone cliquable dans la fonction de bannière de carrousel.
+Cependant, dans les cas complexes, l’URL d’aperçu rapide comporte différents éléments variables en complément du SKU, comme l’identifiant de la catégorie, le code couleur, le code taille, etc. Dans ce cas, chaque élément est une variable distincte dans la définition des données de zone réactive ou de zone cliquable dans la fonction de bannière de carrousel.
 
-Consultez les exemples d’URL d’aperçu rapide ci-dessous et les variables de zone réactive et de zone cliquable obtenues :
+Examinez les exemples suivants d’URL d’aperçu rapide et les variables de zone réactive ou de zone cliquable qui en résultent :
 
 <table> 
  <tbody> 
@@ -283,7 +283,7 @@ Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-car
       * Si vous n’êtes pas client AEM Sites ou eCommerce
 
          * Voir [Identification des variables de zone réactive](#identifying-hotspot-and-image-map-variables), car vous souhaitez peut-être définir ces variables.
-         * Ensuite, entrez manuellement la valeur de SKU. Dans le champ de texte **[!UICONTROL Valeur de SKU]** , saisissez la SKU (unité de gestion des stocks) du produit, qui est un identifiant unique pour chaque produit ou service distinct que vous proposez. La valeur de SKU entrée est renseignée automatiquement dans la partie variable du modèle d’aperçu rapide afin que le système sache associer la zone réactive sur laquelle l’utilisateur appuie et l’aperçu rapide d’une SKU spécifique.
+         * Ensuite, entrez manuellement la valeur de SKU. Dans le champ de texte **[!UICONTROL Valeur de SKU]** , saisissez la SKU (unité de gestion des stocks) du produit, qui est un identifiant unique pour chaque produit ou service distinct que vous proposez. La valeur de la SKU entrée est renseignée automatiquement dans la partie variable du modèle d’aperçu rapide afin que le système sache associer la zone réactive sur laquelle l’utilisateur appuie et l’aperçu rapide d’une SKU spécifique.
          * (Facultatif) S’il existe d’autres variables dans l’aperçu rapide dont vous avez besoin pour identifier un produit, appuyez sur **[!UICONTROL Ajouter la variable générique]**. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, `category=Mens` est une variable ajoutée.
          * Pour plus d’informations, voir [Utilisation de sélecteurs](working-with-selectors.md).
    * Appuyez sur **[!UICONTROL Lien hypertexte]**.
@@ -415,7 +415,7 @@ Cependant, si vous êtes un client AEM Assets autonome, vous pouvez ajouter man
 
 Cette tâche ne s’applique que si vous êtes un client AEM Assets autonome.
 
-La dernière étape de cette procédure consiste à intégrer la bannière de carrousel à la mise en œuvre d’un aperçu rapide existant à votre site web. Chaque mise en œuvre de l’aperçu rapide est unique, et une approche spécifique est nécessaire, ce qui implique généralement l’assistance d’un informaticien compétent en systèmes frontaux.
+La dernière étape de ce processus consiste à intégrer la bannière de carrousel à une mise en oeuvre d’aperçu rapide existante sur votre site web. Chaque mise en œuvre de l’aperçu rapide est unique, et une approche spécifique est nécessaire, ce qui implique généralement l’assistance d’un informaticien compétent en systèmes frontaux.
 
 L’implémentation d’aperçus rapides existante représente normalement une chaîne d’actions entre-associées qui se produisent sur la page web dans l’ordre suivant :
 
@@ -424,7 +424,7 @@ L’implémentation d’aperçus rapides existante représente normalement une c
 1. Le code en front-end envoie une demande Ajax en utilisant l’URL obtenue à l’étape 2.
 1. La logique du serveur principal renvoie les données ou le contenu de l’aperçu rapide correspondant au code frontal.
 1. Le code frontal charge les données ou le contenu de l’aperçu rapide.
-1. Facultativement, le code frontal convertit les données téléchargées de l’aperçu rapide en une représentation HTML.
+1. Le code frontal convertit éventuellement les données téléchargées de l’aperçu rapide en une représentation HTML.
 1. Le code en front-end affiche une boîte de dialogue ou un panneau modal et effectue le rendu du contenu HTML à l’écran pour l’utilisateur final.
 
 Ces appels peuvent ne pas représenter des appels d’API publiques indépendants qui peuvent être appelés par la logique de la page web depuis une étape arbitraire. À la place, il s’agit d’un appel chaîné où chaque étape suivante est masquée dans la dernière phase (rappel) de l’étape précédente.
@@ -434,19 +434,19 @@ Alors que la bannière de carrousel remplace l’étape 1, et partiellement l�
 Dans ce type de gestionnaire d’événements, le code en front-end effectue les opérations suivantes :
 
 * Écoute un événement émis par la bannière de carrousel.
-* Crée une URL d’aperçu rapide d’après les données des zones réactives ou des zones cliquables.
-* Déclenche le processus de chargement de l’aperçu rapide depuis le serveur principal et en effectue le rendu à l’écran.
+* Construit une URL d’aperçu rapide basée sur les données de zone réactive ou de zone cliquable.
+* Il déclenche le processus de chargement de l’aperçu rapide depuis le serveur principal et en effectue le rendu à l’écran.
 
 Un gestionnaire d’événements prêt à l’emploi et commenté est déjà en place pour le code intégré renvoyé par AEM Assets.
 
 Il suffit donc de supprimer les commentaires du code et de remplacer le corps factice du gestionnaire par le code spécifique à la page web.
 
-La création de l’URL d’aperçu rapide est presque l’inverse de l’identification des variables de zone réactive et de zone cliquable décrite précédemment.
+Le processus de création de l’URL d’aperçu rapide est essentiellement l’opposé du processus utilisé pour identifier les variables de zone réactive et de zone cliquable décrites précédemment.
 
 Reportez-vous à la section [Identification des variables de zone réactive et de zone cliquable](#identifying-hotspot-and-image-map-variables).
 
-La dernière étape permettant de déclencher l’URL d’aperçu rapide et d’activer le panneau d’aperçu rapide requiert très probablement l’aide d’un expert informatique. Ce type d’expert sait comment déclencher avec précision l’implémentation d’aperçus rapides à partir de l’étape appropriée, en disposant d’une URL d’aperçu rapide prête à l’emploi.
+La dernière étape pour déclencher l’URL d’aperçu rapide et activer le panneau d’aperçu rapide nécessite probablement l’assistance d’un informaticien compétent de votre service informatique. Celui-ci sait comment déclencher précisément l’implémentation de l’aperçu rapide à partir de l’étape appropriée, avec une URL d’aperçu rapide prête à l’emploi.
 
-## Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées  {#using-quickviews-to-create-custom-pop-ups}
+## Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées {#using-quickviews-to-create-custom-pop-ups}
 
 Voir [Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées](custom-pop-ups.md).
