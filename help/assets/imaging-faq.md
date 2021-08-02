@@ -9,10 +9,10 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
 feature: Smart Services
 role: User
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: e43e25fa1d0df2c2b5b72e49c5a54ca88c000ad2
 workflow-type: tm+mt
-source-wordcount: '2573'
-ht-degree: 60%
+source-wordcount: '2547'
+ht-degree: 61%
 
 ---
 
@@ -185,13 +185,13 @@ Vous devez envoyer la demande d’utilisation d’imagerie dynamique ; celle-ci
 
 Par défaut, l’imagerie dynamique RGPD et l’optimisation du réseau sont désactivés pour un compte d’entreprise Dynamic Media. Si vous souhaitez activer l’une ou l’autre de ces améliorations prêtes à l’emploi, créez un cas de prise en charge comme décrit ci-dessous.
 
-Le calendrier de publication de l’imagerie dynamique RGPD et de l’optimisation du réseau est le suivant :
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is as follows:
 
-| Région   | Date cible |
+| Region | Target date |
 |---|---|
-| Amérique du Nord | En direct |
-| Europe, Moyen-Orient, Afrique | 13 août 2021 |
-| Asie-Pacifique | 22 juillet 2021 |
+| North America | Live |
+| Europe, Middle East, Africa | 13 Aug 2021 |
+| Asia-Pacific | 22 Jul 2021 | -->
 
 1. [Utilisez Admin Console pour créer un dossier d’assistance.](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 1. Indiquez les informations suivantes dans votre dossier de support :
@@ -280,4 +280,4 @@ L’imagerie dynamique détermine si la conversion apporte ou non un bénéfice.
 
 * Les composants principaux des sites Experience Manager sont configurés par défaut pour l’optimisation du RPD. Pour éviter les images surdimensionnées en raison de l’optimisation du RGPD de l’imagerie dynamique côté serveur, `dpr=off` est toujours ajouté aux images Dynamic Media des composants principaux des sites Experience Manager.
 * Étant donné que le composant Dynamic Media Foundation est configuré par défaut pour l’optimisation du RGPD, afin d’éviter les images surdimensionnées en raison de l’optimisation de l’imagerie dynamique côté serveur, `dpr=off` est toujours ajouté aux images du composant Dynamic Media Foundation. Même si le client désélectionne l’optimisation du RGPD dans le composant Foundation DM, le RGPD de l’imagerie dynamique côté serveur ne démarre pas. En résumé, dans le composant de base DM, l’optimisation du RPD entre en vigueur en fonction du paramètre au niveau du composant de base DM uniquement.
-* Toute optimisation du RGPD côté visionneuse fonctionne en tandem avec l’optimisation du RGPD de l’imagerie dynamique côté serveur et n’entraîne pas de surdimensionnement des images. En d’autres termes, là où le RGPD est géré par la visionneuse, par exemple la vue principale uniquement dans une visionneuse avec zoom activé, les valeurs du RGPD de l’imagerie dynamique côté serveur ne sont pas déclenchées. De même, lorsque les éléments de visionneuse, tels que les échantillons et les miniatures, ne sont pas gérés en vertu du RGPD, la valeur du RGPD d’imagerie dynamique côté serveur est déclenchée. —>
+* Toute optimisation du RGPD côté visionneuse fonctionne en tandem avec l’optimisation du RGPD de l’imagerie dynamique côté serveur et n’entraîne pas de surdimensionnement des images. En d’autres termes, là où le RGPD est géré par la visionneuse, par exemple la vue principale uniquement dans une visionneuse avec zoom activé, les valeurs du RGPD de l’imagerie dynamique côté serveur ne sont pas déclenchées. De même, lorsque les éléments de visionneuse, tels que les échantillons et les miniatures, ne sont pas gérés en vertu du RGPD, la valeur du RGPD d’imagerie dynamique côté serveur est déclenchée.
