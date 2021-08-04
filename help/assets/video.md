@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Vidéo
 role: User
-source-git-commit: d5b4f559b20c8671bd648d240b54cb65f73fd222
+source-git-commit: 1d5f9be7aa1e45ebaf689922396832e82c63321f
 workflow-type: tm+mt
-source-wordcount: '10377'
+source-wordcount: '10387'
 ht-degree: 75%
 
 ---
@@ -73,7 +73,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 
          [Affichage des rendus vidéo](video-renditions.md)
 
-         [Gestion des rendus vidéo](managing-assets-touch-ui.md#managing-renditions)
+[Gestion des rendus vidéo](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
       * [Publier des ressources](publishing-dynamicmedia-assets.md)
@@ -85,7 +85,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 
       * Modifiez les propriétés de la vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisés :
 
-         [Modification des propriétés vidéo](managing-assets-touch-ui.md#editing-properties)
+[Modification des propriétés vidéo](managing-assets-touch-ui.md#editing-properties)
 
       * [Gestion des métadonnées des ressources numériques](metadata.md)
       * [Schémas de métadonnées](metadata-schemas.md)
@@ -1035,7 +1035,7 @@ Vous pouvez faciliter la lecture et le parcours de vos vidéos les plus longues 
 >
 >Le lecteur vidéo utilisé doit prendre en charge l’utilisation des marqueurs de chapitre. Les lecteurs vidéo Dynamic Media prennent en charge les marqueurs de chapitre, mais l’utilisation de lecteurs vidéo tiers ne le permet pas.
 
-Si vous le souhaitez, vous pouvez créer votre propre visionneuse personnalisée, et lui donner le nom de votre marque, avec des chapitres au lieu d’utiliser le paramètre prédéfini de la visionneuse de vidéos. Pour plus d’informations sur la création de votre propre visionneuse HTML5 avec une navigation par chapitre, dans l’API Adobe du SDK de la visionneuse HTML5, reportez-vous à la section &quot;Personnalisation du comportement à l’aide de modificateurs&quot; sous les classes `s7sdk.video.VideoPlayer` et `s7sdk.video.VideoScrubber`. Voir la [documentation de l’API du kit de développement de visionneuse HTML5]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)).
+Si vous le souhaitez, vous pouvez créer votre propre visionneuse personnalisée, et lui donner le nom de votre marque, avec des chapitres au lieu d’utiliser le paramètre prédéfini de la visionneuse de vidéos. Pour plus d’informations sur la création de votre propre visionneuse HTML5 avec une navigation par chapitre, dans l’API Adobe du SDK de la visionneuse HTML5, reportez-vous à la section &quot;Personnalisation du comportement à l’aide de modificateurs&quot; sous les classes `s7sdk.video.VideoPlayer` et `s7sdk.video.VideoScrubber`. Voir la [documentation de l’API du kit de développement de visionneuse HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
 
 Vous créez une liste de chapitres pour votre vidéo un peu de la même façon que vous créez des sous-titres. Autrement dit, vous créez un fichier WebVTT. Notez toutefois que ce fichier doit être distinct de tout fichier de sous-titrage WebVTT que vous pourriez également être amené à utiliser ; vous ne pouvez pas combiner les sous-titres et les chapitres dans un fichier WebVTT.
 
