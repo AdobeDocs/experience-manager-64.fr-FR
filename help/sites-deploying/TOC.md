@@ -8,10 +8,10 @@ breadcrumb-title: Guide de déploiement
 user-guide-description: En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4, y compris sur le déploiement cloud d’Adobe Managed Services.
 feature: Déploiement
 role: Architect
-source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
+source-git-commit: 17c9f8523992b5ba87125c77d3e4f70f86f89c58
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 89%
+source-wordcount: '373'
+ht-degree: 91%
 
 ---
 
@@ -56,11 +56,11 @@ ht-degree: 89%
    + [Tâches de déchargement](offloading.md)
    + [Connexion unique](single-sign-on.md)
    + [Mappage de ressource](resource-mapping.md)
-   + [Activation de HTTP via SSL](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/ssl-by-default.html)
+   + [Activation de HTTP via SSL](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/ssl-by-default.html)
    + [Vérifications transversales et contrôles de cohérence](consistency-check.md)
    + [Instructions de performance](performance-guidelines.md)
    + [Optimisation des performances](configuring-performance.md)
-   + [Guide de performances des ressources](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en)
+   + [Guide de performances des ressources](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=fr)
    + [Articles sur la procédure de configuration](ht-deploy.md)
    + [Suppression des sites Geometrixx](removing-the-geometrixx-sites.md)
    + [Configuration de la console web](configuring-web-console.md)
