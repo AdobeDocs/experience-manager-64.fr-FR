@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 exl-id: 0b7496f0-0b3c-4d12-a659-d95744157f14
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2145'
 ht-degree: 5%
 
 ---
@@ -190,13 +190,14 @@ Si vous le souhaitez, le niveau de journal peut être défini sur WARN pour le p
 
 Pour utiliser les journaux, voir [Utilisation des enregistrements d’audit et des fichiers journaux](../../help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
-### AEM MLS avancé {#aem-advanced-mls}
+### AEM MLS avancés {#aem-advanced-mls}
 
 Pour que la collection SRP (MSRP ou DSRP) prenne en charge la recherche multilingue avancée (MLS), de nouveaux modules externes Solr sont requis en plus d’un schéma personnalisé et d’une configuration Solr. Tous les éléments requis sont compressés dans un fichier ZIP téléchargeable.
 
 Le téléchargement MLS avancé (également appelé &quot;phasetwo&quot;) est disponible à partir du référentiel Adobe :
 
-* [AEM-SOLR-MLS-phasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
+* AEM-SOLR-MLS-phasetwo
+Pour obtenir le package MLS avancé, voir [AEM MLS avancé](deploy-communities.md#aem-advanced-mls) dans la section déploiement de la documentation.
 
    * Version 1.2.40, 6 avril 2016
    * Téléchargez AEM-SOLR-MLS-phasetwo-1.2.40.zip
@@ -324,7 +325,7 @@ Pour activer le service tunnel :
 
 ![chlimage_1-414](assets/chlimage_1-414.png)
 
-### Répliquer la clé de chiffrement {#replicate-the-crypto-key}
+### Réplication de la clé de chiffrement {#replicate-the-crypto-key}
 
 Il existe deux fonctionnalités d’AEM Communities qui nécessitent que toutes les instances AEM serveur utilisent les mêmes clés de chiffrement. Il s’agit de [Analytics](analytics.md) et [ASRP](asrp.md).
 
@@ -336,13 +337,13 @@ Pour copier les documents clés de l’auteur vers toutes les autres instances, 
 
    * Localisez le lot `com.adobe.granite.crypto.file` dans le système de fichiers local.
 
-      Par exemple,
+      Par exemple :
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * Le fichier `bundle.info` identifie le lot.
    * Accès au dossier de données
 
-      Par exemple,
+      Par exemple :
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * Copiez les fichiers hmac et de noeud Principal.
@@ -353,7 +354,7 @@ Pour copier les documents clés de l’auteur vers toutes les autres instances, 
 
    * Accès au dossier de données
 
-      Par exemple,
+      Par exemple :
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * Coller les 2 fichiers précédemment copiés
@@ -387,7 +388,7 @@ Utilisation de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-li
 
 ![chlimage_1-415](assets/chlimage_1-415.png)
 
-#### Actualisez le lot de chiffrement Granite {#refresh-the-granite-crypto-bundle}
+#### Actualisation du lot de chiffrement Granite {#refresh-the-granite-crypto-bundle}
 
 * Sur chaque instance de publication, accédez à la [console web](../../help/sites-deploying/configuring-osgi.md)
 
@@ -402,7 +403,7 @@ Utilisation de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-li
 
    `Operation completed successfully.`
 
-### Serveur HTTP Apache {#apache-http-server}
+### Apache HTTP Server {#apache-http-server}
 
 Si vous utilisez le serveur Apache HTTP, veillez à utiliser le nom de serveur correct pour toutes les entrées pertinentes.
 
