@@ -10,14 +10,14 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7d423dff-8710-4f43-ad55-8863169946e2
 exl-id: 9b4ed16f-3c7c-478a-a897-9b4be086988b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
 
-# Clientlibs pour les composants Communities {#clientlibs-for-communities-components}
+# Clientlibs des composants Communities {#clientlibs-for-communities-components}
 
 ## Présentation {#introduction}
 
@@ -27,9 +27,8 @@ Pour obtenir des informations de base, consultez :
 
 * [Utilisation de ](../../help/sites-developing/clientlibs.md) bibliothèques côté client qui fournit des détails d’utilisation ainsi que des outils de débogage
 * [Clientlibs pour ](client-customize.md#clientlibs) SCF qui fournit des informations utiles lors de la personnalisation des composants SCF
-* [Blog : AEM bibliothèques clientes expliquées par l’exemple](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
-## Pourquoi les bibliothèques côté client sont requises {#why-clientlibs-are-required}
+## Pourquoi les bibliothèques côté client sont nécessaires {#why-clientlibs-are-required}
 
 Les bibliothèques côté client sont nécessaires au bon fonctionnement (JavaScript) et au style (CSS) d’un composant.
 
@@ -37,11 +36,11 @@ Lorsqu’il existe une [fonction de communauté](functions.md) pour une fonction
 
 Si les clientlibs requises sont manquantes, [l’ajout d’un composant Communities à une page](author-communities.md) peut entraîner des erreurs JavaScript et un aspect inattendu.
 
-### Exemple : Révisions placées sans Clientlibs {#example-placed-reviews-without-clientlibs}
+### Exemple : Révisions placées sans clientlibs {#example-placed-reviews-without-clientlibs}
 
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
-### Exemple : Révisions avec Clientlibs {#example-placed-reviews-with-clientlibs}
+### Exemple : Révisions placées avec Clientlibs {#example-placed-reviews-with-clientlibs}
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
