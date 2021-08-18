@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
@@ -54,15 +54,15 @@ Par conséquent, tout code utilisant l’API RelativeTimeFormat() doit être mod
 
 L’échec est différent sur l’auteur et la publication. Sur l’auteur, il échoue silencieusement et n’affiche simplement pas les sujets du forum. Une fois la publication effectuée, l’erreur est renvoyée sur la page.
 
-Pour plus d’informations, voir l’API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .
+Pour plus d’informations, voir l’API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .
 
-## Questions courantes {#common-concerns}
+## Préoccupations communes {#common-concerns}
 
-### Avertissement dans les journaux : Handlebars Obsolète {#warning-in-logs-handlebars-deprecated}
+### Avertissement dans les journaux : Handlebars obsolètes {#warning-in-logs-handlebars-deprecated}
 
 Au démarrage (et non au premier démarrage), l’avertissement suivant apparaît dans les journaux :
 
-* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars L’assistant &#39;i18n&#39; a été remplacé par &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
+* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars L’assistant &quot;i18n&quot; a été remplacé par &quot;com.adobe.cq.social.handlebars.I18nHelper@15bac645&quot;
 
 Cet avertissement peut être ignoré en toute sécurité, car jknack.handlebars.Handlebars, utilisé par [SCF](scf.md#handlebarsjavascripttemplatinglanguage), est fourni avec son propre utilitaire d’assistance i18n. Au démarrage, elle est remplacée par une [aide i18n](handlebars-helpers.md#i-n) spécifique à l’AEM. Cet avertissement est généré par la bibliothèque tierce pour confirmer le remplacement d’une assistance existante.
 
