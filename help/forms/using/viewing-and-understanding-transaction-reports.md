@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: bef38e7a-92db-4226-a4ea-8facce573456
 exl-id: b132216a-c9b4-4f8f-97e6-738a5a9632d1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: db64b7d5ac9044c4b2fee6ae4adbe9aab1cf4c7d
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '908'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Utilisez les rapports de transaction pour prendre une décision éclairée sur l
 
 Les rapports de transaction vous permettent de capturer et de suivre le nombre de formulaires envoyés, de documents traités et de documents rendus. L’objectif du suivi de ces transactions est de prendre une décision éclairée sur l’utilisation du produit et de rééquilibrer les investissements en matériel et en logiciels. Pour plus d’informations, voir [Présentation des rapports de transaction AEM Forms](/help/forms/using/transaction-reports-overview.md).
 
-## Configuration des rapports de transaction {#setting-up-transaction-reports}
+## Configurer des rapports de transaction  {#setting-up-transaction-reports}
 
 La fonction Rapports de transaction est disponible dans le cadre du module complémentaire d’AEM forms. Pour plus d’informations sur l’installation du module complémentaire sur toutes les instances de création et de publication, voir [Installation et configuration d’AEM forms](https://helpx.adobe.com/fr/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html). Une fois que vous avez installé le module complémentaire AEM forms, procédez comme suit :
 
@@ -41,7 +41,7 @@ La fonction Rapports de transaction est disponible dans le cadre du module compl
 
 
 
-### Activer la réplication inverse sur toutes les instances de publication {#enable-reverse-replication-on-all-the-publish-instances}
+### Activation de la réplication inverse sur toutes les instances de publication {#enable-reverse-replication-on-all-the-publish-instances}
 
 Les rapports de transaction utilisent la réplication inverse pour consolider le nombre de transactions entre les instances de publication et les instances d’auteur. Configurez la réplication inverse sur toutes les instances de publication. Pour obtenir des instructions détaillées sur la configuration de la réplication inverse, voir [réplication](/help/sites-deploying/replication.md).
 
@@ -61,19 +61,19 @@ Seuls les membres du groupe administrateur-fd peuvent afficher les rapports sur 
 
 ### (Facultatif) Configuration de la période de purge des transactions et des boîtes de réception {#optional-configure-transaction-flush-period-and-outboxes}
 
-Les transactions sont mises en cache en mémoire avant d’être stockées dans le référentiel. Par défaut, la période de mise en cache (période de purge des transactions) est définie sur 60 secondes. Effectuez les étapes suivantes pour modifier la période de mise en cache par défaut :
+Les transactions sont mises en cache en mémoire avant d’être stockées dans le référentiel. Le processus est suivi pour s’assurer qu’il n’y a pas d’écritures fréquentes dans le référentiel. Par défaut, la période de mise en cache (période de purge des transactions) est définie sur 60 secondes. Vous pouvez modifier la période par défaut en fonction de votre environnement. Effectuez les étapes suivantes pour modifier la période de mise en cache par défaut :
 
 1. Connectez-vous aux instances d’auteur en tant qu’administrateur. Accédez à **Outils** > **Opérations** > **Console web**.
 1. Recherchez et ouvrez le service **Fournisseur de stockage du référentiel de transaction Forms**.
 1. Indiquez le nombre de secondes dans le champ **Période de purge des transactions**. Cliquez sur **Enregistrer**.
 
-La réplication inverse copie les données de transaction dans la boîte d’envoi par défaut des instances d’auteur. Vous pouvez placer les données de transaction dans une boîte d’envoi personnalisée. Effectuez les étapes suivantes pour spécifier une boîte d’envoi personnalisée :
+La réplication inverse copie les données de transaction dans la boîte d’envoi par défaut des instances d’auteur. Vous pouvez placer les données de transaction dans une boîte d’envoi personnalisée. Pour définir une boîte d’envoi personnalisée, procédez comme suit :
 
 1. Connectez-vous aux instances d’auteur en tant qu’administrateur. Accédez à **Outils** > **Opérations** > **Console web**.
 1. Recherchez et ouvrez le service **Fournisseur de stockage du référentiel de transaction Forms**.
 1. Indiquez le nom de la boîte d’envoi personnalisée dans le champ **Boîtes d’envoi** . Cliquez sur **Enregistrer**. Une boîte d’envoi avec le nom spécifié est créée sur toutes les instances d’auteur.
 
-## Consultation du rapport de transaction {#viewing-the-transaction-report}
+## Affichage du rapport de transaction {#viewing-the-transaction-report}
 
 Vous pouvez afficher les rapports de transaction sur les instances d’auteur ou de publication. Le rapport de transaction sur l’instance d’auteur fournit une somme globale de toutes les transactions qui ont lieu sur les instances d’auteur et de publication configurées. Le rapport de transaction sur l’instance de publication fournit un décompte des transactions qui ont lieu uniquement sur l’instance de publication sous-jacente. Pour afficher le rapport, procédez comme suit :
 
@@ -90,7 +90,7 @@ AEM Forms affiche les rapports de transaction depuis la date configurée, comme 
 * Utilisez **Afficher les transactions des seules instances de publication** pour afficher toutes les transactions qui se sont produites uniquement sur l’instance de publication ou la ferme de publication configurée.
 * Utilisez les catégories : **Document traité**, **Documents rendus** et **Forms soumis** pour afficher les transactions correspondantes. Pour connaître le type des transactions prises en compte dans ces catégories, voir [API de rapports sur les transactions facturables](/help/forms/using/transaction-reports-billable-apis.md).
 
-## Afficher les logs de rapports de transaction {#view-transaction-reporting-logs}
+## Afficher les logs de reporting des transactions {#view-transaction-reporting-logs}
 
 Le rapport des transactions place toutes les informations affichées dans le rapport ainsi que certaines informations supplémentaires dans les journaux. Les informations fournies dans les journaux sont utiles aux utilisateurs avancés. Par exemple, les journaux divisent les transactions en plusieurs catégories granulaires par rapport à trois catégories consolidées affichées dans le rapport. Les journaux sont disponibles dans le fichier `error.log` du répertoire `/crx-repository/logs/`. Les logs sont disponibles même si vous n’activez pas les rapports de transaction à partir de la console web AEM.
 
