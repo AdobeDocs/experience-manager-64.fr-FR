@@ -1,17 +1,17 @@
 ---
 title: Installation et configuration des communications interactives
-seo-title: Installation et configuration des communications interactives
+seo-title: Install and configure Interactive Communications
 description: 'Installez et configurez les communications interactives AEM Forms pour créer les correspondances commerciales, les documents, les déclarations, les avis, les courriers marketing, les factures et les kits de bienvenue. '
-seo-description: 'Installez et configurez les communications interactives AEM Forms pour créer les correspondances commerciales, les documents, les déclarations, les avis, les courriers marketing, les factures et les kits de bienvenue. '
+seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
 topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
 role: Admin
 exl-id: c7aaa81d-d140-44d9-9144-0cbf6ec5d650
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 77%
+source-wordcount: '1386'
+ht-degree: 76%
 
 ---
 
@@ -146,7 +146,7 @@ Effectuez les étapes suivantes sur toutes les instances de création et de publ
 
 #### Installation du package de compatibilité {#install-compatibility-package}
 
-La communication interactive est l’approche par défaut et recommandée pour créer des communications client dans AEM 6.4 Forms. Si vous avez mis à niveau ou migré depuis une version précédente et envisagez de continuer à utiliser des lettres (gestion des correspondances), installez le [package de compatibilité AEMFD](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
+La communication interactive est l’approche par défaut et recommandée pour créer des communications client dans AEM 6.4 Forms. Si vous avez mis à niveau ou migré depuis une version précédente et envisagez de continuer à utiliser des lettres (gestion des correspondances), installez le [package de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 Le package de compatibilité AEMFD vous permet d’utiliser les actifs suivants d’AEM 6.3 Forms et d’AEM 6.2 Forms sur AEM 6.4 Forms :
 

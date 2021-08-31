@@ -1,18 +1,18 @@
 ---
 title: Créer et gérer des tests A/B pour les formulaires adaptatifs
-seo-title: Créer et gérer des tests A/B pour les formulaires adaptatifs
+seo-title: Create and manage A/B test for adaptive forms
 description: AEM Forms s’intègre à Adobe Target qui permet d’effectuer des tests A/B pour que les formulaires adaptatifs puissent améliorer la satisfaction des clients et les taux de conversion.
-seo-description: AEM Forms s’intègre à Adobe Target qui permet d’effectuer des tests A/B pour que les formulaires adaptatifs puissent améliorer la satisfaction des clients et les taux de conversion.
+seo-description: AEM Forms integrates with Adobe Target that allows running A/B tests for adaptive forms to enhance customer experience and improve conversion rates.
 uuid: c41aea04-f4d9-41b9-b1a8-df2bb710354c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: a69ff832-7955-4b10-b47f-287ac385b786
 exl-id: e330a8e8-4d55-4723-921b-812cb243f420
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 92%
+source-wordcount: '1544'
+ht-degree: 91%
 
 ---
 
@@ -30,13 +30,13 @@ Avec AEM Forms, vous pouvez configurer et exécuter des tests A/B sur des formul
 
 Avant de commencer à créer et analyser les tests A/B pour les formulaires adaptatifs, vous devez installer votre serveur Target et l’intégrer à AEM Forms.
 
-### Configuration de Target  {#set-up-target}
+### Configuration de Target {#set-up-target}
 
 Pour intégrer AEM avec Target, vérifiez que vous disposez d’un compte Adobe Target valide. Lorsque vous vous inscrivez à Adobe Target, vous recevez un code client. Vous avez besoin du code client, de l’adresse e-mail associée au compte Target et du mot de passe pour vous connecter à AEM avec Target.
 
-Le code client identifie le compte client Adobe Target et est utilisé comme un sous-domaine dans l’URL lors de l’appel du serveur Adobe Target. Avant de commencer, assurez-vous que vos identifiants de connexion vous permettent de vous connecter sur [https://testandtarget.omniture.com/](https://testandtarget.omniture.com/).
+Le code client identifie le compte client Adobe Target et est utilisé comme un sous-domaine dans l’URL lors de l’appel du serveur Adobe Target. Avant de poursuivre, connectez-vous à [https://experience.adobe.com/](https://experience.adobe.com/) et, si vous y avez accès, consultez l’option [!DNL Adobe Target] de la section [!UICONTROL Accès rapide] .
 
-### Intégration de Target dans AEM Forms  {#integrate-target-in-aem-forms}
+### Intégration de Target dans AEM Forms {#integrate-target-in-aem-forms}
 
 Pour intégrer un serveur Target en cours d’exécution avec AEM Forms, procédez comme suit :
 
@@ -76,8 +76,7 @@ En plus du serveur jboss, vous pouvez ajouter l’argument jvm -Dabtesting.enabl
 >
 >Si vous mettez à jour les URL Target configurées ultérieurement, veillez à mettre à jour tous les tests A/B actifs pour qu’ils pointent vers les URL mises à jour. Pour plus d’informations sur la mise à jour des tests A/B, voir[ Mettre à jour le test A/B](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
 
-
-## Créer des publics dans AEM  {#create-audiences-within-aem}
+## Créer des publics dans AEM {#create-audiences-within-aem}
 
 AEM vous permet de créer un public et de les utiliser pour un test A/B. Le public que vous créez dans AEM est disponible dans AEM Forms. Procédez comme suit pour créer un public dans AEM :
 
@@ -94,7 +93,7 @@ AEM vous permet de créer un public et de les utiliser pour un test A/B. Le publ
 
 Vous pouvez sélectionner le public lorsque vous configurez le test A/B d’un formulaire, comme illustré ci-dessous.
 
-## Création d’un test A/B  {#create-a-b-test}
+## Création d’un test A/B {#create-a-b-test}
 
 Effectuez les étapes suivantes pour créer un test A/B pour un formulaire adaptatif.
 
@@ -127,7 +126,7 @@ Effectuez les étapes suivantes pour créer un test A/B pour un formulaire adapt
 
 Votre test A/B s’exécute désormais et le public visé aura accès aux expériences de façon aléatoire en fonction de la distribution spécifiée.
 
-## Mise à jour du test A/B  {#update-a-b-test}
+## Mise à jour du test A/B {#update-a-b-test}
 
 Vous pouvez mettre à jour le public et la répartition d’expérience d’un test A/B actif. Pour ce faire :
 

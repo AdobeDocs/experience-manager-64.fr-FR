@@ -1,19 +1,19 @@
 ---
 title: Utilisation d’Adobe Sign dans un formulaire adaptatif
-seo-title: Utilisation d’Adobe Sign dans un formulaire adaptatif
+seo-title: Using Adobe Sign in an adaptive form
 description: 'Activez les processus de signature électronique (Adobe Sign) pour un formulaire adaptatif afin d’automatiser les processus de signature, de simplifier les processus à signature unique et à signatures multiples et de signer électroniquement des formulaires à partir d’appareils mobiles. '
-seo-description: Activez les processus de signature électronique (Adobe Sign) pour un formulaire adaptatif afin d’automatiser les processus de signature, de simplifier les processus à signature unique et à signatures multiples et de signer électroniquement des formulaires à partir d’appareils mobiles.
+seo-description: Enable e-signature (Adobe Sign) workflows for an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign forms from mobile devices.
 uuid: 9c65dc44-c1a5-44df-8659-6efbe347575b
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
-feature: Forms adaptatif, Adobe Sign
+feature: Adaptive Forms, Adobe Sign
 exl-id: 5922ea6e-8be9-4e65-89a6-67b6cc12c4ee
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '3596'
+source-wordcount: '3562'
 ht-degree: 75%
 
 ---
@@ -69,11 +69,11 @@ Configurez les propriétés du formulaire adaptatif pour Adobe Sign pour un form
 
 [La section Create an adaptive form for Adobe ](/help/forms/using/working-with-adobe-sign.md#create-an-adaptive-form-for-adobe-sign) Signatures décrit les étapes de création d’un formulaire adaptatif de base. Voir [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md) pour connaître les autres options disponibles lors de la création d’un formulaire adaptatif.
 
-#### Créer un formulaire adaptatif pour Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
+#### Création d’un formulaire adaptatif pour Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
 
 Pour créer un formulaire adaptatif pour Adobe Sign, procédez comme suit :
 
-1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
+1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Appuyez sur **[!UICONTROL Créer]** et sélectionner **[!UICONTROL Formulaire adaptatif]**. Une liste de modèles s’affiche. Sélectionnez le modèle et appuyez sur **[!UICONTROL Suivant]**.
 1. Dans l’onglet **[!UICONTROL De base]** :
 
@@ -95,7 +95,7 @@ Pour créer un formulaire adaptatif pour Adobe Sign, procédez comme suit :
 
 Effectuez les étapes suivantes pour utiliser Adobe Sign dans un formulaire adaptatif existant :
 
-1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
+1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Sélectionnez le formulaire adaptatif et appuyez sur **[!UICONTROL Propriétés]**.
 1. Dans l’onglet **[!UICONTROL Basic]** , sélectionnez le [conteneur de configuration](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de la configuration d’Adobe Sign avec AEM Forms.
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, sélectionnez l’une des options suivantes :
@@ -188,7 +188,7 @@ Vous ne pouvez avoir qu’un seul signataire ou plusieurs signataires pour un fo
 
    >[!NOTE]
    >
-   >* Par défaut, l’authentification basée sur l’identité de réseau social offre une option d’authentification via Facebook, Google et LinkedIn. Vous pouvez contacter le support Adobe Sign pour activer d’autres fournisseurs d’authentification sociale.
+   >* Par défaut, l’authentification par identité sociale offre une option d’authentification via Facebook, Google et LinkedIn. Vous pouvez contacter le support Adobe Sign pour activer d’autres fournisseurs d’authentification sociale.
 
 
    * **Champs Adobe Sign à remplir ou à signer :** sélectionnez les champs Adobe Sign pour le signataire. Un formulaire adaptatif peut avoir plusieurs champs Adobe Sign. Vous pouvez choisir d’activer des champs spécifiques pour un signataire. Le champ affiche tous les blocs Adobe Sign disponibles. Lorsque vous sélectionnez un bloc, tous les champs du bloc sont sélectionnés. Vous pouvez utiliser l’icône X pour désélectionner un champ.
@@ -289,7 +289,7 @@ Le composant **Étape de résumé** envoie automatiquement le formulaire, indiqu
 
 Maintenant, l’expérience de signature dans le formulaire est prête. Vous pouvez prévisualiser le formulaire pour vérifier l’expérience de signature.
 
-## Forum aux questions {#frequently-asked-questions}
+## Questions fréquemment posées  {#frequently-asked-questions}
 
 **Question : Vous pouvez incorporer un formulaire adaptatif dans un autre formulaire adaptatif. Le formulaire adaptatif intégré peut-il être activé pour Adobe Sign ?**
 
@@ -301,7 +301,7 @@ Maintenant, l’expérience de signature dans le formulaire est prête. Vous pou
 
 **Question : Puis-je utiliser des balises de texte Adobe Sign dans un composant de texte statique d’un formulaire adaptatif ?**
 
-**Réponse :** Oui, vous pouvez utiliser des balises de texte dans un composant de texte pour ajouter des champs Adobe Sign à un formulaire adaptatif doté de l’option [Document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (option de document d’enregistrement généré automatiquement uniquement). Pour en savoir plus sur la procédure et les règles de création d’une balise de texte, voir la [documentation d’Adobe Sign](https://helpx.adobe.com/fr/sign/help/text-tags.html). Notez également que les formulaires adaptatifs offre une prise en charge limitée des balises de texte. Vous pouvez utiliser les balises de texte pour créer uniquement les champs pris en charge par le bloc Adobe Sign.
+**Réponse :** Oui, vous pouvez utiliser des balises de texte dans un composant de texte pour ajouter des champs Adobe Sign à un formulaire adaptatif doté de l’option [Document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (option de document d’enregistrement généré automatiquement uniquement). Pour en savoir plus sur la procédure et les règles de création d’une balise de texte, voir la [documentation d’Adobe Sign](https://experienceleague.adobe.com/docs/document-cloud-learn/sign-learning-hub/admin-set-up/advanced-tasks-admins/adobe-sign-text-tagging.html). Notez également que les formulaires adaptatifs offre une prise en charge limitée des balises de texte. Vous pouvez utiliser les balises de texte pour créer uniquement les champs pris en charge par le bloc Adobe Sign.
 
 **Question : AEM Forms fournit des composants de bloc Adobe Sign et d’étape de signature. Peut-on les utiliser simultanément dans un formulaire adaptatif ?**
 

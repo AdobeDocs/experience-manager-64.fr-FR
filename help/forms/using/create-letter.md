@@ -1,17 +1,17 @@
 ---
 title: Créer une lettre
-seo-title: Créer une lettre
+seo-title: Create Letter
 description: 'Cette rubrique détaille comment créer une lettre, y ajouter des modules de données et des pièces jointes, puis la prévisualiser dans Correspondence Management. '
-seo-description: 'Cette rubrique détaille comment créer une lettre, y ajouter des modules de données et des pièces jointes, puis la prévisualiser dans Correspondence Management. '
+seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
 uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: 8fa14b30-013c-4a23-bebf-2262e8212461
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '3989'
 ht-degree: 79%
 
 ---
@@ -49,7 +49,7 @@ Dans ce flux de travaux :
 
 Au lieu de créer un modèle de mise en forme entièrement nouveau, vous pouvez choisir de modifier et réutiliser des modèles fournis par Correspondence Management. Vous pouvez utiliser Designer pour modifier rapidement l’identité graphique et les données et les champs de contenu des modèles en fonction des besoins de votre entreprise. Pour plus d’informations sur les modèles Correspondence Management, voir [Modèles de lettre de référence](/help/forms/using/reference-cm-layout-templates.md).
 
-### Création de fragments de document  {#document-fragment-creation}
+### Création de fragments de document {#document-fragment-creation}
 
 Les fragments de document sont les parties\composants réutilisables d&#39;une correspondance avec laquelle vous pouvez composer des lettres\une correspondance.
 
@@ -67,7 +67,7 @@ La liste est une série de fragments de document, y compris du texte, des listes
 
 Les conditions vous permettent de définir le contenu à inclure lors de la création d’une correspondance, en fonction des données fournies. La condition est décrite en termes de variables de contrôle. Les variables peuvent être soit un élément de dictionnaire de données, soit un espace réservé. Lorsque vous ajoutez une condition, vous pouvez choisir d’inclure un actif en fonction de la valeur de la variable de contrôle. Les conditions produisent une seule sortie, basée sur une expression. La première expression utilisée est vraie selon la variable de condition actuellement utilisée. Sa valeur devient la sortie produite par la condition.
 
-#### Fragment de disposition {#layout-fragment}
+#### Fragment de mise en page {#layout-fragment}
 
 Un fragment de mise en page est une mise en page pouvant être utilisée dans une ou plusieurs lettres. Un fragment de mise en page est utilisé pour créer des schémas reproductibles, en particulier des tableaux dynamiques. La mise en page peut contenir des champs de formulaire types tels qu’« Adresse » et « Numéro de référence ». Elle contient également des sous-formulaires vides indiquant les zones cible. Les mises en page (XDP) sont créées dans Designer puis sont [téléchargées vers Forms et les documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
@@ -75,7 +75,7 @@ Un fragment de mise en page est une mise en page pouvant être utilisée dans un
 
 Il existe deux manières de générer la correspondance à envoyer à vos clients : création par l’utilisateur et création par le système.
 
-#### Création par l&#39;utilisateur {#user-driven}
+#### Création par l’utilisateur {#user-driven}
 
 Les employés en contact avec la clientèle comme les experts en assurances ou les chargés d’assistance peuvent créer de la correspondance personnalisée. Dans une interface simple et intuitive présentant une mise en page simple de courrier, les utilisateurs peuvent ajouter du texte facultatif, personnaliser le contenu modifiable tout en prévisualisant la correspondance en temps réel. Ils peuvent ensuite envoyer la correspondance personnalisée à un processus d’arrière-plan.
 
@@ -87,7 +87,7 @@ La génération des correspondances est automatisée, basée sur des déclencheu
 
 ![Correspondence créée par le système](assets/us_cm_generate.png)
 
-### Post processing {#post-processing}
+### Post-traitement {#post-processing}
 
 La correspondance finalisée pourra être envoyée à un processus d’arrière-plan à des fins de post-traitement. La correspondance pourra être :
 
@@ -103,7 +103,7 @@ Le graphique suivant présente un aperçu d’un exemple d’architecture de la 
 
 ![Architecture de la solution de lettre](assets/us_cm_architecture_es3.png)
 
-## Découpage d&#39;une lettre {#deconstructing-a-letter}
+## Découpage d’une lettre {#deconstructing-a-letter}
 
 Ce document d’avis d’annulation est un exemple de correspondance type :
 
@@ -144,7 +144,7 @@ Ce document d’avis d’annulation est un exemple de correspondance type :
  </tbody> 
 </table>
 
-## Analyse d&#39;une lettre avant sa construction {#analyze-a-letter-before-you-construct-it}
+## Analyse d’une lettre avant sa construction {#analyze-a-letter-before-you-construct-it}
 
 Analysez chaque lettre pour déceler ses différentes composantes. C’est au spécialiste de l’application qu’il revient d’analyser les correspondances qui sont générées.
 
@@ -174,7 +174,7 @@ Analysez chaque lettre pour déceler ses différentes composantes. C’est au sp
 
 **Estimer la complexité des** lettres Il est important de déterminer la complexité de la création d’une correspondance particulière. Cette analyse permet de déterminer le temps et les ensembles de compétences nécessaires pour créer les modèles de lettre. Cela vous permettra ensuite d’estimer les ressources et les coûts nécessaires à l’implémentation de la solution Lettres.
 
-## Complexité de la correspondance  {#correspondence-complexity}
+## Complexité de la correspondance {#correspondence-complexity}
 
 La complexité de la correspondance peut être déterminée grâce à l’analyse des paramètres suivants :
 
@@ -217,7 +217,7 @@ Le tableau qui suit expose quelques règles utiles pour la classification de vos
  </tbody> 
 </table>
 
-## Présentation de la création d’une lettre  {#overview-of-creating-a-letter}
+## Présentation de la création d’une lettre {#overview-of-creating-a-letter}
 
 1. Sélectionnez la mise en page appropriée qui sert de base à la lettre et créez une lettre.
 1. Ajoutez à la lettre des modules de données ou des fragments de mise en page et configurez-les.
@@ -231,13 +231,13 @@ Vous devez d’abord avoir les éléments suivants correctement configurés pour
 * [Package de compatibilité](https://helpx.adobe.com/fr/in/experience-manager/6-4/forms/using/compatibility-package.html). Installez le package de compatibilité pour afficher l’option **Lettres** sur la page **Forms**.
 
 * La lettre XDP ([mise en page](/help/forms/using/document-fragments.md)).
-* Autres XDP ([fragment de mise en page](/help/forms/using/document-fragments.md)) qui constituent des parties de la lettre. Les xdp\mises en page sont créés dans [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
+* Autres XDP ([fragment de mise en page](/help/forms/using/document-fragments.md)) qui constituent des parties de la lettre. Les xdp\mises en page sont créés dans [Designer](http://www.adobe.com/go/learn_aemforms_designer_64).
 
 * Le [dictionnaire de données](/help/forms/using/data-dictionary.md) approprié (facultatif).
 * Les [modules de données](/help/forms/using/document-fragments.md) à utiliser dans la correspondance.
 * [Test ](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) Data : le fichier XML contient les données de test. Des données de test sont requises si vous utilisez un dictionnaire de données.
 
-## Création d’un modèle de lettre  {#create-a-letter-template}
+## Création d’un modèle de lettre {#create-a-letter-template}
 
 ### Choisissez une mise en page et entrez les propriétés de lettre {#select-a-layout-and-enter-the-letter-properties}
 
@@ -268,7 +268,7 @@ Vous devez d’abord avoir les éléments suivants correctement configurés pour
 
    **Suivant** : Lorsque vous appuyez sur  **Ouvrir**, Correspondence Management affiche une représentation de la mise en page répertoriant tous les composants de la mise en page (XDP). Passez ensuite à l’insertion des [modules de données et des fragments de mise en page et à leur configuration](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
-### Insérez des modules de données et des fragments de mise en page dans une lettre puis configurez-les.  {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
+### Insérez des modules de données et des fragments de mise en page dans une lettre puis configurez-les. {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
 Après avoir créé une correspondance, lorsque vous appuyez sur Ouvrir, Correspondence Management affiche une représentation de la mise en page répertoriant tous les sous-formulaires/zones cible de la mise en page (XDP). Dans chaque zone cible, vous pouvez choisir d’insérer un module de données ou un fragment de mise en page (puis des modules de données dans le fragment de mise en page).
 
@@ -341,7 +341,7 @@ Après avoir créé une correspondance, lorsque vous appuyez sur Ouvrir, Corresp
 
 1. Après avoir spécifié la liaison, appuyez sur **Suivant**. Correspondence Management affiche l’écran Pièces jointes .
 
-### Installez les pièces jointes {#set-up-the-attachments}
+### Configurez les pièces jointes {#set-up-the-attachments}
 
 1. Sélectionnez **Ajouter un actif**.
 1. Dans l’écran Sélectionner une ressource, appuyez sur les ressources à joindre à la lettre et appuyez sur **Terminé**. Les actifs doivent d’abord être chargés dans Actifs. Il est recommandé de joindre uniquement des documents PDF et Microsoft Office, mais vous pouvez également joindre des images. Pour plus d’informations sur le chargement de ressources dans DAM, voir [Téléchargement de ressources](/help/assets/managing-assets-touch-ui.md).

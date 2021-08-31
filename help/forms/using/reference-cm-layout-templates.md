@@ -1,18 +1,18 @@
 ---
 title: Modèles de lettres de référence
-seo-title: Modèles de lettres de référence
+seo-title: Reference letter templates
 description: 'AEM Forms fournit des modèles de mise en page de lettres Correspondence Management que vous pouvez utiliser pour créer rapidement des lettres. '
-seo-description: 'AEM Forms fournit des modèles de mise en page de lettres Correspondence Management que vous pouvez utiliser pour créer rapidement des lettres. '
+seo-description: AEM Forms provides Correspondence Management letter layout templates that you can use to create letters quickly.
 uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 exl-id: 319db420-3318-4ef7-be2b-1ff2b1c08563
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 94%
+source-wordcount: '472'
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 94%
 
 Dans Correspondence Management, un modèle de lettre contient des champs de formulaire classiques, des fonctions de mise en page (en-têtes et pieds de page, par exemple) et des « zones cibles » vides où placer du contenu.
 
-Correspondence Management fournit des modèles de lettre dans le package AEM Forms [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/fr/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES). Pour installer un package, voir [Comment utiliser des packages](/help/sites-administering/package-manager.md). Vous pouvez personnaliser les modèles dans Designer en fonction de vos besoins de marque et d’entreprise. Le package inclut les modèles suivants :
+Correspondence Management fournit des modèles de lettre dans le package AEM Forms [Package de module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Pour installer un package, voir [Comment utiliser des packages](/help/sites-administering/package-manager.md). Vous pouvez personnaliser les modèles dans Designer en fonction de vos besoins de marque et d’entreprise. Le package inclut les modèles suivants :
 
 * Classique
 * Classique simple
@@ -36,7 +36,7 @@ Après avoir installé le package, les modèles de mise en page (XDP) sont répe
 
 Voici les champs communs à tous les modèles de ce package :
 
-* Date
+* Date 
 * Salutations
 * Texte de clôture
 * Texte de signature
@@ -69,7 +69,7 @@ Le modèle Équilibré à gauche affiche le logo à gauche de la lettre.
 
 Aperçu PDF d’une lettre créée à l’aide du modèle Équilibré à gauche
 
-## Équilibré à droite  {#balanced-right}
+## Équilibré à droite {#balanced-right}
 
 Le modèle Équilibré à droite présente le logo de la société sur la gauche et fournit un espace pour saisir l’adresse des destinataires dans la lettre elle-même. Le modèle Equilibré à droite comprend également un pied de page qui se répète lorsque votre lettre comporte plusieurs pages.
 
@@ -77,7 +77,7 @@ Le modèle Équilibré à droite présente le logo de la société sur la gauche
 
 Aperçu PDF d’une lettre créée à l’aide du modèle Equilibré à droite
 
-## Visuel gauche  {#visual-left}
+## Visuel gauche {#visual-left}
 
 Le modèle Visuel gauche présente un en-tête latéral sur la gauche de la page avec le logo de la société placé sur l’en-tête latéral. Le modèle Visuel gauche présente un champ pour l’objet mais pas de pied de page.
 
@@ -85,7 +85,7 @@ Le modèle Visuel gauche présente un en-tête latéral sur la gauche de la page
 
 Aperçu PDF d’une lettre créée à l’aide du modèle Visuel gauche
 
-## Visuel haut  {#visual-top}
+## Visuel haut {#visual-top}
 
 Le modèle Visuel haut présente une marge visuelle dans la partie supérieure. Le modèle Visuel haut a un champ pour saisir l’adresse du destinataire sur la page elle-même. Le modèle Visuel haut dispose d’un champ pour l’objet et d’un pied de page qui se répète pour les lettres présentant plusieurs pages.
 
@@ -93,7 +93,7 @@ Le modèle Visuel haut présente une marge visuelle dans la partie supérieure. 
 
 Aperçu PDF d’une lettre créée à l’aide du modèle Visuel haut
 
-## Visuel haut - Classique  {#visual-top-classic}
+## Visuel haut - Classique {#visual-top-classic}
 
 Le modèle Visuel haut - Classique comporte un en-tête en haut de la page avec le logo de l’entreprise. Le modèle Visuel haut - Classique comporte un champ permettant de saisir un objet mais pas de pied de page.
 

@@ -1,8 +1,8 @@
 ---
 title: Démarrages rapides de l’API Forms Service
-seo-title: Démarrages rapides de l’API Forms Service
+seo-title: Forms Service API Quick Starts
 description: Utilisez les didacticiels de mise en route pour l’API Forms Service.
-seo-description: Utilisez les didacticiels de mise en route pour l’API Forms Service.
+seo-description: Use the Quick Starts for the Forms Service API.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: abc2af58-3bf7-493e-917d-081022afb9a3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,6 @@ La logique d’application qui utilise l’API du service Forms est implémenté
 >
 >Les démarrages rapides situés dans Programmation avec v sont basés sur le serveur Forms, car vous utilisez un autre système d’exploitation, tel qu’Unix, pour remplacer les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-**Conseil** : Le site web Adobe Developer contient l’article suivant qui explique comment créer une application ASP.NET qui appelle le service Forms et effectue le rendu des formulaires. Voir [Création d’applications de rendu de formulaire ASP.NET](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).
 
 ## Démarrage rapide (mode SOAP) : Rendu d’un formulaire PDF interactif à l’aide de l’API Java {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
@@ -1532,7 +1531,7 @@ L’exemple de code suivant traite un formulaire envoyé au format PDF. La valeu
  
 ```
 
-## Démarrage rapide (mode SOAP) : Gestion des formulaires HTML envoyés au format XML à l’aide de l’API Java {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Gestion des formulaires HTML envoyés en tant que XML à l’aide de l’API Java {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
 
 L’exemple de code suivant traite un formulaire HTML envoyé sous forme de données XML. La valeur de type de contenu transmise à la méthode `processFormSubmission` est `CONTENT_TYPE=application/x-www-form-urlencoded`. Les valeurs qui correspondent aux champs nommés `mortgageAmount`, `lastName` et `firstName` s’affichent. Une méthode définie par l’utilisateur appelée `getNodeText` est utilisée dans ce démarrage rapide. Elle accepte une instance `org.w3c.dom.Document` et une valeur string qui spécifie le nom du noeud. Cette méthode renvoie une valeur string qui représente la valeur du noeud. (Voir [Gestion des Forms envoyées](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 

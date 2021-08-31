@@ -1,23 +1,23 @@
 ---
 title: Thèmes de référence
-seo-title: Thèmes de référence
+seo-title: Reference Themes
 description: 'AEM Forms fournit des thèmes de formulaires adaptatifs que vous pouvez obtenir de Distribution logicielle et utiliser pour appliquer un style à un formulaire. '
-seo-description: 'AEM Forms fournit des thèmes de formulaires adaptatifs que vous pouvez obtenir de Distribution logicielle et utiliser pour appliquer un style à un formulaire. '
+seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 78d7d4b6-95dd-429b-870b-30aba5a3fea3
 exl-id: 6a298571-d6ff-473f-af58-a45a0c7e6175
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 81%
+source-wordcount: '552'
+ht-degree: 82%
 
 ---
 
 # Thèmes de référence {#reference-themes}
 
-Les [thèmes](/help/forms/using/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. Outre le thème par défaut, vous pouvez obtenir les thèmes suivants en installant le package [AEM-FORMS-6.3-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
+Les [thèmes](/help/forms/using/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. Outre le thème par défaut, vous pouvez obtenir les thèmes suivants en installant le [module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) :
 
 * Beryl
 * Exec

@@ -1,17 +1,17 @@
 ---
 title: Configuration du service OData de Microsoft Dynamics
-seo-title: Configuration du service OData de Microsoft Dynamics
+seo-title: Microsoft Dynamics ODtata configuration
 description: Tirez parti de l’intégration et de l’utilisation des services Microsoft Dynamics en ligne et sur site grâce à un modèle de données de formulaire.
-seo-description: Découvrez comment tirer parti de l’intégration et de l’utilisation des services Microsoft Dynamics en ligne et sur site grâce à un modèle de données de formulaire.
+seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
 uuid: c9b2764f-9127-4a99-a469-b6ebcdee8fdf
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 62f9d1de-c397-46b5-964e-19777ddd130c
-feature: Modèle de données de formulaire
+feature: Form Data Model
 exl-id: 18df57b6-789a-4b61-9418-fa12294b226f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1217'
 ht-degree: 70%
 
 ---
@@ -35,7 +35,7 @@ Lorsque le package est installé, les entités et services suivants sont déploy
 * Service cloud OData MS Dynamics (service OData)
 * Modèle de données de formulaire avec entités et services Microsoft Dynamics préconfigurés.
 
-Le Cloud Service OData et le modèle de données de formulaire avec entités et services Microsoft Dynamics préconfigurés ne sont disponibles sur votre instance AEM Forms que si le mode d’exécution de l’instance AEM est défini sur `samplecontent` (par défaut). Pour plus d’informations sur la configuration des modes d’exécution pour une instance AEM, voir [Modes d’exécution](https://helpx.adobe.com/in/experience-manager/6-4/sites-deploying/configure-runmodes.html).
+Le Cloud Service OData et le modèle de données de formulaire avec entités et services Microsoft Dynamics préconfigurés ne sont disponibles sur votre instance AEM Forms que si le mode d’exécution de l’instance AEM est défini sur `samplecontent` (par défaut). Pour plus d’informations sur la configuration des modes d’exécution pour une instance AEM, voir [Modes d’exécution](/help/sites-deploying/configure-runmodes.md).
 
 ## Prérequis {#prerequisites}
 
@@ -63,9 +63,9 @@ Procédez comme suit pour définir l’URL de réponse de l’application Micros
 
    ![azure_directory](assets/azure_directory.png)
 
-1. Enregistrez la configuration.
+1. enregistrez la configuration.
 
-## Configuration de Microsoft Dynamics pour IFD  {#configure-microsoft-dynamics-for-ifd}
+## Configuration de Microsoft Dynamics pour IFD {#configure-microsoft-dynamics-for-ifd}
 
 Microsoft Dynamics utilise l’authentification basée sur les réclamations pour fournir l’accès aux données sur le serveur Microsoft Dynamics CRM aux utilisateurs externes. Pour ce faire, procédez comme suit pour configurer Microsoft Dynamics pour le déploiement par Internet (IFD) et configurer les paramètres de réclamation.
 
@@ -73,7 +73,7 @@ Microsoft Dynamics utilise l’authentification basée sur les réclamations po
 >
 >Utilisez cette procédure uniquement lors de l’intégration d’AEM Forms au serveur Microsoft Dynamics sur site.
 
-1. Configurez l’instance Microsoft Dynamics sur site pour IFD comme décrit dans [Configuration d’IFD pour Microsoft Dynamics](https://technet.microsoft.com/en-us/library/dn609803.aspx).
+1. Configurez l’instance Microsoft Dynamics sur site pour IFD comme décrit dans [Configuration d’IFD pour Microsoft Dynamics](https://technet.microsoft.com/fr-fr/library/dn609803.aspx).
 1. Exécutez les commandes suivantes à l’aide de Windows PowerShell pour configurer les paramètres de réclamation sur Microsoft Dynamics compatible avec IFD :
 
    ```
@@ -138,7 +138,7 @@ La configuration **Cloud Service OData MS Dynamics (service OData)** est fournie
 
 Le service cloud MS Dynamics OData Cloud Service (Service OData) est configuré et connecté à votre service Dynamics.
 
-## Créer un modèle de données de formulaire {#create-form-data-model}
+## Création d’un modèle de données de formulaire {#create-form-data-model}
 
 Lorsque vous installez le package AEM Forms, un modèle de données de formulaire,**Microsoft Dynamics FDM**, est déployé sur votre instance AEM. Par défaut, le modèle de données de formulaire utilise le service Microsoft Dynamics configuré dans le Cloud Service OData MS Dynamics (service OData) comme source de données.
 

@@ -1,17 +1,17 @@
 ---
 title: Fragments de formulaires adaptatifs de référence
-seo-title: Fragments de formulaires adaptatifs de référence
+seo-title: Reference adaptive form fragments
 description: 'AEM Forms propose des fragments de formulaires adaptatifs que vous pouvez utiliser en tant que ressources pour créer un formulaire rapidement. '
-seo-description: 'AEM Forms propose des fragments de formulaires adaptatifs que vous pouvez utiliser en tant que ressources pour créer un formulaire rapidement. '
+seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 exl-id: cceea4d1-8fc2-4118-b22e-91f27e69c7e4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 97%
+source-wordcount: '414'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 [Un fragment de formulaire adaptatif](/help/forms/using/adaptive-form-fragments.md) est un groupe de champs ou un panneau contenant un groupe de champs que vous pouvez utiliser lors de la création d’un formulaire. Il vous permet de créer un formulaire facilement et rapidement. Vous pouvez glisser-déposer un fragment de formulaire adaptatif dans un formulaire à l’aide du navigateur de ressources de la barre latérale, et vous pouvez le modifier dans l’éditeur de formulaire.
 
-Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fournis dans le package AEM Forms [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/fr/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Il inclut les configurations suivantes :
+Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fournis dans le [module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Il inclut les configurations suivantes :
 
 * Adresse
 * Coordonnées
@@ -30,7 +30,7 @@ Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fo
 * Recettes et dépenses
 * Nom
 * Conditions générales
-* Conditions générales avec Scribble
+* Conditions générales avec saisie tactile
 
 Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé sous Formulaires et documents. Pour installer un package, voir [Comment utiliser des packages](/help/sites-administering/package-manager.md).
 
@@ -97,7 +97,7 @@ Indique les conditions générales que les utilisateurs doivent accepter avant d
 
 [Cliquez sur l’image pour l’agrandir](assets/tnc-1.png)
 
-## Conditions générales avec Scribble {#terms-conditions-with-scribble}
+## Conditions générales avec saisie tactile {#terms-conditions-with-scribble}
 
 Indique les conditions générales que les utilisateurs doivent accepter et signer avant d’envoyer un formulaire.
 ![Conditions générales avec Scribble](assets/tnc-scribble.png)

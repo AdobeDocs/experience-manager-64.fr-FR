@@ -1,8 +1,8 @@
 ---
 title: Fichiers à sauvegarder et à récupérer
-seo-title: Fichiers à sauvegarder et à récupérer
+seo-title: Files to back up and recover
 description: Ce document décrit les fichiers d’application et de données à sauvegarder.
-seo-description: Ce document décrit les fichiers d’application et de données à sauvegarder.
+seo-description: This document describes the application and data files that must be backed up.
 uuid: ba04adb9-675a-48f2-ad52-39c1266e423b
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: 407db3cf-8add-486b-8cf5-daeecc18bf30
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2142'
 ht-degree: 89%
 
 ---
@@ -35,7 +35,7 @@ Les documents d’entrée pour un appel de travaux asynchrones sont également s
 
 L’emplacement du répertoire de stockage global de documents est défini lors de l’installation d’AEM forms, ou ultérieurement à l’aide d’Administration Console. Outre la possibilité de conserver le répertoire de stockage global de documents à un emplacement de haute disponibilité, vous pouvez également activer le stockage de base de données pour les documents. Voir [Options de sauvegarde dans le cas de l’utilisation de la base de données pour le stockage de documents](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
 
-### Emplacement du répertoire de stockage global de documents  {#gds-location}
+### Emplacement du répertoire de stockage global de documents {#gds-location}
 
 Si vous ne définissez pas le paramètre d’emplacement lors de l’installation, l’emplacement par défaut utilisé est un sous-répertoire de l’emplacement d’installation du serveur d’applications. Vous devez sauvegarder le répertoire suivant de votre serveur d’applications :
 
@@ -52,13 +52,13 @@ Dans un environnement organisé en grappe, le répertoire de stockage global de 
 
 L’emplacement du répertoire de stockage global de documents peut être modifié lors d’une récupération, si l’emplacement d’origine n’est plus disponible (voir [Modification de l’emplacement du stockage global de documents durant la récupération](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)).
 
-### Options de sauvegarde dans le cas de l’utilisation de la base de données pour le stockage de documents  {#backup-options-when-database-is-used-for-document-storage}
+### Options de sauvegarde dans le cas de l’utilisation de la base de données pour le stockage de documents {#backup-options-when-database-is-used-for-document-storage}
 
 Vous pouvez activer le stockage de documents AEM Forms dans la base de données AEM Forms à l’aide d’Administration Console. Cette option conserve tous les documents persistants dans la base de données ; AEM Forms a tout de même besoin du répertoire de stockage global de documents reposant sur le système de fichiers car il est utilisé pour le stockage des fichiers et ressources permanents et temporaires associés aux sessions et aux appels d’AEM Forms.
 
 Lorsque vous sélectionnez l’option « Activer le stockage de documents dans la base de données » dans les paramètres de Core System dans Administration Console ou à l’aide du gestionnaire de configuration, AEM Forms n’autorise pas les modes de sauvegarde d’instantané et de sauvegarde de restauration. Par conséquent, vous n’avez pas besoin de gérer les modes de sauvegarde à l’aide d’AEM Forms. Si vous utilisez cette option, sauvegardez le répertoire de stockage global de documents uniquement après avoir activé cette option. Lors de la récupération d’AEM Forms à partir d’une sauvegarde, il n’est pas nécessaire de renommer le répertoire de sauvegarde du stockage global de documents ni de restaurer ce dernier.
 
-## Référentiel AEM  {#aem-repository}
+## Référentiel AEM {#aem-repository}
 
 Le référentiel AEM (crx-repository) est créé si crx-repository est configuré lors de l’installation d’AEM Forms. Le processus d’installation d’AEM Forms détermine l’emplacement du répertoire crx-repository. Le référentiel de sauvegarde et de restauration AEM est requis, de même que la base de données et le stockage global de documents pour des données AEM Forms cohérentes dans AEM Forms. Le référentiel AEM contient des données pour la solution Correspondence Management, Forms Manager et l’espace de travail AEM Forms.
 
@@ -68,7 +68,7 @@ La solution Correspondence Management centralise et gère la création, l’asse
 
 Une configuration simple de la solution Correspondence Management comprend une instance d’auteur et une instance de publication sur la même machine ou sur des machines différentes.
 
-### Gestionnaire des formulaires  {#forms-manager}
+### Gestionnaire des formulaires {#forms-manager}
 
 Forms Manager simplifie le processus de mise à jour, de gestion et de retrait de formulaires.
 
@@ -82,7 +82,7 @@ L’espace de travail AEM Forms dispose des mêmes fonctionnalités que le Flex 
 
 Il permet la gestion des tâches sur les clients sans Flash Player et Adobe Reader. Il facilite le rendu de formulaires HTML, en plus des formulaires PDF et Flex.
 
-## Base de données des formulaires AEM  {#aem-forms-database}
+## Base de données des formulaires AEM {#aem-forms-database}
 
 La base de données AEM Forms stocke le contenu (artefacts de formulaire, configurations de service, état de traitement et références de base de données) dans les fichiers du répertoire de stockage global de documents et du répertoire racine de stockage de contenu (pour Content Services). Les sauvegardes de la base de données peuvent être exécutées en temps réel, sans interruption de service. La récupération s’effectue quant à elle à un moment spécifique ou suite à un changement précis. Cette section explique de quelle façon configurer votre base de données pour qu’elle puisse être sauvegardée en temps réel.
 
@@ -92,7 +92,7 @@ Pour sauvegarder la base de données en temps réel, vous devez utiliser le mode
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Pour en savoir plus sur la configuration de Content Services (obsolète), voir [Administration de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -104,7 +104,7 @@ Configurez votre base de données DB2 pour qu’elle s’exécute en mode de con
 
 IBM propose une suite d’outils et des systèmes d’aide permettant aux administrateurs de base de données de gérer leurs sauvegardes et récupérations :
 
-* IBM DB2 Archive Log Accelerator (voir [IBM DB2 Archive Log Accelerator for z/OS User’s Guide](https://publib.boulder.ibm.com/infocenter/dzichelp/v2r2/topic/com.ibm.db2tools.alc.doc.ug/alcugb20.pdf?noframes=true)).
+* Accélérateur de journaux d’archives IBM DB2
 * IBM DB2 Data Archive Expert (voir [IBM DB2 Data Archive Expert User’s Guide and Reference](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true)).
 
 DB2 possède des capacités intégrées permettant de sauvegarder une base de données vers Tivoli Storage Manager. A l’aide de Tivoli Storage Manager, les sauvegardes DB2 peuvent être stockées sur d’autres supports et disques durs locaux.
@@ -121,7 +121,7 @@ Utilisez des sauvegardes de type instantané ou configurez votre base de donnée
 
 [Oracle Database Backup and Recovery Reference :](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) présente des informations complètes sur la syntaxe et la sémantique de toutes les commandes RMAN et décrit les vues de base de données disponibles pour générer des rapports sur les activités de sauvegarde et de récupération.
 
-### SQL Server  {#sql-server}
+### SQL Server {#sql-server}
 
 Utilisez des sauvegardes de type instantané ou configurez votre base de données SQL Server pour qu’elle s’exécute en mode de consignation de transactions.
 
@@ -151,11 +151,11 @@ binlog_format=mixed
 log-bin=logname
 ```
 
-## Répertoire racine de stockage de contenu (Content Services uniquement)  {#content-storage-root-directory-content-services-only}
+## Répertoire racine de stockage de contenu (Content Services uniquement) {#content-storage-root-directory-content-services-only}
 
 Le répertoire racine de stockage de contenu contient le référentiel Content Services (obsolète) dans lequel sont stockés tous les documents, artefacts et index. L’arborescence du répertoire racine de stockage de contenu doit être sauvegardée. Cette section décrit de quelle façon déterminer l’emplacement du répertoire racine de stockage de contenu pour les environnements autonomes et organisés en grappe.
 
-### Emplacement racine de stockage de contenu (environnement autonome)  {#content-storage-root-location-stand-alone-environment}
+### Emplacement racine de stockage de contenu (environnement autonome) {#content-storage-root-location-stand-alone-environment}
 
 Le répertoire racine de stockage de contenu est créé à l’installation de Content Services (obsolète). Le processus d’installation d’AEM Forms détermine l’emplacement du répertoire racine de stockage de contenu.
 
@@ -173,7 +173,7 @@ Sauvegardez les répertoires suivants situés dans le répertoire racine de stoc
 
 Si le répertoire /backup-lucene-indexes est absent, sauvegardez le répertoire /lucene-indexes (également situé dans le répertoire racine de stockage de contenu). Si le répertoire /backup-lucene-indexes existe, ne sauvegardez pas le répertoire /lucene-indexes car cela pourrait générer des erreurs.
 
-### Emplacement racine de stockage de contenu (environnement organisé en grappes)  {#content-storage-root-location-clustered-environment}
+### Emplacement racine de stockage de contenu (environnement organisé en grappes) {#content-storage-root-location-clustered-environment}
 
 Lors de l’installation de Content Services (obsolète) dans un environnement organisé en grappe, le répertoire racine de stockage de contenu se divise en deux répertoires distincts :
 

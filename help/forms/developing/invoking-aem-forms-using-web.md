@@ -1,8 +1,8 @@
 ---
 title: Appel d’AEM Forms utilisant des services Web
-seo-title: Appel d’AEM Forms utilisant des services Web
+seo-title: Invoking AEM Forms using Web Services
 description: Appelez les processus AEM Forms à l’aide de services web avec une prise en charge complète de la génération WSDL.
-seo-description: Appelez les processus AEM Forms à l’aide de services web avec une prise en charge complète de la génération WSDL.
+seo-description: Invoke AEM Forms processes using web services with full support for WSDL generation.
 uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: cd4b5e40-afd5-422d-ae2e-cfde0f4d6b1a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10008'
+source-wordcount: '9928'
 ht-degree: 6%
 
 ---
@@ -35,7 +35,7 @@ AEM Forms prend en charge les normes de service Web suivantes :
 * **MTOM** : Représente un moyen de coder des pièces jointes avec des requêtes SOAP. (Voir [Appel d’AEM Forms à l’aide de MTOM](#invoking-aem-forms-using-mtom).)
 * **SwaRef** : Représente une autre manière de coder des pièces jointes avec des requêtes SOAP. (Voir [Appel d’AEM Forms à l’aide de SwaRef](#invoking-aem-forms-using-swaref).)
 * **SOAP avec pièces jointes** : Prend en charge les formats MIME et DIME (Direct Internet Message Encapsulation). Ces protocoles sont des moyens standard d’envoyer des pièces jointes sur SOAP. Les applications Microsoft Visual Studio .NET utilisent DIME. (Voir [Appel d’AEM Forms à l’aide de l’encodage Base64](#invoking-aem-forms-using-base64-encoding).)
-* **WS-Security** : Prend en charge un profil de jeton de mot de passe de nom d’utilisateur, qui est un moyen standard d’envoyer des noms d’utilisateur et des mots de passe dans l’en-tête SOAP de sécurité WS. AEM Forms prend également en charge l’authentification de base HTTP. (Voir [Transmission des informations d’identification à l’aide des en-têtes WS-Security](https://www.adobe.com/devnet/livecycle/articles/passing_credentials.html).)
+* **WS-Security** : Prend en charge un profil de jeton de mot de passe de nom d’utilisateur, qui est un moyen standard d’envoyer des noms d’utilisateur et des mots de passe dans l’en-tête SOAP de sécurité WS. AEM Forms prend également en charge l’authentification de base HTTP.
 
 Pour appeler les services AEM Forms à l’aide d’un service Web, vous créez généralement une bibliothèque proxy qui utilise le WSDL du service. La section *Appel d’AEM Forms à l’aide des services web* utilise JAX-WS pour créer des classes proxy Java pour appeler des services. (Voir [Création de classes proxy Java à l’aide de JAX-WS](#creating-java-proxy-classes-using-jax-ws).)
 
@@ -347,14 +347,6 @@ Le tableau suivant répertorie les types de données Java et affiche le type de 
  </tbody> 
 </table>
 
-**Site Web d’Adobe Developer** 
-
-Le site web du développeur Adobe contient l’article suivant qui explique comment appeler les services AEM Forms à l’aide de l’API de service Web :
-
-[Création d&#39;applications ASP.NET de rendu de formulaire](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)
-
-[Appel de services web à l’aide de composants personnalisés](https://www.adobe.com/devnet/livecycle/articles/extend_webservices.html)
-
 >[!NOTE]
 >
 >L’appel de services web à l’aide de composants personnalisés explique comment créer un composant AEM Forms qui appelle des services web tiers.
@@ -485,7 +477,7 @@ Vous pouvez générer des fichiers de bibliothèque Java Axis en procédant comm
    * Ajoutez le répertoire bin à votre chemin de classe.
    * Définissez la variable d’environnement `ANT_HOME` sur le répertoire dans lequel vous avez installé Ant.
 
-1. Installez Apache Axis 1.4 sur l’ordinateur client. Elle est disponible à l’adresse [https://ws.apache.org/axis/](https://ws.apache.org/axis/.md).
+1. Installez Apache Axis 1.4 sur l’ordinateur client. Elle est disponible à l’adresse [https://ws.apache.org/axis/](https://ws.apache.org/axis/).
 1. Configurez le chemin de classe pour utiliser les fichiers JAR Axis dans votre client de service Web, comme décrit dans les instructions d’installation d’Axis à l’adresse [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html).
 1. Utilisez l’outil Apache WSDL2Java dans Axis pour générer des classes de proxy Java. Créez un script de génération Ant pour accomplir cette tâche. Le script suivant est un exemple de script de build Ant nommé build.xml :
 
@@ -589,7 +581,7 @@ Lorsque ce processus est appelé, il effectue les actions suivantes :
 1. Obtention du document PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
 1. Chiffrement du document PDF avec un mot de passe. Cette action est basée sur l’opération `PasswordEncryptPDF`. Le document PDF chiffré avec un mot de passe est retourné dans une variable de processus nommée `outDoc`.
 
-### Création d’un assemblage client .NET qui utilise le codage Base64 {#creating-a-net-client-assembly-that-uses-base64-encoding}
+### Création d’un assemblage client .NET utilisant le codage Base64 {#creating-a-net-client-assembly-that-uses-base64-encoding}
 
 Vous pouvez créer un assemblage client .NET pour appeler un service Forms à partir d’un projet Microsoft Visual Studio .NET. Pour créer un assemblage client .NET qui utilise le codage base64, procédez comme suit :
 
@@ -770,7 +762,7 @@ Après avoir créé une référence de service, les types de données associés 
 
 1. Créez un projet .NET à l’aide de Microsoft Visual Studio 2008.
 1. Dans le menu **Projet**, sélectionnez **Ajouter une référence de service**.
-1. Dans la boîte de dialogue **Address** , spécifiez le WSDL du service AEM Forms. Par exemple,
+1. Dans la boîte de dialogue **Address** , spécifiez le WSDL du service AEM Forms. Par exemple :
 
    ```as3
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
@@ -945,7 +937,7 @@ Lorsque ce processus est appelé, il effectue les actions suivantes :
 >
 >Il est recommandé de vous familiariser avec l’appel d’AEM Forms à l’aide de SOAP. (Voir [Appel d’AEM Forms à l’aide des services web](#invoking-aem-forms-using-web-services).)
 
-### Création d’un assemblage client .NET qui utilise des données sur HTTP {#creating-a-net-client-assembly-that-uses-data-over-http}
+### Création d’un assemblage client .NET utilisant des données sur HTTP {#creating-a-net-client-assembly-that-uses-data-over-http}
 
 Pour créer un assemblage client qui utilise des données via HTTP, suivez le processus spécifié dans [Appel d’AEM Forms à l’aide de l’encodage Base64](#invoking-aem-forms-using-base64-encoding). Cependant, modifiez l’URL dans la classe proxy pour inclure `?blob=http` au lieu de `?blob=base64`. Cette action garantit que les données sont transmises via HTTP. Dans la classe proxy, recherchez la ligne de code suivante :
 
@@ -1460,7 +1452,7 @@ L’exemple de code C# suivant appelle un service Forms à l’aide de l’authe
 
 Parfois, des problèmes surviennent lors de l’appel de certaines opérations de services AEM Forms à l’aide de services web. L’objectif de cette discussion est d’identifier ces problèmes et de fournir une solution, le cas échéant.
 
-### Appel asynchrone des opérations de service {#invoking-service-operations-asynchronously}
+### Appel des opérations de service de manière asynchrone {#invoking-service-operations-asynchronously}
 
 Si vous tentez d’appeler de manière asynchrone une opération de service AEM Forms, telle que l’opération `htmlToPDF` de Generate PDF, une `SoapFaultException` se produit. Pour résoudre ce problème, créez un fichier XML de liaison personnalisée qui mappe l’élément `ExportPDF_Result` et d’autres éléments dans différentes classes. Le code XML suivant représente un fichier de liaison personnalisé.
 
@@ -1748,6 +1740,6 @@ L’exemple de code C# suivant montre comment signer un formulaire interactif re
  
 ```
 
-### Les services commençant par la lettre Je produisent des fichiers proxy non valides {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
+### Services commençant par la lettre Je génère des fichiers proxy non valides {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
 
 Le nom de certaines classes de proxy générées par AEM Forms est incorrect lors de l’utilisation de Microsoft .Net 3.5 et WCF. Ce problème se produit lorsque des classes proxy sont créées pour IBMFilenetContentRepositoryConnector, IDPSchedulerService ou tout autre service dont le nom commence par la lettre I. Par exemple, le nom du client généré dans le cas d’IBMFileNetContentRepositoryConnector est `BMFileNetContentRepositoryConnectorClient`. La lettre I est manquante dans la classe proxy générée.

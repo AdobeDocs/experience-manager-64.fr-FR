@@ -1,8 +1,8 @@
 ---
 title: Rendu de Forms
-seo-title: Rendu de Forms
+seo-title: Rendering Forms
 description: Utilisez le service Forms pour créer des applications clientes interactives de capture de données qui valident, traitent, transforment et diffusent des formulaires généralement créés dans Designer. Les auteurs de formulaires peuvent développer une conception de formulaire unique que le service Forms effectue au format PDF, SWF ou HTML dans différents environnements de navigateur.
-seo-description: Utilisez le service Forms pour créer des applications clientes interactives de capture de données qui valident, traitent, transforment et diffusent des formulaires généralement créés dans Designer. Les auteurs de formulaires peuvent développer une conception de formulaire unique que le service Forms effectue au format PDF, SWF ou HTML dans différents environnements de navigateur.
+seo-description: Use the Forms service to create interactive data capture client applications that validate, process, transform, and deliver forms typically created in Designer. Form authors can develop a single form design that the Forms service renders in PDF, SWF, or HTML in various browser environments.
 uuid: 68d7b7bc-7730-4a83-b7b9-ebe2a29d6c51
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 role: Developer
 exl-id: 61d63c89-26e8-4a50-b6a3-1bcf1a1b4c54
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-# Rendu du Forms {#rendering-forms}
+# Rendu de Forms {#rendering-forms}
 
 **À propos du service Forms**
 
@@ -57,4 +57,3 @@ Vous pouvez accomplir ces tâches à l’aide du service Forms :
 * Calcul des données de formulaire. (Voir [Calcul des données de formulaire](/help/forms/developing/calculating-form-data.md).)
 * Optimisez une application. (Voir [Optimisation des performances du service Forms](/help/forms/developing/optimizing-performance-forms-service.md).)
 
-   ***Conseil **: Le site web Adobe Developer contient l’article suivant qui explique comment créer une application ASP.NET qui appelle le service Forms et effectue le rendu des formulaires. Voir [Création d’applications de rendu de formulaire ASP.NET](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).*

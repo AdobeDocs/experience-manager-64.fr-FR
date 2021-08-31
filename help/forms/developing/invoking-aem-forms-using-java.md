@@ -1,8 +1,8 @@
 ---
 title: Appel d’AEM Forms à l’aide de l’API Java
-seo-title: Appel d’AEM Forms à l’aide de l’API Java
+seo-title: Invoking AEM Forms using the JavaAPI
 description: Utilisez l’API Java AEM Forms pour le protocole de transport RMI pour l’appel à distance, le transport VM pour l’appel local, SOAP pour l’appel à distance, une authentification différente, comme le nom d’utilisateur et le mot de passe, ainsi que des demandes d’appel synchrones et asynchrones.
-seo-description: Utilisez l’API Java AEM Forms pour le protocole de transport RMI pour l’appel à distance, le transport VM pour l’appel local, SOAP pour l’appel à distance, une authentification différente, comme le nom d’utilisateur et le mot de passe, ainsi que des demandes d’appel synchrones et asynchrones.
+seo-description: Use the AEM Forms Java API for RMI transport protocol for remote invocation, VM transport for local invocation, SOAP for remote invocation, different authentication, such as user name and password, and synchronous and asynchronous invocation requests.
 uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
 exl-id: 1c239c05-e221-442a-a748-0c28704ee032
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '5479'
-ht-degree: 88%
+source-wordcount: '5385'
+ht-degree: 89%
 
 ---
 
@@ -34,13 +34,6 @@ L’API Java prend en charge les fonctionnalités suivantes :
 * Authentification différente, telle que le nom d’utilisateur et le mot de passe
 * Demandes d’appel synchrones et asynchrones
 
-**Site Web d’Adobe Developer** 
-
-Le site Web d’Adobe Developer contient les articles suivants traitant de l’appel des services AEM Forms à l’aide de l’API Java :
-
-[Utilisation des servlets Java pour appeler les processus AEM Forms](https://www.adobe.com/devnet/livecycle/articles/java_servlets.html)
-
-[Appel de l’API AEM Forms Distiller de Java](https://www.adobe.com/devnet/livecycle/articles/distiller_java_03.html)
 
 **Voir également**
 
@@ -60,7 +53,7 @@ Le site Web d’Adobe Developer contient les articles suivants traitant de l’
 
 [Création d’une application Web Java qui appelle un processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md)
 
-## Inclusion des fichiers de bibliothèque Java AEM Forms {#including-aem-forms-java-library-files}
+## Inclusion des fichiers de bibliothèque Java d’AEM Forms {#including-aem-forms-java-library-files}
 
 Pour appeler un service AEM Forms par programmation à l’aide de l’API Java, incluez les fichiers de bibliothèque requis (fichiers JAR) dans le chemin d’accès aux classes de votre projet Java. Les fichiers JAR que vous incluez dans le chemin d’accès aux classes de votre application client dépendent de plusieurs facteurs :
 
@@ -224,7 +217,7 @@ Le tableau suivant énumère les fichiers JAR qui sont nécessaires pour appeler
  </tbody>
 </table>
 
-### Fichiers JAR d’applications en mode de connexion et J2EE  {#connection-mode-and-j2ee-application-jar-files}
+### Fichiers JAR d’applications en mode de connexion et J2EE {#connection-mode-and-j2ee-application-jar-files}
 
 Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de connexion et du serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
@@ -289,7 +282,7 @@ Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de connex
  </tbody>
 </table>
 
-### Scénarios d’appel  {#invoking-scenarios}
+### Scénarios d’appel {#invoking-scenarios}
 
 Le tableau suivant spécifie les scénarios d’appel et répertorie les fichiers JAR requis pour appeler correctement AEM Forms.
 
@@ -627,14 +620,14 @@ L’exemple de code suivant montre comment utiliser un objet `com.adobe.idp.Cont
 >
 >Pour plus d’informations sur l’authentification d’un utilisateur, voir [Authentification des utilisateurs ](/help/forms/developing/users.md#authenticating-users).
 
-### Scénarios d’appel  {#invoking_scenarios-1}
+### Scénarios d’appel {#invoking_scenarios-1}
 
 Les scénarios d’appel suivants sont abordés dans cette section :
 
 * Une application client exécutée sur sa propre machine virtuelle Java (JVM) appelle une instance AEM Forms autonome.
 * Une application client exécutée sur sa propre JVM appelle des instances AEM Forms en cluster.
 
-### Application client appelant une instance autonome AEM Forms  {#client-application-invoking-a-stand-alone-aem-forms-instance}
+### Application client appelant une instance autonome AEM Forms {#client-application-invoking-a-stand-alone-aem-forms-instance}
 
 Le diagramme suivant illustre une application client exécutée sur sa propre machine virtuelle et appelant une instance AEM Forms autonome.
 
@@ -644,7 +637,7 @@ Dans ce scénario, une application client s’exécute sur sa propre JVM et appe
 >
 >Ce scénario est le scénario d’appel sur lequel toutes les mises en route sont basées.
 
-### Application de client appelant des exemples groupés d’AEM Forms  {#client-application-invoking-clustered-aem-forms-instances}
+### Application de client appelant des exemples groupés d’AEM Forms {#client-application-invoking-clustered-aem-forms-instances}
 
 Le diagramme suivant montre une application client s’exécutant dans sa propre JVM et invoquant des instances de AEM Forms situées dans un cluster.
 
@@ -780,7 +773,7 @@ L’exemple de code suivant crée un objet `com.adobe.idp.Document` basé sur un
  Document myPDFDocument = new Document(myByteArray);
 ```
 
-#### Création d’un document à partir d’un autre document  {#creating-a-document-based-on-another-document}
+#### Création d’un document à partir d’un autre document {#creating-a-document-based-on-another-document}
 
 L’exemple de code suivant crée un objet `com.adobe.idp.Document` basé sur un autre objet `com.adobe.idp.Document`.
 
@@ -801,7 +794,7 @@ L’exemple de code suivant crée un objet `com.adobe.idp.Document` basé sur un
  Document anotherDocument = new Document(myPDFDocument);
 ```
 
-#### Création d’un document basé sur un fichier  {#creating-a-document-based-on-a-file}
+#### Création d’un document basé sur un fichier {#creating-a-document-based-on-a-file}
 
 L’exemple de code suivant crée un objet `com.adobe.idp.Document` basé sur un fichier PDF nommé *map.pdf*. Ce fichier se trouve dans la racine du disque dur C. Ce constructeur tente de définir le type de contenu MIME de l’objet `com.adobe.idp.Document` en utilisant l’extension de nom de fichier.
 
@@ -817,7 +810,7 @@ Définir ce paramètre sur `false` signifie que vous conservez la propriété de
  Document myPDFDocument = new Document(mySourceMap,true);
 ```
 
-#### Création d’un document basé sur un objet InputStream  {#creating-a-document-based-on-an-inputstream-object}
+#### Création d’un document basé sur un objet InputStream {#creating-a-document-based-on-an-inputstream-object}
 
 L’exemple de code Java suivant crée un objet `com.adobe.idp.Document` basé sur un objet `java.io.InputStream`.
 
@@ -829,7 +822,7 @@ L’exemple de code Java suivant crée un objet `com.adobe.idp.Document` basé s
  Document myPDFDocument = new Document(is);
 ```
 
-#### Création d’un document basé sur un contenu accessible à partir d’une URL  {#creating-a-document-based-on-content-accessible-from-an-url}
+#### Création d’un document basé sur un contenu accessible à partir d’une URL {#creating-a-document-based-on-content-accessible-from-an-url}
 
 L’exemple de code Java suivant crée un objet `com.adobe.idp.Document` basé sur un fichier PDF nommé *map.pdf*. Ce fichier se trouve dans une application Web nommée `WebApp` qui s’exécute sur `localhost`. Ce constructeur tente de définir le type de contenu MIME de l’objet `com.adobe.idp.Document` en utilisant le type de contenu retourné avec le protocole URL.
 

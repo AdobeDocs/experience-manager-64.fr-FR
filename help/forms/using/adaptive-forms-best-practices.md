@@ -1,17 +1,17 @@
 ---
 title: Meilleures pratiques pour travailler avec les formulaires adaptatifs
-seo-title: Meilleures pratiques pour travailler avec les formulaires adaptatifs
+seo-title: Best practices for working with adaptive forms
 description: Définit les meilleures pratiques à appliquer pour la mise en place d’un projet AEM Forms, le développement de formulaires adaptatifs et l’optimisation des performances du système AEM Forms.
-seo-description: Définit les meilleures pratiques à appliquer pour la mise en place d’un projet AEM Forms, le développement de formulaires adaptatifs et l’optimisation des performances du système AEM Forms.
+seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
 uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4148'
+source-wordcount: '4108'
 ht-degree: 85%
 
 ---
@@ -98,7 +98,7 @@ Pour plus d’informations, voir [Création d’un formulaire adaptatif](/help/f
 
 Consultez également les descriptions des composants et les meilleures pratiques dans [Introduction à la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
 
-### Utilisation de règles dans les formulaires adaptatifs  {#using-rules-in-adaptive-forms}
+### Utilisation de règles dans les formulaires adaptatifs {#using-rules-in-adaptive-forms}
 
 AEM Forms fournit un [éditeur de règles](/help/forms/using/rule-editor.md) qui vous permet de créer des règles pour ajouter un comportement dynamique aux composants de formulaire adaptatif. Grâce à ces règles, vous pouvez évaluer des conditions et déclencher des actions sur des composants, comme afficher ou masquer des champs, calculer des valeurs, modifier dynamiquement la liste déroulante, etc.
 
@@ -142,7 +142,7 @@ Les thèmes de formulaires adaptatifs vous permettent de créer des styles réut
 
 Pour plus d’informations, voir [Thèmes](/help/forms/using/themes.md).
 
-### Optimisation des performances de formulaires complexes et volumineux  {#optimizing-performance-of-large-and-complex-forms}
+### Optimisation des performances de formulaires complexes et volumineux {#optimizing-performance-of-large-and-complex-forms}
 
 Les auteurs de formulaires et les utilisateurs finaux sont généralement confrontés à des problèmes de performances lors du chargement de formulaires volumineux dans le mode de création ou lors de l’exécution. A mesure que le nombre d’objets (champs et panneaux) dans un formulaire augmente, les performances de création et d’exécution commencent à diminuer. Ainsi, il est impossible pour plusieurs auteurs de travailler simultanément à la création d’un formulaire.
 
@@ -163,7 +163,7 @@ Afin de résoudre ces problèmes de performances dans les formulaires volumineux
    * Marquez une valeur dans un panneau chargé en différé comme Utiliser la valeur globalement si cette valeur est utilisée dans une autre partie du formulaire afin qu’elle soit disponible lorsque le panneau de contenu est déchargé.
    * Pensez à créer des règles de visibilité pour les fragments qui doivent s’afficher ou être masqués en fonction d’une condition.
 
-### Préremplissage des formulaires adaptatifs  {#prefilling-adaptive-forms}
+### Préremplissage des formulaires adaptatifs {#prefilling-adaptive-forms}
 
 Vous pouvez préremplir des champs de formulaires adaptatifs avec des données extraites du système d’arrière-plan pour aider les utilisateurs à remplir rapidement le formulaire et éviter de saisir des erreurs.
 
@@ -191,7 +191,7 @@ Vous pouvez tirer parti de l’expérience multi-signature d’Adobe Sign dans 
 * Vous pouvez configurer une expérience de signature intégrée ou rediriger les signataires vers une page de signature lors de l’envoi.
 * Configurez l’expérience de signature séquentielle ou parallèle, le cas échéant.
 
-### Génération d’un document d’enregistrement  {#generating-document-of-record}
+### Génération d’un document d’enregistrement {#generating-document-of-record}
 
 Un document d’enregistrement (DE) est une version PDF aplatie d’un formulaire adaptatif que vous pouvez imprimer, signer ou archiver.
 
@@ -229,14 +229,14 @@ Calvin SDK est une API utilitaire pour les développeurs de formulaires adaptat
 
 Pour plus d’informations, voir [Automatiser les tests des formulaires adaptatifs](/help/forms/using/calvin.md).
 
-### Validation de formulaires adaptatifs sur le serveur AEM  {#validating-adaptive-forms-on-aem-server}
+### Validation de formulaires adaptatifs sur le serveur AEM {#validating-adaptive-forms-on-aem-server}
 
 Les validations côté serveur sont nécessaires pour empêcher toute tentative de contournement des validations du client, toute erreur potentielle lors de l’envoi de données et toute violation des règles de fonctionnement. Les validations côté serveur sont exécutées sur le serveur lors du chargement de la bibliothèque client requise.
 
 * Intégrez des fonctionnalités à une bibliothèque client pour valider les expressions dans les formulaires adaptatifs, et définissez la bibliothèque client dans la boîte de dialogue relative au conteneur des formulaires adaptatifs. Pour plus d’informations, reportez-vous à la section [Revalidation côté serveur](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p).
 * La validation côté serveur permet de valider le modèle de formulaire. Il est recommandé de créer une bibliothèque client séparée pour les validations et de ne pas la mélanger à d’autres éléments. Par exemple, ne placez pas le style HTML et la manipulation DOM HTML dans la même bibliothèque client.
 
-### Localisation des formulaires adaptatifs  {#localizing-adaptive-forms}
+### Localisation des formulaires adaptatifs {#localizing-adaptive-forms}
 
 AEM fournit des flux de travaux de traduction que vous pouvez utiliser pour localiser les formulaires adaptatifs. Pour plus d’informations, voir [Utilisation de processus de traduction AEM pour la localisation des formulaires adaptatifs](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
 
@@ -250,7 +250,7 @@ Certaines meilleures pratiques en matière de localisation des formulaires adapt
 
 * AEM Forms prend actuellement en charge la localisation du contenu des formulaires adaptatifs en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois- (zh-CN), chinois-Taïwan (zh-TW) et coréen (ko-KR). Cependant, vous pouvez ajouter la prise en charge de nouveaux paramètres régionaux pour les formulaires adaptatifs à l’exécution.  Pour plus d’informations, voir [Support de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs](/help/forms/using/supporting-new-language-localization.md).
 
-## Préparation du projet de formulaires à des fins de production  {#prepare-forms-project-for-production}
+## Préparation du projet de formulaires à des fins de production {#prepare-forms-project-for-production}
 
 ### Ajout du serveur de traitement de formulaires {#adding-forms-processing-server}
 
@@ -259,7 +259,7 @@ Vous pouvez configurer une instance supplémentaire du serveur AEM Forms situé 
 * **Traitement par lots** : tâches récurrentes ou planifiées par lots avec une charge importante. Par exemple, l’impression d’instructions, la génération de correspondances et l’utilisation de services de document comme PDF Generator, Output et Assembler.
 * **Le stockage des données d’identification personnelle** : enregistrer ses données d’identification personnelle sur le serveur de traitement. Cette fonction n’est pas nécessaire si vous utilisez déjà un fournisseur personnalisé de stockage pour les données d’identification personnelle.
 
-### Déplacement du projet vers un autre environnement  {#moving-project-to-another-environment}
+### Déplacement du projet vers un autre environnement {#moving-project-to-another-environment}
 
 Il est souvent nécessaire de déplacer vos projets AEM d’un environnement à un autre. Certaines étapes clés à ne pas oublier lors du déplacement sont les suivantes :
 
@@ -269,11 +269,11 @@ Il est souvent nécessaire de déplacer vos projets AEM d’un environnement à 
 * (*AEM Forms on JEE uniquement*) Déployez manuellement les LCA et les DSC sur le serveur de processus des formulaires.
 * Utilisez la fonctionnalité [Importation/exportation](/help/forms/using/import-export-forms-templates.md) pour déplacer des actifs vers le nouvel environnement. Vous pouvez également configurer l’agent de réplication et publier les actifs.
 
-### Configuration d’AEM  {#configuring-aem}
+### Configuration d’AEM {#configuring-aem}
 
 Certaines des meilleures pratiques de configuration d’AEM pour l’amélioration des performances générales sont les suivantes :
 
-* Activez la compression de la bibliothèque client HTML pour Javascript et CSS à partir de la console Felix. Voir [Clientlibs expliquées par exemple](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/).
+* Activez la compression de la bibliothèque client HTML pour Javascript et CSS à partir de la console Felix.
 * Mettez en cache toutes les bibliothèques clientes à l’adresse `/etc.clientlibs/fd` et toutes les bibliothèques clientes personnalisées supplémentaires sur AEM Dispatcher pour améliorer la réactivité et la sécurité de vos formulaires publiés. Pour plus d’informations, reportez-vous à la section [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 * Ne mettez pas en cache les chemins `/content/forms/af/` et `/content/dam/formsanddocuments/*`. pour plus d’informations sur la configuration de la mise en cache de formulaires adaptatifs, voir [Mise en cache de formulaires adaptatifs](/help/forms/using/configure-adaptive-forms-cache.md).

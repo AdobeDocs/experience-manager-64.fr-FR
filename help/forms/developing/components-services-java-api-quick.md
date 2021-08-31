@@ -1,8 +1,8 @@
 ---
 title: Composants et services Java APIQuick Start (SOAP)
-seo-title: Composants et services Java APIQuick Start (SOAP)
+seo-title: Components and Services Java APIQuick Start(SOAP)
 description: Utilisez l’API Java Components and Services Quick Start pour déployer un composant, définir le contexte d’exécution d’un service, désactiver la sécurité des services, démarrer un service, modifier les valeurs de configuration du service et supprimer des composants.
-seo-description: Utilisez l’API Java Components and Services Quick Start pour déployer un composant, définir le contexte d’exécution d’un service, désactiver la sécurité des services, démarrer un service, modifier les valeurs de configuration du service et supprimer des composants.
+seo-description: Use the Components and Services Java API Quick Start to deploy a component, set the execution context of a service, disable service security, start a service, modify service configuration values, and remove components.
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: 85c77bd4-e424-491f-8db2-73240732a6e4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 >[!NOTE]
 >
->Si vous disposez d’un composant personnalisé et que vous utilisez des protocoles SOAP ou EJB pour appeler des DSC sur le même serveur local, et que ces appels cessent de fonctionner après une mise à niveau, utilisez la stratégie d’appel in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY)). Utilisez la méthode d’appel DSC in-VM avec ServiceClientFactory par défaut et ne construisez pas ServiceClientFactory à l’aide des protocoles SOAP ou EJB.
+>Si vous disposez d’un composant personnalisé et que vous utilisez des protocoles SOAP ou EJB pour appeler des DSC sur le même serveur local, et que ces appels cessent de fonctionner après une mise à niveau, utilisez la stratégie d’appel in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)). Utilisez la méthode d’appel DSC in-VM avec ServiceClientFactory par défaut et ne construisez pas ServiceClientFactory à l’aide des protocoles SOAP ou EJB.
 
 ## Démarrage rapide (mode SOAP) : Déploiement d’un composant à l’aide de l’API Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 

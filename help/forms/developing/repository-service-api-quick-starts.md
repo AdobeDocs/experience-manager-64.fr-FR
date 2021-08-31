@@ -1,8 +1,8 @@
 ---
 title: Démarrages rapides de l’API Repository Service
-seo-title: Démarrages rapides de l’API Repository Service
+seo-title: Repository Service API Quick Starts
 description: Utilisez le service AEM Forms Repository pour créer un dossier, écrire une ressource, répertorier des ressources, lire une ressource, mettre à jour une ressource, rechercher des ressources, créer des relations entre les ressources, verrouiller une ressource, gérer les listes de contrôle d’accès et supprimer une ressource.
-seo-description: Utilisez le service AEM Forms Repository pour créer un dossier, écrire une ressource, répertorier des ressources, lire une ressource, mettre à jour une ressource, rechercher des ressources, créer des relations entre les ressources, verrouiller une ressource, gérer les listes de contrôle d’accès et supprimer une ressource.
+seo-description: Use the AEM Forms Repository service to create a folder, write  a resource, list resources, reading a resource, update a resource, search for resources, create relationships between resources, locking a resource, managing access control lists, and delete a resource.
 uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
 exl-id: 859a2b57-df90-4030-9061-c454d07cb753
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Le chemin d’accès à une ressource située dans le référentiel AEM Forms es
 
 >[!NOTE]
 >
->Applications/FormsApplication n’existe pas par défaut. Pour suivre les démarrages rapides, créez cette application à l’aide de Workbench. Pour plus d’informations sur la création d’une application à l’aide de Workbench, voir [Prise en main de la conception de processus](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html).
+>Applications/FormsApplication n’existe pas par défaut. Pour suivre les démarrages rapides, créez cette application à l’aide de Workbench. Pour plus d’informations sur la création d’une application à l’aide de Workbench, voir [Prise en main de la conception de processus](http://www.adobe.com/go/learn_aemforms_workbench_64_fr).
 
 ## Démarrage rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
@@ -395,7 +395,7 @@ L’exemple de code Java suivant répertorie les ressources qui se trouvent dans
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Lecture d’une ressource à l’aide de l’API Java {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Lecture d&#39;une ressource à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
 
 L’exemple de code Java suivant lit une ressource appelée *Loan.xdp* du référentiel. Le fichier XDP se trouve dans `/Applications/FormsApplication/1.0/FormsFolder/`. (Voir [Ressources de lecture](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 

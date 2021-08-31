@@ -1,8 +1,8 @@
 ---
 title: Importation et exportation des paramètres globaux
-seo-title: Importation et exportation des paramètres globaux
+seo-title: Importing and exporting global settings
 description: Vous pouvez importer et exporter des définitions de modèles de recherche et des options globales pour Workspace.
-seo-description: Vous pouvez importer et exporter des définitions de modèles de recherche et des options globales pour Workspace.
+seo-description: You can import and export search template definitions and global settings for Workspace.
 uuid: 8f1f210d-e850-4b2c-bb5a-942fa8299791
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: 9eabafbe-2193-4799-9bdd-c2be42ead0b9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1193'
 ht-degree: 75%
 
 ---
@@ -39,7 +39,7 @@ Lorsque vous avez exporté le fichier de paramètres globaux, vous pouvez modifi
 1. Dans le champ Importer une définition de modèle de recherche, cliquez sur le bouton Choisir fichier, puis sélectionnez le modèle de recherche. Seules les définitions de modèles de recherche initialement exportées à partir d’une instance de Workspace peuvent être importées.
 1. Cliquez sur Importer.
 
-## Exportation d’une définition de modèle de recherche  {#export-a-search-template-definition}
+## Exportation d’une définition de modèle de recherche {#export-a-search-template-definition}
 
 1. Dans la page Administration globale, sous Exporter la définition du modèle de recherche, cliquez sur Répertorier tout.
 1. Dans la liste des modèles de recherche, sélectionnez le modèle à exporter.
@@ -50,17 +50,17 @@ Lorsque vous avez exporté le fichier de paramètres globaux, vous pouvez modifi
 
 1. Cliquez sur Exporter, puis enregistrez le fichier sur l’ordinateur.
 
-## Importation des paramètres globaux  {#import-global-settings}
+## Importation des paramètres globaux {#import-global-settings}
 
 1. Dans la page Administration globale, sous Importation des paramètres globaux, cliquez sur le bouton Choisir fichier et sélectionnez le fichier de paramètres globaux. Le fichier de paramètres globaux doit être au format XML.
 1. Cliquez sur Importer.
 
-## Exportation des paramètres globaux  {#export-global-settings}
+## Exportation des paramètres globaux {#export-global-settings}
 
 1. Sur la page Administration globale, sous Exporter les paramètres globaux, cliquez sur Exporter.
 1. Enregistrez le fichier sur l’ordinateur.
 
-## Paramètres globaux de Workspace  {#workspace-global-settings}
+## Paramètres globaux de Workspace {#workspace-global-settings}
 
 Vous pouvez modifier le fichier de paramètres globaux; toutefois, les seuls paramètres que vous devriez modifier sont JChannelConnectionProperties, formViewOnly et specialRoutes.
 
@@ -70,7 +70,7 @@ Vous pouvez modifier le fichier de paramètres globaux; toutefois, les seuls par
 
 Le fichier de paramètres globaux de Workspace inclut les paramètres suivants :
 
-### Paramètres specialRoutes  {#specialroutes-settings}
+### Paramètres specialRoutes {#specialroutes-settings}
 
 Les paramètres *specialRoutes* spécifient les propriétés des itinéraires spéciaux, approbation et refus, dans Workspace. Dans certaines situations, les boutons de ces itinéraires s’affichent sur les cartes de tâches dans Workspace. L’utilisateur peut alors les sélectionner sans ouvrir le formulaire. Vous pouvez modifier le paramètre specialRoutes dans le fichier de paramètres globaux pour ajouter des noms personnalisés à approuver et à refuser, ou pour créer des itinéraires supplémentaires.
 
@@ -84,7 +84,7 @@ Les paramètres *specialRoutes* spécifient les propriétés des itinéraires sp
 
 **client_specialRoutes_names :** clés utilisées pour localiser la valeur de chaîne personnalisée à partir des fichiers de ressources. Chaque entrée de ce paramètre doit inclure les valeurs de noms et de style.
 
-### Paramètres JGroup  {#jgroup-settings}
+### Paramètres JGroup {#jgroup-settings}
 
 Ces paramètres s’affichent uniquement si vous avez effectué une mise à niveau depuis Adobe LiveCycle ES2.5 ou une version antérieure.
 
@@ -104,9 +104,7 @@ Les autres propriétés de ce paramètre doivent rester inchangées.
 
 **server_remoteevents_JGroupName :** nom du JGroup utilisé pour la communication d’événement distant. Pour éviter les conflits dans les grappes, cette valeur est générée de manière aléatoire. Cette valeur doit rester inchangée.
 
-Pour plus d’informations sur JGroups et Workspace, consultez l’article [JGroups and AEM forms Workspace - Explained](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html) (en anglais).
-
-### Paramètres formView  {#formview-settings}
+### Paramètres formView {#formview-settings}
 
 **client_formView_openFormInFullScreen :**  pour afficher tous les formulaires dans Workspace en mode plein écran, définissez cette option sur true. Par défaut, cette option est définie sur false, et les formulaires ne s’affichent pas en mode plein écran. Veuillez noter que le service Utilisateur comporte une option permettant d’ouvrir en mode plein écran le document associé à une tâche. Cela vous permet de contrôler l’affichage sur une base de processus individuel.
 
@@ -126,7 +124,7 @@ Pour plus d’informations sur JGroups et Workspace, consultez l’article [JGro
 
 **client_pollingInterval :**  définit l’intervalle d’interrogation (en secondes) utilisé sur l’espace de travail Flex (obsolète pour AEM forms on JEE) pour détecter les tâches nouvelles et modifiées. La valeur par défaut est de 3 secondes. Elle ne fonctionne pas pour l’espace de travail AEM Forms
 
-**client_systemContext_name :** spécifiez un nom personnalisé (par exemple Citoyen) à afficher dans le champ Ajouté par (dans l’onglet Pièces jointes) pour les pièces jointes d’une tâche dans AEM Forms Workspace.
+**client_systemContext_name :** spécifiez un nom personnalisé (par exemple, Citoyen) à afficher dans le champ Ajouté par (dans l’onglet Pièces jointes) pour les pièces jointes d’une tâche dans AEM Forms Workspace.
 
 Pour définir le nom personnalisé :
 

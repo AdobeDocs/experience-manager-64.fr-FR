@@ -1,8 +1,8 @@
 ---
 title: Rendu de Forms par valeur
-seo-title: Rendu de Forms par valeur
+seo-title: Rendering Forms By Value
 description: Utilisez l’API Forms (Java) pour effectuer le rendu d’un formulaire par valeur à l’aide de l’API Java et de l’API Web Service.
-seo-description: Utilisez l’API Forms (Java) pour effectuer le rendu d’un formulaire par valeur à l’aide de l’API Java et de l’API Web Service.
+seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
 exl-id: 50c34781-45e3-4255-a997-44f694527c92
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1821'
 ht-degree: 3%
 
 ---
@@ -77,7 +77,7 @@ Pour effectuer le rendu d’un formulaire par valeur, transmettez une instance `
 
 >[!NOTE]
 >
->Si vous souhaitez afficher des données dans le formulaire, les données doivent être spécifiées dans l’élément `xfa:datasets` . Pour plus d’informations sur l’architecture XFA, voir [https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html).
+>Si vous souhaitez afficher des données dans le formulaire, les données doivent être spécifiées dans l’élément `xfa:datasets` . Pour plus d’informations sur l’architecture XFA, voir [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf).
 
 **Écrire le flux de données de formulaire dans le navigateur Web client**
 
@@ -150,7 +150,7 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (Java) :
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Rendu d’un formulaire par valeur à l’aide de l’API de service Web {#render-a-form-by-value-using-the-web-service-api}
+## Rendu d’un formulaire par valeur à l’aide de l’API du service Web {#render-a-form-by-value-using-the-web-service-api}
 
 Rendre un formulaire par valeur à l’aide de l’API Forms (service Web) :
 

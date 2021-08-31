@@ -1,8 +1,8 @@
 ---
 title: Conversion entre les formats de fichier et PDF
-seo-title: Conversion entre les formats de fichier et PDF
+seo-title: Converting Between File Formatsand PDF
 description: Utilisez le service Generate PDF pour convertir des formats de fichiers natifs en PDF. Le service Generate PDF convertit également les fichiers PDF dans d’autres formats et optimise la taille des documents PDF.
-seo-description: Utilisez le service Generate PDF pour convertir des formats de fichiers natifs en PDF. Le service Generate PDF convertit également les fichiers PDF dans d’autres formats et optimise la taille des documents PDF.
+seo-description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
 uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 79091a75-2669-453f-9560-e58bfffa3487
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7932'
+source-wordcount: '7872'
 ht-degree: 4%
 
 ---
 
-# Conversion entre les formats de fichier et PDF {#converting-between-file-formatsand-pdf}
+# Conversion entre les formats de fichier et les fichiers PDF {#converting-between-file-formatsand-pdf}
 
 **À propos du service Generate PDF**
 
@@ -195,7 +195,7 @@ Convertir un document Microsoft Word en document PDF à l’aide de l’API Gene
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Convertir des documents Word en documents PDF à l’aide de l’API de service Web {#convert-word-documents-to-pdf-documents-using-the-web-service-api}
+### Convertir des documents Word en documents PDF à l’aide de l’API du service Web {#convert-word-documents-to-pdf-documents-using-the-web-service-api}
 
 Convertir un document Microsoft Word en document PDF à l’aide de l’API Generate PDF (service Web) :
 
@@ -352,7 +352,7 @@ Convertir un document HTML en document PDF à l’aide de l’API Generate PDF (
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Convertir du contenu HTML en document PDF à l’aide de l’API de service Web {#convert-html-content-to-a-pdf-document-using-the-web-service-api}
+### Convertir du contenu HTML en document PDF à l’aide de l’API du service Web {#convert-html-content-to-a-pdf-document-using-the-web-service-api}
 
 Convertir du contenu HTML en document PDF à l’aide de l’API Generate PDF (service Web) :
 
@@ -638,7 +638,7 @@ Ce tableau répertorie le type d’informations utilisées pour imprimer des for
  </tbody> 
 </table>
 
-### A propos du script et des fichiers XML de boîte de dialogue {#about-the-script-and-dialog-xml-files}
+### A propos des fichiers XML de script et de boîte de dialogue {#about-the-script-and-dialog-xml-files}
 
 Les fichiers XML de script demandent au service Generate PDF de parcourir les boîtes de dialogue de l’application de la même manière qu’un utilisateur navigue dans les boîtes de dialogue de l’application. Les fichiers XML de script demandent également au service Generate PDF de répondre aux boîtes de dialogue en exécutant des actions telles que appuyer sur des boutons, sélectionner ou désélectionner des cases à cocher ou sélectionner des options de menu.
 
@@ -733,7 +733,7 @@ Après avoir ajouté ces fichiers XML au fichier adobe-appmondata.jar, vous deve
 1. Ajoutez la boîte de dialogue et les fichiers XML de script au fichier appmondata.jar ou modifiez les fichiers XML existants dans ce fichier. (Voir [Création ou modification d’un fichier XML de script pour une application native](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)et [Création ou modification d’un fichier XML de boîte de dialogue supplémentaire pour une application native](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).)
 1. À l’aide d’un outil tel que WinZip ou WinRAR, ouvrez adobe-generatepdf-dsc.jar > adobe-appmondata.jar.
 1. Ajoutez la boîte de dialogue et les fichiers XML de script au fichier appmondata.jar ou modifiez les fichiers XML existants dans ce fichier. (Voir [Création ou modification d’un fichier XML de script pour une application native](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)et [Création ou modification d’un fichier XML de boîte de dialogue supplémentaire pour une application native](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) Après avoir ajouté les fichiers XML au fichier adobe-appmondata.jar, placez le nouveau fichier adobe-appmondata.jar dans le fichier adobe-generatepdf-dsc.jar .
-1. Si vous avez ajouté la prise en charge d’un autre format de fichier natif, créez une variable d’environnement système qui fournit le chemin d’accès à l’application (voir [Création d’une variable d’environnement pour localiser l’application native](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application)).
+1. Si vous avez ajouté la prise en charge d’un autre format de fichier natif, créez une variable d’environnement système qui fournit le chemin d’accès de l’application (voir [Création d’une variable d’environnement pour localiser l’application native](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application)).
 
 **Pour redéployer le composant GeneratePDF**
 
@@ -771,7 +771,7 @@ Utilisez Microsoft Spy++ pour obtenir les identités des propriétés des élém
 
 #### Utilisation d’expressions régulières dans les attributs de légende {#using-regular-expressions-in-caption-attributes}
 
-Vous pouvez utiliser des expressions régulières dans les spécifications de légende. Le service Generate PDF utilise la classe `java.util.regex.Matcher` pour prendre en charge les expressions régulières. Cet utilitaire prend en charge les expressions régulières décrites dans `java.util.regex.Pattern`. (Accédez au site web de Java à l’adresse [https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html](https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html).)
+Vous pouvez utiliser des expressions régulières dans les spécifications de légende. Le service Generate PDF utilise la classe `java.util.regex.Matcher` pour prendre en charge les expressions régulières. Cet utilitaire prend en charge les expressions régulières décrites dans `java.util.regex.Pattern`.
 
 **Expression régulière prenant en charge le nom de fichier précédé du Bloc-notes dans la bannière du Bloc-notes**
 
@@ -793,7 +793,7 @@ Vous pouvez utiliser des expressions régulières dans les spécifications de l�
  </windowList>
 ```
 
-#### Commande des éléments windowList {#ordering-the-window-and-windowlist-elements}
+#### Commande des éléments windowList et window {#ordering-the-window-and-windowlist-elements}
 
 Vous devez classer les éléments `window` et `windowList` comme suit :
 

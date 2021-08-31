@@ -1,22 +1,22 @@
 ---
 title: 'Notes de mise à jour d’AEM 6.4, Pack de services '
-seo-title: 'Notes de mise à jour d’AEM 6.4, Pack de services '
+seo-title: AEM 6.4 Service Pack Release Notes
 description: Notes de mise à jour spécifiques aux Service Packs Adobe Experience Manager 6.4.
-seo-description: Notes de mise à jour spécifiques aux Service Packs Adobe Experience Manager 6.4.
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Service Packs.
 uuid: 49a710a8-7cd5-47de-9a96-7af7f3c00dfc
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '21579'
+source-wordcount: '21557'
 ht-degree: 27%
 
 ---
 
-# Notes de mise à jour d’AEM 6.4, Pack de services {#aem-service-pack-release-notes}
+# Notes de mise à jour d’AEM 6.4, Pack de services  {#aem-service-pack-release-notes}
 
 ## Informations sur la version {#release-information}
 
@@ -24,7 +24,7 @@ ht-degree: 27%
 |---|---|
 | Version | 6.4.8.0 |
 | Type | Version du Service Pack |
-| Date | 5 mars 2020 |
+| Date  | 5 mars 2020 |
 | URL de téléchargement | AEM 6.4.8.0 sur [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Fonctionnalités présentes dans AEM 6.4.8.0 {#what-s-included-in-aem}
@@ -68,7 +68,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Lorsque vous modifiez un lien hypertexte dans l’éditeur de texte enrichi (RTE), le nouveau chemin sélectionné n’est pas enregistré (NPR-31659).
 * Lorsque vous supprimez un composant multichamp et annulez la suppression, le composant est restauré, mais les données ne sont pas restaurées (NPR-31617).
 
-### Assets {#assets}
+### Ressources {#assets}
 
 * Un dossier sans nom est créé dans Dynamic Media Classic lors du déplacement d’une ressource d’un dossier vers un autre en Experience Manager avec la configuration Dynamic Media Classic (NPR-32440).
 
@@ -138,7 +138,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * L’annulation de la publication du schéma de métadonnées dans AEM Assets renseigne un message d’erreur bien que le schéma soit supprimé du serveur principal (CQ-4286871).
 
-### Interface utilisateur de base {#foundations-ui-6480}
+### Interface utilisateur de Foundation {#foundations-ui-6480}
 
 * Des caractères non valides s’affichent dans l’URL ajoutée à un composant Bouton (NPR-32684).
 
@@ -290,7 +290,7 @@ Si vous utilisez le package `com.day.cq.dam.handler.standard.msoffice` dans votr
 
 * Mise à jour de l’administration des événements distribués Sling vers la version 1.1.4 afin d’améliorer la qualité des journaux dans un environnement organisé en grappes (NPR-29256).
 
-##### Interface utilisateur de base {#foundation-6470}
+##### Interface utilisateur de Foundation {#foundation-6470}
 
 * Le fait de faire défiler jusqu’à la fin de la page de résultats avec un grand nombre de résultats de recherche provoque le blocage du navigateur (NPR-31332).
 
@@ -308,7 +308,7 @@ Si vous utilisez le package `com.day.cq.dam.handler.standard.msoffice` dans votr
 
 * Le chemin d’accès au fragment d’expérience de destination n’est pas mis à jour lors de la promotion d’une page de lancement (NPR-30830).
 
-##### Communities {#communities-6470}
+##### Communautés {#communities-6470}
 
 * La fonctionnalité de messagerie électronique ne fonctionne pas correctement dans certains cas, même si la messagerie électronique est activée dans les paramètres de notification, le système renvoie une exception dans NotificationsActivityStreamProvider (NPR-31521).
 * Impossible de créer de nouveaux membres, un écran vide s’affiche sur l’écran Créer un membre dans AEM instance d’auteur (NPR-30951).
@@ -316,7 +316,7 @@ Si vous utilisez le package `com.day.cq.dam.handler.standard.msoffice` dans votr
 * L’administrateur d’un groupe restreint n’est pas en mesure d’afficher la carte de groupe. Il ne peut pas effectuer d’opérations de lien rapide (groupes Modifier/Publier/Supprimer) dans AEM instance d’auteur (NPR-30810).
 * Les informations des groupes/groupes de membres ne sont pas visibles lors de la création d’un site dans AEM instance d’auteur (NPR-28840).
 
-##### Forms {#forms-6470}
+##### Formulaires {#forms-6470}
 
 >[!NOTE]
 >
@@ -358,7 +358,7 @@ Si vous utilisez le package `com.day.cq.dam.handler.standard.msoffice` dans votr
 
 * Impossible de télécharger le fichier de paramètres Adobe PDF téléchargé à l’aide de l’interface utilisateur d’administration (NPR-31273).
 
-#### AEM 6.4.6.0 {#experience-manager-6460}
+#### AEM 6.4.6.0 {#experience-manager-6460}
 
 AEM 6.4.6.0 est une mise à jour importante qui comporte des améliorations et correctifs pour les performances, la stabilité, la sécurité et les bogues signalés par les clients depuis la mise à disposition d’AEM 6.4 en **avril 2018.**
 
@@ -510,7 +510,7 @@ Voici quelques-uns des points forts d’AEM 6.4.6.0 :
 * Autorisation refusée lors de la tentative d’utilisation du service principal HTML vers PDF via la bibliothèque &quot;phantomjs&quot;. NPR-30456 : correctif pour CQ-4258077
 * maxReuseCount pour le service HTML vers PDF n’est pas affiché avec la console de gestion JBoss. NPR-30303, NPR-30135 : correctif pour CQ-4273763
 
-#### AEM 6.4.5.0 {#experience-manager-6450}
+#### AEM 6.4.5.0 {#experience-manager-6450}
 
 AEM 6.4.5.0 est une mise à jour importante qui comporte des améliorations et correctifs pour les performances, la stabilité, la sécurité et les bogues signalés par les clients depuis la mise à disposition d’AEM 6.4 en **avril 2018.**
 
@@ -747,7 +747,7 @@ Liste des packages de contenu inclus dans AEM 6.4.5.0
 
 [Obtenir le fichier](assets/6.4.5.0_OSGI.txt)
 
-#### AEM 6.4.4.0 {#experience-manager-6440}
+#### AEM 6.4.4.0 {#experience-manager-6440}
 
 AEM 6.4.4.0 est une mise à jour importante qui comporte des améliorations et correctifs pour les performances, la stabilité, la sécurité et les bogues signalés par les clients depuis la mise à disposition d’AEM 6.4 en **avril 2018.**
 
@@ -1026,7 +1026,7 @@ Liste des packages de contenu inclus dans AEM 6.4.4.0
 
 [Obtenir le fichier](assets/osgi_package_6_440.txt)
 
-#### AEM 6.4.3.0 {#experience-manager-6430}
+#### AEM 6.4.3.0 {#experience-manager-6430}
 
 AEM 6.4.3.0 est une mise à jour importante qui comporte des améliorations et correctifs pour les performances, la stabilité, la sécurité et les bogues signalés par les clients depuis le lancement d’AEM 6.4 en avril 2018.
 
@@ -1042,7 +1042,7 @@ Voici quelques-uns des points forts d’AEM 6.4.3.0 :
 * Améliorations de la gestion des données de formulaire.
 * Amélioration de la gestion du nommage des éléments dans un champ multiple.
 * Amélioration de la gestion des éléments d’espace réservé (mode Carte et mode Liste) lors de la sélection.
-* Ajout de la prise en charge de l’authentification IMS et du Admin Console Adobe pour Managed Services.
+* Ajout de la prise en charge de l’authentification Adobe IMS et du Admin Console pour Managed Services.
 
 **Ressources**
 
@@ -1281,7 +1281,7 @@ Liste des packages de contenu inclus dans AEM 6.4.3.0
 
 [Obtenir le fichier](assets/6.4.3.0_OSGI.txt)
 
-#### AEM 6.4.2.0 {#experience-manager-6420}
+#### AEM 6.4.2.0 {#experience-manager-6420}
 
 AEM 6.4.2.0 est une mise à jour importante qui comporte des améliorations et correctifs pour les performances, la stabilité, la sécurité et les bogues signalés par les clients depuis la mise à disposition d’AEM 6.4 en **avril 2018.**
 Il est également cumulatif, ce qui signifie que la version 6.4.2.0 inclut tous les Service Packs AEM version 6.4 avant sa publication.
@@ -1680,7 +1680,7 @@ Liste des packages de contenu inclus dans AEM 6.4.2.0
 
 [Obtenir le fichier](assets/6_4_2_0content-package-list.txt)
 
-#### AEM 6.4.1.0 {#experience-manager-6410}
+#### AEM 6.4.1.0 {#experience-manager-6410}
 
 AEM 6.4.1.0 est une mise à jour importante qui comporte des améliorations et correctifs pour les performances, la stabilité, la sécurité et les bogues signalés par les clients depuis le lancement d’AEM 6.4 en avril 2018.
 
@@ -1757,10 +1757,10 @@ AEM 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici les principales caractér
 * (Personnalisation) Les icônes sont déformées lors du passage en mode Carte. NPR-23373, NPR-23374 : correctif pour CQ-4240018, CQ-4240019
 * (Personnalisation) Audience Console n’affiche pas les types nt:folder. NPR-23375 : correctif pour CQ-4242293
 * Lorsqu’un composant est ciblé sur une instance de publication, le scintillement apparaît pour illustrer l’expérience par défaut avant l’expérience ciblée. NPR-23415 : correctif pour CQ-4242038
-* (Adobe IMS Console) La configuration du service OSGi AccessTokenProvider réapparaît après suppression. NPR-23520 : correctif pour CQ-4208250
+* (Console Adobe IMS) La configuration du service OSGi AccessTokenProvider réapparaît après suppression. NPR-23520 : correctif pour CQ-4208250
 * La réplication de référence de configuration échoue avec la structure de dossiers intermédiaire. NPR-23485 : correctif pour CQ-4242751
 * (Personnalisation) clientlib bloqué par le servlet proxy. NPR-23521 : correctif pour CQ-4240995
-* (Adobe de la console IMS) Les solutions cloud enregistrées ne sont pas récupérées dans l’assistant de configuration. NPR-23977 : correctif pour CQ-4244549
+* (Console Adobe IMS) Les solutions cloud enregistrées ne sont pas récupérées dans l’assistant de configuration. NPR-23977 : correctif pour CQ-4244549
 * Boucle infinie lors du chargement de contenu ciblé sur des pages sans extension HTML. NPR-23522 : correctif pour CQ-4223600
 * L’activation échoue pour une page avec les références de configuration de Dynamic Tag Management héritées. NPR-23485 : correctif pour CQ-4242751
 
@@ -2115,7 +2115,7 @@ Liste des packages de contenu inclus dans AEM 6.4.1.0
 >
 >Adobe recommande de ne pas supprimer ni désinstaller le package AEM 6.4.8.0.
 
-### Installez le Service Pack via le gestionnaire de modules {#install-the-service-pack-via-package-share}
+### Installation du Service Pack via Package Manager {#install-the-service-pack-via-package-share}
 
 Accomplissez les étapes suivantes pour installer le Service Pack sur une instance 6.4 existante :
 
@@ -2152,7 +2152,7 @@ Pour déterminer la plateforme certifiée pour l’exécution avec cette version
 >[!NOTE]
 >Une fois l’installation du package réussie, un message d’information s’affiche indiquant que le package content a été installé avec succès, par exemple **&quot;Package de contenu AEM-6.4-Service-Pack-7 installé avec succès.&quot;**
 
-### Mettre à jour les visionneuses Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
+### Mise à jour des visionneuses Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
 
 <p id="Dynamic">AEM 6.4.8.0 contient une nouvelle version des visionneuses Dynamic Media (5.10.1) qui permet de rechercher des noms en double sur la page Paramètre d’image prédéfini. Il est conseillé aux clients Dynamic Media d’exécuter la commande suivante pour mettre à jour les paramètres prédéfinis de la visionneuse prêts à l’emploi.
 
@@ -2170,7 +2170,7 @@ qui copiera les nouveaux paramètres prédéfinis de visionneuse à l’emplacem
 
 >[!NOTE]
 >
->AEM 6.4.8.0 inclut une nouvelle version du [package de compatibilité d’AEM Forms](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/AEM-FORMS-6.4.7.0-COMPAT). Si vous utilisez une ancienne version du package de compatibilité AEM Forms et que vous mettez à jour vers AEM 6.4.8.0, installez la dernière version du package de compatibilité AEM Forms après l’installation du package de module complémentaire Forms.
+>AEM 6.4.8.0 inclut une nouvelle version du [package de compatibilité d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Si vous utilisez une ancienne version du package de compatibilité AEM Forms et que vous mettez à jour vers AEM 6.4.8.0, installez la dernière version du package de compatibilité AEM Forms après l’installation du package de module complémentaire Forms.
 
 1. Vérifiez que vous avez installé le Service Pack AEM.
 1. Téléchargez le module complémentaire Forms correspondant répertorié dans les [versions AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) de votre système d’exploitation.

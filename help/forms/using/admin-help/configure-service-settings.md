@@ -1,8 +1,8 @@
 ---
 title: Configuration des paramètres du service
-seo-title: Configuration des paramètres du service
+seo-title: Configure service settings
 description: Découvrez comment configurer les paramètres du service.
-seo-description: Découvrez comment configurer les paramètres du service.
+seo-description: Learn how to configure service settings.
 uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: be1f8c59-b5d8-4d87-af7b-1034d73e7e83
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10710'
+source-wordcount: '10683'
 ht-degree: 63%
 
 ---
@@ -44,7 +44,7 @@ Workbench permet d’enregistrer des instances de processus au moment de l’ex�
 
 **MaxNumberOfRecordingEntries :** nombre maximal d’entrées de données pouvant être stockées pour chaque enregistrement. Les entrées de données sont des informations se rapportant aux opérations du processus. Plusieurs entrées sont conservées pour chaque exécution d’une opération, par exemple si l’opération a démarré, si elle a été menée à bien et si le chemin menant à l’opération est complet. Cette propriété est utile lorsque des processus peuvent inclure un grand nombre d’exécutions d’opérations, par exemple en cas de boucle sans fin. La valeur par défaut est 50.
 
-## Paramètres du service Barcoded Forms  {#barcoded-forms-service-settings}
+## Paramètres du service Barcoded Forms {#barcoded-forms-service-settings}
 
 Le service Barcoded Forms `(BarcodedFormsService)` extrait les données de code-barres des images numérisées. Ce service reçoit un formulaire à code-barres (TIFF ou PDF) en entrée, puis extrait la représentation machine des données codées par le code-barres.
 
@@ -154,11 +154,11 @@ Vous pouvez créer des paramètres dans l’interface utilisateur de PDF Generat
 
 **Taille du pool :** taille initiale du pool. Lors du déploiement du service Distiller, cette valeur permet de déterminer le nombre d’instances d’implémentation du service à créer et à affecter au pool libre en attente de demandes d’appel. Le conteneur du service peut alors répondre immédiatement aux demandes d’appel sans initialisation préalable d’une instance de service.
 
-## Paramètres du service Document Management  {#document-management-service-settings}
+## Paramètres du service Document Management {#document-management-service-settings}
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Pour savoir comment configurer Content Services (obsolète), consultez [Administration de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 Le service Document Management (`DocumentManagementService`) permet aux processus d’utiliser la fonctionnalité de gestion de contenu fournie par Content Services (obsolète). Les opérations de Document Management fournissent des tâches de bases requises pour gérer les espaces et le contenu dans le système de gestion de contenu. Voici quelques exemple de tâches de ce type : copier, supprimer, déplacer, récupérer et stocker du contenu, créer des espaces et des associations, ainsi qu’obtenir et définir des attributs de contenu.
 
@@ -168,7 +168,7 @@ Les paramètres ci-dessous sont disponibles pour le service Document Management.
 
 **Port HTTP :** port utilisé pour accéder à Content Services (obsolète). La valeur par défaut est 8080.
 
-## Paramètres du service Email  {#email-service-settings}
+## Paramètres du service Email {#email-service-settings}
 
 Le service Email est généralement utilisé pour diffuser du contenu ou fournir des informations d’état dans le cadre d’un processus automatisé. `EmailService` permet aux processus de recevoir des courriers électroniques d’un serveur POP3 ou IMAP et d’en envoyer à un serveur SMTP.
 
@@ -284,7 +284,7 @@ effectuer une nouvelle tentative de conversion PDF sans considérer si le délai
 
 effectuer une nouvelle tentative de conversion PDF si la première tentative de conversion a duré moins de temps que le délai spécifié. Par exemple, si le délai spécifié est de 270 s et que la première tentative a duré 200 s, PDF Generator effectue une nouvelle tentative. Si la première tentative a duré 270 s, aucune nouvelle tentative ne sera effectuée.
 
-## Paramètres du service Guides ES4 Utilities  {#guides-es4-utilities-service-settings}
+## Paramètres du service Guides ES4 Utilities {#guides-es4-utilities-service-settings}
 
 Lorsque vous créez un Guide, certaines ressources, telles que sa définition, sont intégrées dans ce Guide. Les ressources peuvent également se présenter sous la forme de références aux éléments d’application stockés localement ou sur le serveur AEM forms. Le Guide ne contient aucune donnée, et les valeurs des entrées et de l’emplacement d’envoi ne sont pas adaptées à tous les environnements externes.
 
@@ -325,7 +325,7 @@ Les valeurs par défaut du service Guide Utilities prennent en charge la plupart
 
 **macKeySeed :**  valeur de départ pour la génération de l’URL sécurisée. Lorsque cette valeur est une option, la clé n’est jamais actualisée. En définissant la même valeur de base sur différents serveurs, ces serveurs génèrent des URL sécurisées compatibles. Cela peut s’avérer utile lorsque plusieurs serveurs Forms sont en cours d’utilisation en même temps qu’un programme d’équilibrage de charge. Entrez une séquence aléatoire de caractères et de nombres en tant que valeur de base.
 
-### Utilisation des guides dans une grappe de serveurs  {#using-guides-in-a-server-cluster}
+### Utilisation des guides dans une grappe de serveurs {#using-guides-in-a-server-cluster}
 
 Le rendu d’un guide dans une grappe de serveurs qui n’utilise pas l’affinité de session échoue et génère une exception NullPointerException. Les demandes de guide exploitent des URL sécurisées qui, par défaut, sont uniques pour le serveur sur lequel elles sont générées. Dans une grappe utilisant l’affinité de session, quand une demande a atteint un nœud de la grappe, toutes les demandes suivantes de cette session ou de l’utilisateur sont acheminées exclusivement à ce serveur. Dans le cas d’une grappe n’utilisant pas l’affinité de session, les demandes suivantes peuvent atteindre n’importe quel serveur de la grappe. Si le serveur atteint par les demandes n’est pas le serveur d’origine, ces dernières ne parviennent pas à résoudre l’URL sécurisée.
 
@@ -337,7 +337,7 @@ Modifiez la valeur macKeySeed lorsqu’il est nécessaire d’actualiser les URL
 
 Vous devez redémarrer la grappe, car macSeedValue est en lecture seule au démarrage du système. Tous les nœuds nécessitent un redémarrage afin de lire la valeur, car ils utilisent cette dernière indépendamment afin d’initialiser leurs nombres aléatoires internes avec la valeur de départ.
 
-## Paramètres du service JDBC  {#jdbc-service-settings}
+## Paramètres du service JDBC {#jdbc-service-settings}
 
 Le service JDBC (`JdbcService`) permet aux processus d’interagir avec des bases de données.
 
@@ -345,7 +345,7 @@ Le paramètre ci-dessous est disponible pour le service JDBC.
 
 **datasourceName :**  valeur string qui représente le nom JNDI de la source de données à utiliser pour la connexion au serveur de base de données. La source de données doit être définie sur le serveur d’applications qui héberge le serveur Forms. La valeur par défaut correspond au nom JNDI de la source de données de la base de données AEM forms.
 
-## Paramètres du service JMS  {#jms-service-settings}
+## Paramètres du service JMS {#jms-service-settings}
 
 Le service  (`JMS`JMS) permet l’interaction avec les fournisseurs JMS (Java Messaging System) qui implémentent la messagerie point à point et la messagerie de type publish-subscribe.
 
@@ -505,7 +505,7 @@ La valeur par défaut de Secondes d’analyse de nettoyage PDFG est `43200` (12�
 
 **Paramètres régionaux par défaut :** permet de remplacer les paramètres régionaux par défaut (pays + langue) du serveur sur lequel le service Generate PDF est déployé. Si ce paramètre n’est pas spécifié, les paramètres régionaux par défaut sont alors déterminés à partir du système d’exploitation dans lequel le service est déployé. Ce paramètre contrôle la langue dans laquelle les messages d’erreur sont renvoyés aux API.
 
-## Paramètres du service Forms Workflow Data Services  {#forms-workflow-data-services-service-settings}
+## Paramètres du service Forms Workflow Data Services {#forms-workflow-data-services-service-settings}
 
 Les services suivants forment une extension de Data Services et exposent les assembleurs utilisés par Workspace pour communiquer avec le serveur. Ne modifiez pas les options de configuration pour ces services à moins que vous n’y soyez invité par l’assistance technique d’Adobe. Ces services ne sont pas censés être directement accessibles :
 
@@ -523,7 +523,7 @@ Les paramètres ci-dessous sont disponibles pour le service Remoting.
 
 **Autoriser la sérialisation des classes non sérialisables :**  la plupart des points de fin d’AEM forms autorisent uniquement l’utilisation de classes sérialisables pour l’appel. Dans les versions antérieures, les points de fin Remoting autorisaient l’utilisation des classes non sérialisables pour les appels depuis les clients Flex. Pour éviter toute vulnérabilité de sécurité décrite dans APS11-15, ceci a été modifié. Si vous souhaitez continuer à utiliser des classes non-sérialisables avec le point de fin Flex Remoting, cochez cette case.
 
-## Paramètres du service Repository  {#repository-service-settings}
+## Paramètres du service Repository {#repository-service-settings}
 
 Le service Repository (`RepositoryService`) fournit du stockage de ressources et des services de gestion à AEM forms. Lorsque des développeurs créent une application, ils peuvent déployer les actifs dans le référentiel plutôt que dans un système de fichiers. Les actifs peuvent être constitués de formulaires XML, de formulaires PDF (y compris de formulaires Acrobat), de fragments de formulaire, d’images, de profils, de stratégies, de fichiers SWF, DDX et WSDL, de schémas XML et de données de test.
 
@@ -607,9 +607,9 @@ Les paramètres ci-dessous sont disponibles pour le service Signature.
 
 **Extension de contraintes de base requise dans les certificats d’autorité de certification :** indique si l’extension de contraintes de base de l’autorité de certification (CA) doit être présente pour les certificats d’autorité de certification. Certains des tout premiers certificats racine allemands certifiés (7 et antérieurs) ne sont pas conformes à la RFC 3280 et ne contiennent pas l’extension de contraintes de base. Si le certificat EE d’un utilisateur est associé à une telle racine, désactivez cette case à cocher. La valeur par défaut est true.
 
-**Exiger une signature de certificat valide lors de la création de chaînes :** indique si le créateur de chaînes nécessite des signatures valides sur les certificats utilisés pour créer des chaînes. Lorsque cette case est cochée, le générateur de chaînes ne crée pas de chaînes comportant des signatures RSA non valides dans les certificats. Soit la chaîne CA > ICA > EE où la signature de l’AC (Autorité de certification) sur une ICA est incorrecte. Si ce paramètre est true, la création de chaînes s’arrête au niveau de l’ICA, et l’AC n’est pas incluse dans la chaîne. Si ce paramètre est false, la chaîne complète des trois certificats est générée. Ce paramètre n’a aucune incidence sur les signatures DSA. Valeur par défaut : false.
+**Exiger une signature de certificat valide lors de la création de chaînes :** indique si le créateur de chaînes nécessite des signatures valides sur les certificats utilisés pour créer des chaînes. Lorsque cette case est cochée, le générateur de chaînes ne crée pas de chaînes comportant des signatures RSA non valides dans les certificats. Soit la chaîne CA > ICA > EE où la signature de l’AC (Autorité de certification) sur une ICA est incorrecte. Si ce paramètre est true, la création de chaînes s’arrête au niveau de l’ICA, et l’AC n’est pas incluse dans la chaîne. Si ce paramètre est false, la chaîne complète des trois certificats est générée. Ce paramètre n’a aucune incidence sur les signatures DSA. La valeur par défaut est false. 
 
-### Options du fournisseur d’horodatage  {#timestamp-provider-options}
+### Options du fournisseur d’horodatage {#timestamp-provider-options}
 
 **URL du serveur TSP :** URL du fournisseur d’horodatage par défaut. Attribut utilisé uniquement si une valeur valide est indiquée. Pas de valeur par défaut.
 
@@ -629,7 +629,7 @@ Les paramètres ci-dessous sont disponibles pour le service Signature.
 
 **Ignorer l’extension du serveur de tampons temporels** : sélectionnez **Ignorer l’extension du serveur de tampons temporels** afin d’empêcher le serveur AEM Forms de contacter le serveur de tampons temporels spécifié. La sélection de cette option permet d’éviter les échecs de processus qui se produisent en raison du délai de connexion entre les serveurs AEM Forms et de tampons temporels.
 
-### Options de listes de révocation des certificats  {#certificate-revocation-list-options}
+### Options de listes de révocation des certificats {#certificate-revocation-list-options}
 
 **Consult Local URI First :** indique si l’emplacement de la CRL fourni dans l’URI local ou la recherche CRL doit recevoir la préférence de tout emplacement spécifié dans un certificat à des fins de vérification de révocation. La valeur par défaut est false. 
 
@@ -643,9 +643,9 @@ Les paramètres ci-dessous sont disponibles pour le service Signature.
 
 **Ignorer les dates de validité :** indique s’il faut ignorer les heures thisUpdate et nextUpdate de la réponse, ce qui empêche ces heures d’avoir un effet négatif sur la validité de la réponse. La valeur par défaut est false. 
 
-**Require AKI extension in CRL :** indique si l’extension de l’identifiant de clé d’autorité doit être incluse dans une CRL. Valeur par défaut : false.
+**Require AKI extension in CRL :** indique si l’extension de l’identifiant de clé d’autorité doit être incluse dans une CRL. La valeur par défaut est false. 
 
-### Options du protocole OCSP (Online Certificate Status Protocol)  {#online-certificate-status-protocol-options}
+### Options du protocole OCSP (Online Certificate Status Protocol) {#online-certificate-status-protocol-options}
 
 **URL du serveur OCSP :** URL du serveur OCSP par défaut. Le fait que le serveur OCSP spécifié via cette URL soit utilisé ou non dépend du paramètre Option URL à consulter. Pas de valeur par défaut.
 
@@ -669,17 +669,17 @@ Les paramètres ci-dessous sont disponibles pour le service Signature.
 
 **Allow OCSPNoCheck extension :** indique si l’extension OCSPNoCheck est autorisée dans le certificat de signature de la réponse. La valeur par défaut est true.
 
-**Require OCSP ISIS-MTT CertHash Extension :** indique si une extension de hachage de clé publique de certificat doit être incluse dans les réponses OCSP. Valeur par défaut : false.
+**Require OCSP ISIS-MTT CertHash Extension :** indique si une extension de hachage de clé publique de certificat doit être incluse dans les réponses OCSP. La valeur par défaut est false. 
 
-### Options de gestion des erreurs pour le débogage  {#error-handling-options-for-debugging}
+### Options de gestion des erreurs pour le débogage {#error-handling-options-for-debugging}
 
 **Purger le cache de certificats lors de l’appel API suivant :** indique s’il faut purger le cache de certificats lors de l’appel de l’opération de service Signature suivante. Une fois l’opération appelée, cette option reprend la valeur false. La valeur par défaut est false. 
 
 **Purger le cache de CRL lors de l’appel API suivant :** indique s’il faut purger le cache de CRL lors de l’appel de l’opération du service Signature suivante. Une fois l’opération appelée, cette option reprend la valeur false. La valeur par défaut est false. 
 
-**Purger le cache OCSP lors de l’appel API suivant :** indique s’il faut purger le cache OCSP lors de l’appel de l’opération du service Signature suivante. Une fois l’opération appelée, cette option reprend la valeur false. Valeur par défaut : false.
+**Purger le cache OCSP lors de l’appel API suivant :** indique s’il faut purger le cache OCSP lors de l’appel de l’opération du service Signature suivante. Une fois l’opération appelée, cette option reprend la valeur false. La valeur par défaut est false. 
 
-## Paramètres du service Watched Folder  {#watched-folder-service-settings}
+## Paramètres du service Watched Folder {#watched-folder-service-settings}
 
 Le service Watched Folder (`WatchedFolder`) permet de configurer les attributs communs à tous les points de fin Watched Folder. Il fournit également des valeurs par défaut pour les points de fin des dossiers de contrôle (voir [Configuration des points de fin Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)). Il n’est pas appelé par des applications clientes externes ni utilisé dans des processus créés avec Workbench.
 
@@ -776,7 +776,7 @@ Les paramètres ci-dessous sont disponibles pour le service Web Service.
 * cms
 * jceks
 
-## Paramètres du service XSLT Transformation  {#xslt-transformation-service-settings}
+## Paramètres du service XSLT Transformation {#xslt-transformation-service-settings}
 
 Le service XSLT Transformation (`XSLTService`) permet aux processus d’appliquer des transformations XSLT (eXtensible Stylesheet Language Transformations) aux documents XML.
 
@@ -784,13 +784,13 @@ Le paramètre ci-dessous est disponible pour le service XSLT Transformation.
 
 **Nom d’usine :** nom qualifié complet de la classe Java à utiliser pour exécuter des transformations XSLT. Si aucune valeur n’est spécifiée, la valeur d&#39;usine par défaut configurée dans la machine virtuelle Java exécutant le serveur Forms est utilisée.
 
-## Modification des paramètres de sécurité d’un service  {#modifying-security-settings-for-a-service}
+## Modification des paramètres de sécurité d’un service {#modifying-security-settings-for-a-service}
 
 Le serveur Forms vous permet de configurer des paramètres de sécurité pour chaque service. Vous pouvez ainsi configurer un contrôle d’accès affiné service par service.
 
 Les profils de sécurité par défaut sont installés, et vous pouvez les configurer en fonction des besoins de votre système. Chaque profil de sécurité est associé à un domaine et créé au niveau de l’utilisateur ou du groupe.
 
-### Modification des paramètres de sécurité d’un service  {#modify-security-settings-for-a-service}
+### Modification des paramètres de sécurité d’un service {#modify-security-settings-for-a-service}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
 1. Dans la page Gestion des services, sélectionnez le service à configurer.
@@ -837,16 +837,16 @@ Les profils de sécurité par défaut sont installés, et vous pouvez les config
 
 1. Cliquez sur Ajouter.
 
-### Suppression de l’entité de sécurité dans un profil de sécurité  {#remove-the-principal-from-a-security-profile}
+### Suppression de l’entité de sécurité dans un profil de sécurité {#remove-the-principal-from-a-security-profile}
 
 1. Dans la page Gestion des services, sélectionnez le service à configurer.
 1. Cliquez sur l’onglet **Sécurité**, sélectionnez le profil de sécurité à supprimer, puis cliquez sur **Supprimer**.
 
-## Configuration du pool d’un service  {#configuring-pooling-for-a-service}
+## Configuration du pool d’un service {#configuring-pooling-for-a-service}
 
 Chaque service peut tirer parti des options de pool pour traiter les demandes d’appel entrantes. Le recours à un pool de service garantit que les instances du service sont appelées par un seul thread à la fois et qu’elles sont réutilisées sur l’ensemble des demandes d’appel, ce qui permet d’optimiser les performances. Vous pouvez également recourir à un pool pour définir l’option Instances maximales des services asynchrones, qui autorise les services à limiter le nombre de demandes traitées en parallèle.
 
-### Activation du pool  {#enable-pooling}
+### Activation du pool {#enable-pooling}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
 1. Dans la page Gestion des services, sélectionnez le service à configurer.
@@ -858,7 +858,7 @@ Chaque service peut tirer parti des options de pool pour traiter les demandes d�
 1. Dans le champ Délai d’attente d’appel, saisissez le délai (en millisecondes) d’attente pour qu’un service soit disponible pour une demande d’appel. Si vous ne définissez aucune valeur pour ce paramètre, la valeur par défaut est 0, autrement dit, aucun délai d’attente.
 1. Cliquez sur Enregistrer.
 
-### Suppression du pool  {#remove-pooling}
+### Suppression du pool {#remove-pooling}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
 1. Dans la page Gestion des services, sélectionnez le service à configurer.

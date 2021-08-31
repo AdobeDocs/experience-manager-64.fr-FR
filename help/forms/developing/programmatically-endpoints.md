@@ -1,8 +1,8 @@
 ---
 title: Gestion des points de fin par programmation
-seo-title: Gestion des points de fin par programmation
+seo-title: Programmatically Managing Endpoints
 description: Utilisez le service Endpoint Registry pour ajouter des points de fin EJB, ajouter des points de fin SOAP, ajouter des points de fin Watched Folder, ajouter des points de fin Email, ajouter des points de fin Remoting, ajouter des points de fin Task Manager, modifier des points de fin, supprimer des points de fin et récupérer les informations du connecteur de point de fin.
-seo-description: Utilisez le service Endpoint Registry pour ajouter des points de fin EJB, ajouter des points de fin SOAP, ajouter des points de fin Watched Folder, ajouter des points de fin Email, ajouter des points de fin Remoting, ajouter des points de fin Task Manager, modifier des points de fin, supprimer des points de fin et récupérer les informations du connecteur de point de fin.
+seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
 uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: 1dc43962-dffe-4062-838f-737b3100ad28
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10849'
+source-wordcount: '10791'
 ht-degree: 6%
 
 ---
@@ -221,7 +221,7 @@ Après avoir créé un nouveau point de terminaison, vous devez l’activer. Lor
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Ajoutez un point d’entrée SOAP à l’aide de l’API Java {#add-a-soap-endpoint-using-the-java-api}
+### Ajout d’un point d’entrée SOAP à l’aide de l’API Java {#add-a-soap-endpoint-using-the-java-api}
 
 Ajoutez un point d’entrée SOAP à un service à l’aide de l’API Java :
 
@@ -323,7 +323,7 @@ La liste suivante spécifie les valeurs de configuration définies lors de l’a
 
 * **url** : Indique l’emplacement du dossier de contrôle. Dans un environnement organisé en grappe, cette valeur doit pointer vers un dossier réseau partagé accessible à partir de tous les ordinateurs de la grappe.
 * **asynchrone** : Identifie le type d’appel comme étant asynchrone ou synchrone. Les processus provisoires et synchrones peuvent être appelés uniquement de façon synchrone. La valeur par défaut est true. Asynchrone est recommandé.
-* **cronExpression** : Utilisé par quartz pour planifier l’interrogation du répertoire d’entrée. Pour plus d’informations sur la configuration de l’expression cron, voir [https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html).
+* **cronExpression** : Utilisé par quartz pour planifier l’interrogation du répertoire d’entrée.
 * **purgeDuration** : Il s’agit d’un attribut obligatoire. Les fichiers et les dossiers du dossier result sont purgés lorsqu’ils sont plus anciens que cette valeur. Cette valeur est mesurée en jours. Cet attribut est utile pour s’assurer que le dossier de résultats ne devient pas plein. La valeur -1 jour indique de ne jamais supprimer le dossier result. La valeur par défaut est -1.
 * **repeatInterval** : Intervalle, en secondes, d’analyse du dossier de contrôle en vue de l’entrée. À moins que le ralentissement ne soit activé, cette valeur doit être supérieure au temps nécessaire au traitement d’une tâche moyenne ; sinon, le système risque d’être surchargé. La valeur par défaut est 5.
 * **repeatCount** : Nombre d’analyses du dossier ou du répertoire par un dossier de contrôle. La valeur -1 indique une analyse indéfinie. La valeur par défaut est -1.
@@ -389,7 +389,7 @@ Après avoir créé un point de fin Watched Folder, vous devez l’activer. Lors
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Ajoutez un point de fin Watched Folder à l’aide de l’API Java {#add-a-watched-folder-endpoint-using-the-java-api}
+### Ajout d’un point de fin Watched Folder à l’aide de l’API Java {#add-a-watched-folder-endpoint-using-the-java-api}
 
 Ajoutez un point de fin Watched Folder à l’aide de l’API Java AEM Forms :
 
@@ -461,7 +461,7 @@ Ajoutez un point de fin Watched Folder à l’aide de l’API Java AEM Forms :
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Valeurs de configuration du dossier de contrôle fichier constant {#watched-folder-configuration-values-constant-file}
+### Fichier constant des valeurs de configuration du dossier de contrôle {#watched-folder-configuration-values-constant-file}
 
 Le [QuickStart : L’ajout d’un point de fin Watched Folder à l’aide de l’API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) utilise un fichier constant qui doit faire partie de votre projet Java pour compiler le démarrage rapide. Ce fichier constant représente les valeurs de configuration qui doivent être définies lors de l’ajout d’un point de fin Watched Folder. Le code Java suivant représente le fichier constant.
 
@@ -634,7 +634,7 @@ Après avoir créé un point de fin de courrier électronique, vous devez l’ac
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Ajoutez un point de fin Email à l’aide de l’API Java {#add-an-email-endpoint-using-the-java-api}
+### Ajout d’un point de fin de courrier électronique à l’aide de l’API Java {#add-an-email-endpoint-using-the-java-api}
 
 Ajoutez un point de fin Email à l’aide de l’API Java :
 
@@ -706,7 +706,7 @@ Ajoutez un point de fin Email à l’aide de l’API Java :
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Valeurs de configuration des emails fichier constant {#email-configuration-values-constant-file}
+### Fichier constant de valeurs de configuration des emails {#email-configuration-values-constant-file}
 
 Le [QuickStart : L’ajout d’un point de fin de courrier électronique à l’aide de l’API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) utilise un fichier constant qui doit faire partie de votre projet Java pour compiler le démarrage rapide. Ce fichier constant représente les valeurs de configuration qui doivent être définies lors de l’ajout d’un point de fin de courrier électronique. Le code Java suivant représente le fichier constant.
 
@@ -819,7 +819,7 @@ Après avoir créé un nouveau point de terminaison, vous devez l’activer. Lor
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Ajoutez un point de fin Remoting à l’aide de l’API Java {#add-a-remoting-endpoint-using-the-java-api}
+### Ajout d’un point de fin Remoting à l’aide de l’API Java {#add-a-remoting-endpoint-using-the-java-api}
 
 Ajoutez un point de terminaison Remoting à l’aide de l’API Java :
 
@@ -930,7 +930,7 @@ Après avoir créé un nouveau point de terminaison, vous devez l’activer. Lor
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Ajoutez un point d’entrée TaskManager à l’aide de l’API Java {#add-a-taskmanager-endpoint-using-the-java-api}
+### Ajout d’un point d’entrée TaskManager à l’aide de l’API Java {#add-a-taskmanager-endpoint-using-the-java-api}
 
 Ajoutez un point d’entrée TaskManager à l’aide de l’API Java :
 
@@ -1082,7 +1082,7 @@ Modifiez un point de terminaison à l’aide de l’API Java :
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Suppression des points de fin {#removing-endpoints}
+## Suppression de points de fin {#removing-endpoints}
 
 Vous pouvez supprimer un point de terminaison d’un service par programmation à l’aide de l’API Java AEM Forms. Après avoir supprimé un point de fin, le service ne peut pas être appelé à l’aide de la méthode d’appel activée par le point de fin. Par exemple, si vous supprimez un point de fin SOAP d’un service, vous ne pouvez pas appeler le service à l’aide du mode SOAP.
 
@@ -1233,7 +1233,7 @@ Après avoir spécifié le type de connecteur, vous pouvez récupérer des infor
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Récupérer les informations du connecteur de point d’entrée à l’aide de l’API Java {#retrieve-endpoint-connector-information-using-the-java-api}
+### Récupération des informations du connecteur de point d’entrée à l’aide de l’API Java {#retrieve-endpoint-connector-information-using-the-java-api}
 
 Récupérez les informations du connecteur de point d’entrée à l’aide de l’API Java :
 

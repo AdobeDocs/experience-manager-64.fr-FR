@@ -1,8 +1,8 @@
 ---
 title: Configuration des options du client et du serveur
-seo-title: Configuration des options client et serveur
+seo-title: Configuring client and server optionsn
 description: Découvrez comment vous pouvez configurer les différentes options de client et de serveur, telles que les paramètres de configuration du serveur, les rôles de sécurité des documents et le contrôle des événements.
-seo-description: Découvrez comment vous pouvez configurer les différentes options de client et de serveur, telles que les paramètres de configuration du serveur, les rôles de sécurité des documents et le contrôle des événements.
+seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
 uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10283'
+source-wordcount: '10250'
 ht-degree: 85%
 
 ---
@@ -554,7 +554,7 @@ Document Security génère automatiquement un courrier électronique d’invitat
 
 Le courrier électronique d’enregistrement contient un lien permettant d’accéder à une page d’enregistrement et décrit la marche à suivre pour s’enregistrer. Une fois l’utilisateur invité enregistré, Document Security envoie un courrier électronique contenant un lien vers une page d’activation. Un compte reste activé tant que vous ne le désactivez pas ou que vous ne le supprimez pas.
 
-L’activation de l’enregistrement intégré vous permet de ne spécifier votre serveur SMTP, les détails du courrier électronique d’enregistrement, les droits d’accès et le courrier électronique de réinitialisation du mot de passe qu’une seule et unique fois. Avant d’activer l’enregistrement intégré, vérifiez que vous avez créé un domaine local dans Gestion des utilisateurs et que le rôle Invitation d’un utilisateur de Document Security a été affecté aux utilisateurs et groupes appropriés de votre entreprise (voir [Ajout d’un domaine local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) et [Création et configuration de rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)). Si vous n’utilisez pas l’enregistrement intégré, vous devez disposer de votre propre système d’enregistrement d’utilisateurs créé à l’aide du SDK d’AEM forms. Consultez l’aide de la section « Développement d’interfaces SPI pour AEM Forms » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn-aemforms-programming-63). Si vous n’utilisez pas l’option d’enregistrement intégré, il est conseillé de configurer un message dans le courrier électronique d’activation, ainsi que dans l’écran d’ouverture de session du client, pour expliquer aux utilisateurs comment contacter l’administrateur et lui demander un nouveau mot de passe ou d’autres informations.
+L’activation de l’enregistrement intégré vous permet de ne spécifier votre serveur SMTP, les détails du courrier électronique d’enregistrement, les droits d’accès et le courrier électronique de réinitialisation du mot de passe qu’une seule et unique fois. Avant d’activer l’enregistrement intégré, vérifiez que vous avez créé un domaine local dans Gestion des utilisateurs et que le rôle Invitation d’un utilisateur de Document Security a été affecté aux utilisateurs et groupes appropriés de votre entreprise (voir [Ajout d’un domaine local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) et [Création et configuration de rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)). Si vous n’utilisez pas l’enregistrement intégré, vous devez disposer de votre propre système d’enregistrement d’utilisateurs créé à l’aide du SDK d’AEM forms. Consultez l’aide de la section « Développement d’interfaces SPI pour AEM Forms » dans [Programmation avec AEM Forms](/help/forms/developing/introducing-java-api-soap-quick.md). Si vous n’utilisez pas l’option d’enregistrement intégré, il est conseillé de configurer un message dans le courrier électronique d’activation, ainsi que dans l’écran d’ouverture de session du client, pour expliquer aux utilisateurs comment contacter l’administrateur et lui demander un nouveau mot de passe ou d’autres informations.
 
 **Activation et configuration de l’enregistrement d’un utilisateur invité**
 

@@ -1,8 +1,8 @@
 ---
 title: 'Synchronisation d’annuaires '
-seo-title: 'Synchronisation d’annuaires '
+seo-title: Synchronizing directories
 description: Découvrez comment synchroniser la base de données User Management avec des modifications apportées aux serveurs d’annuaire sources à l’aide de la synchronisation manuelle ou planifiée.
-seo-description: Découvrez comment synchroniser la base de données User Management avec des modifications apportées aux serveurs d’annuaire sources à l’aide de la synchronisation manuelle ou planifiée.
+seo-description: Learn how to synchronize the User Management database with changes to the source directory servers using manual or scheduled synchronization.
 uuid: 71cbc04d-6172-49b7-a490-ff3233c1b2bb
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 exl-id: d6b2f389-bff4-481d-93bf-87f56114a91b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 97%
+source-wordcount: '980'
+ht-degree: 98%
 
 ---
 
@@ -25,8 +25,6 @@ La synchronisation des annuaires permet d’extraire les détails des serveurs d
 
 Vous pouvez également définir une synchronisation quotidienne pour harmoniser automatiquement la base de données User Management avec les modifications ou les mises à jour effectuées sur les serveurs d’annuaire sources, mais notez que ce processus utilise des ressources réseau et serveur. Choisissez des périodes de faible utilisation et évitez de programmer des synchronisations inutiles susceptibles d’immobiliser les ressources système et réseau. Pour éviter ce type de synchronisation, il est préférable d’utiliser l’option de synchronisation immédiate.
 
-Vous pouvez également indiquer s’il convient d’envoyer des informations relatives aux utilisateurs et aux groupes dans LiveCycle Content Services 9 (obsolète) lors de la synchronisation de domaines.
-
 >[!NOTE]
 >
 >ne créez pas plusieurs utilisateurs et groupes locaux lorsque l’annuaire LDAP est en cours de synchronisation. Toute tentative est susceptible d’entraîner des erreurs.
@@ -37,7 +35,7 @@ Vous pouvez également indiquer s’il convient d’envoyer des informations rel
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Pour savoir comment configurer Content Services (obsolète), consultez [Administration de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## Activation de la synchronisation d’annuaires Delta {#enable-delta-directory-synchronization}
 
@@ -57,14 +55,14 @@ Lorsque la synchronisation d’annuaires Delta est activée, User Management eff
 1. Sous Synchronisation des modifications Delta, cochez la case et cliquez sur Enregistrer.
 1. Modifiez les paramètres de chacun des domaines d’entreprise destinés à utiliser la fonctionnalité de synchronisation d’annuaires delta. Dans les pages Paramètres utilisateur et Paramètres du groupe, recherchez le paramètre Modifier l’horodatage et affectez-lui la valeur `modify TimeStamp`. Pour plus d’informations sur la modification des domaines d’entreprise, voir [Modification et conversion de domaines existants](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
-## Activation ou désactivation de la journalisation détaillée lors de la synchronisation  {#enable-or-disable-detailed-logging-during-synchronization}
+## Activation ou désactivation de la journalisation détaillée lors de la synchronisation {#enable-or-disable-detailed-logging-during-synchronization}
 
 Par défaut, User Management crée un journal des statistiques détaillées pendant le processus de synchronisation.
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Configurer les attributs système avancés.
 1. Sous Consignation de statistiques de synchronisation, désélectionnez la case afin de désactiver la journalisation détaillée ou cochez-la pour l’activer, puis cliquez sur Enregistrer.
 
-## Configuration de l’option de nouvelle synchronisation des annuaires  {#configure-the-directory-synchronization-retry-option}
+## Configuration de l’option de nouvelle synchronisation des annuaires {#configure-the-directory-synchronization-retry-option}
 
 Vous pouvez configurer User Management de manière à ce qu’il vérifie périodiquement si des tentatives de synchronisation d’annuaires ont échoué. User Management tente ensuite de terminer ces tentatives de synchronisation échouées.
 
@@ -81,7 +79,7 @@ Vous pouvez configurer User Management de manière à ce qu’il vérifie pério
 
    Si vous sélectionnez plusieurs domaines, il est possible de les synchroniser simultanément. Cependant, si vous sélectionnez les domaines séparément, un seul domaine est synchronisé à la fois.
 
-## Programmation de la synchronisation des annuaires  {#schedule-directory-synchronization}
+## Programmation de la synchronisation des annuaires {#schedule-directory-synchronization}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Programmez la synchronisation :
@@ -95,7 +93,7 @@ L’utilisation de l’expression cron est basée sur le système de planificati
 * (Facultatif) Pour envoyer des informations sur les utilisateurs et les groupes à Content Services (obsolète), activez Sélectionnez cette option pour forcer les utilisateurs et les groupes à devenir des fournisseurs de stockage d’entités de sécurité externes enregistrés. Cette option s’applique également lors de l’ajout de nouveaux utilisateurs et groupes via la page Utilisateurs et groupes.
 * Cliquez sur Enregistrer.
 
-## Arrêt de toutes les synchronisations d’annuaires en cours  {#stop-all-directory-synchronizations-currently-in-progress}
+## Arrêt de toutes les synchronisations d’annuaires en cours {#stop-all-directory-synchronizations-currently-in-progress}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Abandonner. Ce bouton apparaît uniquement lorsqu’une synchronisation d’annuaires est en cours.

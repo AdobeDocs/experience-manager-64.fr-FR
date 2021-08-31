@@ -1,22 +1,22 @@
 ---
 title: Installation et configuration des sites de référence d’AEM Forms
-seo-title: Installation et configuration des sites de référence d’AEM Forms
+seo-title: Set up and configure AEM Forms reference sites
 description: Les sites de référence AEM Forms décrivent comment utiliser AEM Forms pour implémenter un flux de bout en bout dans une entreprise.
-seo-description: Les sites de référence AEM Forms décrivent comment utiliser AEM Forms pour implémenter un flux de bout en bout dans une entreprise.
+seo-description: AEM Forms reference sites showcase how you can use AEM Forms to implement end-to-end workflow in an organization.
 uuid: 087d58a1-d84e-49ac-a82d-4e7fc708f00f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: 933084f92d116111dbfea55d52b1ad60ae691505
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2936'
+source-wordcount: '2911'
 ht-degree: 48%
 
 ---
 
-# Installé et configuré les sites de référence d’AEM Forms {#set-up-and-configure-aem-forms-reference-sites}
+# Installation et configuration des sites de référence d’AEM Forms {#set-up-and-configure-aem-forms-reference-sites}
 
 AEM Forms fournit une implémentation de site de référence pour démontrer la manière dont AEM Forms permet à des organisations gouvernementales et du secteur des services financiers de transformer leurs transactions complexes en expériences numériques simples et attrayantes, n’importe où, n’importe quand et sur n’importe quel périphérique.
 
@@ -63,7 +63,7 @@ Effectuez les étapes suivantes dans l’ordre recommandé pour installer et con
  <tbody> 
   <tr> 
    <th><strong>Étape</strong></th> 
-   <th><strong>Configuration</strong></th> 
+   <th><strong>Configuration d’</strong></th> 
    <th><strong>Remarques</strong></th> 
   </tr> 
   <tr> 
@@ -152,7 +152,7 @@ La configuration SSL est requise pour communiquer avec les serveurs Adobe Sign. 
 
 ## Configuration de Day CQ Link Externalizer (Externalisateur du lien vers Day CQ) {#externalizer}
 
-Dans AEM, **Externalizer** est un service OSGI qui vous permet de transformer par programmation un chemin d’accès à une ressource (par exemple, /path/to/my/page) dans une URL externe et absolue (par exemple, https://www.mycompany.com/path/to/my/page) en ajoutant un préfixe au chemin d’accès avec un DNS préconfiguré. Voir [Externalisation des URL](/help/sites-developing/externalizer.md).
+Dans AEM, l’externaliseur **Externalizer** est un service OSGI qui vous permet de transformer par programmation un chemin de ressource (par exemple, /path/to/my/page) en une URL externe et absolue (par exemple, https://www.mycompany.com/path/to/my/page) en ajoutant un préfixe au chemin d’accès avec un DNS préconfiguré. Voir [Externalisation des URL](/help/sites-developing/externalizer.md).
 
 >[!CAUTION]
 >
@@ -232,7 +232,7 @@ Une fois que vous avez installé les packages et avez lancé les instances de r�
 
 Si votre installation est terminée, vous pouvez accéder aux pages d’accueil des sites de référence We.Gov et We.Finance.
 
-## (Facultatif) Importez des exemples de données dans Microsoft Dynamics {#optional-import-sample-data-into-microsoft-dynamics}
+## (Facultatif) Importez des exemples de données dans Microsoft Dynamics. {#optional-import-sample-data-into-microsoft-dynamics}
 
 Les sites de référence de la demande de prêt immobilier et de l’assurance automobile sont configurés pour utiliser les enregistrements de Microsoft Dynamics. Le package de site de référence installe une entité personnalisée et des exemples d’enregistrements que vous pouvez importer dans Microsoft Dynamics pour exécuter le site de référence. Effectuez les étapes suivantes pour migrer et configurer les exemples de données :
 
@@ -288,7 +288,7 @@ Effectuez les étapes suivantes sur les instances d’auteur et de publication 
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
-## Configurer le service cloud Adobe Sign de site de référence  {#sign-service}
+## Configurer le service cloud Adobe Sign de site de référence {#sign-service}
 
 Effectuez les étapes suivantes sur les instances d’auteur et de publication :
 
@@ -321,7 +321,7 @@ Effectuez les étapes suivantes sur les instances d’auteur et de publication 
 1. Enregistrez les paramètres.
 1. (**Instance d’auteur uniquement**) Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Sources de données]** > **[!UICONTROL global]**. Sélectionnez **[!UICONTROL roi-rest]** et appuyez sur **[!UICONTROL Propriétés]**. Appuyez sur **[!UICONTROL Paramètres d’authentification]** et définissez **[!UICONTROL Type d’authentification]** sur **[!UICONTROL Authentification de base]**. Spécifiez `admin`/ `admin`comme nom d’utilisateur/mot de passe pour accéder au service. Appuyez sur **[!UICONTROL Enregistrer et fermer]**.
 
-## Intégration avec Marketing Cloud {#integrate-with-marketing-cloud}
+## Intégration à Marketing Cloud {#integrate-with-marketing-cloud}
 
 Vous pouvez intégrer AEM Forms à Adobe Analytics et Adobe Target. Bien qu’Adobe Analytics vous aide à générer des rapports et à analyser les performances des formulaires adaptatifs, Adobe Target vous aide à fournir des expériences personnalisées et à effectuer des tests A/B pour les formulaires adaptatifs.
 

@@ -1,8 +1,8 @@
 ---
 title: Configuration des paramètres du serveur
-seo-title: Configuration des paramètres du serveur
+seo-title: Configuring Server Settings
 description: La page Paramètres du serveur fournit l’accès aux paramètres de messagerie électronique, de notification de tâche et de notification de l’administrateur.
-seo-description: La page Paramètres du serveur fournit l’accès aux paramètres de messagerie électronique, de notification de tâche et de notification de l’administrateur.
+seo-description: The Server Settings page provides access to email, task notification and administrator notification settings.
 uuid: 73b51ac0-56e5-4748-bb33-e3986c69eb2d
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 7933efeb-618a-4c38-8e5e-593be8ebb00c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2625'
 ht-degree: 90%
 
 ---
@@ -35,7 +35,7 @@ Pour qu’AEM forms reçoive et traite le courrier électronique entrant envoyé
 
 Si les processus que vous utilisez sont conçus et implémentés sans avoir à utiliser le courrier électronique, il est inutile de configurer les options de la page Paramètres du courrier électronique.
 
-### Configuration des paramètres du courrier électronique sortant  {#configure-outgoing-email-settings}
+### Configuration des paramètres du courrier électronique sortant {#configure-outgoing-email-settings}
 
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Paramètres du serveur > Paramètres du courrier électronique.
 1. Sélectionnez Activer les messages sortants.
@@ -53,7 +53,7 @@ Si les processus que vous utilisez sont conçus et implémentés sans avoir à u
 >
 >si les informations que vous entrez sont incorrectes, vous pouvez cliquer sur Annuler pour revenir à la page précédente.
 
-### Configuration de modèles de courrier électronique pour utiliser l’espace de travail AEM Forms  {#configuring-email-templates-to-use-html-workspace}
+### Configuration de modèles de courrier électronique pour utiliser l’espace de travail AEM Forms {#configuring-email-templates-to-use-html-workspace}
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Par défaut, les courriers électroniques envoyés par AEM forms contiennent des
 
 1. Dans Administration Console, cliquez sur Accueil > Services > Processus des formulaires > Paramètres du serveur > Notifications de tâche.
 1. Ouvrez un modèle d’affectation des tâches.
-1. Définissez le modèle dans les notifications de tâche à l’adresse suivante :  `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
+1. Définissez le modèle dans les notifications de tâche à l’adresse suivante : `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
 
    ```as3
    https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@
@@ -85,7 +85,7 @@ Pour générer des notifications électroniques pour un groupe, spécifiez une a
 >
 >Flex Workspace est obsolète pour la version d’AEM forms.
 
-### Configuration des rappels pour les utilisateurs ou les groupes  {#configure-reminders-for-users-or-groups}
+### Configuration des rappels pour les utilisateurs ou les groupes {#configure-reminders-for-users-or-groups}
 
 Vous pouvez choisir d’envoyer des notifications de rappel à l’utilisateur ou au groupe affecté à une tâche lorsque le délai d’exécution de cette tâche se rapproche. Les règles déterminant exactement quand une notification de rappel est envoyée sont décidées par le développeur du processus.
 
@@ -99,7 +99,7 @@ Vous pouvez choisir d’envoyer des notifications de rappel à l’utilisateur o
 1. Dans la liste Encodage du courrier électronique, sélectionnez le format d’encodage à utiliser pour le message électronique. Le format par défaut UTF-8 est utilisé par la plupart des utilisateurs, exception faite du Japon. Les utilisateurs japonais sélectionnent généralement le format ISO2022-JP.
 1. Cliquez sur Enregistrer.
 
-### Configuration des notifications d’affectation de tâche pour des utilisateurs ou des groupes  {#configure-task-assignment-notifications-for-users-or-groups}
+### Configuration des notifications d’affectation de tâche pour des utilisateurs ou des groupes {#configure-task-assignment-notifications-for-users-or-groups}
 
 Vous pouvez envoyer des notifications d’affectation de tâche à un utilisateur ou à un groupe lorsqu’une tâche lui est affectée.
 
@@ -113,7 +113,7 @@ Vous pouvez envoyer des notifications d’affectation de tâche à un utilisateu
 1. Dans la liste Encodage du courrier électronique, sélectionnez le format d’encodage à utiliser pour le message électronique. Le format par défaut UTF-8 est utilisé par la plupart des utilisateurs, exception faite du Japon. Les utilisateurs japonais sélectionnent généralement le format ISO2022-JP.
 1. Cliquez sur Enregistrer.
 
-### Configuration des notifications d’échéance pour des utilisateurs ou des groupes  {#configure-deadline-notifications-for-users-or-groups}
+### Configuration des notifications d’échéance pour des utilisateurs ou des groupes {#configure-deadline-notifications-for-users-or-groups}
 
 Vous pouvez choisir d’envoyer des notifications d’échéance à des utilisateurs et à des groupes pour les informer que le délai d’exécution d’une tâche affectée est dépassé. En règle générale, une notification d’échéance n’est envoyée qu’à titre d’information, car l’utilisateur ne peut plus agir sur la tâche affectée.
 
@@ -126,11 +126,11 @@ Vous pouvez choisir d’envoyer des notifications d’échéance à des utilisat
 1. Dans la liste Encodage du courrier électronique, sélectionnez le format d’encodage à utiliser pour le message électronique. Le format par défaut UTF-8 est utilisé par la plupart des utilisateurs, exception faite du Japon. Les utilisateurs japonais sélectionnent généralement le format ISO2022-JP.
 1. Cliquez sur Enregistrer.
 
-### Masquage de la balise DO NOT DELETE pour tous les courriers électroniques  {#hide-the-do-not-delete-tag-for-all-emails}
+### Masquage de la balise DO NOT DELETE pour tous les courriers électroniques {#hide-the-do-not-delete-tag-for-all-emails}
 
-Vous pouvez configurer le service de messagerie de façon à masquer la balise de suivi DO NOT DELETE dans tous les courriers électroniques envoyés par le biais d’un processus pour des intervenants humains. Pour plus d’informations, voir [Masquage des balises DO-NOT-DELETE en CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
+Vous pouvez configurer le service de messagerie de façon à masquer la balise de suivi DO NOT DELETE dans tous les courriers électroniques envoyés par le biais d’un processus pour des intervenants humains.
 
-## Configuration des notifications destinées aux administrateurs  {#configuring-notifications-for-administrators}
+## Configuration des notifications destinées aux administrateurs {#configuring-notifications-for-administrators}
 
 Vous pouvez configurer les modèles auxquels le processus des formulaires fait appel pour générer les notifications électroniques envoyées aux administrateurs.
 
@@ -139,7 +139,7 @@ Vous pouvez configurer les types de notifications suivants pour les administrate
 * branche bloquée
 * opération bloquée
 
-### Configuration de notifications de branche bloquée  {#configure-stalled-branch-notifications}
+### Configuration de notifications de branche bloquée {#configure-stalled-branch-notifications}
 
 Si une branche bloque (l’exécution d’une opération est interrompue délibérément ou suite à une erreur), une notification peut être envoyée à un administrateur ou à un autre utilisateur, capable d’étudier le problème.
 
@@ -153,7 +153,7 @@ Si une branche bloque (l’exécution d’une opération est interrompue délib�
 1. Dans la liste Encodage du courrier électronique, sélectionnez le format d’encodage à utiliser pour le message électronique. Le format par défaut UTF-8 est utilisé par la plupart des utilisateurs, exception faite du Japon. Les utilisateurs japonais sélectionnent généralement le format ISO2022-JP.
 1. Cliquez sur Enregistrer.
 
-### Configuration de notifications d’opération bloquée  {#configure-stalled-operation-notifications}
+### Configuration de notifications d’opération bloquée {#configure-stalled-operation-notifications}
 
 Si une opération bloque (l’exécution d’une opération est interrompue délibérément ou suite à une erreur), une notification peut être envoyée à un administrateur ou à un autre utilisateur, capable d’étudier le problème.
 
@@ -165,7 +165,7 @@ Si une opération bloque (l’exécution d’une opération est interrompue dél
 1. Dans le champ Modèle de notification, saisissez le texte du corps du courrier électronique. Ce champ est prérenseigné avec un texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, voir [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Cliquez sur Enregistrer.
 
-## Personnalisation du contenu des notifications  {#customizing-the-content-of-notifications}
+## Personnalisation du contenu des notifications {#customizing-the-content-of-notifications}
 
 Les pages Notifications de tâche et Notifications de l’administrateur offrent différentes fonctionnalités qui permettent de personnaliser les messages de notification :
 
@@ -173,7 +173,7 @@ Les pages Notifications de tâche et Notifications de l’administrateur offrent
 * sélecteur de variables
 * Génération d’URL
 
-### Editeur de texte enrichi  {#rich-text-editor}
+### Editeur de texte enrichi {#rich-text-editor}
 
 La zone Modèle de notification est un éditeur de texte enrichi qui vous permet de générer des pages HTML pour les messages de notification électronique. Elle offre des options de mise en forme des polices et des paragraphes, accessibles sous le champ Modèle de notification. Ces options permettent notamment d’intervenir sur le type, la taille, le style et la couleur des polices ainsi que sur les puces et l’alignement des paragraphes.
 

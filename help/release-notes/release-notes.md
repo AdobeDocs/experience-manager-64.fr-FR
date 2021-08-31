@@ -1,8 +1,8 @@
 ---
 title: Notes de mise à jour générales d’Adobe Experience Manager 6.4
-seo-title: Notes de mise à jour
+seo-title: Release Notes
 description: 'Notes relatives à Adobe Experience Manager 6.4, décrivant les informations de version, les nouveautés et le processus d’installation, et détaillant les modifications. '
-seo-description: 'Notes relatives à Adobe Experience Manager 6.4, décrivant les informations de version, les nouveautés et le processus d’installation, et détaillant les modifications. '
+seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists.
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,14 +10,14 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: eb55489da5e390578b2ae71be424930e9bf3efd3
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2813'
-ht-degree: 80%
+source-wordcount: '2754'
+ht-degree: 78%
 
 ---
 
-# Notes de mise à jour générales d’Adobe Experience Manager 6.4 {#general-release-notes-for-adobe-experience-manager}
+# Notes de mise à jour générales d’Adobe Experience Manager 6.4 {#general-release-notes-for-adobe-experience-manager}
 
 ## Informations sur la version {#release-information}
 
@@ -107,7 +107,7 @@ Pour plus d’informations, voir la [page de documentation](/help/sites-deployin
 * [Restructuration](/help/sites-deploying/repository-restructuring.md) des référentiels : restructuration importante (principalement /etc) pour faciliter les mises à niveau et promouvoir les bonnes pratiques de mise en oeuvre
 * Pour des informations plus générales sur les mises à niveau, voir [cette page](/help/sites-deploying/upgrade.md).
 
-### Experience Manager Sites  {#experience-manager-sites}
+### Experience Manager Sites {#experience-manager-sites}
 
 Liste complète des modifications apportées à [AEM Sites et aux modules complémentaires](sites.md).
 
@@ -127,13 +127,13 @@ La création de variations au sein d’un fragment avec le même contenu, mais u
 
 Diverses améliorations apportées à l’exportateur de modèles Sling et aux composants principaux sont incluses afin de fournir une sortie JSON robuste pour incorporer du contenu dans les applications mobiles et les expériences créées avec des applications d’une seule page.
 
-#### Création plus rapide de sites {#gettings-sites-built-quicker}
+#### Obtention de la création plus rapide de sites {#gettings-sites-built-quicker}
 
 AEM 6.4 complète la transformation vers le modèle de composant de nouvelle génération. Le concept de composants de base introduit dans AEM 6.3, et maintenant accompagné du système de style, fournit une manière efficace pour créer des sites et étendre des sites existants.
 
 Tutoriel recommandé pour tirer le meilleur parti du nouveau modèle de composant : [Prise en main d’AEM Sites – Tutoriel WKND](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-#### Module complémentaire Screens  {#screens-add-on}
+#### Module complémentaire Screens {#screens-add-on}
 
 Pour AEM Screens, il faut diffuser un message cohérent sur tous les canaux marketing, y compris les réseaux de signalisation numérique et de kiosque. AEM 6.4 ajoute la prise en charge de l’exécution du lecteur de contenu dynamique sur le matériel reposant sur Microsoft Windows et Google Chrome OS. De plus, la gestion des périphériques à distance et les planifications (groupes de canaux) ont été améliorées.
 
@@ -143,7 +143,7 @@ Pour plus d’informations sur les mises à jour de Screens, voir [Guide de l’
 
 AEM 6.4 offre de nombreuses nouvelles fonctions et améliorations de Communities. Liste complète des modifications apportées à [AEM Communities](communities-release-notes.md). Les points forts de cette version sont :
 
-#### Amélioration de la modération  {#enhancements-to-moderation}
+#### Amélioration de la modération {#enhancements-to-moderation}
 
 **Détection automatique du contenu indésirable**
 
@@ -163,7 +163,7 @@ Il est possible de marquer avec des signets les filtres de modération prédéfi
 
 AEM 6.4 Communities expose les [API prêtes à l’emploi](/help/communities/user-ugc-management-service.md) et une [servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) d’exemple pour permettre aux utilisateurs finaux de contrôler leur données. Avec ces API, les organisations qui traitent et contrôlent les données peuvent également traiter des demandes de conformité au règlement général sur la protection des données (RGPD) européen.
 
-#### Amélioration de la gestion des sites et des groupes  {#enhancements-to-site-and-group-management}
+#### Amélioration de la gestion des sites et des groupes {#enhancements-to-site-and-group-management}
 
 **Création de groupes multiparamètres régionaux en une seule étape**
 
@@ -175,7 +175,7 @@ Il est maintenant possible de créer des groupes multilingues en une seule opér
 
 L’icône Supprimer est maintenant disponible sur les sites et les groupes respectifs, lorsque vous naviguez à partir de la navigation globale. Cette icône permet de supprimer tous les éléments et le contenu associé au site ou groupe, et supprime toutes les associations d’utilisateurs. Pour plus d’informations sur cette fonctionnalité, voir [Gestion des sites de communautés](/help/communities/create-site.md#main-pars-text-fe17) et [Gestion des groupes de communautés](/help/communities/groups.md#main-pars-text-5e8c).
 
-#### Amélioration de l’activation  {#enhancements-to-enablement}
+#### Amélioration de l’activation {#enhancements-to-enablement}
 
 Les fonctions d’affectation et de catalogue sont désormais disponibles au sein des groupes. Elles permettent de créer, gérer et publier du contenu pédagogique pour un ensemble spécifique de membres de communauté ciblés. Pour plus d’informations sur l’activation des groupes de communautés, voir [Gestion des ressources d’activation](/help/communities/resource.md).
 
@@ -189,7 +189,7 @@ AEM 6.4 apporte plusieurs nouvelles fonctions et améliorations d’Assets, not
 
 Adobe Asset Link dans Creative Cloud abonnement Entreprise simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le cadre du processus de création de contenu. Il s’agit d’une nouvelle fonctionnalité native de Creative Cloud abonnement Entreprise qui relie Photoshop CC, Illustrator CC et InDesign CC à AEM, sans que les créatifs n’aient besoin d’abandonner leurs outils de prédilection.
 
-Pour plus d’informations sur cette fonctionnalité, les conditions préalables et la façon d’y accéder, voir [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
+Pour plus d’informations sur cette fonctionnalité, les conditions préalables et la façon d’y accéder, voir [Adobe Asset Link](https://www.adobe.com/fr/creativecloud/business/enterprise/adobe-asset-link.html).
 
 ![adobe_asset_link](assets/adobe_asset_link.png)
 
@@ -265,7 +265,7 @@ Vous pouvez intégrer Livefyre à votre instance AEM 6.4. Vous trouverez des in
 
 * [Intégration de Livefyre](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)
 
-### Tirer parti du développement axé sur le client  {#leverage-customer-focused-development}
+### Tirer parti du développement axé sur le client {#leverage-customer-focused-development}
 
 Adobe applique un modèle de développement axé sur les utilisateurs afin que ces derniers puissent contribuer à toutes les étapes du processus de développement, au cours des phases de spécification, de développement et de tests. Merci à tous les utilisateurs et partenaires qui contribuent à ce processus.
 
@@ -312,11 +312,11 @@ Ce processus de hiérarchisation a généré plus de 500 modifications axées s
 
 * Packages des fonctionnalités d’AEM Forms :
 
-   * [adobe-aemfd-aix-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-AIX)
-   * [adobe-aemfd-linux-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-LX)
-   * [adobe-aemfd-solaris-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-SOL)
-   * [adobe-aemfd-win-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-WIN)
-   * [adobe-aemfd-osx-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-OSX)
+   * [adobe-aemfd-aix-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-linux-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-solaris-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.htmlL)
+   * [adobe-aemfd-win-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-osx-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 ## Langues {#languages}
 
@@ -343,7 +343,7 @@ Reportez-vous à la [documentation de mise à niveau](/help/sites-deploying/upgr
 
 ## Plateformes prises en charge {#supported-platforms}
 
-Vous trouverez une matrice complète des plates-formes prises en charge, y compris leur niveau de prise en charge, sur la page des [exigences techniques d’AEM 6.4](/help/sites-deploying/technical-requirements.md).
+Vous trouverez une matrice complète des plateformes prises en charge, y compris leur niveau de prise en charge, sur la page des [exigences techniques d’AEM 6.4](/help/sites-deploying/technical-requirements.md).
 
 >[!NOTE]
 >
@@ -355,7 +355,7 @@ Adobe évalue constamment les fonctionnalités du produit et prévoit au fil du 
 
 Dans le cas d’Adobe Experience Manager 6.4, [consultez la liste des fonctionnalités obsolètes et supprimées](deprecated-removed-features.md). Cette page présente également les modifications prévues en 2019, ainsi qu’un avis important à l’intention des utilisateurs qui mettent à jour des versions antérieures.
 
-## Listes détaillées des modifications  {#detailed-changes-lists}
+## Listes détaillées des modifications {#detailed-changes-lists}
 
 [AEM Sites](sites.md)
 
