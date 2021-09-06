@@ -1,8 +1,8 @@
 ---
 title: Utilisation de fragments de contenu
-seo-title: Utilisation de fragments de contenu
+seo-title: Working with Content Fragments
 description: Découvrez comment les fragments de contenu vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages.
-seo-description: Découvrez comment les fragments de contenu vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages.
+seo-description: Learn how Content Fragments allow you to design, create, curate and use page-independent content.
 uuid: aa5acda2-4c20-4fe7-929d-6c065b252cf2
 contentOwner: Alison Heimoz
 topic-tags: content-fragments
@@ -10,11 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
-feature: Fragments de contenu
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 5d523aa135e02b7d06241188c3b4a1d4502f4204
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '1984'
 ht-degree: 98%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 98%
 >
 >Certaines fonctionnalités de fragment de contenu nécessitent l’application de [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
 
-Les fragments de contenu d’Adobe Experience Manager (AEM) permettent de concevoir, de créer, d’organiser et de [publier du contenu indépendant des pages](/help/sites-authoring/content-fragments.md). Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples/sur plusieurs canaux.
+Les fragments de contenu Adobe Experience Manager (AEM) vous permettent de concevoir, créer, organiser et [publier du contenu indépendant des pages](/help/sites-authoring/content-fragments.md). Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples/sur plusieurs canaux.
 
 Les fragments de contenu peuvent également être livrés au format JSON, à l’aide des fonctions d’exportation Sling Model (JSON) des composants de base AEM. Cette forme de livraison :
 
@@ -71,7 +71,7 @@ Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses e
 
 AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web.
 
-Ils assurent la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients. Ces canaux peuvent inclure :
+Il assure la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients. Ces canaux peuvent inclure :
 
 * des applications sur une seule page ;
 * des applications mobiles natives ;
@@ -91,8 +91,7 @@ Associé aux fonctionnalités d’exportation JSON des composants de base AEM, 
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
 
 >
->
-Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
+>Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 >
 >Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
@@ -298,7 +297,7 @@ Pour créer, modifier et utiliser des fragments de contenu, vous aurez égalemen
    * Les fragments ont besoin d’un ou de plusieurs composants dédiés pour définir la mise en page, ainsi que diffuser tous les éléments/variations et le contenu associé.
    * Faire glisser un fragment sur une page en mode Création permet d’associer automatiquement le composant requis.
 
-## Exemple d’utilisation  {#example-usage}
+## Exemple d’utilisation {#example-usage}
 
 Un fragment, avec ses éléments et ses variations, peut être utilisé afin de créer du contenu homogène sur plusieurs canaux. Lors de la conception d’un fragment, vous devez prendre en compte où vous utiliserez chacun de ses éléments.
 
