@@ -2,12 +2,12 @@
 title: Téléchargez des ressources numériques à partir de  [!DNL Adobe Experience Manager].
 description: Découvrez comment télécharger des ressources à partir de [!DNL Adobe Experience Manager] et activer ou désactiver la fonctionnalité de téléchargement.
 contentOwner: AG
-feature: Gestion des ressources, distribution des ressources
+feature: Asset Management,Asset Distribution
 role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '807'
 ht-degree: 75%
 
 ---
@@ -67,7 +67,7 @@ Pour permettre le téléchargement de fichiers depuis votre DAM (par exemple, lo
 
 Le `Asset Download Servlet` peut être désactivé sur les instances de publication [!DNL Experience Manager] en mettant à jour la configuration du Dispatcher afin de bloquer toute demande de téléchargement de ressources. Le servlet peut également être désactivé manuellement par l’intermédiaire de la console OSGi.
 
-1. Pour bloquer les demandes de téléchargement de ressources via une configuration de Dispatcher, modifiez la configuration `dispatcher.any` et ajoutez une règle à la [section de filtrage](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Pour bloquer les demandes de téléchargement de ressources via une configuration de Dispatcher, modifiez la configuration `dispatcher.any` et ajoutez une règle à la [section de filtrage](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Pour désactiver le composant OSGi sur une instance de publication, accédez à la console OSGi à l’adresse `http://[aem_server]:[port]/system/console/components`. Recherchez `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` et cliquez ensuite sur **[!UICONTROL Désactiver]**.
 

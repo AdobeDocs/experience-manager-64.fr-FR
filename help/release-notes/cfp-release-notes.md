@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques aux packs de correctifs cumulati
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '4680'
+source-wordcount: '4676'
 ht-degree: 16%
 
 ---
@@ -21,8 +21,8 @@ ht-degree: 16%
 |---|---|
 | Version | 6.4.8.4 |
 | Type | Pack de correctifs cumulés |
-| Date | 25 février 2021 |
-| Condition préalable | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
+| Date  | 25 février 2021 |
+| Prérequis | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
 | URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-4.0.zip) |
 
 ## Fonctionnalités présentes dans AEM 6.4.8.4 {#what-s-included-in-aem}
@@ -39,7 +39,7 @@ Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experi
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.8.24.
 
-Pour plus d’informations sur les CFP et d’autres types de mises à jour, voir [AEM Mise à jour des définitions des véhicules de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html?lang=en)
+Pour plus d’informations sur les CFP et d’autres types de mises à jour, voir [AEM Mise à jour des définitions des véhicules de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.4 fournit des correctifs pour les problèmes suivants.
 
@@ -69,7 +69,7 @@ Adobe Experience Manager 6.4.8.4 fournit des correctifs pour les problèmes suiv
 
 * Lorsque vous ouvrez les propriétés d’une page après la mise à niveau vers Experience Manager 6.4.8.3, des erreurs JavaScript commencent à apparaître dans la console (NPR-35649).
 
-### Forms {#forms-6484}
+### Formulaires {#forms-6484}
 
 >[!NOTE]
 >
@@ -161,7 +161,7 @@ Adobe Experience Manager 6.4.8.3 fournit des correctifs pour les problèmes suiv
 
 * Lorsqu’une collection comprend plus de 15 produits, elle n’affiche que les 15 premiers produits (NPR-34494).
 
-#### Forms {#forms-6483}
+#### Formulaires {#forms-6483}
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suiv
 
 * Les utilisateurs existants d’un groupe de communautés ajouté par le biais d’Admin Console sont supprimés de la liste des utilisateurs lors de toute modification dans la console de groupe de communautés (NPR-34312).
 
-#### Forms {#forms-6482}
+#### Formulaires {#forms-6482}
 
 >[!NOTE]
 >
@@ -416,7 +416,7 @@ Adobe Experience Manager 6.4.8.1 fournit des correctifs pour les problèmes suiv
 
 * L’option [!UICONTROL Chronologie] du rail de gauche prend plus de temps que prévu pour se charger (NPR-32850).
 
-#### Forms {#forms-6481}
+#### Formulaires {#forms-6481}
 
 >[!NOTE]
 >
@@ -460,7 +460,7 @@ Adobe Experience Manager 6.4.8.1 fournit des correctifs pour les problèmes suiv
 >
 >Adobe recommande de ne pas supprimer ni désinstaller le package AEM 6.4.8.4.
 
-### Installez le pack de correctifs cumulés {#install-cumulative-fix-pack}
+### Installation du pack de correctifs cumulés {#install-cumulative-fix-pack}
 
 Procédez comme suit pour installer le pack de correctifs cumulés sur une instance AEM 6.4.8.0 existante :
 
@@ -490,7 +490,7 @@ B. Utilisez l’ [API HTTP du gestionnaire de modules](https://docs.adobe.com/co
 
 ### Validation de l’installation {#validate-install}
 
-1. La page Informations sur le produit (*/system/console/productinfo*) doit maintenant afficher la chaîne de version mise à jour « Adobe Experience Manager, Version 6.4.8.4. » sous Produits installés.
+1. La page d’informations du produit (*/system/console/productinfo*) doit maintenant afficher la chaîne de version mise à jour d’Adobe Experience Manager, version 6.4.8.4, sous Produits installés.
 1. Tous les lots OSGI sont ACTIFS ou FRAGMENT dans la console OSGI (utiliser la console web : /system/console/bundles).
 1. Le lot OSGI org.apache.jackrabbit.oak-core est sur la version 1.8.17 ou ultérieure (Utiliser la console web : /system/console/bundles).
 
@@ -499,7 +499,7 @@ Pour déterminer la plateforme certifiée pour l’exécution avec cette version
 >[!NOTE]
 >Une fois l’installation du module terminée, un message d’information s’affiche pour vous informer que le module de contenu a bien été installé, par exemple **&quot;Package de contenu AEM-6.4-Service-Pack-8 installé avec succès.&quot;**
 
-### Mettre à jour les visionneuses Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
+### Mise à jour des visionneuses Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
 
 AEM 6.4.8.4 contient une nouvelle version des visionneuses Dynamic Media (5.10.1) qui permet de rechercher des noms en double sur la page Paramètre d’image prédéfini. Il est conseillé aux clients Dynamic Media d’exécuter la commande suivante pour mettre à jour les paramètres prédéfinis de la visionneuse prêts à l’emploi.
 
@@ -518,7 +518,7 @@ qui copiera les nouveaux paramètres prédéfinis de visionneuse à l’emplacem
 >Passez cette étape si vous n’utilisez pas AEM Forms. Les correctifs dans AEM Forms sont fournis dans un module complémentaire distinct.
 
 1. Vérifiez que vous avez installé le AEM Cumulative Fix Pack.
-1. Téléchargez le module complémentaire Forms correspondant répertorié dans les [versions AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) de votre système d’exploitation.
+1. Téléchargez le module complémentaire Forms correspondant répertorié dans les [versions AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) de votre système d’exploitation.
 1. Installez le module complémentaire Forms comme décrit dans la section [Installation des modules complémentaires d’AEM forms](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### Installation du programme d’installation d’AEM Forms JEE {#install-aem-forms-jee-installer}
@@ -558,7 +558,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées ou dés
 
 | Zone | Fonctionnalité | Remplacement | Version |
 |---|---|---|---|
-| Assets | Gestion de l’action de balise pour les sous-ressources | Aucun remplacement. | AEM 6.4.2.0 |
+| Ressources | Gestion de l’action de balise pour les sous-ressources | Aucun remplacement. | AEM 6.4.2.0 |
 | Intégration des Ressources et d’Adobe Creative Cloud | [Le partage de dossiers AEM vers Creative Cloud](https://docs.adobe.com/content/help/fr-FR/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) a été introduit dans AEM 6.2 afin de permettre aux créatifs d’accéder aux ressources depuis AEM. Adobe Asset Link, nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apportera pas d’améliorations supplémentaires à la fonctionnalité de partage de dossiers. Bien que la fonctionnalité soit incluse dans AEM, les clients sont (il est vivement conseillé d’utiliser le remplacement). | Adobe d’Asset Link ou de l’appli de bureau. Pour plus d’informations, reportez-vous à l’article [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
 
 ## Problèmes connus {#known-issues}

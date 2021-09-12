@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Collaboration
 role: User,Admin
 exl-id: 7e2adfcc-410d-4574-8f7e-39aceecfdd4b
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1059'
 ht-degree: 44%
 
 ---
@@ -40,7 +40,7 @@ Le diagramme suivant offre une vue d’ensemble du processus d’intégration.
 L’intégration comprend les éléments suivants :
 
 * **Serveur AEM Assets** déployé dans le réseau d’entreprise (services gérés ou on-premise) : Le partage de dossiers est lancé ici.
-* Le **service de base Adobe Marketing Cloud Assets** : sert d’intermédiaire entre AEM et les services de stockage Creative Cloud. L’administrateur de l’entreprise qui utilise l’intégration se doit d’établir des relations de confiance entre l’organisation Marketing Cloud et l’instance AEM Assets. Il définit également [une liste des collaborateurs Creative Cloud approuvés](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html?lang=en#assets), avec qui les utilisateurs d’AEM Assets peuvent partager des dossiers pour plus de sécurité.
+* Le **service de base Adobe Marketing Cloud Assets** : sert d’intermédiaire entre AEM et les services de stockage Creative Cloud. L’administrateur de l’entreprise qui utilise l’intégration se doit d’établir des relations de confiance entre l’organisation Marketing Cloud et l’instance AEM Assets. Il définit également [une liste des collaborateurs Creative Cloud approuvés](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html#assets), avec qui les utilisateurs d’AEM Assets peuvent partager des dossiers pour plus de sécurité.
 * **Services web Creative Cloud Assets**  (IU web des fichiers de stockage et de Creative Cloud) : C’est là que des utilisateurs Creative Cloud spécifiques, avec lesquels un dossier AEM Assets a été partagé, peuvent accepter l’invitation et voir le dossier dans le stockage de leur compte de Creative Cloud.
 * **application** de bureau Creative Cloud : (Facultatif) Permet un accès direct aux dossiers/fichiers partagés depuis le bureau de l’utilisateur créatif via une synchronisation avec le stockage des ressources du Creative Cloud.
 

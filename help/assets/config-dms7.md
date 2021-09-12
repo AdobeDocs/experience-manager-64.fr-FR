@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
-feature: Configuration, mode Scene7
+feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '5594'
+source-wordcount: '5589'
 ht-degree: 56%
 
 ---
@@ -69,7 +69,7 @@ Pour plus d’informations, voir [Installation du Feature Pack 18912 pour la mig
 
 ## Configuration de Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
 
-Modifiez le mot de passe avant de configurer les Cloud Services Dynamic Media. Une fois que vous avez reçu l’e-mail de mise en service avec les informations d’identification Dynamic Media, vous devez vous [connecter](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) à l’application de bureau Dynamic Media Classic pour modifier votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que Dynamic Media Cloud Service soit configuré avec les informations d’identification correctes.
+Modifiez le mot de passe avant de configurer les Cloud Services Dynamic Media. Une fois que vous avez reçu l’e-mail de mise en service avec les informations d’identification Dynamic Media, vous devez vous [connecter](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) à l’application de bureau Dynamic Media Classic pour modifier votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que Dynamic Media Cloud Service soit configuré avec les informations d’identification correctes.
 
 >[!NOTE]
 >

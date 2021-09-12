@@ -2,13 +2,13 @@
 title: Gérez des ressources composites et générez des sous-ressources.
 description: Découvrez comment créer des références à AEM ressources à partir de fichiers InDesign, Adobe Illustrator et Photoshop. Découvrez également comment utiliser la fonction Visionneuse de page pour afficher les pages individuelles de fichiers de plusieurs pages, y compris les fichiers PDF, INDD, PPT, PPTX et AI.
 contentOwner: AG
-feature: Gestion des ressources
+feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 47%
+source-wordcount: '1408'
+ht-degree: 48%
 
 ---
 
@@ -119,7 +119,7 @@ S’agissant d’InDesign, vous pouvez extraire des pages à l’aide du serveur
 
 Les options suivantes sont disponibles dans la barre d’outils, dans le rail de gauche, ainsi que dans les commandes de la visionneuse de page :
 
-* **[!UICONTROL Actions]** de bureau pour ouvrir ou afficher une sous-ressource spécifique à l’aide de l’appli de bureau AEM. Découvrez comment [configurer les actions de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2) si vous utilisez AEM application de bureau.
+* **[!UICONTROL Actions]** de bureau pour ouvrir ou afficher une sous-ressource spécifique à l’aide de l’appli de bureau AEM. Découvrez comment [configurer les actions de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#desktopactions-v2) si vous utilisez AEM application de bureau.
 
 * **** L’option Propriétés ouvre la   page Propriétés de la sous-ressource spécifique.
 

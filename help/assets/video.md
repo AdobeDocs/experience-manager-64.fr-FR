@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
-feature: Vidéo
+feature: Video
 role: User
-source-git-commit: 1d5f9be7aa1e45ebaf689922396832e82c63321f
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '10387'
+source-wordcount: '10384'
 ht-degree: 75%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 75%
 
 Cette section décrit l’utilisation de vidéos dans Dynamic Media.
 
-## Démarrage rapide : vidéos  {#quick-start-videos}
+## Démarrage rapide : vidéos {#quick-start-videos}
 
 Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapidement les opérations liées aux visionneuses de vidéos adaptatives dans Dynamic Media. Chaque étape comporte des renvois à des rubriques contenant de plus amples informations.
 
@@ -31,7 +31,6 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 >* Voir [Configuration de Dynamic Media – mode Scene7](config-dms7.md) et [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md).
 
 >
-
 
 
 1. **Chargez les vidéos Dynamic Media** en procédant comme suit :
@@ -73,7 +72,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 
          [Affichage des rendus vidéo](video-renditions.md)
 
-         [Gestion des rendus vidéo](managing-assets-touch-ui.md#managing-renditions)
+[Gestion des rendus vidéo](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
       * [Publier des ressources](publishing-dynamicmedia-assets.md)
@@ -85,7 +84,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 
       * Modifiez les propriétés de la vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisés :
 
-         [Modification des propriétés vidéo](managing-assets-touch-ui.md#editing-properties)
+[Modification des propriétés vidéo](managing-assets-touch-ui.md#editing-properties)
 
       * [Gestion des métadonnées des ressources numériques](metadata.md)
       * [Schémas de métadonnées](metadata-schemas.md)
@@ -163,7 +162,7 @@ Les terminaux Windows qui prennent en charge ce format vidéo sont répertoriés
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Voir aussi [À propos des visionneuses HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only) dans le Guide de référence des visionneuses Dynamic Media Adobe.
+Voir aussi [À propos des visionneuses HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=fr#viewers-for-aem-assets-only) dans le Guide de référence des visionneuses Dynamic Media Adobe.
 
 ## Bonne pratique : Utilisation de la visionneuse de vidéos HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -177,7 +176,7 @@ En combinant dans un lecteur unique la capacité de concevoir les composants de 
 
 Voir aussi [À propos des visionneuses HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) dans le guide de référence des visionneuses d’Adobe 
 
-### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5  {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 Pour la diffusion en flux continu de la vidéo adaptative sur un poste de travail et un appareil mobile, les vidéos utilisées pour le changement de débit reposent sur toutes les vidéos MP4 dans la visionneuse de vidéos adaptative.
 
@@ -264,7 +263,7 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
  </tbody>
 </table>
 
-## Architecture de la solution vidéo Dynamic Media  {#architecture-of-dynamic-media-video-solution}
+## Architecture de la solution vidéo Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
 Le graphique suivant montre le processus global de création de vidéos qui sont téléchargées et codées par le biais de DMGateway et mises à disposition pour une consommation publique.
 
@@ -443,7 +442,7 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
 
 Dynamic Media recommande d’utiliser les paramètres prédéfinis MP4 H.264 de codage vidéo. Comme les fichiers MP4 utilisent le codec vidéo H.264, la vidéo est de haute qualité mais dans un fichier au volume compressé.
 
-## Publication de vidéos sur YouTube  {#publishing-videos-to-youtube}
+## Publication de vidéos sur YouTube {#publishing-videos-to-youtube}
 
 Vous pouvez publier des ressources vidéo AEM on-premise directement sur une chaîne YouTube que vous avez précédemment créée.
 
@@ -753,7 +752,7 @@ Voir [Surveillance du codage vidéo et de la progression de la publication sur Y
 1. Dans un mode de sélection de ressource, sélectionnez une ou plusieurs ressources vidéo publiées.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Annuler la publication]** > **[!UICONTROL Annuler la publication]**.
 
-## Surveillance du codage vidéo et de la progression de la publication sur YouTube  {#monitoring-video-encoding-and-youtube-publishing-progress}
+## Surveillance du codage vidéo et de la progression de la publication sur YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
 
 Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage vidéo a été appliqué ou que vous publiez votre vidéo sur YouTube, vous pouvez contrôler la manière dont votre codage vidéo/publication YouTube progresse (ou échoue) de plusieurs façons. La progression de la publication YouTube réelle est uniquement disponible via les journaux mais sa réussite ou son échec sont également répertoriés et décrits dans la procédure suivante. En outre, vous pouvez recevoir des notifications par courrier électronique lorsqu’un processus de publication YouTube ou un codage vidéo est terminé ou interrompu.
 

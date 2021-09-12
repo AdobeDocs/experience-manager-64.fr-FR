@@ -2,12 +2,12 @@
 title: Bonnes pratiques d’intégration d’AEM et de Creative Cloud
 description: Bonnes pratiques pour intégrer un déploiement AEM à Adobe Creative Cloud afin de rationaliser les workflows de transfert de ressources et d’obtenir un maximum d’efficacité
 contentOwner: AG
-feature: Collaboration,Adobe Asset Link,Application de bureau
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: User,Admin
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '3576'
+source-wordcount: '3566'
 ht-degree: 85%
 
 ---
@@ -103,7 +103,7 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 * **Travail en cours ou travail créatif en cours (WIP) :** phase dans le cycle de vie des ressources où une ressource est soumise à de multiples modifications et n’est généralement pas encore prête à être partagée avec les équipes élargies.
 * **Ressources prêtes après création :** ressources prêtes à être partagées avec l’équipe élargie ou sélectionnées/approuvées par l’équipe créative pour le partage avec les équipes marketing ou métier.
 * **Approbation des ressources :** processus d’approbation traitant des ressources déjà transférées dans la gestion des ressources numériques (DAM), qui inclut généralement les approbations de marque, les validations juridiques, etc.
-* **Ressource finale :** ressource qui a passé l’ensemble des   approbations/balisages de métadonnées et qui est prête à être utilisée par l’équipe élargie. Une telle ressource est stockée dans la gestion des ressources numériques (DAM) et est accessible à tous les utilisateurs (ou à tous les utilisateurs intéressés). Il peut être utilisé dans les canaux marketing ou par des équipes créatives pour créer des conceptions.
+* **Ressource finale :** ressource qui a passé l’ensemble des approbations/balisages de métadonnées et qui est prête à être utilisée par l’équipe élargie. Une telle ressource est stockée dans la gestion des ressources numériques (DAM) et est accessible à tous les utilisateurs (ou à tous les utilisateurs intéressés). Il peut être utilisé dans les canaux marketing ou par des équipes créatives pour créer des conceptions.
 * **Mise à jour/modification mineure des ressources :** modification rapide et petite d’une ressource numérique. Cette opération est souvent effectuée en réponse à une demande de retouche ou de modification mineure, de révision ou d’approbation de fichier (par exemple, repositionnement, modification de la taille du texte, ajustement de la saturation/luminosité, couleur, etc.).
 * **Mise à jour/modification majeure des ressources :** modification d’une ressource numérique qui nécessite un travail considérable et qui doit parfois être effectuée sur une plus longue période de temps. Celle-ci implique généralement plusieurs modifications. La ressource doit être enregistrée plusieurs fois lors de la mise à jour. En règle générale, les mises à jour majeures de la ressource entraînent le passage à une étape en cours.
 * **DAM :** gestion des ressources numériques (en anglais, Digital Asset Management). Dans ce document, celle-ci est synonyme des ressources d’AEM Experience Manager, sauf mention contraire spécifique.
@@ -112,7 +112,7 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 
 ### Remarques concernant l’utilisation de l’intégration d’AEM et Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* Voir [Bonnes pratiques relatives à l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
+* Voir [Bonnes pratiques relatives à l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * Voir [Intégration Adobe Stock](aem-assets-adobe-stock.md)
 * Voir la section [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
@@ -146,7 +146,7 @@ TBD: A condensed version of the below content is better placed in the Adobe DAM 
 
 Pour établir un workflow efficace entre les équipes créatives et marketing/métier, et sélectionner les meilleures fonctionnalités de prise en charge, il est important de comprendre quand et pourquoi les ressources sont stockées dans la gestion des ressources numériques (DAM).
 
-### Pourquoi les ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ?  {#why-assets-are-stored-in-dam}
+### Pourquoi les ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ? {#why-assets-are-stored-in-dam}
 
 Le stockage des ressources dans la gestion des ressources numériques (DAM) permet d’en faciliter l’accès et de les retrouver plus aisément. Cela garantit que les ressources peuvent être exploitées par de nombreux utilisateurs au sein de votre organisation ou écosystème, qui comprend les partenaires, les clients, etc.
 
@@ -156,7 +156,7 @@ Le stockage des ressources est soumis à des considérations techniques et d’u
 
 Souvent, le stockage de toutes les ressources et mises à jour n’est pas souhaitable. Par exemple, si les mises à jour de ressources spécifiques sont de mauvaise qualité et utilisent les ressources en excès, les ressources peuvent être stockées dans la gestion des ressources numériques (DAM).
 
-### Quand les ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ?  {#when-assets-are-stored-in-dam}
+### Quand les ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ? {#when-assets-are-stored-in-dam}
 
 Les équipes créatives (et les organisations) ne sont généralement pas intéressées par le stockage des ressources à chaque étape de leur cycle de vie. Par exemple, elles évitent de stocker des ressources dans les cas suivants :
 
@@ -170,7 +170,7 @@ En règle générale, les classes de ressources suivantes sont stockées dans la
 * Les ressources qui ont été présélectionnées par l’équipe créative
 * Les formats de ressources spécifiques qui sont utilisables ou demandés par le marketing, selon un contrat ou un accord spécifique (par exemple, des fichiers JPG convertis à partir de fichiers RAW, des TIFF/images à partir d’originaux PSD)
 
-### Quand les mises à jour de ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ?  {#when-updates-to-assets-are-stored-in-dam}
+### Quand les mises à jour de ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ? {#when-updates-to-assets-are-stored-in-dam}
 
 En règle générale, seules les mises à jour des ressources pertinentes pour un large ensemble d’utilisateurs de la gestion des ressources numériques doivent être stockées dans la gestion des ressources numériques (DAM). Cela garantit que les utilisateurs (marketing et fonctions similaires) voient uniquement les versions appropriées dans la chronologie des ressources de la gestion des ressources numériques (DAM).
 
@@ -187,7 +187,7 @@ Voici quelques exemples de mises à jour qui ne sont généralement pas pertinen
 
 AEM Assets prend en charge deux types d’utilisateurs selon leur accès au déploiement d’AEM Assets. En règle générale, les utilisateurs à l’intérieur du réseau d’entreprise (pare-feu) ont un accès direct à la gestion des actifs numériques. D’autres utilisateurs à l’extérieur du réseau d’entreprise n’auront pas un accès direct. Le type d’utilisateur détermine les intégrations qui peuvent être utilisées du point de vue technique.
 
-#### Utilisateurs créatifs avec un accès direct à la gestion des ressources numériques (DAM)  {#creative-users-with-direct-access-to-dam}
+#### Utilisateurs créatifs avec un accès direct à la gestion des ressources numériques (DAM) {#creative-users-with-direct-access-to-dam}
 
 En règle générale, les équipes créatives internes, de même que les agences et les professionnels de la création intégrés au réseau interne ont accès à l’instance DAM, et peuvent se connecter à AEM.
 
@@ -201,7 +201,7 @@ Dans ce cas, vous pouvez tirer parti de l’intégration AEM/Creative Cloud pou
 
 Utilisez les stratégies suivantes pour fournir un accès aux ressources finales/approuvées :
 
-* Pour donner accès à un grand nombre de ressources : Utilisez [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=fr) ou l’implémentation par le client de [Partage de ressources](assets-finder-editor.md) sur AEM infrastructure de publication.
+* Pour donner accès à un grand nombre de ressources : Utilisez [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) ou l’implémentation par le client de [Partage de ressources](assets-finder-editor.md) sur AEM infrastructure de publication.
 
 * Pour donner accès à quelques ressources : Le partage AEM dossiers avec Adobe Creative Cloud peut être utilisé en plus d’AEM Assets Brand Portal ou de Asset Share. Veuillez noter qu’il existe certaines limitations liées à cette intégration, décrites plus en détail dans cet article.
 
@@ -270,7 +270,7 @@ Voici quelques recommandations générales concernant la façon de gérer des re
 
 Dans certains cas, il est possible que vous deviez charger simultanément un plus grand nombre de fichiers dans la gestion des ressources numériques (DAM), par exemple :
 
-* Chargement des résultats de  séances photo ou projets de plus grande envergure
+* Chargement des résultats de séances photo ou projets de plus grande envergure
 * Chargement de ressources fournies par les agences de création
 * Transfert de ressources sélectionnées à partir d’un plus grand ensemble si la sélection est effectuée en dehors de la gestion des actifs numériques
 

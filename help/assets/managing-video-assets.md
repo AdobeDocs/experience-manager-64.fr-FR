@@ -5,17 +5,17 @@ uuid: 56a8c221-409f-4605-97b1-a054dd2abfab
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
-feature: Gestion des ressources, vidéo
+feature: Asset Management,Video
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 1795b0faed0570e8130c1ba60de07bda49db8fde
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '793'
 ht-degree: 51%
 
 ---
 
-# Gestion des ressources vidéo {#managing-video-assets}
+# Gestion des ressources vidéo  {#managing-video-assets}
 
 Découvrez comment gérer et modifier les ressources vidéo dans Adobe Experience Manager (AEM) Assets. De plus, si vous possédez une licence d’utilisation Dynamic Media, reportez-vous à la [documentation vidéo sur Dynamic Media](video.md).
 
@@ -44,7 +44,7 @@ Par défaut, AEM Assets ne vous permet pas de charger des ressources de plus de 
 Outre la configuration AEM Assets, modifiez les configurations suivantes pour charger des ressources volumineuses :
 
 * Augmentez le délai d’expiration du jeton. Voir [!UICONTROL Adobe du servlet CSRF Granite] dans la console web à l’adresse `https://[aem_server]:[port]/system/console/configMgr`. Pour plus d’informations, voir [Protection CSRF](/help/sites-developing/csrf-protection.md).
-* Augmentez la configuration `receiveTimeout` du répartiteur. Pour plus d’informations, voir [Configuration du répartiteur Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#renders-options).
+* Augmentez la configuration `receiveTimeout` du répartiteur. Pour plus d’informations, voir [Configuration du répartiteur Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >

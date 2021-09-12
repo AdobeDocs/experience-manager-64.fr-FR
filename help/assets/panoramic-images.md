@@ -6,11 +6,11 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 exl-id: 51150d51-865e-4b8e-9990-ca755e4c7778
-feature: Images panoramiques
+feature: Panoramic Images
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '581'
 ht-degree: 46%
 
 ---
@@ -43,7 +43,7 @@ Pour télécharger des ressources à utiliser avec la visionneuse d’images pan
 
 Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM, vous devez synchroniser les paramètres prédéfinis de la visionneuse d’images panoramiques avec les métadonnées spécifiques à Dynamic Media Classic et Dynamic Media Classic afin que les paramètres prédéfinis de la visionneuse soient mis à jour dans JCR. Pour ce faire, configurez Dynamic Media Classic de la manière suivante :
 
-1. [Connectez-vous à votre ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) application de bureau Dynamic Media Classic pour chaque compte d’entreprise.
+1. [Connectez-vous à votre ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) application de bureau Dynamic Media Classic pour chaque compte d’entreprise.
 
 1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images]**.
 1. Sur la page **[!UICONTROL Publication sur serveur d’images]**, dans le menu déroulant **[!UICONTROL Contexte de publication]** près du haut, sélectionnez **[!UICONTROL Image Serving]**.
@@ -82,6 +82,6 @@ Si vous avez déposé une image dans le composant **[!UICONTROL Média panoramiq
 
 Voir [Aperçu des ressources](previewing-assets.md).
 
-## Publication des images panoramiques  {#publishing-panoramic-images}
+## Publication des images panoramiques {#publishing-panoramic-images}
 
 Voir [Publication de ressources](publishing-dynamicmedia-assets.md).

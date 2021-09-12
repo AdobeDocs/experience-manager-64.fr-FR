@@ -1,8 +1,8 @@
 ---
 title: 'Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)  '
-seo-title: 'Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)  '
+seo-title: Invalidating your CDN cached content
 description: L’annulation de la validité du contenu CDN en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
-seo-description: L’invalidation du contenu de réseau de diffusion de continu (CDN) en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
+seo-description: Invalidating your CDN (Content Delivery Network) cached content lets you quickly update assets that are delivered by Dynamic Media, instead of waiting for the cache to expire.
 uuid: 0fd88e31-9745-4c98-a245-9f5d0766cad4
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 exl-id: 335c7a78-a00f-451b-8e53-225830d429c6
-feature: Gestion des ressources, cache CDN
+feature: Asset Management,CDN Cache
 role: Admin,User,Developer
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 92%
+source-wordcount: '638'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ Voir aussi [Présentation du cache dans Dynamic Media Classic](https://helpx.a
 
 1. Connectez-vous à votre application de bureau Dynamic Media Classic.
 
-   [application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)
+   [application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
