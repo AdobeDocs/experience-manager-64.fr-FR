@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur pour le développement dans AEM 6.4
 breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
-feature: Développement
+feature: Developing
 role: Developer
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 83%
+ht-degree: 81%
 
 ---
 
@@ -36,8 +36,8 @@ ht-degree: 83%
    + [Création d’un site web complet (IU classique)](website.md)
    + [Conceptions et Designer (IU classique)](designer.md)
 + Plate-forme{#platform}
-   + [Aide-mémoire pour Sling ](sling-cheatsheet.md)
-   + [Utilisation des adaptateurs Sling ](sling-adapters.md)
+   + [Aide-mémoire pour Sling](sling-cheatsheet.md)
+   + [Utilisation des adaptateurs Sling](sling-adapters.md)
    + [Bibliothèques de balises](taglib.md)
    + Modèles{#templates}
       + [Modèles](templates.md)
@@ -45,7 +45,7 @@ ht-degree: 83%
       + [Modèles de page - Statiques](page-templates-static.md)
       + [Modèles de fragment de contenu](content-fragment-templates.md)
       + [Rendu de modèle adaptatif](templates-adaptive-rendering.md)
-   + [Utilisation de Sling Resource Merger dans AEM ](sling-resource-merger.md)
+   + [Utilisation de Sling Resource Merger dans AEM](sling-resource-merger.md)
    + [Recouvrements](overlays.md)
    + [Conventions de dénomination](naming-conventions.md)
    + [Création d’un composant de champ d’IU Granite](granite-ui-component.md)
@@ -100,7 +100,7 @@ ht-degree: 83%
       + [Utilisation des xtypes (IU classique)](xtypes.md)
       + [Développement de formulaires (IU classique)](developing-forms.md)
 + Gestion de l’expérience découplée{#headless}
-   + [Sans affichage et hybride avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Sans affichage et hybride avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Activation de l’exportateur JSON pour un composant](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html) 
    + Applications sur une seule page{#spas}
       + [Introduction et présentation des applications sur une seule page (SPA)](spa-walkthrough.md)
@@ -137,12 +137,12 @@ ht-degree: 83%
    + [Extension AEM Brackets](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [Outil AEM Repo](aem-repo-tool.md)
-+ Personnalisation {#personlization}
++ Personnalisation{#personlization}
    + [ContextHub](contexthub.md)
    + [Guide de référence pour l’API JavaScript ContextHub](contexthub-api.md)
    + [Extension de ContextHub](ch-extend.md)
    + [Ajout de ContextHub à des pages et accès à des magasins](ch-adding.md)
-   + [Exemples de magasins candidats ContextHub ](ch-samplestores.md)
+   + [Exemples de magasins candidats ContextHub](ch-samplestores.md)
    + [Exemples de types de module d’IU ContextHub](ch-samplemodules.md)
    + [Diagnostic ContextHub](ch-diagnostics.md)
    + [Développement de composants pour du contenu ciblé](target.md)
@@ -170,7 +170,7 @@ ht-degree: 83%
       + [Personnalisation de la structure Adobe Analytics](extending-analytics-framework.md)
       + [Implémentation de l’appellation des pages côté serveur pour Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
-      + [Configurations du service cloud ](extending-cloud-config.md)
+      + [Configurations du service cloud](extending-cloud-config.md)
       + [Création d’un service cloud personnalisé](extending-cloud-config-custom-cloud.md)
    + [Création d’extensions personnalisées](extending-campaign-extensions.md)
    + Forms{#extending-forms}
