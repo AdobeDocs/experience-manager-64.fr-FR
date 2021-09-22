@@ -1,6 +1,6 @@
 ---
 title: Imagerie dynamique
-description: L’imagerie dynamique utilise les caractéristiques de visualisation uniques de chaque utilisateur pour diffuser automatiquement les images optimisées pour leur expérience, ce qui se traduit par des performances accrues et une meilleure interaction.
+description: L’imagerie dynamique applique les caractéristiques de visualisation uniques de chaque utilisateur pour diffuser automatiquement les images optimisées pour leur expérience, ce qui se traduit par des performances accrues et une meilleure interaction.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
@@ -9,10 +9,10 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
 feature: Smart Services
 role: User
-source-git-commit: e43e25fa1d0df2c2b5b72e49c5a54ca88c000ad2
+source-git-commit: cab72662c62dbc6caa05265b350aed26f21e6824
 workflow-type: tm+mt
-source-wordcount: '2547'
-ht-degree: 61%
+source-wordcount: '2561'
+ht-degree: 60%
 
 ---
 
@@ -91,7 +91,7 @@ Le chargement des images représente la majeure partie du temps de chargement d�
 
 Améliorations apportées par la version la plus récente de l’imagerie dynamique :
 
-* Amélioration du classement d’optimisation du référencement Google pour les pages web à l’aide de la technologie d’imagerie dynamique la plus récente.
+* Amélioration du classement d’optimisation du référencement Google pour les pages web qui utilisent la dernière technologie d’imagerie dynamique.
 * Diffusion immédiate de contenus optimisés (au moment de l’exécution).
 * Mise en œuvre de la technologie Adobe Sensei pour effectuer la conversion en fonction de la qualité (qlt) spécifiée dans la demande d’image.
 * Possibilité de désactiver l’imagerie dynamique à l’aide du paramètre d’URL « bfc ».
@@ -132,7 +132,7 @@ Lorsqu’un client demande une image, l’imagerie dynamique vérifie les caract
 
 Si la taille de l’image d’origine est inférieure à celle produite par l’imagerie dynamique, l’image d’origine est diffusée.
 
-## Quels sont les formats d’image pris en charge ?  {#what-image-formats-are-supported}
+## Quels sont les formats d’image pris en charge ? {#what-image-formats-are-supported}
 
 Les formats suivants sont pris en charge dans le cadre de l’imagerie dynamique :
 
@@ -162,7 +162,7 @@ Si vous devez configurer un nouveau domaine personnalisé pour utiliser l’imag
 
 Pour comprendre les conditions préalables requises pour l’imagerie dynamique, consultez la section [Puis-je utiliser l’imagerie dynamique ?](#am-i-eligible-to-use-smart-imaging)
 
-## L’imagerie dynamique est-elle compatible avec le protocole HTTPS ? Et qu’en est-il du protocole HTTP/2 ?  {#does-smart-imaging-working-with-https-how-about-http}
+## L’imagerie dynamique est-elle compatible avec le protocole HTTPS ? Et qu’en est-il du protocole HTTP/2 ? {#does-smart-imaging-working-with-https-how-about-http}
 
 L’imagerie dynamique fonctionne avec les images diffusées sur HTTP ou HTTPS. Elle fonctionne également sur HTTP/2.
 
@@ -193,7 +193,7 @@ Par défaut, l’imagerie dynamique RGPD et l’optimisation du réseau sont dé
 | Europe, Middle East, Africa | 13 Aug 2021 |
 | Asia-Pacific | 22 Jul 2021 | -->
 
-1. [Utilisez Admin Console pour créer un dossier d’assistance.](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. [Utilisez Admin Console pour créer un dossier d’assistance.](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html)
 1. Indiquez les informations suivantes dans votre dossier de support :
 
    1. nom, adresse électronique et numéro de téléphone du contact principal.
@@ -237,7 +237,7 @@ La page web d’un client ne présente aucun risque. Cependant, la transition ve
 
 Au cours de la transition initiale, les images non mises en cache accèdent directement aux serveurs d’origine d’Adobe jusqu’à ce que le cache soit reconstitué. Par conséquent, Adobe prévoit de gérer quelques transitions à la fois afin de maintenir des performances acceptables lors de l’extraction des requêtes à partir de l’origine de l’Adobe. Pour la plupart des utilisateurs, le cache est entièrement reconstitué au niveau du réseau CDN sous 1 à 2 jours.
 
-## Comment puis-je vérifier si l’imagerie dynamique fonctionne comme prévu ?   {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
+## Comment puis-je vérifier si l’imagerie dynamique fonctionne comme prévu ?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Une fois que l’imagerie dynamique est activée sur votre compte, chargez une URL d’image Dynamic Media Classic/Dynamic Media sur le navigateur.
 1. Ouvrez le volet de Chrome pour les développeurs en cliquant sur **[!UICONTROL Afficher]** > **[!UICONTROL Développeur]** > **[!UICONTROL Outils de développement]** dans le navigateur. Vous pouvez également sélectionner l’outil de développement de navigateur de votre choix.
@@ -281,3 +281,9 @@ L’imagerie dynamique détermine si la conversion apporte ou non un bénéfice.
 * Les composants principaux des sites Experience Manager sont configurés par défaut pour l’optimisation du RPD. Pour éviter les images surdimensionnées en raison de l’optimisation du RGPD de l’imagerie dynamique côté serveur, `dpr=off` est toujours ajouté aux images Dynamic Media des composants principaux des sites Experience Manager.
 * Étant donné que le composant Dynamic Media Foundation est configuré par défaut pour l’optimisation du RGPD, afin d’éviter les images surdimensionnées en raison de l’optimisation de l’imagerie dynamique côté serveur, `dpr=off` est toujours ajouté aux images du composant Dynamic Media Foundation. Même si le client désélectionne l’optimisation du RGPD dans le composant Foundation DM, le RGPD de l’imagerie dynamique côté serveur ne démarre pas. En résumé, dans le composant de base DM, l’optimisation du RPD entre en vigueur en fonction du paramètre au niveau du composant de base DM uniquement.
 * Toute optimisation du RGPD côté visionneuse fonctionne en tandem avec l’optimisation du RGPD de l’imagerie dynamique côté serveur et n’entraîne pas de surdimensionnement des images. En d’autres termes, là où le RGPD est géré par la visionneuse, par exemple la vue principale uniquement dans une visionneuse avec zoom activé, les valeurs du RGPD de l’imagerie dynamique côté serveur ne sont pas déclenchées. De même, lorsque les éléments de visionneuse, tels que les échantillons et les miniatures, ne sont pas gérés en vertu du RGPD, la valeur du RGPD d’imagerie dynamique côté serveur est déclenchée.
+
+>[!MORELIKETHIS]
+>
+>* [Optimisation des images avec les formats d’image de nouvelle génération WebP et AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+>
+
