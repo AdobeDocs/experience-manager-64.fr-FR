@@ -1,8 +1,8 @@
 ---
 title: Développement et extension des workflows
-seo-title: Développement et extension des workflows
-description: AEM fournit plusieurs outils et ressources pour créer des modèles de workflow, développer des étapes de workflow et interagir par programme avec les workflows.
-seo-description: AEM fournit plusieurs outils et ressources pour créer des modèles de workflow, développer des étapes de workflow et interagir par programme avec les workflows.
+seo-title: Developing and Extending Workflows
+description: AEM fournit plusieurs outils et ressources pour créer des modèles de workflow, développer des étapes de workflow et interagir par programmation avec les workflows.
+seo-description: AEM provides several tools and resources for creating workflow models, developing workflow steps, and for programmatically interacting with workflows
 uuid: 5a857589-3b13-4519-bda2-b1dab6005550
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,16 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 exl-id: 4f9bd75c-9d54-4cd6-9d73-5d580be5a9e8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 608c0fbd7eb0fc06fccf8cbcaebf874bff36d5e0
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 75%
+source-wordcount: '1512'
+ht-degree: 72%
 
 ---
 
 # Développement et extension des workflows{#developing-and-extending-workflows}
 
-AEM fournit plusieurs outils et ressources pour créer des modèles de workflow, développer des étapes de workflow et interagir par programme avec les workflows.
+AEM fournit plusieurs outils et ressources pour créer des modèles de workflow, développer des étapes de workflow et interagir par programmation avec les workflows.
 
 Les workflows vous permettent d’automatiser les processus pour gérer les ressources et publier le contenu dans votre environnement AEM. Les workflows sont constitués d’une série d’étapes accomplissant chacune une tâche discrète. Vous pouvez utiliser la logique et les données d’exécution pour prendre des décisions quant au moment où un processus peut se poursuivre et choisir l’étape suivante parmi plusieurs possibles.
 
@@ -46,7 +46,6 @@ Les aspects clés sont présentés ci-dessous, tandis que les pages suivantes ab
 >* les modifications apportées aux emplacements des informations, voir [Restructuration de référentiel dans AEM 6.4](/help/sites-deploying/repository-restructuring.md) et [Meilleures pratiques relatives aux workflows – emplacements](/help/sites-developing/workflows-best-practices.md#locations).
 
 >
-
 
 
 ## Modèle {#model}
@@ -164,7 +163,6 @@ Les workflows transitoires ont été introduits pour charger un grand nombre de 
 >
 
 
-
 >[!CAUTION]
 >
 >Dans un workflow transitoire, vous ne devriez pas utiliser **Atteindre l’étape**.
@@ -217,6 +215,6 @@ En règle générale, les workflows sont utilisés pour traiter les envois de fo
 
 Lors de la création d’un formulaire, l’envoi de ce formulaire peut facilement être associé à un modèle de workflow ; par exemple pour stocker le contenu dans un emplacement précis du référentiel ou pour notifier un utilisateur de l’envoi du formulaire et de son contenu.
 
-### workflows et traduction  {#workflows-and-translation}
+### workflows et traduction {#workflows-and-translation}
 
 Les workflows font également partie intégrante du processus [Traduction](/help/sites-administering/translation.md).
