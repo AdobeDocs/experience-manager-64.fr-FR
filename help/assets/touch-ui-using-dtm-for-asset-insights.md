@@ -2,12 +2,12 @@
 title: Activation des statistiques sur les ressources via DTM
 description: Découvrez comment utiliser Adobe Dynamic Tag Management (DTM) pour activer Assets Insights.
 contentOwner: AG
-feature: Statistiques sur les ressources, rapports sur les ressources
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '679'
 ht-degree: 36%
 
 ---
@@ -18,11 +18,11 @@ La gestion dynamique des balises Adobe est un outil permettant d’activer vos o
 
 >[!CAUTION]
 >
->Adobe DTM est obsolète en faveur d’Adobe Experience Platform Launch et atteindra bientôt la [fin de vie](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe vous recommande [d’utiliser Launch pour obtenir des informations sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe de la gestion dynamique des balises est abandonnée au profit de [!DNL Adobe Experience Platform] et atteindra bientôt la [fin de vie](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe vous recommande [d’utiliser [!DNL Adobe Experience Platform] pour les informations sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Effectuez les étapes suivantes pour activer Assets Insights via DTM :
 
-1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils > Ressources > Configuration des statistiques]**.
+1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Configuration des statistiques]**.
 1. [Configuration de l’instance AEM avec le service cloud de gestion dynamique des balises](../sites-administering/dtm.md)
 
    Le jeton API doit être disponible une fois que vous vous connectez à [https://dtm.adobe.com](https://dtm.adobe.com/) et que vous accédez à **[!UICONTROL Paramètres du compte]** à partir de l’icône Profil . Cette étape n’est pas requise du point de vue d’Assets Insights, car l’intégration d’AEM Sites à Assets Insights est toujours en cours d’exécution.

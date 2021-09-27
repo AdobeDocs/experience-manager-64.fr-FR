@@ -2,12 +2,12 @@
 title: Importation et exportation de métadonnées en masse
 description: Cet article explique comment importer et exporter des métadonnées en masse.
 contentOwner: AG
-feature: Métadonnées
+feature: Metadata
 role: User,Admin
 exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '640'
 ht-degree: 75%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 75%
 
 AEM Assets permet d’importer des métadonnées de ressources par lot à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour par lot pour les ressources récemment transférées ou les ressources existantes en important un fichier CSV. Vous pouvez également assimiler des métadonnées de ressources par lot à partir d’un système tiers au format CSV.
 
-## Importation de métadonnées   {#import-metadata}
+## Importation de métadonnées {#import-metadata}
 
 L’importation de métadonnées est asynchrone et ne nuit pas aux performances du système. La mise à jour simultanée des métadonnées pour plusieurs ressources peut être gourmande en ressources en raison de l’activité d’écriture différée XMP si l’indicateur de workflow est coché. Planifiez un tel import pendant l’utilisation allégée du serveur afin d’éviter un impact sur les performances des autres utilisateurs.
 
@@ -36,7 +36,7 @@ Pour importer des métadonnées en bloc, procédez comme suit :
    | [!UICONTROL Taille du lot] | Nombre de ressources dans un lot pour lesquelles les métadonnées doivent être importées. La valeur par défaut est 50. La valeur maximale est 100. |
    | [!UICONTROL Séparateur de champs] | La valeur par défaut est `,` - une virgule. Vous pouvez spécifier n’importe quel autre caractère. |
    | [!UICONTROL Délimiteur à plusieurs valeurs] | Séparateur des valeurs de métadonnées. La valeur par défaut est `|` - une barre verticale. |
-   | [!UICONTROL Lancer les workflows] | Faux par défaut. Lorsque la valeur est définie sur true et que les paramètres par défaut du lanceur sont en vigueur pour la balise `DAM Metadata WriteBack Workflow` (qui écrit des métadonnées dans les données XMP binaires). L’activation des workflows de lancement a un impact sur les performances du système. |
+   | [!UICONTROL Lancer les workflows] | Faux par défaut. Lorsque la valeur est définie sur true et que les paramètres par défaut sont en vigueur pour `DAM Metadata WriteBack Workflow` (qui écrit des métadonnées dans les données XMP binaires). L’activation des workflows a un impact sur les performances du système. |
    | [!UICONTROL Nom de colonne du chemin d’accès à la ressource] | Définit le nom de la colonne du fichier CSV avec des ressources. |
 
 1. Appuyez/cliquez sur **[!UICONTROL Importer]** dans la barre d’outils. Une fois les métadonnées importées, une notification est envoyée à votre boîte de réception de notifications. Accédez à la page de propriété des ressources et vérifiez que les valeurs des métadonnées sont correctement importées pour les ressources.
