@@ -1,8 +1,8 @@
 ---
 title: Configuration des notifications électroniques
-seo-title: Configuration des notifications électroniques
+seo-title: Configuring Email Notification
 description: Découvrez comment configurer les notifications électroniques dans AEM.
-seo-description: Découvrez comment configurer les notifications électroniques dans AEM.
+seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: ea12035c-09b6-4197-ab23-c27fe71e7432
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3a206c2fa8c18876b6e1481e2feb86857b5219c4
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1134'
 ht-degree: 77%
 
 ---
@@ -82,7 +82,7 @@ Utilisez la procédure suivante pour définir le nœud dans vos dossiers sources
 
 1. Enregistrez le fichier.
 
-## Configuration du service de notification électronique de workflow  {#configuring-the-workflow-email-notification-service}
+## Configuration du service de notification électronique de workflow {#configuring-the-workflow-email-notification-service}
 
 Lorsque vous recevez des notifications électroniques de workflow, l’adresse électronique De et le préfixe URL hôte sont définis sur les valeurs par défaut. Vous pouvez modifier ces valeurs en configurant le **service de notification électronique de workflow Day CQ** dans la console Web. Dans ce cas, il est recommandé de conserver le changement dans le référentiel.
 
@@ -94,7 +94,7 @@ La configuration par défaut se présente comme suit dans la console Web :
 
 Les modèles de courrier électronique pour les notifications de page se trouvent à l’emplacement suivant :
 
-`/etc/notification/email/default/com.day.cq.wcm.core.page`
+`/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
 Le modèle en anglais par défaut (`en.txt`) est défini comme suit :
 
@@ -121,7 +121,7 @@ Pour personnaliser le modèle de courrier électronique en anglais en vue de la 
 
 1. Dans CRXDE, ouvrez le fichier :
 
-   `/etc/notification/email/default/com.day.cq.wcm.core.page/en.txt`
+   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
 
 1. Modifiez le fichier en fonction de vos besoins.
 1. Enregistrez les modifications.
@@ -205,7 +205,7 @@ Les variables suivantes peuvent être utilisées dans le modèle de courrier él
 
 Le modèle de courrier électronique pour les notifications de workflow (en anglais) se trouve à l’emplacement suivant :
 
-`/etc/workflow/notification/email/default/en.txt`
+`/libs/settings/workflow/notification/email/default/en.txt`
 
 Il est défini comme suit :
 
@@ -228,13 +228,13 @@ View the overview in your ${host.prefix}/aem/inbox\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### Personnalisation des modèles de courrier électronique pour la notification de workflow  {#customizing-email-templates-for-workflow-notification}
+#### Personnalisation des modèles de courrier électronique pour la notification de workflow {#customizing-email-templates-for-workflow-notification}
 
 Pour personnaliser le modèle de courrier électronique en anglais en vue de la notification d’événement de workflow :
 
 1. Dans CRXDE, ouvrez le fichier :
 
-   `/etc/workflow/notification/email/default/en.txt`
+   `/libs/settings/workflow/notification/email/default/en.txt`
 
 1. Modifiez le fichier en fonction de vos besoins.
 1. Enregistrez les modifications.
@@ -292,9 +292,9 @@ Pour ajouter un modèle pour une nouvelle langue :
 
 1. Dans CRXDE, ajoutez un fichier `<language-code>.txt` ci-dessous :
 
-   * `/etc/notification/email/default/com.day.cq.wcm.core.page` : pour les notifications de page
+   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : pour les notifications de page
    * `/etc/notification/email/default/com.day.cq.collab.forum` : pour les notifications de forum
-   * `/etc/workflow/notification/email/default` : pour les notifications de workflow
+   * `/libs/settings/workflow/notification/email/default` : pour les notifications de workflow
 
 1. Adaptez le fichier à la langue.
 1. Enregistrez les modifications.
