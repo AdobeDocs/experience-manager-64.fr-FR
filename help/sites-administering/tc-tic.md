@@ -1,19 +1,19 @@
 ---
 title: Configuration de la structure d’intégration de traduction
-seo-title: Configuration de la structure d’intégration de traduction
+seo-title: Configuring the Translation Integration Framework
 description: Découvrez comment configurer la structure d’intégration de traduction.
-seo-description: Découvrez comment configurer la structure d’intégration de traduction.
+seo-description: Learn how to configure the Translation Integration Framework.
 uuid: 5ecfe154-732f-4a13-96f8-92f55023c54d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
-feature: Copie de la langue
+feature: Language Copy
 exl-id: e68b5a5c-e12a-4b7b-b607-451ef8fdeff0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a9459872f9ce8e68dccb46e7dfddebe9eeb39bd4
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1550'
 ht-degree: 77%
 
 ---
@@ -38,7 +38,7 @@ Créez une configuration de cloud qui connecte AEM à votre fournisseur de servi
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [CrossLang NV](https://exchange.adobe.com/experiencecloud.details.90049.crosslang-xtm-for-adobe-experience-manager.html)
+* [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
@@ -55,7 +55,6 @@ Créez une configuration de cloud qui connecte AEM à votre fournisseur de servi
 >* [Traduction automatique dans AEM](https://www.adobe.com/go/aem-machine-translation-connectors)
 
 >
-
 
 
 Une fois que vous avez installé un module de connecteur, vous pouvez créer une configuration de cloud pour le connecteur. En général, vous devez fournir vos informations d’identification afin de vous authentifier auprès du service de traduction. Pour plus d’informations sur l’ajout d’une configuration de cloud pour le connecteur Microsoft Translator, voir [Intégration à Microsoft Translator](/help/sites-administering/tc-msconf.md).
