@@ -1,20 +1,20 @@
 ---
 title: Recherche de ressources dans AEM
-description: Découvrez comment rechercher les ressources souhaitées dans AEM à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
+description: Découvrez comment rechercher les ressources souhaitées dans [!DNL Experience Manager] à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 contentOwner: AG
-feature: Recherche, Métadonnées
+feature: Search,Metadata
 role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '549'
 ht-degree: 88%
 
 ---
 
-# Recherche de ressources dans AEM {#search-assets-in-aem}
+# Recherche de ressources dans [!DNL Experience Manager] {#search-assets-in-aem}
 
-Découvrez comment rechercher les ressources souhaitées dans AEM à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
+Découvrez comment rechercher les ressources souhaitées dans[!DNL Experience Manager]à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 
 Utilisez le panneau Filtres pour rechercher des ressources, des dossiers, des balises et des métadonnées. Vous pouvez rechercher des parties d’une chaîne en utilisant le caractère générique astérisque.
 

@@ -1,8 +1,8 @@
 ---
 title: Intégration de la visionneuse de vidéos ou d’images Dynamic Media dans une page web
-seo-title: Intégration de la visionneuse de vidéos ou d’images Dynamic Media dans une page web
+seo-title: Embedding the Dynamic Media Video or Image viewer on a web page
 description: Découvrez comment intégrer des images ou des vidéos Dynamic Media dans une page web
-seo-description: Découvrez comment incorporer des vidéos ou des images Dynamic Media dans une page web
+seo-description: Learn how to embed Dynamic media video or images on a web page
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 exl-id: bff564a8-e982-4e1a-a9b5-05e44e3e4d46
-feature: Composants
+feature: Components
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 96%
+source-wordcount: '367'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 96%
 
 Utilisez la fonction **[!UICONTROL Code incorporé]** lorsque vous souhaitez lire une vidéo ou afficher une ressource incorporée dans une page web. Vous copiez le code incorporé dans le Presse-papiers afin de le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Code incorporé]**.
 
-Vous devez incorporer les URL uniquement si vous _n’utilisez pas_ AEM comme outil de gestion de contenu web. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page.](adding-dynamic-media-assets-to-pages.md)
+Vous devez incorporer les URL uniquement si vous _n’utilisez pas_ comme outil de gestion de contenu web. [!DNL Experience Manager] Si vous utilisez [!DNL Experience Manager] comme gestion du contenu web, [vous ajoutez les ressources directement sur votre page.](adding-dynamic-media-assets-to-pages.md)
 
 Voir [Liaison d’URL à une application web.](linking-urls-to-yourwebapplication.md)
 

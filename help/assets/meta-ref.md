@@ -2,13 +2,13 @@
 title: Référence des schémas de métadonnées
 description: 'Découvrez les conventions standard permettant de décrire les métadonnées des ressources, y compris Dublin Core, IPTC et d’autres schémas de métadonnées. '
 contentOwner: AG
-feature: Métadonnées
+feature: Metadata
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 97%
+source-wordcount: '392'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ La référence ci-après contient des informations sur un schéma de métadonné
 
 ## Dublin Core {#dublin-core}
 
-La métadonnée Dublin Core fournit un ensemble de conventions normalisé pour décrire les ressources afin de faciliter leur recherche. Dans AEM Assets, Dublin Core décrit les ressources numériques, y compris les vidéos, le son, les images et les documents.
+La métadonnée Dublin Core fournit un ensemble de conventions normalisé pour décrire les ressources afin de faciliter leur recherche. Dans [!DNL Experience Manager] Assets, Dublin Core décrit les ressources numériques, notamment la vidéo, le son, les images et les documents.
 
 Le DCMES (Dublin Core Metadata Element Set) contient 15 éléments de métadonnées qui sont répertoriés dans le tableau ci-après. Chaque élément Dublin Core est facultatif et peut être utilisé plusieurs fois. Vous pouvez ajouter ou supprimer des informations de métadonnées Dublin Core comme vous le feriez pour les métadonnées spécifiques au type de média.
 
@@ -31,7 +31,7 @@ Outre le DCMES, il existe d’autres éléments de métadonnées créés par le 
 | creator | Personne ou entreprise chargée de la création du contenu. |
 | date | Date ou période associée à la ressource. |
 | description | Informations supplémentaires sur la ressource. |
-| format | Format de fichier, support physique ou dimensions de la ressource. AEM utilise dc:format pour représenter le type MIME de la ressource. |
+| format | Format de fichier, support physique ou dimensions de la ressource. [!DNL Experience Manager] utilise dc:format pour représenter le type MIME de la ressource. |
 | identifier | Référence unique à la ressource. |
 | language | Langue de la ressource (« en » pour l’anglais, par exemple). |
 | publisher | Personne ou entreprise chargée de rendre la ressource disponible. |

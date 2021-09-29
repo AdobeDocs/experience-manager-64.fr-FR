@@ -2,13 +2,13 @@
 title: Traiter les ressources pour exécuter les processus d’entreprise, réaliser des audits, assurer la conformité et maintenir une intégrité de base
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des workflows.
 contentOwner: AG
-feature: Workflow,Rendus
+feature: Workflow,Renditions
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 28%
+source-wordcount: '1032'
+ht-degree: 27%
 
 ---
 
@@ -40,7 +40,7 @@ Utilisez les workflows dans les ressources numériques pour activer les ressourc
 >
 >Si un workflow disponible dans l’IU classique n’est pas disponible dans l’IU tactile, par exemple [!UICONTROL Demande d’activation] et [!UICONTROL Demande de désactivation], voir [Créer des modèles de workflow](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui).
 
-## Application d’un workflow à une ressource AEM {#apply-a-workflow-to-an-aem-asset}
+## Application d’un workflow à une ressource [!DNL Experience Manager] {#apply-a-workflow-to-an-aem-asset}
 
 <!-- 
 TBD: Add animated GIF for these steps instead of all these screenshots.
@@ -111,7 +111,7 @@ Pour un modèle de workflow, les utilisateurs peuvent créer un lanceur de workf
 >[!MORELIKETHIS]
 >
 >* [Application et participation aux workflows](/help/sites-authoring/workflows.md)
-* [Création de modèles de workflow et extension de la fonctionnalité de workflow](/help/sites-developing/workflows.md)
-* [Méthodes d’exécution de workflows](/help/sites-administering/workflows-starting.md)
-* [Bonnes pratiques relatives aux workflows](/help/sites-developing/workflows-best-practices.md)
+>* [Création de modèles de workflow et extension de la fonctionnalité de workflow](/help/sites-developing/workflows.md)
+>* [Méthodes d’exécution de workflows](/help/sites-administering/workflows-starting.md)
+>* [Bonnes pratiques relatives aux workflows](/help/sites-developing/workflows-best-practices.md)
 

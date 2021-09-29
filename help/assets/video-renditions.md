@@ -2,19 +2,19 @@
 title: Rendus vidéo
 description: Rendus vidéo
 contentOwner: AG
-feature: Vidéo,Rendus
+feature: Video,Renditions
 role: User
 exl-id: 9fc93034-e83a-42b5-901d-7867b4a850a8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 99%
+source-wordcount: '220'
+ht-degree: 91%
 
 ---
 
 # Rendus vidéo {#video-renditions}
 
-Le composant Adobe Experience Manager (AEM) Assets génère des rendus vidéo pour les ressources vidéo de différents formats dont OGG, FLV, etc.
+Adobe Experience Manager Assets génère des rendus vidéo pour les ressources vidéo de différents formats, notamment OGG, FLV, etc.
 
 Le composant AEM Assets prend en charge les rendus statiques et dynamiques (rendus avec codage DM) pour les ressources multimédias.
 

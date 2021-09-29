@@ -1,20 +1,20 @@
 ---
 title: Meilleures pratiques relatives au format de fichier des ressources
-description: Meilleures pratiques relatives à la prise en charge des fichiers dans AEM Assets.
+description: Bonnes pratiques relatives à la prise en charge des fichiers dans  [!DNL Experience Manager] Assets.
 contentOwner: AG
-feature: Gestion des ressources,Outils de développement
+feature: Asset Management,Developer Tools
 role: Admin
 exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 91%
+source-wordcount: '424'
+ht-degree: 88%
 
 ---
 
 # Meilleures pratiques relatives au format de fichier des ressources {#assets-file-format-best-practices}
 
-AEM Assets prend en charge de nombreuses bibliothèques de formats de fichiers propriétaires et tierces pour gérer les divers besoins des utilisateurs en matière de prise en charge des fichiers. Les bibliothèques Adobe prises en charge comprennent Adobe Camera Raw, Gibson, Adobe PDF Rasterizer et Adobe InDesign Server. En outre, AEM Assets prend en charge les bibliothèques tierces, y compris ImageMagick, TwelveMonkeys, etc.
+[!DNL Experience Manager Assets] prend en charge de nombreuses bibliothèques de formats de fichiers propriétaires et tierces pour gérer les divers besoins des utilisateurs en matière de prise en charge des fichiers. Les bibliothèques Adobe prises en charge comprennent Adobe Camera Raw, Gibson, Adobe PDF Rasterizer et Adobe InDesign Server. En outre, [!DNL Assets] prend en charge les bibliothèques tierces, notamment ImageMagick, TwelveMonkeys, etc.
 
 Pour les formats de fichiers pris en charge, voir [Formats pris en charge par AEM Assets](assets-formats.md).
 
@@ -27,7 +27,7 @@ Pour des performances optimales, Adobe recommande d’utiliser la bibliothèque 
 
 La bibliothèque Adobe Camera Raw prend en charge le profil de couleurs CMJN en entrée. Cependant, elle génère la sortie dans l’espace colorimétrique RVB et ne la prend en charge qu’au format JPEG. Elle ne conserve pas l’espace colorimétrique du fichier source (CMJN, par exemple) dans les miniatures.
 
-Pour plus d’informations, voir [Prise en charge de Camera Raw](camera-raw.md) dans AEM Assets.
+Pour plus d’informations, voir [Prise en charge de Camera Raw](camera-raw.md) dans [!DNL Assets].
 
 ## Bibliothèque Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
 
@@ -41,7 +41,7 @@ Les miniatures et les aperçus générés à l’aide de l’interpréteur de PD
 
 ## Serveur Adobe InDesign {#adobe-indesign-cc-server}
 
-Adobe vous recommande d’utiliser le serveur Adobe InDesign pour extraire des rendus spécifiques à Adobe InDesign, tels que IDML et HTML. Pour plus d’informations, voir [Ajout d’AEM ressources en tant que références dans Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
+Adobe vous recommande d’utiliser le serveur Adobe InDesign pour extraire des rendus spécifiques à Adobe InDesign, tels que IDML et HTML. Pour plus d’informations, voir [Ajout de  [!DNL Experience Manager] ressources en tant que références dans Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
 
 ## Dynamic Media  {#dynamic-media}
 
@@ -58,7 +58,7 @@ Adobe recommande d’utiliser la bibliothèque ImageMagick dans les cas suivants
 * Pour conserver la transparence
 * Pour traiter des fichiers PSD et PSB
 
-Pour savoir comment configurer la bibliothèque ImageMagic dans AEM, voir [Utilisation d’ImageMagick](media-handlers.md#an-example-using-imagemagick). Pour une utilisation optimale, voir [Bonnes pratiques pour configurer ImageMagick](best-practices-for-imagemagick.md).
+Pour savoir comment configurer la bibliothèque ImageMagic dans [!DNL Experience Manager], voir [Utilisation d’ImageMagick](media-handlers.md#an-example-using-imagemagick). Pour une utilisation optimale, voir [Bonnes pratiques pour configurer ImageMagick](best-practices-for-imagemagick.md).
 
 ## Bibliothèque de transcodage d’imagerie (ITL) {#image-transcoding-library}
 

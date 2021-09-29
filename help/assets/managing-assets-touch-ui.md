@@ -1,27 +1,27 @@
 ---
-title: Gestion de vos ressources numériques à l’aide d’AEM Assets
-description: Découvrez les différentes tâches de gestion et de modification des ressources que vous pouvez réaliser à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’AEM Assets
+title: Gestion des ressources numériques à l’aide de  [!DNL Experience Manager] Assets
+description: Découvrez les différentes tâches de gestion et de modification des ressources que vous pouvez effectuer à l’aide de l’interface utilisateur optimisée pour les écrans tactiles de  [!DNL Experience Manager] Assets.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Gestion des ressources,Recherche,Rendus,Collaboration
+feature: Asset Management,Search,Renditions,Collaboration
 role: User
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '10131'
-ht-degree: 67%
+source-wordcount: '10078'
+ht-degree: 62%
 
 ---
 
-# Gestion des ressources numériques {#managing-assets-with-the-touch-optimized-ui}
+# Gérer vos ressources numériques {#managing-assets-with-the-touch-optimized-ui}
 
-Découvrez les différentes tâches de gestion et de modification des ressources que vous pouvez réaliser à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’AEM Assets.
+Découvrez les différentes tâches de gestion et de modification des ressources que vous pouvez effectuer à l’aide de l’interface utilisateur optimisée pour les écrans tactiles de [!DNL Experience Manager] Assets.
 
-Cet article décrit comment gérer et modifier des ressources à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’Adobe Experience Manager (AEM) Assets. Pour une connaissance élémentaire de l’interface utilisateur, voir [Gestion de base de l’interface utilisateur tactile](/help/sites-authoring/basic-handling.md). Pour gérer les fragments de contenu, voir [Gestion des fragments de contenu](content-fragments-managing.md) ressources.
+Cet article décrit comment gérer et modifier des ressources à l’aide de l’interface utilisateur optimisée pour les écrans tactiles d’Adobe Experience Manager Assets. Pour une connaissance élémentaire de l’interface utilisateur, voir [Gestion de base de l’interface utilisateur tactile](/help/sites-authoring/basic-handling.md). Pour gérer les fragments de contenu, voir [Gestion des fragments de contenu](content-fragments-managing.md) ressources.
 
 ## Création de dossiers   {#create-folders}
 
-Lorsque vous organisez une collection de ressources, comme toutes les images `Nature`, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. AEM Assets ne nécessite pas de classer les ressources dans des dossiers pour mieux fonctionner.
+Lorsque vous organisez une collection de ressources, comme toutes les images `Nature`, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. [!DNL Experience Manager] Assets ne nécessite pas de classer les ressources dans des dossiers pour mieux fonctionner.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici 
 
 ## Charger des ressources {#uploading-assets}
 
-Vous pouvez transférer différents types de ressource (dont des images, des fichiers PDF, des fichiers RAW, etc.) de votre dossier local ou d’un lecteur réseau vers AEM Assets.
+Vous pouvez télécharger différents types de ressources (y compris des images, des fichiers PDF, des fichiers RAW, etc.) à partir de votre dossier local ou d’un lecteur réseau vers [!DNL Experience Manager] Assets.
 
 >[!NOTE]
 >
@@ -79,11 +79,11 @@ Avant de charger une ressource, vérifiez qu’elle est dans un [format pris en 
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-   Pour annuler un chargement en cours, cliquez sur le bouton `X` situé en regard de la barre de progression. Lorsque vous annulez le transfert, AEM Assets supprime la partie partiellement transférée de la ressource.
+   Pour annuler un chargement en cours, cliquez sur le bouton `X` situé en regard de la barre de progression. Lorsque vous annulez le chargement, [!DNL Experience Manager] Assets supprime la partie partiellement chargée de la ressource.
 
    La possibilité de reprendre le téléchargement s’avère particulièrement utile dans les scénarios dans lesquels la bande passante est faible et le réseau dysfonctionne, car le téléchargement d’une ressource volumineuse prend un long moment. Vous pouvez suspendre l’opération de transfert et la reprendre ultérieurement lorsque la situation s’améliore. Lorsque vous reprenez le transfert, il commence au niveau où vous l’avez suspendu.
 
-   Pendant l’opération de transfert, AEM enregistre les parties de la ressource en cours de transfert sous forme de blocs de données dans le référentiel CRX. Une fois le transfert terminé, AEM regroupe ces blocs en un seul bloc de données dans le référentiel.
+   Au cours de l’opération de chargement, [!DNL Experience Manager] enregistre les parties de la ressource en cours de chargement en tant que blocs de données dans le référentiel CRX. Une fois le chargement terminé, [!DNL Experience Manager] regroupe ces blocs en un seul bloc de données dans le référentiel.
 
    Pour configurer la tâche de nettoyage pour les tâches de chargement de blocs non terminées, accédez à `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
@@ -99,7 +99,7 @@ Avant de charger une ressource, vérifiez qu’elle est dans un [format pris en 
    >
    >Si **[!UICONTROL Statistiques sur les ressources]** est activé pour effectuer le suivi des impressions/clics avec Adobe Analytics, cet ID de ressource régénéré invalide les données capturées pour la ressource sur Adobe Analytics.
 
-   Si la ressource que vous téléchargez existe dans AEM Assets, la boîte de dialogue **[!UICONTROL Doublons détectés]** vous avertit que vous tentez de télécharger une ressource en double. La boîte de dialogue s’affiche uniquement si la valeur de somme de contrôle SHA 1 du fichier binaire des ressources existantes correspond à celle de la ressource que vous téléchargez. Dans ce cas, le nom des ressources est immatériel. En d’autres termes, la boîte de dialogue peut même s’afficher pour des ressources dont le nom diffère si la valeur SHA 1 de leur fichier binaire est identique.
+   Si la ressource que vous téléchargez existe dans [!DNL Experience Manager] Ressources, la boîte de dialogue **[!UICONTROL Doublons détectés]** vous avertit que vous tentez de télécharger une ressource en double. La boîte de dialogue s’affiche uniquement si la valeur de somme de contrôle SHA 1 du fichier binaire des ressources existantes correspond à celle de la ressource que vous téléchargez. Dans ce cas, le nom des ressources est immatériel. En d’autres termes, la boîte de dialogue peut même s’afficher pour des ressources dont le nom diffère si la valeur SHA 1 de leur fichier binaire est identique.
 
    >[!NOTE]
    >
@@ -107,9 +107,9 @@ Avant de charger une ressource, vérifiez qu’elle est dans un [format pris en 
 
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
-   Appuyez sur **[!UICONTROL Conserver]** pour conserver la ressource en double dans AEM Assets. Appuyez sur **[!UICONTROL Supprimer]** pour supprimer la ressource en double que vous avez chargée.
+   Appuyez sur **[!UICONTROL Conserver]** pour conserver la ressource en double dans [!DNL Experience Manager] Assets. Appuyez sur **[!UICONTROL Supprimer]** pour supprimer la ressource en double que vous avez chargée.
 
-   AEM Assets vous empêche de transférer des ressources dont le nom de fichier contient des caractères interdits. Si vous tentez de charger une ressource contenant des caractères interdits, AEM Assets affiche un message d’avertissement à ce sujet et interrompt le chargement jusqu’à ce que vous supprimiez les caractères concernés ou utilisiez un nom autorisé.
+   [!DNL Experience Manager] Assets vous empêche de transférer des ressources dont le nom de fichier contient des caractères interdits. Si vous tentez de charger une ressource qui comprend des caractères interdits, [!DNL Experience Manager] Assets affiche un message d’avertissement concernant la présence de caractères interdits dans le nom de fichier et interrompt le chargement jusqu’à ce que vous supprimiez ces caractères ou utilisiez un nom autorisé.
 
    Pour prendre en compte les conventions d’appellation en vigueur dans votre entreprise, la boîte de dialogue **[!UICONTROL Télécharger les ressources]** vous permet de spécifier des noms longs pour les fichiers que vous chargez.
 
@@ -125,13 +125,13 @@ Avant de charger une ressource, vérifiez qu’elle est dans un [format pris en 
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
-   Si vous annulez le transfert avant la fin de l’opération, AEM Assets arrête le transfert du fichier en cours et actualise le contenu. Toutefois, les fichiers déjà chargés ne sont pas supprimés.
+   Si vous annulez l’opération de chargement avant que les fichiers ne soient chargés, [!DNL Experience Manager] Assets arrête le chargement du fichier actif et actualise le contenu. Toutefois, les fichiers déjà chargés ne sont pas supprimés.
 
 ### Transferts en série {#serial-uploads}
 
-Le chargement en masse de nombreuses ressources consomme d’importantes ressources système, ce qui peut avoir un impact négatif sur les performances de votre déploiement AEM. Les goulets d’étranglement potentiels peuvent être votre connexion Internet, les opérations de lecture-écriture sur le disque, les limitations du navigateur web quant au nombre de demandes du POST lors du chargement simultané de ressources. L’opération de chargement en masse peut échouer ou se terminer prématurément. Autrement dit, AEM Assets peut ignorer certains fichiers lors de l’assimilation, voire n’assimiler aucun fichier.
+Le chargement en masse de nombreuses ressources consomme d’importantes ressources système, ce qui peut avoir un impact négatif sur les performances de votre déploiement [!DNL Experience Manager]. Les goulets d’étranglement potentiels peuvent être votre connexion Internet, les opérations de lecture-écriture sur le disque, les limitations du navigateur web quant au nombre de demandes du POST lors du chargement simultané de ressources. L’opération de chargement en masse peut échouer ou se terminer prématurément. En d’autres termes, les ressources [!DNL Experience Manager] peuvent manquer certains fichiers lors de l’ingestion d’un ensemble de fichiers ou ne pas ingérer de fichier.
 
-Pour remédier à cette situation, AEM Assets assimile une ressource à la fois (chargement en série) au cours d’une opération de chargement en masse, plutôt que d’assimiler toutes les ressources simultanément.
+Pour remédier à cette situation, [!DNL Experience Manager] Assets ingère une ressource à la fois (chargement en série) au cours d’une opération de chargement en masse, au lieu de l’ingestion simultanée de toutes les ressources.
 
 Le chargement en série de ressources est activé par défaut. Pour désactiver la fonction et autoriser le chargement simultané, recouvrez le noeud `fileupload` dans CRXDe et définissez la valeur de la propriété `parallelUploads` sur `true`.
 
@@ -145,9 +145,9 @@ Dynamic Media active le chargement par lots des ressources par le biais du serve
 
 >[!NOTE]
 >
->Pour télécharger des ressources par FTP dans Dynamic Media - mode Scene7, installez le Feature Pack (FP) 18912 sur AEM Author. Contactez l’assistance clientèle d’Adobe pour accéder au FP-18912 et terminer la configuration de votre compte FTP. Voir la section [Installation du pack de fonctionnalités 18912 pour la migration des ressources en bloc](/help/assets/bulk-ingest-migrate.md).
+>Pour télécharger des ressources par FTP dans Dynamic Media - mode Scene7, installez le Feature Pack (FP) 18912 sur [!DNL Experience Manager] l’auteur. Contactez l’assistance clientèle d’Adobe pour accéder au FP-18912 et terminer la configuration de votre compte FTP. Voir la section [Installation du pack de fonctionnalités 18912 pour la migration des ressources en bloc](/help/assets/bulk-ingest-migrate.md).
 >
->Si vous utilisez le protocole FTP pour télécharger des ressources, les paramètres de téléchargement spécifiés dans AEM sont ignorés. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
+>Si vous utilisez le protocole FTP pour charger des ressources, les paramètres de transfert spécifiés dans [!DNL Experience Manager] sont ignorés. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
 
 **Pour télécharger des ressources via FTP, procédez comme suit :**
 
@@ -167,7 +167,7 @@ Dynamic Media active le chargement par lots des ressources par le biais du serve
 1. Dans le coin inférieur droit de la boîte de dialogue **[!UICONTROL Télécharger les options de la tâche]**, appuyez sur **[!UICONTROL Enregistrer]**.
 1. Dans le coin inférieur droit de la page **[!UICONTROL Télécharger]**, appuyez sur **[!UICONTROL Envoyer le téléchargement]**.
 
-   Pour afficher la progression du téléchargement, appuyez sur **[!UICONTROL Tâches]** dans la barre de navigation globale. La page **[!UICONTROL Tâches]** affiche la progression du téléchargement. Vous pouvez continuer à travailler dans AEM et revenir, à tout moment, à la page Tâches dans Dynamic Media Classic afin de consulter une tâche en cours.
+   Pour afficher la progression du téléchargement, appuyez sur **[!UICONTROL Tâches]** dans la barre de navigation globale. La page **[!UICONTROL Tâches]** affiche la progression du téléchargement. Vous pouvez continuer à travailler dans [!DNL Experience Manager] et revenir à la page Tâches de Dynamic Media Classic à tout moment pour passer en revue une tâche en cours.
 
    Pour annuler une tâche de téléchargement en cours, appuyez ou cliquez sur **[!UICONTROL Annuler]****[!UICONTROL à côté de la durée.]**
 
@@ -181,7 +181,7 @@ Dynamic Media active le chargement par lots des ressources par le biais du serve
 | Décompresser des fichiers ZIP ou TAR au chargement |  |  |
 | Options de tâche |  | Appuyez/cliquez sur **[!UICONTROL Options de tâche]** pour ouvrir la boîte de dialogue [!UICONTROL Télécharger les options de tâche] et sélectionner les options qui affectent l’ensemble de la tâche de téléchargement. Ces options sont identiques pour tous les types de fichiers.<br>Vous pouvez choisir les options par défaut pour télécharger les fichiers en commençant sur la page Paramètres généraux de l’application. Pour ouvrir cette page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application.]**. Appuyez sur le bouton **[!UICONTROL Options de téléchargement par défaut]** pour ouvrir la boîte de dialogue [!UICONTROL Télécharger les options de tâche]. |
 |  | Quand | Sélectionnez Unique ou Périodique. Pour définir une tâche périodique, sélectionnez une option de répétition (Quotidien, Hebdomadaire, Mensuel ou Personnalisé) afin d’indiquer la fréquence souhaitée pour la tâche de transfert FTP. Indiquez ensuite les options de planification suivant vos besoins. |
-|  | Inclure les sous-dossiers | Téléchargez tous les sous-dossiers du dossier que vous avez l’intention de télécharger. Les noms du dossier et des sous-dossiers transférés sont saisis automatiquement dans AEM Assets. |
+|  | Inclure les sous-dossiers | Téléchargez tous les sous-dossiers du dossier que vous avez l’intention de télécharger. Les noms du dossier et de ses sous-dossiers que vous téléchargez sont automatiquement renseignés dans [!DNL Experience Manager] Ressources. |
 |  | Options de recadrage | Pour recadrer manuellement une image par ses côtés, sélectionnez le menu Recadrer, puis choisissez Manuel. Indiquez ensuite le nombre de pixels à recadrer d’un seul côté ou de chaque côté de l’image. La proportion de l’image qui est rognée dépend du paramètre ppp (pixels par pouce) défini dans le fichier d’image. Par exemple, si l’image affiche 150 ppp et que vous saisissez 75 dans les zones de texte Haut, Droite, Bas et Gauche, un demi-pouce est rogné de chaque côté.<br> Pour supprimer automatiquement d’une image les pixels représentant des espaces blancs, sélectionnez le menu Recadrer, cliquez sur Manuel, puis saisissez les mesures en pixels dans les champs Haut, Droite, Bas et Gauche pour recadrer au niveau des bords. Vous pouvez également sélectionner Rognage dans le menu Recadrer et choisir les options suivantes :<br> **Rogner en fonction de** <ul><li>**Couleur**  : choisissez l’option Couleur. Sélectionnez ensuite le menu Coin, puis choisissez l’angle de l’image présentant la couleur qui correspond le mieux à l’espace blanc à rogner.</li><li>**** Transparence : sélectionnez l’option Transparence.<br> **Tolérance**  : faites glisser le curseur pour définir une tolérance de 0 à 1. Pour l’option de rognage selon la couleur, spécifiez 0 pour rogner les pixels uniquement s’ils correspondent exactement à la couleur sélectionnée dans le coin de l’image. Les valeurs qui se rapprochent de 1 autorisent une plus grande différence de couleurs.<br>Pour l’option de rognage en fonction de la transparence, indiquez 0 pour rogner les pixels seulement s’ils sont transparents. Les valeurs plus proches de 1 permettent une plus grande transparence.</li></ul><br>Notez que ces options de recadrage sont non destructives. |
 |  | Options de profils de couleurs | Sélectionnez une conversion de couleurs lorsque vous créez des fichiers optimisés utilisés pour la livraison :<ul><li>Conservation des couleurs par défaut : conserve les couleurs des images sources lorsque les images comportent des informations d’espace colorimétrique ; il n’y a aucune conversion des couleurs. Actuellement, le profil colorimétrique approprié est déjà intégré dans pratiquement toutes les images. Cependant, si une image source CMJN ne contient pas de profil colorimétrique intégré, les couleurs sont converties dans l’espace colorimétrique sRVB (Rouge Vert Bleu standard). sRVB est l’espace colorimétrique recommandé pour l’affichage d’images sur des pages web.</li><li>Conserver l’espace colorimétrique original : conserve les couleurs d’origine sans conversion des couleurs au niveau du point. Pour les images sans profil colorimétrique incorporé, toute conversion des couleurs s’effectue à l’aide des profils colorimétriques par défaut configurés dans les Paramètres de publication. Les profils de couleurs peuvent ne pas correspondre aux couleurs des fichiers créés avec cette option. Par conséquent, vous êtes invité à utiliser l’option de conservation des couleurs par défaut.</li><li>Personnaliser de > en<br> Permet d’accéder aux menus pour sélectionner un espace colorimétrique source (Convertir de) et un espace colorimétrique cible (Convertir en). Cette option avancée remplace toutes les informations de couleur incorporées dans le fichier source. Sélectionnez cette option uniquement lorsque toutes les images que vous envoyez contiennent des données de profil de couleurs incorrectes ou manquantes.</li></ul> |
 |  | Options d’édition d’images | Vous pouvez conserver les masques d’écrêtage dans les images et choisir un profil de couleurs.<br> Voir [Définition des options d’édition d’image lors du téléchargement](#setting-image-editing-options-at-upload). |
@@ -298,17 +298,17 @@ Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble pa
 
 ### Chargements en continu {#streamed-uploads}
 
-Si vous transférez de nombreuses ressources, les appels d’E/S adressés au serveur AEM augmentent considérablement, ce qui réduit l’efficacité du transfert et peut même entraîner son expiration. AEM Assets prend en charge le chargement de ressources en continu. Le transfert en continu réduit les E/S de disque lors de l’opération de transfert en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont transférées directement vers le référentiel. Cela permet à la fois d’accélérer le transfert de ressources volumineuses et de réduire les risques d’expiration. Le transfert en continu est activé par défaut dans AEM Assets.
+Si vous chargez de nombreuses ressources, les appels d’E/S vers le serveur [!DNL Experience Manager] augmentent considérablement, ce qui réduit l’efficacité du chargement et peut même entraîner son expiration. [!DNL Experience Manager] Assets prend en charge le chargement de ressources en continu. Le transfert en continu réduit les E/S de disque lors de l’opération de transfert en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont transférées directement vers le référentiel. Cela permet à la fois d’accélérer le transfert de ressources volumineuses et de réduire les risques d’expiration. Le chargement en continu est activé par défaut dans les ressources [!DNL Experience Manager].
 
-Le transfert en continu est désactivé lorsqu’AEM s’exécute sur un serveur JEE équipé d’une version de servelt-api antérieure à 3.1.
+Le chargement en continu est désactivé pour [!DNL Experience Manager] s’exécutant sur le serveur JEE avec une version de servlet-api inférieure à 3.1.
 
 ### Extraction d’une archive ZIP contenant des ressources {#extract-zip-archive-containing-assets}
 
-Vous pouvez télécharger des archives ZIP comme toute autre ressource prise en charge. Les mêmes règles de nom de fichier s’appliquent aux fichiers ZIP. AEM vous permet d’extraire une archive ZIP vers un emplacement DAM.
+Vous pouvez télécharger des archives ZIP comme toute autre ressource prise en charge. Les mêmes règles de nom de fichier s’appliquent aux fichiers ZIP. [!DNL Experience Manager] vous permet d’extraire une archive ZIP vers un emplacement DAM.
 
 Sélectionnez une archive ZIP à la fois, cliquez sur **[!UICONTROL Extraire l’archive]**, puis sélectionnez un dossier de destination. Sélectionnez une option pour gérer les conflits, le cas échéant. Si les ressources du fichier ZIP existent déjà dans le dossier de destination, vous pouvez sélectionner l’une des options suivantes : ignorer l’extraction, remplacer les fichiers existants, conserver les deux fichiers en attribuant un nouveau nom ou créer une nouvelle version.
 
-Une fois l’extraction terminée, AEM vous avertit dans la zone de notification. Lorsqu’AEM extrait le fichier ZIP, vous pouvez reprendre votre travail sans interrompre l’extraction.
+Une fois l’extraction terminée, [!DNL Experience Manager] vous en informe dans la zone de notification. Tandis que [!DNL Experience Manager] extrait le fichier ZIP, vous pouvez revenir à votre travail sans interrompre l’extraction.
 
 ![Notification de l’extraction ZIP](assets/zip_extract_notification.png)
 
@@ -413,7 +413,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    >[!NOTE]
    >
-   >Si vous copiez une ressource au même endroit, AEM génère automatiquement une variante du nom. Par exemple, si vous copiez une ressource intitulée Carré, AEM nomme automatiquement le titre de sa copie Carré1.
+   >Si vous copiez une ressource au même endroit, [!DNL Experience Manager] génère automatiquement une variante du nom. Par exemple, si vous copiez une ressource intitulée Carré, [!DNL Experience Manager] génère automatiquement le titre de sa copie en tant que Carré1.
 
 1. Appuyez sur l’icône **[!UICONTROL Coller]** de ressource dans la barre d’outils :
 
@@ -500,7 +500,7 @@ Le déplacement de ressources en les faisant glisser n’ouvre pas l’assistant
 
    >[!NOTE]
    >
-   >Par défaut, AEM Assets n’affiche pas le rendu d’origine de la ressource en mode Aperçu. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets de manière à afficher les rendus d’origine dans ce mode.
+   >Par défaut, [!DNL Experience Manager] les ressources n’affichent pas le rendu d’origine de la ressource en mode d’aperçu. Si vous êtes administrateur, vous pouvez utiliser des superpositions pour configurer les ressources [!DNL Experience Manager] afin d’afficher les rendus originaux en mode aperçu.
 
 1. Sélectionnez un rendu afin de l’afficher ou de le supprimer.
 
@@ -520,7 +520,7 @@ Le déplacement de ressources en les faisant glisser n’ouvre pas l’assistant
    >
    >Si vous sélectionnez un rendu dans le panneau **[!UICONTROL Rendus]**, la barre d’outils change de contexte et affiche uniquement les actions pertinentes par rapport au rendu. Les options, telles que l’icône **[!UICONTROL Télécharger le rendu]** ne s’affichent pas. Pour afficher ces options dans la barre d’outils, accédez à la page des détails de la ressource.
 
-   Vous pouvez configurer les dimensions du rendu à afficher dans la page de détails d’une ressource image ou vidéo. AEM Assets affiche le rendu selon les dimensions exactes ou les plus proches de celles spécifiées.
+   Vous pouvez configurer les dimensions du rendu à afficher dans la page de détails d’une ressource image ou vidéo. En fonction des dimensions que vous spécifiez, [!DNL Experience Manager] Assets affiche le rendu avec les dimensions exactes ou les plus proches.
 
    Pour configurer les dimensions de rendu d’une image au niveau des détails de la ressource, recouvrez le noeud **[!UICONTROL renditionpicker]** `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` et configurez la valeur de la propriété de largeur. Configurez la propriété **[!UICONTROL size (Long) in KB]** (taille (Longueur) en Ko) à la place de la largeur pour personnaliser le rendu dans la page des détails de la ressource selon la taille de l’image. Pour une personnalisation dépendant de la taille, la propriété **[!UICONTROL preferOriginal]** affecte les préférences à l’image initiale si la taille du rendu correspondant est supérieure à celle de l’image initiale.
 
@@ -615,10 +615,10 @@ Les groupes d’utilisateurs fermés sont un moyen supplémentaire de restreindr
 
    ![login_page](assets/login_page.png)
 
-   Si vous ne spécifiez pas le chemin d’une page de connexion, AEM affiche la page de connexion par défaut dans l’instance de publication.
+   Si vous ne spécifiez pas le chemin d’une page de connexion, [!DNL Experience Manager] affiche la page de connexion par défaut dans l’instance de publication.
 
 1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
-1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’AEM vous a authentifié.
+1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’[!DNL Experience Manager] vous a authentifié.
 
 ## Recherche de ressources {#searching-assets}
 
@@ -628,7 +628,7 @@ Les recherches de base sont décrites dans la section [Rechercher et filtrer. ](
 
 Pour les ressources récemment chargées, leurs métadonnées (notamment les titres, les balises, etc.) ne sont pas immédiatement disponibles dans la liste des suggestions qui s’affiche lorsque vous entrez des données dans la zone Omni-recherche.
 
-C’est parce qu’AEM Assets attend jusqu’à l’expiration d’un délai d’attente (par défaut, 1 heure) avant d’effectuer une tâche en arrière-plan afin d’indexer les métadonnées pour toutes les ressources transférées/mises à jour dernièrement et de les ajouter à la liste de suggestions.
+En effet, [!DNL Experience Manager] Assets attend jusqu’à l’expiration d’un délai d’expiration (1 heure par défaut) avant d’exécuter une tâche en arrière-plan afin d’indexer les métadonnées pour toutes les ressources récemment chargées/mises à jour et de les ajouter à la liste de suggestions.
 
 ## Utilisation des actions rapides {#quick-actions}
 
@@ -655,7 +655,7 @@ Pour plus d’informations, voir [Affichage et sélection de vos ressources](/he
 
 ## Modification des images {#editing-images}
 
-Les outils de modification de l’interface d’AEM Assets permettent d’effectuer de petites tâches de modification sur les ressources d’image. Vous pouvez recadrer les images, les faire pivoter, les retourner et effectuer d’autres tâches de modification. Vous pouvez également ajouter des zones cliquables aux ressources.
+Les outils de modification de l’interface [!DNL Experience Manager] Ressources vous permettent d’effectuer de petites tâches de modification sur les ressources d’image. Vous pouvez recadrer les images, les faire pivoter, les retourner et effectuer d’autres tâches de modification. Vous pouvez également ajouter des zones cliquables aux ressources.
 
 La modification d’images est prise en charge pour les fichiers aux formats suivants :
 
@@ -715,7 +715,7 @@ La **[!UICONTROL chronologie]** vous permet d’afficher divers événements pou
 
 Dans la [console Collections](managing-collections-touch-ui.md#navigating-the-collections-console), la liste **[!UICONTROL Afficher tout]** contient des options permettant de n’afficher que les commentaires et les workflows. De plus, la chronologie ne s’affiche que pour les collections de niveau supérieur répertoriées dans la console. Elle ne s’affiche pas si vous accédez à l’intérieur des collections.
 
-**** La chronologie contient plusieurs  [options spécifiques aux fragments de contenu](content-fragments-managing.md#timeline-for-content-fragments) ; cette fonctionnalité nécessite  [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md)  ou une version ultérieure.
+**** La chronologie contient plusieurs  [options spécifiques aux fragments de contenu](content-fragments-managing.md#timeline-for-content-fragments) ; cette fonctionnalité nécessite la version  [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md)  ou une version ultérieure.
 
 **Pour utiliser la chronologie** :
 
@@ -732,9 +732,9 @@ Dans la [console Collections](managing-collections-touch-ui.md#navigating-the-co
 
 Les annotations sont des commentaires ou des notes d’explication ajoutées aux images ou vidéos. Les annotations offrent aux spécialistes marketing la possibilité de collaborer et de laisser des commentaires sur des ressources.
 
-Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Les formats vidéo pris en charge par AEM Assets dépendent du navigateur.
+Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Les formats vidéo pris en charge par [!DNL Experience Manager] Assets dépendent du navigateur.
 
-Pour les fragments de contenu, les [annotations sont créées dans l’éditeur](content-fragments-variations.md#annotating-a-content-fragment) ; cette fonctionnalité nécessite [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) ou une version ultérieure.
+Pour les fragments de contenu, les [annotations sont créées dans l’éditeur](content-fragments-variations.md#annotating-a-content-fragment) ; cette fonctionnalité nécessite [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) ou une version ultérieure.
 
 Vous pouvez ajouter plusieurs annotations avant de les enregistrer.
 
@@ -748,7 +748,7 @@ Vous pouvez également ajouter des annotations à une collection. Toutefois, si 
 1. Appuyez sur l’icône **[!UICONTROL Annoter]** à partir de l’une des options suivantes :
 
    * [Actions rapides](managing-assets-touch-ui.md#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource   ou avoir accédé à la page de la ressource
+   * Dans la barre d’outils, après avoir sélectionné la ressource ou avoir accédé à la page de la ressource
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
@@ -769,7 +769,7 @@ Vous pouvez également ajouter des annotations à une collection. Toutefois, si 
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
 1. Appuyez sur **[!UICONTROL Fermer]** pour quitter le mode **[!UICONTROL Annotation]**.
-1. Pour afficher la notification, connectez-vous à AEM Assets avec les informations d’identification d’Aaron MacDonald et appuyez sur l’icône **[!UICONTROL Notifications]** pour afficher la notification.
+1. Pour afficher la notification, connectez-vous aux ressources [!DNL Experience Manager] avec les informations d’identification d’Aaron MacDonald et appuyez sur l’icône **[!UICONTROL Notifications]** pour afficher la notification.
 
 1. Pour choisir une autre couleur afin de différencier les utilisateurs, appuyez sur l’icône **[!UICONTROL Profil]** et appuyez sur **[!UICONTROL Mes préférences]**.
 
@@ -861,12 +861,12 @@ Pour imprimer les annotations et l’état de révision, appuyez sur l’icône 
 
    Revenez au fichier PDF généré et actualisez-le. Le fichier PDF actualisé affiche désormais les modifications que vous avez effectuées.
 
-**Pour imprimer des annotations dans des langues** étrangères : Si une ressource contient des annotations dans des langues étrangères (en particulier des langues non latines), vous devez d’abord configurer le service Font Manager CQ-DAM-Handler-Gibson sur le serveur d’AEM pour pouvoir imprimer ces annotations. Lorsque vous configurez ce service, indiquez le chemin d’accès aux polices à utiliser pour ces langues.
+**Pour imprimer des annotations dans des langues** étrangères : Si une ressource contient des annotations dans des langues étrangères (en particulier des langues non latines), vous devez d’abord configurer le service Font Manager CQ-DAM-Handler-Gibson sur le  [!DNL Experience Manager] serveur pour pouvoir imprimer ces annotations. Lorsque vous configurez ce service, indiquez le chemin d’accès aux polices à utiliser pour ces langues.
 
 1. Ouvrez la page de configuration **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** à partir de l’URL [https://&lt;serveur>:&lt;port>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl).
 1. Pour configurer **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]**, effectuez l’une des opérations suivantes :
 
-   * Dans l’option du répertoire **[!UICONTROL Polices système]** , indiquez le chemin d’accès complet au répertoire des polices de votre système. Par exemple, si vous utilisez Mac, vous pouvez spécifier le chemin `/Library/Fonts` dans l’option de répertoire **[!UICONTROL Polices système]** . AEM récupère les polices dans ce répertoire.
+   * Dans l’option du répertoire **[!UICONTROL Polices système]** , indiquez le chemin d’accès complet au répertoire des polices de votre système. Par exemple, si vous utilisez Mac, vous pouvez spécifier le chemin `/Library/Fonts` dans l’option de répertoire **[!UICONTROL Polices système]** . [!DNL Experience Manager] récupère les polices dans ce répertoire.
    * Créez un répertoire nommé **fonts** dans le dossier **[!UICONTROL crx-quickstart]**. **** Le service Font Manager CQ-DAM-Handler-Gibson récupère automatiquement les polices à l’emplacement `crx-quickstart/fonts`. Vous pouvez remplacer ce chemin par défaut à partir de l’option de répertoire **[!UICONTROL Adobe Server Fonts]**.
    * Créez un dossier pour les polices sur votre système et stockez-y les polices de votre choix. Indiquez ensuite le chemin d’accès complet à ce dossier dans l’option de répertoire **[!UICONTROL Polices client]** .
 
@@ -875,9 +875,9 @@ Pour imprimer les annotations et l’état de révision, appuyez sur l’icône 
 
    * Incluez la chaîne `<font_family_name_of_custom_font, sans-serif>` dans l’option font-family. Par exemple, si vous souhaitez imprimer des annotations en chinois, en japonais et en coréen (CJC), insérez la chaîne `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` dans l’option font-family. Si vous souhaitez imprimer des annotations en hindi, téléchargez la police appropriée et configurez la famille de polices comme suit : Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
-1. Redémarrez l’instance AEM.
+1. Redémarrez l’instance [!DNL Experience Manager].
 
-Vous trouverez ci-dessous un exemple de configuration des AEM pour imprimer des annotations en chinois, en japonais et en coréen (CJC) :
+Vous trouverez ci-dessous un exemple de configuration de [!DNL Experience Manager] pour imprimer des annotations en chinois, en japonais et en coréen (CJC) :
 
 1. Téléchargez les polices Google Noto CJK à partir des liens ci-dessous et enregistrez-les dans le répertoire des polices configuré dans le service Font Manager.
 
@@ -894,9 +894,9 @@ Le contrôle de version permet de créer un instantané des ressources numériqu
 
 Voici quelques scénarios de création de versions :
 
-* Vous modifiez une image dans une autre application et la téléchargez vers AEM Assets. Une version de l’image est créée afin que votre image d’origine ne soit pas remplacée.
+* Vous modifiez une image dans une autre application et la téléchargez vers [!DNL Experience Manager] Ressources. Une version de l’image est créée afin que votre image d’origine ne soit pas remplacée.
 * Vous modifiez les métadonnées d’une ressource.
-* Vous utilisez l’application de bureau AEM pour extraire une ressource existante et enregistrer vos changements. Une nouvelle version est créée chaque fois que la ressource est enregistrée.
+* Vous utilisez l’application de bureau [!DNL Experience Manager] pour extraire une ressource existante et enregistrer vos changements. Une nouvelle version est créée chaque fois que la ressource est enregistrée.
 
 Vous pouvez également activer le contrôle de version automatique à l’aide d’un workflow. Lorsque vous créez une version d’une ressource, les métadonnées et les rendus sont enregistrés avec la version. Les rendus sont d’autres affichages d’une même image (un rendu PNG d’un fichier JPEG téléchargé, par exemple).
 
@@ -952,7 +952,7 @@ La création de versions permet d’effectuer les opérations suivantes :
 
 ### Démarrage d’un workflow sur une ressource {#starting-a-workflow-on-an-asset}
 
-Voir [appliquer un workflow à une ressource AEM](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset).
+Voir [appliquer un workflow à une  [!DNL Experience Manager] ressource](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset).
 
 ## À propos des collections {#collections}
 

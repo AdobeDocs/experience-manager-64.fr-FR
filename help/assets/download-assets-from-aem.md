@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Asset Distribution
 role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 75%
+source-wordcount: '806'
+ht-degree: 76%
 
 ---
 
@@ -24,7 +24,7 @@ Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionne
 
 Pour télécharger des ressources, procédez comme suit :
 
-1. Dans le coin supérieur gauche de l’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Navigation]**.
+1. Dans le coin supérieur gauche de l’AEM, appuyez sur le logo [!DNL Experience Manager], puis, dans le rail de gauche, appuyez sur **[!UICONTROL Navigation]**.
 1. Sur la page de navigation, appuyez sur **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers.]**
 1. Accédez à un dossier contenant les ressources à télécharger.
 1. Sélectionnez le dossier ou une ou plusieurs ressources qu’il contient.

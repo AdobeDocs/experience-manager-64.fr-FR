@@ -2,13 +2,13 @@
 title: Préparation des ressources en vue de la traduction
 description: Créez des dossiers racines de langues pour préparer la traduction de ressources multilingues.
 contentOwner: AG
-feature: Projets, traduction
+feature: Projects,Translation
 role: User,Admin
 exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 96%
+source-wordcount: '448'
+ht-degree: 87%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 Les ressources multilingues sont des ressources comportant des fichiers binaires, des métadonnées et des balises dans plusieurs langues. En règle générale, les fichiers binaires, les métadonnées et les balises d’une ressource existent dans une langue, et sont ensuite traduits dans d’autres langues pour être utilisés dans des projets multilingues.
 
-Dans Adobe Experience Manager (AEM) Assets, les ressources multilingues se trouvent dans des dossiers, chaque dossier contenant les ressources dans une langue différente.
+Dans Adobe Experience Manager Assets, les ressources multilingues sont incluses dans des dossiers, où chaque dossier contient les ressources dans une langue différente.
 
 Chaque dossier de langue est appelé une copie de langue. Le dossier racine d’une copie de langue, nommé racine de langue, identifie la langue du contenu de la copie de langue. Par exemple, */content/dam/it* est la racine de langue italienne de la copie en italien. Les copies de langue doivent utiliser une [racine de langue correctement configurée](preparing-assets-for-translation.md#creating-a-language-root) pour que la langue correcte soit ciblée lors de la traduction des ressources source.
 
@@ -61,7 +61,7 @@ Par exemple, la page racine de la copie en italien de l’exemple de hiérarchie
 
 ## Affichage des racines de langue {#viewing-language-roots}
 
-L’IU optimisée pour les écrans tactiles propose un panneau Références qui affiche la liste des racines de langue créées dans AEM Assets.
+L’IU optimisée pour les écrans tactiles fournit un panneau Références qui affiche la liste des racines de langue créées dans [!DNL Experience Manager] Ressources.
 
 1. Dans la console Ressources, choisissez le gabarit de langue pour lequel vous souhaitez créer des copies de langue.
 1. Appuyez ou cliquez sur l’icône de navigation globale et sélectionnez **[!UICONTROL Références]** pour ouvrir le panneau Références.

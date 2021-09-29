@@ -1,24 +1,24 @@
 ---
 title: Intégration des ressources avec Flux d’activités
-description: Décrit les fonctionnalités d’enregistrement d’AEM ainsi que la procédure de configuration d’AEM pour enregistrer des événements spécifiques.
+description: Décrit les fonctionnalités d’enregistrement de  [!DNL Experience Manager] and how to configure [!DNL Experience Manager] pour enregistrer des événements spécifiques.
 contentOwner: AG
-feature: Gestion des ressources
+feature: Asset Management
 role: Developer
 exl-id: c25a4da7-1c58-41cf-9ff6-c094b50208e6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 76%
+source-wordcount: '268'
+ht-degree: 67%
 
 ---
 
 # Intégration des ressources avec Flux d’activités {#integrating-assets-with-activity-stream}
 
-Les utilisateurs d’Adobe Experience Manager (AEM) Assets effectuent de nombreuses actions, telles que la création, le chargement et la suppression de ressources. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes actions réalisées par un utilisateur. Cette section décrit les fonctionnalités d’enregistrement d’AEM ainsi que la procédure de configuration d’AEM pour enregistrer des événements spécifiques.
+Les utilisateurs d’Adobe Experience Manager Assets effectuent de nombreuses opérations, telles que la création, le chargement et la suppression de ressources. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes actions réalisées par un utilisateur. Cette section décrit les fonctionnalités d’enregistrement de [!DNL Experience Manager] et comment configurer [!DNL Experience Manager] afin d’enregistrer des événements spécifiques.
 
 ## Performances et comportement par défaut {#performance-considerations-and-default-behavior}
 
-Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’importation en bloc. Pour ces raisons, l’intégration d’AEM Assets au flux d’activités est désactivée par défaut.
+Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’importation en bloc. Pour ces raisons, l’intégration de [!DNL Experience Manager] ressources avec le flux d’activités est désactivée par défaut.
 
 ## Événements d’actions pris en charge {#supported-action-events}
 
@@ -40,9 +40,9 @@ Il est possible de configurer l’enregistrement des événements suivants :
 * Sous-ressource mise à jour (SUBASSET_UPDATED)
 * Sous-ressource supprimée (SUBASSET_REMOVED)
 
-## Configuration de l’enregistrement d’événements AEM Assets {#configuring-aem-assets-events-recording}
+## Configuration de l’enregistrement des événements [!DNL Assets] {#configuring-aem-assets-events-recording}
 
-La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder au réglage de l’enregistreur d’événements AEM Assets. Pour configurer l’enregistreur d’événements AEM Assets, procédez comme suit :
+La [console Web](/help/sites-deploying/configuring-osgi.md) permet d’accéder au réglage [!DNL Assets] Enregistreur d’événements. Pour configurer l’enregistreur d’événements [!DNL Assets], procédez comme suit :
 
 1. Accédez à la **[!UICONTROL console web]**.
 

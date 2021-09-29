@@ -3,13 +3,13 @@ title: Réutilisation des ressources à l’aide de MSM
 description: Utilisez des ressources sur plusieurs pages/dossiers qui sont dérivées des ressources parents et liées à celles-ci. Les ressources restent synchronisées avec une Principale copie et, en quelques clics, reçoivent les mises à jour des ressources parentes.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Gestion des ressources, Multi Site Manager
+feature: Asset Management,Multi Site Manager
 role: User,Admin,Architect
 exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '3172'
-ht-degree: 80%
+source-wordcount: '3159'
+ht-degree: 77%
 
 ---
 
@@ -64,7 +64,7 @@ MSM entretient une relation dynamique entre la ressource source et ses Live Copi
 Pour créer une Live Copy à partir d’une ou plusieurs ressources ou d’un ou plusieurs dossiers source, procédez de l’une des manières suivantes :
 
 * **Méthode 1** : Sélectionnez les ressources source et cliquez sur  **[!UICONTROL Créer]**  >  **[!UICONTROL Live]** Copy dans la barre d’outils supérieure.
-* **** Méthode 2 : dans l’interface utilisateur d’AEM, cliquez sur **[!UICONTROL Créer > Live Copy]** dans le coin supérieur droit de l’interface.
+* **Méthode 2** : Dans l’interface  [!DNL Experience Manager] utilisateur, cliquez sur  **[!UICONTROL Créer > Live]** Copy dans le coin supérieur droit de l’interface.
 
 Vous pouvez créer des Live Copies d’une ressource ou d’un dossier à la fois. Vous pouvez créer des Live Copies dérivées d’une ressource ou d’un dossier étant une Live Copy. 
 
@@ -73,15 +73,15 @@ Les fragments de contenu ne sont pas pris en charge dans le cas d’utilisation.
 Pour créer des Live Copies à l’aide de la première méthode, procédez comme suit :
 
 1. Sélectionnez des fichiers ou des dossiers sources. Dans la barre d’outils, cliquez sur **[!UICONTROL Créer > Live Copy]**.
-   ![Création d’une Live Copy depuis l’interface d’AEM](assets/lc_create1.png)
+   ![Création d’une Live Copy à partir de  [!DNL Experience Manager] l’interface](assets/lc_create1.png)
 1. Sélectionnez la ressource ou le dossier source. Cliquez sur **[!UICONTROL Suivant]**.
 1. Indiquez un titre et un nom. Les ressources ne possèdent pas d’enfants. Lorsque vous créez une Live Copy des dossiers, vous pouvez choisir d’inclure ou d’exclure des enfants.
 1. Sélectionnez une configuration de déploiement. Cliquez sur **[!UICONTROL Créer]**.
 
 Pour créer des Live Copies à l’aide de la seconde méthode, procédez comme suit :
 
-1. Dans l’interface d’AEM, dans le coin supérieur droit, cliquez sur **[!UICONTROL Créer > Live Copy]**.
-   ![Création d’une Live Copy depuis l’interface d’AEM](assets/lc_create2.png)
+1. Dans l’interface [!DNL Experience Manager], dans le coin supérieur droit, cliquez sur **[!UICONTROL Créer > Live Copy]**.
+   ![Création d’une Live Copy à partir de  [!DNL Experience Manager] l’interface](assets/lc_create2.png)
 1. Sélectionnez la ressource ou le dossier source. Cliquez sur **[!UICONTROL Suivant]**.
 1. Sélectionnez le dossier de destination. Cliquez sur **[!UICONTROL Suivant]**.
 1. Indiquez un titre et un nom. Les ressources ne possèdent pas d’enfants. Lorsque vous créez une Live Copy des dossiers, vous pouvez choisir d’inclure ou d’exclure des enfants.
@@ -93,7 +93,7 @@ Pour créer des Live Copies à l’aide de la seconde méthode, procédez comme 
 
 ## Affichage de différentes propriétés et des états de la source et de la Live Copy {#view-properties-statuses-source-and-lc}
 
-Vous pouvez afficher les informations et les états associés à MSM d’une Live Copy, comme la relation, la synchronisation, les déploiements, et des informations supplémentaires dans les différentes zones de l’interface utilisateur d’AEM. Les deux méthodes suivantes fonctionnent pour les ressources et les dossiers :
+Vous pouvez afficher les informations et les états associés à MSM d’une Live Copy tels que la relation, la synchronisation, les déploiements, etc. à partir des différentes zones de l’interface utilisateur de [!DNL Experience Manager]. Les deux méthodes suivantes fonctionnent pour les ressources et les dossiers :
 
 * Sélectionnez la ressource Live Copy et recherchez les informations dans sa page **[!UICONTROL Propriétés]**.
 * Sélectionnez le dossier source et recherchez les informations détaillées de chaque Live Copy dans la **[!UICONTROL console Live Copy]**.
@@ -220,7 +220,7 @@ Vous pouvez annuler toutes les modifications locales et rétablir l’état de l
 
 ## Suppression d’une relation dynamique    {#remove-live-relationship}
 
-Vous pouvez supprimer complètement la relation entre une source et une Live Copy à l’aide d’une action de désolidarisation. La Live Copy devient une ressource ou un dossier autonome après sa désolidarisation. Elle s’affiche en tant que nouvelle ressource dans l’interface AEM, immédiatement après la désolidarisation. Pour désolidariser une Live Copy de sa source, procédez comme suit :
+Vous pouvez supprimer complètement la relation entre une source et une Live Copy à l’aide d’une action de désolidarisation. La Live Copy devient une ressource ou un dossier autonome après sa désolidarisation. Il s’affiche sous la forme d’une nouvelle ressource dans l’interface [!DNL Experience Manager], immédiatement après sa désolidarisation. Pour désolidariser une Live Copy de sa source, procédez comme suit :
 
 1. Sélectionnez une ressource ou un dossier de Live Copy. Cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils. Vous pouvez également utiliser le raccourci clavier `p`.
 1. Cliquez sur **[!UICONTROL Live Copy]**. Cliquez sur **[!UICONTROL Désolidariser]** dans la barre d’outils. Cliquez sur **[!UICONTROL Désolidariser]** dans la boîte de dialogue qui s’affiche.
@@ -243,7 +243,7 @@ Si un dossier de Live Copy comporte plusieurs ressources, il peut être fastidie
 
 ## Extension de MSM pour Assets {#extend-msm-for-assets}
 
-AEM permet d’étendre la fonctionnalité à l’aide des API Java MSM. Pour Assets, l’extension fonctionne exactement de la même manière qu’avec MSM pour Site. Pour plus d’informations, voir [Extension de MSM](../sites-developing/extending-msm.md) et les sections suivantes pour en savoir plus sur des tâches spécifiques :
+[!DNL Experience Manager] permet d’étendre la fonctionnalité à l’aide des API Java MSM. Pour Assets, l’extension fonctionne exactement de la même manière qu’avec MSM pour Site. Pour plus d’informations, voir [Extension de MSM](../sites-developing/extending-msm.md) et les sections suivantes pour en savoir plus sur des tâches spécifiques :
 
 * [Présentation des API](../sites-developing/extending-msm.md#overview-of-the-java-api)
 * [Création d’une action de synchronisation](../sites-developing/extending-msm.md#creating-a-new-synchronization-action)
@@ -259,7 +259,7 @@ AEM permet d’étendre la fonctionnalité à l’aide des API Java MSM. Pour As
 
 ## Impact des tâches de gestion des ressources sur les Live Copies {#impact-of-asset-management-tasks-on-live-copies}
 
-Les Live Copies et les sources sont des ressources ou des dossiers pouvant être gérés, dans une certaine mesure, comme des ressources numériques. Certaines tâches de gestion des ressources dans AEM ont un impact spécifique sur les Live Copies.
+Les Live Copies et les sources sont des ressources ou des dossiers pouvant être gérés, dans une certaine mesure, comme des ressources numériques. Certaines tâches de gestion des ressources dans [!DNL Experience Manager] ont un impact spécifique sur les Live Copies.
 
 * La copie d’une Live Copy crée une ressource de Live Copy avec la même source que la première Live Copy.
 * Lorsque vous déplacez une source ou sa Live Copy, la relation dynamique est conservée.

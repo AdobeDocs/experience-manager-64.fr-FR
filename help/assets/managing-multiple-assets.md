@@ -2,13 +2,13 @@
 title: Modification en masse des métadonnées de plusieurs ressources et collections
 description: Découvrez comment modifier simultanément les métadonnées de nombreuses ressources et collections afin de propager rapidement les modifications de métadonnées courantes.
 contentOwner: AG
-feature: Gestion des ressources,Métadonnées,Collections
+feature: Asset Management,Metadata,Collections
 role: User
 exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 59%
+source-wordcount: '433'
+ht-degree: 50%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 59%
 
 Découvrez comment modifier les métadonnées de plusieurs ressources et collections simultanément pour propager rapidement les modifications courantes des métadonnées.
 
-Adobe Enterprise Manager (AEM) Assets vous permet de modifier les métadonnées de plusieurs ressources simultanément afin de propager rapidement en gros les modifications de métadonnées communes vers les ressources. Vous pouvez également modifier en gros les métadonnées de plusieurs collections.
+Adobe Enterprise Manager Assets vous permet de modifier les métadonnées de plusieurs ressources simultanément afin que vous puissiez rapidement propager les modifications de métadonnées communes en masse aux ressources. Vous pouvez également modifier en gros les métadonnées de plusieurs collections.
 
 Utilisez la page des propriétés pour effectuer des modifications de métadonnées sur plusieurs ressources ou collections :
 
@@ -47,7 +47,7 @@ Pour personnaliser la page des propriétés de métadonnées, notamment ajouter,
 
 ## Configuration du nombre maximal de paramètres pour la mise à jour des métadonnées en masse {#configure-limit-for-bulk-metadata-update}
 
-Pour éviter une situation similaire à DOS, AEM limite le nombre de paramètres pris en charge dans une requête Sling. Lors de la mise à jour simultanée de plusieurs fichiers, vous pouvez atteindre le nombre maximal de paramètres et les métadonnées ne sont pas mises à jour pour d’autres fichiers. AEM génère l’avertissement suivant dans les journaux :
+Pour éviter une situation similaire à DOS, [!DNL Experience Manager] limite le nombre de paramètres pris en charge dans une requête Sling. Lors de la mise à jour simultanée de plusieurs fichiers, vous pouvez atteindre le nombre maximal de paramètres et les métadonnées ne sont pas mises à jour pour d’autres fichiers. [!DNL Experience Manager] génère l’avertissement suivant dans les journaux :
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 

@@ -2,13 +2,13 @@
 title: Ressources multilingues
 description: Découvrez comment automatiser les workflows de traduction des ressources, y compris les fichiers binaires, les métadonnées et les balises, dans plusieurs langues.
 contentOwner: AG
-feature: Gestion des ressources
+feature: Asset Management
 role: Admin
 exl-id: 8e065137-3599-48af-a040-6923b7b5e1d9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 85%
+source-wordcount: '170'
+ht-degree: 60%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 85%
 
 Adobe Experience Manager (AEM) Assets vous permet d’automatiser les workflows de traduction des ressources (y compris les fichiers binaires, les métadonnées et les balises) pour générer des ressources dans d’autres langues à utiliser dans des projets multilingues.
 
-Pour automatiser les workflows de traduction, vous intégrez des fournisseurs de services de traduction à AEM et créez des projets pour traduire les ressources dans plusieurs langues. AEM prend en charge les workflows de traduction humaine et automatique.
+Pour automatiser les processus de traduction, vous intégrez les fournisseurs de services de traduction à [!DNL Experience Manager] et créez des projets pour traduire les ressources dans plusieurs langues. [!DNL Experience Manager] prend en charge les workflows de traduction humaine et automatique.
 
-Traduction humaine : les ressources traduites sont renvoyées et importées dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, les ressources sont envoyées automatiquement entre AEM et le fournisseur de traduction.
+Traduction humaine : les ressources traduites sont renvoyées et importées dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, les ressources sont automatiquement envoyées entre [!DNL Experience Manager] et le fournisseur de traduction.
 
 Traduction automatique : le service de traduction automatique traduit instantanément les métadonnées et les balises des ressources.
 
 La traduction des ressources inclut les éléments suivants :
 
-1. [Connexion d’AEM au fournisseur de services de traduction](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
+1. [Connexion [!DNL Experience Manager] au fournisseur de services de traduction](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Création de configurations de structure d’intégration de traduction](/help/sites-administering/tc-tic.md)
 1. [Préparation des ressources en vue de la traduction](preparing-assets-for-translation.md)
 1. [Application de services cloud de traduction à des dossiers](transition-cloud-services.md)

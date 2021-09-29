@@ -2,13 +2,13 @@
 title: Bibliothèque ITL
 description: Apprenez à configurer et à utiliser la bibliothèque de transcodage de l’imagerie (ou ITL, de l’anglais Imaging Transcoding Library) d’Adobe, une solution de traitement des images qui peut réaliser des fonctions essentielles de manipulation graphique, y compris le codage, le transcodage, le rééchantillonnage et le redimensionnement des images.
 contentOwner: AG
-feature: Rendus,Outils de développement,Traitement des ressources
+feature: Renditions,Developer Tools,Asset Processing
 role: Admin
 exl-id: 0314626d-e846-4f10-950e-6c1ceb7f4c06
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 37%
+source-wordcount: '958'
+ht-degree: 36%
 
 ---
 
@@ -78,7 +78,7 @@ Pour configurer le traitement ITL, créez un fichier de configuration et mettez 
 
 Pour configurer la bibliothèque, créez un fichier .conf pour indiquer les bibliothèques en procédant comme suit. Vous avez besoin d’autorisations d’administrateur ou de root.
 
-1. Téléchargez le package [Bibliothèque de transcodage d’imagerie à partir de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) et installez-le à l’aide du gestionnaire de modules. Le package est compatible avec AEM 6.5.
+1. Téléchargez le package [Bibliothèque de transcodage d’imagerie à partir de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) et installez-le à l’aide du gestionnaire de modules. Le package est compatible avec [!DNL Experience Manager] 6.5.
 
 1. Pour connaître un ID de lot pour `com.day.cq.dam.cq-dam-switchengine`, connectez-vous à la console web et appuyez sur **[!UICONTROL OSGi > Lots]**. Vous pouvez également ouvrir la console des lots en accédant à l’URL `https://[aem_server:[port]/system/console/bundles/`. Recherchez le lot `com.day.cq.dam.cq-dam-switchengine` et son identifiant.
 
@@ -109,7 +109,7 @@ Pour configurer la bibliothèque, créez un fichier .conf pour indiquer les bibl
 
 Mettez à jour le workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] pour utiliser la bibliothèque pour le traitement des images.
 
-1. Appuyez/cliquez sur le logo AEM et accédez à **[!UICONTROL Outils > Workflow > Modèles]**.
+1. Appuyez/cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils > Processus > Modèles]**.
 
 1. Sur la page **[!UICONTROL Modèles de processus]** , ouvrez le modèle de processus **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]** en mode d’édition.
 

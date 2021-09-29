@@ -1,14 +1,14 @@
 ---
 title: Recherche de ressources vidéo
-description: Utilisez des mots-clés, des propriétés de fichiers telles qu’un type MIME, la taille ou l’horodatage de modification récente pour retrouver rapidement vos fichiers dans AEM Assets.
+description: Utilisez des mots-clés, des propriétés de fichier telles qu’un type Mime, une taille ou un horodatage récemment modifié pour trouver rapidement votre fichier dans  [!DNL Experience Manager] Assets.
 contentOwner: AG
-feature: Vidéo,Recherche
+feature: Video,Search
 role: User
 exl-id: d5f0beb2-e59f-47cd-8e83-698d8a1dcec3
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 66%
+source-wordcount: '577'
+ht-degree: 62%
 
 ---
 
@@ -18,7 +18,7 @@ Pour éviter de perdre du temps et de l’énergie à parcourir potentiellement 
 
 Si le fichier que vous recherchez ne s’affiche pas, vous pouvez modifier la portée de la recherche en cliquant sur une des options qui s’affichent au bas des résultats de la recherche. Par exemple, si vous recherchez un fichier dans la bibliothèque Documents, mais que vous ne le trouvez pas, vous pouvez cliquer sur Bibliothèques pour étendre votre recherche au reste de vos bibliothèques. Pour plus d’informations, voir [Recherche d’un fichier ou d’un dossier](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder).
 
-Vous pouvez rechercher des ressources numériques en fonction d’une ou de plusieurs des propriétés suivantes :
+Vous pouvez rechercher des ressources numériques en fonction d’une ou de plusieurs des propriétés suivantes:
 
 | Champ de recherche | Valeurs de propriété de recherche |
 |---|---|

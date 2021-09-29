@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 36%
+source-wordcount: '674'
+ht-degree: 33%
 
 ---
 
@@ -22,10 +22,10 @@ La gestion dynamique des balises Adobe est un outil permettant d’activer vos o
 
 Effectuez les étapes suivantes pour activer Assets Insights via DTM :
 
-1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Configuration des statistiques]**.
-1. [Configuration de l’instance AEM avec le service cloud de gestion dynamique des balises](../sites-administering/dtm.md)
+1. Appuyez/cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Configuration des statistiques]**.
+1. [Configuration de l’instance  [!DNL Experience Manager] avec le Cloud Service de gestion dynamique des balises](../sites-administering/dtm.md)
 
-   Le jeton API doit être disponible une fois que vous vous connectez à [https://dtm.adobe.com](https://dtm.adobe.com/) et que vous accédez à **[!UICONTROL Paramètres du compte]** à partir de l’icône Profil . Cette étape n’est pas requise du point de vue d’Assets Insights, car l’intégration d’AEM Sites à Assets Insights est toujours en cours d’exécution.
+   Le jeton API doit être disponible une fois que vous vous connectez à [https://dtm.adobe.com](https://dtm.adobe.com/) et que vous accédez à **[!UICONTROL Paramètres du compte]** à partir de l’icône Profil . Cette étape n’est pas requise du point de vue d’Assets Insights, car l’intégration de [!DNL Experience Manager Sites] à Assets Insights est toujours en cours d’exécution.
 
 1. Connectez-vous à [https://dtm.adobe.com](https://dtm.adobe.com/) et sélectionnez une entreprise, comme approprié.
 1. Création/ouverture d’une propriété web existante
@@ -43,7 +43,7 @@ Effectuez les étapes suivantes pour activer Assets Insights via DTM :
 
    ![chlimage_1-195](assets/chlimage_1-195.png)
 
-1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils > Ressources]**.
+1. Appuyez/cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils > Ressources]**.
 1. Appuyez/cliquez sur **[!UICONTROL Dispositif de suivi de la page de statistiques]**, copiez le code de suivi, puis collez-le dans la boîte de dialogue Script que vous avez ouverte à l’étape 6. Enregistrez les modifications.
 
    >[!NOTE]

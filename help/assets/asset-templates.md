@@ -1,17 +1,17 @@
 ---
 title: Modèles de ressources
-description: Découvrez les modèles de ressources dans AEM Assets et comment les utiliser pour créer des supports marketing.
+description: Découvrez les modèles de ressources dans  [!DNL Experience Manager] Ressources et comment utiliser les modèles de ressources pour créer des documents marketing.
 uuid: 7ba87c1d-70cd-4b89-86f3-971b93885f1e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
-feature: Gestion des ressources,Outils de développement
+feature: Asset Management,Developer Tools
 role: User
 exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 84%
+source-wordcount: '1574'
+ht-degree: 68%
 
 ---
 
@@ -23,9 +23,9 @@ La section fixe peut comprendre du contenu propriétaire, comme le logo d’une 
 
 Parce qu’ils permettent de réaliser des modifications limitées tout en garantissant une harmonie d’ensemble, les modèles de ressources sont des blocs de création parfaits pour adapter et diffuser rapidement votre contenu. La réutilisation de contenu permet de réduire les coûts de gestion des canaux papier et numériques. Cela garantit en outre une expérience globale cohérente, quel que soit le canal de diffusion.
 
-En tant que marketeur, vous pouvez stocker et gérer des modèles dans AEM Assets et utiliser un seul modèle de base pour créer facilement plusieurs expériences d’impression personnalisées. Vous pouvez créer différents types de documents marketing, par exemple, des brochures, des prospectus, des cartes postales, des cartes de visite, etc. pour transmettre de façon claire votre message marketing à vos clients. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Vous pouvez surtout diffuser des expériences à la fois numériques et papier simultanément en toute simplicité et offrir ainsi aux utilisateurs une expérience intégrée cohérente.
+En tant que marketeur, vous pouvez stocker et gérer des modèles dans [!DNL Experience Manager] Ressources et utiliser un seul modèle de base pour créer facilement plusieurs expériences d’impression personnalisées. Vous pouvez créer différents types de documents marketing, par exemple, des brochures, des prospectus, des cartes postales, des cartes de visite, etc. pour transmettre de façon claire votre message marketing à vos clients. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Vous pouvez surtout diffuser des expériences à la fois numériques et papier simultanément en toute simplicité et offrir ainsi aux utilisateurs une expérience intégrée cohérente.
 
-Si les modèles de ressources sont pour la plupart des fichiers InDesign, il n’est pas nécessaire de maîtriser InDesign pour réaliser des documents de qualité. Vous n’avez pas besoin de mapper les champs de votre modèle InDesign avec vos champs produit comme cela est nécessaire lors de la création de catalogues. Vous pouvez éditer les modèles en mode WYSIWYG directement depuis l&#39;interface web. Toutefois, pour qu’InDesign puisse traiter vos modifications, vous devez au préalable configurer AEM Assets pour l’intégrer avec le serveur InDesign.
+Si les modèles de ressources sont pour la plupart des fichiers InDesign, il n’est pas nécessaire de maîtriser InDesign pour réaliser des documents de qualité. Vous n’avez pas besoin de mapper les champs de votre modèle InDesign avec vos champs produit comme cela est nécessaire lors de la création de catalogues. Vous pouvez éditer les modèles en mode WYSIWYG directement depuis l&#39;interface web. Cependant, pour que l’InDesign traite vos modifications, vous devez d’abord configurer [!DNL Experience Manager] Ressources à intégrer au serveur InDesign.
 
 La possibilité de modifier les modèles InDesign depuis l’interface web contribue à une meilleure collaboration entre les équipes marketing et créatives tout en réduisant le délai de diffusion des actions de promotion locales.
 
@@ -37,7 +37,7 @@ Avec les modèles de ressources, vous pouvez :
 * Prévisualiser les modifications du modèle
 * Fusionner plusieurs fichiers de modèle pour créer un document multipage
 
-Lorsque vous choisissez un modèle pour vos documents marketing, AEM Assets crée une copie du modèle qui peut être modifiée. Le modèle original est préservé, ce qui garantit que votre signalétique reste intacte et peut être réutilisée pour renforcer la cohérence de la marque.
+Lorsque vous choisissez un modèle pour votre document, [!DNL Assets] crée une copie du modèle que vous pouvez modifier. Le modèle original est préservé, ce qui garantit que votre signalétique reste intacte et peut être réutilisée pour renforcer la cohérence de la marque.
 
 Vous pouvez exporter le fichier mis à jour dans le dossier parent aux formats suivants :
 
@@ -49,9 +49,9 @@ Vous pouvez également télécharger ces différents formats sur votre système 
 
 ## Création d’un document {#creating-a-collateral}
 
-Imaginons que vous voulez créer des contenus numériques papier, comme des brochures, des prospectus ou des publicités pour une future campagne, et les envoyer à des magasins dans le monde entier. Créer de tels documents à l’aide d’un modèle vous permet de proposer la même expérience client sur tous les canaux de diffusion. Les graphistes peuvent créer des modèles pour la campagne (document d’une seule page ou de plusieurs pages) à l’aide d’une solution de création, comme InDesign et vous les envoyer sur AEM Assets. Avant de créer un document, vous devez avoir préalablement chargé un ou plusieurs modèles INDD et les mettre à disposition en Experience Manager.
+Imaginons que vous voulez créer des contenus numériques papier, comme des brochures, des prospectus ou des publicités pour une future campagne, et les envoyer à des magasins dans le monde entier. Créer de tels documents à l’aide d’un modèle vous permet de proposer la même expérience client sur tous les canaux de diffusion. Les concepteurs peuvent créer les modèles de campagne (une ou plusieurs pages) à l’aide d’une solution créative, telle que l’InDesign et le chargement des modèles vers [!DNL Assets] pour vous. Avant de créer un document, vous devez avoir préalablement chargé un ou plusieurs modèles INDD et les mettre à disposition en Experience Manager.
 
-1. Cliquez ou appuyez sur le logo AEM, puis cliquez/appuyez sur **[!UICONTROL Ressources]** sur la page Navigation.
+1. Cliquez sur le logo [!DNL Experience Manager], puis sur **[!UICONTROL Ressources]** dans la page de navigation.
 1. Dans les options, choisissez **[!UICONTROL Modèles]**.
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
@@ -97,17 +97,17 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    Vous pouvez utiliser l’éditeur de texte pour modifier le texte à afficher dans le champ de texte. Vous pouvez modifier la taille, le style, la couleur et le type de police au niveau de la balise.
 
-   À l’aide de l’outil de recherche de ressources, vous pouvez rechercher des images dans AEM Assets et remplacer les images modifiables du modèle par d’autres que vous aurez choisies.
+   À l’aide de l’outil de recherche de ressources, vous pouvez parcourir ou rechercher des images dans [!DNL Assets] et remplacer les images modifiables du modèle par les images de votre choix.
 
    ![chlimage_1-314](assets/chlimage_1-314.png)
 
-   Les champs modifiables sont affichés à droite. Pour qu’un champ soit modifiable dans AEM Assets, le champ correspondant dans le modèle doit être « marqué » dans InDesign. Plus exactement, il doit être indiqué comme étant modifiable dans InDesign.
+   Les champs modifiables sont affichés à droite. Pour qu’un champ soit modifiable dans [!DNL Assets], le champ correspondant dans le modèle doit être balisé en InDesign. Plus exactement, il doit être indiqué comme étant modifiable dans InDesign.
 
    ![chlimage_1-315](assets/chlimage_1-315.png)
 
    >[!NOTE]
    >
-   >Vérifiez que votre instance AEM est intégrée avec un serveur InDesign pour qu’AEM Assets puisse extraire les données du modèle InDesign et les rendre modifiables. Pour plus d’informations, voir [Intégration d’AEM Assets à InDesign Server](indesign.md).
+   >Assurez-vous que votre instance [!DNL Experience Manager] est intégrée à un serveur d’InDesign pour permettre à [!DNL Assets] d’extraire des données du modèle d’InDesign et de les rendre disponibles pour modification. Pour plus d’informations, voir [Intégration [!DNL Assets] à InDesign Server](indesign.md).
 
 1. Pour modifier le texte d’un champ modifiable, cliquez/appuyez sur le champ de texte dans la liste des champs modifiables, puis modifiez le texte dans le champ.
 
@@ -127,7 +127,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-319](assets/chlimage_1-319.png)
 
-   Vous pouvez également rechercher des images à l’aide de mots-clés, de balises ou selon leur état de publication. Vous pouvez parcourir le référentiel d’AEM Assets et accéder à l’emplacement de l’image souhaitée.
+   Vous pouvez également rechercher des images à l’aide de mots-clés, de balises ou selon leur état de publication. Vous pouvez parcourir le référentiel [!DNL Assets] et accéder à l’emplacement de l’image souhaitée.
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
@@ -143,19 +143,19 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    >[!NOTE]
    >
-   >Les icônes Aperçu et Terminé sont activées uniquement lorsqu’il ne manque aucune icône aux champs d’image modifiables dans le document. Si des icônes sont manquantes dans votre document, c’est qu’AEM est incapable de résoudre les images du modèle InDesign. AEM ne peut pas résoudre les images dans les cas suivants :
+   >Les icônes Aperçu et Terminé sont activées uniquement lorsqu’il ne manque aucune icône aux champs d’image modifiables dans le document. S’il manque des icônes dans votre document, c’est parce que [!DNL Experience Manager] ne peut pas résoudre les images dans le modèle d’InDesign. En règle générale, [!DNL Experience Manager] ne peut pas résoudre les images dans les cas suivants :
    >
-   >* Les images ne sont pas incorporées au modèle InDesign sous-jacent.
+   >* Les images ne sont pas incorporées dans le modèle d’InDesign sous-jacent.
    >* Les images ne sont pas liées depuis le système de fichiers local.
 
    >
-   >Pour permettre à AEM de résoudre les images, procédez de la façon suivante :
+   >Pour permettre à [!DNL Experience Manager] de résoudre les images, procédez comme suit :
    >
    >* Incorporez les images lorsque vous créez les modèles InDesign (reportez-vous à la section [À propos des liens et des objets graphiques incorporés](https://helpx.adobe.com/fr/indesign/using/graphics-links.html)).
-   >* Montez AEM sur votre système de fichiers local, puis mappez les icônes manquantes avec les ressources AEM existantes.
+   >* Montez [!DNL Experience Manager] sur votre système de fichiers local, puis mappez les icônes manquantes avec les ressources [!DNL Experience Manager] existantes.
 
    >
-   >Pour plus d’informations sur l’utilisation des documents InDesign, voir [Bonnes pratiques relatives à l’utilisation des documents InDesign dans AEM](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Pour plus d’informations sur l’utilisation des documents InDesign, voir [Bonnes pratiques relatives à l’utilisation des documents InDesign dans  [!DNL Experience Manager]](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Pour générer un rendu PDF pour la brochure, sélectionnez l’option Acrobat dans la boîte de dialogue, puis cliquez sur **[!UICONTROL Continuer]**.
 1. Le document est créé dans le dossier où vous avez commencé. Pour afficher les rendus, ouvrez le document et choisissez **[!UICONTROL Rendus]** dans la liste de navigation globale.
@@ -187,7 +187,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-328](assets/chlimage_1-328.png)
 
-   Vous pouvez parcourir le référentiel ou les collections d’AEM Assets, puis accéder à l’emplacement des modèles souhaités et les sélectionner pour la fusion.
+   Vous pouvez parcourir le référentiel [!DNL Assets] ou les collections, accéder à l’emplacement des modèles souhaités, puis les sélectionner pour la fusion.
 
    ![chlimage_1-329](assets/chlimage_1-329.png)
 

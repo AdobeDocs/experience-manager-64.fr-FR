@@ -2,12 +2,12 @@
 title: Organisez vos ressources numériques.
 description: Organisez vos ressources numériques, images, fichiers, dossiers, etc. à l’aide de Experience Manager.
 contentOwner: AG
-feature: Gestion des ressources, Recherche
+feature: Asset Management,Search
 role: User
 exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '803'
 ht-degree: 19%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 19%
 
 L’ensemble des ressources numériques, des métadonnées et du contenu des documents Microsoft Office et PDF sont extraits et rendus utilisables dans une requête. Les recherches permettent un filtrage élaboré des ressources et respectent entièrement les autorisations. Les métadonnées sont décrites en détail dans la section Métadonnées de la gestion des ressources numériques.
 
-AEM Assets prend en charge plusieurs manières d’organiser le contenu. Vous pouvez les organiser de manière hiérarchique à l’aide de dossiers ou les organiser de manière ad hoc et non ordonnée à l’aide de balises, par exemple. Les utilisateurs peuvent modifier les balises dans l’éditeur de ressources de gestion des actifs numériques où les sous-ressources, rendus et métadonnées sont affichés.
+[!DNL Experience Manager] Assets prend en charge plusieurs manières d’organiser le contenu. Vous pouvez les organiser de manière hiérarchique à l’aide de dossiers ou les organiser de manière ad hoc et non ordonnée à l’aide de balises, par exemple. Les utilisateurs peuvent modifier les balises dans l’éditeur de ressources de gestion des actifs numériques où les sous-ressources, rendus et métadonnées sont affichés.
 
 ## Organisation des ressources dans des dossiers {#organize-using-folders}
 
@@ -36,7 +36,7 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
    * **Dossiers reposant sur une date** : contiennent des ressources numériques en fonction d’une date de création ou d’une date de dernière modification.
 
 * Créez un répertoire de dossiers susceptibles de ne pas changer, de sorte que toute personnalisation ou automatisation continue de fonctionner. Par exemple, les profils de traitement affectés continuent à fonctionner.
-* Si une ressource est déjà publiée, utilisez AEM pour la déplacer vers un autre dossier et la republier à partir de son nouvel emplacement, l’emplacement d’origine de la ressource publiée est toujours disponible, ainsi que la ressource qui vient d’être republiée. Toutefois, la ressource publiée d’origine est *perdue* à AEM et ne peut pas être annulée. Par conséquent, il est recommandé d’abord d’annuler la publication d’une ressource, puis de la déplacer vers un autre dossier.
+* Si une ressource est déjà publiée, utilisez [!DNL Experience Manager] pour la déplacer vers un autre dossier et la republier à partir de son nouvel emplacement, l’emplacement de la ressource publiée d’origine est toujours disponible, ainsi que la ressource republiée. La ressource publiée d’origine, cependant, est *perdue* par [!DNL Experience Manager] et ne peut pas être annulée. Par conséquent, il est recommandé d’abord d’annuler la publication d’une ressource, puis de la déplacer vers un autre dossier.
 
 ## Organisation des ressources à l’aide de balises {#use-tags-to-organize-assets}
 

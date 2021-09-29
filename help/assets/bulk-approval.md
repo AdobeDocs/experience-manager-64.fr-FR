@@ -1,14 +1,14 @@
 ---
 title: Révision de collections et de ressources situées dans un dossier
-description: Mettez en place des workflow de révision pour les ressources dans un dossier ou une collection et partagez ce processus avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
+description: Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez ce workflow avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 contentOwner: AG
-feature: Collaboration, collections
+feature: Collaboration, Collections
 role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 98%
+source-wordcount: '811'
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez ce workflow avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 
-Adobe Experience Manager (AEM) Assets permet de configurer un workflow de révision ad hoc pour les ressources situées dans un dossier ou une collection et de partager ce workflow avec des réviseurs ou des partenaires de conception afin d’obtenir leurs commentaires.
+Adobe Experience Manager Assets vous permet de configurer un processus de révision ad hoc pour les ressources d’un dossier ou d’une collection, puis de le partager avec des réviseurs ou des partenaires créatifs pour obtenir des commentaires.
 
 Vous pouvez associer le workflow de révision à un projet ou créer une tâche de révision indépendante.
 
@@ -52,7 +52,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
    ![review_name](assets/review_name.png)
 
 1. Appuyez/cliquez sur **[!UICONTROL Envoyer]**, puis sur **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
-1. Connectez-vous à AEM Assets en tant qu’approbateur et accédez à l’IU Assets. Pour approuver des ressources, cliquez/appuyez sur l’icône **[!UICONTROL Notifications]**, puis sélectionnez la tâche de révision dans la liste.
+1. Connectez-vous à [!DNL Experience Manager] Assets en tant qu’approbateur et accédez à l’interface utilisateur d’Assets. Pour approuver des ressources, cliquez/appuyez sur l’icône **[!UICONTROL Notifications]**, puis sélectionnez la tâche de révision dans la liste.
 
    ![notification](assets/notification.png)
 
@@ -96,7 +96,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Appuyez/cliquez sur **[!UICONTROL Envoyer]**, puis sur **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
-1. Connectez-vous à AEM Assets en tant qu’approbateur et accédez à la console Ressources. Pour approuver des ressources, appuyez/cliquez sur l’icône **[!UICONTROL Notifications]**, puis sélectionnez la tâche de révision dans la liste.
+1. Connectez-vous à [!DNL Experience Manager] Assets en tant qu’approbateur et accédez à la console Ressources. Pour approuver des ressources, appuyez/cliquez sur l’icône **[!UICONTROL Notifications]**, puis sélectionnez la tâche de révision dans la liste.
 1. Sur la page **[!UICONTROL Tâche de révision]**, examinez les détails de la tâche de révision, puis appuyez/cliquez sur **[!UICONTROL Réviser]**.
 1. Toutes les ressources situées dans la collection sont visibles dans le panneau de révision. Sélectionnez les ressources, puis appuyez/cliquez sur l’icône **[!UICONTROL Approuver/Rejeter]** pour approuver ou rejeter les ressources selon les besoins.
 

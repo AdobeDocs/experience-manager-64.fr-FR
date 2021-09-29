@@ -1,22 +1,22 @@
 ---
 title: Prise en charge des métadonnées IPTC
-description: Découvrez comment Adobe Experience Manager (AEM) Assets prend en charge les métadonnées IPTC, les évaluations des créations et les mots-clés ajoutés aux ressources par Adobe Bridge et d’autres applications de création.
+description: Découvrez comment Adobe Experience Manager Assets prend en charge les métadonnées IPTC, les évaluations des créations et les mots-clés ajoutés aux ressources par le biais d’Adobe Bridge et d’autres applications de création.
 contentOwner: AG
-feature: Métadonnées
+feature: Metadata
 role: User,Admin,Leader
 exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 100%
+source-wordcount: '364'
+ht-degree: 76%
 
 ---
 
 # Prise en charge des métadonnées IPTC {#support-for-iptc-metadata}
 
-Découvrez comment Adobe Experience Manager (AEM) Assets prend en charge les métadonnées IPTC, les évaluations des créations et les mots-clés ajoutés aux ressources par Adobe Bridge et d’autres applications de création.
+Découvrez comment Adobe Experience Manager Assets prend en charge les métadonnées IPTC, les évaluations des créations et les mots-clés ajoutés aux ressources par le biais d’Adobe Bridge et d’autres applications de création.
 
-Adobe Experience Manager (AEM) Assets prend en charge la norme de métadonnées IPTC qui est couramment utilisée pour décrire des ressources. Cela permet à AEM Assets de bénéficier d’une plus large acceptation de ses images auprès des différents intervenants, y compris les photographes, les agences de création, les bibliothèques, les musées, etc.
+Adobe Experience Manager Assets prend en charge la norme de métadonnées IPTC qui est largement utilisée pour décrire les ressources. [!DNL Experience Manager Assets] améliore l’acceptation de ses images par les différentes parties, y compris les photographes, les agences de création, les bibliothèques, les musées, etc.
 
 Le schéma de métadonnées utilisé pour les ressources intègre désormais IPTC Core et IPTC Extension, deux schémas permettant de définir des propriétés de métadonnées complètes, grâce auxquels les utilisateurs peuvent ajouter des données fiables et précises sur les personnes, les lieux et les produits illustrés dans une image. Il prend également en charge les dates, noms et identifiants relatifs à la création de l’image, ainsi qu’une méthode permettant d’exprimer les informations sur les droits avec une certaine souplesse.
 

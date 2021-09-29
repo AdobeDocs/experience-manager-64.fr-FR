@@ -1,20 +1,20 @@
 ---
 title: Configuration des statistiques sur les ressources
-description: Découvrez comment configurer les statistiques sur les ressources dans AEM Assets.
+description: Découvrez comment configurer les statistiques sur les ressources dans  [!DNL Experience Manager] Assets.
 contentOwner: AG
-feature: Statistiques sur les ressources, rapports sur les ressources
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 72%
+source-wordcount: '230'
+ht-degree: 46%
 
 ---
 
 # Configuration des statistiques sur les ressources {#configuring-asset-insights}
 
-Adobe Experience Manager (AEM) Assets récupère les données d’utilisation des ressources AEM utilisées par les sites web tiers à partir d’Adobe Analytics. Pour activer Assets Insights afin de récupérer ces données et de générer des informations, commencez par configurer la fonction à intégrer à Adobe Analytics.
+Adobe Experience Manager Assets récupère les données d’utilisation des [!DNL Experience Manager] ressources utilisées par des sites web tiers à partir d’Adobe Analytics. Pour activer Assets Insights afin de récupérer ces données et de générer des informations, commencez par configurer la fonction à intégrer à Adobe Analytics.
 
 >[!NOTE]
 >
@@ -30,12 +30,12 @@ Adobe Experience Manager (AEM) Assets récupère les données d’utilisation de
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. Cliquez/appuyez sur **[!UICONTROL Authentifier]**.
-1. Une fois AEM vos informations d’identification authentifiées, dans la liste **[!UICONTROL Suite de rapports]**, choisissez une suite de rapports Adobe Analytics à partir de laquelle vous souhaitez que les statistiques sur les ressources récupèrent les données. Cliquez sur **[!UICONTROL Ajouter]**.
-1. Une fois qu’AEM configure votre suite de rapports, appuyez/cliquez sur **[!UICONTROL Terminé]**.
+1. Une fois que [!DNL Experience Manager] a authentifié vos informations d’identification, dans la liste **[!UICONTROL Suite de rapports]** , sélectionnez une suite de rapports Adobe Analytics à partir de laquelle vous souhaitez que les statistiques sur les ressources récupèrent les données. Cliquez sur **[!UICONTROL Ajouter]**.
+1. Une fois que [!DNL Experience Manager] a configuré votre suite de rapports, cliquez/appuyez sur **[!UICONTROL Terminé]**.
 
 ## Suivi de page {#page-tracker}
 
-Une fois que vous avez configuré votre compte Analytics, le code de suivi de page est généré pour vous. Pour permettre à la fonction Statistiques sur les ressources de surveiller les ressources AEM utilisées sur les sites web tiers, incluez le code de suivi de page dans le code du site web. Utilisez l’utilitaire de suivi de page d’AEM Assets pour générer le code de suivi de page. Pour plus d’informations sur la manière d’inclure votre code de suivi de page sur des pages web tierces, reportez-vous à la section [Utilisation du dispositif de suivi de page et du code intégré sur les pages web](touch-ui-using-page-tracker.md).
+Une fois que vous avez configuré votre compte Analytics, le code de suivi de page est généré pour vous. Pour permettre à Assets Insights d’effectuer le suivi des [!DNL Experience Manager] ressources utilisées dans les sites web tiers, insérez le code de suivi de page dans le code du site web. Utilisez l’utilitaire de suivi de page dans [!DNL Experience Manager] Ressources pour générer le code de suivi de page. Pour plus d’informations sur la manière d’inclure votre code de suivi de page sur des pages web tierces, reportez-vous à la section [Utilisation du dispositif de suivi de page et du code intégré sur les pages web](touch-ui-using-page-tracker.md).
 
 1. Dans AEM, cliquez sur **[!UICONTROL Outils > Ressources]**.
 

@@ -1,14 +1,14 @@
 ---
 title: Bonnes pratiques de déchargement dans Assets
-description: Cas d’utilisation recommandés et meilleures pratiques pour le déchargement des workflows d’assimilation et de réplication des ressources dans AEM Assets.
+description: Cas d’utilisation recommandés et bonnes pratiques pour le déchargement des workflows d’assimilation et de réplication de ressources dans  [!DNL Experience Manager] Assets.
 contentOwner: AG
-feature: Gestion des ressources
+feature: Asset Management
 role: User,Admin
 exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1820'
-ht-degree: 80%
+source-wordcount: '1805'
+ht-degree: 76%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 80%
 
 >[!WARNING]
 >
->Cette fonctionnalité est obsolète AEM version 6.4 et ultérieure et est supprimée d’AEM 6.5. Planifiez en conséquence.
+>Cette fonctionnalité est obsolète à partir de la version [!DNL Experience Manager] 6.4 et est supprimée de la version [!DNL Experience Manager] 6.5. Planifiez en conséquence.
 
-La gestion de fichiers volumineux et l’exécution des workflows dans Adobe Experience Manager (AEM) Assets peuvent utiliser des ressources de processeur, de mémoire et d’E/S considérables. En particulier, la taille des ressources, les workflows, le nombre d’utilisateurs et la fréquence d’assimilation des ressources peuvent affecter les performances globales du système. Les opérations les plus gourmandes en ressources incluent les workflows d’assimilation et de réplication des ressources d’AEM. L’utilisation intensive de ces workflows sur une seule instance de création AEM peut avoir un impact négatif sur l’efficacité de la création.
+La gestion de fichiers volumineux et l’exécution de workflows dans Adobe Experience Manager Assets peuvent consommer une quantité considérable de ressources d’unité centrale, de mémoire et d’E/S. En particulier, la taille des ressources, les workflows, le nombre d’utilisateurs et la fréquence d’assimilation des ressources peuvent affecter les performances globales du système. Les opérations les plus gourmandes en ressources comprennent l’ingestion de ressources et les workflows de réplication. L’utilisation intensive de ces workflows sur une seule instance de création  peut avoir un impact négatif sur l’efficacité de la création.
 
 Le déchargement de ces tâches vers des instances de programme de travail dédiées peut réduire les surcharges du processeur, de la mémoire et de l’E/S. En général, l’idée qui sous-tend le déchargement consiste à distribuer les tâches qui utilisent des ressources intensives de processeur, mémoire ou E/S vers des instances de programme de travail dédiées. Les sections suivantes incluent les cas d’utilisation recommandés pour le déchargement des ressources.
 
-## Déchargement AEM Assets {#aem-assets-offloading}
+## [!DNL Experience Manager Assets] Déchargement {#aem-assets-offloading}
 
-AEM Assets met en œuvre une extension de workflow spécifique aux ressources natives pour le déchargement. AEM Assets s’appuie sur l’extension de workflow générique fournie par la structure de déchargement, mais inclut, dans la mise en œuvre, des fonctionnalités supplémentaires spécifiques aux ressources. L’objectif du déchargement des ressources consiste à exécuter efficacement le workflow Ressources de mise à jour de gestion des actifs numériques sur une ressource chargée. Le déchargement des ressources permet de mieux contrôler les workflows d’assimilation.
+[!DNL Experience Manager] Assets met en œuvre une extension de workflow spécifique aux ressources natives pour le déchargement. AEM Assets s’appuie sur l’extension de workflow générique fournie par la structure de déchargement, mais inclut, dans la mise en œuvre, des fonctionnalités supplémentaires spécifiques aux ressources. L’objectif du déchargement des ressources consiste à exécuter efficacement le workflow Ressources de mise à jour de gestion des actifs numériques sur une ressource chargée. Le déchargement des ressources permet de mieux contrôler les workflows d’assimilation.
 
-## Composants du déchargement AEM Assets {#aem-assets-offloading-components}
+## [!DNL Experience Manager] Composants de déchargement des ressources {#aem-assets-offloading-components}
 
 Le diagramme suivant illustre les principaux composants du processus de déchargement des ressources :
 
@@ -40,7 +40,7 @@ Le workflow Déchargement des ressources de mise à jour de gestion des actifs n
 
 Le gestionnaire des tâches distribue les nouvelles tâches aux instances de programme de travail. Lors de la conception du mécanisme de distribution, il est important de prendre en compte l’activation de rubrique. Les tâches ne peuvent être affectées qu’à des instances dont la rubrique de la tâche est activée. Désactivez la rubrique `com/adobe/granite/workflow/offloading` sur l’instance principale et activez-la sur le programme de travail afin de garantir que la tâche est affectée à ce dernier.
 
-### Déchargement AEM {#aem-offloading}
+### [!DNL Experience Manager] offloading {#aem-offloading}
 
 Le structure de déchargement identifie les tâches de déchargement des workflows affectées aux instances de programme de travail et utilise la réplication pour les transporter physiquement, y compris leur charge utile (par exemple, les images à intégrer), vers les programmes de travail.
 
@@ -50,7 +50,7 @@ Une fois qu’une tâche est écrite sur le programme de travail, le gestionnair
 
 ## Topologie Sling {#sling-topology}
 
-La topologie Sling regroupe les instances AEM et leur permet de se connaître mutuellement, indépendamment de la persistance sous-jacente. Cette caractéristique de la topologie Sling permet de créer des topologies pour des scénarios sans cluster, en cluster et mixtes. Une instance peut présenter des propriétés à l’ensemble de la topologie. La structure fournit des rappels permettant d’écouter les modifications de la topologie (instances et propriétés). La topologie Sling fournit la base des tâches distribuées Sling.
+La topologie Sling regroupe les instances [!DNL Experience Manager] et leur permet de se connaître les unes les autres, indépendamment de la persistance sous-jacente. Cette caractéristique de la topologie Sling permet de créer des topologies pour des scénarios sans cluster, en cluster et mixtes. Une instance peut présenter des propriétés à l’ensemble de la topologie. La structure fournit des rappels permettant d’écouter les modifications de la topologie (instances et propriétés). La topologie Sling fournit la base des tâches distribuées Sling.
 
 ### Tâches distribuées Sling {#sling-distributed-jobs}
 
@@ -89,7 +89,7 @@ Si vous estimez que le déchargement des ressources est une approche adaptée à
 
 ### Déploiement recommandé du déchargement des ressources {#recommended-assets-offloading-deployment}
 
-Avec AEM et Oak, il existe plusieurs scénarios de déploiement possibles. Pour le déchargement des ressources, un déploiement basé sur TarMK avec une banque de données partagée est recommandé. Le diagramme ci-dessous décrit le déploiement recommandé :
+Avec [!DNL Experience Manager] et Oak, plusieurs scénarios de déploiement sont possibles. Pour le déchargement des ressources, un déploiement basé sur TarMK avec une banque de données partagée est recommandé. Le diagramme ci-dessous décrit le déploiement recommandé :
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 

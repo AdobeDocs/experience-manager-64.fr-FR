@@ -1,35 +1,35 @@
 ---
 title: Gérez des ressources composites et générez des sous-ressources.
-description: Découvrez comment créer des références à AEM ressources à partir de fichiers InDesign, Adobe Illustrator et Photoshop. Découvrez également comment utiliser la fonction Visionneuse de page pour afficher les pages individuelles de fichiers de plusieurs pages, y compris les fichiers PDF, INDD, PPT, PPTX et AI.
+description: Découvrez comment créer des références aux  [!DNL Experience Manager] ressources dans des fichiers InDesign, Adobe Illustrator et Photoshop. Découvrez également comment utiliser la fonction Visionneuse de page pour afficher des pages individuelles de fichiers de plusieurs pages.
 contentOwner: AG
 feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '1408'
-ht-degree: 48%
+source-wordcount: '1377'
+ht-degree: 31%
 
 ---
 
 # Gestion des ressources composites avec des sous-ressources {#managing-compound-assets}
 
-Le composant Adobe Experience Manager (AEM) Assets peut déterminer si un fichier chargé contient des références à des ressources existant déjà dans le référentiel. Cette fonctionnalité est disponible uniquement pour les types de formats pris en charge. Si le fichier chargé contient des références à des actifs AEM, un lien bidirectionnel est créé entre les ressources chargées et celles référencées.
+Adobe Experience Manager Assets peut déterminer si un fichier chargé contient des références à des ressources qui existent déjà dans le référentiel. Cette fonctionnalité est disponible uniquement pour les types de formats pris en charge. Si la ressource chargée contient des références aux ressources [!DNL Experience Manager], un lien bidirectionnel est créé entre les ressources chargées et référencées.
 
-En plus de supprimer toute redondance, le référencement des ressources AEM dans les applications Adobe Creative Cloud améliore la collaboration et accroît l’efficacité et la productivité des utilisateurs.
+Outre l’élimination de la redondance, le référencement des ressources [!DNL Experience Manager] dans les applications Adobe Creative Cloud améliore la collaboration et accroît l’efficacité et la productivité des utilisateurs.
 
-AEM Assets prend en charge le **référencement bidirectionnel**. Vous trouverez des ressources référencées dans la page des détails de la ressource du fichier chargé. Vous pouvez, en outre, afficher les fichiers de référencement des ressources AEM dans la page des détails de la ressource référencée.
+[!DNL Experience Manager] Assets prend en charge le référencement  **bidirectionnel**. Vous trouverez des ressources référencées dans la page des détails de la ressource du fichier chargé. En outre, vous pouvez afficher les fichiers de référencement des ressources [!DNL Experience Manager] dans la page des détails de la ressource référencée.
 
 Les références sont résolues sur la base du chemin d’accès, du document et de l’ID d’instance des ressources référencées.
 
 ## Adobe Illustrator : Ajout de ressources en tant que références {#refai}
 
-Vous pouvez référencer des ressources AEM existantes dans un fichier Adobe Illustrator.
+Vous pouvez référencer des ressources [!DNL Experience Manager] existantes dans un fichier Adobe Illustrator.
 
-1. Utilisez l’[application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) pour monter le référentiel AEM Assets en tant que lecteur sur votre ordinateur local. Dans le lecteur monté, accédez à l’emplacement de la ressource à référencer.
+1. Utilisez l’[[!DNL Experience Manager] application de bureau ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) pour monter le référentiel Assets en tant que lecteur sur votre ordinateur local. [!DNL Experience Manager] Dans le lecteur monté, accédez à l’emplacement de la ressource à référencer.
 1. Faites glisser la ressource du volume monté jusqu’au fichier Illustrator.
-1. Enregistrez le fichier Illustrator sur le lecteur monté ou [chargez-le](managing-assets-touch-ui.md#uploading-assets) dans le référentiel AEM.
-1. Une fois le workflow terminé, accédez à la page des détails de la ressource. Les références à des ressources AEM existantes sont répertoriées sous **[!UICONTROL Dépendances]** dans la colonne **[!UICONTROL Références]**.
+1. Enregistrez le fichier Illustrator sur le lecteur monté ou [chargez-le](managing-assets-touch-ui.md#uploading-assets) dans le référentiel [!DNL Experience Manager]
+1. Une fois le workflow terminé, accédez à la page des détails de la ressource. Les références aux ressources [!DNL Experience Manager] existantes sont répertoriées sous **[!UICONTROL Dépendances]** dans la colonne **[!UICONTROL Références]**.
 
    ![chlimage_1-258](assets/chlimage_1-258.png)
 
@@ -43,9 +43,9 @@ Vous pouvez référencer des ressources AEM existantes dans un fichier Adobe Il
 
 ## Adobe InDesign : Ajout de ressources en tant que références {#add-aem-assets-as-references-in-adobe-indesign}
 
-Pour référencer des ressources AEM dans un fichier InDesign, faites-les glisser jusqu’au fichier ou exportez le fichier InDesign en tant que fichier ZIP.
+Pour référencer des ressources [!DNL Experience Manager] à partir d’un fichier d’InDesign, faites glisser les ressources [!DNL Experience Manager] vers le fichier d’InDesign ou exportez le fichier d’InDesign sous la forme d’un fichier ZIP.
 
-Les ressources référencées existent déjà dans AEM Assets. Vous pouvez extraire des sous-ressources en [configurant le serveur d’InDesign](indesign.md). Les ressources intégrées à un fichier InDesign sont extraites sous la forme de sous-ressources.
+Les ressources référencées existent déjà dans [!DNL Experience Manager] Assets. Vous pouvez extraire des sous-ressources en [configurant le serveur d’InDesign](indesign.md). Les ressources intégrées à un fichier InDesign sont extraites sous la forme de sous-ressources.
 
 >[!NOTE]
 >
@@ -61,19 +61,19 @@ Cette procédure est similaire à [Ajouter des ressources en tant que référenc
 
 1. Suivez les étapes de la section [Création de modèles de processus](/help/sites-developing/workflows-models.md) pour créer un nouveau processus.
 1. Utilisez la fonction [Package d’Adobe InDesign](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) pour exporter le document. Adobe InDesign peut exporter un document et les actifs liés sous la forme d’un package. Dans ce cas, le dossier exporté contient un dossier `Links` contenant des sous-ressources dans le fichier InDesign. Le dossier `Links` est présent dans le même dossier que le fichier INDD.
-1. Créez un fichier ZIP et transférez-le dans le référentiel AEM.
+1. Créez un fichier ZIP et téléchargez-le dans le référentiel [!DNL Experience Manager].
 1. Commencez le workflow de désarchivage.
 1. Une fois le workflow terminé, les références contenues dans le dossier Liens sont automatiquement référencées en tant que sous-ressources. Pour afficher la liste des ressources référencées, accédez à la page des détails de la ressource InDesign et fermez le [rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## Adobe Photoshop : Ajout de ressources en tant que références {#refps}
 
-1. À l’aide d’un client WebDAV, montez AEM Assets comme lecteur.
-1. Pour créer des références à des ressources AEM dans un fichier Photoshop, accédez aux ressources correspondantes sur le volume monté à l’aide de l’option Importer et lier dans Photoshop.
+1. A l’aide d’un client WebDav, montez [!DNL Experience Manager] Ressources en tant que lecteur.
+1. Pour créer des références aux ressources [!DNL Experience Manager] dans un fichier Photoshop, accédez aux ressources correspondantes dans le lecteur monté à l’aide de la fonctionnalité Placer les ressources liées dans Photoshop.
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Enregistrez le fichier Photoshop sur le lecteur monté ou [chargez ](managing-assets-touch-ui.md#uploading-assets) dans le référentiel AEM.
-1. Une fois le workflow terminé, les références aux ressources AEM existantes sont répertoriées dans la page des détails de la ressource.
+1. Enregistrez le fichier Photoshop sur le lecteur monté ou [chargez ](managing-assets-touch-ui.md#uploading-assets) dans le référentiel [!DNL Experience Manager].
+1. Une fois le workflow terminé, les références aux ressources [!DNL Experience Manager] existantes sont répertoriées dans la page des détails de la ressource.
 
    Pour afficher les ressources référencées, fermez le [rail](/help/sites-authoring/basic-handling.md#rail-selector) dans la page des détails de la ressource.
 
@@ -85,7 +85,7 @@ Cette procédure est similaire à [Ajouter des ressources en tant que référenc
 
 ## Création de sous-ressources {#generate-subassets}
 
-Pour les ressources prises en charge avec des formats multi-pages (fichiers PDF, AI, Microsoft PowerPoint et Apple Keynote et fichiers Adobe InDesign), AEM peut générer des sous-ressources qui correspondent à chaque page de la ressource d’origine. Ces sous-ressources sont liées à la ressource *parent* et facilitent l’affichage de plusieurs pages. Pour tous les autres usages, les sous-ressources sont traitées comme des ressources normales dans AEM.
+Pour les ressources prises en charge avec des formats multi-pages (fichiers PDF, AI, Microsoft PowerPoint et Apple Keynote et fichiers Adobe InDesign), [!DNL Experience Manager] peut générer des sous-ressources qui correspondent à chaque page de la ressource d’origine. Ces sous-ressources sont liées à la ressource *parent* et facilitent l’affichage de plusieurs pages. Pour tous les autres usages, les sous-ressources sont traitées comme des ressources normales dans AEM.
 
 La génération de sous-ressources est désactivée par défaut. Pour activer la génération de sous-ressources, procédez comme suit :
 
@@ -111,7 +111,7 @@ Les sous-ressources ne s’affichent que si elles sont générées et disponible
 
 ## Affichage des pages d’un fichier multipage   {#view-pages-of-a-multi-page-file}
 
-Vous pouvez afficher un fichier de plusieurs pages, tel que PDF, INDD, PPT, PPTX et AI, à l’aide de la fonctionnalité Visionneuse de page d’AEM Assets. Ouvrez une ressource de plusieurs pages et cliquez sur **[!UICONTROL Afficher les pages]** dans le coin supérieur gauche de la page. La Visionneuse de page qui s’ouvre affiche les pages de la ressource et les commandes permettant de parcourir et de zoomer sur chaque page.
+Vous pouvez afficher un fichier de plusieurs pages, tel que PDF, INDD, PPT, PPTX et AI, à l’aide de la fonction Visionneuse de page des ressources [!DNL Experience Manager]. Ouvrez une ressource de plusieurs pages et cliquez sur **[!UICONTROL Afficher les pages]** dans le coin supérieur gauche de la page. La Visionneuse de page qui s’ouvre affiche les pages de la ressource et les commandes permettant de parcourir et de zoomer sur chaque page.
 
 ![Affichage et affichage des pages d’une ressource multipage](assets/view_multipage_asset_fmr.gif)
 
@@ -119,7 +119,7 @@ S’agissant d’InDesign, vous pouvez extraire des pages à l’aide du serveur
 
 Les options suivantes sont disponibles dans la barre d’outils, dans le rail de gauche, ainsi que dans les commandes de la visionneuse de page :
 
-* **[!UICONTROL Actions]** de bureau pour ouvrir ou afficher une sous-ressource spécifique à l’aide de l’appli de bureau AEM. Découvrez comment [configurer les actions de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#desktopactions-v2) si vous utilisez AEM application de bureau.
+* **[!UICONTROL Actions]** de bureau pour ouvrir ou afficher une sous-ressource spécifique à l’aide de l’appli de  [!DNL Experience Manager] bureau . Découvrez comment [configurer les actions de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#desktopactions-v2) si vous utilisez l’appli de bureau [!DNL Experience Manager].
 
 * **** L’option Propriétés ouvre la   page Propriétés de la sous-ressource spécifique.
 

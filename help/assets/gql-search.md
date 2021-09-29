@@ -1,20 +1,20 @@
 ---
 title: Recherche de texte intégral GQL
-description: Explorez la fonction de recherche de texte intégral GQL dans AEM Assets. Utilisez-la afin de rechercher des ressources selon des métadonnées spécifiques telles que le titre, la description et le nom de l’auteur.
+description: Explorez la fonction de recherche de texte intégral GQL dans  [!DNL Experience Manager] Ressources. Utilisez-la afin de rechercher des ressources selon des métadonnées spécifiques telles que le titre, la description et le nom de l’auteur.
 contentOwner: AG
-feature: Recherche, Métadonnées
+feature: Search,Metadata
 role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 75%
+source-wordcount: '873'
+ht-degree: 73%
 
 ---
 
 # Recherche de texte intégral GQL {#gql-full-text-search}
 
-Explorez la fonction de recherche de texte intégral GQL dans AEM Assets. Utilisez-la afin de rechercher des ressources selon des métadonnées spécifiques telles que le titre, la description et le nom de l’auteur.
+Explorez la fonction de recherche de texte intégral GQL dans [!DNL Experience Manager] Ressources. Utilisez-la afin de rechercher des ressources selon des métadonnées spécifiques telles que le titre, la description et le nom de l’auteur.
 
 La fonctionnalité de recherche en texte intégral GQL permet de rechercher des ressources selon des métadonnées spécifiques telles que le titre, la description, l’auteur, etc.
 
@@ -38,7 +38,7 @@ Pour rechercher, par exemple, les ressources dont le titre est « Cible », su
 
    ![gql_search](assets/gql_search.png)
 
-1. Appuyez sur **[!UICONTROL Entrée]**. L’interface utilisateur d’AEM Assets affiche uniquement les ressources dont le titre correspond exactement à &quot;Target&quot;.
+1. Appuyez sur **[!UICONTROL Entrée]**. L’interface utilisateur [!DNL Assets] affiche uniquement les ressources dont le titre correspond exactement à &quot;Target&quot;.
 
 La fonction de recherche de texte intégral GQL vous permet de rechercher des ressources en fonction des éléments suivants :
 
@@ -112,7 +112,6 @@ title:&quot;Meeting&quot;;
 >Les propriétés path, limit, size et orderby ne peuvent pas être combinées à une autre propriété avec un opérateur OU.
 >
 >Le mot-clé d’une propriété générée par un utilisateur correspond au libellé de son champ dans l’éditeur de propriétés en minuscules et sans espace.
-
 
 >[!NOTE]
 >

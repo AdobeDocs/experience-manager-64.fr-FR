@@ -1,28 +1,28 @@
 ---
 title: Améliorations de l’expérience utilisateur dans Assets
-description: Cet article décrit les améliorations de l’expérience utilisateur dans AEM 6.4 Assets.
+description: Cet article décrit les améliorations de l’expérience utilisateur dans  [!DNL Experience Manager] 6.4 Assets.
 contentOwner: AG
-feature: Informations sur la version
+feature: Release Information
 role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 73%
+source-wordcount: '641'
+ht-degree: 69%
 
 ---
 
 # Améliorations de l’expérience utilisateur dans Assets {#user-experience-enhancements-in-assets}
 
-AEM 6.4 Assets comprend plusieurs améliorations de la convivialité qui offrent une expérience utilisateur transparente et améliorent la productivité. L’augmentation de la vitesse à laquelle vous pouvez créer/gérer votre contenu marketing accroît la vélocité du contenu de l’entreprise.
+[!DNL Experience Manager] 6.4 Assets comprend plusieurs améliorations de la convivialité qui offrent une expérience utilisateur transparente et améliorent la productivité. L’augmentation de la vitesse à laquelle vous pouvez créer/gérer votre contenu marketing accroît la vélocité du contenu de l’entreprise.
 
 L’interface est plus réactive, ce qui vous permet de gérer efficacement un large portfolio de ressources. Vous pouvez rapidement rechercher, afficher, trier et faire défiler en toute fluidité une longue liste d’éléments.
 
-Vous pouvez personnaliser les différents modes : Carte, Liste et Colonnes. Par exemple, vous pouvez configurer la taille des miniatures que vous souhaitez afficher en mode Carte. Pour le mode Liste, vous pouvez configurer le niveau de détail que vous voulez afficher pour les ressources dans la liste. AEM 6.4 Assets comprend une nouvelle arborescence qui permet de parcourir le référentiel des ressources et de rechercher vos ressources.
+Vous pouvez personnaliser les différents modes : Carte, Liste et Colonnes. Par exemple, vous pouvez configurer la taille des miniatures que vous souhaitez afficher en mode Carte. Pour le mode Liste, vous pouvez configurer le niveau de détail que vous voulez afficher pour les ressources dans la liste. [!DNL Experience Manager] 6.4 Assets comprend une nouvelle arborescence qui permet de parcourir le référentiel des ressources et de rechercher vos ressources.
 
 ## Chargement différé {#lazy-loading}
 
-Lorsque vous parcourez/recherchez des ressources dans AEM 6.4 Assets, jusqu’à 200 ressources sont affichées à la fois. Vous pouvez faire défiler les résultats plus rapidement, ce qui est particulièrement utile si vous naviguez dans une longue liste de résultats. Puisqu’un nombre considérable de ressources sont chargées à la fois, la navigation est fluide.
+Lorsque vous parcourez/recherchez des ressources dans [!DNL Experience Manager] 6.4 Assets, jusqu’à 200 ressources s’affichent à la fois. Vous pouvez faire défiler les résultats plus rapidement, ce qui est particulièrement utile si vous naviguez dans une longue liste de résultats. Puisqu’un nombre considérable de ressources sont chargées à la fois, la navigation est fluide.
 
 Si vous appuyez/cliquez sur une ressource pour consulter sa page de détails, vous pouvez revenir à la page de résultats, simplement en appuyant/cliquant sur le bouton Retour de la barre d’outils.
 
@@ -66,7 +66,7 @@ En plus des modes Carte et Liste, vous accédez désormais à la page de détail
 
 ## Arborescence {#tree-view}
 
-AEM 6.4 Assets inclut une arborescence qui permet de parcourir facilement votre hiérarchie de ressources et d’accéder à la ressource ou au dossier souhaité.
+[!DNL Experience Manager] 6.4 Assets inclut une arborescence qui permet de parcourir facilement votre hiérarchie de ressources et d’accéder à la ressource ou au dossier souhaité.
 
 Pour ouvrir l’arborescence, appuyez/cliquez sur l’icône de navigation globale dans `Assets UI`, puis sélectionnez **[!UICONTROL Arborescence de contenu]** dans le menu.
 

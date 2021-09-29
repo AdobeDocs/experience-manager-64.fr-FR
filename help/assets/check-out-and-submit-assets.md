@@ -2,19 +2,19 @@
 title: Archivage et extraction de vos ressources numériques pour modification
 description: Découvrez comment extraire des ressources pour les modifier et les archiver à nouveau une fois les modifications terminées.
 contentOwner: AG
-feature: Gestion des ressources
+feature: Asset Management
 role: User
 exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 67%
+source-wordcount: '393'
+ht-degree: 66%
 
 ---
 
 # Archivage et extraction de fichiers dans AEM Assets {#check-in-and-check-out-files-in-assets}
 
-Adobe Experience Manager (AEM) Assets vous permet d’extraire des ressources pour les modifier et de les archiver à nouveau une fois les modifications effectuées. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent effectuer aucune de ces opérations sur la ressource tant que vous ne l’avez pas archivée dans AEM Assets. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
+Adobe Experience Manager Assets vous permet d’extraire des ressources pour les modifier et de les archiver à nouveau une fois les modifications effectuées. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent effectuer aucune de ces opérations sur la ressource tant que vous n’avez pas archivé la ressource dans [!DNL Experience Manager] Ressources. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
 
 Pour pouvoir extraire ou archiver des ressources, vous devez disposer d’un accès en écriture sur ces ressources.
 
@@ -58,13 +58,13 @@ Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   La ressource modifiée est archivée dans AEM Assets et peut être modifiée par les autres utilisateurs.
+   La ressource modifiée est archivée dans [!DNL Assets] et peut être modifiée par les autres utilisateurs.
 
 ## Archivage forcé {#forced-check-in}
 
 Les administrateurs peuvent archiver des ressources extraites par d’autres utilisateurs.
 
-1. Connectez-vous à AEM Assets en tant qu’administrateur.
+1. Connectez-vous à [!DNL Assets] en tant qu’administrateur.
 1. Dans l’interface utilisateur d’Assets, sélectionnez une ou plusieurs ressources extraites par d’autres utilisateurs.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)

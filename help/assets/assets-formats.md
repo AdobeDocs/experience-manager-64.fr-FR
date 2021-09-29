@@ -1,22 +1,22 @@
 ---
-title: Formats de fichier pris en charge dans AEM Assets
-description: Liste des formats de fichiers et des types MIME pris en charge par AEM Assets et des fonctionnalités prises en charge pour chaque format.
+title: Formats de fichier pris en charge dans [!DNL Experience Manager] Assets
+description: Liste des formats de fichiers et des types MIME pris en charge par Assets et des fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
-feature: Gestion des ressources,Rendus
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 64%
+source-wordcount: '1635'
+ht-degree: 62%
 
 ---
 
-# Formats de fichiers pris en charge dans AEM Assets {#assets-supported-formats}
+# Formats de fichiers pris en charge par [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-AEM Assets prend en charge un large éventail de formats de fichier. Chaque fonctionnalité prend en charge différents types MIME.
+[!DNL Experience Manager Assets] prend en charge un large éventail de formats de fichier. Chaque fonctionnalité prend en charge différents types MIME.
 
-Pour intégrer AEM Assets à d’autres solutions de gestion des actifs numériques (DAM) et logiciels de bureau conformes aux normes, utilisez la plateforme XMP (Extensible Metadata Platform) d’Adobe.
+Pour intégrer [!DNL Assets] à d’autres solutions de gestion des actifs numériques (DAM) et logiciels de bureau conformes aux normes, utilisez la plateforme de métadonnées extensible (XMP) d’Adobe.
 
 Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 
@@ -24,7 +24,7 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 |:---:|---|
 | ✓ | Pris en charge |
 | * | Prise en charge avec des fonctionnalités de composant additionnel |
-| - | Non applicable |
+| − | Non applicable |
 
 ## Formats d’image pixellisés {#supported-raster-image-formats}
 
@@ -111,7 +111,7 @@ Voir [Bibliothèque de transcodage d’imagerie](imaging-transcoding-library.md)
 
 ## Camera Raw {#supported-camera-raw}
 
-La bibliothèque Adobe Camera Raw permet à AEM Assets d’importer des images brutes. Voir [Prise en charge Camera Raw](camera-raw.md).
+La bibliothèque Adobe Camera Raw permet à [!DNL Assets] d’ingérer des images brutes. Voir [Prise en charge Camera Raw](camera-raw.md).
 
 ## Formats de document {#supported-document-formats}
 
@@ -244,7 +244,7 @@ Le tableau ci-dessous décrit l’applicabilité des processus de gestion des ac
 
 ## Types MIME pris en charge {#supported-mime-types}
 
-Par défaut, AEM détecte le type de fichier à l’aide de l’extension de fichier. AEM peut le détecter à partir du contenu des fichiers. Pour plus d’informations, sélectionnez l’option [!UICONTROL Détecter le MIME à partir du contenu] dans [!UICONTROL Service de type MIME de la gestion des actifs numériques Day CQ] dans la console web AEM.
+Par défaut, [!DNL Experience Manager] détecte le type de fichier à l’aide de l’extension de fichier. [!DNL Experience Manager] peut le détecter à partir du contenu des fichiers. Pour plus d’informations, sélectionnez l’option [!UICONTROL Détecter le MIME à partir du contenu] dans [!UICONTROL Service de type MIME de la gestion des actifs numériques Day CQ] dans la console web [!DNL Experience Manager].
 
 Une liste des types MIME pris en charge est disponible en CRXDE Lite à l’adresse `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 

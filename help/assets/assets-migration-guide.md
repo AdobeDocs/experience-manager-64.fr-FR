@@ -2,13 +2,13 @@
 title: Migration des ressources vers Adobe Experience Manager Assets en bloc
 description: Comment importer des ressources dans AEM, appliquer des métadonnées, générer des rendus et les activer pour publier des instances.
 contentOwner: AG
-feature: Migration,Rendus,Gestion des ressources
+feature: Migration,Renditions,Asset Management
 role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 67%
+source-wordcount: '1772'
+ht-degree: 57%
 
 ---
 
@@ -24,19 +24,18 @@ Avant d’exécuter l’une des étapes décrites ci-dessous, passez en revue et
 >
 >Les outils de migration de ressources suivants ne font pas partie d’Adobe Experience Manager. L’assistance clientèle d’Adobe ne prend pas en charge ces outils.
 >
->* Tools Tag Maker d’ACS AEM
->* Tools CSV Asset Importer d’ACS AEM
+>* Tools Tag Maker ACS [!DNL Experience Manager]
+>* Outils [!DNL Experience Manager] Importateur de ressources CSV
 >* Bulk Workflow Manager d’ACS Commons
 >* Fast Action Manager d’ACS Commons
 >* Synthetic Workflow
 
 >
->
-Ces logiciels sont Open Source et couverts par la [Licence Apache v2](https://adobe-consulting-services.github.io/pages/license.html). Pour poser une question ou signaler un problème, consultez les sections respectives [Problèmes GitHub pour les outils ACS AEM](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) et [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
+>Ces logiciels sont Open Source et couverts par la [Licence Apache v2](https://adobe-consulting-services.github.io/pages/license.html). Pour poser une question ou signaler un problème, consultez les sections respectives [ [!DNL Experience Manager] Problèmes GitHub pour les outils ACS ](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) et [ [!DNL Experience Manager] ACS Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## Migration vers AEM {#migrate-to-aem}
+## Migrer vers [!DNL Experience Manager] {#migrate-to-aem}
 
-La migration des ressources vers AEM se déroule en plusieurs étapes et doit être considérée comme un processus échelonné. Les phases de la migration sont les suivantes :
+La migration des ressources vers [!DNL Experience Manager] nécessite plusieurs étapes et doit être considérée comme un processus par étapes. Les phases de la migration sont les suivantes :
 
 1. Désactivation des workflows.
 1. Chargement des balises.
@@ -53,7 +52,7 @@ Avant de démarrer une migration, désactivez les lanceurs pour le workflow `DAM
 
 ### Chargement des balises {#load-tags}
 
-Vous avez peut-être déjà mis en place une taxonomie de balises que vous appliquez à vos images. Des outils tels que l’importateur de ressources CSV et la fonctionnalité de profils de métadonnées peuvent aider à automatiser l’application de balises aux ressources. Avant cela, ajoutez les balises dans Experience Manager. La fonctionnalité [Tools Tag Maker d’ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permet de renseigner les balises à l’aide d’une feuille de calcul Microsoft Excel chargée dans le système.
+Vous avez peut-être déjà mis en place une taxonomie de balises que vous appliquez à vos images. Des outils tels que l’importateur de ressources CSV et la fonctionnalité de profils de métadonnées peuvent aider à automatiser l’application de balises aux ressources. Avant cela, ajoutez les balises dans Experience Manager. La fonctionnalité [ [!DNL Experience Manager] Tools Tag Maker d’ACS ](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permet de renseigner les balises à l’aide d’une feuille de calcul Microsoft Excel chargée dans le système.
 
 ### Assimilation des ressources {#ingest-assets}
 
@@ -63,7 +62,7 @@ Il existe deux approches pour charger les ressources dans le système : une app
 
 #### Pousser via HTTP {#push-through-http}
 
-L’équipe Managed Services d’Adobe utilise un outil appelé Glutton pour charger les données dans les environnements clients. Glutton est une petite application Java qui charge toutes les ressources d’un répertoire dans un autre répertoire d’une instance AEM. À la place de Glutton, vous pouvez également utiliser des outils tels que les scripts Perl pour publier les ressources dans le référentiel.
+L’équipe Managed Services d’Adobe utilise un outil appelé Glutton pour charger les données dans les environnements clients. Glutton est une petite application Java qui charge toutes les ressources d’un répertoire dans un autre répertoire sur une instance [!DNL Experience Manager]. À la place de Glutton, vous pouvez également utiliser des outils tels que les scripts Perl pour publier les ressources dans le référentiel.
 
 L’utilisation de l’approche Push à l’aide du protocole HTTPS présente deux inconvénients :
 
@@ -74,7 +73,7 @@ L’autre approche de l’intégration des ressources consiste à extraire les r
 
 #### Extraction à partir du système de fichiers local {#pull-from-the-local-file-system}
 
-[L’outil ACS AEM Tools CSV Asset Importer](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrait les ressources du système de fichiers et les métadonnées des ressources d’un fichier CSV pour l’importation des ressources. L’API AEM Asset Manager est utilisée pour importer les ressources dans le système et appliquer les propriétés des métadonnées configurées. Idéalement, les ressources sont montées sur le serveur via un montage de fichiers réseau ou via un lecteur externe.
+[ACS [!DNL Experience Manager] Tools CSV Asset Importer](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrait les ressources du système de fichiers et des métadonnées des ressources à partir d’un fichier CSV pour l’importation des ressources. L’API [!DNL Experience Manager] Asset Manager est utilisée pour importer les ressources dans le système et appliquer les propriétés de métadonnées configurées. Idéalement, les ressources sont montées sur le serveur via un montage de fichiers réseau ou via un lecteur externe.
 
 Lorsque les ressources ne sont pas transmises sur un réseau, les performances globales s’améliorent considérablement. Cette méthode est généralement la méthode la plus efficace pour charger des ressources dans le référentiel. En outre, vous pouvez importer toutes les ressources et métadonnées en une seule étape, car l’outil prend en charge l’ingestion des métadonnées. Aucune autre étape n’est nécessaire pour appliquer les métadonnées, par exemple à l’aide d’un outil distinct.
 
@@ -85,7 +84,7 @@ Après avoir chargé les ressources dans le système, vous devez les traiter via
 Après avoir configuré le workflow en fonction de vos besoins, vous disposez de deux options pour l’exécuter :
 
 1. L’approche la plus simple consiste à utiliser l’outil [Bulk Workflow Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Cet outil permet d’exécuter une requête et de traiter les résultats de la requête via un workflow. Il existe également des options permettant de définir la taille des lots.
-1. Vous pouvez utiliser l’outil [Fast Action Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) en association avec [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Bien que cette approche soit beaucoup plus impliquée, elle vous permet de supprimer la surcharge du moteur de processus AEM, tout en optimisant l’utilisation des ressources du serveur. De plus, Fast Action Manager améliore les performances en surveillant de manière dynamique les ressources du serveur et en réduisant la charge placée sur le système. Des exemples de scripts ont été fournis sur la page de fonctionnalités d’ACS Commons.
+1. Vous pouvez utiliser l’outil [Fast Action Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) en association avec [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Bien que cette approche soit beaucoup plus impliquée, elle vous permet de supprimer la surcharge du moteur de workflow [!DNL Experience Manager] tout en optimisant l’utilisation des ressources du serveur. De plus, Fast Action Manager améliore les performances en surveillant de manière dynamique les ressources du serveur et en réduisant la charge placée sur le système. Des exemples de scripts ont été fournis sur la page de fonctionnalités d’ACS Commons.
 
 ### Activation des ressources {#activate-assets}
 
@@ -93,7 +92,7 @@ Pour les déploiements disposant d’un niveau de publication, vous devez active
 
 Pour contourner ce problème, vous pouvez utiliser l’outil [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) pour gérer la réplication des ressources. Il fonctionne sans utiliser les files d’attente Sling, réduisant les surcharges, tout en régulant la charge de travail pour éviter que le serveur ne soit surchargé. Un exemple d’utilisation de cet outil pour gérer la réplication est présenté sur la page de documentation de FAM.
 
-D’autres options permettant de transférer des ressources vers la batterie de serveurs de publication incluent l’utilisation de [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) ou [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), qui sont fournis en tant qu’outils dans le cadre de Jackrabbit. Une autre option consiste à utiliser un outil Open Source pour votre infrastructure AEM, nommé [Grabbit](https://github.com/TWCable/grabbit), qui se targue d’être plus rapide que vlt.
+D’autres options permettant de transférer des ressources vers la batterie de serveurs de publication incluent l’utilisation de [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) ou [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), qui sont fournis en tant qu’outils dans le cadre de Jackrabbit. Une autre option consiste à utiliser un outil Open Source pour votre infrastructure [!DNL Experience Manager] appelée [Grabbit](https://github.com/TWCable/grabbit), qui prétend présenter des performances plus rapides que vlt.
 
 Pour toutes ces approches, notez que les ressources de l’instance de création ne s’affichent pas comme ayant été activées. Pour marquer ces ressources avec l’état d’activation correct, vous devez également exécuter un script les marquant comme activées.
 
@@ -117,20 +116,20 @@ Une fois les ressources activées, vous pouvez cloner votre instance de publicat
 
 Une fois la migration terminée, les lanceurs des workflows Ressources de mise à jour de gestion des actifs numériques doivent être réactivés pour prendre en charge la génération des rendus et l’extraction des métadonnées pour une utilisation quotidienne continue du système.
 
-## Migration des ressources entre les déploiements d’AEM {#migrate-between-aem-instances}
+## Migration des ressources sur les déploiements [!DNL Experience Manager] {#migrate-between-aem-instances}
 
-Bien que ce ne soit pas aussi courant, vous devez parfois migrer de grandes quantités de données d’une instance AEM à une autre, par exemple, lorsque vous effectuez une mise à niveau d’AEM, que vous mettez à niveau votre matériel ou que vous migrez vers un nouveau centre de données, comme avec une migration AMS.
+Bien que ce ne soit pas aussi courant, vous devez parfois migrer de grandes quantités de données d’une instance [!DNL Experience Manager] vers une autre ; par exemple, lorsque vous effectuez une mise à niveau de [!DNL Experience Manager], mettez à niveau votre matériel ou migrez vers un nouveau centre de données, par exemple avec une migration AMS.
 
-Dans ce cas, les ressources sont déjà renseignées avec les métadonnées et les rendus déjà générés. Il ne vous reste plus qu’à vous concentrer sur le déplacement des ressources d’une instance à une autre. Lors de la migration entre instances AEM, procédez comme suit :
+Dans ce cas, les ressources sont déjà renseignées avec les métadonnées et les rendus déjà générés. Il ne vous reste plus qu’à vous concentrer sur le déplacement des ressources d’une instance à une autre. Lors de la migration entre des instances [!DNL Experience Manager], vous effectuez les étapes suivantes :
 
 1. Désactiver les workflows : Puisque vous migrez des rendus avec nos ressources, vous souhaitez désactiver les lanceurs de workflow pour les ressources de mise à jour de gestion des actifs numériques.
 
-1. Migration des balises : Comme des balises sont déjà chargées dans l’instance d’AEM source, vous pouvez les créer dans un module de contenu et installer le module sur l’instance cible.
+1. Migration des balises : Comme des balises sont déjà chargées dans l’instance [!DNL Experience Manager] source, vous pouvez les créer dans un module de contenu et installer le module sur l’instance cible.
 
-1. Migration des ressources : Deux outils sont recommandés pour déplacer des ressources d’une instance AEM vers une autre :
+1. Migration des ressources : Deux outils sont recommandés pour déplacer des ressources d’une instance [!DNL Experience Manager] vers une autre :
 
    * **Vault Remote Copy**, ou  `vlt rcp`, vous permet d’utiliser vlt sur un réseau. Vous pouvez indiquer des répertoires source et de destination pour que vlt télécharge toutes les données du référentiel d’une instance et les charge dans l’autre. Vlt rcp est documenté à l’adresse [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **Grabbit** est un outil de synchronisation de contenu Open Source développé par Time Warner Cable dans le cadre de la mise en œuvre d’AEM. Comme il utilise des flux de données continus, en comparaison avec vlt rcp, sa latence est inférieure et il annonce une vitesse de deux à dix fois plus rapide que vlt rcp. Grabbit prend également en charge la synchronisation du contenu delta uniquement, ce qui lui permet de synchroniser les modifications après l’achèvement d’une passe de migration initiale.
+   * **** Grabbitis est un outil de synchronisation de contenu open source qui a été développé par Time Warner Cable pour sa  [!DNL Experience Manager] mise en oeuvre. Comme il utilise des flux de données continus, en comparaison avec vlt rcp, sa latence est inférieure et il annonce une vitesse de deux à dix fois plus rapide que vlt rcp. Grabbit prend également en charge la synchronisation du contenu delta uniquement, ce qui lui permet de synchroniser les modifications après l’achèvement d’une passe de migration initiale.
 
 1. Activation des ressources : Suivez les instructions de [activation des ressources](#activate-assets) documentées pour la migration initiale vers AEM.
 

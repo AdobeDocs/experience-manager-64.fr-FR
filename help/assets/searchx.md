@@ -1,28 +1,28 @@
 ---
 title: Extension de la recherche de ressources
-description: Découvrez comment étendre la recherche dans AEM Assets au-delà des recherches prêtes à l’emploi de ressources par chaînes.
+description: Étendez les fonctionnalités de recherche de  [!DNL Experience Manager] ressources au-delà des recherches prêtes à l’emploi de ressources par chaînes.
 contentOwner: AG
-feature: Rechercher
+feature: Search
 role: Developer
 exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 92%
+source-wordcount: '820'
+ht-degree: 81%
 
 ---
 
-# Extension de la Recherche des ressources {#extending-assets-search}
+# Extension de la recherche de ressources {#extending-assets-search}
 
-Vous pouvez étendre la recherche dans Adobe Experience Manager (AEM) Assets. AEM Assets propose des recherches prêtes à l’emploi de ressources par chaînes.
+Vous pouvez étendre les fonctionnalités de recherche d’Adobe Experience Manager Assets. [!DNL Experience Manager] Assets recherche des ressources par chaînes.
 
 La recherche est effectuée par le biais de l’interface QueryBuilder, de sorte qu’elle puisse être personnalisée avec plusieurs prédicats. Vous pouvez remplacer l’ensemble des prédicats par défaut dans le répertoire suivant : `/apps/dam/content/search/searchpanel/facets`.
 
-Vous pouvez également ajouter des onglets supplémentaires au panneau d’administration d’AEM Assets.
+Vous pouvez également ajouter des onglets supplémentaires au [!DNL Experience Manager] panneau d’administration des ressources.
 
 >[!CAUTION]
 >
->L’IU classique est obsolète depuis la version AEM 6.4. Pour consulter l’annonce correspondante, voir [Fonctionnalités obsolètes et supprimées](../release-notes/deprecated-removed-features.md). Vous êtes invité à utiliser l’IU tactile. Pour les personnalisations, voir [Facettes de recherche](search-facets.md).
+>À compter de la version [!DNL Experience Manager] 6.4, l’interface utilisateur classique est obsolète. Pour consulter l’annonce correspondante, voir [Fonctionnalités obsolètes et supprimées](../release-notes/deprecated-removed-features.md). Vous êtes invité à utiliser l’IU tactile. Pour les personnalisations, voir [Facettes de recherche](search-facets.md).
 
 ## Remplacement {#overlaying}
 
@@ -34,10 +34,9 @@ Pour remplacer les prédicats préconfigurés, copiez le nœud `facets` du répe
 >
 >Par défaut, la structure de répertoire sous /`apps` n’existe pas et doit être créée. Assurez-vous que les types de nœuds correspondent à ceux existant sous / `libs`.
 
-
 ## Ajout d’onglets {#adding-tabs}
 
-Vous pouvez ajouter des onglets de recherche supplémentaires en les configurant dans le panneau d’administration d’AEM Assets. Pour créer des onglets supplémentaires, procédez comme suit :
+Vous pouvez ajouter d’autres onglets de recherche en les configurant dans l’ [!DNL Experience Manager] administrateur de ressources. Pour créer des onglets supplémentaires, procédez comme suit :
 
 1. Créez la structure de dossiers `/apps/wcm/core/content/damadmin/tabs,`si elle n’existe pas encore, puis copiez le nœud `tabs` dans le répertoire `/libs/wcm/core/content/damadmin` et collez-le.
 1. Créez et configurez le second onglet, le cas échéant.
@@ -48,9 +47,9 @@ Vous pouvez ajouter des onglets de recherche supplémentaires en les configurant
 
 ## Création de prédicats personnalisés {#creating-custom-predicates}
 
-AEM Assets est fourni avec un ensemble de prédicats prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+[!DNL Experience Manager] Assets est fourni avec un ensemble de prédicats prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-En plus d’utiliser des prédicats préexistants, les développeurs AEM peuvent créer leur propres prédicats à l’aide de l’[API Query Builder](/help/sites-developing/querybuilder-api.md).
+Outre l’utilisation de prédicats préexistants, les développeurs [!DNL Experience Manager] peuvent également créer leurs propres prédicats à l’aide de l’[API Query Builder](/help/sites-developing/querybuilder-api.md).
 
 La création de prédicats personnalisés nécessite des connaissances de base sur la [structure des widgets](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -304,6 +303,6 @@ Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigur�
 
 ## Personnalisation des résultats de la recherche {#customizing-search-results}
 
-La présentation des résultats de la recherche sur une page de partage des ressources est régie par la loupe sélectionnée. AEM Assets est fourni avec un ensemble de loupes prédéfinies qui peuvent être utilisées pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+La présentation des résultats de la recherche sur une page de partage des ressources est régie par la loupe sélectionnée. [!DNL Experience Manager] Assets est fourni avec un ensemble de loupes prédéfinies qui peuvent être utilisées pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-En plus d’utiliser des loupes préexistantes, les développeurs AEM peuvent créer leur propres loupes.
+Outre l’utilisation de loupes préexistantes, les développeurs [!DNL Experience Manager] peuvent également créer leurs propres loupes.

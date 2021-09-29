@@ -5,24 +5,24 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: f41ab750-5780-42ae-a131-5bc748280215
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 58%
+source-wordcount: '552'
+ht-degree: 45%
 
 ---
 
 # Publication de dossiers sur Brand Portal {#publish-folders-to-brand-portal}
 
-En tant qu’administrateur d’Adobe Experience Manager (AEM) Assets, vous pouvez publier des ressources et des dossiers sur l’instance AEM Assets Brand Portal (ou planifier le workflow de planification à une date/heure ultérieure) pour votre organisation. Cependant, vous devez d’abord intégrer AEM Assets à Brand Portal. Pour plus de détails, voir [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md).
+En tant qu’administrateur d’Adobe Experience Manager Assets, vous pouvez publier des ressources et des dossiers sur l’instance [!DNL Experience Manager Assets Brand Portal] (ou planifier le processus de publication à une date/heure ultérieure) pour votre organisation. Cependant, vous devez d’abord intégrer [!DNL Experience Manager Assets] à [!DNL Brand Portal]. Pour plus d’informations, voir [Configuration [!DNL Experience Manager Assets] avec Brand Portal](configure-aem-assets-with-brand-portal.md).
 
 Une fois que vous avez publié une ressource ou un dossier, il est disponible pour les utilisateurs dans Brand Portal.
 
-Si vous apportez des modifications ultérieures à la ressource ou au dossier d’origine dans AEM Assets, les modifications ne sont pas répercutées dans Brand Portal tant que vous n’avez pas republié la ressource ou le dossier. Cette fonction assure que les modifications en cours ne sont pas disponibles dans Brand Portal. Seules les modifications approuvées publiées par un administrateur sont disponibles dans Brand Portal.
+Si vous apportez des modifications ultérieures à la ressource ou au dossier d’origine dans [!DNL Assets], les modifications ne sont pas répercutées dans Brand Portal tant que vous n’avez pas republié la ressource ou le dossier. Cette fonction assure que les modifications en cours ne sont pas disponibles dans Brand Portal. Seules les modifications approuvées publiées par un administrateur sont disponibles dans Brand Portal.
 
 ## Publication de dossiers sur Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Dans l’interface d’AEM Assets, passez la souris sur le dossier souhaité et sélectionnez l’option **[!UICONTROL Publier]** dans les actions rapides.
+1. Dans l’interface [!DNL Assets], passez la souris sur le dossier souhaité et sélectionnez l’option **[!UICONTROL Publier]** dans les actions rapides.
 
    Vous pouvez aussi sélectionner le dossier souhaité et suivre les étapes supplémentaires.
 
@@ -57,11 +57,11 @@ Si vous apportez des modifications ultérieures à la ressource ou au dossier d�
 
 ## Annulation de la publication de dossiers sur Brand Portal {#unpublish-folders-from-brand-portal}
 
-Vous pouvez supprimer n’importe quel dossier de ressources publié sur Brand Portal en en annulant la publication à partir de l’instance d’auteur AEM. Une fois que vous avez annulé la publication du dossier original, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
+Vous pouvez supprimer tout dossier de ressources publié sur Brand Portal en l’annulant à partir de l’instance d’auteur [!DNL Experience Manager]. Une fois que vous avez annulé la publication du dossier original, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
 
 Vous avez la possibilité d’annuler rapidement la publication de dossiers sur Brand Portal ou de planifier l’annulation à une date et une heure ultérieures. Pour annuler la publication de dossiers de ressources sur Brand Portal :
 
-1. Depuis l’interface d’AEM Assets de l’instance d’auteur AEM, sélectionnez le dossier dont vous souhaitez annuler la publication.
+1. Dans l’interface [!DNL Assets] de l’instance d’auteur [!DNL Experience Manager], sélectionnez le dossier dont vous souhaitez annuler la publication.
 
    ![publish2bp-1](assets/publish2bp-1.png)
 

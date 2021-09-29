@@ -1,29 +1,29 @@
 ---
 title: Considérations sur le réseau d’Assets
-description: Décrit les considérations concernant le réseau lors de la conception d’un déploiement d’AEM Assets.
+description: Décrit les considérations relatives au réseau lors de la conception d’un déploiement de ressources  [!DNL Experience Manager] .
 contentOwner: AG
-feature: Outils de développement
+feature: Developer Tools
 role: Architect,Admin
 exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 100%
+source-wordcount: '999'
+ht-degree: 84%
 
 ---
 
 # Considérations sur le réseau d’Assets {#assets-network-considerations}
 
-Une bonne connaissance du réseau est aussi importante que la compréhension d’Adobe Experience Manager (AEM) Assets. Le réseau peut affecter les chargements, les téléchargements et l’expérience utilisateur. La création d’un diagramme de la topologie du réseau vous permet d’identifier les goulots d’étranglement et les zones sous-optimisées du réseau que vous devez optimiser pour améliorer les performances du réseau et l’expérience de l’utilisateur.
+Comprendre votre réseau est aussi important que de comprendre Adobe Experience Manager Assets. Le réseau peut affecter les chargements, les téléchargements et l’expérience utilisateur. La création d’un diagramme de la topologie du réseau vous permet d’identifier les goulots d’étranglement et les zones sous-optimisées du réseau que vous devez optimiser pour améliorer les performances du réseau et l’expérience de l’utilisateur.
 
 Veillez à inclure les éléments suivants dans votre diagramme de réseau :
 
 * La connectivité du périphérique client (par exemple, l’ordinateur, le mobile ou la tablette) au réseau
 * La topologie du réseau d’entreprise
-* La liaison montante à Internet à partir du réseau d’entreprise et de l’environnement AEM
-* La topologie de l’environnement AEM
-* La définition des consommateurs simultanés de l’interface réseau AEM
-* Les workflows définis de votre instance AEM
+* Liaison à Internet à partir du réseau d’entreprise et de l’environnement [!DNL Experience Manager]
+* Topologie de l’environnement [!DNL Experience Manager]
+* Définir les consommateurs simultanés de l’interface réseau [!DNL Experience Manager]
+* Workflows définis de l&#39;instance [!DNL Experience Manager]
 
 ## Connectivité de l’appareil client au réseau d’entreprise {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -47,13 +47,13 @@ L’ordinateur présenté à droite, connecté au réseau d’entreprise via un 
 
 Le diagramme présente des vitesses de liaison plus élevées au sein du réseau d’entreprise que ce qui est généralement utilisé. Ces canaux sont des ressources partagées. Si le commutateur partagé est censé gérer 50 clients, il peut se transformer en goulot d’étranglement. Dans le diagramme initial, seuls deux ordinateurs partagent la connexion.
 
-## Liaison à Internet à partir du réseau d’entreprise et de l’environnement d’AEM  {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Liaison à Internet à partir du réseau d’entreprise et de l’environnement [!DNL Experience Manager] {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
 Il est important de prendre en compte les facteurs inconnus de la connexion Internet et VPC, car la bande passante sur Internet peut être restreinte par des pics de chargement ou des pannes de fournisseur à grande échelle. En général, une connexion Internet est fiable. Toutefois, cela peut parfois entraîner la création de goulots d’étranglement.
 
-Au niveau de la liaison du réseau d’entreprise à Internet, il peut exister d’autres services utilisant la bande passante. Il est important de connaître la quantité de bande passante pouvant être dédiée ou donnée en priorité à AEM Assets. Par exemple, si un lien de 1 Gbps est déjà utilisé à 80 %, vous ne pouvez allouer qu’un maximum de 20 % de la bande passante aux ressources AEM.
+Au niveau de la liaison du réseau d’entreprise à Internet, il peut exister d’autres services utilisant la bande passante. Il est important de connaître la quantité de bande passante pouvant être dédiée ou donnée en priorité à [!DNL Assets]. Par exemple, si un lien de 1 Gbit/s est déjà utilisé à 80 %, vous ne pouvez allouer qu’un maximum de 20 % de la bande passante pour les ressources [!DNL Experience Manager].
 
 Les pare-feu et les proxys de l’entreprise peuvent également influencer la bande passante de différentes manières. Ce type de périphérique peut prioriser la qualité du service de la bande passante, définir la bande passante maximale par utilisateur ou les limites de débit par hôte. Il est important d’analyser ces goulots d’étranglement, car ils peuvent avoir un impact significatif sur l’expérience utilisateur d’Assets.
 
@@ -63,21 +63,21 @@ C’est le plus petit goulot d’étranglement axé sur le client. Cependant, vo
 
 Les exemples de diagrammes vous permettent de conclure que six périphériques partagent un canal conceptuel de 10 Mbps. Selon la taille des ressources exploitées, cela peut s’avérer insuffisant pour répondre aux attentes de l’utilisateur.
 
-## La topologie de l’environnement AEM  {#topology-of-the-aem-environment}
+## Topologie de l’environnement [!DNL Experience Manager] {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-La conception de la topologie de l’environnement AEM nécessite une connaissance détaillée de la configuration du système et de la manière dont le réseau est connecté à l’environnement de l’utilisateur.
+La conception de la topologie de l’environnement [!DNL Experience Manager] nécessite une connaissance détaillée de la configuration du système et de la manière dont le réseau est connecté dans l’environnement de l’utilisateur.
 
 L’exemple de scénario comprend une ferme de cinq serveurs, un espace de stockage binaire S3 et des médias dynamiques configurés.
 
-Le Dispatcher partage une connexion de 100 Mbps avec deux entités, celle du monde externe et l’instance AEM. Pour les opérations simultanées de chargement et de téléchargement, vous devez diviser ce nombre par deux. L’espace de stockage externe joint utilise une connexion distincte.
+Dispatcher partage une connexion de 100 Mbit/s avec deux entités, le monde extérieur et l’instance [!DNL Experience Manager]. Pour les opérations simultanées de chargement et de téléchargement, vous devez diviser ce nombre par deux. L’espace de stockage externe joint utilise une connexion distincte.
 
-L’instance AEM partage sa connexion de 1 Gbps/s avec plusieurs services. Du point de vue de la topologie du réseau, cela équivaut à partager un seul canal avec plusieurs services.
+L’instance [!DNL Experience Manager] partage sa connexion de 1 Gbit/s avec plusieurs services. Du point de vue de la topologie du réseau, cela équivaut à partager un seul canal avec plusieurs services.
 
-En révisant le réseau du périphérique client vers l’instance AEM, le plus petit goulot d’étranglement semble se situer au niveau du pare-feu d’entreprise de 10 Mbits. Vous pouvez utiliser ces valeurs dans le calcul de dimensionnement du [Guide du dimensionnement des ressources](assets-sizing-guide.md) pour déterminer l’expérience de l’utilisateur.
+En examinant le réseau de l’appareil client vers l’instance [!DNL Experience Manager], le plus petit goulot d’étranglement semble être le coupe-feu d’entreprise de 10 Mbit. Vous pouvez utiliser ces valeurs dans le calcul de dimensionnement du [Guide du dimensionnement des ressources](assets-sizing-guide.md) pour déterminer l’expérience de l’utilisateur.
 
-## Les workflows définis de votre instance AEM {#defined-workflows-of-the-aem-instance}
+## Workflows définis de l&#39;instance [!DNL Experience Manager] {#defined-workflows-of-the-aem-instance}
 
 En tenant compte des performances du réseau, il peut être important de prendre en considération les workflows et la publication qui auront lieu dans le système. De plus, S3 ou tout autre stockage en réseau que vous utilisez, ainsi que les requêtes E/S consomment de la bande passante du réseau. Par conséquent, même dans un réseau entièrement optimisé, la performance peut être limitée par les E/S du disque.
 

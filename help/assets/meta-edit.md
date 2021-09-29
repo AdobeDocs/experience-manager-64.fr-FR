@@ -1,14 +1,14 @@
 ---
 title: Modification ou ajout de métadonnées
-description: Découvrez les métadonnées des ressources dans AEM Assets et les différentes façons de les modifier.
+description: Découvrez les métadonnées des ressources dans  [!DNL Experience Manager] Ressources et diverses méthodes pour modifier les métadonnées des ressources.
 contentOwner: AG
-feature: Métadonnées
+feature: Metadata
 role: User,Admin
 exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 86%
+source-wordcount: '479'
+ht-degree: 77%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 86%
 
 Les métadonnées sont des informations supplémentaires sur la ressource qui peuvent faire l’objet d’une recherche. Elles sont automatiquement extraites lorsque vous chargez une image. Vous pouvez modifier les métadonnées existantes ou ajouter de nouvelles propriétés de métadonnées à des champs existants (par exemple lorsqu’un champ de métadonnées est vide).
 
-Étant donné que les entreprises ont besoin de vocabulaires de métadonnées contrôlés et fiables, AEM Assets ne permet pas l’ajout ad hoc de nouvelles propriétés de métadonnées. Bien que les auteurs ne puissent pas ajouter de nouveaux champs de métadonnées aux ressources, les développeurs le peuvent. Voir [Création d’une propriété de métadonnées pour les ressources](meta-edit.md#editing-metadata-schema).
+Comme les entreprises ont besoin de vocabulaires de métadonnées contrôlés et fiables, [!DNL Experience Manager] Assets ne permet pas l’ajout ad hoc de nouvelles propriétés de métadonnées. Bien que les auteurs ne puissent pas ajouter de nouveaux champs de métadonnées aux ressources, les développeurs le peuvent. Voir [Création d’une propriété de métadonnées pour les ressources](meta-edit.md#editing-metadata-schema).
 
-## Modification des métadonnées d’une ressource  {#editing-metadata-for-an-asset}
+## Modification des métadonnées d’une ressource {#editing-metadata-for-an-asset}
 
 Pour modifier des métadonnées, procédez comme suit :
 
@@ -28,7 +28,7 @@ Pour modifier des métadonnées, procédez comme suit :
    * À partir de la miniature de la ressource, sélectionnez l’action rapide **[!UICONTROL Afficher les propriétés]**.
    * Sur la page de la ressource, cliquez/appuyez sur l’icône **[!UICONTROL Afficher les propriétés]** ![icône d’information](assets/do-not-localize/info_icon.png) de la barre d’outils.
 
-   La page de la ressource affiche toutes les métadonnées de celle-ci. Ces métadonnées sont automatiquement extraites lorsqu’elles sont chargées (assimilées) dans AEM Assets.
+   La page de la ressource affiche toutes les métadonnées de celle-ci. Ces métadonnées ont été automatiquement extraites lorsqu’elles ont été chargées (ingérées) dans [!DNL Experience Manager] Ressources.
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -46,7 +46,7 @@ L’écriture différée XMP est prise en charge et activée pour les plates-for
 
 Pour en savoir plus sur la modification d’un schéma de métadonnées, consultez la section [Modification de formulaires de schéma de métadonnées](metadata-schemas.md#editing-metadata-schema-forms).
 
-## Enregistrement d’un espace de noms personnalisé dans AEM {#registering-a-custom-namespace-within-aem}
+## Enregistrement d’un espace de noms personnalisé dans [!DNL Experience Manager] {#registering-a-custom-namespace-within-aem}
 
 Vous pouvez ajouter vos propres espaces de noms à AEM. Tout comme il existe des espaces de noms prédéfinis tels que cq, jcr et sling, vous pouvez disposer d’un espace de noms pour le traitement des données XML et des métadonnées de votre référentiel.
 

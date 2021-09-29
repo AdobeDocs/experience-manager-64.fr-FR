@@ -2,13 +2,13 @@
 title: Utilisation de profils de métadonnées pour appliquer des métadonnées par défaut à toutes les ressources d’un dossier
 description: Découvrez les profils de métadonnées pour les ressources. Apprenez à créer un profil de métadonnées et à l’appliquer aux ressources d’un dossier.
 contentOwner: AG
-feature: 'Métadonnées '
+feature: Metadata
 role: User,Admin
 exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 65%
+source-wordcount: '1226'
+ht-degree: 58%
 
 ---
 
@@ -18,7 +18,7 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 
 ## Ajout d’un profil de métadonnées {#adding-a-metadata-profile}
 
-1. Appuyez ou cliquez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**, puis appuyez sur **[!UICONTROL Créer]**.
+1. Appuyez ou cliquez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**, puis appuyez sur **[!UICONTROL Créer]**.
 1. Saisissez un titre pour le profil de métadonnées, par exemple, Exemple de métadonnées, puis cliquez sur **[!UICONTROL Envoyer]**. Le **[!UICONTROL formulaire de modification]** du profil de métadonnées s’affiche.
 
    ![chlimage_1-480](assets/chlimage_1-480.png)
@@ -34,7 +34,7 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 
    ![chlimage_1-482](assets/chlimage_1-482.png)
 
-   La valeur que vous indiquez pour **[!UICONTROL Associer à la propriété]** est stockée en tant que propriété sous le nœud de métadonnées de la ressource. Par exemple, si vous spécifiez . `/jcr:content/metadata/dc:desc` comme nom pour **[!UICONTROL Associer à la propriété]**, AEM Assets stocke la valeur `dc:desc` comme nœud de métadonnées de la ressource.
+   La valeur que vous indiquez pour **[!UICONTROL Associer à la propriété]** est stockée en tant que propriété sous le nœud de métadonnées de la ressource. Par exemple, si vous spécifiez . `/jcr:content/metadata/dc:desc` comme nom de  **[!UICONTROL Associer à la propriété]**,  [!DNL Experience Manager] Assets stocke la valeur  `dc:desc` au niveau du noeud de métadonnées de la ressource.
 
    * **[!UICONTROL Valeur par défaut]** : utilisez cette propriété pour ajouter une valeur par défaut pour le composant des métadonnées. Par exemple, si vous indiquez « Ma description », cette valeur est affectée à la propriété `dc:desc` au niveau du nœud de métadonnées de la ressource.
 
@@ -102,7 +102,7 @@ Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profi
 
 #### Application de profils de métadonnées à des dossiers à partir de l’interface utilisateur des profils {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
+1. Appuyez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à appliquer à un ou à plusieurs dossiers.
 
    ![chlimage_1-490](assets/chlimage_1-490.png)
@@ -122,7 +122,7 @@ Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profi
 
 ### Application d’un profil de métadonnées à l’ensemble des ressources {#applying-a-metadata-profile-globally}
 
-En plus d’appliquer un profil à un dossier, vous pouvez en appliquer un de façon globale, de sorte que tout contenu chargé dans AEM Assets soit traité par ce profil, indifféremment du dossier. Pour appliquer un profil de métadonnées de manière globale, procédez comme suit :
+Outre l’application d’un profil à un dossier, vous pouvez en appliquer un de manière globale de sorte que le profil sélectionné soit appliqué à tout contenu chargé dans les ressources [!DNL Experience Manager] d’un dossier. Pour appliquer un profil de métadonnées de manière globale, procédez comme suit :
 
 1. Utilisez l’une des méthodes suivantes :
 
@@ -144,7 +144,7 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 
 Pour supprimer un profil de métadonnées d’un dossier via l’interface utilisateur Profils , procédez comme suit :
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
+1. Appuyez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à supprimer d’un ou de plusieurs dossiers.
 1. Appuyez sur **[!UICONTROL Supprimer le profil de métadonnées du ou des dossiers]** et sélectionnez le ou les dossiers desquels vous souhaitez supprimer un profil, puis appuyez sur **[!UICONTROL Terminé]**.
 
@@ -152,7 +152,7 @@ Pour supprimer un profil de métadonnées d’un dossier via l’interface utili
 
 ### Suppression de profils de métadonnées des dossiers au moyen des propriétés {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Appuyez sur le logo AEM, puis accédez à **[!UICONTROL Ressources]** et au dossier duquel vous souhaitez supprimer un profil de métadonnées.
+1. Appuyez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Ressources]** , puis au dossier duquel vous souhaitez supprimer un profil de métadonnées.
 1. Dans le dossier, appuyez sur la coche pour le sélectionner, puis sur **[!UICONTROL Propriétés]**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils de métadonnées]**, puis **[!UICONTROL Aucun]** dans le menu déroulant. Appuyez sur **[!UICONTROL Enregistrer]**.
 

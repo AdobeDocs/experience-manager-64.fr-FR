@@ -1,26 +1,26 @@
 ---
-title: Expérience de la page d’accueil d’AEM Assets
-description: Personnalisez la page d’accueil d’AEM Assets afin d’enrichir l’expérience de l’écran de bienvenue, avec notamment un instantané des activités récentes concernant les ressources.
+title: '[!DNL Experience Manager Assets] Expérience de page d’accueil'
+description: Personnalisez la page d’accueil des ressources pour bénéficier d’une expérience d’écran de bienvenue enrichie, y compris un instantané des activités récentes concernant les ressources.
 contentOwner: AG
-feature: Outils de développement, Gestion des ressources
+feature: Developer Tools,Asset Management
 role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 56%
+source-wordcount: '557'
+ht-degree: 41%
 
 ---
 
-# Expérience de la page d’accueil d’AEM Assets {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Expérience de page d’accueil {#aem-assets-home-page-experience}
 
-Personnalisez la page d’accueil d’AEM Assets afin d’enrichir l’expérience de l’écran de bienvenue, avec notamment un instantané des activités récentes concernant les ressources.
+Personnalisez la [!DNL Experience Manager Assets] page d’accueil pour bénéficier d’une expérience d’écran de bienvenue enrichie, y compris un instantané des activités récentes concernant les ressources.
 
-La page d’accueil d’Adobe Experience Manager (AEM) Assets offre une expérience d’écran de bienvenue riche et personnalisée, qui inclut un instantané des activités récentes, comme les ressources récemment consultées ou téléchargées.
+La [!DNL Adobe Experience Manager Assets] page d’accueil offre une expérience d’écran de bienvenue riche et personnalisée, qui inclut un instantané des activités récentes, telles que les ressources récemment affichées ou chargées.
 
 La page d’accueil d’Assets est désactivée par défaut. Pour l’activer, procédez comme suit :
 
-1. Pour accéder à AEM Configuration Manager, cliquez sur **[!UICONTROL Outils > Opération > Console web]**.
+1. Pour accéder à [!DNL Experience Manager] Configuration Manager, cliquez sur **[!UICONTROL Outils > Opération > Console web]**.
 1. Ouvrez le service **Enregistreur d’événements de la gestion des actifs numériques Day CQ** .
 1. Sélectionnez le **[!UICONTROL Activer ce service]** pour activer l’enregistrement des activités.
 
@@ -70,7 +70,7 @@ Cette section s’affiche sous la section Bienvenue et contient des widgets prê
 
 **Récent** : Le widget  **Récemment** affiché sous cette section affiche les entités récemment consultées par l’utilisateur connecté, y compris les dossiers, les collections et les projets.
 
-**Discover** : Le  **** widget situé sous cette section affiche les ressources et les rendus récemment transférés vers l’instance AEM Assets.
+**Discover** : Le  **** widget situé sous cette section affiche les ressources et les rendus récemment chargés sur l’ [!DNL Assets] instance.
 
 Pour activer la purge des données d’activité de l’utilisateur, activez le **service de purge des événements de gestion des actifs numériques** à partir de Configuration Manager. Une fois que vous avez activé ce service, les activités de l’utilisateur connecté dépassant le nombre spécifié sont supprimées par le système.
 
@@ -78,7 +78,7 @@ L’écran de bienvenue fournit des outils d’aide à la navigation, comme des 
 
 >[!NOTE]
 >
->L’activation des services Enregistreur d’événements de la gestion des actifs numériques Day CQ et Purge des événements de la gestion des actifs numériques augmente les opérations d’écriture sur JCR et l’indexation de recherche, ce qui augmente considérablement la charge sur le serveur AEM. La charge supplémentaire sur le serveur AEM peut affecter les performances.
+>L’activation des services Enregistreur d’événements de la gestion des actifs numériques Day CQ et Purge des événements de la gestion des actifs numériques augmente les opérations d’écriture sur JCR et l’indexation de recherche, ce qui augmente considérablement la charge sur le serveur [!DNL Experience Manager]. La charge supplémentaire sur le serveur [!DNL Experience Manager] peut avoir une incidence sur ses performances.
 
 >[!CAUTION]
 >
