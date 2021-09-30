@@ -1,8 +1,8 @@
 ---
 title: Mise à niveau vers les communautés AEM 6.4
-seo-title: Mise à niveau vers les communautés AEM 6.4
+seo-title: Upgrading to AEM 6.4 Communities
 description: Mise à niveau d’une version antérieure vers AEM 6.4 Communities
-seo-description: Mise à niveau d’une version antérieure vers AEM 6.4 Communities
+seo-description: How to upgrade from an earlier version to AEM 6.4 Communities
 uuid: c6c2846e-38d4-4e99-9038-bfb486afd8b9
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
 exl-id: ef622ac3-d96d-48bf-bfb2-61516d9deb5c
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: 0f82e82cf6e09a2734893a98d67ed1a84b1fec5e
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 5%
+source-wordcount: '664'
+ht-degree: 4%
 
 ---
 
@@ -51,17 +51,17 @@ Si le site mis à niveau a été configuré pour utiliser l’espace de stockage
 
 Il est donc possible d’ordonner à ASRP d’utiliser `AEM 6.0 compatability-mode` pour accéder au contenu généré par l’utilisateur.
 
-Pour toutes les instances d’auteur et de publication AEM 6.3
+Pour toutes les instances de création et de publication AEM 6.3 :
 
-1. Connexion avec droits d’administrateur
-2. Configurer [ASRP](asrp.md)
-3. Pour rendre visible le contenu créé par l’utilisateur existant, procédez comme suit :
-i. Accédez à la console web, par exemple
-   [https://&lt;host> :&lt;port>/system/console/](http://localhost:4502/system/console/configMgr)
-configMedia. Localisez la configuration **[!UICONTROL AEM Communities Utilities]**
-iii. Sélectionner pour développer le panneau de configuration
-   * *Décocher* **`Cloud Storage`**
-   * Sélectionnez **[!UICONTROL Enregistrer]**
+1. Connectez-vous avec les privilèges d’administrateur et configurez [ASRP](asrp.md).
+1. Pour rendre visible le contenu créé par l’utilisateur existant, procédez comme suit :
+
+   i. Accédez à la console web. L’URL par défaut est
+   `https://localhost:4502/system/console/configMgr`.
+
+   ii. Recherchez la configuration **[!UICONTROL AEM Communities Utilities]** et sélectionnez pour développer le panneau de configuration.
+
+   iii. Décochez **[!UICONTROL Cloud Storage]** et cliquez sur **[!UICONTROL Enregistrer]**.
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
