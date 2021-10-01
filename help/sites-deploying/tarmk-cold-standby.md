@@ -1,20 +1,20 @@
 ---
 title: Exécution d’AEM avec TarMK Cold Standby
-seo-title: Exécution d’AEM avec TarMK Cold Standby
+seo-title: How to Run AEM with TarMK Cold Standby
 description: Apprenez à créer, configurer et gérer une configuration TarMK Cold Standby
-seo-description: Apprenez à créer, configurer et gérer une configuration TarMK Cold Standby
+seo-description: Learn how to create, configure and maintain a TarMK Cold Standby setup.
 uuid: 27fd2b64-8983-40be-910e-1776a16e127c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
-feature: Configuration
+feature: Configuring
 exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
-source-git-commit: e22d12ee2096548e8303521b4c7dac79e7385f49
+source-git-commit: 63367e85f66d7830183403af6ad32ecca9dc8396
 workflow-type: tm+mt
-source-wordcount: '2713'
-ht-degree: 80%
+source-wordcount: '2727'
+ht-degree: 78%
 
 ---
 
@@ -34,6 +34,16 @@ Le contenu est synchronisé de façon linéaire entre une instance principale et
 >
 >Pour plus d’informations sur les déploiements disponibles, consultez la page [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md).
 
+>[!NOTE]
+>
+>Lorsque l’instance Secondaire est configurée ou dérivée du noeud Principal, elle permet uniquement d’accéder aux deux consoles suivantes (pour les activités liées à l’administration) :
+>
+>* CRXDE Lite
+>* Console web OSGI
+
+>
+>Les autres consoles ne sont pas accessibles.
+
 ## Fonctionnement {#how-it-works}
 
 Sur l’instance AEM principale, un port TCP s’ouvre pour écouter les messages entrants. Actuellement, il existe deux types de messages que les esclaves envoient au maître :
@@ -51,7 +61,7 @@ Un déploiement classique du processus TarMK Cold Standby :
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-## Autres fonctionnalités {#other-characteristics}
+## Autres fonctionnalités  {#other-characteristics}
 
 ### Robustesse {#robustness}
 
@@ -83,8 +93,7 @@ En outre, vous pouvez spécifier les instances de secours qui sont autorisées �
 >* de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService à org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 
 >
->
-Assurez-vous d’effectuer les réglages de configuration nécessaires pour refléter ces modifications.
+>Assurez-vous d’effectuer les réglages de configuration nécessaires pour refléter ces modifications.
 
 Pour créer une configuration TarMK Cold Standby, vous devez d’abord créer des instances de secours en effectuant une copie du système de fichiers du dossier d’installation complet de l’instance principale vers un nouvel emplacement. Vous pouvez ensuite démarrer chaque instance avec un mode d’exécution qui spécifie son rôle ( `primary` ou `standby`).
 
@@ -207,8 +216,7 @@ Le service peut également être configuré par le biais de la console web, comm
 >
 >Ceci peut être effectué en accédant à *http://localhost:4502/system/console/status-slingsettings* et en vérifiant la ligne **« modes d’exécution »**.
 
-
-## Première synchronisation {#first-time-synchronization}
+## Première synchronisation  {#first-time-synchronization}
 
 Une fois que la préparation est complète et que l’instance de secours démarre pour la première fois, attendez-vous à un trafic de réseau élevé entre les instances, le temps que l’instance de secours se mette au niveau de l’instance principale. Vous pouvez consulter les journaux pour contrôler l’état de la synchronisation.
 
@@ -284,7 +292,7 @@ Les paramètres OSGi suivants sont disponibles pour le service Cold Standby :
 >
 >La meilleure façon de procéder est de supprimer le fichier *sling.id* sur l’instance de secours, puis de redémarrer l’instance.
 
-## Procédures de basculement  {#failover-procedures}
+## Procédures de basculement {#failover-procedures}
 
 Si l’instance principale échoue, vous pouvez choisir l’une des instances de secours pour la remplacer, en modifiant le mode d’exécution de lancement, tel qu’expliqué ci-après :
 
@@ -386,7 +394,7 @@ Il se peut que la synchronisation de l’instance de secours avec l’instance p
 
 Comme alternative, le référentiel principal peut être copié manuellement sur l’instance de secours après l’exécution de la compression sur l’instance principale. L’instance de secours est ainsi reconstituée à chaque compression.
 
-### Nettoyage de la mémoire d’entrepôt de données  {#data-store-garbage-collection}
+### Nettoyage de la mémoire d’entrepôt de données {#data-store-garbage-collection}
 
 Il est important d’exécuter de temps en temps le nettoyage de la mémoire sur les instances de l’entrepôt de données des fichiers. Autrement, les fichiers binaires supprimés resteront sur le système de fichiers, ce qui contribue à surcharger le lecteur. Pour exécuter le nettoyage de la mémoire, procédez comme suit :
 
