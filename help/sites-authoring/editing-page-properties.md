@@ -1,8 +1,8 @@
 ---
 title: Modification des propriétés de page
-seo-title: Modification des propriétés de page
+seo-title: Editing Page Properties
 description: Définissez les propriétés requises pour une page
-seo-description: Définissez les propriétés requises pour une page
+seo-description: Define the required properties for a page
 uuid: c0386cd6-ca01-4741-b8c8-36edb66e50ef
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 exl-id: b0e579a4-f5bd-4a55-a003-0496224bc940
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: d01eee7602945b8d3cb3ad004ccf5ad6cbc4c73c
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 90%
+source-wordcount: '1789'
+ht-degree: 86%
 
 ---
 
@@ -124,13 +124,10 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    Indique un alias à utiliser avec cette page.
 
-   >[!NOTE]
-   >
-   > L’alias définit la propriété `sling:alias` afin de définir un nom d’alias pour la ressource (cela n’affecte que la ressource, et non le chemin).
-   >
-   >Par exemple, si vous définissez l’alias `latin-lang` pour le nœud `/content/we-retail/spanish`, cette page est accessible via `/content/we-retail/latin-language`.
-   >
-   >Pour plus d’informations, voir [Noms de page localisés sous Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche](/help/managing/seo-and-url-management.md#localized-page-names)
+   * Par exemple, si vous définissez un alias `private` pour la page `/content/wknd/us/en/magazine/members-only`, cette page est également accessible via `/content/wknd/us/en/magazine/private`.
+   * La création d’un alias définit la propriété `sling:alias` sur le noeud de page, ce qui affecte uniquement la ressource, et non le chemin du référentiel.
+   * Les pages accessibles par alias dans l&#39;éditeur ne peuvent pas être publiées. [Les ](/help/sites-authoring/publishing-pages.md) options de publication dans l’éditeur ne sont disponibles que pour les pages accessibles à partir de leur chemin d’accès réel.
+   * Pour plus d’informations, voir [Noms de page localisés sous Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **Modèles autorisés**
 
@@ -227,7 +224,7 @@ Définit la variation de fragment d’expérience utilisée pour générer les m
 
    Définissez les propriétés d’une page Live Copy dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur.
 
-### Structure du site   {#site-structure}
+### Structure du site  {#site-structure}
 
 * Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la page **en mode hors ligne**, entre autres.
 
@@ -243,7 +240,7 @@ Vous pouvez définir des propriétés de page :
       * Pour une seule page
       * Pour plusieurs pages (un seul sous-ensemble des propriétés est disponible pour la modification en masse)
 
-* Dans l’éditeur de page :
+* À partir de l’éditeur de page:
 
    * En sélectionnant **Informations sur la page** (puis **Ouvrir les propriétés**)
 
@@ -256,7 +253,7 @@ Cliquez ou appuyez sur **Propriétés** pour définir les propriétés de la pag
 1. Sélectionnez l’option **Propriétés** pour la page requise, en utilisant :
 
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
-   * [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+   * [Mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
    Les propriétés de la page affichées dans les onglets appropriés.
 
