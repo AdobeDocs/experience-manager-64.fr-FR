@@ -2,7 +2,7 @@
 title: Tough Day
 seo-title: Tough Day
 description: Le test Tough Day simule la charge quotidienne d’environ 1 000 auteurs dans le pire des scénarios, toutes les opérations se déroulant simultanément.
-seo-description: Le test Tough Day simule la charge quotidienne d’environ 1 000 auteurs dans le pire des scénarios, toutes les opérations se déroulant simultanément.
+seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 uuid: 7a13efe0-c455-4af0-ad7b-c39cb2479d74
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,22 +10,22 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 exl-id: 80442184-212a-424d-b320-5b301a54f974
-source-git-commit: 204b28653c8771fead77c484aec40d6ec6629b6c
+source-git-commit: 119023a24d5f21fd003439992fe5a520f48b6861
 workflow-type: tm+mt
-source-wordcount: '1923'
-ht-degree: 51%
+source-wordcount: '1894'
+ht-degree: 50%
 
 ---
 
 # Tough Day{#tough-day}
 
-## Qu’est-ce que Tough Day 2 ?{#what-is-tough-day}
+## Qu’est-ce que Tough Day 2 ? {#what-is-tough-day}
 
 Tough Day 2 est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test. [Cet enregistrement](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) est une présentation de l’application.
 
 ## Procédure d’exécution de Tough Day 2 {#how-to-run-tough-day}
 
-Téléchargez la dernière version de Tough Day 2 à partir du [référentiel Adobe](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/). Après avoir téléchargé l’application, vous pouvez l’exécuter prête à l’emploi en fournissant le paramètre `host` . Dans l’exemple suivant, l’instance d’AEM s’exécute localement afin que la valeur `localhost` soit utilisée :
+Téléchargez la dernière version de Tough Day 2 à partir du [référentiel Adobe](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Après avoir téléchargé l’application, vous pouvez l’exécuter prête à l’emploi en fournissant le paramètre `host` . Dans l’exemple suivant, l’instance d’AEM s’exécute localement afin que la valeur `localhost` soit utilisée :
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -52,7 +52,6 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 >[!NOTE]
 >
 >Tough Day 2 n’a pas d’étape de nettoyage. Par conséquent, il est recommandé d’exécuter Tough Day 2 sur une instance de transfert clonée et non sur l’instance de production principale. L’instance de transfert doit être supprimée après les tests.
-
 
 ### Obtenir de l’aide {#getting-help}
 
@@ -218,7 +217,7 @@ tests:
       template : /conf/toughday-templates/settings/wcm/templates/toughday-template
 ```
 
-### Utilisation de suites de tests prédéfinies  {#working-with-predefined-test-suites}
+### Utilisation de suites de tests prédéfinies {#working-with-predefined-test-suites}
 
 Les exemples ci-dessous montrent comment ajouter un test à une suite prédéfinie et comment reconfigurer et exclure un test existant d’une suite prédéfinie.
 
@@ -280,7 +279,7 @@ tests:
   - exclude : UploadAsset 
 ```
 
-### Modes d’exécution  {#run-modes}
+### Modes d’exécution {#run-modes}
 
 Tough Day 2 peut s’exécuter dans l’un des modes suivants : **normal** et **charge constante**.
 
@@ -346,7 +345,7 @@ java -jar toughday2.jar --host=localhost --suite=toughday --add CreatePageTreeTe
 
 Tough Day 2 génère à la fois des métriques de test et des journaux. Pour plus de détails, lisez les sections suivantes.
 
-### Métriques de test  {#test-metrics}
+### Métriques de test {#test-metrics}
 
 Tough Day 2 fait actuellement état de 9 métriques de test que vous pouvez évaluer. Les mesures avec le symbole **&amp;ast;** ne sont signalées qu’après des exécutions réussies :
 
