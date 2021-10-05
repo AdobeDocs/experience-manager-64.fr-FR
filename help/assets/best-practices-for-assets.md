@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: e2ab924b-53cb-4011-8c0a-9e8e59dd2f16
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 16%
 
 ---
@@ -37,4 +37,4 @@ La gestion de fichiers volumineux et l’exécution de workflows dans [!DNL Expe
 * [[!DNL Experience Manager] Bonnes ](aem-cc-integration-best-practices.md)
 pratiques d’intégration et de Creative CloudVous pouvez intégrer votre  [!DNL Experience Manager] déploiement à Creative Cloud de plusieurs façons. En suivant les bonnes pratiques pour simplifier votre intégration et vos workflows de transfert des ressources, vous bénéficiez d’une efficacité maximale. Ce guide comprend les bonnes pratiques relatives à l’intégration de [!DNL Experience Manager] ressources à Adobe Creative Cloud.
 * (Obsolète) [[!DNL Experience Manager] vers les bonnes pratiques de partage de dossier Creative Cloud](aem-cc-folder-sharing-best-practices.md)
-Vous pouvez configurer [!DNL Experience Manager] pour permettre aux utilisateurs de la gestion des ressources numériques de partager des dossiers avec les utilisateurs du Creative Cloud (CC), afin qu’ils soient disponibles sous forme de dossiers partagés dans le service Ressources du Creative Cloud. La fonctionnalité peut être utilisée pour échanger des fichiers entre les équipes créatives et les utilisateurs DAM. Ce guide explique les bonnes pratiques à suivre pour utiliser la fonction de partage de dossiers [!DNL Experience Manager] vers Creative Cloud.
+Vous pouvez configurer [!DNL Experience Manager] pour permettre aux utilisateurs de la gestion des ressources numériques de partager des dossiers avec les utilisateurs Creative Cloud afin qu’ils soient disponibles sous forme de dossiers partagés dans le service Ressources du Creative Cloud. La fonctionnalité peut être utilisée pour échanger des fichiers entre les équipes créatives et les utilisateurs DAM. Ce guide explique les bonnes pratiques à suivre pour utiliser la fonction de partage de dossiers [!DNL Experience Manager] vers Creative Cloud.

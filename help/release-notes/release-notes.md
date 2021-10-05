@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '2754'
-ht-degree: 78%
+source-wordcount: '2751'
+ht-degree: 77%
 
 ---
 
@@ -187,7 +187,7 @@ AEM 6.4 apporte plusieurs nouvelles fonctions et améliorations d’Assets, not
 
 **Adobe Asset Link**
 
-Adobe Asset Link dans Creative Cloud abonnement Entreprise simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le cadre du processus de création de contenu. Il s’agit d’une nouvelle fonctionnalité native de Creative Cloud abonnement Entreprise qui relie Photoshop CC, Illustrator CC et InDesign CC à AEM, sans que les créatifs n’aient besoin d’abandonner leurs outils de prédilection.
+Adobe Asset Link dans Creative Cloud abonnement Entreprise simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le cadre du processus de création de contenu. Il s’agit d’une nouvelle fonctionnalité native en Creative Cloud pour les entreprises qui connecte Photoshop, Illustrator et l’InDesign à AEM — sans que les créatifs aient à laisser leurs outils de choix.
 
 Pour plus d’informations sur cette fonctionnalité, les conditions préalables et la façon d’y accéder, voir [Adobe Asset Link](https://www.adobe.com/fr/creativecloud/business/enterprise/adobe-asset-link.html).
 
@@ -308,7 +308,7 @@ Ce processus de hiérarchisation a généré plus de 500 modifications axées s
 
 * Module pour ajouter la prise en charge étendue des images RAW ([plus d’infos](/help/assets/camera-raw.md))
 
-**Forms**
+**Formulaires**
 
 * Packages des fonctionnalités d’AEM Forms :
 
