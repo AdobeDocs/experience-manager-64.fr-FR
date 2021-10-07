@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: Guide de déploiement d’AEM 6.4
 breadcrumb-title: Guide de déploiement
 user-guide-description: En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4, y compris sur le déploiement cloud d’Adobe Managed Services.
-feature: Déploiement
+feature: Deploying
 role: Architect
-source-git-commit: 17c9f8523992b5ba87125c77d3e4f70f86f89c58
+source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 91%
+source-wordcount: '370'
+ht-degree: 93%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 91%
    + [Restructuration des référentiels dans AEM 6.4](repository-restructuring.md)
    + [Restructuration des référentiels dans AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Restructuration des référentiels dans AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
-   + [Restructuration des référentiels d’Assets dans AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+   + [Restructuration des référentiels d’Assets dans AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=fr)
    + [Restructuration des référentiels Dynamic Media dans AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Restructuration des référentiels de Forms dans AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Restructuration des référentiels e-Commerce dans AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)

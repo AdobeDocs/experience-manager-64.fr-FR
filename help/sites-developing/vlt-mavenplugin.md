@@ -2,10 +2,10 @@
 title: Plug-in Maven Content Package d’Adobe
 description: Utilisation du plug-in Maven Content Package pour déployer des applications AEM
 exl-id: 106a677b-7c89-4fbc-bb96-eaa3dfa71b58
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 34%
+source-wordcount: '161'
+ht-degree: 35%
 
 ---
 
@@ -19,10 +19,8 @@ Le déploiement des modules construits vers AEM est effectué par le module exte
 >
 >Pour plus d’informations, voir :
 >
->* L’article [Adobe du module Content Package Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) dans la documentation d’AEM en tant que Cloud Service pour savoir comment déployer AEM applications.
->* L’article [AEM Structure de projet](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) de la documentation AEM as a Cloud Service pour savoir comment structurer des projets d’AEM modernes.
+>* L’article [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) dans la documentation as a Cloud Service AEM pour savoir comment déployer AEM applications.
+>* L’article [AEM Structure de projet](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) de la documentation as a Cloud Service AEM pour savoir comment structurer des projets d’AEM modernes.
 >* La documentation [AEM archétype de projet](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html) explique comment démarrer un nouveau projet AEM à l’aide de l’archétype.
-
 >
->
-Les trois documents s’appliquent à AEM 6.4.
+>Les trois documents s’appliquent à AEM 6.4.
