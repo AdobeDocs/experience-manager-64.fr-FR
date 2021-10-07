@@ -1,8 +1,8 @@
 ---
 title: 10 plus grands risques OWASP
-seo-title: 10 plus grands risques OWASP
+seo-title: OWASP Top 10
 description: Découvrez comment AEM gère les 10 plus grands risques de sécurité OWASP.
-seo-description: Découvrez comment AEM gère les 10 plus grands risques de sécurité OWASP.
+seo-description: Learn how AEM deals with the top 10 OWASP security risks.
 uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 exl-id: c29472c8-9a93-4cb1-9cb1-05fc155ba736
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 89%
+source-wordcount: '496'
+ht-degree: 87%
 
 ---
 
@@ -43,7 +43,7 @@ AEM utilise des techniques d’authentification performantes et éprouvées, qui
 
 Tous les accès aux objets de données sont arbitrés par le référentiel et donc restreints par le contrôle d’accès basé sur les rôles.
 
-## 5. Cross-Site Request Forgery (CSRF)  {#cross-site-request-forgery-csrf}
+## 5. Cross-Site Request Forgery (CSRF) {#cross-site-request-forgery-csrf}
 
 La falsification de requête intersite (CSRF) est atténuée en injectant automatiquement un jeton cryptographique dans tous les formulaires et requêtes d’AJAX et en vérifiant ce jeton sur le serveur pour chaque POST.
 
@@ -61,9 +61,9 @@ Les mots de passe sont stockés en tant que hachages cryptographiques dans le n�
 
 Les données sensibles telles que les identifiants tiers sont stockées dans un formulaire chiffré à l’aide d’une bibliothèque cryptographique certifiée FIPS 140-2.
 
-## 8. Échec de la restriction de l’accès à l’URL  {#failure-to-restrict-url-access}
+## 8. Échec de la restriction de l’accès à l’URL {#failure-to-restrict-url-access}
 
-Le référentiel permet de définir des [autorisations précises (comme spécifié par JCR)](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html) pour n’importe quel utilisateur ou groupe dans n’importe quel chemin d’accès, via des entrées de contrôle d’accès. Les restrictions d’accès sont appliquées par le référentiel.
+Le référentiel permet de définir des [autorisations précises (comme spécifié par JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) pour n’importe quel utilisateur ou groupe dans n’importe quel chemin d’accès, via des entrées de contrôle d’accès. Les restrictions d’accès sont appliquées par le référentiel.
 
 ## 9. Protection insuffisante de la couche de transport {#insufficient-transport-layer-protection}
 

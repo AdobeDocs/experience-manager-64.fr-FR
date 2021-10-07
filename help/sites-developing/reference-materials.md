@@ -1,8 +1,8 @@
 ---
 title: Guides des API
-seo-title: Guides des API
+seo-title: API Guides
 description: Documentation des API fournies par AEM pour le développement d’applications
-seo-description: Documentation des API fournies par AEM pour le développement d’applications
+seo-description: Documentation for the APIs that AEM provides for developing applications
 uuid: 4ace24c8-8bdf-4c68-b21d-ad2c03cf7362
 contentOwner: Guillaume Carlino
 topic-tags: introduction
@@ -11,10 +11,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 exl-id: 0c80ee60-d2dd-49ad-a283-81fdb1fd201e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 84%
+source-wordcount: '258'
+ht-degree: 80%
 
 ---
 
@@ -57,5 +57,5 @@ Les ressources externes suivantes sont fournies à titre de référence uniqueme
 
 * [API Apache Sling 10](https://sling.apache.org/apidocs/sling10/)
 * [API Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
-* [API de référentiel de contenu Java](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)
+* [API de référentiel de contenu Java](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
 * [API Apache Jackrabbit](https://jackrabbit.apache.org/api)

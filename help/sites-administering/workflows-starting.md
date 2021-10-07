@@ -1,8 +1,8 @@
 ---
 title: Démarrage d’un workflow
-seo-title: Démarrage d’un workflow
+seo-title: Starting Workflows
 description: Découvrez comment démarrer des workflows dans AEM.
-seo-description: Découvrez comment démarrer des workflows dans AEM.
+seo-description: Learn how to start Workflows in AEM.
 uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 39419e0e-ad37-4ca5-8205-c29fc2cd1474
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '794'
 ht-degree: 59%
 
 ---
@@ -35,13 +35,14 @@ Lors de l’administration des workflows, vous pouvez les démarrer selon diffé
 >D’autres méthodes sont également disponibles pour les créateurs. Pour plus d’informations, voir :
 >
 >* [Application de workflows aux pages](/help/sites-authoring/workflows-applying.md)
-* [Application de workflows à des ressources de gestion des ressources numériques](/help/assets/assets-workflow.md)
-* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
-* [Projets de traduction](/help/sites-administering/tc-manage.md)
+>* [Application de workflows à des ressources de gestion des ressources numériques](/help/assets/assets-workflow.md)
+>* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [Projets de traduction](/help/sites-administering/tc-manage.md)
+
+>
 
 
-
-## Modèles de workflow {#workflow-models}
+## Modèles de workflows {#workflow-models}
 
 Vous pouvez démarrer un workflow [reposant sur l’un des modèles](/help/sites-administering/workflows.md#workflow-models-and-instances) répertoriés dans la console Modèles de workflows. La charge utile constitue les seules informations obligatoires, même s’il est possible d’ajouter également un titre et/ou un commentaire.
 
@@ -93,7 +94,8 @@ Un module de workflow :
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
-   L’indicateur **[Transitoire](/help/sites-developing/workflows.md#transient-workflows)** affiche les workflows pour lesquels l’historique des workflows ne sera pas conservé.
+   >
+   >L’indicateur **[Transitoire](/help/sites-developing/workflows.md#transient-workflows)** affiche les workflows pour lesquels l’historique des workflows ne sera pas conservé.
 
 1. Sélectionnez **Démarrer le processus** dans la barre d’outils.
 1. La boîte de dialogue Exécuter le workflow s’ouvre, d’où vous pouvez spécifier les éléments suivants :
@@ -143,7 +145,7 @@ Un module de workflow :
 
       name==User
 
-   * **Fonctionnalités**
+   * **Fonctions**
 
       Liste des fonctionnalités à activer. Sélectionnez les fonctions nécessaires à l’aide du sélecteur de liste déroulante.
 
@@ -172,7 +174,7 @@ Un module de workflow :
       Cette propriété de lanceur est une liste d’éléments séparés par des virgules : &quot;
 
       * `property-name` ignore les événements `jcr` déclenchés avec le nom de propriété spécifié. ``
-      * `event-user-data:<*someValue*>` ignore tout événement contenant le  `*<someValue*`>  `user-data` défini via l’ [ `ObservationManager` API] (https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+      * `event-user-data:<*someValue*>` ignore tout événement contenant le  `*<someValue*`>  `user-data` défini via l’ [`ObservationManager` API] (https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
       Par exemple :
 
@@ -190,6 +192,6 @@ Un module de workflow :
 
    Une fois que l’événement approprié se produit, le lanceur est déclenché et le workflow est démarré.
 
-## Gestion d’une configuration de lanceur  {#managing-a-launcher-configuration}
+## Gestion d’une configuration de lanceur {#managing-a-launcher-configuration}
 
 Après avoir créé votre configuration de lanceur, vous pouvez utiliser la même console pour sélectionner l’instance, puis **Afficher les propriétés** (et les modifier) ou **Supprimer**.

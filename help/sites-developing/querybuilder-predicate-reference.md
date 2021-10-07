@@ -1,8 +1,8 @@
 ---
 title: Référence des prédicats de Query Builder
-seo-title: Référence des prédicats de Query Builder
+seo-title: Query Builder Predicate Reference
 description: Référence complète des prédicats pour l’API Query Builder.
-seo-description: Référence complète des prédicats pour l’API Query Builder.
+seo-description: Complete predicate reference for the Query Builder API.
 uuid: af0e269e-7d52-4032-b22e-801c7b5dccfa
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 exl-id: 2bcc2be9-1e8a-44b5-add2-370b9ff80de8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 61%
+source-wordcount: '2310'
+ht-degree: 60%
 
 ---
 
@@ -61,11 +61,11 @@ Prend en charge l’extraction de facettes. Fournit des buckets pour chaque vale
 #### Propriétés {#properties}
 
 * ****
-boolproperty Chemin relatif à la propriété, par exemple 
+boolproperty Chemin d’accès relatif à la propriété, par exemple 
 `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`
 
 * ****
-valeur pour laquelle vérifier la propriété, &quot; 
+valeur à vérifier pour la propriété, &quot; 
 `true`&quot; ou &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
@@ -196,7 +196,7 @@ group.2_group.path=/content/dam/geometrixx
 group.2_group.type=dam:Asset
 ```
 
-Cela permet de rechercher le terme &quot;**Gestion**&quot; dans les pages de `/content/geometrixx/en` ou dans les ressources de `/content/dam/geometrixx`.
+This searches for the term &quot;**Management**&quot; within pages in `/content/geometrixx/en` or in assets in `/content/dam/geometrixx`.
 
 Il s’agit conceptuellement de `fulltext AND ( (path AND type) OR (path AND type) )`. Pour des jointures OR de ce type, de bons index sont requis pour garantir les performances.
 
@@ -220,7 +220,7 @@ Il s’agit conceptuellement de `fulltext AND ( (path AND type) OR (path AND typ
 
 ### hasPermission {#haspermission}
 
-Limite les résultats aux éléments dont la session en cours possède les [privilèges JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) spécifiés.
+Limite le résultat aux éléments pour lesquels la session en cours possède les privilèges [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) spécifiés.
 
 Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche. Il ne prend pas en charge l’extraction de facettes.
 
@@ -406,7 +406,7 @@ Ne prend pas en charge l’extraction de facettes.
 
 * **decimal**
 
-   &quot; `true`&quot; si la propriété vérifiée est de type Décimal
+   &quot; `true`&quot; if the checked property is of type Decimal
 
 ### relativedaterange {#relativedaterange}
 
@@ -416,8 +416,8 @@ Par exemple :
 
 * `upperBound=1h` (et aucun  `lowerBound`) sélectionne n’importe quoi au cours de l’heure suivante.
 * `lowerBound=-1d` (et aucun  `upperBound`) sélectionne n’importe quoi au cours des dernières 24 heures.
-* `lowerBound=-6M` et  `upperBound=-3M` sélectionnerait tout ce qui a entre 6 mois et 3 mois.
-* `lowerBound=-1500` et  `upperBound=5500` sélectionnerait tout ce qui se situe entre 1 500 millisecondes dans le passé et 5 500 millisecondes dans le futur.
+* `lowerBound=-6M` and `upperBound=-3M` would select anything 6 months to 3 months old
+* `lowerBound=-1500` and `upperBound=5500` would select anything between 1500 milliseconds in the past and 5500 milliseconds in the future
 * `lowerBound=1d` et  `upperBound=2d` sélectionnerait n’importe quel élément après-demain
 
 Notez que ce prédicat ne tient pas compte des années bissextiles et que tous les mois comptent 30 jours.
@@ -519,7 +519,7 @@ Prend en charge l’extraction de facettes. Fournit des buckets pour chaque bali
 
 * **N_value**
 
-   utilisez `1_value`, `2_value`, ... pour rechercher plusieurs balises (combinées avec `OR` par défaut, avec `AND` si et=true) (depuis la version 5.6).
+   use `1_value`, `2_value`, ... to check for multiple tags (combined with `OR` by default, with `AND` if and=true) (since 5.6)
 
 * **property**
 

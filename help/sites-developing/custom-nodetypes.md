@@ -1,8 +1,8 @@
 ---
 title: Types de nœuds personnalisés
-seo-title: Types de nœuds personnalisés
+seo-title: Custom Node Types
 description: AEM est architecturé autour de Sling et utilise un référentiel JCR avec des types de nœuds proposés par les deux plates-formes. Cependant, AEM fournit également un éventail de types de nœuds personnalisés.
-seo-description: AEM est architecturé autour de Sling et utilise un référentiel JCR avec des types de nœuds proposés par les deux plates-formes. Cependant, AEM fournit également un éventail de types de nœuds personnalisés.
+seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: 3611cfe5-a3bd-4f46-8949-8f13e1bceb4d
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1879'
 ht-degree: 61%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 61%
 
 Comme AEM est basé sur Sling et utilise un référentiel JCR, les types de noeuds proposés par les deux sont disponibles :
 
-* [Types de nœuds JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7%20Node%20Types)
+* [Types de nœuds JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7%20Node%20Types)
 * [Types de nœuds Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 De plus, AEM propose un éventail de types de nœuds personnalisés.
@@ -56,7 +56,7 @@ Définit le type d’un nœud d’événement d’audit.
 
 ## Commentaire {#comment}
 
-### cq:Comment  {#cq-comment}
+### cq:Comment {#cq-comment}
 
 **Description**
 
@@ -131,7 +131,7 @@ Définit le type d’un nœud de rétrolien.
 
 ## Base {#core}
 
-### cq:Page  {#cq-page}
+### cq:Page {#cq-page}
 
 **Description**
 
@@ -230,7 +230,7 @@ Définit un modèle CQ.
 
 Définit un composant CQ.
 
-* `@prop jcr:title` - Titre du composant.
+* `@prop jcr:title` - Title for the component.
 * `@prop jcr:description` - Description du composant.
 * `@node dialog` - Boîte de dialogue Principal.
 * `@prop dialogPath` - chemin de la boîte de dialogue Principal (alternative à la boîte de dialogue).
@@ -294,13 +294,13 @@ Définit la configuration de la barre d’édition.
    * `auto` - Détection automatique (en fonction de l’espace disponible)
 * `@node cq:inplaceEditing` - Configuration de modification statique pour ce composant.
 * `@prop cq:layout`- Disposition de la barre d’édition :
-   * `editbar` - barre d’édition
+   * `editbar` - edit bar
    * `rollover` - cadre de roulement
    * `auto` - détection automatique
 * `@node cq:formParameters`- Paramètres supplémentaires à ajouter au formulaire de boîte de dialogue.
 * `@prop cq:actions`- Liste des actions (boutons de la barre d’édition ou éléments de menu).
 * `@node cq:actionConfigs` - Configurations de widgets pour les options de la barre d’édition ou du menu.
-* `@prop cq:emptyText` - Texte à afficher si aucun contenu visuel n’est présent.
+* `@prop cq:emptyText` - Text to be displayed if no visual content is present.
 * `@node cq:dropTargets` - Collection de  `{@link cq:DropTargetConfig}` noeuds.
 
 **Définition**
@@ -320,7 +320,7 @@ Définit la configuration de la barre d’édition.
 
 Configure une cible de dépôt d’un composant. Le nom de ce nœud est utilisé comme ID pour l’opération de glisser-déposer.
 
-* `@prop accept` - Liste des types MIME acceptés par cette cible de dépôt ; Par exemple :  `["image/*"]`
+* `@prop accept` - List of mime types accepted by this drop target; e.g. `["image/*"]`
 * `@prop groups` - Liste des groupes de déplacement qui acceptent une source.
 * `@prop propertyName` - Nom de la propriété utilisée pour stocker la référence.
 
@@ -345,7 +345,7 @@ Définit un composant CQ virtuel. Actuellement, ces options sont uniquement util
 * `@node icon.png` - Un fichier contenant une icône de caractéristique.
 * `@node thumbnail.png` - Fichier contenant une miniature de caractéristique.
 * `@prop allowedParents` -  Schémas d’expressions régulières utilisés pour déterminer le(s) chemin(s) d’accès des composants autorisés en tant que composants parents.
-* `@prop allowedChildren` - Modèles d’expression régulière pour déterminer le(s) chemin(s) d’accès des composants autorisés en tant que composants enfants.
+* `@prop allowedChildren` - Regular expression patterns to determine path(s) of components that are allowed as child components.
 * `@prop componentGroup` - Nom du groupe de composants pour le glisser-déposer du composant.
 
 **Définition**
@@ -391,9 +391,9 @@ Définit les écouteurs (côté client) à exécuter sur un événement de modif
    * `- afterremove (string)`
    * `- aftermove (string)`
 
-## Gestion des actifs numériques (DAM) {#dam}
+## Gestion des ressources numériques (DAM) {#dam}
 
-### dam:AssetContent  {#dam-assetcontent}
+### dam:AssetContent {#dam-assetcontent}
 
 **Description**
 
@@ -467,7 +467,7 @@ Liste des conteneurs.
 
 **Description**
 
-Le type de nœud `cq:contentPage` contient les définitions de propriété et de nœud enfant pour les pages de contenu ContentBus. Ce n’est que lorsque ce type de mixin est ajouté à un noeud de type `cq:page` que le noeud devient une page de contenu ContentBus.
+Le type de nœud `cq:contentPage` contient les définitions de propriété et de nœud enfant pour les pages de contenu ContentBus. Only when this mixin type is added to a node of type `cq:page`, a node becomes a ContentBus content page.
 
 Les éléments d’un `cq:Cq4ContentPage` sont les suivants :
 
@@ -483,7 +483,7 @@ Les éléments d’un `cq:Cq4ContentPage` sont les suivants :
 
 ## Importateur {#importer}
 
-### cq:PollConfig  {#cq-pollconfig}
+### cq:PollConfig {#cq-pollconfig}
 
 **Description**
 
@@ -514,7 +514,7 @@ Type de nœud principal permettant de créer facilement des nœuds de configurat
 
 ## Emplacement {#location}
 
-### cq:GeoLocation  {#cq-geolocation-1}
+### cq:GeoLocation {#cq-geolocation-1}
 
 **Description**
 
@@ -532,7 +532,7 @@ Mixin qui définit un emplacement géographique en degrés décimaux (DD).
 
 ## Mailer {#mailer}
 
-### cq:mailerMessage  {#cq-mailermessage}
+### cq:mailerMessage {#cq-mailermessage}
 
 **Description**
 
@@ -548,7 +548,7 @@ Types de nœuds MailerService (Service mailer). Le mailer utilise des nœuds con
 
 ## MSM {#msm}
 
-### cq:LiveRelationship  {#cq-liverelationship}
+### cq:LiveRelationship {#cq-liverelationship}
 
 **Description**
 
@@ -597,8 +597,8 @@ Définit un mixin LiveSyncCancelled (Dernière synchronisation annulée). Annule
 
 Définit une action de synchronisation en direct (LiveSyncAction) associée à une synchronisation en direct (LiveSync).
 
-* `@prop name` - Nom de l’action
-* `@prop value` - Valeur d’action
+* `@prop name` - Action name
+* `@prop value` - Action value
 
 **Définition**
 
@@ -617,7 +617,7 @@ Configuration de la synchronisation en direct.
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-Pour AEM 5.4, ajoutez à la fin de la liste :
+For AEM 5.4 add to the end of list:
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
@@ -633,7 +633,7 @@ Action de plan directeur
 
 ## Plate-forme {#platform}
 
-### cq:Console  {#cq-console}
+### cq:Console {#cq-console}
 
 **Description**
 
@@ -646,7 +646,7 @@ Définit le type d’un nœud de console.
 
 ## Réplication {#replication}
 
-### cq:ReplicationStatus  {#cq-replicationstatus}
+### cq:ReplicationStatus {#cq-replicationstatus}
 
 **Description**
 
@@ -656,7 +656,7 @@ Définit le mixin des informations relatives à l’état de réplication.
 * `@prop cq:lastPublishedBy`- Dernier utilisateur à avoir publié la page (plus utilisé).
 * `@prop cq:lastReplicated` - Date de la dernière réplication de la page.
 * `@prop cq:lastReplicatedBy` - Dernier utilisateur à avoir répliqué la page.
-* `@prop cq:lastReplicationAction` - L’action de réplication : activez ou désactivez .
+* `@prop cq:lastReplicationAction` - The replication action: activate or deactivate.
 * `@prop cq:lastReplicationStatus` - État de réplication (n’est plus utilisé).
 
 **Définition**
@@ -672,7 +672,7 @@ Définit le mixin des informations relatives à l’état de réplication.
 
 ## Sécurité {#security}
 
-### cq:ApplicationPrivilege  {#cq-applicationprivilege}
+### cq:ApplicationPrivilege {#cq-applicationprivilege}
 
 **Description**
 
@@ -766,7 +766,7 @@ Définit un type de mixin qui marque les fichiers pouvant être ouverts avec l�
 
 ## Balisage {#tagging}
 
-### cq:Tag  {#cq-tag}
+### cq:Tag {#cq-tag}
 
 **Description**
 
@@ -858,7 +858,7 @@ Données utilisateur
 
 ## Widgets {#widgets}
 
-### cq:ClientLibraryFolder  {#cq-clientlibraryfolder}
+### cq:ClientLibraryFolder {#cq-clientlibraryfolder}
 
 **Description**
 
@@ -942,7 +942,7 @@ Champ
 
 ## Wiki {#wiki}
 
-### wiki:Topic  {#wiki-topic}
+### wiki:Topic {#wiki-topic}
 
 **Description**
 
@@ -986,9 +986,9 @@ Propriétés Wiki
    * `- wiki:isGlobal (boolean)`
    * `- * (undefined)`
 
-## Processus {#workflow}
+## Workflow {#workflow}
 
-### cq:Workflow  {#cq-workflow}
+### cq:Workflow {#cq-workflow}
 
 **Description**
 

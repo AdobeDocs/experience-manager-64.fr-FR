@@ -1,8 +1,8 @@
 ---
 title: Utilisation des adaptateurs Sling
-seo-title: Utilisation des adaptateurs Sling
+seo-title: Using Sling Adapters
 description: Sling propose un modèle Adaptateur permettant de convertir facilement les objets qui mettent en œuvre l’interface Adaptable
-seo-description: Sling propose un modèle Adaptateur permettant de convertir facilement les objets qui mettent en œuvre l’interface Adaptable
+seo-description: Sling offers an Adapter pattern to conveniently translate objects that implement the Adaptable interface
 uuid: 07f66a33-072d-49e1-8e67-8b80a6a9072a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 exl-id: 7780d04d-418e-494c-85c3-76bef5f35690
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 87%
+source-wordcount: '1717'
+ht-degree: 79%
 
 ---
 
@@ -33,11 +33,11 @@ Il existe plusieurs scénarios d’utilisation :
 
 * Obtenir des objets spécifiques à l’implémentation.
 
-    Par exemple, une implémentation basée sur JCR de l’interface [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) permet d’accéder à l’objet [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) JCR sous-jacent.
+   Par exemple, une implémentation basée sur JCR de l’interface [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) permet d’accéder à l’objet [`Node`](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) JCR sous-jacent.
 
 * Création de raccourcis d’objets qui nécessitent la transmission d’objets de contexte internes.
 
-   Par exemple, le [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) basé sur JCR contient une référence à la [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html) de la requête qui, à son tour, est nécessaire pour de nombreux objets qui s’exécuteront sur la base de cette session de requête ; [`PageManager`](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) ou [`UserManager`](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html), par exemple.
+   Par exemple, le [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) basé sur JCR contient une référence à la [`JCR Session`](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html) de la requête qui, à son tour, est nécessaire pour de nombreux objets qui s’exécuteront sur la base de cette session de requête ; [`PageManager`](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) ou [`UserManager`](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html), par exemple.
 
 * Raccourci vers les services.
 
@@ -88,15 +88,15 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
 <table> 
  <tbody> 
   <tr> 
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td> 
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td> 
    <td>S’il s’agit d’une ressource basée sur un nœud JCR ou une propriété JCR faisant référence à un nœud.</td> 
   </tr> 
   <tr> 
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Property.html">Property</a></td> 
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Property.html">Property</a></td> 
    <td>S’il s’agit d’une ressource basée sur une propriété JCR.</td> 
   </tr> 
   <tr> 
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Item.html">Item</a></td> 
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Item.html">Item</a></td> 
    <td>S’il s’agit d’une ressource basée sur JCR (nœud ou propriété).</td> 
   </tr> 
   <tr> 
@@ -124,7 +124,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
 <table> 
  <tbody> 
   <tr> 
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html">Session</a></td> 
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html">Session</a></td> 
    <td>Session JCR de la requête, s’il s’agit d’un résolveur de ressources basé sur JCR (par défaut).</td> 
   </tr> 
   <tr> 
@@ -216,7 +216,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
    <td>Ressource étiquetée (== this).</td> 
   </tr> 
   <tr> 
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Noeud</a></td> 
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Noeud</a></td> 
    <td>Nœud de la page.</td> 
   </tr> 
   <tr> 
@@ -231,7 +231,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 | [Ressource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource du composant. |
 |---|---|
 | [LabeledResource](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html) | Ressource étiquetée (== this). |
-| [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud du composant. |
+| [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud du composant. |
 | … | Tous les éléments auxquels la ressource du composant peut être adaptée. |
 
 [**Template**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html) s’adapte à :
@@ -239,7 +239,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 <table> 
  <tbody> 
   <tr> 
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td> 
    <td>Ressource du modèle.</td> 
   </tr> 
   <tr> 
@@ -247,7 +247,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
    <td>Ressource étiquetée (== this).</td> 
   </tr> 
   <tr> 
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Noeud</a></td> 
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Noeud</a></td> 
    <td>Nœud de ce modèle.</td> 
   </tr> 
   <tr> 
@@ -261,17 +261,17 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 [**Authorizable**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html),  [****](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) User et  [****](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html) Group s’adaptent à :
 
-| [Noeud](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Renvoie le nœud racine utilisateur/groupe. |
+| [Noeud](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Renvoie le nœud racine utilisateur/groupe. |
 |---|---|
 | [ReplicationStatus](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/ReplicationStatus.html) | Renvoie l’état de réplication pour le nœud racine utilisateur/groupe. |
 
-#### Gestion des ressources numériques (DAM)  {#dam}
+#### Gestion des ressources numériques (DAM) {#dam}
 
 [**Asset**](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html) s’adapte à :
 
 | [Ressource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de l’actif. |
 |---|---|
-| [Noeud](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la ressource. |
+| [Noeud](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la ressource. |
 | … | Tous les éléments auxquels la ressource de l’actif peut être adaptée. |
 
 #### Balisage {#tagging}
@@ -280,7 +280,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 | [Ressource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de la balise. |
 |---|---|
-| [Noeud](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la balise. |
+| [Noeud](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la balise. |
 | … | Tous les éléments auxquels la ressource de la balise peut être adaptée. |
 
 #### Autres {#other}
