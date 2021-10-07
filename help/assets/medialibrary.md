@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Leader
 exl-id: f0afdae4-5777-464c-9203-e9d19c6d62f6
-source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
+source-git-commit: a3289431adb80162340a1acdbc9b91e0c29e99a0
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 98%
+source-wordcount: '518'
+ht-degree: 86%
 
 ---
 
@@ -45,22 +45,16 @@ Si vous souhaitez empêcher l’utilisation involontaire des fonctionnalités [!
 
 Media Library couvre globalement les cas d’utilisation suivants :
 
-* Mise à disposition de fonctions de gestion des actifs numériques de base pour les pages web créées à l’aide d’[!DNL Adobe Experience Manager Sites].
+* Fournissez des fonctions de gestion des actifs numériques de base pour les pages web créées à l’aide de [!DNL Adobe Experience Manager Sites].
 * Formulaires adaptatifs et communications créés à l’aide d’[!DNL Adobe Experience Manager Forms].
 * Expériences d’écran numérique créées à l’aide d’[!DNL Adobe Experience Manager Screens].
 * API HTTP REST [!DNL Assets] pour les opérations en mode découplé.
 
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
-* Basic metadata properties
-* Tag management
-* Version control
 * Static renditions
-* Projects, tasks, workflow authoring
+* Projects, tasks authoring
 * Activity stream (timeline)
-* Query Builder (API)
-* Marketing Cloud integration
-* User interface customization and extension
 * Comments and annotation
 -->
 
@@ -79,13 +73,22 @@ Pour utiliser la fonctionnalité Media Library, vous pouvez utiliser l’interfa
 * Appliquer des annotations à des ressources.
 * Ajouter des ressources aux pages [!DNL Sites] via l’outil de recherche de contenu.
 * Utilisation [!DNL Content Fragments].
+* Utilisez les API HTTP REST et GraphQL pour [!DNL Content Fragments] et les ressources multimédias référencées, sous licence Sites.
+* Intégration de Marketing Cloud.
+* Personnalisez et étendez l’interface utilisateur de gestion des ressources.
+* Accédez à Query Builder (API) pour étendre la fonctionnalité de recherche.
+* Créez des balises statiques.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+
+As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
 >
 >De nombreux cas d’utilisation avancés de la gestion des actifs numériques sont remplis par [!DNL Experience Manager Assets]. La licence Media Library vous permet de ne répondre qu’aux cas d’utilisation répertoriés à l’aide de Media Library. Si un cas pratique n’est pas répertorié, ne l’utilisez pas avec la licence Media Library. Si vous avez des questions, contactez le service clientèle d’Adobe.
+
+Notez que vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL Asset], de sélecteur [!DNL Asset], de balisage en masse, de modification des workflows de ressources sans licence [!DNL Assets].
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
