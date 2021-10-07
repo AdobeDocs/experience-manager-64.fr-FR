@@ -5,7 +5,7 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: 8910716cf6b5c4e872db8d965200787de7c2d121
 workflow-type: tm+mt
 source-wordcount: '1646'
 ht-degree: 52%
@@ -37,7 +37,7 @@ Cette aide s’adresse à un public familiarisé avec les technologies suivantes
 
 * Installation, configuration et administration des packages Adobe Experience Manager et AEM
 
-* Utilisation des systèmes d’exploitation Linux et Microsoft Windows
+* Utilisation des systèmes d’exploitation Windows Linux et Microsoft
 
 ## Prérequis {#prerequisites}
 
@@ -67,7 +67,7 @@ Pour obtenir des instructions détaillées, voir
 
 * [Notes de mise à jour d’AEM 6.4, Pack de services ](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**Contactez** Customer Care si vous ne parvenez pas à trouver le dernier package AEM ou le Service Pack.
+**Contactez l’** assistance clientèle si vous ne parvenez pas à trouver le dernier package AEM ou le Service Pack.
 
 ## Création d’une configuration {#configure-new-integration-64}
 
@@ -98,7 +98,7 @@ Le certificat public vous permet d’authentifier votre profil sur [!DNL Adobe I
 
 1. Connexion à votre instance d’auteur AEM Assets
 URL par défaut : http:// localhost:4502/aem/start.html
-1. Dans le panneau **Outils** ![Outils](assets/tools.png), accédez à **[!UICONTROL Sécurité]** > **[!UICONTROL Adobe des configurations IMS]**.
+1. Dans le panneau **Outils** ![Outils](assets/tools.png), accédez à **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**.
 
    ![Interface utilisateur de configuration du compte Adobe IMS](assets/ims-config1.png)
 
@@ -106,7 +106,7 @@ URL par défaut : http:// localhost:4502/aem/start.html
 
    Cliquez sur **[!UICONTROL Créer]**.
 
-   Vous accédez alors à la page **[!UICONTROL Adobe de la configuration du compte technique IMS]**.
+   Vous accédez alors à la page **[!UICONTROL Configuration du compte technique Adobe IMS]** .
 
 1. Par défaut, l’onglet **Certificat** s’ouvre.
 
@@ -331,7 +331,7 @@ Effectuez les étapes suivantes pour supprimer la configuration existante :
 
    ![](assets/delete-cloud-service.png)
 
-1. Accédez à `/home/users/mac` et supprimez l’utilisateur **MAC** de votre client Brand Portal.
+1. Accédez à `/home/users/mac` et supprimez l’**utilisateur MAC** de votre client Brand Portal.
 
    ![](assets/delete-mac-user.png)
 

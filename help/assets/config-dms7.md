@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
 source-wordcount: '5589'
 ht-degree: 56%
@@ -63,7 +63,7 @@ Pour toutes les mises à niveau, avec ou sans le module de compatibilité, vous 
 
 ## (Facultatif) Installation du Feature Pack 18912 pour la migration de ressources en masse {#installing-feature-pack}
 
-Le Feature Pack 18912 vous permet soit d’ingérer des ressources par FTP en masse, soit de migrer des ressources de Dynamic Media en mode hybride ou de Dynamic Media Classic vers Dynamic Media en mode Scene7 sur Experience Manager. Il est disponible à partir de Adobe Professional Services.
+Le Feature Pack 18912 vous permet soit d’ingérer des ressources par FTP en masse, soit de migrer des ressources du mode Dynamic Media - Hybride ou de Dynamic Media Classic vers le mode Dynamic Media - Scene7 sur Experience Manager. Il est disponible à partir de Adobe Professional Services.
 
 Pour plus d’informations, voir [Installation du Feature Pack 18912 pour la migration des ressources en masse](bulk-ingest-migrate.md) .
 
@@ -79,7 +79,7 @@ Modifiez le mot de passe avant de configurer les Cloud Services Dynamic Media. U
 
 1. Dans votre instance d’auteur de Experience Manager, appuyez sur le logo du Experience Manager pour accéder à la console de navigation globale, puis appuyez sur l’icône Outils , puis sur **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuration Dynamic Media]**.
 1. Sur la page du navigateur de configuration Dynamic Media, dans le volet de gauche, appuyez sur **[!UICONTROL global]** et appuyez sur **[!UICONTROL Créer]**. N’appuyez ou ne sélectionnez pas l’icône de dossier située à gauche de [!UICONTROL global].
-1. Sur la page [!UICONTROL Créer une configuration Dynamic Media] , saisissez un titre, l’adresse électronique du compte Dynamic Media et un mot de passe. Sélectionnez votre région. Ces informations vous sont fournies par Adobe dans votre e-mail de mise en service. Contactez l’assistance clientèle d’Adobe si vous n’avez pas reçu l’e-mail.
+1. Sur la page [!UICONTROL Créer une configuration Dynamic Media] , saisissez un titre, l’adresse électronique du compte Dynamic Media et un mot de passe. Sélectionnez votre région. Ces informations vous sont fournies par Adobe dans votre e-mail de mise en service. Si vous n’avez pas reçu le courrier électronique, contactez le service clientèle d’Adobe.
 
    Appuyez sur **[!UICONTROL Se connecter à Dynamic Media]**.
 
@@ -199,14 +199,14 @@ La gestion des couleurs de Dynamic Media vous permet de corriger les couleurs d
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
-Par exemple, vous pouvez définir l’ **[!UICONTROL espace colorimétrique par défaut RVB]** sur `sRGB` et l’**[!UICONTROL espace colorimétrique par défaut CMJN]** sur `WebCoated`.
+Par exemple, vous pouvez définir l’ **[!UICONTROL espace colorimétrique par défaut du RGB]** sur `sRGB` et l’**[!UICONTROL espace colorimétrique par défaut CMJN]** sur `WebCoated`.
 
 Cela aura les effets suivants :
 
 * Active la correction des couleurs pour les images RVB et CMJN.
-* Les images RVB qui n’ont pas de profil colorimétrique sont supposées se trouver dans l’espace colorimétrique `sRGB` .
+* Les images de RGB qui n’ont pas de profil colorimétrique sont supposées se trouver dans l’espace colorimétrique `sRGB`.
 * Les images CMJN qui n’ont pas de profil colorimétrique sont considérées comme se trouvant dans l’espace colorimétrique `WebCoated`.
-* Rendus dynamiques qui renvoient une sortie RVB, la renvoie dans l’espace colorimétrique `sRGB`.
+* Rendus dynamiques qui renvoient une sortie de RGB, la renvoie dans l’espace colorimétrique `sRGB`.
 * Rendus dynamiques qui renvoient une sortie CMJN, la renvoie dans l’espace colorimétrique `WebCoated` .
 
 #### Modification des types MIME pour les formats pris en charge {#editing-mime-types-for-supported-formats}
@@ -542,7 +542,7 @@ La file d’attente de workflows Granite est utilisée pour les workflows non tr
 
 #### Mise à jour de la connexion de chargement vers Scene7 {#updating-the-scene-upload-connection}
 
-Le paramètre Connexion de chargement de Scene7 synchronise les ressources Experience Manager sur les serveurs Dynamic Media Classic.
+Le paramètre de connexion de chargement de Scene7 synchronise Experience Manager Assets sur les serveurs Dynamic Media Classic.
 
 **Pour mettre à jour la connexion de chargement vers Scene7:**
 
@@ -623,7 +623,7 @@ Si vous utilisez Dynamic Media pour l’imagerie, la vidéo ou les deux, vous po
 
    Pour que ce filtre s’applique à toutes les images, quel que soit leur format, définissez la valeur sur `image/*` où `*` est une expression régulière appliquée à toutes les images de n’importe quel format.
 
-   Pour que le filtre s’applique uniquement aux images de type JPEG, saisissez la valeur `image/jpeg`.
+   Pour que le filtre s&#39;applique uniquement aux images de type JPEG, saisissez la valeur `image/jpeg`.
 
 1. Définissez les rendus que vous souhaitez inclure ou exclure de la réplication.
 

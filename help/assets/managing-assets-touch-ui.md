@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Asset Management,Search,Renditions,Collaboration
 role: User
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '10078'
 ht-degree: 62%
@@ -41,7 +41,7 @@ Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici 
 
 ## Charger des ressources {#uploading-assets}
 
-Vous pouvez télécharger différents types de ressources (y compris des images, des fichiers PDF, des fichiers RAW, etc.) à partir de votre dossier local ou d’un lecteur réseau vers [!DNL Experience Manager] Assets.
+Vous pouvez télécharger différents types de ressources (y compris des images, des fichiers de PDF, des fichiers RAW, etc.) à partir de votre dossier local ou d’un lecteur réseau vers [!DNL Experience Manager] Assets.
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Avant de charger une ressource, vérifiez qu’elle est dans un [format pris en 
 
    ![create_menu](assets/create_menu.png)
 
-   Pour sélectionner plusieurs fichiers, appuyez sur la touche Ctrl/Commande et sélectionnez les ressources dans la boîte de dialogue de sélecteur de fichiers. Sur un iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
+   Pour sélectionner plusieurs fichiers, appuyez sur la touche Ctrl/Commande et sélectionnez les ressources dans la boîte de dialogue de sélecteur de fichiers. Dans iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
 
    Vous pouvez suspendre le transfert des ressources volumineuses (dont la taille est supérieure à 500 Mo) et reprendre ultérieurement à partir de la même page. Appuyez sur l’icône **[!UICONTROL Pause]** à côté de la barre de progression qui s’affiche au début du téléchargement.
 
@@ -145,14 +145,14 @@ Dynamic Media active le chargement par lots des ressources par le biais du serve
 
 >[!NOTE]
 >
->Pour télécharger des ressources par FTP dans Dynamic Media - mode Scene7, installez le Feature Pack (FP) 18912 sur [!DNL Experience Manager] l’auteur. Contactez l’assistance clientèle d’Adobe pour accéder au FP-18912 et terminer la configuration de votre compte FTP. Voir la section [Installation du pack de fonctionnalités 18912 pour la migration des ressources en bloc](/help/assets/bulk-ingest-migrate.md).
+>Pour télécharger des ressources par FTP dans Dynamic Media - mode Scene7, installez le Feature Pack (FP) 18912 sur [!DNL Experience Manager] l’auteur. Contactez le service clientèle d’Adobe pour accéder au FP-18912 et terminer la configuration de votre compte FTP. Voir la section [Installation du pack de fonctionnalités 18912 pour la migration des ressources en bloc](/help/assets/bulk-ingest-migrate.md).
 >
 >Si vous utilisez le protocole FTP pour charger des ressources, les paramètres de transfert spécifiés dans [!DNL Experience Manager] sont ignorés. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
 
 **Pour télécharger des ressources via FTP, procédez comme suit :**
 
 1. Sélectionnez le client FTP de votre choix, puis connectez-vous à l’aide du nom d’utilisateur et du mot de passe FTP qui vous ont été envoyés par courrier électronique. Dans le client FTP, téléchargez les fichiers et/ou dossiers vers le serveur FTP.
-1. Ouvrez l’ [application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à votre compte à l’aide des informations d’identification reçues de l’e-mail de mise en service.
+1. Ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à votre compte à l’aide des informations d’identification reçues de l’e-mail de mise en service.
 1. Appuyez ou cliquez sur **[!UICONTROL Télécharger]** dans la barre de navigation globale.
 1. Sur la page **[!UICONTROL Télécharger]**, près du coin supérieur gauche, appuyez sur l’onglet **[!UICONTROL Via FTP]**.
 1. Sélectionnez le dossier FTP source à utiliser pour le transfert des fichiers dans la partie gauche de la page et le dossier de destination dans la partie droite.
@@ -255,7 +255,7 @@ Utilisez les **[!UICONTROL options de recadrage]** et les **[!UICONTROL options 
 |  | Photoshop et nom de couche | Nomme les images en reprenant le nom du fichier PSD suivi du nom ou du numéro de calque. Le numéro de calque est utilisé si le nom du calque dans le fichier PSD est un nom de calque Photoshop par défaut. Par exemple, un calque nommé Étiquette de prix dans un fichier PSD appelé Pub Printemps est nommé Pub Printemps_Étiquette de prix. Un calque portant le nom par défaut Calque 2 est nommé Pub Printemps_2. |
 | Ancre |  | Indiquez le mode d’ancrage des images dans les modèles qui sont générés à partir de la composition superposée produite à partir du fichier PSD. Par défaut, l’ancrage est au centre. Un ancrage au centre permet aux images de remplacement de remplir de manière optimale le même espace, quelles que soient les proportions de l’image de remplacement. Les images qui remplacent cette image et qui présentent un aspect différent occupent le même espace lorsque le modèle est référencé et le paramètre de substitution utilisé. Changez de paramètre si votre application exige que les images de remplacement occupent l’espace alloué dans le modèle. |
 
-#### Définition des options de téléchargement PDF {#setting-pdf-upload-options}
+#### Définition des options de transfert de PDF {#setting-pdf-upload-options}
 
 Lorsque vous transférez un fichier PDF, vous pouvez le formater de différentes manières. Vous pouvez recadrer les pages, extraire des mots de recherche, spécifier une résolution en pixels par pouce et choisir un espace colorimétrique. Les fichiers PDF contiennent souvent une marge de rognage, des traits de coupe, des repères de montage et d’autres repères d’impression. Vous pouvez éliminer ces marques sur les côtés des pages lorsque vous transférez un fichier PDF.
 
@@ -287,8 +287,8 @@ Vous pouvez transcoder un fichier vidéo en sélectionnant une option parmi dive
 | Vidéo adaptative |  | Paramètre prédéfini de codage unique qui fonctionne avec n’importe quel rapport d’aspect pour créer des vidéos à diffuser sur mobile, tablette et ordinateur de bureau. Les vidéos source transférées qui sont codées à l’aide de ce paramètre prédéfini sont définies avec une hauteur fixe. Toutefois, la largeur est automatiquement mise à l’échelle pour conserver les proportions de la vidéo. <br>La bonne pratique consiste à utiliser le codage de vidéo adaptative. |
 | Paramètres prédéfinis de codage uniques | Tri des paramètres prédéfinis de codage | Sélectionnez Nom ou Taille pour trier les paramètres prédéfinis de codage répertoriés sous Ordinateur de bureau, Mobile et Tablette par nom ou par taille de résolution. |
 |  | Poste de travail | Créez un fichier MP4 pour diffuser une expérience vidéo progressive ou en flux continu sur les ordinateurs de bureau. Sélectionnez un ou plusieurs formats avec la taille de résolution et le débit de données cible de votre choix. |
-|  | Mobile | Créez un fichier MP4 à diffuser sur des appareils mobiles iPhone ou Android. Sélectionnez un ou plusieurs proportions avec la taille de résolution et le débit de données cible de votre choix. |
-|  | Tablette | Créez un fichier MP4 à diffuser sur des tablettes iPad ou Android. Sélectionnez un ou plusieurs proportions avec la taille de résolution et le débit de données cible de votre choix. |
+|  | Mobile | Créez un fichier MP4 à diffuser sur les appareils mobiles iPhone ou Android. Sélectionnez un ou plusieurs formats avec la taille de résolution et le débit de données cible de votre choix. |
+|  | Tablette | Créez un fichier MP4 à diffuser sur les tablettes iPad ou Android. Sélectionnez un ou plusieurs formats avec la taille de résolution et le débit de données cible de votre choix. |
 
 #### Définition de paramètres prédéfinis d’ensemble par lot au chargement {#setting-batch-set-presets-at-upload}
 
@@ -715,7 +715,7 @@ La **[!UICONTROL chronologie]** vous permet d’afficher divers événements pou
 
 Dans la [console Collections](managing-collections-touch-ui.md#navigating-the-collections-console), la liste **[!UICONTROL Afficher tout]** contient des options permettant de n’afficher que les commentaires et les workflows. De plus, la chronologie ne s’affiche que pour les collections de niveau supérieur répertoriées dans la console. Elle ne s’affiche pas si vous accédez à l’intérieur des collections.
 
-**** La chronologie contient plusieurs  [options spécifiques aux fragments de contenu](content-fragments-managing.md#timeline-for-content-fragments) ; cette fonctionnalité nécessite la version  [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md)  ou une version ultérieure.
+**** La chronologie contient plusieurs  [options spécifiques aux fragments](content-fragments-managing.md#timeline-for-content-fragments) de contenu ; cette fonctionnalité nécessite la version  [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md)  ou une version ultérieure.
 
 **Pour utiliser la chronologie** :
 
@@ -787,7 +787,7 @@ Vous ne pouvez afficher qu’une seule annotation à la fois.
 >
 >Si vous sélectionnez plusieurs annotations, la dernière en date est visible dans l’interface utilisateur.
 >
->La sélection multiple est prise en charge uniquement pour l’impression de la ressource annotée au format PDF.
+>La sélection multiple n’est prise en charge que pour l’impression de la ressource annotée en tant que PDF.
 
 1. Pour afficher les annotations enregistrées pour une ressource, accédez à l’emplacement de la ressource et ouvrez la page de la ressource.
 
@@ -813,7 +813,7 @@ Vous pouvez également choisir de n’imprimer que les annotations ou l’état 
 
 >[!NOTE]
 >
->Vous pouvez sélectionner plusieurs annotations lors de l’impression de la ressource annotée au format PDF.
+>Vous pouvez sélectionner plusieurs annotations lors de l’impression de la ressource annotée en tant que PDF.
 
 Il se peut que les annotations trop longues ne s’affichent pas correctement dans le fichier PDF. Pour un rendu optimal, Adobe recommande de limiter la taille des annotations à 50 mots.
 
@@ -843,7 +843,7 @@ Pour imprimer les annotations et l’état de révision, appuyez sur l’icône 
 
    Vous pouvez choisir d’autres paramètres en fonction de l’emplacement où vous souhaitez que les annotations ou l’état s’affichent dans le PDF imprimé. Si vous souhaitez que les annotations ou l’état s’affichent sur une page distincte de la ressource imprimée, choisissez **[!UICONTROL Page suivante]**.
 
-1. Appuyez sur **[!UICONTROL Imprimer]**. Selon l’option choisie à l’étape 2, le fichier PDF généré affiche les annotations ou l’état à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et l’état de révision à l’aide du paramètre **[!UICONTROL Haut et gauche]**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
+1. Appuyez sur **[!UICONTROL Imprimer]**. Selon l’option choisie à l’étape 2, le PDF généré affiche les annotations ou l’état à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et l’état de révision à l’aide du paramètre **[!UICONTROL Haut et gauche]**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -855,7 +855,7 @@ Pour imprimer les annotations et l’état de révision, appuyez sur l’icône 
    >
    >Si la ressource contient des sous-ressources, vous pouvez les imprimer avec leurs annotations spécifiques.
 
-   Pour modifier l’aspect du fichier PDF rendu, par exemple la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des états, ouvrez la **[!UICONTROL configuration du PDF d’annotation]** à partir de **[!UICONTROL Configuration Manager]** et modifiez les options souhaitées. Par exemple, pour modifier la couleur d’affichage de l’état approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotations](managing-assets-touch-ui.md#annotating).
+   Pour modifier l’aspect du fichier de PDF rendu, par exemple la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des états, ouvrez la **[!UICONTROL configuration du PDF d’annotation]** à partir de **[!UICONTROL Configuration Manager]** et modifiez les options souhaitées. Par exemple, pour modifier la couleur d’affichage de l’état approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotations](managing-assets-touch-ui.md#annotating).
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
@@ -866,11 +866,11 @@ Pour imprimer les annotations et l’état de révision, appuyez sur l’icône 
 1. Ouvrez la page de configuration **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** à partir de l’URL [https://&lt;serveur>:&lt;port>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl).
 1. Pour configurer **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]**, effectuez l’une des opérations suivantes :
 
-   * Dans l’option du répertoire **[!UICONTROL Polices système]** , indiquez le chemin d’accès complet au répertoire des polices de votre système. Par exemple, si vous utilisez Mac, vous pouvez spécifier le chemin `/Library/Fonts` dans l’option de répertoire **[!UICONTROL Polices système]** . [!DNL Experience Manager] récupère les polices dans ce répertoire.
+   * Dans l’option du répertoire **[!UICONTROL Polices système]** , indiquez le chemin d’accès complet au répertoire des polices de votre système. Par exemple, si vous êtes un utilisateur de Mac, vous pouvez spécifier le chemin `/Library/Fonts` dans l’option de répertoire **[!UICONTROL Polices système]** . [!DNL Experience Manager] récupère les polices dans ce répertoire.
    * Créez un répertoire nommé **fonts** dans le dossier **[!UICONTROL crx-quickstart]**. **** Le service Font Manager CQ-DAM-Handler-Gibson récupère automatiquement les polices à l’emplacement `crx-quickstart/fonts`. Vous pouvez remplacer ce chemin par défaut à partir de l’option de répertoire **[!UICONTROL Adobe Server Fonts]**.
    * Créez un dossier pour les polices sur votre système et stockez-y les polices de votre choix. Indiquez ensuite le chemin d’accès complet à ce dossier dans l’option de répertoire **[!UICONTROL Polices client]** .
 
-1. Accédez à la configuration **[!UICONTROL Annotation PDF]** à partir de l’URL [https://&lt;serveur>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig).
+1. Accédez à la configuration **[!UICONTROL PDF d’annotation]** à partir de l’URL [https://&lt;serveur>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig).
 1. Configurez le **[!UICONTROL PDF d’annotation]** avec le jeu correct de famille de polices comme suit :
 
    * Incluez la chaîne `<font_family_name_of_custom_font, sans-serif>` dans l’option font-family. Par exemple, si vous souhaitez imprimer des annotations en chinois, en japonais et en coréen (CJC), insérez la chaîne `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` dans l’option font-family. Si vous souhaitez imprimer des annotations en hindi, téléchargez la police appropriée et configurez la famille de polices comme suit : Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.

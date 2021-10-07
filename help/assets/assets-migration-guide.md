@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Migration,Renditions,Asset Management
 role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 57%
@@ -22,7 +22,7 @@ Avant d’exécuter l’une des étapes décrites ci-dessous, passez en revue et
 
 >[!NOTE]
 >
->Les outils de migration de ressources suivants ne font pas partie d’Adobe Experience Manager. L’assistance clientèle d’Adobe ne prend pas en charge ces outils.
+>Les outils de migration de ressources suivants ne font pas partie d’Adobe Experience Manager. Le service clientèle d’Adobe ne prend pas en charge ces outils.
 >
 >* Tools Tag Maker ACS [!DNL Experience Manager]
 >* Outils [!DNL Experience Manager] Importateur de ressources CSV
@@ -129,7 +129,7 @@ Dans ce cas, les ressources sont déjà renseignées avec les métadonnées et l
 1. Migration des ressources : Deux outils sont recommandés pour déplacer des ressources d’une instance [!DNL Experience Manager] vers une autre :
 
    * **Vault Remote Copy**, ou  `vlt rcp`, vous permet d’utiliser vlt sur un réseau. Vous pouvez indiquer des répertoires source et de destination pour que vlt télécharge toutes les données du référentiel d’une instance et les charge dans l’autre. Vlt rcp est documenté à l’adresse [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **** Grabbitis est un outil de synchronisation de contenu open source qui a été développé par Time Warner Cable pour sa  [!DNL Experience Manager] mise en oeuvre. Comme il utilise des flux de données continus, en comparaison avec vlt rcp, sa latence est inférieure et il annonce une vitesse de deux à dix fois plus rapide que vlt rcp. Grabbit prend également en charge la synchronisation du contenu delta uniquement, ce qui lui permet de synchroniser les modifications après l’achèvement d’une passe de migration initiale.
+   * **** Grabbitis est un outil de synchronisation de contenu open source qui a été développé par Time Warner Cable pour leur  [!DNL Experience Manager] mise en oeuvre. Comme il utilise des flux de données continus, en comparaison avec vlt rcp, sa latence est inférieure et il annonce une vitesse de deux à dix fois plus rapide que vlt rcp. Grabbit prend également en charge la synchronisation du contenu delta uniquement, ce qui lui permet de synchroniser les modifications après l’achèvement d’une passe de migration initiale.
 
 1. Activation des ressources : Suivez les instructions de [activation des ressources](#activate-assets) documentées pour la migration initiale vers AEM.
 

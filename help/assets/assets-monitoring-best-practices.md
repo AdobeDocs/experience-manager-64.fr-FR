@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 74%
@@ -195,5 +195,5 @@ Dans le processus de surveillance, si vous rencontrez des problèmes, voici quel
 * Utilisez la console d’administration des workflow pour vérifier que vos workflow se comportent comme prévu. Si possible, regroupez plusieurs workflow en un seul.
 * Revoyez la surveillance en temps réel et recherchez toute congestion supplémentaire ou recherchez les processus fortement consommateurs de certaines ressources spécifiques.
 * Examinez les points de sortie du réseau client et les points d’entrée vers le réseau de l’instance [!DNL Experience Manager], y compris le dispatcher. Ce sont souvent des zones de congestion. Pour plus d’informations, reportez-vous à la section [Considérations relatives aux ressources réseau](assets-network-considerations.md).
-* Augmentez la taille de votre serveur [!DNL Experience Manager]. Votre instance [!DNL Experience Manager] peut ne pas être suffisamment dimensionnée. L’assistance clientèle d’Adobe peut vous aider à déterminer si votre serveur est de taille inférieure.
+* Augmentez la taille de votre serveur [!DNL Experience Manager]. Votre instance [!DNL Experience Manager] peut ne pas être suffisamment dimensionnée. Le service clientèle d’Adobe peut vous aider à déterminer si votre serveur est sous-dimensionné.
 * Consultez les fichiers `access.log` et `error.log` pour trouver les entrées situées autour du moment où le problème est survenu. Recherchez des indices susceptibles d’indiquer la présence d’anomalies au niveau du code personnalisé. Ajoutez-les à la liste d’événements à surveiller.

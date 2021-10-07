@@ -2,7 +2,7 @@
 title: Fonctionnalités obsolètes et supprimées
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager 6.4.
 exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+source-git-commit: dcc36e499517f3f35d5f1d849802c4a5c35121bd
 workflow-type: tm+mt
 source-wordcount: '1310'
 ht-degree: 44%
@@ -38,7 +38,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 | Formulaires | La prise en charge du service de passerelle de migration centrale d’Adobe n’est plus fournie, car le produit Adobe Central n’est plus pris en charge. | Aucun remplacement. |
 | Formulaires | Utilisation obsolète de JSONObject dans Query et OperationOptions. Les API suivantes sont obsolètes : <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | Utilisation de l’API `IValueMap` |
 | Formulaires | Service Central Migration Bridge obsolète. | Aucun remplacement n’est proposé. |
-| Assets | Le déchargement des ressources a été abandonné à partir d’AEM 6.4. |  |
+| Ressources | Le déchargement des ressources a été abandonné à partir d’AEM 6.4. |  |
 | Développeurs | Bibliothèque cliente Lodash/trait de soulignement. Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente Lodash/underscore fournie dans le cadre de la distribution (Quickstart). | Adobe recommande aux clients qui ont encore besoin de Lodash/underscore pour leur code de l’ajouter à leur base de code de projet. |
 
 <!-- Original HTML table that came from helpx during migration.
@@ -151,7 +151,7 @@ obsolète.
 
 | Zone | Fonctionnalité | Remplacement |
 |---|---|---|
-| Intégration avec [!DNL Experience Cloud] | Vous pouvez synchroniser vos ressources avec [!DNL Experience Cloud] à l’aide d’une configuration via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] était auparavant appelé  [!DNL Adobe Marketing Cloud]. | Si vous avez des questions, contactez [l’Assistance clientèle Adobe](https://experienceleague.adobe.com/?support-solution=General#support). |
+| Intégration à [!DNL Experience Cloud] | Vous pouvez synchroniser vos ressources avec [!DNL Experience Cloud] à l’aide d’une configuration via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] était auparavant appelé  [!DNL Adobe Marketing Cloud]. | Si vous avez des questions, contactez le [service clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=General#support). |
 | Activity Map dans Analytics | Version d’Activity Map incluse dans AEM. | En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM. Le [module ActivityMap fourni par Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) doit maintenant être utilisé. |
 | Components-Forms | Captcha de formulaire (foundation/components/form/captcha) | Utilisez le composant ReCaptcha de Google à la place. |
 | Composants | Diaporama (foundation/components/slideshow) | Aucun remplacement |
@@ -160,7 +160,7 @@ obsolète.
 | Composants | Tableau des produits (commerce/components/product_table) | Aucun remplacement |
 | Gestion des tâches | Gestion des tâches de l’interface utilisateur classique (/libs/cq/taskmanagement/content/taskmanager.html) | Obsolète depuis la version 6.0. Utilisez la nouvelle gestion des tâches qui est combinée avec l’interface utilisateur de workflow. |
 | Workflow | L’interface utilisateur de notification utilisée entre les versions 5.6 et 6.2 (/libs/cq/workflow/content/notifications.html) | Boîte de réception de workflow /aem/inbox |
-| Formulaires | L’exportation des fichiers PDF au format PDF/E-1 avec PDF Generator a été supprimée. | PDF Generator continue à prendre en charge l’exportation des formats PDF aux formats PDF/A-1a/b, PDF/A-2a/b et PDF/A-3a/b. |
+| Formulaires | L’exportation des fichiers PDF au format PDF/E-1 avec PDF Generator a été supprimée. | PDF Generator continue à prendre en charge l’exportation de PDF vers les formats PDF/A-1a/b, PDF/A-2a/b et PDF/A-3a/b. |
 | Formulaires | La prise en charge des images dans des fragments de documents a été supprimée. | Les communications interactives permettent d’utiliser des images directement dans les canaux web et d’impression. |
 | Formulaires | Mise à niveau dynamique | La prise en charge de l’upgrade prêt à l’emploi n’est pas disponible |
 | Formulaires | Sidegrade pour les migrations TarMK vers DocumentMK | Vous pouvez exporter les données de l’ancien système, puis les importer dans un nouveau système. Pour obtenir des instructions détaillées, voir la documentation sur la mise à niveau d’AEM Forms on JEE |
@@ -170,7 +170,7 @@ obsolète.
 | Formulaires | Suppression de la page d’entrée spécifique à AEM Forms on JEE. | La page d’entrée d’AEM Forms on JEE est remplacée par AEM page d’entrée (/aem/start.html) |
 | Formulaires | Suppression de la prise en charge du Captcha par défaut | Utilisez le service reCAPTCHA de Google. |
 | Formulaires | Suppression de la prise en charge des champs Flash dans AEM Designer. AEM Designer n’autorise pas la modification des champs Flash utilisés dans un formulaire. | Vous pouvez utiliser AEM Designer disponible pour une version précédente pour modifier de tels formulaires. |
-| Communities | La prise en charge de la vérification Captcha a été supprimée. | Utilisez l’intégration de captcha personnalisée (par exemple reCAPTCHA de Google) pour la vérification. |
+| Communities | La prise en charge de la vérification Captcha a été supprimée. | Utilisez l’intégration de captcha personnalisée (par exemple reCAPTCHA par Google) pour la vérification. |
 
 ## Annonce préalable à la prochaine version {#pre-announcement-for-next-release}
 

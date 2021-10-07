@@ -1,8 +1,8 @@
 ---
-title: 'Diffusion de contenu HTTP/2 '
-seo-title: 'Diffusion de contenu HTTP/2 '
+title: Diffusion de contenu HTTP/2
+seo-title: HTTP2 Delivery of Content
 description: HTTP/2 améliore la communication entre les navigateurs et les serveurs, ce qui accélère le transfert d’informations tout en réduisant la puissance de traitement nécessaire.
-seo-description: HTTP/2 améliore la communication entre les navigateurs et les serveurs, ce qui accélère le transfert d’informations tout en réduisant la puissance de traitement nécessaire.
+seo-description: HTTP/2 improves the way browsers and servers communicate, allowing for faster transfer of information while reducing the amount of needed processing power.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,16 +10,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 exl-id: 59cd9f8c-6d01-448d-bf57-bdc9fd2e381b
-feature: Gestion des ressources
+feature: Asset Management
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 100%
+source-wordcount: '705'
+ht-degree: 99%
 
 ---
 
-# Diffusion de contenu HTTP/2  {#http-delivery-of-content}
+# Diffusion de contenu HTTP/2   {#http-delivery-of-content}
 
 Adobe est heureux d’annoncer la disponibilité de HTTP/2 pour la diffusion de contenu, protocole qui permet d’améliorer les performances globales.
 
@@ -44,7 +44,7 @@ La démonstration suivante illustre la différence entre le chargement HTTP/1 et
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## Puis-je passer à HTTP/2 ?  {#am-i-eligible-to-switch-over-to-http}
+## Puis-je passer à HTTP/2 ? {#am-i-eligible-to-switch-over-to-http}
 
 Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
@@ -60,7 +60,7 @@ Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
 Pour basculer vers le HTTP/2, vous devez en faire la demande, car cette procédure n’est pas automatique.
 
-1. Adressez une demande d’assistance technique en vue d’adopter le protocole HTTP/2. Voir [Accès au portail d’assistance AEM](https://helpx.adobe.com/fr/experience-manager/kb/accessing-aem-support-portal.html).
+1. Adressez une demande d’assistance technique en vue d’adopter le protocole HTTP/2. Voir [Accès au portail du service clientèle](https://helpx.adobe.com/fr/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Indiquez les informations suivantes dans votre demande de support :
 
@@ -86,7 +86,7 @@ Les demandes sont traitées par ordre chronologique de réception par le support
 >
 >Le délai d’exécution peut être long, car la transition vers HTTP/2 implique l’effacement du cache. Par conséquent, seules quelques transitions client peuvent être traitées simultanément.
 
-## Quels risques présente la transition vers HTTP/2 ?  {#what-are-the-risks-with-moving-to-http}
+## Quels risques présente la transition vers HTTP/2 ? {#what-are-the-risks-with-moving-to-http}
 
 La transition vers HTTP/2 efface le cache au niveau du CDN, car elle implique la définition d’une nouvelle configuration de CDN.
 

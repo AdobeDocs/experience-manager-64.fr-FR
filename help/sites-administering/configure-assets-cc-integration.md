@@ -4,7 +4,7 @@ description: Découvrez comment configurer l’intégration d’AEM Assets avec 
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
-source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 42%
@@ -25,7 +25,7 @@ En arrière-plan, le serveur authentifie votre profil avec la passerelle, puis s
 
 >[!NOTE]
 >
->Cette fonctionnalité est obsolète dans AEM Assets. Recherchez des remplacements dans [Bonnes pratiques d’intégration AEM et Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Si vous avez des questions, [contactez l’Assistance clientèle Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
+>Cette fonctionnalité est obsolète dans AEM Assets. Recherchez des remplacements dans [Bonnes pratiques d’intégration AEM et Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Si vous avez des questions, [contactez le service clientèle Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
 
 <!-- Hiding this for now via cqdoc-16834.
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-287.png)

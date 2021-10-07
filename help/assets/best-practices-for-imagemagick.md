@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Renditions,Developer Tools
 role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 49%
@@ -22,7 +22,7 @@ Pour traiter des fichiers volumineux à l’aide d’ImageMagick, veuillez tenir
 
 >[!NOTE]
 >
->Si vous utilisez [!DNL Experience Manager] sur Adobe Managed Services (AMS), contactez l’assistance clientèle Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Experience Manager peut ne pas traiter de fichiers PSB à très haute résolution de plus de 3 000 x 2 3000 pixels.
+>Si vous utilisez [!DNL Experience Manager] sur Adobe Managed Services (AMS), contactez le service clientèle d’Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Experience Manager peut ne pas traiter de fichiers PSB à très haute résolution de plus de 3 000 x 2 3000 pixels.
 
 ## Installation d’ImageMagick {#installing-imagemagick}
 
@@ -39,7 +39,7 @@ Plusieurs versions des fichiers d’installation d’ImageMagic sont disponibles
 Vous pouvez configurer l’étape de processus de ligne de commande en fonction de votre cas d’utilisation. Effectuez les étapes suivantes pour générer une image inversée et des miniatures (140x100, 48x48, 319x319 et 1280x1280) chaque fois que vous ajoutez un fichier image JPEG à `/content/dam` sur le serveur [!DNL Experience Manager] :
 
 1. Sur le serveur [!DNL Experience Manager], accédez à la console Processus (`https://[aem_server]:[Port]/workflow`) et ouvrez le modèle de workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** .
-1. Dans le modèle de workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**, ouvrez l’étape **[!UICONTROL Miniatures EPS (optimisées par ImageMagick)]** .
+1. Dans le modèle de workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** , ouvrez l’étape **[!UICONTROL Miniatures EPS (optimisées par ImageMagick)]** .
 1. Dans l’onglet **[!UICONTROL Arguments]**, ajoutez `image/jpeg` à la liste **[!UICONTROL Types MIME]**.
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)

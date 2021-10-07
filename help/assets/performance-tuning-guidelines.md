@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '3151'
 ht-degree: 69%
@@ -215,7 +215,7 @@ En outre, définissez le chemin du dossier temporaire d’ImageMagick dans le fi
 >
 >Les fichiers `policy.xml` et `configure.xml` ImageMagick se trouvent sous `/usr/lib64/ImageMagick-*/config/` au lieu de `/etc/ImageMagick/`. Voir [la documentation d’ImageMagick](https://www.imagemagick.org/script/resources.php) pour plus d’informations sur les emplacements de fichiers de configuration.
 
-Si vous utilisez [!DNL Experience Manager] sur Adobe Managed Services (AMS), contactez l’assistance clientèle Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Experience Manager peut ne pas traiter de fichiers PSB à très haute résolution de plus de 3 000 x 2 3000 pixels.
+Si vous utilisez [!DNL Experience Manager] sur Adobe Managed Services (AMS), contactez le service clientèle d’Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Experience Manager peut ne pas traiter de fichiers PSB à très haute résolution de plus de 3 000 x 2 3000 pixels.
 
 <!-- 
 
@@ -418,6 +418,6 @@ Pour réduire la latence et obtenir un débit élevé grâce à une utilisation 
 * Supprimer les étapes inutiles du workflow Ressource de mise à jour de gestion des actifs numériques.
 * Configurer la purge des workflows et versions.
 * Optimisez la configuration de l’index Lucene.
-* Optimisez les index avec les derniers Service Pack et correctifs. Vérifiez auprès de l’assistance clientèle d’Adobe toutes les optimisations d’index supplémentaires qui peuvent être disponibles.
+* Optimisez les index avec les derniers Service Pack et correctifs. Vérifiez auprès du service clientèle d’Adobe toutes les optimisations d’index supplémentaires qui peuvent être disponibles.
 * Utilisez `guessTotal` pour optimiser les performances des requêtes.
 * Si vous configurez [!DNL Experience Manager] pour détecter les types de fichiers à partir du contenu des fichiers (en configurant [!UICONTROL Day CQ DAM Mime Type Service] dans la [!UICONTROL [!DNL Experience Manager] console Web]), chargez de nombreux fichiers en masse aux heures creuses, car l’opération consomme beaucoup de ressources.

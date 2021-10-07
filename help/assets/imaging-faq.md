@@ -9,7 +9,7 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
 feature: Smart Services
 role: User
-source-git-commit: cab72662c62dbc6caa05265b350aed26f21e6824
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 60%
@@ -83,7 +83,7 @@ Si vous le souhaitez, votre entreprise peut se désabonner de l’optimisation d
 
 >[!NOTE]
 >
->Les valeurs RPD et bande passante réseau sont basées sur les valeurs côté client détectées du réseau de diffusion de contenu groupé. Ces valeurs sont parfois inexactes. Par exemple, l’iPhone5 avec DPR=2 et l’iPhone12 avec DPR=3 affichent toutes deux DPR=2. Néanmoins, pour les appareils à haute résolution, envoyer DPR=2 est préférable à envoyer DPR=1. Bientôt : Adobe travaille sur le code côté client pour déterminer précisément le RGPD d’un utilisateur final.
+>Les valeurs RPD et bande passante réseau sont basées sur les valeurs côté client détectées du réseau de diffusion de contenu groupé. Ces valeurs sont parfois inexactes. Par exemple, iPhone5 avec DPR=2 et iPhone12 avec DPR=3, toutes deux affichent DPR=2. Néanmoins, pour les appareils à haute résolution, envoyer DPR=2 est préférable à envoyer DPR=1. Bientôt : Adobe travaille sur le code côté client pour déterminer précisément le RGPD d’un utilisateur final.
 
 ## Quels sont les principaux avantages de la plus récente technologie d’imagerie dynamique ?  {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -91,7 +91,7 @@ Le chargement des images représente la majeure partie du temps de chargement d�
 
 Améliorations apportées par la version la plus récente de l’imagerie dynamique :
 
-* Amélioration du classement d’optimisation du référencement Google pour les pages web qui utilisent la dernière technologie d’imagerie dynamique.
+* Amélioration du classement SEO de Google pour les pages web qui utilisent la dernière technologie d’imagerie dynamique.
 * Diffusion immédiate de contenus optimisés (au moment de l’exécution).
 * Mise en œuvre de la technologie Adobe Sensei pour effectuer la conversion en fonction de la qualité (qlt) spécifiée dans la demande d’image.
 * Possibilité de désactiver l’imagerie dynamique à l’aide du paramètre d’URL « bfc ».
@@ -101,7 +101,7 @@ Améliorations apportées par la version la plus récente de l’imagerie dynami
 
 ## L’imagerie dynamique entraîne-t-elle des frais de licence ?  {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-Non. L’imagerie dynamique est incluse dans votre licence existante de Dynamic Media Classic ou Adobe Experience Manager - Dynamic Media (On-prem, AMS et Experience Manager en tant que Cloud Service).
+Non. L’imagerie dynamique est incluse dans votre licence Dynamic Media Classic ou Adobe Experience Manager - Dynamic Media existante (On-prem, AMS et Experience Manager as a Cloud Service).
 
 >[!NOTE]
 >
@@ -214,7 +214,7 @@ Par défaut, l’imagerie dynamique RGPD et l’optimisation du réseau sont dé
       Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine Dynamic Media Classic générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
    1. Indiquez si vous avez également besoin que l’imagerie dynamique fonctionne sur HTTP/2.
 
-1. L’assistance clientèle d’Adobe vous ajoute à la liste d’attente des clients de l’imagerie dynamique en fonction de l’ordre dans lequel les demandes ont été envoyées.
+1. Le service clientèle d’Adobe vous ajoute à la liste d’attente des clients de l’imagerie dynamique en fonction de l’ordre dans lequel les demandes ont été envoyées.
 1. Lorsque Adobe est prêt à traiter votre demande, contactez vos contacts pour coordonner et définir une date cible.
 1. **Facultatif** : Vous avez la possibilité de tester l’imagerie dynamique dans le cadre de l’évaluation avant qu’Adobe ne mette la nouvelle fonctionnalité en production.
 1. Une fois la procédure achevée, vous en serez informé par l’équipe de support.
@@ -233,7 +233,7 @@ Les demandes sont traitées dans l’ordre de réception par l’équipe du supp
 
 ## Quels sont les risques liés au passage à l’imagerie dynamique ?  {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
-La page web d’un client ne présente aucun risque. Cependant, la transition vers l’imagerie dynamique efface votre cache sur le réseau de diffusion de contenu, car elle implique de passer à une nouvelle configuration de Dynamic Media Classic ou de Dynamic Media sur Experience Manager.
+La page web d’un client ne présente aucun risque. Cependant, la transition vers l’imagerie dynamique efface votre cache sur le réseau de diffusion de contenu, car elle implique de passer à une nouvelle configuration de Dynamic Media Classic ou Dynamic Media sur Experience Manager.
 
 Au cours de la transition initiale, les images non mises en cache accèdent directement aux serveurs d’origine d’Adobe jusqu’à ce que le cache soit reconstitué. Par conséquent, Adobe prévoit de gérer quelques transitions à la fois afin de maintenir des performances acceptables lors de l’extraction des requêtes à partir de l’origine de l’Adobe. Pour la plupart des utilisateurs, le cache est entièrement reconstitué au niveau du réseau CDN sous 1 à 2 jours.
 
@@ -272,13 +272,13 @@ Actuellement, vous pouvez éventuellement activer ou désactiver l’imagerie dy
 
 Il n’existe aucune fonctionnalité de configuration de ce type dans la technologie actuelle d’imagerie dynamique.
 
-## Parfois, une image JPEG est renvoyée à Chrome au lieu d’une image WebP. Pourquoi ? (#jpeg-webp)
+## Parfois, une image de JPEG est renvoyée à Chrome au lieu d’une image WebP. Pourquoi ? (#jpeg-webp)
 
 L’imagerie dynamique détermine si la conversion apporte ou non un bénéfice. Elle ne renvoie la nouvelle image que si la conversion parvient à réduire la taille du fichier avec une qualité comparable.
 
 ## Comment l’imagerie dynamique est-elle compatible avec les composants Adobe Experience Manager Sites et les visionneuses Dynamic Media ?
 
-* Les composants principaux des sites Experience Manager sont configurés par défaut pour l’optimisation du RPD. Pour éviter les images surdimensionnées en raison de l’optimisation du RGPD de l’imagerie dynamique côté serveur, `dpr=off` est toujours ajouté aux images Dynamic Media des composants principaux des sites Experience Manager.
+* Les composants principaux Experience Manager Sites sont configurés par défaut pour l’optimisation du RPD. Pour éviter les images surdimensionnées en raison de l’optimisation du RGPD de l’imagerie dynamique côté serveur, `dpr=off` est toujours ajouté aux images Dynamic Media des composants principaux de Experience Manager Sites.
 * Étant donné que le composant Dynamic Media Foundation est configuré par défaut pour l’optimisation du RGPD, afin d’éviter les images surdimensionnées en raison de l’optimisation de l’imagerie dynamique côté serveur, `dpr=off` est toujours ajouté aux images du composant Dynamic Media Foundation. Même si le client désélectionne l’optimisation du RGPD dans le composant Foundation DM, le RGPD de l’imagerie dynamique côté serveur ne démarre pas. En résumé, dans le composant de base DM, l’optimisation du RPD entre en vigueur en fonction du paramètre au niveau du composant de base DM uniquement.
 * Toute optimisation du RGPD côté visionneuse fonctionne en tandem avec l’optimisation du RGPD de l’imagerie dynamique côté serveur et n’entraîne pas de surdimensionnement des images. En d’autres termes, là où le RGPD est géré par la visionneuse, par exemple la vue principale uniquement dans une visionneuse avec zoom activé, les valeurs du RGPD de l’imagerie dynamique côté serveur ne sont pas déclenchées. De même, lorsque les éléments de visionneuse, tels que les échantillons et les miniatures, ne sont pas gérés en vertu du RGPD, la valeur du RGPD d’imagerie dynamique côté serveur est déclenchée.
 
