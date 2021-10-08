@@ -2,7 +2,7 @@
 title: Notes de mise à jour d’AEM Assets
 seo-title: AEM Assets
 description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.4 Assets.
-seo-description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.4 Assets.
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Assets.
 uuid: f5e7608d-f906-4a35-b442-899703de3587
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -12,7 +12,7 @@ discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
 source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1647'
 ht-degree: 60%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 60%
 
 Les fonctionnalités, points forts et améliorations clés d’AEM 6.4 Assets sont abordés dans ces notes de mise à jour. Pour plus d’informations, suivez les liens proposés.
 
-## Adobe Asset Link {#adobe-asset-link}
+## Adobe Asset Link {#adobe-asset-link}
 
 Adobe Asset Link dans Creative Cloud abonnement Entreprise simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le cadre du processus de création de contenu. Il s’agit d’une nouvelle fonctionnalité native en Creative Cloud pour les entreprises, qui permet de se connecter à AEM Assets directement à partir d’Adobe Photoshop, d’Adobe Illustrator ou d’Adobe InDesign, sans quitter ces outils.
 
 Pour en savoir plus sur la fonctionnalité, les conditions préalables et comment y accéder, consultez la [page Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html).
 
-## Balises intelligentes améliorées (optimisées par Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
+## Balises intelligentes améliorées (avec technologie Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
 AEM 6.4 introduit la fonctionnalité Balises intelligentes améliorées basée sur l’intelligence artificielle en plus des balises intelligentes lancées dans AEM 6.3.
 
@@ -36,7 +36,7 @@ AEM 6.4 introduit la fonctionnalité Balises intelligentes améliorées basée s
 
 Pour utiliser les balises intelligentes améliorées d’AEM Assets, installez le [dernier Service Pack d’AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
 
-## Recherche de traduction dynamique (optimisée par Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
+## Recherche de traduction dynamique (avec la technologie Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
 
 AEM 6.4 introduit la fonctionnalité de recherche de traduction intelligente pour prendre en charge les scénarios de recherche multilingue. Les clients disposant d’équipes dispersées dans le monde et parlant différentes langues ont désormais accès à la recherche dans différentes langues sans passer par des workflows de traduction coûteux et fastidieux.
 
@@ -60,7 +60,7 @@ Améliorations de la recherche
 
 * Nouveau bouton Retour pour les recherches qui permet d’accéder à un élément de recherche et de revenir à la même position dans les résultats de recherche sans exécuter à nouveau la requête de recherche.
 * Nouveau compteur de résultats de recherche pour afficher le nombre de résultats d’une recherche.
-* Amélioration du filtre de recherche de type de fichier avec possibilité de filtrer les résultats de recherche en fonction de types MIME plus précis, tels que JPG, PNG et PSD, par rapport aux options d’image, de document et multimédia précédentes.
+* Amélioration du filtre de recherche de type de fichier avec possibilité de filtrer les résultats de recherche en fonction de types MIME plus précis, tels que JPG, PNG et PSD, par rapport aux options d’image, de document et de multimédia précédentes.
 * Améliorations des filtres de recherche avec des horodatages précis au lieu de la fonctionnalité précédente de curseur temporel.
 
 Améliorations des ressources multi-pages
@@ -76,7 +76,7 @@ Catalogues
 
 * Amélioration de l’expérience utilisateur, alignement avec l’interface utilisateur des modèles. Pour plus d’informations, voir [Catalog Producer](../sites-administering/catalog-producer.md).
 
-## Métadonnées   {#metadata}
+## Métadonnées {#metadata}
 
 AEM 6.4 comprend plusieurs fonctionnalités avancées de gestion des métadonnées destinées à gérer les métadonnées à l’échelle et à mettre en place l’intégrité des métadonnées par l’intermédiaire de règles et de validations. Voici les fonctionnalités essentielles :
 
@@ -127,7 +127,7 @@ AEM 6.4 comprend un ensemble de fonctions prenant en charge différentes préf�
 * La possibilité pour les utilisateurs de sélectionner et de modifier ultérieurement la classe de stockage à leur gré et de définir des règles pour le stockage des ressources d’une classe à une autre ou de gérer le cycle de vie de leurs ressources.
 * Possibilité pour les utilisateurs de réduire leurs coûts de stockage en choisissant un autre cloud AWS ou Azure.
 
-Pour une présentation des plates-formes prises en charge, consultez la [documentation sur les exigences techniques](../sites-deploying/technical-requirements.md).
+Pour une présentation des plateformes prises en charge, consultez la [documentation sur les exigences techniques](../sites-deploying/technical-requirements.md).
 
 ## Groupe d’utilisateurs fermé {#closed-user-group}
 
@@ -138,7 +138,7 @@ Pour une présentation des plates-formes prises en charge, consultez la [documen
 
 Dans la version 6.4, Dynamic Media prend en charge un nouveau mode, dans lequel l’actif original est téléchargé et géré à l’aide de l’interface utilisateur web d’AEM Assets, tandis que les rendus dynamiques et autres fonctions de médias dynamiques sont traités en arrière-plan par le service de livraison sur le cloud de Dynamic Media.
 
-Dans ce mode (introduit en premier avec la version de [AEM 6.3 Feature Packs 14410 et 18912](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), les utilisateurs bénéficient de fonctionnalités de gestion de ressources de bout en bout et de médias dynamiques à l’aide de l’interface utilisateur web AEM Assets moderne, tout en tirant parti des services de diffusion rétrocompatibles avec Dynamic Media Classic (Scene7), y compris les URL de diffusion inchangées, qui sont .
+Dans ce mode (introduit en premier avec la version de [AEM 6.3 Feature Packs 14410 et 18912](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), les utilisateurs bénéficient de fonctionnalités de gestion de ressources de bout en bout et de médias dynamiques à l’aide de l’interface utilisateur web d’AEM Assets moderne, tout en tirant parti des services de diffusion rétrocompatibles avec Dynamic Media Classic (Scene7), y compris les URL de diffusion inchangées.
 
 En outre, AEM 6.4 introduit de nouvelles fonctions reposant sur Adobe Sensei pour les médias émergents, tels que VR et 3D, les visionneuses Dynamic Media et la prise en charge des fragments d’expérience au sein des images interactives et des bannières de carrousel.
 
