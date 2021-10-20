@@ -1,8 +1,8 @@
 ---
 title: Plateformes prises en charge pour AEM Forms on JEE
-seo-title: Plateformes prises en charge pour AEM Forms on JEE
-description: Liste des composants d’infrastructure requis et pris en charge pour installer AEM Forms on JEE
-seo-description: Liste des composants d’infrastructure requis et pris en charge pour installer AEM Forms sur JEE
+seo-title: Supported Platforms for AEM Forms on JEE
+description: Liste des composants d’infrastructure requis et pris en charge pour installer AEM Forms sur JEE
+seo-description: List of infrastructure components required and supported for installing AEM Forms on JEE
 uuid: 22f05fd4-f9fc-423e-8a86-1e75df4b2b44
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 393f665774a482e953e2594404ab22f7ce0bb259
 workflow-type: tm+mt
-source-wordcount: '3316'
-ht-degree: 86%
+source-wordcount: '3315'
+ht-degree: 85%
 
 ---
 
@@ -33,7 +33,6 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 >* AEM Forms on JEE ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
 
 >
-
 
 
 ### Configurations recommandées {#recommendedconfigurations}
@@ -98,7 +97,6 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 >* Il est conseillé de consulter les bulletins de sécurité publiés par l’éditeur Java afin de garantir la sécurité des environnements de production et d’installer les mises à jour Java les plus récentes.
 
 >
-
 
 
 ### Bases de données et persistance de CRX {#databases-and-crx-persistence}
@@ -278,7 +276,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p>Mises à jour et correctifs</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</br><b>Remarque : </b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> atteint la phase de fin de maintenance et passe à la phase de prise en charge du cycle de vie étendu le 30 novembre 2020. Adobe recommande Red Hat Enterprise Linux 7 pour les mises à niveau et les nouvelles installations. Les installations existantes peuvent utiliser Red Hat Enterprise Linux 6 pendant la phase de prise en charge du cycle de vie étendu.</p> </td> 
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</br><b>Remarque :</b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> atteint la phase de fin de maintenance et passe à la phase de prise en charge du cycle de vie étendu le 30 novembre 2020. Adobe recommande Red Hat Enterprise Linux 7 pour les mises à niveau et les nouvelles installations. Les installations existantes peuvent utiliser Red Hat Enterprise Linux 6 pendant la phase de prise en charge du cycle de vie étendu.</p> </td> 
    <td><p>A : Pris en charge</p> </td> 
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td> 
   </tr> 
@@ -336,7 +334,6 @@ Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environn
 >* Le service PDF Generator n’est pas pris en charge sous Windows 10.
 
 >
-
 
 
 ### Exceptions aux plateformes de serveur prises en charge {#exceptions-to-supported-server-platforms}
@@ -425,7 +422,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
   </tr> 
   <tr> 
    <td>IBM Content Manager Client</td> 
-   <td><p>La version 8.5<strong> </strong>est prise en charge</p> </td> 
+   <td><p>Version 8.5<strong> </strong>est pris en charge</p> </td> 
   </tr> 
   <tr> 
    <td>EMC Documentum</td> 
@@ -501,11 +498,11 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Vous trouve
   </tr> 
   <tr> 
    <td>OpenOffice 4.1.2</td> 
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX2, J2K, J2C, JPC, HTML, HTM RTF et TXT</td> 
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, JPF, JPX, JP2, J2K, J2C, JPC, HTML, HTM, , RTF et TXT</td> 
   </tr> 
   <tr> 
    <td>OpenOffice 3.4</td> 
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX2, J2K, J2C, JPC, HTML, HTM RTF et TXT</td> 
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, JPF, JPX, JP2, J2K, J2C, JPC, HTML, HTM, , RTF et TXT</td> 
   </tr> 
  </tbody> 
 </table>
@@ -516,16 +513,15 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Vous trouve
 >
 >En outre :
 >
->* PDF Generator requiert la version 32 bits de [Acrobat 2017 classic track version 17.011.30078 ou ultérieure](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) pour effectuer la conversion.
+>* PDF Generator requiert la version 32 bits de [Acrobat 2017 Classic track version 17.011.30078 ou ultérieure](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) pour effectuer la conversion.
 >* PDF Generator prend uniquement en charge la version commerciale 32 bits de Microsoft Office Professional Plus et d’autres logiciels requis pour la conversion.
 >* PDF Generator ne prend pas en charge Microsoft Office 365.
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows, Linux et Solaris.
 >* Le service HTML2PDF est obsolète sous AIX.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
->* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+>* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 
 >
-
 
 
 ### Exceptions de la prise en charge de l’accessibilité {#exceptions-to-accessibility-support}
@@ -721,7 +717,7 @@ Pour la configuration requise supplémentaire, voir :
    <td><p>Toutes les mises à jour</p> </td> 
   </tr> 
   <tr> 
-   <td>Safari sur iOS 11.0 et versions ultérieures</td> 
+   <td>Safari sur iOS 15.1 et versions ultérieures</td> 
    <td>Toutes les mises à jour</td> 
   </tr> 
   <tr> 
@@ -746,7 +742,6 @@ Pour la configuration requise supplémentaire, voir :
 >
 
 
-
 ### Application AEM Forms {#aem-forms-workspace-app}
 
 #### Prise en charge des appareils mobiles {#mobile-device-support}
@@ -755,9 +750,9 @@ L’application AEM Forms est disponible sur les plateformes suivantes :
 
 | **Plate-forme** | **Appareils mobiles** |
 |---|---|
-| Apple iOS  | Apple iPhone, iPad, iPad Air et iPad mini exécutant iOS 11 et versions ultérieures. |
+| Apple iOS  | Apple iPhone, iPad, iPad Air et iPad mini exécutant iOS 15.1 et versions ultérieures. |
 | Google Android | Android 4.4 (Android Kit Kat) et versions ultérieures *[API Niveau 19 et plus]*. L’application AEM Forms est certifiée sur les tablettes Samsung Galaxy 7 et 10 pouces, la tablette Google Nexus 7 pouces et les smartphones populaires. |
-| Microsoft Windows | Périphériques Microsoft Surface, tablettes, ordinateurs portables et ordinateurs de bureau exécutant le système d’exploitation Microsoft Windows 10. |
+| Microsoft Windows | Appareils Microsoft Surface, tablettes, ordinateurs portables et ordinateurs de bureau exécutant le système d’exploitation Microsoft Windows 10. |
 
 ### Adobe Flash Player {#adobe-flash-player}
 
@@ -796,7 +791,7 @@ Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiqu
 
 Adobe prend en charge les correctifs urgents ou recommandés publiés par des fournisseurs tiers à leur parution en supposant que les fournisseurs tiers garantissent une compatibilité ascendante avec les versions qu’AEM Forms on JEE prend en charge. Adobe ne prend en charge que les correctifs publiés après le niveau minimal de correctif indiqué dans la documentation d’AEM Forms on JEE.
 
-Dans certains cas, Adobe ne prend pas en charge les mises à jour de fournisseurs tiers qui changent des fonctionnalités importantes, et ne permettent donc pas une compatibilité ascendante totale. Pour plus d’informations sur les mises à jour prises en charge, voir [Définitions de correctif prises en charge](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) pour les produits de fournisseurs spécifiques et l’Adobe des types de correctifs est pris en charge.
+Dans certains cas, Adobe ne prend pas en charge les mises à jour de fournisseurs tiers qui changent des fonctionnalités importantes, et ne permettent donc pas une compatibilité ascendante totale. Pour plus d’informations sur les mises à jour prises en charge, voir [Définitions de correctif prises en charge](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) pour les produits de fournisseurs spécifiques et l’Adobe de types de correctifs prend en charge.
 
 Dans des circonstances échappant au contrôle d’Adobe, des correctifs de fournisseurs revendiquant une compatibilité ascendante peuvent avoir un impact négatif sur les produits ou les environnements clients Adobe. Dans ce cas, Adobe recommande que les clients évaluent l’impact de tout correctif urgent d’un fournisseur tiers avant de l’appliquer aux systèmes critiques. Adobe collabore avec des fournisseurs tiers afin de faire le nécessaire pour résoudre ces problèmes, que ce soit au travers des programmes de prise en charge standard d’Adobe ou de fournisseurs tiers rectifiant les problèmes de leurs correctifs. Ceci ne garantit toutefois pas qu’un nouveau correctif récemment publié par un fournisseur tiers et pris en charge par Adobe fonctionne comme documenté par le fournisseur ou avec AEM Forms on JEE.
 
@@ -805,3 +800,10 @@ Adobe se réserve le droit de modifier les plateformes de fournisseurs tiers de 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site Support Adobe aux entreprises les articles de la base de connaissances relatifs à votre produit.
 
 [**Contacter le support technique**](https://www.adobe.com/account/sign-in.supportportal.html)
+
+## Historique des révisions {#revision-history}
+
+
+* 10 octobre 2021
+
+   * Modification de la version prise en charge d’iOS pour l’application AEM Forms en iOS 15.1. La version précédente était iOS 12.
