@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
-source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
+source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 74%
+source-wordcount: '636'
+ht-degree: 75%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 74%
    + [Ajout de zones cliquables](image-maps.md)
    + [Réutilisation des ressources à l’aide de MSM](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
-   + [Archivage de la newsletter Dynamic Media par un Experience League](dynamic-media-newsletter.md)
+   + [Archive de newsletter sur Dynamic Media par Experience League](dynamic-media-newsletter.md)
    + [Configuration de Dynamic Media](administering-dynamic-media.md)
    + [Utilisation de Dynamic Media](dynamic-media.md)
    + [Configuration de Dynamic Media - Mode Scene7](config-dms7.md)
@@ -48,7 +48,7 @@ ht-degree: 74%
    + [Profils vidéo Dynamic Media](video-profiles.md)
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
-   + [Vidéo](s7-video.md)
+   + [Vidéo ](s7-video.md)
    + [Ajout de fonctionnalités Dynamic Media Classic à votre page](scene7.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
@@ -57,7 +57,7 @@ ht-degree: 74%
    + [Visionneuses de médias mixtes](mixed-media-sets.md)
    + [Visionneuses à 360°](spin-sets.md)
    + [Images panoramiques](panoramic-images.md)
-   + [Vidéo](video.md)
+   + [Vidéo ](video.md)
    + [Images interactives](interactive-images.md)
    + [Vidéos interactives](interactive-videos.md)
    + [Bannières de carrousel](carousel-banners.md)
@@ -101,7 +101,7 @@ ht-degree: 74%
    + [Métadonnées XMP](xmp.md)
    + [Considérations sur le réseau d’Assets](assets-network-considerations.md)
    + [Différence entre AEM Assets et AEM Media Library](medialibrary.md)
-   + [Utilisation de PDF rasterizer](aem-pdf-rasterizer.md)
+   + [Utilisation de PDF Rasterizer](aem-pdf-rasterizer.md)
    + [Configuration des restrictions de chargement des ressources](configuring-asset-upload-restrictions.md)
    + [Bonnes pratiques d’intégration d’AEM et de Creative Cloud](aem-cc-integration-best-practices.md)
    + [Intégration d’AEM Assets à un serveur InDesign](indesign.md)
@@ -165,3 +165,7 @@ ht-degree: 74%
    + [Partage de dossiers privés](private-folder.md)
    + [Instructions d’entraînement sur le service de contenu dynamique](smart-tags-training-guidelines.md)
    + [Rendus vidéo](video-renditions.md)
++ Intégration à d’autres solutions {#integrations}
+   + [Intégrations avec [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Installer [!DNL enhanced connector] pour [!DNL Workfront]](workfront-connector-install.md)
+   + [Configurer [!DNL enhanced connector] pour [!DNL Workfront]](workfront-connector-configure.md)
