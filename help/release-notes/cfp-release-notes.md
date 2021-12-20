@@ -4,10 +4,10 @@ description: Notes de mise à jour spécifiques aux packs de correctifs cumulati
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 1d5d2ef3840a40df7c3b223c7b5835e41553e9f1
 workflow-type: tm+mt
-source-wordcount: '4676'
-ht-degree: 16%
+source-wordcount: '4693'
+ht-degree: 17%
 
 ---
 
@@ -31,15 +31,15 @@ AEM Cumulative Fix Pack 6.4.8.4 est une mise à jour importante qui comporte plu
 
 AEM 6.4.8.4 est un pack de correctifs cumulatifs (CFP) qui dépend d’AEM 6.4 Service Pack 8. Installez le CFP après l’installation AEM Service Pack 8 6.4.
 
-Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experience Manager] 6.4.8.4 sont les suivantes :
+Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experience Manager] 6.4.8.4 :
 
-* Possibilité d’activer ou de désactiver les modifications du registre [!DNL Experience Manager Forms] lors de l’exécution d’une conversion PDFG.
+* Possibilité d’activer ou de désactiver le [!DNL Experience Manager Forms] modifications du registre lors de l’exécution d’une conversion PDFG.
 
 * Authentification par certificat X-509 pour les services web SOAP dans le modèle de données de formulaire.
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.8.24.
 
-Pour plus d’informations sur les CFP et d’autres types de mises à jour, voir [AEM Mise à jour des définitions des véhicules de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html)
+Pour plus d’informations sur les CFP et d’autres types de mises à jour, voir [AEM mettre à jour les définitions des véhicules de version](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.4 fournit des correctifs pour les problèmes suivants.
 
@@ -56,10 +56,10 @@ Adobe Experience Manager 6.4.8.4 fournit des correctifs pour les problèmes suiv
 
 ### [!DNL Assets] {#assets-6484}
 
-* `IndexWriter.merge` provoque  `OutOfMemoryError` une erreur, car la fonctionnalité de balisage intelligent crée des  `/oak:index/lucene`   `/oak:index/ntBaseLucene` index et des fichiers volumineux (NPR-35650).
-* Les utilisateurs ne peuvent pas archiver des ressources après les avoir modifiées dans [!DNL Adobe InDesign] et reçoivent une erreur au sujet de l’absence d’autorisations (NPR-35340).
+* `IndexWriter.merge` causes `OutOfMemoryError` erreur car la fonctionnalité de balisage intelligent crée une grande `/oak:index/lucene` et `/oak:index/ntBaseLucene` indices (NPR-35650).
+* Les utilisateurs ne peuvent pas archiver des ressources après les avoir modifiés dans [!DNL Adobe InDesign] et recevoir une erreur à propos de l’absence d’autorisations (NPR-35340).
 * Lorsqu’une nouvelle version d’une ressource existante est créée après la résolution du conflit de dénomination, les métadonnées de la ressource d’origine sont écrasées (NPR-35939).
-* Les groupes générés automatiquement par le dossier privé ne sont pas conservés et ne sont pas supprimés lors de la suppression du dossier ou de la mise à jour du dossier avec l’option [!UICONTROL Supprimer les restrictions de dossier privé] (NPR-35625).
+* Les groupes générés automatiquement par le dossier privé ne sont pas conservés et ne sont pas supprimés lors de la suppression du dossier ou de la mise à jour du dossier avec l’événement [!UICONTROL Suppression des restrictions de dossier privé] ensemble d’options (NPR-35625).
 
 #### [!DNL Dynamic Media] {#dynamic-media}
 
@@ -83,13 +83,17 @@ Adobe Experience Manager 6.4.8.4 fournit des correctifs pour les problèmes suiv
 
 **Services de document**
 
-* Impossible d’assembler les fichiers PDF après la mise à niveau de [!DNL JAVA] vers [!DNL JDK1.8.0_261] (NPR-35761, NPR-35848).
+* Impossible d’assembler les PDF après la mise à niveau [!DNL JAVA] to [!DNL JDK1.8.0_261] (NPR-35761, NPR-35848).
 
 **Foundation JEE**
 
-* Lorsque vous éditez une notification de tâche dans le workflow [!DNL Forms], vous ne pouvez pas l&#39;enregistrer (CQ-4315055).
+* Lorsque vous modifiez une notification de tâche dans [!DNL Forms] , vous ne pouvez pas l’enregistrer (CQ-4315055).
 
-Pour plus d’informations sur les mises à jour de sécurité, voir la [page Bulletins de sécurité des Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
+**Problèmes résolus dans AEM Forms-6.4.0-0027**
+
+* (JEE uniquement) Vulnérabilités de sécurité critiques (CVE-2021-44228 et CVE-2021-45046) signalées pour Apache Log4j2.
+
+Pour plus d’informations sur les mises à jour de sécurité, voir [Page bulletins de sécurité Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## Correctifs et Feature Packs inclus dans les packs de correctifs cumulés précédents {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 
@@ -101,7 +105,7 @@ AEM 6.4.8.3 est un pack de correctifs cumulatifs (CFP) qui dépend d’AEM 6.4 S
 
 Dans AEM 6.4.8.3, le référentiel intégré (Apache Jackrabbit Oak) est mis à jour vers la version 1.8.23.
 
-Pour plus d’informations sur les CFP et d’autres types de mises à jour, voir [AEM Mise à jour des définitions des véhicules de mise à jour](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+Pour plus d’informations sur les CFP et d’autres types de mises à jour, voir [AEM mettre à jour les définitions des véhicules de version](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.3 fournit des correctifs pour les problèmes suivants.
 
@@ -111,44 +115,44 @@ Adobe Experience Manager 6.4.8.3 fournit des correctifs pour les problèmes suiv
 
 * Lorsque vous définissez une valeur numérique pour la propriété d’étiquette de type Chaîne d’un composant, supprimez le composant, puis utilisez l’option Annuler pour le rétablir, le type de propriété d’étiquette passe automatiquement de String à Long (NPR-34738).
 
-* Lorsque vous ajoutez un composant Transfert de fichier à plusieurs champs, le chemin d’accès de l’image est stocké dans le noeud de composant au lieu du noeud Multi-Field (NPR-34423).
+* Lorsque vous ajoutez un composant Transfert de fichier à plusieurs champs, le chemin d’accès à l’image est stocké dans le noeud de composant au lieu du noeud Multi-Field (NPR-34423).
 
 * Dans l’assistant Déplacer la page , même si aucune destination n’est sélectionnée, le bouton suivant reste activé (NPR-34460).
 
-* Lorsque le composant parent inclut la propriété `cq:isContainer`, le composant hérité n’inclut pas automatiquement la propriété (CQ-4308409).
+* Lorsque le composant parent inclut la variable `cq:isContainer` , le composant hérité n’inclut pas automatiquement la propriété (CQ-4308409).
 
-* Lorsque vous utilisez la minification CSS à l’aide de la fonction `calc()` , les espaces vides autour du signe `+` sont supprimés (NPR-34991).
+* Lorsque vous utilisez la minimisation CSS à l’aide de `calc()` , les espaces vides autour de la fonction `+` le signe est supprimé (NPR-34991).
 
-* Lorsque vous démarrez une instance d’AEM, les composants `com.adobe.granite.maintenance.impl.MaintenanceTaskManagerImpl` et `com.adobe.granite.maintenance.impl.TaskScheduler` ne s’affichent pas à l’état `Active` (NPR-34952).
+* Lorsque vous démarrez une instance AEM, la variable `com.adobe.granite.maintenance.impl.MaintenanceTaskManagerImpl` et `com.adobe.granite.maintenance.impl.TaskScheduler` les composants ne s’affichent pas dans `Active` state (NPR-34952).
 
 #### [!DNL Assets] {#assets-6483}
 
 * Lors de la création d’une version d’une ressource existante, les mises à jour utilisateur apportées aux métadonnées ne sont pas conservées si un profil de métadonnées est appliqué au dossier (NPR-34833).
 * Lors de l’utilisation de [!DNL Adobe Asset Link] avec [!DNL Adobe InDesign], les résultats de recherche ne contiennent pas de dossiers et de collections, mais uniquement des ressources (NPR-34700).
-* Lorsque vous faites glisser une ressource sur un dossier pour la déplacer, l’interface utilisateur affiche également l’option [!UICONTROL Déposer dans Lightbox] et [!UICONTROL Déposer dans la collection]. Même si l’opération de déplacement est annulée, l’interface utilisateur continue d’afficher les deux dernières options (NPR-34525).
+* Lorsque vous faites glisser une ressource sur un dossier pour la déplacer, l’interface utilisateur affiche également l’option permettant de [!UICONTROL Déposer dans Lightbox] et [!UICONTROL Déposer dans la collection]. Même si l’opération de déplacement est annulée, l’interface utilisateur continue d’afficher les deux dernières options (NPR-34525).
 * Lorsque l’interface Gérer la publication est ouverte, l’option de publication n’est pas disponible et lorsque vous sélectionnez l’option d’annulation de publication, la page de portée est vide (CQ-4302509).
 
 ##### [!DNL Dynamic Media] {#dynamic-media-6483}
 
-* Dans les paramètres de paramètre d’image prédéfini, lorsque l’option [!UICONTROL Activer le sous-échantillonnage chromatique JPG] est désélectionnée dans [!DNL Experience Manager], la modification ne se synchronise pas avec [!DNL Dynamic Media] (NPR-34284).
-* Dans l’ [!UICONTROL éditeur de paramètres prédéfinis de la visionneuse], lors de la modification du paramètre prédéfini [!UICONTROL Image panoramique/Image panoramique_VR], dans le composant `PanoramicView`, l’étiquette de modificateur `PANORAMICVIEW_AUTOROTATE` n’est pas disponible (CQ-4302043).
-* L’annulation de la publication d’une vidéo à partir de [!DNL Experience Manager] n’annule pas la publication de la visionneuse de vidéos adaptative sur Dynamic Media Classic configuré. (CQ-4304405).
+* Dans les paramètres de paramètre d’image prédéfini, lorsque l’option [!UICONTROL Activer le sous-échantillonnage de la chrominance JPG] est désélectionné dans [!DNL Experience Manager], la modification n’est pas synchronisée avec [!DNL Dynamic Media] (NPR-34284).
+* Dans le [!UICONTROL Éditeur de paramètres prédéfinis de visionneuse], lors de la modification [!UICONTROL PanoramicImage/PanoramicImage_VR] prédéfini, dans la variable `PanoramicView` , le composant `PANORAMICVIEW_AUTOROTATE` l’étiquette de modification n’est pas disponible (CQ-4302043).
+* Annulation de la publication d’une vidéo depuis [!DNL Experience Manager] n’annule pas la publication de la visionneuse de vidéos adaptative sur Dynamic Media Classic configuré. (CQ-4304405).
 
-#### Plate-forme {#platform-6483}
+#### Plateforme {#platform-6483}
 
-* L’indicateur `emitUseStrict` est ajouté à la fonction de processeur de fermeture Google (GCC) `com.adobe.granite.ui.clientlibs.impl.HtmlLibraryManagerImpl`. L’indicateur supprime la sortie de l’instruction `use strict` (NPR-34830).
-* Une valeur `NullPointerException` est renvoyée lors du démarrage des tâches de maintenance quotidiennes ou hebdomadaires (NPR-34702).
-* L’outil [!DNL Apache Sling Health Check] est obsolète. Utilisez plutôt [Outil de détection des motifs](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/upgrading/pattern-detector.html) pour détecter les violations de contenu (NPR-33929).
+* Le `emitUseStrict` Un indicateur est ajouté à la fonction de processeur du Compilateur de fermeture Google (GCC). `com.adobe.granite.ui.clientlibs.impl.HtmlLibraryManagerImpl`. L’indicateur supprime la sortie de la variable `use strict` (NPR-34830).
+* A `NullPointerException` est renvoyé lors du démarrage des tâches de maintenance quotidiennes ou hebdomadaires (NPR-34702).
+* Le [!DNL Apache Sling Health Check] est obsolète. À la place, utilisez [Outil de détection des motifs](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/upgrading/pattern-detector.html?lang=fr) pour détecter des violations de contenu (NPR-33929).
 
 #### Intégrations {#integrations-6483}
 
-* Le bouton [!UICONTROL Créer] s’affiche sur la page [!UICONTROL Audiences] lors de la navigation d’un dossier vers la page [!UICONTROL Audiences] (NPR-35152).
+* Le [!UICONTROL Créer] s’affiche sur le bouton [!UICONTROL Audiences] lors de la navigation d’un dossier vers le [!UICONTROL Audiences] (NPR-35152).
 
 #### Interface utilisateur {#ui-6483}
 
-* Le panneau de recherche [!UICONTROL Filtres] de l’interface utilisateur [!UICONTROL Omnisearch] renvoie également des résultats provenant d’autres emplacements que celui où la recherche est exécutée (NPR-34877).
-* Lors de la fermeture du panneau [!UICONTROL Filtres] sur l’interface utilisateur [!UICONTROL Omnisearch], le rail de gauche n’est pas réinitialisé à la sélection [!UICONTROL Contenu], ce qui empêche la réouverture du panneau [!UICONTROL Filtres] (NPR-34483).
-* Une valeur `NullPointerException` est renvoyée lors de l’accès aux propriétés de la page (NPR-34509).
+* Le [!UICONTROL Filtres] panneau de recherche sur [!UICONTROL Omnisearch] L’interface utilisateur renvoie également les résultats à partir d’emplacements autres que l’emplacement d’exécution de la recherche (NPR-34877).
+* À la fermeture de la [!UICONTROL Filtres] panneau [!UICONTROL Omnisearch] interface utilisateur, le rail de gauche n’est pas réinitialisé sur [!UICONTROL Contenu] , ce qui empêche la réouverture de la propriété [!UICONTROL Filtres] (NPR-34483).
+* A `NullPointerException` est renvoyée lors de l’accès aux propriétés de la page (NPR-34509).
 
 #### Communities {#communities-6483}
 
@@ -169,11 +173,11 @@ Adobe Experience Manager 6.4.8.3 fournit des correctifs pour les problèmes suiv
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Le pack de correctifs cumulés n’inclut pas de correctifs pour  [!DNL Experience Manager Forms]. Ils sont livrés à l’aide d’un module complémentaire [!DNL Forms] distinct. En outre, un programme d’installation cumulatif est publié, qui comprend des correctifs pour [!DNL Experience Manager Forms] on JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Le pack de correctifs cumulés n’inclut pas de correctifs pour [!DNL Experience Manager Forms]. Elles sont diffusées à l’aide d’un [!DNL Forms] module complémentaire . En outre, un programme d’installation cumulatif est publié, qui comprend des correctifs pour [!DNL Experience Manager Forms] sur JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
 
 **Formulaires adaptatifs**
 
-* Impossible de modifier un formulaire adaptatif à l’aide de l’interface utilisateur classique après avoir appliqué le pack de correctifs cumulatifs [!DNL Experience Manager] (NPR-35127).
+* Impossible de modifier un formulaire adaptatif à l’aide de l’interface utilisateur classique après l’application de la variable [!DNL Experience Manager] Pack de correctifs cumulés (NPR-35127).
 
 * Le chargement des fragments prend plus de temps dans un formulaire adaptatif en raison de l’invalidation du cache (NPR-34655).
 
@@ -185,7 +189,7 @@ Adobe Experience Manager 6.4.8.3 fournit des correctifs pour les problèmes suiv
 
 **Foundation JEE**
 
-* Migration des utilisateurs [!DNL AEM Forms] de Flash vers HTML (CQ-4304075).
+* Migrer [!DNL AEM Forms] des utilisateurs de Flash en HTML (CQ-4304075).
 
 ### Adobe Experience Manager 6.4.8.2 {#experience-manager-6482}
 
@@ -195,14 +199,14 @@ AEM 6.4.8.2 est un pack de correctifs cumulatifs (CFP) qui dépend d’AEM 6.4 S
 
 Dans AEM 6.4.8.2, le référentiel intégré (Apache Jackrabbit Oak) est mis à jour vers la version 1.8.22.
 
-Pour plus d’informations sur les CFP et d’autres types de mises à jour, voir [AEM Mise à jour des définitions des véhicules de mise à jour](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+Pour plus d’informations sur les CFP et d’autres types de mises à jour, voir [AEM mettre à jour les définitions des véhicules de version](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suivants.
 
 #### Sites {#sites-6482}
 
-* Si `RolloutConfigManagerFactoryImpl` ne parvient pas à charger une configuration de déploiement, il ne tente pas de charger les configurations manquantes. Elle renvoie les configurations mises en cache (NPR-34091).
-* Dans le composant principal Texte, après avoir utilisé l’option d’édition HTML source, la classe de la balise `em` est supprimée (NPR-34080).
+* Si la variable `RolloutConfigManagerFactoryImpl` ne peut pas charger une configuration de déploiement, elle ne tente pas de charger les configurations manquantes. Elle renvoie les configurations mises en cache (NPR-34091).
+* Dans le composant principal Texte, après avoir utilisé l’option de modification du HTML source, la classe de `em` est supprimée (NPR-34080).
 * Lorsque vous effectuez une mise à niveau de Experience Manager 6.2 vers Experience Manager 6.5, le composant Parsys des modèles statiques ne s’affiche pas correctement. La hauteur du composant Parsys est définie sur 0 et les composants qu’il contient ne sont pas visibles (NPR-34044).
 * Les informations d’étiquette ne s’affichent pas pour les composants autorisés dans l’éditeur de modèles (NPR-33908).
 
@@ -210,59 +214,59 @@ Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suiv
 
 * Les utilisateurs ne peuvent pas ajouter ni modifier des composants au parsys après le quatrième niveau des composants imbriqués (NPR-33873).
 * Si le contenu initial d’un modèle modifiable est modifié puis que le modèle est publié, toutes les nouvelles pages créées avec ce modèle affichent la date de publication du modèle, même si les pages ne sont pas publiées (NPR-33822).
-* Les propriétés `cq:acLinks` et `cq:acUUID` de [!DNL Adobe Campaign] de la copie sont supprimées lors de l’opération de copier-coller (NPR-33793).
-* Dans l’onglet [!UICONTROL Utilisation en direct] , seuls 49 résultats s’affichent. Il n’affiche pas toute l’utilisation du composant (NPR-33710).
-* Une page web avec le caractère `/` dans l’URL ne répond plus lors de la création. Lorsqu’un composant est ajouté lors de la création, l’utilisation du processeur augmente et le navigateur cesse de répondre (NPR-33625).
+* Le `cq:acLinks` et `cq:acUUID` propriétés pour [!DNL Adobe Campaign] sur la copie sont supprimés pendant l’opération de copier-coller (NPR-33793).
+* Dans le [!UICONTROL Utilisation en direct] , seuls 49 résultats s’affichent. Il n’affiche pas toute l’utilisation du composant (NPR-33710).
+* Une page web avec `/` dans l’URL ne répond plus lors de la création. Lorsqu’un composant est ajouté lors de la création, l’utilisation du processeur augmente et le navigateur cesse de répondre (NPR-33625).
 * En mode de modification en ligne dans [!DNL RTE], le fait de faire glisser une image ne fonctionne pas pour le composant Texte (NPR-33579).
-* Il est possible de créer un composant dans une page de plan directeur portant le même nom que le nom de la page. Pendant le déploiement, un tel composant est renommé en suffixant `_msm_moved`. Cependant, le composant est déplacé à la fin du [!UICONTROL système de paragraphes] (NPR-33534).
-* La promotion de Launch ne publie pas de pages lorsque la propriété [!UICONTROL include subpages] n’est pas cochée sur la première racine de contenu (NPR-33533).
-* La redirection vers la page [!DNL Experience Manager] avec ancre ne fonctionne pas sur l’instance d’auteur, car `PageRedirectServlets` place la chaîne de requête après un fragment d’URL ou une ancre (NPR-34287).
-* `PageRedirectServlet` Ajoute  `.html` après le mappage Sling qui entraîne des échecs de lien (NPR-34271).
-* Vous pouvez suspendre la balise [!DNL Live Copy] d’une page et l’héritage est rompu en mode Éditeur. Cependant, dans les propriétés Page, l’icône représentant l’héritage indique incorrectement que l’héritage existe et n’est pas rompu (NPR-34096).
+* Il est possible de créer un composant dans une page de plan directeur portant le même nom que le nom de la page. Au cours du déploiement, un tel composant est renommé par suffixe. `_msm_moved`. Cependant, le composant est déplacé à la fin de la [!UICONTROL Système de paragraphes] (NPR-33534).
+* La promotion de Launch ne publie pas de pages lorsque [!UICONTROL inclure des sous-pages] n’est pas cochée sur la première racine de contenu (NPR-33533).
+* Redirection vers [!DNL Experience Manager] La page avec ancre ne fonctionne pas sur l’instance d’auteur en tant que `PageRedirectServlets` place la chaîne de requête après un fragment d’URL ou une ancre (NPR-34287).
+* `PageRedirectServlet` appends `.html` après le mappage Sling entraînant des échecs de lien (NPR-34271).
+* Vous pouvez suspendre le [!DNL Live Copy] d’une page et de l’héritage sont rompus en mode Éditeur. Cependant, dans les propriétés Page, l’icône représentant l’héritage indique incorrectement que l’héritage existe et n’est pas rompu (NPR-34096).
 * Problème avec l’affichage des composants autorisés dans la page Modifier le modèle (CQ-4297295).
 * Après la mise à niveau de Chrome et Firefox, les menus contextuels ne fonctionnent pas comme prévu. Lors du chargement des propriétés de la page, le panneau n’apparaît pas lorsqu’il contient des données (CQ-4292995).
-* Plusieurs instances de script intersite dans des composants [!DNL Experience Manager Sites] (NPR-33926).
+* Plusieurs instances de script intersite dans [!DNL Experience Manager Sites] composants (NPR-33926).
 * Les entrées utilisateur ne sont pas codées correctement pour divers composants lors de l’envoi d’informations au client (NPR-33696).
-* Une URL qui se termine par `childrenlist.html` affiche une page HTML au lieu d’une réponse 404. Ces URL sont vulnérables aux scripts intersites (NPR-33441).
+* Une URL qui se termine par `childrenlist.html` affiche une page de HTML au lieu d’une réponse 404. Ces URL sont vulnérables aux scripts intersites (NPR-33441).
 
 #### Ressources {#assets-6482}
 
-* L’extraction de texte pour les fichiers PDF chargés ne fonctionne pas et la recherche de texte intégral de certains mots dans un fichier PDF ne parvient pas à récupérer ce fichier PDF (NPR-34165).
+* L’extraction de texte pour les fichiers de PDF chargés ne fonctionne pas et la recherche de texte intégral de certains mots dans un fichier de PDF ne parvient pas à récupérer ce fichier de PDF (NPR-34165).
 
    >[!NOTE]
    >Pour que ce correctif fonctionne, redémarrez votre instance Adobe Experience Manager après l’installation du Service Pack 6.4.8.2.
 
 * Des barres obliques inverses sont ajoutées avant les caractères spéciaux dans les suggestions de recherche de ressources, qui portent des caractères spéciaux dans leur nom (NPR-33833).
 
-* Les filtres personnalisés enregistrés en tant que collections dynamiques ne sont pas correctement appliqués aux ressources. Par conséquent, les résultats de la recherche ne sont pas précis.   (NPR-33725).
+* Les filtres personnalisés enregistrés en tant que collections dynamiques ne sont pas correctement appliqués aux ressources. Par conséquent, les résultats de la recherche ne sont pas précis (NPR-33725).
 
 * La chronologie d’une ressource dans un dossier qui a été réorganisé indique que la ressource a été déplacée (NPR-33580).
 
-* L’annulation de la publication des ressources en bloc à partir de [!DNL Brand Portal] entraîne une erreur `Request-URI Too Long` (NPR-34158).
+* Annulation de la publication en bloc des ressources à partir de [!DNL Brand Portal] mène à `Request-URI Too Long` erreur (NPR-34158).
 
-* En mode Colonnes, si l’utilisateur sélectionne l’option [!UICONTROL Filtrer] après avoir sélectionné un ensemble de ressources (les ressources sont désélectionnées), puis sélectionne un autre ensemble de ressources à déplacer, les ressources précédemment sélectionnées sont également déplacées vers le nouvel emplacement (NPR-34018).
+* En mode Colonne si l’utilisateur sélectionne [!UICONTROL Filtrer] après avoir sélectionné un ensemble de ressources (les ressources sont désélectionnées), puis sélectionne un autre ensemble de ressources à déplacer, puis les ressources sélectionnées précédemment sont également déplacées vers le nouvel emplacement (NPR-34018).
 
 * La barre de défilement n’est pas visible en mode Liste, même si la page contient de nombreuses ressources (NPR-34156).
 
-* La page [!UICONTROL Gérer la publication] des ressources est rompue et les options qui s’y trouvent ne fonctionnent pas (CQ-4302509).
+* Le [!UICONTROL Gérer la publication] La page des ressources est rompue et les options qui y sont présentes ne fonctionnent pas (CQ-4302509).
 
 **Dynamic Media**
 
 * La fonctionnalité de recadrage intelligent échoue en cas d’erreur lorsque le profil d’image est ajouté à un dossier ayant plusieurs (par exemple, 11) proportions (NPR-34083).
 
-* Les modifications apportées aux paramètres d’image prédéfinis dans [!UICONTROL Adobe Experience Manager] ne sont pas synchronisées avec Dynamic Media Classic (NPR-34284, CQ-4299713).
+* Modifications des paramètres d’image prédéfinis dans [!UICONTROL Adobe Experience Manager] ne pas effectuer de synchronisation avec Dynamic Media Classic (NPR-34284, CQ-4299713).
 
-* L’étiquette de modificateur [!UICONTROL PANORAMICVIEW_AUTOROTATE] est manquante dans l’onglet [!UICONTROL Comportement] de la page [!UICONTROL Éditeur de paramètres prédéfinis de la visionneuse] (CQ-4302043).
+* Le [!UICONTROL PANORAMICVIEW_AUTOROTATE] l’étiquette de modificateur est manquante dans [!UICONTROL Comportement] dans [!UICONTROL Éditeur de paramètres prédéfinis de la visionneuse] (CQ-4302043).
 
-#### Plate-forme {#platform-6482}
+#### Plateforme {#platform-6482}
 
-* Les valeurs par défaut des paramètres **[!UICONTROL Délai de connexion]** et **[!UICONTROL Délai d’expiration du socket]** pour la configuration de l’agent par défaut (publication) ne sont pas spécifiées (NPR-33708).
+* Les valeurs par défaut de la variable **[!UICONTROL Délai de connexion]** et **[!UICONTROL Délai d’expiration du socket]** les paramètres de la configuration de l’agent par défaut (publication) ne sont pas spécifiés (NPR-33708).
 * Le planificateur de tâches de maintenance démarre et arrête les tâches de maintenance trop souvent qu’il n’a été configuré (NPR-33520).
 * Impossible de télécharger les journaux à l’aide de l’outil de diagnostic sur une instance de Experience Manager mise à niveau (NPR-34419).
 
 #### Intégrations {#integrations-6482}
 
-* La valeur de `library_path` n’est pas prise en compte lors de la génération de l’URL de bibliothèque [!DNL Adobe Launch] pour les bibliothèques migrées depuis [!DNL Adobe Dynamic Tag Management]. En outre, les bibliothèques migrées utilisent un préfixe différent de celui des bibliothèques [!DNL Adobe Launch]. (NPR-34238).
+* La valeur de `library_path` n’est pas pris en compte lors de la génération [!DNL Adobe Launch] URL de bibliothèque pour les bibliothèques migrées à partir de [!DNL Adobe Dynamic Tag Management]. En outre, les bibliothèques migrées utilisent un préfixe différent de [!DNL Adobe Launch] bibliothèques. (NPR-34238).
 * Les propriétés héritées d’un service cloud ne persistent pas lors de la mise à jour des propriétés de page (NPR-33865).
 
 #### Interface utilisateur {#ui-6482}
@@ -277,31 +281,31 @@ Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suiv
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Le pack de correctifs cumulés n’inclut pas de correctifs pour  [!DNL Experience Manager Forms]. Ils sont livrés à l’aide d’un module complémentaire [!DNL Forms] distinct. En outre, un programme d’installation cumulatif est publié, qui comprend des correctifs pour [!DNL Experience Manager Forms] on JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Le pack de correctifs cumulés n’inclut pas de correctifs pour [!DNL Experience Manager Forms]. Elles sont diffusées à l’aide d’un [!DNL Forms] module complémentaire . En outre, un programme d’installation cumulatif est publié, qui comprend des correctifs pour [!DNL Experience Manager Forms] sur JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
 
 **Formulaires adaptatifs**
 
 * Lorsqu’il manque un fragment de formulaire adaptatif, le rendu du formulaire adaptatif échoue (NPR-34303).
 
-* La description du contenu d’aide d’un champ de formulaire adaptatif affiche une balise HTML de paragraphe (NPR-34117).
+* La description du contenu d’aide d’un champ de formulaire adaptatif affiche une balise de HTML de paragraphe (NPR-34117).
 
-* Lorsque vous ajoutez un conteneur Forms sur une page [!DNL Experience Manager Sites] , la page affiche le message d’erreur suivant et ne vous permet pas d’ajouter de nouveaux composants (NPR-33858) :
+* Lorsque vous ajoutez un conteneur Forms à un [!DNL Experience Manager Sites] , la page affiche le message d’erreur suivant et ne vous permet pas d’ajouter de nouveaux composants (NPR-33858) :
 
    `DevTools failed to load SourceMap: Could not load content for <Link>. HTTP error: status code 404, net::ERR_HTTP_RESPONSE_CODE_FAILURE`
 
-* Lorsque vous sélectionnez la propriété **[!UICONTROL Revalider sur le serveur]** et téléchargez plusieurs pièces jointes, le formulaire adaptatif ne parvient pas à envoyer (NPR-33701).
+* Lorsque vous sélectionnez la variable **[!UICONTROL Revalider sur le serveur]** et télécharger plusieurs pièces jointes, le formulaire adaptatif ne parvient pas à envoyer (NPR-33701).
 
-* Lorsque vous sélectionnez les options **[!UICONTROL Utiliser la langue de la page]** et **[!UICONTROL Le formulaire couvre toute la largeur des options Page]** du composant [!DNL Experience Manager Forms] sur une page [!DNL Experience Manager Sites], la page ne parvient pas à se traduire (NPR-33641).
+* Lorsque vous sélectionnez la variable **[!UICONTROL Utiliser la langue de la page]** et **[!UICONTROL Le formulaire couvre toute la largeur de la page.]** options dans [!DNL Experience Manager Forms] d’un composant [!DNL Experience Manager Sites] , la page ne parvient pas à traduire (NPR-33641).
 
-* Lorsque vous envoyez un formulaire adaptatif compatible avec les analyses incorporé dans une page [!DNL Experience Manager Sites], l’analyse ne fonctionne pas correctement (NPR-31359).
+* Lorsque vous envoyez un formulaire adaptatif compatible avec les analyses incorporé dans un [!DNL Experience Manager Sites] , analytics ne fonctionne pas correctement (NPR-31359).
 
-* Suppression des dépendances des bibliothèques [!DNL Lodash] et [!DNL backbone] (NPR-33458).
+* Suppression des dépendances sur [!DNL Lodash] et [!DNL backbone] bibliothèques (NPR-33458).
 
-* L’action d’envoi **[!UICONTROL Envoyer vers le point de terminaison REST]** ne fonctionne pas pour un formulaire adaptatif (NPR-34513).
+* Le **[!UICONTROL Envoyer vers le point de fin REST]** L’action d’envoi ne fonctionne pas pour un formulaire adaptatif (NPR-34513).
 
 * Accessibilité : Lorsque vous essayez d’envoyer un formulaire adaptatif sans télécharger de pièce jointe pour un champ obligatoire, la sélection ne se déplace pas automatiquement vers le champ de pièce jointe (NPR-34511).
 
-* Les entrées utilisateur ne sont pas codées correctement pour les composants [!DNL Forms] lors de l’envoi d’informations au client (NPR-33611).
+* Les entrées utilisateur ne sont pas codées correctement pour [!DNL Forms] composants lors de l’envoi d’informations au client (NPR-33611).
 
 **Processus**
 
@@ -309,25 +313,25 @@ Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suiv
 
    `java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory`
 
-* Lorsque vous installez [!DNL Experience Manager] 6.4.8.1, la liste [!UICONTROL À faire] d’éléments ne s’affiche pas sous forme de liens. Le texte des éléments [!UICONTROL À faire] comprend des balises HTML (NPR-34318).
+* Lors de l’installation [!DNL Experience Manager] 6.4.8.1, la variable [!UICONTROL À faire] La liste des éléments ne s’affiche pas sous forme de liens. Le texte de la variable [!UICONTROL À faire] les éléments incluent des balises HTML (NPR-34318).
 
 **BackendIntegration**
 
-* Impossible de configurer un modèle de données de formulaire dans un environnement AWS hébergé [!DNL Experience Manager Forms Linux] (NPR-33617).
+* Impossible de configurer un modèle de données de formulaire dans un AWS hébergé [!DNL Experience Manager Forms Linux] environnement (NPR-33617).
 
 **Designer**
 
-* Lorsque [!DNL Acrobat DC] est installé sur un serveur Forms [!DNL Experience Manager], l’option **[!UICONTROL Diffuser le formulaire]** n’est pas disponible dans la [!DNL Experience Manager Designer] version 6.x (NPR-34325).
+* When [!DNL Acrobat DC] est installé sur un [!DNL Experience Manager] le serveur Forms, **[!UICONTROL Diffuser le formulaire]** n’est pas disponible dans [!DNL Experience Manager Designer] version 6.x (NPR-34325).
 
 **Document Security**
 
-* Impossible d’exécuter l’opération Sign avec des certificats basés sur HSM dans un fichier PDF après l’installation de [!DNL Experience Manager] 6.4.8.0 (NPR-34309).
+* Impossible d’exécuter l’opération Sign avec des certificats basés sur HSM dans un fichier de PDF après l’installation [!DNL Experience Manager] 6.4.8.0 (NPR-34309).
 
 **Mise à niveau**
 
-* Lorsque vous mettez à niveau la version [!DNL JBoss] vers la version 7.0.9 pour [!DNL Experience Manager Forms] avec Document Security dans un environnement [!DNL Linux], une erreur se produit (CQ-4300546).
+* Lorsque vous mettez à niveau la variable [!DNL JBoss] vers la version 7.0.9 pour [!DNL Experience Manager Forms] avec Document Security dans une [!DNL Linux] , une erreur se produit (CQ-4300546).
 
-Pour plus d’informations sur les mises à jour de sécurité, voir la [page Bulletins de sécurité des Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
+Pour plus d’informations sur les mises à jour de sécurité, voir [Page bulletins de sécurité Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ### Adobe Experience Manager 6.4.8.1 {#experience-manager-6481}
 
@@ -341,7 +345,7 @@ Voici quelques-uns des points forts d’AEM 6.4.8.1 :
 * Suppression de l’intégration du partage de modules avec Adobe Experience Manager.
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.8.21.
 
-Pour plus d’informations sur les CFP et d’autres types de mises à jour, voir [AEM Mise à jour des définitions des véhicules de mise à jour](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+Pour plus d’informations sur les CFP et d’autres types de mises à jour, voir [AEM mettre à jour les définitions des véhicules de version](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.1 fournit des correctifs pour les problèmes suivants.
 
@@ -359,7 +363,7 @@ Adobe Experience Manager 6.4.8.1 fournit des correctifs pour les problèmes suiv
 * Au démarrage de la pagination, le sélecteur de fragments d’expérience ne charge pas tous les éléments (NPR-32605).
 * Impossible de créer un lancement pour une page AEM Sites. La création d’un lancement entraîne une erreur (NPR-32544).
 * La fonction Gérer la publication n’inclut pas les ressources référencées dans le workflow de demande d’activation (NPR-32463).
-* Le contrôle de l’intégrité de Dispatcher affiche un message d’avertissement `Invalid cookie header` dans les fichiers journaux (NPR-33630).
+* Affichages du contrôle de l’intégrité de Dispatcher `Invalid cookie header` message d’avertissement dans les fichiers journaux (NPR-33630).
 * L’intégration de Salesforce est vulnérable à SSRF (NPR-32671).
 * XSS reflété dans PreferencesServlet (NPR-33439).
 
@@ -373,7 +377,7 @@ Adobe Experience Manager 6.4.8.1 fournit des correctifs pour les problèmes suiv
 
 * Les caractères GB18030 apparaissant dans les noms de dossier et de ressource sont laissés vides dans les fichiers zip téléchargés (NPR-33150).
 
-* Un dossier supplémentaire est créé lors du recadrage intelligent d’une ressource qui se trouve dans un dossier parent dont le nom contient le caractère `.` point (NPR-32755).
+* Un dossier supplémentaire est créé lors du recadrage intelligent d’une ressource qui se trouve dans un dossier parent avec un point `.` dans son nom (NPR-32755).
 
 * Le chargement différé n’est pas déclenché et pas plus de 100 ressources s’affichent lors de la sélection pour passer en revue les tâches de la boîte de réception de notifications (NPR-32749).
 
@@ -383,11 +387,11 @@ Adobe Experience Manager 6.4.8.1 fournit des correctifs pour les problèmes suiv
 
 * Vulnérabilité SSRF en Experience Manager (NPR-33437).
 
-#### Plate-forme {#platform-6481}
+#### Plateforme {#platform-6481}
 
-* Le filtre [!DNL Sling] n’est pas appelé si l’entrée de carte `sling:match` est créée sous `/etc/maps` (NPR-33308).
+* Le [!DNL Sling] Le filtre n’est pas appelé si la variable `sling:match` l’entrée map est créée sous `/etc/maps` (NPR-33308).
 * Tous les agents de vidage sont déclenchés lors de la désactivation d’une page (NPR-32941).
-* Lorsque vous utilisez l’API `ScriptProcessor` pour réduire une bibliothèque JavaScript, le fichier journal affiche un message d’erreur indiquant que le code JavaScript n’est pas conforme au mode strict. L’API ne fournit pas d’option pour activer ou désactiver le mode strict. (NPR-32746).
+* Lorsque vous utilisez la variable `ScriptProcessor` Pour réduire une bibliothèque JavaScript, le fichier journal affiche un message d’erreur indiquant que le code JavaScript n’est pas conforme au mode strict. L’API ne fournit pas d’option pour activer ou désactiver le mode strict. (NPR-32746).
 * Lorsqu’une requête SQL s’exécute pendant une durée plus longue, par exemple 7 heures, AEM arrête de répondre (NPR-33043).
 
 #### Interface utilisateur {#ui-6481}
@@ -396,7 +400,7 @@ Adobe Experience Manager 6.4.8.1 fournit des correctifs pour les problèmes suiv
 
 #### Projets de traduction {#tranlation-6481}
 
-* Une erreur `NullPointerException` s’affiche dans les journaux lors de l’exécution d’une tâche de traduction (NPR-32220).
+* A `NullPointerException` s’affiche dans les journaux lors de l’exécution d’une tâche de traduction (NPR-32220).
 
 #### Intégrations {#integrations-6481}
 
@@ -404,17 +408,17 @@ Adobe Experience Manager 6.4.8.1 fournit des correctifs pour les problèmes suiv
 
 #### Communautés {#communities-6481}
 
-* Après la création d’un groupe, les auteurs ne sont pas redirigés vers la section [!UICONTROL Groupe de la communauté] sur [!DNL Internet Explorer] 11 (NPR-33202).
-* Une erreur se produit lors de l’accès à la page [!UICONTROL Flux d’activités] (NPR-33152).
-* La modification d’un groupe [!DNL Communities] et la modification de l’image miniature ne mettent pas à jour l’image miniature du groupe (NPR-32603).
+* Les auteurs, après la création d’un groupe, ne sont pas redirigés vers la variable [!UICONTROL Groupe de communautés] section sur [!DNL Internet Explorer] 11 (NPR-33202).
+* Une erreur se produit lors de l’accès à la variable [!UICONTROL Flux d’activités] (NPR-33152).
+* Modification d’un [!DNL Communities] Le groupe et la modification de l’image miniature ne mettent pas à jour l’image miniature du groupe (NPR-32603).
 * Lors de la création d’une version des notifications et des abonnements du contenu généré par l’utilisateur (UGC), un ID incorrect de la page source est stocké (CQ-4289703).
 * Problème de script intersite (NPR-33212).
 
 #### Workflow {#workflow-6481}
 
-* Certains composants ne s’affichent pas dans la boîte de dialogue qui s’affiche lorsqu’un utilisateur termine un workflow qui comprend une [!UICONTROL étape de participant à la boîte de dialogue] (NPR-32989).
+* Certains composants ne s’affichent pas dans la boîte de dialogue qui s’affiche lorsqu’un utilisateur termine un workflow qui comprend une [!UICONTROL Étape Participant de boîte de dialogue] (NPR-32989).
 
-* L’option [!UICONTROL Chronologie] du rail de gauche prend plus de temps que prévu pour se charger (NPR-32850).
+* Le [!UICONTROL Chronologie] Le chargement de l’option dans le rail de gauche prend plus de temps que prévu (NPR-32850).
 
 #### Formulaires {#forms-6481}
 
@@ -422,15 +426,15 @@ Adobe Experience Manager 6.4.8.1 fournit des correctifs pour les problèmes suiv
 >
 >AEM Cumulative Fix Pack n’inclut pas de correctifs pour AEM Forms. Les correctifs sont fournis à l’aide d’un module complémentaire Forms distinct.  En outre, un programme d’installation cumulatif est publié, qui comprend des correctifs pour AEM Forms on JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
 
-* Correspondence Management : Lorsqu’un utilisateur colle du contenu à partir d’un document [!DNL Word], le fragment de document texte ne conserve pas la mise en forme (NPR-33213).
-* Adaptive Forms : Une nouvelle ligne d’une chaîne dans un dictionnaire de formulaires adaptatifs ajoute des caractères `&#xa;` au dictionnaire (NPR-33265).
+* Correspondence Management : Lorsqu’un utilisateur colle du contenu à partir d’une [!DNL Word] document, le fragment de document texte ne conserve pas la mise en forme (NPR-33213).
+* Adaptive Forms : Une nouvelle ligne ajoutée à une chaîne dans un dictionnaire de formulaires adaptatifs `&#xa;` les caractères du dictionnaire (NPR-33265).
 * Adaptive Forms : L’utilisateur ne peut pas enregistrer de formulaire adaptatif avec plusieurs pièces jointes (NPR-33214).
-* Adaptive Forms : Les méthodes `AddInstance` et `RemoveInstance` pour la classe Instance Manager n’ajoutent pas de nombre dynamique d’instances pour les fragments de chargement différé sur [!DNL Internet Explorer 11] (NPR-33201).
-* Adaptive Forms : Les analyses activées sur un formulaire adaptatif incorporé dans une page [!DNL Sites] n’enregistrent pas de données pour les événements d’envoi et d’abandon (NPR-31359).
-* Adaptive Forms : Lorsqu’un utilisateur colle le contenu d’un document [!DNL Word] à un formulaire adaptatif et l’envoie, le formulaire adaptatif envoyé comprend des caractères Unicode. En outre, la conversion PDF/A échoue en raison de caractères Unicode (NPR-33348).
+* Adaptive Forms : `AddInstance` et `RemoveInstance` Les méthodes de la classe Instance Manager n’ajoutent pas de nombre dynamique d’instances pour les fragments de chargement différé sur [!DNL Internet Explorer 11] (NPR-33201).
+* Adaptive Forms : Analytics activé sur un formulaire adaptatif incorporé dans un [!DNL Sites] n’enregistrez pas de données pour les événements d’envoi et d’abandon (NPR-31359).
+* Adaptive Forms : Lorsqu’un utilisateur colle le contenu à partir d’une [!DNL Word] à un formulaire adaptatif et l’envoyer, le formulaire adaptatif envoyé comprend des caractères Unicode. En outre, la conversion du PDF vers PDF/A échoue en raison de caractères Unicode (NPR-33348).
 * BackendIntegration : Les demandes de modèle de données de formulaire échouent lorsque le jeton d’actualisation expire en raison d’un état inactif incorrect (NPR-33168).
-* Document Services : Le service Convert PDF ne parvient pas à convertir les documents PDF en PostScript en raison de l’absence de jars Gibson pour [!DNL WebLogic] sur le serveur [!DNL Linux] (NPR-33515, CQ-4292239).
-* Document Services : Lorsqu’un utilisateur convertit un fichier texte au format PDF, les caractères japonais ne s’affichent pas correctement (NPR-33239).
+* Document Services : Le service de conversion de PDF ne parvient pas à convertir les documents de PDF en PostScript en raison de l’absence de jars Gibson pour [!DNL WebLogic] sur le [!DNL Linux] server (NPR-33515, CQ-4292239).
+* Document Services : Lorsqu’un utilisateur convertit un fichier texte en PDF, les caractères japonais ne s’affichent pas correctement (NPR-33239).
 * XSS stocké avec le GuideSOMProviderServlet (NPR-32701).
 
 ## Installation de la version 6.4.8.4 {#install}
@@ -451,7 +455,7 @@ Adobe Experience Manager 6.4.8.1 fournit des correctifs pour les problèmes suiv
 >
 >Pour les clients disposant de Feature Packs installés sur AEM 6.4. Les Feature Packs facultatifs fournis par Adobe ont des dépendances sur la version de publication et les Service Packs. Si vous avez installé un Feature Pack, contactez l’équipe d’assistance AEM clientèle pour valider la compatibilité de ces Feature Packs avec ce pack de correctifs cumulatif pour AEM 6.4.
 
-* AEM 6.4.8.4 nécessite AEM 6.4.8.0. Consultez la [documentation de mise à niveau](../sites-deploying/upgrade.md) pour obtenir des instructions détaillées.
+* AEM 6.4.8.4 nécessite AEM 6.4.8.0. Veuillez consulter [documentation de mise à niveau](../sites-deploying/upgrade.md) pour obtenir des instructions détaillées.
 * Lors d’un déploiement avec MongoDB et plusieurs instances, installez AEM 6.4.8.4 sur l’une des instances d’auteur à l’aide du gestionnaire de modules.
 * Avant d’installer le pack de correctifs cumulatifs, veillez à disposer d’un instantané ou d’une nouvelle sauvegarde de votre instance AEM.
 * Redémarrez l’instance avant l’installation. Cela est nécessaire uniquement lorsque l’instance reste en mode de mise à jour (ce qui est le cas lorsque l’instance vient d’être mise à jour depuis une version antérieure). Toutefois, cela est généralement recommandé si l’instance s’est exécutée pendant longtemps.
@@ -482,7 +486,7 @@ Il existe deux manières d’installer automatiquement AEM 6.4.8.4 dans une ins
 
 A. Placez le package dans le dossier ..*/crx-quickstart/install* pendant que le serveur est en cours d’exécution. Le package est automatiquement installé.
 
-B. Utilisez l’ [API HTTP du gestionnaire de modules](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) - veillez à utiliser `cmd=install&recursive=true` pour que le module imbriqué soit installé.
+B. Utilisez la variable [API HTTP à partir de Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) - Assurez-vous que vous utilisez `cmd=install&recursive=true` - pour que le package imbriqué soit installé.
 
 >[!NOTE]
 >
@@ -494,10 +498,10 @@ B. Utilisez l’ [API HTTP du gestionnaire de modules](https://docs.adobe.com/co
 1. Tous les lots OSGI sont ACTIFS ou FRAGMENT dans la console OSGI (utiliser la console web : /system/console/bundles).
 1. Le lot OSGI org.apache.jackrabbit.oak-core est sur la version 1.8.17 ou ultérieure (Utiliser la console web : /system/console/bundles).
 
-Pour déterminer la plateforme certifiée pour l’exécution avec cette version d’AEM Sites et d’Assets, voir [Exigences techniques](../sites-deploying/technical-requirements.md).
+Pour déterminer la plateforme certifiée pour exécuter cette version d’AEM Sites et d’Assets, voir [Exigences techniques](../sites-deploying/technical-requirements.md).
 
 >[!NOTE]
->Une fois l’installation du module terminée, un message d’information s’affiche pour vous informer que le module de contenu a bien été installé, par exemple **&quot;Package de contenu AEM-6.4-Service-Pack-8 installé avec succès.&quot;**
+>Une fois l’installation du module terminée, un message d’information s’affiche pour vous informer que le module de contenu a bien été installé, par exemple : **&quot;Le package de contenu AEM-6.4-Service-Pack-8 a été installé avec succès.&quot;**
 
 ### Mise à jour des visionneuses Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
 
@@ -518,8 +522,8 @@ qui copiera les nouveaux paramètres prédéfinis de visionneuse à l’emplacem
 >Passez cette étape si vous n’utilisez pas AEM Forms. Les correctifs dans AEM Forms sont fournis dans un module complémentaire distinct.
 
 1. Vérifiez que vous avez installé le AEM Cumulative Fix Pack.
-1. Téléchargez le module complémentaire Forms correspondant répertorié dans les [versions AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) de votre système d’exploitation.
-1. Installez le module complémentaire Forms comme décrit dans la section [Installation des modules complémentaires d’AEM forms](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
+1. Téléchargez le module complémentaire de formulaires correspondant répertorié à l’adresse [Versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) pour votre système d’exploitation.
+1. Installez le module complémentaire Forms comme décrit dans la section [Installation des packages de modules complémentaires AEM forms](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### Installation du programme d’installation d’AEM Forms JEE {#install-aem-forms-jee-installer}
 
@@ -531,11 +535,11 @@ Pour plus d’informations sur l’installation du programme d’installation cu
 
 >[!NOTE]
 >
->Après avoir installé le programme d’installation cumulatif pour Experience Manager Forms on JEE, installez le dernier module complémentaire Forms, supprimez le module complémentaire Forms du dossier `crx-repository\install` et redémarrez le serveur.
+>Après avoir installé le programme d’installation cumulatif de Experience Manager Forms on JEE, installez le dernier module complémentaire Forms, supprimez le module complémentaire Forms du `crx-repository\install` et redémarrez le serveur.
 
 ### Uber Jar {#uber-jar}
 
-Uber Jar pour AEM 6.4.8.4 est disponible dans le [référentiel central Maven](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.4/).
+Uber Jar pour AEM 6.4.8.4 est disponible dans la section [Référentiel Maven Central](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.4/).
 
 Pour utiliser Uber Jar dans un projet Maven, reportez-vous à l’article [Comment utiliser Uber Jar](../sites-developing/ht-projects-maven.md) et incluez la dépendance suivante dans votre projet POM :
 
@@ -550,7 +554,7 @@ Pour utiliser Uber Jar dans un projet Maven, reportez-vous à l’article [Comme
 
 >[!NOTE]
 >
->UberJar et d’autres artefacts associés sont disponibles sur le référentiel central de Maven au lieu du référentiel Maven public Adobe (repo.adobe.com). Le fichier UberJar principal est renommé `uber-jar-<version>.jar`. Par conséquent, il n’existe pas de `classifier`, avec la valeur `apis`, pour la balise `dependency`.
+>UberJar et d’autres artefacts associés sont disponibles sur le référentiel central de Maven au lieu du référentiel Maven public Adobe (repo.adobe.com). Le fichier UberJar principal est renommé `uber-jar-<version>.jar`. Par conséquent, il n’y a pas de `classifier`, avec `apis` comme valeur, pour la propriété `dependency` balise .
 
 ## Fonctionnalités supprimées / obsolètes {#removed-deprecated-features}
 
@@ -563,9 +567,9 @@ Cette section répertorie les fonctionnalités qui ont été supprimées ou dés
 
 ## Problèmes connus {#known-issues}
 
-* Si vous effectuez une mise à niveau de [!DNL Experience Manager] 6.4 vers [!DNL Experience Manager] 6.5, il se peut que certains lots n’affichent pas leur état comme `Active`. Installez le dernier [!DNL Experience Manager] Service Pack 6.5 pour résoudre le problème.
+* Si vous effectuez une mise à niveau à partir de [!DNL Experience Manager] 6.4 à [!DNL Experience Manager] 6.5, certains lots peuvent ne pas afficher leur état comme `Active`. Installez la dernière [!DNL Experience Manager] 6.5 Service Pack pour résoudre le problème.
 
-Pour plus d’informations sur les problèmes connus du Service Pack AEM 6.4.8.0, voir [AEM 6.4.8.0 Service Pack Notes](sp-release-notes.md).
+Pour plus d’informations sur les problèmes connus du Service Pack AEM 6.4.8.0, voir [Notes de mise à jour d’AEM 6.4.8.0 Service Pack](sp-release-notes.md).
 
 ## Lots OSGi et packages de contenu inclus {#osgi-bundles-and-content-packages-included}
 
